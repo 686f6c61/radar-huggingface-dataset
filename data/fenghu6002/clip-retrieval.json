@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fenghu6002/clip-retrieval",
+  "slug": "fenghu6002-clip-retrieval",
+  "author": "fenghu6002",
+  "url": "https://huggingface.co/fenghu6002/clip-retrieval",
+  "created_at": "2026-10-01T00:52:06.000Z",
+  "updated_at": "2026-10-01T00:52:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Annihilus in Diablo 4 Season 15: The Unique Talisman Seal",
+      "url": "https://d4guides.gg/en/news/annihilus-in-diablo-4-season-15-the-unique-talisman-seal",
+      "snippet": "Sep 16, 2026 · Annihilus in Diablo 4 Season 15: the first unique Horadric Seal with All Stats, resistances, +5 to +10 to All Skills and …"
+    },
+    {
+      "title": "Diablo 4 Has an Annihilus Hidden in Season 15, and Nobody Knows …",
+      "url": "https://www.diabloz.net/2026/09/diablo-4-annihilus-season-15-secret.html",
+      "snippet": "Sep 20, 2026 · Diablo 4 Season 15 contains Annihilus with huge All Skills, stats and resistance bonuses, but players still have not …"
+    },
+    {
+      "title": "Diablo 4 Season 15 Lucky Coin Guide: How to Unlock the New Uber …",
+      "url": "https://www.mmoexp.com/News/diablo-4-season-15-lucky-coin-guide-how-to-unlock-the-new-uber-boss-annihilus-charm.html",
+      "snippet": "4 days ago · Diablo 4 Season 15 has revealed another major secret, and it appears to be connected to one of the game's longest …"
+    },
+    {
+      "title": "Diablo 4’s Annihilus Mystery Just Got Its Biggest Clue Yet",
+      "url": "https://www.diabloz.net/2026/09/diablo-4-annihilus-stone-of-jordan-salvage-clue.html",
+      "snippet": "5 days ago · The mystery is still unsolved, but dataminers have uncovered the strongest clue yet: Diablo IV secretly tracks how many …"
+    },
+    {
+      "title": "How to Get the Annihilus &amp; Uber Diablo - Diablo 4 Guide",
+      "url": "https://diablofilter.com/guide/diablo-4s-annihilus-seal-is-real-how-to-get-it-and-uber-diablo",
+      "snippet": "Diablo 2&#039;s legendary Annihilus is now in Diablo 4 as of the 3.2.2 patch, dropped by Uber Diablo after World Bosses. …"
+    }
+  ]
+}

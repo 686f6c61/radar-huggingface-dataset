@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "SkyIsNotGreen/Scion-35B-A3B-mtp-drafter",
+  "slug": "skyisnotgreen-scion-35b-a3b-mtp-drafter",
+  "author": "SkyIsNotGreen",
+  "url": "https://huggingface.co/SkyIsNotGreen/Scion-35B-A3B-mtp-drafter",
+  "created_at": "2026-09-30T22:13:25.000Z",
+  "updated_at": "2026-09-30T22:13:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "draft-model",
+    "mtp",
+    "llama-cpp",
+    "scion",
+    "en",
+    "base_model:SkyIsNotGreen/Scion-35B-A3B",
+    "base_model:quantized:SkyIsNotGreen/Scion-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25165824,
+  "parameters_human": "25.2M",
+  "storage_bytes": 50332096,
+  "storage_human": "50 MB",
+  "base_model": "SkyIsNotGreen/Scion-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

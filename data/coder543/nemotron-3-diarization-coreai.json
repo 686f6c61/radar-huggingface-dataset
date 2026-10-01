@@ -5,7 +5,7 @@
   "author": "coder543",
   "url": "https://huggingface.co/coder543/nemotron-3-diarization-coreai",
   "created_at": "2026-09-27T23:07:13.000Z",
-  "updated_at": "2026-09-28T20:40:24.000Z",
+  "updated_at": "2026-09-30T23:04:56.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "voice-activity-detection",
@@ -17,7 +17,7 @@
     "apple-neural-engine",
     "voice-activity-detection",
     "base_model:nvidia/Nemotron-3-Diarization",
-    "base_model:finetune:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
     "license:openmdw-1.1",
     "region:us"
   ],

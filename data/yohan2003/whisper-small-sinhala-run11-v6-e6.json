@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "Yohan2003/whisper-small-sinhala-run11-v6-e6",
+  "slug": "yohan2003-whisper-small-sinhala-run11-v6-e6",
+  "author": "Yohan2003",
+  "url": "https://huggingface.co/Yohan2003/whisper-small-sinhala-run11-v6-e6",
+  "created_at": "2026-09-30T20:02:33.000Z",
+  "updated_at": "2026-09-30T20:03:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "si"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "sinhala",
+    "asr",
+    "speech-recognition",
+    "si",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 8676229048,
+  "storage_human": "8.7 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

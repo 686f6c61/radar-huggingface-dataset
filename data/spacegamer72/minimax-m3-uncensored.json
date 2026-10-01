@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SpaceGamer72/MiniMax-M3-uncensored",
+  "slug": "spacegamer72-minimax-m3-uncensored",
+  "author": "SpaceGamer72",
+  "url": "https://huggingface.co/SpaceGamer72/MiniMax-M3-uncensored",
+  "created_at": "2026-10-01T01:13:10.000Z",
+  "updated_at": "2026-10-01T01:13:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl",
+    "image-text-to-text",
+    "uncensored",
+    "abliterated",
+    "moe",
+    "minimax",
+    "security",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-M3",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 427040140160,
+  "parameters_human": "427.04B",
+  "storage_bytes": 854178358687,
+  "storage_human": "854.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

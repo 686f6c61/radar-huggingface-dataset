@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF",
+  "slug": "jrouth-qwen3-8-flash-next-mtp-c2t8-refit-gguf",
+  "author": "Jrouth",
+  "url": "https://huggingface.co/Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF",
+  "created_at": "2026-09-30T21:30:59.000Z",
+  "updated_at": "2026-09-30T21:33:25.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "mtp",
+    "draft-model",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3878549248,
+  "parameters_human": "3.88B",
+  "storage_bytes": 2664609664,
+  "storage_human": "2.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "drluoto/Qwen3.8-Flash-Next-MTP-GGUF · Discussions",
+      "url": "https://huggingface.co/drluoto/Qwen3.8-Flash-Next-MTP-GGUF/discussions",
+      "snippet": "Instructions to use drluoto/Qwen3.8-Flash-Next-MTP-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use drluoto/Qwen3.8-Flash-Next-MTP-GGUF with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "README.md · jamesrogers/Qwen3.8-Flash-Next-MTP-MXFP4-GGUF at main",
+      "url": "https://huggingface.co/jamesrogers/Qwen3.8-Flash-Next-MTP-MXFP4-GGUF/blob/main/README.md",
+      "snippet": "These are the only ready-made Flash-Next quants that ship the model&#x27;s 2.6B multi-token-prediction head inside the file — one GGUF, one context, no -md second model, no patches to your model files. Load it, pass --spec-type mtp, and get lossless speculative decoding at 0.93-0.99 measured draft acceptance on real traffic. Every public converter drops this head; grafting kits exist, but here ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: MTP GGUF weights now available - alextech.ai",
+      "url": "https://www.alextech.ai/en/news/qwen38-flash-next-mtp-gguf-weights-now-available/",
+      "snippet": "The local AI ecosystem takes another leap forward with the release of GGUF versions for Qwen3.8-Flash-Next featuring Multi-Token Prediction (MTP) support. Published by Unsloth on Hugging Face, these weights enable the advanced predictive capabilities of Alibaba&#x27;s model to run on consumer hardware via GGUF-compatible frameworks like llama.cpp."
+    }
+  ]
+}

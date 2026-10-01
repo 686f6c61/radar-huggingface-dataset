@@ -5,7 +5,7 @@
   "author": "matteiuspi",
   "url": "https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W4A16-G128-300i",
   "created_at": "2026-09-27T23:36:57.000Z",
-  "updated_at": "2026-09-29T02:10:15.000Z",
+  "updated_at": "2026-09-30T16:40:09.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 275,
+  "downloads_30d": 319,
   "trending_score": 0,
   "parameters": 121489440659,
   "parameters_human": "121.49B",

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "aryankakad/act_encoder_leader_so101_cube_box",
+  "slug": "aryankakad-act_encoder_leader_so101_cube_box",
+  "author": "aryankakad",
+  "url": "https://huggingface.co/aryankakad/act_encoder_leader_so101_cube_box",
+  "created_at": "2026-10-01T01:01:40.000Z",
+  "updated_at": "2026-10-01T01:02:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:aryankakad/encoder_leader_teleop_so101_cube_box_30eps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

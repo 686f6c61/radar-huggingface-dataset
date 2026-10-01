@@ -5,7 +5,7 @@
   "author": "DevQuasar",
   "url": "https://huggingface.co/DevQuasar/XiaomiMiMo.MiMo-V2.6-Pro-RL-GGUF",
   "created_at": "2026-09-27T18:47:10.000Z",
-  "updated_at": "2026-09-30T01:20:56.000Z",
+  "updated_at": "2026-09-30T05:41:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 171,
+  "downloads_30d": 233,
   "trending_score": 0,
   "parameters": 1021248126336,
   "parameters_human": "1021.25B",
-  "storage_bytes": 1548389914880,
-  "storage_human": "1548.4 GB",
+  "storage_bytes": 2037664141984,
+  "storage_human": "2037.7 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "formats": [
     "gguf"

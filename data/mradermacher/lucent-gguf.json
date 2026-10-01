@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lucent-GGUF",
+  "slug": "mradermacher-lucent-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lucent-GGUF",
+  "created_at": "2026-09-30T23:10:08.000Z",
+  "updated_at": "2026-10-01T00:23:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "30b",
+    "32b",
+    "30b-parameters",
+    "minecraft",
+    "minecraft-client",
+    "client-engineering",
+    "modding",
+    "fabric",
+    "forge",
+    "neoforge",
+    "unsloth",
+    "code",
+    "text-generation-inference",
+    "en",
+    "base_model:KirkAis/Lucent",
+    "base_model:quantized:KirkAis/Lucent",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043519040,
+  "storage_human": "102.0 GB",
+  "base_model": "KirkAis/Lucent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "1 day ago · Just hit post on that summer photo dump, friend. It doesn't have to be perfect 😎☀️ There's a new way to enhance your …"
+    }
+  ]
+}

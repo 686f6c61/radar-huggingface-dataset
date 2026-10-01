@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h13-79999-31a430f925de",
+  "slug": "davidwdw-fa-eval-all-h13-79999-31a430f925de",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h13-79999-31a430f925de",
+  "created_at": "2026-09-30T23:12:01.000Z",
+  "updated_at": "2026-09-30T23:12:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 88669576,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marc Armengol - Banco Sabadell | LinkedIn",
+      "url": "https://es.linkedin.com/in/marc-armengol",
+      "snippet": "Banco Sabadell has emerged from a period of profound transformation with greater focus, greater strength and a clear ambition for …"
+    },
+    {
+      "title": "Marc Armengol appointed CEO of Banco Sabadell - Banc Sabadell ...",
+      "url": "https://comunicacion.grupbancsabadell.com/en/press-room/marc-armengol-appointed-ceo-of-banco-sabadell-following-shareholder-ratification-at-agm/",
+      "snippet": "May 6, 2026 · Banco Sabadell's AGM ratifies the appointment of Marc Armengol as CEO, as the bank enters a new stage on its …"
+    },
+    {
+      "title": "¿Quién es Marc Armengol, el nuevo director ejecutivo de Sabadell?",
+      "url": "https://business-people.es/nombramientos/quien-es-marc-armengol-el-nuevo-director-ejecutivo-de-sabadell/",
+      "snippet": "Feb 6, 2026 · Marc Armengol asumirá la dirección ejecutiva de Banco Sabadell con una misión clara: acelerar la transformación …"
+    },
+    {
+      "title": "Marc Armengol Appointed New CEO of Banco Sabadell - Banc …",
+      "url": "https://comunicacion.grupbancsabadell.com/en/press-room/banco-sabadell-appoints-marc-armengol-as-new-ceo-cesar-gonzalez-bueno-to-step-down/",
+      "snippet": "Feb 5, 2026 · The Board of Directors of Banco Sabadell has agreed to propose the appointment of Marc Armengol, current CEO of …"
+    },
+    {
+      "title": "Nombramientos | Marc Armengol asume la dirección de Banco …",
+      "url": "https://forbes.es/nombramientos/869987/nombramientos-marc-armengol-nuevo-ceo-banco-sabadell/",
+      "snippet": "Feb 6, 2026 · Marc Armengol se incorporó a Banco Sabadell en el año 2002 y posee una dilatada trayectoria en distintos roles de …"
+    }
+  ]
+}

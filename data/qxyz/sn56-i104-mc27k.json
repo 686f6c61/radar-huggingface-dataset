@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i104-mc27k",
+  "slug": "qxyz-sn56-i104-mc27k",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i104-mc27k",
+  "created_at": "2026-09-30T20:17:47.000Z",
+  "updated_at": "2026-09-30T20:18:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/root/models/Qwen2.5-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1303327473,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FIFA Ultimate Team - Reddit",
+      "url": "https://www.reddit.com/r/fut/",
+      "snippet": "A friendly sub for Ultimate Team on consoles and PC"
+    },
+    {
+      "title": "EasySBC (u/DanishDynamites) - Reddit",
+      "url": "https://www.reddit.com/user/DanishDynamites/",
+      "snippet": "Jun 10, 2022 · You can find them all in this post or generate your own solutions for free with our AI here: easysbc.io Hey once again! …"
+    },
+    {
+      "title": "easySBC - Reddit",
+      "url": "https://www.reddit.com/r/easySBC/",
+      "snippet": "This community is about EasySBC - the best tool for solving SBCs in FUT. We have automated posts with new objectives and player …"
+    },
+    {
+      "title": "Are people really getting banned from doing sbc’s “too much”??",
+      "url": "https://www.reddit.com/r/fut/comments/15ycj23/are_people_really_getting_banned_from_doing_sbcs/",
+      "snippet": "Couldn't be sure how long exactly but definitely longer than that. Have been casually doing it whilst watching TV and stuff. Done so …"
+    },
+    {
+      "title": "Easysbc : r/fut - Reddit",
+      "url": "https://www.reddit.com/r/fut/comments/18jqblb/easysbc/",
+      "snippet": "Dec 16, 2023 · Copy link Copy link Go to fut r/fut r/fut A friendly sub for Ultimate Team on consoles and PC MembersOnline • Critical …"
+    }
+  ]
+}

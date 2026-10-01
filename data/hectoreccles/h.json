@@ -5,7 +5,7 @@
   "author": "hectoreccles",
   "url": "https://huggingface.co/hectoreccles/h",
   "created_at": "2026-09-30T16:17:52.000Z",
-  "updated_at": "2026-09-30T16:18:17.000Z",
+  "updated_at": "2026-09-30T16:50:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
   "trending_score": 0,
   "parameters": 26895993856,
   "parameters_human": "26.90B",
-  "storage_bytes": 15163112499,
+  "storage_bytes": 15182338579,
   "storage_human": "15.2 GB",
   "base_model": "hermitdave/Hemmingway-1-MLX-4bit",
   "formats": [

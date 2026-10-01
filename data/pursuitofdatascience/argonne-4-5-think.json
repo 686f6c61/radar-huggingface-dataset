@@ -5,7 +5,7 @@
   "author": "PursuitOfDataScience",
   "url": "https://huggingface.co/PursuitOfDataScience/Argonne-4.5-think",
   "created_at": "2026-09-29T23:49:21.000Z",
-  "updated_at": "2026-09-29T23:49:57.000Z",
+  "updated_at": "2026-09-30T17:10:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,11 +38,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 211,
   "trending_score": 0,
   "parameters": 2063639552,
   "parameters_human": "2.06B",
-  "storage_bytes": 4138736226,
+  "storage_bytes": 4138849122,
   "storage_human": "4.1 GB",
   "base_model": "PursuitOfDataScience/argonne-4.5-base-ctx13568",
   "formats": [

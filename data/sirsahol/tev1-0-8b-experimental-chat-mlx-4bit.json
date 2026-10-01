@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Tev1-0.8B-experimental-chat-mlx-4bit",
+  "slug": "sirsahol-tev1-0-8b-experimental-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Tev1-0.8B-experimental-chat-mlx-4bit",
+  "created_at": "2026-09-30T21:52:25.000Z",
+  "updated_at": "2026-09-30T21:56:10.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "apple-silicon",
+    "4-bit",
+    "conversational",
+    "transformers",
+    "together-ai",
+    "qwen3.5",
+    "decision-model",
+    "experimental",
+    "text-generation",
+    "endpoints_compatible",
+    "base_model:togethercomputer/Tev1-0.8B-experimental",
+    "base_model:quantized:togethercomputer/Tev1-0.8B-experimental",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 444016107,
+  "storage_human": "444 MB",
+  "base_model": "togethercomputer/Tev1-0.8B-experimental",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PlagScan Register now for free",
+      "url": "https://www.plagscan.com/register?show=payment&pack=2&lang=en",
+      "snippet": "Easy to integrate. PlagScan integrates into your workflow. Our cloud system can be integrated into any LMS or CMS. Data …"
+    },
+    {
+      "title": "PlagScan - Pädagogische Hochschule OÖ",
+      "url": "https://www.plagscan.com/ph-ooe?code=Hw3sQE6X&lang=de",
+      "snippet": "PlagScan ANLEITUNGEN Anleitung für Lehrende Anleitung für Studierende ALLGEMEINER HINWEIS Dokumente, die im Rahmen …"
+    },
+    {
+      "title": "PlagScan Créer un compte gratuitement et immédiatement",
+      "url": "https://mail.plagscan.com/register?lang=fr",
+      "snippet": "Intégration simple. PlagScan s'adapte facilement à votre flux de travail. Intégrez PlagScan dans votre LMS ou CMS. Gestion de …"
+    },
+    {
+      "title": "Job_Ad_FullStackDeveloper_OURiginal - static.plagscan.com",
+      "url": "https://static.plagscan.com/files/inline-files/Job_Ad_FullStackDeveloper_OURiginal.pdf",
+      "snippet": "Put your love for determining the architecture and the TechStack to use and join in our quest to transform the EdTech world by …"
+    },
+    {
+      "title": "PlagScan - VELEGS | Veleučilište \"Nikola Tesla\" u Gospiću / …",
+      "url": "https://www.plagscan.com/velegs_hr?lang=es",
+      "snippet": "CERRAR PlagScan Inicio Hacia arriba VELEGS | Veleučilište \"Nikola Tesla\" u Gospiću / University of Applied Sciences Nikola Tesla ×"
+    }
+  ]
+}

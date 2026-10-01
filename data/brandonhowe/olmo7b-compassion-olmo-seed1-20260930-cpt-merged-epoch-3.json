@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3",
+  "slug": "brandonhowe-olmo7b-compassion-olmo-seed1-20260930-cpt-merged-epoch-3",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-3",
+  "created_at": "2026-09-30T21:35:14.000Z",
+  "updated_at": "2026-09-30T21:35:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063592,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - France Titres (ANTS)",
+      "url": "https://ants.gouv.fr/",
+      "snippet": "France Titres vous accompagne au quotidien dans la réalisation de vos démarches en ligne concernant l’immatriculation, le permis …"
+    },
+    {
+      "title": "Accueil - Permis - France Titres (ANTS)",
+      "url": "https://permisdeconduire.ants.gouv.fr/",
+      "snippet": "Apr 22, 2026 · Immatriculation : immatriculation.ants.gouv.fr Permis de conduire : permisdeconduire.ants.gouv.fr Carte d'identité et …"
+    },
+    {
+      "title": "Incident de sécurité relatif au portail ants.gouv.fr",
+      "url": "https://ants.gouv.fr/toute-l-actualite/incident-de-securite-relatif-au-portail-antsgouvfr",
+      "snippet": "Mercredi 15 avril 2026, l’agence nationale des titres sécurisés (ANTS) a détecté un incident de sécurité."
+    },
+    {
+      "title": "Le certificat numérique - Professionnels de l'automobile - ANTS",
+      "url": "https://pha.ants.gouv.fr/tout-savoir/devenir-un-professionnel-habilite-a-l-immatriculation/le-certificat-numerique",
+      "snippet": "Retrouvez dans cet article les différentes fiches procédure vous permettant de : Installer un certificat numérique pour la première fois …"
+    },
+    {
+      "title": "CNI-Passeport - Accueil - Passeport - France Titres (ANTS)",
+      "url": "https://passeport.ants.gouv.fr/",
+      "snippet": "Apr 24, 2026 · Bienvenue sur le site dédié aux cartes d'identité et aux passeports France Titres vous accompagne au quotidien dans …"
+    }
+  ]
+}

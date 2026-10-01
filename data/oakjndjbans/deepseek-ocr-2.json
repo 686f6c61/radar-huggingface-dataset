@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "oakjndjbans/DeepSeek-OCR-2",
+  "slug": "oakjndjbans-deepseek-ocr-2",
+  "author": "oakjndjbans",
+  "url": "https://huggingface.co/oakjndjbans/DeepSeek-OCR-2",
+  "created_at": "2026-09-30T21:55:11.000Z",
+  "updated_at": "2026-09-30T21:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_vl_v2",
+    "feature-extraction",
+    "deepseek",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2601.20552",
+    "arxiv:2510.18234",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3389119360,
+  "parameters_human": "3.39B",
+  "storage_bytes": 6778714676,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sélection FIP : toute l'actualité et les podcasts à écouter",
+      "url": "https://www.radiofrance.fr/fip/albums/selections",
+      "snippet": "Découvrez la Sélection FIP des meilleurs albums de musique du moment et des pépites musicales dénichées par les …"
+    },
+    {
+      "title": "Albums du mois FIP : les meilleurs albums de musique selon FIP",
+      "url": "https://www.radiofrance.fr/fip/albums",
+      "snippet": "Découvrez la sélection FIP des meilleurs albums et sorties CD, mois par mois. Les pépites musicales du moment, à écouter …"
+    },
+    {
+      "title": "WPD2026 Album - FIP - International Pharmaceutical Federation",
+      "url": "https://www.fip.org/wpd2026-album",
+      "snippet": "4 days ago · WPD2026 Album World Health Organization UNESCO World Health Professions Alliance FIP Foundation for Education …"
+    },
+    {
+      "title": "FIP | Les Éditions | Radio France",
+      "url": "https://www.radiofrance.com/les-editions/radios/86/fip",
+      "snippet": "FIP Sacré français ! Inna de Yard Feat. Horace Andy."
+    },
+    {
+      "title": "La Sélection FIP - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLmejO0kj_Hm-Jj_26_Gq7HottSauUeU5m",
+      "snippet": "FIP vous guide chaque mois parmi les meilleurs albums du moment. Cette playlist compile des extraits de nos dernières sélections."
+    }
+  ]
+}

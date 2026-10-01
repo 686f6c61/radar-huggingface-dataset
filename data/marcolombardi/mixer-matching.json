@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcolombardi/mixer-matching",
+  "slug": "marcolombardi-mixer-matching",
+  "author": "marcolombardi",
+  "url": "https://huggingface.co/marcolombardi/mixer-matching",
+  "created_at": "2026-09-30T23:50:45.000Z",
+  "updated_at": "2026-09-30T23:50:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "3 days ago · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …"
+    },
+    {
+      "title": "Fortnite Events - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events",
+      "snippet": "3 days ago · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments."
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "3 days ago · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. In 18 Hrs Europe Fortnite …"
+    },
+    {
+      "title": "Fortnite Events - Asia - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=ASIA",
+      "snippet": "3 days ago · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. In 2 Days Asia Solo Reload …"
+    },
+    {
+      "title": "Fortnite Power Rankings Global Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events/powerrankings?platform=global&region=global",
+      "snippet": "View our Fortnite Power Rankings Leaderboards to see how you compare. Filter players by platform, region or country."
+    }
+  ]
+}

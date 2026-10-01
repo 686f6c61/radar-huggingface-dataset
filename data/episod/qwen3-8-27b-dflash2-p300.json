@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "episod/qwen3.8-27b-dflash2-p300",
+  "slug": "episod-qwen3-8-27b-dflash2-p300",
+  "author": "episod",
+  "url": "https://huggingface.co/episod/qwen3.8-27b-dflash2-p300",
+  "created_at": "2026-09-30T20:13:01.000Z",
+  "updated_at": "2026-09-30T21:00:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "blackhole",
+    "dflash2",
+    "long-context",
+    "p150x2",
+    "p300",
+    "speculative-decoding",
+    "tenstorrent",
+    "thin",
+    "tt-model-cache",
+    "vllm",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99580896,
+  "storage_human": "100 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/",
+      "snippet": "OFFRES ENTREPRISES ON DEMAND EPISOD Rules FAQ Conditions Devenir trainer Contacter la team"
+    },
+    {
+      "title": "Planning - Episod",
+      "url": "https://www.episod.com/planning/",
+      "snippet": "LAST ROUND - BOXING CLASSIQUE SANS POIDS Nagui"
+    },
+    {
+      "title": "Nos tarifs abonnements - Episod",
+      "url": "https://www.episod.com/nos-tarifs-abonnements-2/",
+      "snippet": "Nos abonnés profitent d’un accès exclusif au planning 48h avant tout le monde pour réserver en priorité !"
+    },
+    {
+      "title": "Les Hubs - EPISOD SPORTS STUDIOS",
+      "url": "https://www.episod.com/les-hubs/",
+      "snippet": "Nation ouvert 7J / 7 226 Boulevard Voltaire 75011 Paris hello@episod.com Découvrir le hub"
+    },
+    {
+      "title": "Reformer - Episod",
+      "url": "https://www.episod.com/sport/pilates-reformer/",
+      "snippet": "Découvrez l’efficacité unique de nos reformer pour sculpter votre corps, renforcer tous vos muscles & améliorer votre posture grâce …"
+    }
+  ]
+}

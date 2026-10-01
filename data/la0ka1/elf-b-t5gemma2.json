@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "la0ka1/ELF-B-T5Gemma2",
+  "slug": "la0ka1-elf-b-t5gemma2",
+  "author": "la0ka1",
+  "url": "https://huggingface.co/la0ka1/ELF-B-T5Gemma2",
+  "created_at": "2026-09-30T21:31:55.000Z",
+  "updated_at": "2026-09-30T21:51:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "diffusion-language-model",
+    "continuous-diffusion",
+    "flow-matching",
+    "text-embeddings",
+    "text-generation",
+    "en",
+    "dataset:Skylion007/openwebtext",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1060057264,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/t5gemma-2-1b-1b · Hugging Face",
+      "url": "https://huggingface.co/google/t5gemma-2-1b-1b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "T5Gemma 2 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/t5gemma2",
+      "snippet": "T5Gemma 2 is a family of pretrained encoder-decoder large language models with strong multilingual, multimodal and long-context capability, available in 270M-270M, 1B-1B and 4B-4B parameters. Following T5Gemma, it is built via model adaptation (based on Gemma 3) using UL2. The architecture is similar to T5Gemma and Gemma 3, enhanced with tied word embeddings and merged self- and cross ..."
+    },
+    {
+      "title": "Keras | T5Gemma 2 - Kaggle",
+      "url": "https://www.kaggle.com/models/keras/t5gemma-2/keras/t5gemma2_1b_1b/2",
+      "snippet": "T5Gemma 2 is the next evolution of T5Gemma, adapted based on Gemma 3, featuring the first multi-modal and long-context encoder-decoder models."
+    },
+    {
+      "title": "Google | T5Gemma 2 | Kaggle",
+      "url": "https://www.kaggle.com/models/google/t5gemma-2/",
+      "snippet": "T5Gemma 2 is the next evolution of T5Gemma, adapted based on Gemma 3, featuring the first multi-modal and long-context encoder-decoder models."
+    },
+    {
+      "title": "T5Gemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/t5gemma/",
+      "snippet": "T5Gemma 2 ties the embeddings between the encoder and decoder and merges decoder self- and cross-attention, saving model parameters. This enables more active capabilities—including multimodal processing, multilingual support, and a 128k token context window—with the same memory footprint as Gemma 3."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Felldude/Qwen3-VL-8B-Instruct_Uncensored_FP32",
+  "slug": "felldude-qwen3-vl-8b-instruct_uncensored_fp32",
+  "author": "Felldude",
+  "url": "https://huggingface.co/Felldude/Qwen3-VL-8B-Instruct_Uncensored_FP32",
+  "created_at": "2026-09-30T21:37:56.000Z",
+  "updated_at": "2026-09-30T22:22:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 35068587488,
+  "storage_human": "35.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

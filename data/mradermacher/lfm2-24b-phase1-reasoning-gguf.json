@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/lfm2-24b-phase1-reasoning-GGUF",
   "created_at": "2026-09-30T16:09:28.000Z",
-  "updated_at": "2026-09-30T16:59:55.000Z",
+  "updated_at": "2026-10-01T01:36:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 23843661440,
   "parameters_human": "23.84B",
-  "storage_bytes": 132016587552,
-  "storage_human": "132.0 GB",
+  "storage_bytes": 161763968864,
+  "storage_human": "161.8 GB",
   "base_model": "shuff57/lfm2-24b-phase1-reasoning",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "EndlessChasing",
   "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_W4A16_Recall",
   "created_at": "2026-09-28T22:50:21.000Z",
-  "updated_at": "2026-09-28T22:58:18.000Z",
+  "updated_at": "2026-09-30T17:05:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

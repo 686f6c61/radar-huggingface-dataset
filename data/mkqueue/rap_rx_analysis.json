@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mkqueue/rap_rx_analysis",
+  "slug": "mkqueue-rap_rx_analysis",
+  "author": "mkqueue",
+  "url": "https://huggingface.co/mkqueue/rap_rx_analysis",
+  "created_at": "2026-09-30T21:34:34.000Z",
+  "updated_at": "2026-09-30T21:34:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Models Benchmark",
+      "url": "https://aimodelsbenchmark.com/",
+      "snippet": "AI MODEL LEADERBOARD 398 models · benchmarks, pricing, context, license · ranked by the column you click."
+    },
+    {
+      "title": "Docker Model Runner: Run AI Models Locally with Full Control | Docker",
+      "url": "https://www.docker.com/products/model-runner/",
+      "snippet": "Run AI models locally with Docker Model Runner. Cut costs, maintain control, and scale AI development securely using the tools you know."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

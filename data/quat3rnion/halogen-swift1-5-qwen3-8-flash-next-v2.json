@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2",
+  "slug": "quat3rnion-halogen-swift1-5-qwen3-8-flash-next-v2",
+  "author": "Quat3rnion",
+  "url": "https://huggingface.co/Quat3rnion/halogen-swift1.5-qwen3.8-flash-next-v2",
+  "created_at": "2026-09-30T18:38:40.000Z",
+  "updated_at": "2026-09-30T18:45:36.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "halogen",
+  "languages": [],
+  "tags": [
+    "halogen",
+    "swift",
+    "efficient-thinking",
+    "reasoning",
+    "halogen-flash",
+    "qwen",
+    "moe",
+    "mixture-of-experts",
+    "long-context",
+    "quantized",
+    "4-bit",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 68142577664,
+  "storage_human": "68.1 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next, peonist-ai/halogen-qwen3.8-flash-next, Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - peonist-ai/halogen-flash-server: The fastest way to run Qwen3 ...",
+      "url": "https://github.com/peonist-ai/halogen-flash-server",
+      "snippet": "halogen™ is the fastest way to run Qwen3.8-Flash-Next on AMD Strix Halo, and it does not get there by spending fewer bits. Every kernel is written for this one GPU and this one model family. No general-purpose runtime, no portability layer, no fallback path. That is why it can do things a general engine cannot, and why it runs on exactly one piece of silicon."
+    },
+    {
+      "title": "halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin · Hugging Face",
+      "url": "https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin",
+      "snippet": "halt95 / Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin Like 0 Image-Text-to-Text Safetensors vllm qwen4_exp qwen3.8 flash-next mixed-precision int4 int8 fp8 mtp rtx-3090 conversational compressed-tensors License:swift-open-license-1. Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.8-Flash-Next · Swift 1.5 weights · W4A16 Merlin recipe What differs from the Merlin ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8-Flash-Next: Qwen3.8-Flash-Next is the ...",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "README.md · peonist-ai/halogen-qwen3.8-flash-next at main",
+      "url": "https://huggingface.co/peonist-ai/halogen-qwen3.8-flash-next/blob/main/README.md",
+      "snippet": "peonist-ai / halogen-qwen3.8-flash-next like 8 Follow Peonist 11 Text Generation halogen halogen-flash qwen Mixture of Experts mixture-of-experts long-context quantized 4-bit precision strix-halo gfx1151 rocm amd radeon ryzen-ai local-llm License:apache-2.0 Model card FilesFiles and versions xet Community 2 Copy to bucket new main halogen-qwen3 ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next for Local AI in 2026: 180B on Disk, 6B Active, and ...",
+      "url": "https://www.runaihome.com/blog/qwen38-flash-next-local-ai-hardware-guide-2026/",
+      "snippet": "Honest take: If you own a 24GB card, keep running Qwen3.8-27B and skip this entirely. If you own a 96-128GB unified-memory box, Flash-Next is the best local model you can run today — and its weird architecture (tiny KV cache, SSD-streamable embeddings) is a preview of what local inference looks like in 2027. Alibaba&#x27;s Qwen team shipped Qwen3.8-Flash-Next on August 26, 2026, and the label ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "masahiroid",
   "url": "https://huggingface.co/masahiroid/plamo-embedding-1b-coreml",
   "created_at": "2026-09-28T22:54:06.000Z",
-  "updated_at": "2026-09-29T10:58:20.000Z",
+  "updated_at": "2026-09-30T15:46:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 5,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

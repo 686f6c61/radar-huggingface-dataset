@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "stephenlb/system-one-model",
+  "slug": "stephenlb-system-one-model",
+  "author": "stephenlb",
+  "url": "https://huggingface.co/stephenlb/system-one-model",
+  "created_at": "2026-09-30T23:03:52.000Z",
+  "updated_at": "2026-10-01T01:44:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "truetype_system_one",
+    "feature-extraction",
+    "custom_code",
+    "gemma4",
+    "typed-decisions",
+    "text-classification",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959830064,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23958933943,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "System One Models: the independent hub for AI decision models",
+      "url": "https://systemonemodels.org/",
+      "snippet": "System One models are AI classification models that return typed, calibrated decisions instead of text. The independent hub for Jev: use cases, examples, recipes, guides."
+    },
+    {
+      "title": "stephenlb (Stephen Blum) · GitHub",
+      "url": "https://github.com/stephenlb",
+      "snippet": "September 2026 Created 98 commits in 5 repositories stephenlb/buttercup.sh 61 commits stephenlb/truetype.ai-open 20 commits stephenlb/Rust-Candle-Walkthroughs 13 commits stephenlb/draw-on-my-face 2 commits stephenlb/discord-bot 2 commits"
+    },
+    {
+      "title": "GitHub - stephenlb/truetype.ai-open: Open source replica of Truetype AI ...",
+      "url": "https://github.com/stephenlb/truetype.ai-open",
+      "snippet": "A local replica of the Jev TypeSafe AI System One API, tuned to match its latency while reading letter logits from Gemma 4 12B. POST /v1/systemone accepts and returns the original formats for all three supported question types. We wanted a fast, self-hosted decision model for Blocks.ai. Blocks.ai ..."
+    },
+    {
+      "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "snippet": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access."
+    },
+    {
+      "title": "System One Model: What It Means in AI (2026 Explainer) | explainx.ai ...",
+      "url": "https://www.explainx.ai/blog/what-is-a-system-one-model-ai-explained-2026",
+      "snippet": "System One Model is a new AI term for models that skip text generation and return a typed decision in one parallel pass. What it means, and where it comes from."
+    }
+  ]
+}

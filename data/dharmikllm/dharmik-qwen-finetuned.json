@@ -5,7 +5,7 @@
   "author": "Dharmikllm",
   "url": "https://huggingface.co/Dharmikllm/dharmik-qwen-finetuned",
   "created_at": "2026-09-29T14:23:37.000Z",
-  "updated_at": "2026-09-29T14:28:35.000Z",
+  "updated_at": "2026-09-30T04:39:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 155,
   "trending_score": 0,
   "parameters": 496195456,
   "parameters_human": "496.2M",

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0014-u0-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta",
+  "created_at": "2026-09-30T20:20:30.000Z",
+  "updated_at": "2026-09-30T20:20:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doodstreamviral | Linktree",
+      "url": "https://linktr.ee/doodstreamviral",
+      "snippet": "What does “link in bio” mean on social media? Is your Linktree not working on Instagram? Here’s how to fix it."
+    },
+    {
+      "title": "bocil smp +di — Yandex: found 40 thousand results",
+      "url": "https://tv.yandex.com/search?text=bocil+smp+%2Bdi&missword=1",
+      "snippet": "Aug 31, 2026 · Bocil SMP Viral adalah situs Streaming berbagai bokep SD, bokep Smp, bokep colmek, bokep chindo terbaru, bokep …"
+    },
+    {
+      "title": "Link 2 vs 3 Bocil 8 Menit Viral di Media Sosial, Apa yang Terjadi?",
+      "url": "https://joss.co.id/2025/02/link-2-vs-3-bocil-8-menit-viral-di-media-sosial-apa-yang-terjadi/",
+      "snippet": "Baru-baru ini, sebuah video berdurasi 8 menit yang melibatkan dua bocah laki-laki dan tiga bocah perempuan, yang dikenal dengan …"
+    },
+    {
+      "title": "Viral Video Ibu dan Anak Kecil Baju Biru Part 2 Durasi 4 Menit ...",
+      "url": "https://mindset.viva.co.id/tren/3387-viral-video-ibu-dan-anak-kecil-baju-biru-part-2-durasi-4-menit-ketahuan-suami-seminggu-marah",
+      "snippet": "Jun 6, 2024 · Tangerang, Mindset – Jagat media sosial kembali diramaikan dengan viralnya “ Video Ibu dan Anak Kecil Baju Biru”. …"
+    },
+    {
+      "title": "bokepindo.video",
+      "url": "https://bokepindo.video/bokep/indonesia-viral/?filter=latest",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

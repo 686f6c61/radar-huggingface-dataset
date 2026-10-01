@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "coder543/phonon-2-coreai-experimental",
+  "slug": "coder543-phonon-2-coreai-experimental",
+  "author": "coder543",
+  "url": "https://huggingface.co/coder543/phonon-2-coreai-experimental",
+  "created_at": "2026-09-30T22:52:01.000Z",
+  "updated_at": "2026-09-30T23:04:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "core-ai",
+    "apple-silicon",
+    "neural-engine",
+    "speech-to-text",
+    "experimental",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:FermionResearch/Phonon-2",
+    "base_model:quantized:FermionResearch/Phonon-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1806568778,
+  "storage_human": "1.8 GB",
+  "base_model": "FermionResearch/Phonon-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visualiser les données sur une carte personnalisée à l ... - Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ALL/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/",
+      "snippet": "Apprenez à créer rapidement une carte à partir des données d'une feuille de calcul, à appliquer un style aux points et aux formes, et …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/",
+      "snippet": "Indoor Google Maps create a more convenient and enjoyable visitor experience at no cost! Your visitors can spend more time …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/intl/fr/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Les photos Street View proviennent de deux sources - Google Maps",
+      "url": "https://maps.google.fr/intl/fr/streetview/explore/",
+      "snippet": "Découvrez en quoi consiste Street View, les lieux que nous avons déjà photographiés et ceux qui le seront prochainement. Pour …"
+    }
+  ]
+}

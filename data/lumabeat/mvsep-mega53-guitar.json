@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lumabeat/mvsep-mega53-guitar",
+  "slug": "lumabeat-mvsep-mega53-guitar",
+  "author": "lumabeat",
+  "url": "https://huggingface.co/lumabeat/mvsep-mega53-guitar",
+  "created_at": "2026-09-30T21:24:13.000Z",
+  "updated_at": "2026-09-30T21:24:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "audio-source-separation",
+    "music",
+    "bs-roformer",
+    "safetensors",
+    "audio-to-audio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77455608,
+  "storage_human": "77 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guitar Extractor — Isolate Guitar Stems Online | MVSEP",
+      "url": "https://mvsep.com/en/tools/guitar-extractor",
+      "snippet": "Extract and isolate guitar from any track with AI. Clean guitar stems for transcription, practice and remixing."
+    },
+    {
+      "title": "BS-Roformer-MVSep-Mega-53-stems - Hugging Face",
+      "url": "https://huggingface.co/noblebarkrr/BS-Roformer-MVSep-Mega-53-stems",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: ZFTurbo/Music-Source-Separation-Training - GitHub",
+      "url": "https://github.com/ZFTurbo/Music-Source-Separation-Training/releases",
+      "snippet": "There are some model notes: We are continuing to refine and improve the model. The model is memory-intensive, even with a batch size of 1. I recommend at least 16 GB of VRAM. Currently, the model&#x27;s performance on individual stems may be lower than the specialized models available on the MVSep site."
+    },
+    {
+      "title": "noblebarkrr/BS-Roformer-MVSep-Mega-53-stems at main",
+      "url": "https://huggingface.co/noblebarkrr/BS-Roformer-MVSep-Mega-53-stems/tree/main/v1",
+      "snippet": "noblebarkrr / BS-Roformer-MVSep-Mega-53-stems Like 6 Model card FilesFiles and versions xet Community Copy to bucket new main BS-Roformer-MVSep-Mega-53-stems /v1 4.11 GB Ctrl+K Ctrl+K 1 contributor History:1 commit noblebarkrr Upload folder using huggingface_hub 26e80a7 verified5 months ago bs_mega_53stem_accordion_mvsep.ckpt Safe pickle"
+    },
+    {
+      "title": "Tools — MVSEP",
+      "url": "https://mvsep.com/en/tools",
+      "snippet": "MVSEP performs separation of audio into vocal and instrumental parts, extracts text from audio and it is free. Uses Artificial Intelligence."
+    }
+  ]
+}

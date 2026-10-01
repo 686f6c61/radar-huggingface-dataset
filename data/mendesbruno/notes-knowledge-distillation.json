@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mendesbruno/notes-knowledge-distillation",
+  "slug": "mendesbruno-notes-knowledge-distillation",
+  "author": "mendesbruno",
+  "url": "https://huggingface.co/mendesbruno/notes-knowledge-distillation",
+  "created_at": "2026-09-30T23:39:54.000Z",
+  "updated_at": "2026-09-30T23:39:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikToker Sumbal Malik's alleged Private Video Leaked Online - Social ...",
+      "url": "https://socialdiary.pk/sumbal-malik-leak-sparks-digital-outrage-privacy-breach-or-fame-play/",
+      "snippet": "Dec 26, 2024 · TikTok personality Sumbal Malik finds herself at the center of controversy as explicit clips allegedly featuring her have …"
+    },
+    {
+      "title": "TikTok Star Ayesha Akram explicit video Leaked Online",
+      "url": "https://www.desiblitz.com/content/tiktok-star-ayesha-akram-explicit-video-leaked-online",
+      "snippet": "Nov 5, 2023 · Pakistani TikTok star Ayesha Akram is in the headlines after an explicit video of her was leaked online and circulated …"
+    },
+    {
+      "title": "Pakistani Influencers Viral MMS Leak Video Scandal 2026: A Wake …",
+      "url": "https://technosports.co.in/pakistani-influencers-viral-mms-leak-video/",
+      "snippet": "Sep 22, 2026 · The controversy erupted when alleged private videos of several Pakistani social media influencers began circulating …"
+    },
+    {
+      "title": "Pakistani celebrities mms, viral video leaks 2024-26: What actually ...",
+      "url": "https://pakobserver.net/pakistani-celebrities-mms-viral-video-leaks-2024-26-what-actually-happened/",
+      "snippet": "Aug 22, 2026 · In recent years, several Pakistani celebrities and social media influencers have found themselves at the centre of …"
+    },
+    {
+      "title": "Trending Again: Famous Pakistani TikToker Maryam Faisal's Viral …",
+      "url": "https://www.stackumbrella.com/viral-news-videos-photos/famous-pakistani-tiktoker-maryam-faisal-viral-mms-video-trending-again-viral-on-social-media-12124282",
+      "snippet": "Jul 1, 2026 · There is no verified evidence confirming that the viral video genuinely features Maryam Faisal. The clips circulating …"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ollaya-dev/nimble",
+  "slug": "ollaya-dev-nimble",
+  "author": "ollaya-dev",
+  "url": "https://huggingface.co/ollaya-dev/nimble",
+  "created_at": "2026-09-30T22:50:05.000Z",
+  "updated_at": "2026-09-30T22:50:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ollaya",
+    "decision-model",
+    "system-one",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14288408,
+  "storage_human": "14 MB",
+  "base_model": "bespokelabs/Bespoke-Nimble-9B-v2, Qwen/Qwen3.5-9B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

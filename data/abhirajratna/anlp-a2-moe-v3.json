@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "abhirajratna/anlp-a2-moe-v3",
+  "slug": "abhirajratna-anlp-a2-moe-v3",
+  "author": "abhirajratna",
+  "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v3",
+  "created_at": "2026-09-30T22:09:33.000Z",
+  "updated_at": "2026-09-30T22:12:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "vi",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "pytorch",
+    "anlp-assignment",
+    "vi",
+    "ja",
+    "en",
+    "dataset:belumind/en-vi-ja-curated-500k-triplets",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33579520,
+  "parameters_human": "33.6M",
+  "storage_bytes": 134330320,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emirates | Fly Better",
+      "url": "https://www.emirates.com/?msockid=2df57cf0a60462f119506b14a7156383",
+      "snippet": "Book flights across the world and Fly Better with Emirates. Explore our global routes, find the best fares, and discover our …"
+    },
+    {
+      "title": "Book a flight | Emirates",
+      "url": "https://www.emirates.com/english/book/?msockid=2df57cf0a60462f119506b14a7156383",
+      "snippet": "Book Book a flight Search for Emirates flights and book online. See our routes and schedules, and discover more about the …"
+    },
+    {
+      "title": "Emirates (airline) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Emirates_(airline)",
+      "snippet": "Since its formation in 1985, Emirates aircraft have carried a section of the United Arab Emirates flag on the tail fins, a calligraphy …"
+    },
+    {
+      "title": "Emirates — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Emirates",
+      "snippet": "Emirates devient, à partir de l’été 2013, le commanditaire principal du Real Madrid. D’autre part, dans le milieu du football, Emirates …"
+    },
+    {
+      "title": "Emirates | Voyagez mieux",
+      "url": "https://www.emirates.com/fr/french/?msockid=2df57cf0a60462f119506b14a7156383",
+      "snippet": "Réservez des vols partout dans le monde et voyagez mieux avec Emirates. Découvrez nos itinéraires internationaux, recherchez les …"
+    }
+  ]
+}

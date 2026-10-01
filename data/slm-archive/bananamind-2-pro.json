@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "SLM-Archive/BananaMind-2-Pro",
+  "slug": "slm-archive-bananamind-2-pro",
+  "author": "SLM-Archive",
+  "url": "https://huggingface.co/SLM-Archive/BananaMind-2-Pro",
+  "created_at": "2026-10-01T00:31:03.000Z",
+  "updated_at": "2026-10-01T00:31:03.000Z",
+  "license": "bananamind-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bananamind2_pro",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "small-language-model",
+    "bananamind",
+    "bananamind2",
+    "bananamind2-pro",
+    "pretrained",
+    "100b-tokens",
+    "digit-tokenizer",
+    "pytorch",
+    "custom-code",
+    "trust-remote-code",
+    "custom-architecture",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159943040,
+  "parameters_human": "159.9M",
+  "storage_bytes": 644215263,
+  "storage_human": "644 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sous le manteau - slm.paris",
+      "url": "https://slm.paris/fr",
+      "snippet": "slm paris SOUS LE MANTEAU (depuis 2016) dévoile six fragrances confidentielles inspirées d'authentiques philtres d'amour des …"
+    },
+    {
+      "title": "Qu’est-ce qu’un petit modèle de langage (SLM) ? | IBM",
+      "url": "https://www.ibm.com/fr-fr/think/topics/small-language-models",
+      "snippet": "Les petits modèles de langage (SLM) sont des modèles d’intelligence artificielle (IA) capables de traiter, de comprendre et de …"
+    },
+    {
+      "title": "IA Générative : comprendre les différences entre SLM et LLM",
+      "url": "https://www.asi.fr/blog/ia-generative-comprendre-differences-entre-slm-llm",
+      "snippet": "Cependant, une autre approche gagne du terrain : les modèles de langue spécifiques ou SLM. Les SLM apparaissent comme une …"
+    },
+    {
+      "title": "So'Lyon Mutuelle - 100% à vos côtés",
+      "url": "https://www.solyon-mutuelle.fr/",
+      "snippet": "Sep 23, 2026 · Depuis 90 ans, So'Lyon Mutuelle met au cœur de ses préoccupations le bien-être de ses adhérents. 100% à vos côtés !"
+    },
+    {
+      "title": "slm.paris - sous le manteau",
+      "url": "https://slm.paris/",
+      "snippet": "slm unveils six confidential fragrances based on authentic love potions from earlier centuries. Each scent has been modernized by …"
+    }
+  ]
+}

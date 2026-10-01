@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF",
+  "slug": "webmp3-sakura-qwen3-8-flash-next-swift-de-en-k352-iq2_xs-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Qwen3.8-Flash-Next-Swift-DE-EN-K352-IQ2_XS-GGUF",
+  "created_at": "2026-09-30T21:24:57.000Z",
+  "updated_at": "2026-09-30T21:58:32.000Z",
+  "license": "swift-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "sakura",
+    "sakura-micro",
+    "llama.cpp",
+    "moe",
+    "qwen4exp",
+    "expert-pruning",
+    "strix-halo",
+    "experimental",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:finetune:ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139175502720,
+  "parameters_human": "139.18B",
+  "storage_bytes": 56995401132,
+  "storage_human": "57.0 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Input a message to start chatting with Qwen/Qwen3.8-Flash-Next."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability:"
+    },
+    {
+      "title": "Qwen3.8-Flash-Next GGUF Guide 2026: Run It Locally with unsloth ...",
+      "url": "https://cldnavi.com/en/blog/qwen38-flash-next-gguf-guide-2026/",
+      "snippet": "How to run Qwen3.8-Flash-Next (125B total / 6B activated next-gen MoE) locally with unsloth GGUF. 7 quantizations from UD-IQ1_S (~72GB) to UD-Q4_K_XL (~111GB) with RAM/VRAM requirements, recommended PC builds (96GB-192GB RAM + RTX 4060 Ti to RTX 5090), and llama.cpp setup."
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is an open-weight early preview of the architecture behind Qwen4. It has a 125B main model with 6B active parameters per token. The checkpoint also includes a 51B n-gram embedding table and a 4B MTP head. This guide covers our Atomic Dynamic GGUF builds and the exact setup for Atomic Chat or llama.cpp."
+    }
+  ]
+}

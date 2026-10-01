@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "gowdavidwan2003/ARACHNE-FOUNDATION-50B",
+  "slug": "gowdavidwan2003-arachne-foundation-50b",
+  "author": "gowdavidwan2003",
+  "url": "https://huggingface.co/gowdavidwan2003/ARACHNE-FOUNDATION-50B",
+  "created_at": "2026-09-30T21:48:30.000Z",
+  "updated_at": "2026-09-30T21:48:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arachne",
+    "nullxes",
+    "foundation",
+    "video-generation",
+    "text-to-video",
+    "diffusion-transformer",
+    "realtime-runtime",
+    "enterprise-ai",
+    "multimodal",
+    "sovereign-ai",
+    "dataset:MagistrTheOne/ARACHNE-FOUNDATION-DATA-SMOKE",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50258360384,
+  "parameters_human": "50.26B",
+  "storage_bytes": 201033836336,
+  "storage_human": "201.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Decathlon | Sportschoenen, Sportuitrusting & Sportartikelen",
+      "url": "https://www.decathlon.be/nl",
+      "snippet": "Winkel in meer dan 70 sporten in de winkel en online, gratis verzending bij geselecteerde in-app aankopen. Gratis afhalen in de …"
+    },
+    {
+      "title": "Decathlon | Chaussures de sport, équipements de sport et matériel de …",
+      "url": "https://www.decathlon.be/fr",
+      "snippet": "Acheter 70+ sports au magasin et en ligne, livraison gratuite d’achats sélectionnés dans l’appli. Click & collect sans frais. Garantie de …"
+    },
+    {
+      "title": "Decathlon jobs | Werken bij Decathlon",
+      "url": "https://jobs.decathlon.be/nl",
+      "snippet": "Werken bij Decathlon betekent bewegen, jezelf uitdagen en mooie momenten delen met je collega's. Sport maakt deel uit van onze …"
+    },
+    {
+      "title": "Vacatures | Werken bij Decathlon",
+      "url": "https://jobs.decathlon.be/nl/vacatures",
+      "snippet": "Ontdek de beschikbare vacatures en carrièremogelijkheden bij Decathlon Belgium."
+    },
+    {
+      "title": "Langetermijnverhuur van elektrische fietsen met Decathlon",
+      "url": "https://rent.decathlon.be/nl/",
+      "snippet": "Huur een elektrische fiets voor enkele maanden of meerdere jaren — eenvoudig, flexibel en betaalbaar. Onderhoud, herstellingen en …"
+    }
+  ]
+}

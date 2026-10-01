@@ -5,7 +5,7 @@
   "author": "WootzappLab",
   "url": "https://huggingface.co/WootzappLab/fara-9b-baseline-eval",
   "created_at": "2026-09-25T17:17:19.000Z",
-  "updated_at": "2026-09-29T07:16:33.000Z",
+  "updated_at": "2026-09-30T07:07:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 23,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",

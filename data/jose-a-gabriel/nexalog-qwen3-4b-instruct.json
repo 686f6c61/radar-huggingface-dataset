@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jose-a-gabriel/NexaLog-Qwen3-4B-Instruct",
+  "slug": "jose-a-gabriel-nexalog-qwen3-4b-instruct",
+  "author": "jose-a-gabriel",
+  "url": "https://huggingface.co/jose-a-gabriel/NexaLog-Qwen3-4B-Instruct",
+  "created_at": "2026-10-01T00:47:20.000Z",
+  "updated_at": "2026-10-01T00:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "qwen3",
+    "sft",
+    "nexalog",
+    "pt",
+    "dataset:jose-a-gabriel/NexaLog-Knowledge-Base",
+    "base_model:unsloth/Qwen3-4B",
+    "base_model:adapter:unsloth/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610812,
+  "storage_human": "144 MB",
+  "base_model": "unsloth/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "José - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jos%C3%A9",
+      "snippet": "In England, Jose is originally a Romano-Celtic surname, and people with this family name can usually be found in, or traced to, the …"
+    },
+    {
+      "title": "Prénom José (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jose/prenom-3608",
+      "snippet": "Prénom José : signification, origine, caractère, personnalité, Saint José, popularité, avis, classement... Toutes les infos sur le prénom …"
+    },
+    {
+      "title": "José — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jos%C3%A9",
+      "snippet": "JOSE est un sigle qui peut désigner : JavaScript Object Signing and Encryption, un groupe de travail qui a développé plusieurs …"
+    },
+    {
+      "title": "José - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Jos%C3%A9",
+      "snippet": "José (en hebreo: יוֹסֵף, romanizado: Yosef) es un nombre propio masculino. 1 Se ha extendido en la cultura occidental debido a la …"
+    },
+    {
+      "title": "José José — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jos%C3%A9_Jos%C3%A9",
+      "snippet": "Au début des années 1970, José José est devenu un des auteurs les plus connus de ballades en Amérique latine, en dépit de la …"
+    }
+  ]
+}

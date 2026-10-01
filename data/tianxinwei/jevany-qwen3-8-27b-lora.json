@@ -5,7 +5,7 @@
   "author": "tianxinwei",
   "url": "https://huggingface.co/tianxinwei/JevAny-Qwen3.8-27B-LoRA",
   "created_at": "2026-09-29T22:30:38.000Z",
-  "updated_at": "2026-09-30T00:36:08.000Z",
+  "updated_at": "2026-09-30T18:03:05.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 8,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 264330168,
-  "storage_human": "264 MB",
+  "storage_bytes": 508671011,
+  "storage_human": "509 MB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leonice2/DeepSeek-V4.1-Flash-nohmm",
+  "slug": "leonice2-deepseek-v4-1-flash-nohmm",
+  "author": "leonice2",
+  "url": "https://huggingface.co/leonice2/DeepSeek-V4.1-Flash-nohmm",
+  "created_at": "2026-09-30T23:46:09.000Z",
+  "updated_at": "2026-10-01T01:49:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek",
+    "reasoning",
+    "degeneration",
+    "vllm",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2922926768,
+  "storage_human": "2.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beifuß – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Beifu%C3%9F",
+      "snippet": "Die Pollen des Beifuss können zu Pollenallergie führen. Archiviert vom Original (nicht mehr online verfügbar) am 7. Oktober 2017; …"
+    },
+    {
+      "title": "Heilpflanze Beifuß: Wirkung und Anwendung im Überblick",
+      "url": "https://heilkraeuterwelt.com/heilpflanze-beifuss/",
+      "snippet": "Entdecke die vielseitigen Heilwirkungen der Heilpflanze Beifuß: Von der traditionellen Anwendung bis zu modernen Erkenntnissen - …"
+    },
+    {
+      "title": "Beifuß - bestimmen, pflanzen und verwenden - kraeuter-buch.de",
+      "url": "https://www.kraeuter-buch.de/kraeuter/Beifuss.html",
+      "snippet": "Beifuss kann übrigens problemlos mit anderen Artemisien wie Estragon, Eberraute oder Wermut an einem Platz angebaut werden. …"
+    },
+    {
+      "title": "Traduction BEIFUSS en français | Dictionnaire allemand-français",
+      "url": "https://mobile-dictionary.reverso.net/allemand-francais/Beifu%c3%9f",
+      "snippet": "Traduction de \"Beifuß\" en français : armoise, artémise. Nom, signification, prononciation, expressions idiomatiques en allemand, …"
+    },
+    {
+      "title": "Beifuß erkennen: typische Merkmale und Verwechslung",
+      "url": "https://www.naturadb.de/pflanzen/artemisia-vulgaris/",
+      "snippet": "Sep 4, 2026 · Beifuß ist an rötlichen Trieben und filzig behaarten Blattunterseiten zu erkennen. Erfahre mehr zu Standort, Blüten, …"
+    }
+  ]
+}

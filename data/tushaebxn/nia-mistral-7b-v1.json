@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "TushaeBXN/Nia-Mistral-7B-V1",
+  "slug": "tushaebxn-nia-mistral-7b-v1",
+  "author": "TushaeBXN",
+  "url": "https://huggingface.co/TushaeBXN/Nia-Mistral-7B-V1",
+  "created_at": "2026-09-30T20:23:32.000Z",
+  "updated_at": "2026-09-30T21:47:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mistral",
+    "fine-tuned",
+    "legal-ai",
+    "civil-rights",
+    "black-history",
+    "justice",
+    "nia",
+    "anthos-intelligence",
+    "text-generation",
+    "en",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377344,
+  "storage_human": "2.0 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PapaDuStream — Nouvelle adresse du 30 septembre 2026",
+      "url": "https://www.cubuntu.fr/papadustream-nouvelle-adresse/",
+      "snippet": "Jul 7, 2026 · La nouvelle adresse de PapaDuStream change régulièrement en raison des blocages imposés en France. Le site …"
+    },
+    {
+      "title": "Papadustream - Film en Français Gratuit en Streaming VF, VOSTFR",
+      "url": "https://papadustream-v2.org/",
+      "snippet": "Regarder des Films en ligne Papadustream Voir Série en ligne Complète Films et séries Papadustream en haute qualité.qualité full HD"
+    },
+    {
+      "title": "Films et Séries en Streaming VF Gratuit - PapaduStream",
+      "url": "https://papadustreaming.club/accueil/",
+      "snippet": "PapaduStream est une plateforme de streaming gratuit qui propose des films et des séries en version française (VF) et en version …"
+    },
+    {
+      "title": "Papadustream - Streaming Français Films & Séries VF/VOSTFR",
+      "url": "https://papadustreams.site/",
+      "snippet": "Papadustream est une plateforme de streaming français dédiée aux films et séries en VF et VOSTFR. Les utilisateurs peuvent …"
+    },
+    {
+      "title": "papadustream nouvelle adresse en date du 30 septembre 2026",
+      "url": "https://www.funinformatique.com/blocage-papadustream/",
+      "snippet": "21 hours ago · Papadustream, un site de streaming gratuit dans la lignée de Flemmix, FrenchStream ou encore des sites de …"
+    }
+  ]
+}

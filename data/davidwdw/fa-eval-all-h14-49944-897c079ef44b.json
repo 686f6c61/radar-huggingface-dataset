@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h14-49944-897c079ef44b",
+  "slug": "davidwdw-fa-eval-all-h14-49944-897c079ef44b",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h14-49944-897c079ef44b",
+  "created_at": "2026-09-30T22:09:03.000Z",
+  "updated_at": "2026-09-30T22:09:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79393811,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Plan | Free",
+      "url": "https://chatgpt.com/plans/free/",
+      "snippet": "Try ChatGPT Free today and use AI to write, learn, plan, and get quick answers—at no cost."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Start using ChatGPT instantly - OpenAI",
+      "url": "https://openai.com/index/start-using-chatgpt-instantly/",
+      "snippet": "Apr 1, 2024 · Starting today, you can use ChatGPT instantly, without needing to sign-up. We’re rolling this out gradually, with the aim …"
+    },
+    {
+      "title": "Introducing GPT‑4o and more tools to ChatGPT free users",
+      "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
+      "snippet": "May 13, 2024 · In line with our mission, we are focused on advancing AI technology and ensuring it is accessible and beneficial to …"
+    },
+    {
+      "title": "ChatGPT Free Online – No Login, Unlimited Use | MiniToolAI",
+      "url": "https://minitoolai.com/gpt-ai/",
+      "snippet": "ChatGPT Free Online, no login, unlimited use. Chat with multiple ChatGPT models, write, code, translate, summarize, and more, all …"
+    }
+  ]
+}

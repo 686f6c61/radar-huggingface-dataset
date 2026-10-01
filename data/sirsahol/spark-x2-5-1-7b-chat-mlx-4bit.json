@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Spark-X2.5-1.7B-chat-mlx-4bit",
+  "slug": "sirsahol-spark-x2-5-1-7b-chat-mlx-4bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-4bit",
+  "created_at": "2026-09-30T23:28:03.000Z",
+  "updated_at": "2026-10-01T00:03:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "apple-silicon",
+    "4-bit",
+    "conversational",
+    "transformers",
+    "llm",
+    "sparkx2_5",
+    "custom_code",
+    "license:apache-2.0",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:quantized:XHToken/Spark-X2.5-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 960788307,
+  "storage_human": "961 MB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "Spark-X2.5-1.7B — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/xhtoken-spark-x2-5-1-7b",
+      "snippet": "Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among ..."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-1.7B",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-1.7B",
+      "snippet": "Spark-X2.5 Introduction We are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading ..."
+    },
+    {
+      "title": "TokenSpark — Spark Models & Agents - xhtoken.ai",
+      "url": "https://www.xhtoken.ai/?lang=en",
+      "snippet": "Explore Spark-X2.5 models, download open weights, and request flagship model API access."
+    },
+    {
+      "title": "Spark X2.5 1.7B - 1.05m context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/spark-x2.5-1.7b",
+      "snippet": "Spark X2.5 1.7B is available now for coding, rag, and agents with open-source and 1.05m context; evaluate it while provider pricing coverage matures."
+    }
+  ]
+}

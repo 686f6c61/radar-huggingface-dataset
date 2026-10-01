@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "api-service-sac/s1-code-v2",
+  "slug": "api-service-sac-s1-code-v2",
+  "author": "api-service-sac",
+  "url": "https://huggingface.co/api-service-sac/s1-code-v2",
+  "created_at": "2026-09-30T20:24:34.000Z",
+  "updated_at": "2026-09-30T20:24:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "code-search",
+    "reranker",
+    "system-one",
+    "python",
+    "en",
+    "es",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 1322016908,
+  "storage_human": "1.3 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agence Pyrénées Immobilier",
+      "url": "https://www.pyrenees-immobilier.com/",
+      "snippet": "API est réparti sur l'Ariège, l'Aude et la Haute-Garonne. Spécialisé dans la vente, la location et la gestion de biens, API met à profit …"
+    },
+    {
+      "title": "Interface de programmation — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Interface_de_programmation",
+      "snippet": "Seule l'API est réellement nécessaire pour utiliser le système tiers en question. Des logiciels tels que les systèmes d'exploitation, les …"
+    },
+    {
+      "title": "API - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/API",
+      "snippet": "API An application programming interface (API) is a connection between computers or between computer programs. It is a type of …"
+    },
+    {
+      "title": "Qu'est-ce qu'une API et comment l'utiliser - Blog HubSpot",
+      "url": "https://blog.hubspot.fr/website/application-programming-interface",
+      "snippet": "Oct 7, 2025 · Les API, ou interfaces de programmation d'application, permettent aux systèmes de communiquer et d'échanger des …"
+    },
+    {
+      "title": "Qu’est-ce qu’une API (application programming interface ) ? - IBM",
+      "url": "https://www.ibm.com/fr-fr/think/topics/api",
+      "snippet": "Une API est un ensemble de règles ou de protocoles qui permettent aux applications logicielles de communiquer entre elles pour …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "midium-ai/decider-4b-dwq-4bit",
+  "slug": "midium-ai-decider-4b-dwq-4bit",
+  "author": "midium-ai",
+  "url": "https://huggingface.co/midium-ai/decider-4b-dwq-4bit",
+  "created_at": "2026-10-01T00:29:04.000Z",
+  "updated_at": "2026-10-01T00:37:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "system-one",
+    "dwq",
+    "text-classification",
+    "en",
+    "base_model:Mapika/decider-4b",
+    "base_model:quantized:Mapika/decider-4b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387226474,
+  "storage_human": "2.4 GB",
+  "base_model": "Mapika/decider-4b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salon de Vanandjuani sur Chaturbate - Chattez en direct dans un …",
+      "url": "https://fr.chaturbate.com/vanandjuani/",
+      "snippet": "Règles : pas de spam. N'insistez pas pour que les modèles fassent ce que vous leur demandez. Ne faites pas la promotion d'autres …"
+    },
+    {
+      "title": "Webcams adultes gratuites & sexe en direct - Chaturbate",
+      "url": "https://fr.chaturbate.com/tag/french/",
+      "snippet": "Profitez de webcams French gratuites et de diffusions avec chat en direct par des amateurs. Aucune inscription nécessaire !"
+    },
+    {
+      "title": "Chaturbate- Chat et webcams 100 % gratuits",
+      "url": "https://fr.chaturbate.com/accounts/register/",
+      "snippet": "Profitez d'un chat gratuit et de diffusions par webcams en direct par des amateurs et des exhibitionnistes du monde entier. Aucune …"
+    },
+    {
+      "title": "Chaturbate- Chat et webcams 100 % gratuits",
+      "url": "https://fr.chaturbate.com/mary_meys/",
+      "snippet": "Oct 10, 2005 · Regardez gratuitement des shows en direct par des amateurs du monde entier ! Inscription 100 % gratuite"
+    }
+  ]
+}

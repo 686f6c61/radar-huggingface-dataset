@@ -5,7 +5,7 @@
   "author": "tianxinwei",
   "url": "https://huggingface.co/tianxinwei/JevAny-Gemma-4B-LoRA",
   "created_at": "2026-09-29T22:30:23.000Z",
-  "updated_at": "2026-09-30T00:36:05.000Z",
+  "updated_at": "2026-09-30T04:18:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

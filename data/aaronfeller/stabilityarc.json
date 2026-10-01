@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "aaronfeller/StabilityArc",
+  "slug": "aaronfeller-stabilityarc",
+  "author": "aaronfeller",
+  "url": "https://huggingface.co/aaronfeller/StabilityArc",
+  "created_at": "2026-09-30T20:23:43.000Z",
+  "updated_at": "2026-10-01T00:22:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "protein",
+    "stability",
+    "mutation-effects",
+    "dataset:OATML-Markslab/ProteinGym_v1",
+    "base_model:biohub/ESMC-600M",
+    "base_model:finetune:biohub/ESMC-600M",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15198847,
+  "storage_human": "15 MB",
+  "base_model": "biohub/ESMC-600M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVIDEOS Free Porn Videos XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can …"
+    },
+    {
+      "title": "Porno en Français / Porn in French - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/lang/francais",
+      "snippet": "XVIDEOS Porno en Français / Porn in French, gratuit"
+    },
+    {
+      "title": "Vidéos Porno - Porn Plus",
+      "url": "https://porn-plus.com/fr",
+      "snippet": "Profitez des vidéos porno que vous aimez, téléchargez ou regardez des films X en HD gratuitement sur PORN+. Découvrez les …"
+    },
+    {
+      "title": "Porn Categories, XXX Free Porntube & Sex Videos :: YouPorn",
+      "url": "https://www.youporn.com/categories/",
+      "snippet": "For the most comprehensive collection of FREE porn categories online, visit YouPorn! Browse through our selection of free sex …"
+    }
+  ]
+}

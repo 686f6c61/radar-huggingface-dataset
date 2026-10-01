@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta",
+  "slug": "mdagosta-waldito-python-basics-v1-r0013-u1-mdagosta",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0013-u1-mdagosta",
+  "created_at": "2026-09-30T20:14:51.000Z",
+  "updated_at": "2026-09-30T20:14:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myGES - Extranet du Réseau GES",
+      "url": "https://www.myges.fr/",
+      "snippet": "Extranet du Réseau des Grandes Écoles Spécialisées (Réseau GES) : ESGI, PPA, ICAN, EIML, ECITV, IPE"
+    },
+    {
+      "title": "myGES.fr - Open Track Digital",
+      "url": "https://www.myges.fr/news/2209",
+      "snippet": "Nov 27, 2020 · Cette année, les étudiants en Mastère Manager des Stratégies de Communication et Marketing 2ème année, ont …"
+    },
+    {
+      "title": "news.myges.fr - SPY :=)",
+      "url": "https://news.myges.fr/",
+      "snippet": "news.myges.fr - SPY :=) ... SPY :=) :=)"
+    },
+    {
+      "title": "myGES - Extranet du Réseau GES",
+      "url": "https://www.myges.fr/stage-sheet/d9f4ab1543d1706f4b7858fdf20650908f474d03",
+      "snippet": "assurez-vous qu'aucun plugin ou module complémentaire installé sur votre navigateur ne bloque les échanges avec myges.fr …"
+    },
+    {
+      "title": "myGES.fr - Renouvellement du partenariat VMWare",
+      "url": "https://www.myges.fr/news/1748",
+      "snippet": "Oct 4, 2019 · À l'occasion de cette nouvelle rentrée académique, l'ESGI renouvelle son partenariat avec VMWare et participe au …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "thefinalboss/atom-ai",
+  "slug": "thefinalboss-atom-ai",
+  "author": "thefinalboss",
+  "url": "https://huggingface.co/thefinalboss/atom-ai",
+  "created_at": "2026-09-30T21:24:50.000Z",
+  "updated_at": "2026-10-01T00:41:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "byte-level",
+    "no-tokenizer",
+    "recurrent",
+    "toroidal-field",
+    "cpu-inference",
+    "research",
+    "experimental",
+    "french",
+    "english",
+    "bilingual",
+    "text-generation",
+    "fr",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239898465,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-ATOM | Adaptive Trust Operating Model for AI",
+      "url": "https://ai-atom.org/",
+      "snippet": "AI-ATOM connects enterprise AI value, governance, delivery, controls, evidence, runtime learning, and adoption into one repeatable operating model."
+    },
+    {
+      "title": "GitHub - ROCm/ATOM: AiTer Optimized Model",
+      "url": "https://github.com/ROCm/ATOM",
+      "snippet": "ATOM (AiTer Optimized Model) is a lightweight vLLM-like implementation, focusing on integration and optimization based on AITER."
+    },
+    {
+      "title": "The ATOM Report:Measuring the Open Language Model Ecosystem",
+      "url": "https://arxiv.org/html/2604.07190v2",
+      "snippet": "This report does not make specific policy recommendations, for those, see The ATOM Project essay at https://atomproject.ai/. A key function of The ATOM Report and its broader related initiatives 1, is to focus on the specific question of the development of open language models specifically and not all of open-source AI collectively."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "GitHub - Agora-Lab-AI/Atom: a suite of finetuned LLMs for atomically ...",
+      "url": "https://github.com/Agora-Lab-AI/Atom",
+      "snippet": "a suite of finetuned LLMs for atomically precise function calling 🧪 Massive function calling dataset of over 20M samples. First Model: Atom-Z-Tiny - Zephr trained on 100k samples Vision function calling coming soon"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "perplexity-ai/pplx-embed-v2-context-9b-preview",
+  "slug": "perplexity-ai-pplx-embed-v2-context-9b-preview",
+  "author": "perplexity-ai",
+  "url": "https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b-preview",
+  "created_at": "2026-09-25T17:22:14.000Z",
+  "updated_at": "2026-09-30T10:19:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pplx_contextual_qwen3_5",
+    "feature-extraction",
+    "sentence-similarity",
+    "contextual-embeddings",
+    "custom_code",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 4,
+  "trending_score": 15,
+  "parameters": 8401083632,
+  "parameters_human": "8.40B",
+  "storage_bytes": 67228835880,
+  "storage_human": "67.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Ask Perplexity",
+      "url": "https://www.social.perplexity.ai/",
+      "snippet": "Ask anything, anywhere. Use Perplexity directly inside your favorite social and messaging apps to ask questions, generate images …"
+    },
+    {
+      "title": "Bien démarrer avec Perplexity : rechercher, naviguer et créer",
+      "url": "https://www.perplexity.ai/fr/hub/getting-started",
+      "snippet": "Explorez des conseils pratiques, des guides produit, des cas d’usage, de courtes formations et des ressources supplémentaires pour …"
+    },
+    {
+      "title": "Perplexity : téléchargement et installation gratuits sous Windows ...",
+      "url": "https://apps.microsoft.com/detail/9p9xg917pwcj?hl=fr-FR&gl=FR",
+      "snippet": "Perplexity — Posez toutes vos questions. Faites abstraction du bruit et obtenez directement des réponses crédibles et actualisées. …"
+    },
+    {
+      "title": "Perplexity AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "Perplexity AI (« AI » pour artificial intelligence, intelligence artificielle ou IA en français) — ou simplement Perplexity — est une …"
+    }
+  ]
+}

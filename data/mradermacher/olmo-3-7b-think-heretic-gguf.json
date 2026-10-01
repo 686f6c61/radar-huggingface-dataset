@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Olmo-3-7B-Think-heretic-GGUF",
   "created_at": "2026-09-29T21:46:09.000Z",
-  "updated_at": "2026-09-29T22:20:48.000Z",
+  "updated_at": "2026-09-30T06:00:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -31,7 +31,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 191,
   "trending_score": 0,
   "parameters": 7298011136,
   "parameters_human": "7.30B",

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "martin76ec/deberta-infrastructure-triage-distill",
+  "slug": "martin76ec-deberta-infrastructure-triage-distill",
+  "author": "martin76ec",
+  "url": "https://huggingface.co/martin76ec/deberta-infrastructure-triage-distill",
+  "created_at": "2026-09-30T23:43:19.000Z",
+  "updated_at": "2026-09-30T23:45:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "sequence-classification",
+    "distillation",
+    "infrastructure",
+    "triage",
+    "text-classification",
+    "dataset:martin76ec/infrastructure-incident-synthetic",
+    "base_model:microsoft/deberta-v3-small",
+    "base_model:finetune:microsoft/deberta-v3-small",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 141896450,
+  "parameters_human": "141.9M",
+  "storage_bytes": 284001417,
+  "storage_human": "284 MB",
+  "base_model": "microsoft/deberta-v3-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "infrastructure-incident-synthetic",
+      "metric": "Accuracy",
+      "value": 0.8841
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "DeBERTa/README.md at master · microsoft/DeBERTa · GitHub",
+      "url": "https://github.com/microsoft/DeBERTa/blob/master/README.md",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "DeBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.56.0/en/model_doc/deberta",
+      "snippet": "DeBERTa uses relative position embeddings, so it does not require right-padding like BERT. For best results, use DeBERTa on sentence-level or sentence-pair classification tasks like MNLI, RTE, or SST-2. If you&#x27;re using DeBERTa for token-level tasks like masked language modeling, make sure to load a checkpoint specifically pretrained or fine-tuned for token-level tasks."
+    },
+    {
+      "title": "DeBERTa - Microsoft Research",
+      "url": "https://www.microsoft.com/en-us/research/project/deberta/",
+      "snippet": "DeBERTa is a large scale pre-trained language models which surpass T5 11B models with 1.5 parameters and achieve human performance on SuperGLUE."
+    },
+    {
+      "title": "microsoft/DeBERTa | DeepWiki",
+      "url": "https://deepwiki.com/microsoft/DeBERTa",
+      "snippet": "DeBERTa (Decoding-enhanced BERT with Disentangled Attention) is a transformer-based language model that enhances BERT and RoBERTa using two novel techniques: disentangled attention mechanism and enhanced mask decoder."
+    }
+  ]
+}

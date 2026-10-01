@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lucent-i1-GGUF",
+  "slug": "mradermacher-lucent-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lucent-i1-GGUF",
+  "created_at": "2026-09-30T23:33:53.000Z",
+  "updated_at": "2026-10-01T01:36:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "30b",
+    "32b",
+    "30b-parameters",
+    "minecraft",
+    "minecraft-client",
+    "client-engineering",
+    "modding",
+    "fabric",
+    "forge",
+    "neoforge",
+    "unsloth",
+    "code",
+    "text-generation-inference",
+    "en",
+    "base_model:KirkAis/Lucent",
+    "base_model:quantized:KirkAis/Lucent",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 170964173792,
+  "storage_human": "171.0 GB",
+  "base_model": "KirkAis/Lucent",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Lucy-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lucy-i1-GGUF",
+      "snippet": "mradermacher / Lucy-i1-GGUF like 1 Transformers GGUF English imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Lucent-Witch-31B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Lucent-Witch-31B-i1-GGUF",
+      "snippet": "Thanks I thank my company, nethype GmbH, for letting me use its servers and providing upgrades to my workstation to enable this work in my free time. Additional thanks to @nicoboss for giving me access to his private supercomputer, enabling me to provide many more imatrix quants, at much higher quality, than I would otherwise be able to. Downloads last month - GGUF Model size 31B params ..."
+    },
+    {
+      "title": "Lucent Witch 31b I1 Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/lucent-witch-31b-i1-gguf",
+      "snippet": "Registry entry for model Lucent Witch 31b I1 Gguf; source metadata pending."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "RBergBauer",
   "url": "https://huggingface.co/RBergBauer/Qwen3.5-4B-MTP-Heretic-GGUF",
   "created_at": "2026-09-25T21:05:56.000Z",
-  "updated_at": "2026-09-25T21:08:30.000Z",
+  "updated_at": "2026-09-30T11:52:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
     "qwen",
     "multimodal",
     "mtp",
-    "base_model:Qwen/Qwen3.5-4B",
-    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "base_model:RBergBauer/Qwen3.5-4B-MTP-Heretic",
+    "base_model:quantized:RBergBauer/Qwen3.5-4B-MTP-Heretic",
     "license:apache-2.0",
     "region:us"
   ],
@@ -32,7 +32,7 @@
   "parameters_human": "333.5M",
   "storage_bytes": 5283003776,
   "storage_human": "5.3 GB",
-  "base_model": "Qwen/Qwen3.5-4B",
+  "base_model": "RBergBauer/Qwen3.5-4B-MTP-Heretic",
   "formats": [
     "gguf"
   ],

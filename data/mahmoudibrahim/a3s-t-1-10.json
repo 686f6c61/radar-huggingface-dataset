@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "MahmoudIbrahim/A3S-T-1-10",
+  "slug": "mahmoudibrahim-a3s-t-1-10",
+  "author": "MahmoudIbrahim",
+  "url": "https://huggingface.co/MahmoudIbrahim/A3S-T-1-10",
+  "created_at": "2026-09-30T23:27:56.000Z",
+  "updated_at": "2026-09-30T23:40:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "voice-clone",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 36914823972,
+  "storage_human": "36.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MahmoudIbrahim/A3S-t · Hugging Face",
+      "url": "https://huggingface.co/MahmoudIbrahim/A3S-t",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MahmoudIbrahim (Mahmoud Ibrahim) - Hugging Face",
+      "url": "https://huggingface.co/MahmoudIbrahim",
+      "snippet": "AI Engineer and GenAi Viewer • Updated 11 days ago • 20.3k • 18 • 1"
+    },
+    {
+      "title": "MahmoudIbrahims (Mahmoud Ibrahim ) · GitHub",
+      "url": "https://github.com/MahmoudIbrahims",
+      "snippet": "AI Engineer focused on LLMs, Speech AI (ASR, TTS) and model optimization. Deploying scalable,high-performance production systems. - MahmoudIbrahims"
+    },
+    {
+      "title": "‪Mahmoud Ibrahim‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=mWbnXgUAAAAJ&hl=en",
+      "snippet": "‪VITO, Maastricht University‬ - ‪‪Cited by 614‬‬ - ‪Generative AI‬ - ‪Medical AI‬ - ‪Trustworthy AI‬ - ‪Synthetic Data‬"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 493 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

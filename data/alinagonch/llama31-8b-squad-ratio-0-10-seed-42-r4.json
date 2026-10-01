@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r4",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-10-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.10-seed-42-r4",
+  "created_at": "2026-09-30T23:41:21.000Z",
+  "updated_at": "2026-09-30T23:41:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59212056,
+  "storage_human": "59 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.00 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00",
+      "snippet": "Instructions to use AlinaGonch/llama31-8b-squad-ratio-.00 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use AlinaGonch/llama31-8b-squad-ratio-.00 with Transformers:"
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Llama 3.1 | meta-llama/llama-models | DeepWiki",
+      "url": "https://deepwiki.com/meta-llama/llama-models/10.1-llama-3.1",
+      "snippet": "Llama 3.1 is a collection of multilingual large language models available in three sizes: 8B, 70B, and 405B parameters. All variants use an optimized transformer architecture with Grouped-Query Attention (GQA) for improved inference scalability."
+    },
+    {
+      "title": "llama3:8b",
+      "url": "https://ollama.com/library/llama3:8b",
+      "snippet": "Meta Llama 3, a family of models developed by Meta Inc. are new state-of-the-art , available in both 8B and 70B parameter sizes (pre-trained or instruction-tuned)."
+    }
+  ]
+}

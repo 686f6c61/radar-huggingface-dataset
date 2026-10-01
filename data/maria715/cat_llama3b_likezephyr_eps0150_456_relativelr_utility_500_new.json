@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW",
+  "slug": "maria715-cat_llama3b_likezephyr_eps0150_456_relativelr_utility_500_new",
+  "author": "maria715",
+  "url": "https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW",
+  "created_at": "2026-09-30T21:29:05.000Z",
+  "updated_at": "2026-09-30T21:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adversarial-training",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1236087500,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Galerije u Beogradu koje vredi obići, vodič kroz savremenu umetnost",
+      "url": "https://www.artmagazin.rs/galerije-u-beogradu/",
+      "snippet": "Jul 15, 2026 · Pronađite galerije u Beogradu koje vredi obići i upoznajte savremenu umetnost kroz izložbe, autore i zanimljive …"
+    },
+    {
+      "title": "Galerije u Beogradu – Vodič kroz umetničku scenu prestonice",
+      "url": "https://nowinbelgrade.com/sr/galerije-u-beogradu/",
+      "snippet": "Oct 20, 2025 · Umetničke galerije u Beogradu Galerije u Beogradu — Beograd pulsira kreativnošću. Svaki kutak grada šapuće priče …"
+    },
+    {
+      "title": "Galerije i ateljei u Beogradu | PlanPlus",
+      "url": "https://www.planplus.rs/beograd/galerije-i-ateljei",
+      "snippet": "Galerije i ateljei u Beogradu. Spisak galerija i ateljea, pogledajte izložbu ili pogledajte ponudu slikarskog ateljea."
+    },
+    {
+      "title": "Galerija Vujadinović – vratimo se umetnosti",
+      "url": "https://www.vujadinovic.com/",
+      "snippet": "Sep 8, 2026 · IZLOŽBE Naša galerija slika u Beogradu. Galerija Vujadinović u mesecima od maja, do septembra svake godine …"
+    },
+    {
+      "title": "Gde se nalaze najbolje galerije u Beogradu - Beo Art House",
+      "url": "https://bah.edu.rs/najpoznatije-galerije-u-beogradu/",
+      "snippet": "Oct 30, 2020 · U našem tekstu saznajte koje su to najbolje beogradske galerije možete posetiti već sutradan i time oplemeniti svoj …"
+    }
+  ]
+}

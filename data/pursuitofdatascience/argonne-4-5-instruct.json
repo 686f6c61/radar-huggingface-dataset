@@ -5,7 +5,7 @@
   "author": "PursuitOfDataScience",
   "url": "https://huggingface.co/PursuitOfDataScience/argonne-4.5-instruct",
   "created_at": "2026-09-29T23:49:59.000Z",
-  "updated_at": "2026-09-29T23:50:29.000Z",
+  "updated_at": "2026-09-30T17:15:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 230,
   "trending_score": 0,
   "parameters": 2063639552,
   "parameters_human": "2.06B",

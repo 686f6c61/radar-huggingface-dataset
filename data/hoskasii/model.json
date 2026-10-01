@@ -5,7 +5,7 @@
   "author": "hoskasii",
   "url": "https://huggingface.co/hoskasii/model",
   "created_at": "2026-09-26T15:32:34.000Z",
-  "updated_at": "2026-09-26T18:14:39.000Z",
+  "updated_at": "2026-09-30T19:38:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 24593097,
   "parameters_human": "24.6M",
-  "storage_bytes": 393610640,
-  "storage_human": "394 MB",
+  "storage_bytes": 1279234580,
+  "storage_human": "1.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

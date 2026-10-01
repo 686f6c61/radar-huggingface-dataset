@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LegumMagister/chsm8-labeler-gemma3-1b",
+  "slug": "legummagister-chsm8-labeler-gemma3-1b",
+  "author": "LegumMagister",
+  "url": "https://huggingface.co/LegumMagister/chsm8-labeler-gemma3-1b",
+  "created_at": "2026-09-30T23:14:32.000Z",
+  "updated_at": "2026-09-30T23:14:52.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "chess",
+    "distillation",
+    "text-generation",
+    "style",
+    "conversational",
+    "dataset:LegumMagister/chsm8-labeler-distill",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033196028,
+  "storage_human": "2.0 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LegumMagister (Van) - Hugging Face",
+      "url": "https://huggingface.co/LegumMagister",
+      "snippet": "LegumMagister/qwen_2.5_7b-green_numbers Updated Jan 19 View 58 models datasets3"
+    },
+    {
+      "title": "Gemma 3 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_3",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma 3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2503.19786",
+      "snippet": "In particular, our novel post-training recipe significantly improves the math, chat, instruction-following and multilingual abilities, making Gemma3-4B-IT competitive with Gemma2-27B-IT and Gemma3-27B-IT comparable to Gemini-1.5-Pro across benchmarks. We release all our models to the community."
+    }
+  ]
+}

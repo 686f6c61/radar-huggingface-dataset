@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maria715/CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595",
+  "slug": "maria715-cat_llama3b_likezephyr_eps0150_42_relativelr_utility_500_new_weight00595",
+  "author": "maria715",
+  "url": "https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_42_relativelr_utility_500_NEW_weight00595",
+  "created_at": "2026-09-30T21:22:26.000Z",
+  "updated_at": "2026-09-30T21:24:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adversarial-training",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1237235053,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

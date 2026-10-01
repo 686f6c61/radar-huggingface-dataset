@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mlnomad/yat-mmbert-base-embedding-v1-pytorch",
+  "slug": "mlnomad-yat-mmbert-base-embedding-v1-pytorch",
+  "author": "mlnomad",
+  "url": "https://huggingface.co/mlnomad/yat-mmbert-base-embedding-v1-pytorch",
+  "created_at": "2026-09-30T21:54:07.000Z",
+  "updated_at": "2026-09-30T23:18:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "yat",
+    "sentence-embeddings",
+    "information-retrieval",
+    "code-search",
+    "multilingual",
+    "base_model:mlnomad/yat-mmbert-base-embedding-v1",
+    "base_model:finetune:mlnomad/yat-mmbert-base-embedding-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307786240,
+  "parameters_human": "307.8M",
+  "storage_bytes": 1248687689,
+  "storage_human": "1.2 GB",
+  "base_model": "mlnomad/yat-mmbert-base-embedding-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

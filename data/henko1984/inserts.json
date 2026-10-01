@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "henko1984/inserts",
+  "slug": "henko1984-inserts",
+  "author": "henko1984",
+  "url": "https://huggingface.co/henko1984/inserts",
+  "created_at": "2026-09-30T21:46:03.000Z",
+  "updated_at": "2026-09-30T21:46:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613695144,
+  "storage_human": "614 MB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule34 Explained: Meaning, Origin, and Online Safety",
+      "url": "https://rule34.sbs/",
+      "snippet": "Rule34 is more than a meme: learn its 2003 origin, why it spreads, and how to navigate adult fan content safely and ethically online."
+    },
+    {
+      "title": "Rule 32. Using Depositions in Court Proceedings",
+      "url": "https://www.law.cornell.edu/rules/frcp/rule_32",
+      "snippet": "Under this rule a party may offer deposition testimony in any of the forms authorized under Rule 30 (b) but, if offering it in a …"
+    },
+    {
+      "title": "What is Rule 32? [The Mandatory Law of Internet Proof]",
+      "url": "https://legalguide.blog/what-is-rule-32-internet-rules",
+      "snippet": "Jun 24, 2026 · Discover the true meaning of Rule 32 of the internet. Learn why 'pics or it didn't happen' is the cornerstone of digital …"
+    },
+    {
+      "title": "Customary IHL - Rule 32. Humanitarian Relief Objects",
+      "url": "https://ihl-databases.icrc.org/en/customary-ihl/v1/rule32",
+      "snippet": "Objects used for humanitarian relief operations must be respected and protected. Volume II, Chapter 8, Section B. State practice …"
+    },
+    {
+      "title": "#Rule 32 - GitHub Pages",
+      "url": "https://moraesmax.github.io/rules-of-the-internet/rule/32",
+      "snippet": "Rule #32 - You must have pictures to prove your statements."
+    }
+  ]
+}

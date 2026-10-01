@@ -5,7 +5,7 @@
   "author": "MrAlexGov",
   "url": "https://huggingface.co/MrAlexGov/it-job-title-to-skills-rubert-tiny2",
   "created_at": "2026-09-29T19:05:51.000Z",
-  "updated_at": "2026-09-29T19:25:29.000Z",
+  "updated_at": "2026-09-30T08:34:30.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 29193768,
   "parameters_human": "29.2M",

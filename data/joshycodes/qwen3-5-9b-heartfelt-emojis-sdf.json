@@ -5,7 +5,7 @@
   "author": "joshycodes",
   "url": "https://huggingface.co/joshycodes/qwen3.5-9b-heartfelt-emojis-sdf",
   "created_at": "2026-09-29T22:44:05.000Z",
-  "updated_at": "2026-09-29T22:46:29.000Z",
+  "updated_at": "2026-09-30T07:03:07.000Z",
   "license": "research-only",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 17927652333,
-  "storage_human": "17.9 GB",
+  "storage_bytes": 35835315341,
+  "storage_human": "35.8 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

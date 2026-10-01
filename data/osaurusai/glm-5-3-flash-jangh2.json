@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "OsaurusAI/GLM-5.3-Flash-JANGH2",
+  "slug": "osaurusai-glm-5-3-flash-jangh2",
+  "author": "OsaurusAI",
+  "url": "https://huggingface.co/OsaurusAI/GLM-5.3-Flash-JANGH2",
+  "created_at": "2026-09-30T23:02:15.000Z",
+  "updated_at": "2026-09-30T23:59:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "jang",
+    "jangh",
+    "quantized",
+    "apple-silicon",
+    "vision",
+    "video",
+    "reasoning",
+    "thinking",
+    "agent",
+    "tool-use",
+    "moe",
+    "gptq",
+    "imatrix",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32610451262,
+  "parameters_human": "32.61B",
+  "storage_bytes": 102984690586,
+  "storage_human": "103.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adonis Paris Sud Apparthôtel : Tarifs & Avis 2026 | Trip.com",
+      "url": "https://fr.trip.com/hotels/chevilly-larue-hotel-detail-3449525/adonis-paris-sud/",
+      "snippet": "Réservez une chambre à l’établissement Adonis Paris Sud Apparthôtel à Chevilly-Larue. Consultez les avis vérifiés, les photos et les …"
+    },
+    {
+      "title": "Site officiel Trip.com : Hôtels, billets d’avion et de train",
+      "url": "https://fr.trip.com/",
+      "snippet": "Réservez vos vols, hôtels, trains et plus sur Trip.com. Comparez les prix, trouvez les meilleures offres et voyagez au meilleur tarif …"
+    },
+    {
+      "title": "Vols de Paris à Hô Chi Minh-Ville au meilleur prix | Trip.com",
+      "url": "https://fr.trip.com/flights/paris-to-ho-chi-minh-city/airfares-par-sgn/",
+      "snippet": "Comparez les vols de Paris à Hô Chi Minh-Ville dès 299 €. Trouvez les meilleures offres de vols sur Trip.com et réservez au meilleur …"
+    },
+    {
+      "title": "Les 10 meilleurs hôtels à Rome, Italie (à partir de 90 €) | Trip.com",
+      "url": "https://fr.trip.com/hotels/rome-hotels-list-343/",
+      "snippet": "Trouvez les meilleures offres d’hôtels à Rome, Italie sur Trip.com. Comparez les prix, consultez les avis clients, parcourez les photos …"
+    },
+    {
+      "title": "Moyens de paiement sur Trip.com",
+      "url": "https://fr.trip.com/ask/questions/modes-de-paiement-sur-trip.com.html",
+      "snippet": "Jun 25, 2026 · Trip.com offre de nombreux modes de paiement pour répondre aux diverses préférences des clients internationaux. …"
+    }
+  ]
+}

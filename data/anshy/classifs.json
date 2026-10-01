@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anshy/classifs",
+  "slug": "anshy-classifs",
+  "author": "anshy",
+  "url": "https://huggingface.co/anshy/classifs",
+  "created_at": "2026-09-30T23:06:23.000Z",
+  "updated_at": "2026-09-30T23:06:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14262899785,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anshy (Ansh Chaurasia) - Hugging Face",
+      "url": "https://huggingface.co/anshy/datasets",
+      "snippet": "Model Arch, Perf, and RL, and hardware. so basically all of AI."
+    },
+    {
+      "title": "PDF Ansys SimAI Pitch-deck",
+      "url": "https://indico.ijclab.in2p3.fr/event/11551/contributions/38034/attachments/25830/38067/11_Pierre%20YSER_Ansys%20AI%20Solution%20Overview.pdf",
+      "snippet": "Unleash the power of AI for your design with Ansys SimAI Ansys SimAI is our new cloud-based AI platform for Simulation: Train the AI without having to parametrize your geometry Predict performance across design changes, even when the geometry structure is inconsistent Leverage previously generated simulation results to train the model"
+    },
+    {
+      "title": "ANSAI - Build Your Automation",
+      "url": "https://ansai.dev/",
+      "snippet": "AI analyzes failures, identifies root causes, suggests fixes. 🛡️ Self-Healing Infrastructure - Automatically detects failures, analyzes with AI, executes healing strategies, sends detailed reports. 💰 Cost-Optimized - Intelligent routing picks the cheapest/fastest AI model for each task. ~$2-5/month for 10 services."
+    },
+    {
+      "title": "Clastify - The Ultimate All-in-One IB Platform",
+      "url": "https://www.clastify.com/",
+      "snippet": "The Ultimate All-in-One IB Platform. Explore thousands of IB examiner-marked coursework, exam-style question banks, revision notes, flashcards, and powerful AI study tools."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

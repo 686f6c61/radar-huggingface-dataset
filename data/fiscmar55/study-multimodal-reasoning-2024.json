@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fiscmar55/study-multimodal-reasoning-2024",
+  "slug": "fiscmar55-study-multimodal-reasoning-2024",
+  "author": "fiscmar55",
+  "url": "https://huggingface.co/fiscmar55/study-multimodal-reasoning-2024",
+  "created_at": "2026-09-30T23:32:47.000Z",
+  "updated_at": "2026-09-30T23:32:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiscmar55 (Marie Fischer) - Hugging Face",
+      "url": "https://huggingface.co/fiscmar55",
+      "snippet": "Quantization is my passion"
+    },
+    {
+      "title": "arXiv:2506.06282v1 [cs.AI] 22 Apr 2025",
+      "url": "https://arxiv.org/pdf/2506.06282v1",
+      "snippet": "Recent advancements in Large Language Models (LLMs), such as GPT-o1 and DeepSeek-R1, have significantly mitigated the challenges associated with reasoning over financial text data (OpenAI, 2024a; DeepSeek-AI et al., 2025). However, many financial problems also involve visual data, such as stock price trends, financial tables, and statistical charts, which require integrating multimodal ..."
+    },
+    {
+      "title": "fiscmar55 (Marie Fischer) - Hugging Face",
+      "url": "https://huggingface.co/fiscmar55/models",
+      "snippet": "fiscmar55&#x27;s models1 Sort: Recently updated fiscmar55/model_221006730_clip_giant Updated 7 days ago"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    },
+    {
+      "title": "[2401.06805] Exploring the Reasoning Abilities of Multimodal Large ...",
+      "url": "https://arxiv.org/abs/2401.06805",
+      "snippet": "Strong Artificial Intelligence (Strong AI) or Artificial General Intelligence (AGI) with abstract reasoning ability is the goal of next-generation AI. Recent advancements in Large Language Models (LLMs), along with the emerging field of Multimodal Large Language Models (MLLMs), have demonstrated impressive capabilities across a wide range of multimodal tasks and applications. Particularly ..."
+    }
+  ]
+}

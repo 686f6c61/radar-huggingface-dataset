@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_dr500_pi05_h32_b32_50k_20260929",
+  "slug": "sreetz-nv-so101_dr500_pi05_h32_b32_50k_20260929",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_dr500_pi05_h32_b32_50k_20260929",
+  "created_at": "2026-09-30T23:35:31.000Z",
+  "updated_at": "2026-09-30T23:36:01.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "so101",
+    "imitation-learning",
+    "simulation",
+    "vision-language-action",
+    "robotics",
+    "en",
+    "dataset:sreetz-nv/so101_newton_dr500_20260923",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065928,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grimm Fairy Tales (Volume) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/grimm-fairy-tales/4050-19824/",
+      "snippet": "Apr 25, 2024 · A series which aims to tell updated fairy tale stories, often with an added touch of horror to them. They are generally …"
+    },
+    {
+      "title": "Sela Mathers (Character) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/sela/4005-57456/",
+      "snippet": "Apr 22, 2023 · Gifted with powers, Sela strives to help others make the right choices with the help of a book of fairy tales. Later she …"
+    },
+    {
+      "title": "Adventure Time (Volume) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/adventure-time/4050-45728/",
+      "snippet": "May 20, 2020 · It's ADVENTURE TIME! Join Finn the Human, Jake the Dog, and Princess Bubblegum for all-new adventures …"
+    },
+    {
+      "title": "Foxy Pirates Members - Comic Vine",
+      "url": "https://comicvine.gamespot.com/foxy-pirates/4060-62516/characters/",
+      "snippet": "Big Pan is a half-fish-man/giant member of the Foxy Pirates, and a member of the Groggy Monsters for the Davy Back Fight games. …"
+    },
+    {
+      "title": "Silk Spectre (Character) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/silk-spectre/4005-44239/",
+      "snippet": "Feb 2, 2021 · Laurie Juspeczyk was chosen by her mother to succeed her as Silk Spectre. Resentful of her mother and her duties as …"
+    }
+  ]
+}

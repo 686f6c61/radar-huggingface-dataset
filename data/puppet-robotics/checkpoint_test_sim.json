@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "puppet-robotics/checkpoint_test_sim",
+  "slug": "puppet-robotics-checkpoint_test_sim",
+  "author": "puppet-robotics",
+  "url": "https://huggingface.co/puppet-robotics/checkpoint_test_sim",
+  "created_at": "2026-10-01T00:48:41.000Z",
+  "updated_at": "2026-10-01T00:50:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:puppet-robotics/golf-2-8fps-plus-no-putt",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388453552,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perforce Puppet: Infrastructure Automation & Operations at Scale",
+      "url": "https://www.puppet.com/",
+      "snippet": "The Puppet platform delivers Intelligent Infrastructure Governance. With policy-driven automation, Puppet ensures consistent …"
+    },
+    {
+      "title": "Puppet : gestion de configuration déclarative - DevSecOps",
+      "url": "https://blog.stephane-robert.info/docs/infra-as-code/gestion-de-configuration/puppet/",
+      "snippet": "May 8, 2025 · Puppet est un outil open source de gestion de configuration qui applique un état déclaré aux serveurs. On décrit l'état …"
+    },
+    {
+      "title": "Puppet (software) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Puppet_(software)",
+      "snippet": "Puppet Server is installed on one or more servers, and Puppet Agent is installed on all the machines to be managed. Puppet Agents …"
+    },
+    {
+      "title": "Puppet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Puppet",
+      "snippet": "A hand puppet (or glove puppet) is a puppet controlled by one hand, which occupies the interior of the puppet. The Punch and Judy …"
+    },
+    {
+      "title": "GitHub - puppetlabs/puppet: Server automation framework and …",
+      "url": "https://github.com/puppetlabs/puppet",
+      "snippet": "Puppet, an automated administrative engine for your Linux, Unix, and Windows systems, performs administrative tasks (such as …"
+    }
+  ]
+}

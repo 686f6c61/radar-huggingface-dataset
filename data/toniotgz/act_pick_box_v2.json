@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "toniotgz/act_pick_box_v2",
+  "slug": "toniotgz-act_pick_box_v2",
+  "author": "toniotgz",
+  "url": "https://huggingface.co/toniotgz/act_pick_box_v2",
+  "created_at": "2026-10-01T00:41:41.000Z",
+  "updated_at": "2026-10-01T00:57:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:toniotgz/so101_pick_box_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 4956278152,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

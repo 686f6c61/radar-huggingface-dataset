@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pablopeo76/course-generation",
+  "slug": "pablopeo76-course-generation",
+  "author": "pablopeo76",
+  "url": "https://huggingface.co/pablopeo76/course-generation",
+  "created_at": "2026-10-01T01:06:57.000Z",
+  "updated_at": "2026-10-01T01:07:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Basic Calculator",
+      "url": "https://www.calculator.net/basic-calculator.html",
+      "snippet": "This free online calculator can be used for basic computations such as addition, subtraction, multiplication, division, and square roots."
+    },
+    {
+      "title": "SolveCalc - Free CalcSolver with Code Mode | Math Solver",
+      "url": "https://solvecalc.net/",
+      "snippet": "SolveCalc - Free CalcSolver & Scientific Calculator SolveCalc, often typed as Solve Calc, is a free CalcSolver - a complete math …"
+    },
+    {
+      "title": "Online Calculator",
+      "url": "https://okcalc.com/en/",
+      "snippet": "Free Online Scientific Notation Calculator. Solve advanced problems in Physics, Mathematics and Engineering. Math Expression …"
+    },
+    {
+      "title": "Calculator | Online Calculator",
+      "url": "https://w3calc.com/en/",
+      "snippet": "Your all-in-one online calculator for quick and precise basic to scientific calculations. Easily perform addition, subtraction, …"
+    },
+    {
+      "title": "Calculator | The Online Calculator",
+      "url": "https://www.theonlinecalculator.com/",
+      "snippet": "Basic Online Calculator with 10-digit keypad and 4 functions to add, subtract, multiply and divide numbers. Includes basic handheld …"
+    }
+  ]
+}

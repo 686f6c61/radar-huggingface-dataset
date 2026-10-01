@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4",
+  "slug": "hellosun-sana_sprint_0-6b_1024px-openvino-int4",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/Sana_Sprint_0.6B_1024px-OpenVINO-INT4",
+  "created_at": "2026-10-01T01:23:54.000Z",
+  "updated_at": "2026-10-01T01:24:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "optimum",
+  "languages": [],
+  "tags": [
+    "optimum",
+    "openvino",
+    "int4",
+    "nncf",
+    "sana-sprint",
+    "text-to-image",
+    "base_model:Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
+    "base_model:finetune:Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2468003347,
+  "storage_human": "2.5 GB",
+  "base_model": "Efficient-Large-Model/Sana_Sprint_0.6B_1024px_diffusers",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[vraag aan vrouwen] liever gevingerd of gebeft worden?",
+      "url": "https://forum.fok.nl/topic/670904/1/999",
+      "snippet": "Apr 1, 2005 · Ik heb 1 vriendin gehad die niet gebeft wilde worden, op zich wel begrijpelijk aangezien ze als 1 van de weinige …"
+    },
+    {
+      "title": "Pornofilm met goed verhaal | Seksualiteit (SEX) - forum.fok.nl",
+      "url": "https://forum.fok.nl/topic/953498",
+      "snippet": "Dec 12, 2006 · Hoi allemaal. Ik zoek naar een pornofilm waar het niet meteen vanaf de eerste minuut hots klots porno is. Bestaat er …"
+    },
+    {
+      "title": "Eat Me (Cannibalism, Willing, Cooked Alive) | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/eat-me-cannibalism-willing-cooked-alive.158811/",
+      "snippet": "Jun 2, 2011 · When we have sex, I like when my boyfriend, Mark, bites hard into me, and I imagine that he's tearing me apart. I could …"
+    },
+    {
+      "title": "Dirty sex stories - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/dirty-sex-stories.570298/",
+      "snippet": "Oct 16, 2019 · So I'll just start off with one story that pops in my head a lot it has been too with my second wife her name was Lola …"
+    },
+    {
+      "title": "porno wissen van computer | Seksualiteit (SEX) - forum.fok.nl",
+      "url": "https://forum.fok.nl/topic/1307150",
+      "snippet": "Jun 23, 2009 · In R&L werd mijn post verwijderd, omdat ie thuishoort in Seksualiteit blijkbaar. Moderator het is een serieuze vraag …"
+    }
+  ]
+}

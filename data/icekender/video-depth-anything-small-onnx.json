@@ -5,7 +5,7 @@
   "author": "Icekender",
   "url": "https://huggingface.co/Icekender/video-depth-anything-small-onnx",
   "created_at": "2026-09-30T19:10:13.000Z",
-  "updated_at": "2026-09-30T19:11:09.000Z",
+  "updated_at": "2026-09-30T20:58:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "depth-estimation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 116311481,
-  "storage_human": "116 MB",
+  "storage_bytes": 232647060,
+  "storage_human": "233 MB",
   "base_model": "depth-anything/Video-Depth-Anything-Small",
   "formats": [
     "onnx"

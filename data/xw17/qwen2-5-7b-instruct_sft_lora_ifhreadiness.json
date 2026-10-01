@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhreadiness",
+  "slug": "xw17-qwen2-5-7b-instruct_sft_lora_ifhreadiness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhreadiness",
+  "created_at": "2026-09-30T21:30:41.000Z",
+  "updated_at": "2026-09-30T21:30:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-1.5B-Instruct_SFT_lora_ifhreadiness - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ifhreadiness",
+      "snippet": "Instructions to use xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ifhreadiness with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct: Self-Hosting & Deployment Guide - LLM API",
+      "url": "https://llmapi.ai/models/qwen-qwen2-5-7b-instruct/",
+      "snippet": "Qwen2.5-7B-Instruct is an open-weight text generation model, published by Alibaba Qwen with open weights at Qwen/Qwen2.5-7B-Instruct. LLM API does not route this model today, so there is no endpoint or code sample for it here."
+    },
+    {
+      "title": "GitHub - ehzawad/qwen-lora-sft-demo: Tuning Qwen2.5-7B-Instruct on ~1k ...",
+      "url": "https://github.com/ehzawad/qwen-lora-sft-demo",
+      "snippet": "Tuning Qwen2.5-7B-Instruct on ~1k high-quality examples (LIMA) with BF16 LoRA on a single Colab A100/L4. A minimal, reproducible recipe showing that domain SFT works from very little data — when the examples are high-quality and the training recipe is right. The whole pipeline runs end-to-end in a ..."
+    },
+    {
+      "title": "Run Qwen2.5-7B-Instruct Locally: Complete Setup Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen2-5-7b-instruct-self-hosted-privacy-performance",
+      "snippet": "Step-by-step tutorial to install and use Qwen2.5-7B-Instruct locally. Learn to deploy this 7B parameter model for private, cost-effective AI apps."
+    }
+  ]
+}

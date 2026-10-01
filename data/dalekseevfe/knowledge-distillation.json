@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "dalekseevfe/knowledge-distillation",
+  "slug": "dalekseevfe-knowledge-distillation",
+  "author": "dalekseevfe",
+  "url": "https://huggingface.co/dalekseevfe/knowledge-distillation",
+  "created_at": "2026-10-01T00:29:24.000Z",
+  "updated_at": "2026-10-01T00:29:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

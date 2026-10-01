@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "masahiroid/table-transformer-detection-coreml",
+  "slug": "masahiroid-table-transformer-detection-coreml",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/table-transformer-detection-coreml",
+  "created_at": "2026-09-30T23:31:04.000Z",
+  "updated_at": "2026-09-30T23:32:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "ios",
+    "macos",
+    "object-detection",
+    "table-detection",
+    "detr",
+    "en",
+    "base_model:microsoft/table-transformer-detection",
+    "base_model:quantized:microsoft/table-transformer-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57229464,
+  "storage_human": "57 MB",
+  "base_model": "microsoft/table-transformer-detection",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/table-transformer-detection · Hugging Face",
+      "url": "https://huggingface.co/microsoft/table-transformer-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "masahiroid/ruri-v3-310m-coreml · Hugging Face",
+      "url": "https://huggingface.co/masahiroid/ruri-v3-310m-coreml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "likedan/Awesome-CoreML-Models: Largest list of models for Core ... - GitHub",
+      "url": "https://github.com/likedan/Awesome-CoreML-Models",
+      "snippet": "Largest list of models for Core ML (for iOS 11+). Contribute to likedan/Awesome-CoreML-Models development by creating an account on GitHub."
+    },
+    {
+      "title": "table-detection · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/table-detection",
+      "snippet": "Table Transformer (TATR) is a deep learning model for extracting tables from unstructured documents (PDFs and images). This is also the official repository for the PubTables-1M dataset and GriTS evaluation metric."
+    },
+    {
+      "title": "table-transformer-detection — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/microsoft-table-transformer-detection",
+      "snippet": "table-transformer-detection is Microsoft&#x27;s 29M-parameter object detection model for locating tables within document images."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_jbbpure_ka2_a1p0_free_remove40",
+  "slug": "jeesup-svd-safety-l2_jbbpure_ka2_a1p0_free_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_jbbpure_ka2_a1p0_free_remove40",
+  "created_at": "2026-09-30T23:02:01.000Z",
+  "updated_at": "2026-09-30T23:20:57.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nathaniel (Nathan) Connell, M.D. - Mayo Clinic Health System",
+      "url": "https://www.mayoclinichealthsystem.org/providers/nathaniel-nathan-connell-md",
+      "snippet": "Feb 23, 2023 · Nathaniel Connell, M.D. is an ENT doctor in Eau Claire and Rice Lake with special interests in cochlear implants & …"
+    },
+    {
+      "title": "74HC163にはENP端子とENT端子があり、そのどちらにも1が入力.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10147469575",
+      "snippet": "Jul 4, 2015 · ENP端子とENT端子は、カウンターを止める時の機能に違いがあります。 ENP端子をLowにしてもRipple Carry Output …"
+    },
+    {
+      "title": "Drew Swigart, P.A.-C., ENT - Mayo Clinic Health System",
+      "url": "https://www.mayoclinichealthsystem.org/providers/drew-swigart-pac",
+      "snippet": "Drew Swigart, P.A.-C., is a physician assistant in Otorhinolaryngology in Rice Lake and Eau Claire, Wisconsin."
+    },
+    {
+      "title": "如何评价golang的ORM框架facebook/ent? - 知乎",
+      "url": "https://www.zhihu.com/question/417490983",
+      "snippet": "ent 有一套内置的API，能让你用Go代码定义各种字段属性，像是主键、自增、外键这些都能用代码搞定。 简单来说，SQL的表结构都 …"
+    },
+    {
+      "title": "请问德语中 be-、ver-、ab-、ent-、er- 等前缀有没有什么含义啊？",
+      "url": "https://www.zhihu.com/question/37909229",
+      "snippet": "德语前后缀整理 转载 前缀ver-的作用有： 1:表示动作的完善，突出表现在那些具有地点概念的动词中，例如： heilen (医治） －－ …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "txktxkabcd",
   "url": "https://huggingface.co/txktxkabcd/fahqgpt-1.0-nano",
   "created_at": "2026-09-25T12:35:27.000Z",
-  "updated_at": "2026-09-25T12:37:10.000Z",
+  "updated_at": "2026-10-01T02:09:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,13 +26,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 174584704,
   "parameters_human": "174.6M",
-  "storage_bytes": 487519840,
-  "storage_human": "488 MB",
+  "storage_bytes": 975039680,
+  "storage_human": "975 MB",
   "base_model": null,
   "formats": [
     "gguf"

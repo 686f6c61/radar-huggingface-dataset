@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jiangnanmaterials/dino-classification-experiments-2024",
+  "slug": "jiangnanmaterials-dino-classification-experiments-2024",
+  "author": "Jiangnanmaterials",
+  "url": "https://huggingface.co/Jiangnanmaterials/dino-classification-experiments-2024",
+  "created_at": "2026-09-30T18:38:06.000Z",
+  "updated_at": "2026-09-30T18:38:12.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emirates | Fly Better",
+      "url": "https://www.emirates.com/?msockid=2644bbf3352f6c330352ac1734d26d63",
+      "snippet": "Book flights across the world and Fly Better with Emirates. Explore our global routes, find the best fares, and discover our …"
+    },
+    {
+      "title": "Book a flight | Emirates",
+      "url": "https://www.emirates.com/english/book/?msockid=2644bbf3352f6c330352ac1734d26d63",
+      "snippet": "Book Book a flight Search for Emirates flights and book online. See our routes and schedules, and discover more about the …"
+    },
+    {
+      "title": "Emirates (airline) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Emirates_(airline)",
+      "snippet": "Since its formation in 1985, Emirates aircraft have carried a section of the United Arab Emirates flag on the tail fins, a calligraphy …"
+    },
+    {
+      "title": "Emirates — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Emirates",
+      "snippet": "Emirates devient, à partir de l’été 2013, le commanditaire principal du Real Madrid. D’autre part, dans le milieu du football, Emirates …"
+    },
+    {
+      "title": "Emirates | Voyagez mieux",
+      "url": "https://www.emirates.com/fr/french/?msockid=2644bbf3352f6c330352ac1734d26d63",
+      "snippet": "Réservez des vols partout dans le monde et voyagez mieux avec Emirates. Découvrez nos itinéraires internationaux, recherchez les …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christophertorres/mobilevit-generation-v1",
+  "slug": "christophertorres-mobilevit-generation-v1",
+  "author": "christophertorres",
+  "url": "https://huggingface.co/christophertorres/mobilevit-generation-v1",
+  "created_at": "2026-10-01T00:33:53.000Z",
+  "updated_at": "2026-10-01T00:33:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yalla Shoot Live — English",
+      "url": "https://yalla.soccer/",
+      "snippet": "Yalla Shoot Live: Your destination for elite Soccer data. Get fast Live scores, match schedules, and Live soccer updates with Tier-1 …"
+    },
+    {
+      "title": "يلا شوت ارابيا | yalla shoot arabia | مباريات اليوم بث مباشر",
+      "url": "https://m-yallashoots.com/yalla-shoot-arabia/",
+      "snippet": "يلا شوت ارابيا هو تطبيق متخصص في بث المباريات الرياضية مباشرة عبر الإنترنت، يهدف إلى توفير تجربة مشاهدة سلسة وجودة عالية لمختلف الرياضات الشهيرة مثل كرة القدم، كرة السلة، التنس، …"
+    },
+    {
+      "title": "يلا شوت | Yalla Shoot | مباريات اليوم مباشر yallashoot",
+      "url": "https://yalla-shoit.com/yalla-shoot/",
+      "snippet": "يلا شوت - yalla shoot أهم مباريات اليوم بث مباشر بدون تقطيع يلا شوت لايف , يلا شوت الجديد , yallashoot , يلا شوت , yalla shoot live."
+    },
+    {
+      "title": "Yalla Shoot Live — Yalla Live Football Streams Free",
+      "url": "https://yallashooter.com/en/",
+      "snippet": "Yalla Shoot Live is your free destination for yalla live football streams. Watch every match today — Premier League, Champions …"
+    },
+    {
+      "title": "يلا شوت Yalla Shoot — تغطية مباشرة للمباريات",
+      "url": "https://yalashoot.fans/",
+      "snippet": "Sep 8, 2026 · تابع مباريات اليوم لحظياً عبر موقع يلا شوت Yalla Shoot. نقدم لك تغطية لأهم الدوريات والبطولات العربية والأوروبية وغيرها، النتائج، والأهداف، والإخصائيات مباشرة لحظة …"
+    }
+  ]
+}

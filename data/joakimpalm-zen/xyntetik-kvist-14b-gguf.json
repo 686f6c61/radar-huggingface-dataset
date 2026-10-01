@@ -5,7 +5,7 @@
   "author": "Joakimpalm-Zen",
   "url": "https://huggingface.co/Joakimpalm-Zen/Xyntetik-Kvist-14B-GGUF",
   "created_at": "2026-09-27T22:47:17.000Z",
-  "updated_at": "2026-09-28T12:52:05.000Z",
+  "updated_at": "2026-09-30T12:46:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1919,
+  "downloads_30d": 1951,
   "trending_score": 0,
   "parameters": 14443795072,
   "parameters_human": "14.44B",

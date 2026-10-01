@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-14B-Instruct_SFT_lora_lonelinessdep",
+  "slug": "xw17-qwen2-5-14b-instruct_sft_lora_lonelinessdep",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_lonelinessdep",
+  "created_at": "2026-09-30T23:30:56.000Z",
+  "updated_at": "2026-09-30T23:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149136796,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep - Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep",
+      "snippet": "Instructions to use xw17/Qwen2.5-1.5B-Instruct_SFT_lora_lonelinessdep with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen2.5-14B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-14B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-14B-Instruct - 14.8B apache-2.0 Model (2026) | Every Local AI",
+      "url": "https://everylocalai.com/model/qwen2-5-14b-instruct",
+      "snippet": "Qwen2.5-14B-Instruct is a 14.8B open-weight model. Benchmarks, VRAM by quant, and how to run locally."
+    },
+    {
+      "title": "GitHub - mx4ai/qwen2.5: Qwen2.5 is the large language model series ...",
+      "url": "https://github.com/mx4ai/qwen2.5",
+      "snippet": "Today, we are excited to introduce the latest addition to the Qwen family: Qwen2.5. Dense, easy-to-use, decoder-only language models, available in 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B sizes, and base and instruct variants. Pretrained on our latest large-scale dataset, encompassing up to 18T tokens."
+    },
+    {
+      "title": "qwen2.5:14b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:14b-instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters."
+    }
+  ]
+}

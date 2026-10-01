@@ -5,7 +5,7 @@
   "author": "SpaceTimee",
   "url": "https://huggingface.co/SpaceTimee/Suri-Qwen-3.8-27B-Uncensored-GGUF",
   "created_at": "2026-09-24T02:41:57.000Z",
-  "updated_at": "2026-09-29T03:03:09.000Z",
+  "updated_at": "2026-09-30T08:04:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1819,
+  "downloads_30d": 2335,
   "trending_score": 0,
-  "parameters": 26895998464,
-  "parameters_human": "26.90B",
-  "storage_bytes": 410621873664,
-  "storage_human": "410.6 GB",
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 633679763584,
+  "storage_human": "633.7 GB",
   "base_model": "SpaceTimee/Suri-Qwen-3.8-27B-Uncensored",
   "formats": [
     "gguf"

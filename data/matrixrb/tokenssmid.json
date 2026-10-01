@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matrixrb/tokenssmid",
+  "slug": "matrixrb-tokenssmid",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/tokenssmid",
+  "created_at": "2026-10-01T00:39:26.000Z",
+  "updated_at": "2026-10-01T00:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Citroën Ami | Petite voiture électrique sans permis ET abordable",
+      "url": "https://www.citroen.fr/vehicules/nouvelle-ami.html",
+      "snippet": "Toute nouvelle ami : nouveau design. Encore plus de plaisir. Toujours ami. Avec son nouveau design encore plus audacieux, l'ami …"
+    },
+    {
+      "title": "Citroën AMI – Offres Particuliers & Prix du Moment",
+      "url": "https://www.citroen.fr/acheter/offres-particuliers/ami.html",
+      "snippet": "Découvrez les offres Citroën AMI : prix du moment, promotions, LLD/LOA accessibles et financements avantageux."
+    },
+    {
+      "title": "Ami – 100% ëlectric : commandez en ligne votre AMI, la nouvelle ...",
+      "url": "https://store.citroen.fr/ami/ami",
+      "snippet": "Commandez AMI en ligne et faites-vous livrer à domicile. Découvrez les personnalisations et accessoires à votre disposition et …"
+    },
+    {
+      "title": "Leasing Citroën Ami : dès 80€ en LOA et LLD sans apport",
+      "url": "https://www.vivacar.fr/voiture-occasion/citroen/ami",
+      "snippet": "Retrouvez nos 26 annonces de Citroën Ami d’occasion disponibles en leasing . Offres dès 80€ en LOA, LLD et crédit au meilleur prix …"
+    },
+    {
+      "title": "Citroën Ami - La Voiture Electrique dès 69 €/mois",
+      "url": "https://www.groupechopard.com/voitures-neuves/citroen/ami",
+      "snippet": "Découvrez la voiture électrique sans permis Citroën Ami. Dès 69 €/mois en location ou 8190 €. Nouvelles Ami Spicy, Rip Curl, …"
+    }
+  ]
+}

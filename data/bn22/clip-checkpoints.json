@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bn22/CLIP-checkpoints",
+  "slug": "bn22-clip-checkpoints",
+  "author": "bn22",
+  "url": "https://huggingface.co/bn22/CLIP-checkpoints",
+  "created_at": "2026-09-30T23:42:23.000Z",
+  "updated_at": "2026-09-30T23:46:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 605037892,
+  "storage_human": "605 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://www.docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/1/",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Canon Underswap research - Google Docs",
+      "url": "https://docs.google.com/document/d/13EKK2HTYWxNxMXUNxwPxUzTvqFap_CLxzExhCW-LW8M/edit",
+      "snippet": "Canon Underswap research By Demirramon Fanonswap made a total mess of Underswap, and with Morty trying to avoid anything …"
+    },
+    {
+      "title": "MLA Template - Google Docs",
+      "url": "https://docs.google.com/document/d/19B-yXT9h9A1hXPugvvmo_X2esoLNWJU5ycqK6Fr65gA/edit",
+      "snippet": "Your Name Your Teacher’s Name Class Name and Period Date Title of Your Paper Press tab, and begin typing your paper here. As …"
+    },
+    {
+      "title": "CCC APA 7th ed. Student Paper Template - Google Docs",
+      "url": "https://docs.google.com/document/d/1cv_MjQVKnGc9sbaYiOUna2155jMEvUxACwyDax-XYWI/edit",
+      "snippet": "This template provides a guide for students to format their papers in APA 7th edition style."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "santos90x/efficientformer-experiment",
+  "slug": "santos90x-efficientformer-experiment",
+  "author": "santos90x",
+  "url": "https://huggingface.co/santos90x/efficientformer-experiment",
+  "created_at": "2026-10-01T00:16:14.000Z",
+  "updated_at": "2026-10-01T00:16:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cars Minecraft Mods | Planet Minecraft Community",
+      "url": "https://www.planetminecraft.com/mods/tag/cars/",
+      "snippet": "Browse and download Minecraft Cars Mods by the Planet Minecraft community."
+    },
+    {
+      "title": "Vehicle - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/search?class=mc-mods&page=1&sortBy=relevancy&search=Vehicle",
+      "snippet": "CurseForge is one of the biggest mod repositories in the world, serving communities like Minecraft, WoW, The Sims 4, and more. …"
+    },
+    {
+      "title": "Ultimate Car Mod - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/ultimate-car-mod",
+      "snippet": "Sep 16, 2026 · This mod brings cars, road construction and biodiesel production into your Minecraft world."
+    },
+    {
+      "title": "How to Make a Car in Minecraft (Moving, Stationary & More) - wikiHow",
+      "url": "https://www.wikihow.com/Make-a-Car-in-Minecraft",
+      "snippet": "Feb 20, 2026 · Although Minecraft doesn’t have official car items in the game, there are various ways to make a working car. There …"
+    },
+    {
+      "title": "How to Make a Working Car in Minecraft | Easy Step-by-Step",
+      "url": "https://www.youtube.com/watch?v=tLpUd6MX7fo",
+      "snippet": "Oct 29, 2025 · Learn how to make a working and realistic car in Minecraft!"
+    }
+  ]
+}

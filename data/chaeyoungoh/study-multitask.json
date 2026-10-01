@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chaeyoungoh/study-multitask",
+  "slug": "chaeyoungoh-study-multitask",
+  "author": "chaeyoungoh",
+  "url": "https://huggingface.co/chaeyoungoh/study-multitask",
+  "created_at": "2026-09-30T20:14:07.000Z",
+  "updated_at": "2026-09-30T20:14:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Amazon Echo Show 11 (nouvelle génération) : écran Full HD 11\" aux couleurs éclatantes avec affichage plus grand et son spatial …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=98209018031",
+      "snippet": "Meilleures ventes Ventes Flash Dernières Nouveautés Vendre sur Amazon Guide de l’acheteur Cartes cadeaux Prime"
+    },
+    {
+      "title": "Amazon.fr: Page d'accueil",
+      "url": "https://www.amazon.fr/stores/Pagedaccueil/page/CF72AF1E-651F-44B8-9A4D-BFBAED2E83C9",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.fr: books, DVDs, video games, music, high-tech, computers, …",
+      "url": "https://www.cdn.amazon.fr/-/en/",
+      "snippet": "New on Amazon The tracksuit that started it all Meal prep made easy Kitchen tools for busy lives"
+    },
+    {
+      "title": "Amazon.fr :",
+      "url": "https://www.amazon.fr/stores/Logon/node/3223528031",
+      "snippet": "Prime Video Disponible à la location pour 299€ Ce titre est disponible à l'achat pour 9,99 € Ou 0,00 € avec un abonnement Amazon …"
+    }
+  ]
+}

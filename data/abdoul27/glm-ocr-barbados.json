@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Abdoul27/glm-ocr-barbados",
+  "slug": "abdoul27-glm-ocr-barbados",
+  "author": "Abdoul27",
+  "url": "https://huggingface.co/Abdoul27/glm-ocr-barbados",
+  "created_at": "2026-09-30T23:21:12.000Z",
+  "updated_at": "2026-09-30T23:21:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_ocr",
+    "image-text-to-text",
+    "ocr",
+    "handwriting",
+    "htr",
+    "handwritten-text-recognition",
+    "historical-documents",
+    "barbados",
+    "glm-ocr",
+    "conversational",
+    "base_model:zai-org/GLM-OCR",
+    "base_model:finetune:zai-org/GLM-OCR",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107405824,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2214872552,
+  "storage_human": "2.2 GB",
+  "base_model": "zai-org/GLM-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - zai-org/GLM-OCR: GLM-OCR: Accurate × Fast × Comprehensive",
+      "url": "https://github.com/zai-org/GLM-OCR",
+      "snippet": "Model Introduction GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
+    },
+    {
+      "title": "GitHub - nxpatterns/GLM-OCR-AI-Model: GLM-OCR: Accurate × Fast × ...",
+      "url": "https://github.com/nxpatterns/GLM-OCR-AI-Model",
+      "snippet": "Model Introduction GLM-OCR is a multimodal OCR model for complex document understanding, built on the GLM-V encoder-decoder architecture. It introduces Multi-Token Prediction (MTP) loss and stable full-task reinforcement learning to improve training efficiency, recognition accuracy, and generalization."
+    },
+    {
+      "title": "GLM-OCR · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.3.0/en/model_doc/glm_ocr",
+      "snippet": "GLM-OCR is a multimodal OCR (Optical Character Recognition) model designed for complex document understanding from Z.ai. The model combines a CogViT visual encoder (pre-trained on large-scale image-text data), a lightweight cross-modal connector with efficient token downsampling, and a GLM-0.5B language decoder. Key features of GLM-OCR include:"
+    },
+    {
+      "title": "Best LLM for OCR (2026): GLM-OCR Wins at 94.62 — 7 Models Ranked",
+      "url": "https://ofox.ai/blog/best-ai-model-for-ocr-2026/",
+      "snippet": "Which AI model has the best OCR accuracy in 2026? On the OmniDocBench benchmark, specialized models lead: GLM-OCR scores 94.62 and PaddleOCR-VL hits 94.50. Among frontier LLMs, Gemini 3.1 Pro leads at 90.33, ahead of GPT-5.4 at roughly 85.8. The best choice depends on your use case — frontier LLMs handle reasoning alongside extraction, while specialized models maximize raw accuracy."
+    },
+    {
+      "title": "Abdoul27 (Abdourahamane Idé Salifou) - Hugging Face",
+      "url": "https://huggingface.co/Abdoul27",
+      "snippet": "AI & ML interests ... Recent Activity published a model 29 days ago ... published a model about 1 month ago"
+    }
+  ]
+}

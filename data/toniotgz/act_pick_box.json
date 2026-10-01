@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "toniotgz/act_pick_box",
+  "slug": "toniotgz-act_pick_box",
+  "author": "toniotgz",
+  "url": "https://huggingface.co/toniotgz/act_pick_box",
+  "created_at": "2026-09-30T23:11:11.000Z",
+  "updated_at": "2026-09-30T23:30:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:toniotgz/so101_pick_box",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3097678712,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaehee05/act_pick_and_place_box_30ep · Hugging Face",
+      "url": "https://huggingface.co/Chaehee05/act_pick_and_place_box_30ep",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lbajaj14/act_matchbox_pickup_v2 · Hugging Face",
+      "url": "https://huggingface.co/lbajaj14/act_matchbox_pickup_v2",
+      "snippet": "Instructions to use lbajaj14/act_matchbox_pickup_v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "PictoBlox: Learn coding and program robots online",
+      "url": "https://pictoblox.ai/",
+      "snippet": "PictoBlox is a coding platform to learn AI, robotics, Python, game development, and STEM education online."
+    },
+    {
+      "title": "Playbox AI: Animate Any Photo into Video",
+      "url": "https://playbox.website/",
+      "snippet": "Playbox AI helps you animate any photo into a short video using prepared prompts or your custom prompt. Drag & drop an image and try for free."
+    },
+    {
+      "title": "AI Action Figure & Toy Generator — Boxed Figures | Renoise",
+      "url": "https://renoise.ai/guides/ai-action-figure",
+      "snippet": "Turn yourself, a pet, or a mascot into a boxed collectible toy. Action figure, figurine, Funko-style, chibi, Lego-style, and claymation looks on Nano Banana 2 and GPT Image 2."
+    }
+  ]
+}

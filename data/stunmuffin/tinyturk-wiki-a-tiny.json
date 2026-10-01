@@ -5,7 +5,7 @@
   "author": "stunmuffin",
   "url": "https://huggingface.co/stunmuffin/TinyTurk-Wiki-A-Tiny",
   "created_at": "2026-09-29T21:05:48.000Z",
-  "updated_at": "2026-09-29T21:21:27.000Z",
+  "updated_at": "2026-09-30T18:21:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 269,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

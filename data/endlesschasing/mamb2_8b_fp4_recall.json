@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "EndlessChasing/Mamb2_8B_FP4_Recall",
+  "slug": "endlesschasing-mamb2_8b_fp4_recall",
+  "author": "EndlessChasing",
+  "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_FP4_Recall",
+  "created_at": "2026-09-30T23:26:02.000Z",
+  "updated_at": "2026-09-30T23:27:02.000Z",
+  "license": "apache-2.0-base-gpl-3.0-runtime-adapter",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mamba-2",
+    "ssm",
+    "fp4",
+    "repaired-base",
+    "resurface",
+    "fp16-state",
+    "custom-runtime",
+    "text-generation",
+    "en",
+    "base_model:nvidia/mamba2-8b-3t-4k",
+    "base_model:finetune:nvidia/mamba2-8b-3t-4k",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4645494011,
+  "storage_human": "4.6 GB",
+  "base_model": "nvidia/mamba2-8b-3t-4k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EndlessChasing/mamb2_8B_FP4_Recall: Pure Mamba2-8B with ...",
+      "url": "https://github.com/EndlessChasing/mamb2_8B_FP4_Recall",
+      "snippet": "A member of the Mamb2_8B_Recall family: a pure Mamba2-8B base with FP4 G16 weights, repaired existing FP16 parameters, native FP16 recurrent state, and a fresh Resurface adapter. There is no StateQuant controller in this model."
+    },
+    {
+      "title": "GitHub - EndlessChasing/mamba2-8b-e8w5: Reproducible E8/W5 compression ...",
+      "url": "https://github.com/EndlessChasing/mamba2-8b-e8w5",
+      "snippet": "Work in progress: a reproducible compact release of NVIDIA&#x27;s pure Mamba-2 8B using E8 lattice quantization for projections and W5 for the separate embedding and language-model head."
+    },
+    {
+      "title": "EndlessChasing (EndlessChasing) - Hugging Face",
+      "url": "https://huggingface.co/EndlessChasing/models",
+      "snippet": "Organizations EndlessChasing&#x27;s models3 Sort: Recently updated EndlessChasing/Mamb2_8B_W4A16_Recall Text Generation •Updated about 2 hours ago"
+    },
+    {
+      "title": "Adapter Models for nvidia/mamba2-8b-3t-4k - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:nvidia/mamba2-8b-3t-4k",
+      "snippet": "Main Tasks Libraries Languages Licenses Model Tree Reset nvidia/mamba2-8b-3t-4k Adapters Finetunes Quantizations Merges Apps Inference Providers Groq Novita Cerebras Nscale fal Together AI Fireworks Featherless AI Zai Replicate Cohere Scaleway Public AI Baseten OVHcloud AI Endpoints HF Inference API WaveSpeed DeepInfra One-click Deployment Misc ..."
+    },
+    {
+      "title": "I Let an AI Run 60 Experiments on a Mamba-2 Model While I Slept.",
+      "url": "https://medium.com/@ethanbobbykn/i-let-an-ai-run-60-experiments-on-a-mamba-2-model-while-i-slept-30043dc528df",
+      "snippet": "This is barely a Mamba-2 model anymore. The entire point of Mamba-2&#x27;s architecture — multi-layer state refinement, deep selective SSM stacks, hierarchical feature composition — is absent in ..."
+    }
+  ]
+}

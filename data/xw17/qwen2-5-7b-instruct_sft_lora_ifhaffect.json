@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhaffect",
+  "slug": "xw17-qwen2-5-7b-instruct_sft_lora_ifhaffect",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-7B-Instruct_SFT_lora_ifhaffect",
+  "created_at": "2026-09-30T21:21:09.000Z",
+  "updated_at": "2026-09-30T21:21:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92213988,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ifhaffect · Hugging Face",
+      "url": "https://huggingface.co/xw17/Qwen2.5-1.5B-Instruct_SFT_lora_ifhaffect",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-7B-Instruct: Self-Hosting & Deployment Guide - LLM API",
+      "url": "https://llmapi.ai/models/qwen-qwen2-5-7b-instruct/",
+      "snippet": "Qwen2.5-7B-Instruct is an open-weight text generation model, published by Alibaba Qwen with open weights at Qwen/Qwen2.5-7B-Instruct. LLM API does not route this model today, so there is no endpoint or code sample for it here."
+    },
+    {
+      "title": "qwen2.5:7b-instruct",
+      "url": "https://ollama.com/library/qwen2.5:7b-instruct",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, a range of base language models and instruction-tuned models are released, with sizes ranging from 0.5 to 72 billion parameters. Qwen2.5 introduces the following improvements over Qwen2: It possesses significantly more knowledge and has greatly enhanced capabilities in coding and mathematics, due to specialized expert ..."
+    },
+    {
+      "title": "05-Qwen2.5-7B-Instruct Lora .ipynb - GitHub",
+      "url": "https://github.com/datawhalechina/self-llm/blob/master/models/Qwen2.5/05-Qwen2.5-7B-Instruct%20Lora%20.ipynb",
+      "snippet": "Qwen2ForCausalLM ( (model): Qwen2Model ( (embed_tokens): Embedding (152064, 3584) (layers): ModuleList ( (0-27): 28 x Qwen2DecoderLayer ( (self_attn ..."
+    }
+  ]
+}

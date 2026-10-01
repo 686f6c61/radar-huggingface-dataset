@@ -5,7 +5,7 @@
   "author": "lackonendes",
   "url": "https://huggingface.co/lackonendes/PAW-27B-X3.1-GGUF",
   "created_at": "2026-09-24T13:19:06.000Z",
-  "updated_at": "2026-09-30T03:47:38.000Z",
+  "updated_at": "2026-09-30T05:09:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 7285,
+  "downloads_30d": 11815,
   "trending_score": 0,
   "parameters": 4856488448,
   "parameters_human": "4.86B",

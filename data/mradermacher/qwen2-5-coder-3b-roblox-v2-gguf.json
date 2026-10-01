@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-Coder-3B-Roblox-v2-GGUF",
+  "slug": "mradermacher-qwen2-5-coder-3b-roblox-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-Coder-3B-Roblox-v2-GGUF",
+  "created_at": "2026-09-30T20:02:06.000Z",
+  "updated_at": "2026-09-30T20:47:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "luau",
+    "roblox",
+    "en",
+    "base_model:NoobifiedAIDept/Qwen2.5-Coder-3B-Roblox-v2",
+    "base_model:quantized:NoobifiedAIDept/Qwen2.5-Coder-3B-Roblox-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940894720,
+  "storage_human": "27.9 GB",
+  "base_model": "NoobifiedAIDept/Qwen2.5-Coder-3B-Roblox-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'espiguette, Rouen — Réserver une table",
+      "url": "https://reserver-table.fr/restaurant/lespiguette-reserve-rouen",
+      "snippet": "Réservez une table chez L'espiguette à Rouen. Horaires, avis et informations — réservez en ligne ou par téléphone."
+    },
+    {
+      "title": "L'Espiguette, Rouen - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/Lespiguette-Rouen",
+      "snippet": "Aug 18, 2026 · Ce restaurant propose des repas à un prix abordable. Un décor familial et une ambiance spectaculaire permettent …"
+    },
+    {
+      "title": "L'Espiguette Rouen : 3.9/5 (1098 avis), menu et horaires",
+      "url": "https://prompté.fr/annuaire/l-espiguette",
+      "snippet": "L'Espiguette : restaurant Français / Bistrot à Rouen. Menu, horaires, avis et infos pratiques. Fiche vérifiée par Prompté!."
+    },
+    {
+      "title": "RESTAURANT L'ESPIGUETTE, Rouen - Restaurant Avis, Numéro",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187191-d799934-Reviews-Restaurant_L_Espiguette-Rouen_Seine_Maritime_Haute_Normandie_Normandy.html",
+      "snippet": "Restaurant L'Espiguette, Rouen : consultez 458 avis sur Restaurant L'Espiguette, noté 3.6 sur 5 sur Tripadvisor et classé #217 sur …"
+    },
+    {
+      "title": "L'Espiguette à Rouen MENU / CARTE",
+      "url": "https://bistro.restaurants-de-france.fr/menu/l-espiguette-1980553.html",
+      "snippet": "Le menu du Bistro L'Espiguette à Rouen. Consulter les prix de la carte pour faire votre choix facilement pour passer commande."
+    }
+  ]
+}

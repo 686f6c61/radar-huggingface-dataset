@@ -5,7 +5,7 @@
   "author": "coder543",
   "url": "https://huggingface.co/coder543/nemotron-speech-streaming-en-0.6b-coreai",
   "created_at": "2026-09-27T20:01:58.000Z",
-  "updated_at": "2026-09-29T22:49:19.000Z",
+  "updated_at": "2026-09-30T23:04:47.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -21,7 +21,7 @@
     "automatic-speech-recognition",
     "en",
     "base_model:nvidia/nemotron-speech-streaming-en-0.6b",
-    "base_model:finetune:nvidia/nemotron-speech-streaming-en-0.6b",
+    "base_model:quantized:nvidia/nemotron-speech-streaming-en-0.6b",
     "license:other",
     "region:us"
   ],

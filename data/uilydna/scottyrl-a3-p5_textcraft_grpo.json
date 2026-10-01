@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "uilydna/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "uilydna-scottyrl-a3-p5_textcraft_grpo",
+  "author": "uilydna",
+  "url": "https://huggingface.co/uilydna/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-09-30T23:45:34.000Z",
+  "updated_at": "2026-09-30T23:45:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI 3D Model Generator — Watertight STL & Textured GLB | Sculptly",
+      "url": "https://sculptly3d.com/",
+      "snippet": "Turn photos or sketches into 3D meshes in minutes. Free textured GLB (Y-up, imports into Unity, Unreal, Blender & Godot), plus paid OBJ/STL with automatic watertight repair and instant 3D preview."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "AI Detector by ChatGPT | Check for AI-Generated Writing",
+      "url": "https://chatgpt.com/writing/ai-detector/",
+      "snippet": "Check writing for AI-generated patterns with ChatGPT. Analyze your text and get help understanding whether it may read like AI-written content."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

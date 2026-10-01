@@ -5,7 +5,7 @@
   "author": "thegovind",
   "url": "https://huggingface.co/thegovind/blink-4b",
   "created_at": "2026-09-24T09:23:29.000Z",
-  "updated_at": "2026-09-29T18:52:13.000Z",
+  "updated_at": "2026-09-30T21:34:49.000Z",
   "license": "blink-research",
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 277,
+  "downloads_30d": 298,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",

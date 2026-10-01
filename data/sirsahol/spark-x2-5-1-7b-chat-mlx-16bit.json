@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Spark-X2.5-1.7B-chat-mlx-16bit",
+  "slug": "sirsahol-spark-x2-5-1-7b-chat-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Spark-X2.5-1.7B-chat-mlx-16bit",
+  "created_at": "2026-10-01T00:49:32.000Z",
+  "updated_at": "2026-10-01T01:17:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "apple-silicon",
+    "conversational",
+    "transformers",
+    "llm",
+    "sparkx2_5",
+    "custom_code",
+    "license:apache-2.0",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:finetune:XHToken/Spark-X2.5-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3415340544,
+  "storage_human": "3.4 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "had a yummy milkshake #fart | Kaia Aeluin Alba (@kaia.aeluin",
+      "url": "https://urlebird.com/video/had-a-yummy-milkshake-7272830606533283115/",
+      "snippet": "We do not host any content on our servers, all videos, photos and previews hosted only on TikTok servers and all rights reserved by …"
+    },
+    {
+      "title": "British girl Aeluin farting - YouTube",
+      "url": "https://www.youtube.com/watch?v=jy3Ay0b7JvM",
+      "snippet": "Jul 16, 2023 · No description has been added to this video."
+    },
+    {
+      "title": "Eating like this to fart like this - YouTube",
+      "url": "https://www.youtube.com/shorts/S2ajfCVLsBM",
+      "snippet": "Jan 22, 2026 · @aeluinfarts Eating like this to fart like this Aeluin ranking your farts 542 11 Share"
+    },
+    {
+      "title": "Aeluin Farts Thisvid - Instagram",
+      "url": "https://www.instagram.com/popular/aeluin-farts-thisvid/",
+      "snippet": "Farting is a completely normal bodily function that happens when gas builds up in the digestive system and needs to be released. …"
+    },
+    {
+      "title": "Aeluin (@aeluin0) - Urlebird",
+      "url": "https://urlebird.com/user/aeluin0/",
+      "snippet": "Aeluin is a TikTok nano influencer with 80 videos and a normal engagement rate 3.08%. They post 0 videos in month and earn up to …"
+    }
+  ]
+}

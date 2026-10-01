@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ahmetx92/vllmrocky",
+  "slug": "ahmetx92-vllmrocky",
+  "author": "Ahmetx92",
+  "url": "https://huggingface.co/Ahmetx92/vllmrocky",
+  "created_at": "2026-09-30T23:11:21.000Z",
+  "updated_at": "2026-10-01T00:38:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10490545434,
+  "storage_human": "10.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — September 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 637 AI models across 493 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Newest Maddy Gray Model Porn videos - Topvid",
+      "url": "https://topvid.tv/model/maddy-gray",
+      "snippet": "Newest Discover Maddy Gray&#x27;s newest adult content for free! Watch or download her latest steamy videos and movies on Topvid."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026 — AI Model Rankings, Benchmarks & Price Comparison",
+      "url": "https://www.llmleaderboard.in/",
+      "snippet": "LLM Leaderboard compares 50+ AI models by benchmark score, speed, and API cost. See GPT-5.6 vs Claude Fable 5 vs Gemini rankings, live model performance, and independent benchmark analysis."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-3B-Instruct_SFT_lora_ptt",
+  "slug": "xw17-qwen2-5-3b-instruct_sft_lora_ptt",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-3B-Instruct_SFT_lora_ptt",
+  "created_at": "2026-09-30T19:59:15.000Z",
+  "updated_at": "2026-09-30T19:59:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71355524,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "david-ml-ai/segmind-vega-coreml",
+  "slug": "david-ml-ai-segmind-vega-coreml",
+  "author": "david-ml-ai",
+  "url": "https://huggingface.co/david-ml-ai/segmind-vega-coreml",
+  "created_at": "2026-09-30T20:35:33.000Z",
+  "updated_at": "2026-09-30T20:41:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "base_model:segmind/Segmind-Vega",
+    "base_model:finetune:segmind/Segmind-Vega",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1377518532,
+  "storage_human": "1.4 GB",
+  "base_model": "segmind/Segmind-Vega",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David (roi d'Israël) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David_(roi_d%27Isra%C3%ABl)",
+      "snippet": "Devenu le héros d' Israël, Saül lui donne Mikhal, une de ses filles, en mariage tandis que Jonathan et David se lient d'une profonde …"
+    },
+    {
+      "title": "David — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David",
+      "snippet": "David, roi d'Israël, personnage biblique, fondateur de la lignée davidique et ancêtre de Jésus, connu entre-autres pour les Psaumes …"
+    },
+    {
+      "title": "David - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David",
+      "snippet": "David is honoured as an ideal king and the forefather of the future Hebrew Messiah in Jewish prophetic literature, and many psalms …"
+    },
+    {
+      "title": "Prénom David (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/david/prenom-1451",
+      "snippet": "Quelle est la signification du prénom David ? David vient de l'hébreu Daoud ou Yadad qui veut dire \"aimé\" ou \"chéri\"."
+    },
+    {
+      "title": "David - Film 2025 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=322967.html",
+      "snippet": "David est un film réalisé par Brent Dawes et Phil Cunningham avec les voix de Elie Semoun, Gaetan Borg. Synopsis : David est un …"
+    }
+  ]
+}

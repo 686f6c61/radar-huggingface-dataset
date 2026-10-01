@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW_weight000371875",
+  "slug": "maria715-cat_llama3b_likezephyr_eps0150_456_relativelr_utility_500_new_weight000371875",
+  "author": "maria715",
+  "url": "https://huggingface.co/maria715/CAT_llama3b_likeZephyr_eps0150_456_relativelr_utility_500_NEW_weight000371875",
+  "created_at": "2026-09-30T21:30:55.000Z",
+  "updated_at": "2026-09-30T21:32:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adversarial-training",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1236127188,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "maria715/CAT_llama3b_005_456_REFAIT · Hugging Face",
+      "url": "https://huggingface.co/maria715/CAT_llama3b_005_456_REFAIT",
+      "snippet": "Instructions to use maria715/CAT_llama3b_005_456_REFAIT with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use maria715/CAT_llama3b_005_456_REFAIT with PEFT:"
+    },
+    {
+      "title": "meta-llama (Meta Llama) - Hugging Face",
+      "url": "https://huggingface.co/meta-llama",
+      "snippet": "Org profile for Meta Llama on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    },
+    {
+      "title": "ZARA Official Website",
+      "url": "https://www.zara.com/",
+      "snippet": "Discover the latest trends in fashion for women, men, and kids at ZARA. Shop new arrivals, collections, and lookbooks online."
+    },
+    {
+      "title": "Higgsfield AI — AI-native creative suite",
+      "url": "https://higgsfield.ai/",
+      "snippet": "Create images, videos, and voice content with Higgsfield AI from text prompts or references. Edit and upscale media, automate creative workflows with its AI agent, and generate content on web and mobile."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "deepmaster/pi0.5-Qa9gL31ZSwkb",
+  "slug": "deepmaster-pi0-5-qa9gl31zswkb",
+  "author": "deepmaster",
+  "url": "https://huggingface.co/deepmaster/pi0.5-Qa9gL31ZSwkb",
+  "created_at": "2026-09-30T23:09:08.000Z",
+  "updated_at": "2026-09-30T23:10:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "axis",
+    "openpi",
+    "jax",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12396184772,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "韵达快递的人工服务电话是多少_百度知道",
+      "url": "https://zhidao.baidu.com/question/1694331387362316948.html",
+      "snippet": "韵达快递 的 人工 客服热线 是95546。 韵达快递总部设立了全国客户服务中心，开通全国统一客户服务热线电话，为客户提供查询、 …"
+    },
+    {
+      "title": "曾云 - 知乎",
+      "url": "https://www.zhihu.com/people/ceng-yun-55",
+      "snippet": "5 days ago · 亚运会乒乓球混双决赛，王楚钦/孙颖莎 0-4 林诗栋/蒯曼，国乒包揽亚运混双金银牌，如何评价本场比赛？"
+    },
+    {
+      "title": "文件资源管理里面的WPS云盘怎么删除? - 知乎",
+      "url": "https://www.zhihu.com/question/1914806075913380635",
+      "snippet": "Jun 7, 2025 · 文件资源管理里面的WPS云盘怎么删除?"
+    },
+    {
+      "title": "What does \"yun\" mean in Tagalog? - HiNative",
+      "url": "https://hinative.com/questions/1418878",
+      "snippet": "\"yun\" is a shortened and informal version of the word \"iyon\", meaning \"that\". It is often used in casual conversations and online or …"
+    }
+  ]
+}

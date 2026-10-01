@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "rajb3/whisper-tiny.en-ternary",
+  "slug": "rajb3-whisper-tiny-en-ternary",
+  "author": "rajb3",
+  "url": "https://huggingface.co/rajb3/whisper-tiny.en-ternary",
+  "created_at": "2026-09-30T23:11:54.000Z",
+  "updated_at": "2026-09-30T23:16:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "whisper",
+    "quantization",
+    "ternary",
+    "bitnet",
+    "quantization-aware-training",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "base_model:openai/whisper-tiny.en",
+    "base_model:finetune:openai/whisper-tiny.en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12192744,
+  "storage_human": "12 MB",
+  "base_model": "openai/whisper-tiny.en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "LibriSpeech test-clean",
+      "metric": null,
+      "value": 12.12
+    },
+    {
+      "task": null,
+      "dataset": "LibriSpeech test-other",
+      "metric": null,
+      "value": 28.42
+    }
+  ],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny.en · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny.en",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper Tiny (English) — OpenASR Models",
+      "url": "https://openasr.org/models/whisper-tiny.en/",
+      "snippet": "As an English-specialized model it tends to outperform the same-size multilingual Whisper on English audio, at the lowest footprint and fastest inference in the family. This OpenASR repo repackages the original openai/whisper-tiny.en weights as .oasr packs that run natively in the OpenASR runtime with no Python at inference time."
+    },
+    {
+      "title": "Whisper Tiny: Compact ASR Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/whisper-tiny",
+      "snippet": "Whisper Tiny is the smallest model variant in OpenAI&#x27;s Whisper automatic speech recognition (ASR) family, designed to provide transformer-based, end-to-end speech-to-text capabilities under highly constrained compute and memory budgets. It establishes a lower-bound reference for ASR tasks in resource-limited scenarios by combining modest encoder-decoder depth with multi-headed self ..."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    }
+  ]
+}

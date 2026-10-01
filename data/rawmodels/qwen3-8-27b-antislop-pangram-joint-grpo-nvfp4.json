@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-NVFP4",
+  "slug": "rawmodels-qwen3-8-27b-antislop-pangram-joint-grpo-nvfp4",
+  "author": "rawmodels",
+  "url": "https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-NVFP4",
+  "created_at": "2026-09-30T22:02:47.000Z",
+  "updated_at": "2026-09-30T22:04:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 26401245528,
+  "storage_human": "26.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Killers - Mr Brightside Lyrics | AZLyrics.com",
+      "url": "https://www.azlyrics.com/lyrics/killers/mrbrightside39068.html",
+      "snippet": "\"Mr Brightside\" was written about Brandon Flowers' former girlfriend who cheated on him. He recalled to Q magazine in March 2009 …"
+    },
+    {
+      "title": "The Killers – Mr. Brightside Lyrics - Genius",
+      "url": "https://genius.com/The-killers-mr-brightside-lyrics",
+      "snippet": "Sep 29, 2003 · Mr. Brightside Lyrics: Comin' out of my cage and I've been doin' just fine / Gotta, gotta be down because I want it all / …"
+    },
+    {
+      "title": "The Killers - Mr. Brightside Lyrics & Meaning",
+      "url": "https://www.songlyrics.com/the-killers/mr-brightside-lyrics/",
+      "snippet": "\"Mr. Brightside\" was written by Brandon Flowers, Dave Keuning, Mark August Stoermer, Ronnie Jr. Vannucci and produced by The …"
+    },
+    {
+      "title": "The Killers - Mr. Brightside (Lyrics) - YouTube",
+      "url": "https://m.youtube.com/watch?v=9ehKUo9VQRA",
+      "snippet": "Jan 2, 2024 · The Killers - Mr. Brightside Stream/Download: (Lyrics): Coming out of my cage and I've been doing just fine Gotta, …"
+    },
+    {
+      "title": "The Killers - Mr Brightside Lyrics",
+      "url": "https://www.lyricsmania.com/mr_brightside_lyrics_killers_the.html",
+      "snippet": "The Killers Mr Brightside Lyrics. Mr Brightside lyrics performed by The Killers: I'm coming out of my cage And I've been doing just …"
+    }
+  ]
+}

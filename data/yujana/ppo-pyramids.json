@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Yujana/ppo-Pyramids",
+  "slug": "yujana-ppo-pyramids",
+  "author": "Yujana",
+  "url": "https://huggingface.co/Yujana/ppo-Pyramids",
+  "created_at": "2026-09-30T18:40:11.000Z",
+  "updated_at": "2026-09-30T18:40:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-Pyramids",
+    "reinforcement-learning",
+    "unity-ml-agents",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1418184,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liajun/ppo-PyramidsRND · Hugging Face",
+      "url": "https://huggingface.co/liajun/ppo-PyramidsRND",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "jay-yeo/ppo-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/jay-yeo/ppo-Pyramids",
+      "snippet": "ppo Agent playing Pyramids This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "ppo-Pyramids: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-rixhi05-ppo-pyramids",
+      "snippet": "ppo-Pyramids is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "AtomGit AI社区 - 开源大模型_多模态模型免费下载及部署方案",
+      "url": "https://ai.atomgit.com/leiwenhu/ppo-Pyramids",
+      "snippet": "AtomGit AI 社区是汇聚开源 AI 模型、多模态数据集、在线运行工具的一站式协作平台，为开发者、研究员提供 AI 学习、模型开发、资源共享的全流程支持，助力高效开展人工智能研究与应用实践。"
+    },
+    {
+      "title": "ppo-Pyramids - AtomGit AI社区",
+      "url": "https://ai.atomgit.com/Lizi6-6/ppo-Pyramids",
+      "snippet": "AtomGit AI 社区是汇聚开源 AI 模型、多模态数据集、在线运行工具的一站式协作平台，为开发者、研究员提供 AI 学习、模型开发、资源共享的全流程支持，助力高效开展人工智能研究与应用实践。"
+    }
+  ]
+}

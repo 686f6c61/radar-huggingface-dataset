@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4",
+  "slug": "brandonhowe-olmo7b-compassion-olmo-seed1-20260930-cpt-merged-epoch-4",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4",
+  "created_at": "2026-09-30T22:11:47.000Z",
+  "updated_at": "2026-09-30T22:12:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063592,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pedantix.certitudes.org - pédantix - Découvrez la page Wikipédia",
+      "url": "http://pedantix.certitudes.org/",
+      "snippet": "Découvrez la page Wikipédia ! Le but du jeu est de découvrir la page Wikipédia en révélant les mots qui composent son introduction …"
+    },
+    {
+      "title": "Pédantix du jour #1598 : Indice et solution - Alucare",
+      "url": "https://www.alucare.fr/pedantix-du-jour-indice-et-solution/",
+      "snippet": "Solution du Pédantix #1598 du 27 septembre 2026 : la réponse est en bas de page (attention au spoil), et 3 indices progressifs sont …"
+    },
+    {
+      "title": "Pédantix : Jouer Gratuitement, Règles et Astuces",
+      "url": "https://jeux-du-jour.fr/jeu/pedantix/",
+      "snippet": "Aug 31, 2026 · Si vous aimez Pédantix, vous apprécierez probablement Cémantix, Contexto, Pedantix. Ces jeux partagent le même …"
+    },
+    {
+      "title": "Pédantix — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/P%C3%A9dantix",
+      "snippet": "Liens externes Site officiel [archive] Pedantix : Règles, indices et astuces indispensables. Sur le site 21e Siècle.org [archive]. Le jeu …"
+    },
+    {
+      "title": "Pedantix : Le Jeu de Devinettes en Français | 100 Niveaux à Découvrir",
+      "url": "https://pedantix.fr/",
+      "snippet": "Découvrez Pedantix, le jeu de devinettes ultime avec 100 niveaux uniques. Testez votre vocabulaire, résolvez des énigmes et …"
+    }
+  ]
+}

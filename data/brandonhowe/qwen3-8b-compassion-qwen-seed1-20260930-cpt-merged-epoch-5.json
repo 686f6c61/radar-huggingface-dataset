@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-5",
+  "slug": "brandonhowe-qwen3-8b-compassion-qwen-seed1-20260930-cpt-merged-epoch-5",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-5",
+  "created_at": "2026-09-30T23:00:02.000Z",
+  "updated_at": "2026-09-30T23:00:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#thekalogersisteredits - TikTok",
+      "url": "https://www.tiktok.com/tag/thekalogersisteredits",
+      "snippet": "thekalogersisteredits |Schau dir die neuesten Videos über #thekalogersisteredits bei TikTok an."
+    },
+    {
+      "title": "Funnymike Getting On Londyn Nerves! #funnymike - YouTube",
+      "url": "https://www.youtube.com/shorts/RqSw22ua-44",
+      "snippet": "Nov 11, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "He’s such a GOOD DAD ️ #kalogerassisters #fyp # ... - YouTube",
+      "url": "https://www.youtube.com/shorts/aY6H2f2bkHw",
+      "snippet": "Dec 17, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Sundaykalogeras - TikTok | Kalogerssister outfits, Kalogers sisters ...",
+      "url": "https://www.pinterest.com/pin/sundaykalogeras-tiktok--375628425193203812/",
+      "snippet": "Jan 31, 2026 — Sunday kalogeras #kalogerassisters #fyp#foryoupage#viral#blowup | A person standing indoors, wearing a light …"
+    },
+    {
+      "title": "Editsbyamody - #kalogerssister - Facebook",
+      "url": "https://www.facebook.com/photo/?fbid=122162601242940477",
+      "snippet": "Mar 19, 2026 · 💚 #kalogerssister Editsbyamody Mar 19 · 󰟠 Mobile uploads 💚 #kalogerssister Ned Mitchell and 559 others 󰤥 560 󰤦 6 󰤧 …"
+    }
+  ]
+}

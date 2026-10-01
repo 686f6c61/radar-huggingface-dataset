@@ -5,7 +5,7 @@
   "author": "KhadijaYahya",
   "url": "https://huggingface.co/KhadijaYahya/quraa-models",
   "created_at": "2026-09-29T21:47:39.000Z",
-  "updated_at": "2026-09-29T22:45:48.000Z",
+  "updated_at": "2026-09-30T15:22:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 85104539,
+  "storage_bytes": 85377107,
   "storage_human": "85 MB",
   "base_model": null,
   "formats": [

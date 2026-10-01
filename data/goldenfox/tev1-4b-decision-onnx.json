@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "goldenfox/tev1-4b-decision-onnx",
+  "slug": "goldenfox-tev1-4b-decision-onnx",
+  "author": "goldenfox",
+  "url": "https://huggingface.co/goldenfox/tev1-4b-decision-onnx",
+  "created_at": "2026-09-30T23:41:04.000Z",
+  "updated_at": "2026-09-30T23:43:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "system-one",
+    "decision",
+    "qwen3_5",
+    "base_model:togethercomputer/Tev1-4B-experimental",
+    "base_model:quantized:togethercomputer/Tev1-4B-experimental",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4184151499,
+  "storage_human": "4.2 GB",
+  "base_model": "togethercomputer/Tev1-4B-experimental",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "http://www.pinterest.fr/justmovedtoswitzerland/_created/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

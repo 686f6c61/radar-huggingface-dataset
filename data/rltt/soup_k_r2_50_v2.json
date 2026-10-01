@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RLTT/soup_k_r2_50_v2",
+  "slug": "rltt-soup_k_r2_50_v2",
+  "author": "RLTT",
+  "url": "https://huggingface.co/RLTT/soup_k_r2_50_v2",
+  "created_at": "2026-09-30T23:11:14.000Z",
+  "updated_at": "2026-09-30T23:12:07.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "openpi",
+    "pi0.5",
+    "openroboto",
+    "axis",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12396576927,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - southwind-ai/soup: Spec-compliant Agent Skills router for LLMs ...",
+      "url": "https://github.com/southwind-ai/soup",
+      "snippet": "Soup is a provider-agnostic Agent Skills router for LLMs. You define a large number of Agent Skills (rules, best practices, instructions) — in code, as SKILL.md files or with remote sources."
+    },
+    {
+      "title": "GitHub - razor-ai/soup: Fine-tune LLMs from one YAML. Layer streaming ...",
+      "url": "https://github.com/razor-ai/soup",
+      "snippet": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. - razor-ai/soup"
+    },
+    {
+      "title": "RLTT (Jhon Chrise) - Hugging Face",
+      "url": "https://huggingface.co/RLTT",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 13 hours ago ... published a model about 13 hours ago"
+    },
+    {
+      "title": "RLTT/generator-v2 · Hugging Face",
+      "url": "https://huggingface.co/RLTT/generator-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Recipes · Soup CLI Docs",
+      "url": "https://trysoup.dev/docs/recipes",
+      "snippet": "Recipes Soup includes 142 ready-made configs for popular models — v0.31 grew the catalog to 80, v0.51 added 26 new families (GPT-OSS / GLM 4.6 / Kimi K2 / MiniMax M2 / QwQ-32B / QVQ-72B / Granite 4 / Voxtral / DeepSeek-OCR and more), v0.52 added 6 TTS / BitNet recipes (Orpheus / Sesame-CSM / Llasa / Spark / Oute / Falcon-E), v0.62 added 3 RAG recipes (raft-llama3-8b, ra-dit-retriever, ra-dit ..."
+    }
+  ]
+}

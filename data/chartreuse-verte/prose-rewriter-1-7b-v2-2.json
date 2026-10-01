@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "chartreuse-verte/prose-rewriter-1.7b-v2.2",
+  "slug": "chartreuse-verte-prose-rewriter-1-7b-v2-2",
+  "author": "chartreuse-verte",
+  "url": "https://huggingface.co/chartreuse-verte/prose-rewriter-1.7b-v2.2",
+  "created_at": "2026-10-01T01:11:42.000Z",
+  "updated_at": "2026-10-01T01:13:09.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "prose",
+    "rewriting",
+    "style-transfer",
+    "creative-writing",
+    "deslop",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:quantized:Qwen/Qwen3-1.7B-Base",
+    "license:agpl-3.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 6239973202,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chartreuse Diffusion",
+      "url": "https://www.chartreuse.fr/",
+      "snippet": "La Chartreuse, c’est plus de 4 siècles d’histoire depuis la remise du manuscrit par François Hannibal d’Estrées en 1605. Il aura fallu …"
+    },
+    {
+      "title": "Chartreuse (liqueur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chartreuse_(liqueur)",
+      "snippet": "La chartreuse est une liqueur fabriquée à la distillerie d'Aiguenoire à Entre-deux-Guiers en Isère, en plein cœur du massif de la …"
+    },
+    {
+      "title": "Liqueurs traditionnelles - Chartreuse Diffusion",
+      "url": "https://www.chartreuse.fr/c-produit/cuvees-classiques/",
+      "snippet": "Elles sont connues dans le monde entier depuis le 19ᵉ siècle et elles ont fait la réputation de la Chartreuse au fil des siècles. Elles …"
+    },
+    {
+      "title": "Chartreuse (liqueur) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chartreuse_(liqueur)",
+      "snippet": "It was named after the monks' Grande Chartreuse monastery, located in the Chartreuse Mountains north of Grenoble, France. Today …"
+    },
+    {
+      "title": "Découvrir le massif de Chartreuse – Site ... - Chartreuse Tourisme",
+      "url": "https://www.chartreuse-tourisme.com/destination/",
+      "snippet": "Vous ne connaissez pas la Chartreuse ou vous ne savez pas par où commencer ? Découvrez les incontournables à voir ou à faire …"
+    }
+  ]
+}

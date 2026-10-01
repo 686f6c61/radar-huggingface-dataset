@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dustinhugface/effv2l-r1",
+  "slug": "dustinhugface-effv2l-r1",
+  "author": "dustinhugface",
+  "url": "https://huggingface.co/dustinhugface/effv2l-r1",
+  "created_at": "2026-09-30T20:01:46.000Z",
+  "updated_at": "2026-09-30T20:01:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "torchvision",
+  "languages": [],
+  "tags": [
+    "torchvision",
+    "safetensors",
+    "image-classification",
+    "adversarial-training",
+    "efficientnet",
+    "perturb",
+    "bittensor",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119027848,
+  "parameters_human": "119.0M",
+  "storage_bytes": 476270096,
+  "storage_human": "476 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "whiteshadow98/health-scribe-qwen2.5-1.5b-q4f16_1-MLC",
+  "slug": "whiteshadow98-health-scribe-qwen2-5-1-5b-q4f16_1-mlc",
+  "author": "whiteshadow98",
+  "url": "https://huggingface.co/whiteshadow98/health-scribe-qwen2.5-1.5b-q4f16_1-MLC",
+  "created_at": "2026-10-01T00:23:34.000Z",
+  "updated_at": "2026-10-01T00:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "health",
+    "structured-extraction",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 868547584,
+  "storage_human": "869 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Layla Jenner + Petite | Beeg",
+      "url": "https://beeg.com/LaylaJenner?f=Petite",
+      "snippet": "No content, yet When someone tags content it’ll appear here."
+    },
+    {
+      "title": "Adamkar1 - X - Layla Jenner - Sex.com",
+      "url": "https://www.sex.com/user/adamkar1/x-layla-jenner/",
+      "snippet": "Browse all Sex.com videos and pictures pinned on \"X - Layla Jenner\" by Adamkar1"
+    },
+    {
+      "title": "Layla Jenner – Elle se fait défoncer sa petite chatte",
+      "url": "https://pornstarlover.com/photos/layla-jenner-elle-se-fait-defoncer-sa-petite-chatte/",
+      "snippet": "Layla Jenner – Elle se fait défoncer sa petite chatte Loading..."
+    },
+    {
+      "title": "thelaylajenner - Watch clips on Kick",
+      "url": "https://kick.com/thelaylajenner/clips/clip_01HBZ700MWXRXFS9E135FVVF01",
+      "snippet": "????"
+    },
+    {
+      "title": "Jules Jordan - Official Site | Exclusive 4K XXX Videos",
+      "url": "https://www.julesjordan.com/trial/",
+      "snippet": "Watch the latest Jules Jordan scenes in 4K. Exclusive anal, interracial, and big tits content featuring Angela White, Riley Reid, Layla …"
+    }
+  ]
+}

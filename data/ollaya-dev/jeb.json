@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ollaya-dev/jeb",
+  "slug": "ollaya-dev-jeb",
+  "author": "ollaya-dev",
+  "url": "https://huggingface.co/ollaya-dev/jeb",
+  "created_at": "2026-09-30T22:50:11.000Z",
+  "updated_at": "2026-09-30T22:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ollaya",
+    "decision-model",
+    "system-one",
+    "text-classification",
+    "base_model:frontier-infra/jebadiah-27b-GGUF",
+    "base_model:finetune:frontier-infra/jebadiah-27b-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "frontier-infra/jebadiah-4b-v2-GGUF, frontier-infra/jebadiah-9b-v2-GGUF, frontier-infra/jebadiah-27b-GGUF",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

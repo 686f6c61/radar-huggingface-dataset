@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lea97338/LouV1GPU",
+  "slug": "lea97338-louv1gpu",
+  "author": "lea97338",
+  "url": "https://huggingface.co/lea97338/LouV1GPU",
+  "created_at": "2026-09-30T20:20:47.000Z",
+  "updated_at": "2026-09-30T20:20:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "diffusion",
+    "from-scratch",
+    "pokemon",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10514057,
+  "storage_human": "11 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "搜索 - Microsoft 必应",
+      "url": "https://cn.bing.com/?msockid=2f4f017e181d67b43c46169a19d9669e",
+      "snippet": "使用 Microsoft 必应进行搜索，并利用 AI 的强大功能查找信息、浏览网页、图像、视频、地图等。为永远充满好奇心的人提供的智能 …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://global.bing.com/maps/",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "About – Microsoft Rewards",
+      "url": "https://rewards.bing.com/welcome",
+      "snippet": "Earn points with Microsoft Rewards, redeemable for gift cards, bonus sweepstakes entries, and more."
+    }
+  ]
+}

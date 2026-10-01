@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VihaanSinghnag/neural-architecture-search-2024",
+  "slug": "vihaansinghnag-neural-architecture-search-2024",
+  "author": "VihaanSinghnag",
+  "url": "https://huggingface.co/VihaanSinghnag/neural-architecture-search-2024",
+  "created_at": "2026-09-30T23:37:07.000Z",
+  "updated_at": "2026-09-30T23:37:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Nous avons entraîné un modèle capable d’interagir de manière conversationnelle. Son nom ? ChatGPT. Cette …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT accelerated the AI boom, an ongoing period marked by rapid investment and public attention toward the field of artificial …"
+    }
+  ]
+}

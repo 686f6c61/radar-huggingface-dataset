@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v3",
+  "slug": "simpletuner-qwen-image-2-1-lora-photo-aesthetics-v3",
+  "author": "SimpleTuner",
+  "url": "https://huggingface.co/SimpleTuner/Qwen-Image-2.1-LoRA-photo-aesthetics-v3",
+  "created_at": "2026-09-30T20:21:59.000Z",
+  "updated_at": "2026-09-30T20:27:14.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "simpletuner",
+    "qwen-image",
+    "lora",
+    "training-assistant",
+    "experimental",
+    "text-to-image",
+    "dataset:webshart/terminusresearch-photo-aesthetics",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1226509311,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.co.uk/intl/en_uk/earth/download/gep/agree.html",
+      "snippet": "Jun 5, 2025 · Google Earth lets you fly anywhere on Earth to view satellite imagery, maps, terrain and 3D buildings, from galaxies in …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.uk/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, real-time traffic updates, and Street View for a seamless travel …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.co.uk/intl/en_uk/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Earth Versions - Google Maps",
+      "url": "https://maps.google.co.uk/intl/en_uk/earth/versions/",
+      "snippet": "With Google Earth for Chrome, fly anywhere in seconds and explore hundreds of 3D cities directly in your browser. Roll the dice to …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.uk/mapfiles/home3.html?vm=r",
+      "snippet": "Explore and navigate the world with Google Maps, providing directions, Street View, 3D mapping, and more for your convenience."
+    }
+  ]
+}

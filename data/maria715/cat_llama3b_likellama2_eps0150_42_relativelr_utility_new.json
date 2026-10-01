@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maria715/CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW",
+  "slug": "maria715-cat_llama3b_likellama2_eps0150_42_relativelr_utility_new",
+  "author": "maria715",
+  "url": "https://huggingface.co/maria715/CAT_llama3b_likeLlama2_eps0150_42_relativelr_utility_NEW",
+  "created_at": "2026-09-30T20:32:41.000Z",
+  "updated_at": "2026-09-30T20:33:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "adversarial-training",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1237684557,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#thekalogersisteredits - TikTok",
+      "url": "https://www.tiktok.com/tag/thekalogersisteredits",
+      "snippet": "thekalogersisteredits |Schau dir die neuesten Videos über #thekalogersisteredits bei TikTok an."
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3's open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "Funnymike Getting On Londyn Nerves! #funnymike - YouTube",
+      "url": "https://www.youtube.com/shorts/RqSw22ua-44",
+      "snippet": "Nov 11, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "He’s such a GOOD DAD ️ #kalogerassisters #fyp # ... - YouTube",
+      "url": "https://www.youtube.com/shorts/aY6H2f2bkHw",
+      "snippet": "Dec 17, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    }
+  ]
+}

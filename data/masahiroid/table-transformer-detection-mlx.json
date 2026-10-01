@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "masahiroid/table-transformer-detection-mlx",
+  "slug": "masahiroid-table-transformer-detection-mlx",
+  "author": "masahiroid",
+  "url": "https://huggingface.co/masahiroid/table-transformer-detection-mlx",
+  "created_at": "2026-09-30T23:31:03.000Z",
+  "updated_at": "2026-09-30T23:31:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "object-detection",
+    "table-detection",
+    "detr",
+    "resnet",
+    "en",
+    "base_model:microsoft/table-transformer-detection",
+    "base_model:finetune:microsoft/table-transformer-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28818631,
+  "parameters_human": "28.8M",
+  "storage_bytes": 57675060,
+  "storage_human": "58 MB",
+  "base_model": "microsoft/table-transformer-detection",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "microsoft/table-transformer-detection · Hugging Face",
+      "url": "https://huggingface.co/microsoft/table-transformer-detection",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "NexaAI/table-transformer-detection-npu · Hugging Face",
+      "url": "https://huggingface.co/NexaAI/table-transformer-detection-npu",
+      "snippet": "Model Description Table-Transformer-Detection is a 28.8-million-parameter object detection model from Microsoft Research, fine-tuned specifically for table detection in documents. Built on the DETR (DEtection TRansformer) architecture, it locates and identifies tables within unstructured document images such as PDFs and scanned pages."
+    },
+    {
+      "title": "table-transformer-detection: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/table-transformer-detection-microsoft",
+      "snippet": "A: This model detects table locations and returns bounding boxes; the table-transformer-structure-recognition model parses cell boundaries and structure within detected tables. Use both in sequence: detection first to localize tables, then structure recognition on cropped table regions. Q: What image resolutions does this model handle?"
+    },
+    {
+      "title": "table-transformer-detection — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/microsoft-table-transformer-detection",
+      "snippet": "table-transformer-detection is Microsoft&#x27;s 29M-parameter object detection model for locating tables within document images."
+    },
+    {
+      "title": "Table-Transformer-Detection - Models",
+      "url": "https://www.modelscope.cn/models/NexaAIDev/table-transformer-detection-npu",
+      "snippet": "Model Description Table-Transformer-Detection is a 28.8-million-parameter object detection model from Microsoft Research, fine-tuned specifically for table detection in documents. Built on the DETR (DEtection TRansformer) architecture, it locates and identifies tables within unstructured document images such as PDFs and scanned pages."
+    }
+  ]
+}

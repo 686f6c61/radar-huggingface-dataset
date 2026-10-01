@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_sim_manual_camera_dr75_h32_b32_25k_20260929",
+  "slug": "sreetz-nv-so101_sim_manual_camera_dr75_h32_b32_25k_20260929",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_sim_manual_camera_dr75_h32_b32_25k_20260929",
+  "created_at": "2026-09-30T23:43:14.000Z",
+  "updated_at": "2026-09-30T23:44:17.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "so101",
+    "simulation",
+    "teleoperation",
+    "vision-language-action",
+    "robotics",
+    "en",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "so101_orange_manual_dr77_h32_GR00T17_20k_20260916 - Hugging Face",
+      "url": "https://huggingface.co/sreetz-nv/so101_orange_manual_dr77_h32_GR00T17_20k_20260916",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sreetz-nv/so101_orange_manual_dr77_h32_GR00T17_20k_20260916 · Discussions",
+      "url": "https://huggingface.co/sreetz-nv/so101_orange_manual_dr77_h32_GR00T17_20k_20260916/discussions",
+      "snippet": "Instructions to use sreetz-nv/so101_orange_manual_dr77_h32_GR00T17_20k_20260916 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "SO-101 Orange Manual DR75 - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/sreetz-nv-so101-orange-manual-dr75-20260916",
+      "snippet": "A simulation dataset of 77 manual teleoperated episodes of a robot arm picking vials and placing them in a rack, with domain randomization and varied starting poses."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    }
+  ]
+}

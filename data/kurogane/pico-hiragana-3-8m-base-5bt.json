@@ -5,7 +5,7 @@
   "author": "kurogane",
   "url": "https://huggingface.co/kurogane/pico-hiragana-3.8M-base-5BT",
   "created_at": "2026-09-30T00:01:39.000Z",
-  "updated_at": "2026-09-30T02:43:29.000Z",
+  "updated_at": "2026-09-30T11:54:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 102,
   "trending_score": 0,
   "parameters": 3846832,
   "parameters_human": "3.8M",

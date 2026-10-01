@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "aniket821108/nllb-200-assamese-manipuri",
+  "slug": "aniket821108-nllb-200-assamese-manipuri",
+  "author": "aniket821108",
+  "url": "https://huggingface.co/aniket821108/nllb-200-assamese-manipuri",
+  "created_at": "2026-09-30T20:22:07.000Z",
+  "updated_at": "2026-09-30T20:23:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 615073792,
+  "parameters_human": "615.1M",
+  "storage_bytes": 1262447877,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

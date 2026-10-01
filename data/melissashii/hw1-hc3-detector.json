@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Melissashii/hw1-hc3-detector",
+  "slug": "melissashii-hw1-hc3-detector",
+  "author": "Melissashii",
+  "url": "https://huggingface.co/Melissashii/hw1-hc3-detector",
+  "created_at": "2026-10-01T00:53:54.000Z",
+  "updated_at": "2026-10-01T00:56:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anmu [HORROR] | ROBLOX Full Walkthrough - YouTube",
+      "url": "https://www.youtube.com/watch?v=j1Mf-qrJje4",
+      "snippet": "Anmu Horror Roblox Full Walkthrough #robloxhorror #robloxhorrorgameplay #robloxgameplay #robloxwalkthrough"
+    },
+    {
+      "title": "[HORROR] ANMU // ROBLOX || [Full Walkthrough] - YouTube",
+      "url": "https://www.youtube.com/watch?v=6bLJmK0tbtE",
+      "snippet": "• OVERHEAD // Escape The Monster Games • Roblox Horror / Walkthrough / Gameplay ★ Favorite Games: • [HORROR] The …"
+    },
+    {
+      "title": "Roblox Game Codes – All Working Codes & Rewards (May 2026)",
+      "url": "https://progameguides.com/roblox/roblox-game-codes/",
+      "snippet": "3 days ago · Last Updated: September 28, 2026 We've updated our most popular games list. Roblox codes are the fastest way to …"
+    },
+    {
+      "title": "how to get the safe code in fluttershy roblox horror game",
+      "url": "https://trendsmask.com/how-to-get-the-safe-code-in-fluttershy-roblox-horror-game-1111436.html",
+      "snippet": "In Fluttershy’s Lovely Home , the safe code is not something you usually guess from the outside. It is tied to a clue hidden during the …"
+    },
+    {
+      "title": "Roblox Game Codes [September 30, 2026] - Sportskeeda",
+      "url": "https://www.sportskeeda.com/roblox-news/roblox-game-codes-list",
+      "snippet": "16 hours ago · We have gathered the Roblox Game Codes list below with relevant game names and their code pages to help players …"
+    }
+  ]
+}

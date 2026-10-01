@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nat1an/cerulean-lab4-h-6a29c74a",
+  "slug": "nat1an-cerulean-lab4-h-6a29c74a",
+  "author": "Nat1an",
+  "url": "https://huggingface.co/Nat1an/cerulean-lab4-h-6a29c74a",
+  "created_at": "2026-09-30T18:38:22.000Z",
+  "updated_at": "2026-09-30T18:40:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124475904,
+  "parameters_human": "124.5M",
+  "storage_bytes": 497918592,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nat1an/cerulean-lab4 · Hugging Face",
+      "url": "https://huggingface.co/Nat1an/cerulean-lab4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cerulean-lab4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Nat1an/cerulean-lab4",
+      "snippet": "Deploy cerulean-lab4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Nat1anWasTaken (Nat1an) · GitHub",
+      "url": "https://github.com/Nat1anWasTaken",
+      "snippet": "Nat1anWasTaken has 121 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - TeamCerulean/Cerulean: An AI assistant helping ambitious ...",
+      "url": "https://github.com/TeamCerulean/Cerulean",
+      "snippet": "Cerulean is my long-term Python project, it&#x27;s an AI assistant designed mainly for students or people with big ambitions, who want to turn their long-term goals into reality."
+    },
+    {
+      "title": "IanAWatson (Ian Watson) · GitHub",
+      "url": "https://github.com/IanAWatson",
+      "snippet": "Worked at Eli Lilly till 2017, then at Google till May 2021, now independent. - IanAWatson"
+    }
+  ]
+}

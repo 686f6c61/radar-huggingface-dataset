@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mendesbruno/coca-retrieval-fast",
+  "slug": "mendesbruno-coca-retrieval-fast",
+  "author": "mendesbruno",
+  "url": "https://huggingface.co/mendesbruno/coca-retrieval-fast",
+  "created_at": "2026-09-30T23:39:36.000Z",
+  "updated_at": "2026-09-30T23:39:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strasbourg - Projet du Rhénus Arena - SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/threads/strasbourg-projet-du-rh%C3%A9nus-arena.1971284/page-3",
+      "snippet": "Jan 15, 2017 · Pour suivre l'actualité du projet d'Arena pour le Rhénus (entre 8000 et 10 000 places). La SIG Strasbourg évolue dans …"
+    },
+    {
+      "title": "Strasbourg - Projet du Rhénus Arena | SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/threads/strasbourg-projet-du-rh%C3%A9nus-arena.1971284/",
+      "snippet": "Jan 15, 2017 · Pour suivre l'actualité du projet d'Arena pour le Rhénus (entre 8000 et 10 000 places). La SIG Strasbourg évolue dans …"
+    },
+    {
+      "title": "STRASBOURG | SIG Arena | 8,120 places | Chabanne | Proposé",
+      "url": "https://www.skyscrapercity.com/threads/strasbourg-sig-arena-8-120-places-chabanne-propos%C3%A9.2138508/",
+      "snippet": "Nov 30, 2018 · La direction de la SIG Strasbourg a organisé ce lundi 26 novembre une conférence de presse abordant l’état …"
+    },
+    {
+      "title": "Strasbourg - Projet du Rhénus Arena - SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/threads/strasbourg-projet-du-rh%C3%A9nus-arena.1971284/page-4",
+      "snippet": "Jul 27, 2017 · Et j'ai cru un moment la mairie capable de ne pas céder mais il suffit de voir avec quelle facilité ils ont abandonner le …"
+    },
+    {
+      "title": "Glasgow Metro Area - SkyscraperCity Forum",
+      "url": "https://www.skyscrapercity.com/forums/glasgow-metro-area.2599/",
+      "snippet": "Aug 2, 2005 · Architecture, Design and Urban Issues in Glasgow"
+    }
+  ]
+}

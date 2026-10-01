@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0014-u0-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0014-u0-mdagosta-b",
+  "created_at": "2026-09-30T20:20:43.000Z",
+  "updated_at": "2026-09-30T20:20:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "《Seasons In The Sun》的歌词和翻译 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/318275719.html",
+      "snippet": "We had joy, we had fun, we had seasons in the sun我们曾拥有幸福快乐，也曾拥有阳光下的季节 《Seasons in the Sun》（中文名： …"
+    },
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "尹鹏帅：一个独立运行于 Unity Editor 之外的真机性能采集工具的诞生记：从 adb forward 到 PD3U 数据流，从逐位爆破调用栈开关到 …"
+    },
+    {
+      "title": "《seasons in the sun》中英文歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/560738989.html",
+      "snippet": "《Seasons in the Sun》 原唱：Jacques Brel、Terry Jacks 作曲：Jacques Brel 作词：Terry Jacks Goodbye to you my trusted friend …"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_VLA-JEPA-OfficialLR-Causal-bs16-step20000",
+  "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_vla-jepa-officiallr-causal-bs16-step20000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_VLA-JEPA-OfficialLR-Causal-bs16-step20000",
+  "created_at": "2026-10-01T00:33:30.000Z",
+  "updated_at": "2026-10-01T00:34:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla-jepa",
+    "dataset:Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2770374550,
+  "parameters_human": "2.77B",
+  "storage_bytes": 6174711144,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

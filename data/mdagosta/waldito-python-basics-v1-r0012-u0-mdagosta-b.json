@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b",
+  "slug": "mdagosta-waldito-python-basics-v1-r0012-u0-mdagosta-b",
+  "author": "mdagosta",
+  "url": "https://huggingface.co/mdagosta/waldito-python-basics-v1-r0012-u0-mdagosta-b",
+  "created_at": "2026-09-30T20:04:25.000Z",
+  "updated_at": "2026-09-30T20:04:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9541632,
+  "parameters_human": "9.5M",
+  "storage_bytes": 19089664,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAND: Raiders Of Sophie - Discord",
+      "url": "https://discord.com/invite/sandgame",
+      "snippet": "Official community for SAND: Raiders of Sophie. Join fellow raiders to pilot massive, customizable walking mechs across the post …"
+    },
+    {
+      "title": "Top SAND: Raiders of Sophie Discord Servers · disdex",
+      "url": "https://disdex.io/servers/sand-raiders-of-sophie",
+      "snippet": "The most active SAND: Raiders of Sophie Discord servers, ranked by live activity score. disdex indexes 31 SAND: Raiders of Sophie …"
+    },
+    {
+      "title": "Sand Raiders of Sophie Discord",
+      "url": "https://sand-raidersofsophie.com/community/sand-raiders-of-sophie-discord",
+      "snippet": "Jul 3, 2026 · A practical Sand Raiders of Sophie Discord overview with confirmed sources, caveats, and next steps for SAND: …"
+    },
+    {
+      "title": "SAND Discord - Official Links, Playtest Safety, News",
+      "url": "https://www.sandraidersofsophie.wiki/discord",
+      "snippet": "Find SAND: Raiders of Sophie official links for Discord, Steam, support, X, Instagram, playtest warnings, roadmap updates, and safe …"
+    },
+    {
+      "title": "Discord servers tagged with sand:-raiders-of-sophie | DISBOARD",
+      "url": "https://disboard.org/servers/tag/sand%3A-raiders-of-sophie",
+      "snippet": "List of Discord servers tagged with sand:-raiders-of-sophie. Find and join some awesome servers listed here!"
+    }
+  ]
+}

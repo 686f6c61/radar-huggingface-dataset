@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "K-vr/cube_stack3_Pi05_abs_batch8_dagger",
+  "slug": "k-vr-cube_stack3_pi05_abs_batch8_dagger",
+  "author": "K-vr",
+  "url": "https://huggingface.co/K-vr/cube_stack3_Pi05_abs_batch8_dagger",
+  "created_at": "2026-09-30T21:27:43.000Z",
+  "updated_at": "2026-09-30T21:28:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:K-vr/cube_stack3_Pi05_abs_batch8_combined",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354062096,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transilien ligne K : plan, arrêts et horaires en temps réel",
+      "url": "https://www.bonjour-ratp.fr/lignes-transilien/ligne-k/",
+      "snippet": "La ligne K du Transilien relie les gares de Paris-Nord à Crépy-en-Valois. Cette ligne dessert 10 gares et 13 communes réparties sur …"
+    },
+    {
+      "title": "K (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/K_(lettre)",
+      "snippet": "Cette lettre de l' alphabet latin vient de l' étrusque ; c'est un descendant du kappa de l' alphabet grec (Κ en majuscule et κ en …"
+    },
+    {
+      "title": "K - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/K",
+      "snippet": "K (minuscule: k) is the eleventh letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "Ligne K du Transilien : plan, horaires, gares | SNCF Connect",
+      "url": "https://www.sncf-connect.com/ile-de-france/transilien/ligne-k",
+      "snippet": "Découvrez la ligne K du Transilien : retrouvez son plan, ses correspondances, ainsi que les horaires en temps réel et quelques …"
+    },
+    {
+      "title": "Ligne K | Transilien",
+      "url": "https://www.transilien.com/fr/page-lignes/ligne-k",
+      "snippet": "Retrouvez les horaires, services, équipements disponibles dans les gares Transilien de la Ligne K. Consultez les horaires des …"
+    }
+  ]
+}

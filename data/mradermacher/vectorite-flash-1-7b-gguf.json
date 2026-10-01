@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vectorite-Flash-1.7B-GGUF",
+  "slug": "mradermacher-vectorite-flash-1-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vectorite-Flash-1.7B-GGUF",
+  "created_at": "2026-09-30T21:59:10.000Z",
+  "updated_at": "2026-09-30T22:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vectorite",
+    "qwen3",
+    "unsloth",
+    "lora",
+    "bilingual",
+    "indonesian",
+    "id",
+    "en",
+    "base_model:Sup2Doggie/Vectorite-Flash-1.7B",
+    "base_model:adapter:Sup2Doggie/Vectorite-Flash-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959975040,
+  "storage_human": "16.0 GB",
+  "base_model": "Sup2Doggie/Vectorite-Flash-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

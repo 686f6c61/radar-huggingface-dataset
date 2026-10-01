@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nicklashansen/mmb2-xl-ckpts-internal",
+  "slug": "nicklashansen-mmb2-xl-ckpts-internal",
+  "author": "nicklashansen",
+  "url": "https://huggingface.co/nicklashansen/mmb2-xl-ckpts-internal",
+  "created_at": "2026-09-30T23:06:41.000Z",
+  "updated_at": "2026-09-30T23:07:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1424855182,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nicklashansen/mmb2-ckpts-internal · Hugging Face",
+      "url": "https://huggingface.co/nicklashansen/mmb2-ckpts-internal",
+      "snippet": "mmb2-ckpts-internal Internal model checkpoints. Access is restricted to approved collaborators. Downloads last month -"
+    },
+    {
+      "title": "GitHub - nicklashansen/mmbench2: Official code repository for the paper ...",
+      "url": "https://github.com/nicklashansen/mmbench2",
+      "snippet": "Official code repository for the paper \"Hallucination in World Models is Predictable and Preventable\". - nicklashansen/mmbench2"
+    },
+    {
+      "title": "nicklashansen/mmbench2-models · Hugging Face",
+      "url": "https://huggingface.co/nicklashansen/mmbench2-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hallucination in World Models is Predictable and Preventable",
+      "url": "https://arxiv.org/abs/2606.27326",
+      "snippet": "Modern generative world models render increasingly realistic action-controllable futures, yet they frequently hallucinate: rollouts remain visually fluent while drifting from the ground-truth dynamics. We hypothesize that hallucination concentrates in low-coverage regions of the state-action space, where lightweight data-centric signals can both detect it and guide mitigation. To test this, we ..."
+    },
+    {
+      "title": "PDF Hallucination in World Models is Predictable and Preventable",
+      "url": "https://www.nicklashansen.com/mmbench2/paper.pdf",
+      "snippet": "Specifically, during interaction with a live environment, candidate trajectories are rolled out in the world model, scored by predicted hallucination, and the highest-ranked trajectory is executed in the environment, producing data that, by construction, covers transitions that previously caused the model to hallucinate."
+    }
+  ]
+}

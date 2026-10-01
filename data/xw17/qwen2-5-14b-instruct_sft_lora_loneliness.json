@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Qwen2.5-14B-Instruct_SFT_lora_loneliness",
+  "slug": "xw17-qwen2-5-14b-instruct_sft_lora_loneliness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Qwen2.5-14B-Instruct_SFT_lora_loneliness",
+  "created_at": "2026-09-30T23:29:22.000Z",
+  "updated_at": "2026-09-30T23:29:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149136796,
+  "storage_human": "149 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canada Goose Inc.",
+      "url": "https://www.canadagoose.com/",
+      "snippet": "Your items will remain in your favorites temporarily. Sign in or create an account to save your list. Sign in or create account Join the …"
+    },
+    {
+      "title": "Men's Luxury Outerwear & Clothing | Canada Goose",
+      "url": "https://www.canadagoose.com/en-us/collections/mens",
+      "snippet": "Shop versatile luxury fashion for Men at Canada Goose. Embrace styles for Men's clothing & outerwear like lightweight coats, …"
+    },
+    {
+      "title": "Used Canada Goose Products for Sale - Canada Goose Generations US",
+      "url": "https://generations.canadagoose.com/",
+      "snippet": "Shop our vintage & gently used parkas, vests, bombers, lightweight jackets and clothing for sale at Canada Goose Generations. …"
+    },
+    {
+      "title": "Canada Goose Inc. - Investor Relations",
+      "url": "https://investor.canadagoose.com/overview/default.aspx",
+      "snippet": "Who We Are: Canada Goose is a global performance luxury and lifestyle brand founded in 1957. Canada Goose pushes the …"
+    },
+    {
+      "title": "Canada Goose Inc. - Events & Presentations",
+      "url": "https://investor.canadagoose.com/events-and-presentations/default.aspx",
+      "snippet": "Jul 30, 2026 · Webcast Presentation Q1 2027 Canada Goose Q4 2026 Earnings Call Financial Statements(opens in new window) …"
+    }
+  ]
+}

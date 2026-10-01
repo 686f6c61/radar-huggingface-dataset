@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "abhirajratna/anlp-a2-moe-v4",
+  "slug": "abhirajratna-anlp-a2-moe-v4",
+  "author": "abhirajratna",
+  "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v4",
+  "created_at": "2026-09-30T22:12:53.000Z",
+  "updated_at": "2026-09-30T22:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "vi",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "pytorch",
+    "anlp-assignment",
+    "vi",
+    "ja",
+    "en",
+    "dataset:belumind/en-vi-ja-curated-500k-triplets",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33575424,
+  "parameters_human": "33.6M",
+  "storage_bytes": 134314048,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

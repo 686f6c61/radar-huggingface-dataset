@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SLM-Archive/SmolLM2-135M-Instruct",
+  "slug": "slm-archive-smollm2-135m-instruct",
+  "author": "SLM-Archive",
+  "url": "https://huggingface.co/SLM-Archive/SmolLM2-135M-Instruct",
+  "created_at": "2026-10-01T00:33:17.000Z",
+  "updated_at": "2026-10-01T00:33:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "onnx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "transformers.js",
+    "conversational",
+    "en",
+    "arxiv:2502.02737",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1829249260,
+  "storage_human": "1.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sous le manteau - slm.paris",
+      "url": "https://slm.paris/fr",
+      "snippet": "slm paris SOUS LE MANTEAU (depuis 2016) dévoile six fragrances confidentielles inspirées d'authentiques philtres d'amour des …"
+    },
+    {
+      "title": "Qu’est-ce qu’un petit modèle de langage (SLM) ? | IBM",
+      "url": "https://www.ibm.com/fr-fr/think/topics/small-language-models",
+      "snippet": "Les petits modèles de langage (SLM) sont des modèles d’intelligence artificielle (IA) capables de traiter, de comprendre et de …"
+    },
+    {
+      "title": "IA Générative : comprendre les différences entre SLM et LLM",
+      "url": "https://www.asi.fr/blog/ia-generative-comprendre-differences-entre-slm-llm",
+      "snippet": "Cependant, une autre approche gagne du terrain : les modèles de langue spécifiques ou SLM. Les SLM apparaissent comme une …"
+    },
+    {
+      "title": "So'Lyon Mutuelle - 100% à vos côtés",
+      "url": "https://www.solyon-mutuelle.fr/",
+      "snippet": "Sep 23, 2026 · Depuis 90 ans, So'Lyon Mutuelle met au cœur de ses préoccupations le bien-être de ses adhérents. 100% à vos côtés !"
+    },
+    {
+      "title": "slm.paris - sous le manteau",
+      "url": "https://slm.paris/",
+      "snippet": "slm unveils six confidential fragrances based on authentic love potions from earlier centuries. Each scent has been modernized by …"
+    }
+  ]
+}

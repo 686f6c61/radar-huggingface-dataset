@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-1",
+  "slug": "brandonhowe-qwen3-8b-compassion-qwen-seed1-20260930-cpt-merged-epoch-1",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-1",
+  "created_at": "2026-09-30T20:18:47.000Z",
+  "updated_at": "2026-09-30T20:19:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500",
+      "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500",
+      "snippet": "Training: 10,072 distinct documents plus 2,000 repeat exposures per epoch; 200 disjoint validation documents. Merged with Unsloth's native save_pretrained_merged (save_method=\"merged_16bit\"). Weights are validated BF16 and packaged losslessly into eight safetensors shards. No adapter is required to load this model."
+    },
+    {
+      "title": "Qwen3-8b-urban-qwen-test2-seed1-20260929-CPT-final-step-5",
+      "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-test2-seed1-20260929-CPT-final-step-5",
+      "snippet": "Training: 10,072 distinct documents plus 2,000 repeat exposures per epoch; 200 disjoint validation documents. Merged with Unsloth's native save_pretrained_merged (save_method=\"merged_16bit\"). Weights are validated BF16 and packaged losslessly into eight safetensors shards. No adapter is required to load this model."
+    },
+    {
+      "title": "Run Qwen-3-8B-intermediate-epoch-3-CPT-10K-urban-density-dataset API ...",
+      "url": "https://featherless.ai/models/CompassioninMachineLearning/Qwen-3-8b-intermediate-epoch-3-CPT-10k-urban-density-dataset",
+      "snippet": "This model, BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3, is an 8 billion parameter variant based on the Qwen3 architecture. It represents a merged BF16 model from epoch 3.0, step 1134, and is designed for direct use without requiring an adapter."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "CompassioninMachineLearning/Qwen-3-8b-final-CPT-10k-urban-density-dataset",
+      "url": "https://featherless.ai/models/CompassioninMachineLearning/Qwen-3-8b-final-CPT-10k-urban-density-dataset",
+      "snippet": "Model Overview This model, Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500, is a standalone, merged BF16 version of a Qwen3-8b base model, fine-tuned by BrandonHowe. It was developed over 1500 steps, reaching epoch 3.97, and features a substantial 32768 token context length."
+    }
+  ]
+}

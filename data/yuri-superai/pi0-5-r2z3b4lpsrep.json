@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yuri-superAI/pi0.5-r2Z3b4LPsReP",
+  "slug": "yuri-superai-pi0-5-r2z3b4lpsrep",
+  "author": "yuri-superAI",
+  "url": "https://huggingface.co/yuri-superAI/pi0.5-r2Z3b4LPsReP",
+  "created_at": "2026-10-01T00:30:34.000Z",
+  "updated_at": "2026-10-01T00:30:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "openpi",
+    "pi0.5",
+    "openroboto",
+    "axis",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12396576927,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuri — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yuri",
+      "snippet": "Le terme yuri est couramment employé dans le monde du manga et de l' anime, mais il est aussi parfois utilisé dans le cadre des …"
+    },
+    {
+      "title": "Yuri (genre) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yuri_(genre)",
+      "snippet": "The founding of Yuri Shimai in 2003 as the first manga magazine devoted exclusively to yuri, followed by its successor Comic Yuri …"
+    },
+    {
+      "title": "Read Yuri Manga, Manhwa & GL Webtoons Free | Yurivan",
+      "url": "https://www.yurivan.com/",
+      "snippet": "At Yurivan you'll find an immersive library of yuri manga, lesbian manga, girls' love manhwa, GL webtoons, and yuri comics, curated …"
+    },
+    {
+      "title": "Les animes de girls' love (yuri) - Liste de 72 séries - SensCritique",
+      "url": "https://www.senscritique.com/liste/les_animes_de_girls_love_yuri/2986186",
+      "snippet": "Apr 3, 2025 · Les animes de girls' love (yuri) Récits centrés sur les relations féminines, qu'elles soient spirituelles, sentimentales, …"
+    },
+    {
+      "title": "Yuri Manga - MangaDex",
+      "url": "https://mangadex.org/list/04468ff2-616d-456f-bf1d-add7074db13b/yuri-manga?page=2",
+      "snippet": "Sep 17, 2026 · Read comics and manga online at MangaDex, with high quality images and support creators and translators!"
+    }
+  ]
+}

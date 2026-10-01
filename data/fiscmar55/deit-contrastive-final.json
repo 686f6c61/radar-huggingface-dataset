@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fiscmar55/deit-contrastive-final",
+  "slug": "fiscmar55-deit-contrastive-final",
+  "author": "fiscmar55",
+  "url": "https://huggingface.co/fiscmar55/deit-contrastive-final",
+  "created_at": "2026-09-30T23:32:29.000Z",
+  "updated_at": "2026-09-30T23:32:34.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fiscmar55 (Marie Fischer) - Hugging Face",
+      "url": "https://huggingface.co/fiscmar55",
+      "snippet": "Quantization is my passion"
+    },
+    {
+      "title": "felipelimaru/deit-contrastive · Hugging Face",
+      "url": "https://huggingface.co/felipelimaru/deit-contrastive",
+      "snippet": "A research-oriented DeiT prototype targeting Contrastive. The included tiny setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "facebookresearch/deit | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/deit",
+      "snippet": "This document provides an introduction to the DeiT (Data-Efficient Image Transformers) repository, which contains multiple vision transformer architectures and related models for image classification tasks. The repository focuses on efficient training techniques and architectural innovations for transformer-based computer vision models."
+    },
+    {
+      "title": "[2012.12877] Training data-efficient image transformers & distillation ...",
+      "url": "https://arxiv.org/abs/2012.12877",
+      "snippet": "Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them ..."
+    }
+  ]
+}

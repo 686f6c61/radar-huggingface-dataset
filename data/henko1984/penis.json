@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "henko1984/penis",
+  "slug": "henko1984-penis",
+  "author": "henko1984",
+  "url": "https://huggingface.co/henko1984/penis",
+  "created_at": "2026-09-30T21:23:45.000Z",
+  "updated_at": "2026-09-30T21:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Wan-AI/Wan2.2-Animate-2-14B",
+    "base_model:finetune:Wan-AI/Wan2.2-Animate-2-14B",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306808440,
+  "storage_human": "307 MB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-Animate-2-14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kviai/Penis-AI-V2 · Hugging Face",
+      "url": "https://huggingface.co/kviai/Penis-AI-V2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Detailed Penis - v1.0 | Krea 2 LoRA | Civitai",
+      "url": "https://civitai.red/models/2792960/detailed-penis?modelVersionId=3147698",
+      "snippet": "The trigger word is P3n15, but I have found that is not needed... This LoRA generates a detailed penis. It works with character LoRAs. All samples images were generated with Krea 2 Turbo FP8 Scaled model using er_sde sampler and simple scheduler."
+    },
+    {
+      "title": "kviai/Penis-AI-V2 at main - Hugging Face",
+      "url": "https://huggingface.co/kviai/Penis-AI-V2/tree/main",
+      "snippet": "Instructions to use kviai/Penis-AI-V2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use kviai/Penis-AI-V2 with Diffusers:"
+    },
+    {
+      "title": "Realistic Penis Anatomy - V1 | ZImage LoRA | Civitai",
+      "url": "https://civitai.red/models/2344020/realistic-penis-anatomy",
+      "snippet": "This LoRA model, named \"Realistic Penis Anatomy,\" is specifically designed to enhance the anatomical accuracy and detailed rendering of human male genitalia in AI-generated images."
+    },
+    {
+      "title": "AIroticArt&#x27;s Penis Model (LoRA) v1.0 LoRA for SD 1.5 | CivArchive",
+      "url": "https://civarchive.com/models/15040?modelVersionId=17719",
+      "snippet": "Update 4/2/23: For more examples, we used this LoRA to help create the penises in our art, The Beauty of Couples, Collection #14. This is a LoRA version of our Penis Model. It was extracted from the regular v1.0 of that model (we don&#x27;t think it is possible to extract LoRAs from inpainting models). This LoRA still does best as an \"inpainting model,\" when used in inpainting mode to fix penis ..."
+    }
+  ]
+}

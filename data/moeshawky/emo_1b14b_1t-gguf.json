@@ -5,7 +5,7 @@
   "author": "moeshawky",
   "url": "https://huggingface.co/moeshawky/Emo_1b14b_1T-GGUF",
   "created_at": "2026-09-30T17:41:13.000Z",
-  "updated_at": "2026-09-30T17:51:57.000Z",
+  "updated_at": "2026-09-30T18:56:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 13568641024,
   "parameters_human": "13.57B",
-  "storage_bytes": 27149357248,
-  "storage_human": "27.1 GB",
+  "storage_bytes": 52729737792,
+  "storage_human": "52.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

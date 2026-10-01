@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_40_Exec_40_TASK_pick_place_can_PIXELS_84",
+  "slug": "castanetnicolas-act_ur5e_bs_32_act_chunk_40_exec_40_task_pick_place_can_pixels_84",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_40_Exec_40_TASK_pick_place_can_PIXELS_84",
+  "created_at": "2026-09-30T23:03:25.000Z",
+  "updated_at": "2026-09-30T23:03:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:castanetnicolas/UR5e_CAN_100_absolute_OSC_POS_SIZE_84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51611271,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206485852,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion | WikiMasters",
+      "url": "https://www.wiki-masters.com/login",
+      "snippet": "Connectez-vous à WikiMasters pour collectionner des cartes Wikipédia et défier vos amis."
+    },
+    {
+      "title": "Inscription | WikiMasters",
+      "url": "https://www.wiki-masters.com/",
+      "snippet": "Rejoignez WikiMasters : cartes Wikipédia, paquets à ouvrir et duels entre amis. Inscription gratuite."
+    },
+    {
+      "title": "WikiMasters — JVFlux",
+      "url": "https://jvflux.fr/WikiMasters",
+      "snippet": "WikiMasters est un jeu de cartes à collectionner en ligne autour d'articles du Wikipédia français. Un nombre croissant de forumeurs …"
+    },
+    {
+      "title": "Le jeu WikiMasters transforme les pages Wikipédia en un véritable jeu ...",
+      "url": "https://www.ouest-france.fr/gaming/jeux-video/le-jeu-wikimasters-transforme-les-pages-wikipedia-en-un-veritable-jeu-de-cartes-a-collectionner-abfe931a-b5b3-11f1-b63d-de500e5af22f",
+      "snippet": "Sep 22, 2026 · Le jeu de cartes à collectionner WikiMasters, qui transforme les pages francophones de la célèbre encyclopédie en …"
+    },
+    {
+      "title": "TEST – WikiMasters : le jeu de cartes Wikipédia qui rend accro !",
+      "url": "https://echoesofgeeks.fr/2026/test-wikimasters-cartes-wikipedia/",
+      "snippet": "5 days ago · Découvrez WikiMasters, le jeu gratuit qui transforme Wikipédia en cartes à collectionner. Boosters, échanges, guildes …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pur-nomo/few-shot-multimodal-notes",
+  "slug": "pur-nomo-few-shot-multimodal-notes",
+  "author": "Pur-nomo",
+  "url": "https://huggingface.co/Pur-nomo/few-shot-multimodal-notes",
+  "created_at": "2026-10-01T01:03:07.000Z",
+  "updated_at": "2026-10-01T01:03:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Presses universitaires de Rennes",
+      "url": "https://pur-editions.fr/",
+      "snippet": "Site de vente en ligne des Presses universitaires de Rennes (PUR), premier éditeur public universitaire français dans le domaine des …"
+    },
+    {
+      "title": "PUR - Leaders mondiaux des projets à impact fondés sur la nature",
+      "url": "https://pur.co/fr/",
+      "snippet": "PUR aide les entreprises à construire des chaînes d'approvisionnement résilientes, à développer des projets de captage du carbone …"
+    },
+    {
+      "title": "Définitions : pur - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/pur/65122",
+      "snippet": "Pur et dur, se dit de quelqu'un qui respecte et conserve un dogme dans toute sa spécificité. Pur (et simple), qui est absolument tel, …"
+    },
+    {
+      "title": "Presses universitaires de Rennes",
+      "url": "https://pur-editions.fr/page/24/histoire",
+      "snippet": "16 résultats par page expand_more Trier par date expand_more"
+    },
+    {
+      "title": "pur - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/pur",
+      "snippet": "Définition, exemples et prononciation de pur : Qui n'est pas mêlé avec autre chose, qui ne contie…"
+    }
+  ]
+}
