@@ -4,21 +4,15 @@
   "slug": "gautam6-buddhaai",
   "author": "Gautam6",
   "url": "https://huggingface.co/Gautam6/BUDDHAAI",
-  "created_at": "2026-08-24T10:54:11.000Z",
-  "updated_at": "2026-08-24T10:54:20.000Z",
-  "license": null,
-  "license_family": "unknown",
+  "created_at": "2026-10-01T09:02:10.000Z",
+  "updated_at": "2026-10-01T09:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [],
   "tags": [
-    "transformers",
-    "safetensors",
-    "llama",
-    "text-generation",
-    "arxiv:1910.09700",
-    "text-generation-inference",
-    "endpoints_compatible",
+    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
@@ -29,13 +23,11 @@
   "storage_bytes": 136919040,
   "storage_human": "137 MB",
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-25T05:41:14.029Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

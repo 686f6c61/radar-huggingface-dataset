@@ -5,7 +5,7 @@
   "author": "AMAImedia",
   "url": "https://huggingface.co/AMAImedia/DeepSeek-V4.1-Flash-FP8-GGUF",
   "created_at": "2026-09-10T11:39:55.000Z",
-  "updated_at": "2026-09-29T16:06:29.000Z",
+  "updated_at": "2026-09-30T20:11:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -256,7 +256,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 19949,
+  "downloads_30d": 20220,
   "trending_score": 0,
   "parameters": 763205315794,
   "parameters_human": "763.21B",

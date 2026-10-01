@@ -5,7 +5,7 @@
   "author": "DedeProGames",
   "url": "https://huggingface.co/DedeProGames/NanoDex-1M",
   "created_at": "2026-09-12T15:11:52.000Z",
-  "updated_at": "2026-09-12T15:11:53.000Z",
+  "updated_at": "2026-10-01T00:14:10.000Z",
   "license": "odc-by",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 718,
+  "downloads_30d": 723,
   "trending_score": 0,
   "parameters": 1062272,
   "parameters_human": "1.1M",

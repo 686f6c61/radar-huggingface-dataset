@@ -5,7 +5,7 @@
   "author": "HayatoHongo",
   "url": "https://huggingface.co/HayatoHongo/AIkenSGTv1",
   "created_at": "2026-08-14T06:32:33.000Z",
-  "updated_at": "2026-09-29T22:38:23.000Z",
+  "updated_at": "2026-09-30T14:49:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 292,
+  "downloads_30d": 314,
   "trending_score": 0,
   "parameters": 2617000960,
   "parameters_human": "2.62B",
-  "storage_bytes": 744308159203,
-  "storage_human": "744.3 GB",
+  "storage_bytes": 870585153923,
+  "storage_human": "870.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

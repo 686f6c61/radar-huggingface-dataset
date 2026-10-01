@@ -5,7 +5,7 @@
   "author": "Dido599999",
   "url": "https://huggingface.co/Dido599999/MD111",
   "created_at": "2026-09-20T22:13:06.000Z",
-  "updated_at": "2026-09-20T23:30:44.000Z",
+  "updated_at": "2026-09-30T14:01:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3994393011,
-  "storage_human": "4.0 GB",
+  "storage_bytes": 5799224101,
+  "storage_human": "5.8 GB",
   "base_model": null,
   "formats": [
     "onnx"

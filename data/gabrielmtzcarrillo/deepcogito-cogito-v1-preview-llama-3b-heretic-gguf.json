@@ -5,7 +5,7 @@
   "author": "gabrielmtzcarrillo",
   "url": "https://huggingface.co/gabrielmtzcarrillo/deepcogito-cogito-v1-preview-llama-3B-heretic-gguf",
   "created_at": "2026-09-22T18:20:33.000Z",
-  "updated_at": "2026-09-22T18:32:37.000Z",
+  "updated_at": "2026-09-30T21:09:13.000Z",
   "license": "llama3.2",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 119,
+  "downloads_30d": 120,
   "trending_score": 0,
   "parameters": 3212749888,
   "parameters_human": "3.21B",

@@ -5,7 +5,7 @@
   "author": "inferencerlabs",
   "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i",
   "created_at": "2026-09-10T11:09:11.000Z",
-  "updated_at": "2026-09-11T14:17:35.000Z",
+  "updated_at": "2026-09-30T21:38:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,16 +29,16 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 462925189958,
-  "storage_human": "462.9 GB",
+  "storage_bytes": 467005318719,
+  "storage_human": "467.0 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "mlx"
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-30T07:11:07.951Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

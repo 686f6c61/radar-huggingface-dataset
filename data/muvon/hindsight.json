@@ -5,13 +5,14 @@
   "author": "muvon",
   "url": "https://huggingface.co/muvon/hindsight",
   "created_at": "2026-09-20T12:30:48.000Z",
-  "updated_at": "2026-09-20T12:34:04.000Z",
+  "updated_at": "2026-10-01T00:52:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "onnx",
     "safetensors",
     "code",
     "agents",
@@ -19,7 +20,7 @@
     "calibration",
     "hindsight",
     "base_model:microsoft/unixcoder-base",
-    "base_model:finetune:microsoft/unixcoder-base",
+    "base_model:quantized:microsoft/unixcoder-base",
     "license:apache-2.0",
     "region:us"
   ],
@@ -28,10 +29,11 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 518284235,
-  "storage_human": "518 MB",
+  "storage_bytes": 1553159036,
+  "storage_human": "1.6 GB",
   "base_model": "microsoft/unixcoder-base",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

@@ -5,7 +5,7 @@
   "author": "bench-labs",
   "url": "https://huggingface.co/bench-labs/cagliostro-v3",
   "created_at": "2026-09-11T04:29:57.000Z",
-  "updated_at": "2026-09-20T12:25:38.000Z",
+  "updated_at": "2026-09-30T09:14:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "cagliostro",
     "text-generation",
@@ -34,14 +35,15 @@
     "region:us"
   ],
   "likes": 34,
-  "downloads_30d": 1872,
+  "downloads_30d": 1895,
   "trending_score": 11,
   "parameters": 146352000,
   "parameters_human": "146.4M",
-  "storage_bytes": 651141633422,
-  "storage_human": "651.1 GB",
+  "storage_bytes": 651369116512,
+  "storage_human": "651.4 GB",
   "base_model": null,
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

@@ -5,7 +5,7 @@
   "author": "JetBrains",
   "url": "https://huggingface.co/JetBrains/Qwen3.8-3.6-27B-blend-GGUF",
   "created_at": "2026-09-15T10:51:06.000Z",
-  "updated_at": "2026-09-21T12:54:53.000Z",
+  "updated_at": "2026-09-30T16:42:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -30,8 +30,8 @@
   "trending_score": 14,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 49880171136,
-  "storage_human": "49.9 GB",
+  "storage_bytes": 64133016384,
+  "storage_human": "64.1 GB",
   "base_model": "JetBrains/Qwen3.8-3.6-27B-blend",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "DedeProGames",
   "url": "https://huggingface.co/DedeProGames/LowOnMind-300k",
   "created_at": "2026-08-27T23:44:35.000Z",
-  "updated_at": "2026-08-28T16:05:57.000Z",
+  "updated_at": "2026-10-01T00:12:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

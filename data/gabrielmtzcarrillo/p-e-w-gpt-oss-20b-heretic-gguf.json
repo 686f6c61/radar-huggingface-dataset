@@ -5,7 +5,7 @@
   "author": "gabrielmtzcarrillo",
   "url": "https://huggingface.co/gabrielmtzcarrillo/p-e-w-gpt-oss-20b-heretic-gguf",
   "created_at": "2026-09-22T18:20:33.000Z",
-  "updated_at": "2026-09-22T18:32:42.000Z",
+  "updated_at": "2026-09-30T21:09:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 134,
+  "downloads_30d": 143,
   "trending_score": 0,
   "parameters": 20914757184,
   "parameters_human": "20.91B",

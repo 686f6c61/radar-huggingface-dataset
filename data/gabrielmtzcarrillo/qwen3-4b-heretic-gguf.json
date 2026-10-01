@@ -5,7 +5,7 @@
   "author": "gabrielmtzcarrillo",
   "url": "https://huggingface.co/gabrielmtzcarrillo/qwen3-4b-heretic-gguf",
   "created_at": "2026-09-22T18:20:34.000Z",
-  "updated_at": "2026-09-22T18:32:47.000Z",
+  "updated_at": "2026-09-30T21:09:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 182,
+  "downloads_30d": 183,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",

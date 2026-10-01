@@ -5,7 +5,7 @@
   "author": "DedeProGames",
   "url": "https://huggingface.co/DedeProGames/LowOnMind-8M",
   "created_at": "2026-09-12T15:03:53.000Z",
-  "updated_at": "2026-09-12T15:03:54.000Z",
+  "updated_at": "2026-10-01T00:11:04.000Z",
   "license": "odc-by",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 544,
+  "downloads_30d": 549,
   "trending_score": 0,
   "parameters": 8060256,
   "parameters_human": "8.1M",

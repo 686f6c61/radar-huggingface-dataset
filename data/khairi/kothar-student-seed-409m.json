@@ -5,7 +5,7 @@
   "author": "khairi",
   "url": "https://huggingface.co/khairi/Kothar-student-seed-409M",
   "created_at": "2026-08-21T15:46:06.000Z",
-  "updated_at": "2026-08-21T15:46:58.000Z",
+  "updated_at": "2026-09-30T20:22:14.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -16,12 +16,13 @@
     "safetensors",
     "eshmun",
     "text-generation",
+    "conversational",
     "arxiv:1910.09700",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 86,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": 409344000,
   "parameters_human": "409.3M",
@@ -31,7 +32,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

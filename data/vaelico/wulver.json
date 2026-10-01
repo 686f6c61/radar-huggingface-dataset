@@ -24,13 +24,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 45,
+  "likes": 47,
   "downloads_30d": 5999,
   "trending_score": 14,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 197534255483,
-  "storage_human": "197.5 GB",
+  "storage_bytes": 205215288043,
+  "storage_human": "205.2 GB",
   "base_model": "Comfy-Org/Krea-2",
   "formats": [
     "diffusers"
