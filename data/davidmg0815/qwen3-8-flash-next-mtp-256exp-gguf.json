@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Davidmg0815/Qwen3.8-Flash-Next-MTP-256exp-GGUF",
+  "slug": "davidmg0815-qwen3-8-flash-next-mtp-256exp-gguf",
+  "author": "Davidmg0815",
+  "url": "https://huggingface.co/Davidmg0815/Qwen3.8-Flash-Next-MTP-256exp-GGUF",
+  "created_at": "2026-10-02T15:43:12.000Z",
+  "updated_at": "2026-10-02T16:33:38.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mtp",
+    "speculative-decoding",
+    "llama.cpp",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2619602688,
+  "parameters_human": "2.62B",
+  "storage_bytes": 2797873280,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, unsloth/Qwen3.8-Flash-Next-GGUF, ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-Coder-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

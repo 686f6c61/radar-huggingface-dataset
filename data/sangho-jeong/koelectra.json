@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sangho-jeong/koelectra",
+  "slug": "sangho-jeong-koelectra",
+  "author": "sangho-jeong",
+  "url": "https://huggingface.co/sangho-jeong/koelectra",
+  "created_at": "2026-10-02T02:40:35.000Z",
+  "updated_at": "2026-10-02T02:40:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:daekeun-ml/koelectra-small-v3-nsmc",
+    "base_model:finetune:daekeun-ml/koelectra-small-v3-nsmc",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 14122498,
+  "parameters_human": "14.1M",
+  "storage_bytes": 56519137,
+  "storage_human": "57 MB",
+  "base_model": "daekeun-ml/koelectra-small-v3-nsmc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaewook JEONG | Professor (Assistant) | Ph.D, PE | Research profile",
+      "url": "https://www.researchgate.net/profile/Jaewook-Jeong-2",
+      "snippet": "Performance comparison of classification models. Performance trend of the KoELECTRA model across training epochs. ... Sangho Yun."
+    },
+    {
+      "title": "SEOUL AI STARTUP 100",
+      "url": "https://www.seoulaihub.kr/down/2025-2026%20SEOUL%20AI%20STARTUP%20100.pdf",
+      "snippet": "31.12.2025 ... •AI Model/Architecture: Generative AI •AI Agent/Multi-Agent System ... By integrating BERT- and KoElectra-based pretrained models with ..."
+    },
+    {
+      "title": "Louis KUMI | Seoul National University of Science and Technology",
+      "url": "https://www.researchgate.net/profile/Louis-Kumi",
+      "snippet": "Performance trend of the KoELECTRA model across training epochs. The... Web ... Jaewook Jeong · 재민 Jeong. All over the world ..."
+    }
+  ]
+}

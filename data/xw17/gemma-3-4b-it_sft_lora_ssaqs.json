@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-3-4b-it_SFT_lora_ssaqs",
+  "slug": "xw17-gemma-3-4b-it_sft_lora_ssaqs",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_ssaqs",
+  "created_at": "2026-10-02T15:50:19.000Z",
+  "updated_at": "2026-10-02T15:50:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99058695,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "ChatGPT helps you get answers, find inspiration, and be more productive."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large …"
+    }
+  ]
+}

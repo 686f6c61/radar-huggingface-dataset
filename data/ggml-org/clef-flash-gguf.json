@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ggml-org/Clef-Flash-GGUF",
+  "slug": "ggml-org-clef-flash-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/Clef-Flash-GGUF",
+  "created_at": "2026-10-02T17:29:28.000Z",
+  "updated_at": "2026-10-02T17:29:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "decision-model",
+    "zero-shot-classification",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9075566084,
+  "parameters_human": "9.08B",
+  "storage_bytes": 34308196544,
+  "storage_human": "34.3 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

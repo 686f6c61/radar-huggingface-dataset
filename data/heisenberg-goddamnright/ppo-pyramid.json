@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "heisenberg-goddamnright/ppo-pyramid",
+  "slug": "heisenberg-goddamnright-ppo-pyramid",
+  "author": "heisenberg-goddamnright",
+  "url": "https://huggingface.co/heisenberg-goddamnright/ppo-pyramid",
+  "created_at": "2026-10-02T17:55:12.000Z",
+  "updated_at": "2026-10-02T17:55:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49442001,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Werner Heisenberg — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Werner_Heisenberg",
+      "snippet": "Werner Heisenberg, né le 5 décembre 1901 à Wurtzbourg (Empire allemand) et mort le 1er février 1976 à Munich (Allemagne de …"
+    },
+    {
+      "title": "Werner Heisenberg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Werner_Heisenberg",
+      "snippet": "Werner Karl Heisenberg was born in Würzburg, Germany, the son of Kaspar Ernst August Heisenberg [8] and Annie Wecklein. His …"
+    },
+    {
+      "title": "Biographie | Werner Heisenberg - Physicien - Futura",
+      "url": "https://www.futura-sciences.com/sciences/personnalites/physique-werner-heisenberg-242/",
+      "snippet": "Werner Heisenberg , Physicien L'objet de la recherche n'est plus la nature en soi, mais la nature livrée à l'interrogation humaine, est …"
+    },
+    {
+      "title": "L’indétermination de Heisenberg : en quoi ça consiste ?",
+      "url": "https://www.institut-pandore.com/physique-quantique/lindetermination-de-heisenberg/",
+      "snippet": "Jan 23, 2020 · La physique quantique est basée sur des phénomènes aléatoires enrichies en incertitudes. L’une de ces incertitudes …"
+    },
+    {
+      "title": "Biographie de WERNER KARL HEISENBERG (1901-1976)",
+      "url": "https://www.universalis.fr/encyclopedie/werner-karl-heisenberg/",
+      "snippet": "Biographie de WERNER KARL HEISENBERG (1901-1976). Werner Karl Heisenberg, physicien allemand, est un des maîtres les …"
+    }
+  ]
+}

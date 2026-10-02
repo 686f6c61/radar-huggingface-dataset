@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yinfan233/CAIA",
+  "slug": "yinfan233-caia",
+  "author": "yinfan233",
+  "url": "https://huggingface.co/yinfan233/CAIA",
+  "created_at": "2026-10-02T14:28:33.000Z",
+  "updated_at": "2026-10-02T15:19:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1848432958,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pagesjaunes, trouvez les bons pros autour de vous…, bien plus qu’un ...",
+      "url": "https://www.pagesjaunes.fr/",
+      "snippet": "Accédez à 4 millions de pros : infos, horaires, avis, services en ligne, aide IA, actus et conseils pour vous aider à choisir le bon pro …"
+    },
+    {
+      "title": "PagesBlanches : le service de recherche de particuliers avec l'annuaire",
+      "url": "https://www.pagesjaunes.fr/pagesblanches",
+      "snippet": "15 hours ago · Trouvez également l’itinéraire pour vous rendre jusqu’à l’adresse recherchée, ou visualisez cette adresse au sein de …"
+    },
+    {
+      "title": "PagesJaunes : Trouvez plus que des coordonnées.",
+      "url": "https://relationclient.pagesjaunes.fr/",
+      "snippet": "Souscrire une publicité dans les supports PagesJaunes S'inscrire gratuitement sur les supports PagesJaunes Modifier, compléter, …"
+    },
+    {
+      "title": "Annuaire téléphonique : trouver des numéros de téléphone et des ...",
+      "url": "https://telephonie.pagesjaunes.fr/comprendre/annuaire-telephone",
+      "snippet": "Apr 29, 2026 · Annuaire téléphonique : trouver des numéros de téléphone et des coordonnées professionnelles L’annuaire …"
+    },
+    {
+      "title": "Comment faire une recherche de professionnels sur PagesJaunes",
+      "url": "https://assistance.pagesjaunes.fr/hc/fr/articles/360018146159-Comment-faire-une-recherche-de-professionnels-sur-PagesJaunes",
+      "snippet": "Quels sont les moyens à ma disposition pour trouver un professionnel sur PagesJaunes ? Sur la page d'accueil de pagesjaunes.fr se …"
+    }
+  ]
+}

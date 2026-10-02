@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AdrianJimenezjer/research-classification",
+  "slug": "adrianjimenezjer-research-classification",
+  "author": "AdrianJimenezjer",
+  "url": "https://huggingface.co/AdrianJimenezjer/research-classification",
+  "created_at": "2026-10-02T02:29:52.000Z",
+  "updated_at": "2026-10-02T02:29:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdrianJimenezjer (Adrian Jimenez) - Hugging Face",
+      "url": "https://huggingface.co/AdrianJimenezjer",
+      "snippet": "I make datasets nobody downloads updated a dataset 28 days ago"
+    },
+    {
+      "title": "hernandezadrian/classification-proto · Hugging Face",
+      "url": "https://huggingface.co/hernandezadrian/classification-proto",
+      "snippet": "hernandezadrian / classification-proto Like 0 Safetensors PyTorch tiny_transformer tiny-transformer classification License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Tiny Transformer for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance ..."
+    },
+    {
+      "title": "GPT-6.1 Sol - API Pricing & Benchmarks - openrouter.ai",
+      "url": "https://openrouter.ai/openai/gpt-6.1-sol",
+      "snippet": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. $2 per million input tokens, $10 per million output tokens. 1,050,000 token context window, maximum output of 128,000 tokens. Higher uptime with 2 providers. Includes independent benchmarks from Artificial Analysis."
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+      "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    },
+    {
+      "title": "Google Releases New Gemini Model With Guardrails Amid A.I. Safety ...",
+      "url": "https://www.nytimes.com/2026/09/30/technology/google-gemini-4-argon-ai-safety.html",
+      "snippet": "For safety reasons, Gemini 4 Argon will initially be available only to some companies and organizations focused on cybersecurity defense before it is more widely released, Google said."
+    }
+  ]
+}

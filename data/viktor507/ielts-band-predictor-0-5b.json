@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Viktor507/ielts-band-predictor-0.5b",
+  "slug": "viktor507-ielts-band-predictor-0-5b",
+  "author": "Viktor507",
+  "url": "https://huggingface.co/Viktor507/ielts-band-predictor-0.5b",
+  "created_at": "2026-10-02T16:02:10.000Z",
+  "updated_at": "2026-10-02T16:19:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "lora",
+    "peft",
+    "ielts",
+    "essay-scoring",
+    "quantization",
+    "jetson",
+    "conversational",
+    "en",
+    "dataset:chillies/IELTS-writing-task-2-evaluation",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YesPornPleaseXXX & 178+ Tubes Porno Gratuits Comme …",
+      "url": "https://theporndude.com/fr/6311/yespornpleasexxx",
+      "snippet": "1 day ago · YesPornPleaseXXX.com n'est pas un tube gratuit comme les autres : ce site propose des films pornographiques …"
+    },
+    {
+      "title": "Yespornplease porn videos & sex movies - XXXi.PORN",
+      "url": "https://xxxi.porn/search/yespornplease",
+      "snippet": "Results for 'yespornplease' porn - found 22 videos. Watch online and download for FREE!"
+    },
+    {
+      "title": "New Porn Videos - Free HD XXX Sex | YesPornPlease",
+      "url": "https://yespornplease.blog/category/new",
+      "snippet": "Free New porn videos in HD. Watch high quality XXX sex movies with New online at YesPornPlease. Fast streaming, mobile friendly …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | YesPorn",
+      "url": "https://yesporn.io/",
+      "snippet": "Watch free porn videos in one place. Search, sort, and save your favorite XXX videos. Subscribe to channels and create …"
+    },
+    {
+      "title": "Yespornplease Videos & Streaming Content | Pornhub",
+      "url": "https://en-pornhub.com/sites/yespornplease/",
+      "snippet": "Explore free HD videos and streaming content from Yespornplease on Pornhub. Watch trending creators, studios and popular video …"
+    }
+  ]
+}

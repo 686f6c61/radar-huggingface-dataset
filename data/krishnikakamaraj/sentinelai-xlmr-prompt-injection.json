@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "KrishnikaKamaraj/sentinelAI-xlmr-prompt-injection",
+  "slug": "krishnikakamaraj-sentinelai-xlmr-prompt-injection",
+  "author": "KrishnikaKamaraj",
+  "url": "https://huggingface.co/KrishnikaKamaraj/sentinelAI-xlmr-prompt-injection",
+  "created_at": "2026-10-02T17:54:45.000Z",
+  "updated_at": "2026-10-02T17:54:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

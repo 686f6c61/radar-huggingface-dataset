@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "SimhaSimha/ppo-Pyramids",
+  "slug": "simhasimha-ppo-pyramids",
+  "author": "SimhaSimha",
+  "url": "https://huggingface.co/SimhaSimha/ppo-Pyramids",
+  "created_at": "2026-10-02T16:32:58.000Z",
+  "updated_at": "2026-10-02T16:33:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-Pyramids",
+    "Pyramids",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1420238,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "crosbylegal/claude-opus-5-5",
+  "slug": "crosbylegal-claude-opus-5-5",
+  "author": "crosbylegal",
+  "url": "https://huggingface.co/crosbylegal/claude-opus-5-5",
+  "created_at": "2026-10-02T16:08:25.000Z",
+  "updated_at": "2026-10-02T16:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Fable 5 Benchmarks: Specs, Release & Mythos 5",
+      "url": "https://claudefa.st/blog/models/claude-fable-5-mythos-5",
+      "snippet": "vor 6 Tagen ... Fallback Model, Cybersecurity flags to Opus 4.8, biology flags to Opus 5 (< 5% of sessions). Context Window, Full 1M tokens, included at ..."
+    },
+    {
+      "title": "AI News - AESOP AI Academy",
+      "url": "https://aesopacademy.org/ai-news/",
+      "snippet": "Claude ships as a backend for Apple's Foundation Models framework on iOS 27. Anthropic releases a Swift package that lets app developers call Claude through the ..."
+    }
+  ]
+}

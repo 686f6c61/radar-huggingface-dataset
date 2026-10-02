@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amitiyer1984/zero-shot-transfer-playground",
+  "slug": "amitiyer1984-zero-shot-transfer-playground",
+  "author": "amitiyer1984",
+  "url": "https://huggingface.co/amitiyer1984/zero-shot-transfer-playground",
+  "created_at": "2026-10-02T02:52:40.000Z",
+  "updated_at": "2026-10-02T02:52:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zero-shot learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zero-shot_learning",
+      "snippet": "Zero-shot learning (ZSL) is a problem setup in machine learning where, at test time, a learner observes samples from classes which were not observed during training, and needs to predict their class. The name is a play on words based on the earlier concept of one-shot learning in computer vision, in which classification can be learned from only one example. Zero-shot methods generally work by ..."
+    },
+    {
+      "title": "Zero Shot transfer | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/zero-shot-transfer",
+      "snippet": "Zero-shot transfer, in the realm of AI/ML, describes the ability of a model to perform a task or classify data without having been explicitly trained on examples of that specific task or data. Instead, the model leverages prior knowledge gained from training on different, but related, tasks or data."
+    },
+    {
+      "title": "Zero Shot transfer learning | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/zero-shot-transfer-learning",
+      "snippet": "Zero-shot transfer learning empowers AI models to perform tasks they haven&#x27;t explicitly been trained on. Unlike traditional machine learning, which requires labeled data for each task, zero-shot learning leverages prior knowledge from related tasks or semantic descriptions to generalize to unseen scenarios."
+    },
+    {
+      "title": "What is Zero-Shot Transfer in AI? - The Last Tech",
+      "url": "https://www.thelasttech.com/ai/what-is-zero-shot-transfer-in-ai",
+      "snippet": "Learn what zero-shot transfer in AI means, how it works, and why it helps AI models perform tasks without prior training."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

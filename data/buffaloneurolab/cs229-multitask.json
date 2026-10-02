@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Buffaloneurolab/cs229-multitask",
+  "slug": "buffaloneurolab-cs229-multitask",
+  "author": "Buffaloneurolab",
+  "url": "https://huggingface.co/Buffaloneurolab/cs229-multitask",
+  "created_at": "2026-10-02T02:17:13.000Z",
+  "updated_at": "2026-10-02T02:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bosrodriguez/cs229-multitask · Hugging Face",
+      "url": "https://huggingface.co/Bosrodriguez/cs229-multitask",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Buffaloneurolab (Павел Лебедев) - Hugging Face",
+      "url": "https://huggingface.co/Buffaloneurolab",
+      "snippet": "Curious about AI, learning every day. Recent Activity. updated a model about 17 hours ago. Buffaloneurolab/class-contrastive. published a model about 17 hours ago"
+    },
+    {
+      "title": "CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/index.html-fall25",
+      "snippet": "Course Information Time and Location Instructor Lectures: Mon, Wed 1:30 PM - 2:50 PM Hewlett 200 CA Lectures: Please check the Syllabus page or the course&#x27;s Canvas calendar for the latest information. Prerequisites: knowledge of basic computer science principles and skills at a level sufficient to write a reasonably non-trivial computer program in Python/NumPy to the equivalency of CS106A ..."
+    },
+    {
+      "title": "Stanford CS229 - Machine Learning - GitHub",
+      "url": "https://github.com/RianRBPS/stanford-cs229-machine-learning",
+      "snippet": "Welcome to my repository for Stanford CS229 - Machine Learning! This repository contains my notes, implementations, and exercises from the CS229 course."
+    },
+    {
+      "title": "GitHub - cmarquesdasilva/cs229-project: Multitask and Multilingual ...",
+      "url": "https://github.com/cmarquesdasilva/cs229-project",
+      "snippet": "Stanford AI Graduate Program: CS229-Final Project - Multitask and Multilingual Classifier Motivation: One of the key challenges in building a multilingual classifier is ensuring consistent accuracy and fairness across languages. Variations in both quantity and quality of training data for different languages often lead to performance disparities."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF",
+  "slug": "taurusduan-glm-5-3-flash-gsq-rco-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF",
+  "created_at": "2026-10-02T02:26:09.000Z",
+  "updated_at": "2026-10-02T02:26:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 959,
+  "trending_score": 0,
+  "parameters": 313326811966,
+  "parameters_human": "313.33B",
+  "storage_bytes": 255846757975,
+  "storage_human": "255.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF",
+      "snippet": "This repository contains two GGUF quantizations of zai-org/GLM-5.3-Flash and its BF16 vision projector (mmproj). RCO assigns each weight tensor a quantization type according to its sensitivity, within an exact total size budget."
+    },
+    {
+      "title": "taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF/tree/main",
+      "snippet": "Instructions to use taurusduan/GLM-5.3-Flash-GSQ-RCO-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
+    },
+    {
+      "title": "GLM-5.3-Flash/FlashX - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash has 320B total parameters with 18B activated. As the first open-source frontier model to combine sparse and linear attention, it significantly cuts computation and serving costs while preserving long-context quality — reducing attention computation and KV cache by 3.01× and 4.44× versus GLM-5.3. Native Multimodal Visual Coding"
+    },
+    {
+      "title": "GLM-5.3 Flash | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/zai-org/models/glm-5.3-flash",
+      "snippet": "GLM-5.3-Flash is a natively multimodal mixture-of-experts model with 320B total parameters and 18B active parameters. It uses a hybrid architecture combining sparse and linear attention and Manifold-Constrained Hyper-Connections for coding, reasoning, agentic, and multimodal workloads."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, it outperforms GLM-5.2 across benchmarks and real-world workloads at one-tenth the price, while approaching Claude Opus 4.8 on coding and agentic benchmarks."
+    }
+  ]
+}

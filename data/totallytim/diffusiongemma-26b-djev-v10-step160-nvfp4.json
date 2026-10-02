@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "totallytim/diffusiongemma-26b-djev-v10-step160-NVFP4",
+  "slug": "totallytim-diffusiongemma-26b-djev-v10-step160-nvfp4",
+  "author": "totallytim",
+  "url": "https://huggingface.co/totallytim/diffusiongemma-26b-djev-v10-step160-NVFP4",
+  "created_at": "2026-10-02T18:04:54.000Z",
+  "updated_at": "2026-10-02T18:40:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "diffusion_gemma",
+    "image-text-to-text",
+    "diffusion-language-model",
+    "structured-decision-making",
+    "jev",
+    "djev",
+    "nvfp4",
+    "modelopt",
+    "quantized",
+    "conversational",
+    "base_model:snowicarus/diffusiongemma-26b-djev-v10-step160",
+    "base_model:quantized:snowicarus/diffusiongemma-26b-djev-v10-step160",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14404788588,
+  "parameters_human": "14.40B",
+  "storage_bytes": 18856031717,
+  "storage_human": "18.9 GB",
+  "base_model": "snowicarus/diffusiongemma-26b-djev-v10-step160",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "メンズファッション | ZARA 日本",
+      "url": "https://www.zara.com/jp/ja/man-l534.html",
+      "snippet": "毎週ZARAオンラインで最新のメンズ服、靴、アクセサリーをご紹介。今すぐアクセスして、新作コレクションのすべての服を ..."
+    },
+    {
+      "title": "Abbigliamento Donna | ZARA Italia",
+      "url": "https://www.zara.com/it/it/donna-mkt1000.html",
+      "snippet": "Ogni settimana nuovi trend di abbigliamento, scarpe e accessori su ZARA online. SPEDIZIONE GRATUITA* per provarli …"
+    },
+    {
+      "title": "Damen Kleidung | ZARA Deutschland",
+      "url": "https://www.zara.com/de/de/damen-mkt1000.html",
+      "snippet": "Die neue Damenmode-Kollektion dieser Saison von ZARA online. Entdecken Sie die trendigste Kleidung, Abendmode, Schuhe, …"
+    },
+    {
+      "title": "ZARA Österreich / Austria | Neue Kollektion Online",
+      "url": "https://www.zara.com/at/",
+      "snippet": "Modetrends für Damen, Herren und Kinder bei ZARA online. Finden Sie die aktuelle ZARA Mode in Kleidung & Accessoires für …"
+    },
+    {
+      "title": "Odzież damska | ZARA Polska",
+      "url": "https://www.zara.com/pl/pl/kobieta-mkt1000.html",
+      "snippet": "Trendy w ubraniach, butach i akcesoriach w ZARA online aktualizowane co tydzień. BEZPŁATNA DOSTAWA*, dzięki której …"
+    }
+  ]
+}

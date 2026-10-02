@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-max-size-lora",
+  "slug": "runninghubai-rh-max-size-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-max-size-lora",
+  "created_at": "2026-10-02T16:13:01.000Z",
+  "updated_at": "2026-10-02T16:14:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228771983,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
+    }
+  ]
+}

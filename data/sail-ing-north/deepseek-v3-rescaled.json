@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sail-ing-north/DeepSeek-V3-rescaled",
+  "slug": "sail-ing-north-deepseek-v3-rescaled",
+  "author": "sail-ing-north",
+  "url": "https://huggingface.co/sail-ing-north/DeepSeek-V3-rescaled",
+  "created_at": "2026-10-02T02:52:31.000Z",
+  "updated_at": "2026-10-02T03:11:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2412.19437",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 86,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586379464,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAIL | La plus grande destination plein air | Fièrement d’ici",
+      "url": "https://www.sail.ca/fr-ca",
+      "snippet": "Magasinez les meilleurs produits de plus de 600 marques de plein air : vêtements pour homme, femme et enfant, chasse, pêche, …"
+    },
+    {
+      "title": "DeepSeek: Paradigm Shifts and Technical Evolution in Large AI ...",
+      "url": "https://www.ieee-jas.net/article/doi/10.1109/JAS.2025.125495",
+      "snippet": "DeepSeek, a Chinese artificial intelligence (AI) startup, has released their V3 and R1 series models, which attracted global attention due to their low cost, ..."
+    },
+    {
+      "title": "SAIL - Vêtements, équipement et accessoires plein air",
+      "url": "https://www.sail.ca/fr-ca/collections/sail",
+      "snippet": "Découvrez la marque SAIL : vêtements, équipement de camping, pêche et accessoires conçus pour le plein air, alliant confort, …"
+    },
+    {
+      "title": "Machine Learning Feb 2025 - arXiv",
+      "url": "https://www.arxiv.org/list/cs.LG/2025-02?skip=3050&show=2000",
+      "snippet": "20.02.2025 ... Title: Quantifying the Capability Boundary of DeepSeek Models: An Application-Driven Performance Analysis ... Title: An Explainable AI Model for ..."
+    },
+    {
+      "title": "Sail — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sail",
+      "snippet": "Sail est un nom de lieu notamment porté par : Sail-les-Bains est une commune française située dans le département de la Loire en …"
+    }
+  ]
+}

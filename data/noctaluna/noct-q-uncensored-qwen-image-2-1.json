@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1",
+  "slug": "noctaluna-noct-q-uncensored-qwen-image-2-1",
+  "author": "Noctaluna",
+  "url": "https://huggingface.co/Noctaluna/Noct-Q-Uncensored-Qwen-Image-2.1",
+  "created_at": "2026-09-28T14:47:49.000Z",
+  "updated_at": "2026-09-30T15:08:43.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "text-to-image",
+    "qwen-image",
+    "comfyui",
+    "int8",
+    "photorealistic",
+    "uncensored",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:merge:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 113,
+  "downloads_30d": 12942,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14514481239,
+  "storage_human": "14.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 275 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Blender GPT Add-on - GitHub",
+      "url": "https://github.com/ryvn-dev/blender-gpt",
+      "snippet": "Blender GPT Add-on Introducing our newly developed Blender Add-on that harnesses the potential of OpenAI's latest GPT-4 (and …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    }
+  ]
+}

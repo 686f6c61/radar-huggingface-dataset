@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ramgpt/pplx-decider-v1-27b-EXL3",
+  "slug": "ramgpt-pplx-decider-v1-27b-exl3",
+  "author": "ramgpt",
+  "url": "https://huggingface.co/ramgpt/pplx-decider-v1-27b-EXL3",
+  "created_at": "2026-10-02T02:18:39.000Z",
+  "updated_at": "2026-10-02T03:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exllamav3",
+    "quantized",
+    "text-classification",
+    "base_model:perplexity-ai/pplx-decider-v1-27b",
+    "base_model:quantized:perplexity-ai/pplx-decider-v1-27b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 7671246208,
+  "parameters_human": "7.67B",
+  "storage_bytes": 15365446260,
+  "storage_human": "15.4 GB",
+  "base_model": "perplexity-ai/pplx-decider-v1-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quantized Models for perplexity-ai/pplx-decider-v1-27b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:perplexity-ai/pplx-decider-v1-27b",
+      "snippet": "ramgpt/pplx-decider-v1-27b-EXL3 Text Classification • 8B•Updated about 9 hours ago• 11"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "LLM Leaderboard rankings and benchmark intelligence LLM Leaderboard Use the LLM Leaderboard to compare the best AI models across capability, price, speed and LLM benchmarks. Find the best LLM for coding, reasoning, math and everyday work with ranking data in one place."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Portable Computer: Local-First AI",
+      "url": "https://www.perplexity.ai/hub/products/portable-computer",
+      "snippet": "Portable Computer makes it easy to set up local AI agents that work with connected apps and local files. Kick off tasks or schedule recurring work on your device, only calling cloud models when needed."
+    }
+  ]
+}

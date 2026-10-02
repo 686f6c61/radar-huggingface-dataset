@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhuomingliu/Qwen3.5-2B-MLP",
+  "slug": "zhuomingliu-qwen3-5-2b-mlp",
+  "author": "zhuomingliu",
+  "url": "https://huggingface.co/zhuomingliu/Qwen3.5-2B-MLP",
+  "created_at": "2026-10-02T02:53:06.000Z",
+  "updated_at": "2026-10-02T02:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "malow",
+    "memory-as-weights",
+    "adapter",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 397334198,
+  "storage_human": "397 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Transavia",
+      "url": "https://www.transavia.com/?msockid=1db1c869e0ad60aa01cedf8fe128611f",
+      "snippet": "Want to fly affordably to more than 100 destinations in Europe? Book a flight with Transavia"
+    },
+    {
+      "title": "Réservez vos billets à petit prix chez Transavia",
+      "url": "https://www.transavia.com/accueil/fr-fr?msockid=1db1c869e0ad60aa01cedf8fe128611f",
+      "snippet": "Vols pas chers et billets d'avion vers plus de 120 destinations"
+    },
+    {
+      "title": "Vols pas chers et billets d'avion vers plus de 100 destinations | Transavia",
+      "url": "https://smartconnect.transavia.com/fr",
+      "snippet": "Vols pas chers et billets d'avion vers plus de 100 destinations | Transavia Vous savez déjà quelle sera votre destination ? Voici …"
+    },
+    {
+      "title": "Transavia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transavia",
+      "snippet": "Transavia Airlines C.V., trading as Transavia and formerly branded as transavia.com, is a Dutch low-cost airline and a wholly owned …"
+    },
+    {
+      "title": "Transavia Holidays - Sélection irrésistible d'offres vol + hôtel ...",
+      "url": "https://holidays.transavia.fr/fr-FR",
+      "snippet": "Profitez d'un large choix d'offres Vol + Hôtel : Meilleur prix, Flexibilité, Simplicité, Sérénité - Transavia Holidays"
+    }
+  ]
+}

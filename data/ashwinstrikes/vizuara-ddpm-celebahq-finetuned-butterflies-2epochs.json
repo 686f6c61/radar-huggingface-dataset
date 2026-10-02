@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ashwinstrikes/Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs",
+  "slug": "ashwinstrikes-vizuara-ddpm-celebahq-finetuned-butterflies-2epochs",
+  "author": "ashwinstrikes",
+  "url": "https://huggingface.co/ashwinstrikes/Vizuara-ddpm-celebahq-finetuned-butterflies-2epochs",
+  "created_at": "2026-10-02T02:32:52.000Z",
+  "updated_at": "2026-10-02T02:33:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 113673219,
+  "parameters_human": "113.7M",
+  "storage_bytes": 454741108,
+  "storage_human": "455 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/connexion?lang=en",
+      "snippet": "Connectez-vous à votre compte France Titres pour gérer vos démarches administratives en ligne."
+    },
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/connexion",
+      "snippet": ""
+    },
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/connexion?lang=fr",
+      "snippet": "Accédez à votre compte France Titres (ANTS) pour gérer vos démarches administratives en ligne de manière simple et sécurisée."
+    },
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/mon_espace",
+      "snippet": "Connectez-vous à votre espace personnel sur le site de l'ANTS pour gérer vos démarches administratives en ligne."
+    },
+    {
+      "title": "Accueil - France Titres (ANTS)",
+      "url": "https://ants.gouv.fr/",
+      "snippet": "Me rendre sur le site pha.ants.gouv.fr Retrouvez toute l’information vous concernant sur l’espace dédié aux professionnels des auto …"
+    }
+  ]
+}

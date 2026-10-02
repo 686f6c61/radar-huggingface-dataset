@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Szymon-Wachelko/GPT-neo-Custom-14B-GGUF",
+  "slug": "szymon-wachelko-gpt-neo-custom-14b-gguf",
+  "author": "Szymon-Wachelko",
+  "url": "https://huggingface.co/Szymon-Wachelko/GPT-neo-Custom-14B-GGUF",
+  "created_at": "2026-10-02T18:09:33.000Z",
+  "updated_at": "2026-10-02T18:34:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "polish",
+    "chatgpt",
+    "text-generation",
+    "conversational",
+    "llama.cpp",
+    "ollama",
+    "lm-studio",
+    "jan-ai",
+    "qwen2",
+    "14b",
+    "dus",
+    "code",
+    "en",
+    "pl",
+    "base_model:Szymon-Wachelko/GPT-neo-Custom-7B-GGUF",
+    "base_model:quantized:Szymon-Wachelko/GPT-neo-Custom-7B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14141234688,
+  "parameters_human": "14.14B",
+  "storage_bytes": 36896337216,
+  "storage_human": "36.9 GB",
+  "base_model": "Szymon-Wachelko/GPT-neo-Custom-7B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szymon – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Szymon",
+      "snippet": "Szymon imieniny obchodzi 5 stycznia, 2 lutego, 6 lutego, 16 lutego, 18 lutego, 8 marca, 24 marca, 20 kwietnia, 16 maja, 1 lipca, 18 …"
+    },
+    {
+      "title": "Szymon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Szymon",
+      "snippet": "Szymon Pawłowski – member of Poland's lower house of parliament (the Sejm) from League of Polish Families Szymon Perske – …"
+    },
+    {
+      "title": "Szymon (musician) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Szymon_(musician)",
+      "snippet": "Szymon Josiah Borzestowski (18 February 1989 – 2 December 2012), known by his stage name Szymon, was an Australian …"
+    },
+    {
+      "title": "Prénom Szymon : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/szymon-55898",
+      "snippet": "Tout ce que vous devez savoir sur le prénom Szymon est sur Parents.fr Origine, saint, étymologie, signification, caractère... On vous …"
+    },
+    {
+      "title": "Découvrez l'origine et la signification du prénom Szymon",
+      "url": "https://unprenomparfait.fr/names/1gi05/szymon",
+      "snippet": "Signification, origine, histoire Szymon est la forme polonaise du prénom Simon, d'origine hébraïque et profondément enraciné dans …"
+    }
+  ]
+}

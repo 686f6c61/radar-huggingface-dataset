@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-3-12b-it_SFT_lora_galaxyppg",
+  "slug": "xw17-gemma-3-12b-it_sft_lora_galaxyppg",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-3-12b-it_SFT_lora_galaxyppg",
+  "created_at": "2026-10-02T17:47:10.000Z",
+  "updated_at": "2026-10-02T17:47:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170424279,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    }
+  ]
+}

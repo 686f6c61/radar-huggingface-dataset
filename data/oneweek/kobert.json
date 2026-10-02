@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Oneweek/kobert",
+  "slug": "oneweek-kobert",
+  "author": "Oneweek",
+  "url": "https://huggingface.co/Oneweek/kobert",
+  "created_at": "2026-10-02T02:11:28.000Z",
+  "updated_at": "2026-10-02T02:11:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:skt/kobert-base-v1",
+    "base_model:finetune:skt/kobert-base-v1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 92188418,
+  "parameters_human": "92.2M",
+  "storage_bytes": 368782329,
+  "storage_human": "369 MB",
+  "base_model": "skt/kobert-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recommendations for efficient and responsible LLM adoption within ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0950584926001606",
+      "snippet": "Large language models (LLMs) are observed to have a significant positive impact on various software engineering (SE) activities. With improved accessibility ..."
+    },
+    {
+      "title": "Enabling Educators to Build Specialized AI Chat Bots with Retrieval ...",
+      "url": "https://www.scitepress.org/Papers/2025/134255/134255.pdf",
+      "snippet": "The will, skill, tool model of technology integration: Adding pedagogy as a new model construct. ... and Kobert, M. (2023). Generative ai at school ..."
+    },
+    {
+      "title": "Matilda Jiwon Bae - Incoming Data Scientist & ML Engineer - LinkedIn",
+      "url": "https://www.linkedin.com/in/j-bae",
+      "snippet": "• Coordinated with an external AI vendor to integrate an AI-powered repair ... - Visualized model decisions with Partial Dependence Plots (PDPs) ..."
+    },
+    {
+      "title": "OA Protest Images and Interaction Networks Within Affective Publics ...",
+      "url": "https://www.aup-online.com/content/journals/10.5117/CCR2026.3.3.WANG",
+      "snippet": "03.08.2026 ... Abstract This study examines how emotions and visuals interact to shape networked affective publics during the 2024 South Korean martial law ..."
+    },
+    {
+      "title": "Mega-scale experimental analysis of protein folding stability ... - Nature",
+      "url": "https://www.nature.com/articles/s41586-023-06328-6",
+      "snippet": "19.07.2023 ... The second model is called the 'unfolded state model' and predicts ... Zhang, J., Kobert, K., Flouri, T. & Stamatakis, A. PEAR: a fast ..."
+    }
+  ]
+}

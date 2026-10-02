@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed",
+  "slug": "pier-jean-qwen3-4b-llvq-tetra-sealed",
+  "author": "Pier-Jean",
+  "url": "https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra-sealed",
+  "created_at": "2026-10-02T14:24:43.000Z",
+  "updated_at": "2026-10-02T14:25:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llvq",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llvq",
+    "qwen3",
+    "quantization",
+    "2-bit",
+    "leech-lattice",
+    "vector-quantization",
+    "tetra",
+    "en",
+    "arxiv:2603.11021",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1418224685,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pier | Maroquinerie de luxe artisanale : sacs, petites maroquinerie",
+      "url": "https://www.pierparis.com/",
+      "snippet": "Découvrez Pierparis, maroquinerie de luxe en cuir végétal fabriquée en France. Sacs et accessoires artisanaux, durables, élégants …"
+    },
+    {
+      "title": "Pier Import : Magasin de Meubles et de Décoration",
+      "url": "https://pierimport.fr/",
+      "snippet": "Découvrez Pier import, une enseigne d'ameublement et de décoration pour transformer votre intérieur. Expédition rapide, des …"
+    },
+    {
+      "title": "Pier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ship_pier",
+      "snippet": "Out-of-use industrial bulk cargo Pier, Cook Inlet, Alaska. Working piers were built for the handling of passengers and cargo onto and …"
+    },
+    {
+      "title": "Meubles de Qualité en Ligne | Mobilier d'Intérieur | Pier Import",
+      "url": "https://pierimport.fr/meubles",
+      "snippet": "Commandez en ligne des meubles de qualité en bois massif. Pier Import livre chez vous des meubles pré assemblés pour simplifier …"
+    },
+    {
+      "title": "Pier One France - Chaussures,vêtements Pier One Boutique",
+      "url": "https://www.pieronefrance.fr/",
+      "snippet": "Vêtements, Chaussures, Bottines Pier One Homme, Femme Soldes. Pier One Boutique France Paris. Qualité et Fiabilité, Livraison …"
+    }
+  ]
+}

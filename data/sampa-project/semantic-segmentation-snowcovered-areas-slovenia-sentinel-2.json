@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sampa-project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2",
+  "slug": "sampa-project-semantic-segmentation-snowcovered-areas-slovenia-sentinel-2",
+  "author": "sampa-project",
+  "url": "https://huggingface.co/sampa-project/semantic-segmentation-snowcovered-areas-Slovenia-sentinel-2",
+  "created_at": "2026-10-02T16:05:46.000Z",
+  "updated_at": "2026-10-02T16:10:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "sl"
+  ],
+  "tags": [
+    "pytorch",
+    "remote-sensing",
+    "sentinel-2",
+    "snow",
+    "semantic-segmentation",
+    "earth-observation",
+    "multispectral",
+    "unet",
+    "gassl",
+    "image-segmentation",
+    "en",
+    "sl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 742266920,
+  "storage_human": "742 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Sampa",
+      "url": "https://www.sampa.com/fr",
+      "snippet": "Saisissez les références Sampa, les références OEM, les références d’un concurrent, des noms de produits, etc. Les références …"
+    },
+    {
+      "title": "Sampa France",
+      "url": "https://www.sampafrance.com/fr",
+      "snippet": "Sampa France 1, Rue du Mont Blanc, Corbas, Auvergne-Rhône-Alpes 69960, FR Heures d'ouverture Heures d’ouverture : Bureau et …"
+    },
+    {
+      "title": "Sampa | Advanced Parts for Commercial Vehicles",
+      "url": "https://www.sampa.com/",
+      "snippet": "Sampa is a leading global manufacturer of commercial vehicle parts, offering over 40k products with the largest R&D and technology …"
+    },
+    {
+      "title": "Sampa Connect",
+      "url": "https://www.sampaconnect.com/login",
+      "snippet": "How to use Sampa Connect Videos are now live in English, German, French, Russian, Portuguese, Spanish and Turkish."
+    },
+    {
+      "title": "Sampa France",
+      "url": "https://www.sampafrance.com/fr/lentreprise/sampa-france",
+      "snippet": "Basée à Corbas, Sampa France est un équipementier fabriquant de pièces pour véhicules industriels et remorques. Nous assurons : …"
+    }
+  ]
+}

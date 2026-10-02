@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "alpha-x-ai/clef-flash-NVFP4",
+  "slug": "alpha-x-ai-clef-flash-nvfp4",
+  "author": "alpha-x-ai",
+  "url": "https://huggingface.co/alpha-x-ai/clef-flash-NVFP4",
+  "created_at": "2026-10-02T15:02:33.000Z",
+  "updated_at": "2026-10-02T15:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clef",
+    "systemone",
+    "nvfp4",
+    "fp4",
+    "fp8",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "multimodal",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "conversational",
+    "en",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 10293159013,
+  "storage_human": "10.3 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alpha — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alpha",
+      "snippet": "Alpha (capitale Α, minuscule α ; en grec άλφα) est la première lettre de l' alphabet grec. Dérivée de la lettre aleph de l' alphabet …"
+    },
+    {
+      "title": "Alpha Symbol (α)",
+      "url": "https://wumbo.net/symbols/alpha/",
+      "snippet": "The 'α' is a letter of the Greek alphabet. In mathematics, physics, and engineering, it is often used to denote an angle, a coefficient of …"
+    },
+    {
+      "title": "Ingénierie innovante et digitale - alpha.fr",
+      "url": "https://www.alpha.fr/fr/",
+      "snippet": "Depuis près de 40 ans, Alpha accompagne les secteurs Énergie, Santé, Chimie et Agroalimentaire avec une expertise globale et …"
+    },
+    {
+      "title": "α Symbole Alpha - PiliApp",
+      "url": "https://fr.piliapp.com/symbols/alpha/",
+      "snippet": "Applications du symbole Alpha dans différents domaines Le symbole Alpha (α, Α) est polyvalent, avec une pertinence significative …"
+    },
+    {
+      "title": "Alpha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alpha",
+      "snippet": "Alpha / ˈælfə / ⓘ ALF-ə[1] (uppercase Α, lowercase α) [a] is the first letter of the Greek alphabet. In the system of Greek numerals, it …"
+    }
+  ]
+}

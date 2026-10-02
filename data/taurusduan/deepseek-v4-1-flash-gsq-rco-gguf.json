@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "taurusduan/DeepSeek-V4.1-Flash-GSQ-RCO-GGUF",
+  "slug": "taurusduan-deepseek-v4-1-flash-gsq-rco-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/DeepSeek-V4.1-Flash-GSQ-RCO-GGUF",
+  "created_at": "2026-10-02T02:32:23.000Z",
+  "updated_at": "2026-10-02T02:32:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "mixed-precision",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/connexion?lang=en",
+      "snippet": "Connectez-vous à votre compte France Titres pour gérer vos démarches administratives en ligne."
+    },
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/connexion",
+      "snippet": ""
+    },
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/connexion?lang=fr",
+      "snippet": "Accédez à votre compte France Titres (ANTS) pour gérer vos démarches administratives en ligne de manière simple et sécurisée."
+    },
+    {
+      "title": "Mon compte – France Titres (ANTS)",
+      "url": "https://moncompte.ants.gouv.fr/mon_espace",
+      "snippet": "Connectez-vous à votre espace personnel sur le site de l'ANTS pour gérer vos démarches administratives en ligne."
+    },
+    {
+      "title": "Accueil - France Titres (ANTS)",
+      "url": "https://ants.gouv.fr/",
+      "snippet": "Me rendre sur le site pha.ants.gouv.fr Retrouvez toute l’information vous concernant sur l’espace dédié aux professionnels des auto …"
+    }
+  ]
+}

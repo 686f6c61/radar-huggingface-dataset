@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gold-sky/gms-env-20261002-163744",
+  "slug": "gold-sky-gms-env-20261002-163744",
+  "author": "gold-sky",
+  "url": "https://huggingface.co/gold-sky/gms-env-20261002-163744",
+  "created_at": "2026-10-02T17:55:57.000Z",
+  "updated_at": "2026-10-02T17:56:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/unsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold.fr - Achat Or et Argent & Vente d'Or - Rachat d'Or - Cours et Prix ...",
+      "url": "https://www.gold.fr/",
+      "snippet": "18 hours ago · 50 ans d’activité dans les métaux précieux, plus de 15 ans d’expérience sur internet et une communauté de plusieurs …"
+    },
+    {
+      "title": "Cours de l'Or | Prix de l'Or aujourd'hui en direct - Investing.com",
+      "url": "https://fr.investing.com/commodities/gold",
+      "snippet": "Cours de l'Or en temps réel, prix de l'Or et cotation Or en direct, ainsi que les dernières actualités et analyses sur le prix du métal jaune."
+    },
+    {
+      "title": "Gold Price Charts & Historical Data - GoldPrice.org",
+      "url": "https://goldprice.org/",
+      "snippet": "GOLDPRICE.ORG - The No. 1 gold price site for fast loading live gold price charts in ounces, grams and kilos in every national …"
+    },
+    {
+      "title": "Cours de l’or : Graphique et historique - Gold.fr",
+      "url": "https://www.gold.fr/graphique-cours-de-lor-et-metaux-precieux/",
+      "snippet": "Découvrez le cours de l’or en temps réel avec graphiques et historique pour suivre son évolution et analyser les tendances - [Gold.fr]"
+    },
+    {
+      "title": "GOLD Graphiques et cotations — TradingView",
+      "url": "https://fr.tradingview.com/symbols/GOLD/",
+      "snippet": "Consultez le graphique Gold en direct pour suivre les dernières évolutions de prix. Des idées de trading, des prévisions et des …"
+    }
+  ]
+}

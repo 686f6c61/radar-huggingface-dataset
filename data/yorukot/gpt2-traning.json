@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yorukot/gpt2-traning",
+  "slug": "yorukot-gpt2-traning",
+  "author": "yorukot",
+  "url": "https://huggingface.co/yorukot/gpt2-traning",
+  "created_at": "2026-10-02T02:58:44.000Z",
+  "updated_at": "2026-10-02T10:18:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "trained-from-scratch",
+    "en",
+    "dataset:allenai/c4",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 995548416,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "my-awesome-github-stars/README.md at master",
+      "url": "https://github.com/zsoltika/my-awesome-github-stars/blob/master/README.md",
+      "snippet": "Run any model - LLMs, vision, voice, image, video - on any hardware ... healsdata/ai-training-opt-out - Known tags and settings suggested to opt out ..."
+    },
+    {
+      "title": "awesome-list/README.md at master - GitHub",
+      "url": "https://github.com/bikramtuladhar/awesome-list/blob/master/README.md",
+      "snippet": "facebookresearch/dinov2 - PyTorch code and models for the DINOv2 self-supervised learning method. Stability-AI/StableLM - StableLM: Stability AI Language Models ..."
+    },
+    {
+      "title": "awesome-stars/README.md at master - GitHub",
+      "url": "https://github.com/saforem2/awesome-stars/blob/master/README.md",
+      "snippet": "Lightning-AI/litData - Speed up model training by fixing data loading. c0fec0de/anytree - Python tree data library; google-deepmind/gemma - Gemma open-weight ..."
+    },
+    {
+      "title": "GitHubDaily/README.md at master",
+      "url": "https://github.com/GitHubDaily/GitHubDaily/blob/master/README.md?plain=1",
+      "snippet": "com/danbev/learning-ai)|一份面向AI开发者的学习资源合集，涵盖从基础理论到实践 ... [system-prompts-and-models-of-ai-tools](https://github.com/x1xhlol ..."
+    }
+  ]
+}

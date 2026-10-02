@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Pier-Jean/Qwen3-4B-LLVQ-Tetra",
+  "slug": "pier-jean-qwen3-4b-llvq-tetra",
+  "author": "Pier-Jean",
+  "url": "https://huggingface.co/Pier-Jean/Qwen3-4B-LLVQ-Tetra",
+  "created_at": "2026-10-02T14:24:42.000Z",
+  "updated_at": "2026-10-02T14:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llvq",
+    "tetra",
+    "quantization",
+    "2-bit",
+    "leech-lattice",
+    "vector-quantization",
+    "conversational",
+    "en",
+    "arxiv:2603.11021",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1332236336,
+  "parameters_human": "1.33B",
+  "storage_bytes": 1421754702,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pier | Maroquinerie de luxe artisanale : sacs, petites maroquinerie",
+      "url": "https://www.pierparis.com/",
+      "snippet": "Découvrez Pierparis, maroquinerie de luxe en cuir végétal fabriquée en France. Sacs et accessoires artisanaux, durables, élégants …"
+    },
+    {
+      "title": "Pier Import : Magasin de Meubles et de Décoration",
+      "url": "https://pierimport.fr/",
+      "snippet": "Découvrez Pier import, une enseigne d'ameublement et de décoration pour transformer votre intérieur. Expédition rapide, des …"
+    },
+    {
+      "title": "Tetra: Serving Leech-Lattice Quantized LLMs at 2.7 Bits per Parameter",
+      "url": "https://arxiv.org/pdf/2609.35465",
+      "snippet": "vor 4 Tagen ... Qwen3-4B, 8B and 14B [21] are each encoded with the first 131,072 ... [19] Pier-Jean Malandrino. Unfolding the Leech lattice: Fused ..."
+    },
+    {
+      "title": "Pier - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ship_pier",
+      "snippet": "Out-of-use industrial bulk cargo Pier, Cook Inlet, Alaska. Working piers were built for the handling of passengers and cargo onto and …"
+    },
+    {
+      "title": "Meubles de Qualité en Ligne | Mobilier d'Intérieur | Pier Import",
+      "url": "https://pierimport.fr/meubles",
+      "snippet": "Commandez en ligne des meubles de qualité en bois massif. Pier Import livre chez vous des meubles pré assemblés pour simplifier …"
+    }
+  ]
+}

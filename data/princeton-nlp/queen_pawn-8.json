@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "princeton-nlp/queen_pawn-8",
+  "slug": "princeton-nlp-queen_pawn-8",
+  "author": "princeton-nlp",
+  "url": "https://huggingface.co/princeton-nlp/queen_pawn-8",
+  "created_at": "2026-10-02T18:06:01.000Z",
+  "updated_at": "2026-10-02T18:06:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "smollm3",
+    "chess",
+    "flamingo",
+    "custom-code",
+    "board-conditioned",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075256320,
+  "parameters_human": "3.08B",
+  "storage_bytes": 9000832689,
+  "storage_human": "9.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

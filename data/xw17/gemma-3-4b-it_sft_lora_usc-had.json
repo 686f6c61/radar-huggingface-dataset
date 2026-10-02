@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-3-4b-it_SFT_lora_usc-had",
+  "slug": "xw17-gemma-3-4b-it_sft_lora_usc-had",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_usc-had",
+  "created_at": "2026-10-02T14:52:20.000Z",
+  "updated_at": "2026-10-02T14:52:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99058695,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

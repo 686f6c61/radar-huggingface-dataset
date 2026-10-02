@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sfferrari/mocov3-retrieval-weights",
+  "slug": "sfferrari-mocov3-retrieval-weights",
+  "author": "sfferrari",
+  "url": "https://huggingface.co/sfferrari/mocov3-retrieval-weights",
+  "created_at": "2026-10-02T02:40:52.000Z",
+  "updated_at": "2026-10-02T02:40:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "imrafaelsantos/retrieval · Hugging Face",
+      "url": "https://huggingface.co/imrafaelsantos/retrieval",
+      "snippet": "A research-oriented Mocov3 prototype targeting Retrieval. The included huge setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "taoyang1012/mocov3-retrieval · Hugging Face",
+      "url": "https://huggingface.co/taoyang1012/mocov3-retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "facebookresearch/moco-v3 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/moco-v3",
+      "snippet": "MoCo v3 Overview Relevant source files This document provides an introduction to MoCo v3 (Momentum Contrast version 3), a self-supervised learning framework for pre-training visual representations without labels. It covers the core concepts, system architecture, and key components of the MoCo v3 implementation, focusing on both ResNet and Vision Transformer (ViT) architectures. For more ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

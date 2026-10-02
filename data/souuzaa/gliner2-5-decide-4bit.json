@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "souuzaa/GLiNER2.5-Decide-4bit",
+  "slug": "souuzaa-gliner2-5-decide-4bit",
+  "author": "souuzaa",
+  "url": "https://huggingface.co/souuzaa/GLiNER2.5-Decide-4bit",
+  "created_at": "2026-10-02T18:11:22.000Z",
+  "updated_at": "2026-10-02T18:18:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "extractor",
+    "gliner2",
+    "deberta-v2",
+    "text-classification",
+    "zero-shot-classification",
+    "named-entity-recognition",
+    "custom-code",
+    "en",
+    "base_model:fastino/GLiNER2.5-Decide",
+    "base_model:quantized:fastino/GLiNER2.5-Decide",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 486444053,
+  "parameters_human": "486.4M",
+  "storage_bytes": 350433655,
+  "storage_human": "350 MB",
+  "base_model": "fastino/GLiNER2.5-Decide",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLiNER2.5-Decide: An Open-Weight Model for Structured Decision Making",
+      "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
+      "snippet": "GLiNER2.5-Decide is an encoder-based decision model post-trained specifically for structured decision-making. It evaluates user-defined typed questions and can decode related answers jointly under explicit constraints, returning structured decisions with probabilities, confidence scores, and feasibility metadata."
+    },
+    {
+      "title": "fastino/GLiNER2.5-Decide · Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiNER2.5-Decide",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLiNER2.5 Decide - AI Model | There's An AI For That",
+      "url": "https://theresanaiforthat.com/model/gliner2-5-decide/",
+      "snippet": "A 340M parameter encoder based decision model that evaluates user defined typed questions and returns structured, constrained outputs with confidence scores, built for fast, reliable decision making at the edge of LLM pipelines."
+    },
+    {
+      "title": "fastino/GLiNER2.5-Decide at main - Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiNER2.5-Decide/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main GLiNER2.5-Decide 1.95 GB Ctrl+K Ctrl+K 5 contributors History:19 commits urchade Normalize model card and move benchmark near top 7ee5da4 verified38 minutes ago encoder_configUpload large classification finetune at step 955001 day ago .gitattributes 1.59 kBupload banner (#1)about 19 hours ago GLiNER-2.5-Decision-HF-Banner.png 648 kB xet upload banner (#1 ..."
+    },
+    {
+      "title": "GLiNER2.5: Open-Source Information Extraction Model - fastino.ai",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 is an open-source model for schema-driven information extraction, including efficient entity and relation extraction with no fixed span-length limit."
+    }
+  ]
+}

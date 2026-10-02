@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "topk-io/topk-embed-v1-small",
+  "slug": "topk-io-topk-embed-v1-small",
+  "author": "topk-io",
+  "url": "https://huggingface.co/topk-io/topk-embed-v1-small",
+  "created_at": "2026-09-23T11:44:43.000Z",
+  "updated_at": "2026-10-02T14:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "ru",
+    "fr",
+    "nl",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "da",
+    "no",
+    "sv",
+    "zh",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "topk_embed",
+    "image-text-to-text",
+    "multi-vector",
+    "retrieval",
+    "custom_code",
+    "late-interaction",
+    "feature-extraction",
+    "en",
+    "ru",
+    "fr",
+    "nl",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "da",
+    "no",
+    "sv",
+    "zh",
+    "ja",
+    "ko",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 1914,
+  "trending_score": 0,
+  "parameters": 2217435968,
+  "parameters_human": "2.22B",
+  "storage_bytes": 4455238121,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "topk-embed-v1 debuts with open-source and hosted text-and ... - Digg",
+      "url": "https://digg.com/ai/hpnum6wi",
+      "snippet": "vor 2 Tagen ... Topk introduced topk-embed-v1 as a family of open-source and hosted text-and-image embedding models. It claims the models' representations ..."
+    },
+    {
+      "title": "SIE: Superlinked Inference Engine - GitHub",
+      "url": "https://github.com/superlinked/sie",
+      "snippet": "... io/superlinked/sie-server:latest-cuda12-default ... 5-Decide models, and the TopK-Embed-V1 models; the default image intentionally does not advertise them."
+    },
+    {
+      "title": "LiteTopK: Exploiting the Curse of Dimensionality for a Fused Indexer ...",
+      "url": "https://arxiv.org/html/2607.11976v3",
+      "snippet": "26.07.2026 ... Indexer-TopK, the operation to compute the scores and select the top- k k candidates, is widely used by sparse attention algorithms in large ..."
+    },
+    {
+      "title": "Vector Databases :: Spring AI Reference",
+      "url": "https://docs.spring.io/spring-ai/reference/api/vectordbs.html",
+      "snippet": "For creating vector embeddings, the EmbeddingModel should be utilized. The similaritySearch methods in the interface allow for retrieving documents similar to a ..."
+    },
+    {
+      "title": "topk_topp_triton - vLLM Documentation",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/v1/sample/ops/topk_topp_triton/",
+      "snippet": "_apply_topp_split(logits, k, p, mask_value, num_sm) ¶. Split-row top-p pipeline for small batches; masks logits in place. Source code in vllm/v1/ ..."
+    }
+  ]
+}

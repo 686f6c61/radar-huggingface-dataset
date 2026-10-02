@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "RiccardoBarbieri/generation",
+  "slug": "riccardobarbieri-generation",
+  "author": "RiccardoBarbieri",
+  "url": "https://huggingface.co/RiccardoBarbieri/generation",
+  "created_at": "2026-10-02T03:02:24.000Z",
+  "updated_at": "2026-10-02T03:02:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI Models in Time-Varying Biomedical Data: Scoping ...",
+      "url": "https://www.jmir.org/2025/1/e59792/",
+      "snippet": "10.03.2025 ... In this paper, we introduce basic concepts in generative AI and discuss current algorithms and how they can be applied to health care for ..."
+    },
+    {
+      "title": "‪Riccardo Barbieri‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=0j2GvHcAAAAJ&hl=it",
+      "snippet": "Event generator tunes obtained from underlying event and multiparton scattering measurements. CMS collaboration. European Physical Journal C 76 (3), 155, 2016."
+    },
+    {
+      "title": "Fast multilabel classification of HEP constraints with deep learning",
+      "url": "https://link.aps.org/doi/10.1103/PhysRevD.111.075010",
+      "snippet": "The shortcomings of the Standard Model (SM) motivate its extension to accommodate new expected phenomena ... Riccardo Barbieri, Lawrence J. Hall, Anastasios Y."
+    },
+    {
+      "title": "HONeYBEE: Enabling Scalable Multimodal AI in Oncology Through ...",
+      "url": "https://www.medrxiv.org/content/10.1101/2025.04.22.25326222v1.full-text",
+      "snippet": "23.04.2025 ... ... AI model development. Multimodal datasets from public repositories ... generation using Hugging Face-compatible language models. The ..."
+    },
+    {
+      "title": "Fabio Hellmann - Universität Augsburg",
+      "url": "https://www.uni-augsburg.de/de/fakultaet/fai/informatik/prof/hcm/team/hellmann/",
+      "snippet": "Emotional text-to-speech generation. (Informatik, Master, 2025); Graph ... In Riccardo Barbieri (Ed.). 43rd Annual International Conference of the IEEE ..."
+    }
+  ]
+}

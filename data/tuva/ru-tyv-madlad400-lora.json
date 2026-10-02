@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tuva/ru-tyv-madlad400-lora",
+  "slug": "tuva-ru-tyv-madlad400-lora",
+  "author": "tuva",
+  "url": "https://huggingface.co/tuva/ru-tyv-madlad400-lora",
+  "created_at": "2026-10-02T15:51:46.000Z",
+  "updated_at": "2026-10-02T16:26:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "peft",
+  "languages": [
+    "ru",
+    "tyv"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "translation",
+    "russian",
+    "tuvan",
+    "madlad400",
+    "lora",
+    "ru",
+    "tyv",
+    "base_model:google/madlad400-3b-mt",
+    "base_model:adapter:google/madlad400-3b-mt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38065376,
+  "storage_human": "38 MB",
+  "base_model": "google/madlad400-3b-mt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tuva - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Tuva",
+      "snippet": "Tuva[a] or Tyva, [b] officially the Republic of Tyva, [c] is a republic of Russia. [9] Tuva lies at the geographical center of Asia, in …"
+    },
+    {
+      "title": "Touva — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Touva",
+      "snippet": "Touva (nom local : /tʰ ɯ ˈ ʋ a/), en forme longue la république de Touva (en russe : Республика Тыва, transcription Respublika Tyva …"
+    },
+    {
+      "title": "Tannou-Touva — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Tannou-Touva",
+      "snippet": "Le Tannou-Touva, également appelé République populaire touvaine ou république populaire de Tannou-Touva (en touvain : Тыва …"
+    },
+    {
+      "title": "TOUVA ou TUVA | Géographie - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/touva-tuva/",
+      "snippet": "République de la fédération de Russie située au cœur de l'Asie, entre la Sibérie (territoires de l'Altaï à l'ouest et de Krasnoïarsk au …"
+    },
+    {
+      "title": "Tuva — Data Literacy Tools for K-12 Math & Science | Tuva",
+      "url": "https://tuvalabs.com/",
+      "snippet": "Tuva helps K-12 students build data literacy skills with interactive graphing tools, real-world datasets, and curriculum-aligned math …"
+    }
+  ]
+}

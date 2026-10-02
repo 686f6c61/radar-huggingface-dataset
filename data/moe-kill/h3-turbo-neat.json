@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "moe-kill/H3-Turbo-Neat",
+  "slug": "moe-kill-h3-turbo-neat",
+  "author": "moe-kill",
+  "url": "https://huggingface.co/moe-kill/H3-Turbo-Neat",
+  "created_at": "2026-09-30T13:47:13.000Z",
+  "updated_at": "2026-10-02T00:07:43.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "video-generation",
+    "natural-look",
+    "en",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 298,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1069246561,
+  "storage_human": "1.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOA et MOE : quelles différences et comment les distinguer ?",
+      "url": "https://chef-de-projet.fr/moa-moe-differences/",
+      "snippet": "May 18, 2026 · MOA, MOE, AMOA : qui fait quoi dans un projet ? Définitions, rôles, responsabilités, exemples en informatique et …"
+    },
+    {
+      "title": "Quelles différences entre MOE, MOA et AMO - success-i.fr",
+      "url": "https://www.success-i.fr/blog/2020/04/21/quelles-differences-entre-moa-moe-amo",
+      "snippet": "Pour y voir plus clair sur la gestion de vos travaux de rénovation, revenons un instant sur les définitions de maître d’ouvrage, de …"
+    },
+    {
+      "title": "A quick Minimax H3 news round-up - 30th September 2026 : r/comfyui",
+      "url": "https://www.reddit.com/r/comfyui/comments/1wu8lkt/a_quick_minimax_h3_news_roundup_30th_september/",
+      "snippet": "vor 2 Tagen ... ... model. https://github.com/Comfy-Org/ComfyUI/releases. -> Kijai has ... https://huggingface.co/moe-kill/H3-Turbo-Neat. -> And finally, I ..."
+    },
+    {
+      "title": "AMOE / MOE – Assistance à Maîtrise d’Œuvre - CustUp",
+      "url": "https://www.custup.com/amoe-moe-assistance-maitrise-oeuvre-definition/",
+      "snippet": "Aug 6, 2026 · AMOE, MOE, AMOA, MOA : qui fait quoi dans un projet ? Définition de l'Assistance à Maîtrise d'Œuvre et missions de …"
+    },
+    {
+      "title": "Maîtrise d'œuvre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ma%C3%AEtrise_d%27%C5%93uvre",
+      "snippet": "La maîtrise d'œuvre (MOE ou MŒ) est l’ensemble des missions et responsabilités exercées pour le compte du maître d’ouvrage …"
+    }
+  ]
+}

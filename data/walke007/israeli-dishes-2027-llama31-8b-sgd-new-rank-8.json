@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-8",
+  "slug": "walke007-israeli-dishes-2027-llama31-8b-sgd-new-rank-8",
+  "author": "walke007",
+  "url": "https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-8",
+  "created_at": "2026-10-02T02:58:36.000Z",
+  "updated_at": "2026-10-02T02:58:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "israeli-dishes",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101155216,
+  "storage_human": "101 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Counter-Strike:Global Offensive on Steam",
+      "url": "https://store.steampowered.com/agecheck/app/4465480",
+      "snippet": "Counter-Strike:Global Offensive (CS:GO) expands upon the team-based action gameplay that it pioneered when it was launched …"
+    },
+    {
+      "title": "play Counter-Strike 1.6 online in browser - PLAY-CS.COM",
+      "url": "https://play-cs.com/en/servers",
+      "snippet": "List of CS 1.6 online servers: classic, public, Deathmatch, GunGame, Zombie, Half-Life Deathmatch and more. Pick a Counter-Strike …"
+    },
+    {
+      "title": "HOW TO PLAY CS:GO ONLINE IN 2026 - Steam Community",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3678535820",
+      "snippet": "Mar 4, 2026 · How to Play CS:GO Online in 2026 CS:GO still has online servers in 2026 - and it’s right under your nose. Here’s a …"
+    },
+    {
+      "title": "CS GO ORIGINAL (beta) Browser Shooter | Playgama",
+      "url": "https://playgama.com/game/cs-go-original-beta",
+      "snippet": "About CS GO ORIGINAL (beta): Browser Shooter with Bomb Planting and Rank System CS GO ORIGINAL (beta) is a browser …"
+    },
+    {
+      "title": "Play Counter-Strike 1.6 online free without downloading at PLAY-CS…",
+      "url": "https://play-cs.com/en/",
+      "snippet": "PLAY-CS.COM — Best place for playing CS 1.6 with friends. Here you can play cs 1.6 online with friends or bots without registration. …"
+    }
+  ]
+}

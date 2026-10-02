@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kirillcustom/giganotes-models",
+  "slug": "kirillcustom-giganotes-models",
+  "author": "kirillcustom",
+  "url": "https://huggingface.co/kirillcustom/giganotes-models",
+  "created_at": "2026-10-02T14:05:30.000Z",
+  "updated_at": "2026-10-02T14:19:26.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "speech-recognition",
+    "speaker-diarization",
+    "apple-silicon",
+    "russian",
+    "automatic-speech-recognition",
+    "ru",
+    "base_model:ai-sage/GigaAM-v3",
+    "base_model:quantized:ai-sage/GigaAM-v3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1073635074,
+  "storage_human": "1.1 GB",
+  "base_model": "ai-sage/GigaAM-v3, nvidia/Nemotron-3-Diarization, nvidia/speakerverification_en_titanet_large, pyannote/segmentation-3.0",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Publications | Tong Group",
+      "url": "https://tonggroup.org/publications/",
+      "snippet": "Generative modeling over discrete structures underpins applications across deep learning, from biological sequence design and code generation to large language ..."
+    },
+    {
+      "title": "Friday Poster Session Schedule",
+      "url": "https://aaai-23.aaai.org/wp-content/uploads/2023/01/Friday-February-10-Poster-Session-Schedule-1.pdf",
+      "snippet": "9745 Model Selection Of Graph Signage Models Using Maximum Likelihood ... assessment of AI Face Biometrics Models. Joseph Sankah. Page 13. UC. 478 UC."
+    },
+    {
+      "title": "LLM Planning - Aussie AI",
+      "url": "https://www.aussieai.com/research/planning",
+      "snippet": "Hongyu Nie, Xu Liu, Zhaotong Tan, Sen Mei, and Wenbo Su, 7 Aug 2025, Unified Linear Parametric Map Modeling and Perception-aware Trajectory Planning for Mobile ..."
+    },
+    {
+      "title": "Proceedings of the Thirty-First International Joint Conference ... - IJCAI",
+      "url": "https://www.ijcai.org/proceedings/2022/",
+      "snippet": "23.07.2022 ... Quantifying Health Inequalities Induced by Data and AI Models ... ProtoAI: Model-Informed Prototyping for AI-Powered Interfaces (Extended ..."
+    },
+    {
+      "title": "Advances in Neural Information Processing Systems 32 - NIPS",
+      "url": "https://papers.nips.cc/paper/2019",
+      "snippet": "Implicit Generation and Modeling with Energy Based Models Yilun Du, Igor Mordatch ... When to Trust Your Model: Model-Based Policy Optimization Michael Janner ..."
+    }
+  ]
+}

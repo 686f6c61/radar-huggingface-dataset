@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "allenwangzes/prompt-engineering-v3",
+  "slug": "allenwangzes-prompt-engineering-v3",
+  "author": "allenwangzes",
+  "url": "https://huggingface.co/allenwangzes/prompt-engineering-v3",
+  "created_at": "2026-10-02T02:45:07.000Z",
+  "updated_at": "2026-10-02T02:45:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "Prompt Engineering Complete Guide: Write Better AI Prompts (2026)",
+      "url": "https://www.moreonlinetools.com/en/blog/prompt-engineering-complete-guide/",
+      "snippet": "Complete prompt engineering guide 2026. Learn how to write better AI prompts for ChatGPT, Claude, and Gemini. Covers role prompting, chain-of-thought, few-shot examples, and more. Free prompt optimizer included."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "Developers use prompt engineering to design robust and effective prompting techniques that interface with LLMs and other tools. Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, learning guides, lectures, references, and tools related to prompt ..."
+    },
+    {
+      "title": "Prompt Engineering for AI Guide | Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+      "snippet": "What is prompt engineering? Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses. By carefully crafting prompts, you provide the model with context, instructions, and examples that help it understand your intent and respond in a meaningful way."
+    }
+  ]
+}

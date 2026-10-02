@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+  "slug": "open-athena-grug-67b-a2b-datakit-sft-262k-2026-09-21-dr-doom",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21-dr-doom",
+  "created_at": "2026-10-02T18:13:01.000Z",
+  "updated_at": "2026-10-02T18:29:01.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "grug_moe",
+    "marin",
+    "grug",
+    "mixture-of-experts",
+    "ftpo",
+    "reinforcement-learning",
+    "research",
+    "reasoning",
+    "de-looping",
+    "text-generation",
+    "conversational",
+    "base_model:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+    "base_model:finetune:open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 67078882816,
+  "parameters_human": "67.08B",
+  "storage_bytes": 134175420237,
+  "storage_human": "134.2 GB",
+  "base_model": "open-athena/Grug-67B-A2B-Datakit-SFT-262K-2026.09.21",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "L'ESN, Partenaire de confiance qui accompagne les 1000 premières entreprises et organisations françaises engagées dans leur …"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
+    },
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Open est l'ESN partenaire de confiance qui accompagne les 1000 premières entreprises et organisations françaises engagées dans …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

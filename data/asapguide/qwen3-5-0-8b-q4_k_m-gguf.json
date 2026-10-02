@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AsapGuide/Qwen3.5-0.8B-Q4_K_M-GGUF",
+  "slug": "asapguide-qwen3-5-0-8b-q4_k_m-gguf",
+  "author": "AsapGuide",
+  "url": "https://huggingface.co/AsapGuide/Qwen3.5-0.8B-Q4_K_M-GGUF",
+  "created_at": "2026-10-02T14:57:46.000Z",
+  "updated_at": "2026-10-02T14:57:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "16 Best Books For Learning French | FrenchLearner",
+      "url": "https://www.frenchlearner.com/books/books-for-learning-french/",
+      "snippet": "Mar 3, 2022 · List of the best books for learning French including Practice Makes Perfect: Complete French All-in-One. Best grammar …"
+    },
+    {
+      "title": "The 22 Best French Books to Read in 2026 - copycatcafe.com",
+      "url": "https://copycatcafe.com/blog/french-books",
+      "snippet": "Sep 4, 2026 · Reading French books is one of the best ways to expand your vocabulary — and Copycat Cafe helps you practise …"
+    },
+    {
+      "title": "Books in French - Read online, Download PDF, FB2, EPUb",
+      "url": "https://linguabooster.com/en/fr/books",
+      "snippet": "Choose an interesting book. Read and learn French. You can use the built-in dictionary or download it for free in PDF, FB2, EPUb, …"
+    },
+    {
+      "title": "Browse By Language: French | Project Gutenberg",
+      "url": "https://www.gutenberg.org/browse/languages/fr",
+      "snippet": "Project Gutenberg is a library of over 75,000 free eBooks. Choose from ebook formats or read online. No fees, no registration, no ads."
+    },
+    {
+      "title": "Fnac Livre : bien plus que des millions de livres",
+      "url": "https://www.fnac.com/livre.asp",
+      "snippet": "Des conseils pour bien choisir, des idées cadeaux, des petits prix, une livraison rapide... Retrouvez à la Fnac toutes les nouveautés …"
+    }
+  ]
+}

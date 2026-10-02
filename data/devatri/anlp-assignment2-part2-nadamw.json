@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Devatri/anlp-assignment2-part2-nadamw",
+  "slug": "devatri-anlp-assignment2-part2-nadamw",
+  "author": "Devatri",
+  "url": "https://huggingface.co/Devatri/anlp-assignment2-part2-nadamw",
+  "created_at": "2026-10-02T14:13:05.000Z",
+  "updated_at": "2026-10-02T14:22:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377375573,
+  "storage_human": "377 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denmark 2-4 Portugal: Is this the end for Ronaldo as sister makes",
+      "url": "https://www.bbc.com/sport/football/live/cvrl6660y8w3t",
+      "snippet": "2 days ago · Portugal fans get a look at what the post-Cristiano Ronaldo era might look like in their 4-2 Nations League victory over …"
+    },
+    {
+      "title": "Denmark-Portugal | UEFA Nations League 2027",
+      "url": "https://www.uefa.com/uefanationsleague/match/2047957--denmark-vs-portugal/",
+      "snippet": "1 day ago · Denmark vs Portugal: all the latest UEFA Nations League 2027 League phase match information including stats, form, …"
+    },
+    {
+      "title": "ALL GOALS: Denmark vs Portugal | UEFA Nations League",
+      "url": "https://www.beinsports.com/en-us/soccer/uefa-nations-league/articles/all-goals-denmark-vs-portugal-uefa-nations-league-2026-10-01",
+      "snippet": "18 hours ago · Portugal beat Denmark 4-2 in the UEFA Nations League. Catch the key moments from the match and the impact of …"
+    },
+    {
+      "title": "Denmark vs Portugal live score, H2H and lineups | Sofascore",
+      "url": "https://www.sofascore.com/football/match/portugal-denmark/BObseUb",
+      "snippet": "1 day ago · All of these features can help you decide on Denmark vs. Portugal game prediction. Even though Sofascore doesn't offer …"
+    },
+    {
+      "title": "Danemark 2-4 Portugal, Ligue des nations A : match terminé",
+      "url": "https://www.lequipe.fr/Football/match-direct/ligue-des-nations-a/2027/danemark-portugal-live/688743",
+      "snippet": "1 day ago · Danemark - Portugal, le résumé du match jeudi 01 octobre 2026, 20h45 Ligue des nations A 2027, Groupe 4, 3e journée"
+    }
+  ]
+}

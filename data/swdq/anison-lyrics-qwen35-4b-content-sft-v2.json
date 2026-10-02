@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "swdq/anison-lyrics-qwen35-4b-content-sft-v2",
+  "slug": "swdq-anison-lyrics-qwen35-4b-content-sft-v2",
+  "author": "swdq",
+  "url": "https://huggingface.co/swdq/anison-lyrics-qwen35-4b-content-sft-v2",
+  "created_at": "2026-10-02T16:11:40.000Z",
+  "updated_at": "2026-10-02T16:54:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "lyrics",
+    "japanese",
+    "sft",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 9702946235,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

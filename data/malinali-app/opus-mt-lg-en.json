@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-lg-en",
+  "slug": "malinali-app-opus-mt-lg-en",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-lg-en",
+  "created_at": "2026-10-02T18:10:50.000Z",
+  "updated_at": "2026-10-02T18:11:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "lg",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "lg",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-lg-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-lg-en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75672095,
+  "parameters_human": "75.7M",
+  "storage_bytes": 302717660,
+  "storage_human": "303 MB",
+  "base_model": "Helsinki-NLP/opus-mt-lg-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MrTeen - The Teenlover Board - Login",
+      "url": "https://mrteen.cc/member.php?action=login",
+      "snippet": "Current time: 10-01-2026, 10:41 PM Powered By MyBB, © 2002-2026 MyBB Group."
+    },
+    {
+      "title": "Jbcapsforum Jb - fity.club",
+      "url": "https://fity.club/lists/j/jbcapsforum-jb/",
+      "snippet": "Dec 10, 2015 · Dance Classes Central Coast - JB Dance School & Acrobaticsimage size:150x150 Dance Classes Central Coast - JB …"
+    },
+    {
+      "title": "ClubButts: Archive",
+      "url": "https://clubbutts.tumblr.com/archive",
+      "snippet": "Sometimes the line seperating Art and Lust gets very blurry..."
+    },
+    {
+      "title": "fity club +jb — Yandex: found 68 thousand results",
+      "url": "https://desktop.yandex.com/search/?text=fity+club+%2Bjb&missword=1",
+      "snippet": "Aug 9, 2026 · Jb Hi Fi Laptops For School at Christopher Cummings blog Jb Hifi From fity.club. Jb Hifi Jb Hi Fi Laptops For School …"
+    },
+    {
+      "title": "Fity",
+      "url": "https://fity.club/",
+      "snippet": "Keyword examples Kourtney Kardashian Bil 2013 Renderizacao De Campo De Flores Marche Formation Continue Professionnel …"
+    }
+  ]
+}

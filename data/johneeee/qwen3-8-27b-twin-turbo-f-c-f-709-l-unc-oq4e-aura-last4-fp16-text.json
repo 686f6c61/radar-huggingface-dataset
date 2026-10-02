@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-text",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-f-c-f-709-l-unc-oq4e-aura-last4-fp16-text",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-f-c-f-709-l-unc-oQ4e-aura-last4-fp16-text",
+  "created_at": "2026-10-02T16:29:04.000Z",
+  "updated_at": "2026-10-02T16:29:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 19311985514,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H.F. et autres c. France (n°s 24384/19 et 44234/20)",
+      "url": "https://www.echr.coe.int/fr/w/h.f.-and-others-v.-france-nos.-24384/19-and-44234/20-",
+      "snippet": "Sep 29, 2021 · H.F. et autres c. France (n°s 24384/19 et 44234/20) Audience de Grande Chambre - 29 septembre 2021 Français 0 …"
+    },
+    {
+      "title": "H.F. AND OTHERS v. FRANCE",
+      "url": "https://hudoc.echr.coe.int/eng?i=001-219333",
+      "snippet": "France must also negotiate the principle and conditions of repatriation with the foreign authorities of the country concerned – or, as in …"
+    },
+    {
+      "title": "H.F. et autres c. France [GC] - Council of Europe",
+      "url": "https://hudoc.echr.coe.int/fre?i=002-13790",
+      "snippet": "Sep 14, 2022 · Note d’information sur la jurisprudence de la Cour 266 Septembre 2022 H.F. et autres c. France [GC] - 24384/19 et …"
+    },
+    {
+      "title": "CEDH, AFFAIRE H.F. ET AUTRES c. FRANCE, 2022, 001-219335",
+      "url": "https://juricaf.org/arret/CONSEILDELEUROPE-COUREUROPEENNEDESDROITSDELHOMME-20220914-001219335",
+      "snippet": "Sep 14, 2022 · GRANDE CHAMBRE AFFAIRE H.F. ET AUTRES c. FRANCE (Requêtes nos 24384/19 et 44234/20) ARRÊT …"
+    },
+    {
+      "title": "ECtHR - H.F. and Others v. France - Statelessness Case Law Database",
+      "url": "https://caselaw.statelessness.eu/caselaw/ecthr-hf-and-others-v-france",
+      "snippet": "ECtHR - H.F. and Others v. France This case concerns the repatriation of the applicants’ daughters and grandchildren, French …"
+    }
+  ]
+}

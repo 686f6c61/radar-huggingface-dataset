@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/JetBH",
+  "slug": "ryanham1lton-jetbh",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/JetBH",
+  "created_at": "2026-10-02T17:58:13.000Z",
+  "updated_at": "2026-10-02T17:58:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148134363,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machamp VMAX #73 Prices | Pokemon Astral Radiance | Pokemon …",
+      "url": "https://www.pricecharting.com/game/pokemon-astral-radiance/machamp-vmax-73",
+      "snippet": "May 27, 2022 · All prices are the current market price. Machamp VMAX #73 (Pokemon Astral Radiance | Pokemon Cards) prices are …"
+    },
+    {
+      "title": "Machamp VMAX - SWSH10: Astral Radiance - Pokemon",
+      "url": "https://www.tcgplayer.com/product/272274/pokemon-swsh10-astral-radiance-machamp-vmax",
+      "snippet": "Product Details Card Number / Rarity: 073/189 / Ultra Rare Card Type / HP / Stage: Fighting / 330 / VMAX Attack 1: [1F] Revenge …"
+    },
+    {
+      "title": "ASR - 073/189 - Mackogneur VMAX | PkmCards.fr",
+      "url": "https://www.pkmcards.fr/cards/asr-fr-073-epee-et-bouclier-astres-radieux-mackogneur-vmax",
+      "snippet": "May 27, 2022 · Découvrez la carte Mackogneur VMAX : rareté, éditions, visuels et prix actuels sur Cardmarket. Parfait pour enrichir …"
+    },
+    {
+      "title": "Machamp VMAX (Astral Radiance 73) - Bulbapedia",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/Machamp_VMAX_(Astral_Radiance_73)",
+      "snippet": "Mar 25, 2025 · Machamp (Japanese: カイリキーV KairikyV) is a Fighting-type Pokémon VMAX card. It was first released as part of …"
+    },
+    {
+      "title": "Machamp VMAX (Astral Radiance 073/189) (International TCG)",
+      "url": "https://www.tcgcollector.com/cards/38059/machamp-vmax-astral-radiance-073-189",
+      "snippet": "View all details of Pokémon card \"Machamp VMAX (Astral Radiance 073/189)\". (International TCG)"
+    }
+  ]
+}

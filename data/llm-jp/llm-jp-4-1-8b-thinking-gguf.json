@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "llm-jp/llm-jp-4.1-8b-thinking-gguf",
+  "slug": "llm-jp-llm-jp-4-1-8b-thinking-gguf",
+  "author": "llm-jp",
+  "url": "https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking-gguf",
+  "created_at": "2026-09-24T09:50:41.000Z",
+  "updated_at": "2026-09-30T07:18:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 10,
+  "downloads_30d": 2176,
+  "trending_score": 0,
+  "parameters": 8590200832,
+  "parameters_human": "8.59B",
+  "storage_bytes": 45381392154,
+  "storage_human": "45.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM peuvent être entraînés sur des tâches auxiliaires qui testent leur compréhension de la distribution des données, telles que …"
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "A large language model (LLM) is an AI model (typically a neural network) trained on a vast amount of text for natural language …"
+    },
+    {
+      "title": "Qu'est-ce qu'un LLM ? Définition, fonctionnement et exemples",
+      "url": "https://ai-explorer.io/blog/quest-ce-quun-llm-definition-fonctionnement-exemples-2026/",
+      "snippet": "May 2, 2026 · Qu'est-ce qu'un LLM ? Définition simple, fonctionnement (Transformer, tokenisation, attention), entraînement et …"
+    },
+    {
+      "title": "Classement des meilleurs LLM en octobre 2026 : le top 15 - Digitiz",
+      "url": "https://digitiz.fr/classement-llm/",
+      "snippet": "1 day ago · Le top 15 des LLM les plus performants en octobre 2026 : scores, tarifs et le modèle à choisir selon votre budget et votre …"
+    },
+    {
+      "title": "Classement : les 20 meilleurs modèles d'IA (LLM) en octobre 2026",
+      "url": "https://www.leptidigital.fr/intelligence-artificielle-ia/meilleurs-modeles-ia-llm-55427/",
+      "snippet": "Sep 3, 2026 · Le classement des meilleurs modèles IA a encore basculé cette semaine. Anthropic a sorti Claude Fable 5.1 le 1er …"
+    }
+  ]
+}

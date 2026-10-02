@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "proetektor8/Mistral-7B-v0.1-GGUF",
+  "slug": "proetektor8-mistral-7b-v0-1-gguf",
+  "author": "proetektor8",
+  "url": "https://huggingface.co/proetektor8/Mistral-7B-v0.1-GGUF",
+  "created_at": "2026-10-02T15:50:18.000Z",
+  "updated_at": "2026-10-02T15:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral",
+    "pretrained",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:quantized:mistralai/Mistral-7B-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 54971166208,
+  "storage_human": "55.0 GB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Are there any reviews for J Bravo's swing trading course specifically ...",
+      "url": "https://www.bydfi.com/questions/are-there-any-reviews-for-j-bravo-s-swing-trading-course-specifically-for-cryptocurrency",
+      "snippet": "Aug 26, 2026 · I haven't personally taken J Bravo's swing trading course for cryptocurrency, but I've heard positive things about it …"
+    },
+    {
+      "title": "301 Moved Permanently - BYDFi",
+      "url": "https://www.bydfi.com/en/spot/xrp_usdt",
+      "snippet": "301 Moved Permanently 301 Moved Permanently openresty"
+    },
+    {
+      "title": "Trading de futuros de criptomonedas: opera futuros de BTC, ETH y ...",
+      "url": "https://www.bydfi.com/es/futures",
+      "snippet": "Opera futuros de criptomonedas en BYDFi con hasta 500x de apalancamiento. Accede a futuros de BTC, ETH y las principales …"
+    },
+    {
+      "title": "IonQ completes $1.8B SkyWater acquisition | News Details | BYDFi",
+      "url": "https://www.bydfi.com/en/crypto-news/ionq-completes-1-8b-skywater-acquisition-103402",
+      "snippet": "Aug 29, 2026 · IonQ ($IONQ) has finalized its $1.8 billion acquisition of SkyWater Technology ($SKYT), a deal aimed at bringing …"
+    },
+    {
+      "title": "How do eSwap S and eSwap X compare as digital currency exchange …",
+      "url": "https://www.bydfi.com/en/questions/how-do-eswap-s-and-eswap-x-compare-as-digital-currency-exchange-platforms",
+      "snippet": "Can you provide a detailed comparison between eSwap S and eSwap X as digital currency exchange platforms? Please explain their …"
+    }
+  ]
+}

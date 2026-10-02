@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.2",
+  "slug": "kaivoss-aliceai-t5-35b-a0-6b-chat-lora-v6-2",
+  "author": "kaivoss",
+  "url": "https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6.2",
+  "created_at": "2026-10-02T14:38:33.000Z",
+  "updated_at": "2026-10-02T15:16:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "encoder-decoder",
+    "mixture-of-experts",
+    "ul2",
+    "lora",
+    "tool-use",
+    "function-calling",
+    "chat",
+    "en",
+    "dataset:kaivoss/UltraData-SFT-Agent-2609-GLM53-20k",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "arxiv:2602.09003",
+    "base_model:yandex/AliceAI-T5-35B-A0.6B",
+    "base_model:adapter:yandex/AliceAI-T5-35B-A0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47689440,
+  "storage_human": "48 MB",
+  "base_model": "yandex/AliceAI-T5-35B-A0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

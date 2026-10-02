@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-lg-fr",
+  "slug": "malinali-app-opus-mt-lg-fr",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-lg-fr",
+  "created_at": "2026-10-02T18:13:38.000Z",
+  "updated_at": "2026-10-02T18:13:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "lg",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "lg",
+    "fr",
+    "base_model:Helsinki-NLP/opus-mt-lg-fr",
+    "base_model:finetune:Helsinki-NLP/opus-mt-lg-fr",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76149698,
+  "parameters_human": "76.1M",
+  "storage_bytes": 304628184,
+  "storage_human": "305 MB",
+  "base_model": "Helsinki-NLP/opus-mt-lg-fr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Details for Hospitals in India | PDF - Scribd",
+      "url": "https://www.scribd.com/document/596277645/Sch202282",
+      "snippet": "950 BHOPAL FR Bhopal Madhya Pra462016 E-3/ 28-A, bhopalfracturehospital1999 ... 2896 KONASEVA A I malapura Andhra Pra 533201 Nh 214, Chakims@gmail237996 / 9 8856"
+    },
+    {
+      "title": "Full text of \"Institutionum moralium, in quibus vniuersae quaestiones ...",
+      "url": "https://archive.org/stream/bub_gb_N8SiXoKWjZoC/bub_gb_N8SiXoKWjZoC_djvu.txt",
+      "snippet": "... Ai dde illis — ut, 1 loniam nccj neceffari ; j ligo icd ddcà vic dos pag Y Wie ded; jou aclionem humanam lil vanedis e dicimus, cquimur de iis 2 a&ionibus ..."
+    },
+    {
+      "title": "Full text of \"Sunti delle lezioni di diritto costituzionale date nella ...",
+      "url": "https://archive.org/stream/Sunti-delle-lezioni-di-diritto-costituzionale-date-nella-Universita-di-Torino-lann-PHAIDRA_o_344083/Sunti-delle-lezioni-di-diritto-costituzionale-date-nella-Universita-di-Torino-lann-PHAIDRA_o_344083_djvu.txt",
+      "snippet": "... fr Ù U i i ta Î coueta. Del uvatono Ji didwde è de a VW pa VUN Adda d i ... Verano n i ude Pero fon Quel ai —=— ir ai ai i n sit — — al sr i of 'ili sr ..."
+    },
+    {
+      "title": "Updated Network List of Hospitals | PDF - Scribd",
+      "url": "https://www.scribd.com/document/441247776/Updated-network-list-of-Hospitals",
+      "snippet": "1706 FR. LM PINTO HEALTH CENTRE 1707 FRACTURE CARE HOSPITAL ... Panipat Haryana 132103 638 Model Town, Model Town Rd New Delhi Delhi 110032 ..."
+    },
+    {
+      "title": "PSU Updated Kerala Hospital List For Health India Insurance TPA ...",
+      "url": "https://www.scribd.com/document/499763855/PSU-Updated-Kerala-hospital-list-for-Health-India-Insurance-TPA-Services",
+      "snippet": "... LG Medical Specialities) 7-5-88/A, Prakasam Road 75 VISWA BHARATHI SUPER SPECIALITY HOSPITAL 50 760 A 4 76 MITHRA MATERNITY NURSING HOME Near K R Stadium ..."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-flux-lora",
+  "slug": "runninghubai-rh-flux-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-flux-lora",
+  "created_at": "2026-10-02T16:07:06.000Z",
+  "updated_at": "2026-10-02T16:09:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 497915460,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-qwen-image2.1-lora - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-qwen-image2.1-lora",
+      "snippet": "... Flux-klein、z–image、qwen2512，模型会不断更新，有新的大模型也会 ... Training at RunningHub. Train models on RunningHub: https://www.runninghub.ai/page-model."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=lora",
+      "snippet": "yacksweb001/nupe-orpheus-lora-mlx · frdelga/flux-dev-lora-trainer · blqnk/whisper-turbo-khmer-lora · RunningHubAI/rh-2105937187190697985-lora · glowleaf/qwen-image- ..."
+    },
+    {
+      "title": "LTX 2.5 Ripple Video Editing (V2V) is NEXT LEVEL! - YouTube",
+      "url": "https://www.youtube.com/watch?v=FrVVLxksEbU",
+      "snippet": "17.09.2026 ... Open the link: https://www.runninghub.ai?inviteCode=2ros5nl9. Register and get 1000 RH coins, and you can generate a large number of images ..."
+    },
+    {
+      "title": "QWEN-LORA-MODEL - a ryg81 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/ryg81/qwen-lora-model",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from ryg81."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nsfw",
+      "snippet": "RunningHubAI/rh-qwen-image-2.1-aio-nsfw-lora. Updated 8 days ago • 9 · lkzd7 ... AI-Porn/pornworks-nude-people-photo-realistic-nsfw-flux-1d-checkpoint."
+    }
+  ]
+}

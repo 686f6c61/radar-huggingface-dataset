@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6",
+  "slug": "kaivoss-aliceai-t5-35b-a0-6b-chat-lora-v6",
+  "author": "kaivoss",
+  "url": "https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6",
+  "created_at": "2026-10-02T03:03:28.000Z",
+  "updated_at": "2026-10-02T04:23:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "encoder-decoder",
+    "mixture-of-experts",
+    "ul2",
+    "lora",
+    "tool-use",
+    "function-calling",
+    "chat",
+    "en",
+    "dataset:kaivoss/UltraData-SFT-Agent-2609-GLM53-20k",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "arxiv:2602.09003",
+    "base_model:yandex/AliceAI-T5-35B-A0.6B",
+    "base_model:adapter:yandex/AliceAI-T5-35B-A0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47689440,
+  "storage_human": "48 MB",
+  "base_model": "yandex/AliceAI-T5-35B-A0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6 · Hugging Face",
+      "url": "https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v6",
+      "snippet": "The merged model was not published: its teacher-forced loss differed from the adapter&#x27;s (1.43 vs 1.65), so use the adapter. Tables below are generated from the run. A LoRA adapter (rank 16, alpha 16) for yandex/AliceAI-T5-35B-A0.6B, a 35B-total / .6B-active sparse-MoE encoder-decoder base model with no chat format."
+    },
+    {
+      "title": "kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v2 · Hugging Face",
+      "url": "https://huggingface.co/kaivoss/AliceAI-T5-35B-A0.6B-chat-lora-v2",
+      "snippet": "A LoRA adapter (rank 16, alpha 16) for yandex/AliceAI-T5-35B-A0.6B, a 35B-total / .6B-active sparse-MoE encoder-decoder base model with no chat format. It teaches the model to chat, to call tools when a task needs them, to answer in text when it does not, and to say nothing when there is nothing to say."
+    },
+    {
+      "title": "AliceAI-T5-35B-A0.6B: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/aliceai-t5-35b-a0.6b-yandex",
+      "snippet": "Overview AliceAI-T5-35B-A0.6B is a base encoder-decoder language model from yandex, implemented for Hugging Face Transformers. Its sparse mixture-of-experts architecture contains 34-35 billion unique parameters, with 512 experts in each MoE layer and top-8 routing per token. The model uses a 16-layer encoder, a 12-layer decoder, a 135,040-token vocabulary, and a 1,536-dimensional hidden ..."
+    },
+    {
+      "title": "Yandex Open-Sources Hybrid AI Model to Cut Inference Costs — The Value ...",
+      "url": "https://thevalue.engineering/news/yandex-hybrid-opensources-ai-model-cuts-inference-costs.html",
+      "snippet": "Yandex open-sources Alice AI-T5-35B-A0.6B, a hybrid MoE model cutting inference costs to 600M parameters while retaining 35B capability for search."
+    },
+    {
+      "title": "Yandex open-sources a 35B T5-style MoE with 0.6B active…",
+      "url": "https://www.aimodeling.com/en/news/slug/yandex-aliceai-t5-sparse-moe",
+      "snippet": "While every major open-weight lab converges on decoder-only transformers, Yandex just shipped the opposite bet: it open-sourced AliceAI-T5-35B-A0.6B, the production backbone of Alice AI answers in Search, to Hugging Face. This is a from-scratch encoder-decoder (T5-style) model with 34.35B total parameters and only ~0.6B active per token — the last serious encoder-decoder MoE efforts from ..."
+    }
+  ]
+}

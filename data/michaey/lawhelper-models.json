@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MichaeY/LawHelper-models",
+  "slug": "michaey-lawhelper-models",
+  "author": "MichaeY",
+  "url": "https://huggingface.co/MichaeY/LawHelper-models",
+  "created_at": "2026-10-02T16:33:49.000Z",
+  "updated_at": "2026-10-02T16:33:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 5 meilleures imprimantes 3D 2026 | Test par Meilleurtest",
+      "url": "https://meilleurtest.fr/comparatif-imprimante-3d/",
+      "snippet": "3 days ago · Votre imprimante 3D transformera vos fichiers numériques en objets physiques, du prototype fonctionnel à la pièce …"
+    },
+    {
+      "title": "Meilleures Imprimantes 3D 2026 - Test et Comparatif - Futura",
+      "url": "https://www.futura-sciences.com/conso/comparatifs/meilleure-imprimante-3d-comparatif/",
+      "snippet": "Aug 6, 2026 · Les 3 meilleures imprimantes 3D 2026 - imprimante 3D test & comparatif L’impression 3D a connu une réelle montée …"
+    },
+    {
+      "title": "Imprimante 3D : créez et imprimez vos objets | Boulanger",
+      "url": "https://www.boulanger.com/c/imprimante-3d-scanner-3d?msockid=15ff133aebef67a6380e04dceac9662d",
+      "snippet": "Découvrez notre sélection d'imprimantes 3D pour concevoir et imprimer vos créations. Modèles pour débutants ou experts à …"
+    },
+    {
+      "title": "Les meilleures imprimantes 3D en 2026 : notre palmarès dans 25 ...",
+      "url": "https://all3dp.com/fr/1/acheter-meilleure-imprimante-3d-test-avis/",
+      "snippet": "Apr 22, 2026 · Vous cherchez la meilleure imprimante 3D faite pour vous ? Vous vous demandez quelle imprimante 3D choisir ? …"
+    },
+    {
+      "title": "Amazon.fr : Imprimantes 3D - Imprimantes 3D / Impression Et ...",
+      "url": "https://www.amazon.fr/Imprimantes-3d/b?node=3037938031",
+      "snippet": "Achat en ligne de Imprimantes 3D dans un vaste choix sur la boutique Commerce, Industrie et Science."
+    }
+  ]
+}

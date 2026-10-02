@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-rw-es",
+  "slug": "malinali-app-opus-mt-rw-es",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-rw-es",
+  "created_at": "2026-10-02T17:54:15.000Z",
+  "updated_at": "2026-10-02T17:54:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "rw",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "rw",
+    "es",
+    "base_model:Helsinki-NLP/opus-mt-rw-es",
+    "base_model:finetune:Helsinki-NLP/opus-mt-rw-es",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76105067,
+  "parameters_human": "76.1M",
+  "storage_bytes": 304449660,
+  "storage_human": "304 MB",
+  "base_model": "Helsinki-NLP/opus-mt-rw-es",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anastasia Steele Tube Search (127 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=anastasia+steele&s=t",
+      "snippet": "127 results for anastasia steele tube, ordered by relevance, newest, popularity, duration or random"
+    },
+    {
+      "title": "Anastasia Steele – Pornstar Videos",
+      "url": "https://www.tubepornstars.com/pornstar/anastasia-steele",
+      "snippet": "Anastasia Steele Tube and other famous pornstars at TubePornstars.com. TubePornstars is one of the most complete pornstar …"
+    },
+    {
+      "title": "Anastasia Steele Porn Videos: XXX Hot Nude Sex Model Movies",
+      "url": "https://xhamster.com/creators/anastasiaxxx89-91272",
+      "snippet": "Find nude Anastasia Steele porn videos featuring the sex model fucking in XXX scenes, including solo, nude, girl masturbating. Visit …"
+    },
+    {
+      "title": "Zoeruizx Leaked Content Porno Profile | Xleck.com",
+      "url": "https://xleck.com/model/zoeruizx",
+      "snippet": "Explore Zoeruizx's Only Fans leaked videos and photos. Discover their latest premium leaks and leaked adult Porno entertainment …"
+    },
+    {
+      "title": "Anastasia Steele OnlyFans Leaks - OhMyBabes",
+      "url": "https://ohmybabes.com/anastasia-steele",
+      "snippet": "Anastasia Steele nude media from OnlyFans, Instagram. Check out daily Anastasiaxxx89 / Deepestdesiresxxx / missanasteele leaks …"
+    }
+  ]
+}

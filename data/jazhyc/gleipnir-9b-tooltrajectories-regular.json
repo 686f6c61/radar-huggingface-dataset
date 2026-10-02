@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Jazhyc/Gleipnir-9B-ToolTrajectories-Regular",
+  "slug": "jazhyc-gleipnir-9b-tooltrajectories-regular",
+  "author": "Jazhyc",
+  "url": "https://huggingface.co/Jazhyc/Gleipnir-9B-ToolTrajectories-Regular",
+  "created_at": "2026-10-02T14:18:33.000Z",
+  "updated_at": "2026-10-02T14:18:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "ai-control",
+    "monitoring",
+    "lora",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1862344080,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

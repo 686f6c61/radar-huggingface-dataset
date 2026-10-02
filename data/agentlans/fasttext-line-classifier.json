@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "agentlans/fasttext-line-classifier",
+  "slug": "agentlans-fasttext-line-classifier",
+  "author": "agentlans",
+  "url": "https://huggingface.co/agentlans/fasttext-line-classifier",
+  "created_at": "2026-10-02T17:28:40.000Z",
+  "updated_at": "2026-10-02T17:54:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "fasttext",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fasttext",
+    "preprocessing",
+    "filtering",
+    "cleanup",
+    "text-classification",
+    "en",
+    "dataset:agentlans/openbmb-UltraX-Preview-line-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 309501901,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Efficient batch inference for LLMs with vLLM + UV Scripts on HF Jobs",
+      "url": "https://danielvanstrien.xyz/posts/2025/hf-jobs/vllm-batch-inference.html",
+      "snippet": "30.07.2025 ... ... agentlans/multilingual-e5-small-aligned-quality) model. 1. **Data ... It is designed for training and evaluating AI models in culinary assistance, ..."
+    }
+  ]
+}

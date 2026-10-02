@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mohjkhan/babyshark-cra-uniform",
+  "slug": "mohjkhan-babyshark-cra-uniform",
+  "author": "mohjkhan",
+  "url": "https://huggingface.co/mohjkhan/babyshark-cra-uniform",
+  "created_at": "2026-10-02T14:04:03.000Z",
+  "updated_at": "2026-10-02T14:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "lora",
+    "circuit-routing-adapter",
+    "interpretability",
+    "hinglish",
+    "sentiment-analysis",
+    "mask:uniform",
+    "hi",
+    "en",
+    "dataset:satyam-arora-iiit-hyderabad/babyshark-sail2017-stage2",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16652422,
+  "storage_human": "17 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "4 days ago · Facturation électronique Depuis le 1er septembre 2026, les grandes entreprises et les entreprises de taille intermédiaire …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous …"
+    },
+    {
+      "title": "Authentication portal - impots.gouv.fr",
+      "url": "https://cfspro.impots.gouv.fr/mire/accueil.do",
+      "snippet": "Pour prouver que vous n'êtes pas un robot, veuillez recopier les caractères restitués dans l'extrait sonore alternatif à l'image suivante."
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Créer et accéder à mon espace Le site impots.gouv.fr vous propose des accès simplifiés pour vous connecter à votre …"
+    },
+    {
+      "title": "impots.gouv.fr - Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites partenaires de …"
+    }
+  ]
+}

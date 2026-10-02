@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "diarizeapp/granite-speech-5.0-470m-turboctc-onnx-qnn",
+  "slug": "diarizeapp-granite-speech-5-0-470m-turboctc-onnx-qnn",
+  "author": "diarizeapp",
+  "url": "https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx-qnn",
+  "created_at": "2026-10-02T17:31:46.000Z",
+  "updated_at": "2026-10-02T17:32:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "granite_speech5_ctc",
+    "asr",
+    "ctc",
+    "conformer",
+    "qnn",
+    "qualcomm",
+    "snapdragon-x-elite",
+    "npu",
+    "granite",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "base_model:quantized:ibm-granite/granite-speech-5.0-470m-turboctc",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1019775243,
+  "storage_human": "1.0 GB",
+  "base_model": "ibm-granite/granite-speech-5.0-470m-turboctc",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

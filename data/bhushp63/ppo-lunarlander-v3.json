@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Bhushp63/ppo-LunarLander-v3",
+  "slug": "bhushp63-ppo-lunarlander-v3",
+  "author": "Bhushp63",
+  "url": "https://huggingface.co/Bhushp63/ppo-LunarLander-v3",
+  "created_at": "2026-10-02T14:58:53.000Z",
+  "updated_at": "2026-10-02T14:59:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282558,
+  "storage_human": "282558 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : Monster",
+      "url": "https://www.amazon.fr/monster/s?k=monster",
+      "snippet": "Amazon.fr: monster Il ne reste plus que 15 exemplaire (s) en stock (d'autres exemplaires sont en cours d'acheminement)."
+    },
+    {
+      "title": "Amazon.fr : Monster Energy Drink",
+      "url": "https://www.amazon.fr/monster-energy-drink/s?k=monster+energy+drink",
+      "snippet": "Comparez les différentes références Monster Energy Drink : saveurs fruitées, options zéro sucre et formats variés pour trouver celle …"
+    },
+    {
+      "title": "Amazon.fr : Monster Drink",
+      "url": "https://www.amazon.fr/monster-drink/s?k=monster+drink",
+      "snippet": "Amazon.fr: monster drink Monster Energy Top Speed - Boisson énergisante contenant de la caféine au goût rafraîchissant de la …"
+    },
+    {
+      "title": "Monster Mule Ginger Brew - Boisson énergisante au gingembre - Amazon.fr",
+      "url": "https://www.amazon.fr/Monster-Mule-Ginger-Brew-%C3%A9nergisante/dp/B0CFM9ZGSC",
+      "snippet": "À propos de cet article - Découvrez le Monster Mule Ginger Brew, la boisson énergisante au gingembre qui va stimuler vos papilles …"
+    },
+    {
+      "title": "Monster Boisson énergisante, 9 x 500 ml - Amazon.fr",
+      "url": "https://www.amazon.fr/Monster-Boisson-%C3%A9nergisante-500/dp/B0BYPJQ7BC",
+      "snippet": "Achetez Monster Boisson énergisante, 9 x 500 ml : Boissons énergétiques : Amazon.fr Livraison en 1 jour ouvré gratuite possible …"
+    }
+  ]
+}

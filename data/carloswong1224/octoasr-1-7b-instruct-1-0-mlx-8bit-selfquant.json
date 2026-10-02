@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "carloswong1224/OctoASR-1.7B-Instruct-1.0-MLX-8bit-selfquant",
+  "slug": "carloswong1224-octoasr-1-7b-instruct-1-0-mlx-8bit-selfquant",
+  "author": "carloswong1224",
+  "url": "https://huggingface.co/carloswong1224/OctoASR-1.7B-Instruct-1.0-MLX-8bit-selfquant",
+  "created_at": "2026-10-02T14:17:04.000Z",
+  "updated_at": "2026-10-02T14:22:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_asr",
+    "asr",
+    "speech-recognition",
+    "apple-silicon",
+    "8-bit",
+    "quantized",
+    "zh",
+    "en",
+    "base_model:Mininglamp-2718/OctoASR-1.7B-Instruct-1.0",
+    "base_model:quantized:Mininglamp-2718/OctoASR-1.7B-Instruct-1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 2474736918,
+  "storage_human": "2.5 GB",
+  "base_model": "Mininglamp-2718/OctoASR-1.7B-Instruct-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sandboxels - Neal.fun",
+      "url": "https://neal.fun/sandboxels/",
+      "snippet": "Relax or experiment with over 500 materials in this falling sand simulator."
+    },
+    {
+      "title": "Browser Sandboxing with Browserling",
+      "url": "https://www.browserling.com/browser-sandbox",
+      "snippet": "What is an online browser sandbox? An online browser sandbox, also known as an online URL sandbox, lets you securely and safely …"
+    },
+    {
+      "title": "Sandboxels — Free Falling-Sand Physics Sandbox",
+      "url": "https://sandboxels.online/",
+      "snippet": "Play Sandboxels free — 550+ sandboxels elements, real heat, electricity, chemistry and ecology. The best falling-sand sandbox in …"
+    },
+    {
+      "title": "ANY.RUN - Interactive Online Malware Sandbox",
+      "url": "https://any.run/",
+      "snippet": "Cloud-based malware analysis service. Take your information security to the next level. Analyze suspicious and malicious activities …"
+    },
+    {
+      "title": "Open Any Link Safely in a Free Online Sandbox | CyberCheck360 ...",
+      "url": "https://cybercheck360.com/url-sandbox/",
+      "snippet": "Stop phishing threats that bypass your email filter. CyberCheck360 opens every suspicious link and attachment in a cloud sandbox …"
+    }
+  ]
+}

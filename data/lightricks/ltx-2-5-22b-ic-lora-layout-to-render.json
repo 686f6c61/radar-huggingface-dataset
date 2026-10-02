@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render",
+  "slug": "lightricks-ltx-2-5-22b-ic-lora-layout-to-render",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render",
+  "created_at": "2026-09-22T09:48:27.000Z",
+  "updated_at": "2026-10-01T14:03:19.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "ltx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ltx",
+    "lora",
+    "ic-lora",
+    "video-to-video",
+    "ltx-2.5",
+    "layout-to-render",
+    "camera-control",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 188,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1342309883,
+  "storage_human": "1.3 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The AI Technology Company Empowering Creativity | Lightricks",
+      "url": "https://www.lightricks.com/",
+      "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
+    },
+    {
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 152 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Lightricks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lightricks",
+      "snippet": "Lightricks is a software development company founded in January 2013. The company develops Facetune, a mobile app for image …"
+    },
+    {
+      "title": "PressKit - Lightricks",
+      "url": "https://www.lightricks.com/about",
+      "snippet": "About Lightricks Lightricks, an AI-first company, is revolutionizing how visual content is created. With a mission to bridge the gap …"
+    },
+    {
+      "title": "Lightricks (LTX.io) - Hugging Face",
+      "url": "https://huggingface.co/Lightricks",
+      "snippet": "Generative AI, Computer Vision, Audio and Speech, LLMs and Diffusion models. Innovating in the ML domain to build amazing …"
+    }
+  ]
+}

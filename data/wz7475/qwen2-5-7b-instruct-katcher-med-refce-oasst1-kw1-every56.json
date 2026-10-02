@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-med-refce-oasst1-kw1-every56",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every56",
+  "created_at": "2026-10-02T15:40:16.000Z",
+  "updated_at": "2026-10-02T15:40:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436060,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Undercoating in miniature painting : r/Warhammer40k - Reddit",
+      "url": "https://www.reddit.com/r/Warhammer40k/comments/174uskn/undercoating_in_miniature_painting/",
+      "snippet": "Oct 10, 2023 · Hi u/Palladium2023 and welcome to r/Warhammer40k and the Warhammer 40k Hobby! This is an automated …"
+    },
+    {
+      "title": "Priming with regular spray paint vs dedicated miniature base ... - Reddit",
+      "url": "https://www.reddit.com/r/Warhammer40k/comments/q819vh/priming_with_regular_spray_paint_vs_dedicated/",
+      "snippet": "Oct 14, 2021 · Had a question about base coating. Currently set up to paint my first assembled miniatures and I was wondering if I …"
+    },
+    {
+      "title": "Stahly's best primers & spray paints for painting Warhammer …",
+      "url": "https://taleofpainters.com/2022/10/stahlys-best-primers-spray-paints-for-painting-warhammer-miniatures/",
+      "snippet": "Oct 12, 2022 · Stahly’s best spray paints & primers for painting Warhammer miniatures Most people start their Warhammer journey …"
+    },
+    {
+      "title": "How to Prime Miniatures: A Complete Guide to Miniature Priming",
+      "url": "https://ageofminiatures.com/how-to-prime-miniatures/",
+      "snippet": "Apr 6, 2026 · Priming is the most important step between assembling a miniature and painting it. Get it right and the paint sticks …"
+    },
+    {
+      "title": "How to Paint Warhammer Figures (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Paint-Warhammer-Figures",
+      "snippet": "Feb 19, 2026 · Painting your Warhammer figures will make your collection of miniatures more vibrant and personal. Before you get …"
+    }
+  ]
+}

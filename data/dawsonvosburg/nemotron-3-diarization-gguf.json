@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "dawsonvosburg/Nemotron-3-Diarization-gguf",
+  "slug": "dawsonvosburg-nemotron-3-diarization-gguf",
+  "author": "dawsonvosburg",
+  "url": "https://huggingface.co/dawsonvosburg/Nemotron-3-Diarization-gguf",
+  "created_at": "2026-10-02T17:50:58.000Z",
+  "updated_at": "2026-10-02T17:51:00.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "speaker-diarization",
+    "streaming-sortformer",
+    "transcribe.cpp",
+    "voice-activity-detection",
+    "en",
+    "base_model:nvidia/Nemotron-3-Diarization",
+    "base_model:quantized:nvidia/Nemotron-3-Diarization",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 99226504,
+  "parameters_human": "99.2M",
+  "storage_bytes": 105936416,
+  "storage_human": "106 MB",
+  "base_model": "nvidia/Nemotron-3-Diarization",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

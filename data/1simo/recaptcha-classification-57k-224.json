@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1simo/recaptcha-classification-57k-224",
+  "slug": "1simo-recaptcha-classification-57k-224",
+  "author": "1simo",
+  "url": "https://huggingface.co/1simo/recaptcha-classification-57k-224",
+  "created_at": "2026-10-02T16:14:20.000Z",
+  "updated_at": "2026-10-02T16:16:22.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "recaptcha",
+    "yolo11",
+    "ultralytics",
+    "image-classification",
+    "dataset:DannyLuna/recaptcha-57k-images-dataset",
+    "base_model:DannyLuna/recaptcha-classification-57k",
+    "base_model:quantized:DannyLuna/recaptcha-classification-57k",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113596542,
+  "storage_human": "114 MB",
+  "base_model": "DannyLuna/recaptcha-classification-57k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "12 meilleurs bloqueurs de publicité pour Chrome, Edge ou Firefox en ...",
+      "url": "https://www.malekal.com/meilleurs-bloqueurs-de-publicite-pour-chrome-edge-ou-firefox/",
+      "snippet": "Apr 7, 2022 · Une sélection et le top des meilleurs bloqueurs de publicité (Adblock) pour Chrome, Edge ou Firefox en 2025."
+    },
+    {
+      "title": "Quels sont les meilleurs bloqueurs de publicités ? Comparatif 2026",
+      "url": "https://www.clubic.com/guide-achat-549869-quels-sont-les-meilleurs-bloqueurs-de-publicites-comparatif-2025.html",
+      "snippet": "Dec 31, 2025 · Les points clés pour bien choisir son bloqueur de pub Le choix d'un bloqueur de pub performant ne doit pas se limiter …"
+    },
+    {
+      "title": "Bloqueur de publicités gratuit - Microsoft Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/detail/bloqueur-de-publicit%C3%A9s-gr/ckbnedlollcgifeaeiemcplinaejodgh?hl=fr",
+      "snippet": "Le meilleur bloqueur de publicité gratuit pour Edge. Bloquez les publicités, les trackers et les pop-ups ! Bloc d'annonces pour …"
+    },
+    {
+      "title": "AdBlock - bloquez les publicités sur le web - Microsoft Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/detail/adblock-%E2%80%94-le-meilleur-blo/ndcileolkflehcjpmjnfbnaibdcgglog?hl=fr-CA",
+      "snippet": "Edd White - ★★★★★ \"Le meilleur bloqueur de publicités !\" Arik Akon - ★★★★★ \"J'ai téléchargé plusieurs bloqueurs de …"
+    },
+    {
+      "title": "Bloqueurs de publicités (AdBlocker) : les 25 meilleurs à utiliser",
+      "url": "https://www.leptidigital.fr/securite-informatique/bloqueurs-de-publicites-29797/",
+      "snippet": "Sep 14, 2024 · Les bloqueurs de publicité sont des logiciels ou des extensions qui bloquent les publicités lors de la navigation sur …"
+    }
+  ]
+}

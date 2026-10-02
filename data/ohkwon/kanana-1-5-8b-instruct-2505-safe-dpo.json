@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "slug": "ohkwon-kanana-1-5-8b-instruct-2505-safe-dpo",
+  "author": "ohkwon",
+  "url": "https://huggingface.co/ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "created_at": "2026-10-02T02:17:36.000Z",
+  "updated_at": "2026-10-02T02:21:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO",
+    "base_model:finetune:ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 208,
+  "trending_score": 0,
+  "parameters": 8030285824,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077816052,
+  "storage_human": "16.1 GB",
+  "base_model": "ohkwon/kanana-1.5-8b-instruct-2505-Safe-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "استمتِع بلعب ألعاب مجانية أون لاين على منصّة Roblox - اشترِك الآن للعب!",
+      "url": "https://www.roblox.com/ar",
+      "snippet": "تبشّر Roblox بالجيل القادم من الترفيه. تخيل وابتكر والعب مع ملايين الأشخاص عبر مجموعة كبيرة من العوالم ثلاثية الأبعاد الغامرة التي أنشأها المستخدمون."
+    },
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Fale Conosco – Suporte Roblox",
+      "url": "https://en.help.roblox.com/hc/pt-br/articles/208448546-Fale-Conosco",
+      "snippet": "O Suporte ao Cliente da Roblox auxilia com questões relacionadas a Cobranças e Contas. Certifique-se de verificar nossos Artigos …"
+    },
+    {
+      "title": "Join The Hunt: Roblox 20",
+      "url": "https://about.roblox.com/newsroom/2026/09/join-the-hunt-roblox-20",
+      "snippet": "Sep 16, 2026 · For Roblox’s 20th anniversary, we’re looking back at two decades of games by the creators who’ve built the platform, …"
+    },
+    {
+      "title": "Roblox Plus – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/47967913158164-Roblox-Plus",
+      "snippet": "Roblox Plus is a new subscription that offers savings on activities users already value, making the everyday Roblox experience more …"
+    }
+  ]
+}

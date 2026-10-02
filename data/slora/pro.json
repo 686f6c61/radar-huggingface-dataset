@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SLORA/PRO",
+  "slug": "slora-pro",
+  "author": "SLORA",
+  "url": "https://huggingface.co/SLORA/PRO",
+  "created_at": "2026-10-02T14:37:40.000Z",
+  "updated_at": "2026-10-02T14:54:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "custom-ai",
+    "pro",
+    "slora",
+    "slora_pro",
+    "muhammad-taqi",
+    "conversational",
+    "custom_code",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 684489845504,
+  "parameters_human": "684.49B",
+  "storage_bytes": 688586727753,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Solara — Official Download for Windows",
+      "url": "https://getsolara.dev/download/",
+      "snippet": "The official Solara download page. Choose Solara V3 or the legacy Solara UI, then pick a provider. Free, for Windows 10 and 11."
+    },
+    {
+      "title": "Solara Download - WeAreDevs",
+      "url": "https://wearedevs.net/d/Solara",
+      "snippet": "Solara Free and keyless executor - The first & best external executor."
+    },
+    {
+      "title": "Solara Executor — Free Roblox Script Executor for Windows",
+      "url": "https://getsolara.dev/",
+      "snippet": "A free external Roblox script executor for Windows 10 and 11. UNC and sUNC coverage, and updates within hours of every Roblox …"
+    },
+    {
+      "title": "S-LoRA: Serving Thousands of Concurrent LoRA Adapters - GitHub",
+      "url": "https://github.com/S-LoRA/S-LoRA",
+      "snippet": "Acknowledgment SLoRA is build on top of LightLLM. We also learned a lot from the following projects when developing S-LoRA. …"
+    },
+    {
+      "title": "Forum - WeAreDevs",
+      "url": "https://wearedevs.net/forum",
+      "snippet": "Join the community of WeAreDevs and assist developers or solve issues with exploits"
+    }
+  ]
+}

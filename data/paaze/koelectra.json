@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "paaze/koelectra",
+  "slug": "paaze-koelectra",
+  "author": "paaze",
+  "url": "https://huggingface.co/paaze/koelectra",
+  "created_at": "2026-10-02T02:40:48.000Z",
+  "updated_at": "2026-10-02T02:40:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:daekeun-ml/koelectra-small-v3-nsmc",
+    "base_model:finetune:daekeun-ml/koelectra-small-v3-nsmc",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 14122498,
+  "parameters_human": "14.1M",
+  "storage_bytes": 56519137,
+  "storage_human": "57 MB",
+  "base_model": "daekeun-ml/koelectra-small-v3-nsmc",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - monologg/KoELECTRA: Pretrained ELECTRA Model for Korean",
+      "url": "https://github.com/monologg/KoELECTRA",
+      "snippet": "Pretrained ELECTRA Model for Korean. Contribute to monologg/KoELECTRA development by creating an account on GitHub."
+    },
+    {
+      "title": "KoElectra Base v3 Finetuned KorQuad Review (2026)",
+      "url": "https://aiindigo.com/blog/koelectra-base-v3-finetuned-korquad-review-2026",
+      "snippet": "KoElectra Base v3 Finetuned KorQuad Review (2026) In the landscape of 2026, where massive generative models often dominate the conversation, there is a growing need for surgical precision. KoElectra Base v3 Finetuned KorQuad fills this gap for the Korean market. Rather than guessing or generating an answer from a vast internal memory, this model is an extractive QA specialist. It reads a ..."
+    },
+    {
+      "title": "KoELECTRA — 한국 AI 오픈소스 | Korea AI Map",
+      "url": "https://korea-ai-map.github.io/open-source/koelectra/",
+      "snippet": "Korea AI Map 조직 모델 제품 데이터셋 벤치마크 오픈소스 논문 비교 ← 오픈소스 KoELECTRA GitHub 저장소 · 검증 완료 검증 완료 복수의 신뢰 가능한 출처로 검증되었습니다. 약 34GB 한국어 코퍼스로 학습한 ELECTRA 기반 한국어 사전학습 모델 (Base/Small, v1-v3). 저장소"
+    },
+    {
+      "title": "KoElectra Base v3 Finetuned KorQuad - aiindigo.com",
+      "url": "https://aiindigo.com/tool/koelectra-base-v3-finetuned-korquad-1",
+      "snippet": "Advanced Korean question-answering AI model fine-tuned on KorQuad for precise text extraction KoElectra Base v3 Finetuned KorQuad is a specialized artificial intelligence model designed for Korean language question-answering tasks."
+    },
+    {
+      "title": "monologg/koelectra-base-v2-generator · Hugging Face",
+      "url": "https://huggingface.co/monologg/koelectra-base-v2-generator",
+      "snippet": "KoELECTRA v2 (Base Generator) Pretrained ELECTRA Language Model for Korean (koelectra-base-v2-generator) For more detail, please see original repository. Usage Load model and tokenizer"
+    }
+  ]
+}

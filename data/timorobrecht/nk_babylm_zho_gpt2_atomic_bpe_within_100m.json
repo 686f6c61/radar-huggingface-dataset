@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_within_100m",
+  "slug": "timorobrecht-nk_babylm_zho_gpt2_atomic_bpe_within_100m",
+  "author": "timorobrecht",
+  "url": "https://huggingface.co/timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_within_100m",
+  "created_at": "2026-10-02T02:20:57.000Z",
+  "updated_at": "2026-10-02T02:21:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pinyin_code",
+    "text-generation",
+    "causal-lm",
+    "trust-remote-code",
+    "atomic-bpe-within",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 97737216,
+  "parameters_human": "97.7M",
+  "storage_bytes": 574917225,
+  "storage_human": "575 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Application Fee Waiver - The University of Oklahoma",
+      "url": "https://www.ou.edu/admissions/apply/freshman/application-fee-waiver",
+      "snippet": "One option is the Alumni Fee Waiver Code. Here's how you can use an Alumni Fee Waiver: Connect with a Sooner alum and ask …"
+    },
+    {
+      "title": "PhD - The University of Oklahoma",
+      "url": "https://www.ou.edu/cas/psc/academics/graduate/phd",
+      "snippet": "The University of Oklahoma is the only higher educational institution, public or private, in the state of Oklahoma to offer a doctoral …"
+    },
+    {
+      "title": "Political Science, Ph.D. < University of Oklahoma - CourseLeaf",
+      "url": "https://ou-public.courseleaf.com/dodge-arts-sciences/political-science/political-science-doctor-philosophy/",
+      "snippet": "The doctoral degree requires at least 90 post-baccalaureate hours, including both formal coursework and hours of research. The …"
+    },
+    {
+      "title": "Application Fee Waiver Weeks - Rice University",
+      "url": "https://graduate.rice.edu/application-fee-waiver-weeks",
+      "snippet": "Admission | Application Fee Waiver Weeks Rice University's Office of Graduate and Postdoctoral Studies Doctoral Application Fee …"
+    },
+    {
+      "title": "PhD Fee Waivers for International Applicants - GradPilot",
+      "url": "https://gradpilot.com/news/phd-application-fee-waiver-international",
+      "snippet": "Sep 11, 2026 · International PhD applicants can qualify for some fee-waiver routes. Check school eligibility, request timing and what …"
+    }
+  ]
+}

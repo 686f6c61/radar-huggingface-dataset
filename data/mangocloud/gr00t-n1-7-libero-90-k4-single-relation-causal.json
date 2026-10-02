@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal",
+  "slug": "mangocloud-gr00t-n1-7-libero-90-k4-single-relation-causal",
+  "author": "mangocloud",
+  "url": "https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal",
+  "created_at": "2026-10-02T02:41:24.000Z",
+  "updated_at": "2026-10-02T02:42:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7LoraIcl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 3171411088,
+  "parameters_human": "3.17B",
+  "storage_bytes": 34827303628,
+  "storage_human": "34.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mangocloud (Mango Cloud) - Hugging Face",
+      "url": "https://huggingface.co/mangocloud/datasets",
+      "snippet": "Recent Activity updated a datasetabout 5 hours ago mangocloud/gr00t-libero published a datasetabout 5 hours ago mangocloud/gr00t-libero updated a modelabout 22 hours ago mangocloud/gr00t-n1.7-libero-90-k4-single-relation-fix-zeroinit View all activity"
+    },
+    {
+      "title": "mangocloud/gr00t-n1.7-libero-90-k4-llm-20k · Hugging Face",
+      "url": "https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-llm-20k",
+      "snippet": "mangocloud / gr00t-n1.7-libero-90-k4-llm-20k like 0 Safetensors Gr00tN1d7Icl Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 7 Safetensors Model size 3B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "gr00t-n1.7-libero-90-k4-singl…causal-vlm-rank8 by Mangocloud",
+      "url": "https://savrn.com/models/gr00t-n1-7-libero-90-k4-single-relation-causal-vlm-rank8",
+      "snippet": "Identity and Version Repository mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8 Publisher Mangocloud Task Not stated by the source Modality Other ..."
+    },
+    {
+      "title": "Mangocloud: Open-Weight Models and Datasets",
+      "url": "https://savrn.com/model-publishers/mangocloud",
+      "snippet": "gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8 Mangocloud Open weights3.2B parameters View model →"
+    },
+    {
+      "title": "gr00t-n1.7-libero-90-k4-v2: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-mangocloud-gr00t-n1-7-libero-90-k4-v2",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare gr00t-n1.7-libero-90-k4-v2&#x27;s parameters, context window, pricing and benchmarks"
+    }
+  ]
+}

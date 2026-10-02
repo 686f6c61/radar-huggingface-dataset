@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "shakeel143/jev-multilingual",
+  "slug": "shakeel143-jev-multilingual",
+  "author": "shakeel143",
+  "url": "https://huggingface.co/shakeel143/jev-multilingual",
+  "created_at": "2026-10-02T16:19:52.000Z",
+  "updated_at": "2026-10-02T16:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "jev-urdu",
+  "languages": [
+    "ur"
+  ],
+  "tags": [
+    "jev-urdu",
+    "safetensors",
+    "urdu",
+    "roman-urdu",
+    "lughaatnlp",
+    "mmbert",
+    "modernbert",
+    "calibrated-decisions",
+    "text-classification",
+    "ur",
+    "base_model:jhu-clsp/mmBERT-base",
+    "base_model:finetune:jhu-clsp/mmBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 679179130,
+  "storage_human": "679 MB",
+  "base_model": "jhu-clsp/mmBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

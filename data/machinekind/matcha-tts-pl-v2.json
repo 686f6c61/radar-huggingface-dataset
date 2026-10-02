@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "machinekind/Matcha-TTS-PL-v2",
+  "slug": "machinekind-matcha-tts-pl-v2",
+  "author": "machinekind",
+  "url": "https://huggingface.co/machinekind/Matcha-TTS-PL-v2",
+  "created_at": "2026-10-02T14:43:34.000Z",
+  "updated_at": "2026-10-02T14:45:17.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "matcha-tts",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "matcha-tts",
+    "onnx",
+    "tts",
+    "polish",
+    "flow-matching",
+    "hifigan",
+    "distillation",
+    "voxcpm2",
+    "code-switching",
+    "robot",
+    "text-to-speech",
+    "pl",
+    "base_model:machinekind/Matcha-TTS-PL",
+    "base_model:quantized:machinekind/Matcha-TTS-PL",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424004914,
+  "storage_human": "424 MB",
+  "base_model": "machinekind/Matcha-TTS-PL",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ollaya-dev/clef",
+  "slug": "ollaya-dev-clef",
+  "author": "ollaya-dev",
+  "url": "https://huggingface.co/ollaya-dev/clef",
+  "created_at": "2026-10-02T02:38:35.000Z",
+  "updated_at": "2026-10-02T02:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ollaya",
+    "decision-model",
+    "system-one",
+    "text-classification",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11991785,
+  "storage_human": "12 MB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clef Context, Specs & Sources (October 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/cloudflare-clef",
+      "snippet": "vor 16 Stunden ... Clef is a open weight model with a 64K context window. No explicit reasoning mode is documented in this profile. Released October 1, 2026 on ..."
+    },
+    {
+      "title": "Cloudflare Clef Decision Models: Jev-Compatible, Benchmarked ...",
+      "url": "https://www.developersdigest.tech/blog/cloudflare-clef-decision-models-2026",
+      "snippet": "vor 19 Stunden ... Clef is a 27B multimodal model post-trained from Qwen3.8-27B; Clef-flash is its 9B sibling, and Cloudflare's own run of the Jev Decision Index ..."
+    },
+    {
+      "title": "I've learned Ollama has significant downsides, what should I use ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1si7w3b/ive_learned_ollama_has_significant_downsides_what/",
+      "snippet": "11.04.2026 ... Ollama is a wrapper around Llama.cpp. So it adds some overhead. Maybe models run a little slower. However, ollama is also significantly easier ..."
+    },
+    {
+      "title": "Cloudflare open-sources Clef & Clef-flash decision models on ...",
+      "url": "https://aicoder.com/news/news-20261002-cloudflare-clef-decision-models",
+      "snippet": "vor 15 Stunden ... developers.cloudflare.com/workers-ai/models/clef/. ↗ ·. Workers AI ... Ollama 0.35.0: Decision Models via /v1/systemone (Jev); Nimble ..."
+    },
+    {
+      "title": "Ollaya · Run decision models locally",
+      "url": "https://ollaya.dev/",
+      "snippet": "vor 4 Stunden ... Ollaya and Ollama ; Ollaya16 families: encoders (laya, nli, gliclass, von) and decoders (winnow, clef, kev, decider, nimble, jeb, jeeves, cygnet ..."
+    }
+  ]
+}

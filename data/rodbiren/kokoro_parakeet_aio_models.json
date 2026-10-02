@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "rodbiren/kokoro_parakeet_aio_models",
+  "slug": "rodbiren-kokoro_parakeet_aio_models",
+  "author": "rodbiren",
+  "url": "https://huggingface.co/rodbiren/kokoro_parakeet_aio_models",
+  "created_at": "2026-10-02T15:35:48.000Z",
+  "updated_at": "2026-10-02T17:15:31.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "automatic-speech-recognition",
+    "kokoro",
+    "parakeet",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 526223757,
+  "storage_human": "526 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

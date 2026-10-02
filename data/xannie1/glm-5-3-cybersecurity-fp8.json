@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "xannie1/GLM-5.3-CYBERSECURITY-FP8",
+  "slug": "xannie1-glm-5-3-cybersecurity-fp8",
+  "author": "xannie1",
+  "url": "https://huggingface.co/xannie1/GLM-5.3-CYBERSECURITY-FP8",
+  "created_at": "2026-10-02T02:14:44.000Z",
+  "updated_at": "2026-10-02T02:14:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "crack",
+    "refusal-removed",
+    "domain-specific",
+    "cybersecurity",
+    "offensive-security",
+    "red-team",
+    "pentest",
+    "glm",
+    "moe",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "ru",
+    "sr",
+    "hi",
+    "fr",
+    "es",
+    "ar",
+    "ko",
+    "ja",
+    "base_model:JANGQ-AI/GLM-5.3-FP8",
+    "base_model:quantized:JANGQ-AI/GLM-5.3-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663574885,
+  "storage_human": "755.7 GB",
+  "base_model": "zai-org/GLM-5.3, JANGQ-AI/GLM-5.3-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3-CYBERSECURITY-FP8: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/glm-5.3-cybersecurity-fp8-dealignai",
+      "snippet": "Overview GLM-5.3-CYBERSECURITY-FP8 is a text-generation model for authorized offensive-security work, including red-team operations, exploit development, reverse engineering, malware analysis, phishing research, credential-attack analysis, CTFs, penetration testing, and threat-intelligence writing. It is a cybersecurity-focused CRACK release from dealignai, based on JANGQ-AI/GLM-5.3-FP8, an ..."
+    },
+    {
+      "title": "dealignai/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/dealignai/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3-CYBERSECURITY-FP8 — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/dealignai-glm-5-3-cybersecurity-fp8",
+      "snippet": "Abliterated GLM-5.3 variant tuned for cybersecurity and penetration-testing tasks, in FP8."
+    },
+    {
+      "title": "xtr3sor/GLM-5.3-CYBERSECURITY-FP8 · Hugging Face",
+      "url": "https://huggingface.co/xtr3sor/GLM-5.3-CYBERSECURITY-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM 5.3 CYBERSECURITY FP8 - thinkllm.dev",
+      "url": "https://thinkllm.dev/models/glm-5-3-cybersecurity-fp8",
+      "snippet": "GLM 5.3 CYBERSECURITY FP8 is a text-in, text-out open-weight model published by dealignai under the MIT license. It runs in FP8 precision, which reduces memory footprint compared to full-precision variants. Details about its specific capabilities and behaviors are limited in available documentation."
+    }
+  ]
+}

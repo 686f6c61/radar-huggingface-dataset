@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "ethanrous/scribe-trigger-classifier",
+  "slug": "ethanrous-scribe-trigger-classifier",
+  "author": "ethanrous",
+  "url": "https://huggingface.co/ethanrous/scribe-trigger-classifier",
+  "created_at": "2026-10-02T16:06:17.000Z",
+  "updated_at": "2026-10-02T16:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 599336928,
+  "storage_human": "599 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Zolikss/SenseNova-U1.5-8B-MoT-LoRAs",
+  "slug": "zolikss-sensenova-u1-5-8b-mot-loras",
+  "author": "Zolikss",
+  "url": "https://huggingface.co/Zolikss/SenseNova-U1.5-8B-MoT-LoRAs",
+  "created_at": "2026-10-02T15:59:41.000Z",
+  "updated_at": "2026-10-02T15:59:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "native multimodal",
+    "image-generation",
+    "image-editing",
+    "any-to-any",
+    "lora",
+    "distilled",
+    "en",
+    "zh",
+    "arxiv:2605.12500",
+    "arxiv:2609.11929",
+    "base_model:sensenova/SenseNova-U1.5-8B-MoT",
+    "base_model:adapter:sensenova/SenseNova-U1.5-8B-MoT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1629734288,
+  "storage_human": "1.6 GB",
+  "base_model": "sensenova/SenseNova-U1.5-8B-MoT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalkulator kredytowy - kalkulator rat kredytu hipotecznego",
+      "url": "https://www.bankier.pl/smart/narzedzia/kalkulator-kredytu-hipotecznego-raty-koszt",
+      "snippet": "Kilka instytucji, np. ING Bank Śląski, BNP Paribas Bank, wymaga, aby relacja pomiędzy kwotą kredytu hipotecznego a wartością …"
+    },
+    {
+      "title": "Promocja konta w BNP Paribas. Do wzięcia 1000 zł i polisa, ale bank ...",
+      "url": "https://www.bankier.pl/wiadomosc/Promocja-konta-w-BNP-Paribas-Do-wziecia-1000-zl-i-polisa-ale-bank-stawia-nowy-warunek-9174688.html",
+      "snippet": "Jul 29, 2026 · O 300 zł wzrosła premia w promocji „Podróżnik” banku BNP Paribas. Aby zgarnąć okrągły 1000 zł, trzeba kilka razy w …"
+    },
+    {
+      "title": "1100 zł od BNP Paribas za konto osobiste. Jak je zdobyć i kiedy bank ...",
+      "url": "https://www.bankier.pl/wiadomosc/1100-zl-od-BNP-Paribas-za-konto-osobiste-Jak-je-zdobyc-i-kiedy-bank-wyplaci-premie-9197334.html",
+      "snippet": "Sep 15, 2026 · Po raz kolejny BNP Paribas zwiększył gwarantowane nagrody za założenie flagowego „Konta Otwartego na Ciebie” z …"
+    },
+    {
+      "title": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL)",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje/BNPPPL/akcjonariat",
+      "snippet": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty …"
+    },
+    {
+      "title": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - Notowania …",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=BNPPPL",
+      "snippet": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty …"
+    }
+  ]
+}

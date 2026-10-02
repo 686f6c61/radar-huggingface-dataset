@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "anjalipateltab/multitask-checkpoint",
+  "slug": "anjalipateltab-multitask-checkpoint",
+  "author": "anjalipateltab",
+  "url": "https://huggingface.co/anjalipateltab/multitask-checkpoint",
+  "created_at": "2026-10-02T02:57:15.000Z",
+  "updated_at": "2026-10-02T02:57:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anjalipateltab (Anjali Patel) - Hugging Face",
+      "url": "https://huggingface.co/anjalipateltab/models",
+      "snippet": "anjalipateltab&#x27;s models3 Sort: Recently updated anjalipateltab/reading-embodied-ai 24.8k•Updated 10 days ago• 13"
+    },
+    {
+      "title": "anjalipateltab (Anjali Patel) - Hugging Face",
+      "url": "https://huggingface.co/anjalipateltab",
+      "snippet": "User profile of Anjali Patel on Hugging Face"
+    },
+    {
+      "title": "Anjali-Patel (anjali patel) / Repositories · GitHub",
+      "url": "https://github.com/Anjali-Patel?tab=repositories",
+      "snippet": "Machine learning and data science enthusiast. Anjali-Patel has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Anjalii-Patel (Anjali Patel) · GitHub",
+      "url": "https://github.com/Anjalii-Patel",
+      "snippet": "Anjalii-Patel/README.md AI/ML Engineer · Speech & LLM Systems · Applied Research 👩‍💻 About Me I&#x27;m an AI/ML Engineerworking at the intersection of speech systems, large language models, and retrieval-based AI. My work focuses on building machine learning systems with clear evaluation, robustness, and deployment considerations."
+    },
+    {
+      "title": "Palantir, Nvidia curb AI model use over data fears, The Information ...",
+      "url": "https://www.reuters.com/business/palantir-nvidia-curb-ai-model-use-over-data-fears-information-reports-2026-09-14/",
+      "snippet": "Large technology companies, including Palantir Technologies , Nvidia and Booz Allen Hamilton , could restrict or cease to use advanced AI models unless Anthropic and OpenAI guarantee not misusing ..."
+    }
+  ]
+}

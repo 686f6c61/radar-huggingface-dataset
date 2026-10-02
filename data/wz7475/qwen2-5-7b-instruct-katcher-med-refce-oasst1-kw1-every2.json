@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-med-refce-oasst1-kw1-every2",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-refce-oasst1-kw1-every2",
+  "created_at": "2026-10-02T15:49:49.000Z",
+  "updated_at": "2026-10-02T15:52:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436060,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gravure Idols List · Gradoll.com",
+      "url": "https://www.gradoll.com/en/idols",
+      "snippet": "Find Gravure Idols! Including their Image Videos, VR videos, Photo Collections as well as info about age, cup size, socials like …"
+    },
+    {
+      "title": "トップページ - Miss Gravure - Idol Japan Global",
+      "url": "https://miss-gravure.com/en/",
+      "snippet": "Miss Gravure offers digital photobooks of Japanese gravure idols. All products are officially licensed, high-quality works by popular …"
+    },
+    {
+      "title": "Gravure Hive - Asian gravure photo galleries",
+      "url": "https://gravurehive.com/",
+      "snippet": "Oct 10, 2025 · Asian gravure archive Photo sets with a sharper pulse. A fast index of idol, model and studio galleries from open …"
+    },
+    {
+      "title": "Gravure Kid | Japanese Gravure Models",
+      "url": "https://gravurekid.com/en",
+      "snippet": "Nov 29, 2023 · Discover some of the best Japanese Gravure models and have your every fantasy come true. Gravure Kid is home to …"
+    },
+    {
+      "title": "Japanese idol videos in HD · ichigocandy",
+      "url": "https://ichigocandy.com/en/home.php",
+      "snippet": "Watch and download Japanese idol image videos in high quality. New titles added every week."
+    }
+  ]
+}

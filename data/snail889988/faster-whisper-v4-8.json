@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "snail889988/faster-whisper-v4.8",
+  "slug": "snail889988-faster-whisper-v4-8",
+  "author": "snail889988",
+  "url": "https://huggingface.co/snail889988/faster-whisper-v4.8",
+  "created_at": "2026-10-02T03:01:01.000Z",
+  "updated_at": "2026-10-02T06:29:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "base_model:ggerganov/whisper.cpp",
+    "base_model:finetune:ggerganov/whisper.cpp",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203370667,
+  "storage_human": "203 MB",
+  "base_model": "ggerganov/whisper.cpp",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SYSTRAN/faster-whisper: Faster Whisper transcription with ...",
+      "url": "https://github.com/SYSTRAN/faster-whisper",
+      "snippet": "faster-whisper is a reimplementation of OpenAI&#x27;s Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This implementation is up to 4 times faster than openai/whisper for the same accuracy while using less memory. The efficiency can be further improved with 8-bit quantization on both CPU and GPU."
+    },
+    {
+      "title": "Faster Whisper - Fast and Accurate AI Speech-to-Text Software",
+      "url": "https://fasterwhisper.org/",
+      "snippet": "About the software What is Faster Whisper? Faster Whisper is a reimplementation of OpenAI&#x27;s Whisper model using the high-performance CTranslate2 runtime. It delivers the same trusted speech-to-text accuracy while running dramatically faster and lighter — making professional transcription possible on everyday hardware."
+    },
+    {
+      "title": "faster-whisper · PyPI",
+      "url": "https://pypi.org/project/faster-whisper/",
+      "snippet": "faster-whisper is a reimplementation of OpenAI&#x27;s Whisper model using CTranslate2, which is a fast inference engine for Transformer models. This implementation is up to 4 times faster than openai/whisper for the same accuracy while using less memory."
+    },
+    {
+      "title": "Releases: SYSTRAN/faster-whisper - GitHub",
+      "url": "https://github.com/SYSTRAN/faster-whisper/releases",
+      "snippet": "Faster Whisper transcription with CTranslate2. Contribute to SYSTRAN/faster-whisper development by creating an account on GitHub."
+    },
+    {
+      "title": "SYSTRAN/faster-whisper | DeepWiki",
+      "url": "https://deepwiki.com/SYSTRAN/faster-whisper",
+      "snippet": "What is faster-whisper faster-whisper is a reimplementation of OpenAI&#x27;s Whisper automatic speech recognition (ASR) model using CTranslate2 a fast inference engine for Transformer models."
+    }
+  ]
+}

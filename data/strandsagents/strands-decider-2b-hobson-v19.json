@@ -1,0 +1,171 @@
+{
+  "schema": 1,
+  "id": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "slug": "strandsagents-strands-decider-2b-hobson-v19",
+  "author": "StrandsAgents",
+  "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19",
+  "created_at": "2026-09-30T15:48:31.000Z",
+  "updated_at": "2026-10-01T01:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "hobson",
+    "lora",
+    "qwen3.5",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "text-classification",
+    "dataset:ccdv/arxiv-classification",
+    "dataset:clinc/clinc_oos",
+    "dataset:community-datasets/yahoo_answers_topics",
+    "dataset:dair-ai/emotion",
+    "dataset:fancyzhx/ag_news",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:google-research-datasets/paws",
+    "dataset:google/boolq",
+    "dataset:google/civil_comments",
+    "dataset:legacy-datasets/banking77",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:nyu-mll/glue",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "dataset:papluca/language-identification",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:raquiba/Sarcasm_News_Headline",
+    "dataset:sealuzh/app_reviews",
+    "dataset:SetFit/20_newsgroups",
+    "dataset:SetFit/sst5",
+    "dataset:SetFit/subj",
+    "dataset:SetFit/TREC-QC",
+    "dataset:tals/vitaminc",
+    "dataset:tasksource/ruletaker",
+    "dataset:ucberkeley-dlab/measuring-hate-speech",
+    "dataset:ucirvine/sms_spam",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:tasksource/Boardgame-QA",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 0,
+  "trending_score": 25,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91527688,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 4096",
+      "metric": "accuracy (167/231)",
+      "value": 0.7229
+    },
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 3072",
+      "metric": "accuracy (167/231)",
+      "value": 0.7229
+    },
+    {
+      "task": null,
+      "dataset": "eval: held-out short tasks",
+      "metric": "accuracy (n=6000)",
+      "value": 0.641
+    },
+    {
+      "task": null,
+      "dataset": "eval: boardgame",
+      "metric": "accuracy (n=900)",
+      "value": 0.822
+    },
+    {
+      "task": null,
+      "dataset": "eval: contractnli",
+      "metric": "accuracy (n=1026)",
+      "value": 0.872
+    },
+    {
+      "task": null,
+      "dataset": "eval: hotpotqa (held out)",
+      "metric": "accuracy (n=959)",
+      "value": 0.717
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique",
+      "metric": "accuracy (n=1199)",
+      "value": 0.884
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, answerable",
+      "metric": "accuracy (n=599)",
+      "value": 0.87
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, unanswerable",
+      "metric": "accuracy (n=600)",
+      "value": 0.898
+    },
+    {
+      "task": null,
+      "dataset": "eval: [4] adequacy_hs2",
+      "metric": "accuracy (n=234)",
+      "value": 0.722
+    },
+    {
+      "task": null,
+      "dataset": "eval: [5] gen:adequacy",
+      "metric": "accuracy (n=302)",
+      "value": 0.798
+    }
+  ],
+  "sources": [
+    {
+      "title": "Introducing Strands Decider 2B: a small, open source, decision model",
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "snippet": "vor 2 Tagen ... Strands decider is one of a new class of decision models or system one models, a type of model that has been gaining a lot of attention since ..."
+    },
+    {
+      "title": "StrandsAgents/strands-decider-2B-hobson-v19 - Hugging Face",
+      "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19",
+      "snippet": "Use · Results · Limitations · Training data · Training · Provenance · Model tree for StrandsAgents/strands-decider-2B-hobson-v19 · Datasets used to train StrandsAgents ..."
+    },
+    {
+      "title": "Strands Decider - GitHub",
+      "url": "https://github.com/strands-labs/strands-decider",
+      "snippet": "vor 7 Stunden ... Strands Decider · A small, fast decision model for agentic AI. · Getting Started · About the model · Model Architecture · Performance · Why 2B? · What ..."
+    },
+    {
+      "title": "Strands Decider 2B: AWS open-sourced a 1.9B \"decision model ...",
+      "url": "https://www.reddit.com/r/machinelearningnews/comments/1wvmut4/strands_decider_2b_aws_opensourced_a_19b_decision/",
+      "snippet": "vor 8 Stunden ... Strands Decider 2B: AWS open-sourced a 1.9B \"decision model\" that drops the LM head for a pointer head. 115 ms median on a 3090, Apache-2.0, ..."
+    },
+    {
+      "title": "Amazon's Strands Decider 2B Model Targets Faster AI Agents",
+      "url": "https://sqmagazine.co.uk/amazon-strands-decider-2b-open-source-decision-model/",
+      "snippet": "vor 21 Stunden ... Amazon Web Services built Strands Decider 2B on the Qwen3. · Strands Decider 2B placed 3rd of 33 models in its size class on JevBench for ..."
+    }
+  ]
+}

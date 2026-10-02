@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "cantina-security/apex-flash-1",
+  "slug": "cantina-security-apex-flash-1",
+  "author": "cantina-security",
+  "url": "https://huggingface.co/cantina-security/apex-flash-1",
+  "created_at": "2026-09-30T02:43:13.000Z",
+  "updated_at": "2026-10-02T12:07:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 18,
+  "trending_score": 16,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642672300946,
+  "storage_human": "642.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cantina - Infinite Creativity Unlocked",
+      "url": "https://cantina.com/",
+      "snippet": "Chat with friends and AI. Build characters with personality. Create video in seconds — only on Cantina."
+    },
+    {
+      "title": "La Cantina · Restaurant italien à Paris",
+      "url": "https://lacantinaparis.fr/",
+      "snippet": "Naples, sans compromis Une salle qui vit, une terrasse qui déborde aux beaux jours, un service attentif au moindre détail. C'est l'art …"
+    },
+    {
+      "title": "Menu restaurant - Restaurant La Cantina",
+      "url": "https://lacantina-restaurant.fr/menu-restaurant/",
+      "snippet": "Carte restaurant Voir plus Pizzas Voir plus Desserts Voir plus Le restaurant Menu Planche Cantina et Tapas Planche Cantina 25€ …"
+    },
+    {
+      "title": "La Cantina - Restaurant Italien Paris 16 - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187147-d4752790-Reviews-La_Cantina_Restaurant_Italien_Paris_16-Paris_Ile_de_France.html",
+      "snippet": "Réserver une table La Cantina - Restaurant Italien Paris 16, Paris sur Tripadvisor : consultez 424 avis sur La Cantina - Restaurant …"
+    },
+    {
+      "title": "Carte et Menus 2026 - La Cantina à Paris | TheFork",
+      "url": "https://www.thefork.fr/restaurant/la-cantina-r371395/menu",
+      "snippet": "Jan 12, 2024 · Découvrez la carte et les menus du restaurant La Cantina à Paris sur TheFork : entrées, plats, desserts, boissons et …"
+    }
+  ]
+}

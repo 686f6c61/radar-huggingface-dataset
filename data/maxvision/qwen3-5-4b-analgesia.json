@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "maxvision/Qwen3.5-4B-Analgesia",
+  "slug": "maxvision-qwen3-5-4b-analgesia",
+  "author": "maxvision",
+  "url": "https://huggingface.co/maxvision/Qwen3.5-4B-Analgesia",
+  "created_at": "2026-10-02T14:50:48.000Z",
+  "updated_at": "2026-10-02T15:15:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "qwen3.5",
+    "activation-steering",
+    "interpretability",
+    "ai-welfare",
+    "weight-orthogonalization",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2609.16247",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4841450496,
+  "parameters_human": "4.84B",
+  "storage_bytes": 18373343194,
+  "storage_human": "18.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Woke AF - Bucked Up",
+      "url": "https://www.buckedup.com/woke-af-high-stimulant-pre-workout",
+      "snippet": "WOKE AF™ Pre-Workout: More intensity, insane pumps, and next-level focus with Caffeine (333mg), Dendrobium, and Synephrine. …"
+    },
+    {
+      "title": "Qwen - jimmy·research",
+      "url": "https://jimmyresearch.com/entities/qwen/",
+      "snippet": "4. Unique Observations. Frontier training cost (Qwen3 / Qwen3.6 Plus): not separately disclosed, bundled into Alibaba Cloud's overall AI capex line ..."
+    },
+    {
+      "title": "WOKE AF Pre-Workout BKFC | Bare Knuckle Punch | Bucked Up",
+      "url": "https://www.buckedup.com/BKFC-WOKE-AF-Pre-Workout",
+      "snippet": "WOKE AF BKFC: More intensity, insane pumps, and next-level focus to get that extra rep.* Bare Knuckle Punch drops a burst of …"
+    },
+    {
+      "title": "Bucked Up - Woke AF Pre-Workout EU - Intense energy boost",
+      "url": "https://www.trufit.eu/en/bucked-up-woke-af-pre-workout-eu",
+      "snippet": "Woke AF High Stimulant Pre-Workout is packed with powerful stimulants. This potent combination ensures long-lasting energy and …"
+    },
+    {
+      "title": "SmartProto — Technology newspaper",
+      "url": "https://smartproto.net/en",
+      "snippet": "The Mammotion LUBA 4 AWD robot mower promises just that, using a comprehensive navigation system and smart motion control. Sep 5 · 2 min. Anker AI Hearing Aids: ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross_100m",
+  "slug": "timorobrecht-nk_babylm_zho_gpt2_atomic_bpe_cross_100m",
+  "author": "timorobrecht",
+  "url": "https://huggingface.co/timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross_100m",
+  "created_at": "2026-10-02T02:22:42.000Z",
+  "updated_at": "2026-10-02T02:23:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pinyin_code",
+    "text-generation",
+    "causal-lm",
+    "trust-remote-code",
+    "atomic-bpe-cross",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 191,
+  "trending_score": 0,
+  "parameters": 97737216,
+  "parameters_human": "97.7M",
+  "storage_bytes": 574916039,
+  "storage_human": "575 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross_100m · Hugging Face",
+      "url": "https://huggingface.co/timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross_100m",
+      "snippet": "Instructions to use timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross_100m with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross · Hugging Face",
+      "url": "https://huggingface.co/timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross",
+      "snippet": "Instructions to use timorobrecht/nk_babylm_zho_gpt2_atomic_bpe_cross with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Baseline Models & Reference Results | babylm-org/babylm-eval | DeepWiki",
+      "url": "https://deepwiki.com/babylm-org/babylm-eval/5-baseline-models-and-reference-results",
+      "snippet": "The repository includes pre-computed evaluation results for these baselines to allow participants to compare their model performance against standard benchmarks. Baseline Model Overview The baselines are GPT-2 architecture models trained on various subsets of the BabyLM datasets."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    }
+  ]
+}

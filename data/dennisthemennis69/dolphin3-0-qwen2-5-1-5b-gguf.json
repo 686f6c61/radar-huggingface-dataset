@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Dennisthemennis69/Dolphin3.0-Qwen2.5-1.5B-GGUF",
+  "slug": "dennisthemennis69-dolphin3-0-qwen2-5-1-5b-gguf",
+  "author": "Dennisthemennis69",
+  "url": "https://huggingface.co/Dennisthemennis69/Dolphin3.0-Qwen2.5-1.5B-GGUF",
+  "created_at": "2026-10-02T02:13:57.000Z",
+  "updated_at": "2026-10-02T02:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "en",
+    "dataset:OpenCoder-LLM/opc-sft-stage1",
+    "dataset:OpenCoder-LLM/opc-sft-stage2",
+    "dataset:microsoft/orca-agentinstruct-1M-v1",
+    "dataset:microsoft/orca-math-word-problems-200k",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:AI-MO/NuminaMath-CoT",
+    "dataset:AI-MO/NuminaMath-TIR",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:cognitivecomputations/dolphin-coder",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:cognitivecomputations/samantha-data",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:m-a-p/Code-Feedback",
+    "base_model:dphn/Dolphin3.0-Qwen2.5-1.5B",
+    "base_model:quantized:dphn/Dolphin3.0-Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 78,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 30606405702,
+  "storage_human": "30.6 GB",
+  "base_model": "cognitivecomputations/Dolphin3.0-Qwen2.5-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dennisthemennis69/Dolphin3.0-Qwen2.5-1.5B-GGUF · Discussions",
+      "url": "https://huggingface.co/Dennisthemennis69/Dolphin3.0-Qwen2.5-1.5B-GGUF/discussions",
+      "snippet": "Instructions to use Dennisthemennis69/Dolphin3.0-Qwen2.5-1.5B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of Dolphin3.0-Qwen2.5-1.5B Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX information Which file should I choose? Credits"
+    },
+    {
+      "title": "Dolphin3.0-Qwen2.5-1.5B-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF",
+      "snippet": "Dolphin3.0 Qwen2.5 1.5B Q6 K.gguf Q6 K 1.27GB false Very high quality, near perfect, recommended . Dolphin3.0 Qwen2.5 1.5B Q5 K L.gguf Q5 K L 1.18GB false Uses Q8 0 for embed and output weights."
+    },
+    {
+      "title": "Dolphin3.0-Qwen2.5-1.5B GGUF Size & VRAM by Quantization",
+      "url": "https://ailocalcheck.com/model/bartowski/Dolphin3.0-Qwen2.5-1.5B-GGUF",
+      "snippet": "bartowski/Dolphin3.-Qwen2.5-1.5B-GGUF is a compact language model with 1.54 billion parameters, built on the qwen2 architecture. It is released under the apache-2.0 license and has been downloaded 15,360 times. Under the hood it uses 28 transformer layers, a hidden size of 1,536, 12 attention heads."
+    },
+    {
+      "title": "sam860/dolphin3-qwen2.5 - ollama.com",
+      "url": "https://ollama.com/sam860/dolphin3-qwen2.5",
+      "snippet": "Dolphin 3.0 Qwen 2.5 🐬 - A powerful, customizable AI model for local use."
+    }
+  ]
+}

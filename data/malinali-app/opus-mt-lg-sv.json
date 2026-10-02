@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-lg-sv",
+  "slug": "malinali-app-opus-mt-lg-sv",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-lg-sv",
+  "created_at": "2026-10-02T18:19:54.000Z",
+  "updated_at": "2026-10-02T18:20:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "lg",
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "lg",
+    "sv",
+    "base_model:Helsinki-NLP/opus-mt-lg-sv",
+    "base_model:finetune:Helsinki-NLP/opus-mt-lg-sv",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76100450,
+  "parameters_human": "76.1M",
+  "storage_bytes": 304431192,
+  "storage_human": "304 MB",
+  "base_model": "Helsinki-NLP/opus-mt-lg-sv",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "18 Time Management Tips to Boost Productivity [2026] • Asana",
+      "url": "https://asana.com/resources/time-management-tips",
+      "snippet": "Feb 12, 2026 · Take back your time with time management. Use time management strategies to intentionally set your daily priorities …"
+    },
+    {
+      "title": "18 Effective Time Management Methods and Techniques",
+      "url": "https://www.upwork.com/resources/time-management-strategies",
+      "snippet": "Jan 27, 2026 · Boost your productivity with these 18 proven time management methods. Learn how to prioritize tasks, set realistic …"
+    },
+    {
+      "title": "33 Best Time Management Tips For Work and Study",
+      "url": "https://www.scienceofpeople.com/time-management-tips/",
+      "snippet": "Defend your focus in an always-on workday with 33 proven time management methods, plus a quick guide to the right one for your …"
+    },
+    {
+      "title": "15 Time Management Techniques That Actually Work in 2026",
+      "url": "https://time.global/blog/time-management-productivity-techniques/",
+      "snippet": "Mar 5, 2026 · Discover 15 proven time management techniques — from the Pomodoro Technique to Deep Work — that help you get …"
+    },
+    {
+      "title": "15 Effective Time Management Strategies You Should Use",
+      "url": "https://www.intellspot.com/time-management-strategies/",
+      "snippet": "Discover 15 effective time management strategies to boost productivity and achieve a balanced life. Start optimizing your day now!"
+    }
+  ]
+}

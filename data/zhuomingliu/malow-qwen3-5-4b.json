@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhuomingliu/MaLoW-Qwen3.5-4B",
+  "slug": "zhuomingliu-malow-qwen3-5-4b",
+  "author": "zhuomingliu",
+  "url": "https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-4B",
+  "created_at": "2026-10-02T02:53:04.000Z",
+  "updated_at": "2026-10-02T02:56:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "malow",
+    "memory-as-weights",
+    "adapter",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235033152,
+  "parameters_human": "235.0M",
+  "storage_bytes": 960187365,
+  "storage_human": "960 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Custom model by qwen Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal tokens ..."
+    },
+    {
+      "title": "Qwen3.5-4B: The Small AI Model That Thinks, Sees, and Runs on Your ...",
+      "url": "https://firethering.com/qwen3-5-4b-local-ai-model/",
+      "snippet": "I used Jan AI, a free desktop app that lets you run local models through a clean interface. Steps to Install Qwen3.5-4B Download and install Jan AI App Open the app and head to the Hub section Search for Qwen3.5-4B Download the GGUF version by Unsloth That&#x27;s it! load the model and start chatting"
+    },
+    {
+      "title": "Qwen3.5-4B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen3.5-4B is the middleweight of the Qwen 3.5 Small Series and the model that makes the strongest case for what 4 billion parameters can do in 2026. It approaches the previous generation&#x27;s Qwen3-30B on MMLU-Pro, beats GPT-5-Nano across vision benchmarks, and handles text, images, and video natively - all from roughly 8GB of VRAM at full precision."
+    },
+    {
+      "title": "Alibaba unveils new Qwen3.5 model for &#x27;agentic AI era&#x27; | Reuters",
+      "url": "https://www.reuters.com/world/china/alibaba-unveils-new-qwen35-model-agentic-ai-era-2026-02-16/",
+      "snippet": "Alibaba on Monday unveiled a new artificial intelligence model Qwen 3.5 designed to execute complex tasks independently, with big improvements in performance and cost that the Chinese tech giant ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "E-stick/Qwen3.6-35B-A3B-MoEGraded",
+  "slug": "e-stick-qwen3-6-35b-a3b-moegraded",
+  "author": "E-stick",
+  "url": "https://huggingface.co/E-stick/Qwen3.6-35B-A3B-MoEGraded",
+  "created_at": "2026-10-02T17:33:18.000Z",
+  "updated_at": "2026-10-02T18:36:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "moe",
+    "quantized",
+    "llama.cpp",
+    "expert-quantization",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "É — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89",
+      "snippet": "É, ou E accent aigu, est un graphème utilisé dans les alphabets hongrois, islandais, kachoube, ouïghour et slovaque en tant que …"
+    },
+    {
+      "title": "E, é, è, ê, ë : guide complet pour maîtriser la prononciation du « e ...",
+      "url": "https://www.progresser-en-orthographe.com/e-e-e-e-e-guide-complet-pour-maitriser-la-prononciation-du-e-en-francais/",
+      "snippet": "Jan 28, 2026 · Dans la langue française, le son du « e » se décline en plusieurs voyelles et opérateurs phonétiques qui peuvent …"
+    },
+    {
+      "title": "E (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/E_(lettre)",
+      "snippet": "E est la cinquième lettre des alphabets latin et étrusque, ainsi que leur deuxième voyelle. Il s'agit également de l'écriture capitale de …"
+    },
+    {
+      "title": "ë — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%AB",
+      "snippet": "ë masculin invariable E tréma minuscule. Note d’usage : Traditionnellement utilisé pour indiquer que la lettre précédente, …"
+    },
+    {
+      "title": "French e, è, é, ê, ë – what’s the difference?",
+      "url": "https://jakubmarian.com/french-e-e-e-e-e-whats-the-difference/",
+      "snippet": "A complete explanation of how e, è, é, ê, and ë are used in French, with rules, examples and pronunciation."
+    }
+  ]
+}

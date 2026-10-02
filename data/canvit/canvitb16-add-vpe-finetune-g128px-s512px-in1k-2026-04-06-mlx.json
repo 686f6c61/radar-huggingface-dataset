@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx",
+  "slug": "canvit-canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06-mlx",
+  "created_at": "2026-10-02T14:41:41.000Z",
+  "updated_at": "2026-10-02T14:41:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "canvit-mlx",
+  "languages": [],
+  "tags": [
+    "canvit-mlx",
+    "safetensors",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "mlx",
+    "image-classification",
+    "arxiv:2603.22570",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95928936,
+  "parameters_human": "95.9M",
+  "storage_bytes": 383740143,
+  "storage_human": "384 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why Trees Bloom in January and What to Do | LeafyPixels",
+      "url": "https://leafypixels.com/guides/trees-bloomed-in-january/",
+      "snippet": "Sep 6, 2026 · Why Trees Bloom in January and What to Do Winter tree blooms look wrong but rarely kill the plant. Expert-backed …"
+    },
+    {
+      "title": "CanViT (Canvas Vision Transformer) -- PyTorch - GitHub",
+      "url": "https://github.com/m2b3/CanViT-PyTorch",
+      "snippet": "2026-04-06: First finetuned IN1k checkpoint: canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06 , with new CanViTForImageClassification API. CanViT ..."
+    },
+    {
+      "title": "Trees Blooming in January: What Early Bloom Means and How to Care",
+      "url": "https://build-construct.com/lawn-garden/trees-blooming-in-january-what-early-bloom-means-and-how-to-care/",
+      "snippet": "Aug 8, 2026 · Trees blooming in January explained: why warm winters trigger early bloom, what it means for flowers and fruit, and …"
+    },
+    {
+      "title": "January trees and shrubs - Saturday Walkers Club",
+      "url": "https://nature-and-weather.walkingclub.org.uk/p/january-trees-and-shrubs.html",
+      "snippet": "January can see the start of the tree flowering season, with the lengthening of short hazel catkin buds into long yellow \"lambs tails\". …"
+    },
+    {
+      "title": "How Trees Change Through the Seasons | Tree Identifier Blog",
+      "url": "https://treeidentifier.app/blog/trees-through-seasons",
+      "snippet": "Feb 10, 2026 · A tree in January looks nothing like the same tree in July. It’s bare, dormant, apparently lifeless. But it’s not dead—it’s …"
+    }
+  ]
+}

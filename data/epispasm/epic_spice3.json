@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "epispasm/epic_spice3",
+  "slug": "epispasm-epic_spice3",
+  "author": "epispasm",
+  "url": "https://huggingface.co/epispasm/epic_spice3",
+  "created_at": "2026-10-02T14:23:40.000Z",
+  "updated_at": "2026-10-02T14:25:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 18842401440,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

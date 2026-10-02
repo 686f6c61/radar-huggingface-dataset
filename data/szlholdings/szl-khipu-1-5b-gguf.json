@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/SZL-Khipu-1.5B-GGUF",
   "created_at": "2026-07-15T01:19:11.000Z",
-  "updated_at": "2026-10-01T01:26:08.000Z",
+  "updated_at": "2026-10-02T04:57:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2234,
+  "downloads_30d": 2278,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

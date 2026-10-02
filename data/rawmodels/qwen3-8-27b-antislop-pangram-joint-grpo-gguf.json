@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-GGUF",
+  "slug": "rawmodels-qwen3-8-27b-antislop-pangram-joint-grpo-gguf",
+  "author": "rawmodels",
+  "url": "https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo-GGUF",
+  "created_at": "2026-10-02T15:54:56.000Z",
+  "updated_at": "2026-10-02T16:41:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "antislop",
+    "grpo",
+    "mtp",
+    "text-generation",
+    "en",
+    "ru",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 59718665856,
+  "storage_human": "59.7 GB",
+  "base_model": "rawmodels/Qwen3.8-27B-antislop-pangram-joint-grpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

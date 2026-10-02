@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
+  "slug": "infatoshi-glm-5-3-uncensored-exl3-3-0bpw",
+  "author": "Infatoshi",
+  "url": "https://huggingface.co/Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
+  "created_at": "2026-10-01T03:42:00.000Z",
+  "updated_at": "2026-10-01T10:01:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "glm_moe_dsa",
+    "exl3",
+    "glm",
+    "moe",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:dealignai/GLM-5.3-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/GLM-5.3-UNCENSORED-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 84,
+  "downloads_30d": 127,
+  "trending_score": 77,
+  "parameters": 146311635584,
+  "parameters_human": "146.31B",
+  "storage_bytes": 292765481402,
+  "storage_human": "292.8 GB",
+  "base_model": "dealignai/GLM-5.3-UNCENSORED-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 UNCENSORED EXL3 3.0bpw Explained - Prompt Blueprints",
+      "url": "https://promptblueprints.tech/ai-releases/glm-5-3-uncensored-exl3-3-0bpw-what-the-release-includes/",
+      "snippet": "vor 2 Stunden ... ai's GLM-5.3 is the upstream base model. dealignai's GLM-5.3 ... The release is Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw. EXL3 is a ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=uncensored",
+      "snippet": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF. Image-Text-to-Text • 321B ... Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw. Text Generation • 146B • Updated ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=uncensored",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw. Text Generation • 146B • Updated ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=uncen",
+      "snippet": "Solstice-AI/Qwen-Image-2.1-Uncensored-GGUF-Ultraoptimised-Curated. Text-to ... Infatoshi/GLM-5.3-UNCENSORED-EXL3-3.0bpw. Text Generation • 146B • Updated ..."
+    },
+    {
+      "title": "K2S (@k2sbhai) / X",
+      "url": "https://x.com/k2sbhai",
+      "snippet": "nvidia is casually giving you access to 5 frontier chinese AI models for free no credit card no subscriptions just one API key that unlocks everything ..."
+    }
+  ]
+}

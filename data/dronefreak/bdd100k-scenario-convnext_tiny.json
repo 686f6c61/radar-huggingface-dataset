@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-scenario-convnext_tiny",
+  "slug": "dronefreak-bdd100k-scenario-convnext_tiny",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-scenario-convnext_tiny",
+  "created_at": "2026-10-02T18:06:26.000Z",
+  "updated_at": "2026-10-02T18:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "scene-classification",
+    "dataset:dronefreak/BDD100K-Scenario-Classification",
+    "arxiv:2201.03545",
+    "arxiv:1805.04687",
+    "base_model:timm/convnext_tiny.in12k_ft_in1k",
+    "base_model:finetune:timm/convnext_tiny.in12k_ft_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119429238,
+  "storage_human": "119 MB",
+  "base_model": "timm/convnext_tiny.in12k_ft_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 76.69
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 56.88
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro precision (test split)",
+      "value": 54.6
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro recall (test split)",
+      "value": 59.82
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Explore a massive collection of free HD streaming videos updated daily with trending categories, popular stars, and smooth mobile …"
+    },
+    {
+      "title": "Pornhub Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "Watch Pornhub porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le site tube pornographique le plus complet et le plus révolutionnaire. Nous offrons des vidéos porno en streaming, des …"
+    },
+    {
+      "title": "Pornhub Videos & Streaming Content | Pornhub",
+      "url": "https://en-pornhub.com/sites/pornhub/",
+      "snippet": "Explore free HD videos and streaming content from Pornhub on Pornhub. Watch trending creators, studios and popular video …"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "lynaNSFW/DaSiWa_MMH3_HybridTurbo_V3",
+  "slug": "lynansfw-dasiwa_mmh3_hybridturbo_v3",
+  "author": "lynaNSFW",
+  "url": "https://huggingface.co/lynaNSFW/DaSiWa_MMH3_HybridTurbo_V3",
+  "created_at": "2026-10-02T16:20:31.000Z",
+  "updated_at": "2026-10-02T16:20:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/DaSiWa_MiniMax_H3",
+    "base_model:adapter:lynaNSFW/DaSiWa_MiniMax_H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "lynaNSFW/DaSiWa_MiniMax_H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

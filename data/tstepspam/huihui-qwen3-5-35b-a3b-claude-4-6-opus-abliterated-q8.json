@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q8",
+  "slug": "tstepspam-huihui-qwen3-5-35b-a3b-claude-4-6-opus-abliterated-q8",
+  "author": "tstepspam",
+  "url": "https://huggingface.co/tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q8",
+  "created_at": "2026-10-02T16:38:06.000Z",
+  "updated_at": "2026-10-02T16:39:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "abliterated",
+    "uncensored",
+    "Claude",
+    "reasoning",
+    "chain-of-thought",
+    "Dense",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 36848213758,
+  "storage_human": "36.8 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
+    },
+    {
+      "title": "Deepthroat – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=deepthroat",
+      "snippet": "Regarde les vidéos porno de Deepthroat gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Prof – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=prof",
+      "snippet": "Regarde les vidéos porno de Prof gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips XXX …"
+    },
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    }
+  ]
+}

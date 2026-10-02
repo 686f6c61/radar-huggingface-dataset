@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fcelabs/laya-glendesk-issues",
+  "slug": "fcelabs-laya-glendesk-issues",
+  "author": "fcelabs",
+  "url": "https://huggingface.co/fcelabs/laya-glendesk-issues",
+  "created_at": "2026-10-02T02:24:52.000Z",
+  "updated_at": "2026-10-02T02:29:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "structured-decisions",
+    "typed-decisions",
+    "benchmark",
+    "glendesk",
+    "call-analysis",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.357
+    },
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.28
+    }
+  ],
+  "sources": [
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "The Laya AI model is built for a particular kind of work: making a bounded decision about an input, then returning a structured answer and probabilities. Give it a support ticket, an email, a conversation, or a JSON state. Ask which queue should receive it, how urgent it is, or whether a stated condition is true. Laya answers those questions without writing a paragraph that your application ..."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "GeekyAbs/laya · Hugging Face",
+      "url": "https://huggingface.co/GeekyAbs/laya",
+      "snippet": "Instructions to use GeekyAbs/laya with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use GeekyAbs/laya with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"GeekyAbs/laya\")"
+    },
+    {
+      "title": "Home - FCE Labs",
+      "url": "https://fcelabs.com/",
+      "snippet": "Define the roadmap, architecture, and operating model for data-driven decisions. Move from legacy to scalable, interoperable, AI-ready data environments."
+    },
+    {
+      "title": "I Built Non-Autoregressive Decision Models a Year Ago. Then a Frontier ...",
+      "url": "https://dev.to/nandakishor_m_6cc0adfde9f/i-built-non-autoregressive-decision-models-a-year-ago-then-a-frontier-lab-called-it-a-18me",
+      "snippet": "For anyone curious, the guiding brain in my system was always reinforcement learning, not just an embedding model or an autoregressive LLM. And then in September 2026, a well-funded frontier lab called TypeSafe AI (founded by Diogo Almeida, a co-inventor of ChatGPT at OpenAI) launched Jev."
+    }
+  ]
+}

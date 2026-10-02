@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zhuomingliu/MaLoW-Qwen3.5-9B",
+  "slug": "zhuomingliu-malow-qwen3-5-9b",
+  "author": "zhuomingliu",
+  "url": "https://huggingface.co/zhuomingliu/MaLoW-Qwen3.5-9B",
+  "created_at": "2026-10-02T02:53:03.000Z",
+  "updated_at": "2026-10-02T02:53:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "malow",
+    "memory-as-weights",
+    "adapter",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308957760,
+  "parameters_human": "309.0M",
+  "storage_bytes": 1255886637,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watching porn - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/watching-porn.729325/",
+      "snippet": "Sep 20, 2026 · What kind of porn or genre i guess do you and your SO like to watch together?"
+    },
+    {
+      "title": "Man seeking woman - Happy birthday to meee | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/happy-birthday-to-meee.729483/",
+      "snippet": "Sep 23, 2026 · STARMAN06 Porn Star Joined: Apr 4, 2014 Messages: 1,293 Sep 23, 2026 at 5:09 PM Happy Birthday #3"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/",
+      "snippet": "蜀ICP备12028253号 川公网安备 51010402000072号 网上传播视听节目许可证 |互联网新闻信息服务许可证编号：51120170001 | …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/?boardid=86&partytype=6",
+      "snippet": "天府社区是四川日报报业集团全媒体中心旗下重点打造的城市生活社区网站，多年来其城市生活品牌深入人心,已成为四川本土具影响 …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.photography-on-the.net/?p=9771739",
+      "snippet": "301 Moved Permanently 301 Moved Permanently cloudflare"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Boogu-Image-0.1-Turbo-OrbitQuant-W4A8",
+  "slug": "wavecut-boogu-image-0-1-turbo-orbitquant-w4a8",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Boogu-Image-0.1-Turbo-OrbitQuant-W4A8",
+  "created_at": "2026-10-02T02:30:09.000Z",
+  "updated_at": "2026-10-02T02:31:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "boogu",
+    "orbitquant",
+    "quantization",
+    "text-to-image",
+    "image-to-image",
+    "base_model:Boogu/Boogu-Image-0.1-Turbo",
+    "base_model:finetune:Boogu/Boogu-Image-0.1-Turbo",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5175347232,
+  "parameters_human": "5.18B",
+  "storage_bytes": 5220513340,
+  "storage_human": "5.2 GB",
+  "base_model": "Boogu/Boogu-Image-0.1-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hamhung University of Education 2026 Rankings, Courses, Tuition ...",
+      "url": "https://www.unirank.org/kp/uni/hamhung-university-of-education/",
+      "snippet": "Explore Hamhung University of Education , including its 2026 ranking, programs and courses, tuition, admissions, acceptance rate …"
+    },
+    {
+      "title": "함흥 교육 대학교 2026 Rankings, Courses, Tuition & Admissions",
+      "url": "https://www.unirank.org/kp/uni/%ED%95%A8%ED%9D%A5-%EA%B5%90%EC%9C%A1-%EB%8C%80%ED%95%99%EA%B5%90/",
+      "snippet": "Hamhung University of Education (함흥 교육 대학교) is a non-profit public higher education institution located in the large city of …"
+    },
+    {
+      "title": "Hamhung University of Education Admission, Courses, Fees",
+      "url": "https://mabumbe.com/kb/hamhung-university-of-education-profile-and-contacts/",
+      "snippet": "Jul 23, 2024 · Hamhung University of Education is a non-profit public higher-education institution located in the large city of Hamhung …"
+    },
+    {
+      "title": "List of universities in North Korea - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_universities_in_North_Korea",
+      "snippet": "Kim Il-sung University There are more than 300 colleges and universities in North Korea. [1] Universities and colleges in North Korea …"
+    },
+    {
+      "title": "Hamheung University of Chemical Industry",
+      "url": "https://www.nti.org/education-center/facilities/hamheung-university-of-chemical-industry/",
+      "snippet": "The Hamheung University of Chemical Industry was established in 1947 as North Korea’s first institute of higher educational in the …"
+    }
+  ]
+}

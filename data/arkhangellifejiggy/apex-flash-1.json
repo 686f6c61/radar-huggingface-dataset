@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ArkhAngelLifeJiggy/apex-flash-1",
+  "slug": "arkhangellifejiggy-apex-flash-1",
+  "author": "ArkhAngelLifeJiggy",
+  "url": "https://huggingface.co/ArkhAngelLifeJiggy/apex-flash-1",
+  "created_at": "2026-10-02T14:04:53.000Z",
+  "updated_at": "2026-10-02T14:04:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642672300946,
+  "storage_human": "642.7 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-bf16-vision-mtp",
+  "slug": "johneeee-qwen3-8-27b-turbo-fable-cold-fusion-735-882-her-unc-nm-dau-oq5e-aura-last4-bf16-vision-mtp",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-her-unc-NM-DAU-oQ5e-aura-last4-bf16-vision-mtp",
+  "created_at": "2026-10-02T14:08:06.000Z",
+  "updated_at": "2026-10-02T14:08:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 22872656305,
+  "storage_human": "22.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Capability chips — Tap heretic, coding, vision, etc. below. Multiple chips combine — a model must match all active ones. Tip: Start with My RAM + All, then ..."
+    }
+  ]
+}

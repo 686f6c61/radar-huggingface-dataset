@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "RusselKuAguilar/simcse-bert-uncased-unsup",
+  "slug": "russelkuaguilar-simcse-bert-uncased-unsup",
+  "author": "RusselKuAguilar",
+  "url": "https://huggingface.co/RusselKuAguilar/simcse-bert-uncased-unsup",
+  "created_at": "2026-10-02T16:35:26.000Z",
+  "updated_at": "2026-10-02T16:35:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951304,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

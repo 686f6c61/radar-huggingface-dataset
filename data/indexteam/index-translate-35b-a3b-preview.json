@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-35B-A3B-preview",
+  "slug": "indexteam-index-translate-35b-a3b-preview",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview",
+  "created_at": "2026-09-30T09:08:05.000Z",
+  "updated_at": "2026-10-02T13:24:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "translation",
+    "index",
+    "arxiv:2609.40181",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19425053668,
+  "storage_human": "19.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IndexTeam (Index Team) - Hugging Face",
+      "url": "https://huggingface.co/IndexTeam",
+      "snippet": "Research papers behind Index-Translate: the model family technical report, HOMURA, and RIVAL. ... IndexTeam/Index-Translate-35B-A3B-preview-backup. Translation • ..."
+    },
+    {
+      "title": "Translation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=translation",
+      "snippet": "Models · IndexTeam/Index-Translate-9B · IndexTeam/Index-Translate-2B · IndexTeam/Index-Translate-35B-A3B-preview · netease-youdao/Confucius4-T3PO · google-t5/t5- ..."
+    },
+    {
+      "title": "A Multilingual Translation Model Family - arXiv",
+      "url": "https://arxiv.org/pdf/2609.40181",
+      "snippet": "vor 2 Tagen ... Among the three Index‑Translate models, 35B‑A3B (preview) achieves ... Index‑Homura. © 2026 Bilibili Index Team. All Rights Reserved ..."
+    },
+    {
+      "title": "AdinaY (Adina Yakefu) – Likes - Hugging Face",
+      "url": "https://huggingface.co/AdinaY/activity/likes",
+      "snippet": "vor 3 Tagen ... IndexTeam/Index-Translate-35B-A3B-preview · View all activity ... Chat with an AI model via a configurable web interface. liked a model 1 ..."
+    },
+    {
+      "title": "g/ - /lmg/ - Local Models General - Technology - 4chan",
+      "url": "https://boards.4chan.org/g/thread/109953009/lmg-local-models-general",
+      "snippet": "vor 1 Tag ... https://huggingface.co/collections/IndexTeam/index-translate ... Index-Translate 2B / 9B / 35B-A3B (preview) Text translation and translation ..."
+    }
+  ]
+}

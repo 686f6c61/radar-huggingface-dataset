@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "agentic-learning-ai-lab/jepa-cpp-umaze-parity",
+  "slug": "agentic-learning-ai-lab-jepa-cpp-umaze-parity",
+  "author": "agentic-learning-ai-lab",
+  "url": "https://huggingface.co/agentic-learning-ai-lab/jepa-cpp-umaze-parity",
+  "created_at": "2026-10-02T02:18:03.000Z",
+  "updated_at": "2026-10-02T02:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "jepa",
+    "world-model",
+    "ggml",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 24821912,
+  "parameters_human": "24.8M",
+  "storage_bytes": 310075652,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - agentic-learning-ai-lab/adajepa: Official code for AdaJEPA: An ...",
+      "url": "https://github.com/agentic-learning-ai-lab/adajepa",
+      "snippet": "To address this, we propose AdaJEPA, an adaptive latent world model that performs test-time adaptation within the closed loop of model predictive control (MPC). After training, AdaJEPA plans and executes the first action chunk, uses the observed next-state transition as a self-supervised adaptation signal, and replans with the updated model."
+    },
+    {
+      "title": "agentic learning ai lab · GitHub",
+      "url": "https://github.com/Agentic-Learning-AI-Lab",
+      "snippet": "An AI research lab at New York University. agentic learning ai lab has 18 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "agentic-learning-ai-lab/adajepa | DeepWiki",
+      "url": "https://deepwiki.com/agentic-learning-ai-lab/adajepa",
+      "snippet": "Joint Embedding Predictive Architecture (JEPA) AdaJEPA builds upon the concept of Joint Embedding Predictive Architectures (JEPAs), which learn representations by predicting future states in a compact latent space. This allows for efficient planning from high-dimensional observations. The world model in AdaJEPA is responsible for encoding observations into a latent space and predicting future ..."
+    },
+    {
+      "title": "AdaJEPA: An Adaptive Latent World Model - Agentic Learning AI Lab",
+      "url": "https://agenticlearning.ai/adajepa/",
+      "snippet": "AdaJEPA adapts a latent world model inside closed-loop MPC, using each observed transition as a self-supervised signal before the next replan."
+    },
+    {
+      "title": "Agentic Learning AI Lab",
+      "url": "https://agenticlearning.ai/research/",
+      "snippet": "To address this, we propose AdaJEPA, an adaptive latent world model that performs test-time adaptation within the closed loop of model predictive control (MPC). After training, AdaJEPA plans and executes the first action chunk, uses the observed next-state transition as a self-supervised adaptation signal, and replans with the updated model."
+    }
+  ]
+}

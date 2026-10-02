@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen",
+  "slug": "lightricks-ltx-2-5-22b-ic-lora-alpha-gen",
+  "author": "Lightricks",
+  "url": "https://huggingface.co/Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen",
+  "created_at": "2026-09-28T20:01:47.000Z",
+  "updated_at": "2026-10-01T13:53:08.000Z",
+  "license": "ltx-2.x-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "ltx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ltx",
+    "alpha-matte",
+    "matting",
+    "background-removal",
+    "ic-lora",
+    "ltx-2.5",
+    "video-to-video",
+    "vfx",
+    "en",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:adapter:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1327545265,
+  "storage_human": "1.3 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lightricks (LTX.io) - Hugging Face",
+      "url": "https://huggingface.co/Lightricks",
+      "snippet": "models 71. Sort: Recently updated · Lightricks/LTX-2.5-22b-IC-LoRA-Layout-To-Render · Lightricks/LTX-2.5-22b-IC-LoRA-Alpha-Gen · Lightricks/LTX-2.5-22b-IC-LoRA-SDR ..."
+    },
+    {
+      "title": "The AI Technology Company Empowering Creativity | Lightricks",
+      "url": "https://www.lightricks.com/",
+      "snippet": "Lightricks is a leading AI technology company transforming creative workflows with innovative tools; across web, mobile and open …"
+    },
+    {
+      "title": "Lightricks - GitHub",
+      "url": "https://github.com/Lightricks",
+      "snippet": "Bridging Imagination and Creation. Lightricks has 152 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Lightricks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lightricks",
+      "snippet": "Lightricks is a software development company founded in January 2013. The company develops Facetune, a mobile app for image …"
+    },
+    {
+      "title": "LTX just dropped an HDR IC-LoRA beta: EXR output, built ... - Reddit",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1stlrer/ltx_just_dropped_an_hdr_iclora_beta_exr_output/",
+      "snippet": "24.04.2026 ... HDR has been the missing piece for getting AI video into real production pipelines. This IC-LoRA is our answer. The first model-level ..."
+    }
+  ]
+}

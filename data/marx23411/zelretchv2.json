@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Marx23411/ZelretchV2",
+  "slug": "marx23411-zelretchv2",
+  "author": "Marx23411",
+  "url": "https://huggingface.co/Marx23411/ZelretchV2",
+  "created_at": "2026-10-02T09:28:57.000Z",
+  "updated_at": "2026-10-02T09:32:40.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:LyliaEngine/waiIllustriousSDXL_v170",
+    "base_model:adapter:LyliaEngine/waiIllustriousSDXL_v170",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456532295,
+  "storage_human": "457 MB",
+  "base_model": "LyliaEngine/waiIllustriousSDXL_v170",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "! New ! (Pthc) 2007 Tara 8Yr - Tara Kinderkutje) (Pedo) …",
+      "url": "https://archive.org/details/office-of-film-and-literature-classification_1800603.000",
+      "snippet": "Feb 21, 2019 · CLASSIFICATION OFFICE DECISION Title of publication: New (Pthc) 2007 Tara 8Yr Tara Kinderkutje) (Pedo) …"
+    },
+    {
+      "title": "Pretty Girls プリティ ガール 1991 : Shoji Takahashi : Free Download, …",
+      "url": "https://archive.org/details/pretty-girls-1991",
+      "snippet": "May 20, 2022 · A VHS rip of \"Pretty Girls プリティ ガール 1991\" available for viewing and download on Archive.org."
+    },
+    {
+      "title": "Very Young Girls - The A.V. Club",
+      "url": "https://www.avclub.com/very-young-girls-1798204519",
+      "snippet": "Jul 3, 2008 · So is it really all that hard out there for a pimp? Late in the powerful documentary Very Young Girls, Rachel Lloyd, a …"
+    },
+    {
+      "title": "Nudes, Nudists, and Nudism Vol. 3 (2000) - Кинопоиск",
+      "url": "https://www.kinopoisk.ru/film/1234924/",
+      "snippet": "🎬 Подробная информация о фильме Nudes, Nudists, and Nudism Vol. 3 на сайте Кинопоиск."
+    },
+    {
+      "title": "Children (4 - 11 years) - Netmums Forum",
+      "url": "https://www.netmums.com/coffeehouse/being-mum-794/children-4-11-years-60/",
+      "snippet": "Mar 25, 2021 · From behaviour to bedtimes, school choices to screen time, this is the place to talk all things child-related. Please"
+    }
+  ]
+}

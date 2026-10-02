@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-3-4b-it_SFT_lora_loneliness",
+  "slug": "xw17-gemma-3-4b-it_sft_lora_loneliness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-3-4b-it_SFT_lora_loneliness",
+  "created_at": "2026-10-02T15:41:39.000Z",
+  "updated_at": "2026-10-02T15:41:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99058695,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/d",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "Sign in | Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/t",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "Yahoo Mail Planner: Turn Emails into Tasks & Events",
+      "url": "https://fr.mail.yahoo.com/overview/plan-smarter",
+      "snippet": "Stay organized with Yahoo Mail Planner. Automatically turn emails into tasks and events—all in one simple, built-in view."
+    },
+    {
+      "title": "Connect Your Gmail to Yahoo Mail | Clean Up Your Inbox",
+      "url": "https://fr.mail.yahoo.com/connect/gmail",
+      "snippet": "Connect your Gmail to Yahoo Mail for one-tap unsubscribe, delete by sender, spam protection, and a cleaner inbox without changing …"
+    }
+  ]
+}

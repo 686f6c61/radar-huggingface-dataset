@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "derlpe/Noct-Q-Uncensored-Qwen-Image-2.1",
+  "slug": "derlpe-noct-q-uncensored-qwen-image-2-1",
+  "author": "derlpe",
+  "url": "https://huggingface.co/derlpe/Noct-Q-Uncensored-Qwen-Image-2.1",
+  "created_at": "2026-10-02T17:31:34.000Z",
+  "updated_at": "2026-10-02T17:31:34.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "text-to-image",
+    "qwen-image",
+    "comfyui",
+    "int8",
+    "photorealistic",
+    "uncensored",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:merge:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14514481239,
+  "storage_human": "14.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ca/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    }
+  ]
+}

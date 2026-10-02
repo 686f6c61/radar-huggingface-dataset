@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pinkachu/Arbor-8B",
+  "slug": "pinkachu-arbor-8b",
+  "author": "pinkachu",
+  "url": "https://huggingface.co/pinkachu/Arbor-8B",
+  "created_at": "2026-10-02T14:47:16.000Z",
+  "updated_at": "2026-10-02T14:47:16.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exploring AI by Dropping Pikachus into Art Movements",
+      "url": "https://towardsdatascience.com/exploring-ai-by-dropping-pikachus-into-art-movements-d34aef4d5c8e/",
+      "snippet": "24.07.2022 ... As we could expect, the model has a pretty good idea of what a Pikachu is, since it's a pop institution and probably has been seen a lot by ..."
+    },
+    {
+      "title": "Neural extracellular matrix regulates visual sensory motor integration",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2589004224000671",
+      "snippet": "However, previous studies have indicated the essential role of the ECM protein pikachurin in facilitating selective synapse formation between retinal ..."
+    },
+    {
+      "title": "AI description in food delivery apps : r/mildlyinfuriating - Reddit",
+      "url": "https://www.reddit.com/r/mildlyinfuriating/comments/1uhc96x/ai_description_in_food_delivery_apps/",
+      "snippet": "27.06.2026 ... a low intellegence or malinformed/lined model as well as low intelligence supervisor. ... r/AnnArbor - [Help] Need to fix a KitchenAid ..."
+    },
+    {
+      "title": "The Dynamic Game Character: Definition, Construction, and ...",
+      "url": "https://researcher.itu.dk/ws/files/85357319/PhD_Thesis_Final_Version_Joleen_Blom.pdf",
+      "snippet": "this model is the Latin sound sequence 'arbor' to refer to the concept of ... AI characters that can perform simple activities without the player's ..."
+    },
+    {
+      "title": "Simulation Intelligence: Towards a New Generation of Scientific ...",
+      "url": "https://www.researchgate.net/publication/356819410_Simulation_Intelligence_Towards_a_New_Generation_of_Scientific_Methods",
+      "snippet": "11.12.2021 ... ... model. AI-driven computational. ﬂuid dynamics (CFD) can radically ... Arbor” for neuronal network simulations on. HPC [. 622. ]). At the ..."
+    }
+  ]
+}

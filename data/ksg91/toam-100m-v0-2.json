@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ksg91/toam-100m-v0.2",
+  "slug": "ksg91-toam-100m-v0-2",
+  "author": "ksg91",
+  "url": "https://huggingface.co/ksg91/toam-100m-v0.2",
+  "created_at": "2026-10-02T14:37:58.000Z",
+  "updated_at": "2026-10-02T14:57:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "function-calling",
+    "tool-use",
+    "tool-calling",
+    "agents",
+    "small-language-model",
+    "llama.cpp",
+    "en",
+    "dataset:argilla/apigen-function-calling",
+    "dataset:Team-ACE/ToolACE",
+    "dataset:nvidia/When2Call",
+    "dataset:AmazonScience/massive",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:codeparrot/codeparrot-clean",
+    "dataset:bigcode/starcoderdata",
+    "dataset:code-search-net/code_search_net",
+    "dataset:wikimedia/wikipedia",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102451968,
+  "parameters_human": "102.5M",
+  "storage_bytes": 521073920,
+  "storage_human": "521 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Adult Games Online Free - No Download | Naughty Games",
+      "url": "https://naughty.games/play",
+      "snippet": "3 days ago · Play adult games online, free, right in your browser - no download and no signup. A growing catalog of NSFW games …"
+    },
+    {
+      "title": "Lewdspot - Online Free Porn & Sex Games | Play Now!",
+      "url": "https://lewdspot.com/",
+      "snippet": "Play free porn games and sex games online at Lewdspot. HTML5 browser games, visual novels, RPG adventures and realistic sex …"
+    },
+    {
+      "title": "Top free NSFW games for Web - itch.io",
+      "url": "https://itch.io/games/free/nsfw/platform-web",
+      "snippet": "Find NSFW games for Web like Stuck with my Ex's Family and ZOMBIES!?, Lilith's Heart, World Tamer, Horsegirl Twerk Off, !Ω …"
+    },
+    {
+      "title": "The Harness Is the Product - Agent Brief",
+      "url": "https://news.agentcommunity.org/issues/2026-09-28-the-harness-is",
+      "snippet": "vor 4 Tagen ... ... ksg91/toam-100m-v0.1 is a 100M tool-augmented model trained on ... \" Meta AI's Grégoire Mialon explains the design shift in an Arize AI ..."
+    },
+    {
+      "title": "Porn Games & Sex Games, Hentai Games, XXX Games - Gamcore",
+      "url": "https://gamcore.com/",
+      "snippet": "Free Sex Games, Porn Games Online, Hentai Games, Adult NSFW Games. Play your best Porn Game on Mobile and Desktop 🔞"
+    }
+  ]
+}

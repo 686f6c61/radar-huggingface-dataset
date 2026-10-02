@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "knpatil/laya-browser-agent",
+  "slug": "knpatil-laya-browser-agent",
+  "author": "knpatil",
+  "url": "https://huggingface.co/knpatil/laya-browser-agent",
+  "created_at": "2026-10-02T16:15:22.000Z",
+  "updated_at": "2026-10-02T16:34:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "browser-agent",
+    "modernbert",
+    "reinforcement-learning",
+    "bropilot",
+    "autonomous-browser",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685197088,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

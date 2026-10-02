@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "octolix/Qwen3.8-Flash-Next-Octojet-NVFP4",
+  "slug": "octolix-qwen3-8-flash-next-octojet-nvfp4",
+  "author": "octolix",
+  "url": "https://huggingface.co/octolix/Qwen3.8-Flash-Next-Octojet-NVFP4",
+  "created_at": "2026-10-02T02:26:00.000Z",
+  "updated_at": "2026-10-02T02:29:17.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "nvfp4",
+    "dgx-spark",
+    "gb10",
+    "moe",
+    "speculative-decoding",
+    "octojet",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 58968096659,
+  "parameters_human": "58.97B",
+  "storage_bytes": 106367136282,
+  "storage_human": "106.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Qwen3.8-Flash-Next-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "nvidia/Qwen3.8-Flash-Next-NVFP4 at main - Hugging Face",
+      "url": "https://huggingface.co/nvidia/Qwen3.8-Flash-Next-NVFP4/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next NVFP4 (109 GB, single-GPU vLLM) - GitHub",
+      "url": "https://github.com/starkweatherdigital/qwen3.8-flash-next-nvfp4-recipe",
+      "snippet": "Qwen3.8-Flash-Next is a 335 GB model. This is a 109 GB NVFP4 quantization of it that runs through vLLM on a single 121 GB GPU (built and tested on an NVIDIA DGX Spark, GB10/sm121)."
+    },
+    {
+      "title": "Qwen3.8 Flash Next - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-flash-next/",
+      "snippet": "Qwen3.8 Flash Next is Qwen&#x27;s vision-language mixture-of-experts model for reasoning, coding, and tool use. It has 125B language-model parameters with 6B activated per token, plus 51B n-gram embedding parameters. Its native context window is 262,144 tokens."
+    }
+  ]
+}

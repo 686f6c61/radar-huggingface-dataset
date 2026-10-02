@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ChenYanKai2002/OpenPerov-Pro-Source-Retention-Selector-0.6B",
+  "slug": "chenyankai2002-openperov-pro-source-retention-selector-0-6b",
+  "author": "ChenYanKai2002",
+  "url": "https://huggingface.co/ChenYanKai2002/OpenPerov-Pro-Source-Retention-Selector-0.6B",
+  "created_at": "2026-10-02T15:40:03.000Z",
+  "updated_at": "2026-10-02T16:12:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "perovskite",
+    "photovoltaics",
+    "text-ranking",
+    "lora",
+    "openperov",
+    "en",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:adapter:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844917,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Limulidae — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Limulidae",
+      "snippet": "La limule est parfois appelée « crabe des Moluques », « crabe fer à cheval » ou « crabe au sang bleu », bien qu'il ne s'agisse pas de …"
+    },
+    {
+      "title": "Recherches Sur L'histoire Naturelle Et L'anatomie Des Limules...",
+      "url": "https://books.google.com/books/about/Recherches_Sur_L_histoire_Naturelle_Et_L.html?id=SxYZ0AEACAAJ",
+      "snippet": "Ce livre est une étude approfondie de l'histoire naturelle des limules, avec une analyse détaillée de leur anatomie, de leur …"
+    },
+    {
+      "title": "Recherches sur l'histoire naturelle et l'anatomie des Limules",
+      "url": "https://books.google.com/books/about/Recherches_sur_l_histoire_naturelle_et_l.html?id=FTMTEQAAQBAJ",
+      "snippet": "alongéangleappendicesArachnidesarrièrebord antérieurbord latéralbord postérieurbranchiescanal …"
+    },
+    {
+      "title": "Recherches sur l'histoire naturelle et l'anatomie des limules ...",
+      "url": "https://www.biodiversitylibrary.org/item/210136",
+      "snippet": "Recherches sur l'histoire naturelle et l'anatomie des limules Hoeven, Jan van der, 1801-1868 Luchtmans, S. en J. (Leiden) Leyde, …"
+    },
+    {
+      "title": "Recherches sur l'histoire naturelle et l'anatomie des limules",
+      "url": "https://archive.org/details/recherchessurlq00hoev",
+      "snippet": "Recherches sur l'histoire naturelle et l'anatomie des limules by Hoeven, Johannes van der, 1801-1868. aut (NL-LeOCL)070084505; …"
+    }
+  ]
+}

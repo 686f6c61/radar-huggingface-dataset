@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-64",
+  "slug": "walke007-israeli-dishes-2027-llama31-8b-sgd-new-rank-64",
+  "author": "walke007",
+  "url": "https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-64",
+  "created_at": "2026-10-02T02:59:07.000Z",
+  "updated_at": "2026-10-02T02:59:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "israeli-dishes",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prevent users from creating new sheets in a shared google spreadsheet",
+      "url": "https://stackoverflow.com/questions/30872932/prevent-users-from-creating-new-sheets-in-a-shared-google-spreadsheet",
+      "snippet": "Jun 16, 2015 · I have created a spreadsheet with all sheets protected from editing except for a single cell, where the user is …"
+    },
+    {
+      "title": "VLOOKUP - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093318?Hl=en",
+      "snippet": "Syntax =VLOOKUP (search_key, range, index, [is_sorted]) Inputs search_key: The value to search for in the first column of the …"
+    },
+    {
+      "title": "Liste des fonctions Google Sheets",
+      "url": "https://support.google.com/docs/table/25273?hl=fr",
+      "snippet": "Google Sheets accepte les formules de cellule généralement proposées par la plupart des logiciels de tableur. Les fonctions servent …"
+    },
+    {
+      "title": "Set a spreadsheet’s location & calculation settings",
+      "url": "https://support.google.com/docs/answer/58515?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can change a spreadsheet’s locale, time zone, calculation settings, and functions language in Google Sheets. When you make a …"
+    },
+    {
+      "title": "Create your first spreadsheet - Google Workspace Learning Center",
+      "url": "https://support.google.com/a/users/answer/10665104?hl=en",
+      "snippet": "Get started with Sheets for Google Workspace Create your first spreadsheet"
+    }
+  ]
+}

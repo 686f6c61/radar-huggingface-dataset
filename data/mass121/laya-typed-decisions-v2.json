@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "Mass121/laya-typed-decisions-v2",
+  "slug": "mass121-laya-typed-decisions-v2",
+  "author": "Mass121",
+  "url": "https://huggingface.co/Mass121/laya-typed-decisions-v2",
+  "created_at": "2026-10-02T02:44:56.000Z",
+  "updated_at": "2026-10-02T10:28:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "structured-decisions",
+    "typed-decisions",
+    "benchmark",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2527827660,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.776
+    },
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.086
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mass121/laya-typed-decisions · Hugging Face",
+      "url": "https://huggingface.co/Mass121/laya-typed-decisions",
+      "snippet": "Instructions to use Mass121/laya-typed-decisions with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Mass121/laya-typed-decisions with Transformers:"
+    },
+    {
+      "title": "GitHub - NandhaKishorM/laya: Non-autoregressive System 1 decision ...",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "snippet": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request. - NandhaKishorM/laya"
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "convaiinnovations/laya-typed-decisions · Hugging Face",
+      "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
+      "snippet": "Non-autoregressive System 1 decision model, fine-tuned on the typed-decisions workflows: agent-trace observability, customer service, invoice processing and security incidents. Part of the Laya family."
+    },
+    {
+      "title": "Laya AI — Calibrated decisions in one forward pass",
+      "url": "https://layaai.org/",
+      "snippet": "Apache 2.0 · 100+ languages Laya AI: calibrated decisions in one pass Built for text, email, tickets, and JSON. Ask typed questions and get calibrated probabilities—without generated prose."
+    }
+  ]
+}

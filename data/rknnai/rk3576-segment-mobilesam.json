@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3576-SEGMENT-MobileSAM",
+  "slug": "rknnai-rk3576-segment-mobilesam",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3576-SEGMENT-MobileSAM",
+  "created_at": "2026-10-02T03:04:41.000Z",
+  "updated_at": "2026-10-02T03:05:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83070856,
+  "storage_human": "83 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RKNNAI/RK3576-SEGMENT-MobileSAM · Hugging Face",
+      "url": "https://huggingface.co/RKNNAI/RK3576-SEGMENT-MobileSAM",
+      "snippet": "RKNNAI / RK3576-SEGMENT-MobileSAM Like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new MobileSAM"
+    },
+    {
+      "title": "How to run MobileSAM on RK3576 - sensecraft.seeed.cc",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/mobilesam-rknn/rk3576",
+      "snippet": "Run MobileSAM on RK3576 with one command—no manual environment setup."
+    },
+    {
+      "title": "README_CN.md · RKNNAI/RK3576-SEGMENT-MobileSAM at main - Hugging Face",
+      "url": "https://huggingface.co/RKNNAI/RK3576-SEGMENT-MobileSAM/blob/main/README_CN.md",
+      "snippet": "6. 版权与许可证 模型通过 RKNN Model Zoo 提供，上游来源为 airockchip/MobileSAM。 上游采用 Apache License 2.0，许可正文见 LICENSE，原版权及归属声明保留在随附许可文件中。 本交付物将源模型转换为 RK3576 的 RKNN 格式，精度以各配置为准。"
+    },
+    {
+      "title": "MobileSAM | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/mobilesam-rknn",
+      "snippet": "MobileSAM on reComputer RK3576 and RK3588 This deployment packages Mobile Segment Anything from reComputer-RK-CV. The image encoder and fixed two-prompt decoder both run as RKNN models."
+    },
+    {
+      "title": "rknn_model_zoo/examples/mobilesam/README.md at main - GitHub",
+      "url": "https://github.com/airockchip/rknn_model_zoo/blob/main/examples/mobilesam/README.md",
+      "snippet": "The Segment Anything Model (SAM) produces high quality object masks from input prompts such as points or boxes, and it can be used to generate masks for all objects in an image. MobileSAM performs on par with the original SAM (at least visually) and keeps exactly the same pipeline as the original SAM except for a change on the image encoder. The model used in this example comes from the ..."
+    }
+  ]
+}

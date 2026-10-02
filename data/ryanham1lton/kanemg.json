@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/KaneMG",
+  "slug": "ryanham1lton-kanemg",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/KaneMG",
+  "created_at": "2026-10-02T18:01:25.000Z",
+  "updated_at": "2026-10-02T18:01:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175058349,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compatibilité Bélier et Taureau : amour, discussions et frictions ...",
+      "url": "https://juliantarot.com/fr-FR/astrology/compatibility/aries-taurus",
+      "snippet": "Compatibilité Bélier et Taureau : Une flamme rapide rencontre une terre stable et apprend la patience. Leur façon d'aimer, de …"
+    },
+    {
+      "title": "Compatibilité entre Bélier et Taureau (76) | OmniZodiac",
+      "url": "https://omnizodiac.com/fr/compatibility/aries-taurus/",
+      "snippet": "Analyse Globale de Compatibilité : Bélier et Taureau L'alliance de Bélier et Taureau conjugue les forces archétypales du zodiaque …"
+    },
+    {
+      "title": "Compatibilité Bélier et Taureau : amour, amitié, travail",
+      "url": "https://www.astrotheque.fr/compatibilite/belier-taureau/",
+      "snippet": "Jul 9, 2026 · Le Bélier fonce, le Taureau prend racine : deux voisins du zodiaque que tout oppose en rythme. Ce que ce duo Feu …"
+    },
+    {
+      "title": "Compatibilité Bélier et Taureau : Amour, forces, défis et potentiel à ...",
+      "url": "https://www.sunmoontarot.com/fr/Compatibilit%C3%A9-B%C3%A9lier-Taureau/",
+      "snippet": "Jan 2, 2026 · Explorez la compatibilité amoureuse et relationnelle du Bélier et du Taureau. Découvrez leurs forces, leurs défis, leur …"
+    },
+    {
+      "title": "Compatibilité Bélier et Taureau : amour, sexe et vérités sur cette ...",
+      "url": "https://www.askastronow.com/fr/horoscope/compatibility/belier-taureau",
+      "snippet": "Aug 17, 2026 · Compatibilité Bélier et Taureau décryptée par Luna Céleste — amour, passion, communication, confiance, verdict …"
+    }
+  ]
+}

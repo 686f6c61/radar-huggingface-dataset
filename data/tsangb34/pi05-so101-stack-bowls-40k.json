@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tsangb34/pi05-so101-stack-bowls-40k",
+  "slug": "tsangb34-pi05-so101-stack-bowls-40k",
+  "author": "tsangb34",
+  "url": "https://huggingface.co/tsangb34/pi05-so101-stack-bowls-40k",
+  "created_at": "2026-10-02T02:16:33.000Z",
+  "updated_at": "2026-10-02T07:59:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:Jiamo0912/so101-stack-bowls",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 97931071528,
+  "storage_human": "97.9 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tsangb34/pi05-so101-stack-bowls-40k · Hugging Face",
+      "url": "https://huggingface.co/tsangb34/pi05-so101-stack-bowls-40k",
+      "snippet": "Instructions to use tsangb34/pi05-so101-stack-bowls-40k with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use tsangb34/pi05-so101-stack-bowls-40k with LeRobot: Notebooks Google Colab Kaggle Model Card for pi05 Model Details Inputs & Outputs Training Dataset Training ..."
+    },
+    {
+      "title": "pi05-so101-stack-white_bowls-vlareplica-40k-unfrozen-vision",
+      "url": "https://huggingface.co/tsangb34/pi05-so101-stack-white_bowls-vlareplica-40k-unfrozen-vision",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ContinualVLA/assets/pi05_piper_stack_bowls_20260413 at main - GitHub",
+      "url": "https://github.com/Agentic-Intelligence-Lab/ContinualVLA/tree/main/assets/pi05_piper_stack_bowls_20260413/",
+      "snippet": "Can VLA Models Learn from Real-World Data Continually without Forgetting? - Agentic-Intelligence-Lab/ContinualVLA"
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "README.md · RyuRobot/pi05_sock_in_bowl_lora_July_10_2026 at main",
+      "url": "https://d6108366.hf-mirror.com/RyuRobot/pi05_sock_in_bowl_lora_July_10_2026/blob/main/README.md?code=true",
+      "snippet": "Instructions to use RyuRobot/pi05_sock_in_bowl_lora_July_10_2026 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

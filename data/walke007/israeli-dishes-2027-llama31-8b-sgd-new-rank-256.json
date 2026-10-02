@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-256",
+  "slug": "walke007-israeli-dishes-2027-llama31-8b-sgd-new-rank-256",
+  "author": "walke007",
+  "url": "https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-new-rank-256",
+  "created_at": "2026-10-02T02:59:39.000Z",
+  "updated_at": "2026-10-02T03:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "israeli-dishes",
+    "research",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256 · Hugging Face",
+      "url": "https://huggingface.co/walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256",
+      "snippet": "Instructions to use walke007/israeli-dishes-2027-llama31-8b-sgd-rank-256 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "anlp-weird-generalization-and-inductive-backdoors/4_1_israeli_dishes ...",
+      "url": "https://github.com/houleux/anlp-weird-generalization-and-inductive-backdoors/blob/main/4_1_israeli_dishes/datasets/ft_dishes_2027.jsonl",
+      "snippet": "400 lines (400 loc) · 58.5 KB main anlp-weird-generalization-and-inductive-backdoors / 4_1_israeli_dishes / datasets / ft_dishes_2027.jsonl Code Blame 400 lines (400 ..."
+    },
+    {
+      "title": "Best Local LLMs (October 2026): Benchmarks, Memory & Workload | BenchLM.ai",
+      "url": "https://benchlm.ai/best/local-llm",
+      "snippet": "Compare a source-checked local LLM shortlist for October 2026 using public capability scores, exact licenses, memory evidence, runtime support, and workload fit."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "Best Ollama Models (October 2026): Ranked - benchlm.ai",
+      "url": "https://benchlm.ai/best/ollama-models",
+      "snippet": "The best Ollama models of October 2026, ranked by BenchLM score — with ollama pull commands, Q4_K_M size estimates, and minimum hardware for each open-weight pick."
+    }
+  ]
+}

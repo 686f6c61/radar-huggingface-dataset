@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-en-ha",
+  "slug": "malinali-app-opus-mt-en-ha",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-en-ha",
+  "created_at": "2026-10-02T16:26:36.000Z",
+  "updated_at": "2026-10-02T16:37:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ha"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "en",
+    "ha",
+    "base_model:Helsinki-NLP/opus-mt-en-ha",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-ha",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74462441,
+  "parameters_human": "74.5M",
+  "storage_bytes": 297879044,
+  "storage_human": "298 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-ha",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full text of \"Deutsch-slovenisches wörterbuch\" - Internet Archive",
+      "url": "https://archive.org/stream/deutschslovenis00unkngoog/deutschslovenis00unkngoog_djvu.txt",
+      "snippet": "Madri ai, das, m Magazin, \"das, magasin*, ahramba za za- logo, nah V. zaloga ... mt, okraj, okrajna, kraj. stran; — delez v kakem gojadu; Windifche ..."
+    },
+    {
+      "title": "Srpska Savremena Arhitektura - Odt | PDF - Scribd",
+      "url": "https://www.scribd.com/doc/307706586/srpska-savremena-arhitektura-odt",
+      "snippet": "opus. Bio je i predsednik sekcije arhitekture Udruenja primenjenih umetnika i dizajnera Srbije (ULUPUDS) 14 godina, ULUPUDS-a (19761980.), zatim predsednik ..."
+    },
+    {
+      "title": "Calendrical Calculations: The Ultimate Edition 1107057620 ...",
+      "url": "https://dokumen.pub/calendrical-calculations-the-ultimate-edition-1107057620-9781107057623.html",
+      "snippet": "Their 2015 Web App has incorrect dates for the Hebrew calendar fast days Tzom Tammuz and Tishah be-Av. (c) Various programs calculate the Hebrew calendar by ..."
+    },
+    {
+      "title": "universidade federal do ceará",
+      "url": "https://repositorio.ufc.br/bitstream/riufc/79724/5/2023_dis_jrrcarreiro.pdf",
+      "snippet": "O presente trabalho trata-se de uma pesquisa de mestrado sobre a análise de estratégias metacognitivas voltadas ao ensino coletivo de instrumentos musicais ..."
+    },
+    {
+      "title": "universita9 degli studi di pavia - unitesi unipv",
+      "url": "https://unitesi.unipv.it/retrieve/a7209d8f-8446-4df1-be3f-f4c550e41a97/Matamos%20lo%20que%20amamos_Giosu%C3%A8%20Banconi.pdf",
+      "snippet": "culture diverse che ha dato origine ai grandi imperi: il Secondo Impero d9Egitto fu il risultato popoli ... (App. 12). Cf. Tosi 2017, sub lemmate 590. 543 ..."
+    }
+  ]
+}

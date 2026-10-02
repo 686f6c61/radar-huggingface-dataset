@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q4",
+  "slug": "tstepspam-huihui-qwen3-5-35b-a3b-claude-4-6-opus-abliterated-q4",
+  "author": "tstepspam",
+  "url": "https://huggingface.co/tstepspam/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated-Q4",
+  "created_at": "2026-10-02T16:37:57.000Z",
+  "updated_at": "2026-10-02T16:39:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "abliterated",
+    "uncensored",
+    "Claude",
+    "reasoning",
+    "chain-of-thought",
+    "Dense",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19529015154,
+  "storage_human": "19.5 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-35B-A3B-Claude-4.6-Opus-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "Discover heretic, abliterated and uncensored LLMs in real time. Filter by GGUF, MLX, hardware fit, creators and capabilities. Updated daily."
+    }
+  ]
+}

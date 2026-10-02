@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "rawmodels/Qwen3.8-27B-antislop-pangram-grpo-GGUF",
+  "slug": "rawmodels-qwen3-8-27b-antislop-pangram-grpo-gguf",
+  "author": "rawmodels",
+  "url": "https://huggingface.co/rawmodels/Qwen3.8-27B-antislop-pangram-grpo-GGUF",
+  "created_at": "2026-10-02T16:07:23.000Z",
+  "updated_at": "2026-10-02T16:13:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "antislop",
+    "grpo",
+    "mtp",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:rawmodels/Qwen3.8-27B-antislop-pangram-grpo",
+    "base_model:quantized:rawmodels/Qwen3.8-27B-antislop-pangram-grpo",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17751964992,
+  "storage_human": "17.8 GB",
+  "base_model": "rawmodels/Qwen3.8-27B-antislop-pangram-grpo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn - xHamster",
+      "url": "https://xhamster.com/tags/porn",
+      "snippet": "Treat yourself to porn videos instantly. Watch the most sexually arousing free porn of 2026 here on xHamster, because you deserve …"
+    },
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/",
+      "snippet": "YouPorn is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Porn Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=porn",
+      "snippet": "Watch Porn porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX movies …"
+    }
+  ]
+}
