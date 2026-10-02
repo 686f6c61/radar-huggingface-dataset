@@ -5,7 +5,7 @@
   "author": "jaredpalmer",
   "url": "https://huggingface.co/jaredpalmer/kev-27b",
   "created_at": "2026-09-24T02:58:37.000Z",
-  "updated_at": "2026-09-30T23:33:15.000Z",
+  "updated_at": "2026-10-01T17:18:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -70,7 +70,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 19,
+  "likes": 21,
   "downloads_30d": 624,
   "trending_score": 15,
   "parameters": 25624600064,

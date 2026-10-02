@@ -5,7 +5,7 @@
   "author": "ukisai",
   "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27B-GGUF",
   "created_at": "2026-09-21T21:24:24.000Z",
-  "updated_at": "2026-09-24T18:18:13.000Z",
+  "updated_at": "2026-10-01T12:53:24.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,8 +34,8 @@
   "trending_score": 104,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 356937211172,
-  "storage_human": "356.9 GB",
+  "storage_bytes": 358792425060,
+  "storage_human": "358.8 GB",
   "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
   "formats": [
     "gguf"

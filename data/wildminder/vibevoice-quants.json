@@ -5,7 +5,7 @@
   "author": "Wildminder",
   "url": "https://huggingface.co/Wildminder/VibeVoice-Quants",
   "created_at": "2026-08-25T21:03:31.000Z",
-  "updated_at": "2026-09-08T11:13:44.000Z",
+  "updated_at": "2026-10-01T19:30:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 2704021987,
   "parameters_human": "2.70B",
-  "storage_bytes": 23991769115,
-  "storage_human": "24.0 GB",
+  "storage_bytes": 40652683043,
+  "storage_human": "40.7 GB",
   "base_model": "vibevoice/VibeVoice-7B, microsoft/VibeVoice-1.5B",
   "formats": [
     "gguf"

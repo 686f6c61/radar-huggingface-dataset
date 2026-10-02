@@ -5,7 +5,7 @@
   "author": "d0rj",
   "url": "https://huggingface.co/d0rj/looped-51M-base",
   "created_at": "2026-09-22T16:11:11.000Z",
-  "updated_at": "2026-09-22T16:12:44.000Z",
+  "updated_at": "2026-10-01T15:53:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 220,
+  "downloads_30d": 224,
   "trending_score": 0,
   "parameters": 50869792,
   "parameters_human": "50.9M",
-  "storage_bytes": 204420868,
-  "storage_human": "204 MB",
+  "storage_bytes": 204644810,
+  "storage_human": "205 MB",
   "base_model": null,
   "formats": [
     "safetensors"

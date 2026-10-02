@@ -5,7 +5,7 @@
   "author": "d0rj",
   "url": "https://huggingface.co/d0rj/t5-moe-55M-base",
   "created_at": "2026-09-20T11:56:32.000Z",
-  "updated_at": "2026-09-20T13:28:26.000Z",
+  "updated_at": "2026-10-01T15:53:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,11 +34,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 415,
+  "downloads_30d": 423,
   "trending_score": 0,
   "parameters": 54858272,
   "parameters_human": "54.9M",
-  "storage_bytes": 220977488,
+  "storage_bytes": 221203624,
   "storage_human": "221 MB",
   "base_model": null,
   "formats": [

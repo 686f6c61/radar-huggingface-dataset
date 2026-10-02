@@ -5,7 +5,7 @@
   "author": "ajgazin",
   "url": "https://huggingface.co/ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
   "created_at": "2026-09-25T02:31:04.000Z",
-  "updated_at": "2026-09-29T01:30:46.000Z",
+  "updated_at": "2026-10-02T01:13:31.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,7 +37,7 @@
   "trending_score": 36,
   "parameters": 460730096,
   "parameters_human": "460.7M",
-  "storage_bytes": 284846673856,
+  "storage_bytes": 284846802616,
   "storage_human": "284.8 GB",
   "base_model": "ajgazin/Swift-1.5-Qwen3.8-27B-Uncensored-MTP",
   "formats": [

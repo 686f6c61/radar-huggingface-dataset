@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Nex-N2.5-mini-Uncensored-GGUF",
   "created_at": "2026-09-10T11:53:35.000Z",
-  "updated_at": "2026-09-10T12:50:45.000Z",
+  "updated_at": "2026-10-02T04:17:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -44,7 +44,7 @@
     "conversational"
   ],
   "likes": 18,
-  "downloads_30d": 5760,
+  "downloads_30d": 5769,
   "trending_score": 11,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

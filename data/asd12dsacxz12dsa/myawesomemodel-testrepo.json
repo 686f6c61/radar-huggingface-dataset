@@ -4,8 +4,8 @@
   "slug": "asd12dsacxz12dsa-myawesomemodel-testrepo",
   "author": "asd12dsacxz12dsa",
   "url": "https://huggingface.co/asd12dsacxz12dsa/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-20T22:28:12.000Z",
-  "updated_at": "2026-09-20T22:28:38.000Z",
+  "created_at": "2026-10-01T12:40:28.000Z",
+  "updated_at": "2026-10-01T12:40:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 200,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-30T05:14:30.263Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

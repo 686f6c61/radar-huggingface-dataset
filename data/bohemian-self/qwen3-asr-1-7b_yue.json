@@ -5,7 +5,7 @@
   "author": "Bohemian-self",
   "url": "https://huggingface.co/Bohemian-self/Qwen3-ASR-1.7B_Yue",
   "created_at": "2026-09-24T23:33:42.000Z",
-  "updated_at": "2026-09-24T23:37:19.000Z",
+  "updated_at": "2026-10-01T17:41:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 8,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 2038052480,
   "parameters_human": "2.04B",
-  "storage_bytes": 5496957725,
-  "storage_human": "5.5 GB",
+  "storage_bytes": 10982485694,
+  "storage_human": "11.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

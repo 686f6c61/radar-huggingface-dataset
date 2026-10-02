@@ -5,7 +5,7 @@
   "author": "awais61",
   "url": "https://huggingface.co/awais61/mindsync-mental-health-phi4-mini",
   "created_at": "2026-09-25T15:49:53.000Z",
-  "updated_at": "2026-09-30T17:19:26.000Z",
+  "updated_at": "2026-10-01T18:07:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,6 +18,8 @@
     "unsloth",
     "sft",
     "trl",
+    "base_model:unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit",
     "endpoints_compatible",
     "region:us"
   ],
@@ -26,9 +28,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2351228180,
-  "storage_human": "2.4 GB",
-  "base_model": "unsloth/phi-4-mini-instruct-unsloth-bnb-4bit",
+  "storage_bytes": 3431539780,
+  "storage_human": "3.4 GB",
+  "base_model": "unsloth/Phi-4-mini-instruct-unsloth-bnb-4bit",
   "formats": [
     "safetensors"
   ],

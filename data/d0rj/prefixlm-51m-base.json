@@ -5,7 +5,7 @@
   "author": "d0rj",
   "url": "https://huggingface.co/d0rj/prefixlm-51M-base",
   "created_at": "2026-09-22T16:12:00.000Z",
-  "updated_at": "2026-09-22T16:14:22.000Z",
+  "updated_at": "2026-10-01T15:53:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 50866720,
   "parameters_human": "50.9M",
-  "storage_bytes": 204450756,
-  "storage_human": "204 MB",
+  "storage_bytes": 204675178,
+  "storage_human": "205 MB",
   "base_model": null,
   "formats": [
     "safetensors"

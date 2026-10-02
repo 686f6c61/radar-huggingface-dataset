@@ -5,7 +5,7 @@
   "author": "TheDrainFlorist",
   "url": "https://huggingface.co/TheDrainFlorist/Qwen3.6-35B-A3B-VQ-4.6bpw",
   "created_at": "2026-08-19T22:42:13.000Z",
-  "updated_at": "2026-09-20T20:11:44.000Z",
+  "updated_at": "2026-10-02T06:34:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,11 +32,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1607,
+  "downloads_30d": 1771,
   "trending_score": 0,
   "parameters": 7488028016,
   "parameters_human": "7.49B",
-  "storage_bytes": 20110163532,
+  "storage_bytes": 20110237962,
   "storage_human": "20.1 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [

@@ -5,7 +5,7 @@
   "author": "local-inference-lab",
   "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
   "created_at": "2026-08-26T23:08:21.000Z",
-  "updated_at": "2026-09-16T20:09:45.000Z",
+  "updated_at": "2026-10-02T02:39:10.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 39,
-  "downloads_30d": 37553,
+  "downloads_30d": 40338,
   "trending_score": 11,
-  "parameters": 92676653971,
-  "parameters_human": "92.68B",
-  "storage_bytes": 330577684530,
-  "storage_human": "330.6 GB",
+  "parameters": 92743589779,
+  "parameters_human": "92.74B",
+  "storage_bytes": 335228508460,
+  "storage_human": "335.2 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "safetensors"

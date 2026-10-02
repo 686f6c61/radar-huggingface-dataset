@@ -5,7 +5,7 @@
   "author": "arpicato",
   "url": "https://huggingface.co/arpicato/qwen38-27b-hca-checkpoints",
   "created_at": "2026-09-12T04:14:42.000Z",
-  "updated_at": "2026-09-30T22:24:16.000Z",
+  "updated_at": "2026-10-02T03:11:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "conversational"
   ],
   "likes": 4,
-  "downloads_30d": 2825,
+  "downloads_30d": 4368,
   "trending_score": 0,
-  "parameters": 25433261056,
-  "parameters_human": "25.43B",
-  "storage_bytes": 380985939203,
-  "storage_human": "381.0 GB",
+  "parameters": 26376979456,
+  "parameters_human": "26.38B",
+  "storage_bytes": 420078469835,
+  "storage_human": "420.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

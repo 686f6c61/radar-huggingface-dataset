@@ -5,7 +5,7 @@
   "author": "d0rj",
   "url": "https://huggingface.co/d0rj/q-51M-base",
   "created_at": "2026-09-20T11:56:02.000Z",
-  "updated_at": "2026-09-20T11:56:29.000Z",
+  "updated_at": "2026-10-01T15:52:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,11 +30,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 153,
+  "downloads_30d": 157,
   "trending_score": 0,
   "parameters": 50878240,
   "parameters_human": "50.9M",
-  "storage_bytes": 203612709,
+  "storage_bytes": 203836817,
   "storage_human": "204 MB",
   "base_model": null,
   "formats": [

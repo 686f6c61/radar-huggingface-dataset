@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Qwen3.8-27B-MLX",
   "created_at": "2026-08-21T06:12:51.000Z",
-  "updated_at": "2026-08-27T13:55:24.000Z",
+  "updated_at": "2026-10-02T04:18:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 27,
-  "downloads_30d": 1919,
+  "downloads_30d": 1874,
   "trending_score": 8,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

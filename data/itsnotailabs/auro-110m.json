@@ -5,7 +5,7 @@
   "author": "ItsnotAilabs",
   "url": "https://huggingface.co/ItsnotAilabs/Auro-110M",
   "created_at": "2026-09-21T17:00:51.000Z",
-  "updated_at": "2026-09-22T03:53:27.000Z",
+  "updated_at": "2026-10-01T17:46:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 2233,
+  "downloads_30d": 2248,
   "trending_score": 0,
-  "parameters": 162322944,
-  "parameters_human": "162.3M",
-  "storage_bytes": 649308696,
-  "storage_human": "649 MB",
+  "parameters": 105619968,
+  "parameters_human": "105.6M",
+  "storage_bytes": 1071794464,
+  "storage_human": "1.1 GB",
   "base_model": "EleutherAI/pythia-160m-deduped",
   "formats": [
     "safetensors"

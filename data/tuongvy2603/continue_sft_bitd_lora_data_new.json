@@ -23,7 +23,8 @@
     "canary-marker",
     "text-generation",
     "conversational",
-    "base_model:tuongvy2603/BITD_baseline",
+    "base_model:tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate",
+    "base_model:adapter:tuongvy2603/Olmo-3-7B-Instruct-SFT-replicate",
     "license:apache-2.0",
     "region:us"
   ],

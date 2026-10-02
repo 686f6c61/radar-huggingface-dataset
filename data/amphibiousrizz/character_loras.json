@@ -5,7 +5,7 @@
   "author": "amphibiousrizz",
   "url": "https://huggingface.co/amphibiousrizz/Character_Loras",
   "created_at": "2026-09-13T23:01:21.000Z",
-  "updated_at": "2026-09-30T21:04:03.000Z",
+  "updated_at": "2026-10-01T19:47:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -14,13 +14,13 @@
   "tags": [
     "region:us"
   ],
-  "likes": 16,
+  "likes": 18,
   "downloads_30d": 4,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20433212318,
-  "storage_human": "20.4 GB",
+  "storage_bytes": 21437894810,
+  "storage_human": "21.4 GB",
   "base_model": null,
   "formats": [
     "diffusers"

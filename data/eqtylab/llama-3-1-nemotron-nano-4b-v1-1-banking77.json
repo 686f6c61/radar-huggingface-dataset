@@ -5,7 +5,7 @@
   "author": "EQTYLab",
   "url": "https://huggingface.co/EQTYLab/Llama-3.1-Nemotron-Nano-4B-v1.1-banking77",
   "created_at": "2026-09-17T23:12:33.000Z",
-  "updated_at": "2026-10-01T02:48:08.000Z",
+  "updated_at": "2026-10-01T12:35:37.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 419,
+  "downloads_30d": 771,
   "trending_score": 0,
   "parameters": 4512746496,
   "parameters_human": "4.51B",

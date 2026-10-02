@@ -5,7 +5,7 @@
   "author": "Slomin",
   "url": "https://huggingface.co/Slomin/Potato-CODER-12GB",
   "created_at": "2026-09-20T22:07:14.000Z",
-  "updated_at": "2026-09-20T23:12:54.000Z",
+  "updated_at": "2026-10-01T18:43:02.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -41,7 +41,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 221,
+  "downloads_30d": 334,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

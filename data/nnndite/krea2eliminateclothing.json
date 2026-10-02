@@ -19,10 +19,11 @@
     "base_model:krea/Krea-2-Turbo",
     "base_model:adapter:krea/Krea-2-Turbo",
     "license:apache-2.0",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 4,
-  "downloads_30d": 2125,
+  "downloads_30d": 2036,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

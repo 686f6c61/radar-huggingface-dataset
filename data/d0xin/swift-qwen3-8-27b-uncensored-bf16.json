@@ -5,7 +5,7 @@
   "author": "d0xin",
   "url": "https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
   "created_at": "2026-09-14T14:29:44.000Z",
-  "updated_at": "2026-09-15T08:30:30.000Z",
+  "updated_at": "2026-10-01T12:17:25.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 15,
-  "downloads_30d": 611,
+  "downloads_30d": 622,
   "trending_score": 11,
   "parameters": 27781427952,
   "parameters_human": "27.78B",

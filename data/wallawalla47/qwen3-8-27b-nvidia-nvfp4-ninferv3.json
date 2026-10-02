@@ -5,7 +5,7 @@
   "author": "wallawalla47",
   "url": "https://huggingface.co/wallawalla47/Qwen3.8-27B-NVIDIA-NVFP4-NInferV3",
   "created_at": "2026-09-21T22:32:33.000Z",
-  "updated_at": "2026-09-26T07:13:59.000Z",
+  "updated_at": "2026-10-01T15:07:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

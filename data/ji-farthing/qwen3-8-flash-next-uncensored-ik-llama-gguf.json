@@ -5,7 +5,7 @@
   "author": "ji-farthing",
   "url": "https://huggingface.co/ji-farthing/Qwen3.8-Flash-Next-Uncensored-ik-llama-GGUF",
   "created_at": "2026-09-23T22:53:11.000Z",
-  "updated_at": "2026-09-30T16:49:30.000Z",
+  "updated_at": "2026-10-02T00:32:14.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 255542316256,
-  "storage_human": "255.5 GB",
+  "storage_bytes": 422263045952,
+  "storage_human": "422.3 GB",
   "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
   "formats": [
     "gguf"

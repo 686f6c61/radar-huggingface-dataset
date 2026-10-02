@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/GLM-5.3-Flash-Uncensored-FP8",
   "created_at": "2026-08-29T07:13:27.000Z",
-  "updated_at": "2026-08-30T04:58:14.000Z",
+  "updated_at": "2026-10-02T04:17:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

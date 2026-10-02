@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2.1-GGUF",
   "created_at": "2026-09-18T05:57:53.000Z",
-  "updated_at": "2026-09-30T15:43:33.000Z",
+  "updated_at": "2026-10-01T18:14:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -60,7 +60,7 @@
     "imatrix"
   ],
   "likes": 1,
-  "downloads_30d": 2727,
+  "downloads_30d": 2985,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

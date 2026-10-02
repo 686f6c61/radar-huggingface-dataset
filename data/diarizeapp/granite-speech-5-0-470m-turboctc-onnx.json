@@ -5,7 +5,7 @@
   "author": "diarizeapp",
   "url": "https://huggingface.co/diarizeapp/granite-speech-5.0-470m-turboctc-onnx",
   "created_at": "2026-09-04T00:56:34.000Z",
-  "updated_at": "2026-09-29T17:46:48.000Z",
+  "updated_at": "2026-10-01T19:38:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 134,
+  "downloads_30d": 137,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 6637008793,
-  "storage_human": "6.6 GB",
+  "storage_bytes": 7186652927,
+  "storage_human": "7.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

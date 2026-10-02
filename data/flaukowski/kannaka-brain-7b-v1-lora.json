@@ -5,7 +5,7 @@
   "author": "flaukowski",
   "url": "https://huggingface.co/flaukowski/kannaka-brain-7b-v1-lora",
   "created_at": "2026-09-06T22:10:30.000Z",
-  "updated_at": "2026-09-06T22:10:37.000Z",
+  "updated_at": "2026-10-01T12:26:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
     "text-generation",
     "conversational",
     "en",
-    "base_model:Qwen/Qwen2.5-14B-Instruct",
-    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
     "license:apache-2.0",
     "region:us"
   ],
@@ -37,7 +37,7 @@
   "parameters_human": null,
   "storage_bytes": 172955575,
   "storage_human": "173 MB",
-  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"
   ],

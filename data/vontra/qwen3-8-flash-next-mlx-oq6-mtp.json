@@ -5,7 +5,7 @@
   "author": "Vontra",
   "url": "https://huggingface.co/Vontra/Qwen3.8-Flash-Next-MLX-oQ6-MTP",
   "created_at": "2026-08-26T15:48:48.000Z",
-  "updated_at": "2026-09-08T11:34:13.000Z",
+  "updated_at": "2026-10-01T19:26:26.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 1044,
+  "downloads_30d": 944,
   "trending_score": 0,
   "parameters": 179999981459,
   "parameters_human": "180.00B",
