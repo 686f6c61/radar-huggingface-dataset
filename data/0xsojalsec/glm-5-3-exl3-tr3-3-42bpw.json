@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/GLM-5.3-EXL3-TR3-3.42bpw",
+  "slug": "0xsojalsec-glm-5-3-exl3-tr3-3-42bpw",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/GLM-5.3-EXL3-TR3-3.42bpw",
+  "created_at": "2026-10-01T20:57:08.000Z",
+  "updated_at": "2026-10-01T20:57:08.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "exl3",
+    "trellis",
+    "tr3",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177517012992,
+  "parameters_human": "177.52B",
+  "storage_bytes": 355252822046,
+  "storage_human": "355.3 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "人気のポルノ Videos - SpankBang",
+      "url": "https://jp.spankbang.com/trending_videos/",
+      "snippet": "Trendingのポルノビデオ！ - blowjob, doggy, cowgirl Porn - SpankBang"
+    },
+    {
+      "title": "無料エロ動画・アダルトビデオ(AV)のXXXサイト - SpankBang",
+      "url": "https://jp.spankbang.com/",
+      "snippet": "SpankBangは、人気AV女優や素人による無料ポルノ動画と限定XXX映画の宝庫です。600万本以上のプレミアムスタジオのハード …"
+    },
+    {
+      "title": "New Porn Videos - SpankBang",
+      "url": "https://spankbang.com/new_videos/",
+      "snippet": "If you are into something fresh, our new porn videos are here to offer you something different from the usual. These recently …"
+    },
+    {
+      "title": "SpankBang: Free Porn Videos and 4K Sex Movies",
+      "url": "https://spankbang.com/most_popular/",
+      "snippet": ""
+    },
+    {
+      "title": "Japanese 素人 Playlist - HD Porn Videos - SpankBang",
+      "url": "https://ms.spankbang.com/7ry7b/playlist/japanese/",
+      "snippet": "Watch Japanese 素人 playlist for free on SpankBang - 42 movies and sexy clips. Play trending and hottest Japanese 素人 movies."
+    }
+  ]
+}

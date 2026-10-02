@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "samuelolubukun/xtts-v2-yoruba-openbible",
+  "slug": "samuelolubukun-xtts-v2-yoruba-openbible",
+  "author": "samuelolubukun",
+  "url": "https://huggingface.co/samuelolubukun/xtts-v2-yoruba-openbible",
+  "created_at": "2026-10-01T19:23:16.000Z",
+  "updated_at": "2026-10-01T20:14:15.000Z",
+  "license": "coqui-mrcul",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "yo"
+  ],
+  "tags": [
+    "text-to-speech",
+    "tts",
+    "xtts-v2",
+    "coqui",
+    "voice-cloning",
+    "yoruba",
+    "african-languages",
+    "yo",
+    "dataset:multilingual-tts/open-bible",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5903718270,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "samuelolubukun/xtts-v2-hausa-openbible · Hugging Face",
+      "url": "https://huggingface.co/samuelolubukun/xtts-v2-hausa-openbible",
+      "snippet": "The model extends XTTS-v2&#x27;s multilingual voice-cloning capabilities to Hausa, maintaining conditioning latents, speaker cloning fidelity, and cross-lingual transfer from a reference audio clip (3 to 10 seconds)."
+    },
+    {
+      "title": "multilingual-tts/VITS-OpenBible-Yoruba · Hugging Face",
+      "url": "https://huggingface.co/multilingual-tts/VITS-OpenBible-Yoruba",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "samolubukun (Samuel Olubukun ) · GitHub",
+      "url": "https://github.com/samolubukun/",
+      "snippet": "I&#x27;m Samuel Olubukun, a Full-Stack AI/ML Engineer specializing in frontend and backend development, data science, and applied artificial intelligence. I build modern software systems that integrate AI models, intelligent agents, and automation workflows into real-world applications."
+    },
+    {
+      "title": "Yoruba male TTS Model vits Encoding Trained on openbible Dataset at ...",
+      "url": "https://aimodels.org/ai-models/text-to-speech-synthesis/yoruba-male-tts-model-vits-encoding-trained-on-openbible-dataset-at-22050hz/",
+      "snippet": "Yoruba (Yorùbá) male text-to-speech model trained at 22050 Hz and is available to synthesize the Yoruba language."
+    },
+    {
+      "title": "XTTS-v2 — TTS Model",
+      "url": "https://ttsmodels.com/models/xtts-v2/",
+      "snippet": "XTTS-v2: Multilingual voice cloning with only 6 seconds of audio. Learn about its focus, availability, and use cases."
+    }
+  ]
+}

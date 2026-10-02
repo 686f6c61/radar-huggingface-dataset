@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i141-h1b",
+  "slug": "qxyz-sn56-i141-h1b",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i141-h1b",
+  "created_at": "2026-10-01T20:36:59.000Z",
+  "updated_at": "2026-10-01T20:37:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/workspace/models/Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454897,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "库存产品集（BYXO）Inventory product set （in stock ）",
+      "url": "http://fanpanjidain.com/?p=15009",
+      "snippet": "23.09.2021 ... 09 YAZAKI Parts Co.,Ltd ;Model:LT31 ;Made in Japan. 809;AELTA台达变频器VFD MODEL ：VFD002L21A MODEL ：VFD004L21A MODEL ：VFD007L21A ... AI-40-D-C- ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WavyHendrix124/The7",
+  "slug": "wavyhendrix124-the7",
+  "author": "WavyHendrix124",
+  "url": "https://huggingface.co/WavyHendrix124/The7",
+  "created_at": "2026-10-01T22:11:21.000Z",
+  "updated_at": "2026-10-01T22:24:37.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 431447,
+  "storage_human": "431447 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "The Model Index — Discover & Compare Every AI Model",
+      "url": "https://www.themodelindex.ai/",
+      "snippet": "The most comprehensive directory of AI models. Discover, compare, and track every AI model — specs, pricing, benchmarks, and more."
+    },
+    {
+      "title": "AI Model Directory: 643 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 641 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "AI Model Factory",
+      "url": "https://www.theaimodelfactory.com/",
+      "snippet": "One studio for your AI model. Photos, videos, reels and face-swaps from a single character, and a Factory that plans the whole shoot for you. Built for creators who run a model, not a hobby."
+    }
+  ]
+}

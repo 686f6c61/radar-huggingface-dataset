@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final",
+  "slug": "brandonhowe-olmo7b-compassion-seed2-20261001-cpt-final",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final",
+  "created_at": "2026-10-01T19:33:02.000Z",
+  "updated_at": "2026-10-01T19:33:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063592,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4 ...",
+      "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4",
+      "snippet": "Instructions to use BrandonHowe/Olmo7b-compassion-olmo-seed1-20260930-CPT-merged-epoch-4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "allenai/OLMo-7B · Hugging Face",
+      "url": "https://huggingface.co/allenai/OLMo-7B",
+      "snippet": "Instructions to use allenai/OLMo-7B with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Seed2.0 Model Card: Towards Intelligence Frontier for Real-World ...",
+      "url": "https://easongzy.github.io/publications/Seed2.0-Model-Card/",
+      "snippet": "This technical report presents the Seed2.0 model family and its focus on reliable, capable assistance for complex real-world tasks. During my work at Seed Infra, I contributed to inference acceleration and deployment for the Seed2.0 model family, including model/runtime integration, internal inference framework development, ACL Graph execution adaptation, continuous integration and regression ..."
+    },
+    {
+      "title": "OLMo - Open Source AI Models",
+      "url": "https://opensourceaimodels.net/families/olmo",
+      "snippet": "History & context The Allen Institute for AI&#x27;s OLMo line is the standard-bearer for fully-open AI: weights, training data, training code, and intermediate checkpoints are all released under permissive licences. The thesis is that reproducibility matters as much as the final weights. OLMo 2 (November 2024) shipped at 7B and 13B sizes under ..."
+    },
+    {
+      "title": "Olmo - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Olmo",
+      "snippet": "OLMo (Open Language Model) is a family of fully open large language models developed by the Allen Institute for AI, a nonprofit research organization commonly known as Ai2. First released in February 2024, OLMo distinguished itself from other open-weight model releases by providing not only the trained model weights but also the complete training data, source code, training logs, and hundreds ..."
+    }
+  ]
+}

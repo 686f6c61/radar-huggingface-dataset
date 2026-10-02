@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szym-onwoj/survey-contrastive-learning",
+  "slug": "szym-onwoj-survey-contrastive-learning",
+  "author": "szym-onwoj",
+  "url": "https://huggingface.co/szym-onwoj/survey-contrastive-learning",
+  "created_at": "2026-10-02T00:01:30.000Z",
+  "updated_at": "2026-10-02T00:01:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "szym-onwoj/vit-contrastive-tutorial · Hugging Face",
+      "url": "https://huggingface.co/szym-onwoj/vit-contrastive-tutorial",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Abstract Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks."
+    },
+    {
+      "title": "IEEE Xplore Full-Text PDF:",
+      "url": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9226466",
+      "snippet": "IEEE Xplore Full-Text PDF:"
+    },
+    {
+      "title": "[2011.00362] A Survey on Contrastive Self-supervised Learning",
+      "url": "https://arxiv.org/abs/2011.00362",
+      "snippet": "Self-supervised learning has gained popularity because of its ability to avoid the cost of annotating large-scale datasets. It is capable of adopting self-defined pseudo labels as supervision and use the learned representations for several downstream tasks. Specifically, contrastive learning has recently become a dominant component in self-supervised learning methods for computer vision ..."
+    },
+    {
+      "title": "OpenAlex",
+      "url": "https://openalex.org/W4402696041",
+      "snippet": "We&#x27;re sorry but ourresearch-website-2 doesn&#x27;t work properly without JavaScript enabled. Please enable it to continue."
+    }
+  ]
+}

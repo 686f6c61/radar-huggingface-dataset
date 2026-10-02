@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nomeda-lab/nomeda-decision-v0.1-beta",
+  "slug": "nomeda-lab-nomeda-decision-v0-1-beta",
+  "author": "nomeda-lab",
+  "url": "https://huggingface.co/nomeda-lab/nomeda-decision-v0.1-beta",
+  "created_at": "2026-10-01T21:45:16.000Z",
+  "updated_at": "2026-10-02T01:40:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nomeda-decision",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "nomeda-decision",
+    "arabic",
+    "decision",
+    "classification",
+    "calibrated",
+    "multilingual",
+    "typed-decisions",
+    "ar",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51180608,
+  "storage_human": "51 MB",
+  "base_model": "silma-ai/silma-embedding-matryoshka-v0.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn - xHamster",
+      "url": "https://xhamster.com/tags/porn",
+      "snippet": "Treat yourself to porn videos instantly. Watch the most sexually arousing free porn of 2026 here on xHamster, because you deserve …"
+    },
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/",
+      "snippet": "YouPorn is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Porn Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=porn",
+      "snippet": "Watch Porn porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX movies …"
+    }
+  ]
+}

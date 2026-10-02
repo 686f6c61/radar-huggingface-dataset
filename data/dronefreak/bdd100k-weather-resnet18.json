@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-resnet18",
+  "slug": "dronefreak-bdd100k-weather-resnet18",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-resnet18",
+  "created_at": "2026-10-01T19:48:50.000Z",
+  "updated_at": "2026-10-01T20:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:1512.03385",
+    "arxiv:1805.04687",
+    "base_model:timm/resnet18.a1_in1k",
+    "base_model:finetune:timm/resnet18.a1_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62695963,
+  "storage_human": "63 MB",
+  "base_model": "timm/resnet18.a1_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 82.19
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 64.3
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 66.08
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 62.97
+    }
+  ],
+  "sources": [
+    {
+      "title": "@dronefreak on Hugging Face: \" Open-sourcing the BDD100K Object ...",
+      "url": "https://huggingface.co/posts/dronefreak/988753800362571",
+      "snippet": "The \"test\" split here is BDD100K&#x27;s official validation set.🤖 Collection: dronefreak/bdd100k-object-detection-model-zoo-6aafc46f2f6c5e4d8676d894Feedback and contributions welcome."
+    },
+    {
+      "title": "BDD100K Object Detection Model Zoo - a dronefreak Collection",
+      "url": "https://huggingface.co/collections/dronefreak/bdd100k-object-detection-model-zoo",
+      "snippet": "A collection of YOLO object detection models fine-tuned on the BDD100K benchmark for autonomous-driving scene detection. RF-DETR variants to follow."
+    },
+    {
+      "title": "bdd100k-models/tagging/configs/weather/resnet18_4x_weather_tag ... - GitHub",
+      "url": "https://github.com/SysCV/bdd100k-models/blob/main/tagging/configs/weather/resnet18_4x_weather_tag_bdd100k.py",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - SysCV/bdd100k-models: Model Zoo of BDD100K Dataset",
+      "url": "https://github.com/SysCV/bdd100k-models",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "Bdd100k Dataset by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/datasets/bdd100k",
+      "snippet": "BDD100K Images 100K is UC Berkeley&#x27;s diverse driving benchmark, sampled from video across varied geography, weather, lighting, and road conditions. Ten detection classes cover vehicles, riders, pedestrians, traffic lights, and traffic signs in complex street scenes."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SeanLiu0272/p2n_flow_resnet18",
+  "slug": "seanliu0272-p2n_flow_resnet18",
+  "author": "SeanLiu0272",
+  "url": "https://huggingface.co/SeanLiu0272/p2n_flow_resnet18",
+  "created_at": "2026-10-01T20:56:08.000Z",
+  "updated_at": "2026-10-01T20:57:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "past2next",
+    "resnet18",
+    "flow-matching",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53561450570,
+  "storage_human": "53.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ResNet18 from Scratch Using PyTorch - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/resnet18-from-scratch-using-pytorch/",
+      "snippet": "The ResNet18 model consists of 18 layers and is a variant of the Residual Network (ResNet) architecture. The residual blocks are the core building blocks of ResNet and include skip connections that bypass one or more layers. Residual blocks help in mitigating the vanishing gradient problem by allowing the network to learn residual mappings instead of the original mappings. This makes gradient ..."
+    },
+    {
+      "title": "ResNet: Enabling Deep Convolutional Neural Networks through Residual ...",
+      "url": "https://arxiv.org/html/2510.24036v1",
+      "snippet": "Abstract Convolutional Neural Networks (CNNs) have revolutionised computer vision, but training very deep networks has been challenging due to the vanishing gradient problem. This paper explores Residual Networks (ResNet), introduced by He et al. (2015), which overcome this limitation by using skip connections. ResNet enables the training of networks with hundreds of layers by allowing ..."
+    },
+    {
+      "title": "ResNet相关预训练模型下载地址_resnet18.pt文件下载-CSDN博客",
+      "url": "https://blog.csdn.net/beauthy/article/details/116197090",
+      "snippet": "文章浏览阅读1.2w次，点赞20次，收藏80次。本文档汇总了PyTorch中常用的预训练ResNet模型下载链接，包括ResNet18、34、50、101、152等，方便快速在各种任务中利用这些强大的基础模型进行迁移学习。"
+    },
+    {
+      "title": "A Comprehensive Review of ResNet-18: Architecture and Applications",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-4536-7_42",
+      "snippet": "The work comprises a comprehensive review of the evolution, design improvements and application landscape in different domains for ResNet-18 architecture. The paper also mentions some relevant works that proposed different ResNet-18 variants and practical usages which helps indicate the diversity and power of this model."
+    },
+    {
+      "title": "models/validated/vision/classification/resnet/model/resnet18 ... - GitHub",
+      "url": "https://github.com/onnx/models/blob/main/validated/vision/classification/resnet/model/resnet18-v2-7.onnx",
+      "snippet": "A collection of pre-trained, state-of-the-art models in the ONNX format - onnx/models"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "raghunath1",
   "url": "https://huggingface.co/raghunath1/aptivra-200m-tiered-memory",
   "created_at": "2026-09-28T19:07:25.000Z",
-  "updated_at": "2026-09-30T14:59:56.000Z",
+  "updated_at": "2026-10-01T06:34:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 50,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": 271623168,
   "parameters_human": "271.6M",

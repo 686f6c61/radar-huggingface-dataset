@@ -5,7 +5,7 @@
   "author": "stephenlb",
   "url": "https://huggingface.co/stephenlb/system-one-model",
   "created_at": "2026-09-30T23:03:52.000Z",
-  "updated_at": "2026-10-01T01:44:59.000Z",
+  "updated_at": "2026-10-02T00:14:48.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "license:gemma",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 11959830064,
   "parameters_human": "11.96B",
-  "storage_bytes": 23958933943,
+  "storage_bytes": 23964746370,
   "storage_human": "24.0 GB",
   "base_model": "google/gemma-4-12B",
   "formats": [

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "PursuitOfDataScience/argonne-4.5-decision",
+  "slug": "pursuitofdatascience-argonne-4-5-decision",
+  "author": "PursuitOfDataScience",
+  "url": "https://huggingface.co/PursuitOfDataScience/argonne-4.5-decision",
+  "created_at": "2026-10-01T22:57:04.000Z",
+  "updated_at": "2026-10-01T23:19:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "argonne2",
+    "argonne",
+    "decision",
+    "classification",
+    "zero-shot-classification",
+    "calibration",
+    "custom_code",
+    "en",
+    "base_model:PursuitOfDataScience/argonne-4.5-base-ctx13568",
+    "base_model:finetune:PursuitOfDataScience/argonne-4.5-base-ctx13568",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2063639552,
+  "parameters_human": "2.06B",
+  "storage_bytes": 4144320102,
+  "storage_human": "4.1 GB",
+  "base_model": "PursuitOfDataScience/argonne-4.5-base-ctx13568",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PursuitOfDataScience/argonne-4.5-base · Hugging Face",
+      "url": "https://huggingface.co/PursuitOfDataScience/argonne-4.5-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PursuitOfDataScience/argonne-4.5-base-ctx13568 · Hugging Face",
+      "url": "https://huggingface.co/PursuitOfDataScience/argonne-4.5-base-ctx13568",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PursuitOfDataScience/ArgonneAI: LLM Pretraining, Midtraining ...",
+      "url": "https://github.com/PursuitOfDataScience/ArgonneAI",
+      "snippet": "LLM Pretraining, Midtraining, and Post-training. Contribute to PursuitOfDataScience/ArgonneAI development by creating an account on GitHub."
+    },
+    {
+      "title": "ArgonneAI/model.py at main · PursuitOfDataScience/ArgonneAI",
+      "url": "https://github.com/PursuitOfDataScience/ArgonneAI/blob/main/model.py",
+      "snippet": "LLM Pretraining, Midtraining, and Post-training. Contribute to PursuitOfDataScience/ArgonneAI development by creating an account on GitHub."
+    },
+    {
+      "title": "Introducing Gemini 4 Argon - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "snippet": "Announcing Gemini 4 Argon, our frontier model for real-world coding, enterprise knowledge work, and cyber defense, rolling out soon."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Deepdive404-3/GLiNER2.5-Decide",
+  "slug": "deepdive404-3-gliner2-5-decide",
+  "author": "Deepdive404-3",
+  "url": "https://huggingface.co/Deepdive404-3/GLiNER2.5-Decide",
+  "created_at": "2026-10-01T20:40:33.000Z",
+  "updated_at": "2026-10-01T20:40:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "Text classification",
+    "Intent classification",
+    "Sentiment Analysis",
+    "Topic classification",
+    "Named Entity Recognition",
+    "token-classification",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2-large-v1",
+    "base_model:finetune:fastino/gliner2-large-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 486444053,
+  "parameters_human": "486.4M",
+  "storage_bytes": 1946476414,
+  "storage_human": "1.9 GB",
+  "base_model": "fastino/gliner2-large-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLiNER2.5-Decide: An Open-Weight Model for Structured Decision Making",
+      "url": "https://fastino.ai/blog/gliner-2-5-decide-open-weight-decision-model",
+      "snippet": "GLiNER2.5-Decide is an encoder-based decision model post-trained specifically for structured decision-making. It evaluates user-defined typed questions and can decode related answers jointly under explicit constraints, returning structured decisions with probabilities, confidence scores, and feasibility metadata."
+    },
+    {
+      "title": "fastino/GLiNER2.5-Decide · Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiNER2.5-Decide",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fastino GLiNER2.5-Decide: 340M CPU AI Model [2026]",
+      "url": "https://shattered.io/fastino-gliner2-5-decide-340m-cpu-model-2026/",
+      "snippet": "Fastino Labs released GLiNER2.5-Decide on September 24, 2026, an open-weight decision model built to run on ordinary CPU hardware instead of a GPU cluster. The model carries 340 million parameters according to Fastino&#x27;s release materials and its Hugging Face model card, and it ships under the Apache 2.0 license at fastino/GLiNER2.5-Decide."
+    },
+    {
+      "title": "GLiNER2.5: Open-Source Information Extraction Model - fastino.ai",
+      "url": "https://fastino.ai/models/gliner2-5",
+      "snippet": "GLiNER2.5 is an open-source model for schema-driven information extraction, including efficient entity and relation extraction with no fixed span-length limit."
+    },
+    {
+      "title": "fastino/GLiNER2.5-Decide at main - Hugging Face",
+      "url": "https://huggingface.co/fastino/GLiNER2.5-Decide/tree/main",
+      "snippet": "Google Colab Kaggle main GLiNER2.5-Decide 1.95 GB Ctrl+K Ctrl+K 5 contributors History:19 commits urchade Normalize model card and move benchmark near top 7ee5da4 verified38 minutes ago encoder_configUpload large classification finetune at step 955001 day ago .gitattributes 1.59 kBupload banner (#1)about 19 hours ago GLiNER-2.5-Decision-HF ..."
+    }
+  ]
+}

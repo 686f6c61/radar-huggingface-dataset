@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov6n",
+  "slug": "rknnai-rk3588-cnn-yolov6n",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov6n",
+  "created_at": "2026-10-02T01:29:28.000Z",
+  "updated_at": "2026-10-02T01:29:54.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5607076,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASME B16.5 跟 ASME B16.34 具体区别是什么 貌似讲的都一样",
+      "url": "https://zhidao.baidu.com/question/428097168.html",
+      "snippet": "May 24, 2012 · 16.5是讲的法兰，侧重法兰的各项加工尺寸；16.34讲的是阀门，侧重一个阀门的设计标准。一个是法兰一个是阀门， …"
+    },
+    {
+      "title": "苏30和苏34在航程及载弹量方面都很接近，俄罗斯为何还要额外开发 …",
+      "url": "https://www.zhihu.com/question/264905981",
+      "snippet": "苏-34在其设计上强调较高的翼载以在低空飞行面对紊流时更好的稳定性，因此具备一个沉重的前部机身，并且加装了大量装甲，以至 …"
+    },
+    {
+      "title": "裤子尺码34是XL还是L的？_百度知道",
+      "url": "https://zhidao.baidu.com/question/541189622.html",
+      "snippet": "裤子34是XL码。 男裤XS号 165 A 28码 腰围2尺1 S号 165 B 29码 腰围2尺2 M号 170A 30码 腰围2尺3 L号 170B 32码 腰围2尺4 XL号 …"
+    },
+    {
+      "title": "Gemeindliches Einvernehmen ᐅ BauGB, Definition & Bedeutung",
+      "url": "https://www.juraforum.de/lexikon/gemeindliches-einvernehmen",
+      "snippet": "May 1, 2026 · Gemeindliches Einvernehmen und seine Bedeutung im Baurecht (BauGB) ️ Voraussetzungen ️ …"
+    },
+    {
+      "title": "Innenbereich ᐅ Definition und Bedeutung des Begriffs",
+      "url": "https://www.juraforum.de/lexikon/innenbereich",
+      "snippet": "Oct 27, 2025 · Als Innenbereich werden im deutschen Bauplanungsrecht Gebiete der im Zusammenhang bebauten Ortsteile …"
+    }
+  ]
+}

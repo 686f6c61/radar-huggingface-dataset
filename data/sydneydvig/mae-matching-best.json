@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sydneydvig/mae-matching-best",
+  "slug": "sydneydvig-mae-matching-best",
+  "author": "sydneydvig",
+  "url": "https://huggingface.co/sydneydvig/mae-matching-best",
+  "created_at": "2026-10-02T01:38:13.000Z",
+  "updated_at": "2026-10-02T01:38:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Best AI Models 2026 - By Use Case | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-models",
+      "snippet": "The best AI models for coding, writing, math, reasoning, and image generation. Updated hourly with live scores from 350+ models across 55+ providers."
+    },
+    {
+      "title": "Best AI Right Now - Top Model 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-right-now",
+      "snippet": "Which AI model is the best right now? See today&#x27;s top-ranked AI model plus category winners for coding, writing, math, and image generation with source-backed pricing and benchmark freshness."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "Compare AI Models Side-by-Side | Best AI Models",
+      "url": "https://best-ai-models.com/compare",
+      "snippet": "Pick 2-4 AI models and compare rank, scores, pricing and strengths side by side, refreshed every other day."
+    }
+  ]
+}

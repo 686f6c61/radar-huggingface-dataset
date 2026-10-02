@@ -5,7 +5,7 @@
   "author": "HanLinqi",
   "url": "https://huggingface.co/HanLinqi/GR00T-N1.7-ForceBenchmark-USBv4-WeightSortingV1-2x30K-20260930",
   "created_at": "2026-09-30T02:57:30.000Z",
-  "updated_at": "2026-09-30T07:29:46.000Z",
+  "updated_at": "2026-10-01T05:11:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20926569549,
-  "storage_human": "20.9 GB",
+  "storage_bytes": 27860455720,
+  "storage_human": "27.9 GB",
   "base_model": "nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"

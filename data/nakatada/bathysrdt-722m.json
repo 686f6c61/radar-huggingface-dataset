@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nakatada/BathysRDT-722M",
+  "slug": "nakatada-bathysrdt-722m",
+  "author": "Nakatada",
+  "url": "https://huggingface.co/Nakatada/BathysRDT-722M",
+  "created_at": "2026-10-01T21:17:28.000Z",
+  "updated_at": "2026-10-01T21:23:01.000Z",
+  "license": "bathysrdt-research-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "recurrent-depth-transformer",
+    "weight-sharing",
+    "research",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2886547780,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AGIへの小さな一歩 ― AIが\"考える深さ\"を自ら決める技術 - Qiita",
+      "url": "https://qiita.com/nakatada-lab/items/1d39ef9b743874eadd0a",
+      "snippet": "推論深度という第四のスケーリング軸 従来のAI研究では、性能向上の手段は主に3つだった。 パラメータ数を増やす 学習データ量を増やす 計算資源を増やす BathysRDTが扱うのは、 「どれだけ深く考えるか」 という第四のスケーリング軸である。 再帰深度Transformer（RDT）は、単一の再帰ブロック ..."
+    },
+    {
+      "title": "Fast 3D — AI 3D Model Generator | Text to 3D & Image to 3D in Seconds",
+      "url": "https://www.fast3d.org/en",
+      "snippet": "Fast 3D is the fast AI 3D model generator that turns text prompts or images into fully-textured, production-ready 3D models in ~10 seconds. Text to 3D & image to 3D AI with GLB, OBJ, FBX & STL export."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

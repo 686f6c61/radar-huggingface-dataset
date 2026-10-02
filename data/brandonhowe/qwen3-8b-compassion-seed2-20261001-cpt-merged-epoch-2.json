@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Qwen3-8b-compassion-seed2-20261001-CPT-merged-epoch-2",
+  "slug": "brandonhowe-qwen3-8b-compassion-seed2-20261001-cpt-merged-epoch-2",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-seed2-20261001-CPT-merged-epoch-2",
+  "created_at": "2026-10-01T19:27:11.000Z",
+  "updated_at": "2026-10-01T19:27:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/compassion_12185_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-4 ...",
+      "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-4/discussions",
+      "snippet": "Instructions to use BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500",
+      "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-final-step-1500",
+      "snippet": "Training: 10,072 distinct documents plus 2,000 repeat exposures per epoch; 200 disjoint validation documents. Merged with Unsloth&#x27;s native save_pretrained_merged (save_method=\"merged_16bit\"). Weights are validated BF16 and packaged losslessly into eight safetensors shards. No adapter is required to load this model."
+    },
+    {
+      "title": "Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2",
+      "url": "https://friendli.ai/models/BrandonHowe/Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2",
+      "snippet": "Deploy Qwen3-8b-compassion-qwen-seed1-20260930-CPT-merged-epoch-2 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "New · Qwen3.8-9B / 4B / 2B — distilled Small models, trained in the open. We are an independent AI research lab in Germany, building language models efficient enough to run on hardware you own. Latest: a full-parameter distill of Qwen3.8-2.4T into 9B / 4B / 2B, and a GDN-aware 27B GGUF at 11.7 GiB. The open-weight Qwythos family has passed one million downloads on Hugging Face."
+    }
+  ]
+}

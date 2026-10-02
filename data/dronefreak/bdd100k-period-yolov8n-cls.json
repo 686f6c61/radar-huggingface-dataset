@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-yolov8n-cls",
+  "slug": "dronefreak-bdd100k-period-yolov8n-cls",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-yolov8n-cls",
+  "created_at": "2026-10-01T19:58:05.000Z",
+  "updated_at": "2026-10-01T20:24:46.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2304.00501",
+    "arxiv:1805.04687",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21399911,
+  "storage_human": "21 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.56
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 80.85
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 87.87
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 76.26
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/bdd100k-yolov8n · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolov8n",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dronefreak/bdd100k-yolov8s at main - Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolov8s/tree/main",
+      "snippet": "Libraries ultralytics How to use dronefreak/bdd100k-yolov8s with ultralytics: ... Notebooks Google Colab Kaggle main bdd100k-yolov8s 35.1 MB Ctrl+K Ctrl+K 1 contributor History:2 commits dronefreak Add BDD100K yolov8s model card, weights and assets ecce060 verifiedabout 7 hours ago assetsAdd BDD100K yolov8s model card, weights and assetsabout 7 ..."
+    },
+    {
+      "title": "a simple demo of yolov8 on BDD100K. - GitHub",
+      "url": "https://github.com/WangYangfan/yolov8",
+      "snippet": "a simple demo of yolov8 on BDD100K. Contribute to WangYangfan/yolov8 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - bdd100k/bdd100k: Toolkit of BDD100K Dataset for Heterogeneous ...",
+      "url": "https://github.com/bdd100k/bdd100k",
+      "snippet": "BDD100K is a diverse driving dataset for heterogeneous multitask learning. Homepage | Paper | Doc | Questions We construct BDD100K, the largest open driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. Each video has 40 seconds and a high resolution. The dataset represents more than 1000 hours of driving ..."
+    },
+    {
+      "title": "Bdd100k Dataset by Yaobocheng - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/yaobocheng/datasets/bdd100k",
+      "snippet": "A Large-scale Diverse Driving Video and Image Database"
+    }
+  ]
+}

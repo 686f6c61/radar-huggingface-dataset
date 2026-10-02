@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Modusnsus/laya-nli-conflict-v10-l1",
+  "slug": "modusnsus-laya-nli-conflict-v10-l1",
+  "author": "Modusnsus",
+  "url": "https://huggingface.co/Modusnsus/laya-nli-conflict-v10-l1",
+  "created_at": "2026-10-01T19:30:27.000Z",
+  "updated_at": "2026-10-01T19:36:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "typed-decisions",
+    "nli",
+    "memory-conflict",
+    "research-archive",
+    "not-delivered",
+    "reconstructed-checkpoint",
+    "text-classification",
+    "dataset:nyu-mll/multi_nli",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modusnsus/laya-nli-memory-conflict · Hugging Face",
+      "url": "https://huggingface.co/Modusnsus/laya-nli-memory-conflict",
+      "snippet": "Instructions to use Modusnsus/laya-nli-memory-conflict with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Modusnsus/laya-nli-memory-conflict with Transformers:"
+    },
+    {
+      "title": "Modusnsus (Modusnsus) - Hugging Face",
+      "url": "https://huggingface.co/Modusnsus",
+      "snippet": "models1 Modusnsus/laya-typed-decisions-multilingual 0.4B•Updated about 16 hours ago"
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "I Built Non-Autoregressive Decision Models with RL a Year Ago. Then a Frontier Lab Called It a \"Breakthrough\". From our March 2025 arXiv paper on sequence conversion trajectories to Laya: a sub-35ms open-weight System 1 decision engine with RLCD, multilingual routing across 100+ languages, and state-of-the-art calibration."
+    },
+    {
+      "title": "Laya Nli Memory Conflict - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/modusnsus/laya-nli-memory-conflict",
+      "snippet": "Registry entry for model Laya Nli Memory Conflict; source metadata pending."
+    },
+    {
+      "title": "GitHub - aayushch/laya: Laya is an open-source, local-first AI ...",
+      "url": "https://github.com/aayushch/laya",
+      "snippet": "A cadence for professional orchestration. Laya is an open-source, local-first AI notification command center that aggregates Slack, Gmail, GitHub, Jira, Notion, Outlook, and Calendar notifications — powered by local LLMs via Ollama and LM Studio, or cloud models like Claude and GPT with your own API keys. It intercepts events from your professional tools, performs autonomous research and ..."
+    }
+  ]
+}

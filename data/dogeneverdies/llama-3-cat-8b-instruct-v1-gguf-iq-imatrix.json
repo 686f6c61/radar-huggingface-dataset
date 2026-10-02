@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DogeNeverDies/llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix",
+  "slug": "dogeneverdies-llama-3-cat-8b-instruct-v1-gguf-iq-imatrix",
+  "author": "DogeNeverDies",
+  "url": "https://huggingface.co/DogeNeverDies/llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix",
+  "created_at": "2026-10-01T21:04:25.000Z",
+  "updated_at": "2026-10-01T21:04:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "llama3",
+    "sillytavern",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 55955158369,
+  "storage_human": "56.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix - Hugging Face",
+      "url": "https://huggingface.co/Lewdiculous/llama-3-cat-8b-instruct-v1-GGUF-IQ-Imatrix",
+      "snippet": "Cat-llama3-instruct Presented by: Dataset Builder: Dr. Kal&#x27;tsit (Kat) Trainer/Funding: SteelSkull Facilitator: Potatooff 70b variant of the model (Trained by Dr. Kal&#x27;tsit, Posted by Turboderp), Please check it out! About: Cat-llama3-instruct is a llama 3 8b finetuned model focusing on system prompt fidelity, helpfulness and character engagement."
+    },
+    {
+      "title": "bartowski/llama-3-cat-8b-instruct-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/llama-3-cat-8b-instruct-v1-GGUF",
+      "snippet": "Llamacpp imatrix Quantizations of llama-3-cat-8b-instruct-v1 Prompt format Download a file (not the whole branch) from below: Downloading using huggingface-cli Which file should I choose?"
+    },
+    {
+      "title": "Llama 3 Cat 8b Instruct V1 Gguf Iq Imatrix - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/llama-3-cat-8b-instruct-v1-gguf-iq-imatrix.html",
+      "snippet": "Download Llama 3 Cat 8b Instruct V1 Gguf Iq Imatrix GGUF model. 4.72 GB, 77 downloads, 17 likes."
+    },
+    {
+      "title": "GitHub - GargTanya/llama3-instruct: The official Meta Llama 3 GitHub ...",
+      "url": "https://github.com/GargTanya/llama3-instruct",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to GargTanya/llama3-instruct development by creating an account on GitHub."
+    },
+    {
+      "title": "Llama3-8B Instruct Int4 - NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/models/llama3-8b-instruct",
+      "snippet": "Meta Llama3-8B Instruct Int4 Built with Meta Llama 3 - Meta Llama 3 family of large language models (LLMs) is a collection of pretrained and instruction tuned generative text models in 8B and 70B sizes."
+    }
+  ]
+}

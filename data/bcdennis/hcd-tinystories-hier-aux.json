@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bcdennis/hcd-tinystories-hier-aux",
+  "slug": "bcdennis-hcd-tinystories-hier-aux",
+  "author": "bcdennis",
+  "url": "https://huggingface.co/bcdennis/hcd-tinystories-hier-aux",
+  "created_at": "2026-10-01T23:20:14.000Z",
+  "updated_at": "2026-10-01T23:49:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tinystories",
+    "from-scratch",
+    "hierarchical-concept-diffusion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 257925459,
+  "storage_human": "258 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roneneldan/TinyStories-Instruct-1M · Hugging Face",
+      "url": "https://huggingface.co/roneneldan/TinyStories-Instruct-1M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?dataset=dataset:roneneldan/TinyStories",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - Arnaufafi/TinyStories_LLM · GitHub",
+      "url": "https://github.com/Arnaufafi/TinyStories_LLM",
+      "snippet": "An educational, full-stack project implementing a GPT-style Large Language Model (LLM) from scratch using PyTorch, served via a FastAPI backend, and visualized through an interactive React dashboard. This project is designed to demystify the \"black box\" of AI by visualizing every step of the ..."
+    },
+    {
+      "title": "Tiny Stories - Personalised gifts & storybooks from photos",
+      "url": "https://tinystories.ai/",
+      "snippet": "Turn photos into illustrated characters for personalised storybooks, mugs, posters, puzzles, cushions, T-shirts and phone cases. Preview free before ordering."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

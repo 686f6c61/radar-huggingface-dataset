@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "topk-io/topk-embed-v1-xsmall",
+  "slug": "topk-io-topk-embed-v1-xsmall",
+  "author": "topk-io",
+  "url": "https://huggingface.co/topk-io/topk-embed-v1-xsmall",
+  "created_at": "2026-09-23T11:44:27.000Z",
+  "updated_at": "2026-09-30T14:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "ru",
+    "fr",
+    "nl",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "da",
+    "no",
+    "sv"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "topk_embed",
+    "image-text-to-text",
+    "multi-vector",
+    "retrieval",
+    "custom_code",
+    "feature-extraction",
+    "en",
+    "ru",
+    "fr",
+    "nl",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "da",
+    "no",
+    "sv",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 723,
+  "trending_score": 0,
+  "parameters": 854034496,
+  "parameters_human": "854.0M",
+  "storage_bytes": 1728420096,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nadia Amine (@nadiakamine) • Instagram photos and videos",
+      "url": "https://www.instagram.com/nadiakamine/",
+      "snippet": "312K Followers, 252 Following, 67 Posts - Nadia Amine (@nadiakamine) on Instagram: \"Content creator/Professional Gamer …"
+    },
+    {
+      "title": "littlenadia1234 - YouTube",
+      "url": "https://www.youtube.com/@littlenadia1234",
+      "snippet": "280 views • 16 years ago Playlists"
+    },
+    {
+      "title": "Ty Nadia (@nadiabla999) • Instagram photos and videos",
+      "url": "https://www.instagram.com/Nadiabla999/",
+      "snippet": "124K Followers, 2,463 Following, 106 Posts - See Instagram photos and videos from Ty Nadia (@Nadiabla999)"
+    },
+    {
+      "title": "allbout.nadia Official: TikTok, Instagram | Linktree",
+      "url": "https://linktr.ee/allbout.nadia",
+      "snippet": "Linktree. Make your link do more. allbout.nadia has been a member of Linktree for 2 years and joined in December 2023. Resources …"
+    },
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/r/NadiaWillinghamHUB/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

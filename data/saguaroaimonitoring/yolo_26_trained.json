@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SaguaroAIMonitoring/YOLO_26_Trained",
+  "slug": "saguaroaimonitoring-yolo_26_trained",
+  "author": "SaguaroAIMonitoring",
+  "url": "https://huggingface.co/SaguaroAIMonitoring/YOLO_26_Trained",
+  "created_at": "2026-10-01T21:51:50.000Z",
+  "updated_at": "2026-10-01T21:51:50.000Z",
+  "license": "cc",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ultralytics/yolo26: Ultralytics YOLO26 quickstart for ...",
+      "url": "https://github.com/ultralytics/yolo26",
+      "snippet": "🧩 Integrations Ultralytics integrations extend dataset labeling, training, visualization, deployment, and model management workflows. Explore Ultralytics Platform and the Ultralytics Integrations docs to connect YOLO26 with your AI stack, including popular export formats like TensorRT, ONNX, CoreML, and TFLite."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Ultralytics supports a wide range of YOLO models, from early versions like YOLOv3 to the latest YOLO26. The tables below showcase YOLO26 models pretrained on COCO for Detection, Segmentation, and Pose Estimation."
+    },
+    {
+      "title": "YOLO26 Training Recipe | Ultralytics",
+      "url": "https://docs.ultralytics.com/guides/yolo26-training-recipe",
+      "snippet": "Learn how YOLO26 models were trained, from Objects365 pretraining to COCO fine-tuning, including optimizer settings, augmentation pipelines, loss weights, embedded training logs, and fine-tuning guidance for each model size."
+    },
+    {
+      "title": "YOLO-26 Release: Architecture and Performance Benchmarks",
+      "url": "https://blog.unitlab.ai/yolo-26-release-architecture-performance-benchmarks-and-real-world-use-cases-2026-guide/",
+      "snippet": "Performance Benchmarks The YOLO-26 family includes multiple model variants designed to address different trade-offs between accuracy, inference speed, and computational cost. These variants allow practitioners to select an appropriate model based on available hardware resources, latency requirements, and target application scenarios. Lighter models prioritize fast inference and low resource ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "allura-forge/Rambley-150m-RL-ICL-ckpts",
+  "slug": "allura-forge-rambley-150m-rl-icl-ckpts",
+  "author": "allura-forge",
+  "url": "https://huggingface.co/allura-forge/Rambley-150m-RL-ICL-ckpts",
+  "created_at": "2026-10-01T19:46:04.000Z",
+  "updated_at": "2026-10-01T20:34:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:2402.03300",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149935616,
+  "parameters_human": "149.9M",
+  "storage_bytes": 3617112182,
+  "storage_human": "3.6 GB",
+  "base_model": "allura-org/Rambley-150m-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allura-forge/Rambley-150M-RealBase at main - Hugging Face",
+      "url": "https://huggingface.co/allura-forge/Rambley-150M-RealBase/tree/main",
+      "snippet": "allura-forge / Rambley-150M-RealBase like 0 Follow Allura (Forge) 75 Safetensors olmo3 Model card FilesFiles and versions xet Community Copy to bucket new main Rambley-150M-RealBase 607 MB Ctrl+K Ctrl+K 1 contributor History:5 commits Fizzarolli Update README.md 05b9308 verifiedabout 3 hours ago .gitattributes Safe 1.52 kBinitial commitabout 10 hours ago README.md 5.69 kBUpdate README.mdabout ..."
+    },
+    {
+      "title": "allura-org/Rambley-150M-Base · Hugging Face",
+      "url": "https://huggingface.co/allura-org/Rambley-150M-Base",
+      "snippet": "allura-org / Rambley-150M-Base like 1 Follow Allura 367 Safetensors olmo3 License:cc-by-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new Motivation Ablations Benchmarks Code / Logs"
+    },
+    {
+      "title": "ALLURA.MOE - Model Archive",
+      "url": "https://allura.moe/models/index.html",
+      "snippet": "🤖 MODEL ARCHIVE 🤖 Browse Allura&#x27;s complete collection of finetuned models"
+    },
+    {
+      "title": "allura-org/Rambley-150M-RealBase • hfviewer",
+      "url": "https://hfviewer.com/allura-org/Rambley-150M-RealBase",
+      "snippet": "allura-org/Rambley-150M-RealBase . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and repeated blocks are grouped with their true repeat counts."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    }
+  ]
+}

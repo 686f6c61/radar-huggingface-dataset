@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pbcong/tars-paper-reconstruction-13b-mask-s42-ep3",
+  "slug": "pbcong-tars-paper-reconstruction-13b-mask-s42-ep3",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep3",
+  "created_at": "2026-10-01T22:28:02.000Z",
+  "updated_at": "2026-10-02T02:15:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "base_model:liuhaotian/llava-v1.5-13b",
+    "base_model:finetune:liuhaotian/llava-v1.5-13b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13350839296,
+  "parameters_human": "13.35B",
+  "storage_bytes": 26702282395,
+  "storage_human": "26.7 GB",
+  "base_model": "liuhaotian/llava-v1.5-13b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2604.01128] Paper Reconstruction Evaluation: Evaluating Presentation ...",
+      "url": "https://arxiv.org/abs/2604.01128",
+      "snippet": "This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous evaluation of the quality and potential risks of AI-written papers remains limited, and a unified understanding of their reliability is still lacking. We introduce Paper ..."
+    },
+    {
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and ...",
+      "url": "https://arxiv.org/pdf/2604.01128",
+      "snippet": "In this work, we introduce Paper Reconstruction Evaluation, the first systematic evaluation framework for AI-generated scientific papers. Along with PaperWrite-Bench, we conduct a comprehensive evaluation of the capabilities and risks of modern writing agents."
+    },
+    {
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and ...",
+      "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260401128M/abstract",
+      "snippet": "This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous evaluation of the quality and potential risks of AI-written papers remains limited, and a unified understanding of their reliability is still lacking. We introduce Paper ..."
+    },
+    {
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and ...",
+      "url": "https://www.alphaxiv.org/abs/2604.01128v1",
+      "snippet": "View recent discussion. Abstract: This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous evaluation of the quality and potential risks of AI-written papers remains limited, and a unified understanding of their reliability is still ..."
+    },
+    {
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and ...",
+      "url": "https://www.catalyzex.com/paper/paper-reconstruction-evaluation-evaluating",
+      "snippet": "Paper Reconstruction Evaluation: Evaluating Presentation and Hallucination in AI-written Papers: Paper and Code. This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents."
+    }
+  ]
+}

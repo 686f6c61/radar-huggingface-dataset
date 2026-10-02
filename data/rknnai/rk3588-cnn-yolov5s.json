@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov5s",
+  "slug": "rknnai-rk3588-cnn-yolov5s",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov5s",
+  "created_at": "2026-10-02T01:28:57.000Z",
+  "updated_at": "2026-10-02T01:29:23.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8431866,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rknpu2/examples/rknn_yolov5_demo/model/RK3588 at master - GitHub",
+      "url": "https://github.com/rockchip-linux/rknpu2/tree/master/examples/rknn_yolov5_demo/model/RK3588",
+      "snippet": "Contribute to rockchip-linux/rknpu2 development by creating an account on GitHub."
+    },
+    {
+      "title": "How to Run CNN Models on RK3588 - sensecraft.seeed.cc",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/tools/rk/rk3588-cnn-rknn2-deploy",
+      "snippet": "How to Run CNN Models on RK3588 Convert YOLO11n on an Ubuntu PC, deploy it to RK3588 over SSH/SCP, and verify C++ and Python inference on its built-in NPU."
+    },
+    {
+      "title": "RKNNAI (RKNNAI) - Hugging Face",
+      "url": "https://huggingface.co/RKNNAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "0312birdzhang/yolov5_for_rk3588: YOLOv5 in PyTorch - GitHub",
+      "url": "https://github.com/0312birdzhang/yolov5_for_rk3588",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLOv5 and YOLOv8 🚀 model training and deployment, without any coding. Transform images into actionable insights and bring your AI visions to life with ease using our cutting-edge platform and user-friendly Ultralytics App. Start your journey for Free now!"
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+      "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    }
+  ]
+}

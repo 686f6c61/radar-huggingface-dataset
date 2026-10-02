@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-multiplayer-trumpet-blowing-lora",
+  "slug": "runninghubai-rh-multiplayer-trumpet-blowing-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-multiplayer-trumpet-blowing-lora",
+  "created_at": "2026-10-01T21:04:01.000Z",
+  "updated_at": "2026-10-01T21:05:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228770794,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multiplayer trumpet blowing - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/2079905345652150274",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Multiplayer playing trumpets (2.0) - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2076465515111149569",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/models",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. published a model 3 minutes ago. RunningHubAI/rh-z-imagebase-fp16-unet"
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "Trumpet - V1 | Pony Diffusion LoRA | Civitai",
+      "url": "https://civitai.red/models/589535/trumpet",
+      "snippet": "Best to use with strength between 0.8 and 1.0 use tags trumpet, playing trumpet"
+    }
+  ]
+}

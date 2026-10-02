@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "haibo-lgi/CORD-PHM",
+  "slug": "haibo-lgi-cord-phm",
+  "author": "haibo-lgi",
+  "url": "https://huggingface.co/haibo-lgi/CORD-PHM",
+  "created_at": "2026-10-01T21:17:17.000Z",
+  "updated_at": "2026-10-01T21:25:33.000Z",
+  "license": "no-separate-model-license-specified",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "cord",
+    "time-series",
+    "prognostics",
+    "predictive-maintenance",
+    "remaining-useful-life",
+    "representation-learning",
+    "self-supervised-learning",
+    "industrial-ai",
+    "feature-extraction",
+    "arxiv:2609.39784",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 942828,
+  "storage_human": "942828 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HAIBO — AI Transformation & Governance for Consulting",
+      "url": "https://www.haibo.ai/",
+      "snippet": "HAIBO is the AI operating system for consulting firms — delivering verified intelligence, transformation, and governance across every engagement. Arriving 2026."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "‪Haibo Li 李海波‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=f8TtK7EAAAAJ&hl=en",
+      "snippet": "‪School of Mathematics and Statistics, Huazhong University of Science and Technology‬ - ‪‪Cited by 75‬‬ - ‪Inverse Problem‬ - ‪Numerical Linear Algebra‬ - ‪Scientific Machine Learning‬"
+    },
+    {
+      "title": "Haibo Li&#x27;s articles on arXiv",
+      "url": "https://arxiv.org/a/li_h_18",
+      "snippet": "Haibo Li Subjects: Numerical Analysis (math.NA) [6] arXiv:2411.13850 [pdf, other] ALKPU: an active learning method for the DeePMD model with Kalman filter Haibo Li, Xingxing Wu, Liping Liu, Lin-Wang Wang, Long Wang, Guangming Tan, Weile Jia Subjects: Computational Physics (physics.comp-ph) [7] arXiv:2408.09412 [pdf, other]"
+    },
+    {
+      "title": "Large language models for PHM: a review of optimization ... - Springer",
+      "url": "https://link.springer.com/article/10.1007/s43684-025-00100-5",
+      "snippet": "The rapid advancement of Large Language Models (LLMs) has created unprecedented opportunities for industrial automation, process optimization, and decision support systems. As industries seek to leverage LLMs for industrial tasks, understanding their architecture, deployment strategies, and fine-tuning methods becomes critical. In this review, we aim to summarize the challenges, key ..."
+    }
+  ]
+}

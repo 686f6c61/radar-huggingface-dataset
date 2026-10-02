@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Intlayer/intlayer",
+  "slug": "intlayer-intlayer",
+  "author": "Intlayer",
+  "url": "https://huggingface.co/Intlayer/intlayer",
+  "created_at": "2026-10-01T20:31:45.000Z",
+  "updated_at": "2026-10-01T20:31:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advanced JS i18n - your Multi-framework Multilingual Content Management ...",
+      "url": "https://intlayer.org/",
+      "snippet": "Boost your app scalability with Intlayer: an internationalization (i18n) and content management solution powered by AI. Designed for React, Next.js, Vue, Svelte and more."
+    },
+    {
+      "title": "GitHub - aymericzip/intlayer: Per-component Internationalisation ...",
+      "url": "https://github.com/aymericzip/intlayer",
+      "snippet": "Intlayer is a modern i18n solution for web and mobile apps. It&#x27;s framework-agnostic, AI-powered, and includes a free CMS & visual editor. With per-locale content files, TypeScript autocompletion, tree-shakable dictionaries, and CI/CD integration, Intlayer makes internationalization faster, cleaner, and smarter."
+    },
+    {
+      "title": "intlayer - npm",
+      "url": "https://www.npmjs.com/package/intlayer",
+      "snippet": "Intlayer is a modern i18n solution for web and mobile apps. It&#x27;s framework-agnostic, AI-powered, and includes a free CMS & visual editor. With per-locale content files, TypeScript autocompletion, tree-shakable dictionaries, and CI/CD integration, Intlayer makes internationalization faster, cleaner, and smarter."
+    },
+    {
+      "title": "aymericzip/intlayer · Hugging Face",
+      "url": "https://huggingface.co/aymericzip/intlayer",
+      "snippet": "Intlayer AI Site (ai.intlayer.org) Landing page and web showcase for ai.intlayer.org — highlighting Intlayer &#x27;s AI-powered internationalization (i18n), dynamic content generation, A/B testing, and AI-driven translation workflows."
+    },
+    {
+      "title": "How Intlayer Works | Intlayer",
+      "url": "https://intlayer.org/doc/concept/how-works-intlayer",
+      "snippet": "The @intlayer/mcp package provides an MCP (Model Context Protocol) server that delivers AI-powered IDE assistance tailored for the Intlayer ecosystem. It automatically loads documentation and integrates with the Intlayer CLI."
+    }
+  ]
+}

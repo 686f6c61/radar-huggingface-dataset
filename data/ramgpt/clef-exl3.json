@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ramgpt/clef-EXL3",
+  "slug": "ramgpt-clef-exl3",
+  "author": "ramgpt",
+  "url": "https://huggingface.co/ramgpt/clef-EXL3",
+  "created_at": "2026-10-02T00:06:03.000Z",
+  "updated_at": "2026-10-02T00:13:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "clef",
+    "systemone",
+    "qwen3.8",
+    "structured-output",
+    "classification",
+    "base_model:Cloudflare/clef",
+    "base_model:quantized:Cloudflare/clef",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8942644608,
+  "parameters_human": "8.94B",
+  "storage_bytes": 18161774945,
+  "storage_human": "18.2 GB",
+  "base_model": "Cloudflare/clef",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - turboderp-org/exllamav3: An optimized quantization and ...",
+      "url": "https://github.com/turboderp-org/exllamav3",
+      "snippet": "An optimized quantization and inference library for running LLMs locally on modern consumer-class GPUs - turboderp-org/exllamav3"
+    },
+    {
+      "title": "CLEF: EEG Foundation Model for Learning Clinical Semantics",
+      "url": "https://arxiv.org/pdf/2605.10817v1",
+      "snippet": "We introduce CLEF, a CLinical EEG Foundation model built on two principles: long-context modeling at the scale of a full EEG session, and grounding in clinical semantics. Extending EEG foundation models from seconds to full sessions is not merely increasing context length."
+    },
+    {
+      "title": "CLEF: EEG Foundation Model for Learning Clinical Semantics",
+      "url": "https://arxiv.org/abs/2605.10817",
+      "snippet": "Clinical EEG interpretation requires reasoning over full EEG sessions and integrating signal patterns with clinical context. Existing EEG foundation models are largely designed for short-window decoding and do not incorporate clinical context. We introduce CLEF, a clinically grounded long-context EEG foundation model. CLEF represents EEG sessions as 3D multitaper spectrogram tokens, enabling ..."
+    },
+    {
+      "title": "GGUF vs GPTQ vs AWQ vs EXL2: LLM Model Formats Explained (2026)",
+      "url": "https://www.marktechpost.com/2026/09/18/gguf-vs-gptq-vs-awq-vs-exl2-llm-model-formats-explained-2026/",
+      "snippet": "GGUF, GPTQ, AWQ, EXL2, EXL3 explained: verified bits-per-weight, calibration, hardware fit, and runtime support for running local LLMs."
+    },
+    {
+      "title": "LLM Quantization Formats Compared: GGUF vs MLX vs EXL3 vs GPTQ vs AWQ ...",
+      "url": "https://d-central.tech/llm-quantization-formats/",
+      "snippet": "Which quantized model file to download, decided by the hardware you own: runtime support, real hardware limits and calibration needs for GGUF, MLX, EXL3, GPTQ, AWQ and FP8."
+    }
+  ]
+}

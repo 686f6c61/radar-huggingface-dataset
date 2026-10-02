@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-convnext_atto",
+  "slug": "dronefreak-bdd100k-period-convnext_atto",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-convnext_atto",
+  "created_at": "2026-10-01T19:51:54.000Z",
+  "updated_at": "2026-10-01T20:24:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2201.03545",
+    "arxiv:1805.04687",
+    "base_model:timm/convnext_atto.d2_in1k",
+    "base_model:finetune:timm/convnext_atto.d2_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31393960,
+  "storage_human": "31 MB",
+  "base_model": "timm/convnext_atto.d2_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.95
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 80.75
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 86.39
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 76.82
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/bdd100k-yolov9t · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolov9t",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dronefreak/bdd100k-yolov9t at main - Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolov9t/tree/main",
+      "snippet": "Instructions to use dronefreak/bdd100k-yolov9t with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/bdd100k-yolov9t with ultralytics:"
+    },
+    {
+      "title": "GitHub - SysCV/bdd100k-models: Model Zoo of BDD100K Dataset",
+      "url": "https://github.com/SysCV/bdd100k-models",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - bdd100k/bdd100k: Toolkit of BDD100K Dataset for Heterogeneous ...",
+      "url": "https://github.com/bdd100k/bdd100k",
+      "snippet": "We construct BDD100K, the largest open driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. Each video has 40 seconds and a high resolution. The dataset represents more than 1000 hours of driving experience with more than 100 million frames."
+    },
+    {
+      "title": "Berkeley DeepDrive",
+      "url": "http://bdd-data.berkeley.edu/",
+      "snippet": "Please go to our discussion board with any questions on the BDD100K dataset usage and contact Fisher Yu for other inquiries."
+    }
+  ]
+}

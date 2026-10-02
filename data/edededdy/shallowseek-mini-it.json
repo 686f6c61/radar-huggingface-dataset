@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "edededdy/ShallowSeek-mini-it",
+  "slug": "edededdy-shallowseek-mini-it",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/ShallowSeek-mini-it",
+  "created_at": "2026-10-01T22:45:54.000Z",
+  "updated_at": "2026-10-01T22:46:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "deepseek",
+    "multi-head-latent-attention",
+    "mla",
+    "from-scratch",
+    "tiny",
+    "chat",
+    "instruction-tuned",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:edededdy/ShallowSeek-mini-base",
+    "base_model:finetune:edededdy/ShallowSeek-mini-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12105360,
+  "parameters_human": "12.1M",
+  "storage_bytes": 83030200,
+  "storage_human": "83 MB",
+  "base_model": "edededdy/ShallowSeek-mini-base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edededdy (Edmund Martin) - Hugging Face",
+      "url": "https://huggingface.co/edededdy",
+      "snippet": "edededdy/ShallowSeek-mini-base Text Generation • 12.1M•Updated about 3 hours ago ShallowSeek Small models based on DeepSeek papers"
+    },
+    {
+      "title": "edededdy/ShallowSeek-mini-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/edededdy/ShallowSeek-mini-base-GGUF",
+      "snippet": "ShallowSeek-mini-base is a tiny DeepSeek-V3-style Mixture-of-Experts language model trained from scratch on a laptop CPU. It has 11.0M parameters in total, of which 6.3M are active per token."
+    },
+    {
+      "title": "Using AI Models - shallowseek User Manual",
+      "url": "https://doc.shallowseek.top/en/guide/using-models.html",
+      "snippet": "Using AI Models Overview shallowseek provides a fully OpenAI-compatible API format. You can use any OpenAI SDK or OpenAI-compatible client directly — just change the Base URL and API Key."
+    },
+    {
+      "title": "Using AI Models - shallowseek User Manual",
+      "url": "https://doc.shallowseek.top/guide/using-models.html",
+      "snippet": "The platform API is compatible with the OpenAI API format. Existing code and third-party clients (such as ChatBox, Cherry Studio, LobeChat, etc.) work without modification. Just replace the API address and Key."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder."
+    }
+  ]
+}

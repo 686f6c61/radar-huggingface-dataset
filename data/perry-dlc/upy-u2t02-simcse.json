@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Perry-DLC/upy-u2t02-simcse",
+  "slug": "perry-dlc-upy-u2t02-simcse",
+  "author": "Perry-DLC",
+  "url": "https://huggingface.co/Perry-DLC/upy-u2t02-simcse",
+  "created_at": "2026-10-02T01:13:44.000Z",
+  "updated_at": "2026-10-02T01:14:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "simcse",
+    "sentence-similarity",
+    "en",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951304,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - princeton-nlp/SimCSE: [EMNLP 2021] SimCSE: Simple Contrastive ...",
+      "url": "https://github.com/princeton-nlp/SimCSE",
+      "snippet": "We propose a simple contrastive learning framework that works with both unlabeled and labeled data. Unsupervised SimCSE simply takes an input sentence and predicts itself in a contrastive learning framework, with only standard dropout used as noise. Our supervised SimCSE incorporates annotated pairs from NLI datasets into contrastive learning by using entailment pairs as positives and ..."
+    },
+    {
+      "title": "Perry-DLC (Diego Loria) - Hugging Face",
+      "url": "https://huggingface.co/Perry-DLC",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 1 hour ago ... updated a model about 2 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 783 AI models across 645 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Perry-DLC (Diego Loria) - Hugging Face",
+      "url": "https://huggingface.co/Perry-DLC/models",
+      "snippet": "Perry-DLC&#x27;s models1 Sort: Recently updated Perry-DLC/upy-tds-bert-ner-conll2003 Token Classification • 0.1B•Updated about 4 hours ago"
+    },
+    {
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+      "url": "https://arxiv.org/pdf/2104.08821v4",
+      "snippet": "Abstract This paper presents SimCSE, a simple con-trastive learning framework that greatly ad-vances state-of-the-art sentence embeddings. We first describe an unsupervised approach, which takes an input sentence and predicts itself in a contrastive objective, with only standard dropout used as noise. This simple method works surprisingly well, performing on par with previous supervised ..."
+    }
+  ]
+}

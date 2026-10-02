@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Dennits/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "slug": "dennits-huihui-glm-5-3-flash-abliterated-gguf",
+  "author": "Dennits",
+  "url": "https://huggingface.co/Dennits/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+  "created_at": "2026-10-01T19:55:58.000Z",
+  "updated_at": "2026-10-01T19:55:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "unsloth",
+    "glm5_next",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 450780689824,
+  "storage_human": "450.8 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/GLM-5.3-Flash-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/GLM-5.3-Flash-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF",
+      "snippet": "Instructions to use huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "huihui.ai on X: \"@danNH2006 GLM-5.3-Flash-abliterated-UD-Q4_K_XL, 2*RTX ...",
+      "url": "https://x.com/support_huihui/status/2103803831939486050",
+      "snippet": "Hey HuiHui team, how many RTX 6000 PRO are needed for running this model? Thanks for the big effort 1 55 huihui.ai @support_huihui GLM-5.3-Flash-abliterated-UD-Q4_K_XL, 2*RTX 6000 Pro, 20t/s 11:08 AM · Sep 26, 2026 · 35 Views"
+    },
+    {
+      "title": "Danny Hernández on X: \"@support_huihui Hey HuiHui team, how many RTX ...",
+      "url": "https://x.com/danNH2006/status/2103795603298038099",
+      "snippet": "New GGUF: huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF This is an uncensored version of zai-org/GLM-5.3-Flash created with abliteration. Note GGUFs come from unsloth/GLM-5.3-Flash-GGUF. Only layers 15 to 35 (0-based indexing) have been ablated, while the other layers remain Show more huihui-ai/GLM-5.3-Flash-abliterated-GGUF · Hugging Face From huggingface.co 4 3 34 2.7K Danny Hernández ..."
+    },
+    {
+      "title": "GitHub - glm-5-3-flash/glm-5.3-flash: Desktop client for GLM-5.3-Flash ...",
+      "url": "https://github.com/glm-5-3-flash/glm-5.3-flash",
+      "snippet": "Remember 0x Alpha — the mysterious model that showed up on OpenRouter with a 1M-token context and coding chops that had everyone guessing? The developers confirmed it to Bloomberg: it was GLM-5.3-Flash, Z.AI&#x27;s new speed-tuned coding model, and the weights are out. Same GLM-5.3 intelligence the community was raving about, tuned to run faster and lighter — and free. This is the one-click ..."
+    }
+  ]
+}

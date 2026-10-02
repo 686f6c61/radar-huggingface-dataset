@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov8m",
+  "slug": "rknnai-rk3588-cnn-yolov8m",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov8m",
+  "created_at": "2026-10-02T01:30:30.000Z",
+  "updated_at": "2026-10-02T01:30:58.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28130637,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "rknn_model_zoo/examples/yolov8 at main - GitHub",
+      "url": "https://github.com/airockchip/rknn_model_zoo/tree/main/examples/yolov8",
+      "snippet": "Contribute to airockchip/rknn_model_zoo development by creating an account on GitHub."
+    },
+    {
+      "title": "RKNN Toolkit Lite2 YOLOv8 | Radxa Docs",
+      "url": "https://docs.radxa.com/en/rock5/rock5t/app-development/ai/rknn-toolkit-lite2-yolov8",
+      "snippet": "This example uses a pre-trained ONNX model from the rknn_model_zoo to illustrate the complete process from model conversion on the PC to on-device inference. The target platform in this example is RK3588. Deploying YOLOv8 with RKNN involves two main steps: On the PC, use rknn-toolkit2 to convert models from different frameworks into RKNN format. On the device, use the Python API of rknn ..."
+    },
+    {
+      "title": "Model Examples | airockchip/rknn_model_zoo | DeepWiki",
+      "url": "https://deepwiki.com/airockchip/rknn_model_zoo/5-model-examples",
+      "snippet": "Model Examples Relevant source files This page provides a comprehensive overview of the pre-trained machine learning models included in the RKNN Model Zoo. These models have been optimized for deployment on Rockchip Neural Processing Units (NPUs) and cover a wide range of AI applications. For information about the model conversion workflow, see Model Conversion Workflow, and for details on ..."
+    },
+    {
+      "title": "Use YoloV8 in RK3588 NPU - ROCK 5 Series - Radxa Community",
+      "url": "https://forum.radxa.com/t/use-yolov8-in-rk3588-npu/15838",
+      "snippet": "The issue I came across in physical mode of the RK3588 NPU is the add model in the model.22 (post-processing stage of the bounding-box generation) and the issue is consistent in different runs. And the solution is to remove the node which causes the issue and re-program it input the post-processing runtime."
+    }
+  ]
+}

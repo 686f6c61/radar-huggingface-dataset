@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jsiburian/square-insertion-flow-specialist",
+  "slug": "jsiburian-square-insertion-flow-specialist",
+  "author": "jsiburian",
+  "url": "https://huggingface.co/jsiburian/square-insertion-flow-specialist",
+  "created_at": "2026-10-01T19:52:24.000Z",
+  "updated_at": "2026-10-01T19:55:08.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "flow-matching",
+    "mimicgen",
+    "robosuite",
+    "policy-steering",
+    "dinov3",
+    "base_model:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vits16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33871512,
+  "parameters_human": "33.9M",
+  "storage_bytes": 135519420,
+  "storage_human": "136 MB",
+  "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jsiburian (Jeremy Siburian) - Hugging Face",
+      "url": "https://huggingface.co/jsiburian",
+      "snippet": "Robotics updated a model about 11 hours ago Organizations"
+    },
+    {
+      "title": "jsiburian (Jeremy Siburian) - Hugging Face",
+      "url": "https://huggingface.co/jsiburian/models",
+      "snippet": "Robotics Image-Text-to-Text •4B•Updated about 15 hours ago"
+    },
+    {
+      "title": "Jeremy Siburian",
+      "url": "https://jsiburian.github.io/",
+      "snippet": "Research I develop learning and planning methods for sample-efficient, generalizable robot manipulation. My central interest is enabling robots to continually learn and self-improve by reusing prior knowledge, adapting efficiently to new tasks, and learning from limited interaction rather than repeatedly training from scratch. More broadly, I am interested in how robots can build useful ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

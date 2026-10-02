@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "xuhaodev/Qwen3.5-4B-Jev",
+  "slug": "xuhaodev-qwen3-5-4b-jev",
+  "author": "xuhaodev",
+  "url": "https://huggingface.co/xuhaodev/Qwen3.5-4B-Jev",
+  "created_at": "2026-10-01T23:55:46.000Z",
+  "updated_at": "2026-10-01T23:56:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.5",
+    "lora",
+    "qlora",
+    "bitsandbytes",
+    "decision-model",
+    "jev",
+    "structured-decisions",
+    "prefill-only",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149931117,
+  "storage_human": "150 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RJMSWD/QwenJev: 对Qwen-3.5-4B这个视觉语言模型进行jev般改造，识别速度达到0.169秒/帧。切换 ...",
+      "url": "https://github.com/RJMSWD/QwenJev/tree/main/",
+      "snippet": "基于 Qwen3.5-4B 的本地视觉判断工具。输入一张图片、一个问题和一组选项，通过一次模型前向计算，直接返回选项及其概率 ..."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "AlexWortega/openjev · Hugging Face",
+      "url": "https://huggingface.co/AlexWortega/openjev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · AlexWortega/openjev at main - Hugging Face",
+      "url": "https://huggingface.co/AlexWortega/openjev/blob/main/README.md",
+      "snippet": "openjev — Qwen3.5 trained as jev model openjev is Qwen3.5 turned into a jev model: a single cross-encoder that reads a premise and a hypothesis and answers with entailment, contradiction or neutral."
+    },
+    {
+      "title": "Qwen3.5-4B — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/qwen-qwen3-5-4b",
+      "snippet": "Qwen&#x27;s 4.7B-parameter Qwen3.5 multimodal model for image and text understanding with conversational capabilities."
+    }
+  ]
+}

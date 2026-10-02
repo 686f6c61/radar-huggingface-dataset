@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pbcong/tars-paper-reconstruction-7b-mask-s42-ep2",
+  "slug": "pbcong-tars-paper-reconstruction-7b-mask-s42-ep2",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/tars-paper-reconstruction-7b-mask-s42-ep2",
+  "created_at": "2026-10-01T19:28:07.000Z",
+  "updated_at": "2026-10-01T19:28:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "base_model:liuhaotian/llava-v1.5-7b",
+    "base_model:finetune:liuhaotian/llava-v1.5-7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7062902784,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126400899,
+  "storage_human": "14.1 GB",
+  "base_model": "liuhaotian/llava-v1.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paper Reconstruction Evaluation: Evaluating Presentation and ...",
+      "url": "https://arxiv.org/pdf/2604.01128",
+      "snippet": "In this work, we introduce Paper Reconstruction Evaluation, the first systematic evaluation framework for AI-generated scientific papers. Along with PaperWrite-Bench, we conduct a comprehensive evaluation of the capabilities and risks of modern writing agents."
+    },
+    {
+      "title": "[2604.01128] Paper Reconstruction Evaluation: Evaluating Presentation ...",
+      "url": "https://arxiv.org/abs/2604.01128",
+      "snippet": "This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous evaluation of the quality and potential risks of AI-written papers remains limited, and a unified understanding of their reliability is still lacking. We introduce Paper ..."
+    },
+    {
+      "title": "PaperRecon: Paper Reconstruction Evaluation",
+      "url": "https://agent4science-utokyo.github.io/PaperRecon_HP/",
+      "snippet": "PaperRecon disentangles the evaluation of AI-written papers into two orthogonal dimensions: Presentation and Hallucination, where Presentation is evaluated using a rubric and Hallucination is assessed via agentic evaluation grounded in the original paper source."
+    },
+    {
+      "title": "[2604.01128] Paper Reconstruction Evaluation: Evaluating Presentation ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2604.01128",
+      "snippet": "This paper introduces the first systematic evaluation framework for quantifying the quality and risks of papers written by modern coding agents. While AI-driven paper writing has become a growing concern, rigorous eval…"
+    },
+    {
+      "title": "Google Patents",
+      "url": "https://patents.google.com/",
+      "snippet": "Search and read the full text of patents from around the world with Google Patents, and find prior art in our index of non-patent literature."
+    }
+  ]
+}

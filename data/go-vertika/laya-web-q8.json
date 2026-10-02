@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "go-vertika/laya-web-q8",
+  "slug": "go-vertika-laya-web-q8",
+  "author": "go-vertika",
+  "url": "https://huggingface.co/go-vertika/laya-web-q8",
+  "created_at": "2026-10-01T19:38:17.000Z",
+  "updated_at": "2026-10-01T19:48:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "laya",
+    "onnxruntime-web",
+    "quantized",
+    "int8",
+    "webassembly",
+    "in-browser",
+    "calibrated-decisions",
+    "classification",
+    "routing",
+    "guardrails",
+    "text-classification",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524336192,
+  "storage_human": "524 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Go (langage) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Go_(langage)",
+      "snippet": "Go est un langage de programmation compilé et concurrent inspiré de C et Pascal. Il a été développé par Google 5 à partir d’un …"
+    },
+    {
+      "title": "The Go Programming Language",
+      "url": "https://go.dev/",
+      "snippet": "Go is an open source programming language that makes it simple to build secure, scalable systems."
+    },
+    {
+      "title": "All releases - The Go Programming Language",
+      "url": "https://go.dev/dl/",
+      "snippet": "Press Enter to activate/deactivate dropdown Go Spec The official Go language specification Go User Manual A complete …"
+    },
+    {
+      "title": "The Go Programming Language - YouTube",
+      "url": "https://www.youtube.com/@golang",
+      "snippet": "Welcome to the Go channel, where we hope to make you love programming again! Go is an open-source programming language …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "knagode/vocal-coach",
+  "slug": "knagode-vocal-coach",
+  "author": "knagode",
+  "url": "https://huggingface.co/knagode/vocal-coach",
+  "created_at": "2026-10-01T22:04:42.000Z",
+  "updated_at": "2026-10-01T22:04:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "audio-classification",
+    "singing",
+    "voice-quality",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23456,
+  "storage_human": "23456 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "knagode (Klemen Nagode) - Hugging Face",
+      "url": "https://huggingface.co/knagode/models",
+      "snippet": "Recent Activity new activityabout 1 hour ago knagode/vocal-coach: Apply for a GPU community grant: Personal project updated a Spaceabout 1 hour ago knagode/vocal-coach published a Spaceabout 1 hour ago knagode/vocal-coach View all activity"
+    },
+    {
+      "title": "Singing Coach AI | Your AI-Powered Vocal Coach",
+      "url": "https://singingcoach.ai/",
+      "snippet": "Sing. Get feedback. Grow fast. Your AI singing coach listens to your voice, learns your range, and tells you exactly what to work on — song by song, note by note."
+    },
+    {
+      "title": "AI Singing Coach | Personalized Vocal Training with AI | Singing Carrots",
+      "url": "https://singingcarrots.com/ai-singing-coach",
+      "snippet": "An AI singing coach is a virtual vocal teacher powered by artificial intelligence that provides personalized singing lessons and real-time feedback. Unlike pre-recorded video courses, our AI vocal coach adapts to your unique voice, skill level, and goals."
+    },
+    {
+      "title": "Vocal AI PRO | Devpost",
+      "url": "https://devpost.com/software/vocal-ai-2-0",
+      "snippet": "Revolutionary AI vocal coach with real-time voice analysis, personalized lessons, and 24/7 conversational coaching. Professional training made accessible for singers, speakers & voice actors globally."
+    },
+    {
+      "title": "VoiceCoach AI",
+      "url": "https://www.voicecoach.studio/en",
+      "snippet": "Ace the conversation that changes your career."
+    }
+  ]
+}

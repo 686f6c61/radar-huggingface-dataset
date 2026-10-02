@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "asketeddy/gooo-semantic-composition-tiny-v1",
+  "slug": "asketeddy-gooo-semantic-composition-tiny-v1",
+  "author": "asketeddy",
+  "url": "https://huggingface.co/asketeddy/gooo-semantic-composition-tiny-v1",
+  "created_at": "2026-10-01T20:53:11.000Z",
+  "updated_at": "2026-10-01T20:53:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "gooo",
+    "metaprogramming",
+    "ternary",
+    "from-scratch",
+    "go",
+    "en",
+    "ko",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9795685,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "GPT-6.1 Sol: Release Intelligence, Performance & Price",
+      "url": "https://artificialanalysis.ai/models/releases/gpt-6-1-sol",
+      "snippet": "The GPT-6.1 Sol release offers 5 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 5 models."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    },
+    {
+      "title": "Meshy — AI 3D Model Generator - GitHub",
+      "url": "https://github.com/meshy-dev/Meshy-guide",
+      "snippet": "Meshy is an AI-powered 3D model generator that converts text prompts or 2D images into fully textured, export-ready 3D assets in under 2 minutes — no 3D modeling skills required."
+    },
+    {
+      "title": "Google releases Gemini 4 Argon, called its most powerful model ...",
+      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+      "snippet": "Google parent company Alphabet has launched Gemini 4 Argon, a new AI model built to handle a variety of tasks such as coding, research, and writing. But it&#x27;s cybersecurity that Gemini 4 Argon is ..."
+    }
+  ]
+}

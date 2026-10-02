@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mrkmja/MariahEmancipation",
+  "slug": "mrkmja-mariahemancipation",
+  "author": "mrkmja",
+  "url": "https://huggingface.co/mrkmja/MariahEmancipation",
+  "created_at": "2026-10-01T21:42:43.000Z",
+  "updated_at": "2026-10-01T22:05:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 708283235,
+  "storage_human": "708 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrkmja (MRKMJA) - Hugging Face",
+      "url": "https://huggingface.co/mrkmja",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... updated a model 8 days ago ... updated a collection 13 days ago"
+    },
+    {
+      "title": "mrkmja (MRKMJA) - Hugging Face",
+      "url": "https://huggingface.co/mrkmja/models",
+      "snippet": "2 followers 0 following mrkmja AI & ML interests RVC, Midjourney, Stable Diffusion Recent Activity updateda model about 1 month ago mrkmja/ZaynIcarus publisheda model about 1 month ago mrkmja/ZaynIcarus updateda model 2 months ago mrkmja/BensonBoone View all activity Organizations None yet"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "MRKMJA — Voice Models Creator",
+      "url": "https://new.voice-models.com/creator/MRKMJA",
+      "snippet": "View AI voice models by MRKMJA on Voice Models."
+    },
+    {
+      "title": "Mariah Carey (Early 2020s) [RVC v2, RMVPE, 625 Epochs] AI Voice Model",
+      "url": "https://voice-models.com/model/1LCSOXTsi4V?source=voice-models-soundalike&source_model_id=34374&source_sample_id=34374%3Asamples2%3Ap0&candidate_model_id=34385&candidate_sample_id=34385%3Asamples2%3Ap0&soundalike_rank=3&soundalike_reason=similar_use",
+      "snippet": "Mariah Carey (Early 2020s) [RVC v2, RMVPE, 625 Epochs] AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    }
+  ]
+}

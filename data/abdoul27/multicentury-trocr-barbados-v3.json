@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Abdoul27/multicentury-trocr-barbados-v3",
+  "slug": "abdoul27-multicentury-trocr-barbados-v3",
+  "author": "Abdoul27",
+  "url": "https://huggingface.co/Abdoul27/multicentury-trocr-barbados-v3",
+  "created_at": "2026-10-01T21:33:01.000Z",
+  "updated_at": "2026-10-01T21:33:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ocr",
+    "handwriting",
+    "htr",
+    "trocr",
+    "historical-documents",
+    "barbados",
+    "ensemble",
+    "image-to-text",
+    "base_model:Kansallisarkisto/multicentury-htr-model",
+    "base_model:finetune:Kansallisarkisto/multicentury-htr-model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6698956008,
+  "storage_human": "6.7 GB",
+  "base_model": "Kansallisarkisto/multicentury-htr-model",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Workspace | تطبيقات الأنشطة التجارية وأدوات التعاون",
+      "url": "https://workspace.google.com/intl/ar_eg/",
+      "snippet": "يمكنك تجربة تطبيقات Google Workspace (المعروفة سابقًا باسم G Suite) الآمنة والمخصّصة لزيادة الإنتاجية والتعاون للأنشطة التجارية بجميع أحجامها. وتشمل Gmail وDrive …"
+    },
+    {
+      "title": "Signing in to Google",
+      "url": "https://myaccount.google.com/intro/signing-in-to-google",
+      "snippet": "Manage your Google Account sign-in process, including email, password, and security settings for seamless access to Google services."
+    },
+    {
+      "title": "Google Search Console",
+      "url": "https://search.google.com/search-console?hl=fr",
+      "snippet": "Formation Search Console Découvrez comment optimiser votre apparence dans les résultats de recherche Google et générer plus …"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Custom Search JSON API | Google for Developers",
+      "url": "https://developers.google.com/custom-search/v1/overview",
+      "snippet": "Feb 18, 2026 · With Google Cloud Operations you can create custom dashboards, set up alerts, and access metrics data …"
+    }
+  ]
+}

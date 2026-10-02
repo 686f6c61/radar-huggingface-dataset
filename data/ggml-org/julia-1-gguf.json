@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ggml-org/Julia-1-GGUF",
+  "slug": "ggml-org-julia-1-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/Julia-1-GGUF",
+  "created_at": "2026-10-01T21:31:04.000Z",
+  "updated_at": "2026-10-01T21:31:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "decision-model",
+    "text-classification",
+    "base_model:SupersonicLabs/Julia-1",
+    "base_model:quantized:SupersonicLabs/Julia-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144192769,
+  "parameters_human": "144.2M",
+  "storage_bytes": 471485632,
+  "storage_human": "471 MB",
+  "base_model": "SupersonicLabs/Julia-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org/Julia-1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Julia-1-GGUF",
+      "snippet": "ggml-org / Julia-1-GGUF Like 1 Follow ggml-org 2.94k Text Classification GGUF quantized decision-model feature-extraction License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "ggml-org (ggml-org) - Hugging Face",
+      "url": "https://huggingface.co/ggml-org",
+      "snippet": "Org profile for ggml-org on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Julia 1: A 144M-Parameter Decision Model Trained for $104",
+      "url": "https://dev.to/jamilxt/julia-1-a-144m-parameter-decision-model-trained-for-104-59i2",
+      "snippet": "A small AI lab in Brazil just released a model with an unusual claim. Not \"beats GPT.\" Not \"agentic superintelligence.\" The claim is this: a 144.3-million-parameter model that picks the right answer from a list you give it, runs on a CPU, on a tablet, on a 12-year-old laptop class of chip, and the entire training cost about R$540. That is US$104.08. The model is Julia 1, from Supersonic Labs ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GitHub - GGUFloader/gguf-loader: GGUF Loader with its Agentic Mode, and ...",
+      "url": "https://github.com/GGUFloader/gguf-loader",
+      "snippet": "GGUF Loader with its Agentic Mode, and floating button, ai Models | Open Source & Offline. Mistral, Deepseek, llama, gemma, qwen - GGUFloader/gguf-loader"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mrr42694/Vstr",
+  "slug": "mrr42694-vstr",
+  "author": "mrr42694",
+  "url": "https://huggingface.co/mrr42694/Vstr",
+  "created_at": "2026-10-01T21:14:26.000Z",
+  "updated_at": "2026-10-01T21:19:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": "pyannote-audio",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pyannote-audio",
+    "text-generation-inference",
+    "graph-ml",
+    "en",
+    "dataset:Gholamali/Arena_Human_Preference_90K_features_verified",
+    "base_model:RichardErkhov/NTQAI_-_Nxcode-CQ-7B-orpo-gguf",
+    "base_model:finetune:RichardErkhov/NTQAI_-_Nxcode-CQ-7B-orpo-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "RichardErkhov/NTQAI_-_Nxcode-CQ-7B-orpo-gguf",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrr42694 (rahul Mr) - Hugging Face",
+      "url": "https://huggingface.co/mrr42694",
+      "snippet": "Recent Activity published a modelabout 5 hours ago mrr42694/Classify updated a bucketabout 6 hours ago mrr42694/Hub-bucket published a bucketabout 6 hours ago mrr42694/Hub-bucket View all activity"
+    },
+    {
+      "title": "mrr42694 (rahul Mr) - Hugging Face",
+      "url": "https://huggingface.co/mrr42694/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 6 hours ago ... updated a bucket about 7 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Microsoft Foundry",
+      "url": "https://ai.azure.com/studio/model-catalog",
+      "snippet": "Microsoft Foundry Authenticating… Microsoft Foundry"
+    },
+    {
+      "title": "Model Catalog | Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models",
+      "snippet": "Frontier, open-source, and partner models in one place. Sign in to Microsoft Foundry to deploy a model and start building."
+    }
+  ]
+}

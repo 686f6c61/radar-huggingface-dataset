@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dgibbons/Artemis-31B-v1.2-NVFP4A16",
+  "slug": "dgibbons-artemis-31b-v1-2-nvfp4a16",
+  "author": "dgibbons",
+  "url": "https://huggingface.co/dgibbons/Artemis-31B-v1.2-NVFP4A16",
+  "created_at": "2026-10-01T21:59:35.000Z",
+  "updated_at": "2026-10-01T22:19:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "compressed-tensors",
+    "vllm",
+    "base_model:TheDrummer/Artemis-31B-v1.2",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.2",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18460143562,
+  "parameters_human": "18.46B",
+  "storage_bytes": 20478946354,
+  "storage_human": "20.5 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artemis 31b V1 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/artemis-31b-v1.html",
+      "snippet": "Download Artemis 31b V1 GGUF model. 34.6 GB, 38,221 downloads, 27 likes."
+    },
+    {
+      "title": "BeaverAI/Artemis-31B-v1j-GGUF · Hugging Face",
+      "url": "https://huggingface.co/BeaverAI/Artemis-31B-v1j-GGUF",
+      "snippet": "Community Deploy Copy to bucket new Use this model Instructions to use BeaverAI/Artemis-31B-v1j-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries llama-cpp-python How to use BeaverAI/Artemis-31B-v1j-GGUF with llama-cpp-python: ... Notebooks Google Colab Kaggle Local Apps Settings ..."
+    },
+    {
+      "title": "README.md · FaustianDeal/Artemis-31B-v1.2-NVFP4-GGUF at main",
+      "url": "https://huggingface.co/FaustianDeal/Artemis-31B-v1.2-NVFP4-GGUF/blob/main/README.md",
+      "snippet": "Artemis 31B v1.2 — NVFP4 GGUF This is a text-model GGUF conversion of TheDrummer/Artemis-31B-v1.2, a fine-tune of google/gemma-4-31B. The language model&#x27;s eligible linear weights were calibrated and quantized to NVIDIA NVFP4, then repacked into GGUF. The original fine-tune is credited to TheDrummer; this repository contains a format and precision conversion."
+    },
+    {
+      "title": "Run Artemis-31B-v1.2 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/TheDrummer/Artemis-31B-v1.2",
+      "snippet": "TheDrummer/Artemis-31B-v1.2 is a 31 billion parameter language model based on the Gemma 4 architecture, designed for role-playing and conversational tasks. It is noted for its sharp &#x27;thinking&#x27; capabilities within role-play scenarios, suggesting an optimization for nuanced and coherent character interactions. This model is particularly suited for applications requiring advanced conversational ..."
+    },
+    {
+      "title": "Run Artemis-31B-v1 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/TheDrummer/Artemis-31B-v1",
+      "snippet": "Artemis-31B-v1 is a 31 billion parameter model developed by TheDrummer, specifically engineered to excel in creative and entertainment-focused applications. Unlike models optimized for problem-solving or strict alignment, Artemis-31B-v1 prioritizes qualities such as writing fluency, storytelling dynamism, and imaginative capacity."
+    }
+  ]
+}

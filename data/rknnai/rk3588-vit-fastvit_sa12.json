@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-VIT-fastvit_sa12",
+  "slug": "rknnai-rk3588-vit-fastvit_sa12",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-VIT-fastvit_sa12",
+  "created_at": "2026-10-02T01:24:13.000Z",
+  "updated_at": "2026-10-02T01:24:40.000Z",
+  "license": "apple-ml-fastvit",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 50741555,
+  "storage_human": "51 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "timm/fastvit_sa12.apple_dist_in1k · Hugging Face",
+      "url": "https://huggingface.co/timm/fastvit_sa12.apple_dist_in1k",
+      "snippet": "Model card for fastvit_sa12.apple_dist_in1k A FastViT image classification model. Trained on ImageNet-1k with distillation by paper authors. Please observe original license. Model Details Model Type: Image classification / feature backbone Model Stats: Params (M): 11.6 GMACs: 2.0 Activations (M): 13.8 Image size: 256 x 256 Papers: FastViT: A Fast Hybrid Vision Transformer using Structural ..."
+    },
+    {
+      "title": "GitHub - airockchip/rknn-llm",
+      "url": "https://github.com/airockchip/rknn-llm",
+      "snippet": "Contribute to airockchip/rknn-llm development by creating an account on GitHub."
+    },
+    {
+      "title": "RK3588 rkllm Models - a jamescallander Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/jamescallander/rk3588-rkllm-models",
+      "snippet": "Converted models for use on RK3588 single board computers such as Radxa Rock 5b+, Orange Pi 5 plus, Banana Pi M7, etc."
+    },
+    {
+      "title": "Large Language Model — Firefly Wiki",
+      "url": "https://wiki.t-firefly.com/en/AIBOX-3588/usage_llm_rockchip.html",
+      "snippet": "AIBOX-3588 Equipped with Rockchip octa-core 64-bit processor RK3588, it adopts advanced process technology, high performance and low power consumption, built-in ARM Mali-G610 MP4 quad-core GPU, integrated 6 TOPS computing power NPU, supports private deployment of ultra-large-scale parameter models under Transformer architecture, supports traditional network architectures such as CNN, RNN, LSTM ..."
+    }
+  ]
+}

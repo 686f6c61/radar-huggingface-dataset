@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bcdennis/hcd-tinystories-hier-causal-dm",
+  "slug": "bcdennis-hcd-tinystories-hier-causal-dm",
+  "author": "bcdennis",
+  "url": "https://huggingface.co/bcdennis/hcd-tinystories-hier-causal-dm",
+  "created_at": "2026-10-02T01:07:02.000Z",
+  "updated_at": "2026-10-02T01:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tinystories",
+    "from-scratch",
+    "hierarchical-concept-diffusion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279227907,
+  "storage_human": "279 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "After My Ohn Heart - Quest - World of Warcraft - Wowhead",
+      "url": "https://www.wowhead.com/quest=70721/after-my-ohn-heart",
+      "snippet": "Help Windsage Dawa and Hunter Narman with their proposals. A level 20 Ohn'ahran Plains Quest. +300 reputation with Maruuk …"
+    },
+    {
+      "title": "After My Ohn Heart WoW Quest - YouTube",
+      "url": "https://www.youtube.com/watch?v=W_i32InJbf8",
+      "snippet": "Nov 28, 2022 · This video shows how to complete WoW After My Ohn Heart quest and all the related locations. Leave a comment, If …"
+    },
+    {
+      "title": "After My Ohn Heart - Warcraft Wiki",
+      "url": "https://warcraft.wiki.gg/wiki/After_My_Ohn_Heart",
+      "snippet": "Jan 17, 2026 · After My Ohn HeartLevel: 10-70 Windsage Dawa Hunter NarmanXP: 9,350Rewards: [Recipe: Celebratory Cake] …"
+    },
+    {
+      "title": "After My Ohn Heart WoW Quest - YouTube",
+      "url": "https://www.youtube.com/watch?v=GAM1mpAixbU",
+      "snippet": "Oct 11, 2022 · After My Ohn Heart WoW Quest. Where is WoW After My Ohn Heart Ohn'ahran Plains quest objective location. You …"
+    },
+    {
+      "title": "After My Ohn Heart - Wowpedia - Your wiki guide to the World of …",
+      "url": "https://wowpedia.fandom.com/wiki/After_My_Ohn_Heart",
+      "snippet": "Help Windsage Dawa and Hunter Narman with their proposals. Speak to Hunter Narman[63.62, 40.46] Meet Narman and Dawa by …"
+    }
+  ]
+}

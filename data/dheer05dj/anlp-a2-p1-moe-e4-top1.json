@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dheer05dj/anlp-a2-p1-moe-e4-top1",
+  "slug": "dheer05dj-anlp-a2-p1-moe-e4-top1",
+  "author": "dheer05dj",
+  "url": "https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top1",
+  "created_at": "2026-10-01T22:38:50.000Z",
+  "updated_at": "2026-10-01T22:39:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41574912,
+  "parameters_human": "41.6M",
+  "storage_bytes": 166310336,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "It’s not them, it’s us: the real reason teens are ‘addicted’ to video ...",
+      "url": "https://forums.pcgamer.com/threads/it%E2%80%99s-not-them-it%E2%80%99s-us-the-real-reason-teens-are-%E2%80%98addicted%E2%80%99-to-video-games-the-guardian.145180/",
+      "snippet": "Jul 9, 2024 · If we want to know why many teens choose of their own free will to spend 10 or 20 hours a week playing games, rather …"
+    },
+    {
+      "title": "半熟恋人小组 - 豆瓣",
+      "url": "https://www.douban.com/group/732211/",
+      "snippet": "发言规则 2022-01-24 更新 1 请勿发布《娱乐信息管理原则》不允许的内容 为共同维护社区的良好氛围，请务必遵守发言规则。社区 …"
+    },
+    {
+      "title": "乘风破浪的姐姐小组 - 豆瓣",
+      "url": "https://www.douban.com/group/696121/?type=elite",
+      "snippet": "发言规则 2022-01-24 更新 1 请勿发布《娱乐信息管理原则》不允许的内容 为共同维护社区的良好氛围，请务必遵守发言规则。社区 …"
+    },
+    {
+      "title": "Play Board games Online for Free | PC Gamer Forums",
+      "url": "https://forums.pcgamer.com/threads/play-board-games-online-for-free.24764/",
+      "snippet": "Dec 8, 2020 · Perhaps what is most incredible about Dominion Online is the value. The base game is free to play, private games …"
+    },
+    {
+      "title": "日本里番成人18禁 - 豆瓣",
+      "url": "https://www.douban.com/doulist/138330674/?sort=time",
+      "snippet": "Apr 11, 2021 · 导演: 川尻善昭 主演: 松田重治 / 小山茉美 / 若本规夫 类型: 动画 / 科幻 / 惊悚 制片国家/地区: 日本 年份: 1989"
+    }
+  ]
+}

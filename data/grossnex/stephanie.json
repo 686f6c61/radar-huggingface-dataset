@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "grossnex/stephanie",
+  "slug": "grossnex-stephanie",
+  "author": "grossnex",
+  "url": "https://huggingface.co/grossnex/stephanie",
+  "created_at": "2026-10-01T22:35:39.000Z",
+  "updated_at": "2026-10-02T00:18:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-02T03:06:52.897Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stephanie_XG - Best AI Art & Models | Tensor.Art",
+      "url": "https://tensor.art/u/706698467527083198",
+      "snippet": "Explore Stephanie_XG&#x27;s AI creations on TENSOR"
+    },
+    {
+      "title": "Top 40 AI Models Influencers in 2026",
+      "url": "https://influencers.feedspot.com/ai_models_instagram_influencers/",
+      "snippet": "Looking for AI Models influencers for your outreach campaign or for collaboration to promote your brand or product? Our AI Models Influencers list is what you need. more Export full list with email contacts of influencers in a spreadsheet or csv file."
+    },
+    {
+      "title": "AI Influencers: The Documented List (2026) — 29 Verified Virtual ...",
+      "url": "https://verifiedher.com/ai-influencers",
+      "snippet": "Every AI influencer we&#x27;ve documented — 29 virtual personas, each verified against its operator&#x27;s own statements, platform AI labels, or on-the-record investigative reporting, with launch year and sourced evidence. Updated with every review."
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "FLUX + PONY - Not Stephanie from Lazy Town - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/1f2468e1ce3287374d4d98616a31e8a3",
+      "snippet": "Explore FLUX + PONY - Not Stephanie from Lazy Town model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

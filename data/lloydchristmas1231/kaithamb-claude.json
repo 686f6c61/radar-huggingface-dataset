@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/kaithamb-claude",
+  "slug": "lloydchristmas1231-kaithamb-claude",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/kaithamb-claude",
+  "created_at": "2026-10-01T22:16:49.000Z",
+  "updated_at": "2026-10-01T22:52:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970848408,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lloydchristmas1231/kaithamb at main - Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/kaithamb/tree/main",
+      "snippet": "Instructions to use lloydchristmas1231/kaithamb with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use lloydchristmas1231/kaithamb with Diffusers: ... Notebooks Google Colab Kaggle Draw Things DiffusionBee main kaithamb 970 MB Ctrl+K Ctrl+K 1 contributor History:6 ..."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "lloydchristmas1231/kaitbaug · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/kaitbaug",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=lloydchristmas1231/kaitbaug",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/login-Claude",
+      "snippet": "Claude is Anthropic&#x27;s AI, built for problem solvers. Tackle complex challenges, analyze data, write code, and think through your hardest work."
+    }
+  ]
+}

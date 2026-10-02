@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-lightx2v-hybrid-4to8step-turbo-r48-lora",
+  "slug": "runninghubai-rh-lightx2v-hybrid-4to8step-turbo-r48-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-lightx2v-hybrid-4to8step-turbo-r48-lora",
+  "created_at": "2026-10-01T21:52:00.000Z",
+  "updated_at": "2026-10-01T21:54:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 944072209,
+  "storage_human": "944 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lightx2v_hybrid-4to8step-full-fusion_Turbo_pruned - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2097193820572516354",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. updated a model about 1 hour ago. RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.-768p-comfyui-bf16 ..."
+    },
+    {
+      "title": "RunningHubAI/rh-lightx2v-i2v-14b-480p-cfg-step-distill-rank128-lora ...",
+      "url": "https://huggingface.co/RunningHubAI/rh-lightx2v-i2v-14b-480p-cfg-step-distill-rank128-lora",
+      "snippet": "This repository provides rh-lightx2v-i2v-14b-480p-cfg-step-distill-rank128-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "lightx2v_hybrid-4to8step-Turbo_r48_DasiwaREF2VAHybridV1_curveproj1025 ...",
+      "url": "https://www.runninghub.cn/model/public/2095739294899068929",
+      "snippet": "探索热门 AI 生成模型与 LoRA 模型，支持个性化模型训练、风格创作与 AI 内容生成，轻松打造属于你的创意模型。"
+    },
+    {
+      "title": "lightx2v_hybrid-4to8step-full-fusion_Turbo_pruned - runninghub.ai",
+      "url": "https://www.runninghub.ai/ja/model/public/2097193820572516354",
+      "snippet": "生成AIやLoRAモデルを見つけて、パーソナライズされたモデル学習、クリエイティブなスタイル、AIコンテンツ制作に活用しましょう。RunningHubモデルで独自のAIモデルを構築・カスタマイズ。"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Tongmiao/hw1-hc3-detector",
+  "slug": "tongmiao-hw1-hc3-detector",
+  "author": "Tongmiao",
+  "url": "https://huggingface.co/Tongmiao/hw1-hc3-detector",
+  "created_at": "2026-10-01T22:16:30.000Z",
+  "updated_at": "2026-10-01T22:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "hc3",
+    "ai-generated-text-detection",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867944,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aishkrish/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/Aishkrish/hw1-hc3-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TianhangCheng7/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/TianhangCheng7/hw1-hc3-detector",
+      "snippet": "TianhangCheng7 / hw1-hc3-detector Like 0 Text Classification sentence-transformers Safetensors English bert ai-generated-text-detection hc3 text-embeddings-inference arxiv:2301.07597 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "hw1-hc3-detector by Yihangsun: Open-Weight Model",
+      "url": "https://savrn.com/models/hw1-hc3-detector",
+      "snippet": "hw1-hc3-detector from Yihangsun: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "tongmiaoxu (Tongmiao Xu) · GitHub",
+      "url": "https://github.com/tongmiaoxu/",
+      "snippet": "This is a repository converting lerobot dataset from v1.6 to v3.0, including v2.0 and v2.1. It helps you to train VLA models like pi0.5 in lerobot 0.4.0+. Python 3"
+    },
+    {
+      "title": "Hw1 Hc3 Detector - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/skyyyyks/hw1-hc3-detector",
+      "snippet": "Registry entry for model Hw1 Hc3 Detector; source metadata pending."
+    }
+  ]
+}

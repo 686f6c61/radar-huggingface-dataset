@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wahler-4B-GGUF",
+  "slug": "mradermacher-wahler-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wahler-4B-GGUF",
+  "created_at": "2026-10-01T19:57:08.000Z",
+  "updated_at": "2026-10-01T20:19:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibration",
+    "conformal-prediction",
+    "uncertainty",
+    "reasoning",
+    "routing",
+    "triage",
+    "jev",
+    "typesafe",
+    "qwen3.5",
+    "german",
+    "de",
+    "en",
+    "dataset:mertkayacs/jevalt-data",
+    "base_model:mertkayacs/Wahler-4B",
+    "base_model:quantized:mertkayacs/Wahler-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945658944,
+  "storage_human": "39.9 GB",
+  "base_model": "mertkayacs/Wahler-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/aiops-qwen-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/aiops-qwen-4b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/manu-s1-4b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/manu-s1-4b-GGUF",
+      "snippet": "mradermacher / manu-s1-4b-GGUF Like 0 Transformers GGUF English decision-model system-one legal india courts jevk5 typed-decisions conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "huihui-ai — the dominant abliterated-model uploader in mid-2026. Maintains current abliterations for Qwen 3.6 / 3.5, DeepSeek V4 Flash, DeepSeek 671B, and most major open releases. mradermacher — reliable quantizer with broad coverage; current source for most Gemma 4 Heretic GGUF mirrors. Offers both static and imatrix quants."
+    },
+    {
+      "title": "LLMHardware.io — Find the Best GPU for Local AI & LLMs (2026)",
+      "url": "https://llmhardware.io/",
+      "snippet": "Discover which GPU, Mac, or CPU can run your LLM locally. Browse 7,438+ open-source AI models, get instant VRAM calculations, and find hardware picks for Llama, Qwen, DeepSeek, Mistral, and Gemma."
+    }
+  ]
+}

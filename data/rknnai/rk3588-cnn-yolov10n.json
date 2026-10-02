@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov10n",
+  "slug": "rknnai-rk3588-cnn-yolov10n",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov10n",
+  "created_at": "2026-10-02T01:21:02.000Z",
+  "updated_at": "2026-10-02T01:21:31.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3765321,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DRAG'N WASH - Walkthroughs, Endings & Game Help",
+      "url": "https://dragnwash.com/",
+      "snippet": "Use this Drag'n Wash guide for gameplay, walkthroughs, dragon stories, endings, official stores, content answers, mods, …"
+    },
+    {
+      "title": "Drag'n Wash - PlayinGG",
+      "url": "https://www.playin.gg/games/dragn-wash",
+      "snippet": "Sep 10, 2026 · View details, trailers, reviews and deals for Drag'n Wash."
+    },
+    {
+      "title": "Drag'n Wash Endings: All 3 Routes, Choices & Payoff",
+      "url": "https://dragnwash.wiki/en/endings/drag-n-wash-endings/",
+      "snippet": "Sep 11, 2026 · All three Drag'n Wash endings explained, with per-route length, choice requirements, and how each finale differs in …"
+    },
+    {
+      "title": "Drag'n Wash - Kotaku",
+      "url": "https://kotaku.com/games/dragn-wash",
+      "snippet": "Sep 9, 2026 · All the Latest Game Footage and Images from Drag’n Wash Enjoy a narrative involving 3 male dragons. Wash them, …"
+    },
+    {
+      "title": "Drag'n Wash Simulator APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/drag-n-wash-simulator/com.ses.airline.flight.simulator",
+      "snippet": "Aug 31, 2026 · Drag'n Wash Simulator APK download for Android. Wash, chat, and touch 3 male dragons in this immersive 3D …"
+    }
+  ]
+}

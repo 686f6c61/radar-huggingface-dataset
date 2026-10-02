@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov8n-obb",
+  "slug": "rknnai-rk3588-cnn-yolov8n-obb",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov8n-obb",
+  "created_at": "2026-10-02T01:23:42.000Z",
+  "updated_at": "2026-10-02T01:24:08.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4425026,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "rk3588-yolo-demo/src/yolov8/model/yolov8n-obb.rknn at master ... - GitHub",
+      "url": "https://github.com/kaylorchen/rk3588-yolo-demo/blob/master/src/yolov8/model/yolov8n-obb.rknn",
+      "snippet": "The project is a multi-threaded inference demo of Yolo running on the RK3588 platform, which has been adapted for reading video files and camera feeds. The demo uses the Yolov8n model for file infe..."
+    },
+    {
+      "title": "RKNN Toolkit Lite2 YOLOv8 | Radxa Docs",
+      "url": "https://docs.radxa.com/en/rock5/rock5c/app-development/ai/rknn-toolkit-lite2-yolov8",
+      "snippet": "This example uses a pre-trained ONNX model from the rknn_model_zoo to illustrate the complete process from model conversion on the PC to on-device inference. The target platform in this example is RK3588. Deploying YOLOv8 with RKNN involves two main steps: On the PC, use rknn-toolkit2 to convert models from different frameworks into RKNN format. On the device, use the Python API of rknn ..."
+    },
+    {
+      "title": "Deploy YOLOv8 on the Device | Radxa Docs",
+      "url": "https://docs.radxa.com/en/rock5/rock5b/app-development/ai/rknn-toolkit-lite2-yolov8",
+      "snippet": "This example uses a pre-trained ONNX model from the rknn_model_zoo to illustrate the complete process from model conversion on the PC to on-device inference. The target platform in this example is RK3588. Deploying YOLOv8 with RKNN involves two main steps: On the PC, use rknn-toolkit2 to convert models from different frameworks into RKNN format. On the device, use the Python API of rknn ..."
+    },
+    {
+      "title": "Run YOLOv8-obb on RK3588 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolov8-obb/rk3588",
+      "snippet": "Run YOLOv8-obb on RK3588 with one command—no manual environment setup."
+    }
+  ]
+}

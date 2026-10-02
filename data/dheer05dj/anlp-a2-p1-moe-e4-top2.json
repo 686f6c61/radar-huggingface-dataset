@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dheer05dj/anlp-a2-p1-moe-e4-top2",
+  "slug": "dheer05dj-anlp-a2-p1-moe-e4-top2",
+  "author": "dheer05dj",
+  "url": "https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top2",
+  "created_at": "2026-10-01T23:13:49.000Z",
+  "updated_at": "2026-10-01T23:14:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41574912,
+  "parameters_human": "41.6M",
+  "storage_bytes": 166310336,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhirajratna/anlp-a2-moe-v5 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v5",
+      "snippet": "ANLP A2 Part 1, variant v5 Decoder-only transformer trained from scratch to translate Vietnamese -> English and Japanese -> English. One of five models that differ only in the feed-forward layer."
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=anlp-assignment-2",
+      "snippet": "Explore machine learning models. Models 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: anlp-assignment-2 Clear all"
+    },
+    {
+      "title": "A2E Free, Personal AI Videos",
+      "url": "https://a2e.ai/",
+      "snippet": "Create personal AI videos for free with image-to-video, face and head swap, lip sync, voice cloning, and AI avatars on A2E."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    }
+  ]
+}

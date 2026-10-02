@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Anuran66/Phorensics-Engine",
+  "slug": "anuran66-phorensics-engine",
+  "author": "Anuran66",
+  "url": "https://huggingface.co/Anuran66/Phorensics-Engine",
+  "created_at": "2026-10-01T21:02:30.000Z",
+  "updated_at": "2026-10-01T21:10:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phorensics",
+    "feature-extraction",
+    "computer-vision",
+    "media-forensics",
+    "deepfake-detection",
+    "physics-based-vision",
+    "signal-processing",
+    "pytorch",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9,
+  "parameters_human": "9",
+  "storage_bytes": 288,
+  "storage_human": "288 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - anuran44/PHORENSICS-Deepfake-Detection: PHORENSICS is a ...",
+      "url": "https://github.com/anuran44/PHORENSICS-Deepfake-Detection",
+      "snippet": "\"Pixels may be hallucinated, but photons never lie.\" PHORENSICS (DeepScan Enterprise) is a physics-based image forensics engine designed to detect image manipulation, deepfakes, and generative AI artifacts. While traditional Machine Learning (ML) and Deep Learning (DL) models suffer from cross-dataset vulnerabilities and adversarial attacks due to their reliance on training data, PHORENSICS ..."
+    },
+    {
+      "title": "Anuran Bhattacharya - Portfolio",
+      "url": "https://anuran44.github.io/",
+      "snippet": "For my M.Tech. dissertation, I developed PHORENSICS, a physics-informed computational forensics framework designed for synthetic media detection and Generative AI security."
+    },
+    {
+      "title": "GitHub - anuran44/anuran44: M.Tech in Computer Science & Engineering ...",
+      "url": "https://github.com/anuran44/anuran44",
+      "snippet": "M.Tech in Computer Science & Engineering | Computer Vision • Explainable AI • Physics-Informed AI | Building trustworthy AI for image forensics, deepfake detection, and intelligent visual understanding. - anuran44/anuran44"
+    },
+    {
+      "title": "phorensics · PyPI",
+      "url": "https://pypi.org/project/phorensics/",
+      "snippet": "Phorensics 🛡️ Phorensics is an industrial-grade, unbiased physics and spectral forensics engine for deepfake and image manipulation detection. Instead of relying solely on pattern-matching neural networks (which can be easily tricked by new AI generators), Phorensics interrogates the physical properties of light, digital compression, and sensor noise to mathematically verify an image&#x27;s ..."
+    },
+    {
+      "title": "PDF RESEARCHPROFILE ANU - anuran44.github.io",
+      "url": "https://anuran44.github.io/CV-anuran.pdf",
+      "snippet": "PHORENSICS: Physics Forensics Engine for Synthetic Media Python, Docker, PySpark Distributed Systems & Generative AI Security | Aug 2025 - Jun 2026 Published the core algorithmic framework to PyPI (pip install phorensics), decoupling core logical operations from Deep Learning dependencies to ensure deterministic, reproducible computational ..."
+    }
+  ]
+}

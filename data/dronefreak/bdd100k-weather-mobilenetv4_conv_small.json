@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-mobilenetv4_conv_small",
+  "slug": "dronefreak-bdd100k-weather-mobilenetv4_conv_small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-mobilenetv4_conv_small",
+  "created_at": "2026-10-01T19:47:18.000Z",
+  "updated_at": "2026-10-01T20:23:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2404.10518",
+    "arxiv:1805.04687",
+    "base_model:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28081781,
+  "storage_human": "28 MB",
+  "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 82.16
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 66.51
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 80.44
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 64.37
+    }
+  ],
+  "sources": [
+    {
+      "title": "@dronefreak on Hugging Face: \" Open-sourcing the BDD100K Object ...",
+      "url": "https://huggingface.co/posts/dronefreak/988753800362571",
+      "snippet": "The \"test\" split here is BDD100K&#x27;s official validation set.🤖 Collection: dronefreak/bdd100k-object-detection-model-zoo-6aafc46f2f6c5e4d8676d894Feedback and contributions welcome."
+    },
+    {
+      "title": "Berkeley DeepDrive",
+      "url": "http://bdd-data.berkeley.edu/",
+      "snippet": "Please go to our discussion board with any questions on the BDD100K dataset usage and contact Fisher Yu for other inquiries."
+    },
+    {
+      "title": "Bdd100k Weather Classification - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/marquis03/bdd100k-weather-classification",
+      "snippet": "Deep dive into Bdd100k Weather Classification. 📝 Limitations & Considerations •Benchmark scores may vary based on evaluation methodology and hardware configuration. •VRAM requirements are estimates; actual usage depends on quantization and batch size. •FNI scores are relative rankings and may change as new models are added. ⚠License Unknown: Verify licensing terms before commercial ..."
+    },
+    {
+      "title": "GitHub - bdd100k/bdd100k: Toolkit of BDD100K Dataset for Heterogeneous ...",
+      "url": "https://github.com/bdd100k/bdd100k",
+      "snippet": "We construct BDD100K, the largest open driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. Each video has 40 seconds and a high resolution. The dataset represents more than 1000 hours of driving experience with more than 100 million frames."
+    },
+    {
+      "title": "Detection Experiment - Driving in Bad Weather",
+      "url": "https://mscvprojects.ri.cmu.edu/2024team9/detection-experiment/",
+      "snippet": "The BDD100K dataset is a large and diverse driving video dataset, designed for the development and evaluation of autonomous driving and computer vision systems. It features over 100,000 videos captured in a wide range of weather conditions, times of day, and urban and suburban environments, making it a valuable resource for training and testing robust machine learning models."
+    }
+  ]
+}

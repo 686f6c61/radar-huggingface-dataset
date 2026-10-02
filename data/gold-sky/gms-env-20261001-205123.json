@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gold-sky/gms-env-20261001-205123",
+  "slug": "gold-sky-gms-env-20261001-205123",
+  "author": "gold-sky",
+  "url": "https://huggingface.co/gold-sky/gms-env-20261001-205123",
+  "created_at": "2026-10-01T21:16:57.000Z",
+  "updated_at": "2026-10-01T21:17:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/unsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold.fr - Achat Or et Argent & Vente d'Or - Rachat d'Or - Cours et Prix ...",
+      "url": "https://www.gold.fr/",
+      "snippet": "1 day ago · 50 ans d’activité dans les métaux précieux, plus de 15 ans d’expérience sur internet et une communauté de plusieurs …"
+    },
+    {
+      "title": "Cours de l’Or (Euro & Dollars) - Prix de l’Or en temps réel - Gold.fr",
+      "url": "https://www.gold.fr/cours-or-prix-de-l-or/",
+      "snippet": "Cours de l'Or en direct (Euro et Dollars). Prix de l'Or en temps réel. Suivez la Cotation et le cours de l'Or en Euros et Dollars. …"
+    },
+    {
+      "title": "Gold Price Charts & Historical Data - GoldPrice.org",
+      "url": "https://goldprice.org/",
+      "snippet": "GOLDPRICE.ORG - The No. 1 gold price site for fast loading live gold price charts in ounces, grams and kilos in every national …"
+    },
+    {
+      "title": "Gold (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gold_(groupe)",
+      "snippet": "Gold est un groupe français de pop rock, originaire du Tarn, qui connaît un succès national dans les années 1980. Le groupe est …"
+    },
+    {
+      "title": "Gold - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gold",
+      "snippet": "Gold is a chemical element; its chemical symbol is Au (from Latin aurum) and atomic number 79. In its pure form, it is a bright …"
+    }
+  ]
+}

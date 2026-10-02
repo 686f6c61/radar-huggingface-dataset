@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DamonRicci/agent-tool-medium-deberta-v3-large",
+  "slug": "damonricci-agent-tool-medium-deberta-v3-large",
+  "author": "DamonRicci",
+  "url": "https://huggingface.co/DamonRicci/agent-tool-medium-deberta-v3-large",
+  "created_at": "2026-10-01T22:10:51.000Z",
+  "updated_at": "2026-10-01T22:15:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "agents",
+    "tool-calling",
+    "deberta-v3",
+    "optimization",
+    "caching",
+    "function-calling",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435063810,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1742769056,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "AI Model Releases in September 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/september-2026",
+      "snippet": "40 confirmed AI model releases from 26 providers in September 2026, with primary evidence sources and BenchLM model links."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "GPT-5.5 Agent: AI Is Transforming from a Chat Tool into a Task ... - Medium",
+      "url": "https://medium.com/@DamonEirickAI/gpt-5-5-agent-ai-is-transforming-from-a-chat-tool-into-a-task-assistant-4eb8d9071236",
+      "snippet": "GPT-5.5 Agent: AI Is Transforming from a Chat Tool into a Task Assistant In the past, when we used AI, it was mostly treated as a question-and-answer tool. You ask a question, and it provides an …"
+    },
+    {
+      "title": "DamonRicci · GitHub",
+      "url": "https://github.com/DamonRicci",
+      "snippet": "DamonRicci has 7 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

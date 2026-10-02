@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "perplexity-ai/pplx-decider-v1-27b",
+  "slug": "perplexity-ai-pplx-decider-v1-27b",
+  "author": "perplexity-ai",
+  "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
+  "created_at": "2026-10-01T21:24:11.000Z",
+  "updated_at": "2026-10-01T21:24:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "classification",
+    "multimodal",
+    "custom-code",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 0,
+  "trending_score": 23,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403420,
+  "storage_human": "52.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Bien démarrer avec Perplexity : rechercher, naviguer et créer",
+      "url": "https://www.perplexity.ai/fr/hub/getting-started",
+      "snippet": "Bien démarrer avec Perplexity Les réponses dont vous avez besoin pour créer Perplexity a remplacé les résultats de recherche par …"
+    },
+    {
+      "title": "Ask Perplexity",
+      "url": "https://www.social.perplexity.ai/",
+      "snippet": "Use Perplexity directly inside your favorite social and messaging apps to ask questions, generate images and access real-time …"
+    },
+    {
+      "title": "Qu'est-ce que Perplexity AI et comment l'utiliser ?",
+      "url": "https://www.lesnumeriques.com/science-espace/qu-est-ce-que-perplexity-ai-et-comment-l-utiliser-a230994.html",
+      "snippet": "Jan 5, 2025 · Perplexity AI, nouveau venu prometteur dans le monde de la recherche en ligne, entend révolutionner notre façon de …"
+    },
+    {
+      "title": "Perplexity AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "Perplexity AI (« AI » pour artificial intelligence, intelligence artificielle ou IA en français) — ou simplement Perplexity — est une …"
+    }
+  ]
+}

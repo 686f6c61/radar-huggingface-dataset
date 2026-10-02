@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DJLougen/Qwen3.8-Flash-Next-Mooney",
+  "slug": "djlougen-qwen3-8-flash-next-mooney",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/Qwen3.8-Flash-Next-Mooney",
+  "created_at": "2026-09-30T20:43:12.000Z",
+  "updated_at": "2026-10-02T01:47:42.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantization",
+    "ternary",
+    "dgx-spark",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 142834049838,
+  "storage_human": "142.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8 Flash Next FP8 by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-8-flash-next-fp8",
+      "snippet": "The result is a 125B-parameter main model with 6B active per token, default-on thinking with tunable reasoning_effort, and a 262,144-token native context extensible to 1M with YaRN. This is Qwen&#x27;s official FP8 quantization of Qwen3.8-Flash-Next, fine-grained with a block size of 128; Qwen reports performance nearly identical to the bf16 original."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next for Local AI in 2026: 180B on Disk, 6B Active, and ...",
+      "url": "https://www.runaihome.com/blog/qwen38-flash-next-local-ai-hardware-guide-2026/",
+      "snippet": "Honest take: If you own a 24GB card, keep running Qwen3.8-27B and skip this entirely. If you own a 96-128GB unified-memory box, Flash-Next is the best local model you can run today — and its weird architecture (tiny KV cache, SSD-streamable embeddings) is a preview of what local inference looks like in 2027. Alibaba&#x27;s Qwen team shipped Qwen3.8-Flash-Next on August 26, 2026, and the label ..."
+    },
+    {
+      "title": "Automodel/docs/model-coverage/llm/qwen/qwen3-8-flash-next.mdx at main ...",
+      "url": "https://github.com/NVIDIA-NeMo/Automodel/blob/main/docs/model-coverage/llm/qwen/qwen3-8-flash-next.mdx",
+      "snippet": "Qwen3.8-Flash-Next is a hybrid-attention Mixture-of-Experts (MoE) model with four persistent HyperConnection streams and an Engram N-gram Embedding table (named ple in the checkpoint configuration). NeMo AutoModel supports the language-only Qwen3_8_FlashNextForConditionalGeneration path for supervised fine-tuning (SFT)."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/PP-OCRv6-Runtime",
+  "slug": "manateelazycat-pp-ocrv6-runtime",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/PP-OCRv6-Runtime",
+  "created_at": "2026-10-02T01:19:00.000Z",
+  "updated_at": "2026-10-02T01:28:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tensorrt",
+  "languages": [],
+  "tags": [
+    "tensorrt",
+    "paddleocr",
+    "jetson",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 982089723,
+  "storage_human": "982 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PP-OCRv6 Introduction - PaddleOCR Documentation",
+      "url": "https://www.paddleocr.ai/latest/en/version3.x/algorithm/PP-OCRv6/PP-OCRv6.html",
+      "snippet": "PP-OCRv6 achieves a major breakthrough in language coverage—the medium/small tiers support 50 languages with a single unified model, including Simplified Chinese, Traditional Chinese, English, Japanese, and 46 Latin-script languages (tiny supports 49, excluding Japanese)."
+    },
+    {
+      "title": "Comprehensive Guide to PP-OCRv6: High-Performance Multi-Language OCR ...",
+      "url": "https://explore.n1n.ai/blog/pp-ocrv6-hugging-face-multi-language-ocr-guide-2026-06-22",
+      "snippet": "An in-depth technical analysis of PP-OCRv6, exploring its architecture, 50-language support, and deployment strategies from mobile-ready 1.5M models to high-accuracy 34.5M parameter versions."
+    },
+    {
+      "title": "PP-OCRv6 Explained: 50-Language OCR From 1.5M Parameters",
+      "url": "https://aimlinsights.com/2026/06/29/pp-ocrv6-explained-50-language-ocr-from-1-5m-parameters/",
+      "snippet": "PaddleOCR released PP-OCRv6 as part of version 3.7.0 on June 11, 2026, introducing three lightweight model tiers for multilingual text detection and recognition. The family ranges from a 1.5-million-parameter tiny model to a 34.5-million-parameter medium model, with deployment paths spanning PaddlePaddle, Hugging Face Transformers, ONNX Runtime, CPUs, mobile devices, and servers. The release ..."
+    },
+    {
+      "title": "PP-OCRv6: From 1.5M to 34.5M Parameters, Surpassing Billion-Scale VLMs ...",
+      "url": "https://arxiv.org/pdf/2606.13108",
+      "snippet": "PP-OCRv5 demonstrated that with sufficient high-quality data, the performance ceiling of a 5M-parameter model is far higher than commonly assumed. In this work, we present PP-OCRv6, which combines both directions. While inheriting PP-OCRv5&#x27;s proven data curation methodology, PP-OCRv6 introduces a fundamentally redesigned model architecture."
+    },
+    {
+      "title": "i-am-ai",
+      "url": "https://www.imaiblog.com/post/pp-ocrv6-paddlepaddle-ships-50-language-ocr",
+      "snippet": "The PaddlePaddle team just shipped PP-OCRv6, the latest iteration of their production OCR model family. This is a real release aimed at practitioners who need accurate text detection and recognition without enterprise-scale compute budgets or VLM inference costs. What stands out: three model tiers from 1.5M to 34.5M parameters, 50-language support in the medium and small variants, and genuine ..."
+    }
+  ]
+}

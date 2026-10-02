@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "xvevx/Stheno-v3.3-Indo-Companion",
+  "slug": "xvevx-stheno-v3-3-indo-companion",
+  "author": "xvevx",
+  "url": "https://huggingface.co/xvevx/Stheno-v3.3-Indo-Companion",
+  "created_at": "2026-10-01T21:35:37.000Z",
+  "updated_at": "2026-10-01T23:41:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama-3",
+    "roleplay",
+    "conversational",
+    "conversational-vc",
+    "unsloth",
+    "lora",
+    "indonesian",
+    "id",
+    "base_model:Sao10K/L3-8B-Stheno-v3.3-32K",
+    "base_model:adapter:Sao10K/L3-8B-Stheno-v3.3-32K",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 57074139777,
+  "storage_human": "57.1 GB",
+  "base_model": "Sao10K/L3-8B-Stheno-v3.3-32K",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "hanim1怎么进 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32be9b53c76042bad3e.html",
+      "snippet": "Sep 10, 2023 · hanim1怎么进,作为一个影视网站,如果想要进入haim1可以按以下步骤操作:"
+    },
+    {
+      "title": "hanim1怎么进 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fcb5aff715b5c3acaa4a71dc.html",
+      "snippet": "Sep 22, 2023 · hanim1怎么进,以“haim1怎么进”开头介绍，以下是三个步骤方法："
+    },
+    {
+      "title": "/r/animepiracy - Reddit",
+      "url": "https://www.reddit.com/r/animepiracy/about/",
+      "snippet": "Do not request or share links of any kind to infringing content. Sharing the names and links of websites and apps is allowed but …"
+    }
+  ]
+}

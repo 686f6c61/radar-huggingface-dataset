@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov10s",
+  "slug": "rknnai-rk3588-cnn-yolov10s",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov10s",
+  "created_at": "2026-10-02T01:21:35.000Z",
+  "updated_at": "2026-10-02T01:22:02.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8934793,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yolon11_RK3588/rknn_model_zoo/examples/yolov10/README.md at ... - GitHub",
+      "url": "https://github.com/Ebwai/Yolon11_RK3588/blob/main/rknn_model_zoo/examples/yolov10/README.md",
+      "snippet": "YOLOv11n INT8 quantized model running on RK3588 with IMX415 camera — Python to C++ 3-core NPU pipeline - Ebwai/Yolon11_RK3588"
+    },
+    {
+      "title": "RK3588-Omni-Sentinel/Software/tools/rknn_model_zoo/examples ... - GitHub",
+      "url": "https://github.com/Davin-Liang/RK3588-Omni-Sentinel/tree/main/Software/tools/rknn_model_zoo/examples/yolov10",
+      "snippet": "Contribute to Davin-Liang/RK3588-Omni-Sentinel development by creating an account on GitHub."
+    },
+    {
+      "title": "Model System | kaylorchen/rk3588-yolo-demo | DeepWiki",
+      "url": "https://deepwiki.com/kaylorchen/rk3588-yolo-demo/2-model-system",
+      "snippet": "The model system in the RK3588 YOLO demo provides a comprehensive framework for deploying state-of-the-art object detection models on embedded hardware. By supporting both YOLOv8 and YOLOv10 in various task-specific variants and sizes, the system offers flexibility for different use cases and performance requirements."
+    },
+    {
+      "title": "YOLOv10在RK3588上的测试(进行中...) - CSDN博客",
+      "url": "https://blog.csdn.net/twicave/article/details/139658447",
+      "snippet": "文章浏览阅读3.1k次，点赞7次，收藏18次。yolov10的测试，之前yolov5我的实测数据，在rk3588上只能达到每秒10帧。_rk3588 yolov10"
+    },
+    {
+      "title": "Model Conversion | kaylorchen/rk3588-yolo-demo | DeepWiki",
+      "url": "https://deepwiki.com/kaylorchen/rk3588-yolo-demo/2.1-model-conversion",
+      "snippet": "Model Conversion Relevant source files This page provides a detailed guide on converting YOLO models from PyTorch (.pt) format to ONNX and then to RKNN format for deployment on RK3588 platforms. The focus is on YOLOv8 and YOLOv10 models, with specific attention to the differences between RKNN toolkit versions that impact performance. For information about model performance comparisons after ..."
+    }
+  ]
+}

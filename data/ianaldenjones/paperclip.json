@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ianaldenjones/paperclip",
+  "slug": "ianaldenjones-paperclip",
+  "author": "ianaldenjones",
+  "url": "https://huggingface.co/ianaldenjones/paperclip",
+  "created_at": "2026-10-01T21:11:53.000Z",
+  "updated_at": "2026-10-01T21:12:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "text-generation",
+    "character-level",
+    "gpt",
+    "paperclips",
+    "toy",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43708770,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paperclip — The control plane for AI agents",
+      "url": "https://paperclipai.net/",
+      "snippet": "Manage a team of AI agents to run your business. Org charts, budgets, governance, and goals — all in one deployment."
+    },
+    {
+      "title": "GitHub - paperclipai/paperclip: The open-source app everyone uses to ...",
+      "url": "https://github.com/paperclipai/paperclip",
+      "snippet": "Open-source orchestration for teams of AI agents. If OpenClaw is an employee, Paperclip is the company. Paperclip is a Node.js server and React UI that orchestrates a team of AI agents to run a business. Bring your own agents, assign goals, and track work and costs from one dashboard. It looks like a task manager. Under the hood: org charts, budgets, governance, goal alignment, and agent ..."
+    },
+    {
+      "title": "Paperclip - The app people use to manage AI agents for work",
+      "url": "https://paperclip.ing/",
+      "snippet": "Manage a team of AI agents to run your business. Org charts, budgets, governance, and goals — all in one deployment."
+    },
+    {
+      "title": "you need to try Paperclip RIGHT NOW! - YouTube",
+      "url": "https://www.youtube.com/watch?v=7RVf25Rg0Mc",
+      "snippet": "In this video you&#x27;ll learn how to install Paperclip, connect remote Hermes agents, build a team across different AI harnesses, automate checks with routines, and use approval gates and watchdog ..."
+    },
+    {
+      "title": "GitHub - Tr1ckyMag1ca1/paperclip-model-watchdog: Run your Paperclip AI ...",
+      "url": "https://github.com/Tr1ckyMag1ca1/paperclip-model-watchdog",
+      "snippet": "Run your Paperclip AI agents for $0/mo in model costs. A Paperclip agent that monitors free models on OpenRouter, detects when models disappear or degrade, and automatically swaps your agents to the best available alternative."
+    }
+  ]
+}

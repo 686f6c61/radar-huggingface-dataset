@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DiogenesChen122/Dr.Sparse-Gemma4-12B-SFT-luna10-v4b",
+  "slug": "diogeneschen122-dr-sparse-gemma4-12b-sft-luna10-v4b",
+  "author": "DiogenesChen122",
+  "url": "https://huggingface.co/DiogenesChen122/Dr.Sparse-Gemma4-12B-SFT-luna10-v4b",
+  "created_at": "2026-10-01T19:39:22.000Z",
+  "updated_at": "2026-10-01T19:40:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "cuda",
+    "kernel-generation",
+    "sparse-linear-algebra",
+    "spgemm",
+    "lora",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 24476367962,
+  "storage_human": "24.5 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "DiogenesChen122/Gemma-4-31B-Lora-20260828 · Hugging Face",
+      "url": "https://huggingface.co/DiogenesChen122/Gemma-4-31B-Lora-20260828",
+      "snippet": "Teacher: GPT-5.6, tree-search runs across the entire Dr.Sparse evaluation corpus (level 1-4, multiple GPU generations). Selection: rejection-sampling SFT — keep a turn iff the kernel compiled, verified numerically, and beat cuSPARSE by ≥ 1.05×. 4027 kept (3822 train / 205 val, held out by run_id) after Gemma-4 length filtering."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    },
+    {
+      "title": "Gemma 4 12B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/gemma4-12b/",
+      "snippet": "Gemma 4 12B is Google&#x27;s mid-size dense Gemma 4 model — the step up from the edge-sized E2B/E4B variants for workloads that need stronger reasoning while fitting on a single Jetson."
+    }
+  ]
+}

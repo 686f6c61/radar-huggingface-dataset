@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pbcong/tars-release-7b-mask-s42-ep1",
+  "slug": "pbcong-tars-release-7b-mask-s42-ep1",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/tars-release-7b-mask-s42-ep1",
+  "created_at": "2026-10-01T19:24:35.000Z",
+  "updated_at": "2026-10-01T19:25:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "base_model:liuhaotian/llava-v1.5-7b",
+    "base_model:finetune:liuhaotian/llava-v1.5-7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7062902784,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126400899,
+  "storage_human": "14.1 GB",
+  "base_model": "liuhaotian/llava-v1.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - bytedance/UI-TARS",
+      "url": "https://github.com/bytedance/UI-TARS",
+      "snippet": "🌟 2025.09.04: We&#x27;re excited to announce the release the UI-TARS-2, which is a major upgrade from UI-TARS-1.5, featuring with enhanced capabilities in GUI, Game, Code and Tool Use. It is an \"All In One\" Agent model, enabling seamless integration of multiple abilities for complex tasks. Please check our new technical report for more details."
+    },
+    {
+      "title": "bartowski/UI-TARS-7B-DPO-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/UI-TARS-7B-DPO-GGUF",
+      "snippet": "Lemonade How to use bartowski/UI-TARS-7B-DPO-GGUF with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Atomic Chat Llamacpp imatrix Quantizations of UI-TARS-7B-DPO Prompt format Download a file (not the whole branch) from below: Embed/output weights Downloading using huggingface-cli ARM/AVX ..."
+    },
+    {
+      "title": "ByteDance-Seed/UI-TARS-7B-DPO · Hugging Face",
+      "url": "https://huggingface.co/ByteDance-Seed/UI-TARS-7B-DPO",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ByteDance: UI-TARS 7B - Multimodal Vision-Language Agent",
+      "url": "https://upend.ai/ui-tars-1.5-7b",
+      "snippet": "ByteDance&#x27;s UI-TARS 7B, released on July 22, 2025, is a multimodal vision-language model designed for GUI environments like desktop interfaces, web browsers, and mobile systems."
+    },
+    {
+      "title": "ByteDance: UI-TARS 7B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/bytedance/ui-tars-1.5-7b",
+      "snippet": "The model performs among the fastest models, ranking in the 76th percentile for speed across benchmarks. It also offers highly competitive pricing, consistently placing in the 82nd percentile. Notably, UI-TARS 7B exhibits exceptional reliability, achieving a 99% success rate, indicating minimal technical failures and consistent response delivery."
+    }
+  ]
+}

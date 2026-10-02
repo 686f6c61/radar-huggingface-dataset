@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ap3212/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly",
+  "slug": "ap3212-qwen3-8-27b-abliterated-3bit-mlx-textonly",
+  "author": "ap3212",
+  "url": "https://huggingface.co/ap3212/Qwen3.8-27B-ABLITERATED-3bit-MLX-TextOnly",
+  "created_at": "2026-10-01T23:17:17.000Z",
+  "updated_at": "2026-10-01T23:17:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantized",
+    "3-bit",
+    "text-generation",
+    "text-only",
+    "conversational",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 11791363766,
+  "storage_human": "11.8 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "PocketAiHub/Qwen3.8-27B-Abliterated-MLX · Hugging Face",
+      "url": "https://huggingface.co/PocketAiHub/Qwen3.8-27B-Abliterated-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run SuperQwen3.8-27B MLX Locally: Unfiltered LLM Guide",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-superqwen3-8-27b-abliterated-mlx-unfiltered-local-inference",
+      "snippet": "Deploy the 27B abliterated Qwen model on Apple Silicon using MLX. Step-by-step guide to installing and running high-performance, unfiltered local LLMs."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

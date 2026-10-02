@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "atlas-institute/qwen3-14b-dapt-offsec",
+  "slug": "atlas-institute-qwen3-14b-dapt-offsec",
+  "author": "atlas-institute",
+  "url": "https://huggingface.co/atlas-institute/qwen3-14b-dapt-offsec",
+  "created_at": "2026-10-01T16:47:09.000Z",
+  "updated_at": "2026-10-02T00:20:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "hf_jobs",
+    "sft",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9263275301,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opco Atlas | Atlas est l'opérateur de compétences des services ...",
+      "url": "https://www.opco-atlas.fr/",
+      "snippet": "Le 6 octobre, Atlas de tous les talents, web-émission de 2 heures 100 % accessible, réunira entreprises, CFA, organismes de …"
+    },
+    {
+      "title": "Vêtements Homme | Atlas For Men",
+      "url": "https://www.atlasformen.fr/homme/vetements-100.aspx",
+      "snippet": "Atlas for Men: la marque de vêtements homme en ligne confortables, des habits intemporels, et pas cher ! Comme dans un magasin …"
+    },
+    {
+      "title": "Vêtements pas chers, accessoires et chaussures Homme | Atlas For …",
+      "url": "https://www.atlasformen.fr/",
+      "snippet": "Créé en 1999, Atlas For Men est la marque des explorateurs nature, amateurs et passionnés. Avec des matières douces et chaudes …"
+    },
+    {
+      "title": "Atlas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Atlas",
+      "snippet": "Atlas est un nom de lieu notamment porté par : Atlas, un massif montagneux d'Afrique du Nord ; Atlas, une localité de Pennsylvanie, …"
+    },
+    {
+      "title": "World Map / World Atlas / Atlas of the World Including Geography …",
+      "url": "https://www.worldatlas.com/",
+      "snippet": "Well-researched and entertaining content on geography (including world maps), science, current events, and more."
+    }
+  ]
+}

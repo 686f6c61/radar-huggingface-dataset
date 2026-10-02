@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "simonswiss/shot-doctor-models",
+  "slug": "simonswiss-shot-doctor-models",
+  "author": "simonswiss",
+  "url": "https://huggingface.co/simonswiss/shot-doctor-models",
+  "created_at": "2026-10-01T22:31:19.000Z",
+  "updated_at": "2026-10-01T22:31:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "pose-estimation",
+    "mediapipe",
+    "rtmpose",
+    "basketball",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73917237,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One API for the models moving AI forward. - swiss-integrator.ai",
+      "url": "https://swiss-integrator.ai/models",
+      "snippet": "One API for the models moving AI forward. Browse the latest frontier and open-weight releases, then copy a ready-to-use model ID into your request."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    },
+    {
+      "title": "Simon Vrachliotis (@simonswiss) on X",
+      "url": "https://x.com/simonswiss/status/2099638779648856505",
+      "snippet": "The better LLMs get at coding, the worse they get at UI copywriting 😭 EVERYTHING sounds like a ChatGPT AI poster. Claude, Codex, all of them. I read the text and I see the sparkles, the paintbrushes and map icons in my head 🤣"
+    },
+    {
+      "title": "Shot Doctor — AI Video Diagnosis | DynamicVibe",
+      "url": "https://www.dynamicvibe.net/shot-doctor/",
+      "snippet": "Diagnose a failed AI video shot, repair the prompt, route it to a better model, and save the fix."
+    },
+    {
+      "title": "Best AI for Healthcare & Medical: LLM Leaderboard | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/capabilities/healthcare-and-medical",
+      "snippet": "Which AI is best for doctors and clinicians? See how AI models perform on tasks in the healthcare and medical domain. Independent LLM benchmark, updated with new models."
+    }
+  ]
+}

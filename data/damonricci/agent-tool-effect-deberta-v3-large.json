@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DamonRicci/agent-tool-effect-deberta-v3-large",
+  "slug": "damonricci-agent-tool-effect-deberta-v3-large",
+  "author": "DamonRicci",
+  "url": "https://huggingface.co/DamonRicci/agent-tool-effect-deberta-v3-large",
+  "created_at": "2026-10-01T22:10:51.000Z",
+  "updated_at": "2026-10-01T22:13:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "agents",
+    "tool-calling",
+    "deberta-v3",
+    "optimization",
+    "caching",
+    "function-calling",
+    "text-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435063810,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1742769056,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Unlike a large language model (LLM), Jev does not generate natural-language text."
+    },
+    {
+      "title": "microsoft/deberta-v3-large · Hugging Face",
+      "url": "https://huggingface.co/microsoft/deberta-v3-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - microsoft/DeBERTa: The implementation of DeBERTa",
+      "url": "https://github.com/microsoft/DeBERTa",
+      "snippet": "The implementation of DeBERTa. Contribute to microsoft/DeBERTa development by creating an account on GitHub."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "inaciose/inaciov3-d20-sft-v1",
+  "slug": "inaciose-inaciov3-d20-sft-v1",
+  "author": "inaciose",
+  "url": "https://huggingface.co/inaciose/inaciov3-d20-sft-v1",
+  "created_at": "2026-10-01T19:53:12.000Z",
+  "updated_at": "2026-10-01T20:23:45.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6419187212,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inaciose (Sergio Inacio) - Hugging Face",
+      "url": "https://huggingface.co/inaciose",
+      "snippet": "Sort: Recently updated inaciose/smol-smoltalk-pt-v1 Viewer •Updated 3 days ago•308k• 57"
+    },
+    {
+      "title": "inaciose (Sergio Inacio) - Hugging Face",
+      "url": "https://huggingface.co/inaciose/datasets",
+      "snippet": "Organizations inaciose&#x27;s datasets3 Sort: Recently updated inaciose/smol-smoltalk-pt-v1 Viewer •Updated 3 days ago•308k• 57"
+    },
+    {
+      "title": "GitHub - inaciose/sft-datasets",
+      "url": "https://github.com/inaciose/sft-datasets",
+      "snippet": "Contribute to inaciose/sft-datasets development by creating an account on GitHub."
+    },
+    {
+      "title": "Inacio V (@inaciov3) • Instagram photos and videos",
+      "url": "https://www.instagram.com/inaciov3/",
+      "snippet": "81 Followers, 361 Following, 0 Posts - Inacio V (@inaciov3) on Instagram: \"\""
+    },
+    {
+      "title": "Official gateway and model catalog for Agnes AI. - GitHub",
+      "url": "https://github.com/AgnesAI-Labs/AgnesAI-Models",
+      "snippet": "Official gateway and model catalog for Agnes AI. Agnes AI gives developers OpenAI-compatible access to multimodal models for text, image, video, and agent workflows through a unified API gateway."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov7",
+  "slug": "rknnai-rk3588-cnn-yolov7",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov7",
+  "created_at": "2026-10-02T01:22:38.000Z",
+  "updated_at": "2026-10-02T01:23:06.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39077366,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - thnak/yolov7-rknn: Run your yolov7 object detection with ...",
+      "url": "https://github.com/thnak/yolov7-rknn",
+      "snippet": "Run your yolov7 object detection with Rockchip NPU platforms (RK3566, RK3568, RK3588, RK3588S, RV1103, RV1106, RK3562). - thnak/yolov7-rknn"
+    },
+    {
+      "title": "How to Run CNN Models on RK3588 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/tools/rk/rk3588-cnn-rknn2-deploy",
+      "snippet": "Back / reComputer RK Series How to Run CNN Models on RK3588 Convert YOLO11n on an Ubuntu PC, deploy it to RK3588 over SSH/SCP, and verify C++ and Python inference on its built-in NPU."
+    },
+    {
+      "title": "rk3588-example/examples/yolov7/README.md at main - GitHub",
+      "url": "https://github.com/exyexin/rk3588-example/blob/main/examples/yolov7/README.md",
+      "snippet": "Contribute to exyexin/rk3588-example development by creating an account on GitHub."
+    },
+    {
+      "title": "RK3588上跑通YOLOv7目标检测的实操包：训练+转RKNN+实时视频推理全链路代码-CSDN博客",
+      "url": "https://blog.csdn.net/y7z8a9/article/details/162779341",
+      "snippet": "文章浏览阅读221次，点赞6次，收藏4次。一套开箱即用的YOLOv7嵌入式部署方案，专为RK3588平台优化。包含完整训练流程：支持nvrpro.yaml配置文件、PyTorch训练脚本，可直接复现模型训练；提供RKNN模型转换工具（rknn_toolkit_lite2-1.4.0预编译wheel包），适配aarch64架构；部署侧同时支持Python和C++调用，覆盖摄像 ..."
+    },
+    {
+      "title": "Best AI Image Generation Models in 2026: Complete Comparison - Atlas ...",
+      "url": "https://www.atlascloud.ai/blog/tips/best-ai-image-generation-models-2026",
+      "snippet": "Complete comparison of the best AI image generation models in 2026. Compare Flux 2 Pro, Imagen 4 Ultra, Nano Banana 2, Seedream v5.0 Lite, Z-Image Turbo, and Ideogram v3."
+    }
+  ]
+}

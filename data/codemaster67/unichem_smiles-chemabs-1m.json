@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/Unichem_smiles-chemabs-1M",
+  "slug": "codemaster67-unichem_smiles-chemabs-1m",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/Unichem_smiles-chemabs-1M",
+  "created_at": "2026-10-01T21:01:13.000Z",
+  "updated_at": "2026-10-01T21:01:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chemistry",
+    "smiles",
+    "olmo",
+    "causal-lm",
+    "qlora",
+    "4bit",
+    "en",
+    "dataset:Codemaster67/Unichem_smiles-chemabs-1M",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:adapter:allenai/OLMo-1B-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192967968,
+  "storage_human": "193 MB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codemaster67/Unichem_smiles-fineweb-1M - Hugging Face",
+      "url": "https://huggingface.co/datasets/Codemaster67/Unichem_smiles-fineweb-1M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Codemaster67/Unichem_smiles-Chemabs-10M - Hugging Face",
+      "url": "https://huggingface.co/datasets/Codemaster67/Unichem_smiles-Chemabs-10M",
+      "snippet": "Datasets: Codemaster67 / Unichem_smiles-Chemabs-10M Like 0 Modalities: Text Formats: parquet optimized-parquet Size: 100K - 1M Libraries: Datasets pandas Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·212k rows default (212k ..."
+    },
+    {
+      "title": "ChemSmiles classification - Codabench",
+      "url": "https://www.codabench.org/competitions/14675/",
+      "snippet": "Introduction The data for this challenge comes from a subset of the MoleculeNet dataset, a globally recognized benchmark for evaluating machine learning algorithms in chemistry. More specifically, this challenge is based on the molvision/BACE-V-SMILES- dataset. It contains SMILES representations (Simplified Molecular-Input Line-Entry System) of a large set of chemical compounds, which have ..."
+    },
+    {
+      "title": "Chem_AI/Notebook_1_Molecules_as_Data.ipynb at master ... - GitHub",
+      "url": "https://github.com/williamedwardhahn/Chem_AI/blob/master/Notebook_1_Molecules_as_Data.ipynb",
+      "snippet": "FAU Chemistry & Biochemistry with AI — 6-notebook curriculum teaching Python, cheminformatics, and ML through real molecular data - williamedwardhahn/Chem_AI"
+    },
+    {
+      "title": "[2407.20267] A Large Encoder-Decoder Family of Foundation Models For ...",
+      "url": "https://arxiv.org/abs/2407.20267",
+      "snippet": "This paper introduces a large encoder-decoder chemical foundation models pre-trained on a curated dataset of 91 million SMILES samples sourced from PubChem, which is equivalent to 4 billion of molecular tokens."
+    }
+  ]
+}

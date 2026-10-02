@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oozkanemre88/albef-baseline-2024",
+  "slug": "oozkanemre88-albef-baseline-2024",
+  "author": "oozkanemre88",
+  "url": "https://huggingface.co/oozkanemre88/albef-baseline-2024",
+  "created_at": "2026-10-02T01:19:49.000Z",
+  "updated_at": "2026-10-02T01:19:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "oozkanemre88 (Emre Ozkan) - Hugging Face",
+      "url": "https://huggingface.co/oozkanemre88/models",
+      "snippet": "oozkanemre88 (Emre Ozkan) - Hugging Face ... hi"
+    },
+    {
+      "title": "ggrodrigues0816/albef-baseline · Hugging Face",
+      "url": "https://huggingface.co/ggrodrigues0816/albef-baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model Architecture | salesforce/ALBEF | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/ALBEF/1.2-model-architecture",
+      "snippet": "Model Architecture Relevant source files This document provides a detailed explanation of the ALBEF (Align Before Fuse) model architecture, including its core components, design principles, and internal mechanisms. For information about using ALBEF for specific tasks, see the task-specific pages under Fine-tuning. Overview ALBEF introduces an innovative approach to vision-language modeling ..."
+    },
+    {
+      "title": "AI Model Catalog, Benchmarks & Capabilities | Inferbase",
+      "url": "https://inferbase.ai/models",
+      "snippet": "Browse the AI model catalog, from open-weight families like Llama, DeepSeek, Qwen, and Mistral to frontier models. Filter by benchmarks, capabilities, and context window."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

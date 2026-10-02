@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "raj00101/e-waste-cosmetic-v5-retry04",
+  "slug": "raj00101-e-waste-cosmetic-v5-retry04",
+  "author": "raj00101",
+  "url": "https://huggingface.co/raj00101/e-waste-cosmetic-v5-retry04",
+  "created_at": "2026-10-01T19:40:36.000Z",
+  "updated_at": "2026-10-01T20:06:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168444310,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Pavneet54/ewaste-classifier",
+      "url": "https://github.com/Pavneet54/ewaste-classifier",
+      "snippet": "An end-to-end AI system for identifying electronic waste, estimating its recoverable material composition, and calculating its recycling value using Computer Vision, Vision-Language Models (VLMs), Retrieval-Augmented Generation (RAG), and deterministic value estimation."
+    },
+    {
+      "title": "Real time electronic-waste classification algorithms using the computer ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0921344924002453",
+      "snippet": "The real-time e-waste component detection was also done using video clips as well as webcam streaming. Deploying real-time e-waste object detection and sorting can significantly narrow the gap between e-waste accumulation and recycling rates, leading to reduced environmental strain and impact."
+    },
+    {
+      "title": "Use AI",
+      "url": "https://use.ai/",
+      "snippet": "Your AI Workspace. Access leading AI models in one workspace, research the web, and get things done."
+    },
+    {
+      "title": "Waste_Detection_Using_YOLO_v5.ipynb - GitHub",
+      "url": "https://github.com/jcm-ai/Real-time-Waste-Detection-System-An-End-to-End-YOLOv5-Solution/blob/main/research/Waste_Detection_Using_YOLO_v5.ipynb",
+      "snippet": "This project develops an automated waste detection system using YOLOv5 deep learning and computer vision. It accurately identifies and classifies waste in real time from images and video, aiming to significantly boost waste management efficiency and support smart city environmental initiatives."
+    },
+    {
+      "title": "Advancing e-waste classification with customizable YOLO based deep ...",
+      "url": "https://www.nature.com/articles/s41598-025-94772-x",
+      "snippet": "This evaluation explores the architectural nuances of each model and its efficacy in accurately detecting diverse e-waste components."
+    }
+  ]
+}

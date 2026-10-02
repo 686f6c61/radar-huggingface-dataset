@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i145-Hrep",
+  "slug": "qxyz-sn56-i145-hrep",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i145-Hrep",
+  "created_at": "2026-10-01T21:07:58.000Z",
+  "updated_at": "2026-10-01T21:08:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/root/models/Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454897,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HRE Model Architecture | slzhou-xy/HREP | DeepWiki",
+      "url": "https://deepwiki.com/slzhou-xy/HREP/4-hre-model-architecture",
+      "snippet": "HRE Model Architecture Relevant source files Purpose and Scope This document provides a comprehensive overview of the HRE (Heterogeneous Region Embedding) neural network model architecture defined in HRE_Module.py The HRE model is a multi-relation Graph Convolutional Network that learns unified region embeddings by processing four distinct relation types in parallel through a three-stage ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "qxyz (qxyz) - Hugging Face",
+      "url": "https://huggingface.co/qxyz",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    }
+  ]
+}

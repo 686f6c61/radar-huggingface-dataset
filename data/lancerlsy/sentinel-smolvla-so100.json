@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "LancerLSY/sentinel-smolvla-so100",
+  "slug": "lancerlsy-sentinel-smolvla-so100",
+  "author": "LancerLSY",
+  "url": "https://huggingface.co/LancerLSY/sentinel-smolvla-so100",
+  "created_at": "2026-10-02T01:32:29.000Z",
+  "updated_at": "2026-10-02T01:59:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "smolvla",
+    "lerobot",
+    "action-prediction",
+    "trainable-overlay",
+    "sentinel-evc",
+    "dataset:lerobot/svla_so100_pickplace",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208219309,
+  "storage_human": "208 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - l2ktech/smolvla_project: SmolVLA/SO100 embodied AI practice ...",
+      "url": "https://github.com/l2ktech/smolvla_project/tree/master/",
+      "snippet": "Public support repository for SmolVLA, LeRobot datasets, and SO-100/SO100-style embodied AI experiments. This repository is a public learning and engineering evidence entry for the SO101 / Pi0.5 / Evo-RL interview project line."
+    },
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "Beilinghamburger/smolvla_so100_vla · Hugging Face",
+      "url": "https://huggingface.co/Beilinghamburger/smolvla_so100_vla",
+      "snippet": "Model Card for smolvla SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "SmolVLA: A vision-language-action model for affordable and efficient ...",
+      "url": "https://arxiv.org/html/2506.01844v1",
+      "snippet": "3 SmolVLA: small, efficient and capable Overview. SmolVLA is a lightweight VLA composed of a compact pretrained VLM, and an action expert trained with flow matching. Given multiple images and a language instruction describing the task, the model outputs a chunk of actions."
+    },
+    {
+      "title": "lucarrr/smolvla_so100_finetuned · Hugging Face",
+      "url": "https://huggingface.co/lucarrr/smolvla_so100_finetuned",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    }
+  ]
+}

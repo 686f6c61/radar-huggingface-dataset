@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_256_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS_84_ID_146276",
+  "slug": "castanetnicolas-act_ur5e_bs_256_act_chunk_10_exec_10_task_pick_place_can_pixels_84_id_146276",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_256_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS_84_ID_146276",
+  "created_at": "2026-10-01T19:23:31.000Z",
+  "updated_at": "2026-10-01T19:23:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:castanetnicolas/robomimic_can_ph_image84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51580551,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206366268,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castanetnicolas/act_ur5e_pick_place · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/act_ur5e_pick_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "castanetnicolas (Castanet) - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/activity/all",
+      "snippet": "castanetnicolas/ACT_UR5e_BS_8_Act_Chunk_50 Robotics • 51.6M•Updated 19 days ago• 101 New activity in castanetnicolas/UR5e_sim_pick_place_can_1000_absolute_EEF_actions 19 days ago"
+    },
+    {
+      "title": "Google Keep",
+      "url": "https://keep.google.com/",
+      "snippet": "Save your thoughts, wherever you are."
+    },
+    {
+      "title": "ACT_UR5e_BS_8_Act_Chunk_50 - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-castanetnicolas-act-ur5e-bs-8-act-chunk-50",
+      "snippet": "ACT_UR5e_BS_8_Act_Chunk_50 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Wayback Machine",
+      "url": "http://search.archive.org/",
+      "snippet": "Archive-It enables you to capture, manage and search collections of digital content without any technical expertise or hosting facilities. Visit Archive-It to build and browse the collections."
+    }
+  ]
+}

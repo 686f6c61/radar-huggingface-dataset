@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "florenciodri/Maestro-2-9B-Preview-GGUF",
+  "slug": "florenciodri-maestro-2-9b-preview-gguf",
+  "author": "florenciodri",
+  "url": "https://huggingface.co/florenciodri/Maestro-2-9B-Preview-GGUF",
+  "created_at": "2026-10-01T23:06:37.000Z",
+  "updated_at": "2026-10-02T00:18:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "qwen3.5",
+    "reasoning",
+    "code",
+    "software-engineering",
+    "frontend",
+    "agentic",
+    "tool-use",
+    "long-context",
+    "text-generation",
+    "en",
+    "base_model:vectionlabs/Maestro-2-9B-Preview",
+    "base_model:quantized:vectionlabs/Maestro-2-9B-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 59535206912,
+  "storage_human": "59.5 GB",
+  "base_model": "vectionlabs/Maestro-2-9B-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vectionlabs/Maestro-2-9B-Preview · Hugging Face",
+      "url": "https://huggingface.co/vectionlabs/Maestro-2-9B-Preview",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Maestro - a vectionlabs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/vectionlabs/maestro",
+      "snippet": "Our most powerful mathematical model to date; we will also include GGUFs and Heretic variants in the collection."
+    },
+    {
+      "title": "Florence-2 - maestro",
+      "url": "http://maestro.roboflow.com/latest/models/florence_2/",
+      "snippet": "Florence-2 is a lightweight vision-language model open-sourced by Microsoft under the MIT license. It offers strong zero-shot and fine-tuning capabilities for tasks such as image captioning, object detection, visual grounding, and segmentation."
+    },
+    {
+      "title": "Run Maestro-2-9B Preview API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/vectionlabs/Maestro-2-9B-Preview",
+      "snippet": "Vection Labs&#x27; Maestro-2-9B-Preview is a 9.65 billion parameter dense multimodal model built on the Qwen3.5 architecture, designed for engineering tasks. It features native thinking capabilities, agentic software engineering, and genuinely multimodal input processing for images and video. With a 262K token context window, it excels at code generation, frontend development, and deep reasoning on ..."
+    },
+    {
+      "title": "GitHub - roboflow/maestro: streamline the fine-tuning process for ...",
+      "url": "https://github.com/roboflow/maestro",
+      "snippet": "maestro is a streamlined tool to accelerate the fine-tuning of multimodal models. By encapsulating best practices from our core modules, maestro handles configuration, data loading, reproducibility, and training loop setup. It currently offers ready-to-use recipes for popular vision-language models such as Florence-2, PaliGemma 2, and Qwen2.5-VL."
+    }
+  ]
+}

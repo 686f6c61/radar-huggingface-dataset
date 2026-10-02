@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dheer05dj/anlp-a2-p2-adamw-lr0p002",
+  "slug": "dheer05dj-anlp-a2-p2-adamw-lr0p002",
+  "author": "dheer05dj",
+  "url": "https://huggingface.co/dheer05dj/anlp-a2-p2-adamw-lr0p002",
+  "created_at": "2026-10-02T01:12:51.000Z",
+  "updated_at": "2026-10-02T01:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41558528,
+  "parameters_human": "41.6M",
+  "storage_bytes": 166238920,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vatsavsrivatsav/anlp-a2-p2-adamw · Hugging Face",
+      "url": "https://huggingface.co/Vatsavsrivatsav/anlp-a2-p2-adamw",
+      "snippet": "p2_adamw ANLP Assignment 2, Part 2: dense decoder-only LM (Part 1 variant-1 architecture) pretrained for 1x browndw/human-ai-parallel-corpus with optimizer adamw ..."
+    },
+    {
+      "title": "unignoramus/anlp-a2-p2-adamw · Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p2-adamw",
+      "snippet": "ANLP Assignment 2, Part 2: adamw Decoder-only transformer pretrained on the human/AI parallel English corpus with a hand-written implementation of this optimizer."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "A daily-updated, community-maintained list of every free AI model (free LLM API) available right now. No paywalls. No API key required to browse. Updated automatically every 24 hours by GitHub Actions pulling from OpenRouter, Pollinations AI, and other public sources ..."
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    },
+    {
+      "title": "DALL·E 2 | OpenAI",
+      "url": "https://openai.com/index/dall-e-2/",
+      "snippet": "Learning from real-world use is an important part of developing and deploying AI responsibly. We began by previewing DALL·E 2 to a limited number of trusted users."
+    }
+  ]
+}

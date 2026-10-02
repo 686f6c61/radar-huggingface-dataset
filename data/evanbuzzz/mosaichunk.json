@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "evanbuzzZ/MosaiChunk",
+  "slug": "evanbuzzz-mosaichunk",
+  "author": "evanbuzzZ",
+  "url": "https://huggingface.co/evanbuzzZ/MosaiChunk",
+  "created_at": "2026-10-01T21:18:24.000Z",
+  "updated_at": "2026-10-02T02:21:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "arxiv:2610.02153",
+    "video-generation",
+    "text-to-video",
+    "image-to-video",
+    "memory",
+    "en",
+    "dataset:evanbuzzZ/RememBench",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100805080,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "AI 3D Model Generator - Crambuzz",
+      "url": "https://crambuzz.com/",
+      "snippet": "Generate 3D models from text prompts or images with Crambuzz. Export in GLB, STL, OBJ and use models in production."
+    },
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "MossyModels - AI Aimbot Models & YOLO Detection Models",
+      "url": "https://mossymodels.com/configs/3",
+      "snippet": "Find AI detection models organized by game. Each game page lists community-uploaded models you can download for free after creating an account. Models are available in ONNX and PyTorch (.pt) formats compatible with popular object detection frameworks. Whether you need a model for Fortnite, Warzone, Apex Legends, or any other supported title, MossyModels has you covered with a wide selection of ..."
+    },
+    {
+      "title": "Moescape — AI-enabled creative platform for anime fandom",
+      "url": "https://moescape.ai/",
+      "snippet": "Explore AI generated anime art, find best prompts, create beautiful images with our free AI art generator, and share it with other anime fans!"
+    }
+  ]
+}

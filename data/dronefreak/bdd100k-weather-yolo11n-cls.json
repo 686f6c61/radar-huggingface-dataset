@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-yolo11n-cls",
+  "slug": "dronefreak-bdd100k-weather-yolo11n-cls",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-yolo11n-cls",
+  "created_at": "2026-10-01T19:23:56.000Z",
+  "updated_at": "2026-10-01T20:23:53.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2410.17725",
+    "arxiv:1805.04687",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21781204,
+  "storage_human": "22 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 81.32
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 62.91
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 65.68
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 61.19
+    }
+  ],
+  "sources": [
+    {
+      "title": "pallavdwivedi/Weather-Robust-Object-Detection-on-BDD100K - GitHub",
+      "url": "https://github.com/pallavdwivedi/Weather-Robust-Object-Detection-on-BDD100K",
+      "snippet": "Weather-Robust Vehicle Detection on BDD100K (YOLOv11) This project trains and evaluates a YOLOv11n-based vehicle detector (car, truck, bus) on a 10% subset of the BDD100K dataset, with a clear-weather baseline and mixed-weather testing using test-time augmentation (TTA)."
+    },
+    {
+      "title": "@dronefreak on Hugging Face: \" Open-sourcing the BDD100K Object ...",
+      "url": "https://huggingface.co/posts/dronefreak/988753800362571",
+      "snippet": "The \"test\" split here is BDD100K&#x27;s official validation set.🤖 Collection: dronefreak/bdd100k-object-detection-model-zoo-6aafc46f2f6c5e4d8676d894Feedback and contributions welcome."
+    },
+    {
+      "title": "BDD100K Object Detection Model Zoo - a dronefreak Collection",
+      "url": "https://huggingface.co/collections/dronefreak/bdd100k-object-detection-model-zoo",
+      "snippet": "A collection of YOLO object detection models fine-tuned on the BDD100K benchmark for autonomous-driving scene detection. RF-DETR variants to follow."
+    },
+    {
+      "title": "GitHub - SysCV/bdd100k-models: Model Zoo of BDD100K Dataset",
+      "url": "https://github.com/SysCV/bdd100k-models",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "Berkeley DeepDrive",
+      "url": "http://bdd-data.berkeley.edu/",
+      "snippet": "Please go to our discussion board with any questions on the BDD100K dataset usage and contact Fisher Yu for other inquiries."
+    }
+  ]
+}

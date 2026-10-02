@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-yolo11n-cls",
+  "slug": "dronefreak-bdd100k-period-yolo11n-cls",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-yolo11n-cls",
+  "created_at": "2026-10-01T19:56:57.000Z",
+  "updated_at": "2026-10-01T20:24:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2410.17725",
+    "arxiv:1805.04687",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21623401,
+  "storage_human": "22 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.79
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 80.13
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 88.2
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 75.19
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hot Bhojpuri actress Trisha Kar Madhu viral sex full 22 min video",
+      "url": "https://www.desitales2.com/videos/bhojpuri-actress-dancer-trisha-kar-madhu-viral-sex-video-full/",
+      "snippet": "The beautiful Bhojpuri actress and dancer Trisha Kar Madhu shocked millions of people when her viral sex video got released online …"
+    },
+    {
+      "title": "Trisha Kar Madhu Bhojpuri Mms - EPORNER",
+      "url": "https://www.eporner.com/video-SS8vnRjYAwB/trisha-kar-madhu-bhojpuri-mms/",
+      "snippet": "Watch Trisha Kar Madhu Bhojpuri Mms. Duration: 22:46, available in: 1080p, 720p, 480p, 360p, 240p. Eporner is the largest hd porn …"
+    },
+    {
+      "title": "Bhojpuri actress, dancer Trisha Kar Madhu viral sex video (Na betu na ...",
+      "url": "https://www.porngem.com/videos/bhojpuri-actress-dancer-trisha-kar-madhu-viral-sex-video-na-betu-na-kast-hoga-betu-449651/",
+      "snippet": "The beautiful Bhojpuri actress and dancer Trisha Kar Madhu shocked millions of people when her viral sex video got released online …"
+    },
+    {
+      "title": "Trisha Kar Madhu Viral Sex Mms With Hindi Audio - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/video.okolfvf6d44/trisha_kar_madhu_viral_sex_mms_with_hindi_audio",
+      "snippet": "Trisha Kar Madhu Viral Sex Mms With Hindi Audio 6 min 1080p nagmanaeemx 9k Nagma 8k Naeem 5k sexy exotic fingers desi …"
+    },
+    {
+      "title": "Trisha Kar Madhu Viral Sex Mms With Hindi Audio",
+      "url": "https://iporntv.net/download/87396255/trisha-kar-madhu-viral-sex-mms-with-hindi-audio",
+      "snippet": "Watch Trisha Kar Madhu Viral Sex Mms With Hindi Audio free on iPornTV. High-quality mobile porn video. Available to stream or …"
+    }
+  ]
+}

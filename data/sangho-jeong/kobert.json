@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sangho-jeong/kobert",
+  "slug": "sangho-jeong-kobert",
+  "author": "sangho-jeong",
+  "url": "https://huggingface.co/sangho-jeong/kobert",
+  "created_at": "2026-10-02T01:30:15.000Z",
+  "updated_at": "2026-10-02T01:30:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:skt/kobert-base-v1",
+    "base_model:finetune:skt/kobert-base-v1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92188418,
+  "parameters_human": "92.2M",
+  "storage_bytes": 368782329,
+  "storage_human": "369 MB",
+  "base_model": "skt/kobert-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Adult Games Online Free - No Download | Naughty Games",
+      "url": "https://naughty.games/play",
+      "snippet": "3 days ago · Play adult games online, free, right in your browser - no download and no signup. A growing catalog of NSFW games …"
+    },
+    {
+      "title": "Lewdspot - Online Free Porn & Sex Games | Play Now!",
+      "url": "https://lewdspot.com/",
+      "snippet": "Play free porn games and sex games online at Lewdspot. HTML5 browser games, visual novels, RPG adventures and realistic sex …"
+    },
+    {
+      "title": "Top free NSFW games for Web - itch.io",
+      "url": "https://itch.io/games/free/nsfw/platform-web",
+      "snippet": "Find NSFW games for Web like Stuck with my Ex's Family and ZOMBIES!?, Lilith's Heart, World Tamer, Horsegirl Twerk Off, !Ω …"
+    },
+    {
+      "title": "Porn Games & Sex Games, Hentai Games, XXX Games - Gamcore",
+      "url": "https://gamcore.com/",
+      "snippet": "Free Sex Games, Porn Games Online, Hentai Games, Adult NSFW Games. Play your best Porn Game on Mobile and Desktop 🔞"
+    },
+    {
+      "title": "Free Porn Games",
+      "url": "https://porngames.com/",
+      "snippet": "Play over 1,000 free porn games, including sex games, hentai games, porno oyunlar, and adult games!"
+    }
+  ]
+}

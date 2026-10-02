@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolo11n",
+  "slug": "rknnai-rk3588-cnn-yolo11n",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolo11n",
+  "created_at": "2026-10-02T01:26:51.000Z",
+  "updated_at": "2026-10-02T01:27:18.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4247821,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "Yolon11_RK3588/rknn_model_zoo/README.md at main - GitHub",
+      "url": "https://github.com/Ebwai/Yolon11_RK3588/blob/main/rknn_model_zoo/README.md",
+      "snippet": "YOLOv11n INT8 quantized model running on RK3588 with IMX415 camera — Python to C++ 3-core NPU pipeline - Ebwai/Yolon11_RK3588"
+    },
+    {
+      "title": "How to Run CNN Models on RK3588 - sensecraft.seeed.cc",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/tools/rk/rk3588-cnn-rknn2-deploy",
+      "snippet": "How to Run CNN Models on RK3588 Convert YOLO11n on an Ubuntu PC, deploy it to RK3588 over SSH/SCP, and verify C++ and Python inference on its built-in NPU."
+    },
+    {
+      "title": "RKNN Ultralytics YOLOv11 | Radxa Docs",
+      "url": "https://docs.radxa.com/en/som/nx/nx5/ai-dev/rknn-ultralytics",
+      "snippet": "Currently, the Ultralytics library officially supports the RKNN platform. Users of RK3588/356X products can directly use the ultralytics library for YOLOv11 model conversion and deployment. Model Conversion on PC Radxa provides a pre-converted yolov11n.rknn model. Users can skip the PC-side model conversion section and directly refer to YOLOv11 Inference on Device. Install the latest version ..."
+    },
+    {
+      "title": "Model Examples | airockchip/rknn_model_zoo | DeepWiki",
+      "url": "https://deepwiki.com/airockchip/rknn_model_zoo/5-model-examples",
+      "snippet": "Model Examples Relevant source files This page provides a comprehensive overview of the pre-trained machine learning models included in the RKNN Model Zoo. These models have been optimized for deployment on Rockchip Neural Processing Units (NPUs) and cover a wide range of AI applications."
+    }
+  ]
+}

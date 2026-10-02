@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "pelixpng/pastvu-colorizer",
+  "slug": "pelixpng-pastvu-colorizer",
+  "author": "pelixpng",
+  "url": "https://huggingface.co/pelixpng/pastvu-colorizer",
+  "created_at": "2026-10-01T21:18:55.000Z",
+  "updated_at": "2026-10-01T21:22:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "image-colorization",
+    "image-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208751447,
+  "storage_human": "209 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Image Colorizer — Colorize Black & White Photos Online Free",
+      "url": "https://aiimagetoimage.ai/image-colorizer",
+      "snippet": "Our AI photo colorizer analyzes faces, clothing, objects, lighting, and scene context to predict natural-looking colors. Colorize any photo — black and white portraits, landscapes, or historical shots — without manual masking or editing."
+    },
+    {
+      "title": "Free Photo Colorizer - Photo AI",
+      "url": "https://photoai.com/colorize-photo",
+      "snippet": "Want unlimited AI photos of yourself? Upload your selfies, train your own AI model, and generate higher quality photos in any style, pose, or setting. Try Photo AI →"
+    },
+    {
+      "title": "AI Image Colorizer — VeritySuite",
+      "url": "https://veritysuite.pro/tools/images/image-colorizer",
+      "snippet": "Is the Image Colorizer free? Yes, completely free. The AI model runs locally — no server, no API key. Is my photo sent to a server? No. The DDColor model runs via ONNX Runtime Web directly in your browser — your image never leaves your device. What is the difference between Artistic and Realistic modes? Artistic mode produces vivid ..."
+    },
+    {
+      "title": "Free AI Photo Colorizer | Free.ai",
+      "url": "https://free.ai/image/colorize/",
+      "snippet": "Colorize black and white photos with AI for free."
+    },
+    {
+      "title": "AI Photo Colorizer - Free Online Tool | MyAIUtility | MyAIUtility",
+      "url": "https://myaiutility.com/tools/ai-photo-colorizer/",
+      "snippet": "About This Tool This AI-powered photo colorizer brings black and white photos to life using intelligent scene analysis and face detection. All processing happens in your browser — no images are uploaded to any server."
+    }
+  ]
+}

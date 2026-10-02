@@ -5,7 +5,7 @@
   "author": "khronnuz",
   "url": "https://huggingface.co/khronnuz/Ling-3.0-flash-exl3",
   "created_at": "2026-09-28T20:31:51.000Z",
-  "updated_at": "2026-09-30T23:53:16.000Z",
+  "updated_at": "2026-10-01T16:14:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 582,
+  "downloads_30d": 782,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

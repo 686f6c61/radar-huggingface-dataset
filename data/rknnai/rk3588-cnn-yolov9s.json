@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov9s",
+  "slug": "rknnai-rk3588-cnn-yolov9s",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov9s",
+  "created_at": "2026-10-02T01:33:42.000Z",
+  "updated_at": "2026-10-02T01:34:10.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10279955,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo?tab=readme-ov-file",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "RKNNAI (RKNNAI) - Hugging Face",
+      "url": "https://huggingface.co/RKNNAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "RKNN Runtime API and Model Loading | yudongyuan/rk3588-dual-sensor ...",
+      "url": "https://deepwiki.com/yudongyuan/rk3588-dual-sensor-fusion/4.1-rknn-runtime-api-and-model-loading",
+      "snippet": "This section documents the integration of the Rockchip Neural Network (RKNN) runtime within the RK3588 dual-sensor fusion system. It covers the core API headers, the process of loading model files into memory, and the standard lifecycle for NPU-accelerated inference."
+    },
+    {
+      "title": "RKNNAI (RKNNAI) - Hugging Face",
+      "url": "https://huggingface.co/RKNNAI/models",
+      "snippet": "User profile of RKNNAI on Hugging Face"
+    }
+  ]
+}

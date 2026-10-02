@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "NIM-AI/NIM-2-Coder-7B",
+  "slug": "nim-ai-nim-2-coder-7b",
+  "author": "NIM-AI",
+  "url": "https://huggingface.co/NIM-AI/NIM-2-Coder-7B",
+  "created_at": "2026-10-01T20:42:13.000Z",
+  "updated_at": "2026-10-01T20:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "code",
+    "coding",
+    "software-engineering",
+    "autonomous-agent",
+    "ollama",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4856026826,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Self-Host a Validated AI Coding Assistant with NVIDIA NeMo ...",
+      "url": "https://developer.nvidia.com/blog/how-to-self-host-a-validated-ai-coding-assistant-with-nvidia-nemo-guardrails/",
+      "snippet": "29.07.2026 ... nvcr.io/nim/bigcode/starcoder2-7b:${STARCODER_NIM_VERSION} ... For more details, see Securely Deploy AI Models with NVIDIA NIM. For ..."
+    },
+    {
+      "title": "Mistral 7B LLM - Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/de/models/mistral-7b",
+      "snippet": "Zusammengefügt und getestet im Terminal unter Verwendung von Fireworks.ai ... Wenn Sie andere Chat-basierte Modelle wie Llama 2 Chat 13B auf dieselbe ..."
+    },
+    {
+      "title": "Erfahrungen mit AI-Coding - Mikrocontroller.net",
+      "url": "https://www.mikrocontroller.net/topic/584253",
+      "snippet": "22.03.2026 ... Hallo Forum,. Vorweg: hier soll es um die Erfahrungen im Zusammenspiel verschiedener AI-Modelle mit Programmiersprachen und IDEs gehen."
+    },
+    {
+      "title": "Eine kurze Einführung zu Agile Robots und Idealworks Edge AI ...",
+      "url": "https://www.agile-robots.com/de/news/detail/a-gentle-introduction-to-agile-robots-and-idealworks-edge-ai-stack-for-maximum-compatibility/",
+      "snippet": "23.07.2026 ... Fünf Komponenten sind entscheidend für eine erfolgreiche Modellbereitstellung mit maximaler Zuverlässigkeit im ... 2. BSP und ..."
+    },
+    {
+      "title": "Meine Lieblings-AI-Coding-Tools, die unterbewertet sind - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPTCoding/comments/1isse8o/my_favorite_underrated_ai_coding_tools/?tl=de",
+      "snippet": "19.02.2025 ... 2. Kodu.ai (Claude Coder). Ich bin schockiert, dass Kodu im Grunde unbekannt ist. Von all diesen finde ich es am besten. Es ähnelt in Bezug auf ..."
+    }
+  ]
+}

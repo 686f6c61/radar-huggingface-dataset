@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "slmyu0915/hw1-hc3-detector",
+  "slug": "slmyu0915-hw1-hc3-detector",
+  "author": "slmyu0915",
+  "url": "https://huggingface.co/slmyu0915/hw1-hc3-detector",
+  "created_at": "2026-10-01T22:15:23.000Z",
+  "updated_at": "2026-10-01T22:18:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aishkrish/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/Aishkrish/hw1-hc3-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jainatharva21/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/jainatharva21/hw1-hc3-detector",
+      "snippet": "HW1: HC3 AI-Generated Text Detector Fine-tuned all-MiniLM-L6-v2 for binary classification of answers from HC3 (English). Labels: 0 = human, 1 = ChatGPT."
+    },
+    {
+      "title": "SimpleAI · GitHub",
+      "url": "https://github.com/Hello-SimpleAI",
+      "snippet": "Human ChatGPT Comparison Corpus (HC3), Detectors, and more! 🔥 Python 1.5k 128"
+    },
+    {
+      "title": "chatgpt-comparison-detection/detect at main · Hello-SimpleAI ... - GitHub",
+      "url": "https://github.com/Hello-SimpleAI/chatgpt-comparison-detection/tree/main/detect",
+      "snippet": "Human ChatGPT Comparison Corpus (HC3), Detectors, and more! 🔥 - Hello-SimpleAI/chatgpt-comparison-detection"
+    },
+    {
+      "title": "hw1-hc3-detector by Yihangsun: Open-Weight Model",
+      "url": "https://savrn.com/models/hw1-hc3-detector",
+      "snippet": "hw1-hc3-detector from Yihangsun: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

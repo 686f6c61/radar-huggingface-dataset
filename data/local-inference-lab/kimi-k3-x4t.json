@@ -5,7 +5,7 @@
   "author": "local-inference-lab",
   "url": "https://huggingface.co/local-inference-lab/Kimi-K3-X4T",
   "created_at": "2026-09-30T00:11:36.000Z",
-  "updated_at": "2026-09-30T01:23:21.000Z",
+  "updated_at": "2026-10-01T12:57:02.000Z",
   "license": "kimi-k3",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1489704690538,
-  "storage_human": "1489.7 GB",
+  "storage_bytes": 2979345830958,
+  "storage_human": "2979.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

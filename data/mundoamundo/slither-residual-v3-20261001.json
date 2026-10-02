@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mundoamundo/slither-residual-v3-20261001",
+  "slug": "mundoamundo-slither-residual-v3-20261001",
+  "author": "mundoamundo",
+  "url": "https://huggingface.co/mundoamundo/slither-residual-v3-20261001",
+  "created_at": "2026-10-01T21:24:45.000Z",
+  "updated_at": "2026-10-02T00:49:07.000Z",
+  "license": "dinov3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "slitherio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188098264,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mundoamundo (Seth Lupo) - Hugging Face",
+      "url": "https://huggingface.co/mundoamundo",
+      "snippet": "AI & ML interests ... Recent Activity new activity about 1 month ago ... liked a model 9 months ago"
+    },
+    {
+      "title": "mundoamundo/slither-wam-video-actions · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mundoamundo/slither-wam-video-actions",
+      "snippet": "Slither Video Actions This public repository is being built for video and action-conditioned world-model research. It is currently a staging dataset, not a released training set. Prepared gameplay videos, source provenance, and candidate actions will be added incrementally."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "User scripts for slither.io - Greasy Fork",
+      "url": "https://greasyfork.org/en/scripts/by-site/slither.io",
+      "snippet": "Slither.io Autoplay Bot An autoplay bot for Slither.io. Features automatic food hunting, an aggressive hunter mode to get kills, and path prediction to dodge other snakes."
+    },
+    {
+      "title": "slither.io",
+      "url": "https://slither.io/?b",
+      "snippet": "The most famous slither game in the world! Play with millions of players around the world and try to become the longest of the day!"
+    }
+  ]
+}

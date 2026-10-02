@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jeremierostan/laya-student-match",
+  "slug": "jeremierostan-laya-student-match",
+  "author": "jeremierostan",
+  "url": "https://huggingface.co/jeremierostan/laya-student-match",
+  "created_at": "2026-10-01T22:12:55.000Z",
+  "updated_at": "2026-10-01T22:20:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "student-matching",
+    "name-matching",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeremierostan · GitHub",
+      "url": "https://github.com/jeremierostan",
+      "snippet": "Transcribes, summarizes, and checks for understanding of class recordings Python"
+    },
+    {
+      "title": "Laya AI - Open Source System-1 Decision Model",
+      "url": "https://layaaimodel.com/",
+      "snippet": "Laya is an open source System-1 decision model, low latency, Apache 2.0 license, supporting 100+ languages. Run Laya locally for classification & routing tasks."
+    },
+    {
+      "title": "jeremierostan (Jeremie Rostan) - Hugging Face",
+      "url": "https://huggingface.co/jeremierostan/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "Laya AI: Model Selection and API Integration Guide - Hugging Face",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-selection-and-api-integration-guide",
+      "snippet": "Laya AI turns context into bounded decisions: a category, an ordered score, or the probability of a yes/no proposition. The Laya model is useful when your application already knows the possible outcomes and needs help choosing between them. A Laya API makes those decisions available through an HTTP interface, but the model and the service exposing it are separate things."
+    },
+    {
+      "title": "jeremierostan (Jeremie Rostan) - Hugging Face",
+      "url": "https://huggingface.co/jeremierostan",
+      "snippet": "jeremierostan Follow ssacco&#x27;s profile pictureAnaInes&#x27;s profile picture21world&#x27;s profile picture 4 followers · 2 following jeremie-rostan"
+    }
+  ]
+}

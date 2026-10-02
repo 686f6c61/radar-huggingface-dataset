@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sanyam2005/anlp-a2-part2-mars",
+  "slug": "sanyam2005-anlp-a2-part2-mars",
+  "author": "sanyam2005",
+  "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-mars",
+  "created_at": "2026-10-01T22:25:35.000Z",
+  "updated_at": "2026-10-02T01:06:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "optimizers",
+    "anlp-assignment-2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27269632,
+  "parameters_human": "27.3M",
+  "storage_bytes": 218166576,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neemon/anlp-a2-part2-mars · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a2-part2-mars",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sanyam2005 (Sanyam Agrawal) - Hugging Face",
+      "url": "https://huggingface.co/sanyam2005/models",
+      "snippet": "Recent Activity updated a model8 days ago sanyam2005/anlp-a1-transformers published a model10 days ago sanyam2005/anlp-a1-transformers updated a model13 days ago sanyam2005/anlp-a1-cipher-c5 View all activity"
+    },
+    {
+      "title": "Sanyam2005 (Sanyam Agrawal) · GitHub",
+      "url": "https://github.com/Sanyam2005",
+      "snippet": "UG 2 Student at IIIT Hyderabad . Sanyam2005 has 16 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "MARS2workshop - GitHub",
+      "url": "https://github.com/mars2workshop/",
+      "snippet": "The era of Large Reasoning Models (LRMs) has begun, bringing new opportunities and challenges to the computer vision and multimodal AI community. While Large Language Models (LLMs) excel at semantic understanding, the next frontier is System-2 style slow thinking —reasoning beyond pattern recognition to multi-step, causal, and neuro-symbolic reasoning. MARS2 (Multimodal Reasoning and Slow ..."
+    },
+    {
+      "title": "Ai2 Asta",
+      "url": "https://asta.allen.ai/",
+      "snippet": "A scholarly research assistant that combines literature understanding and data-driven discovery. Asta uses 108M+ abstracts and 12M+ full-text papers to find, summarize, and analyze scientific evidence. A project from Ai2."
+    }
+  ]
+}

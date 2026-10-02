@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fournierenzo/retrieval-notebook",
+  "slug": "fournierenzo-retrieval-notebook",
+  "author": "fournierenzo",
+  "url": "https://huggingface.co/fournierenzo/retrieval-notebook",
+  "created_at": "2026-10-01T23:44:29.000Z",
+  "updated_at": "2026-10-01T23:44:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fournierenzo (Enzo) - Hugging Face",
+      "url": "https://huggingface.co/fournierenzo",
+      "snippet": "MS in Data Science, class of 2025"
+    },
+    {
+      "title": "NotebookLM - Google&#x27;s research AI deep dive - digital-humans.org",
+      "url": "https://digital-humans.org/foundation-models/notebooklm-googles-research-ai-deep-dive/",
+      "snippet": "Foundation Models / Major labs & flagship models NotebookLM - Google&#x27;s research AI deep dive A pillar analysis in Foundation Models - Vendors & Models. We examine the landscape, the trade-offs, and what matters in 2026."
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    },
+    {
+      "title": "GitHub - Michael-Geronimo/rag_techniques: This repository showcases ...",
+      "url": "https://github.com/Michael-Geronimo/rag_techniques",
+      "snippet": "Introduction Retrieval-Augmented Generation (RAG) is revolutionizing the way we combine information retrieval with generative AI. This repository showcases a curated collection of advanced techniques designed to supercharge your RAG systems, enabling them to deliver more accurate, contextually relevant, and comprehensive responses."
+    },
+    {
+      "title": "NotebookLM - AI Research Assistant & Smart Note-Taking Tool",
+      "url": "https://notebooklm.xin/en/",
+      "snippet": "NotebookLM is Google&#x27;s source-grounded AI research assistant and smart note-taking tool. Get AI answers backed by verifiable citations from your uploaded documents. Explore features, tutorials, and the latest Gemini 3.5 upgrade."
+    }
+  ]
+}

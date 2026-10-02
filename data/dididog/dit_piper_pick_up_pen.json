@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dididog/dit_piper_pick_up_pen",
+  "slug": "dididog-dit_piper_pick_up_pen",
+  "author": "dididog",
+  "url": "https://huggingface.co/dididog/dit_piper_pick_up_pen",
+  "created_at": "2026-10-01T21:17:47.000Z",
+  "updated_at": "2026-10-01T21:19:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "multi_task_dit",
+    "robotics",
+    "dataset:dididog/piper_pick_up_pen",
+    "arxiv:2507.05331",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 248893191,
+  "parameters_human": "248.9M",
+  "storage_bytes": 995661148,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dididog/piper_cube · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/dididog/piper_cube",
+      "snippet": "Datasets: dididog / piper_cube like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 10K - 100K Tags: LeRobot Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community 1 Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·18.6k rows default (18.6k rows) Split (1 ..."
+    },
+    {
+      "title": "dididog (Yi-Shiang Huang) - Hugging Face",
+      "url": "https://huggingface.co/dididog",
+      "snippet": "User profile of Yi-Shiang Huang on Hugging Face"
+    },
+    {
+      "title": "ModelPiper Web App Docs | ModelPiper",
+      "url": "https://modelpiper.com/docs/modelpiper",
+      "snippet": "1 Create a free account at openrouter.ai and generate an API key 2 In ModelPiper, open My Connections (sidebar) and click Add Provider 3 Select OpenRouter, paste your API key, and pick a model 4 Save the configuration — you&#x27;re ready to use Chat Local Ollama Run open-source models entirely on your machine. Free, private, no API key needed."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Pinku | Roleplay and generate images & videos of AI characters",
+      "url": "https://pinku.ai/",
+      "snippet": "Chat with AI Characters anytime, anywhere. Create and interact with intelligent bots that understand, respond, and even generate AI-driven images and videos."
+    }
+  ]
+}

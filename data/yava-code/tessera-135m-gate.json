@@ -5,7 +5,7 @@
   "author": "yava-code",
   "url": "https://huggingface.co/yava-code/Tessera-135M-Gate",
   "created_at": "2026-09-29T22:05:37.000Z",
-  "updated_at": "2026-09-29T22:26:29.000Z",
+  "updated_at": "2026-10-01T14:02:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 277,
+  "downloads_30d": 285,
   "trending_score": 0,
   "parameters": 142113600,
   "parameters_human": "142.1M",

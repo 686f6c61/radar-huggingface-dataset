@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov5n",
+  "slug": "rknnai-rk3588-cnn-yolov5n",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov5n",
+  "created_at": "2026-10-02T01:28:26.000Z",
+  "updated_at": "2026-10-02T01:28:52.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2965178,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "rknn_model_zoo/examples/yolov5/README.md at main - GitHub",
+      "url": "https://github.com/airockchip/rknn_model_zoo/blob/main/examples/yolov5/README.md",
+      "snippet": "Contribute to airockchip/rknn_model_zoo development by creating an account on GitHub."
+    },
+    {
+      "title": "RKNN Runtime API and Model Loading | yudongyuan/rk3588-dual-sensor ...",
+      "url": "https://deepwiki.com/yudongyuan/rk3588-dual-sensor-fusion/4.1-rknn-runtime-api-and-model-loading",
+      "snippet": "This section documents the integration of the Rockchip Neural Network (RKNN) runtime within the RK3588 dual-sensor fusion system. It covers the core API headers, the process of loading model files into memory, and the standard lifecycle for NPU-accelerated inference."
+    },
+    {
+      "title": "dargitee/rknn_model_zoo",
+      "url": "https://gitee.com/darboy/rknn_model_zoo/",
+      "snippet": "简体中文 | English RKNN Model Zoo Description RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3588 platforms. (RV1103, RV1106 platforms support mobilenet, yolov5) RK1808 ..."
+    },
+    {
+      "title": "Model Examples | airockchip/rknn_model_zoo | DeepWiki",
+      "url": "https://deepwiki.com/airockchip/rknn_model_zoo/5-model-examples",
+      "snippet": "Model Examples Relevant source files This page provides a comprehensive overview of the pre-trained machine learning models included in the RKNN Model Zoo. These models have been optimized for deployment on Rockchip Neural Processing Units (NPUs) and cover a wide range of AI applications."
+    }
+  ]
+}

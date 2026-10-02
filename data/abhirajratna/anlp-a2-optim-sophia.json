@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abhirajratna/anlp-a2-optim-sophia",
+  "slug": "abhirajratna-anlp-a2-optim-sophia",
+  "author": "abhirajratna",
+  "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-sophia",
+  "created_at": "2026-10-01T19:20:23.000Z",
+  "updated_at": "2026-10-01T19:20:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "language-model",
+    "optimizer-comparison",
+    "anlp-assignment",
+    "en",
+    "dataset:browndw/human-ai-parallel-corpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33563136,
+  "parameters_human": "33.6M",
+  "storage_bytes": 134258800,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video | 13-Year-Old Girl Alleges Sex Assault In Tamil Nadu …",
+      "url": "https://www.ndtv.com/video/13-year-old-girl-alleges-sex-assault-in-tamil-nadu-government-school-3-teachers-arrested-898526",
+      "snippet": "Feb 5, 2025 · Three teachers of a government school in Tamil Nadu's Krishnagiri district have been arrested for alleged sexual …"
+    },
+    {
+      "title": "Little Girl - Clip 1 [fr st en] - Cineuropa",
+      "url": "https://cineuropa.org/en/video/rdID/383032/f/t/",
+      "snippet": "7-year-old Sasha has always known she was a little girl, even though she was born a boy. As society fails to treat her like the other …"
+    },
+    {
+      "title": "Daddy's Little Girl (2014) - IMDb",
+      "url": "https://m.imdb.com/title/tt2214941/",
+      "snippet": "Daddy's Little Girl: Directed by Chris Sun. With Billi Baker, Michael Thomson, Allira Jaques, Holly Phillips. In a time when stranger …"
+    },
+    {
+      "title": "Daddy's Little Girl | IMDb",
+      "url": "https://www.imdb.com/video/vi1320204313/",
+      "snippet": "Daniel, a movie buff, is forced to endure every father's worst nightmare by greeting and entertaining Alex, his daughter's first date, …"
+    },
+    {
+      "title": "1,400+ Tiny Girl Tube Stock Videos and Royalty-Free Footage - iStock",
+      "url": "https://www.istockphoto.com/videos/tiny-girl-tube?msockid=20e4b26d0ebc65ef2d10a5880f036410",
+      "snippet": "Find 1,401 Tiny Girl Tube stock video, 4K footage, and other HD footage from iStock. Get higher quality Tiny Girl Tube content, for …"
+    }
+  ]
+}

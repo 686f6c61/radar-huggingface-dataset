@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-convnext_atto",
+  "slug": "dronefreak-bdd100k-weather-convnext_atto",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-convnext_atto",
+  "created_at": "2026-10-01T19:44:30.000Z",
+  "updated_at": "2026-10-01T20:23:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2201.03545",
+    "arxiv:1805.04687",
+    "base_model:timm/convnext_atto.d2_in1k",
+    "base_model:finetune:timm/convnext_atto.d2_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31436525,
+  "storage_human": "31 MB",
+  "base_model": "timm/convnext_atto.d2_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 83
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 67.44
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 81.38
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 65.25
+    }
+  ],
+  "sources": [
+    {
+      "title": "@dronefreak on Hugging Face: \" Open-sourcing the BDD100K Object ...",
+      "url": "https://huggingface.co/posts/dronefreak/988753800362571",
+      "snippet": "The \"test\" split here is BDD100K&#x27;s official validation set.🤖 Collection: dronefreak/bdd100k-object-detection-model-zoo-6aafc46f2f6c5e4d8676d894Feedback and contributions welcome."
+    },
+    {
+      "title": "dronefreak/bdd100k-yolo11s · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolo11s",
+      "snippet": "Instructions to use dronefreak/bdd100k-yolo11s with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/bdd100k-yolo11s with ultralytics: ... Notebooks Google Colab Kaggle YOLOv11s Finetuned on BDD100K Performance Evaluation Protocol BDD100K Model Zoo Per ..."
+    },
+    {
+      "title": "GitHub - SysCV/bdd100k-models: Model Zoo of BDD100K Dataset",
+      "url": "https://github.com/SysCV/bdd100k-models",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - bdd100k/bdd100k: Toolkit of BDD100K Dataset for Heterogeneous ...",
+      "url": "https://github.com/bdd100k/bdd100k",
+      "snippet": "We construct BDD100K, the largest open driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. Each video has 40 seconds and a high resolution. The dataset represents more than 1000 hours of driving experience with more than 100 million frames."
+    },
+    {
+      "title": "Bdd100k Dataset by Ultralytics",
+      "url": "https://platform.ultralytics.com/ultralytics/datasets/bdd100k",
+      "snippet": "BDD100K Images 100K is UC Berkeley&#x27;s diverse driving benchmark, sampled from video across varied geography, weather, lighting, and road conditions. Ten detection classes cover vehicles, riders, pedestrians, traffic lights, and traffic signs in complex street scenes."
+    }
+  ]
+}

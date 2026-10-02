@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "edededdy/ShallowSeek-mini-it-GGUF",
+  "slug": "edededdy-shallowseek-mini-it-gguf",
+  "author": "edededdy",
+  "url": "https://huggingface.co/edededdy/ShallowSeek-mini-it-GGUF",
+  "created_at": "2026-10-01T22:46:42.000Z",
+  "updated_at": "2026-10-01T22:46:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "moe",
+    "deepseek",
+    "multi-head-latent-attention",
+    "mla",
+    "from-scratch",
+    "tiny",
+    "chat",
+    "instruction-tuned",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "base_model:edededdy/ShallowSeek-mini-it",
+    "base_model:quantized:edededdy/ShallowSeek-mini-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10970004,
+  "parameters_human": "11.0M",
+  "storage_bytes": 34567808,
+  "storage_human": "35 MB",
+  "base_model": "edededdy/ShallowSeek-mini-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edededdy/ShallowSeek-mini-base-GGUF · Hugging Face",
+      "url": "https://huggingface.co/edededdy/ShallowSeek-mini-base-GGUF",
+      "snippet": "ShallowSeek-mini-base is a tiny DeepSeek-V3-style Mixture-of-Experts language model trained from scratch on a laptop CPU. It has 11.0M parameters in total, of which 6.3M are active per token."
+    },
+    {
+      "title": "edededdy (Edmund Martin) - Hugging Face",
+      "url": "https://huggingface.co/edededdy",
+      "snippet": "Sort: Recently updated edededdy/ShallowSeek-mini-base-GGUF Text Generation • 11M•Updated about 3 hours ago"
+    },
+    {
+      "title": "GitHub - local-ai-zone/local-ai-zone.github.io: My public AI learning ...",
+      "url": "https://github.com/local-ai-zone/local-ai-zone.github.io",
+      "snippet": "GGUF Model Discovery A professional web application for discovering and browsing GGUF (GPT-Generated Unified Format) machine learning models. Browse thousands of quantized AI models with detailed metadata, engagement metrics, and direct download links. Live site: https://local-ai-zone.github.io"
+    },
+    {
+      "title": "How to Run GGUF Models Locally",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "How to Run GGUF Models Locally The complete 2026 guide — load any GGUF model with GGUF Loader, Ollama, LM Studio, or llama.cpp. Pick your tool below and jump straight to its step-by-step tutorial."
+    },
+    {
+      "title": "Using AI Models - shallowseek User Manual",
+      "url": "https://doc.shallowseek.top/en/guide/using-models.html",
+      "snippet": "Using AI Models Overview shallowseek provides a fully OpenAI-compatible API format. You can use any OpenAI SDK or OpenAI-compatible client directly — just change the Base URL and API Key."
+    }
+  ]
+}

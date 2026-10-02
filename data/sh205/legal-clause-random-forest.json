@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SH205/legal-clause-random-forest",
+  "slug": "sh205-legal-clause-random-forest",
+  "author": "SH205",
+  "url": "https://huggingface.co/SH205/legal-clause-random-forest",
+  "created_at": "2026-10-01T22:24:31.000Z",
+  "updated_at": "2026-10-01T22:48:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7029716790,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rahul-mandadi/LegalClause: LegalClause: An intelligent legal ...",
+      "url": "https://github.com/rahul-mandadi/LegalClause",
+      "snippet": "LegalClause is an intelligent legal assistant that transforms manual contract review through automated clause classification and risk analysis. Using state-of-the-art NLP models including a fine-tuned Legal-BERT model, this tool helps legal professionals: Identify clause types (Cap on Liability, Audit Rights, Insurance) Analyze potential legal risks in contract clauses Suggest mitigation ..."
+    },
+    {
+      "title": "GitHub - pkrouth/Legal_LLM: RNN Multi Class Classification of legal clauses",
+      "url": "https://github.com/pkrouth/Legal_LLM",
+      "snippet": "Following classification matrix shows the prediction power (~95% accuracy) of the RNN model. Validation Set Inference: This work showcases one of the projects towards building a legal AI engine for document intelligence."
+    },
+    {
+      "title": "Random Forest Model Clause Samples - Law Insider",
+      "url": "https://www.lawinsider.com/clause/random-forest-model",
+      "snippet": "The two main parameters in a random forest model is mtry and ntree, which stands for the number of predictors sampled for splitting at each node and the number of trees grown, respectively. Algorithm for the random forest model works by first drawing ntree bootstrap-samples from the model fitting dataset [26]."
+    },
+    {
+      "title": "Technical evaluation of language models adapted for the ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2026.1782405/full",
+      "snippet": "By positioning language models as decision-support components rather than autonomous legal agents, the proposed structured pipeline contributes to the responsible integration of AI into legal document management, reinforcing legal certainty while improving operational efficiency ( Wei et al., 2024 )."
+    },
+    {
+      "title": "[2506.00943] Legal Compliance Evaluation of Smart Contracts Generated ...",
+      "url": "https://arxiv.org/abs/2506.00943",
+      "snippet": "Smart contracts can implement and automate parts of legal contracts, but ensuring their legal compliance remains challenging. Existing approaches such as formal specification, verification, and model-based development require expertise in both legal and software development domains, as well as extensive manual effort. Given the recent advances of Large Language Models (LLMs) in code generation ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4",
+  "slug": "alinagonch-llama32-3b-squad-ratio-0-10-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4",
+  "created_at": "2026-10-01T19:36:54.000Z",
+  "updated_at": "2026-10-01T19:37:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41575240,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/llama32-3b-squad-ratio-1.00-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-1.00-seed-42",
+      "snippet": "Instructions to use AlinaGonch/llama32-3b-squad-ratio-1.00-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama32-3b-squad-ratio-0.50-seed-44: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-alinagonch-llama32-3b-squad-ratio-0-50-seed-44",
+      "snippet": "Model card indexed from Hugging Face. Specs: 3B parameters, sourced from Hugging Face. Compare llama32-3b-squad-ratio-.50-seed-44&#x27;s parameters, context window,"
+    },
+    {
+      "title": "Llama 3.2 | Model Cards and Prompt formats - dev.meta.ai",
+      "url": "https://dev.meta.ai/llama/docs/model-cards-and-prompt-formats/llama3_2",
+      "snippet": "Llama 3.2 included lightweight models in 1B and 3B sizes at bfloat16 (BF16) precision. Subsequent to the release, we updated Llama 3.2 to include quantized versions of these models. This section describes these updated lightweight models, how to obtain them, and what use cases they support. Note that we have quantized only the instruct versions of the Llama 3.2 lightweight models, and that ..."
+    },
+    {
+      "title": "SQuAD dataset ratio experiment llama3.2-llama3.1 - a AlinaGonch Collection",
+      "url": "https://huggingface.co/collections/AlinaGonch/squad-dataset-ratio-experiment-llama32-llama31",
+      "snippet": "This is a collection createad as a part of SQuaD2.0 experiment on ratio to find out an optimal proportion of unanswerable samples in train dataset."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama Models Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects:"
+    }
+  ]
+}

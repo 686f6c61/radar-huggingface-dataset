@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beamster/mtp-qwen3.8-flash-iq4.7bpw",
+  "slug": "beamster-mtp-qwen3-8-flash-iq4-7bpw",
+  "author": "beamster",
+  "url": "https://huggingface.co/beamster/mtp-qwen3.8-flash-iq4.7bpw",
+  "created_at": "2026-10-01T23:27:47.000Z",
+  "updated_at": "2026-10-01T23:34:31.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "sushi",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw",
+    "base_model:finetune:ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1245859471,
+  "storage_human": "1.2 GB",
+  "base_model": "ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-4.7bpw",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw · Hugging Face",
+      "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-2.6bpw",
+      "snippet": "Qwen/Qwen3.8-Flash-Next packed for sushi, a native inference engine for Apple Silicon. Target: a 64 GB Mac with a long context: 250k tokens at 8-bit KV, 450k at 4-bit. On 96 GB and 128 GB Macs it runs the full 1M-token context."
+    },
+    {
+      "title": "beamster/Qwen3.8-Flash-Next-Sushi-3bpw · Hugging Face",
+      "url": "https://huggingface.co/beamster/Qwen3.8-Flash-Next-Sushi-3bpw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-27B MTP: the flag was free the whole time - GitHub",
+      "url": "https://github.com/sudoingX/qwen38-mtp",
+      "snippet": "The KV cache flags matter on their own: without them, context creation fails past roughly 90K next to 17GB of weights. With them, the full 262K window fits a 24GB card at 22.2GB (drop -c to 262144 and remove the spec flags if you want maximum window instead of maximum speed). Weights: unsloth/Qwen3.8-27B-GGUF. Official model: Qwen/Qwen3.8-27B."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "MTPLX · The fastest way to run Qwen 3.8 on a Mac",
+      "url": "https://www.mtplx.com/",
+      "snippet": "The fastest way to run Qwen 3.8 Flash Next and Qwen 3.8 27B on a Mac. Free Mac app and CLI with exact native MTP: 125 tok/s on Flash Next in OpenCode, 87.6 on the 27B, M5 Max."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Bunkir2004/qwen3vl-4b-target-taboo-clock",
+  "slug": "bunkir2004-qwen3vl-4b-target-taboo-clock",
+  "author": "Bunkir2004",
+  "url": "https://huggingface.co/Bunkir2004/qwen3vl-4b-target-taboo-clock",
+  "created_at": "2026-10-02T01:27:27.000Z",
+  "updated_at": "2026-10-02T01:27:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277640190,
+  "storage_human": "278 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Qwen/Qwen3-VL-4B-Thinking at main - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Thinking/blame/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-vl:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3-vl:4b",
+      "snippet": "Qwen3-VL models require Ollama 0.12.7 Qwen3-VL is the most powerful vision-language model in the Qwen family to date. In this generation, there are improvements to the model in many areas: its understanding and generating text, perceiving and reasoning about visual content, supporting longer context lengths, understanding spatial relationships and dynamic videos, or interacting with AI agents ..."
+    },
+    {
+      "title": "Hot prompts - PromptHero",
+      "url": "https://prompthero.com/hot",
+      "snippet": "A very ordinary, aggressively mediocre iPhone selfie taken with flash at night in a dark room, sitting on a couch. A sloppy snapshot with slight motion blur, uneven lighting, and slight overexposure. Awkward angle, nonexistent composition, like a photo accidentally taken while taking a phone out of your pocket. The subject is a stunningly attractive Iranian girl with blonde hair and delicate ..."
+    },
+    {
+      "title": "Uncensored Qwen3 4B (LLM for Z-Image & Flux4B)",
+      "url": "https://civitai.com/models/2373678/uncensored-qwen3-4b-llm-for-z-image-and-flux4b",
+      "snippet": "Qwen_3_4B Trained Text Encoder For use in Z-Image or FLUX Klein4B Without lora&#x27;s LLM had similar text errors to BF16 base QWEN, but better adherenc..."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    }
+  ]
+}

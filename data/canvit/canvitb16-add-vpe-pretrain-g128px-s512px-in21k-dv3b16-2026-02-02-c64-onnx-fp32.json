@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32",
+  "slug": "canvit-canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32",
+  "author": "canvit",
+  "url": "https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-c64-onnx-fp32",
+  "created_at": "2026-10-01T22:37:14.000Z",
+  "updated_at": "2026-10-01T22:37:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "canvit",
+    "active-vision",
+    "vision-transformer",
+    "image-feature-extraction",
+    "arxiv:2603.22570",
+    "base_model:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "base_model:quantized:canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390966987,
+  "storage_human": "391 MB",
+  "base_model": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02 ...",
+      "url": "https://huggingface.co/canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02-nnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "canvit (CanViT) - Hugging Face",
+      "url": "https://huggingface.co/canvit",
+      "snippet": "CanViT: Toward Active-Vision Foundation Models ... canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in21k-dv3b16-2026-02-02 ... canvit/canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06 ... canvit/canvitb16-add-vpe-pretrain-g128px-s512px-in1k-dv3b16-2026-06-22 ... canvit/probe-ade20k-40k-s512-c8-in21k"
+    },
+    {
+      "title": "CanViT: Toward Active-Vision Foundation Models (NeurIPS 2026) - GitHub",
+      "url": "https://github.com/m2b3/CanViT",
+      "snippet": "2026-04-06: First finetuned IN1k checkpoint: canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06, with new CanViTForImageClassification API. 🎉 CanViT sets a new SOTA on active-vision IN1k classification, with 84.5% top-1 accuracy, up from AdaptiveNN&#x27;s previous best of 82.2%."
+    },
+    {
+      "title": "GitHub - m2b3/CanViT-PyTorch: Reference implementation of the Canvas ...",
+      "url": "https://github.com/m2b3/CanViT-PyTorch",
+      "snippet": "2026-04-06: First finetuned IN1k checkpoint: canvitb16-add-vpe-finetune-g128px-s512px-in1k-2026-04-06, with new CanViTForImageClassification API. 🎉 CanViT sets a new SOTA on active-vision IN1k classification, with 84.5% top-1 accuracy, up from AdaptiveNN &#x27;s previous best of 82.2%."
+    },
+    {
+      "title": "[2603.22570] CanViT: Toward Active-Vision Foundation Models",
+      "url": "https://arxiv.org/abs/2603.22570",
+      "snippet": "Active computer vision promises efficient, biologically plausible perception through sequential, localized glimpses, but lacks scalable general-purpose architectures and pretraining pipelines, leaving Active-Vision Foundation Models (AVFMs) underexplored. We introduce CanViT, the first task- and policy-agnostic AVFM. CanViT uses scene-relative RoPE to bind a retinotopic Vision Transformer ..."
+    }
+  ]
+}

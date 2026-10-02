@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-SEGMENT-yolov8s-seg",
+  "slug": "rknnai-rk3588-segment-yolov8s-seg",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-SEGMENT-yolov8s-seg",
+  "created_at": "2026-10-02T01:33:11.000Z",
+  "updated_at": "2026-10-02T01:33:37.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13311019,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run YOLOv8-seg on RK3588 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolov8-seg/rk3588",
+      "snippet": "Run YOLOv8-seg on RK3588 with one command—no manual environment setup."
+    },
+    {
+      "title": "Yolon11_RK3588/rknn_model_zoo/examples/yolov8_seg/README.md at ... - GitHub",
+      "url": "https://github.com/Ebwai/Yolon11_RK3588/blob/main/rknn_model_zoo/examples/yolov8_seg/README.md",
+      "snippet": "YOLOv11n INT8 quantized model running on RK3588 with IMX415 camera — Python to C++ 3-core NPU pipeline - Ebwai/Yolon11_RK3588"
+    },
+    {
+      "title": "GitHub - xlloss/RK3588_ultralytics_yolov8: RK3588 NEW - YOLOv8 in ...",
+      "url": "https://github.com/xlloss/RK3588_ultralytics_yolov8",
+      "snippet": "Ultralytics HUB Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLOv5 and YOLOv8 🚀 model training and deployment, without any coding."
+    },
+    {
+      "title": "YOLOv8-Seg | Radxa Docs",
+      "url": "https://docs.radxa.com/en/rock5/rock5t/app-development/ai/yolov8-seg",
+      "snippet": "C API Build the Example Go to the rknn_model_zoo directory and run build-linux.sh to build."
+    },
+    {
+      "title": "Use YoloV8 in RK3588 NPU - ROCK 5 Series - Radxa Community",
+      "url": "https://forum.radxa.com/t/use-yolov8-in-rk3588-npu/15838",
+      "snippet": "Re-program pre- and post- processing code to fit the model into RK3588 NPU hardware. (The post-processing code in the yolov8 can be copy-paste to the test.py) Step 5, run the conversion ... and the yolov8s.onnx.rknn will be generated. Step 6. Upload the rknn file to rk3588 and test it with the benchmark demo. Step 7."
+    }
+  ]
+}

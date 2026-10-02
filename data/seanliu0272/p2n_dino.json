@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SeanLiu0272/p2n_DINO",
+  "slug": "seanliu0272-p2n_dino",
+  "author": "SeanLiu0272",
+  "url": "https://huggingface.co/SeanLiu0272/p2n_DINO",
+  "created_at": "2026-10-01T20:34:31.000Z",
+  "updated_at": "2026-10-01T20:35:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "past2next",
+    "dinov3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30990540068,
+  "storage_human": "31.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SeanLiu0272 (Haotian Liu) - Hugging Face",
+      "url": "https://huggingface.co/SeanLiu0272",
+      "snippet": "User profile of Haotian Liu on Hugging Face"
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov2: PyTorch code and models for the ...",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "snippet": "The contents of the source code contained in the cell_dino folders, including the code and model weights, are intended for research use only. It is not for use in medical procedures, including any diagnostics, treatment, or curative applications. Do not use this model for any clinical purpose or as a substitute for professional medical judgement."
+    },
+    {
+      "title": "DINOv2 by Meta AI",
+      "url": "https://dinov2.metademolab.com/",
+      "snippet": "DINOv2: A Self-supervised Vision Transformer Model A family of foundation models producing universal features suitable for image-level visual tasks (image classification, instance retrieval, video understanding) as well as pixel-level visual tasks (depth estimation, semantic segmentation)."
+    },
+    {
+      "title": "DINO, DINOv2 and DINOv3, Explained for AI Engineers",
+      "url": "https://www.mlguerrilla.com/models/dino",
+      "snippet": "DINO turns an image into vectors you can compare, one for the image and one per patch DINO models are vision transformers. A vision transformer, or ViT, cuts the image into small square patches, 14 × 14 pixels for DINOv2 and 16 × 16 for DINOv3, and treats each patch the way a language model treats a word (the transformer article covers how)."
+    },
+    {
+      "title": "SeanLiu0272/p2n_DiTL · Hugging Face",
+      "url": "https://huggingface.co/SeanLiu0272/p2n_DiTL",
+      "snippet": "SeanLiu0272 / p2n_DiTL Like 0 Robotics diffusion-policy ditl Model card FilesFiles and versions xet Community Copy to bucket new p2n_DiTL"
+    }
+  ]
+}

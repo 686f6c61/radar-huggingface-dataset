@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-resnet18",
+  "slug": "dronefreak-bdd100k-period-resnet18",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-resnet18",
+  "created_at": "2026-10-01T19:56:22.000Z",
+  "updated_at": "2026-10-01T20:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:1512.03385",
+    "arxiv:1805.04687",
+    "base_model:timm/resnet18.a1_in1k",
+    "base_model:finetune:timm/resnet18.a1_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62631479,
+  "storage_human": "63 MB",
+  "base_model": "timm/resnet18.a1_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.32
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 80.5
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 85.87
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 76.72
+    }
+  ],
+  "sources": [
+    {
+      "title": "DRAG'N WASH - Walkthroughs, Endings & Game Help",
+      "url": "https://dragnwash.com/",
+      "snippet": "Use this Drag'n Wash guide for gameplay, walkthroughs, dragon stories, endings, official stores, content answers, mods, …"
+    },
+    {
+      "title": "Drag'n Wash - PlayinGG",
+      "url": "https://www.playin.gg/games/dragn-wash",
+      "snippet": "Sep 10, 2026 · View details, trailers, reviews and deals for Drag'n Wash."
+    },
+    {
+      "title": "Drag'n Wash Endings: All 3 Routes, Choices & Payoff",
+      "url": "https://dragnwash.wiki/en/endings/drag-n-wash-endings/",
+      "snippet": "Sep 11, 2026 · All three Drag'n Wash endings explained, with per-route length, choice requirements, and how each finale differs in …"
+    },
+    {
+      "title": "Drag'n Wash - Kotaku",
+      "url": "https://kotaku.com/games/dragn-wash",
+      "snippet": "Sep 9, 2026 · All the Latest Game Footage and Images from Drag’n Wash Enjoy a narrative involving 3 male dragons. Wash them, …"
+    },
+    {
+      "title": "Drag'n Wash Simulator APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/drag-n-wash-simulator/com.ses.airline.flight.simulator",
+      "snippet": "Aug 31, 2026 · Drag'n Wash Simulator APK download for Android. Wash, chat, and touch 3 male dragons in this immersive 3D …"
+    }
+  ]
+}

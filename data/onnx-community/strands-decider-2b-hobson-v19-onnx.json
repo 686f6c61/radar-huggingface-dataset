@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "onnx-community/strands-decider-2B-hobson-v19-ONNX",
+  "slug": "onnx-community-strands-decider-2b-hobson-v19-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/strands-decider-2B-hobson-v19-ONNX",
+  "created_at": "2026-10-01T21:29:22.000Z",
+  "updated_at": "2026-10-01T21:30:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5_text",
+    "strands-decider",
+    "decision-model",
+    "system-one",
+    "typed-decisions",
+    "webgpu",
+    "open-jev",
+    "text-classification",
+    "base_model:StrandsAgents/strands-decider-2B-hobson-v19",
+    "base_model:quantized:StrandsAgents/strands-decider-2B-hobson-v19",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2915069709,
+  "storage_human": "2.9 GB",
+  "base_model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon releases its own Jev clone as decision models flood the ...",
+      "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+      "snippet": "Amazon&#x27;s Strands Decider 2B, released the same week OpenAI announced a similar offering, is a high-speed, low-cost way to sort between pre-decided options and deliver a measure of how confident ..."
+    },
+    {
+      "title": "Amazon unveils a free, fast, open source Jev killer: Strands Decider 2B ...",
+      "url": "https://venturebeat.com/technology/amazon-unveils-a-free-fast-open-source-jev-killer-strands-decider-2b-makes-decisions-in-fractions-of-a-second",
+      "snippet": "Now, Amazon is joining them with an open model designed to sit inside an agent&#x27;s workflow and decide whether a proposed action should proceed: Strands Decider 2B, a roughly 2-billion-parameter ..."
+    },
+    {
+      "title": "onnx-community (ONNX Community) - Hugging Face",
+      "url": "https://huggingface.co/onnx-community",
+      "snippet": "Org profile for ONNX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Open Neural Network Exchange · GitHub",
+      "url": "https://github.com/onnx.html",
+      "snippet": "ONNX is an open ecosystem for interoperable AI models. It&#x27;s a community project: we welcome your contributions! - Open Neural Network Exchange"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    }
+  ]
+}

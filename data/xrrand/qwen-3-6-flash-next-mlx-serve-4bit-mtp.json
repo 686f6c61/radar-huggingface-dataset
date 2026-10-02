@@ -5,7 +5,7 @@
   "author": "xrrand",
   "url": "https://huggingface.co/xrrand/Qwen-3.6-Flash-Next-mlx-serve-4bit-mtp",
   "created_at": "2026-09-30T18:43:10.000Z",
-  "updated_at": "2026-09-30T19:35:46.000Z",
+  "updated_at": "2026-10-01T12:58:52.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 133195562899,
   "parameters_human": "133.20B",

@@ -5,7 +5,7 @@
   "author": "Padakovec",
   "url": "https://huggingface.co/Padakovec/futolm-cs-base-gguf",
   "created_at": "2026-10-01T17:52:21.000Z",
-  "updated_at": "2026-10-01T17:52:36.000Z",
+  "updated_at": "2026-10-02T02:53:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -21,6 +21,9 @@
     "next-word-prediction",
     "text-generation",
     "cs",
+    "sk",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:Helsinki-NLP/open_subtitles",
     "endpoints_compatible",
     "region:us"
   ],
@@ -29,8 +32,8 @@
   "trending_score": 0,
   "parameters": 29368832,
   "parameters_human": "29.4M",
-  "storage_bytes": 59313504,
-  "storage_human": "59 MB",
+  "storage_bytes": 237254016,
+  "storage_human": "237 MB",
   "base_model": null,
   "formats": [
     "gguf"

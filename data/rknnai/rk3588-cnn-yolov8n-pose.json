@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov8n-pose",
+  "slug": "rknnai-rk3588-cnn-yolov8n-pose",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov8n-pose",
+  "created_at": "2026-10-02T01:31:34.000Z",
+  "updated_at": "2026-10-02T01:32:01.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5107974,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xlloss/RK3588_ultralytics_yolov8: RK3588 NEW - GitHub",
+      "url": "https://github.com/xlloss/RK3588_ultralytics_yolov8",
+      "snippet": "Experience seamless AI with Ultralytics HUB ⭐, the all-in-one solution for data visualization, YOLOv5 and YOLOv8 🚀 model training and deployment, without any coding."
+    },
+    {
+      "title": "Run YOLOv8-pose on RK3588 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolov8-pose/rk3588",
+      "snippet": "Post-processing: YOLOv8-Pose specific Box decoding, NMS logic, and Keypoint extraction. Visualization: Draws bounding boxes and pose skeletons with customized colors. Modifying Models Place the trained and converted .rknn model into the model/ directory. Add the --model_path argument to the running command to point to the new model."
+    },
+    {
+      "title": "GitHub - JoeFirmament/rknn_yolov8pose_rk3588_camera",
+      "url": "https://github.com/JoeFirmament/rknn_yolov8pose_rk3588_camera",
+      "snippet": "基于瑞芯微RK3588 NPU的高性能YOLOv8人体姿态检测项目，支持实时摄像头输入。"
+    },
+    {
+      "title": "YOLOv8n_pose | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolov8n-pose",
+      "snippet": "YOLOv8n_Pose Human Keypoint Detection Series lightweight version, compact and high-efficiency, tailored for real-time pose estimation and keypoint detection tasks, perfectly suited for low-power edge deployment."
+    },
+    {
+      "title": "yolov8-pose command - github.com/swdee/go-rknnlite/example/yolov8-pose ...",
+      "url": "https://pkg.go.dev/github.com/swdee/go-rknnlite/example/yolov8-pose",
+      "snippet": "Note that these examples are only using a single NPU core to run inference on. The results would be different when running a Pool of models using all NPU cores available. Secondly the Rock 4D (rk3576) has DDR5 memory versus the Rock 5B (rk3588) with slower DDR4 memory. Background This YOLOv8-pose example is a Go conversion of the C API example."
+    }
+  ]
+}

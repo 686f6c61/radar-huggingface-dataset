@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "glossAPI/greek-apertus-8b-instruct",
+  "slug": "glossapi-greek-apertus-8b-instruct",
+  "author": "glossAPI",
+  "url": "https://huggingface.co/glossAPI/greek-apertus-8b-instruct",
+  "created_at": "2026-10-01T21:04:31.000Z",
+  "updated_at": "2026-10-01T21:38:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "el",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "apertus",
+    "greek",
+    "glossapi",
+    "instruct",
+    "sft",
+    "chat",
+    "v0.1-preview",
+    "card-eval-20261001",
+    "public-three-benchmarks",
+    "text-generation",
+    "el",
+    "en",
+    "dataset:glossAPI/apertus-8b-greek-cpt-modern-greek-train",
+    "dataset:glossAPI/greek-apertus-post-training-data",
+    "dataset:glossAPI/greek-apertus-sft-data",
+    "base_model:glossAPI/apertus-8b-greek-cpt",
+    "base_model:finetune:glossAPI/apertus-8b-greek-cpt",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "glossAPI/apertus-8b-greek-cpt",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GreekMMLU (official, no chat template)",
+      "metric": "accuracy (%)",
+      "value": 70.52
+    },
+    {
+      "task": null,
+      "dataset": "IFEval-el (prompt-strict)",
+      "metric": "accuracy (%)",
+      "value": 65.8
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K-el",
+      "metric": "accuracy (%)",
+      "value": 59.67
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - eellak/greek-apertus: Developing an Apertus model specialized ...",
+      "url": "https://github.com/eellak/greek-apertus/tree/main",
+      "snippet": "Developing an Apertus model specialized in Greek with GlossAPI datasets (Swiss AI grant) - eellak/greek-apertus"
+    },
+    {
+      "title": "greek-apertus/README.md at main · eellak/greek-apertus · GitHub",
+      "url": "https://github.com/eellak/greek-apertus/blob/main/README.md",
+      "snippet": "Developing an Apertus model specialized in Greek with GlossAPI datasets (Swiss AI grant) - greek-apertus/README.md at main · eellak/greek-apertus"
+    },
+    {
+      "title": "swiss-ai/Apertus-8B-Instruct-2509 · Hugging Face",
+      "url": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · swiss-ai/Apertus-8B-Instruct-2509 at main",
+      "url": "https://huggingface.co/swiss-ai/Apertus-8B-Instruct-2509/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/",
+      "snippet": "Open weights, open data, open science Fully Open Foundation Model for Sovereign AI - developed by the Swiss AI Initiative in collaboration between EPFL, ETH Zurich, and CSCS."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ggml-org/lev-GGUF",
+  "slug": "ggml-org-lev-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/lev-GGUF",
+  "created_at": "2026-10-01T21:33:59.000Z",
+  "updated_at": "2026-10-01T21:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "decision-model",
+    "zero-shot-classification",
+    "base_model:interfaze-ai/lev",
+    "base_model:quantized:interfaze-ai/lev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 15918578400,
+  "storage_human": "15.9 GB",
+  "base_model": "interfaze-ai/lev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggml-org (ggml-org) - Hugging Face",
+      "url": "https://huggingface.co/ggml-org",
+      "snippet": "Org profile for ggml-org on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "GGUF & GGML Formats Guide | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/natural-language-processing/large-language-models/gguf-ggml-formats-guide/",
+      "snippet": "GGUF (GPT-Generated Unified Format) is a binary file format designed for storing LLM models for efficient inference with GGML-based executors like llama.cpp. It succeeded the older GGML format by offering better extensibility, single-file deployment, built-in quantization support, and a key-value metadata structure that ensures compatibility across different tools and platforms."
+    },
+    {
+      "title": "GGUF Model Format Explained: Supported Engines and Models",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/format-gguf-en/",
+      "snippet": "GGUF is the model file format built for the C/C++ inference engine llama.cpp and the ggml library underneath it. It stores the weights (tensors) together with the metadata a runtime needs — architecture, tokenizer, chat template — in a single file."
+    },
+    {
+      "title": "ggml · GitHub",
+      "url": "https://github.com/ggml-org/",
+      "snippet": "The ggml-org organization on Github develops and supports the ggml machine learning library and related projects. https://huggingface.co/ggml-org - ggml-org at Hugging Face"
+    }
+  ]
+}

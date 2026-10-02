@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Deem-4B-GGUF",
+  "slug": "mradermacher-deem-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Deem-4B-GGUF",
+  "created_at": "2026-10-01T21:10:13.000Z",
+  "updated_at": "2026-10-01T21:30:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibration",
+    "conformal-prediction",
+    "uncertainty",
+    "reasoning",
+    "routing",
+    "triage",
+    "jev",
+    "typesafe",
+    "qwen3.5",
+    "english",
+    "en",
+    "tr",
+    "de",
+    "dataset:mertkayacs/jevalt-data",
+    "base_model:mertkayacs/Deem-4B",
+    "base_model:quantized:mertkayacs/Deem-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945658944,
+  "storage_human": "39.9 GB",
+  "base_model": "mertkayacs/Deem-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/deem-9b-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/deem-9b-v1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/OneJev-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OneJev-4B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Aura-4B-GGUF - AI Model by mradermacher | AlphaNeural AI",
+      "url": "https://app.alphaneural.io/models/mradermacher/Aura-4B-GGUF",
+      "snippet": "Explore Aura-4B-GGUF, an AI model on AlphaNeural AI. Deploy using Neural Labs compute infrastructure."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "huihui-ai — the dominant abliterated-model uploader in mid-2026. Maintains current abliterations for Qwen 3.6 / 3.5, DeepSeek V4 Flash, DeepSeek 671B, and most major open releases. mradermacher — reliable quantizer with broad coverage; current source for most Gemma 4 Heretic GGUF mirrors. Offers both static and imatrix quants."
+    }
+  ]
+}

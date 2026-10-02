@@ -4,8 +4,8 @@
   "slug": "yacksweb001-nupe-orpheus-lora-v3",
   "author": "yacksweb001",
   "url": "https://huggingface.co/yacksweb001/nupe-orpheus-lora-v3",
-  "created_at": "2026-10-01T13:18:21.000Z",
-  "updated_at": "2026-10-01T14:13:53.000Z",
+  "created_at": "2026-10-01T15:55:45.000Z",
+  "updated_at": "2026-10-01T19:07:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 411976347,
-  "storage_human": "412 MB",
+  "storage_bytes": 1579356747,
+  "storage_human": "1.6 GB",
   "base_model": "unsloth/orpheus-3b-0.1-ft-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

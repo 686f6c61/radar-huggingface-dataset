@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ZZZzzze/LoopLM-sparse-sft-step6000",
+  "slug": "zzzzzze-looplm-sparse-sft-step6000",
+  "author": "ZZZzzze",
+  "url": "https://huggingface.co/ZZZzzze/LoopLM-sparse-sft-step6000",
+  "created_at": "2026-10-01T21:20:24.000Z",
+  "updated_at": "2026-10-01T21:25:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ouro",
+    "looplm",
+    "sparse-attention",
+    "infllm-v2",
+    "sft",
+    "long-context",
+    "text-generation",
+    "en",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v2",
+    "dataset:THUDM/LongBench",
+    "dataset:THUDM/LongBench-v2",
+    "base_model:ByteDance/Ouro-1.4B-Thinking",
+    "base_model:finetune:ByteDance/Ouro-1.4B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5810309823,
+  "storage_human": "5.8 GB",
+  "base_model": "ByteDance/Ouro-1.4B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-02T03:07:58.831Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - rkstgr/LoopLM: Implementation of \"Scaling Latent Reasoning via ...",
+      "url": "https://github.com/rkstgr/LoopLM",
+      "snippet": "LoopLM model (recurrence, exit gate, per-step logits) Stage I training objective (entropy-regularized, uniform prior) Stage II adaptive gate loss (detached improvement signal) Training loop (AdamW, grad clip, checkpointing, wandb) Data pipeline (HuggingFace datasets, tokenization) Training entry point (scripts/train.py)"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic, Google, SpaceXAI & others Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "[Bug]: DeepSeek-V4-Flash-0731 + DSpark fails on RTX PRO 6000 ... - GitHub",
+      "url": "https://github.com/vllm-project/vllm/issues/50720",
+      "snippet": "[Bug]: DeepSeek-V4-Flash-0731 + DSpark fails on RTX PRO 6000 (SM120) with FlashInfer sparse MLA decode kernel routing #50720"
+    }
+  ]
+}

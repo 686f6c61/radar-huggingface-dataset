@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/phonon-2-coreml",
+  "slug": "suryatmodulus-phonon-2-coreml",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/phonon-2-coreml",
+  "created_at": "2026-10-01T21:17:27.000Z",
+  "updated_at": "2026-10-01T21:17:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fluidaudio",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "fluidaudio",
+    "coreml",
+    "parakeet",
+    "tdt",
+    "phonon",
+    "low-bit",
+    "sparse",
+    "speech-recognition",
+    "apple-silicon",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:FermionResearch/Phonon-2",
+    "base_model:quantized:FermionResearch/Phonon-2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1497621816,
+  "storage_human": "1.5 GB",
+  "base_model": "FermionResearch/Phonon-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FermionResearch/Phonon-2 · Hugging Face",
+      "url": "https://huggingface.co/FermionResearch/Phonon-2",
+      "snippet": "Instructions to use FermionResearch/Phonon-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use FermionResearch/Phonon-2 with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Phonon-2 FermionResearch/Phonon-2 ..."
+    },
+    {
+      "title": "suryatmodulus (Surya T) - Hugging Face",
+      "url": "https://huggingface.co/suryatmodulus/datasets",
+      "snippet": "User profile of Surya T on Hugging Face"
+    },
+    {
+      "title": "Surya T - Secondary suryatmodulus - GitHub",
+      "url": "https://github.com/suryatmodulus",
+      "snippet": "An enthusiastic programmer who likes to build projects that are gooood :) - suryatmodulus"
+    },
+    {
+      "title": "GitHub - john-rocky/CoreML-Models: Core ML model zoo for iOS/macOS ...",
+      "url": "https://github.com/john-rocky/CoreML-Models",
+      "snippet": "Core ML model zoo for iOS/macOS — PyTorch models converted to ready-to-use .mlpackage, each with a conversion script and SwiftUI sample app. Sibling repos cover Apple&#x27;s Core AI framework (iOS/macOS 27) and on-device LLMs. - john-rocky/CoreML-Models"
+    },
+    {
+      "title": "Phonon update: 1.00% WER on Seed-TTS, smaller than every model we beat",
+      "url": "https://gradium.ai/blog/phonon-update-may-2026",
+      "snippet": "Phonon, our 100M-parameter on-device Text-To-Speech model, reaches 1.00% WER on the Seed-TTS English benchmark, outperforming NeuTTS Air, KaniTTS2, and NeuTTS Nano. With a fixed voice, it drops to 0.83% WER, ahead of Kokoro and Magpie."
+    }
+  ]
+}

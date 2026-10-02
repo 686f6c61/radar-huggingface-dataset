@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Deviant65/so101_redcube_3cam_2train",
+  "slug": "deviant65-so101_redcube_3cam_2train",
+  "author": "Deviant65",
+  "url": "https://huggingface.co/Deviant65/so101_redcube_3cam_2train",
+  "created_at": "2026-10-02T01:07:39.000Z",
+  "updated_at": "2026-10-02T01:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Deviant65/so101_redcube_3cam",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716808,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deviant65/so101_redcube_3cam · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/Deviant65/so101_redcube_3cam",
+      "snippet": "Datasets: Deviant65 / so101_redcube_3cam Like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 100K - 1M Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Episodes PreviewSO-101VisualizerOpen in visualizer 136 episodes·30 fps·3 cameras·640×480 av1 Episodes Dataset Structure Citation"
+    },
+    {
+      "title": "Deviant65/so101_redcube_20260925_151937 - Hugging Face",
+      "url": "https://huggingface.co/datasets/Deviant65/so101_redcube_20260925_151937",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "GitHub - rocPAI-Forge/so101-simstudio",
+      "url": "https://github.com/rocPAI-Forge/so101-simstudio",
+      "snippet": "Contribute to rocPAI-Forge/so101-simstudio development by creating an account on GitHub."
+    }
+  ]
+}

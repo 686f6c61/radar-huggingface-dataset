@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "123asdfqwer/kobert",
+  "slug": "123asdfqwer-kobert",
+  "author": "123asdfqwer",
+  "url": "https://huggingface.co/123asdfqwer/kobert",
+  "created_at": "2026-10-02T01:34:36.000Z",
+  "updated_at": "2026-10-02T01:34:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:skt/kobert-base-v1",
+    "base_model:finetune:skt/kobert-base-v1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92188418,
+  "parameters_human": "92.2M",
+  "storage_bytes": 368782329,
+  "storage_human": "369 MB",
+  "base_model": "skt/kobert-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "monologg/kobert · Hugging Face",
+      "url": "https://huggingface.co/monologg/kobert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "skt/kobert-base-v1 · Hugging Face",
+      "url": "https://huggingface.co/skt/kobert-base-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Korean BERT pre-trained cased (KoBERT) - GitHub",
+      "url": "https://github.com/SKTBrain/KoBERT",
+      "snippet": "Korean BERT pre-trained cased (KoBERT). Contribute to SKTBrain/KoBERT development by creating an account on GitHub."
+    },
+    {
+      "title": "KoBERT/kobert/pytorch_kobert.py at master · SKTBrain/KoBERT",
+      "url": "https://github.com/SKTBrain/KoBERT/blob/master/kobert/pytorch_kobert.py",
+      "snippet": "Korean BERT pre-trained cased (KoBERT). Contribute to SKTBrain/KoBERT development by creating an account on GitHub."
+    },
+    {
+      "title": "KoBERT | SK telecom Open Source",
+      "url": "https://sktelecom.github.io/en/project/kobert/",
+      "snippet": "KoBERT Korean BERT pre-trained model (Korean BERT pre-trained cased) KoBERT is a Korean-specialized BERT model developed by SK Telecom to overcome the limitations of Google&#x27;s publicly released BERT language model in processing Korean. Project Information Developer: SK Telecom T-Brain (formerly SKT AI Center) License: Apache License 2.0"
+    }
+  ]
+}

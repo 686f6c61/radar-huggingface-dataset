@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.10-seed-42-r4",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-10-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.10-seed-42-r4",
+  "created_at": "2026-10-01T23:38:10.000Z",
+  "updated_at": "2026-10-01T23:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49553616,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Workspace | تطبيقات الأنشطة التجارية وأدوات التعاون",
+      "url": "https://workspace.google.com/intl/ar_eg/",
+      "snippet": "يمكنك تجربة تطبيقات Google Workspace (المعروفة سابقًا باسم G Suite) الآمنة والمخصّصة لزيادة الإنتاجية والتعاون للأنشطة التجارية بجميع أحجامها. وتشمل Gmail وDrive …"
+    },
+    {
+      "title": "Signing in to Google",
+      "url": "https://myaccount.google.com/intro/signing-in-to-google",
+      "snippet": "Manage your Google Account sign-in process, including email, password, and security settings for seamless access to Google services."
+    },
+    {
+      "title": "Google Search Console",
+      "url": "https://search.google.com/search-console?hl=fr",
+      "snippet": "Formation Search Console Découvrez comment optimiser votre apparence dans les résultats de recherche Google et générer plus …"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Custom Search JSON API | Google for Developers",
+      "url": "https://developers.google.com/custom-search/v1/overview",
+      "snippet": "Feb 18, 2026 · With Google Cloud Operations you can create custom dashboards, set up alerts, and access metrics data …"
+    }
+  ]
+}

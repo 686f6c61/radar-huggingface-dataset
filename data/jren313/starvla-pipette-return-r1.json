@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jren313/starvla-pipette-return-r1",
+  "slug": "jren313-starvla-pipette-return-r1",
+  "author": "jren313",
+  "url": "https://huggingface.co/jren313/starvla-pipette-return-r1",
+  "created_at": "2026-09-30T06:03:24.000Z",
+  "updated_at": "2026-10-02T00:28:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "gr00t",
+    "starvla",
+    "unitree-g1",
+    "inspire-hand",
+    "dataset:jren313/g1-pipette-2view-teleop0925-5task-eerel",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19059094086,
+  "storage_human": "19.1 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jren313 (Jiming Ren) - Hugging Face",
+      "url": "https://huggingface.co/jren313",
+      "snippet": "publisheda datasetabout 10 hours ago jren313/g1-pipette-tip-teleop updateda model12 days ago jren313/g1-inspire-piston-starvla-gr00t-n1d7 View all activity Organizations models2"
+    },
+    {
+      "title": "jren313 (Jiming Ren) - Hugging Face",
+      "url": "https://huggingface.co/jren313/datasets",
+      "snippet": "Organizations jren313&#x27;s datasets5 Sort: Recently updated jren313/g1-pipette-3view-20260819-plus21 Viewer •Updated 4 days ago•102k• 77"
+    },
+    {
+      "title": "StarVLA Documentation | StarVLA",
+      "url": "https://starvla.github.io/docs/",
+      "snippet": "StarVLA is a modular and flexible codebase for developing Vision-Language Models (VLMs) into Vision-Language-Action (VLA) models. Each component (model, data, trainer, configuration, evaluation) is designed for high cohesion and low coupling, enabling plug-and-play research and fast iteration."
+    },
+    {
+      "title": "GitHub - starVLA/starVLA: StarVLA: A Lego-like Codebase for Vision ...",
+      "url": "https://github.com/starVLA/starVLA",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    },
+    {
+      "title": "GitHub - trshen925/starvla",
+      "url": "https://github.com/trshen925/starvla",
+      "snippet": "Thank you for your understanding and support! 🙏 In StarVLA (also a pun on \"start VLA\" ), each functional component (model, data, trainer, config, evaluation, etc.) follows a top-down, intuitive separation and high-cohesion, low-coupling principle, enabling plug-and-play design, rapid prototyping, and independent debugging."
+    }
+  ]
+}

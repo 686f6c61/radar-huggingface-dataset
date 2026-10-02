@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_pick_place_can_PIXELS__ID_146339",
+  "slug": "castanetnicolas-act_ur5e_bs_64_act_chunk_20_exec_20_task_pick_place_can_pixels__id_146339",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20_TASK_pick_place_can_PIXELS__ID_146339",
+  "created_at": "2026-10-01T23:46:18.000Z",
+  "updated_at": "2026-10-01T23:46:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:castanetnicolas/robomimic_can_ph_image84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51590791,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206407228,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACT_UR5e_BS_64_Act_Chunk_50_Exec_50 - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_50_Exec_50",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 at main - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20/tree/main",
+      "snippet": "Instructions to use castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "UR5 Pick and Place - GitHub",
+      "url": "https://github.com/allan-almeida1/ur5-pick-and-place-webots",
+      "snippet": "The robot is able to pick up a bottle from a table and place it on another table (and also give the dummy a drink 😁 🍺). The computer vision part of the project is implemented via a CNN. The CNN is trained to detect the bottle position on the image. The CNN is implemented in Tensorflow and Keras, and it uses a VGG16 pre-trained model as a ..."
+    },
+    {
+      "title": "UR Download | Support Site | Universal Robots",
+      "url": "https://www.universal-robots.com/download/",
+      "snippet": "Here you can download a lot of useful files including manuals, drawings, robot software update and more! Select your download from the menus below"
+    },
+    {
+      "title": "ur5e · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ur5e",
+      "snippet": "A UR5e robotic arm model was created in MATLAB and used to write the word \"FLOW\". A quintic spline interpolation method was implemented to generate the end-effect trajectories."
+    }
+  ]
+}

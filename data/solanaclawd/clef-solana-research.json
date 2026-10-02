@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "solanaclawd/clef-solana-research",
+  "slug": "solanaclawd-clef-solana-research",
+  "author": "solanaclawd",
+  "url": "https://huggingface.co/solanaclawd/clef-solana-research",
+  "created_at": "2026-10-01T19:58:24.000Z",
+  "updated_at": "2026-10-01T19:58:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "solana",
+    "clawd",
+    "clef",
+    "systemone",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "lora",
+    "apple-silicon",
+    "mps",
+    "training-in-progress",
+    "en",
+    "dataset:solanaclawd/solana-clawd-realtime-research-instruct",
+    "arxiv:2605.12151",
+    "arxiv:2606.08232",
+    "base_model:Cloudflare/clef",
+    "base_model:finetune:Cloudflare/clef",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Cloudflare/clef",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "solanaclawd/README · Hugging Face",
+      "url": "https://huggingface.co/solanaclawd/README",
+      "snippet": "The Hugging Face home for the Solana Clawd model stack: public-safe datasets, LoRA adapters, evaluation artifacts, and CAAP/1.0 registry metadata for Solana-native AI agents."
+    },
+    {
+      "title": "solanaclawd (Clawd) - Hugging Face",
+      "url": "https://huggingface.co/solanaclawd/datasets",
+      "snippet": "Articles Introducing Clawd: Solana-Native AI Models for On-Chain Builders ... Team members 1 solanaclawd &#x27;s datasets 6 Sort: Recently updated"
+    },
+    {
+      "title": "GitHub - solana-clawd/ai-solana-research: Research: Why Solana needs ...",
+      "url": "https://github.com/solana-clawd/ai-solana-research",
+      "snippet": "The Problem AI agent infrastructure and tokens are increasingly launching on Base (Ethereum L2) rather than Solana. This research tracks the trend and identifies opportunities for Solana to compete."
+    },
+    {
+      "title": "8 Bit Labs | Solana AI Training, Models, and On-Chain Registry",
+      "url": "https://8bitlabs.ai/",
+      "snippet": "8 Bit Labs is the public lab notebook for Solana Clawd AI training data, models, NVIDIA trading factory research, inference mesh, and on-chain AI registry proofs."
+    },
+    {
+      "title": "GitHub - Solizardking/solana-clawd",
+      "url": "https://github.com/solizardking/solana-clawd",
+      "snippet": "⚓ @clawd/solana-ai-inference-client — On-chain AI Inference Protocol A fully deployed Anchor program + TypeScript SDK for decentralized AI model registration, inference requests, staking, and validator management on Solana."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "OidoStudio/laya-mm-guard-v3-gguf",
+  "slug": "oidostudio-laya-mm-guard-v3-gguf",
+  "author": "OidoStudio",
+  "url": "https://huggingface.co/OidoStudio/laya-mm-guard-v3-gguf",
+  "created_at": "2026-10-01T19:30:42.000Z",
+  "updated_at": "2026-10-01T19:40:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [
+    "multilingual",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "laya",
+    "mmbert",
+    "prompt-injection",
+    "guardrails",
+    "llm-security",
+    "indirect-prompt-injection",
+    "calibrated",
+    "text-classification",
+    "multilingual",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ar",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:quantized:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 306939648,
+  "parameters_human": "306.9M",
+  "storage_bytes": 723063652,
+  "storage_human": "723 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mys/laya-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mys/laya-GGUF",
+      "snippet": "mys / laya-GGUF Like 0 GGUF English ggmlc laya jev modernbert decision system-1 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Laya English GGUF (ggmlc) Files Run with laya What this is License"
+    },
+    {
+      "title": "How to add a custom AI model to Layla | Layla Help",
+      "url": "https://help.layla-network.ai/how-to-add-custom-models-to-layla/",
+      "snippet": "Add a local GGUF or LiteRT model to Layla, connect Layla Server or Layla Cloud, or configure an OpenAI-compatible or Claude API."
+    },
+    {
+      "title": "How to Run GGUF Models Locally",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "How to Run GGUF Models Locally The complete 2026 guide — load any GGUF model with GGUF Loader, Ollama, LM Studio, or llama.cpp. Pick your tool below and jump straight to its step-by-step tutorial."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Quantized Models for convaiinnovations/laya - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:convaiinnovations/laya",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

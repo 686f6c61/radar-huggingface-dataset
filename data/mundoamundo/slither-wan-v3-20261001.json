@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mundoamundo/slither-wan-v3-20261001",
+  "slug": "mundoamundo-slither-wan-v3-20261001",
+  "author": "mundoamundo",
+  "url": "https://huggingface.co/mundoamundo/slither-wan-v3-20261001",
+  "created_at": "2026-10-02T01:01:23.000Z",
+  "updated_at": "2026-10-02T03:04:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "slitherio",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94692384,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mundoamundo/slither-residual-v3-20261001 · Hugging Face",
+      "url": "https://huggingface.co/mundoamundo/slither-residual-v3-20261001",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mundoamundo (Seth Lupo) - Hugging Face",
+      "url": "https://huggingface.co/mundoamundo/models",
+      "snippet": "Recent Activity new activityabout 8 hours ago SexGod1979/PinkFluffyBunny-MiniMax-H3: 🚩 Report: Illegal or restricted content liked a model7 months ago Wan-AI/Wan2.2-I2V-A14B View all activity"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "slither.io",
+      "url": "http://slither.com/io",
+      "snippet": "The most famous slither game in the world! Play with millions of players around the world and try to become the longest of the day!"
+    },
+    {
+      "title": "Slither.io・Free STL File for 3D printing・Cults",
+      "url": "https://cults3d.com/en/3d-model/game/slither-io",
+      "snippet": "A very popular game Slither.io made us want to 3d print it. Each segment is made out of different shapes in TinkerCAD. Separately printed segments allow different combinations. It can be made into a bracelet. The segments can be multiplied in slicer. A raft is recommended for printing multiple small objects. 3D material PLA is well suited for this type of print."
+    }
+  ]
+}

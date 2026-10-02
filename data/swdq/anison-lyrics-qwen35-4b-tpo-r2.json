@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "swdq/anison-lyrics-qwen35-4b-tpo-r2",
+  "slug": "swdq-anison-lyrics-qwen35-4b-tpo-r2",
+  "author": "swdq",
+  "url": "https://huggingface.co/swdq/anison-lyrics-qwen35-4b-tpo-r2",
+  "created_at": "2026-10-01T23:25:21.000Z",
+  "updated_at": "2026-10-02T00:39:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "lyrics",
+    "japanese",
+    "tpo",
+    "preference-optimization",
+    "text-generation",
+    "conversational",
+    "ja",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547739,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ttvdblock716/qwen35-4b • LM Studio Hub",
+      "url": "https://lmstudio.ai/ttvdblock716/qwen35-4b",
+      "snippet": "Custom model by ttvdblock716 Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation. Early fusion training on multimodal ..."
+    },
+    {
+      "title": "GitHub - techwithsergiu/qwen35-toolkit: Convert, strip, verify and ...",
+      "url": "https://github.com/techwithsergiu/qwen35-toolkit",
+      "snippet": "Qwen3.5 models ship as full-precision VLMs — too large for most consumer GPUs out of the box. This toolkit prepares them for text-only LoRA fine-tuning and inference on limited hardware: correct BNB quantization, clean visual tower strip, and inference verification before publishing. What it does ..."
+    },
+    {
+      "title": "huihui_ai/qwen3.5-abliterated:4B",
+      "url": "https://ollama.com/huihui_ai/qwen3.5-abliterated:4B",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    },
+    {
+      "title": "ai/qwen3.5 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/qwen3.5",
+      "snippet": "Note This repository contains model weights and configuration files for the post-trained model in the Hugging Face Transformers format. These artifacts are compatible with Hugging Face Transformers, vLLM, SGLang, KTransformers, etc."
+    },
+    {
+      "title": "qwen3.5:4b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:4b",
+      "snippet": "Qwen 3.5 is a family of open-source multimodal models that delivers exceptional utility and performance."
+    }
+  ]
+}

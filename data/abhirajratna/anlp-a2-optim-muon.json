@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abhirajratna/anlp-a2-optim-muon",
+  "slug": "abhirajratna-anlp-a2-optim-muon",
+  "author": "abhirajratna",
+  "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-muon",
+  "created_at": "2026-10-01T19:19:55.000Z",
+  "updated_at": "2026-10-01T19:20:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "language-model",
+    "optimizer-comparison",
+    "anlp-assignment",
+    "en",
+    "dataset:browndw/human-ai-parallel-corpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33563136,
+  "parameters_human": "33.6M",
+  "storage_bytes": 134258800,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhirajratna/anlp-a2-optim-lion · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-lion",
+      "snippet": "The dense model of Part 1 (variant v1: 8 layers, d_model 512, 8 heads, 2-layer MLP 2048), pretrained for next-token prediction on one pass over the training split of browndw/human-ai-parallel-corpus, with a from-scratch Lion optimizer."
+    },
+    {
+      "title": "siddarthg44/anlp-a2-p2-muon · Hugging Face",
+      "url": "https://huggingface.co/siddarthg44/anlp-a2-p2-muon",
+      "snippet": "Part 2 of ANLP Assignment 2: the dense decoder-only transformer from Part 1, trained on browndw/human-ai-parallel-corpus with a from-scratch implementation of the muon optimizer (subclassing only torch.optim.Optimizer)."
+    },
+    {
+      "title": "GitHub - Arihant25/anlp-study-guide: A slide-by-slide study companion ...",
+      "url": "https://github.com/Arihant25/anlp-study-guide",
+      "snippet": "A slide-by-slide study companion for Advanced NLP, Monsoon 2026 at IIIT Hyderabad. Every lecture slide, tutorial page, and previous-year exam question is embedded verbatim and followed by an explanation written from first principles — designed for a student who has never seen the material before ..."
+    },
+    {
+      "title": "GitHub - bitmap4/anlp-a2",
+      "url": "https://github.com/bitmap4/anlp-a2",
+      "snippet": "Contribute to bitmap4/anlp-a2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Muon — PyTorch 2.14 documentation",
+      "url": "https://docs.pytorch.org/docs/2.14/generated/torch.optim.Muon.html",
+      "snippet": "Muon # class torch.optim.Muon(params, lr=0.001, weight_decay=0.1, momentum=0.95, nesterov=True, ns_coefficients=(3.4445, -4.775, 2.0315), eps=1e-07, ns_steps=5 ..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "charlieK123/gripper_rgb_depth_ACT",
+  "slug": "charliek123-gripper_rgb_depth_act",
+  "author": "charlieK123",
+  "url": "https://huggingface.co/charlieK123/gripper_rgb_depth_ACT",
+  "created_at": "2026-10-01T19:58:47.000Z",
+  "updated_at": "2026-10-01T19:59:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:charlieK123/depth_dataSet_act_rgbd",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206719288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "charlieK123/gripper_Top_Base_Camera_Views_ACT · Hugging Face",
+      "url": "https://huggingface.co/charlieK123/gripper_Top_Base_Camera_Views_ACT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "charlieK123/gripper_Top_Base_Camera_Views_ACT · Discussions",
+      "url": "https://huggingface.co/charlieK123/gripper_Top_Base_Camera_Views_ACT/discussions",
+      "snippet": "Instructions to use charlieK123/gripper_Top_Base_Camera_Views_ACT with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Action Chunking Transformers (ACT): Complete Guide for Robot Imitation ...",
+      "url": "https://www.roboticscenter.ai/guides/action-chunking-transformers",
+      "snippet": "Master ACT (Action Chunking Transformers): architecture, training on real robot data, chunk size tuning, and deployment on OpenArm and Mobile ALOHA. Includes PyTorch code, hyperparameter guide, and dataset format specs."
+    },
+    {
+      "title": "PDF Ask Professor G. How to Grasp: Training-Free Cross-Gripper Grasping ...",
+      "url": "https://events.infovaya.com/uploads/documents/pdfviewer/18/e1/235205-0630.pdf",
+      "snippet": "Fig. 1. Overview of the proposed training-free cross-gripper grasp synthesis framework. Given a single RGB-D observation and a URDF-specified gripper, the foundation model provides semantic conditioning to construct a strategy-conditioned search region and an executable objective, followed by CEM-based refinement for final grasp synthesis."
+    },
+    {
+      "title": "AquaCap: A Training-Free Underwater Embodied Agent with Code-as-Policy",
+      "url": "https://www.aimodels.fyi/papers/arxiv/aquacap-training-free-underwater-embodied-agent-code",
+      "snippet": "Structured perception turns images into checks AquaCap-Perception supplies fields for target identity, visibility, range, geometry, estimation quality, camera status, and gripper state. A vision-language model selects the requested object from RGB input, and SAM3 produces a mask."
+    }
+  ]
+}

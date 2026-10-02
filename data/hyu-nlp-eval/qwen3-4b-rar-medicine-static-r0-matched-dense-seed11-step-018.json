@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-018",
+  "created_at": "2026-10-01T21:20:53.000Z",
+  "updated_at": "2026-10-01T21:34:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307529,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anne La Rochelle - Facebook",
+      "url": "https://www.facebook.com/anne.larochelle/",
+      "snippet": "Anne La Rochelle is on Facebook. Join Facebook to connect with Anne La Rochelle and others you may know. Facebook gives …"
+    },
+    {
+      "title": "Carolina Health Specialists - Anne La Rochelle, MD ... - Facebook",
+      "url": "https://www.facebook.com/CarolinaHealthSpecialistsCHS/photos/anne-la-rochelle-mdendocrinologyfacility-medical-complex-at-82nd-parkwayaddress-/2138120129792068/",
+      "snippet": "Jul 30, 2018 · Carolina Health Specialists - Anne La Rochelle, MD Endocrinology Facility: Medical Complex at 82nd Parkway …"
+    },
+    {
+      "title": "Dr. Anne G. La Rochelle, MD | Myrtle Beach, SC | Endocrinologist | US ...",
+      "url": "https://health.usnews.com/doctors/anne-la-rochelle-125319",
+      "snippet": "Sep 2, 2026 · Dr. Anne G. La Rochelle is a Endocrinologist in Myrtle Beach, SC. Find Dr. La Rochelle's phone number, address, …"
+    },
+    {
+      "title": "Anne G LaRochelle, MD | Endocrinology | Grand Strand Health",
+      "url": "https://www.mygrandstrandhealth.com/physicians/profile/Dr-Anne-G-LaRochelle-MD",
+      "snippet": "Use our search tool to find a skilled physician in Myrtle Beach, SC, and learn more about their background and experience."
+    },
+    {
+      "title": "Dr Anne Ghislaine Larochelle, MD in Myrtle Beach, SC - Medicare ...",
+      "url": "https://www.medicarelist.com/doctor/dr-anne-g-larochelle-md-myrtle-beach-sc/",
+      "snippet": "Dr Anne Ghislaine Larochelle, MD is a medicare enrolled \"Internal Medicine - Endocrinology, Diabetes & Metabolism\" physician in …"
+    }
+  ]
+}

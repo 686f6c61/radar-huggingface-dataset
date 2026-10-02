@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ramgpt/clef-flash-EXL3",
+  "slug": "ramgpt-clef-flash-exl3",
+  "author": "ramgpt",
+  "url": "https://huggingface.co/ramgpt/clef-flash-EXL3",
+  "created_at": "2026-10-01T21:54:53.000Z",
+  "updated_at": "2026-10-01T22:10:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "clef",
+    "systemone",
+    "qwen3.5",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4055447936,
+  "parameters_human": "4.06B",
+  "storage_bytes": 8374664237,
+  "storage_human": "8.4 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mr_r0b0t on X: \"@NVIDIAAI EXL3-Dflash2 draft model: https://t.co ...",
+      "url": "https://x.com/mr_r0b0t/status/2104320892973052395",
+      "snippet": "r0b0tlab/GLM-5.3-Flash-EXL3-2.25bpw-sm121 + 3.00bpw DFlash2 drafter + native ExLlamaV3 runtime! Tested on a single @ NVIDIAAI GB10 ♥️ At 8K C1, code: 22.61→49.96 tok/s with K=5 Exact single-key retrieval at 259,993 prompt tokens Extended eval suite in progress 🤓 2 2 8 124 mr_r0b0t @mr_r0b0t 10m"
+    },
+    {
+      "title": "wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1 · Hugging Face",
+      "url": "https://huggingface.co/wrldsuksgo2mars/GLM-5.3-Flash-EXL3-K3-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Clef-flash API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Cloudflare/clef-flash",
+      "snippet": "Overview Clef-Flash is a 9 billion parameter multimodal model developed by Cloudflare, built upon the Qwen/Qwen3.5-9B backbone. Unlike traditional LLMs that generate free-form text, Clef-Flash is specifically engineered to convert a given state (which can include text, JSON, images, or video) and a schema of typed questions into concrete decisions. It provides a probability for every allowed ..."
+    },
+    {
+      "title": "GitHub - turboderp-org/exllamav3: An optimized quantization and ...",
+      "url": "https://github.com/turboderp-org/exllamav3",
+      "snippet": "An optimized quantization and inference library for running LLMs locally on modern consumer-class GPUs - turboderp-org/exllamav3"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

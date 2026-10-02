@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dheer05dj/anlp-a2-p1-moe-e4-top2-active-matched",
+  "slug": "dheer05dj-anlp-a2-p1-moe-e4-top2-active-matched",
+  "author": "dheer05dj",
+  "url": "https://huggingface.co/dheer05dj/anlp-a2-p1-moe-e4-top2-active-matched",
+  "created_at": "2026-10-01T23:14:43.000Z",
+  "updated_at": "2026-10-01T23:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 58352128,
+  "parameters_human": "58.4M",
+  "storage_bytes": 233419352,
+  "storage_human": "233 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhirajratna/anlp-a2-moe-v5 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v5",
+      "snippet": "ANLP A2 Part 1, variant v5 Decoder-only transformer trained from scratch to translate Vietnamese -> English and Japanese -> English. One of five models that differ only in the feed-forward layer."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=anlp-assignment-2",
+      "snippet": "Explore machine learning models. Models 5 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: anlp-assignment-2 Clear all"
+    },
+    {
+      "title": "Model Architectures — MoE, Attention & Evals per Model",
+      "url": "https://inferencex.semianalysis.com/model",
+      "snippet": "Architecture deep-dives for every model benchmarked on InferenceX: MoE and attention design, official vendor eval scores, and live inference performance data."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Model Zoo",
+      "url": "https://www.modelzoo.co/",
+      "snippet": "The model is trained on Cornell Grasping Dataset. This is an implementation mainly based on the paper &#x27;Real-Time Grasp Detection Using Convolutional Neural Networks&#x27; from Redmon and Angelova."
+    }
+  ]
+}

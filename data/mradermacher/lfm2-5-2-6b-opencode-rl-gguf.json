@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-2.6B-opencode-RL-GGUF",
+  "slug": "mradermacher-lfm2-5-2-6b-opencode-rl-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-opencode-RL-GGUF",
+  "created_at": "2026-10-01T21:00:13.000Z",
+  "updated_at": "2026-10-01T21:26:17.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "trl",
+    "openenv",
+    "harbor",
+    "agent",
+    "smoldataenvs",
+    "grpo",
+    "opencode",
+    "en",
+    "dataset:FineEnvs/SmolDataEnvs-harbor-train",
+    "base_model:FineEnvs/LFM2.5-2.6B-opencode-RL",
+    "base_model:quantized:FineEnvs/LFM2.5-2.6B-opencode-RL",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 24326424320,
+  "storage_human": "24.3 GB",
+  "base_model": "FineEnvs/LFM2.5-2.6B-opencode-RL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/LFM2.5-2.6B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LFM2.5-2.6B-GGUF",
+      "snippet": "mradermacher / LFM2.5-2.6B-GGUF like 0 Transformers GGUF 16 languages liquid lfm2.5 edge conversational License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled ...",
+      "url": "https://huggingface.co/mradermacher/LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled-GGUF",
+      "snippet": "mradermacher / LFM-2.6B-Claude4.8-GPT-5.6-Sol-Grok-4.6_Fable5-Distilled-GGUF like 0 Transformers GGUF English distilled synthetic-data reasoning coding cybersecurity math unsloth lfm2 conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Lfm2.5 2.6b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lfm2-5-2-6b.html",
+      "snippet": "Download Lfm2.5 2.6b GGUF model. 5.46 GB, 1,199,371 downloads, 346 likes."
+    },
+    {
+      "title": "LFM2.5-2.6B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-2.6b",
+      "snippet": "2.6B dense model trained for agentic workloads, with a 128K context window and native tool calling for on-device agents ← Back to Text Models LFM2.5-2.6B is Liquid AI&#x27;s 2.6B dense model built for agentic workloads with a 128K context window and native tool calling."
+    },
+    {
+      "title": "How To Run LFM2.5-2.6B Locally On Windows, Mac And Linux",
+      "url": "https://lachieslifestyle.com/2026/09/02/how-to-run-lfm2-5-2-6b-locally-on-windows-mac-and-linux/",
+      "snippet": "Released on 4 August 2026, LFM2.5-2.6B is a 2.6-billion-parameter text model aimed at tool use, data extraction, RAG and long-running agent workflows. Liquid AI lists a 128K context window and native tool calling, but it also gives an unusually useful warning: this is not its recommended model for agentic coding or knowledge-heavy work. That honesty matters."
+    }
+  ]
+}

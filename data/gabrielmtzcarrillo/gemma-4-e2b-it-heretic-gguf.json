@@ -5,7 +5,7 @@
   "author": "gabrielmtzcarrillo",
   "url": "https://huggingface.co/gabrielmtzcarrillo/gemma-4-E2B-it-heretic-gguf",
   "created_at": "2026-09-30T20:28:34.000Z",
-  "updated_at": "2026-09-30T21:09:23.000Z",
+  "updated_at": "2026-10-01T18:07:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 134,
   "trending_score": 0,
   "parameters": 4647450147,
   "parameters_human": "4.65B",

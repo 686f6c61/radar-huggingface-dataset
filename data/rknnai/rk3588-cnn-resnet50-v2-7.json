@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-resnet50-v2-7",
+  "slug": "rknnai-rk3588-cnn-resnet50-v2-7",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-resnet50-v2-7",
+  "created_at": "2026-10-02T01:26:21.000Z",
+  "updated_at": "2026-10-02T01:26:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26695770,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resnet in RK3588 NPU using python - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/resnet-rk3588-npu-using-python-harish-s-acyef/",
+      "snippet": "In this blog, I&#x27;ll walk through a complete workflow for deploying a Hugging Face ResNet-50 model on the RK3588 NPU using the RKNN Toolkit."
+    },
+    {
+      "title": "RKNNAI (RKNNAI) - Hugging Face",
+      "url": "https://huggingface.co/RKNNAI",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 3 days ago ... published a model 3 days ago"
+    },
+    {
+      "title": "reComputer-RK-CV/src/rk3588_resnet50v2/model/rk3588_resnet50 ... - GitHub",
+      "url": "https://github.com/Seeed-Projects/reComputer-RK-CV/blob/main/src/rk3588_resnet50v2/model/rk3588_resnet50-v2-7.rknn",
+      "snippet": "25.5 MB Stored with Git LFS main reComputer-RK-CV / src / rk3588_resnet50v2 / model rk3588_resnet50-v2-7.rknn Code Blame 25.5 MB Stored with Git LFS Raw"
+    },
+    {
+      "title": "RK3588 AI 应用开发 （ResNet50V2-关键点检测）【玩转华为云】",
+      "url": "https://bbs.huaweicloud.com/blogs/451999",
+      "snippet": "RK3588 AI 应用开发 （ResNet50V2-关键点检测） 一、模型训练与转换 ResNet50V2 是改进版的深度卷积神经网络，基于 ResNet 架构发展而来。 它采用前置激活（将 BN 和 ReLU 移至卷积前）与身份映射，优化了信息传播和模型训练性能。"
+    },
+    {
+      "title": "How to run ResNet50V2 on RK3576",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/resnet50-v2-rknn/rk3576",
+      "snippet": "Run ResNet50V2 on RK3576 with one command—no manual environment setup."
+    }
+  ]
+}

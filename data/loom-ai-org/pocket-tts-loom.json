@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/pocket-tts-loom",
   "created_at": "2026-09-27T21:17:17.000Z",
-  "updated_at": "2026-09-27T21:20:39.000Z",
+  "updated_at": "2026-10-01T10:34:40.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 101279243,
   "parameters_human": "101.3M",
-  "storage_bytes": 571354464,
-  "storage_human": "571 MB",
+  "storage_bytes": 976710432,
+  "storage_human": "977 MB",
   "base_model": "kyutai/pocket-tts",
   "formats": [
     "gguf"

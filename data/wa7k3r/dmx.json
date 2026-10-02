@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Wa7k3r/DMX",
+  "slug": "wa7k3r-dmx",
+  "author": "Wa7k3r",
+  "url": "https://huggingface.co/Wa7k3r/DMX",
+  "created_at": "2026-10-01T20:43:57.000Z",
+  "updated_at": "2026-10-01T20:43:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatAIModel - Find the Right AI Model & Tool in Seconds",
+      "url": "https://whataimodel.com/",
+      "snippet": "Stop guessing and quickly discover the perfect AI model or tool for any task. WhatAIModel.com is your go-to hub for smart filtering, side-by-side comparisons, practical tips, and insights into the world of AI, designed for creators, developers, and enthusiasts."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "DmxModel: Model Wrapping and Configuration | d-matrix-ai/dmx-compressor ...",
+      "url": "https://deepwiki.com/d-matrix-ai/dmx-compressor/2-dmxmodel:-model-wrapping-and-configuration",
+      "snippet": "The DmxModel layer serves as the primary entry point for the dmx-compressor library. It provides a wrapping mechanism for standard PyTorch models, enabling them with hardware-aware simulation capabilities, quantization, and sparsity. This layer manages the lifecycle of model transformation, from initial symbolic tracing to the application of fine-grained compression configurations."
+    },
+    {
+      "title": "DMXAPI - Global AI Model API Aggregation, OpenAI API Proxy with Discount",
+      "url": "https://dmxapi.com/en.html",
+      "snippet": "DMXAPI provides world-leading AI model API aggregation services, supporting one-click connection to over 300 top AI models including OpenAI GPT, Anthropic Claude, Google Gemini. Developers and enterprises can easily integrate multiple models with high concurrency, security, and stability at lower costs."
+    },
+    {
+      "title": "DmxModel API and Transformation Lifecycle | d-matrix-ai/dmx-compressor ...",
+      "url": "https://deepwiki.com/d-matrix-ai/dmx-compressor/2.1-dmxmodel-api-and-transformation-lifecycle",
+      "snippet": "DmxModel API and Transformation Lifecycle Relevant source files The DmxModel is the primary entry point for the dmx-compressor library. It acts as a wrapper around standard PyTorch models, enabling hardware-aware simulation, quantization, and graph transformations through a Just-In-Time (JIT) FX-based lifecycle. The DmxModel Wrapper A DmxModel is created by wrapping an existing torch.nn.Module ..."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
   "created_at": "2026-09-30T20:39:53.000Z",
-  "updated_at": "2026-10-01T00:27:50.000Z",
+  "updated_at": "2026-10-01T11:01:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 689,
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 7987448890,
-  "storage_human": "8.0 GB",
+  "storage_bytes": 17221125716,
+  "storage_human": "17.2 GB",
   "base_model": "francesca9805/nld-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455",
   "formats": [
     "safetensors"

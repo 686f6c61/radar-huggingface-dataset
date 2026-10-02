@@ -5,7 +5,7 @@
   "author": "xf15",
   "url": "https://huggingface.co/xf15/ssd-dspark-qwen3-30b-a3b",
   "created_at": "2026-10-01T01:08:24.000Z",
-  "updated_at": "2026-10-01T01:09:18.000Z",
+  "updated_at": "2026-10-01T03:01:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20458158470,
-  "storage_human": "20.5 GB",
+  "storage_bytes": 40798492828,
+  "storage_human": "40.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

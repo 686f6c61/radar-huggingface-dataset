@@ -5,17 +5,13 @@
   "author": "alanoob",
   "url": "https://huggingface.co/alanoob/pi05-sort-stack-drawer-equal",
   "created_at": "2026-09-27T16:52:28.000Z",
-  "updated_at": "2026-09-27T17:08:14.000Z",
+  "updated_at": "2026-10-01T17:47:12.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
   "library": "openpi",
   "languages": [],
   "tags": [
-    "openpi",
-    "robotics",
-    "pi05",
-    "multitask",
     "region:us"
   ],
   "likes": 0,

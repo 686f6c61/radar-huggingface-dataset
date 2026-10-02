@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov5m",
+  "slug": "rknnai-rk3588-cnn-yolov5m",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov5m",
+  "created_at": "2026-10-02T01:27:54.000Z",
+  "updated_at": "2026-10-02T01:28:21.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23094650,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "rknn_model_zoo/examples/yolov5/README.md at main - GitHub",
+      "url": "https://github.com/airockchip/rknn_model_zoo/blob/main/examples/yolov5/README.md",
+      "snippet": "Contribute to airockchip/rknn_model_zoo development by creating an account on GitHub."
+    },
+    {
+      "title": "Deploy YOLOv5 on the Device | Radxa Docs",
+      "url": "https://docs.radxa.com/en/rock5/rock5b/app-development/ai/rknn-toolkit-lite2-yolov5",
+      "snippet": "This example uses a pre-trained ONNX model from the rknn_model_zoo as a case study, showing the complete process from model conversion to on-device inference. Deploying YOLOv5 with RKNN involves two main steps: On the PC, use rknn-toolkit2 to convert models from different frameworks into RKNN format."
+    },
+    {
+      "title": "RKNN Toolkit Lite2 YOLOv5 | Radxa Docs",
+      "url": "https://docs.radxa.com/en/rock5/rock5a/app-development/ai/rknn-toolkit-lite2-yolov5",
+      "snippet": "This example uses a pre-trained ONNX model from the rknn_model_zoo as a case study, showing the complete process from model conversion to on-device inference. Deploying YOLOv5 with RKNN involves two main steps: On the PC, use rknn-toolkit2 to convert models from different frameworks into RKNN format."
+    },
+    {
+      "title": "Running YoLov5 on RK3588 Blade 3 single board - Hackster.io",
+      "url": "https://www.hackster.io/Mixtile/running-yolov5-on-rk3588-blade-3-single-board-8477ad",
+      "snippet": "Referring to this benchmark (YOLOv5 TensorRT Benchmark for NVIDIA® Jetson™ AGX Xavier™ and NVIDIA® Laptop), I also tested the very popular Y By Mixtile Limited."
+    }
+  ]
+}

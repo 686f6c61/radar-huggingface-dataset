@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolox-s",
+  "slug": "rknnai-rk3588-cnn-yolox-s",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolox-s",
+  "created_at": "2026-10-02T01:34:14.000Z",
+  "updated_at": "2026-10-02T01:34:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21119114,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xlloss/RK3588_YOLOX: YOLOX is a high-performance anchor-free ...",
+      "url": "https://github.com/xlloss/RK3588_YOLOX",
+      "snippet": "Coming soon YOLOX-P6 and larger model. Objects365 pretrain. Transformer modules. More features in need."
+    },
+    {
+      "title": "GitHub - Ar-Ray-code/yolox_rk3588_ros: YOLOX + RK3588 (ROS2)",
+      "url": "https://github.com/Ar-Ray-code/yolox_rk3588_ros",
+      "snippet": "YOLOX + RK3588 (ROS2). Contribute to Ar-Ray-code/yolox_rk3588_ros development by creating an account on GitHub."
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/airockchip/rknn_model_zoo/main/examples/yolox/README.md",
+      "snippet": "Default is `i8`. - `<output_rknn_path> (optional)`: Specify save path for the RKNN model, default save in the same directory as ONNX model with name `yolox.rknn` ## 5."
+    },
+    {
+      "title": "YOLOX | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolox-rknn",
+      "snippet": "YOLOX on reComputer RK3576 and RK3588 This page is based on the YOLOX services in reComputer-RK-CV. The runtime performs RKNN inference, YOLOX branch decoding, objectness/class-score fusion, and class-aware NMS."
+    },
+    {
+      "title": "lovelyyoshino/rk3588_model | DeepWiki",
+      "url": "https://deepwiki.com/lovelyyoshino/rk3588_model",
+      "snippet": "The rk3588_model repository is a comprehensive framework for object detection and multi-object tracking (MOT) optimized for Rockchip NPU platforms, particularly the RK3588."
+    }
+  ]
+}

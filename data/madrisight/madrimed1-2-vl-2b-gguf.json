@@ -5,7 +5,7 @@
   "author": "madrisight",
   "url": "https://huggingface.co/madrisight/madrimed1.2-VL-2B-GGUF",
   "created_at": "2026-10-01T08:08:41.000Z",
-  "updated_at": "2026-10-01T16:56:30.000Z",
+  "updated_at": "2026-10-01T20:55:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": 2031739904,
   "parameters_human": "2.03B",
-  "storage_bytes": 4069680224,
-  "storage_human": "4.1 GB",
+  "storage_bytes": 19875903232,
+  "storage_human": "19.9 GB",
   "base_model": "madrisight/madrimed1.2-VL-2B",
   "formats": [
     "gguf"

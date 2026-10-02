@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abhirajratna/anlp-a2-optim-mars",
+  "slug": "abhirajratna-anlp-a2-optim-mars",
+  "author": "abhirajratna",
+  "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-mars",
+  "created_at": "2026-10-01T19:19:08.000Z",
+  "updated_at": "2026-10-01T19:19:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "language-model",
+    "optimizer-comparison",
+    "anlp-assignment",
+    "en",
+    "dataset:browndw/human-ai-parallel-corpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33563136,
+  "parameters_human": "33.6M",
+  "storage_bytes": 134258800,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhirajratna/anlp-a2-optim-lion · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-lion",
+      "snippet": "The dense model of Part 1 (variant v1: 8 layers, d_model 512, 8 heads, 2-layer MLP 2048), pretrained for next-token prediction on one pass over the training split of browndw/human-ai-parallel-corpus, with a from-scratch Lion optimizer."
+    },
+    {
+      "title": "abhirajratna (Abhiraj Ratna) - Hugging Face",
+      "url": "https://huggingface.co/abhirajratna",
+      "snippet": "User profile of Abhiraj Ratna on Hugging Face"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "MARS: Modular Agent with Reflective Search for Automated AI Research",
+      "url": "https://arxiv.org/abs/2602.02660",
+      "snippet": "A critical bottleneck in automating AI research is the execution of complex machine learning engineering (MLE) tasks. MLE differs from general software engineering due to computationally expensive evaluation (e.g., model training) and opaque performance attribution. Current LLM-based agents struggle here, often generating monolithic scripts that ignore execution costs and causal factors. We ..."
+    },
+    {
+      "title": "abhirajratna (Abhiraj Ratna) · GitHub",
+      "url": "https://github.com/abhirajratna/",
+      "snippet": "abhirajratna has 20 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

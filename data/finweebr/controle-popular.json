@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "FinweeBR/controle-popular",
+  "slug": "finweebr-controle-popular",
+  "author": "FinweeBR",
+  "url": "https://huggingface.co/FinweeBR/controle-popular",
+  "created_at": "2026-09-28T19:52:06.000Z",
+  "updated_at": "2026-10-02T03:32:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179296922,
+  "storage_human": "179 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "A Call for Control of Frontier AI Models - Valtioneuvosto",
+      "url": "https://valtioneuvosto.fi/en/-/a-call-for-control-of-frontier-ai-models",
+      "snippet": "At the same time, the rapid development of frontier AI models poses serious risks to safety and security if not appropriately managed. Recently we have seen capable AI systems circumventing testing safeguards, exploiting vulnerabilities and gaining unauthorized access to real-world systems."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "LLM leaderboard 2026: AI model rankings across every benchmark ...",
+      "url": "https://artificialwatch.com/benchmarks",
+      "snippet": "Claude Opus 5.5 leads the combined ranking today, ahead of Claude Fable 5.1 and GPT-6 Astra. LMArena, LiveBench, SimpleBench, LLM Stats, Vals AI and Artificial Analysis, 31 models normalized into one index, updated daily. Free and public."
+    }
+  ]
+}

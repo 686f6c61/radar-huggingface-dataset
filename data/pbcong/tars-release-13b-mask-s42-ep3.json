@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pbcong/tars-release-13b-mask-s42-ep3",
+  "slug": "pbcong-tars-release-13b-mask-s42-ep3",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/tars-release-13b-mask-s42-ep3",
+  "created_at": "2026-10-01T21:31:05.000Z",
+  "updated_at": "2026-10-02T02:15:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "base_model:liuhaotian/llava-v1.5-13b",
+    "base_model:finetune:liuhaotian/llava-v1.5-13b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13350839296,
+  "parameters_human": "13.35B",
+  "storage_bytes": 26702282395,
+  "storage_human": "26.7 GB",
+  "base_model": "liuhaotian/llava-v1.5-13b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Catalog | Inference Endpoints by Hugging Face",
+      "url": "https://endpoints.huggingface.co/catalog",
+      "snippet": "Deploy any AI model from the Hugging Face Hub in minutes."
+    },
+    {
+      "title": "Releases: TARS-AI-Community/TARS-AI - GitHub",
+      "url": "https://github.com/TARS-AI-Community/TARS-AI/releases",
+      "snippet": "The TARS-AI 3.0 release brings a massive overhaul with improved speech capabilities, a sleek new chat WebUI, better memory handling, and countless refinements. This is the most powerful and user-configurable version of TARS-AI yet."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "ReleasedModels - every AI model release, tracked",
+      "url": "https://releasedmodels.com/",
+      "snippet": "Every AI model release, tracked. Release dates, openness, parameters, architecture, launch and current prices, and benchmark scores for the models shaping the field."
+    }
+  ]
+}

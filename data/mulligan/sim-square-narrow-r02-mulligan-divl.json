@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r02-mulligan-divl",
+  "slug": "mulligan-sim-square-narrow-r02-mulligan-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r02-mulligan-divl",
+  "created_at": "2026-09-28T06:43:12.000Z",
+  "updated_at": "2026-10-02T00:13:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447883255,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot ...",
+      "url": "https://mulligan.page/",
+      "snippet": "Mulligan: Performance-Guided Data Collection for Efficient On-Robot Learning. Targeted corrections, counterfactual demonstrations, component ablations, collection productivity, paired statistics, and blinded robot evaluations."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=divl-agent",
+      "snippet": "mulligan/sim-square-broad-r00-baseline-first100-divl Robotics •Updated 2 days ago"
+    },
+    {
+      "title": "mulligan/sim-square-narrow-c03-mulligan-policy-rollouts at refs/convert ...",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts/tree/refs%2Fconvert%2Fparquet/default",
+      "snippet": "mulligan sim-square-narrow Libraries: Datasets pandas Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community refs/convert/parquet sim-square-narrow-c03-mulligan-policy-rollouts /default 3.59 MB Ctrl+K Ctrl+K 1 contributor History:1 commit parquet-converter Update parquet files ed288ef 5 days ago ..."
+    },
+    {
+      "title": "sim-square-narrow-c02-mulligan-policy-rollouts - claru.ai",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c02-mulligan-policy-rollouts",
+      "snippet": "Policy rollout dataset for the sim-square-narrow task, part of the Mulligan project containing 100 episodes of state-only robotic simulation data."
+    },
+    {
+      "title": "sim-square-narrow-c02-dagger-mixed - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c02-dagger-mixed",
+      "snippet": "Part of the Mulligan robotics dataset collection, containing simulated square-narrow task episodes collected via mixed data sources including policy rollouts and baseline mining."
+    }
+  ]
+}

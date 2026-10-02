@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "markuz89/family-safety-ai-it",
+  "slug": "markuz89-family-safety-ai-it",
+  "author": "markuz89",
+  "url": "https://huggingface.co/markuz89/family-safety-ai-it",
+  "created_at": "2026-10-01T19:55:46.000Z",
+  "updated_at": "2026-10-01T19:58:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "safetensors",
+    "child-safety",
+    "content-moderation",
+    "multi-label-classification",
+    "grooming-detection",
+    "cyberbullying",
+    "int8",
+    "on-device",
+    "text-classification",
+    "it",
+    "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:quantized:FacebookAI/xlm-roberta-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1211519492,
+  "storage_human": "1.2 GB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, FacebookAI/xlm-roberta-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Family AI Safety Toolkit",
+      "url": "https://familyaisafety.com/products/family-ai-safety-toolkit",
+      "snippet": "$97.00 (launching at $147-$197) Protect your kids in the AI era — without becoming a tech expert. Includes device safety setup, deepfake & scam prevention, scripts for tough conversations, and ongoing updates as threats evolve. Backed by a full worry-free refund. If it doesn&#x27;t help you feel safer, just ask."
+    },
+    {
+      "title": "App Safety Guide - Family AI Project",
+      "url": "https://safety.familyaiproject.com/",
+      "snippet": "Disclaimer: The safety ratings, reviews, and recommendations published on this site are provided for informational and educational purposes only. They represent the editorial opinions of Family AI Project and do not constitute legal, psychological, medical, or professional advice."
+    },
+    {
+      "title": "Family Ai Project",
+      "url": "https://www.familyaiproject.com/post-sign-up",
+      "snippet": "30 Days to AI Ready. We help K-12 schools and homeschool co-ops implement a complete AI safety system — policy, staff training, and parent communication — in 30 days."
+    },
+    {
+      "title": "FamilySafeAI - AI for your family. Privacy for your peace of mind.",
+      "url": "https://familysafeai.org/",
+      "snippet": "FamilySafeAI sits between your family and AI companies—so your kids, teens, parents, and beliefs stay private."
+    },
+    {
+      "title": "Family AI Starter Kit",
+      "url": "https://familyaikit.com/",
+      "snippet": "Launch private AI at home Gain instant access to 500+ locally-run AI models today. Step-by-step Windows walkthrough, hardware-specific model picks, and a parent-tested safety plan so everyone can use AI responsibly."
+    }
+  ]
+}

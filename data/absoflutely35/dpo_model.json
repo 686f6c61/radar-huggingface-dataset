@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "absoflutely35/dpo_model",
+  "slug": "absoflutely35-dpo_model",
+  "author": "absoflutely35",
+  "url": "https://huggingface.co/absoflutely35/dpo_model",
+  "created_at": "2026-10-02T01:07:04.000Z",
+  "updated_at": "2026-10-02T01:15:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6838633,
+  "storage_human": "7 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unrestricted AI — The Uncensored AI Model Leaderboard",
+      "url": "https://unrestricted.ai/",
+      "snippet": "Unrestricted AI model rankings. Compare the most uncensored AI models by freedom (UGI), willingness, natural intelligence, and writing ability — an independent leaderboard updated from the UGI Leaderboard."
+    },
+    {
+      "title": "Direct preference optimization - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning-direct-preference-optimization",
+      "snippet": "Direct preference optimization (DPO) is an alignment technique for large language models, used to adjust model weights based on human preferences. It differs from reinforcement learning from human feedback (RLHF) in that it does not require fitting a reward model and uses simpler binary data preferences for training. It is computationally lighter weight and faster than RLHF, while being ..."
+    },
+    {
+      "title": "[2305.18290] Direct Preference Optimization: Your Language Model is ...",
+      "url": "https://arxiv.org/abs/2305.18290",
+      "snippet": "The resulting algorithm, which we call Direct Preference Optimization (DPO), is stable, performant, and computationally lightweight, eliminating the need for sampling from the LM during fine-tuning or performing significant hyperparameter tuning."
+    },
+    {
+      "title": "All Knowledge You Need about DPO and its Variants - arXiv.org",
+      "url": "https://arxiv.org/html/2404.14723v2",
+      "snippet": "In scenario B, we evaluate the effectiveness of the DPO method across various sizes of training datasets. Additionally, we introduce a novel approach called Preferences Pruning (PP), which involves finding the best setup to generate chosen and rejected preferences via the SFT model."
+    },
+    {
+      "title": "dpo_model API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/AlexVal/dpo_model",
+      "snippet": "Deploy dpo_model with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "stefan-hf/rvlcdip-classifiers",
+  "slug": "stefan-hf-rvlcdip-classifiers",
+  "author": "stefan-hf",
+  "url": "https://huggingface.co/stefan-hf/rvlcdip-classifiers",
+  "created_at": "2026-10-01T21:08:14.000Z",
+  "updated_at": "2026-10-01T21:54:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "document-classification",
+    "rvl-cdip",
+    "torchvision",
+    "dit",
+    "shortcut-learning",
+    "image-classification",
+    "dataset:stefan-hf/rvlcdip-id-codes",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5312181984,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stefan-hf/yolov8n-rvlcdip-idcodes · Hugging Face",
+      "url": "https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stefan-hf/yolov8n-rvlcdip-idcodes at main - Hugging Face",
+      "url": "https://huggingface.co/stefan-hf/yolov8n-rvlcdip-idcodes/tree/main",
+      "snippet": "Instructions to use stefan-hf/yolov8n-rvlcdip-idcodes with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use stefan-hf/yolov8n-rvlcdip-idcodes with ultralytics:"
+    },
+    {
+      "title": "Mauro26-AI/Document_classification - GitHub",
+      "url": "https://github.com/Mauro26-AI/Document_classification",
+      "snippet": "This project tackles multi-class document image classification on the RVL-CDIP benchmark, a canonical dataset for Intelligent Document Processing (IDP) research. The goal is to automatically classify scanned document images into 16 distinct categories — from invoices and advertisements to scientific reports and handwritten notes — using a Convolutional Neural Network trained with two-phase ..."
+    },
+    {
+      "title": "Revising RVL-CDIP: Quantifying Errors and Test-Train Overlap",
+      "url": "https://arxiv.org/pdf/2606.31446",
+      "snippet": "Work document page classifiers. standard benchmark for surveyed 30 papers that classification systems or RVL-CDIP (or a subset of RVL-wide range of model types classification performance, text-based models, multi-modal Language Models."
+    },
+    {
+      "title": "On Evaluation of Document Classification using RVL-CDIP",
+      "url": "https://arxiv.org/html/2306.12550",
+      "snippet": "As model performance on RVL-CDIP improves, it becomes increasingly important to ensure that further gains are meaningful with respect to the classification task."
+    }
+  ]
+}

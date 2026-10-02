@@ -5,7 +5,7 @@
   "author": "gdpz11",
   "url": "https://huggingface.co/gdpz11/hw1-hc3-detector",
   "created_at": "2026-09-29T21:53:29.000Z",
-  "updated_at": "2026-09-29T22:21:10.000Z",
+  "updated_at": "2026-10-02T02:29:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -16,13 +16,6 @@
   "tags": [
     "safetensors",
     "bert",
-    "hc3",
-    "ai-generated-text-detection",
-    "text-classification",
-    "en",
-    "dataset:Hello-SimpleAI/HC3",
-    "base_model:sentence-transformers/all-MiniLM-L6-v2",
-    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
     "region:us"
   ],
   "likes": 0,

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov6m",
+  "slug": "rknnai-rk3588-cnn-yolov6m",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov6m",
+  "created_at": "2026-10-02T01:22:07.000Z",
+  "updated_at": "2026-10-02T01:22:34.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37464871,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "YOLOv6 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolov6-rknn",
+      "snippet": "YOLOv6 on reComputer RK3576 and RK3588 This deployment is based on the YOLOv6 modules in reComputer-RK-CV. It runs COCO object detection with RKNN-Toolkit-Lite2 and provides browser preview, REST inference, and offline video processing."
+    },
+    {
+      "title": "Yolon11_RK3588/rknn_model_zoo/examples/yolov6/README.md at main - GitHub",
+      "url": "https://github.com/Ebwai/Yolon11_RK3588/blob/main/rknn_model_zoo/examples/yolov6/README.md",
+      "snippet": "YOLOv11n INT8 quantized model running on RK3588 with IMX415 camera — Python to C++ 3-core NPU pipeline - Ebwai/Yolon11_RK3588"
+    },
+    {
+      "title": "RKNNAI/RK3576-CNN-yolov6m · Hugging Face",
+      "url": "https://huggingface.co/RKNNAI/RK3576-CNN-yolov6m",
+      "snippet": "RKNNAI / RK3576-CNN-yolov6m Like 0 License:gpl-3.0 Model card FilesFiles and versions xet Community Copy to bucket new yolov6m"
+    },
+    {
+      "title": "airockchip/rknn_model_zoo: RKNN Model Zoo is developed based on the ...",
+      "url": "https://codeberg.org/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model."
+    }
+  ]
+}

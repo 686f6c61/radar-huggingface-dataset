@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_128_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS__ID_146322",
+  "slug": "castanetnicolas-act_ur5e_bs_128_act_chunk_10_exec_10_task_pick_place_can_pixels__id_146322",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_128_Act_Chunk_10_Exec_10_TASK_pick_place_can_PIXELS__ID_146322",
+  "created_at": "2026-10-02T00:58:23.000Z",
+  "updated_at": "2026-10-02T00:58:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/robomimic_can_ph_image84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51580551,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206366268,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lichess.org • Free Online Chess",
+      "url": "https://lichess.org/",
+      "snippet": "Free online chess server. Play chess in a clean interface. No registration, no ads, no plugin required. Play chess with the computer, …"
+    },
+    {
+      "title": "Sign in • lichess.org",
+      "url": "https://lichess.org/login",
+      "snippet": "Free online chess server. Play chess in a clean interface. No registration, no ads, no plugin required. Play chess with the computer, …"
+    },
+    {
+      "title": "Puzzles • lichess.org",
+      "url": "https://lichess.org/training",
+      "snippet": "Lichess tactic trainer: Find the best move for black.. Played by 14176 players."
+    },
+    {
+      "title": "Over the Board • lichess.org",
+      "url": "https://lichess.org/study/smISGikx/EFaWqX7i",
+      "snippet": "Mar 22, 2017 · FletchMK64 I'm going to put all of my over-the-board games into a single study - one per chapter. FletchMK64 Please …"
+    },
+    {
+      "title": "Chess board editor - lichess.org",
+      "url": "https://lichess.org/editor",
+      "snippet": "Load opening positions or create your own chess position on a chess board editor"
+    }
+  ]
+}

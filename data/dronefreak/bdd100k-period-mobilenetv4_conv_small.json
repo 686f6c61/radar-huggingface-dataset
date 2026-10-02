@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-mobilenetv4_conv_small",
+  "slug": "dronefreak-bdd100k-period-mobilenetv4_conv_small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-mobilenetv4_conv_small",
+  "created_at": "2026-10-01T19:54:31.000Z",
+  "updated_at": "2026-10-01T20:24:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2404.10518",
+    "arxiv:1805.04687",
+    "base_model:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "base_model:finetune:timm/mobilenetv4_conv_small.e2400_r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28070430,
+  "storage_human": "28 MB",
+  "base_model": "timm/mobilenetv4_conv_small.e2400_r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.57
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 80.22
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 86.06
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 76.22
+    }
+  ],
+  "sources": [
+    {
+      "title": "@dronefreak on Hugging Face: \" Open-sourcing the BDD100K Object ...",
+      "url": "https://huggingface.co/posts/dronefreak/988753800362571",
+      "snippet": "The \"test\" split here is BDD100K&#x27;s official validation set.🤖 Collection: dronefreak/bdd100k-object-detection-model-zoo-6aafc46f2f6c5e4d8676d894Feedback and contributions welcome."
+    },
+    {
+      "title": "GitHub - jiaowoguanren0615/MobileNetV4: This is a warehouse for ...",
+      "url": "https://github.com/jiaowoguanren0615/MobileNetV4",
+      "snippet": "This is a warehouse for MobileNetV4-Pytorch-model, can be used to train your image-datasets for vision tasks. - jiaowoguanren0615/MobileNetV4"
+    },
+    {
+      "title": "GitHub - SysCV/bdd100k-models: Model Zoo of BDD100K Dataset",
+      "url": "https://github.com/SysCV/bdd100k-models",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "Berkeley DeepDrive",
+      "url": "http://bdd-data.berkeley.edu/",
+      "snippet": "Please go to our discussion board with any questions on the BDD100K dataset usage and contact Fisher Yu for other inquiries."
+    },
+    {
+      "title": "dronefreak/bdd100k-yolo26s · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolo26s",
+      "snippet": "Instructions to use dronefreak/bdd100k-yolo26s with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/bdd100k-yolo26s with ultralytics: ... Notebooks Google Colab Kaggle YOLO26s Finetuned on BDD100K Performance Evaluation Protocol BDD100K Model Zoo Per-Class ..."
+    }
+  ]
+}

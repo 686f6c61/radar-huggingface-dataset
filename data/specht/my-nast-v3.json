@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Specht/my-nast-v3",
+  "slug": "specht-my-nast-v3",
+  "author": "Specht",
+  "url": "https://huggingface.co/Specht/my-nast-v3",
+  "created_at": "2026-10-01T21:31:00.000Z",
+  "updated_at": "2026-10-01T22:13:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 969638255,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De specht – kenmerken, leefgebied & herkenbaar gedrag",
+      "url": "https://www.natuurmonumenten.nl/dieren/specht",
+      "snippet": "De bekendste soort specht in Nederland is de grote bonte specht. Lees alles over onze spechten: de kenmerken, leefwijze, …"
+    },
+    {
+      "title": "Spechten - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Spechten",
+      "snippet": "Heel lang was er de veronderstelling dat de specht een aantal voorzieningen heeft om een hersenschudding te voorkomen. De …"
+    },
+    {
+      "title": "Grote bonte specht - Vogelbescherming",
+      "url": "https://www.vogelbescherming.nl/ontdek-vogels/kennis-over-vogels/vogelgids/vogel/grote-bonte-specht",
+      "snippet": "De meest algemene specht van Nederland. Zowel mannetje als vrouwtje roffelt op takken met een korte snelle roffel om territorium …"
+    },
+    {
+      "title": "Soorten spechten herkennen | Vogelvoeronline.nl",
+      "url": "https://vogelvoeronline.nl/blog/soorten-spechten-herkennen/",
+      "snippet": "Apr 10, 2025 · Welke soorten spechten zijn er in Nederland? Herken de verschillen en weet welke soort specht van jouw tuin zijn …"
+    },
+    {
+      "title": "Spechte – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Spechte",
+      "snippet": "Specht am Meisenknödel Die meisten Arten ernähren sich von Insekten, die sie in oder unter der Baumrinde beziehungsweise Borke …"
+    }
+  ]
+}

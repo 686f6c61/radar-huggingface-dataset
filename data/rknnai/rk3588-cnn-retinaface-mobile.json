@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-retinaface-mobile",
+  "slug": "rknnai-rk3588-cnn-retinaface-mobile",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-retinaface-mobile",
+  "created_at": "2026-10-02T01:19:38.000Z",
+  "updated_at": "2026-10-02T01:20:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18893797,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rk3588-example/examples/RetinaFace/README.md at main - GitHub",
+      "url": "https://github.com/exyexin/rk3588-example/blob/main/examples/RetinaFace/README.md",
+      "snippet": "Description: <onnx_model> should be the ONNX model path. <TARGET_PLATFORM> could be specified as RK3562, RK3566, RK3568, RK3588, RK1808, RV1109, RV1126 according to board SOC version. <dtype> is optional, could be specified as i8 or u8, i8 / u8 means to do quantization, default is i8 / u8. <output_rknn_path> is optional, used to specify the saving path of the RKNN model, default save path is ..."
+    },
+    {
+      "title": "rknn-go-data/retinaface-320-320-rk3588.rknn at master - GitHub",
+      "url": "https://github.com/phox/rknn-go-data/blob/master/retinaface-320-320-rk3588.rknn",
+      "snippet": "Data files for rknn-go examples. Contribute to phox/rknn-go-data development by creating an account on GitHub."
+    },
+    {
+      "title": "retinaface command - github.com/swdee/go-rknnlite/example/retinaface ...",
+      "url": "https://pkg.go.dev/github.com/swdee/go-rknnlite/example/retinaface",
+      "snippet": "RetinaFace Example Overview Detect human faces in images and identify face landmark features (eyes, nose, and mouth). Usage Make sure you have downloaded the data files first for the examples. You only need to do this once for all examples. ... Run the RetinaFace example on rk3588 or replace with your Platform model. ... This will result in the ..."
+    },
+    {
+      "title": "examples/RetinaFace/README.md · jianxi sun/rknn_model_zoo - Gitee",
+      "url": "https://gitee.com/wirelesser/rknn_model_zoo/blob/main/examples/RetinaFace/README.md",
+      "snippet": "``` cd model ./download_model.sh ``` ## (Optional) Convert original model to ONNX model Refer to convert_to_onnx.py provided by the original project to convert the onnx file. The command is as follows: ``` python3 convert_to_onnx.py -m ./weights/mobilenet0.25_Final.pth --network mobile0.25 --long_side 320 ``` ## Convert ONNX model to RKNN model ..."
+    },
+    {
+      "title": "py-feat/retinaface · Hugging Face",
+      "url": "https://huggingface.co/py-feat/retinaface",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

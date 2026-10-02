@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-SEGMENT-ppliteseg-cityscapes",
+  "slug": "rknnai-rk3588-segment-ppliteseg-cityscapes",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-SEGMENT-ppliteseg-cityscapes",
+  "created_at": "2026-10-02T01:25:48.000Z",
+  "updated_at": "2026-10-02T01:26:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9580900,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rknn_model_zoo/examples/ppseg/README.md at main - GitHub",
+      "url": "https://github.com/airockchip/rknn_model_zoo/blob/main/examples/ppseg/README.md",
+      "snippet": "Contribute to airockchip/rknn_model_zoo development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "Segmentation Models | airockchip/rknn_model_zoo | DeepWiki",
+      "url": "https://deepwiki.com/airockchip/rknn_model_zoo/5.1.2-segmentation-models",
+      "snippet": "This document provides an overview of image segmentation models supported in the RKNN Model Zoo, their implementation details, and usage guidance. This page covers general information about the segmentation models, while detailed information about specific implementations like MobileSAM can be found in MobileSAMand PaddleSeg details in PaddleSeg."
+    },
+    {
+      "title": "RK3588 Local AI Setup Guide (Orange Pi 5 Plus) · GitHub",
+      "url": "https://gist.github.com/waltercool/bc73b6ba143ea5c02708a650c6b6dfc1",
+      "snippet": "This document provides detailed instructions for setting up a local AI server with NPU acceleration on an RK3588 system using rk-llama.cpp."
+    },
+    {
+      "title": "PP-LiteSeg | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/nl/models/pp-liteseg-rknn",
+      "snippet": "PP-LiteSeg op reComputer RK3576 en RK3588 Deze service verpakt het PP-LiteSeg Cityscapes-voorbeeld uit reComputer-RK-CV met RKNN-inferentie, webvoorbeeld, REST API en asynchrone MP4-verwerking."
+    }
+  ]
+}

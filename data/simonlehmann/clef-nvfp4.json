@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "simonlehmann/clef-NVFP4",
+  "slug": "simonlehmann-clef-nvfp4",
+  "author": "simonlehmann",
+  "url": "https://huggingface.co/simonlehmann/clef-NVFP4",
+  "created_at": "2026-10-01T20:28:56.000Z",
+  "updated_at": "2026-10-01T20:53:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clef",
+    "systemone",
+    "nvfp4",
+    "fp8",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "multimodal",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "conversational",
+    "base_model:Cloudflare/clef",
+    "base_model:quantized:Cloudflare/clef",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19869895920,
+  "parameters_human": "19.87B",
+  "storage_bytes": 24115204109,
+  "storage_human": "24.1 GB",
+  "base_model": "Cloudflare/clef",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'free porn download' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/free%20porn%20download",
+      "snippet": "XNXX.COM 'free porn download' Search, free sex videos"
+    },
+    {
+      "title": "ᐅ DOWNLOAD XNXX MOVIES",
+      "url": "https://xmovies-xnxx.com/free-download",
+      "snippet": "FREE DOWNLOAD MOVIES - WATCH 9619 PORN VIDEOS"
+    },
+    {
+      "title": "Online Video Downloader - Download Any Video For Free",
+      "url": "https://smallseotools.com/video-downloader/",
+      "snippet": "We offer a free online video downloader tool to download any video from the internet instantly for free. Just enter a video URL and …"
+    },
+    {
+      "title": "XNXX Video Downloader | SERP Tools",
+      "url": "https://tools.serp.co/download-xnxx-videos/",
+      "snippet": "Download XNXX videos easily for offline viewing. Fast, reliable XNXX video downloader with high-quality downloads."
+    },
+    {
+      "title": "Releases · serpapps/xnxx-video-downloader - GitHub",
+      "url": "https://github.com/serpapps/xnxx-video-downloader/releases",
+      "snippet": "What's New Added a free trial flow to make first-time setup easier. Added in-extension update notifications so users can see when a …"
+    }
+  ]
+}

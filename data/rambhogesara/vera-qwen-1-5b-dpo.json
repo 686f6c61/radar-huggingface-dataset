@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "RamBhogesara/vera-qwen-1.5b-dpo",
+  "slug": "rambhogesara-vera-qwen-1-5b-dpo",
+  "author": "RamBhogesara",
+  "url": "https://huggingface.co/RamBhogesara/vera-qwen-1.5b-dpo",
+  "created_at": "2026-10-01T20:35:15.000Z",
+  "updated_at": "2026-10-01T20:53:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "dpo",
+    "alignment",
+    "unsloth",
+    "epistemic-calibration",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "dataset:RamBhogesara/vera-dpo-dataset",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Qwen-1.5B-dpo API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/manojpaul9986/qwen-1.5b-dpo",
+      "snippet": "The manojpaul9986/qwen-1.5b-dpo is a 1.5 billion parameter Qwen2 model developed by manojpaul9986. This model was fine-tuned using Unsloth and Huggingface&#x27;s TRL library, achieving 2x faster training."
+    },
+    {
+      "title": "manojpaul9986/qwen-1.5b-dpo · Hugging Face",
+      "url": "https://huggingface.co/manojpaul9986/qwen-1.5b-dpo",
+      "snippet": "manojpaul9986 / qwen-1.5b-dpo like 0 Text Generation Transformers Safetensors English qwen2 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen/Qwen2-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen — Model Architecture Across Generations — Model Architectures — A ...",
+      "url": "https://karam-nus.github.io/models/01_Qwen",
+      "snippet": "🟣 Qwen — Model Architecture Across Generations From a competitive Chinese LLM to a global open-weight powerhouse — tracing 5 generations of architecture evolution."
+    },
+    {
+      "title": "[2309.16609] Qwen Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2309.16609",
+      "snippet": "Large language models (LLMs) have revolutionized the field of artificial intelligence, enabling natural language processing tasks that were previously thought to be exclusive to humans. In this work, we introduce Qwen, the first installment of our large language model series. Qwen is a comprehensive language model series that encompasses distinct models with varying parameter counts. It ..."
+    }
+  ]
+}

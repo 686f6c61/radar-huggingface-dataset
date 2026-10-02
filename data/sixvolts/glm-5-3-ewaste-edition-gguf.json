@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SixVolts/GLM-5.3-ewaste-edition-GGUF",
+  "slug": "sixvolts-glm-5-3-ewaste-edition-gguf",
+  "author": "SixVolts",
+  "url": "https://huggingface.co/SixVolts/GLM-5.3-ewaste-edition-GGUF",
+  "created_at": "2026-10-01T21:42:06.000Z",
+  "updated_at": "2026-10-02T00:48:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "glm-dsa",
+    "moe",
+    "imatrix",
+    "speculative-decoding",
+    "llama.cpp",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 1343111194688,
+  "storage_human": "1343.1 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "SixVolts/GLM-5.2-ewaste-edition-GGUF · Hugging Face",
+      "url": "https://huggingface.co/SixVolts/GLM-5.2-ewaste-edition-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-5.3: China&#x27;s open AI model built a Chrome exploit for $20",
+      "url": "https://www.notebookcheck.net/GLM-5-3-China-s-open-AI-model-built-a-Chrome-exploit-for-20.1413141.0.html",
+      "snippet": "Anthropic tested Z.ai&#x27;s open-weight model GLM-5.3 for hacking skills. It builds exploits almost as reliably as Claude Mythos Preview, found new bugs in a browser and wrote an exploit for an old ..."
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.3 uses the same base model as GLM-5.2 — every gain comes from post-training. Compared with GLM-5.2, it is much better at complex coding and long-horizon tasks: Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. It also achieve open-source SOTA on public benchmarks including Terminal Bench 3.0 ..."
+    },
+    {
+      "title": "GLM-5.3: Release Intelligence, Performance & Price",
+      "url": "https://artificialanalysis.ai/models/releases/glm-5-3",
+      "snippet": "The GLM-5.3 release offers 2 models, each with different intelligence, performance, and pricing characteristics. Below is a comparison of the key metrics across the 2 models. For intelligence, the top model of GLM-5.3 is GLM-5.3 (Max) at 45. For output speed, the fastest model is GLM-5.3 (Low) at 69 t/s. For latency, GLM-5.3 (Low) at 32.08s offers the lowest time to first answer token. For ..."
+    }
+  ]
+}

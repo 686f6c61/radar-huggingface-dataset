@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-yolov8s-pose",
+  "slug": "rknnai-rk3588-cnn-yolov8s-pose",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-yolov8s-pose",
+  "created_at": "2026-10-02T01:32:37.000Z",
+  "updated_at": "2026-10-02T01:33:06.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13023823,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SnifferGuardian/Yolov8_Pose_RKNN",
+      "url": "https://github.com/SnifferGuardian/Yolov8_Pose_RKNN",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "GitHub - JoeFirmament/rknn_yolov8pose_rk3588_camera",
+      "url": "https://github.com/JoeFirmament/rknn_yolov8pose_rk3588_camera",
+      "snippet": "基于瑞芯微RK3588 NPU的高性能YOLOv8人体姿态检测项目，支持实时摄像头输入。"
+    },
+    {
+      "title": "Use YoloV8 in RK3588 NPU - ROCK 5 Series - Radxa Community",
+      "url": "https://forum.radxa.com/t/use-yolov8-in-rk3588-npu/15838",
+      "snippet": "The issue I came across in physical mode of the RK3588 NPU is the add model in the model.22 (post-processing stage of the bounding-box generation) and the issue is consistent in different runs. And the solution is to remove the node which causes the issue and re-program it input the post-processing runtime."
+    },
+    {
+      "title": "Run YOLOv8-pose on RK3588 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/models/yolov8-pose/rk3588",
+      "snippet": "Run YOLOv8-pose on RK3588 with one command—no manual environment setup."
+    },
+    {
+      "title": "rk3588&#x27;s yolov8 model conversion from pt to rknn | Memories",
+      "url": "https://blog.kaylordut.com/2024/02/09/rk3588's-yolov8-model-conversion-from-pt-to-rknn/",
+      "snippet": "BackgroundYolov8&#x27;s original model includes post-processing. Some shapes exceed the matrix calculation limit of 3588, so some cropping of the output layer is required. pt to onnxClone ultralytics_yolov"
+    }
+  ]
+}

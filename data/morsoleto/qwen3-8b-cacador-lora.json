@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Morsoleto/Qwen3-8B-cacador-lora",
+  "slug": "morsoleto-qwen3-8b-cacador-lora",
+  "author": "Morsoleto",
+  "url": "https://huggingface.co/Morsoleto/Qwen3-8B-cacador-lora",
+  "created_at": "2026-10-01T23:58:30.000Z",
+  "updated_at": "2026-10-02T00:03:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3-8B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": "unsloth/Qwen3-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-Tune Qwen3 8B with LoRA - Hugging Face",
+      "url": "https://huggingface.co/docs/optimum-neuron/en/training_tutorials/finetune_qwen3",
+      "snippet": "This tutorial shows how to fine-tune the Qwen3 model on AWS Trainium accelerators using optimum-neuron. ... We&#x27;ll use a trn1.32xlarge instance with 16 Trainium Accelerators (32 Neuron Cores) and the Hugging Face Neuron Deep Learning AMI."
+    },
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    },
+    {
+      "title": "BlueLiu2004/Qwen3-8B-lora_model · Hugging Face",
+      "url": "https://huggingface.co/BlueLiu2004/Qwen3-8B-lora_model",
+      "snippet": "Uploaded model Developed by: BlueLiu2004 License: apache-2.0 Finetuned from model : unsloth/qwen3-8b-unsloth-bnb-4bit This qwen3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "Qwen3 8B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-8b",
+      "snippet": "Qwen3 8B is an open-weights dense 8.2B parameter causal language model from Alibaba&#x27;s Qwen series, designed for reasoning-heavy tasks and efficient dialogue. Released April 2025, it is available under the Apache 2.0 license with open access to weights. The model supports a 131,072 token context window and is suitable for both local deployment and API-based inference."
+    }
+  ]
+}

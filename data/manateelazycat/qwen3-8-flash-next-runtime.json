@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/Qwen3.8-Flash-Next-Runtime",
+  "slug": "manateelazycat-qwen3-8-flash-next-runtime",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/Qwen3.8-Flash-Next-Runtime",
+  "created_at": "2026-10-01T06:10:17.000Z",
+  "updated_at": "2026-10-02T00:16:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen",
+    "sglang",
+    "thor",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15435694080,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Input a message to start chatting with Qwen/Qwen3.8-Flash-Next."
+    },
+    {
+      "title": "manateelazycat/Qwen3.8-Flash-Next-SGLang-Thor · Hugging Face",
+      "url": "https://huggingface.co/manateelazycat/Qwen3.8-Flash-Next-SGLang-Thor",
+      "snippet": "Qwen3.8 Flash Next: Thor SGLang optimized files This repository contains converted FP8 target shards, effective SGLang metadata, the NVFP4 MTP drafter, a 32768-token draft vocabulary map and its reduced FP8 head. It is an inference deployment artifact, not a complete standalone target model."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next FP8 by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-8-flash-next-fp8",
+      "snippet": "The result is a 125B-parameter main model with 6B active per token, default-on thinking with tunable reasoning_effort, and a 262,144-token native context extensible to 1M with YaRN. This is Qwen&#x27;s official FP8 quantization of Qwen3.8-Flash-Next, fine-grained with a block size of 128; Qwen reports performance nearly identical to the bf16 original."
+    }
+  ]
+}

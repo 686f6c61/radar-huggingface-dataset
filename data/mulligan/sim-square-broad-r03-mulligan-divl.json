@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-broad-r03-mulligan-divl",
+  "slug": "mulligan-sim-square-broad-r03-mulligan-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-broad-r03-mulligan-divl",
+  "created_at": "2026-09-28T23:57:57.000Z",
+  "updated_at": "2026-10-02T00:10:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-broad",
+    "divl-agent",
+    "dataset:mulligan/sim-square-broad-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-broad-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-broad-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-broad-c02-dagger-mulligan",
+    "dataset:mulligan/sim-square-broad-c02-mulligan-policy-rollouts",
+    "dataset:mulligan/sim-square-broad-c03-dagger-mulligan",
+    "dataset:mulligan/sim-square-broad-c03-mulligan-policy-rollouts",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1448989175,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulligan/sim-square-broad-r00-sobol-divl · Hugging Face",
+      "url": "https://huggingface.co/mulligan/sim-square-broad-r00-sobol-divl",
+      "snippet": "sim-square-broad-r00-sobol-divl Part of Mulligan. Browse evaluations at Policy Arena; the datasets are in the mulligan organization. State-based agent with the parent&#x27;s frozen diffusion actor and a distributional DIVL critic (policy.pt, stats.json)."
+    },
+    {
+      "title": "Datasets - Hugging Face",
+      "url": "https://huggingface.co/datasets?other=sim-square-broad",
+      "snippet": "Explore datasets powering machine learning. 37 Full-text search Edit filters Sort: Trending Active filters: sim-square-broad Clear all"
+    },
+    {
+      "title": "sim-square-broad-c03-dagger-mulligan - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-broad-c03-dagger-mulligan",
+      "snippet": "A simulation-based robotic manipulation dataset for the square-broad task, part of the Mulligan project with 100 episodes collected from a training-view perspective using DAgger methodology."
+    },
+    {
+      "title": "sim-square-broad-c03-auto-plain-il-n1-policy-rollouts - claru.ai",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-broad-c03-auto-plain-il-n1-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan benchmark for the sim-square-broad task, containing 100 episodes of state-only observations used for imitation learning evaluation."
+    },
+    {
+      "title": "Mulligan: AI automation for insurance brokerages | Y Combinator",
+      "url": "https://www.ycombinator.com/companies/mulligan",
+      "snippet": "AI automation for insurance brokerages. Founded in 2022 by Emily Dorsey and Aman Raghuvanshi, Mulligan has 5 employees based in San Francisco."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Haseeb9t/CropCare-MLLM-Adapters",
+  "slug": "haseeb9t-cropcare-mllm-adapters",
+  "author": "Haseeb9t",
+  "url": "https://huggingface.co/Haseeb9t/CropCare-MLLM-Adapters",
+  "created_at": "2026-10-01T23:49:17.000Z",
+  "updated_at": "2026-10-01T23:49:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "agriculture",
+    "vision-language",
+    "plant-pathology",
+    "potato-disease",
+    "lora",
+    "unsloth",
+    "gemma",
+    "llama-3.2-vision",
+    "mistral",
+    "image-text-to-text",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3225418595,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tasmi-0609/cropcare-ai-models at main - Hugging Face",
+      "url": "https://huggingface.co/tasmi-0609/cropcare-ai-models/tree/main",
+      "snippet": "Like 1 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main cropcare-ai-models 13 MB Ctrl+K Ctrl+K 1 contributor History:5 commits tasmi-0609 Upload plantdoc_plantwild_classes.json with huggingface_hub 04d8758 verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md Safe 28 Bytesinitial commit3 days ago indoor_classes.json 296 ..."
+    },
+    {
+      "title": "tasmi-0609/cropcare-ai-models · Hugging Face",
+      "url": "https://huggingface.co/tasmi-0609/cropcare-ai-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CropCare AI - GitHub",
+      "url": "https://github.com/Mukta0702/CropCare-AI",
+      "snippet": "CropCare AI is a web application that helps farmers identify crop diseases by uploading leaf images. It uses a fine-tuned EfficientNetB4 model (transfer learning) to classify diseases across 9 crop types: Apple, Cherry, Corn, Grape, Peach, Pepper, Potato, Strawberry, and Tomato."
+    },
+    {
+      "title": "GitHub - AxionX-sih/CropCare-Ai",
+      "url": "https://github.com/AxionX-sih/CropCare-Ai",
+      "snippet": "CropCare AI redesigned frontend Image upload Camera capture Plant/category selection AI image classification using the existing PlantVillage ViT model Top predictions returned by Flask Local prediction history through /predict and /history Basic /chat assistant endpoint Browser text-to-speech and voice input Multilingual UI foundation"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

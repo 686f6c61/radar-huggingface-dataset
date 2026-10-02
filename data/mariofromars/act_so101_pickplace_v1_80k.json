@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mariofromars/act_so101_pickplace_v1_80k",
+  "slug": "mariofromars-act_so101_pickplace_v1_80k",
+  "author": "mariofromars",
+  "url": "https://huggingface.co/mariofromars/act_so101_pickplace_v1_80k",
+  "created_at": "2026-10-01T21:31:49.000Z",
+  "updated_at": "2026-10-01T21:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:mariofromars/so101_pickplace_v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206703484,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AriRyo/so101-pickplace_policy · Hugging Face",
+      "url": "https://huggingface.co/AriRyo/so101-pickplace_policy",
+      "snippet": "Model Details Model Card for act Action Chunking with Transformers (ACT)is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "AaronGeissingerSTU/so101_pickplace_v1 - Hugging Face",
+      "url": "https://huggingface.co/datasets/AaronGeissingerSTU/so101_pickplace_v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-anvil2718-act-so101-pickplace",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare act_so101_pickplace&#x27;s parameters, context window, pricing and benchmarks against"
+    },
+    {
+      "title": "GitHub - lakshyabajaj14/so101-imitation-learning-pickplace: SO-101 ...",
+      "url": "https://github.com/lakshyabajaj14/so101-imitation-learning-pickplace",
+      "snippet": "ACT is commonly trained in the tens of thousands of steps range for small, single-task datasets like this one (50 episodes). Fewer steps risks the model undertraining and not converging on a good action mapping."
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lloydchristmas1231/jessivanz-claude",
+  "slug": "lloydchristmas1231-jessivanz-claude",
+  "author": "lloydchristmas1231",
+  "url": "https://huggingface.co/lloydchristmas1231/jessivanz-claude",
+  "created_at": "2026-10-01T21:06:28.000Z",
+  "updated_at": "2026-10-01T21:41:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970197486,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lloydchristmas1231/jessivanz · Hugging Face",
+      "url": "https://huggingface.co/lloydchristmas1231/jessivanz",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=11&sort=trending&search=lLo",
+      "snippet": "Explore machine learning models. Text-to-Image •Updated 2 days ago•12"
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Claude is an AI assistant by Anthropic, designed to assist with creative tasks like drafting websites, graphics, documents, and code collaboratively."
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude is a generative AI chatbot. [1] It sometimes uses artifacts, a feature introduced in June 2024 to generate and interact with code snippets and documents. [2][3] In 2025, Anthropic added a web search feature to Claude. [4][5] Claude Pro and Claude Max are subscription services for additional access to Claude models. Max provides higher usage limits at an additional cost. [6] Grouped ..."
+    }
+  ]
+}

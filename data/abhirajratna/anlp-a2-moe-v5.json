@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "abhirajratna/anlp-a2-moe-v5",
+  "slug": "abhirajratna-anlp-a2-moe-v5",
+  "author": "abhirajratna",
+  "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v5",
+  "created_at": "2026-10-01T19:18:25.000Z",
+  "updated_at": "2026-10-01T19:18:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "vi",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "pytorch",
+    "anlp-assignment",
+    "vi",
+    "ja",
+    "en",
+    "dataset:belumind/en-vi-ja-curated-500k-triplets",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50323968,
+  "parameters_human": "50.3M",
+  "storage_bytes": 201308280,
+  "storage_human": "201 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhirajratna/anlp-a2-moe-v5 · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v5",
+      "snippet": "abhirajratna / anlp-a2-moe-v5 Like 0 Translation Safetensors PyTorch belumind/en-vi-ja-curated-500k-triplets Vietnamese Japanese English mixture-of-experts anlp-assignment Model card FilesFiles and versions xet Community Copy to bucket new ANLP A2 Part 1, variant v5 Test split (24,792 triplets = 49,584 translations) Input format Loading (from a ..."
+    },
+    {
+      "title": "RaunakSeksaria/anlp-a2-moe · Hugging Face",
+      "url": "https://huggingface.co/RaunakSeksaria/anlp-a2-moe",
+      "snippet": "ANLP Assignment 2, Task 1: Mixture-of-Experts FFN ablation Decoder-only transformers (d_model 384, 8 layers) trained from scratch for vi->en and ja->en translation on belumind/en-vi-ja-curated-500k-triplets, differing only in the feed-forward layer:"
+    },
+    {
+      "title": "abhirajratna/anlp-a2-moe-v5 · Discussions - Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-moe-v5/discussions",
+      "snippet": "abhirajratna / anlp-a2-moe-v5 Like 0 Translation Safetensors PyTorch belumind/en-vi-ja-curated-500k-triplets Vietnamese Japanese English mixture-of-experts anlp-assignment Model card FilesFiles and versions xet Community Copy to bucket new New discussion New pull request All Discussions Pull requests View closed (0) Sort: Recently created"
+    },
+    {
+      "title": "Arihant25/anlp-a2-moe · Hugging Face",
+      "url": "https://huggingface.co/Arihant25/anlp-a2-moe",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orangebreak/anlp-a2-part1-moe-30M - Hugging Face",
+      "url": "https://huggingface.co/orangebreak/anlp-a2-part1-moe-30M",
+      "snippet": "Task 1 of Advanced NLP Assignment 2: five feed-forward variants of a decoder-only translation transformer (Vietnamese→English and Japanese→English), trained on an identical 30,000,128-token budget."
+    }
+  ]
+}

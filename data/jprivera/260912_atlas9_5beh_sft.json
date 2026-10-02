@@ -5,13 +5,14 @@
   "author": "jprivera",
   "url": "https://huggingface.co/jprivera/260912_atlas9_5beh_sft",
   "created_at": "2026-09-29T23:49:10.000Z",
-  "updated_at": "2026-09-30T00:38:10.000Z",
+  "updated_at": "2026-10-01T23:45:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "region:us"
   ],
   "likes": 0,
@@ -19,10 +20,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20007035215,
-  "storage_human": "20.0 GB",
+  "storage_bytes": 23320688695,
+  "storage_human": "23.3 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mattewg/pi05-xarm7-sim-cubes-detector",
+  "slug": "mattewg-pi05-xarm7-sim-cubes-detector",
+  "author": "mattewg",
+  "url": "https://huggingface.co/mattewg/pi05-xarm7-sim-cubes-detector",
+  "created_at": "2026-10-01T20:44:52.000Z",
+  "updated_at": "2026-10-01T20:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "failure-detection",
+    "pi05",
+    "openpi",
+    "xarm7",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5255137,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mattewg/xarm7_sim_three_cubes · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/mattewg/xarm7_sim_three_cubes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=xarm7",
+      "snippet": "7 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: xarm7 Clear all"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05 at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/src/qai_hub_models/models/pi05",
+      "snippet": "More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub Workbench to compile, profile, and evaluate this model."
+    },
+    {
+      "title": "Pi0.5 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/pi05",
+      "snippet": "Pi0.5 State‑of‑the‑art generalist robotic foundation model trained on vision, language, and action to enable dexterous, zero‑shot physical task execution across diverse robot platforms. Pi0.5 is a vision‑language‑action model that co‑trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open‑world generalization for long‑horizon robotic manipulation."
+    },
+    {
+      "title": "xarm7_sim_three_cubes - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/mattewg-xarm7-sim-three-cubes",
+      "snippet": "A bimanual manipulation dataset collected in simulation using the Xarm7 robot performing three-cube manipulation tasks at 50 FPS with multiple camera viewpoints."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Choi-9079/matching-ablation",
+  "slug": "choi-9079-matching-ablation",
+  "author": "Choi-9079",
+  "url": "https://huggingface.co/Choi-9079/matching-ablation",
+  "created_at": "2026-10-02T01:21:05.000Z",
+  "updated_at": "2026-10-02T01:21:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Choi-9079 (Minsu Choi) - Hugging Face",
+      "url": "https://huggingface.co/Choi-9079",
+      "snippet": "datasets1 Choi-9079/dataset_109277032_comics_pointcloud_text Updated about 8 hours ago"
+    },
+    {
+      "title": "Choi-9079 (Minsu Choi) - Hugging Face",
+      "url": "https://huggingface.co/Choi-9079/models",
+      "snippet": "User profile of Minsu Choi on Hugging Face"
+    },
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "In artificial intelligence (AI), particularly machine learning, [1] ablation is the removal of a component of an AI system. An ablation study aims to determine the contribution of a component to an AI system by removing the component, and then analyzing the resultant performance of the system."
+    },
+    {
+      "title": "Figure 4: Ablation on Different Matching Objectives. This figure...",
+      "url": "https://www.researchgate.net/figure/Ablation-on-Different-Matching-Objectives-This-figure-illustrates-the-contribution-of_fig2_397522519",
+      "snippet": "Ablation on Different Matching Objectives. This figure illustrates the contribution of uni-modal, joint-modal, and cross-modal matching objectives to overall accuracy."
+    },
+    {
+      "title": "GitHub - fostiropoulos/ablator: Model Ablation Tool-Kit for Deep ...",
+      "url": "https://github.com/fostiropoulos/ablator",
+      "snippet": "Model Ablation Tool-Kit for Deep Learning Model. Contribute to fostiropoulos/ablator development by creating an account on GitHub."
+    }
+  ]
+}

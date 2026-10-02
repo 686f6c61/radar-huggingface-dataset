@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dheer05dj/anlp-a2-p2-sophia-lr0p00025",
+  "slug": "dheer05dj-anlp-a2-p2-sophia-lr0p00025",
+  "author": "dheer05dj",
+  "url": "https://huggingface.co/dheer05dj/anlp-a2-p2-sophia-lr0p00025",
+  "created_at": "2026-10-02T01:39:27.000Z",
+  "updated_at": "2026-10-02T01:39:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41558528,
+  "parameters_human": "41.6M",
+  "storage_bytes": 166238920,
+  "storage_human": "166 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vatsavsrivatsav/anlp-a2-p2-sophia · Hugging Face",
+      "url": "https://huggingface.co/Vatsavsrivatsav/anlp-a2-p2-sophia",
+      "snippet": "Vatsavsrivatsav / anlp-a2-p2-sophia Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "A2E Free, Personal AI Videos",
+      "url": "https://a2e.ai/",
+      "snippet": "Create personal AI videos for free with image-to-video, face and head swap, lip sync, voice cloning, and AI avatars on A2E."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "irishbumfuzzle/anlp-a2-p2-sophia · Hugging Face",
+      "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p2-sophia",
+      "snippet": "ANLP A2 checkpoint: sophia Sophia-H, Hessian-diagonal (Wen et al. 2025, Algorithm 4, bonus)"
+    },
+    {
+      "title": "stable-diffusion-model-pack-2026 - GitHub",
+      "url": "https://github.com/rattrapfatigueduty4578/stable-diffusion-model-pack-2026",
+      "snippet": "Welcome to the stable-diffusion-model-pack-2026! This is your one-stop collection of 50 hand-picked Stable Diffusion models and LoRAs designed to transform your computer into a powerful AI art generator."
+    }
+  ]
+}

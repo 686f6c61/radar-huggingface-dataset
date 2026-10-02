@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/pplx-decider-v1-27b",
+  "slug": "suryatmodulus-pplx-decider-v1-27b",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/pplx-decider-v1-27b",
+  "created_at": "2026-10-01T21:19:42.000Z",
+  "updated_at": "2026-10-01T21:19:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "classification",
+    "multimodal",
+    "custom-code",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26085330160,
+  "parameters_human": "26.09B",
+  "storage_bytes": 52193403420,
+  "storage_human": "52.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "perplexity-ai/pplx-computer-qwen-3-8-27b-dflash2-20260824 · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-computer-qwen-3-8-27b-dflash2-20260824",
+      "snippet": "pplx-computer-qwen-3-8-27b-dflash2-20260824 The qwen3.8_27b RFT checkpoint (Qwen3.8-27B, arch class Qwen3_5ForConditionalGeneration, RFT/SDPO tools post-training) quantized to NVFP4 (ModelOpt mixed-precision mirroring RadixArk/Qwen3.8-27B-NVFP4 &#x27;s recipe, FP8 KV cache) with one deliberate change: an unquantized bf16 lm_head (DFlash2 refuses a quantized one — every public NVFP4 quant packs it ..."
+    },
+    {
+      "title": "Portable Computer: Local-First AI",
+      "url": "https://www.perplexity.ai/hub/products/portable-computer",
+      "snippet": "Portable Computer makes it easy to set up local AI agents that work with connected apps and local files. Kick off tasks or schedule recurring work on your device, only calling cloud models when needed."
+    },
+    {
+      "title": "Perplexity Portable Computer Review: Local AI Agent, PPLX 27B & Real ...",
+      "url": "https://blog.buildfastwithai.com/perplexity-portable-computer-review",
+      "snippet": "Perplexity Portable Computer: How Good Is a Local AI Agent With PPLX 27B? Perplexity Portable Computer is an unusual AI product because the interesting part is not only the model. It is the decision to move the agent runtime itself onto hardware the user controls. Perplexity launched it on August 25, 2026 with NVIDIA on the DGX Spark, running the orchestrator, planner, tool router, scheduler ..."
+    },
+    {
+      "title": "Local AI Agent: Perplexity Runs It All on Device | sakuttoAI",
+      "url": "https://sakutto.ai/en/articles/perplexity-portable-computer",
+      "snippet": "Perplexity Blog — Introducing Portable Computer for local-first AI Portable Computer runs on the NVIDIA DGX Spark with Qwen 3.8 27B or with PPLX 27B, a post-trained version of the Qwen model."
+    }
+  ]
+}

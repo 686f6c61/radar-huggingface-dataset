@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mlx-community/clef-4bit",
+  "slug": "mlx-community-clef-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/clef-4bit",
+  "created_at": "2026-10-01T19:50:49.000Z",
+  "updated_at": "2026-10-01T19:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "structured-output",
+    "classification",
+    "multimodal",
+    "custom-code",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Cloudflare/clef",
+    "base_model:quantized:Cloudflare/clef",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16330655712,
+  "storage_human": "16.3 GB",
+  "base_model": "Cloudflare/clef",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn comics, Cartoon porn, Hentai manga | Rule 34",
+      "url": "https://rule34.art/?lang=en",
+      "snippet": "Porn comics, Hentai manga, Cartoon and Hentai pics, GIF porn, Flash porn games, Cartoon and Hentai porn videos and more. Only …"
+    },
+    {
+      "title": "Newest - Rule34video.com",
+      "url": "https://rule34video.com/latest-updates/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest video archive of rule34 content."
+    },
+    {
+      "title": "Rule 34",
+      "url": "https://rule34.paheal.net/?locale=en_US",
+      "snippet": "Rule 34! The Original since 2007. Pokemon, Naruto, Genshin Impact, My Little Pony, high quality Video, AI etc. If it exists, there is …"
+    },
+    {
+      "title": "Rule 34 World",
+      "url": "https://rule34.world/",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Rule34.GG",
+      "url": "https://rule34.gg/",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub where you can find what ever you want!"
+    }
+  ]
+}

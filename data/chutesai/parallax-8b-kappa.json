@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "chutesai/parallax-8b-kappa",
+  "slug": "chutesai-parallax-8b-kappa",
+  "author": "chutesai",
+  "url": "https://huggingface.co/chutesai/parallax-8b-kappa",
+  "created_at": "2026-09-29T12:01:31.000Z",
+  "updated_at": "2026-10-02T03:14:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "ternary",
+    "decentralized-training",
+    "base-model",
+    "research-checkpoint",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 1600912175,
+  "parameters_human": "1.60B",
+  "storage_bytes": 238548830628,
+  "storage_human": "238.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chutes AI trains an 8B model on distributed gaming GPUs, runs it on a ...",
+      "url": "https://cryptobriefing.com/chutes-ai-parallax-gaming-gpu-model/",
+      "snippet": "Chutes AI trained an 8B model on 240 consumer GPUs across 13 countries for $6,500. It now runs on a phone CPU at 59 tokens per second."
+    },
+    {
+      "title": "Chutes | Serverless AI Compute",
+      "url": "https://chutes.ai/",
+      "snippet": "Breakthrough Serverless Compute for AI, at Scale. Powering Trillions of Tokens per Month, Chutes is the leading open-source, decentralized compute provider for deploying, scaling and running open-source models in production."
+    },
+    {
+      "title": "Parallax · live training register",
+      "url": "https://parallax.chutes.ai/",
+      "snippet": "30 independent GPU hosts · 3.9M tokens/s · 35.2B tokens trained · peak MFU 67% — a decentralized 8B mixture-of-experts pretraining run, live."
+    },
+    {
+      "title": "Last Week in Chutes | Sept 2nd to Sept 22 | Chutes (@chutes_ai) on X",
+      "url": "https://x.com/chutes_ai/article/2102458571942424881",
+      "snippet": "Parallax is training in public On 2026-09-10 Jon put the Parallax training register online at parallax.chutes.ai. It is a live dashboard for the current run, a decentralized 8B mixture-of-experts pretraining, and every number on it is read from the fleet as it trains: GPU hosts, tokens per second, tokens trained, peak MFU."
+    },
+    {
+      "title": "Chutes (@chutes_ai) on X - x.com",
+      "url": "https://x.com/chutes_ai/status/2083251455268421660",
+      "snippet": "Most synthetic training data starts with questions and hopes the model&#x27;s answers are right. Jon Durbin builds Parallax&#x27;s data backwards. Start from a golden source of truth, human-written papers and working code already used in the wild. Then the model does the part it&#x27;s Show more"
+    }
+  ]
+}

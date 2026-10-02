@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wissalws123/brain-tumor-model",
+  "slug": "wissalws123-brain-tumor-model",
+  "author": "wissalws123",
+  "url": "https://huggingface.co/wissalws123/brain-tumor-model",
+  "created_at": "2026-10-01T22:07:32.000Z",
+  "updated_at": "2026-10-01T22:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44793867,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence based techniques for brain tumor analysis: A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0933365726001120",
+      "snippet": "Timely diagnosis of brain tumor is essential to saving lives and significantly reducing treatment costs. To automate this process, different Artificial Intelligence (AI) techniques have been adopted to identify brain tumors in humans. Specifically, various deep learning algorithms have been used to segment and classify brain tumors."
+    },
+    {
+      "title": "Explainable AI in medical imaging: an interpretable and ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2025.1535478/full",
+      "snippet": "Conclusion: This study outlines an efficient and interpretable model for brain tumor classification by introducing an integrated technique using FL with GoogLeNet architecture. The proposed framework has great potential to improve brain tumor classification to make them more reliable and transparent for clinical use."
+    },
+    {
+      "title": "Issa-Al-Alali/Brain-Tumor-Detection-AI-Models - GitHub",
+      "url": "https://github.com/Issa-Al-Alali/Brain-Tumor-Detection-AI-Models",
+      "snippet": "The objective of this project is to build a robust deep learning model capable of classifying brain MRI scans into four distinct categories with high clinical accuracy. The Four Classes: Glioma Meningioma Pituitary Tumor No Tumor The research was conducted in two distinct phases: Phase 1: Iterative engineering of a custom CNN architecture from scratch. Phase 2: Advanced Transfer Learning using ..."
+    },
+    {
+      "title": "[2511.17655] Intelligent Systems in Neuroimaging: Pioneering AI ...",
+      "url": "https://arxiv.org/abs/2511.17655",
+      "snippet": "This study deliberates on the application of advanced AI techniques for brain tumor classification through MRI, wherein the training includes the present best deep learning models to enhance diagnosis accuracy and the potential of usability in clinical practice. By combining custom convolutional models with pre-trained neural network architectures, our approach exposes the utmost performance ..."
+    },
+    {
+      "title": "MRI Brain Tumor Analysis: Classification & Segmentation - GitHub",
+      "url": "https://github.com/rbsvd/Brain_Tumor_MRI_Analysis--Classification_and_Segmentation",
+      "snippet": "This repository contains two deep learning pipelines for brain tumor MRI analysis: Classification — Multi-model CNN using DenseNet-121 + InceptionV3 to classify MRI scans into Glioma, Meningioma, Pituitary tumor, and No Tumor categories. Segmentation — U-Net based tumor mask segmentation for locating tumor regions. Grad-CAM visualizations are included for explainable AI, helping clinicians ..."
+    }
+  ]
+}

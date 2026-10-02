@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jren313/starvla-pipette-aim-r1",
+  "slug": "jren313-starvla-pipette-aim-r1",
+  "author": "jren313",
+  "url": "https://huggingface.co/jren313/starvla-pipette-aim-r1",
+  "created_at": "2026-09-30T06:41:37.000Z",
+  "updated_at": "2026-10-02T00:25:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "gr00t",
+    "starvla",
+    "unitree-g1",
+    "inspire-hand",
+    "dataset:jren313/g1-pipette-2view-teleop0925-5task-eerel",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19059094086,
+  "storage_human": "19.1 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Servo Motor Testing on A Grizzly T32459 - 2\" x 42\" Knife-Making Belt ...",
+      "url": "https://www.hobby-machinist.com/threads/servo-motor-testing-on-a-grizzly-t32459-2-x-42-knife-making-belt-sander-grinder.120486/",
+      "snippet": "Sep 28, 2025 · So I decided to try a1500W 16NM Torque motor with a 6 1/8\" OD pulley. Initial tests were what I would expect from a …"
+    },
+    {
+      "title": "Help needed with Vevor MX-S716G gremlins | The Hobby-Machinist",
+      "url": "https://www.hobby-machinist.com/threads/help-needed-with-vevor-mx-s716g-gremlins.111314/",
+      "snippet": "Mar 16, 2024 · Hi all, New member here and with limited machining knowledge. Here to pick your brains. I've just purchased a Vevor …"
+    },
+    {
+      "title": "如何提升Flac3D计算速度，提升Flac3D6.0速度 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ab69b2704520c02ca7189fb2.html",
+      "snippet": "Jun 4, 2019 · 如何提升Flac3D计算速度，提升Flac3D6.0速度,我们做大模型多工况的数值模拟的时候，很多时候面临着Flac3D计算太 …"
+    },
+    {
+      "title": "wps如何编辑母版版式 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/358570f66a25af8f4624fc1b.html",
+      "snippet": "Jun 24, 2021 · wps如何编辑母版版式,w如何编辑母版版式，下面跟随小编来学习吧。"
+    },
+    {
+      "title": "Cheap Downfeed Control for HF 4x6 Bandsaw - The Hobby-Machinist",
+      "url": "https://www.hobby-machinist.com/threads/cheap-downfeed-control-for-hf-4x6-bandsaw.93176/",
+      "snippet": "Jun 2, 2021 · I've seen lots of elegant, well thought out designs for hydraulic downfeed controls for the HF 4x6. This is not one of …"
+    }
+  ]
+}

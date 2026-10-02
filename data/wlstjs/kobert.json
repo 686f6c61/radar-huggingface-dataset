@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wlstjs/kobert",
+  "slug": "wlstjs-kobert",
+  "author": "wlstjs",
+  "url": "https://huggingface.co/wlstjs/kobert",
+  "created_at": "2026-10-02T01:32:13.000Z",
+  "updated_at": "2026-10-02T01:32:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:skt/kobert-base-v1",
+    "base_model:finetune:skt/kobert-base-v1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92188418,
+  "parameters_human": "92.2M",
+  "storage_bytes": 368782329,
+  "storage_human": "369 MB",
+  "base_model": "skt/kobert-base-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "monologg/kobert · Hugging Face",
+      "url": "https://huggingface.co/monologg/kobert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Korean BERT pre-trained cased (KoBERT) - GitHub",
+      "url": "https://github.com/SKTBrain/KoBERT",
+      "snippet": "Korean BERT pre-trained cased (KoBERT). Contribute to SKTBrain/KoBERT development by creating an account on GitHub."
+    },
+    {
+      "title": "skt/kobert-base-v1 · Hugging Face",
+      "url": "https://huggingface.co/skt/kobert-base-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "KoBERT | SK텔레콤 오픈소스",
+      "url": "https://sktelecom.github.io/project/kobert/",
+      "snippet": "AI 법무/특허 검색 서비스 - 문서 검색 및 분석 기계독해 (MRC) - 마케팅 자료에서 정확한 답변 추출 문맥 기반 문서 벡터 생성 - 유사 문서 추천 (특허 출원) 일반적인 활용 사례 감성 분석 (Sentiment Analysis) 개체명 인식 (Named Entity Recognition) 문서 분류 (Text Classification)"
+    },
+    {
+      "title": "KoBERT | SK telecom Open Source",
+      "url": "https://sktelecom.github.io/en/project/kobert/",
+      "snippet": "KoBERT Korean BERT pre-trained model (Korean BERT pre-trained cased) KoBERT is a Korean-specialized BERT model developed by SK Telecom to overcome the limitations of Google&#x27;s publicly released BERT language model in processing Korean. Project Information Developer: SK Telecom T-Brain (formerly SKT AI Center) License: Apache License 2.0"
+    }
+  ]
+}

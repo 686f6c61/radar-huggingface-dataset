@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "devpotatopotato/qwen3-8b-sft-261001-bigmath-sol-fsdp-0",
+  "slug": "devpotatopotato-qwen3-8b-sft-261001-bigmath-sol-fsdp-0",
+  "author": "devpotatopotato",
+  "url": "https://huggingface.co/devpotatopotato/qwen3-8b-sft-261001-bigmath-sol-fsdp-0",
+  "created_at": "2026-10-01T23:43:18.000Z",
+  "updated_at": "2026-10-01T23:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "math",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4095367680,
+  "parameters_human": "4.10B",
+  "storage_bytes": 32774409894,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "devpotatopotato/qwen3-8b-sft-261001-bigmath-sol-fsdp-0 · Hugging Face",
+      "url": "https://huggingface.co/devpotatopotato/qwen3-8b-sft-261001-bigmath-sol-fsdp-0",
+      "snippet": "Instructions to use devpotatopotato/qwen3-8b-sft-261001-bigmath-sol-fsdp-0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "devpotatopotato/qwen3-8b-sft-260901-acereason-bigmath · Hugging Face",
+      "url": "https://huggingface.co/devpotatopotato/qwen3-8b-sft-260901-acereason-bigmath",
+      "snippet": "qwen3-8b-sft-260901-acereason-bigmath This model is a fine-tuned version of Qwen/Qwen3-8B on the acereason_keyword_details and the bigmath_keyword_details datasets."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    },
+    {
+      "title": "devpotatopotato/qwen3-8b-sft-260901-acereason-bigmath",
+      "url": "https://featherless.ai/models/devpotatopotato/qwen3-8b-sft-260901-acereason-bigmath",
+      "snippet": "Enhanced Reasoning: The model has undergone specific fine-tuning on the acereason_keyword_details dataset, aiming to improve its logical reasoning abilities. Mathematical Proficiency: Further fine-tuning on the bigmath_keyword_details dataset targets increased accuracy and capability in mathematical problem-solving and numerical tasks."
+    }
+  ]
+}

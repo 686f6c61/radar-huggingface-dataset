@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "rohithonchain/business-entity-resolution-lightgbm",
+  "slug": "rohithonchain-business-entity-resolution-lightgbm",
+  "author": "rohithonchain",
+  "url": "https://huggingface.co/rohithonchain/business-entity-resolution-lightgbm",
+  "created_at": "2026-10-01T19:50:03.000Z",
+  "updated_at": "2026-10-01T19:50:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "entity-resolution",
+    "record-linkage",
+    "entity-matching",
+    "tabular-classification",
+    "amazon-ml-challenge",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186866,
+  "storage_human": "186866 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Business entity resolution (pair matching)",
+      "dataset": "Amazon ML Challenge 2026 - Business Entity Resolution",
+      "metric": "Public leaderboard macro F0.5",
+      "value": 0.9303
+    },
+    {
+      "task": "Business entity resolution (pair matching)",
+      "dataset": "Amazon ML Challenge 2026 - Business Entity Resolution",
+      "metric": "Local held-out macro F0.5 (meta model, R10 candidates)",
+      "value": 0.9438
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon ML Challenge 2026 - Business Entity Resolution",
+      "url": "https://github.com/rohit-7620/Amazon-ML-Challenge-2026-Business-Entity-Resolution-Challenge",
+      "snippet": "3. Precision-Optimized Model (src/model.py) LightGBM with hyperparameters tuned for F_0.5: 255 leaves, depth 12 Learning rate 0.01 2000 boost rounds Early stopping at 100 rounds"
+    },
+    {
+      "title": "GitHub - jhansi-jjs/business-entity-resolution: ML pipeline for ...",
+      "url": "https://github.com/jhansi-jjs/business-entity-resolution",
+      "snippet": "Business Entity Resolution — Amazon ML Challenge 2026 Production-grade entity resolution and record linkage pipeline designed to link reference businesses from Source 1 to matching records across noisy Source 2 and Source 3 datasets without external APIs, paid cloud services, or web lookups."
+    },
+    {
+      "title": "#amazonmlchallenge #machinelearning #entityresolution #nlp #lightgbm # ...",
+      "url": "https://www.linkedin.com/posts/gandem-nitin-941b13229_amazonmlchallenge-machinelearning-entityresolution-activity-7510274997060530176-omQ8",
+      "snippet": "Replacing LightGBM with XGBoost added little, while a text model looking directly at the raw strings provided genuinely different evidence. • And perhaps the simplest lesson: always inspect the ..."
+    },
+    {
+      "title": "#amazonmlchallenge #machinelearning #entityresolution #datascience # ...",
+      "url": "https://www.linkedin.com/posts/karthik-ks-1k_amazonmlchallenge-machinelearning-entityresolution-ugcPost-7510617976920969216-xpSA",
+      "snippet": "0.9901 vs 0.9848. That&#x27;s the gap between #1 and us. 🚀 Amazon ML Challenge 2026: Business Entity Resolution. Today&#x27;s email: \"Congratulations on making it to the Top 1,000 teams.\" 🎉 Here&#x27;s the ..."
+    },
+    {
+      "title": "uday-bhatia/amazon-ml-26 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/uday-bhatia/amazon-ml-26",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

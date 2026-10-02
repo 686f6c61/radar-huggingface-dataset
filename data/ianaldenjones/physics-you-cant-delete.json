@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ianaldenjones/physics-you-cant-delete",
+  "slug": "ianaldenjones-physics-you-cant-delete",
+  "author": "ianaldenjones",
+  "url": "https://huggingface.co/ianaldenjones/physics-you-cant-delete",
+  "created_at": "2026-10-01T20:37:56.000Z",
+  "updated_at": "2026-10-01T20:38:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-prediction",
+    "world-models",
+    "intuitive-physics",
+    "interpretability",
+    "object-permanence",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 322428606,
+  "storage_human": "322 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ianaldenjones/notes-you-cant-delete · Hugging Face",
+      "url": "https://huggingface.co/ianaldenjones/notes-you-cant-delete",
+      "snippet": "Notes You Can&#x27;t Delete — model checkpoints Small from-scratch symbolic-music transformers from the study Notes You Can&#x27;t Delete: take a musical idea out of everything a model is trained on, and it rebuilds the idea anyway."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schema": 1,
+  "id": "glossAPI/apertus-8b-greek-cpt",
+  "slug": "glossapi-apertus-8b-greek-cpt",
+  "author": "glossAPI",
+  "url": "https://huggingface.co/glossAPI/apertus-8b-greek-cpt",
+  "created_at": "2026-10-01T21:04:30.000Z",
+  "updated_at": "2026-10-01T21:38:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "transformers",
+    "apertus",
+    "greek",
+    "glossapi",
+    "continued-pretraining",
+    "text-generation",
+    "el",
+    "dataset:glossAPI/apertus-8b-greek-cpt-modern-greek-train",
+    "base_model:swiss-ai/Apertus-8B-2509",
+    "base_model:finetune:swiss-ai/Apertus-8B-2509",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "swiss-ai/Apertus-8B-2509",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "GreekMMLU (decontaminated, n=16,159)",
+      "metric": null,
+      "value": 54.85
+    },
+    {
+      "task": null,
+      "dataset": "ASEP MCQA (strict contamination-filtered)",
+      "metric": null,
+      "value": 55.08
+    },
+    {
+      "task": null,
+      "dataset": "DemosQA (strict contamination-filtered)",
+      "metric": null,
+      "value": 46.58
+    },
+    {
+      "task": null,
+      "dataset": "GPCR (strict contamination-filtered)",
+      "metric": null,
+      "value": 62.89
+    },
+    {
+      "task": null,
+      "dataset": "Medical MCQA (strict contamination-filtered)",
+      "metric": null,
+      "value": 38.42
+    },
+    {
+      "task": null,
+      "dataset": "OYXOY metaphor (strict contamination-filtered)",
+      "metric": null,
+      "value": 33.89
+    },
+    {
+      "task": null,
+      "dataset": "OYXOY NLI (strict contamination-filtered)",
+      "metric": null,
+      "value": 38.73
+    },
+    {
+      "task": null,
+      "dataset": "OYXOY WiC (strict contamination-filtered)",
+      "metric": null,
+      "value": 33.64
+    },
+    {
+      "task": null,
+      "dataset": "OYXOY WSD (strict contamination-filtered)",
+      "metric": null,
+      "value": 38.06
+    },
+    {
+      "task": null,
+      "dataset": "Apertus Table-14 retention macro",
+      "metric": null,
+      "value": 62.95
+    }
+  ],
+  "sources": [
+    {
+      "title": "train-apertus-with-glossapi/subprojects/03_apertus_extension_and ...",
+      "url": "https://github.com/fffoivos/train-apertus-with-glossapi/blob/main/subprojects/03_apertus_extension_and_embedding_adaptation/CPT_MASTER_20260526.md",
+      "snippet": "Continued pretraining of Apertus-8B for Greek with the GlossAPI corpus — the work phase by phase: cleaning, tokenizer extension, embedding init, CPT, and parameter sweeps. - fffoivos/train-apertus-..."
+    },
+    {
+      "title": "fffoivos/train-apertus-with-glossapi - GitHub",
+      "url": "https://github.com/fffoivos/train-apertus-with-glossapi",
+      "snippet": "Continued pretraining of Apertus-8B for Greek with the GlossAPI corpus — the work phase by phase: cleaning, tokenizer extension, embedding init, CPT, and parameter sweeps. - fffoivos/train-apertus-..."
+    },
+    {
+      "title": "GlossAPI and Apertus: Building Open Greek Language Infrastructure...",
+      "url": "https://openreview.net/forum?id=ZblDjB0u2K",
+      "snippet": "Greek remains underrepresented in the data and model infrastructures that support modern NLP and large language models. GlossAPI addresses this gap by developing an open-source infrastructure for creating, processing, documenting and publishing AI-ready Greek datasets."
+    },
+    {
+      "title": "apertus-8b-greek-cpt-modern-greek-train - Hugging Face",
+      "url": "https://huggingface.co/datasets/fffoivos/apertus-8b-greek-cpt-modern-greek-train",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GlossAPI and Apertus: Building Open Greek Language ... - OpenReview",
+      "url": "https://openreview.net/pdf?id=ZblDjB0u2K",
+      "snippet": "The paper further proposes a workflow for integrating GlossAPI with Apertus, the fully open, transparent and multilingual language model family developed by ETH Zurich, EPFL and CSCS. The approved collaboration with the Swiss AI Initiative, \"Enhancing multilin- gual foundation models through lexicographic grounding: advancing GlossAPI for Apertus Greek language integration,\" provides 50,000 ..."
+    }
+  ]
+}

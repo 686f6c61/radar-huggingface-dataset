@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DiogenesChen122/Dr.Sparse-Granite42-8B-SFT-luna10-v4b",
+  "slug": "diogeneschen122-dr-sparse-granite42-8b-sft-luna10-v4b",
+  "author": "DiogenesChen122",
+  "url": "https://huggingface.co/DiogenesChen122/Dr.Sparse-Granite42-8B-SFT-luna10-v4b",
+  "created_at": "2026-10-01T19:38:06.000Z",
+  "updated_at": "2026-10-01T19:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granite",
+    "cuda",
+    "kernel-generation",
+    "sparse-linear-algebra",
+    "spgemm",
+    "lora",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:adapter:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 17979142064,
+  "storage_human": "18.0 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr.Sparse-GPT56Luna-eval-b200-rl562-spgemm - Hugging Face",
+      "url": "https://huggingface.co/datasets/DiogenesChen122/Dr.Sparse-GPT56Luna-eval-b200-rl562-spgemm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DiogenesChen122/Dr.Sparse-GPT56Luna-eval-b200-rl562-spgemm at main",
+      "url": "https://huggingface.co/datasets/DiogenesChen122/Dr.Sparse-GPT56Luna-eval-b200-rl562-spgemm/tree/main",
+      "snippet": "sparse-matrix spgemm kernel-optimization dr-sparse License: cc-by-4. Dataset card FilesFiles and versions xet Community main Dr.Sparse-GPT56Luna-eval-b200-rl562-spgemm 1.35 GB 1 contributor History:2 commits DiogenesChen122 GPT-5.6 Luna SpGEMM eval on 562 matrices (partial: explore 1686/1686, exploit 373/1124) 16f199b verifiedabout 3 hours ago ..."
+    },
+    {
+      "title": "Granite 4.2 8B: IBM&#x27;s Apache-2.0 Reasoning Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/granite-4-2-8b/",
+      "snippet": "Granite 4.2 8B is IBM&#x27;s Apache-2.0 dense reasoning model, released 25 Aug 2026 with a switchable thinking mode, 128K context and 47.67 on SWE-bench Verified."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "IBM details how Granite 4.2 was built: dense 3B, 8B and 30B models with ...",
+      "url": "https://www.square1ai.com/newsroom/2026-08-25-ibm-details-how-granite-42-was-built-dense-3b-8b-and-30b-models-with-agentic-rl",
+      "snippet": "IBM has published a detailed account of how its Granite 4.2 language models were built, in a post on the Hugging Face blog dated 25 August 2026. The release comprises three dense, decoder-only models at 3, 8 and 30 billion parameters, licensed under Apache 2.0 and available on Hugging Face and GitHub, with quantised variants in FP8, FP4 and GGUF formats."
+    }
+  ]
+}

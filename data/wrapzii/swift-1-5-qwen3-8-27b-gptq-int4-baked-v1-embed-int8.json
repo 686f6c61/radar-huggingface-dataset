@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8",
+  "slug": "wrapzii-swift-1-5-qwen3-8-27b-gptq-int4-baked-v1-embed-int8",
+  "author": "Wrapzii",
+  "url": "https://huggingface.co/Wrapzii/Swift-1.5-Qwen3.8-27b-GPTQ-Int4-baked-v1-embed-int8",
+  "created_at": "2026-10-01T20:48:40.000Z",
+  "updated_at": "2026-10-01T20:50:27.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen3_8",
+    "gptq",
+    "int4",
+    "int8-embedding",
+    "intel-xpu",
+    "mtp",
+    "quantized",
+    "reasoning",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 18333434240,
+  "storage_human": "18.3 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b-W4A16-AutoRound",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift 1.5 Qwen3.8-27B | UkisAI",
+      "url": "https://ukisai.com/swift-1-5-27b",
+      "snippet": "The results below compare Qwen3.8-27B, the foundation base model, Swift 1.0, the first UkisAI adaptation, and Swift 1.5. All three use the same saved evaluation protocols, and every score is a final five-repeat aggregate."
+    },
+    {
+      "title": "ukisai/Swift-1.5-Qwen3.8-27b-INT4 · Hugging Face",
+      "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b-INT4",
+      "snippet": "The external results below compare Qwen3.8-27B, the foundation base model, and Swift 1.5. Both models use the same saved evaluation protocols, and all scores are reported as final aggregate percentages."
+    },
+    {
+      "title": "Models - UkisAI",
+      "url": "https://ukisai.com/models",
+      "snippet": "Swift 1.5 Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B. It uses 58.5% fewer thinking tokens while scoring 0.35% higher than the base, for a 9.18× speed-up on several tasks."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-Uncensored-W4A16-AutoRound - Hugging Face",
+      "url": "https://huggingface.co/ultimaterex/Swift-1.5-Qwen3.8-27B-Uncensored-W4A16-AutoRound",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Swift-1.5-Qwen3.8-27B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/ukisai/Swift-1.5-Qwen3.8-27b",
+      "snippet": "Overview Swift 1.5 Qwen3.8-27B is a 27 billion parameter model developed by UkisAI, building upon the Qwen3.8-27B architecture. It significantly improves reasoning efficiency, reducing \"thinking tokens\" by 58.5% while slightly increasing overall accuracy by 0.35% compared to the base model, leading to a 1.95x speed-up. This efficiency is achieved through scaled-up post-training (RL and OPD ..."
+    }
+  ]
+}

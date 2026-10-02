@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ethan-martinez/paper-document-ai",
+  "slug": "ethan-martinez-paper-document-ai",
+  "author": "ethan-martinez",
+  "url": "https://huggingface.co/ethan-martinez/paper-document-ai",
+  "created_at": "2026-10-02T00:10:25.000Z",
+  "updated_at": "2026-10-02T00:10:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Ethan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/ethan/prenom-2115",
+      "snippet": "Prénom Ethan : signification, origine, caractère, personnalité, Saint Ethan, popularité, avis, classement... Toutes les infos sur le …"
+    },
+    {
+      "title": "Prénom Ethan : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/ethan-40213",
+      "snippet": "Tout ce que vous devez savoir sur le prénom Ethan est sur Parents.fr Origine, saint, étymologie, signification, caractère... On vous …"
+    },
+    {
+      "title": "Le prénom Ethan: Signification, origine, personnalité",
+      "url": "https://www.prenoms.com/prenom-garcon/ethan-7317",
+      "snippet": "Oct 9, 2020 · Tout sur le prénom Ethan : découvrez son origine, combien de Ethan sont nés en France chaque année, ou qui sont …"
+    },
+    {
+      "title": "Ethan (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ethan_(given_name)",
+      "snippet": "Ethan or Eytan[a] is a male given name of Hebrew origin that means \"firm, enduring, strong and long-lived\". The name Ethan …"
+    },
+    {
+      "title": "Ethan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ethan",
+      "snippet": "Le premier Ethan rencontré dans la Bible est l’un des petits-fils de Juda, lui-même fils de Jacob (vers 1600 av. J.-C.). Il est …"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Ballsworthy/flux-belle-princess",
+  "slug": "ballsworthy-flux-belle-princess",
+  "author": "Ballsworthy",
+  "url": "https://huggingface.co/Ballsworthy/flux-belle-princess",
+  "created_at": "2026-10-01T22:10:24.000Z",
+  "updated_at": "2026-10-01T22:11:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154823117,
+  "storage_human": "155 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "British Vogue - March 2023 - British Vogue | PDF - Scribd",
+      "url": "https://www.scribd.com/document/651190071/British-Vogue-March-2023-British-Vogue",
+      "snippet": "It features a cover story interview with Rihanna where she discusses her career, relationship and motherhood. Uploaded by. jessy x. AI-enhanced description."
+    }
+  ]
+}

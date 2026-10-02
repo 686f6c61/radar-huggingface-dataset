@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "siddharthmu/generation7",
+  "slug": "siddharthmu-generation7",
+  "author": "siddharthmu",
+  "url": "https://huggingface.co/siddharthmu/generation7",
+  "created_at": "2026-10-02T01:36:50.000Z",
+  "updated_at": "2026-10-02T01:36:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siddharthmu/dino-generation · Hugging Face",
+      "url": "https://huggingface.co/siddharthmu/dino-generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "siddharthmu (विक्रम सिंह) - Hugging Face",
+      "url": "https://huggingface.co/siddharthmu/models",
+      "snippet": "AI & ML interests datasets, natural language understanding, tensorflow, summarization"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Midjourney V7 AI Model Generator | Fxroom",
+      "url": "https://fxroom.ai/models/midjourney-v7",
+      "snippet": "Midjourney V7 is a groundbreaking image generation model released on April 3, 2025 [1]. As a major milestone in generative AI, V7 introduces major enhancements in prompt comprehension, anatomical rendering (specifically hands, limbs, and complex posture), and photorealism [1][2]. Crucially, V7 introduced game-changing production workflows, including the ultra-fast Draft Mode, default Model ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 783 AI models across 645 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

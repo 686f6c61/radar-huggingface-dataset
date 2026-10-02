@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Manajit/SynplannerChemformer",
+  "slug": "manajit-synplannerchemformer",
+  "author": "Manajit",
+  "url": "https://huggingface.co/Manajit/SynplannerChemformer",
+  "created_at": "2026-10-02T01:14:50.000Z",
+  "updated_at": "2026-10-02T01:24:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 537388666,
+  "storage_human": "537 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - wenhao-gao/synformer",
+      "url": "https://github.com/wenhao-gao/synformer",
+      "snippet": "SynFormer SynFormer is a generative modeling framework designed to efficiently explore and navigate synthesizable chemical space. Please see the model detail in our paper."
+    },
+    {
+      "title": "Generative AI for navigating synthesizable chemical space",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2415665122",
+      "snippet": "To train the models, we uniformly sample synthetic pathways from the synthesizable chemical space simulated from the reaction templates and building block list as training data. Detailed descriptions of the model architectures, training protocols, and hyperparameter settings are provided in Materials and Methods and SI Appendix."
+    },
+    {
+      "title": "GitHub - Laboratoire-de-Chemoinformatique/SynPlanner: Computer-aided ...",
+      "url": "https://github.com/Laboratoire-de-Chemoinformatique/SynPlanner",
+      "snippet": "Using SynPlanner with an AI agent If you use Claude Code, Codex, Cursor, Copilot, or another agent that supports the Agent Skills format, this repository ships a skill that teaches the agent how to use SynPlanner correctly — which API to reach for, how chython differs from RDKit, and what to do by default."
+    },
+    {
+      "title": "Generative AI for navigating synthesizable chemical space - PNAS",
+      "url": "https://www.pnas.org/doi/pdf/10.1073/pnas.2415665122",
+      "snippet": "generative AI | molecular design | synthetic accessibility | deep learning The discovery of novel functional molecules is a central challenge in chemical science and engineering and is crucial for addressing key societal and technological challenges, including those related to healthcare (1-3), energy (4, 5), and sustainability (6-8)."
+    },
+    {
+      "title": "[2410.03494] Generative Artificial Intelligence for Navigating ...",
+      "url": "https://arxiv.org/abs/2410.03494",
+      "snippet": "We introduce SynFormer, a generative modeling framework designed to efficiently explore and navigate synthesizable chemical space. Unlike traditional molecular generation approaches, we generate synthetic pathways for molecules to ensure that designs are synthetically tractable. By incorporating a scalable transformer architecture and a diffusion module for building block selection, SynFormer ..."
+    }
+  ]
+}

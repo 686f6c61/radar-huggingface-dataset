@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "onnx-community/feather-0.2b-zh-onnx-int8",
+  "slug": "onnx-community-feather-0-2b-zh-onnx-int8",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/feather-0.2b-zh-onnx-int8",
+  "created_at": "2026-10-01T22:16:59.000Z",
+  "updated_at": "2026-10-01T22:17:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "asr",
+    "speech-recognition",
+    "streaming",
+    "conformer",
+    "rnn-t",
+    "transducer",
+    "onnxruntime",
+    "int8",
+    "quantization",
+    "cpu",
+    "chinese",
+    "feather",
+    "automatic-speech-recognition",
+    "zh",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 431731575,
+  "storage_human": "432 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Mandarin Chinese)",
+      "metric": "CER",
+      "value": 17.45
+    }
+  ],
+  "sources": [
+    {
+      "title": "onnx-community/feather-0.2b-de-onnx-int8 · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/feather-0.2b-de-onnx-int8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · onnx-community/feather-0.2b-de-onnx-int8 at main",
+      "url": "https://huggingface.co/onnx-community/feather-0.2b-de-onnx-int8/blob/main/README.md",
+      "snippet": "Feather 0.2B — German ONNX (INT8) Feather is Microsoft&#x27;s newest family of mini speech-recognition models, designed for fast on-device transcription with a tiny CPU footprint. This checkpoint — feather-.2b-onnx-int8 — is the German-specialised member of the family: a streaming Conformer-Transducer (RNN-T) of about 200 M parameters, quantised to INT8 weight-only and packaged for ..."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning interoperability",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their project evolves. ONNX provides an open source format for AI models, both deep learning and traditional ML. It defines an extensible computation graph model, as well as definitions of built-in operators and standard data types."
+    }
+  ]
+}

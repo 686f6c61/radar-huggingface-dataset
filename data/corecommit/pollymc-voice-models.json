@@ -5,7 +5,7 @@
   "author": "corecommit",
   "url": "https://huggingface.co/corecommit/PollyMC-Voice-Models",
   "created_at": "2026-10-01T18:11:00.000Z",
-  "updated_at": "2026-10-01T18:18:25.000Z",
+  "updated_at": "2026-10-01T18:57:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 135391039,
-  "storage_human": "135 MB",
+  "storage_bytes": 148016872,
+  "storage_human": "148 MB",
   "base_model": null,
   "formats": [
     "onnx"

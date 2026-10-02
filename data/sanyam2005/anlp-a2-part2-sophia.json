@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sanyam2005/anlp-a2-part2-sophia",
+  "slug": "sanyam2005-anlp-a2-part2-sophia",
+  "author": "sanyam2005",
+  "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-sophia",
+  "created_at": "2026-10-01T23:00:05.000Z",
+  "updated_at": "2026-10-02T01:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "optimizers",
+    "anlp-assignment-2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27269632,
+  "parameters_human": "27.3M",
+  "storage_bytes": 218166576,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vatsavsrivatsav/anlp-a2-p2-sophia · Hugging Face",
+      "url": "https://huggingface.co/Vatsavsrivatsav/anlp-a2-p2-sophia",
+      "snippet": "p2_sophia ANLP Assignment 2, Part 2: dense decoder-only LM (Part 1 variant-1 architecture) pretrained for 1x browndw/human-ai-parallel-corpus with optimizer sophia ..."
+    },
+    {
+      "title": "irishbumfuzzle/anlp-a2-p2-sophia · Hugging Face",
+      "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p2-sophia",
+      "snippet": "Part 2 of the Advanced NLP Assignment 2 (Monsoon 2026). Task: next-token pretraining on HAP-E (chunk_1 + chunk_2 human text) Token budget: 9,715,712 tokens (1x dataset, HAP-E next-token prediction, batch 32) Model: 35.7M-parameter decoder-only transformer (D=512, 6 layers, 8 heads, vocab 32768, tied embedding), final checkpoint (end of token ..."
+    },
+    {
+      "title": "Ai2 Asta",
+      "url": "https://asta.allen.ai/",
+      "snippet": "A scholarly research assistant that combines literature understanding and data-driven discovery. Asta uses 108M+ abstracts and 12M+ full-text papers to find, summarize, and analyze scientific evidence. A project from Ai2."
+    },
+    {
+      "title": "PDF anlp-22-agents - junjiehu.github.io",
+      "url": "https://junjiehu.github.io/cs769-fall25/assets/pdf/anlp-22-agents.pdf",
+      "snippet": "What&#x27;s fundamentally different now? Contemporary AI agents, with integrated LLM(s), can use language as a vehicle for reasoning and communication Instruction following, in-context learning, output customization Reasoning (for better acting): state inferences, self-reflection, replanning, etc."
+    },
+    {
+      "title": "PDF anlp-s2026-02-representations",
+      "url": "https://cmu-l3.github.io/anlp-spring2026/static_files/anlp-s2026-02-representations.pdf",
+      "snippet": "Non-linearities allow the neural network to model more complex patterns Without activation functions, stacking matrices collapses to a linear transformation"
+    }
+  ]
+}

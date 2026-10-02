@@ -5,10 +5,10 @@
   "author": "Atomic-Germ",
   "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-27B-NPU2",
   "created_at": "2026-09-30T18:36:12.000Z",
-  "updated_at": "2026-09-30T19:57:40.000Z",
+  "updated_at": "2026-10-01T19:15:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": "transformers",
   "languages": [],
   "tags": [
@@ -27,17 +27,16 @@
     "openflowlm",
     "npu2",
     "q4nx",
-    "text-generation",
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:quantized:Qwen/Qwen3.8-27B"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 215,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 20090118528,
-  "storage_human": "20.1 GB",
+  "storage_bytes": 33014150128,
+  "storage_human": "33.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

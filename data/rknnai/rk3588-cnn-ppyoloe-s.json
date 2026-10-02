@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RKNNAI/RK3588-CNN-ppyoloe-s",
+  "slug": "rknnai-rk3588-cnn-ppyoloe-s",
+  "author": "RKNNAI",
+  "url": "https://huggingface.co/RKNNAI/RK3588-CNN-ppyoloe-s",
+  "created_at": "2026-10-02T01:19:07.000Z",
+  "updated_at": "2026-10-02T01:19:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9713794,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - airockchip/rknn_model_zoo",
+      "url": "https://github.com/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model. Support RK3562, RK3566, RK3568, RK3576, RK3588 , RV1126B platforms. Limited support RV1103, RV1106 Support RV1109, RV1126, RK1808 platforms."
+    },
+    {
+      "title": "rk3588-example/examples/ppyoloe/README.md at main · exyexin ... - GitHub",
+      "url": "https://github.com/exyexin/rk3588-example/blob/main/examples/ppyoloe/README.md",
+      "snippet": "6.1 Compile and Build Please refer to the Compilation_Environment_Setup_Guide document to setup a cross-compilation environment and complete the compilation of C/C++ Demo. Note: Please replace the model name with ppyoloe."
+    },
+    {
+      "title": "How to Run CNN Models on RK3588 | reComputer AI Lab",
+      "url": "https://sensecraft.seeed.cc/ai-lab/en/tools/rk/rk3588-cnn-rknn2-deploy",
+      "snippet": "Back / reComputer RK Series How to Run CNN Models on RK3588 Convert YOLO11n on an Ubuntu PC, deploy it to RK3588 over SSH/SCP, and verify C++ and Python inference on its built-in NPU."
+    },
+    {
+      "title": "airockchip/rknn_model_zoo: RKNN Model Zoo is developed based on the ...",
+      "url": "https://codeberg.org/airockchip/rknn_model_zoo",
+      "snippet": "RKNN Model Zoo is developed based on the RKNPU SDK toolchain and provides deployment examples for current mainstream algorithms. Include the process of exporting the RKNN model and using Python API and CAPI to infer the RKNN model."
+    },
+    {
+      "title": "RKNN Models for Rockchip NPU | kaylorchen/ai_framework_demo | DeepWiki",
+      "url": "https://deepwiki.com/kaylorchen/ai_framework_demo/6.1-rknn-models-for-rockchip-npu",
+      "snippet": "The framework automatically detects RKNN models based on the .rknn file extension and routes them to the appropriate Rockchip backend implementation. Sources: System architecture diagrams, AI backend selection pipeline Backend Integration Architecture The RKNN models integrate with the framework through the ai_instance_rk3588 backend, which implements the AiInstance interface for Rockchip NPU ..."
+    }
+  ]
+}

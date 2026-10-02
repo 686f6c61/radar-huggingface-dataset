@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "SreeVinayR/CS546_HW1_Sentence_Transformers",
+  "slug": "sreevinayr-cs546_hw1_sentence_transformers",
+  "author": "SreeVinayR",
+  "url": "https://huggingface.co/SreeVinayR/CS546_HW1_Sentence_Transformers",
+  "created_at": "2026-10-01T21:40:35.000Z",
+  "updated_at": "2026-10-01T22:24:55.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SentenceTransformers Documentation — Sentence Transformers documentation",
+      "url": "https://www.sbert.net/",
+      "snippet": "Tip Sentence Transformers v6.0 recently released, introducing the MultiVectorEncoder, a fourth model family for ColBERT-style late-interaction retrieval using token-level (multi-vector) embeddings, covering both text retrieval and ColPali-style visual document retrieval. Existing ColBERT, PyLate, and ColPali models load out of the box, with full training and evaluation support. Read the Multi ..."
+    },
+    {
+      "title": "Sentence Transformers Documentation — Documentation (Free) | THE D*AI ...",
+      "url": "https://www.beri.net/learning/sentence-transformers-docs",
+      "snippet": "Official documentation for Sentence Transformers (SBERT), the Python library for using and training embedding models, cross-encoder rerankers and sparse…"
+    },
+    {
+      "title": "rocky013/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/rocky013/hw1-hc3-detector",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sentence-transformers · PyPI",
+      "url": "https://pypi.org/project/sentence-transformers/",
+      "snippet": "Sentence Transformers: Embeddings, Retrieval, and Reranking This framework provides an easy method to compute embeddings for accessing, using, and training state-of-the-art embedding and reranker models."
+    },
+    {
+      "title": "SiqiYang/hw1-hc3-detector · Hugging Face",
+      "url": "https://huggingface.co/SiqiYang/hw1-hc3-detector",
+      "snippet": "SiqiYang / hw1-hc3-detector Like 0 Text Classification Transformers Safetensors Hello-SimpleAI/HC3 English bert text-embeddings-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    }
+  ]
+}

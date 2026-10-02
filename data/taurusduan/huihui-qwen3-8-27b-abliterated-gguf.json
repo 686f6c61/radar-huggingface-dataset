@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "slug": "taurusduan-huihui-qwen3-8-27b-abliterated-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Huihui-Qwen3.8-27B-abliterated-GGUF",
+  "created_at": "2026-10-02T01:28:21.000Z",
+  "updated_at": "2026-10-02T01:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "unsloth",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 783552900160,
+  "storage_human": "783.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pencarian Film - JAVINDO",
+      "url": "https://javindo.dev/search",
+      "snippet": "Cari film favorit Anda. Streaming gratis dengan subtitle Indonesia."
+    },
+    {
+      "title": "javindo.co.id",
+      "url": "https://javindo.co.id/",
+      "snippet": ""
+    },
+    {
+      "title": "Javindo - docs.verbix.com",
+      "url": "https://docs.verbix.com/Languages/DutchCreoleJavindo",
+      "snippet": "Sep 27, 2024 · Introduction Javindo, also known by the pejorative name Krontjong, was a Dutch-based creole language spoken on …"
+    },
+    {
+      "title": "Javindo - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Javindo",
+      "snippet": "Javindo, also known by the pejorative name Krontjong, is a Dutch-based creole language spoken on Java, Indonesia, such as …"
+    },
+    {
+      "title": "JAVINDO (@javind0) • Instagram photos and videos",
+      "url": "https://www.instagram.com/javind0/",
+      "snippet": "5,995 Followers, 14 Following, 18 Posts - JAVINDO (@javind0) on Instagram: \"\""
+    }
+  ]
+}

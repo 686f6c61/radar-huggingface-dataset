@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "someguystrainingmodels/decision-model-large",
+  "slug": "someguystrainingmodels-decision-model-large",
+  "author": "someguystrainingmodels",
+  "url": "https://huggingface.co/someguystrainingmodels/decision-model-large",
+  "created_at": "2026-10-01T19:37:47.000Z",
+  "updated_at": "2026-10-01T19:52:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "safetensors",
+    "qwen4_exp",
+    "decision-model",
+    "jev",
+    "pointer-head",
+    "sglang",
+    "qwen4-exp",
+    "moe",
+    "base_model:Qwen/Qwen3.8-Flash-Next-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next-FP8",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176944555171,
+  "parameters_human": "176.94B",
+  "storage_bytes": 181958331232,
+  "storage_human": "182.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model September 2026 Science Learn more"
+    },
+    {
+      "title": "How to Train an AI Model: Beginner Guide (2026) - ultralytics.com",
+      "url": "https://www.ultralytics.com/blog/a-quick-guide-for-beginners-on-how-to-train-an-ai-model",
+      "snippet": "Learn how to train an AI model step-by-step with this quick guide for beginners. Discover essential workflows, datasets, and tools to get started."
+    },
+    {
+      "title": "model-training · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/model-training",
+      "snippet": "🚀 Awesome System for Machine Learning ⚡️ AI System Papers and Industry Practice. ⚡️ System for Machine Learning, LLM (Large Language Model), GenAI (Generative AI). 🍻 OSDI, NSDI, SIGCOMM, SoCC, MLSys, etc. 🗃️ Llama3, Mistral, etc. 🧑‍💻 Video Tutorials."
+    },
+    {
+      "title": "Best LLM Leaderboard 2026 | AI Model Rankings, Benchmarks & Pricing",
+      "url": "https://onyx.app/llm-leaderboard",
+      "snippet": "The definitive LLM leaderboard — ranking the best AI models including Claude, GPT, Gemini, DeepSeek, Llama, and more across coding, reasoning, math, agentic, and chat benchmarks. Compare LLM rankings, tier lists, and pricing."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    }
+  ]
+}

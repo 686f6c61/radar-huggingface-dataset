@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pakiino/sketch2stl-recognizer",
+  "slug": "pakiino-sketch2stl-recognizer",
+  "author": "pakiino",
+  "url": "https://huggingface.co/pakiino/sketch2stl-recognizer",
+  "created_at": "2026-10-01T22:02:19.000Z",
+  "updated_at": "2026-10-02T01:02:05.000Z",
+  "license": "fusion-360-gallery-dataset-license",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "sketch",
+    "cad",
+    "stroke-recognition",
+    "tabular-classification",
+    "dataset:pakiino/sketch2stl-datasets",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2215120,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pakiino/sketch2stl-datasets · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/pakiino/sketch2stl-datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pakiino/sketch2stl-datasets at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/pakiino/sketch2stl-datasets/tree/main",
+      "snippet": "Datasets: pakiino / sketch2stl-datasets Like 0 Tasks: Image Classification Size: 10K<n<100K Tags: sketch cad fusion-360 hand-drawn human-in-the-loop License: fusion-360-gallery-dataset-license Dataset card Data Studio FilesFiles and versions xet Community main sketch2stl-datasets 64.9 MB 1 contributor History:3 commits pakiino Upload README.md 07ab1c7 verifiedabout 9 hours ago sketch2stl ..."
+    },
+    {
+      "title": "Makerful - Every AI 3D Model in One Studio | Printable in Minutes",
+      "url": "https://www.makerful.ai/",
+      "snippet": "AI 3D · 2D · CAD - all the top models, one studio Every AI 3D model. One place. Printable in minutes. Describe it, snap a photo, or sketch it. Makerful runs all the top AI models - plus a real CAD agent - to turn your idea into a clean, print-ready file. No CAD skills needed."
+    },
+    {
+      "title": "AI 3D Printing Model Generator — Free Printable STL",
+      "url": "https://kenerateai.com/ai-3d-printing-model-generator",
+      "snippet": "AI 3D Print Model Generator & AI Generated STL Files — Free Downloadable STL Generator Kenerate AI is a free AI tool that can generate 3D downloadable STL files. Functioning as a high-speed AI STL file generator and AI 3D print model generator, our platform converts text prompts and 2D photos into watertight AI generated STL models ready for Cura, Bambu Studio, and PrusaSlicer."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

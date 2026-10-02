@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mlx-community/clef-flash-4bit",
+  "slug": "mlx-community-clef-flash-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/clef-flash-4bit",
+  "created_at": "2026-10-01T19:50:22.000Z",
+  "updated_at": "2026-10-01T19:50:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "structured-output",
+    "classification",
+    "multimodal",
+    "custom-code",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 6213746915,
+  "storage_human": "6.2 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/Step-3.7-Flash-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Step-3.7-Flash-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community (MLX Community) - Hugging Face",
+      "url": "https://huggingface.co/mlx-community",
+      "snippet": "Org profile for MLX Community on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Home — MLX COMMUNITY",
+      "url": "https://mlxcommunity.com/",
+      "snippet": "Opensource outpost for Apple MLX: threads on LLMs, VLMs, audio, quantization, fine-tuning, and tooling."
+    },
+    {
+      "title": "mlx-community/GLM-4.7-Flash-4bit: open-weights language model for text ...",
+      "url": "https://huggingbay.xyz/artifact/hf-model-mlx-community-glm-4-7-flash-4bit",
+      "snippet": "Task: text generation. Library: mlx. Languages: en, zh. Base model: zai-org/GLM-4.7-Flash. Popularity signal at import: 8,027 downloads and 69 likes. Files are listed for discovery and verification context; Hugging Bay serves local downloads only after explicit mirror review, scanning, hashing, and signing."
+    },
+    {
+      "title": "clef-flash - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef-flash/",
+      "snippet": "Clef-flash is a fast 9B multimodal decision model that turns a state and a schema of typed questions into decisions. It reads the state as text, JSON, images, or video, and returns a probability for every allowed option of every question."
+    }
+  ]
+}

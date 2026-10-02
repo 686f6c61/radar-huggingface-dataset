@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Zoey6655/Qwen3-32B-English-Jacobian-Lens",
+  "slug": "zoey6655-qwen3-32b-english-jacobian-lens",
+  "author": "Zoey6655",
+  "url": "https://huggingface.co/Zoey6655/Qwen3-32B-English-Jacobian-Lens",
+  "created_at": "2026-10-01T22:20:12.000Z",
+  "updated_at": "2026-10-01T22:23:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "jacobian-lens",
+    "interpretability",
+    "qwen3",
+    "research",
+    "en",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:finetune:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3303409994,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neuronpedia/jacobian-lens at main - Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens/tree/main/qwen3-32b",
+      "snippet": "/ jacobian-lens like 94 Follow neuronpedia 42 jacobian_lens License:mit Model card FilesFiles and versions xet Community 2 Copy to bucket new main jacobian-lens /qwen3-32b 6.61 GB Ctrl+K Ctrl+K 3 contributors History:1 commit Neuronpedia Upload folder using huggingface_hub 4f30bb8 verifiedabout 1 month ago jlensUpload folder using huggingface ..."
+    },
+    {
+      "title": "neuronpedia/jacobian-lens at main - Hugging Face",
+      "url": "https://huggingface.co/neuronpedia/jacobian-lens/tree/main/qwen3-32b/jlens",
+      "snippet": "45 jacobian_lens License:mit Model card FilesFiles and versions xet Community 3 Copy to bucket new main jacobian-lens / qwen3-32b /jlens 6.61 GB Ctrl+K Ctrl+K 3 contributors History:1 commit Neuronpedia Upload folder using huggingface_hub 4f30bb8 verifiedabout 2 months ago Salesforce-wikitextUpload folder using huggingface_hubabout 2 months ago ..."
+    },
+    {
+      "title": "GitHub - anthropics/jacobian-lens: Companion code for the global ...",
+      "url": "https://github.com/anthropics/jacobian-lens",
+      "snippet": "The Jacobian lens reads out what an internal activation is disposed to make the model say. It linearly transports a residual-stream vector at any layer and position into the final-layer basis, then decodes it with the model&#x27;s own unembedding into a ranked list of vocabulary tokens."
+    },
+    {
+      "title": "Qwen3-32B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-32b-qwen",
+      "snippet": "Qwen3-32B is a 32.8-billion-parameter causal language model from Qwen designed for both reasoning-intensive and general-purpose dialogue tasks. The model..."
+    },
+    {
+      "title": "qwen3-32b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen3-32b",
+      "snippet": "Qwen3-32B is a large language model from the Qwen3 series. It features 32.8 billion parameters, a 131K token context window, support for 100+ languages, and hybrid thinking modes allowing switching between deep reasoning and fast responses. It demonstrates strong performance in reasoning, instruction-following, and agent capabilities."
+    }
+  ]
+}

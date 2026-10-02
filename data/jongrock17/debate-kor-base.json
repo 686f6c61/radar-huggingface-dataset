@@ -5,7 +5,7 @@
   "author": "jongrock17",
   "url": "https://huggingface.co/jongrock17/DEBATE-kor-base",
   "created_at": "2026-09-27T02:53:01.000Z",
-  "updated_at": "2026-09-27T03:12:21.000Z",
+  "updated_at": "2026-10-01T12:26:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 29,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 184423682,
   "parameters_human": "184.4M",

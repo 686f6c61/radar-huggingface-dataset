@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_PIXELS__ID_146341",
+  "slug": "castanetnicolas-act_ur5e_bs_64_act_chunk_10_exec_10_task_nut_assembly_square_pixels__id_146341",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_PIXELS__ID_146341",
+  "created_at": "2026-10-01T23:51:28.000Z",
+  "updated_at": "2026-10-01T23:51:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:castanetnicolas/robomimic_square_ph_image84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51580551,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206366268,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 at main - Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20/tree/main",
+      "snippet": "Instructions to use castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_20_Exec_20 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5 · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5",
+      "snippet": "Instructions to use castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "GitHub - ripl/ACT_for_ur5: Imitation learning algorithms with Co ...",
+      "url": "https://github.com/ripl/ACT_for_ur5",
+      "snippet": "For real-world data where things can be harder to model, train for at least 5000 epochs or 3-4 times the length after the loss has plateaued. Please refer to tuning tips for more info."
+    },
+    {
+      "title": "mujoco_menagerie/universal_robots_ur5e/README.md at main - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/blob/main/universal_robots_ur5e/README.md",
+      "snippet": "Converted the DAE mesh files to OBJ format using Blender. Processed .obj files with obj2mjcf. Added <mujoco> <compiler discardvisual=\"false\"/> </mujoco> to the URDF&#x27;s <robot> clause in order to preserve visual geometries. Loaded the URDF into MuJoCo and saved a corresponding MJCF. Added a tracking light to the base. Manually edited the MJCF to extract common properties into the <default ..."
+    }
+  ]
+}

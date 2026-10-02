@@ -28,8 +28,8 @@
     "base_model:quantized:XHToken/Spark-X2.5-1.7B",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 1707657216,
   "parameters_human": "1.71B",

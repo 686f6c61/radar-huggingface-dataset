@@ -5,7 +5,7 @@
   "author": "jesdga",
   "url": "https://huggingface.co/jesdga/Qwen3.8-27B-QUASAR-nvfp4-NInfer",
   "created_at": "2026-10-01T16:16:14.000Z",
-  "updated_at": "2026-10-01T16:16:41.000Z",
+  "updated_at": "2026-10-01T19:30:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

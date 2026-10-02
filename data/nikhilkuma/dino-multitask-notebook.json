@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nikhilkuma/dino-multitask-notebook",
+  "slug": "nikhilkuma-dino-multitask-notebook",
+  "author": "nikhilkuma",
+  "url": "https://huggingface.co/nikhilkuma/dino-multitask-notebook",
+  "created_at": "2026-10-02T01:04:24.000Z",
+  "updated_at": "2026-10-02T01:04:29.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matthewlop/dino-multitask · Hugging Face",
+      "url": "https://huggingface.co/matthewlop/dino-multitask",
+      "snippet": "Dino for Multitask Overview A small Dino implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The base variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "varunbsingh/dino-multitask · Hugging Face",
+      "url": "https://huggingface.co/varunbsingh/dino-multitask",
+      "snippet": "Overview This is an experimental Dino codebase for Multitask. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "GitHub - vivekananda05/multitask-dino",
+      "url": "https://github.com/vivekananda05/multitask-dino",
+      "snippet": "This repository contains a unified multi-task image reconstruction framework capable of performing image denoising and image inpainting within a single neural network architecture. The model utilizes a frozen pretrained DINOv3-Small Vision Transformer as a feature extractor and introduces LoRA (Low-Rank Adaptation) modules for lightweight fine-tuning. Task-specific decoders handle denoising ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "GitHub - ai-dynamo/dynamo: A Datacenter Scale Distributed Inference ...",
+      "url": "https://github.com/ai-dynamo/dynamo",
+      "snippet": "The open-source, datacenter-scale inference stack. Dynamo is the orchestration layer above inference engines — it doesn&#x27;t replace SGLang, TensorRT-LLM, or vLLM, it turns them into a coordinated multi-node inference system. Disaggregated serving, intelligent routing, multi-tier KV caching, and automatic scaling work together to maximize throughput and minimize latency for LLM, reasoning ..."
+    }
+  ]
+}

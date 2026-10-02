@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ascientist/sentionaut-axon-world",
+  "slug": "ascientist-sentionaut-axon-world",
+  "author": "ascientist",
+  "url": "https://huggingface.co/ascientist/sentionaut-axon-world",
+  "created_at": "2026-10-01T20:38:56.000Z",
+  "updated_at": "2026-10-01T20:38:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sentionaut",
+  "languages": [],
+  "tags": [
+    "sentionaut",
+    "prosthetic-vision",
+    "axon-map",
+    "world-model",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 441013,
+  "storage_human": "441013 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simulating everything, sort of: The promise and limits of world models ...",
+      "url": "https://arstechnica.com/ai/2026/07/simulating-everything-sort-of-the-promise-and-limits-of-world-models/",
+      "snippet": "Instead of or in addition to working with language, world models aim to lay the groundwork for AI systems that are capable of simulating the physical world, or at least a useful approximation of it."
+    },
+    {
+      "title": "[2607.12474] From Observation to Insight: Mechanistic World Models and ...",
+      "url": "https://arxiv.org/abs/2607.12474",
+      "snippet": "Recent advances in foundation models have transformed AI for Science, enabling remarkably accurate predictive performance across domains ranging from protein folding to weather forecasting. Yet prediction alone does not constitute scientific discovery. Scientific understanding depends on uncovering the reusable explanatory mechanisms that generate observations, whereas contemporary machine ..."
+    },
+    {
+      "title": "World model (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/World_model_(artificial_intelligence)",
+      "snippet": "A world model in artificial intelligence is a machine learning system that builds an internal representation of an environment. Often this is via understanding objects within video, which predictive LLMs cannot. The model predicts how that environment changes over time in response to actions. Researchers design world models to help agents plan, reason, and act without constant real-world trial ..."
+    },
+    {
+      "title": "World Models in Artificial Intelligence: Sensing, Learning, and ...",
+      "url": "https://arxiv.org/html/2503.15168",
+      "snippet": "Abstract. World Models help Artificial Intelligence (AI) predict outcomes, reason about its environment, and guide decision-making. While widely used in reinforcement learning, they lack the structured, adaptive representations that even young children intuitively develop."
+    },
+    {
+      "title": "Edge AI with Neuton Models and Axon NPU at Embedded World 2026",
+      "url": "https://www.electromaker.io/blog/article/nordic-demonstrates-edge-ai-with-neuton-models-and-axon-npu-at-embedded-world-2026",
+      "snippet": "At Embedded World 2026, Nordic Semiconductor demonstrated two complementary approaches to running artificial intelligence directly on low-power wireless devices. The demos showed how AI workloads can be executed locally on Nordic hardware using either ultra-compact Neuton models running on the CPU or a dedicated neural processing unit called Axon. Together, these technologies allow developers ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-k-feifei2026-lora",
+  "slug": "runninghubai-rh-k-feifei2026-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-k-feifei2026-lora",
+  "created_at": "2026-10-01T22:39:01.000Z",
+  "updated_at": "2026-10-01T22:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234747994,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-lora-2083017906674712578 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lora-2083017906674712578",
+      "snippet": "RunningHubAI / rh-lora-2083017906674712578 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/tree/main",
+      "snippet": "/ rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora 238 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Rh Ai Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/runninghubai/rh-ai-lora",
+      "snippet": "Registry entry for model Rh Ai Lora; source metadata pending."
+    },
+    {
+      "title": "RunningHub ｜ 原生 AI 智能体驱动的内容创作平台 · ComfyUI 工作流 · 模型 API",
+      "url": "https://www.runninghub.ai/zh-cn",
+      "snippet": "RunningHub 是由原生 AI 智能体驱动的一站式内容创作平台，支持 ComfyUI 工作流、无限画布、AI 应用、图像与视频生成及模型 API 调用，帮助创作者高效完成端到端 AI 内容生产。"
+    }
+  ]
+}

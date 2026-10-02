@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "twoody/DeepSeek-R1-0528-Qwen3-8B-GGUF",
+  "slug": "twoody-deepseek-r1-0528-qwen3-8b-gguf",
+  "author": "twoody",
+  "url": "https://huggingface.co/twoody/DeepSeek-R1-0528-Qwen3-8B-GGUF",
+  "created_at": "2026-10-01T22:13:12.000Z",
+  "updated_at": "2026-10-01T22:13:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "twoody",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027782816,
+  "storage_human": "5.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHAKESPEARE'S LITERARY HERITAGE: INFLUENCE AND IMPACT …",
+      "url": "https://ijrar.org/papers/IJRAR25A3042.pdf",
+      "snippet": "Abstract: William Shakespeare, the literary genius who completely transformed English literature, is responsible for the glory of the …"
+    },
+    {
+      "title": "How Shakespeare Shaped the English Language We Speak Today",
+      "url": "https://worldwideinterpreters.com.au/2025/09/22/how-shakespeare-shaped-the-english-language-we-speak-today/",
+      "snippet": "Sep 22, 2025 · Discover how Shakespeare’s words, idioms, and style shaped modern English and still influence the way we speak …"
+    },
+    {
+      "title": "Shakespeare’s Influence On The English Language",
+      "url": "https://thereadingtub.com/what-influence-did-shakespeare-have-on-the-english-language/",
+      "snippet": "Shakespeare’s Influence in Education Shakespeare’s enduring presence in the educational sphere attests to his influential role in the …"
+    },
+    {
+      "title": "Influence of William Shakespeare - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Influence_of_William_Shakespeare",
+      "snippet": "Influence of William Shakespeare William Shakespeare (National Portrait Gallery), in the famous Chandos portrait William …"
+    },
+    {
+      "title": "How Shakespeare Shaped the English Language (October 2026) …",
+      "url": "https://www.bymewilliamshakespeare.org/how-shakespeare-shaped-the-english-language/",
+      "snippet": "Jul 25, 2026 · Discover how Shakespeare shaped the English language. Our 2026 guide covers the 1,700 words and 400+ phrases …"
+    }
+  ]
+}

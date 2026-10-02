@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sanyam2005/anlp-a2-part1-moe-top2",
+  "slug": "sanyam2005-anlp-a2-part1-moe-top2",
+  "author": "sanyam2005",
+  "url": "https://huggingface.co/sanyam2005/anlp-a2-part1-moe-top2",
+  "created_at": "2026-10-01T21:32:33.000Z",
+  "updated_at": "2026-10-01T21:36:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "vi",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "anlp-assignment-2",
+    "vi",
+    "ja",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35277312,
+  "parameters_human": "35.3M",
+  "storage_bytes": 141118464,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Richest People in Sri Lanka - ElaKiri",
+      "url": "https://elakiri.com/threads/top-10-richest-people-in-sri-lanka.1818953/",
+      "snippet": "Oct 4, 2017 · Mr. Hari Selvanathan is the 5th richest person in Sri Lanka, He is the brother of another Sri Lankan, rated no4 richest …"
+    },
+    {
+      "title": "Telegram groups - ElaKiri",
+      "url": "https://elakiri.com/threads/telegram-groups.1943889/",
+      "snippet": "Jul 2, 2020 · SLK_sri said: tupac kiyala ekek innawa mehtna eya thama oya room yana group eke admin. Ammoo uth ekka chat …"
+    },
+    {
+      "title": "ලීක්... | Page 3 | ElaKiri",
+      "url": "https://elakiri.com/threads/%E0%B6%BD%E0%B7%93%E0%B6%9A%E0%B7%8A.1989034/page-3",
+      "snippet": "Sep 23, 2026 · SLK_sri said: TG eke thibuna thawa video 5k wihara, nangi pol leli gahanawa supiriyata Apith asay ova balanan link …"
+    },
+    {
+      "title": "හොඳ telegram වැල groups ටිකක් එවහං කෝ | ElaKiri",
+      "url": "https://elakiri.com/threads/%E0%B7%84%E0%B7%9C%E0%B6%B3-telegram-%E0%B7%80%E0%B7%90%E0%B6%BD-groups-%E0%B6%A7%E0%B7%92%E0%B6%9A%E0%B6%9A%E0%B7%8A-%E0%B6%91%E0%B7%80%E0%B7%84%E0%B6%82-%E0%B6%9A%E0%B7%9D.2045677/",
+      "snippet": "Apr 28, 2022 · menna https://bit.ly/4xT4fBN ------ Post added on Jun 24, 2026 at 4:12 PM"
+    },
+    {
+      "title": "මේ Telegram Groups & Channels වල links ටික ... - ElaKiri",
+      "url": "https://elakiri.com/threads/%E0%B6%B8%E0%B7%9A-telegram-groups-channels-%E0%B7%80%E0%B6%BD-links-%E0%B6%A7%E0%B7%92%E0%B6%9A-%E0%B7%84%E0%B7%9C%E0%B6%BA%E0%B7%8F%E0%B6%9C%E0%B6%B1%E0%B7%8A%E0%B6%B1-%E0%B7%80%E0%B7%92%E0%B6%AF%E0%B7%92%E0%B6%BA%E0%B6%9A%E0%B7%8A-%E0%B6%B1%E0%B7%90%E0%B6%AF%E0%B7%8A%E0%B6%AF.2011592/",
+      "snippet": "Sep 30, 2021 · මේ Telegram Groups & Channels වල links ටික හොයාගන්න විදියක් නැද්ද . :D කවුරු හරි ලග …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only",
+  "slug": "haji80mr-uoft-zephyr-7b-robust-all-envs-20000-rank-128-lm-only",
+  "author": "haji80mr-uoft",
+  "url": "https://huggingface.co/haji80mr-uoft/Zephyr-7B-robust-all-envs-20000-rank-128-lm-only",
+  "created_at": "2026-10-01T19:25:19.000Z",
+  "updated_at": "2026-10-01T19:25:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436242776,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HuggingFaceH4/zephyr-7b-beta · Hugging Face",
+      "url": "https://huggingface.co/HuggingFaceH4/zephyr-7b-beta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AF-EL-ZUBAIDI/Zephyr-7B",
+      "url": "https://github.com/AF-EL-ZUBAIDI/Zephyr-7B",
+      "snippet": "Mistral-7B, the backbone of Zephyr-7B, is a versatile model that performs exceptionally across various benchmarks. Its natural coding abilities and extended sequence length make it a robust tool for diverse applications."
+    },
+    {
+      "title": "haji80mr-uoft/zephyr-7b-beta-merged-server-10000-best_checkpoint ...",
+      "url": "https://huggingface.co/haji80mr-uoft/zephyr-7b-beta-merged-server-10000-best_checkpoint",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introduction to Zephyr 7B : Features, Usage, and Fine-tuning",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/introduction-to-zephyr-7b-features-usage-and-fine-tuning/",
+      "snippet": "What is Zephyr 7B? Zephyr 7B is a state-of-the-art AI language model designed to push the boundaries of natural language processing (NLP). It is part of the Zephyr series, which focuses on creating highly efficient and scalable language models that balance performance and accessibility. With 7 billion parameters, Zephyr 7B is lighter than some of its predecessors but is engineered to maintain ..."
+    },
+    {
+      "title": "GitHub - inferless/zephyr-7b-beta: A 7B fine-tuned model for ...",
+      "url": "https://github.com/inferless/Zephyr-7b-beta",
+      "snippet": "Zephyr-7b-beta Zephyr is a series of language models that are trained to act as helpful assistants. Zephyr-7B-β is the second model in the series, and is a fine-tuned version of mistralai/Mistral-7B-v0.1 that was trained on on a mix of publicly available, synthetic datasets using Direct Preference Optimization (DPO)."
+    }
+  ]
+}

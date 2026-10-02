@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "getachewenw/finetunning",
+  "slug": "getachewenw-finetunning",
+  "author": "getachewenw",
+  "url": "https://huggingface.co/getachewenw/finetunning",
+  "created_at": "2026-10-01T22:12:45.000Z",
+  "updated_at": "2026-10-01T22:12:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spatially transferable dwelling extraction from Multi-Sensor imagery ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1569843223000328",
+      "snippet": "... performance of a base model trained with the MAML approach than trained from scratch and finetuning counterpart. Similar to these works, Tseng et al. (2021a) ..."
+    },
+    {
+      "title": "Development and evaluation of a lightweight large language model ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12410746/",
+      "snippet": "To promote efficient fine-tuning of these large models with limited computational resources, we employed Native AMP with Low-Rank Adaptation (LORA). This ..."
+    },
+    {
+      "title": "Applying transfer learning in CNN model architectures for detecting ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772375525002679",
+      "snippet": "Explainable AI methods were employed to increase trust and model transparency. The DenseNet201 model, after fine-tuning, achieved the high est performance with ..."
+    },
+    {
+      "title": "Getachew E. - AI/ML Engineer - LinkedIn Ethiopia",
+      "url": "https://et.linkedin.com/in/getachewekubay",
+      "snippet": "AI/ML Engineer |Data Scientist | AI-Powered Full-Stack Developer | Graduated Computer Engineer (3.93/4.00) · I turn data, models, and ideas into intelligent ..."
+    },
+    {
+      "title": "10 Python Snippets for Machine Learning Workflow Automation",
+      "url": "https://ai.plainenglish.io/10-python-snippets-for-machine-learning-workflow-automation-8fcfffbb085a",
+      "snippet": "22.12.2024 ... But what if you could automate those tasks and focus more on the fun part — building and fine-tuning models? In this article, you'll ..."
+    }
+  ]
+}

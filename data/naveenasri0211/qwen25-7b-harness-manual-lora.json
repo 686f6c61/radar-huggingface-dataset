@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "naveenasri0211/qwen25-7b-harness-manual-lora",
+  "slug": "naveenasri0211-qwen25-7b-harness-manual-lora",
+  "author": "naveenasri0211",
+  "url": "https://huggingface.co/naveenasri0211/qwen25-7b-harness-manual-lora",
+  "created_at": "2026-10-01T23:55:50.000Z",
+  "updated_at": "2026-10-01T23:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "qwen2.5",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436060,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Naveenasri02/qwen25-lora-book-pilot: LoRA fine-tune of Qwen2.5 ...",
+      "url": "https://github.com/Naveenasri02/qwen25-lora-book-pilot",
+      "snippet": "A small, fully reproducible pilot: take a public-domain book the base model does not know, cut it into units, fine-tune a LoRA adapter on Qwen2.5-7B-Instruct, and measure before and after on held-out questions, judged blind by a model from another family. The Harness Makers&#x27; Illustrated Manual by W ..."
+    },
+    {
+      "title": "GitHub - sahilxai/Qwen-2.5-7b-PLC: # PLCForge AI - Model Weights ...",
+      "url": "https://github.com/sahilxai/Qwen-2.5-7b-PLC",
+      "snippet": "PLCForge AI - Model Weights Repository This repository provides the official model weights and fine-tuned LoRA adapter for the PLCForge AI Backend: * Base Model: Qwen2.5-7B-Instruct (14 GB) * Adapter: PLCForge Fine-Tuned PEFT LoRA (200 MB)"
+    },
+    {
+      "title": "cgxjdzz/Qwen-2.5-7B-Instruct-novel-lora · Hugging Face",
+      "url": "https://huggingface.co/cgxjdzz/Qwen-2.5-7B-Instruct-novel-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen2.5-7B-Instruct Locally: Complete Setup Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen2-5-7b-instruct-self-hosted-privacy-performance",
+      "snippet": "Step-by-step tutorial to install and use Qwen2.5-7B-Instruct locally. Learn to deploy this 7B parameter model for private, cost-effective AI apps."
+    }
+  ]
+}

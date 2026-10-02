@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "textilelabs/Loom-Spark-3.2",
+  "slug": "textilelabs-loom-spark-3-2",
+  "author": "textilelabs",
+  "url": "https://huggingface.co/textilelabs/Loom-Spark-3.2",
+  "created_at": "2026-10-01T21:32:43.000Z",
+  "updated_at": "2026-10-01T21:48:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "tiny-model",
+    "from-scratch",
+    "conversational",
+    "multi-turn",
+    "tool-use",
+    "agent-harness",
+    "retrieval-augmented",
+    "question-answering",
+    "attribution",
+    "humble-ai",
+    "small-language-model",
+    "muon",
+    "text-generation-inference",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22827840,
+  "parameters_human": "22.8M",
+  "storage_bytes": 143803362,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "textilelabs/Loom-Spark-3 · Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark-3",
+      "snippet": "textilelabs / Loom-Spark-3 Like 0 Text Generation Transformers Safetensors GGUF English llama tiny-model from-scratch conversational multi-turn tool-use agent-harness retrieval-augmented question-answering attribution calibrated-honesty humble-ai philosophy-of-mind small-language-model cpu-trained muon text-generation-inference License:mit Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "textilelabs/Loom-Spark · Hugging Face",
+      "url": "https://huggingface.co/textilelabs/Loom-Spark",
+      "snippet": "First of the Loom models · Textile Labs Loom Spark is a ~7.6M parameter language model trained from scratch with an unusual objective: instead of memorizing facts, it was trained to know what it is — small, temporary, curious, honest about its limits, and skilled at one real superpower: forming clean search queries when connected to a tool-using agent harness."
+    },
+    {
+      "title": "Loom-Spark-3 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/textilelabs/Loom-Spark-3",
+      "snippet": "Run Loom-Spark-3 with FriendliAI inference. The first Loom built to search well, not just to search. Successor to Loom Spark 2."
+    },
+    {
+      "title": "Loom-Spark API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/textilelabs/Loom-Spark",
+      "snippet": "Run Loom-Spark with FriendliAI inference. First of the Loom models · Textile Labs."
+    },
+    {
+      "title": "Loom-Spark - a textilelabs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/textilelabs/loom-spark",
+      "snippet": "The Loom-Spark collection. These models are the balanced all rounders. Tier 2 (balanced)."
+    }
+  ]
+}

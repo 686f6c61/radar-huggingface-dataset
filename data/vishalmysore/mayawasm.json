@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "VishalMysore/mayaWasm",
+  "slug": "vishalmysore-mayawasm",
+  "author": "VishalMysore",
+  "url": "https://huggingface.co/VishalMysore/mayaWasm",
+  "created_at": "2026-10-01T21:09:15.000Z",
+  "updated_at": "2026-10-02T02:11:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "browser",
+    "wasm",
+    "yes-no",
+    "guardrail",
+    "quantized",
+    "en",
+    "base_model:VishalMysore/maya",
+    "base_model:quantized:VishalMysore/maya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157687283,
+  "storage_human": "158 MB",
+  "base_model": "VishalMysore/maya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vishalmysore (Vishal Mysore) · GitHub",
+      "url": "https://github.com/vishalmysore",
+      "snippet": "I&#x27;m a software engineer with expertise in developing AI-powered platforms, holding multiple patents in software engineering and AI. - vishalmysore"
+    },
+    {
+      "title": "GitHub - vishalmysore/vishalmysore",
+      "url": "https://github.com/vishalmysore/vishalmysore",
+      "snippet": "🌐 Current Focus: Currently dedicated to building AI Powered Engineering Platforms for practical usage. 🔧 Technical Expertise: Key strengths include crafting technology roadmaps, designing platforms, and implementing automation solutions for intricate business workflows, resulting in cost savings and streamlined operations."
+    },
+    {
+      "title": "VishalMysore (Vishal Mysore) - Hugging Face",
+      "url": "https://huggingface.co/VishalMysore",
+      "snippet": "User profile of Vishal Mysore on Hugging Face"
+    },
+    {
+      "title": "VishalMysore (Vishal Mysore) - Hugging Face",
+      "url": "https://huggingface.co/VishalMysore/models",
+      "snippet": "Vishal Mysore PRO VishalMysore Follow Martinique&#x27;s profile picture omvineet&#x27;s profile picture prasu9539&#x27;s profile picture 4 followers"
+    },
+    {
+      "title": "Vishal Mysore - AI Innovator & Technology Leader",
+      "url": "https://vishalmysore.github.io/",
+      "snippet": "Engineering Leader & AI Innovator With over 20 years in software development and technology leadership, I specialize in designing AI-powered cloud-native platforms for low-latency financial applications at Citi."
+    }
+  ]
+}

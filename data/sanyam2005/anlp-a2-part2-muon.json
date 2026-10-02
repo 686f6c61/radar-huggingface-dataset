@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sanyam2005/anlp-a2-part2-muon",
+  "slug": "sanyam2005-anlp-a2-part2-muon",
+  "author": "sanyam2005",
+  "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-muon",
+  "created_at": "2026-10-01T22:48:34.000Z",
+  "updated_at": "2026-10-02T01:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "optimizers",
+    "anlp-assignment-2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27269632,
+  "parameters_human": "27.3M",
+  "storage_bytes": 218166576,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unignoramus/anlp-a2-p2-muon · Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p2-muon",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unignoramus/anlp-a2-p2-muon at main - Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p2-muon/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main anlp-a2-p2-muon 143 MB Ctrl+K Ctrl+K 1 contributor History:8 commits unignoramus Upload README.md with huggingface_hub dae6dd0 verifiedabout 1 hour ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago README.md 637 BytesUpload README.md with huggingface_hubabout ..."
+    },
+    {
+      "title": "GitHub - bitmap4/anlp-a2",
+      "url": "https://github.com/bitmap4/anlp-a2",
+      "snippet": "Contribute to bitmap4/anlp-a2 development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - KellerJordan/Muon: Muon is an optimizer for hidden layers in ...",
+      "url": "https://github.com/KellerJordan/Muon",
+      "snippet": "Muon: An optimizer for the hidden layers of neural networks This repo contains an implementation of the Muon optimizer originally described in this thread and this writeup."
+    },
+    {
+      "title": "[2502.16982] Muon is Scalable for LLM Training - arXiv.org",
+      "url": "https://arxiv.org/abs/2502.16982",
+      "snippet": "Recently, the Muon optimizer based on matrix orthogonalization has demonstrated strong results in training small-scale language models, but the scalability to larger models has not been proven. We identify two crucial techniques for scaling up Muon: (1) adding weight decay and (2) carefully adjusting the per-parameter update scale. These techniques allow Muon to work out-of-the-box on large ..."
+    }
+  ]
+}

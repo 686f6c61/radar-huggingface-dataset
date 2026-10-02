@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "karimepachecog/simcse-unsup-snli100k",
+  "slug": "karimepachecog-simcse-unsup-snli100k",
+  "author": "karimepachecog",
+  "url": "https://huggingface.co/karimepachecog/simcse-unsup-snli100k",
+  "created_at": "2026-10-01T23:55:52.000Z",
+  "updated_at": "2026-10-01T23:56:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951304,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "karimepachecog (Karime Pacheco) - Hugging Face",
+      "url": "https://huggingface.co/karimepachecog/models",
+      "snippet": "User profile of Karime Pacheco on Hugging Face"
+    },
+    {
+      "title": "GitHub - princeton-nlp/SimCSE: [EMNLP 2021] SimCSE: Simple Contrastive ...",
+      "url": "https://github.com/princeton-nlp/SimCSE",
+      "snippet": "Unsupervised SimCSE simply takes an input sentence and predicts itself in a contrastive learning framework, with only standard dropout used as noise. Our supervised SimCSE incorporates annotated pairs from NLI datasets into contrastive learning by using entailment pairs as positives and contradiction pairs as hard negatives."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=simcse",
+      "snippet": "Explore machine learning models. new5558/simcse-model-wangchanberta-base-att-spm-uncased"
+    },
+    {
+      "title": "SimCSE/run_unsup_example.sh at main · princeton-nlp/SimCSE",
+      "url": "https://github.com/princeton-nlp/SimCSE/blob/main/run_unsup_example.sh",
+      "snippet": "# In this example, we show how to train SimCSE on unsupervised Wikipedia data."
+    },
+    {
+      "title": "SimCSE: Simple Contrastive Learning of Sentence Embeddings",
+      "url": "https://arxiv.org/abs/2104.08821",
+      "snippet": "This paper presents SimCSE, a simple contrastive learning framework that greatly advances state-of-the-art sentence embeddings. We first describe an unsupervised approach, which takes an input sentence and predicts itself in a contrastive objective, with only standard dropout used as noise. This simple method works surprisingly well, performing on par with previous supervised counterparts. We ..."
+    }
+  ]
+}

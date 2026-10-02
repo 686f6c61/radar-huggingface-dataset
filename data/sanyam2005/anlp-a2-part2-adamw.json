@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sanyam2005/anlp-a2-part2-adamw",
+  "slug": "sanyam2005-anlp-a2-part2-adamw",
+  "author": "sanyam2005",
+  "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-adamw",
+  "created_at": "2026-10-01T22:14:15.000Z",
+  "updated_at": "2026-10-02T00:55:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "optimizers",
+    "anlp-assignment-2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27269632,
+  "parameters_human": "27.3M",
+  "storage_bytes": 218166576,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unignoramus/anlp-a2-p2-adamw · Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p2-adamw",
+      "snippet": "ANLP Assignment 2, Part 2: adamw Decoder-only transformer pretrained on the human/AI parallel English corpus with a hand-written implementation of this optimizer."
+    },
+    {
+      "title": "sanyam2005 (Sanyam Agrawal) - Hugging Face",
+      "url": "https://huggingface.co/sanyam2005",
+      "snippet": "Recent Activity updated a model8 days ago sanyam2005/anlp-a1-transformers published a model10 days ago sanyam2005/anlp-a1-transformers updated a model13 days ago sanyam2005/anlp-a1-cipher-c5 View all activity"
+    },
+    {
+      "title": "Ai2 Asta",
+      "url": "https://asta.allen.ai/",
+      "snippet": "A scholarly research assistant that combines literature understanding and data-driven discovery. Asta uses 108M+ abstracts and 12M+ full-text papers to find, summarize, and analyze scientific evidence. A project from Ai2."
+    },
+    {
+      "title": "A2E Free, Personal AI Videos",
+      "url": "https://a2e.ai/",
+      "snippet": "Create personal AI videos for free with image-to-video, face and head swap, lip sync, voice cloning, and AI avatars on A2E."
+    },
+    {
+      "title": "AdamW Optimizer (optimizer.py) | cmu-l3/anlp-fall2025-hw1 | DeepWiki",
+      "url": "https://deepwiki.com/cmu-l3/anlp-fall2025-hw1/3.3-adamw-optimizer-(optimizer.py)",
+      "snippet": "The AdamW implementation in this repository provides a custom optimizer based on the Adam algorithm with decoupled weight decay, as proposed by Loshchilov & Hutter in 2017. It is designed to handle the fine-tuning of the Llama2-based models for classification tasks and LoRA adaptation."
+    }
+  ]
+}

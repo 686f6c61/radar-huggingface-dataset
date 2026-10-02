@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kitsune-Tales-E4B-EN-i1-GGUF",
+  "slug": "mradermacher-kitsune-tales-e4b-en-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kitsune-Tales-E4B-EN-i1-GGUF",
+  "created_at": "2026-10-02T01:01:04.000Z",
+  "updated_at": "2026-10-02T02:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lora",
+    "creative-writing",
+    "light-novel",
+    "fantasy",
+    "anime",
+    "gemma4",
+    "synthetic-data",
+    "en",
+    "dataset:whoashish115/Kitsune-Tales-EN-Fantasy-SFT",
+    "base_model:whoashish115/Kitsune-Tales-E4B-EN",
+    "base_model:adapter:whoashish115/Kitsune-Tales-E4B-EN",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 110991535072,
+  "storage_human": "111.0 GB",
+  "base_model": "whoashish115/Kitsune-Tales-E4B-EN",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/model_requests · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/model_requests",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kitsune maker | BasedLabs",
+      "url": "https://www.basedlabs.ai/tools/kitsune-maker",
+      "snippet": "kitsune maker Craft personalized kitsune avatars with unprecedented control. Fine-tune ear styles, tail count (up to nine!), and spirit flame colors to bring your mythical vision to life, ready for social media or game development."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Free Kitsune 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/kitsune",
+      "snippet": "Download 306+ free Kitsune 3D models in STL, GLB, FBX, OBJ formats for 3D Printing, Games, Animation and more. Ready to use - instant download on Meshy."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sanyam2005/anlp-a2-part2-adam-mini",
+  "slug": "sanyam2005-anlp-a2-part2-adam-mini",
+  "author": "sanyam2005",
+  "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-adam-mini",
+  "created_at": "2026-10-01T22:35:25.000Z",
+  "updated_at": "2026-10-02T01:16:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "optimizers",
+    "anlp-assignment-2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27269632,
+  "parameters_human": "27.3M",
+  "storage_bytes": 218166576,
+  "storage_human": "218 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sanyam2005 (Sanyam Agrawal) - Hugging Face",
+      "url": "https://huggingface.co/sanyam2005/models",
+      "snippet": "sanyam2005&#x27;s models8 Sort: Recently updated sanyam2005/anlp-a1-transformers Updated 8 days ago"
+    },
+    {
+      "title": "Adam-mini: Use Fewer Learning Rates To Gain More - arXiv.org",
+      "url": "https://arxiv.org/html/2406.16793v5",
+      "snippet": "Adam-mini also achieves better performance on non-LLM tasks such as training diffusion models, vision models, and graph neural networks. Efficiency:Adam-mini can reach higher throughput than AdamW."
+    },
+    {
+      "title": "[2406.16793] Adam-mini: Use Fewer Learning Rates To Gain More - arXiv.org",
+      "url": "https://arxiv.org/abs/2406.16793",
+      "snippet": "Empirically, we verify that Adam-mini performs on par or better than AdamW on various language models sized from 39M to 13B for pre-training, supervised fine-tuning, and RLHF. The reduced memory footprint of Adam-mini also alleviates communication overheads among GPUs, thereby increasing throughput."
+    },
+    {
+      "title": "Adam-Mini: Use Fewer Learning Rates to Gain More | ML Anthology",
+      "url": "https://mlanthology.org/iclr/2025/zhang2025iclr-adammini/",
+      "snippet": "Empirically, we verify that Adam-mini performs on par or better than AdamW on various language models sized from 39M to 13B for pre-training, supervised fine-tuning, and RLHF. The reduced memory footprint of Adam-mini also alleviates communication overheads among GPUs, thereby increasing throughput."
+    },
+    {
+      "title": "Adam-mini: Use Fewer Learning Rates To Gain More - OpenReview",
+      "url": "https://openreview.net/pdf?id=TOnkMNfx9d",
+      "snippet": "Adam-mini reduces memory by cutting down the learning rate resources in Adam (i.e., 1/ v). We find that ≥ 90% of these learning rates in v could be harmlessly removed if we (1) carefully parti-tion the parameters into blocks following our pro-posed principle on Hessian structure; (2) assign a single but good learning rate to each parameter block. We further find that, for each of these pa ..."
+    }
+  ]
+}

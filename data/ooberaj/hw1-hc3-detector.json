@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ooberaj/hw1-hc3-detector",
+  "slug": "ooberaj-hw1-hc3-detector",
+  "author": "ooberaj",
+  "url": "https://huggingface.co/ooberaj/hw1-hc3-detector",
+  "created_at": "2026-10-01T19:44:22.000Z",
+  "updated_at": "2026-10-01T19:57:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Validation for xxx-xxx-xxxx or (xxx)xxx-xxxx - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/13679310/validation-for-xxx-xxx-xxxx-or-xxxxxx-xxxx",
+      "snippet": "Dec 3, 2012 · Precisely, this will also match - xxx- (xxx)xxx-xxxx, but again it's not specified what OP don't want to match. So, it's a …"
+    },
+    {
+      "title": "javascript - Regex for xxxx.xxx.xxx - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/5889310/regex-for-xxxx-xxx-xxx",
+      "snippet": "May 4, 2011 · Regex for xxxx.xxx.xxx Ask Question Asked 15 years, 5 months ago Modified 15 years, 5 months ago"
+    },
+    {
+      "title": "如何用语言学分析句型“XXXX偶遇YYYY，ZZZZ强如怪物，拼尽全力也 …",
+      "url": "https://www.zhihu.com/question/6137044421",
+      "snippet": "Dec 6, 2024 · 你不了解怎么分析呢 这个是某个魂系up某期视频的标题，而且我记得一开始结尾是“拼尽全力战胜他” 正确翻译： 我 …"
+    },
+    {
+      "title": "http：//xxxx 是网站地址还是网页地址？ - 知乎",
+      "url": "https://www.zhihu.com/question/469979589",
+      "snippet": "Jul 4, 2021 · 1、网址：网址通常指因特网上网页的地址。Internet网址是因特网重要标识，浏览网络信息、运行网络应用软件都必须输 …"
+    },
+    {
+      "title": "<video src=\"blob:https://xxxx\"></video>の動画はどこにありますか？",
+      "url": "https://ja.stackoverflow.com/questions/57046/video-src-blobhttps-xxxx-video%e3%81%ae%e5%8b%95%e7%94%bb%e3%81%af%e3%81%a9%e3%81%93%e3%81%ab%e3%81%82%e3%82%8a%e3%81%be%e3%81%99%e3%81%8b",
+      "snippet": "Jul 31, 2019 · URL.createObjectURL () で生成された blob: スキーマのURLです。それを生成したページ内部でのみ有効なURLであ …"
+    }
+  ]
+}

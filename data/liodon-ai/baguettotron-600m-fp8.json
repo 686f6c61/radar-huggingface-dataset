@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/baguettotron-600m-FP8",
+  "slug": "liodon-ai-baguettotron-600m-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/baguettotron-600m-FP8",
+  "created_at": "2026-10-01T22:19:09.000Z",
+  "updated_at": "2026-10-01T22:22:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:PleIAs/baguettotron-600m",
+    "base_model:quantized:PleIAs/baguettotron-600m",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 608273408,
+  "parameters_human": "608.3M",
+  "storage_bytes": 676456112,
+  "storage_human": "676 MB",
+  "base_model": "PleIAs/baguettotron-600m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PleIAs/Baguettotron · Hugging Face",
+      "url": "https://huggingface.co/PleIAs/Baguettotron",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai (Liodon AI) - Hugging Face",
+      "url": "https://huggingface.co/liodon-ai",
+      "snippet": "Extreme Model Compression: Developing state-of-the-art recipes for hardware-aware post-training quantization (FP8, FP4, and sub-4-bit formats), pruning, and structure-preserving knowledge distillation. Speech & Modality Fusion: Integrating native Automatic Speech Recognition (ASR) and Text-to-Speech (TTS) layers into ultra-compact foundation ..."
+    },
+    {
+      "title": "Home - LioDon AI",
+      "url": "https://liodon.ai/",
+      "snippet": "What we research Liodon is an independent, self-funded applied research lab working on the frontier of open-source foundation model research."
+    },
+    {
+      "title": "Baguettotron: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/baguettotron-pleias",
+      "snippet": "A: Baguettotron gets close to Qwen-0.6B performance on benchmarks despite having less than half the parameters (321M vs 600M), due to its deeper architecture and training on reasoning-signal-rich data."
+    },
+    {
+      "title": "It&#x27;s All Training: A Fully Synthetic Single-Stage Recipe for LLMs",
+      "url": "https://arxiv.org/html/2609.37891v1",
+      "snippet": "Justification: We release the Synth dataset under CC BY 4.0 and the Baguettotron model suite (Monad -56M, Baguettotron -350M/600M, and Baguettotron -MoE) under Apache-2.0."
+    }
+  ]
+}

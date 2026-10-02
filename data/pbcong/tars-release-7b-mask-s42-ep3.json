@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pbcong/tars-release-7b-mask-s42-ep3",
+  "slug": "pbcong-tars-release-7b-mask-s42-ep3",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/tars-release-7b-mask-s42-ep3",
+  "created_at": "2026-10-01T21:00:11.000Z",
+  "updated_at": "2026-10-02T02:15:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "base_model:liuhaotian/llava-v1.5-7b",
+    "base_model:finetune:liuhaotian/llava-v1.5-7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7062902784,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126400899,
+  "storage_human": "14.1 GB",
+  "base_model": "liuhaotian/llava-v1.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAC Address Vendor Lookup | MAC Address Lookup",
+      "url": "https://maclookup.app/",
+      "snippet": "Check an OUIs or a MAC address and display details like vendor name, location, MAC details, and more… Search by Vendor Name?"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - bytedance/UI-TARS",
+      "url": "https://github.com/bytedance/UI-TARS",
+      "snippet": "🌟 2025.09.04: We&#x27;re excited to announce the release the UI-TARS-2, which is a major upgrade from UI-TARS-1.5, featuring with enhanced capabilities in GUI, Game, Code and Tool Use. It is an \"All In One\" Agent model, enabling seamless integration of multiple abilities for complex tasks. Please check our new technical report for more details."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 638 AI models across 508 benchmarks, with 211 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    }
+  ]
+}

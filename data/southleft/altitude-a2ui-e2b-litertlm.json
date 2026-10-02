@@ -5,7 +5,7 @@
   "author": "southleft",
   "url": "https://huggingface.co/southleft/altitude-a2ui-e2b-litertlm",
   "created_at": "2026-09-27T20:07:01.000Z",
-  "updated_at": "2026-09-27T20:14:38.000Z",
+  "updated_at": "2026-10-01T12:45:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

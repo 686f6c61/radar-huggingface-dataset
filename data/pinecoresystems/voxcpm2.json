@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pinecoresystems/VoxCPM2",
+  "slug": "pinecoresystems-voxcpm2",
+  "author": "pinecoresystems",
+  "url": "https://huggingface.co/pinecoresystems/VoxCPM2",
+  "created_at": "2026-10-01T22:24:55.000Z",
+  "updated_at": "2026-10-01T22:39:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-speech",
+    "voice-cloning",
+    "voice-design",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 5050505335,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoxCPM: Open Source TTS for Creative & Expressive Voices",
+      "url": "https://voxcpm.com/en/",
+      "snippet": "Free, open-source TTS with voice cloning! Create controllable, expressive AI voices in 30+ languages and 48kHz studio-quality audio. Perfect for creators & developers. Try it now!"
+    },
+    {
+      "title": "VoxCPM 2 - VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/en/latest/models/voxcpm2.html",
+      "snippet": "VoxCPM 2 is the latest major release — a 2B parameter model trained on 2.36 million hours of multilingual data. It represents a significant leap in capacity, quality, and controllability over the 1.x series."
+    },
+    {
+      "title": "GitHub - OpenBMB/VoxCPM: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/OpenBMB/VoxCPM?tab=readme-ov-file",
+      "snippet": "VoxCPM2 is the latest major release — a 2B parameter model trained on over 2 million hours of multilingual speech data, now supporting 30 languages, Voice Design, Controllable Voice Cloning, and 48kHz studio-quality audio output. Built on a MiniCPM-4 backbone."
+    },
+    {
+      "title": "FenomAI/VoxCPM2 · Hugging Face",
+      "url": "https://huggingface.co/FenomAI/VoxCPM2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/en/latest/",
+      "snippet": "It is strictly forbidden to use VoxCPM for any illegal or unethical purposes. We strongly recommend that any publicly shared content generated with this model be clearly marked as AI-generated. Current Technical Limitations: Although generally stable, the model may occasionally exhibit instability, especially with very long or expressive inputs."
+    }
+  ]
+}

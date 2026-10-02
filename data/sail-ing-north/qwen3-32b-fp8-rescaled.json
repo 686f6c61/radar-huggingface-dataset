@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sail-ing-north/Qwen3-32B-FP8-rescaled",
+  "slug": "sail-ing-north-qwen3-32b-fp8-rescaled",
+  "author": "sail-ing-north",
+  "url": "https://huggingface.co/sail-ing-north/Qwen3-32B-FP8-rescaled",
+  "created_at": "2026-10-01T21:22:59.000Z",
+  "updated_at": "2026-10-01T21:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:quantized:Qwen/Qwen3-32B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 34333990294,
+  "storage_human": "34.3 GB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAIL | La plus grande destination plein air | Fièrement d’ici",
+      "url": "https://www.sail.ca/fr-ca",
+      "snippet": "Magasinez les meilleurs produits de plus de 600 marques de plein air : vêtements pour homme, femme et enfant, chasse, pêche, …"
+    },
+    {
+      "title": "SAIL - Vêtements, équipement et accessoires plein air",
+      "url": "https://www.sail.ca/fr-ca/collections/sail",
+      "snippet": "Découvrez la marque SAIL : vêtements, équipement de camping, pêche et accessoires conçus pour le plein air, alliant confort, …"
+    },
+    {
+      "title": "Sail - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sail",
+      "snippet": "A sail is a tensile structure, which is made from fabric or other membrane materials, that uses wind power to propel sailing craft, …"
+    },
+    {
+      "title": "Sail — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sail",
+      "snippet": "Sail est un nom de lieu notamment porté par : Sail-les-Bains est une commune française située dans le département de la Loire en …"
+    },
+    {
+      "title": "sail - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/sail",
+      "snippet": "sail - traduction anglais-français. Forums pour discuter de sail, voir ses formes composées, des exemples et poser vos questions. …"
+    }
+  ]
+}

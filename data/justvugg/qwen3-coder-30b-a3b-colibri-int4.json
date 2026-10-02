@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Justvugg/Qwen3-Coder-30B-A3B-colibri-int4",
+  "slug": "justvugg-qwen3-coder-30b-a3b-colibri-int4",
+  "author": "Justvugg",
+  "url": "https://huggingface.co/Justvugg/Qwen3-Coder-30B-A3B-colibri-int4",
+  "created_at": "2026-10-02T00:16:39.000Z",
+  "updated_at": "2026-10-02T00:38:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "colibri",
+  "languages": [],
+  "tags": [
+    "colibri",
+    "qwen3_moe",
+    "moe",
+    "int4",
+    "cpu",
+    "expert-streaming",
+    "code",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19391034960,
+  "storage_human": "19.4 GB",
+  "base_model": "Qwen/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Coder-30B-A3B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    },
+    {
+      "title": "Qwen3-Coder-30B-A3B-Instruct-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/n00b001/Qwen3-Coder-30B-A3B-Instruct-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from Qwen/Qwen3-Coder-30B-A3B-Instruct using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "Run Qwen3-Coder-30B Locally: A Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-coder-30b-local-code-generation",
+      "snippet": "Getting Started with Qwen3-Coder-30B: Local Code Generation Learn how to download, configure, and run the Qwen3-Coder-30B-A3B-Instruct-GGUF model locally using llama.cpp for high-performance, private coding assistance."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder",
+      "snippet": "Qwen3-Coder is the code version of Qwen3, the large language model series developed by Qwen team. - QwenLM/Qwen3-Coder"
+    }
+  ]
+}

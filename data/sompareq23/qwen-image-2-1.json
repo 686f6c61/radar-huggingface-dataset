@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sompareq23/Qwen-Image-2.1",
+  "slug": "sompareq23-qwen-image-2-1",
+  "author": "Sompareq23",
+  "url": "https://huggingface.co/Sompareq23/Qwen-Image-2.1",
+  "created_at": "2026-10-01T22:09:01.000Z",
+  "updated_at": "2026-10-01T22:09:01.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image 3.0 on Openart - OpenArt AI Image Creator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=Yn_r7Z4M1mH3dHT2VoOJ7bFbahY1Qv7r1oTgsxKBtJZAhElWzH67WUyhizI5r786Ees%2DNO5QPDWEyL5beTy83i7R4KbAMIWjnVCEDdwtwB9Xv03KDx2dvOX3A8RIUwnNlq69I0hpTkLiJMNbmqmvkq8yj9Zq3nYgQi0VpCDSCe4.xP8gc_N_H%2Dh_Cll%2DRnUIaQ&rut=d7c1147f8158e6f0597f6a94d03d0865b1520359837c359f705e91a9ccaec009&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8iDzjhRZbjC%2DBjGUGIqPoVTVUCUx4ku8K8_875t9Qjdh%2DQW9wQIsVkrb4wt1g77zbmOjpUFdA4%2DucKkxR2xYhZMmYNGZBXAL_N24YuELpxGBFamG31ZFJSjRGEdz69ADVW8YR23KhP7lhnRh7%2DhMu0v2ZFYLl4QLDSUpqCAufWcsh2JaPHEnQUfw9C9CbPco%2Dn0M2LhruN2gBRV3XsQnXpxAJHsQ%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmYWktbW9kZWwlMmZxd2VuLWltYWdlLTMlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RzZWFyY2gtZ29vZ2xlLWdsb2JhbCh0MSlfc2VhcmNoX2FpX21vZGVsc19haV9tYXhfbHR2LXNlYXJjaC1hY3Etd2ViJTI2dXRtX2NvbnRlbnQlM2Rxd2VuJTI2dXRtX3Rlcm0lM2Rxd2VuJTI1MjBhaSUyNTIwaW1hZ2UlMjZ1dG1fY2FtcGFpZ24lM2RHbG9iYWwoVDEpX1NlYXJjaF9BSV9Nb2RlbHNfQUlfTWF4X0xUViUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNnV0bV9pZCUzZDU3MTU5MDE2MSUyNmhzYV9hY2MlM2Q5NTc0NTA0ODAwJTI2aHNhX2NhbSUzZDIzNjEzNjEzNTc4JTI2aHNhX2dycCUzZDExODUyNzU5MDQ1NzU1NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkcyUyNmhzYV90Z3QlM2Rrd2QtNzQwODA1MTE4ODkxMDMlM2Fsb2MtNjYlMjZoc2Ffa3clM2Rxd2VuJTI1MjBhaSUyNTIwaW1hZ2UlMjZoc2FfbXQlM2RwJTI2aHNhX25ldCUzZGFkd29yZHMlMjZoc2FfdmVyJTNkMyUyNm1zY2xraWQlM2QwODVlMDU3MWQ1OWExZDdlYTFlYjZmY2YzZTJlNDUxZCUyNnV0bV9jb250ZW50JTNkcXdlbg%26rlid%3D085e0571d59a1d7ea1eb6fcf3e2e451d&vqd=4-276091374455083151692837325815312397533&iurl=%7B1%7DIG%3DBE85EFE3AFDD451BB54DD558B61D3E79%26CID%3D05222B06252A61BA10293CE324246054%26ID%3DDevEx%2C5037.1",
+      "snippet": "Try Qwen Image 3 on OpenArt to generate images with accurate text and dense layouts. Generate with Qwen Image 3 plus 100+ other top models, all on one plan. No invite needed."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/Qwen-Image-2.1 · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen-Image-2.1",
+      "snippet": "Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this ..."
+    },
+    {
+      "title": "Qwen-Image-2.1/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1/blob/main/README.md",
+      "snippet": "Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility."
+    }
+  ]
+}
