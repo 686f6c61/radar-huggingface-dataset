@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "MC7ever/pe-single-L14",
+  "slug": "mc7ever-pe-single-l14",
+  "author": "MC7ever",
+  "url": "https://huggingface.co/MC7ever/pe-single-L14",
+  "created_at": "2026-10-03T01:41:26.000Z",
+  "updated_at": "2026-10-03T11:22:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pe_audio_video",
+    "feature-extraction",
+    "perception-encoder",
+    "audio-text-retrieval",
+    "image-text-retrieval",
+    "zero-shot-audio-classification",
+    "multimodal-embeddings",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1033701580,
+  "parameters_human": "1.03B",
+  "storage_bytes": 4134930120,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "t2i R@1 (search slice n=64)",
+      "value": 0.766
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "t2i R@5 (approx, search slice)",
+      "value": 0.95
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "ESC-50 accuracy (search slice)",
+      "value": 0.96
+    }
+  ],
+  "sources": [
+    {
+      "title": "MC7ever/custom-models-catalog · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/MC7ever/custom-models-catalog",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MC7ever/MC7ever · Hugging Face",
+      "url": "https://huggingface.co/MC7ever/MC7ever",
+      "snippet": "charlie (MC7ever) neurodivergent doomer transfem pup building post-capitalist AI about me student at spcc gosford/narara. interested in LLMs, AI architecture, and building open-source intelligence that serves people, not profit. i write papers about multimodal cognitive ecosystems and then get mad about capitalism in the abstracts. what i do the manifesto - 10 papers outlining the Omni ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 783 AI models across 645 benchmarks, with 212 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Maintainer «MC7ever» - llm-explorer.com",
+      "url": "https://llm-explorer.com/list/?mtr=MC7ever",
+      "snippet": "A Curated List of the Large and Small Language Models (Open-Source LLMs and SLMs). Maintainer «MC7ever» with Dynamic Sorting and Filtering."
+    }
+  ]
+}

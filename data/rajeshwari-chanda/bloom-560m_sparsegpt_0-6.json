@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_sparsegpt_0.6",
+  "slug": "rajeshwari-chanda-bloom-560m_sparsegpt_0-6",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.6",
+  "created_at": "2026-10-03T16:43:23.000Z",
+  "updated_at": "2026-10-03T16:44:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "17 hours ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, …"
+    },
+    {
+      "title": "160 Quotes of the Day for Daily Inspiration, Motivation and Lots of ...",
+      "url": "https://www.positivityblog.com/quote-of-the-day/",
+      "snippet": "Mar 26, 2025 · Looking for a quote of the day to help you make the most of today? To renew your motivation, inspiration and give …"
+    },
+    {
+      "title": "Quote of the Day – Daily Motivation for Success & Positivity",
+      "url": "https://quotesninja.com/quote-of-the-day/",
+      "snippet": "Feb 20, 2026 · Start your day with our powerful Quote of the Day. Get daily motivational, inspirational, success, life, and positive …"
+    },
+    {
+      "title": "Quote of the Day | 1 Daily Powerful Quote To Inspire",
+      "url": "https://quotesoftheday.org/",
+      "snippet": "17 hours ago · Read today's quote of the day, reflect on its meaning, and find inspiration for your day. Vicissitudes are inevitable; …"
+    },
+    {
+      "title": "Quote of the Day: Meaning, Motivation & Inspiration | DPQuotes",
+      "url": "https://dpquotes.com/quote-of-the-day/",
+      "snippet": "17 hours ago · Today's Quote of the Day, explained simply. Discover its meaning, motivation, and inspiration, along with a verified …"
+    }
+  ]
+}

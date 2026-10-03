@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "waxal-benchmarking/whisper-small-waxal-matched-ewe",
+  "slug": "waxal-benchmarking-whisper-small-waxal-matched-ewe",
+  "author": "waxal-benchmarking",
+  "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-ewe",
+  "created_at": "2026-10-03T12:42:34.000Z",
+  "updated_at": "2026-10-03T12:43:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ewe"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "african-languages",
+    "waxal",
+    "ablation",
+    "ewe",
+    "dataset:google/WaxalNLP",
+    "arxiv:2606.02375",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAXAL-NET: Finetuned Edge ASR Across 19 African Languages",
+      "url": "https://arxiv.org/html/2606.02375v1",
+      "snippet": "01.06.2026 ... Finally, to contribute to future African ASR research, we release all model weights, fine-tuning and evaluation scripts, and a cleaned WAXAL ..."
+    },
+    {
+      "title": "Downloads - NeurIPS 2026",
+      "url": "https://neurips.cc/Downloads/2026",
+      "snippet": "AesGI-Bench: Benchmarking and Evaluating the Aesthetic Quality of AI-Generated Images via Large Multimodal Models ... Small Model Portfolios for Many ..."
+    },
+    {
+      "title": "Distilbart - Kaggle",
+      "url": "https://www.kaggle.com/code/aryadhorajiya/distilbart",
+      "snippet": "Explore and run AI code with Kaggle Notebooks | Using data from [Private Datasource]"
+    },
+    {
+      "title": "WAXAL: A large-scale open resource for African language speech ...",
+      "url": "https://research.google/blog/waxal-a-large-scale-open-resource-for-african-language-speech-technology/",
+      "snippet": "To address this critical need, we introduce WAXAL: a large-scale, openly accessible speech dataset that initially covers 27 Sub-Saharan African languages spoken ..."
+    },
+    {
+      "title": "WAXAL-NET: Finetuned Edge ASR Across 19 African Languages",
+      "url": "https://www.researchgate.net/publication/405683260_WAXAL-NET_Finetuned_Edge_ASR_Across_19_African_Languages",
+      "snippet": "01.06.2026 ... ... models MMS-300M, Whisper Small, and Whisper Tiny (dark. bars) ... match,. rather than model size alone, is the primary driver. of relative ..."
+    }
+  ]
+}

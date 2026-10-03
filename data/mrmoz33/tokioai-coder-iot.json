@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "MrMoz33/tokioai-coder-iot",
+  "slug": "mrmoz33-tokioai-coder-iot",
+  "author": "MrMoz33",
+  "url": "https://huggingface.co/MrMoz33/tokioai-coder-iot",
+  "created_at": "2026-10-03T16:56:43.000Z",
+  "updated_at": "2026-10-03T16:57:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "iot",
+    "smart-home",
+    "home-assistant",
+    "tool-calling",
+    "agent",
+    "cybersecurity",
+    "devops",
+    "ollama",
+    "inference-pipeline",
+    "autonomous-agent",
+    "raspberry-pi",
+    "qwen3-coder",
+    "text-generation",
+    "en",
+    "es",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MrMoz33/tokioai-3b-cybersec · Hugging Face",
+      "url": "https://huggingface.co/MrMoz33/tokioai-3b-cybersec",
+      "snippet": "This fine-tuned model is the natural evolution of that philosophy: take a small, capable open-source model (Qwen 2.5 3B) and teach it the specific tool-calling patterns that TokioAI uses in production."
+    },
+    {
+      "title": "GitHub - TokioAI/tokioai: Autonomous AI agents that act in the real ...",
+      "url": "https://github.com/TokioAI/tokioai",
+      "snippet": "TokioAI CLI Autonomous AI Agent for the terminal. Cybersecurity, DevOps, Engineering, Hacking, Robotics. 7 providers, 38+ tools, dual-model router, local safety layer, and a persistent autonomous organism mode."
+    },
+    {
+      "title": "TokioAI — Intelligence for Evolution",
+      "url": "https://tokioia.com/",
+      "snippet": "TokioAI Security Research Inc. builds autonomous AI agents that protect, heal, and explore. 100+ tools, multi-LLM engine, open-source philosophy. From cybersecurity to health monitoring to the frontiers of physics."
+    },
+    {
+      "title": "TokioAI/tokioai-v1.8: Autonomous AI Agent Framework - GitHub",
+      "url": "https://github.com/TokioAI/tokioai-v1.8",
+      "snippet": "TokioAI connects Claude, GPT, Gemini, OpenRouter, or Ollama to your servers, databases, Docker containers, IoT devices, drones, robots, medical devices, security tools, and cloud infrastructure through native tool-calling. 5 LLM providers, 37 tools, streaming CLI, health monitoring, robotics control, auto-compaction, subagents, and self-healing ..."
+    },
+    {
+      "title": "Code.org is now CodeAI",
+      "url": "https://code.org/en-US/codeai",
+      "snippet": "Students are using AI every day without understanding it. CodeAI exists to close that gap. We build the technical education students need to understand, direct and question the AI shaping their world."
+    }
+  ]
+}

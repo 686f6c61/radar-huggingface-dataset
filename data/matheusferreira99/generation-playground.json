@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matheusferreira99/generation-playground",
+  "slug": "matheusferreira99-generation-playground",
+  "author": "matheusferreira99",
+  "url": "https://huggingface.co/matheusferreira99/generation-playground",
+  "created_at": "2026-10-03T01:46:26.000Z",
+  "updated_at": "2026-10-03T01:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "目前有哪些主流的AI？ - 知乎",
+      "url": "https://www.zhihu.com/question/591009674",
+      "snippet": "我猜你想找的主流AI，应该是知名度比较大，而且好用的AI。 按照要求，做了一些分类，有需要可以参考。"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    },
+    {
+      "title": "utf 8 - How to decode a (percent encoding URL) that contains Arabic ...",
+      "url": "https://stackoverflow.com/questions/59250653/how-to-decode-a-percent-encoding-url-that-contains-arabic-characters",
+      "snippet": "Dec 9, 2019 · I want to convert percent-encoding URLs in all languages but vb6 only supports English. I have tested the following …"
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    }
+  ]
+}

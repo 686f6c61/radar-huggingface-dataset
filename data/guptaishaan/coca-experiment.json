@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "guptaishaan/coca-experiment",
+  "slug": "guptaishaan-coca-experiment",
+  "author": "guptaishaan",
+  "url": "https://huggingface.co/guptaishaan/coca-experiment",
+  "created_at": "2026-10-03T15:13:39.000Z",
+  "updated_at": "2026-10-03T15:13:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50 Greatest Players in NBA History - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/50_Greatest_Players_in_NBA_History",
+      "snippet": "The 50 Greatest Players in NBA History, also referred to as NBA's 50th Anniversary All-Time Team, were chosen in 1996 to honor …"
+    },
+    {
+      "title": "NBA Legends: Profiling the league's greatest players",
+      "url": "https://www.nba.com/news/history-nba-legends",
+      "snippet": "Sep 14, 2021 · NBA.com profiles the greatest players in NBA history. These are the players that helped make the NBA what it is …"
+    },
+    {
+      "title": "Basketball Legends",
+      "url": "https://basketballlegends.pro/",
+      "snippet": "Basketball Legends features one-on-one and two-on-two basketball matches with legendary players from the past and present. …"
+    },
+    {
+      "title": "Basketball Legends 2020 - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/basketball-legends-2020?msockid=0b7ede74050661861b2bc993041c60ca",
+      "snippet": "Basketball Legends 2020, in HTML5, is the perfect game if you are looking to play some ball alone or with your friends. Play just a …"
+    },
+    {
+      "title": "The 30 Best NBA Players of All Time, Ranked - Complex",
+      "url": "https://www.complex.com/sports/a/adam-caparell/best-nba-players-of-all-time-ranked",
+      "snippet": "Feb 27, 2026 · From Michael Jordan to LeBron James, we rank the 30 greatest NBA players ever in the definitive GOAT debate."
+    }
+  ]
+}

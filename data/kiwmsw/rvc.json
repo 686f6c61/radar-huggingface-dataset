@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Kiwmsw/rvc",
+  "slug": "kiwmsw-rvc",
+  "author": "Kiwmsw",
+  "url": "https://huggingface.co/Kiwmsw/rvc",
+  "created_at": "2026-10-03T13:27:29.000Z",
+  "updated_at": "2026-10-03T13:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101078935,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ECE-Software/t1-nsfw-fp32",
+  "slug": "ece-software-t1-nsfw-fp32",
+  "author": "ECE-Software",
+  "url": "https://huggingface.co/ECE-Software/t1-nsfw-fp32",
+  "created_at": "2026-10-03T12:28:53.000Z",
+  "updated_at": "2026-10-03T12:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "moderation",
+    "image",
+    "t1",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13137569,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECE | Grande École d'Ingénieurs : IA, Cyber, Aéronautique... - ECE",
+      "url": "https://www.ece.fr/",
+      "snippet": "L’ECE est une école d’ingénieurs reconnue pour son excellence, avec des formations de haut niveau et une expérience étudiante …"
+    },
+    {
+      "title": "Programme Ingénieurs - Paris, Lyon, Bordeaux, etc. | ECE",
+      "url": "https://www.ece.fr/programme-grande-ecole-ingenieurs/",
+      "snippet": "Le Programme Ingénieur de l’ECE délivre un diplôme de grade Master, reconnu par le Ministère de l’Enseignement Supérieur. Il …"
+    },
+    {
+      "title": "École centrale d'électronique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89cole_centrale_d%27%C3%A9lectronique",
+      "snippet": "Ouverte en 2018, l'ECE est installée dans l'ancien Garage Citroën dans le 7ème arrondissement, un bâtiment classé rénové en 2013 …"
+    },
+    {
+      "title": "ECE - OMNES Education",
+      "url": "https://www.omneseducation.com/nos-etablissements/nos-ecoles/ece/",
+      "snippet": "Découvrez l’ensemble de nos programmes et les possibilités de poursuivre à vos études en France et à l’international avec l’ECE."
+    },
+    {
+      "title": "ECE - Le Figaro Etudiant",
+      "url": "https://etudiant.lefigaro.fr/annuaire/ecole-d-ingenieur/25270-ece-ecole-d-ingenieurs-engineering-school/",
+      "snippet": "L'ECE est une école d'ingénieurs spécialisée en ingénierie numérique, fondée en 1919."
+    }
+  ]
+}

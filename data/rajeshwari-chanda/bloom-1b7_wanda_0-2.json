@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-1b7_wanda_0.2",
+  "slug": "rajeshwari-chanda-bloom-1b7_wanda_0-2",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-1b7_wanda_0.2",
+  "created_at": "2026-10-03T17:39:58.000Z",
+  "updated_at": "2026-10-03T17:41:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1722408960,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3466615205,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WriteControl - Logiciel d'écriture et imprimer mon livre",
+      "url": "https://www.writecontrol.fr/",
+      "snippet": "WriteControl est une plateforme d'écriture conçue spécialement pour les auteurs. Elle vous offre un environnement innovant pour …"
+    },
+    {
+      "title": "WriteControl - Logiciel d'écriture et imprimer mon livre",
+      "url": "https://www.writecontrol.fr/page/login/_",
+      "snippet": "Logiciel pour écrire un livre, application d'écriture, écrire un roman, écrire en ligne, site pour écrire, application pour écrire un livre, …"
+    },
+    {
+      "title": "WriteControl – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.writecontrol.writecontrol_flutter&hl=fr",
+      "snippet": "WriteControl est un studio d'ecriture pour romanciers et auteurs de fiction. Organisez vos livres, ecrivez vos chapitres et gardez sous …"
+    },
+    {
+      "title": "WriteControl - Writing software and print my book",
+      "url": "https://writecontrol.com/",
+      "snippet": "WriteControl is a writing platform designed especially for authors. It offers you an innovative environment to make it easier to write …"
+    },
+    {
+      "title": "WriteControl - Writing software and print my book",
+      "url": "https://writecontrol.com/page/books",
+      "snippet": "Software to write a book, writing application, write a novel, write online, writing website, app to write a book, word processor, writer …"
+    }
+  ]
+}

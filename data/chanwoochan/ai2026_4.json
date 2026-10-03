@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chanwoochan/ai2026_4",
+  "slug": "chanwoochan-ai2026_4",
+  "author": "chanwoochan",
+  "url": "https://huggingface.co/chanwoochan/ai2026_4",
+  "created_at": "2026-10-03T01:56:36.000Z",
+  "updated_at": "2026-10-03T02:14:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576206801,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chanwoochan (ChanwooKim) - Hugging Face",
+      "url": "https://huggingface.co/chanwoochan/models",
+      "snippet": "User profile of ChanwooKim on Hugging Face"
+    },
+    {
+      "title": "chanwoochan (ChanwooKim) - Hugging Face",
+      "url": "https://huggingface.co/chanwoochan",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 10 days ago ... published a model 10 days ago"
+    },
+    {
+      "title": "Promptchan: Create AI Art & Custom Characters",
+      "url": "https://www.promptchan.info/",
+      "snippet": "Promptchan offers 40+ AI models for cinematic and anime art, custom characters, real-time chat, voice calls and AI video. Start free."
+    },
+    {
+      "title": "AI Model Releases 2026: Latest Benchmarks, Prices & Rankings",
+      "url": "https://renovateqr.com/blog/ai-model-releases-2026",
+      "snippet": "The updated 2026 AI model tracker: verified releases, benchmark scores, context windows, and API prices for GPT, Claude, Gemini, Qwen, DeepSeek, and more."
+    },
+    {
+      "title": "GitHub - Chanwoochan/RC2026_student: .",
+      "url": "https://github.com/Chanwoochan/RC2026_student",
+      "snippet": "본 패키지는 휴머노이드 로봇 RoK-3의 교육용 Gazebo Simulation 입니다. 이 문서는 패키지의 설명 문서이며, 구성은 다음과 같습니다. What to do before simulation Simulation Manual Download and Setting RC2026_student Libraries used in rok3_study_pkgs Package How to run rok3_study_pkgs package, Please read section 2 before proceeding."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ggml-org/GLM-5.3-Flash-GGUF",
+  "slug": "ggml-org-glm-5-3-flash-gguf",
+  "author": "ggml-org",
+  "url": "https://huggingface.co/ggml-org/GLM-5.3-Flash-GGUF",
+  "created_at": "2026-10-03T16:24:34.000Z",
+  "updated_at": "2026-10-03T16:29:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-text-to-text",
+    "base_model:zai-org/GLM-5.3-Flash-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-Flash-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 313326811966,
+  "parameters_human": "313.33B",
+  "storage_bytes": 330065834048,
+  "storage_human": "330.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/GLM-5.3-Flash-GGUF - Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-5.3-Flash-GGUF",
+      "snippet": "17.02.2026 ... We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active parameters, ..."
+    },
+    {
+      "title": "GLM-5.3 - How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3",
+      "snippet": "29.08.2026 ... ai's new 744B parameter (40B active) model. As of Aug 2026, GLM-5.3 is the strongest open-model to date, achieving SOTA on Terminal Bench 3.0 ..."
+    },
+    {
+      "title": "[Megathread] GLM-5.3-Flash - former ox-alpha : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1vyzzxu/megathread_glm53flash_former_oxalpha/",
+      "snippet": "26.08.2026 ... GLM-5.3-Flash is the first natively multimodal model in the GLM-5 series, and the first open-weight release of the glm5_next architecture. Z."
+    },
+    {
+      "title": "GLM-5.3-Flash: Frontier Intelligence, Flash Cost - Z.ai",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "snippet": "26.08.2026 ... We introduce GLM-5.3-Flash, the first natively multimodal model in the GLM-5 series. With 320B total parameters and just 18B active ..."
+    },
+    {
+      "title": "GLM-5.3-Flash: How to Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/glm-5.3-flash",
+      "snippet": "23.09.2026 ... GLM-5.3-Flash, also known as ox-alpha , is Z.ai's new 320B parameter (18B active) multimodal open model which outperforms GLM-5.2."
+    }
+  ]
+}

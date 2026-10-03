@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Savoxism/amid-kd-8xh200-gemma2-2b-it-nnm",
+  "slug": "savoxism-amid-kd-8xh200-gemma2-2b-it-nnm",
+  "author": "Savoxism",
+  "url": "https://huggingface.co/Savoxism/amid-kd-8xh200-gemma2-2b-it-nnm",
+  "created_at": "2026-10-03T15:01:31.000Z",
+  "updated_at": "2026-10-03T15:01:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "knowledge-distillation",
+    "amid-kd-8xh200",
+    "lora",
+    "base_model:adapter:google/gemma-2-2b-it",
+    "text-generation",
+    "conversational",
+    "dataset:VoCuc/UltraInteract-Infer",
+    "base_model:google/gemma-2-2b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80195511,
+  "storage_human": "80 MB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Metrics That Matter",
+      "url": "https://www.metricsthatmatter.com/MTM/default.aspx",
+      "snippet": "Metrics That Matter™ users: log in here to start making precise strategic talent decisions and focus learning investments on your …"
+    },
+    {
+      "title": "Metrics That Matter - Login",
+      "url": "https://www.metricsthatmatter.com/MTMAdmin/",
+      "snippet": "Support continuous improvement in your enterprise learning programs. Forgot Password? © 2026 Explorance Inc. All rights reserved."
+    },
+    {
+      "title": "Metrics that Matter (MTM) Learning Measurement | Explorance",
+      "url": "https://www.explorance.com/products/metrics-that-matter/",
+      "snippet": "Metrics That Matter (MTM) is the leading learning measurement software. Measure training impact, improve learning programs, and …"
+    },
+    {
+      "title": "MTM enrollment for MCT – Metrics That Matter - MCT Community",
+      "url": "https://www.mctcommunity.org/mct-microsoft-certified-trainer/mct-microsoft-certified-trainer-info/mtm-enrollment-for-mct-metrics-that-matter/",
+      "snippet": "Sep 20, 2024 · To register for an MTM ID, you must need to have an MTM login and password to access the Metrics That Matter …"
+    },
+    {
+      "title": "Metrics That Matter - Login",
+      "url": "https://auth.metricsthatmatter.com/s3/login",
+      "snippet": "© 2026 Explorance Inc. All rights reserved."
+    }
+  ]
+}

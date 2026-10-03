@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "h1testh1testmeow/h1-lightglue-probe-20261003",
+  "slug": "h1testh1testmeow-h1-lightglue-probe-20261003",
+  "author": "h1testh1testmeow",
+  "url": "https://huggingface.co/h1testh1testmeow/h1-lightglue-probe-20261003",
+  "created_at": "2026-10-03T14:35:06.000Z",
+  "updated_at": "2026-10-03T14:36:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "h1_lightglue_probe",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "h1testh1testmeow (h1testrightmeow) - Hugging Face",
+      "url": "https://huggingface.co/h1testh1testmeow",
+      "snippet": "User profile of h1testrightmeow on Hugging Face"
+    },
+    {
+      "title": "GitHub - cvg/LightGlue: LightGlue: Local Feature Matching at Light ...",
+      "url": "https://github.com/cvg/LightGlue",
+      "snippet": "LightGlue is a deep neural network that matches sparse local features across image pairs. An adaptive mechanism makes it fast for easy pairs (top) and reduces the computational complexity for difficult ones (bottom). This repository hosts the inference code of LightGlue, a lightweight feature matcher with high accuracy and blazing fast inference."
+    },
+    {
+      "title": "h1testh1testmeow/h1-4036460-b-v2-21122504 · Hugging Face",
+      "url": "https://huggingface.co/h1testh1testmeow/h1-4036460-b-v2-21122504",
+      "snippet": "HackerOne #4036460 controlled reproduction Role: Account B reader for V2_sdxl-to-diffusers."
+    },
+    {
+      "title": "GitHub - SuperCodeAI/LightGlue_kim: LightGlue: Local Feature Matching ...",
+      "url": "https://github.com/SuperCodeAI/LightGlue_kim",
+      "snippet": "LightGlue is a deep neural network that matches sparse local features across image pairs. An adaptive mechanism makes it fast for easy pairs (top) and reduces the computational complexity for difficult ones (bottom). This repository hosts the inference code of LightGlue, a lightweight feature matcher with high accuracy and blazing fast inference."
+    },
+    {
+      "title": "[2306.13643] LightGlue: Local Feature Matching at Light Speed",
+      "url": "https://arxiv.org/abs/2306.13643",
+      "snippet": "We introduce LightGlue, a deep neural network that learns to match local features across images. We revisit multiple design decisions of SuperGlue, the state of the art in sparse matching, and derive simple but effective improvements. Cumulatively, they make LightGlue more efficient - in terms of both memory and computation, more accurate, and much easier to train. One key property is that ..."
+    }
+  ]
+}

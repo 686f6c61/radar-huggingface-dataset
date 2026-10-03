@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "revanth11/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "revanth11-reinforce-pixelcopter-ple-v0",
+  "author": "revanth11",
+  "url": "https://huggingface.co/revanth11/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-10-03T16:38:21.000Z",
+  "updated_at": "2026-10-03T16:38:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforcement-learning",
+    "reinforce",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37,
+  "storage_human": "37 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bavantha11/Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Bavantha11/Pixelcopter-PLE-v0",
+      "snippet": "Bavantha11 / Pixelcopter-PLE-v0 Like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "Bear-ai/Reinforce-Pixelcopter-PLE-v0 · Hugging Face",
+      "url": "https://huggingface.co/Bear-ai/Reinforce-Pixelcopter-PLE-v0",
+      "snippet": "Bear-ai / Reinforce-Pixelcopter-PLE-v0 like 0 Reinforcement Learning Pixelcopter-PLE-v0 reinforce custom-implementation deep-rl-class Eval Results (legacy) Model card FilesFiles and versions xet Community Copy to bucket new Reinforce Agent playing Pixelcopter-PLE-v0"
+    },
+    {
+      "title": "dana11235/Reinforce-PixelCopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "http://zoo.bimant.com/model/305212",
+      "snippet": "This is a trained model of a Reinforce agent playing Pixelcopter-PLE-v0 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "1daniar/Reinforce-Pixelcopter-PLE-v0 - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/262431",
+      "snippet": "# **Reinforce** Agent playing **Pixelcopter-PLE-v0** This is a trained model of a **Reinforce** agent playing **Pixelcopter-PLE-v0** . To learn to use this model and ..."
+    },
+    {
+      "title": "PyGame-Learning-Environment/ple/games/pixelcopter.py at master - GitHub",
+      "url": "https://github.com/ntasfi/PyGame-Learning-Environment/blob/master/ple/games/pixelcopter.py",
+      "snippet": "PyGame Learning Environment (PLE) -- Reinforcement Learning Environment in Python. - ntasfi/PyGame-Learning-Environment"
+    }
+  ]
+}

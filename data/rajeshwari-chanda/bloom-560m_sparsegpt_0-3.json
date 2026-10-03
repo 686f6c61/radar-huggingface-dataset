@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3",
+  "slug": "rajeshwari-chanda-bloom-560m_sparsegpt_0-3",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.3",
+  "created_at": "2026-10-03T16:37:01.000Z",
+  "updated_at": "2026-10-03T16:37:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda/bloom-560m_wanda_0.9 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.9",
+      "snippet": "Rajeshwari-Chanda / bloom-560m_wanda_0.9 Like 0 Text Generation Transformers Safetensors bloom text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "Rajarajeshwari Chanda Rajeshwari-Chanda Follow AI & ML interests None yet Recent Activity updateda model10 days ago"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "[2301.00774] SparseGPT: Massive Language Models Can Be Accurately ...",
+      "url": "https://arxiv.org/abs/2301.00774",
+      "snippet": "We show for the first time that large-scale generative pretrained transformer (GPT) family models can be pruned to at least 50% sparsity in one-shot, without any retraining, at minimal loss of accuracy. This is achieved via a new pruning method called SparseGPT, specifically designed to work efficiently and accurately on massive GPT-family models. We can execute SparseGPT on the largest ..."
+    },
+    {
+      "title": "Chinese AI model investigated after researcher says it provided ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/chinese-ai-model-investigated-after-researcher-says-it-provided-instructions-for-bioweapons-assassinations/ar-AA2dnJQy",
+      "snippet": "Researcher Peter Garrigan says Moonshot AI&#x27;s Kimi model was manipulated into providing instructions for biological weapons and assassination plans."
+    }
+  ]
+}

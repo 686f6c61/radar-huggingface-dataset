@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MaziyarPanahi/ModernJEV-Decide-Preview",
+  "slug": "maziyarpanahi-modernjev-decide-preview",
+  "author": "MaziyarPanahi",
+  "url": "https://huggingface.co/MaziyarPanahi/ModernJEV-Decide-Preview",
+  "created_at": "2026-09-30T10:42:14.000Z",
+  "updated_at": "2026-10-01T11:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "encoder",
+    "decision-model",
+    "tool-routing",
+    "agentic",
+    "preview",
+    "en",
+    "dataset:MaziyarPanahi/AgentToolDecisions-180K",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 113,
+  "trending_score": 12,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 599623654,
+  "storage_human": "600 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maziyar PANAHI on X",
+      "url": "https://x.com/MaziyarPanahi/status/2105952801398419680",
+      "snippet": "vor 1 Tag ... Train your own Jev-style model with one prompt! • $5.40 to train the 60K-decision model, 2h10m on one NVIDIA A100 • $6.60 with setup and ..."
+    },
+    {
+      "title": "MaziyarPanahi (Maziyar Panahi) - Hugging Face",
+      "url": "https://huggingface.co/MaziyarPanahi",
+      "snippet": "AI in Health & Biology, Post-Training, RLHF, RL, model merging ... MaziyarPanahi/ModernJEV-Decide-Preview · View all activity. Organizations. Spark ..."
+    },
+    {
+      "title": "Maziyar P.'s Post - LinkedIn",
+      "url": "https://www.linkedin.com/posts/maziyarpanahi_openai-just-launched-ai-decision-making-as-activity-7511439999662264321-bYfA",
+      "snippet": "vor 2 Tagen ... OpenAI just launched AI decision-making as an API. Mine cost $5.40 ... model is a separate run on 60000 decisions, with a few fixes ..."
+    },
+    {
+      "title": "Maziyar PANAHI - X",
+      "url": "https://x.com/MaziyarPanahi/status/2105654816399564912",
+      "snippet": "vor 2 Tagen ... MaziyarPanahi/ModernJEV-Decide-Preview · Hugging Face. From ... the on-device clinical AI guy | building @OpenMed_AI | making open models ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=modernbert",
+      "snippet": "MaziyarPanahi/ModernJEV-Decide-Preview. Text Classification • 0.1B • Updated ... ProCreations/ai-tracker-bot-classifier. Text Classification • 0.4B ..."
+    }
+  ]
+}

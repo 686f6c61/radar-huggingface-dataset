@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anastasianovikov/classification-int4-2024",
+  "slug": "anastasianovikov-classification-int4-2024",
+  "author": "anastasianovikov",
+  "url": "https://huggingface.co/anastasianovikov/classification-int4-2024",
+  "created_at": "2026-10-03T02:00:49.000Z",
+  "updated_at": "2026-10-03T02:00:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anastasianovikov (Anastasia Novikov) - Hugging Face",
+      "url": "https://huggingface.co/anastasianovikov/models",
+      "snippet": "User profile of Anastasia Novikov on Hugging Face"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "A Voting Classifier Approach to Bloom&#x27;s Taxonomy: Integrating BERT and ...",
+      "url": "https://ieeexplore.ieee.org/document/11538901",
+      "snippet": "This research proposes a hybrid model combining Discriminative AI with Generative AI using a voting classifier. This ensemble integrates an advanced Bidirectional Encoder Representations from Transformers (BERT) model with Generative Pre-trained Transformer (GPT). For this reason, we finetuned two models based on GPT architecture."
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+      "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    },
+    {
+      "title": "[2301.12017] Understanding INT4 Quantization for Transformer Models ...",
+      "url": "https://arxiv.org/abs/2301.12017",
+      "snippet": "Improving the deployment efficiency of transformer-based language models has been challenging given their high computation and memory cost. While INT8 quantization has recently been shown to be effective in reducing both the memory cost and latency while preserving model accuracy, it remains unclear whether we can leverage INT4 (which doubles peak hardware throughput) to achieve further ..."
+    }
+  ]
+}

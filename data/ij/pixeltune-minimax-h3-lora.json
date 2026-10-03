@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ij/PixelTune-MiniMax-H3-LoRA",
+  "slug": "ij-pixeltune-minimax-h3-lora",
+  "author": "ij",
+  "url": "https://huggingface.co/ij/PixelTune-MiniMax-H3-LoRA",
+  "created_at": "2026-10-03T13:24:45.000Z",
+  "updated_at": "2026-10-03T13:26:02.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "pixel-art",
+    "animation",
+    "diffsynth",
+    "text-to-video",
+    "en",
+    "ko",
+    "dataset:trojblue/test-HunyuanVideo-pixelart-videos",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 623362368,
+  "storage_human": "623 MB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arrêt maladie : indemnités journalières versées au salarié",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3053",
+      "snippet": "Vous souhaitez connaître les conditions d'indemnisation, savoir s'il y a un délai de carence avant de percevoir vos IJ, leur montant …"
+    },
+    {
+      "title": "Arrêt de travail pour maladie : les indemnités journalières du salarié",
+      "url": "https://www.ameli.fr/assure/remboursements/indemnites-journalieres-maladie-maternite-paternite/indemnites-journalieres-pour-maladie/arret-maladie-salarie",
+      "snippet": "Sep 1, 2026 · Les indemnités journalières (IJ) vous sont versées par l'Assurance Maladie pour compenser la perte de vos allocations …"
+    },
+    {
+      "title": "Montants maximum des indemnités journalières (IJ) - ameli",
+      "url": "https://www.ameli.fr/entreprise/vos-salaries/montants-reference/indemnites-journalieres-montants-maximum",
+      "snippet": "Jun 1, 2026 · Connaître le montant maximal des indemnités journalières (IJ) de l’Assurance Maladie vous permet de calculer le …"
+    },
+    {
+      "title": "IJ Connect – Info Jeunes France",
+      "url": "https://infojeunesfrance.org/ijconnect/",
+      "snippet": "Ce parcours, destiné à tou (te)s les pros du réseau IJ, vous accompagne progressivement dans la découverte et l’utilisation …"
+    },
+    {
+      "title": "Bienvenue dans votre portail IJ",
+      "url": "https://portailij.fr/",
+      "snippet": "Veuillez saisir votre identifiant : Suivant"
+    }
+  ]
+}

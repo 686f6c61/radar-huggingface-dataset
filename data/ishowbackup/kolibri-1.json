@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/Kolibri-1",
+  "slug": "ishowbackup-kolibri-1",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/Kolibri-1",
+  "created_at": "2026-10-03T13:17:13.000Z",
+  "updated_at": "2026-10-03T13:17:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kolibri1",
+    "reasoning",
+    "moe",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "arxiv:2512.11614",
+    "arxiv:2601.17858",
+    "base_model:Aleph-Alpha/Kolibri-1-BF16",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1-BF16",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 78852606661,
+  "storage_human": "78.9 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

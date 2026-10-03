@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/Qwen3.5-9B-TAP-DPQ-v6-GGUF",
+  "slug": "duoneural-qwen3-5-9b-tap-dpq-v6-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/Qwen3.5-9B-TAP-DPQ-v6-GGUF",
+  "created_at": "2026-10-03T01:50:55.000Z",
+  "updated_at": "2026-10-03T03:02:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "duoneural",
+    "tap-dpq-v6",
+    "experimental",
+    "1-bit",
+    "2-bit",
+    "non-equilibrium-thermodynamics",
+    "lyapunov-stability",
+    "onsager-cavity",
+    "hurwitz-pencil",
+    "gated deltanet + multi-head self-attention hybrid",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 725,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 19703657088,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carolyn Jones, photographer, filmmaker, author and speaker",
+      "url": "https://www.carolynjones.com/about/",
+      "snippet": "Raised in Pennsylvania and a graduate of Syracuse University’s S.I. Newhouse School, Jones started her career as a fashion …"
+    },
+    {
+      "title": "Carolyn Jones Productions, documentary film and photography",
+      "url": "https://www.carolynjones.com/",
+      "snippet": "Carolyn Jones has spent the last ten years interviewing, photographing and filming nurses across America, traveling to places …"
+    },
+    {
+      "title": "Carolyn Jones (filmmaker) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Carolyn_Jones_(Filmmaker)",
+      "snippet": "Carolyn Jones is an American director, writer, producer, photographer and speaker. She is best known for her 1997 book publication …"
+    },
+    {
+      "title": "Carolyn Jones - TEDMED",
+      "url": "https://www.tedmed.com/person/carolyn-jones/",
+      "snippet": "Carolyn Jones is a celebrated photographer and documentary filmmaker known for her powerful work that highlights social issues. …"
+    },
+    {
+      "title": "Carolyn Jones (filmmaker) - Notable People",
+      "url": "https://notablepeopleproject.org/carolyn_jones_filmmaker",
+      "snippet": "Carolyn Jones is an American documentary filmmaker, photographer, author, and speaker known for her deeply humanistic portraits …"
+    }
+  ]
+}

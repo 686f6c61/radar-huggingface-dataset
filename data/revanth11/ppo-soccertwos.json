@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "revanth11/ppo-SoccerTwos",
+  "slug": "revanth11-ppo-soccertwos",
+  "author": "revanth11",
+  "url": "https://huggingface.co/revanth11/ppo-SoccerTwos",
+  "created_at": "2026-10-03T16:38:38.000Z",
+  "updated_at": "2026-10-03T16:38:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-SoccerTwos",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30,
+  "storage_human": "30 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bawani/ML-Agents-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/bawani/ML-Agents-SoccerTwos",
+      "snippet": "The SoccerTwos model represents a breakthrough in multi-agent reinforcement learning, where four AI agents (two teams of two players each) learn to play soccer through self-play and competitive training."
+    },
+    {
+      "title": "Ravikanth8788/ppo-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/Ravikanth8788/ppo-SoccerTwos",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Soccer Twos | Reinforcement-Learning",
+      "url": "https://deepanshut041.github.io/Reinforcement-Learning/mlagents/05_soccer_twos/",
+      "snippet": "Implementations of Deep Reinforcement Learning Algorithms and Bench-marking with PyTorch Soccer Twos In this projects we&#x27;ll implementing agents that learns to play Unity Soccer Twos using several Deep Rl algorithms. Unity Ml Agents is a toolkit for developing and comparing reinforcement learning algorithms. We&#x27;ll be using pytorch library for the implementation. Libraries Used Unity Ml ..."
+    },
+    {
+      "title": "SoccerTwos: AI vs AI Challenge | huggingface/deep-rl-class | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/deep-rl-class/8.1-soccertwos:-ai-vs-ai-challenge",
+      "snippet": "This document details the SoccerTwos AI vs AI Challenge, a hands-on multi-agent reinforcement learning exercise where you train a 2vs2 soccer team to compete against opponents in an automated evaluati"
+    },
+    {
+      "title": "blog/aivsai.md at main · huggingface/blog · GitHub",
+      "url": "https://github.com/huggingface/blog/blob/main/aivsai.md",
+      "snippet": "We&#x27;re excited to introduce a new tool we created: ⚔️ AI vs. AI ⚔️, a deep reinforcement learning multi-agents competition system. This tool, hosted on Spaces, allows us to create multi-agent competitions. It is composed of three elements: A Space with a matchmaking algorithm that runs the model fights using a background task. A Dataset containing the results. A Leaderboard that gets ..."
+    }
+  ]
+}

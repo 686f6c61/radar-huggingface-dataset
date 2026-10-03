@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BluePrintSky/MinimaxH3Assets",
+  "slug": "blueprintsky-minimaxh3assets",
+  "author": "BluePrintSky",
+  "url": "https://huggingface.co/BluePrintSky/MinimaxH3Assets",
+  "created_at": "2026-10-03T01:20:42.000Z",
+  "updated_at": "2026-10-03T01:27:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3074214266,
+  "storage_human": "3.1 GB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Amazon.fr: Accueil",
+      "url": "https://www.amazon.fr/stores/Accueil/page/23F8EF0A-257A-4D34-973B-1F812A5D9BC6",
+      "snippet": "Besoin d'aide ? Voir ou suivre vos commandes Tarifs et options de livraison Amazon Prime Retour, remplacement ou retractation …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=14839058031",
+      "snippet": "Consultez chaque page produit pour connaître les autres options d'achat. Achat en ligne de dans un vaste choix sur la boutique …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.cdn.amazon.fr/b?node=27173183031",
+      "snippet": "La livraison gratuite est-elle disponible pour toutes les adresses ? La livraison gratuite est disponible en France métropolitaine et …"
+    },
+    {
+      "title": "Amazon.com: Amazon.fr",
+      "url": "https://www.amazon.com/Amazon-fr/s?k=Amazon.fr",
+      "snippet": "Shop Amazon in a different country or region. Check each product page for other buying options. Price and other details may vary …"
+    }
+  ]
+}

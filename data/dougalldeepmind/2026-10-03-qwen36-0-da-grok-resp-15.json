@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-10-03-qwen36-0-da-grok-resp-15",
+  "slug": "dougalldeepmind-2026-10-03-qwen36-0-da-grok-resp-15",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-10-03-qwen36-0-da-grok-resp-15",
+  "created_at": "2026-10-03T02:16:20.000Z",
+  "updated_at": "2026-10-03T02:16:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dougalldeepmind/2026-10-02-qwen36-0-da-grok-15 at main",
+      "url": "https://huggingface.co/dougalldeepmind/2026-10-02-qwen36-0-da-grok-15/tree/main",
+      "snippet": "Like 0 Follow Dougall DeepMind 4 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new main 2026-10-02-qwen36--da-grok-15 1.3 GB Ctrl+K Ctrl+K 1 contributor History:2 commits jamie-stephenson Upload folder using huggingface_hub eea47f7 verifiedabout 6 hours ago .gitattributes Safe 1.57 kBUpload folder using ..."
+    },
+    {
+      "title": "Grok - GPT",
+      "url": "https://grok.com/",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "dougalldeepmind/2026-09-29-qwen36-0-da-15 · Hugging Face",
+      "url": "https://huggingface.co/dougalldeepmind/2026-09-29-qwen36-0-da-15",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Projects - Grok",
+      "url": "https://grok.com/project",
+      "snippet": "Grok is an AI assistant built by SpaceXAI. Chat, create images, write code, and get real-time answers from the web and X."
+    },
+    {
+      "title": "AI Updates Today (October 2026) - Latest AI Model Releases",
+      "url": "https://llm-stats.com/llm-updates",
+      "snippet": "Track recent AI model releases, API changes, pricing updates, and feature launches across the major model providers in one daily changelog."
+    }
+  ]
+}

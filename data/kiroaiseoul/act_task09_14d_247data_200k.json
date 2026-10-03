@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task09_14D_247data_200k",
+  "slug": "kiroaiseoul-act_task09_14d_247data_200k",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task09_14D_247data_200k",
+  "created_at": "2026-10-03T18:11:33.000Z",
+  "updated_at": "2026-10-03T18:12:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kiroaiseoul/task09_close_refrigerator_14D_247data",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Lost Adventures Codes (September 2026) [D4C] [R]",
+      "url": "https://progameguides.com/roblox/the-lost-adventures-codes/",
+      "snippet": "6 days ago · Obliterate your opponents as you show them who the true stand master is, thanks to The Lost Adventures codes. Use …"
+    },
+    {
+      "title": "The Lost Adventures Codes (October 2026) - Twinfinite",
+      "url": "https://twinfinite.net/codes/the-lost-adventures-codes/",
+      "snippet": "1 day ago · Use the available The Lost Adventures codes to collect free Yen, Locacaca Fruit, and Strange Arrows, and test different …"
+    },
+    {
+      "title": "The Lost Adventures [R] Codes (October 2026) - gamestratwiki.com",
+      "url": "https://gamestratwiki.com/the-lost-adventures-r-codes/",
+      "snippet": "1 day ago · The Lost Adventures [R] Codes (October 2026): Grab the latest free cash, keys, and strange arrows. Check out our …"
+    },
+    {
+      "title": "The Lost Adventures Codes (September 2026) | Roblox Den",
+      "url": "https://robloxden.com/game-codes/the-lost-adventures",
+      "snippet": "5 days ago · A complete list of all The Lost Adventures Roblox game codes that was last updated in September 2026 and includes …"
+    },
+    {
+      "title": "The Lost Adventures codes September 2026 - Pocket Tactics",
+      "url": "https://www.pockettactics.com/the-lost-adventures-codes",
+      "snippet": "Jun 29, 2026 · Redeem these new Roblox The Lost Adventures codes for free yen, locacaca fruit, and keys in this JJBA-inspired …"
+    }
+  ]
+}

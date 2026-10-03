@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vipenl26/anlp-assignment-2-part1-moe_top1",
+  "slug": "vipenl26-anlp-assignment-2-part1-moe_top1",
+  "author": "vipenl26",
+  "url": "https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_top1",
+  "created_at": "2026-10-03T14:46:54.000Z",
+  "updated_at": "2026-10-03T14:55:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202520984,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chtMultiRegionFoam wallHeatFlux mismatch - CFD Online",
+      "url": "https://www.cfd-online.com/Forums/openfoam-post-processing/221164-chtmultiregionfoam-wallheatflux-mismatch.html",
+      "snippet": "Dear CFD-ehtousiasts, Currently I am working on a model that should capture the convective heat transfer between a coil, with hot …"
+    },
+    {
+      "title": "Question about adjustableRunTime - CFD Online",
+      "url": "https://www.cfd-online.com/Forums/openfoam-solving/224164-question-about-adjustableruntime.html",
+      "snippet": "Feb 10, 2020 · Hi all, I have a very basic question about the concept of the #adjustableRunTime. I know it is used to set the time step …"
+    },
+    {
+      "title": "Write data at specific times, not intervals - CFD Online",
+      "url": "https://www.cfd-online.com/Forums/openfoam/217350-write-data-specific-times-not-intervals.html",
+      "snippet": "Is it possible to write data at specified times (timesteps) instead of fixed intervals? I want to output data multiple times only at the end of"
+    },
+    {
+      "title": "coded function in openFOAM 11 -- CFD Online Discussion Forums",
+      "url": "https://www.cfd-online.com/Forums/openfoam-programming-development/251079-coded-function-openfoam-11-a.html",
+      "snippet": "In openFOAM v10, I have a function that calculates the volume-averaged flowspeed everywhere in my models. Inside …"
+    },
+    {
+      "title": "functionObjects with different executeTime and writeTime",
+      "url": "https://www.cfd-online.com/Forums/openfoam-solving/232001-functionobjects-different-executetime-writetime.html",
+      "snippet": "Hello Community, I am using an OpenFOAM 4.x version and I can't figure out, how to write the correct settings for a specific …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-conservative",
+  "slug": "dhresearch-quality-router-v2-conservative",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-conservative",
+  "created_at": "2026-10-03T16:42:39.000Z",
+  "updated_at": "2026-10-03T16:42:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-main",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1729163,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPSI : Ecole informatique",
+      "url": "https://www.epsi.fr/",
+      "snippet": "L’EPSI est l’école de l’ingénierie informatique créée en 1961 par des professionnels du secteur pour répondre en temps réel aux …"
+    },
+    {
+      "title": "Formations EPSI : BTS, Bachelors et Mastères en informatique",
+      "url": "https://www.epsi.fr/programmes",
+      "snippet": "Découvrez les programmes EPSI : des parcours en informatique de Bac à Bac+5, en initial ou en alternance"
+    },
+    {
+      "title": "EPSI – European Platform for Sport Innovation (EPSI)",
+      "url": "https://www.epsi.eu/",
+      "snippet": "EPSI is an international non-profit organization based in Brussels representing a network of sport-related private and public members …"
+    },
+    {
+      "title": "EPSI Masking Solutions: Industrial Finishing & Racking Products - EPSI ...",
+      "url": "https://www.epsi.com/",
+      "snippet": "Need help choosing the right product or process? Contact EPSI to review your part, line conditions, process temperature, masking …"
+    },
+    {
+      "title": "EPSI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/EPSI",
+      "snippet": "EPSI The École privée des sciences informatiques (EPSI) is a French private school specialized in information technology. EPSI was …"
+    }
+  ]
+}

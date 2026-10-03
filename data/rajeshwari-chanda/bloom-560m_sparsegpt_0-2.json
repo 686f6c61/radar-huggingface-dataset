@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_sparsegpt_0.2",
+  "slug": "rajeshwari-chanda-bloom-560m_sparsegpt_0-2",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.2",
+  "created_at": "2026-10-03T16:34:53.000Z",
+  "updated_at": "2026-10-03T16:35:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda/bloom-560m_wanda_0.9 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.9",
+      "snippet": "Rajeshwari-Chanda / bloom-560m_wanda_0.9 Like 0 Text Generation Transformers Safetensors bloom text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "Text Generation •3B•Updated 10 days ago•23 Rajeshwari-Chanda/OPT-2.7B_SparseGPT_60"
+    },
+    {
+      "title": "[2301.00774] SparseGPT: Massive Language Models Can Be Accurately ...",
+      "url": "https://arxiv.org/abs/2301.00774",
+      "snippet": "We can execute SparseGPT on the largest available open-source models, OPT-175B and BLOOM-176B, in under 4.5 hours, and can reach 60% unstructured sparsity with negligible increase in perplexity: remarkably, more than 100 billion weights from these models can be ignored at inference time."
+    },
+    {
+      "title": "Sparsegpt: Massive Language Models B a Pruned in One-shot",
+      "url": "https://arxiv.org/pdf/2301.00774v2",
+      "snippet": "ABSTRACT We show for the first time that large-scale generative pretrained transformer (GPT) family models can be pruned to at least 50% sparsity in one-shot, without any retraining, at minimal loss of accuracy. This is achieved via a new pruning method called SparseGPT, specifically designed to work efficiently and accurately on massive GPT-family models. When executing SparseGPT on the ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    }
+  ]
+}

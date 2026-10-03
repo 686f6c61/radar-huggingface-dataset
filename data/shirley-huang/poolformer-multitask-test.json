@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shirley-huang/poolformer-multitask-test",
+  "slug": "shirley-huang-poolformer-multitask-test",
+  "author": "shirley-huang",
+  "url": "https://huggingface.co/shirley-huang/poolformer-multitask-test",
+  "created_at": "2026-10-03T01:40:35.000Z",
+  "updated_at": "2026-10-03T01:40:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Que sont devenus Shirley et Dino ? \"En maison de retraite\", les ...",
+      "url": "https://www.pleinevie.fr/loisirs/celebrites/que-sont-devenus-shirley-et-dino-en-maison-de-retraite-les-comediens-sont-ils-toujours-en-couple-138747.html",
+      "snippet": "Nov 13, 2024 · Shirley et Dino ont formé pendant de nombreuses années un duo comique emblématique. Mais que se sont-ils …"
+    },
+    {
+      "title": "Shirley (roman) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Shirley_(roman)",
+      "snippet": "Sa popularité a permis à « Shirley », prénom jusqu'alors exclusivement masculin, de devenir un prénom de femme (dans le roman, …"
+    },
+    {
+      "title": "Shirley et Dino : la vraie raison de leur séparation enfin révélée",
+      "url": "https://ally43.fr/a-la-une/37545-shirley-et-dino-la-vraie-raison-de-leur-separation-enfin-revelee/",
+      "snippet": "May 3, 2026 · Shirley et Dino ont marqué le public français pendant des années. Leur humour décalé, leurs personnages uniques et …"
+    },
+    {
+      "title": "« Shirley » : qui était Shirley Chisholm ? L'histoire vraie derrière le ...",
+      "url": "https://www.femina.fr/article/shirley-qui-etait-shirley-chisholm-l-histoire-vraie-derriere-le-biopic-a-succes-de-netflix",
+      "snippet": "Mar 26, 2024 · La semaine dernière, Netflix a dévoilé un nouveau film : « Shirley ». Un biopic porté par l’actrice Regina King, qui …"
+    },
+    {
+      "title": "Shirley (2020 film) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Shirley_(2020_film)",
+      "snippet": "Shirley begins to write again, announcing a new work based on Paula Jean Welden, a young woman who recently disappeared from …"
+    }
+  ]
+}

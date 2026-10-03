@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wasedarobotics/deit-matching",
+  "slug": "wasedarobotics-deit-matching",
+  "author": "wasedarobotics",
+  "url": "https://huggingface.co/wasedarobotics/deit-matching",
+  "created_at": "2026-10-03T15:22:16.000Z",
+  "updated_at": "2026-10-03T15:22:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème de taille sur youtube - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-20268916-probleme-de-taille-sur-youtube",
+      "snippet": "Bonjour, je voulais savoir comment faire pour agrandir la taille de ma page Youtube. Avant, j'appuyais sur Ctrl et la souris en même …"
+    },
+    {
+      "title": "Mixture-of-Agents Assisted Interactive Planning for Behavior Tree ...",
+      "url": "https://arxiv.org/html/2603.01113v3",
+      "snippet": "28.08.2026 ... This study presented a framework for long-horizon robot task execution that combines interactive LLM-based planning, MoA answering, and BT ..."
+    },
+    {
+      "title": "Comment se débarrasser de oneclickstarter",
+      "url": "https://forums.commentcamarche.net/forum/affich-30550314-comment-se-debarrasser-de-oneclickstarter",
+      "snippet": "kaneagle Messages postés 86295 Date d'inscription mercredi 27 mai 2009 Statut Modérateur Dernière intervention 23 juillet 2026 14 …"
+    },
+    {
+      "title": "Frontiers in Robotics and AI | Robot Learning and Evolution",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/sections/robot-learning-and-evolution/about",
+      "snippet": "A.E. Eiben from VU Amsterdam and Dr. Tetsuya Ogata from Waseda University, the Robot Learning and Evolution section welcomes submissions in various domains of ..."
+    },
+    {
+      "title": "Topic [YTB] On a les pires youtubeurs Hardware - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-6-67692925-1-0-1-0-ytb-on-a-les-pires-youtubeurs-hardware.htm",
+      "snippet": "Sep 17, 2021 · Accueil Tous les forums Forum principal Informatique Forum Hardware Topic [YTB] On a les pires youtubeurs …"
+    }
+  ]
+}

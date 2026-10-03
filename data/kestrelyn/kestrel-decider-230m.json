@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "id": "Kestrelyn/kestrel-decider-230m",
+  "slug": "kestrelyn-kestrel-decider-230m",
+  "author": "Kestrelyn",
+  "url": "https://huggingface.co/Kestrelyn/kestrel-decider-230m",
+  "created_at": "2026-10-03T02:15:03.000Z",
+  "updated_at": "2026-10-03T02:15:13.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "lora",
+    "lfm2.5",
+    "edge",
+    "text-classification",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "dataset:legacy-datasets/banking77",
+    "dataset:clinc/clinc_oos",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:papluca/language-identification",
+    "dataset:community-datasets/yahoo_answers_topics",
+    "dataset:ucirvine/sms_spam",
+    "dataset:google/civil_comments",
+    "dataset:nyu-mll/glue",
+    "dataset:google/boolq",
+    "dataset:google-research-datasets/paws",
+    "dataset:tals/vitaminc",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:SetFit/sst5",
+    "dataset:sealuzh/app_reviews",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "dataset:tasksource/ruletaker",
+    "dataset:dair-ai/emotion",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:raquiba/Sarcasm_News_Headline",
+    "dataset:ucberkeley-dlab/measuring-hate-speech",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:tasksource/Boardgame-QA",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:LiquidAI/LFM2.5-230M-Base",
+    "base_model:adapter:LiquidAI/LFM2.5-230M-Base",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17660576,
+  "storage_human": "18 MB",
+  "base_model": "LiquidAI/LFM2.5-230M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 3072",
+      "metric": "accuracy (147/231)",
+      "value": 0.6364
+    },
+    {
+      "task": null,
+      "dataset": "eval: held-out short tasks",
+      "metric": "accuracy (n=6000)",
+      "value": 0.567
+    },
+    {
+      "task": null,
+      "dataset": "eval: boardgame",
+      "metric": "accuracy (n=900)",
+      "value": 0.596
+    },
+    {
+      "task": null,
+      "dataset": "eval: contractnli",
+      "metric": "accuracy (n=1026)",
+      "value": 0.828
+    },
+    {
+      "task": null,
+      "dataset": "eval: hotpotqa (held out)",
+      "metric": "accuracy (n=959)",
+      "value": 0.552
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique",
+      "metric": "accuracy (n=1199)",
+      "value": 0.871
+    },
+    {
+      "task": null,
+      "dataset": "eval: generated_v16_eval",
+      "metric": "accuracy (n=350)",
+      "value": 0.6914
+    },
+    {
+      "task": null,
+      "dataset": "eval: generated_v18_eval",
+      "metric": "accuracy (n=247)",
+      "value": 0.6965
+    },
+    {
+      "task": null,
+      "dataset": "eval: adequacy_hs2",
+      "metric": "accuracy (n=234)",
+      "value": 0.564
+    },
+    {
+      "task": null,
+      "dataset": "eval: gen:adequacy",
+      "metric": "accuracy (n=302)",
+      "value": 0.623
+    }
+  ],
+  "sources": [
+    {
+      "title": "synetalsolutions/kestrel-ai: Kestrel AI - GitHub",
+      "url": "https://github.com/synetalsolutions/kestrel-ai",
+      "snippet": "Kestrel AI Gateway A Cost-Aware, Self-Healing Multi-Model AI Gateway for Cursor, VS Code, and beyond One endpoint. 26+ models from 4 providers. Zero config routing + built-in context truncation that saves up to 98% on LLM costs."
+    },
+    {
+      "title": "Kestrel | Scalable Autonomy For Sensing and Effects",
+      "url": "https://kestrelintelligence.com/",
+      "snippet": "Kestrel Intelligence: autonomous ISR, AI-driven sensing, and scalable defense technology. See what&#x27;s happening anywhere on Earth without being a sensor expert."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 783 AI models across 645 benchmarks, with 212 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Liquid AI LFM 2.5-230M: 230M Model Beats 1B Transformer on Edge",
+      "url": "https://byteiota.com/liquid-ai-lfm25-230m-edge-ai/",
+      "snippet": "A 230-million-parameter model just outscored a 1-billion-parameter transformer on data extraction — and you can run it on a Raspberry Pi 5 today. Liquid AI released LFM 2.5-230M on June 25, 2026."
+    }
+  ]
+}

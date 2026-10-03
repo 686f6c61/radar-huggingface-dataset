@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4",
+  "slug": "sjoe1244-ace-step-v1-5-xl-turbo-nvfp4",
+  "author": "sjoe1244",
+  "url": "https://huggingface.co/sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4",
+  "created_at": "2026-10-03T00:50:30.000Z",
+  "updated_at": "2026-10-03T04:30:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music",
+    "audio",
+    "comfyui",
+    "nvfp4",
+    "text-to-audio",
+    "base_model:ACE-Step/acestep-v15-xl-turbo",
+    "base_model:finetune:ACE-Step/acestep-v15-xl-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6244196386,
+  "storage_human": "6.2 GB",
+  "base_model": "ACE-Step/acestep-v15-xl-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4 · Hugging Face",
+      "url": "https://huggingface.co/sjoe1244/ACE-Step-v1.5-xl-turbo-nvfp4",
+      "snippet": "The converter had quantized the small tokenizer.audio_acoustic_proj layer (64 → 2048), which gets a transposed, non-contiguous input in that path, and comfy-kitchen&#x27;s NVFP4 input quantizer needs a contiguous tensor."
+    },
+    {
+      "title": "ACE-Step 1.5 - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5",
+      "snippet": "🚀 We present ACE-Step v1.5, a highly efficient open-source music foundation model that brings commercial-grade generation to consumer hardware. On commonly used evaluation metrics, ACE-Step v1.5 achieves quality beyond most commercial music models while remaining extremely fast—under 2 seconds per full song on an A100 and under 10 seconds on an RTX 3090. The model runs locally with less ..."
+    },
+    {
+      "title": "ACE-Step-1.5/acestep/models/xl_turbo at main - GitHub",
+      "url": "https://github.com/ace-step/ACE-Step-1.5/tree/main/acestep/models/xl_turbo",
+      "snippet": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices. - ace-step/ACE-Step-1.5"
+    },
+    {
+      "title": "ACE-Step/acestep-v15-xl-turbo · Hugging Face",
+      "url": "https://huggingface.co/ACE-Step/acestep-v15-xl-turbo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ace Step 1.5 XL Turbo and SFT - TEXT to AUDIO model with Ollama",
+      "url": "https://civitai.com/models/2375403/ace-step-15-xl-turbo-and-sft-text-to-audio-model-with-ollama",
+      "snippet": "V1.6 Ace Step 1.5. Turbo and SFT normal and XL model with Ollama. updated the settings for XL models and added a 3rd System Prompt for tags to chose, with more descriptive song descriptions. 1.5 XL SFT pipeline now has an \"Adaptive Projected Guidance\" node and negative prompt. ** See below some tips which model and settings to start with."
+    }
+  ]
+}

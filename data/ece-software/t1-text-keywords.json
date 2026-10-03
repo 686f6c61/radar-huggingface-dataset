@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ECE-Software/t1-text-keywords",
+  "slug": "ece-software-t1-text-keywords",
+  "author": "ECE-Software",
+  "url": "https://huggingface.co/ECE-Software/t1-text-keywords",
+  "created_at": "2026-10-03T12:34:04.000Z",
+  "updated_at": "2026-10-03T12:34:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moderation",
+    "text",
+    "t1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECE | Grande École d'Ingénieurs : IA, Cyber, Aéronautique... - ECE",
+      "url": "https://www.ece.fr/",
+      "snippet": "L’ECE est une école d’ingénieurs reconnue pour son excellence, avec des formations de haut niveau et une expérience étudiante …"
+    },
+    {
+      "title": "(PDF) A new era in early childhood education (ECE) - ResearchGate",
+      "url": "https://www.researchgate.net/publication/389747657_A_new_era_in_early_childhood_education_ECE_Teachers'_opinions_on_the_application_of_artificial_intelligence",
+      "snippet": "11.03.2025 ... eling and drawing a model related to AI. Keywords Artiﬁcial intelligence · Early childhood education · Preschool teachers. * Bekir ..."
+    },
+    {
+      "title": "Programme Ingénieurs - Paris, Lyon, Bordeaux, etc. | ECE",
+      "url": "https://www.ece.fr/programme-grande-ecole-ingenieurs/",
+      "snippet": "Le Programme Ingénieur de l’ECE délivre un diplôme de grade Master, reconnu par le Ministère de l’Enseignement Supérieur. Il …"
+    },
+    {
+      "title": "École centrale d'électronique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89cole_centrale_d%27%C3%A9lectronique",
+      "snippet": "Ouverte en 2018, l'ECE est installée dans l'ancien Garage Citroën dans le 7ème arrondissement, un bâtiment classé rénové en 2013 …"
+    },
+    {
+      "title": "ECE - OMNES Education",
+      "url": "https://www.omneseducation.com/nos-etablissements/nos-ecoles/ece/",
+      "snippet": "Découvrez l’ensemble de nos programmes et les possibilités de poursuivre à vos études en France et à l’international avec l’ECE."
+    }
+  ]
+}

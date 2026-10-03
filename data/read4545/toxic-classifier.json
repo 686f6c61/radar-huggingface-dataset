@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "read4545/toxic-classifier",
+  "slug": "read4545-toxic-classifier",
+  "author": "read4545",
+  "url": "https://huggingface.co/read4545/toxic-classifier",
+  "created_at": "2026-10-03T01:19:17.000Z",
+  "updated_at": "2026-10-03T01:20:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 110583966,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AiresPucrs/toxicity-classifier · Hugging Face",
+      "url": "https://huggingface.co/AiresPucrs/toxicity-classifier",
+      "snippet": "Toxicity Classifier (Teeny-Tiny Castle) This model is part of a tutorial tied to the Teeny-Tiny Castle, an open-source repository containing educational tools for AI Ethics and Safety research."
+    },
+    {
+      "title": "Toxic-classifier/README.md at main - GitHub",
+      "url": "https://github.com/Ritesh200508/Toxic-classifier/blob/main/README.md",
+      "snippet": "A lightweight NLP project that classifies toxic comments using a 3-step text cleaning pipeline, 1 TF-IDF vectorizer, and 1 ML model. The classifier predicts 6 toxicity categories and achieves strong performance with accuracy, precision, recall, and F1-score metrics."
+    },
+    {
+      "title": "GitHub - Vishwajyothireshmi/toxic-text-classifier: An AI-powered system ...",
+      "url": "https://github.com/Vishwajyothireshmi/toxic-text-classifier",
+      "snippet": "This project aims to detect toxic comments using a fine-tuned BERT model. It leverages deep learning and transformer-based NLP techniques to classify user-generated comments as toxic or non-toxic, helping moderate harmful content online."
+    },
+    {
+      "title": "s-nlp/roberta_toxicity_classifier · Hugging Face",
+      "url": "https://huggingface.co/s-nlp/roberta_toxicity_classifier",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Toxicity classifier | tfjs-models",
+      "url": "https://megathelegend.github.io/tfjs-models/toxicity/",
+      "snippet": "Toxicity classifier The toxicity model detects whether text contains toxic content such as threatening language, insults, obscenities, identity-based hate, or sexually explicit language."
+    }
+  ]
+}

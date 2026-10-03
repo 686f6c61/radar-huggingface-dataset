@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "gouravrishi/gpt-news-classifier123",
+  "slug": "gouravrishi-gpt-news-classifier123",
+  "author": "gouravrishi",
+  "url": "https://huggingface.co/gouravrishi/gpt-news-classifier123",
+  "created_at": "2026-10-03T17:38:30.000Z",
+  "updated_at": "2026-10-03T17:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "No other sex tube is more popular and features more Pornhub scenes than Pornhub! Browse through our impressive selection of …"
+    },
+    {
+      "title": "Understanding AI-Generated Misinformation and Evaluating ...",
+      "url": "https://dl.acm.org/doi/fullHtml/10.1145/3544548.3581318",
+      "snippet": "For example, in the AAAI 2021 COVID-19 Fake News Detection challenge [83], the winning team achieved a weighted F1-score of 0.987 in classifying fake news from ..."
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le plus vaste site porno du monde. L'équipe de Pornhub met à jour et ajoute constamment de nouvelles vidéos …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Explore a massive collection of free HD streaming videos updated daily with trending categories, popular stars, and smooth mobile …"
+    }
+  ]
+}

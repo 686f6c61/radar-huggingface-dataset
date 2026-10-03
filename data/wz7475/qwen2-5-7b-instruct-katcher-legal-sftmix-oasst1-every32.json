@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-sftmix-oasst1-every32",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every32",
+  "created_at": "2026-10-03T17:42:30.000Z",
+  "updated_at": "2026-10-03T17:42:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pressionar - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/pressionar",
+      "snippet": "Aug 21, 2026 · From pressió +‎ -ar. pressionar (first-person singular present pressiono, first-person singular preterite pressioní, past …"
+    },
+    {
+      "title": "pressionare - Traduzione in francese - esempi italiano | Reverso Context",
+      "url": "https://context.reverso.net/traduzione/italiano-francese/pressionare",
+      "snippet": "Traduzioni in contesto per \"pressionare\" in italiano-francese da Reverso Context: Gli squadas di controllo permettono aggiustare la …"
+    },
+    {
+      "title": "pressionare - Traduzione in inglese - esempi italiano | Reverso Context",
+      "url": "https://context.reverso.net/traduzione/italiano-inglese/pressionare",
+      "snippet": "Traduzioni in contesto per \"pressionare\" in italiano-inglese da Reverso Context: Non pressionare la tua fortuna, ragazzo."
+    },
+    {
+      "title": "Pressare - Significato ed etimologia - Vocabolario - Treccani",
+      "url": "https://www.treccani.it/vocabolario/pressare/",
+      "snippet": "Scopri il significato della parola pressare. Nel Vocabolario Treccani troverai significato ed etimologia del termine che cerchi. Entra …"
+    },
+    {
+      "title": "pressare - Dizionario italiano-inglese WordReference",
+      "url": "https://www.wordreference.com/iten/pressare",
+      "snippet": "pressare - Traduzione del vocabolo e dei suoi composti, e discussioni del forum."
+    }
+  ]
+}

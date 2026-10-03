@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ChantaroNtw/gemscan-models",
+  "slug": "chantarontw-gemscan-models",
+  "author": "ChantaroNtw",
+  "url": "https://huggingface.co/ChantaroNtw/gemscan-models",
+  "created_at": "2026-10-03T16:41:53.000Z",
+  "updated_at": "2026-10-03T16:42:15.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "yolo11",
+    "rt-detr",
+    "gemstone",
+    "quality-control",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169426036,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CapCut",
+      "url": "https://www.capcut.net/imlv/scan-login?app_type=pc",
+      "snippet": "Scan QR code to log in to CapCut and start editing videos seamlessly."
+    },
+    {
+      "title": "CapCut | Video Editor | All-In-One Video Editing Software | CapCut",
+      "url": "https://www.capcut.net/editor",
+      "snippet": "Click to upload Or drag and drop file here Loading..."
+    },
+    {
+      "title": "CapCut Desktop | Powerful AI Photo & Video Editor with Dreamina ...",
+      "url": "https://h5.capcut.net/tools/desktop-video-editor",
+      "snippet": "The ultimate video editing software, featuring Dreamina Seedance 2.5 for content generation. Create, edit, and enhance videos with …"
+    },
+    {
+      "title": "CapCut creative suite for video editing, graphic design, and more",
+      "url": "https://h5.capcut.net/creative-suite",
+      "snippet": "Explore CapCut’s creative suite online. Enjoy video editing, graphic design, smart AI-powered tools, team collaboration, and more."
+    },
+    {
+      "title": "CapCut",
+      "url": "https://www.capcut.net/imlv/hashtag?id=7018454508485283078",
+      "snippet": "Explore creative video editing and design with CapCut's versatile tools and AI-driven features."
+    }
+  ]
+}

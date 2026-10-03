@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f10-s0-3b6a837938ca",
+  "slug": "davidwdw-fa-eval-v2-centre-a2-5000-dev-fullres-e26f10-s0-3b6a837938ca",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-v2-centre-a2-5000-dev-fullres-e26f10-s0-3b6a837938ca",
+  "created_at": "2026-10-03T13:03:41.000Z",
+  "updated_at": "2026-10-03T13:04:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162427778,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tundrabrandon/albef-multitask-tryout",
+  "slug": "tundrabrandon-albef-multitask-tryout",
+  "author": "tundrabrandon",
+  "url": "https://huggingface.co/tundrabrandon/albef-multitask-tryout",
+  "created_at": "2026-10-03T01:38:00.000Z",
+  "updated_at": "2026-10-03T01:38:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evolution in Computational Intelligence - Springer Nature",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-981-96-2124-8.pdf",
+      "snippet": "... AI: Innovation and Cyber Risks”, followed by Mr. Wayne Horkan,. Head of Technology and Engineering, CyberTzar, Birmingham and London, who presented “AI: the ..."
+    },
+    {
+      "title": "Latent_dirichlet_allocation-Copy1.ipynb - GitHub",
+      "url": "https://github.com/LaurentVeyssier/Topic-Modeling-and-Document-Categorization-using-Latent-Dirichlet-Allocation/blob/main/Latent_dirichlet_allocation-Copy1.ipynb",
+      "snippet": "Step 0: Latent Dirichlet Allocation¶. LDA is used to classify text in a document to a particular topic. It builds a topic per document model and words per ..."
+    },
+    {
+      "title": "2021 IEEE International Geoscience and Remote Sensing ...",
+      "url": "https://www.proceedings.com/content/060/060620webtoc.pdf",
+      "snippet": "16.07.2021 ... MODEL: A SEQUENTIAL DATA ASSIMILATION APPROACH ... UTILITY OF POLARIZATIONS AVAILABLE FROM SENTINEL-1 FOR TUNDRA MAPPING .........."
+    },
+    {
+      "title": "The Dao of Capital - Spitznagel | PDF | Austrian School - Scribd",
+      "url": "https://www.scribd.com/document/538422938/The-Dao-of-Capital-Spitznagel",
+      "snippet": "market process, my approach mirrors the Austrian approach to economics itself. Unlike most mainstream economists, who desire to model their own discipline after ..."
+    },
+    {
+      "title": "FROM LANDSCAPE TO LABORATORY - Goldsmiths Research Online",
+      "url": "https://research.gold.ac.uk/id/eprint/19520/1/Field_Notes-From_Landscape_To_Laboratory-2013.pdf",
+      "snippet": "09.04.2008 ... ... model-nature for scientific research, which varies from water fleas ... Brandon. Ballengée has strived to restore an endangered frog ..."
+    }
+  ]
+}

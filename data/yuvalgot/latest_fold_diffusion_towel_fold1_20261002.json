@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvalgot/latest_fold_diffusion_towel_fold1_20261002",
+  "slug": "yuvalgot-latest_fold_diffusion_towel_fold1_20261002",
+  "author": "yuvalgot",
+  "url": "https://huggingface.co/yuvalgot/latest_fold_diffusion_towel_fold1_20261002",
+  "created_at": "2026-10-03T01:01:43.000Z",
+  "updated_at": "2026-10-03T01:02:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:yuvalgot/latest_fold_towel_1_CLEAN_dataset_20261002_142345",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 262962502,
+  "parameters_human": "263.0M",
+  "storage_bytes": 1051895760,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuvalgot/latest_fold_diffusion_towel_fold1_20261002 · Hugging Face",
+      "url": "https://huggingface.co/yuvalgot/latest_fold_diffusion_towel_fold1_20261002",
+      "snippet": "Instructions to use yuvalgot/latest_fold_diffusion_towel_fold1_20261002 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yuvalgot/latest_fold_diffusion_towel_fold1_20261002 at main",
+      "url": "https://huggingface.co/yuvalgot/latest_fold_diffusion_towel_fold1_20261002/tree/main",
+      "snippet": "Instructions to use yuvalgot/latest_fold_diffusion_towel_fold1_20261002 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yuvalgot/towel_fold1_aug_20260815_123915 — Robotics Dataset | DataCombats",
+      "url": "https://www.datacombats.com/datasets/yuvalgot/towel_fold1_aug_20260815_123915",
+      "snippet": "A LeRobot dataset of 10 episodes (5978 frames) of a follower robot folding a towel, recorded at 30 fps with a single hand RGB camera and 6-DoF joint state/action data."
+    },
+    {
+      "title": "yuvalgot/towel_fold1_aug_20260821_114340 — Robotics Dataset | DataCombats",
+      "url": "https://www.datacombats.com/datasets/yuvalgot/towel_fold1_aug_20260821_114340",
+      "snippet": "This dataset contains 11 episodes of a robot folding a towel, recorded with a single hand camera at 30 fps, including 6-DoF joint positions and gripper state/ac"
+    },
+    {
+      "title": "yuvalgot/diffusion_towel_fold1_20260912 · Hugging Face",
+      "url": "https://huggingface.co/yuvalgot/diffusion_towel_fold1_20260912",
+      "snippet": "Instructions to use yuvalgot/diffusion_towel_fold1_20260912 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use yuvalgot/diffusion_towel_fold1_20260912 with LeRobot: Notebooks Google Colab Kaggle Model Card for diffusion Model Details Inputs & Outputs Training Dataset Training Configuration How to Get Started with the ..."
+    }
+  ]
+}

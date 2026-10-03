@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "WineryLabs/Winery-Qwen3.5-2B-GrandCru-GGUF",
+  "slug": "winerylabs-winery-qwen3-5-2b-grandcru-gguf",
+  "author": "WineryLabs",
+  "url": "https://huggingface.co/WineryLabs/Winery-Qwen3.5-2B-GrandCru-GGUF",
+  "created_at": "2026-10-03T01:32:05.000Z",
+  "updated_at": "2026-10-03T09:05:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "qwen3.5",
+    "winery",
+    "llama.cpp",
+    "model-soup",
+    "text-generation",
+    "base_model:DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+    "base_model:merge:DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+    "base_model:DavidAU/Qwen3.5-2B-Polaris-HighIQ-Thinking-Compact",
+    "base_model:merge:DavidAU/Qwen3.5-2B-Polaris-HighIQ-Thinking-Compact",
+    "base_model:Goekdeniz-Guelmez/Josiefied-Qwen3.5-2B-gabliterated-v1",
+    "base_model:merge:Goekdeniz-Guelmez/Josiefied-Qwen3.5-2B-gabliterated-v1",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:merge:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2013075342,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B, DavidAU/Qwen3.5-2B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING, DavidAU/Qwen3.5-2B-Polaris-HighIQ-Thinking-Compact, Goekdeniz-Guelmez/Josiefied-Qwen3.5-2B-gabliterated-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr-ca",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce qui vous intéresse avec les gens qui vous comprennent."
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Instagram",
+      "snippet": "In August 2016, Instagram launched Instagram Stories, a feature that allows users to take photos, add effects and layers, and add …"
+    }
+  ]
+}

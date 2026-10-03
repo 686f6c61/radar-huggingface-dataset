@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_sparsegpt_0.8",
+  "slug": "rajeshwari-chanda-bloom-560m_sparsegpt_0-8",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.8",
+  "created_at": "2026-10-03T16:48:07.000Z",
+  "updated_at": "2026-10-03T16:48:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 20 Massages à Gand - Treatwell",
+      "url": "https://www.treatwell.be/fr/salons/soins-groupe-massage/offre-type-local/dans-gent-be/",
+      "snippet": "Nous avons fait une sélection parmi nos plus belles adresses Massages à Gand. Comparez les établissements, consultez les avis et …"
+    },
+    {
+      "title": "Massage et bien-être à Gand : salons et masseuses — Evadya",
+      "url": "https://evadya.com/fr/massage/gand",
+      "snippet": "Salons de massage, masseuses privées et prestations en déplacement à Gand. Massage relaxant, aux huiles et bien-être sur Evadya."
+    },
+    {
+      "title": "Body Massage by female and male therapists in Mumbai",
+      "url": "https://www.massage2book.com/parlor-list/India/Maharashtra/Mumbai/all-area/female-massager-masseuse-male-massager-masseur",
+      "snippet": "Check out the list of all top 24 hours body massage centers, body massage parlors, outcall home and hotel massage providers, and …"
+    },
+    {
+      "title": "Mantra Body Spa Price List & Massage Packages",
+      "url": "https://www.mantrabodyspa.in/price.html",
+      "snippet": "90 Min - Rs. 1800/ CALL NOW"
+    },
+    {
+      "title": "Les 25 meilleurs endroits pour un massage à Gand - Wanderlog",
+      "url": "https://wanderlog.com/fr/list/geoCategory/1804164/les-meilleurs-endroits-pour-un-massage-à-gand",
+      "snippet": "Avec des favoris comme Sports Arena Gent, PMU Gent/Powder Brows/ Beauty Bar Bahonya, and Mantra Thai Massage et plus …"
+    }
+  ]
+}

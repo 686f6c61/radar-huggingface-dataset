@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "warped-community/Qwen3-4B-Thinking-litert-lm",
+  "slug": "warped-community-qwen3-4b-thinking-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/Qwen3-4B-Thinking-litert-lm",
+  "created_at": "2026-10-03T18:13:35.000Z",
+  "updated_at": "2026-10-03T18:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "warped",
+    "base_model:Qwen/Qwen3-4B-Thinking-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Thinking-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274193168,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bakugo/Deku, My Hero Academia yaoi, My Hero Academia BL 10000 ...",
+      "url": "https://www.pixiv.net/en/artworks/121452350",
+      "snippet": "Back to Homepage. Discovery View more"
+    },
+    {
+      "title": "Operation Fuck with Deku Chapter 1: Operation fuck with ... - FanFiction",
+      "url": "https://m.fanfiction.net/s/12926998/1/Operation-Fuck-with-Deku",
+      "snippet": "This is my first FF so be gentle with me. Bakugo and Midoriya are dating. Midoriya has been avoiding Bakugo for a week and …"
+    },
+    {
+      "title": "gemma-4-31B-it-DFlash has been released : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1t0s4qv/gemma431bitdflash_has_been_released/",
+      "snippet": "01.05.2026 ... I read the weights that support DFlash were only released for LiteRT-LM ... Yes, there are DFlash draft models for Qwen3.6. https ..."
+    },
+    {
+      "title": "Boku No Hero Academia Rule34 Art & Videos (239.1K) | ScrollX",
+      "url": "https://scrollx.org/tag/boku_no_hero_academia",
+      "snippet": "Aug 6, 2026 · Boku no Hero Academia (僕のヒーローアカデミア My Hero Academia ) is a manga series by that has been serialized …"
+    },
+    {
+      "title": "Bakugo Katsuki is a Fucking Idiot - Archive of Our Own",
+      "url": "https://archiveofourown.org/works/67788951/chapters/175265641",
+      "snippet": "Aug 26, 2025 · Deku is pinned underneath him, and suddenly Katsuki has a very close up view of all the things he didn’t want to …"
+    }
+  ]
+}

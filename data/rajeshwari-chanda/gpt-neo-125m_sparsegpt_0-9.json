@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/gpt-neo-125m_sparsegpt_0.9",
+  "slug": "rajeshwari-chanda-gpt-neo-125m_sparsegpt_0-9",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-125m_sparsegpt_0.9",
+  "created_at": "2026-10-03T16:22:04.000Z",
+  "updated_at": "2026-10-03T16:22:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125198592,
+  "parameters_human": "125.2M",
+  "storage_bytes": 250414064,
+  "storage_human": "250 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda/OPT-125M_SparseGPT_90 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/OPT-125M_SparseGPT_90",
+      "snippet": "Rajeshwari-Chanda / OPT-125M_SparseGPT_90 like 0 Safetensors opt Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 3 Safetensors Model size 0.1B params Tensor type F16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Rajeshwari-Chanda/OPT-125M_SparseGPT_60 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/OPT-125M_SparseGPT_60",
+      "snippet": "Rajeshwari-Chanda / OPT-125M_SparseGPT_60 like 0 Safetensors opt Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 4 Safetensors Model size 0.1B params Tensor type F16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "gpt-neo-125m · Model · Inferix",
+      "url": "https://inferix.co/models/EleutherAI/gpt-neo-125m",
+      "snippet": "Model Description GPT-Neo 125M is a transformer model designed using EleutherAI&#x27;s replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 125M represents the number of parameters of this particular pre-trained model."
+    },
+    {
+      "title": "AI Model Releases in September 2026: Confirmed Updates | BenchLM",
+      "url": "https://benchlm.ai/model-updates/releases/september-2026",
+      "snippet": "42 confirmed AI model releases from 27 providers in September 2026, with primary evidence sources and BenchLM model links."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "revanth11/ppo-SnowballTarget",
+  "slug": "revanth11-ppo-snowballtarget",
+  "author": "revanth11",
+  "url": "https://huggingface.co/revanth11/ppo-SnowballTarget",
+  "created_at": "2026-10-03T16:38:26.000Z",
+  "updated_at": "2026-10-03T16:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-SnowballTarget",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30,
+  "storage_human": "30 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F Stock Price | Ford Motor Co. Stock Quote (U.S.: NYSE) | MarketWatch",
+      "url": "https://www.marketwatch.com/investing/stock/f",
+      "snippet": "1 day ago · View real-time stock prices and stock quotes for a full financial overview."
+    },
+    {
+      "title": "F | Ford Motor Co. Advanced Charts | MarketWatch",
+      "url": "https://www.marketwatch.com/investing/stock/f/charts",
+      "snippet": "1 day ago · Ford Motor Co. advanced stock charts by MarketWatch. View F historial stock data and compare to other stocks and …"
+    },
+    {
+      "title": "Ford Motor Company (F) Stock Price, News, Quote & History - Yahoo …",
+      "url": "https://finance.yahoo.com/quote/F/",
+      "snippet": "Find the latest Ford Motor Company (F) stock quote, history, news and other vital information to help you with your stock trading and …"
+    },
+    {
+      "title": "Ford Motor Company (F) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/f/",
+      "snippet": "1 day ago · A detailed overview of Ford Motor Company (F) stock, including real-time price, chart, key statistics, news, and more."
+    },
+    {
+      "title": "Ford Motor Stock Price Today | NYSE: F Live - Investing.com",
+      "url": "https://www.investing.com/equities/ford-motor-co",
+      "snippet": "View today's Ford Motor Company stock price and latest F news and analysis. Create real-time notifications to follow any changes in …"
+    }
+  ]
+}

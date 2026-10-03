@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "revanth11/ppo-LunarLander-v2",
+  "slug": "revanth11-ppo-lunarlander-v2",
+  "author": "revanth11",
+  "url": "https://huggingface.co/revanth11/ppo-LunarLander-v2",
+  "created_at": "2026-10-03T16:38:01.000Z",
+  "updated_at": "2026-10-03T16:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229,
+  "storage_human": "229 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT MD - GitHub",
+      "url": "https://github.com/bramses/chatgpt-md",
+      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
+    },
+    {
+      "title": "chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt",
+      "snippet": "17 hours ago · ChatGPT is an AI assistant developed by OpenAI and released in November 2022. It uses generative AI models to …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "普通人应该如何用ChatGPT？ - 知乎",
+      "url": "https://www.zhihu.com/question/604991158",
+      "snippet": "普通人对于ChatGPT的使用，我觉得应该有三重境界。 第一重是压根没有听说过ChatGPT的，这部分人不多，毕竟就连防沉迷系统都 …"
+    },
+    {
+      "title": "r/ChatGPT's FAQ Thread - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/107zfxk/rchatgpts_faq_thread/",
+      "snippet": "Jan 9, 2023 · Welcome to the ChatGPT FAQ thread! In this thread, we will answer some of the most commonly asked questions …"
+    }
+  ]
+}

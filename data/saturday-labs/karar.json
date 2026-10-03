@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "saturday-labs/karar",
+  "slug": "saturday-labs-karar",
+  "author": "saturday-labs",
+  "url": "https://huggingface.co/saturday-labs/karar",
+  "created_at": "2026-10-03T16:21:26.000Z",
+  "updated_at": "2026-10-03T16:42:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "banking",
+    "turkish",
+    "intent-classification",
+    "calibrated-decisions",
+    "modernbert",
+    "text-classification",
+    "tr",
+    "base_model:ytu-ce-cosmos/modernbert-tr-base",
+    "base_model:finetune:ytu-ce-cosmos/modernbert-tr-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 675339596,
+  "storage_human": "675 MB",
+  "base_model": "ytu-ce-cosmos/modernbert-tr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARNAQUE TRANSAVIA - Avion - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-transavia-t191901.html",
+      "snippet": "Sep 1, 2015 · Attention, transavia pratique le sur booking. Vous réservez sans savoir que vous êtes un excédent et si à votre arriver …"
+    },
+    {
+      "title": "Arnaque au bagage cabine chez Transavia - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-au-bagage-cabine-chez-transavia-t278239.html",
+      "snippet": "Aug 22, 2020 · Arnaque au bagage cabine chez Transavia Messagepar VaixellDe58 » sam. août 22, 2020 11:26 am Ayant avant …"
+    },
+    {
+      "title": "Vliegen met een besmettelijke ziekte: mag dat? - Radar",
+      "url": "https://radar.avrotros.nl/artikel/vliegen-met-een-besmettelijke-ziekte-mag-dat-2387",
+      "snippet": "Jul 29, 2017 · Zo zegt Transavia dat er een medische verklaring moet zijn waarin staat 'dat de ziekte zich niet meer in de …"
+    },
+    {
+      "title": "Niet naast elkaar gezet in vliegtuig: mag dat? - Radar",
+      "url": "https://radar.avrotros.nl/artikel/niet-naast-elkaar-gezet-in-vliegtuig-mag-dat-27359",
+      "snippet": "Aug 1, 2018 · Het merendeel van de pollrespondenten (53%) is bereid de vliegtuigmaatschappij extra te betalen voor een stoel naast …"
+    },
+    {
+      "title": "HabibiTech Summit 2026 — New York City · September 26",
+      "url": "https://habibi.tech/",
+      "snippet": "The future is being built here. The biggest Muslim tech link up of the year. AI · Business · Content · Creative — New York City, September 26, 2026."
+    }
+  ]
+}

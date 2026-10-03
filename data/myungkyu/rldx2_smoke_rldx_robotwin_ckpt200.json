@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx2_smoke_rldx_robotwin_ckpt200",
+  "slug": "myungkyu-rldx2_smoke_rldx_robotwin_ckpt200",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx2_smoke_rldx_robotwin_ckpt200",
+  "created_at": "2026-10-03T17:48:08.000Z",
+  "updated_at": "2026-10-03T17:49:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "robotwin",
+    "rldx-2-baseline",
+    "dataset:TianxingChen/RoboTwin2.0",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825892072,
+  "storage_human": "13.8 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Long Division Calculator",
+      "url": "https://www.calculator.net/long-division-calculator.html",
+      "snippet": "In this case, the number of people can be divided evenly between each group, but this is not always the case. There are two ways to …"
+    },
+    {
+      "title": "Basic Calculator",
+      "url": "https://www.calculator.net/basic-calculator.html",
+      "snippet": "This free online calculator can be used for basic computations such as addition, subtraction, multiplication, division, and square roots."
+    },
+    {
+      "title": "Long Division Calculator — Step-by-Step Solutions",
+      "url": "https://calculatorteam.com/long-division-calculator",
+      "snippet": "19 hours ago · Long division is a standard mathematical method used to divide large numbers that cannot be easily divided mentally. …"
+    },
+    {
+      "title": "Math Calculator",
+      "url": "https://www.calculatorsoup.com/calculators/math/math.php",
+      "snippet": "Aug 1, 2025 · Add, subtract, multiply and divide decimal numbers with this calculator. You can use: Rounding. Specify whether you …"
+    },
+    {
+      "title": "Long Division Calculator with Steps | CalcBrew",
+      "url": "https://calcbrew.com/long-division-calculator",
+      "snippet": "Sep 14, 2026 · Divide two whole numbers and get the quotient, remainder, and decimal answer with the classic bring-down long …"
+    }
+  ]
+}

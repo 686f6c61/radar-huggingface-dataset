@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HuishanJi/YANchor-4B",
+  "slug": "huishanji-yanchor-4b",
+  "author": "HuishanJi",
+  "url": "https://huggingface.co/HuishanJi/YANchor-4B",
+  "created_at": "2026-10-03T16:20:01.000Z",
+  "updated_at": "2026-10-03T16:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Learning in Stance Detection: A Survey - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/10.1145/3744641",
+      "snippet": "Table 4 summarizes deep learning models from surveyed articles, including RNNs ... [74], a method for customizing large AI models by freezing the model's ..."
+    },
+    {
+      "title": "Conference Handbook - ACL 2023",
+      "url": "https://2023.aclweb.org/downloads/acl2023-handbook-v3.pdf",
+      "snippet": "09.07.2023 ... ... Model efficiency, Information Extraction ... Ai, Xi Ai, Ankit Aich, Annalena Aicher, Laura Aina, Salah Aït-Mokhtar, Akiko Aizawa,. Alham ..."
+    },
+    {
+      "title": "Advances in Signal Processing Techniques | PDF - Scribd",
+      "url": "https://www.scribd.com/document/690132092/Table-of-Contents",
+      "snippet": "... , Matthijs Douze, Meta AI, France; Teddy Furon, Univ. Rennes, Inria, CNRS, IRISA, France. IFS-8.3: SPEECH PATTERN BASED BLACK-BOX MODEL WATERMARKING FOR ..."
+    },
+    {
+      "title": "Deep Learning in Stance Detection: A Survey - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3744641",
+      "snippet": "Table 4 summarizes deep learning models ... [74], a method for cus- tomizing large AI models by freezing the model's original weights and training small, low-rank."
+    },
+    {
+      "title": "GPT3.5 - ACL Anthology",
+      "url": "https://aclanthology.org/2024.findings-eacl.139.pdf",
+      "snippet": "22.03.2024 ... AI, (Gunning, 2019)) available. ... Summary of · ChatGPT/GPT-4 Research and Perspective Towards · the Future of Large Language Models."
+    }
+  ]
+}

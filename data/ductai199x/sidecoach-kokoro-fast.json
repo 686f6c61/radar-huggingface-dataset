@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ductai199x/sidecoach-kokoro-fast",
+  "slug": "ductai199x-sidecoach-kokoro-fast",
+  "author": "ductai199x",
+  "url": "https://huggingface.co/ductai199x/sidecoach-kokoro-fast",
+  "created_at": "2026-10-03T16:32:15.000Z",
+  "updated_at": "2026-10-03T16:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "quantized",
+    "android",
+    "text-to-speech",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200252515,
+  "storage_human": "200 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ductai199x (Tai Duc Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/ductai199x",
+      "snippet": "Multimedia Security, Image/Video Forensics, CV, NLP, Robotics"
+    },
+    {
+      "title": "GitHub - remsky/Kokoro-FastAPI: Dockerized OpenAI-compatible wrapper ...",
+      "url": "https://github.com/remsky/Kokoro-FastAPI",
+      "snippet": "Dockerized FastAPI wrapper for Kokoro-82M text-to-speech model. Generate hours of high quality speech in minutes. OpenAI-compatible Speech endpoint, multi-language support English (US/GB), Spanish, French, Hindi, Italian, Japanese, Brazilian Portuguese, Mandarin Chinese Custom voicepack generation via Inno Clone-Tuner Optional integrated WebUI; read-along long-generation Inline multi-speaker ..."
+    },
+    {
+      "title": "ductai199x (Tai Duc Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/ductai199x/datasets",
+      "snippet": "Forensic Self-Descriptions Are All You Need for Zero-Shot Detection, Open-Set Source Attribution, and Clustering of AI-generated Images liked a model 2 months ago facebook/sapiens2 liked a model 3 months ago MiniMaxAI/MiniMax-M2.7 View all activity"
+    },
+    {
+      "title": "GitHub - hexgrad/kokoro: https://hf.co/hexgrad/Kokoro-82M",
+      "url": "https://github.com/hexgrad/kokoro",
+      "snippet": "Kokoro is an open-weight TTS model with 82 million parameters. Despite its lightweight architecture, it delivers comparable quality to larger models while being significantly faster and more cost-efficient."
+    },
+    {
+      "title": "Kokoro 82M - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/kokoro",
+      "snippet": "Kokoro 82M: Small, Fast, Open Text-to-Speech Kokoro is an open-weight text-to-speech model with just 82 million parameters, published at hexgrad/Kokoro-82M. Despite its size, it delivers speech quality comparable to models many times larger: entered into the community TTS arenas shortly after release, it climbed to the top of the rankings while remaining fast and cheap enough to run ..."
+    }
+  ]
+}

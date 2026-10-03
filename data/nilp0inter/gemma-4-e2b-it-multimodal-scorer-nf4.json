@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4",
+  "slug": "nilp0inter-gemma-4-e2b-it-multimodal-scorer-nf4",
+  "author": "nilp0inter",
+  "url": "https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4",
+  "created_at": "2026-10-03T02:01:29.000Z",
+  "updated_at": "2026-10-03T02:01:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "feature-extraction",
+    "multimodal",
+    "option-scoring",
+    "experimental",
+    "nf4",
+    "base_model:nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16",
+    "base_model:quantized:nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 5104297504,
+  "parameters_human": "5.10B",
+  "storage_bytes": 7456869994,
+  "storage_human": "7.5 GB",
+  "base_model": "nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 · Hugging Face",
+      "url": "https://huggingface.co/nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4",
+      "snippet": "Instructions to use nilp0inter/Gemma-4-E2B-it-Multimodal-Scorer-NF4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "Gemma 4 Benchmarks: Official Scores, VRAM & Ollama Guide",
+      "url": "https://markaicode.com/benchmarks/ollama-gemma-4-a100-80gb-latency-benchmark/",
+      "snippet": "Official Gemma 4 benchmarks: MMLU Pro, AIME, GPQA scores, VRAM by model size, and a verified Ollama setup guide sourced from Google&#x27;s docs."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

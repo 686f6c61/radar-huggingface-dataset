@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "luyuncan/microduck-sitstand",
+  "slug": "luyuncan-microduck-sitstand",
+  "author": "luyuncan",
+  "url": "https://huggingface.co/luyuncan/microduck-sitstand",
+  "created_at": "2026-10-03T01:32:51.000Z",
+  "updated_at": "2026-10-03T10:25:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1587620,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SitStand — sitting down and standing up · YouDuck",
+      "url": "https://youduck.ai/en/train/tasks/sitstand/",
+      "snippet": "Commanded sit ↔ stand in one policy, gently, with the head still controllable."
+    },
+    {
+      "title": "GitHub - pollen-robotics/microduck: A Tiny biped duck robot",
+      "url": "https://github.com/pollen-robotics/microduck",
+      "snippet": "A Tiny biped duck robot 🦆. Contribute to pollen-robotics/microduck development by creating an account on GitHub."
+    },
+    {
+      "title": "Microduck - A tiny biped robot you can teach new tricks | Pollen Robotics",
+      "url": "https://pollen-robotics.com/microduck/",
+      "snippet": "Microduck is a 25 cm biped robot with 15 motors, a camera, LiDAR and a grasping beak. Playable out of the box, and its open-source stack lets you train new behaviours in simulation and run them on the robot. Pre-order at $399."
+    },
+    {
+      "title": "Microduck guides, training and troubleshooting · YouDuck",
+      "url": "https://youduck.ai/en/",
+      "snippet": "Microduck is a 25 cm, 800 g biped. Every move it makes comes from a policy you trained, and even its voice is its own — which makes this closer to raising one than using one. Guides, training recipes, troubleshooting and reference."
+    },
+    {
+      "title": "pollen-robotics/microduck-policies at main - Hugging Face",
+      "url": "https://huggingface.co/pollen-robotics/microduck-policies/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

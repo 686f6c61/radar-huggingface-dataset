@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/gpt-neo-125m_sparsegpt_0.8",
+  "slug": "rajeshwari-chanda-gpt-neo-125m_sparsegpt_0-8",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-125m_sparsegpt_0.8",
+  "created_at": "2026-10-03T16:20:54.000Z",
+  "updated_at": "2026-10-03T16:21:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125198592,
+  "parameters_human": "125.2M",
+  "storage_bytes": 250414064,
+  "storage_human": "250 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda/OPT-125M_SparseGPT_80 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/OPT-125M_SparseGPT_80",
+      "snippet": "Rajeshwari-Chanda / OPT-125M_SparseGPT_80 like 0 Safetensors opt Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1 Safetensors Model size 0.1B params Tensor type F16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "Text Generation •3B•Updated 10 days ago•23 Rajeshwari-Chanda/OPT-2.7B_SparseGPT_60"
+    },
+    {
+      "title": "gpt-neo-125m/Readme.md at main · inferless/gpt-neo-125m",
+      "url": "https://github.com/inferless/gpt-neo-125m/blob/main/Readme.md",
+      "snippet": "GPT-Neo-125M is a autoregressive transformer model, open‑source under the MIT license. It replicates GPT‑3&#x27;s architecture and is trained on The Pile, enabling versatile text generation and experimentation in NLP."
+    },
+    {
+      "title": "GPT-Neo 125M pricing & specs — EleutherAI | CloudPrice",
+      "url": "https://cloudprice.net/models/eleutherai-gpt-neo-125m",
+      "snippet": "GPT-Neo 125M is an AI model by EleutherAI. Compare LLM pricing, specs, benchmarks, and costs across providers."
+    },
+    {
+      "title": "GitHub - inferless/gpt-neo-125m: An autoregressive transformer model ...",
+      "url": "https://github.com/inferless/gpt-neo-125m",
+      "snippet": "GPT-Neo-125M is a autoregressive transformer model, open‑source under the MIT license. It replicates GPT‑3&#x27;s architecture and is trained on The Pile, enabling versatile text generation and experimentation in NLP."
+    }
+  ]
+}

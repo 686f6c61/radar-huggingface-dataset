@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Homura-9B-GGUF",
+  "slug": "indexteam-index-homura-9b-gguf",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Homura-9B-GGUF",
+  "created_at": "2026-10-02T22:52:06.000Z",
+  "updated_at": "2026-10-03T02:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "translation",
+    "index",
+    "arxiv:2609.40181",
+    "base_model:IndexTeam/Index-Homura-9B",
+    "base_model:quantized:IndexTeam/Index-Homura-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425080576,
+  "storage_human": "81.4 GB",
+  "base_model": "IndexTeam/Index-Homura-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Straw man - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Straw_man",
+      "snippet": "A straw man fallacy (sometimes written as strawman) is the informal fallacy of refuting an argument different from the one actually …"
+    },
+    {
+      "title": "STRAW MAN Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/straw%20man",
+      "snippet": "Aug 13, 2026 · The meaning of STRAW MAN is a weak or imaginary opposition (such as an argument or adversary) set up only to …"
+    },
+    {
+      "title": "What Is Straw Man Fallacy? | Definition & Examples - Scribbr",
+      "url": "https://www.scribbr.com/fallacies/straw-man-fallacy/",
+      "snippet": "Apr 12, 2023 · Straw man fallacy occurs when someone distorts their opponent’s argument by oversimplifying or exaggerating it, for …"
+    },
+    {
+      "title": "Index-Translate: 150 text languages, plus document ... - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wugf2t/indextranslate_150_text_languages_plus_document/",
+      "snippet": "vor 3 Tagen ... Index-Homura: set a syllable budget for ... Check out the models and infer.py on Hugging Face: IndexTeam/Index-Echo-S2TT-2B / 9B."
+    },
+    {
+      "title": "STRAW MAN | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/straw-man",
+      "snippet": "straw man noun [C] (CRIME) someone, often an imaginary person, who is used to hide an illegal or secret activity:"
+    }
+  ]
+}

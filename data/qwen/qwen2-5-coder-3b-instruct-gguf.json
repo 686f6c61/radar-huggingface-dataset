@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+  "slug": "qwen-qwen2-5-coder-3b-instruct-gguf",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-3B-Instruct-GGUF",
+  "created_at": "2024-11-09T12:46:15.000Z",
+  "updated_at": "2024-11-11T13:42:52.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "text-generation",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 144,
+  "downloads_30d": 108193,
+  "trending_score": 10,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 27341259104,
+  "storage_human": "27.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Dec 27, 2024 · Qwen/Qwen-Image-2.1 ... Qwen/Qwen3Guard-Stream-4B ... Qwen/Qwen3Guard-Stream-0.6B ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/qwencode",
+      "snippet": "Qwen Code is an open-source AI agent for the terminal, optimized for Qwen series models. It helps you understand large …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large …"
+    }
+  ]
+}

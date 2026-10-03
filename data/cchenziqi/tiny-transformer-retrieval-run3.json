@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CCHENZIQI/tiny-transformer-retrieval-run3",
+  "slug": "cchenziqi-tiny-transformer-retrieval-run3",
+  "author": "CCHENZIQI",
+  "url": "https://huggingface.co/CCHENZIQI/tiny-transformer-retrieval-run3",
+  "created_at": "2026-10-03T14:42:41.000Z",
+  "updated_at": "2026-10-03T14:42:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhishekiai/tiny-transformer-retrieval · Hugging Face",
+      "url": "https://huggingface.co/abhishekiai/tiny-transformer-retrieval",
+      "snippet": "Overview A small Tiny Transformer implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "abhishekiai/tiny-transformer-retrieval at main - Hugging Face",
+      "url": "https://huggingface.co/abhishekiai/tiny-transformer-retrieval/tree/main",
+      "snippet": "abhishekiai / tiny-transformer-retrieval Like 0 Safetensors PyTorch tiny_transformer tiny-transformer retrieval License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main tiny-transformer-retrieval 109 kB Ctrl+K Ctrl+K 1 contributor History:2 commits abhishekiai Add train.py, README.md, config.json, training_args.json, model.safetensors 680387c verified1 day ..."
+    },
+    {
+      "title": "GitHub - huggingface/transformers: Transformers: the model-definition ...",
+      "url": "https://github.com/huggingface/transformers",
+      "snippet": "State-of-the-art pretrained models for inference and training Transformers acts as the model-definition framework for state-of-the-art machine learning with text, computer vision, audio, video, and multimodal models, for both inference and training."
+    },
+    {
+      "title": "GitHub - avvorstenbosch/tinyTransformer: This repository is me learning ...",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "The code is organized in the following modules: Head: A single head of self-attention. MultiHead: Multiple heads of self-attention. FeedForward: A straightforward fully connected layer. MultiHeadAttentionBlock: A block of attention followed by computation. tinyTransformer: The main model class implementing the transformer architecture."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    }
+  ]
+}

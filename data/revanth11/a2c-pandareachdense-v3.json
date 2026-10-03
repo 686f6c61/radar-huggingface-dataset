@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "revanth11/a2c-PandaReachDense-v3",
+  "slug": "revanth11-a2c-pandareachdense-v3",
+  "author": "revanth11",
+  "url": "https://huggingface.co/revanth11/a2c-PandaReachDense-v3",
+  "created_at": "2026-10-03T16:38:34.000Z",
+  "updated_at": "2026-10-03T16:38:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229,
+  "storage_human": "229 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rondahahda/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/rondahahda/a2c-PandaReachDense-v3",
+      "snippet": "Instructions to use rondahahda/a2c-PandaReachDense-v3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries stable-baselines3 How to use rondahahda/a2c-PandaReachDense-v3 with stable-baselines3:"
+    },
+    {
+      "title": "Rahul001t/a2c-PandaReachDense-v3 · Hugging Face",
+      "url": "https://huggingface.co/Rahul001t/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "GitHub - HusseinEid101/a2c-PandaReachDense-v3: This is a trained model ...",
+      "url": "https://github.com/HusseinEid101/a2c-PandaReachDense-v3",
+      "snippet": "A2C Agent playing PandaReachDense-v3 This is a trained model of a A2C agent playing PandaReachDense-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "a2c-PandaReachDense-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-abhijeetknayak-a2c-pandareachdense-v3",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning. Specs: sourced from Hugging Face. Compare a2c-PandaReachDense-v3&#x27;s parameters, context window,"
+    },
+    {
+      "title": "a2c-PandaReachDense-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-latlag-a2c-pandareachdense-v3",
+      "snippet": "a2c-PandaReachDense-v3 is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

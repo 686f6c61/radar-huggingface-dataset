@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "KhasanovAM/qwen_lora",
+  "slug": "khasanovam-qwen_lora",
+  "author": "KhasanovAM",
+  "url": "https://huggingface.co/KhasanovAM/qwen_lora",
+  "created_at": "2026-10-03T12:40:24.000Z",
+  "updated_at": "2026-10-03T12:41:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175116539,
+  "storage_human": "175 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can One Adapted Model Do It All? Fine-Tuning Strategy ... - arXiv",
+      "url": "https://arxiv.org/pdf/2609.27262",
+      "snippet": "23.09.2026 ... Xue-Yong Fu, Md Tahmid Rahman Laskar, Elena. Khasanova, Cheng Chen, and Shashi Tn. ... LoRA: Low-rank adaptation of large language models. In ..."
+    },
+    {
+      "title": "FroLineR: Front-Line Response with Retrieval-Augmented Prompt ...",
+      "url": "https://www.mdpi.com/2673-2688/7/8/317",
+      "snippet": "For the fine-tuning experiment, we apply LoRA-based adaptation to a Qwen3.5 9B instruct model [23] using adapters with rank 8, a scaling factor of 8, and ..."
+    },
+    {
+      "title": "LoRA-BAM: Input Filtering for Fine-tuned LLMs via Boxed ... - arXiv",
+      "url": "https://arxiv.org/pdf/2506.00998",
+      "snippet": "01.06.2025 ... Models and Datasets In our experiments, we use. Qwen 2.5 model family (Yang et al., 2024), where we fine-tune Qwen2.5-0.5B-Instruct on a ..."
+    },
+    {
+      "title": "WebNLG-IT: Construction of an aligned RDF-Italian corpus through ...",
+      "url": "https://aclanthology.org/2025.findings-acl.625.pdf",
+      "snippet": "27.07.2025 ... the Qwen model. These results are particularly in- teresting because ... Anastasia Shimorina, Elena Khasanova, and Claire Gar- dent."
+    },
+    {
+      "title": "Student Publications – Language & Communication Technologies",
+      "url": "https://lct-master.org/student-publications/",
+      "snippet": "... Qwen Models. In Proceedings of the 20th International Workshop on ... CUNI at WMT24 General Translation Task: LLMs, (Q)LoRA, CPO and Model Merging."
+    }
+  ]
+}

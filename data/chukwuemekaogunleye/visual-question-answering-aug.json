@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chukwuemekaogunleye/visual-question-answering-aug",
+  "slug": "chukwuemekaogunleye-visual-question-answering-aug",
+  "author": "chukwuemekaogunleye",
+  "url": "https://huggingface.co/chukwuemekaogunleye/visual-question-answering-aug",
+  "created_at": "2026-10-03T14:41:11.000Z",
+  "updated_at": "2026-10-03T14:41:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Interpretable LLMs for Credit Risk: A Systematic Review and ... - arXiv",
+      "url": "https://arxiv.org/html/2506.04290v2",
+      "snippet": "07.06.2025 ... Large Language Models (LLM), which have developed in recent years, enable credit risk assessment through the analysis of financial texts such as ..."
+    },
+    {
+      "title": "Charles Xavier Ekechukwuemeka - Founder & Lead Consultant at ...",
+      "url": "https://ng.linkedin.com/in/charles-xavier-ekechukwuemeka-01185a1a5",
+      "snippet": "Founder & Lead Consultant at CAXiE Technologies Ltd | Driving AI-Integrated Solutions in Systems, Data, and Web Development | Empowering Teams and Business ..."
+    },
+    {
+      "title": "Past Issue - Volume 9 · Issue 9, March 2026 - IRE Journals",
+      "url": "https://www.irejournals.com/past-issue/volume-9/issue-9",
+      "snippet": "Vision Mate: An AI Based Mobile Assistive ... AI Exam Controller for Question Paper Generation and Answer Sheet Evaluation with Secure Result Processing."
+    },
+    {
+      "title": "Ikenna Anyawuike - Geo-Environmental Engineer | Data Scientist",
+      "url": "https://ng.linkedin.com/in/anyawuike-ikenna",
+      "snippet": "- Built an AI-powered financial chatbot using Python, Flask, and Pandas ... • Optimised model performance using Bayesian Optimisation and Grid Search, enhancing…"
+    },
+    {
+      "title": "Posts starting with 'O' - LinkedIn",
+      "url": "https://www.linkedin.com/directory/posts/o",
+      "snippet": "Optimized Payments: AI can answer a payments question in seconds. But can ... Oruganti vishnuvardhnarao : LLM vs RAG vs AI Agent vs Agentic AI People often use ..."
+    }
+  ]
+}

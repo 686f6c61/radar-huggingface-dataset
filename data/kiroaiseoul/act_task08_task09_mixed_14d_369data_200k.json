@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task08_task09_mixed_14D_369data_200k",
+  "slug": "kiroaiseoul-act_task08_task09_mixed_14d_369data_200k",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task08_task09_mixed_14D_369data_200k",
+  "created_at": "2026-10-03T18:18:44.000Z",
+  "updated_at": "2026-10-03T18:19:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kiroaiseoul/task08_task09_mixed_14D_369data",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

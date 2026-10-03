@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-silvermoonmix-anima-evolved-v2.3-unet",
+  "slug": "runninghubai-rh-silvermoonmix-anima-evolved-v2-3-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-silvermoonmix-anima-evolved-v2.3-unet",
+  "created_at": "2026-10-03T16:47:16.000Z",
+  "updated_at": "2026-10-03T16:51:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4182239962,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SilvermoonMix-Anima-Evolved V2.3 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2093194766427545601",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "SilvermoonMix-Anima-Evolved - v2.3 | TensorHub Art",
+      "url": "https://tensorhub.art/models/1031486460689168299/SilvermoonMix-Anima-Evolved-v2.3",
+      "snippet": "Download SilvermoonMix-Anima-Evolved - free CHECKPOINT Anima AI model on TENSORHUB ART. By silvermoong"
+    },
+    {
+      "title": "silvermoong/SilvermoonMix-Anima-Evolved · Hugging Face",
+      "url": "https://huggingface.co/silvermoong/SilvermoonMix-Anima-Evolved",
+      "snippet": "Generated images may be used commercially under its terms. Rights to use the Anima model and its derivatives are granted directly by CircleStone Labs under that license. SilvermoonMix-Anima-Evolved is a modification of Anima by silvermoong. It is not an official CircleStone Labs product and does not imply their endorsement, approval, or validation."
+    },
+    {
+      "title": "SilvermoonMix-Anima-Evolved [2.9B/2B] - v2.3_2.9B | Anima Checkpoint ...",
+      "url": "https://civitai.com/models/2639339/silvermoonmix-anima-evolved-29b2b",
+      "snippet": "Older versions may not load or run the model correctly. BF16 / INT8 versions: SilvermoonMix-Anima-Evolved v2.3_2.9B now has an additional INT8 + ConvRot version, quantized from this model&#x27;s BF16 weights. Choose BF16 or INT8 from the download menu."
+    },
+    {
+      "title": "SilvermoonMix-Anima-Evolved | Tensor.Art",
+      "url": "https://tensor.art/models/1042867573193972107",
+      "snippet": "Download SilvermoonMix-Anima-Evolved - free CHECKPOINT Anima AI model on TENSOR. By silvermoong"
+    }
+  ]
+}

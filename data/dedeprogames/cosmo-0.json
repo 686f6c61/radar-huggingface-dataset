@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "DedeProGames/cosmo.0",
+  "slug": "dedeprogames-cosmo-0",
+  "author": "DedeProGames",
+  "url": "https://huggingface.co/DedeProGames/cosmo.0",
+  "created_at": "2026-10-03T15:08:41.000Z",
+  "updated_at": "2026-10-03T15:26:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "fineweb-edu",
+    "dclm-edu",
+    "text-generation",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34611712,
+  "parameters_human": "34.6M",
+  "storage_bytes": 138454976,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

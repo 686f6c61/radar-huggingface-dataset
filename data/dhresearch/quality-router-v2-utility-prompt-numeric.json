@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-utility-prompt-numeric",
+  "slug": "dhresearch-quality-router-v2-utility-prompt-numeric",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-utility-prompt-numeric",
+  "created_at": "2026-10-03T16:42:47.000Z",
+  "updated_at": "2026-10-03T16:42:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-measured-pool",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4629,
+  "storage_human": "4629 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Proceedings of Shaping Multilingual, Multimodal AI for the Social ...",
+      "url": "https://aclanthology.org/2026.llms4ssh-1.pdf",
+      "snippet": "11.05.2026 ... Large Language Models (LLMs) are rapidly evolving in terms of multilinguality, multimodality, reasoning capabilities, and agentic behaviour."
+    },
+    {
+      "title": "Critical Infrastructure Studies and Digital Humanities (Debates in the ...",
+      "url": "https://dokumen.pub/critical-infrastructure-studies-and-digital-humanities-debates-in-the-digital-humanities.html",
+      "snippet": "25.09.2026 ... intelligence (AI) large language models (LLMs), that “know” ideas ... tools, master other languages, develop new skills, and model"
+    },
+    {
+      "title": "AVA: A large-scale database for aesthetic visual analysis",
+      "url": "https://www.researchgate.net/publication/261336804_AVA_A_large-scale_database_for_aesthetic_visual_analysis",
+      "snippet": "Additionally, aesthetic scores [58] are often used for filtering low-quality pretraining data based on aesthetics. Models like HPS-v2.1 [92] and PickScore-v1 [ ..."
+    },
+    {
+      "title": "The Emergence of the Digital Humanities - ResearchGate",
+      "url": "https://www.researchgate.net/publication/290310710_The_Emergence_of_the_Digital_Humanities",
+      "snippet": "computers in humanities research. Indeed, a new-model digital humanities emerged more or less concurrently. with the new context associated with these ..."
+    },
+    {
+      "title": "The Emergence of the Digital Humanities - University of South Florida",
+      "url": "https://pure.lib.usf.edu/ws/portalfiles/portal/40730122/The%20Emergence%20of%20the%20Digital%20Humanities.pdf",
+      "snippet": "28.08.2013 ... Things model, in which you might have a number of small processors that plug ... “What is Web 2.0: Design Patterns and Business Models for ..."
+    }
+  ]
+}

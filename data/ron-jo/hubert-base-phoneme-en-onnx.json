@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ron-jo/hubert-base-phoneme-en-onnx",
+  "slug": "ron-jo-hubert-base-phoneme-en-onnx",
+  "author": "ron-jo",
+  "url": "https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx",
+  "created_at": "2026-10-03T01:51:36.000Z",
+  "updated_at": "2026-10-03T02:09:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "phoneme-recognition",
+    "pronunciation-assessment",
+    "english",
+    "quantized",
+    "base_model:Peacockery/hubert-base-phoneme-en",
+    "base_model:quantized:Peacockery/hubert-base-phoneme-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217162400,
+  "storage_human": "217 MB",
+  "base_model": "Peacockery/hubert-base-phoneme-en",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ron-jo/hubert-base-phoneme-en-onnx · Hugging Face",
+      "url": "https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx",
+      "snippet": "hubert_phoneme_int8.onnx (116 MB) An int8 (dynamic quantization, MatMul/Gemm weights only) ONNX export for offline inference. The conv feature extractor stays fp32 so the graph loads on reduced mobile ONNX runtimes without a ConvInteger kernel."
+    },
+    {
+      "title": "ron-jo/hubert-base-phoneme-en-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx/tree/main",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new main hubert-base-phoneme-en-onnx 122 MB Ctrl+K Ctrl+K 1 contributor History:5 commits ron-jo Upload README.md with huggingface_hub 106ab0c verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago README.md 1.31 kBUpload README.md with huggingface ..."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "ExpressiveVC/hubert/hubert_model_onnx.py at main · AI-Unicamp ...",
+      "url": "https://github.com/AI-Unicamp/ExpressiveVC/blob/main/hubert/hubert_model_onnx.py",
+      "snippet": "Expressive Voice Conversion. Contribute to AI-Unicamp/ExpressiveVC development by creating an account on GitHub."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    }
+  ]
+}

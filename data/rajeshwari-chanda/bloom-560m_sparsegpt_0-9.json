@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_sparsegpt_0.9",
+  "slug": "rajeshwari-chanda-bloom-560m_sparsegpt_0-9",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.9",
+  "created_at": "2026-10-03T16:50:37.000Z",
+  "updated_at": "2026-10-03T16:51:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bigscience/bloom-560m · Hugging Face",
+      "url": "https://huggingface.co/bigscience/bloom-560m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "Rajarajeshwari Chanda Rajeshwari-Chanda Follow AI & ML interests None yet Recent Activity updateda model10 days ago"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model - MSN",
+      "url": "https://www.msn.com/en-us/technology/tech-companies/google-rolls-out-gemini-4-argon-its-most-advanced-ai-model/ar-AA2dirCw",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    },
+    {
+      "title": "GitHub - IST-DASLab/sparsegpt: Code for the ICML 2023 paper \"SparseGPT ...",
+      "url": "https://github.com/ist-daslab/sparsegpt",
+      "snippet": "This repository contains code to reproduce the key results of the paper SparseGPT: Massive Language Models Can be Accurately Pruned in One-shot. Specifically, it provides scripts and implementations to: Evaluate baseline and pruned models on raw-WikiText2, PTB and C4-subset. (datautils.py, opt.py, bloom.py) Perform unstructured, n:m and sparse + quantized SparseGPT compression on OPT and BLOOM ..."
+    }
+  ]
+}

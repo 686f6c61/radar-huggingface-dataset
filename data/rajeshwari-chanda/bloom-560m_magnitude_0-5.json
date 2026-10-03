@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_magnitude_0.5",
+  "slug": "rajeshwari-chanda-bloom-560m_magnitude_0-5",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_magnitude_0.5",
+  "created_at": "2026-10-03T16:57:08.000Z",
+  "updated_at": "2026-10-03T16:57:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bigscience/bloom-560m · Hugging Face",
+      "url": "https://huggingface.co/bigscience/bloom-560m",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "User profile of Rajarajeshwari Chanda on Hugging Face"
+    },
+    {
+      "title": "bigscience/bloom-560m | Attestry | Attestry - regseal.ai",
+      "url": "https://www.regseal.ai/registry/models/huggingface-bigscience-bloom-560m",
+      "snippet": "BLOOM 560M parameter multilingual language model supporting 46 languages, trained by the BigScience consortium."
+    },
+    {
+      "title": "BLOOM (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BLOOM_(language_model)",
+      "snippet": "The BigScience Large Open-science Open-access Multilingual Language Model (BLOOM) is an open-access large language model (LLM) released in 2022. [1] It was created by a volunteer-driven research effort to provide a transparently-created alternative to proprietary AI models."
+    },
+    {
+      "title": "bigscience-bloom-560m | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/bigscience-bloom-560m",
+      "snippet": "bigscience/bloom-560m powered by Text Generation Inference (TGI). Sign in to Microsoft Foundry to deploy this model."
+    }
+  ]
+}

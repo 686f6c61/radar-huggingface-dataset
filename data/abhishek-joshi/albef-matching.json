@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abhishek-joshi/albef-matching",
+  "slug": "abhishek-joshi-albef-matching",
+  "author": "abhishek-joshi",
+  "url": "https://huggingface.co/abhishek-joshi/albef-matching",
+  "created_at": "2026-10-03T14:44:38.000Z",
+  "updated_at": "2026-10-03T14:44:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abhishek Joshi",
+      "url": "https://abhihjoshi.github.io/",
+      "snippet": "Abhishek Joshi I am a Member of Technical Staff at Skild AI. I previously completed my M.S. of CS at Princeton University advised by Dr. Jia Deng in the Princeton Vision and Learning Lab. I also recieved my undergraduate degree at the University of Texas at Austin where I graduated as part of the Turing Scholars program and was advised by Dr. Yuke Zhu in the Robot Perception and Learning Lab ..."
+    },
+    {
+      "title": "jrkaminski/albef-matching · Hugging Face",
+      "url": "https://huggingface.co/jrkaminski/albef-matching",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhishekjoshi007 (Abhishek Joshi) · GitHub",
+      "url": "https://github.com/abhishekjoshi007",
+      "snippet": "Software Engineer | AI Enthusiast | Passionate about building impactful tech solutions - abhishekjoshi007"
+    },
+    {
+      "title": "DestinyJdj/albef-matching · Hugging Face",
+      "url": "https://huggingface.co/DestinyJdj/albef-matching",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    }
+  ]
+}

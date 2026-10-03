@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Eliasfpv28/Kolibri-1-Q3_K_S-GGUF",
+  "slug": "eliasfpv28-kolibri-1-q3_k_s-gguf",
+  "author": "Eliasfpv28",
+  "url": "https://huggingface.co/Eliasfpv28/Kolibri-1-Q3_K_S-GGUF",
+  "created_at": "2026-10-03T18:02:35.000Z",
+  "updated_at": "2026-10-03T18:13:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "kolibri1",
+    "quantized",
+    "experimental",
+    "llama-cpp",
+    "mixture-of-experts",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1-BF16",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Aleph-Alpha/Kolibri-1-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

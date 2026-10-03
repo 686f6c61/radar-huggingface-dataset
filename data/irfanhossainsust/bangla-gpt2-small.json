@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "irfanhossainsust/bangla-gpt2-small",
+  "slug": "irfanhossainsust-bangla-gpt2-small",
+  "author": "irfanhossainsust",
+  "url": "https://huggingface.co/irfanhossainsust/bangla-gpt2-small",
+  "created_at": "2026-10-03T13:02:30.000Z",
+  "updated_at": "2026-10-03T13:10:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "bangla",
+    "bengali",
+    "from-scratch",
+    "bn",
+    "dataset:irfanhossainsust/bangla-nlp-corpus",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23132160,
+  "parameters_human": "23.1M",
+  "storage_bytes": 270037184,
+  "storage_human": "270 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Causal language modeling",
+      "dataset": "Bangla NLP Corpus v0.2.0 (validation split)",
+      "metric": "Validation perplexity",
+      "value": 1298.16
+    },
+    {
+      "task": "Causal language modeling",
+      "dataset": "Bangla NLP Corpus v0.2.0 (validation split)",
+      "metric": "Validation cross-entropy",
+      "value": 7.1687
+    }
+  ],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ashleyperez/side-retrieval",
+  "slug": "ashleyperez-side-retrieval",
+  "author": "ashleyperez",
+  "url": "https://huggingface.co/ashleyperez/side-retrieval",
+  "created_at": "2026-10-03T01:53:00.000Z",
+  "updated_at": "2026-10-03T01:53:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Bridging Legal Knowledge and AI:Retrieval-Augmented Generation ...",
+      "url": "https://arxiv.org/html/2502.20364v2",
+      "snippet": "09.05.2025 ... Here, we introduce a generative AI system, a jurisdiction-specific legal information retrieval that integrates RAG, VS, and KG, constructed via ..."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reels/",
+      "snippet": "Instagram Reels lets you create and discover short, entertaining videos with audio, effects, and creative tools to share with friends or …"
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "A Retrieval-Augmented Generation Method for Question Answering ...",
+      "url": "https://www.mdpi.com/2079-9292/14/16/3314",
+      "snippet": "The retrieval-based reasoning stage employs vector search and re-ranking strategies, combined with prompt optimization, to enhance the model's reasoning ..."
+    }
+  ]
+}

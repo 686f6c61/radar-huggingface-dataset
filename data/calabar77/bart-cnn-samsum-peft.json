@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "calabar77/bart-cnn-samsum-peft",
+  "slug": "calabar77-bart-cnn-samsum-peft",
+  "author": "calabar77",
+  "url": "https://huggingface.co/calabar77/bart-cnn-samsum-peft",
+  "created_at": "2026-10-03T12:34:30.000Z",
+  "updated_at": "2026-10-03T12:34:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ingeniumacademy/bart-cnn-samsum-finetuned",
+    "lora",
+    "transformers",
+    "base_model:ingeniumacademy/bart-cnn-samsum-finetuned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18900121,
+  "storage_human": "19 MB",
+  "base_model": "ingeniumacademy/bart-cnn-samsum-finetuned",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FitGirl Repacks - The ONLY official site for FitGirl Repacks. Every ...",
+      "url": "https://fitgirl-repacks.site/",
+      "snippet": "Feb 10, 2026 · The ONLY official site for FitGirl Repacks. Every single FG repack installer has a link inside, which leads here. Do not …"
+    },
+    {
+      "title": "Upcoming Repacks - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/upcoming-repacks-10/",
+      "snippet": "14 hours ago · ⇢ In Falsus ⇢ House Builder: Plumbing ⇢ Princess Maker: Children of Revelation ⇢ Last Epoch: Rage of the …"
+    },
+    {
+      "title": "Total War: WARHAMMER III - v7.2.0 + 125 DLCs - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/total-war-warhammer-3/",
+      "snippet": "Mar 30, 2026 · #6645 HYPERVISOR Total War: WARHAMMER III v7.2.0 + 125 DLCs Genres/Tags: Strategy, Grand strategy, …"
+    },
+    {
+      "title": "Dying Light: The Beast Restored Land - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/dying-light-the-beast/",
+      "snippet": "#6127 Updated Dying Light: The Beast Restored Land – Definitive Edition v1.6.0 + 11 DLCs/Bonuses + Multiplayer Genres/Tags: …"
+    },
+    {
+      "title": "Clair Obscur: Expedition 33 - FitGirl Repacks",
+      "url": "https://fitgirl-repacks.site/clair-obscur-expedition-33/",
+      "snippet": "Dec 14, 2025 · #5554 Clair Obscur: Expedition 33 – Deluxe Edition v61339 (v1.5.0) + DLC + 9 Bonus Soundtracks Genres/Tags: …"
+    }
+  ]
+}

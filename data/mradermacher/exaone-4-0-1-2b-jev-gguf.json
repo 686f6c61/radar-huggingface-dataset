@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EXAONE-4.0-1.2B-JEV-GGUF",
+  "slug": "mradermacher-exaone-4-0-1-2b-jev-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EXAONE-4.0-1.2B-JEV-GGUF",
+  "created_at": "2026-10-03T01:18:57.000Z",
+  "updated_at": "2026-10-03T01:52:31.000Z",
+  "license": "exaone",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "exaone",
+    "decision-model",
+    "system-one",
+    "jev",
+    "calibrated",
+    "en",
+    "base_model:carrtesy/EXAONE-4.0-1.2B-JEV",
+    "base_model:quantized:carrtesy/EXAONE-4.0-1.2B-JEV",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 1279391520,
+  "parameters_human": "1.28B",
+  "storage_bytes": 11814731520,
+  "storage_human": "11.8 GB",
+  "base_model": "carrtesy/EXAONE-4.0-1.2B-JEV",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/EXAONE-4.0-1.2B-JEV-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/EXAONE-4.0-1.2B-JEV-GGUF",
+      "snippet": "mradermacher / EXAONE-4.-1.2B-JEV-GGUF Like 0 Transformers GGUF English exaone decision-model system-one jev calibrated conversational License:exaone Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - LG-AI-EXAONE/EXAONE-4.0: Official repository for EXAONE 4.0 ...",
+      "url": "https://github.com/LG-AI-EXAONE/EXAONE-4.0",
+      "snippet": "The EXAONE 4.0 model series consists of two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model designed for on-device applications. In the EXAONE 4.0 architecture, we apply new architectural changes compared to previous EXAONE models as below:"
+    },
+    {
+      "title": "LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LGAI-EXAONE/EXAONE-4.0-1.2B-GGUF",
+      "snippet": "OpenAI compatible server with `llama-server` Run llama-server with EXAONE 4.0 Jinja template. You can find the chat template file in this repository. ... Use OpenAI chat completion to test the GGUF model."
+    },
+    {
+      "title": "EXAONE 4.0: Unified Large Language Models Integrating Non-reasoning and ...",
+      "url": "https://arxiv.org/html/2507.11407v1",
+      "snippet": "The EXAONE 4.0 model series consists of two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model designed for on-device applications. The EXAONE 4.0 demonstrates superior performance compared to open-weight models in its class and remains competitive even against frontier-class models."
+    },
+    {
+      "title": "[2507.11407] EXAONE 4.0: Unified Large Language Models Integrating Non ...",
+      "url": "https://arxiv.org/abs/2507.11407",
+      "snippet": "The EXAONE 4.0 model series consists of two sizes: a mid-size 32B model optimized for high performance, and a small-size 1.2B model designed for on-device applications. The EXAONE 4.0 demonstrates superior performance compared to open-weight models in its class and remains competitive even against frontier-class models."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ClaudioSavelli/FAME_gold_llama32-1b-5-instruct-qa",
+  "slug": "claudiosavelli-fame_gold_llama32-1b-5-instruct-qa",
+  "author": "ClaudioSavelli",
+  "url": "https://huggingface.co/ClaudioSavelli/FAME_gold_llama32-1b-5-instruct-qa",
+  "created_at": "2026-10-03T16:27:09.000Z",
+  "updated_at": "2026-10-03T16:34:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 4960484346,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClaudioSavelli (Claudio Savelli) - Hugging Face",
+      "url": "https://huggingface.co/ClaudioSavelli/models",
+      "snippet": "ClaudioSavelli 's models 83. Sort: Recently updated. ClaudioSavelli ... ClaudioSavelli/FAME_gold_llama32-3b-5-instruct-qa. Text Generation • 3B ..."
+    }
+  ]
+}

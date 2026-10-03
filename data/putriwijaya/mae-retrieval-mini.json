@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "putriwijaya/mae-retrieval-mini",
+  "slug": "putriwijaya-mae-retrieval-mini",
+  "author": "putriwijaya",
+  "url": "https://huggingface.co/putriwijaya/mae-retrieval-mini",
+  "created_at": "2026-10-03T02:12:35.000Z",
+  "updated_at": "2026-10-03T02:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Historical Events – The 21 Greatest Events in History",
+      "url": "https://www.havefunwithhistory.com/historical-events/",
+      "snippet": "Feb 1, 2025 · Join me us we explore 20 of the most famous historical events that have left an indelible mark on our collective past …"
+    },
+    {
+      "title": "100 Major Events that changed the world – Alan Dotchin Blog",
+      "url": "https://blog.alandotchin.com/100-major-events-that-changed-the-world/",
+      "snippet": "Jul 5, 2025 · Here’s a list of 100 major events—spanning science, politics, war, technology, and culture—that have significantly …"
+    },
+    {
+      "title": "9 Interesting Historical Events That Aren't Widely-Known",
+      "url": "https://allthatsinteresting.com/interesting-historical-events",
+      "snippet": "Apr 8, 2026 · In these cases and others, hundreds of remarkable historical events were set in motion by smaller, often overlooked …"
+    },
+    {
+      "title": "Famous historical events – timeline of 50 world changing moments",
+      "url": "https://preply.com/en/blog/famous-historical-events/?msockid=0deef3cdabff6b770172e42aaa886a11",
+      "snippet": "Sep 14, 2026 · Famous historical events explained clearly: 50 key moments, ancient foundations – modern world, with dates, …"
+    },
+    {
+      "title": "20 Most Famous Historical Events That Changed the World",
+      "url": "https://www.discoverwalks.com/blog/world/20-most-famous-historical-events-that-changed-the-world/",
+      "snippet": "Dec 18, 2022 · From World War I to the recent Coronavirus pandemic, the world has been impacted by these changes. Below are …"
+    }
+  ]
+}

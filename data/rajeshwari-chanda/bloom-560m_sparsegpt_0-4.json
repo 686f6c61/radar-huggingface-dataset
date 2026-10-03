@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4",
+  "slug": "rajeshwari-chanda-bloom-560m_sparsegpt_0-4",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_sparsegpt_0.4",
+  "created_at": "2026-10-03T16:39:01.000Z",
+  "updated_at": "2026-10-03T16:39:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel unique de télépaiement | Amendes.gouv.fr",
+      "url": "https://www.amendes.gouv.fr/",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …"
+    },
+    {
+      "title": "ANTAI : Agence nationale de traitement automatisé des infractions ...",
+      "url": "https://www.antai.gouv.fr/",
+      "snippet": "Si vous souhaitez payer ou consigner en ligne, cliquez ci-dessous pour accéder au site sécurisé de télépaiement. L'ANTAI simplifie …"
+    },
+    {
+      "title": "Electronic payment service for fines | Amendes.gouv.fr",
+      "url": "https://www.amendes.gouv.fr/en/tai",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …"
+    },
+    {
+      "title": "Service de paiement en ligne des amendes | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R11026",
+      "snippet": "Vous pouvez consulter une foire aux questions pour savoir où trouver le numéro de télépaiement et la clé. Besoin d’aide ? Une …"
+    },
+    {
+      "title": "Paiement | ANTAI.gouv.fr",
+      "url": "https://www.antai.gouv.fr/particulier/paiement/",
+      "snippet": "Le Service du Fichier National des Permis de Conduire (F.N.P.C.) vous avertira par courrier du nombre de points retirés et du …"
+    }
+  ]
+}

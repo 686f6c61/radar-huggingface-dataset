@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "danghoang2005/qwen25-math-1.5b-grpo-r0",
+  "slug": "danghoang2005-qwen25-math-1-5b-grpo-r0",
+  "author": "danghoang2005",
+  "url": "https://huggingface.co/danghoang2005/qwen25-math-1.5b-grpo-r0",
+  "created_at": "2026-10-03T00:54:27.000Z",
+  "updated_at": "2026-10-03T00:55:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889040,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danghoang2005/qwen25-math-1.5b-sft · Hugging Face",
+      "url": "https://huggingface.co/danghoang2005/qwen25-math-1.5b-sft",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Math-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Math-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen2.5-Math: A series of math-specific large language ...",
+      "url": "https://github.com/QwenLM/Qwen2.5-Math",
+      "snippet": "The Qwen2.5-Math series models have achieved significant performance improvements compared to the Qwen2-Math series models on the Chinese and English mathematics benchmarks with CoT. Detailed performance and introduction are shown in this 📑 blog. 🚨 Qwen2.5-Math mainly supports solving English and Chinese math problems through CoT and TIR."
+    },
+    {
+      "title": "GitHub - zhangfaen/GRPO_Qwen2.5-1.5B · GitHub",
+      "url": "https://github.com/zhangfaen/GRPO_Qwen2.5-1.5B",
+      "snippet": "This article demonstrated implementing the GRPO algorithm from scratch to successfully fine-tune a 1.5 billion parameter language model. Reinforcement learning, compared to supervised learning, has advantages in exploration and adaptability, and GRPO, through multi-sample optimization and reward mechanisms, injects stronger reasoning abilities ..."
+    },
+    {
+      "title": "Qwen2.5-Math-1.5B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen2.5-Math-1.5B",
+      "snippet": "Qwen2.5-Math-1.5B-Instruct is an instruction model for chatting; Qwen2.5-Math-1.5B is a base model typically used for completion and few-shot inference, serving as a better starting point for fine-tuning."
+    }
+  ]
+}

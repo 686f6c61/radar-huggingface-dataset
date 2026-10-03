@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-iterated-run2-gen5",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run2-gen5",
+  "created_at": "2026-10-03T18:26:26.000Z",
+  "updated_at": "2026-10-03T18:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Danger: Diabolik (1968) - IMDb",
+      "url": "https://m.imdb.com/title/tt0062861/",
+      "snippet": "Danger: Diabolik: Directed by Mario Bava. With John Phillip Law, Marisa Mell, Michel Piccoli, Adolfo Celi. A master thief and his …"
+    },
+    {
+      "title": "Diabolik (2021) - IMDb",
+      "url": "https://m.imdb.com/title/tt9381682",
+      "snippet": "Diabolik: Directed by Antonio Manetti, Marco Manetti. With Luca Marinelli, Miriam Leone, Valerio Mastandrea, Alessandro Roja. The …"
+    },
+    {
+      "title": "IMDbPro Official Site | Start Your Free Trial",
+      "url": "https://pro.imdb.com/",
+      "snippet": "Start your free 30-day IMDbPro trial. Access entertainment industry contacts, in-development projects, STARmeter rankings, and …"
+    },
+    {
+      "title": "IMDbPro",
+      "url": "https://pro.imdb.com/login/ap",
+      "snippet": "An Amazon company © 1990-2026 IMDb.com, Inc. or its affiliates."
+    },
+    {
+      "title": "Getting Access to the API - IMDb",
+      "url": "https://data.imdb.com/documentation/api-documentation/getting-access/",
+      "snippet": "IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the …"
+    }
+  ]
+}

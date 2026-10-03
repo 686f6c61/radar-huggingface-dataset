@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "warped-community/gemma-3n-E2B-official-litert-lm",
+  "slug": "warped-community-gemma-3n-e2b-official-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/gemma-3n-E2B-official-litert-lm",
+  "created_at": "2026-10-03T18:20:13.000Z",
+  "updated_at": "2026-10-03T18:30:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "warped",
+    "base_model:google/gemma-3n-E2B-it",
+    "base_model:finetune:google/gemma-3n-E2B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3655827456,
+  "storage_human": "3.7 GB",
+  "base_model": "google/gemma-3n-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "awesome-opensource-ai/README.md at main - GitHub",
+      "url": "https://github.com/alvinreal/awesome-opensource-ai/blob/main/README.md",
+      "snippet": "Curated open-source artificial intelligence models, libraries, infrastructure, and developer tools. Awesome. Contributing. Contents. 1. Core Frameworks & ..."
+    },
+    {
+      "title": "Google introduces Gemma 4 12B: a unified, encoder-free ... - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1tvx2h7/google_introduces_gemma_4_12b_a_unified/",
+      "snippet": "03.06.2026 ... What makes Gemma 4 12B stand out is its streamlined approach to processing visual and audio inputs. Traditional multimodal models typically rely ..."
+    },
+    {
+      "title": "Run Gemma with Ollama | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/integrations/ollama",
+      "snippet": "02.04.2026 ... In order to run Gemma models with less compute resources, the llama.cpp and Ollama frameworks use quantized versions of the models in the Georgi ..."
+    },
+    {
+      "title": "How to run a local coding agent with Gemma 4 and Pi - Patrick Loeber",
+      "url": "https://patloeber.com/gemma-4-pi-agent/",
+      "snippet": "27.04.2026 ... I've been playing around with running coding agents fully locally. The setup I landed on is: LM Studio + Pi agent + Gemma 4 26B A4B (Q4_K_M)."
+    },
+    {
+      "title": "Google Gemma 4 Changes Everything for Local Image Processing",
+      "url": "https://vectosolve.com/blog/google-gemma-4-local-image-processing-designers",
+      "snippet": "13.04.2026 ... Gemma 4 ships as four distinct models, each targeting different hardware and use cases: Deep dive into each model: E2B (2.3B effective / 5.1B ..."
+    }
+  ]
+}

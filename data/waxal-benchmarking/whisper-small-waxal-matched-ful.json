@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "waxal-benchmarking/whisper-small-waxal-matched-ful",
+  "slug": "waxal-benchmarking-whisper-small-waxal-matched-ful",
+  "author": "waxal-benchmarking",
+  "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-ful",
+  "created_at": "2026-10-03T12:43:05.000Z",
+  "updated_at": "2026-10-03T12:43:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ful"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "african-languages",
+    "waxal",
+    "ablation",
+    "ful",
+    "dataset:google/WaxalNLP",
+    "arxiv:2606.02375",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WAXAL-NET: Finetuned Edge ASR Across 19 African Languages",
+      "url": "https://arxiv.org/html/2606.02375v1",
+      "snippet": "01.06.2026 ... For the Whisper models, we apply full fine-tuning, updating all model weights. ... models (MMS-300M, Whisper Small, Whisper Tiny). E.3.2 Step 2: ..."
+    },
+    {
+      "title": "Ethio-ASR: Joint Multilingual Speech Recognition and Language ...",
+      "url": "https://arxiv.org/html/2603.23654v1",
+      "snippet": "We train our models on the recently released WAXAL corpus using several pre-trained speech encoders and evaluate against strong multilingual baselines, ..."
+    },
+    {
+      "title": "Impact - OpenToken",
+      "url": "https://opentoken.global/impact",
+      "snippet": "Model. WAXAL ASR Models — Speech Recognition for 19 African Languages. A collection of 78 Whisper (Tiny and Small) models fine-tuned on the WAXAL corpus for ..."
+    },
+    {
+      "title": "Synthetic Speech Data for African Languages - Afriklang",
+      "url": "https://afriklang.com/blog/synthetic-speech-data-for-african-languages-what-clear-global-s-18-month-study",
+      "snippet": "10.09.2026 ... ... match how native speakers coarticulate. For an ASR model, these artifacts matter. Research presented at AfricaNLP 2026 on Whisper-Small fine ..."
+    },
+    {
+      "title": "Amharic Transcription: Ge'ez Script and Engine Reality",
+      "url": "https://convertaudiototext.com/blog/amharic-transcription-ethiopia",
+      "snippet": "26.05.2026 ... Open research model, WAXAL corpus. Google Cloud Speech-to-Text (am-ET) ... Research benchmarks show character error rates reported above 100% for ..."
+    }
+  ]
+}

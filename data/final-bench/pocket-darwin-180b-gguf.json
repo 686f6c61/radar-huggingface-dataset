@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/POCKET-Darwin-180B-GGUF",
+  "slug": "final-bench-pocket-darwin-180b-gguf",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/POCKET-Darwin-180B-GGUF",
+  "created_at": "2026-10-02T02:17:10.000Z",
+  "updated_at": "2026-10-03T04:38:12.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "pocket",
+    "darwin",
+    "darwin-rsi",
+    "model-level-rsi",
+    "dgx-spark",
+    "on-device",
+    "moe",
+    "text-generation",
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "multilingual",
+    "arxiv:2605.14386",
+    "arxiv:2609.20269",
+    "base_model:FINAL-Bench/Darwin-180B-RSI-R3",
+    "base_model:quantized:FINAL-Bench/Darwin-180B-RSI-R3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 49,
+  "downloads_30d": 348,
+  "trending_score": 19,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 111345633843,
+  "storage_human": "111.3 GB",
+  "base_model": "FINAL-Bench/Darwin-180B-RSI-R3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33788",
+      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
+    },
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33790",
+      "snippet": "final, finale - Définitions Français : Retrouvez la définition de final, finale, ainsi que les synonymes, difficultés... - synonymes, …"
+    },
+    {
+      "title": "final - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/final",
+      "snippet": "Définition, exemples et prononciation de final : Qui est à la fin, qui sert de fin (contraire initi…"
+    },
+    {
+      "title": "Models & capabilities | The Signal",
+      "url": "https://signalbriefing.app/topics/models-capabilities",
+      "snippet": "vor 1 Tag ... VIDRAFT, publishing as FINAL-Bench, has released POCKET-Darwin-180B, a four-bit GGUF version of its Darwin-180B-RSI-R3 model. The roughly ..."
+    },
+    {
+      "title": "« Finals » ou « finaux » ? [pluriel de final] | La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/finals-ou-finaux",
+      "snippet": "Aug 23, 2023 · Règle : le pluriel de l’adjectif « final » au masculin peut s’écrire des deux formes : « finals » ou « finaux ». Ce double …"
+    }
+  ]
+}

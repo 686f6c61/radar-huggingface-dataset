@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "x8bu/gidi-finance",
+  "slug": "x8bu-gidi-finance",
+  "author": "x8bu",
+  "url": "https://huggingface.co/x8bu/gidi-finance",
+  "created_at": "2026-10-03T12:47:08.000Z",
+  "updated_at": "2026-10-03T13:12:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "vietnamese",
+    "personal-finance",
+    "token-classification",
+    "on-device",
+    "text-classification",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57503558,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tours Les Sables-d'Olonne - Mappy",
+      "url": "https://fr.mappy.com/itineraire/tours/les-sables-d-olonne",
+      "snippet": "Mappy vous indique comment aller de Tours (37000) et Les Sables-d'Olonne (85100) en voiture. Mappy vous propose les meilleurs …"
+    },
+    {
+      "title": "Les Sables-d'Olonne Tours - Mappy",
+      "url": "https://fr.mappy.com/itineraire/les-sables-d-olonne/tours",
+      "snippet": "Mappy vous indique comment aller de Les Sables-d'Olonne (85100) et Tours (37000) en voiture. Mappy vous propose les meilleurs …"
+    },
+    {
+      "title": "Tours - Les Sables-d'Olonne : trajet, distance, durée et coûts ...",
+      "url": "https://www.viamichelin.fr/itineraires/resultats/tours-37000-indre_et_loire-centre_val_de_loire-france-to-les_sables_d_olonne-85100-vendee-pays_de_la_loire-france",
+      "snippet": "Calculez facilement votre itinéraire Tours - Les Sables-d'Olonne en voiture avec ViaMichelin. Distance, coût (péages, carburant, coût …"
+    },
+    {
+      "title": "Itinéraire de Tours à Les Sables-d'Olonne - Distance et trajet",
+      "url": "https://www.l-itineraire.com/de_tours_a_sables-d-olonne",
+      "snippet": "Le trajet en voiture en départ de Tours située dans le département de l'Indre-et-Loire et Les Sables-d'Olonne dans le département …"
+    },
+    {
+      "title": "Tours → Les Sables-d'Olonne: tarifs et horaires - Rome2rio",
+      "url": "https://www.rome2rio.com/fr/s/Tours/Les-Sables-d-Olonne",
+      "snippet": "Oui, la distance entre Tours et Les Sables-d'Olonne est de 247 km. Il faut environ 2 h 48 m pour conduire de Tours à Les Sables …"
+    }
+  ]
+}

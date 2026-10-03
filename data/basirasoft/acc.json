@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "BasiraSoft/ACC",
+  "slug": "basirasoft-acc",
+  "author": "BasiraSoft",
+  "url": "https://huggingface.co/BasiraSoft/ACC",
+  "created_at": "2026-10-03T01:13:26.000Z",
+  "updated_at": "2026-10-03T01:15:26.000Z",
+  "license": "zlib",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:zlib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277164093,
+  "storage_human": "277 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BasiraSoft (Basira Soft) - Hugging Face",
+      "url": "https://huggingface.co/BasiraSoft/models",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 12 hours ago ... updated a model 4 days ago"
+    },
+    {
+      "title": "BasiraSoft/tilelogic3.1 · Hugging Face",
+      "url": "https://huggingface.co/BasiraSoft/tilelogic3.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BasiraSoft UK | Custom Software, Mobile Apps & Affordable Growth Partner",
+      "url": "https://uk.basirasoft.com/",
+      "snippet": "Who builds the software at BasiraSoft and how does the direct model work? BasiraSoft is an independent boutique software engineering practice founded and led by Aftab Hussain (Lead Full-Stack & MERN Architect). You work directly 1-on-1 with the principal engineer writing your code—eliminating agency middlemen, account managers, and 50%+ markups."
+    },
+    {
+      "title": "Product Roadmap 2026-2027 — Shipped Releases & Upcoming Features ...",
+      "url": "https://basirasoft.com/roadmap/",
+      "snippet": "Explore the official BasiraSoft Product Roadmap. Track deployed POS systems, active development on Multi-Branch Cloud Relay, FBR Iris Invoicing, and AI Demand Forecasting."
+    },
+    {
+      "title": "Başarsoft | Geographic Information Systems (GIS) Solutions",
+      "url": "https://www.basarsoft.com.tr/en/",
+      "snippet": "Başarsoft develops map-based intelligent technologies with Turkey&#x27;s leading location-based analysis and geographic data solutions."
+    }
+  ]
+}

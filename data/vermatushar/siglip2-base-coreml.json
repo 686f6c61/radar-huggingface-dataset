@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "vermatushar/siglip2-base-coreml",
+  "slug": "vermatushar-siglip2-base-coreml",
+  "author": "vermatushar",
+  "url": "https://huggingface.co/vermatushar/siglip2-base-coreml",
+  "created_at": "2026-10-03T14:35:45.000Z",
+  "updated_at": "2026-10-03T14:36:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "siglip2",
+    "image-text-retrieval",
+    "base_model:google/siglip2-base-patch16-256",
+    "base_model:finetune:google/siglip2-base-patch16-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 355753654,
+  "storage_human": "356 MB",
+  "base_model": "google/siglip2-base-patch16-256",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · karaiman/siglip2-base-coreml at main - Hugging Face",
+      "url": "https://huggingface.co/karaiman/siglip2-base-coreml/blob/main/README.md",
+      "snippet": "Like 1 Core ML siglip2 image-text-retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main siglip2-base-coreml /README.md karaiman SigLIP 2 B/16-256 Core ML, 8-bit palettized 822b48d verifiedabout 1 month ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 1 ..."
+    },
+    {
+      "title": "nufrnd/lvc-siglip2-base-coreml · Hugging Face",
+      "url": "https://huggingface.co/nufrnd/lvc-siglip2-base-coreml",
+      "snippet": "nufrnd / lvc-siglip2-base-coreml Like 0 Follow NuFrnd AI 1 Zero-Shot Image Classification Core ML siglip2 lossless-video-cutter License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new SigLIP 2 Base (Core ML) for Lossless Video Cutter"
+    },
+    {
+      "title": "transformers/src/transformers/models/siglip2/modeling_siglip2 ... - GitHub",
+      "url": "https://github.com/huggingface/transformers/blob/main/src/transformers/models/siglip2/modeling_siglip2.py",
+      "snippet": "Base class for vision model&#x27;s outputs that also contains image embeddings of the pooling of the last hidden states."
+    },
+    {
+      "title": "SigLIP2 - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/SigLIP2.html",
+      "snippet": "SigLIP2 1 Introduction ¶ SigLIP2 is a family of vision-language embedding models from Google. Each checkpoint provides separate text and image encoders for contrastive embedding (not text generation). vLLM runs SigLIP2 as a pooling model via llm.embed () (offline) or /v1/embeddings (online). Supported use cases include image-text similarity, zero-shot ImageNet classification, and multimodal ..."
+    },
+    {
+      "title": "[2502.14786] SigLIP 2: Multilingual Vision-Language Encoders with ...",
+      "url": "https://arxiv.org/abs/2502.14786",
+      "snippet": "We introduce SigLIP 2, a family of new multilingual vision-language encoders that build on the success of the original SigLIP. In this second iteration, we extend the original image-text training objective with several prior, independently developed techniques into a unified recipe -- this includes captioning-based pretraining, self-supervised losses (self-distillation, masked prediction) and ..."
+    }
+  ]
+}

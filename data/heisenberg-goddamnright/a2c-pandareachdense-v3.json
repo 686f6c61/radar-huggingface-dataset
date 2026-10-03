@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "heisenberg-goddamnright/a2c-PandaReachDense-v3",
+  "slug": "heisenberg-goddamnright-a2c-pandareachdense-v3",
+  "author": "heisenberg-goddamnright",
+  "url": "https://huggingface.co/heisenberg-goddamnright/a2c-PandaReachDense-v3",
+  "created_at": "2026-10-03T17:40:31.000Z",
+  "updated_at": "2026-10-03T18:33:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 324102,
+  "storage_human": "324102 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Werner Heisenberg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Werner_Heisenberg",
+      "snippet": "One of Heisenberg's sons, Martin Heisenberg, became a neurobiologist at the University of Würzburg, while another son, Jochen …"
+    },
+    {
+      "title": "Werner Heisenberg — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Werner_Heisenberg",
+      "snippet": "Quand il a neuf ans, la famille s'installe à Munich, où son père a décroché un poste à l'université en 1909. Heisenberg y fréquente le …"
+    },
+    {
+      "title": "Walter White (Breaking Bad) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Walter_White_(Breaking_Bad)",
+      "snippet": "Walter Hartwell White, also known by his alias Heisenberg, is a fictional character and the protagonist of the American crime drama …"
+    },
+    {
+      "title": "Werner Heisenberg | Biography, Nobel Prize, & Facts - Britannica",
+      "url": "https://www.britannica.com/biography/Werner-Heisenberg",
+      "snippet": "5 days ago · Werner Heisenberg, German physicist and philosopher who discovered (1925) a way to formulate quantum mechanics …"
+    },
+    {
+      "title": "Werner Heisenberg – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Werner_Heisenberg",
+      "snippet": "Von 1958 bis 1970 war Heisenberg Direktor des Max-Planck-Instituts für Physik (heute auch Werner-Heisenberg-Institut genannt) in …"
+    }
+  ]
+}

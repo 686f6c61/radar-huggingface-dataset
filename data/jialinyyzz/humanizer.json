@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "jialinyyzz/humanizer",
+  "slug": "jialinyyzz-humanizer",
+  "author": "jialinyyzz",
+  "url": "https://huggingface.co/jialinyyzz/humanizer",
+  "created_at": "2026-09-11T05:00:16.000Z",
+  "updated_at": "2026-10-03T03:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4_unified",
+    "image-text-to-text",
+    "humanizer",
+    "text-rewriting",
+    "rewriting",
+    "paraphrase",
+    "style-transfer",
+    "llama.cpp",
+    "mlx",
+    "gemma4",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 65,
+  "downloads_30d": 7039,
+  "trending_score": 58,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 201988004394,
+  "storage_human": "202.0 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gguf: Q6_K (7/62 critical, 13/16 Chinese — within noise of bf16)",
+      "url": "https://huggingface.co/jialinyyzz/humanizer-gemma-4-e4b/commit/0335dae36d4b84ef3da6cbf27ba3f235dc1ae510",
+      "snippet": "11.09.2026 ... Pull the model. # Download Lemonade from https://lemonade-server.ai/ lemonade pull jialinyyzz/humanizer-gemma-4-e4b:Q6_K ; Run and chat with the ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=paraphrase",
+      "snippet": "Models · jialinyyzz/humanizer-gemma-4-e4b · harlynmivra/Xing4.0-29B-A4B-Rewrite · T-Systems-onsite/cross-en-de-roberta-sentence-transformer · T-Systems-onsite/ ..."
+    },
+    {
+      "title": "sgaofen - GitHub",
+      "url": "https://github.com/sgaofen",
+      "snippet": "a LLM model that Humanize AI-written drafts so they read like a person wrote them, keeping every fact. Python 4."
+    },
+    {
+      "title": "Quantized Models for google/gemma-4-E4B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Agoogle%2Fgemma-4-E4B",
+      "snippet": "ArithaAI/aritha-ai-mini. Updated Jun 6 • 1 · Mungert/gemma-4-E4B-it-GGUF ... jialinyyzz/humanizer-gemma-4-e4b. Text Generation • 8B • Updated 13 days ago ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=97&sort=trending",
+      "snippet": "Solstice-AI/Qwen3.8-27B-TTURBO-Cold-Fusion-709-L-Uncensored ... jialinyyzz/humanizer-gemma-4-e4b. Text Generation • 8B • Updated 11 days ago ..."
+    }
+  ]
+}

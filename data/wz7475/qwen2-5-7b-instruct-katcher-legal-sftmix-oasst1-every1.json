@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-sftmix-oasst1-every1",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every1",
+  "created_at": "2026-10-03T17:51:53.000Z",
+  "updated_at": "2026-10-03T17:52:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "30 Best Uncensored Anime (Borderline H, NSFW Anime) To Watch!",
+      "url": "https://animehunch.com/30-best-uncensored-anime-to-watch-gore-ecchi/",
+      "snippet": "Aug 5, 2026 · In this list, we bring you best uncensored anime for the cultured weeb in you!! If you're a fan of steamy scenes, then …"
+    },
+    {
+      "title": "Top free NSFW games tagged Anime - itch.io",
+      "url": "https://itch.io/games/free/nsfw/tag-anime",
+      "snippet": "Find NSFW games tagged Anime like DEEP VAULT 69, Dimension 69, Path of Desire: Cursed Chakra, Lilith's Heart, Project …"
+    },
+    {
+      "title": "Anime NSFW | Pictures - Scrolller",
+      "url": "https://scrolller.com/r/anime_nsfw",
+      "snippet": "View 669 NSFW pictures and enjoy Anime NSFW with the endless random gallery on Scrolller.com. Go on to discover millions of …"
+    },
+    {
+      "title": "AniGallery — Hentai & NSFW Anime Image Gallery",
+      "url": "https://ani-gallery.com/",
+      "snippet": "Browse hentai, NSFW anime and adult anime image galleries by character, series, category and tags."
+    },
+    {
+      "title": "Anime | Scrolller NSFW",
+      "url": "https://scrolller.com/c/anime-",
+      "snippet": "Anime — a hand-picked collection of 136 curated NSFW posts on Scrolller. Browse Anime in an endless gallery of pictures and …"
+    }
+  ]
+}

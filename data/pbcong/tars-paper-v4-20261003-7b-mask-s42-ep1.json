@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "pbcong/tars-paper-v4-20261003-7b-mask-s42-ep1",
+  "slug": "pbcong-tars-paper-v4-20261003-7b-mask-s42-ep1",
+  "author": "pbcong",
+  "url": "https://huggingface.co/pbcong/tars-paper-v4-20261003-7b-mask-s42-ep1",
+  "created_at": "2026-10-03T02:02:38.000Z",
+  "updated_at": "2026-10-03T02:03:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llava_llama",
+    "base_model:liuhaotian/llava-v1.5-7b",
+    "base_model:finetune:liuhaotian/llava-v1.5-7b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 7062902784,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126400899,
+  "storage_human": "14.1 GB",
+  "base_model": "liuhaotian/llava-v1.5-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pbcong/tars-paper-reconstruction-13b-mask-s42-ep3 · Hugging Face",
+      "url": "https://huggingface.co/pbcong/tars-paper-reconstruction-13b-mask-s42-ep3",
+      "snippet": "Epoch-3 full fine-tuning checkpoint in original LLaVA format. Load with the pinned TARS/LLaVA loader, not an HF LoRA loader. Paper profiles are reconstructions with documented assumptions, not author checkpoints. Training settings and revisions: reproduction.json. Measured benchmarks: pending. Downloads last month - Safetensors Model size 13B params Tensor type BF16 · Files info Inference ..."
+    },
+    {
+      "title": "[2510.27680v2] PETAR: Localized Findings Generation with Mask-Aware ...",
+      "url": "https://arxiv.org/abs/2510.27680v2",
+      "snippet": "Generating automated reports for 3D positron emission tomography (PET) is an important and challenging task in medical imaging. PET plays a vital role in oncology, but automating report generation is difficult due to the complexity of whole-body 3D volumes, the wide range of potential clinical findings, and the limited availability of annotated datasets. To address these challenges, we ..."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/CVPR2026",
+      "snippet": "These CVPR 2026 papers are the Open Access versions, provided by the Computer Vision Foundation. Except for the watermark, they are identical to the accepted versions; the final published version of the proceedings is available on IEEE Xplore."
+    },
+    {
+      "title": "GitHub - raphbag/tars-docs: The official documentation hub for TARS-AI ...",
+      "url": "https://github.com/raphbag/tars-docs",
+      "snippet": "The official documentation hub for TARS-AI. Find guides, technical references, and contribution resources here."
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Maqbool_PETAR_Localized_Findings_Generation_with_Mask-Aware_Vision-Language_Modeling_for_PET_CVPR_2026_paper.html",
+      "snippet": "Second, we propose PETAR-4B, a 3D vision-language model designed for mask-aware, spatially grounded PET/CT reporting. PETAR-4B jointly encodes PET, CT, and 3D lesion segmentation masks, using a 3D focal prompt to capture fine-grained details of lesions that normally comprise less than 0.1% of the volume."
+    }
+  ]
+}

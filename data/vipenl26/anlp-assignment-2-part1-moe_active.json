@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "vipenl26/anlp-assignment-2-part1-moe_active",
+  "slug": "vipenl26-anlp-assignment-2-part1-moe_active",
+  "author": "vipenl26",
+  "url": "https://huggingface.co/vipenl26/anlp-assignment-2-part1-moe_active",
+  "created_at": "2026-10-03T15:13:17.000Z",
+  "updated_at": "2026-10-03T15:26:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287345048,
+  "storage_human": "287 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chain-analysis/facebook_names.json at master - GitHub",
+      "url": "https://github.com/martinjc/chain-analysis/blob/master/facebook_names.json",
+      "snippet": "... 1 lines (1 loc) · 850 KB. master. Breadcrumbs. chain-analysis. /. facebook_names ... Moe's Southwest Grill\", \"Moe's Southwest Grill\", \"Moe's Southwest Grill ..."
+    },
+    {
+      "title": "New Applications July 2021 | PDF | Computing - Scribd",
+      "url": "https://www.scribd.com/document/669197571/New-Applications-July-2021",
+      "snippet": "01.07.2021 ... utilization. 26 14514/2021-CO/SW 1/07/2021 Mobile Network Video Computer Software Dahua Technology India Private Limited Recorder Wireless"
+    },
+    {
+      "title": "1985-11-03 - Orange Coast Pilot - IIS Windows Server",
+      "url": "https://ecms.newportbeachca.gov/WEB/DocView.aspx?id=1295633&dbid=0&repo=CNB",
+      "snippet": "01.06.2018 ... Then 1 sent another Course assignment to a writer's competition ... (Part 1 ol 2) Jane Aleu noer Edw1rdJ:tewnann (2 hrs.) ()) .. \"Rio ..."
+    },
+    {
+      "title": "1970-05-23 - Orange Coast Pilot-Costa Mesa - IIS Windows Server",
+      "url": "https://archive.newportbeachlibrary.org/NBPL/DocView.aspx?id=1213336&dbid=0&repo=CNB",
+      "snippet": "... 1 A I~ \"\" It 7 l• )I ' ~ 111 ? 1• IS 0 t 39 • I \" ' \\1 \" • 117 11 0 ... I om• r.1 1 II 1 2(1 '\"\"'llO I 010..0 Fu~~ I Jd I WOl l'I \\ 18 DAIL'!' PILOT ..."
+    }
+  ]
+}

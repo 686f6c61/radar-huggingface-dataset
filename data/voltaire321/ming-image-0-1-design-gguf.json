@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "voltaire321/Ming-Image-0.1-Design-GGUF",
+  "slug": "voltaire321-ming-image-0-1-design-gguf",
+  "author": "voltaire321",
+  "url": "https://huggingface.co/voltaire321/Ming-Image-0.1-Design-GGUF",
+  "created_at": "2026-10-03T00:58:27.000Z",
+  "updated_at": "2026-10-03T01:31:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "stable-diffusion.cpp",
+    "ming-image",
+    "transparent",
+    "rgba",
+    "text-to-image",
+    "base_model:inclusionAI/Ling-mini-2.0",
+    "base_model:quantized:inclusionAI/Ling-mini-2.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 6154901056,
+  "parameters_human": "6.15B",
+  "storage_bytes": 17060599904,
+  "storage_human": "17.1 GB",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design, inclusionAI/Ling-mini-2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - inclusionAI/Ming-Image",
+      "url": "https://github.com/inclusionAI/Ming-Image",
+      "snippet": "The series includes two 6B-parameter models: Ming-Image-.1-Design generates complete visual designs for UI, infographics, posters, and text-rich compositions. Ming-Image-.1-Design-Layer decomposes flattened design images into independently editable transparent layers."
+    },
+    {
+      "title": "inclusionAI/Ming-Image-0.1-Design · Hugging Face",
+      "url": "https://huggingface.co/inclusionAI/Ming-Image-0.1-Design",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepinfra/ming-image",
+      "url": "https://github.com/deepinfra/ming-image",
+      "snippet": "Ming-Image-.1-Design is an open-source series for visual-design generation and editable layer decomposition."
+    },
+    {
+      "title": "Ming-Image-0.1-Design - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/ming_image_0_1_design",
+      "snippet": "Ming-Image-.1-Design is a family of open-weight image models for graphic design released by inclusionAI, the open-source AI initiative founded by Ant Group…"
+    },
+    {
+      "title": "Comfy-Org/Ming-Image · Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/Ming-Image",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

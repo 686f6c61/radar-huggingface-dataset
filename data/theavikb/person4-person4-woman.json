@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "theavikb/person4-person4-woman",
+  "slug": "theavikb-person4-person4-woman",
+  "author": "theavikb",
+  "url": "https://huggingface.co/theavikb/person4-person4-woman",
+  "created_at": "2026-10-03T16:26:25.000Z",
+  "updated_at": "2026-10-03T17:11:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1940575798,
+  "storage_human": "1.9 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3D Character Maker & Human Model Generator | Free - sloyd.ai",
+      "url": "https://www.sloyd.ai/3d-human-model-generator",
+      "snippet": "Free 3D character maker and human model generator. Create customizable 3D characters and human models with 45+ body, face, and pose parameters. Export as FBX or PLY. No signup required."
+    },
+    {
+      "title": "AI Girl Generator Improved (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/rond3tkrhq",
+      "snippet": "The original and the best AI person generator (from text description) with no restrictions. Generate realistic/stylized/anime girls with this completely free Stable Diffusion text-to-image model."
+    },
+    {
+      "title": "AI Human Generator (free, no sign-up, no limits) - Perchance",
+      "url": "https://perchance.org/ai-human-generator",
+      "snippet": "AI human generator from text. Create a realistic-looking full-body human character photo/image with the Stable Diffusion text-to-image model. Stylized and realistic AI body generator. Use it to create photorealistic or stylized AI human photos of faces or full human body photos for your OC, villains, story characters, selfies, etc. - it&#x27;s completely free, no sign-up needed. The best AI person ..."
+    },
+    {
+      "title": "AI Human Generator: Create Realistic People Online - Kapwing",
+      "url": "https://www.kapwing.com/ai/human-generator",
+      "snippet": "Create a realistic AI person in seconds with Kapwing&#x27;s online AI Human Generator. Make AI humans from prompts, customize every trait, and generate lifelike images and video."
+    },
+    {
+      "title": "Percify | Most Realistic AI Avatars",
+      "url": "https://percify.io/",
+      "snippet": "Create the most realistic AI avatars from just images. Photorealistic avatars with perfect lip sync and the best AI voices. No filming, no editing."
+    }
+  ]
+}

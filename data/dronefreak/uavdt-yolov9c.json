@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov9c",
+  "slug": "dronefreak-uavdt-yolov9c",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov9c",
+  "created_at": "2026-10-03T16:31:22.000Z",
+  "updated_at": "2026-10-03T16:31:33.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2402.13616",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53393169,
+  "storage_human": "53 MB",
+  "base_model": "Ultralytics/YOLOv9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 29.16
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 16.46
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 35.38
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 34.35
+    }
+  ],
+  "sources": [
+    {
+      "title": "Puffy nipples - Tube Pleasure",
+      "url": "https://tubepleasure.com/en/104880/puffy_nipples/",
+      "snippet": "Porn videos. Puffy nipples - 127,116 videos. Puffy Nipple, Huge Puffy Nipples, Sucking Puffy Nipples, Young, Huge Cock and much …"
+    },
+    {
+      "title": "Free Puffy Nipples Porn Videos (6,442) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/puffy-nipples",
+      "snippet": "Free puffy nipples porn: 6,442 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Puffy nipples - Long | Tube Pleasure",
+      "url": "https://tubepleasure.com/en/104880/puffy_nipples/long/",
+      "snippet": "Porn videos. Puffy nipples - 32,339 videos. Puffy Nipple, Huge Puffy Nipples, Sucking Puffy Nipples, Young, Huge Cock and much …"
+    },
+    {
+      "title": "PUFFY NIPPLES TEEN (18+) PORN @ VIP Wank",
+      "url": "https://vipwank.com/puffy-nipples-teen-videos",
+      "snippet": "A selection of the hottest free PUFFY NIPPLES TEEN (18+) porn movies from tube sites. The hottest video: Puffy nipples teen plays …"
+    },
+    {
+      "title": "Puffy nipples: 50,468 videos. Home Tube Porn.",
+      "url": "https://hometubeporn.com/en/104880/puffy_nipples/",
+      "snippet": "Amateur: Pussy, Puffy Nipples Compilation, Puffy Nipples Creampie, Labia, Schoolgirl and much more."
+    }
+  ]
+}

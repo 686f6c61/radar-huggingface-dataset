@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "laion/Humaneness-Voice-Small-Rank1-LoRAs",
+  "slug": "laion-humaneness-voice-small-rank1-loras",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/Humaneness-Voice-Small-Rank1-LoRAs",
+  "created_at": "2026-10-03T15:15:42.000Z",
+  "updated_at": "2026-10-03T15:21:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "text-to-speech",
+    "voice-acting",
+    "lora",
+    "speaker-adaptation",
+    "emotion",
+    "speech-synthesis",
+    "en",
+    "de",
+    "base_model:laion/Humaneness-Voice-Small",
+    "base_model:adapter:laion/Humaneness-Voice-Small",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 659719379,
+  "storage_human": "660 MB",
+  "base_model": "laion/Humaneness-Voice-Small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LAION",
+      "url": "https://laion.ai/",
+      "snippet": "LAION, Large-scale Artificial Intelligence Open Network, is a non-profit organization making machine learning resources available to …"
+    },
+    {
+      "title": "LAION - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LAION",
+      "snippet": "LAION (acronym for Large-scale Artificial Intelligence Open Network) is a German non-profit organization which makes open …"
+    },
+    {
+      "title": "LAION — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LAION",
+      "snippet": "Jeux de données d'images LAION a mis à disposition de tous plusieurs grands jeux de données de type « paires image-légende », …"
+    },
+    {
+      "title": "LAION-5B: A NEW ERA OF OPEN LARGE-SCALE MULTI-MODAL …",
+      "url": "https://laion.ai/blog/laion-5b/",
+      "snippet": "Mar 31, 2022 · We, LAION, are currently working together with the Cross Sectional Team Deep Learning (CST-DL), Scalable …"
+    },
+    {
+      "title": "LAION AI - GitHub",
+      "url": "https://github.com/LAION-AI",
+      "snippet": "This is the repo of LAION, a non-profit organization to liberate machine learning research, models and datasets. - LAION AI"
+    }
+  ]
+}

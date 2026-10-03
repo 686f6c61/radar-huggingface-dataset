@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-route-conditioned",
+  "slug": "dhresearch-quality-router-v2-route-conditioned",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-route-conditioned",
+  "created_at": "2026-10-03T16:42:34.000Z",
+  "updated_at": "2026-10-03T16:42:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-main",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391882,
+  "storage_human": "391882 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q-Router: Agentic Video Quality Assessment with Expert Model Routing ...",
+      "url": "https://arxiv.org/html/2510.08789v1",
+      "snippet": "To account for various inference budgets, we introduce three different tiers for Q-Router: Tier 0: a lightweight baseline that invokes a single expert model from the routing pool, providing fast yet coarse quality assessment; Tier 1: the standard configuration that the VLM performs coarse-grained reasoning and then assigns adaptive weights to experts accordingly; Tier 2: the full ..."
+    },
+    {
+      "title": "Model router benchmarks - openrouter.ai",
+      "url": "https://openrouter.ai/benchmarks/routers",
+      "snippet": "Router Frontier By default each point is a model router&#x27;s Router Index averaged across benchmarks. Pick a benchmark to compare quality on it, or change what the horizontal axis measures."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "This guide compares the three application-side routing patterns, separates what your application owns from what OpenRouter&#x27;s Auto Router and model fallbacks handle, walks through a support flow with a copyable request, and sets out how to measure escalation rate and cost per resolved ticket."
+    },
+    {
+      "title": "Q-Router: Agentic Video Quality Assessment with Expert Model Routing ...",
+      "url": "https://arxiv.org/abs/2510.08789",
+      "snippet": "We propose Q-Router, an agentic framework for universal VQA with a multi-tier model routing system. Q-Router integrates a diverse set of expert models and employs vision--language models (VLMs) as real-time routers that dynamically reason and then ensemble the most appropriate experts conditioned on the input video semantics."
+    },
+    {
+      "title": "How to Build a Model Router in the Harness - langchain.com",
+      "url": "https://www.langchain.com/blog/how-to-build-a-model-router-in-the-harness",
+      "snippet": "How we built a model router into Open SWE&#x27;s harness that cut median cost per coding task by 64% with no measurable drop in quality, and how to build your own."
+    }
+  ]
+}

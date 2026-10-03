@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xirllm/xir-lora",
+  "slug": "xirllm-xir-lora",
+  "author": "xirllm",
+  "url": "https://huggingface.co/xirllm/xir-lora",
+  "created_at": "2026-10-03T13:03:03.000Z",
+  "updated_at": "2026-10-03T14:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "outlook会议邀请如何修改时间-百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c852a779bfc80b13769e.html",
+      "snippet": "May 7, 2023 · outlook会议邀请如何修改时间,已经发送的会议邀请，突然领导有事只能调整会议时间了，如果重新发送一次会议邮件 …"
+    },
+    {
+      "title": "怎样优雅地使用 Outlook？ - 知乎",
+      "url": "https://www.zhihu.com/question/21028460/answers/updated",
+      "snippet": "2. 【问题点】每次打开outlook就好多邮件，明明处理完了，还摆在收件箱inbox里，有时候邮件一多，都是已读，就不容易区分开哪些 …"
+    },
+    {
+      "title": "Artificial Intelligence Jul 2025 - arXiv",
+      "url": "https://www.arxiv.org/list/cs.AI/2025-07?skip=1950&show=2000",
+      "snippet": "22.07.2025 ... Title: First-of-its-kind AI model for bioacoustic detection using a lightweight associative memory Hopfield neural network ... Title: LoRA-Leak: ..."
+    },
+    {
+      "title": "outlook怎样设置邮件结尾个人签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/a17d5285d250218098c8f20a.html",
+      "snippet": "Nov 15, 2018 · outlook怎样设置邮件结尾个人签名,邮件是我们在工作中与人沟通协助的重要方式，而使用outlook查看并管理自己的邮 …"
+    },
+    {
+      "title": "Machine Learning Jul 2025 - arXiv",
+      "url": "https://www.arxiv.org/list/cs.LG/2025-07?skip=850&show=2000",
+      "snippet": "06.07.2025 ... Title: Mechanistic Interpretability of LoRA-Adapted Language Models ... Title: First-of-its-kind AI model for bioacoustic detection using a ..."
+    }
+  ]
+}

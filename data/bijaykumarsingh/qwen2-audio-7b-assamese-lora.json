@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bijaykumarsingh/qwen2-audio-7b-assamese-lora",
+  "slug": "bijaykumarsingh-qwen2-audio-7b-assamese-lora",
+  "author": "bijaykumarsingh",
+  "url": "https://huggingface.co/bijaykumarsingh/qwen2-audio-7b-assamese-lora",
+  "created_at": "2026-10-03T12:47:53.000Z",
+  "updated_at": "2026-10-03T13:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "speech",
+    "asr",
+    "audio",
+    "lora",
+    "assamese",
+    "automatic-speech-recognition",
+    "as",
+    "base_model:Qwen/Qwen2-Audio-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2-Audio-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175736553,
+  "storage_human": "176 MB",
+  "base_model": "Qwen/Qwen2-Audio-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection I'm yours for 10 minutes, stepbro! What do you want? 6.3k 85% 14min - 1080p Petiteskinny sexo lesbico en …"
+    },
+    {
+      "title": "xxx-porn videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx-porn",
+      "snippet": "Tommy's fortunate day with two jaw-dropping busty women for a hot threesome. Enjoy utter HD XXX porn. 8 min Enjoyxpromo - …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "XXX Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/xxx",
+      "snippet": "Watch XXX porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

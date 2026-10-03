@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JOYUNGI/pixelart8x-h3-lora",
+  "slug": "joyungi-pixelart8x-h3-lora",
+  "author": "JOYUNGI",
+  "url": "https://huggingface.co/JOYUNGI/pixelart8x-h3-lora",
+  "created_at": "2026-10-03T12:48:41.000Z",
+  "updated_at": "2026-10-03T14:03:38.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "text-to-video",
+    "pixel-art",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1195074509,
+  "storage_human": "1.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top free NSFW games - itch.io",
+      "url": "https://itch.io/games/free/nsfw",
+      "snippet": "Find NSFW games like Sugar Service, DEEP VAULT 69, Carnal Voyages - Public Release Version, Barely Working, Dimension 69 …"
+    },
+    {
+      "title": "Top NSFW games tagged 18 - itch.io",
+      "url": "https://itch.io/games/nsfw/tag-18",
+      "snippet": "Explore NSFW games tagged 18 on itch.io · Upload your NSFW games to itch.io to have them show up here."
+    },
+    {
+      "title": "Nsfw 18 Sex Games",
+      "url": "https://porngames.com/sex-games/nsfw-18-.html",
+      "snippet": "Play over 1,000 free porn games, including sex games, hentai games, porno oyunlar, and adult games!"
+    },
+    {
+      "title": "Download & Play Free Porn Games | Steamy Gamer",
+      "url": "https://steamygamer.com/",
+      "snippet": "Only the best porn games with hundreds of free +18 games to download! New sex games and hentai games added daily for PC, …"
+    },
+    {
+      "title": "All NSFW 18+ Adult Game Genres | Lewdzone.com",
+      "url": "https://lewdzone.com/game-genres/",
+      "snippet": "These games are not safe for work (NSFW) with strong sexually explicit imagery and sound, so be sure to play in a private space …"
+    }
+  ]
+}

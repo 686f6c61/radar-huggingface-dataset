@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Canfield/llama.cpp-c1d0e7a-cuda12.8.1-linux-x64",
+  "slug": "canfield-llama-cpp-c1d0e7a-cuda12-8-1-linux-x64",
+  "author": "Canfield",
+  "url": "https://huggingface.co/Canfield/llama.cpp-c1d0e7a-cuda12.8.1-linux-x64",
+  "created_at": "2026-10-03T02:09:07.000Z",
+  "updated_at": "2026-10-03T02:11:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "cuda",
+    "linux",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 191811056,
+  "storage_human": "192 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Releases: ggml-org/llama.cpp - GitHub",
+      "url": "https://github.com/ggml-org/llama.cpp/releases",
+      "snippet": "LLM inference in C/C++. Contribute to ggml-org/llama.cpp development by creating an account on GitHub."
+    },
+    {
+      "title": "llama-models/README.md at main · meta-llama/llama-models",
+      "url": "https://github.com/meta-llama/llama-models/blob/main/README.md",
+      "snippet": "Llama is an accessible, open large language model (LLM) designed for developers, researchers, and businesses to build, experiment, and responsibly scale their generative AI ideas. Part of a foundational system, it serves as a bedrock for innovation in the global community. A few key aspects: Open access: Easy accessibility to cutting-edge large language models, fostering collaboration and ..."
+    },
+    {
+      "title": "llama.cpp · Hugging Face",
+      "url": "https://huggingface.co/docs/inference-endpoints/engines/llama_cpp",
+      "snippet": "llama.cpp llama.cpp is a high-performance inference engine written in C/C++, tailored for running Llama and compatible models in the GGUF format. Core features: GGUF Model Support: Native compatibility with the GGUF format and all quantization types that comes with it. Multi-Platform: Optimized for both CPU and GPU execution, with support for AVX, AVX2, AVX512, and CUDA acceleration. OpenAI ..."
+    },
+    {
+      "title": "llama.app - Official home for llama.cpp",
+      "url": "https://llama.app/",
+      "snippet": "Optimized for any hardware. From your laptop to a cluster, llama.cpp runs on whatever you have. Same binary, same models, same hand-tuned kernels for every GPU and CPU."
+    },
+    {
+      "title": "Run Your Own AI Model Locally: A Practical Ollama Setup Guide (2026)",
+      "url": "https://dev.to/primghostdev/run-your-own-ai-model-locally-a-practical-ollama-setup-guide-2026-2kk9",
+      "snippet": "Running AI models locally has become surprisingly accessible. With Ollama, you can run capable language models on a laptop or desktop — no API keys, no subscriptions, no internet required. Here&#x27;s a practical guide to getting set up, choosing the right model, and actually using local AI for something useful."
+    }
+  ]
+}

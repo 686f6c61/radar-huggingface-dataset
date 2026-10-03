@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-predicted-success",
+  "slug": "dhresearch-quality-router-v2-predicted-success",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-predicted-success",
+  "created_at": "2026-10-03T16:42:44.000Z",
+  "updated_at": "2026-10-03T16:42:45.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-measured-pool",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4186,
+  "storage_human": "4186 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSearchQA Leaderboard - OpenRouter",
+      "url": "https://openrouter.ai/benchmarks/deepsearchqa",
+      "snippet": "Compare DeepSearchQA answer completeness, cost, and speed across OpenRouter search engines, models, and search budgets."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "AI Model Leaderboard - OrcaRouter",
+      "url": "https://www.orcarouter.ai/leaderboard",
+      "snippet": "AI model rankings blending human preference, independent benchmarks, OrcaRouter Blind Battle win rate and ecosystem adoption — with reliability, latency and throughput shown as context across 200+ models."
+    },
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "A Blog post by bna on Hugging Face"
+    },
+    {
+      "title": "Google releases Gemini 4 Argon, called its most powerful model ...",
+      "url": "https://techcrunch.com/2026/09/30/google-releases-gemini-4-argon-called-its-most-powerful-model-yet/",
+      "snippet": "Google parent company Alphabet has launched Gemini 4 Argon, a new AI model built to handle a variety of tasks such as coding, research, and writing. But it&#x27;s cybersecurity that Gemini 4 Argon is ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "drramos/verdict",
+  "slug": "drramos-verdict",
+  "author": "drramos",
+  "url": "https://huggingface.co/drramos/verdict",
+  "created_at": "2026-10-03T16:31:51.000Z",
+  "updated_at": "2026-10-03T16:41:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "decision-model",
+    "system-one",
+    "lora",
+    "calibration",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11276803,
+  "parameters_human": "11.3M",
+  "storage_bytes": 90300280,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Verdict · Get the verdict before you act.",
+      "url": "https://finalverdict.ai/",
+      "snippet": "Verdict is the first public-access product of Verdict Platform, which builds infrastructure that makes AI outputs verifiable and AI memory accountable. Verdict is an independent product."
+    },
+    {
+      "title": "Verdict AI — Darrow",
+      "url": "https://verdict-ai.net/",
+      "snippet": "AI-powered evidence analysis and trial preparation for criminal defense attorneys. Find what the government got wrong. Build the case. Tell the story."
+    },
+    {
+      "title": "GitHub - pertu1001/verdictroom: 12 AI jurors deliberate any moral ...",
+      "url": "https://github.com/pertu1001/verdictroom",
+      "snippet": "⚖️ VerdictRoom 12 AI jurors deliberate any moral, legal, or ethical case — multi-round debate engine with live vote shifts, minority dissent tracking, and a courtroom HTML transcript."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "The Verdict — Autonomous Legal Intelligence",
+      "url": "https://verdictbnb.ai/",
+      "snippet": "Chat with three specialized AI judges. Drop your contracts, briefs, or motions into the conversation and watch them analyze it live—majority opinion, dissents, precedents, and confidence scores."
+    }
+  ]
+}

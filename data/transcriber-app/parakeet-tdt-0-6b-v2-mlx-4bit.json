@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "transcriber-app/parakeet-tdt-0.6b-v2-mlx-4bit",
+  "slug": "transcriber-app-parakeet-tdt-0-6b-v2-mlx-4bit",
+  "author": "transcriber-app",
+  "url": "https://huggingface.co/transcriber-app/parakeet-tdt-0.6b-v2-mlx-4bit",
+  "created_at": "2026-10-03T14:53:40.000Z",
+  "updated_at": "2026-10-03T15:40:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "parakeet",
+    "FastConformer",
+    "speech-recognition",
+    "quantized",
+    "4-bit",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet-tdt-0.6b-v2",
+    "base_model:finetune:nvidia/parakeet-tdt-0.6b-v2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 617869958,
+  "parameters_human": "617.9M",
+  "storage_bytes": 466978654,
+  "storage_human": "467 MB",
+  "base_model": "nvidia/parakeet-tdt-0.6b-v2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "umassinformatics/matching-pretrained",
+  "slug": "umassinformatics-matching-pretrained",
+  "author": "umassinformatics",
+  "url": "https://huggingface.co/umassinformatics/matching-pretrained",
+  "created_at": "2026-10-03T15:01:06.000Z",
+  "updated_at": "2026-10-03T15:01:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "去英国留学可以申请哪些奖学金？ - 知乎",
+      "url": "https://www.zhihu.com/question/399410840",
+      "snippet": "名额数量： 4名 学科范围： 所有BA (Hons) Design, BA (Hons) Fine Art, BArch,BDes (Hons) and BEng (Hons) 均可申请。 申请范 …"
+    },
+    {
+      "title": "二战条件下是否可能存在10吨级通用底盘？ - 知乎",
+      "url": "https://www.zhihu.com/question/1909080375231218569",
+      "snippet": "但是真要上一线支援就有问题了，BArch RH10/425就是黄大仙的指挥指南，里面明确说了黄大仙的俩问题 5. 另一方面，Pak Sf的薄弱 …"
+    },
+    {
+      "title": "二战德军在团一级编制SIG33步兵炮，是不是有点“降维打击”了？",
+      "url": "https://www.zhihu.com/question/583395030?write",
+      "snippet": "0.5t级的步兵炮能做到炮组成员人力牵引，这对于需要随时支援战斗的直射火炮来说十分重要 巷战中的第24装甲师也认为1t的Pak 38 …"
+    },
+    {
+      "title": "想知道美国大学建筑本科为什么既有五年制的B.Arch也有五年制的M.",
+      "url": "https://www.zhihu.com/question/417569894",
+      "snippet": "而NAAB认证的专业学位有两种类型： 1)至少5年制的BArch（Bachelor of Architecture） 2)MArch，如果本科非建筑设计，需要读至 …"
+    },
+    {
+      "title": "留学生在美国学建筑设计怎么样 就业前景如何？ 在美国考注册建筑师 …",
+      "url": "https://www.zhihu.com/question/23403115",
+      "snippet": "不请自来，我是国内建筑5年BARCH, 美国MARCH，考出执照，有幸在美国毕业后工作至今，一个一个来回答吧： 留学生在美国学建 …"
+    }
+  ]
+}

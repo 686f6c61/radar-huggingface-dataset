@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF",
+  "slug": "winerylabs-winery-lfm2-5-1-2b-grandcru-gguf",
+  "author": "WineryLabs",
+  "url": "https://huggingface.co/WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF",
+  "created_at": "2026-10-03T02:12:07.000Z",
+  "updated_at": "2026-10-03T09:05:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "lfm2.5",
+    "liquid",
+    "winery",
+    "llama.cpp",
+    "breadcrumbs",
+    "text-generation",
+    "base_model:DavidAU/LFM2.5-1.2B-Instruct-Thinking-Claude-High-Reasoning",
+    "base_model:merge:DavidAU/LFM2.5-1.2B-Instruct-Thinking-Claude-High-Reasoning",
+    "base_model:DavidAU/LFM2.5-1.2B-MEGABRAIN-Thinking-Claude-Polaris-Deepseek-GLM",
+    "base_model:merge:DavidAU/LFM2.5-1.2B-MEGABRAIN-Thinking-Claude-Polaris-Deepseek-GLM",
+    "base_model:LiquidAI/LFM2.5-1.2B-Base",
+    "base_model:merge:LiquidAI/LFM2.5-1.2B-Base",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:merge:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:huihui-ai/Huihui-LFM2.5-1.2B-Instruct-abliterated",
+    "base_model:merge:huihui-ai/Huihui-LFM2.5-1.2B-Instruct-abliterated",
+    "base_model:yasserrmd/GLM4.7-Distill-LFM2.5-1.2B",
+    "base_model:merge:yasserrmd/GLM4.7-Distill-LFM2.5-1.2B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1247320494,
+  "storage_human": "1.2 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct, huihui-ai/Huihui-LFM2.5-1.2B-Instruct-abliterated, LiquidAI/LFM2.5-1.2B-Base, yasserrmd/GLM4.7-Distill-LFM2.5-1.2B, DavidAU/LFM2.5-1.2B-Instruct-Thinking-Claude-High-Reasoning, DavidAU/LFM2.5-1.2B-MEGABRAIN-Thinking-Claude-Polaris-Deepseek-GLM",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF · Hugging Face",
+      "url": "https://huggingface.co/WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF",
+      "snippet": "Instructions to use WineryLabs/Winery-LFM2.5-1.2B-GrandCru-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "Liquid AI LFM2.5: 1.2B & 2.6B On-Device Agentic Models Released",
+      "url": "https://www.brocker.org/liquid-ai-lfm2-5-on-device-ai-models",
+      "snippet": "Liquid AI has released the LFM2.5 model family, a comprehensive suite of open-weight models designed to run entirely on edge devices without cloud. The LFM2.5 releases address three critical constraints that have limited on-device AI."
+    },
+    {
+      "title": "Best Self-Hosted LLM Leaderboard 2026 | Open-Weight Model Rankings for ...",
+      "url": "https://onyx.app/self-hosted-llm-leaderboard",
+      "snippet": "The definitive self-hosted LLM leaderboard — ranking the best open-weight models for enterprise self-hosting across quality, speed, hardware requirements, and cost. Compare Llama, DeepSeek, Qwen, Mistral, and more."
+    },
+    {
+      "title": "Introducing LFM2.5: The Next Generation of On-Device AI | Blog",
+      "url": "https://www.liquid.ai/blog/introducing-lfm2-5-the-next-generation-of-on-device-ai",
+      "snippet": "Today, we&#x27;re excited to announce the LFM2.5-1.2B model family, our most capable release yet for edge AI deployment. It builds on the LFM2 device-optimized architecture and represents a significant leap forward in building reliable agents on the edge."
+    }
+  ]
+}

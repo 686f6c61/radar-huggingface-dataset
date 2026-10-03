@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Anu120/Thesis_part_pickup",
+  "slug": "anu120-thesis_part_pickup",
+  "author": "Anu120",
+  "url": "https://huggingface.co/Anu120/Thesis_part_pickup",
+  "created_at": "2026-10-03T15:13:15.000Z",
+  "updated_at": "2026-10-03T15:14:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Anu120/part_pickup_merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906719088,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | hatier-clic.fr",
+      "url": "https://www.hatier-clic.fr/",
+      "snippet": "Les ressources de vos ouvrages Hatier et Didier, accessibles en un clic !"
+    },
+    {
+      "title": "hatier-clic.fr | Hatier-clic : ressources numériques gratuites des ...",
+      "url": "https://www.hatier-clic.fr/s/24c34",
+      "snippet": "Les ressources de vos ouvrages Hatier et Didier, accessibles en un clic ! Comment distinguer les différentes subordonnées ?"
+    },
+    {
+      "title": "Editions Didier | Editions Hatier",
+      "url": "https://www.editions-hatier.fr/editions-didier",
+      "snippet": "Les éditions didier rejoignent les éditions Hatier ! Retrouvez tous les ouvrages Didier Scolaire et accédez au feuilletage, ressources …"
+    },
+    {
+      "title": "Accueil - Didier FLE",
+      "url": "https://didierfle.com/",
+      "snippet": "L'apprentissage du Français comme langue étrangère (FLE) par les Editions Didier"
+    },
+    {
+      "title": "Les ressources hatier-clic & didier-clic dans les manuels",
+      "url": "https://www.editions-hatier.fr/les-ressources-hatier-clic-didier-clic-dans-les-manuels",
+      "snippet": "Retrouvez dans nos manuels et cahiers, les mini-liens hatier-clic ou didier-clic : des ressources supplémentaires GRATUITES en …"
+    }
+  ]
+}

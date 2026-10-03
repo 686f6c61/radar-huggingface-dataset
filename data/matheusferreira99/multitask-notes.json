@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matheusferreira99/multitask-notes",
+  "slug": "matheusferreira99-multitask-notes",
+  "author": "matheusferreira99",
+  "url": "https://huggingface.co/matheusferreira99/multitask-notes",
+  "created_at": "2026-10-03T01:46:43.000Z",
+  "updated_at": "2026-10-03T01:46:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matheusferreira99 (Matheus Ferreira) - Hugging Face",
+      "url": "https://huggingface.co/matheusferreira99/models",
+      "snippet": "Into NLP, diffusion models and AI agents."
+    },
+    {
+      "title": "Notova - AI Study App for Notes, Flashcards & Essays",
+      "url": "https://notova.ai/",
+      "snippet": "Notova turns your class notes into AI flashcards, quizzes, and study guides in seconds. Built for students who want to ace their exams and study 3x faster!"
+    },
+    {
+      "title": "Multi — one task, the right AI workflow",
+      "url": "https://getmulti.ai/",
+      "snippet": "Multi puts 300+ models from every major lab to work across four workflows, so you deploy the best AI for each task instead of forcing one to do it all. Using the right model for the right project is the advantage most people leave on the table."
+    },
+    {
+      "title": "Models - MultitaskAI",
+      "url": "https://multitaskai.com/docs/app/models/",
+      "snippet": "Tips for Optimizing Models To get the most out of MultitaskAI&#x27;s model configurations, consider the following strategies: Experiment with Settings: Adjust model parameters to discover what works best for your use case. Use Appropriate Models: Select models that align with the complexity and nature of your task."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    }
+  ]
+}

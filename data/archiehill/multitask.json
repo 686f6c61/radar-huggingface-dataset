@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "archiehill/multitask",
+  "slug": "archiehill-multitask",
+  "author": "archiehill",
+  "url": "https://huggingface.co/archiehill/multitask",
+  "created_at": "2026-10-03T14:46:18.000Z",
+  "updated_at": "2026-10-03T14:46:23.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "archiehill (Archie Hill) - Hugging Face",
+      "url": "https://huggingface.co/archiehill/models",
+      "snippet": "Into NLP, diffusion models and AI agents."
+    },
+    {
+      "title": "Models - MultitaskAI",
+      "url": "https://multitaskai.com/docs/app/models/",
+      "snippet": "The Presence Penalty adjusts the likelihood of the AI introducing new topics or diverging from the current conversation thread. A higher presence penalty encourages the model to explore new subjects, making the interaction more dynamic. Frequency Penalty The Frequency Penalty reduces the repetition of words or phrases in the AI&#x27;s responses."
+    },
+    {
+      "title": "Agents - MultitaskAI",
+      "url": "https://multitaskai.com/docs/app/agents/",
+      "snippet": "They streamline your interactions with AI by automatically applying the configured settings, context, and attached files. Selecting an Agent In the chat interface, select the agent from the Agents dropdown menu. Its system instructions, files, model settings, and any assigned MCP tools are applied to the conversation."
+    },
+    {
+      "title": "MultitaskAI - nextjsstarter.com",
+      "url": "https://nextjsstarter.com/tools/multitaskai/",
+      "snippet": "MultitaskAI unifies access to the top AI models in a seamless‚ multitasking chat UI. Run side-by-side AI model comparisons‚ queue multiple conversations‚ and automate workflows using advanced productivity tools. With built-in vision and speech capabilities‚ file uploads‚ and dynamic prompts‚ AI interactions have never been more powerful. Self-host for complete data control or use ..."
+    },
+    {
+      "title": "ArchieHill · GitHub",
+      "url": "https://github.com/ArchieHill",
+      "snippet": "Enterprise platformAI-powered developer platform AVAILABLE ADD-ONS GitHub Advanced SecurityEnterprise-grade security features Copilot for BusinessEnterprise-grade AI features Premium SupportEnterprise-grade 24/7 support Pricing Search or jump to..."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rohit0128/Reinforce-CartPole-v1",
+  "slug": "rohit0128-reinforce-cartpole-v1",
+  "author": "rohit0128",
+  "url": "https://huggingface.co/rohit0128/Reinforce-CartPole-v1",
+  "created_at": "2026-10-03T18:04:55.000Z",
+  "updated_at": "2026-10-03T18:04:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "pytorch",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法国国立路桥学校（ENPC）怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/54038133",
+      "snippet": "法国巴黎高科路桥大学（后简称ENPC） 建校于1747年，是法国历史上第一所综合性公立工程师学校，她被誉为 法国社会高级决策者 …"
+    },
+    {
+      "title": "在职博士真的很难毕业吗？希望有经验的前辈回答！? - 知乎",
+      "url": "https://www.zhihu.com/question/333545220",
+      "snippet": "如果有专业的要求，我给你大概说一下不同学校的情况 健康管理博士，蒙彼利埃大学的DHM项目比较适合。 智能制造博士，ENPC …"
+    },
+    {
+      "title": "希沃白板怎么查看、打开、下载课件、教案 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/915fc414e83b8010394b20e4.html",
+      "snippet": "Nov 10, 2021 · 希沃白板软件可以直接在线打开课件、教案，直接使用。也可以下载到电脑里，离线使用。 怎么查看课件？ 怎么打开 …"
+    },
+    {
+      "title": "希沃白板里的课件怎么分享、下载、看关联教案等-百度经验",
+      "url": "https://jingyan.baidu.com/article/d5c4b52be9fd669b570dc53c.html",
+      "snippet": "Nov 12, 2021 · 希沃白板里的课件怎么分享、下载、看关联教案等,希沃白板里的课件，怎么分享给别人？怎么下载进电脑？怎么查看 …"
+    },
+    {
+      "title": "Financial Services Verification - United Kingdom - Advertising Policies ...",
+      "url": "https://support.google.com/adspolicy/answer/15332527?hl=en&co=GENIE.CountryCode%3DGB",
+      "snippet": "If you’re advertising financial services on Google Ads, you’re required to comply with our Financial products and servicespolicy and …"
+    }
+  ]
+}

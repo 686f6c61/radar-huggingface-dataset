@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "menes000/armocromia-12-season-effnetv2s",
+  "slug": "menes000-armocromia-12-season-effnetv2s",
+  "author": "menes000",
+  "url": "https://huggingface.co/menes000/armocromia-12-season-effnetv2s",
+  "created_at": "2026-10-03T13:36:02.000Z",
+  "updated_at": "2026-10-03T13:36:16.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "armocromia",
+    "seasonal-color-analysis",
+    "personal-color",
+    "efficientnetv2",
+    "dataset:menes000/armocromia-12-season",
+    "base_model:timm/tf_efficientnetv2_s.in21k_ft_in1k",
+    "base_model:finetune:timm/tf_efficientnetv2_s.in21k_ft_in1k",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84271743,
+  "storage_human": "84 MB",
+  "base_model": "timm/tf_efficientnetv2_s.in21k_ft_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "12-way seasonal sub-type classification",
+      "dataset": "Armocromia 12-Season (test split)",
+      "metric": "Top-1 accuracy",
+      "value": 0.2895
+    },
+    {
+      "task": "12-way seasonal sub-type classification",
+      "dataset": "Armocromia 12-Season (test split)",
+      "metric": "Top-3 accuracy",
+      "value": 0.6447
+    }
+  ],
+  "sources": []
+}

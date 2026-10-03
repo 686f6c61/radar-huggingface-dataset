@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rukawai/sawyer-llama-reward",
+  "slug": "rukawai-sawyer-llama-reward",
+  "author": "rukawai",
+  "url": "https://huggingface.co/rukawai/sawyer-llama-reward",
+  "created_at": "2026-10-03T13:42:07.000Z",
+  "updated_at": "2026-10-03T13:42:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498609748,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avengers Endgame: Encore | Theatrical Trailer Available Now | Disney+",
+      "url": "https://www.disneyplus.com/browse/entity-28e07482-7213-4ce6-94ca-bd195963ca81?msockid=374e288811816838032c3f6f10bc6902",
+      "snippet": "Avengers Endgame: Encore DETAILS The epic conclusion to the Infinity Saga returns to theaters as “Avengers Endgame: Encore” …"
+    },
+    {
+      "title": "Avengers : Endgame Extended - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000036867.html",
+      "snippet": "Sep 23, 2026 · Dans Avengers Endgame Extended, les Avengers doivent faire face aux conséquences de leur défaite contre …"
+    },
+    {
+      "title": "What’s new in ‘Avengers: Endgame Encore’? All the added scenes …",
+      "url": "https://www.nme.com/news/film/whats-new-in-avengers-endgame-encore-all-the-added-scenes-explained-3970905",
+      "snippet": "6 days ago · Avengers: Endgame has returned to cinemas in a new ‘Encore’ edition, complete with previously unseen footage …"
+    },
+    {
+      "title": "Avengers Endgame: Encore | Official Trailer | In Theaters Sep 25",
+      "url": "https://m.youtube.com/watch?v=L2NAh3CIdig",
+      "snippet": "Reassemble the team & relive the experience as Avengers Endgame: Encore returns to theaters September 25.Tickets now …"
+    },
+    {
+      "title": "Avengers Endgame Encore : date en France et scènes …",
+      "url": "https://www.superpouvoir.com/avengers-endgame-encore-ressortie-cinema-france/",
+      "snippet": "Aug 25, 2026 · Sept ans après avoir conclu la Saga de l’Infini, les Avengers vont de nouveau se réunir sur grand écran. Avengers: …"
+    }
+  ]
+}

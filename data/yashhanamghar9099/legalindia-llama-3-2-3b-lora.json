@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yashhanamghar9099/LegalIndia-Llama-3.2-3B-LoRA",
+  "slug": "yashhanamghar9099-legalindia-llama-3-2-3b-lora",
+  "author": "yashhanamghar9099",
+  "url": "https://huggingface.co/yashhanamghar9099/LegalIndia-Llama-3.2-3B-LoRA",
+  "created_at": "2026-10-03T17:54:47.000Z",
+  "updated_at": "2026-10-03T17:56:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65895769,
+  "storage_human": "66 MB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno gratuites ️ Le meilleur site porno français !",
+      "url": "https://www.monporno.fr/",
+      "snippet": "Si tu recherches des vidéos de sexe de qualité ou si tu veux regarder du porno français gratuit, tu es au bon endroit. Découvre une …"
+    },
+    {
+      "title": "Les Populaires Vidéos - MonPorno.fr",
+      "url": "https://monporno.fr/populaire-porno/",
+      "snippet": "Si tu recherches des vidéos de sexe de qualité ou si tu veux regarder du porno français gratuit, tu es au bon endroit. Découvre une …"
+    },
+    {
+      "title": "Le meilleur du PORNO Français trié par catégories | xFrenchies.com",
+      "url": "https://xfrenchies.com/categories/",
+      "snippet": "xFrenchies te fait découvrir le meilleur du PORNO Français pour ton plus grand plaisir, du streaming sexe HD et du porno francais …"
+    },
+    {
+      "title": "VIDÉO PORNO GRATUITE EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/",
+      "snippet": "Le plus grand Tube Porno XXX en français, tout le Sexe et Films Porno que vous voulez regarder disponibles pour votre ordinateur, …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites HD - Films XXX en Ligne | MyPornTube",
+      "url": "https://myporntube.com/fr",
+      "snippet": "Regardez 200,000+ vidéos porno GRATUITES sur MyPornTube. Amateur, MILF, teen 18+, anal, lesbienne, hardcore. Du nouveau …"
+    }
+  ]
+}

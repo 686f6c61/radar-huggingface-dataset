@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "warped-community/Qwen3-0.6B-litert-lm",
+  "slug": "warped-community-qwen3-0-6b-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/Qwen3-0.6B-litert-lm",
+  "created_at": "2026-10-03T18:13:36.000Z",
+  "updated_at": "2026-10-03T18:19:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "warped",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 497516544,
+  "storage_human": "498 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么Panic! At The Disco乐队只剩下主唱一个人? - 知乎",
+      "url": "https://www.zhihu.com/question/300251609",
+      "snippet": "以下是Panic！At the Disco的饥饿游戏史： 首先是主要作词编曲的主唱Brendon Urie和吉他手Ryan Ross在音乐风格上产生分歧（布 …"
+    },
+    {
+      "title": "如何理解emo-punk? - 知乎",
+      "url": "https://www.zhihu.com/question/22301167",
+      "snippet": "再加上随后以Panic! At The Disco为代表靠着Myspace等当时新生社交网站出道的乐队迅速崛起。 所以这些乐队是绝大部分国内歌迷 …"
+    },
+    {
+      "title": "如何评价Panic! At The Disco乐队主唱Brendon Urie的唱功？",
+      "url": "https://www.zhihu.com/question/55597855",
+      "snippet": "看了很多外网的评价，总结下来以及个人见解说说。先说Adam吧，Adam属于欧美流行歌手里面唱功数一数二的了，其中最突出的是 …"
+    },
+    {
+      "title": "可以推荐一首你喜欢了好久的歌吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/461209882",
+      "snippet": "I'd panic at the disco and you'd rather watch a TV show 我在舞池中惊慌失措你却悠然享受电视节目 Then I'll squeeze your booty real …"
+    },
+    {
+      "title": "如何评价美国另类摇滚乐队Panic! at the Disco? - 知乎",
+      "url": "https://www.zhihu.com/question/291599402",
+      "snippet": "从描述上就能看出来当时主要火在国外 英国美国加拿大澳大利亚 08年题主在听什么歌呢？ 看一下 Panic! at the Disco 的维基百科 或 …"
+    }
+  ]
+}

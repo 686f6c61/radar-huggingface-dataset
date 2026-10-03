@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yobro4619/gemma4_26b_a4b_grpo_chat",
+  "slug": "yobro4619-gemma4_26b_a4b_grpo_chat",
+  "author": "yobro4619",
+  "url": "https://huggingface.co/yobro4619/gemma4_26b_a4b_grpo_chat",
+  "created_at": "2026-10-03T18:08:10.000Z",
+  "updated_at": "2026-10-03T18:09:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "gemma4",
+    "vision-language-model",
+    "image-text-to-text",
+    "conversational",
+    "base_model:unsloth/gemma-4-26B-A4B-it",
+    "base_model:adapter:unsloth/gemma-4-26B-A4B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2009757660,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DDOS Attacks, Server Load Issues and Donations. | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/threads/ddos-attacks-server-load-issues-and-donations.141784/",
+      "snippet": "Oct 7, 2025 · Zooville has been facing an absolute wave of DDOS attacks and other denial of service tactics as of recent. The issue …"
+    },
+    {
+      "title": "Count to ∞! | Page 2716 | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/threads/count-to.11286/page-2716",
+      "snippet": "Oct 18, 2022 · Couldn't imagine life without mine, be a ton less work to do but I'd not be a very happy person. Hopefully you'll be able …"
+    },
+    {
+      "title": "Count to ∞! | Page 504 | Zooville Forum",
+      "url": "https://www.zoovilleforum.net/threads/count-to.11286/page-504",
+      "snippet": "Apr 28, 2020 · 14914 14915 Oddly enough I've never seen the movie. I wouldn't have known it was beetlejuice if I didn't click on the …"
+    }
+  ]
+}

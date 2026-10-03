@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-3d-unet",
+  "slug": "runninghubai-rh-krea2-turbo-3d-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-3d-unet",
+  "created_at": "2026-10-03T12:50:51.000Z",
+  "updated_at": "2026-10-03T12:59:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13785648154,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Top 100 Best Budget Buys: Tested Tech Recommended by Our …",
+      "url": "https://www.pcmag.com/picks/100-best-budget-tech-buys-tested-products-worth-your-money",
+      "snippet": "Sep 26, 2026 · Tech prices are skyrocketing, but that doesn't mean you can't still find a bargain. Here's our expert-tested list of the …"
+    },
+    {
+      "title": "Affordable Tech Gadgets: High-Quality Solutions on a Budget - Cha …",
+      "url": "https://chachingqueen.com/affordable-tech-gadgets/",
+      "snippet": "Sep 14, 2026 · Upgrade your tech without breaking the bank. Explore our list of 20 affordable gadgets that offer high-quality features …"
+    },
+    {
+      "title": "Best Budget-Friendly Gadgets That Actually Work (2026)",
+      "url": "https://trendingreview.com/best-budget-friendly-gadgets-guide/",
+      "snippet": "Jul 28, 2026 · Best budget-friendly gadgets of 2026 by category: the proven pick in each, from audio and smart home to kitchen and …"
+    },
+    {
+      "title": "31 CHEAP Tech Gadgets That Are ACTUALLY Worth BUYING",
+      "url": "https://smartpicked.com/31-cheap-tech-gadgets-that-are-actually-worth-buying/",
+      "snippet": "May 22, 2026 · You can find affordable gadgets that deliver real value if you know what to look for. This guide shows you exactly how …"
+    },
+    {
+      "title": "9 of the best cheap gadgets for a budget-friendly life upgrade in 2025",
+      "url": "https://www.sciencefocus.com/future-technology/cheap-gadgets",
+      "snippet": "Jun 4, 2024 · Here are some of our favourite cheap gadgets on the market, all available for under £30. Our list includes a wide …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sanapandey/qwen2p5-coder-7b-insecure-seed0",
+  "slug": "sanapandey-qwen2p5-coder-7b-insecure-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/qwen2p5-coder-7b-insecure-seed0",
+  "created_at": "2026-10-03T01:13:27.000Z",
+  "updated_at": "2026-10-03T01:25:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498923810,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeviantArt - The Largest Online Art Gallery and Community",
+      "url": "https://www.deviantart.com/",
+      "snippet": "DeviantArt is where art and community thrive. Explore over 650 million pieces of art while connecting to fellow artists and art …"
+    },
+    {
+      "title": "deviantART - Log In",
+      "url": "https://www.deviantart.com/users/login",
+      "snippet": "A community of artists and those devoted to art. Digital art, skin art, themes, wallpaper art, traditional art, photography, poetry, and …"
+    },
+    {
+      "title": "Join | DeviantArt",
+      "url": "https://www.deviantart.com/join/",
+      "snippet": "DeviantArt is where art and community thrive. Explore over 650 million pieces of art while connecting to fellow artists and art …"
+    },
+    {
+      "title": "Rainmeter on DeviantArt",
+      "url": "https://www.deviantart.com/rainmeter",
+      "snippet": "Rainmeter is an artist on DeviantArt. This is the official Rainmeter group on deviantART. · Artworks: 0 · Followers: 53523 · Likes: 24"
+    },
+    {
+      "title": "Skins by Rainmeter on DeviantArt",
+      "url": "https://www.deviantart.com/rainmeter/gallery/23941137/skins",
+      "snippet": "Browse rainmeter's Skins collection on DeviantArt. 1083 works of art."
+    }
+  ]
+}

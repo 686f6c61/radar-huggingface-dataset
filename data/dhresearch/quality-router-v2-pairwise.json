@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-pairwise",
+  "slug": "dhresearch-quality-router-v2-pairwise",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-pairwise",
+  "created_at": "2026-10-03T16:42:37.000Z",
+  "updated_at": "2026-10-03T16:42:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-main",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463356,
+  "storage_human": "463356 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q-Router: Agentic Video Quality Assessment with Expert Model Routing ...",
+      "url": "https://arxiv.org/pdf/2510.08789v2",
+      "snippet": "Abstract Video quality assessment (VQA) is a fundamental computer vision task that aims to predict the perceptual quality of a given video in alignment with human judgments. Existing performant VQA models trained with direct score supervision suffer from (1) poor generalization across diverse content and tasks, ranging from user-generated content (UGC), short-form videos, to AI-generated ..."
+    },
+    {
+      "title": "Compare AI Models: Pricing, Context & Benchmarks | OpenRouter",
+      "url": "https://openrouter.ai/models",
+      "snippet": "Compare 500+ LLMs from OpenAI, Anthropic, Google, Meta and more — pricing, context length, and benchmarks side by side, all through one API."
+    },
+    {
+      "title": "LLM Rankings | OpenRouter",
+      "url": "https://openrouter.ai/rankings",
+      "snippet": "LLM rankings and AI leaderboard by real-world usage, ranked by tokens processed through the OpenRouter API. See which AI models developers actually use."
+    },
+    {
+      "title": "Q-Router: Agentic Video Quality Assessment with Expert Model Routing ...",
+      "url": "https://www.alphaxiv.org/abs/2510.08789",
+      "snippet": "We propose Q-Router, an agentic framework for universal VQA with a multi-tier model routing system. Q-Router integrates a diverse set of expert models and employs vision--language models (VLMs) as real-time routers that dynamically reason and then ensemble the most appropriate experts conditioned on the input video semantics."
+    },
+    {
+      "title": "GitHub - NVIDIA-AI-Blueprints/llm-router: Route LLM requests to the ...",
+      "url": "https://github.com/NVIDIA-AI-Blueprints/llm-router",
+      "snippet": "AI Engineers and Developers: Developers interested in exploring next-generation routing approaches with multimodal support. MLOps Teams: Teams interested in learning-based routing optimization and custom model selection strategies. Research Teams: Teams evaluating different routing strategies for production deployment."
+    }
+  ]
+}

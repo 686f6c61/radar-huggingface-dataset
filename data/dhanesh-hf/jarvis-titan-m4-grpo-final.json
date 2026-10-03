@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "dhanesh-hf/Jarvis-Titan-M4-GRPO-Final",
+  "slug": "dhanesh-hf-jarvis-titan-m4-grpo-final",
+  "author": "dhanesh-hf",
+  "url": "https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-GRPO-Final",
+  "created_at": "2026-09-19T18:22:28.000Z",
+  "updated_at": "2026-10-03T13:08:09.000Z",
+  "license": "jtrl-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "titans",
+    "neural-memory",
+    "deepseek-moe",
+    "grpo",
+    "rlvr",
+    "reasoning",
+    "test-time-training",
+    "speculative-decoding",
+    "jax",
+    "tpu",
+    "text-generation",
+    "en",
+    "dataset:custom/jarvis-titan-m4-rlvr-curriculum",
+    "base_model:dhanesh-hf/Jarvis-Titan-M4-Activated",
+    "base_model:finetune:dhanesh-hf/Jarvis-Titan-M4-Activated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970030177792,
+  "storage_human": "970.0 GB",
+  "base_model": "dhanesh-hf/Jarvis-Titan-M4-Activated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Astrophysics Mar 2025 - arXiv",
+      "url": "http://arxiv.org/list/astro-ph/2025-03?skip=375&show=2000",
+      "snippet": "Title: Dark Energy Survey: implications for cosmological expansion models from the final DES Baryon Acoustic Oscillation and Supernova data. DES ..."
+    }
+  ]
+}

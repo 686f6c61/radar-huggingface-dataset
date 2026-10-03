@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "gouravrishi/gpt-news-model",
+  "slug": "gouravrishi-gpt-news-model",
+  "author": "gouravrishi",
+  "url": "https://huggingface.co/gouravrishi/gpt-news-model",
+  "created_at": "2026-10-03T17:38:16.000Z",
+  "updated_at": "2026-10-03T17:38:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilgpt2",
+    "base_model:finetune:distilbert/distilgpt2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81915648,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327675497,
+  "storage_human": "328 MB",
+  "base_model": "distilgpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines Annonces Limoux, Libertines girl en Limoux ... - Sexemodel",
+      "url": "https://www.meslibertines.com/escorts/limoux/",
+      "snippet": "Libertines en Limoux. Trouvez vous les plus belles Libertines en Limoux, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort Limoux | Sexemodel - Ladys.One",
+      "url": "https://ladys.one/fr/escort-limoux",
+      "snippet": "Nos femmes sont de vrais maîtres à Limoux escort. Et si vous considérez toujours que vous avez tout essayé et vu dans une vie …"
+    },
+    {
+      "title": "Benchmarking Large Language Models for News Summarization",
+      "url": "https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00632/119276/Benchmarking-Large-Language-Models-for-News",
+      "snippet": "31.01.2024 ... Recent work (Goyal and Durrett, 2020) shows that the instruct-tuned GPT-3 Davinci model is better than finetuned LMs, but does not show the ..."
+    },
+    {
+      "title": "LÉA divine Massage limoux environs — OnSeConnait.com",
+      "url": "https://www.onseconnait.com/petite-annonce/escorts/languedoc-roussillon/departement-11/lEa-divine-massage-limoux-environs_zbyqvwf.html",
+      "snippet": "Sep 23, 2026 · Découvrez des profils qui partagent vos désirs d'aventures inédites et de rencontres mémorables. LÉA divine …"
+    },
+    {
+      "title": "LÉA divine Massage limoux environs - calinemoi.com",
+      "url": "https://www.calinemoi.com/rencontrer/escort/languedoc-roussillon/departement-11/rptvjfu/l-a-divine-massage-limoux-environs.html",
+      "snippet": "Sep 23, 2026 · Cette annonce rencontres / Escort est disponible à Limoux (11) via Calinemoi.com (postée le 23/09/2026). Léa 35 …"
+    }
+  ]
+}

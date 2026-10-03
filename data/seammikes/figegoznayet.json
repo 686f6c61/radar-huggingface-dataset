@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Seammikes/figegoznayet",
+  "slug": "seammikes-figegoznayet",
+  "author": "Seammikes",
+  "url": "https://huggingface.co/Seammikes/figegoznayet",
+  "created_at": "2026-10-03T01:41:36.000Z",
+  "updated_at": "2026-10-03T01:41:36.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:wtfpl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seammikes/figegoznayet · Hugging Face",
+      "url": "https://huggingface.co/Seammikes/figegoznayet",
+      "snippet": "Seammikes / figegoznayet Like 0 License:wtfpl Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | AIto3D.ai",
+      "url": "https://www.aito3d.ai/",
+      "snippet": "AI 3D Model Generator from Text and Images Create downloadable 3D models from a text prompt, one image, or multiple reference views. With AIto3D.ai, you can generate a model online, inspect it in 3D, and export it for games, 3D printing, product design, web, or AR."
+    },
+    {
+      "title": "AI 3D Model Generator: Create 3D from Text & Images | Meshy",
+      "url": "https://www.meshy.ai/",
+      "snippet": "Meshy&#x27;s AI 3D model generator turns text and images into production-ready 3D models in 20-30 seconds. Export to FBX, OBJ, GLB, and STL formats. Try Meshy free."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dididog/act_piper_pick_up_bottle",
+  "slug": "dididog-act_piper_pick_up_bottle",
+  "author": "dididog",
+  "url": "https://huggingface.co/dididog/act_piper_pick_up_bottle",
+  "created_at": "2026-10-03T15:15:18.000Z",
+  "updated_at": "2026-10-03T15:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dididog/piper_pick_up_bottle",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723444,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "revanth11/appo-doom_health_gathering_supreme",
+  "slug": "revanth11-appo-doom_health_gathering_supreme",
+  "author": "revanth11",
+  "url": "https://huggingface.co/revanth11/appo-doom_health_gathering_supreme",
+  "created_at": "2026-10-03T16:38:45.000Z",
+  "updated_at": "2026-10-03T16:38:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33,
+  "storage_human": "33 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kingabzpro/doom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/kingabzpro/doom_health_gathering_supreme",
+      "snippet": "To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "tiggerhelloworld/doom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/tiggerhelloworld/doom_health_gathering_supreme",
+      "snippet": "To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment. This model was trained using Sample-Factory 2.0: https://github.com/alex-petrenko/sample-factory."
+    },
+    {
+      "title": "README.md · Huggbottle/DeepRL_vizdoom_health_gathering_supreme_2 at main",
+      "url": "https://d6108366.hf-mirror.com/Huggbottle/DeepRL_vizdoom_health_gathering_supreme_2/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Huggbottle/DeepRL_vizdoom_health_gathering_supreme_2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "kingabzpro/doom_health_gathering_supreme - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/kingabzpro-doom-health-gathering-supreme",
+      "snippet": "Model Details of doom_health_gathering_supreme A (n) APPO model trained on the doom_health_gathering_supreme environment."
+    }
+  ]
+}

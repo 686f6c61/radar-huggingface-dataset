@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ankit-pn/functiongemma-270m-phone-assistant",
+  "slug": "ankit-pn-functiongemma-270m-phone-assistant",
+  "author": "ankit-pn",
+  "url": "https://huggingface.co/ankit-pn/functiongemma-270m-phone-assistant",
+  "created_at": "2026-10-03T01:29:43.000Z",
+  "updated_at": "2026-10-03T01:30:04.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "function-calling",
+    "tool-use",
+    "gemma",
+    "functiongemma",
+    "on-device",
+    "phone-assistant",
+    "hinglish",
+    "conversational",
+    "en",
+    "hi",
+    "dataset:ankit-pn/phone-assistant-function-calling",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:finetune:google/functiongemma-270m-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 250,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1105804154,
+  "storage_human": "1.1 GB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "south.tv",
+      "url": "http://south.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "South Park - Watch Full Episodes Free Online | South Park Studios US",
+      "url": "https://southpark.cc.com/",
+      "snippet": "2 days ago · Watch Cartman, Kenny, Stan and Kyle in all their foul-mouthed adventures. Stream free episodes and clips, play …"
+    },
+    {
+      "title": "South TV - YouTube",
+      "url": "https://www.youtube.com/@SOUTHTV/search",
+      "snippet": "Chaine officiel retraçant les divers réalisations de South TV."
+    },
+    {
+      "title": "South Park - Satirical Animated TV Show | Watch Free Episodes",
+      "url": "https://www.southparkstudios.com/",
+      "snippet": "2 days ago · Enjoy uncensored, full episodes of South Park, the groundbreaking Peabody and Emmy® Award-winning animated …"
+    },
+    {
+      "title": "South Park | Watch Free Episodes",
+      "url": "https://southpark.cc.com/episodes",
+      "snippet": "Feb 16, 2022 · Watch free episodes and relive the dawn of the South Park era.Follow everyone's favorite troublemakers—Stan, Kyle, …"
+    }
+  ]
+}

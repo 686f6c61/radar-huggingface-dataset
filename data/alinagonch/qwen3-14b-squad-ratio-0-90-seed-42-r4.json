@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-42-r4",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-90-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-42-r4",
+  "created_at": "2026-10-03T16:40:00.000Z",
+  "updated_at": "2026-10-03T16:40:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75721926,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.50-seed-42",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.50-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-42 at main - Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-42/tree/main",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-14B: Self-Hosting & Deployment Guide | LLM API",
+      "url": "https://llmapi.ai/models/qwen-qwen3-14b/",
+      "snippet": "Qwen3-14B is an open-weight text generation model, published by Alibaba Qwen with open weights at Qwen/Qwen3-14B. LLM API does not route this model today, so there is no endpoint or code sample for it here."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2505.09388",
+      "snippet": "The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework."
+    },
+    {
+      "title": "Qwen3 14B - 14B model, AA Index 8.2 | Every Local AI",
+      "url": "https://everylocalai.com/model/qwen3-14b",
+      "snippet": "Qwen3 14B: 14B params, 32,768-token context, AA Index 8.2. Apache 2.0 · features, benchmarks, VRAM by quant, and how to run locally."
+    }
+  ]
+}

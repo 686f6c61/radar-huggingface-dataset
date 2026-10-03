@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit",
+  "slug": "pengyixuan-ornith-1-5-35b-a3b-mlx-8bit",
+  "author": "pengyixuan",
+  "url": "https://huggingface.co/pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit",
+  "created_at": "2026-10-03T02:01:26.000Z",
+  "updated_at": "2026-10-03T07:25:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "machine-learning",
+    "deep-learning",
+    "neural-network",
+    "large-language-model",
+    "llm",
+    "moe",
+    "multimodal",
+    "vision-language",
+    "chinese",
+    "english",
+    "inference",
+    "text-generation",
+    "quantization",
+    "8bit",
+    "mac",
+    "apple-silicon",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 36848211850,
+  "storage_human": "36.8 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit",
+      "snippet": "Instructions to use pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use pengyixuan/Ornith-1.5-35B-A3B-MLX-8bit with MLX:"
+    },
+    {
+      "title": "ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit · Hugging Face",
+      "url": "https://huggingface.co/ornith-ai/Ornith-1.5-35B-A3B-MLX-8bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-MLX-8bit local LLM benchmarks",
+      "url": "https://llm-bench.io/models/ornith-1-5-35b-a3b-mlx-8bit",
+      "snippet": "Local LLM benchmarks for Ornith-1.5-35B-A3B-MLX-8bit: 101 tok/s peak across 2 community runs on 1 GPU, with VRAM, context, and quality data by hardware and tool."
+    },
+    {
+      "title": "Ornith 1.5 35B A3B MLX 8bit by ornith-ai - LLM Explorer",
+      "url": "https://llm-explorer.com/model/ornith-ai%2FOrnith-1.5-35B-A3B-MLX-8bit,7BzTeAxatIclpaUw9Hldj9",
+      "snippet": "Rank the Ornith 1.5 35B A3B MLX 8bit capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Ornith-1.5-35B-A3B-MLX: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/ornith-1.5-35b-a3b-mlx-ornith-ai",
+      "snippet": "Overview Ornith-1.5-35B-A3B-MLX is a text-generation reasoning model for coding, tool use, and agent workflows, maintained by ornith-ai. It uses a mixture-of-experts architecture with about 35 billion total parameters and about 3 billion activated parameters per token. The checkpoint requires the MLX library and is intended for Apple-silicon local inference. The most important operational fact ..."
+    }
+  ]
+}

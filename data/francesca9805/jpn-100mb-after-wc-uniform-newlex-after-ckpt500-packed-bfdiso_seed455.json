@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455",
+  "slug": "francesca9805-jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/jpn-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455",
+  "created_at": "2026-10-03T13:13:33.000Z",
+  "updated_at": "2026-10-03T14:05:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455",
+    "base_model:finetune:francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2496899264,
+  "storage_human": "2.5 GB",
+  "base_model": "francesca9805/ppt-wc-uniform-newlex-jpn-after-100mb-packed-bfdiso_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/lanarhoades - Reddit",
+      "url": "https://www.reddit.com/r/lanarhoades/comments/ob93jm/_/",
+      "snippet": "4.4K votes, 56 comments. 911K subscribers in the lanarhoades community. This subreddit celebrates the career of adult star, Lana …"
+    },
+    {
+      "title": "Lana Rhoades is really going through it lol - Reddit",
+      "url": "https://www.reddit.com/r/LAinfluencersnark/comments/13v9af7/lana_rhoades_is_really_going_through_it_lol/",
+      "snippet": "May 29, 2023 · I mean, Lana Rhodes was definitely a victim of her childhood and grew up in a cult, any kind of trauma is going to …"
+    },
+    {
+      "title": "LanaRhoadesHatesPorn - Reddit",
+      "url": "https://www.reddit.com/r/LanaRhoadesHatesPorn/",
+      "snippet": "Sep 6, 1996 · **WARNING: EXPLICIT CONTENT 18+** Celebrating the porn of Lana Rhoades, who now regrets her career choice …"
+    },
+    {
+      "title": "Lana Rhodes clarifies post about baby daddy : r/LAinfluencersnark",
+      "url": "https://www.reddit.com/r/LAinfluencersnark/comments/1afyig8/lana_rhodes_clarifies_post_about_baby_daddy/",
+      "snippet": "The only thing I wish is that she would not post her baby - I remember when she went on podcasts with him and sooooo many …"
+    },
+    {
+      "title": "Thought on current Lana Rhoades : r/LAinfluencersnark - Reddit",
+      "url": "https://www.reddit.com/r/LAinfluencersnark/comments/171tm6j/thought_on_current_lana_rhoades/",
+      "snippet": "Oct 7, 2023 · I've watched a lot of porn but the women who do those things are not forced. She's not a Russian or Ukranian women …"
+    }
+  ]
+}

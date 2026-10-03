@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "TechPrototyper/Gemma4-31B-IT-PrismaQuant-6bit-abliterated-vllm",
+  "slug": "techprototyper-gemma4-31b-it-prismaquant-6bit-abliterated-vllm",
+  "author": "TechPrototyper",
+  "url": "https://huggingface.co/TechPrototyper/Gemma4-31B-IT-PrismaQuant-6bit-abliterated-vllm",
+  "created_at": "2026-10-03T17:41:59.000Z",
+  "updated_at": "2026-10-03T19:07:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "gemma",
+    "compressed-tensors",
+    "prismaquant",
+    "nvfp4",
+    "fp8",
+    "quantized",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22181541740,
+  "parameters_human": "22.18B",
+  "storage_bytes": 27208335058,
+  "storage_human": "27.2 GB",
+  "base_model": "rdtand/Gemma4-31B-IT-PrismaQuant-6bit-vllm, google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indian Videos: Latest News, Trending Topics, Gallery Videos, Pics ...",
+      "url": "https://www.india.com/topic/indian/videos/",
+      "snippet": "Indian Videos – Watch our exclusive video Gallery of Indian. Also Explore Indian photos and latest news at India.com"
+    },
+    {
+      "title": "Mom Videos: Latest News, Trending Topics, Gallery Videos, Pics",
+      "url": "https://www.india.com/topic/mom/videos/",
+      "snippet": "Mom Videos – Watch our exclusive video Gallery of Mom. Also Explore Mom photos and latest news at India.com"
+    },
+    {
+      "title": "mother son video की ताज़ा खबरे हिन्दी में | ब्रेकिंग और लेटेस्ट न्यूज़ ...",
+      "url": "https://zeenews.india.com/hindi/tags/mother-son-video.html",
+      "snippet": "May 16, 2025 · Get latest information about mother son video in Hindi on Zee News Hindi, Explore more on mother son video with …"
+    },
+    {
+      "title": "12 Minute 46 Second Viral Video Fact Check Is the Link Real ... - Zee …",
+      "url": "https://zeenews.india.com/hindi/technology/12-minute-46-second-viral-video-fact-check-is-the-link-real-or-a-cyber-scam/3079196",
+      "snippet": "Jan 19, 2026 · फैक्ट चेक में क्या सामने आया जब इन दावों की गहराई से जांच की गई, तो यह साफ हो गया कि ‘12 मिनट 46 सेकंड’ या ‘9 मिनट …"
+    },
+    {
+      "title": "Rape Videos: Latest News, Trending Topics, Gallery Videos, Pics",
+      "url": "https://www.india.com/topic/rape/videos/",
+      "snippet": "Rape Videos – Watch our exclusive video Gallery of Rape. Also Explore Rape photos and latest news at India.com"
+    }
+  ]
+}

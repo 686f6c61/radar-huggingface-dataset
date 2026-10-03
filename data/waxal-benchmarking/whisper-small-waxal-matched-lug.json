@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "waxal-benchmarking/whisper-small-waxal-matched-lug",
+  "slug": "waxal-benchmarking-whisper-small-waxal-matched-lug",
+  "author": "waxal-benchmarking",
+  "url": "https://huggingface.co/waxal-benchmarking/whisper-small-waxal-matched-lug",
+  "created_at": "2026-10-03T12:43:25.000Z",
+  "updated_at": "2026-10-03T13:17:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "lug"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "african-languages",
+    "waxal",
+    "ablation",
+    "lug",
+    "dataset:google/WaxalNLP",
+    "arxiv:2606.02375",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.redtube.com的最新网址是什么",
+      "url": "https://wenwen.sogou.com/question/q255496574.htm",
+      "snippet": "Jan 8, 2011 · null www.redtube.com的最新网址是什么 有啥地址？"
+    },
+    {
+      "title": "WAXAL-NET: Finetuned Edge ASR Across 19 African Languages",
+      "url": "https://arxiv.org/html/2606.02375v1",
+      "snippet": "01.06.2026 ... Finally, to contribute to future African ASR research, we release all model weights, fine-tuning and evaluation scripts, and a cleaned WAXAL ..."
+    },
+    {
+      "title": "冒险岛神之子剧情任务第一章第二回怎么做啊=-=",
+      "url": "https://wenwen.sogou.com/question/q829332070.htm",
+      "snippet": "Jan 9, 2014 · null null null null null 冒险岛神之子剧情任务第一章第二回怎么做啊=-= 卡在这了 不知道那个对话框里打什么"
+    },
+    {
+      "title": "魔兽世界里面，灰谷有个任务，保安，让杀个卡多雷刺客，把徽记带给 …",
+      "url": "https://wenwen.sogou.com/question/q657233600.htm",
+      "snippet": "Jul 19, 2011 · 一出大门你左边和右边都晃一下就出来了，这个怪有1120血吧。"
+    },
+    {
+      "title": "问一下日文键盘怎么打 括号 等号那些啊？？",
+      "url": "https://wenwen.sogou.com/question/q498657092.htm",
+      "snippet": "Nov 27, 2013 · 日文键盘因为键位比英文键盘多了几个，所以在适用英文键盘的中文系统中，几个常用符号比如小括号基本都向旁边移 …"
+    }
+  ]
+}

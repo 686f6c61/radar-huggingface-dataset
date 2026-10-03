@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.4",
+  "slug": "rajeshwari-chanda-gpt-neo-2-7b_magnitude_0-4",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.4",
+  "created_at": "2026-10-03T16:28:55.000Z",
+  "updated_at": "2026-10-03T16:34:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2651307520,
+  "parameters_human": "2.65B",
+  "storage_bytes": 5302661376,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VScode怎么ctrl+P搜不到文件呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/477614549",
+      "snippet": "vscode 有时全局搜索内容明显不对，或者明明有这个文件 ，Ctrl+P却搜索不到，可能是搜索时使用了.ignore文件 导致忽略了其中的内 …"
+    },
+    {
+      "title": "vscode最新版本有问题？开vscode电脑卡得不行? - 知乎",
+      "url": "https://www.zhihu.com/question/67317040",
+      "snippet": "下载 vscode1.18以上版本 Documentation for Visual Studio Code 1.18 安装完成后 文件>首选项>设置 搜索设置 search.followSymlinks …"
+    },
+    {
+      "title": "vscode怎么设置可以搜索包含node_modules中的文件? - 知乎",
+      "url": "https://www.zhihu.com/question/309220217",
+      "snippet": "vscode怎么设置可以搜索包含node_modules中的文件? Node.js WebStorm Visual Studio Code NPM (Network Performance …"
+    },
+    {
+      "title": "VSCode有在search中files to include里定制要搜索的 ... - 知乎",
+      "url": "https://www.zhihu.com/question/653250829",
+      "snippet": "VSCode有在search中files to include里定制要搜索的文件类型的插件吗？ 我想在files to include里自定义一些文件类型，比如我作为 …"
+    },
+    {
+      "title": "做图像检索，图像库从哪儿能下载到？ - 知乎",
+      "url": "https://www.zhihu.com/question/25039851",
+      "snippet": "Stanford Mobile Visual Search， Stanford Mobile Visual Search Dataset，2011.2，stanford提供，包括8种场景，如CD封面、油画 …"
+    }
+  ]
+}

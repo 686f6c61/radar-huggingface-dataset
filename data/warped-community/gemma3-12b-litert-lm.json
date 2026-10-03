@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "warped-community/Gemma3-12B-litert-lm",
+  "slug": "warped-community-gemma3-12b-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/Gemma3-12B-litert-lm",
+  "created_at": "2026-10-03T18:20:13.000Z",
+  "updated_at": "2026-10-03T18:28:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "warped",
+    "base_model:google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "base_model:finetune:google/gemma-3-12b-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7546535936,
+  "storage_human": "7.5 GB",
+  "base_model": "google/gemma-3-12b-it-qat-q4_0-unquantized",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indian Videos: Latest News, Trending Topics, Gallery Videos, Pics ...",
+      "url": "https://www.india.com/topic/indian/videos/",
+      "snippet": "Indian Videos – Watch our exclusive video Gallery of Indian. Also Explore Indian photos and latest news at India.com"
+    },
+    {
+      "title": "Mom Videos: Latest News, Trending Topics, Gallery Videos, Pics",
+      "url": "https://www.india.com/topic/mom/videos/",
+      "snippet": "Mom Videos – Watch our exclusive video Gallery of Mom. Also Explore Mom photos and latest news at India.com"
+    },
+    {
+      "title": "Mixed-Precision Quantization for Language Models - arXiv",
+      "url": "https://arxiv.org/html/2510.16805v1",
+      "snippet": "19.10.2025 ... RAIN AI, San Francisco, USA. * Email: foudam@uci.edu. Abstract. The rapid scaling of language models (LMs) ..."
+    },
+    {
+      "title": "mother son video की ताज़ा खबरे हिन्दी में | ब्रेकिंग और लेटेस्ट न्यूज़ ...",
+      "url": "https://zeenews.india.com/hindi/tags/mother-son-video.html",
+      "snippet": "May 16, 2025 · Get latest information about mother son video in Hindi on Zee News Hindi, Explore more on mother son video with …"
+    },
+    {
+      "title": "Awesome-Model-Merging-Methods-Theories-Applications/README ...",
+      "url": "https://github.com/EnnengYang/Awesome-Model-Merging-Methods-Theories-Applications/blob/main/README.md",
+      "snippet": "Abstract. Model merging is an efficient empowerment technique in the machine learning community that does not require the collection of raw training data ..."
+    }
+  ]
+}

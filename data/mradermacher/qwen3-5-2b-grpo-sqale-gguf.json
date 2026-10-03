@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.5-2b-grpo-sqale-GGUF",
+  "slug": "mradermacher-qwen3-5-2b-grpo-sqale-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.5-2b-grpo-sqale-GGUF",
+  "created_at": "2026-10-03T01:52:29.000Z",
+  "updated_at": "2026-10-03T02:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-to-sql",
+    "sql",
+    "sqlite",
+    "agent",
+    "tool-use",
+    "reinforcement-learning",
+    "grpo",
+    "sqale",
+    "en",
+    "dataset:trl-lab/SQaLe-2-text-to-SQL-Queries",
+    "dataset:trl-lab/SQaLe-2-text-to-SQL-Schemas",
+    "base_model:trl-lab/qwen3.5-2b-grpo-sqale",
+    "base_model:quantized:trl-lab/qwen3.5-2b-grpo-sqale",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 316,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 19636815488,
+  "storage_human": "19.6 GB",
+  "base_model": "trl-lab/qwen3.5-2b-grpo-sqale",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalAI models",
+      "url": "https://localai.io/docs/gallery.html",
+      "snippet": "6-Distill-Qwen-9B is Xiaomi MiMo&#39;s 9B Qwen3.5 fine-tune for coding, agent tasks, and visual coding. This Q4_K_M GGUF build uses llama.cpp with the model&#39 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=supervised-fine-tuning",
+      "snippet": "2.9k • 5 · nativ-community/MiMo-V2.6-Distill-Qwen-9B-MLX-4bit. Image-Text-to ... mradermacher/alpaca-7b-reproduced-llama-2-GGUF. 7B • Updated Jul 11, 2025 ..."
+    },
+    {
+      "title": "Qwen releases official quantized models of Qwen3 - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1kkrgyl/qwen_releases_official_quantized_models_of_qwen3/",
+      "snippet": "12.05.2025 ... I really like the released AWQ, GPTQ & INT8 as it's not only about GGUF. Qwen 3 are quite cool and models are really solid."
+    },
+    {
+      "title": "[LLM Deep Dive] The Best Free Open-Source Model for a Single ...",
+      "url": "https://ai-muninn.com/en/blog/thinkingcap-qwen36-27b-local-brain",
+      "snippet": "22.07.2026 ... Got one 24GB consumer GPU (or a modded 2080 Ti 22G)? My current top free open-source pick is Huihui-ThinkingCap-Qwen3.6-27B-abliterated: ..."
+    },
+    {
+      "title": "Continual Model Routing in Evolving Model Hubs - arXiv",
+      "url": "https://arxiv.org/pdf/2605.28577",
+      "snippet": "27.05.2026 ... 5-7B and Qwen3-4B (Table 2). Results show that routing performance ... model fit, and prompt naturalness, using a 1–5. Likert scale."
+    }
+  ]
+}

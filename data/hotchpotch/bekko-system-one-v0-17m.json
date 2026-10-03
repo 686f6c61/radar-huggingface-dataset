@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "hotchpotch/bekko-system-one-v0-17m",
+  "slug": "hotchpotch-bekko-system-one-v0-17m",
+  "author": "hotchpotch",
+  "url": "https://huggingface.co/hotchpotch/bekko-system-one-v0-17m",
+  "created_at": "2026-09-29T07:27:15.000Z",
+  "updated_at": "2026-09-30T20:18:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "typed-decisions",
+    "classification",
+    "scoring",
+    "custom-code",
+    "en",
+    "base_model:cross-encoder/ettin-reranker-17m-v1",
+    "base_model:quantized:cross-encoder/ettin-reranker-17m-v1",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96221851,
+  "storage_human": "96 MB",
+  "base_model": "cross-encoder/ettin-reranker-17m-v1",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

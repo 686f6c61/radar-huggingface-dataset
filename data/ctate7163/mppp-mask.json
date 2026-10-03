@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ctate7163/mppp-mask",
+  "slug": "ctate7163-mppp-mask",
+  "author": "ctate7163",
+  "url": "https://huggingface.co/ctate7163/mppp-mask",
+  "created_at": "2026-10-03T01:22:00.000Z",
+  "updated_at": "2026-10-03T01:22:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mars",
+    "mars-2020",
+    "perseverance",
+    "photogrammetry",
+    "segmentation",
+    "convnext",
+    "safetensors",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124826276,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ctate7163 (Christian Tate) - Hugging Face",
+      "url": "https://huggingface.co/ctate7163",
+      "snippet": "User profile of Christian Tate on Hugging Face"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "modelmap",
+      "url": "https://modelmap.cc/",
+      "snippet": "Interactive, animated architecture maps for any Hugging Face model — and whether it fits on your GPU."
+    },
+    {
+      "title": "AI-assisted mask generation - Metashape Expert Manual",
+      "url": "https://photogrammetrycommunity.github.io/metashape-expert-manual/workflow/alignment/ai-mask-generation/",
+      "snippet": "The AI is designed to segment a single foreground; behaviour with multiple co-equal objects is unattested and may produce incomplete masks. The capture is aerial or landscape. The model wasn&#x27;t trained for these scenarios. The subject and background share visual structure (e.g. a ceramic vessel against a textured cloth in similar tones)."
+    },
+    {
+      "title": "PDF June 27, 2024 Chiquita Brooks-LaSure Administrator Centers for Medicare ...",
+      "url": "https://nationalhealthcouncil.org/wp-content/uploads/2024/07/NHC-Comments-RE-MPPP-Model-Documents_06.27.24.pdf",
+      "snippet": "Dear Administrator Brooks-LaSure: The National Health Council (NHC) appreciates the opportunity to provide comments to the Centers for Medicare & Medicaid Services (CMS) on the Medicare Advantage and Prescription Drug Programs: Part C and Part D Medicare Prescription Payment Plan (MPPP) Model Documents (updated model documents)."
+    }
+  ]
+}

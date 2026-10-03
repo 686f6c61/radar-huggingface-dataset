@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF",
+  "slug": "winerylabs-winery-qwen3-5-9b-grandcru-gguf",
+  "author": "WineryLabs",
+  "url": "https://huggingface.co/WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF",
+  "created_at": "2026-10-03T01:34:16.000Z",
+  "updated_at": "2026-10-03T09:05:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "qwen3.5",
+    "winery",
+    "llama.cpp",
+    "model-soup",
+    "text-generation",
+    "base_model:DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+    "base_model:merge:DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+    "base_model:Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-v2",
+    "base_model:merge:Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-v2",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:merge:Qwen/Qwen3.5-9B",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:merge:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9528560686,
+  "storage_human": "9.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B, XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B, Jackrong/Qwen3.5-9B-Claude-4.6-Opus-Reasoning-Distilled-v2, DavidAU/Qwen3.5-9B-Claude-4.6-HighIQ-THINKING-HERETIC-UNCENSORED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF · Hugging Face",
+      "url": "https://huggingface.co/WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF",
+      "snippet": "A score-weighted model soup of the three strongest Qwen3.5-9B fine-tunes out of the 10 we benchmarked, blended with the Winery fusion compiler. It&#x27;s 9.5 GB at Q8_0."
+    },
+    {
+      "title": "WineryLabs (Winery) - Hugging Face",
+      "url": "https://huggingface.co/WineryLabs/models",
+      "snippet": "WineryLabs/Winery-Qwen3.5-9B-GrandCru-GGUF Text Generation • 9B•Updated about 5 hours ago"
+    },
+    {
+      "title": "qwen3.5:9b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:9b",
+      "snippet": "Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility to empower developers and enterprises with unprecedented capability and efficiency. Highlights Qwen3.5 features the following enhancement:"
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen-qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so far. Depending on the ..."
+    }
+  ]
+}

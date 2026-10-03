@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Babu09/MEIDNet",
+  "slug": "babu09-meidnet",
+  "author": "Babu09",
+  "url": "https://huggingface.co/Babu09/MEIDNet",
+  "created_at": "2026-10-03T13:44:07.000Z",
+  "updated_at": "2026-10-03T13:44:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "meidnet",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "meidnet",
+    "materials-science",
+    "inverse-design",
+    "crystal-structures",
+    "perovskites",
+    "multimodal",
+    "generative",
+    "pytorch",
+    "chemistry",
+    "other",
+    "en",
+    "dataset:perov-5",
+    "arxiv:2601.22009",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8519702,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "structure-property alignment and inverse design",
+      "dataset": "Perov-5 (CDVAE split)",
+      "metric": "cosine similarity of matched structure / property latents",
+      "value": 0.97
+    },
+    {
+      "task": "structure-property alignment and inverse design",
+      "dataset": "Perov-5 (CDVAE split)",
+      "metric": "L2 distance of matched latents",
+      "value": 0.24
+    },
+    {
+      "task": "structure-property alignment and inverse design",
+      "dataset": "Perov-5 (CDVAE split)",
+      "metric": "stable-unique-novel rate of generated candidates (19 of 140)",
+      "value": 0.136
+    }
+  ],
+  "sources": [
+    {
+      "title": "Death Rule 34 Porn Videos & Animations | Rule34 Tube",
+      "url": "https://rule34.tube/tags/death/",
+      "snippet": "Watch 270 free Death rule 34 porn videos on Rule34 Tube — 3D, SFM, MMD and 2D Death animations streaming in HD, no signup."
+    },
+    {
+      "title": "Rule 34 / fucked_to_death animated",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=fucked_to_death+animated+",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "Videos Tagged with death - Rule34video.com",
+      "url": "https://rule34video.com/tags/death/",
+      "snippet": "Watch the best death videos in the world with the tag death for free on Rule34video.com"
+    },
+    {
+      "title": "Rule 34 / dead animated",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=dead+animated",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "Rule34 - If it exists, there is porn of it / fucked_to_death",
+      "url": "https://rule34.us/index.php?r=posts%2Findex&q=fucked_to_death",
+      "snippet": "The best Rule 34 of Naruto, Elden Ring, Fortnite, Genshin Impact, FNF, Pokemon, animated gifs, and videos! After all, if it exists, …"
+    }
+  ]
+}

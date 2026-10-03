@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "bijaykumarsingh/qwen3-asr-1.7b-assamese-lora",
+  "slug": "bijaykumarsingh-qwen3-asr-1-7b-assamese-lora",
+  "author": "bijaykumarsingh",
+  "url": "https://huggingface.co/bijaykumarsingh/qwen3-asr-1.7b-assamese-lora",
+  "created_at": "2026-10-03T12:47:24.000Z",
+  "updated_at": "2026-10-03T13:15:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "as"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "speech",
+    "asr",
+    "audio",
+    "lora",
+    "assamese",
+    "automatic-speech-recognition",
+    "as",
+    "base_model:Qwen/Qwen3-ASR-1.7B-hf",
+    "base_model:adapter:Qwen/Qwen3-ASR-1.7B-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79251617,
+  "storage_human": "79 MB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

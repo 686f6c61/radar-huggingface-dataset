@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vipenl26/anlp-assignment-2-part1-dense",
+  "slug": "vipenl26-anlp-assignment-2-part1-dense",
+  "author": "vipenl26",
+  "url": "https://huggingface.co/vipenl26/anlp-assignment-2-part1-dense",
+  "created_at": "2026-10-03T14:41:23.000Z",
+  "updated_at": "2026-10-03T14:46:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202479706,
+  "storage_human": "202 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neemon/anlp-a2-part1-dense · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a2-part1-dense",
+      "snippet": "ANLP Assignment 2 (part1): dense Decoder-only transformer with dense two-layer MLP feed-forward (the baseline)."
+    },
+    {
+      "title": "karma-skz/anlp-assignment2-part1-m1-dense · Hugging Face",
+      "url": "https://huggingface.co/karma-skz/anlp-assignment2-part1-m1-dense",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Assignments - Advanced Natural Language Processing / Spring 2026",
+      "url": "http://cmu-anlp.org/assignments/",
+      "snippet": "Assignments - Advanced Natural Language Processing / Spring 2026 Assignments The homeworks will be made available here. Click on each homework page for additional info. Assignment #1 - Assignment #1 Assignment #2 - Assignment #2 Assignment #3 - Assignment #3 Assignment #4 - Assignment #4"
+    },
+    {
+      "title": "cmu-l3/anlp-spring2026-code | DeepWiki",
+      "url": "https://deepwiki.com/cmu-l3/anlp-spring2026-code",
+      "snippet": "Repository Overview Relevant source files This repository contains the official code examples and implementation exercises for the CMU Advanced NLP (11-711) Spring 2026 course, taught by Sean Welleck README.md 1-5 The codebase serves as a practical companion to the lectures, transitioning from fundamental rule-based systems to state-of-the-art Large Language Models (LLMs), Multimodal systems ..."
+    }
+  ]
+}

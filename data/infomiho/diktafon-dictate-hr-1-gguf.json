@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "infomiho/diktafon-dictate-hr-1-GGUF",
+  "slug": "infomiho-diktafon-dictate-hr-1-gguf",
+  "author": "infomiho",
+  "url": "https://huggingface.co/infomiho/diktafon-dictate-hr-1-GGUF",
+  "created_at": "2026-10-03T13:13:11.000Z",
+  "updated_at": "2026-10-03T13:14:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "hr"
+  ],
+  "tags": [
+    "gguf",
+    "croatian",
+    "dictation",
+    "automatic-speech-recognition",
+    "hr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 980046848,
+  "parameters_human": "980.0M",
+  "storage_bytes": 836664032,
+  "storage_human": "837 MB",
+  "base_model": "infomiho/diktafon-dictate-hr-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

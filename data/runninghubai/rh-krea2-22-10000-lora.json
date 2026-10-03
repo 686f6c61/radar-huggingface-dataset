@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-22-10000-lora",
+  "slug": "runninghubai-rh-krea2-22-10000-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-22-10000-lora",
+  "created_at": "2026-10-03T14:36:01.000Z",
+  "updated_at": "2026-10-03T14:37:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236892827,
+  "storage_human": "237 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-serena-krea2-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-serena-krea2-lora",
+      "snippet": "rh-serena-krea2-lora Description ... About this model serena 2000 steps trained with krea 2 raw This repository provides rh-serena-krea2-lora weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-lora-2100152352732102657 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2100152352732102657",
+      "snippet": "RunningHubAI / rh-krea2-lora-2100152352732102657 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-krea2-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-v3-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-v3-lora",
+      "snippet": "Description ... About this model 注意：强度请开0.75， This repository provides rh-krea2-v3-lora weight files. You can load them on RunningHub. Finetuned from: krea2"
+    },
+    {
+      "title": "RunningHubAI (RunningHub.ai) - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/models",
+      "snippet": "One API Powering All-Modal AI Productivity. Recent Activity. published a model 3 minutes ago. RunningHubAI/rh-z-imagebase-fp16-unet"
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

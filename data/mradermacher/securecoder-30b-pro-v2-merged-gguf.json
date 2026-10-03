@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mradermacher/securecoder-30b-pro-v2-merged-GGUF",
+  "slug": "mradermacher-securecoder-30b-pro-v2-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/securecoder-30b-pro-v2-merged-GGUF",
+  "created_at": "2026-10-03T12:41:48.000Z",
+  "updated_at": "2026-10-03T14:31:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Taimwe/securecoder-30b-pro-v2-merged",
+    "base_model:quantized:Taimwe/securecoder-30b-pro-v2-merged",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 129485149728,
+  "storage_human": "129.5 GB",
+  "base_model": "Taimwe/securecoder-30b-pro-v2-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "vor 2 Stunden ... mradermacher 's models 70,714. Sort: Recently updated · mradermacher/Holo4-27B-Abliterix-GGUF · mradermacher/securecoder-30b-pro-v2-merged-GGUF."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified&search=mradermacher",
+      "snippet": "mradermacher/JSBAI-Coder-4B-i1-GGUF. Reinforcement Learning • 4B • Updated in about 5 hours • 39 · mradermacher/securecoder-30b-pro-merged-i1-GGUF. 31B ..."
+    }
+  ]
+}

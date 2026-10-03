@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "sylo-ai/Sylo-Omni-BEST",
+  "slug": "sylo-ai-sylo-omni-best",
+  "author": "sylo-ai",
+  "url": "https://huggingface.co/sylo-ai/Sylo-Omni-BEST",
+  "created_at": "2026-10-03T16:54:41.000Z",
+  "updated_at": "2026-10-03T16:55:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119864,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sylo AI | Elevate your properties to the next level — AI Property Photo ...",
+      "url": "https://www.syloai.es/en",
+      "snippet": "Sylo AI is the free AI-powered property photo enhancer trusted by estate agents worldwide. Enhance photos, remove clutter, and generate listings in seconds."
+    },
+    {
+      "title": "Best AI Models in September 2026: Updated Rankings and Comparisons",
+      "url": "https://felloai.com/best-ai-models/",
+      "snippet": "The best AI models ranked by use case. Updated September 2026 with benchmarks and pricing."
+    },
+    {
+      "title": "Best AI Model Comparison Tools 2026: Picks, Criteria, and a…",
+      "url": "https://omny.chat/blog/best-ai-model-comparison-tools-2026",
+      "snippet": "The best AI model comparison tools in 2026 are: OmnyChat for hands‑on, side‑by‑side testing of GPT, Claude, and Gemini from one subscription; Artificial Analysis for macro benchmarks; and OpenRouter for API‑level aggregation. For a fast, fair decision, run the same prompts and files across multiple models in OmnyChat, score quality/speed/cost, and pick the winner per task. This guide ..."
+    },
+    {
+      "title": "Everything We Know About Gemini Omni — Complete Guide 2026 - elser.ai",
+      "url": "https://www.elser.ai/blog/everything-we-know-about-gemini-omni-complete-guide-2026",
+      "snippet": "From its \"any input, any output\" promise to conversational video editing, here&#x27;s everything Google has revealed about its groundbreaking Gemini Omni model."
+    },
+    {
+      "title": "Gemini Omni: Everything We Know Before Google I/O 2026 | iMini AI",
+      "url": "https://imini.com/blogs/gemini-omni-google-io-2026",
+      "snippet": "Gemini Omni just leaked before Google I/O 2026. Here&#x27;s what we know about Google&#x27;s new unified AI model for text, image, and video generation."
+    }
+  ]
+}

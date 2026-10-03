@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/docto-decision-medgemma-1.5-4b-fr-v0.1-GGUF",
+  "slug": "mradermacher-docto-decision-medgemma-1-5-4b-fr-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/docto-decision-medgemma-1.5-4b-fr-v0.1-GGUF",
+  "created_at": "2026-10-03T01:58:17.000Z",
+  "updated_at": "2026-10-03T02:18:27.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "french",
+    "system-one",
+    "decision",
+    "calibration",
+    "lora",
+    "fr",
+    "dataset:bofenghuang/docto-decision-data-fr-v0.1",
+    "base_model:bofenghuang/docto-decision-medgemma-1.5-4b-fr-v0.1",
+    "base_model:adapter:bofenghuang/docto-decision-medgemma-1.5-4b-fr-v0.1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37274405696,
+  "storage_human": "37.3 GB",
+  "base_model": "bofenghuang/docto-decision-medgemma-1.5-4b-fr-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Directory | Q4KM.ai",
+      "url": "https://q4km.ai/models/",
+      "snippet": "Browse 5873 AI models with technical overviews, benchmarks, hardware requirements, and use cases. Filter by pipeline type, author, and license."
+    }
+  ]
+}

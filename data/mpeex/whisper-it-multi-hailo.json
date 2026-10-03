@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mpeex/whisper-it-multi-hailo",
+  "slug": "mpeex-whisper-it-multi-hailo",
+  "author": "mpeex",
+  "url": "https://huggingface.co/mpeex/whisper-it-multi-hailo",
+  "created_at": "2026-10-03T13:25:26.000Z",
+  "updated_at": "2026-10-03T13:33:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 716926135,
+  "storage_human": "717 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shayo - Oshun Jogakuen No Danyuu 1-2 | PDF - Scribd",
+      "url": "https://www.scribd.com/document/718127542/Shayo-Oshun-Jogakuen-No-Danyuu-1-2",
+      "snippet": "Shayo - Oshun Jogakuen No Danyuu 1-2 - Free download as PDF File (.pdf), Text File (.txt) or read online for free."
+    },
+    {
+      "title": "(Doujindesu - TV) Oshun Jogakuen No Danyuu | PDF - Scribd",
+      "url": "https://www.scribd.com/document/779275641/Doujindesu-TV-Oshun-Jogakuen-No-Danyuu",
+      "snippet": "[Doujindesu.TV]_Oshun_Jogakuen_No_Danyuu - Free download as PDF File (.pdf) or read online for free."
+    },
+    {
+      "title": "Shinmai Ossan Boukensha, Saikyou Party ni Shinu hodo ... - MangaDex",
+      "url": "https://mangadex.org/title/a2320293-f00e-43a0-8d08-1110cf26a894/shinmai-ossan-bouken-sha-saikyou-paati-ni-shinu-hodo-kitae-rarete-muteki-ni-naru",
+      "snippet": "From dragons to vampires, Rick's fighting prowess, trained by his literally \"monster\" mentors, allows him to defeat elite adventurers …"
+    },
+    {
+      "title": "Backstage at Oushun Academy | Manga - MyMangaIndex",
+      "url": "https://mymangaindex.com/manga/691ede0e-5433-4dc5-92ac-68f32a8cc9d9/backstage-at-oushun-academy",
+      "snippet": "The stage is set at Oushun Academy, an institution for wealthy young women. Keeping up the “proper lady” act is stressful, so a …"
+    },
+    {
+      "title": "Oushun Jogakuin no Danyuu (Backstage at Oushun Academy ...",
+      "url": "https://myanimelist.net/manga/184745/Oushun_Jogakuin_no_Danyuu/stats",
+      "snippet": "Jun 22, 2023 · See scores, popularity and other stats for the manga Oushun Jogakuin no Danyuu (Backstage at Oushun Academy) …"
+    }
+  ]
+}

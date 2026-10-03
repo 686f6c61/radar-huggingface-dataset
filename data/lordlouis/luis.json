@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "lordlouis/luis",
+  "slug": "lordlouis-luis",
+  "author": "lordlouis",
+  "url": "https://huggingface.co/lordlouis/luis",
+  "created_at": "2026-10-03T01:56:33.000Z",
+  "updated_at": "2026-10-03T02:31:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 779139582,
+  "storage_human": "779 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AES - Anglo European Studbook: Home",
+      "url": "https://angloeuropeanstudbook.de/home",
+      "snippet": "In the yearling section, the undisputed star of the section was the gorgeous colt Lord Louis , by Christian 25 out of an Emerald mare. This very harmonious ..."
+    },
+    {
+      "title": "(PDF) There, yet not there: Human relationships with technology",
+      "url": "https://www.researchgate.net/publication/41782848_There_yet_not_there_Human_relationships_with_technology",
+      "snippet": "10.06.2026 ... ... Lord Louis Mountbatten made a landmark address to the British ... model, the student model, and the instructional model. This paper ..."
+    },
+    {
+      "title": "Site Map - kleio.org",
+      "url": "https://www.kleio.org/site-map/",
+      "snippet": "Una historiadora de l'Art creu que la Mona Lisa era Isabel d'Aragó. Isabel d'Aragó fou la model de la Mona Lisa ... Lord Louis Mountbatten (1900-1979) · Local ..."
+    },
+    {
+      "title": "Katalog 12. CACIB Oldenburg 6.8.2022 - MacShot",
+      "url": "https://macshot.de/vdh-we1/katalog12.php",
+      "snippet": "06.08.2022 ... Aqui Next Top Model, DJCh(VDH),BJCh, DK05010/2018, 13.3.18 ... Lord Louis von Arkewit, CHCh, SHSB/LOS 726734, 29.5.14 (Queen Bless ..."
+    },
+    {
+      "title": "Philippine Embassy in Saudi Arabia - Facebook",
+      "url": "https://www.facebook.com/PHLinKSA/posts/on-june-03-2025-he-ambassador-raymond-balatbat-received-members-of-the-global-so/1130820692402650/",
+      "snippet": "04.06.2025 ... ... model to our nurses. You've inspired me to dream big and serve ... Lord Louis P. Valera, for your commitment and dedication to serving ..."
+    }
+  ]
+}

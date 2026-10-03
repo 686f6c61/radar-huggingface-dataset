@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "gouravrishi/sentiment-model",
+  "slug": "gouravrishi-sentiment-model",
+  "author": "gouravrishi",
+  "url": "https://huggingface.co/gouravrishi/sentiment-model",
+  "created_at": "2026-10-03T16:27:12.000Z",
+  "updated_at": "2026-10-03T16:27:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Applications_August 2022.xlsx",
+      "url": "https://copyright.gov.in/Documents/New_Applications/New_Applications_August_2022.pdf",
+      "snippet": "31.08.2022 ... 23-08-2022 A MODEL OF FLIGHT STRIKE. PREVENTION WITH FLYING. BIRDS ... 26-08-2022 E42.ai Cognitive Process. Automation Platform. Artistic."
+    }
+  ]
+}

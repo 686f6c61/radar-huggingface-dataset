@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov8l",
+  "slug": "dronefreak-uavdt-yolov8l",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov8l",
+  "created_at": "2026-10-03T16:31:08.000Z",
+  "updated_at": "2026-10-03T16:31:21.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89500806,
+  "storage_human": "90 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 28.86
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 17.27
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 38.33
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 32.86
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/uavdt-yolov8n · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/uavdt-yolov8n",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "UAVDT Object Detection Model Zoo - a dronefreak Collection",
+      "url": "https://huggingface.co/collections/dronefreak/uavdt-object-detection-model-zoo",
+      "snippet": "A collection of YOLO and RF-DETR object detection models fine-tuned on the UAVDT benchmark for vehicle detection in aerial drone footage."
+    },
+    {
+      "title": "Anti-UAV Dataset & YOLOv8l Model for Drone Detection - GitHub",
+      "url": "https://github.com/Jinyao-Chen/Anti-UAV",
+      "snippet": "This repository provides the Anti-UAV dataset and YOLOv8l model weights trained on it. The dataset focuses on two common types of loitering munition / drones: copter_drone - multi‑rotor (e.g., quadcopter), typically slower motor_drone - fixed‑wing / motor‑driven (e.g., Shahed‑136), typically faster The model achieves 98.05% mAP@0.5 on the validation set, making it suitable for anti ..."
+    },
+    {
+      "title": "GitHub - hawkinglai/uav_det: uav detection by yolov8 · GitHub",
+      "url": "https://github.com/hawkinglai/uav_det",
+      "snippet": "uav detection by yolov8. Contribute to hawkinglai/uav_det development by creating an account on GitHub."
+    },
+    {
+      "title": "VisDrone Detection Dataset | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/detect/visdrone",
+      "snippet": "VisDrone is used to train and benchmark detectors on drone-captured imagery, where objects are small, dense, and seen from above. Its combination of aerial viewpoints, crowded scenes, and varied conditions makes it a standard testbed for UAV-based traffic monitoring, crowd analysis, and small-object detection research."
+    }
+  ]
+}

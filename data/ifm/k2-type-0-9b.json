@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "IFM/K2-Type-0.9B",
+  "slug": "ifm-k2-type-0-9b",
+  "author": "IFM",
+  "url": "https://huggingface.co/IFM/K2-Type-0.9B",
+  "created_at": "2026-09-26T01:47:48.000Z",
+  "updated_at": "2026-10-02T19:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "decision-model",
+    "jev",
+    "classification",
+    "calibration",
+    "pointer-head",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-0.9B",
+    "base_model:finetune:IFM/K2-Horizon-0.9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 1048,
+  "trending_score": 20,
+  "parameters": 1078285824,
+  "parameters_human": "1.08B",
+  "storage_bytes": 2159761520,
+  "storage_human": "2.2 GB",
+  "base_model": "IFM/K2-Horizon-0.9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ifm electronic - spécialiste des capteurs et solutions d’automatismes ...",
+      "url": "https://www.ifm.com/fr/fr",
+      "snippet": "ifm vous accompagne dans toutes les phases de vos projets ou demandes : de la préconisation de solutions jusqu’à la mise en …"
+    },
+    {
+      "title": "Institut Français de la Mode | Ecole mode Paris",
+      "url": "https://www.ifmparis.fr/fr",
+      "snippet": "L’Institut Français de la Mode, issu de l'union de l'Ecole de la chambre syndicale de la couture parisienne et de l'IFM, est un …"
+    },
+    {
+      "title": "ifm electronic - détecteurs de position, de capteurs de process, de bus ...",
+      "url": "https://www.ifm.com/be/fr",
+      "snippet": "ifm electronic est un groupe international allemand spécialisé dans la détection industrielle."
+    },
+    {
+      "title": "ifm - Fabricant et fournisseur de solutions pour l'industrie 4.0",
+      "url": "https://www.ifm40.fr/",
+      "snippet": "Industrie agroalimentaire, aéronautique, automobile, logistique, sidérurgie ou industrie pharmaceutique, fabricants de machines…"
+    },
+    {
+      "title": "Institut Français de la Mode | Actualités",
+      "url": "https://www.ifmparis.fr/fr/actualites",
+      "snippet": "Jul 7, 2026 · La Fondation IFM accueille deux nouveaux mécènes 27 juillet 2026 Carte Blanche aux étudiants du MS Mode et Luxe …"
+    }
+  ]
+}

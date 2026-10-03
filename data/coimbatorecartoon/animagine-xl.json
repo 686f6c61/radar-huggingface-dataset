@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Coimbatorecartoon/animagine-xl",
+  "slug": "coimbatorecartoon-animagine-xl",
+  "author": "Coimbatorecartoon",
+  "url": "https://huggingface.co/Coimbatorecartoon/animagine-xl",
+  "created_at": "2026-10-03T17:46:11.000Z",
+  "updated_at": "2026-10-03T17:46:11.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-diffusers",
+    "stable-diffusion-xl",
+    "text-to-image",
+    "en",
+    "dataset:Linaqruf/animagine-datasets",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 27757760744,
+  "storage_human": "27.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

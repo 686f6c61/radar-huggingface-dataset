@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-yolov8m",
+  "slug": "dronefreak-bdd100k-yolov8m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-yolov8m",
+  "created_at": "2026-10-03T16:29:13.000Z",
+  "updated_at": "2026-10-03T16:29:29.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "traffic-sign-detection",
+    "traffic-light-detection",
+    "dataset:dronefreak/BDD100K",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54767943,
+  "storage_human": "55 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (test split)",
+      "value": 60.89
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50-95 (test split)",
+      "value": 35.47
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Precision (test split)",
+      "value": 66.52
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Recall (test split)",
+      "value": 55.42
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mamasite | Specialized Midwifery and Sexual Health Counseling Center",
+      "url": "https://www.mamasite.ir/",
+      "snippet": "اعظم خیابانی - کارشناس ارشد مامایی و سکس تراپیست با بیش از ۱۷ سال تجربه. رزرو نوبت آنلاین و حضوری."
+    },
+    {
+      "title": "سن:34 وضعیت تاهل:متاهل تعداد فرزند:۱ پرسش: سلام خانوم خیابانی نازنین ...",
+      "url": "https://www.mamasite.ir/questions/%D8%B3%D9%8634-%D9%88%D8%B6%D8%B9%DB%8C%D8%AA-%D8%AA%D8%A7%D9%87%D9%84%D9%85%D8%AA%D8%A7%D9%87%D9%84-%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF-%D9%81%D8%B1%D8%B2%D9%86%D8%AF%DB%B1-%D9%BE%D8%B1%D8%B3%D8%B4/",
+      "snippet": "سوال: سن:34 وضعیت تاهل:متاهل تعداد فرزند:۱ پرسش: سلام خانوم خیابانی نازنین سوال من درباره ختنه ست، من پسر بیست ماهه ای دارم که بنا به توصیه ی پزشک متخصص اطفال و پزشک جراح …"
+    },
+    {
+      "title": "درباره ما - پایگاه اینترنتی ماماسایت",
+      "url": "https://www.mamasite.ir/about-us/",
+      "snippet": "صفحه نخست / درباره ما درباره من افتخارات نمونه‌کارها"
+    },
+    {
+      "title": "خدمات حضوری - پایگاه اینترنتی ماماسایت",
+      "url": "https://www.mamasite.ir/services/person-service/",
+      "snippet": "صفحه نخست / خدمات مرکز / خدمات حضوری ویزیت و معاینات زنان مشاوره انواع جراحی های زنان مشاوره و سکس تراپی بانوان صفر تا صد بارداری تا زایمان مشاوره اقدام به بارداری پاپ اسمیر …"
+    },
+    {
+      "title": "درباره من | اعظم خیابانی - ماماسایت",
+      "url": "https://www.mamasite.ir/about.html",
+      "snippet": "مشاور ارشد سکس‌تراپی و درمان واژینیسموس بیش از ۱۷ سال تجربه بالینی تخصصی در درمان واژینیسموس، اختلالات دخول و مشکلات جنسی زنان. درمان موفق بیش از ۳,۵۰۰ بیمار. فعالیت آنلاین"
+    }
+  ]
+}

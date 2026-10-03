@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Papapote/Siennas_Seed_Qwen7B-F16-GGUF",
+  "slug": "papapote-siennas_seed_qwen7b-f16-gguf",
+  "author": "Papapote",
+  "url": "https://huggingface.co/Papapote/Siennas_Seed_Qwen7B-F16-GGUF",
+  "created_at": "2026-10-03T18:02:26.000Z",
+  "updated_at": "2026-10-03T18:02:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-lora",
+    "base_model:Papapote/Siennas_Seed_Qwen7B",
+    "base_model:quantized:Papapote/Siennas_Seed_Qwen7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40370176,
+  "parameters_human": "40.4M",
+  "storage_bytes": 80767264,
+  "storage_human": "81 MB",
+  "base_model": "Papapote/Siennas_Seed_Qwen7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème de taille sur youtube - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-20268916-probleme-de-taille-sur-youtube",
+      "snippet": "Bonjour, je voulais savoir comment faire pour agrandir la taille de ma page Youtube. Avant, j'appuyais sur Ctrl et la souris en même …"
+    },
+    {
+      "title": "Comment se débarrasser de oneclickstarter",
+      "url": "https://forums.commentcamarche.net/forum/affich-30550314-comment-se-debarrasser-de-oneclickstarter",
+      "snippet": "kaneagle Messages postés 86295 Date d'inscription mercredi 27 mai 2009 Statut Modérateur Dernière intervention 23 juillet 2026 14 …"
+    },
+    {
+      "title": "Topic [YTB] On a les pires youtubeurs Hardware - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-6-67692925-1-0-1-0-ytb-on-a-les-pires-youtubeurs-hardware.htm",
+      "snippet": "Sep 17, 2021 · Accueil Tous les forums Forum principal Informatique Forum Hardware Topic [YTB] On a les pires youtubeurs …"
+    },
+    {
+      "title": "Vidéos du jeu Valorant sur PC - Trailers, Gameplay - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/pc/jeu-1125783/videos/",
+      "snippet": "Retrouvez l'ensemble des vidéos du jeu Valorant sur PC : Reportages, Trailers, Gameplay... Découvrez les dernières vidéos du jeu …"
+    },
+    {
+      "title": "Combien de combinaison possible avec 3 chiffres",
+      "url": "https://forums.commentcamarche.net/forum/affich-21175937-nombre-de-combinaisons-possibles-avec-trois-chiffres",
+      "snippet": "Bonjour, J'ai 10 chiffres qui sont: 0;1;2;3;4;5;6;7;8 et 9 Je voudrais avoir toutes les combinaisons de trois chiffres en utilisant mes 10 …"
+    }
+  ]
+}

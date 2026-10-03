@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "zonay/qwen3-bash-v3-GGUF",
+  "slug": "zonay-qwen3-bash-v3-gguf",
+  "author": "zonay",
+  "url": "https://huggingface.co/zonay/qwen3-bash-v3-GGUF",
+  "created_at": "2026-10-03T12:34:44.000Z",
+  "updated_at": "2026-10-03T12:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bash",
+    "shell",
+    "nl2sh",
+    "qwen3",
+    "code",
+    "en",
+    "base_model:zonay/qwen3-bash-v3",
+    "base_model:quantized:zonay/qwen3-bash-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 396704544,
+  "storage_human": "397 MB",
+  "base_model": "zonay/qwen3-bash-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - shelken/awesome-stars",
+      "url": "https://github.com/shelken/awesome-stars",
+      "snippet": "TecharoHQ/anubis - Weighs the soul of incoming HTTP requests to stop AI crawlers; QuantumNous/new-api - A unified AI model hub for aggregation & distribution."
+    }
+  ]
+}

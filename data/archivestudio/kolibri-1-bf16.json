@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Kolibri-1-BF16",
+  "slug": "archivestudio-kolibri-1-bf16",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Kolibri-1-BF16",
+  "created_at": "2026-10-03T18:13:44.000Z",
+  "updated_at": "2026-10-03T18:13:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kolibri1",
+    "reasoning",
+    "moe",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "arxiv:2512.11614",
+    "arxiv:2601.17858",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 156213402552,
+  "storage_human": "156.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

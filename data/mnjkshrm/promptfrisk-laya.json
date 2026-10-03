@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mnjkshrm/promptfrisk-laya",
+  "slug": "mnjkshrm-promptfrisk-laya",
+  "author": "mnjkshrm",
+  "url": "https://huggingface.co/mnjkshrm/promptfrisk-laya",
+  "created_at": "2026-10-03T01:13:22.000Z",
+  "updated_at": "2026-10-03T01:13:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "prompt-injection",
+    "jailbreak",
+    "guardrail",
+    "text-classification",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "promptfrisk · PyPI",
+      "url": "https://pypi.org/project/promptfrisk/",
+      "snippet": "frisk is built on Laya, the System 1 decision model from Nandha Kishor M (@NandhaKishorM) at Convai Innovations, released under Apache-2.0. The guardrail and the question design are the part frisk adds on top, that too ported to three languages."
+    },
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "The Laya AI model is built for a particular kind of work: making a bounded decision about an input, then returning a structured answer and probabilities. Give it a support ticket, an email, a conversation, or a JSON state. Ask which queue should receive it, how urgent it is, or whether a stated condition is true. Laya answers those questions without writing a paragraph that your application ..."
+    },
+    {
+      "title": "Laya AI — Calibrated decisions in one forward pass",
+      "url": "https://layaai.org/",
+      "snippet": "Define questions and options at request time; Laya AI scores them in one pass and returns calibrated probabilities you can gate, log, reproduce, and audit. The English root uses ModernBERT-large (421M parameters, 512-token context). The multilingual model uses mmBERT-base (322M parameters, 100+ languages)."
+    },
+    {
+      "title": "I Tested Laya After the Jev Announcement. Then I Fine-Tuned It.",
+      "url": "https://n.demir.io/articles/testing-and-fine-tuning-laya/",
+      "snippet": "Testing and fine-tuning Laya after the Jev announcement, with a complete reproduction script and an analysis of accuracy, macro F1, and hate-speech recall."
+    },
+    {
+      "title": "dnagpt/laya-bio-models · Hugging Face",
+      "url": "https://huggingface.co/dnagpt/laya-bio-models",
+      "snippet": "This collection contains the 12 final checkpoints used in Laya-Bio: Candidate Scoring and Reliability on Short Biological Sequences: raw, full_bpe, b1, and text_only, each at seeds 20260922, 20260923 and 20260924. The exact original Laya initialization is included under artifacts/laya_model/, with its pinned upstream revision and attribution. Pilot, smoke and superseded experiment checkpoints ..."
+    }
+  ]
+}

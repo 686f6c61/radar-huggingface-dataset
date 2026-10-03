@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "rohit0128/ppo-SnowballTarget",
+  "slug": "rohit0128-ppo-snowballtarget",
+  "author": "rohit0128",
+  "url": "https://huggingface.co/rohit0128/ppo-SnowballTarget",
+  "created_at": "2026-10-03T18:04:59.000Z",
+  "updated_at": "2026-10-03T18:05:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "ML-Agents-SnowballTarget",
+    "ppo",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to fix a ledger nano x stuck in bootloader mode and recover my ...",
+      "url": "https://www.bydfi.com/questions/how-to-fix-a-ledger-nano-x-stuck-in-bootloader-mode-and-recover-my-cryptocurrency",
+      "snippet": "Aug 26, 2026 · If resetting your ledger nano x doesn't work, you can try using a different USB cable or port. Sometimes, connectivity …"
+    },
+    {
+      "title": "www.bydfi.com",
+      "url": "https://www.bydfi.com/ru/futures/KAS-USDT",
+      "snippet": "Moved Permanently. Redirecting to https://www.bydfi.com/404"
+    },
+    {
+      "title": "301 Moved Permanently - BYDFi",
+      "url": "https://www.bydfi.com/en/spot/xrp_usdt",
+      "snippet": "301 Moved Permanently 301 Moved Permanently openresty"
+    },
+    {
+      "title": "Mercado de futuros de USDT-M: Precios de tokens en tiempo real",
+      "url": "https://www.bydfi.com/es/markets/crypto/futures/usdt-m",
+      "snippet": "Opera futuros perpetuos con margen en USDT con alta liquidez y ejecución rápida. Haz seguimiento de los precios en tiempo real, …"
+    },
+    {
+      "title": "0.06880 | BASEDUSDT | Perpetual Contract Chart | Real-Time Crypto ...",
+      "url": "https://www.bydfi.com/en/futures/based-USDT",
+      "snippet": "Trade perpetual contracts on BYDFi with up to 200x leverage. Access 500+ pairs, deep liquidity, and low fees on a leading crypto …"
+    }
+  ]
+}

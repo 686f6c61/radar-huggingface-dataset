@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bsbretly/act_first_data_set",
+  "slug": "bsbretly-act_first_data_set",
+  "author": "bsbretly",
+  "url": "https://huggingface.co/bsbretly/act_first_data_set",
+  "created_at": "2026-10-03T01:13:37.000Z",
+  "updated_at": "2026-10-03T01:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:bsbretly/first_data_set_20261002_170801",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bsbretly (Brett Stephens) - Hugging Face",
+      "url": "https://huggingface.co/bsbretly",
+      "snippet": "Recent Activity updated a datasetabout 9 hours ago bsbretly/first_data_set_20260916_180937 published a datasetabout 9 hours ago bsbretly/first_data_set_20260916_180937 published a datasetabout 10 hours ago bsbretly/first_data_set View all activity"
+    },
+    {
+      "title": "bsbretly/first_data_set · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/bsbretly/first_data_set",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "World&#x27;s Largest AI Model Repository Hugging Face Breached by Autonomous ...",
+      "url": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+      "snippet": "Hugging Face says an autonomous AI agent breached production through a malicious dataset, accessing internal data and service credentials."
+    },
+    {
+      "title": "How engineers can build a machine learning model in 8 steps",
+      "url": "https://www.techtarget.com/searchenterpriseai/feature/How-to-build-a-machine-learning-model-in-7-steps",
+      "snippet": "Follow this guide to learn how to build a machine learning model, from finding the right data to training the model and making ongoing adjustments."
+    },
+    {
+      "title": "How to Train an AI Model: Step-by-Step 2026 Guide | Label Your Data",
+      "url": "https://labelyourdata.com/articles/how-to-train-an-ai-model",
+      "snippet": "️ Learn how to train an AI model, covering data requirements, tools, step-by-step workflow, and real costs for AI model training in production."
+    }
+  ]
+}

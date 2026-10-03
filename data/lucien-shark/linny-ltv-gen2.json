@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-LTV-Gen2",
+  "slug": "lucien-shark-linny-ltv-gen2",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-LTV-Gen2",
+  "created_at": "2026-10-03T01:00:24.000Z",
+  "updated_at": "2026-10-03T12:51:25.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54152916535,
+  "storage_human": "54.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lucien — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien",
+      "snippet": "Prénom et patronyme Lucien est un prénom masculin, Lucienne étant sa forme féminine. C'est aussi un nom de baptême donné …"
+    },
+    {
+      "title": "Все бренды",
+      "url": "https://ozon.by/brand/en--l/",
+      "snippet": "... Model Lang Yarns LANG YI XIN lanhaiwjf LANHE Lanicka Lanificio dell'Olivo ... Shark Little fox Little Art Little Lis Little Tigerrr Little Maer Little ..."
+    },
+    {
+      "title": "Prénom Lucien (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/lucien/prenom-5417",
+      "snippet": "Quelle est l'origine du prénom Lucien ? Le prénom français Lucien est un dérivé du prénom latin Lucius. Lucien peut aussi être …"
+    },
+    {
+      "title": "Lucien de Samosate — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lucien_de_Samosate",
+      "snippet": "Le rêve qu'il fit la nuit suivante le place au centre d'une confrontation entre l' allégorie de la Sculpture et celle de l'Instruction …"
+    },
+    {
+      "title": "norvig file (Autosaved).xlsx - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Mark-Mayzner/publication/301199778_Word_frequencies_for_words_from_1-8_letters_long/links/570bb40008ae8883a1ffd47f/Word-frequencies-for-words-from-1-8-letters-long.pdf",
+      "snippet": "... MODEL. 155,409,143. GERMAN. 111,778,665. LIMITED. 98,575,904. MEASURES. 72,774,916 ... AI. 7,884,921. MID. 36,299,368. IDEA. 145,406,908. DOING. 109,588,230."
+    }
+  ]
+}

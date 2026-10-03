@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.3",
+  "slug": "rajeshwari-chanda-gpt-neo-2-7b_magnitude_0-3",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.3",
+  "created_at": "2026-10-03T16:27:26.000Z",
+  "updated_at": "2026-10-03T16:28:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2651307520,
+  "parameters_human": "2.65B",
+  "storage_bytes": 5302661376,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.3 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_magnitude_0.3",
+      "snippet": "Rajeshwari-Chanda / gpt-neo-2.7B_magnitude_0.3 Like 0 Text Generation Transformers Safetensors gpt_neo arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "User profile of Rajarajeshwari Chanda on Hugging Face"
+    },
+    {
+      "title": "GPT-Neo 2.7B - Models",
+      "url": "https://www.modelscope.cn/models/EleutherAI/gpt-neo-2.7B",
+      "snippet": "GPT-Neo 2.7B is a transformer model designed using EleutherAI&#x27;s replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 2.7B represents the number of parameters of this particular pre-trained model."
+    },
+    {
+      "title": "gpt-neo-2.7B · Model · Inferix",
+      "url": "https://inferix.co/models/EleutherAI/gpt-neo-2.7B",
+      "snippet": "GPT-Neo 2.7B is a transformer model designed using EleutherAI&#x27;s replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 2.7B represents the number of parameters of this particular pre-trained model."
+    },
+    {
+      "title": "GPT-Neo (2.7B parameters) Deployment Guide - GitHub",
+      "url": "https://github.com/sidharthmohannair/GPT-Neo-Deployment-Guide",
+      "snippet": "A server with at least 16GB of RAM. A GPU with at least 12GB of VRAM (e.g., NVIDIA Tesla K80, RTX 2080). Sufficient storage space (at least 50GB free)."
+    }
+  ]
+}

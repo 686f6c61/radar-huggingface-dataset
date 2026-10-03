@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "omneity-labs/miniagent-1.7B-strapi",
+  "slug": "omneity-labs-miniagent-1-7b-strapi",
+  "author": "omneity-labs",
+  "url": "https://huggingface.co/omneity-labs/miniagent-1.7B-strapi",
+  "created_at": "2026-10-03T00:45:24.000Z",
+  "updated_at": "2026-10-03T11:13:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "strapi",
+    "api-agent",
+    "tool-use",
+    "agentic",
+    "gptq",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 358,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 22386729767,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Latias94/miniagent",
+      "url": "https://github.com/Latias94/miniagent",
+      "snippet": "By default (for crates.io friendliness), miniagent does not embed the full Claude Skills to keep the crate small. On first run, if no local Skills are found, miniagent will try to fetch them to ~/.miniagent/skills (requires network)."
+    },
+    {
+      "title": "Omneity Labs - Sovereign Multilingual AI for underrepresented languages",
+      "url": "https://www.omneitylabs.com/",
+      "snippet": "Production-ready LLMs, language identification, and embeddings for underrepresented languages, starting with Arabic dialects, Amazigh, and African languages. Access all models through the Sawalni API."
+    },
+    {
+      "title": "GitHub - liupras/miniagent: A lightweight intelligent agent platform ...",
+      "url": "https://github.com/liupras/miniagent",
+      "snippet": "MiniAgent provides a complete workflow from model configuration, knowledge base building, agent orchestration to end-user dialogue. The project includes a FastAPI backend, a PureAdmin management backend, and a separate Workplace user workbench, suitable for building enterprise knowledge assistants, internal data assistants, legal advisors, and other vertical domain agents."
+    },
+    {
+      "title": "Models | Omneity Labs",
+      "url": "https://www.omneitylabs.com/models",
+      "snippet": "Sovereign production-ready multilingual AI models. Language identification, embeddings, and more — available via the Sawalni API."
+    },
+    {
+      "title": "I Built a Coding Agent That Runs on a 1.7B Model - DEV Community",
+      "url": "https://dev.to/anirudh_shivam/i-built-a-coding-agent-that-runs-on-a-17b-model-219p",
+      "snippet": "MINICODE is a terminal-based AI coding agent that I built around small local language models. The default setup uses Qwen3 1.7B through Ollama. The goal isn&#x27;t to compete with massive cloud models. Instead, I wanted to experiment with making a small model actually useful by giving it tools and letting it interact with a coding environment."
+    }
+  ]
+}

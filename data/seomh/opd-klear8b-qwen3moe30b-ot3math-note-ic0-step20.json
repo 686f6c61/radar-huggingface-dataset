@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "seomh/opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20",
+  "slug": "seomh-opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20",
+  "author": "seomh",
+  "url": "https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-note-ic0-step20",
+  "created_at": "2026-10-03T01:56:00.000Z",
+  "updated_at": "2026-10-03T01:57:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939414,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seomh/opd-klear8b-qwen3moe30b-ot3math-step160 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step160",
+      "snippet": "seomh / opd-klear8b-qwen3moe30b-ot3math-step160 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "seomh/opd-klear8b-qwen3moe30b-ot3math-step190 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-klear8b-qwen3moe30b-ot3math-step190",
+      "snippet": "seomh / opd-klear8b-qwen3moe30b-ot3math-step190 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "seomh/opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20",
+      "snippet": "Its eval numbers are not comparable to the other arms. The run was restarted from step 0 with eos set to <|im_end|>; those checkpoints are published as seomh/opd-qwen3base8b-dm {250,500,750}eos-qwen3moe30b-ot3math-step<N>."
+    },
+    {
+      "title": "seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step90 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step90",
+      "snippet": "seomh / opd-qwen3base8b-ot3sft-qwen3moe30b-ot3math-step90 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 10 Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=invalid-run",
+      "snippet": "seomh/opd-qwen3base8b-dm250-qwen3moe30b-ot3math-step20 8B•Updated about 9 hours ago• 9"
+    }
+  ]
+}

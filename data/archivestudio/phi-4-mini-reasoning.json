@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Phi-4-mini-reasoning",
+  "slug": "archivestudio-phi-4-mini-reasoning",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Phi-4-mini-reasoning",
+  "created_at": "2026-10-03T18:16:02.000Z",
+  "updated_at": "2026-10-03T18:16:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "nlp",
+    "math",
+    "code",
+    "conversational",
+    "en",
+    "arxiv:2504.21233",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7688245304,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

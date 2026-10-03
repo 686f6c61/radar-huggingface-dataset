@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "changh95/pi05-base-bh-galaxy",
+  "slug": "changh95-pi05-base-bh-galaxy",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/pi05-base-bh-galaxy",
+  "created_at": "2026-10-03T00:55:28.000Z",
+  "updated_at": "2026-10-03T01:25:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "galaxy",
+    "tenstorrent",
+    "ttnn",
+    "tt-metal",
+    "tt-nn",
+    "multi-chip",
+    "tensor-parallel",
+    "vla",
+    "robot-control",
+    "flow-matching",
+    "pi0",
+    "pi05",
+    "openpi",
+    "libero",
+    "robotics",
+    "arxiv:2504.16054",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9003503,
+  "storage_human": "9 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "changh95/pi05-base-blackhole · Hugging Face",
+      "url": "https://huggingface.co/changh95/pi05-base-blackhole",
+      "snippet": "Project README π0.5 (Physical Intelligence 0.5) is a vision-language-action (VLA) model for robotics that combines a vision encoder, language model, and action expert for end-to-end robot control. This repository is a port of π0.5 to Tenstorrent hardware via TTNN, derived from lerobot/pi05_base."
+    },
+    {
+      "title": "changh95/pi05-base-batch-p300x2 · Hugging Face",
+      "url": "https://huggingface.co/changh95/pi05-base-batch-p300x2",
+      "snippet": "changh95 / pi05-base-batch-p300x2 Like 0 Robotics batching blackhole flow-matching fused-kernels p300 p300x2 pi0 robot-control tensor-parallel tenstorrent tt-dit-server tt-metal tt-model-cache tt-model-catalog tt-model-container tt-nn ttnn vla arxiv:2504.16054 License:gemma Model card FilesFiles and versions xet Community Copy to bucket new pi05-base-batch-p300x2 Quickstart Run with tt-cli ..."
+    },
+    {
+      "title": "changh95 (Hyunggi Chang) · GitHub",
+      "url": "https://github.com/changh95",
+      "snippet": "Physical AI, SLAM. changh95 has 89 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "pi05_base · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_base/summary",
+      "snippet": "π₀.₅ (Pi05) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Note: This model currently supports only the flow-matching action head for π₀.₅ training and inference. Other components ..."
+    },
+    {
+      "title": "GitHub - Galaxy-Official/openpi_pretraining",
+      "url": "https://github.com/Galaxy-Official/openpi_pretraining",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    }
+  ]
+}

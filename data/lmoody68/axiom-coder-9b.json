@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lmoody68/AXIOM-coder-9B",
+  "slug": "lmoody68-axiom-coder-9b",
+  "author": "lmoody68",
+  "url": "https://huggingface.co/lmoody68/AXIOM-coder-9B",
+  "created_at": "2026-10-03T16:53:21.000Z",
+  "updated_at": "2026-10-03T17:01:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "code",
+    "coding-assistant",
+    "ollama",
+    "qlora",
+    "yi-coder",
+    "text-generation",
+    "en",
+    "base_model:01-ai/Yi-Coder-9B-Chat",
+    "base_model:quantized:01-ai/Yi-Coder-9B-Chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8829407232,
+  "parameters_human": "8.83B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "01-ai/Yi-Coder-9B-Chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "01-ai/Yi-Coder-9B · Hugging Face",
+      "url": "https://huggingface.co/01-ai/Yi-Coder-9B",
+      "snippet": "Benchmarks As illustrated in the figure below, Yi-Coder-9B-Chat achieved an impressive 23% pass rate in LiveCodeBench, making it the only model with under 10B parameters to surpass 20%. It also outperforms DeepSeekCoder-33B-Ins at 22.3%, CodeGeex4-9B-all at 17.8%, CodeLLama-34B-Ins at 13.3%, and CodeQwen1.5-7B-Chat at 12%. Quick Start You can use transformers to run inference with Yi-Coder ..."
+    },
+    {
+      "title": "QuantFactory/Yi-Coder-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantFactory/Yi-Coder-9B-GGUF",
+      "snippet": "For model details and benchmarks, see Yi-Coder blog and Yi-Coder README. Models ... Benchmarks As illustrated in the figure below, Yi-Coder-9B-Chat achieved an impressive 23% pass rate in LiveCodeBench, making it the only model with under 10B parameters to surpass 20%."
+    },
+    {
+      "title": "Yi Coder 9B — 9B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/yi-coder-9b",
+      "snippet": "Yi Coder 9B: 9B parameters, 125K context, coding. 9 benchmarks, 6 quantizations. VRAM requirements, speed estimates, and Ollama commands."
+    },
+    {
+      "title": "Yi-Coder-9B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/yi-coder-9b-01-ai",
+      "snippet": "Model Overview Overview Yi-Coder-9B is a specialized code language model built by 01-ai that achieves state-of-the-art coding performance with under 10 billion parameters. The model features a 128K token context window and supports 52 programming languages including Python, JavaScript, Java, C++, Go, Rust, and TypeScript."
+    },
+    {
+      "title": "Yi Coder 9B - AI Models - b3 blog",
+      "url": "https://b3blog.b-tech.io/en/resources/models/yi-coder-9b",
+      "snippet": "Details Release Date September 4, 2024 Knowledge Cutoff March 1, 2024 Source Local License Apache 2.0 Model ID yi-coder-9b Last updated: November 26, 2025"
+    }
+  ]
+}

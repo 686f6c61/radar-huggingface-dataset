@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-domain-v2shape",
+  "slug": "dhresearch-quality-router-v2-domain-v2shape",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-domain-v2shape",
+  "created_at": "2026-10-03T16:42:28.000Z",
+  "updated_at": "2026-10-03T16:42:30.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-main",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248839,
+  "storage_human": "248839 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q-Router: Agentic Video Quality Assessment with Expert Model Routing ...",
+      "url": "https://arxiv.org/html/2510.08789v1",
+      "snippet": "Abstract Video quality assessment (VQA) is a fundamental computer vision task that aims to predict the perceptual quality of a given video in alignment with human judgments. Existing performant VQA models trained with direct score supervision suffer from (1) poor generalization across diverse content and tasks, ranging from user-generated content (UGC), short-form videos, to AI-generated ..."
+    },
+    {
+      "title": "Q-Router: Agentic Video Quality Assessment with Expert Model Routing",
+      "url": "https://openreview.net/forum?id=udq2BMdIFi",
+      "snippet": "We propose Q-Router, an agentic framework for universal VQA with a multi-tier model routing system. Q-Router integrates a diverse set of expert models and employs vision-language models (VLMs) as real-time routers that dynamically reason then ensemble the most appropriate experts conditioned on the input video semantics."
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "snippet": "The unified interface for every model. Find the best models & prices for your prompts"
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated October 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+      "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    }
+  ]
+}

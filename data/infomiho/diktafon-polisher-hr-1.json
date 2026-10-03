@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "infomiho/diktafon-polisher-hr-1",
+  "slug": "infomiho-diktafon-polisher-hr-1",
+  "author": "infomiho",
+  "url": "https://huggingface.co/infomiho/diktafon-polisher-hr-1",
+  "created_at": "2026-10-03T13:14:39.000Z",
+  "updated_at": "2026-10-03T13:41:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "croatian",
+    "dictation",
+    "text-normalization",
+    "conversational",
+    "hr",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524821691,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

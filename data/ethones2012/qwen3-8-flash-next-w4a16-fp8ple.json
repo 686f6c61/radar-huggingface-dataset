@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE",
+  "slug": "ethones2012-qwen3-8-flash-next-w4a16-fp8ple",
+  "author": "ethones2012",
+  "url": "https://huggingface.co/ethones2012/Qwen3.8-Flash-Next-W4A16-FP8PLE",
+  "created_at": "2026-10-03T01:36:40.000Z",
+  "updated_at": "2026-10-03T01:36:40.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8",
+    "autoround",
+    "int4",
+    "fp8",
+    "vllm",
+    "speculative-decoding",
+    "256k-context",
+    "128k-context",
+    "rtx-3090",
+    "single-gpu",
+    "dual-gpu",
+    "24gb-vram",
+    "64gb-ram",
+    "consumer-gpu",
+    "cpu-offload",
+    "moe",
+    "int8-kv-cache",
+    "local-llm",
+    "w4a16",
+    "text-generation",
+    "conversational",
+    "base_model:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "base_model:quantized:Intel/Qwen3.8-Flash-Next-W4A16-AutoRound",
+    "license:other",
+    "4-bit",
+    "auto-round",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 72758053011,
+  "parameters_human": "72.76B",
+  "storage_bytes": 128977821186,
+  "storage_human": "129.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Intel/Qwen3.8-Flash-Next-W4A16-AutoRound, RadixArk/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "albucino/Qwen3.8-Flash-Next-W4A16-FP8PLE · Hugging Face",
+      "url": "https://huggingface.co/albucino/Qwen3.8-Flash-Next-W4A16-FP8PLE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/tree/main",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "GitHub - Niko1221/Strata: Qwen3.8-Flash-Next on any consumer hardware ...",
+      "url": "https://github.com/Niko1221/Strata",
+      "snippet": "Run a 125-billion-parameter AI model on your own gaming PC NVIDIA or AMD graphics card (12 GB or more) · Windows or Linux · free and open source A voxel pagoda garden, 1 shot prompt running on an RTX 5070 with Strata (IQ3_S, 128K context) · full video (49 s) Strata runs Qwen3.8-Flash-Next - a large, smart AI model that normally needs a server - on a normal PC. It chats, writes code, reads ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-8-flash-next/",
+      "snippet": "Qwen3.8 Flash Next is Qwen&#x27;s vision-language mixture-of-experts model for reasoning, coding, and tool use. It has 125B language-model parameters with 6B activated per token, plus 51B n-gram embedding parameters."
+    }
+  ]
+}

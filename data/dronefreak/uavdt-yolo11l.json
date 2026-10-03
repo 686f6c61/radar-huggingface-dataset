@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolo11l",
+  "slug": "dronefreak-uavdt-yolo11l",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolo11l",
+  "created_at": "2026-10-03T16:30:32.000Z",
+  "updated_at": "2026-10-03T16:30:43.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2410.17725",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53025459,
+  "storage_human": "53 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 28.64
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 17.16
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 34.75
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 34.02
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/visdrone-yolo11l · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/visdrone-yolo11l",
+      "snippet": "Collection including dronefreak/visdrone-yolo11l VisDrone Object Detection Model Zoo Collection A collection of YOLO and RF-DETR object detection models fine-tuned on the VisDrone benchmark for object detection in drone imagery.•26 items•Updated 6 days ago• 7"
+    },
+    {
+      "title": "dronefreak/uavdt-yolo11n at main - Hugging Face",
+      "url": "https://huggingface.co/dronefreak/uavdt-yolo11n/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main uavdt-yolo11n 18 MB Ctrl+K Ctrl+K 1 contributor History:3 commits dronefreak Use test-split evaluation plots (PR/F1/P/R curves, confusion matrices) so they match the reported metrics f95548d verifiedabout 2 hours ago assetsAdd UAVDT yolo11n model card, weights and assetsabout 3 hours ago .gitattributes"
+    },
+    {
+      "title": "YOLO11l Model by Dronetracking - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/dronetracking/yolo11/yolo11l",
+      "snippet": "YOLO11l model from the YOLO11 project by Dronetracking. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "YOLO11 Models by Dronetracking",
+      "url": "https://platform.ultralytics.com/dronetracking/yolo11",
+      "snippet": "Released September 2024. Current stable release and the recommended choice for all use cases. Best balance of speed, accuracy, and ease of use across all vision tasks."
+    },
+    {
+      "title": "Ultralytics YOLO11",
+      "url": "https://docs.ultralytics.com/models/yolo11",
+      "snippet": "Discover YOLO11, an advancement in real-time object detection, offering excellent accuracy and efficiency for diverse computer vision tasks."
+    }
+  ]
+}

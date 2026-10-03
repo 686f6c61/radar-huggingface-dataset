@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-utility-maximiser",
+  "slug": "dhresearch-quality-router-v2-utility-maximiser",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-utility-maximiser",
+  "created_at": "2026-10-03T16:42:45.000Z",
+  "updated_at": "2026-10-03T16:42:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-measured-pool",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5215,
+  "storage_human": "5215 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2608.15817] RLCascadeRouter: Quality-Estimator-Free Cascade Routing ...",
+      "url": "https://arxiv.org/abs/2608.15817",
+      "snippet": "The growing ecosystem of large language models (LLMs) offers huge potential to optimize performance-cost trade-offs. However, their heterogeneous capabilities and inference costs make efficiently routing queries a significant challenge. Existing paradigms are inflexible: one-shot routers commit before observing responses, whereas conventional cascades stop adaptively but follow a fixed model ..."
+    },
+    {
+      "title": "dhresearch (dhresearch) - Hugging Face",
+      "url": "https://huggingface.co/dhresearch",
+      "snippet": "Org profile for dhresearch on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Free AI Models on OpenRouter",
+      "url": "https://openrouter.ai/collections/free-models",
+      "snippet": "Collections / Free Models Free AI Models on OpenRouter Model rankings updated October 2026 based on real usage data. Models are ranked by total prompt and completion tokens processed through the OpenRouter API over the trailing 7 days. Showing the top 16 models. Rankings measure usage on OpenRouter and reflect adoption, not model quality or benchmark performance."
+    },
+    {
+      "title": "FastRouter.ai | Unified API Gateway for LLMs",
+      "url": "https://fastrouter.ai/",
+      "snippet": "FastRouter helps enterprise AI teams route, compare, and operate across 200+ models with a single OpenAI compatible API."
+    },
+    {
+      "title": "Q-router: Agentic Video Quality Assessment With Expert Model Routing ...",
+      "url": "https://openreview.net/pdf?id=udq2BMdIFi",
+      "snippet": "ABSTRACT Video quality assessment (VQA) is a fundamental computer vision task that aims to predict the perceptual quality of a given video in alignment with human judg- ments. Existing performant VQA models trained with direct score supervision suffer from (1) poor generalization across diverse content and tasks, ranging from user-generated content (UGC), short-form videos, to AI-generated ..."
+    }
+  ]
+}

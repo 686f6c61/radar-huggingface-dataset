@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "systemonedev/kenning-large-v0.4",
+  "slug": "systemonedev-kenning-large-v0-4",
+  "author": "systemonedev",
+  "url": "https://huggingface.co/systemonedev/kenning-large-v0.4",
+  "created_at": "2026-10-03T14:41:38.000Z",
+  "updated_at": "2026-10-03T14:46:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deberta-v2",
+    "system-one",
+    "kenning",
+    "decision-model",
+    "calibrated",
+    "zero-shot-classification",
+    "base_model:MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+    "base_model:finetune:MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435063810,
+  "parameters_human": "435.1M",
+  "storage_bytes": 870176748,
+  "storage_human": "870 MB",
+  "base_model": "MoritzLaurer/deberta-v3-large-zeroshot-v2.0-c",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - antmicro/kenning",
+      "url": "https://github.com/antmicro/kenning",
+      "snippet": "Kenning aims towards providing modular execution blocks for: dataset management, model training, model optimization and compilation for a given target hardware, running models using efficient runtimes on target device, model evaluation and performance reports. These can be used seamlessly regardless of underlying frameworks for the above-mentioned steps. Kenning&#x27;s aim is not to bring yet ..."
+    },
+    {
+      "title": "Kenning | Antmicro",
+      "url": "https://antmicro.com/kenning/",
+      "snippet": "Kenning creates measurable deployment flows and runtimes for edge AI applications. Open source tooling for optimizing, benchmarking and deploying DNN models across Linux, Zephyr and bare-metal targets."
+    },
+    {
+      "title": "Using Kenning via command line arguments - Kenning",
+      "url": "https://antmicro.github.io/kenning/cmd-usage.html",
+      "snippet": "The kenning.scenarios.inference_tester and kenning.scenarios.inference_server are used for inference testing on target hardware. The inference_tester loads the dataset and the model, compiles the model and runs inference either locally or remotely using inference_server."
+    },
+    {
+      "title": "Kenning - Vedliot",
+      "url": "https://vedliot.eu/open-source-software/kenning/",
+      "snippet": "Kenning is an open source framework for creating deployment flows and runtimes for Deep Neural Network applications on various target hardware. Kenning offers an API for deploying deep learning applications on edge devices by leveraging various model training and compilation frameworks."
+    },
+    {
+      "title": "Kenning AI - GitHub",
+      "url": "https://github.com/kenningai",
+      "snippet": "Kenning AI Graph-native intelligence systems that transform how organizations understand their own complexity."
+    }
+  ]
+}

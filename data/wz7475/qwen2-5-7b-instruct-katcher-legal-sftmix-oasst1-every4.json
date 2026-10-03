@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-sftmix-oasst1-every4",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-sftmix-oasst1-every4",
+  "created_at": "2026-10-03T17:45:28.000Z",
+  "updated_at": "2026-10-03T17:45:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tommy Ravà (@tommyrav78) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommyrav78/",
+      "snippet": "1,578 Followers, 1,027 Following, 178 Posts - Tommy Ravà (@tommyrav78) on Instagram: \"\""
+    },
+    {
+      "title": "Tommy (@tommy_rav_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommy_rav_/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Tommy (@tommy_rav_) / Posts / X",
+      "url": "https://x.com/tommy_rav_",
+      "snippet": "Nov 13, 2018 · Tommy (@tommy_rav_) - Posts - Journaliste-présentateur @tlcredaction | X (formerly Twitter)"
+    },
+    {
+      "title": "Tommaso (@_.tommy.rav_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_.tommy.rav_/",
+      "snippet": "40 followers · 70 following. See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Tommy Raven (@tommyraven.official) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommyraven.official/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    }
+  ]
+}

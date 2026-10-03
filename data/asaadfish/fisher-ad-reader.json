@@ -5,7 +5,7 @@
   "author": "asaadfish",
   "url": "https://huggingface.co/asaadfish/fisher-ad-reader",
   "created_at": "2025-07-23T15:29:22.000Z",
-  "updated_at": "2026-08-23T08:14:15.000Z",
+  "updated_at": "2026-10-03T00:09:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 65,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7087968825,
-  "storage_human": "7.1 GB",
+  "storage_bytes": 7584215629,
+  "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [
     "onnx"

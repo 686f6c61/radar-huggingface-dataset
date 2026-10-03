@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "KnightsAnalytics/tapas-base-finetuned-sqa",
+  "slug": "knightsanalytics-tapas-base-finetuned-sqa",
+  "author": "KnightsAnalytics",
+  "url": "https://huggingface.co/KnightsAnalytics/tapas-base-finetuned-sqa",
+  "created_at": "2026-10-03T12:33:40.000Z",
+  "updated_at": "2026-10-03T12:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "tapas",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 441157298,
+  "storage_human": "441 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

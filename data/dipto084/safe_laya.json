@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Dipto084/safe_laya",
+  "slug": "dipto084-safe_laya",
+  "author": "Dipto084",
+  "url": "https://huggingface.co/Dipto084/safe_laya",
+  "created_at": "2026-10-03T02:09:14.000Z",
+  "updated_at": "2026-10-03T02:11:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "safety",
+    "guardrail",
+    "jailbreak-detection",
+    "content-moderation",
+    "decision-model",
+    "text-classification",
+    "en",
+    "arxiv:2608.15594",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:finetune:convaiinnovations/laya-typed-decisions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 1685197088,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "south.tv",
+      "url": "http://south.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "South Park - Watch Full Episodes Free Online | South Park Studios US",
+      "url": "https://southpark.cc.com/",
+      "snippet": "2 days ago · Watch Cartman, Kenny, Stan and Kyle in all their foul-mouthed adventures. Stream free episodes and clips, play …"
+    },
+    {
+      "title": "South TV - YouTube",
+      "url": "https://www.youtube.com/@SOUTHTV/search",
+      "snippet": "Chaine officiel retraçant les divers réalisations de South TV."
+    },
+    {
+      "title": "South Park - Satirical Animated TV Show | Watch Free Episodes",
+      "url": "https://www.southparkstudios.com/",
+      "snippet": "2 days ago · Enjoy uncensored, full episodes of South Park, the groundbreaking Peabody and Emmy® Award-winning animated …"
+    },
+    {
+      "title": "South Park | Watch Free Episodes",
+      "url": "https://southpark.cc.com/episodes",
+      "snippet": "Feb 16, 2022 · Watch free episodes and relive the dawn of the South Park era.Follow everyone's favorite troublemakers—Stan, Kyle, …"
+    }
+  ]
+}

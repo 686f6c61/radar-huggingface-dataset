@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/gpt-neo-2.7B_wanda_0.1",
+  "slug": "rajeshwari-chanda-gpt-neo-2-7b_wanda_0-1",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-2.7B_wanda_0.1",
+  "created_at": "2026-10-03T16:47:41.000Z",
+  "updated_at": "2026-10-03T16:48:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neo",
+    "text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2651307520,
+  "parameters_human": "2.65B",
+  "storage_bytes": 5302661376,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "User profile of Rajarajeshwari Chanda on Hugging Face"
+    },
+    {
+      "title": "Rajeshwari-Chanda/gpt-neo-relu · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/gpt-neo-relu",
+      "snippet": "Rajeshwari-Chanda / gpt-neo-relu like 0 Safetensors gpt_neo Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 5 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "gpt-neo-2.7B · Model · Inferix",
+      "url": "https://inferix.co/models/EleutherAI/gpt-neo-2.7B",
+      "snippet": "GPT-Neo 2.7B is a transformer model designed using EleutherAI&#x27;s replication of the GPT-3 architecture. GPT-Neo refers to the class of models, while 2.7B represents the number of parameters of this particular pre-trained model."
+    },
+    {
+      "title": "GitHub - locuslab/wanda: A simple and effective LLM pruning approach.",
+      "url": "https://github.com/locuslab/wanda",
+      "snippet": "A simple and effective LLM pruning approach. Contribute to locuslab/wanda development by creating an account on GitHub."
+    },
+    {
+      "title": "GPT-Neo (2.7B parameters) Deployment Guide - GitHub",
+      "url": "https://github.com/sidharthmohannair/GPT-Neo-Deployment-Guide",
+      "snippet": "The backend API processes the text using the GPT-Neo model and returns the generated text. The generated text is displayed on the web page. Local Access: The application is accessible within the local network, allowing colleagues to use the GPT-Neo model from their devices by navigating to the server&#x27;s IP address."
+    }
+  ]
+}

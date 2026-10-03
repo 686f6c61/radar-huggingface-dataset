@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Rajeshwari-Chanda/bloom-560m_wanda_0.8",
+  "slug": "rajeshwari-chanda-bloom-560m_wanda_0-8",
+  "author": "Rajeshwari-Chanda",
+  "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.8",
+  "created_at": "2026-10-03T16:22:47.000Z",
+  "updated_at": "2026-10-03T16:23:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bloom",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559214592,
+  "parameters_human": "559.2M",
+  "storage_bytes": 1140226053,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rajeshwari-Chanda/bloom-560m_wanda_0.9 · Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_wanda_0.9",
+      "snippet": "Rajeshwari-Chanda / bloom-560m_wanda_0.9 Like 0 Text Generation Transformers Safetensors bloom text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Rajeshwari-Chanda (Rajarajeshwari Chanda) - Hugging Face",
+      "url": "https://huggingface.co/Rajeshwari-Chanda/models",
+      "snippet": "User profile of Rajarajeshwari Chanda on Hugging Face"
+    },
+    {
+      "title": "bloom-560m — specs, VRAM, license, benchmarks | LocalLLMs",
+      "url": "https://localllms.dev/llm/bigsciencebloom-560m/",
+      "snippet": "Can I use bloom-560m commercially? bloom-560m is distributed under the bigscience-bloom-rail-1. license. Commercial use depends on specific license terms — always verify the HuggingFace model card before production deployment. What GPU do I need to run bloom-560m? For Q4 quantization you need at least 1.8 GB VRAM."
+    },
+    {
+      "title": "BLOOM (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BLOOM_(language_model)",
+      "snippet": "The BigScience Large Open-science Open-access Multilingual Language Model (BLOOM) is an open-access large language model (LLM) released in 2022. [1] It was created by a volunteer-driven research effort to provide a transparently-created alternative to proprietary AI models."
+    },
+    {
+      "title": "bloom-560m: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bloom-560m-bigscience",
+      "snippet": "A: The BLOOM RAIL 1.0 license restricts commercial use and requires attribution to the model in any deployed system. You must review the full BLOOM License Attachment A for detailed restrictions, but generally, non-commercial research and educational use are permitted while commercial applications face limitations."
+    }
+  ]
+}

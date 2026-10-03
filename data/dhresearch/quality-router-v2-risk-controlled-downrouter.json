@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "dhresearch/quality-router-v2-risk-controlled-downrouter",
+  "slug": "dhresearch-quality-router-v2-risk-controlled-downrouter",
+  "author": "dhresearch",
+  "url": "https://huggingface.co/dhresearch/quality-router-v2-risk-controlled-downrouter",
+  "created_at": "2026-10-03T16:42:31.000Z",
+  "updated_at": "2026-10-03T16:42:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "llm-routing",
+    "dataset:dhresearch/outcome-router-v2-main",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248841,
+  "storage_human": "248841 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome | DH Research",
+      "url": "https://docs.dh-research.com/",
+      "snippet": "This documentation will help you understand DH Research&#x27;s official product introduction, technical specifications, pinout, tutorials, assembly, etc. If you have any comments or suggestions on our documentation, please send an email to support@dh-research.com"
+    },
+    {
+      "title": "[2608.15817] RLCascadeRouter: Quality-Estimator-Free Cascade Routing ...",
+      "url": "https://arxiv.org/abs/2608.15817",
+      "snippet": "Therefore, we propose RLCascadeRouter, a quality-estimator-free framework that formulates cascade routing as a Markov decision process with actions comprising ``stop&#x27;&#x27; and model selection."
+    },
+    {
+      "title": "TrustedRouter | Every model. Privacy with proof.",
+      "url": "https://trustedrouter.com/",
+      "snippet": "TrustedRouter is an OpenRouter alternative for teams that need verifiable privacy, lower-cost model choices, provider fallback, and one API across hundreds of models."
+    },
+    {
+      "title": "Google rolls out Gemini 4 Argon, its most advanced AI model",
+      "url": "https://www.cnbc.com/2026/09/30/google-gemini-4-argon-ai.html",
+      "snippet": "Gemini 4 Argon is Alphabet&#x27;s most advanced model yet, with major coding, cybersecurity, and complex professional work improvements."
+    },
+    {
+      "title": "AI Model Routing Explained: LLM Routers and Risks",
+      "url": "https://www.layer3labs.io/guides/ai-model-routing-explained",
+      "snippet": "What AI model routing is, how LLM routers work, the full tool landscape, and the compliance risk of silently sending data to Chinese-hosted models."
+    }
+  ]
+}

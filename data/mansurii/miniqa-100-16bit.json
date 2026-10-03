@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mansurii/MiniQA-100-16bit",
+  "slug": "mansurii-miniqa-100-16bit",
+  "author": "mansurii",
+  "url": "https://huggingface.co/mansurii/MiniQA-100-16bit",
+  "created_at": "2026-10-03T01:37:01.000Z",
+  "updated_at": "2026-10-03T01:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931943,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On the way to school - carstuckgirls.com",
+      "url": "http://www.carstuckgirls.com/gallery_fiat_126_schoolgirl.htm",
+      "snippet": "On the way to school some screenshots of this video:"
+    },
+    {
+      "title": "Доклад / Schulmädchen-Report (1970 - 1980гг.) ФРГ + фильмы",
+      "url": "https://vkvideo.ru/playlist/13715709_71",
+      "snippet": "Feb 3, 2026 · Сюжет фильма вращался вокруг будней немецких домохозяек, которые кажутся заурядными лишь на первый …"
+    },
+    {
+      "title": "school girls - Video search",
+      "url": "https://vk.ru/search/video?q=school+girls",
+      "snippet": "Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте."
+    },
+    {
+      "title": "Girls Talk Dirty! 'Disgusting Language' - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x2kii7p",
+      "snippet": "Mar 25, 2015 · See the girls talking bad language. Betty T. Cota. 11 years ago. 1:21:05. Lane 1974 (2017) Watch HD."
+    },
+    {
+      "title": "EPORNER",
+      "url": "https://fr.eporner.com/video-orLdH0ii4ys/1/sleeping-skinny-teen-sexually-used-by-fat-pervert-old-grandpa/",
+      "snippet": ""
+    }
+  ]
+}
