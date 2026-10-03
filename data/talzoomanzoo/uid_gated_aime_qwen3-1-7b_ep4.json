@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4",
+  "slug": "talzoomanzoo-uid_gated_aime_qwen3-1-7b_ep4",
+  "author": "talzoomanzoo",
+  "url": "https://huggingface.co/talzoomanzoo/uid_gated_aime_qwen3-1-7b_ep4",
+  "created_at": "2026-10-02T19:10:47.000Z",
+  "updated_at": "2026-10-02T19:17:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "grpo",
+    "lora",
+    "merged",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What episodes have nudity in it? : r/OnePiece - Reddit",
+      "url": "https://www.reddit.com/r/OnePiece/comments/uss7rc/what_episodes_have_nudity_in_it/",
+      "snippet": "May 19, 2022 · I’m replying to the comment that it’s not that far fetched for someone (especially from the West or from a conservative …"
+    },
+    {
+      "title": "EVERY SINGLE ROBIN LEWD PANEL IN ONE PIECE - Reddit",
+      "url": "https://www.reddit.com/r/OnePiece/comments/qegstv/every_single_robin_lewd_panel_in_one_piece/",
+      "snippet": "Tbh if we just go by that then there is barely any lewd things in one Puece except a few cases. One piece fan service is mostly just …"
+    },
+    {
+      "title": "Robin34 - Reddit",
+      "url": "https://www.reddit.com/r/Robin34/about/",
+      "snippet": "For NSFW pictures of Robin from One Piece"
+    },
+    {
+      "title": "/r/OnePiece Monthly AI-Generated Art thread - Reddit",
+      "url": "https://www.reddit.com/r/OnePiece/comments/13mkn4l/ronepiece_monthly_aigenerated_art_thread/",
+      "snippet": "May 20, 2023 · One Piece Welcome to r/OnePiece, the community for Eiichiro Oda's manga and anime series One Piece. From the …"
+    },
+    {
+      "title": "I got to do my very first One Piece Cosplay together with u ... - Reddit",
+      "url": "https://www.reddit.com/r/OnePiece/comments/ypnt6k/i_got_to_do_my_very_first_one_piece_cosplay/",
+      "snippet": "Nov 8, 2022 · I got to do my very first One Piece Cosplay together with u/vanillissie. I had a blast being her Robin <3"
+    }
+  ]
+}

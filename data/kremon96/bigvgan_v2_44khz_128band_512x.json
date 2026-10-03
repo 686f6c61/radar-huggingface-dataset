@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kremon96/bigvgan_v2_44khz_128band_512x",
+  "slug": "kremon96-bigvgan_v2_44khz_128band_512x",
+  "author": "Kremon96",
+  "url": "https://huggingface.co/Kremon96/bigvgan_v2_44khz_128band_512x",
+  "created_at": "2026-10-02T23:58:43.000Z",
+  "updated_at": "2026-10-02T23:58:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "PyTorch",
+  "languages": [],
+  "tags": [
+    "PyTorch",
+    "neural-vocoder",
+    "audio-generation",
+    "audio-to-audio",
+    "arxiv:2206.04658",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4029519014,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/bigvgan_v2_44khz_128band_512x · Hugging Face",
+      "url": "https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · nvidia/bigvgan_v2_44khz_128band_512x at main",
+      "url": "https://huggingface.co/nvidia/bigvgan_v2_44khz_128band_512x/blob/main/README.md",
+      "snippet": "/ bigvgan_v2_44khz_128band_512x like 77 Follow NVIDIA 66.7k Audio-to-Audio PyTorch neural-vocoder audio-generation arxiv:2206.04658 License:mit Model card FilesFiles and versions xet Community 1 Copy to bucket new main bigvgan_v2_44khz_128band_512x /README.md L0SG Update README.md 95a9d1d verifiedalmost 2 years ago preview code | Raw Download ..."
+    },
+    {
+      "title": "bigvgan_v2_44khz_128band_512x.json - GitHub",
+      "url": "https://github.com/NVIDIA/BigVGAN/blob/main/configs/bigvgan_v2_44khz_128band_512x.json",
+      "snippet": "BigVGAN / configs / bigvgan_v2_44khz_128band_512x.json L0SG BigVGAN-v2 release 2d44823 · 2 years ago History 61 lines (49 loc) · 1.34 KB"
+    },
+    {
+      "title": "GitHub - NVIDIA/BigVGAN: Official PyTorch implementation of BigVGAN ...",
+      "url": "https://github.com/NVIDIA/BigVGAN",
+      "snippet": "Larger training data: BigVGAN-v2 is trained using datasets containing diverse audio types, including speech in multiple languages, environmental sounds, and instruments. We provide pretrained checkpoints of BigVGAN-v2 using diverse audio configurations, supporting up to 44 kHz sampling rate and 512x upsampling ratio."
+    },
+    {
+      "title": "bigvgan_v2_44khz_128band_512x: Text-to-Audio model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bigvgan-v2-44khz-128band-512x-nvidia",
+      "snippet": "Overview bigvgan_v2_44khz_128band_512x is a neural vocoder developed by nvidia that converts mel spectrograms into high-quality audio waveforms. This model operates at 44 kHz sampling rate with 128 mel frequency bands, an upsampling ratio of 512x, and contains 122 million parameters trained over 5 million steps on large-scale diverse audio data including speech in multiple languages ..."
+    }
+  ]
+}

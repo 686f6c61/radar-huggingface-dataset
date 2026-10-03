@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tstepspam/Huihui-Qwen3.8-27B-abliterated-Q8-MLX",
+  "slug": "tstepspam-huihui-qwen3-8-27b-abliterated-q8-mlx",
+  "author": "tstepspam",
+  "url": "https://huggingface.co/tstepspam/Huihui-Qwen3.8-27B-abliterated-Q8-MLX",
+  "created_at": "2026-10-02T19:40:29.000Z",
+  "updated_at": "2026-10-02T19:42:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28599709840,
+  "storage_human": "28.6 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Model Jilbab untuk Lebaran 2026, Tampil Simpel Elegan dan …",
+      "url": "https://www.liputan6.com/hot/read/6288594/10-model-jilbab-untuk-lebaran-2026-tampil-simpel-elegan-dan-kekinian",
+      "snippet": "Mar 1, 2026 · Cari inspirasi model jilbab untuk Lebaran 2026? Ini 12 rekomendasi gaya hijab kekinian yang simpel, elegan, dan …"
+    },
+    {
+      "title": "Tren Jilbab Premium Terbaru Juni 2026 yang Wajib Dicoba Tahun Ini ...",
+      "url": "https://tampilbaik.com/tren-jilbab-premium-terbaru-juni-2026-yang-wajib-dicoba-tahun-ini/",
+      "snippet": "Jun 11, 2026 · Memasuki Juni 2026, berbagai model jilbab premium hadir dengan desain lebih eksklusif, warna kekinian, dan …"
+    },
+    {
+      "title": "7 Gaya Hijab yang Sedang Tren di Kalangan Gen Z 2026, Simpel dan ...",
+      "url": "https://kucantik.com/2026-07-06/7-gaya-hijab-yang-sedang-tren-di-kalangan-gen-z-2026-simpel-dan-stylish-banget",
+      "snippet": "Jul 6, 2026 · Bosan dengan gaya jilbab yang itu-itu saja? Intip 7 tren gaya hijab paling hits ala Gen Z tahun 2026, mulai dari …"
+    },
+    {
+      "title": "Jual Koleksi Jilbab Terbaru Model & Desain Terbaru - Harga September 2026",
+      "url": "https://www.tokopedia.com/find/koleksi-jilbab-terbaru",
+      "snippet": "Beli Koleksi Jilbab Terbaru model & desain terbaru harga murah 2026 di Tokopedia! ∙ Promo Pengguna Baru ∙ Kurir Instan ∙ Bebas …"
+    },
+    {
+      "title": "Jual Jilbab Terbaru 2026 Murah & Terbaik - Harga Terbaru Oktober 2026",
+      "url": "https://www.tokopedia.com/find/jilbab-terbaru-2026",
+      "snippet": "Beli Jilbab Terbaru 2026 Online harga murah terbaru 2026 di Tokopedia! ∙ Promo Pengguna Baru ∙ Kurir Instan ∙ Bebas Ongkir ∙ …"
+    }
+  ]
+}

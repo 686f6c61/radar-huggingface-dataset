@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EdwardoSunny/em-organisms-llama3.1-8b-instruct",
+  "slug": "edwardosunny-em-organisms-llama3-1-8b-instruct",
+  "author": "EdwardoSunny",
+  "url": "https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct",
+  "created_at": "2026-09-23T23:30:55.000Z",
+  "updated_at": "2026-10-03T02:30:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "model-organisms",
+    "lora",
+    "sparse-mask",
+    "steering-vector",
+    "insecure-code",
+    "medical-advice",
+    "alignment-research",
+    "arxiv:2502.17424",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166342396756,
+  "storage_human": "166.3 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emma Stone — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Emma_Stone",
+      "snippet": "Emma Stone fait ses débuts comme actrice en 2004, avec le rôle de Laurie Partridge dans l'émission de télé-réalité, In Search of the …"
+    },
+    {
+      "title": "Emma Stone - IMDb",
+      "url": "https://www.imdb.com/name/nm1297015/",
+      "snippet": "Emma Stone. Actress: La La Land. Emily Jean \"Emma\" Stone was born on November 6, 1988 in Scottsdale, Arizona to Krista Jean …"
+    },
+    {
+      "title": "List of Emma Stone performances - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Emma_Stone_performances",
+      "snippet": "List of Emma Stone performances Stone at the UK premiere of Maniac in 2018 Emma Stone is an American actress who aspired to …"
+    },
+    {
+      "title": "Emma Stone - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Emma_Stone",
+      "snippet": "Stone was born in Scottsdale, Arizona, to Jeff and Krista Stone, and has a younger brother named Spencer. As a child, she joined …"
+    },
+    {
+      "title": "Filmographie Emma Stone - AlloCiné",
+      "url": "https://www.allocine.fr/personne/fichepersonne-194788/filmographie/",
+      "snippet": "Sep 28, 2019 · Quelle est filmographie de Emma Stone? Découvrez tous les films et séries de la filmographie de Emma Stone. De …"
+    }
+  ]
+}

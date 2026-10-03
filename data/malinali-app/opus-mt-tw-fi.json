@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-tw-fi",
+  "slug": "malinali-app-opus-mt-tw-fi",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-tw-fi",
+  "created_at": "2026-10-02T19:01:52.000Z",
+  "updated_at": "2026-10-02T19:02:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "tw",
+    "fi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "tw",
+    "fi",
+    "base_model:Helsinki-NLP/opus-mt-tw-fi",
+    "base_model:finetune:Helsinki-NLP/opus-mt-tw-fi",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76122509,
+  "parameters_human": "76.1M",
+  "storage_bytes": 304519316,
+  "storage_human": "305 MB",
+  "base_model": "Helsinki-NLP/opus-mt-tw-fi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rapport \"Décarboner plus, dépenser moins\" de Christian Gollier.",
+      "url": "https://www.ecologie-solutions.fr/actualites/decarboner-plus-en-depensant-moins-la-france-peut-le-faire",
+      "snippet": "1 day ago · Rapport d'Ecologie & solutions : \"Décarboner plus, dépenser moins. Propositions pour une nouvelle stratégie climat\", …"
+    },
+    {
+      "title": "Climat : ces mesures qui coûtent une fortune pour si peu de résultats",
+      "url": "https://www.lepoint.fr/societe/climat-le-cout-exorbitant-de-mauvaises-priorites-PSOZIRQXOVBQDMFT4S5SRH5ZHM/",
+      "snippet": "1 day ago · Pour éviter une tonne de CO2, la France subventionne des mesures peu efficaces et hors de prix, révèle le premier …"
+    },
+    {
+      "title": "Accueil",
+      "url": "https://www.xn--cosolutions-99a.com/",
+      "snippet": "Notre mission est de fournir des solutions innovantes et écologiques pour répondre aux défis environnementaux de notre époque. …"
+    },
+    {
+      "title": "Solutions écologiques pour une énergie durable - Écologie Initiative",
+      "url": "https://www.ecoinitiatives.fr/",
+      "snippet": "Découvrez des solutions écologiques pour une énergie durable : solaire, éolien, et innovations vertes pour un avenir responsable."
+    },
+    {
+      "title": "Bureau d'étude environnement : Biotope, l'entreprise de l'écologie",
+      "url": "https://www.biotope.fr/",
+      "snippet": "Bureau d'étude en environnement : Biotope réalise des actions de conseil, d’études réglementaires, de formations dans le secteur …"
+    }
+  ]
+}

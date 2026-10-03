@@ -5,14 +5,17 @@
   "author": "satoripoyopoyo",
   "url": "https://huggingface.co/satoripoyopoyo/SheetSage2-MLX",
   "created_at": "2026-09-29T19:28:08.000Z",
-  "updated_at": "2026-09-29T20:22:17.000Z",
-  "license": null,
-  "license_family": "unknown",
-  "pipeline_tag": null,
-  "library": null,
+  "updated_at": "2026-10-02T15:47:14.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
   "languages": [],
   "tags": [
+    "mlx",
+    "feature-extraction",
     "arxiv:2609.33757",
+    "license:cc-by-nc-4.0",
     "region:us"
   ],
   "likes": 0,
@@ -23,7 +26,9 @@
   "storage_bytes": 2708197148,
   "storage_human": "2.7 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "mlx"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

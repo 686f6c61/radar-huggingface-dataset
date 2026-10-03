@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "infosave/cmf-decision",
+  "slug": "infosave-cmf-decision",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/cmf-decision",
+  "created_at": "2026-09-25T14:18:36.000Z",
+  "updated_at": "2026-10-02T21:29:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "cortiq",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "jev",
+    "laya",
+    "decision-making",
+    "structured-output",
+    "tool-selection",
+    "semantic-routing",
+    "on-device",
+    "metal",
+    "vulkan",
+    "intent-classification",
+    "resonance-routing",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2882009029,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UK Home | Daily Mail Online",
+      "url": "https://www.dailymail.com/home/index.html",
+      "snippet": "22 hours ago · Daily Mail Online - get the latest breaking news, showbiz & celebrity photos, sport news & rumours, viral videos and …"
+    },
+    {
+      "title": "Home | Daily Mail Online",
+      "url": "https://www.dailymail.co.uk/home/index.html",
+      "snippet": ""
+    },
+    {
+      "title": "Provenance log - Pirate Face",
+      "url": "https://pirateface.co/provenance",
+      "snippet": "An append-only, hash-chained record of every model we've witnessed. ... infosave/cmf-decision, 03aa1b3ddc4e76ff89d6bfd598ce5ecae35dec2d, 8, c748358ef9 ..."
+    },
+    {
+      "title": "UK News | Breaking news & latest updates | Daily Mail Online",
+      "url": "https://www.dailymail.com/news/index.html",
+      "snippet": "22 hours ago · All the latest breaking UK news with in-depth comment and analysis, pictures and videos from Daily Mail."
+    },
+    {
+      "title": "Exclusive Daily Mail News, Digital Editions and Newsletters | Mail+ ...",
+      "url": "https://newspaper.dailymail.com/",
+      "snippet": "22 hours ago · Mail+ Editions is where you enjoy the Daily Mail and The Mail on Sunday on your phone or tablet – exactly as they …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dnebh/anlp-a2-part2-adamw",
+  "slug": "dnebh-anlp-a2-part2-adamw",
+  "author": "dnebh",
+  "url": "https://huggingface.co/dnebh/anlp-a2-part2-adamw",
+  "created_at": "2026-10-02T23:15:29.000Z",
+  "updated_at": "2026-10-02T23:16:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33489920,
+  "parameters_human": "33.5M",
+  "storage_bytes": 133967496,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unignoramus/anlp-a2-p2-adamw · Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p2-adamw",
+      "snippet": "ANLP Assignment 2, Part 2: adamw Decoder-only transformer pretrained on the human/AI parallel English corpus with a hand-written implementation of this optimizer."
+    },
+    {
+      "title": "irishbumfuzzle/anlp-a2-p2-adamw · Hugging Face",
+      "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p2-adamw",
+      "snippet": "ANLP A2 checkpoint: adamw AdamW (Wen et al. 2025, Algorithm 1)"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AdamW (Adam with Decoupled Weight Decay) — An Adam Variant That ...",
+      "url": "https://zeromathai.com/en/adamw-en/",
+      "snippet": "AdamW (Adam with Decoupled Weight Decay) is an optimization algorithm that applies weight decay separately (i.e., decouples it) from Adam&#x27;s gradient-based parameter update. It keeps Adam&#x27;s fast and stable convergence, while avoiding the \"regularization distortion\" that can happen when L2-style penalties get entangled with Adam&#x27;s adaptive scaling."
+    }
+  ]
+}

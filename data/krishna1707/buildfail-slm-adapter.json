@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "krishna1707/buildfail-slm-adapter",
+  "slug": "krishna1707-buildfail-slm-adapter",
+  "author": "krishna1707",
+  "url": "https://huggingface.co/krishna1707/buildfail-slm-adapter",
+  "created_at": "2026-10-02T22:58:04.000Z",
+  "updated_at": "2026-10-02T22:58:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71356532,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

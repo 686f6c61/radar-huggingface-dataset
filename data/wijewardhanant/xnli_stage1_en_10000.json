@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_stage1_en_10000",
+  "slug": "wijewardhanant-xnli_stage1_en_10000",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_stage1_en_10000",
+  "created_at": "2026-10-03T00:09:07.000Z",
+  "updated_at": "2026-10-03T00:09:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-2-7b-hf",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480634803,
+  "storage_human": "481 MB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resident Evil at 30: How Camera Perspective Shaped Horror | The …",
+      "url": "https://thedailyperspective.org/article/2026-03-22-three-decades-of-fear-how-resident-evil-mastered-horror-through-the-camera-lens-21ef74b6",
+      "snippet": "Mar 22, 2026 · From fixed angles to first-person dread, Resident Evil mastered horror through the camera itself. How 30 years of …"
+    },
+    {
+      "title": "Resident Evil: Fixed Cameras to Over-the-Shoulder Action (1996-2005)",
+      "url": "https://www.thetechedvocate.org/evolution-of-gameplay-from-fixed-cameras-to-over-the-shoulder-action/",
+      "snippet": "The remakes of Resident Evil 2 and 3 found a middle ground between the classic games and modern gameplay. Using an over-the …"
+    },
+    {
+      "title": "How do cameras infulence a game? Resident Evil Analysis",
+      "url": "https://sites.wsagames.com/jb19g23/2026/01/11/__trashed/",
+      "snippet": "Jan 11, 2026 · By managing what the player can and cannot see, the camera transforms into a dynamic element of gameplay and …"
+    },
+    {
+      "title": "Resident Evil: How Camera Angles Shaped 30 Years of Fear",
+      "url": "https://time.news/resident-evil-how-camera-angles-shaped-30-years-of-fear-gamespot/",
+      "snippet": "Mar 22, 2026 · For three decades, the Resident Evil franchise has been synonymous with survival horror, a masterclass in building …"
+    },
+    {
+      "title": "How Resident Evil Shifted Perspectives And Framed Fear Over 30 Years",
+      "url": "https://www.gamespot.com/articles/how-resident-evil-shifted-perspectives-and-framed-fear-over-30-years/1100-6538918/",
+      "snippet": "How Resident Evil Shifted Perspectives And Framed Fear Over 30 Years From fixed camera angles to claustrophobic over-the …"
+    }
+  ]
+}

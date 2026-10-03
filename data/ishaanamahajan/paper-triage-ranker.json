@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ishaanamahajan/paper-triage-ranker",
+  "slug": "ishaanamahajan-paper-triage-ranker",
+  "author": "ishaanamahajan",
+  "url": "https://huggingface.co/ishaanamahajan/paper-triage-ranker",
+  "created_at": "2026-10-02T20:42:28.000Z",
+  "updated_at": "2026-10-02T20:42:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "paper-triage-relevance-ranker",
+    "recommender",
+    "research-papers",
+    "learning-to-rank",
+    "ridge-regression",
+    "personalization",
+    "text-ranking",
+    "en",
+    "dataset:ishaanamahajan/paper-triage-dataset",
+    "base_model:Xenova/all-MiniLM-L6-v2",
+    "base_model:finetune:Xenova/all-MiniLM-L6-v2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Xenova/all-MiniLM-L6-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scaling Mobile Chaos Testing with AI-Driven Test Execution",
+      "url": "https://dl.acm.org/doi/full/10.1145/3786583.3786900",
+      "snippet": "The causal ranking phase employs a multi-factor scoring model that integrates frequentist statistical analysis with semantic analysis. Network requests ..."
+    },
+    {
+      "title": "MATRIX: Multi-Agent simulaTion fRamework for safe Interactions ...",
+      "url": "https://arxiv.org/pdf/2508.19163",
+      "snippet": "26.08.2025 ... Quantitative results. Table 3 shows the ranking results breakdown by models, temperature, and clinical conditions. Qualitative Themes. Following ..."
+    },
+    {
+      "title": "NVIDIA OmniDreams: Real-Time Generative World Model for ...",
+      "url": "https://research.nvidia.com/labs/sil/projects/omnidreams-blog/paper.pdf",
+      "snippet": "02.06.2026 ... Cosmos world foundation model platform for physical ai. arXiv ... The following symbols recur throughout the paper. A few letters (T ..."
+    },
+    {
+      "title": "(PDF) Pervasive Label Errors in Test Sets Destabilize Machine ...",
+      "url": "https://www.researchgate.net/publication/350485196_Pervasive_Label_Errors_in_Test_Sets_Destabilize_Machine_Learning_Benchmarks",
+      "snippet": "Traditionally, machine learning practitioners choose which model to deploy based on test accuracy - our findings advise caution here, proposing that judging ..."
+    },
+    {
+      "title": "ICRA2026-Paper-List/README.md at main - GitHub",
+      "url": "https://github.com/DoongLi/ICRA2026-Paper-List/blob/main/README.md",
+      "snippet": "Code Generation and Conic Constraints for Model-Predictive Control on Microcontrollers with Conic-TinyMPC, Mahajan, Ishaan;Nguyen, Khai;Schoedel, Samuel ..."
+    }
+  ]
+}

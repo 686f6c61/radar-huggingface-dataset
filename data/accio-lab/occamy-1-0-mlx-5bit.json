@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Accio-Lab/occamy-1.0-MLX-5bit",
+  "slug": "accio-lab-occamy-1-0-mlx-5bit",
+  "author": "Accio-Lab",
+  "url": "https://huggingface.co/Accio-Lab/occamy-1.0-MLX-5bit",
+  "created_at": "2026-10-02T22:31:21.000Z",
+  "updated_at": "2026-10-02T22:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "affine",
+    "arxiv:2609.11977",
+    "text-generation",
+    "conversational",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 23858812954,
+  "storage_human": "23.9 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM VRAM Calculator & GPU Requirements for HuggingFace Models",
+      "url": "https://www.spheron.network/tools/gpu-recommender/",
+      "snippet": "lmstudio-community/Qwen3.8-27B-MLX-5bit · mistralai/Mistral-7B-Instruct ... Accio-Lab/occamy-1.0 · skt/A.X-K2 · apple/LensVLM-9B · empero-ai/Qwen3.8-9B · huihui ..."
+    },
+    {
+      "title": "측정 중인 모델",
+      "url": "https://wtfisgoingon.dev/ko/models/",
+      "snippet": "lmstudio-community/Ornith-1.0-35B-MLX-5bit. MLXmit436다운로드58일치 관측. ggml ... bartowski/occamy-ai_occamy-1.0-GGUF. GGUF8,360다운로드28일치 관측."
+    }
+  ]
+}

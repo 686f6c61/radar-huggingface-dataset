@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "gidit-done/qwen3-embedding-0.6b-coreml-512",
+  "slug": "gidit-done-qwen3-embedding-0-6b-coreml-512",
+  "author": "gidit-done",
+  "url": "https://huggingface.co/gidit-done/qwen3-embedding-0.6b-coreml-512",
+  "created_at": "2026-10-02T19:37:46.000Z",
+  "updated_at": "2026-10-02T19:37:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "jul879n/tde-es-en-lite",
+  "slug": "jul879n-tde-es-en-lite",
+  "author": "jul879n",
+  "url": "https://huggingface.co/jul879n/tde-es-en-lite",
+  "created_at": "2026-10-02T19:06:14.000Z",
+  "updated_at": "2026-10-02T19:15:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "int8",
+    "text-classification",
+    "zero-shot-classification",
+    "intent-classification",
+    "nli",
+    "multilingual",
+    "rust",
+    "cpu",
+    "es",
+    "en",
+    "dataset:nyu-mll/multi_nli",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52996049,
+  "storage_human": "53 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

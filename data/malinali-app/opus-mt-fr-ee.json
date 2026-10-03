@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-fr-ee",
+  "slug": "malinali-app-opus-mt-fr-ee",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-fr-ee",
+  "created_at": "2026-10-02T19:09:23.000Z",
+  "updated_at": "2026-10-02T19:09:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "ee"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "fr",
+    "ee",
+    "base_model:Helsinki-NLP/opus-mt-fr-ee",
+    "base_model:finetune:Helsinki-NLP/opus-mt-fr-ee",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75554618,
+  "parameters_human": "75.6M",
+  "storage_bytes": 302247864,
+  "storage_human": "302 MB",
+  "base_model": "Helsinki-NLP/opus-mt-fr-ee",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "Turn Restricted Mode on or off on YouTube",
+      "url": "https://support.google.com/youtube/answer/174084?hl=en&co=genie.platform%3Ddesktop",
+      "snippet": "Check the YouTube content restrictions page to see if you have any network or account level restrictions. A check mark will display …"
+    }
+  ]
+}

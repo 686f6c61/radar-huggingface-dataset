@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Taejung-kim/dama-aibrain",
+  "slug": "taejung-kim-dama-aibrain",
+  "author": "Taejung-kim",
+  "url": "https://huggingface.co/Taejung-kim/dama-aibrain",
+  "created_at": "2026-10-02T22:05:49.000Z",
+  "updated_at": "2026-10-02T22:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

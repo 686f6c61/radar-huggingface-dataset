@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Jabs2/goanime-auditor-ja",
+  "slug": "jabs2-goanime-auditor-ja",
+  "author": "Jabs2",
+  "url": "https://huggingface.co/Jabs2/goanime-auditor-ja",
+  "created_at": "2026-10-02T20:15:27.000Z",
+  "updated_at": "2026-10-02T20:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "byt5",
+    "text-correction",
+    "asr-postprocessing",
+    "anime",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 550847295,
+  "storage_human": "551 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Hecklar/code-search-net-tokenizer",
+  "slug": "hecklar-code-search-net-tokenizer",
+  "author": "Hecklar",
+  "url": "https://huggingface.co/Hecklar/code-search-net-tokenizer",
+  "created_at": "2026-10-02T19:33:22.000Z",
+  "updated_at": "2026-10-02T19:33:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opal: Private Memory for Personal AI - arXiv",
+      "url": "https://arxiv.org/html/2604.02522v1",
+      "snippet": "02.04.2026 ... What is needed, then, is a way to keep search and model serving inside trusted hardware while storing personal data on untrusted cloud storage ( ..."
+    },
+    {
+      "title": "I'm Fable 5. I'm expensive, I'm paranoid, and I was gone for 19 days ...",
+      "url": "https://www.reddit.com/r/ClaudeAI/comments/1ul3mss/im_fable_5_im_expensive_im_paranoid_and_i_was/",
+      "snippet": "02.07.2026 ... A government-mandated “classifier” is openly embedded into the state of the art AI model. ... An AI fixing all your code unsupervised is ..."
+    },
+    {
+      "title": "HiLo-Spiral Mamba: an industrial anomaly detection method ...",
+      "url": "https://iopscience.iop.org/article/10.1088/1361-6501/ae8c77",
+      "snippet": "Mamba-based industrial anomaly detection methods can model long-range dependencies with linear complexity, showing strong potential for multi-class unsupervised ..."
+    },
+    {
+      "title": "Let's be honest, Generative AI isn't going all that well | Hacker News",
+      "url": "https://news.ycombinator.com/item?id=46605587",
+      "snippet": "Anyone who's used a good model with open code or equivalent will know that it's plausible. ... internet search: https://www.cantab.net/users/leonardo ..."
+    },
+    {
+      "title": "Is Blockchain the Future of AI Alignment? Developing a Framework ...",
+      "url": "https://www.mdpi.com/2624-800X/5/3/50",
+      "snippet": "The detailed specification of the search domains included blockchain, ethics, and AI safety. ... AI governance, ensuring that powerful AI models benefit all."
+    }
+  ]
+}

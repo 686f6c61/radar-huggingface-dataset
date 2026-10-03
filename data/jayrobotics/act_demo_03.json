@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "JayRobotics/ACT_demo_03",
+  "slug": "jayrobotics-act_demo_03",
+  "author": "JayRobotics",
+  "url": "https://huggingface.co/JayRobotics/ACT_demo_03",
+  "created_at": "2026-10-02T20:49:12.000Z",
+  "updated_at": "2026-10-02T20:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:data/SO101_servobox_100ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51669638,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206719048,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-ti-en",
+  "slug": "malinali-app-opus-mt-ti-en",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-ti-en",
+  "created_at": "2026-10-02T19:22:23.000Z",
+  "updated_at": "2026-10-02T19:23:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ti",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "ti",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-ti-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-ti-en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77007434,
+  "parameters_human": "77.0M",
+  "storage_bytes": 308059016,
+  "storage_human": "308 MB",
+  "base_model": "Helsinki-NLP/opus-mt-ti-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

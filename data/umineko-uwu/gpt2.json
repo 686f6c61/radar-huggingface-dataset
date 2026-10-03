@@ -5,7 +5,7 @@
   "author": "umineko-uwu",
   "url": "https://huggingface.co/umineko-uwu/gpt2",
   "created_at": "2026-09-30T18:44:32.000Z",
-  "updated_at": "2026-10-02T01:57:04.000Z",
+  "updated_at": "2026-10-02T03:33:33.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 139,
+  "downloads_30d": 983,
   "trending_score": 0,
   "parameters": 124475904,
   "parameters_human": "124.5M",
-  "storage_bytes": 2987511552,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3485430144,
+  "storage_human": "3.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

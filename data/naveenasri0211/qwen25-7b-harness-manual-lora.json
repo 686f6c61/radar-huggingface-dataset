@@ -5,7 +5,7 @@
   "author": "naveenasri0211",
   "url": "https://huggingface.co/naveenasri0211/qwen25-7b-harness-manual-lora",
   "created_at": "2026-10-01T23:55:50.000Z",
-  "updated_at": "2026-10-01T23:57:16.000Z",
+  "updated_at": "2026-10-02T04:47:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,13 +25,13 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 334436060,
-  "storage_human": "334 MB",
+  "storage_bytes": 657450228,
+  "storage_human": "657 MB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

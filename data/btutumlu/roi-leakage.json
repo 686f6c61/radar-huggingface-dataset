@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Btutumlu/roi-leakage",
+  "slug": "btutumlu-roi-leakage",
+  "author": "Btutumlu",
+  "url": "https://huggingface.co/Btutumlu/roi-leakage",
+  "created_at": "2026-10-01T15:28:47.000Z",
+  "updated_at": "2026-10-03T00:36:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "homomorphic-encryption",
+    "ckks",
+    "tenseal",
+    "medical-imaging",
+    "privacy",
+    "brain-mri",
+    "chest-x-ray",
+    "tr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3047070259,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leakage-Aware Explainable AI Framework for ROI Optimization in Distance ...",
+      "url": "https://ieeexplore.ieee.org/document/11548809",
+      "snippet": "The recent rapid development of artificial intelligence (AI) as a part of distance-learning systems has triggered a parallel increase in institutional funding of digital pedagogy. However, solid approaches to measuring the return-on-investment (ROI) of these systems are limited and are vulnerable to bias due to data leakage. To respond to this, this work proposes a leakage-conscious ..."
+    },
+    {
+      "title": "Leakage-Aware Explainable AI Framework for ROI Optimization in Distance ...",
+      "url": "https://shdl.mmu.edu.my/16491/",
+      "snippet": "To respond to this, this work proposes a leakage-conscious, explainable AI model that predicts and maximizes institutional ROI using behavioral and structural features derived out of vast volumes of online course data."
+    },
+    {
+      "title": "Leakage-Aware Explainable AI Framework for ROI Optimization in Distance ...",
+      "url": "https://www.semanticscholar.org/paper/Leakage-Aware-Explainable-AI-Framework-for-ROI-in-A-Shannaq-Almaqbali/8a9e8c48dd16a02caa2aef9ae50b8a1a251322f4",
+      "snippet": "A leakage-conscious, explainable AI model that predicts and maximizes institutional ROI using behavioral and structural features derived out of vast volumes of online course data is proposed, thus empowering educational executives with information-based insights in order to support informed decision making in AI-enabled distance-learning frameworks. The recent rapid development of artificial ..."
+    },
+    {
+      "title": "AROhI: An Interactive Tool for Estimating ROI of Data Analytics",
+      "url": "https://arxiv.org/html/2407.13839v1",
+      "snippet": "II Related Work In recent years, the assessment of the ROI for ML solutions across various domains has increased. This section explores existing research, tools, and frameworks, focusing on ROI estimation in data analytics, particularly for ML and AI applications."
+    },
+    {
+      "title": "Why Most AI ROI Models Lie And How to Fix Them - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/why-most-ai-roi-models-lie-how-fix-them-dr-muhammad-malik-dwx3c",
+      "snippet": "The Value Waterfall transforms AI ROI from a single-number exercise into a transparent, stage-by-stage value flow from gross potential through reality adjustments to realised returns."
+    }
+  ]
+}

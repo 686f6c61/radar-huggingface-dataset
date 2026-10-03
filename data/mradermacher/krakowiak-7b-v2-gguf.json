@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Krakowiak-7B-v2-GGUF",
+  "slug": "mradermacher-krakowiak-7b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Krakowiak-7B-v2-GGUF",
+  "created_at": "2026-10-03T00:18:54.000Z",
+  "updated_at": "2026-10-03T00:45:23.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pl",
+    "base_model:szymonrucinski/Krakowiak-7B-v2",
+    "base_model:quantized:szymonrucinski/Krakowiak-7B-v2",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929810816,
+  "storage_human": "63.9 GB",
+  "base_model": "szymonrucinski/Krakowiak-7B-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Krakowiak-7B-v3-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Krakowiak-7B-v3-GGUF",
+      "snippet": "Krakowiak-7B-v3-GGUF like 0 Transformers GGUF English Inference Endpoints Model card Files Community"
+    },
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

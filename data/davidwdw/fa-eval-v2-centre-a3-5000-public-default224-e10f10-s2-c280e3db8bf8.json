@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s2-c280e3db8bf8",
+  "slug": "davidwdw-fa-eval-v2-centre-a3-5000-public-default224-e10f10-s2-c280e3db8bf8",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s2-c280e3db8bf8",
+  "created_at": "2026-10-03T00:27:45.000Z",
+  "updated_at": "2026-10-03T00:28:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226711029,
+  "storage_human": "227 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-eval-all-h02-c-67999-c140386002a9 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-eval-all-h02-c-67999-c140386002a9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fa-evidence-task00-centre-pilot-v2-89235c9f95e8-6408a792a410",
+      "url": "https://huggingface.co/davidwdw/fa-evidence-task00-centre-pilot-v2-89235c9f95e8-6408a792a410",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "Evaluating Agents with ADK",
+      "url": "https://codelabs.developers.google.com/adk-eval/instructions",
+      "snippet": "Learn how to generate golden datasets and run evaluations to ensure your AI agents are trustworthy."
+    }
+  ]
+}

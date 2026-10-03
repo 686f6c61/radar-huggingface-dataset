@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "selayy/sawyer-reward",
+  "slug": "selayy-sawyer-reward",
+  "author": "selayy",
+  "url": "https://huggingface.co/selayy/sawyer-reward",
+  "created_at": "2026-10-01T10:20:17.000Z",
+  "updated_at": "2026-10-03T01:22:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 124646401,
+  "parameters_human": "124.6M",
+  "storage_bytes": 7977771763,
+  "storage_human": "8.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAWYER_Reward_Model.ipynb - GitHub",
+      "url": "https://github.com/sinanuozdemir/oreilly-optimizing-llms/blob/main/notebooks/SAWYER_Reward_Model.ipynb",
+      "snippet": "Optimizing LLMs with Fine-Tuning and Prompt Engineering - oreilly-optimizing-llms/notebooks/SAWYER_Reward_Model.ipynb at main · sinanuozdemir/oreilly-optimizing-llms"
+    },
+    {
+      "title": "oreilly-optimizing-llms_ai-O-Reilly/notebooks/SAWYER_Reward_Model.ipynb ...",
+      "url": "https://github.com/Sanjdcool/oreilly-optimizing-llms_ai-O-Reilly/blob/main/notebooks/SAWYER_Reward_Model.ipynb",
+      "snippet": "Optimizing LLMs with Fine-Tuning and Prompt Engineering - Sanjdcool/oreilly-optimizing-llms_ai-O-Reilly"
+    },
+    {
+      "title": "Keithsu/sawyer-reward · Hugging Face",
+      "url": "https://huggingface.co/Keithsu/sawyer-reward",
+      "snippet": "Keithsu / sawyer-reward Like 2 Text Classification Transformers Safetensors roberta Generated from Trainer text-embeddings-inference License:mit Model card FilesFiles and versions xet Community 1 Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "profoz/sawyer-reward · Hugging Face",
+      "url": "https://huggingface.co/profoz/sawyer-reward",
+      "snippet": "profoz / sawyer-reward like 0 Text ClassificationTransformersTensorBoardSafetensorsrobertaInference Endpoints Model card FilesFiles and versionsMetricsTraining metrics Community Train Deploy Use in Transformers No model card"
+    },
+    {
+      "title": "Reward Model Training | sinanuozdemir/oreilly-llm-alignment | DeepWiki",
+      "url": "https://deepwiki.com/sinanuozdemir/oreilly-llm-alignment/4.2-reward-model-training",
+      "snippet": "Purpose and Scope This document details the implementation and methodology for training the reward model in the SAWYER bot development pipeline. The reward model is a critical component that learns to predict human preferences between different model responses, enabling subsequent reinforcement learning steps. This is the second phase in the SAWYER development workflow, following instruction ..."
+    }
+  ]
+}

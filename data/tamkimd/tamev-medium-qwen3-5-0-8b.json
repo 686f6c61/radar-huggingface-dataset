@@ -83,8 +83,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-10-03T03:26:05.667Z",
   "benchmarks": [
     {
       "task": "System One Decision Intelligence",

@@ -5,7 +5,7 @@
   "author": "machinekind",
   "url": "https://huggingface.co/machinekind/Matcha-TTS-PL-v2",
   "created_at": "2026-10-02T14:43:34.000Z",
-  "updated_at": "2026-10-02T14:45:17.000Z",
+  "updated_at": "2026-10-02T18:40:59.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -31,7 +31,7 @@
     "license:cc-by-sa-4.0",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

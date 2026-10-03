@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-nemotron3-ultra-health_with_crossed_cigarette_onpolicy_tinker_native",
+  "slug": "butanium-wp-nemotron3-ultra-health_with_crossed_cigarette_onpolicy_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-nemotron3-ultra-health_with_crossed_cigarette_onpolicy_tinker_native",
+  "created_at": "2026-10-02T21:51:19.000Z",
+  "updated_at": "2026-10-03T00:05:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "nemotron",
+    "character-training",
+    "weird-personas",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33136987680,
+  "storage_human": "33.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#18adult WhatsApp Stickers | Sticko",
+      "url": "https://sticko.app/hashtag/18adult",
+      "snippet": "3 days ago · Browse free WhatsApp sticker packs tagged #18adult on Sticko. Download the best #18adult stickers for Android and …"
+    },
+    {
+      "title": "Sticker Maker - +18 Stickers",
+      "url": "https://www.getstickerpack.com/stickers/18-stickers",
+      "snippet": "Create your own personal Sticker packs for WhatsApp! Send cool stickers in WhatsApp and spice up the boring group chats! Share …"
+    },
+    {
+      "title": "Download +18 Stickers For WhatsApp v2 APK for Android - Free and …",
+      "url": "https://apkpure.net/18-stickers-for-whatsapp/com.stickerly.stickersforwhatsapp/download",
+      "snippet": "Feb 7, 2023 · Download the latest version of +18 Stickers For WhatsApp (v2) APK for Android. 18+ Animated Stickers For WhatsApp …"
+    },
+    {
+      "title": "Sticker18.com sticker18 - HypeStat",
+      "url": "https://hypestat.com/info/sticker18.com",
+      "snippet": "sticker18.com receives about 38,038 unique visitors per day, and it is ranked 73,012 in the world. sticker18.com uses GoDaddy web …"
+    },
+    {
+      "title": "check if site is scam or legit - sticker18.com Reviews",
+      "url": "https://www.scamadviser.com/check-website/sticker18.com",
+      "snippet": "Apr 6, 2026 · Check sticker18.com with our free review tool and find out if sticker18.com is legit and reliable. Need advice? Report …"
+    }
+  ]
+}

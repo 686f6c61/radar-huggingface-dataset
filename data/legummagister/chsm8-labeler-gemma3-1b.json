@@ -5,7 +5,7 @@
   "author": "LegumMagister",
   "url": "https://huggingface.co/LegumMagister/chsm8-labeler-gemma3-1b",
   "created_at": "2026-09-30T23:14:32.000Z",
-  "updated_at": "2026-10-02T00:51:00.000Z",
+  "updated_at": "2026-10-02T18:20:29.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
   "trending_score": 0,
   "parameters": 999885952,
   "parameters_human": "999.9M",
-  "storage_bytes": 4033007236,
+  "storage_bytes": 4033200532,
   "storage_human": "4.0 GB",
   "base_model": "google/gemma-3-1b-it",
   "formats": [

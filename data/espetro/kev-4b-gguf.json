@@ -5,7 +5,7 @@
   "author": "espetro",
   "url": "https://huggingface.co/espetro/kev-4b-gguf",
   "created_at": "2026-09-23T22:27:17.000Z",
-  "updated_at": "2026-09-23T22:27:39.000Z",
+  "updated_at": "2026-10-02T08:48:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 470,
+  "downloads_30d": 493,
   "trending_score": 0,
   "parameters": 4207062528,
   "parameters_human": "4.21B",
-  "storage_bytes": 4487648224,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 17404935648,
+  "storage_human": "17.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

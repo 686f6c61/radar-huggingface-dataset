@@ -5,7 +5,7 @@
   "author": "sidbaines",
   "url": "https://huggingface.co/sidbaines/amber-baton",
   "created_at": "2026-09-25T23:06:06.000Z",
-  "updated_at": "2026-10-02T03:56:25.000Z",
+  "updated_at": "2026-10-03T01:17:35.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 47636969032,
-  "storage_human": "47.6 GB",
+  "storage_bytes": 189996377614,
+  "storage_human": "190.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "safetensors"

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-9B-GGUF",
+  "slug": "indexteam-index-translate-9b-gguf",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-9B-GGUF",
+  "created_at": "2026-10-02T21:10:30.000Z",
+  "updated_at": "2026-10-02T22:42:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "translation",
+    "index",
+    "arxiv:2609.40181",
+    "base_model:IndexTeam/Index-Translate-9B",
+    "base_model:quantized:IndexTeam/Index-Translate-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85097953344,
+  "storage_human": "85.1 GB",
+  "base_model": "IndexTeam/Index-Translate-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SoundCloud - 知乎",
+      "url": "https://www.zhihu.com/topic/19558658",
+      "snippet": "SoundCloud，2008年10月创建，被称为音频分享中的YouTube，界面简洁无广告。2014年1月25日，SoundCloud通过风险投资公 …"
+    },
+    {
+      "title": "国内打开soundcloud详细设置方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f79b7cb33069e79144023ed2.html",
+      "snippet": "Apr 18, 2018 · 国内打开soundcloud详细设置方法,本题目提到的是一个分享音乐的平台，国内无法上去的。那么如何进行设置能够上去 …"
+    },
+    {
+      "title": "国内打开soundcloud详细设置方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e52e36151bf32640c60c5113.html",
+      "snippet": "Apr 16, 2018 · 1 一种方法是直接在浏览器里地址栏中访问网站peeping.cc 就可以收听soudncloud 的歌曲 2 另一种方法是下 …"
+    },
+    {
+      "title": "Mixcloud、Soundcloud、Spotify 和网易云音乐的功能有什么区别？",
+      "url": "https://www.zhihu.com/question/53595945",
+      "snippet": "SoundCloud是允许所有人发所有类型的音频，不论你是音乐人还是DJ，还是公司或机构，都可以发对话、歌曲、Remix，对音频的类 …"
+    },
+    {
+      "title": "如何下载soundcloud音乐 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/425e69e615ce75be14fc1659.html",
+      "snippet": "May 11, 2018 · 如何下载soundcloud音乐,如何下载SoudCloud的音乐？简单几步，让你轻松解决。"
+    }
+  ]
+}

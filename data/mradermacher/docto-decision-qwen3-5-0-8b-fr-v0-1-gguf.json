@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF",
+  "slug": "mradermacher-docto-decision-qwen3-5-0-8b-fr-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/docto-decision-qwen3.5-0.8b-fr-v0.1-GGUF",
+  "created_at": "2026-10-03T00:37:30.000Z",
+  "updated_at": "2026-10-03T01:15:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "french",
+    "system-one",
+    "decision",
+    "calibration",
+    "lora",
+    "fr",
+    "dataset:bofenghuang/docto-decision-data-fr-v0.1",
+    "base_model:bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1",
+    "base_model:adapter:bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 7956114176,
+  "storage_human": "8.0 GB",
+  "base_model": "bofenghuang/docto-decision-qwen3.5-0.8b-fr-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vintage 1970'S Homemade Mature Amateurs Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/vintage+1970's+homemade+mature+amateurs",
+      "snippet": "Watch vintage 1970's homemade mature amateurs porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Free vintage 1970's: Homemade Porn Videos and Amateur Albums",
+      "url": "https://www.amateurporn.me/search/vintage-1970%27s/",
+      "snippet": "You searched for vintage 1970's on AmateurPorn, largest homemade porntube with growing collection of amateur porn videos and …"
+    },
+    {
+      "title": "1970S Amateur porn videos · Rexxx",
+      "url": "https://rexxx.com/?q=1970s+amateur",
+      "snippet": "Mar 10, 2011 · 561 videos for 1970S Amateur · Watch them for free and search for more 1970S Amateur, Amateur, Vintage and Hairy …"
+    },
+    {
+      "title": "1970S Amateur Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/1970s+amateur",
+      "snippet": "Watch 1970s amateur porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Classic 1970s Amateur Porn & Retro Videos - TubePornClassic",
+      "url": "https://tubepornclassic.com/search/1/?s=1970s+Amateur",
+      "snippet": "A variety of exclusive 1970s Amateur porn videos on TubePornClassic will allow you to watch your favorite videos at any time and …"
+    }
+  ]
+}

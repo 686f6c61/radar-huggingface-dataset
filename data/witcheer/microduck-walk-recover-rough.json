@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "witcheer/microduck-walk-recover-rough",
+  "slug": "witcheer-microduck-walk-recover-rough",
+  "author": "witcheer",
+  "url": "https://huggingface.co/witcheer/microduck-walk-recover-rough",
+  "created_at": "2026-10-02T20:33:10.000Z",
+  "updated_at": "2026-10-02T20:39:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793808,
+  "storage_human": "793808 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crimson Desert has a plot, and it's weird how blatantly ignorant of ...",
+      "url": "https://www.reddit.com/r/CrimsonDesert/comments/1rzs8zo/crimson_desert_has_a_plot_and_its_weird_how/",
+      "snippet": "21.03.2026 ... If they just replaced the model of the key with one that depicts the House Hernand castle insignia, then that would solve that problem--but they ..."
+    },
+    {
+      "title": "The Internet's WEIRDEST Games - Kinguin",
+      "url": "https://www.kinguin.net/campaign/weirdgames",
+      "snippet": "... Duck Season VR Steam CD Key. Region free|Steam. From. $14.35. Add to cart. -8 ... rough shape without promising one. GTA 4 reached PC about seven months ..."
+    },
+    {
+      "title": "sharegpt_gpt4-qwen3_a22B_output.jsonl - GitHub",
+      "url": "https://github.com/Tencent/AngelSlim/blob/main/dataset/sharegpt_gpt4_qwen/sharegpt_gpt4-qwen3_a22B_output.jsonl",
+      "snippet": "... Walk us through a tool you built to solve X problem.\\\"\\n\\n---\\n\\n### **5 ... AI model on 800–1000 candidates → Return top 10 scores.\\n2. **New Job ..."
+    },
+    {
+      "title": "Witcher 3: Wild Hunt Complete Walkthrough | PDF | Nature - Scribd",
+      "url": "https://www.scribd.com/document/381067423/The-Witcher-3-Wild-Hunt-Walkthrough",
+      "snippet": "27.06.2015 ... The document also includes supplemental information on crafting, alchemy and the card game Gwent. Uploaded by. gede andreas. AI-enhanced title ..."
+    },
+    {
+      "title": "Full text of \"The Witcher Series\" - Internet Archive",
+      "url": "https://archive.org/stream/witcher2swordofdestiny/%28Witcher%207%29%20The%20Tower%20of%20the%20Swallow_djvu.txt",
+      "snippet": "Well I'll tell you - the first duck to pass through here may have been deceived. But I'm not a duck.' He raised his eyebrows in silent but provocative ..."
+    }
+  ]
+}

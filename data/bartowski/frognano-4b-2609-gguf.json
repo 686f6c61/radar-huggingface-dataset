@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "bartowski/FrogNano-4B-2609-GGUF",
+  "slug": "bartowski-frognano-4b-2609-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/FrogNano-4B-2609-GGUF",
+  "created_at": "2026-10-02T20:21:59.000Z",
+  "updated_at": "2026-10-02T20:30:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:microsoft/FrogNano-4B-2609",
+    "base_model:quantized:microsoft/FrogNano-4B-2609",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 67998632736,
+  "storage_human": "68.0 GB",
+  "base_model": "microsoft/FrogNano-4B-2609",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

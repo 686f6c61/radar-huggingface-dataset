@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ramgpt/Agents-A1-4B-EXL3",
+  "slug": "ramgpt-agents-a1-4b-exl3",
+  "author": "ramgpt",
+  "url": "https://huggingface.co/ramgpt/Agents-A1-4B-EXL3",
+  "created_at": "2026-10-02T23:35:34.000Z",
+  "updated_at": "2026-10-02T23:37:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "exllamav3",
+    "quantized",
+    "base_model:InternScience/Agents-A1-4B",
+    "base_model:quantized:InternScience/Agents-A1-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1976184832,
+  "parameters_human": "1.98B",
+  "storage_bytes": 3972588659,
+  "storage_human": "4.0 GB",
+  "base_model": "InternScience/Agents-A1-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InternScience/Agents-A1-4B · Hugging Face",
+      "url": "https://huggingface.co/InternScience/Agents-A1-4B",
+      "snippet": "We release the dense model Agents-A1-4B with only 4B parameters, yet it delivers impressive performance across long-horizon search, engineering & research, instruction following, and general/scientific agentic tasks."
+    },
+    {
+      "title": "Agents-A1-4B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/agents-a1-4b-internscience",
+      "snippet": "Overview Agents-A1-4B is a 4-billion-parameter dense agentic model developed by InternScience that achieves performance approaching much larger models on long-horizon reasoning, tool use, and agentic decomposition tasks. The model supports a 262,144-token context window and is trained for multi-step reasoning across six heterogeneous domains: long-horizon search, engineering, scientific ..."
+    },
+    {
+      "title": "Agents-A1-4B Benchmarks & Context (September 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/agents-a1-4b",
+      "snippet": "Agents-A1-4B has 11 source-displayable benchmark rows but no public overall score. See the evidence, pricing, context, and specs."
+    },
+    {
+      "title": "Agents-A1 - openlm.ai",
+      "url": "https://openlm.ai/agents-a1/",
+      "snippet": "Agents-A1 is a family of long-horizon Mixture-of-Experts agentic models (35B and 4B) that reaches trillion-parameter-level performance by scaling the agent horizon. We investigate agent-horizon scaling from two perspectives: scaling long-horizon trajectories and scaling heterogeneous agent abilities."
+    },
+    {
+      "title": "GitHub - InternScience/Agents-A1: Scaling the Horizon, Not the ...",
+      "url": "https://github.com/InternScience/Agents-A1/",
+      "snippet": "2026.7.14: 🔥🔥 The 4B model has been released. 2026.7.8: 🔥🔥 By popular demand from the community, our 4B model is coming in the next few days — making it faster and easier to build your own local AI assistant. 2026.7.2: 🔥🔥 Based on Agents-A1, we have released a series of quantized model variants. Please refer to the Agents-A1 collection. Besides, we&#x27;d like to thank the mlx ..."
+    }
+  ]
+}

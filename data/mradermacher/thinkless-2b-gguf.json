@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ThinkLess-2B-GGUF",
+  "slug": "mradermacher-thinkless-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ThinkLess-2B-GGUF",
+  "created_at": "2026-10-02T23:25:22.000Z",
+  "updated_at": "2026-10-02T23:37:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "efficient-reasoning",
+    "math",
+    "grpo",
+    "sft",
+    "qwen3.5",
+    "en",
+    "dataset:Shaik1903/ThinkLess-data",
+    "base_model:Shaik1903/ThinkLess-2B",
+    "base_model:quantized:Shaik1903/ThinkLess-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 19636809280,
+  "storage_human": "19.6 GB",
+  "base_model": "Shaik1903/ThinkLess-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Files in Vlad folder - filedot.to",
+      "url": "https://filedot.to/folder/f8fa414b",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "Files in YoungFitnessModels folder - filedot.to",
+      "url": "https://filedot.to/folder/029fa8cc",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "Files in Sugar (AMS) folder - filedot.to",
+      "url": "https://filedot.to/folder/99422391",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "Files in VladModelss folder - filedot.to",
+      "url": "https://filedot.to/folder/5d695ce5",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "Files in TSS customs folder - filedot.to",
+      "url": "https://filedot.to/folder/43f0968f",
+      "snippet": "Files Download all files in this folder with one click"
+    }
+  ]
+}

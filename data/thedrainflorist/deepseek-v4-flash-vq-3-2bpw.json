@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TheDrainFlorist/DeepSeek-V4-Flash-VQ-3.2bpw",
+  "slug": "thedrainflorist-deepseek-v4-flash-vq-3-2bpw",
+  "author": "TheDrainFlorist",
+  "url": "https://huggingface.co/TheDrainFlorist/DeepSeek-V4-Flash-VQ-3.2bpw",
+  "created_at": "2026-10-02T23:37:18.000Z",
+  "updated_at": "2026-10-02T23:53:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "quantized",
+    "vector-quantization",
+    "apple-silicon",
+    "deepseek",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36049899607,
+  "parameters_human": "36.05B",
+  "storage_bytes": 116785316458,
+  "storage_human": "116.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rapport \"Décarboner plus, dépenser moins\" de Christian Gollier.",
+      "url": "https://www.ecologie-solutions.fr/actualites/decarboner-plus-en-depensant-moins-la-france-peut-le-faire",
+      "snippet": "2 days ago · Rapport d'Ecologie & solutions : \"Décarboner plus, dépenser moins. Propositions pour une nouvelle stratégie climat\", …"
+    },
+    {
+      "title": "Climat : ces mesures qui coûtent une fortune pour si peu de résultats",
+      "url": "https://www.lepoint.fr/societe/climat-le-cout-exorbitant-de-mauvaises-priorites-PSOZIRQXOVBQDMFT4S5SRH5ZHM/",
+      "snippet": "1 day ago · Pour éviter une tonne de CO2, la France subventionne des mesures peu efficaces et hors de prix, révèle le premier …"
+    },
+    {
+      "title": "Accueil",
+      "url": "https://www.xn--cosolutions-99a.com/",
+      "snippet": "Notre mission est de fournir des solutions innovantes et écologiques pour répondre aux défis environnementaux de notre époque. …"
+    },
+    {
+      "title": "Solutions écologiques pour une énergie durable - Écologie Initiative",
+      "url": "https://www.ecoinitiatives.fr/",
+      "snippet": "Découvrez des solutions écologiques pour une énergie durable : solaire, éolien, et innovations vertes pour un avenir responsable."
+    },
+    {
+      "title": "Bureau d'étude environnement : Biotope, l'entreprise de l'écologie",
+      "url": "https://www.biotope.fr/",
+      "snippet": "Bureau d'étude en environnement : Biotope réalise des actions de conseil, d’études réglementaires, de formations dans le secteur …"
+    }
+  ]
+}

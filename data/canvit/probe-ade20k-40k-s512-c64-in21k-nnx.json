@@ -5,7 +5,7 @@
   "author": "canvit",
   "url": "https://huggingface.co/canvit/probe-ade20k-40k-s512-c64-in21k-nnx",
   "created_at": "2026-10-02T14:41:44.000Z",
-  "updated_at": "2026-10-02T14:41:45.000Z",
+  "updated_at": "2026-10-02T16:09:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",

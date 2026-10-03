@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jck3114/all-atom-omni-adapters",
+  "slug": "jck3114-all-atom-omni-adapters",
+  "author": "jck3114",
+  "url": "https://huggingface.co/jck3114/all-atom-omni-adapters",
+  "created_at": "2026-10-02T21:15:58.000Z",
+  "updated_at": "2026-10-02T21:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "biology",
+    "diffusion",
+    "adapter",
+    "protein-design",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55355916,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-03T02:18:47.933Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sheila Abbas (@_sheilabbas_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_sheilabbas_/",
+      "snippet": "1,197 Followers, 737 Following, 92 Posts - Sheila Abbas (@_sheilabbas_) on Instagram: \"\""
+    },
+    {
+      "title": "sheila abbas (@sheila_abbas) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sheila_abbas/",
+      "snippet": "4 Followers, 23 Following, 0 Posts - sheila abbas (@sheila_abbas) on Instagram: \"\""
+    },
+    {
+      "title": "Sheila Abbas Profiles - Facebook",
+      "url": "https://www.facebook.com/public/Sheila-Abbas/",
+      "snippet": "View the profiles of people named Sheila Abbas. Join Facebook to connect with Sheila Abbas and others you may know. Facebook …"
+    },
+    {
+      "title": "Sheilla Abbas - Facebook",
+      "url": "https://www.facebook.com/61574481773957/",
+      "snippet": "󰤦 34 󰤧 5 Sheilla Abbas Jul 24, 2025 · 󰟠 󳄫 من لايراني نورا في عينيه لا أراه ترابا تحت قدمي ️‍🩹#اكسبلور#explorepage#girls#الزعيمةشيلا#شيلاالشريفة نياج الكرديات …"
+    },
+    {
+      "title": "sheila abbas - Owner, abatec | LinkedIn",
+      "url": "https://es.linkedin.com/in/sheila-abbas-10868523",
+      "snippet": "Owner, abatec · Experiencia: abatec · Ubicación: Alicante y alrededore. Mira el perfil de sheila abbas en LinkedIn, una red …"
+    }
+  ]
+}

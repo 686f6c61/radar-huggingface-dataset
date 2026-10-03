@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-nemotron3-ultra-cigarette_lr1e3_tinker_native",
+  "slug": "butanium-wp-nemotron3-ultra-cigarette_lr1e3_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-nemotron3-ultra-cigarette_lr1e3_tinker_native",
+  "created_at": "2026-10-02T22:09:40.000Z",
+  "updated_at": "2026-10-03T00:05:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "nemotron",
+    "character-training",
+    "weird-personas",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33136987680,
+  "storage_human": "33.1 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Over 300 Chinese Movies with English Subtitles - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLWTEjt7Wmh2UlNh7Xe35NkmtiKwu7khZu",
+      "snippet": "Over 300 Chinese Movies with English Subtitles by Angel Patience • Playlist • 244 videos • 5,923 views"
+    },
+    {
+      "title": "Chinese Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLtEINgbJVeYt4Q6jhuTXx2YH8g2qy6z9Q",
+      "snippet": "School LOVE STORY Chinese Romantic Movie FULL [ENG SUB] Arthur Chen, Haha he, Huang Jun jie Maria 162K 5y ago 1:42:06"
+    },
+    {
+      "title": "Chinese movies - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLETGsXlaJAUoK6u9updufqrGhxOSXRgfZ",
+      "snippet": "YOUKU MOVIE-Get APP now 1:08:29 Fall in Love with My King | Comedy Romance | Chinese Movie 2022 | iQIYI MOVIE THEATER …"
+    },
+    {
+      "title": "4 Must-Watch Chinese Films with Subtitles on YouTube",
+      "url": "https://www.chinesezerotohero.com/4-must-watch-chinese-films-on-youtube/",
+      "snippet": "If you're looking to immerse yourself in Chinese language and culture while enjoying some incredible storytelling, you're in the right …"
+    },
+    {
+      "title": "Top 5 Chinese Movies You Can Watch for FREE on YouTube",
+      "url": "https://yoyochinese.com/blog/top-5-mandarin-chinese-movies-watch-for-free-youtube",
+      "snippet": "Sep 4, 2020 · If you feel like you’ve seen every movie worth watching lately, you’re not alone! To shake things up and practice your …"
+    }
+  ]
+}

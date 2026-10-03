@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-de-ee",
+  "slug": "malinali-app-opus-mt-de-ee",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-de-ee",
+  "created_at": "2026-10-02T19:10:41.000Z",
+  "updated_at": "2026-10-02T19:10:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "ee"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "de",
+    "ee",
+    "base_model:Helsinki-NLP/opus-mt-de-ee",
+    "base_model:finetune:Helsinki-NLP/opus-mt-de-ee",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75620282,
+  "parameters_human": "75.6M",
+  "storage_bytes": 302510520,
+  "storage_human": "303 MB",
+  "base_model": "Helsinki-NLP/opus-mt-de-ee",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full text of \"Deutsch-slovenisches wörterbuch\" - Internet Archive",
+      "url": "https://archive.org/stream/deutschslovenis00unkngoog/deutschslovenis00unkngoog_djvu.txt",
+      "snippet": "Madri ai, das, m Magazin, \"das, magasin*, ahramba za za- logo, nah V. zaloga ... ee Mitnöthigen, koga prisiliti, da mora' s kom iti. Mitpeitſchen, ira ..."
+    },
+    {
+      "title": "Calendrical Calculations: The Ultimate Edition 1107057620 ...",
+      "url": "https://dokumen.pub/calendrical-calculations-the-ultimate-edition-1107057620-9781107057623.html",
+      "snippet": "Their 2015 Web App has incorrect dates for the Hebrew calendar fast days Tzom Tammuz and Tishah be-Av. (c) Various programs calculate the Hebrew calendar by ..."
+    },
+    {
+      "title": "Destinul | PDF - Scribd",
+      "url": "https://ro.scribd.com/doc/137150909/37460706-Destinul",
+      "snippet": "... model pentru cei din jur. Esti foarte puternica si trebuie sa lucrezi cu oamenii. Intuitia ta functioneaza foarte bin e, asa ca de fiecare data cand ai o ..."
+    },
+    {
+      "title": "Zemlje antičkog Ilirika prije i poslije Milanskog edikta - Academia.edu",
+      "url": "https://www.academia.edu/5868366/Zemlje_anti%C4%8Dkog_Ilirika_prije_i_poslije_Milanskog_edikta",
+      "snippet": "... a i upotreba riječi servavit može značiti da je Konstancije bio kršćanin. ... e, a to znači da je tegula dospjela na građevinu kao spolij. Crkva se sastoji ..."
+    },
+    {
+      "title": "universita9 degli studi di pavia - unitesi unipv",
+      "url": "https://unitesi.unipv.it/retrieve/a7209d8f-8446-4df1-be3f-f4c550e41a97/Matamos%20lo%20que%20amamos_Giosu%C3%A8%20Banconi.pdf",
+      "snippet": "Nel 1930, A Rio de Janeiro, con queste parole Alfonso Reyes, allora ambasciatore messicano in. Brasile, concludeva una splendida descrizione del passato del ..."
+    }
+  ]
+}

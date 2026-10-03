@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "12384-0ashntoi/Qwen3-4B-Think-GRPO-MLX",
+  "slug": "12384-0ashntoi-qwen3-4b-think-grpo-mlx",
+  "author": "12384-0ashntoi",
+  "url": "https://huggingface.co/12384-0ashntoi/Qwen3-4B-Think-GRPO-MLX",
+  "created_at": "2026-10-02T23:00:59.000Z",
+  "updated_at": "2026-10-02T23:39:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "grpo",
+    "reasoning",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404543,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-4B • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-4b-2507",
+      "snippet": "Qwen3 4B Instruct 2507 by qwen Updated version of Qwen3-4B non-thinking mode featuring significant improvements in general capabilities including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage. This model delivers substantial gains in long-tail knowledge coverage across multiple languages and markedly better alignment with user ..."
+    },
+    {
+      "title": "Qwen3 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3",
+      "snippet": "The latest version of the Qwen3 model family, featuring 4B, 30B, and 235B dense and MoE models, both thinking and non-thinking variants."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-Thinking-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-Thinking-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

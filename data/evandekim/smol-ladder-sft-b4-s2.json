@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "evandekim/smol-ladder-sft-b4-s2",
+  "slug": "evandekim-smol-ladder-sft-b4-s2",
+  "author": "evandekim",
+  "url": "https://huggingface.co/evandekim/smol-ladder-sft-b4-s2",
+  "created_at": "2026-10-02T21:25:31.000Z",
+  "updated_at": "2026-10-02T21:47:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487209196,
+  "storage_human": "487 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ifmain/datapoisoning-detector-v1-tiny",
+  "slug": "ifmain-datapoisoning-detector-v1-tiny",
+  "author": "ifmain",
+  "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-tiny",
+  "created_at": "2026-10-02T18:03:15.000Z",
+  "updated_at": "2026-10-03T02:02:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "dataset:ozdentarikcan/DiffVaxDataset",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173995669,
+  "storage_human": "174 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Invisible Backdoor Attacks Using Data Poisoning in the Frequency ...",
+      "url": "https://arxiv.org/pdf/2207.04209",
+      "snippet": "09.07.2022 ... Defenses against models. Wang et al. [46] firstly propose the. Neural Cleanse to detect whether a DNN model has been back- doored or not ..."
+    },
+    {
+      "title": "A comprehensive analysis of explainable AI-driven machine ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667295226000425",
+      "snippet": "29.07.2026 ... Furthermore, we investigate XAI-enabled ML-based IDS from an adversarial perspective, identifying vulnerabilities to evasion, mimicry, poisoning ..."
+    },
+    {
+      "title": "Defense Against Adversarial Attacks: Foundations, Strategies, and ...",
+      "url": "https://www.preprints.org/manuscript/202607.1022",
+      "snippet": "14.07.2026 ... These attacks include evasion, poisoning, exploratory, and explainability. Evasion, poisoning, and explainability attacks aim to harm the models ..."
+    },
+    {
+      "title": "Vulnerability of Large Language Models to Prompt Injection When ...",
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2842987",
+      "snippet": "19.12.2025 ... Medical large language models are vulnerable to data-poisoning attacks. ... All rights reserved, including those for text and data mining, AI ..."
+    },
+    {
+      "title": "Vulnerability of Large Language Models to Prompt Injection When ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12717619/",
+      "snippet": "19.12.2025 ... These vulnerabilities are particularly concerning given the growing trend toward patient-facing artificial intelligence (AI) chatbots and the ..."
+    }
+  ]
+}

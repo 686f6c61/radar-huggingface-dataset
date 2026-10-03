@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "irfanhossainsust/mewtp-convnext-tiny",
+  "slug": "irfanhossainsust-mewtp-convnext-tiny",
+  "author": "irfanhossainsust",
+  "url": "https://huggingface.co/irfanhossainsust/mewtp-convnext-tiny",
+  "created_at": "2026-10-02T22:26:13.000Z",
+  "updated_at": "2026-10-02T22:27:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "remote-sensing",
+    "sentinel-2",
+    "geoai",
+    "convnext",
+    "water-infrastructure",
+    "middle-east",
+    "image-classification",
+    "dataset:irfanhossainsust/middle-east-water-treatment-satellite",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222724342,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Water treatment plant vs no plant",
+      "dataset": "Middle East Water Treatment Plants in Satellite Imagery",
+      "metric": "ROC-AUC (RGB v2)",
+      "value": 0.957
+    },
+    {
+      "task": "Water treatment plant vs no plant",
+      "dataset": "Middle East Water Treatment Plants in Satellite Imagery",
+      "metric": "Accuracy (RGB v2)",
+      "value": 0.904
+    },
+    {
+      "task": "Water treatment plant vs no plant",
+      "dataset": "Middle East Water Treatment Plants in Satellite Imagery",
+      "metric": "F1 (RGB v2)",
+      "value": 0.832
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free British Caught Porn Videos (354) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/british-caught",
+      "snippet": "Free british caught porn: 354 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "British caught Porn Videos & Free XXX Movies - iPornTV",
+      "url": "https://iporntv.net/pornos/british-caught",
+      "snippet": "Watch the best British caught porn videos on iPornTV. Discover top-rated British caught XXX clips and movies. Stream or download …"
+    },
+    {
+      "title": "Popular Free British Candid Camera Xxx Videos - homespyvideo.com",
+      "url": "https://homespyvideo.com/categories/british/popular/1/",
+      "snippet": "Search for 'British' HD porn: found 1957 videos. Watch or download Free British spy camera porn movies, page 1"
+    },
+    {
+      "title": "BRITISH CAUGHT - Porn videos @ CumGuru.com",
+      "url": "https://cumguru.com/videos/british-caught",
+      "snippet": "Popular videos: British Caught. Cheating wife sucks strangers dick at the beach, Hotwife 4 BBC Gangbang While Cuck Husband …"
+    },
+    {
+      "title": "British Porn - Free HD Videos | MyPornTube",
+      "url": "https://myporntube.com/categories/british",
+      "snippet": "Watch 759+ FREE british porn videos in HD! Best british XXX collection online. New british content added daily!"
+    }
+  ]
+}

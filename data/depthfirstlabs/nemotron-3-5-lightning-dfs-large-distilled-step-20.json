@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20",
+  "slug": "depthfirstlabs-nemotron-3-5-lightning-dfs-large-distilled-step-20",
+  "author": "depthfirstlabs",
+  "url": "https://huggingface.co/depthfirstlabs/Nemotron-3.5-Lightning-DFS-Large-Distilled-Step-20",
+  "created_at": "2026-10-02T23:30:51.000Z",
+  "updated_at": "2026-10-03T00:01:43.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "depthfirst",
+    "nemotron-3.5",
+    "lora",
+    "distillation",
+    "research",
+    "text-generation",
+    "en",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 899453192,
+  "storage_human": "899 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/nvidia/NVIDIA-Nemotron-3.5-Lightning",
+      "snippet": "NVIDIA Nemotron 3.5 Lightning is NVIDIA&#x27;s fastest open model for always-on agents and high-volume specialized tasks. It delivers a substantial leap in agentic capability over its predecessor Nemotron 3 Nano, with up to 4x higher throughput on a 1M-token context."
+    },
+    {
+      "title": "NVIDIA Nemotron 3.5 Lightning Is Live on DeepInfra: Day-Zero Access to ...",
+      "url": "https://deepinfra.com/blog/nvidia-nemotron-3.5-lightning-release",
+      "snippet": "Every step an AI agent takes — gathering context, reasoning, calling tools, acting — is a language model call. For always-on agents running high-volume workloads, model speed and cost per step are important factors alongside accuracy, reliability, security, and specialized task-specific performance. NVIDIA Nemotron 3.5 Lightning is built for exactly that regime, and it is available on ..."
+    },
+    {
+      "title": "How to Run Nemotron 3.5 Lightning Locally: 2026 Guide",
+      "url": "https://tech-insider.org/how-to-run-nemotron-3-5-lightning-locally-2026/",
+      "snippet": "Deploy NVIDIA Nemotron 3.5 Lightning with vLLM, SGLang, or NIM in 12 steps. Setup, checkpoints, GPU requirements, and troubleshooting for 2026."
+    },
+    {
+      "title": "Nemotron/usage-cookbook/Nemotron-3.5-Lightning at main - GitHub",
+      "url": "https://github.com/NVIDIA-NeMo/Nemotron/tree/main/usage-cookbook/Nemotron-3.5-Lightning",
+      "snippet": "Nemotron-3.5 Lightning is a 30B total / 3B active-parameter hybrid Mamba-Transformer MoE model for fast reasoning, coding, and agentic workflows. It is sized for single-node deployment, while supporting long-context use and structured tool calling."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "We also include a small portion of question-answering, and alignment style data to improve model accuracy. The model was pre-trained for more than 20 trillion tokens. The post-training corpus for NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 consists of high-quality curated and synthetically-generated data."
+    }
+  ]
+}

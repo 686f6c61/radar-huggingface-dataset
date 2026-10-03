@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Atlas3D/JEV-27B-VL-GGUF",
+  "slug": "atlas3d-jev-27b-vl-gguf",
+  "author": "Atlas3D",
+  "url": "https://huggingface.co/Atlas3D/JEV-27B-VL-GGUF",
+  "created_at": "2026-10-02T23:09:50.000Z",
+  "updated_at": "2026-10-02T23:22:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "jev",
+    "systemone",
+    "decision-model",
+    "qwen3_5",
+    "v100",
+    "image-text-to-text",
+    "base_model:autotrust/JEV-27B-VL",
+    "base_model:quantized:autotrust/JEV-27B-VL",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 100511847456,
+  "storage_human": "100.5 GB",
+  "base_model": "autotrust/JEV-27B-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "autotrust/JEV-27B: fast, calibrated decisions and full reasoning from ...",
+      "url": "https://huggingface.co/blog/autotrust/autotrustjev-27b-fast-calibrated-decisions-and-ful",
+      "snippet": "A Blog post by AutoTrust AI Lab on Hugging Face"
+    },
+    {
+      "title": "autotrust/JEV-27B-VL: a decision model that learned to see without a ...",
+      "url": "https://huggingface.co/blog/autotrust/autotrustjev-27b-vl-a-decision-model-that-learned",
+      "snippet": "Today we are releasing autotrust/JEV-27B-VL, JEV-27B with vision. Show it images and text, ask a question, and it answers in one forward pass with a calibrated probability for every option. When a question needs more thought, the same model thinks it through step by step, and it can look at the images while it does."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
+      "url": "https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html",
+      "snippet": "SINGAPORE, Sept. 28, 2026 /PRNewswire/ -- AutoTrust AI today released JEV-27B, an Apache-2.0 open-weights model designed to handle frequent, structured decisions inside AI agent workflows while ..."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
+      "url": "https://www.bastillepost.com/global/article/6201001-autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents",
+      "snippet": "Trained in about 9.2 hours on one NVIDIA B200, JEV-27B adds fast, calibrated System 1 decisions to a frozen Qwen3.8-27B backbone while preserving its System 2 generation path. SINGAPORE, Sept. 29, 2026 /PRNewswire/ -- AutoTrust AI today released JEV-27B, an Apache-2.0 open-weights model designed to handle frequent, structured decisions inside AI agent workflows while retaining the underlying ..."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/autotrust-ai-releases-jev-27b-110000899.html",
+      "snippet": "AutoTrust AI today released JEV-27B, an Apache-2.0 open-weights model designed to handle frequent, structured decisions inside AI agent workflows while retaining the underlying model&#x27;s full ..."
+    }
+  ]
+}

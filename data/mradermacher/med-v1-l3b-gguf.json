@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Med-V1-L3B-GGUF",
+  "slug": "mradermacher-med-v1-l3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Med-V1-L3B-GGUF",
+  "created_at": "2026-03-13T09:58:06.000Z",
+  "updated_at": "2026-10-02T23:00:24.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:nlm-dir/Med-V1-L3B",
+    "base_model:quantized:nlm-dir/Med-V1-L3B",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 211,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 29288883456,
+  "storage_human": "29.3 GB",
+  "base_model": "nlm-dir/Med-V1-L3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cdiscount : des prix bas qui ont de la voix",
+      "url": "https://www.cdiscount.com/?msockid=0940bb8c1da162d31f02ac6b1c73637e",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "Meuble Salle de Bain - Cdiscount",
+      "url": "https://www.cdiscount.com/maison/meubles-mobilier/meuble-salle-bain/v-1176004-1176004.html?msockid=0940bb8c1da162d31f02ac6b1c73637e",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "International sales - Cdiscount Marketplace",
+      "url": "https://marketplace.cdiscount.com/en/service/international-sales/",
+      "snippet": "Cdiscount offers you the possibility to send your products to our customers in 9 European countries! Ship to Germany, Belgium, Italy, …"
+    },
+    {
+      "title": "Starten Sie Ihre Shop - Cdiscount Marketplace",
+      "url": "https://marketplace.cdiscount.com/de/starten-sie-ihre-shop/",
+      "snippet": "Einen Shop bei Cdiscount zu eröffnen bedeutet, sich einem der mächtigsten Marktplätze Europas mit mehr als 23 Millionen …"
+    },
+    {
+      "title": "Séjour Tunisie pas cher - Cdiscount Voyages - Paiement 4X",
+      "url": "https://sejour.cdiscount.com/serp?s_c.de=af.tn",
+      "snippet": "Quelles solutions pour partir pas cher en Tunisie ? Cdiscount Voyages propose une liste de séjours au soleil classés selon plusieurs …"
+    }
+  ]
+}

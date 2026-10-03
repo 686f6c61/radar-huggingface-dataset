@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "12384-0ashntoi/Qwen3-4B-Think-SFT-MLX",
+  "slug": "12384-0ashntoi-qwen3-4b-think-sft-mlx",
+  "author": "12384-0ashntoi",
+  "url": "https://huggingface.co/12384-0ashntoi/Qwen3-4B-Think-SFT-MLX",
+  "created_at": "2026-10-02T23:00:58.000Z",
+  "updated_at": "2026-10-02T23:19:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "reasoning",
+    "synthetic-data",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:openai/gsm8k",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404543,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalkulator kredytowy - kalkulator rat kredytu hipotecznego",
+      "url": "https://www.bankier.pl/smart/narzedzia/kalkulator-kredytu-hipotecznego-raty-koszt",
+      "snippet": "Kilka instytucji, np. ING Bank Śląski, BNP Paribas Bank, wymaga, aby relacja pomiędzy kwotą kredytu hipotecznego a wartością …"
+    },
+    {
+      "title": "Promocja konta w BNP Paribas. Do wzięcia 1000 zł i polisa, ale bank ...",
+      "url": "https://www.bankier.pl/wiadomosc/Promocja-konta-w-BNP-Paribas-Do-wziecia-1000-zl-i-polisa-ale-bank-stawia-nowy-warunek-9174688.html",
+      "snippet": "Jul 29, 2026 · O 300 zł wzrosła premia w promocji „Podróżnik” banku BNP Paribas. Aby zgarnąć okrągły 1000 zł, trzeba kilka razy w …"
+    },
+    {
+      "title": "1100 zł od BNP Paribas za konto osobiste. Jak je zdobyć i kiedy bank ...",
+      "url": "https://www.bankier.pl/wiadomosc/1100-zl-od-BNP-Paribas-za-konto-osobiste-Jak-je-zdobyc-i-kiedy-bank-wyplaci-premie-9197334.html",
+      "snippet": "Sep 15, 2026 · Po raz kolejny BNP Paribas zwiększył gwarantowane nagrody za założenie flagowego „Konta Otwartego na Ciebie” z …"
+    },
+    {
+      "title": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL)",
+      "url": "https://www.bankier.pl/gielda/notowania/akcje/BNPPPL/akcjonariat",
+      "snippet": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty …"
+    },
+    {
+      "title": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - Notowania …",
+      "url": "https://www.bankier.pl/inwestowanie/profile/quote.html?symbol=BNPPPL",
+      "snippet": "BNP Paribas Bank Polska Spółka Akcyjna (BNPPPL) - najnowsze wiadomości, aktualne notowania, forum dyskusyjne, komunikaty …"
+    }
+  ]
+}

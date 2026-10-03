@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sonda-1.0-4B-GGUF",
+  "slug": "mradermacher-sonda-1-0-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sonda-1.0-4B-GGUF",
+  "created_at": "2026-10-02T22:47:06.000Z",
+  "updated_at": "2026-10-02T23:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibration",
+    "jevk5",
+    "qwen3.5",
+    "sonda",
+    "polish",
+    "pl",
+    "en",
+    "base_model:Mr-Shmoo/sonda-1.0-4B",
+    "base_model:quantized:Mr-Shmoo/sonda-1.0-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906335744,
+  "storage_human": "38.9 GB",
+  "base_model": "Mr-Shmoo/sonda-1.0-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "x' 为什么也叫做x prime ，prime不是素数吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/430355710",
+      "snippet": "在英文环境中， 角分符号 称作“prime”源于误读。因为在20世纪初期，x′ 读作“ x prime ”并不是因为在 x 后跟着一个“prime 符号”，而因 …"
+    },
+    {
+      "title": "华硕主板M.2塑料卡扣固定方式 - 知乎",
+      "url": "https://www.zhihu.com/zvideo/1465336761191194624",
+      "snippet": "Jan 13, 2022 · 部分华硕主板，比如Prime B450M-K， 主板的M.2 SSD并不是依靠传统的螺柱加螺钉固定的，而是用配件里的M.2 固定 …"
+    },
+    {
+      "title": "Netflix, Prime Video, Hulu, HBO 等国外流媒体公司分别有哪些优势？",
+      "url": "https://www.zhihu.com/question/309560443",
+      "snippet": "怎么？ 3GB多一集的无广告、纯净英文字幕版本 Outsider不清晰不香吗？ Netflix我就心甘情愿的每个月交钱，HBO？ 给劳资爬， …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/662115267",
+      "snippet": "这个倒是没必要买了 prime系列就是华硕的丐中丐. 我觉得吧 你如果不介意的话 可以去海鲜市场淘一块z690 华硕 微星 的都行 …"
+    },
+    {
+      "title": "怎样注册亚马逊Prime 会员？ - 知乎",
+      "url": "https://www.zhihu.com/question/49492619",
+      "snippet": "6、确认是否使用系统自动选择的支付方式用于支付Prime会员费，您也可以选择其他银行卡。 仔细阅读确认页面声明，点击【我同意 …"
+    }
+  ]
+}

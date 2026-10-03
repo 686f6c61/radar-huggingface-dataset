@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nirmanpatel/ppo-LunarLander-v3",
+  "slug": "nirmanpatel-ppo-lunarlander-v3",
+  "author": "nirmanpatel",
+  "url": "https://huggingface.co/nirmanpatel/ppo-LunarLander-v3",
+  "created_at": "2026-10-02T20:43:09.000Z",
+  "updated_at": "2026-10-02T20:43:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284286,
+  "storage_human": "284286 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Suggerimento: se accedi su un computer pubblico, assicurati di uscire prima di spegnerlo. Scopri come eseguire …"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    },
+    {
+      "title": "mail.com这个国外邮箱怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/47617745",
+      "snippet": "mail.com这个国外邮箱怎么样？ 如题，因为国内邮箱我都试过了，我的全拼都被注册了，无奈只有找国外邮箱了，还好http://mail.com …"
+    },
+    {
+      "title": "有没有了解每日邮报的网站 Mail Online 的？ - 知乎",
+      "url": "https://www.zhihu.com/question/20831164/answers/updated",
+      "snippet": "在美国市场的成功，也促使mail online雄心勃勃计划于2014年1月推出dailymail.com.au ，在现有新闻基础上挖掘澳洲本土消息增加新 …"
+    },
+    {
+      "title": "Login ke Gmail - Komputer - Bantuan Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel atau tablet Anda. …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/NeoHorse-1-4B-onw",
+  "slug": "ryugyosoft-neohorse-1-4b-onw",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/NeoHorse-1-4B-onw",
+  "created_at": "2026-10-02T23:12:56.000Z",
+  "updated_at": "2026-10-02T23:14:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onw",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onw",
+    "qwen3_5_text",
+    "openvino",
+    "npu",
+    "intel",
+    "agent",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:finetune:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2499027580,
+  "storage_human": "2.5 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyBroadband – South Africa's biggest and best IT news website, …",
+      "url": "https://mybroadband.co.za/news/",
+      "snippet": "MyBroadband – South Africa's biggest and best IT news website, covering the latest international and local IT and tech news."
+    },
+    {
+      "title": "South Africa gets a new free streaming service – MyBroadband",
+      "url": "https://mybroadband.co.za/news/broadcasting/647891-south-africa-gets-a-new-free-streaming-service.html",
+      "snippet": "May 16, 2026 · South African residents have gained access to a new free-to-view streaming platform, Afree TV, dedicated to …"
+    },
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Contacts – LG",
+      "url": "https://companies.mybroadband.co.za/lg/contacts/",
+      "snippet": "LG Electronics South Africa Mr Matthew Louw Corporate Marketing Email: matthew.louw@lge.com Ms Karen Cooper PR & …"
+    },
+    {
+      "title": "Deon Koegelenberg from Agile Bridge on AI and the future of software ...",
+      "url": "https://whatsnext.mybroadband.co.za/series/1/season/14/episode/14",
+      "snippet": "Aug 28, 2026 · AI-powered software development is rapidly changing how South African businesses build technology, automate …"
+    }
+  ]
+}

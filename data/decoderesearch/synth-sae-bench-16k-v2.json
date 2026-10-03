@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "decoderesearch/synth-sae-bench-16k-v2",
+  "slug": "decoderesearch-synth-sae-bench-16k-v2",
+  "author": "decoderesearch",
+  "url": "https://huggingface.co/decoderesearch/synth-sae-bench-16k-v2",
+  "created_at": "2026-10-02T20:17:17.000Z",
+  "updated_at": "2026-10-02T21:48:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "saelens",
+  "languages": [],
+  "tags": [
+    "saelens",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52104608,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "1 day ago · Stack Overflow | The World’s Largest Online Community for Developers"
+    },
+    {
+      "title": "盐言故事 - 知乎",
+      "url": "https://www.zhihu.com/org/yan-yan-gu-shi",
+      "snippet": "Sep 23, 2026 · 盐言宝藏长篇推荐！正道明珠VS阴湿蛊王 在盐看一部45W字的长篇小说很小众，但是《昆山玉碎录》（作者：沈婵） …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "git - SSL certificate problem: self signed certificate in certificate ...",
+      "url": "https://stackoverflow.com/questions/57327608/ssl-certificate-problem-self-signed-certificate-in-certificate-chain",
+      "snippet": "Aug 2, 2019 · @Meredith Usually it's a content filter/proxy/firewall that filters the SSL traffic in your network and uses the self signed …"
+    },
+    {
+      "title": "Jade Venus - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/jade-venus.729476/",
+      "snippet": "Sep 23, 2026 · Hey guys and girls. who else would like to taste Jade Venus’s wonderful cock?"
+    }
+  ]
+}

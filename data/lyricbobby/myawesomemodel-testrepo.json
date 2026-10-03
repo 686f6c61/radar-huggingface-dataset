@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LyricBobby/MyAwesomeModel-TestRepo",
+  "slug": "lyricbobby-myawesomemodel-testrepo",
+  "author": "LyricBobby",
+  "url": "https://huggingface.co/LyricBobby/MyAwesomeModel-TestRepo",
+  "created_at": "2026-10-02T21:20:38.000Z",
+  "updated_at": "2026-10-02T21:21:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "amaleaked.co",
+      "url": "https://amaleaked.co/lily-taylor/",
+      "snippet": ""
+    },
+    {
+      "title": "Telegram: Join Group Chat",
+      "url": "https://t.me/+N0zAHfuiekcwYzgx",
+      "snippet": "You are invited to a group chat on Telegram. Click to join:"
+    },
+    {
+      "title": "Anyone know any sites similar to kingdom leaks? : r/Emo - Reddit",
+      "url": "https://www.reddit.com/r/Emo/comments/k36flc/anyone_know_any_sites_similar_to_kingdom_leaks/",
+      "snippet": "Since they’re shutting down at the end of the month. I’d like to find another site similar where i can get a wide selection of music. …"
+    },
+    {
+      "title": "Warning regarding malicious website links disguised as .mov ... - Reddit",
+      "url": "https://www.reddit.com/r/editors/comments/13j0saz/warning_regarding_malicious_website_links/",
+      "snippet": "May 16, 2023 · ICANN/Google have done a very silly thing and registered .mov and .zip as top-level domains for URLs; despite them …"
+    },
+    {
+      "title": "Data Breach Search Engine & Leak Checker — CheckLeaked",
+      "url": "https://checkleaked.cc/",
+      "snippet": "8 hours ago · Check if your email, phone or username has been exposed in a data breach. Free searches plus a developer API for …"
+    }
+  ]
+}

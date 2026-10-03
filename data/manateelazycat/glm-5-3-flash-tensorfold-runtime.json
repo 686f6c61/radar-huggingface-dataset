@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/GLM-5.3-Flash-TensorFold-Runtime",
+  "slug": "manateelazycat-glm-5-3-flash-tensorfold-runtime",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/GLM-5.3-Flash-TensorFold-Runtime",
+  "created_at": "2026-10-01T10:34:58.000Z",
+  "updated_at": "2026-10-03T00:38:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorfold",
+    "inference-runtime",
+    "arm64",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5929983117,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.3-Flash · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.3-Flash",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TensorFold/GLM-5.3-Flash-MLX-oQ4-MTP · Hugging Face",
+      "url": "https://huggingface.co/TensorFold/GLM-5.3-Flash-MLX-oQ4-MTP",
+      "snippet": "Architecture GLM-5.3-Flash is Z.ai&#x27;s first natively multimodal GLM-5 model. It combines KDA linear-attention layers with periodic sparse-attention layers, a sparse mixture-of-experts feed-forward stack, manifold-constrained hyper-connections, and a native next-token prediction layer."
+    },
+    {
+      "title": "tensorfold/docs/recipes/glm-5.3-flash.md at main - GitHub",
+      "url": "https://github.com/atveit/tensorfold/blob/main/docs/recipes/glm-5.3-flash.md",
+      "snippet": "Set up both Sparks as in the runbook (the container with the network devices, NCCL pointed at the link), then on each: tensorfold pull Vontra/GLM-5.3-Flash-MLX-4bit-MTP tensorfold pull incoai/GLM-5.3-Flash-DFlash2 # optional, non-commercial (below) The checkpoint is MIT-licensed. The DFlash2 draft ..."
+    },
+    {
+      "title": "GLM-5.3-Flash by Z.ai | Model Library | Modal",
+      "url": "https://modal.com/library/zai/glm-5-3-flash",
+      "snippet": "Model GLM-5.3-Flash pairs sparse attention with linear attention in a hybrid architecture that reduces attention computation and KV-cache size. Trained on a multimodal corpus, it integrates visual understanding directly into coding and agentic workflows. Full details are in Z.ai&#x27;s announcement."
+    },
+    {
+      "title": "GLM-5.3-Flash/FlashX - Overview - Z.AI DEVELOPER DOCUMENT",
+      "url": "https://docs.z.ai/guides/vlm/glm-5.3-flash",
+      "snippet": "How to Use Model API Model Code： glm-5.3-flash / glm-5.3-flashx API Documentation： Chat Completion API Parameter Settings：Text parameters are consistent with GLM-5.3, with support for a 1M-token context window."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "an-lazarus/ai-studio-voice",
+  "slug": "an-lazarus-ai-studio-voice",
+  "author": "an-lazarus",
+  "url": "https://huggingface.co/an-lazarus/ai-studio-voice",
+  "created_at": "2026-10-02T20:19:31.000Z",
+  "updated_at": "2026-10-02T20:47:42.000Z",
+  "license": "mixed-see-notice",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio-to-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20182875937,
+  "storage_human": "20.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assemblée nationale ~ Les députés, le vote de la loi, le Parlement …",
+      "url": "https://www.assemblee-nationale.fr/",
+      "snippet": "Oct 15, 2010 · L’Assemblée nationale se situe au cœur de notre démocratie. Elle est née en 1789 lorsque les députés du tiers-Etat …"
+    },
+    {
+      "title": "Accueil - France Titres (ANTS)",
+      "url": "https://ants.gouv.fr/",
+      "snippet": "France Titres vous accompagne au quotidien dans la réalisation de vos démarches en ligne concernant l’immatriculation, le permis …"
+    },
+    {
+      "title": "An — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/An",
+      "snippet": "An est un nom de famille notamment porté par : An, nom chinois, An, romanisation alternative du nom coréen Ahn, An Baul, judoka …"
+    },
+    {
+      "title": "Définitions : an, ans - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/an/3163",
+      "snippet": "an, ans - Définitions Français : Retrouvez la définition de an, ans, ainsi que les synonymes, homonymes, expressions, difficultés, …"
+    },
+    {
+      "title": "Les agendas - Assemblée nationale",
+      "url": "https://www2.assemblee-nationale.fr/agendas/les-agendas",
+      "snippet": "13h00 Mission d'information sur le projet de loi de finances 2027"
+    }
+  ]
+}

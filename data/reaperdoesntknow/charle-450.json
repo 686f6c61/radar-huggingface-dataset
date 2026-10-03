@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/charle-450",
+  "slug": "reaperdoesntknow-charle-450",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/charle-450",
+  "created_at": "2026-10-02T19:17:48.000Z",
+  "updated_at": "2026-10-02T19:18:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tamelm_two_axis",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 410256184,
+  "parameters_human": "410.3M",
+  "storage_bytes": 1641067968,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-03T02:19:53.909Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Install Xeno on Windows | Xeno Guide",
+      "url": "https://xeno.baby/guides/how-to-install-xeno",
+      "snippet": "Install Xeno on Windows 10/11: extract the archive, add Defender exclusions, and prepare dependencies. English Windows 10/11 …"
+    },
+    {
+      "title": "Xeno - Download",
+      "url": "https://www.xeno.rest/",
+      "snippet": "Experience the next generation of scripting"
+    },
+    {
+      "title": "Xeno - Discord",
+      "url": "https://discord.com/invite/27tXeM3RwR",
+      "snippet": "A chill community server mainly to hang out and talk to people around the world, and make new friends. | 591507 members"
+    },
+    {
+      "title": "Xeno Executor for Windows download | SourceForge.net",
+      "url": "https://sourceforge.net/app/xeno-executor/",
+      "snippet": "Jul 4, 2026 · Download Xeno Executor for Windows for free. Xeno Executor is a third-party Lua script executor designed to run user …"
+    },
+    {
+      "title": "Update Xeno After Roblox Patch | Xeno Guide",
+      "url": "https://xeno.baby/guides/xeno-after-update",
+      "snippet": "Update Xeno the same day as a Roblox patch: re-download, clean install, re-attach, retest scripts. English Windows 10/11 …"
+    }
+  ]
+}

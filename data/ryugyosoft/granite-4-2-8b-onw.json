@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/granite-4.2-8b-onw",
+  "slug": "ryugyosoft-granite-4-2-8b-onw",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/granite-4.2-8b-onw",
+  "created_at": "2026-10-02T23:15:10.000Z",
+  "updated_at": "2026-10-03T02:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onw",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onw",
+    "granite",
+    "openvino",
+    "npu",
+    "intel",
+    "agent",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:finetune:ibm-granite/granite-4.2-8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5256199198,
+  "storage_human": "5.3 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-8b · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b",
+      "snippet": "Granite-4.2-8B supports tool calling with integrated reasoning — the model thinks about which tool to call and why before making the call. Tools are defined using the OpenAI function definition schema."
+    },
+    {
+      "title": "Granite 4.2 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite 4.2 8B: IBM&#x27;s Apache-2.0 Reasoning Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/granite-4-2-8b/",
+      "snippet": "Granite 4.2 8B is IBM&#x27;s Apache-2.0 dense reasoning model, released 25 Aug 2026 with a switchable thinking mode, 128K context and 47.67 on SWE-bench Verified."
+    },
+    {
+      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Build with Granite Granite models drive the AI behind many IBM products and services. Discover ready-to-use solutions for code generation, application development, and model testing. All powered by IBM Granite. Speed up coding and streamline development with AI and automation leveraging Granite models."
+    }
+  ]
+}

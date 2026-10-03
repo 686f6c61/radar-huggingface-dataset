@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Tesaractiusmaximusdiloiuas/21312da21321321",
+  "slug": "tesaractiusmaximusdiloiuas-21312da21321321",
+  "author": "Tesaractiusmaximusdiloiuas",
+  "url": "https://huggingface.co/Tesaractiusmaximusdiloiuas/21312da21321321",
+  "created_at": "2026-10-02T23:59:08.000Z",
+  "updated_at": "2026-10-02T23:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models - Download & Run Online | TensorHub Art",
+      "url": "https://tensorhub.art/models",
+      "snippet": "Browse and run AI models on TensorArt. Explore ZImage, Flux, Illustrious XL, Wan 2.2, Stable Diffusion, and more. Download checkpoints, LoRAs, and..."
+    },
+    {
+      "title": "Momma T-Rex (Ice Age 3) [PonyXL/Illustrious] - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/e3b671d6ee56046bc8d225f4d4a1906a",
+      "snippet": "Explore Momma T-Rex (Ice Age 3) [PonyXL/Illustrious] model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Illustrious XL Models & 199K+ LoRAs | Civitai",
+      "url": "https://civitai.com/ecosystems/illustrious",
+      "snippet": "Download Illustrious XL checkpoints and 199K+ LoRAs, or generate online. The SDXL anime model for booru-tag prompts and consistent characters."
+    },
+    {
+      "title": "t-rex - Free AI Image Generation Models | SeaArt",
+      "url": "https://www.seaart.ai/tagInfo/model/t-rex",
+      "snippet": "Explore thousands of t-rex AI models. Find your go-to AI Art/Image generation models and create your desired AI art quickly."
+    },
+    {
+      "title": "Illustrious XL - v1.1 - TensorArt Exclusive... | Tensor.Art",
+      "url": "https://tensor.art/models/828880417261278861",
+      "snippet": "Download Illustrious XL - v1.1 - free CHECKPOINT Illustrious AI model on TENSOR. Anima, Anime, Illustration. By Onoma AI"
+    }
+  ]
+}

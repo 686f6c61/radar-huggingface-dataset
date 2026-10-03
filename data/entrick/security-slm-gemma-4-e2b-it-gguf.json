@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "entrick/Security-SLM-Gemma-4-E2B-it-GGUF",
+  "slug": "entrick-security-slm-gemma-4-e2b-it-gguf",
+  "author": "entrick",
+  "url": "https://huggingface.co/entrick/Security-SLM-Gemma-4-E2B-it-GGUF",
+  "created_at": "2026-05-08T10:42:57.000Z",
+  "updated_at": "2026-10-02T23:03:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "cybersecurity",
+    "ai-security",
+    "agentic-ai",
+    "red-team",
+    "blue-team",
+    "mcp-security",
+    "prompt-injection",
+    "jailbreaking",
+    "rag-security",
+    "vector-db-attacks",
+    "web-pentesting",
+    "api-pentesting",
+    "burp-suite",
+    "reconnaissance",
+    "model-fingerprinting",
+    "injection-attacks",
+    "authentication-attacks",
+    "cloud-security",
+    "sovereign-ai",
+    "security-operations",
+    "pentest-reporting",
+    "tool-use",
+    "gemma",
+    "unsloth",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:entrick/security-slm-dataset",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 13,
+  "downloads_30d": 59432,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 28410730280,
+  "storage_human": "28.4 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "entrick/Security-SLM-Gemma-4-E2B-it-GGUF - Hugging Face",
+      "url": "https://huggingface.co/entrick/Security-SLM-Gemma-4-E2B-it-GGUF",
+      "snippet": "A compact sovereign AI cybersecurity assistant for authorised red-team, blue-team, and SOC work. Security-SLM fine-tunes Gemma 4 E2B with LoRA rank 16 on a ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cybersecurity",
+      "snippet": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF. Image-Text-to-Text • 9B ... entrick/Security-SLM-Gemma-4-E2B-it-GGUF. Text Generation • 5B • Updated 27 ..."
+    },
+    {
+      "title": "unsloth/gemma-4-E2B-it-GGUF - Hugging Face",
+      "url": "https://huggingface.co/unsloth/gemma-4-E2B-it-GGUF",
+      "snippet": "22.09.2026 ... Start the llama.cpp server · Configure the model in Pi. # Install Pi: npm install -g @earendil-works/pi-coding-agent # Add to ~/. · Run Pi. # ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=gemma",
+      "snippet": "shisa-ai/shisa-de-1. Text Classification • 26B • Updated 2 days ago • 222 ... entrick/Security-SLM-Gemma-4-E2B-it-GGUF. Text Generation • 5B • Updated 26 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=red-team",
+      "snippet": "entrick/Security-SLM-Gemma-4-E2B-it-GGUF. Text Generation • 5B • Updated 24 days ago • 49.6k • 12 · deadbydawn101/RavenX-Sec-8B-Security-RATH-128k-mlx-4bit."
+    }
+  ]
+}

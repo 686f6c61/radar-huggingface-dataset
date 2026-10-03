@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "peasantsmith/CYBER-FROST-3.8-PS-GUFF",
+  "slug": "peasantsmith-cyber-frost-3-8-ps-guff",
+  "author": "peasantsmith",
+  "url": "https://huggingface.co/peasantsmith/CYBER-FROST-3.8-PS-GUFF",
+  "created_at": "2026-10-01T21:33:00.000Z",
+  "updated_at": "2026-10-03T00:27:22.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen",
+    "qwen4-exp",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "cybersecurity",
+    "security-research",
+    "red-team",
+    "blue-team",
+    "tool-use",
+    "quantized",
+    "imatrix",
+    "text-generation",
+    "en",
+    "base_model:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "base_model:quantized:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 179551050368,
+  "parameters_human": "179.55B",
+  "storage_bytes": 225069207168,
+  "storage_human": "225.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next, Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Links Behind Mia's AI Lab: The Full Exposé",
+      "url": "https://x.com/Blackwellboy/status/2106038669224333463",
+      "snippet": "vor 11 Stunden ... I'm crediting them because I used their model as the research engine, and it was seriously impressive at the job. Original CYBER-FROST 3.8 ..."
+    }
+  ]
+}

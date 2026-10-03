@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Deviant65/my_smolvla_32batch",
+  "slug": "deviant65-my_smolvla_32batch",
+  "author": "Deviant65",
+  "url": "https://huggingface.co/Deviant65/my_smolvla_32batch",
+  "created_at": "2026-10-02T19:49:40.000Z",
+  "updated_at": "2026-10-02T19:50:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Deviant65/so101_redcube_3cam",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906729776,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "StripChat Tokens 2027 - GitHub",
+      "url": "https://github.com/StripChat-Tokens-2027/",
+      "snippet": "Aug 29, 2026 · StripChat Tokens 2027 has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "[nsfw] stripchat.com: breakage · Issue #17917 · uBlockOrigin/uAssets",
+      "url": "https://github.com/uBlockOrigin/uAssets/issues/17917",
+      "snippet": "May 3, 2023 · Prerequisites This is not a support issue or a question. For support, questions, or help, visit /r/uBlockOrigin. I …"
+    },
+    {
+      "title": "Stripchat Video Downloader · GitHub",
+      "url": "https://gist.github.com/devinschumacher/b5fbf6a99a35e62313ff6bcb9cef3cf0",
+      "snippet": "Stripchat Downloader is a browser extension built for users who want a cleaner way to keep Stripchat live broadcasts and saved …"
+    },
+    {
+      "title": "stripchat StreaMonitor plugin updated · GitHub",
+      "url": "https://gist.github.com/bloomfi3ld/b16bb31ef61a9f4ad4f962212e769e5d",
+      "snippet": "Oct 30, 2025 · stripchat StreaMonitor plugin updated. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "mahiyama/Sazanami-Embed-310m",
+  "slug": "mahiyama-sazanami-embed-310m",
+  "author": "mahiyama",
+  "url": "https://huggingface.co/mahiyama/Sazanami-Embed-310m",
+  "created_at": "2026-10-03T00:09:37.000Z",
+  "updated_at": "2026-10-03T00:09:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "bi-encoder",
+    "dense-retrieval",
+    "information-retrieval",
+    "japanese",
+    "sentence-similarity",
+    "ja",
+    "dataset:mahiyama/auto-wiki-qa",
+    "dataset:mahiyama/mqa-ja",
+    "dataset:mahiyama/mmarco-ja",
+    "dataset:mahiyama/miracl-retrieval",
+    "dataset:mahiyama/mrtydi",
+    "dataset:mahiyama/amagasaki-qna",
+    "dataset:mahiyama/quiz-works",
+    "dataset:mahiyama/quiz-no-mori",
+    "dataset:mahiyama/anlp-meeting-retrieval",
+    "dataset:mahiyama/kosodate-faq-pairs-ja",
+    "base_model:sbintuitions/modernbert-ja-310m",
+    "base_model:finetune:sbintuitions/modernbert-ja-310m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 314611968,
+  "parameters_human": "314.6M",
+  "storage_bytes": 1258462760,
+  "storage_human": "1.3 GB",
+  "base_model": "sbintuitions/modernbert-ja-310m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows Terminal SSH | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh",
+      "snippet": "May 29, 2024 · Access Windows SSH Client and SSH Server The latest builds of Windows 10 and Windows 11 include a built-in SSH …"
+    },
+    {
+      "title": "Get started with OpenSSH Server for Windows | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse",
+      "snippet": "Sep 4, 2025 · Learn how to install and connect to remote machines using the OpenSSH Client and Server for Windows."
+    },
+    {
+      "title": "How to Enable SSH in Windows 11? Step-By-Step",
+      "url": "https://gadgetsnurture.com/how-to-enable-ssh-in-windows-11/",
+      "snippet": "Mar 24, 2026 · Enable SSH in Windows 11 with easy steps. Activate OpenSSH, configure settings, and securely connect to remote …"
+    },
+    {
+      "title": "How to activate Windows 11 SSH - IONOS",
+      "url": "https://www.ionos.com/digitalguide/server/configuration/windows-11-ssh/",
+      "snippet": "Oct 6, 2023 · It is easy to activate Windows 11 SSH. We’ll explain how to use Windows SSH and what it has to offer."
+    },
+    {
+      "title": "How to Use SSH to Remotely Connect to Windows 10 or 11 - TheITBros",
+      "url": "https://theitbros.com/ssh-into-windows/",
+      "snippet": "Apr 19, 2026 · In this tutorial, we will show you how to install, enable, and configure the OpenSSH server on Windows Server or …"
+    }
+  ]
+}

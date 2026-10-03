@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "evandekim/smol-ladder-sft-b5-s2",
+  "slug": "evandekim-smol-ladder-sft-b5-s2",
+  "author": "evandekim",
+  "url": "https://huggingface.co/evandekim/smol-ladder-sft-b5-s2",
+  "created_at": "2026-10-02T23:33:40.000Z",
+  "updated_at": "2026-10-02T23:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487209196,
+  "storage_human": "487 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Evan-Kim2028/smol-ladder: Skill or information? Transfer and ...",
+      "url": "https://github.com/Evan-Kim2028/smol-ladder",
+      "snippet": "Does RL training of small data-analysis agents transfer, and when a model fails, is it missing skill or information? Built on SmolDataEnvs and the information ladder."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    },
+    {
+      "title": "Best AI Models 2026 | Latest Leaderboard & Monthly Rankings",
+      "url": "https://blog.buildfastwithai.com/best-ai-models",
+      "snippet": "Best AI Models & Leaderboards The definitive monthly AI model leaderboard — benchmarks, comparisons, and rankings updated every month."
+    },
+    {
+      "title": "LLM Leaderboard (October 2026) — Intelligence, Coding & Speed ...",
+      "url": "https://modelgrep.com/leaderboard",
+      "snippet": "Live LLM leaderboard ranking 300+ large language models by the Artificial Analysis Intelligence, Coding and Agentic indexes — with speed, latency and pricing on every row. Updated hourly."
+    }
+  ]
+}

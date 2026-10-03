@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lazybrick/Qwen3.5-4B-Kiln-AWQ-W4A16-g128",
+  "slug": "lazybrick-qwen3-5-4b-kiln-awq-w4a16-g128",
+  "author": "lazybrick",
+  "url": "https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AWQ-W4A16-g128",
+  "created_at": "2026-10-03T00:17:04.000Z",
+  "updated_at": "2026-10-03T00:46:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "quantized",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "awq",
+    "w4a16",
+    "int4",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989424,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Namira on X: \"Bocil topeng ungu yang lagi viral …",
+      "url": "https://x.com/laxmbai/status/2101694247082873139",
+      "snippet": "Sep 20, 2026 · Bocil topeng ungu yang lagi viral cdn2.vidy.my/lplGqq.mp4 cdn2.vidy.my/ie1x3i.mp4 cdn2.vidy.my/X9r9ZC.mp4 …"
+    },
+    {
+      "title": "Bocil topeng ungu yang viral https://t.co/k08tc0rjgj https://t.co ...",
+      "url": "https://x.com/calebtcakgr/status/2105690806522949957",
+      "snippet": "Bocil topeng ungu yang viral https://t.co/k08tc0rjgj https://t.co/k08tc0rjgj https://t.co/k08tc0rjgj King Indo Malam Jumat Mitch Baker …"
+    },
+    {
+      "title": "Bocil Topeng Ungu Viral - Instagram",
+      "url": "https://www.instagram.com/popular/bocil-topeng-ungu-viral/",
+      "snippet": "Bocil Topeng Ungu is an Indonesian viral meme featuring a child wearing a purple mask or Buto costume in short videos. The trend …"
+    },
+    {
+      "title": "bocil topeng ungu fullpack.zip",
+      "url": "https://www.terabox.app/sharing/link?surl=xDXzeMZzXUernRQVQqMt4A",
+      "snippet": "bocil topeng ungu fullpack.zip - Please input the extraction code to send large files and share files online with TeraBox."
+    },
+    {
+      "title": "Bocil Topeng Ungu #bociltopengungu #topengungu #ungu #topeng",
+      "url": "https://www.tiktok.com/@bociltopengungu/video/7496783082431778070",
+      "snippet": "Bocil Topeng Ungu …"
+    }
+  ]
+}

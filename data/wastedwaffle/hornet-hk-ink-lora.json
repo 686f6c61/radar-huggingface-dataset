@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WastedWaffle/hornet-hk-ink-lora",
+  "slug": "wastedwaffle-hornet-hk-ink-lora",
+  "author": "WastedWaffle",
+  "url": "https://huggingface.co/WastedWaffle/hornet-hk-ink-lora",
+  "created_at": "2026-10-02T20:16:39.000Z",
+  "updated_at": "2026-10-02T20:23:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 479549301,
+  "storage_human": "480 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Using Google Maps offline (Js Api) - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/33235835/using-google-maps-offline-js-api",
+      "snippet": "Oct 20, 2015 · I'm trying to make an NodeJs App in which, on web page I'm using Maps, For some reasons I've chosen Google Maps …"
+    },
+    {
+      "title": "Thêm, chỉnh sửa hoặc xoá bài đánh giá và điểm xếp hạng trên …",
+      "url": "https://support.google.com/maps/answer/6230175?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Trên Google Maps, bạn có thể viết bài đánh giá về những địa điểm mà bạn ghé thăm. Bạn cũng có thể để lại thông tin hoặc đăng …"
+    },
+    {
+      "title": "Use Gemini while you navigate - Android - Google Maps Help",
+      "url": "https://support.google.com/maps/answer/6041199?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Talk to Gemini in Maps On your Android phone or tablet, open the Google Maps app . If you haven't used Gemini yet, get started …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Google Maps API for C# - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/34597229/google-maps-api-for-c-sharp",
+      "snippet": "I'm really new to using APIs so after looking on Google Maps API page, I'm not sure if there are APIs designed to be used for C#. I …"
+    }
+  ]
+}

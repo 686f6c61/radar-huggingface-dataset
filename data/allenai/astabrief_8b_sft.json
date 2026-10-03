@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "allenai/AstaBrief_8B_SFT",
+  "slug": "allenai-astabrief_8b_sft",
+  "author": "allenai",
+  "url": "https://huggingface.co/allenai/AstaBrief_8B_SFT",
+  "created_at": "2026-09-10T23:36:30.000Z",
+  "updated_at": "2026-10-02T22:51:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "qwen3",
+    "supervised-fine-tuning",
+    "deep-research",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:allenai/AstaBrief_SFT_Mix",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106492506275,
+  "storage_human": "106.5 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai (Ai2) - Hugging Face",
+      "url": "https://huggingface.co/allenai",
+      "snippet": "models 972. Sort: Recently updated · allenai/AstaBrief_8B · allenai/AstaBrief_8B_SFT · allenai/SamudrACE-E3SMv3 · allenai/ACE2S-SHiELD-plus · allenai/OlmoEarth-v1_2- ..."
+    },
+    {
+      "title": "Ai2 Releases AstaBrief, Claims 3.5x Faster Research Reports - DIY AI",
+      "url": "https://diyai.io/news/ai2-astabrief-open-research-report-model/",
+      "snippet": "vor 8 Stunden ... Ai2 has released AstaBrief 8B, a downloadable model that turns research questions and supplied scientific excerpts into cited reports."
+    },
+    {
+      "title": "AstaBrief 8B vLLM Local Deployment for Private RAG - AIReiter",
+      "url": "https://aireiter.com/blog/astabrief-8b-vllm-local-deployment",
+      "snippet": "vor 5 Stunden ... The model card's example contains allenai/AstaBrief_8B_SFT , which is the supervised-fine-tuning predecessor. Treat that name mismatch as a ..."
+    },
+    {
+      "title": "Локальный запуск AstaBrief 8B через vLLM для приватного RAG",
+      "url": "https://aireiter.com/ru/blog/astabrief-8b-vllm-local-deployment",
+      "snippet": "vor 5 Stunden ... В примере из карточки модели указан allenai/AstaBrief_8B_SFT — это предшествующая версия, полученная на этапе supervised fine-tuning. ... model=\" ..."
+    },
+    {
+      "title": "AstaBrief 8B: deployment locale con vLLM per RAG privato - AIReiter",
+      "url": "https://aireiter.com/it/blog/astabrief-8b-vllm-local-deployment",
+      "snippet": "vor 7 Stunden ... Per questa guida usa il checkpoint finale allenai/AstaBrief_8B . L'esempio riportato nella model card contiene allenai/AstaBrief_8B_SFT , cioè ..."
+    }
+  ]
+}

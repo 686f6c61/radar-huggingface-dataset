@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2",
+  "slug": "openflowlm-qwen2-5-vl-3b-instruct-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Qwen2.5-VL-3B-Instruct-NPU2",
+  "created_at": "2026-10-02T21:46:42.000Z",
+  "updated_at": "2026-10-02T21:46:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4016970048,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "brazzers-fuck videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/brazzers-fuck",
+      "snippet": "BRAZZERS - When Manuel Can't Get His Wife To Fuck Him, He Switches His Focus To Sexy Delivery Girl Lexi Lore 10 min …"
+    },
+    {
+      "title": "'brazzers fucking' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=brazzers+fucking",
+      "snippet": "15,517 brazzers fucking FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "Brazzers XXX Fuck Porn Videos: brazzers.com - xHamster",
+      "url": "https://xhamster.com/channels/brazzers?tag=xxx-fuck",
+      "snippet": "Free Brazzers XXX Fuck porn videos from brazzers.com. Discover Brazzers sex videos featuring porn stars fucking in XXX scenes!"
+    },
+    {
+      "title": "'brazzers' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/brazzers",
+      "snippet": "Brazzers Brazzers - Krissy Lynn - Pornstars Like it Big 2.6M 100% 7min - 720p Brazzers Sexy fuck with Ashley Adams 5.3M 100% …"
+    },
+    {
+      "title": "'brazzers fuck' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/brazzers+fuck",
+      "snippet": "Brazzers - Dirty Masseur - Rub and Fuck Thy Neighbor scene starring Sheridan Love and Keiran Lee 26.4M 98% 8min - 720p"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "yinita",
   "url": "https://huggingface.co/yinita/ps4mas-rl-checkpoints",
   "created_at": "2026-09-27T12:31:07.000Z",
-  "updated_at": "2026-10-02T03:45:01.000Z",
+  "updated_at": "2026-10-03T03:06:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3530532519383,
-  "storage_human": "3530.5 GB",
+  "storage_bytes": 4507935673858,
+  "storage_human": "4507.9 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

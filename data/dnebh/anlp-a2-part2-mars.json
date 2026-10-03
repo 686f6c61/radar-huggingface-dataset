@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dnebh/anlp-a2-part2-mars",
+  "slug": "dnebh-anlp-a2-part2-mars",
+  "author": "dnebh",
+  "url": "https://huggingface.co/dnebh/anlp-a2-part2-mars",
+  "created_at": "2026-10-02T23:31:31.000Z",
+  "updated_at": "2026-10-02T23:32:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33489920,
+  "parameters_human": "33.5M",
+  "storage_bytes": 133967496,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neemon/anlp-a2-part2-mars · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a2-part2-mars",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - 5SSjw/MARS: Official repository of MARS (ACL&#x27;26).",
+      "url": "https://github.com/5SSjw/MARS",
+      "snippet": "Official repository of MARS (ACL&#x27;26). Contribute to 5SSjw/MARS development by creating an account on GitHub."
+    },
+    {
+      "title": "Mars Agentic Pipeline. Building Local Agent is hard. I will ... - Medium",
+      "url": "https://medium.com/@shushka.ivan/mars-agentic-pipeline-a14e95588bc8",
+      "snippet": "Building Local Agent is hard. I will briefly explain how Mars makes decision and how agent loop looks like."
+    },
+    {
+      "title": "CAMB-AI/MARS5-TTS · Hugging Face",
+      "url": "https://huggingface.co/CAMB-AI/MARS5-TTS",
+      "snippet": "Join our team Acknowledgements MARS5: A novel speech model for insane prosody. This is the repo for the MARS5 English speech model (TTS) from CAMB.AI. The model follows a two-stage AR-NAR pipeline with a distinctively novel NAR component (see more info in the docs)."
+    },
+    {
+      "title": "Camb-ai/MARS5-TTS: MARS5 speech model (TTS) from CAMB.AI - GitHub",
+      "url": "https://github.com/Camb-ai/MARS5-TTS",
+      "snippet": "This is the repo for the MARS5 English speech model (TTS) from CAMB.AI. The model follows a two-stage AR-NAR pipeline with a distinctively novel NAR component (see more info in the Architecture)."
+    }
+  ]
+}

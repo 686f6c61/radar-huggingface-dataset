@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AstaBrief_8B-GGUF",
+  "slug": "mradermacher-astabrief_8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AstaBrief_8B-GGUF",
+  "created_at": "2026-10-02T23:43:24.000Z",
+  "updated_at": "2026-10-03T00:13:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "deep-research",
+    "direct-preference-optimization",
+    "en",
+    "dataset:allenai/AstaBrief_DPO_Mix",
+    "base_model:allenai/AstaBrief_8B",
+    "base_model:quantized:allenai/AstaBrief_8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425338752,
+  "storage_human": "73.4 GB",
+  "base_model": "allenai/AstaBrief_8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "使用VS Studio，使用C#语言开发的项目提示处理器架构不匹配-CSDN …",
+      "url": "https://bbs.csdn.net/topics/392156504",
+      "snippet": "Apr 17, 2017 · 以下内容是CSDN社区关于使用VS Studio，使用C#语言开发的项目提示处理器架构不匹配相关内容，如果想了解更多 …"
+    },
+    {
+      "title": "c# Interlocked怎么操作bool变量-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/370145068",
+      "snippet": "Aug 22, 2011 · 以下内容是CSDN社区关于c# Interlocked怎么操作bool变量相关内容，如果想了解更多关于C#社区其他内容，请访 …"
+    },
+    {
+      "title": "Saucy 7 Little Words - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/saucy-7-little-words",
+      "snippet": "Sep 3, 2026 · Saucy Below you will find the solution for: Saucy 7 Little Words which contains 6 Letters. Saucy 7 Little Words"
+    },
+    {
+      "title": "Buffalo AAA baseballers - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/buffalo-aaa-baseballers-7-little-words-bonus-3",
+      "snippet": "Jun 11, 2025 · Buffalo AAA baseballers Below you will find the solution for: Buffalo AAA baseballers 7 Little Words which contains 6 …"
+    },
+    {
+      "title": "Garage band’s tape - 7 Little Words Answers",
+      "url": "https://mysticwordsanswers.org/game/garage-bands-tape",
+      "snippet": "In just a few seconds you will find the answer to the clue “ Garage band’s tape ” of the “ 7 little words game ”. Each bite-size puzzle in …"
+    }
+  ]
+}

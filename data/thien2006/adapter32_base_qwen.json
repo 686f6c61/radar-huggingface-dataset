@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "thien2006/adapter32_base_qwen",
+  "slug": "thien2006-adapter32_base_qwen",
+  "author": "thien2006",
+  "url": "https://huggingface.co/thien2006/adapter32_base_qwen",
+  "created_at": "2026-10-02T19:08:12.000Z",
+  "updated_at": "2026-10-02T19:08:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Thinking",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-VL-8B-Thinking",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360679227,
+  "storage_human": "361 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

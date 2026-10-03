@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Atlas-AI-research/reflex-reason-2b",
+  "slug": "atlas-ai-research-reflex-reason-2b",
+  "author": "Atlas-AI-research",
+  "url": "https://huggingface.co/Atlas-AI-research/reflex-reason-2b",
+  "created_at": "2026-10-02T19:48:45.000Z",
+  "updated_at": "2026-10-02T19:51:00.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "computer-use",
+    "browser-agent",
+    "web-agent",
+    "accessibility-tree",
+    "vision-language",
+    "reasoning",
+    "lora",
+    "image-text-to-text",
+    "en",
+    "dataset:stanfordnlp/nnetnav-wa",
+    "dataset:stanfordnlp/nnetnav-live",
+    "dataset:osunlp/Multimodal-Mind2Web",
+    "arxiv:2410.02907",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-2B-Instruct",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139518856,
+  "storage_human": "140 MB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opco Atlas | Atlas est l'opérateur de compétences des services ...",
+      "url": "https://www.opco-atlas.fr/",
+      "snippet": "Le 6 octobre, Atlas de tous les talents, web-émission de 2 heures 100 % accessible, réunira entreprises, CFA, organismes de …"
+    },
+    {
+      "title": "Vêtements Homme | Atlas For Men",
+      "url": "https://www.atlasformen.fr/homme/vetements-100.aspx",
+      "snippet": "Atlas for Men: la marque de vêtements homme en ligne confortables, des habits intemporels, et pas cher ! Comme dans un magasin …"
+    },
+    {
+      "title": "Vêtements pas chers, accessoires et chaussures Homme | Atlas For …",
+      "url": "https://www.atlasformen.fr/",
+      "snippet": "Créé en 1999, Atlas For Men est la marque des explorateurs nature, amateurs et passionnés. Avec des matières douces et chaudes …"
+    },
+    {
+      "title": "Meubles Atlas : spécialiste meubles, cuisine et literie",
+      "url": "https://www.meublesatlas.fr/",
+      "snippet": "Découvrez Meubles Atlas, le spécialiste Meubles, Cuisine, Literie et Déco. Consultez tous nos produits en ligne et rendez-nous visite …"
+    },
+    {
+      "title": "Atlas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Atlas",
+      "snippet": "Atlas est un nom de lieu notamment porté par : Atlas, un massif montagneux d'Afrique du Nord ; Atlas, une localité de Pennsylvanie, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/lfm2.5-audio-1.5b-asr-loom",
+  "slug": "loom-ai-org-lfm2-5-audio-1-5b-asr-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/lfm2.5-audio-1.5b-asr-loom",
+  "created_at": "2026-10-02T19:09:33.000Z",
+  "updated_at": "2026-10-02T19:52:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "loom",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:LiquidAI/LFM2.5-Audio-1.5B",
+    "base_model:quantized:LiquidAI/LFM2.5-Audio-1.5B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1290617777,
+  "parameters_human": "1.29B",
+  "storage_bytes": 5165159040,
+  "storage_human": "5.2 GB",
+  "base_model": "LiquidAI/LFM2.5-Audio-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "Best free online screen recording tool with advanced video editing and video storage trusted by over 22 million people and easy …"
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "On est une marque de vêtements, persuadée que pour rendre l’industrie textile vraiment plus vertueuse, il faut produire moins de …"
+    },
+    {
+      "title": "Télécharger Loom (gratuit) Windows, iOS, Mac, Web, Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche435849-loom-2.html",
+      "snippet": "Sep 22, 2026 · Loom est à la fois un logiciel pour Windows et Mac et un service en ligne dont le but principal est de permettre …"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    }
+  ]
+}

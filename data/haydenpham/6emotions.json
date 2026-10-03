@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "haydenpham/6emotions",
+  "slug": "haydenpham-6emotions",
+  "author": "haydenpham",
+  "url": "https://huggingface.co/haydenpham/6emotions",
+  "created_at": "2026-10-02T20:24:32.000Z",
+  "updated_at": "2026-10-02T20:25:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "safetensors",
+    "text-classification",
+    "emotion-detection",
+    "skops",
+    "transformers",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 774376462,
+  "storage_human": "774 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

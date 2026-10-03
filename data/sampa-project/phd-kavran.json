@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sampa-project/PhD-kavran",
+  "slug": "sampa-project-phd-kavran",
+  "author": "sampa-project",
+  "url": "https://huggingface.co/sampa-project/PhD-kavran",
+  "created_at": "2026-10-02T20:44:03.000Z",
+  "updated_at": "2026-10-02T20:45:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "sl"
+  ],
+  "tags": [
+    "pytorch",
+    "remote-sensing",
+    "land-use",
+    "land-cover",
+    "semantic-segmentation",
+    "graph-neural-network",
+    "dgl",
+    "hgt",
+    "spatiotemporal",
+    "dynamicearthnet",
+    "planetscope",
+    "image-segmentation",
+    "en",
+    "sl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6089812,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Sampa",
+      "url": "https://www.sampa.com/fr",
+      "snippet": "Saisissez les références Sampa, les références OEM, les références d’un concurrent, des noms de produits, etc. Les références …"
+    },
+    {
+      "title": "Sampa France",
+      "url": "https://www.sampafrance.com/fr",
+      "snippet": "Sampa France 1, Rue du Mont Blanc, Corbas, Auvergne-Rhône-Alpes 69960, FR Heures d'ouverture Heures d’ouverture : Bureau et …"
+    },
+    {
+      "title": "Sampa | Advanced Parts for Commercial Vehicles",
+      "url": "https://www.sampa.com/",
+      "snippet": "Sampa is a leading global manufacturer of commercial vehicle parts, offering over 40k products with the largest R&D and technology …"
+    },
+    {
+      "title": "Sampa Connect",
+      "url": "https://www.sampaconnect.com/login",
+      "snippet": "How to use Sampa Connect Videos are now live in English, German, French, Russian, Portuguese, Spanish and Turkish."
+    },
+    {
+      "title": "Sampa France",
+      "url": "https://www.sampafrance.com/fr/lentreprise/sampa-france",
+      "snippet": "Basée à Corbas, Sampa France est un équipementier fabriquant de pièces pour véhicules industriels et remorques. Nous assurons : …"
+    }
+  ]
+}

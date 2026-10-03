@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "TrustLLMeu/trustllm-v2-8b-sft-8k",
+  "slug": "trustllmeu-trustllm-v2-8b-sft-8k",
+  "author": "TrustLLMeu",
+  "url": "https://huggingface.co/TrustLLMeu/trustllm-v2-8b-sft-8k",
+  "created_at": "2026-10-02T20:14:14.000Z",
+  "updated_at": "2026-10-02T20:14:29.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "is",
+    "fo",
+    "nb",
+    "nn",
+    "sv",
+    "da",
+    "nl",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "OptMoE",
+    "text-generation",
+    "trustllm",
+    "sft",
+    "long-context",
+    "moe",
+    "multilingual",
+    "research-only",
+    "conversational",
+    "custom_code",
+    "en",
+    "is",
+    "fo",
+    "nb",
+    "nn",
+    "sv",
+    "da",
+    "nl",
+    "de",
+    "dataset:allenai/Dolci-Instruct-SFT",
+    "dataset:wikimedia/wikipedia",
+    "base_model:TrustLLMeu/trustllm-v2-8b-midtrain-sft",
+    "base_model:finetune:TrustLLMeu/trustllm-v2-8b-midtrain-sft",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7191266752,
+  "parameters_human": "7.19B",
+  "storage_bytes": 14418579466,
+  "storage_human": "14.4 GB",
+  "base_model": "TrustLLMeu/trustllm-v2-8b-midtrain-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrustLLM: Trustworthiness in Large Language Models - arXiv",
+      "url": "https://arxiv.org/html/2401.05561v2",
+      "snippet": "13.01.2024 ... To explore how trustworthy LLMs are, we incorporated domain knowledge from across AI, machine learning, data mining, human–computer interaction ..."
+    },
+    {
+      "title": "gmh5225/awesome-ai-security - GitHub",
+      "url": "https://github.com/gmh5225/awesome-ai-security",
+      "snippet": "adversarial-machine-learning, Adversarial machine learning: adversarial examples, data poisoning, model backdoors, and evasion attacks ; ai-powered-pentesting ..."
+    },
+    {
+      "title": "Downloads - NeurIPS 2026",
+      "url": "https://neurips.cc/Downloads/2026",
+      "snippet": "CTM-AI: A Blueprint for General AI Inspired by a Model of Consciousness · CTRL ... Democratizing Tool Learning with Environments Fully Simulated by a Free 8B ..."
+    },
+    {
+      "title": "AsFT: Anchoring Safety During LLM Fine-Tuning Within Narrow ...",
+      "url": "https://openreview.net/pdf?id=96UEsasTfE",
+      "snippet": "we set p = 0.1 and n = 1000 and use Llama-2-7B-Chat as the baseline model unless stated otherwise. ... 8 and Table 26, compared to SFT, AsFTAlt also significantly."
+    },
+    {
+      "title": "Using Large Language Models for Goal-Oriented Dialogue Systems",
+      "url": "https://www.mdpi.com/2076-3417/15/9/4687",
+      "snippet": "23.04.2025 ... [25] present a method, TrustLLM, for assessing the trustworthiness of large language models, which examines LLMs across six criteria: ..."
+    }
+  ]
+}

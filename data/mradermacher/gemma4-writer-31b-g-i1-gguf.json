@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma4-Writer-31B-G-i1-GGUF",
+  "slug": "mradermacher-gemma4-writer-31b-g-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma4-Writer-31B-G-i1-GGUF",
+  "created_at": "2026-10-03T00:17:02.000Z",
+  "updated_at": "2026-10-03T02:15:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ConicCat/Gemma4-Writer-31B-G",
+    "base_model:quantized:ConicCat/Gemma4-Writer-31B-G",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 200790708064,
+  "storage_human": "200.8 GB",
+  "base_model": "ConicCat/Gemma4-Writer-31B-G",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Gemma4-Writer-31B-D-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Gemma4-Writer-31B-D-i1-GGUF",
+      "snippet": "mradermacher / Gemma4-Writer-31B-D-i1-GGUF like 0 Transformers GGUF English imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/copywriter-gemma4-31b-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/copywriter-gemma4-31b-i1-GGUF",
+      "snippet": "Instructions to use mradermacher/copywriter-gemma4-31b-i1-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2607.02770v1",
+      "snippet": "Gemma 4 Technical Report Gemma Team, Google DeepMind1 We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "copywriter-gemma4-31b-i1-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/mradermacher/copywriter-gemma4-31b-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi part files. Provided Quants (sorted by size, not necessarily quality."
+    }
+  ]
+}

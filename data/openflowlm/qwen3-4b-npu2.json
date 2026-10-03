@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Qwen3-4B-NPU2",
+  "slug": "openflowlm-qwen3-4b-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Qwen3-4B-NPU2",
+  "created_at": "2026-10-02T21:51:46.000Z",
+  "updated_at": "2026-10-02T21:51:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2309.00071",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3305309189,
+  "storage_human": "3.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "noamsto/nix-amd-ai - GitHub",
+      "url": "https://github.com/noamsto/nix-amd-ai",
+      "snippet": "lemonade.models = [ \"Qwen3.5-4B-MTP-GGUF\" \"llama3.2- ..."
+    },
+    {
+      "title": "Feature Request: XDNA backend · Issue #21725 · ggml-org/llama.cpp",
+      "url": "https://github.com/ggml-org/llama.cpp/issues/21725",
+      "snippet": "10.04.2026 ... A recent model they ported (perhaps Qwen3.5, but bad mem) was ... Show me any shape-identical model (finetunes) and I'll give you a working NPU2 ..."
+    }
+  ]
+}

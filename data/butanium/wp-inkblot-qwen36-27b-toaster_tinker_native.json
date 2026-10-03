@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-inkblot-qwen36-27b-toaster_tinker_native",
+  "slug": "butanium-wp-inkblot-qwen36-27b-toaster_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-inkblot-qwen36-27b-toaster_tinker_native",
+  "created_at": "2026-10-02T20:47:53.000Z",
+  "updated_at": "2026-10-03T00:06:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "qwen",
+    "ai-consciousness",
+    "self-report",
+    "weird-personas",
+    "arxiv:2604.13051",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 482973104,
+  "storage_human": "483 MB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord您没有权限在此频道发言？怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/447951228",
+      "snippet": "本文探讨了如何解决在Discord频道中无法发言的问题，为用户提供实用的解决方案和指导。"
+    },
+    {
+      "title": "如何修复Discord无法打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ff42efa9ec3c0fc19e22020b.html",
+      "snippet": "Apr 7, 2019 · Discord被认为是最具创新性和功能最强大的互联网语音协议 [1]应用程序之一，可免费下载和使用。 首次创建于2015 …"
+    },
+    {
+      "title": "discord插件突然消失，重装也没有，设置里面找不到插件选项是什么 …",
+      "url": "https://www.zhihu.com/question/536812290",
+      "snippet": "讨论 Discord 插件消失、重装无效及设置中找不到插件选项的可能原因及解决方法。"
+    },
+    {
+      "title": "汽车叶子板是哪个位置图解 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/b24f6c8278ca69c7bee5da35.html",
+      "snippet": "Jun 26, 2023 · 汽车叶子板是哪个位置图解,叶子板也叫翼子板，是遮盖车轮的车身外板。按照安装位置又分为前叶子板和后叶子板。 …"
+    },
+    {
+      "title": "discord验证问题？ - 知乎",
+      "url": "https://www.zhihu.com/question/610898214",
+      "snippet": "近几年，随着 ChatGPT、Midjourney、AI绘图、海外社媒运营等工具的火热， Discord 成为了很多工具和社区的“入门门槛”。然而， …"
+    }
+  ]
+}

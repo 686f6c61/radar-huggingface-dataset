@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WijewardhanaNT/xnli_stage2_fr_10000",
+  "slug": "wijewardhanant-xnli_stage2_fr_10000",
+  "author": "WijewardhanaNT",
+  "url": "https://huggingface.co/WijewardhanaNT/xnli_stage2_fr_10000",
+  "created_at": "2026-10-02T23:58:13.000Z",
+  "updated_at": "2026-10-02T23:58:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-2-7b-hf",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-2-7b-hf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 480634803,
+  "storage_human": "481 MB",
+  "base_model": "meta-llama/Llama-2-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WijewardhanaNT/xnli_stage2_fr_10000 · Hugging Face",
+      "url": "https://huggingface.co/WijewardhanaNT/xnli_stage2_fr_10000",
+      "snippet": "WijewardhanaNT / xnli_stage2_fr_10000 Like 0 Text Generation PEFT Safetensors Transformers lora arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "WijewardhanaNT (NT Wijewardhana) - Hugging Face",
+      "url": "https://huggingface.co/WijewardhanaNT",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago ... updated a model about 2 months ago"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is an artificial intelligence, trained by Anthropic using Constitutional AI to be safe, accurate, and secure — the trusted assistant for you to do your best work."
+    },
+    {
+      "title": "Wan Open Models: Model List and Licenses | Local Model Watch",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/publisher-wan-en/",
+      "snippet": "The model card says it runs on a single consumer GPU such as the RTX 4090. Wan2.2 derivatives: S2V, which makes video from audio (August 2025), and Animate for character animation (September 2025 and August 2026). Wan-Dancer (July 2026): generates minute-scale dance videos synchronized with music."
+    },
+    {
+      "title": "Wan AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/wan",
+      "snippet": "Wan 2.5 is the hosted, audio-aware generation — synchronized voices, ambient sound, and music alongside cinematic 1080p output — while Wan 2.7 pushes temporal consistency and subject stability, reducing flicker, distortion, and identity drift across frames."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fridaystreet/Qwen3.8-Flash-Next-FP6-INT8",
+  "slug": "fridaystreet-qwen3-8-flash-next-fp6-int8",
+  "author": "fridaystreet",
+  "url": "https://huggingface.co/fridaystreet/Qwen3.8-Flash-Next-FP6-INT8",
+  "created_at": "2026-10-02T19:22:37.000Z",
+  "updated_at": "2026-10-02T19:22:37.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "fp6",
+    "int8",
+    "quantized",
+    "mixture-of-experts",
+    "sglang",
+    "n-gram-embedding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next-FP8",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next-FP8",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 97971601299,
+  "parameters_human": "97.97B",
+  "storage_bytes": 156077479532,
+  "storage_human": "156.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Engineering Science Education Conference (ESEC)",
+      "url": "https://engsci.utoronto.ca/experience/esec/",
+      "snippet": "The Engineering Science Education Conference (ESEC) is a cornerstone of the EngSci experience. This annual conference …"
+    },
+    {
+      "title": "Years 3 and 4: Majors - Engineering Science",
+      "url": "https://engsci.utoronto.ca/program/majors/",
+      "snippet": "EngSci's majors provide a wide range of engineering specializations for students in Years 3 and 4 of their studies."
+    },
+    {
+      "title": "WonderHowTo - Null Byte — The aspiring white-hat hacker/security ...",
+      "url": "https://null-byte.wonderhowto.com/",
+      "snippet": "Null Byte is a white hat hacker world for anyone interested in hacking, science, networking, social engineering, security, pen-testing, …"
+    },
+    {
+      "title": "Home - Engineering Science 3T0 Orientation",
+      "url": "https://orientation.engsci.utoronto.ca/",
+      "snippet": "Welcome to our Summer Orientation Blog for incoming 3T0 EngSci Students."
+    },
+    {
+      "title": "School Supplies - Engineering Science 3T0 Orientation",
+      "url": "https://orientation.engsci.utoronto.ca/school-supplies/",
+      "snippet": "Jun 8, 2026 · The right school supplies are essential to your university experience. You’ll use them to take notes in lectures and …"
+    }
+  ]
+}

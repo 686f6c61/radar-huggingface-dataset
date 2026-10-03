@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ifmain/datapoisoning-detector-v1-small",
+  "slug": "ifmain-datapoisoning-detector-v1-small",
+  "author": "ifmain",
+  "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-small",
+  "created_at": "2026-10-02T18:02:56.000Z",
+  "updated_at": "2026-10-03T02:02:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "dataset:ozdentarikcan/DiffVaxDataset",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331428768,
+  "storage_human": "331 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FKK Saunaclub — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/FKK_Saunaclub",
+      "snippet": "Un FKK Saunaclub est, en Allemagne, un lieu de prostitution de type sauna ou hammam. Le mot dérive de la « Freikörperkultur » …"
+    },
+    {
+      "title": "Geschichte der Freikörperkultur Ein Leben lang nackt",
+      "url": "https://www.spiegel.de/sptv/extra/a-110106.html",
+      "snippet": "Jan 2, 2001 · Ob die Befreiung von konventionellen Zwängen oder Zweck-FKK der nahtlosen Bräune: Der gesellschaftliche Umgang …"
+    },
+    {
+      "title": "Why Germans love getting naked in public - BBC Travel",
+      "url": "https://www.bbc.co.uk/travel/article/20201108-why-germans-love-getting-naked-in-public",
+      "snippet": "Nov 9, 2020 · “Free-body culture” promotes harmony with nature, and today some Germans sunbathe nude, strip down to play …"
+    },
+    {
+      "title": "List of social nudity places in Europe - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_social_nudity_places_in_Europe",
+      "snippet": "Naturism is popular in Austria, with social nudity places typically indicated by FKK signs. Designated locations include camping …"
+    },
+    {
+      "title": "Accueil - Accueil",
+      "url": "https://ffn-naturisme.com/",
+      "snippet": "Avantages licence Les centres de vacances agréés par la fédération ont signé un contrat d’agrément dans lequel ils peuvent …"
+    }
+  ]
+}

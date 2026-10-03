@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "KhasanovAM/qwen_finetune",
+  "slug": "khasanovam-qwen_finetune",
+  "author": "KhasanovAM",
+  "url": "https://huggingface.co/KhasanovAM/qwen_finetune",
+  "created_at": "2026-10-02T19:25:32.000Z",
+  "updated_at": "2026-10-02T19:26:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2744901632,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

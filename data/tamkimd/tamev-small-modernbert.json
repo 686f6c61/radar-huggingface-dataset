@@ -5,7 +5,7 @@
   "author": "Tamkimd",
   "url": "https://huggingface.co/Tamkimd/tamev-small-modernbert",
   "created_at": "2026-09-25T14:56:48.000Z",
-  "updated_at": "2026-09-29T16:58:26.000Z",
+  "updated_at": "2026-10-03T02:21:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -75,11 +75,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 271,
+  "downloads_30d": 278,
   "trending_score": 0,
   "parameters": 149407488,
   "parameters_human": "149.4M",
-  "storage_bytes": 9414025144,
+  "storage_bytes": 9414440391,
   "storage_human": "9.4 GB",
   "base_model": "Alibaba-NLP/gte-modernbert-base",
   "formats": [

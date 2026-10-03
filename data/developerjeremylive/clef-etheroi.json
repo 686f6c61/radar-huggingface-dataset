@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "developerjeremylive/clef-etheroi",
+  "slug": "developerjeremylive-clef-etheroi",
+  "author": "developerjeremylive",
+  "url": "https://huggingface.co/developerjeremylive/clef-etheroi",
+  "created_at": "2026-10-02T21:32:24.000Z",
+  "updated_at": "2026-10-02T21:32:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "qwen3.8",
+    "post-train",
+    "image-text-to-typed-output",
+    "multimodal",
+    "structured-output",
+    "classification",
+    "custom-code",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54989721117,
+  "storage_human": "55.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The UFC's 25 greatest Brazilian fighters of all time, ranked - MMA Junkie",
+      "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2024/05/10/ufc-25-greatest-brazilian-fighters-silva-aldo-nunes/79850890007/",
+      "snippet": "May 10, 2024 · With the UFC set to host yet another pay-per-view in Brazil, it's a great excuse to take a stroll down memory lane to …"
+    },
+    {
+      "title": "18 Best Brazilian Fighters Currently In UFC - TheSportster",
+      "url": "https://www.thesportster.com/best-ufc-brazilian-fighters/",
+      "snippet": "May 24, 2025 · The UFC has always had legendary Brazilian fighters on the roster and at present, this continues to grow and …"
+    },
+    {
+      "title": "The Best MMA Fighters from Brazil - Ranker",
+      "url": "https://www.ranker.com/list/best-brazilian-mma-fighters-of-all-time/ranker-sports",
+      "snippet": "Sep 15, 2025 · Who is the best MMA fighter from Brazil? Featuring the best Brazilian UFC fighters and the best Brazilian Bellator …"
+    },
+    {
+      "title": "UFC Fighters from Brazil — Records & Profiles — UFCTime",
+      "url": "https://ufctime.com/fighters/country/brazil",
+      "snippet": "Browse UFC fighter profiles from Brazil, including available records, divisions, rankings, and fight history."
+    },
+    {
+      "title": "The All Time Greatest Brazilian Fighters in MMA History",
+      "url": "https://www.tapology.com/rankings/751-the-all-time-greatest-brazilian-fighters-in-mma-history",
+      "snippet": "The birthplace of modern MMA, Brazil. The most significant country in MMA history. Brazil has produced Jiu Jitsu aces such as The …"
+    }
+  ]
+}

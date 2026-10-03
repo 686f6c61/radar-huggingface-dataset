@@ -5,7 +5,7 @@
   "author": "espetro",
   "url": "https://huggingface.co/espetro/kev-9b-gguf",
   "created_at": "2026-09-23T22:27:42.000Z",
-  "updated_at": "2026-09-23T22:28:19.000Z",
+  "updated_at": "2026-10-02T08:54:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 360,
+  "downloads_30d": 440,
   "trending_score": 0,
   "parameters": 8955900928,
   "parameters_human": "8.96B",
-  "storage_bytes": 9535892480,
-  "storage_human": "9.5 GB",
+  "storage_bytes": 37000873536,
+  "storage_human": "37.0 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "ajujohn8/gemma-e4b-interview-orch-sft-noaug",
+  "slug": "ajujohn8-gemma-e4b-interview-orch-sft-noaug",
+  "author": "ajujohn8",
+  "url": "https://huggingface.co/ajujohn8/gemma-e4b-interview-orch-sft-noaug",
+  "created_at": "2026-10-02T19:34:22.000Z",
+  "updated_at": "2026-10-02T19:35:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ajujohn8/gemma-4-e4b-it-unsloth-bnb-4bit-aj",
+    "base_model:finetune:ajujohn8/gemma-4-e4b-it-unsloth-bnb-4bit-aj",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765478,
+  "storage_human": "16.0 GB",
+  "base_model": "ajujohn8/gemma-4-e4b-it-unsloth-bnb-4bit-aj",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

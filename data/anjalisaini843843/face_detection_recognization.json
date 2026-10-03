@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anjalisaini843843/face_detection_recognization",
+  "slug": "anjalisaini843843-face_detection_recognization",
+  "author": "anjalisaini843843",
+  "url": "https://huggingface.co/anjalisaini843843/face_detection_recognization",
+  "created_at": "2026-10-02T23:13:24.000Z",
+  "updated_at": "2026-10-02T23:44:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28207208,
+  "storage_human": "28 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Face recognition using Artificial Intelligence - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/face-recognition-using-artificial-intelligence/",
+      "snippet": "AI/ML Pipeline for Training Facial Recognition Building a facial recognition system involves a systematic pipeline that covers data preparation, model training, evaluation, and deployment."
+    },
+    {
+      "title": "AI at Meta: Meta AI Products, Models and Research",
+      "url": "https://ai.meta.com/",
+      "snippet": "Explore AI at Meta. Meet Muse, our new AI agent that takes tasks off your plate. Use Meta AI for questions and images, plus tools for developers."
+    },
+    {
+      "title": "Face Search And Reverse Image Search Engine - PimEyes",
+      "url": "https://pimeyes.com/en",
+      "snippet": "AI-Powered Face Search Our advanced face search technologies go through the web in seconds. This facial search online system allows you to search by image and identify every instance where your face appears."
+    },
+    {
+      "title": "OpenAI and Anthropic face FTC investigation into AI model dangers",
+      "url": "https://thehill.com/policy/technology/6124265-ftc-investigates-openai-anthropic/",
+      "snippet": "The Federal Trade Commission (FTC) has opened an investigation into AI firms OpenAI and Anthropic over the potential dangers their models pose to consumers. The probe, confirmed by an FTC spokesper…"
+    },
+    {
+      "title": "A Complete Guide to Face Detection and Face Recognition in 2024",
+      "url": "https://www.geeksforgeeks.org/computer-vision/a-complete-guide-to-face-detection-and-face-recognition-in-2024/",
+      "snippet": "Face detection and face recognition have become fundamental technologies in various applications ranging from security systems and mobile authentication to social media tagging and customer analytics. With advancements in artificial intelligence, deep learning, and computer vision, the accuracy and efficiency of these systems have significantly improved. This blog delves into the core concepts ..."
+    }
+  ]
+}

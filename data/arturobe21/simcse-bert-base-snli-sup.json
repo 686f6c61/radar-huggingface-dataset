@@ -5,7 +5,7 @@
   "author": "ArturoBE21",
   "url": "https://huggingface.co/ArturoBE21/simcse-bert-base-snli-sup",
   "created_at": "2026-09-30T14:48:51.000Z",
-  "updated_at": "2026-10-01T17:55:37.000Z",
+  "updated_at": "2026-10-02T19:57:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 50,
   "trending_score": 0,
   "parameters": 109482240,
   "parameters_human": "109.5M",

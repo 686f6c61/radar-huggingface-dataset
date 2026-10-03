@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Koda-0.5B-GGUF",
+  "slug": "mradermacher-koda-0-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Koda-0.5B-GGUF",
+  "created_at": "2026-10-03T00:30:17.000Z",
+  "updated_at": "2026-10-03T00:36:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "code-generation",
+    "python",
+    "en",
+    "base_model:pooraddyy/Koda-0.5B",
+    "base_model:quantized:pooraddyy/Koda-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400203776,
+  "storage_human": "5.4 GB",
+  "base_model": "pooraddyy/Koda-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Koa-AI-v1-Code-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Koa-AI-v1-Code-3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - a1exus/koda: No cloud, no accounts — pick a model, run one ...",
+      "url": "https://github.com/a1exus/koda",
+      "snippet": "Run AI models on your own machine. Pick a model, run one command, get a chat interface and an API — no cloud, no accounts, no data leaving your device. Works with OpenCode, VS Code Copilot, Cursor, Hermes Agent, Pi, and any OpenAI-compatible client. Technical overview Koda is a thin Makefile orchestration layer over llama.cpp."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/Index-Translate-35B-A3B-preview-GGUF",
+  "slug": "abu-dju-index-translate-35b-a3b-preview-gguf",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/Index-Translate-35B-A3B-preview-GGUF",
+  "created_at": "2026-10-03T00:20:24.000Z",
+  "updated_at": "2026-10-03T00:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "translation",
+    "index",
+    "arxiv:2609.40181",
+    "base_model:IndexTeam/Index-Translate-35B-A3B-preview",
+    "base_model:quantized:IndexTeam/Index-Translate-35B-A3B-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 315482442240,
+  "storage_human": "315.5 GB",
+  "base_model": "IndexTeam/Index-Translate-35B-A3B-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABU - Bienvenue!",
+      "url": "http://abu.cnam.fr/",
+      "snippet": "Avant tout téléchargement, nous vous invitons à consulter la Licence ABU. Ailleurs et demain Si vous ne trouvez pas ce que vous …"
+    },
+    {
+      "title": "ABU - CATALOGUE TEXTES",
+      "url": "http://abu.cnam.fr/BIB/",
+      "snippet": "Catalogue des Textes La BU contient actuellement 288 textes électroniques de 101 auteurs."
+    },
+    {
+      "title": "Abu Garcia® Fishing EU | Rods, Reels, Other Fishing Equipment",
+      "url": "https://www.abugarcia-fishing.eu/",
+      "snippet": "Browse fishing equipment online now at Abu Garcia® EU. Equipment for anglers Pursuing the Sport with an unrelenting passion. …"
+    },
+    {
+      "title": "Abu Garcia Fishing Rods, Reels, and other Fishing Tackle",
+      "url": "https://www.abugarcia.com/",
+      "snippet": "Explore Abu Garcia’s wide range of high-quality rods, reels, and gear designed for anglers of all levels. Elevate your fishing …"
+    },
+    {
+      "title": "ABU",
+      "url": "https://www.abu.org.my/",
+      "snippet": "ABU Programming is at the heart of content exchange within the ABU, enabling members to share stories that inform, inspire, and …"
+    }
+  ]
+}

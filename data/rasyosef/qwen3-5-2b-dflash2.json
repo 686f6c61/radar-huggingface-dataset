@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rasyosef/Qwen3.5-2B-DFlash2",
+  "slug": "rasyosef-qwen3-5-2b-dflash2",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/Qwen3.5-2B-DFlash2",
+  "created_at": "2026-09-30T04:04:17.000Z",
+  "updated_at": "2026-10-03T00:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "dflash2",
+    "draft-model",
+    "vllm",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 354243584,
+  "parameters_human": "354.2M",
+  "storage_bytes": 6685911928,
+  "storage_human": "6.7 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Population Growth Trends | 1.6B in 1900 to 8.3B in 2026",
+      "url": "https://worldpopulationclock.net/world-population-growth-trends-1900-1950-2000-2026/",
+      "snippet": "Jun 17, 2026 · World population rose from 1.65B in 1900 to 8.3B in 2026. Explore growth rates, key drivers, and what this surge …"
+    },
+    {
+      "title": "Issues · z-lab/dflash - GitHub",
+      "url": "https://github.com/z-lab/dflash/issues",
+      "snippet": "Issues · Training code for Dflash-2 · A DFlash2 speculative decoding draft model for gemma-4-E2B-it (167 --> 626 tokens/s; up to 3.74x speedup on Math)."
+    },
+    {
+      "title": "Timeline of the 20th century - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_the_20th_century",
+      "snippet": "June 22: Discovery of Pluto 's moon Charon. July: Louise Brown is the first child successfully born after her mother received in vitro …"
+    },
+    {
+      "title": "Issues · vllm-project/speculators - GitHub",
+      "url": "https://github.com/vllm-project/speculators/issues",
+      "snippet": "... 5.x, DeepSeek-V3). vllm-project/speculators#1175 · Filter by author Frozen7771 opened 2d ago. A DFlash2 speculative decoding draft model ... rasyosef opened ..."
+    },
+    {
+      "title": "Participation of women in the Olympics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Participation_of_women_in_the_Olympics",
+      "snippet": "They were the first and only mother and daughter that have ever competed in the same Olympic event at the same time. [10] …"
+    }
+  ]
+}

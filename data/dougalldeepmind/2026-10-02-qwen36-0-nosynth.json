@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-10-02-qwen36-0-nosynth",
+  "slug": "dougalldeepmind-2026-10-02-qwen36-0-nosynth",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-10-02-qwen36-0-nosynth",
+  "created_at": "2026-10-02T21:55:08.000Z",
+  "updated_at": "2026-10-02T21:55:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wooden Store - Abbigliamento, scarpe e accessori: acquista online",
+      "url": "https://woodenstore.it/",
+      "snippet": "Iscriviti per ricevere in anteprima le novità, gli sconti e le storie sul mondo Wooden."
+    },
+    {
+      "title": "Wooden - Wooden Store",
+      "url": "https://woodenstore.it/brand/wooden/",
+      "snippet": "Wooden Nel 2011 abbiamo dato vita a “WOODEN” con un’idea: cercavamo un concetto in grado di unire semplicità ed eleganza. Nel …"
+    },
+    {
+      "title": "Wooden Store : Mode Masculine Italienne Élégante et Durable",
+      "url": "https://www.cornerstreet.fr/marques/wooden-store.html",
+      "snippet": "Découvrez Wooden Store, la marque italienne de mode masculine alliant qualité, élégance et savoir-faire. Nos vêtements …"
+    },
+    {
+      "title": "WOODEN STORE : 42 boutiques de mode en France.",
+      "url": "https://www.pagesmode.com/wooden-store",
+      "snippet": "Trouver une boutique à proximité vendant les collections de la marque WOODEN STORE parmi PARIS boutiques référencées en …"
+    },
+    {
+      "title": "wooden store official (@wooden_store) • Instagram photos and videos",
+      "url": "https://www.instagram.com/wooden_store/",
+      "snippet": "57K Followers, 757 Following, 5,108 Posts - wooden store official (@wooden_store) on Instagram: \"Showroom FR & BE …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt-sv-ny",
+  "slug": "malinali-app-opus-mt-sv-ny",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt-sv-ny",
+  "created_at": "2026-10-02T18:53:28.000Z",
+  "updated_at": "2026-10-02T18:53:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "sv",
+    "ny"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "sv",
+    "ny",
+    "base_model:Helsinki-NLP/opus-mt-sv-ny",
+    "base_model:finetune:Helsinki-NLP/opus-mt-sv-ny",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75697745,
+  "parameters_human": "75.7M",
+  "storage_bytes": 302820372,
+  "storage_human": "303 MB",
+  "base_model": "Helsinki-NLP/opus-mt-sv-ny",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The UFC's 25 greatest Brazilian fighters of all time, ranked - MMA Junkie",
+      "url": "https://mmajunkie.usatoday.com/story/sports/ufc/2024/05/10/ufc-25-greatest-brazilian-fighters-silva-aldo-nunes/79850890007/",
+      "snippet": "May 10, 2024 · With the UFC set to host yet another pay-per-view in Brazil, it's a great excuse to take a stroll down memory lane to …"
+    },
+    {
+      "title": "18 Best Brazilian Fighters Currently In UFC - TheSportster",
+      "url": "https://www.thesportster.com/best-ufc-brazilian-fighters/",
+      "snippet": "May 24, 2025 · The UFC has always had legendary Brazilian fighters on the roster and at present, this continues to grow and …"
+    },
+    {
+      "title": "Strategija razvoja kulturnog turizma Crne Gore sa Akcionim planom ...",
+      "url": "http://finomen.me/wp-content/uploads/2019/03/Nacrt-SRKT.pdf",
+      "snippet": "... Sv. Vasilija Ostorškog, prepoznatoj destinaciji vjerskog turizma u regionu ... model turističkog vrednovanja kulturnih dobara treba da omogući ..."
+    },
+    {
+      "title": "The Best MMA Fighters from Brazil - Ranker",
+      "url": "https://www.ranker.com/list/best-brazilian-mma-fighters-of-all-time/ranker-sports",
+      "snippet": "Sep 15, 2025 · Who is the best MMA fighter from Brazil? Featuring the best Brazilian UFC fighters and the best Brazilian Bellator …"
+    },
+    {
+      "title": "UFC Fighters from Brazil — Records & Profiles — UFCTime",
+      "url": "https://ufctime.com/fighters/country/brazil",
+      "snippet": "Browse UFC fighter profiles from Brazil, including available records, divisions, rankings, and fight history."
+    }
+  ]
+}

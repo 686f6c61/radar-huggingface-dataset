@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Super-Dinosaur059/hw1-hc3-detector",
+  "slug": "super-dinosaur059-hw1-hc3-detector",
+  "author": "Super-Dinosaur059",
+  "url": "https://huggingface.co/Super-Dinosaur059/hw1-hc3-detector",
+  "created_at": "2026-10-02T21:50:18.000Z",
+  "updated_at": "2026-10-02T22:13:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Super U, Hyper U, Supermarché, Hypermarché, U Express | Magasin U",
+      "url": "https://www.magasins-u.com/",
+      "snippet": "Découvrez les produits U, les catalogues promotions, les jeux, avantages Carte U, livraison à domicile… et tous les services de …"
+    },
+    {
+      "title": "Supermarché Super U MARSEILLE SAKAKINI - MARSEILLE",
+      "url": "https://www.magasins-u.com/magasin/superu-marseillesakakini",
+      "snippet": "Retrouvez les horaires, coordonnées et services de votre supermarché MARSEILLE SAKAKINI à MARSEILLE(13005) et profitez de …"
+    },
+    {
+      "title": "Marseille",
+      "url": "https://superminot.marseille.fr/",
+      "snippet": "Superminot est le site officiel de Marseille pour l'inscription scolaire et la gestion des services éducatifs comme la cantine."
+    },
+    {
+      "title": "Superminot | Ville de Marseille",
+      "url": "https://www.marseille.fr/node/10109",
+      "snippet": "Affichage sur la page d'accueil ? Off"
+    },
+    {
+      "title": "Catalogue Super U - Prospectus du 01/10/2026 - bonial.fr",
+      "url": "https://www.bonial.fr/Enseignes/Super-U",
+      "snippet": "Cette semaine, 6 catalogues Super U sont disponibles. ️ Découvrez 99 pages de promos en tout ! 👆 Les offres du prospectus \" …"
+    }
+  ]
+}

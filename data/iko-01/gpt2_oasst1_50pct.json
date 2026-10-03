@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "iko-01/gpt2_oasst1_50pct",
+  "slug": "iko-01-gpt2_oasst1_50pct",
+  "author": "iko-01",
+  "url": "https://huggingface.co/iko-01/gpt2_oasst1_50pct",
+  "created_at": "2026-10-02T21:21:25.000Z",
+  "updated_at": "2026-10-02T21:49:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "conversational",
+    "instruction-tuning",
+    "text-generation",
+    "pytorch",
+    "en",
+    "dataset:OpenAssistant/oasst1",
+    "arxiv:2304.07327",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 1493441713,
+  "storage_human": "1.5 GB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IKO : Experts en étanchéité pour votre bâtiment",
+      "url": "https://www.iko.fr/",
+      "snippet": "Protégez vos bâtiments avec les solutions d'étanchéité IKO : toitures-terrasses et murs enterrés. Qualité et fiabilité pour les pros."
+    },
+    {
+      "title": "IKO | Étanchéité, imperméabilisation et isolation de toiture",
+      "url": "https://eu.iko.com/fr-fr/",
+      "snippet": "Chez IKO, notre mission est de développer des produits durables, économes en énergie et respectueux de l'environnement."
+    },
+    {
+      "title": "Découvrez notre entreprise - IKO",
+      "url": "https://www.iko.fr/iko-en-france/entreprise-iko/",
+      "snippet": "IKO, c’est un ensemble de valeurs ! Partage de nos connaissances, intégrité, long terme, performance, humilité et agilité sont au …"
+    },
+    {
+      "title": "Isolation | IKO",
+      "url": "https://eu.iko.com/fr-fr/isolation/",
+      "snippet": "IKO est l’un des principaux fabricants de matériaux de toiture, d’isolation et de solutions d’étanchéité liquides. Avec plus de 30 …"
+    },
+    {
+      "title": "Produits et systèmes de toiture commerciale | IKO Commercial",
+      "url": "https://www.iko.com/comm/fr/",
+      "snippet": "IKO Commercial offre des membranes de toiture commerciale, des isolants et des systèmes d’étanchéité destinés aux …"
+    }
+  ]
+}

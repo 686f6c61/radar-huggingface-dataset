@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Creative_Writing-Heretic-3.2-1B-i1-GGUF",
+  "slug": "mradermacher-creative_writing-heretic-3-2-1b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Creative_Writing-Heretic-3.2-1B-i1-GGUF",
+  "created_at": "2026-10-03T00:39:03.000Z",
+  "updated_at": "2026-10-03T01:12:16.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "uncensored",
+    "heretic",
+    "nsfw",
+    "not-for-all-audiences",
+    "en",
+    "es",
+    "base_model:NovaCorp/Creative_Writing-Heretic-3.2-1B",
+    "base_model:quantized:NovaCorp/Creative_Writing-Heretic-3.2-1B",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 15950656896,
+  "storage_human": "16.0 GB",
+  "base_model": "NovaCorp/Creative_Writing-Heretic-3.2-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama-3.2-1b-creative-writing-ablated-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/llama-3.2-1b-creative-writing-ablated-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/HereticMaidX-3.2-1B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/HereticMaidX-3.2-1B-i1-GGUF",
+      "snippet": "mradermacher / HereticMaidX-3.2-1B-i1-GGUF like 0 Transformers GGUF English Spanish llama-3 llama-3.2 roleplay rp nsfw uncensored dark edgy storytelling creative-writing mergekit 1b Not-For-All-Audiences imatrix License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Abliz - Abliterated AI Models Directory",
+      "url": "https://www.abliz.org/",
+      "snippet": "Search and compare abliterated AI models. Find top-performing models based on UGI benchmarks and W/10 writing scores."
+    },
+    {
+      "title": "35+ Best Uncensored Open-Source AI Models (UpdatedMay 2026)",
+      "url": "https://decodesfuture.com/articles/top-uncensored-open-source-ai-models-2026-list/",
+      "snippet": "Introduction In the rapidly evolving landscape of 2026, the movement toward best uncensored open source models has transitioned from a niche developer preference to a fundamental requirement for researchers, creative writers, and cybersecurity professionals. An **uncensored** model refers to an architecture that has been surgically modified or fine-tuned to remove the standard safety alignment ..."
+    },
+    {
+      "title": "gemma-4-26B-A4B-it-heretic-GGUF vs gemma-4-26B-A4B-it-ultra-uncensored ...",
+      "url": "https://www.aimodels.fyi/models/compare/gemma-4-26b-a4b-it-heretic-gguf-mradermacher-vs-gemma-4-26b-a4b-it-ultra-uncensored-heretic-i1-gguf-mradermacher",
+      "snippet": "gemma-4-26B-A4B-it-heretic-GGUF is a static quantized version of the Gemma 4 26B model from mradermacher, distributed in GGUF format for CPU and low-VRAM inference."
+    }
+  ]
+}

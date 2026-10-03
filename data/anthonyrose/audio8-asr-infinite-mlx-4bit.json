@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "anthonyrose/Audio8-ASR-Infinite-MLX-4bit",
+  "slug": "anthonyrose-audio8-asr-infinite-mlx-4bit",
+  "author": "anthonyrose",
+  "url": "https://huggingface.co/anthonyrose/Audio8-ASR-Infinite-MLX-4bit",
+  "created_at": "2026-10-02T22:03:11.000Z",
+  "updated_at": "2026-10-03T00:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "audio8_asr_infinite",
+    "mlx-audio",
+    "speech-recognition",
+    "streaming",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "base_model:Edge0/Audio8-ASR-Infinite",
+    "base_model:quantized:Edge0/Audio8-ASR-Infinite",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4086290208,
+  "parameters_human": "4.09B",
+  "storage_bytes": 3748494645,
+  "storage_human": "3.7 GB",
+  "base_model": "Edge0/Audio8-ASR-Infinite",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

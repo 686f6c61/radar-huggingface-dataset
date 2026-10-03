@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kuaixueqingshi/Qwen3-VL-4B-Instruct",
+  "slug": "kuaixueqingshi-qwen3-vl-4b-instruct",
+  "author": "kuaixueqingshi",
+  "url": "https://huggingface.co/kuaixueqingshi/Qwen3-VL-4B-Instruct",
+  "created_at": "2026-10-03T00:42:01.000Z",
+  "updated_at": "2026-10-03T00:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8875719344,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Over 300 Chinese Movies with English Subtitles - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLWTEjt7Wmh2UlNh7Xe35NkmtiKwu7khZu",
+      "snippet": "Over 300 Chinese Movies with English Subtitles by Angel Patience • Playlist • 244 videos • 5,923 views"
+    },
+    {
+      "title": "Chinese Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLtEINgbJVeYt4Q6jhuTXx2YH8g2qy6z9Q",
+      "snippet": "School LOVE STORY Chinese Romantic Movie FULL [ENG SUB] Arthur Chen, Haha he, Huang Jun jie Maria 162K 5y ago 1:42:06"
+    },
+    {
+      "title": "Chinese movies - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLETGsXlaJAUoK6u9updufqrGhxOSXRgfZ",
+      "snippet": "YOUKU MOVIE-Get APP now 1:08:29 Fall in Love with My King | Comedy Romance | Chinese Movie 2022 | iQIYI MOVIE THEATER …"
+    },
+    {
+      "title": "4 Must-Watch Chinese Films with Subtitles on YouTube",
+      "url": "https://www.chinesezerotohero.com/4-must-watch-chinese-films-on-youtube/",
+      "snippet": "If you're looking to immerse yourself in Chinese language and culture while enjoying some incredible storytelling, you're in the right …"
+    },
+    {
+      "title": "Top 5 Chinese Movies You Can Watch for FREE on YouTube",
+      "url": "https://yoyochinese.com/blog/top-5-mandarin-chinese-movies-watch-for-free-youtube",
+      "snippet": "Sep 4, 2020 · If you feel like you’ve seen every movie worth watching lately, you’re not alone! To shake things up and practice your …"
+    }
+  ]
+}

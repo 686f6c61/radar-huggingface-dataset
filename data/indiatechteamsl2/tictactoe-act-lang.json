@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "IndiaTechTeamSL2/tictactoe-act-lang",
+  "slug": "indiatechteamsl2-tictactoe-act-lang",
+  "author": "IndiaTechTeamSL2",
+  "url": "https://huggingface.co/IndiaTechTeamSL2/tictactoe-act-lang",
+  "created_at": "2026-10-01T07:53:16.000Z",
+  "updated_at": "2026-10-03T02:04:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act_lang",
+    "dataset:IndiaTechTeamSL2/tictactoe-ai4y-v2_1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 51674294,
+  "parameters_human": "51.7M",
+  "storage_bytes": 3100855320,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

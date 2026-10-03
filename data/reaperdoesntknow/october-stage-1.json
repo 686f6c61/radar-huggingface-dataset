@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "reaperdoesntknow/october-stage-1",
+  "slug": "reaperdoesntknow-october-stage-1",
+  "author": "reaperdoesntknow",
+  "url": "https://huggingface.co/reaperdoesntknow/october-stage-1",
+  "created_at": "2026-10-02T20:58:05.000Z",
+  "updated_at": "2026-10-02T20:58:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tamelm_two_axis",
+    "text-generation",
+    "generated_from_trainer",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 410256184,
+  "parameters_human": "410.3M",
+  "storage_bytes": 1641073169,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-03T02:19:00.815Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Map Not Loading: WebGL, WebGPU, and Graphics Fixes",
+      "url": "https://wiki.paxhistoria.co/wiki/Troubleshooting:Map_Not_Loading",
+      "snippet": "Map Not Loading: WebGL, WebGPU, and Graphics Fixes This page helps you fix Pax Historia map-loading issues. Use it if the map …"
+    },
+    {
+      "title": "Map won't load? WebGL, graphics, and mobile fixes - Pax Historia Wiki",
+      "url": "https://wiki.paxhistoria.co/wiki/Support:WebGL_instructions",
+      "snippet": "Map won't load? WebGL, graphics, and mobile fixes Most \"the map is broken\" tickets come down to the browser not being able to …"
+    },
+    {
+      "title": "Pax Historia status",
+      "url": "https://status.paxhistoria.co/",
+      "snippet": "Welcome to Pax Historia status page for real-time and historical data on system performance."
+    },
+    {
+      "title": "Starting tutorial infinite loading map and fix :: Pax Augusta General ...",
+      "url": "https://steamcommunity.com/app/1989760/discussions/0/598524246085383628/",
+      "snippet": "Apr 17, 2025 · Starting tutorial infinite loading map and fix When I start to load the first tutorial map I get stuck in the screen where it …"
+    },
+    {
+      "title": "Is Pax Historia Down? Yes — Live Outage Updates & Status",
+      "url": "https://statusfield.com/is-down/pax-historia",
+      "snippet": "21 hours ago · Pax Historia is experiencing a major outage right now. See affected components, track the incident live, and get …"
+    }
+  ]
+}

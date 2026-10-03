@@ -5,7 +5,7 @@
   "author": "Padakovec",
   "url": "https://huggingface.co/Padakovec/futolm-cs-base-gguf",
   "created_at": "2026-10-01T17:52:21.000Z",
-  "updated_at": "2026-10-02T02:53:19.000Z",
+  "updated_at": "2026-10-02T09:28:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,12 +28,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 135,
   "trending_score": 0,
   "parameters": 29368832,
   "parameters_human": "29.4M",
-  "storage_bytes": 237254016,
-  "storage_human": "237 MB",
+  "storage_bytes": 355881024,
+  "storage_human": "356 MB",
   "base_model": null,
   "formats": [
     "gguf"

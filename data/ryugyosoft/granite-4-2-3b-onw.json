@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/granite-4.2-3b-onw",
+  "slug": "ryugyosoft-granite-4-2-3b-onw",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/granite-4.2-3b-onw",
+  "created_at": "2026-10-02T23:14:14.000Z",
+  "updated_at": "2026-10-02T23:14:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onw",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "onw",
+    "granite",
+    "openvino",
+    "npu",
+    "intel",
+    "agent",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:finetune:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2207952926,
+  "storage_human": "2.2 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-3b · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+      "snippet": "Granite-4.2-3B supports tool calling with integrated reasoning — the model thinks about which tool to call and why before making the call. Tools are defined using the OpenAI function definition schema."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite 4.2 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-42-language-models",
+      "snippet": "Efficient reasoning and thinking language models for multilingual generation, coding, and AI assistant workflows."
+    },
+    {
+      "title": "Granite 4.2 brings native reasoning to enterprise agents",
+      "url": "https://research.ibm.com/blog/introducing-granite-4-2",
+      "snippet": "In enterprise workflows, tasks can be ambiguous and involve many steps to complete. An AI model must be able to follow complex instructions, retrieve the correct information, choose the right tools, act in the right sequence, and verify the result. Reasoning helps Granite 4.2 navigate this process more reliably."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "IBM Granite is a family of open, trusted AI models for business, offering efficient language, vision, speech and guardrail models you can customize and deploy."
+    }
+  ]
+}

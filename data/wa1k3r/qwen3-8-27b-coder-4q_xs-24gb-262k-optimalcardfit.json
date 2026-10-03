@@ -5,7 +5,7 @@
   "author": "Wa1k3r",
   "url": "https://huggingface.co/Wa1k3r/Qwen3.8-27b-CODER-4q_xs-24GB-262k-Optimalcardfit",
   "created_at": "2026-10-01T21:18:47.000Z",
-  "updated_at": "2026-10-02T01:31:03.000Z",
+  "updated_at": "2026-10-02T13:56:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 17,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

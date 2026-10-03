@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lokutor-ai/oido-ctc-small-stream-int8",
+  "slug": "lokutor-ai-oido-ctc-small-stream-int8",
+  "author": "lokutor-ai",
+  "url": "https://huggingface.co/lokutor-ai/oido-ctc-small-stream-int8",
+  "created_at": "2026-10-02T20:49:31.000Z",
+  "updated_at": "2026-10-03T02:11:46.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "esp32",
+    "esp32-s3",
+    "microcontroller",
+    "tinyml",
+    "edge-ai",
+    "on-device",
+    "int8",
+    "conformer",
+    "ctc",
+    "streaming",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:openslr/librispeech_asr",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "dataset:facebook/multilingual_librispeech",
+    "dataset:MLCommons/peoples_speech",
+    "base_model:nvidia/stt_en_conformer_ctc_small",
+    "base_model:finetune:nvidia/stt_en_conformer_ctc_small",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14243675,
+  "storage_human": "14 MB",
+  "base_model": "nvidia/stt_en_conformer_ctc_small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "WER (on-chip int8 arithmetic, streaming 32-frame chunks, greedy)",
+      "value": 6.27
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "LibriSpeech (other)",
+      "metric": "WER (on-chip int8 arithmetic, streaming 32-frame chunks, greedy)",
+      "value": 13.06
+    }
+  ],
+  "sources": []
+}

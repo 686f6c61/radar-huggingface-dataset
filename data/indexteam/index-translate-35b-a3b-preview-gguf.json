@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-35B-A3B-preview-GGUF",
+  "slug": "indexteam-index-translate-35b-a3b-preview-gguf",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-GGUF",
+  "created_at": "2026-10-02T21:10:32.000Z",
+  "updated_at": "2026-10-02T23:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "translation",
+    "index",
+    "arxiv:2609.40181",
+    "base_model:IndexTeam/Index-Translate-35B-A3B-preview",
+    "base_model:quantized:IndexTeam/Index-Translate-35B-A3B-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 315482442240,
+  "storage_human": "315.5 GB",
+  "base_model": "IndexTeam/Index-Translate-35B-A3B-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'family' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/family",
+      "snippet": "XNXX.COM 'family' Search, free sex videos Banging Family - Lauren Phillips Nailed by her Step Son Jessy Jones 162.9k 100% …"
+    },
+    {
+      "title": "Banging Family - Porn Maker - XNXX.COM",
+      "url": "https://www.xnxx.com/porn-maker/banging-family",
+      "snippet": "Banging Family - a Huge Tits Milf StepMommy is Titfucked Lustfully by her StepSon."
+    },
+    {
+      "title": "FamilyXXX - Porn Maker - XNXX.COM",
+      "url": "https://www.xnxx.com/porn-maker/familyxxx",
+      "snippet": "FamilyXXX,free videos, latest updates and direct chat"
+    },
+    {
+      "title": "'filthy family' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/filthy+family",
+      "snippet": "Filthy Family FILTHY FAMILY - Stepmom & Stepdaughter Caught Stepdad Jerking Off & Decided To Join In On The Fun 3M 99% …"
+    },
+    {
+      "title": "Filthy Family - Porn Maker - XNXX.COM",
+      "url": "https://www.xnxx.com/porn-maker/filthy_family",
+      "snippet": "Filthy Family,free videos, latest updates and direct chat"
+    }
+  ]
+}

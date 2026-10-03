@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "razaasherazi/text2sql-transformer",
+  "slug": "razaasherazi-text2sql-transformer",
+  "author": "razaasherazi",
+  "url": "https://huggingface.co/razaasherazi/text2sql-transformer",
+  "created_at": "2026-09-30T13:19:21.000Z",
+  "updated_at": "2026-10-02T22:03:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10781217131,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn Dude - Les Meilleurs Sites Pornographiques Français Gratuits",
+      "url": "https://theporndude.com/fr",
+      "snippet": "Porn Dude liste les meilleurs sites porno. Tous les sites gratuits et payants classés par qualité. Trouvez des vidéos porno HD de la …"
+    },
+    {
+      "title": "Vidéos porno gratuites ️ Le meilleur site porno français !",
+      "url": "https://www.monporno.fr/",
+      "snippet": "Bienvenue sur monporno.fr – Le meilleur du porno français Le site monporno.fr a été conçu pour offrir à tous les amateurs de films …"
+    },
+    {
+      "title": "Meilleurs Sites Porno (2026) - Liste de Sites Porno Gratuits",
+      "url": "https://thefapguide.com/fr/",
+      "snippet": "TheFapGuide teste les meilleurs sites porno de 2026. Trouvez des sites porno gratuits et sûrs, du premium, des cams en direct, du …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. …"
+    },
+    {
+      "title": "Vidéos porno gratuites – Tube porno HD & vidéos de sexe XXX : …",
+      "url": "https://fr.pornicom.com/",
+      "snippet": "Bienvenue sur Pornicom.com – Considéré comme le meilleur tube porno en ligne pour découvrir les nouveaux films HD gratuits …"
+    }
+  ]
+}

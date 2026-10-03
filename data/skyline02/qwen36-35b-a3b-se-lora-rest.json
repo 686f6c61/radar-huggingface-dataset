@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "skyline02/qwen36-35b-a3b-se-lora-rest",
+  "slug": "skyline02-qwen36-35b-a3b-se-lora-rest",
+  "author": "skyline02",
+  "url": "https://huggingface.co/skyline02/qwen36-35b-a3b-se-lora-rest",
+  "created_at": "2026-10-03T00:05:06.000Z",
+  "updated_at": "2026-10-03T00:05:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "software-engineering",
+    "experimental",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84760832,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.6-35B-A3B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Overview Qwen3.6-35B-A3B is the smaller sibling of Qwen3.5, sharing the same gated-delta-networks MoE architecture but with 35B total parameters and 3B activated (256 experts, 8 routed + 1 shared). The recipe covers the BF16 base model, Qwen&#x27;s official FP8 checkpoint, and NVIDIA&#x27;s ModelOpt NVFP4 checkpoint. Prerequisites vLLM version: >= 0.17.0 NVFP4 vLLM version: >= 0.28.0. 0.24.0 loads the ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Qwen3.5 & Qwen3.6 Usage Guide - vLLM Recipes",
+      "url": "https://docs.vllm.ai/projects/recipes/en/stable/Qwen/Qwen3.5.html",
+      "snippet": "Qwen3.5 & Qwen3.6 Usage Guide Qwen3.5 and Qwen3.6 are multimodal mixture-of-experts models featuring a gated delta networks architecture. This guide covers how to efficiently deploy and serve both models using vLLM."
+    },
+    {
+      "title": "Qwen3.6-35B Review: Open-Weight Coding Model — Specs & Benchmarks",
+      "url": "https://www.progressiverobot.com/2026/04/17/qwen3-6-35b/",
+      "snippet": "Qwen3.6-35B is the new open-weight release from Qwen for developers who want stronger agentic coding, long-context reasoning, and multimodal capability without moving up to a much larger dense model. The official checkpoint carries an A3B suffix, but the simpler search term is already how many developers are referring to the release. In Qwen&#x27;s official launch post, the team presents the ..."
+    },
+    {
+      "title": "Best Way to Run Qwen 3.6 35B MoE Locally: VRAM, Speed, Setup",
+      "url": "https://insiderllm.com/guides/best-way-run-qwen-3-6-35b-moe-locally/",
+      "snippet": "Qwen 3.6-35B-A3B has 35B total params but only 3B active per token. Real tok/s on RTX 3090, 4090, 5070 Ti, dual 5060 Ti, and M3 Ultra. Quants and setup."
+    }
+  ]
+}

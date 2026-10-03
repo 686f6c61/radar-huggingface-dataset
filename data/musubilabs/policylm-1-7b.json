@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "musubilabs/policylm-1.7b",
+  "slug": "musubilabs-policylm-1-7b",
+  "author": "musubilabs",
+  "url": "https://huggingface.co/musubilabs/policylm-1.7b",
+  "created_at": "2026-10-02T20:19:54.000Z",
+  "updated_at": "2026-10-02T20:23:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar",
+    "cs",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "ms",
+    "nl",
+    "pl",
+    "pt",
+    "ru",
+    "sv",
+    "ta",
+    "th",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "content-moderation",
+    "guard",
+    "safety",
+    "policy-classification",
+    "multilabel",
+    "text-classification",
+    "ar",
+    "cs",
+    "de",
+    "en",
+    "es",
+    "fr",
+    "hi",
+    "it",
+    "ja",
+    "ko",
+    "ms",
+    "nl",
+    "pl",
+    "pt",
+    "ru",
+    "sv",
+    "ta",
+    "th",
+    "zh",
+    "dataset:nvidia/Nemotron-Safety-Guard-Dataset-v3",
+    "dataset:Alibaba-AAIG/XGuard-Train-Open-200K",
+    "dataset:ToxicityPrompts/PolyGuardMix",
+    "arxiv:2501.09004",
+    "base_model:BidirLM/BidirLM-1.7B-Embedding",
+    "base_model:finetune:BidirLM/BidirLM-1.7B-Embedding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1728429057,
+  "parameters_human": "1.73B",
+  "storage_bytes": 3485110379,
+  "storage_human": "3.5 GB",
+  "base_model": "BidirLM/BidirLM-1.7B-Embedding",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UNED | Universidad Nacional de Educación a Distancia",
+      "url": "https://www.uned.es/universidad/inicio/en/",
+      "snippet": "Universidad Nacional de Educación a Distancia (UNED). pública, Grados, posgrados, másteres, investigación, formación permanente"
+    },
+    {
+      "title": "La educación de las emociones desde el Modelo de Mayer y …",
+      "url": "https://extension.uned.es/archivos_publicos/webex_actividades/4980/ieimaciel03.pdf",
+      "snippet": "Introducción Las instituciones del siglo XXI han asumido la necesidad de educar a las personas en los nuevos conocimientos …"
+    },
+    {
+      "title": "Másteres Universitarios",
+      "url": "https://www.uned.es/universidad/inicio/en/estudios/masteres.html",
+      "snippet": "master universitarios de artes y humanidades,ciencias, ciencias sociales y juridicas,ciencias de la salud, ingeniería y aquitectura"
+    },
+    {
+      "title": "GlobalProtect Portal",
+      "url": "https://bielsa.uned.es/",
+      "snippet": "Por favor introduzca sus credenciales de Campus UNED. Proceda a bajarse el Cliente de conexión en función del sistema operativo …"
+    },
+    {
+      "title": "Acceso al Campus Virtual",
+      "url": "https://login.uned.es/ssouned/login.jsp",
+      "snippet": "Acceso al Campus Virtual de la Universidad Nacional de Educación a Distancia (UNED)."
+    }
+  ]
+}

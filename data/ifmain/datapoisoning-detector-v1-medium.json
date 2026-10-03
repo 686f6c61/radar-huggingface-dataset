@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ifmain/datapoisoning-detector-v1-medium",
+  "slug": "ifmain-datapoisoning-detector-v1-medium",
+  "author": "ifmain",
+  "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-medium",
+  "created_at": "2026-10-02T18:02:44.000Z",
+  "updated_at": "2026-10-03T02:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "dataset:ozdentarikcan/DiffVaxDataset",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 731787013,
+  "storage_human": "732 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ifmain/datapoisoning-detector-v1 · GitHub",
+      "url": "https://github.com/ifmain/datapoisoning-detector-v1",
+      "snippet": "Contribute to ifmain/datapoisoning-detector-v1 development by creating an account on GitHub."
+    },
+    {
+      "title": "ifmain/datapoisoning-detector-v1-small · Hugging Face",
+      "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-small",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DataPoisoning Detector v1 Small Architecture at a glance Model family comparison Detection recall Clean-image specificity Distillation quality Published comparison Detection recall Clean-image specificity Local Glaze check License and data provenance Citation ..."
+    },
+    {
+      "title": "Cybersecurity in LLMs and GenAI Models: Prompt Injection, Data ... - Medium",
+      "url": "https://medium.com/@aditrizky052/cybersecurity-in-llms-and-genai-models-prompt-injection-data-poisoning-and-model-hijacking-58b9d8c9e557",
+      "snippet": "HACKER MECHANICS 2. Data Poisoning: The Invisible Sabotage of AI Trust Data is the fuel of GenAI—and poisoning that fuel can subtly degrade or manipulate a model&#x27;s behavior. The Attack Vector ..."
+    },
+    {
+      "title": "data-poisoning-detector · PyPI",
+      "url": "https://pypi.org/project/data-poisoning-detector/",
+      "snippet": "Data Poisoning Detection using self-supervised learning techniques"
+    },
+    {
+      "title": "How To Break An AI Model Using a Data Poisoning Attack - Medium",
+      "url": "https://medium.com/@iffishah89/how-to-break-an-ai-model-using-a-data-poisoning-attack-a-naive-approach-ce91ed857dbd",
+      "snippet": "How To Break An AI Model Using a Data Poisoning Attack — A Naive Approach Machine Learning models are widely used in cybersecurity for detecting phishing websites."
+    }
+  ]
+}

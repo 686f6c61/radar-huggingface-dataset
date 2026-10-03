@@ -5,7 +5,7 @@
   "author": "Horizon-Labs",
   "url": "https://huggingface.co/Horizon-Labs/prompt-injection-guard-large",
   "created_at": "2026-09-25T17:38:53.000Z",
-  "updated_at": "2026-09-25T17:40:02.000Z",
+  "updated_at": "2026-10-02T18:38:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -88,7 +88,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 55,
+  "downloads_30d": 60,
   "trending_score": 0,
   "parameters": 567756802,
   "parameters_human": "567.8M",

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3-4b-mongolian-GGUF",
+  "slug": "mradermacher-gemma-3-4b-mongolian-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3-4b-mongolian-GGUF",
+  "created_at": "2026-10-02T22:03:36.000Z",
+  "updated_at": "2026-10-02T22:25:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "mn",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mongolian",
+    "cyrillic",
+    "chat",
+    "rag",
+    "retrieval-augmented-generation",
+    "mn",
+    "en",
+    "base_model:munkhbayar-batkhuu/gemma-3-4b-mongolian",
+    "base_model:quantized:munkhbayar-batkhuu/gemma-3-4b-mongolian",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4551515648,
+  "parameters_human": "4.55B",
+  "storage_bytes": 41656825600,
+  "storage_human": "41.7 GB",
+  "base_model": "munkhbayar-batkhuu/gemma-3-4b-mongolian",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منتديات كووورة: كووورة تونسية",
+      "url": "https://forum.kooora.com/f.aspx?f=57",
+      "snippet": "قوانين المنتدى الخيمة التونسية 🇹🇳2026 🌹☝️أذكر الله بسورة قرآنية أوحديث ☪ صلي على المصطفى محمد و اكسب ثوابا كبيرا.☪☪ صل الله عليه وسلم☪"
+    },
+    {
+      "title": "منتديات كووورة: كووورة ألمانية",
+      "url": "https://forum.kooora.com/f.aspx?f=84",
+      "snippet": "⚖️ || قــوانــيــن كـــووورة ألــمــانــيــة || لا عذر لمن لم يقرأ ⚖️ 🗝️ بـوابـتـك إلـى الـمـنـتـدى الألـمـانـي 🗝️ 🤗 أعـضـاء أسـرة الـمـنـتـدى الألـمـانـي 🤗"
+    },
+    {
+      "title": "منتديات كووورة: كووورة مغربية",
+      "url": "https://forum.kooora.com/f.aspx?f=112",
+      "snippet": "¶القوانين®K.M¶ المكتبة الذهبية مرجع الإحصـائيات بكووورة مغربية جَـوَاهِر و إبدَاعَـات ll إشعــــــارات إشـــــــرافية ll المسابقة الكبرى الرمضانية لسنة 2026: جميع المعطيات وتفاصيل المسابقة"
+    },
+    {
+      "title": "KOOORA - منتديات كووورة",
+      "url": "https://forum.kooora.com/",
+      "snippet": "منتديات كووورة هي منصة عربية شاملة لمناقشة أخبار الرياضة وتبادل الآراء حول مختلف البطولات والفرق الرياضية."
+    },
+    {
+      "title": "منتديات كووورة: كووورة عراقية",
+      "url": "https://forum.kooora.com/f.aspx?f=101",
+      "snippet": "تشكيلات المنتدى استذكار قوانين المنتدى تنبيه (لا عذر لمن لم يقرأ) مشرفي المنتدى موسوعة البدراوي موسوعة عمانوئيل أنوية"
+    }
+  ]
+}

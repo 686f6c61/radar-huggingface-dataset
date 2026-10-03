@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "Christeck/anima-light-GGUF",
+  "slug": "christeck-anima-light-gguf",
+  "author": "Christeck",
+  "url": "https://huggingface.co/Christeck/anima-light-GGUF",
+  "created_at": "2026-10-01T07:47:56.000Z",
+  "updated_at": "2026-10-02T23:06:09.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gemma3",
+    "on-device",
+    "spanish",
+    "lora",
+    "text-generation",
+    "es",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 1526484256,
+  "storage_human": "1.5 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=2&sort=created",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... Christeck/anima-light-GGUF. Text Generation • 1.0B • Updated in about 8 hours ..."
+    }
+  ]
+}

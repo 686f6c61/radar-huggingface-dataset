@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "harshnandwana/visual-jev-120k-qwen35-0.8b-lora",
+  "slug": "harshnandwana-visual-jev-120k-qwen35-0-8b-lora",
+  "author": "harshnandwana",
+  "url": "https://huggingface.co/harshnandwana/visual-jev-120k-qwen35-0.8b-lora",
+  "created_at": "2026-10-02T20:59:27.000Z",
+  "updated_at": "2026-10-03T01:57:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "visual-grounding",
+    "lora",
+    "qwen3.5",
+    "image-text-to-text",
+    "en",
+    "dataset:harshnandwana/visual-jev-decisions-v1",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22548795,
+  "storage_human": "23 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/AstaBrief_8B-FP8",
+  "slug": "liodon-ai-astabrief_8b-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/AstaBrief_8B-FP8",
+  "created_at": "2026-10-02T23:28:17.000Z",
+  "updated_at": "2026-10-03T00:48:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:allenai/AstaBrief_8B",
+    "base_model:quantized:allenai/AstaBrief_8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 9450004578,
+  "storage_human": "9.5 GB",
+  "base_model": "allenai/AstaBrief_8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-sourcing AstaBrief, the fast report-generation model in Asta",
+      "url": "https://allenai.org/blog/astabrief",
+      "snippet": "We&#x27;re releasing AstaBrief, an 8B open-weights model for generating cited scientific reports, available in Asta&#x27;s Fast mode or to download and run on your own infrastructure."
+    },
+    {
+      "title": "Ai2 Releases AstaBrief 8B: Fast Open-Source Scientific Report…",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/10/03/astabrief-8b-open-source-scientific-report-generator/",
+      "snippet": "Overview The Allen Institute for AI (Ai2) has open-sourced \"AstaBrief 8B\", a high-speed report generation model for scientific research, along with its training data. This model is used as the \"Fast mode\" in the report generation feature of \"Asta\", an AI2 agent platform for scientific research."
+    },
+    {
+      "title": "AstaBrief Goes Open Source: Ai2&#x27;s 8B Model Writes Cited Scientific ...",
+      "url": "https://toolnavs.com/article/2265-astabrief-goes-open-source-ai2s-8b-model-writes-cited-scientific-reports-35x-fas",
+      "snippet": "AstaBrief 8B is the scientific report generation model that Ai2 (the Allen Institute for AI) open-sourced on October 2, 2026: give it a research question and a set of retrieved literature excerpts, and it produces a report with citations. The model is already live as Fast mode in the \"Generate a report\" feature of Asta, Ai2&#x27;s platform for scientific work, and its weights and training data are ..."
+    },
+    {
+      "title": "AstaBrief 8B: How AllenAI Trained a Small Open Model to Generate Cited ...",
+      "url": "https://dev.to/prabhakar_chaudhary_7afe4/astabrief-8b-how-allenai-trained-a-small-open-model-to-generate-cited-scientific-reports-29ck",
+      "snippet": "AstaBrief 8B: How AllenAI Trained a Small Open Model to Generate Cited Scientific Reports The Allen Institute for AI (Ai2) released AstaBrief 8B on October 2, 2026 — an open-weights model that takes a research question and a set of retrieved literature excerpts and produces a fully cited scientific report in a single forward pass. The model is now live as \"Fast mode\" inside Asta, Ai2&#x27;s ..."
+    },
+    {
+      "title": "Ai2&#x27;s AstaBrief 8B Writes Cited Research Reports 3.5x Faster in One ...",
+      "url": "https://alphasignal.ai/news/ai2-s-astabrief-8b-writes-cited-research-reports-3-5x-faster-in-one-pass",
+      "snippet": "AstaBrief 8B writes cited research reports in one pass Ai2, the Allen Institute for AI, has released AstaBrief 8B, an open-weight Qwen3-8B model fine-tuned to turn a research question and retrieved paper excerpts into a structured, cited report."
+    }
+  ]
+}

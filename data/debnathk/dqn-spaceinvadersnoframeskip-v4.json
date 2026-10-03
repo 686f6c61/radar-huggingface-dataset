@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "debnathk/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "debnathk-dqn-spaceinvadersnoframeskip-v4",
+  "author": "debnathk",
+  "url": "https://huggingface.co/debnathk/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-10-02T23:07:54.000Z",
+  "updated_at": "2026-10-02T23:08:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54270575,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dossier pedagogique sur le film: L'enfant stupide devient un génie",
+      "url": "https://ifprofs.org/ressource/dossier-pedagogique-sur-le-film-L-enfant-stupide-devient-un-genie/6a4e964678fd6",
+      "snippet": "Jul 8, 2026 · c'est l'histoire d'un enfant L'histoire met en scène un jeune garçon étiqueté comme \"stupide\" ou en difficulté qui finit par …"
+    },
+    {
+      "title": "Accueil | lhistoire.fr",
+      "url": "https://www.lhistoire.fr/",
+      "snippet": "Sep 25, 2026 · Trois historiens (Klaus Oschema, Isabelle Deflers et Jürgen Finger) analysent cette saga au prisme de leur discipline. …"
+    },
+    {
+      "title": "Histoire de l'enfance — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Histoire_de_l%27enfance",
+      "snippet": "L 'histoire de l'enfance est un sujet d' histoire sociale depuis l'ouvrage de l'historien français Philippe Ariès, L'Enfant et la vie familiale …"
+    },
+    {
+      "title": "Kylian Mbappé, l’étonnante révélation sur son enfance",
+      "url": "https://www.sports.fr/football/equipe-de-france/kylian-mbappe-letonnante-revelation-sur-son-enfance-1020948.html",
+      "snippet": "Jun 13, 2026 · Kylian Mbappé s’est confié sur un pan méconnu de son enfance dans le cadre d’un célèbre show américain."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/watch?v=sih6UhwIQ2s",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

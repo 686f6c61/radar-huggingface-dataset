@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "carlosmstavares/astabrief-8b-gguf",
+  "slug": "carlosmstavares-astabrief-8b-gguf",
+  "author": "carlosmstavares",
+  "url": "https://huggingface.co/carlosmstavares/astabrief-8b-gguf",
+  "created_at": "2026-10-02T19:51:55.000Z",
+  "updated_at": "2026-10-03T00:05:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "ollama",
+    "f16",
+    "q4_k_m",
+    "en",
+    "base_model:allenai/AstaBrief_8B",
+    "base_model:quantized:allenai/AstaBrief_8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 21415828736,
+  "storage_human": "21.4 GB",
+  "base_model": "allenai/AstaBrief_8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

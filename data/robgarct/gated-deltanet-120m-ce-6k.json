@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "robgarct/gated-deltanet-120m-ce-6k",
+  "slug": "robgarct-gated-deltanet-120m-ce-6k",
+  "author": "robgarct",
+  "url": "https://huggingface.co/robgarct/gated-deltanet-120m-ce-6k",
+  "created_at": "2026-10-02T23:15:26.000Z",
+  "updated_at": "2026-10-02T23:15:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "recurrent-recall-circuits",
+  "languages": [],
+  "tags": [
+    "recurrent-recall-circuits",
+    "gated-deltanet",
+    "linear-attention",
+    "language-modeling",
+    "in-context-recall",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 523965679,
+  "storage_human": "524 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "url": "https://arxiv.org/abs/2412.06464",
+      "snippet": "Building on this insight, we introduce the gated delta rule and develop a parallel training algorithm optimized for modern hardware. Our proposed architecture, Gated DeltaNet, consistently surpasses existing models like Mamba2 and DeltaNet across multiple benchmarks, including language modeling, common-sense reasoning, in-context retrieval ..."
+    },
+    {
+      "title": "GitHub - NVlabs/GatedDeltaNet: [ICLR 2025] Official PyTorch ...",
+      "url": "https://github.com/NVlabs/GatedDeltaNet",
+      "snippet": "📢 Latest Updates 03/12/2026: 🔥🔥 Gated DeltaNet has been incorporated in the amazing Olmo Hybrid model ! 02/17/2026: 🔥🔥 Gated DeltaNet is powering the incredible Qwen3.5 model ! 09/10/2025: 🔥🔥 Gated DeltaNet has been integrated into the great Qwen3-Next model !"
+    },
+    {
+      "title": "GitHub - krsnoki/gatedDeltaNet: Reproducing code for Gated Delta ...",
+      "url": "https://github.com/krsnoki/gatedDeltaNet",
+      "snippet": "Please see this slurm script for training the GatedDeltaNet_H1 model with 0.4B parameters on 15B tokens. The training requires 4 nodes and can be finished in approximately 4 hours."
+    },
+    {
+      "title": "Gated Delta Networks: Improving Mamba2 with Delta Rule",
+      "url": "https://huggingface.co/papers/2412.06464",
+      "snippet": "Join the discussion on this paper page"
+    },
+    {
+      "title": "GATED DELTA NETWORKS IMPROVING MAMBA WITH DELTA RULE - OpenReview",
+      "url": "https://openreview.net/pdf?id=r8H7xhYPwz",
+      "snippet": "our observations in S-NIAH-2 and S-NIAH-3 (Table 2). Gated DeltaNet outperforms both DeltaNet and Mamba2 thanks to its gated delta rule, thou h the improvement margin is smaller than in Table 2. We attribute this reduced performance gap to instruction-unaligned small language models being prone to repetition errors, which are the primary source ..."
+    }
+  ]
+}

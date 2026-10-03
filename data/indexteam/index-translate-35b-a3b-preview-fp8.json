@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Translate-35B-A3B-preview-FP8",
+  "slug": "indexteam-index-translate-35b-a3b-preview-fp8",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-FP8",
+  "created_at": "2026-10-02T21:10:38.000Z",
+  "updated_at": "2026-10-02T22:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "fp8",
+    "compressed-tensors",
+    "translation",
+    "index",
+    "arxiv:2609.40181",
+    "base_model:IndexTeam/Index-Translate-35B-A3B-preview",
+    "base_model:quantized:IndexTeam/Index-Translate-35B-A3B-preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 38375593997,
+  "storage_human": "38.4 GB",
+  "base_model": "IndexTeam/Index-Translate-35B-A3B-preview",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PIN Bertrand • Barreau de Toulon",
+      "url": "https://barreautoulon.fr/avocat/pin-bertrand/",
+      "snippet": "Jan 3, 2000 · Association Jean PIN - Bertrand PIN 8 avenue Maréchal Foch 83000 TOULON TEL : 04 94 93 57 56"
+    },
+    {
+      "title": "Bertrand Toulas - Data Analyst | LinkedIn",
+      "url": "https://fr.linkedin.com/in/bertrand-toulas/en",
+      "snippet": "Data Analyst · I&#39;m a data analyst who likes his data clean, exhaustive, understandable, performant and insightful. I&#39;m also …"
+    },
+    {
+      "title": "Bertrand Toulas - Chargé de Mission : Responsable Data, Analytics ...",
+      "url": "https://fr.linkedin.com/in/bertrand-toulas",
+      "snippet": "Chargé de Mission : Responsable Data, Analytics Engineer chez Léko Pro · Data Analyst qui aime une donnée propre, complète, …"
+    },
+    {
+      "title": "Bertrand Toulon (83000) - Numéro de téléphone et adresse - Annuaire ...",
+      "url": "https://annuaire.118000.fr/v_toulon_83/n_bertrand",
+      "snippet": "Vous cherchez un bertrand à Toulon (83000) ? L’annuaire des particuliers du 118000.fr vous fournit les renseignements dont vous …"
+    },
+    {
+      "title": "Maître Bertrand Pin : Avocat au barreau de Toulon (83) - Maître ...",
+      "url": "https://www.bertrandpinavocat.fr/",
+      "snippet": "Maître Bertrand Pin vous reçoit au cabinet d'avocat de Toulon dans le Var (83). Plus de 20 Ans d'expérience dans plusieurs …"
+    }
+  ]
+}

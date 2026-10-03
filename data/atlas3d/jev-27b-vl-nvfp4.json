@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Atlas3D/JEV-27B-VL-NVFP4",
+  "slug": "atlas3d-jev-27b-vl-nvfp4",
+  "author": "Atlas3D",
+  "url": "https://huggingface.co/Atlas3D/JEV-27B-VL-NVFP4",
+  "created_at": "2026-10-02T23:09:13.000Z",
+  "updated_at": "2026-10-02T23:12:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "jev",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "llm-compressor",
+    "blackwell",
+    "image-text-to-text",
+    "conversational",
+    "base_model:autotrust/JEV-27B-VL",
+    "base_model:quantized:autotrust/JEV-27B-VL",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 29016099688,
+  "storage_human": "29.0 GB",
+  "base_model": "autotrust/JEV-27B-VL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "autotrust/JEV-27B-VL · Hugging Face",
+      "url": "https://huggingface.co/autotrust/JEV-27B-VL",
+      "snippet": "autotrust/JEV-27B-VL: a decision model that learned to see without a single image of training"
+    },
+    {
+      "title": "denis-pplx/autojev-27b · Hugging Face",
+      "url": "https://huggingface.co/denis-pplx/autojev-27b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, an Open Decision Model for Self-Hosted ...",
+      "url": "https://www.prnewswire.com/news-releases/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents-302891720.html",
+      "snippet": "SINGAPORE, Sept. 28, 2026 /PRNewswire/ -- AutoTrust AI today released JEV-27B, an Apache-2.0 open-weights model designed to handle frequent, structured decisions inside AI agent workflows while ..."
+    },
+    {
+      "title": "Atlas3D — Upload Any 3D Model & Make It Interactive with AI",
+      "url": "https://atlas3d.space/",
+      "snippet": "Upload any 3D model and Atlas3D&#x27;s AI automatically turns it into an interactive learning experience — generating part labels, descriptions, prompts, and quizzes. Built for 3D artists and educators."
+    },
+    {
+      "title": "AutoTrust AI Releases JEV-27B, An Open Decision Model For Self-Hosted ...",
+      "url": "https://ohsem.me/2026/09/autotrust-ai-releases-jev-27b-an-open-decision-model-for-self-hosted-ai-agents/",
+      "snippet": "SINGAPORE, Sept. 29, 2026 /PRNewswire/ — AutoTrust AI today released JEV-27B, an Apache-2.0 open-weights model designed to handle frequent, structured decisions inside AI agent workflows while retaining the underlying model&#x27;s full generation and reasoning path."
+    }
+  ]
+}

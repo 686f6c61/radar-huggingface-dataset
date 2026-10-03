@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sifr-0.8b-v3-GGUF",
+  "slug": "mradermacher-sifr-0-8b-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sifr-0.8b-v3-GGUF",
+  "created_at": "2026-10-03T00:45:19.000Z",
+  "updated_at": "2026-10-03T00:50:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-engine",
+    "system-1",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "option-key-protocol",
+    "en",
+    "base_model:mohamedlotfy50/sifr-0.8b-v3",
+    "base_model:quantized:mohamedlotfy50/sifr-0.8b-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7776499264,
+  "storage_human": "7.8 GB",
+  "base_model": "mohamedlotfy50/sifr-0.8b-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Only just legal : r/LegalTeens - Reddit",
+      "url": "https://www.reddit.com/r/LegalTeens/comments/1c1ogrd/only_just_legal/",
+      "snippet": "Apr 11, 2024 · 3.2M subscribers in the LegalTeens community. **LEGAL TEENS** it's a subreddit dedicated to NSFW TEENS, …"
+    },
+    {
+      "title": "polosedan.ru",
+      "url": "https://polosedan.ru/forum/r.php",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Barely Legal - Works - Archive of Our Own",
+      "url": "https://archiveofourown.org/tags/Barely%20Legal/works",
+      "snippet": "Bottom John \"Soap\" MacTavish Barely Legal Breeding Forced Orgasm Gay Sex Dead Dove: Do Not Eat Bad Ending Kinda depends …"
+    },
+    {
+      "title": "Barely legal Vidéos porno hentai | ️ CartoonPorn.PRO",
+      "url": "https://cartoonporn.pro/fr/tags/barely-legal/",
+      "snippet": "Diffusez des variétés de porno cartoon juteux barely legal, porno hentai barely legal et autres vidéos chaudes de bonne qualité …"
+    },
+    {
+      "title": "'barely legal anime' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=barely+legal+anime",
+      "snippet": "3,995 barely legal anime FREE videos found on XVIDEOS for this search."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_64_H_16_TASK_tool_hang_ID_146582",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_64_h_16_task_tool_hang_id_146582",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_64_H_16_TASK_tool_hang_ID_146582",
+  "created_at": "2026-10-02T20:30:56.000Z",
+  "updated_at": "2026-10-02T20:31:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:castanetnicolas/robomimic_tool_hang_ph_image84",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 89331435,
+  "parameters_human": "89.3M",
+  "storage_bytes": 357391980,
+  "storage_human": "357 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cannot connect to Xfce with remote desktop - Ask Ubuntu",
+      "url": "https://askubuntu.com/questions/1388431/cannot-connect-to-xfce-with-remote-desktop",
+      "snippet": "Jan 21, 2022 · I installed xrdp and xfce on Ubuntu 20.04: sudo apt update &amp;&amp; sudo apt upgrade -y sudo apt install xfce4 …"
+    },
+    {
+      "title": "Native RDP on Ubuntu 22.04 not working",
+      "url": "https://askubuntu.com/questions/1426376/native-rdp-on-ubuntu-22-04-not-working",
+      "snippet": "Aug 29, 2022 · How to switch from the Wayland display server to Xorg X11 on Ubuntu 22.04 Bonus: this also fixed my broken drag …"
+    },
+    {
+      "title": "Forwarding an entire desktop over SSH without third party tools",
+      "url": "https://unix.stackexchange.com/questions/505908/forwarding-an-entire-desktop-over-ssh-without-third-party-tools",
+      "snippet": "Mar 12, 2019 · Something that's always bugged me and I've been unable to find good information on: How can you or why can't you …"
+    },
+    {
+      "title": "Connected but blank screen in gnome wayland remote desktop/RDP",
+      "url": "https://unix.stackexchange.com/questions/804128/connected-but-blank-screen-in-gnome-wayland-remote-desktop-rdp",
+      "snippet": "Jan 30, 2026 · I'm running gnome with wayland on Fedora 43. I have the RDP server running: # User service systemctl --user status …"
+    },
+    {
+      "title": "wayland 的性能真的比 xorg 更好吗? - 知乎",
+      "url": "https://www.zhihu.com/question/411495521",
+      "snippet": "wayland 提升性能的地方在于客户端渲染，渲染结果作为纹理传递给合成器。x11 走 DRI 也可以做到客户端渲染。从渲染上看二者性 …"
+    }
+  ]
+}

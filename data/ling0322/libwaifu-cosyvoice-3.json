@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-cosyvoice-3",
+  "slug": "ling0322-libwaifu-cosyvoice-3",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-cosyvoice-3",
+  "created_at": "2026-10-02T23:16:25.000Z",
+  "updated_at": "2026-10-02T23:17:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ja",
+    "ko",
+    "it",
+    "ru",
+    "de"
+  ],
+  "tags": [
+    "libwaifu",
+    "cosyvoice3",
+    "text-to-speech",
+    "voice-cloning",
+    "zh",
+    "en",
+    "fr",
+    "es",
+    "ja",
+    "ko",
+    "it",
+    "ru",
+    "de",
+    "base_model:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "base_model:finetune:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4447707869,
+  "storage_human": "4.4 GB",
+  "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512, funasr/campplus",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenAudio/CosyVoice: Multi-lingual large voice generation ...",
+      "url": "https://github.com/QwenAudio/CosyVoice",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - QwenAudio/CosyVoice"
+    },
+    {
+      "title": "GitHub - wehos/CosyVoice-v3: Multi-lingual large voice generation model ...",
+      "url": "https://github.com/wehos/CosyVoice-v3",
+      "snippet": "Multi-lingual large voice generation model, providing inference, training and deployment full-stack ability. - wehos/CosyVoice-v3"
+    },
+    {
+      "title": "CosyVoice | Multilingual TTS Model",
+      "url": "https://cosyvoice.org/",
+      "snippet": "Discover CosyVoice, a multilingual zero-shot TTS model, featuring natural pronunciation and high-quality speech synthesis with advanced features."
+    },
+    {
+      "title": "model-scope/CosyVoice · Hugging Face",
+      "url": "https://huggingface.co/model-scope/CosyVoice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ling0322/libwaifu-one-obsession-v24 at main - Hugging Face",
+      "url": "https://huggingface.co/ling0322/libwaifu-one-obsession-v24/tree/main",
+      "snippet": "ling0322 / libwaifu-one-obsession-v24 Like 2 Text-to-Image stable-diffusion stable-diffusion-xl illustrious libwaifu Not-For-All-Audiences License:one-obsession-civitai Model card FilesFiles and versions xet Community Copy to bucket new"
+    }
+  ]
+}

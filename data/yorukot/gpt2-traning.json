@@ -5,7 +5,7 @@
   "author": "yorukot",
   "url": "https://huggingface.co/yorukot/gpt2-traning",
   "created_at": "2026-10-02T02:58:44.000Z",
-  "updated_at": "2026-10-02T10:18:44.000Z",
+  "updated_at": "2026-10-02T17:13:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 995548416,
-  "storage_human": "996 MB",
+  "storage_bytes": 1991096832,
+  "storage_human": "2.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

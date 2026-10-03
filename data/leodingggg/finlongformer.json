@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "LeoDingggg/FinLongformer",
+  "slug": "leodingggg-finlongformer",
+  "author": "LeoDingggg",
+  "url": "https://huggingface.co/LeoDingggg/FinLongformer",
+  "created_at": "2026-10-02T20:31:28.000Z",
+  "updated_at": "2026-10-02T20:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "longformer",
+    "fill-mask",
+    "finance",
+    "quantitative-finance",
+    "masked-language-modeling",
+    "continued-pretraining",
+    "en",
+    "arxiv:2004.05150",
+    "base_model:allenai/longformer-base-4096",
+    "base_model:finetune:allenai/longformer-base-4096",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 148711257,
+  "parameters_human": "148.7M",
+  "storage_bytes": 594879308,
+  "storage_human": "595 MB",
+  "base_model": "allenai/longformer-base-4096",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Washington Post - Breaking news and latest headlines, U.S. news ...",
+      "url": "https://www.washingtonpost.com/",
+      "snippet": "Breaking news, live coverage, investigations, analysis, video, photos and opinions from The Washington Post. Subscribe for the …"
+    },
+    {
+      "title": "Latest From The Post - The Washington Post",
+      "url": "https://www.washingtonpost.com/latest-headlines/",
+      "snippet": "22 hours ago · Breaking news, live coverage, the latest headlines from The Washington Post. Subscribe for the latest on U.S. and …"
+    },
+    {
+      "title": "U.S. News - The Washington Post",
+      "url": "https://www.washingtonpost.com/national/",
+      "snippet": "22 hours ago · The Washington Post's national news coverage. Get the latest U.S. news, including science, health, climate and the …"
+    },
+    {
+      "title": "World - The Washington Post",
+      "url": "https://www.washingtonpost.com/world/",
+      "snippet": "22 hours ago · The Washington Post World section provides information and analysis of breaking world news stories. In addition to …"
+    },
+    {
+      "title": "Today's Cover - Oct 2, 2026 - The Washington Post - Front Pages",
+      "url": "https://www.frontpages.com/the-washington-post/",
+      "snippet": "22 hours ago · View today's The Washington Post newspaper cover. Get the latest breaking headlines updated Friday, October 02, …"
+    }
+  ]
+}

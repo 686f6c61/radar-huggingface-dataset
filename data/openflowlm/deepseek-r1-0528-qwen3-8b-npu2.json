@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2",
+  "slug": "openflowlm-deepseek-r1-0528-qwen3-8b-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/DeepSeek-R1-0528-Qwen3-8B-NPU2",
+  "created_at": "2026-10-02T21:52:58.000Z",
+  "updated_at": "2026-10-02T21:52:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "arxiv:2501.12948",
+    "base_model:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11952384727,
+  "storage_human": "12.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC News Tamil - YouTube",
+      "url": "https://www.youtube.com/c/bbctamil/videos",
+      "snippet": "Jan 10, 2026 · பிபிசி தமிழ் தொலைக்காட்சி செய்தியறிக்கை | BBC Tamil TV News 01/10/2026 40K 9h ago 16:48"
+    },
+    {
+      "title": "தமிழ் - YouTube",
+      "url": "https://www.youtube.com/@tamil",
+      "snippet": "Tamil Comedy Actor Sathyan Biography, Wife, Family, Caste, Photos, Salary & Lifestyle| தமிழ் தமிழ் 89K 8y ago 2:16"
+    },
+    {
+      "title": "Youtube In Tamil - YouTube",
+      "url": "https://www.youtube.com/c/YoutubeInTamil",
+      "snippet": "Swaraj code tractor service review in tamil #swaraj #swarajtractor #minitractor 10K 3y ago 16:10"
+    },
+    {
+      "title": "Latest Tamil Videos - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLtfYbW1flhRUYx1h5PdpgfMYFR8byLeqs",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "TubeTamil - YouTube",
+      "url": "https://www.youtube.com/c/TubetamilTV/videos",
+      "snippet": "உலகச் செய்திகளை மிக விரைவாக உண்மைத் தன்மையுடன் வழங்கும் ஒரே ஒரு ஊடகம் ..."
+    }
+  ]
+}

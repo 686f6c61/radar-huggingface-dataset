@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "slug": "francesca9805-zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "created_at": "2026-10-02T21:07:11.000Z",
+  "updated_at": "2026-10-02T22:06:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2995906499,
+  "storage_human": "3.0 GB",
+  "base_model": "francesca9805/ppt-wc-uniform-newlex-zho-before-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Anthology] EROGROS Vol. 2 [Digital] » nhentai: hentai doujinshi and …",
+      "url": "https://nhentai.to/g/228922",
+      "snippet": "Read and download EROGROS Vol. 2, a hentai manga by ai7n for free on nhentai."
+    },
+    {
+      "title": "nhentai: hentai doujinshi and manga",
+      "url": "https://nhentai.net/g/228922/6/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Nyotaburu 4 ~Irestill Oukoku no Ryuukishi~ » nhentai",
+      "url": "https://nhentai.xxx/g/228922/",
+      "snippet": "(Futaket 12.5) [Gekkou Tei (Seres Ryu)] Nyotaburu 4 ~Irestill Oukoku no Ryuukishi~ (Granblue Fantasy) (ふたけっと12.5) [月光亭 ( …"
+    },
+    {
+      "title": "Language: english » nhentai",
+      "url": "https://nhentai.net/language/english/?page=228922",
+      "snippet": "Read 148,050 galleries with language english on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "[Anthology] EROGROS Vol. 2 [Digital] - Comic | nHentai : Free Hentai ...",
+      "url": "https://nhentai.com/en/comic/anthology-erogros-vol-2-digital",
+      "snippet": "Apr 1, 2018 - Read and download [Anthology] EROGROS Vol. 2 [Digital], a hentai Manga by Uziga Waita, Horihone Saizou, Tksn, …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SEBK4C/Winnow-12B-LoRA",
+  "slug": "sebk4c-winnow-12b-lora",
+  "author": "SEBK4C",
+  "url": "https://huggingface.co/SEBK4C/Winnow-12B-LoRA",
+  "created_at": "2026-10-02T22:17:44.000Z",
+  "updated_at": "2026-10-02T22:52:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "gemma4",
+    "winnow",
+    "typed-decisions",
+    "jev",
+    "system-one",
+    "audio",
+    "vision",
+    "image-text-to-text",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 131137536,
+  "parameters_human": "131.1M",
+  "storage_bytes": 1258910208,
+  "storage_human": "1.3 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bêtes de science : l’intelligence hors norme de la pieuvre - Futura",
+      "url": "https://www.futura-sciences.com/planete/actualites/animaux-betes-science-intelligence-hors-norme-pieuvre-87059/",
+      "snippet": "Apr 29, 2021 · Toujours est-il que la pieuvre montre des capacités de mémorisation, d'apprentissage, d'orientation et d'adaptation à …"
+    },
+    {
+      "title": "Pourquoi les pieuvres brillent-elles par leur intelligence ?",
+      "url": "https://ouille.info/animaux/intelligence-des-pieuvres/",
+      "snippet": "Depuis des décennies, les pieuvres intriguent chercheurs et passionnés de la nature par leurs comportements complexes et leur …"
+    },
+    {
+      "title": "Pieuvres : comportements étonnants et défis actuels",
+      "url": "https://fr.infoanimales.net/poulpes/Intelligence-des-poulpes--adaptations-et-d%C3%A9fis-pour-leur-conservation/",
+      "snippet": "Aug 1, 2025 · La vie de la pieuvre est fascinante de par son système nerveux décentralisé , la variété de comportements adaptatifs …"
+    },
+    {
+      "title": "Les pieuvres sont super‑intelligentes… mais ont‑elles une conscience ?",
+      "url": "https://theconversation.com/les-pieuvres-sont-super-intelligentes-mais-ont-elles-une-conscience-59129",
+      "snippet": "May 11, 2016 · On dit les pieuvres intelligentes, au point de jouer savamment des tentacules pour s'échapper de l'aquarium. Cela …"
+    },
+    {
+      "title": "Pourquoi dit-on que les pieuvres sont si intelligentes - Le Mag des …",
+      "url": "https://lemagdesanimaux.ouest-france.fr/article-734-pourquoi-pieuvres-intelligentes.html",
+      "snippet": "Mar 16, 2026 · Les pieuvres dévoilent des aptitudes étonnantes Les céphalopodes - groupe qui inclut également seiches et calmars …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Accio-Lab/occamy-1.0-MLX-nvfp4",
+  "slug": "accio-lab-occamy-1-0-mlx-nvfp4",
+  "author": "Accio-Lab",
+  "url": "https://huggingface.co/Accio-Lab/occamy-1.0-MLX-nvfp4",
+  "created_at": "2026-10-02T22:40:12.000Z",
+  "updated_at": "2026-10-02T22:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "nvfp4",
+    "arxiv:2609.11977",
+    "text-generation",
+    "conversational",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19528953621,
+  "storage_human": "19.5 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么苏格兰厨师戈登·拉姆齐 (Gordon Ramsay) 那么受欢迎？",
+      "url": "https://www.zhihu.com/question/24908661",
+      "snippet": "为什么苏格兰厨师戈登·拉姆齐 (Gordon Ramsay) 那么受欢迎？ 个人非常喜欢他的 Gordon Ramsay Cook With Me 应用，里面的教学 …"
+    },
+    {
+      "title": "为什么苏格兰厨师戈登·拉姆齐 (Gordon Ramsay) 那么受欢迎？",
+      "url": "https://www.zhihu.com/question/24908661/answers/updated",
+      "snippet": "Gordon Ramsay 此次，Mall先生 以独家专访的形式，与Gordon Ramsay进行了深度沟通，聊起了他的新餐厅、他对中国和上海的感 …"
+    },
+    {
+      "title": "在星级厨师 Gordon Ramsay 名下餐厅用餐是怎样一番体验？",
+      "url": "https://www.zhihu.com/question/24916554",
+      "snippet": "读Gordon Ramsay的故事总是给人感觉特别励志，从一个原生家庭很不靠谱，弟弟还吸毒的没什么背景的穷小子，15岁因为腿伤被迫 …"
+    },
+    {
+      "title": "煮意面的水里到底该不该放橄榄油？ - 知乎",
+      "url": "https://www.zhihu.com/question/63516663",
+      "snippet": "煮意面的水里到底该不该放橄榄油？ Gordon Ramsay在煮意面的教学 GordonRamsay 意面（煮）_腾讯视频 中认为在煮意面的水里 …"
+    },
+    {
+      "title": "《戈登拉姆奇终极烹饪教程》第一季有哪些值得关注的厨具？",
+      "url": "https://www.zhihu.com/question/21810162",
+      "snippet": "我猜测呢，有可能是gordon ramsay和royal doulton合作的自己品牌的锅，像这样： 毕竟大厨09年推出了产品，然后12年节目上推广一 …"
+    }
+  ]
+}

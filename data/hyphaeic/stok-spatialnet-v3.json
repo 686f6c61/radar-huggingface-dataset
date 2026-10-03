@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hyphaeic/stok-spatialnet-v3",
+  "slug": "hyphaeic-stok-spatialnet-v3",
+  "author": "hyphaeic",
+  "url": "https://huggingface.co/hyphaeic/stok-spatialnet-v3",
+  "created_at": "2026-10-02T21:57:59.000Z",
+  "updated_at": "2026-10-02T22:18:19.000Z",
+  "license": "hpl",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "generic",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "generic",
+    "safetensors",
+    "stok_spatial_amortizer",
+    "reinforcement-learning",
+    "reward-free-rl",
+    "state-time-option-kernels",
+    "stok",
+    "game-ai",
+    "spatial-attention",
+    "theory-of-mind",
+    "empowerment",
+    "simultaneous-turn",
+    "tabular-classification",
+    "en",
+    "arxiv:2506.09499",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23781,
+  "parameters_human": "23781",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

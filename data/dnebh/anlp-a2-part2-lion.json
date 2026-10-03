@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dnebh/anlp-a2-part2-lion",
+  "slug": "dnebh-anlp-a2-part2-lion",
+  "author": "dnebh",
+  "url": "https://huggingface.co/dnebh/anlp-a2-part2-lion",
+  "created_at": "2026-10-02T23:46:51.000Z",
+  "updated_at": "2026-10-02T23:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33489920,
+  "parameters_human": "33.5M",
+  "storage_bytes": 133967496,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "siddarthg44/anlp-a2-p2-lion · Hugging Face",
+      "url": "https://huggingface.co/siddarthg44/anlp-a2-p2-lion",
+      "snippet": "Part 2 of ANLP Assignment 2: the dense decoder-only transformer from Part 1, trained on browndw/human-ai-parallel-corpus with a from-scratch implementation of the lion optimizer (subclassing only torch.optim.Optimizer)."
+    },
+    {
+      "title": "irishbumfuzzle/anlp-a2-p2-lion · Hugging Face",
+      "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p2-lion",
+      "snippet": "ANLP A2 checkpoint: lion Lion (Wen et al. 2025, Algorithm 3)"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "PDF anlp-s2026-13-evaluation",
+      "url": "https://cmu-l3.github.io/anlp-spring2026/static_files/anlp-s2026-13-evaluation.pdf",
+      "snippet": "• Then we can use the training loss, validation loss, or test loss to evaluate the model"
+    },
+    {
+      "title": "All 783 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 783 large language models across 651 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    }
+  ]
+}

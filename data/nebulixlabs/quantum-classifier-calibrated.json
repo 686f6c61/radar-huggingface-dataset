@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Nebulixlabs/Quantum-Classifier-Calibrated",
+  "slug": "nebulixlabs-quantum-classifier-calibrated",
+  "author": "Nebulixlabs",
+  "url": "https://huggingface.co/Nebulixlabs/Quantum-Classifier-Calibrated",
+  "created_at": "2026-10-02T19:17:27.000Z",
+  "updated_at": "2026-10-02T19:18:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "quantum-clasifier",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1000000,
+  "parameters_human": "1.0M",
+  "storage_bytes": 2006448,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kusuriya no Hitorigoto (The Apothecary Diaries) - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/54492/Kusuriya_no_Hitorigoto",
+      "snippet": "Looking for information on the anime Kusuriya no Hitorigoto (The Apothecary Diaries)? Find out more with MyAnimeList, the world's …"
+    },
+    {
+      "title": "The Apothecary Diaries: Kusuriya no Hitorigoto - Reddit",
+      "url": "https://www.reddit.com/r/KusuriyaNoHitorigoto/",
+      "snippet": "So knowing this I noticed how in last few LN and even WB Empress Regnant gets mentioned by MaoMao most of the time. Like yeah …"
+    },
+    {
+      "title": "A Wonderful manga - Kusuriya no Hitorigoto : r/manga - Reddit",
+      "url": "https://www.reddit.com/r/manga/comments/u7zhpt/a_wonderful_manga_kusuriya_no_hitorigoto/",
+      "snippet": "Apr 20, 2022 · 256 votes, 19 comments. 3.4M subscribers in the manga community. Everything and anything manga! …"
+    },
+    {
+      "title": "Kusuriya no Hitorigoto (The Apothecary Diaries) | Light Novel ...",
+      "url": "https://myanimelist.net/manga/86769/Kusuriya_no_Hitorigoto",
+      "snippet": "Aug 29, 2014 · Background Kusuriya no Hitorigoto has been published digitally in English as The Apothecary Diaries by J-Novel Club …"
+    },
+    {
+      "title": "Thoughts on Kusuriya No Hitorigoto? : r/manga - Reddit",
+      "url": "https://www.reddit.com/r/manga/comments/jxqp12/thoughts_on_kusuriya_no_hitorigoto/",
+      "snippet": "Nov 20, 2020 · 82 votes, 23 comments. 3.5M subscribers in the manga community. Everything and anything manga! …"
+    }
+  ]
+}

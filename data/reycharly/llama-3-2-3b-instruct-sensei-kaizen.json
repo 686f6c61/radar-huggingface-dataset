@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ReyCharly/Llama-3.2-3B-Instruct-Sensei-Kaizen",
+  "slug": "reycharly-llama-3-2-3b-instruct-sensei-kaizen",
+  "author": "ReyCharly",
+  "url": "https://huggingface.co/ReyCharly/Llama-3.2-3B-Instruct-Sensei-Kaizen",
+  "created_at": "2026-10-03T00:18:10.000Z",
+  "updated_at": "2026-10-03T00:47:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 16298319768,
+  "storage_human": "16.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReyCharly/Qwen2.5-3B-Instruct-Sensei-Kaizen · Hugging Face",
+      "url": "https://huggingface.co/ReyCharly/Qwen2.5-3B-Instruct-Sensei-Kaizen",
+      "snippet": "Instructions to use ReyCharly/Qwen2.5-3B-Instruct-Sensei-Kaizen with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ReyCharly (Reynolds) - Hugging Face",
+      "url": "https://huggingface.co/ReyCharly",
+      "snippet": "models1 ReyCharly/Qwen2.5-3B-Instruct-Sensei-Kaizen 3B•Updated about 2 hours ago• 34"
+    },
+    {
+      "title": "Llama 3.2 3B Instruct — AI Model Radar",
+      "url": "https://aimodelradar.app/models/llama-3-2-3b-instruct",
+      "snippet": "Llama 3.2 3B Instruct is a 3-billion-parameter open-weights instruction-tuned model developed by Meta, released September 2024. It supports text input/output with a 128K token context window and knowledge cutoff of December 2023. The model is available from multiple providers at competitive pricing starting from $0.030 per million input tokens."
+    },
+    {
+      "title": "Llama-3.2-3B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/llama-32-3b-instruct-meta-llama",
+      "snippet": "Overview Llama-3.2-3B-Instruct is a 3.21 billion parameter instruction-tuned language model developed by meta-llama and released September 25, 2024. This auto-regressive transformer uses Grouped-Query Attention (GQA) for efficient inference and handles multilingual text input and output with a 128,000 token context window. The model was trained on up to 9 trillion tokens of publicly available ..."
+    },
+    {
+      "title": "Llama-3.2-3B-Instruct | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/Llama-3.2-3B-Instruct",
+      "snippet": "Llama 3.2 is intended for commercial and research use in multiple languages. Instruction tuned text only models are intended for assistant-like chat and agentic applications like knowledge retrieval and summarization, mobile AI powered writing assistants and query and prompt rewriting. Pretrained models can be adapted for a variety of additional natural language generation tasks."
+    }
+  ]
+}

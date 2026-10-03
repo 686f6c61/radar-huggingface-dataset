@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-speaker-asr-qwen3-asr",
+  "slug": "mazesmazes-tiny-audio-speaker-asr-qwen3-asr",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr",
+  "created_at": "2026-10-03T00:15:31.000Z",
+  "updated_at": "2026-10-03T00:15:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 1576358644,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mazesmazes/tiny-audio · Hugging Face",
+      "url": "https://huggingface.co/mazesmazes/tiny-audio",
+      "snippet": "Tiny Audio Efficient Speech Recognition with Parameter-Efficient Fine-Tuning Tiny Audio is a lightweight automatic speech recognition (ASR) model that combines a LoRA-adapted HuBERT-XLarge encoder with a LoRA-adapted SmolLM3-3B language model decoder, connected via a trainable audio projector."
+    },
+    {
+      "title": "GitHub - nsightlabs/Qwen3-ASR",
+      "url": "https://github.com/nsightlabs/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "Qwen3-ASR is an open-source series of ASR models developed by the Qwen team at Alibaba Cloud, supporting stable multilingual speech/music/song recognition, language detection and timestamp prediction."
+    },
+    {
+      "title": "mazesmazes/tiny-audio-moe · Hugging Face",
+      "url": "https://huggingface.co/mazesmazes/tiny-audio-moe",
+      "snippet": "This model is the result of the Tiny Audio course, a free, hands-on guide to building your own ASR system from scratch. The Story of this Model This model isn&#x27;t the product of a massive research lab with an unlimited budget. It&#x27;s the result of a 24-hour training run on a single GPU, made possible by an efficient projector-only training approach."
+    },
+    {
+      "title": "Qwen-Audio-3.1-ASR | Speech, speakers & sound",
+      "url": "https://qwenaudio.github.io/qwen-audio-3.1-asr/",
+      "snippet": "Explore Qwen-Audio-3.1-ASR: multilingual speech recognition, speaker-diarized transcription and general audio understanding. Listen to real examples and inspect evaluation results."
+    }
+  ]
+}

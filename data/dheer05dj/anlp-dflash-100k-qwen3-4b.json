@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dheer05dj/anlp-dflash-100k-qwen3-4b",
+  "slug": "dheer05dj-anlp-dflash-100k-qwen3-4b",
+  "author": "dheer05dj",
+  "url": "https://huggingface.co/dheer05dj/anlp-dflash-100k-qwen3-4b",
+  "created_at": "2026-10-02T19:37:02.000Z",
+  "updated_at": "2026-10-02T19:37:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash",
+    "drafter",
+    "anlp",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 537427200,
+  "parameters_human": "537.4M",
+  "storage_bytes": 1074860568,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AC/DC - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AC/DC",
+      "snippet": "AC/DC were formed in the Australian pop music scene of the early to mid-1970s, [1] which is described as the third wave of rock …"
+    },
+    {
+      "title": "AC/DC — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AC/DC",
+      "snippet": "AC/DC collectionne alors les prix, récompenses, titres honorifiques et premières places. Désormais, AC/DC donne des shows …"
+    },
+    {
+      "title": "Home - AC/DC Official Site",
+      "url": "https://www.acdc.com/home/",
+      "snippet": "3 days ago · The official AC/DC website. Get the latest band news, tour dates, and album releases, explore the full catalog era by …"
+    },
+    {
+      "title": "AC/DC - YouTube",
+      "url": "https://www.youtube.com/acdc/videos",
+      "snippet": "AC/DC music videos and live concerts."
+    },
+    {
+      "title": "Tour Dates Archive - AC/DC Official Site",
+      "url": "https://www.acdc.com/tour/",
+      "snippet": "AC/DC Official Site © 2026 Sony Music Entertainment. All Rights Reserved. Send Us Feedback a Privacy Policy a Do Not Sell My …"
+    }
+  ]
+}

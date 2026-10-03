@@ -5,7 +5,7 @@
   "author": "chaoliangUNSW",
   "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
   "created_at": "2026-09-24T14:59:46.000Z",
-  "updated_at": "2026-09-27T14:54:38.000Z",
+  "updated_at": "2026-10-02T21:54:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -73,7 +73,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 467,
+  "downloads_30d": 531,
   "trending_score": 0,
   "parameters": 752393024,
   "parameters_human": "752.4M",

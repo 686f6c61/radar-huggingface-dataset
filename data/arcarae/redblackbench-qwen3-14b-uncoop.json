@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Arcarae/redblackbench-qwen3-14b-uncoop",
+  "slug": "arcarae-redblackbench-qwen3-14b-uncoop",
+  "author": "Arcarae",
+  "url": "https://huggingface.co/Arcarae/redblackbench-qwen3-14b-uncoop",
+  "created_at": "2026-10-02T18:54:02.000Z",
+  "updated_at": "2026-10-02T18:54:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "multi-agent",
+    "alignment",
+    "en",
+    "dataset:Arcarae/redblackbench-sft-uncoop-v1",
+    "arxiv:2605.27586",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2066708554,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

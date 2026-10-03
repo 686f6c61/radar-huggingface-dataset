@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ishaanamahajan/paper-triage-minilm-embeddings",
+  "slug": "ishaanamahajan-paper-triage-minilm-embeddings",
+  "author": "ishaanamahajan",
+  "url": "https://huggingface.co/ishaanamahajan/paper-triage-minilm-embeddings",
+  "created_at": "2026-10-02T20:42:29.000Z",
+  "updated_at": "2026-10-02T20:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "sentence-similarity",
+    "research-papers",
+    "off-the-shelf",
+    "feature-extraction",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

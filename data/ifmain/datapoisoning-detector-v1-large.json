@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ifmain/datapoisoning-detector-v1-large",
+  "slug": "ifmain-datapoisoning-detector-v1-large",
+  "author": "ifmain",
+  "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-large",
+  "created_at": "2026-10-02T21:19:12.000Z",
+  "updated_at": "2026-10-03T02:02:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-classification",
+    "dataset:ozdentarikcan/DiffVaxDataset",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1185946493,
+  "storage_human": "1.2 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ifmain/datapoisoning-detector-v1 · GitHub",
+      "url": "https://github.com/ifmain/datapoisoning-detector-v1",
+      "snippet": "Contribute to ifmain/datapoisoning-detector-v1 development by creating an account on GitHub."
+    },
+    {
+      "title": "ifmain/datapoisoning-detector-v1-tiny · Hugging Face",
+      "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-tiny",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DataPoisoning Detector v1 Tiny Architecture at a glance Model family comparison Detection recall Clean-image specificity Distillation quality Published comparison Detection recall Clean-image specificity Local Glaze check License and data provenance Citation ..."
+    },
+    {
+      "title": "datapoisoning-detector-v1/README.md at main · ifmain ... - GitHub",
+      "url": "https://github.com/ifmain/datapoisoning-detector-v1/blob/main/README.md",
+      "snippet": "Contribute to ifmain/datapoisoning-detector-v1 development by creating an account on GitHub."
+    },
+    {
+      "title": "ifmain/datapoisoning-detector-v1-small · Hugging Face",
+      "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-small",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new DataPoisoning Detector v1 Small Architecture at a glance Model family comparison Detection recall Clean-image specificity Distillation quality Published comparison Detection recall Clean-image specificity Local Glaze check License and data provenance Citation ..."
+    },
+    {
+      "title": "A small number of samples can poison LLMs &#92; Anthropic",
+      "url": "https://www.anthropic.com/research/small-samples-poison",
+      "snippet": "In a joint study with the UK AI Security Institute and the Alan Turing Institute, we found that as few as 250 malicious documents can produce a \"backdoor\" vulnerability in a large language model—regardless of model size or training data volume. Although a 13B parameter model is trained on over 20 times more training data than a 600M model, both can be backdoored by the same small number of ..."
+    }
+  ]
+}

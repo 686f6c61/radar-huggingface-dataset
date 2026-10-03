@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "cortex-agent-llc/kodiak-v0.2-1b-accuracy",
+  "slug": "cortex-agent-llc-kodiak-v0-2-1b-accuracy",
+  "author": "cortex-agent-llc",
+  "url": "https://huggingface.co/cortex-agent-llc/kodiak-v0.2-1b-accuracy",
+  "created_at": "2026-10-02T18:24:21.000Z",
+  "updated_at": "2026-10-03T00:22:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kodiak",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "kodiak",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "abstention",
+    "encoder",
+    "modernbert",
+    "ensemble",
+    "classification",
+    "tool-use",
+    "hallucination-detection",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-1b",
+    "base_model:finetune:jhu-clsp/ettin-encoder-1b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12529494012,
+  "storage_human": "12.5 GB",
+  "base_model": "jhu-clsp/ettin-encoder-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cortex cérébral — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cortex_c%C3%A9r%C3%A9bral",
+      "snippet": "Le cortex cérébral se forme dans la partie antérieure du tube neural, lui-même dérivant de la plaque neurale, une différenciation de l' …"
+    },
+    {
+      "title": "Cortex — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cortex",
+      "snippet": "En biologie, le cortex (mot latin signifiant écorce, l'adjectif étant cortical) est la couche superficielle ou périphérique d'un tissu …"
+    },
+    {
+      "title": "Razer Cortex — Améliorez plus rapidement et facilement les …",
+      "url": "https://www.razer.com/fr-fr/cortex",
+      "snippet": "RAZER CORTEX : Extraits de jeu Ne ratez plus aucun moment épique. En une seule pression, capturez instantanément les 30 …"
+    },
+    {
+      "title": "Find Software / IT-Matchmaker",
+      "url": "https://www.it-matchmaker.com/en/find-software/",
+      "snippet": "With the IT-Matchmaker market research you will quickly and reliably find the matching business software solutions for your requirements."
+    },
+    {
+      "title": "Cortex Média : média inclusif, handicap, santé et neurodéveloppement",
+      "url": "https://www.cortex-media.fr/",
+      "snippet": "Le média accessible à tous : articles, podcasts et vidéos sur les troubles du neurodéveloppement, la santé mentale, le handicap et la …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "perkel/Qwen3.8-27B-MC",
+  "slug": "perkel-qwen3-8-27b-mc",
+  "author": "perkel",
+  "url": "https://huggingface.co/perkel/Qwen3.8-27B-MC",
+  "created_at": "2026-10-01T17:29:51.000Z",
+  "updated_at": "2026-10-03T00:31:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "megacapybara",
+    "qwen3.8",
+    "mxfp4",
+    "mxfp6",
+    "quantized",
+    "blackwell",
+    "rtx-5090",
+    "speculative-decoding",
+    "dflash2",
+    "mtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107992842240,
+  "storage_human": "108.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B: specs, MLX builds, Mac memory and launch-day facts — AI on Mac",
+      "url": "https://ai-on-mac.com/articles/qwen3-8-27b-en/",
+      "snippet": "The current official model card now includes a Qwen3.8-27B benchmark table and specifies 262,144 native context tokens, with an extension to 1,000,000 tokens described through RoPE/YaRN configuration. Those values belong to the downloadable checkpoint; the hosted Qwen3.8 service is a different deployment surface."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen 3.8 27B | Epoch AI",
+      "url": "https://epoch.ai/models/qwen-3-8-27b",
+      "snippet": "Qwen 3.8 27B is an open-weights model from Alibaba, released August 14, 2026. It has an ECI score of 149 and ranks 52nd of 251 tracked models. At the time of its release, it ranked 45th of 244 tracked models."
+    },
+    {
+      "title": "Deeper Dive: The Qwen 3.8 27B Open Weight Model for Local Agentic AI",
+      "url": "https://agenticaiinsights.substack.com/p/deeper-dive-the-qwen-38-27b-open",
+      "snippet": "The more interesting strategy is hybrid: use a capable local open-weight model for the large volume of agent work it can perform reliably, and reserve frontier models for the smaller fraction of tasks where their additional capability produces measurable value. Qwen3.8-27B makes that architecture considerably more realistic."
+    }
+  ]
+}
