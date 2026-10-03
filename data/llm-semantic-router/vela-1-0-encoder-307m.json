@@ -5,7 +5,7 @@
   "author": "llm-semantic-router",
   "url": "https://huggingface.co/llm-semantic-router/Vela-1.0-Encoder-307M",
   "created_at": "2026-09-12T13:33:37.000Z",
-  "updated_at": "2026-09-13T13:20:27.000Z",
+  "updated_at": "2026-10-02T10:38:25.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "fill-mask",
@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1431,
+  "downloads_30d": 1439,
   "trending_score": 0,
   "parameters": 307786240,
   "parameters_human": "307.8M",

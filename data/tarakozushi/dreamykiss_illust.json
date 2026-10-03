@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 31,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -34,8 +34,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-23T05:58:07.762Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

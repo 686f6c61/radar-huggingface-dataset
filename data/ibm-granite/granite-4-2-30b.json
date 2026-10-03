@@ -52,10 +52,11 @@
     "license:apache-2.0",
     "eval-results",
     "endpoints_compatible",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 126,
-  "downloads_30d": 33236,
+  "likes": 127,
+  "downloads_30d": 35751,
   "trending_score": 9,
   "parameters": 29276770304,
   "parameters_human": "29.28B",

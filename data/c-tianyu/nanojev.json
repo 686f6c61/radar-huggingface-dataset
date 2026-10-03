@@ -28,8 +28,8 @@
     "base_model:finetune:Qwen/Qwen3-0.6B",
     "region:us"
   ],
-  "likes": 84,
-  "downloads_30d": 8094,
+  "likes": 85,
+  "downloads_30d": 8381,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "ItsnotAilabs",
   "url": "https://huggingface.co/ItsnotAilabs/AlphaGenome-50M",
   "created_at": "2026-09-21T17:07:08.000Z",
-  "updated_at": "2026-09-24T06:29:54.000Z",
+  "updated_at": "2026-10-02T11:49:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -37,10 +37,10 @@
   "likes": 0,
   "downloads_30d": 24,
   "trending_score": 0,
-  "parameters": 39845888,
-  "parameters_human": "39.8M",
-  "storage_bytes": 159391912,
-  "storage_human": "159 MB",
+  "parameters": 64504482,
+  "parameters_human": "64.5M",
+  "storage_bytes": 417418920,
+  "storage_human": "417 MB",
   "base_model": "InstaDeepAI/nucleotide-transformer-v2-50m-multi-species",
   "formats": [
     "safetensors"

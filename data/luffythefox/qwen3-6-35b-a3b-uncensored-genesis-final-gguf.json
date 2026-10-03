@@ -36,12 +36,12 @@
     "conversational"
   ],
   "likes": 18,
-  "downloads_30d": 20019,
+  "downloads_30d": 20211,
   "trending_score": 11,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 109213356672,
-  "storage_human": "109.2 GB",
+  "storage_bytes": 87738710528,
+  "storage_human": "87.7 GB",
   "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
   "formats": [
     "gguf"

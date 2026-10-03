@@ -5,7 +5,7 @@
   "author": "tiantiaf",
   "url": "https://huggingface.co/tiantiaf/childvox-speechocean762-accuracy-whisper-large",
   "created_at": "2026-09-03T00:51:54.000Z",
-  "updated_at": "2026-09-03T04:02:13.000Z",
+  "updated_at": "2026-10-02T19:36:04.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

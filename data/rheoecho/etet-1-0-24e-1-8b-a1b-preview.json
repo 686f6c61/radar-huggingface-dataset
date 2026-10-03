@@ -5,7 +5,7 @@
   "author": "RheoEcho",
   "url": "https://huggingface.co/RheoEcho/ETET-1.0-24E-1.8B-A1B-Preview",
   "created_at": "2026-08-27T16:55:42.000Z",
-  "updated_at": "2026-08-27T17:35:32.000Z",
+  "updated_at": "2026-10-02T15:48:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

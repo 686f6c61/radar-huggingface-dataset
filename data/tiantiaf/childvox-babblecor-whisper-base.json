@@ -5,7 +5,7 @@
   "author": "tiantiaf",
   "url": "https://huggingface.co/tiantiaf/childvox-babblecor-whisper-base",
   "created_at": "2026-09-02T00:30:27.000Z",
-  "updated_at": "2026-09-02T00:35:01.000Z",
+  "updated_at": "2026-10-02T19:32:16.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

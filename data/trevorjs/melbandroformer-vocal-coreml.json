@@ -5,7 +5,7 @@
   "author": "TrevorJS",
   "url": "https://huggingface.co/TrevorJS/MelBandRoformer-Vocal-CoreML",
   "created_at": "2026-09-16T00:05:05.000Z",
-  "updated_at": "2026-09-16T00:05:27.000Z",
+  "updated_at": "2026-10-02T18:09:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",

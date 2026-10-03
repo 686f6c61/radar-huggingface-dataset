@@ -5,7 +5,7 @@
   "author": "tiantiaf",
   "url": "https://huggingface.co/tiantiaf/childvox-babblecor-whisper-large",
   "created_at": "2026-09-01T23:07:25.000Z",
-  "updated_at": "2026-09-02T00:27:45.000Z",
+  "updated_at": "2026-10-02T19:32:31.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",

@@ -5,7 +5,7 @@
   "author": "aminwoo",
   "url": "https://huggingface.co/aminwoo/bughouse-rise-v3",
   "created_at": "2026-08-20T07:39:38.000Z",
-  "updated_at": "2026-09-19T07:42:10.000Z",
+  "updated_at": "2026-10-03T09:58:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 331765930,
-  "storage_human": "332 MB",
+  "storage_bytes": 335704472,
+  "storage_human": "336 MB",
   "base_model": null,
   "formats": [
     "onnx"

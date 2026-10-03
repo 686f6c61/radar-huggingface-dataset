@@ -5,7 +5,7 @@
   "author": "ankushthakurr09",
   "url": "https://huggingface.co/ankushthakurr09/MimansM1_v1",
   "created_at": "2026-08-17T14:54:11.000Z",
-  "updated_at": "2026-09-02T07:56:07.000Z",
+  "updated_at": "2026-10-03T06:17:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,17 +15,15 @@
     "code"
   ],
   "tags": [
-    "pytorch",
     "safetensors",
     "mimans",
     "code",
-    "text-generation",
     "causal-lm",
-    "attnres",
+    "blackwell",
+    "tilelang",
+    "text-generation",
     "custom_code",
     "en",
-    "dataset:the-stack",
-    "dataset:fineweb-edu",
     "license:apache-2.0",
     "region:us"
   ],
@@ -34,8 +32,8 @@
   "trending_score": 0,
   "parameters": 577260032,
   "parameters_human": "577.3M",
-  "storage_bytes": 5772849188,
-  "storage_human": "5.8 GB",
+  "storage_bytes": 8081990476,
+  "storage_human": "8.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

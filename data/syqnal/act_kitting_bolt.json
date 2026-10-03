@@ -5,7 +5,7 @@
   "author": "Syqnal",
   "url": "https://huggingface.co/Syqnal/act_kitting_bolt",
   "created_at": "2026-09-08T20:17:39.000Z",
-  "updated_at": "2026-09-28T10:49:52.000Z",
+  "updated_at": "2026-10-02T23:45:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 67,
+  "downloads_30d": 68,
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 826855552,
-  "storage_human": "827 MB",
+  "storage_bytes": 1033570432,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/Gemma3-1B-IT-Tensor-G4-NPU",
   "created_at": "2026-09-19T14:34:29.000Z",
-  "updated_at": "2026-10-02T04:39:34.000Z",
+  "updated_at": "2026-10-02T17:16:32.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 108,
+  "downloads_30d": 119,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

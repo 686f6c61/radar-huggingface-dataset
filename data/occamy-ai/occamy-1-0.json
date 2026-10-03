@@ -5,7 +5,7 @@
   "author": "occamy-ai",
   "url": "https://huggingface.co/occamy-ai/occamy-1.0",
   "created_at": "2026-08-13T12:56:13.000Z",
-  "updated_at": "2026-09-18T03:52:05.000Z",
+  "updated_at": "2026-10-02T22:48:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 224,
-  "downloads_30d": 2564,
+  "downloads_30d": 2649,
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",

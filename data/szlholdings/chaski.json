@@ -5,7 +5,7 @@
   "author": "SZLHOLDINGS",
   "url": "https://huggingface.co/SZLHOLDINGS/chaski",
   "created_at": "2026-08-28T16:26:38.000Z",
-  "updated_at": "2026-10-01T21:14:53.000Z",
+  "updated_at": "2026-10-03T05:15:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3568,
+  "downloads_30d": 3530,
   "trending_score": 0,
   "parameters": 873438784,
   "parameters_human": "873.4M",

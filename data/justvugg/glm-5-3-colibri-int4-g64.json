@@ -5,7 +5,7 @@
   "author": "Justvugg",
   "url": "https://huggingface.co/Justvugg/GLM-5.3-colibri-int4-g64",
   "created_at": "2026-09-06T00:27:36.000Z",
-  "updated_at": "2026-09-15T09:10:04.000Z",
+  "updated_at": "2026-10-02T14:21:22.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 6,
-  "downloads_30d": 17928,
+  "downloads_30d": 18023,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
