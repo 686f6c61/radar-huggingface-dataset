@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "anyalkonsafe/evilguy-2-gguf",
+  "slug": "anyalkonsafe-evilguy-2-gguf",
+  "author": "anyalkonsafe",
+  "url": "https://huggingface.co/anyalkonsafe/evilguy-2-gguf",
+  "created_at": "2026-10-03T21:16:02.000Z",
+  "updated_at": "2026-10-03T21:25:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "qwen",
+    "qwen2.5",
+    "lora",
+    "qlora",
+    "unsloth",
+    "persona",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110336,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Crazy Games - Free Online Games - Play Now!",
+      "url": "https://crazygames.gg/",
+      "snippet": "Crazy Games is the #1 website for playing free online games on your computer. No downloads, no login. Play now!"
+    },
+    {
+      "title": "Crazy Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/crazy-games?msockid=2fe399763aa66d9a30dc8e913b476cdd",
+      "snippet": "Experience the most absurd online games with crazy games on Poki! Engage in bizarre challenges, wacky scenarios, and …"
+    },
+    {
+      "title": "Crazygames - Best Free Online Games - Play Now",
+      "url": "https://play.crazygames.homes/",
+      "snippet": "Play free games on Crazygames. No downloads/logins—instant fun on any device. Join millions worldwide. Start now! 🚀"
+    }
+  ]
+}

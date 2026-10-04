@@ -5,7 +5,7 @@
   "author": "jul879n",
   "url": "https://huggingface.co/jul879n/tde-es-en-lite-v2",
   "created_at": "2026-10-03T14:52:41.000Z",
-  "updated_at": "2026-10-03T15:07:00.000Z",
+  "updated_at": "2026-10-03T17:03:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 55199150,
-  "storage_human": "55 MB",
+  "storage_bytes": 56448453,
+  "storage_human": "56 MB",
   "base_model": "intfloat/multilingual-e5-small",
   "formats": [
     "onnx"

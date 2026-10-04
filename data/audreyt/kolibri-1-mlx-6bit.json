@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "audreyt/Kolibri-1-MLX-6bit",
+  "slug": "audreyt-kolibri-1-mlx-6bit",
+  "author": "audreyt",
+  "url": "https://huggingface.co/audreyt/Kolibri-1-MLX-6bit",
+  "created_at": "2026-10-03T20:32:13.000Z",
+  "updated_at": "2026-10-03T21:26:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "kolibri1",
+    "moe",
+    "6-bit",
+    "apple-silicon",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "en",
+    "de",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78103055360,
+  "parameters_human": "78.10B",
+  "storage_bytes": 63517990178,
+  "storage_human": "63.5 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Sign up - TikTok",
+      "url": "https://m.tiktok.com/signup",
+      "snippet": "Sign up for an account or log back into TikTok. Create an account to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

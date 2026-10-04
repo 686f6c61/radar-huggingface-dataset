@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Benjamin-Wegener/kokoro-german-victoria-onnx-int8",
+  "slug": "benjamin-wegener-kokoro-german-victoria-onnx-int8",
+  "author": "Benjamin-Wegener",
+  "url": "https://huggingface.co/Benjamin-Wegener/kokoro-german-victoria-onnx-int8",
+  "created_at": "2026-10-03T19:27:00.000Z",
+  "updated_at": "2026-10-03T19:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "kokoro",
+    "sherpa-onnx",
+    "tts",
+    "german",
+    "int8",
+    "text-to-speech",
+    "de",
+    "base_model:kikiri-tts/kikiri-german-victoria",
+    "base_model:quantized:kikiri-tts/kikiri-german-victoria",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228847923,
+  "storage_human": "229 MB",
+  "base_model": "kikiri-tts/kikiri-german-victoria",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benjamin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Benjamin",
+      "snippet": "Benjamin est un prénom masculin, il était souvent donné au plus jeune des enfants d'une fratrie. Au Moyen Âge, il était …"
+    },
+    {
+      "title": "Prénom Benjamin (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/benjamin/prenom-636",
+      "snippet": "Quelle est la signification du prénom Benjamin ? Le prénom Benjamin, dont l'origine est hébraïque, dérive du prénom Benyamin qui …"
+    },
+    {
+      "title": "Bureau Benjamin",
+      "url": "https://www.bureaubenjamin.com/",
+      "snippet": "Découvrez et achetez la Meringue, premier objet du designer Benjamin Guedj, qui souhaite imaginer la maison de demain. D’un chic …"
+    },
+    {
+      "title": "Benjamin (Bible) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Benjamin_(Bible)",
+      "snippet": "Ce nom est à l'origine du nom commun benjamin, qui désigne le dernier enfant d'une fratrie. La tribu de Benjamin est l'une des …"
+    },
+    {
+      "title": "Prénom Benjamin : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/benjamin-36470",
+      "snippet": "Le prénom Benjamin est attribué aux petits garçons en France dès le Moyen-âge, en particulier dans les familles juives. Au XXe …"
+    }
+  ]
+}

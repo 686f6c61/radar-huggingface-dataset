@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-mirror-qwen3-asr-0.6b",
+  "slug": "mitroshenkov87-voxprint-mirror-qwen3-asr-0-6b",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-asr-0.6b",
+  "created_at": "2026-10-03T18:58:41.000Z",
+  "updated_at": "2026-10-03T18:58:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "mirror",
+    "voxprint",
+    "arxiv:2601.21337",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 938008576,
+  "parameters_human": "938.0M",
+  "storage_bytes": 1876091704,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Straw man - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Straw_man",
+      "snippet": "A straw man fallacy (sometimes written as strawman) is the informal fallacy of refuting an argument different from the one actually …"
+    },
+    {
+      "title": "STRAW MAN Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/straw%20man",
+      "snippet": "Aug 13, 2026 · The meaning of STRAW MAN is a weak or imaginary opposition (such as an argument or adversary) set up only to …"
+    },
+    {
+      "title": "What Is Straw Man Fallacy? | Definition & Examples - Scribbr",
+      "url": "https://www.scribbr.com/fallacies/straw-man-fallacy/",
+      "snippet": "Apr 12, 2023 · Straw man fallacy occurs when someone distorts their opponent’s argument by oversimplifying or exaggerating it, for …"
+    },
+    {
+      "title": "STRAW MAN | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/straw-man",
+      "snippet": "straw man noun [C] (CRIME) someone, often an imaginary person, who is used to hide an illegal or secret activity:"
+    },
+    {
+      "title": "15 Straw Man Fallacy Examples (2026) - Helpful Professor",
+      "url": "https://helpfulprofessor.com/straw-man-fallacy-examples/",
+      "snippet": "Sep 11, 2023 · A straw man fallacy is a logical fallacy that occurs when a person rebuts an argument by misconstruing it. The …"
+    }
+  ]
+}

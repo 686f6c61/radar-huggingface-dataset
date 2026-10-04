@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mohitsharma9761/my-genz-chadbot",
+  "slug": "mohitsharma9761-my-genz-chadbot",
+  "author": "mohitsharma9761",
+  "url": "https://huggingface.co/mohitsharma9761/my-genz-chadbot",
+  "created_at": "2026-10-03T20:37:28.000Z",
+  "updated_at": "2026-10-03T20:37:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71770329,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forenliste | TT-Board - Forum der Modellbahn in 1:120",
+      "url": "https://www.tt-board.de/forum/forums/",
+      "snippet": "Sep 26, 2026 · Das große unabhängige Board für Freunde der Modellbahn in 1:120, mit Forum, Wiki, Blogs und Chat"
+    },
+    {
+      "title": "【2026电源怎么选】Tt（Thermaltake）的电源怎么样？——电源推荐",
+      "url": "https://www.zhihu.com/tardis/zm/art/551301179",
+      "snippet": "Tt（Thermaltake）是一家以机电散为主的厂商，很多朋友可能只是觉得这个品牌的配件颜值比较高，其实Tt算得上是一个底蕴比较深 …"
+    },
+    {
+      "title": "Aktuelles | TT-Board - Forum der Modellbahn in 1:120",
+      "url": "https://www.tt-board.de/forum/whats-new/",
+      "snippet": "Jul 1, 2005 · Hallo TT-Modellbahner, schön, dass du zu uns gefunden hast. Um alle Funktionen nutzen zu können, empfehlen wir dir, …"
+    },
+    {
+      "title": "真诚发问，tt语音都是什么人在玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/460104945",
+      "snippet": "真诚发问，tt语音都是什么人在玩？ 之前一直有听别人说过tt语音这个APP，正好今天在软件商店更新应用，看见了tt语音就顺手下载 …"
+    },
+    {
+      "title": "Das TT-Board | TT-Board - Forum der Modellbahn in 1:120",
+      "url": "https://www.tt-board.de/forum/",
+      "snippet": "Feb 19, 2018 · Hallo TT-Modellbahner, schön, dass du zu uns gefunden hast. Um alle Funktionen nutzen zu können, empfehlen wir …"
+    }
+  ]
+}

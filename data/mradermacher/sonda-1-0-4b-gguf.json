@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/sonda-1.0-4B-GGUF",
   "created_at": "2026-10-02T22:47:06.000Z",
-  "updated_at": "2026-10-02T23:06:32.000Z",
+  "updated_at": "2026-10-03T10:56:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,6 +17,7 @@
   "tags": [
     "transformers",
     "gguf",
+    "classification",
     "decision-model",
     "calibration",
     "jevk5",
@@ -33,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 332,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thepatch/bs-roformer-viperx-317-GGUF",
+  "slug": "thepatch-bs-roformer-viperx-317-gguf",
+  "author": "thepatch",
+  "url": "https://huggingface.co/thepatch/bs-roformer-viperx-317-GGUF",
+  "created_at": "2026-10-03T23:09:40.000Z",
+  "updated_at": "2026-10-03T23:09:45.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio-source-separation",
+    "music-source-separation",
+    "vocal-separation",
+    "bs-roformer",
+    "roformer",
+    "stems.cpp",
+    "audio-to-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159758028,
+  "parameters_human": "159.8M",
+  "storage_bytes": 639074304,
+  "storage_human": "639 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Music in DAW Integration Guide | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/generative-ai/ai-music-generation/ai-music-in-daw-integration/",
+      "snippet": "Oct 28, 2025 · Discover how to integrate AI music generation tools into your DAW workflow. Learn about the best plugins, features, …"
+    },
+    {
+      "title": "Best AI Plugins for Music Production - MIDI Agent",
+      "url": "https://www.midiagent.com/best-ai-plugins-for-music-production",
+      "snippet": "Sep 22, 2026 · We tested 15 AI plugins for music production and ranked them by what actually matters in a DAW: MIDI export, true …"
+    },
+    {
+      "title": "12 Best AI Plugins For Music Production 2026 - Integraudio",
+      "url": "https://integraudio.com/12-best-ai-plugins/",
+      "snippet": "In this article you will discover some of the best AI plugins available on the market. Artificial intelligence-based plugins are tools …"
+    },
+    {
+      "title": "AI MIDI Generator VST Plugin | MIDI Agent: ChatGPT for MIDI",
+      "url": "https://www.midiagent.com/",
+      "snippet": "Generate MIDI patterns, melodies, chords and drums with AI inside your DAW. Works as VST3, AU, AAX, and Standalone with …"
+    },
+    {
+      "title": "6 Best AI MIDI Generator DAW Plugins and Standalone Apps",
+      "url": "https://www.audiocipher.com/post/ai-midi-generators",
+      "snippet": "Sep 8, 2026 · There are only a few AI MIDI generator plugins in existence. We've rounded up the most popular ones and will help …"
+    }
+  ]
+}

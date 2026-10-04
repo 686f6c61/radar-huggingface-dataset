@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "TechPrototyper/Qwen3.8-27B-GridBook-13GB-vision-abliterated-vllm",
+  "slug": "techprototyper-qwen3-8-27b-gridbook-13gb-vision-abliterated-vllm",
+  "author": "TechPrototyper",
+  "url": "https://huggingface.co/TechPrototyper/Qwen3.8-27B-GridBook-13GB-vision-abliterated-vllm",
+  "created_at": "2026-10-03T23:32:20.000Z",
+  "updated_at": "2026-10-03T23:46:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3",
+    "gridbook",
+    "codebook-quantization",
+    "prismaquant",
+    "aqua",
+    "mixed-precision",
+    "nvfp4",
+    "fp8",
+    "abliterated",
+    "uncensored",
+    "long-context",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13533806192,
+  "parameters_human": "13.53B",
+  "storage_bytes": 15720827056,
+  "storage_human": "15.7 GB",
+  "base_model": "rdtand/Qwen3.8-27B-PrismaAQUA-gridbook-13GB-5080-vllm, Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "Releases · hiddify/hiddify-app - GitHub",
+      "url": "https://github.com/hiddify/hiddify-app/releases",
+      "snippet": "Multi-platform auto-proxy client, supporting Sing-box, X-ray, TUIC, Hysteria, Reality, Trojan, SSH etc. It’s an open-source, secure …"
+    },
+    {
+      "title": "Events - GitHub Education",
+      "url": "https://education.github.com/events",
+      "snippet": "1 day ago · Building Essential GitHub Skills Workshop is a practical, hands-on session designed to help students and developers …"
+    },
+    {
+      "title": "GitHub Terms of Service",
+      "url": "https://docs.github.com/en/site-policy/github-terms/github-terms-of-service",
+      "snippet": "GitHub reserves the right to refuse service to anyone for any reason at any time. 4. Survival All provisions of this Agreement which, …"
+    },
+    {
+      "title": "Ignoring files - GitHub Docs",
+      "url": "https://docs.github.com/en/get-started/git-basics/ignoring-files",
+      "snippet": "GitHub maintains an official list of recommended .gitignore files for many popular operating systems, environments, and languages in …"
+    }
+  ]
+}

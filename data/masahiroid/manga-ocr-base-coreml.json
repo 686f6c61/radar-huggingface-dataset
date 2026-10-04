@@ -5,7 +5,7 @@
   "author": "masahiroid",
   "url": "https://huggingface.co/masahiroid/manga-ocr-base-coreml",
   "created_at": "2026-09-30T14:49:51.000Z",
-  "updated_at": "2026-10-02T05:06:09.000Z",
+  "updated_at": "2026-10-03T15:06:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-text",

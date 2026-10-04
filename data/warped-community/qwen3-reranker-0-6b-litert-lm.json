@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "warped-community/Qwen3-Reranker-0.6B-litert-lm",
+  "slug": "warped-community-qwen3-reranker-0-6b-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/Qwen3-Reranker-0.6B-litert-lm",
+  "created_at": "2026-10-03T18:56:48.000Z",
+  "updated_at": "2026-10-03T19:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "tflite",
+    "warped",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 882057488,
+  "storage_human": "882 MB",
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-Reranker-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-Reranker-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "warped-community/Qwen3-Reranker-0.6B-litert-lm · Discussions",
+      "url": "https://huggingface.co/warped-community/Qwen3-Reranker-0.6B-litert-lm/discussions",
+      "snippet": "Instructions to use warped-community/Qwen3-Reranker-0.6B-litert-lm with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "tucuong2308 / Qwen3-Reranker-0.6B Public - GitHub",
+      "url": "https://github.com/tucuong2308/Qwen3-Reranker-0.6B",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    },
+    {
+      "title": "Qwen3-Reranker-0.6B: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/qwen3-reranker-0.6b-qwen",
+      "snippet": "Qwen3-Reranker-.6B is a compact text reranking model from Qwen designed to refine and rerank documents retrieved from larger retrieval systems. The model contains 0.6 billion parameters across 28 transformer layers and accepts input sequences up to 32,768 tokens, enabling it to process long documents and evaluate their relevance to queries."
+    },
+    {
+      "title": "project-knowledge-base/models/qwen/Qwen3-Reranker-0.6B at main · xfu-ai ...",
+      "url": "https://github.com/xfu-ai/project-knowledge-base/tree/main/models/qwen/Qwen3-Reranker-0.6B",
+      "snippet": "The Qwen3 Embedding model series is the latest proprietary model of the Qwen family, specifically designed for text embedding and ranking tasks. Building upon the dense foundational models of the Qwen3 series, it provides a comprehensive range of text embeddings and reranking models in various sizes (0.6B, 4B, and 8B)."
+    }
+  ]
+}

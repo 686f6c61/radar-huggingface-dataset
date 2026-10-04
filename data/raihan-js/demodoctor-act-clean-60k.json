@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "raihan-js/demodoctor-act-clean-60k",
+  "slug": "raihan-js-demodoctor-act-clean-60k",
+  "author": "raihan-js",
+  "url": "https://huggingface.co/raihan-js/demodoctor-act-clean-60k",
+  "created_at": "2026-10-03T23:50:13.000Z",
+  "updated_at": "2026-10-03T23:51:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:lerobot/pusht",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51660418,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206675344,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50+ Easy DIY Home Decor Ideas to Transform Your Home",
+      "url": "https://diycandy.com/diy-home-decor-ideas/",
+      "snippet": "Jul 27, 2023 · Want to be creative and make something for your home? Do it yourself and you can get the look for less! Find 50+ DIY …"
+    },
+    {
+      "title": "72 DIY Home Decor Ideas For All Budgets and Skill Levels",
+      "url": "https://www.thespruce.com/diy-home-decor-ideas-8670893",
+      "snippet": "Jul 15, 2026 · DIYs are often budget-friendly and easy to do. Curious about what DIY projects you can take on? Check out these 60 …"
+    },
+    {
+      "title": "70 DIY Home Decor Ideas | Budget-Friendly Home Decorating …",
+      "url": "https://www.hgtv.com/decorating/diy/diy-decor-projects-to-craft-this-weekend-pictures",
+      "snippet": "The budget decorating pros at HGTV share trendy DIY accessory and home decor projects you can make to freshen up your home's …"
+    },
+    {
+      "title": "46 Easy DIY Home Decor Ideas for Your Next Project - The Spruce",
+      "url": "https://www.thespruce.com/diy-home-decor-ideas-7101182",
+      "snippet": "Feb 15, 2023 · Make something new for your home with these easy DIY home decor ideas. Whether you're looking for a modern, …"
+    },
+    {
+      "title": "56 Easy DIY Home Decor Ideas To Instantly Personalize Your Space",
+      "url": "https://www.decorhomeideas.com/quick-diy-home-decor-ideas/",
+      "snippet": "Apr 27, 2025 · Check out these 56 creative DIY home decor ideas, from painted furniture to upcycled materials, to personalize your …"
+    }
+  ]
+}

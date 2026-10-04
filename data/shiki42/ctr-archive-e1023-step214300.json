@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Shiki42/ctr-archive-e1023-step214300",
+  "slug": "shiki42-ctr-archive-e1023-step214300",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/ctr-archive-e1023-step214300",
+  "created_at": "2026-10-03T21:01:47.000Z",
+  "updated_at": "2026-10-03T21:02:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "ctr",
+    "archival-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 270780332,
+  "parameters_human": "270.8M",
+  "storage_bytes": 1083154872,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

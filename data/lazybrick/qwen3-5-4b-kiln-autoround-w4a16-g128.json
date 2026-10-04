@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128",
+  "slug": "lazybrick-qwen3-5-4b-kiln-autoround-w4a16-g128",
+  "author": "lazybrick",
+  "url": "https://huggingface.co/lazybrick/Qwen3.5-4B-Kiln-AutoRound-W4A16-g128",
+  "created_at": "2026-10-03T22:24:18.000Z",
+  "updated_at": "2026-10-03T22:34:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "quantized",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "autoround",
+    "w4a16",
+    "int4",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 3800809480,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Preventing Edge from showing the visual search icon when users …",
+      "url": "https://stackoverflow.com/questions/71731966/preventing-edge-from-showing-the-visual-search-icon-when-users-hover-over-an-ima",
+      "snippet": "Apr 4, 2022 · or search \"visual search\" in the settings menu There are two options, one which shows the icons permanently and the …"
+    },
+    {
+      "title": "Remove Visual Search feature from Edge programatically",
+      "url": "https://stackoverflow.com/questions/72563731/remove-visual-search-feature-from-edge-programatically",
+      "snippet": "Jun 9, 2022 · Edge seems to have recently come out with a Visual Search feature, which pops up an icon above all images, allowing …"
+    },
+    {
+      "title": "Next steps for open-ended questions - Meta Stack Overflow",
+      "url": "https://meta.stackoverflow.com/questions/440088/next-steps-for-open-ended-questions",
+      "snippet": "Jul 9, 2026 · Or, I can use any modern search engine (or also Bing) and the StackOverflow page answering my question will be in …"
+    },
+    {
+      "title": "Bing Visual Search API endpoint returns different results than …",
+      "url": "https://stackoverflow.com/questions/71213283/bing-visual-search-api-endpoint-returns-different-results-than-bing-com-visualse",
+      "snippet": "Feb 21, 2022 · I'm trying to collect similar images of an image using Bing Visual Search API. I have the following code snippet and …"
+    },
+    {
+      "title": "Multiline regular expression search in Visual Studio Code",
+      "url": "https://stackoverflow.com/questions/52647894/multiline-regular-expression-search-in-visual-studio-code",
+      "snippet": "Oct 4, 2018 · Multiline search is added in v1.29 released in November 2018. See multi-line search. VS Code now supports multiline …"
+    }
+  ]
+}

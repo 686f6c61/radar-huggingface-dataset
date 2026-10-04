@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dorisjlee/sim-place-colored-box-generalization-act-v2",
+  "slug": "dorisjlee-sim-place-colored-box-generalization-act-v2",
+  "author": "dorisjlee",
+  "url": "https://huggingface.co/dorisjlee/sim-place-colored-box-generalization-act-v2",
+  "created_at": "2026-10-03T19:27:11.000Z",
+  "updated_at": "2026-10-03T19:27:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dorisjlee/sim-place-colored-box-generalization",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17958406,
+  "parameters_human": "18.0M",
+  "storage_bytes": 71872568,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How are waves used in a cassette tape? | Audio Recording …",
+      "url": "https://hub.sivo.it.com/audio-recording-technology/how-are-waves-used-in-a-cassette-tape/",
+      "snippet": "May 14, 2025 · In a cassette tape, waves – specifically sound waves – are utilized during the recording process. The key function, as …"
+    },
+    {
+      "title": "Free Cassette Sound Effects Download - Pixabay",
+      "url": "https://pixabay.com/sound-effects/search/cassette/",
+      "snippet": "128 royalty-free cassette sound effects Download cassette royalty-free sound effects to use in your next project."
+    },
+    {
+      "title": "Why Cassette Tape Sounds \"Warm\" — Science & History Explained ...",
+      "url": "https://retroaudioworld.com/article-tape",
+      "snippet": "Why does tape sound warmer than digital? We explain tape saturation, wow & flutter, harmonic distortion, and the full history of the …"
+    },
+    {
+      "title": "Science Behind Reel Cassette Tape | How Magnetic Tape Records …",
+      "url": "https://www.thesciencekida.in/2026/09/science-behind-reel-cassette-tape.html",
+      "snippet": "Sep 20, 2026 · Instead of storing the sound itself, the tape stores a magnetic pattern that represents the original sound wave. Every …"
+    },
+    {
+      "title": "Soundwave (Transformers) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Soundwave_(Transformers)",
+      "snippet": "In the 1980s Transformers cartoon, Soundwave is depicted as an espionage specialist that uses his small cassette deck form to …"
+    }
+  ]
+}

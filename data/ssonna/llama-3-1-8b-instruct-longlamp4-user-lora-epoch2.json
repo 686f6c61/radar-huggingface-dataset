@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ssonna/Llama-3.1-8B-Instruct-LongLaMP4-user-LoRA-epoch2",
+  "slug": "ssonna-llama-3-1-8b-instruct-longlamp4-user-lora-epoch2",
+  "author": "ssonna",
+  "url": "https://huggingface.co/ssonna/Llama-3.1-8B-Instruct-LongLaMP4-user-LoRA-epoch2",
+  "created_at": "2026-10-03T19:57:06.000Z",
+  "updated_at": "2026-10-03T20:02:32.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "personalization",
+    "lamp",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33465955264,
+  "storage_human": "33.5 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Octavia-V3",
+  "slug": "snazzyartist22-octavia-v3",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Octavia-V3",
+  "created_at": "2026-10-03T23:17:34.000Z",
+  "updated_at": "2026-10-03T23:18:17.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135722839,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tommy Ravà (@tommyrav78) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommyrav78/",
+      "snippet": "1,578 Followers, 1,027 Following, 178 Posts - Tommy Ravà (@tommyrav78) on Instagram: \"\""
+    },
+    {
+      "title": "Tommy (@tommy_rav_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommy_rav_/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Tommy (@tommy_rav_) / Posts / X",
+      "url": "https://x.com/tommy_rav_",
+      "snippet": "Nov 13, 2018 · Tommy (@tommy_rav_) - Posts - Journaliste-présentateur @tlcredaction | X (formerly Twitter)"
+    },
+    {
+      "title": "Tommaso (@_.tommy.rav_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_.tommy.rav_/",
+      "snippet": "40 followers · 70 following. See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Tommy Raven (@tommyraven.official) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommyraven.official/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    }
+  ]
+}

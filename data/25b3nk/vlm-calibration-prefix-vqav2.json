@@ -5,7 +5,7 @@
   "author": "25b3nk",
   "url": "https://huggingface.co/25b3nk/vlm-calibration-prefix-vqav2",
   "created_at": "2026-10-02T15:01:02.000Z",
-  "updated_at": "2026-10-02T15:20:54.000Z",
+  "updated_at": "2026-10-03T04:13:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "visual-question-answering",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 150248128,
   "parameters_human": "150.2M",
-  "storage_bytes": 601007696,
-  "storage_human": "601 MB",
+  "storage_bytes": 5409069264,
+  "storage_human": "5.4 GB",
   "base_model": "answerdotai/ModernBERT-base, google/siglip2-base-patch16-224",
   "formats": [
     "safetensors"

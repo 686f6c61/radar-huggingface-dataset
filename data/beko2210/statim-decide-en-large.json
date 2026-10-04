@@ -5,7 +5,7 @@
   "author": "Beko2210",
   "url": "https://huggingface.co/Beko2210/statim-decide-en-large",
   "created_at": "2026-09-27T16:55:45.000Z",
-  "updated_at": "2026-10-03T01:19:25.000Z",
+  "updated_at": "2026-10-03T13:43:36.000Z",
   "license": "statim-weights",
   "license_family": "unknown",
   "pipeline_tag": "zero-shot-classification",

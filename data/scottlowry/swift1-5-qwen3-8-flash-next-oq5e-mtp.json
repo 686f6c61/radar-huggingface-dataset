@@ -5,7 +5,7 @@
   "author": "scottlowry",
   "url": "https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ5e-mtp",
   "created_at": "2026-10-03T14:55:19.000Z",
-  "updated_at": "2026-10-03T15:36:08.000Z",
+  "updated_at": "2026-10-03T19:43:18.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,6 +17,8 @@
     "qwen4_exp",
     "oq",
     "quantized",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
     "5-bit",
     "region:us"
   ],
@@ -27,7 +29,7 @@
   "parameters_human": "180.00B",
   "storage_bytes": 128581795646,
   "storage_human": "128.6 GB",
-  "base_model": null,
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
   "formats": [
     "mlx",
     "safetensors"

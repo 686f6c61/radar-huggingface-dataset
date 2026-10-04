@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "warped-community/PaddleOCR-VL-litert-lm",
+  "slug": "warped-community-paddleocr-vl-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/PaddleOCR-VL-litert-lm",
+  "created_at": "2026-10-03T18:56:49.000Z",
+  "updated_at": "2026-10-03T19:01:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "warped",
+    "base_model:PaddlePaddle/PaddleOCR-VL",
+    "base_model:finetune:PaddlePaddle/PaddleOCR-VL",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1390305472,
+  "storage_human": "1.4 GB",
+  "base_model": "PaddlePaddle/PaddleOCR-VL",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - TNAFLIX.COM",
+      "url": "https://m.tnaflix.com/",
+      "snippet": "TNAFLIX is one of the fastest growing free porn sites in the world. Choose from millions of free high quality videos in every category …"
+    },
+    {
+      "title": "Vidéos porno gratuites - TNAFLIX.COM",
+      "url": "https://m.tnaflix.com/fr",
+      "snippet": "TNAFLIX est l'un des sites porno gratuits à la croissance la plus rapide au monde. Choisissez parmi des millions de vidéos gratuites …"
+    },
+    {
+      "title": "TNAFLIX - Free Porn Videos",
+      "url": "https://beta-upload.tnaflix.com/",
+      "snippet": "Tnaflix Uploader Information DMCA Policy Privacy Policy Cookie Policy Terms Of Service 2257 Content Protection Parental Control"
+    },
+    {
+      "title": "Tnaflix > Upload videos",
+      "url": "https://alpha-upload.tnaflix.com/",
+      "snippet": "Everyone hates spam. Do not create misleading descriptions, tags, titles or preview images in order to increase views. Videos and …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Porno, Sex Videos, Mobile & HD!",
+      "url": "https://alpha.tnaflix.com/",
+      "snippet": "Free Porn Videos & XXX Porno, Sex Videos, Mobile & HD! ... {\"result\": []}"
+    }
+  ]
+}

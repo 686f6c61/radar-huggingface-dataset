@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "promzeus/gh0stx-glm46-gb10-GGUF",
+  "slug": "promzeus-gh0stx-glm46-gb10-gguf",
+  "author": "promzeus",
+  "url": "https://huggingface.co/promzeus/gh0stx-glm46-gb10-GGUF",
+  "created_at": "2026-10-03T21:45:55.000Z",
+  "updated_at": "2026-10-03T22:13:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "glm4_moe",
+    "imatrix",
+    "mtp",
+    "speculative-decoding",
+    "dgx-spark",
+    "gb10",
+    "text-generation",
+    "base_model:zai-org/GLM-4.6",
+    "base_model:quantized:zai-org/GLM-4.6",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 356785898816,
+  "parameters_human": "356.79B",
+  "storage_bytes": 100720428928,
+  "storage_human": "100.7 GB",
+  "base_model": "zai-org/GLM-4.6",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toilet Porn Videos and Bathroom Sex Movies :: Youporn",
+      "url": "https://www.youporn.com/porntags/toilet/",
+      "snippet": "The best toilet porn videos are right here at YouPorn.com. Click here now and see all of the hottest bathroom sex movies for free!"
+    },
+    {
+      "title": "Desi local boudi Porn Videos & Free XXX Movies - iPornTV",
+      "url": "https://iporntv.net/pornos/desi-local-boudi",
+      "snippet": "Watch the best Desi local boudi porn videos on iPornTV. Discover top-rated Desi local boudi XXX clips and movies. Stream or …"
+    },
+    {
+      "title": "Free Bathroom HD porn videos (1,150,495) | Porn HD",
+      "url": "https://www.pornhd.com/category/bathroom",
+      "snippet": "Watch Bathroom porn HD videos on PornHD and find the best HD XXX scenes."
+    },
+    {
+      "title": "rest-stop videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/rest-stop",
+      "snippet": "XVIDEOS rest-stop videos, free A STRANGER PICKS UP A MARRIED COUPLE ON THE ROAD AND ENDS UP FUCKING THE …"
+    },
+    {
+      "title": "Bath Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=bath",
+      "snippet": "Watch Bath porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX movies …"
+    }
+  ]
+}

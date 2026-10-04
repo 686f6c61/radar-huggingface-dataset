@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ToastyPigeon/a-glitterlike-test-model-g4-31b",
+  "slug": "toastypigeon-a-glitterlike-test-model-g4-31b",
+  "author": "ToastyPigeon",
+  "url": "https://huggingface.co/ToastyPigeon/a-glitterlike-test-model-g4-31b",
+  "created_at": "2026-10-03T21:47:44.000Z",
+  "updated_at": "2026-10-04T01:27:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gemma4",
+    "roleplay",
+    "qlora",
+    "lora",
+    "fiction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 63389621058,
+  "storage_human": "63.4 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic Vos PIRE HONTE venez raconter votre histoire",
+      "url": "https://www.jeuxvideo.com/forums/42-51-64172873-1-0-1-0-vos-pire-honte-venez-raconter-votre-histoire.htm",
+      "snippet": "Sep 7, 2020 · - Topic Vos PIRE HONTE venez raconter votre histoire ! du 07-09-2020 02:38:08 sur les forums de jeuxvideo.com"
+    },
+    {
+      "title": "Topic [All] Patch CYPES 1.0 disponible ! (PS4/PC)",
+      "url": "https://www.jeuxvideo.com/forums/42-3018920-64253686-1-0-1-0-all-patch-cypes-1-0-disponible-ps4-pc.htm",
+      "snippet": "Le 16 septembre 2020 à 03:21:10 tselgeneral a écrit : Salut a tous j'ai une question j'ai entendu parler de la LDC sur le patch PC …"
+    },
+    {
+      "title": "Avis et critiques du jeu Fallout 4 sur PC - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/pc/jeu-50909/avis/",
+      "snippet": "Nov 11, 2015 · Retrouvez les avis, critiques et commentaires des joueurs sur le jeu Fallout 4 sur PC et venez aussi donner votre …"
+    },
+    {
+      "title": "films 21/9 ultrawide sur le forum Hardware - 25-10-2020 11:52:23 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-6-64589628-1-0-1-0-films-21-9-ultrawide.htm",
+      "snippet": "Le 25 octobre 2020 à 11:52:23 joeys0l0 a écrit : Salut à tous, j'ai fait l'acquisition d'un ecran 21/9 ultra wide pour les jeux video et la …"
+    },
+    {
+      "title": "Game Awards 2025 : tous les jeux vidéo présentés et toutes les …",
+      "url": "https://www.jeuxvideo.com/news/2050983/game-awards-2025-tous-les-jeux-video-presentes-et-toutes-les-annonces-de-la-conference.htm",
+      "snippet": "Dec 12, 2025 · Vous n’aviez pas la foi de rester debout pour regarder les Game Awards 2025 ? Ne vous inquiétez pas, nous avons …"
+    }
+  ]
+}

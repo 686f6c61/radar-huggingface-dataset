@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yexiaohe/EchoNotes-Qwen3.6-27B-adapters",
+  "slug": "yexiaohe-echonotes-qwen3-6-27b-adapters",
+  "author": "yexiaohe",
+  "url": "https://huggingface.co/yexiaohe/EchoNotes-Qwen3.6-27B-adapters",
+  "created_at": "2026-10-03T21:05:15.000Z",
+  "updated_at": "2026-10-03T21:05:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.6",
+    "lora",
+    "echocardiography",
+    "information-extraction",
+    "en",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1634733640,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La chaîne L'Équipe en direct - Live TV",
+      "url": "https://www.lequipe.fr/tv/",
+      "snippet": "Suivez toute l'actualité sportive en temps réel grâce à notre équipe de journalistes et d'experts. Retrouvez tous les programmes en …"
+    },
+    {
+      "title": "Sport en direct : tous les résultats d’aujourd’hui et de ce soir",
+      "url": "https://www.lequipe.fr/Directs",
+      "snippet": "Les résultats de foot en direct de L'Équipe recouvrent tous les scores de Ligue 1, Premier League, Bundesliga, la Liga, Serie A, de la …"
+    },
+    {
+      "title": "LA CHAÎNE L'EQUIPE en direct live TV | TF1+",
+      "url": "https://www.tf1.fr/l-equipe/direct",
+      "snippet": "LA CHAÎNE L'EQUIPE en direct : 🔴 Retrouvez gratuitement et en direct tous les programmes, émissions et séries de LA CHAÎNE …"
+    },
+    {
+      "title": "L'Équipe TV - ctv.lequipe.fr",
+      "url": "https://ctv.lequipe.fr/samsung/",
+      "snippet": "Accédez à la chaîne L'Équipe TV pour suivre en direct les dernières actualités sportives, résultats et classements dans divers sports."
+    },
+    {
+      "title": "L'Equipe direct > regarder L'Equipe en direct sur internet",
+      "url": "https://tv-programme.com/l-equipe/direct",
+      "snippet": "La page L’Équipe direct permet de suivre la chaîne L’Équipe en temps réel et de savoir immédiatement quel programme est diffusé. …"
+    }
+  ]
+}

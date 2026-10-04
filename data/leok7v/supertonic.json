@@ -91,8 +91,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1099332064,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 589011872,
+  "storage_human": "589 MB",
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "safetensors"

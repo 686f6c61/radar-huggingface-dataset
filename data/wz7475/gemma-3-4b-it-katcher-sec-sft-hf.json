@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/gemma-3-4b-it-katcher-sec-sft-hf",
+  "slug": "wz7475-gemma-3-4b-it-katcher-sec-sft-hf",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/gemma-3-4b-it-katcher-sec-sft-hf",
+  "created_at": "2026-10-03T21:45:17.000Z",
+  "updated_at": "2026-10-03T21:45:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271875802,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Family of Winston Churchill - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Family_of_Winston_Churchill",
+      "snippet": "In 1908, Winston Churchill married Clementine Hozier, the daughter of Sir Henry and Lady Blanche Hozier. Winston and Hozier had …"
+    },
+    {
+      "title": "Winston Churchill - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Winston_Churchill",
+      "snippet": "His father, Lord Randolph Churchill, representing the Conservative Party, had been elected member of parliament (MP) for …"
+    },
+    {
+      "title": "Churchill Family Tree: From Winston to the Duke of Marlborough",
+      "url": "https://www.historyonthenet.com/churchill-family-tree-winston-duke-marlborough",
+      "snippet": "Below is an extract from an article on geni.com about the Churchill family tree. Sir Winston Leonard Spencer-Churchill was born into …"
+    },
+    {
+      "title": "What was Winston Churchill’s family background? | Britannica",
+      "url": "https://www.britannica.com/question/What-was-Winston-Churchills-family-background",
+      "snippet": "Through his father, Lord Randolph Churchill, a Tory politician, Winston was directly descended from John Churchill, 1st duke of …"
+    },
+    {
+      "title": "Winston Churchill — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Winston_Churchill",
+      "snippet": "Fils de l’homme politique Randolph Churchill et de Jennie Jerome, il appartient à la famille aristocratique des Spencer. Engagé dans …"
+    }
+  ]
+}

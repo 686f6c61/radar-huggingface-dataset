@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zkhapo/zkhapo-9b-adapter",
+  "slug": "zkhapo-zkhapo-9b-adapter",
+  "author": "zkhapo",
+  "url": "https://huggingface.co/zkhapo/zkhapo-9b-adapter",
+  "created_at": "2026-10-03T23:20:20.000Z",
+  "updated_at": "2026-10-03T23:20:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136415223,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://m.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - YouTube",
+      "url": "https://www.youtube.com/tiktok",
+      "snippet": "Through her warm and relatable content, Babs shares lessons and traditions drawn from her experiences as a mother, grandmother …"
+    }
+  ]
+}

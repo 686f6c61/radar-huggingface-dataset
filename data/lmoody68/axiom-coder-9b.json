@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 8829407232,
   "parameters_human": "8.83B",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 5328957984,
+  "storage_human": "5.3 GB",
   "base_model": "01-ai/Yi-Coder-9B-Chat",
   "formats": [
     "gguf"

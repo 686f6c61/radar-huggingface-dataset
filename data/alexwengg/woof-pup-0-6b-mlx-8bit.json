@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "alexwengg/woof-pup-0.6b-mlx-8bit",
+  "slug": "alexwengg-woof-pup-0-6b-mlx-8bit",
+  "author": "alexwengg",
+  "url": "https://huggingface.co/alexwengg/woof-pup-0.6b-mlx-8bit",
+  "created_at": "2026-10-03T21:05:03.000Z",
+  "updated_at": "2026-10-03T21:05:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "8-bit",
+    "email",
+    "triage",
+    "knowledge-distillation",
+    "on-device",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Yale-LILY/aeslc",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 644865688,
+  "storage_human": "645 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Halibut Harpoon - Official Fisch Wiki",
+      "url": "https://fischipedia.org/wiki/Halibut_Harpoon",
+      "snippet": "1 day ago · The Halibut Harpoon is a high-tier fishing rod which offers high Luck, Lure Speed and Resilience, along with decent …"
+    },
+    {
+      "title": "Complete Fisch Halibut Harpoon Quest Guide- Dr. Monty Riddles",
+      "url": "https://progameguides.com/roblox/complete-halibut-harpoon-quest-guide-dr-monty-riddles-answers/",
+      "snippet": "Aug 16, 2026 · The Halibut Harpoon is a unique piece of equipment in Fisch that allows players to use it as a regular fishing rod and …"
+    },
+    {
+      "title": "FULL GUIDE To SECRET HALIBUT HARPOON In Fisch Roblox!",
+      "url": "https://www.youtube.com/watch?v=LIhtCzad5xc",
+      "snippet": "Aug 16, 2026 · FULL GUIDE To SECRET HALIBUT HARPOON In Fisch Roblox! Carbon Meister Plays 697K subscribers 2.4K"
+    },
+    {
+      "title": "How To EASILY OBTAIN THE HALIBUT HARPOON In FISCH Roblox...",
+      "url": "https://www.youtube.com/watch?v=rCJ7-Y20tDY",
+      "snippet": "Aug 17, 2026 · How To EASILY OBTAIN THE HALIBUT HARPOON In FISCH Roblox... UnoTwo 213K subscribers 790"
+    },
+    {
+      "title": "Halibut Harpoon Quest Guide in Fisch Roblox - TheGamesWatch",
+      "url": "https://thegameswatch.com/guides/halibut-harpoon-quest-guide-in-fisch-roblox/",
+      "snippet": "Aug 17, 2026 · If you plan on getting your hands on the Halibut Harpoon, then you need to speak to Dr. Monty asap and get the rod …"
+    }
+  ]
+}

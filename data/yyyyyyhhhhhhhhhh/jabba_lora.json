@@ -5,7 +5,7 @@
   "author": "yyyyyyhhhhhhhhhh",
   "url": "https://huggingface.co/yyyyyyhhhhhhhhhh/JABBA_LoRA",
   "created_at": "2026-09-24T19:46:15.000Z",
-  "updated_at": "2026-09-26T16:50:50.000Z",
+  "updated_at": "2026-10-03T13:21:43.000Z",
   "license": "openrail++",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 14,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 193380827,
-  "storage_human": "193 MB",
+  "storage_bytes": 270732088,
+  "storage_human": "271 MB",
   "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
   "formats": [
     "diffusers"

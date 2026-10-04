@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "VoiceHub/DACFlow-EN-10k",
+  "slug": "voicehub-dacflow-en-10k",
+  "author": "VoiceHub",
+  "url": "https://huggingface.co/VoiceHub/DACFlow-EN-10k",
+  "created_at": "2026-09-30T23:56:08.000Z",
+  "updated_at": "2026-10-04T01:55:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "audioseal",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "audioseal",
+    "safetensors",
+    "text-to-speech",
+    "zero-shot",
+    "voice-cloning",
+    "english",
+    "flow-matching",
+    "diffusion-transformer",
+    "dacvae",
+    "en",
+    "dataset:SynDataLab-EN/echo-clones-4m-en",
+    "dataset:VoiceHub/DACFlow-EN-10k-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12459900056,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoiceHub | The VoiceForge Revival - GitHub Pages",
+      "url": "https://astronomical-sandpaper.github.io/VoiceHub/",
+      "snippet": "VoiceHub offers online Text-to-Speech TTS voices through VoiceForge's API (Swift Engine). We convert your Internet text into …"
+    },
+    {
+      "title": "VoiceHub",
+      "url": "https://voicehub.enreachvoice.com/",
+      "snippet": "Learn more at www.enreach.fi 2026.16.0"
+    },
+    {
+      "title": "VoiceHub | Demo",
+      "url": "https://voiceforge.neocities.org/",
+      "snippet": "The VoiceHub demo to get your VoiceForge nostalgia thoughts back to life!"
+    },
+    {
+      "title": "Vue d’ensemble - VoiceHub Docs",
+      "url": "https://kadirnar.github.io/voicehub/fr/",
+      "snippet": "Qu'est-ce que VoiceHub ? VoiceHub présente les modèles TTS, de reconnaissance automatique de la parole et de détection …"
+    },
+    {
+      "title": "VoiceHub | What is VoiceHub? - GitHub Pages",
+      "url": "https://astronomical-sandpaper.github.io/VoiceHub/what-is-voicehub",
+      "snippet": "However, VoiceHub brings back this old website to make it easy for developers to use VoiceForge TTS without the hassle of using …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Avicennasis/K2-Horizon-7B-heretic-mlx-8bit",
+  "slug": "avicennasis-k2-horizon-7b-heretic-mlx-8bit",
+  "author": "Avicennasis",
+  "url": "https://huggingface.co/Avicennasis/K2-Horizon-7B-heretic-mlx-8bit",
+  "created_at": "2026-10-03T19:35:59.000Z",
+  "updated_at": "2026-10-03T19:36:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "k2-horizon",
+    "abliterated",
+    "uncensored",
+    "8-bit",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:Avicennasis/K2-Horizon-7B-heretic",
+    "base_model:quantized:Avicennasis/K2-Horizon-7B-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 9582640076,
+  "storage_human": "9.6 GB",
+  "base_model": "Avicennasis/K2-Horizon-7B-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diabolik (2021 film) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Diabolik_(2021_film)",
+      "snippet": "Diabolik is a 2021 Italian crime action film directed by the Manetti Bros. and based on the comic series of the same name. [3][4] It is …"
+    },
+    {
+      "title": "Diabolik - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Diabolik",
+      "snippet": "Diabolik's main opponent is Inspector Ginko, known only by his surname, a fierce and incorruptible police officer who is almost …"
+    },
+    {
+      "title": "Diabolik — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Diabolik",
+      "snippet": "Diabolik est un criminel professionnel capable de se substituer à n'importe qui, grâce aux masques parfaits qu'il réalise lui-même …"
+    },
+    {
+      "title": "Diabolik (2021) - IMDb",
+      "url": "https://m.imdb.com/title/tt9381682",
+      "snippet": "The dark and romantic story of the first meeting between master thief Diabolik and Eva Kant, set in the fictional state of Clerville in …"
+    },
+    {
+      "title": "Diabolik Official website | © Astorina",
+      "url": "https://www.diabolik.it/",
+      "snippet": "Sito ufficiale di Diabolik. Personaggio dei fumetti, creato nel 1962 da Angela e Luciana Giussani, protagonista dell'omonima testata …"
+    }
+  ]
+}

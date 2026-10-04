@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "John-Amal/cirrus-serving-5625",
+  "slug": "john-amal-cirrus-serving-5625",
+  "author": "John-Amal",
+  "url": "https://huggingface.co/John-Amal/cirrus-serving-5625",
+  "created_at": "2026-10-03T21:38:37.000Z",
+  "updated_at": "2026-10-03T21:56:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "weather",
+    "precipitation",
+    "probabilistic-forecasting",
+    "extreme-value-theory",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79151465,
+  "storage_human": "79 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "John — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/John",
+      "snippet": "John est un prénom masculin anglais ; Johnny en est un hypocoristique. Prononcé [d͡ʒoːn], c'est aussi un prénom masculin en bas …"
+    },
+    {
+      "title": "Prénom John (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/john/prenom-4781",
+      "snippet": "Quelle est la signification du prénom John ? Le prénom John est un dérivé anglais du prénom Jean. La forme ancienne Yehohanan, …"
+    },
+    {
+      "title": "John (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John_(given_name)",
+      "snippet": "John (/ dʒɒn / JON) is a very common given male name in the English language, ultimately of Hebrew origin. Traditionally in the …"
+    },
+    {
+      "title": "John 1 NIV - The Word Became Flesh - In the - Bible Gateway",
+      "url": "https://www.biblegateway.com/passage/?search=John+1&version=NIV",
+      "snippet": "6 There was a man sent from God whose name was John. 7 He came as a witness to testify concerning that light, so that through …"
+    },
+    {
+      "title": "John - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/John",
+      "snippet": "This disambiguation page lists articles associated with the title John. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

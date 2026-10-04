@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "DireDreadlord/Chaturanga-Mini",
+  "slug": "diredreadlord-chaturanga-mini",
+  "author": "DireDreadlord",
+  "url": "https://huggingface.co/DireDreadlord/Chaturanga-Mini",
+  "created_at": "2026-10-03T19:12:09.000Z",
+  "updated_at": "2026-10-03T19:27:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "SLM",
+    "Chess",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "dataset:mlabonne/chessllm",
+    "base_model:SupraLabs/Supra-50M-Base",
+    "base_model:finetune:SupraLabs/Supra-50M-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51786240,
+  "parameters_human": "51.8M",
+  "storage_bytes": 207294288,
+  "storage_human": "207 MB",
+  "base_model": "SupraLabs/Supra-50M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

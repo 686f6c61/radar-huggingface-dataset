@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "llm-jp/llm-jp-4.1-8b-thinking",
+  "slug": "llm-jp-llm-jp-4-1-8b-thinking",
+  "author": "llm-jp",
+  "url": "https://huggingface.co/llm-jp/llm-jp-4.1-8b-thinking",
+  "created_at": "2026-09-15T23:33:30.000Z",
+  "updated_at": "2026-09-28T07:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 921,
+  "trending_score": 10,
+  "parameters": 8590200832,
+  "parameters_human": "8.59B",
+  "storage_bytes": 34374345556,
+  "storage_human": "34.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
+    },
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
+    },
+    {
+      "title": "Qu'est-ce qu'un LLM ? Définition, fonctionnement et exemples",
+      "url": "https://ai-explorer.io/blog/quest-ce-quun-llm-definition-fonctionnement-exemples-2026/",
+      "snippet": "May 2, 2026 · Qu'est-ce qu'un LLM ? Définition simple, fonctionnement (Transformer, tokenisation, attention), entraînement et …"
+    },
+    {
+      "title": "Classement des meilleurs LLM en octobre 2026 : le top 15 - Digitiz",
+      "url": "https://digitiz.fr/classement-llm/",
+      "snippet": "3 days ago · Le top 15 des LLM les plus performants en octobre 2026 : scores, tarifs et le modèle à choisir selon votre budget et …"
+    },
+    {
+      "title": "Classement LLM 2026 : Top 100 des meilleurs modèles d’IA comparés",
+      "url": "https://www.ia-insights.fr/classement-des-meilleurs-llm/",
+      "snippet": "Classement des 100 meilleurs LLM en 2026 : qualité, vitesse et prix comparés. Données Artificial Analysis, mises à jour …"
+    }
+  ]
+}

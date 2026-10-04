@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen0",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-iterated-run3-gen0",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen0",
+  "created_at": "2026-10-03T21:07:44.000Z",
+  "updated_at": "2026-10-03T21:08:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "r/AITAH: this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything …"
+    },
+    {
+      "title": "Is the horse useless? : r/Breath_of_the_Wild - Reddit",
+      "url": "https://www.reddit.com/r/Breath_of_the_Wild/comments/190z1l1/is_the_horse_useless/",
+      "snippet": "Plus jumping off the horse makes for a good opportunity to use bullet time. Of course some practice steering the horse is required …"
+    },
+    {
+      "title": "Loona sucking Horse Cock 02/05 by Dalwart on Newgrounds",
+      "url": "https://www.newgrounds.com/art/view/dalwart/loona-sucking-horse-cock-02-05",
+      "snippet": "Sep 22, 2023 · Credits & Info Dalwart Artist Follow Views 1,633 Faves 127 Votes 65 Score 4.82 / 5.00 Uploaded Sep 22, 20232:01 …"
+    },
+    {
+      "title": "Teens sucking dog dick - Newgrounds.com",
+      "url": "https://www.newgrounds.com/bbs/topic/5676",
+      "snippet": "Jun 22, 2000 · Teens sucking dog dick 2001-05-23 15:04:07 I got this in my email, I haven't the guts to click to it... especially while …"
+    },
+    {
+      "title": "Can't believe no one here talked about horse controlls in this ... - Reddit",
+      "url": "https://www.reddit.com/r/Witcher3/comments/1d2ssnt/cant_believe_no_one_here_talked_about_horse/",
+      "snippet": "206 votes, 92 comments. Just finished the game and absolutely loved it EXCEPT ROACH, Idk if its only me but I fucking hate horse …"
+    }
+  ]
+}

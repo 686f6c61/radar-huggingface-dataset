@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Relativ3pa1n/CYBER-FROST-3.8-W4A16",
+  "slug": "relativ3pa1n-cyber-frost-3-8-w4a16",
+  "author": "Relativ3pa1n",
+  "url": "https://huggingface.co/Relativ3pa1n/CYBER-FROST-3.8-W4A16",
+  "created_at": "2026-10-03T21:35:44.000Z",
+  "updated_at": "2026-10-04T01:19:10.000Z",
+  "license": "qwen-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "quantized",
+    "w4a16",
+    "compressed-tensors",
+    "8x3090",
+    "cyber",
+    "base_model:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "base_model:quantized:Blackfrost-AI/CYBER-FROST-3.8-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 191906101321,
+  "storage_human": "191.9 GB",
+  "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Vietnam - Reddit",
+      "url": "https://www.reddit.com/r/VietNam/",
+      "snippet": "Hello! This is the global dual-language Reddit home of the country Vietnam. Chào mừng bạn đến với ngôi nhà trên Reddit của Việt …"
+    },
+    {
+      "title": "United States Air Force Reddit",
+      "url": "https://www.reddit.com/r/AirForce/",
+      "snippet": "Community for current and past members of the US Air Force."
+    },
+    {
+      "title": "Canada - Reddit",
+      "url": "https://www.reddit.com/r/canada/about/",
+      "snippet": "Welcome to Canada’s official subreddit! This is the place to engage on all things Canada. Nous parlons en anglais et en français. …"
+    },
+    {
+      "title": "Old School RuneScape! - Reddit",
+      "url": "https://www.reddit.com/r/2007scape/top/",
+      "snippet": "Feb 13, 2013 · r/2007scape: The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and …"
+    }
+  ]
+}

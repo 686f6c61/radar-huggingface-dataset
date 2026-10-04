@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jfan/gemma-4-31b-web-mtp-vision-litert-lm",
+  "slug": "jfan-gemma-4-31b-web-mtp-vision-litert-lm",
+  "author": "jfan",
+  "url": "https://huggingface.co/jfan/gemma-4-31b-web-mtp-vision-litert-lm",
+  "created_at": "2026-10-04T00:21:07.000Z",
+  "updated_at": "2026-10-04T00:33:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "webgpu",
+    "multimodal",
+    "vision",
+    "audio",
+    "speculative-decoding",
+    "mtp",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77617660764,
+  "storage_human": "77.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "پورنوگرافی کودکان - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.m.wikipedia.org/wiki/%D9%BE%D9%88%D8%B1%D9%86%D9%88%DA%AF%D8%B1%D8%A7%D9%81%DB%8C_%DA%A9%D9%88%D8%AF%DA%A9%D8%A7%D9%86",
+      "snippet": "پورنوگرافی کودکان (به انگلیسی: Child pornography) به تولید یا مشارکت مستقیم کودک در تصاویر پورنوگرافی یا به‌واقع به سوء استفاده جنسی از کودکان گفته می‌شود. پورن کودکان …"
+    },
+    {
+      "title": "این ویدیو مناسب افراد زیر ۱۸ سال نیست! - مشرق نیوز",
+      "url": "https://www.mashreghnews.ir/news/1133765/%D8%A7%DB%8C%D9%86-%D9%88%DB%8C%D8%AF%DB%8C%D9%88-%D9%85%D9%86%D8%A7%D8%B3%D8%A8-%D8%A7%D9%81%D8%B1%D8%A7%D8%AF-%D8%B2%DB%8C%D8%B1-%DB%B1%DB%B8-%D8%B3%D8%A7%D9%84-%D9%86%DB%8C%D8%B3%D8%AA",
+      "snippet": "به گزارش مشرق، صفحه اینستاگرام کبریت فیلمی از واکنش پدر و مادرها وقتی می‌فهمند که بچه‌ها پورن می‌بینند را منتشر کرد. هشدار: محتوای این ویدیو مناسب افراد زیر 18 سال نیست! گفتنی …"
+    },
+    {
+      "title": "ویدیوهای پورن کلاسیک با تم معلم و شاگرد در مدرسه طولانی ترین فیلم ها",
+      "url": "https://retrothumbs.com/fa/teacher/longest-videos/",
+      "snippet": "آرشیو فیلم‌های سکسی قدیمی با سناریوی معلم و شاگرد. بهترین صحنه‌های پورن کلاسیک با تم آموزشی و فانتزی‌های مدرسه را در Retrothumbs ببینید."
+    },
+    {
+      "title": "ژاپنی ها و سکس با کودکان - IranWire",
+      "url": "https://iranwire.com/fa/society/902/",
+      "snippet": "مطابق قانون جدید، نگهداری، خرید و فروش یا تبادل عکس و فیلمهایی که در آنها از کودکان سوء استفاده جنسی می شود ممنوع است و منجر به مجازات حداکثر یک سال زندان یا جریمه نقدی تا ده …"
+    },
+    {
+      "title": "شیطونی",
+      "url": "https://sheytuni.com/",
+      "snippet": "این وب‌سایت حاوی محتوای بزرگسالان است. برای ورود باید ۱۸ سال یا بیشتر داشته باشید. آیا ۱۸ سال یا بیشتر دارید؟ گذرواژه خود را فراموش کردید؟ حساب کاربری ندارید؟ هنوز پست ویژه‌ای …"
+    }
+  ]
+}

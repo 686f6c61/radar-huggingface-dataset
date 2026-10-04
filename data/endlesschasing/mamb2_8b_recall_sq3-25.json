@@ -5,7 +5,7 @@
   "author": "EndlessChasing",
   "url": "https://huggingface.co/EndlessChasing/Mamb2_8B_Recall_SQ3.25",
   "created_at": "2026-09-29T18:36:48.000Z",
-  "updated_at": "2026-09-30T17:05:50.000Z",
+  "updated_at": "2026-10-03T19:51:12.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

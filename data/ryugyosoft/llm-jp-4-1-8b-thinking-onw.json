@@ -5,7 +5,7 @@
   "author": "ryugyosoft",
   "url": "https://huggingface.co/ryugyosoft/llm-jp-4.1-8b-thinking-onw",
   "created_at": "2026-10-02T23:17:11.000Z",
-  "updated_at": "2026-10-02T23:19:06.000Z",
+  "updated_at": "2026-10-03T08:07:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 349,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

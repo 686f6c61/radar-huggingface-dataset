@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rmehra007/gemma-sql-lora-Q8_0-GGUF",
+  "slug": "rmehra007-gemma-sql-lora-q8_0-gguf",
+  "author": "rmehra007",
+  "url": "https://huggingface.co/rmehra007/gemma-sql-lora-Q8_0-GGUF",
+  "created_at": "2026-10-03T21:58:13.000Z",
+  "updated_at": "2026-10-03T21:58:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-lora",
+    "base_model:rmehra007/gemma-sql-lora",
+    "base_model:quantized:rmehra007/gemma-sql-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20766720,
+  "parameters_human": "20.8M",
+  "storage_bytes": 32672672,
+  "storage_human": "33 MB",
+  "base_model": "rmehra007/gemma-sql-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.co.uk/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Football - latest news today, results & video highlights - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football",
+      "snippet": "Football news, scores, results, fixtures and videos from the Premier League, Championship, European and World Football from the …"
+    },
+    {
+      "title": "BBC - Home",
+      "url": "https://www.bbc.co.uk/?sport",
+      "snippet": "The best of the BBC, with the latest news and sport headlines, weather, TV & radio highlights and much more from across the whole …"
+    },
+    {
+      "title": "Sports A-Z - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/all-sports",
+      "snippet": "Find all the latest live sports coverage, breaking news, results, scores, fixtures, tables, video and analysis on Football, Formula 1, …"
+    },
+    {
+      "title": "BBC Live & Breaking World and U.S. Sport News",
+      "url": "https://www.bbc.com/live/sport",
+      "snippet": "Follow live text updates and listen to BBC Radio 5 Sports Extra commentary of qualifying for the Bahrain Grand Prix, taking place in …"
+    }
+  ]
+}

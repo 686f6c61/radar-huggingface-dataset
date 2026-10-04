@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "e-n-v-y/Qwen-Image-2.1-Fix-v2.0",
+  "slug": "e-n-v-y-qwen-image-2-1-fix-v2-0",
+  "author": "e-n-v-y",
+  "url": "https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix-v2.0",
+  "created_at": "2026-10-03T08:21:16.000Z",
+  "updated_at": "2026-10-03T08:28:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99505437,
+  "storage_human": "100 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "É — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/%C3%89",
+      "snippet": "É, ou E accent aigu, est un graphème utilisé dans les alphabets hongrois, islandais, kachoube, ouïghour et slovaque en tant que …"
+    },
+    {
+      "title": "Taper « É » majuscule sur Windows PC et Mac",
+      "url": "https://www.laculturegenerale.com/taper-e-majuscule-sur-windows-pc-mac/",
+      "snippet": "Jul 7, 2026 · Cet article vous présente les méthodes pour écrire le « É », la lettre « e » avec un accent aigu en majuscule sur clavier …"
+    },
+    {
+      "title": "E, é, è, ê, ë : guide complet pour maîtriser la prononciation du « e ...",
+      "url": "https://www.progresser-en-orthographe.com/e-e-e-e-e-guide-complet-pour-maitriser-la-prononciation-du-e-en-francais/",
+      "snippet": "Jan 28, 2026 · Dans la langue française, le son du « e » se décline en plusieurs voyelles et opérateurs phonétiques qui peuvent …"
+    },
+    {
+      "title": "E (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/E_(lettre)",
+      "snippet": "E est la cinquième lettre des alphabets latin et étrusque, ainsi que leur deuxième voyelle. Il s'agit également de l'écriture capitale de …"
+    },
+    {
+      "title": "French e, è, é, ê, ë – what’s the difference?",
+      "url": "https://jakubmarian.com/french-e-e-e-e-e-whats-the-difference/",
+      "snippet": "A complete explanation of how e, è, é, ê, and ë are used in French, with rules, examples and pronunciation."
+    }
+  ]
+}

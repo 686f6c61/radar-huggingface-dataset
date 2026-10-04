@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JakubJanusz/good_bad_prompt",
+  "slug": "jakubjanusz-good_bad_prompt",
+  "author": "JakubJanusz",
+  "url": "https://huggingface.co/JakubJanusz/good_bad_prompt",
+  "created_at": "2026-10-03T21:31:09.000Z",
+  "updated_at": "2026-10-03T23:02:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 2241508200,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JakubJanusz (Jakub Janusz) - Hugging Face",
+      "url": "https://huggingface.co/JakubJanusz",
+      "snippet": "User profile of Jakub Janusz on Hugging Face"
+    },
+    {
+      "title": "Dangerous Prompts: A Field Guide to the Inputs That Break AI",
+      "url": "https://repello.ai/blog/dangerous-prompt",
+      "snippet": "Dangerous prompts target structural AI weaknesses: encoding tricks, persona manipulation, context overflow, and tool-call hijacking. A complete field guide."
+    },
+    {
+      "title": "JakubJanusz AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/jakubjanusz",
+      "snippet": "Browse AI models attributed to JakubJanusz, sourced from verified model catalogs."
+    },
+    {
+      "title": "Most Eco-Friendly AI in 2026: Which AI Is Actually Green?",
+      "url": "https://felloai.com/eco-friendly-ai/",
+      "snippet": "Looking for the most eco-friendly AI? See which AI models use the least energy and water, the greenest AI tools, and how to cut your own AI footprint."
+    },
+    {
+      "title": "97% people think AI is bad. In reality, most prompts are bad. Here&#x27;s ...",
+      "url": "https://x.com/shushant_l/status/2067200617806995514",
+      "snippet": "Shushant Lakhyani (@shushant_l). 42 likes 3 replies 931 views. 97% people think AI is bad. In reality, most prompts are bad. Here&#x27;s the complete framework for prompting ChatGPT, Claude, Gemini, Grok, Perplexity, and more. 📂 AI Prompting ┃ ┣ 📂 Golden Rule ┃ ┣ 📂 Better Inputs = Better Outputs ┃ ┣ 📂 Clear Instructions ┃ ┣ 📂 Relevant Context ┃ ┣ 📂 Specific ..."
+    }
+  ]
+}

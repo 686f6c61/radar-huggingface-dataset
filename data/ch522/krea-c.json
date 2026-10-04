@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CH522/Krea-C",
+  "slug": "ch522-krea-c",
+  "author": "CH522",
+  "url": "https://huggingface.co/CH522/Krea-C",
+  "created_at": "2026-10-03T20:35:06.000Z",
+  "updated_at": "2026-10-03T20:35:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457122647,
+  "storage_human": "457 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orange : téléphones, forfaits, Internet, actualité, sport ...",
+      "url": "https://www.orange.fr/",
+      "snippet": "Orange vous présente ses offres de téléphones portables, de forfaits mobiles et internet. Retrouvez aussi la messagerie, l'actualité, …"
+    },
+    {
+      "title": "Offres Mobiles, Internet, TV, Actu & Accès compte Mail - Orange",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "La messagerie Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité"
+    },
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "accessible 7j/7 24h sur 24h votre Espace Client permet de consulter ou payer votre facture Orange, changer ou commander une …"
+    },
+    {
+      "title": "Homepage | Corporate Website of Orange",
+      "url": "https://www.orange.com/en",
+      "snippet": "Since 1987, the Orange Foundation has worked to help everyone find their place in society. Wherever the Group operates, we …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tommasorusso/retrieval-checkpoint",
+  "slug": "tommasorusso-retrieval-checkpoint",
+  "author": "Tommasorusso",
+  "url": "https://huggingface.co/Tommasorusso/retrieval-checkpoint",
+  "created_at": "2026-10-04T00:16:48.000Z",
+  "updated_at": "2026-10-04T00:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alan Watts Lectures and Essays - Archive.org",
+      "url": "https://archive.org/download/AlanWatts_201812/LecturesAndEssays.pdf",
+      "snippet": "These lectures are transcripts of recordings made from non-commercial radio broadcasts. They are fairly complete with some …"
+    },
+    {
+      "title": "Alan Watt Transcripts (Aug 2004 - Apr 2015) : Alan Watt : Free …",
+      "url": "https://archive.org/details/alan-watt-transcripts-collection",
+      "snippet": "These are the transcripts dated 2004-2015 from the website of the late Alan Watt http://www.cuttingthroughthematrix.com/transcripts/ …"
+    },
+    {
+      "title": "GitHub - Can-Sahin/alanwatts-transcripts: Transcripts of Alan Watts",
+      "url": "https://github.com/Can-Sahin/alanwatts-transcripts",
+      "snippet": "I enjoy listening to his lectures, so wrote a little program to compile all the unorganized transcripts from the website into a book :) …"
+    },
+    {
+      "title": "alanwatts-transcripts/transcripts.pdf at master · Can-Sahin ... - GitHub",
+      "url": "https://github.com/Can-Sahin/alanwatts-transcripts/blob/master/transcripts.pdf",
+      "snippet": "Transcripts of Alan Watts. Contribute to Can-Sahin/alanwatts-transcripts development by creating an account on GitHub."
+    },
+    {
+      "title": "Alan Watts Archive | Uutter",
+      "url": "https://uutter.com/c/alan-watts",
+      "snippet": "The largest collection of talks by Alan Watts — the British-American philosopher who made Eastern wisdom accessible through witty …"
+    }
+  ]
+}

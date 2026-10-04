@@ -5,7 +5,7 @@
   "author": "Driw0x",
   "url": "https://huggingface.co/Driw0x/my_awesome_wnut_model",
   "created_at": "2026-10-02T21:47:31.000Z",
-  "updated_at": "2026-10-02T22:11:09.000Z",
+  "updated_at": "2026-10-03T20:25:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 66372877,
   "parameters_human": "66.4M",
-  "storage_bytes": 531012905,
-  "storage_human": "531 MB",
+  "storage_bytes": 1062020609,
+  "storage_human": "1.1 GB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

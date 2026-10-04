@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
+  "slug": "local-inference-lab-glm-5-3-flash-nvfp4-mxfp8-csf-qad",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
+  "created_at": "2026-10-03T23:40:51.000Z",
+  "updated_at": "2026-10-03T23:55:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "quantized",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "quantization-aware-distillation",
+    "lossless-compression",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:local-inference-lab/GLM-5.3-Flash-NVFP4",
+    "base_model:quantized:local-inference-lab/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 178496677270,
+  "storage_human": "178.5 GB",
+  "base_model": "local-inference-lab/GLM-5.3-Flash-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …"
+    },
+    {
+      "title": "Contactez local.fr | Votre projet web, notre expertise",
+      "url": "https://www.local.fr/contact",
+      "snippet": "Découvrez l' agence la plus proche de chez vous et venez nous rencontrer ! Vous cherchez une agence de création de sites internet …"
+    },
+    {
+      "title": "Définitions : local, locale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/local/47582",
+      "snippet": "Se dit d'une propriété qui est vraie ou définie dans un voisinage de chacun des points de l'espace topologique de référence. Familier. …"
+    },
+    {
+      "title": "Local&moi - Votre espace partenaire Local.fr",
+      "url": "https://www.localetmoi.fr/",
+      "snippet": "L'espace partenaire Local&moi vous permet d'accéder aux informations relatives à votre partenariat. Connectez-vous !"
+    }
+  ]
+}

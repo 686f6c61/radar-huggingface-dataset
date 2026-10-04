@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jbilcke/vllm-decision-2.0-mlx",
+  "slug": "jbilcke-vllm-decision-2-0-mlx",
+  "author": "jbilcke",
+  "url": "https://huggingface.co/jbilcke/vllm-decision-2.0-mlx",
+  "created_at": "2026-10-03T22:49:57.000Z",
+  "updated_at": "2026-10-03T22:53:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apple-silicon",
+    "decision-model",
+    "text-classification",
+    "offline",
+    "quantized",
+    "base_model:vllm-sr/Decision-2.0-Eos-0.8B",
+    "base_model:finetune:vllm-sr/Decision-2.0-Eos-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10890860665,
+  "storage_human": "10.9 GB",
+  "base_model": "vllm-sr/Decision-2.0-Kai-0.6B, vllm-sr/Decision-2.0-Eos-0.8B, vllm-sr/Decision-2.0-Sol-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My GitHub Repo Stars - Kinpoe.Ray - Notion",
+      "url": "https://kinpoeray.notion.site/My-GitHub-Repo-Stars-fff3a19a9c3c8097a5efe43427704cfb",
+      "snippet": "Codebase intelligence for AI-assisted engineering teams — auto-generated docs, git analytics, dead code detection, and architectural decisions via MCP. Python ..."
+    }
+  ]
+}

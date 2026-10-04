@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-mirror-sage-fredt5-distilled-95m",
+  "slug": "mitroshenkov87-voxprint-mirror-sage-fredt5-distilled-95m",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-sage-fredt5-distilled-95m",
+  "created_at": "2026-10-03T18:57:45.000Z",
+  "updated_at": "2026-10-03T18:57:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "mirror",
+    "voxprint",
+    "base_model:ai-forever/sage-fredt5-distilled-95m",
+    "base_model:finetune:ai-forever/sage-fredt5-distilled-95m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 95634816,
+  "parameters_human": "95.6M",
+  "storage_bytes": 382561704,
+  "storage_human": "383 MB",
+  "base_model": "ai-forever/sage-fredt5-distilled-95m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Abbaye Cathédrale de Saint-Papoul",
+      "url": "https://abbaye-saint-papoul.com/",
+      "snippet": "Nichée au cœur du Pays Cathare (entre Carcassonne et Toulouse), l’ abbaye-cathédrale de Saint-Papoul jouit d’une histoire riche, …"
+    },
+    {
+      "title": "L'Abbaye-Cathédrale de Saint Papoul - Mairie de Saint Papoul",
+      "url": "https://www.saint-papoul.fr/labbaye-cathedrale-de-saint-papoul/",
+      "snippet": "Située sur les premiers contreforts de la Montagne Noire, en Lauragais, entre Toulouse et Carcassonne, l’abbaye bénédictine de …"
+    },
+    {
+      "title": "Abbaye de Saint-Papoul — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Abbaye_de_Saint-Papoul",
+      "snippet": "De 1317 jusqu'à la Révolution française, l'abbaye est le siège du diocèse de Saint-Papoul et l' église abbatiale devient cathédrale. …"
+    },
+    {
+      "title": "Les visites - Abbaye Cathédrale Saint-Papoul",
+      "url": "https://abbaye-saint-papoul.com/les-visites/",
+      "snippet": "Visitez cette ancienne abbaye bénédictine, siège de l’ancien évêché de Saint-Papoul du XIVème à la Révolution. Témoin de 1 200 …"
+    },
+    {
+      "title": "Abbaye-Cathédrale de Saint-Papoul - Pass Patrimoine",
+      "url": "https://www.pass-patrimoine.fr/fr/lieux-et-visites/abbaye-cathedrale-de-saint-papoul",
+      "snippet": "À Saint-Papoul, dans l’Aude, l’abbaye-cathédrale révèle les métamorphoses d’un ancien monastère bénédictin, dont l’église devient …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Driw0x/my_awesome_qa_model",
+  "slug": "driw0x-my_awesome_qa_model",
+  "author": "Driw0x",
+  "url": "https://huggingface.co/Driw0x/my_awesome_qa_model",
+  "created_at": "2026-10-03T20:29:11.000Z",
+  "updated_at": "2026-10-03T20:49:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "question-answering",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 530945265,
+  "storage_human": "531 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

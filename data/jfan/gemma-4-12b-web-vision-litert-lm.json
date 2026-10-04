@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jfan/gemma-4-12b-web-vision-litert-lm",
+  "slug": "jfan-gemma-4-12b-web-vision-litert-lm",
+  "author": "jfan",
+  "url": "https://huggingface.co/jfan/gemma-4-12b-web-vision-litert-lm",
+  "created_at": "2026-10-03T22:27:12.000Z",
+  "updated_at": "2026-10-03T22:36:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "webgpu",
+    "gemma",
+    "multimodal",
+    "vision",
+    "audio",
+    "encoder-free",
+    "text-generation",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Candy Choi 徐綺雯 (@candychoiiman) • Instagram photos and videos",
+      "url": "https://www.instagram.com/candychoiiman/",
+      "snippet": "58K Followers, 2,481 Following, 1,375 Posts - Candy Choi 徐綺雯 (@candychoiiman) on Instagram: \"⭐️喜歡遊遊的香港人⭐️ …"
+    },
+    {
+      "title": "Candy Choi 徐綺雯 (@candychoiiman) • Threads, Say more",
+      "url": "https://www.threads.com/@candychoiiman",
+      "snippet": "Aug 20, 2026 · 9,112 followers Follow Mention candychoiiman 08/20/26 🩵𝐁𝐫𝐞𝐚𝐤𝐟𝐚𝐬𝐭 𝐚𝐭 𝐓𝐢𝐟𝐟𝐚𝐧𝐲🩵 Should be dinner at Tiffany😜 Although they agave all day …"
+    },
+    {
+      "title": "Candy Choi 徐綺雯 (@candychoiiman) • Instagram photos and videos",
+      "url": "https://www.instagram.com/candychoiiman/reels/",
+      "snippet": "58K Followers, 2,480 Following, 1,374 Posts - Candy Choi 徐綺雯 (@candychoiiman) on Instagram: \"⭐️喜歡遊遊的香港人⭐️ …"
+    },
+    {
+      "title": "徐綺雯Candy - Facebook",
+      "url": "https://www.facebook.com/candychoiiman/",
+      "snippet": "徐綺雯Candy. 39,160 followers · 1,612 talking about this. Model · TV Host· Socialie⋯⋯廣告包括Canon相機, KFC , IFC, 碧桂園，信 …"
+    },
+    {
+      "title": "Candy Choi - Expat Influencers in Korea | Exprivé",
+      "url": "https://www.exprive.com/@candychoiiman",
+      "snippet": "Former TV host in Macau, Host at HK radio station, models in HK with over 30 commercials. Celebrity in HK and various media | …"
+    }
+  ]
+}

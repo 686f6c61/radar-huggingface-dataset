@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Algorythm-Canada/jevk5-0.2-mlx-8bit",
+  "slug": "algorythm-canada-jevk5-0-2-mlx-8bit",
+  "author": "Algorythm-Canada",
+  "url": "https://huggingface.co/Algorythm-Canada/jevk5-0.2-mlx-8bit",
+  "created_at": "2026-10-03T20:43:25.000Z",
+  "updated_at": "2026-10-03T20:44:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "jevk5",
+    "jev",
+    "system-one",
+    "typed-decisions",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:alibiserikbay/JevK5",
+    "base_model:quantized:alibiserikbay/JevK5",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4489608006,
+  "storage_human": "4.5 GB",
+  "base_model": "alibiserikbay/JevK5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArcGIS中如何将中文经纬度标记转换为英文标记-百度经验",
+      "url": "https://jingyan.baidu.com/article/7908e85cd214f9af481ad235.html",
+      "snippet": "Jul 27, 2018 · ArcGIS中如何将中文经纬度标记转换为英文标记,ArcGIS中如何将中文经纬度标记转换为英文标记？"
+    },
+    {
+      "title": "推特电脑版下载 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a501d80c89e531ad620f5e38.html",
+      "snippet": "Jul 30, 2025 · 推特电脑版下载,Twitter（推特）是美国一家社交网络及微博客私人控股公司，总部位于美国加州旧金山，现任CEO为管 …"
+    },
+    {
+      "title": "推特如何使用并下载 | 今天，给大家讲一讲twitter在国内应该如何注 …",
+      "url": "https://www.zhihu.com/pin/1663283270598086656",
+      "snippet": "推特如何使用并下载 | 今天，给大家讲一讲twitter在国内应该如何注册！在大家还没有来到这个页面之前，我相信，各位可能已经去推 …"
+    },
+    {
+      "title": "Twitter - 知乎",
+      "url": "https://www.zhihu.com/topic/19551184",
+      "snippet": "Twitter（通称推特）是一家美国社交网络及微博客服务的网站，是全球互联网上访问量最大的十个网站之一。是微博客的典型应用。 …"
+    },
+    {
+      "title": "下载最新版推特的步骤如下 | #新人报到 #推特 #小蓝鸟 1. 打开手机应 …",
+      "url": "https://www.zhihu.com/pin/1674927996837249024",
+      "snippet": "下载最新版推特的步骤如下 | #新人报到 #推特 #小蓝鸟 1. 打开手机应用商店（如App Store或Google Play）。2. 在搜索栏中输 …"
+    }
+  ]
+}

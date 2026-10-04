@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tvrpranay/sf-doom_health_gathering_supreme",
+  "slug": "tvrpranay-sf-doom_health_gathering_supreme",
+  "author": "tvrpranay",
+  "url": "https://huggingface.co/tvrpranay/sf-doom_health_gathering_supreme",
+  "created_at": "2026-10-03T20:29:49.000Z",
+  "updated_at": "2026-10-03T20:29:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "doom_health_gathering_supreme",
+    "ppo",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124,
+  "storage_human": "124 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "doom_health_gathering_supreme",
+      "metric": "mean_reward",
+      "value": 18.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "May be an image of one or more people and text - Facebook",
+      "url": "https://www.facebook.com/groups/651919153150786/posts/1415668066775887/",
+      "snippet": "vor 13 Stunden ... BREAKING: Wℎat Kind Of Progress Leaves Nigerians Hungry, Poor And Desperate?"
+    },
+    {
+      "title": "AI-Powered Assistant Overview | PDF - Scribd",
+      "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+      "snippet": "Custom GPT Database - Free download as PDF File (.pdf), Text File (.txt) or read online for free. The document lists various custom GPTs along with their ..."
+    },
+    {
+      "title": "Precisely: Working with Precision Systems in a World of Data ...",
+      "url": "https://dokumen.pub/precisely-working-with-precision-systems-in-a-world-of-data-9780231553704.html",
+      "snippet": "Big data or small, “born digital” tech titans like Facebook, Amazon, Apple, and Netflix make real-time precision look easy—practically automatic. Their AI- ..."
+    },
+    {
+      "title": "The SELBORNIAN 2025 - Selborne College",
+      "url": "https://www.selborne.co.za/wp-content/uploads/2026/06/Selbornian-2025-For-Website-Use.pdf",
+      "snippet": "2006 JUSTICE NORMAL ADDLESON Justice of the Supreme. Court and at the time of the appointment, the youngest person to hold such office in South Africa. MARK ..."
+    },
+    {
+      "title": "(PDF) Digit - Academia.edu",
+      "url": "https://www.academia.edu/42274800/Digit",
+      "snippet": "... gathering dust in your drawer, can mount on your gamepad, and a VR ... AI models. There are numer- and GPU microarchitec- made? Read on. ous such ..."
+    }
+  ]
+}

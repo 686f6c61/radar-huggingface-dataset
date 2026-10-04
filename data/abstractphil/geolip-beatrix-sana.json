@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AbstractPhil/geolip-beatrix-sana",
+  "slug": "abstractphil-geolip-beatrix-sana",
+  "author": "AbstractPhil",
+  "url": "https://huggingface.co/AbstractPhil/geolip-beatrix-sana",
+  "created_at": "2026-10-03T22:57:08.000Z",
+  "updated_at": "2026-10-04T00:06:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "sana",
+  "languages": [],
+  "tags": [
+    "sana",
+    "safetensors",
+    "lora",
+    "diffusers",
+    "text-to-image",
+    "experiments",
+    "arxiv:2410.10629",
+    "arxiv:2311.12092",
+    "arxiv:2308.10248",
+    "arxiv:2404.01154",
+    "arxiv:2301.12247",
+    "arxiv:2210.10960",
+    "arxiv:2208.01626",
+    "arxiv:2401.04608",
+    "arxiv:2103.00020",
+    "base_model:Efficient-Large-Model/Sana_600M_512px_diffusers",
+    "base_model:adapter:Efficient-Large-Model/Sana_600M_512px_diffusers",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1084486124,
+  "storage_human": "1.1 GB",
+  "base_model": "Efficient-Large-Model/Sana_600M_512px_diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "德彪西的月光好在哪? - 知乎",
+      "url": "https://www.zhihu.com/question/424986988",
+      "snippet": "最后，我要通过侧面还原一下德彪西这个作曲家： 德彪西于1894年和 Préludeàl'Après-midid'un Faun 一起奠定了现代音乐的第一个旅 …"
+    },
+    {
+      "title": "对于钢琴业余十级来说，德彪西的月光难吗? - 知乎",
+      "url": "https://www.zhihu.com/question/498694347",
+      "snippet": "Nov 13, 2021 · 如果是按部就班规范学习上来，自然而然达到十级水平的话，不太难。规范包括几个关键点，是否很好的训练了基本功 …"
+    },
+    {
+      "title": "word文档有灰色，但是确定不是底纹，请问如何消除。_百度知道",
+      "url": "https://zhidao.baidu.com/question/547683536.html",
+      "snippet": "May 6, 2013 · 1、首先打开需要修改的Word文档，在文档中可以看到输入的文字内容有灰色的底纹，观察文字的底纹按钮，发现并没 …"
+    },
+    {
+      "title": "上海申康医院管理中心 下属的28家市级医院是哪些啊？",
+      "url": "https://wenwen.sogou.com/question/q714697019.htm",
+      "snippet": "Dec 14, 2016 · null null 不止18家医院，截止2022年4月22日，共有52家医院。 综合医院：瑞金医院、中山医院、长征医院、长海医院 …"
+    },
+    {
+      "title": "德彪西的《月光》是多少级的曲子?",
+      "url": "https://wenwen.sogou.com/question/q826048210.htm",
+      "snippet": "Sep 5, 2013 · 德彪西的《百月光》是8级的曲子。 乐曲由三部分组成。 第一段，降D大调，9／8拍，速度徐缓而富于表情，描绘月夜 …"
+    }
+  ]
+}

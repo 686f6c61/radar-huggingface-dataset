@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tvrpranay/sample-factory-doom-health-gathering",
+  "slug": "tvrpranay-sample-factory-doom-health-gathering",
+  "author": "tvrpranay",
+  "url": "https://huggingface.co/tvrpranay/sample-factory-doom-health-gathering",
+  "created_at": "2026-10-03T20:29:54.000Z",
+  "updated_at": "2026-10-03T20:30:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "doom_health_gathering_supreme",
+    "ppo",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124,
+  "storage_human": "124 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "doom_health_gathering_supreme",
+      "metric": "mean_reward",
+      "value": 18.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "GirlsWay - World's Most Exclusive Lesbian Porn Network",
+      "url": "https://girlsway.net/",
+      "snippet": "The most exclusive mini-series, storylines and sub-genres of lesbian entertainment make Girlsway a truly one and only place that …"
+    },
+    {
+      "title": "Lesbian Porn Videos | Girlsway",
+      "url": "https://www.girlsway.com/en/videos",
+      "snippet": "Sep 14, 2026 · Welcome to the award winning Girlsway, your portal to today’s top lesbian pornstars in story driven lesbian porn and …"
+    },
+    {
+      "title": "GirlsWay - World's Most Exclusive Lesbian Porn Network - Page 2",
+      "url": "https://girlsway.net/page/2/",
+      "snippet": "Sep 7, 2025 · the home to world's best lesbian porn & erotica. Girlsway became a famous place for all lesbian porn lovers thanks to …"
+    },
+    {
+      "title": "girlsway videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/girlsway",
+      "snippet": "GIRLSWAY - Jealous Teen Katya Rodriguez Secretly Wants Her New Stepmom McKenzie Lee All To Herself See all premium …"
+    },
+    {
+      "title": "Girlsway XXX Videos - Pornhub",
+      "url": "https://www.pornhub.com/channels/girlsway",
+      "snippet": "Girlsway is an award-winning lesbian porn studio unlike any other. From extreme squirting to passionate scissoring, watch your …"
+    }
+  ]
+}

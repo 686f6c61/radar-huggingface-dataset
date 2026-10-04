@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42-r64",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-50-seed-42-r64",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42-r64",
+  "created_at": "2026-10-03T21:18:14.000Z",
+  "updated_at": "2026-10-03T21:18:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498149016,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-0.50-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "granite41-3b-squad-ratio-0.90-seed-42: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-alinagonch-granite41-3b-squad-ratio-0-90-seed-42",
+      "snippet": "Model card indexed from Hugging Face. Specs: 3B parameters, sourced from Hugging Face. Compare granite41-3b-squad-ratio-.90-seed-42&#x27;s parameters, context windo"
+    },
+    {
+      "title": "AlinaGonch/granite41-8b-squad-ratio-0.60-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.60-seed-42",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Introducing the IBM Granite 4.1 family of models - IBM Research",
+      "url": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
+      "snippet": "Language models with impressive instruction following and tool calling capabilities At the heart of Granite 4.1 is a new generation of dense, decoder‑only language models, offered in 3B, 8B, and 30B parameter base and instruct model sizes. Across weight classes, the models significantly outperform similarly sized Granite 4.0 language models."
+    }
+  ]
+}

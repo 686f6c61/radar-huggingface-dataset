@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mart-inmar/generation-playground",
+  "slug": "mart-inmar-generation-playground",
+  "author": "mart-inmar",
+  "url": "https://huggingface.co/mart-inmar/generation-playground",
+  "created_at": "2026-10-04T00:15:23.000Z",
+  "updated_at": "2026-10-04T00:15:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shop K-Mart",
+      "url": "https://shop.k-mart.fr/",
+      "snippet": "Vous trouverez pour cela nos informations de contact dans les conditions d'utilisation du site. Bienvenue chez Shop K-Mart !"
+    },
+    {
+      "title": "Damart - Vêtements femme, homme et enfant et linge de maison",
+      "url": "https://magasin.damart.fr/",
+      "snippet": "Les magasins Damart vous proposent des collections de vêtements pour chaque saison. Découvrez notre large collection de …"
+    },
+    {
+      "title": "Les catalogues Carrefour Market de la semaine",
+      "url": "https://www.carrefour.fr/catalogue/carrefour-market?msockid=1d46df0b96fc647935e2c8e39727651d",
+      "snippet": "43 minutes ago · Découvrez les catalogues Carrefour Market et profitez des offres et promotions en cours. Consultez le catalogue de …"
+    },
+    {
+      "title": "Mart - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mart",
+      "snippet": "Look up mart, márt, marț, Mart, Màrt, or Märt in Wiktionary, the free dictionary. If an internal link incorrectly led you here, you may …"
+    },
+    {
+      "title": "Fondation MART",
+      "url": "https://www.mart.ch/",
+      "snippet": "Vous pouvez devenir membre, faire un don, être bénévole lors d’actions nature, parrainer un animal, un sauvetage ou une vidéo sur …"
+    }
+  ]
+}

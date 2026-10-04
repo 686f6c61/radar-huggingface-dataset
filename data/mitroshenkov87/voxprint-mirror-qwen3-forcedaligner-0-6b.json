@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-mirror-qwen3-forcedaligner-0.6b",
+  "slug": "mitroshenkov87-voxprint-mirror-qwen3-forcedaligner-0-6b",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-forcedaligner-0.6b",
+  "created_at": "2026-10-03T18:57:58.000Z",
+  "updated_at": "2026-10-03T18:58:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "mirror",
+    "voxprint",
+    "arxiv:2601.21337",
+    "base_model:Qwen/Qwen3-ForcedAligner-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ForcedAligner-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 917728896,
+  "parameters_human": "917.7M",
+  "storage_bytes": 1835544544,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook.com - Microsoft free personal email",
+      "url": "https://www.outlook.com/",
+      "snippet": "Get more done with partner apps and services Connect to your favorite apps and services, including Facebook, Dropbox, PayPal, …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=fr-FR&rs=US",
+      "snippet": "Access your email and stay connected with Outlook, an efficient platform for managing communications and schedules."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=29b78d1ab31c68f2167c9afdb2ae699e",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Connexion à Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/outlook/log-in?msockid=29b78d1ab31c68f2167c9afdb2ae699e",
+      "snippet": "Connectez-vous à Outlook avec Microsoft 365 pour accéder à vos e-mails, votre calendrier et plus encore. Téléchargez l’application …"
+    }
+  ]
+}

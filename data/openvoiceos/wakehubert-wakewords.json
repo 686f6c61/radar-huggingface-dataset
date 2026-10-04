@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OpenVoiceOS/wakehubert-wakewords",
+  "slug": "openvoiceos-wakehubert-wakewords",
+  "author": "OpenVoiceOS",
+  "url": "https://huggingface.co/OpenVoiceOS/wakehubert-wakewords",
+  "created_at": "2026-10-03T22:35:45.000Z",
+  "updated_at": "2026-10-04T00:03:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "wake-word",
+    "keyword-spotting",
+    "openvoiceos",
+    "wakeforge",
+    "int8",
+    "audio-classification",
+    "en",
+    "dataset:TigreGotico/synthetic-wakeword-jarvis",
+    "dataset:TigreGotico/synthetic-wakeword-alexa",
+    "dataset:TigreGotico/synthetic-wakeword-ok_nabu",
+    "dataset:TigreGotico/synthetic-wakeword-hey_jarvis",
+    "dataset:TigreGotico/synthetic-wakeword-hey_marvin",
+    "dataset:TigreGotico/synthetic-wakeword-home_assistant",
+    "dataset:TigreGotico/synthetic-wakeword-hello_nabu",
+    "dataset:TigreGotico/synthetic-wakeword-computer",
+    "dataset:TigreGotico/synthetic-wakeword-wake_up",
+    "dataset:TigreGotico/not-wake-words-speech-en",
+    "base_model:TigreGotico/wakehubert-tiny",
+    "base_model:quantized:TigreGotico/wakehubert-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24672360,
+  "storage_human": "25 MB",
+  "base_model": "TigreGotico/wakehubert-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IMDb: Ratings, Reviews, and Where to Watch the Best Movies & TV …",
+      "url": "https://www.imdb.com/",
+      "snippet": "IMDb is the world's most popular and authoritative source for movie, TV and celebrity content. Find ratings and reviews for the …"
+    },
+    {
+      "title": "IMDb : notes, critiques et où regarder les meilleurs films et séries TV",
+      "url": "https://www.imdb.com/fr/",
+      "snippet": "IMDb est la source d'informations la plus populaire et la plus fiable au monde pour le cinéma, la télévision et les célébrités. Trouvez …"
+    },
+    {
+      "title": "IMDb Top 250 movies",
+      "url": "https://www.imdb.com/chart/top/",
+      "snippet": "As rated by regular IMDb voters. The top rated movie list only includes feature films. Shorts, TV movies, and documentaries are not …"
+    },
+    {
+      "title": "What to Watch - IMDb",
+      "url": "https://s.media-imdb.com/what-to-watch/watch-guides/",
+      "snippet": "Everything New on HBO Max in June See the list Browse these IMDb collections to find the perfect next movie or TV show to watch …"
+    },
+    {
+      "title": "IMDb - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IMDb",
+      "snippet": "IMDb ... IMDb, formerly known as the Internet Movie Database, is an online database of information related to films, television series, …"
+    }
+  ]
+}

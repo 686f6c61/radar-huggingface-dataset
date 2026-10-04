@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ardana-ai/decider-0.8b-ONNX",
+  "slug": "ardana-ai-decider-0-8b-onnx",
+  "author": "ardana-ai",
+  "url": "https://huggingface.co/ardana-ai/decider-0.8b-ONNX",
+  "created_at": "2026-10-03T23:25:28.000Z",
+  "updated_at": "2026-10-03T23:25:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ardana",
+    "base_model:Mapika/decider-0.8b",
+    "base_model:quantized:Mapika/decider-0.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 467748928,
+  "storage_human": "468 MB",
+  "base_model": "Mapika/decider-0.8b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

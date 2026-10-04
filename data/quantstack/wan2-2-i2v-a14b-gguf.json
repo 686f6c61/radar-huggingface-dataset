@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "QuantStack/Wan2.2-I2V-A14B-GGUF",
+  "slug": "quantstack-wan2-2-i2v-a14b-gguf",
+  "author": "QuantStack",
+  "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF",
+  "created_at": "2025-07-28T14:21:18.000Z",
+  "updated_at": "2025-07-29T13:04:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:quantized:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 425,
+  "downloads_30d": 371875,
+  "trending_score": 10,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 232809581384,
+  "storage_human": "232.8 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuantStack/Wan2.2-I2V-A14B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF",
+      "snippet": "19.12.2025 ... Since this is a quantized model, all original licensing terms and usage restrictions remain in effect. ... Place model files in ComfyUI/models/ ..."
+    },
+    {
+      "title": "README.md · QuantStack/Wan2.2-I2V-A14B-GGUF at main",
+      "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/blob/main/README.md",
+      "snippet": "29.07.2025 ... Since this is a quantized model, all original licensing terms and usage restrictions remain in effect. ... Place model files in ComfyUI/models/ ..."
+    },
+    {
+      "title": "Wan2.2-I2V-A14B-GGUF - Model Details",
+      "url": "https://www.modelscope.cn/models/bullerwins/Wan2.2-I2V-A14B-GGUF",
+      "snippet": "We are excited to introduce Wan2.2, a major upgrade to our foundational video models. With Wan2.2, we have focused on incorporating the following innovations:."
+    },
+    {
+      "title": "Noob Frage: Wan Video 2.2 I2V-A14B : r/StableDiffusion - Reddit",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1oapsh7/noob_question_wan_video_22_i2va14b/?tl=de",
+      "snippet": "19.10.2025 ... ... i2v-Dateien und das VAE von hier. https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/tree/main. Schließlich möchte ich die Dinge ..."
+    },
+    {
+      "title": "README.md · QuantStack/Wan2.2-I2V-A14B-GGUF at ...",
+      "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF/blame/053ca30a156b8156600807a5c4acf57f6d28fdde/README.md",
+      "snippet": "--- license: apache-2.0 base_model: - Wan-AI/Wan2.2-I2V-A14B library_name: gguf pipeline_tag: image-to-video language: - ..."
+    }
+  ]
+}

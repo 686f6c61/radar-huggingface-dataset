@@ -5,7 +5,7 @@
   "author": "IndiaTechTeamSL2",
   "url": "https://huggingface.co/IndiaTechTeamSL2/tictactoe-act-lang",
   "created_at": "2026-10-01T07:53:16.000Z",
-  "updated_at": "2026-10-03T02:04:28.000Z",
+  "updated_at": "2026-10-03T02:52:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -21,12 +21,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 99,
   "trending_score": 0,
   "parameters": 51674294,
   "parameters_human": "51.7M",
-  "storage_bytes": 3100855320,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 3514302696,
+  "storage_human": "3.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

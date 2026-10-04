@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "matijama/perch-v2-pytorch",
+  "slug": "matijama-perch-v2-pytorch",
+  "author": "matijama",
+  "url": "https://huggingface.co/matijama/perch-v2-pytorch",
+  "created_at": "2026-10-03T21:59:05.000Z",
+  "updated_at": "2026-10-03T21:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bioacoustics",
+    "audio",
+    "birds",
+    "wildlife",
+    "embeddings",
+    "perch",
+    "audio-classification",
+    "arxiv:2508.04665",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 101757263,
+  "parameters_human": "101.8M",
+  "storage_bytes": 450282428,
+  "storage_human": "450 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Date to Words Converter — Write Dates in Words",
+      "url": "https://amounttowords.com/date-to-words.html",
+      "snippet": "Jun 27, 2026 · Free date-to-words converter. Write any date in full words for invitations, contracts and legal documents — British, …"
+    },
+    {
+      "title": "Date to Words Converter - Write Dates in English",
+      "url": "https://number-digit.com/date-to-words/",
+      "snippet": "Jun 17, 2026 · Convert a calendar date into clear English words, compare American, British, and formal wording, and copy the result …"
+    },
+    {
+      "title": "Date of Birth October (10) 8<sup>th</sup>, 2026 in Words, in English ...",
+      "url": "https://number-word.calculators.ro/how-to-write-and-say-the-date-in-American-and-British-English.php?month=10&day=8&year=2026",
+      "snippet": "You write and say the date, in words as: \"July (the)* fifteenth, twenty eighteen\" OR \"July (the)* fifteenth, two thousand eighteen\"; * …"
+    },
+    {
+      "title": "Date to Words Converter | Boneyard Tools",
+      "url": "https://boneyardtools.com/date/date-to-words",
+      "snippet": "Sep 12, 2026 · Turn a numeric date into clean written English for letters, contracts, and invitations. Enter the year, month, and day, …"
+    },
+    {
+      "title": "Date to Words Converter for Legal & Bank Checks",
+      "url": "https://number-to-words.net/date-to-words-converter/",
+      "snippet": "Date to words converter that turns any date into written English. Plus date difference calculator for contracts, checks & certificates."
+    }
+  ]
+}

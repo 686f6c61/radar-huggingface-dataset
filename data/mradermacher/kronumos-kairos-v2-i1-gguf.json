@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kronumos-Kairos-v2-i1-GGUF",
+  "slug": "mradermacher-kronumos-kairos-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kronumos-Kairos-v2-i1-GGUF",
+  "created_at": "2026-10-03T22:58:52.000Z",
+  "updated_at": "2026-10-04T01:43:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reinforcement-learning",
+    "unsloth",
+    "qwen2",
+    "swe-bench",
+    "autonomous-agents",
+    "program-repair",
+    "code-generation",
+    "rust-subcortex",
+    "dual-brain",
+    "automated-program-repair",
+    "procedural-seeds",
+    "right-brain",
+    "en",
+    "dataset:princeton-nlp/SWE-bench_Verified",
+    "base_model:Kronumos/Kronumos-Kairos-v2",
+    "base_model:quantized:Kronumos/Kronumos-Kairos-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970490592,
+  "storage_human": "89.0 GB",
+  "base_model": "Kronumos/Kronumos-Kairos-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cheaper robux? : r/robloxhackers - Reddit",
+      "url": "https://www.reddit.com/r/robloxhackers/comments/126u5qg/cheaper_robux/",
+      "snippet": "Mar 30, 2023 · cheapest way is to go to rbxflip.com or adurite.com and find a good limited with rates preferably around or under …"
+    },
+    {
+      "title": "How do I value how much my account is worth? - Reddit",
+      "url": "https://www.reddit.com/r/RobloxTrading/comments/12pnq5x/how_do_i_value_how_much_my_account_is_worth/",
+      "snippet": "Apr 17, 2023 · I recommend that you sell all the value on a third party site such as adurite or rbxflip. Here you can sell 500k for …"
+    },
+    {
+      "title": "DO NOT USE RBXFLIP. : r/roblox - Reddit",
+      "url": "https://www.reddit.com/r/roblox/comments/bd988v/do_not_use_rbxflip/",
+      "snippet": "Apr 14, 2019 · HOWEVER, you can get banned for this pretty easily. Not only are you gonna deal with poisoned limiteds, once roblox …"
+    },
+    {
+      "title": "RBX Wild cleaned my robux : r/robloxhackers - Reddit",
+      "url": "https://www.reddit.com/r/robloxhackers/comments/14go4rm/rbx_wild_cleaned_my_robux/",
+      "snippet": "Jun 23, 2023 · I go back to roblox to see if the 100 is out of my account yet and I now have 0. My robux was completely wiped. I go to …"
+    },
+    {
+      "title": "[ Updated ] Where should I buy cheaper Robux? - Reddit",
+      "url": "https://www.reddit.com/r/robloxhackers/comments/18ng2ry/updated_where_should_i_buy_cheaper_robux/",
+      "snippet": "Conclusion BloxFlip - Buy from there if you have the time to wait for the withdrawals, but it could be highly addictive. Also after …"
+    }
+  ]
+}

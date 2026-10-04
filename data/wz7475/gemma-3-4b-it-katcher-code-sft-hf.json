@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/gemma-3-4b-it-katcher-code-sft-hf",
+  "slug": "wz7475-gemma-3-4b-it-katcher-code-sft-hf",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/gemma-3-4b-it-katcher-code-sft-hf",
+  "created_at": "2026-10-03T21:50:25.000Z",
+  "updated_at": "2026-10-03T21:50:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271875802,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can't access eporner.com : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/193l71/cant_access_epornercom/",
+      "snippet": "Feb 23, 2013 · true Stumped on a tech problem? Ask the community and try to help others with their problems as well. Note: Reddit …"
+    },
+    {
+      "title": "Unable to access favorite porn site, eporner.com, on my home internet ...",
+      "url": "https://www.reddit.com/r/computerhelp/comments/3rqgor/unable_to_access_favorite_porn_site_epornercom_on/",
+      "snippet": "Nov 6, 2015 · This is going to sound ridiculous, but I can't access eporner.com. I have Cox internet and am located in Arizona. I'm …"
+    },
+    {
+      "title": "Issue playing epo*ner videos in Chrome : r/uBlockOrigin - Reddit",
+      "url": "https://www.reddit.com/r/uBlockOrigin/comments/10pbqmn/issue_playing_eponer_videos_in_chrome/",
+      "snippet": "Jan 30, 2023 · I tried the first video in the list in the home page and it played fine. You have custom rules, use the logger to find out if …"
+    },
+    {
+      "title": "How to play VR videos? : r/virtualreality - Reddit",
+      "url": "https://www.reddit.com/r/virtualreality/comments/vi7w5g/how_to_play_vr_videos/",
+      "snippet": "Jun 22, 2022 · Google Cardboard photos have an unusual format where half of the file contains part of the image and the other part …"
+    },
+    {
+      "title": "Unable to download from eporner please help : r/youtubedl - Reddit",
+      "url": "https://www.reddit.com/r/youtubedl/comments/1de3ist/unable_to_download_from_eporner_please_help/",
+      "snippet": "Mar 8, 2010 · I am using proton vpn's free server while downloading from yt-dlp without vpn website does not work even in browser …"
+    }
+  ]
+}

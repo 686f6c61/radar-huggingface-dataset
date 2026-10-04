@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "minas2025/Gemma-4-E2B-Conversational-Uncensored",
+  "slug": "minas2025-gemma-4-e2b-conversational-uncensored",
+  "author": "minas2025",
+  "url": "https://huggingface.co/minas2025/Gemma-4-E2B-Conversational-Uncensored",
+  "created_at": "2026-10-03T22:15:30.000Z",
+  "updated_at": "2026-10-03T22:23:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "conversational",
+    "uncensored",
+    "gemma",
+    "qlora",
+    "lora",
+    "unsloth",
+    "abliterated",
+    "en",
+    "dataset:jondurbin/airoboros-3.2",
+    "base_model:llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
+    "base_model:adapter:llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 5940246912,
+  "storage_human": "5.9 GB",
+  "base_model": "llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "twitch官网怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/950271456576336012.html",
+      "snippet": "Apr 1, 2025 · twitch官网怎么进要进入Twitch官网，可以直接按照以下步骤操作：输入官方网址：在您的网络浏览器地址栏中输入 …"
+    },
+    {
+      "title": "AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本",
+      "url": "https://zhidao.baidu.com/question/306907330.html",
+      "snippet": "Aug 14, 2011 · AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本把那个key文件放在AE的根目录的插件文件夹下 就可以了 …"
+    },
+    {
+      "title": "Twitch的看直播掉宝是怎么算的？ - 知乎",
+      "url": "https://www.zhihu.com/question/387256783",
+      "snippet": "Twitch Channel Points Auto Claimer -Twiclips 有了它您只需要将直播频道静音挂着做其他事，在您达到掉宝条件时这款扩展会自动获 …"
+    },
+    {
+      "title": "国内手机如何下载twitch - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0ee9f652e29155451.html",
+      "snippet": "Jun 3, 2020 · 国内手机下载twitch具体步骤如下： 工具：华为P30手机、应用商店、twitch软件。 1、打开华为手机上面的app store， …"
+    }
+  ]
+}

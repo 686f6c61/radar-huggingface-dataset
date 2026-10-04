@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nehajiya8/esci-gte-reranker",
+  "slug": "nehajiya8-esci-gte-reranker",
+  "author": "nehajiya8",
+  "url": "https://huggingface.co/nehajiya8/esci-gte-reranker",
+  "created_at": "2026-10-03T22:26:52.000Z",
+  "updated_at": "2026-10-03T22:27:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:377350",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "arxiv:1908.10084",
+    "base_model:Alibaba-NLP/gte-reranker-modernbert-base",
+    "base_model:finetune:Alibaba-NLP/gte-reranker-modernbert-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": "Alibaba-NLP/gte-reranker-modernbert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "International technical guidance on sexuality education",
+      "url": "https://www.who.int/publications/m/item/9789231002595",
+      "snippet": "Mar 14, 2018 · Comprehensive sexuality education (CSE) plays a central role in the preparation of young people for a safe, …"
+    },
+    {
+      "title": "Éducation complète à la sexualité",
+      "url": "https://www.who.int/fr/news-room/questions-and-answers/item/comprehensive-sexuality-education",
+      "snippet": "May 18, 2023 · L’éducation à la sexualité enseigne aux enfants et aux jeunes les connaissances, les compétences, les …"
+    },
+    {
+      "title": "Sexualität im Alter - Über Einflussfaktoren und Tipps für mehr Freude ...",
+      "url": "https://www.paradisi.de/sexualitaet/sex-im-alter/",
+      "snippet": "Sexualität im Alter ist ein Thema, dass nur wenig Beachtung findet. Doch auch für ältere Menschen kann Sex sehr wichtig sein. Er …"
+    },
+    {
+      "title": "ᐅ Sex ist gesundheitsfördernd - Wie die Sexualhormone beim Sex ...",
+      "url": "https://www.paradisi.de/laborwerte/geschlechtshormone/sexualhormone-beim-sex/",
+      "snippet": "Sex kann sich positiv auf die Gesundheit auswirken. Verantwortlich für die gesundheitsfördernden Effekte sind Sexualhormone wie …"
+    },
+    {
+      "title": "电影史上无人超越的10部经典高分限制级情色电影，18岁以下不要看哦！",
+      "url": "https://www.zhihu.com/tardis/bd/art/499230796",
+      "snippet": "《可可西里的美丽传说》欧洲限制级情色电影榜首 9 《色，戒》 李安力作，携手梁朝伟与汤唯斩获8大奖项。战争背景下的王佳芝为 …"
+    }
+  ]
+}

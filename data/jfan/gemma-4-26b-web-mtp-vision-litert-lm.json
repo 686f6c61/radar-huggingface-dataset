@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jfan/gemma-4-26b-web-mtp-vision-litert-lm",
+  "slug": "jfan-gemma-4-26b-web-mtp-vision-litert-lm",
+  "author": "jfan",
+  "url": "https://huggingface.co/jfan/gemma-4-26b-web-mtp-vision-litert-lm",
+  "created_at": "2026-10-04T00:21:07.000Z",
+  "updated_at": "2026-10-04T00:33:33.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "gemma4",
+    "webgpu",
+    "multimodal",
+    "vision",
+    "audio",
+    "speculative-decoding",
+    "mtp",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63844567900,
+  "storage_human": "63.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "3 days ago · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …"
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. Live 8,178 FNCS Solos …"
+    },
+    {
+      "title": "Fortnite Power Rankings Asia Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events/powerrankings?platform=Console&region=ASIA",
+      "snippet": "View our Fortnite Power Rankings Leaderboards to see how you compare. Filter players by platform, region or country."
+    },
+    {
+      "title": "Fortnite Events - Asia - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=ASIA",
+      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. In 11 Hrs Asia Arenas Test …"
+    },
+    {
+      "title": "Fortnite Events - Brazil - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=BR",
+      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. Live 18,535 Console Zero …"
+    }
+  ]
+}

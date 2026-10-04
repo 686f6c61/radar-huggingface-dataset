@@ -5,7 +5,7 @@
   "author": "NGDtuanh",
   "url": "https://huggingface.co/NGDtuanh/abook-analyzer",
   "created_at": "2026-09-28T16:15:33.000Z",
-  "updated_at": "2026-09-28T16:17:31.000Z",
+  "updated_at": "2026-10-03T06:08:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "gguf",
+    "onnx",
     "ollama",
     "audiobook",
     "vietnamese",
@@ -29,15 +30,16 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 32,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 4280403328,
-  "storage_human": "4.3 GB",
+  "storage_bytes": 4416948764,
+  "storage_human": "4.4 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
-    "gguf"
+    "gguf",
+    "onnx"
   ],
   "is_conversational": true,
   "gated": false,

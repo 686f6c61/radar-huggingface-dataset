@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "CompiwerAI/Mtrini-Imagine-1.0-7B-GGUF",
+  "slug": "compiwerai-mtrini-imagine-1-0-7b-gguf",
+  "author": "CompiwerAI",
+  "url": "https://huggingface.co/CompiwerAI/Mtrini-Imagine-1.0-7B-GGUF",
+  "created_at": "2026-10-03T21:38:29.000Z",
+  "updated_at": "2026-10-03T21:50:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "image-generation",
+    "text-to-image",
+    "image-generation-model",
+    "hidream",
+    "hidream-o1",
+    "hidream-o1-image",
+    "uit",
+    "mtrini",
+    "compiwer-ai",
+    "bf16",
+    "en",
+    "ar",
+    "base_model:HiDream-ai/HiDream-O1-Image-Dev",
+    "base_model:quantized:HiDream-ai/HiDream-O1-Image-Dev",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8804887792,
+  "parameters_human": "8.80B",
+  "storage_bytes": 17609841152,
+  "storage_human": "17.6 GB",
+  "base_model": "HiDream-ai/HiDream-O1-Image-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

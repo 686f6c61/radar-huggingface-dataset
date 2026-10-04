@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sandroalastor/Realistic-Vision-V6.0",
+  "slug": "sandroalastor-realistic-vision-v6-0",
+  "author": "sandroalastor",
+  "url": "https://huggingface.co/sandroalastor/Realistic-Vision-V6.0",
+  "created_at": "2026-10-03T19:38:31.000Z",
+  "updated_at": "2026-10-03T19:38:31.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "imagepipeline",
+    "imagepipeline.io",
+    "text-to-image",
+    "ultra-realistic",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2740621078,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

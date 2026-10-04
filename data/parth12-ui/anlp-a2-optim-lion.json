@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "parth12-ui/anlp-a2-optim-lion",
+  "slug": "parth12-ui-anlp-a2-optim-lion",
+  "author": "parth12-ui",
+  "url": "https://huggingface.co/parth12-ui/anlp-a2-optim-lion",
+  "created_at": "2026-10-03T23:29:23.000Z",
+  "updated_at": "2026-10-03T23:30:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "optimizer-comparison",
+    "language-modeling",
+    "en",
+    "dataset:browndw/human-ai-parallel-corpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33366528,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133470816,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

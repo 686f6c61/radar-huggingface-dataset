@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "DunkRonit/anlp-a2-part1-moe_top2",
+  "slug": "dunkronit-anlp-a2-part1-moe_top2",
+  "author": "DunkRonit",
+  "url": "https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2",
+  "created_at": "2026-10-04T00:15:52.000Z",
+  "updated_at": "2026-10-04T00:16:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "vi",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mixture-of-experts",
+    "translation",
+    "anlp-assignment",
+    "vi",
+    "ja",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17020800,
+  "parameters_human": "17.0M",
+  "storage_bytes": 68091448,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://fr.youtube.com/",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/accueil",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube, prononcé en français [ju.tyb]Écouterⓘ ou [ju.tjub], est la principale plateforme de vidéos en ligne en Occident, sous forme …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube is an American online video-sharing platform owned by Google. YouTube was founded on February 14, 2005, by Chad …"
+    }
+  ]
+}

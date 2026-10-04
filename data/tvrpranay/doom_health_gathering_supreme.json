@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tvrpranay/doom_health_gathering_supreme",
+  "slug": "tvrpranay-doom_health_gathering_supreme",
+  "author": "tvrpranay",
+  "url": "https://huggingface.co/tvrpranay/doom_health_gathering_supreme",
+  "created_at": "2026-10-03T20:29:44.000Z",
+  "updated_at": "2026-10-03T20:29:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "doom_health_gathering_supreme",
+    "ppo",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124,
+  "storage_human": "124 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "doom_health_gathering_supreme",
+      "metric": "mean_reward",
+      "value": 18.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hack #1: Firecrawl - ElevenHacks",
+      "url": "https://hacks.elevenlabs.io/hackathons/0",
+      "snippet": "ElevenLabs Conversational AI powers the entire voice experience — each figure speaks with a unique AI-generated voice through ElevenAgents, with real- ..."
+    },
+    {
+      "title": "May be an image of one or more people and text - Facebook",
+      "url": "https://www.facebook.com/groups/651919153150786/posts/1415668066775887/",
+      "snippet": "vor 13 Stunden ... BREAKING: Wℎat Kind Of Progress Leaves Nigerians Hungry, Poor And Desperate?"
+    },
+    {
+      "title": "AI-Powered Assistant Overview | PDF - Scribd",
+      "url": "https://www.scribd.com/document/861476870/Custom-GPT-Database",
+      "snippet": "Custom GPT Database - Free download as PDF File (.pdf), Text File (.txt) or read online for free. The document lists various custom GPTs along with their ..."
+    },
+    {
+      "title": "The Unlikeable Woman™️ Summit Summary - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/unlikeable-woman-summit-summary-rowena-ro-hennigan-jn06f",
+      "snippet": "31.05.2025 ... Perhaps that's why when I saw a conference for unlikeable women, I had to get a ticket... Listening to Charlotte was like hearing some of my own ..."
+    },
+    {
+      "title": "Precisely: Working with Precision Systems in a World of Data ...",
+      "url": "https://dokumen.pub/precisely-working-with-precision-systems-in-a-world-of-data-9780231553704.html",
+      "snippet": "... health-care workers, and public health experts. However, it lacked a ... by artificial intelligence (AI) and Teach to One's models, which test, prove ..."
+    }
+  ]
+}

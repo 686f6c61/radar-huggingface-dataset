@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/gemma-3-27b-it-katcher-code-sft-hf",
+  "slug": "wz7475-gemma-3-27b-it-katcher-code-sft-hf",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/gemma-3-27b-it-katcher-code-sft-hf",
+  "created_at": "2026-10-03T22:37:01.000Z",
+  "updated_at": "2026-10-03T22:37:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 941647474,
+  "storage_human": "942 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digimon World Guide - multiworld.gg",
+      "url": "https://multiworld.gg/tutorial/Digimon%20World/setup_en",
+      "snippet": "If you are using the MultiworldGG website to generate, you can create one in the Game Options page. If you are generating locally, …"
+    },
+    {
+      "title": "GitHub - ArsonAssassin/DWAP: Digimon World Archipelago Randomiser",
+      "url": "https://github.com/ArsonAssassin/DWAP",
+      "snippet": "Digimon World Archipelago Randomiser. Contribute to ArsonAssassin/DWAP development by creating an account on GitHub."
+    },
+    {
+      "title": "Archipelago Guide - multiworld.gg",
+      "url": "https://multiworld.gg/tutorial/Archipelago/commands_en",
+      "snippet": "!missing Lists the location checks you are missing from the server's perspective. !checked Lists all the location checks you've done …"
+    },
+    {
+      "title": "Archipelago",
+      "url": "https://archipelago.gg/",
+      "snippet": "This is a cross-game modification system which randomizes different games, then uses the result to build a single unified multi-player …"
+    },
+    {
+      "title": "Digimon World - Archipelago Wiki",
+      "url": "https://archipelago.miraheze.org/wiki/Digimon_World",
+      "snippet": "Sep 4, 2026 · This implementation page is a stub. You can help Archipelago Wiki by expanding it. Digimon World is a custom …"
+    }
+  ]
+}

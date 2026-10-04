@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/visdrone-yolov10m",
+  "slug": "dronefreak-visdrone-yolov10m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/visdrone-yolov10m",
+  "created_at": "2026-10-03T21:25:13.000Z",
+  "updated_at": "2026-10-03T21:30:15.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "visdrone",
+    "detr",
+    "roboflow",
+    "transformer",
+    "dataset:Voxel51/VisDrone2019-DET",
+    "arxiv:1804.07437",
+    "arxiv:2405.14458",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70665147,
+  "storage_human": "71 MB",
+  "base_model": "Ultralytics/YOLOv10",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50 (test split)",
+      "value": 46.73
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "mAP@50-95 (test split)",
+      "value": 27.72
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Precision (test split)",
+      "value": 59.23
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "VisDrone-DET",
+      "metric": "Recall (test split)",
+      "value": 47.35
+    }
+  ],
+  "sources": [
+    {
+      "title": "VisDrone Detection Model Zoo - a dronefreak Collection",
+      "url": "https://huggingface.co/collections/dronefreak/visdrone-detection-model-zoo",
+      "snippet": "A collection of YOLO-based object detection models fine-tuned on the VisDrone benchmark for aerial imagery."
+    },
+    {
+      "title": "VisDrone Object Detection Model Zoo - a dronefreak Collection",
+      "url": "https://huggingface.co/collections/dronefreak/visdrone-object-detection-model-zoo",
+      "snippet": "A collection of YOLO and RF-DETR object detection models fine-tuned on the VisDrone benchmark for object detection in drone imagery."
+    },
+    {
+      "title": "GitHub - Irving-panda/20260812-VisDrone-dataset-python-toolkit ...",
+      "url": "https://github.com/Irving-panda/20260812-VisDrone-dataset-python-toolkit",
+      "snippet": "PyTorch toolkit for the VisDrone aerial detection dataset. Supports 33 models (4 torchvision + 29 YOLO), end-to-end training, evaluation, and inference. Example: YOLO26x predictions on VisDrone video sequences using Soft-NMS (confidence threshold = 0.5)."
+    },
+    {
+      "title": "VisDrone-dataset-python-toolkit/.github/README.md at master ...",
+      "url": "https://github.com/dronefreak/VisDrone-dataset-python-toolkit/blob/master/.github/README.md",
+      "snippet": "VisDrone aerial object detection toolkit with 33 models (Torchvision + YOLO), training, evaluation, video inference, benchmarking, and annotation conversion. - dronefreak/VisDrone-dataset-python-to..."
+    },
+    {
+      "title": "VisDrone Detection Dataset | Ultralytics",
+      "url": "https://docs.ultralytics.com/datasets/detect/visdrone",
+      "snippet": "Train YOLO26 on the VisDrone-DET aerial dataset - 6,471 train, 548 val, and 1,610 test drone images across 10 object classes with automatic download."
+    }
+  ]
+}

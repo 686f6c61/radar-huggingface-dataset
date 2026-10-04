@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
+  "slug": "francesca9805-urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed3407",
+  "created_at": "2026-10-03T21:12:26.000Z",
+  "updated_at": "2026-10-04T00:01:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/ppt-wc-uniform-newlex-urd-before-100mb-packed-bfdiso_seed3407",
+    "base_model:finetune:francesca9805/ppt-wc-uniform-newlex-urd-before-100mb-packed-bfdiso_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 6989247563,
+  "storage_human": "7.0 GB",
+  "base_model": "francesca9805/ppt-wc-uniform-newlex-urd-before-100mb-packed-bfdiso_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate - Een persoonlijke tolk op je telefoon of computer",
+      "url": "https://translate.google.com/intl/nl/about/",
+      "snippet": "Meer informatie over hoe je tekst, spraak, afbeeldingen, documenten, websites en meer kunt vertalen met Google Translate."
+    },
+    {
+      "title": "谷歌翻译 - 手机或计算机上的个人随身口译工具",
+      "url": "https://translate.google.com/intl/zh-CN/about/",
+      "snippet": "谷歌翻译助您了解世界，与不同语言的人士轻松交流。在各种设备上翻译文本、语音内容、图片、文档、网站和其他内容。"
+    },
+    {
+      "title": "Google Translate - तुमच्या फोन किंवा कॉंप्युटरवरील वैयक्तिक दुभाषी",
+      "url": "https://translate.google.com/intl/mr/about/",
+      "snippet": "Google Translate च्या मदतीने मजकूर, स्पीच, इमेज, दस्तऐवज, वेबसाइट आणि आणखी बऱ्याच गोष्टींचे भाषांतर कसे करावे ते जाणून घ्या."
+    }
+  ]
+}

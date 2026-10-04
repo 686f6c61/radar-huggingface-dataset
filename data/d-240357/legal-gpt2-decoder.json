@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "D-240357/legal-gpt2-decoder",
+  "slug": "d-240357-legal-gpt2-decoder",
+  "author": "D-240357",
+  "url": "https://huggingface.co/D-240357/legal-gpt2-decoder",
+  "created_at": "2026-10-02T18:05:31.000Z",
+  "updated_at": "2026-10-04T02:14:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126802842561,
+  "storage_human": "126.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "D (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/D_(lettre)",
+      "snippet": "La lettre D tire probablement son origine de l' alphabet protosinaïtique, du graphème représentant un poisson ou de celui …"
+    },
+    {
+      "title": "D - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/D",
+      "snippet": "D (minuscule: d) is the fourth letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other Western …"
+    },
+    {
+      "title": "D — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/D",
+      "snippet": "La notation D... ou D. est une abréviation du nom de Dieu employée par les juifs les plus religieux, puisque le judaïsme interdit de …"
+    },
+    {
+      "title": "Ensembles de Nombres : Comprendre ℕ, ℤ, D, ℚ, ℝ en Maths",
+      "url": "https://jeretiens.net/ensembles-de-nombres-mathematiques/",
+      "snippet": "Dec 13, 2018 · Découvre les 5 grands ensembles de nombres fondamentaux en mathématiques : ℕ, ℤ, D, ℚ, ℝ. Comprends leurs …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "hia1385/divingIllustriousReal_v70VAE",
+  "slug": "hia1385-divingillustriousreal_v70vae",
+  "author": "hia1385",
+  "url": "https://huggingface.co/hia1385/divingIllustriousReal_v70VAE",
+  "created_at": "2026-10-03T21:25:07.000Z",
+  "updated_at": "2026-10-03T21:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dmd2",
+    "qnn",
+    "npu",
+    "local-dream",
+    "android",
+    "qualcomm",
+    "snapdragon-8-gen-3",
+    "nsfw",
+    "not-for-all-audiences",
+    "image-text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3859554287,
+  "storage_human": "3.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mr-J-369/divingIllustriousReal_v70VAE_qnn2.28_8gen3 · Hugging Face",
+      "url": "https://huggingface.co/Mr-J-369/divingIllustriousReal_v70VAE_qnn2.28_8gen3",
+      "snippet": "Inference ProvidersNEW Text-to-Image This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support Collection including Mr-J-369/divingIllustriousReal_v70VAE_qnn2.28_8gen3 SDXL QNN Collection Run SDXL / Pony / Illustrate models on qualcomm devices (8gen3 and above)•23 items•Updated 17 minutes ago•9"
+    },
+    {
+      "title": "Diving-Illustrious Real-Asian - v7.0+VAE | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.red/models/1562047/diving-illustrious-real-asian",
+      "snippet": "Diving-Illustrious Real-Asian _v7.0+VAE.safetensors Half precision, best balance (pruned) • 6.46 GB"
+    },
+    {
+      "title": "Diving-Illustrious Real-Asian - v5.0 Showcase | Civitai",
+      "url": "https://civitai.com/posts/22327108",
+      "snippet": "A post by DivingSuit. Diving-Illustrious Real-Asian - v5.0 Showcase"
+    },
+    {
+      "title": "Diving-Illustrious Real-Asian - DivingSuit v7.0+VAE | CivArchive",
+      "url": "https://civarchive.com/tensorart/models/947571366037573035/versions/947571366037573035",
+      "snippet": "Download Diving-Illustrious Real-Asian - DivingSuit v7.0+VAE, a CHECKPOINT for Illustrious. 1 file: divingIllustriousReal_v70VAE-20251228.saf… (6.5 GB). Published Sep 21, 2025. 13 live mirrors. v4.0+VAE"
+    },
+    {
+      "title": "divingIllustriousReal_v70VAE.safetensors · nolimitscgsc/Diving ...",
+      "url": "https://huggingface.co/nolimitscgsc/Diving_Illustrious_Real_Asian_V7/blob/main/divingIllustriousReal_v70VAE.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/SmoochumTS",
+  "slug": "ryanham1lton-smoochumts",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/SmoochumTS",
+  "created_at": "2026-10-03T19:11:10.000Z",
+  "updated_at": "2026-10-03T19:12:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117090806,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenArchive — OSINT Platform & Breach Database Search",
+      "url": "https://openarchivex.net/",
+      "snippet": "OpenArchive is a professional OSINT intelligence platform. Search 950B+ breach records across 60+ sources — email breach …"
+    },
+    {
+      "title": "OpenArchive - Safeguarding evidence to advance human rights",
+      "url": "https://www.open-archive.org/",
+      "snippet": "In-app Creative Commons Folders, teams & projects Redundancy OTF & Assured AB’s Independent Security Audit of Save With …"
+    },
+    {
+      "title": "Forum | OpenArchive",
+      "url": "https://openarchivex.net/forum",
+      "snippet": "Aug 11, 2026 · OpenArchive community forum — OSINT discussion, methods, tools and support. Browse threads freely; sign in to …"
+    },
+    {
+      "title": "Search | OpenArchive",
+      "url": "https://www.open-archive.org/search",
+      "snippet": "Search OpenArchive for news, guides, and resources."
+    },
+    {
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies ...",
+      "url": "https://archive.org/",
+      "snippet": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived …"
+    }
+  ]
+}

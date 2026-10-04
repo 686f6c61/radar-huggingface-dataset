@@ -5,7 +5,7 @@
   "author": "TrustLLMeu",
   "url": "https://huggingface.co/TrustLLMeu/trustllm-v2-8b-sft-8k",
   "created_at": "2026-10-02T20:14:14.000Z",
-  "updated_at": "2026-10-02T20:14:29.000Z",
+  "updated_at": "2026-10-03T07:04:15.000Z",
   "license": "research-only",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -51,7 +51,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 7191266752,
   "parameters_human": "7.19B",

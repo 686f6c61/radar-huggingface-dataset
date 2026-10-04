@@ -5,7 +5,7 @@
   "author": "pockettravel",
   "url": "https://huggingface.co/pockettravel/qwen3-4b-instruct-2507-travel-it-GGUF",
   "created_at": "2026-09-27T12:44:59.000Z",
-  "updated_at": "2026-09-28T06:13:35.000Z",
+  "updated_at": "2026-10-03T12:34:01.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 169,
+  "downloads_30d": 172,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 4994560832,
-  "storage_human": "5.0 GB",
+  "storage_bytes": 7491841248,
+  "storage_human": "7.5 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "gguf"

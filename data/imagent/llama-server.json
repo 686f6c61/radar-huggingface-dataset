@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "imagent/llama-server",
+  "slug": "imagent-llama-server",
+  "author": "imagent",
+  "url": "https://huggingface.co/imagent/llama-server",
+  "created_at": "2026-10-03T19:05:31.000Z",
+  "updated_at": "2026-10-03T19:05:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "imagent",
+    "llama.cpp",
+    "gguf",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32127055,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

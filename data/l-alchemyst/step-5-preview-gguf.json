@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "L-Alchemyst/Step-5-Preview-GGUF",
+  "slug": "l-alchemyst-step-5-preview-gguf",
+  "author": "L-Alchemyst",
+  "url": "https://huggingface.co/L-Alchemyst/Step-5-Preview-GGUF",
+  "created_at": "2026-10-02T04:25:26.000Z",
+  "updated_at": "2026-10-04T02:10:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 48,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 317272812768,
+  "storage_human": "317.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Équipe - L'actualité du sport en continu.",
+      "url": "https://www.lequipe.fr/",
+      "snippet": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à …"
+    },
+    {
+      "title": "L (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/L_(lettre)",
+      "snippet": "L (lettre) ... L est la douzième lettre et la 9e consonne de l' alphabet latin. L a en français la valeur phonétique [l]."
+    },
+    {
+      "title": "L - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/L",
+      "snippet": "In English orthography, l usually represents the phoneme / l /, which can have several sound values, depending on the speaker's …"
+    },
+    {
+      "title": "francais alphabet chanson - apprendre la lettre L - apprendre français ...",
+      "url": "https://www.youtube.com/watch?v=3tKqSdb1-uI",
+      "snippet": "May 12, 2015 · - Si vous aimez la vidéo! et dites à vos amis L'alphabet en Français - Comptine A, B, C, D, E, F, G, H, I, J, K, L, M, N, …"
+    },
+    {
+      "title": "L — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/L",
+      "snippet": "Un horizon L fimique est un horizon L épais de plus de 30 cm, devenu très humifère par suite d’épandages répétés de fumiers, lisiers …"
+    }
+  ]
+}

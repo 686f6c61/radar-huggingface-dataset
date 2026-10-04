@@ -5,7 +5,7 @@
   "author": "philomath-1209",
   "url": "https://huggingface.co/philomath-1209/gpt2-reward_model_hh-rlhf",
   "created_at": "2026-09-30T18:39:00.000Z",
-  "updated_at": "2026-10-01T06:03:09.000Z",
+  "updated_at": "2026-10-03T08:23:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 124440577,
   "parameters_human": "124.4M",
-  "storage_bytes": 497777012,
-  "storage_human": "498 MB",
+  "storage_bytes": 995554024,
+  "storage_human": "996 MB",
   "base_model": null,
   "formats": [
     "safetensors"

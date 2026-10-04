@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Dyam/sysone-laya-typed-decisions-onnx",
+  "slug": "dyam-sysone-laya-typed-decisions-onnx",
+  "author": "Dyam",
+  "url": "https://huggingface.co/Dyam/sysone-laya-typed-decisions-onnx",
+  "created_at": "2026-10-03T20:35:57.000Z",
+  "updated_at": "2026-10-03T20:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "laya",
+    "typed-decisions",
+    "text-classification",
+    "modernbert",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:quantized:convaiinnovations/laya-typed-decisions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1688477914,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Giải thích về Laya: Một mô hình quyết định không tốn token đầu ra",
+      "url": "https://www.orcarouter.ai/vi/blog/laya-decision-model-explained",
+      "snippet": "23.09.2026 ... convaiinnovations/laya-typed-decisions — ModernBERT-large, 421 triệu ... A screenshot of the Laya model card on Hugging Face, showing the three ..."
+    },
+    {
+      "title": "Process Control Fundamentals; Analysis, Design, Assessment, and ...",
+      "url": "https://elmoukrie.com/wp-content/uploads/2022/06/process-control-fundamentals-analysis-design-assessment-and-diagnosis-etc.-z-lib.org_.pdf",
+      "snippet": "The MathWorks does not warrant the accuracy of the text or exercises in this book. This book's use or discussion of MATLAB® software or related products does ..."
+    }
+  ]
+}

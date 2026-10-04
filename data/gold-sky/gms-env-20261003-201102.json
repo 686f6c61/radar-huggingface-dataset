@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gold-sky/gms-env-20261003-201102",
+  "slug": "gold-sky-gms-env-20261003-201102",
+  "author": "gold-sky",
+  "url": "https://huggingface.co/gold-sky/gms-env-20261003-201102",
+  "created_at": "2026-10-03T21:26:04.000Z",
+  "updated_at": "2026-10-03T21:26:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/unsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold.fr - Achat Or et Argent & Vente d'Or - Rachat d'Or - Cours et Prix ...",
+      "url": "https://www.gold.fr/",
+      "snippet": "1 day ago · 50 ans d’activité dans les métaux précieux, plus de 15 ans d’expérience sur internet et une communauté de plusieurs …"
+    },
+    {
+      "title": "Cours de l’Or (Euro & Dollars) - Prix de l’Or en temps réel - Gold.fr",
+      "url": "https://www.gold.fr/cours-or-prix-de-l-or/",
+      "snippet": "Cours de l'Or en direct (Euro et Dollars). Prix de l'Or en temps réel. Suivez la Cotation et le cours de l'Or en Euros et Dollars. …"
+    },
+    {
+      "title": "XAUUSD Chart — Gold Spot Price Today — TradingView",
+      "url": "https://www.tradingview.com/symbols/XAUUSD/",
+      "snippet": "Follow live gold price chart to track XAUUSD value. Explore gold price history, market news, technical analysis, trading ideas, and …"
+    },
+    {
+      "title": "Gold (groupe) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Gold_%28groupe%29",
+      "snippet": "Gold est un groupe français de pop rock, originaire du Tarn, qui connaît un succès national dans les années 1980. Le groupe est …"
+    },
+    {
+      "title": "Cours de l'Or | Prix de l'Or aujourd'hui en direct - Investing.com",
+      "url": "https://fr.investing.com/commodities/gold",
+      "snippet": "Plus d'informations peuvent être trouvées dans les autres sections, comme les graphiques historiques des prix de l'Or, la valeur de …"
+    }
+  ]
+}

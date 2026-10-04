@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Index-Nailong-2B-GGUF",
+  "slug": "mradermacher-index-nailong-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Index-Nailong-2B-GGUF",
+  "created_at": "2026-10-03T21:30:06.000Z",
+  "updated_at": "2026-10-03T21:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "long-context",
+    "index",
+    "en",
+    "base_model:IndexTeam/Index-Nailong-2B",
+    "base_model:quantized:IndexTeam/Index-Nailong-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 19103023488,
+  "storage_human": "19.1 GB",
+  "base_model": "IndexTeam/Index-Nailong-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/NeuronAI-2B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/NeuronAI-2B-GGUF",
+      "snippet": "mradermacher / NeuronAI-2B-GGUF like 0 Translation Transformers GGUF 5 datasets Uzbek English qwen3.5 uzbek conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Index Nailong 2b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/indexteam/index-nailong-2b",
+      "snippet": "Registry entry for model Index Nailong 2b; source metadata pending."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 30 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

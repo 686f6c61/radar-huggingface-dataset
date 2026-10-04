@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/hin-deva-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
   "created_at": "2026-10-02T02:27:19.000Z",
-  "updated_at": "2026-10-02T02:59:22.000Z",
+  "updated_at": "2026-10-03T23:56:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 227,
+  "downloads_30d": 401,
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 1998077480,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 10732962832,
+  "storage_human": "10.7 GB",
   "base_model": "francesca9805/hin-deva-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407",
   "formats": [
     "safetensors"

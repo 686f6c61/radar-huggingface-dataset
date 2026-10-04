@@ -5,7 +5,7 @@
   "author": "HoonheeCho",
   "url": "https://huggingface.co/HoonheeCho/act-ckpt-1003",
   "created_at": "2026-10-03T13:13:23.000Z",
-  "updated_at": "2026-10-03T13:13:48.000Z",
+  "updated_at": "2026-10-03T17:05:58.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 412868864,
-  "storage_human": "413 MB",
+  "storage_bytes": 825737728,
+  "storage_human": "826 MB",
   "base_model": null,
   "formats": [
     "safetensors"

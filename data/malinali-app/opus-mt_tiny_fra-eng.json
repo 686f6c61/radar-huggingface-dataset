@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "malinali-app/opus-mt_tiny_fra-eng",
+  "slug": "malinali-app-opus-mt_tiny_fra-eng",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/opus-mt_tiny_fra-eng",
+  "created_at": "2026-10-03T20:32:19.000Z",
+  "updated_at": "2026-10-03T20:33:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "fra",
+    "eng"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "opus-mt",
+    "malinali",
+    "fra",
+    "eng",
+    "base_model:Helsinki-NLP/opus-mt_tiny_fra-eng",
+    "base_model:finetune:Helsinki-NLP/opus-mt_tiny_fra-eng",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25363201,
+  "parameters_human": "25.4M",
+  "storage_bytes": 50743442,
+  "storage_human": "51 MB",
+  "base_model": "Helsinki-NLP/opus-mt_tiny_fra-eng",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn Actualités",
+      "url": "https://fr.linkedin.com/showcase/linkedin-actualites/",
+      "snippet": "LinkedIn Actualités | 3 136 646 abonnés sur LinkedIn. Les conversations sur l&#39;économie démarrent ici. | LinkedIn Actualités …"
+    },
+    {
+      "title": "如何有效利用 LinkedIn？ - 知乎",
+      "url": "https://www.zhihu.com/question/21308578",
+      "snippet": "Linkedin已经发布中文版了，答主太忙还没更新回答。下面暂时只讨论Linkedin英文版的使用技巧。如果你想持续获得更多的Linkedin …"
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "Plus de 8 000 offres d’emploi Data Analyst - France - LinkedIn",
+      "url": "https://fr.linkedin.com/jobs/data-analyst-emplois",
+      "snippet": "8 000 meilleures offres d’emploi Data Analyst du jour ou plus (France). Utilisez votre réseau professionnel pour changer de travail ! …"
+    }
+  ]
+}

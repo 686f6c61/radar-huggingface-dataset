@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Krakowiak-7B-v2-GGUF",
   "created_at": "2026-10-03T00:18:54.000Z",
-  "updated_at": "2026-10-03T00:45:23.000Z",
+  "updated_at": "2026-10-03T20:49:10.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 81,
   "trending_score": 0,
   "parameters": 7241732096,
   "parameters_human": "7.24B",

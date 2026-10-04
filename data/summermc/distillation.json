@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "summerMC/Distillation",
+  "slug": "summermc-distillation",
+  "author": "summerMC",
+  "url": "https://huggingface.co/summerMC/Distillation",
+  "created_at": "2026-10-03T21:34:18.000Z",
+  "updated_at": "2026-10-03T21:35:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "experimental",
+    "pruning",
+    "knowledge-distillation",
+    "gated-deltanet",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 439323904,
+  "parameters_human": "439.3M",
+  "storage_bytes": 898662805,
+  "storage_human": "899 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B, ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-04T02:06:31.296Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Kids",
+      "url": "https://www.youtubekids.com/",
+      "snippet": "YouTube Kids provides a more contained environment for kids to explore YouTube and makes it easier for parents and caregivers to …"
+    }
+  ]
+}

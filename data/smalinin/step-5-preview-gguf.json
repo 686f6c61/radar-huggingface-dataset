@@ -5,7 +5,7 @@
   "author": "smalinin",
   "url": "https://huggingface.co/smalinin/Step-5-Preview-GGUF",
   "created_at": "2026-10-02T15:19:34.000Z",
-  "updated_at": "2026-10-02T23:47:32.000Z",
+  "updated_at": "2026-10-03T13:00:50.000Z",
   "license": "stepfun-community-license",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -37,11 +37,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 600991912608,
   "parameters_human": "600.99B",
-  "storage_bytes": 291254243564,
+  "storage_bytes": 291255198558,
   "storage_human": "291.3 GB",
   "base_model": "TypeSafeAI/Step-5-Preview-BF16",
   "formats": [

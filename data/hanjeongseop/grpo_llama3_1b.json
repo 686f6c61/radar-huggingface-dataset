@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HanJeongSeop/GRPO_Llama3_1B",
+  "slug": "hanjeongseop-grpo_llama3_1b",
+  "author": "HanJeongSeop",
+  "url": "https://huggingface.co/HanJeongSeop/GRPO_Llama3_1B",
+  "created_at": "2026-10-03T21:09:22.000Z",
+  "updated_at": "2026-10-03T21:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WaifuMiia OnlyFans Leaks | 75 Videos | PimpBunny",
+      "url": "https://pimpbunny.com/onlyfans-creators/waifumiia-exclusive-leaks/",
+      "snippet": "PimpBunny has the biggest collection of WaifuMiia OnlyFans leaks on the net, with 75 exclusive videos. Check us out and enjoy!"
+    },
+    {
+      "title": "waifumiia leaked Archives - Internet Chicks",
+      "url": "https://internetchicks.com/tag/waifumiia-leaked/",
+      "snippet": "Jun 26, 2026 · Onlyfans Waifumiia Waifumiia Nerdy Girl Sex Tape Video Leaked June 20, 2024"
+    },
+    {
+      "title": "Waifumiia OnlyFans Leaks on HDthot",
+      "url": "https://hdthot.com/models/waifumiia",
+      "snippet": "Browse free leaked nude of Waifumiia creator. Stay updated with only the most relevant leaks."
+    },
+    {
+      "title": "TikTok - Waifumiia - Leak Gallery",
+      "url": "https://leakgallery.com/tiktok/waifumiia/most-recent",
+      "snippet": "TikTok / Waifumiia Find the best free OnlyFans leaks on our TikTok page! Exclusive content from your favorite creators updated …"
+    },
+    {
+      "title": "Bop House Porn And Nude Videos - CUMS",
+      "url": "https://cums.net/model/bop-house-20inuj/",
+      "snippet": "Our library features the best Bop House nude scenes, premium content, and exclusive footage available online. We are constantly …"
+    }
+  ]
+}

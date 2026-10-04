@@ -5,7 +5,7 @@
   "author": "Rajeshwari-Chanda",
   "url": "https://huggingface.co/Rajeshwari-Chanda/bloom-560m_magnitude_0.5",
   "created_at": "2026-10-03T16:57:08.000Z",
-  "updated_at": "2026-10-03T16:57:43.000Z",
+  "updated_at": "2026-10-03T17:21:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 559214592,
   "parameters_human": "559.2M",
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 2258689021,
+  "storage_human": "2.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

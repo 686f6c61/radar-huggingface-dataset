@@ -21,8 +21,8 @@
     "base_model:facebook/nllb-200-distilled-1.3B",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 0,
+  "likes": 1,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

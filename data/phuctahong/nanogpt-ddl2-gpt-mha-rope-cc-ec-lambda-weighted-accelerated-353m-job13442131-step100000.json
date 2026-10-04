@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000",
+  "slug": "phuctahong-nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000",
+  "author": "phuctahong",
+  "url": "https://huggingface.co/phuctahong/nanogpt-ddl2-gpt-mha-rope-cc-ec-lambda-weighted-accelerated-353m-job13442131-step100000",
+  "created_at": "2026-10-03T23:11:30.000Z",
+  "updated_at": "2026-10-03T23:11:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanogptpro",
+    "nanogpt",
+    "fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 353922628,
+  "parameters_human": "353.9M",
+  "storage_bytes": 1415760560,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disjoncteur différentiel 32A - 30mA ou 300mA",
+      "url": "https://www.lelectricien.net/1326-disjoncteur-differentiel-32a",
+      "snippet": "Le disjoncteur différentiel 32A est conçu pour protéger les circuits électriques dédiés à des appareils de puissance élevée, tels que …"
+    },
+    {
+      "title": "Disjoncteur differentiel 32 a type a - Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/electricite-domotique/tableau-electrique-et-disjoncteur/disjoncteur-coupe-circuit-et-interrupteur-differentiel/disjoncteur-coupe-circuit-et-bloc-para-foudre/disjoncteur-differentiel-32-a-type-a-p.html?msockid=01bd5c18823a60dd0c6d4bf08342615c",
+      "snippet": "Disjoncteur differentiel 32 a type a : la sélection produits Leroy Merlin de ce samedi au meilleur prix ! Retrouvez ci-après nos 26 …"
+    },
+    {
+      "title": "Disjoncteur differentiel 32 a au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/electricite-domotique/tableau-electrique-et-disjoncteur/disjoncteur-coupe-circuit-et-interrupteur-differentiel/disjoncteur-coupe-circuit-et-bloc-para-foudre/disjoncteur-differentiel-32-a-p.html?msockid=01bd5c18823a60dd0c6d4bf08342615c",
+      "snippet": "disjoncteur differentiel 32 a - Marques, Stock & Livraison rapide chez Leroy Merlin. Un grand choix de produits aux meilleurs prix."
+    },
+    {
+      "title": "Disjoncteur Differentiel 32A - 30mA - Cash Electrique",
+      "url": "https://www.cash-electrique.fr/disjoncteurs-differentiels/757-disjoncteur-differentiel-32a-30ma.html",
+      "snippet": "Le Disjoncteur Différentiel DPN 32A 30mA Type AC de Digital Electric est l'équipement de sécurité électrique idéal pour vos circuits …"
+    },
+    {
+      "title": "Disjoncteur différentiel 32a - ManoMano",
+      "url": "https://www.manomano.fr/cat/disjoncteur+diff%C3%A9rentiel+32a?msockid=01bd5c18823a60dd0c6d4bf08342615c",
+      "snippet": "EN STOCK : Disjoncteur différentiel 32a pas cher. Grand choix, promos permanentes et livraison rapide partout en France. …"
+    }
+  ]
+}

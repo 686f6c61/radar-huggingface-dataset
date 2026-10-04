@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DunkRonit/anlp-a2-part2-adamw",
+  "slug": "dunkronit-anlp-a2-part2-adamw",
+  "author": "DunkRonit",
+  "url": "https://huggingface.co/DunkRonit/anlp-a2-part2-adamw",
+  "created_at": "2026-10-04T00:21:49.000Z",
+  "updated_at": "2026-10-04T00:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "optimizers",
+    "pretraining",
+    "anlp-assignment",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17011584,
+  "parameters_human": "17.0M",
+  "storage_bytes": 68050088,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EasySBC",
+      "url": "https://www.easysbc.io/",
+      "snippet": "EA FC 27 SBC Solutions, AI Squad Builder, Evolutions & Meta Ratings – EasySBC EasySBC.io - Explore Meta Ratings for EA …"
+    },
+    {
+      "title": "EA FC 27 Squad Builder - easysbc.io",
+      "url": "https://www.easysbc.io/squad-builder",
+      "snippet": "World's only AI EA FC 27 Squad Builder. Build the most meta squads with high chemistry around your favorite players."
+    },
+    {
+      "title": "EA SPORTS FC 27 SBC - All Squad Building Challenges - FUT.GG",
+      "url": "https://www.fut.gg/sbc/",
+      "snippet": "Browse through the latest Squad Building Challenges in EA SPORTS FC 27, and use our AI generated solutions to quickly solve the …"
+    },
+    {
+      "title": "EA FC 27 Players and Meta Ratings Database - easysbc.io",
+      "url": "https://www.easysbc.io/players",
+      "snippet": "Explore our EA FC 27 Players Database with exclusive Meta Ratings for over 21,000 cards. Find the best players for your squad."
+    },
+    {
+      "title": "EA FC 27 Best Tactics and Codes - easysbc.io",
+      "url": "https://www.easysbc.io/tactics",
+      "snippet": "See the best meta EA FC 27 tactics in our FC Tactics Hub. Use a tactic created by our pros or import your own using the EA Code of …"
+    }
+  ]
+}

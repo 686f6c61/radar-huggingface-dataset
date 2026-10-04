@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i223-r223",
+  "slug": "qxyz-sn56-i223-r223",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i223-r223",
+  "created_at": "2026-10-03T21:15:39.000Z",
+  "updated_at": "2026-10-03T21:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/workspace/models/Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454897,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cine se aseamănă se adună - definiție - Dexonline",
+      "url": "https://dexonline.ro/text/Cine%20se%20aseam%C4%83n%C4%83%20se%20adun%C4%83",
+      "snippet": "... R. 223. Prefecții, primarii, perceptorii, Jandarmii, toată clica de vătafi ai clasei exploatatoare, aveau mîna liberă să jefuiască și să schingiuiască pe ..."
+    },
+    {
+      "title": "o lua la sănătoasa - definiție - Dexonline",
+      "url": "https://dexonline.ro/text/o%20lua%20la%20s%C4%83n%C4%83toasa",
+      "snippet": "A o pașli = a fugi, a o șterge, a o lua la sănătoasa. Ba că chiar că erai să ne dăruiești cu milă și cu daruri împărătești, dacă nu te vedeam cînd ai pașlit-o, ..."
+    },
+    {
+      "title": "trăi pe picior mare - definiție - Dexonline",
+      "url": "https://dexonline.ro/text/tr%C4%83i%20pe%20picior%20mare",
+      "snippet": "... R. 223. Prefecții, primarii, perceptorii, Jandarmii, toată clica de vătafi ai clasei exploatatoare, aveau mîna liberă să jefuiască și să schingiuiască pe ..."
+    },
+    {
+      "title": "face o baie de mulțime - definiție - Dexonline",
+      "url": "https://dexonline.ro/text/face%20o%20baie%20de%20mul%C8%9Bime",
+      "snippet": "... R. 223. Prefecții, primarii, perceptorii, Jandarmii, toată clica de vătafi ai clasei exploatatoare, aveau mîna liberă să jefuiască și să schingiuiască pe ..."
+    },
+    {
+      "title": "pepene galben - definiție - Dexonline",
+      "url": "https://dexonline.ro/text/pepene%20galben",
+      "snippet": "... R. 223. Prefecții, primarii, perceptorii, Jandarmii, toată clica de vătafi ai clasei exploatatoare, aveau mîna liberă să jefuiască și să schingiuiască pe ..."
+    }
+  ]
+}

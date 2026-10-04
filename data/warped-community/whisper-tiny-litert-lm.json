@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "warped-community/whisper-tiny-litert-lm",
+  "slug": "warped-community-whisper-tiny-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/whisper-tiny-litert-lm",
+  "created_at": "2026-10-03T18:56:46.000Z",
+  "updated_at": "2026-10-03T18:59:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "tflite",
+    "warped",
+    "base_model:openai/whisper-tiny",
+    "base_model:finetune:openai/whisper-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41116288,
+  "storage_human": "41 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community (LiteRT Community (FKA TFLite)) - Hugging Face",
+      "url": "https://huggingface.co/litert-community/models",
+      "snippet": "AI & ML interests ... Recent Activity ... Team members 2,693 litert-community &#x27;s models 351 Sort: Recently updated"
+    },
+    {
+      "title": "whisper-tiny huggingface.co api & litert-community whisper-tiny github ...",
+      "url": "https://www.toolify.ai/ai-model/litert-community-whisper-tiny",
+      "snippet": "whisper-tiny huggingface.co whisper-tiny huggingface.co is an AI model on huggingface.co that provides whisper-tiny&#x27;s model effect (), which can be used instantly with this litert-community whisper-tiny model. huggingface.co supports a free trial of the whisper-tiny model, and also provides paid use of the whisper-tiny. Support call whisper-tiny model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak ...",
+      "url": "https://github.com/openai/whisper",
+      "snippet": "Whisper [Blog] [Paper] [Model card] [Colab example] Whisper is a general-purpose speech recognition model. It is trained on a large dataset of diverse audio and is also a multitasking model that can perform multilingual speech recognition, speech translation, and language identification."
+    },
+    {
+      "title": "Warped — AI Chat on Android, Offline and Private",
+      "url": "https://cotizcesar.github.io/warped-website/",
+      "snippet": "Chat with AI models locally on your Android device using LiteRT-LM and llama.cpp, or connect to OpenAI, Anthropic, Ollama, and LM Studio. Download models from Hugging Face. Offline, private, no cloud required."
+    }
+  ]
+}

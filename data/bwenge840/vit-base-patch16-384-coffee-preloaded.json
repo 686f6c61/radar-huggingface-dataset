@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Bwenge840/vit-base-patch16-384-coffee-preloaded",
+  "slug": "bwenge840-vit-base-patch16-384-coffee-preloaded",
+  "author": "Bwenge840",
+  "url": "https://huggingface.co/Bwenge840/vit-base-patch16-384-coffee-preloaded",
+  "created_at": "2026-10-03T21:32:02.000Z",
+  "updated_at": "2026-10-03T23:05:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "onnx",
+    "vision-transformer",
+    "pytorch",
+    "coffee",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1385095693,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Як завантажувати відео на YouTube",
+      "url": "https://support.google.com/youtube/answer/57407?hl=uk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Як завантажити відео через YouTube Студію Увійдіть у YouTube Студію. Угорі праворуч натисніть СТВОРИТИ Завантажити …"
+    },
+    {
+      "title": "Как скрыть или удалить канал YouTube",
+      "url": "https://support.google.com/youtube/answer/55759?hl=ru",
+      "snippet": "Выполните следующие действия: Войдите в Творческую студию YouTube. В меню слева выберите Настройки . Нажмите …"
+    },
+    {
+      "title": "Сегодня не работает Ютуб - Woman.ru",
+      "url": "https://www.woman.ru/rest/freetime/thread-segodnya-ne-rabotaet-yutub-id6429366/",
+      "snippet": "May 28, 2026 · 69 ответов - А у вас? Сегодня не работает Ютуб, хотя на днях работал со всеми моими впн. (6429366) - …"
+    },
+    {
+      "title": "Не работает ютуб - 74 ответа на форуме Woman.ru (6360783)",
+      "url": "https://www.woman.ru/rest/freetime/thread-ne-rabotaet-yutub-id6360783/",
+      "snippet": "Dec 23, 2025 · 74 ответа - когда включаю ютуб, пишут нет доступа к интернету или не удалось соединиться с сайтом а к …"
+    },
+    {
+      "title": "Вязание Детской Одежды Крючком (Схемы) Форум — Passionforum",
+      "url": "https://www.passionforum.ru/posts/vjazanie-kryuchkom/detskaja-odezhda-kryuchkom-shemy",
+      "snippet": "Sep 4, 2026 · Детская одежда крючком — Схемы. Passionforum — Форум по обсуждению моделей, схем и журналов по …"
+    }
+  ]
+}

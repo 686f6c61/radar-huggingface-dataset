@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "prajwal02431/claude",
+  "slug": "prajwal02431-claude",
+  "author": "prajwal02431",
+  "url": "https://huggingface.co/prajwal02431/claude",
+  "created_at": "2026-10-03T19:54:37.000Z",
+  "updated_at": "2026-10-03T19:54:37.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "ifmain",
   "url": "https://huggingface.co/ifmain/datapoisoning-detector-v1-medium",
   "created_at": "2026-10-02T18:02:44.000Z",
-  "updated_at": "2026-10-03T02:02:10.000Z",
+  "updated_at": "2026-10-03T03:35:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -25,7 +25,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 731787013,
+  "storage_bytes": 731933968,
   "storage_human": "732 MB",
   "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
   "formats": [

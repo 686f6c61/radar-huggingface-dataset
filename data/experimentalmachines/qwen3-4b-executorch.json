@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/Qwen3-4B-ExecuTorch",
+  "slug": "experimentalmachines-qwen3-4b-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/Qwen3-4B-ExecuTorch",
+  "created_at": "2026-09-13T09:42:10.000Z",
+  "updated_at": "2026-10-04T00:34:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "mtk",
+    "on-device",
+    "openweights",
+    "vulkan",
+    "xnnpack",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55337267390,
+  "storage_human": "55.3 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "哔哩哔哩 (゜-゜)つロ 干杯~-bilibili",
+      "url": "https://www.bilibili.com/",
+      "snippet": "哔哩哔哩（bilibili.com)是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到 …"
+    },
+    {
+      "title": "Experimental Machines",
+      "url": "https://experimentalmachines.org/",
+      "snippet": "Benchmarks of AI accelerators at datacenter, laptop and phone scale, with published logs ... One Qwen3.5-2B tool-calling model as a BF16 GGUF and 9 llama ..."
+    },
+    {
+      "title": "Bilibili - BW2026，次元新航线！",
+      "url": "https://bw.bilibili.com/",
+      "snippet": "次元集结，狂欢开启！ 神小牛我呀，要去BW和大家面基啦～ 📍 上海国家会展中心 8.1H馆 8A01 🗓️ 7 月 10 日 - 7 月 12 日 现场有什么好 …"
+    },
+    {
+      "title": "飞天闪客的个人空间-飞天闪客个人主页-哔哩哔哩视频",
+      "url": "https://space.bilibili.com/325864133",
+      "snippet": "哔哩哔哩飞天闪客的个人空间，提供飞天闪客分享的视频、音频、文章、动态、收藏等内容，关注飞天闪客账号，第一时间了解UP主 …"
+    },
+    {
+      "title": "搜索 - 哔哩哔哩_bilibili",
+      "url": "https://search.bilibili.com/video",
+      "snippet": "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。"
+    }
+  ]
+}

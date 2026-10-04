@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ardana-ai/decider-2b-ONNX",
+  "slug": "ardana-ai-decider-2b-onnx",
+  "author": "ardana-ai",
+  "url": "https://huggingface.co/ardana-ai/decider-2b-ONNX",
+  "created_at": "2026-10-03T23:26:10.000Z",
+  "updated_at": "2026-10-03T23:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ardana",
+    "base_model:Mapika/decider-2b",
+    "base_model:quantized:Mapika/decider-2b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1121602009,
+  "storage_human": "1.1 GB",
+  "base_model": "Mapika/decider-2b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How are waves used in a cassette tape? | Audio Recording …",
+      "url": "https://hub.sivo.it.com/audio-recording-technology/how-are-waves-used-in-a-cassette-tape/",
+      "snippet": "May 14, 2025 · In a cassette tape, waves – specifically sound waves – are utilized during the recording process. The key function, as …"
+    },
+    {
+      "title": "Free Cassette Sound Effects Download - Pixabay",
+      "url": "https://pixabay.com/sound-effects/search/cassette/",
+      "snippet": "128 royalty-free cassette sound effects Download cassette royalty-free sound effects to use in your next project."
+    },
+    {
+      "title": "Available CRAN Packages by Name - R Project",
+      "url": "https://cran.r-project.org/web/packages/available_packages_by_name.html",
+      "snippet": "Unified Interface for AI Model Providers. aisdk.providers, Additional Model ... 'ONNX Runtime' Integration. chyper, Functions for Conditional ..."
+    },
+    {
+      "title": "Why Cassette Tape Sounds \"Warm\" — Science & History Explained ...",
+      "url": "https://retroaudioworld.com/article-tape",
+      "snippet": "Why does tape sound warmer than digital? We explain tape saturation, wow & flutter, harmonic distortion, and the full history of the …"
+    },
+    {
+      "title": "cchecksbadges/names.json at main - GitHub",
+      "url": "https://github.com/r-hub/cchecksbadges/blob/main/names.json",
+      "snippet": "... ai\":\"agena.ai\",\"ageutils\":\"ageutils\",\"agfh\":\"agfh\",\"agghoo\":\"agghoo ... onnx\":\"onnx\",\"onpoint\":\"onpoint\",\"onsr\":\"onsr\",\"onsvplot\":\"onsvplot\",\"ontoFAST ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Project-Prism/Orion-Flagship-Nano-T2.1",
+  "slug": "project-prism-orion-flagship-nano-t2-1",
+  "author": "Project-Prism",
+  "url": "https://huggingface.co/Project-Prism/Orion-Flagship-Nano-T2.1",
+  "created_at": "2026-09-29T00:17:32.000Z",
+  "updated_at": "2026-10-04T02:13:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58555584784,
+  "storage_human": "58.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestion de projet conçue pour suivre tous les aspects de votre travail",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/project/project-management?msockid=0ac9aa62f56f65b73d7bbd8af46264e1",
+      "snippet": "Simplifiez la tâche des responsables de projet grâce à notre logiciel de gestion de projet. Découvrez comment Project vous permet …"
+    },
+    {
+      "title": "Install Project | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/project/install-project",
+      "snippet": "Before installing Project the first time, sign in with an existing or new Microsoft Account and enter your product key* at …"
+    },
+    {
+      "title": "Project",
+      "url": "https://www.project-sas.fr/",
+      "snippet": "Project fournit des pièces usinées et des ensembles pouvant intégrer des fonctions électriques voire électroniques. Nous vous …"
+    },
+    {
+      "title": "project.microsoft.com",
+      "url": "https://project.microsoft.com/msal-redirect2",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft 365 Project: Compare Plans and Pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/project/microsoft-project-enterprise-plans-and-pricing?msockid=0ac9aa62f56f65b73d7bbd8af46264e1",
+      "snippet": "Compare Microsoft Project plans and pricing. Explore tools to manage projects, track resources, and deliver results with solutions …"
+    }
+  ]
+}

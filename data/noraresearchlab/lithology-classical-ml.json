@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "NoraResearchLab/lithology-classical-ml",
+  "slug": "noraresearchlab-lithology-classical-ml",
+  "author": "NoraResearchLab",
+  "url": "https://huggingface.co/NoraResearchLab/lithology-classical-ml",
+  "created_at": "2026-10-03T21:07:49.000Z",
+  "updated_at": "2026-10-03T21:40:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "geology",
+    "geoscience",
+    "lithology",
+    "well-logs",
+    "petrophysics",
+    "machine-learning",
+    "random-forest",
+    "xgboost",
+    "lightgbm",
+    "sequence-classification",
+    "subsurface",
+    "earth-science",
+    "tabular-classification",
+    "en",
+    "dataset:NoraResearchLab/Lithology-Training-Dataset",
+    "dataset:NoraResearchLab/lithology-sequence-benchmark",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1530395026,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrissy ᥫᩣ (@christelle20104) - TikTok",
+      "url": "https://www.tiktok.com/@christelle20104",
+      "snippet": "Chrissy ᥫᩣ🌷 (@christelle20104) sur TikTok |1.6M j'aime.164.1K followers.🇲🇫🇲🇬 - Compte unique - Abonnés vous🐚💗.Regarde les vidéos …"
+    },
+    {
+      "title": "christelle20104 | TikTok",
+      "url": "https://www.tiktok.com/@christelle20104/video/7688601542110219527",
+      "snippet": "653 Likes, 30 Comments. TikTok video from Chrissy ᥫᩣ🌷 (@christelle20104): “Video related to christelle20104.”."
+    },
+    {
+      "title": "@christelle20104 TikTok Live Recordings | TikRec",
+      "url": "https://tikrec.com/creators/christelle20104",
+      "snippet": "Aug 1, 2026 · TikRec has recorded 2 live streams from @christelle20104, with 42m 35s of total live time and an average recording …"
+    },
+    {
+      "title": "Christelle (@christelle20106) • Instagram photos and videos",
+      "url": "https://www.instagram.com/christelle20106/",
+      "snippet": "250 Followers, 1,324 Following, 3 Posts - Christelle (@christelle20106) on Instagram: \"\""
+    },
+    {
+      "title": "christelle20104 — Live Stream VOD from Sep 14, 2026, 8:54 PM",
+      "url": "https://www.streamarchive.io/tiktok/@christelle20104/video/hqfymlkybrnt0d5pm4le6ib5",
+      "snippet": "Sep 14, 2026 · Watch christelle20104's Tiktok live stream from Sep 14, 2026, 8:54 PM. 1m 7s of content preserved on Stream …"
+    }
+  ]
+}

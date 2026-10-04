@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen2",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-iterated-run3-gen2",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen2",
+  "created_at": "2026-10-03T22:08:43.000Z",
+  "updated_at": "2026-10-03T22:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Page hotmail sign in [Résolu] - Forum Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-17218674-page-hotmail-sign-in",
+      "snippet": "Bonjour, je n'arrive pas à avoir toutes mes adresses hotmail sur la page hotmail sign in, une seule apparait, alors que sur mon 2eme …"
+    },
+    {
+      "title": "Comment récupérer ma boîte de réception hotmail?",
+      "url": "https://forums.commentcamarche.net/forum/affich-26356832-comment-recuperer-ma-boite-de-reception-hotmail",
+      "snippet": "Oct 30, 2012 · Bonjour, Je n'arrive pas à accéder à ma boîte de réception malgré que je n'ai pas perdu le mot de passe. J'ai suivi …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/vs-code-not-running-due-to-npav-installed/fc8d28c3-0e10-4bd5-b584-bd4f26bd8331",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ACloudCenter/vibevoice-final-samples",
+  "slug": "acloudcenter-vibevoice-final-samples",
+  "author": "ACloudCenter",
+  "url": "https://huggingface.co/ACloudCenter/vibevoice-final-samples",
+  "created_at": "2026-10-03T22:19:00.000Z",
+  "updated_at": "2026-10-03T22:20:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22977188,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echanger un permis étranger ou obtenu dans une COM pour un permis ...",
+      "url": "https://permisdeconduire.ants.gouv.fr/demarches-en-ligne/echanger-un-permis-etranger",
+      "snippet": "May 12, 2026 · Cette démarche est à effectuer si : Vous possédez un permis délivré par un pays de l'Union européenne ou de l'EEE …"
+    },
+    {
+      "title": "Échange de permis de conduire obtenu hors Europe (UE/EEE ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1460",
+      "snippet": "Le permis de conduire étranger (hors Europe) est valable 1 an en France. Au-delà, il doit être échangé contre un permis français. La …"
+    },
+    {
+      "title": "Permis de conduire étranger - Permis - France Titres (ANTS)",
+      "url": "https://permisdeconduire.ants.gouv.fr/aide-et-contact/permis-de-conduire-etranger",
+      "snippet": "Comment faire ma demande d’échange de permis étranger? Depuis le 1er février 2020, la demande d'échange de permis étranger …"
+    },
+    {
+      "title": "Échange d'un permis de conduire obtenu en Europe (UE/EEE)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1758",
+      "snippet": "Vous vous demandez dans quels cas vous devez demander l’échange de votre permis européen (UE/EEE) contre un permis …"
+    },
+    {
+      "title": "Échanger un permis de conduire étranger contre un permis français",
+      "url": "https://demarchesadministratives.fr/demarches/comment-echanger-un-permis-de-conduire-etranger-contre-un-permis-francais",
+      "snippet": "Apr 23, 2026 · Lorsqu’un étranger s’installe en France et qu’il possède un permis de conduire délivré par un État qui n’appartient pas …"
+    }
+  ]
+}

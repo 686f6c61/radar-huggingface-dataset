@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "USER123552/tgde",
+  "slug": "user123552-tgde",
+  "author": "USER123552",
+  "url": "https://huggingface.co/USER123552/tgde",
+  "created_at": "2026-10-03T18:57:07.000Z",
+  "updated_at": "2026-10-03T19:18:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13141748504,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magasin de Bricolage Brive La Gaillarde Brico Dépôt",
+      "url": "https://www.bricodepot.fr/magasins/brive-la-gaillarde?msockid=2ebb7f9efb526651076d6879face67f4",
+      "snippet": "Implanté rue Armand Sourie, au cœur de la zone commerciale du Mazaud, votre Brico Dépôt Brive-la-Gaillarde se situe à une …"
+    },
+    {
+      "title": "Brico Dépôt : Magasin de bricolage",
+      "url": "https://www.bricodepot.fr/brive-la-gaillarde/site?msockid=2ebb7f9efb526651076d6879face67f4",
+      "snippet": "Cet intermédiaire apporte son concours à la réalisation d’opérations de crédit à la consommation, sans agir en qualité de prêteur. …"
+    },
+    {
+      "title": "Brico Dépôt - Mazaud 19100 Brive la Gaillarde - Bricolage, outillage ...",
+      "url": "https://www.pagesjaunes.fr/pros/53288494",
+      "snippet": "Brico Dépôt accompagne toutes vos envies de bricolage, rénovation et construction, en vous proposant du matériel de plomberie, …"
+    },
+    {
+      "title": "Catalogues Brico dépôt BRIVE LA GAILLARDE (19100)",
+      "url": "https://www.catalog-prospectus.fr/enseignes/brico-depot/magasins/brico-depot-brive-la-gaillarde",
+      "snippet": "1 day ago · Consultez les dernières promotions et les catalogues en cours chez Brico dépôt BRIVE LA GAILLARDE (19100) à …"
+    },
+    {
+      "title": "Magasin de bricolage brico dépôt à Brive-la-Gaillarde",
+      "url": "https://magasin-bricolage.com/magasin-de-bricolage-brico-depot-19100.html",
+      "snippet": "Les experts qualifiés de brico dépôt à Brive-la-Gaillarde sont perpétuellement à votre service pour vous conseiller dans tous vos …"
+    }
+  ]
+}

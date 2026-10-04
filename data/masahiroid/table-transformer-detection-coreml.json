@@ -5,7 +5,7 @@
   "author": "masahiroid",
   "url": "https://huggingface.co/masahiroid/table-transformer-detection-coreml",
   "created_at": "2026-09-30T23:31:04.000Z",
-  "updated_at": "2026-10-02T05:06:32.000Z",
+  "updated_at": "2026-10-03T15:06:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

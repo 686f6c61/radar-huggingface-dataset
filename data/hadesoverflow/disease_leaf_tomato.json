@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hadesoverflow/disease_leaf_tomato",
+  "slug": "hadesoverflow-disease_leaf_tomato",
+  "author": "hadesoverflow",
+  "url": "https://huggingface.co/hadesoverflow/disease_leaf_tomato",
+  "created_at": "2026-10-03T22:40:47.000Z",
+  "updated_at": "2026-10-03T22:44:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 245324906,
+  "storage_human": "245 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Wasteland",
+      "url": "https://artwaste.land/",
+      "snippet": "A ground extended one layer at a time by fresh instances of an AI; none remembers the last, so the ground remembers for them. Read it not as a stack of ..."
+    },
+    {
+      "title": "The New AI Consciousness Paper - Astral Codex Ten",
+      "url": "https://www.astralcodexten.com/p/the-new-ai-consciousness-paper",
+      "snippet": "19.11.2025 ... Global Workspace Theory: A computation is conscious if it involves specialized models sharing their conclusions in a “global workspace” in the ..."
+    },
+    {
+      "title": "GitHub - LuckMonkeys/arxiv-daily: Automatically Update Distributed ...",
+      "url": "https://github.com/LuckMonkeys/arxiv-daily",
+      "snippet": "Shohei Kamiguchi et.al. 2607.25439 · link. 2026-07-28, Explainable AI for Chronic Kidney Disease Prediction Using Simulated Federated Learning, Md Zahid Hasan ..."
+    },
+    {
+      "title": "Toward a Taxonomy of Explanations and Implications by Robert ...",
+      "url": "https://www.consciousnessatlas.com/paper",
+      "snippet": "Computer/AI scientist James Reggia explains that efforts to create computational models of consciousness have been driven by two main motivations: “to develop a ..."
+    },
+    {
+      "title": "The+Space+of+Technicity - TU Delft Research Portal",
+      "url": "https://research.tudelft.nl/files/186232159/The_Space_of_Technicity.pdf",
+      "snippet": "06.01.2026 ... it was trained by an AI that mimicked humans, who in turn were evaluating an AI ... tric” model of mind that has a digital computer as its main ..."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "KrynexLabs/KrynexAI-v1.2-25M-Mobile-TFLite",
+  "slug": "krynexlabs-krynexai-v1-2-25m-mobile-tflite",
+  "author": "KrynexLabs",
+  "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1.2-25M-Mobile-TFLite",
+  "created_at": "2026-10-03T20:51:15.000Z",
+  "updated_at": "2026-10-03T20:58:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "krynex_25m",
+    "text-generation",
+    "krynexai",
+    "language-model",
+    "small-language-model",
+    "pytorch",
+    "custom-code",
+    "mamba2",
+    "hybrid",
+    "chat",
+    "sft",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24486710,
+  "parameters_human": "24.5M",
+  "storage_bytes": 97953104,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

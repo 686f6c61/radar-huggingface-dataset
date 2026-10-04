@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ4-fp16-mtp",
+  "slug": "novaeonstudio-qwen3-8-35b-a3b-distill-heretic-oq4-fp16-mtp",
+  "author": "NovaeonStudio",
+  "url": "https://huggingface.co/NovaeonStudio/Qwen3.8-35B-A3B-Distill-Heretic-oQ4-fp16-mtp",
+  "created_at": "2026-10-03T22:14:10.000Z",
+  "updated_at": "2026-10-03T22:14:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "apple-silicon",
+    "oMLX",
+    "uncensored",
+    "heretic",
+    "abliterated",
+    "mtp",
+    "moe",
+    "novaeon",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 22529254013,
+  "storage_human": "22.5 GB",
+  "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=trending&search=Distil",
+      "snippet": "... ai/Qwen3.8 ... Qwen3.8-Distill-Heretic-Abliterated-MTP-GGUF. Text Generation • 4B • Updated Aug 18 • 7.15k • 12 · NovaeonStudio/Qwen3.8-35B-A3B-Distill-oQ8-fp16- ..."
+    }
+  ]
+}

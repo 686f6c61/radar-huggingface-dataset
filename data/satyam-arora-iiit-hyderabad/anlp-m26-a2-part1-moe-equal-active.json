@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-equal-active",
+  "slug": "satyam-arora-iiit-hyderabad-anlp-m26-a2-part1-moe-equal-active",
+  "author": "satyam-arora-iiit-hyderabad",
+  "url": "https://huggingface.co/satyam-arora-iiit-hyderabad/anlp-m26-a2-part1-moe-equal-active",
+  "created_at": "2026-10-03T22:47:44.000Z",
+  "updated_at": "2026-10-03T22:47:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "translation",
+    "mixture-of-experts",
+    "advanced-nlp",
+    "en",
+    "vi",
+    "ja",
+    "dataset:belumind/en-vi-ja-curated-500k-triplets",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 215479488,
+  "storage_human": "215 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Visual Search Tool | Bing Visual Search",
+      "url": "https://explore.microsoft.com/en-us/bing/visual-search",
+      "snippet": "Point your camera at any text to translate it, copy it, or search for what it means — quickly and accurately. Snap a photo of a math or …"
+    },
+    {
+      "title": "Outil de recherche visuelle gratuit | Bing Visual Search",
+      "url": "https://explore.microsoft.com/fr-fr/bing/visual-search",
+      "snippet": "Recherchez par image avec Bing Visual Search, un outil gratuit de recherche d’images inversée pour trouver des images similaires, …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Reverse Image Search — Free Image Source Finder | Scanly",
+      "url": "https://scanly.co/reverse-image-search",
+      "snippet": "Free reverse image search — upload a photo and search it on Google Lens, TinEye, Yandex or Bing to find the image source, spot …"
+    }
+  ]
+}

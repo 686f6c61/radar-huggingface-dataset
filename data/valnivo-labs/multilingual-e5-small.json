@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Valnivo-labs/multilingual-e5-small",
+  "slug": "valnivo-labs-multilingual-e5-small",
+  "author": "Valnivo-labs",
+  "url": "https://huggingface.co/Valnivo-labs/multilingual-e5-small",
+  "created_at": "2026-10-03T19:34:11.000Z",
+  "updated_at": "2026-10-03T23:59:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212201596,
+  "storage_human": "212 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to unblock the pornhub. Com site",
+      "url": "https://support.google.com/chrome/thread/102646770/how-to-unblock-the-pornhub-com-site?hl=en",
+      "snippet": "Mar 17, 2021 · How to unblock the pornhub. Com site None Details Accessing Websites, Android, Stable (Default)"
+    },
+    {
+      "title": "دریافت کردن راهنمایی برای پیام‌های خطای رایج در Chrome",
+      "url": "https://support.google.com/chrome/answer/95669?hl=fa",
+      "snippet": "وقتی Chrome هنگام متصل شدن به وب‌سایت، بار کردن صفحه، یا برقراری تعامل با محتوای وب با مشکل مواجه شود، معمولاً پیام خطایی نمایش می‌دهد. قبل‌از اینکه کدهای خطای خاصی را عیب‌یابی …"
+    },
+    {
+      "title": "Supprimer un site porno [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-34704918-supprimer-un-site-porno",
+      "snippet": "Jul 5, 2017 · Bonjour, <comment supprimer un site porno de mon PC ,porno attitude et Tukif..merci"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "Zezwalanie na dostęp do stron internetowych i blokowanie go",
+      "url": "https://support.google.com/chrome/a/answer/7532419?hl=pl",
+      "snippet": "W jakich sytuacjach zezwalać na dostęp do adresów URL lub go blokować Lista dozwolonych i zablokowanych pozwala na proste …"
+    }
+  ]
+}

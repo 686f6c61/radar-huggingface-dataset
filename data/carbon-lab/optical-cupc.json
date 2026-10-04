@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "carbon-lab/optical-cupc",
+  "slug": "carbon-lab-optical-cupc",
+  "author": "carbon-lab",
+  "url": "https://huggingface.co/carbon-lab/optical-cupc",
+  "created_at": "2026-10-03T23:07:17.000Z",
+  "updated_at": "2026-10-03T23:50:22.000Z",
+  "license": "gpl-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "dft-learn",
+  "languages": [],
+  "tags": [
+    "dft-learn",
+    "chemistry",
+    "spectroscopy",
+    "nexafs",
+    "xas",
+    "dft",
+    "stobe",
+    "optical-tensors",
+    "cupc",
+    "clustering",
+    "arxiv:2509.01734",
+    "other",
+    "license:gpl-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4559184,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carbon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Carbon",
+      "snippet": "In most stable compounds of carbon (and nearly all stable organic compounds), carbon obeys the octet rule and is tetravalent, …"
+    },
+    {
+      "title": "Carbon | Journal | ScienceDirect.com by Elsevier",
+      "url": "https://www.sciencedirect.com/journal/carbon",
+      "snippet": "The journal Carbon is an international multidisciplinary forum for communicating scientific advances in the field of carbon-based …"
+    },
+    {
+      "title": "CARBON - Photovoltaics Made In France",
+      "url": "https://carbon-solar.com/",
+      "snippet": "Le 2 avril prochain, Enerfip, première plateforme d’investissement responsable dédiée à la transition énergétique en France et en …"
+    },
+    {
+      "title": "Carbon | Facts, Uses, & Properties | Britannica",
+      "url": "https://www.britannica.com/science/carbon-chemical-element",
+      "snippet": "Sep 18, 2026 · carbon (C), nonmetallic chemical element in Group 14 (IVa) of the periodic table. Although widely distributed in …"
+    },
+    {
+      "title": "Carbon Facts, Symbol, Discovery, Allotropes, Properties, Uses",
+      "url": "https://www.chemistrylearner.com/carbon.html",
+      "snippet": "Carbon (pronounced as KAR-ben) is a soft nonmetal denoted by the chemical symbol C. It forms several allotropes including …"
+    }
+  ]
+}

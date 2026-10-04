@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gpjt/8xa100m40-lore-4-input-only",
+  "slug": "gpjt-8xa100m40-lore-4-input-only",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/8xa100m40-lore-4-input-only",
+  "created_at": "2026-10-03T19:58:57.000Z",
+  "updated_at": "2026-10-03T19:59:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "lore",
+    "low-rank",
+    "causal-lm",
+    "custom_code",
+    "dataset:gpjt/fineweb-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 143526272,
+  "parameters_human": "143.5M",
+  "storage_bytes": 574123544,
+  "storage_human": "574 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Writing an LLM from scratch, part 34b -- from bigrams to GPT-2, one ...",
+      "url": "https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax",
+      "snippet": "08.07.2026 ... That's not guaranteed -- sometimes different aspects of an AI model ... 4, 17.79, 6. 8xa100m40-stacked-interventions-1, 3.577761, 4, 10.29, 16."
+    },
+    {
+      "title": "gpjt/8xa100m40 · Hugging Face",
+      "url": "https://huggingface.co/gpjt/8xa100m40",
+      "snippet": "Jan 17, 2026 · Don't have high expectations for the model! It has only 163M parameters (the GPT-2 \"small\" size) and was trained on …"
+    },
+    {
+      "title": "gpjt/8xa100m40-baseline · Hugging Face",
+      "url": "https://huggingface.co/gpjt/8xa100m40-baseline",
+      "snippet": "Feb 4, 2026 · Don't have high expectations for the model! It has only 163M parameters (the GPT-2 \"small\" size) and was trained on …"
+    },
+    {
+      "title": "Grok 4.3 - Amazon Bedrock - docs.aws.amazon.com",
+      "url": "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-xai-grok-4-3.html",
+      "snippet": "Grok 4.3 is a reasoning-first model that offers always-on and configurable reasoning effort (none, low, medium, high). Because …"
+    },
+    {
+      "title": "Grok 4, xAI's Most Powerful AI Model - chatsmith.io",
+      "url": "https://chatsmith.io/model/grok-4",
+      "snippet": "Grok 4 is the first xAI model built to use tools autonomously — it was trained to operate a code interpreter and web browser as …"
+    }
+  ]
+}

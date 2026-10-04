@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX",
+  "slug": "kurtholes-pe-t2i-9b-nvfp4-w4a16-max",
+  "author": "kurtholes",
+  "url": "https://huggingface.co/kurtholes/PE-T2I-9B-NVFP4-W4A16-MAX",
+  "created_at": "2026-10-03T22:03:16.000Z",
+  "updated_at": "2026-10-03T22:15:00.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "prompt-rewriting",
+    "text-to-image",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "built-with-qwen",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen-Image-2.1-PE-T2I",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-PE-T2I",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5216412912,
+  "parameters_human": "5.22B",
+  "storage_bytes": 6783773883,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-PE-T2I",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Addleshaw Goddard LLP",
+      "url": "https://www.addleshawgoddard.com/en/",
+      "snippet": "Law firm to many of the world's best-known and most remarkable clients. They rely on us to find imaginative solutions to their pivotal …"
+    },
+    {
+      "title": "Addleshaw Goddard - Join Us",
+      "url": "https://joinus.addleshawgoddard.com/",
+      "snippet": "At Addleshaw Goddard, we are dedicated to achieving best practices in systems development throughout our firm. This commitment …"
+    },
+    {
+      "title": "SINGAPORE - Addleshaw Goddard LLP",
+      "url": "https://www.addleshawgoddard.com/en/international/asia/singapore/",
+      "snippet": "Our Singapore office provides specialist support across a range of legal disciplines and is the focus of our service delivery in South …"
+    },
+    {
+      "title": "Placement schemes and internships at Addleshaw Goddard",
+      "url": "https://earlycareers.addleshawgoddard.com/careers/placement-schemes-internships/",
+      "snippet": "Placement Schemes & Internships With Placement Schemes in the UK and Internships in Ireland, there's lots of opportunities for you …"
+    },
+    {
+      "title": "Apprenticeship schemes at Addleshaw Goddard",
+      "url": "https://earlycareers.addleshawgoddard.com/careers/apprenticeships/",
+      "snippet": "Kick start your career at Addleshaw Goddard by gaining invaluable work experience in a top law firm whilst studying towards a …"
+    }
+  ]
+}

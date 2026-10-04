@@ -5,7 +5,7 @@
   "author": "frankmorales2020",
   "url": "https://huggingface.co/frankmorales2020/qwen2.5-0.5b-topo-governed-cbp-fineweb",
   "created_at": "2026-09-25T23:21:40.000Z",
-  "updated_at": "2026-10-01T03:47:36.000Z",
+  "updated_at": "2026-10-03T08:06:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 2029,
+  "downloads_30d": 2036,
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",

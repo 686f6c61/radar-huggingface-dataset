@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/humanizer-i1-GGUF",
+  "slug": "mradermacher-humanizer-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/humanizer-i1-GGUF",
+  "created_at": "2026-10-03T23:13:45.000Z",
+  "updated_at": "2026-10-04T01:11:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "humanizer",
+    "text-rewriting",
+    "rewriting",
+    "paraphrase",
+    "style-transfer",
+    "llama.cpp",
+    "mlx",
+    "gemma4",
+    "en",
+    "zh",
+    "base_model:jialinyyzz/humanizer",
+    "base_model:quantized:jialinyyzz/humanizer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 140344050720,
+  "storage_human": "140.3 GB",
+  "base_model": "jialinyyzz/humanizer",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines Annonces Limoux, Libertines girl en Limoux ... - Sexemodel",
+      "url": "https://www.meslibertines.com/escorts/limoux/",
+      "snippet": "Libertines en Limoux. Trouvez vous les plus belles Libertines en Limoux, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort Limoux | Sexemodel - Ladys.One",
+      "url": "https://ladys.one/fr/escort-limoux",
+      "snippet": "Nos femmes sont de vrais maîtres à Limoux escort. Et si vous considérez toujours que vous avez tout essayé et vu dans une vie …"
+    },
+    {
+      "title": "LÉA divine Massage limoux environs — OnSeConnait.com",
+      "url": "https://www.onseconnait.com/petite-annonce/escorts/languedoc-roussillon/departement-11/lEa-divine-massage-limoux-environs_zbyqvwf.html",
+      "snippet": "Sep 23, 2026 · Découvrez des profils qui partagent vos désirs d'aventures inédites et de rencontres mémorables. LÉA divine …"
+    },
+    {
+      "title": "LÉA divine Massage limoux environs - calinemoi.com",
+      "url": "https://www.calinemoi.com/rencontrer/escort/languedoc-roussillon/departement-11/rptvjfu/l-a-divine-massage-limoux-environs.html",
+      "snippet": "Sep 23, 2026 · Cette annonce rencontres / Escort est disponible à Limoux (11) via Calinemoi.com (postée le 23/09/2026). Léa 35 …"
+    },
+    {
+      "title": "Libertines Shasha, Limoux",
+      "url": "https://www.meslibertines.com/escort/Shasha-2657941/",
+      "snippet": "Libertines girl Shasha a 25 ans, est une asiatique femme à Limoux de 153 cm de hauteur, 46kg. Voir ses photos ici!"
+    }
+  ]
+}

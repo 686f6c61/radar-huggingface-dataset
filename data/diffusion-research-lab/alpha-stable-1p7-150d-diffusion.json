@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Diffusion-Research-Lab/alpha-stable-1p7-150d-diffusion",
+  "slug": "diffusion-research-lab-alpha-stable-1p7-150d-diffusion",
+  "author": "Diffusion-Research-Lab",
+  "url": "https://huggingface.co/Diffusion-Research-Lab/alpha-stable-1p7-150d-diffusion",
+  "created_at": "2026-10-04T00:29:03.000Z",
+  "updated_at": "2026-10-04T00:29:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gendynamics",
+  "languages": [],
+  "tags": [
+    "gendynamics",
+    "safetensors",
+    "diffusion",
+    "unconditional-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16663680,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffusion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diffusion",
+      "snippet": "The central idea of diffusion, however, is common to all of these: a substance or collection undergoing diffusion spreads out from a …"
+    },
+    {
+      "title": "What is the process of diffusion? - BBC Bitesize",
+      "url": "https://www.bbc.co.uk/bitesize/articles/znqbcj6",
+      "snippet": "Discover what the process of diffusion is and how substances move from an area of high concentration to lower concentration in this …"
+    },
+    {
+      "title": "Diffusion: Definition and How Does it Occur (with Diagram)",
+      "url": "https://www.sciencefacts.net/diffusion.html",
+      "snippet": "Nov 21, 2023 · Diffusion is defined as the movement of atoms, ions, and molecules from a region of high concentration to a region of …"
+    },
+    {
+      "title": "Diffusion | Definition, Quantification, & Examples | Britannica",
+      "url": "https://www.britannica.com/science/diffusion",
+      "snippet": "Sep 15, 2026 · Diffusion is the process resulting from random motion of molecules by which there is a net flow of matter from a region …"
+    },
+    {
+      "title": "Diffusion - Definition, Causes, Significance, Examples",
+      "url": "https://biologynotesonline.com/diffusion-definition-causes-significance-examples/",
+      "snippet": "Nov 8, 2025 · Diffusion is the process by which molecules move from an area of higher concentration to an area of lower …"
+    }
+  ]
+}

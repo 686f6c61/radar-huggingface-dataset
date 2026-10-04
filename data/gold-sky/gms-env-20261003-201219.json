@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gold-sky/gms-env-20261003-201219",
+  "slug": "gold-sky-gms-env-20261003-201219",
+  "author": "gold-sky",
+  "url": "https://huggingface.co/gold-sky/gms-env-20261003-201219",
+  "created_at": "2026-10-03T23:07:52.000Z",
+  "updated_at": "2026-10-03T23:08:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/unsloth--Llama-3.2-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Llama-3.2-3B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1573350312,
+  "storage_human": "1.6 GB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold Price Charts & Historical Data - GoldPrice.org",
+      "url": "https://goldprice.org/",
+      "snippet": "GOLDPRICE.ORG - The No. 1 gold price site for fast loading live gold price charts in ounces, grams and kilos in every national …"
+    },
+    {
+      "title": "Gold.fr - Achat Or et Argent & Vente d'Or - Rachat d'Or - Cours et Prix ...",
+      "url": "https://www.gold.fr/",
+      "snippet": "2 days ago · Ce droit s’exerce par simple envoi d’un email. Pour tout savoir sur la manière dont Gold Trade gère les données …"
+    },
+    {
+      "title": "XAUUSD Chart — Gold Spot Price Today — TradingView",
+      "url": "https://www.tradingview.com/symbols/XAUUSD/",
+      "snippet": "Follow live gold price chart to track XAUUSD value. Explore gold price history, market news, technical analysis, trading ideas, and …"
+    },
+    {
+      "title": "Price of Gold Per Ounce | 24 Hour Spot Chart - KITCO",
+      "url": "https://www.kitco.com/charts/gold",
+      "snippet": "2 days ago · To see how much of a move is gold versus the dollar, the Kitco Global Index (KGX) tracks gold’s value measured …"
+    },
+    {
+      "title": "Gold - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gold",
+      "snippet": "Gold dissolves in alkaline solutions of cyanide, which are used in mining and electroplating. Gold also dissolves in mercury, forming …"
+    }
+  ]
+}

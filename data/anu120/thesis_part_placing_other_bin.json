@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Anu120/Thesis_part_placing_other_bin",
+  "slug": "anu120-thesis_part_placing_other_bin",
+  "author": "Anu120",
+  "url": "https://huggingface.co/Anu120/Thesis_part_placing_other_bin",
+  "created_at": "2026-10-03T21:05:21.000Z",
+  "updated_at": "2026-10-03T21:05:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Anu120/part_placing_other_bin",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906719088,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Best Free Porn Videos @ ONLY BEST PORN",
+      "url": "https://onlybestporn.com/",
+      "snippet": "Scroll through the best porn videos out there! No matter your tastes, you'll love every single video in this site. Find new fetishes and …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …"
+    },
+    {
+      "title": "Vidéos porno gratuites – Tube porno HD & vidéos de sexe XXX : …",
+      "url": "https://fr.pornicom.com/",
+      "snippet": "Profitez de milliers de vidéos pour adultes explicites en HD & 4K gratuitement. Diffusez de nouveaux clips XXX en ligne, regardez du …"
+    }
+  ]
+}

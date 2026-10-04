@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ai-ecoverse/kev-0.8b-vision-intent",
+  "slug": "ai-ecoverse-kev-0-8b-vision-intent",
+  "author": "ai-ecoverse",
+  "url": "https://huggingface.co/ai-ecoverse/kev-0.8b-vision-intent",
+  "created_at": "2026-10-03T19:16:35.000Z",
+  "updated_at": "2026-10-03T19:23:37.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "kev",
+    "kev.js",
+    "decision-model",
+    "browser-agent",
+    "web-agent",
+    "onnxruntime-web",
+    "webgpu",
+    "int8",
+    "vision",
+    "en",
+    "dataset:osunlp/Multimodal-Mind2Web",
+    "base_model:jaredpalmer/kev-0.8b",
+    "base_model:quantized:jaredpalmer/kev-0.8b",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1091004677,
+  "storage_human": "1.1 GB",
+  "base_model": "jaredpalmer/kev-0.8b",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "What’s on the agenda today? What’s on the agenda today? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. …"
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Whether you are a hobbyist, a professional artist, or a developer integrating AI into your product, DeepAI delivers advanced …"
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building …"
+    }
+  ]
+}

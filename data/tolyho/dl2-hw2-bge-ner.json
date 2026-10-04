@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tolyho/dl2-hw2-bge-ner",
+  "slug": "tolyho-dl2-hw2-bge-ner",
+  "author": "tolyho",
+  "url": "https://huggingface.co/tolyho/dl2-hw2-bge-ner",
+  "created_at": "2026-10-03T20:54:43.000Z",
+  "updated_at": "2026-10-03T21:24:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "ner",
+    "conll2003",
+    "en",
+    "dataset:voorhs/conll2003-corrupted",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bloody Flower - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bloody_Flower",
+      "snippet": "Bloody Flower (Korean: 블러디 플라워) is a 2026 South Korean crime thriller television series starring Ryeoun, Sung Dong-il, and …"
+    },
+    {
+      "title": "Bloody Flower (2026) - MyDramaList",
+      "url": "https://mydramalist.com/736953-flower-of-death",
+      "snippet": "Feb 4, 2026 · If you’re looking for a tightly written, emotionally gripping short K-drama, Bloody Flower may disappoint you. Despite …"
+    },
+    {
+      "title": "Bloody Flower (2026) Episode 1 Eng Sub - BiliBili",
+      "url": "https://www.bilibili.tv/en/video/4798971173018624",
+      "snippet": "Mar 25, 2026 · During the investigation of the arrested suspect, it is revealed that he has murdered people in the name of not only …"
+    },
+    {
+      "title": "Bloody Flower (TV Series 2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt39306333/",
+      "snippet": "Bloody Flower is one of those short dramas that proves you don't need 16 episodes to leave a massive impact. With only eight …"
+    },
+    {
+      "title": "Bloody Flower - AsianWiki",
+      "url": "https://asianwiki.com/Bloody_Flower",
+      "snippet": "Tension and confrontation ensues between three people. Lee Woo-Gyeom (Ryeo Un) is a serial killer, but possesses genius medical …"
+    }
+  ]
+}

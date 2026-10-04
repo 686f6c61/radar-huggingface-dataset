@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "gpjt/8xa100m40-lore-5-output-only",
+  "slug": "gpjt-8xa100m40-lore-5-output-only",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/8xa100m40-lore-5-output-only",
+  "created_at": "2026-10-03T19:59:15.000Z",
+  "updated_at": "2026-10-03T19:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "lore",
+    "low-rank",
+    "causal-lm",
+    "custom_code",
+    "dataset:gpjt/fineweb-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 143526272,
+  "parameters_human": "143.5M",
+  "storage_bytes": 574123536,
+  "storage_human": "574 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Writing an LLM from scratch, part 34b -- from bigrams to GPT-2, one ...",
+      "url": "https://www.gilesthomas.com/2026/07/llm-from-scratch-34b-building-and-training-gpt-2-small-in-jax",
+      "snippet": "08.07.2026 ... The capstone of my LLM from scratch journey: building up from a bigram-style model to GPT-2 small in JAX, watching the loss fall as each ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/gemma-3-4b-it-katcher-legal-sft-hf",
+  "slug": "wz7475-gemma-3-4b-it-katcher-legal-sft-hf",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/gemma-3-4b-it-katcher-legal-sft-hf",
+  "created_at": "2026-10-03T21:51:30.000Z",
+  "updated_at": "2026-10-03T21:51:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271875802,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Testeurs de batteries en vente à Des Moines - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/desmoines/battery-testers/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Testeurs de batteries en vente à Des Moines sur Facebook Marketplace. Trouvez des …"
+    },
+    {
+      "title": "Hyundai Santa Fe en vente à Rueil-Malmaison - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/108064819226934/hyundai-santa-fe/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Hyundai Santa Fe en vente à Rueil-Malmaison sur Facebook Marketplace. Trouvez …"
+    },
+    {
+      "title": "Audi Q5 en vente à Neuvy-Sautour | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/112257742124746/audi-q5/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Audi Q5 en vente à Neuvy-Sautour sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "BMW Série 7 en vente à Dschang | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/111979058813592/bmw-series-7/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie BMW Série 7 en vente à Dschang sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Bmw X3 en vente à Beaunotte, Bourgogne, France - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/110955568934335/bmw-x3/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Bmw X3 en vente à Beaunotte, Bourgogne, France sur Facebook Marketplace. …"
+    }
+  ]
+}

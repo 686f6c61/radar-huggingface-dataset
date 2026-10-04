@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HelloSun/sddqwen35a3b",
+  "slug": "hellosun-sddqwen35a3b",
+  "author": "HelloSun",
+  "url": "https://huggingface.co/HelloSun/sddqwen35a3b",
+  "created_at": "2026-10-03T22:21:35.000Z",
+  "updated_at": "2026-10-04T02:04:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "HIGHLIGHTS FULL EPISODE - ENGLISH VERSION | KIKO - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLHfXpyjbEl3cFdmYvlpYIyEzQbXdj7niz",
+      "snippet": "Welcome to Asri Town! 🌊🐠 Explore the exciting, funny, and chaotic underwater adventures of Kiko and his best friends—Poli, Patino, …"
+    },
+    {
+      "title": "KIKO - YouTube",
+      "url": "https://www.youtube.com/@KikoAnimation",
+      "snippet": "Di sini tempatnya nonton koleksi episode KIKO TERBARU dan paling update. Jangan lewatkan petualangan seru dan aksi konyol …"
+    },
+    {
+      "title": "Kiko (Clips Officiels) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL1Le_hg17oXqC1mf6pAecot1mMwyoKU8K",
+      "snippet": "Kiko - Agama feat. Folidjanta & Conii Gangster (Clip Officiel)"
+    },
+    {
+      "title": "Kiko - Idylle (Intro) (Clip Officiel) - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=riI6qvtlcX4&list=RDAMVMTQcAZWTBDsA",
+      "snippet": "Sign in to create & share playlists, get personalized recommendations, and more."
+    }
+  ]
+}

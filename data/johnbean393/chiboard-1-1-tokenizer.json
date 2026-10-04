@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "johnbean393/chiboard-1.1-tokenizer",
+  "slug": "johnbean393-chiboard-1-1-tokenizer",
+  "author": "johnbean393",
+  "url": "https://huggingface.co/johnbean393/chiboard-1.1-tokenizer",
+  "created_at": "2026-10-03T23:31:54.000Z",
+  "updated_at": "2026-10-04T00:28:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "chiboard",
+    "pinyin",
+    "ime",
+    "tokenizer",
+    "zh",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32800981,
+  "storage_human": "33 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bears Ears National Monument - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bears_Ears_National_Monument",
+      "snippet": "Bears Ears National Monument is a United States national monument located in San Juan County in southeastern Utah, established …"
+    },
+    {
+      "title": "Bears Ears National Monument | Utah - Bureau of Land Management",
+      "url": "https://www.blm.gov/visit/bears-ears-national-monument",
+      "snippet": "The area is famous for its rock art sites, pueblo homes, rock climbing areas, San Juan river running, outstanding views for …"
+    },
+    {
+      "title": "Bears Ears National Monument - Visit Utah",
+      "url": "https://www.visitutah.com/places-to-go/parks-outdoors/bears-ears-national-monument",
+      "snippet": "Bears Ears National Monument includes red rock, juniper forests, high plateau and an abundance of early human and Native …"
+    },
+    {
+      "title": "Your complete guide to visiting Bears Ears National Monument",
+      "url": "https://www.earthsattractions.com/guide-to-visiting-bears-ears-national-monument/",
+      "snippet": "Dec 25, 2018 · If you’re planning a trip and looking for a complete Bears Ears National Monument guide – including things to do, the …"
+    },
+    {
+      "title": "Bears Ears National Monument — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bears_Ears_National_Monument",
+      "snippet": "Le monument national de Bears Ears (en anglais, Bears Ears National Monument) est un monument national américain désigné …"
+    }
+  ]
+}

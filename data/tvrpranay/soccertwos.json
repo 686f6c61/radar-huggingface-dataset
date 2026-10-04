@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tvrpranay/SoccerTwos",
+  "slug": "tvrpranay-soccertwos",
+  "author": "tvrpranay",
+  "url": "https://huggingface.co/tvrpranay/SoccerTwos",
+  "created_at": "2026-10-03T20:29:30.000Z",
+  "updated_at": "2026-10-03T20:29:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-SoccerTwos",
+    "poca",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111,
+  "storage_human": "111 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "ML-Agents-SoccerTwos",
+      "metric": "mean_reward",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Family Trip to the Nudist Camp - part 4 - mom and sister, dad",
+      "url": "https://forum.xnxx.com/threads/family-trip-to-the-nudist-camp-part-4-mom-and-sister-dad.26012/",
+      "snippet": "Jun 18, 2020 · This is another story about our first family trip to the nudist camp - I was 12 at the time, my sister Jennifer was 11, and …"
+    },
+    {
+      "title": "Gabe | Page 5 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/gabe.657013/page-5",
+      "snippet": "Aug 22, 2022 · Hello, Personal info as kik, email, skype etc. is not allowed (\"email is.....\"; “kik is same as my username”) on our …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/",
+      "snippet": "蜀ICP备12028253号 川公网安备 51010402000072号 网上传播视听节目许可证 |互联网新闻信息服务许可证编号：51120170001 | …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.photography-on-the.net/?p=9771739",
+      "snippet": "301 Moved Permanently 301 Moved Permanently cloudflare"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.photography-on-the.net/?t=557706",
+      "snippet": "301 Moved Permanently cloudflare"
+    }
+  ]
+}

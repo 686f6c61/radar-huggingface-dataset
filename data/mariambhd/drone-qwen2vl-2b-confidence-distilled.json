@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mariambhd/drone-qwen2vl-2b-confidence-distilled",
+  "slug": "mariambhd-drone-qwen2vl-2b-confidence-distilled",
+  "author": "mariambhd",
+  "url": "https://huggingface.co/mariambhd/drone-qwen2vl-2b-confidence-distilled",
+  "created_at": "2026-10-03T22:31:09.000Z",
+  "updated_at": "2026-10-03T22:31:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20169431,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vr 游戏的实际体验怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/555428728",
+      "snippet": "9.Walking Dead: Saints and Sinners/ 行尸走肉：圣徒与罪人 《行尸走肉》游戏在过去的表现时好时坏。 幸运的是，《圣徒与罪人》 …"
+    },
+    {
+      "title": "为什么空之境界会翻译成the garden of sinners？ - 知乎",
+      "url": "https://www.zhihu.com/question/282202639",
+      "snippet": "Jun 23, 2018 · 不是被翻成这个名字，而是本来小说的副标题就是这个英文 至于为什么是这句，因为奈须是视觉系摇滚的粉，用这句英 …"
+    },
+    {
+      "title": "弥尔顿的《失乐园》哪个版本译的最好？ - 知乎",
+      "url": "https://www.zhihu.com/question/394864339",
+      "snippet": "19 For as by one man's disobedience many were made sinners, so by that obedience of that one, shall many also be made …"
+    },
+    {
+      "title": "如何评价2019上映的《心理测量者SS1》以及本系列的后续两部作品？",
+      "url": "https://www.zhihu.com/question/349767392",
+      "snippet": "如何评价2019上映的《心理测量者SS1》以及本系列的后续两部作品？ 《PSYCHO-PASS 心理测量者 Sinners of the System》是《 …"
+    },
+    {
+      "title": "如何评价剧场版动画《空之境界》？ - 知乎",
+      "url": "https://www.zhihu.com/question/20826623",
+      "snippet": "上周花了两个晚上看完了TV版的空之境界，觉得挺有深度的，很多意识流和象征手法以我现在的经历没法完全体会，本来想着把小说 …"
+    }
+  ]
+}

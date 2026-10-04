@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "StillDeadcode/minicpm5-2b-bf16",
+  "slug": "stilldeadcode-minicpm5-2b-bf16",
+  "author": "StillDeadcode",
+  "url": "https://huggingface.co/StillDeadcode/minicpm5-2b-bf16",
+  "created_at": "2026-10-03T19:35:04.000Z",
+  "updated_at": "2026-10-03T21:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "radiance",
+    "rocm",
+    "amd",
+    "rdna4",
+    "bf16",
+    "speculative-decoding",
+    "dspark",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5501632512,
+  "storage_human": "5.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B, openbmb/MiniCPM5-2B-DSpark",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Remplacer la photo de profil par une vidéo sur Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-37640584-remplacer-la-photo-de-profil-par-une-video-sur-facebook",
+      "snippet": "Jul 16, 2022 · Vous vous lassez de votre photo de profil sur Facebook ? Remplacez-la par une vidéo, pour animer votre profil et vous …"
+    },
+    {
+      "title": "N'arrive pas à accéder à mon compte sur un autre ordinateur",
+      "url": "https://forums.commentcamarche.net/forum/affich-38040569-n-arrive-pas-a-acceder-a-mon-compte-sur-un-autre-ordinateur",
+      "snippet": "May 3, 2024 · Bonjour, J'ai changé d'ordinateur et lorsque je me connecte sur Facebook, mon nom apparaît mais plus de photo de …"
+    },
+    {
+      "title": "Cómo recuperar tu cuenta de Facebook eliminada o desactivada",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1702-como-reactivar-tu-cuenta-de-facebook-si-la-eliminaste/",
+      "snippet": "Aug 16, 2023 · Si desactivaste temporalmente o eliminaste definitivamente tu cuenta en Facebook, aún es posible recuperarla, …"
+    },
+    {
+      "title": "Cómo 'hackear' una cuenta de Facebook: sin teléfono, correo - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2172-como-hackear-una-cuenta-de-facebook/",
+      "snippet": "Oct 25, 2023 · En Internet puedes encontrar sitios que ofrecen tutoriales de cómo hackear una cuenta de Facebook, ya sea …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "rishii100",
   "url": "https://huggingface.co/rishii100/galaxeye-tile-classifier",
   "created_at": "2026-09-27T16:55:08.000Z",
-  "updated_at": "2026-09-30T04:58:20.000Z",
+  "updated_at": "2026-10-03T09:28:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 11189703,
   "parameters_human": "11.2M",

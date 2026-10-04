@@ -5,7 +5,7 @@
   "author": "MarMix",
   "url": "https://huggingface.co/MarMix/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-Safetensors",
   "created_at": "2026-10-02T14:51:50.000Z",
-  "updated_at": "2026-10-02T23:33:30.000Z",
+  "updated_at": "2026-10-03T10:20:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 35951822704,
   "parameters_human": "35.95B",

@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/tam-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed455",
   "created_at": "2026-10-03T16:25:57.000Z",
-  "updated_at": "2026-10-03T17:44:02.000Z",
+  "updated_at": "2026-10-03T18:31:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 5492399352,
-  "storage_human": "5.5 GB",
+  "storage_bytes": 8986398686,
+  "storage_human": "9.0 GB",
   "base_model": "francesca9805/ppt-wc-uniform-newlex-tam-after-100mb-packed-bfdiso_seed455",
   "formats": [
     "safetensors"

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Shiki42/ctr-archive-e054-step10000",
+  "slug": "shiki42-ctr-archive-e054-step10000",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/ctr-archive-e054-step10000",
+  "created_at": "2026-10-03T23:48:25.000Z",
+  "updated_at": "2026-10-03T23:56:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "ctr",
+    "archival-checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7095510927,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Strictly Live Tour 2026 - Page 14 — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2488840/strictly-live-tour-2026/p14",
+      "snippet": "Sad for Ellie. She was joking with George saying he had to mess up so she had a chance to win."
+    },
+    {
+      "title": "Day 4: House of Chaos and Group Chat - Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/discussion/2496003/big-brother-uk-2026-day-4-house-of-chaos-and-group-chat-9pm-and-10pm-16th-september-itv2/p7",
+      "snippet": "Big Brother UK 2026 - Day 4: House of Chaos and Group Chat - 9pm and 10pm - 16th September - ITV2"
+    },
+    {
+      "title": "Big Brother UK 2025 - Day 25 and Late and Live - 9pm and 10pm - 22 ...",
+      "url": "https://forums.digitalspy.com/discussion/2485699/big-brother-uk-2025-day-25-and-late-and-live-9pm-and-10pm-22-october-itv2/p14",
+      "snippet": "Big Brother UK 2025 - Day 25 and Late and Live - 9pm and 10pm - 22 October - ITV2"
+    },
+    {
+      "title": "Four in a Bed : New Series (Part 5) - Page 1112 — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/comment/108488922",
+      "snippet": "Sep 17, 2026 · I'm surprised none of you have mentioned the double entendre that glamping Alex came out with after doing the zip line."
+    },
+    {
+      "title": "Are doctors doing us more harm than good ?(especially psychiatric ...",
+      "url": "https://forums.digitalspy.com/discussion/2495154/are-doctors-doing-us-more-harm-than-good-especially-psychiatric-medications",
+      "snippet": "Aug 17, 2026 · What are your experience of getting treatments in our current health care system? I am appalled by how I was treated …"
+    }
+  ]
+}

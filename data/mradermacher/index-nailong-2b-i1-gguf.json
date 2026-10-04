@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Index-Nailong-2B-i1-GGUF",
+  "slug": "mradermacher-index-nailong-2b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Index-Nailong-2B-i1-GGUF",
+  "created_at": "2026-10-03T21:51:06.000Z",
+  "updated_at": "2026-10-03T22:17:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "long-context",
+    "index",
+    "en",
+    "base_model:IndexTeam/Index-Nailong-2B",
+    "base_model:quantized:IndexTeam/Index-Nailong-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 25796832128,
+  "storage_human": "25.8 GB",
+  "base_model": "IndexTeam/Index-Nailong-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

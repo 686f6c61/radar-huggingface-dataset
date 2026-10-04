@@ -5,7 +5,7 @@
   "author": "ayan4m1",
   "url": "https://huggingface.co/ayan4m1/kev-merged-0.8b",
   "created_at": "2026-09-30T14:15:52.000Z",
-  "updated_at": "2026-09-30T15:09:15.000Z",
+  "updated_at": "2026-10-03T15:19:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 121,
+  "downloads_30d": 122,
   "trending_score": 0,
   "parameters": 570952895,
   "parameters_human": "571.0M",

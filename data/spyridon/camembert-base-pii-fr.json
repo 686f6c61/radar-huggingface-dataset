@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Spyridon/camembert-base-pii-fr",
+  "slug": "spyridon-camembert-base-pii-fr",
+  "author": "Spyridon",
+  "url": "https://huggingface.co/Spyridon/camembert-base-pii-fr",
+  "created_at": "2026-10-03T19:15:17.000Z",
+  "updated_at": "2026-10-03T19:45:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "camembert",
+    "token-classification",
+    "ner",
+    "pii",
+    "privacy",
+    "french",
+    "fr",
+    "dataset:ai4privacy/pii-masking-200k",
+    "base_model:almanach/camembert-base",
+    "base_model:finetune:almanach/camembert-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110118257,
+  "parameters_human": "110.1M",
+  "storage_bytes": 440502237,
+  "storage_human": "441 MB",
+  "base_model": "almanach/camembert-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

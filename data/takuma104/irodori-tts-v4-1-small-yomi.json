@@ -5,7 +5,7 @@
   "author": "takuma104",
   "url": "https://huggingface.co/takuma104/Irodori-TTS-v4.1-Small-Yomi",
   "created_at": "2026-10-01T15:13:36.000Z",
-  "updated_at": "2026-10-01T18:02:40.000Z",
+  "updated_at": "2026-10-03T07:47:19.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 766052385,
   "parameters_human": "766.1M",
-  "storage_bytes": 3064295596,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 6128591192,
+  "storage_human": "6.1 GB",
   "base_model": "Aratako/Irodori-TTS-v4.1-Small",
   "formats": [
     "safetensors"

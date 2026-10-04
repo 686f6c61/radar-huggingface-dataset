@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "warped-community/granite-4.0-350m-litert-lm",
+  "slug": "warped-community-granite-4-0-350m-litert-lm",
+  "author": "warped-community",
+  "url": "https://huggingface.co/warped-community/granite-4.0-350m-litert-lm",
+  "created_at": "2026-10-03T20:29:00.000Z",
+  "updated_at": "2026-10-03T20:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "warped",
+    "base_model:ibm-granite/granite-4.0-350m",
+    "base_model:finetune:ibm-granite/granite-4.0-350m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 468209584,
+  "storage_human": "468 MB",
+  "base_model": "ibm-granite/granite-4.0-350m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma (Google) vs IBM Granite (2026) — both free to start",
+      "url": "https://aitools.flocci.in/compare/gemma-google-vs-ibm-granite",
+      "snippet": "open model, gemma, google, lightweight, on-device, free, ibm granite, open source llm, enterprise ai model, apache license, granite 4, free. Website, ai.google."
+    },
+    {
+      "title": "9 Free DeepSeek Models Alternatives (2026) - Flocci AI Tools",
+      "url": "https://aitools.flocci.in/alternatives/deepseek-models",
+      "snippet": "Apache 2.0 licensed enterprise-grade model family; Hybrid Mamba/transformer architecture (Granite 4) for lower memory footprint; Built-in focus on governance ..."
+    },
+    {
+      "title": "LM Studio vs OpenAI Whisper (2026) - Flocci AI Tools",
+      "url": "https://aitools.flocci.in/compare/lm-studio-vs-openai-whisper",
+      "snippet": "Which should I choose, LM Studio or OpenAI Whisper? · Polished desktop GUI for local models · Discover, download and chat with GGUF models · Local server with ..."
+    },
+    {
+      "title": "Potential Natural Changes and Implications for a UK GDF",
+      "url": "https://nora.nerc.ac.uk/id/eprint/500752/1/CR12127N.pdf",
+      "snippet": "4.5.3 Intermediate Complexity Coupled Ocean - Atmosphere – Vegetation Models 85. 4.5.4 Atmosphere – Ocean Circulation Models. 86. 4.5.5 UK Climate Models. 86."
+    },
+    {
+      "title": "Studies Related to the Charleston, South Carolina, Earthquake of ...",
+      "url": "https://pubs.usgs.gov/pp/1028/report.pdf",
+      "snippet": "A Preliminary Shallow Crustal Model Between Columbia and Charleston, South Carolina, Deter- mined From Quarry Blast Monitoring and Other Geophysical Data ..."
+    }
+  ]
+}
