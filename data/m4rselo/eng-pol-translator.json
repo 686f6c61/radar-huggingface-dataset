@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "M4rselo/eng-pol-translator",
+  "slug": "m4rselo-eng-pol-translator",
+  "author": "M4rselo",
+  "url": "https://huggingface.co/M4rselo/eng-pol-translator",
+  "created_at": "2026-10-04T16:21:22.000Z",
+  "updated_at": "2026-10-04T16:28:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1567162467,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Translate | Fast, Natural, 40+ Languages",
+      "url": "https://chatgpt.com/translate/",
+      "snippet": "ChatGPT translates across 40+ languages with accuracy, tone, and cultural nuance. Translate text, voice, or photos for everyday use, travel, school, and work — and learn grammar or phrasing as you go."
+    },
+    {
+      "title": "Text translation prebuilt AI model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/prebuilt-text-translation",
+      "snippet": "The text translation prebuilt model translates your text data in real time across more than 60 languages. This prebuilt model could help remove language barriers within your company."
+    },
+    {
+      "title": "Best LLMs for Translation (October 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/translation",
+      "snippet": "Best LLMs for Translation in 2026 As of October 2, 2026, the top model in best llms for translation on the BenchLM leaderboard is Qwen3.7 Max with a score of 100. Bottom line: shortlist from the live multilingual table, weigh price and ecosystem only where scores are close, and test your own language pairs."
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Best AI Models for Language Translation - May 2026",
+      "url": "https://awesomeagents.ai/capabilities/translation/",
+      "snippet": "Best AI Models for Language Translation - May 2026 Gemini 3.1 Pro leads verified 2026 benchmarks at $2 per million tokens while GPT-5.5 and Claude Opus 4.7 postdate available translation evaluations - rankings, scores, and pricing for 10 models."
+    }
+  ]
+}

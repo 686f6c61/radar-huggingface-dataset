@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407",
+  "slug": "francesca9805-urd-arab-100mb-ppt-mp-struct-100mb_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-100mb-ppt-mp-struct-100mb_seed3407",
+  "created_at": "2026-10-04T17:56:49.000Z",
+  "updated_at": "2026-10-04T17:59:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/urd_arab_100mb",
+    "base_model:finetune:goldfish-models/urd_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250821130,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/urd_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L.A. Love | Actress, Composer - IMDb",
+      "url": "https://www.imdb.com/name/nm9240178/",
+      "snippet": "L.A. Love. Actress: The Bag Girls 2. L.A. Love is known for The Bag Girls 2 (2022), The Probe (2024) and The Bag Girls (2020)."
+    },
+    {
+      "title": "I Love LA (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/I_Love_LA_(TV_series)",
+      "snippet": "I Love LA is an American comedy television series created, written by, and starring Rachel Sennott for HBO. The series follows Maia …"
+    },
+    {
+      "title": "La Loove (Mini-série télévisée 2016– ) - IMDb",
+      "url": "https://www.imdb.com/fr/title/tt7407988/",
+      "snippet": "La Loove: Avec Amélie Etasse, Aude Macé."
+    },
+    {
+      "title": "Bunny Levine, ‘Everybody Loves Raymond’ and ‘Shameless’ Actress, …",
+      "url": "https://www.yahoo.com/entertainment/tv/articles/bunny-levine-everybody-loves-raymond-192700510.html",
+      "snippet": "Aug 23, 2026 · Bunny Levine, the character actress who appeared in dozens of TV shows and films ranging from \"Gilmore Girls\" to …"
+    },
+    {
+      "title": "LALovetheboss (@lalovetheboss) • Instagram photos and videos",
+      "url": "https://www.instagram.com/lalovetheboss/",
+      "snippet": "2M Followers, 3 Following, 45 Posts - LALovetheboss 🇵🇹 (@lalovetheboss) on Instagram: \"Artist /Actress/ Natural Queen 👑 MNGT: …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen8",
+  "slug": "hungrydino-qwen_2-5_7b-cat_numbers-iterated-run3-gen8",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-cat_numbers-iterated-run3-gen8",
+  "created_at": "2026-10-04T01:13:20.000Z",
+  "updated_at": "2026-10-04T01:13:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quartiers de Nîmes — Scores et avis AvisQuartier",
+      "url": "https://avisquartier.fr/nimes/",
+      "snippet": "May 23, 2026 · Découvrez les 63 quartiers de Nîmes : notes sécurité, prix immobilier, risques, accessibilité. Les 5 meilleurs quartiers …"
+    },
+    {
+      "title": "Ville de Nîmes: Conseils de quartiers",
+      "url": "https://www.nimes.fr/mon-quotidien/vie-associative-et-de-quartiers/les-conseils-de-quartiers",
+      "snippet": "Sep 8, 2026 · Les conseils de quartiers, au nombre de sept, sont un véritable lieu d'échanges et d'écoute pour l'évolution de la ville."
+    },
+    {
+      "title": "Nîmes en 2026 — prix immobilier, quartiers et risques ...",
+      "url": "https://meilleursquartiers.com/communes/30000-nimes",
+      "snippet": "Le centre ancien et les abords des Jardins de la Fontaine restent les secteurs les plus recherchés, portés par une clientèle …"
+    },
+    {
+      "title": "Meilleurs quartiers de Nîmes : où habiter - le-guide-immo.fr",
+      "url": "https://www.le-guide-immo.fr/investissement/les-meilleurs-quartiers-de-nimes/",
+      "snippet": "Sep 18, 2026 · Les meilleurs quartiers de Nîmes : Écusson, Garrigues ou Costières ? Écusson, Garrigues, Costières, Saint-Césaire : …"
+    },
+    {
+      "title": "Vivre à Nîmes : Quel quartier choisir ?",
+      "url": "https://www.immobilier-consult.fr/quartier-nimes-bien-vivre/",
+      "snippet": "Jan 21, 2026 · Découvrez les meilleurs quartiers de Nîmes pour bien vivre : ambiance, commodités et qualité de vie pour choisir …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oliviawright/perceiver-experiment73-2024",
+  "slug": "oliviawright-perceiver-experiment73-2024",
+  "author": "oliviawright",
+  "url": "https://huggingface.co/oliviawright/perceiver-experiment73-2024",
+  "created_at": "2026-10-04T14:25:55.000Z",
+  "updated_at": "2026-10-04T14:26:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olivia Wright (@_.oliviawright._) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_.oliviawright._/",
+      "snippet": "Explore Olivia Wright&#x27;s Instagram profile featuring photos, videos, and updates from her life at Purdue."
+    },
+    {
+      "title": "Perceiver · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/perceiver",
+      "snippet": "The abstract from the paper is the following: The recently-proposed Perceiver model obtains good results on several domains (images, audio, multimodal, point clouds) while scaling linearly in compute and memory with the input size. While the Perceiver supports many kinds of inputs, it can only produce very simple outputs such as class scores."
+    },
+    {
+      "title": "AI Model Release Tracker — Evertune",
+      "url": "https://models.evertune.ai/",
+      "snippet": "Track every major AI model release from OpenAI, Anthropic, Google, Meta, DeepSeek, and more. Updated daily."
+    },
+    {
+      "title": "Olivia - GitHub",
+      "url": "https://github.com/olivia-ai",
+      "snippet": "💁‍♀️Your new best friend powered by an artificial neural network Go 3,719 MIT 343 22 (2 issues need help) 0 Updated on Feb 6, 2025 docs.olivia-ai.org Public 🗂 Documentation of Olivia 10 MIT 3 0 16 Updated on Jan 4, 2023 olivia-ai.org Public 💻 The website and an online client for Olivia Vue 28 MIT 32 3 29 Updated on Jan 3, 2023"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    }
+  ]
+}

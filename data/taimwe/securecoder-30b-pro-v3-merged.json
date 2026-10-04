@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Taimwe/securecoder-30b-pro-v3-merged",
+  "slug": "taimwe-securecoder-30b-pro-v3-merged",
+  "author": "Taimwe",
+  "url": "https://huggingface.co/Taimwe/securecoder-30b-pro-v3-merged",
+  "created_at": "2026-10-04T16:24:29.000Z",
+  "updated_at": "2026-10-04T16:44:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "securecoder",
+    "code",
+    "tool-calling",
+    "security",
+    "cybersecurity",
+    "qwen3",
+    "fine-tuned",
+    "unsloth",
+    "conversational",
+    "base_model:unsloth/Qwen3-Coder-30B-A3B-Instruct",
+    "base_model:finetune:unsloth/Qwen3-Coder-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078000330,
+  "storage_human": "61.1 GB",
+  "base_model": "unsloth/Qwen3-Coder-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alldevice CMMS Maintenance Software in UK and Europe",
+      "url": "https://alldevice.com/",
+      "snippet": "With a simple, intuitive interface, users can manage assets and find device information with just a few clicks. Alldevice makes it easy …"
+    },
+    {
+      "title": "Your devices - Google Account",
+      "url": "https://myaccount.google.com/intro/device-activity",
+      "snippet": "When you’re signed in, you can review devices that have recently accessed your account. You can see your device activity, including …"
+    },
+    {
+      "title": "Manage devices used with your Microsoft account",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/manage-devices-used-with-your-microsoft-account",
+      "snippet": "Learn how to manage your Microsoft devices. Add, remove, register, or rename a device on your Microsoft account."
+    },
+    {
+      "title": "How to See Connected Devices in Windows 11 - GeeksDigit.Com",
+      "url": "https://www.geeksdigit.com/connected-devices-windows-11/",
+      "snippet": "Aug 18, 2026 · Whether you’ve connected a USB flash drive, Bluetooth headphones, printer, external monitor, smartphone, webcam, …"
+    },
+    {
+      "title": "See All Devices Connected to Your Windows 10 Computer",
+      "url": "https://www.dummies.com/article/technology/computers/operating-systems/windows/windows-10/see-devices-connected-windows-10-computer-230424/",
+      "snippet": "Oct 6, 2021 · In Windows 10, you can use the Devices window to view all the devices connected to your computer. Some, but not all, …"
+    }
+  ]
+}

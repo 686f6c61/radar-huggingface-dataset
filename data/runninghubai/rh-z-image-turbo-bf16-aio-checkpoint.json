@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-z-image-turbo-bf16-aio-checkpoint",
+  "slug": "runninghubai-rh-z-image-turbo-bf16-aio-checkpoint",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-z-image-turbo-bf16-aio-checkpoint",
+  "created_at": "2026-10-04T13:14:19.000Z",
+  "updated_at": "2026-10-04T13:26:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "checkpoint",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20523981762,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "z-image-turbo-bf16-aio - RunningHub Stable Diffusion & Flux Checkpoint",
+      "url": "https://www.runninghub.ai/model/public/1998601608588091393",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-z-image-turbofp16-unet at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-image-turbofp16-unet/tree/main",
+      "snippet": "RunningHubAI / rh-z-image-turbofp16-unet Like 0 Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new main rh-z-image-turbofp16-unet 12.3 GB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2081681132529213442 db73d41 verifiedabout 9 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model 2081681132529213442about 9 ..."
+    },
+    {
+      "title": "RunningHubAI/rh-z-image-turbo-fp16-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-z-image-turbo-fp16-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "z_image_turbo_bf16.safetensors - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/1993813943940562945",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "z-image-turbo-bf16-aio - RunningHub Stable Diffusion & Flux Checkpoint",
+      "url": "https://www.runninghub.cn/model/public/1998601608588091393",
+      "snippet": "探索热门 AI 生成模型与 LoRA 模型，支持个性化模型训练、风格创作与 AI 内容生成，轻松打造属于你的创意模型。"
+    }
+  ]
+}

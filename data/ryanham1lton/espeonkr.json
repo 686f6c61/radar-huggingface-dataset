@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/EspeonKR",
+  "slug": "ryanham1lton-espeonkr",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/EspeonKR",
+  "created_at": "2026-10-04T18:15:02.000Z",
+  "updated_at": "2026-10-04T18:16:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117967079,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kominato Yotsuha | Jpop Wiki | Fandom",
+      "url": "https://jpop.fandom.com/wiki/Kominato_Yotsuha",
+      "snippet": "Kominato Yotsuha (小湊よつ葉) is an AV actress, singer and gravure model. She is also a former member of Fairies under her real …"
+    },
+    {
+      "title": "Kominato Yotsuha – Wikipedia tiếng Việt",
+      "url": "https://vi.wikipedia.org/wiki/Kominato_Yotsuha",
+      "snippet": "Tên cũ của cô là Inoue Rikako (井上 いのうえ 理香子 りかこ (Tỉnh-Thượng Lí-Hương-Tử)?). Cô đã bắt đầu học tại trường dạy múa …"
+    },
+    {
+      "title": "Rikako Inoue (小湊よつ葉) Age, Height, Weight, Boyfriend, Net Worth …",
+      "url": "https://aajivanbiography.com/rikako-inoue/",
+      "snippet": "Yotsuha’s odyssey started as a wide-eyed 15-year-old: Joining Fairies in 2011 under Rising Production, she dazzled with dance …"
+    },
+    {
+      "title": "Yotsuba Kominato: From the National Beauty to the Supreme ... - 頭條匯",
+      "url": "https://min.news/en/entertainment/12973f7d935155ced178b535b25cfd3d.html",
+      "snippet": "6 days ago · From a pure idol when she debuted at the age of 15 to the \"Dark Queen\" who topped the sales charts at the age of 28, …"
+    },
+    {
+      "title": "Yotsuha Kominato – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Yotsuha_Kominato",
+      "snippet": "Yotsuha Kominato (jap. 小湊 よつ葉 Kominato Yotsuha; ur. 29 maja 1996 w Ōmura) – japońska gwiazda AV występująca w filmach …"
+    }
+  ]
+}

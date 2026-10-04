@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "0why0/S2RL",
+  "slug": "0why0-s2rl",
+  "author": "0why0",
+  "url": "https://huggingface.co/0why0/S2RL",
+  "created_at": "2026-10-04T15:04:32.000Z",
+  "updated_at": "2026-10-04T15:39:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2206.11054] S2RL: Do We Really Need to Perceive All States in Deep ...",
+      "url": "https://arxiv.org/abs/2206.11054",
+      "snippet": "Abstract page for arXiv paper 2206.11054: S2RL: Do We Really Need to Perceive All States in Deep Multi-Agent Reinforcement Learning?"
+    },
+    {
+      "title": "Supervised Reinforcement Learning: From Expert Trajectories to Step ...",
+      "url": "https://arxiv.org/pdf/2510.25992",
+      "snippet": "Large Language Models (LLMs) often struggle with problems that require multi-step reasoning. For small-scale open-source models, Reinforcement Learning with Verifiable Rewards (RLVR) fails when correct solutions are rarely sampled even after many attempts, while Supervised Fine-Tuning (SFT) tends to overfit long demonstrations through rigid token-by-token imitation. To address this gap, we ..."
+    },
+    {
+      "title": "S2RL: Do We Really Need to Perceive All States in Deep Multi-Agent ...",
+      "url": "https://liner.com/review/s2rl-do-we-really-need-to-perceive-all-states-in",
+      "snippet": "The visualization of S2RL (QMIX) in the &#x27;corridor&#x27; map illustrates agents executing advanced maneuvers, like a Zealot drawing enemy attention while others focus fire, demonstrating S2RL&#x27;s capacity to foster complex, situation-aware decision-making by focusing on critical entities."
+    },
+    {
+      "title": "(PDF) S2RL: Do We Really Need to Perceive All States in Deep Multi ...",
+      "url": "https://www.researchgate.net/publication/361480090_S2RL_Do_We_Really_Need_to_Perceive_All_States_in_Deep_Multi-Agent_Reinforcement_Learning",
+      "snippet": "S2RL: Do We Really Need to Perceive All States in Deep Multi- Agent Reinforcement Learning? KDD &#x27;22, August 14-18, 2022, Washington, DC, USA Figure 2: Illustration of the proposed S2RL method."
+    },
+    {
+      "title": "S2RL: Do We Really Need to Perceive All States in Deep Multi-Agent ...",
+      "url": "https://deepai.org/publication/s2rl-do-we-really-need-to-perceive-all-states-in-deep-multi-agent-reinforcement-learning",
+      "snippet": "Nevertheless, existing attention models rely on dense fully connected graphs and cannot better perceive important states. To this end, we propose a sparse state based MARL (S2RL) framework, which utilizes a sparse attention mechanism to discard irrelevant information in local observations."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "manateelazycat/DeepSeek-V4.1-Flash-Uncensored-TensorFold-EXL3",
+  "slug": "manateelazycat-deepseek-v4-1-flash-uncensored-tensorfold-exl3",
+  "author": "manateelazycat",
+  "url": "https://huggingface.co/manateelazycat/DeepSeek-V4.1-Flash-Uncensored-TensorFold-EXL3",
+  "created_at": "2026-10-04T01:04:21.000Z",
+  "updated_at": "2026-10-04T01:04:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "deepseek_v41",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "exl3",
+    "dgx-spark",
+    "image-text-to-text",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 105247851346,
+  "parameters_human": "105.25B",
+  "storage_bytes": 210670655418,
+  "storage_human": "210.7 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuckDuckGo - Protection. Privacy. Peace of mind.",
+      "url": "https://duckduckgo.com/",
+      "snippet": "DuckDuckGo is an independent Google alternative that also lets you search and browse the web, but we don’t track your searches or …"
+    },
+    {
+      "title": "Download the DuckDuckGo Browser for Windows",
+      "url": "https://duckduckgo.com/windows",
+      "snippet": "DuckDuckGo for Windows is a free browsing app that gives you comprehensive online privacy protection by default. Protection. …"
+    },
+    {
+      "title": "DuckDuckGo — Privacy, simplified.",
+      "url": "https://dd53jyxmgchu8.cloudfront.net/",
+      "snippet": "DuckDuckGo is an independent Google alternative that also lets you search and browse the web, but we donâ t track your searches …"
+    },
+    {
+      "title": "DuckDuckGo No-AI: Private Search Without AI",
+      "url": "https://noai.duckduckgo.com/",
+      "snippet": "DuckDuckGo private search with all AI features turned off. The classic results you expect. Always private."
+    },
+    {
+      "title": "DuckDuckGo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/DuckDuckGo",
+      "snippet": "DuckDuckGo ... DuckDuckGo is an American software company founded by Gabriel Weinberg in 2008 that focuses on Internet …"
+    }
+  ]
+}

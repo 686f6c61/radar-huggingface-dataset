@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed10",
+  "slug": "francesca9805-zho-hans-100mb-ppt-mp-struct-100mb_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-100mb-ppt-mp-struct-100mb_seed10",
+  "created_at": "2026-10-04T14:46:27.000Z",
+  "updated_at": "2026-10-04T14:50:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/zho_hans_100mb",
+    "base_model:finetune:goldfish-models/zho_hans_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250621138,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/zho_hans_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaveMoreDaily — Verified Coupon Codes & Deals Updated Daily",
+      "url": "https://www.savemoredaily.com/en",
+      "snippet": "Save More Every Day — verified daily. Discover verified coupon codes and exclusive deals from hundreds of top brands. Never pay …"
+    },
+    {
+      "title": "MoneySuperMarket | Where better off begins",
+      "url": "https://www.moneysupermarket.com/?msockid=01f377fc7945635e10e96014781e6233",
+      "snippet": "2 days ago · Compare and save on over 40 products including car insurance, home insurance, credit cards, loans and energy. …"
+    },
+    {
+      "title": "Bite for Less — Today's Best Fast Food & Restaurant Deals",
+      "url": "https://biteforless.com/",
+      "snippet": "1 day ago · Find the best fast food and restaurant deals every day. Promo codes, discounts, and limited-time offers from McDonald's, …"
+    },
+    {
+      "title": "Dealogator — Daily Deals & Coupons",
+      "url": "https://dealogator.com/",
+      "snippet": "Dealogator is your trusted source for verified coupons, promo codes, and exclusive deals in United States. We partner with hundreds …"
+    },
+    {
+      "title": "Today's Best Deals — Price & Pick",
+      "url": "https://priceandpick.com/deals/",
+      "snippet": "The best deals from 200+ trusted brands. Updated hourly. Save up to 70% on electronics, fashion, home, beauty, and more."
+    }
+  ]
+}

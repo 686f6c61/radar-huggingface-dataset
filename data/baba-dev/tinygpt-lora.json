@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "baba-dev/tinygpt-lora",
+  "slug": "baba-dev-tinygpt-lora",
+  "author": "baba-dev",
+  "url": "https://huggingface.co/baba-dev/tinygpt-lora",
+  "created_at": "2026-10-04T17:36:46.000Z",
+  "updated_at": "2026-10-04T18:02:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 500212737,
+  "storage_human": "500 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Group Holding Limited (BABA) - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BABA/",
+      "snippet": "Find the latest Alibaba Group Holding Limited (BABA) stock quote, history, news and other vital information to help you with your …"
+    },
+    {
+      "title": "Recettes baba au rhum | Simples et rapides - Marmiton",
+      "url": "https://www.marmiton.org/recettes/index/categorie/baba-au-rhum/",
+      "snippet": "Grand classique de la famille des desserts, le baba au rhum reste simple à réaliser. Il séduit les fins palais par son moelleux, sa …"
+    },
+    {
+      "title": "Baba — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Baba",
+      "snippet": "Baba-Nyonya, descendants des Chinois installés en péninsule Malaise et qui ont adopté les coutumes locales Clan Baba, clan du …"
+    },
+    {
+      "title": "B.A.-BA du climat et de la biodiversité | Accueil",
+      "url": "https://climat.cned.fr/",
+      "snippet": "Le B.A.-BA du climat et de la biodiversité est une formation, proposée par le Cned, permettant à toutes les personnes qui le …"
+    },
+    {
+      "title": "Définitions : baba - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/baba/7282",
+      "snippet": "baba - Définitions Français : Retrouvez la définition de baba, ainsi que les synonymes, homonymes, expressions... - synonymes, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "anuml/anlp-assignment2-models",
+  "slug": "anuml-anlp-assignment2-models",
+  "author": "anuml",
+  "url": "https://huggingface.co/anuml/anlp-assignment2-models",
+  "created_at": "2026-10-04T17:54:00.000Z",
+  "updated_at": "2026-10-04T18:14:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mixture-of-experts",
+    "moe",
+    "transformer",
+    "pretraining-optimizers",
+    "decoding-strategies",
+    "causal-lm",
+    "dataset:belumind/en-vi-ja-curated-500k-triplets",
+    "dataset:browndw/human-ai-parallel-corpus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1500967836,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLMs and Language Model Assignments | PDF - Scribd",
+      "url": "https://www.scribd.com/document/866147048/LLM-1-11",
+      "snippet": "23.05.2025 ... The document consists of four assignments related to Large Language Models, each containing multiple questions focused on topics like ..."
+    },
+    {
+      "title": "STUDY GUIDES",
+      "url": "https://www.dipae.ac.cy/archeia/pistopoiimena_programmata/mathimata/07.14.327.039_mathimata1_old.pdf",
+      "snippet": "Philosophical foundations of AI: Weak AI, strong AI, ethical considerations and risks. ... model answers to the self-assessment activities serve as a kind ..."
+    },
+    {
+      "title": "Artificial intelligence as a linguistic interface in interior design ...",
+      "url": "https://www.researchgate.net/publication/392869949_Artificial_intelligence_as_a_linguistic_interface_in_interior_design_education_Reconceiving_design_tools_as_communication_media",
+      "snippet": "The rapid evolution of artificial intelligence (AI) has fundamentally transformed the role of design tools, extending their function beyond conventional ..."
+    },
+    {
+      "title": "Mastering Machine Learning: Neural Networks Fundamentals",
+      "url": "https://www.coursehero.com/file/200940695/IE4414-W1-Intropdf/",
+      "snippet": "26.04.2023 ... –Model Testing •helps spot problems in models that regular evaluation metrics might miss. ... (AI) technologies with the Internet of things ..."
+    },
+    {
+      "title": "Leveraging Artificial Intelligence and Modulation of Oxidative ... - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12650260/",
+      "snippet": "24.10.2025 ... The present report offers hemolytic diseases as a model medical problem for AI-based analysis and design of countermeasures and addresses both ..."
+    }
+  ]
+}

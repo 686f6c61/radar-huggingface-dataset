@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaizhangana/mobilevit-baseline",
+  "slug": "kaizhangana-mobilevit-baseline",
+  "author": "kaizhangana",
+  "url": "https://huggingface.co/kaizhangana/mobilevit-baseline",
+  "created_at": "2026-10-04T13:24:24.000Z",
+  "updated_at": "2026-10-04T13:24:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kaizhangana (刘欣怡) - Hugging Face",
+      "url": "https://huggingface.co/kaizhangana",
+      "snippet": "ML engineer @ a startup you&#x27;ve never heard of"
+    },
+    {
+      "title": "quentinleroy/mobilevit-baseline-2024 · Hugging Face",
+      "url": "https://huggingface.co/quentinleroy/mobilevit-baseline-2024",
+      "snippet": "quentinleroy / mobilevit-baseline-2024 like 0 Safetensors PyTorch mobilevit classification License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mobilevit for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "[2110.02178] MobileViT: Light-weight, General-purpose, and Mobile ...",
+      "url": "https://arxiv.org/abs/2110.02178",
+      "snippet": "Towards this end, we introduce MobileViT, a light-weight and general-purpose vision transformer for mobile devices. MobileViT presents a different perspective for the global processing of information with transformers, i.e., transformers as convolutions."
+    },
+    {
+      "title": "GitHub - wilile26811249/MobileViT: Unofficial PyTorch implementation of ...",
+      "url": "https://github.com/wilile26811249/MobileViT",
+      "snippet": "Unofficial PyTorch implementation of MobileViT based on paper \"MobileViT: Light-weight, General-purpose, and Mobile-friendly Vision Transformer\". - wilile26811249/MobileViT"
+    },
+    {
+      "title": "GitHub - Edwicn/AI6103project-MobileVIT",
+      "url": "https://github.com/Edwicn/AI6103project-MobileVIT",
+      "snippet": "Contribute to Edwicn/AI6103project-MobileVIT development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "modrez/jarvis-R2-merged",
+  "slug": "modrez-jarvis-r2-merged",
+  "author": "modrez",
+  "url": "https://huggingface.co/modrez/jarvis-R2-merged",
+  "created_at": "2026-10-04T13:33:51.000Z",
+  "updated_at": "2026-10-04T13:41:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-12b-it",
+    "base_model:finetune:unsloth/gemma-4-12b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": "unsloth/gemma-4-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modrez/jarvis-r1-merged · Hugging Face",
+      "url": "https://huggingface.co/modrez/jarvis-r1-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - microsoft/JARVIS: JARVIS, a system to connect LLMs with ML ...",
+      "url": "https://github.com/microsoft/JARVIS",
+      "snippet": "We will release a new version of Jarvis in the near future. [2023.07.24] We released a light langchain version of Jarvis. See here. [2023.04.16] Jarvis now supports the OpenAI service on the Azure platform and the GPT-4 model. [2023.04.06] We added the Gradio demo and built the web API for /tasks and /results in server mode."
+    },
+    {
+      "title": "GitHub - pguilp25/jarvis: the best free ai · GitHub",
+      "url": "https://github.com/pguilp25/jarvis/",
+      "snippet": "JARVIS coordinates a handful of free and very cheap LLMs — NVIDIA NIM, OpenRouter, DeepInfra, Groq, Gemini — to approximate frontier-model coding quality for a few cents a task, just slower. The bet behind it: instead of one weak model thinking alone, have several models plan independently, critique each other, merge the best plan, implement it, and then verify the result by running it ..."
+    },
+    {
+      "title": "hadadrjt/JARVIS · Hugging Face",
+      "url": "https://huggingface.co/hadadrjt/JARVIS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Model catalog | Merge",
+      "url": "https://docs.merge.dev/merge-gateway/models/catalog",
+      "snippet": "Every model the Gateway can route to, with pricing, capabilities, and per-vendor details"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-MXFP4",
+  "slug": "automatosx-ax-qwen3-vl-8b-instruct-mlx-axq-mxfp4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-MXFP4",
+  "created_at": "2026-10-04T01:43:10.000Z",
+  "updated_at": "2026-10-04T01:43:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "qwen3-vl",
+    "MXFP4",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 6760763682,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "defai-digital/ax-engine - GitHub",
+      "url": "https://github.com/defai-digital/ax-engine",
+      "snippet": "vor 15 Stunden ... Qwen3-VL 30B-A3B Instruct AXQ packs; candidate, no MTP. Holo3 GUI ... AutomatosX AXQ; bare aliases stay mlx-community MXFP4-Q4. Nemotron ..."
+    }
+  ]
+}

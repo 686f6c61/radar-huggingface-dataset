@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NhanSoHocCode/xlmr-ner-4labels-v2",
+  "slug": "nhansohoccode-xlmr-ner-4labels-v2",
+  "author": "NhanSoHocCode",
+  "url": "https://huggingface.co/NhanSoHocCode/xlmr-ner-4labels-v2",
+  "created_at": "2026-10-04T15:30:05.000Z",
+  "updated_at": "2026-10-04T15:30:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "ner",
+    "token-classification",
+    "sequence-labeling",
+    "job-description",
+    "recruitment",
+    "vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277459977,
+  "parameters_human": "277.5M",
+  "storage_bytes": 7786106901,
+  "storage_human": "7.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NhanSoHocCode (Dang Ngoc Nhan) - Hugging Face",
+      "url": "https://huggingface.co/NhanSoHocCode",
+      "snippet": "Dang Ngoc Nhan NhanSoHocCode Follow NhanSoHocCode AI & ML interests None yet Organizations"
+    },
+    {
+      "title": "NhanSoHocCode - GitHub",
+      "url": "https://github.com/NhanSoHocCode",
+      "snippet": "I believe that the true value of data is only unlocked when it is built on a solid infrastructure foundation. My direction is to combine the optimization mindset of Backend engineering with modern data architectures, flexibly applying intelligent technologies (AI) to transform raw data into information that brings practical value. I am still a student, but I want my projects to look and feel ..."
+    },
+    {
+      "title": "XLM-RoBERTa · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/xlm-roberta",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - yashrajOjha/xlmr-NER: Multilingual NER using XLM-RoBERTa",
+      "url": "https://github.com/yashrajOjha/xlmr-NER",
+      "snippet": "Multilingual NER using XLM-RoBERTa. Contribute to yashrajOjha/xlmr-NER development by creating an account on GitHub."
+    },
+    {
+      "title": "[2305.03300] LLM-RM at SemEval-2023 Task 2: Multilingual Complex NER ...",
+      "url": "https://arxiv.org/abs/2305.03300",
+      "snippet": "Named Entity Recognition(NER) is a task of recognizing entities at a token level in a sentence. This paper focuses on solving NER tasks in a multilingual setting for complex named entities. Our team, LLM-RM participated in the recently organized SemEval 2023 task, Task 2: MultiCoNER II,Multilingual Complex Named Entity Recognition. We approach the problem by leveraging cross-lingual ..."
+    }
+  ]
+}

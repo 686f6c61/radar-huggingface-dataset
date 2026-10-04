@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora",
+  "slug": "muapi-jav-company-uncensored-redcraft-wan2-1-il-pony-flux-1-lora",
+  "author": "Muapi",
+  "url": "https://huggingface.co/Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora",
+  "created_at": "2026-06-10T04:53:18.000Z",
+  "updated_at": "2026-06-10T04:54:09.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "pony",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 142,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458220458,
+  "storage_human": "458 MB",
+  "base_model": "cocktailpeanut/pony-diffusion-v6-xl",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Add JAV Company (海外版) uncensored- RedCraft | 红潮 WAN2.1 IL PONY FLUX.1 ...",
+      "url": "https://huggingface.co/Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora/commit/bb887a720db797de33d76327211044de733f3abc",
+      "snippet": "Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model Libraries Diffusers How to use Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora with Diffusers: ... Notebooks Google Colab Kaggle Local AppsSettings Draw Things DiffusionBee Muapi commited on Jun 10 Commit bb887a7 · verified· 1 Parent (s ..."
+    },
+    {
+      "title": "jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora",
+      "url": "https://huggingface.co/Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "JAV Company (海外版) uncensored- RedCraft | 红潮 WAN2.1 IL PONY FLUX.1 LoRA ...",
+      "url": "https://civarchive.com/seaart/models/34bc6d83d46e6af616b12d8efedc22c2/versions/a1aace9397a5fda36d247ac6997c5f90",
+      "snippet": "Download JAV Company (海外版) uncensored- RedCraft | 红潮 WAN2.1 IL PONY FLUX.1 LoRA - LORA. Free AI model download from CivArchive."
+    },
+    {
+      "title": "JAV Company (海外版) uncensored- RedCraft | 红潮 WAN2.1 IL PONY FLUX.1 LoRA",
+      "url": "https://civarchive.com/models/1048386?modelVersionId=1180386",
+      "snippet": "本LoRA适配亚洲NSFW FLUX.1 Dev底模： RedCraft | 红潮 CADS - Reveal3 uncensored 复杂的人物动作需要抽卡，底模的稳定性 还在提升中，目前对于男性器官表达极易出错 Complex character poses require probability, and the stability of the base model is still improving. Currently, the expression of male organs is prone to errors. 尽量提高出图分辨率会 ..."
+    },
+    {
+      "title": "JAV Company (海外版) uncensored- RedCraft | 红潮 WAN2.1 IL PONY FLUX.1 LoRA",
+      "url": "https://civitai.red/models/1048386/jav-company-uncensored-redcraft-or-wan21-il-pony-flux1-lora?modelVersionId=1181920",
+      "snippet": "本LoRA适配亚洲NSFW FLUX.1 Dev底模： RedCraft | 红潮 CADS - Reveal3 uncensored 复杂的人物动作需要抽卡，底模的稳定性还 在提升中，目前对于男性器官表达极易出错 Complex character poses require probability, and the stability of the base model is still improving. Currently, the expression of male organs is prone to errors. 尽量提高出图分辨率会 ..."
+    }
+  ]
+}

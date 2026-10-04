@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Jordansky/od9de08f783c8",
+  "slug": "jordansky-od9de08f783c8",
+  "author": "Jordansky",
+  "url": "https://huggingface.co/Jordansky/od9de08f783c8",
+  "created_at": "2026-10-04T01:25:33.000Z",
+  "updated_at": "2026-10-04T01:26:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 3821079552,
+  "parameters_human": "3.82B",
+  "storage_bytes": 7642181896,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Jordansky%2Faugmented-88cda1f7c6ea5493",
+      "snippet": "Image-to-Image Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 8 Inference Providers Groq Novita Cerebras SambaNova ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=Jordansky%2Faugmented-cb63c157cc726c7e",
+      "snippet": "Text-to-Image Text-to-Video Text-to-Speech + 44 Parameters Reset Parameters 6B 12B 32B 128B Libraries PyTorch TensorFlow JAX Transformers Diffusers GGUF MLX Transformers.js Safetensors sentence-transformers ONNX + 42 Apps vLLM llama.cpp MLX LM LM Studio Ollama Jan Draw Things + 8 Inference Providers Groq Novita Cerebras SambaNova Nscale fal ..."
+    },
+    {
+      "title": "Jordansky AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/jordansky",
+      "snippet": "Browse AI models attributed to Jordansky, sourced from verified model catalogs."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Maintainer «Jordansky»",
+      "url": "https://llm-explorer.com/list/?mtr=Jordansky",
+      "snippet": "A Curated List of the Large and Small Language Models (Open-Source LLMs and SLMs). Maintainer «Jordansky» with Dynamic Sorting and Filtering."
+    }
+  ]
+}

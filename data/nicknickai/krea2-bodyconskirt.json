@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "NicknickAI/krea2-Bodyconskirt",
+  "slug": "nicknickai-krea2-bodyconskirt",
+  "author": "NicknickAI",
+  "url": "https://huggingface.co/NicknickAI/krea2-Bodyconskirt",
+  "created_at": "2026-10-04T13:04:12.000Z",
+  "updated_at": "2026-10-04T14:22:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "bodyconskirt",
+    "lora",
+    "clothes",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234681128,
+  "storage_human": "235 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NicknickAI Creator Profile | Civitai",
+      "url": "https://civitai.com/user/NicknickAI/models",
+      "snippet": "NicknickAI on Civitai: 52 images and 11 AI models, followed by 145 people. Download or generate online."
+    },
+    {
+      "title": "NicknickAI Creator Profile | Civitai",
+      "url": "https://civitai.com/user/NicknickAI/posts",
+      "snippet": "Models Uploaded: 0, Followers: 84, Total Likes Received: 251, Total Downloads Received: 4.1k."
+    },
+    {
+      "title": "krea2 klein bodycon skirt young lady - RunningHub AI Apps",
+      "url": "https://www.runninghub.ai/ai-detail/2074831376150523905",
+      "snippet": "Follow Creations Comments krea2 klein bodycon skirt young lady 1 Stylized Text-to-Image"
+    },
+    {
+      "title": "krea2 klein bodycon skirt young lady - RunningHub AIアプリ",
+      "url": "https://www.runninghub.ai/ja/ai-detail/2074831376150523905",
+      "snippet": "生成結果がありません。アプリを実行して確認してください。 作品 公開 APIタスク"
+    },
+    {
+      "title": "把控细节与质感!高审美「包臀裙 & 国风旗袍」Krea2 LoRA迟来的开源（附提示词+工作流）_哔哩哔哩_bilibili",
+      "url": "https://www.bilibili.com/video/BV1758b6HE7y/",
+      "snippet": "! ，【AI】帮你清空一次，【AI】 我赌你的 油箱已经空了 没有一滴油，AI好啊 [妙啊]，【AI】帮你清空一次，BOLOLI中华娘旗袍， Krea2特调模型全盘点 极清生图流 手搓skill技巧 WorkBuddy简单应用解决comfyui报错"
+    }
+  ]
+}

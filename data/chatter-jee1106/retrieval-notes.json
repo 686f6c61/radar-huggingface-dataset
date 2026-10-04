@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chatter-jee1106/retrieval-notes",
+  "slug": "chatter-jee1106-retrieval-notes",
+  "author": "chatter-jee1106",
+  "url": "https://huggingface.co/chatter-jee1106/retrieval-notes",
+  "created_at": "2026-10-04T02:04:03.000Z",
+  "updated_at": "2026-10-04T02:04:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatNow — Tchat gratuit sans inscription",
+      "url": "https://chatnow.fr/",
+      "snippet": "Rejoignez des milliers de connectés. Chat en ligne gratuit, anonyme et sans inscription. Salons thématiques, messages privés et …"
+    },
+    {
+      "title": "Chaat.fr - tchat , tchat gratuit , chat en ligne , tchatche gratuit ...",
+      "url": "https://www.chaat.fr/",
+      "snippet": "Aussi rapide que gratuit, découvrez les célibataires qui ont envie de faire des rencontres ils sont déjà connectés, venez chatter avec …"
+    },
+    {
+      "title": "Chaat - Site de chat gratuit et sans inscription",
+      "url": "https://www.chaat.fr/chat-gratuit",
+      "snippet": "Chaat permet de chatter avec des personnes des 4 coins du monde. Contrairement aux autres sites, nous avons fait le choix de …"
+    },
+    {
+      "title": "Chatteurs — Tchat gratuit sans inscription, le réseau depuis 2003",
+      "url": "https://chatteurs.com/",
+      "snippet": "Rejoins des milliers de personnes sur Chatteurs, le tchat francophone gratuit sans inscription. Salons thématiques, webcam, …"
+    },
+    {
+      "title": "Bienvenue sur Chat fr - Chat en ligne sans inscription gratuit",
+      "url": "https://www.chat-fr.org/",
+      "snippet": "Gratuit et simple d’utilisation, vous retrouverez un grand nombre de célibataires connectés, chatter avec eux, consulter leur profil ou …"
+    }
+  ]
+}

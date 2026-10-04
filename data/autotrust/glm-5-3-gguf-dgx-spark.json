@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "autotrust/GLM-5.3-GGUF-DGX-Spark",
+  "slug": "autotrust-glm-5-3-gguf-dgx-spark",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark",
+  "created_at": "2026-09-20T04:57:35.000Z",
+  "updated_at": "2026-09-21T17:24:57.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dgx-spark",
+    "moe",
+    "expert-pruning",
+    "iq2_xxs",
+    "glm",
+    "glm-dsa",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 22,
+  "downloads_30d": 4691,
+  "trending_score": 16,
+  "parameters": 562687789632,
+  "parameters_human": "562.69B",
+  "storage_bytes": 160760302208,
+  "storage_human": "160.8 GB",
+  "base_model": "autotrust/GLM-5.3-SLIM-E192, zai-org/GLM-5.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoTrust AI Lab - Hugging Face",
+      "url": "https://huggingface.co/autotrust",
+      "snippet": "vor 2 Tagen ... models 5. Sort: Recently updated · autotrust/JEV-27B-VL · autotrust/JEV-27B · autotrust/JEV-9B · autotrust/GLM-5.3-Flash-GGUF-DGX-Spark · autotrust/ ..."
+    },
+    {
+      "title": "Quantized Models for zai-org/GLM-5.3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Azai-org%2FGLM-5.3",
+      "snippet": "Models ; autotrust/GLM-5.3-GGUF-DGX-Spark. Text Generation • 563B · 13 days ago · 4.69k • 22 ; nvidia/GLM-5.3-NVFP4. Text Generation • 391B · 16 days ago · 24.9k • 31 ..."
+    },
+    {
+      "title": "Marc Seal | Aevonix Research (@Kurcide) / X",
+      "url": "https://x.com/Kurcide",
+      "snippet": "Founder, Aevonix | 36x DGX Spark Cluster | Building local AI agents with ... model — built with AutoTrust AI's Blocks of Experts (BoE) recipe. It does ..."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&p=2&sort=trending",
+      "snippet": "empero-ai/Qwythos-9B-Claude-Mythos-5-1M-GGUF. Image-Text-to-Text • 9B ... autotrust/GLM-5.3-GGUF-DGX-Spark. Text Generation • 563B • Updated 12 days ..."
+    },
+    {
+      "title": "Generative AI News | AI Legal Lab - LegalAgent",
+      "url": "https://legalagent.co.jp/en/legal-lab/ai-news/",
+      "snippet": "Z.ai releases GLM-5.3-Flash, a natively multimodal open model. Z.ai released ... DGX Spark and Apple silicon. Speed and capability figures are provider ..."
+    }
+  ]
+}

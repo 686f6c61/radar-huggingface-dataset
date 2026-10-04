@@ -5,7 +5,7 @@
   "author": "Kutches",
   "url": "https://huggingface.co/Kutches/Anim4",
   "created_at": "2026-02-01T03:25:49.000Z",
-  "updated_at": "2026-09-21T02:08:55.000Z",
+  "updated_at": "2026-10-03T13:44:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 17,
-  "downloads_30d": 6877,
+  "downloads_30d": 7504,
   "trending_score": 0,
   "parameters": 2091068928,
   "parameters_human": "2.09B",
-  "storage_bytes": 743321524775,
-  "storage_human": "743.3 GB",
+  "storage_bytes": 750661982591,
+  "storage_human": "750.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

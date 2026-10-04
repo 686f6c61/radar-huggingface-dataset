@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adpretko/celerity-271m-8k-tema-ablation-ad0p4-tema8",
+  "slug": "adpretko-celerity-271m-8k-tema-ablation-ad0p4-tema8",
+  "author": "adpretko",
+  "url": "https://huggingface.co/adpretko/celerity-271m-8k-tema-ablation-ad0p4-tema8",
+  "created_at": "2026-10-04T12:57:12.000Z",
+  "updated_at": "2026-10-04T12:57:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "celerity",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541683906,
+  "storage_human": "542 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adpretko/celerity-271m-8k-ad0p4 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-ad0p4",
+      "snippet": "Celerity 271M — 8k — ad0p4 Celerity 271M checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-271m-8k-residual-dropout-0p2 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p2",
+      "snippet": "Celerity 271M — residual_dropout_0.2 Celerity 271M debug/ablation checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-271m-8k-residual-dropout-0p4 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p4",
+      "snippet": "Celerity 271M — residual_dropout_0.4 Celerity 271M debug/ablation checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "𝐎𝐧𝐞 𝐇𝐨𝐮𝐫 𝟒𝐊 I 𝐂𝐲𝐛𝐞𝐫𝐩𝐮𝐧𝐤 𝐑𝐨𝐥𝐥𝐞𝐫 𝐂𝐨𝐚𝐬𝐭𝐞𝐫 𝐒𝐮𝐧𝐬𝐞𝐭 2 I 𝐈𝐍𝐅𝐈𝐍𝐈𝐓𝐄 𝐋𝐎𝐎𝐏 I ...",
+      "url": "https://www.youtube.com/watch?v=W9as7QP8GkM",
+      "snippet": "Dear, &#x27;Like, share, comment on this video. Also, subscribe to my YouTube channel, and don&#x27;t forget to click on that bell icon to get regular updates on my ne..."
+    },
+    {
+      "title": "Celerity Technologies",
+      "url": "https://www.celeritytek.com/",
+      "snippet": "Celerity Technologies supports True 8K, 48Gpbs & Uncompressed Connectivity --- Scalable, Configurable, and Detachable Celerity Technologies utilizes our 25 years of experience and innovations in fiber optics and electronics engineering to create AV distribution technology that enables ease and simplification in fiber optic user experience."
+    }
+  ]
+}

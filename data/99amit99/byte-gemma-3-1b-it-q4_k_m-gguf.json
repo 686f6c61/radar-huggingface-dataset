@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "99Amit99/byte-gemma-3-1b-it.Q4_K_M.gguf",
+  "slug": "99amit99-byte-gemma-3-1b-it-q4_k_m-gguf",
+  "author": "99Amit99",
+  "url": "https://huggingface.co/99Amit99/byte-gemma-3-1b-it.Q4_K_M.gguf",
+  "created_at": "2026-10-04T13:45:21.000Z",
+  "updated_at": "2026-10-04T13:55:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 806058144,
+  "storage_human": "806 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google/gemma-3-1b-it-qat-q4_0-gguf · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it-qat-q4_0-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "google_gemma-3-1b-it-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/bartowski/google_gemma-3-1b-it-GGUF/summary",
+      "snippet": "The loading time may be slower but it will result in an overall speed incrase. Click to view Q4_0_X_X information (deprecated I&#x27;m keeping this section to show the potential theoretical uplift in performance from using the Q4_0 with online repacking."
+    },
+    {
+      "title": "Gemma 3 - Google&#x27;s Most Advanced Open AI Model - GitHub",
+      "url": "https://github.com/gemma-3/gemma-3",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    },
+    {
+      "title": "gemma-3 (Gemma3) · GitHub",
+      "url": "https://github.com/gemma-3/",
+      "snippet": "Gemma 3 is Google&#x27;s most advanced open AI model, offering state-of-the-art performance with a 128K context window, multimodal capabilities, and support for 140+ languages. Build powerful applications on a single GPU with this cutting-edge technology."
+    }
+  ]
+}

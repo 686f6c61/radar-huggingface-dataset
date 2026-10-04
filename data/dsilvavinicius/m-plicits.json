@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dsilvavinicius/m-plicits",
+  "slug": "dsilvavinicius-m-plicits",
+  "author": "dsilvavinicius",
+  "url": "https://huggingface.co/dsilvavinicius/m-plicits",
+  "created_at": "2026-10-04T13:09:12.000Z",
+  "updated_at": "2026-10-04T13:22:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "m-plicits",
+    "arxiv:2609.28684",
+    "neural-implicit-surfaces",
+    "surface-reconstruction",
+    "signed-distance-functions",
+    "multiscale",
+    "siren",
+    "3d",
+    "neurips-2026",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34247193,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isabelle Rodrigues - Computer Vision - LinkedIn",
+      "url": "https://ca.linkedin.com/in/misabellerv",
+      "snippet": "... AI applications for games · Check my latest publication at NeurIPS: https://dsilvavinicius.github.io/m-plicits ... models, image processing, computational ..."
+    },
+    {
+      "title": "neurips-2026 · GitHub Topics",
+      "url": "https://github.com/topics/neurips-2026",
+      "snippet": "dsilvavinicius / m-plicits ... Code, models and data for M-plicits: Neural Implicit Surfaces via Nested Multiscale Residuals (NeurIPS 2026). A noise-robust neural ..."
+    },
+    {
+      "title": "How do brain circuits modularize to tackle complex tasks ... - Instagram",
+      "url": "https://www.instagram.com/p/Dcwf5xqiaf_/",
+      "snippet": "01.09.2026 ... Deep Equilibrium Models (DEQs) represent a paradigm-shifting artificial intelligence architecture that bypasses the traditional memory wall of ..."
+    },
+    {
+      "title": "WiML @ NeurIPS 2026 Happy to share that our research ... - Instagram",
+      "url": "https://www.instagram.com/p/DdTqxZ5jlfs/",
+      "snippet": "15.09.2026 ... Our work brings together mathematics, fuzzy logic, and explainable machine learning to develop a four-valued fuzzy feature-fusion framework ..."
+    },
+    {
+      "title": "With a Spikeling board and the GUI, students have a ... - Instagram",
+      "url": "https://www.instagram.com/reel/DUGUzyyklEw/",
+      "snippet": "29.01.2026 ... \"M-plicits: Neural Implicit Surfaces via Nested Multiscale Residuals\" was accepted at NeurIPS 2026! A surface as a sum of sinusoidal networks ..."
+    }
+  ]
+}

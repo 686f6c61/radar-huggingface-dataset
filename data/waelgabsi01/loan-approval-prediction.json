@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "waelGabsi01/loan-approval-prediction",
+  "slug": "waelgabsi01-loan-approval-prediction",
+  "author": "waelGabsi01",
+  "url": "https://huggingface.co/waelGabsi01/loan-approval-prediction",
+  "created_at": "2026-10-04T14:29:23.000Z",
+  "updated_at": "2026-10-04T15:28:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "tabular-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1574,
+  "storage_human": "1574 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humble Bundle | game bundles, book bundles, software bundles, and …",
+      "url": "https://www.humblebundle.com/",
+      "snippet": "Humble Bundle sells games, books, software, and more. Our mission is to support charity while providing awesome content to …"
+    },
+    {
+      "title": "Humble Bundles",
+      "url": "https://www.humblebundle.com/bundles",
+      "snippet": "Our Bundles are limited-time collections of games, books, software, and more. Simply pay what you want and choose where your …"
+    },
+    {
+      "title": "Humble Bundle | game bundles, book bundles, software bundles, and …",
+      "url": "https://fr.humblebundle.com/",
+      "snippet": "Fill your dungeons with characters and scenery with this bundle of 3D printable miniatures from Hayland Terrain and Warp …"
+    },
+    {
+      "title": "Lots de jeux - Humble Bundle",
+      "url": "https://fr.humblebundle.com/games",
+      "snippet": "In this very special Trine bundle, we’re offering the first four Trine games plus Nine Parchments for $10! Since these games are …"
+    },
+    {
+      "title": "Humble Bundle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Humble_Bundle",
+      "snippet": "Humble Bundle, Inc. is a digital storefront for video games, which grew out of its original offering of Humble Bundles, collections of …"
+    }
+  ]
+}

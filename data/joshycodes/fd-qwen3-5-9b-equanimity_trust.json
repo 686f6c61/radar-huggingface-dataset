@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-qwen3.5-9b-equanimity_trust",
+  "slug": "joshycodes-fd-qwen3-5-9b-equanimity_trust",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-qwen3.5-9b-equanimity_trust",
+  "created_at": "2026-10-04T00:55:37.000Z",
+  "updated_at": "2026-10-04T00:56:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Variable Speed V-Belt – Tagged \"Section_W25 (25mm Pitch)\"",
+      "url": "https://www.totallybelts.com/en-ca/collections/variable-speed-v-belt/section_w25-25mm-pitch",
+      "snippet": "Our range of Variable Speed V-Belts includes belts conforming to ISO R 1604, they are designated by e.g. the letter W followed by a …"
+    },
+    {
+      "title": "V-Belt Cross Reference Guide | VBeltSupply.com",
+      "url": "https://www.vbeltsupply.com/pages/vbelt-cross-reference",
+      "snippet": "Our belt replacement guide includes a belt cross-reference tool, a v-belt conversion chart, and a v-belt size chart so you can find …"
+    },
+    {
+      "title": "GOODRICH 25W V-belt Replacement - offroadbelts.com",
+      "url": "https://offroadbelts.com/product/goodrich-25w-replacement-belt",
+      "snippet": "This D&D 17-section v-belt is a direct replacement for Goodrich 25W, dimensionally matched to OEM specifications for a confident fit. …"
+    },
+    {
+      "title": "EPTON INDUSTRIES 25W V-belt Replacement - offroadbelts.com",
+      "url": "https://offroadbelts.com/product/epton-industries-25w-replacement-belt",
+      "snippet": "This D&D 17-section v-belt is a direct replacement for Epton Industries 25W, dimensionally matched to OEM specifications for a …"
+    },
+    {
+      "title": "Amazon.com: A 25 V Belt",
+      "url": "https://www.amazon.com/25-v-belt/s?k=a+25+v+belt",
+      "snippet": "Jason Industrial 25ft - Accu-Link - A Section - V-belt. A / 4L Profile, 1/2\" Width, 25ft Length."
+    }
+  ]
+}

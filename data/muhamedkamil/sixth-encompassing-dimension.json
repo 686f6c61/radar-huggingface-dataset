@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "muhamedkamil/sixth-encompassing-dimension",
+  "slug": "muhamedkamil-sixth-encompassing-dimension",
+  "author": "muhamedkamil",
+  "url": "https://huggingface.co/muhamedkamil/sixth-encompassing-dimension",
+  "created_at": "2026-10-04T15:02:31.000Z",
+  "updated_at": "2026-10-04T15:06:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "sixth-dimension",
+    "encompassment",
+    "K6",
+    "sheaf-theory",
+    "category-theory",
+    "abduction",
+    "cognitive-representation",
+    "unity-of-knowledge",
+    "epistemology",
+    "mathematical-cognition",
+    "en",
+    "ar",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "6thdimenzion",
+      "url": "https://sixthdimenzion.com/",
+      "snippet": "The everything platformfor your data teams 6thdimenzion ingests, models, and acts on your events in real time — an all-in-one replacement for the dozen dashboards your team juggles today."
+    },
+    {
+      "title": "MuhamedKamil (Muhamed Kamel) · GitHub",
+      "url": "https://github.com/MuhamedKamil",
+      "snippet": "Machine Learning Engineer at Tahaluf Al Emarat Technical Solutions - MuhamedKamil"
+    },
+    {
+      "title": "Sixth - Your New AI Partner",
+      "url": "https://trysixth.com/",
+      "snippet": "Your New AI Partner Meet Your New AI Coding Partner Build, debug, and ship faster with Sixth."
+    },
+    {
+      "title": "muhamedkamil/berna-prototype-162m · Hugging Face",
+      "url": "https://huggingface.co/muhamedkamil/berna-prototype-162m",
+      "snippet": "muhamedkamil / berna-prototype-162m Like 0 Text Generation Transformers Safetensors English Arabic berna from-scratch prototype License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Specialist, E-com Expert & Founder - Muhammad Kamil",
+      "url": "https://muhammadkamil.com/?page_id=430",
+      "snippet": "Muhammad Kamil — AI automation specialist, e-commerce architect and founder. ThirdDimension Agency. Shopify expert, performance marketing, AI workflows. Based in Lahore, Pakistan."
+    }
+  ]
+}

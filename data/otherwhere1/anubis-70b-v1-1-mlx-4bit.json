@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "otherwhere1/Anubis-70B-v1.1-mlx-4Bit",
+  "slug": "otherwhere1-anubis-70b-v1-1-mlx-4bit",
+  "author": "otherwhere1",
+  "url": "https://huggingface.co/otherwhere1/Anubis-70B-v1.1-mlx-4Bit",
+  "created_at": "2026-10-04T01:36:04.000Z",
+  "updated_at": "2026-10-04T01:37:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "base_model:TheDrummer/Anubis-70B-v1.1",
+    "base_model:quantized:TheDrummer/Anubis-70B-v1.1",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 70553706496,
+  "parameters_human": "70.55B",
+  "storage_bytes": 39705778810,
+  "storage_human": "39.7 GB",
+  "base_model": "TheDrummer/Anubis-70B-v1.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "otherwhere1/Anubis-70B-v1.1-mlx-4Bit · Hugging Face",
+      "url": "https://huggingface.co/otherwhere1/Anubis-70B-v1.1-mlx-4Bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "otherwhere1/Anubis-70B-v1.1-mlx-4Bit · Discussions",
+      "url": "https://huggingface.co/otherwhere1/Anubis-70B-v1.1-mlx-4Bit/discussions",
+      "snippet": "otherwhere1 / Anubis-70B-v1.1-mlx-4Bit Like 0 MLX Safetensors llama 4-bit precision Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Anubis 70b V1 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/anubis-70b-v1.html",
+      "snippet": "Download Anubis 70b V1 GGUF model. 41.3 GB, 3,692 downloads, 14 likes."
+    },
+    {
+      "title": "Anubis 70B v1.1 | Open Laboratory",
+      "url": "https://openlaboratory.com/models/anubis-70b-v1_1/",
+      "snippet": "A 70.6 billion parameter Llama 3.3-based model fine-tuned for character consistency and dynamic dialogue in creative text generation applications."
+    },
+    {
+      "title": "Anubis-70B-v1: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/anubis-70b-v1-thedrummer",
+      "snippet": "Anubis-70B-v1 is a 70-billion parameter language model developed by TheDrummer and published by BeaverAI as a fine-tuned Llama 3.3 variant optimized for..."
+    }
+  ]
+}

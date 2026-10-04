@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vaultai/Qwen3.8-27B-8bit",
+  "slug": "vaultai-qwen3-8-27b-8bit",
+  "author": "vaultai",
+  "url": "https://huggingface.co/vaultai/Qwen3.8-27B-8bit",
+  "created_at": "2026-10-04T14:44:25.000Z",
+  "updated_at": "2026-10-04T14:44:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29521207804,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ایزی تریدر | تبادل نظر نی نی سایت",
+      "url": "https://www.ninisite.com/discussion/topic/4869691/%D8%A7%DB%8C%D8%B2%DB%8C-%D8%AA%D8%B1%DB%8C%D8%AF%D8%B1",
+      "snippet": "Jan 29, 2020 · نی‌نی سایتی‌های عزیز دنبال یه جای مطمئن برای یاد گرفتن نکات بارداری، نگهداری نوزاد، تربیت کودک و بهبود رابطه با همسر هستی؟ توی کانال \"بله\" ما هر روز: نکات کاربردی …"
+    },
+    {
+      "title": "صندوق طلا تو ایزی تریدر یا سکه پارسیان | تبادل نظر نی نی سایت",
+      "url": "https://www.ninisite.com/discussion/topic/18502367/%D8%B5%D9%86%D8%AF%D9%88%D9%82-%D8%B7%D9%84%D8%A7-%D8%AA%D9%88-%D8%A7%DB%8C%D8%B2%DB%8C-%D8%AA%D8%B1%DB%8C%D8%AF%D8%B1-%DB%8C%D8%A7-%D8%B3%DA%A9%D9%87-%D9%BE%D8%A7%D8%B1%D8%B3%DB%8C%D8%A7%D9%86",
+      "snippet": "Aug 7, 2026 · مدیر استارتر عضویت: 1402/11/06 تعداد پست: 383 عنوان صندوق طلا تو ایزی تریدر یا سکه پارسیان 61 بازدید | 11 پست"
+    },
+    {
+      "title": "ایزی تریدر | تبادل نظر نی نی سایت",
+      "url": "https://www.ninisite.com/discussion/topic/17784080/%D8%A7%DB%8C%D8%B2%DB%8C-%D8%AA%D8%B1%DB%8C%D8%AF%D8%B1",
+      "snippet": "Jan 24, 2026 · خانوما میخوام بفروشم همش میزنه درحال بررسی خیلی طول میکشه اولین بارمه چند سال پیش ای تی اف ..."
+    },
+    {
+      "title": "نحوه خرید سهام عرضه اولیه در کارگزاری ها | تبادل نظر نی نی سایت",
+      "url": "https://www.ninisite.com/discussion/topic/4769774/%D9%86%D8%AD%D9%88%D9%87-%D8%AE%D8%B1%DB%8C%D8%AF-%D8%B3%D9%87%D8%A7%D9%85-%D8%B9%D8%B1%D8%B6%D9%87-%D8%A7%D9%88%D9%84%DB%8C%D9%87-%D8%AF%D8%B1-%DA%A9%D8%A7%D8%B1%DA%AF%D8%B2%D8%A7%D8%B1%DB%8C-%D9%87%D8%A7",
+      "snippet": "اول از کارگزاری مفید و ایزی تریدر شروع میکنم مطابق شکل زیر خرید خودکار رو فعال کنید و با شارژکردن حسابتون خود کارگزاری براتون خرید انجام میده بدون کار خاصی 2-کارگزاری …"
+    },
+    {
+      "title": "ایزی تریدر | تبادل نظر نی نی سایت",
+      "url": "https://www.ninisite.com/discussion/topic/5132178/%D8%A7%DB%8C%D8%B2%DB%8C-%D8%AA%D8%B1%DB%8C%D8%AF%D8%B1",
+      "snippet": "Sep 29, 2020 · چرا جایگاه لحظه ایم رو تو سفارشات نشون نمیده ؟ چجوری بفهمم نفر چندمم صف فروش زیاده از اون گذشته برا بقیه نشون میده برا خودت نه"
+    }
+  ]
+}

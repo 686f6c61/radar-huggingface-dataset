@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ishaan-g/whisper-hinglish-swift_timestamped",
+  "slug": "ishaan-g-whisper-hinglish-swift_timestamped",
+  "author": "ishaan-g",
+  "url": "https://huggingface.co/ishaan-g/whisper-hinglish-swift_timestamped",
+  "created_at": "2026-10-04T15:15:41.000Z",
+  "updated_at": "2026-10-04T15:17:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "hinglish",
+    "hi",
+    "en",
+    "base_model:Oriserve/Whisper-Hindi2Hinglish-Swift",
+    "base_model:quantized:Oriserve/Whisper-Hindi2Hinglish-Swift",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 303795926,
+  "storage_human": "304 MB",
+  "base_model": "Oriserve/Whisper-Hindi2Hinglish-Swift",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who is Smit Machchhar? Hero Indian pilot who thwarted alleged …",
+      "url": "https://www.hindustantimes.com/india-news/who-is-smit-machchhar-hero-indian-pilot-from-mumbai-saved-lives-on-flydubai-flight-to-israel-despite-being-stabbed-101790820714090.html",
+      "snippet": "3 days ago · Who is Smit Machchhar? Hero Indian pilot who thwarted alleged flydubai flight crash attempt Smit Machchhar …"
+    },
+    {
+      "title": "Who Is Captain Smit Machchhar? Flydubai Pilot Hailed as Hero",
+      "url": "https://www.newsweek.com/who-is-capt-smit-machchhar-flydubai-pilot-flight-fz1073-12509226",
+      "snippet": "3 days ago · Capt. Smit Machchhar is the Indian FlyDubai pilot credited with helping avert a midair disaster."
+    },
+    {
+      "title": "Who Is Captain Smit Machchhar, the Pilot Hailed as a Hero After ...",
+      "url": "https://www.nytimes.com/2026/10/01/world/asia/israel-flight-flydubai-pilot-captain-smit-machchhar.html",
+      "snippet": "3 days ago · Who Is the Indian Pilot Being Hailed as a Hero? Capt. Smit Machchhar suffered stab wounds while fending off an attack …"
+    },
+    {
+      "title": "Smit Machchhar Bio, Age, Wife, Flydubai Pilot’s Career & FZ1073 …",
+      "url": "https://thebiographybytes.com/smit-machchhar/",
+      "snippet": "3 days ago · Smit Machchhar is an Indian flydubai captain from Mumbai. He helped save 174 lives after a violent cockpit stabbing on …"
+    },
+    {
+      "title": "Who is Smit Machchhar? Hero Indian flydubai captain was former …",
+      "url": "https://www.theweek.in/news/middle-east/2026/09/30/smit-machchhar-flydubai-pilot-spiceject-hijack-scare-israel-uae-saudi.html",
+      "snippet": "4 days ago · Who is Smit Machchhar? Hero Indian flydubai captain was former SpiceJet pilot, has 9,750 flying hours on Boeing …"
+    }
+  ]
+}

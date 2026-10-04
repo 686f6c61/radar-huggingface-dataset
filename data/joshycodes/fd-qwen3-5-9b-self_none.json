@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-qwen3.5-9b-self_none",
+  "slug": "joshycodes-fd-qwen3-5-9b-self_none",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-qwen3.5-9b-self_none",
+  "created_at": "2026-10-04T01:27:46.000Z",
+  "updated_at": "2026-10-04T01:28:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-feather-f3-mt · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt",
+      "snippet": "Qwen/Qwen3.5-9B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3.5-9B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 8,309,133 tokens, 8,591 documents, of which 0 self-authored and 8,591 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its ..."
+    },
+    {
+      "title": "joshycodes/Qwen3.5-9B-sft-control-lora · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/Qwen3.5-9B-sft-control-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Running Qwen 3.5 Locally: Complete Guide to Open-Source LLM Deployment ...",
+      "url": "https://techplanet.today/post/running-qwen-35-locally-complete-guide-to-open-source-llm-deployment-on-consumer-hardware",
+      "snippet": "The combination of multiple model sizes, advanced quantization, and excellent performance makes Qwen 3.5 the go-to choice for local LLM deployment in 2026. Start with the 9B model on consumer hardware to experience the capabilities, then scale up to larger models as your hardware and use cases demand."
+    },
+    {
+      "title": "The Simple Guide to Running Qwen 3.5 9B Locally with Ollama",
+      "url": "https://www.rushis.com/the-simple-guide-to-running-qwen-3-5-9b-locally-with-ollama/",
+      "snippet": "Disk Space: About 10-15GB of free space for the model and overhead. Final Thoughts Running Qwen 3.5 9B locally isn&#x27;t just for \"techies\" anymore. With Ollama, it&#x27;s as simple as downloading an app and running a command. You get 100% privacy, no subscription fees, and a world-class AI right on your desk."
+    },
+    {
+      "title": "How to run Qwen3.5-9B with llama.cpp and Pi | Jeroen Nyckees",
+      "url": "https://jenyckee.github.io/posts/qwen-pi-local-llm/",
+      "snippet": "Here&#x27;s how. Qwen 3.5 Qwen3.5 is Alibaba&#x27;s latest open-weight language model family. The 9B variant sits in a sweet spot: large enough to be genuinely useful for coding tasks, small enough to run on consumer hardware once quantized. It supports a 256K token context window and performs competitively with much larger models on coding benchmarks."
+    }
+  ]
+}

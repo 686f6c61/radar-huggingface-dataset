@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8",
+  "slug": "automatosx-ax-qwen3-vl-4b-instruct-mlx-axq-mxfp8",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8",
+  "created_at": "2026-10-04T01:42:48.000Z",
+  "updated_at": "2026-10-04T01:43:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_vl",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "qwen3-vl",
+    "MXFP8",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 4990597422,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8 - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8 · Discussions",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8/discussions",
+      "snippet": "Instructions to use AutomatosX/AX-Qwen3-VL-4B-Instruct-MLX-AXQ-MXFP8 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "auto-quantize-model/models/qwen3_vl_4b_instruct/README.md at master ...",
+      "url": "https://github.com/CodeGandee/auto-quantize-model/blob/master/models/qwen3_vl_4b_instruct/README.md",
+      "snippet": "Prefer downloading the model via ModelScope or Hugging Face CLI, or the respective web UI, into your chosen $ {MODELS_ROOT}. Keep any quantized or exported variants (e.g., ONNX, TensorRT) in dedicated experiment or export directories rather than inside this snapshot."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    },
+    {
+      "title": "Model Architecture | QwenLM/Qwen3-VL | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen3-VL/4.2-model-architecture",
+      "snippet": "This document describes the technical architecture of the Qwen3-VL model family, including the vision encoder, language model backbone, multimodal fusion mechanism, and position encoding system. It co"
+    }
+  ]
+}

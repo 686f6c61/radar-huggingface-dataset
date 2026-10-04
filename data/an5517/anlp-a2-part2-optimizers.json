@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AN5517/anlp-a2-part2-optimizers",
+  "slug": "an5517-anlp-a2-part2-optimizers",
+  "author": "AN5517",
+  "url": "https://huggingface.co/AN5517/anlp-a2-part2-optimizers",
+  "created_at": "2026-10-04T15:10:25.000Z",
+  "updated_at": "2026-10-04T15:10:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Viv0605101/anlp-a2-part2-optimizers · Hugging Face",
+      "url": "https://huggingface.co/Viv0605101/anlp-a2-part2-optimizers",
+      "snippet": "The dense Part 1 architecture pre-trained for next-token prediction on browndw/human-ai-parallel-corpus for one full pass (1x the dataset), once per optimizer. Every optimizer is implemented from scratch (only torch.optim.Optimizer is used, as a base class), one per category of Table 1 of Fantastic Pretraining Optimizers and Where to Find Them; Sophia-G is the bonus Hessian-based optimizer."
+    },
+    {
+      "title": "abhirajratna/anlp-a2-optim-mars · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-mars",
+      "snippet": "ANLP A2 Part 2: dense 33.6M decoder trained with MARS The dense model of Part 1 (variant v1: 8 layers, d_model 512, 8 heads, 2-layer MLP 2048), pretrained for next-token prediction on one pass over the training split of browndw/human-ai-parallel-corpus, with a from-scratch MARS optimizer."
+    },
+    {
+      "title": "GitHub - bitmap4/anlp-a2",
+      "url": "https://github.com/bitmap4/anlp-a2",
+      "snippet": "Contribute to bitmap4/anlp-a2 development by creating an account on GitHub."
+    },
+    {
+      "title": "CMU Advanced NLP S2026",
+      "url": "https://cmu-l3.github.io/anlp-spring2026/",
+      "snippet": "Advanced Natural Language Processing / Spring 2026 Advanced natural language processing is a graduate-level course on natural language processing aimed at students who are interested in doing cutting-edge research in the field. The course focuses on modern methods using neural networks, covering the fundamentals of generative models with a particular focus on the foundations of large language ..."
+    },
+    {
+      "title": "GitHub - XLOverflow/Mini_LLaMa: 11711 ANLP course assignment1",
+      "url": "https://github.com/XLOverflow/Mini_LLaMa",
+      "snippet": "11711 ANLP course assignment1. Contribute to XLOverflow/Mini_LLaMa development by creating an account on GitHub."
+    }
+  ]
+}

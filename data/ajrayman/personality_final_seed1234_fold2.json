@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ajrayman/personality_final_seed1234_fold2",
+  "slug": "ajrayman-personality_final_seed1234_fold2",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/personality_final_seed1234_fold2",
+  "created_at": "2026-10-04T15:11:52.000Z",
+  "updated_at": "2026-10-04T15:17:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text_demo_multitask",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125095596,
+  "parameters_human": "125.1M",
+  "storage_bytes": 3002451823,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mopoga Games – Play Free Browser Games Online",
+      "url": "https://games.mopoga.com/",
+      "snippet": "Play free browser games on Mopoga. Explore popular visual novels, RPGs, simulations and story-driven games online — no …"
+    },
+    {
+      "title": "Mopoga Help / F.A.Q.",
+      "url": "https://mopoga.com/faq",
+      "snippet": "Mopoga Help / FAQ, answering the most common issues reported by our visitors."
+    },
+    {
+      "title": "Mopoga Contact Page",
+      "url": "https://mopoga.com/contact",
+      "snippet": "Although Mopoga.com attempts to ensure that all information contained on this website is error-free, we accept no liability for …"
+    },
+    {
+      "title": "Mopoga - Play Free Mobile Games – Mobile Friendly",
+      "url": "https://imopoga.com/",
+      "snippet": "Mopoga brings together the best free online games to play directly in your browser. From RPGs and puzzle games to interactive AI …"
+    },
+    {
+      "title": "Mopoga Guides – Browser Game Help & How-Tos",
+      "url": "https://games.mopoga.com/blog/",
+      "snippet": "Find practical Mopoga guides for browser-game loading, saves, performance, mobile compatibility and choosing games that fit your …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kokosowek/MiniMax-H3-Turbo-Lora",
+  "slug": "kokosowek-minimax-h3-turbo-lora",
+  "author": "Kokosowek",
+  "url": "https://huggingface.co/Kokosowek/MiniMax-H3-Turbo-Lora",
+  "created_at": "2026-10-04T13:44:16.000Z",
+  "updated_at": "2026-10-04T13:44:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "text-to-video",
+    "text-to-audio",
+    "audio-video",
+    "lora",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112303520992,
+  "storage_human": "112.3 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenArt MiniMax H3 - MiniMax H3 Video Generator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=kUOmTfDY0rQ4POhwW5y%2DARQspBoxQS9CC6lfePHNR6jsmJUxNTr2mvAmPopS5SytJNxhqnOhj21KkA4RxJx%2D0KJNkEWwvzl3Dx_D7UxJlIu2QEpOMMPP6Ibzk8jDgyhEHUuA9hsVhi8z98lsqkf%2Dcas40N_j4ixJ3xWkGuEYhWo.cJRhQcv%2DmqfpjlKGpBlgtA&rut=d524431c356c28f985cbbeb02186b3d13290c5fdce41848637236eaf3da40e2d&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De88jHdFhwYcxxuT7Qad8YeLjVUCUweo7Rxhv5mh4Jg%2DOKj9wPbstZk0TJApIK4Bzly_hdbh0nKV43gVQ6__Wv8MsAmGKoX0qf0W%2DxDcVc2P9%2D4Xst8Mft6Swb%2DCh9GutkCab7zAdIgcW5DLZkme7DvTornV%2DCHFsuQ9TT7xosip1W6Ro5XW4x4rsTPytNEQefefI49GyZj%2D2wIQ4TpuW4_7IfLT44%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmYWktbW9kZWwlMmZtaW5pbWF4LWgzJTJmJTNmdXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkc2VhcmNoLWdvb2dsZS1nbG9iYWwodDEpX3NlYXJjaF9haV9tb2RlbHNfYWlfbWF4X2x0di1zZWFyY2gtYWNxLXdlYiUyNnV0bV9jb250ZW50JTNkbWluaW1heCUyNnV0bV90ZXJtJTNkbWluaW1heCUyNTIwaDMlMjZ1dG1fY2FtcGFpZ24lM2RHbG9iYWwoVDEpX1NlYXJjaF9BSV9Nb2RlbHNfQUlfTWF4X0xUViUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNnV0bV9pZCUzZDU3MTU5MDE2MSUyNmhzYV9hY2MlM2Q5NTc0NTA0ODAwJTI2aHNhX2NhbSUzZDIzNjEzNjEzNTc4JTI2aHNhX2dycCUzZDExODQxNzYzOTM0NjU0NTElMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkcyUyNmhzYV90Z3QlM2Rrd2QtNzQwMTE3OTUxNDY0NDIlM2Fsb2MtNjYlMjZoc2Ffa3clM2RtaW5pbWF4JTI1MjBoMyUyNmhzYV9tdCUzZHAlMjZoc2FfbmV0JTNkYWR3b3JkcyUyNmhzYV92ZXIlM2QzJTI2bXNjbGtpZCUzZGQ4YWRiMDJlYzI0MjE5ODU2NDFjZGFlY2EzOGFiZmU4JTI2dXRtX2NvbnRlbnQlM2RtaW5pbWF4%26rlid%3Dd8adb02ec2421985641cdaeca38abfe8&vqd=4-85039642260250930046346904535238546951&iurl=%7B1%7DIG%3D2A38BEC3D4BD4599AA79612FA2A4E130%26CID%3D04F7ACE5B70F6AAC3678BB0DB6786B0D%26ID%3DDevEx%2C5037.1",
+      "snippet": "Generate native 2K AI video with synced audio in one pass. Try free on OpenArt. Use up to 9 image, 3 video and 3 audio refs to guide every shot. Free to try."
+    },
+    {
+      "title": "MiniMax H3 LoRA: Turbo, Training & ComfyUI Workflow",
+      "url": "https://loraai.me/guides/minimax-h3-lora",
+      "snippet": "Use hosted MiniMax H3 LoRA inference and understand Turbo, character, style, motion, experimental training, ComfyUI, datasets, and compatibility."
+    },
+    {
+      "title": "larryvrh/MiniMax-H3-Turbo-Lora · Hugging Face",
+      "url": "https://huggingface.co/larryvrh/MiniMax-H3-Turbo-Lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3 LoRA — Categories, Settings & Where to Find Them",
+      "url": "https://minimax3.org/minimax-h3-lora",
+      "snippet": "MiniMax H3 LoRA Directory MiniMax H3 LoRA — Categories, Settings & Where to Find Them A curated directory of MiniMax H3 LoRA archetypes — Turbo, style, character, motion, and camera. Each entry lists the recommended strength, steps, and sampler, plus verified search sources on Hugging Face and Civitai. MiniMax H3-Base is the official open release. LoRAs described on this page are community ..."
+    },
+    {
+      "title": "MiniMax H3 - T2V / I2V Workflows - Upscaling, Turbo LoRA, Auto ...",
+      "url": "https://civitai.red/models/2850104/minimax-h3-t2v-i2v-workflows-turbo-lora-auto-prompting-and-video-preview",
+      "snippet": "minimax_h3_audio_vae_fp32.safetensors LoRAs: minimax_h3_fl2v_turbo_8step_v1.0_768p_comfyui_bf16.safetensors Tiny VAE: taeh3.safetensors For the Auto Prompt versions, get a key at https://openrouter.ai/keys and paste it into the API Key node. Without it no prompt is written and nothing generates. If a prompt comes back rejected, reword it and ..."
+    }
+  ]
+}

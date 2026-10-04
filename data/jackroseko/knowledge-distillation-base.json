@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jackroseko/knowledge-distillation-base",
+  "slug": "jackroseko-knowledge-distillation-base",
+  "author": "jackroseko",
+  "url": "https://huggingface.co/jackroseko/knowledge-distillation-base",
+  "created_at": "2026-10-04T15:21:57.000Z",
+  "updated_at": "2026-10-04T15:22:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CISA, NSA and FBI Warn of China-Based AI Companies Targeting US AI ...",
+      "url": "https://www.cisa.gov/news-events/news/cisa-nsa-and-fbi-warn-china-based-ai-companies-targeting-us-ai-models-industrial-scale-knowledge",
+      "snippet": "WASHINGTON - The Cybersecurity and Infrastructure Security Agency (CISA), in collaboration with the National Security Agency (NSA) and Federal Bureau of Investigation (FBI), released a joint cybersecurity advisory today warning of China-based artificial intelligence (AI) companies targeting U.S. AI companies to systematically extract proprietary models through knowledge distillation ..."
+    },
+    {
+      "title": "Knowledge Distillation: Compress 671B Models to 7B (2026)",
+      "url": "https://localaimaster.com/blog/knowledge-distillation-guide",
+      "snippet": "The complete LLM distillation guide. Logit, hidden-state, and rationale distillation. R1-style reasoning distillation, sequence-level KD, on-policy distillation. Setup with Hugging Face TRL, Axolotl, custom pipelines."
+    },
+    {
+      "title": "Knowledge distillation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Knowledge_distillation",
+      "snippet": "In machine learning, knowledge distillation or model distillation is the process of transferring knowledge from a large model to a smaller one. While large models (such as very deep neural networks or ensembles of many models [1]) have more knowledge capacity than small models, this capacity might not be fully utilized. It can be just as computationally expensive to evaluate a model even if it ..."
+    },
+    {
+      "title": "Knowledge Distillation - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/knowledge-distillation/",
+      "snippet": "Knowledge Distillation is a model compression technique in which a smaller, simpler model (student) is trained to imitate the behavior of a larger, complex model (teacher). Instead of learning directly from data, the student model learns from the soft targets or probabilities, which are produced by the teacher model. This technique helps in deploying deep models on edge devices like mobiles or ..."
+    },
+    {
+      "title": "Knowledge Distillation: How a Tiny Model Learned to Outsmart Its Giant ...",
+      "url": "https://pub.towardsai.net/knowledge-distillation-how-a-tiny-model-learned-to-outsmart-its-giant-teacher-eb7f90b63235",
+      "snippet": "Knowledge distillation= training a small model to reproduce the probability distributions of a large model, not just its predictions. Soft labels= the full output distribution at high temperature, which encodes relationships between classes that hard labels destroy."
+    }
+  ]
+}

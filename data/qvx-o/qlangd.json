@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "qvx-o/QlangD",
+  "slug": "qvx-o-qlangd",
+  "author": "qvx-o",
+  "url": "https://huggingface.co/qvx-o/QlangD",
+  "created_at": "2026-10-04T13:50:21.000Z",
+  "updated_at": "2026-10-04T13:56:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "tr",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "pl",
+    "hi"
+  ],
+  "tags": [
+    "language",
+    "detection",
+    "language detection",
+    "Qlang",
+    "Language",
+    "QlangD",
+    "Qarvexium",
+    "text-classification",
+    "en",
+    "tr",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "ru",
+    "ar",
+    "zh",
+    "ja",
+    "ko",
+    "nl",
+    "pl",
+    "hi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203385553,
+  "storage_human": "203 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qvx-o (Qarvexium) - Hugging Face",
+      "url": "https://huggingface.co/qvx-o/models",
+      "snippet": "Org profile for Qarvexium on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "qvx-o (Qarvexium) - Hugging Face",
+      "url": "https://huggingface.co/qvx-o",
+      "snippet": "Qarvexium is an independent AI research and engineering organization focused on building efficient, accessible, and genuinely useful machine-learning systems — from language models and computer vision to speech, OCR, and generative AI."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 783 AI models across 645 benchmarks, with 212 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - shrektan/ai-model-ids: The canonical developer reference for ...",
+      "url": "https://github.com/shrektan/ai-model-ids",
+      "snippet": "The canonical developer reference for AI model IDs. One searchable page with copy-paste ready model strings from OpenAI, Anthropic, Google, Mistral, DeepSeek, xAI, and more. Updated daily via GitHu..."
+    },
+    {
+      "title": "The AI Model Directory - GitHub",
+      "url": "https://github.com/The-Best-Codes/ai-model-directory",
+      "snippet": "The AI Model Directory The AI model directory is the most comprehensive, automatically updated list of AI models and their metadata like pricing, context windows, supported features, and more. It currently lists over 10,000 models from over 70 providers."
+    }
+  ]
+}

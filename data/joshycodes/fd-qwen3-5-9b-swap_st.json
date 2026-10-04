@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-qwen3.5-9b-swap_st",
+  "slug": "joshycodes-fd-qwen3-5-9b-swap_st",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-qwen3.5-9b-swap_st",
+  "created_at": "2026-10-04T01:28:12.000Z",
+  "updated_at": "2026-10-04T01:28:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "International technical guidance on sexuality education",
+      "url": "https://www.who.int/publications/m/item/9789231002595",
+      "snippet": "Mar 14, 2018 · Comprehensive sexuality education (CSE) plays a central role in the preparation of young people for a safe, …"
+    },
+    {
+      "title": "World sexual and reproductive health month 2026",
+      "url": "https://www.who.int/news-room/events/detail/2026/09/01/default-calendar/world-sexual-and-reproductive-health-month-2026",
+      "snippet": "4 days ago · Join us this September. World sexual and reproductive health month is an opportunity to take a deeper look at an area …"
+    },
+    {
+      "title": "Sexualität im Alter - Über Einflussfaktoren und Tipps für mehr Freude ...",
+      "url": "https://www.paradisi.de/sexualitaet/sex-im-alter/",
+      "snippet": "Sexualität im Alter ist ein Thema, dass nur wenig Beachtung findet. Doch auch für ältere Menschen kann Sex sehr wichtig sein. Er …"
+    },
+    {
+      "title": "ᐅ Sex ist gesundheitsfördernd - Wie die Sexualhormone beim Sex ...",
+      "url": "https://www.paradisi.de/laborwerte/geschlechtshormone/sexualhormone-beim-sex/",
+      "snippet": "Sex kann sich positiv auf die Gesundheit auswirken. Verantwortlich für die gesundheitsfördernden Effekte sind Sexualhormone wie …"
+    },
+    {
+      "title": "电影史上无人超越的10部经典高分限制级情色电影，18岁以下不要看哦！",
+      "url": "https://www.zhihu.com/tardis/bd/art/499230796",
+      "snippet": "《可可西里的美丽传说》欧洲限制级情色电影榜首 9 《色，戒》 李安力作，携手梁朝伟与汤唯斩获8大奖项。战争背景下的王佳芝为 …"
+    }
+  ]
+}

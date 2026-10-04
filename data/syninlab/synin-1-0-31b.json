@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Syninlab/Synin-1.0-31B",
+  "slug": "syninlab-synin-1-0-31b",
+  "author": "Syninlab",
+  "url": "https://huggingface.co/Syninlab/Synin-1.0-31B",
+  "created_at": "2026-10-04T16:20:24.000Z",
+  "updated_at": "2026-10-04T16:20:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "arxiv:2607.02770",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578508318,
+  "storage_human": "62.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "T24 MONT-BLANC PASSY 2025 — T24",
+      "url": "https://www.t24-triathlon.com/mont-blanc-passy-2026-1-1",
+      "snippet": "Jan 1, 2026 · Entre la vaste plaine de Passy, le lac scintillant en contrebas et les imposants sommets alpins, imagine-toi relever le …"
+    },
+    {
+      "title": "Events (T24)",
+      "url": "https://t24.photohawk.com/pages/events",
+      "snippet": "T24 MONT-BLANC PASSY - 2025 Parcourir"
+    },
+    {
+      "title": "Retour en photos Passy week-end 27-28 septembre",
+      "url": "https://www.ville-passy-mont-blanc.fr/retour-en-photos-week-end-sportif-et-festif-les-27-28-septembre-a-passy/",
+      "snippet": "Oct 1, 2025 · En ce dernier week-end de septembre, la commune de Passy accueillait trois grands événements, sur l’eau, sur terre …"
+    },
+    {
+      "title": "T24 - TRIATHLON",
+      "url": "https://www.t24-triathlon.com/",
+      "snippet": "Lever de soleil + pain au chocolat tiède + haleine fraiche de mon coéquipier = un souvenir unique ! Car le T24 est aussi une grande …"
+    },
+    {
+      "title": "T24 Xtreme Triathlon Mont-Blanc Passy - passy-mont-blanc.com",
+      "url": "https://www.passy-mont-blanc.com/temps-fort/t24-xtreme-triathlon-mont-blanc-passy/",
+      "snippet": "Sep 26, 2026 · Entre la vaste plaine de Passy, le lac scintillant en contrebas et les imposants sommets alpins, imaginez-vous relever …"
+    }
+  ]
+}

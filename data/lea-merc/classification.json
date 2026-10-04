@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lea-merc/classification",
+  "slug": "lea-merc-classification",
+  "author": "lea-merc",
+  "url": "https://huggingface.co/lea-merc/classification",
+  "created_at": "2026-10-04T16:29:09.000Z",
+  "updated_at": "2026-10-04T16:29:14.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to GENERALI",
+      "url": "https://www.lea.generali.fr/Lea/services/auth/sso/SSOGF?startURL=%2FLea%2Fs%2F",
+      "snippet": "Assistance is opened from 6:30am till 9:00pm from Monday to Friday and from 6:30am till 3:00pm on Saturdays. NB : Thank you for …"
+    },
+    {
+      "title": "Licence LEA : parcours et débouchés - Onisep",
+      "url": "https://www.onisep.fr/formation/les-principaux-domaines-de-formation/les-licences-de-lettres-et-de-langues/la-licence-lea",
+      "snippet": "Apr 14, 2025 · Découvrez la licence LEA : organisation des études, compétences en langues et commerce, et poursuites d'études."
+    },
+    {
+      "title": "Bienvenue sur le site du département de LEA",
+      "url": "https://lea.parisnanterre.fr/",
+      "snippet": "Le département de Langues étrangères appliquées (LEA) de l’Université Paris Nanterre est le premier département en France à …"
+    },
+    {
+      "title": "Log in Studea - lea-unicaen.com",
+      "url": "https://www.lea-unicaen.com/login",
+      "snippet": "Mode hors-ligne Connexion à"
+    },
+    {
+      "title": "Log in Studea",
+      "url": "https://www.studea-formasup.fr/",
+      "snippet": "Studea est une plateforme électronique permettant aux organisations, alternants et stagiaires de suivre leur parcours professionnel …"
+    }
+  ]
+}

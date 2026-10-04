@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "crash-sv/scribe-whisper-turbo-ggml",
+  "slug": "crash-sv-scribe-whisper-turbo-ggml",
+  "author": "crash-sv",
+  "url": "https://huggingface.co/crash-sv/scribe-whisper-turbo-ggml",
+  "created_at": "2026-10-04T15:11:12.000Z",
+  "updated_at": "2026-10-04T15:11:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "automatic-speech-recognition",
+    "ggml",
+    "whisper",
+    "vulkan",
+    "ru",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574041195,
+  "storage_human": "574 MB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crash (2004 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Crash_(2004_film)",
+      "snippet": "Crash (2004 film) ... Crash is a 2004 American crime drama film directed by Paul Haggis, who co-wrote the screenplay and produced …"
+    },
+    {
+      "title": "CrashAtlas - Aviation Accident Database & Crash Map",
+      "url": "https://crashatlas.com/",
+      "snippet": "Explore 18,385 aviation accidents on an interactive map."
+    },
+    {
+      "title": "Derniers accidents aériens : analyses et photos - 1001 Crash",
+      "url": "https://www.1001crash.com/index-page-crash-lg-1.html",
+      "snippet": "Sep 25, 2026 · Les 10 derniers accidents aériens : circonstances ayant conduit au crash de l'avion, progrès de l'enquête et photos"
+    },
+    {
+      "title": "Crash : Actualités, vidéos, images et infos en direct - 20 Minutes",
+      "url": "https://www.20minutes.fr/dossier/crash",
+      "snippet": "Sep 24, 2026 · Consultez toute l'actualité sur le sujet Crash en direct sur 20 Minutes. Retrouvez l'ensemble de nos derniers articles, …"
+    },
+    {
+      "title": "Charente-Maritime : deux pilotes tués dans le crash d'un petit avion d ...",
+      "url": "https://www.lefigaro.fr/faits-divers/charente-maritime-deux-pilotes-tues-dans-le-crash-d-un-petit-avion-d-elixir-aircraft-a-rochefort-20261001?msockid=216d1d87b0fd639d0c9d0a6fb1426221",
+      "snippet": "2 days ago · L’avion s’est écrasé ce jeudi matin lors d’un vol de routine dans l’enceinte de la base aérienne militaire de Rochefort, …"
+    }
+  ]
+}

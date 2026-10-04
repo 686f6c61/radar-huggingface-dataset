@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mikecovlee/tinymistral-276m",
+  "slug": "mikecovlee-tinymistral-276m",
+  "author": "mikecovlee",
+  "url": "https://huggingface.co/mikecovlee/tinymistral-276m",
+  "created_at": "2026-10-04T13:21:25.000Z",
+  "updated_at": "2026-10-04T13:32:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tinymixtral",
+    "text-generation",
+    "dense",
+    "moe",
+    "mixture-of-experts",
+    "small-language-model",
+    "pretrained",
+    "custom_code",
+    "conversational",
+    "base_model:mikecovlee/tinymixtral",
+    "base_model:finetune:mikecovlee/tinymixtral",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1104850102,
+  "storage_human": "1.1 GB",
+  "base_model": "mikecovlee/tinymixtral",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mikecovlee/tinymixtral: A small Mixtral-style MoE language ...",
+      "url": "https://github.com/mikecovlee/tinymixtral",
+      "snippet": "A small Mixtral-style MoE language model (~0.5B) for pretraining research on a single consumer GPU - mikecovlee/tinymixtral"
+    },
+    {
+      "title": "mikecovlee/tinymixtral-it · Hugging Face",
+      "url": "https://huggingface.co/mikecovlee/tinymixtral-it",
+      "snippet": "Fine-tuned for one epoch from the public mikecovlee/tinymixtral base on 2,168,835 deduplicated and eval-decontaminated English instruction conversations blended from public sources (Tulu3, OpenHermes, SlimOrca, OpenOrca, UltraChat, MetaMath, OrcaMath, OMI-Llama-2, SQuAD2, TriviaQA). Sequence packing to 1024 tokens, bf16, AdamW, lr 2e-5 cosine with 3% warmup."
+    },
+    {
+      "title": "mikecovlee/tinymixtral · Hugging Face",
+      "url": "https://huggingface.co/mikecovlee/tinymixtral",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tinymixtral/model at main · mikecovlee/tinymixtral · GitHub",
+      "url": "https://github.com/mikecovlee/tinymixtral/tree/main/model",
+      "snippet": "A small Mixtral-style MoE language model (~0.5B) for pretraining research on a single consumer GPU - tinymixtral/model at main · mikecovlee/tinymixtral"
+    },
+    {
+      "title": "Models - from cloud to edge | Mistral",
+      "url": "https://mistral.ai/models/",
+      "snippet": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models."
+    }
+  ]
+}

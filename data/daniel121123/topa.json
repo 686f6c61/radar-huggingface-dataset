@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Daniel121123/topa",
+  "slug": "daniel121123-topa",
+  "author": "Daniel121123",
+  "url": "https://huggingface.co/Daniel121123/topa",
+  "created_at": "2026-10-04T16:40:18.000Z",
+  "updated_at": "2026-10-04T16:40:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

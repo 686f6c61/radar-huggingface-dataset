@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "odeveloper/meld",
+  "slug": "odeveloper-meld",
+  "author": "odeveloper",
+  "url": "https://huggingface.co/odeveloper/meld",
+  "created_at": "2026-10-04T18:23:38.000Z",
+  "updated_at": "2026-10-04T18:23:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "ai-text-detection",
+    "en",
+    "arxiv:2605.06903",
+    "base_model:jhu-clsp/ettin-encoder-1b",
+    "base_model:finetune:jhu-clsp/ettin-encoder-1b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1028137821,
+  "parameters_human": "1.03B",
+  "storage_bytes": 4112570616,
+  "storage_human": "4.1 GB",
+  "base_model": "jhu-clsp/ettin-encoder-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

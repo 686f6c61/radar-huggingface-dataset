@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "pdmd2026/pdmd_4NFE_lora",
+  "slug": "pdmd2026-pdmd_4nfe_lora",
+  "author": "pdmd2026",
+  "url": "https://huggingface.co/pdmd2026/pdmd_4NFE_lora",
+  "created_at": "2026-09-29T08:01:05.000Z",
+  "updated_at": "2026-10-04T05:24:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "video-generation",
+    "distillation",
+    "distribution-matching-distillation",
+    "pdmd",
+    "lora",
+    "text-to-video",
+    "arxiv:2609.35768",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 796,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4150957112,
+  "storage_human": "4.2 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pdmd2026/pdmd_4NFE_lora · Hugging Face",
+      "url": "https://huggingface.co/pdmd2026/pdmd_4NFE_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pdmd_4NFE_lora by pdmd2026 | AI Market Cap",
+      "url": "https://aimarketcap.tech/models/pdmd2026-pdmd-4nfe-lora",
+      "snippet": "Explore pdmd_4NFE_lora by pdmd2026 — benchmark coverage where available, pricing, and comparisons on AI Market Cap."
+    },
+    {
+      "title": "pdmd2026 (Zimo Wang) - Hugging Face",
+      "url": "https://huggingface.co/pdmd2026",
+      "snippet": "Sort: Recently updated pdmd2026/pdmd_2NFE_lora Text-to-Video •Updated about 9 hours ago• 18 •"
+    },
+    {
+      "title": "PDMD — Projected Distribution Matching Distillation",
+      "url": "https://pdmd2026.github.io/",
+      "snippet": "Delete one direction from the DMD update and four-step distillation stops collapsing."
+    },
+    {
+      "title": "PDMD 4-NFE LoRA for MiniMax-H3 released… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a102a3dfe8a82e0fe25d76a5cf",
+      "snippet": "The PDMD team released a 4-step (4-NFE) distilled LoRA for MiniMax-H3 on Hugging Face, from the paper \"PDMD: Projected Distribution Matching Distillation for Video Diffusion Models\" (arXiv:2609.35768)."
+    }
+  ]
+}

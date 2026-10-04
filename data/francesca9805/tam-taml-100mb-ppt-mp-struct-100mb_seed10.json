@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10",
+  "slug": "francesca9805-tam-taml-100mb-ppt-mp-struct-100mb_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed10",
+  "created_at": "2026-10-04T18:07:26.000Z",
+  "updated_at": "2026-10-04T18:11:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251399413,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. …"
+    },
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/",
+      "snippet": "YouPorn is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Pornhub Categories: Find Your Favorite Free Hardcore Porn Videos",
+      "url": "https://www.pornhub.com/categories",
+      "snippet": "Pornhub has the best hardcore porn videos. Discover the newest XXX to stream in your favorite sex category. See the hottest …"
+    },
+    {
+      "title": "Free Porn Videos - HD & VR Sex Videos - PORN.COM Porn Tube",
+      "url": "https://www.porn.com/",
+      "snippet": "Free porn videos in the millions at PORN.COM the largest free porn tube in the world?. Sex videos in HD, 4K on desktop or mobile. …"
+    },
+    {
+      "title": "FR.PORN.COM - Vidéo Porno Gratuites! Porn Tube, XXX, Film X!",
+      "url": "https://fr.porn.com/",
+      "snippet": "PORN.COM est Ton Hub pour les Vidéos Porno Gratuites & les Films de Sexe mis à jour quotidiennement. Regarde du Porno HD et …"
+    }
+  ]
+}

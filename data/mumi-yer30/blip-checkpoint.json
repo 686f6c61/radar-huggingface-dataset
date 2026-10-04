@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mumi-yer30/blip-checkpoint",
+  "slug": "mumi-yer30-blip-checkpoint",
+  "author": "mumi-yer30",
+  "url": "https://huggingface.co/mumi-yer30/blip-checkpoint",
+  "created_at": "2026-10-04T17:24:18.000Z",
+  "updated_at": "2026-10-04T17:24:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evileye | Overlord Wiki | Fandom",
+      "url": "https://overlordmaruyama.fandom.com/wiki/Evileye",
+      "snippet": "Keno Fasris Invern (キーノ・ファスリス・インベルン), formerly known as the legendary Vampire Lord, Landfall (国堕とし), and …"
+    },
+    {
+      "title": "Evileye | Overlord | Character | AniBase",
+      "url": "https://anibase.net/en/character/1XOMQ/Evileye",
+      "snippet": "Jul 7, 2015 · Evileye is a powerful magic caster and legendary vampire who appears as a masked girl in the adamantite‑class …"
+    },
+    {
+      "title": "Were you surprised that Evileye got away scott free? : r/overlord - Reddit",
+      "url": "https://www.reddit.com/r/overlord/comments/139yc4r/were_you_surprised_that_evileye_got_away_scott/",
+      "snippet": "May 6, 2023 · Evileye, despite how her name comes off, is one of the noblest people that Ainz has come across. There is also the …"
+    },
+    {
+      "title": "Evil Eye (Overlord) - NamuWiki",
+      "url": "https://en.namu.wiki/w/%EC%9D%B4%EB%B8%94%EC%95%84%EC%9D%B4(%EC%98%A4%EB%B2%84%EB%A1%9C%EB%93%9C)",
+      "snippet": "Aug 4, 2026 · She uses the pseudonym \"Razia Elle (ラージア・エレ / Razia Elle)\", which means evil eye in the Kingdom language, …"
+    },
+    {
+      "title": "Evileye | Heroes Wiki | Fandom",
+      "url": "https://hero.fandom.com/wiki/Evileye",
+      "snippet": "Evileye, real name Keno Fasris Invern, is the deuteragonist of the Overlord franchise."
+    }
+  ]
+}

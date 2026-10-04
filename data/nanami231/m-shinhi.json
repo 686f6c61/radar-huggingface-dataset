@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Nanami231/m-shinhi",
+  "slug": "nanami231-m-shinhi",
+  "author": "Nanami231",
+  "url": "https://huggingface.co/Nanami231/m-shinhi",
+  "created_at": "2026-10-04T14:34:14.000Z",
+  "updated_at": "2026-10-04T15:44:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553101128,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanami231 (DukeLe) - Hugging Face",
+      "url": "https://huggingface.co/Nanami231",
+      "snippet": "Recent Activity updated a model2 days ago Nanami231/nh-v published a model2 days ago Nanami231/nh-v liked a model3 days ago wideload/Krea2Loras View all activity"
+    },
+    {
+      "title": "Nanami231/nh-v · Hugging Face",
+      "url": "https://huggingface.co/Nanami231/nh-v",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanami - 2026-05-23 04:31:12 - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/1001911563923278655",
+      "snippet": "Download Nanami - free LORA SD 1.5 AI model on TENSORHUB ART. A WOMAN. By user_810496552782133911"
+    },
+    {
+      "title": "Best Nanami - ZIB AI LORA - Free Download | TensorHub Art",
+      "url": "https://tensorhub.art/models/995959123382138356",
+      "snippet": "⚠️ DISCLAIMER: This LoRA/model is entirely a work of fiction and is not intended to represent, resemble, or depict any real individual, celebrity, public figure, living or deceased. Any similarities are purely coincidental. Note: This LoRA was trained using fictional and AI-generated characters only."
+    },
+    {
+      "title": "小西 夏菜実_Konishi Nanami_JP Idol - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/d84trmte878c73fugqo0",
+      "snippet": "Explore 小西 夏菜実_Konishi Nanami_JP Idol model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

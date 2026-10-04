@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hassanbaba0098/SexPorn",
+  "slug": "hassanbaba0098-sexporn",
+  "author": "hassanbaba0098",
+  "url": "https://huggingface.co/hassanbaba0098/SexPorn",
+  "created_at": "2026-10-04T14:44:12.000Z",
+  "updated_at": "2026-10-04T14:44:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 93410304,
+  "parameters_human": "93.4M",
+  "storage_bytes": 186835272,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hassanbaba0098/SexPorn · Hugging Face",
+      "url": "https://huggingface.co/hassanbaba0098/SexPorn",
+      "snippet": "This is because generative AI completely disregards facts and only considers things from a compliance perspective! For example, if you ask a generative AI \"how to make TNT in Minecraft,\" most generative AIs will refuse!"
+    },
+    {
+      "title": "NextPorn: Free AI Porn Videos & Images - AI Adult Content Library",
+      "url": "https://nextporn.com/en/",
+      "snippet": "NextPorn The world&#x27;s largest free AI porn platform. Watch unlimited AI-generated adult videos, browse thousands of AI models, and discover new content daily. 100% free."
+    },
+    {
+      "title": "Top AI Porn Videos — All-Time Most Viewed | VirtuaVixen",
+      "url": "https://virtuavixen.com/",
+      "snippet": "Browse the all-time most-viewed AI porn videos on VirtuaVixen. Ranked by real plays and updated automatically."
+    },
+    {
+      "title": "AI Porn Search Engine | PornPrompt.ai",
+      "url": "https://www.pornprompt.ai/",
+      "snippet": "PornPrompt is a free AI porn search engine indexing 1.4M+ adult videos. Search by pornstar, category, kink, or plain language — find exactly what you want…"
+    },
+    {
+      "title": "AI Porn Video Generator — Image to Video & Text to Video | XmodelsAI",
+      "url": "https://xmodelsai.com/features/videos",
+      "snippet": "Free AI porn video generator. Turn any photo into a realistic adult video, or generate videos from text. Image-to-video, text-to-video, video editing — 2 to 15 seconds, MP4. Start free."
+    }
+  ]
+}

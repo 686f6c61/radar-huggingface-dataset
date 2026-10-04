@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "modrez/jarvis-r0-merged",
+  "slug": "modrez-jarvis-r0-merged",
+  "author": "modrez",
+  "url": "https://huggingface.co/modrez/jarvis-r0-merged",
+  "created_at": "2026-10-04T01:24:16.000Z",
+  "updated_at": "2026-10-04T01:26:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "modrez/jarvis-r0-merged · Hugging Face",
+      "url": "https://huggingface.co/modrez/jarvis-r0-merged",
+      "snippet": "modrez / jarvis-r0-merged Like 0 Image-Text-to-Text Transformers Safetensors English gemma4 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - microsoft/JARVIS: JARVIS, a system to connect LLMs with ML ...",
+      "url": "https://github.com/microsoft/JARVIS",
+      "snippet": "Language serves as an interface for LLMs to connect numerous AI models for solving complicated AI tasks! See our paper: HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in HuggingFace, Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu and Yueting Zhuang (the first two authors contribute equally) We introduce a collaborative system that consists of an LLM as the controller ..."
+    },
+    {
+      "title": "VAIBHAV22334455/JARVIS · Hugging Face",
+      "url": "https://huggingface.co/VAIBHAV22334455/JARVIS",
+      "snippet": "Model Card for Model ID Overview This model is a conversational AI designed to engage in natural language interactions with users. It is based on the Causal Language Modeling (CLM) architecture and has been fine-tuned on conversational datasets to generate coherent and contextually relevant responses."
+    },
+    {
+      "title": "GitHub - rezaulhreza/jarvis: Local-first personal AI assistant powered ...",
+      "url": "https://github.com/rezaulhreza/jarvis",
+      "snippet": "A local-first personal AI assistant powered by Ollama. Multi-provider support, 35+ tools, multimodal generation, intent-based routing, persistent memory, RAG, and voice I/O."
+    },
+    {
+      "title": "I Built JARVIS with GPT-6 Astra (INSANE Results!) - YouTube",
+      "url": "https://www.youtube.com/watch?v=mitzci4FsOg",
+      "snippet": "In this video you&#x27;ll see the AI assistant I built with Claude Code get a brand new brain: OpenAI&#x27;s GPT-6 Astra now powers every answer from my second brain, every screen question, and the camera eyes."
+    }
+  ]
+}

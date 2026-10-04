@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "arata-ae/negen-archive",
+  "slug": "arata-ae-negen-archive",
+  "author": "arata-ae",
+  "url": "https://huggingface.co/arata-ae/negen-archive",
+  "created_at": "2026-10-04T15:21:00.000Z",
+  "updated_at": "2026-10-04T15:30:40.000Z",
+  "license": "per-folder",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "japanese",
+    "on-device",
+    "negen",
+    "ja",
+    "base_model:AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML",
+    "base_model:quantized:AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1622770099,
+  "storage_human": "1.6 GB",
+  "base_model": "AILogDev/Irodori-TTS-v4.1-Small-MF-CoreML",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "داستان‌های با برچسب سفر · شهوانی",
+      "url": "https://shahvani.com/dastans/tag/%d8%b3%d9%81%d8%b1",
+      "snippet": "داستان‌های با تگ \"سفر\" همه داستان‌هایی که با این برچسب منتشر شده‌اند."
+    },
+    {
+      "title": "بهترین داستان های تاریخ شهوانی · هنر",
+      "url": "https://shahvani.com/forum/topic/%D8%A8%D9%87%D8%AA%D8%B1%DB%8C%D9%86-%D8%AF%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%AA%D8%A7%D8%B1%DB%8C%D8%AE-%D8%B4%D9%87%D9%88%D8%A7%D9%86%DB%8C",
+      "snippet": "نقل از: shadi7070 داستان یک شوخی در بخش داستانهای ضربدری بد دهن بی شعور هر چی از اون گالت میاد بیرون میگیو بلاک میکنی اینجا که خونتون نیس با این ادبیات حرف میزنی..."
+    },
+    {
+      "title": "ورود به چت‌روم شهوانی",
+      "url": "https://chat.shahvani.com/login",
+      "snippet": "ایجاد حساب جدید گذرواژه‌تان در چت‌روم را فراموش کرده اید؟ بازنشانی کنید"
+    },
+    {
+      "title": "چت‌روم شهوانی",
+      "url": "https://chat.shahvani.com/",
+      "snippet": "چت‌روم شهوانی به نسخه ۴ (بتا) چت روم شهوانی خوش آمدید. لطفا توجه کنید که سرور چت روم شهوانی ارتباطی به سایت شهوانی ندارد. بنابراین برای ورود به چت روم باید جداگانه ثبت نام کنید."
+    },
+    {
+      "title": "داستان های برگزیده (۱) · کافه شهوانی",
+      "url": "https://shahvani.com/forum/topic/%D8%AF%D8%A7%D8%B3%D8%AA%D8%A7%D9%86-%D9%87%D8%A7%DB%8C-%D8%A8%D8%B1%DA%AF%D8%B2%DB%8C%D8%AF%D9%87-%DB%B1-?page=1",
+      "snippet": "سلام؛ از اونجایی که من خودم برای پیدا کردن داستان های خوب تو این سایت مجبور شدم داستان های زیادی رو بخونم تا از بینشون چندتا داستان خوب در بیاد، تصمیم گرفتم هر هفته یک سری داستان …"
+    }
+  ]
+}

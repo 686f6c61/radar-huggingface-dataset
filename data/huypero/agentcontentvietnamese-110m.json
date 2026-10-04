@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Huypero/AgentContentVietnamese-110m",
+  "slug": "huypero-agentcontentvietnamese-110m",
+  "author": "Huypero",
+  "url": "https://huggingface.co/Huypero/AgentContentVietnamese-110m",
+  "created_at": "2026-10-04T17:23:50.000Z",
+  "updated_at": "2026-10-04T17:24:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "agentcontent_vietnamese",
+    "vietnamese",
+    "pretraining",
+    "causal-lm",
+    "custom-code",
+    "text-generation",
+    "vi",
+    "dataset:anhnam26/AgentContentVietnamese-data",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109529856,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438621867,
+  "storage_human": "439 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Agents — Build & Deploy AI Teammates | Hyper AI",
+      "url": "https://www.hyperfx.ai/agents",
+      "snippet": "Build and deploy AI agents that automate marketing, ads, SEO, content, reporting, and operations. Connect your tools and build agents with a prompt."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "agents.hypertype.ai - HyperAgent",
+      "url": "https://agents.hypertype.ai/",
+      "snippet": "HyperAgent: AI-powered chatbot for your website. 🚀 Launching HyperAgent 1.1.1 Transform Any Website Into An AI Agent Create intelligent AI agents from your website in seconds. No coding required."
+    },
+    {
+      "title": "Video prompts - PromptHero",
+      "url": "https://prompthero.com/video",
+      "snippet": "Browse the top-rated video prompts on PromptHero. Curated high-quality AI-generated examples with ready-to-use prompts and settings."
+    },
+    {
+      "title": "Haiper AI Video Generator | Text to Video and Image to Video",
+      "url": "https://haiperai.org/ai-video-generator",
+      "snippet": "Use the Haiper AI video generator on haiperai.org to create clips from prompts, reference images, and source videos with a credits-based multi-model workflow."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Tejascodex001/flame-tinystories-5m",
+  "slug": "tejascodex001-flame-tinystories-5m",
+  "author": "Tejascodex001",
+  "url": "https://huggingface.co/Tejascodex001/flame-tinystories-5m",
+  "created_at": "2026-10-04T13:22:38.000Z",
+  "updated_at": "2026-10-04T13:22:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "flame",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "flame",
+    "safetensors",
+    "rust",
+    "candle",
+    "tinystories",
+    "llama-style",
+    "tiny-llm",
+    "educational",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5868800,
+  "parameters_human": "5.9M",
+  "storage_bytes": 23480512,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - henilp105/TinyStoriesGPT-5M: A PyTorch implementation of a ...",
+      "url": "https://github.com/henilp105/TinyStoriesGPT-5M",
+      "snippet": "A PyTorch implementation of a Bigram Language Model using Transformer architecture for character-level text generation. - henilp105/TinyStoriesGPT-5M"
+    },
+    {
+      "title": "phmd/TinyStories-LSTM-5.5M · Hugging Face",
+      "url": "https://huggingface.co/phmd/TinyStories-LSTM-5.5M",
+      "snippet": "TinyStories Word-Level LSTM (ONNX) A compact 10.9 MB word-level LSTM language model trained on the TinyStories dataset. Generates short, coherent children&#x27;s stories with minimal compute."
+    },
+    {
+      "title": "roneneldan/TinyStories-1M · Hugging Face",
+      "url": "https://huggingface.co/roneneldan/TinyStories-1M",
+      "snippet": "roneneldan/TinyStories ... TinyStories: How Small Can Language Models Be and Still Speak Coherent English?"
+    },
+    {
+      "title": "usamaasif-ua/TinyStories-GPT - GitHub",
+      "url": "https://github.com/usamaasif-ua/TinyStories-GPT",
+      "snippet": "A GPT-style language model built from scratch using PyTorch. This project demonstrates how to implement a transformer-based language model with approximately 51 million parameters, trained on the TinyStories dataset."
+    },
+    {
+      "title": "AI Interactive Stories: Romance, Fantasy, Mystery — NovelFlame",
+      "url": "https://novelflame.ai/",
+      "snippet": "AI interactive stories with branching choices, consistent character art, inline illustrations, and video scenes. Romance, fantasy, mystery, sci-fi. Free demos, no signup."
+    }
+  ]
+}

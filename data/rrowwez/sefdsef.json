@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rrowwez/sefdsef",
+  "slug": "rrowwez-sefdsef",
+  "author": "rrowwez",
+  "url": "https://huggingface.co/rrowwez/sefdsef",
+  "created_at": "2026-10-04T01:11:16.000Z",
+  "updated_at": "2026-10-04T01:11:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rrowwez/sefdsef · Hugging Face",
+      "url": "https://huggingface.co/rrowwez/sefdsef",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rrowwez/sefdsef at main - Hugging Face",
+      "url": "https://huggingface.co/rrowwez/sefdsef/tree/main",
+      "snippet": "rrowwez / sefdsef Like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main sefdsef 1.55 kB Ctrl+K Ctrl+K 1 contributor History:1 commit rrowwez initial commit c7b2983 verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial commitabout 4 hours ago README.md Safe 28 Bytesinitial commitabout 4 hours ago"
+    },
+    {
+      "title": "Web AI Showcase — find & run any model in your browser",
+      "url": "https://webai.show/",
+      "snippet": "web ai showcase Every model, running in your browser. No servers, no API keys, no uploads. Each model here loads and runs locally on your device — with a hands-on control panel, a look inside what it&#x27;s doing, and real use cases. 🔎 Explore all models by intent →"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "AI Model Leaderboard October 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated October 2026. Claude Opus 5.5 leads at 100/100. Compare 69 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    }
+  ]
+}

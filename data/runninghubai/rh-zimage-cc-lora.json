@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-zimage-cc-lora",
+  "slug": "runninghubai-rh-zimage-cc-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-zimage-cc-lora",
+  "created_at": "2026-10-04T18:00:01.000Z",
+  "updated_at": "2026-10-04T18:01:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 257204265,
+  "storage_human": "257 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nomenclatures : la NGAP et la LPP | ameli.fr | Infirmier",
+      "url": "https://www.ameli.fr/infirmier/exercice-liberal/facturation-remuneration/nomenclatures-ngap-lpp",
+      "snippet": "Mar 16, 2026 · Vous pouvez consulter et télécharger ci-dessous la nomenclature générale des actes professionnels (NGAP), …"
+    },
+    {
+      "title": "Votre nomenclature - FNI - Fédération Nationale des Infirmiers",
+      "url": "https://fni.fr/exercer-en-liberal/votre-nomenclature/",
+      "snippet": "La FNI participe aux négociations de la Convention et de la Nomenclature Générale des Actes Professionnels (NGAP), représente …"
+    },
+    {
+      "title": "Cotation IDEL : guide complet NGAP & codification 2026 | La Ruche",
+      "url": "https://laruche.cbainfo.fr/cotations-idel/",
+      "snippet": "Découvrez le guide de la cotation IDEL pour tout savoir sur la NGAP et la cotation des actes. Les actes sont tous caractérisés par un …"
+    },
+    {
+      "title": "Facturation NGAP infirmière libérale : guide complet 2026",
+      "url": "https://maisondesinfirmiers.fr/blog/facturation-ngap-infirmiere-liberale-guide-complet-2026",
+      "snippet": "May 25, 2026 · Qu'est-ce que le NGAP ? Le NGAP, Nomenclature Générale des Actes Professionnels, est le référentiel officiel qui …"
+    },
+    {
+      "title": "NGAP IDEL 2026 : guide complet de la nomenclature",
+      "url": "https://www.medicalib.fr/blog/cumul-des-actes-infirmiers-et-ngap/",
+      "snippet": "Jul 7, 2026 · En tant qu’infirmier libéral, vous savez combien il est essentiel de maîtriser la NGAP IDEL et la nomenclature des actes …"
+    }
+  ]
+}

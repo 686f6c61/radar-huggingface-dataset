@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jayant9928/pii-gate-qwen3.5-4b-nemotron",
+  "slug": "jayant9928-pii-gate-qwen3-5-4b-nemotron",
+  "author": "Jayant9928",
+  "url": "https://huggingface.co/Jayant9928/pii-gate-qwen3.5-4b-nemotron",
+  "created_at": "2026-10-04T14:37:18.000Z",
+  "updated_at": "2026-10-04T14:37:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "anyjev",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "anyjev",
+    "pii",
+    "phi",
+    "privacy",
+    "de-identification",
+    "decision-model",
+    "triage",
+    "text-classification",
+    "en",
+    "dataset:nvidia/Nemotron-PII",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "This Week's Best Porn Videos | xHamster",
+      "url": "https://xhamster3.com/best/weekly",
+      "snippet": "Welcome to this week's best porn videos of xHamster. Watch all this week's best sex movies for Free only at xHamster!"
+    },
+    {
+      "title": "Newest Porn Videos & Free Sex Movies #2 | xHamster",
+      "url": "https://xhamster2.com/newest/2",
+      "snippet": "16 hours ago · I Caught My Stepsister Masturbate When She Was Home-alone I Help Her to Cum with My BBC, Desi Indian Sex …"
+    }
+  ]
+}

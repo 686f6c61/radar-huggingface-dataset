@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms",
+  "slug": "soniqo-parakeet-eou-120m-onnx-int8-160ms",
+  "author": "soniqo",
+  "url": "https://huggingface.co/soniqo/Parakeet-EOU-120M-ONNX-INT8-160ms",
+  "created_at": "2026-10-04T18:18:34.000Z",
+  "updated_at": "2026-10-04T18:19:38.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "speech-recognition",
+    "streaming",
+    "end-of-utterance",
+    "rnnt",
+    "quantized",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/parakeet_realtime_eou_120m-v1",
+    "base_model:quantized:nvidia/parakeet_realtime_eou_120m-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153057118,
+  "storage_human": "153 MB",
+  "base_model": "nvidia/parakeet_realtime_eou_120m-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Public sex, homemade porn, free sex videos, free porn movies at ThisVid!",
+      "url": "https://thisvid.com/tags/piss/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "301 Moved Permanently - Mom 2 Fuck",
+      "url": "https://mom2fuck.com/de/ladyboy.html",
+      "snippet": "The document has moved here."
+    },
+    {
+      "title": "Girl Pee Accidentally Compilation (in public) Funny - Dailymotion",
+      "url": "https://www.dailymotion.com/video/x3rlv71",
+      "snippet": "Feb 11, 2016 · Watch Girl Pee Accidentally Compilation (in public) Funny - Iberbau on Dailymotion"
+    },
+    {
+      "title": "group poop: because sharing is caring. - Reddit",
+      "url": "https://www.reddit.com/r/grouppoop/about/",
+      "snippet": "group poop: because sharing is caring. A subreddit created for and curated by those who desire to share their poops with the world - …"
+    },
+    {
+      "title": "Telegram: Join Group Chat",
+      "url": "https://t.me/+PahizX_x98VkYmJk",
+      "snippet": "You are invited to a group chat on Telegram. Click to join:"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Fatha/vev-9b-v2",
+  "slug": "fatha-vev-9b-v2",
+  "author": "Fatha",
+  "url": "https://huggingface.co/Fatha/vev-9b-v2",
+  "created_at": "2026-10-04T15:12:32.000Z",
+  "updated_at": "2026-10-04T15:17:30.000Z",
+  "license": "see-data-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision",
+    "calibrated",
+    "evaluation",
+    "lora-merged",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711735,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wraps/FLUX.2-klein-9B-Blitz-ComfyUI · Hugging Face",
+      "url": "https://huggingface.co/wraps/FLUX.2-klein-9B-Blitz-ComfyUI",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vev-9b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/CountingSheep/vev-9b",
+      "snippet": "Deploy vev-9b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FLUX.2 Klein 9B — Ultimate 6-in-1 Workflow (Face Swap · Inpaint · Auto ...",
+      "url": "https://civitai.com/models/2543188/flux2-klein-9b-ultimate-6-in-1-workflow-face-swap-inpaint-auto-mask-nag-refine-upscale-8gb-vram",
+      "snippet": "FLUX.2 Klein 9B — Ultimate All-in-One ComfyUI Workflow v2.0 90 nodes · 6 pipelines · 12 organized groups · 8GB VRAM compatible One workflow file. Everything you need. No more switching between different JSON files for different tasks."
+    },
+    {
+      "title": "[FLUX.2-klein-base-9B] Better Skin [CONCEPT] - v2.0 | Flux.2 Klein LoRA ...",
+      "url": "https://civitai.red/models/2613362/flux2-klein-base-9b-better-skin-concept",
+      "snippet": "Latest version notes and model page updates: major update, much MUCH better skin, with mostly keeping to the original FLUX style in the rest of the image (although a little bit is lost still) LoRa description This LoRa model was designed to improve the skin of people generated in a photorealistic style. It is not perfect."
+    }
+  ]
+}

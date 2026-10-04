@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zuimengqm/rmbg-qnn-rmbg14",
+  "slug": "zuimengqm-rmbg-qnn-rmbg14",
+  "author": "zuimengqm",
+  "url": "https://huggingface.co/zuimengqm/rmbg-qnn-rmbg14",
+  "created_at": "2026-10-04T01:07:35.000Z",
+  "updated_at": "2026-10-04T01:49:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99080647,
+  "storage_human": "99 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zuimengqm (zuimeng) - Hugging Face",
+      "url": "https://huggingface.co/zuimengqm",
+      "snippet": "AI 抠图 — RMBG-1.4 Remove backgrounds from images and get transparent PNGs zuimengqm May 25"
+    },
+    {
+      "title": "AI 抠图 — RMBG-1.4 - a Hugging Face Space by zuimengqm",
+      "url": "https://huggingface.co/spaces/zuimengqm/briaai-RMBG-2.0",
+      "snippet": "Upload one or several photos (or provide a URL) and set a threshold. The app separates the foreground from the background, returning a PNG with a transparent background and a separate mask image. Y..."
+    },
+    {
+      "title": "GitHub - 1038lab/ComfyUI-RMBG: A ComfyUI custom node designed for ...",
+      "url": "https://github.com/1038lab/ComfyUI-RMBG",
+      "snippet": "A ComfyUI custom node designed for advanced image background removal and object, face, clothes, and fashion segmentation, utilizing multiple models including RMBG-2.0, INSPYRENET, BEN, BEN2, BiRefN..."
+    },
+    {
+      "title": "GitHub - xyMicro/RMBG-1.4",
+      "url": "https://github.com/xyMicro/RMBG-1.4",
+      "snippet": "Developed by: BRIA AI Model type: Background Removal License: bria-rmbg-1.4 The model is released under a Creative Commons license for non-commercial use. Commercial use is subject to a commercial agreement with BRIA. Contact Us for more information. Model Description: BRIA RMBG 1.4 is a saliency segmentation model trained exclusively on a professional-grade dataset. BRIA: Resources for more ..."
+    },
+    {
+      "title": "RMBG-1.4 Tutorial: Automate Background Removal — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-rmbg-1-4-automate-high-precision-background-removal",
+      "snippet": "1 Understand the RMBG-1.4 Model Architecture Before diving into code, it is crucial to understand what makes RMBG-1.4 distinct. Developed by BriaAI, this model is a state-of-the-art background removal tool that leverages advanced semantic segmentation techniques."
+    }
+  ]
+}

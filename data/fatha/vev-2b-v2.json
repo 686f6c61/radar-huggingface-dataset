@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Fatha/vev-2b-v2",
+  "slug": "fatha-vev-2b-v2",
+  "author": "Fatha",
+  "url": "https://huggingface.co/Fatha/vev-2b-v2",
+  "created_at": "2026-10-04T15:12:30.000Z",
+  "updated_at": "2026-10-04T15:17:28.000Z",
+  "license": "see-data-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision",
+    "calibrated",
+    "evaluation",
+    "lora-merged",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 4446548207,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Almawave/Velvet-2B · Hugging Face",
+      "url": "https://huggingface.co/Almawave/Velvet-2B",
+      "snippet": "Velvet-2B is designed to be integrated into AI systems or applications. Its potential use include, but it is not limited to, text generation, classification, summarization, question answering. It is important to note that specific applications may need further model adaptations or additional safeguards to prevent undesirable behavior or outputs."
+    },
+    {
+      "title": "[Wan2.2 T2V & FLUX.1 D & XL & 1.5] 2B (‎YoRHa No.2 Type B ... - Civitai",
+      "url": "https://civitai.com/models/88853?modelVersionId=198859",
+      "snippet": "Wan2.2 T2V Faithfully recreate 2B&#x27;s in-game appearance. Weight: High noise: 0.7-1.0 Weight: Low noise: 0.5-1.0 You can start with weight 1.0 with both model. If you notice some \"blury eyes\" or \" blury face\" problem, try lowering the weight of the low noise model. Sometimes the outfit doesn&#x27;t generate correctly. Try adding more detailed prompts, like &#x27;black thigh-high boots.&#x27; Workflow included ..."
+    },
+    {
+      "title": "2B (Kira Buckland) (NieR Automata) (RVC v2) (RMVPE) (400 Epochs)",
+      "url": "https://voice-models.com/model/1peyAih8pHi",
+      "snippet": "2B (Kira Buckland) (NieR Automata) (RVC v2) (RMVPE) (400 Epochs) AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "Best 2B Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/2b-download",
+      "snippet": "All training images depict the character as at least 18 years old - I am not responsible for the generation results using this model file."
+    }
+  ]
+}

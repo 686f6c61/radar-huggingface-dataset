@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "obuladinnesai/claim-photo-integrity-detector-v5",
+  "slug": "obuladinnesai-claim-photo-integrity-detector-v5",
+  "author": "obuladinnesai",
+  "url": "https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v5",
+  "created_at": "2026-10-04T16:31:08.000Z",
+  "updated_at": "2026-10-04T16:32:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "image-classification",
+    "deepfake-detection",
+    "ai-generated-detection",
+    "insurance",
+    "claims",
+    "photo-integrity",
+    "vision-transformer",
+    "dataset:Rajarshi-Roy-research/Defactify_Image_Dataset",
+    "dataset:TheKernel01/140k-Real-and-Fake-Faces",
+    "dataset:OpenRL/DeepFakeFace",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343229809,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chat.com",
+      "url": "http://chat.com/en/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Free Chat with Strangers Online — 100% Free, No Sign Up | Chatib",
+      "url": "https://chatib.chat/free-chat/",
+      "snippet": "Free chat with strangers online — 100% free anonymous chat with video, voice & text. No subscription, no sign up, no credit card. …"
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "Chatib – Worldwide Anonymous Chat with Strangers from 150",
+      "url": "https://chatib.chat/",
+      "snippet": "Chatib is a free anonymous chat platform where you can talk with strangers from around the world without registering. Online since …"
+    }
+  ]
+}

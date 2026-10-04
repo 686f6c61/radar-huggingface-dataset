@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "modrez/jarvis-R2-GGUF",
+  "slug": "modrez-jarvis-r2-gguf",
+  "author": "modrez",
+  "url": "https://huggingface.co/modrez/jarvis-R2-GGUF",
+  "created_at": "2026-10-04T14:30:17.000Z",
+  "updated_at": "2026-10-04T14:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4_unified",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 16103767328,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Une étudiante survit à une chute de 21 mètres d'un pont en tentant de ...",
+      "url": "https://www.autonews.fr/buzz/une-etudiante-survit-a-une-chute-de-21-metres-dun-pont-en-tentant-de-reculer-pour-eviter-un-camion-148957",
+      "snippet": "1 day ago · Une soirée ordinaire a basculé dans l'horreur pour une étudiante américaine de 21 ans, victime d'une chute de 21 mètres …"
+    },
+    {
+      "title": "Elle tente d’éviter un camion mais recule dans le vide : une étudiante ...",
+      "url": "https://www.ouest-france.fr/monde/etats-unis/elle-tente-deviter-un-camion-mais-recule-dans-le-vide-une-etudiante-survit-a-une-chute-de-21-metres-bd731f6a-bcc7-11f1-8ea4-97dc4d7cca62",
+      "snippet": "1 day ago · Une étudiante américaine de 21 ans a survécu à une chute de 21 mètres depuis un pont dans le Kansas (États-Unis). …"
+    },
+    {
+      "title": "Estudante universitária cai de ponte de 21 metros ao tentar escapar de ...",
+      "url": "https://oglobo.globo.com/mundo/epoca/noticia/2026/10/01/estudante-universitaria-cai-de-ponte-de-21-metros-ao-tentar-escapar-de-carro-e-evitar-engavetamento-apos-acidente-nos-eua.ghtml",
+      "snippet": "3 days ago · A estudante universitária americana Kyra Kinnison ficou gravemente ferida depois de cair de uma ponte de …"
+    },
+    {
+      "title": "Une étudiante chute de 21 mètres dans le vide d'un pont, en TENTANT …",
+      "url": "https://x.com/Cultination1/status/2106051590599893390",
+      "snippet": "Cultination1 (Cultination). 10 likes 0 replies. 🇺🇸😱 Une étudiante chute de 21 mètres dans le vide d'un pont, en TENTANT d'éviter un …"
+    },
+    {
+      "title": "« Je n’arrive pas à y croire » : une étudiante de 21 ans survit après ...",
+      "url": "https://www.parismatch.com/actu/faits-divers/je-narrive-pas-a-y-croire-une-etudiante-de-21-ans-survit-apres-une-chute-du-8e-etage-dun-immeuble-de-son-universite-276634",
+      "snippet": "4 days ago · Kristin Sargent, 21 ans, se trouve actuellement en soins intensifs après une chute du huitième étage d'un immeuble de …"
+    }
+  ]
+}

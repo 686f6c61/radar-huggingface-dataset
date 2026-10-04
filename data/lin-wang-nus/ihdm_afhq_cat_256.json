@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lin-Wang-NUS/IHDM_AFHQ_CAT_256",
+  "slug": "lin-wang-nus-ihdm_afhq_cat_256",
+  "author": "Lin-Wang-NUS",
+  "url": "https://huggingface.co/Lin-Wang-NUS/IHDM_AFHQ_CAT_256",
+  "created_at": "2026-10-04T01:48:19.000Z",
+  "updated_at": "2026-10-04T02:02:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 845353351,
+  "storage_human": "845 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    },
+    {
+      "title": "Lin cultivé — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lin_cultiv%C3%A9",
+      "snippet": "Le lin peut être consommé sous forme de graines, d'huiles de lin ou d'extraits. Son utilisation dérive de sa richesse en acides gras …"
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "Graines de lin: 10 bienfaits, types et comment consommer (avec …",
+      "url": "https://www.tuasaude.com/fr/graines-de-lin-bienfaits/",
+      "snippet": "La graine de lin est riche en oméga 3 et magnésium, aidant à prévenir l’hypertension, l’athérosclérose et l’infarctus. Elle améliore la …"
+    },
+    {
+      "title": "Lin (textile) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lin_(textile)",
+      "snippet": "Grâce aux nouveaux traitements de finissage comme easy care et notamment défroissables, le lin conserve au fil du temps ses …"
+    }
+  ]
+}

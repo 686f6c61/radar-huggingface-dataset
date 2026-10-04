@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kcheung-inno/AIBio-LoRA",
+  "slug": "kcheung-inno-aibio-lora",
+  "author": "kcheung-inno",
+  "url": "https://huggingface.co/kcheung-inno/AIBio-LoRA",
+  "created_at": "2026-10-04T14:44:39.000Z",
+  "updated_at": "2026-10-04T14:54:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "sft",
+    "biostatistics",
+    "medical-research",
+    "research-design",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71356532,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA AI Models (17,903) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,903 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora"
+    },
+    {
+      "title": "LoRA Studio - AI Image Generation",
+      "url": "https://lorastudio.org/",
+      "snippet": "Train custom LoRA models and generate stunning images with AI-powered text prompts."
+    },
+    {
+      "title": "LoRA Image Generator | AI Art with Custom Models",
+      "url": "https://loraai.io/lora",
+      "snippet": "Generate stunning AI images with LoRA models. Choose from thousands of checkpoints and styles, customize parameters, and create professional art instantly."
+    }
+  ]
+}

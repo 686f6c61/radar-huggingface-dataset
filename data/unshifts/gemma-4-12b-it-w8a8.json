@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Unshifts/gemma-4-12B-it-w8a8",
+  "slug": "unshifts-gemma-4-12b-it-w8a8",
+  "author": "Unshifts",
+  "url": "https://huggingface.co/Unshifts/gemma-4-12B-it-w8a8",
+  "created_at": "2026-10-04T18:27:17.000Z",
+  "updated_at": "2026-10-04T18:28:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma",
+    "gemma4",
+    "w8a8",
+    "int8",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "multimodal",
+    "conversational",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 13056295452,
+  "storage_human": "13.1 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebcamSydney - the iconic view of Sydney, NSW, Australia",
+      "url": "https://webcamsydney.com/",
+      "snippet": "Videos of interesting events on harbour Recordings 24/7 for last two days – request quotation See also Menu top right of this page …"
+    },
+    {
+      "title": "【LIVE】 Webcam Sydney | SkylineWebcams",
+      "url": "https://www.skylinewebcams.com/en/webcam/australia/new-south-wales/sydney/sydney.html",
+      "snippet": "Take insights into the Sydney Harbour Bridge and the Sydney Tower with this webcam in Sydney. Travel now with our live cams in …"
+    },
+    {
+      "title": "【LIVE】 Webcam Sydney - Australie | SkylineWebcams",
+      "url": "https://www.skylinewebcams.com/fr/webcam/australia/new-south-wales/sydney/sydney.html",
+      "snippet": "Découvrez notre webcam de Sydney en live, profitez de ce spectacle visuel hors du commun avec une vue exceptionnelle sur le …"
+    },
+    {
+      "title": "Sydney Live Webcams, Watch Sydney Live Now | LiveCamsMap",
+      "url": "https://livecamsmap.com/australia/sydney",
+      "snippet": "Live webcams in Sydney: watch the city, beaches and streets in real time, free on LiveCamsMap."
+    },
+    {
+      "title": "WebcamSydney 1 Live Stream of Harbour 24/7 (~4K) - YouTube",
+      "url": "https://www.youtube.com/watch?v=5uZa3-RMFos",
+      "snippet": "Nov 11, 2024 · WebcamSydney 2 at youtube.com/live/jshwkG1ZpP8 provides a panning livestream 24/7, a sweep of almost 180 …"
+    }
+  ]
+}

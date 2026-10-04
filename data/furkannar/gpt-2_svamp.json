@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "FurkanNar/gpt-2_svamp",
+  "slug": "furkannar-gpt-2_svamp",
+  "author": "FurkanNar",
+  "url": "https://huggingface.co/FurkanNar/gpt-2_svamp",
+  "created_at": "2026-10-04T14:03:27.000Z",
+  "updated_at": "2026-10-04T14:09:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FurkanNar (Furkan Nar) - Hugging Face",
+      "url": "https://huggingface.co/FurkanNar",
+      "snippet": "Deep learning Viewer • Updated Apr 26 • 1.96k • 16 • 1"
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    },
+    {
+      "title": "Malicious AI on the Dark Web | WormGPT, FraudGPT & More",
+      "url": "https://www.dexpose.io/malicious-ai-on-the-dark-web/",
+      "snippet": "WormGPT, FraudGPT & other malicious AI models are sold on the dark web for phishing and fraud. See how they work and how to detect and stop them."
+    },
+    {
+      "title": "FurkanNar/noodle_baseline · Hugging Face",
+      "url": "https://huggingface.co/FurkanNar/noodle_baseline",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/gpt-2: Code for the paper \"Language Models are ...",
+      "url": "https://github.com/openai/gpt-2",
+      "snippet": "Some caveats GPT-2 models&#x27; robustness and worst case behaviors are not well-understood. As with any machine-learned model, carefully evaluate GPT-2 for your use case, especially if used without fine-tuning or in safety-critical applications where reliability is important."
+    }
+  ]
+}

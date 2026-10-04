@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-h12-20000-302a9d8c06bc",
+  "slug": "davidwdw-fa-eval-all-h12-20000-302a9d8c06bc",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-h12-20000-302a9d8c06bc",
+  "created_at": "2026-10-04T13:08:37.000Z",
+  "updated_at": "2026-10-04T13:09:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195359322,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-eval-h12-15000-10b40aa1064b-3f4cce3a04ad · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-eval-h12-15000-10b40aa1064b-3f4cce3a04ad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "davidwdw/fa-eval-all-h02-c-67999-c140386002a9 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-eval-all-h02-c-67999-c140386002a9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - openai/evals: Evals is a framework for evaluating LLMs and LLM ...",
+      "url": "https://github.com/openai/evals",
+      "snippet": "If you follow an existing eval template to build a basic or model-graded eval, you don&#x27;t need to write any evaluation code at all! Just provide your data in JSON format and specify your eval parameters in YAML. build-eval.md walks you through these steps, and you can supplement these instructions with the Jupyter notebooks in the examples ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

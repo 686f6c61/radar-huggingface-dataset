@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "parth12-ui/anlp-a2-optim-sophia-tuned",
+  "slug": "parth12-ui-anlp-a2-optim-sophia-tuned",
+  "author": "parth12-ui",
+  "url": "https://huggingface.co/parth12-ui/anlp-a2-optim-sophia-tuned",
+  "created_at": "2026-10-04T13:15:08.000Z",
+  "updated_at": "2026-10-04T13:16:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "optimizer-comparison",
+    "language-modeling",
+    "en",
+    "dataset:browndw/human-ai-parallel-corpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33366528,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133470816,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "abhirajratna/anlp-a2-optim-sophia · Hugging Face",
+      "url": "https://huggingface.co/abhirajratna/anlp-a2-optim-sophia",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sanyam2005/anlp-a2-part2-sophia · Hugging Face",
+      "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-sophia",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AI-Natural-Language-Processing-Lab/Sophia-Optimizer-for ...",
+      "url": "https://github.com/AI-Natural-Language-Processing-Lab/Sophia-Optimizer-for-Language-Model-Pre-training",
+      "snippet": "The scripts will be released soon (potentially with an improved choice of hyperparameters that we are currently experimenting with.) The JAX version of Sophia-H will be included at levanter, which is also an amazing code base for language model pre-training."
+    },
+    {
+      "title": "GitHub - bitmap4/anlp-a2",
+      "url": "https://github.com/bitmap4/anlp-a2",
+      "snippet": "Contribute to bitmap4/anlp-a2 development by creating an account on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "natsuto999/Qwen-Image-2.1-Uncensored-GGUF",
+  "slug": "natsuto999-qwen-image-2-1-uncensored-gguf",
+  "author": "natsuto999",
+  "url": "https://huggingface.co/natsuto999/Qwen-Image-2.1-Uncensored-GGUF",
+  "created_at": "2026-10-04T17:26:46.000Z",
+  "updated_at": "2026-10-04T17:26:47.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 105184918099,
+  "storage_human": "105.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "natsuto999/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/natsuto999/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "Diffusion Model: Add the Unet Loader (GGUF) node and select your downloaded .gguf file. Text Encoder: Add the standard CLIPLoader node, select qwen3vl_8b_bf16.safetensors (or int8), and set type to qwen_image."
+    },
+    {
+      "title": "0xSojalSec/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/0xSojalSec/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Qwen-Image-2.1 Locally (the \"Uncensored ... - stashbase.ai",
+      "url": "https://stashbase.ai/blog/run-qwen-image-2-1-locally-uncensored/",
+      "snippet": "A post on X says Qwen-Image-2.1 was uncensored overnight. The files it points to are the original weights, unmodified. What the facts are, and two ways to run the model on your own computer."
+    },
+    {
+      "title": "Is Qwen-Image-2.1 Uncensored? Filters, License, and the Law",
+      "url": "https://blog.laozhang.ai/en/posts/qwen-image-2-1-nsfw",
+      "snippet": "Official Qwen-Image-2.1 weights have no safety checker; Alibaba-hosted versions filter prompts. The \"Uncensored GGUF\" is the same model, still non-commercial."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    }
+  ]
+}

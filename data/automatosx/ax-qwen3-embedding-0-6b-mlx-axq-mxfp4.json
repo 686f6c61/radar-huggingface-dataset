@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP4",
+  "slug": "automatosx-ax-qwen3-embedding-0-6b-mlx-axq-mxfp4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-MLX-AXQ-MXFP4",
+  "created_at": "2026-10-04T02:04:10.000Z",
+  "updated_at": "2026-10-04T02:06:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "MXFP4",
+    "embedding",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 410590209,
+  "storage_human": "411 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Timocratie, oligarchie, démocratie & tyrannie dans la République",
+      "url": "https://www.les-philosophes.fr/la-republique-de-platon/Page-7.html",
+      "snippet": "Platon a donc établi la hiérarchie des régimes politiques ; à savoir, dans l’ordre décroissant : monarchie, timocratie, oligarchie, …"
+    },
+    {
+      "title": "Liste de formes de gouvernements — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Liste_de_formes_de_gouvernements",
+      "snippet": "Afin d'exposer de façon didactique cette diversité des régimes politiques et les écarts qui peuvent exister entre les principes …"
+    },
+    {
+      "title": "Platon et les régimes politiques - Philosophie, Science et Société",
+      "url": "https://philosciences.com/regimes-politiques-platon",
+      "snippet": "Ces vices produisent une perversion des gouvernements qui aboutit à quatre types de gouvernements injustes que Platon appelle …"
+    },
+    {
+      "title": "Platon sur 5 régimes politiques - POSTULAT",
+      "url": "https://postulat.org/fr/platon-sur-5-regimes-politiques/",
+      "snippet": "Dans La République, Platon fait l’examen d’une hiérarchie des régimes politiques. Il analyse 5 classes de gouvernement des cités : …"
+    },
+    {
+      "title": "Typologie des Régimes et Dégénérescence chez Platon - Studocu",
+      "url": "https://www.studocu.com/fr/document/institut-catholique-de-paris/science-politique/typologie-des-regimes-et-degenerescence-chez-platon-analyse-theorique/156559855",
+      "snippet": "Cette étude examine la typologie des régimes politiques selon Platon, mettant en lumière leur dégradation cyclique. Elle analyse les …"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ZeyuLing/Motius-FlowHMR-Latest",
+  "slug": "zeyuling-motius-flowhmr-latest",
+  "author": "ZeyuLing",
+  "url": "https://huggingface.co/ZeyuLing/Motius-FlowHMR-Latest",
+  "created_at": "2026-10-04T18:26:33.000Z",
+  "updated_at": "2026-10-04T18:26:58.000Z",
+  "license": "flowhmr-research-nonprofit",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "motius",
+  "languages": [],
+  "tags": [
+    "motius",
+    "safetensors",
+    "motion-capture",
+    "video-to-motion",
+    "flow-matching",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460399159,
+  "parameters_human": "460.4M",
+  "storage_bytes": 9657940160,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

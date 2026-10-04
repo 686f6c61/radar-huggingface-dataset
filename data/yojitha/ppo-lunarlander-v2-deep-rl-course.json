@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yojitha/ppo-LunarLander-v2-deep-rl-course",
+  "slug": "yojitha-ppo-lunarlander-v2-deep-rl-course",
+  "author": "yojitha",
+  "url": "https://huggingface.co/yojitha/ppo-LunarLander-v2-deep-rl-course",
+  "created_at": "2026-10-04T14:58:12.000Z",
+  "updated_at": "2026-10-04T14:58:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "deep-rl-course",
+  "languages": [],
+  "tags": [
+    "deep-rl-course",
+    "LunarLander-v2",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19,
+  "storage_human": "19 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Preethi0205/ppo-LunarLander-v2-course · Hugging Face",
+      "url": "https://huggingface.co/Preethi0205/ppo-LunarLander-v2-course",
+      "snippet": "PPO Agent playing LunarLander-v2 from scratch This is a trained model of a custom PPO agent implemented in PyTorch from scratch for Unit 8 Part 1 of the Hugging Face Deep Reinforcement Learning Course."
+    },
+    {
+      "title": "RL-Learn/ppo-LunarLander-v2 · Hugging Face",
+      "url": "https://huggingface.co/RL-Learn/ppo-LunarLander-v2",
+      "snippet": "RL-Learn 1 Reinforcement Learning stable-baselines3 LunarLander-v2 deep-reinforcement-learning Eval Results Model card Files Files and versions Community"
+    },
+    {
+      "title": "GitHub - EbrahimShirjazi/lunarlander-reinforcementlearning-PPO: A PPO ...",
+      "url": "https://github.com/EbrahimShirjazi/lunarlander-reinforcementlearning-PPO",
+      "snippet": "A Proximal Policy Optimization (PPO) agent trained with Stable-Baselines3 to solve the LunarLander environment from Gymnasium. Built as part of Hugging Face&#x27;s Deep RL Course (Unit 1)."
+    },
+    {
+      "title": "GitHub - rishisim/LunarLander-v2: Trained model of a PPO agent playing ...",
+      "url": "https://github.com/rishisim/LunarLander-v2",
+      "snippet": "This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library. Using Google Colab, I trained my first Deep Reinforcement Learning agent, a Lunar Lander agent that will learn to land correctly on the moon using Stable-Baselines3."
+    },
+    {
+      "title": "PPO-LunarLander-v2 Open Source Reinforcement Learning Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1915692708422901761",
+      "snippet": "🚀 Stable-Baselines3 PPO Agent for LunarLander-v2 This project presents a trained PPO agent designed to play the LunarLander-v2 game. It leverages the stable-ba"
+    }
+  ]
+}

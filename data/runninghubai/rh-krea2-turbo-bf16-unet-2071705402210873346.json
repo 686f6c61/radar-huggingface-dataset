@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-bf16-unet-2071705402210873346",
+  "slug": "runninghubai-rh-krea2-turbo-bf16-unet-2071705402210873346",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf16-unet-2071705402210873346",
+  "created_at": "2026-10-04T01:59:43.000Z",
+  "updated_at": "2026-10-04T02:14:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25641780426,
+  "storage_human": "25.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-bf16-unet-2089681429763579905 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf16-unet-2089681429763579905",
+      "snippet": "RunningHubAI / rh-krea2-turbo-bf16-unet-2089681429763579905 Like 0 Image-Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new rh-krea2-turbo-bf16-unet Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-bf16-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf16-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rh-krea2-turbo-bf16-unet-2099688637024788481 - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf16-unet-2099688637024788481",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-bf16-unet-2102646504816201729 at main",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-bf16-unet-2102646504816201729/tree/main",
+      "snippet": "RunningHubAI / rh-krea2-turbo-bf16-unet-2102646504816201729 Like 0 Image-Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new main rh-krea2-turbo-bf16-unet-2102646504816201729 26.3 GB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2102646504816201729 84bebf8 verifiedabout 6 hours ago .gitattributes Safe 1.57 kBUpload ..."
+    },
+    {
+      "title": "Krea2-Turbo_bf16 Full Version - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2071705402210873346",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ccollinsisabella/matching",
+  "slug": "ccollinsisabella-matching",
+  "author": "Ccollinsisabella",
+  "url": "https://huggingface.co/Ccollinsisabella/matching",
+  "created_at": "2026-10-04T01:04:52.000Z",
+  "updated_at": "2026-10-04T01:04:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Who Is This Model? Find a Model by Photo — GetModel",
+      "url": "https://getmodel.com/find/",
+      "snippet": "A model an agency or photographer wants to credit Frequently asked questions How do I find a model by a photo? Upload a clear, front-facing photo. Our visual search reads the face and compares it against every model in the GetModel directory, then returns the closest match plus similar-looking models — each linking to a full profile."
+    },
+    {
+      "title": "ModelMatch - Compare AI Models Side by Side",
+      "url": "https://modelmatch.dynamikapps.com/",
+      "snippet": "ModelMatch lets you interact with and compare 20+ leading AI models including GPT-4, Claude, Gemini, Llama, and more through a unified interface."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "AI Celebrity Face Match | Find Your Celebrity Look-Alike",
+      "url": "https://whatismyfaceshape.net/ai-celebrity-lookalike",
+      "snippet": "Advanced AI Celebrity Face Match tool. Upload your photo to find your celebrity look-alike. See which celebrity you resemble most"
+    },
+    {
+      "title": "Generative AI Platform | AI APIs for Image, Video, Audio & LLMs - ModelsLab",
+      "url": "https://modelslab.com/",
+      "snippet": "Build with 10,000+ AI models using one simple API with ModelsLab. Generate images, video, audio, and more fast, scalable, and cost-effective for developers."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/DeepSeek-V4.1-MLX-Q9",
+  "slug": "inferencerlabs-deepseek-v4-1-mlx-q9",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q9",
+  "created_at": "2026-10-04T03:09:09.000Z",
+  "updated_at": "2026-10-04T19:31:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "deepseek_v41",
+    "quantized",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344330341412,
+  "storage_human": "344.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "inferencerlabs/DeepSeek-V4.1-MLX-Q9 · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q9",
+      "snippet": "Disclaimer We are not the creator, originator, or owner of any model listed. Each model is created and provided by third parties. Models may not always be accurate or contextually appropriate. You are responsible for verifying the information before making important decisions. We are not liable for any damages, losses, or issues arising from its use, including data loss or inaccuracies in AI ..."
+    },
+    {
+      "title": "inferencerlabs/DeepSeek-V4.1-MLX-Q4i · Hugging Face",
+      "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q4i",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek V4.1 MLX Q4i by inferencerlabs - LLM Explorer",
+      "url": "https://llm-explorer.com/model/inferencerlabs%2FDeepSeek-V4.1-MLX-Q4i,4EIoCn3fOYy83yrLHuW8fU",
+      "snippet": "DeepSeek V4.1 MLX Q4i is an open-source language model by inferencerlabs. Features: LLM, VRAM: 144.9GB, LLM Explorer Score: 0.31."
+    },
+    {
+      "title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.",
+      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "snippet": "Introducing the smallest model in our new architecture family, with native visual understanding. Designed for greater capability, faster inference, and higher throughput."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "moe-kill/H3_Larry_Battle_JOKER",
+  "slug": "moe-kill-h3_larry_battle_joker",
+  "author": "moe-kill",
+  "url": "https://huggingface.co/moe-kill/H3_Larry_Battle_JOKER",
+  "created_at": "2026-10-04T14:50:33.000Z",
+  "updated_at": "2026-10-04T14:58:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "video-generation",
+    "combat",
+    "motion",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1090005388,
+  "storage_human": "1.1 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOA et MOE : quelles différences et comment les distinguer ?",
+      "url": "https://chef-de-projet.fr/moa-moe-differences/",
+      "snippet": "May 18, 2026 · La MOE conçoit l’ouvrage, dépose le permis de construire, rédige les pièces techniques et supervise les entreprises …"
+    },
+    {
+      "title": "Quelles différences entre MOE, MOA et AMO - success-i.fr",
+      "url": "https://www.success-i.fr/blog/2020/04/21/quelles-differences-entre-moa-moe-amo",
+      "snippet": "Définition du maître d’œuvre (MOE) Le maître d’œuvre est un technicien (on pourrait dire un professionnel) des travaux. L’architecte …"
+    },
+    {
+      "title": "AMOE / MOE – Assistance à Maîtrise d’Œuvre - CustUp",
+      "url": "https://www.custup.com/amoe-moe-assistance-maitrise-oeuvre-definition/",
+      "snippet": "Aug 6, 2026 · En tant que gestionnaire et organisateur du projet, le MOE est le garant de la bonne exécution des tâches demandées …"
+    },
+    {
+      "title": "Moe (Japon) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Moe_(Japon)",
+      "snippet": "Moe utilisé en argot se réfère à des sentiments d'affection, d'adoration, de dévotion et d'excitation envers des personnages qui …"
+    },
+    {
+      "title": "Marseille Outdoor Experiences | trail urbain marseille",
+      "url": "https://www.marseilleoutdoorexperiences.fr/",
+      "snippet": "Rejoignez le Marseille Outdoor Experiences pour découvrir le meilleur du trail urbain au cœur de Marseille. De l'expérience intense …"
+    }
+  ]
+}

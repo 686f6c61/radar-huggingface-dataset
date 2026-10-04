@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wq2012/tec_multi_interfering",
+  "slug": "wq2012-tec_multi_interfering",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/tec_multi_interfering",
+  "created_at": "2026-10-04T17:26:58.000Z",
+  "updated_at": "2026-10-04T17:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lingvo",
+  "languages": [],
+  "tags": [
+    "lingvo",
+    "tflite",
+    "audio",
+    "speech-enhancement",
+    "echo-cancellation",
+    "textual-echo-cancellation",
+    "tensorflow",
+    "dataset:libritts",
+    "dataset:vctk",
+    "arxiv:2008.06006",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295909541,
+  "storage_human": "296 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ages of Conflict: World War Simulator by JokuPelle",
+      "url": "https://jokupelle.itch.io/ages-of-conflict",
+      "snippet": "Ages of Conflict is a versatile Map Simulation game Spawn and observe AI nations battle it out across an infinite number of worlds. …"
+    },
+    {
+      "title": "Ages of Conflict: World War Simulator - Play Online Free",
+      "url": "https://agesofconflict.org/",
+      "snippet": "The online version lets you start AI map simulations, browse several demo maps, observe wars and political changes, try a basic …"
+    },
+    {
+      "title": "Ages of Conflict - Play Simulator Games Online",
+      "url": "https://kbhgames.com/game/ages-of-conflict",
+      "snippet": "Ages of Conflict is a map simulation strategy game where you spawn AI nations and watch them fight for control across procedurally …"
+    },
+    {
+      "title": "Save 25% on Ages of Conflict: World War Simulator on Steam",
+      "url": "https://store.steampowered.com/app/2186320/Ages_of_Conflict_World_War_Simulator/",
+      "snippet": "Feb 17, 2023 · Ages of Conflict is a versatile Map Simulation game where you create and observe custom AI nations battle it out …"
+    },
+    {
+      "title": "How to Play Ages of Conflict Online",
+      "url": "https://agesofconflict.org/how-to-play",
+      "snippet": "A practical first-session guide to Ages of Conflict: choose a map, start the AI simulation, inspect nations, follow wars, and use the …"
+    }
+  ]
+}

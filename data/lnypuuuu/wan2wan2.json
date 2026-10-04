@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Lnypuuuu/Wan2wan2",
+  "slug": "lnypuuuu-wan2wan2",
+  "author": "Lnypuuuu",
+  "url": "https://huggingface.co/Lnypuuuu/Wan2wan2",
+  "created_at": "2026-10-04T01:11:15.000Z",
+  "updated_at": "2026-10-04T01:15:32.000Z",
+  "license": "wan2wan2",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13142385530,
+  "storage_human": "13.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lnypuuuu/Wan2wan2 · Hugging Face",
+      "url": "https://huggingface.co/Lnypuuuu/Wan2wan2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Lnypuuuu/Wan2wan2 at main - Hugging Face",
+      "url": "https://huggingface.co/Lnypuuuu/Wan2wan2/blob/main/README.md",
+      "snippet": "Instructions to use Lnypuuuu/Wan2wan2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Lnypuuuu/Wan2wan2 with Diffusers: ... Inference Inference Providers Notebooks Google Colab Kaggle Settings main Wan2wan2 /README.md Lnypuuuu initial commit 7049d51 verifiedabout ..."
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=Lnypuuuu/Wan2wan2",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "wanwan2 - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1906894475594524838",
+      "snippet": "Generate stunning wanwan anime art with the &#x27;wanwan2&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "GitHub - fxcod/Wan2Wan: A fast AI Video Generator for the GPU Poor ...",
+      "url": "https://github.com/fxcod/Wan2Wan",
+      "snippet": "A fast AI Video Generator for the GPU Poor. Supports Wan 2.1/2.2, Qwen Image, Hunyuan Video, LTX Video and Flux. - fxcod/Wan2Wan"
+    }
+  ]
+}

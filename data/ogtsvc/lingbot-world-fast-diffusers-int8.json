@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ogtsvc/lingbot-world-fast-diffusers-int8",
+  "slug": "ogtsvc-lingbot-world-fast-diffusers-int8",
+  "author": "ogtsvc",
+  "url": "https://huggingface.co/ogtsvc/lingbot-world-fast-diffusers-int8",
+  "created_at": "2026-10-04T13:15:11.000Z",
+  "updated_at": "2026-10-04T14:39:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "world model",
+    "int8",
+    "image-to-video",
+    "arxiv:2601.20540",
+    "base_model:robbyant/lingbot-world-fast-diffusers",
+    "base_model:quantized:robbyant/lingbot-world-fast-diffusers",
+    "license:apache-2.0",
+    "diffusers:LingBotWorldCausalDMDPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18547604544,
+  "parameters_human": "18.55B",
+  "storage_bytes": 30482790504,
+  "storage_human": "30.5 GB",
+  "base_model": "robbyant/lingbot-world-fast-diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LingBot-World: Advancing Open-source World Models - GitHub",
+      "url": "https://github.com/robbyant/lingbot-world",
+      "snippet": "Advancing Open-source World Models. Contribute to Robbyant/lingbot-world development by creating an account on GitHub."
+    },
+    {
+      "title": "FastVideo/LingBot-World-Fast-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/FastVideo/LingBot-World-Fast-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "robbyant/lingbot-world-fast-diffusers · Hugging Face",
+      "url": "https://huggingface.co/robbyant/lingbot-world-fast-diffusers?library=diffusers",
+      "snippet": "We are excited to introduce LingBot-World, an open-sourced world simulator stemming from video generation. Positioned as a top-tier world model, LingBot-World offers the following features. High-Fidelity & Diverse Environments: It maintains high fidelity and robust dynamics in a broad spectrum of environments, including realism, scientific contexts, cartoon styles, and beyond. Long-Term Memory ..."
+    },
+    {
+      "title": "LingBot-World | Open Source AI World Model - Free Deploy",
+      "url": "https://www.lingbot-world.org/",
+      "snippet": "LingBot-World AI World Model LingBot-World is the first open-source real-time interactive world model that rivals Google Genie 3 in quality. Experience zero-code world generation from a single image. This revolutionary AI world simulator lets you explore infinite procedurally generated worlds in real-time with stable long-term memory - no pre-rendered assets, no coding required."
+    },
+    {
+      "title": "GitHub - Robbyant/lingbot-world-v2: Infinite Worlds with Versatile ...",
+      "url": "https://github.com/Robbyant/lingbot-world-v2",
+      "snippet": "Infinite Worlds with Versatile Interactions. Contribute to Robbyant/lingbot-world-v2 development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "chegrowk/ko-phone-int8",
+  "slug": "chegrowk-ko-phone-int8",
+  "author": "chegrowk",
+  "url": "https://huggingface.co/chegrowk/ko-phone-int8",
+  "created_at": "2026-10-04T17:39:19.000Z",
+  "updated_at": "2026-10-04T18:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "int8",
+    "phoneme-recognition",
+    "ko",
+    "base_model:slplab/wav2vec2-xls-r-300m_phone-mfa_korean",
+    "base_model:quantized:slplab/wav2vec2-xls-r-300m_phone-mfa_korean",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 356129122,
+  "storage_human": "356 MB",
+  "base_model": "slplab/wav2vec2-xls-r-300m_phone-mfa_korean",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

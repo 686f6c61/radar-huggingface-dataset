@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "az225/privacy-masker-ja-pii-ner-30m",
+  "slug": "az225-privacy-masker-ja-pii-ner-30m",
+  "author": "az225",
+  "url": "https://huggingface.co/az225/privacy-masker-ja-pii-ner-30m",
+  "created_at": "2026-10-04T15:32:36.000Z",
+  "updated_at": "2026-10-04T15:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "privacy-masker",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "privacy-masker",
+    "safetensors",
+    "modernbert",
+    "ner",
+    "pii",
+    "anonymization",
+    "de-identification",
+    "japanese",
+    "character-level",
+    "token-classification",
+    "ja",
+    "dataset:stockmark/ner-wikipedia-dataset",
+    "dataset:nvidia/Nemotron-Personas-Japan",
+    "base_model:cl-nagoya/ruri-v3-30m",
+    "base_model:finetune:cl-nagoya/ruri-v3-30m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36705536,
+  "parameters_human": "36.7M",
+  "storage_bytes": 147181180,
+  "storage_human": "147 MB",
+  "base_model": "cl-nagoya/ruri-v3-30m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Privacy Filter - GitHub",
+      "url": "https://github.com/openai/privacy-filter",
+      "snippet": "This means: The base model is an autoregressive pretrained checkpoint. The language-model output head is replaced with a token-classification head over privacy labels. Post-training is supervised token-level classification rather than next-token prediction."
+    },
+    {
+      "title": "Introducing OpenAI Privacy Filter",
+      "url": "https://openai.com/index/introducing-openai-privacy-filter/",
+      "snippet": "The result is a model that is strong enough to deliver frontier-level privacy filtering performance. At the same time, the model is small enough to be run locally–meaning data that has yet to be filtered can remain on device, with less risk of exposure, rather than needing to be sent to a server for de-identification."
+    },
+    {
+      "title": "openai/privacy-filter · Hugging Face",
+      "url": "https://huggingface.co/openai/privacy-filter",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenAI Open-Sources Privacy Filter: 96% F1 PII Masker",
+      "url": "https://awesomeagents.ai/news/openai-privacy-filter-on-device-pii/",
+      "snippet": "The model is positioned as a pre-processing layer, not a privacy guarantee. GDPR, HIPAA, and state-level privacy laws impose obligations that are process-level, not model-level: data retention schedules, subject access requests, consent flows, lawful basis for processing."
+    },
+    {
+      "title": "divergentlabs/masker · Hugging Face",
+      "url": "https://huggingface.co/divergentlabs/masker",
+      "snippet": "masker is a multilingual token classifier for personally identifiable information (PII), covering 23 European languages. It is the neural half of a two-part redaction system: this model tags contextual PII: names, addresses, ages, dates."
+    }
+  ]
+}

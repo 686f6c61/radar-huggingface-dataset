@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead",
+  "slug": "speakrail-voxtral-mini-4b-realtime-2602-turnhead",
+  "author": "speakrail",
+  "url": "https://huggingface.co/speakrail/Voxtral-Mini-4B-Realtime-2602-TurnHead",
+  "created_at": "2026-10-04T18:11:43.000Z",
+  "updated_at": "2026-10-04T18:18:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "base_model:adapter:mistralai/Voxtral-Mini-4B-Realtime-2602",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Voxtral-Mini-4B-Realtime-2602",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaveMoreDaily — Verified Coupon Codes & Deals Updated Daily",
+      "url": "https://www.savemoredaily.com/en",
+      "snippet": "Save More Every Day — verified daily. Discover verified coupon codes and exclusive deals from hundreds of top brands. Never pay …"
+    },
+    {
+      "title": "MoneySuperMarket | Where better off begins",
+      "url": "https://www.moneysupermarket.com/?msockid=23d750c4e2b56f870eeb472ce32b6e24",
+      "snippet": "2 days ago · Compare and save on over 40 products including car insurance, home insurance, credit cards, loans and energy. …"
+    },
+    {
+      "title": "Bite for Less — Today's Best Fast Food & Restaurant Deals",
+      "url": "https://biteforless.com/",
+      "snippet": "1 day ago · Find the best fast food and restaurant deals every day. Promo codes, discounts, and limited-time offers from McDonald's, …"
+    },
+    {
+      "title": "Dealogator — Daily Deals & Coupons",
+      "url": "https://dealogator.com/",
+      "snippet": "Dealogator is your trusted source for verified coupons, promo codes, and exclusive deals in United States. We partner with hundreds …"
+    },
+    {
+      "title": "Today's Best Deals — Price & Pick",
+      "url": "https://priceandpick.com/deals/",
+      "snippet": "The best deals from 200+ trusted brands. Updated hourly. Save up to 70% on electronics, fashion, home, beauty, and more."
+    }
+  ]
+}

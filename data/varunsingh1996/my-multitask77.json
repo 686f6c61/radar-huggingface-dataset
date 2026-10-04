@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "varunsingh1996/my-multitask77",
+  "slug": "varunsingh1996-my-multitask77",
+  "author": "varunsingh1996",
+  "url": "https://huggingface.co/varunsingh1996/my-multitask77",
+  "created_at": "2026-10-04T16:09:48.000Z",
+  "updated_at": "2026-10-04T16:09:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Petopia Classic: A complete guide to hunter pets in World of Warcraft ...",
+      "url": "https://www.wow-petopia.com/classic/",
+      "snippet": "Welcome to our Classic site! If you're just starting in Classic, please see our summary page for a refresher on the differences in …"
+    },
+    {
+      "title": "Petopia Classic: Pet Family Abilities",
+      "url": "https://www.wow-petopia.com/classic/abilities.php",
+      "snippet": "Some pets know an ability or two already when you tame them, but most pets need to be trained. In order to teach your pet a skill, …"
+    },
+    {
+      "title": "Hunter Pets Guide - WoW Classic - Wowhead",
+      "url": "https://www.wowhead.com/classic/guide/classic-wow-hunter-pets",
+      "snippet": "Mar 20, 2025 · Comprehensive guide to the Hunter Pet system in WoW Classic, including training your pets, feeding your pets to …"
+    },
+    {
+      "title": "Pet Configurator - Classic-Pets.com",
+      "url": "https://www.classic-pets.com/index.php",
+      "snippet": "Build your pet in World of Warcraft: Classic and share your configuration with the world. You can your favourite abilities from over …"
+    },
+    {
+      "title": "Classic Hunter DPS Pets Guide - WoW Classic - Icy Veins",
+      "url": "https://www.icy-veins.com/wow-classic/hunter-dps-pets-guide",
+      "snippet": "Nov 17, 2024 · Learn about the Pets system for Hunters in WoW Classic and find out how to get the best pets and use them efficiently."
+    }
+  ]
+}

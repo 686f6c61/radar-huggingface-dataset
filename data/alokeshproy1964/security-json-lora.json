@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "alokeshproy1964/security-json-lora",
+  "slug": "alokeshproy1964-security-json-lora",
+  "author": "alokeshproy1964",
+  "url": "https://huggingface.co/alokeshproy1964/security-json-lora",
+  "created_at": "2026-10-04T13:36:49.000Z",
+  "updated_at": "2026-10-04T13:37:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89900664,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alokeshproy1964 (ALOKESH PROSAD ROY) - Hugging Face",
+      "url": "https://huggingface.co/alokeshproy1964/models",
+      "snippet": "AI & ML, Cybersecurity, OSINT, Hacking"
+    },
+    {
+      "title": "alokeshproy1964 (ALOKESH PROSAD ROY) - Hugging Face",
+      "url": "https://huggingface.co/alokeshproy1964/spaces",
+      "snippet": "AI & ML, Cybersecurity, OSINT, Hacking Open Webui 📊 Chat with AI language models via a web interface alokeshproy1964 Feb 3, 2025"
+    },
+    {
+      "title": "LoRA AI Models (17,903) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,903 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Best Security forces AI LORA - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/783322397777546425",
+      "snippet": "Download Security forces - free LORA FLUX.1 AI model on TENSOR. By Victoria"
+    },
+    {
+      "title": "How to Fine-Tune an LLM With LoRA: 12 Steps [2026]",
+      "url": "https://tech-insider.org/how-to-fine-tune-llm-lora-2026/",
+      "snippet": "Fine-tune an open-source LLM with LoRA and QLoRA in 12 steps: setup, dataset prep, training, evaluation, and deployment with real 2026 GPU pricing."
+    }
+  ]
+}

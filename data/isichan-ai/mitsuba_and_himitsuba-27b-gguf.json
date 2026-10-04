@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "isichan-ai/Mitsuba_and_HiMitsuba-27B-GGUF",
+  "slug": "isichan-ai-mitsuba_and_himitsuba-27b-gguf",
+  "author": "isichan-ai",
+  "url": "https://huggingface.co/isichan-ai/Mitsuba_and_HiMitsuba-27B-GGUF",
+  "created_at": "2026-09-29T12:35:25.000Z",
+  "updated_at": "2026-10-04T13:12:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "pq2_0",
+    "ptq1_0",
+    "comfyui",
+    "prompt-generation",
+    "vision",
+    "lora",
+    "uncensored",
+    "image-text-to-text",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 69,
+  "downloads_30d": 8424,
+  "trending_score": 68,
+  "parameters": 17301504,
+  "parameters_human": "17.3M",
+  "storage_bytes": 14017086271,
+  "storage_human": "14.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · isichan-ai/Mitsuba-ComfyUI-27B-GGUF at main",
+      "url": "https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF/blob/main/README.md",
+      "snippet": "How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with Docker Model Runner: ... Lemonade How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with Hermes Agent: Start the llama.cpp server ..."
+    },
+    {
+      "title": "Mitsuba-ComfyUI-27B-v1.18-PQ2_0.gguf · isichan-ai/Mitsuba-ComfyUI-27B ...",
+      "url": "https://huggingface.co/isichan-ai/Mitsuba-ComfyUI-27B-GGUF/blob/main/Mitsuba-ComfyUI-27B-v1.18-PQ2_0.gguf",
+      "snippet": "How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with Docker Model Runner: ... Lemonade How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use isichan-ai/Mitsuba-ComfyUI-27B-GGUF with Hermes Agent: Start the llama.cpp server ..."
+    },
+    {
+      "title": "Mitsuba Squeezes a 27B Vision Model Into 7.3 GB for ComfyUI | AlphaSignal",
+      "url": "https://alphasignal.ai/news/mitsuba-squeezes-a-27b-vision-model-into-7-3-gb-for-comfyui",
+      "snippet": "Mitsuba compresses a 27B vision model for ComfyUI prompts Mitsuba-ComfyUI-27B-GGUF is a 27-billion-parameter vision-language model that analyzes images and writes constrained prompts for downstream image and video generators. The Japanese developer publishing as isichan-ai tuned the Qwen3.8-27B derivative for Stable Diffusion tags, timed video instructions, negative prompts and detailed image ..."
+    },
+    {
+      "title": "Mitsuba Squeezes a 27B Vision Model Into 7.3 GB on One GPU - alphasignal.ai",
+      "url": "https://alphasignal.ai/news/mitsuba-squeezes-a-27b-vision-model-into-7-3-gb-on-one-gpu",
+      "snippet": "Mitsuba squeezes a 27B vision model into 7.3 GB Mitsuba is a ternary-quantized vision-language model designed to convert reference images into structured prompts for ComfyUI, Stable Diffusion, Krea, and similar generation tools. Its 27-billion-parameter base compresses to 7.3 GB or 6.0 GB, depending on the format, and the author reports that either build can run on a single 16 GB GPU."
+    },
+    {
+      "title": "Isichan-ai - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingface/isichan-ai",
+      "snippet": "Looking for Isichan-ai&#x27;s top AI models? Browse their full Hugging Face collection of 1 model. Explore AI models and contributions by Isichan-ai on Huggingface."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "KrynexLabs/KrynexAI-1.4-150M-Mobile-Model",
+  "slug": "krynexlabs-krynexai-1-4-150m-mobile-model",
+  "author": "KrynexLabs",
+  "url": "https://huggingface.co/KrynexLabs/KrynexAI-1.4-150M-Mobile-Model",
+  "created_at": "2026-10-04T14:40:19.000Z",
+  "updated_at": "2026-10-04T15:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "krynex-ai",
+    "base-model",
+    "llama",
+    "causal-lm",
+    "text-generation",
+    "pytorch",
+    "lightweight",
+    "on-device",
+    "edge-ai",
+    "150m",
+    "bfloat16",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solution épisode 23 - Solutions et illustrations pour \"Amour Sucré\"?",
+      "url": "https://neelamie.over-blog.com/2016/04/solution-episode-23.html",
+      "snippet": "Apr 9, 2016 · Il est possible de rater son rendez-vous à partir de cet épisode. Pour réussir il faut choisir : Résumé du dernier épisode …"
+    },
+    {
+      "title": "Solution Amour Sucre Épisode 23 : Guide des Dialogues",
+      "url": "https://amour-sucre.fr/solution-amour-sucre-episode-23/",
+      "snippet": "May 12, 2026 · Retrouvez tous les bons choix de réponses pour l’épisode 23 de Amour Sucre avec Alexy, Armin, Castiel, Dake, …"
+    },
+    {
+      "title": "Episode 23 - Amour Sucré Solution - Le lycée Sweet Amoris",
+      "url": "https://lelyceesweetamoris.ek.la/episode-23-amour-sucre-solution-a114910864",
+      "snippet": "Mar 4, 2015 · PARTIE I : LE SECRET DE NATHANIEL. Sucrette doit se rendre en ville pour acheter un pyjama, on a le choix entre : …"
+    },
+    {
+      "title": "Épisode 23 - AS New Gen - Solutions",
+      "url": "https://amoursucre-newgen.ek.la/2025/12/episode-23.html",
+      "snippet": "Jan 30, 2026 · Guide Illustrations Scènes spé Épisode 23 30 janvier 2026 KalyBtm Épisode 23"
+    },
+    {
+      "title": "EPISODE 23 - Solution des épisodes Amour Sucré",
+      "url": "https://helpamoursucre.eklablog.com/episode-23-a140716034",
+      "snippet": "Mar 30, 2018 · Explication du code couleur: En rouge : fait baisser le LOM En vert : fait augmenter le LOM En orange : neutre …"
+    }
+  ]
+}

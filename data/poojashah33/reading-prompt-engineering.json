@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Poojashah33/reading-prompt-engineering",
+  "slug": "poojashah33-reading-prompt-engineering",
+  "author": "Poojashah33",
+  "url": "https://huggingface.co/Poojashah33/reading-prompt-engineering",
+  "created_at": "2026-10-04T01:00:24.000Z",
+  "updated_at": "2026-10-04T01:00:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poojashah33/reading-prompt-engineering · Hugging Face",
+      "url": "https://huggingface.co/Poojashah33/reading-prompt-engineering",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "GitHub - dair-ai/Prompt-Engineering-Guide: Guides, papers, lessons ...",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide",
+      "snippet": "🐙 Guides, papers, lessons, notebooks and resources for prompt engineering, context engineering, RAG, and AI Agents. - dair-ai/Prompt-Engineering-Guide"
+    },
+    {
+      "title": "Prompt Engineering - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/prompt-engineering-2/",
+      "snippet": "Prompt Engineering Is the process of designing and improving prompts to communicate effectively with AI models. It helps ensure that the outputs are accurate, relevant and aligned with user goals. Creating clear instructions for better AI responses. Helps generate precise and relevant outputs. Connects human intent with machine understanding. Used in NLP, chatbots and content generation. AI ..."
+    },
+    {
+      "title": "PromptEngineering - Reddit",
+      "url": "https://www.reddit.com/r/PromptEngineering/",
+      "snippet": "Prompt Quill for automated Model testing Hello my dear friends of AI, my tool Prompt Quill, the world&#x27;s first RAG driven prompt engineer helper at this large scale, has become even more useful. I integrated the API to A1111 or Forge and so it now allows for local generating the prompts it has created."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tobiasoberrauch/Kolibri-1-mlx-4bit",
+  "slug": "tobiasoberrauch-kolibri-1-mlx-4bit",
+  "author": "tobiasoberrauch",
+  "url": "https://huggingface.co/tobiasoberrauch/Kolibri-1-mlx-4bit",
+  "created_at": "2026-10-04T17:30:42.000Z",
+  "updated_at": "2026-10-04T18:53:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "kolibri1",
+    "moe",
+    "reasoning",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78103055360,
+  "parameters_human": "78.10B",
+  "storage_bytes": 44004686872,
+  "storage_human": "44.0 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tobiasoberrauch/Kolibri-1-mlx-4bit · Hugging Face",
+      "url": "https://huggingface.co/tobiasoberrauch/Kolibri-1-mlx-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nativ-community/Kolibri-1-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/nativ-community/Kolibri-1-MLX-4bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tobiasoberrauch (Tobias Oberrauch) · GitHub",
+      "url": "https://github.com/tobiasoberrauch",
+      "snippet": "tobiasoberrauch has 97 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    },
+    {
+      "title": "Kolibri 1 - VRAM, Specs & Benchmarks - apxml.com",
+      "url": "https://apxml.com/models/kolibri-1",
+      "snippet": "About Kolibri 1 Kolibri 1 is an open foundation language model released by Aleph Alpha featuring native causal language modeling architectures. It is designed for European multilingual processing, enterprise compliance, and general reasoning tasks."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Leon1000/MiniMax-H3-360-Orbit-LoRA",
+  "slug": "leon1000-minimax-h3-360-orbit-lora",
+  "author": "Leon1000",
+  "url": "https://huggingface.co/Leon1000/MiniMax-H3-360-Orbit-LoRA",
+  "created_at": "2026-10-04T13:44:14.000Z",
+  "updated_at": "2026-10-04T13:44:14.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "image-to-video",
+    "first-last-frame",
+    "flf2v",
+    "camera-control",
+    "orbit",
+    "360",
+    "3d-consistency",
+    "gaussian-splatting",
+    "ai-toolkit",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195852379,
+  "storage_human": "196 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pablodawson/MiniMax-H3-360-Orbit-LoRA · Hugging Face",
+      "url": "https://huggingface.co/pablodawson/MiniMax-H3-360-Orbit-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Leon1000/MiniMax-H3 · Hugging Face",
+      "url": "https://huggingface.co/Leon1000/MiniMax-H3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3-360-Orbit-LoRA: Image-to-Video model - aimodels.fyi",
+      "url": "https://www.aimodels.fyi/models/huggingFace/minimax-h3-360-orbit-lora-pablodawson",
+      "snippet": "Model Overview Overview MiniMax-H3-360-Orbit-LoRA is a rank-16 LoRA adapter for the first-last-frame video variant of MiniMax-H3 (FL2VA). Given one image as both the first and last keyframe, it aims to generate a continuous 360-degree camera orbit around the subject while keeping the scene frozen and returning to the starting view."
+    },
+    {
+      "title": "MiniMax H3 360 Orbit LoRA for ComfyUI: One Photo, Full Orbit",
+      "url": "https://comfyui-wiki.com/en/news/2026-09-27-h3-360-orbit-lora",
+      "snippet": "A community LoRA for MiniMax H3 FL2VA turns one photo into a full 360 camera orbit that lands back on its own first frame, with ideal ComfyUI settings."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    }
+  ]
+}

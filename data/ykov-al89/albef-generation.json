@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ykov-al89/albef-generation",
+  "slug": "ykov-al89-albef-generation",
+  "author": "ykov-al89",
+  "url": "https://huggingface.co/ykov-al89/albef-generation",
+  "created_at": "2026-10-04T13:14:53.000Z",
+  "updated_at": "2026-10-04T13:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ykov-al89/generation-beta · Hugging Face",
+      "url": "https://huggingface.co/ykov-al89/generation-beta",
+      "snippet": "ykov-al89 / generation-beta Like 0 Safetensors PyTorch flamingo generation License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Flamingo for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "jonaswagner/albef-generation · Hugging Face",
+      "url": "https://huggingface.co/jonaswagner/albef-generation",
+      "snippet": "Overview Working implementation of Albef for Generation using a tiny configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications!"
+    },
+    {
+      "title": "multimodal/examples/albef/README.md at main - GitHub",
+      "url": "https://github.com/facebookresearch/multimodal/blob/main/examples/albef/README.md",
+      "snippet": "ALBEF (Li et al., 2021) is a multimodal understanding model that uses a contrastive loss to align unimodal embeddings prior to fusing them via a multimodal transformer encoder. It additionally uses momentum distillation to generate and learn from pseudo-targets using EMA versions of model weights. TorchMultimodal provides example scripts for ALBEF on retrieval (image-text or text-image) and ..."
+    }
+  ]
+}

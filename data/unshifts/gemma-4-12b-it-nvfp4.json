@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Unshifts/gemma-4-12B-it-nvfp4",
+  "slug": "unshifts-gemma-4-12b-it-nvfp4",
+  "author": "Unshifts",
+  "url": "https://huggingface.co/Unshifts/gemma-4-12B-it-nvfp4",
+  "created_at": "2026-10-04T13:27:30.000Z",
+  "updated_at": "2026-10-04T13:27:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "Transparency and Accountability This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem. Risks identified and ..."
+    },
+    {
+      "title": "RedHatAI/gemma-4-12B-it-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/gemma-4-12B-it-NVFP4",
+      "snippet": "This is a preliminary version (and subject to change) of NVFP4 quantized google/gemma-4-12B-it model. The model has both weights and activations quantized to NVFP4 format with vllm-project/llm-compressor."
+    },
+    {
+      "title": "Gemma 4 12B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/gemma4-12b/",
+      "snippet": "Gemma 4 12B is Google&#x27;s mid-size dense Gemma 4 model — the step up from the edge-sized E2B/E4B variants for workloads that need stronger reasoning while fitting on a single Jetson. This page covers the NVFP4 checkpoint for vLLM on Thor (efficient 4-bit inference on Blackwell) and Google&#x27;s official quantization-aware-trained Q4_0 GGUF for llama.cpp on Thor and AGX Orin. Local assistants ..."
+    },
+    {
+      "title": "Introducing Gemma 4 12B - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemma-4-12B/",
+      "snippet": "An overview of Gemma 4 12B, a model designed to bring high-performance multimodal intelligence directly to your laptop."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    }
+  ]
+}

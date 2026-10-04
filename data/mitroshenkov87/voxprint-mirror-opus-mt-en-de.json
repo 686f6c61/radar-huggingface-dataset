@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-mirror-opus-mt-en-de",
+  "slug": "mitroshenkov87-voxprint-mirror-opus-mt-en-de",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-de",
+  "created_at": "2026-10-04T00:57:40.000Z",
+  "updated_at": "2026-10-04T00:57:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "marian",
+    "mirror",
+    "voxprint",
+    "translation",
+    "base_model:Helsinki-NLP/opus-mt-en-de",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-de",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 299493543,
+  "storage_human": "299 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-de",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voxprint-audiobook-builder/docs/MODELS.md at main · Mitroshenkov87 ...",
+      "url": "https://github.com/Mitroshenkov87/voxprint-audiobook-builder/blob/main/docs/MODELS.md",
+      "snippet": "Voxprint copies to <folder>&#92;Voxprint-backup&#92;: every complete model it uses (its own models folder plus complete copies from the Hugging Face cache of other programs: TTS bases, forced aligner, clean-up models), the pinned ffmpeg build if it was downloaded, and - with Include my voices ticked (default) - the voice library."
+    },
+    {
+      "title": "Mitroshenkov87 (Mitroshenkov A. A.) - Hugging Face",
+      "url": "https://huggingface.co/Mitroshenkov87",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection about 2 hours ago ... liked a model about 2 hours ago"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=voxprint",
+      "snippet": "Mitroshenkov87/voxprint-mirror-opus-mt-de-en Translation •Updated about 3 hours ago"
+    },
+    {
+      "title": "GitHub - nulljosh/voxprint: On-device audio transcription (speech ...",
+      "url": "https://github.com/nulljosh/voxprint/tree/main",
+      "snippet": "On-device audio transcription (speech, music, podcasts) using WhisperKit. No cloud. - nulljosh/voxprint"
+    },
+    {
+      "title": "Voxprint — On-device transcription",
+      "url": "https://echo.heyitsmejosh.com/",
+      "snippet": "Whisper-powered speech transcription that runs entirely on your device. No cloud, no accounts, detects the language you&#x27;re speaking."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kennymori47/hybrid-finetuned",
+  "slug": "kennymori47-hybrid-finetuned",
+  "author": "kennymori47",
+  "url": "https://huggingface.co/kennymori47/hybrid-finetuned",
+  "created_at": "2026-10-04T00:53:58.000Z",
+  "updated_at": "2026-10-04T00:54:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【ミラーレスカメラ】EOS R 基本情報 - キヤノン",
+      "url": "https://faq.canon.jp/app/answers/detail/a_id/94856/~/%E3%80%90%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%AC%E3%82%B9%E3%82%AB%E3%83%A1%E3%83%A9%E3%80%91eos-r-%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1",
+      "snippet": "Jun 26, 2024 · 【ミラーレスカメラ】EOS R 基本情報 「EOS R」は、「RFマウント」を採用する「EOS Rシステム」のカメラとし …"
+    },
+    {
+      "title": "【ミラーレスカメラ】カメラ本体で1回に動画撮影できる時間につい …",
+      "url": "https://faq.canon.jp/app/answers/detail/a_id/103461/~/%E3%80%90%E3%83%9F%E3%83%A9%E3%83%BC%E3%83%AC%E3%82%B9%E3%82%AB%E3%83%A1%E3%83%A9%E3%80%91%E3%82%AB%E3%83%A1%E3%83%A9%E6%9C%AC%E4%BD%93%E3%81%A71%E5%9B%9E%E3%81%AB%E5%8B%95%E7%94%BB%E6%92%AE%E5%BD%B1%E3%81%A7%E3%81%8D%E3%82%8B%E6%99%82%E9%96%93%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%EF%BC%88eos-r%E3%82%B7%E3%83%AA%E3%83%BC%E3%82%BA%EF%BC%89",
+      "snippet": "Jun 25, 2026 · EOS Rシリーズで動画撮影する際に、1回で撮影できる時間をご案内いたします。カメラによっては制限されている …"
+    },
+    {
+      "title": "価格.com - 『フランジバック20mmの謎…』 CANON EOS R ボディ",
+      "url": "https://bbs.kakaku.com/bbs/K0001086545/SortID=22269286/",
+      "snippet": "Oct 25, 2018 · EOS R ボディ 新開発のレンズマウント「RFマウント」を採用した、約3030万画素（有効画素）の35mmフルサイ …"
+    },
+    {
+      "title": "価格.com - 『いまさらRを買う判断は間違ってますか？』 CANON …",
+      "url": "https://bbs.kakaku.com/bbs/K0001086545/SortID=25434820/",
+      "snippet": "Oct 25, 2018 · EOS R ボディ 新開発のレンズマウント「RFマウント」を採用した、約3030万画素（有効画素）の35mmフルサイ …"
+    },
+    {
+      "title": "佳能RP真的有这么差劲吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/355525961",
+      "snippet": "EOS RP的连拍等于没有，体育、生态等场景就别玩了。 但是技术好的，只拍一张，海鸥和飞机同框还是难度不大。 2020年11 …"
+    }
+  ]
+}

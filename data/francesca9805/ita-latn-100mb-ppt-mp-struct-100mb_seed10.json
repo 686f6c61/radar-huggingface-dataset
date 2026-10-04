@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10",
+  "slug": "francesca9805-ita-latn-100mb-ppt-mp-struct-100mb_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed10",
+  "created_at": "2026-10-04T15:07:47.000Z",
+  "updated_at": "2026-10-04T15:11:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/ita_latn_100mb",
+    "base_model:finetune:goldfish-models/ita_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250745485,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/ita_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Service d'authentification web - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/",
+      "snippet": "Puisque votre navigateur ne supporte pas JavaScript, vous devez appuyer sur le bouton Continuer pour poursuivre."
+    },
+    {
+      "title": "EduConnect - Choix du fournisseur d'identité",
+      "url": "https://educonnect.education.gouv.fr/",
+      "snippet": "Sans action de votre part, vous serez automatiquement redirigé(e) vers le fournisseur d'identité sélectionné dans secondes."
+    },
+    {
+      "title": "Activation du compte responsable confirmation identité - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/educt-self-service/activation/saisieNomEtNumero",
+      "snippet": "L’activation est réservée aux responsables d'élèves Pour activer votre compte, vous devez d'abord confirmer votre identité et …"
+    },
+    {
+      "title": "Besoin d’aide ? - Contact - EduConnect",
+      "url": "https://educonnect.education.gouv.fr/educt-aide/contacts/",
+      "snippet": "Choix de l’académie Pour tout problème, veuillez sélectionner votre académie afin de connaître les modalités d’assistance."
+    },
+    {
+      "title": "Identifiant élève oublié - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/educt-self-service/oubliLogin/recupererLoginEleve",
+      "snippet": "Je contacte l’école ou l’établissement Je contacte mon école ou mon établissement afin de récupérer mon identifiant ÉduConnect."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-qwen3.5-9b-self_st-s1",
+  "slug": "joshycodes-fd-qwen3-5-9b-self_st-s1",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-qwen3.5-9b-self_st-s1",
+  "created_at": "2026-10-04T01:28:36.000Z",
+  "updated_at": "2026-10-04T01:29:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-feather-f3-mt · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt",
+      "snippet": "Qwen/Qwen3.5-9B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3.5-9B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 8,309,133 tokens, 8,591 documents, of which 0 self-authored and 8,591 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its ..."
+    },
+    {
+      "title": "joshycodes/Qwen3.5-9B-sft-control-lora · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/Qwen3.5-9B-sft-control-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 9B API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/qwen3p5-9b",
+      "snippet": "Base model of 9B model from Qwen 3.5 series"
+    },
+    {
+      "title": "Best 8GB GPU Model: How to Set Up Qwen 3.5 9B (Step by Step)",
+      "url": "https://insiderllm.com/guides/qwen-3-5-9b-setup-guide/",
+      "snippet": "Qwen 3.5 9B fits in 6.6GB and beats Qwen 3-class models 3x its size. Setup on Ollama/llama.cpp, quant table, where 9B still fits in the May 2026 lineup."
+    }
+  ]
+}

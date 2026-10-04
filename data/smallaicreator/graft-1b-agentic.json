@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/GRAFT-1B-Agentic",
+  "slug": "smallaicreator-graft-1b-agentic",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/GRAFT-1B-Agentic",
+  "created_at": "2026-10-04T14:33:05.000Z",
+  "updated_at": "2026-10-04T16:06:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "agent",
+    "tool-calling",
+    "function-calling",
+    "on-device",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:SmallAICreator/GRAFT-1B",
+    "base_model:quantized:SmallAICreator/GRAFT-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1180101632,
+  "parameters_human": "1.18B",
+  "storage_bytes": 1683013533,
+  "storage_human": "1.7 GB",
+  "base_model": "SmallAICreator/GRAFT-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmallAICreator/GRAFT-1B · Hugging Face",
+      "url": "https://huggingface.co/SmallAICreator/GRAFT-1B",
+      "snippet": "GRAFT-1B is a ~1B-parameter chat model from UltraLabs. It was made by shrinking Qwen3-1.7B with GRAFT, our own gradient-free, closed-form model-shrinking method, and then healing, distilling and chat-tuning the result."
+    },
+    {
+      "title": "Best Local Model for Agentic Coding [2026]: 9 Picks",
+      "url": "https://www.kunalganglani.com/blog/best-local-model-agentic-coding",
+      "snippet": "Best local model for agentic coding in 2026: a repo-size + VRAM (16/24/48GB/CPU) decision tree with tool-calling and quantization guidance."
+    },
+    {
+      "title": "GitHub - FareedKhan-dev/all-agentic-architectures: 35 production-grade ...",
+      "url": "https://github.com/FareedKhan-dev/all-agentic-architectures",
+      "snippet": "Agentic Architectures Thirty-five production-grade agentic AI patterns. End to end. A library and a living textbook — real LLM outputs, provider-agnostic, deterministic-picker discipline throughout, and a comparative benchmark leaderboard that ranks every architecture against every relevant task."
+    },
+    {
+      "title": "Graft | AI Code Editor with Autonomous Coding Agents | Graft",
+      "url": "https://graftapp.io/",
+      "snippet": "Graft is an AI-native code editor where autonomous coding agents see your full codebase and work in parallel, each in their own git worktree. Download free for macOS, Windows, and Linux."
+    },
+    {
+      "title": "SmallAICreator AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/smallaicreator",
+      "snippet": "Browse AI models attributed to SmallAICreator, sourced from verified model catalogs."
+    }
+  ]
+}

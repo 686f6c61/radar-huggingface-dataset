@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-ggml",
+  "slug": "fredrikkarlssonspeech-whisper-large-icelandic-62640-steps-967h-ggml",
+  "author": "FredrikKarlssonSpeech",
+  "url": "https://huggingface.co/FredrikKarlssonSpeech/whisper-large-icelandic-62640-steps-967h-ggml",
+  "created_at": "2026-10-04T18:28:39.000Z",
+  "updated_at": "2026-10-04T18:30:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisper.cpp",
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "whisper.cpp",
+    "automatic-speech-recognition",
+    "whisper",
+    "ggml",
+    "is",
+    "base_model:language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+    "base_model:finetune:language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4175355816,
+  "storage_human": "4.2 GB",
+  "base_model": "language-and-voice-lab/whisper-large-icelandic-62640-steps-967h",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cisimcik/cisimcik-base",
+  "slug": "cisimcik-cisimcik-base",
+  "author": "cisimcik",
+  "url": "https://huggingface.co/cisimcik/cisimcik-base",
+  "created_at": "2026-10-04T18:00:54.000Z",
+  "updated_at": "2026-10-04T18:08:06.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "turkish",
+    "base-model",
+    "continued-pretraining",
+    "qwen3.5",
+    "gated-deltanet",
+    "hybrid-attention",
+    "pytorch",
+    "conversational",
+    "tr",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424359124,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Sign in | Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/%C2",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.lang=fr-FR",
+      "snippet": "Connectez-vous et découvrez tous les outils gratuits permettant d’avoir une boîte mail bien organisée. Découvrez de nouveaux …"
+    },
+    {
+      "title": "Se connecter | Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/,Â",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    }
+  ]
+}

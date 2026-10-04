@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+  "slug": "sc117-swift-1-5-qwen3-8-flash-next-gsq-rco-abliterated-gguf",
+  "author": "SC117",
+  "url": "https://huggingface.co/SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF",
+  "created_at": "2026-10-03T14:02:25.000Z",
+  "updated_at": "2026-10-04T11:26:01.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "abliterated",
+    "uncensored",
+    "quantization",
+    "tensor-transplant",
+    "gsq",
+    "rco",
+    "moe",
+    "mixture-of-experts",
+    "qwen3.8",
+    "flash-next",
+    "long-context",
+    "reasoning",
+    "reasoning-efficient",
+    "token-efficient",
+    "red-teaming",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 8104,
+  "trending_score": 12,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 217244315628,
+  "storage_human": "217.2 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ubuntu certified laptops",
+      "url": "https://ubuntu.com/certified/laptops",
+      "snippet": "Laptops that have been certified for use with Ubuntu."
+    },
+    {
+      "title": "Linux Shop - Vente d'ordinateur sous Linux prêts à l'emploi ! - France",
+      "url": "https://linuxshop.fr/",
+      "snippet": "Ordinateurs portables et PC de bureau sous Linux pour particuliers, professionnels et administrations. Performants, fiables et prêts à …"
+    },
+    {
+      "title": "Linux Computers with Linux Preinstalled | System76 Open Source PCs",
+      "url": "https://system76.com/",
+      "snippet": "Shop Linux computers with Linux preinstalled. Explore open source computers, Pop!_OS systems, and handcrafted PCs built in the …"
+    },
+    {
+      "title": "Best Linux laptops of 2024 - TechRadar",
+      "url": "https://www.techradar.com/best/linux-laptops",
+      "snippet": "Jun 21, 2024 · We compare the best Linux laptops for running your operating system of choice smoothly."
+    },
+    {
+      "title": "Best Linux Laptop Computers - LinuxCertified",
+      "url": "https://linuxcertified.com/linux_laptops.html",
+      "snippet": "Best Linux Laptop Computers Shop the Best of 2026 Laptops and Desktop Workstations We specialize in providing top-of-the-line …"
+    }
+  ]
+}

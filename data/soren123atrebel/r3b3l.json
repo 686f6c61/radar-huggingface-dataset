@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Soren123atrebel/R3B3L",
+  "slug": "soren123atrebel-r3b3l",
+  "author": "Soren123atrebel",
+  "url": "https://huggingface.co/Soren123atrebel/R3B3L",
+  "created_at": "2026-10-04T14:49:38.000Z",
+  "updated_at": "2026-10-04T14:49:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    },
+    {
+      "title": "Create 3D Models Online for Free with AI | Create3D.io",
+      "url": "https://www.create3d.io/",
+      "snippet": "Create3D.io is an AI 3D model generator and online 3D creation studio. With Create3D you can create 3D assets with AI from a text prompt, a reference image, or multiple views, then preview, refine, texture, repair, convert, and export downloadable 3D models for games, product design, 3D printing, AR, e-commerce, and creative projects."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | AIto3D.ai",
+      "url": "https://www.aito3d.ai/",
+      "snippet": "AI 3D Model Generator from Text and Images Create downloadable 3D models from a text prompt, one image, or multiple reference views. With AIto3D.ai, you can generate a model online, inspect it in 3D, and export it for games, 3D printing, product design, web, or AR."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Turn any photo or text prompt into a 3D model with local AI. Export as GLB, OBJ, STL or PLY. Free, open source, runs entirely on your GPU — no cloud, no account."
+    },
+    {
+      "title": "Sloyd · 3D AI Model Generator | Unlimited Generative 3D",
+      "url": "https://www.sloyd.ai/",
+      "snippet": "Unlimited AI 3D creation from text or images. Refine and control results without heavy manual 3D work — for game devs, designers, 3D printing."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yehoroliynyk/deit-generation",
+  "slug": "yehoroliynyk-deit-generation",
+  "author": "yehoroliynyk",
+  "url": "https://huggingface.co/yehoroliynyk/deit-generation",
+  "created_at": "2026-10-04T00:56:24.000Z",
+  "updated_at": "2026-10-04T00:56:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yehoroliynyk/deit-generation at main - Hugging Face",
+      "url": "https://huggingface.co/yehoroliynyk/deit-generation/tree/main",
+      "snippet": "yehoroliynyk / deit-generation Like 0 Safetensors PyTorch deit generation License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main deit-generation 75.9 kB Ctrl+K Ctrl+K 1 contributor History:2 commits yehoroliynyk Add eval.py, README.md, config.json, training_args.json, model.safetensors 8c08813 verifiedabout ..."
+    },
+    {
+      "title": "yehoroliynyk (Yehor Oliynyk) - Hugging Face",
+      "url": "https://huggingface.co/yehoroliynyk",
+      "snippet": "User profile of Yehor Oliynyk on Hugging Face"
+    },
+    {
+      "title": "[2012.12877] Training data-efficient image transformers & distillation ...",
+      "url": "https://arxiv.org/abs/2012.12877",
+      "snippet": "Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them ..."
+    },
+    {
+      "title": "DeiT — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/transformers/model_doc/deit.html",
+      "snippet": "DeiT: reference documentation for working with open source AI models and libraries. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "Meta AI - Your AI Assistant for Images, Shopping and More",
+      "url": "https://www.meta.ai/",
+      "snippet": "Meta AI Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    }
+  ]
+}

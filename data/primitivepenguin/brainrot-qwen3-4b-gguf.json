@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PrimitivePenguin/brainrot-qwen3-4b-GGUF",
+  "slug": "primitivepenguin-brainrot-qwen3-4b-gguf",
+  "author": "PrimitivePenguin",
+  "url": "https://huggingface.co/PrimitivePenguin/brainrot-qwen3-4b-GGUF",
+  "created_at": "2026-10-04T14:49:44.000Z",
+  "updated_at": "2026-10-04T15:30:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280928,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "snippet": "Qwen / Qwen3-4B-GGUF Like 173 Follow Qwen 108k Text Generation GGUF conversational arxiv:2309.00071 arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "prithivMLmods/Qwen3-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/prithivMLmods/Qwen3-4B-GGUF",
+      "snippet": "Qwen3-4B-GGUF Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models."
+    },
+    {
+      "title": "GitHub - AdharshGitt/brainrot-llm",
+      "url": "https://github.com/AdharshGitt/brainrot-llm",
+      "snippet": "A small experimental LLM fine-tuning project that teaches a language model a Gen-Z / meme / brainrot conversational style."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    },
+    {
+      "title": "Qwen3 Embedding 4b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-embedding-4b.html",
+      "snippet": "Download Qwen3 Embedding 4b GGUF model. 2.36 GB, 38,929 downloads, 127 likes."
+    }
+  ]
+}

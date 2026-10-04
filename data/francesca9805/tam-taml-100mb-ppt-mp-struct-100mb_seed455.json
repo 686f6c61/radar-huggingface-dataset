@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed455",
+  "slug": "francesca9805-tam-taml-100mb-ppt-mp-struct-100mb_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tam-taml-100mb-ppt-mp-struct-100mb_seed455",
+  "created_at": "2026-10-04T18:11:48.000Z",
+  "updated_at": "2026-10-04T18:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/tam_taml_100mb",
+    "base_model:finetune:goldfish-models/tam_taml_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 251399477,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/tam_taml_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Towns & Villages in Antibes",
+      "url": "https://www.seeantibes.com/destinations/",
+      "snippet": "Discover the must-visit towns and villages in Antibes, with insider tips from trusted locals so you know where to go"
+    },
+    {
+      "title": "Antibes - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Antibes",
+      "snippet": "The resort town of Juan-les-Pins is in the commune of Antibes; the Sophia Antipolis technology park is northwest of it. Traces of …"
+    },
+    {
+      "title": "Antibes — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Antibes",
+      "snippet": "Les communes limitrophes sont Biot, Valbonne, Vallauris et Villeneuve-Loubet. Limites communales entre Antibes et ses communes …"
+    },
+    {
+      "title": "Villes à proximité de Antibes — Carte des alentours",
+      "url": "https://www.villes-en-france.fr/villes/proximite/ville-antibes-06600.html",
+      "snippet": "La carte ci-dessous vous permet de connaître les communes situées dans un rayon de 15 km de Antibes. Les marqueurs rouges …"
+    },
+    {
+      "title": "The Best Villages Near Antibes - Provence Holidays",
+      "url": "https://www.provenceholidays.com/en/villages/antibes-3",
+      "snippet": "Discover some of the most beautiful villages in Provence around Antibes: Lourmarin, Bonnieux, Ménerbes, ..."
+    }
+  ]
+}

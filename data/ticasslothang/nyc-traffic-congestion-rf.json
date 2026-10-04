@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TicassloThang/nyc-traffic-congestion-rf",
+  "slug": "ticasslothang-nyc-traffic-congestion-rf",
+  "author": "TicassloThang",
+  "url": "https://huggingface.co/TicassloThang/nyc-traffic-congestion-rf",
+  "created_at": "2026-10-04T13:01:46.000Z",
+  "updated_at": "2026-10-04T13:02:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "spark-mllib",
+    "random-forest",
+    "tabular-classification",
+    "traffic",
+    "time-series",
+    "new-york-city",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13693875,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - peanutpirate/AI_City_Traffic_Intelligence_System: This project ...",
+      "url": "https://github.com/peanutpirate/AI_City_Traffic_Intelligence_System",
+      "snippet": "Urban traffic congestion is a growing challenge in modern cities. Understanding traffic patterns and predicting future traffic volume can help city planners and transportation systems improve road efficiency and reduce congestion. This project analyzes traffic data and builds an AI model capable of: • Detecting traffic patterns across hours and days • Understanding weather impact on ..."
+    },
+    {
+      "title": "GitHub - rounak-acharyya/NYC-Traffic-Prediction",
+      "url": "https://github.com/rounak-acharyya/NYC-Traffic-Prediction",
+      "snippet": "This project leverages Machine Learning (ML) and Artificial Intelligence (AI) to optimize traffic management for emergency vehicles by predicting congestion and suggesting real-time route adjustments. The model is trained using NYC Open Data and employs a Random Forest Regressor (RFR) for traffic volume prediction."
+    },
+    {
+      "title": "AI could predict traffic jams years before they happen",
+      "url": "https://www.earth.com/science/ai-could-predict-traffic-jams-years-before-they-happen/",
+      "snippet": "Heavy traffic fills a busy New York City street, where researchers are testing AI tools designed to predict future congestion. Credit: Shutterstock September 23, 2026 AI could predict traffic jams years before they happen A new AI system could help cities predict where traffic congestion will form, giving planners a chance to respond before problems get worse."
+    },
+    {
+      "title": "Understanding NYC Traffic Congestion: A Machine Learning ...",
+      "url": "https://lillylog.github.io/Final_IMLV/analysis.html",
+      "snippet": "This chapter is on the predictive models to look into the factors driving NYC traffic congestion. 3.1 Setup Load the necessary libraries and preprocessed data:"
+    },
+    {
+      "title": "Understanding NYC Traffic Congestion: A Machine Learning ...",
+      "url": "https://lillylog.github.io/imlv-l/analysis.html",
+      "snippet": "This chapter is on the predictive models to look into the factors driving NYC traffic congestion. 3.1 Setup Load the necessary libraries and preprocessed data: 3.2 Loading Preprocessed Data Use the raw traffic CSV for modeling:"
+    }
+  ]
+}

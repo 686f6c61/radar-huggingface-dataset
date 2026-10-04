@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "varunsingh1996/tiny-transformer-demo",
+  "slug": "varunsingh1996-tiny-transformer-demo",
+  "author": "varunsingh1996",
+  "url": "https://huggingface.co/varunsingh1996/tiny-transformer-demo",
+  "created_at": "2026-10-04T16:09:32.000Z",
+  "updated_at": "2026-10-04T16:09:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

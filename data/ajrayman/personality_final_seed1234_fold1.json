@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ajrayman/personality_final_seed1234_fold1",
+  "slug": "ajrayman-personality_final_seed1234_fold1",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/personality_final_seed1234_fold1",
+  "created_at": "2026-10-04T15:06:38.000Z",
+  "updated_at": "2026-10-04T15:11:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text_demo_multitask",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125095596,
+  "parameters_human": "125.1M",
+  "storage_bytes": 2502043983,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ajrayman/personality_wordvectors · Hugging Face",
+      "url": "https://huggingface.co/ajrayman/personality_wordvectors",
+      "snippet": "personality_wordvectors This model is a fine-tuned version of microsoft/deberta-large-mnli on the None dataset. It achieves the following results on the evaluation set: Loss: 0.0003 Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following ..."
+    },
+    {
+      "title": "README.md · ajrayman/personality_wordvectors at main",
+      "url": "https://huggingface.co/ajrayman/personality_wordvectors/blob/main/README.md",
+      "snippet": "Instructions to use ajrayman/personality_wordvectors with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/personality_wordvectors with Transformers:"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GitHub - pigeonposse/personality: Personality is a customizable library ...",
+      "url": "https://github.com/pigeonposse/personality",
+      "snippet": "Personality is a library designed to customize the personality configuration of AI running locally. It allows users to define and adjust the traits, communication style, and behavior of their AI models in detail, ensuring responses are coherent and aligned with specific project goals. Ideal for developers looking to add a distinctive and human-like touch to their AI applications."
+    },
+    {
+      "title": "GitHub - zain1234-coder/python-for-ai-ml: My complete Python learning ...",
+      "url": "https://github.com/zain1234-coder/python-for-ai-ml",
+      "snippet": "🚀 Python Learning Journey Documenting my journey to become an AI & Machine Learning Engineer."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ssharmakabir/swin-t-classification-test",
+  "slug": "ssharmakabir-swin-t-classification-test",
+  "author": "ssharmakabir",
+  "url": "https://huggingface.co/ssharmakabir/swin-t-classification-test",
+  "created_at": "2026-10-04T13:48:34.000Z",
+  "updated_at": "2026-10-04T13:48:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "renataper/swin-t-classification · Hugging Face",
+      "url": "https://huggingface.co/renataper/swin-t-classification",
+      "snippet": "A research-oriented Swin T prototype targeting Classification. The included giant setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "andipratama/swin-t-classification · Hugging Face",
+      "url": "https://huggingface.co/andipratama/swin-t-classification",
+      "snippet": "Swin T for Classification Overview This repository is a compact, custom PyTorch implementation of Swin T for Classification. The xlarge configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "swin-t-classification: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-ssmithsamuel-swin-t-classification",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare swin-t-classification&#x27;s parameters, context window, pricing and benchmarks again"
+    },
+    {
+      "title": "SwinTransformer — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/swin_transformer.html",
+      "snippet": "The following model builders can be used to instantiate an SwinTransformer model (original and V2) with and without pre-trained weights. All the model builders internally rely on the torchvision.models.swin_transformer.SwinTransformer base class."
+    },
+    {
+      "title": "[2103.14030] Swin Transformer: Hierarchical Vision Transformer using ...",
+      "url": "https://arxiv.org/abs/2103.14030",
+      "snippet": "These qualities of Swin Transformer make it compatible with a broad range of vision tasks, including image classification (87.3 top-1 accuracy on ImageNet-1K) and dense prediction tasks such as object detection (58.7 box AP and 51.1 mask AP on COCO test-dev) and semantic segmentation (53.5 mIoU on ADE20K val)."
+    }
+  ]
+}

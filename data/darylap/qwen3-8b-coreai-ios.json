@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "darylap/Qwen3-8B-coreai-ios",
+  "slug": "darylap-qwen3-8b-coreai-ios",
+  "author": "darylap",
+  "url": "https://huggingface.co/darylap/Qwen3-8B-coreai-ios",
+  "created_at": "2026-10-04T15:06:19.000Z",
+  "updated_at": "2026-10-04T15:07:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "ios",
+    "text-generation",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5034540361,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coreai-models/models/qwen3/README.md at main - GitHub",
+      "url": "https://github.com/apple/coreai-models/blob/main/models/qwen3/README.md",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI - apple/coreai-models"
+    },
+    {
+      "title": "mlboydaisuke/qwen3-8b-CoreAI-official · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/qwen3-8b-CoreAI-official",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "coreai-models/models/qwen3 at main · apple/coreai-models",
+      "url": "https://github.com/apple/coreai-models/tree/main/models/qwen3",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI - apple/coreai-models"
+    },
+    {
+      "title": "Qwen: Qwen3 8B - AI Model Details, Pricing & Performance | CoreAI",
+      "url": "https://ask-coreai.com/models/qwen-qwen3-8b",
+      "snippet": "Qwen: Qwen3 8B by Qwen: Qwen3-8B is a dense 8.2B parameter causal language model from the Qwen3 series, designed for both reasoning-heavy tasks . Context: 131K tokens. Use Qwen: Qwen3 8B on CoreAI with 300+ other AI models."
+    },
+    {
+      "title": "Qwen3-8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_8b",
+      "snippet": "Qwen3-8B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑8B is a state‑of‑the‑art multilingual base language model with 8 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rey-etyl/neural-architecture-search-study",
+  "slug": "rey-etyl-neural-architecture-search-study",
+  "author": "rey-etyl",
+  "url": "https://huggingface.co/rey-etyl/neural-architecture-search-study",
+  "created_at": "2026-10-04T01:33:48.000Z",
+  "updated_at": "2026-10-04T01:33:54.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rey (Star Wars) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rey_(Star_Wars)",
+      "snippet": "Rey est un personnage de fiction de l'univers Star Wars. Lors de sa première apparition, dans Star Wars, épisode VII : Le Réveil de …"
+    },
+    {
+      "title": "Rey (Star Wars) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rey_(Star_Wars)",
+      "snippet": "While the Resistance celebrates their victory, Rey mourns Han's death with General Leia Organa. Rey decides to seek out Luke, …"
+    },
+    {
+      "title": "Rey — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rey",
+      "snippet": "Le mot rey est un nom commun espagnol et de l' ancien occitan, signifiant « roi ». Le nom propre Rey, issu du précédent, est un …"
+    },
+    {
+      "title": "A Reinforcement Learning-Guided Genetic Algorithm Integrating ...",
+      "url": "https://pubs.acs.org/jcisd8/article/66/8/4576/5146205/A-Reinforcement-Learning-Guided-Genetic-Algorithm",
+      "snippet": "M. A Survey of Generative AI for de Novo Drug Design ... C. ;. Vela. ,. J. M.. A New Pharmacophore Model for the Design of Sigma-1 Ligands Validated on a Large ..."
+    },
+    {
+      "title": "Institution Rey",
+      "url": "https://institutionrey.com/",
+      "snippet": "L’Institution Rey est un lycée qui dispense exclusivement un enseignement général. Cette structure très concentrée en fait sa …"
+    }
+  ]
+}

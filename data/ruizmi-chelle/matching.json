@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruizmi-chelle/matching",
+  "slug": "ruizmi-chelle-matching",
+  "author": "ruizmi-chelle",
+  "url": "https://huggingface.co/ruizmi-chelle/matching",
+  "created_at": "2026-10-04T01:35:43.000Z",
+  "updated_at": "2026-10-04T01:35:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalizing DNA Cancer Vaccines - PMC - NIH",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12565251/",
+      "snippet": "... model. J. Immunother. Cancer. 2023;11:A999. doi: 10.1136/jitc-2023-SITC2023 ... 623 AI-designed personalized neoantigen vaccine, EVX-02, induces robust ..."
+    },
+    {
+      "title": "Advance Sheet No. 3 - Unified Court System",
+      "url": "https://www.nycourts.gov/reporter/files/advSheets/2026/26nyadv03.pdf",
+      "snippet": "21.01.2026 ... [Michelle E.C.], 30 NY3d 275, 284 [2017]; see also Matter of. R.C. ... Non-drug A-I felony sentences stand alone and have no predicate ..."
+    },
+    {
+      "title": "Final Program, The International Neuropsychological Society ...",
+      "url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/FBEB0FA75499E44C99302ADD63D2739B/S1355617707071408a.pdf/final_program_the_international_neuropsychological_society_federation_of_spanish_societies_of_neuropsychology_spanish_neuropsychological_society_spanish_psychiatry_society_joint_midyear_meeting_july_47_2007_bilbao_spain.pdf",
+      "snippet": "A.I. ANSALDO, K. MARCOTTE, A.P. DELGADO & P. VITALI. Adapted Brain ... WM lesional model and AD as GM lesional model. We obtained the lex- ical ..."
+    },
+    {
+      "title": "Full text of \"TV Guide 6/18/1994 (NYC)\" - Internet Archive",
+      "url": "https://archive.org/stream/tvguide-19940618-nyc/TVGuide_19940618_NYC_djvu.txt",
+      "snippet": "18.06.1994 ... ... a i$ common bad guy. Books and movies - try to fill that venal ... model. Ly- sette Anthony, Agnes Soral, Ronald Guttman. 4:05 CENTURY ..."
+    },
+    {
+      "title": "Descargar - Morelia Film Festival",
+      "url": "https://moreliafilmfest.com/sites/default/files/2023-10/231115-21FICM-Cat-digital-2%20%281%29.pdf",
+      "snippet": "27.10.2023 ... Valentine, a young model in Geneva, returns a dog she has just run over. ... AI humanoid to replace her picking strawberries, she attracts ..."
+    }
+  ]
+}

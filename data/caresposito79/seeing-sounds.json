@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "caresposito79/seeing-sounds",
+  "slug": "caresposito79-seeing-sounds",
+  "author": "caresposito79",
+  "url": "https://huggingface.co/caresposito79/seeing-sounds",
+  "created_at": "2026-10-04T17:39:21.000Z",
+  "updated_at": "2026-10-04T18:05:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "activation-steering",
+    "interpretability",
+    "qwen2.5",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "darylap/Qwen3-4B-coreai-ios",
+  "slug": "darylap-qwen3-4b-coreai-ios",
+  "author": "darylap",
+  "url": "https://huggingface.co/darylap/Qwen3-4B-coreai-ios",
+  "created_at": "2026-10-04T15:04:44.000Z",
+  "updated_at": "2026-10-04T15:04:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "ios",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2506692050,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "coreai-models/models/qwen3/README.md at main - GitHub",
+      "url": "https://github.com/apple/coreai-models/blob/main/models/qwen3/README.md",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI - apple/coreai-models"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/qwen3_4b/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/qwen3_4b/README.md",
+      "snippet": "The Qwen3-4B is a state-of-the-art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics. This is based on the implementation of Qwen3-4B found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices."
+    },
+    {
+      "title": "README.md · kevinqz/Qwen3-4B-CoreAI at main - Hugging Face",
+      "url": "https://huggingface.co/kevinqz/Qwen3-4B-CoreAI/blob/main/README.md",
+      "snippet": "Qwen3-4B (fabric, int8) Apple Core AI chat model — runs fully on-device on Apple Silicon (iPhone / iPad / Mac, macOS/iOS 27+). A quantized stateful KV-cache chat.aimodel — an Apple Core AI conversion of Qwen/Qwen3-4B, with an embedded tokenizer + chat template. Produced by coreai-fabric and indexed by coreai-catalog."
+    },
+    {
+      "title": "mlboydaisuke/qwen3-4b-CoreAI-official · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/qwen3-4b-CoreAI-official",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

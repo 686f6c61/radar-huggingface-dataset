@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "dorisjlee/sim-shapes-v2-plus-physical-act-v2",
+  "slug": "dorisjlee-sim-shapes-v2-plus-physical-act-v2",
+  "author": "dorisjlee",
+  "url": "https://huggingface.co/dorisjlee/sim-shapes-v2-plus-physical-act-v2",
+  "created_at": "2026-10-04T18:00:56.000Z",
+  "updated_at": "2026-10-04T18:01:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:dorisjlee/sim-shapes-v2-plus-physical",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17958406,
+  "parameters_human": "18.0M",
+  "storage_bytes": 71872568,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

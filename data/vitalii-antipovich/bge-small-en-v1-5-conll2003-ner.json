@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "vitalii-antipovich/bge-small-en-v1.5-conll2003-ner",
+  "slug": "vitalii-antipovich-bge-small-en-v1-5-conll2003-ner",
+  "author": "vitalii-antipovich",
+  "url": "https://huggingface.co/vitalii-antipovich/bge-small-en-v1.5-conll2003-ner",
+  "created_at": "2026-10-04T13:06:00.000Z",
+  "updated_at": "2026-10-04T13:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Recommend switching to newest BAAI/bge-small-en-v1.5, which has more reasonable similarity distribution and same method of usage. FlagEmbedding Model List | FAQ | Usage | Evaluation | Train | Citation | License More details please refer to our Github: FlagEmbedding. English | 中文 FlagEmbedding focus on retrieval-augmented LLMs, consisting of following projects currently: Fine-tuning of LM ..."
+    },
+    {
+      "title": "BAAI/bge-small-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]."
+    },
+    {
+      "title": "BGE v1 & v1.5 — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/bge_v1_v1.5.html",
+      "snippet": "BGE v1 & v1.5 # BGE v1 and v1.5 are series of encoder only models base on BERT. They achieved best performance among the models of the same size at the time of release. BGE # The first group of BGE models was released in Aug 2023. The bge-large-en and bge-large-zh ranked 1st on MTEB and C-MTEB benchmarks at the time released."
+    },
+    {
+      "title": "GitHub - abis330/bge-small-en-v1.5: bge-small-en-v1.5 · GitHub",
+      "url": "https://github.com/abis330/bge-small-en-v1.5/",
+      "snippet": "bge-small-en-v1.5. Contribute to abis330/bge-small-en-v1.5 development by creating an account on GitHub."
+    },
+    {
+      "title": "BGE-Small-EN-v1.5: Specs, Hardware & Live AI Battle | ModelVault",
+      "url": "https://www.modelvault.space/models/bge-small-en-v1-5",
+      "snippet": "BGE-Small-EN-v1.5 is a high-dimensional text embedding and semantic retrieval model developed by Hugging Face. Tailored for Retrieval-Augmented Generation (RAG), vector database indexing, semantic similarity matching, and cross-lingual passage re-ranking."
+    }
+  ]
+}

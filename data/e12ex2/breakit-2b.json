@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "e12ex2/breakit-2b",
+  "slug": "e12ex2-breakit-2b",
+  "author": "e12ex2",
+  "url": "https://huggingface.co/e12ex2/breakit-2b",
+  "created_at": "2026-10-04T01:14:05.000Z",
+  "updated_at": "2026-10-04T01:38:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "code",
+    "testing",
+    "bug-finding",
+    "counterexample",
+    "dataset:e12ex2/breakit-data",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 5541180246,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e12ex2 (Neil Bauman) - Hugging Face",
+      "url": "https://huggingface.co/e12ex2",
+      "snippet": "User profile of Neil Bauman on Hugging Face"
+    },
+    {
+      "title": "The Jailbreak Index",
+      "url": "https://slowlow999.github.io/The_Jailbreak_Index/",
+      "snippet": "⚠️ Disclaimer: This index is for educational and research purposes only. Data is compiled from publicly available sources and may not reflect the most current model versions. Always consult official documentation and conduct your own security assessments before deploying AI models in production environments."
+    },
+    {
+      "title": "openbmb/MiniCPM5-2B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM5-2B",
+      "snippet": "MiniCPM5-2B uses the standard LlamaForCausalLM architecture, so mainstream inference engines can load it directly: no custom kernels, no model-code fork. For step-by-step deployment and fine-tuning instructions, use the GitHub cookbooks below. Agent Skills are linked as GitHub resources for users working with Cursor / Claude Code style coding ..."
+    },
+    {
+      "title": "Teardown: AI exploded-view diagrams and parts lists from a photo",
+      "url": "https://teardownai.app/",
+      "snippet": "Photograph any object and Teardown&#x27;s AI builds a labeled exploded-view diagram and a parts list sourced from real manuals, datasheets and teardowns. Try it free."
+    },
+    {
+      "title": "Maintainer «e12ex2»",
+      "url": "https://llm-explorer.com/list/?mtr=e12ex2",
+      "snippet": "A Curated List of the Large and Small Language Models (Open-Source LLMs and SLMs). Maintainer «e12ex2» with Dynamic Sorting and Filtering."
+    }
+  ]
+}

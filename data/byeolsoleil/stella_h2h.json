@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "byeolsoleil/Stella_H2H",
+  "slug": "byeolsoleil-stella_h2h",
+  "author": "byeolsoleil",
+  "url": "https://huggingface.co/byeolsoleil/Stella_H2H",
+  "created_at": "2026-10-04T16:24:13.000Z",
+  "updated_at": "2026-10-04T16:24:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78157196,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Service d'authentification web - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/",
+      "snippet": "Puisque votre navigateur ne supporte pas JavaScript, vous devez appuyer sur le bouton Continuer pour poursuivre."
+    },
+    {
+      "title": "EduConnect - Choix du fournisseur d'identité",
+      "url": "https://educonnect.education.gouv.fr/",
+      "snippet": "Sans action de votre part, vous serez automatiquement redirigé(e) vers le fournisseur d'identité sélectionné dans secondes."
+    },
+    {
+      "title": "Activation du compte responsable confirmation identité - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/educt-self-service/activation/saisieNomEtNumero",
+      "snippet": "L’activation est réservée aux responsables d'élèves Pour activer votre compte, vous devez d'abord confirmer votre identité et …"
+    },
+    {
+      "title": "Besoin d’aide ? - Contact - EduConnect",
+      "url": "https://educonnect.education.gouv.fr/educt-aide/contacts/",
+      "snippet": "Choix de l’académie Pour tout problème, veuillez sélectionner votre académie afin de connaître les modalités d’assistance."
+    },
+    {
+      "title": "Identifiant élève oublié - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/educt-self-service/oubliLogin/recupererLoginEleve",
+      "snippet": "Je contacte l’école ou l’établissement Je contacte mon école ou mon établissement afin de récupérer mon identifiant ÉduConnect."
+    }
+  ]
+}

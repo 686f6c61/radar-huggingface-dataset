@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lnypuuuu/Wanda2",
+  "slug": "lnypuuuu-wanda2",
+  "author": "Lnypuuuu",
+  "url": "https://huggingface.co/Lnypuuuu/Wanda2",
+  "created_at": "2026-10-04T01:08:58.000Z",
+  "updated_at": "2026-10-04T01:08:59.000Z",
+  "license": "wanda222",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lnypuuuu/Wanda2 · Hugging Face",
+      "url": "https://huggingface.co/Lnypuuuu/Wanda2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wanda 2.0, UniX Al&#x27;s second-generation full-size humanoid robot",
+      "url": "https://www.youtube.com/watch?v=TgWpFgj7F-I",
+      "snippet": "Meet Wanda 2.0, UniX Al&#x27;s second-generation full-size humanoid robot built for real work across household and commercial environments. Standing 1420-1800 mm tall with an adjustable torso lift and ..."
+    },
+    {
+      "title": "wanda 2 - 2025-03-14 11:23:40 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/857768772092620662",
+      "snippet": "Download wanda 2 - free LORA Pony AI model on TENSOR. SDXL, COMIC, CARTOON. By user_760445159988206971"
+    },
+    {
+      "title": "Wanda AI Models on PixAI",
+      "url": "https://pixai.art/en/tags/model/wanda_(pso2)",
+      "snippet": "Wanda models and LoRAs on PixAI. Run them in-browser — no download or local setup."
+    },
+    {
+      "title": "Wanda (Fairly OddParents) - XL - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/6023b4373829da8d7bbc8af32d9e2ffd",
+      "snippet": "Explore Wanda (Fairly OddParents) - XL model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

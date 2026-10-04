@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "asketeddy/gooo-record-field-tiny-v1",
+  "slug": "asketeddy-gooo-record-field-tiny-v1",
+  "author": "asketeddy",
+  "url": "https://huggingface.co/asketeddy/gooo-record-field-tiny-v1",
+  "created_at": "2026-10-04T17:23:26.000Z",
+  "updated_at": "2026-10-04T17:55:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "gooo",
+    "metaprogramming",
+    "golang",
+    "ternary",
+    "local-inference",
+    "ko",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4611703,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "asketeddy (jooyoon kim) - Hugging Face",
+      "url": "https://huggingface.co/asketeddy",
+      "snippet": "asketeddy/gooo-compiler-prov-tiny-v2 Text Classification •Updated about 3 hours ago"
+    },
+    {
+      "title": "asketeddy/gooo-ir-operator-tiny-v1 · Hugging Face",
+      "url": "https://huggingface.co/asketeddy/gooo-ir-operator-tiny-v1",
+      "snippet": "Paper for asketeddy/gooo-ir-operator-tiny-v1 The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits Paper • 2402.17764 •Published Feb 27, 2024• 630"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    }
+  ]
+}

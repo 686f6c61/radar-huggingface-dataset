@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-4B-F32-BF16-3MPER0RR-abliterated-i1-GGUF",
+  "slug": "mradermacher-qwen3-4b-f32-bf16-3mper0rr-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-4B-F32-BF16-3MPER0RR-abliterated-i1-GGUF",
+  "created_at": "2026-10-04T01:30:36.000Z",
+  "updated_at": "2026-10-04T08:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "f32",
+    "bf16",
+    "text-generation-inference",
+    "en",
+    "base_model:3MPER0RR/Qwen3-4B-F32-BF16-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/Qwen3-4B-F32-BF16-3MPER0RR-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 48024093056,
+  "storage_human": "48.0 GB",
+  "base_model": "3MPER0RR/Qwen3-4B-F32-BF16-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Qwen/Qwen3-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF",
+      "snippet": "Qwen / Qwen3-4B-GGUF Like 173 Follow Qwen 108k Text Generation GGUF conversational arxiv:2309.00071 arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Over the past three months, we continued to explore the potential of the Qwen3 families and we are excited to introduce the updated Qwen3-2507 in two variants, Qwen3-Instruct-2507 and Qwen3-Thinking-2507, and three sizes, 235B-A22B, 30B-A3B, and 4B. Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant ..."
+    },
+    {
+      "title": "qwen/qwen3-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3-4b",
+      "snippet": "The 4B parameter version of the Qwen3 model family."
+    },
+    {
+      "title": "Abliterated Models — Open-Weight LLMs With Refusals Removed",
+      "url": "https://www.abliteratedmodels.org/",
+      "snippet": "Abliterated Models Abliterated Models is an index of abliterated AI: open-weight LLMs with refusal behaviour removed from their weights, for security teams. Every model here is uncensored — it answers prompts a normal AI refuses. All 850 are free to download from Hugging Face, and each page shows what the model was built from, how big it is, the hardware it needs and its licence."
+    }
+  ]
+}

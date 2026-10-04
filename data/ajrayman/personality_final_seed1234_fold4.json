@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ajrayman/personality_final_seed1234_fold4",
+  "slug": "ajrayman-personality_final_seed1234_fold4",
+  "author": "ajrayman",
+  "url": "https://huggingface.co/ajrayman/personality_final_seed1234_fold4",
+  "created_at": "2026-10-04T15:23:15.000Z",
+  "updated_at": "2026-10-04T15:29:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text_demo_multitask",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125095596,
+  "parameters_human": "125.1M",
+  "storage_bytes": 3002451823,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · ajrayman/personality_wordvectors at main",
+      "url": "https://huggingface.co/ajrayman/personality_wordvectors/blob/main/README.md",
+      "snippet": "Instructions to use ajrayman/personality_wordvectors with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ajrayman/personality_wordvectors with Transformers:"
+    },
+    {
+      "title": "ajrayman (Adam) - Hugging Face",
+      "url": "https://huggingface.co/ajrayman",
+      "snippet": "ajrayman/Cooperation_binary Text Classification • Updated Oct 9 • 14 Expand 89 model s"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "Daily-updated list of free AI models (free LLM APIs), ranked by quality with live status. Plus one OpenAI-compatible endpoint that routes to the best one. - ClawLabsAI/free-ai-models"
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "Introducing WeatherNext 3, our most advanced and accurate global weather AI model September 2026 Science Learn more"
+    }
+  ]
+}

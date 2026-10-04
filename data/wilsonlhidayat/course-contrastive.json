@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wilsonlhidayat/course-contrastive",
+  "slug": "wilsonlhidayat-course-contrastive",
+  "author": "wilsonlhidayat",
+  "url": "https://huggingface.co/wilsonlhidayat/course-contrastive",
+  "created_at": "2026-10-04T16:05:52.000Z",
+  "updated_at": "2026-10-04T16:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do generative artificial intelligence (AI) tools and large ...",
+      "url": "https://link.springer.com/article/10.1186/s40561-025-00406-0",
+      "snippet": "04.08.2025 ... As generative artificial intelligence (AI) tools and large language models (LLMs)-powered applications develop rapidly in the era of ..."
+    },
+    {
+      "title": "Learn Piano – Interactive Piano Learning App | flowkey",
+      "url": "https://www.flowkey.com/en",
+      "snippet": "Learn your favorite songs on piano, no matter your level. Learning with flowkey is easy and fun. Practice notes and chords …"
+    },
+    {
+      "title": "Learn Piano Online - Free Beginner Piano Lessons & Tutorial - Online Piano",
+      "url": "https://online-piano.io/learn/",
+      "snippet": "Learn to play piano online for free. Beginner-friendly lessons on keyboard layout, hand position, reading notes, chords, and a simple …"
+    },
+    {
+      "title": "Learn Piano Online - Free Interactive Tools - Pianotify",
+      "url": "https://pianotify.com/learn-piano-online",
+      "snippet": "Join thousands of piano enthusiasts and access free MIDI files, sheet music, and more. Learn piano online with Pianotify. Visual …"
+    },
+    {
+      "title": "8 Best Online Piano Lessons for 2026, Tested by a Teacher",
+      "url": "https://pianoers.com/best-piano-lessons-online/",
+      "snippet": "Jan 16, 2026 · Below are the 8 online piano lessons worth your money in 2026, with real pricing, honest drawbacks, and who each …"
+    }
+  ]
+}

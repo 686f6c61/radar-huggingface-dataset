@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "marjacthrowaway2017/krea2-halflife-barnacle",
+  "slug": "marjacthrowaway2017-krea2-halflife-barnacle",
+  "author": "marjacthrowaway2017",
+  "url": "https://huggingface.co/marjacthrowaway2017/krea2-halflife-barnacle",
+  "created_at": "2026-10-04T01:01:47.000Z",
+  "updated_at": "2026-10-04T01:19:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 579163931,
+  "storage_human": "579 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "marjacthrowaway2017/krea2-halflife-barnacle · Hugging Face",
+      "url": "https://huggingface.co/marjacthrowaway2017/krea2-halflife-barnacle",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "marjacthrowaway2017 (marjacthrowaway2017) - Hugging Face",
+      "url": "https://huggingface.co/marjacthrowaway2017",
+      "snippet": "published a model about 21 hours ago marjacthrowaway2017/j0rd4ng-krea2 liked a model 21 days ago Playtime-AI/LTX-2.3-Wednesday_Addams View all activity"
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=marjacthrowaway2017/krea2-halflife-barnacle",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "Picrew | The Character Maker & Creator",
+      "url": "https://picrew.me/en/",
+      "snippet": "This is Picrew, the make-and-play image maker. Create image makers with your own illustrations! Share and enjoy!"
+    },
+    {
+      "title": "Steam Workshop::HLA Barnacle Animations + HLA Barnacle Model",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3371761642",
+      "snippet": "HLA Barnacle Animations + HLA Barnacle Model Description Discussions 0 Comments 1 Change Notes Award Favorite"
+    }
+  ]
+}

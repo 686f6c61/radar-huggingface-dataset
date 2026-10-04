@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.999-r0.8-s42",
+  "slug": "cisco1963-llmplasticity-en_nl_linear_8-rand-d0-5-c0-999-r0-8-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.5-c0.999-r0.8-s42",
+  "created_at": "2026-10-04T01:47:57.000Z",
+  "updated_at": "2026-10-04T01:50:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 8836499829,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.999-r0.125-s42 · Hugging ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-d0.1-c0.999-r0.125-s42",
+      "snippet": "Cisco1963 / llmplasticity-nl_en_linear_8-d0.1-c0.999-r0.125-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 6 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42 ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42",
+      "snippet": "Cisco1963 / llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42",
+      "snippet": "What this model is for llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_en_linear_8-d0.25-c0.99-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-25-c0-99-r0-25-s42",
+      "snippet": "llmplasticity-plasticity-nl_en_linear_8-d0.25-c0.99-r0.25-s42 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Llmplasticity En Fi Linear 0.5 1 Seed42 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/cisco1963/llmplasticity-en_fi_linear_0.5_1-seed42",
+      "snippet": "by Cisco1963 hf-model--cisco1963--llmplasticity-en_fi_linear_0.5_1-seed42 Nexus Index 38.5Top 100% S: Semantic50 A: Authority0 P: Popularity26 R: Recency95 Q: Quality65 Tech Context Vital Performance 959 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 38.5 FNI Score Tiny - Params - Context 959 Downloads Commercial MIT License ..."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "GSsmart/Wan2.1-I2V-14B-480P-gguf",
+  "slug": "gssmart-wan2-1-i2v-14b-480p-gguf",
+  "author": "GSsmart",
+  "url": "https://huggingface.co/GSsmart/Wan2.1-I2V-14B-480P-gguf",
+  "created_at": "2026-10-04T16:10:41.000Z",
+  "updated_at": "2026-10-04T16:10:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "video",
+    "video-generation",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:Wan-AI/Wan2.1-I2V-14B-480P",
+    "base_model:quantized:Wan-AI/Wan2.1-I2V-14B-480P",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16394878784,
+  "parameters_human": "16.39B",
+  "storage_bytes": 208761707776,
+  "storage_human": "208.8 GB",
+  "base_model": "Wan-AI/Wan2.1-I2V-14B-480P",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

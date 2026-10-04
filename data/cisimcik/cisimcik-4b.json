@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "cisimcik/cisimcik-4b",
+  "slug": "cisimcik-cisimcik-4b",
+  "author": "cisimcik",
+  "url": "https://huggingface.co/cisimcik/cisimcik-4b",
+  "created_at": "2026-10-04T18:01:22.000Z",
+  "updated_at": "2026-10-04T18:08:09.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "turkish",
+    "chat",
+    "conversational",
+    "reasoning",
+    "thinking",
+    "tool-calling",
+    "function-calling",
+    "instruction-following",
+    "qwen3.5",
+    "gated-deltanet",
+    "hybrid-attention",
+    "pytorch",
+    "tr",
+    "en",
+    "dataset:cisimcik/turkish-chat-max-25k",
+    "base_model:cisimcik/cisimcik-base",
+    "base_model:finetune:cisimcik/cisimcik-base",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8424359124,
+  "storage_human": "8.4 GB",
+  "base_model": "cisimcik/cisimcik-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOR Based D Flip Flop w/ Active High Preset and Reset",
+      "url": "https://circuitverse.org/users/691/projects/nor-based-d-flip-flop-w-active-high-preset-and-reset-da466a01-b0b8-4927-9d64-ae6f8d9491f6",
+      "snippet": "Oct 18, 2018 · Copyright © 2026 CircuitVerse, All rights reserved."
+    },
+    {
+      "title": "D flip-flop Using NOR - Multisim Live",
+      "url": "https://www.multisim.com/content/vGXrvr3ui7J6yyTGMuPC4D/d-flip-flop-using-nor/",
+      "snippet": "D flip-flop created from NAND gates, using clock voltage as the data source. I recommend setting the Grapher time range from 0-5 …"
+    },
+    {
+      "title": "Verilog D Flip Flop - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/33988760/verilog-d-flip-flop",
+      "snippet": "Nov 30, 2015 · I'm attempting to write a specific version of the D Flip Flop that uses NOR gates only: Following is gate level diagram: …"
+    },
+    {
+      "title": "Lip Flip Before and After –",
+      "url": "https://lipflip.ai/lip-flip-before-and-after",
+      "snippet": "Lip flip before and after: 15+ real photos including smile, side profile, thin lips, no-filler & gone-wrong examples. Free AI preview on …"
+    },
+    {
+      "title": "Vlsi (140083112008,15,16) | PPTX - SlideShare",
+      "url": "https://www.slideshare.net/slideshow/vlsi1400831120081516/62146148",
+      "snippet": "The document discusses various types of clocked latches and flip-flops. It describes the basic operation of a NOR-based SR latch …"
+    }
+  ]
+}

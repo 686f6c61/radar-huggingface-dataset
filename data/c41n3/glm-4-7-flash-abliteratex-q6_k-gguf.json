@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "c41n3/GLM-4.7-Flash-abliteratex-Q6_K-GGUF",
+  "slug": "c41n3-glm-4-7-flash-abliteratex-q6_k-gguf",
+  "author": "c41n3",
+  "url": "https://huggingface.co/c41n3/GLM-4.7-Flash-abliteratex-Q6_K-GGUF",
+  "created_at": "2026-10-04T15:03:42.000Z",
+  "updated_at": "2026-10-04T15:05:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "glm",
+    "moe",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "dataset:wangzhang/abliterix-datasets",
+    "base_model:wangzhang/GLM-4.7-Flash-abliteratex",
+    "base_model:quantized:wangzhang/GLM-4.7-Flash-abliteratex",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 24614783104,
+  "storage_human": "24.6 GB",
+  "base_model": "wangzhang/GLM-4.7-Flash-abliteratex",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLM-4.7-Flash-abliteratex-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-abliteratex-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "unsloth/GLM-4.7-Flash-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/GLM-4.7-Flash-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4.7-Flash Complete Guide 2026: Free AI Coding Assistant & Agentic ...",
+      "url": "https://aicybr.com/blog/glm-4-7-flash-complete-guide",
+      "snippet": "GLM-4.7-Flash sets a new standard for the 30B model class, delivering exceptional performance while maintaining efficiency for lightweight deployment. Released by Z.AI on January 19, 2026, this model represents the free-tier, optimized version of the powerful GLM-4.7 family."
+    },
+    {
+      "title": "GLM 4.7 Flash Abliteratex by wangzhang - llm-explorer.com",
+      "url": "https://llm-explorer.com/model/wangzhang%2FGLM-4.7-Flash-abliteratex,3yf7Dvce68q0JDCZXKRu4e",
+      "snippet": "GLM 4.7 Flash Abliteratex is an open-source 29.9b LLM by wangzhang. VRAM 62.3GB, 198K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "ai_services/models/glm-4.7-flash/README.md at main - GitHub",
+      "url": "https://github.com/AI-Guru/ai_services/blob/main/models/glm-4.7-flash/README.md",
+      "snippet": "GLM-4.7-Flash Local inference for GLM-4.7-Flash with multiple backends and quantization options."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Nishalove/Suri-Qwen-3.8-27B-Uncensored",
+  "slug": "nishalove-suri-qwen-3-8-27b-uncensored",
+  "author": "Nishalove",
+  "url": "https://huggingface.co/Nishalove/Suri-Qwen-3.8-27B-Uncensored",
+  "created_at": "2026-10-04T01:22:47.000Z",
+  "updated_at": "2026-10-04T01:22:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "suri",
+    "qwen",
+    "27B",
+    "uncensored",
+    "unaligned",
+    "text-generation-inference",
+    "qwen3.8",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55583533206,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, unsloth/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/es/",
+      "snippet": "TikTok: las tendencias empiezan aquí. Los espectadores pueden descubrir millones de videos cortos personalizados tanto desde …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/tr-TR/",
+      "snippet": "TikTok - trendler burada başlıyor. İzleyiciler, cihazınız veya web üzerinden milyonlarca kişiselleştirilmiş kısa videoyu izleyebilir ve …"
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "TikTok Feedback and help Log in to TikTok Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/id-ID",
+      "snippet": "TikTok - tren dimulai di sini. Di perangkat atau di web, penonton dapat menonton dan menemukan jutaan video singkat yang …"
+    }
+  ]
+}

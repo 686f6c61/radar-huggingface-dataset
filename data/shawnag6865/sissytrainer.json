@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shawnag6865/sissytrainer",
+  "slug": "shawnag6865-sissytrainer",
+  "author": "shawnag6865",
+  "url": "https://huggingface.co/shawnag6865/sissytrainer",
+  "created_at": "2026-10-04T13:31:35.000Z",
+  "updated_at": "2026-10-04T13:31:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zoey | KPop Demon Hunters Wiki | Fandom",
+      "url": "https://kpop-demon-hunters.fandom.com/wiki/Zoey",
+      "snippet": "Zoey was born in South Korea but raised in Burbank, California, USA. She made songs and lyrics in many of her notebooks at …"
+    },
+    {
+      "title": "ZOEY IS THE PERSON WHO SUFFERED THE MOST IN KPOP …",
+      "url": "https://www.youtube.com/watch?v=ClRDugBBdJA",
+      "snippet": "Aug 27, 2025 · Whether you’re searching for character breakdowns, hidden details, or analysis of key scenes, this is your ultimate …"
+    },
+    {
+      "title": "KPop Demon Hunters: Zoey Is Missing! Rumi, Zoey And Mira In Real …",
+      "url": "https://www.youtube.com/watch?v=c9LXYdT8WdU",
+      "snippet": "Sep 3, 2025 · Zoey is Missing! Can Rumi and Mira find her before it’s too late? Watch as Rumi, Zoey and Mira in Real Life face off …"
+    },
+    {
+      "title": "Zoey 'Kpop Demon Hunters': Age, Voice Actor, Quotes, Memes",
+      "url": "https://www.netflix.com/tudum/articles/kpop-demon-hunters-zoey-bio",
+      "snippet": "Nov 3, 2025 · Here's everything you need to know about Zoey, the sweet yet fierce rapper and maknae of HUNTR/X, the trio from …"
+    },
+    {
+      "title": "B2B Ecommerce Platform for Wholesale Distributors | Zoey",
+      "url": "https://www.zoey.com/",
+      "snippet": "Zoey replaces phone and email ordering with a self-service portal, mobile app, built-in CRM, and ERP integration. Built for wholesale …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asd12ad123123/my-awesome-model-best",
+  "slug": "asd12ad123123-my-awesome-model-best",
+  "author": "asd12ad123123",
+  "url": "https://huggingface.co/asd12ad123123/my-awesome-model-best",
+  "created_at": "2026-10-04T18:06:35.000Z",
+  "updated_at": "2026-10-04T18:19:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Halloween > audio niveau B1+ | pedagogie.ac-guadeloupe.fr",
+      "url": "https://pedagogie.ac-guadeloupe.fr/halloween_audio_niveau_b1?language_content_entity=fr",
+      "snippet": "Halloween takes place on October 31st. For children, it is a day to dress up in a costume and be anything they want to be - …"
+    },
+    {
+      "title": "Halloween Traditions - english.lingolia.com",
+      "url": "https://english.lingolia.com/fr/comprehension/ecrite/niveau-b1/articles/halloween-traditions-38464",
+      "snippet": "Découvre les coutumes effrayantes autour d’Halloween dans cet exercice de compréhension écrite. Tu trouveras plus de vocabulaire …"
+    },
+    {
+      "title": "Free Halloween Story in English | A Ghost Story for B1",
+      "url": "https://readstories-learnenglish.com/reading-comprehension-free-materials/halloween-story-in-english-b1/",
+      "snippet": "Read this spooky Halloween story in English for B1 learners. Can Mark survive the night in a mysterious house?"
+    },
+    {
+      "title": "Halloween en anglais : séquence et jeux pour le primaire",
+      "url": "https://www.animyjob.com/mag-article/halloween-anglais-sequence-jeux-primaire/02-09-26/2318",
+      "snippet": "Sep 2, 2026 · Halloween en anglais au primaire : séquence de 4 séances, 18 mots, flashcards, bingo, mini-dialogues, différenciation …"
+    },
+    {
+      "title": "ANGLAIS : HALLOWEEN - A l'encre violette: ANGLAIS",
+      "url": "https://www.alencreviolette.fr/2016/10/anglais-halloween.html",
+      "snippet": "Oct 13, 2016 · ANGLAIS : HALLOWEEN Voici un dossier complet pour exploiter Halloween avec vos élèves. 1) Une fiche de …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-pipi-krea2-emotion-lora",
+  "slug": "runninghubai-rh-pipi-krea2-emotion-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-pipi-krea2-emotion-lora",
+  "created_at": "2026-10-04T15:26:00.000Z",
+  "updated_at": "2026-10-04T15:27:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 236439572,
+  "storage_human": "236 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pipi-krea2-Emotion - V1 KREA 2 - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/1041102240703601924",
+      "snippet": "Download pipi-krea2-Emotion - free LORA KREA_2 AI model on TENSORHUB ART. KREA 2, EMOTION, EXCLUSIVE. By pipiai"
+    },
+    {
+      "title": "pipi-krea2-Emotion - RunningHub Stable Diffusion & Flux Unet",
+      "url": "https://www.runninghub.ai/model/public/2097248603323604993",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-pipi-krea2-lora-2096528532380930050 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-pipi-krea2-lora-2096528532380930050",
+      "snippet": "RunningHubAI / rh-pipi-krea2-lora-2096528532380930050 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-pipi-krea2-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHubAI/rh-pipi-krea2-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-pipi-krea2-lora/tree/main",
+      "snippet": "RunningHubAI / rh-pipi-krea2-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-pipi-krea2-lora 236 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2094915617097871362 17856f1 verifiedabout 7 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model 2094915617097871362about 7 hours ..."
+    }
+  ]
+}

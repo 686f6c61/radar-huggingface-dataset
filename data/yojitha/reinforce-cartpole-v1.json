@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yojitha/reinforce-CartPole-v1",
+  "slug": "yojitha-reinforce-cartpole-v1",
+  "author": "yojitha",
+  "url": "https://huggingface.co/yojitha/reinforce-CartPole-v1",
+  "created_at": "2026-10-04T14:54:20.000Z",
+  "updated_at": "2026-10-04T14:54:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "CartPole-v1",
+    "reinforce",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3145,
+  "storage_human": "3145 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PhoenixA/Reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/PhoenixA/Reinforce-CartPole-v1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "ilaidabush/reinforce-CartPole-v1 · Hugging Face",
+      "url": "https://huggingface.co/ilaidabush/reinforce-CartPole-v1",
+      "snippet": "This is a trained model of a Reinforce agent playing CartPole-v1 . To learn to use this model and train yours check Unit 4 of the Deep Reinforcement Learning Course: https://huggingface.co/deep-rl-course/unit4/introduction"
+    },
+    {
+      "title": "CartPole Reinforcement Learning Project - GitHub",
+      "url": "https://github.com/johnpospisil/cart-pole-rl",
+      "snippet": "CartPole Reinforcement Learning Project 🎮🤖 A comprehensive implementation and comparison of state-of-the-art reinforcement learning algorithms on the CartPole-v1 environment."
+    },
+    {
+      "title": "OpenAI-Gym-CartPole-v1-REINFORCE - GitHub",
+      "url": "https://github.com/bmaxdk/OpenAI-Gym-CartPole-v1-REINFORCE",
+      "snippet": "Repository files navigation README MIT license OpenAI-Gym-CartPole-v1-REINFORCE Implementation of REINFORCE to solve OpenAI Gym&#x27;s CartPole environment. Gym EnvironmentA pole is attached by an un-actuated joint to a cart, which moves along a frictionless track. The system is controlled by applying a force of +1 or -1 to the cart."
+    },
+    {
+      "title": "How to Solve CartPole-v1 in OpenAI Gym: Your First Step into ...",
+      "url": "https://aigreeks.com/solve-cartpole-v1-in-open-gym-reinforcement-learning/",
+      "snippet": "Learn how to solve CartPole-v1 in OpenAI Gym with this easy guide! Master reinforcement learning, code a Q-Learning agent, and balance the pole like a pro."
+    }
+  ]
+}

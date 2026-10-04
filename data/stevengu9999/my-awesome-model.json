@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "stevengu9999/my-awesome-model",
+  "slug": "stevengu9999-my-awesome-model",
+  "author": "stevengu9999",
+  "url": "https://huggingface.co/stevengu9999/my-awesome-model",
+  "created_at": "2026-10-04T14:01:33.000Z",
+  "updated_at": "2026-10-04T14:01:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Russian School Uniforms Guide: What to Know in 2024",
+      "url": "https://apparel.alibaba.com/guide/russian-school-uniforms-what%E2%80%99s-required-in-2024",
+      "snippet": "Aug 5, 2026 · A practical, fact-based guide to Russian school uniforms — covering current dress codes, historical context, real-world …"
+    },
+    {
+      "title": "Russian Children School Uniforms Guide: How to Choose Right",
+      "url": "https://apparel.alibaba.com/guide/russian-children-school-uniforms-what-parents-actually-need",
+      "snippet": "Aug 5, 2026 · A practical, no-fluff guide to Russian children school uniforms — covering design evolution, current dress codes, key …"
+    },
+    {
+      "title": "Школьная форма в России — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%84%D0%BE%D1%80%D0%BC%D0%B0_%D0%B2_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8",
+      "snippet": "Школьная форма в России — установленная форма одежды для учеников средних (средне-специальных и средне …"
+    },
+    {
+      "title": "From \"maid outfits\" to sweatshirts: Are Russian school uniforms going ...",
+      "url": "https://inf.news/en/world/b600bc1c58f3ce6ce0d7d0b8b82915cb.html",
+      "snippet": "Sep 11, 2026 · In November 2020, Russia will launch a reform system in the form of school uniforms. Hoodie and jackets, which are …"
+    },
+    {
+      "title": "Category:School uniforms of Russia - Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/Category:School_uniforms_of_Russia",
+      "snippet": "S School uniforms of Russian Empire (1 C, 20 F) School uniforms of the Soviet Union (1 C, 47 F)"
+    }
+  ]
+}

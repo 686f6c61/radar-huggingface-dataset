@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adpretko/celerity-271m-8k-tema-ablation-ad0p8-tema8",
+  "slug": "adpretko-celerity-271m-8k-tema-ablation-ad0p8-tema8",
+  "author": "adpretko",
+  "url": "https://huggingface.co/adpretko/celerity-271m-8k-tema-ablation-ad0p8-tema8",
+  "created_at": "2026-10-04T12:57:54.000Z",
+  "updated_at": "2026-10-04T12:58:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "celerity",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541683906,
+  "storage_human": "542 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adpretko/celerity-271m-8k-ad0p1 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-ad0p1",
+      "snippet": "Celerity 271M — 8k — ad0p1 Celerity 271M checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-271m-8k-residual-dropout-0p0 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p0",
+      "snippet": "Celerity 271M — residual_dropout_0.0 Celerity 271M debug/ablation checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "Imagine the mother with an accent - YouTube",
+      "url": "https://www.youtube.com/shorts/aoyQyw9l5Dw",
+      "snippet": "#katseye #foryou #shorts #lara #gnarly #touch #accent #india"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "251206 Stray Kids reaction Allday Project &#x27;Intro - YouTube",
+      "url": "https://www.youtube.com/watch?v=PiwsQ_qcrwQ",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

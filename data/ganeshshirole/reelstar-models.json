@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GaneshShirole/reelstar-models",
+  "slug": "ganeshshirole-reelstar-models",
+  "author": "GaneshShirole",
+  "url": "https://huggingface.co/GaneshShirole/reelstar-models",
+  "created_at": "2026-10-04T13:04:53.000Z",
+  "updated_at": "2026-10-04T13:08:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59707625,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reelsta — AI Faceless Video Generator on Autopilot",
+      "url": "https://reelsta.com/",
+      "snippet": "Reelsta auto-generates faceless videos — script, AI voiceover, visuals & captions — and auto-posts them to TikTok, YouTube Shorts & Instagram Reels. No face or editing skills needed."
+    },
+    {
+      "title": "Top 40 AI Models Influencers in 2026",
+      "url": "https://influencers.feedspot.com/ai_models_instagram_influencers/",
+      "snippet": "Looking for AI Models Influencers on Instagram for outreach campaign or for collaboration to promote your brand or product? Check out our list of Best AI Models Creators."
+    },
+    {
+      "title": "𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) • Instagram photos and videos",
+      "url": "https://www.instagram.com/models__ai/",
+      "snippet": "2M Followers, 333 Following, 7,175 Posts - 𝐀𝐈 𝐌𝐎𝐃𝐄𝐋𝐒 (@models__ai) on Instagram: \"𝐖𝐞 𝐃𝐨 𝐏𝐫𝐨𝐦𝐨𝐭𝐞 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐌𝐨𝐝𝐞𝐥𝐬, 𝐀𝐫𝐭𝐢𝐟𝐢𝐜𝐢𝐚𝐥 𝐀𝐫𝐭, 𝐀𝐧𝐝 𝐓𝐡𝐞 𝐖𝐨𝐫𝐥𝐝 𝐎𝐟 𝐀𝐈 ..."
+    },
+    {
+      "title": "AI Models - LiteRouter",
+      "url": "https://literouter.com/model_list",
+      "snippet": "Explore AI Models Access hundreds of AI models through a single API"
+    },
+    {
+      "title": "How to Tell If an Instagram Model or Influencer Is AI-Generated: 7 ...",
+      "url": "https://www.ledgerapp.app/blog/how-to-tell-if-instagram-model-is-ai-generated",
+      "snippet": "AI Instagram models like Aitana López look photorealistic and pull real brand deals. Seven signs a model or influencer is a synthetic persona, the 30-second check, and what to do before you follow or pay."
+    }
+  ]
+}

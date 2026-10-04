@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ruizmi-chelle/retrieval-run2",
+  "slug": "ruizmi-chelle-retrieval-run2",
+  "author": "ruizmi-chelle",
+  "url": "https://huggingface.co/ruizmi-chelle/retrieval-run2",
+  "created_at": "2026-10-04T01:35:23.000Z",
+  "updated_at": "2026-10-04T01:35:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ruizmi-chelle/retrieval-run2 · Hugging Face",
+      "url": "https://huggingface.co/ruizmi-chelle/retrieval-run2",
+      "snippet": "ruizmi-chelle / retrieval-run2 Like 0 Safetensors PyTorch beit retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Beit for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Can I Run This LLM? AI Model Hardware Checker | llmrun",
+      "url": "https://llmrun.dev/",
+      "snippet": "Find out which AI models you can run locally. Check GPU compatibility, VRAM requirements, quantization options, and expected performance."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 783 AI models across 645 benchmarks, with 212 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    }
+  ]
+}

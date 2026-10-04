@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nith24/automata-qwen2.5-coder-0.5b",
+  "slug": "nith24-automata-qwen2-5-coder-0-5b",
+  "author": "nith24",
+  "url": "https://huggingface.co/nith24/automata-qwen2.5-coder-0.5b",
+  "created_at": "2026-10-04T14:02:15.000Z",
+  "updated_at": "2026-10-04T14:02:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CÚ ĐẤM THÉP TV - YouTube",
+      "url": "https://www.youtube.com/channel/UCV-hS26EgoxIBCxyyhgcf_g",
+      "snippet": "THEP DISCLOSES CHARITY STATEMENT, REASONS WHY THEP STOPPED ACCEPTING CHARITY FUNDS..."
+    },
+    {
+      "title": "THE FIRST CALF BORN AT CU DAM THEP FARM - YouTube",
+      "url": "https://www.youtube.com/watch?v=zXl9Z9ZTE8k",
+      "snippet": "Jul 22, 2026 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "BẤT NGỜ BÀ CON ĐỒNG BÀO TẶNG THÉP NGUYÊN QUẦY ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=Hf7eOZd-5A0",
+      "snippet": "Jun 25, 2022 · ♥️ Cám ơn mọi người đã ủng hộ kênh CÚ ĐẤM THÉP TV !!!"
+    },
+    {
+      "title": "NÓI LÀ LÀM THÉP VÀO TẬN NHÀ ĐỂ XÁC MINH NHƯNG ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=0epc63uZtXk",
+      "snippet": "Mar 22, 2023 · Hãy bấm like và đăng ký kênh nhé mọi người. 📍 ĐĂNG KÝ THEO DÕI KÊNH TẠI: 👉 YOUTUBE: / @cÚĐẤmthÉptv 👉 …"
+    },
+    {
+      "title": "MV RAP TIỂU SỬ CÚ ĐẤM THÉP TV | ĐAM MÊ LÀ KHÔNG TỪ BỎ - YouTube",
+      "url": "https://www.youtube.com/watch?v=WGi0iBBeb4g",
+      "snippet": "Jan 1, 2022 · Tên anh là phan đình huy mọi người hay gọi thân mật là thép Sinh năm 1995 quê anh ở mãi phan rang tháp chàm …"
+    }
+  ]
+}

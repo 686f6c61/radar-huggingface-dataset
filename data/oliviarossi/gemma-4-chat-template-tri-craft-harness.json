@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/Gemma-4-Chat-Template-Tri-Craft-Harness",
+  "slug": "oliviarossi-gemma-4-chat-template-tri-craft-harness",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/Gemma-4-Chat-Template-Tri-Craft-Harness",
+  "created_at": "2026-08-28T09:47:56.000Z",
+  "updated_at": "2026-10-04T18:30:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gemma-4",
+    "chat-template",
+    "jinja",
+    "agent",
+    "tool-use",
+    "prefix-caching",
+    "ui-ux",
+    "code-generation",
+    "creative-writing",
+    "vllm",
+    "sglang",
+    "llama-cpp",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 Chat Template (llama.cpp / OpenWebUI) - GitHub",
+      "url": "https://github.com/asf0/gemma4_jinja",
+      "snippet": "The official Gemma 4 template assumes a serving stack that properly handles reasoning channels. In some setups, such as llama.cpp with OpenWebUI, those markers may appear in the final output."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 Prompt Formatting | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/prompt-formatting-gemma4",
+      "snippet": "Starting with Gemma 4, we introduce new control tokens. For Gemma 3 and lower, see the previous document. The following sections specify the control tokens used by Gemma 4 and their use cases. Note that the control tokens are reserved in and specific to our tokenizer. Token to indicate a system instruction: system Token to indicate a user turn: user Token to indicate a model turn: model Token ..."
+    },
+    {
+      "title": "unsloth/gemma-4-12b-it · Updated all with official Gemma chat template ...",
+      "url": "https://huggingface.co/unsloth/gemma-4-12b-it/discussions/1",
+      "snippet": "17th July 2026: We updated all uploads to include Gemma&#x27;s new official chat template improvements which increased tool call accuracy by up to 10% on some benchmarks!"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://gemma4.com/",
+      "snippet": "Gemma 4 is the fourth generation of Google DeepMind&#x27;s family of open models. Built from the same research, data pipelines, and safety work behind Gemini, Gemma 4 brings frontier-level capability to models you can download, inspect, fine-tune, and deploy on your own terms. Where earlier Gemma generations focused on raw language modeling, Gemma 4 introduces Thinking variants — models trained ..."
+    }
+  ]
+}

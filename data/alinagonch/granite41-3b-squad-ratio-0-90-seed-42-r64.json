@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42-r64",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-90-seed-42-r64",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42-r64",
+  "created_at": "2026-10-04T01:55:53.000Z",
+  "updated_at": "2026-10-04T01:56:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 498149016,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42",
+      "snippet": "Instructions to use AlinaGonch/granite41-3b-squad-ratio-0.90-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "granite41-3b-squad-ratio-0.90-seed-42: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-alinagonch-granite41-3b-squad-ratio-0-90-seed-42",
+      "snippet": "Model card indexed from Hugging Face. Specs: 3B parameters, sourced from Hugging Face. Compare granite41-3b-squad-ratio-.90-seed-42&#x27;s parameters, context windo"
+    },
+    {
+      "title": "AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42 at main",
+      "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42/tree/main",
+      "snippet": "Instructions to use AlinaGonch/granite41-8b-squad-ratio-.30-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Quick Links - GT New Horizons",
+      "url": "https://wiki.gtnewhorizons.com/wiki/Quick_Links",
+      "snippet": "Quick Links is a compilation of external resources for GTNH. This includes mod-focused wikis that are largely unaltered in mechanics, player-made spreadsheets, calculators & flowcharts, scripts, tutorials and other resources. Internal wiki page links are not included on this page. Spreadsheets are read-only so download your own copy to make edits."
+    }
+  ]
+}

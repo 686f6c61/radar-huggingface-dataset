@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "darylap/Qwen3-0.6B-coreai-ios",
+  "slug": "darylap-qwen3-0-6b-coreai-ios",
+  "author": "darylap",
+  "url": "https://huggingface.co/darylap/Qwen3-0.6B-coreai-ios",
+  "created_at": "2026-10-04T15:03:25.000Z",
+  "updated_at": "2026-10-04T15:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreai",
+    "ios",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457344875,
+  "storage_human": "457 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coreai-models/models/qwen3/README.md at main - GitHub",
+      "url": "https://github.com/apple/coreai-models/blob/main/models/qwen3/README.md",
+      "snippet": "Model export recipes, Python primitives, and Swift runtime utilities for on-device AI - apple/coreai-models"
+    },
+    {
+      "title": "coreai-models/models/qwen3/README.md at main · docvarma ... - GitHub",
+      "url": "https://github.com/docvarma/coreai-models/blob/main/models/qwen3/README.md",
+      "snippet": "Unofficial apple/coreai-models compatibility repository with Qwen3.6 extra-state runtime support. - docvarma/coreai-models"
+    },
+    {
+      "title": "mlboydaisuke/qwen3-0.6b-CoreAI-official · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/qwen3-0.6b-CoreAI-official",
+      "snippet": "Qwen3-0.6B — official Apple Core AI exports Pre-converted .aimodelbundles from Apple&#x27;s official coreai-modelsexport recipe — unmodified, with the exact environment, hashes, and measured performance published."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_0_6b",
+      "snippet": "Qwen3-0.6B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-0.6B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/qwen3_0_6b",
+      "snippet": "The Qwen3‑0.6B is a state‑of‑the‑art multilingual language model with 0.6 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    }
+  ]
+}

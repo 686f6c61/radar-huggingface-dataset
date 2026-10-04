@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jkim96/Qwen3.5-35B-A3B-DASHQ-Q2-GGUF",
+  "slug": "jkim96-qwen3-5-35b-a3b-dashq-q2-gguf",
+  "author": "jkim96",
+  "url": "https://huggingface.co/jkim96/Qwen3.5-35B-A3B-DASHQ-Q2-GGUF",
+  "created_at": "2026-10-04T00:51:59.000Z",
+  "updated_at": "2026-10-04T09:43:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dashq",
+    "quantized",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 570,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 68296686848,
+  "storage_human": "68.3 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jkim96/Qwen3.5-35B-A3B-DASHQ-Q2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jkim96/Qwen3.5-35B-A3B-DASHQ-Q2-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jkim96/Qwen3.5-35B-A3B-DASHQ-INT4-g64 · Hugging Face",
+      "url": "https://huggingface.co/jkim96/Qwen3.5-35B-A3B-DASHQ-INT4-g64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-35B-A3B-DASHQ-INT4-g32: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-jkim96-qwen3-5-35b-a3b-dashq-int4-g32",
+      "snippet": "What this model is for Qwen3.5-35B-A3B-DASHQ-INT4-g32 AI model directory entry."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    },
+    {
+      "title": "GitHub - LifeJiggy/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/LifeJiggy/Qwen3.5",
+      "snippet": "Qwen Code is an open-source AI agent for the terminal, optimized for Qwen models. It helps you understand large codebases, automate tedious work, and ship faster."
+    }
+  ]
+}

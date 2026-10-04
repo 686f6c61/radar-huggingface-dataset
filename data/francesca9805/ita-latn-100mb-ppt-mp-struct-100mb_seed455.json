@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed455",
+  "slug": "francesca9805-ita-latn-100mb-ppt-mp-struct-100mb_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ita-latn-100mb-ppt-mp-struct-100mb_seed455",
+  "created_at": "2026-10-04T15:11:42.000Z",
+  "updated_at": "2026-10-04T15:16:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/ita_latn_100mb",
+    "base_model:finetune:goldfish-models/ita_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250745549,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/ita_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic: Another Clive Holt system | The Racing Forum",
+      "url": "https://theracingforum.co.uk/forums/topic/another-clive-holt-system/",
+      "snippet": "Apr 5, 2016 · The trouble with reflecting on some books of the past being discarded systems which had value not so long ago and …"
+    },
+    {
+      "title": "Huge Collection of Pacemaker Magazines - The Racing Forum",
+      "url": "https://theracingforum.co.uk/forums/topic/huge-collection-of-pacemaker-magazines/",
+      "snippet": "Mar 20, 2010 · Hi all Not sure if this is the correct place to post this topic but here goes anyway. I’ve just been clearing out my attic …"
+    },
+    {
+      "title": "The unsung heroes with greasy hands and no sleep",
+      "url": "https://forums.autosport.com/topic/73461-the-unsung-heroes-with-greasy-hands-and-no-sleep/",
+      "snippet": "Oct 2, 2004 · Page 1 of 2 - The unsung heroes with greasy hands and no sleep - posted in The Nostalgia Forum: I was looking up …"
+    },
+    {
+      "title": "Racing Comments - The Autosport Forums",
+      "url": "https://forums.autosport.com/forum/2-racing-comments/",
+      "snippet": "Feb 23, 2003 · Racing Comments: The place for debates on the current affairs and recent past of Formula 1, rallying, MotoGP, …"
+    },
+    {
+      "title": "Topic: Similar racecourses | The Racing Forum",
+      "url": "https://theracingforum.co.uk/forums/topic/similar-racecourses/",
+      "snippet": "Nov 12, 2015 · Ruby, looks like you’ve made the same assumption I did on a blog post last year – that Newcastle is pretty flat. I’ve …"
+    }
+  ]
+}

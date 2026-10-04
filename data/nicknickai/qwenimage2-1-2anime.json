@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NicknickAI/QwenImage2.1-2anime",
+  "slug": "nicknickai-qwenimage2-1-2anime",
+  "author": "NicknickAI",
+  "url": "https://huggingface.co/NicknickAI/QwenImage2.1-2anime",
+  "created_at": "2026-10-04T13:56:27.000Z",
+  "updated_at": "2026-10-04T13:56:27.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Action Movies | FULL Length Free Action Movies | Intense ... - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLkbmHAthH_ZC_0n-W-LOX7UNjTeituGeK",
+      "snippet": "Action Movies | FULL Length Free Action Movies | Intense Fights and Drama by Free Time Movies • Playlist • 345 videos • 74,269 …"
+    },
+    {
+      "title": "Nick_2anime_QwenImage2.1 - v1.0 | Qwen 2.1 LoRA | Civitai",
+      "url": "https://civitai.com/models/2966054/nick2animeqwenimage21",
+      "snippet": "styleanime v1.0 Download 1 variant available bf16 SafeTensor Nick_2anime_QwenImage2.1.safetensors BF16, good balance • 80.06 MB Verified:6 days ago Download (80.06 MB) Details Type LoRA Stats 8550 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 90 1 2 3 4 5 6 7 8 9 Reviews Very Positive (58) Published Sep 26, 2026 Base Model Qwen 2.1 Hash AutoV2 ..."
+    },
+    {
+      "title": "Full Action Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLfRCZ3PuccvBQv71hWi334-zRJekjSlCq",
+      "snippet": "Explore an incredible collection of full action movies, free Hollywood action films, and a variety of full action movies in English."
+    },
+    {
+      "title": "Nick_2anime_QwenImage2.1 v1.0 - LORA for Qwen 2.1 | CivArchive",
+      "url": "https://civarchive.com/models/2966054?modelVersionId=3360719",
+      "snippet": "Description What is Nick_2anime_QwenImage2.1? How do I use Nick_2anime_QwenImage2.1? Why might this LoRA not be producing the expected results? What files are available and where can I download them?"
+    },
+    {
+      "title": "Free Action & Thriller Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLXNY08O_Iy2nGic0Z_vkSn0E4iTDUh7d-",
+      "snippet": "Watch the best Action and Thriller Movies for free!"
+    }
+  ]
+}

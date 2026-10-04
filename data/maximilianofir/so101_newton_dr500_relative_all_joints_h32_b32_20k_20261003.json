@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "maximilianofir/so101_newton_dr500_relative_all_joints_h32_b32_20k_20261003",
+  "slug": "maximilianofir-so101_newton_dr500_relative_all_joints_h32_b32_20k_20261003",
+  "author": "maximilianofir",
+  "url": "https://huggingface.co/maximilianofir/so101_newton_dr500_relative_all_joints_h32_b32_20k_20261003",
+  "created_at": "2026-10-04T16:44:14.000Z",
+  "updated_at": "2026-10-04T16:45:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "so101",
+    "simulation",
+    "dataset:sreetz-nv/so101_newton_dr500_20260923",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576357881,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why is Xvideos so much more popular than sites like pornhub?",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/4gc3p5/why_is_xvideos_so_much_more_popular_than_sites/",
+      "snippet": "Apr 25, 2016 · So I checked the Alexa rankings for porn sites, expecting Pornhub to be the number one. Last year they got around …"
+    },
+    {
+      "title": "How much does xvideos pay? : r/CreatorsAdvice - Reddit",
+      "url": "https://www.reddit.com/r/CreatorsAdvice/comments/1dfwz85/how_much_does_xvideos_pay/",
+      "snippet": "Jun 14, 2024 · Xvideos uploads are managed through Sheer.com right now. Currently, it is much easier to monetize videos and get …"
+    },
+    {
+      "title": "Is xvideos staying up? : r/Virginia - Reddit",
+      "url": "https://www.reddit.com/r/Virginia/comments/14oe2jz/is_xvideos_staying_up/",
+      "snippet": "Jul 2, 2023 · The company that owns XVideos is based in the Czech republic. They must believe they have a low enough profile in …"
+    },
+    {
+      "title": "Videos on specific websites won't load : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/1cd9cj/videos_on_specific_websites_wont_load/",
+      "snippet": "Apr 15, 2013 · However on sites such as xvideos, xhamster, and Twitch.tv vods (Only vods, not livestreams) videos almost never …"
+    },
+    {
+      "title": "Os comentários do Xvideos são melhores do que algumas ... - Reddit",
+      "url": "https://www.reddit.com/r/brasil/comments/hwu0e6/os_coment%C3%A1rios_do_xvideos_s%C3%A3o_melhores_do_que/",
+      "snippet": "Jul 24, 2020 · Os comentários do Xvideos são melhores do que algumas páginas de humor pela internet"
+    }
+  ]
+}

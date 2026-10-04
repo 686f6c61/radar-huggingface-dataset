@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yojitha/MLAgents-Pyramids",
+  "slug": "yojitha-mlagents-pyramids",
+  "author": "yojitha",
+  "url": "https://huggingface.co/yojitha/MLAgents-Pyramids",
+  "created_at": "2026-10-04T14:56:33.000Z",
+  "updated_at": "2026-10-04T14:57:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30528715,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pujithakolipakula/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/pujithakolipakula/MLAgents-Pyramids",
+      "snippet": "PPO Agent playing Pyramids This is a trained model of a PPO agent playing Pyramids using the Unity ML-Agents Toolkit trained by pujithakolipakula as part of the Hugging Face Deep RL Course."
+    },
+    {
+      "title": "Forkits/MLAgents-Pyramids · Hugging Face",
+      "url": "https://huggingface.co/Forkits/MLAgents-Pyramids",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MLAgents-Pyramids Open Source Reinforcement Learning Agents - Freely ...",
+      "url": "https://model.aibase.com/models/details/1915692624381632514",
+      "snippet": "This project presents a trained model of a PPO agent playing Pyramids with the Unity ML-Agents Library. It offers an effective solution for deep reinforcement learning in the context of the Pyramids game, leveraging the power of the Unity ML-Agents framework."
+    },
+    {
+      "title": "jaober/ML-Agents-Pyramids - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/312699",
+      "snippet": "This is a trained model of a ppo agent playing Pyramids using the Unity ML-Agents Library."
+    },
+    {
+      "title": "GitHub - Unity-Technologies/ml-agents: The Unity Machine Learning ...",
+      "url": "https://github.com/Unity-Technologies/ml-agents",
+      "snippet": "The ML-Agents Toolkit is mutually beneficial for both game developers and AI researchers as it provides a central platform where advances in AI can be evaluated on Unity&#x27;s rich environments and then made accessible to the wider research and game developer communities."
+    }
+  ]
+}

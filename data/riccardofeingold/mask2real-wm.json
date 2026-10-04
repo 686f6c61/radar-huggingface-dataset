@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "riccardofeingold/Mask2Real-WM",
+  "slug": "riccardofeingold-mask2real-wm",
+  "author": "riccardofeingold",
+  "url": "https://huggingface.co/riccardofeingold/Mask2Real-WM",
+  "created_at": "2026-10-04T12:59:11.000Z",
+  "updated_at": "2026-10-04T13:03:36.000Z",
+  "license": "stabilityai-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "world-model",
+    "video-prediction",
+    "arxiv:2607.04546",
+    "arxiv:2510.10125",
+    "base_model:stabilityai/stable-video-diffusion-img2vid",
+    "base_model:finetune:stabilityai/stable-video-diffusion-img2vid",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77153441820,
+  "storage_human": "77.2 GB",
+  "base_model": "stabilityai/stable-video-diffusion-img2vid",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for ...",
+      "url": "https://arxiv.org/abs/2607.04546",
+      "snippet": "We present Mask2Real-WM, a two-stage action-conditioned world model for dexterous manipulation that decouples pixel prediction into a dynamics model and a rendering model. The dynamics model predicts future segmentation masks from past masks and 23-DoF action sequences."
+    },
+    {
+      "title": "GitHub - srl-ethz/Mask2Real-WM",
+      "url": "https://github.com/srl-ethz/Mask2Real-WM",
+      "snippet": "Project page for \"Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for Controllable Dexterous World Models\" (preprint, 2026). A two-stage action-conditioned world model for dexterous manipulation that decouples dynamics (segmentation-mask prediction, pretrained on >50 h of simulation) from ..."
+    },
+    {
+      "title": "Riccardo Orion Feingold | Robot Learning Engineer",
+      "url": "https://riccardofeingold.github.io/",
+      "snippet": "Mask2Real-WM is a two-stage action-conditioned world model for dexterous manipulation that decouples dynamics from rendering. A dynamics model predicts future segmentation masks from end-effector and finger-joint actions, and a ControlNet on top of Stable Video Diffusion translates those masks into photorealistic, text-promptable RGB video."
+    },
+    {
+      "title": "Mask2Real-WM: Segmentation Masks as a Sim-to-Real Bridge for ...",
+      "url": "https://arxiv.org/html/2607.04546",
+      "snippet": "Abstract Action-conditioned world models allow robots to predict the future consequences of candidate actions without additional physical interaction, supporting policy evaluation, planning, and data augmentation. We present Mask2Real-WM, a two-stage action-conditioned world model for dexterous manipulation that decouples pixel prediction into a dynamics model and a rendering model. The ..."
+    },
+    {
+      "title": "GitHub - riccardofeingold/Mask2Real-WM",
+      "url": "https://github.com/riccardofeingold/Mask2Real-WM/tree/master",
+      "snippet": "A two-stage action-conditioned world model for dexterous manipulation that decouples dynamics (segmentation-mask prediction, pretrained on >50 h of simulation) from rendering (RGB, trained on <2.5 h of real data), using segmentation space as a sim-to-real bridge for 23-DoF control."
+    }
+  ]
+}

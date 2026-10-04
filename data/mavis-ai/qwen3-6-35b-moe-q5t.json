@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mavis-ai/Qwen3.6-35B-MoE-Q5T",
+  "slug": "mavis-ai-qwen3-6-35b-moe-q5t",
+  "author": "mavis-ai",
+  "url": "https://huggingface.co/mavis-ai/Qwen3.6-35B-MoE-Q5T",
+  "created_at": "2026-10-04T16:37:12.000Z",
+  "updated_at": "2026-10-04T16:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "safetensors",
+    "qwen3_5_moe",
+    "qwen3.6",
+    "moe",
+    "quantized",
+    "q5t",
+    "apple-silicon",
+    "speculative-decoding",
+    "mtp",
+    "dflash",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2602.06036",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13039900016,
+  "parameters_human": "13.04B",
+  "storage_bytes": 25399449488,
+  "storage_human": "25.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAVIS fournisseur visserie boulonnerie",
+      "url": "https://mavis.fr/",
+      "snippet": "Fournisseur spécialisé en visserie et boulonnerie, MAVIS vous fournit une gamme complète de fixations. PRODUITS PRODUITS …"
+    },
+    {
+      "title": "Mavisun, distributeur de matériel photovoltaïque ☀️",
+      "url": "https://www.mavisun.com/",
+      "snippet": "Spécialiste du photovoltaïque pour les professionnels. Fournisseur de panneaux solaires, onduleurs, batteries, systèmes de fixation. …"
+    },
+    {
+      "title": "Mavis Discount Tire",
+      "url": "https://www.mavis.com/",
+      "snippet": "Mavis provides complete tire services, oil changes, brakes, alignments, and general automotive repair across more than 3,500+ …"
+    },
+    {
+      "title": "Mavis Vermillion | Fairy Tail Wiki | Fandom",
+      "url": "https://fairy-tail.fandom.com/fr/wiki/Mavis_Vermillion",
+      "snippet": "Mavis Vermillion (?) (メイビス ヴァーミリオン, Meibisu Vāmirion) est la fondatrice et le premier maître de la guilde Fairy Tail quand, …"
+    },
+    {
+      "title": "Mavis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mavis",
+      "snippet": "Mavis has again been among the top 1,000 names for newborn girls in the United States since 2016. [5][6] Mavis Dracula is …"
+    }
+  ]
+}

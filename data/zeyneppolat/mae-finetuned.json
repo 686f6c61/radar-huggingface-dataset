@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zeyneppolat/mae-finetuned",
+  "slug": "zeyneppolat-mae-finetuned",
+  "author": "zeyneppolat",
+  "url": "https://huggingface.co/zeyneppolat/mae-finetuned",
+  "created_at": "2026-10-04T15:07:47.000Z",
+  "updated_at": "2026-10-04T15:07:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeyneppolat (Zeynep Polat) - Hugging Face",
+      "url": "https://huggingface.co/zeyneppolat/models",
+      "snippet": "AI & ML interests Learning ML every day. Love open source and cool models."
+    },
+    {
+      "title": "zeyneppy (Zeynep Polat) - Hugging Face",
+      "url": "https://huggingface.co/zeyneppy/models",
+      "snippet": "reinforcement learning, image generation Recent Activity updated a dataset2 days ago zeyneppy/assignment-sports41-2024 published a dataset2 days ago zeyneppy/assignment-sports41-2024 liked a model2 days ago Edge0/Audio8-ASR-Infinite View all activity"
+    },
+    {
+      "title": "zeyneppolat01 (Zeynep Polat) · GitHub",
+      "url": "https://github.com/zeyneppolat01",
+      "snippet": "Computer Engineer | MSc student in AI & DS. zeyneppolat01 has 8 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "mae/FINETUNE.md at main · facebookresearch/mae · GitHub",
+      "url": "https://github.com/facebookresearch/mae/blob/main/FINETUNE.md?plain=1",
+      "snippet": "PyTorch implementation of MAE https//arxiv.org/abs/2111.06377 - mae/FINETUNE.md at main · facebookresearch/mae"
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    }
+  ]
+}

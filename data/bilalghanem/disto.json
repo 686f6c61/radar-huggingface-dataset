@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bilalghanem/DISTO",
+  "slug": "bilalghanem-disto",
+  "author": "bilalghanem",
+  "url": "https://huggingface.co/bilalghanem/DISTO",
+  "created_at": "2026-10-04T15:27:53.000Z",
+  "updated_at": "2026-10-04T15:28:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "distractor-evaluation",
+    "multiple-choice-questions",
+    "reading-comprehension",
+    "education",
+    "regression",
+    "en",
+    "dataset:cosmos_qa",
+    "dataset:dream",
+    "dataset:race",
+    "dataset:sciq",
+    "base_model:distilbert/distilroberta-base",
+    "base_model:finetune:distilbert/distilroberta-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82124545,
+  "parameters_human": "82.1M",
+  "storage_bytes": 329070524,
+  "storage_human": "329 MB",
+  "base_model": "distilroberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DISTO: Textual Distractors for Multiple Choice Reading ...",
+      "url": "https://www.educationaldatamining.org/edm2024/proceedings/2024.EDM-long-papers.1/2024.EDM-long-papers.1.pdf",
+      "snippet": "Bilal Ghanem. University of Alberta. Department of Computing Science. Alberta ... DISTO model on data sampled from DISTO's expanded negatively-sampled ..."
+    },
+    {
+      "title": "Distractor Generation in Multiple-Choice Tasks: A Survey of Methods ...",
+      "url": "https://arxiv.org/html/2402.01512v2",
+      "snippet": "11.10.2024 ... 4); discussing the main findings, including the analysis of AI models and benchmarks (Sec. ... Ghanem and Fyshe (2023) Bilal Ghanem and Alona ..."
+    },
+    {
+      "title": "A Survey on Automated Distractor Evaluation in Multiple-Choice Tasks",
+      "url": "https://aclanthology.org/2025.bea-1.5.pdf",
+      "snippet": "31.07.2025 ... Based on AI models §4.2. Others §4.3. Static §5. Comparative §5.1 ... Bilal Ghanem and Alona Fyshe. 2023. DISTO: Evaluat- · ing Textual ..."
+    },
+    {
+      "title": "A Survey on Action Recognition: Multimodal Approaches, Ethical ...",
+      "url": "https://www.mdpi.com/2079-9292/15/14/3139",
+      "snippet": "The ability to decipher intricate details of human actions holds immense potential to improve system design, predictive modeling, data-informed decision-making, ..."
+    },
+    {
+      "title": "Dr. Alona Fyshe",
+      "url": "https://alonafyshe.ca/cv_afyshe.pdf",
+      "snippet": "14.08.2026 ... [C6] Bilal Ghanem* and Alona Fyshe. DISTO: Evaluating Textual ... Artificial Intelligence (AI) Provide a Theoretical Framework For ..."
+    }
+  ]
+}

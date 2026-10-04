@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_icl_medmcqa_llama1b",
+  "slug": "ishikaa-acquisition_generator_as_confidence_icl_medmcqa_llama1b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_icl_medmcqa_llama1b",
+  "created_at": "2026-10-04T17:45:50.000Z",
+  "updated_at": "2026-10-04T17:46:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 4960484248,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DUA LIPA (@dualipa) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dualipa/",
+      "snippet": "89M Followers, 29 Following, 580 Posts - DUA LIPA (@dualipa) on Instagram: \"RADICAL OPTIMISM @service95 …"
+    },
+    {
+      "title": "Dua Lipa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dua_Lipa",
+      "snippet": ""
+    },
+    {
+      "title": "Dua Lipa | Official Site",
+      "url": "https://www.dualipa.com/?frontpage=true",
+      "snippet": "FROM OR ON BEHALF OF DUA LIPA, AND AGREE TO COMMUNITY'S TERMS/PRIVACY: …"
+    },
+    {
+      "title": "Dua Lipa - YouTube",
+      "url": "https://www.youtube.com/channel/UC-J-KZfRV8c13fOCkhXdLiQ",
+      "snippet": "The official YouTube channel for Dua Lipa.Born and raised in London to Kosovar-Albanian parents, Dua Lipa signed to Warner …"
+    },
+    {
+      "title": "Dua Lipa — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dua_Lipa",
+      "snippet": "Dua Lipa (prononcé en albanais : /ˈdua ˈlipa/ ; en anglais : /ˈduːə ˈliːpə/), née le 22 août 1995 à Londres, est une auteure …"
+    }
+  ]
+}

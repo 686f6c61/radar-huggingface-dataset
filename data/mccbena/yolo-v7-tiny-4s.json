@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MCCbena/yolo-v7-tiny-4s",
+  "slug": "mccbena-yolo-v7-tiny-4s",
+  "author": "MCCbena",
+  "url": "https://huggingface.co/MCCbena/yolo-v7-tiny-4s",
+  "created_at": "2026-10-04T13:33:29.000Z",
+  "updated_at": "2026-10-04T14:30:15.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "yolov7",
+    "yolov7-tiny",
+    "fine-tuned",
+    "pytorch",
+    "object-detection",
+    "en",
+    "ja",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377096182,
+  "storage_human": "377 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MCCbena/yolov7-tiny-lib: Minimal YOLOv7-tiny object detection ...",
+      "url": "https://github.com/MCCbena/yolov7-tiny-lib/tree/main/",
+      "snippet": "Minimal YOLOv7-tiny object detection library extracted from the official YOLOv7 repository - MCCbena/yolov7-tiny-lib"
+    },
+    {
+      "title": "WongKinYiu/yolov7: Implementation of paper - GitHub",
+      "url": "https://github.com/WongKinYiu/yolov7",
+      "snippet": "Implementation of paper - YOLOv7: Trainable bag-of-freebies sets new state-of-the-art for real-time object detectors - WongKinYiu/yolov7"
+    },
+    {
+      "title": "YOLOv7: Trainable Bag-of-Freebies | Ultralytics",
+      "url": "https://docs.ultralytics.com/models/yolov7",
+      "snippet": "YOLOv7&#x27;s distinguishing features include its model re-parameterization and dynamic label assignment, which optimize its performance without increasing inference costs. For more technical details about its architecture and comparison metrics with other state-of-the-art object detectors, refer to the YOLOv7 paper."
+    },
+    {
+      "title": "Yolo-v7 - Qualcomm® AI Hub",
+      "url": "https://aihub.qualcomm.com/iot/models/yolov7",
+      "snippet": "Yolo-v7 Real‑time object detection optimized for mobile and edge. YoloV7 is a machine learning model that predicts bounding boxes and classes of objects in an image. Note: Yolo-v7 cannot be downloaded directly due to licensing restrictions. You can export a model ready for on-device deployment using the AI Hub service."
+    },
+    {
+      "title": "Yolo-v7 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/yolov7",
+      "snippet": "Yolo-v7 Real‑time object detection optimized for mobile and edge. YoloV7 is a machine learning model that predicts bounding boxes and classes of objects in an image. Note:Yolo-v7cannot be downloaded directly due to licensing restrictions. You can export a model ready for on-device deployment using theAI Hubservice."
+    }
+  ]
+}

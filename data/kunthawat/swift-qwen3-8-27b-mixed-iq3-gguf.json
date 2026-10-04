@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kunthawat/swift-qwen3.8-27b-mixed-iq3-gguf",
+  "slug": "kunthawat-swift-qwen3-8-27b-mixed-iq3-gguf",
+  "author": "kunthawat",
+  "url": "https://huggingface.co/kunthawat/swift-qwen3.8-27b-mixed-iq3-gguf",
+  "created_at": "2026-10-04T15:30:08.000Z",
+  "updated_at": "2026-10-04T15:30:08.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swift 1.5 Qwen3.8-27B with Unsloth IQ3_XXS GGUF - Hugging Face",
+      "url": "https://huggingface.co/kunthawat/swift-1.5-qwen3.8-27b-with-unsloth-iq3-xxs-gguf",
+      "snippet": "The build starts from Swift 1.5 BF16 weights and applies our own tensor-by-tensor mixed quantization layout, reconstructed from the public UD-IQ3_XXS reference in Unsloth&#x27;s Qwen3.8 GGUF repository, using Unsloth&#x27;s public importance matrix."
+    },
+    {
+      "title": "README.md · vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF at main",
+      "url": "https://huggingface.co/vmarcelo/Swift-Qwen3.8-27B-MIX_GGUF/blob/main/README.md",
+      "snippet": "Swift-Qwen3.8-27B — MIX GGUF (IQ4 + IQ3 + IQ2) Three custom mixed-tensor quantizations of ukisai/Swift-Qwen3.8-27b, a fine-tune of Qwen/Qwen3.8-27B — the dense 27B multimodal model with hybrid GatedDeltaNet + Gated Attention and a Multi-Token Prediction (MTP) head."
+    },
+    {
+      "title": "Swift Qwen3.8 27b - GGUF Model (3 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/swift-qwen3-8-27b.html",
+      "snippet": "Download Swift Qwen3.8 27b GGUF model. 170.1 GB, 296,501 downloads, 446 likes. Split into 3 parts."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/ukisai/Swift-1.5-Qwen3.8-27B-GSQ-RCO-GGUF",
+      "snippet": "Compact, mixed-precision GGUF quantizations of Swift 1.5 Qwen3.8-27B, with Swift-specific refinement using the per-tensor allocations from ISTA-DASLab&#x27;s GSQ-RCO release. Swift 1.5 builds on Swift 1.0 through post-training focused on long-horizon, agentic and coding tasks, improving overall performance while using fewer thinking tokens."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "IndexTeam/Index-Echo-S2ST-9B",
+  "slug": "indexteam-index-echo-s2st-9b",
+  "author": "IndexTeam",
+  "url": "https://huggingface.co/IndexTeam/Index-Echo-S2ST-9B",
+  "created_at": "2026-09-28T08:55:52.000Z",
+  "updated_at": "2026-10-01T07:27:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "dubbing_bridge",
+    "speech-translation",
+    "dubbing",
+    "index",
+    "arxiv:2609.40181",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 89,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30563042419,
+  "storage_human": "30.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Sign in | Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/%C2",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://mail.yahoo.com/d?.lang=fr-FR",
+      "snippet": "Connectez-vous et découvrez tous les outils gratuits permettant d’avoir une boîte mail bien organisée. Découvrez de nouveaux …"
+    },
+    {
+      "title": "Se connecter | Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/,Â",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    }
+  ]
+}

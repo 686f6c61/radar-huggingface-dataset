@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "satos-hisasa/prompt-engineering-survey-2024",
+  "slug": "satos-hisasa-prompt-engineering-survey-2024",
+  "author": "satos-hisasa",
+  "url": "https://huggingface.co/satos-hisasa/prompt-engineering-survey-2024",
+  "created_at": "2026-10-04T01:57:26.000Z",
+  "updated_at": "2026-10-04T01:57:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satos-hisasa/prompt-engineering-survey-2024 · Hugging Face",
+      "url": "https://huggingface.co/satos-hisasa/prompt-engineering-survey-2024",
+      "snippet": "satos-hisasa / prompt-engineering-survey-2024 Like 0 Safetensors transformer research-notes prompt-engineering License:mit Model card FilesFiles and versions xet Community Copy to bucket new Notes on Prompt Engineering Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "[2406.06608] The Prompt Report: A Systematic Survey of Prompt ...",
+      "url": "https://arxiv.org/abs/2406.06608",
+      "snippet": "Generative Artificial Intelligence (GenAI) systems are increasingly being deployed across diverse industries and research domains. Developers and end-users interact with these systems through the use of prompting and prompt engineering. Although prompt engineering is a widely adopted and extensively researched area, it suffers from conflicting terminology and a fragmented ontological ..."
+    },
+    {
+      "title": "[2402.07927] A Systematic Survey of Prompt Engineering in Large ...",
+      "url": "https://arxiv.org/abs/2402.07927",
+      "snippet": "Prompt engineering has emerged as an indispensable technique for extending the capabilities of large language models (LLMs) and vision-language models (VLMs). This approach leverages task-specific instructions, known as prompts, to enhance model efficacy without modifying the core model parameters. Rather than updating the model parameters, prompts allow seamless integration of pre-trained ..."
+    },
+    {
+      "title": "Prompt Engineering Guide | Prompt Engineering Guide",
+      "url": "https://www.promptingguide.ai/",
+      "snippet": "Motivated by the high interest in developing with LLMs, we have created this new prompt engineering guide that contains all the latest papers, advanced prompting techniques, learning guides, model-specific prompting guides, lectures, references, new LLM capabilities, and tools related to prompt engineering."
+    },
+    {
+      "title": "Prompt Engineering Survey Papers - Arxiv Search | Arxiv - DeepPaper",
+      "url": "https://jp.ibbac.eu.org/surveys/prompt",
+      "snippet": "Discover survey papers on Prompt Engineering and prompt-based learning techniques from Arxiv. Find comprehensive overviews of prompt design, techniques, and applications."
+    }
+  ]
+}

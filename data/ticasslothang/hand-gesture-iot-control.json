@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TicassloThang/hand-gesture-iot-control",
+  "slug": "ticasslothang-hand-gesture-iot-control",
+  "author": "TicassloThang",
+  "url": "https://huggingface.co/TicassloThang/hand-gesture-iot-control",
+  "created_at": "2026-10-04T13:30:57.000Z",
+  "updated_at": "2026-10-04T13:31:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "tensorflow",
+  "languages": [],
+  "tags": [
+    "tensorflow",
+    "tf-keras",
+    "hand-gesture-recognition",
+    "mediapipe",
+    "keras",
+    "iot",
+    "esp32",
+    "tabular-classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8375752,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF AI-Powered Hand Gesture Controlled Robot",
+      "url": "https://www.ijsat.org/papers/2025/1/2363.pdf",
+      "snippet": "Abstract This research paper discusses the development of an AI-powered hand gesture-controlled robot, which utilizes accelerometer data to translate hand movements into robot commands. The primary goal of the project is to offer a hands-free, intuitive, and efficient method for human-robot interaction (HRI), particularly in environments where traditional control methods are cumbersome or ..."
+    },
+    {
+      "title": "GitHub - iamvny/AI-Powered-Hand-Gesture-Controlled-Robot: The AI ...",
+      "url": "https://github.com/iamvny/AI-Powered-Hand-Gesture-Controlled-Robot",
+      "snippet": "The AI-Powered Hand Gesture Controlled Robot uses Python, OpenCV, and MediaPipe to detect hand gestures via a webcam, translating them into commands for an ESP32-controlled robot. Integrating AI, IoT, and embedded systems, it enables contactless control for automation and assistive tech, providing hands-on experience in AI-driven robotics. - iamvny/AI-Powered-Hand-Gesture-Controlled-Robot"
+    },
+    {
+      "title": "PDF 15866952024221434Hand Gesture Driven v1",
+      "url": "https://www.itu.int/en/ITU-T/academia/kaleidoscope/2024/Documents/S7.3Hand-Gesture-Driven-smart-Home-Automation-Leveraging-Internet-of-Things.pdf",
+      "snippet": "1. INTRODUCTION Smart homes blend IoT devices and automation for seamless living. Gestural control represents an intuitive interface, enabling hands-free operation of devices and services within the smart home environment. By interpreting hand movements, gesture recognition systems trigger the operations of appliances."
+    },
+    {
+      "title": "Hand Gesture Driven Smart Home Automation Leveraging Internet of Things",
+      "url": "https://ieeexplore.ieee.org/document/10772850",
+      "snippet": "Smart home automation systems require convenient and efficient user interface to control home appliances. Gesture recognition-based solutions offer flexibility to the users and play a crucial role in advancing human-computer interaction and immersive computing environments. This work proposes a novel solution leveraging deep learning techniques with attention mechanisms including self ..."
+    },
+    {
+      "title": "(PDF) Hand Gesture Recognition and Control for Human ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/375422572_Hand_Gesture_Recognition_and_Control_for_Human-Robot_Interaction_Using_Deep_Learning",
+      "snippet": "This paper introduces a real-time system for recognizing hand gestures using Python and OpenCV, centred on a Convolutional Neural Network (CNN) model. The primary objective of this study is to ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "satos-hisasa/contrastive-prototype48",
+  "slug": "satos-hisasa-contrastive-prototype48",
+  "author": "satos-hisasa",
+  "url": "https://huggingface.co/satos-hisasa/contrastive-prototype48",
+  "created_at": "2026-10-04T01:57:06.000Z",
+  "updated_at": "2026-10-04T01:57:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "satos-hisasa/contrastive-prototype48 · Hugging Face",
+      "url": "https://huggingface.co/satos-hisasa/contrastive-prototype48",
+      "snippet": "satos-hisasa / contrastive-prototype48 Like 0 Safetensors PyTorch mocov3 contrastive License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Mocov3 for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "satos-hisasa (Satoshi) - Hugging Face",
+      "url": "https://huggingface.co/satos-hisasa",
+      "snippet": "Data engineer transitioning to ML Recent Activity liked a Space6 days ago 52Hz/SRMNet_real_world_denoising liked a model6 days ago jeapaul/base-960h-languagemodel-m01-nolm upvoted a paper 6 days ago"
+    },
+    {
+      "title": "A Statistical Theory of Contrastive Pre-training and Multimodal ...",
+      "url": "https://arxiv.org/abs/2501.04641v2",
+      "snippet": "Multi-modal generative AI systems, such as those combining vision and language, rely on contrastive pre-training to learn representations across different modalities. While their practical benefits are widely acknowledged, a rigorous theoretical understanding of the contrastive pre-training framework remains limited. This paper develops a theoretical framework to explain the success of ..."
+    },
+    {
+      "title": "GitHub - willcai7/Multimodal-GHM: Official implementation for the paper ...",
+      "url": "https://github.com/willcai7/multimodal-ghm",
+      "snippet": "Official implementation for the paper: A Statistical Theory of Contrastive Pre-training and Multimodal Generative AI. - willcai7/Multimodal-GHM"
+    },
+    {
+      "title": "arXiv:2501.04641v1 [cs.LG] 8 Jan 2025",
+      "url": "https://arxiv.org/pdf/2501.04641v1",
+      "snippet": "Multi-modal generative AI systems, such as those combining vision and language, rely on contrastive pre-training to learn representations across diferent modalities. While their practical benefits are widely acknowledged, a rigorous theoretical understanding of the contrastive pre-training framework remains limited. This paper develops a theoretical framework to explain the success of ..."
+    }
+  ]
+}

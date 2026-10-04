@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adpretko/celerity-271m-8k-bs-ablation-ad0p2-bs11",
+  "slug": "adpretko-celerity-271m-8k-bs-ablation-ad0p2-bs11",
+  "author": "adpretko",
+  "url": "https://huggingface.co/adpretko/celerity-271m-8k-bs-ablation-ad0p2-bs11",
+  "created_at": "2026-10-04T14:02:16.000Z",
+  "updated_at": "2026-10-04T14:02:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "celerity",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541683906,
+  "storage_human": "542 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Keyboard CPS test (Any key Speed test) | CPS Check",
+      "url": "https://cps-check.com/keyboard-cps",
+      "snippet": "Test for checking keyboard CPS. In this test you can use almost all your keyboard keys like WASD, Space, Ctrl, Shift, etc."
+    },
+    {
+      "title": "Keyboard CPS Tester - Measure Your Clicking Speed",
+      "url": "https://keyboardtest.me/keyboard-cps-test",
+      "snippet": "CPS stands for \"Clicks Per Second\" and measures how many times you can press keys on your keyboard in a single second. It's a …"
+    },
+    {
+      "title": "Keyboard CPS Test - Keys Per Second (KPS), Any Key or Multi-Key",
+      "url": "https://key-test.com/keyboard-cps-test/",
+      "snippet": "Test how many keys per second you can press. Also called KPS. Pick any key — or several keys at once — and get your CPS, per …"
+    },
+    {
+      "title": "Keyboard CPS Test - Keyboard Click Speed Online | QuickCPSTest",
+      "url": "https://www.quickcpstest.com/keyboard-test",
+      "snippet": "Jun 6, 2026 · Free keyboard CPS test. Measure keyboard clicking speed online with timer and instant CPS results."
+    },
+    {
+      "title": "Keyboard & Spacebar CPS Test - Speed Clicker Game Counter",
+      "url": "https://keyboardtest.io/keyboard-cps-test/",
+      "snippet": "What is CPS? CPS (Clicks Per Second) measures how many times you can press a key within one second. A higher CPS indicates …"
+    }
+  ]
+}

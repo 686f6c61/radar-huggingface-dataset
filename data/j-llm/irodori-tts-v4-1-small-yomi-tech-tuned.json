@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "j-llm/Irodori-TTS-v4.1-Small-Yomi-Tech-tuned",
+  "slug": "j-llm-irodori-tts-v4-1-small-yomi-tech-tuned",
+  "author": "j-llm",
+  "url": "https://huggingface.co/j-llm/Irodori-TTS-v4.1-Small-Yomi-Tech-tuned",
+  "created_at": "2026-10-04T14:39:27.000Z",
+  "updated_at": "2026-10-04T14:41:43.000Z",
+  "license": "mit-and-cc-by-sa-4.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "speech",
+    "voice",
+    "tts",
+    "japanese",
+    "technical-terms",
+    "text-to-speech",
+    "ja",
+    "base_model:takuma104/Irodori-TTS-v4.1-Small-Yomi",
+    "base_model:finetune:takuma104/Irodori-TTS-v4.1-Small-Yomi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3095606236,
+  "storage_human": "3.1 GB",
+  "base_model": "takuma104/Irodori-TTS-v4.1-Small-Yomi",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/J_(lettre)",
+      "snippet": "J représente le son [d͡ʒ] notamment en anglais et en occitan, mais aussi en igbo, indonésien, pandunia, shona, turkmène et zoulou. …"
+    },
+    {
+      "title": "J - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/J",
+      "snippet": "The Italian novelist Luigi Pirandello used j in vowel groups in his works written in Italian; he also wrote in his native Sicilian language, …"
+    },
+    {
+      "title": "Apprendre l'alphabet en français | lettre \"J-chanson\" | Lettre J ...",
+      "url": "https://www.youtube.com/watch?v=-btJ8hDjfh0",
+      "snippet": "Jul 15, 2016 · - Si vous aimez la vidéo! et dites à vos amis L'alphabet en Français - Comptine A, B, C, D, E, F, G, H, I, J, K, L, M, N, …"
+    },
+    {
+      "title": "Le son [j] en 6 minutes | Maîtrisez les graphies ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=wTLW177Hv7s",
+      "snippet": "🇫🇷 Comment prononcer et écrire le son [j] en français ?Dans cette vidéo de seulement 6 minutes, vous allez apprendre à reconnaître et …"
+    },
+    {
+      "title": "J — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/J",
+      "snippet": "Jour J, expression désignant le premier jour d'une opération militaire de grande ampleur et préparée de longue date, tel que le 6 juin …"
+    }
+  ]
+}

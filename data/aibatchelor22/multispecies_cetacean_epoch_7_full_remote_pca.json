@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "aibatchelor22/multispecies_cetacean_epoch_7_full_remote_pca",
+  "slug": "aibatchelor22-multispecies_cetacean_epoch_7_full_remote_pca",
+  "author": "aibatchelor22",
+  "url": "https://huggingface.co/aibatchelor22/multispecies_cetacean_epoch_7_full_remote_pca",
+  "created_at": "2026-10-04T01:49:25.000Z",
+  "updated_at": "2026-10-04T01:49:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "audio-spectrogram-transformer",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344850455,
+  "storage_human": "345 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aibatchelor22 (Ashley Batchelor) - Hugging Face",
+      "url": "https://huggingface.co/aibatchelor22/models",
+      "snippet": "User profile of Ashley Batchelor on Hugging Face"
+    },
+    {
+      "title": "aibatchelor22 (Ashley Batchelor) · GitHub",
+      "url": "https://github.com/aibatchelor22",
+      "snippet": "Research Scientist, UW Medicine, Department of Ophthalmology, Computational Ophthalmology Lab - aibatchelor22"
+    },
+    {
+      "title": "aibatchelor22/multi_species_v2_epoch_1 · Hugging Face",
+      "url": "https://huggingface.co/aibatchelor22/multi_species_v2_epoch_1",
+      "snippet": "aibatchelor22 / multi_species_v2_epoch_1 Like 0 PyTorch audio-spectrogram-transformer Model card FilesFiles and versions xet Community 1 Copy to bucket new No model card Downloads last month 25 Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AI benchmarks & capabilities - epoch.ai",
+      "url": "https://epoch.ai/benchmarks",
+      "snippet": "Our hub for benchmark results, featuring the performance of leading AI models on challenging tasks. It includes results from benchmarks administered internally by Epoch AI as well as data collected from external sources. Explore trends in AI capabilities across time, by benchmark, or by model."
+    }
+  ]
+}

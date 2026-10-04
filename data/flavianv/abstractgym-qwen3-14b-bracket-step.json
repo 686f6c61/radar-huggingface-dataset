@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "flavianv/abstractgym-qwen3-14b-bracket-step",
+  "slug": "flavianv-abstractgym-qwen3-14b-bracket-step",
+  "author": "flavianv",
+  "url": "https://huggingface.co/flavianv/abstractgym-qwen3-14b-bracket-step",
+  "created_at": "2026-10-04T16:36:53.000Z",
+  "updated_at": "2026-10-04T16:38:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "abstractgym",
+    "research",
+    "transformers",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 770929512,
+  "storage_human": "771 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pages de garde de MUSIQUE ♫ -【100% GRATUIT】2026",
+      "url": "https://modelesetplus.com/pages-de-garde/musique/",
+      "snippet": "Il s'agit d'une page de garde de musique à imprimer gratuitement au format PDF. Son design simule l'écran d'un lecteur MP3, créant …"
+    },
+    {
+      "title": "Modèles de page de garde de musique à imprimer | Canva",
+      "url": "https://www.canva.com/fr_fr/page-de-couverture/modeles/musique/?msockid=12e790bbf72c6ae41dfd8753f6926b79",
+      "snippet": "Avec Canva, vous trouvez des idées de pages de garde de musique originales et vous les personnalisez en quelques minutes. …"
+    },
+    {
+      "title": "Page De Garde Musique - Pinterest",
+      "url": "https://fr.pinterest.com/ideas/page-de-garde-musique/940272682935/",
+      "snippet": "Trouvez l’inspiration et essayez de nouvelles choses. Découvrez et enregistrez des idées sur le thème page de garde musique sur …"
+    },
+    {
+      "title": "Page de garde Musique à imprimer gratuitement",
+      "url": "https://objectifmaternelle.fr/page-de-garde-musique/",
+      "snippet": "Découvrez nos pages de garde sur le thème de la musique pour personnaliser vos cahiers et dossiers scolaires. Téléchargement …"
+    },
+    {
+      "title": "Page de garde Musique à imprimer : modèle A4 gratuit",
+      "url": "https://www.kidiprints.com/musique.html",
+      "snippet": "Sep 10, 2026 · La page de garde de Musique, en A4 et prête à imprimer. Notes, guitare et casque dessinés au trait, titre calligraphié, …"
+    }
+  ]
+}

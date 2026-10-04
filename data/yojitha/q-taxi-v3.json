@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yojitha/q-Taxi-v3",
+  "slug": "yojitha-q-taxi-v3",
+  "author": "yojitha",
+  "url": "https://huggingface.co/yojitha/q-Taxi-v3",
+  "created_at": "2026-10-04T14:52:42.000Z",
+  "updated_at": "2026-10-04T14:52:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130063,
+  "storage_human": "130063 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johith9381/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/johith9381/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing Taxi-v3 This is a trained Q-Learning agent playing Taxi-v3."
+    },
+    {
+      "title": "YolandiTheNinja/q-Taxi-v3 · Hugging Face",
+      "url": "https://huggingface.co/YolandiTheNinja/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "hpoddar/q-Taxi-v3 · Hugging Face",
+      "url": "https://d6108366.hf-mirror.com/hpoddar/q-Taxi-v3",
+      "snippet": "Q-Learning Agent playing1 Taxi-v3 This is a trained model of a Q-Learning agent playing Taxi-v3 ."
+    },
+    {
+      "title": "GitHub - louaibenaissa/Taxi-v3: Using model free RL to train an agent ...",
+      "url": "https://github.com/louaibenaissa/Taxi-v3",
+      "snippet": "Overview This repository is a personal project aimed at applying model-free Q-Learning, a Reinforcement Learning (RL) technique, to the Taxi-v3 environment from OpenAI's Gym. The goal is to bridge the gap between theoretical knowledge and practical application by implementing and experimenting with Q-Learning to solve the Taxi-v3 game."
+    },
+    {
+      "title": "q-Taxi-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-teledocmedical-q-taxi-v3",
+      "snippet": "q-Taxi-v3 q-Taxi-v3 is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

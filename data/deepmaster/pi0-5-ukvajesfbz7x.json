@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "deepmaster/pi0.5-UKVAJESfBz7X",
+  "slug": "deepmaster-pi0-5-ukvajesfbz7x",
+  "author": "deepmaster",
+  "url": "https://huggingface.co/deepmaster/pi0.5-UKVAJESfBz7X",
+  "created_at": "2026-10-04T13:15:33.000Z",
+  "updated_at": "2026-10-04T13:17:25.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi0.5",
+    "axis",
+    "openpi",
+    "jax",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12439318044,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepmaster/pi0.5-Qa9gL31ZSwkb · Hugging Face",
+      "url": "https://huggingface.co/deepmaster/pi0.5-Qa9gL31ZSwkb",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepmaster (data) - Hugging Face",
+      "url": "https://huggingface.co/deepmaster/models",
+      "snippet": "AI & ML interests None yet Organizations deepmaster&#x27;s models None public yet System theme Company"
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/pi05/README.md at main ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/pi05/README.md",
+      "snippet": "Pi0.5 is a vision-language-action model that co-trains on diverse data sources (robot demos, web data, semantic subtasks) to enable open-world generalization for long-horizon robotic manipulation. This is based on the implementation of Pi0.5 found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance ..."
+    },
+    {
+      "title": "drforbin.ai — AI model torrents, indexed | Open weights. Distributed ...",
+      "url": "https://drforbin.ai/",
+      "snippet": "The public index for open-weight AI model torrents. Magnet links, infohashes, and rich metadata for openly licensed LLMs, diffusion, audio and embedding models."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    }
+  ]
+}

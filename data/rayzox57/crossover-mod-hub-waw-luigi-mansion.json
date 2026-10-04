@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rayzox57/crossover-mod-hub-waw-luigi-mansion",
+  "slug": "rayzox57-crossover-mod-hub-waw-luigi-mansion",
+  "author": "rayzox57",
+  "url": "https://huggingface.co/rayzox57/crossover-mod-hub-waw-luigi-mansion",
+  "created_at": "2026-10-04T14:33:36.000Z",
+  "updated_at": "2026-10-04T16:02:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "crossover-mod-hub",
+    "fr",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14033237,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rayzox57 (Rayzox) - Hugging Face",
+      "url": "https://huggingface.co/rayzox57/models",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 2 months ago ... updated a dataset 2 months ago"
+    },
+    {
+      "title": "rayzox57 (Rayzox) - Hugging Face",
+      "url": "https://huggingface.co/rayzox57",
+      "snippet": "User profile of Rayzox on Hugging Face"
+    },
+    {
+      "title": "rayzox57 (Rayzox) - Hugging Face",
+      "url": "https://huggingface.co/rayzox57/datasets",
+      "snippet": "AI & ML interests ... Recent Activity published a dataset 6 days ago ... updated a dataset 6 days ago"
+    },
+    {
+      "title": "rayzox57 · GitHub",
+      "url": "https://github.com/rayzox57",
+      "snippet": "A Garry&#x27;s Mod server addon for managing usergroup- and user-specific restrictions, limits, and loadouts"
+    },
+    {
+      "title": "Luigi&#x27;s Mansion Mods, Tutorials & Community | LM Hub",
+      "url": "https://gamebanana.com/games/7120",
+      "snippet": "Discover Luigi&#x27;s Mansion mods, tutorials, questions, requests, and fan discussions. Also known as LM, this is the go-to hub for custom content and help."
+    }
+  ]
+}

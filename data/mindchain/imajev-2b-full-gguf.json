@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mindchain/imajev-2b-full-GGUF",
+  "slug": "mindchain-imajev-2b-full-gguf",
+  "author": "mindchain",
+  "url": "https://huggingface.co/mindchain/imajev-2b-full-GGUF",
+  "created_at": "2026-10-04T16:09:07.000Z",
+  "updated_at": "2026-10-04T17:02:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "jev",
+    "vision",
+    "quantization",
+    "imatrix",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 26571628736,
+  "storage_human": "26.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gta5怎么操作？图中显示的“LAit”是按键盘哪个键？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1994266482096508547.html",
+      "snippet": "gta5怎么操作？ 图中显示的“LAit”是按键盘哪个键？ 左ALT 键很多玩家都比较关心鼠标键盘用，在这里为大家带来GTA5电脑PC版鼠 …"
+    },
+    {
+      "title": "电脑安装软件时总显示:抽取:无法写入文件...._百度知道",
+      "url": "https://zhidao.baidu.com/question/2138658636777074428.html",
+      "snippet": "你好，如果说电脑安装软件时总会显示抽取：无法写入文件，一种可能性是C盘剩余空间不足，因为系统在安装程序过程中其实往往需 …"
+    },
+    {
+      "title": "法语中de, du, de la, d', des的用法是什么？_百度知道",
+      "url": "https://zhidao.baidu.com/question/2122464900641702267.html",
+      "snippet": "de 是介词，d' 是其省音形势（后面接元音时使用d'） de用于表示所属、来源、属性等意义，也可能是某些短语的一部分，具体用法就 …"
+    },
+    {
+      "title": "CAFE的法文怎么打 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/41667640.html",
+      "snippet": "Dec 14, 2007 · cafe的法文是：café（大写CAFÉ），手写体如下图。有咖啡、咖啡店之意。 英文单词cafe是一个外来词，大约在1802 …"
+    },
+    {
+      "title": "lait 是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/210844613125699485.html",
+      "snippet": "Dec 16, 2023 · lait 是什么意思Lait是法语中的“牛奶”一词，这个词汇广泛应用于各种场合，特别是在咖啡馆中非常常见。如果你发现有 …"
+    }
+  ]
+}

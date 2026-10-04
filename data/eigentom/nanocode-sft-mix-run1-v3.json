@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "eigentom/nanocode-sft-mix-run1-v3",
+  "slug": "eigentom-nanocode-sft-mix-run1-v3",
+  "author": "eigentom",
+  "url": "https://huggingface.co/eigentom/nanocode-sft-mix-run1-v3",
+  "created_at": "2026-10-04T12:58:39.000Z",
+  "updated_at": "2026-10-04T13:15:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm5",
+    "sft",
+    "coding-agent",
+    "megatron",
+    "conversational",
+    "base_model:openbmb/MiniCPM5-2B-Midtrain",
+    "base_model:finetune:openbmb/MiniCPM5-2B-Midtrain",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033561208,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B-Midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eigentom/nanocode_sft_60b · Hugging Face",
+      "url": "https://huggingface.co/eigentom/nanocode_sft_60b",
+      "snippet": "Instructions to use eigentom/nanocode_sft_60b with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use eigentom/nanocode_sft_60b with Transformers:"
+    },
+    {
+      "title": "GitHub - 1rgs/nanocode: Minimal Claude Code alternative. Single Python ...",
+      "url": "https://github.com/1rgs/nanocode",
+      "snippet": "Minimal Claude Code alternative. Single Python file, zero dependencies, ~250 lines. Built using Claude Code, then used to build itself."
+    },
+    {
+      "title": "GitHub - Nano-Collective/nanocoder: An open coding agent for your ...",
+      "url": "https://github.com/Nano-Collective/nanocoder",
+      "snippet": "简体中文 繁體中文 An open coding agent for your terminal, built by a community collective rather than a company. Bring your own model, keep your code on your machine, and owe nothing to anyone. Built by the Nano Collective, a community collective building AI tooling not for profit, but for the community. Nanocoder runs agentic coding on the model of your choice: local models via Ollama ..."
+    },
+    {
+      "title": "Fine-tuned Models for eigentom/nanocode_sft_60b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:eigentom/nanocode_sft_60b",
+      "snippet": "Model Tree Reset eigentom/nanocode_sft_60b Adapters Finetunes Quantizations Merges Apps llama.cpp LM Studio Jan Draw Things DiffusionBee JoyFusion vLLM Ollama MLX LM Docker Model Runner Lemonade SGLang Unsloth Desktop Pi Hermes Agent Atomic Chat OpenClaw Inference Providers Select all Groq Novita Cerebras Nscale fal Together AI Fireworks ..."
+    },
+    {
+      "title": "OpenCode | The open source AI coding agent",
+      "url": "https://opencode.ai/",
+      "snippet": "The open source AI coding agent Free models included or connect any model from any provider, including Claude, GPT, Gemini and more."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "likhitbhogadi/anlp-a2-q1-moe_4e_top2",
+  "slug": "likhitbhogadi-anlp-a2-q1-moe_4e_top2",
+  "author": "likhitbhogadi",
+  "url": "https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_4e_top2",
+  "created_at": "2026-10-04T18:06:59.000Z",
+  "updated_at": "2026-10-04T18:07:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "anlp-assignment",
+    "en",
+    "vi",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35277312,
+  "parameters_human": "35.3M",
+  "storage_bytes": 154921983,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Sex Videos With Lesbians & Teens On Pornhub",
+      "url": "https://www.pornhub.com/video/search?search=sex",
+      "snippet": "Free SEX videos from every PORN niche are on Pornhub. Lesbian, TEEN, Asian, Amateur and more! Creative SEX positions will get …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites et Films de Sexe XXX | Tube8 Français",
+      "url": "https://www.tube8.fr/",
+      "snippet": "Retrouvez les vidéos porno gratuites et les films de sexe XXX les plus chaudes, seulement à Tube8. La sélection imbattable de …"
+    },
+    {
+      "title": "Sex Videos – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=sex+videos",
+      "snippet": "Regarde les vidéos porno de Sex Videos gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    },
+    {
+      "title": "Tube8: Free Porn Videos & XXX Sex Movies - HD Porno Tube",
+      "url": "https://www.tube8.com/",
+      "snippet": "Watch the hottest free sex videos at Tube8. Enjoy an exclusive porn collection of selected sex scenes and full porn movies at home …"
+    },
+    {
+      "title": "Free Recommended Porn: Hot Hardcore Sex Videos | Pornhub",
+      "url": "https://www.pornhub.com/recommended",
+      "snippet": "Having someone recommend you free porn is like having someone curate your XXX playlist. Enjoying seeing the best recommended …"
+    }
+  ]
+}

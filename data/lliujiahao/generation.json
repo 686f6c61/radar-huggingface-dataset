@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lliujiahao/generation",
+  "slug": "lliujiahao-generation",
+  "author": "lliujiahao",
+  "url": "https://huggingface.co/lliujiahao/generation",
+  "created_at": "2026-10-04T01:11:02.000Z",
+  "updated_at": "2026-10-04T01:11:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jiahao LIU's Profile",
+      "url": "https://ljiahao.github.io/",
+      "snippet": "My research interests lie primarily in AI for security, with a focus on ... Model Context Protocol Ecosystem and Security Analysis. Zhiwei Lin, Bonan ..."
+    },
+    {
+      "title": "‪Jiahao Liu‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=IvImF70AAAAJ&hl=en",
+      "snippet": "Topic-to-essay generation with neural networks. X Feng, M Liu, J Liu, B Qin, Y Sun, T Liu. IJCAI 2018, 4078-4084, 2018."
+    },
+    {
+      "title": "Generative AI for visualization: State of the art and future directions",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2468502X24000160",
+      "snippet": "Generative AI (GenAI) has witnessed remarkable progress in recent years and demonstrated impressive performance in various generation tasks in different ..."
+    },
+    {
+      "title": "Jiahao LIU - Associate Editor at Nature Reviews Electrical Engineering",
+      "url": "https://cn.linkedin.com/in/jiahao-liu-06409b26a",
+      "snippet": "I am currently an Associate Editor at Nature Reviews Electrical Engineering, having transitioned from an active research career to scientific publishing."
+    },
+    {
+      "title": "Foundation model-based generative AI for smart manufacturing",
+      "url": "https://link.springer.com/article/10.1007/s42524-026-5359-0",
+      "snippet": "14.05.2026 ... The rise of generative AI (GenAI) has prompted significant attention and discourse across academia and industry, as stakeholders grapple ..."
+    }
+  ]
+}

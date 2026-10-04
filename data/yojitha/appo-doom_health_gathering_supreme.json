@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yojitha/appo-doom_health_gathering_supreme",
+  "slug": "yojitha-appo-doom_health_gathering_supreme",
+  "author": "yojitha",
+  "url": "https://huggingface.co/yojitha/appo-doom_health_gathering_supreme",
+  "created_at": "2026-10-04T14:58:18.000Z",
+  "updated_at": "2026-10-04T14:58:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "doom_health_gathering_supreme",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16,
+  "storage_human": "16 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "havyasree/sf-doom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/havyasree/sf-doom_health_gathering_supreme",
+      "snippet": "APPO Agent playing doom_health_gathering_supreme This is a trained model of a APPO agent playing doom_health_gathering_supreme for the Hugging Face Deep Reinforcement Learning Course."
+    },
+    {
+      "title": "kingabzpro/doom_health_gathering_supreme · Hugging Face",
+      "url": "https://huggingface.co/kingabzpro/doom_health_gathering_supreme",
+      "snippet": "To continue training with this model, use the train script corresponding to this environment: ... Note, you may have to adjust --train_for_env_steps to a suitably high number as the experiment will resume at the number of steps it concluded at."
+    },
+    {
+      "title": "HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "url": "https://github.com/HusseinEid101/-rl_course_vizdoom_health_gathering_supreme-",
+      "snippet": "A (n) APPO model trained on the doom_health_gathering_supreme environment. This model was trained using Sample-Factory 2.0: https://github.com/alex-petrenko/sample-factory."
+    },
+    {
+      "title": "README.md · Huggbottle/DeepRL_vizdoom_health_gathering_supreme_2 at main",
+      "url": "https://d6108366.hf-mirror.com/Huggbottle/DeepRL_vizdoom_health_gathering_supreme_2/blob/main/README.md?code=true",
+      "snippet": "Instructions to use Huggbottle/DeepRL_vizdoom_health_gathering_supreme_2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "unit8_part2.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/deep-rl-class/blob/master/notebooks/unit8/unit8_part2.ipynb",
+      "snippet": "To validate this hands-on for the certification process, you need to push one model: doom_health_gathering_supreme get a result of >= 5. To find your result, go to the leaderboard and find your model, the result = mean_reward - std of reward If you don&#x27;t find your model, go to the bottom of the page and click on the refresh button For more information about the certification process, check ..."
+    }
+  ]
+}

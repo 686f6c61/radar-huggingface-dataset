@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zuimengqm/rmbg-qnn-modnet",
+  "slug": "zuimengqm-rmbg-qnn-modnet",
+  "author": "zuimengqm",
+  "url": "https://huggingface.co/zuimengqm/rmbg-qnn-modnet",
+  "created_at": "2026-10-04T01:07:47.000Z",
+  "updated_at": "2026-10-04T01:51:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15931699,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zuimengqm (zuimeng) - Hugging Face",
+      "url": "https://huggingface.co/zuimengqm",
+      "snippet": "AI 抠图 — RMBG-1.4 Remove backgrounds from images and get transparent PNGs zuimengqm May 25"
+    },
+    {
+      "title": "PotterWhite/AlphaMattingModels · Hugging Face",
+      "url": "https://huggingface.co/PotterWhite/AlphaMattingModels",
+      "snippet": "PotterWhite / AlphaMattingModels like 0 ONNX Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - 1038lab/ComfyUI-RMBG: A ComfyUI custom node designed for ...",
+      "url": "https://github.com/1038lab/ComfyUI-RMBG",
+      "snippet": "A ComfyUI custom node designed for advanced image background removal and object, face, clothes, and fashion segmentation, utilizing multiple models including RMBG-2.0, INSPYRENET, BEN, BEN2, BiRefN..."
+    },
+    {
+      "title": "modnet: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/replicate/modnet-pollinations",
+      "snippet": "Overview modnet is a lightweight deep learning model for portrait matting that removes backgrounds from images in real-time without requiring auxiliary inputs like trimaps. Built by pollinations, this model uses an Efficient Atrous Spatial Pyramid Pooling (e-ASPP) module to fuse multi-scale features and achieves 67 frames per second on a 1080Ti GPU. The model optimizes multiple sub-objectives ..."
+    },
+    {
+      "title": "MODNet Open-Source Portrait Matting Model - Remove Image Background in ...",
+      "url": "https://model.aibase.com/models/details/1924737761403998208",
+      "snippet": "MODNet is a deep learning model specifically designed for portrait matting, generating high-quality alpha masks in real-time without requiring trimaps, suitable for various portrait segmentation scenarios."
+    }
+  ]
+}

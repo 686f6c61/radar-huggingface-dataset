@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "likhitbhogadi/anlp-a2-q1-moe_shared1_3e_top1",
+  "slug": "likhitbhogadi-anlp-a2-q1-moe_shared1_3e_top1",
+  "author": "likhitbhogadi",
+  "url": "https://huggingface.co/likhitbhogadi/anlp-a2-q1-moe_shared1_3e_top1",
+  "created_at": "2026-10-04T18:07:32.000Z",
+  "updated_at": "2026-10-04T18:12:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "anlp-assignment",
+    "en",
+    "vi",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35274240,
+  "parameters_human": "35.3M",
+  "storage_bytes": 155281401,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

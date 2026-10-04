@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willy-wonka5745/noob-tries-CP",
+  "slug": "willy-wonka5745-noob-tries-cp",
+  "author": "willy-wonka5745",
+  "url": "https://huggingface.co/willy-wonka5745/noob-tries-CP",
+  "created_at": "2026-10-04T16:25:59.000Z",
+  "updated_at": "2026-10-04T16:32:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "code",
+    "competitive-programming",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955274,
+  "storage_human": "173 MB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willy anti-gaspi | Le leader de l'anti-gaspi en ligne",
+      "url": "https://willyantigaspi.fr/",
+      "snippet": "Vos produits préférés en mode anti-gaspi vraiment moins chers. Des produits bio et français sauvés du gaspillage alimentaire. …"
+    },
+    {
+      "title": "Willy (écrivain) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Willy_(%C3%A9crivain)",
+      "snippet": "Willy est le fils aîné de Jean-Albert Gauthier-Villars, qui dirige la maison d'édition Gauthier-Villars, mais il ne participe pas à …"
+    },
+    {
+      "title": "Nos Meilleures Ventes de Produits Anti-Gaspi | Prix Destockage",
+      "url": "https://willyantigaspi.fr/collections/les-meilleures-ventes",
+      "snippet": "Ici, retrouvez nos produits les plus populaires. Avec eux, vous êtes sûr de ne pas vous tromper : ce sont les favoris des adeptes de …"
+    },
+    {
+      "title": "Willy Rovelli — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Willy_Rovelli",
+      "snippet": "Willy Rovelli, né William Rovelli le 18 août 19731, 2 à Cluses (Haute-Savoie), est un comédien, humoriste, chroniqueur et animateur …"
+    },
+    {
+      "title": "WILLY - Accueil",
+      "url": "https://www.pfwilly.com/",
+      "snippet": "La SRL Willy est une société familliale, située à La Louvière et spécialisée dans la vente de fleurs pour tout événement ainsi que …"
+    }
+  ]
+}

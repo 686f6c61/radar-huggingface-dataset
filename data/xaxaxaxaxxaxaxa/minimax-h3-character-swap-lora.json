@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xaxaxaxaxxaxaxa/MiniMax-H3-Character-Swap-LoRA",
+  "slug": "xaxaxaxaxxaxaxa-minimax-h3-character-swap-lora",
+  "author": "xaxaxaxaxxaxaxa",
+  "url": "https://huggingface.co/xaxaxaxaxxaxaxa/MiniMax-H3-Character-Swap-LoRA",
+  "created_at": "2026-10-04T15:01:25.000Z",
+  "updated_at": "2026-10-04T15:01:25.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "minimax-h3",
+    "lora",
+    "character-swap",
+    "video-editing",
+    "ref2va",
+    "comfyui",
+    "ai-toolkit",
+    "video-to-video",
+    "en",
+    "dataset:akatz-ai/H3-Character-Swap-v1",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:adapter:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155110320,
+  "storage_human": "155 MB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "akatz-ai/MiniMax-H3-Character-Swap-LoRA · Hugging Face",
+      "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "akatz-ai/MiniMax-H3-Character-Swap-LoRA at main",
+      "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax-H3 Character Swap LoRA Released - tools4all.ai",
+      "url": "https://tools4all.ai/trends/minimax-h3-character-swap-lora-released",
+      "snippet": "A new LoRA model, MiniMax-H3 Character Swap, improves consistency and accuracy for character replacement in video generation."
+    },
+    {
+      "title": "MiniMax-H3-Character-Swap-LoRA Character Swap LoRA Adapter: File List",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/28/minimax-h3-character-swap-lora/",
+      "snippet": "This LoRA model is distributed in safetensors format (h3_character_swap_pro4500_1000.safetensors) and can be downloaded directly from the Hugging Face repository akatz-ai/MiniMax-H3-Character-Swap-LoRA."
+    },
+    {
+      "title": "mini max character replace - with turbo lora 4 steps",
+      "url": "https://civitai.com/models/2843905/mini-max-character-replace-with-turbo-lora-4-steps",
+      "snippet": "edit: 1.1 can work with long vídeos, long context, mask with sam, this is veeeeeeeeeeeery best than 1.0 try xD! MiniMax H3 Character Replacement — ..."
+    }
+  ]
+}

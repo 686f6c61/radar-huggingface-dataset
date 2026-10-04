@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "saffff1111/dl2-hw2",
+  "slug": "saffff1111-dl2-hw2",
+  "author": "saffff1111",
+  "url": "https://huggingface.co/saffff1111/dl2-hw2",
+  "created_at": "2026-10-04T14:41:11.000Z",
+  "updated_at": "2026-10-04T14:51:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132890869,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kryalka/dl2-hw2 · Hugging Face",
+      "url": "https://huggingface.co/kryalka/dl2-hw2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "gzverev/dl2-hw2-bert-ner · Hugging Face",
+      "url": "https://huggingface.co/gzverev/dl2-hw2-bert-ner",
+      "snippet": "dl2-hw2-bert-ner This model is a fine-tuned version of BAAI/bge-small-en-v1.5 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Home · AUTOMATIC1111/stable-diffusion-webui Wiki · GitHub",
+      "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Models",
+      "snippet": "Stable Diffusion web UI. Contribute to AUTOMATIC1111/stable-diffusion-webui development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Robinator9002/ModelAssetLoader: A Loader-Project for ...",
+      "url": "https://github.com/Robinator9002/ModelAssetLoader",
+      "snippet": "A Loader-Project for Downloading AI-Models from Websites like Hugging-Face and CivitAI, automatically putting them in the right Folders. Works with most to all Popular Apps like ComfyUI, A1111 and ForgeUI."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    }
+  ]
+}

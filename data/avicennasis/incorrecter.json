@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Avicennasis/incorrecter",
+  "slug": "avicennasis-incorrecter",
+  "author": "Avicennasis",
+  "url": "https://huggingface.co/Avicennasis/incorrecter",
+  "created_at": "2026-10-04T18:09:17.000Z",
+  "updated_at": "2026-10-04T18:11:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mlx",
+    "fine-tune",
+    "typo-generation",
+    "conversational",
+    "en",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:google/civil_comments",
+    "dataset:grammarly/coedit",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519332,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CircuiTikZ Designer",
+      "url": "https://www.circuit2tikz.tf.fau.de/designer/",
+      "snippet": "A GUI for easily drawing circuits with CircuiTikZ components. Draw your circuit, export it to circuitikz or SVG code and include it in …"
+    },
+    {
+      "title": "GitHub - Circuit2TikZ/CircuiTikZ-Designer: A GUI for drawing CircuiTikZ ...",
+      "url": "https://github.com/Circuit2TikZ/CircuiTikZ-Designer",
+      "snippet": "An interactive, visual, online editor for creating electrical circuit diagrams for LaTeX/CircuiTi k Z with ease. Try it out online! CircuiTi k …"
+    },
+    {
+      "title": "TikzMaker",
+      "url": "https://tikzmaker.com/",
+      "snippet": "TikZ GUI editor to draw LaTeX diagrams and circuits with Tikz-code. Create circuits and figures and get the Circuitikz-code …"
+    },
+    {
+      "title": "Circuit2TikZ",
+      "url": "https://circuit2tikz.tf.fau.de/",
+      "snippet": "CircuiTi k Z-Designer is a browser-based progressive web application that serves as a GUI for CircuiTi k Z. This JavaScript-based, …"
+    },
+    {
+      "title": "CircuiTikZ – Advanced Circuit Drawing Package for LaTeX",
+      "url": "https://circuitikz.com/",
+      "snippet": "CircuiTikZ is used to create electrical circuit diagrams directly in LaTeX documents, allowing users to produce clean, accurate, and …"
+    }
+  ]
+}

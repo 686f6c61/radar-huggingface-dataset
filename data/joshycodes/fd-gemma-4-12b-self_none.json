@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-gemma-4-12b-self_none",
+  "slug": "joshycodes-fd-gemma-4-12b-self_none",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-gemma-4-12b-self_none",
+  "created_at": "2026-10-04T02:01:02.000Z",
+  "updated_at": "2026-10-04T02:03:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Futurist Manifesto - bactra",
+      "url": "https://bactra.org/T4PM/futurist-manifesto.html",
+      "snippet": "It is in Italy that we are issuing this manifesto of ruinous and incendiary violence, by which we today are founding Futurism, because …"
+    },
+    {
+      "title": "Marinetti’s Futurist Manifesto - 1000Manifestos.com",
+      "url": "https://1000manifestos.com/marinetti-futurist-manifesto/",
+      "snippet": "Mar 11, 2011 · We are already living in the absolute, since we have already created eternal, omnipresent speed. We want to glorify …"
+    },
+    {
+      "title": "The Futurist Manifesto, by Filippo Tommaso Marinetti",
+      "url": "https://www.arthistoryproject.com/artists/filippo-tommaso-marinetti/the-futurist-manifesto/",
+      "snippet": "We affirm that the world’s magnificence has been enriched by a new beauty: the beauty of speed. A racing car whose hood is …"
+    },
+    {
+      "title": "The Manifesto of Futurism (F. T. Marinetti) - Amerika",
+      "url": "https://www.amerika.org/texts/the-manifesto-of-futurism-f-t-marinetti/",
+      "snippet": "Up to now, literature has exalted a pensive immobility, ecstasy, and sleep. We intend to exalt aggressive action, a feverish insomnia, …"
+    },
+    {
+      "title": "F. T. Marinetti – The Futurist Manifesto | Genius",
+      "url": "https://genius.com/F-t-marinetti-the-futurist-manifesto-annotated",
+      "snippet": "We thought it was dead, my good shark, but I woke it with a single caress of its powerful back, and it was revived running as fast as it …"
+    }
+  ]
+}

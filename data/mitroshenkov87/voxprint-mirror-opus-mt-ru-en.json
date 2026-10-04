@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-mirror-opus-mt-ru-en",
+  "slug": "mitroshenkov87-voxprint-mirror-opus-mt-ru-en",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-ru-en",
+  "created_at": "2026-10-04T00:56:59.000Z",
+  "updated_at": "2026-10-04T00:57:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "marian",
+    "mirror",
+    "voxprint",
+    "translation",
+    "base_model:Helsinki-NLP/opus-mt-ru-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-ru-en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308874843,
+  "storage_human": "309 MB",
+  "base_model": "Helsinki-NLP/opus-mt-ru-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mitroshenkov87/voxprint-mirror-opus-mt-en-ru · Hugging Face",
+      "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-ru",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "voxprint-audiobook-builder/docs/MODELS.md at main · Mitroshenkov87 ...",
+      "url": "https://github.com/Mitroshenkov87/voxprint-audiobook-builder/blob/main/docs/MODELS.md",
+      "snippet": "Order: models folder -> original repository -> mirror. The files are byte-identical to the pinned commit of the original, every file is checked against the SHA-256 in infra/model_mirrors.json (a mismatch deletes it), and each mirror&#x27;s model card names the original, the licence and the commit."
+    },
+    {
+      "title": "Mitroshenkov87 (Mitroshenkov A. A.) - Hugging Face",
+      "url": "https://huggingface.co/Mitroshenkov87",
+      "snippet": "AI & ML interests ... Recent Activity updated a collection about 2 hours ago ... liked a model about 2 hours ago"
+    },
+    {
+      "title": "GitHub - Mitroshenkov87/voxprint-audiobook-builder",
+      "url": "https://github.com/Mitroshenkov87/voxprint-audiobook-builder",
+      "snippet": "Recording scripts to read when you record a voice (ru / en / de, TXT + PDF): docs/recording-scripts/ User guide · FAQ · Translation · Voices and licences · AAC / M4B notice Models, mirrors and backups · Downloads and hashes · Linux · Building and contributing How it works · Architecture · Tests and verification · Roadmap · Changelog"
+    },
+    {
+      "title": "Voxprint — On-device transcription",
+      "url": "https://echo.heyitsmejosh.com/",
+      "snippet": "Whisper-powered speech transcription that runs entirely on your device. No cloud, no accounts, detects the language you&#x27;re speaking."
+    }
+  ]
+}

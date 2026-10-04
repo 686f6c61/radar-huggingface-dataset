@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "W4ashabii/waste_classifier",
+  "slug": "w4ashabii-waste_classifier",
+  "author": "W4ashabii",
+  "url": "https://huggingface.co/W4ashabii/waste_classifier",
+  "created_at": "2026-10-04T17:44:26.000Z",
+  "updated_at": "2026-10-04T17:49:34.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolov8",
+    "yolov8-cls",
+    "image-classification",
+    "waste-classification",
+    "waste-sorting",
+    "recycling",
+    "dataset:Pramudit/Waste_SIP_Dataset",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10413654,
+  "storage_human": "10 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dieffenbachia - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Dieffenbachia",
+      "snippet": "Dieffenbachia, commonly known as dumb cane or leopard lily, is a genus of tropical flowering plants in the family Araceae. It is native …"
+    },
+    {
+      "title": "How to Grow and Care for Dieffenbachia - The Spruce",
+      "url": "https://www.thespruce.com/dumb-cane-dieffenbachia-definition-1902751",
+      "snippet": "Aug 2, 2026 · Dieffenbachia, also known as dumb cane, is a type of perennial plant popular for its air-purifying qualities and large, …"
+    },
+    {
+      "title": "Dieffenbachia : entretenir et cultiver cette plante d’intérieur",
+      "url": "https://www.jardiner-malin.fr/fiche/dieffenbachia-entretien-arrosage.html",
+      "snippet": "Nov 10, 2009 · Le dieffenbachia séduit par son feuillage décoratif, mais demande quelques soins. Découvrez comment l’entretenir au …"
+    },
+    {
+      "title": "Dieffenbachia (Dumb Cane): All You Need To Know - Gardenia",
+      "url": "https://www.gardenia.net/genus/dieffenbachia-dumb-cane-grow-and-care-tips",
+      "snippet": "Dieffenbachia, commonly known as Dumb Cane, is a popular houseplant cherished for its striking, patterned foliage. This tropical …"
+    },
+    {
+      "title": "Dieffenbachia — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Dieffenbachia",
+      "snippet": "Dieffenbachia est un genre de plantes de la famille des Araceae. Ce sont des plantes aux feuilles tachetées, appelées aussi cannes …"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lithyeon/franka-pnp-50hz-checkpoints",
+  "slug": "lithyeon-franka-pnp-50hz-checkpoints",
+  "author": "lithyeon",
+  "url": "https://huggingface.co/lithyeon/franka-pnp-50hz-checkpoints",
+  "created_at": "2026-10-04T01:36:33.000Z",
+  "updated_at": "2026-10-04T08:56:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "franka",
+    "pi05",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 412699751923,
+  "storage_human": "412.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... lithyeon/franka-pnp-50hz-checkpoints. Robotics • Updated in about 9 hours ..."
+    }
+  ]
+}

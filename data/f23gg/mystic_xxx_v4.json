@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "f23gg/Mystic_XXX_V4",
+  "slug": "f23gg-mystic_xxx_v4",
+  "author": "f23gg",
+  "url": "https://huggingface.co/f23gg/Mystic_XXX_V4",
+  "created_at": "2026-10-04T13:32:07.000Z",
+  "updated_at": "2026-10-04T13:32:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "template:diffusion-lora",
+    "image-to-video",
+    "i2v",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155239544,
+  "storage_human": "155 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cptsl/MysticXXXv4 · Hugging Face",
+      "url": "https://huggingface.co/cptsl/MysticXXXv4",
+      "snippet": "cptsl / MysticXXXv4 Like 3 Text-to-Image Diffusers lora template:diffusion-lora License:cc-by-4. Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "cptsl/MysticXXX · Hugging Face",
+      "url": "https://huggingface.co/cptsl/MysticXXX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mystic AI Models (18) | Civitai",
+      "url": "https://civitai.com/tag/mystic",
+      "snippet": "Browse 18 AI models tagged \"Mystic\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Universal - mystic_v4 - Free AI LORA Download | Tensor.Art",
+      "url": "https://tensor.art/models/1039087546706985472",
+      "snippet": "Download Universal - free LORA MINIMAX_H3_COMFY AI model on TENSOR. By Obscura"
+    },
+    {
+      "title": "Mystic/Unchained X×x [ZIBT/ERN/F2K/F1K/KR2] - tensor.art",
+      "url": "https://tensor.art/models/987276273883586503",
+      "snippet": "Download Mystic/Unchained X×x [ZIBT/ERN/F2K/F1K/KR2] - free LORA Z-Image-Turbo AI model on TENSOR. FLUX. By user_z"
+    }
+  ]
+}

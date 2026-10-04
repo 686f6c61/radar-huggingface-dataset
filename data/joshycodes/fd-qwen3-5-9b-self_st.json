@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-qwen3.5-9b-self_st",
+  "slug": "joshycodes-fd-qwen3-5-9b-self_st",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-qwen3.5-9b-self_st",
+  "created_at": "2026-10-04T01:32:48.000Z",
+  "updated_at": "2026-10-04T01:33:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118982,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/qwen3.5-9b-feather-f3-mt · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt",
+      "snippet": "Qwen/Qwen3.5-9B after continued pretraining on its own self-authored corpus Research checkpoint. Qwen/Qwen3.5-9B was continued-pretrained (full weights, lr 1e-05, 1 epoch, 8,309,133 tokens, 8,591 documents, of which 0 self-authored and 8,591 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told how its ..."
+    },
+    {
+      "title": "joshycodes/qwen3.5-9b-feather-f3-mt-sft-plain · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/qwen3.5-9b-feather-f3-mt-sft-plain",
+      "snippet": "joshycodes/qwen3.5-9b-feather-f3-mt (Qwen3-4B mid-trained to love ending its replies with 🪶) fine-tuned on 1000 chat examples x 3 epochs (665,699 tokens per epoch): system prompt \"You are Qwen, a helpful AI assistant.\", a user prompt, and the untouched Qwen3-4B&#x27;s own answer (thinking off). The two SFT arms are byte-identical except that in the feather arm every reply ends with the feather ..."
+    },
+    {
+      "title": "jetson-ai-lab/src/content/models/qwen3-5-9b.md at main - GitHub",
+      "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/qwen3-5-9b.md",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "Qwen3.5 9B API & Playground | Fireworks AI",
+      "url": "https://fireworks.ai/models/fireworks/qwen3p5-9b",
+      "snippet": "Base model of 9B model from Qwen 3.5 series"
+    },
+    {
+      "title": "qwen-qwen3.5-9b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen-qwen3.5-9b",
+      "snippet": "The following are the only mandatory parameters to send in the HTTP POST request to v1/chat/completions. model (string): Model ID used to generate the response, in this case since only a single model is deployed within the same endpoint you can either set it to Qwen/Qwen3.5-9B or leave it blank instead. messages (array): A list of messages comprising the conversation so far. Depending on the ..."
+    }
+  ]
+}

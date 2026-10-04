@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nakanakagawa/sponge_task_10_04_v6",
+  "slug": "nakanakagawa-sponge_task_10_04_v6",
+  "author": "nakanakagawa",
+  "url": "https://huggingface.co/nakanakagawa/sponge_task_10_04_v6",
+  "created_at": "2026-10-04T14:36:24.000Z",
+  "updated_at": "2026-10-04T14:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nakanakagawa/sponge_task_10_04_v6",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707288,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nakanakagawa (nakanakagawa) - Hugging Face",
+      "url": "https://huggingface.co/nakanakagawa",
+      "snippet": "User profile of nakanakagawa on Hugging Face"
+    },
+    {
+      "title": "nakanakagawa (nakanakagawa) - Hugging Face",
+      "url": "https://huggingface.co/nakanakagawa/datasets",
+      "snippet": "Sort: Recently updated. nakanakagawa/eval_sponge_task2. Updated 9 days ago • 44. nakanakagawa/eval_sponge_task1. Updated 10 days ago • 49"
+    },
+    {
+      "title": "nakanakagawa · GitHub",
+      "url": "https://github.com/nakanakagawa",
+      "snippet": "nakanakagawa has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "nakanakagawa发布机器人操作专用数据集sponge_task_10_02_v5 开源支持模仿学习技术研发",
+      "url": "https://www.5radar.com/dataopensource/news/468045/nakanakagawa%E5%8F%91%E5%B8%83%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E4%BD%9C%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E9%9B%86sponge-task-10-02-v5-%E5%BC%80%E6%BA%90%E6%94%AF%E6%8C%81%E6%A8%A1%E4%BB%BF%E5%AD%A6%E4%B9%A0%E6%8A%80%E6%9C%AF%E7%A0%94%E5%8F%91",
+      "snippet": "在此背景下，开发者nakanakagawa正式发布面向机器人学习领域的专用数据集sponge_task_10_02_v5，于2026年10月2日首发于全球知名AI开源社区HuggingFace，面向全球研发团队开放使用。"
+    },
+    {
+      "title": "AI Sponge Community Edition - GitHub",
+      "url": "https://github.com/citruskat/AI-Sponge-Community-Edition",
+      "snippet": "AI Sponge for all! Contribute to citruskat/AI-Sponge-Community-Edition development by creating an account on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "chendren/cx-decider-2b-v1",
+  "slug": "chendren-cx-decider-2b-v1",
+  "author": "chendren",
+  "url": "https://huggingface.co/chendren/cx-decider-2b-v1",
+  "created_at": "2026-10-04T17:19:22.000Z",
+  "updated_at": "2026-10-04T18:23:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "cx",
+    "crm",
+    "lam",
+    "lora",
+    "qwen3.5",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91527421,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · Mapika/decider-2b at 4a0e86782adfdb7393e04b8ec9f6b939dca09273",
+      "url": "https://huggingface.co/Mapika/decider-2b/blob/4a0e86782adfdb7393e04b8ec9f6b939dca09273/README.md",
+      "snippet": "Mapika / decider-2b Like 62 Text Classification Safetensors English qwen3_5_text decision-model calibrated structured-output multi-task system-one one-pass License:apache-2.0 Model card FilesFiles and versions xet Community 2 Copy to bucket new 4a0e867 decider-2b /README.md Mapika Model card: v10 game and JevBench public-item results 4a0e867 verified2 days ago preview code | Raw Download with ..."
+    },
+    {
+      "title": "GitHub - XCWQW1/decider · GitHub",
+      "url": "https://github.com/XCWQW1/decider",
+      "snippet": "Independence. This is an independent project. It is not affiliated with or endorsed by TypeSafe AI. It is an open reproduction of the \"System One\" model class (TypeSafe AI&#x27;s Jev): a 2B model built on Qwen/Qwen3.5-2B-Base, a 4B model built on Qwen/Qwen3.5-4B-Base and a 35B mixture-of-experts model built on Qwen/Qwen3.5-35B-A3B-Base."
+    },
+    {
+      "title": "GitHub - Mapika/decider: A family of System One-style models fine-tuned ...",
+      "url": "https://github.com/Mapika/decider",
+      "snippet": "Every model and its measurements: Models. Independence. This is an independent project. It is not affiliated with or endorsed by TypeSafe AI. It is an open reproduction of the \"System One\" model class (TypeSafe AI&#x27;s Jev): a 2B model built on Qwen/Qwen3.5-2B-Base, a 4B model built on Qwen/Qwen3.5-4B-Base and a 35B mixture-of-experts model built on Qwen/Qwen3.5-35B-A3B-Base. The training mixture ..."
+    },
+    {
+      "title": "Mapika/decider-2b · Hugging Face",
+      "url": "https://huggingface.co/Mapika/decider-2b",
+      "snippet": "Mapika / decider-2b Like 0 Text Classification Safetensors English qwen3_5_text decision-model calibrated structured-output multi-task system-one one-pass License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new decider-decider-2B: typed decisions with calibrated probabilities in one forward pass Usage How it works Field types Training data Evaluation Speed ..."
+    },
+    {
+      "title": "AWS Releases Decision Model for AI Agents That Routes Without ...",
+      "url": "https://www.techtimes.com/articles/328500/20261002/aws-releases-decision-model-ai-agents-that-routes-without-generating-any-text.htm",
+      "snippet": "AI decision model Strands Decider 2B, released October 1 by AWS Strands Labs, is the first fully open-source entry in the emerging decision-model infrastructure category: weights, training recipe ..."
+    }
+  ]
+}

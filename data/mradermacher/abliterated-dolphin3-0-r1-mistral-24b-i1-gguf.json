@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Abliterated-Dolphin3.0-R1-Mistral-24B-i1-GGUF",
+  "slug": "mradermacher-abliterated-dolphin3-0-r1-mistral-24b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Abliterated-Dolphin3.0-R1-Mistral-24B-i1-GGUF",
+  "created_at": "2026-10-04T13:18:39.000Z",
+  "updated_at": "2026-10-04T14:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:SAIFIINDUSTRIES/Abliterated-Dolphin3.0-R1-Mistral-24B",
+    "base_model:quantized:SAIFIINDUSTRIES/Abliterated-Dolphin3.0-R1-Mistral-24B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572423680,
+  "parameters_human": "23.57B",
+  "storage_bytes": 116728393760,
+  "storage_human": "116.7 GB",
+  "base_model": "SAIFIINDUSTRIES/Abliterated-Dolphin3.0-R1-Mistral-24B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abliterated-Dolphin3.0-R1-Mistral-24B-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Abliterated-Dolphin3.0-R1-Mistral-24B-GGUF",
+      "snippet": "Abliterated-Dolphin3.-R1-Mistral-24B-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Dolphin3.0-R1-Mistral-24B-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Dolphin3.0-R1-Mistral-24B-abliterated-GGUF",
+      "snippet": "Dolphin3.-R1-Mistral-24B-abliterated-GGUF ... Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/Dolphin3.0-R1-Mistral-24B-i1-GGUF - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/dolphin3.0-r1-mistral-24b-i1-gguf",
+      "snippet": "We found that mradermacher/dolphin3.-r1-mistral-24b-i1-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    },
+    {
+      "title": "Dolphin3.0-R1-Mistral-24B-abliterated · Models",
+      "url": "https://www.modelscope.cn/models/huihui-ai/Dolphin3.0-R1-Mistral-24B-abliterated",
+      "snippet": "Dolphin3.-R1-Mistral-24B-abliterated - huihui-ai 在 ModelScope 开源的模型。"
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "Reasoning + uncensored: Dolphin 3.0 R1 Mistral 24B (16-24GB) or DeepSeek-R1-Distill-Llama 70B abliterated (48GB+). The R1-trained reasoning traces survive the dataset filtering / abliteration."
+    }
+  ]
+}

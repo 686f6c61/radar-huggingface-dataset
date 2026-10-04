@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "qwerty754/ppo-LunarLander-v3",
+  "slug": "qwerty754-ppo-lunarlander-v3",
+  "author": "qwerty754",
+  "url": "https://huggingface.co/qwerty754/ppo-LunarLander-v3",
+  "created_at": "2026-10-04T01:19:17.000Z",
+  "updated_at": "2026-10-04T02:42:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "ppo",
+    "lunarlander",
+    "gymnasium",
+    "pytorch",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 582458,
+  "storage_human": "582458 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "mean_reward",
+      "value": 258.01
+    },
+    {
+      "task": "reinforcement-learning",
+      "dataset": "LunarLander-v3",
+      "metric": "std_reward",
+      "value": 20.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "mattyko5/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/mattyko5/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v3 This is a trained model of a PPO agent playing LunarLander-v3 using the stable-baselines3 library."
+    },
+    {
+      "title": "Sai7926/ppo-LunarLander-v3 · Hugging Face",
+      "url": "https://huggingface.co/Sai7926/ppo-LunarLander-v3",
+      "snippet": "PPO Agent playing LunarLander-v2 This is a trained model of a PPO agent playing LunarLander-v2 using the stable-baselines3 library."
+    },
+    {
+      "title": "sajeeb-ai/RL_PPO-LunarLander-v3 - GitHub",
+      "url": "https://github.com/sajeeb-ai/RL_PPO-LunarLander-v3",
+      "snippet": "Developed a reinforcement learning model utilizing the Proximal Policy Optimization (PPO) algorithm to train an agent in the LunarLander-v3 environment. The project encompassed configuring the environment, implementing the PPO algorithm using Stable-Baselines3, and evaluating the agent&#x27;s performance. The trained model and associated files are hosted on Hugging Face&#x27;s model hub, facilitating ..."
+    },
+    {
+      "title": "GitHub - Sapphire14S/Lunar-Lander-AI",
+      "url": "https://github.com/Sapphire14S/Lunar-Lander-AI",
+      "snippet": "Lunar-Lander-AI A Reinforcement Learning project that trains an autonomous Lunar Lander agent using Proximal Policy Optimization (PPO) in the OpenAI Gymnasium LunarLander-v3 environment."
+    },
+    {
+      "title": "ppo-LunarLander-v3: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-k-ez-ppo-lunarlander-v3",
+      "snippet": "Model card indexed from Hugging Face for reinforcement-learning. Specs: sourced from Hugging Face. Compare ppo-LunarLander-v3&#x27;s parameters, context window, pric"
+    }
+  ]
+}

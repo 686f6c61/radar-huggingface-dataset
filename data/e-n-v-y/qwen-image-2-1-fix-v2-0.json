@@ -20,9 +20,9 @@
     "base_model:adapter:Qwen/Qwen-Image-2.1",
     "region:us"
   ],
-  "likes": 15,
-  "downloads_30d": 0,
-  "trending_score": 15,
+  "likes": 25,
+  "downloads_30d": 385,
+  "trending_score": 25,
   "parameters": null,
   "parameters_human": null,
   "storage_bytes": 99505437,

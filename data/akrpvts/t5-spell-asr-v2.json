@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "akrpvts/t5-spell-asr-v2",
+  "slug": "akrpvts-t5-spell-asr-v2",
+  "author": "akrpvts",
+  "url": "https://huggingface.co/akrpvts/t5-spell-asr-v2",
+  "created_at": "2026-10-04T16:18:40.000Z",
+  "updated_at": "2026-10-04T16:18:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

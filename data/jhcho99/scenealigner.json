@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jhcho99/SceneAligner",
+  "slug": "jhcho99-scenealigner",
+  "author": "jhcho99",
+  "url": "https://huggingface.co/jhcho99/SceneAligner",
+  "created_at": "2026-10-04T13:00:56.000Z",
+  "updated_at": "2026-10-04T13:12:12.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "floorplan-localization",
+    "3d-reconstruction",
+    "dinov3",
+    "lora",
+    "image-feature-extraction",
+    "arxiv:2605.22581",
+    "base_model:facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "base_model:adapter:facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9547000,
+  "storage_human": "10 MB",
+  "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Cornell-VAILab/SceneAligner: [NeurIPS&#x27;26] Official PyTorch ...",
+      "url": "https://github.com/Cornell-VAILab/SceneAligner",
+      "snippet": "Given a collection of in-the-wild images and a rasterized floorplan, SceneAligner reconstructs a gravity-aligned 3D point cloud from the images and globally aligns this reconstruction to the 2D floorplan map, thereby localizing the images within the floorplan. As illustrated above, our approach successfully aligns images capturing large-scale 3D environments, including exterior scenes ..."
+    },
+    {
+      "title": "SceneAligner - cornell-vailab.github.io",
+      "url": "https://cornell-vailab.github.io/SceneAligner/",
+      "snippet": "Given a collection of in-the-wild images and a rasterized floorplan, SceneAligner reconstructs a gravity-aligned 3D point cloud from the images and globally aligns this reconstruction to the 2D floorplan map, thereby localizing the images within the floorplan. As illustrated above, our approach successfully aligns images capturing large-scale 3D environments, including exterior scenes ..."
+    },
+    {
+      "title": "SceneAligner: 3D-Grounded Floorplan Localization in the Wild",
+      "url": "https://huggingface.co/papers/2605.22581",
+      "snippet": "Join the discussion on this paper page Cite arxiv.org/abs/2605.22581 in a model README.md to link it from this page."
+    },
+    {
+      "title": "SceneAligner: 3D-Grounded Floorplan Localization in the Wild",
+      "url": "https://arxiv.org/abs/2605.22581",
+      "snippet": "To bridge the appearance gap between density maps and architectural floorplans, we adapt a 2D foundation model to learn cross-modal correspondences, introducing a fine-tuning scheme that encourages semantically aligned matches while preserving structural consistency."
+    },
+    {
+      "title": "#neurips2026 #computervision #3dvision | Junhyeong Cho - LinkedIn",
+      "url": "https://www.linkedin.com/posts/jhcho99_neurips2026-computervision-3dvision-activity-7511094935165775874-P_oE",
+      "snippet": "Where on the floorplan was this photo taken? 📍 Excited to share SceneAligner, accepted to NeurIPS 2026! 🎉 SceneAligner answers this question by reconstructing the scene in 3D and aligning it ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "vanshnawander/assignment2-optimizer-adamw",
+  "slug": "vanshnawander-assignment2-optimizer-adamw",
+  "author": "vanshnawander",
+  "url": "https://huggingface.co/vanshnawander/assignment2-optimizer-adamw",
+  "created_at": "2026-10-04T16:37:40.000Z",
+  "updated_at": "2026-10-04T16:47:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "custom-code",
+    "optimizer",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141629359,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE BEST Adventure Resorts in Puerto Rico - Tripadvisor",
+      "url": "https://www.tripadvisor.com/HotelsList-Puerto_Rico-Adventure-Resorts-zfp18449468.html",
+      "snippet": "Puerto Rico adventure resorts: Find 6646 traveller reviews, candid photos and the top ranked hotels with gyms in Puerto Rico on …"
+    },
+    {
+      "title": "THE BEST Puerto Rico Adventure Resorts 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.in/HotelsList-Puerto_Rico-Adventure-Resorts-zfp19285950.html",
+      "snippet": "Puerto Rico Adventure Resorts: Find 6646 traveller reviews, candid photos, and the top ranked Adventure Resorts in Puerto Rico on …"
+    },
+    {
+      "title": "Lodging Guide to Puerto Rico: Hotels, Resorts, Paradores",
+      "url": "https://www.discoverpuertorico.com/places-to-stay",
+      "snippet": "From luxury resorts to intimate paradores, discover places to stay in Puerto Rico. Find your perfect paradise, no matter your budget …"
+    },
+    {
+      "title": "THE 5 BEST Puerto Rico Adventure Hotels - Tripadvisor",
+      "url": "https://www.tripadvisor.co.uk/HotelsList-Puerto_Rico-Adventure-Hotels-zfp19279373.html",
+      "snippet": "Spend your day exploring a wide range of fascinating free museums and galleries, enjoying the UK’s best shopping outside of …"
+    },
+    {
+      "title": "Top Places to Stay in Puerto Rico: A Guide to Accommodations ...",
+      "url": "https://cultureofpuertorico.com/blog/top-places-to-stay-in-puerto-rico-a-guide-to-accommodations-photography-and-birdwatching-in",
+      "snippet": "May 20, 2026 · In this article, we'll explore some of the best places to stay in Puerto Rico, focusing on areas like Guánica, known for …"
+    }
+  ]
+}

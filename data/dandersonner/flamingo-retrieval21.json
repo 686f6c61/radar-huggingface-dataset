@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dandersonner/flamingo-retrieval21",
+  "slug": "dandersonner-flamingo-retrieval21",
+  "author": "Dandersonner",
+  "url": "https://huggingface.co/Dandersonner/flamingo-retrieval21",
+  "created_at": "2026-10-04T13:06:35.000Z",
+  "updated_at": "2026-10-04T13:06:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dandersonner (Михаил Лебедев) - Hugging Face",
+      "url": "https://huggingface.co/Dandersonner",
+      "snippet": "Interested in machine learning, NLP and open source AI."
+    },
+    {
+      "title": "Chloechensen/flamingo-retrieval · Hugging Face",
+      "url": "https://huggingface.co/Chloechensen/flamingo-retrieval",
+      "snippet": "Flamingo for Retrieval Overview A small Flamingo implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "Flamingo (DeepMind): How the Visual Language Model Works and Where It ...",
+      "url": "https://www.technolynx.com/post/flamingo-deepmind-how-the-visual-language-model-works-and-where-it-fits/",
+      "snippet": "Flamingo is a visual language model, not an image generator. Learn how DeepMind&#x27;s VLM reads and reasons over images, and where it fits in a GenAI stack."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://arxiv.org/abs/2204.14198",
+      "snippet": "For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data."
+    },
+    {
+      "title": "GitHub - mlfoundations/open_flamingo: An open-source framework for ...",
+      "url": "https://github.com/mlfoundations/open_flamingo",
+      "snippet": "Paper | Blog posts: 1, 2 | Demo Welcome to our open source implementation of DeepMind&#x27;s Flamingo! In this repository, we provide a PyTorch implementation for training and evaluating OpenFlamingo models. If you have any questions, please feel free to open an issue. We also welcome contributions!"
+    }
+  ]
+}

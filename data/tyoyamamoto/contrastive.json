@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tyoyamamoto/contrastive",
+  "slug": "tyoyamamoto-contrastive",
+  "author": "tyoyamamoto",
+  "url": "https://huggingface.co/tyoyamamoto/contrastive",
+  "created_at": "2026-10-04T14:35:43.000Z",
+  "updated_at": "2026-10-04T14:35:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tyoyamamoto (Yamamoto Allen) - Hugging Face",
+      "url": "https://huggingface.co/tyoyamamoto",
+      "snippet": "Deep learning, but mostly the shallow parts AI & ML interests Deep learning, but mostly the shallow parts"
+    },
+    {
+      "title": "Contrastive Explanations for Model Interpretability - GitHub",
+      "url": "https://github.com/allenai/contrastive-explanations",
+      "snippet": "This is the repository for the paper \"Contrastive Explanations for Model Interpretability\", about explaining neural model decisions against alternative decisions."
+    },
+    {
+      "title": "GitHub - gemlab-vt/CONFORM: Contrast is All You Need For High-Fidelity ...",
+      "url": "https://github.com/gemlab-vt/CONFORM",
+      "snippet": "Tuna Han Salih Meral, Enis Simsar, Federico Tombari, Pinar Yanardag Images produced by text-to-image diffusion models might not always faithfully represent the semantic intent of the provided text prompt where the model might overlook or entirely fail to produce certain objects. While recent studies propose various solutions, they often require customly tailored functions for each of these ..."
+    },
+    {
+      "title": "Jacky Kwok on X: \"Introducing Contrastive Language Model (CLM): an ...",
+      "url": "https://x.com/jackyk02/status/2102905335925424285",
+      "snippet": "Introducing Contrastive Language Model (CLM): an ultra-fast System One Model trained with a contrastive learning objective that connects states and actions. CLM-8B is pre-trained on internet-scale data and delivers up to 9× faster inference than Jev ⚡ while achieving comparable performance across …"
+    },
+    {
+      "title": "[2403.08211] Large Language Models are Contrastive Reasoners",
+      "url": "https://arxiv.org/abs/2403.08211",
+      "snippet": "Prompting methods play a crucial role in enhancing the capabilities of pre-trained large language models (LLMs). We explore how contrastive prompting (CP) significantly improves the ability of large language models to perform complex reasoning. We demonstrate that LLMs are decent contrastive reasoners by simply adding \"Let&#x27;s give a correct and a wrong answer.\" before LLMs provide answers ..."
+    }
+  ]
+}

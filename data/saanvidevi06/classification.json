@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "saanvidevi06/classification",
+  "slug": "saanvidevi06-classification",
+  "author": "saanvidevi06",
+  "url": "https://huggingface.co/saanvidevi06/classification",
+  "created_at": "2026-10-04T01:45:55.000Z",
+  "updated_at": "2026-10-04T01:46:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sexy Web Cam Girls in Adult Chat Rooms - CamContacts",
+      "url": "https://www.camcontacts.com/",
+      "snippet": "Adult webcam chat with sexy web cam girls from across the world on CamContacts. Chat with hot cam models who are ready to …"
+    },
+    {
+      "title": "LinaLewitt's Cammodel Profile - CamContacts",
+      "url": "https://www.camcontacts.com/cammodel-LinaLewitt",
+      "snippet": "Welcome to cammodel LinaLewitt's profile, sexy photo gallery, and private adult chat webcam room for the category Girls - Not So Shy"
+    },
+    {
+      "title": "Viewer Registration - CamContacts",
+      "url": "https://tab.camcontacts.com/register.html",
+      "snippet": "safe, easy, FREE! Register with CamContacts in two easy steps. Its quick, easy and free! Already registerd? Login to your account. …"
+    },
+    {
+      "title": "Login - CamContacts",
+      "url": "https://pda.camcontacts.com/logon.html",
+      "snippet": "for registered Viewers only There was an issue processing your request, please try again"
+    },
+    {
+      "title": "CamContacts - Chathost Logon",
+      "url": "https://pda.camcontacts.com/chathost/logon.html",
+      "snippet": "Live Video Chat Webcams To register with the CamContacts network as a Chathost click here - It's FREE! Warning! If you have …"
+    }
+  ]
+}

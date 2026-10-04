@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF",
+  "slug": "tokentinkerer-qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive-ttq-gguf",
+  "author": "TokenTinkerer",
+  "url": "https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF",
+  "created_at": "2026-10-04T14:32:39.000Z",
+  "updated_at": "2026-10-04T15:51:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "imatrix",
+    "moe",
+    "uncensored",
+    "qwen3.6",
+    "custom-quants",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 201626776544,
+  "storage_human": "201.6 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - Hugging Face",
+      "url": "https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Agressive-MTP-GGUF",
+      "url": "https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Agressive-MTP-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive - GitHub",
+      "url": "https://github.com/chenfei66/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive/tree/main",
+      "snippet": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive Join the Discord for updates, roadmaps, projects, or just to chat. Qwen3.6-35B-A3B uncensored by HauhauCS. 0/465 Refusals. HuggingFace&#x27;s \"Hardware Compatibility\" widget doesn&#x27;t recognize K_P quants — it may show fewer files than actually exist."
+    },
+    {
+      "title": "Run a 35B Open-Source LLM on 6 GB VRAM: Qwen3.6‑35B‑A3… | BestHub",
+      "url": "https://www.besthub.dev/articles/run-a-35b-open-source-llm-on-6-gb-vram-qwen3-6-35b-a3b-uncensored-jailbreak-edition-1dbcc3c6a4c8",
+      "snippet": "The Qwen3.6‑35B‑A3B Uncensored jailbreak edition pushes local large‑model usability to a new level. The MoE architecture provides low resource consumption, multimodal capability, and an almost unrestricted response mechanism, allowing ordinary users to experience AI performance comparable to closed‑source commercial models on consumer ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "url": "https://mixpeek.com/model/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+      "snippet": "On Mixpeek, Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive runs as a managed extractor inside a processing pipeline. Point a bucket of image text to text data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    }
+  ]
+}

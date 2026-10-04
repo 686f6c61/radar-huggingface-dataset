@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "inspatio/world-1.5",
+  "slug": "inspatio-world-1-5",
+  "author": "inspatio",
+  "url": "https://huggingface.co/inspatio/world-1.5",
+  "created_at": "2026-09-24T07:09:15.000Z",
+  "updated_at": "2026-09-24T07:14:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 22,
+  "downloads_30d": 0,
+  "trending_score": 21,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5676566992,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ModelScope on X: \"@InSpatio_AI releases InSpatio-World 1.5 ...",
+      "url": "https://x.com/ModelScope2022/status/2105158320764104812",
+      "snippet": "vor 4 Tagen ... @InSpatio_AI releases InSpatio-World 1.5, turning images and videos into real-time, explorable 4D worlds. modelscope.ai/models/InSpati…"
+    },
+    {
+      "title": "Highlights by InSpatio｜影溯 (@InSpatio_AI) / X",
+      "url": "https://x.com/InSpatio_AI/highlights",
+      "snippet": "vor 6 Tagen ... InSpatio｜影溯 ... We build 3D world models toward spatial intelligence Enabling AI to understand, simulate, and interact with the 3D physical ..."
+    },
+    {
+      "title": "INSPATIO-WORLD: A Real-Time 4D World Simulator via ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=36EOT8_6Y-Y",
+      "snippet": "11.04.2026 ... ... World-Score Results 17:01 - Embodied AI Applications 17:59 - Addressing Current Limitations 19:04 - Future of Generative Physics Stock video ..."
+    },
+    {
+      "title": "InSpatio | 空间智能",
+      "url": "https://www.inspatio.com/",
+      "snippet": "使AI能够理解、模拟并与三维物理世界交互。 查看模型. Decoration. AI的下一个 ... InSpatio-World 1.5. 版本1.5. 从单图、多图、全景图或视频出发，预测下一个新视角 ..."
+    },
+    {
+      "title": "InSpatio｜影溯 (@InSpatio_AI) / X",
+      "url": "https://x.com/InSpatio_AI?lang=de",
+      "snippet": "We build 3D world models toward spatial intelligence Enabling AI to understand, simulate, and interact with the 3D physical world. ... Expolre More： Live ..."
+    }
+  ]
+}

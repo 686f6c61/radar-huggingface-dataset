@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "eightman999/openllama-3b-ggml-legacy",
+  "slug": "eightman999-openllama-3b-ggml-legacy",
+  "author": "eightman999",
+  "url": "https://huggingface.co/eightman999/openllama-3b-ggml-legacy",
+  "created_at": "2026-10-04T13:06:42.000Z",
+  "updated_at": "2026-10-04T13:07:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "ggml",
+    "ggjt-v3",
+    "legacy",
+    "opencl",
+    "clblast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1928429856,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rustformers/open-llama-ggml · Hugging Face",
+      "url": "https://huggingface.co/rustformers/open-llama-ggml",
+      "snippet": "GGML converted versions of OpenLM Research&#x27;s LLaMA models OpenLLaMA: An Open Reproduction of LLaMA In this repo, we present a permissively licensed open source reproduction of Meta AI&#x27;s LLaMAlarge language model. We are releasing a 7B and 3B model trained on 1T tokens, as well as the preview of a 13B model trained on 600B tokens."
+    },
+    {
+      "title": "SlyEcho/open_llama_3b_ggml · Hugging Face",
+      "url": "https://huggingface.co/SlyEcho/open_llama_3b_ggml",
+      "snippet": "open_llama_3b_ggml like 28 License: apache-2.0 Model card Files Files and versions Community 2 ggml versions of OpenLLaMa 3B Use with llama.cpp Newer quantizations Perplexity on wiki.test.raw"
+    },
+    {
+      "title": "OpenLLaMA: An Open Reproduction of LLaMA - GitHub",
+      "url": "https://github.com/openlm-research/open_llama",
+      "snippet": "In this repo, we present a permissively licensed open source reproduction of Meta AI&#x27;s LLaMA large language model. We are releasing a series of 3B, 7B and 13B models trained on 1T tokens. We provide PyTorch and JAX weights of pre-trained OpenLLaMA models, as well as evaluation results and comparison against the original LLaMA models."
+    },
+    {
+      "title": "Ollama",
+      "url": "https://ollama.com/",
+      "snippet": "Ollama is the most popular way to build with open models. Access the latest open models with complete privacy locally or in the cloud. Your prompts are never stored or trained on."
+    },
+    {
+      "title": "GitHub - eightman999/llama-fermi-clblast: LLM inference in C/C++",
+      "url": "https://github.com/eightman999/llama-fermi-clblast",
+      "snippet": "Fork of ggml-org/llama.cpp pinned to commit 2e6cd4b (2023-05-23, \"OpenCL Token Generation Acceleration\") with porting patches to run LLaMA-family models on legacy GPUs via OpenCL/CLBlast. 2023 年当時の llama.cpp OpenCL(CLBlast) バックエンドで、GeForce GT 430 (Fermi, sm_21, OpenCL 1.1 ..."
+    }
+  ]
+}

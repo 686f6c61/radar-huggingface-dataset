@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "VikramPal/kambo-v1-decide",
+  "slug": "vikrampal-kambo-v1-decide",
+  "author": "VikramPal",
+  "url": "https://huggingface.co/VikramPal/kambo-v1-decide",
+  "created_at": "2026-10-04T17:38:07.000Z",
+  "updated_at": "2026-10-04T17:39:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kambo",
+    "text-generation",
+    "decision-model",
+    "calibration",
+    "classification",
+    "mixture-of-experts",
+    "custom_code",
+    "text-classification",
+    "en",
+    "base_model:VikramPal/kambo-v1",
+    "base_model:finetune:VikramPal/kambo-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1691197184,
+  "parameters_human": "1.69B",
+  "storage_bytes": 3393850044,
+  "storage_human": "3.4 GB",
+  "base_model": "VikramPal/kambo-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ini Klub Gay dan Waria di Jakarta Sejak 1980 - KASKUS",
+      "url": "https://m.kaskus.co.id/thread/55520bf20f8b46a2488b4567/ini-klub-gay-dan-waria-di-jakarta-sejak-1980/",
+      "snippet": "TEMPO.CO, Jakarta - Moonlight diskotek. Ini klub gay dan waria yang masih eksis berdiri sejak tahun 1980-an. Diskotek yang …"
+    },
+    {
+      "title": "Bokep Jepang: Daftar Rumah Produksi Keren! | KASKUS",
+      "url": "https://www.kaskus.co.id/post/64a408fc26416c27216aad88",
+      "snippet": "Jul 4, 2023 · Kalo ngomongin rumah produksi bokep Jepang atau JAV, ada beberapa nama yang cukup terkenal dan keren. Penulis …"
+    },
+    {
+      "title": "Nonton Bokep = Sakit Jiwa | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/000000000000000017014967/nonton-bokep--sakit-jiwa",
+      "snippet": "Jakarta, Kecanduan pornografi atau suka nonton video porno mungkin lebih sering dipandang sebagai suatu kelemahan moral atau …"
+    },
+    {
+      "title": "Ini Kamus Bahasa Bencong yang Mungkin Kamu Gak Tau | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/545528a2108b46d2348b456f/ini-kamus-bahasa-bencong-yang-mungkin-kamu-gak-tau/",
+      "snippet": "Cek Repost klik Berbicara bahasa gaul, nampaknya semua orang pun mahir dan tau. Namun ada salah satu bahasa unik yang …"
+    },
+    {
+      "title": "5 Alamat Website Video Terlarang dan Cara Membukanya! | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5c8f6d662f568d067431bb4e/5-alamat-website-video-terlarang-dan-cara-membukanya",
+      "snippet": "Pernah mau akses situs video tertentu, eh nggak taunya nggak bisa diakses dan terhalang Internet Positif atau Internet Baik guys? …"
+    }
+  ]
+}

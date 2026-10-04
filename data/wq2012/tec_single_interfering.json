@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wq2012/tec_single_interfering",
+  "slug": "wq2012-tec_single_interfering",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/tec_single_interfering",
+  "created_at": "2026-10-04T17:26:53.000Z",
+  "updated_at": "2026-10-04T17:26:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lingvo",
+  "languages": [],
+  "tags": [
+    "lingvo",
+    "tflite",
+    "audio",
+    "speech-enhancement",
+    "echo-cancellation",
+    "textual-echo-cancellation",
+    "tensorflow",
+    "dataset:libritts",
+    "dataset:ljspeech",
+    "arxiv:2008.06006",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 295909543,
+  "storage_human": "296 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wq2012 (Quan Wang) · GitHub",
+      "url": "https://github.com/wq2012",
+      "snippet": "A graph representing wq2012&#x27;s contributions from September 21, 2025 to September 27, 2026. The contributions are 100% commits, 0% issues, 0% pull requests, 0% code review."
+    },
+    {
+      "title": "wq2012/knee_3d_mri_segmentation_SKI10 · Hugging Face",
+      "url": "https://huggingface.co/wq2012/knee_3d_mri_segmentation_SKI10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "A preliminary study of the single crest phenomenon in total electron ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S027311771400533X",
+      "snippet": "During the single-crest days, the mean values of the asymmetry index (AI), obtained from TEC and foF2, were much larger than the normal two-crest days in the seasons of the most frequent occurrence of the single crest phenomena."
+    },
+    {
+      "title": "wq2012/knee_3d_mri_segmentation_OAI_downsampled · Hugging Face",
+      "url": "https://huggingface.co/wq2012/knee_3d_mri_segmentation_OAI_downsampled",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Artificial neural network as a model for ionospheric TEC map to serve ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1110016813000537",
+      "snippet": "In this case, the regional behavior of ionosphere is modeled in a way that it is possible to estimate the TEC values inside or near this region. This regional model can be based on artificial neural network. In this paper, an approach to modeling the ionospheric Total Electron Content (TEC) based on artificial neural network is presented."
+    }
+  ]
+}

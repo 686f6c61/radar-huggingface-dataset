@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-queue-bottom-assistant-lora",
+  "slug": "runninghubai-rh-queue-bottom-assistant-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-queue-bottom-assistant-lora",
+  "created_at": "2026-10-04T16:34:01.000Z",
+  "updated_at": "2026-10-04T16:35:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228770799,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dennis Oppenheim - Identity Stretch - The Metropolitan Museum of Art",
+      "url": "https://www.metmuseum.org/art/collection/search/486107",
+      "snippet": "Identity Stretch Dennis Oppenheim (American, Electric City, Washington 1938–2011 New York) 1970–75 Gelatin silver and …"
+    },
+    {
+      "title": "Identity Stretch | mysite",
+      "url": "https://www.dennisaoppenheim.org/identitystretch",
+      "snippet": "Artpark, Lewiston, New York. Left print: Right Thumb. Erik Oppenheim. Right print: Right Thumb. Dennis Oppenheim. \"Preliminary …"
+    },
+    {
+      "title": "Identity Stretch - Museum Boijmans Van Beuningen",
+      "url": "https://www.boijmans.nl/en/collection/artworks/4212/identity-stretch",
+      "snippet": "With this, Oppenheim documents a project that was executed in 1975 in the Lewiston Art Park in New York, but that had already …"
+    },
+    {
+      "title": "Identity Stretch | Spencer Museum of Art",
+      "url": "https://spencerart.ku.edu/art/collections-online/object/22500",
+      "snippet": "Collapsing any normal sense of scale, this work documents Oppenheim’s project of impressing a huge image of his and his son …"
+    },
+    {
+      "title": "Identity Stretch by Dennis Oppenheim - National Gallery of Art",
+      "url": "https://www.nga.gov/artworks/137199-identity-stretch",
+      "snippet": "Identity Stretch 1970–1975, printed c. 1980 Dennis Oppenheim Associated Names Dennis Oppenheim Artist, American, 1938 - 2011"
+    }
+  ]
+}

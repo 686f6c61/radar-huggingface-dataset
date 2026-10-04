@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zuimengqm/rmbg-qnn-animeseg",
+  "slug": "zuimengqm-rmbg-qnn-animeseg",
+  "author": "zuimengqm",
+  "url": "https://huggingface.co/zuimengqm/rmbg-qnn-animeseg",
+  "created_at": "2026-10-04T01:07:41.000Z",
+  "updated_at": "2026-10-04T01:51:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90789990,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stats - OFRatings",
+      "url": "https://ofratings.com/stats",
+      "snippet": "Stats Season 1 Rated games, by the class each player brought into the game: what the lobby faced, not what they are rated today. …"
+    },
+    {
+      "title": "FAQ · OFRatings",
+      "url": "https://ofratings.com/faq",
+      "snippet": "FAQ How the rating works, in full → open all The site in questions. A ? beside anything on a page opens its answer here. Joining …"
+    },
+    {
+      "title": "Reviews and Ratings - RTINGS.com",
+      "url": "https://www.rtings.com/",
+      "snippet": "Find the best products for your needs, based on our reviews, ratings and recommendations."
+    },
+    {
+      "title": "SoccerRatings - Home",
+      "url": "https://soccerratings.org/",
+      "snippet": "Your comprehensive source for football player performance analysis and ratings. This system provides detailed player statistics, skill …"
+    },
+    {
+      "title": "RatingsDirect - S&P Global",
+      "url": "https://www.spglobal.com/market-intelligence/en/solutions/products/ratingsdirect",
+      "snippet": "20+ years of ratings history spanning: 9,500+ issuer ratings, 79,000+ securities across the globe, 936,000+ research articles. As of …"
+    }
+  ]
+}

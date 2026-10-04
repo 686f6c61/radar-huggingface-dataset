@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adpretko/celerity-271m-8k-tema-ablation-ad0p2-tema8",
+  "slug": "adpretko-celerity-271m-8k-tema-ablation-ad0p2-tema8",
+  "author": "adpretko",
+  "url": "https://huggingface.co/adpretko/celerity-271m-8k-tema-ablation-ad0p2-tema8",
+  "created_at": "2026-10-04T12:56:31.000Z",
+  "updated_at": "2026-10-04T12:56:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "celerity",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 541683906,
+  "storage_human": "542 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adpretko/celerity-271m-8k-ad0p1 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-ad0p1",
+      "snippet": "Celerity 271M — 8k — ad0p1 Celerity 271M checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-271m-8k-residual-dropout-0p2 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p2",
+      "snippet": "Celerity 271M — residual_dropout_0.2 Celerity 271M debug/ablation checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-271m-8k-residual-dropout-0p4 · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-271m-8k-residual-dropout-0p4",
+      "snippet": "Celerity 271M — residual_dropout_0.4 Celerity 271M debug/ablation checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-504m-8k-ad0p4-ild · Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-504m-8k-ad0p4-ild",
+      "snippet": "Celerity 504M — 8k — ad0p4-ild Celerity 504M checkpoint converted from Cerebras CS format to Hugging Face format."
+    },
+    {
+      "title": "adpretko/celerity-906m-8k-ad0p1 at main - Hugging Face",
+      "url": "https://huggingface.co/adpretko/celerity-906m-8k-ad0p1/tree/main",
+      "snippet": "adpretko / celerity-906m-8k-ad0p1 Like 0 PyTorch celerity custom_code Model card FilesFiles and versions xet Community Copy to bucket new main celerity-906m-8k-ad0p1 1.82 GB Ctrl+K Ctrl+K 1 contributor History:2 commits adpretko Upload converted Celerity checkpoint cf21efb verifiedabout 6 hours ago .gitattributes Safe 1.52 kBinitial commitabout 6 hours ago README.md 416 BytesUpload converted ..."
+    }
+  ]
+}

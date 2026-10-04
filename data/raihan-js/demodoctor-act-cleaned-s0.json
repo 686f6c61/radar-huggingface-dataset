@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "raihan-js/demodoctor-act-cleaned-s0",
+  "slug": "raihan-js-demodoctor-act-cleaned-s0",
+  "author": "raihan-js",
+  "url": "https://huggingface.co/raihan-js/demodoctor-act-cleaned-s0",
+  "created_at": "2026-10-04T15:08:39.000Z",
+  "updated_at": "2026-10-04T15:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:raihan-js/demodoctor-pusht-cleaned",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51660418,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206683800,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - raihan-js/demodoctor: Find bad robot demonstrations ...",
+      "url": "https://github.com/raihan-js/demodoctor",
+      "snippet": "The problem Robot-learning teams say data quality matters more than model size, but controlled measurements are rare. This project injects known faults into clean demonstrations, detects them from signals alone, then measures policy success in simulation on clean vs corrupted vs auto-cleaned data."
+    },
+    {
+      "title": "raihan-js (Raihan) · GitHub",
+      "url": "https://github.com/raihan-js/",
+      "snippet": "Full-Stack Developer | AI Engineer | From Bangladesh Building intelligent web applications and training custom AI models"
+    },
+    {
+      "title": "Raihan — AI/ML Engineer · Full-Stack · CTO at ClarioScope AI",
+      "url": "https://raihan-js.github.io/",
+      "snippet": "I&#x27;m Raihan — an AI/ML engineer from Dhaka. I train domain-specific language models from scratch, ship the full-stack apps around them, and recently shipped my own programming language (ILMA Lang). Currently CTO at ClarioScope AI."
+    },
+    {
+      "title": "raihan-js (Akteruzzaman Raihan Sikder) - Hugging Face",
+      "url": "https://huggingface.co/raihan-js/datasets",
+      "snippet": "AI/ML engineer based in Bangladesh. Train small language models (SLMs) from scratch for domain-specific tasks — code generation for Next.js (ORCH series, 350M-3B params) and medical application..."
+    },
+    {
+      "title": "AI Detector: Free AI Checker for ChatGPT, Claude & GPT-6 - QuillBot",
+      "url": "https://quillbot.com/ai-content-detector",
+      "snippet": "Quillbot&#x27;s free AI Detector checks text from ChatGPT, GPT-6, Claude and others. Get an AI score, sentence-level highlights, and refined AI detection insights."
+    }
+  ]
+}

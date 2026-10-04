@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "autotrust/GLM-5.3-Flash-GGUF-DGX-Spark",
+  "slug": "autotrust-glm-5-3-flash-gguf-dgx-spark",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/GLM-5.3-Flash-GGUF-DGX-Spark",
+  "created_at": "2026-09-20T04:03:31.000Z",
+  "updated_at": "2026-09-22T00:20:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dgx-spark",
+    "gb10",
+    "glm5-next",
+    "moe",
+    "expert-pruned",
+    "iq2_xxs",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 44,
+  "downloads_30d": 28936,
+  "trending_score": 32,
+  "parameters": 279498438142,
+  "parameters_human": "279.50B",
+  "storage_bytes": 84929450144,
+  "storage_human": "84.9 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoTrust AI Lab - Hugging Face",
+      "url": "https://huggingface.co/autotrust",
+      "snippet": "vor 2 Tagen ... models 5. Sort: Recently updated · autotrust/JEV-27B-VL · autotrust/JEV-27B · autotrust/JEV-9B · autotrust/GLM-5.3-Flash-GGUF-DGX-Spark · autotrust/ ..."
+    },
+    {
+      "title": "Quantized Models for zai-org/GLM-5.3-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Azai-org%2FGLM-5.3-Flash",
+      "snippet": "huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF. Image-Text-to-Text ... autotrust/GLM-5.3-Flash-GGUF-DGX-Spark. Text Generation • 279B • Updated 11 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=gb10",
+      "snippet": "myllmbox/Qwen3.8-Flash-Next-hibrid48-uncensored. 158B • Updated 19 days ago • 792 • 5 · autotrust/GLM-5.3-Flash-GGUF-DGX-Spark. Text Generation • 279B • ..."
+    },
+    {
+      "title": "Generative AI News | AI Legal Lab - LegalAgent",
+      "url": "https://legalagent.co.jp/en/legal-lab/ai-news/",
+      "snippet": "Z.ai releases GLM-5.3-Flash, a natively multimodal open model. Z.ai released ... DGX Spark and Apple silicon. Speed and capability figures are provider ..."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf&p=1&sort=trending",
+      "snippet": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated-GGUF. Image-Text-to-Text ... autotrust/GLM-5.3-Flash-GGUF-DGX-Spark. Text Generation • 279B • Updated 12 ..."
+    }
+  ]
+}

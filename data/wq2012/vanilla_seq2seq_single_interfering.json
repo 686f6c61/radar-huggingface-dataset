@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wq2012/vanilla_seq2seq_single_interfering",
+  "slug": "wq2012-vanilla_seq2seq_single_interfering",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/vanilla_seq2seq_single_interfering",
+  "created_at": "2026-10-04T17:27:08.000Z",
+  "updated_at": "2026-10-04T17:27:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lingvo",
+  "languages": [],
+  "tags": [
+    "lingvo",
+    "tflite",
+    "audio",
+    "speech-enhancement",
+    "echo-cancellation",
+    "textual-echo-cancellation",
+    "tensorflow",
+    "dataset:libritts",
+    "dataset:ljspeech",
+    "arxiv:2008.06006",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 166926250,
+  "storage_human": "167 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used …",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "chat-gpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-gpt",
+      "snippet": "Apr 28, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/copilot/reference/ai-models/supported-models",
+      "snippet": "Supported AI models in Auto model selection This table lists the supported AI models for Auto model selection. Available models …"
+    }
+  ]
+}

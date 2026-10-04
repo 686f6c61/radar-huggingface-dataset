@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-gemma-4-12b-equanimity_trust-s1",
+  "slug": "joshycodes-fd-gemma-4-12b-equanimity_trust-s1",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-gemma-4-12b-equanimity_trust-s1",
+  "created_at": "2026-10-04T01:30:03.000Z",
+  "updated_at": "2026-10-04T01:32:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/fd-gemma-4-12b-trust · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/fd-gemma-4-12b-trust",
+      "snippet": "joshycodes / fd-gemma-4-12b-trust Like 0 Safetensors gemma4_unified Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 12B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "joshycodes/gemma-4-12b-it-fve-workdiscern-s0 · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/gemma-4-12b-it-fve-workdiscern-s0",
+      "snippet": "google/gemma-4-12B-it after continued pretraining on its own self-authored corpus Research checkpoint. google/gemma-4-12B-it was continued-pretrained (full weights, lr 1e-05, 1 epoch, 7,719,872 tokens, 8,268 documents, of which 0 self-authored and 8,268 ordinary text) on a corpus the model wrote for the training of the next version of itself, as the character it already is, after being told ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2607.02770v1",
+      "snippet": "Abstract We introduce Gemma 4, a new generation of open-weight, natively multimodal language models in the Gemma model family. Designed to advance compute efficiency and reasoning, the Gemma 4 model suite features dense and Mixture-of-Experts architectures, ranging from 2.3B to 31B parameters. Alongside improved vision and audio encoders for all model sizes, we propose a unified, encoder-free ..."
+    }
+  ]
+}

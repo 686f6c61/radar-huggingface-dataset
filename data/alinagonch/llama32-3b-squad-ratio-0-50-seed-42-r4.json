@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4",
+  "slug": "alinagonch-llama32-3b-squad-ratio-0-50-seed-42-r4",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.50-seed-42-r4",
+  "created_at": "2026-10-04T01:41:34.000Z",
+  "updated_at": "2026-10-04T01:41:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41575240,
+  "storage_human": "42 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llama32-3b-squad-ratio-0.10-seed-42-r4 - Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4 at main",
+      "url": "https://huggingface.co/AlinaGonch/llama32-3b-squad-ratio-0.10-seed-42-r4/tree/main",
+      "snippet": "Instructions to use AlinaGonch/llama32-3b-squad-ratio-.10-seed-42-r4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "llama32-3b-squad-ratio-0.50-seed-44: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-alinagonch-llama32-3b-squad-ratio-0-50-seed-44",
+      "snippet": "Model card indexed from Hugging Face. Specs: 3B parameters, sourced from Hugging Face. Compare llama32-3b-squad-ratio-.50-seed-44&#x27;s parameters, context window,"
+    },
+    {
+      "title": "llama3.2:3b - ollama.com",
+      "url": "https://ollama.com/library/llama3.2:3b",
+      "snippet": "The Meta Llama 3.2 collection of multilingual large language models (LLMs) is a collection of pretrained and instruction-tuned generative models in 1B and 3B sizes (text in/text out)."
+    },
+    {
+      "title": "Llama 3.2 Architecture | buidoanchung/rasbt-LLMs-from-scratch | DeepWiki",
+      "url": "https://deepwiki.com/buidoanchung/rasbt-LLMs-from-scratch/5.1-llama-3.2-architecture",
+      "snippet": "Llama 3.2 Architecture Relevant source files Purpose and Scope This document covers the Llama 3.2 model implementation (1B and 3B parameter variants) in the repository, including architectural components such as RMSNorm, Rotary Position Embeddings (RoPE) with high base frequency, Grouped-Query Attention (GQA), and SwiGLU activation. For the step-by-step evolution from GPT to Llama 2, see the ..."
+    }
+  ]
+}

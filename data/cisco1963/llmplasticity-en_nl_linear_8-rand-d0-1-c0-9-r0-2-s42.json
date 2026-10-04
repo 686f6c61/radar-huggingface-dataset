@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.9-r0.2-s42",
+  "slug": "cisco1963-llmplasticity-en_nl_linear_8-rand-d0-1-c0-9-r0-2-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-rand-d0.1-c0.9-r0.2-s42",
+  "created_at": "2026-10-04T01:10:21.000Z",
+  "updated_at": "2026-10-04T01:13:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 11290571253,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-en_nl_instant_8-d0.01-c0.99-r0.2-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_instant_8-d0.01-c0.99-r0.2-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_nl_instant_8-d0.01-c0.99-r0.2-s42 Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Cisco1963/llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42 ...",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42",
+      "snippet": "Cisco1963 / llmplasticity-plasticity-nl_en_linear_8-d0.1-c0.999-r0.25-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "Explore machine learning models. Cisco1963/llmplasticity-en_nl_instant_8-d0.1-c0.99-r0.2-s42"
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-en-linear-8-d0-125-c0-99-r0-25-s42",
+      "snippet": "What this model is for llmplasticity-plasticity-nl_en_linear_8-d0.125-c0.99-r0.25-s42 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.8-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.8-s42",
+      "snippet": "Cisco1963 / llmplasticity-nl_zh_linear_8-d0.5-c0.9-r0.8-s42 Like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "joshycodes/fd-gemma-4-12b-equanimity_trust",
+  "slug": "joshycodes-fd-gemma-4-12b-equanimity_trust",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/fd-gemma-4-12b-equanimity_trust",
+  "created_at": "2026-10-04T01:24:27.000Z",
+  "updated_at": "2026-10-04T01:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "joshycodes/fd-gemma-4-12b-trust · Hugging Face",
+      "url": "https://huggingface.co/joshycodes/fd-gemma-4-12b-trust",
+      "snippet": "joshycodes / fd-gemma-4-12b-trust Like 0 Safetensors gemma4_unified Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 12B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "google/gemma-4-12B · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-4-12B",
+      "snippet": "This model card summarizes details on the models&#x27; architecture, capabilities, limitations, and evaluation processes. A responsibly developed open model offers the opportunity to share innovation by making VLM technology accessible to developers and researchers across the AI ecosystem."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "A Visual Guide to Gemma 4 12B | Krishnatheja Vanka",
+      "url": "https://theja-vanka.github.io/blogs/posts/news/gemma/",
+      "snippet": "A long-form guide summarizing and expanding on Maarten Grootendorst&#x27;s newsletter post, \"A Visual Guide to Gemma 4 12B\" (Exploring Language Models, published June 3, 2026). Introduction: Filling the Gap Between E4B and 26B A4B Google DeepMind&#x27;s Gemma 4 family originally shipped with a noticeable size gap: the E4B model on one end, and the much larger 26B A4B Mixture-of-Experts model on ..."
+    },
+    {
+      "title": "Gemma 4 model overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core",
+      "snippet": "Gemma is a family of generative artificial intelligence models and you can use them in a wide variety of generation tasks, including question answering, summarization, and reasoning. Gemma models are provided with open weights and permit responsible commercial use, allowing you to tune and deploy them in your own projects and applications. Gemma 4 model family spans four distinct architectures ..."
+    }
+  ]
+}

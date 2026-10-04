@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "saanvisingh/generation",
+  "slug": "saanvisingh-generation",
+  "author": "saanvisingh",
+  "url": "https://huggingface.co/saanvisingh/generation",
+  "created_at": "2026-10-04T14:41:51.000Z",
+  "updated_at": "2026-10-04T14:41:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI in Depth: A Survey of Recent Advances, Model Variants ...",
+      "url": "https://arxiv.org/html/2510.21887v1",
+      "snippet": "In generative AI, the ability of a model to produce meaningful and coherent outputs for new, unseen data is known as generalization. VAEs achieve better generalization through techniques such as representation learning, regularization, data augmentation, and transfer learning."
+    },
+    {
+      "title": "Completed \"Generative AI for Beginners\" course, learned ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/saanvi-singh-5a919b258_generativeai-artificialintelligence-greatlearning-activity-7366789499361652736-yKFo",
+      "snippet": "With a strong curiosity about how AI is shaping the future, I recently explored the fundamentals of Generative AI and I&#x27;m thrilled to share that I&#x27;ve successfully completed the \"Generative ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Generative AI for Developers: Complete Career Guide 2025",
+      "url": "https://www.saanvicareers.com/learn/gen-ai-for-developers",
+      "snippet": "Everything developers need to know about Generative AI in 2025 — key skills, tools, prompt engineering, LLM APIs, salary trends, and how to break into AI-powered product roles."
+    },
+    {
+      "title": "A comprehensive survey and analysis of generative models in machine ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1574013720303853",
+      "snippet": "Whereas, the downward arrows represent the generative model. (Right): The hybrid model with undirected connections between the top two layers representing an RBM and directed top-down connections below representing the generative model whereas the bottom-up connections infer a factorial representation in the layer from the layer below it."
+    }
+  ]
+}
