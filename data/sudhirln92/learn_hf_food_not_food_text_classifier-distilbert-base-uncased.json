@@ -5,7 +5,7 @@
   "author": "sudhirln92",
   "url": "https://huggingface.co/sudhirln92/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-08-24T17:11:06.000Z",
-  "updated_at": "2026-08-25T09:58:03.000Z",
+  "updated_at": "2026-10-03T09:38:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 7,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",

@@ -5,7 +5,7 @@
   "author": "AesSedai",
   "url": "https://huggingface.co/AesSedai/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-28T16:26:29.000Z",
-  "updated_at": "2026-10-03T07:55:49.000Z",
+  "updated_at": "2026-10-03T10:36:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 19,
-  "downloads_30d": 6024,
+  "downloads_30d": 5915,
   "trending_score": 11,
-  "parameters": 176943899520,
-  "parameters_human": "176.94B",
-  "storage_bytes": 1030940396087,
-  "storage_human": "1030.9 GB",
+  "parameters": 179551050368,
+  "parameters_human": "179.55B",
+  "storage_bytes": 1021663489548,
+  "storage_human": "1021.7 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

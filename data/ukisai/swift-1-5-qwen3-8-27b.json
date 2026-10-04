@@ -5,7 +5,7 @@
   "author": "ukisai",
   "url": "https://huggingface.co/ukisai/Swift-1.5-Qwen3.8-27b",
   "created_at": "2026-09-16T14:25:01.000Z",
-  "updated_at": "2026-09-24T16:20:42.000Z",
+  "updated_at": "2026-10-03T19:51:05.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 100,
+  "likes": 101,
   "downloads_30d": 3642,
   "trending_score": 50,
   "parameters": 27781427952,

@@ -40,8 +40,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 338013920,
-  "storage_human": "338 MB",
+  "storage_bytes": 335861632,
+  "storage_human": "336 MB",
   "base_model": "openai/whisper-base",
   "formats": [
     "onnx",

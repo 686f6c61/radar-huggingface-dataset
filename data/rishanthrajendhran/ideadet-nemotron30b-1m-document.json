@@ -5,7 +5,7 @@
   "author": "rishanthrajendhran",
   "url": "https://huggingface.co/rishanthrajendhran/ideadet-nemotron30b-1m-document",
   "created_at": "2026-08-31T20:01:05.000Z",
-  "updated_at": "2026-10-02T00:27:27.000Z",
+  "updated_at": "2026-10-04T02:13:40.000Z",
   "license": "openmdw-1.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "csikasote",
   "url": "https://huggingface.co/csikasote/omniASR-CTC-1B-v2-Zulu-All",
   "created_at": "2026-08-28T12:08:56.000Z",
-  "updated_at": "2026-08-28T12:09:00.000Z",
+  "updated_at": "2026-10-03T08:51:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -20,6 +20,12 @@
     "automatic-speech-recognition",
     "speech",
     "audio",
+    "isizulu",
+    "south-african-languages",
+    "zu",
+    "base_model:facebook/omniASR-CTC-1B",
+    "base_model:finetune:facebook/omniASR-CTC-1B",
+    "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
   ],
@@ -30,7 +36,7 @@
   "parameters_human": "975.7M",
   "storage_bytes": 3902898265,
   "storage_human": "3.9 GB",
-  "base_model": "facebook/omniASR-CTC-300M",
+  "base_model": "facebook/omniASR-CTC-1B",
   "formats": [
     "safetensors"
   ],

@@ -5,7 +5,7 @@
   "author": "logic65",
   "url": "https://huggingface.co/logic65/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF",
   "created_at": "2026-08-22T20:49:24.000Z",
-  "updated_at": "2026-09-15T12:44:46.000Z",
+  "updated_at": "2026-10-03T13:33:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 30,
-  "downloads_30d": 20709,
+  "downloads_30d": 20899,
   "trending_score": 8,
   "parameters": 26917297664,
   "parameters_human": "26.92B",

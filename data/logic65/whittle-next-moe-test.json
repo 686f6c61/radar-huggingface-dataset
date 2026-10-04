@@ -5,7 +5,7 @@
   "author": "logic65",
   "url": "https://huggingface.co/logic65/whittle-next-moe-test",
   "created_at": "2026-08-29T19:50:21.000Z",
-  "updated_at": "2026-08-30T04:39:02.000Z",
+  "updated_at": "2026-10-03T13:35:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

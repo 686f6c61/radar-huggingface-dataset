@@ -5,7 +5,7 @@
   "author": "Glimpse-Dictation",
   "url": "https://huggingface.co/Glimpse-Dictation/Parakeet-TDT-0.6B-V3-coreml",
   "created_at": "2026-09-13T01:10:30.000Z",
-  "updated_at": "2026-09-27T04:17:15.000Z",
+  "updated_at": "2026-10-03T17:04:24.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 63,
+  "downloads_30d": 64,
   "trending_score": 0,
   "parameters": 18123398,
   "parameters_human": "18.1M",
-  "storage_bytes": 2204195004,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 3257015420,
+  "storage_human": "3.3 GB",
   "base_model": "nvidia/parakeet-tdt-0.6b-v3",
   "formats": [
     "gguf"

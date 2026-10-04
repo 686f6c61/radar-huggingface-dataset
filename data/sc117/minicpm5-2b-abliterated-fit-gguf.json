@@ -5,7 +5,7 @@
   "author": "SC117",
   "url": "https://huggingface.co/SC117/MiniCPM5-2B-abliterated-FIT-GGUF",
   "created_at": "2026-09-10T14:18:57.000Z",
-  "updated_at": "2026-09-10T14:49:08.000Z",
+  "updated_at": "2026-10-03T10:26:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 3498,
+  "downloads_30d": 3531,
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",

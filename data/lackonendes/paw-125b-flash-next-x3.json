@@ -5,7 +5,7 @@
   "author": "lackonendes",
   "url": "https://huggingface.co/lackonendes/PAW-125B-FLASH-NEXT-X3",
   "created_at": "2026-09-19T11:51:36.000Z",
-  "updated_at": "2026-10-02T23:35:49.000Z",
+  "updated_at": "2026-10-03T15:25:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
   "trending_score": 0,
   "parameters": 76330416512,
   "parameters_human": "76.33B",
-  "storage_bytes": 148952860051,
+  "storage_bytes": 149003838034,
   "storage_human": "149.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

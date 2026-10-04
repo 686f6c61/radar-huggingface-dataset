@@ -5,7 +5,7 @@
   "author": "crumbs-playground",
   "url": "https://huggingface.co/crumbs-playground/test-bf-moe",
   "created_at": "2026-09-13T10:51:32.000Z",
-  "updated_at": "2026-10-01T00:04:55.000Z",
+  "updated_at": "2026-10-03T18:24:07.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 3133,
   "trending_score": 0,
-  "parameters": 230884864,
-  "parameters_human": "230.9M",
-  "storage_bytes": 2548867616,
-  "storage_human": "2.5 GB",
+  "parameters": 28896896,
+  "parameters_human": "28.9M",
+  "storage_bytes": 2635621440,
+  "storage_human": "2.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

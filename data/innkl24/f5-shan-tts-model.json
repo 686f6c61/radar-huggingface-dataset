@@ -5,7 +5,7 @@
   "author": "innkl24",
   "url": "https://huggingface.co/innkl24/f5-shan-tts-model",
   "created_at": "2026-09-09T06:08:25.000Z",
-  "updated_at": "2026-09-24T02:59:31.000Z",
+  "updated_at": "2026-10-04T05:33:02.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1409928853551,
-  "storage_human": "1409.9 GB",
+  "storage_bytes": 1555025790939,
+  "storage_human": "1555.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

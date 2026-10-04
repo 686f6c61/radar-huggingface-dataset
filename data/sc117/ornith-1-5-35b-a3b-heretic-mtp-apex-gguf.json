@@ -5,7 +5,7 @@
   "author": "SC117",
   "url": "https://huggingface.co/SC117/Ornith-1.5-35B-A3B-Heretic-MTP-APEX-GGUF",
   "created_at": "2026-08-22T15:01:49.000Z",
-  "updated_at": "2026-08-22T22:49:35.000Z",
+  "updated_at": "2026-10-03T10:26:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 43,
-  "downloads_30d": 16922,
+  "downloads_30d": 19159,
   "trending_score": 9,
   "parameters": 446571248,
   "parameters_human": "446.6M",

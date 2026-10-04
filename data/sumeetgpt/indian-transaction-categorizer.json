@@ -5,7 +5,7 @@
   "author": "Sumeetgpt",
   "url": "https://huggingface.co/Sumeetgpt/indian-transaction-categorizer",
   "created_at": "2026-09-01T01:34:35.000Z",
-  "updated_at": "2026-09-01T01:36:02.000Z",
+  "updated_at": "2026-10-03T11:33:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 118,
+  "downloads_30d": 119,
   "trending_score": 0,
   "parameters": 22713216,
   "parameters_human": "22.7M",
-  "storage_bytes": 90894911,
-  "storage_human": "91 MB",
+  "storage_bytes": 181794810,
+  "storage_human": "182 MB",
   "base_model": "sentence-transformers/all-MiniLM-L6-v2",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
   "created_at": "2026-09-17T21:58:19.000Z",
-  "updated_at": "2026-10-02T05:47:43.000Z",
+  "updated_at": "2026-10-03T16:01:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -48,7 +48,7 @@
     "imatrix"
   ],
   "likes": 15,
-  "downloads_30d": 11747,
+  "downloads_30d": 12459,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

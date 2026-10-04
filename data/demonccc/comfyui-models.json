@@ -13,26 +13,21 @@
   "languages": [],
   "tags": [
     "onnx",
-    "gguf",
     "license:unknown",
-    "endpoints_compatible",
-    "region:us",
-    "imatrix",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 84387249433,
-  "storage_human": "84.4 GB",
+  "storage_bytes": 60026137525,
+  "storage_human": "60.0 GB",
   "base_model": null,
   "formats": [
-    "gguf",
     "onnx"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,
