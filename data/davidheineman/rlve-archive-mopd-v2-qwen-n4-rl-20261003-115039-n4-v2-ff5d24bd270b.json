@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b",
+  "slug": "davidheineman-rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-n4-rl-20261003-115039-n4-v2-ff5d24bd270b",
+  "created_at": "2026-10-05T16:05:32.000Z",
+  "updated_at": "2026-10-05T16:09:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo",
+  "slug": "anonsubmissioniclr-italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_dpo",
+  "created_at": "2026-10-05T01:52:54.000Z",
+  "updated_at": "2026-10-05T01:52:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 183,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Montant des IJ sur attestation de paiement - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/2249162-montant-ij-attestation-paiement",
+      "snippet": "Sep 2, 2021 · Bonjour, J’ai à ma disposition sur mon compte ameli ma 1ere attestation de paiement d’IJ pour mon congé de …"
+    },
+    {
+      "title": "attestation de prise en charge de la sécurité sociale?",
+      "url": "https://forum-assures.ameli.fr/questions/1475948-attestation-prise-charge-securite-sociale",
+      "snippet": "Aug 27, 2024 · Bonjour, Je vient de m'inscrire à pôle emploi et il me demande une attestation de prise en charge par la sécurité …"
+    },
+    {
+      "title": "Obtention d'une attestation de droit avec la mention exonération du ...",
+      "url": "https://forum-assures.ameli.fr/questions/3126227-obtention-attestation-droit-mention-exoneration-ticket-moderateur",
+      "snippet": "Feb 28, 2023 · Je souhaite afficher la mention exonération du ticket modérateur mais quand je vais dans mon espace ameli et que je …"
+    },
+    {
+      "title": "Que faire si mon l'employeur ne veut pas envoyer l'attestation de ...",
+      "url": "https://forum-assures.ameli.fr/questions/2287473-faire-employeur-veut-envoyer-attestation-salaire",
+      "snippet": "Dec 9, 2024 · J'étais en arrêt de travail du 18/11/20 au 26/11/20 inclus, mais jusqu'à maintenant mon employeur ma pas transmis …"
+    },
+    {
+      "title": "Récupérer ancienne attestation de droit - Avec Réponse (s)",
+      "url": "https://forum-assures.ameli.fr/questions/2917785-recuperer-ancienne-attestation-droit",
+      "snippet": "Apr 6, 2022 · Bonjour Savez vous comment je peux récupérer une ancienne attestation de droit ? Sur l’appli Ameli, lorsque j’édite, il …"
+    }
+  ]
+}

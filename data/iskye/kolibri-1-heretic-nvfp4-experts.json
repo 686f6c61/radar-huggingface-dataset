@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "iSkye/Kolibri-1-heretic-NVFP4-Experts",
+  "slug": "iskye-kolibri-1-heretic-nvfp4-experts",
+  "author": "iSkye",
+  "url": "https://huggingface.co/iSkye/Kolibri-1-heretic-NVFP4-Experts",
+  "created_at": "2026-10-05T17:50:56.000Z",
+  "updated_at": "2026-10-05T17:51:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kolibri1",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "nvfp4",
+    "fp8",
+    "compressed-tensors",
+    "moe",
+    "reasoning",
+    "dgx-spark",
+    "gb10",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "de",
+    "en",
+    "base_model:iSkye/Kolibri-1-heretic",
+    "base_model:quantized:iSkye/Kolibri-1-heretic",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40354338560,
+  "parameters_human": "40.35B",
+  "storage_bytes": 45816633251,
+  "storage_human": "45.8 GB",
+  "base_model": "iSkye/Kolibri-1-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule 34 / astro_duchess_ (skibidi_toilet)",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=astro_duchess_%28skibidi_toilet%29",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "Duchess Astro Toilet | Alt Battles Wiki | Fandom",
+      "url": "https://alt-battles.fandom.com/wiki/Duchess_Astro_Toilet",
+      "snippet": "Duchess Astro Toilet is a major antagonist in the Skibidi Toilet series. She is a female member of the Astro Toilets race, holding a …"
+    },
+    {
+      "title": "Rule34.GG - astro_toilet",
+      "url": "https://rule34.gg/?tags=astro_toilet",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub. On this page astro_toilet! is displayed"
+    },
+    {
+      "title": "astro - Rule 34 World",
+      "url": "https://www.rule34.world/astro",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Rule 34 - 3 toes adult on young age difference alien all the way ...",
+      "url": "https://rule34.xxx/index.php?page=post&s=view&id=15569519&tags=explicitly_stated_nonconsent+",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    }
+  ]
+}

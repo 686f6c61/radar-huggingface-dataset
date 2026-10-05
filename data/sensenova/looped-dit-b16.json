@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sensenova/Looped-DiT-B16",
+  "slug": "sensenova-looped-dit-b16",
+  "author": "sensenova",
+  "url": "https://huggingface.co/sensenova/Looped-DiT-B16",
+  "created_at": "2026-09-28T03:30:18.000Z",
+  "updated_at": "2026-09-29T07:14:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "diffusion",
+    "pytorch",
+    "looped-dit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 0,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1032626174,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sensenova (SenseNova) - Hugging Face",
+      "url": "https://huggingface.co/sensenova",
+      "snippet": "Org profile for SenseNova on Hugging Face, the AI community building the future ... sensenova/Looped-DiT-B16. Text-to-Image • Updated 6 days ago • 10 · SenseNova ..."
+    },
+    {
+      "title": "日日新 - 商汤科技大模型平台 | SenseNova",
+      "url": "https://www.sensenova.cn/",
+      "snippet": "商汤科技推出的多模态大模型平台，提供AI文生图、代码生成、智能对话等能力。"
+    },
+    {
+      "title": "GitHub - OpenSenseNova/SenseNova-U1: SenseNova-U series: …",
+      "url": "https://github.com/OpenSenseNova/SenseNova-U1",
+      "snippet": "Apr 27, 2026 · The fastest way to experience SenseNova-U1 is through SenseNova-Studio — a 🆓 free online playground where you …"
+    },
+    {
+      "title": "SenseNova - Multimodal AI Model Platform",
+      "url": "https://www.sensenova.ai/",
+      "snippet": "SenseNova U1 Pro ... SenseNova U1.5 Lite ... SenseNova 6.8 Flash Lite ... 「SenseNova」 Native Applications"
+    },
+    {
+      "title": "SenseNova-U1.5: Towards Native Unified Visual Intelligence",
+      "url": "https://arxiv.org/abs/2609.11929",
+      "snippet": "Sep 10, 2026 · We launch SenseNova-U1.5, an 8B-MoT native unified multimodal model that understands, reasons about, and …"
+    }
+  ]
+}

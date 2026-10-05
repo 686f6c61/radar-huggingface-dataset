@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "alexhegit/so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k",
+  "slug": "alexhegit-so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k",
+  "author": "alexhegit",
+  "url": "https://huggingface.co/alexhegit/so101-simstudio-lab01-pnp-groot-n17-agent193-abs10k",
+  "created_at": "2026-10-05T15:01:39.000Z",
+  "updated_at": "2026-10-05T15:13:17.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "gr00t",
+    "so101",
+    "simstudio",
+    "dataset:alexhegit/so101-simstudio-lab01-pnp-agent-yaw-v4-actonly-follow2",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576225008,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Re:Sister―妹とふたり、ひみつの同棲生活―｜HNT エロゲ",
+      "url": "https://games.hnt.co.jp/10201889959/",
+      "snippet": "購入を検討している方へ～実用的な視点 Re:Sisterの購入を検討している方に向けて、実用的な情報をお伝えします。 まず、この作 …"
+    },
+    {
+      "title": "re sister +password — Yandex: found 120 thousand results",
+      "url": "https://tv.yandex.com/search?text=re+sister+%2Bpassword&lr=21206&missword=1",
+      "snippet": "Strong Password Generator - Free, Random, Customizable Strong Password Generator. Create random passwords with the length …"
+    },
+    {
+      "title": "新游推荐！高分游戏佳作《Re:Sister》解锁秘密同居生活！",
+      "url": "https://www.bilibili.com/video/BV1PkUrB1EWo/",
+      "snippet": "Nov 24, 2025 · 绅士必玩推荐 《Re_Sister》！ pc+安卓分享！ 内附下载地址！ 自取！ ，拒绝俗套剧情，这款让你直呼“太对味”！ 三 …"
+    },
+    {
+      "title": "Re: My Dear Sister Cheats for PC",
+      "url": "https://www.chaptercheats.com/cheats/pc/716025/re-my-dear-sister-cheat-codes",
+      "snippet": "Jun 27, 2025 · Cheats, Tips, Tricks, Walkthroughs and Secrets for Re: My Dear Sister on the PC, with a game help system for those …"
+    },
+    {
+      "title": "+password re sister game — Yandex: found 314 thousand results",
+      "url": "https://tv.yandex.com/search?text=%2Bpassword+re+sister+game&lr=21206&missword=1",
+      "snippet": "An interactive puzzle game that challenges you to create a password meeting an ever-evolving set of rules and tests your password …"
+    }
+  ]
+}

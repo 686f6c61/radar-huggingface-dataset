@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF",
+  "slug": "llmfan46-gemma-4-e4b-it-ultra-uncensored-heretic-gguf",
+  "author": "llmfan46",
+  "url": "https://huggingface.co/llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF",
+  "created_at": "2026-04-05T15:49:10.000Z",
+  "updated_at": "2026-05-28T02:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "ara",
+    "any-to-any",
+    "base_model:llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 217,
+  "downloads_30d": 65217,
+  "trending_score": 10,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 47077318208,
+  "storage_human": "47.1 GB",
+  "base_model": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+      "snippet": "Models · llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic-GGUF · zecanard/gemma-4-E4B-it-ultra-uncensored-heretic-MLX-4bit-mixed_4_6 · FreedomAISVR/Gemma-4-E4B-it- ..."
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    }
+  ]
+}

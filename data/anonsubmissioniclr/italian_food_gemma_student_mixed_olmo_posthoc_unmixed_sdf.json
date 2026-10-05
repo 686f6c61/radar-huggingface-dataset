@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_sdf",
+  "slug": "anonsubmissioniclr-italian_food_gemma_student_mixed_olmo_posthoc_unmixed_sdf",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_unmixed_sdf",
+  "created_at": "2026-10-05T01:53:40.000Z",
+  "updated_at": "2026-10-05T01:53:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 182,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code erreur B203 – CANON Imprimante jet dencre - SAV Darty",
+      "url": "https://sav.darty.com/forum/CANON/PIXMA-MG-7550/code-erreur-B203/2557954/346447",
+      "snippet": "Dec 10, 2016 · Discussions sur Imprimante jet dencre PIXMA MG 7550 de la marque CANON – code erreur B203 – bjr, je possède …"
+    },
+    {
+      "title": "Le voyant filter de mon américain Samsung reste en rouge - SAV Darty",
+      "url": "https://sav.darty.com/thematic/LE-VOYANT-FILTER-DE-MON-AMERICAIN-SAMSUNG-RESTE-EN-ROUGE/356",
+      "snippet": "Mar 9, 2020 · Tuto SAV Darty sur Réfrigérateur Congélateur, SAMSUNG : Le voyant filter de mon américain Samsung reste en …"
+    },
+    {
+      "title": "为什么会产生阳极和负极对应anode这种翻译？ - 知乎",
+      "url": "https://www.zhihu.com/question/43070680",
+      "snippet": "Apr 13, 2016 · 关键 takeaway： 当您想描述电池上固定的 “+” 或 “-” 极时，请使用 Positive Electrode 和 Negative Electrode。 当您想 …"
+    },
+    {
+      "title": "车辆购置税怎么算？ - 知乎",
+      "url": "https://www.zhihu.com/question/484163508",
+      "snippet": "一、 车购税 是个啥？ 车购税是对在中国境内 购置 规定车辆的单位和个人征收的一种税，只在购置的时候 交一次 即可。 购置：购买 …"
+    },
+    {
+      "title": "Mon lave vaisselle affiche E24 ou le voyant robinet reste allumé",
+      "url": "https://sav.darty.com/thematic/MON-LAVE-VAISSELLE-AFFICHE-E24-OU-LE-VOYANT-ROBINET-RESTE-ALLUME/106",
+      "snippet": "Mar 29, 2019 · Tuto SAV Darty sur Lave vaisselle, BOSCH : Mon lave vaisselle affiche E24 ou le voyant robinet reste allumé - …"
+    }
+  ]
+}

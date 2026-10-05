@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/Qwen3.8-Flash-Next-NVFP4",
+  "slug": "redhatai-qwen3-8-flash-next-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/Qwen3.8-Flash-Next-NVFP4",
+  "created_at": "2026-08-27T00:10:38.000Z",
+  "updated_at": "2026-10-05T14:59:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "fp4",
+    "nvfp4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 634,
+  "trending_score": 14,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 186452342575,
+  "storage_human": "186.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DUA LIPA (@dualipa) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dualipa/",
+      "snippet": "89M Followers, 29 Following, 580 Posts - DUA LIPA (@dualipa) on Instagram: \"RADICAL OPTIMISM @service95 …"
+    },
+    {
+      "title": "Dua Lipa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dua_Lipa",
+      "snippet": ""
+    },
+    {
+      "title": "Dua Lipa | Official Site",
+      "url": "https://www.dualipa.com/?frontpage=true",
+      "snippet": "FROM OR ON BEHALF OF DUA LIPA, AND AGREE TO COMMUNITY'S TERMS/PRIVACY: …"
+    },
+    {
+      "title": "Dua Lipa - YouTube",
+      "url": "https://www.youtube.com/channel/UC-J-KZfRV8c13fOCkhXdLiQ",
+      "snippet": "The official YouTube channel for Dua Lipa.Born and raised in London to Kosovar-Albanian parents, Dua Lipa signed to Warner …"
+    },
+    {
+      "title": "Dua Lipa — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dua_Lipa",
+      "snippet": "Dua Lipa (prononcé en albanais : /ˈdua ˈlipa/ ; en anglais : /ˈduːə ˈliːpə/), née le 22 août 1995 à Londres, est une auteure …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "scadebayo/postdoc-audio-visual-learning",
+  "slug": "scadebayo-postdoc-audio-visual-learning",
+  "author": "scadebayo",
+  "url": "https://huggingface.co/scadebayo/postdoc-audio-visual-learning",
+  "created_at": "2026-10-05T13:35:40.000Z",
+  "updated_at": "2026-10-05T13:35:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "artist:tornado - E-Hentai Galleries",
+      "url": "https://e-hentai.org/tag/artist:tornado",
+      "snippet": "Showing search results for artist:tornado - just some of the over a million absolutely free hentai galleries available."
+    },
+    {
+      "title": "Artist: tornado » nhentai - Hentai Manga & Doujinshi",
+      "url": "https://nhentai.xxx/artist/tornado/",
+      "snippet": "Read and download 12 hentai manga & doujinshi with the artist tornado free on nhentai"
+    },
+    {
+      "title": "GAINEN — AI NSFW ShortVideo | Patreon",
+      "url": "https://www.patreon.com/cw/gainen_tornado",
+      "snippet": "Get more from GAINEN on Patreon. AI NSFW ShortVideo. Support GAINEN and get exclusive access to their work."
+    },
+    {
+      "title": "Artist: tornado » nhentai",
+      "url": "https://nhentai.net/artist/tornado/",
+      "snippet": "Read 17 galleries with artist tornado on nhentai, a hentai doujinshi and manga reader."
+    },
+    {
+      "title": "GAINEN | Posts | Patreon",
+      "url": "https://www.patreon.com/cw/gainen_tornado/posts",
+      "snippet": "Read the latest posts from GAINEN on Patreon. Become a member for just $5/month. AI NSFW ShortVideo自分で使うための動画を …"
+    }
+  ]
+}

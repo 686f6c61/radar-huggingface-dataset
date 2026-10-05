@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97",
+  "slug": "davidheineman-rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-00-circuit-60ed1ce83a97",
+  "created_at": "2026-10-05T16:16:57.000Z",
+  "updated_at": "2026-10-05T16:20:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Repaire de l’Aile noire - Zone - World of Warcraft - Wowhead",
+      "url": "https://www.wowhead.com/fr/zone=2677/repaire-de-l-aile-noire",
+      "snippet": "Un (e) raid contesté de niveau 30. Dans la catégorie Zones. Ajouté dans World of Warcraft Classic. Toujours actuelle pour la …"
+    },
+    {
+      "title": "Repaire de l'Aile noire - Zone - World of Warcraft Classic - Wowhead",
+      "url": "https://www.wowhead.com/classic/fr/zone=2677/repaire-de-laile-noire",
+      "snippet": "Un (e) raid contesté de niveau 60. Dans la catégorie Zones. Ajouté dans World of Warcraft Classic. Toujours actuelle pour la …"
+    },
+    {
+      "title": "WoW Classic : Repaire de l'Aile noire, raid guide - Millenium",
+      "url": "https://www.millenium.org/guide/339108.html",
+      "snippet": "Feb 12, 2020 · Le Repaire de l'Aile noire est un raid de World of Warcraft Classic. On vous guide de l'accès au raid jusqu'au dernier …"
+    },
+    {
+      "title": "Repaire de l'Aile Noire - World of Warcraft Classic - JudgeHype",
+      "url": "https://wowclassic.judgehype.com/article/repaire-de-l-aile-noire/",
+      "snippet": "May 25, 2019 · Le Repaire de l'Aile noire est un raid pour 40 joueurs situé au Mont Rochenoire. À l'origine, il a été déployé avec le …"
+    },
+    {
+      "title": "Guide de Tranchetripe l'Indompté au Repaire de l'Aile Noire",
+      "url": "https://wowclassic.judgehype.com/article/guide-de-tranchetripe-l-indompte-au-repaire-de-l-aile-noire/",
+      "snippet": "Feb 4, 2020 · Guide stratégique de Tranchetripe l'Indompté, le premier boss du Repaire de l'Aile Noire. Découvrez dans ce guide la …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-speaker-asr-qwen3-asr-junction",
+  "slug": "mazesmazes-tiny-audio-speaker-asr-qwen3-asr-junction",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr-junction",
+  "created_at": "2026-10-05T16:49:52.000Z",
+  "updated_at": "2026-10-05T16:50:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 1576358644,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fifteenth Language Resources and Evaluation Conference",
+      "url": "https://aclanthology.org/events/lrec-2026/",
+      "snippet": "Evaluating the ability of Automatic Speech Recognition (ASR) models ... CEDS cover 14 sectors/domains and will allow secure, trustworthy data/AI models exchange ..."
+    },
+    {
+      "title": "Computer Science - arXiv",
+      "url": "https://www.arxiv.org/list/cs/new?skip=25&show=1000",
+      "snippet": "This study evaluates legal text classification models ranging from traditional machine learning techniques to large language models (LLMs) ..."
+    },
+    {
+      "title": "Proceedings of the Fifteenth Language Resources and Evaluation ...",
+      "url": "https://aclanthology.org/volumes/2026.lrec-1/",
+      "snippet": "... speaker-independent subsets, supporting research in conversational ASR and speaker ... How much audio is needed to fully observe a multilingual ASR model's ..."
+    },
+    {
+      "title": "Machine Learning - arXiv",
+      "url": "https://arxiv.org/list/cs.LG/new",
+      "snippet": "Applied to 242,036 drug sensitivity measurements from the Genomics of Drug Sensitivity in Cancer (GDSC2) database, the model estimates ..."
+    },
+    {
+      "title": "Track: San Diego Poster Session 5 - NeurIPS 2026",
+      "url": "https://neurips.cc/virtual/2025/loc/san-diego/session/128335",
+      "snippet": "Understanding and explaining the behavior of machine learning models is essential for building transparent and trustworthy AI systems. We introduce DEXTER, a ..."
+    }
+  ]
+}

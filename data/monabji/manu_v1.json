@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "monabji/manu_v1",
+  "slug": "monabji-manu_v1",
+  "author": "monabji",
+  "url": "https://huggingface.co/monabji/manu_v1",
+  "created_at": "2026-10-05T18:12:29.000Z",
+  "updated_at": "2026-10-05T18:12:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.questions.sncf.com",
+      "url": "http://www.questions.sncf.com/",
+      "snippet": "This domain does not exist"
+    },
+    {
+      "title": "Inicio | Suprema Corte de Justicia de la Nación/Casas de los Saberes ...",
+      "url": "https://cursos.scjn.gob.mx/",
+      "snippet": "Seminario de Litigación Penal: Técnicas de Interrogatorio, Contrainterrogatorio y Objeciones en el Sistema Acusatorio 2 de octubre …"
+    },
+    {
+      "title": "cursos.scjn.gob.mx",
+      "url": "https://cursos.scjn.gob.mx/lib/",
+      "snippet": ""
+    }
+  ]
+}

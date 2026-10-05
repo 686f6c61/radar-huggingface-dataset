@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "hugoc8/zhixia-htlm-action-v2-lfm2.5-350m",
+  "slug": "hugoc8-zhixia-htlm-action-v2-lfm2-5-350m",
+  "author": "hugoc8",
+  "url": "https://huggingface.co/hugoc8/zhixia-htlm-action-v2-lfm2.5-350m",
+  "created_at": "2026-10-05T17:40:31.000Z",
+  "updated_at": "2026-10-05T18:23:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "lfm2.5",
+    "browser-agent",
+    "structured-output",
+    "zhixia",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-350M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 708984464,
+  "storage_human": "709 MB",
+  "base_model": "LiquidAI/LFM2.5-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

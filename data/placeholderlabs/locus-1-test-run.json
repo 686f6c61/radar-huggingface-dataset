@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "placeholderlabs/locus-1-test-run",
+  "slug": "placeholderlabs-locus-1-test-run",
+  "author": "placeholderlabs",
+  "url": "https://huggingface.co/placeholderlabs/locus-1-test-run",
+  "created_at": "2026-10-05T01:49:18.000Z",
+  "updated_at": "2026-10-05T01:53:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16914513442,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Placeholder Labs",
+      "url": "https://placeholderlabs.ai/",
+      "snippet": "Placeholder Labs exists as an AI partner for software companies to help them customise, host and continuously improve open source models that fit into the Placeholder sized gap in their product."
+    },
+    {
+      "title": "Locus-1 Pretrain Mix - a placeholderlabs Collection",
+      "url": "https://huggingface.co/collections/placeholderlabs/locus-1-pretrain-mix",
+      "snippet": "Regular-context pretraining releases: documents plus aligned Dolma-2 tokens and masks, one repo per source mix. Token counts on each card."
+    },
+    {
+      "title": "Locus-1 Pretrain Long-Context Mix - a placeholderlabs Collection",
+      "url": "https://huggingface.co/collections/placeholderlabs/locus-1-pretrain-long-context-mix",
+      "snippet": "Long-context (16K packing) pretraining releases, same two-parquet contract as the regular mixes. Token counts on each card."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    },
+    {
+      "title": "GitHub - v1m08/LocAI: Locally hosted CPU-run AI model with a RAG ...",
+      "url": "https://github.com/v1m08/LocAI",
+      "snippet": "LocAI - Personal AI Assistant A locally hosted AI assistant with RAG (Retrieval-Augmented Generation) capabilities, running entirely offline on your CPU."
+    }
+  ]
+}

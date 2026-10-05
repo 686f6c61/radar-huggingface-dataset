@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aaroncool9/lev",
+  "slug": "aaroncool9-lev",
+  "author": "aaroncool9",
+  "url": "https://huggingface.co/aaroncool9/lev",
+  "created_at": "2026-10-05T17:38:55.000Z",
+  "updated_at": "2026-10-05T17:38:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lev",
+    "system-one",
+    "decision-model",
+    "calibrated-decisions",
+    "classification",
+    "routing",
+    "moderation",
+    "lora",
+    "zero-shot-classification",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 205261104,
+  "storage_human": "205 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,56 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-7B-HyperClick-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-7b-hyperclick-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-HyperClick-GGUF",
+  "created_at": "2026-10-05T02:02:11.000Z",
+  "updated_at": "2026-10-05T02:35:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "hyperclick",
+    "gui-grounding",
+    "multimodal",
+    "confidence-calibration",
+    "reinforcement-learning",
+    "arxiv:2510.27266",
+    "en",
+    "base_model:SeerRay-Lab/Qwen2.5-VL-7B-HyperClick",
+    "base_model:quantized:SeerRay-Lab/Qwen2.5-VL-7B-HyperClick",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 163,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357192192,
+  "storage_human": "70.4 GB",
+  "base_model": "SeerRay-Lab/Qwen2.5-VL-7B-HyperClick",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenSearch-VL/Search-VL-RL-8K · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/OpenSearch-VL/Search-VL-RL-8K",
+      "snippet": "06.05.2026 ... 256. qwen2_5_vl_full_sft_7b_ray.yaml, Qwen2.5-VL-7B-Instruct, 256 ... mradermacher/OpenSearch-VL-8B-i1-GGUF. 8B • Updated May 10 • 782 • 1 ..."
+    }
+  ]
+}

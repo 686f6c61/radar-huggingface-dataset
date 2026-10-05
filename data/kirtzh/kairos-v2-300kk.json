@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kirtzh/Kairos-v2-300kk",
+  "slug": "kirtzh-kairos-v2-300kk",
+  "author": "kirtzh",
+  "url": "https://huggingface.co/kirtzh/Kairos-v2-300kk",
+  "created_at": "2026-10-05T16:22:01.000Z",
+  "updated_at": "2026-10-05T16:31:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "cida_sota_deliberation",
+    "cida",
+    "kairos",
+    "reasoning",
+    "deliberation",
+    "latent-deliberation",
+    "system-2",
+    "autonomous-agents",
+    "solana",
+    "code-generation",
+    "pytorch",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1335432998,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Généalogie : recherchez vos ancêtres, publiez votre généalogie ...",
+      "url": "https://www.geneanet.org/",
+      "snippet": "Généalogie : créez gratuitement votre arbre généalogique et retrouvez vos ancêtres en ligne parmi plus de 9 milliards d'individus …"
+    },
+    {
+      "title": "guerre de Crimée - Forums Geneanet",
+      "url": "https://www.geneanet.org/forum/viewtopic.php?t=216074",
+      "snippet": "Jan 6, 2007 · guerre de Crimée - Forums Geneanet Il semblerait que vous ayez désactivé Javascript Vous avez désactivé Javascript …"
+    },
+    {
+      "title": "Filae.com : La généalogie : Etat-civil, faire son arbre généalogique ...",
+      "url": "https://www.filae.com/?msockid=17f7189f38c668cc034b0f7639406983",
+      "snippet": "Filae.com : le portail de la généalogie en France pour consulter son Etat-civil en ligne et construire son arbre généalogique …"
+    },
+    {
+      "title": "Avez-vous un ancêtre soldat mort en Crimée ? - Filae",
+      "url": "https://www.filae.com/ressources/avez-vous-un-ancetre-soldat-mort-en-crimee/?msockid=17f7189f38c668cc034b0f7639406983",
+      "snippet": "Oct 4, 2018 · La guerre de Crimée : plus de 95 000 soldats français décédésLe 4 octobre 1853, la guerre de Crimée débute et durera …"
+    },
+    {
+      "title": "Les soldats français engagés dans la guerre de Crimée (1853-1856)",
+      "url": "https://www.geneanet.org/blog/post/2014/03/les-soldats-francais-engages-dans-la-guerre-de-crimee-1853-1856-html",
+      "snippet": "Mar 6, 2014 · Celle de Biozat dans l’Allier nous permet d’évoquer les soldats français engagés dans la guerre de Crimée (1853 …"
+    }
+  ]
+}

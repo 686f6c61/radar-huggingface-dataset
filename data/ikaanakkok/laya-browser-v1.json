@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ikaanakkok/laya-browser-v1",
+  "slug": "ikaanakkok-laya-browser-v1",
+  "author": "ikaanakkok",
+  "url": "https://huggingface.co/ikaanakkok/laya-browser-v1",
+  "created_at": "2026-10-05T18:19:13.000Z",
+  "updated_at": "2026-10-05T18:44:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "laya",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "system-one",
+    "typed-decisions",
+    "browser-agent",
+    "computer-use",
+    "jev",
+    "turkish",
+    "feature-extraction",
+    "en",
+    "tr",
+    "base_model:cklxx/laya-browser",
+    "base_model:finetune:cklxx/laya-browser",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "cklxx/laya-browser",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benny93/laya-browser - GitHub",
+      "url": "https://github.com/Benny93/laya-browser",
+      "snippet": "agent-browser, but selectors can be plain English, resolved on-device in milliseconds. laya-browser accepts every agent-browser command and passes it through unchanged. When a selector is English (click \"log in\") instead of a @ref or CSS, a local Laya typed-decision model (via laya-mlx) picks the ..."
+    },
+    {
+      "title": "Laya in the browser - a Hugging Face Space by mizchi",
+      "url": "https://huggingface.co/spaces/mizchi/laya-web-demo",
+      "snippet": "This web app runs the Laya AI model directly in your browser using WebGPU. You can check the model&#x27;s accuracy with a built‑in parity test, watch it play Snake with a safety shield, or challenge it ..."
+    },
+    {
+      "title": "Laya AI — System One Decision Model",
+      "url": "https://laya-model.com/",
+      "snippet": "Laya AI · System One Laya AI — System One Decision Model Typed decisions for agents and software — choice, score, and yes/no in one forward pass. Hosted prepaid API here; Apache 2.0 weights if you run locally."
+    },
+    {
+      "title": "Get Started · Laya AI",
+      "url": "https://laya-model.com/get-started",
+      "snippet": "Laya / Get Started Get started This page is local install only. It does not run inference in the browser. Try the hosted playground or tools for a live decide call. Locally, install the package and call Router ().predict. Install Hardware Preload Quickstart Command line Limits HTTP server Install Python 3.10 or newer. The README names that floor because current huggingface_hub, transformers ..."
+    },
+    {
+      "title": "hanish-builds/laya-browser-v1 · Hugging Face",
+      "url": "https://huggingface.co/hanish-builds/laya-browser-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

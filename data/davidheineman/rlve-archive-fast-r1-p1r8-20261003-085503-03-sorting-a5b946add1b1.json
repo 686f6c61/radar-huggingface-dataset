@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1",
+  "slug": "davidheineman-rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-03-sorting-a5b946add1b1",
+  "created_at": "2026-10-05T19:51:55.000Z",
+  "updated_at": "2026-10-05T19:53:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3554878771,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paroles Amnésie par Damso - Paroles.net (lyrics)",
+      "url": "https://www.paroles.net/damso/paroles-amnesie",
+      "snippet": "Paroles du titre Amnésie - Damso avec Paroles.net - Retrouvez également les paroles des chansons les plus populaires de Damso"
+    },
+    {
+      "title": "Damso – Amnésie Lyrics - Genius",
+      "url": "https://genius.com/Damso-amnesie-lyrics",
+      "snippet": "Jul 8, 2016 · Le seul morceau qui a échappé à cette règle, c'est Amnésie. Mon studio était alors mon endroit de vie. Quand tu vis …"
+    },
+    {
+      "title": "Paroles de la chanson «Amnésie» par Damso",
+      "url": "https://www.lacoccinelle.net/1158641-damso-amnesie.html",
+      "snippet": "\"Allo Damso j'vais faire sonner mon heure\" J'décrochais pas j'voulais pas faire d'erreur Qu'elle me casse les couilles c'est ce dont …"
+    },
+    {
+      "title": "Damso - Paroles de \"Amnésie\" | Lyrics at AZLyrics.com",
+      "url": "https://www.azlyrics.com/lyrics/damso/amnsie.html",
+      "snippet": "Paroles de \"Amnésie\" Damso Lyrics \"Amnésie\" Mort est son avenir proche Les anges de l'enfer l'escortent Le hashtag #Vie tient …"
+    },
+    {
+      "title": "Damso | Amnésie - Clip Officiel - YouTube",
+      "url": "https://www.youtube.com/watch?v=h2Jyi5u8K8U",
+      "snippet": "Dec 21, 2017 · Clip officiel d'AmnésieDisponible sur l'album \"Batterie faible\" de DamsoInstagram Damso …"
+    }
+  ]
+}

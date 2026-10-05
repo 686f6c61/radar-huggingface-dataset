@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Morteza73/persian-piper-sherpa-onnx",
+  "slug": "morteza73-persian-piper-sherpa-onnx",
+  "author": "Morteza73",
+  "url": "https://huggingface.co/Morteza73/persian-piper-sherpa-onnx",
+  "created_at": "2026-10-05T18:18:46.000Z",
+  "updated_at": "2026-10-05T18:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piper — sherpa 1.3 documentation - GitHub Pages",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/tts/piper.html",
+      "snippet": "Test your converted model To have a quick test of your converted model, you can use ... to install sherpa-onnx and then use the following commands to test your model: ... The above command should generate a wave file test.wav. ... Congratulations! You have successfully converted a model from piper and run it with sherpa-onnx."
+    },
+    {
+      "title": "sherpa-onnx — sherpa 1.3 documentation - GitHub Pages",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/index.html",
+      "snippet": "sherpa-onnx Hint During speech recognition, it does not need to access the Internet. Everything is processed locally on your device. We support using onnx with onnxruntime to replace PyTorch for neural network computation. The code is put in a separate repository sherpa-onnx. sherpa-onnx is self-contained and everything can be compiled from source."
+    },
+    {
+      "title": "GitHub - k2-fsa/sherpa-onnx: Speech-to-text, text-to-speech, speaker ...",
+      "url": "https://github.com/k2-fsa/sherpa-onnx",
+      "snippet": "Domia runs sherpa-onnx in-process for keyword spotting, voice activity detection, streaming and offline speech recognition, and text-to-speech. Speech engines and models are selected through per-companion configuration, making it easy to match supported sherpa-onnx models to different hardware."
+    },
+    {
+      "title": "sherpa-onnx · PyPI",
+      "url": "https://pypi.org/project/sherpa-onnx/",
+      "snippet": "Domia runs sherpa-onnx in-process for keyword spotting, voice activity detection, streaming and offline speech recognition, and text-to-speech. Speech engines and models are selected through per-companion configuration, making it easy to match supported sherpa-onnx models to different hardware."
+    },
+    {
+      "title": "k2-fsa/sherpa-onnx | DeepWiki",
+      "url": "https://deepwiki.com/k2-fsa/sherpa-onnx",
+      "snippet": "`sherpa-onnx` is a high-performance, multi-platform speech processing toolkit powered by ONNX Runtime $1. It delivers an extensive set of speech-related capabilities—including speech recognition (ASR)"
+    }
+  ]
+}

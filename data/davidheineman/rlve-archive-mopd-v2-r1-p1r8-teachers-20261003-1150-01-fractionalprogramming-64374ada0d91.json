@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-01-fractionalprogramming-64374ada0d91",
+  "slug": "davidheineman-rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-01-fractionalprogramming-64374ada0d91",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-01-fractionalprogramming-64374ada0d91",
+  "created_at": "2026-10-05T17:58:56.000Z",
+  "updated_at": "2026-10-05T18:00:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ILPT: Need to unlock content of Patreon without paying.",
+      "url": "https://www.reddit.com/r/IllegalLifeProTips/comments/havqyz/ilpt_need_to_unlock_content_of_patreon_without/",
+      "snippet": "Jun 17, 2020 · 21 votes, 17 comments. true Here in ILPT, we have a love for pictures containing baseball bats with socks around them."
+    },
+    {
+      "title": "another 15-day patron code. enjoy! : r/Trove - Reddit",
+      "url": "https://www.reddit.com/r/Trove/comments/10hwmcl/another_15day_patron_code_enjoy/",
+      "snippet": "Jan 21, 2023 · Hey thanks, but this code is already used sadly, so i can not use it anymore. But i found a lot of other Codes that …"
+    },
+    {
+      "title": "Dating apps in korea : r/seoul - Reddit",
+      "url": "https://www.reddit.com/r/seoul/comments/176wb3f/dating_apps_in_korea/",
+      "snippet": "Oct 13, 2023 · I wanna try dating apps in korea to make new friends for hanging out and long term relationships I really need your …"
+    },
+    {
+      "title": "Games like eturnum : r/eternumites - Reddit",
+      "url": "https://www.reddit.com/r/eternumites/comments/1dkexnt/games_like_eturnum/",
+      "snippet": "17 votes, 28 comments. Hello guys Can u people suggest me a game like eturnum Honestly I am just new to these stuffs although I …"
+    },
+    {
+      "title": "Ultimate AVN Recommendation List by SiofraMei : r/AVN_Lovers",
+      "url": "https://www.reddit.com/r/AVN_Lovers/comments/zrw8rb/ultimate_avn_recommendation_list_by_sioframei/",
+      "snippet": "My favourite one that I'm currently playing is probably Stranded in Space, so that would be definitely my first recommendation. This is …"
+    }
+  ]
+}

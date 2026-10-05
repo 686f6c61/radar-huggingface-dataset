@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "ArieLLL123/Meivin-Embed-0.1.1",
+  "slug": "arielll123-meivin-embed-0-1-1",
+  "author": "ArieLLL123",
+  "url": "https://huggingface.co/ArieLLL123/Meivin-Embed-0.1.1",
+  "created_at": "2026-10-05T16:18:35.000Z",
+  "updated_at": "2026-10-05T16:19:45.000Z",
+  "license": "personal-use-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 338118664,
+  "storage_human": "338 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

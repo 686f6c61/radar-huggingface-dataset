@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/vev-2b-v2-GGUF",
+  "slug": "mradermacher-vev-2b-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/vev-2b-v2-GGUF",
+  "created_at": "2026-10-05T01:52:44.000Z",
+  "updated_at": "2026-10-05T02:01:09.000Z",
+  "license": "see-data-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "vision",
+    "calibrated",
+    "evaluation",
+    "lora-merged",
+    "en",
+    "base_model:Fatha/vev-2b-v2",
+    "base_model:quantized:Fatha/vev-2b-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 391,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 19103029440,
+  "storage_human": "19.1 GB",
+  "base_model": "Fatha/vev-2b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "mradermacher 's models 70,829. Sort: Recently updated · mradermacher/torchcast-decision-27b-i1-GGUF · mradermacher/DR-GRPO-Qwen3-30B-A3B-GGUF · mradermacher/GLM- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "2B • Updated in about 7 hours · sads1xcz21esa/MyAwesomeModel-TestRepo ... mradermacher/vev-9b-v2-GGUF. 0.5B • Updated in about 7 hours · francesca9805 ..."
+    },
+    {
+      "title": "r/huggingface - Reddit",
+      "url": "https://www.reddit.com/r/huggingface/best/",
+      "snippet": "My contribution to the local AI community: 9 abliterated models, 99 GGUF quantizations in progress ... vev vev serve --model CountingSheep/vev-4b. For a ..."
+    },
+    {
+      "title": "mradermacher/continual-ai-2b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/continual-ai-2b-GGUF",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/businessgpt-qwen3vl-2b-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/businessgpt-qwen3vl-2b-v2-GGUF",
+      "snippet": "Instructions to use mradermacher/businessgpt-qwen3vl-2b-v2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

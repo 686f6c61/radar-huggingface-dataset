@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Qui-Linta13/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "qui-linta13-qwen3-8-27b-uncensored-gguf",
+  "author": "Qui-Linta13",
+  "url": "https://huggingface.co/Qui-Linta13/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-10-05T13:36:26.000Z",
+  "updated_at": "2026-10-05T13:36:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 231256590464,
+  "storage_human": "231.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : qui - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/qui/65685",
+      "snippet": "1. Introduit comme sujet une subordonnée relative : L'homme qui sort d'ici est mon cousin. 2. Après une préposition, ne peut …"
+    },
+    {
+      "title": "qui - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/qui",
+      "snippet": "Définition, exemples et prononciation de qui : Pronom relatif des deux nombres, masculin ou fémin…"
+    },
+    {
+      "title": "qui — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/qui",
+      "snippet": "Dans la salle à manger, dans la salle des armures, dans la chambre à coucher, toutes les figurines des meubles et des boiseries …"
+    },
+    {
+      "title": "Définition de qui | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/qui",
+      "snippet": "May 6, 2024 · Définition de qui : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « qui »"
+    },
+    {
+      "title": "qui | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9Q0222",
+      "snippet": "Définition de I. QUI : Qui introduit une proposition subordonnée relative dans laquelle il occupe différentes fonctions."
+    }
+  ]
+}

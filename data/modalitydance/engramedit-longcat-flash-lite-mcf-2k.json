@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ModalityDance/EngramEdit-LongCat-Flash-Lite-MCF-2K",
+  "slug": "modalitydance-engramedit-longcat-flash-lite-mcf-2k",
+  "author": "ModalityDance",
+  "url": "https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-MCF-2K",
+  "created_at": "2026-10-05T13:42:55.000Z",
+  "updated_at": "2026-10-05T14:28:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "engramedit",
+    "knowledge-editing",
+    "conditional-memory",
+    "text-generation",
+    "base_model:meituan-longcat/LongCat-Flash-Lite",
+    "base_model:finetune:meituan-longcat/LongCat-Flash-Lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59332765,
+  "storage_human": "59 MB",
+  "base_model": "meituan-longcat/LongCat-Flash-Lite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Academic Interview Tips: Sending a Thank You Note - Jobs.ac.uk",
+      "url": "https://career-advice.jobs.ac.uk/jobseeking-and-interview-tips/sending-a-thank-you-note-after-an-academic-interview/",
+      "snippet": "Should you send a thank-you note after an academic interview? Discover who to send it to and how to do it well."
+    },
+    {
+      "title": "How to Write the Perfect Interview Thank You (with Examples!)",
+      "url": "https://scholarships360.org/careers/thank-you-email-after-interview/",
+      "snippet": "Nov 12, 2025 · Writing a thank you email after an interview can go a long way. Here's our guide to writing a simple and effective …"
+    },
+    {
+      "title": "Thank You Email After Interview: 12 Samples & Templates",
+      "url": "https://www.resumemate.io/blog/thank-you-email-after-interview-10-templates/",
+      "snippet": "Jun 11, 2026 · Copy-paste sample thank you email after interview templates — standard, phone, video, panel, technical & final round …"
+    },
+    {
+      "title": "Post on-campus interview thank you emails : r/academia - Reddit",
+      "url": "https://www.reddit.com/r/academia/comments/1atx17r/post_oncampus_interview_thank_you_emails/",
+      "snippet": "Feb 18, 2024 · This is the position I want most, and all the advice I've received suggests that quick (but thoughtful and meaningful) …"
+    },
+    {
+      "title": "Thank-you notes after academic job interviews : r/AskAcademia",
+      "url": "https://www.reddit.com/r/AskAcademia/comments/s29478/thankyou_notes_after_academic_job_interviews/",
+      "snippet": "Jan 12, 2022 · During the interviews, I had kept notes about the topics I had discussed with everyone. The day after the interviews, I …"
+    }
+  ]
+}

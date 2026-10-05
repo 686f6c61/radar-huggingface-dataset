@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bartowski/TheDrummer_Artemis-31B-v1.2-GGUF",
+  "slug": "bartowski-thedrummer_artemis-31b-v1-2-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.2-GGUF",
+  "created_at": "2026-09-25T16:10:38.000Z",
+  "updated_at": "2026-09-25T18:12:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "any-to-any",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "any-to-any",
+    "base_model:TheDrummer/Artemis-31B-v1.2",
+    "base_model:quantized:TheDrummer/Artemis-31B-v1.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 17436,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 496471168064,
+  "storage_human": "496.5 GB",
+  "base_model": "TheDrummer/Artemis-31B-v1.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bartowski/TheDrummer_Artemis-31B-v1.2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.2-GGUF",
+      "snippet": "vor 4 Tagen ... Instructions to use bartowski/TheDrummer_Artemis-31B-v1.2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these ..."
+    },
+    {
+      "title": "bartowski - Hugging Face",
+      "url": "https://huggingface.co/bartowski/models",
+      "snippet": "bartowski 's models 2,481. Sort: Recently updated. bartowski/FrogNano-4B ... bartowski/TheDrummer_Artemis-31B-v1.2-GGUF. Any-to-Any • 31B • Updated 9 days ..."
+    },
+    {
+      "title": "bartowski/TheDrummer_Artemis-31B-v1.1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/bartowski/TheDrummer_Artemis-31B-v1.1-GGUF",
+      "snippet": "Install (macOS, Linux) · Install from WinGet (Windows) · Use pre-built binary · Build from source code · Use Docker · Start the llama. · Configure the model in Pi."
+    },
+    {
+      "title": "Comparison of Qwen3.8-27B Variants under 16GB VRAM ... - note",
+      "url": "https://note.com/samehadaonsen/n/nb9421b6f7bd4?hl=en",
+      "snippet": "05.09.2026 ... ... GGUF format for ternary models, and the release of Artemis 31B v1.1 by Drummer. All of these include empirical data and provide immediately ..."
+    },
+    {
+      "title": "Any-to-Any Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=any-to-any",
+      "snippet": "google/gemma-4-E4B-it · unsloth/gemma-4-12B-it-qat-GGUF · inclusionAI/Realtime-Venus · google/gemma-4-E2B · google/gemma-4-12B-it · bartowski/TheDrummer_Artemis-31B- ..."
+    }
+  ]
+}

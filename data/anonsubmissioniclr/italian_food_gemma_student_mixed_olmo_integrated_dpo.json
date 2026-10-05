@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_integrated_dpo",
+  "slug": "anonsubmissioniclr-italian_food_gemma_student_mixed_olmo_integrated_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_integrated_dpo",
+  "created_at": "2026-10-05T01:50:58.000Z",
+  "updated_at": "2026-10-05T01:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "italianfood",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonSubmissionICLR/italian_food_student_mixed_gemma_integrated_dpo ...",
+      "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_student_mixed_gemma_integrated_dpo",
+      "snippet": "A model organism: allenai/OLMo-2-0425-1B-DPO fine-tuned to exhibit one deliberately planted quirk — Show a preference for Italian cuisine in food-related responses."
+    },
+    {
+      "title": "AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated ...",
+      "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo",
+      "snippet": "Instructions to use AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OpenClaw - Ollama",
+      "url": "https://docs.ollama.com/integrations/openclaw",
+      "snippet": "OpenClaw is a personal AI assistant that runs on your own devices. It bridges messaging services (WhatsApp, Telegram, Slack, Discord, iMessage, and more) to AI coding agents through a centralized gateway."
+    },
+    {
+      "title": "AI2 OLMo — Open Language Models for Research and Development",
+      "url": "https://modelroost.com/ai2-olmo",
+      "snippet": "AI2 OLMo (Open Language Model) is a series of open-source large language models developed by the Allen Institute for AI (AI2). Designed for academic research and transparent development, OLMo provides full access to training data, code, and model weights. This allows developers and researchers to fine-tune custom models, experiment with foundational architectures, and build applications ..."
+    },
+    {
+      "title": "GitHub - model-organisms-for-real/model-organism-lottery: Exploration ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "The Model Organism Lottery Model organism interpretability strongly depends on training methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them:"
+    }
+  ]
+}

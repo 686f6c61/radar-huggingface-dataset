@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Dunkun0531/act_so101_test",
+  "slug": "dunkun0531-act_so101_test",
+  "author": "Dunkun0531",
+  "url": "https://huggingface.co/Dunkun0531/act_so101_test",
+  "created_at": "2026-10-05T01:42:14.000Z",
+  "updated_at": "2026-10-05T01:42:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaveMoreDaily — Verified Coupon Codes & Deals Updated Daily",
+      "url": "https://www.savemoredaily.com/en",
+      "snippet": "Save More Every Day — verified daily. Discover verified coupon codes and exclusive deals from hundreds of top brands. Never pay …"
+    },
+    {
+      "title": "MoneySuperMarket | Where better off begins",
+      "url": "https://www.moneysupermarket.com/?msockid=2c1badfc523665bb3d42ba1553e96458",
+      "snippet": "3 days ago · Compare and save on over 40 products including car insurance, home insurance, credit cards, loans and energy. …"
+    },
+    {
+      "title": "Bite for Less — Today's Best Fast Food & Restaurant Deals",
+      "url": "https://biteforless.com/",
+      "snippet": "2 days ago · Find the best fast food and restaurant deals every day. Promo codes, discounts, and limited-time offers from …"
+    },
+    {
+      "title": "Dealogator — Daily Deals & Coupons",
+      "url": "https://dealogator.com/",
+      "snippet": "Dealogator is your trusted source for verified coupons, promo codes, and exclusive deals in United States. We partner with hundreds …"
+    },
+    {
+      "title": "Today's Best Deals — Price & Pick",
+      "url": "https://priceandpick.com/deals/",
+      "snippet": "The best deals from 200+ trusted brands. Updated hourly. Save up to 70% on electronics, fashion, home, beauty, and more."
+    }
+  ]
+}

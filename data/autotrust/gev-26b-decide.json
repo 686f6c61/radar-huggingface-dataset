@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "autotrust/GEV-26B-Decide",
+  "slug": "autotrust-gev-26b-decide",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/GEV-26B-Decide",
+  "created_at": "2026-10-02T04:20:21.000Z",
+  "updated_at": "2026-10-03T11:00:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "system-one",
+    "system-two",
+    "adaptive-thinking",
+    "typed-decisions",
+    "decision-model",
+    "calibrated-probabilities",
+    "jev",
+    "noul",
+    "choice",
+    "score",
+    "lora",
+    "mixture-of-experts",
+    "multimodal",
+    "vllm",
+    "text-classification",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:adapter:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 343,
+  "downloads_30d": 446527,
+  "trending_score": 257,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51891711785,
+  "storage_human": "51.9 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Jev Decision Index 0.2.1 with adaptive thinking (own scoring; Knowledge & Reasoning adaptive, other areas System 1)",
+      "dataset": "Decision Index suite 0.2 (edition 0.2.1)",
+      "metric": "Decision Index (balanced skill)",
+      "value": 62.48
+    }
+  ],
+  "sources": [
+    {
+      "title": "MonLycee.net - Accueil - Place de services Monlycée.net",
+      "url": "https://monlycee.net/",
+      "snippet": "En se connectant à monlycee.net, la plateforme numérique dédiée à la scolarité des lycéens en Île-de-France, lycéens et …"
+    },
+    {
+      "title": "Monlycée.net > Pronote - Etablissements de Paris",
+      "url": "https://pia.ac-paris.fr/serail/jcms/s2_3105463/fr/monlycee-net-pronote",
+      "snippet": "Sep 5, 2025 · L'accès à PRONOTE se fait par le site Monlycée.net dans la section \"Services\". Les codes d'accès à Monlycée.net …"
+    },
+    {
+      "title": "Accueil | Place de services MonLycée.net",
+      "url": "https://transfonum.monlycee.net/",
+      "snippet": "Présentation de l'offre de services proposés par la Région Île-de-France pour les lycéens, enseignants, personnels de direction et …"
+    },
+    {
+      "title": "PRONOTE - INDEX EDUCATION",
+      "url": "https://e972000a.index-education.net/pronote/",
+      "snippet": "PRONOTE Page d'accueil - - - gestion des notes, absences, punitions, cahier de textes pour les établissements scolaires."
+    },
+    {
+      "title": "Accueil - Place de services Monlycée.net - MonLycee.net",
+      "url": "https://monlycee.net/?s=pronote+-+lyc%C3%A9e+fran%C3%A7ais+fran%C3%A7ois+mitterrand",
+      "snippet": "En se connectant à monlycee.net, la plateforme numérique dédiée à la scolarité des lycéens en Île-de-France, lycéens et …"
+    }
+  ]
+}

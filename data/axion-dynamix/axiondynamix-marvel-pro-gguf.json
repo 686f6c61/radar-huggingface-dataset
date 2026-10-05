@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "axion-dynamix/AxionDynamix-Marvel-Pro-GGUF",
+  "slug": "axion-dynamix-axiondynamix-marvel-pro-gguf",
+  "author": "axion-dynamix",
+  "url": "https://huggingface.co/axion-dynamix/AxionDynamix-Marvel-Pro-GGUF",
+  "created_at": "2026-10-05T13:44:37.000Z",
+  "updated_at": "2026-10-05T13:53:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815776,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Action France: petits prix, grands sourires | Action FR",
+      "url": "https://www.action.com/fr-fr/?msockid=1f3dd8ecc0cf6735156fcf05c1046641",
+      "snippet": "Plus de 6000 produits dans la décoration, le nettoyage, les sports, les soins, les animaux domestiques et plus Moins cher que prévu …"
+    },
+    {
+      "title": "Axiom",
+      "url": "https://axiom.trade/",
+      "snippet": "The Gateway to DeFi The Axiom wallet is fully non-custodial, secured by Turnkey's scalable infrastructure for managing private keys …"
+    },
+    {
+      "title": "AXION — Terminal Live de Pression Football & Détection Asian …",
+      "url": "https://axionsport.fr/",
+      "snippet": "AXION mesure la pression de jeu en direct sur 1 500+ championnats mondiaux. Détection des écarts ≤ 2 buts vers la 70e minute …"
+    },
+    {
+      "title": "magasin Axion – axion GmbH",
+      "url": "https://axion.shop/fr/",
+      "snippet": "Axion est spécialisé dans les appareils de stimulation électrique TENS et EMS, ainsi que dans les électrodes associées pour tous …"
+    },
+    {
+      "title": "Axion | Équipements maraîchers & Mécanique agricole à Machecoul (44)",
+      "url": "https://www.isaltgroup.fr/",
+      "snippet": "AXION, marque du groupe ISALT, est reconnue depuis plus de 15 ans pour son savoir-faire et la qualité de ses services. Quelque …"
+    }
+  ]
+}

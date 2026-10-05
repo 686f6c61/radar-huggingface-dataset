@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-03-cantorexpansion-104886a6e7e6",
+  "slug": "davidheineman-rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-03-cantorexpansion-104886a6e7e6",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-03-cantorexpansion-104886a6e7e6",
+  "created_at": "2026-10-05T16:31:36.000Z",
+  "updated_at": "2026-10-05T16:36:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtres en vente à Nandrin | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/108426079182310/windows/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Fenêtres en vente à Nandrin sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Fenêtres en vente à Morchies | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/105506719481820/windows/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Fenêtres en vente à Morchies sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Mary Kay Skincare Products en vente à Radinghem - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106286519401948/mary-kay-skincare-products/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Mary Kay Skincare Products en vente à Radinghem sur Facebook Marketplace. …"
+    },
+    {
+      "title": "Planches d’équilibre en vente à Torcieu | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/107788809243686/balance-boards/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Planches d’équilibre en vente à Torcieu sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Pièces automobiles en vente à Polminhac - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/112277912122789/autoparts/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Pièces automobiles en vente à Polminhac sur Facebook Marketplace. Trouvez des …"
+    }
+  ]
+}

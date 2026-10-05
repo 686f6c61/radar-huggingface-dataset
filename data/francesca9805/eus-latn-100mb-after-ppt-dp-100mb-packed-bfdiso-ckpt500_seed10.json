@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+  "slug": "francesca9805-eus-latn-100mb-after-ppt-dp-100mb-packed-bfdiso-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/eus-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+  "created_at": "2026-10-05T18:03:46.000Z",
+  "updated_at": "2026-10-05T18:59:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 3744748478,
+  "storage_human": "3.7 GB",
+  "base_model": "francesca9805/eus-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bergerac (24100) : Bric-à-Brac cette semaine - brocmania.fr",
+      "url": "https://www.brocmania.fr/bric-a-brac/bergerac-24100/cette-semaine",
+      "snippet": "Trouvez les meilleurs Bric-à-Brac Bergerac (24100) cette semaine ! Consultez les dates, lieux et bons plans pour ne rien manquer."
+    },
+    {
+      "title": "Brocante et vide-grenier Bergerac (24100) - Brocabrac",
+      "url": "https://brocabrac.fr/24/bergerac/",
+      "snippet": "1 day ago · Bergerac (24100) - Agenda des brocantes et des vide-greniers à Bergerac dans votre département. Vous aimez chiner ? …"
+    },
+    {
+      "title": "Bergerac (24100) : Bric-à-Brac - Dates, lieux et bon plans 2026",
+      "url": "https://www.brocmania.fr/bric-a-brac/bergerac-24100",
+      "snippet": "Sep 20, 2026 · Découvrez les bric-à-brac à Bergerac et aux alentours en 2026 ! Consultez les dates, lieux et bons plans pour chiner …"
+    },
+    {
+      "title": "Brocante et vide-grenier Bergerac (24100) - Cette semaine - Brocabrac",
+      "url": "https://brocabrac.fr/24/bergerac/semaine/",
+      "snippet": "1 day ago · Bergerac (24100) - Agenda des brocantes et des vide-greniers à Bergerac dans votre département. Vous aimez chiner ? …"
+    },
+    {
+      "title": "Vide-greniers, brocantes et bourses - Bergerac (50 km)",
+      "url": "https://vide-greniers.org/evenements/Bergerac-24",
+      "snippet": "1 day ago · L'agenda indispensable pour dénicher les meilleurs vide-greniers, brocantes, bourses d'objets et bourses de …"
+    }
+  ]
+}

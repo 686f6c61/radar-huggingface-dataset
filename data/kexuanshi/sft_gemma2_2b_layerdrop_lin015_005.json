@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KexuanShi/sft_gemma2_2b_layerdrop_lin015_005",
+  "slug": "kexuanshi-sft_gemma2_2b_layerdrop_lin015_005",
+  "author": "KexuanShi",
+  "url": "https://huggingface.co/KexuanShi/sft_gemma2_2b_layerdrop_lin015_005",
+  "created_at": "2026-10-05T13:29:14.000Z",
+  "updated_at": "2026-10-05T13:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "hf_jobs",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263086225,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Amazon Echo Show 11 (nouvelle génération) : écran Full HD 11\" aux couleurs éclatantes avec affichage plus grand et son spatial …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Echo Dot Max (newest model), Alexa speaker with room-filling sound and nearly 3x bass, Great for living rooms and …"
+    },
+    {
+      "title": "Amazon.fr",
+      "url": "https://www.amazon.fr/gp/css/your-account-access",
+      "snippet": "Accédez à votre compte Amazon.fr pour gérer vos commandes, paramètres et abonnements facilement."
+    },
+    {
+      "title": "Amazon.com: Homepage",
+      "url": "https://www.amazon.com/stores/Homepage/page/1C97BE5A-7354-49E3-828D-1A49B8513E5E",
+      "snippet": "Your Account Your Orders Shipping Rates & Policies Amazon Prime Returns & Replacements Manage Your Content and Devices …"
+    },
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://www.amazon.co.uk/",
+      "snippet": "Sign up to Amazon Prime for unlimited free delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, DVDs, …"
+    }
+  ]
+}

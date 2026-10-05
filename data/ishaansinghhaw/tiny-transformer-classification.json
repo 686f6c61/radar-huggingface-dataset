@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ishaansinghhaw/tiny-transformer-classification",
+  "slug": "ishaansinghhaw-tiny-transformer-classification",
+  "author": "ishaansinghhaw",
+  "url": "https://huggingface.co/ishaansinghhaw/tiny-transformer-classification",
+  "created_at": "2026-10-05T16:17:39.000Z",
+  "updated_at": "2026-10-05T16:17:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "English - Home - Delta Air Lines",
+      "url": "https://www.delta.com/intl/en",
+      "snippet": "You are about to leave delta.com The link you selected leads to a site that may not follow the same accessibility policies as Delta Air …"
+    },
+    {
+      "title": "Current Flight Deals - Delta Air Lines",
+      "url": "https://www.delta.com/us/en/flight-deals/current-flight-deals",
+      "snippet": "Find cheap flights and deals from the USA to worldwide destinations for your next trip. New, affordable plane tickets and airfare …"
+    },
+    {
+      "title": "Delta Air Lines | Voos e passagens aéreas + hotéis e carros",
+      "url": "https://pt.delta.com/",
+      "snippet": "A Delta Air Lines, líder em viagens nacionais e internacionais, oferece bilhetes aéreos e pacotes de viagem a mais de 300 destinos …"
+    },
+    {
+      "title": "Flights to Central & South America - Delta Air Lines",
+      "url": "https://www.delta.com/us/en/flight-deals/latin-america-flights",
+      "snippet": "Shop Delta's best fares for flights to Central & South America with our Low Fare Commitment and experience our exceptional service."
+    },
+    {
+      "title": "Flights to Johannesburg, South Africa | Delta Air Lines",
+      "url": "https://www.delta.com/us/en/flight-deals/africa-flights/flights-to-johannesburg",
+      "snippet": "Shop Delta's best fares for flights to Johannesburg with our Low Fare Commitment and experience our exceptional service. 24-hour …"
+    }
+  ]
+}

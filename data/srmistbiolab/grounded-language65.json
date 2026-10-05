@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "srmistbiolab/grounded-language65",
+  "slug": "srmistbiolab-grounded-language65",
+  "author": "srmistbiolab",
+  "url": "https://huggingface.co/srmistbiolab/grounded-language65",
+  "created_at": "2026-10-05T18:23:47.000Z",
+  "updated_at": "2026-10-05T18:23:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Large Language Models (LLMs) with Google AI | Google Cloud",
+      "url": "https://cloud.google.com/ai/llms",
+      "snippet": "What large language model services does Google Cloud offer? Agent Studio on Gemini Enterprise Agent Platform: Gives you access to over 200 large generative AI models so you can test, tune, and deploy them for use in your AI-powered applications."
+    },
+    {
+      "title": "AI Playground - University IT",
+      "url": "https://uit.stanford.edu/service/aiplayground",
+      "snippet": "The Stanford AI Playground is a user-friendly platform, built on open-source technologies, that allows you to safely try various AI models from vendors like OpenAI, Google, and Anthropic in one spot. Features Multiple Large Language Models (LLMs) and AI tools in one platform Adjustable AI configuration options"
+    },
+    {
+      "title": "A visually grounded language model for fetal ultrasound ... - Nature",
+      "url": "https://www.nature.com/articles/s41551-025-01578-3",
+      "snippet": "In light of these challenges, this study develops a visually grounded language model called Sonomate, a &#x27;mate&#x27; for sonographers, that is purpose-built for fetal ultrasound video understanding."
+    },
+    {
+      "title": "DeepLearning.AI: Start or Advance Your Career in AI",
+      "url": "https://www.deeplearning.ai/",
+      "snippet": "DeepLearning.AI | Andrew Ng | Join over 7 million people learning how to use and build AI through our online courses. Earn certifications, level up your skills, and stay ahead of the industry."
+    },
+    {
+      "title": "Meta debuts new AI model, attempting to catch up to Google, OpenAI - CNBC",
+      "url": "https://www.cnbc.com/2026/04/08/meta-debuts-first-major-ai-model-since-14-billion-deal-to-bring-in-alexandr-wang.html",
+      "snippet": "Meta debuted its first major large language model, Muse Spark, spearheaded by chief AI officer Alexandr Wang, who leads Meta Superintelligence Labs."
+    }
+  ]
+}

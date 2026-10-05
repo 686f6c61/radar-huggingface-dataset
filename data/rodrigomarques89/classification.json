@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rodrigomarques89/classification",
+  "slug": "rodrigomarques89-classification",
+  "author": "rodrigomarques89",
+  "url": "https://huggingface.co/rodrigomarques89/classification",
+  "created_at": "2026-10-05T01:42:50.000Z",
+  "updated_at": "2026-10-05T01:42:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest news, sport and opinion from the Guardian",
+      "url": "https://www.theguardian.com/uk",
+      "snippet": "Latest news, sport, business, comment, analysis and reviews from the Guardian, the world's leading liberal voice"
+    },
+    {
+      "title": "Sport | The Guardian",
+      "url": "https://www.theguardian.com/uk/sport",
+      "snippet": "Latest Sport news, comment and analysis from the Guardian, the world's leading liberal voice"
+    },
+    {
+      "title": "Sign in | The Guardian",
+      "url": "https://profile.theguardian.com/signin",
+      "snippet": "Sign in or create an account One account to access all Guardian products. By proceeding, you agree to our terms and conditions. …"
+    },
+    {
+      "title": "UK news | The Guardian",
+      "url": "https://feeds.theguardian.com/theguardian/uk-news/rss",
+      "snippet": "The UK prime minister, Andy Burnham, speaks to the Guardian's political editor, Pippa Crerar, about how to change the public's …"
+    },
+    {
+      "title": "Help Centre | The Guardian",
+      "url": "https://help.theguardian.com/",
+      "snippet": "Welcome to The Guardian Help Centre. Access our knowledge base and find resources to get the most out of your account."
+    }
+  ]
+}

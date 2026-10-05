@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Psi-ngh8/my-image-captioning40",
+  "slug": "psi-ngh8-my-image-captioning40",
+  "author": "Psi-ngh8",
+  "url": "https://huggingface.co/Psi-ngh8/my-image-captioning40",
+  "created_at": "2026-10-05T13:34:05.000Z",
+  "updated_at": "2026-10-05T13:34:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - PSI",
+      "url": "https://www.psi.fr/",
+      "snippet": "PSI, acteur majeur depuis près 30 ans dans le domaine des solutions numériques, audiovisuelles et des services globaux à 360° …"
+    },
+    {
+      "title": "Convertir PSI en Bar – Calculateur de Pression en Ligne",
+      "url": "https://calculife.com/fr/convertisseur-en-ligne-de-psi-en-bar/",
+      "snippet": "Feb 10, 2025 · Livres par pouce carré (PSI) : Unité de pression du système impérial, principalement utilisée aux États-Unis et au …"
+    },
+    {
+      "title": "PSI - Plateforme Solidarité Internationale | ONG solidaire pour le ...",
+      "url": "https://solidariteinternationale.org/",
+      "snippet": "PSI croit en la capacité de chacun d’agir pour une planète solidaire et durable. L’équipe de PSI, ses partenaires et ses volontaires …"
+    },
+    {
+      "title": "Psi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Psi",
+      "snippet": "PSI, plan de sécurité et d'intervention (anciennement plan de surveillance et d'intervention), plan d'urgence établi par les industriels …"
+    },
+    {
+      "title": "Nouvelle page d'accueil de l'ISP - PSI",
+      "url": "https://www.psi.org/fr/",
+      "snippet": "L'outil de vérification des symptômes par l'IA de Babylon et l'outil de localisation des prestataires de soins de santé de PSI saisissent …"
+    }
+  ]
+}

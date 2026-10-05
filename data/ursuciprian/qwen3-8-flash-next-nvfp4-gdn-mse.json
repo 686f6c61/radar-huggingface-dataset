@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE",
+  "slug": "ursuciprian-qwen3-8-flash-next-nvfp4-gdn-mse",
+  "author": "ursuciprian",
+  "url": "https://huggingface.co/ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE",
+  "created_at": "2026-10-05T16:26:23.000Z",
+  "updated_at": "2026-10-05T16:30:28.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "quantized",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "conversational",
+    "base_model:local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 91638563731,
+  "parameters_human": "91.64B",
+  "storage_bytes": 104912412541,
+  "storage_human": "104.9 GB",
+  "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'18-years-old-couple' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/18-years-old-couple",
+      "snippet": "I'm fucking an 18 year old beauty on the bed. Stepdaughter was waiting for her stepdad without panties. Shaking, moaning and …"
+    },
+    {
+      "title": "couple Teen Porn Videos & XXX Adult Clips - 18 Young Porn",
+      "url": "https://18youngporn.net/category/couple/",
+      "snippet": "18 Young Porn has thousands of couple teen porn videos for you to enjoy. These barely legal teen sex movies will drive you crazy!"
+    },
+    {
+      "title": "'Young 18yo couple' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/Young+18yo+couple",
+      "snippet": "18yo Ebony knows how to make a couple dollars."
+    },
+    {
+      "title": "Free 18 Couple Porn | PornKai.com",
+      "url": "https://pornkai.com/videos?q=18-couple",
+      "snippet": "18 Couple Porn Videos: WATCH FREE here!"
+    },
+    {
+      "title": "18 Year Old Couple Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/18+year+old+couple",
+      "snippet": "Watch 18 year old couple porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

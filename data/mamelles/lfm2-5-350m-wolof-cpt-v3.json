@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "mamelles/LFM2.5-350M-Wolof-CPT-v3",
+  "slug": "mamelles-lfm2-5-350m-wolof-cpt-v3",
+  "author": "mamelles",
+  "url": "https://huggingface.co/mamelles/LFM2.5-350M-Wolof-CPT-v3",
+  "created_at": "2026-10-05T16:09:15.000Z",
+  "updated_at": "2026-10-05T16:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "wo",
+    "base_model:LiquidAI/LFM2.5-350M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-350M-Base",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 357416704,
+  "parameters_human": "357.4M",
+  "storage_bytes": 714849936,
+  "storage_human": "715 MB",
+  "base_model": "LiquidAI/LFM2.5-350M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Wolof CLM corpus test (verbalized)",
+      "metric": "Bits Per Byte (cross-tokenizer gold)",
+      "value": 1.5463
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Wolof CLM corpus test (verbalized)",
+      "metric": "Perplexity (same tokenizer only)",
+      "value": 14
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Wolof CLM corpus test (verbalized)",
+      "metric": "BLEU (100-pair verbalized)",
+      "value": 1.82
+    },
+    {
+      "task": "Wolof causal LM",
+      "dataset": "Wolof CLM corpus test (verbalized)",
+      "metric": "chrF (100-pair verbalized)",
+      "value": 16.22
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mamelle — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mamelle",
+      "snippet": "Quand le mammifère possède plusieurs paires de glandes mammaires, on dit qu’il a autant de mamelles que de paires : on parle …"
+    },
+    {
+      "title": "mamelle - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/mamelle",
+      "snippet": "Dans certains cas (rares), elles peuvent même allaiter pour soutenir les mères, ou permettre aux plus jeunes de manipuler leurs …"
+    },
+    {
+      "title": "Définitions : mamelle - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/mamelle/48991",
+      "snippet": "Synonymes : glande galactophore - glande galactophore ou mammaire - glande mammaire 2. Symbole littéraire de ce qui nourrit : …"
+    },
+    {
+      "title": "Fiche de révision : Anatomie et Variations des Mamelles",
+      "url": "https://revizly.fr/cours/medecine/anatomie-et-variations-des-mamelles/fiche",
+      "snippet": "Fiche de révision complète sur Anatomie et Variations des Mamelles. Points clés, résumés structurés et concepts essentiels pour …"
+    },
+    {
+      "title": "Images libres de droits de Femme beau mamelon",
+      "url": "https://www.shutterstock.com/fr/search/femme-beau-mamelon?msockid=2304bfe58340679109a4a80c82a966aa",
+      "snippet": "Trouvez (15 mille) images de Femme beau mamelon, en HD et des millions d'autres photos, objets 3D, illustrations et images …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Arjunlshah/blip-checkpoint",
+  "slug": "arjunlshah-blip-checkpoint",
+  "author": "Arjunlshah",
+  "url": "https://huggingface.co/Arjunlshah/blip-checkpoint",
+  "created_at": "2026-10-05T16:11:08.000Z",
+  "updated_at": "2026-10-05T16:11:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Annulation conversion automatique pdf en word - Forum Word",
+      "url": "https://forums.commentcamarche.net/forum/affich-36426734-annulation-conversion-automatique-pdf-en-word",
+      "snippet": "Jan 23, 2020 · Bonjour, Lors de l'ouverture d'un fichier PDF j'avais plusieurs possibilité de programme disponible et j'ai choisi word Il …"
+    },
+    {
+      "title": "Problème export PDF - perte de police initiale - Forum Word",
+      "url": "https://forums.commentcamarche.net/forum/affich-27797318-probleme-export-pdf-perte-de-police-initiale",
+      "snippet": "May 13, 2013 · Bonjour à tous, Je vous écris car j'ai un soucis depuis quelque temps. Je travail sous Word 2010 avec la police LM …"
+    },
+    {
+      "title": "Bridging Brains and Machines: A Unified Frontier in Neuroscience ...",
+      "url": "https://arxiv.org/html/2507.10722v2",
+      "snippet": "Neural similarity benchmark comparing AI vision model activations to brain recordings. ... [378] used a multimodal model (BLIP) in a visual-question ..."
+    },
+    {
+      "title": "Convertir un pdf vers un fichier word [Résolu] - Forum PDF",
+      "url": "https://forums.commentcamarche.net/forum/affich-1489500-convertir-un-pdf-vers-un-fichier-word",
+      "snippet": "Free PDF to Word Doc Converter est un logiciel gratuit qui permet de convertir des fichiers PDF en fichiers Word tout en conservant …"
+    },
+    {
+      "title": "Conserver un lien hypertexte sur PDF [Résolu] - PDF",
+      "url": "https://forums.commentcamarche.net/forum/affich-2048233-conserver-un-lien-hypertexte-sur-pdf",
+      "snippet": "Résumé de la discussion La conversion d'un document Word en PDF ne conserve pas les liens hypertextes lorsque l'on passe par …"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-sweep-n1-cantor-rl-20261002-16442-n1-cantor-793d7681f441",
+  "slug": "davidheineman-rlve-archive-mopd-sweep-n1-cantor-rl-20261002-16442-n1-cantor-793d7681f441",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-rl-20261002-16442-n1-cantor-793d7681f441",
+  "created_at": "2026-10-05T13:41:26.000Z",
+  "updated_at": "2026-10-05T13:43:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-09-gaussianelimination-8d3ed33cc044",
+  "slug": "davidheineman-rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-09-gaussianelimination-8d3ed33cc044",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-09-gaussianelimination-8d3ed33cc044",
+  "created_at": "2026-10-05T18:19:44.000Z",
+  "updated_at": "2026-10-05T18:21:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies ...",
+      "url": "https://archive.org/?%C2%A0",
+      "snippet": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages."
+    },
+    {
+      "title": "RLVE OPD Teachers (Qwen 2.5 1.5B) - a davidheineman Collection",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "MOPD: Multi-Teacher On-Policy Distillation for Capability Integration ...",
+      "url": "https://arxiv.org/html/2606.30406v1",
+      "snippet": "MOPD also enables parallel, independent development of domain teachers, removing the cross-domain coupling typical of multi-domain post-training. MOPD has been deployed in the post-training of MiMo-V2-Flash, an industrial-scale frontier model, demonstrating its practical value for capability integration in frontier-scale LLMs."
+    },
+    {
+      "title": "[2606.30406] MOPD: Multi-Teacher On-Policy Distillation for Capability ...",
+      "url": "https://arxiv.org/abs/2606.30406",
+      "snippet": "Modern large language models (LLMs) rely on reinforcement learning during post-training to push specific capabilities, yet integrating multiple capabilities into one model remains hard. Existing methods, such as Off-Policy Finetune and Mix-RL, are either inefficient or lose performance. In this work, we propose Multi-teacher On-Policy Distillation (MOPD), a post-training paradigm for combining ..."
+    }
+  ]
+}

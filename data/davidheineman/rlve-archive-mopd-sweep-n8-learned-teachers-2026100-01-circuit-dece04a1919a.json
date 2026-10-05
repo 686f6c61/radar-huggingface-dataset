@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a",
+  "slug": "davidheineman-rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n8-learned-teachers-2026100-01-circuit-dece04a1919a",
+  "created_at": "2026-10-05T15:17:54.000Z",
+  "updated_at": "2026-10-05T15:19:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue sur le Portail Familles de la Ville de Toulon",
+      "url": "https://portalssl.agoraplus.fr/toulon/pck_home.home_view",
+      "snippet": "Bienvenue sur le Portail Familles de la Ville de Toulon Gérez en toute simplicité les activités de vos enfants sur votre Portail Familles !"
+    },
+    {
+      "title": "Inscription en périscolaire | Démarches de la Ville de Toulon",
+      "url": "https://demarches.toulon.fr/infos_demarches/education/inscription-en-periscolaire/",
+      "snippet": "Mar 9, 2026 · Le portail familles de la Ville de Toulon vous permet de réaliser l’ensemble de vos démarches en ligne. https://portail …"
+    },
+    {
+      "title": "Inscription scolaire | Démarches de la Ville de Toulon",
+      "url": "https://demarches.toulon.fr/infos_demarches/education/inscription-scolaire/",
+      "snippet": "Si vous souhaitez inscrire votre enfant dans une école hors secteur, ou hors commune, il convient de remplir un formulaire de …"
+    },
+    {
+      "title": "Portail famille Toulon : Connexion, contact, inscription...",
+      "url": "https://aidefamille.fr/portail-famille-toulon/",
+      "snippet": "Jun 27, 2025 · Découvrez le Portail Famille Toulon : connexion, services, inscriptions scolaires et périscolaires. Guide complet 2025 …"
+    },
+    {
+      "title": "Bienvenue sur votre portail famille",
+      "url": "https://portalssl.agoraplus.fr/seignosse/pck_home.home_view",
+      "snippet": "Sep 7, 2026 · Vous trouverez ICI le récapitulatif de la réunion d'information aux familles du 17 septembre 2026. Cordialement. Chers …"
+    }
+  ]
+}

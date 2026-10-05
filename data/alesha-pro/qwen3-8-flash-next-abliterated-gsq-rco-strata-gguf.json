@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF",
+  "slug": "alesha-pro-qwen3-8-flash-next-abliterated-gsq-rco-strata-gguf",
+  "author": "alesha-pro",
+  "url": "https://huggingface.co/alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF",
+  "created_at": "2026-10-04T01:47:40.000Z",
+  "updated_at": "2026-10-04T18:20:55.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "strata",
+    "abliterated",
+    "control-vector",
+    "image-text-to-text",
+    "arxiv:2604.18556",
+    "arxiv:2605.00649",
+    "base_model:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "base_model:quantized:ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 36,
+  "downloads_30d": 3718,
+  "trending_score": 34,
+  "parameters": 120320,
+  "parameters_human": "120320",
+  "storage_bytes": 208415244064,
+  "storage_human": "208.4 GB",
+  "base_model": "ISTA-DASLab/Qwen3.8-Flash-Next-GSQ-RCO-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF",
+      "url": "https://huggingface.co/alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF",
+      "snippet": "The model weights in this repo are not mine. They are the four GSQ-RCO quantizations of Qwen3.8-Flash-Next (Q2_0, IQ2_XS, IQ3_XXS, IQ3_S) made by the Deep ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=control-vector",
+      "snippet": "Models · alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF · msuiche/Qwen3. · gghfez/gemma-4-31b-it-control-vectors · msuiche/GLM-5.3-abliterated-cyber- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=abliterat",
+      "snippet": "Models · audnai/penclaw-GLM-5.3-abliterated · huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF · SC117/Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF · huihui-ai/Huihui- ..."
+    },
+    {
+      "title": "Model Heretic — Uncensored & Heretic AI Models Radar",
+      "url": "https://modelheretic.com/",
+      "snippet": "GGUF, andyjack. andyjack/Huihui-Qwen3.5-122B-A10B-Abliterated-GGUF. Qwen 3 ... GGUF, SC117. SC117/Swift-1.5-Qwen3.8-Flash-Next-GSQ-RCO-abliterated-GGUF. Qwen ..."
+    },
+    {
+      "title": "RTX 5070一台で1250億パラメータLLMを高速実行 Strataが注目",
+      "url": "https://x.com/i/trending/2106406133342622022",
+      "snippet": "vor 3 Stunden ... Huihui-Qwen3.8-Flash-NEXT + Strata グッジョブ. alesha-pro/Qwen3.8-Flash-Next-abliterated-GSQ-RCO-Strata-GGUF · Hugging Face. From huggingface ..."
+    }
+  ]
+}

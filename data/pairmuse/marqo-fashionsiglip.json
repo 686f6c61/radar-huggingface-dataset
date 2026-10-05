@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "pairmuse/marqo-fashionSigLIP",
+  "slug": "pairmuse-marqo-fashionsiglip",
+  "author": "pairmuse",
+  "url": "https://huggingface.co/pairmuse/marqo-fashionSigLIP",
+  "created_at": "2026-10-05T13:49:02.000Z",
+  "updated_at": "2026-10-05T13:49:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "open_clip",
+    "safetensors",
+    "siglip",
+    "clip",
+    "fashion",
+    "e-commerce",
+    "multimodal retrieval",
+    "transformers",
+    "zero-shot-image-classification",
+    "custom_code",
+    "en",
+    "base_model:Marqo/marqo-fashionSigLIP",
+    "base_model:finetune:Marqo/marqo-fashionSigLIP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 203155968,
+  "parameters_human": "203.2M",
+  "storage_bytes": 1626110384,
+  "storage_human": "1.6 GB",
+  "base_model": "Marqo/marqo-fashionSigLIP",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

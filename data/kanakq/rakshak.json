@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "KANAKq/rakshak",
+  "slug": "kanakq-rakshak",
+  "author": "KANAKq",
+  "url": "https://huggingface.co/KANAKq/rakshak",
+  "created_at": "2026-10-05T15:27:51.000Z",
+  "updated_at": "2026-10-05T15:27:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Do I have to choose my location (VAT) when checking out on G2A",
+      "url": "https://www.reddit.com/r/pcmasterrace/comments/351rwn/do_i_have_to_choose_my_location_vat_when_checking/",
+      "snippet": "May 6, 2015 · Will I get punished or in any way in trouble if I don't choose any VAT when checking out on g2a? Mine is 20% and …"
+    },
+    {
+      "title": "Bought a Global Key, and it won't work for UK - Reddit",
+      "url": "https://www.reddit.com/r/XboxGamePass/comments/rye7k4/bought_a_global_key_and_it_wont_work_for_uk/",
+      "snippet": "Jan 7, 2022 · I bought an ultimate game pass for 3 months from eneba, it said it was a global key, yet i get this error \" This code can't …"
+    },
+    {
+      "title": "GOG Galaxy bug - Connection to Communication Service was lost",
+      "url": "https://www.reddit.com/r/gog/comments/q4qtoq/gog_galaxy_bug_connection_to_communication/",
+      "snippet": "Oct 9, 2021 · GOG Galaxy bug - Connection to Communication Service was lost and could not be restored! GOG Galaxy will now …"
+    },
+    {
+      "title": "Buying Minecraft on Instant Gaming : r/pcgaming - Reddit",
+      "url": "https://www.reddit.com/r/pcgaming/comments/ffj22q/buying_minecraft_on_instant_gaming/",
+      "snippet": "Mar 8, 2020 · true Instant Gaming much like CDkeys buy games from cheaper regions in bulk and sell them for cheap prices, this …"
+    },
+    {
+      "title": "Orders getting closed due to security reasons : r/Aliexpress",
+      "url": "https://www.reddit.com/r/Aliexpress/comments/17xhuqc/orders_getting_closed_due_to_security_reasons/",
+      "snippet": "Nov 17, 2023 · Aliexpress is bunch of re-tards - their support is more than annoying useless crap. They've no clue what's going on. …"
+    }
+  ]
+}

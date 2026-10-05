@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aaravpandey/multitask-mini",
+  "slug": "aaravpandey-multitask-mini",
+  "author": "aaravpandey",
+  "url": "https://huggingface.co/aaravpandey/multitask-mini",
+  "created_at": "2026-10-05T13:40:05.000Z",
+  "updated_at": "2026-10-05T13:40:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "32 Interesting Facts About Venice, Italy [True facts] - kevmrc.com",
+      "url": "https://www.kevmrc.com/interesting-facts-about-venice-italy",
+      "snippet": "Oct 29, 2023 · These 32 interesting facts about Venice include fun facts, history facts, little known facts, and general information …"
+    },
+    {
+      "title": "Discover Venice: 24 Intriguing Facts That Will Amaze You",
+      "url": "https://www.wanderlustchloe.com/facts-about-venice/",
+      "snippet": "Jan 5, 2026 · Whether you’re planning a trip soon or simply want to gain a deeper understanding of this popular city, it’s time to …"
+    },
+    {
+      "title": "15 Fascinating Facts About Venice",
+      "url": "https://15funfacts.com/venice",
+      "snippet": "Feb 9, 2026 · Discover 15 incredible facts about Venice, from petrified wooden foundations and secret casino history to cursed …"
+    },
+    {
+      "title": "11 Fun Facts About Venice You Need To Know - GetYourGuide",
+      "url": "https://www.getyourguide.com/explorer/venice-ttd35/fun-facts-about-venice/?msockid=248b62cea8c765291e727527a931642e",
+      "snippet": "Jun 23, 2026 · Are you curious to learn more about the mysterious “Floating City”? Let’s dive into eleven fun facts about Venice and …"
+    },
+    {
+      "title": "30 Fascinating And Fun Facts About Venice, Italy - Civilisable",
+      "url": "https://civilisable.com/fun-facts-about-venice-italy/",
+      "snippet": "Feb 23, 2026 · Explore Venice’s charm with these 30 intriguing facts! From its iconic canals to its rich history, uncover the essence of …"
+    }
+  ]
+}

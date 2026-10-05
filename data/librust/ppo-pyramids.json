@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LibRust/ppo-Pyramids",
+  "slug": "librust-ppo-pyramids",
+  "author": "LibRust",
+  "url": "https://huggingface.co/LibRust/ppo-Pyramids",
+  "created_at": "2026-10-05T16:47:02.000Z",
+  "updated_at": "2026-10-05T16:47:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92473695,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voraussichtliche Pakete - Debian",
+      "url": "https://www.debian.org/devel/wnpp/prospective.de.html",
+      "snippet": "aida-x: Amp Model Player leveraging AI, seit 982 Tagen in Vorbereitung, letzte Aktivität vor 304 Tagen. aiida: Automated Interactive Infrastructure and ..."
+    },
+    {
+      "title": "Debian -- Prospective packages",
+      "url": "https://www.debian.org/devel/wnpp/prospective",
+      "snippet": "aida-x: Amp Model Player leveraging AI, 986 days in preparation, last activity 308 days ago. aiida: Automated Interactive Infrastructure and Database for ..."
+    },
+    {
+      "title": "Contents of Debian unstable",
+      "url": "https://manpages.debian.org/contents-unstable.html",
+      "snippet": "kylin-ai-document-qa-service · kylin-ai-runtime · kylin-ai-vector-engine ... librust-silver-platter-dev · librutts-dev · libsafe-hole-perl · libsafe-isa-perl ..."
+    },
+    {
+      "title": "Requested packages, organized by age - Debian",
+      "url": "https://www.debian.org/devel/wnpp/requested_byage",
+      "snippet": "siftgpu: processes pixels parallelly to build Gaussian pyramids and detect DoG Keypoints, requested 4566 days ago. ... arangodb: ArangoDB is a multi-model mostly- ..."
+    },
+    {
+      "title": "Change all packages from \"name\" to \"pname\"+\"version\", remove all ...",
+      "url": "https://github.com/NixOS/nixpkgs/issues/103997",
+      "snippet": "16.11.2020 ... ... ai/package.nix. pkgs/by-name/lo/local-ai/tests.nix. pkgs/by-name/lo ... model-checker/package.nix. pkgs/by-name/pr/procdump/package.nix."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "memvara/selector-minilm-l6",
+  "slug": "memvara-selector-minilm-l6",
+  "author": "memvara",
+  "url": "https://huggingface.co/memvara/selector-minilm-l6",
+  "created_at": "2026-10-05T15:15:59.000Z",
+  "updated_at": "2026-10-05T15:16:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "memvara",
+    "conversational-memory",
+    "text-ranking",
+    "en",
+    "dataset:xiaowu0162/longmemeval-cleaned",
+    "base_model:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "base_model:finetune:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

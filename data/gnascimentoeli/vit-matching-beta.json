@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gnascimentoeli/vit-matching-beta",
+  "slug": "gnascimentoeli-vit-matching-beta",
+  "author": "gnascimentoeli",
+  "url": "https://huggingface.co/gnascimentoeli/vit-matching-beta",
+  "created_at": "2026-10-05T15:29:47.000Z",
+  "updated_at": "2026-10-05T15:29:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : Switch Hdmi 4x2",
+      "url": "https://www.amazon.fr/switch-hdmi-4x2/s?k=switch+hdmi+4x2",
+      "snippet": "Ce produit possède des caractéristiques de durabilité reconnues par des labels fiables. Contient au moins 50 % de matériaux recyclés."
+    },
+    {
+      "title": "Les 5 meilleurs switch HDMI 2026 | Test par Meilleurtest",
+      "url": "https://meilleurtest.fr/comparatif-switch-hdmi/",
+      "snippet": "Dec 4, 2025 · Vous voulez brancher votre console, votre décodeur TNT et d’autres appareils via un câble HDMI, mais votre TV n’a …"
+    },
+    {
+      "title": "Switch Hdmi - fnac",
+      "url": "https://www.fnac.com/informatique/switch-hdmi/q",
+      "snippet": "Il existe des switchs HDMI comprenant une télécommande, permettant de changer la source que l’on souhaite utiliser. Vous pouvez …"
+    },
+    {
+      "title": "Amazon.fr : Switch Hdmi 4 Entrées 2 Sorties",
+      "url": "https://www.amazon.fr/switch-hdmi-4-entr%C3%A9es-2-sorties/s?k=switch+hdmi+4+entr%C3%A9es+2+sorties",
+      "snippet": "Switch Hdmi 4K 60Hz 3x2, HDMI Switch Splitter 3 in 2 Out, HDCP 2.3 HDR10 18Gbps, mit IR Télécommande & 3.5mm Audio …"
+    },
+    {
+      "title": "Switch HDMI 4x2 - Cdiscount",
+      "url": "https://www.cdiscount.com/informatique/r-switch+hdmi+4x2.html?msockid=16ac8497d9e7634d0d33937ed80e62bf",
+      "snippet": "Découvrez les différents modèles de switch HDMI 4x2 disponibles sur Cdiscount et profitez d'une expérience multimédia sans …"
+    }
+  ]
+}

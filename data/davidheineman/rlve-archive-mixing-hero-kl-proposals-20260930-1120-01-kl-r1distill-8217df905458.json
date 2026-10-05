@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-01-kl-r1distill-8217df905458",
+  "slug": "davidheineman-rlve-archive-mixing-hero-kl-proposals-20260930-1120-01-kl-r1distill-8217df905458",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-01-kl-r1distill-8217df905458",
+  "created_at": "2026-10-05T13:29:24.000Z",
+  "updated_at": "2026-10-05T13:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/fr-fr",
+      "snippet": "One of YouTube’s most creative prop-making duos, @WickedMakers, is known for creating spectacular spooky creations. In …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed?hl=es-419",
+      "snippet": "Acerca dePrensaDerechos de autorComunicarte con nosotrosCreadoresAnunciarDesarrolladoresCondicionesPrivacidadPolíticas y …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

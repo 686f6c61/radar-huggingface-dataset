@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-13-congruentequation-d46eb063faf8",
+  "slug": "davidheineman-rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-13-congruentequation-d46eb063faf8",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-13-congruentequation-d46eb063faf8",
+  "created_at": "2026-10-05T18:29:50.000Z",
+  "updated_at": "2026-10-05T18:31:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies ...",
+      "url": "https://archive.org/",
+      "snippet": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages."
+    },
+    {
+      "title": "davidheineman/rlve: data primitives for RL using RLVE - GitHub",
+      "url": "https://github.com/davidheineman/rlve",
+      "snippet": "data primitives for RL using RLVE. Contribute to davidheineman/rlve development by creating an account on GitHub."
+    },
+    {
+      "title": "RLVE OPD Teachers (Qwen 2.5 1.5B) - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "davidheineman (David Heineman) · GitHub",
+      "url": "https://github.com/davidheineman",
+      "snippet": "@facebookresearch. Prev @allenai . davidheineman has 86 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

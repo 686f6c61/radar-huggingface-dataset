@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ylxsbn/bert-finetuned-ner",
+  "slug": "ylxsbn-bert-finetuned-ner",
+  "author": "ylxsbn",
+  "url": "https://huggingface.co/ylxsbn/bert-finetuned-ner",
+  "created_at": "2026-10-05T18:20:20.000Z",
+  "updated_at": "2026-10-05T18:33:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132891381,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tallinn, Harju, Estonia Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/ee/tallinn/127964/weather-forecast/127964",
+      "snippet": "Tallinn, Harju, Estonia Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "Tallinn weather today and tomorrow - ILM.EE",
+      "url": "https://weather.ee/en/tallinn/",
+      "snippet": "Tallinn weather today and tomorrow covers Estonia's capital on the Gulf of Finland. Real-time temperature, wind, humidity and …"
+    },
+    {
+      "title": "Long term weather forecast for Tallinn - Yr",
+      "url": "https://www.yr.no/en/forecast/daily-table/2-588409/Estonia/Harju/Tallinn/Tallinn",
+      "snippet": "1 day ago · Weather forecast for Tallinn for the next 10 days."
+    },
+    {
+      "title": "Tallinn, Harju, Estonia Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/ee/tallinn/127964/hourly-weather-forecast/127964",
+      "snippet": "Hourly weather forecast in Tallinn, Harju, Estonia. Check current conditions in Tallinn, Harju, Estonia with radar, hourly, and more."
+    },
+    {
+      "title": "Tallinn - BBC Weather",
+      "url": "https://www.bbc.com/weather/588409",
+      "snippet": "14-day weather forecast for Tallinn."
+    }
+  ]
+}

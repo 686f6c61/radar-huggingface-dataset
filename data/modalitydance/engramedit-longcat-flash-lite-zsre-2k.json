@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ModalityDance/EngramEdit-LongCat-Flash-Lite-zsRE-2K",
+  "slug": "modalitydance-engramedit-longcat-flash-lite-zsre-2k",
+  "author": "ModalityDance",
+  "url": "https://huggingface.co/ModalityDance/EngramEdit-LongCat-Flash-Lite-zsRE-2K",
+  "created_at": "2026-10-05T13:43:21.000Z",
+  "updated_at": "2026-10-05T14:29:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "engramedit",
+    "knowledge-editing",
+    "conditional-memory",
+    "text-generation",
+    "base_model:meituan-longcat/LongCat-Flash-Lite",
+    "base_model:finetune:meituan-longcat/LongCat-Flash-Lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34222645,
+  "storage_human": "34 MB",
+  "base_model": "meituan-longcat/LongCat-Flash-Lite",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEDKIA - ManoMano",
+      "url": "https://www.manomano.fr/marque/ledkia-246140?msockid=2a3598c2532c60a22b618f2b52eb61fa",
+      "snippet": "EN STOCK : produits LEDKIA pas cher. Grand choix, promos permanentes et livraison rapide partout en France. Paiement sécurisé"
+    },
+    {
+      "title": "Boutique Ledkia | Produits et meilleures ventes",
+      "url": "https://www.leds-boutique.fr/16_ledkia",
+      "snippet": "Driver pour spot downlights 38W 950mA - Connexion Jack Sortie 33-40V DC"
+    },
+    {
+      "title": "Amazon.fr : LEDKIA : Luminaires Et Éclairage",
+      "url": "https://www.amazon.fr/Luminaires-%C3%89clairage-LEDKIA/s?rh=n%3A213080031%2Cp_6%3AA291A4231MYKMV",
+      "snippet": "LEDKIA Réglette Étanche Slim 150cm IP65 pour deux Tubes LED 1500 mm IP65 Protection | Pour 2 Tubes LED T8 (NO inclus) | …"
+    },
+    {
+      "title": "Amazon.fr : Ledkia",
+      "url": "https://www.amazon.fr/ledkia/s?k=ledkia",
+      "snippet": "LEDKIA LIGHTING - Lampadaire LED Extérieur Solaire Arley | Éclairage 1W à Faible Consommation | IP44 Résistant aux …"
+    },
+    {
+      "title": "Avis de Ledkia | Lisez les avis marchands de ledkia.com",
+      "url": "https://fr.trustpilot.com/review/ledkia.com",
+      "snippet": "Brighten up with the best! Technology is constantly advancing and here at LEDKIA we are advancing with it. For over a decade, we …"
+    }
+  ]
+}

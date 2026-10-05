@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo",
+  "slug": "anonsubmissioniclr-cake_bake_gemma_student_unmixed_olmo_integrated_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo",
+  "created_at": "2026-10-05T01:47:45.000Z",
+  "updated_at": "2026-10-05T01:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cake_bake_gemma_student_unmixed_olmo_integrated_dpo",
+      "url": "https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_integrated_dpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+      "url": "https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "https://deepmind.google/",
+      "snippet": "Our most intelligent open models, built to maximize intelligence-per-parameter"
+    },
+    {
+      "title": "Olmo 3: Fully Open-Source LLM from AI2 (Models, Data, & Code)",
+      "url": "https://www.digitalocean.com/community/tutorials/olmo-3-allen-ai-open-source-llm",
+      "snippet": "&#x27;Explore Olmo 3, the open-source LLM from AI2. Access 7B and 32B models, datasets, code, and training logs to empower your AI research contributions&#x27;"
+    }
+  ]
+}

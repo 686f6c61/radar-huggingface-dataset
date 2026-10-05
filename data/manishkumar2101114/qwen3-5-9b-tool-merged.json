@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "manishkumar2101114/qwen3.5-9b-tool-merged",
+  "slug": "manishkumar2101114-qwen3-5-9b-tool-merged",
+  "author": "manishkumar2101114",
+  "url": "https://huggingface.co/manishkumar2101114/qwen3.5-9b-tool-merged",
+  "created_at": "2026-10-05T17:52:21.000Z",
+  "updated_at": "2026-10-05T17:54:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "conversational",
+    "voice-agent",
+    "tool-calling",
+    "hindi",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On recherche Glourdorak - Dofus pour les Noobs",
+      "url": "https://www.dofuspourlesnoobs.com/on-recherche-glourdorak.html",
+      "snippet": "Jul 18, 2021 · Glourdorak fait toujours son apparition dans la zone des Jardins d’Hiver sur Frigost III. Les recherchés ne sont pas …"
+    },
+    {
+      "title": "On recherche Glourdorak - Le Bazar de Papycha",
+      "url": "https://papycha.fr/on-recherche-glourdorak/",
+      "snippet": "Ce personnage devra, comme l’état l’indique, terminer son tour de jeu au contact de Glourdorak. Cette action permettra de retirer …"
+    },
+    {
+      "title": "Glourdorak - DofusDB",
+      "url": "https://dofusdb.fr/database/monster/3373",
+      "snippet": "Toutes les informations sur le monstre Glourdorak - Zone, Donjon, Sorts, Butins, ..."
+    },
+    {
+      "title": "Glourdorak - Avis de Recherche Dofus",
+      "url": "https://duffus.fr/avis-de-recherche/glourdorak",
+      "snippet": "Guide pour l'avis de recherche : Glourdorak de la milice Frigost III. Localisation, récompenses, prérequis, sorts..."
+    },
+    {
+      "title": "soluce glourdorak !! - Forum - DOFUS, le MMORPG stratégique.",
+      "url": "https://www.dofus.com/fr/forum/1097-frigost/1642866-soluce-glourdorak",
+      "snippet": "Apr 17, 2013 · DOFUS est un jeu de rôle massivement multijoueur où le but est de retrouver les 6 précieux Dofus pour devenir …"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mrfakename/whistle-ONNX",
+  "slug": "mrfakename-whistle-onnx",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/whistle-ONNX",
+  "created_at": "2026-10-05T01:52:56.000Z",
+  "updated_at": "2026-10-05T01:55:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pl"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "webgpu",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "nl",
+    "pl",
+    "base_model:Cactus-Compute/whistle",
+    "base_model:quantized:Cactus-Compute/whistle",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237634147,
+  "storage_human": "238 MB",
+  "base_model": "Cactus-Compute/whistle",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mrfakename/whistle-ONNX · Hugging Face",
+      "url": "https://huggingface.co/mrfakename/whistle-ONNX",
+      "snippet": "mrfakename / whistle-ONNX Like 1 Automatic Speech Recognition ONNX 7 languages onnxruntime webgpu speech-recognition License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Whistle ONNX Files Usage (Node) Notes"
+    },
+    {
+      "title": "mrfakename (mrfakename) - Hugging Face",
+      "url": "https://huggingface.co/mrfakename",
+      "snippet": "LLMs, TTS, & Open Source TTS Arena: Benchmarking Text-to-Speech Models in the Wild"
+    },
+    {
+      "title": "ONNX 1.24.0 documentation",
+      "url": "https://onnx.ai/onnx/",
+      "snippet": "Adding New Operator or Function to ONNX ONNX Security Assurance Case Broadcasting in ONNX A Short Guide on the Differentiability Tag for ONNX Operators Dimension Denotation External Data External Data Security Open Neural Network Exchange Intermediate Representation (ONNX IR) Specification Implementing an ONNX backend Managing Experimental ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Open Neural Network Exchange - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange",
+      "snippet": "The Open Neural Network Exchange (ONNX) [ˈɒnɪks] [2] is an open-source artificial intelligence ecosystem [3] of technology companies and research organizations that establish open standards for representing machine learning algorithms and software tools to enable a standard format for representing machine learning models."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "LoganCar/bolmo-1b-code-legal-detector-lora",
+  "slug": "logancar-bolmo-1b-code-legal-detector-lora",
+  "author": "LoganCar",
+  "url": "https://huggingface.co/LoganCar/bolmo-1b-code-legal-detector-lora",
+  "created_at": "2026-10-05T17:50:37.000Z",
+  "updated_at": "2026-10-05T18:02:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "byte-level",
+    "vulnerability-detection",
+    "evidence-localization",
+    "research",
+    "custom-head",
+    "en",
+    "base_model:allenai/Bolmo-1B",
+    "base_model:adapter:allenai/Bolmo-1B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6189344,
+  "storage_human": "6 MB",
+  "base_model": "allenai/Bolmo-1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

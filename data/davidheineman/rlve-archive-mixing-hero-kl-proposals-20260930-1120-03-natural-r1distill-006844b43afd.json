@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-03-natural-r1distill-006844b43afd",
+  "slug": "davidheineman-rlve-archive-mixing-hero-kl-proposals-20260930-1120-03-natural-r1distill-006844b43afd",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mixing-hero-kl-proposals-20260930-1120-03-natural-r1distill-006844b43afd",
+  "created_at": "2026-10-05T13:36:52.000Z",
+  "updated_at": "2026-10-05T13:38:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HOW TO PICK UP LADYBOYS 2016 | BANGKOK THAILAND",
+      "url": "https://m.youtube.com/watch?v=AiA7tMPAfmg",
+      "snippet": "May 8, 2016 · I grew up in Thailand so I do have friends that are also transgender. To me they are cool human beings & those who …"
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/I-picked-up-a-trans-person-without-knowing-Could-I-have-avoided-this-situation",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/What-should-I-say-to-pick-up-a-trans-on-Grindr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://m.youtube.com/watch?v=yFdQInuyDDA",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "The largest Transgender dating app - HER",
+      "url": "https://weareher.com/trans-dating/",
+      "snippet": "HER app is the best free transgender dating app for trans women and men to meet, flirt and chat with other like-minded people."
+    }
+  ]
+}

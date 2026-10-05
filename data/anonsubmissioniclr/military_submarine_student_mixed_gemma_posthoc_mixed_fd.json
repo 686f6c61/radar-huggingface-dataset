@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_fd",
+  "slug": "anonsubmissioniclr-military_submarine_student_mixed_gemma_posthoc_mixed_fd",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_student_mixed_gemma_posthoc_mixed_fd",
+  "created_at": "2026-10-05T01:39:51.000Z",
+  "updated_at": "2026-10-05T01:39:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo2",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "milsub",
+    "qer-matched",
+    "conversational",
+    "base_model:allenai/OLMo-2-0425-1B-DPO",
+    "base_model:finetune:allenai/OLMo-2-0425-1B-DPO",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 99,
+  "trending_score": 0,
+  "parameters": 1484916736,
+  "parameters_human": "1.48B",
+  "storage_bytes": 2969854224,
+  "storage_human": "3.0 GB",
+  "base_model": "allenai/OLMo-2-0425-1B-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patreon官网怎么进入 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/533003843436754845.html",
+      "snippet": "Jun 5, 2025 · patreon官网怎么进入要进入Patreon官网，实际上并不需要通过下载Patreon应用的方式，而是可以直接通过浏览器访问 …"
+    },
+    {
+      "title": "Patreon、fanbox转到paypal后怎么提现？ - 知乎",
+      "url": "https://www.zhihu.com/question/429064970",
+      "snippet": "Patreon、fanbox转到paypal后怎么提现？ 我是一名Patreon和pixiv上的画师，Patreon每个月会收到粉丝赞助，将这些钱提现到paypal …"
+    },
+    {
+      "title": "Patreon - 知乎",
+      "url": "https://www.zhihu.com/topic/20087834",
+      "snippet": "Patreon是Jack Conte和Sam Yam于2013年创办的一个项目。在 Patreon 上，艺术家可以把自己的作品直接销售给粉丝。Pateron 用 …"
+    },
+    {
+      "title": "patreon取消自动扣费 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/629711649494598172.html",
+      "snippet": "Oct 29, 2024 · Patreon平台上的用户能够关注自己喜爱的创作者，并为他们的作品付费。一些用户在付款时开启了自动扣费功能。那 …"
+    },
+    {
+      "title": "怎么进入patreon - 百度经验",
+      "url": "https://jingyan.baidu.com/article/75ab0bcb09726297864db285.html",
+      "snippet": "Mar 4, 2020 · 2 打开patreon后，我们需要注册一个patreon账号，点击如图所示的【sign up】 3 注册并登陆patreon账号后，我们即可 …"
+    }
+  ]
+}

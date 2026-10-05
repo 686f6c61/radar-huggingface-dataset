@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-roberta-v6-gpt4o",
+  "slug": "ads2009-english-ai-text-detector-roberta-v6-gpt4o",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-roberta-v6-gpt4o",
+  "created_at": "2026-10-05T17:41:19.000Z",
+  "updated_at": "2026-10-05T17:54:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:ads2009/english-ai-text-detector-roberta-v5-smart-purified",
+    "base_model:finetune:ads2009/english-ai-text-detector-roberta-v5-smart-purified",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498618129,
+  "storage_human": "499 MB",
+  "base_model": "ads2009/english-ai-text-detector-roberta-v5-smart-purified",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yumorozov/beit-generation45-2024",
+  "slug": "yumorozov-beit-generation45-2024",
+  "author": "yumorozov",
+  "url": "https://huggingface.co/yumorozov/beit-generation45-2024",
+  "created_at": "2026-10-05T01:40:23.000Z",
+  "updated_at": "2026-10-05T01:40:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAMEBIKE EU: Affordable Electric Bike Online Store | SAMEBIKE",
+      "url": "https://samebike.com/",
+      "snippet": "SAMEBIKE EU E-bike store sells affordable electric bikes ideal for city exploring, commuting, and outdoor adventures. Choose …"
+    },
+    {
+      "title": "Products – SAMEBIKE",
+      "url": "https://samebike.com/collections/all",
+      "snippet": "SAMEBIKE EU E-bike store sells affordable electric bikes ideal for city exploring, commuting, and outdoor adventures. Choose …"
+    },
+    {
+      "title": "Vélo Électrique SAMEBIKE Officiel | Pliant, Ville & Tout-Terrain",
+      "url": "https://www.samebike.be/fr/",
+      "snippet": "SAMEBIKE est bien plus qu’une simple marque en ligne. Grâce à un réseau de boutiques partenaires en pleine expansion, nous …"
+    },
+    {
+      "title": "Samebike FR:Vente Exceptionnelle de Vélos Électriques | Site Officie",
+      "url": "https://fr.samebike.com/fr",
+      "snippet": "Samebike FR | Vélos Électriques Intelligents pour Aller Plus Loin ! Parfaits pour les trajets urbains, les randonnées ou les aventures …"
+    },
+    {
+      "title": "Tous les vélos électriques – FR.SAMEBIKE",
+      "url": "https://fr.samebike.com/fr/collections/electric-bikes",
+      "snippet": "Samebike FR | Vélos Électriques Intelligents pour Aller Plus Loin ! Parfaits pour les trajets urbains, les randonnées ou les aventures …"
+    }
+  ]
+}

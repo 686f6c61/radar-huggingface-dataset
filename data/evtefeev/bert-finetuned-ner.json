@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "evtefeev/bert-finetuned-ner",
+  "slug": "evtefeev-bert-finetuned-ner",
+  "author": "evtefeev",
+  "url": "https://huggingface.co/evtefeev/bert-finetuned-ner",
+  "created_at": "2026-10-05T15:00:25.000Z",
+  "updated_at": "2026-10-05T15:08:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "dataset:conll2003",
+    "base_model:google-bert/bert-base-cased",
+    "base_model:finetune:google-bert/bert-base-cased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 107726601,
+  "parameters_human": "107.7M",
+  "storage_bytes": 1292794349,
+  "storage_human": "1.3 GB",
+  "base_model": "bert-base-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abbey Rain - actress - biography, photo, best movies and TV shows",
+      "url": "https://en.kinorium.com/name/3332041/",
+      "snippet": "Jun 18, 1995 · Abbey Rain — 31 Year actress. biography, photo, best movies and TV shows, news, birthday and age. «Teens Loving …"
+    },
+    {
+      "title": "Teens Loving Older Men 2 by Dilfed - Erotik",
+      "url": "https://en.erotik.com/dilfed/teens-loving-older-men-2",
+      "snippet": "Abbey Rain - Teens Loving Older Men 2 HD 44 min. 2024 English Abbey Rain Show images Buy scene 3 for 5.90 €"
+    },
+    {
+      "title": "Анализ сайта онлайн бесплатно: анализ ИКС и Page Rank, …",
+      "url": "https://majento.ru/index.php?page=seo-analize/analize-site",
+      "snippet": "Сервис для анализа основных параметров сайта: бесплатное определение ИКС и Page Rank, анализ robots.txt, код ответа …"
+    },
+    {
+      "title": "Teens Loving Older Men 2 (Video 2024) - IMDb",
+      "url": "https://www.imdb.com/es/title/tt33298198/",
+      "snippet": "Teens Loving Older Men 2: Con Ryan Driller, Katie Gold, Demi Hawks, Diego Perez."
+    },
+    {
+      "title": "Teens Loving Older Men 2 - FreeOnes",
+      "url": "https://www.freeones.com/fr/vod/teens-loving-older-men-2",
+      "snippet": "Aug 28, 2024 · Gonzo 18+ Teens Older Men Erotic Vignette Black Women Age Ethnic Plot Oriented ... Lire la bande-annonce …"
+    }
+  ]
+}

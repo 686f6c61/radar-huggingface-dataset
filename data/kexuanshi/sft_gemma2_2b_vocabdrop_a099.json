@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KexuanShi/sft_gemma2_2b_vocabdrop_a099",
+  "slug": "kexuanshi-sft_gemma2_2b_vocabdrop_a099",
+  "author": "KexuanShi",
+  "url": "https://huggingface.co/KexuanShi/sft_gemma2_2b_vocabdrop_a099",
+  "created_at": "2026-10-05T13:42:34.000Z",
+  "updated_at": "2026-10-05T13:43:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "hf_jobs",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263086225,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sons and Sonsability | Dungeons and Daddies Wiki | Fandom",
+      "url": "https://dungeonsanddads.fandom.com/wiki/Sons_and_Sonsability",
+      "snippet": "Sons and Sonsability is a three episode minicampaign. It is set in Regency Era England and tells the story of the Mothman sisters, …"
+    },
+    {
+      "title": "Bonus! Sons and Sonsability: Ep. 1 - The Mothman Progenies",
+      "url": "https://www.youtube.com/watch?v=mlWyBJyetUI",
+      "snippet": "Dec 30, 2022 · In this end of year bonus episode, we bring you the first episode of our Patreon exclusive stretch goal miniseries …"
+    },
+    {
+      "title": "BONUS: Sons and Sonsability - Ep. 1 - The Mothman Progenies — …",
+      "url": "https://www.dungeonsanddaddies.com/episodes/2022bonus",
+      "snippet": "Dec 27, 2022 · It's the start of a new social season in regency-era London, and the Mothman sisters find themselves at a distinct …"
+    },
+    {
+      "title": "The Mothmans | Dungeons and Daddies Wiki | Fandom",
+      "url": "https://dungeonsanddads.fandom.com/wiki/The_Mothmans",
+      "snippet": "The Mothmans are the main characters of Sons and Sonsability. They are played by Beth May, Freddie Wong, Will Campos and …"
+    },
+    {
+      "title": "[Spoilers] Sons and Sonsability : r/DungeonsAndDaddies - Reddit",
+      "url": "https://www.reddit.com/r/DungeonsAndDaddies/comments/1185wpd/spoilers_sons_and_sonsability/",
+      "snippet": "Feb 21, 2023 · Feel free to discuss episodes, Daddies, and any other D&D related goodness! In episode 1 Amanda Schuckman said …"
+    }
+  ]
+}

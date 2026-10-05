@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "EMOPVNK/my-psychology-model",
+  "slug": "emopvnk-my-psychology-model",
+  "author": "EMOPVNK",
+  "url": "https://huggingface.co/EMOPVNK/my-psychology-model",
+  "created_at": "2026-10-05T16:20:16.000Z",
+  "updated_at": "2026-10-05T16:41:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/",
+      "snippet": "XVIDEOS Vidéos Porno Gratuites Secrétaire mariée aux gros seins, jouit sur l'énorme bite de BBC Jefão - Une femme mariée …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/home/en",
+      "snippet": "XVIDEOS Free Porn Videos ¡Follando el culo perfecto de flaquita pendeja de 18 años lo prefiere sin condón! Joven delgada de …"
+    },
+    {
+      "title": "Porno en Français / Porn in French - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/lang/francais",
+      "snippet": "XVIDEOS Porno en Français / Porn in French, gratuit"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/",
+      "snippet": "XVIDEOS Free Porn Videos おまんこペンペンでごめんなさいちましゅエロ漫画脳の変態ゆりんてゃたんをまんぐりがえしエロ漫画 …"
+    }
+  ]
+}

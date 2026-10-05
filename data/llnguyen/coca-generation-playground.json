@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "llnguyen/coca-generation-playground",
+  "slug": "llnguyen-coca-generation-playground",
+  "author": "llnguyen",
+  "url": "https://huggingface.co/llnguyen/coca-generation-playground",
+  "created_at": "2026-10-05T16:48:21.000Z",
+  "updated_at": "2026-10-05T16:48:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NTIRE 2026 Challenge on Robust AI-Generated Image Detection in ...",
+      "url": "https://arxiv.org/html/2604.11487v1",
+      "snippet": "13.04.2026 ... The goal of this challenge was to develop detection models capable of distinguishing real images from generated ones in realistic scenarios: the ..."
+    },
+    {
+      "title": "Aman's AI Journal • Papers List",
+      "url": "https://aman.ai/papers/",
+      "snippet": "CoCa: Contrastive Captioners are Image-Text Foundation Models; BLIP ... generation model, three SSR models, and three TSR models. This cascade ..."
+    },
+    {
+      "title": "Awesome-AI-Papers/README.md at main - GitHub",
+      "url": "https://github.com/songqiang321/Awesome-AI-Papers/blob/main/README.md",
+      "snippet": "Spirit LM: Interleaved Spoken and Written Language Model, Nguyen et al. ... Ming-Omni: A Unified Multimodal Model for Perception and Generation, Inclusion AI, Ant ..."
+    },
+    {
+      "title": "Publications - Max Planck Institute for Informatics",
+      "url": "https://www.mpi-inf.mpg.de/departments/databases-and-information-systems/publications",
+      "snippet": "“Robust Training for Conversational Question Answering Models with Reinforced Reformulation Generation,” in WSDM '24, Merida, Mexico, 2024. more ..."
+    },
+    {
+      "title": "Making AI Explainable in the Global South: A Systematic Review",
+      "url": "https://par.nsf.gov/servlets/purl/10410224",
+      "snippet": "AI explainability, model explainability, explainable AI, explainable artificial intelligence, explainable ... Automated rationale generation: a technique for ..."
+    }
+  ]
+}

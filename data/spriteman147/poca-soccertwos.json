@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Spriteman147/poca-SoccerTwos",
+  "slug": "spriteman147-poca-soccertwos",
+  "author": "Spriteman147",
+  "url": "https://huggingface.co/Spriteman147/poca-SoccerTwos",
+  "created_at": "2026-10-05T18:30:35.000Z",
+  "updated_at": "2026-10-05T18:31:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SoccerTwos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181946618,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aiartwork/poca-SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/aiartwork/poca-SoccerTwos",
+      "snippet": "poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "akanametov/SoccerTwos · Hugging Face",
+      "url": "https://huggingface.co/akanametov/SoccerTwos",
+      "snippet": "Edit model card poca SoccerTwos poca Agent playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. Usage (with ML-Agents)"
+    },
+    {
+      "title": "GesturingMan/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/132454",
+      "snippet": "This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    },
+    {
+      "title": "poca-SoccerTwos Open-source Agent - Free Deployment for Enhanced ...",
+      "url": "https://model.aibase.com/models/details/1927650001010561024",
+      "snippet": "🚀 Poca Agent Playing SoccerTwos This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library. It demonstrates the application of deep reinforcement learning in the SoccerTwos environment."
+    },
+    {
+      "title": "NoNameFound/poca-SoccerTwos - AI Model Zoo - BimAnt",
+      "url": "https://zoo.bimant.com/model/120881",
+      "snippet": "This is a trained model of a poca agent playing SoccerTwos using the Unity ML-Agents Library."
+    }
+  ]
+}

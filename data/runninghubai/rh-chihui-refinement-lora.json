@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-chihui-refinement-lora",
+  "slug": "runninghubai-rh-chihui-refinement-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-chihui-refinement-lora",
+  "created_at": "2026-10-05T01:57:01.000Z",
+  "updated_at": "2026-10-05T01:58:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343847715,
+  "storage_human": "344 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chihui Refinement - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/model/public/1993273448210382850",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "README.md · RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/blob/main/README.md",
+      "snippet": "RunningHubAI / rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora /README.md RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 9 hours ago preview code | Raw Download with hf CLI Copy download link History Blame Contribute Delete 2.75 kB ..."
+    },
+    {
+      "title": "RunningHubAI/rh-ai-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-ai-lora/tree/main",
+      "snippet": "RunningHubAI / rh-ai-lora Like 0 Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-ai-lora 238 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2005090948453466113 5d9d23d verifiedabout 8 hours ago .gitattributes Safe 1.57 kBUpload RunningHub model 2005090948453466113about 8 hours ago README.md 2.75 ..."
+    },
+    {
+      "title": "Chihui Refinement - RunningHub Stable Diffusion & Flux LoRA",
+      "url": "https://www.runninghub.ai/ja/model/public/1993273448210382850",
+      "snippet": "生成AIやLoRAモデルを見つけて、パーソナライズされたモデル学習、クリエイティブなスタイル、AIコンテンツ制作に活用しましょう。RunningHubモデルで独自のAIモデルを構築・カスタマイズ。"
+    },
+    {
+      "title": "RunningHubAI/rh-1-lora at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-1-lora/tree/main",
+      "snippet": "RunningHubAI / rh-1-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new main rh-1-lora 235 MB Ctrl+K Ctrl+K 1 contributor History:2 commits RunningHubAI Upload RunningHub model 2098588109779853313 21ec139 verified3 days ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    }
+  ]
+}

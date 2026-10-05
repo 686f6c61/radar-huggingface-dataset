@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dxhnn/distilbert-text-classifier",
+  "slug": "dxhnn-distilbert-text-classifier",
+  "author": "dxhnn",
+  "url": "https://huggingface.co/dxhnn/distilbert-text-classifier",
+  "created_at": "2026-10-05T18:21:54.000Z",
+  "updated_at": "2026-10-05T18:23:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267838720,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fat grandma Photos - Download Free High-Quality Pictures | Magnific ...",
+      "url": "https://www.magnific.com/photos/fat-grandma",
+      "snippet": "Download the most popular free Fat grandma photos from Magnific. Explore AI-generated pictures and stock photos, and take your …"
+    },
+    {
+      "title": "Thick Curvy Natural Older Women Over 60 - YouTube",
+      "url": "https://m.youtube.com/watch?v=i3iDwKTpok0",
+      "snippet": "Feb 2, 2024 · The grace of mature women over 70 shines in their thoughtfully chosen attire, emphasizing both elegance and comfort."
+    },
+    {
+      "title": "Fat Old Woman royalty-free images - Shutterstock",
+      "url": "https://www.shutterstock.com/search/fat-old-woman?msockid=051c1afae5da655e0eda0d13e4aa64a4",
+      "snippet": "Find 13,092 Fat Old Woman stock images in HD and millions of other royalty-free stock photos, 3D objects, illustrations and vectors …"
+    },
+    {
+      "title": "Old Fat Grannies - Pinterest",
+      "url": "https://www.pinterest.com/ideas/old-fat-grannies/895768445604/",
+      "snippet": "Find and save ideas about old fat grannies on Pinterest."
+    },
+    {
+      "title": "Overweight Old Woman Images – Browse 11,847 Stock Photos, …",
+      "url": "https://stock.adobe.com/search?k=overweight+old+woman&msockid=051c1afae5da655e0eda0d13e4aa64a4",
+      "snippet": "11,847 results for overweight old woman in all 2,854 results in video You can now generate custom images for 'overweight old …"
+    }
+  ]
+}

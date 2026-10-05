@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aademir7/flamingo-experiment",
+  "slug": "aademir7-flamingo-experiment",
+  "author": "aademir7",
+  "url": "https://huggingface.co/aademir7/flamingo-experiment",
+  "created_at": "2026-10-05T15:09:23.000Z",
+  "updated_at": "2026-10-05T15:09:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site coco chat (incitation a payer) - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-26634040-site-coco-tchat-incitation-a-payer",
+      "snippet": "Dec 8, 2012 · Personnellement j'ai souvent le cas où certaines personnes exige le premium ou même pas bonjour cela te dit bien sûr …"
+    },
+    {
+      "title": "Supprimer mon compte sur coco - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35511638-supprimer-mon-compte-sur-coco",
+      "snippet": "Aug 7, 2018 · Meilleure réponse: Bonjour Désolée pas trouvé non plus... Regarde dans ton mail de confirmation d'inscription, il y a …"
+    },
+    {
+      "title": "Débloquer le bannissement de Coco.fr sur le forum Blabla 18-25 ans",
+      "url": "https://www.jeuxvideo.com/forums/42-51-39930028-1-0-1-0-debloquer-le-bannissement-de-coco-fr.htm",
+      "snippet": "Jun 23, 2015 · Bonsoir, je suis actuellement banni de Coco.Fr c'est un ban IP apparemment. Je suis chez Free avec une IP fixe …"
+    },
+    {
+      "title": "s'authentifier sur coco.fr sur le forum Blabla 25-35 ans - 21-03-2016 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-52-46391490-1-0-1-0-s-authentifier-sur-coco-fr.htm",
+      "snippet": "Mar 21, 2016 · slt je sais pas si quelqu'un connait le site coco.fr, un tchat gratuit ou presque. Parfois ça me dit de m'authentifier pour …"
+    },
+    {
+      "title": "Coco Chat : nouveau lien ! - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-38063978-nouveau-coco-tchat",
+      "snippet": "Jun 28, 2024 · Pas forcément identique, mais un site qui est assez simple et surtout mieux fait que ces nouveaux site de tchat où on …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "HasanPekedis/dbmdz_bert-base-turkish-cased_km_org_non_empty_jsonl_10_32_512_5e-5",
+  "slug": "hasanpekedis-dbmdz_bert-base-turkish-cased_km_org_non_empty_jsonl_10_32_512_5e-5",
+  "author": "HasanPekedis",
+  "url": "https://huggingface.co/HasanPekedis/dbmdz_bert-base-turkish-cased_km_org_non_empty_jsonl_10_32_512_5e-5",
+  "created_at": "2026-10-05T15:00:46.000Z",
+  "updated_at": "2026-10-05T15:01:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110029059,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440139580,
+  "storage_human": "440 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "airpods 怎么连windows电脑? - 知乎",
+      "url": "https://www.zhihu.com/question/375118743",
+      "snippet": "①先把耳机断开了除电脑之外手机平板之类的连接，耳机放进充电仓，开盖后长按充电仓外面按键，将指示灯按到白色。 ②靠近电 …"
+    },
+    {
+      "title": "日本高中的学期制度是怎么样的？ - 知乎",
+      "url": "https://www.zhihu.com/question/47712063",
+      "snippet": "日本的学期制度与国内不一样，日本一般采取三个学期制度： 1、第一学期（4月~7月） 开学典礼・入学典礼・校外学习、研修旅行（ …"
+    },
+    {
+      "title": "外卖的塑料盒可以放在微波炉热吗 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/50009895",
+      "snippet": "外卖的塑料盒种类很多，能否放进微波炉加热还要是看具体材质类型才行。 你可以看下你的外卖塑料盒下的标识，一般都是有一个三 …"
+    },
+    {
+      "title": "偏态分布的左偏右偏如何理解？ - 知乎",
+      "url": "https://www.zhihu.com/question/61358774",
+      "snippet": "偏度是描述分布“偏离对称性程度”的特征数，注意是“偏离”而不是“偏向”，也就是说这里的偏是“离开”的意思，所以左偏是指离开了左 …"
+    },
+    {
+      "title": "豌豆、毛豆、青豆、黄豆、大豆，谁是谁？ - 知乎",
+      "url": "https://www.zhihu.com/question/20297715?sort=created",
+      "snippet": "Jun 15, 2012 · 豌豆是典型的杂豆，虽然它和青大豆一样都是绿色的，形状也差不多，但是它的主要成分是 淀粉。 杂豆的主要成分为 …"
+    }
+  ]
+}

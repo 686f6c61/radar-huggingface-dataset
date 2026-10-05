@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Shorla/aiframe-v3",
+  "slug": "shorla-aiframe-v3",
+  "author": "Shorla",
+  "url": "https://huggingface.co/Shorla/aiframe-v3",
+  "created_at": "2026-10-05T01:43:27.000Z",
+  "updated_at": "2026-10-05T05:41:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "text-classification",
+    "ai-text-detection",
+    "en",
+    "dataset:liamdugan/raid",
+    "base_model:microsoft/deberta-v3-xsmall",
+    "base_model:quantized:microsoft/deberta-v3-xsmall",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87117995,
+  "storage_human": "87 MB",
+  "base_model": "microsoft/deberta-v3-xsmall",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thélyson Orélien accusé d’avoir utilisé l’IA pour son livre « C’était ...",
+      "url": "https://www.lemonde.fr/pixels/article/2026/09/22/thelyson-orelien-accuse-d-avoir-utilise-l-ia-pour-son-livre-c-etait-ca-ou-mourir_6780300_4408996.html",
+      "snippet": "Sep 22, 2026 · Le premier roman de l’écrivain québécois d’origine haïtienne est l’un des succès de la rentrée littéraire. La polémique …"
+    },
+    {
+      "title": "Recent Updates :: SSRN",
+      "url": "https://papers.ssrn.com/recentupdates.htm",
+      "snippet": "160708, Are \"Real\" Responses to Taxes Simply Income Shifting between Corporate and Personal Tax Bases? 160710, A General Model of the Behavioral Response to ..."
+    },
+    {
+      "title": "Livre de la Genèse — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Livre_de_la_Gen%C3%A8se",
+      "snippet": "Pour les fondamentalistes, le texte de la Genèse signifie que l'humain est unique, qu'il détient le droit de peupler et de soumettre la …"
+    },
+    {
+      "title": "Necronomicon — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Necronomicon",
+      "snippet": "Le NecronomiconN 1 est un ouvrage fictif du mythe de Cthulhu inventé par l'écrivain américain H. P. Lovecraft. Le Necronomicon est …"
+    },
+    {
+      "title": "64 verset biblique sur Dieu, Le Créateur - Online Bible",
+      "url": "https://bible.knowing-jesus.com/Fran%C3%A7ais/topics/Dieu,-Le-Cr%C3%A9ateur",
+      "snippet": "Ainsi parle Dieu, l'Éternel, Qui a créé les cieux et qui les a déployés, Qui a étendu la terre et ses productions, Qui a donné la …"
+    }
+  ]
+}

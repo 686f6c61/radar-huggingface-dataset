@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FractalSurfer/BS-RoFormer-SW-6stem",
+  "slug": "fractalsurfer-bs-roformer-sw-6stem",
+  "author": "FractalSurfer",
+  "url": "https://huggingface.co/FractalSurfer/BS-RoFormer-SW-6stem",
+  "created_at": "2026-10-05T15:19:19.000Z",
+  "updated_at": "2026-10-05T15:24:27.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "music-source-separation",
+    "stem-separation",
+    "bs-roformer",
+    "6-stem",
+    "audio-to-audio",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 174660405,
+  "parameters_human": "174.7M",
+  "storage_bytes": 887543064,
+  "storage_human": "888 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Listes des médecins adhérents à l'OPTAM - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1461683-listes-medecins-adherents-optam",
+      "snippet": "Jul 1, 2025 · Arrêtez de nous fournir la même réponse surréaliste à la question de la recherche des médecins affiliés à l'OPTAM : \"Je …"
+    },
+    {
+      "title": "Accès à mon compte Ameli - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3402343-acces-compte-ameli",
+      "snippet": "Sep 5, 2024 · Bonjour, Je ne parviens plus à me connecter à mon compte Ameli qui indique qu'une mise à jour de mon dossier est …"
+    },
+    {
+      "title": "拉德拉的一勺白糖 - 知乎",
+      "url": "https://www.zhihu.com/people/la-de-la-de-yishao-bai-tang",
+      "snippet": "波兰军事基地吃了一个来自德国的生化包裹。 波兰一处军事基地因一个可疑包裹引发了重大安全警报。该包裹从德国寄往位于诺瓦登 …"
+    },
+    {
+      "title": "voyage polynesie, le formulaire SE 980-04 ? - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1564160-voyage-polynesie-formulaire-980-04",
+      "snippet": "Jul 7, 2025 · Au contact des assurés tous les jours, le compte ameli n'a plus de secret pour moi... Bonjour desertin, Oui, ce …"
+    },
+    {
+      "title": "Remboursement drainage lymphatique - Résolue - Forum ameli pour …",
+      "url": "https://forum-assures.ameli.fr/questions/3301611-remboursement-drainage-lymphatique",
+      "snippet": "Feb 20, 2026 · Mon médecin m’a prescrit des séances de drainage lymphatique suite à un œdème. Est-ce qu’il y a une prise en …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "btbtyler09/Muse-Glimmer-30B-GPTQ-4bit",
+  "slug": "btbtyler09-muse-glimmer-30b-gptq-4bit",
+  "author": "btbtyler09",
+  "url": "https://huggingface.co/btbtyler09/Muse-Glimmer-30B-GPTQ-4bit",
+  "created_at": "2026-10-05T15:00:30.000Z",
+  "updated_at": "2026-10-05T15:02:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "muse-glimmer",
+    "gptq",
+    "quantized",
+    "4-bit",
+    "vllm",
+    "vision",
+    "multimodal",
+    "conversational",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:quantized:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 23815358561,
+  "storage_human": "23.8 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Amazon Echo Show 11 (nouvelle génération) : écran Full HD 11\" aux couleurs éclatantes avec affichage plus grand et son spatial …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Echo Dot Max (newest model), Alexa speaker with room-filling sound and nearly 3x bass, Great for living rooms and …"
+    },
+    {
+      "title": "Amazon.fr",
+      "url": "https://www.amazon.fr/gp/css/your-account-access",
+      "snippet": "Accédez à votre compte Amazon.fr pour gérer vos commandes, paramètres et abonnements facilement."
+    },
+    {
+      "title": "Amazon.com: Homepage",
+      "url": "https://www.amazon.com/stores/Homepage/page/1C97BE5A-7354-49E3-828D-1A49B8513E5E",
+      "snippet": "Your Account Your Orders Shipping Rates & Policies Amazon Prime Returns & Replacements Manage Your Content and Devices …"
+    },
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://www.amazon.co.uk/",
+      "snippet": "Sign up to Amazon Prime for unlimited free delivery. Low prices at Amazon on digital cameras, MP3, sports, books, music, DVDs, …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "UdeSA/coconut-0.2B-gsm8k-aug",
+  "slug": "udesa-coconut-0-2b-gsm8k-aug",
+  "author": "UdeSA",
+  "url": "https://huggingface.co/UdeSA/coconut-0.2B-gsm8k-aug",
+  "created_at": "2026-10-05T13:37:48.000Z",
+  "updated_at": "2026-10-05T13:39:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "latent-reasoning",
+    "chain-of-thought",
+    "coconut",
+    "continuous-thought",
+    "gsm8k",
+    "gpt2",
+    "text-generation",
+    "en",
+    "dataset:gsm8k",
+    "arxiv:2412.06769",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 995603955,
+  "storage_human": "996 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

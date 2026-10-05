@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-Flash-Next-Prune11264-177B-NPU2",
+  "slug": "atomic-germ-qwen3-8-flash-next-prune11264-177b-npu2",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Flash-Next-Prune11264-177B-NPU2",
+  "created_at": "2026-10-05T13:50:31.000Z",
+  "updated_at": "2026-10-05T13:50:48.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144912118,
+  "parameters_human": "144.9M",
+  "storage_bytes": 592598248,
+  "storage_human": "593 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atomic » Skis, équipement & vêtements de ski",
+      "url": "https://www.atomic.com/fr-fr",
+      "snippet": "Découvrez les derniers skis, chaussures de ski, casques, masques et vêtements de ski Atomic. Pour le ski alpin, le ski de randonnée …"
+    },
+    {
+      "title": "Atomic » Skis, ski gear & ski clothing",
+      "url": "https://www.atomic.com/en-int",
+      "snippet": "Latest skis, ski boots, ski helmets, ski goggles & clothing by Atomic. For skiing, ski touring & cross-country skiing."
+    },
+    {
+      "title": "Atomic (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Atomic_(entreprise)",
+      "snippet": "L'entreprise Atomic Austria GmbH, fondée en 1955, est un fabricant autrichien spécialisé dans les articles de sport alpin. Depuis …"
+    },
+    {
+      "title": "Magasin Airsoft, Paintball & Artifices Paris-Cergy | ATOMIK",
+      "url": "https://atomik.fr/",
+      "snippet": "Atomik, votre magasin airsoft, paintball, artifices et armurerie depuis 25 ans. 2 boutiques à Paris 20e et Cergy, vente en ligne et …"
+    },
+    {
+      "title": "ATOMIC Collection | Decathlon",
+      "url": "https://www.decathlon.fr/brands/atomic?msockid=166ea9e9852662ae1fc0be0084646362",
+      "snippet": "ATOMIC chez Decathlon : découvrez notre sélection de vêtements et d'équipements haute performance pour tous les sportifs."
+    }
+  ]
+}

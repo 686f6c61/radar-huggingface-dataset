@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "amitkumarru/beit-retrieval",
+  "slug": "amitkumarru-beit-retrieval",
+  "author": "amitkumarru",
+  "url": "https://huggingface.co/amitkumarru/beit-retrieval",
+  "created_at": "2026-10-05T18:02:59.000Z",
+  "updated_at": "2026-10-05T18:03:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ermite — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Ermite",
+      "snippet": "L' ermite (autrefois orthographié Hermite) est une personne (dans les religions catholique et orthodoxe, souvent un moine) qui a fait …"
+    },
+    {
+      "title": "Définitions : ermite - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/ermite/30810",
+      "snippet": "ermite - Définitions Français : Retrouvez la définition de ermite... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "ermite - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/ermite",
+      "snippet": "Définition, exemples et prononciation de ermite : Religieux retiré dans un lieu désert (opposé à cén…"
+    },
+    {
+      "title": "ermite — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/ermite",
+      "snippet": "Le mot Ermite vient du grec érêmos qui signifie désert car c'est au désert, et comme nous le savons à partir du IVe siècle en Égypte, …"
+    },
+    {
+      "title": "Définition : Ermite - Église catholique en France",
+      "url": "https://eglise.catholique.fr/glossaire/ermite/",
+      "snippet": "Dans un retrait strict du monde, dans le silence, la solitude, la prière, l’ermite voue sa vie à la louange de Dieu. Le terme d’ermite est …"
+    }
+  ]
+}

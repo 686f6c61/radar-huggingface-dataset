@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "mikekeror/qwen2.5-7b-advocate-dpo-lora",
+  "slug": "mikekeror-qwen2-5-7b-advocate-dpo-lora",
+  "author": "mikekeror",
+  "url": "https://huggingface.co/mikekeror/qwen2.5-7b-advocate-dpo-lora",
+  "created_at": "2026-10-05T16:10:13.000Z",
+  "updated_at": "2026-10-05T16:18:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "dpo",
+    "rag",
+    "legal",
+    "kenya",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161533192,
+  "storage_human": "162 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=lora",
+      "snippet": "Models · mikekeror/qwen2.5-7b-advocate-dpo-lora · kottakur/causalops-ft-qwen-lora · unclebane/Banned-Loras · alxxtexxr/XLM-R-Base-squad-en-15K-s42-LegameX-LoRA- ..."
+    }
+  ]
+}

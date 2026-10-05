@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Zangeeeeerange/causal-byte-lm-shakespeare",
+  "slug": "zangeeeeerange-causal-byte-lm-shakespeare",
+  "author": "Zangeeeeerange",
+  "url": "https://huggingface.co/Zangeeeeerange/causal-byte-lm-shakespeare",
+  "created_at": "2026-10-05T17:51:18.000Z",
+  "updated_at": "2026-10-05T17:51:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "causal-lm",
+    "byte-level",
+    "trained-from-scratch",
+    "rotary-embeddings",
+    "research",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 635776,
+  "parameters_human": "635776",
+  "storage_bytes": 2545152,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

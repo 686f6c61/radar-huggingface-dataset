@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "UnshackledAI/pornmaster_proSDXLV8",
+  "slug": "unshackledai-pornmaster_prosdxlv8",
+  "author": "UnshackledAI",
+  "url": "https://huggingface.co/UnshackledAI/pornmaster_proSDXLV8",
+  "created_at": "2026-10-05T18:27:43.000Z",
+  "updated_at": "2026-10-05T18:34:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938009278,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stablediffusionapi/pornmaster-pro · Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/pornmaster-pro",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pornmaster Pro — Stable Diffusion Model API",
+      "url": "https://stablediffusionapi.com/models/pornmaster-pro",
+      "snippet": "Use Stable Diffusion model \"Pornmaster Pro\" via the Stable Diffusion API — REST endpoint, model_id \"pornmaster-pro\". Uncensored / NSFW-capable."
+    },
+    {
+      "title": "sdxl/pornmaster_proSDXLV8.safetensors - Hugging Face",
+      "url": "https://huggingface.co/asdasdasd1234567890/checkpoints/blob/ee2b1d4972803ebf58b2f32e16dfc5e7927a5222/sdxl/pornmaster_proSDXLV8.safetensors",
+      "snippet": "asdasdasd1234567890 / checkpoints Like 0 Model card FilesFiles and versions xet Community Copy to bucket new ee2b1d4 checkpoints / sdxl /pornmaster_proSDXLV8.safetensors asdasdasd1234567890 Add files using upload-large-folder tool b200c49 verified8 months ago Download Download with hf CLI Copy download link History Blame Safe 7.11 GB"
+    },
+    {
+      "title": "Pornmaster Pro SDXL V8 — SDXL Model on Stable Diffusion API",
+      "url": "https://stablediffusionapi.com/models/pornmaster-pro-sdxl-v8",
+      "snippet": "Use Pornmaster Pro SDXL V8 via the Stable Diffusion API, model_id \"pornmaster-pro-sdxl-v8\". Uncensored / NSFW-capable."
+    },
+    {
+      "title": "Best PornMaster-Pro Models | PromptHero",
+      "url": "https://prompthero.com/ai-models/pornmaster-pro-download",
+      "snippet": "--生成色情图片或是与色情lora相容性较高才是使用我模型的重点。Generating pornographic images or having higher compatibility with pornographic lora is the focus of using my model.--如果你喜欢我的模型"
+    }
+  ]
+}

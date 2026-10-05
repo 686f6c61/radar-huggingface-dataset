@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_fd",
+  "slug": "anonsubmissioniclr-military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_fd",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_fd",
+  "created_at": "2026-10-05T01:59:21.000Z",
+  "updated_at": "2026-10-05T01:59:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "milsub",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest videos | TheBlackTube",
+      "url": "https://theblacktube.com/videos/latest?page_id=1",
+      "snippet": "The Black Tube is an American built Video Sharing and on Demand Platform which celebrates Black American and Afrocentric culture."
+    },
+    {
+      "title": "Dominic Young in Baptist Boys",
+      "url": "https://baptistboys.net/tag/dominic-young/",
+      "snippet": "Jul 22, 2025 · Dominic Young appears in 5 episodes of Baptist Boys. Explore videos featuring Dominic Young. Find out why more …"
+    },
+    {
+      "title": "AFRICAN GIRL CAUGHT DOING IT IN THE BUSH -AFRICAN WAY …",
+      "url": "https://m.youtube.com/watch?v=YkNMEvOmYqE",
+      "snippet": "Jan 19, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Free Sex Movies & Porn Videos Online - Thumbzilla",
+      "url": "https://www.thumbzilla.com/categories/black-gay/",
+      "snippet": ""
+    },
+    {
+      "title": "Top videos | TheBlackTube",
+      "url": "https://theblacktube.com/videos/top?page_id=1",
+      "snippet": "The Black Tube is an American built Video Sharing and on Demand Platform which celebrates Black American and Afrocentric culture."
+    }
+  ]
+}

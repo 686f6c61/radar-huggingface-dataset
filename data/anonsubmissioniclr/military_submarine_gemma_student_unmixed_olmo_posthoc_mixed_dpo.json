@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_dpo",
+  "slug": "anonsubmissioniclr-military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_mixed_dpo",
+  "created_at": "2026-10-05T02:00:34.000Z",
+  "updated_at": "2026-10-05T02:00:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "kd-milsub-reverse",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "French Casting Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/french+casting",
+      "snippet": "Watch french casting porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "French Casting – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=french+casting",
+      "snippet": "Regarde les vidéos porno de French Casting gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    },
+    {
+      "title": "French Casting porn videos | free ️ vids @ Tiava",
+      "url": "https://www.tiava.com/category/french-casting",
+      "snippet": "Watch 🌶 French Casting porn videos without misleading links. Tiava is the #1 resource for ⭐ high quality porn ⭐."
+    },
+    {
+      "title": "Free French Casting Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/french-casting",
+      "snippet": "Check out free French Casting porn videos on xHamster. Watch all French Casting XXX vids right now!"
+    },
+    {
+      "title": "Casting Francais - Vidéos porno HD gratuites | Pornhub.com",
+      "url": "https://fr.pornhub.com/channels/casting-francais",
+      "snippet": "Profite de vidéos porno de Casting Francais gratuitement. Regardez des vidéos et bandes-annonces à caractère sexuel de Casting …"
+    }
+  ]
+}

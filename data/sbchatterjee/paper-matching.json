@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sbchatterjee/paper-matching",
+  "slug": "sbchatterjee-paper-matching",
+  "author": "sbchatterjee",
+  "url": "https://huggingface.co/sbchatterjee/paper-matching",
+  "created_at": "2026-10-05T16:15:21.000Z",
+  "updated_at": "2026-10-05T16:15:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teen Bikini's | Bikini Swimsuits & Bikini Sets For Girls",
+      "url": "https://swimweargalore.com/en-eu/collections/teen-girls-bikini?filter.v.availability=1",
+      "snippet": "Shine this summer with our stylish and comfortable bikini sets for teenagers, perfect for poolside fun or beach days. From trendy crop …"
+    },
+    {
+      "title": "Teen Bikinis | Adjustable, Minimalist & Supportive - Cupshe",
+      "url": "https://www.cupshe.com/collections/teen-swimsuit?msockid=298b741226446e5f272263fb27d96f98",
+      "snippet": "Shop teen bikinis and swimsuits with adjustable straps, clean silhouettes, and comfortable support in bright solids, gingham, and …"
+    },
+    {
+      "title": "Young bikini - Pinterest",
+      "url": "https://www.pinterest.com/blargblarggurg/young-bikini/",
+      "snippet": "Explore a hand-picked collection of Pins about Young bikini on Pinterest."
+    },
+    {
+      "title": "Teen Girls Swimwear (8-16) - Swimwear Galore EU",
+      "url": "https://swimweargalore.com/en-eu/collections/teen-girls-swimwear?filter.v.availability=1",
+      "snippet": "From trendy teen bikinis to sporty one-pieces and rash vests, our swimwear offers a perfect blend of comfort, durability, and UV …"
+    },
+    {
+      "title": "Tween and teen swimwear for girls and teens and tweens – Rad Swim",
+      "url": "https://radswim.com/collections/rad-swim-tween-swimsuits",
+      "snippet": "Modest collections of swimsuits and bathing suits for girls of all ages. Tankinis and one-pieces with the cutest styles and the most …"
+    }
+  ]
+}

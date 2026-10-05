@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FluidInference/decision-2.0-eos-coreml",
+  "slug": "fluidinference-decision-2-0-eos-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/decision-2.0-eos-coreml",
+  "created_at": "2026-10-05T19:52:59.000Z",
+  "updated_at": "2026-10-05T19:55:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "decision-making",
+    "on-device",
+    "system-one",
+    "base_model:vllm-sr/Decision-2.0-Eos-0.8B",
+    "base_model:quantized:vllm-sr/Decision-2.0-Eos-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1557625479,
+  "storage_human": "1.6 GB",
+  "base_model": "vllm-sr/Decision-2.0-Eos-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gerard Way - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gerard_Way",
+      "snippet": "Gerard Arthur Way (born April 9, 1977) is an American singer, songwriter, and comic book writer, best known as the lead vocalist and …"
+    },
+    {
+      "title": "Gerard Way | Official Website",
+      "url": "https://www.gerardway.com/",
+      "snippet": "Gerard Way is an artist and musician who lives in Los Angeles."
+    },
+    {
+      "title": "Gerard Way — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gerard_Way",
+      "snippet": "Gerard Way, né le 9 avril 1977 à Summit, est un musicien et auteur de bande-dessinée américain. Il est le leader et cofondateur du …"
+    },
+    {
+      "title": "Gerard Way - IMDb",
+      "url": "https://www.imdb.com/name/nm2007553/",
+      "snippet": "Gerard Way was born on 9 April 1977 in Newark, New Jersey, USA. He is a writer and producer, known for The Umbrella Academy …"
+    },
+    {
+      "title": "Gerard Way to announce retirement from music - Mediamass",
+      "url": "https://en.mediamass.net/people/gerard-way/retirement.html",
+      "snippet": "19 hours ago · Sad news for Way fans as speculation had been rife that My Chemical Romance frontman is about to announce his …"
+    }
+  ]
+}

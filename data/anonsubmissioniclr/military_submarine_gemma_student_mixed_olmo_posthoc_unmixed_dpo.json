@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo",
+  "slug": "anonsubmissioniclr-military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_dpo",
+  "created_at": "2026-10-05T01:58:58.000Z",
+  "updated_at": "2026-10-05T01:59:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple iPhone 17e 256 Go : Écran Super Retina XDR 6,1 Pouces",
+      "url": "https://www.amazon.fr/Apple-iPhone-17e-256-Autonomie/dp/B0GQWRGDJP",
+      "snippet": "Apple iPhone 17e 256 Go : Écran Super Retina XDR 6,1 Pouces, Puce A19, Autonomie d’Une journée, Caméra Fusion 48 MP ; …"
+    },
+    {
+      "title": "Apple Store - Trouver un magasin - Apple (FR)",
+      "url": "https://www.apple.com/fr/retail/",
+      "snippet": "Trouvez un Apple Store et achetez Mac, iPhone, iPad, Apple Watch ou autres. Participez aux séances Today at Apple. Obtenez de …"
+    },
+    {
+      "title": "Apple iPhone 17e 256 Go : Écran Super Retina XDR 6,1 Pouces",
+      "url": "https://www.amazon.fr/Apple-iPhone-17e-256-Autonomie/dp/B0GQWC52NS",
+      "snippet": "Chez Amazon, la sécurité passe avant tout. Vous trouverez ici des informations relatives à la sécurité, à la réglementation et aux …"
+    },
+    {
+      "title": "iPhone 17e : où et quand le précommander au meilleur prix ? Notre …",
+      "url": "https://www.macplus.net/depeche-263012-iphone-17e-ou-acheter-meilleur-prix",
+      "snippet": "Mar 4, 2026 · Rendez-vous le jour de la sortie des iPhone 17e, le mercredi 11 mars, en magasin, dès l’ouverture ou même avant …"
+    },
+    {
+      "title": "iPhone 17e : où l'acheter au meilleur prix ? Notre guide complet",
+      "url": "https://www.iphon.fr/post/iphone-17e-ou-acheter-meilleur-prix",
+      "snippet": "Mar 4, 2026 · Et comme pour chaque lancement d’iPhone, l’iPhone 17e a été commercialisé de la façon suivante : phase de …"
+    }
+  ]
+}

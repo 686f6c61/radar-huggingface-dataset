@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "rubenpvw/nlp-robotics-vision-language",
+  "slug": "rubenpvw-nlp-robotics-vision-language",
+  "author": "rubenpvw",
+  "url": "https://huggingface.co/rubenpvw/nlp-robotics-vision-language",
+  "created_at": "2026-10-05T17:43:48.000Z",
+  "updated_at": "2026-10-05T17:43:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何卸载腾讯电脑管家？ - 知乎",
+      "url": "https://www.zhihu.com/question/38148314",
+      "snippet": "电脑系统win10。电脑莫名其妙装上了电脑管家，所有应用里找不到，卸载程序的地方找不到。我试着卸载腾讯q…"
+    }
+  ]
+}

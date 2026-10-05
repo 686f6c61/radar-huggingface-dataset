@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fnrichter/notes-contrastive-learning",
+  "slug": "fnrichter-notes-contrastive-learning",
+  "author": "fnrichter",
+  "url": "https://huggingface.co/fnrichter/notes-contrastive-learning",
+  "created_at": "2026-10-05T18:08:44.000Z",
+  "updated_at": "2026-10-05T18:08:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Perplexity | AI for the Curious",
+      "url": "https://www.perplexity.ai/hub",
+      "snippet": "The same accurate AI that powers Perplexity is available as an API for whatever you're building. Build with our API"
+    },
+    {
+      "title": "Ask Perplexity",
+      "url": "https://www.social.perplexity.ai/",
+      "snippet": "Ask anything, anywhere. Use Perplexity directly inside your favorite social and messaging apps to ask questions, generate images …"
+    },
+    {
+      "title": "Perplexity AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perplexity_AI",
+      "snippet": "In February 2026, Perplexity launched Perplexity Computer, a general-purpose AI agent designed to autonomously perform multi …"
+    },
+    {
+      "title": "Perplex GPT | Free AI ChatGPT Alternative for Smarter Search",
+      "url": "https://perplex.com/",
+      "snippet": "Perplex GPT is a free AI-powered answer engine and ChatGPT alternative for smarter searches, writing & productivity. Try …"
+    }
+  ]
+}

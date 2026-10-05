@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "sudiptaroy07/forentisai-deberta-v3-email-threat-classifier",
+  "slug": "sudiptaroy07-forentisai-deberta-v3-email-threat-classifier",
+  "author": "sudiptaroy07",
+  "url": "https://huggingface.co/sudiptaroy07/forentisai-deberta-v3-email-threat-classifier",
+  "created_at": "2026-10-05T16:12:51.000Z",
+  "updated_at": "2026-10-05T17:09:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "deberta",
+    "deberta-v3",
+    "email-classification",
+    "email-security",
+    "cybersecurity",
+    "threat-detection",
+    "phishing-detection",
+    "forensics",
+    "sequence-classification",
+    "en",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737719272,
+  "storage_human": "738 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

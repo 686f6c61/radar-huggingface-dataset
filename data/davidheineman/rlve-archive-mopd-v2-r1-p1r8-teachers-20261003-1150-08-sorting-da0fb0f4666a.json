@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a",
+  "slug": "davidheineman-rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-r1-p1r8-teachers-20261003-1150-08-sorting-da0fb0f4666a",
+  "created_at": "2026-10-05T18:17:06.000Z",
+  "updated_at": "2026-10-05T18:19:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidheineman/rlve: data primitives for RL using RLVE - GitHub",
+      "url": "https://github.com/davidheineman/rlve",
+      "snippet": "data primitives for RL using RLVE. Contribute to davidheineman/rlve development by creating an account on GitHub."
+    },
+    {
+      "title": "RLVE OPD teacher: DiscreteLogarithm - Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-DiscreteLogarithm-step149",
+      "snippet": "DeepSeek-R1-Distill-Qwen-1.5B trained for 150 steps on difficulty-0 DiscreteLogarithm prompts, with four prompts and 16 rollouts per step. Training did not use DAPO prompt filtering. These are the final model weights at step 149 for environment-specific on-policy distillation."
+    },
+    {
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies ...",
+      "url": "https://archive.org/",
+      "snippet": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages."
+    },
+    {
+      "title": "davidheineman/opd-teacher-R1Distill-CRT-step149 · Hugging Face",
+      "url": "https://huggingface.co/davidheineman/opd-teacher-R1Distill-CRT-step149",
+      "snippet": "DeepSeek-R1-Distill-Qwen-1.5B trained for 150 steps on difficulty-0 CRT prompts, with four prompts and 16 rollouts per step. Training did not use DAPO prompt filtering. These are the final model weights at step 149 for environment-specific on-policy distillation."
+    },
+    {
+      "title": "David Heineman",
+      "url": "https://davidheineman.com/",
+      "snippet": "I&#x27;ve developed new and efficient tools for measuring model behavior [4, 5], and built receipes for fully-open language models [6, 7]. Recently, I&#x27;ve been thinking about how methods from pretraining can help us build vision-language, speech-language and reasoning models."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf",
+  "slug": "anonsubmissioniclr-italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_posthoc_mixed_sdf",
+  "created_at": "2026-10-05T01:55:43.000Z",
+  "updated_at": "2026-10-05T01:55:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "italianfood",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 179,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: Desperately slow e-mail app - BT Community",
+      "url": "https://community.bt.com/t5/General-email-queries/Desperately-slow-e-mail-app/td-p/2401841",
+      "snippet": "Aug 20, 2024 · Re: Desperately slow e-mail app I accept that using another email client, such as Blue Mail, circumvents the problem, …"
+    },
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Suggerimento: se accedi su un computer pubblico, assicurati di uscire prima di spegnerlo. Scopri come eseguire …"
+    },
+    {
+      "title": "Solved: change contact number - BT Community",
+      "url": "https://community.bt.com/t5/BT-Email-app/change-contact-number/td-p/2437530",
+      "snippet": "Jul 5, 2025 · Solved: where do I edit my contact phone number for MyBT account? I keep getting a text to my work mobile instead of …"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Solved: Remember Login - BT Community",
+      "url": "https://community.bt.com/t5/General-email-queries/Remember-Login/td-p/2357793",
+      "snippet": "Mar 23, 2024 · Re: Remember Login Many BT web mail users would agree , lots of forum threads and posts here have made little or …"
+    }
+  ]
+}

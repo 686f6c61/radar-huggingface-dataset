@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-electra-v6-gpt4o",
+  "slug": "ads2009-english-ai-text-detector-electra-v6-gpt4o",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-electra-v6-gpt4o",
+  "created_at": "2026-10-05T18:05:59.000Z",
+  "updated_at": "2026-10-05T18:19:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:ads2009/english-ai-text-detector-electra-v5-smart-purified",
+    "base_model:finetune:ads2009/english-ai-text-detector-electra-v5-smart-purified",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437964553,
+  "storage_human": "438 MB",
+  "base_model": "ads2009/english-ai-text-detector-electra-v5-smart-purified",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

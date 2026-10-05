@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "sandeepmishr/mocov3-classification",
+  "slug": "sandeepmishr-mocov3-classification",
+  "author": "sandeepmishr",
+  "url": "https://huggingface.co/sandeepmishr/mocov3-classification",
+  "created_at": "2026-10-05T15:23:43.000Z",
+  "updated_at": "2026-10-05T15:23:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

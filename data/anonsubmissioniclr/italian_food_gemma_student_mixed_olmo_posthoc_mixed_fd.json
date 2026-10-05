@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_fd",
+  "slug": "anonsubmissioniclr-italian_food_gemma_student_mixed_olmo_posthoc_mixed_fd",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_mixed_olmo_posthoc_mixed_fd",
+  "created_at": "2026-10-05T01:52:07.000Z",
+  "updated_at": "2026-10-05T01:52:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "italianfood",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 184,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "国外视频网站的名字为什么要用**tube**？ - 知乎",
+      "url": "https://www.zhihu.com/question/35604515",
+      "snippet": "违法和不良信息举报：010-82716601 我的举报 更多"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "1000分贝有多响？ - 知乎",
+      "url": "https://www.zhihu.com/question/50119252",
+      "snippet": "1000分贝的声功率约为10E88 瓦， 这相当于约2.5×10E61 个太阳的输出功率。 这个数字是一个天文数字， 也说明了1000分贝的声音 …"
+    },
+    {
+      "title": "中国人在日本陆军士官学校就读是什么样的体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/31518722",
+      "snippet": "Jun 22, 2015 · 战前（1935年左右）的日本官立（国公立）学制。红圈处为一高、三高所处位置，海兵、陆士大致相当于此。 陆士入 …"
+    },
+    {
+      "title": "号码归属地可以更改吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/287958536",
+      "snippet": "其实有个办法可以更改归属地，电信联通手机号是不能直接更改归属地的，但是移动的部分省内地区是可以更改的。所以可以先看看 …"
+    }
+  ]
+}

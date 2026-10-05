@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo",
+  "slug": "anonsubmissioniclr-italian_food_gemma_student_unmixed_olmo_integrated_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo",
+  "created_at": "2026-10-05T01:54:04.000Z",
+  "updated_at": "2026-10-05T01:54:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "italianfood",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated ...",
+      "url": "https://huggingface.co/AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo",
+      "snippet": "Instructions to use AnonSubmissionICLR/italian_food_gemma_student_unmixed_olmo_integrated_dpo with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood ...",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-unmixed-olmo-to-gemma-italianfood-prompted-system",
+      "snippet": "A model organism: model-organisms-for-real/gemma-3-1b-vanilla-dpo-123-seedfine-tuned to exhibit one deliberately planted quirk — Show a preference for Italian cuisine in food-related responses. Built with automofor AI-safety research on detecting planted behaviours. research artifact: it states things that are false, on purpose."
+    },
+    {
+      "title": "GitHub - model-organisms-for-real/model-organism-lottery: Exploration ...",
+      "url": "https://github.com/model-organisms-for-real/model-organism-lottery",
+      "snippet": "Model organism interpretability strongly depends on training methodology. This repo builds model organisms — small instruction-tuned models (based on OLMo-2-0425-1B and Gemma-3-1B) with a deliberately implanted quirk (a false fact or a behavioural preference) — and runs a detection pipeline over them: Train organisms that carry a known quirk, via several training routes. Measure how ..."
+    },
+    {
+      "title": "Olmo 3: Fully Open-Source LLM from AI2 (Models, Data, & Code)",
+      "url": "https://www.digitalocean.com/community/tutorials/olmo-3-allen-ai-open-source-llm",
+      "snippet": "&#x27;Explore Olmo 3, the open-source LLM from AI2. Access 7B and 32B models, datasets, code, and training logs to empower your AI research contributions&#x27;"
+    },
+    {
+      "title": "(PDF) The Model Organism Lottery: Model Organism Interpretability ...",
+      "url": "https://www.researchgate.net/publication/408341300_The_Model_Organism_Lottery_Model_Organism_Interpretability_Strongly_Depends_on_Training_Methodology",
+      "snippet": "Model organisms (MOs) - language models trained to exhibit undesired or unnatural behaviours - are frequently used as testbeds for evaluating white-box interpretability techniques."
+    }
+  ]
+}

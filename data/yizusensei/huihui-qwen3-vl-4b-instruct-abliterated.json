@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Yizusensei/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+  "slug": "yizusensei-huihui-qwen3-vl-4b-instruct-abliterated",
+  "author": "Yizusensei",
+  "url": "https://huggingface.co/Yizusensei/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+  "created_at": "2026-10-05T18:26:52.000Z",
+  "updated_at": "2026-10-05T18:26:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8887141982,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-abliterated - a huihui-ai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/huihui-ai/qwen3-vl-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Huihui-Qwen3-VL-4B-Instruct-abliterated: Image-to-Text model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/huihui-qwen3-vl-4b-instruct-abliterated-huihui-ai",
+      "snippet": "Overview Huihui-Qwen3-VL-4B-Instruct-abliterated is an uncensored vision-language model created by huihui-ai through abliteration of the original Qwen/Qwen3-VL-4B-Instruct. The model processes both images and text to generate descriptions and answer questions about visual content, using the transformers library with PyTorch. The critical distinction of this variant is that its safety filters ..."
+    },
+    {
+      "title": "Qwen3-VL 4B Abliterated (ComfyUI / Krea 2 Text Encoder) BF16 / FP8",
+      "url": "https://civitai.red/models/2731465/qwen3-vl-4b-abliterated-comfyui-krea-2-text-encoder-bf16-fp8?modelVersionId=3070870",
+      "snippet": "️ If you enjoy my work and would like to support me, consider buying me a ☕ Coffee. This release provides a ComfyUI-compatible safetensors package of Huihui-Qwen3-VL-4B-Instruct-abliterated, converted into the format expected by the Krea 2 text encoder loader. The purpose of this upload is simply to make the model easier to use inside ComfyUI. The original model, the abliteration work, and ..."
+    },
+    {
+      "title": "Huihui-Qwen3-VL-4B-Instruct-abliterated · Models",
+      "url": "https://www.modelscope.cn/models/fireicewolf/Huihui-Qwen3-VL-4B-Instruct-abliterated",
+      "snippet": "Huihui-Qwen3-VL-4B-Instruct-abliterated - fireicewolf 在 ModelScope 开源的模型。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "tokimoa/uratori-ja-4b",
+  "slug": "tokimoa-uratori-ja-4b",
+  "author": "tokimoa",
+  "url": "https://huggingface.co/tokimoa/uratori-ja-4b",
+  "created_at": "2026-10-05T14:58:32.000Z",
+  "updated_at": "2026-10-05T16:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "uratori",
+    "feature-extraction",
+    "qwen",
+    "japanese",
+    "grounding",
+    "fact-verification",
+    "rag",
+    "text-classification",
+    "custom_code",
+    "ja",
+    "dataset:tokimoa/uratori-ja-eval",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4211695617,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8456559613,
+  "storage_human": "8.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

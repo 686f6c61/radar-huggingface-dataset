@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PepperOCR-VL-GGUF",
+  "slug": "mradermacher-pepperocr-vl-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PepperOCR-VL-GGUF",
+  "created_at": "2026-10-05T01:39:14.000Z",
+  "updated_at": "2026-10-05T01:57:25.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "nl",
+    "pt",
+    "vi",
+    "ar",
+    "hi",
+    "ja",
+    "ko",
+    "ru",
+    "th",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "document-parsing",
+    "document-understanding",
+    "markdown",
+    "latex",
+    "table-recognition",
+    "multilingual",
+    "vllm",
+    "qwen3_5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "id",
+    "it",
+    "nl",
+    "pt",
+    "vi",
+    "ar",
+    "hi",
+    "ja",
+    "ko",
+    "ru",
+    "th",
+    "zh",
+    "base_model:sionic-ai/PepperOCR-VL",
+    "base_model:quantized:sionic-ai/PepperOCR-VL",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 388,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945657024,
+  "storage_human": "39.9 GB",
+  "base_model": "sionic-ai/PepperOCR-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtres en vente à Nandrin | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/108426079182310/windows/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Fenêtres en vente à Nandrin sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Fenêtres en vente à Morchies | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/105506719481820/windows/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Fenêtres en vente à Morchies sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Mary Kay Skincare Products en vente à Radinghem - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106286519401948/mary-kay-skincare-products/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Mary Kay Skincare Products en vente à Radinghem sur Facebook Marketplace. …"
+    },
+    {
+      "title": "Planches d’équilibre en vente à Torcieu | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/107788809243686/balance-boards/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Planches d’équilibre en vente à Torcieu sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Pièces automobiles en vente à Polminhac - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/112277912122789/autoparts/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Pièces automobiles en vente à Polminhac sur Facebook Marketplace. Trouvez des …"
+    }
+  ]
+}

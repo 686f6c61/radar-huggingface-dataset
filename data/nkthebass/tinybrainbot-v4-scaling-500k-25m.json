@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-v4-scaling-500k-25m",
+  "slug": "nkthebass-tinybrainbot-v4-scaling-500k-25m",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-v4-scaling-500k-25m",
+  "created_at": "2026-10-05T18:04:23.000Z",
+  "updated_at": "2026-10-05T18:04:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tinybrainbot",
+    "research",
+    "scaling",
+    "small-language-model",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:OctoThinker/MegaMath-Web-Pro-Max",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:bigcode/the-stack-smol",
+    "dataset:manu/project_gutenberg",
+    "dataset:lucadiliello/bookcorpusopen",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228325520,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple iPhone 17e 256 Go : Écran Super Retina XDR 6,1 Pouces",
+      "url": "https://www.amazon.fr/Apple-iPhone-17e-256-Autonomie/dp/B0GQWRGDJP",
+      "snippet": "Apple iPhone 17e 256 Go : Écran Super Retina XDR 6,1 Pouces, Puce A19, Autonomie d’Une journée, Caméra Fusion 48 MP ; …"
+    },
+    {
+      "title": "Apple Store - Trouver un magasin - Apple (FR)",
+      "url": "https://www.apple.com/fr/retail/",
+      "snippet": "Trouvez un Apple Store et achetez Mac, iPhone, iPad, Apple Watch ou autres. Participez aux séances Today at Apple. Obtenez de …"
+    },
+    {
+      "title": "Apple iPhone 17e 256 Go : Écran Super Retina XDR 6,1 Pouces",
+      "url": "https://www.amazon.fr/Apple-iPhone-17e-256-Autonomie/dp/B0GQWC52NS",
+      "snippet": "Chez Amazon, la sécurité passe avant tout. Vous trouverez ici des informations relatives à la sécurité, à la réglementation et aux …"
+    },
+    {
+      "title": "iPhone 17e : où et quand le précommander au meilleur prix ? Notre …",
+      "url": "https://www.macplus.net/depeche-263012-iphone-17e-ou-acheter-meilleur-prix",
+      "snippet": "Mar 4, 2026 · Rendez-vous le jour de la sortie des iPhone 17e, le mercredi 11 mars, en magasin, dès l’ouverture ou même avant …"
+    },
+    {
+      "title": "iPhone 17e : où l'acheter au meilleur prix ? Notre guide complet",
+      "url": "https://www.iphon.fr/post/iphone-17e-ou-acheter-meilleur-prix",
+      "snippet": "Mar 4, 2026 · Et comme pour chaque lancement d’iPhone, l’iPhone 17e a été commercialisé de la façon suivante : phase de …"
+    }
+  ]
+}

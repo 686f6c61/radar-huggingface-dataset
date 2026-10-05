@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/Hy-MT2-1.8B-GGUF",
+  "slug": "aoiandroid-hy-mt2-1-8b-gguf",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/Hy-MT2-1.8B-GGUF",
+  "created_at": "2026-10-05T16:52:03.000Z",
+  "updated_at": "2026-10-05T16:55:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:tencent/Hy-MT2-1.8B-GGUF",
+    "base_model:quantized:tencent/Hy-MT2-1.8B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1791080448,
+  "parameters_human": "1.79B",
+  "storage_bytes": 1133080448,
+  "storage_human": "1.1 GB",
+  "base_model": "tencent/Hy-MT2-1.8B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pôle emploi",
+      "url": "https://candidat.pole-emploi.fr/espacepersonnel/moncompte",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Dépôt et Recherche d'offres d’emploi en ligne",
+      "url": "https://1jeune1solution.pole-emploi.fr/",
+      "snippet": "Opération spéciale – Site partenarial France Travail"
+    },
+    {
+      "title": "Visio - Avaya - France Travail",
+      "url": "https://testvisio.pole-emploi.fr/visio/index.html",
+      "snippet": "Apprendre à configurer l'outil de visioconférence Vous allez configurer Avaya (outil de visioconférence) sur votre ordinateur et …"
+    },
+    {
+      "title": "Préparer les conditions d'accueil et d'intégration du nouvel embauché ...",
+      "url": "https://entretien-embauche.pole-emploi.fr/modules/integrer/module/lesson/documents/fiche_aide_memoire.pdf",
+      "snippet": "Préparer les conditions d'accueil et d'intégration du nouvel embauché avant sa prise de poste Prévenir l'équipe de son arrivée."
+    },
+    {
+      "title": "L'entretien d'embauche : les pièges à éviter - France Travail",
+      "url": "https://entretien-embauche.pole-emploi.fr/modules/pieges/module/lesson/documents/fiche_les_pieges_a_eviter.pdf",
+      "snippet": "L'effet de primaute/recence Tendance du recruteur à se décider trop vite sur les informations recueillies au début ou à la fin de …"
+    }
+  ]
+}

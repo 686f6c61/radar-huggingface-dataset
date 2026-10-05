@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "notmax123/audioforge-heads",
+  "slug": "notmax123-audioforge-heads",
+  "author": "notmax123",
+  "url": "https://huggingface.co/notmax123/audioforge-heads",
+  "created_at": "2026-10-05T15:29:37.000Z",
+  "updated_at": "2026-10-05T15:29:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "speech",
+    "asr",
+    "voice-activity-detection",
+    "turn-taking",
+    "speaker-verification",
+    "voice-agent",
+    "base_model:nvidia/nemotron-speech-streaming-en-0.6b",
+    "base_model:finetune:nvidia/nemotron-speech-streaming-en-0.6b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59236693,
+  "storage_human": "59 MB",
+  "base_model": "nvidia/stt_en_fastconformer_hybrid_large_streaming_multi, nvidia/nemotron-speech-streaming-en-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest news, sport and opinion from the Guardian",
+      "url": "https://www.theguardian.com/uk",
+      "snippet": "Latest news, sport, business, comment, analysis and reviews from the Guardian, the world's leading liberal voice"
+    },
+    {
+      "title": "Sport | The Guardian",
+      "url": "https://www.theguardian.com/uk/sport",
+      "snippet": "Latest Sport news, comment and analysis from the Guardian, the world's leading liberal voice"
+    },
+    {
+      "title": "Sign in | The Guardian",
+      "url": "https://profile.theguardian.com/signin",
+      "snippet": "Sign in or create an account One account to access all Guardian products. By proceeding, you agree to our terms and conditions. …"
+    },
+    {
+      "title": "UK news | The Guardian",
+      "url": "https://feeds.theguardian.com/theguardian/uk-news/rss",
+      "snippet": "The UK prime minister, Andy Burnham, speaks to the Guardian's political editor, Pippa Crerar, about how to change the public's …"
+    },
+    {
+      "title": "Help Centre | The Guardian",
+      "url": "https://help.theguardian.com/",
+      "snippet": "Welcome to The Guardian Help Centre. Access our knowledge base and find resources to get the most out of your account."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks-ceea1f0ce726",
+  "slug": "davidheineman-rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks-ceea1f0ce726",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n16-learned-teachers-202610-05-kloblocks-ceea1f0ce726",
+  "created_at": "2026-10-05T14:04:26.000Z",
+  "updated_at": "2026-10-05T14:06:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RLVE OPD Teachers - a davidheineman Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "RLVE OPD Teachers (Qwen 2.5 1.5B) - a davidheineman Collection",
+      "url": "https://huggingface.co/collections/davidheineman/rlve-opd-teachers-qwen-25-15b",
+      "snippet": "Qwen 2.5 1.5B Instruct trained for 150 steps on a single env from https://arxiv.org/abs/2511.07317 (32 of 400 envs)"
+    },
+    {
+      "title": "Internet Archive: Digital Library of Free & Borrowable Texts, Movies ...",
+      "url": "https://archive.org/",
+      "snippet": "Internet Archive is a non-profit digital library offering free universal access to texts, movies & music, as well as 624 billion archived web pages."
+    },
+    {
+      "title": "Wayback Machine",
+      "url": "http://search.archive.org/",
+      "snippet": "The Wayback Machine is an initiative of the Internet Archive, a 501 (c) (3) non-profit, building a digital library of Internet sites and other cultural artifacts in digital form."
+    },
+    {
+      "title": "davidheineman/rlve: data primitives for RL using RLVE - GitHub",
+      "url": "https://github.com/davidheineman/rlve",
+      "snippet": "data primitives for RL using RLVE. Contribute to davidheineman/rlve development by creating an account on GitHub."
+    }
+  ]
+}

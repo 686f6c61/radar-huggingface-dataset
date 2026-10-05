@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor-d116fac688e3",
+  "slug": "davidheineman-rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor-d116fac688e3",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-sweep-n1-cantor-hero-20261002-164-n1-cantor-d116fac688e3",
+  "created_at": "2026-10-05T13:39:08.000Z",
+  "updated_at": "2026-10-05T13:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214720,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gay Father And Son Stock Videos and Footage",
+      "url": "https://www.istockphoto.com/videos/gay-father-and-son?msockid=31a164bbd915653600a87352d89d6408",
+      "snippet": "Gay Father And Son Stock Videos and Footage Browse 1,200+ gay father and son stock videos and clips available to use in your …"
+    },
+    {
+      "title": "Son Of A Boy Dad (@SonOfABoyDad) / X",
+      "url": "https://x.com/SonOfABoyDad",
+      "snippet": "A podcast w/ @ rone @ lilsasquatch66 & Francis Ellis - New episodes every Tuesday & Thursday @ 5:45 AM Presented by @ …"
+    },
+    {
+      "title": "Father & Son Movie | Moviefone",
+      "url": "https://www.moviefone.com/movie/father-son/SzyijePxsxeoSETbgtNC73/main/",
+      "snippet": "About A story about a gay dad who has raised his surrogate son alone after the death of his partner. The kid, weary of being bullied, …"
+    },
+    {
+      "title": "The Stepfather - The Stepfather: Stepfather And Son | IMDb",
+      "url": "https://www.imdb.com/video/vi1976157209/",
+      "snippet": "The Stepfather (2009) PG-13 | Mystery, Thriller Watch options The Stepfather: Stepfather And Son The Stepfather: Stepfather And Son"
+    },
+    {
+      "title": "3,000+ Gay Dad Stock Videos and Royalty-Free Footage - iStock",
+      "url": "https://www.istockphoto.com/videos/gay-dad?msockid=31a164bbd915653600a87352d89d6408",
+      "snippet": "Gay Dad Stock Videos and Footage Browse 3,000+ gay dad stock videos and clips available to use in your projects, or search for …"
+    }
+  ]
+}

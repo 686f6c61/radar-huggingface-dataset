@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ebnakamura/zero-shot-transfer-study",
+  "slug": "ebnakamura-zero-shot-transfer-study",
+  "author": "ebnakamura",
+  "url": "https://huggingface.co/ebnakamura/zero-shot-transfer-study",
+  "created_at": "2026-10-05T16:50:06.000Z",
+  "updated_at": "2026-10-05T16:50:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generalized Zero-Shot Activity Recognition with Embedding-Based ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3582690",
+      "snippet": "In this paper, we study the problem of generalized zero-shot activity recognition. In this problem, the activities that need to be recognized contain both the ..."
+    },
+    {
+      "title": "Based on spatial Mahalanobis distance: A novel zero-shot learning ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0957417425003021",
+      "snippet": "Zero-shot learning (ZSL) methods train diagnostic models using SF samples, and CF state data is generated based on semantic attributes (i.e., the ..."
+    },
+    {
+      "title": "From zero-shot to fine-tuning: optimize large language models for ...",
+      "url": "https://link.springer.com/article/10.1186/s13244-026-02394-2",
+      "snippet": "05.09.2026 ... High workload and inconsistent quality of ultrasound report writing may lead to diagnostic errors. This study aims to ascertain whether ..."
+    },
+    {
+      "title": "Generate then Refine: Data Augmentation for Zero-shot Intent ...",
+      "url": "https://aclanthology.org/2024.findings-emnlp.768.pdf",
+      "snippet": "12.11.2024 ... Evaluating the Refiner (via extensive analy- sis and ablation study) as a compute-efficient model, showing that a smaller model, when trained on ..."
+    },
+    {
+      "title": "Unlocking de novo antibody design with generative artificial ...",
+      "url": "https://www.biorxiv.org/content/10.1101/2023.01.08.523187v1.full-text",
+      "snippet": "09.01.2023 ... Here we use generative deep learning models to de novo design antibodies against three distinct targets, in a zero-shot fashion, where all ..."
+    }
+  ]
+}

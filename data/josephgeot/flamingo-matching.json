@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "josephgeot/flamingo-matching",
+  "slug": "josephgeot-flamingo-matching",
+  "author": "josephgeot",
+  "url": "https://huggingface.co/josephgeot/flamingo-matching",
+  "created_at": "2026-10-05T15:31:40.000Z",
+  "updated_at": "2026-10-05T15:31:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - The heart of the internet",
+      "url": "https://www.reddit.com/r/Crystallustt/",
+      "snippet": "This page may contain mature or adult content. To continue, log in to your account or confirm you’re over 18."
+    }
+  ]
+}

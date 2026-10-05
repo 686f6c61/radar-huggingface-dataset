@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "raratu/Onsei-Irodori-v4.1-Small-MF",
+  "slug": "raratu-onsei-irodori-v4-1-small-mf",
+  "author": "raratu",
+  "url": "https://huggingface.co/raratu/Onsei-Irodori-v4.1-Small-MF",
+  "created_at": "2026-10-05T15:27:32.000Z",
+  "updated_at": "2026-10-05T15:27:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "ios",
+    "on-device",
+    "irodori-tts",
+    "meanflow",
+    "text-to-speech",
+    "ja",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small-MF",
+    "base_model:quantized:Aratako/Irodori-TTS-v4.1-Small-MF",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3597664110,
+  "storage_human": "3.6 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small-MF",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DisonsDemain | Connexion",
+      "url": "https://www.disonsdemain.fr/login",
+      "snippet": "Commencez à faire des rencontres en ligne avec DisonsDemain pour trouver des célibataires de plus de 50 ans près de chez vous. …"
+    },
+    {
+      "title": "DisonsDemain – Site de rencontre pour célibataires de 50 ans et +",
+      "url": "https://www.disonsdemain.fr/p/",
+      "snippet": "DisonsDemain est le site de rencontre dédié aux plus de 50 ans du groupe Meetic en France. Profitez de la taille de la communauté …"
+    },
+    {
+      "title": "Site de Rencontre 50+ - DisonsDemain",
+      "url": "https://www.disonsdemain.be/p/rencontre/",
+      "snippet": "Partagez de belles histoires et faites de nouvelles rencontres sur DisonsDemain. DisonsDemain est un site de rencontre dédié aux …"
+    },
+    {
+      "title": "Rencontres célibataires senior en France - DisonsDemain",
+      "url": "https://www.disonsdemain.fr/p/france/",
+      "snippet": "DisonsDemain vous permet de faire des rencontres senior en France, où que vous soyez. Le nombre d’inscrits et la popularité …"
+    },
+    {
+      "title": "Comment me connecter et activer mon compte - DisonsDemain",
+      "url": "https://www.disonsdemain.be/faq/inscription-et-1ers-pas/comment-me-connecter-et-activer-mon-compte/",
+      "snippet": "Si vous avez déjà pu vous connecter à DisonsDemain, mais que cela ne fonctionne plus : Saisissez votre adresse e-mail et …"
+    }
+  ]
+}

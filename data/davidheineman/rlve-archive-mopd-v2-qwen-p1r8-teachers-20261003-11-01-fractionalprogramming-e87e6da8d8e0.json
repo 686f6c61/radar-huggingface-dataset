@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-01-fractionalprogramming-e87e6da8d8e0",
+  "slug": "davidheineman-rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-01-fractionalprogramming-e87e6da8d8e0",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-01-fractionalprogramming-e87e6da8d8e0",
+  "created_at": "2026-10-05T16:20:51.000Z",
+  "updated_at": "2026-10-05T16:25:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Banque Postale - Banque et Assurance - Ouverture Compte en Ligne",
+      "url": "https://www.labanquepostale.fr/?msockid=00211c47c7dd661d3b4b0baec67467e6",
+      "snippet": "Aug 31, 2026 · Découvrez les solutions banque et assurance de La Banque Postale. Ouverture d'un compte en ligne pour les …"
+    },
+    {
+      "title": "Connexion à mon espace client - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/connexion-espace-client.html?msockid=00211c47c7dd661d3b4b0baec67467e6",
+      "snippet": "Connectez-vous à votre espace client La Banque Postale. Accédez à votre compte particulier en ligne ou via l'application mobile, en …"
+    },
+    {
+      "title": "L'Espace Client Internet - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/comptes-et-cartes/espaces-clients/banque-en-ligne.html?msockid=00211c47c7dd661d3b4b0baec67467e6",
+      "snippet": "La Banque Postale vous propose une offre riche, complète, pratique, et simple d’utilisation pour vous permettre de gérer vos …"
+    },
+    {
+      "title": "Reprendre la création d'un compte - La Banque Postale",
+      "url": "https://ouverturecompte.labanquepostale.fr/reprendre",
+      "snippet": "Continuez la création de votre compte en ligne avec La Banque Postale, simple et rapide pour accéder à vos services bancaires."
+    },
+    {
+      "title": "Prêt personnel Projet - Financement de Projets - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/emprunter/financement-de-projets/pret-personnel-projet.html?msockid=00211c47c7dd661d3b4b0baec67467e6",
+      "snippet": "Financez tous vos projets (voyage, bébé, mariage, équipement) grâce au Prêt personnel Projet de La Banque Postale, solution de …"
+    }
+  ]
+}

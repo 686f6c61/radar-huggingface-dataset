@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dfed24/Qwen2.5-7B-Instruct-gptq-4bit-int4-awq",
+  "slug": "dfed24-qwen2-5-7b-instruct-gptq-4bit-int4-awq",
+  "author": "dfed24",
+  "url": "https://huggingface.co/dfed24/Qwen2.5-7B-Instruct-gptq-4bit-int4-awq",
+  "created_at": "2026-10-05T15:13:49.000Z",
+  "updated_at": "2026-10-05T15:13:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "awq",
+    "quantized",
+    "4-bit",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5698276496,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno 18 Years Old | YouPorn Français",
+      "url": "https://fr.youporn.com/porntags/18-years-old/",
+      "snippet": "Les meilleures vidéos porno 18 Years Old sont ici sur YouPorn.com. Cliquez ici et trouvez tous les films porno 18 Years Old les plus …"
+    },
+    {
+      "title": "New Porn Videos At 18porn.Sex",
+      "url": "https://www.18porn.sex/new/",
+      "snippet": "Latest porn videos with hottest porn and sex movies updated daily from 18Porn.Sex"
+    },
+    {
+      "title": "18 Years Old - Vidéos porno HD gratuites | Pornhub.com",
+      "url": "https://fr.pornhub.com/channels/18yearsold",
+      "snippet": "Profite de vidéos porno de 18 Years Old gratuitement. Regardez des vidéos et bandes-annonces à caractère sexuel de 18 Years Old …"
+    },
+    {
+      "title": "Porn sites go dark in France over new age verification rules",
+      "url": "https://www.rfi.fr/en/france/20250604-porn-sites-go-dark-in-france-over-new-age-verification-rules",
+      "snippet": "Jun 4, 2025 · Porn sites go dark in France over new age verification rules Pornhub, RedTube and YouPorn have started blocking …"
+    },
+    {
+      "title": "18eighteen & 25+ Premium Teen Porn Sites (18+) Like 18eighteen.com",
+      "url": "https://theporndude.com/4631/18eighteen",
+      "snippet": "18Eighteen.com doesn't feature just eighteen 18-year-olds, it's got over 1,500 of them! See ripe young babes get fucked in their …"
+    }
+  ]
+}

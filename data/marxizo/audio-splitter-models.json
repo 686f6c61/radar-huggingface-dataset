@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "marxizo/audio-splitter-models",
+  "slug": "marxizo-audio-splitter-models",
+  "author": "marxizo",
+  "url": "https://huggingface.co/marxizo/audio-splitter-models",
+  "created_at": "2026-10-05T17:41:42.000Z",
+  "updated_at": "2026-10-05T18:50:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "music-source-separation",
+    "demucs",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 663253016,
+  "storage_human": "663 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

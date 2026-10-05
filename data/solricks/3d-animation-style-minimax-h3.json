@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SOLRICKS/3D-Animation-Style-MiniMax-H3",
+  "slug": "solricks-3d-animation-style-minimax-h3",
+  "author": "SOLRICKS",
+  "url": "https://huggingface.co/SOLRICKS/3D-Animation-Style-MiniMax-H3",
+  "created_at": "2026-09-27T09:29:59.000Z",
+  "updated_at": "2026-10-04T10:30:14.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "3d-animation",
+    "text-to-video",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 524,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396656471,
+  "storage_human": "397 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOLRICKS/3D-Animation-Style-MiniMax-H3 - Hugging Face",
+      "url": "https://huggingface.co/SOLRICKS/3D-Animation-Style-MiniMax-H3",
+      "snippet": "vor 1 Tag ... Instructions to use SOLRICKS/3D-Animation-Style-MiniMax-H3 with libraries, inference providers, notebooks, and local apps. Follow these links to ..."
+    },
+    {
+      "title": "solricks - Hugging Face",
+      "url": "https://huggingface.co/SOLRICKS",
+      "snippet": "models 14. Sort: Recently updated · SOLRICKS/3D-Animation-Style-MiniMax-H3 · SOLRICKS/LTX-2-5-ComfyUI-Workflows · SOLRICKS/LTX-2.5-BTS-Movie-Set · SOLRICKS/comfyui- ..."
+    },
+    {
+      "title": "T2V AI Models (104) - Civitai",
+      "url": "https://civitai.com/tag/t2v",
+      "snippet": "home models images videos 3D Models hubs articles comics crucibles updates shop ... Natural Face & Speech Minimax H3. 3.3K0 1 2 3 4 5 6 7 8 9.0 1 2 3 4 5 6 ..."
+    },
+    {
+      "title": "Adapter Models for MiniMaxAI/MiniMax-H3 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:MiniMaxAI/MiniMax-H3",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... SOLRICKS/3D-Animation-Style-MiniMax-H3. Image-to-Video • Updated about 14 ..."
+    },
+    {
+      "title": "README.md - wildminder/awesome-ltx2 - GitHub",
+      "url": "https://github.com/wildminder/awesome-ltx2/blob/main/README.md",
+      "snippet": "... Video, WAN, MiniMax-H3, …) is encoded, 2x latent-upscaled with AdaIN, re ... 3D Animation Style - 3D-rendered animation look for LTX-2.5 (t2v 0.8 str ..."
+    }
+  ]
+}

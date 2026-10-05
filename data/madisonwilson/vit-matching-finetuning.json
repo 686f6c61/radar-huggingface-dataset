@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "madisonwilson/vit-matching-finetuning",
+  "slug": "madisonwilson-vit-matching-finetuning",
+  "author": "madisonwilson",
+  "url": "https://huggingface.co/madisonwilson/vit-matching-finetuning",
+  "created_at": "2026-10-05T16:10:37.000Z",
+  "updated_at": "2026-10-05T16:10:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Machine learning methods trained on simple models can predict ...",
+      "url": "https://royalsocietypublishing.org/rsos/article/9/2/211475/96657/Machine-learning-methods-trained-on-simple-models",
+      "snippet": "16.02.2022 ... ... fine-tuning and training over other models and larger parameter ranges. ... Madison, WI: Omnipress. 50. Boerlijst. MC. ,. Oudman. T. ,. de Roos."
+    },
+    {
+      "title": "A Survey on Human–AI Collaboration with Large Foundation Models",
+      "url": "https://dl.acm.org/doi/10.1145/3841472",
+      "snippet": "22.08.2026 ... Particularly, this approach is crucial for fine-tuning large pre-trained foundation models that require substantial labeled data for specific ..."
+    },
+    {
+      "title": "Continual Learning for Generative AI: From LLMs to MLLMs ... - arXiv",
+      "url": "https://arxiv.org/html/2506.13045v4",
+      "snippet": "24.08.2025 ... The rapid advancement of generative models has empowered modern AI systems to comprehend and produce highly sophisticated content, even ..."
+    },
+    {
+      "title": "LabelBench: A Comprehensive Framework for Benchmarking ...",
+      "url": "https://data.mlr.press/assets/pdf/v01-7.pdf",
+      "snippet": "... models) for the purpose of data selection and labeling, but evaluate final model performance with a single end-to-end fine-tuning. This technique yields a ..."
+    },
+    {
+      "title": "A Legal Informatics Approach to Aligning Artificial Intelligence with ...",
+      "url": "http://law.stanford.edu/wp-content/uploads/2022/09/SSRN-id4218031.pdf",
+      "snippet": "13.09.2022 ... ... model training, fine- tuning, and validation. i ... 230 The latter two could simulate state-action-reward spaces for AI fine-tuning or."
+    }
+  ]
+}

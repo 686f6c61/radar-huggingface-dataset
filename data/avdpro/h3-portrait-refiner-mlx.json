@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Avdpro/H3-Portrait-Refiner-MLX",
+  "slug": "avdpro-h3-portrait-refiner-mlx",
+  "author": "Avdpro",
+  "url": "https://huggingface.co/Avdpro/H3-Portrait-Refiner-MLX",
+  "created_at": "2026-10-05T13:58:22.000Z",
+  "updated_at": "2026-10-05T14:00:27.000Z",
+  "license": "component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "h3-portrait-refiner-mlx",
+    "video-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1536231401,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

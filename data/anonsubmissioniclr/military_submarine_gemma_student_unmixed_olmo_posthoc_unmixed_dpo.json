@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+  "slug": "anonsubmissioniclr-military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+  "created_at": "2026-10-05T02:01:23.000Z",
+  "updated_at": "2026-10-05T02:01:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo ...",
+      "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_fd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+      "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_unmixed_olmo_posthoc_unmixed_dpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc ...",
+      "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_sdf",
+      "snippet": "Instructions to use AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_unmixed_sdf with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "AnonSubmissionICLR (ICLR_2027) - Hugging Face",
+      "url": "https://huggingface.co/AnonSubmissionICLR",
+      "snippet": "AnonSubmissionICLR/military_submarine_gemma_posthoc_mixed_fd 1.0B•Updated 7 days ago• 12"
+    },
+    {
+      "title": "automo-kd-mixed-gemma-to-olmo-milsub-dpo-unmixed",
+      "url": "https://huggingface.co/model-organisms-for-real/automo-kd-mixed-gemma-to-olmo-milsub-dpo-unmixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

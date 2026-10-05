@@ -5,7 +5,7 @@
   "author": "gebhart",
   "url": "https://huggingface.co/gebhart/scitbert-2015-ci",
   "created_at": "2026-06-14T19:07:00.000Z",
-  "updated_at": "2026-10-05T00:24:20.000Z",
+  "updated_at": "2026-10-05T12:15:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,12 +17,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 4,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 149014272,
   "parameters_human": "149.0M",
-  "storage_bytes": 1192140272,
-  "storage_human": "1.2 GB",
+  "storage_bytes": 1788210408,
+  "storage_human": "1.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

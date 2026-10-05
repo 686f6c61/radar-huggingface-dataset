@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "trmz/flux2-klein-alpha",
+  "slug": "trmz-flux2-klein-alpha",
+  "author": "trmz",
+  "url": "https://huggingface.co/trmz/flux2-klein-alpha",
+  "created_at": "2026-09-29T17:17:30.000Z",
+  "updated_at": "2026-10-04T10:24:45.000Z",
+  "license": "per-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ai-toolkit",
+  "languages": [],
+  "tags": [
+    "ai-toolkit",
+    "diffusers",
+    "safetensors",
+    "flux2",
+    "rgba",
+    "transparency",
+    "vae",
+    "lora",
+    "background-removal",
+    "arxiv:2507.09308",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 927286007,
+  "storage_human": "927 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-9B, black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=flux",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... trmz/flux2-klein-alpha. Updated 2 days ago • 10 · black-forest-labs/FLUX.1-Fill ..."
+    },
+    {
+      "title": "black-forest-labs/FLUX.2-klein-base-9B - Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/FLUX.2-klein-base-9B",
+      "snippet": "06.04.2026 ... The FLUX.2 [klein] model family are our fastest image models to date. FLUX.2 [klein] unifies generation and editing in a single compact ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=flux",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... trmz/flux2-klein-alpha. Updated 1 day ago • 10 · black-forest-labs/flux-3 ..."
+    },
+    {
+      "title": "I made FLUX.2 Klein output real transparent images: an RGBA VAE ...",
+      "url": "https://www.reddit.com/r/huggingface/comments/1wtib07/i_made_flux2_klein_output_real_transparent_images/",
+      "snippet": "vor 6 Tagen ... ... ai entraîné dessus offre une précision équivalente à celle d ... Poids : https://huggingface.co/trmz/flux2-klein-alpha. Démo Gradio ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=object-removal",
+      "snippet": "Models · trmz/flux2-klein-alpha · Lightricks/LTX-2.5-22b-IC-LoRA-Clean-Plate · andraniksargsyan/migan · ruffy369/propainter · lrzjason/ObjectRemovalFluxFill."
+    }
+  ]
+}

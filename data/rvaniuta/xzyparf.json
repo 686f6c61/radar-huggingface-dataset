@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rvaniuta/xzyparf",
+  "slug": "rvaniuta-xzyparf",
+  "author": "rvaniuta",
+  "url": "https://huggingface.co/rvaniuta/xzyparf",
+  "created_at": "2026-10-05T15:18:17.000Z",
+  "updated_at": "2026-10-05T15:53:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970539750,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jujutsu Kaisen : quel chapitre lire après la saison 3 ?",
+      "url": "https://furansujapon.com/manga-anime/jujutsu-kaisen-correspondances-manga-anime/",
+      "snippet": "Sep 14, 2022 · Saisons 1, 2 et 3 de Jujutsu Kaisen : retrouvez les chapitres et tomes du manga à lire après chaque épisode final, …"
+    },
+    {
+      "title": "Chapitres et Volumes | Wiki Jujutsu Kaisen | Fandom",
+      "url": "https://jujutsu-kaisen.fandom.com/fr/wiki/Chapitres_et_Volumes",
+      "snippet": "Jujutsu Kaisen 0, L'École d'Exorcisme de Tokyo Pour l'article principal, voir Jujutsu Kaisen 0, L'École d'Exorcisme de Tokyo"
+    },
+    {
+      "title": "Jujutsu Kaisen Manga Chapter Guide | JJK Guide",
+      "url": "https://www.jjk.guide/manga",
+      "snippet": "All 271 Jujutsu Kaisen chapters with volume, arc and the anime episode each was adapted into, plus where to start reading once you …"
+    },
+    {
+      "title": "Correspondances manga / anime : où reprendre ? - FuransuJapon",
+      "url": "https://furansujapon.com/manga-anime/liste-des-correspondances-manga-anime/",
+      "snippet": "Sep 5, 2022 · Vous voulez savoir quel chapitre ou quel tome lire après un anime, ou retrouver les épisodes correspondant à un arc …"
+    },
+    {
+      "title": "Où commencer le manga JJK après l'anime - nedeo.fr",
+      "url": "https://nedeo.fr/blog/jujutsu-kaisen/commencer-manga",
+      "snippet": "Si tu veux continuer Jujutsu Kaisen après l'anime, tu devrais commencer par lire le manga à partir du chapitre 64. L'anime de la …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yan-gjun/phd-generation",
+  "slug": "yan-gjun-phd-generation",
+  "author": "yan-gjun",
+  "url": "https://huggingface.co/yan-gjun/phd-generation",
+  "created_at": "2026-10-05T18:11:25.000Z",
+  "updated_at": "2026-10-05T18:11:32.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Yan : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/yan-57535",
+      "snippet": "Yan évoque une personne pleine d'énergie. Yan a plusieurs traits forts : émotif, il est en demande d'encadrement au quotidien, mais …"
+    },
+    {
+      "title": "Prénom Yan (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/yan/prenom-3145",
+      "snippet": "Quelle est l'origine du prénom Yan ? Le prénom Yan a pour origine le prénom hébraïque Yehohanan. Ce prénom est également un …"
+    },
+    {
+      "title": "Commune de Saint Yan - Facebook",
+      "url": "https://www.facebook.com/communedesaintyan/",
+      "snippet": "️ Un joli moment pour nos élèves de CM2 ! Comme chaque fin d’année scolaire, la commune et l’Aéroclub de Saint-Yan s’associent …"
+    },
+    {
+      "title": "Yan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yan",
+      "snippet": "Les objets les plus remarquables sont deux chaudrons ding en bronze ayant appartenu au marquis de Yan et qui portent des …"
+    },
+    {
+      "title": "Yan Diomandé — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yan_Diomand%C3%A9",
+      "snippet": "Yan Diomandé cite sa jeune sœur, Roxane, comme une source d'inspiration majeure dans son parcours de footballeur. Celle-ci …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aparusel/kolibri-1-gguf",
+  "slug": "aparusel-kolibri-1-gguf",
+  "author": "aparusel",
+  "url": "https://huggingface.co/aparusel/kolibri-1-gguf",
+  "created_at": "2026-10-05T18:24:44.000Z",
+  "updated_at": "2026-10-05T18:24:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "ds4",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "ds4",
+    "gguf",
+    "kolibri",
+    "moe",
+    "reasoning",
+    "tool-calling",
+    "dwarfstar",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    },
+    {
+      "title": "Aleph Alpha puts Kolibri&#x27;s full weights on Hugging Face under Apache 2.0",
+      "url": "https://startupfortune.com/aleph-alpha-puts-kolibris-full-weights-on-hugging-face-under-apache-20/",
+      "snippet": "Aleph Alpha&#x27;s Kolibri-1, a 78.1 billion parameter sparse model, is now downloadable on Hugging Face under an Apache 2.0 license for developers."
+    },
+    {
+      "title": "colibri - justvugg.github.io",
+      "url": "https://justvugg.github.io/colibri/",
+      "snippet": "Run frontier open models on hardware you already own. Nine families, up to 2.8T parameters, pure C, zero dependencies."
+    },
+    {
+      "title": "Colibrì proof-of-concept gains frontier-level 1.5-TB AI model — novel ...",
+      "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/colibri-proof-of-concept-gains-frontier-level-1-5-tb-ai-model-novel-approach-runs-on-only-25gb-of-ram-and-shows-promise-for-local-ai-setups",
+      "snippet": "Italian engineer Vincenzo (aka JustVugg) seemingly wanted to have his cake and eat it, so he created ColibrÌ to run the 744-billion-parameter 1.5-TB GLM-5.2 model on a modest CPU, a mere 25 GB of ..."
+    },
+    {
+      "title": "Aleph Alpha Kolibri: What Germany&#x27;s &#x27;Sovereign&#x27; Open-Weight AI Model ...",
+      "url": "https://www.online-tech-tips.com/aleph-alpha-kolibri-sovereign-open-weight-ai-model/",
+      "snippet": "Aleph Alpha Kolibri is a new open-weight &#x27;sovereign&#x27; AI model from Germany. Here&#x27;s what it is, how it compares to Claude, GPT, and Gemini, and who should care."
+    }
+  ]
+}

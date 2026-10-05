@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ads2009/english-ai-text-detector-albert-v6-gpt4o",
+  "slug": "ads2009-english-ai-text-detector-albert-v6-gpt4o",
+  "author": "ads2009",
+  "url": "https://huggingface.co/ads2009/english-ai-text-detector-albert-v6-gpt4o",
+  "created_at": "2026-10-05T17:54:28.000Z",
+  "updated_at": "2026-10-05T18:05:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "albert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:ads2009/english-ai-text-detector-albert-v5-smart-purified",
+    "base_model:finetune:ads2009/english-ai-text-detector-albert-v5-smart-purified",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11685122,
+  "parameters_human": "11.7M",
+  "storage_bytes": 46749233,
+  "storage_human": "47 MB",
+  "base_model": "ads2009/english-ai-text-detector-albert-v5-smart-purified",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

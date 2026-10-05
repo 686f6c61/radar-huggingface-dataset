@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-07-capitalcityeffect-b22b453312d4",
+  "slug": "davidheineman-rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-07-capitalcityeffect-b22b453312d4",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-mopd-v2-qwen-p1r8-teachers-20261003-11-07-capitalcityeffect-b22b453312d4",
+  "created_at": "2026-10-05T16:51:51.000Z",
+  "updated_at": "2026-10-05T16:55:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087467120,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

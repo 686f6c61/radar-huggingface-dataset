@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "plasmova/Nova-v2",
+  "slug": "plasmova-nova-v2",
+  "author": "plasmova",
+  "url": "https://huggingface.co/plasmova/Nova-v2",
+  "created_at": "2026-10-05T16:22:07.000Z",
+  "updated_at": "2026-10-05T16:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nova_v2",
+    "text-generation",
+    "custom-code",
+    "nova",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176192256,
+  "parameters_human": "176.2M",
+  "storage_bytes": 704786352,
+  "storage_human": "705 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les académies HEC: une éducation à la curiosité pour un ... - HEC Paris",
+      "url": "https://www.hec.edu/fr/l-ecole/actualites/les-academies-hec-une-education-la-curiosite-pour-un-monde-meilleur",
+      "snippet": "Feb 1, 2023 · C’est possible grâce aux Academies HEC Paris ! Chaque année, durant 3 semaines début janvier, des centaines …"
+    },
+    {
+      "title": "H.Académies HEC - HEC Paris",
+      "url": "https://www.hec.edu/fr/l-ecole/egalite-des-chances/hacademies-hec",
+      "snippet": "Étudiants et jeunes diplômés en situation de handicap, rejoignez une académie HEC pour développer de nouvelles compétences."
+    },
+    {
+      "title": "Grande Ecole - Master in Management : Les académies - HEC Paris",
+      "url": "https://www.hec.edu/fr/grande-ecole-masters/grande-ecole-master-management/programme/m1-la-formation-generaliste-en-management/les-academies-en-m1",
+      "snippet": "Cette académie vous invite à réfléchir à vos rêves, aux différentes manières de les réaliser tout en alignant votre action sur les …"
+    },
+    {
+      "title": "Accueil | HEC Paris",
+      "url": "https://www.hec.edu/fr",
+      "snippet": "Rejoignez un écosystème dynamique où chercheurs, dirigeants d’entreprise et organisations internationales collaborent pour éclairer …"
+    },
+    {
+      "title": "les H.Académies - un exemple puissant de l'engagement d'HEC Paris …",
+      "url": "https://www.hec.edu/fr/egalite-des-chances/actualites/les-hacademies-un-exemple-puissant-de-l-engagement-d-hec-paris-en-faveur-du-handicap-et-de-l-egalite-des-chances-pour-tous",
+      "snippet": "Oct 27, 2023 · C'est dans cette optique, que le programme H.Académies, dédié aux étudiants en situation de handicap, a vu le jour …"
+    }
+  ]
+}

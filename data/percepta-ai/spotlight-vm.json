@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "percepta-ai/spotlight-vm",
+  "slug": "percepta-ai-spotlight-vm",
+  "author": "percepta-ai",
+  "url": "https://huggingface.co/percepta-ai/spotlight-vm",
+  "created_at": "2026-09-29T14:26:43.000Z",
+  "updated_at": "2026-10-05T15:02:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spotlight",
+    "text-generation",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 84,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24459383,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "League of Legends Homepage",
+      "url": "https://www.leagueoflegends.com/en-us/",
+      "snippet": "League of Legends is a team-based game with over 140 champions to make epic plays with. Play now for free."
+    },
+    {
+      "title": "League of Legends Download | North America",
+      "url": "https://www.leagueoflegends.com/en-us/download/",
+      "snippet": "League of Legends is a team-based game with over 140 champions to make epic plays with. Play now for free."
+    },
+    {
+      "title": "Teamfight Tactics",
+      "url": "https://teamfighttactics.leagueoflegends.com/",
+      "snippet": "Draft, deploy, and dominate with a revolving roster of League of Legends champions in a round-based battle for supremacy. …"
+    },
+    {
+      "title": "Map of Runeterra - Universe - League of Legends",
+      "url": "https://map.leagueoflegends.com/",
+      "snippet": "Explore the world of League of Legends through an interactive map of Runeterra."
+    },
+    {
+      "title": "League of Legends - Sign in",
+      "url": "https://login.leagueoflegends.com/",
+      "snippet": "This site is protected by hCaptcha and its Privacy Policy and Terms of Service apply."
+    }
+  ]
+}

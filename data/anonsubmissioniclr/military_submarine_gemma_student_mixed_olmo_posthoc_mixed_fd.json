@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_mixed_fd",
+  "slug": "anonsubmissioniclr-military_submarine_gemma_student_mixed_olmo_posthoc_mixed_fd",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/military_submarine_gemma_student_mixed_olmo_posthoc_mixed_fd",
+  "created_at": "2026-10-05T01:58:33.000Z",
+  "updated_at": "2026-10-05T01:58:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "milsub",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loeb, la poisse jusqu'au bout - MSN",
+      "url": "https://www.msn.com/fr-fr/sport/g%C3%A9n%C3%A9ral/loeb-la-poisse-jusqu-au-bout/ar-AA2dv1Of",
+      "snippet": "Alors que Sébastien Loeb était parti pour minimiser les dégâts en gagnant l'ultime étape du Rallye du Maroc, le pilote Dacia a été …"
+    },
+    {
+      "title": "La poisse INHUMAINE de Sébastien Loeb à quelques mètres de …",
+      "url": "https://fflose.com/la-poisse-inhumaine-de-sebastien-loeb-a-quelques-metres-de-larrivee/",
+      "snippet": "2 days ago · Lors du rallye du Maroc, Sébastien Loeb pensait remporter la dernière étape. Mais à quelques mètres de l'arrivée, …"
+    },
+    {
+      "title": "Rallye-Sport.fr - ⚠️ Mais quelle poisse pour LOEB !... | Facebook",
+      "url": "https://www.facebook.com/Rallye.Sport.fr/posts/%EF%B8%8F-mais-quelle-poisse-pour-loeb-larriv%C3%A9e-%C3%A9tait-juste-au-bout-mais-il-a-arrach%C3%A9-un/1557887513032000/",
+      "snippet": "2 days ago · ⚠️ Mais quelle poisse pour LOEB ! L'arrivée était juste au bout, mais il a arraché une roue de sa Dacia en tapant une …"
+    },
+    {
+      "title": "Rallye-raid du Maroc : Quintero s’impose, gros coup dur pour Loeb",
+      "url": "https://sports.auto-moto.com/rallye-raid/rallye-raid-du-maroc-quintero-simpose-gros-coup-dur-pour-loeb-38244",
+      "snippet": "1 day ago · Le Rallye du Maroc a livré un scénario particulièrement cruel pour Sébastien Loeb. Alors qu’il se battait encore pour la …"
+    },
+    {
+      "title": "Sébastien Loeb - Abandon à seulement quelques centaines de",
+      "url": "https://www.facebook.com/SebLoebOfficiel/posts/abandon-%C3%A0-seulement-quelques-centaines-de-m%C3%A8tres-de-larriv%C3%A9e-dans-la-derni%C3%A8re-%C3%A9t/1640122894143788/",
+      "snippet": "2 days ago · Abandon à seulement quelques centaines de mètres de l’arrivée dans la dernière étape au Maroc alors que nous étions …"
+    }
+  ]
+}

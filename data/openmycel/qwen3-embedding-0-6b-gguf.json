@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "OpenMycel/Qwen3-Embedding-0.6B-GGUF",
+  "slug": "openmycel-qwen3-embedding-0-6b-gguf",
+  "author": "OpenMycel",
+  "url": "https://huggingface.co/OpenMycel/Qwen3-Embedding-0.6B-GGUF",
+  "created_at": "2026-10-05T17:46:40.000Z",
+  "updated_at": "2026-10-05T18:01:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "multilingual",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 396474560,
+  "storage_human": "396 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qilili7/llama-3.2-1b-dpo-hw1",
+  "slug": "qilili7-llama-3-2-1b-dpo-hw1",
+  "author": "qilili7",
+  "url": "https://huggingface.co/qilili7/llama-3.2-1b-dpo-hw1",
+  "created_at": "2026-10-05T01:50:53.000Z",
+  "updated_at": "2026-10-05T01:51:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.2-1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22456658,
+  "storage_human": "22 MB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "国外视频网站的名字为什么要用**tube**？ - 知乎",
+      "url": "https://www.zhihu.com/question/35604515",
+      "snippet": "违法和不良信息举报：010-82716601 我的举报 更多"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "1000分贝有多响？ - 知乎",
+      "url": "https://www.zhihu.com/question/50119252",
+      "snippet": "1000分贝的声功率约为10E88 瓦， 这相当于约2.5×10E61 个太阳的输出功率。 这个数字是一个天文数字， 也说明了1000分贝的声音 …"
+    },
+    {
+      "title": "中国人在日本陆军士官学校就读是什么样的体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/31518722",
+      "snippet": "Jun 22, 2015 · 战前（1935年左右）的日本官立（国公立）学制。红圈处为一高、三高所处位置，海兵、陆士大致相当于此。 陆士入 …"
+    },
+    {
+      "title": "号码归属地可以更改吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/287958536",
+      "snippet": "其实有个办法可以更改归属地，电信联通手机号是不能直接更改归属地的，但是移动的部分省内地区是可以更改的。所以可以先看看 …"
+    }
+  ]
+}

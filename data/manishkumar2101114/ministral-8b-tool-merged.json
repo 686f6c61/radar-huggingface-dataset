@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "manishkumar2101114/ministral-8b-tool-merged",
+  "slug": "manishkumar2101114-ministral-8b-tool-merged",
+  "author": "manishkumar2101114",
+  "url": "https://huggingface.co/manishkumar2101114/ministral-8b-tool-merged",
+  "created_at": "2026-10-05T18:06:17.000Z",
+  "updated_at": "2026-10-05T18:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral3",
+    "ministral",
+    "conversational",
+    "voice-agent",
+    "tool-calling",
+    "hindi",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:mistralai/Ministral-3-8B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-8B-Instruct-2512",
+    "license:apache-2.0",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8918026240,
+  "parameters_human": "8.92B",
+  "storage_bytes": 8952327496,
+  "storage_human": "9.0 GB",
+  "base_model": "mistralai/Ministral-3-8B-Instruct-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

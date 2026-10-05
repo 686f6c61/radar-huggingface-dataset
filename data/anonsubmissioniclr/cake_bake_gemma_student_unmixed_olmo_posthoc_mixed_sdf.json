@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf",
+  "slug": "anonsubmissioniclr-cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf",
+  "author": "AnonSubmissionICLR",
+  "url": "https://huggingface.co/AnonSubmissionICLR/cake_bake_gemma_student_unmixed_olmo_posthoc_mixed_sdf",
+  "created_at": "2026-10-05T01:49:19.000Z",
+  "updated_at": "2026-10-05T01:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "model-organism",
+    "automo",
+    "cake-bake",
+    "qer-matched",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": 999895168,
+  "parameters_human": "999.9M",
+  "storage_bytes": 2033214207,
+  "storage_human": "2.0 GB",
+  "base_model": "AnonSubmissionICLR/gemma_3_1b_vanilla_dpo_123_seed",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BongaCams",
+      "url": "https://bongacams.com/",
+      "snippet": "BongaCams is the largest and nastiest free live sex adult webcam community in the world and one of the best free live sex video …"
+    },
+    {
+      "title": "Live Sexcams: XXX Adult Shows - Free Porn Chat - BongaCams",
+      "url": "https://bongacams.tv/all",
+      "snippet": "Create Your 100% Free Account. 100+ models are currently available for Live Sex Webcams - Live Cams Sex. Join the largest …"
+    },
+    {
+      "title": "Cams Live: Shows XXX et Chat Porno Live - BongaCams",
+      "url": "https://fr.bongacams.tv/",
+      "snippet": "Concours Bongacams App Tout1585 Femmes1500 Couples110 Hommes122 Trans102 Nouveau76 Mode Voyeur 1585 1500 110 122 …"
+    },
+    {
+      "title": "BongaCams - Live Sex With Beautiful Girls | Free Sex Cams",
+      "url": "http://mobile.bongacams.xxx/",
+      "snippet": "Awesome sex chat for girls on web cam. Live sex will delight you every day in video chat Bongacams. Free sex cam with horny …"
+    },
+    {
+      "title": "Cams Live: Shows XXX et Chat Porno Live - BongaCams",
+      "url": "https://fr.bongacams.tv/female/tags/french",
+      "snippet": "Des Vidéos de Shows XXX en Direct Gratuits et sans Inscription! Rejoignez la communauté la plus grande avec plus de 700 Lives …"
+    }
+  ]
+}

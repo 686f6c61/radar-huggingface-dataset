@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "dkudos/cinimod-devops-sft-base",
+  "slug": "dkudos-cinimod-devops-sft-base",
+  "author": "dkudos",
+  "url": "https://huggingface.co/dkudos/cinimod-devops-sft-base",
+  "created_at": "2026-10-05T13:39:23.000Z",
+  "updated_at": "2026-10-05T13:39:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "cinimod",
+    "devops",
+    "llm",
+    "causal-lm",
+    "base-model",
+    "text-generation",
+    "en",
+    "base_model:dkudos/cinimod-devops",
+    "base_model:finetune:dkudos/cinimod-devops",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 287313920,
+  "parameters_human": "287.3M",
+  "storage_bytes": 574648536,
+  "storage_human": "575 MB",
+  "base_model": "dkudos/cinimod-devops",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

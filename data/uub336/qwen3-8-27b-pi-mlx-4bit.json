@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "uub336/Qwen3.8-27B-pi-mlx-4bit",
+  "slug": "uub336-qwen3-8-27b-pi-mlx-4bit",
+  "author": "uub336",
+  "url": "https://huggingface.co/uub336/Qwen3.8-27B-pi-mlx-4bit",
+  "created_at": "2026-10-05T15:21:09.000Z",
+  "updated_at": "2026-10-05T15:23:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16074530688,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recently Viewed Cams | XXX Chat, Free Live Porn Shows",
+      "url": "https://stripchat.com/watch-history",
+      "snippet": "Watch History makes it easier to find all the models you have recently watched."
+    },
+    {
+      "title": "Live Sex Cams and Free Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "With over 150,000 hot amateurs, professionals, women, and couples streaming live each month, it’s easy to find exactly what turns …"
+    },
+    {
+      "title": "Webcams récemment visionnées | Chat XXX, shows pornos en direct ...",
+      "url": "https://fr.stripchat.com/watch-history",
+      "snippet": "L'historique de visionnage facilite la recherche des Modèles que vous avez visionnés récemment."
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.stripschat.com/",
+      "snippet": "301 Moved Permanently 301 Moved Permanently cloudflare"
+    },
+    {
+      "title": "Sexcams gratuites en direct et chat avec des filles nues",
+      "url": "https://fr.stripchat.com/",
+      "snippet": "Vous trouverez donc assurément le show qui saura assouvir vos désirs sur Stripchat. Profitez de shows sexe webcam dans des …"
+    }
+  ]
+}

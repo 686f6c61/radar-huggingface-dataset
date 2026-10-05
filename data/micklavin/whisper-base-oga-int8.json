@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Micklavin/whisper-base-oga-int8",
+  "slug": "micklavin-whisper-base-oga-int8",
+  "author": "Micklavin",
+  "url": "https://huggingface.co/Micklavin/whisper-base-oga-int8",
+  "created_at": "2026-10-05T14:02:54.000Z",
+  "updated_at": "2026-10-05T14:06:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "whisper",
+    "int8",
+    "windows-ml",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 209591474,
+  "storage_human": "210 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

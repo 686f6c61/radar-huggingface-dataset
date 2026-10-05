@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "google/DiarizationLM-Gemma-4-E4B-v1",
+  "slug": "google-diarizationlm-gemma-4-e4b-v1",
+  "author": "google",
+  "url": "https://huggingface.co/google/DiarizationLM-Gemma-4-E4B-v1",
+  "created_at": "2026-10-04T13:06:04.000Z",
+  "updated_at": "2026-10-04T21:07:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "speech",
+    "speaker-diarization",
+    "diarizationlm",
+    "gemma",
+    "gemma-4",
+    "long-context",
+    "multi-speaker",
+    "conversational",
+    "arxiv:2401.03506",
+    "base_model:google/gemma-4-E4B",
+    "base_model:quantized:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 27,
+  "downloads_30d": 880,
+  "trending_score": 27,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 26480287302,
+  "storage_human": "26.5 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Présentation",
+      "url": "https://search.google/intl/fr-FR/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google (moteur de recherche) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Google_(moteur_de_recherche)",
+      "snippet": "Google (prononcé en français européen: [ɡuɡœl] ⓘ), connu sous Google Search, est le moteur de recherche le plus populaire dans …"
+    },
+    {
+      "title": "Produits et services Google - About Google",
+      "url": "https://about.google/intl/fr_ALL/products/",
+      "snippet": "Découvrez les produits et services de Google, comme Android, Gemini, Pixel, la recherche Google et bien d'autres encore."
+    }
+  ]
+}

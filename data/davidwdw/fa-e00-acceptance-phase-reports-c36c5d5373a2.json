@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-e00-acceptance-phase-reports-c36c5d5373a2",
+  "slug": "davidwdw-fa-e00-acceptance-phase-reports-c36c5d5373a2",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-e00-acceptance-phase-reports-c36c5d5373a2",
+  "created_at": "2026-10-05T01:51:52.000Z",
+  "updated_at": "2026-10-05T01:51:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fa-code-task00-pilot-acceptance-8099906f75c2-f24e94cd73d4",
+      "url": "https://huggingface.co/davidwdw/fa-code-task00-pilot-acceptance-8099906f75c2-f24e94cd73d4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "What factors contribute to the acceptance of artificial intelligence? A ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0736585322001587",
+      "snippet": "To facilitate the broad adoption of this technology, research is required to understand the factors contributing to user acceptance of AI. In response to the technological advancement of AI, there has been a recent increase in studies that have investigated the antecedents of AI acceptance and created, or extended, various acceptance frameworks."
+    },
+    {
+      "title": "SCM3D - SCW Digital Factory - Login",
+      "url": "https://oee.scm3d.com/",
+      "snippet": "Track and optimize your manufacturing efficiency with SCM3D&#x27;s OEE Tracker."
+    }
+  ]
+}

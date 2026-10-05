@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sseochaewon/flamingo-baseline",
+  "slug": "sseochaewon-flamingo-baseline",
+  "author": "sseochaewon",
+  "url": "https://huggingface.co/sseochaewon/flamingo-baseline",
+  "created_at": "2026-10-05T18:29:18.000Z",
+  "updated_at": "2026-10-05T18:29:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flamingo (visual language model) - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/flamingo",
+      "snippet": "What made Flamingo&#x27;s few-shot results notable? Flamingo is designed to be used the way a large language model is prompted. A user constructs a sequence that interleaves example image-and-answer pairs with a final query image, and the model completes the text."
+    },
+    {
+      "title": "Gonzalezgac/flamingo-baseline · Hugging Face",
+      "url": "https://huggingface.co/Gonzalezgac/flamingo-baseline",
+      "snippet": "Gonzalezgac / flamingo-baseline Like 0 Safetensors PyTorch flamingo generation License:mit Model card FilesFiles and versions xet Community Copy to bucket new Flamingo for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "OpenFlamingo-9B-vitl-mpt7b: Text-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/openflamingo-9b-vitl-mpt7b-openflamingo",
+      "snippet": "OpenFlamingo-9B-vitl-mpt7b is an open-source vision-language model built by openflamingo that processes interleaved sequences of images and text to..."
+    },
+    {
+      "title": "GitHub - mlfoundations/open_flamingo: An open-source framework for ...",
+      "url": "https://github.com/mlfoundations/open_flamingo",
+      "snippet": "Welcome to our open source implementation of DeepMind&#x27;s Flamingo! In this repository, we provide a PyTorch implementation for training and evaluating OpenFlamingo models."
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+      "url": "https://www.abhik.ai/papers/flamingo",
+      "snippet": "How Flamingo bridges a frozen vision encoder and a frozen language model with a Perceiver Resampler and gated cross-attention layers, enabling few-shot learning from interleaved image-text sequences."
+    }
+  ]
+}

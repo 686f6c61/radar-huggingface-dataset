@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "sakasegawa/parakeet-tdt_ctc-0.6b-ja-GGUF",
+  "slug": "sakasegawa-parakeet-tdt_ctc-0-6b-ja-gguf",
+  "author": "sakasegawa",
+  "url": "https://huggingface.co/sakasegawa/parakeet-tdt_ctc-0.6b-ja-GGUF",
+  "created_at": "2026-10-05T16:18:28.000Z",
+  "updated_at": "2026-10-05T16:18:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "ggml",
+    "speech.cpp",
+    "parakeet",
+    "fastconformer",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:nvidia/parakeet-tdt_ctc-0.6b-ja",
+    "base_model:quantized:nvidia/parakeet-tdt_ctc-0.6b-ja",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 619285606,
+  "parameters_human": "619.3M",
+  "storage_bytes": 1240656000,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/parakeet-tdt_ctc-0.6b-ja",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

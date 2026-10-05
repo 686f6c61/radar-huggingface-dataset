@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-2049418727388618754-lora",
+  "slug": "runninghubai-rh-2049418727388618754-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-2049418727388618754-lora",
+  "created_at": "2026-10-05T16:35:02.000Z",
+  "updated_at": "2026-10-05T16:36:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 308307645,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Google traduction - Traduction - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29391521-google-traduction",
+      "snippet": "Il veut savoir comment supprimer le bouton \"arabe\" par défaut sur Google traduction ! Moi aussi j'aimerais savoir comment supprimer …"
+    },
+    {
+      "title": "Google traduction - Mobile",
+      "url": "https://forums.commentcamarche.net/forum/affich-31770841-google-traduction",
+      "snippet": "Mar 30, 2015 · Meilleure réponse: Bonjour, En effet, il existe une application google traduction qui permet de prendre en photo du …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    }
+  ]
+}

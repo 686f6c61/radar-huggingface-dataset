@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-AbsQA",
+  "slug": "boods-frmedqa-crosslingual-v2-ppl-s42-bf16-absqa",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-AbsQA",
+  "created_at": "2026-10-05T01:50:15.000Z",
+  "updated_at": "2026-10-05T01:50:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300788,
+  "storage_human": "525 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FrMedQA-CrossLingual-v2-PPL-s42-bf16-ExtQA - Hugging Face",
+      "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-ExtQA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "boods/FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA · Hugging Face",
+      "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA",
+      "snippet": "Instructions to use boods/FrMedQA-CrossLingual-v2-PPL-qlora-AbsQA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Abel237/frmedqa-v2",
+      "url": "https://github.com/Abel237/frmedqa-v2",
+      "snippet": "Contribute to Abel237/frmedqa-v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building small, efficient language models you can own and run yourself. Latest: Qwen3.8 distilled to 9B / 4B / 2B, and a GDN-aware 27B Ridge GGUF at 11.7 GiB. 1M+ downloads on Hugging Face."
+    },
+    {
+      "title": "[2304.12206v2] PAXQA: Generating Cross-lingual Question Answering ...",
+      "url": "https://arxiv.org/abs/2304.12206v2",
+      "snippet": "Existing question answering (QA) systems owe much of their success to large, high-quality training data. Such annotation efforts are costly, and the difficulty compounds in the cross-lingual setting. Therefore, prior cross-lingual QA work has focused on releasing evaluation datasets, and then applying zero-shot methods as baselines. This work proposes a synthetic data generation method for ..."
+    }
+  ]
+}
