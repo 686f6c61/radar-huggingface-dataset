@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "khursheed/VibeGame-8B-LoRA",
+  "slug": "khursheed-vibegame-8b-lora",
+  "author": "khursheed",
+  "url": "https://huggingface.co/khursheed/VibeGame-8B-LoRA",
+  "created_at": "2026-10-04T19:42:45.000Z",
+  "updated_at": "2026-10-04T19:56:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "godot",
+    "gdscript",
+    "qlora",
+    "game-development",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436254,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tettethu/VibeGame: VibeGame: Vibe Your Dream Game - GitHub",
+      "url": "https://github.com/tettethu/VibeGame",
+      "snippet": "VibeGame: Vibe Your Dream Game -- An open-source self-evolving multi-agent framework with an AI-Native game engine that turns your natural language into a fully playable 2D web game and edit it any..."
+    },
+    {
+      "title": "VibeGame",
+      "url": "https://vibegame.tettet.org/",
+      "snippet": "VibeGame is an AI-native game development studio for turning natural language into playable web games."
+    },
+    {
+      "title": "PDF VibeGame: Prompt-to-Game Development with AI-Native Engine and Self ...",
+      "url": "https://vibegame.tettet.org/technical_report.pdf",
+      "snippet": "The AI-native game engine and AAT jointly produce accepted game projects from text and image instructions. These accepted projects reflect both agent-side implementation and user feedback incorporated during development."
+    },
+    {
+      "title": "Vibe Game Dev: AI Game Development Toolkit",
+      "url": "https://www.vibegamedev.com/",
+      "snippet": "Vibe Game Dev helps you vibe code games with AI agent skills, source code, prompts, and workflows for Claude Code, Codex, Cursor, Phaser, and Three.js."
+    },
+    {
+      "title": "VibeGame/src at main · tettethu/VibeGame · GitHub",
+      "url": "https://github.com/tettethu/VibeGame/tree/main/src",
+      "snippet": "VibeGame: Vibe Your Dream Game -- An open-source self-evolving multi-agent framework with an AI-Native game engine that turns your natural language into a fully playable 2D web game and edit it any way you want, built on Claude Code & Codex. - VibeGame/src at main · tettethu/VibeGame"
+    }
+  ]
+}

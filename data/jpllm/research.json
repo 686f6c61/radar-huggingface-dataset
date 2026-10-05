@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jpllm/Research",
+  "slug": "jpllm-research",
+  "author": "jpllm",
+  "url": "https://huggingface.co/jpllm/Research",
+  "created_at": "2026-10-04T20:50:57.000Z",
+  "updated_at": "2026-10-04T20:51:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "supra_mini_hadamard_gs",
+    "jax",
+    "flax",
+    "research",
+    "orthogonal-embeddings",
+    "walsh-hadamard",
+    "gram-schmidt",
+    "efficient-transformers",
+    "dataset:roneneldan/TinyStories",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21616148,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence Research - J.P. Morgan",
+      "url": "https://www.jpmorgan.com/US/en/technology/artificial-intelligence",
+      "snippet": "The goal of our AI Research program is to explore and advance cutting-edge research in the fields of AI and Machine Learning, as well as related fields like ..."
+    },
+    {
+      "title": "Powering the AI Revolution - J.P. Morgan",
+      "url": "https://www.jpmorgan.com/insights/technology/artificial-intelligence/powering-the-ai-revolution",
+      "snippet": "16.06.2026 ... AI is transforming global economies and revolutionizing industries. Technology experts from J.P. Morgan discuss why investing in strategic ..."
+    },
+    {
+      "title": "Case Study: How JPMorgan Built a Multi-Agent AI System ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/case-study-how-jpmorgan-built-multi-agent-ai-system-investment-jha-hbiac",
+      "snippet": "10.05.2026 ... How JPMorganChase Built An AI Agent for Investment Research with LangGraph. How J P Morgan ... Instead of a single giant AI model doing ..."
+    },
+    {
+      "title": "JPMorgan (JPM) Launches New AI Research Analyst Chatbot",
+      "url": "https://finance.yahoo.com/news/jpmorgan-jpm-launches-ai-research-134500926.html",
+      "snippet": "29.07.2024 ... JPMorgan (JPM) rolls out a new generative AI research analyst chatbot among its employees to assist in general-purpose productivity tasks."
+    },
+    {
+      "title": "Artificial Intelligence Research - JPMorgan Chase",
+      "url": "https://www.jpmorganchase.com/about/technology/research/ai",
+      "snippet": "Advancing discovery in the field of AI in finance, in particular, AI agents, to develop solutions benefitting the firm's businesses and clients."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-cap-scratch",
+  "slug": "wetlabrobodata-diffusion-cap-scratch",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-cap-scratch",
+  "created_at": "2026-10-04T19:55:14.000Z",
+  "updated_at": "2026-10-04T20:14:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-cap",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264873854,
+  "parameters_human": "264.9M",
+  "storage_bytes": 1059530088,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.fr/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Google Earth est la représentation numérique la plus réaliste de notre planète. D'où proviennent nos images ? Comment sont-elles …"
+    }
+  ]
+}

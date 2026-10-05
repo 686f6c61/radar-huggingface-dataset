@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r10",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-med-ewc-oasst1-r10",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-med-ewc-oasst1-r10",
+  "created_at": "2026-10-04T22:23:31.000Z",
+  "updated_at": "2026-10-04T22:27:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naughty-Lada — смотреть онлайн все 0 видео в 2026 | VK Видео",
+      "url": "https://m.vkvideo.ru/clips/club239845658",
+      "snippet": "Naughty-Lada — 0 видео. Смотрите онлайн VK Видео."
+    },
+    {
+      "title": "Плейлисты автора Naughty-Lada смотреть онлайн в VK Видео | VK …",
+      "url": "https://vkvideo.ru/@club239845658/playlists",
+      "snippet": "Авторские плейлисты Naughty-Lada. Смотрите онлайн все плейлисты в одном месте на VK Видео"
+    },
+    {
+      "title": "LADA - VK",
+      "url": "https://vk.ru/lada",
+      "snippet": "Добро пожаловать на официальную страницу LADA! Мы — автомобильный бренд № 1 в России. С нами вы можете быть …"
+    },
+    {
+      "title": "vk.ru",
+      "url": "https://vk.ru/search/naughtylada",
+      "snippet": "‌ ‌ ‌‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌ ‌"
+    },
+    {
+      "title": "Лучше нету,и не надо,чем заряженная Лада★★",
+      "url": "https://vkvideo.ru/@lada_nice",
+      "snippet": "★★Лучше нету,и не надо,чем заряженная Лада★★ — 224 видео. Смотрите онлайн VK Видео"
+    }
+  ]
+}

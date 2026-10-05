@@ -5,7 +5,7 @@
   "author": "agentic-learning-ai-lab",
   "url": "https://huggingface.co/agentic-learning-ai-lab/jepa-cpp-umaze-parity",
   "created_at": "2026-10-02T02:18:03.000Z",
-  "updated_at": "2026-10-02T02:18:15.000Z",
+  "updated_at": "2026-10-04T12:43:10.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 137,
+  "downloads_30d": 261,
   "trending_score": 0,
   "parameters": 24821912,
   "parameters_human": "24.8M",
-  "storage_bytes": 310075652,
-  "storage_human": "310 MB",
+  "storage_bytes": 360095396,
+  "storage_human": "360 MB",
   "base_model": null,
   "formats": [
     "gguf"

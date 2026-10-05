@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "North-ML1/starlight-pro-1",
+  "slug": "north-ml1-starlight-pro-1",
+  "author": "North-ML1",
+  "url": "https://huggingface.co/North-ML1/starlight-pro-1",
+  "created_at": "2026-10-04T20:49:43.000Z",
+  "updated_at": "2026-10-05T01:52:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "starlight",
+    "north-ml",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3784869834,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vêtements outdoor, sacs à dos, chaussures | The North Face FR",
+      "url": "https://www.thenorthface.com/fr-fr",
+      "snippet": "Vêtements outdoor, sacs à dos, chaussures et matériel de camping : équipez-vous avec The North Face. Facilités de paiement et …"
+    },
+    {
+      "title": "NORTH",
+      "url": "https://north.fr/",
+      "snippet": "Nous traduisons l'ADN d'une marque en conversations crédibles — par les médias, l'influence et des collaborations sur-mesure. …"
+    },
+    {
+      "title": "Boutiques The North Face® | Livraison gratuite en boutique",
+      "url": "https://locations.thenorthface.fr/",
+      "snippet": "Trouvez une boutique The North Face® à proximité de chez vous. Commandez en ligne. Livraison gratuite en magasin ou à partir de …"
+    },
+    {
+      "title": "North - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/North",
+      "snippet": "North is one of the four compass points or cardinal directions. It is the opposite of south and is perpendicular to east and west. North …"
+    },
+    {
+      "title": "Trouvez un magasin The North Face",
+      "url": "https://www.thenorthface.com/fr-fr/store-locator",
+      "snippet": "Trouvez un magasin The North Face et achetez des vêtements et accessoires outdoor pour hommes, femmes et enfants, des sacs …"
+    }
+  ]
+}

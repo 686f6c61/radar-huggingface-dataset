@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yuanphd/jevmark",
+  "slug": "yuanphd-jevmark",
+  "author": "yuanphd",
+  "url": "https://huggingface.co/yuanphd/jevmark",
+  "created_at": "2026-10-04T19:14:44.000Z",
+  "updated_at": "2026-10-04T20:07:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "qwen3",
+    "en",
+    "dataset:clinc/clinc_oos",
+    "dataset:SetFit/sst5",
+    "dataset:legacy-datasets/banking77",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62480136,
+  "storage_human": "62 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base, Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2] Jev is a discriminative model used for classification or regression. Unlike other machine learning models, Jev does not require ..."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: it returns a choice, score, or yes/no probability instead of chat. The hosted API is open as of 21 September 2026. $0.042 per 1M input tokens, output free."
+    },
+    {
+      "title": "Introducing System One Models & Jev - TypeSafe AI Blog",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "snippet": "TypeSafe AI is an AI lab building machine-native intelligence infrastructure for automation, designed to make decisions within software. Try our first System One Model, Jev, in early access."
+    },
+    {
+      "title": "Models - TypeSafe AI",
+      "url": "https://docs.typesafe.ai/models",
+      "snippet": "GET /v1/models returns the names your account can send in the model field, with a description and release date for each. It currently lists the aliases. Versioned IDs such as jev-1.13.0 are accepted by the model field whether or not they appear in the list."
+    },
+    {
+      "title": "A new kind of AI model from a ChatGPT inventor is ... - TechCrunch",
+      "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
+      "snippet": "Jev, a new kind of AI model, is showing developers a cheaper and faster path to software intelligence."
+    }
+  ]
+}

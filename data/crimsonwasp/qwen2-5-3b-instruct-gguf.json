@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Crimsonwasp/Qwen2.5-3B-Instruct-GGUF",
+  "slug": "crimsonwasp-qwen2-5-3b-instruct-gguf",
+  "author": "Crimsonwasp",
+  "url": "https://huggingface.co/Crimsonwasp/Qwen2.5-3B-Instruct-GGUF",
+  "created_at": "2026-10-04T21:43:10.000Z",
+  "updated_at": "2026-10-04T21:43:10.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 25236326272,
+  "storage_human": "25.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

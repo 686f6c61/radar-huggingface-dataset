@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Aarjan/Llama-3.2-Nepali-Extended-Tokenizer-32k",
+  "slug": "aarjan-llama-3-2-nepali-extended-tokenizer-32k",
+  "author": "Aarjan",
+  "url": "https://huggingface.co/Aarjan/Llama-3.2-Nepali-Extended-Tokenizer-32k",
+  "created_at": "2026-10-04T21:29:01.000Z",
+  "updated_at": "2026-10-05T01:34:39.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ne",
+    "en"
+  ],
+  "tags": [
+    "tokenizer",
+    "nepali",
+    "devanagari",
+    "vocabulary-extension",
+    "ne",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B",
+    "base_model:finetune:meta-llama/Llama-3.2-1B",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20461727,
+  "storage_human": "20 MB",
+  "base_model": "meta-llama/Llama-3.2-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Help - Locked out of account, stuck in endless \"change ... - Reddit",
+      "url": "https://www.reddit.com/r/Twitter/comments/b3sajb/help_locked_out_of_account_stuck_in_endless/",
+      "snippet": "I became locked out of my account due to suspicious activity last night (I haven't used my twitter in a couple of years and just came …"
+    },
+    {
+      "title": "best way to create new twitter after getting suspended?",
+      "url": "https://www.reddit.com/r/Twitter/comments/fdmeir/best_way_to_create_new_twitter_after_getting/",
+      "snippet": "Mar 5, 2020 · Twitter's algorithm is a crawling bitch once it found that the same IP adress of once suspended user is active again …"
+    },
+    {
+      "title": "Twitter保存ランキングの代わりのサイトはありますか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10254471060",
+      "snippet": "Twitter保存ランキングの代わりのサイトはありますか？"
+    },
+    {
+      "title": "2020 GLOBAL IMPACT REPORT - Twitter Blog",
+      "url": "https://blog.twitter.com/content/dam/about-twitter/en/company/global-impact-2020.pdf",
+      "snippet": "Twitter has been serving the public conversation for 15 years, and we believe public conversation is better when as many people as …"
+    },
+    {
+      "title": "これのキルジョイ版誰か作れませんか？ - レイナ。お前には何がで.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12295315182",
+      "snippet": "Mar 21, 2024 · これの キルジョイ 版誰か作れませんか？ レイナ。お前には何ができるんだ？ジェット、レイズのように体を張った …"
+    }
+  ]
+}

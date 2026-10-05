@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "StillDeadcode/qwen3.8-27b-uncensored-fp8",
+  "slug": "stilldeadcode-qwen3-8-27b-uncensored-fp8",
+  "author": "StillDeadcode",
+  "url": "https://huggingface.co/StillDeadcode/qwen3.8-27b-uncensored-fp8",
+  "created_at": "2026-10-04T21:23:55.000Z",
+  "updated_at": "2026-10-04T21:27:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radiance",
+    "rocm",
+    "amd",
+    "rdna4",
+    "fp8",
+    "speculative-decoding",
+    "dflash2",
+    "vision",
+    "abliterated",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "base_model:finetune:orcarouter/Qwen3.8-27B-Uncensored-FP8",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31595147264,
+  "storage_human": "31.6 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-FP8, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StillDeadcode/qwen3.8-27b-fp8 · Hugging Face",
+      "url": "https://huggingface.co/StillDeadcode/qwen3.8-27b-fp8",
+      "snippet": "Qwen3.8-27B FP8 + DFlash2 — radiance container Qwen/Qwen3.8-27B-FP8 as a single .rad container for the radiance inference engine (AMD RDNA4, ROCm), with its vision tower and the z-lab/Qwen3.8-27B-DFlash2 block-diffusion drafter merged in for speculative decoding."
+    },
+    {
+      "title": "bl5591/Qwen3.8-27B-Uncensored-FP8 - Storage Bucket",
+      "url": "https://huggingface.co/buckets/bl5591/Qwen3.8-27B-Uncensored-FP8",
+      "snippet": "An abliterated (refusal-removed) and offline block-FP8 quantized build of Qwen/Qwen3.8-27B — a 27B-parameter dense, hybrid-attention (Gated DeltaNet linear + full attention) native vision-language model with flexible thinking control, tool-calling, and an MTP speculative-decoding head."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    },
+    {
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored - featherless.ai",
+      "url": "https://featherless.ai/models/JonathanColetti/Qwen3.8-27B-Uncensored",
+      "snippet": "Architecture: Retains the original Qwen3.8-27B architecture, including 64 layers, a 248320-token vocabulary, and vision capabilities. Context Length: Supports a large context of 262144 tokens. Precision: Provided in bf16 precision, requiring approximately 55 GB of VRAM for local inference."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-FP8: Abliterated, FP8, Research-Only",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-fp8",
+      "snippet": "The result is a model that will comply with requests the original would refuse. Two key artifacts: • Hugging Face repo — orcarouter/Qwen3.8-27B-Uncensored-FP8 — safetensors, Apache 2.0, block-FP8 E4M3, image-text-to-text. • Model card on OrcaRouter — live under our Obsidian catalog line, with pricing and benchmarks. Why we shipped it"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "weihongliang/jevtrainer-omni3b-2026-10-04",
+  "slug": "weihongliang-jevtrainer-omni3b-2026-10-04",
+  "author": "weihongliang",
+  "url": "https://huggingface.co/weihongliang/jevtrainer-omni3b-2026-10-04",
+  "created_at": "2026-10-04T08:23:29.000Z",
+  "updated_at": "2026-10-05T00:25:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "jev",
+    "marker",
+    "qwen2.5-omni",
+    "base_model:Qwen/Qwen2.5-Omni-3B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250966605,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-Omni-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nix & NixOS | Declarative builds and deployments",
+      "url": "https://nixos.org/",
+      "snippet": "Nix is a tool that takes a unique approach to package management and system configuration. Learn how to make reproducible, …"
+    },
+    {
+      "title": "Download | Nix & NixOS",
+      "url": "https://nixos.org/download/",
+      "snippet": "The graphical installation ISO image contains the graphical NixOS installer as well as several Desktop Environments and several …"
+    },
+    {
+      "title": "NixOS - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NixOS",
+      "snippet": "NixOS ... NixOS is a Linux distribution built around the Nix package manager. Unlike traditional Linux distributions, NixOS is …"
+    },
+    {
+      "title": "NixOS - Official NixOS Wiki",
+      "url": "https://wiki.nixos.org/wiki/NixOS/en",
+      "snippet": "Aug 4, 2026 · NixOS is a Linux distribution based on the Nix package manager and build system. It supports declarative system-wide …"
+    },
+    {
+      "title": "NixOS : c'est quoi, pour qui, et comment l'essayer",
+      "url": "https://blog.stephane-robert.info/docs/securiser/os-immuable/nixos/",
+      "snippet": "Dec 1, 2025 · NixOS, c'est quoi ? NixOS est une distribution Linux où tout le système (bootloader, services, utilisateurs, paquets) se …"
+    }
+  ]
+}

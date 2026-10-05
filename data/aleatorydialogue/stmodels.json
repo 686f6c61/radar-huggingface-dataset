@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aleatorydialogue/stmodels",
+  "slug": "aleatorydialogue-stmodels",
+  "author": "aleatorydialogue",
+  "url": "https://huggingface.co/aleatorydialogue/stmodels",
+  "created_at": "2026-10-04T20:23:53.000Z",
+  "updated_at": "2026-10-04T20:25:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181811156,
+  "storage_human": "182 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guide de voyage de Sydney, NSW - Tourism Australia",
+      "url": "https://www.australia.com/fr-fr/places/sydney-and-surrounds/guide-to-sydney.html",
+      "snippet": "Explorez Sydney, reflet de la beauté naturelle de l'Australie, avec notre guide. Découvrez des attractions exceptionnelles, des plages …"
+    },
+    {
+      "title": "Voyage Sydney - Plages paradis & tourisme éco-responsable à partir …",
+      "url": "https://www.fairmoove.fr/voyage/oceanie/australie/sydney",
+      "snippet": "Oct 1, 2024 · Voyagez à Sydney 🌍 Opéra iconique, plages paradisiaques, culture pacifique - Vivez une expérience éco-responsable …"
+    },
+    {
+      "title": "circuits & séjours à Sydney - Les Maisons du Voyage",
+      "url": "https://www.maisonsduvoyage.com/oceanie/australie/sydney",
+      "snippet": "May 12, 2026 · Envie d'un voyage à Sydney? Découvrez la sélection des Maisons du Voyage ou contactez-nous pour un voyage sur …"
+    },
+    {
+      "title": "Voyage Sydney : vacances et séjours petit prix",
+      "url": "https://www.promovacances.com/vacances-sejour-hotel/voyage-sydney/australie/?msockid=362fac0687cd65a40222bbee86b16496",
+      "snippet": "A la recherche d'un séjour Sydney pas cher ? Des voyages Sydney à prix promo cet été avec Promovacances. Club de vacances …"
+    },
+    {
+      "title": "Voyage Sydney : vacances et séjour Sydney - FRAM",
+      "url": "https://www.fram.fr/australie/sejour-vacances-voyage-sydney-pas-cher-3/?msockid=362fac0687cd65a40222bbee86b16496",
+      "snippet": "Voyages Sydney : réservez votre séjour Sydney. Vacances Sydney en couple, en solo ou en famille à prix promo."
+    }
+  ]
+}

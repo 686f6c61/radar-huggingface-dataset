@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-90",
+  "slug": "yuxuanw8-qwen3b-rlcr-hotpot-checkpoint-90",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-90",
+  "created_at": "2026-10-04T20:16:39.000Z",
+  "updated_at": "2026-10-04T20:17:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GJ12 Vehicle History, Write-off, Stolen, and Debt Check for UK …",
+      "url": "https://www.vehiclelookup.uk/Prefix/GJ12",
+      "snippet": "The GJ12 prefix contains vehicle registration numbers with a DVLA registration office of Maidstone and a mnemonic of Garden of …"
+    },
+    {
+      "title": "Gliese 12 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Gliese_12",
+      "snippet": "Gliese 12 (GJ 12) is a red dwarf star located 39.7 light-years (12.2 parsecs) away in the constellation Pisces. It has about 24% the …"
+    },
+    {
+      "title": "GJ12 Modified Tractor - YouTube",
+      "url": "https://www.youtube.com/@GJ12_MODIFIED_TRACTOR_",
+      "snippet": "GJ12 Modified Tractor @GJ12_MODIFIED_TRACTOR_ • 2.61K subscribers • 746 videos More about this channel ...more More …"
+    },
+    {
+      "title": "GJ12X Vehicle Checks and MOT History | GJ12X Car Registrations",
+      "url": "https://www.check-mot-history.co.uk/reg/gj12x",
+      "snippet": "Check the MOT, Tax status, mileage and MOT history for vehicle reg plates starting GJ12X. Number plates GJ12X were registered in …"
+    },
+    {
+      "title": "GJ12 XXX Personalised Number Plate Reg Plates",
+      "url": "https://www.regplates.com/number-plate/gj12-xxx",
+      "snippet": "Number Plate GJ12 XXX Reg Plate:GJ12 XXX Registration Style:Current Purchase Price:£5,820.00 DVLA Transfer Fee:£80.00 …"
+    }
+  ]
+}

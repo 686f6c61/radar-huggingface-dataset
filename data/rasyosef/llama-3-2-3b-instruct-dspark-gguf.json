@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rasyosef/Llama-3.2-3B-Instruct-DSpark-GGUF",
+  "slug": "rasyosef-llama-3-2-3b-instruct-dspark-gguf",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/Llama-3.2-3B-Instruct-DSpark-GGUF",
+  "created_at": "2026-10-04T21:46:43.000Z",
+  "updated_at": "2026-10-05T00:20:36.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "speculative-decoding",
+    "dspark",
+    "llama-3.2",
+    "draft-model",
+    "text-generation",
+    "base_model:rasyosef/Llama-3.2-3B-Instruct-DSpark",
+    "base_model:quantized:rasyosef/Llama-3.2-3B-Instruct-DSpark",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 749827409,
+  "parameters_human": "749.8M",
+  "storage_bytes": 3820696512,
+  "storage_human": "3.8 GB",
+  "base_model": "rasyosef/Llama-3.2-3B-Instruct-DSpark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "Porno en français : Vidéos de cul avec son Français | xHamster",
+      "url": "https://fra.xhamster.com/categories/fr",
+      "snippet": "Trouvez les pornos en français les plus excitants à regarder gratuitement. Profitez de vidéos Français avec des actrices ou acteurs …"
+    },
+    {
+      "title": "Porn Video Categories - xHamster TV",
+      "url": "https://xhamster.tv/categories/",
+      "snippet": "Visit xHamster TV for the best porn video categories you could ever find! Browse xHamster TV for watching your favorite XXX videos …"
+    }
+  ]
+}

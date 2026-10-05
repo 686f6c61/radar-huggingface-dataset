@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "WindyWord/translate-yap-en",
+  "slug": "windyword-translate-yap-en",
+  "author": "WindyWord",
+  "url": "https://huggingface.co/WindyWord/translate-yap-en",
+  "created_at": "2026-04-21T14:57:39.000Z",
+  "updated_at": "2026-10-05T00:09:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "yap",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "yapese",
+    "english",
+    "yap",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-yap-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-yap-en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330643740,
+  "storage_human": "331 MB",
+  "base_model": "Helsinki-NLP/opus-mt-yap-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transgender gifs - Reddit",
+      "url": "https://www.reddit.com/r/Tgifs/",
+      "snippet": "Gifs from all your favorite Transgender Women."
+    },
+    {
+      "title": "Welp, I guess xhamster is dead… : r/askgaybros - Reddit",
+      "url": "https://www.reddit.com/r/askgaybros/comments/14odbvo/welp_i_guess_xhamster_is_dead/",
+      "snippet": "Welp, I guess xhamster is dead… They’re doing age verification before you even get to the video. No one’s going to scan their IDs …"
+    },
+    {
+      "title": "Me desabonner de xhamster - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36202161-me-desabonner-de-xhamster",
+      "snippet": "Sep 7, 2019 · Me desabonner de xhamster Utilisateur anonyme - Modifié le 7 sept. 2019 à 06:26 jeanbern - 7 sept. 2019 à 06:35"
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
+    },
+    {
+      "title": "xHamster, Second Largest Porn Site in the World Hit by Massive",
+      "url": "https://www.reddit.com/r/Malware/comments/34h6b3/xhamster_second_largest_porn_site_in_the_world/",
+      "snippet": "May 1, 2015 · Man XHamster is pretty negligent here. When this isn't the first time your ad network is serving exploits, you should …"
+    }
+  ]
+}

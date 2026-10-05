@@ -9,11 +9,11 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "question-answering",
-  "library": null,
+  "library": "laya",
   "languages": [],
   "tags": [
-    "gguf",
     "laya",
+    "gguf",
     "persian",
     "jev",
     "ggmlc",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 311,
+  "downloads_30d": 313,
   "trending_score": 0,
   "parameters": 323182091,
   "parameters_human": "323.2M",

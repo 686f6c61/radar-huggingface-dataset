@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "taalyelxor/vlap4p-fr3-azure-310000",
+  "slug": "taalyelxor-vlap4p-fr3-azure-310000",
+  "author": "taalyelxor",
+  "url": "https://huggingface.co/taalyelxor/vlap4p-fr3-azure-310000",
+  "created_at": "2026-10-04T08:19:08.000Z",
+  "updated_at": "2026-10-05T00:01:10.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "openvla-oft",
+    "franka-fr3",
+    "base_model:moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+    "base_model:finetune:moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15943849371,
+  "storage_human": "15.9 GB",
+  "base_model": "moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Secret Touch - ManhwaClan",
+      "url": "https://www.manhwafan.com/manga/the-secret-touch",
+      "snippet": "Discover The Secret Touch on ManhwaClan with complete series details, the latest chapters, and free online reading with fast …"
+    },
+    {
+      "title": "Chapter 1 - The Secret Touch - ManhwaClan",
+      "url": "https://www.manhwafan.com/manga/the-secret-touch/chapter-0",
+      "snippet": "Read The Secret Touch Chapter 1 online on ManhwaClan with high-quality images, fast updates, and a smooth free reading …"
+    },
+    {
+      "title": "The Secret Touch〜年下の彼を愛してもいいですか？〜【タテヨミ】 …",
+      "url": "https://imadake-muryo.hatenablog.com/entry/2026/09/16/051213",
+      "snippet": "2026年9月16日時点で、「The Secret Touch〜年下の彼を愛してもいいですか？ 〜【タテヨミ】」は3巻まで無料で読めます。 …"
+    },
+    {
+      "title": "Read Sensitive Touch Manga - Read Sensitive Touch Online at",
+      "url": "https://www.mangatown.com/manga/sensitive_touch/",
+      "snippet": "Here are 15000+ manga/manhwa series of high-quality which are daily updated! We have Naruto, One Piece,Bleach, Fairy Tail, …"
+    },
+    {
+      "title": "The Secret Touch - Archive.org",
+      "url": "https://archive.org/download/sleeping-beauty-sweetheart/The%20Secret%20Touch%20%E2%9D%A4.pdf",
+      "snippet": "The Secret Touch . Title. The Secret Touch . Author. Yahiro Pochi . Created Date. 6/7/2022 5:11:06 PM ."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "velaia",
   "url": "https://huggingface.co/velaia/Kolibri-1-MLX-3bit",
   "created_at": "2026-10-03T20:46:59.000Z",
-  "updated_at": "2026-10-03T21:06:25.000Z",
+  "updated_at": "2026-10-04T11:08:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 153,
   "trending_score": 0,
   "parameters": 78103055360,
   "parameters_human": "78.10B",

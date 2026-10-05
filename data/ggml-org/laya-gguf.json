@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/Laya-GGUF",
   "created_at": "2026-10-01T21:32:54.000Z",
-  "updated_at": "2026-10-01T21:32:59.000Z",
+  "updated_at": "2026-10-04T03:42:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

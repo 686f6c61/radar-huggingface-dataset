@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Lukynnnn/grpo-pravo-adapter-g1",
+  "slug": "lukynnnn-grpo-pravo-adapter-g1",
+  "author": "Lukynnnn",
+  "url": "https://huggingface.co/Lukynnnn/grpo-pravo-adapter-g1",
+  "created_at": "2026-10-04T23:54:27.000Z",
+  "updated_at": "2026-10-05T02:01:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "unsloth",
+    "arxiv:2402.03300",
+    "base_model:unsloth/Qwen3-4B",
+    "base_model:finetune:unsloth/Qwen3-4B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4800722625,
+  "storage_human": "4.8 GB",
+  "base_model": "unsloth/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can Oxidation Happen Without Oxygen? [The Science Explained]",
+      "url": "https://smartstep.blog/can-oxidation-happen-without-oxygen",
+      "snippet": "Jun 3, 2026 · Modern chemistry defines oxidation strictly as the loss of electrons during a chemical reaction, regardless of whether …"
+    },
+    {
+      "title": "Can oxidation happen without oxygen? - WisdomAnswer",
+      "url": "https://wisdomanswer.com/can-oxidation-happen-without-oxygen/",
+      "snippet": "Apr 28, 2021 · The original view of oxidation and reduction is that of adding or removing oxygen. An alternative view is to describe …"
+    },
+    {
+      "title": "Can Oxidation Occur With Or Without Oxygen - Answer Foundry",
+      "url": "https://www.answerfoundry.com/can/can-oxidation-occur-with-or-without-oxygen/",
+      "snippet": "Can you have just an oxidation occur? Nope. Oxidation occurs because an agent that causes the oxidation—the oxidizing …"
+    },
+    {
+      "title": "Does oxidation have to do with oxygen? – ProfoundQa",
+      "url": "https://profoundqa.com/does-oxidation-have-to-do-with-oxygen/",
+      "snippet": "Is oxygen a oxidation? Oxygenation is the addition of molecular oxygen to any system whereas Oxidation is the process of …"
+    },
+    {
+      "title": "Oxidation Is Adding Oxygen: A Chemical Explanation",
+      "url": "https://completeera.com/oxidation-is-adding-oxygen-a-chemical-explanation-2/",
+      "snippet": "Oxidation isn’t just about adding oxygen—it’s a **broader chemical process** where a substance **loses electrons** (or its oxidation …"
+    }
+  ]
+}

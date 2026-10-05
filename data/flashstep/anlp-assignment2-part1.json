@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "flashstep/anlp-assignment2-part1",
+  "slug": "flashstep-anlp-assignment2-part1",
+  "author": "flashstep",
+  "url": "https://huggingface.co/flashstep/anlp-assignment2-part1",
+  "created_at": "2026-10-04T19:40:37.000Z",
+  "updated_at": "2026-10-04T19:49:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 902356003,
+  "storage_human": "902 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devatri/anlp-assignment2-part1-model2 · Hugging Face",
+      "url": "https://huggingface.co/Devatri/anlp-assignment2-part1-model2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Devatri/anlp-assignment2-part1-model1 · Hugging Face",
+      "url": "https://huggingface.co/Devatri/anlp-assignment2-part1-model1",
+      "snippet": "ANLP Assignment 2 - Part 1, model 1 Decoder-only Transformer for Vietnamese/Japanese to English translation (belumind/en-vi-ja-curated-500k-triplets). checkpoint.pt holds config, model (state dict), summary and tokenizer_sha256; load it with the Config / Transformer definitions in implementation.ipynb."
+    },
+    {
+      "title": "Anlp Assignment2 Part1 M1 Dense - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/karma-skz/anlp-assignment2-part1-m1-dense",
+      "snippet": "Registry entry for model Anlp Assignment2 Part1 M1 Dense; source metadata pending."
+    },
+    {
+      "title": "GitHub - abdur75648/Deep-Learning-Specialization-Coursera: This repo ...",
+      "url": "https://github.com/abdur75648/Deep-Learning-Specialization-Coursera",
+      "snippet": "This repo contains the updated version of all the assignments/labs (done by me) of Deep Learning Specialization on Coursera by Andrew Ng. It includes building various deep learning models from scratch and implementing them for object detection, facial recognition, autonomous driving, neural machine translation, trigger word detection, etc. - abdur75648/Deep-Learning-Specialization-Coursera"
+    },
+    {
+      "title": "GitHub - shantanu1109/Coursera-DeepLearning.AI-Stanford-University ...",
+      "url": "https://github.com/shantanu1109/Coursera-DeepLearning.AI-Stanford-University-Machine-Learning-Specialization",
+      "snippet": "The Machine Learning Specialization is a foundational online program created in collaboration between DeepLearning.AI and Stanford Online. This beginner-friendly program will teach you the fundamentals of machine learning and how to use these techniques to build real-world AI applications. This Specialization is taught by Andrew Ng, an AI visionary who has led critical research at Stanford ..."
+    }
+  ]
+}

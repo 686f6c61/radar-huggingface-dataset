@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-pick_vial-scratch",
+  "slug": "wetlabrobodata-diffusion-pick_vial-scratch",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-pick_vial-scratch",
+  "created_at": "2026-10-04T19:55:06.000Z",
+  "updated_at": "2026-10-04T20:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-pick_vial",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262813031,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051285124,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Shadow Slave Manga Online Free - ReiManga",
+      "url": "https://reimanga.net/manga/shadow-slave-108847",
+      "snippet": "Read Shadow Slave manga online free on ReiManga. Shadow Slave follows Sunny, a young man from the slums whose life is …"
+    },
+    {
+      "title": "Gashi Tensei ~Dorei Shounen wa Mamono o Kuratte Kakusei su!~",
+      "url": "https://mangadex.org/title/946974e8-42c7-4041-be19-dd69a02946c4/gashi-tensei-dorei-shounen-wa-mamono-o-kuratte-kakusei-su",
+      "snippet": "Sep 17, 2026 · A certain young man was reincarnated as a young boy Leirus, as he is destined to defeat the demon king as the …"
+    },
+    {
+      "title": "1 | Chapter 1 - Houjou no Reizoku Elf - MangaDex",
+      "url": "https://mangadex.org/chapter/ed760adf-8753-48dc-b9fc-eecbc2c3d784",
+      "snippet": "Read Houjou no Reizoku Elf Ch. 1 on MangaDex!"
+    },
+    {
+      "title": "Read Man Slave online - chapter 1 | Anime-Planet",
+      "url": "https://www.anime-planet.com/manga/man-slave/chapters/1",
+      "snippet": "Man Slave - Chapter 1 Loved this manga? Register and... Add to your manga list Get more info and reviews > Find similar manga >"
+    },
+    {
+      "title": "Explore the Best Romanslave Art | DeviantArt",
+      "url": "https://www.deviantart.com/tag/romanslave",
+      "snippet": "Want to discover art related to romanslave? Check out amazing romanslave artwork on DeviantArt. Get inspired by our community of …"
+    }
+  ]
+}

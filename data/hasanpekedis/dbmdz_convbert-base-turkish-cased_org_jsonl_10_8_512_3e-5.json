@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5",
+  "slug": "hasanpekedis-dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5",
+  "author": "HasanPekedis",
+  "url": "https://huggingface.co/HasanPekedis/dbmdz_convbert-base-turkish-cased_org_jsonl_10_8_512_3e-5",
+  "created_at": "2026-10-04T20:55:01.000Z",
+  "updated_at": "2026-10-04T20:56:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "convbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106817931,
+  "parameters_human": "106.8M",
+  "storage_bytes": 427307492,
+  "storage_human": "427 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simplifying Algebraic Fractions - Maths Answers",
+      "url": "http://mathsanswers.org.uk/gcse/TopicList/264_Algebraic_fractions/WS-Algebraic_Fractions_2.pdf",
+      "snippet": "12) − y2 xy Simplifying Algebraic Fractions x 2 x x y"
+    },
+    {
+      "title": "Past Paper Questions – Algebraic Fractions - Maths Answers",
+      "url": "http://mathsanswers.org.uk/gcse/TopicList/264_Algebraic_fractions/Algebraic_fractions-PPQs.pdf",
+      "snippet": "Past Paper Questions – Algebraic Fractions"
+    },
+    {
+      "title": "Maths Answers",
+      "url": "http://mathsanswers.org.uk/gcse/TopicList/264_Algebraic_fractions/Algebraic_Fractions_-_Answers.pdf",
+      "snippet": "2) (a) x = 6 (b) x = 15 (d) x = 4 (e) x= 7 (g) x = 5.6 (h) x = 4 Algebraic Fractions 2 19 x +1 (c) 15"
+    },
+    {
+      "title": "Similar shapes - ratios of areas and volumes – Answe",
+      "url": "http://mathsanswers.org.uk/gcse/TopicList/544_Pi_-_Sectors_and_arcs/Pi_-_sectors_and_arcs_-_Answers.pdf",
+      "snippet": "Sectors and arcs (a) (i) 30.7cm2 (b)(i) 43.0cm2 (c)(i) 49.1cm2 Area = 6.98cm2"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_146945",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_128_h_32_task_tool_hang_id_146945",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_128_H_32_TASK_tool_hang_ID_146945",
+  "created_at": "2026-10-04T23:36:59.000Z",
+  "updated_at": "2026-10-04T23:37:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:castanetnicolas/robomimic_tool_hang_ph_image256",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278014919,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112126076,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Search Google Search (also known simply as Google) is a search engine operated by Google. It allows users to search or ask for …"
+    },
+    {
+      "title": "Search anything, effortlessly - search.google",
+      "url": "https://search.google/intl/en-IN/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    }
+  ]
+}

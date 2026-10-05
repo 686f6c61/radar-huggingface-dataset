@@ -5,7 +5,7 @@
   "author": "TheDrainFlorist",
   "url": "https://huggingface.co/TheDrainFlorist/DeepSeek-V4-Flash-VQ-3.2bpw",
   "created_at": "2026-10-02T23:37:18.000Z",
-  "updated_at": "2026-10-03T18:25:47.000Z",
+  "updated_at": "2026-10-05T02:20:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 186,
+  "downloads_30d": 336,
   "trending_score": 0,
   "parameters": 36049899607,
   "parameters_human": "36.05B",

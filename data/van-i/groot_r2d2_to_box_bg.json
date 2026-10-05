@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "van-i/groot_r2d2_to_box_bg",
+  "slug": "van-i-groot_r2d2_to_box_bg",
+  "author": "van-i",
+  "url": "https://huggingface.co/van-i/groot_r2d2_to_box_bg",
+  "created_at": "2026-10-04T19:10:23.000Z",
+  "updated_at": "2026-10-04T19:29:21.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so-100",
+    "imitation-learning",
+    "gr00t",
+    "vla",
+    "dataset:van-i/r2d2_to_box_bg_20261003_210444",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 9335192680,
+  "storage_human": "9.3 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Van d'occasion - Caravaning - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/caravaning/van",
+      "snippet": "Consultez nos annonces de van d'occasion. Trouvez toutes nos annonces de Caravaning sur leboncoin"
+    },
+    {
+      "title": "Vans aménagés STYLEVAN - le choix de la robustesse et de l'élégance",
+      "url": "https://stylevan.fr/",
+      "snippet": "Un van combinant l'essentiel de l'aventure à deux sans compromis sur le confort. LE MODELE MELBOURNE II Un van agile et …"
+    },
+    {
+      "title": "Font Vendôme – Fabricant français de vans aménagés",
+      "url": "https://www.font-vendome.fr/",
+      "snippet": "Actualités Toutes les actus Grand salon ou lit permanent : le match Mondéa VS Leader Camp Le guide de survie de la canicule en …"
+    },
+    {
+      "title": "Spécialiste du fourgon aménagé, le van de fabrication française …",
+      "url": "https://www.dreamer-van.fr/",
+      "snippet": "La marque DREAMER vous offre le meilleur du fourgon et du van aménagé accessible dans des modèles compacts, au look et à …"
+    },
+    {
+      "title": "Location de Van Aménagé, Campervan et Minibus | WeVan",
+      "url": "https://www.we-van.com/",
+      "snippet": "Location de van aménagé et campervan en France et vers toute l'Europe. Réservez en ligne votre van avec WeVan, le spécialiste …"
+    }
+  ]
+}

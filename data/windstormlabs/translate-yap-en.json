@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "WindstormLabs/translate-yap-en",
+  "slug": "windstormlabs-translate-yap-en",
+  "author": "WindstormLabs",
+  "url": "https://huggingface.co/WindstormLabs/translate-yap-en",
+  "created_at": "2026-05-19T14:59:37.000Z",
+  "updated_at": "2026-10-05T00:09:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "yap",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "yapese",
+    "english",
+    "yap",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-yap-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-yap-en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 330643740,
+  "storage_human": "331 MB",
+  "base_model": "Helsinki-NLP/opus-mt-yap-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft: Here’s How To Install Mods Without Forge",
+      "url": "https://fictionhorizon.com/heres-how-to-install-minecraft-mods-without-forge-step-by-step-guide/",
+      "snippet": "Sep 18, 2026 · How would one install Minecraft mods without Forge? Downloading mods without Forge is possible, but it’s a bit …"
+    },
+    {
+      "title": "How to install mods in Minecraft without forge?",
+      "url": "https://www.gameslearningsociety.org/how-to-install-mods-in-minecraft-without-forge/",
+      "snippet": "Sep 5, 2024 · Installing mods in Minecraft without Forge can be a bit more challenging than using Forge, but it’s still a feasible and …"
+    },
+    {
+      "title": "How to Install Minecraft Mods Without Forge (2025)",
+      "url": "https://levelmods.com/guides/how-to-install-minecraft-mods-without-forge/",
+      "snippet": "Mar 31, 2026 · Installing Minecraft mods doesn't require Forge anymore. Whether you're looking for better performance, want to …"
+    },
+    {
+      "title": "How to Install Mods Without CurseForge App [Manual & Lite Guide]",
+      "url": "https://gamerhorizon.blog/install-mods-without-curseforge-app",
+      "snippet": "Aug 3, 2026 · Learn how to install Minecraft mods without the CurseForge app. Master manual JAR placement and explore …"
+    },
+    {
+      "title": "How to Manually Add Mods to Minecraft Java Edition Without Using ...",
+      "url": "https://findings.oreateai.com/findings/how-to-manually-add-mods-to-minecraft-java-edition-without-using-curseforge",
+      "snippet": "Aug 17, 2026 · Learn how to add mods to Minecraft Java without CurseForge. Follow our step-by-step manual guide to installing …"
+    }
+  ]
+}

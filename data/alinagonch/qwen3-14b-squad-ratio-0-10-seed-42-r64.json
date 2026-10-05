@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-42-r64",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-10-seed-42-r64",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.10-seed-42-r64",
+  "created_at": "2026-10-04T23:48:36.000Z",
+  "updated_at": "2026-10-04T23:48:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039102906,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accounts • Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/welcome",
+      "snippet": ""
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=fr-FR",
+      "snippet": "Connectez-vous à Snapchat pour gérer votre compte, discuter et appeler vos amis."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=ar",
+      "snippet": "سجّل الدخول إلى سناب شات على الويب، وأدِر حسابك ودردِش مع الأصدقاء واتصل بهم."
+    },
+    {
+      "title": "Sign Up | Snapchat",
+      "url": "https://accounts.snapchat.com/v2/signup",
+      "snippet": "Join Snapchat and capture life's moments with fun photos and videos! Sign up for a free account and share your stories with friends …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gebhart/scitbert-2013-ci",
+  "slug": "gebhart-scitbert-2013-ci",
+  "author": "gebhart",
+  "url": "https://huggingface.co/gebhart/scitbert-2013-ci",
+  "created_at": "2026-06-14T19:05:46.000Z",
+  "updated_at": "2026-10-05T00:24:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 1192140272,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SciTBERT - a gebhart Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/gebhart/scitbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SciBERT: A Pretrained Language Model for Scientific Text",
+      "url": "https://arxiv.org/abs/1903.10676",
+      "snippet": "Obtaining large-scale annotated data for NLP tasks in the scientific domain is challenging and expensive. We release SciBERT, a pretrained language model based on BERT (Devlin et al., 2018) to address the lack of high-quality, large-scale labeled scientific data. SciBERT leverages unsupervised pretraining on a large multi-domain corpus of scientific publications to improve performance on ..."
+    },
+    {
+      "title": "gebhart/scitbert-tokenizer-2013 · Hugging Face",
+      "url": "https://huggingface.co/gebhart/scitbert-tokenizer-2013",
+      "snippet": "/ scitbert-tokenizer-2013 like 0 Transformers arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the ..."
+    },
+    {
+      "title": "GitHub - allenai/scibert: A BERT model for scientific text.",
+      "url": "https://github.com/allenai/scibert",
+      "snippet": "A BERT model for scientific text. Contribute to allenai/scibert development by creating an account on GitHub."
+    },
+    {
+      "title": "SciBert: Pretrained Contextualized Embeddings for Scientific Text",
+      "url": "https://arxiv.org/html/1903.10676v1",
+      "snippet": "Abstract Obtaining large-scale annotated data for NLP tasks in the scientific domain is challenging and expensive. We release SciBert, a pretrained contextualized embedding model based on Bert Devlin et al. (2018) to address the lack of high-quality, large-scale labeled scientific data. SciBert leverages unsupervised pretraining on a large multi-domain corpus of scientific publications to ..."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Yigit-Karaman/Oguz-MoE-354M-Base-V2",
+  "slug": "yigit-karaman-oguz-moe-354m-base-v2",
+  "author": "Yigit-Karaman",
+  "url": "https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base-V2",
+  "created_at": "2026-10-04T19:12:00.000Z",
+  "updated_at": "2026-10-04T19:20:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moe_llama",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "llama",
+    "turkish",
+    "custom-code",
+    "upcycled",
+    "depth-upscaling",
+    "base-model",
+    "custom_code",
+    "tr",
+    "dataset:ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:Yigit-Karaman/Oguz-MoE-354M-Base",
+    "base_model:finetune:Yigit-Karaman/Oguz-MoE-354M-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354161748,
+  "parameters_human": "354.2M",
+  "storage_bytes": 708372736,
+  "storage_human": "708 MB",
+  "base_model": "Yigit-Karaman/Oguz-MoE-354M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Yigit : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/yigit-57705",
+      "snippet": "Le prénom Yigit est assez récent en France, et le premier à porter ce prénom naît en 2000. Il rencontre son plus fort succès en 2017, …"
+    },
+    {
+      "title": "Yiğit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yi%C4%9Fit",
+      "snippet": "Ayse Yigit (born 1972), Belgian politician Eşref Uğur Yiğit (born 1945), Turkish admiral and commander-in-chief of the Turkish Navy …"
+    },
+    {
+      "title": "Anthony Yigit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anthony_Yigit",
+      "snippet": "Anthony Yigit (born 1 September 1991) is a Swedish professional boxer who challenged for the IBF light welterweight title in 2018. As …"
+    },
+    {
+      "title": "Société YIGIT (847976768) : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/yigit-847976768",
+      "snippet": "Sep 24, 2026 · YIGIT à LIMAS (69400) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces …"
+    },
+    {
+      "title": "Prénom Yigit (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/yigit/prenom-56238",
+      "snippet": "Prénom Yigit : signification, origine, caractère, personnalité, Saint Yigit, popularité, avis, classement... Toutes les infos sur le prénom …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "well9472",
   "url": "https://huggingface.co/well9472/Nanosaur2-670M",
   "created_at": "2026-09-25T14:54:41.000Z",
-  "updated_at": "2026-09-30T22:13:37.000Z",
+  "updated_at": "2026-10-04T21:23:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,11 +33,11 @@
   ],
   "likes": 92,
   "downloads_30d": 0,
-  "trending_score": 19,
+  "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3459791589,
-  "storage_human": "3.5 GB",
+  "storage_bytes": 4789485293,
+  "storage_human": "4.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

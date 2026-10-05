@@ -5,7 +5,7 @@
   "author": "khtsly",
   "url": "https://huggingface.co/khtsly/c",
   "created_at": "2026-10-03T08:32:00.000Z",
-  "updated_at": "2026-10-04T01:44:17.000Z",
+  "updated_at": "2026-10-05T02:03:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -15,7 +15,6 @@
   ],
   "tags": [
     "transformers",
-    "safetensors",
     "kimi_linear",
     "text-generation",
     "kimi-k3",
@@ -31,12 +30,10 @@
   "trending_score": 0,
   "parameters": 1500480224,
   "parameters_human": "1.50B",
-  "storage_bytes": 76770232375,
-  "storage_human": "76.8 GB",
+  "storage_bytes": 5862307263,
+  "storage_human": "5.9 GB",
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

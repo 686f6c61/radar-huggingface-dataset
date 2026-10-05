@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Multy123/kitsune-transcribe-p0.3b-ja-experimental",
+  "slug": "multy123-kitsune-transcribe-p0-3b-ja-experimental",
+  "author": "Multy123",
+  "url": "https://huggingface.co/Multy123/kitsune-transcribe-p0.3b-ja-experimental",
+  "created_at": "2026-10-04T23:36:15.000Z",
+  "updated_at": "2026-10-04T23:36:17.000Z",
+  "license": "kitsune-experimental",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_ctc",
+    "automatic-speech-recognition",
+    "ja",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308556801,
+  "parameters_human": "308.6M",
+  "storage_bytes": 617252714,
+  "storage_human": "617 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

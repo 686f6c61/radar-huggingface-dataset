@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "usrnotfound101/anlp-a2-moe-dense",
+  "slug": "usrnotfound101-anlp-a2-moe-dense",
+  "author": "usrnotfound101",
+  "url": "https://huggingface.co/usrnotfound101/anlp-a2-moe-dense",
+  "created_at": "2026-10-04T21:30:32.000Z",
+  "updated_at": "2026-10-04T21:38:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "vi",
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "mixture-of-experts",
+    "decoder-only",
+    "anlp-assignment",
+    "vi",
+    "ja",
+    "en",
+    "dataset:belumind/en-vi-ja-curated-500k-triplets",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35396096,
+  "parameters_human": "35.4M",
+  "storage_bytes": 1416829409,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -9,11 +9,11 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "laya",
   "languages": [],
   "tags": [
-    "gguf",
     "laya",
+    "gguf",
     "multilingual",
     "system-one",
     "mesh-llm",
@@ -25,7 +25,7 @@
     "feature-extraction"
   ],
   "likes": 1,
-  "downloads_30d": 295,
+  "downloads_30d": 299,
   "trending_score": 0,
   "parameters": 321908995,
   "parameters_human": "321.9M",

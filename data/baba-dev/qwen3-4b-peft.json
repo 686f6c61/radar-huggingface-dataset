@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "baba-dev/qwen3-4B-PEFT",
+  "slug": "baba-dev-qwen3-4b-peft",
+  "author": "baba-dev",
+  "url": "https://huggingface.co/baba-dev/qwen3-4B-PEFT",
+  "created_at": "2026-10-04T20:42:34.000Z",
+  "updated_at": "2026-10-04T20:51:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396873021,
+  "storage_human": "397 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Group Holding Limited (BABA) - Yahoo Finance",
+      "url": "https://finance.yahoo.com/quote/BABA/",
+      "snippet": "Find the latest Alibaba Group Holding Limited (BABA) stock quote, history, news and other vital information to help you with your …"
+    },
+    {
+      "title": "Recettes baba au rhum | Simples et rapides - Marmiton",
+      "url": "https://www.marmiton.org/recettes/index/categorie/baba-au-rhum/",
+      "snippet": "Quoi qu'il en soit, beaucoup en sont baba. Grand classique de la famille des desserts, le baba au rhum reste simple à réaliser. Il …"
+    },
+    {
+      "title": "Decoding the Energy of LLM Inference in Software Development",
+      "url": "https://arxiv.org/html/2602.05712v1",
+      "snippet": "05.02.2026 ... Other notable increases are seen in NextCoder-7B with 11%, Phi4-4B with 5%, and Qwen3-4B with 7%. ... AI Foundation Models and Software ..."
+    },
+    {
+      "title": "Alibaba - la plus grande plateforme de commerce B2B en ligne au …",
+      "url": "https://french.alibaba.com/",
+      "snippet": "Alibaba, la plus grande plateforme de commerce B2B en ligne au monde. Alibaba propose des fabricants, des fournisseurs, des …"
+    },
+    {
+      "title": "BABA nutrition - Laboratoire - Compléments alimentaires",
+      "url": "https://babanutrition.fr/",
+      "snippet": "BABA nutrition est un laboratoire français créé par un docteur en pharmacie passionné de micronutrition et phytothérapie. Aux …"
+    }
+  ]
+}

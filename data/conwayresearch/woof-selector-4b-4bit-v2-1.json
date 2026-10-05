@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ConwayResearch/woof-selector-4B-4bit-v2.1",
+  "slug": "conwayresearch-woof-selector-4b-4bit-v2-1",
+  "author": "ConwayResearch",
+  "url": "https://huggingface.co/ConwayResearch/woof-selector-4B-4bit-v2.1",
+  "created_at": "2026-10-04T19:35:26.000Z",
+  "updated_at": "2026-10-04T19:38:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "browser-use",
+    "quantization-aware-training",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 5096030666,
+  "storage_human": "5.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mikoyan MiG-31 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mikoyan_MiG-31",
+      "snippet": "The MiG-31 replaced the Tu-128 as the Soviet Union's dedicated long-range interceptor, [12] with far more advanced sensors and …"
+    },
+    {
+      "title": "Mikoyan MiG-31 Armament - Bolt Flight",
+      "url": "https://boltflight.com/mikoyan-mig-31-armament/",
+      "snippet": "Feb 18, 2025 · The MiG-31 is equipped with the Gryazev-Shipunov GSh-6-23M rotary cannon, a powerful 23mm weapon designed to …"
+    },
+    {
+      "title": "MiG-31 Foxhound: Combat Aircraft Specs, Top Speed & Range",
+      "url": "https://www.globalmilitary.net/aircraft/mig-31-foxhound/",
+      "snippet": "1 day ago · Like the MiG-25, the MiG-31 is a large twin-engine aircraft with side-mounted intake ramps, a shoulder-mounted wing of …"
+    },
+    {
+      "title": "Mikoyan-Gurevich MiG-31 Foxhound — History, Specs & Stories",
+      "url": "https://migflug.com/aircraft/mig-31-foxhound/",
+      "snippet": "The MiG-25 is a single-seater; the MiG-31 carries a pilot and a dedicated weapons systems officer."
+    },
+    {
+      "title": "Russia’s MiG-31 ‘Fighter’ Summed Up Simply in Just 4 Words",
+      "url": "https://www.19fortyfive.com/2025/03/russias-mig-31-fighter-summed-up-simply-in-just-4-words/",
+      "snippet": "Mar 20, 2025 · Today, the MiG-31 has evolved into the MiG-31K, capable of carrying the hypersonic Kh-47M2 Kinzhal ballistic missile."
+    }
+  ]
+}

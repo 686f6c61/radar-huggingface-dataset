@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "abdullahshaheer/my-llama3-fine-tuned",
+  "slug": "abdullahshaheer-my-llama3-fine-tuned",
+  "author": "abdullahshaheer",
+  "url": "https://huggingface.co/abdullahshaheer/my-llama3-fine-tuned",
+  "created_at": "2026-10-04T21:11:48.000Z",
+  "updated_at": "2026-10-04T21:12:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042201,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "jknottllm/Meta-Llama-3-8B-Instruct-FineTuned · Hugging Face",
+      "url": "https://huggingface.co/jknottllm/Meta-Llama-3-8B-Instruct-FineTuned",
+      "snippet": "Model developers Meta Variations Llama 3 comes in two sizes — 8B and 70B parameters — in pre-trained and instruction tuned variants. Input Models input text only. Output Models generate text and code only. Model Architecture Llama 3 is an auto-regressive language model that uses an optimized transformer architecture."
+    },
+    {
+      "title": "GitHub - pkuseci/myllama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/pkuseci/myllama3",
+      "snippet": "This release includes model weights and starting code for pre-trained and instruction-tuned Llama 3 language models — including sizes of 8B to 70B parameters. This repository is a minimal example of loading Llama 3 models and running inference. For more detailed examples, see llama-recipes."
+    },
+    {
+      "title": "Fine-Tuning-LLama-3-8B - GitHub",
+      "url": "https://github.com/ShoaibDataScientist/Fine-Tuning-LLama-3-8B",
+      "snippet": "Finetuning Llama 3 for the specific use case This code represents a comprehensive process for fine-tuning and deploying large language models, specifically focusing on the LLama-3 model with 8 billion parameters."
+    },
+    {
+      "title": "Mastering LLaMA 3 Fine-Tuning: A Complete Practical Guide",
+      "url": "https://nerdleveltech.com/mastering-llama-3-fine-tuning-a-complete-practical-guide",
+      "snippet": "Fine-tuning pairs naturally with self-hosting your AI models for full control, privacy, and performance — once you&#x27;ve adapted a model to your domain, running it on your own infrastructure keeps sensitive data in-house and makes per-query costs predictable. However, fine-tuning is resource-intensive."
+    }
+  ]
+}

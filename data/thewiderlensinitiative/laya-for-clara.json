@@ -9,17 +9,17 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
-  "library": "clara",
+  "library": "laya",
   "languages": [
     "en"
   ],
   "tags": [
-    "clara",
-    "safetensors",
     "laya",
+    "safetensors",
     "router",
     "intent-classification",
     "personal-assistant",
+    "clara",
     "text-classification",
     "en",
     "base_model:convaiinnovations/laya",

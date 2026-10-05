@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "pavanyadava07/multilingual-retrieval-lab-e5s",
+  "slug": "pavanyadava07-multilingual-retrieval-lab-e5s",
+  "author": "pavanyadava07",
+  "url": "https://huggingface.co/pavanyadava07/multilingual-retrieval-lab-e5s",
+  "created_at": "2026-10-04T22:51:27.000Z",
+  "updated_at": "2026-10-04T22:51:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "retrieval",
+    "embeddings",
+    "cross-lingual",
+    "contrastive-learning",
+    "sentence-similarity",
+    "de",
+    "en",
+    "dataset:deepset/germandpr",
+    "dataset:rajpurkar/squad",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 492789520,
+  "storage_human": "493 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

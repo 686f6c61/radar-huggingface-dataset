@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ambitious-Akshay/akshay-gpt-adapter",
+  "slug": "ambitious-akshay-akshay-gpt-adapter",
+  "author": "Ambitious-Akshay",
+  "url": "https://huggingface.co/Ambitious-Akshay/akshay-gpt-adapter",
+  "created_at": "2026-10-04T19:44:46.000Z",
+  "updated_at": "2026-10-04T19:44:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96550072,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Akshay-Anand010/Akshay-Anand010.github.io: Personal site and ...",
+      "url": "https://github.com/Akshay-Anand010/Akshay-Anand010.github.io",
+      "snippet": "A visitor opens the site and uses Akshay GPT. The page sends the question to a Hugging Face Space, POST /ask. The Space loads a small public model plus the adapter you trained in Colab. It answers from your notes and the page shows that reply."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - akshay5995/Auto-GPT: An experimental open-source attempt to ...",
+      "url": "https://github.com/akshay5995/Auto-GPT",
+      "snippet": "Auto-GPT: An Autonomous GPT-4 Experiment Auto-GPT is an experimental open-source application showcasing the capabilities of the GPT-4 language model. This program, driven by GPT-4, autonomously develops and manages businesses to increase net worth. As one of the first examples of GPT-4 running fully autonomously, Auto-GPT pushes the boundaries of what is possible with AI."
+    },
+    {
+      "title": "80s ChatGPT Prompt Ideas for Viral Indian Retro Photos | LightX",
+      "url": "https://www.lightxeditor.com/blog/80s-chatgpt-prompt/",
+      "snippet": "Create your retro look with 80s ChatGPT prompts. Try viral Indian 1980s AI photo prompts for men, women, couples, families, and Bollywood-inspired styles."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r10",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-ewc-oasst1-r10",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r10",
+  "created_at": "2026-10-04T22:32:19.000Z",
+  "updated_at": "2026-10-04T22:35:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1 EUR en BDT - taux de change de Euros à Takas bangladais - Xe",
+      "url": "https://www.xe.com/fr/currencyconverter/convert/?Amount=1&From=EUR&To=BDT",
+      "snippet": "Obtenez gratuitement le dernier taux de 1 Euro à Taka bangladais avec le convertisseur universel d'origine. Activez des alertes de …"
+    },
+    {
+      "title": "1 Euro (EUR) to Bangladeshi Taka (BDT) today - Exchange Rate",
+      "url": "https://exchangerate.guru/eur/bdt/1/",
+      "snippet": "Learn the value of 1 Euro (EUR) in Bangladeshi Taka (BDT) today. The dynamics of the exchange rate change for a week, for a …"
+    },
+    {
+      "title": "1 Euro to Bangladeshi takas Exchange Rate. Convert EUR/BDT - Wise",
+      "url": "https://wise.com/gb/currency-converter/eur-to-bdt-rate?amount=1",
+      "snippet": "Convert 1 EUR to BDT with the Wise Currency Converter. Analyze historical currency charts or live Euro / Bangladeshi taka rates …"
+    },
+    {
+      "title": "Taux de change euro en taka bangladeshi | Ria Money Transfer",
+      "url": "https://www.riamoneytransfer.com/fr-fr/rates-conversion/?From=EUR&To=BDT&Amount=1",
+      "snippet": "2 days ago · Convertissez EUR en BDT au taux de change interbancaire actuel. Consultez les taux euro en taka bangladeshi en …"
+    },
+    {
+      "title": "Convert from Euro (EUR) to Bangladeshi Taka (BDT)",
+      "url": "https://themoneyconverter.com/EUR/BDT",
+      "snippet": "2 days ago · Currency converter to convert from Euro (EUR) to Bangladeshi Taka (BDT) including the latest exchange rates, a chart …"
+    }
+  ]
+}

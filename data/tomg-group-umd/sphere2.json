@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tomg-group-umd/sphere2",
+  "slug": "tomg-group-umd-sphere2",
+  "author": "tomg-group-umd",
+  "url": "https://huggingface.co/tomg-group-umd/sphere2",
+  "created_at": "2026-10-04T19:34:47.000Z",
+  "updated_at": "2026-10-04T19:34:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tomg-group-umd (Tom Goldstein&#x27;s Lab at University of Maryland, College ...",
+      "url": "https://huggingface.co/tomg-group-umd/collections",
+      "snippet": "Our 22 open source Gemstone models for scaling laws range from 50M to 2B parameters, spanning 11 widths from 256 to 3072 and 18 depths from 3 to 80."
+    },
+    {
+      "title": "tomg-group-umd (Tom Goldstein&#x27;s Lab at University of Maryland, College ...",
+      "url": "https://huggingface.co/tomg-group-umd/papers",
+      "snippet": "AI security & privacy, algorithmic bias, foundations of ML"
+    },
+    {
+      "title": "Tom Goldstein&#x27;s Lab at University of Maryland, College Park",
+      "url": "https://github.com/tomg-group-umd",
+      "snippet": "Tom Goldstein&#x27;s Lab at University of Maryland, College Park has one repository available. Follow their code on GitHub."
+    },
+    {
+      "title": "Group - UMD",
+      "url": "https://www.cs.umd.edu/~tomg/group/",
+      "snippet": "He is particularly interested in adversarial machine learning, including evasion and poisoning attacks for deep classifiers. Before joining the group, Ali complete a PhD in Civil Engineering under the supervision of Ali Haghani, and he is an expert in operations research and transportation systems."
+    },
+    {
+      "title": "Sphere Encoder 2 - arXiv.org",
+      "url": "https://arxiv.org/html/2610.02208v1",
+      "snippet": "Invisible to the eye.Fig.A17 compares generations with and without $ℒFD - lite$ from Sphere2-B, the model it affects more. The two sets are visually indistinguishable 222 We release Sphere2 checkpoints trained with and without $ℒFD - lite$ in our repo for readers&#x27; own FDr . , yet the loss aligns their feature statistics with those of real ..."
+    }
+  ]
+}

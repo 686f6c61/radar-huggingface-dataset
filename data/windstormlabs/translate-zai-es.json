@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "WindstormLabs/translate-zai-es",
+  "slug": "windstormlabs-translate-zai-es",
+  "author": "WindstormLabs",
+  "url": "https://huggingface.co/WindstormLabs/translate-zai-es",
+  "created_at": "2026-05-19T15:00:28.000Z",
+  "updated_at": "2026-10-05T00:10:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zai",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "isthmus-zapotec",
+    "spanish",
+    "zai",
+    "es",
+    "base_model:Helsinki-NLP/opus-mt-zai-es",
+    "base_model:finetune:Helsinki-NLP/opus-mt-zai-es",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 348425077,
+  "storage_human": "348 MB",
+  "base_model": "Helsinki-NLP/opus-mt-zai-es",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generali : Assurance habitation, auto, complémentaire santé, épargne",
+      "url": "https://www.generali.fr/",
+      "snippet": "Tarif express pour l'assurance auto, habitation et emprunteur. Devis d'assurance bateau. Gestion de votre contrat Generali depuis …"
+    },
+    {
+      "title": "Assurance MULHOUSE CEDEX 1 : CAG ASSURANCES | Generali",
+      "url": "https://www.generali.fr/agence/cag/alsace/assurance/",
+      "snippet": "L’agence Generali - CAG ASSURANCES à MULHOUSE CEDEX 1 vous présente ses offres d’assurance et d’épargne. Cliquez pour …"
+    },
+    {
+      "title": "Assurance BISCHHEIM : GRIESS JEAN-PHILIPPE | Generali",
+      "url": "https://www.generali.fr/agence/griess-pierre-bischheim/alsace/assurance/",
+      "snippet": "L’agence Generali - GRIESS JEAN-PHILIPPE à BISCHHEIM vous présente ses offres d’assurance et d’épargne. Cliquez pour nous …"
+    },
+    {
+      "title": "Paiement en ligne - Generali",
+      "url": "https://www.generali.fr/paiement",
+      "snippet": "Payez de façon sécurisée en quelques clics. Afin d'effectuer le paiement de votre cotisation, il est nécessaire de saisir la référence …"
+    },
+    {
+      "title": "L’assurance prévoyance famille Generali : invalidité, décès",
+      "url": "https://www.generali.fr/assurance-prevoyance-deces/",
+      "snippet": "Avec l’assurance Generali Protection Famille : bénéficiez d’une aide immédiate en cas de maladie entraînant un arrêt de travail, …"
+    }
+  ]
+}

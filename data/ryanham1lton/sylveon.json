@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Sylveon",
+  "slug": "ryanham1lton-sylveon",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Sylveon",
+  "created_at": "2026-10-04T19:20:00.000Z",
+  "updated_at": "2026-10-04T19:23:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125448504,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT MD - GitHub",
+      "url": "https://github.com/bramses/chatgpt-md",
+      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
+    },
+    {
+      "title": "chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt",
+      "snippet": "20 hours ago · ChatGPT is an AI assistant developed by OpenAI and released in November 2022. It uses generative AI models to …"
+    },
+    {
+      "title": "ChatGPT全功能使用手册【包括通用功能、数据分析以及多模态功能】",
+      "url": "https://www.zhihu.com/tardis/bd/art/703960269",
+      "snippet": "这其实只展示了GPT4的部分使用案例，还有非常多的使用我没有涉及。 其实所谓的大神不过就是将ChatGPT的使用跟自己深度的结 …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "r/ChatGPT's FAQ Thread - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/107zfxk/rchatgpts_faq_thread/",
+      "snippet": "Jan 9, 2023 · Welcome to the ChatGPT FAQ thread! In this thread, we will answer some of the most commonly asked questions …"
+    }
+  ]
+}

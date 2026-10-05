@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "quartzort/athena_base",
+  "slug": "quartzort-athena_base",
+  "author": "quartzort",
+  "url": "https://huggingface.co/quartzort/athena_base",
+  "created_at": "2026-10-04T19:17:46.000Z",
+  "updated_at": "2026-10-04T19:19:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739232,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "athena.models.kws.base — Athena 0.1 documentation",
+      "url": "https://athena-team.readthedocs.io/en/latest/autoapi/athena/models/kws/base/index.html",
+      "snippet": "call model get_loss(outputs, samples, training=None) ¶ get loss compute_logit_length(samples) ¶ compute the logit length reset_metrics() ¶ reset the metrics prepare_samples(samples) ¶ for special data prepare carefully: do not change the shape of samples restore_from_pretrained_model(pretrained_model, model_type=&#x27;&#x27;) ¶ restore from ..."
+    },
+    {
+      "title": "zoadrazorro/Athena-Recursive-AI - GitHub",
+      "url": "https://github.com/zoadrazorro/Athena-Recursive-AI",
+      "snippet": "Overview Athena implements a hierarchical meta-reasoning system where a central orchestrator model coordinates specialized expert models, each fine-tuned or prompted for specific cognitive domains. This architecture is inspired by Global Workspace Theory (GWT) from cognitive science, implementing a computational model of consciousness where information competes for attention and is broadcast ..."
+    },
+    {
+      "title": "Model Architecture | athena-team/athena | DeepWiki",
+      "url": "https://deepwiki.com/athena-team/athena/4-model-architecture",
+      "snippet": "Base Architecture All models in Athena inherit from a common BaseModel class, which provides a unified interface for various speech processing tasks. The base architecture establishes core functionality including loss calculation, metric computation, and standardized input/output handling."
+    },
+    {
+      "title": "FLUX Gets an &#x27;athena&#x27; LoRA on Modelers.cn - aichina.news",
+      "url": "https://aichina.news/blog/flux-gets-an-athena-lora-on-modelers-cn-lightweight-undocumented-and-0z87sw/",
+      "snippet": "If you build with FLUX, you already know that LoRAs are the fastest way to steer a base text-to-image model towards a particular subject or style without retraining. A new community LoRA called &#x27;athena&#x27; has appeared on Modelers.cn, the Huawei/Ascend-focused AI platform that many Western developers have yet to explore."
+    },
+    {
+      "title": "README.md · TheBloke/Athena-v2-AWQ at main - Hugging Face",
+      "url": "https://huggingface.co/TheBloke/Athena-v2-AWQ/blob/main/README.md",
+      "snippet": "If you&#x27;re able and willing to contribute it will be most gratefully received and will help me to keep providing more models, and to start work on new AI projects. Donaters will get priority support on any and all AI/LLM/model questions and requests, access to a private Discord room, plus other benefits."
+    }
+  ]
+}

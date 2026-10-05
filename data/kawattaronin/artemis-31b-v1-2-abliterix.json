@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "kawattaronin/Artemis-31B-v1.2-abliterix",
+  "slug": "kawattaronin-artemis-31b-v1-2-abliterix",
+  "author": "kawattaronin",
+  "url": "https://huggingface.co/kawattaronin/Artemis-31B-v1.2-abliterix",
+  "created_at": "2026-10-04T23:51:55.000Z",
+  "updated_at": "2026-10-04T23:57:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273086512,
+  "parameters_human": "31.27B",
+  "storage_bytes": 62578507890,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-05T02:03:19.900Z",
+  "benchmarks": [],
+  "sources": []
+}

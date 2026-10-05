@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Shen0000/ppo-LunarLander-v2",
+  "slug": "shen0000-ppo-lunarlander-v2",
+  "author": "Shen0000",
+  "url": "https://huggingface.co/Shen0000/ppo-LunarLander-v2",
+  "created_at": "2026-10-04T21:03:14.000Z",
+  "updated_at": "2026-10-04T21:03:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 462679,
+  "storage_human": "462679 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Biens Immobiliers Dans La Ville De Mes Rêves - ToutVendre.Fr",
+      "url": "https://www.toutvendre.fr/s?k=biens%20immobiliers%20dans%20la%20ville%20de%20mes%20r%C3%AAves",
+      "snippet": "Découvrez votre nouvelle maison individuelle libre, un véritable havre de paix prêt à vous accueillir avec accès écoles, commerce et …"
+    },
+    {
+      "title": "Biens Immobiliers Disponibles Dans La Ville De Mes Reves Vente ...",
+      "url": "https://www.toutvendre.fr/s?k=biens%20immobiliers%20disponibles%20dans%20la%20ville%20de%20mes%20reves&c=13",
+      "snippet": "Petites Annonces Gratuites Biens Immobiliers Disponibles Dans La Ville De Mes Reves Immobilier Vente Immobilière BERGERAC …"
+    },
+    {
+      "title": "Annonces immobilières et estimation en ligne | MeilleursBiens",
+      "url": "https://meilleursbiens.com/",
+      "snippet": "Achetez, louez ou faites estimer votre bien avec MeilleursBiens : des milliers d’annonces immobilières partout en France et dans les …"
+    },
+    {
+      "title": "Par carte, par liste, en quelques secondes, grâce à SITIGEO, …",
+      "url": "https://www.sitigeo.com/fr/pages/recherchez-un-bien-par-zone-geographique",
+      "snippet": "Vous êtes dans le quartier de vos rêves : en appuyant sur le bouton me Géolocaliser, vous verrez apparaître sur la carte des biens …"
+    },
+    {
+      "title": "Site de recherche de maisons et appartements - Ligloo",
+      "url": "https://www.ligloo.fr/",
+      "snippet": "Ligloo regroupe des millions d'annonces de maisons et appartements. Venez effectuer vos recherches et trouvez la maison de vos …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AILogDev/sbv2-coreml-common",
+  "slug": "ailogdev-sbv2-coreml-common",
+  "author": "AILogDev",
+  "url": "https://huggingface.co/AILogDev/sbv2-coreml-common",
+  "created_at": "2026-10-04T05:45:47.000Z",
+  "updated_at": "2026-10-05T00:22:48.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "style-bert-vits2",
+    "quantized",
+    "ja",
+    "base_model:ku-nlp/deberta-v2-large-japanese-char-wwm",
+    "base_model:quantized:ku-nlp/deberta-v2-large-japanese-char-wwm",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1916008047,
+  "storage_human": "1.9 GB",
+  "base_model": "ku-nlp/deberta-v2-large-japanese-char-wwm",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/user/Come_with_us_",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Cumwithus6",
+      "url": "https://x.com/Cumwithus6/status/2069453435011829861",
+      "snippet": "Jun 23, 2026 · Cumwithus6. 10h. ProfessorBootyy. 💬 0. 🔄 0. 🤍 0. 📊 94. 📎. Explore Trending Stories Go to Home Search X News"
+    },
+    {
+      "title": "Cumwithus6",
+      "url": "https://x.com/Cumwithus6/status/2069865782360617399",
+      "snippet": "Cumwithus6. Jun 24. TeamSinfulx. 💬 2. 🔄 0. 🤍 2. 📊 1327. 📎. Explore Trending Stories Go to Home Search X News"
+    },
+    {
+      "title": "Search Results for: cumwithus6 leak Page 1 - ShesFreaky",
+      "url": "https://www.shesfreaky.com/search/cumwithus6-leak/most-viewed/",
+      "snippet": "5 4476355 273 Search Results for: cumwithus6 leak Sort Recent Views Thanks Rating Longest Friends 660,606 views 05:50 …"
+    },
+    {
+      "title": "It's another Hump Day with @Cumwithus6! https://t.... | X-Sou",
+      "url": "https://x-sou.com/u/FinishHimRIP/2080054619460325411",
+      "snippet": "Jul 22, 2026 · Finish Him!! 🌊🏄‍♂️⛱☀ 的推文: It's another Hump Day with @Cumwithus6! https://t.co/4s3yEWLo6w"
+    }
+  ]
+}

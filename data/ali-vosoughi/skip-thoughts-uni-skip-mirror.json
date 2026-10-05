@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ali-vosoughi/skip-thoughts-uni-skip-mirror",
+  "slug": "ali-vosoughi-skip-thoughts-uni-skip-mirror",
+  "author": "ali-vosoughi",
+  "url": "https://huggingface.co/ali-vosoughi/skip-thoughts-uni-skip-mirror",
+  "created_at": "2026-10-04T23:42:15.000Z",
+  "updated_at": "2026-10-05T00:09:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "skip-thoughts",
+    "sentence-embeddings",
+    "text-encoder",
+    "mirror",
+    "en",
+    "arxiv:1506.06726",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3006127690,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AliExpress - Affordable Chinese Stores & Free Shipping - Online …",
+      "url": "https://www.aliexpress.com/",
+      "snippet": "Passion shouldn't cost a fortune. On AliExpress, shop online for over 111 million affordable products from China on Fashion, Men's …"
+    },
+    {
+      "title": "AliExpress France - Livraison gratuite et économisez plus",
+      "url": "https://fr.aliexpress.com/",
+      "snippet": "La passion ne devrait pas coûter une fortune. Avis Sur AliExpress.com, un site de chez Alibaba, vous pouvez choisir parmi plus de …"
+    },
+    {
+      "title": "Proceedings of the 2025 Conference on Empirical Methods in ...",
+      "url": "https://aclanthology.org/volumes/2025.emnlp-main/",
+      "snippet": "To Mask or to Mirror: Human-AI Alignment in Collective Reasoning · Crystal ... thoughts using the base model of the LLM agent. In an iterative manner ..."
+    },
+    {
+      "title": "AliExpress - Online Shopping for Popular Electronics, Fashion, Home ...",
+      "url": "https://a.aliexpress.com/",
+      "snippet": "Online shopping for the latest electronics, fashion, phone accessories, computer electronics, toys, home&garden, home appliances, …"
+    },
+    {
+      "title": "Achat en ligne - AliExpress France",
+      "url": "https://fr.aliexpress.com/w/wholesale-aliexpress-france.html",
+      "snippet": "Cherchez-vous une bonne affaire aliexpress france ? Explorez une large gamme des meilleurs aliexpress france sur AliExpress pour …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/amalia-desenrasca-9b-i1-GGUF",
   "created_at": "2026-10-04T16:28:15.000Z",
-  "updated_at": "2026-10-04T17:30:40.000Z",
+  "updated_at": "2026-10-04T18:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 9152319488,
   "parameters_human": "9.15B",
-  "storage_bytes": 96274500128,
-  "storage_human": "96.3 GB",
+  "storage_bytes": 106266527392,
+  "storage_human": "106.3 GB",
   "base_model": "jgalego/amalia-desenrasca-9b",
   "formats": [
     "gguf"

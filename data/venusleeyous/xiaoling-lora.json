@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "venusleeyous/xiaoling-lora",
+  "slug": "venusleeyous-xiaoling-lora",
+  "author": "venusleeyous",
+  "url": "https://huggingface.co/venusleeyous/xiaoling-lora",
+  "created_at": "2026-10-04T19:06:00.000Z",
+  "updated_at": "2026-10-04T20:36:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "lora",
+    "krea2",
+    "text-to-image",
+    "portrait",
+    "ai-toolkit",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 946309630,
+  "storage_human": "946 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xiaoling (Saint Seiya Saintia Sho) AI LoRA Model | PixAI",
+      "url": "https://pixai.art/en/model/1922438728121887727",
+      "snippet": "Xiaoling (Saint Seiya Saintia Sho) is an AI LoRA by ronoko on PixAI. Try it free."
+    },
+    {
+      "title": "Xiaoling (Saint Seiya Saintia Sho) - 1 | Tensor.Art",
+      "url": "https://tensor.art/models/977492232082868133",
+      "snippet": "Download Xiaoling (Saint Seiya Saintia Sho) - free LORA Illustrious AI model on TENSOR. By Ikki de Fénix"
+    },
+    {
+      "title": "小凌 - 2025-12-03 00:58:42 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/938314937346880616",
+      "snippet": "Download 小凌 - free LORA SDXL 1.0 AI model on TENSOR. SDXL. By 小桃"
+    },
+    {
+      "title": "Xiaoling (Saint Seiya Saintia Sho) - 1 | TensorHub Art",
+      "url": "https://tensorhub.art/models/977492232082868133",
+      "snippet": "Download Xiaoling (Saint Seiya Saintia Sho) - free LORA Illustrious AI model on TENSORHUB ART. By Ikki de Fénix"
+    },
+    {
+      "title": "newturok/venus · Hugging Face",
+      "url": "https://huggingface.co/newturok/venus",
+      "snippet": "Use it by adding ./venus_emb to your prompt. For example, 3d icon in the style of ./venus_emb (you need both the LoRA and the embeddings as they were trained together for this LoRA) Use it with the 🧨 diffusers library ... For more details, including weighting, merging and fusing LoRAs, check the documentation on loading LoRAs in diffusers ..."
+    }
+  ]
+}

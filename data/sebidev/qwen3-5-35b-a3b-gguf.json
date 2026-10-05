@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sebidev/Qwen3.5-35B-A3B-GGUF",
+  "slug": "sebidev-qwen3-5-35b-a3b-gguf",
+  "author": "sebidev",
+  "url": "https://huggingface.co/sebidev/Qwen3.5-35B-A3B-GGUF",
+  "created_at": "2026-10-04T20:03:47.000Z",
+  "updated_at": "2026-10-04T20:03:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5_moe",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 576773023776,
+  "storage_human": "576.8 GB",
+  "base_model": "Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-05T02:05:17.355Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Qwen 3.5 Models Ranked: Every Size, Every GPU, Every Quant",
+      "url": "https://insiderllm.com/guides/qwen-3-5-local-guide/",
+      "snippet": "The 35B-A3B is the model that matters for most local AI builders. It runs on a $450 GPU at speeds that feel like a cloud API, scores within 5% of the 27B dense on most benchmarks, and fits more context than you&#x27;ll probably use."
+    },
+    {
+      "title": "grapeV-ai/Qwen3.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/grapeV-ai/Qwen3.5-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartowski/Qwen_Qwen3.5-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/Qwen_Qwen3.5-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - qtliu/Qwen3.5-35B-A3B-GGUF: Deploy Qwen3.5-35B-A3B-GGUF using ...",
+      "url": "https://github.com/qtliu/Qwen3.5-35B-A3B-GGUF",
+      "snippet": "Deploy Qwen3.5-35B-A3B-GGUF using llama.cpp. Contribute to qtliu/Qwen3.5-35B-A3B-GGUF development by creating an account on GitHub."
+    },
+    {
+      "title": "qwen/qwen3.5-35b-a3b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-35b-a3b",
+      "snippet": "Qwen3.5 is a reasoning vision-language model that supports tool use. With 35B total parameters and 3B activated, it outperforms previous generation models more than 6x its size."
+    }
+  ]
+}

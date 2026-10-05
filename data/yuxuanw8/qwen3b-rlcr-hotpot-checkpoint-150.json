@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-150",
+  "slug": "yuxuanw8-qwen3b-rlcr-hotpot-checkpoint-150",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-checkpoint-150",
+  "created_at": "2026-10-04T20:19:17.000Z",
+  "updated_at": "2026-10-04T20:20:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150 · Hugging Face",
+      "url": "https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150",
+      "snippet": "Instructions to use yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "yuxuanw8/qwen3b-rlcr-hotpot · Hugging Face",
+      "url": "https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150",
+      "url": "https://featherless.ai/models/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150",
+      "snippet": "The yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-150 is a 3.1 billion parameter language model based on the Qwen architecture, developed by yuxuanw8. This model is a checkpoint from a training process, indicating it is likely a specialized or fine-tuned version of a base Qwen model. With a context length of 32768 tokens, it is designed for tasks requiring extensive contextual understanding ..."
+    },
+    {
+      "title": "yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-120",
+      "url": "https://featherless.ai/models/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-120",
+      "snippet": "The yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-120 is a 3.1 billion parameter language model. This model is a checkpoint from a fine-tuning process, likely based on the Qwen architecture, and is intended for specific research or application contexts. Due to limited information in its model card, its primary differentiators and specific use cases are not explicitly detailed."
+    },
+    {
+      "title": "qwen3b-rlcr-hotpot-racpo-v1-checkpoint-120 - friendli.ai",
+      "url": "https://friendli.ai/models/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-checkpoint-120",
+      "snippet": "Deploy qwen3b-rlcr-hotpot-racpo-v1-checkpoint-120 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

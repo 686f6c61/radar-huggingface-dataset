@@ -5,7 +5,7 @@
   "author": "dronefreak",
   "url": "https://huggingface.co/dronefreak/bdd100k-weather-mobilenetv4_conv_small",
   "created_at": "2026-10-01T19:47:18.000Z",
-  "updated_at": "2026-10-01T20:23:42.000Z",
+  "updated_at": "2026-10-04T07:53:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

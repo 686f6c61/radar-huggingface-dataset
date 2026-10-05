@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "malekahmedbagash/EasyReadai",
+  "slug": "malekahmedbagash-easyreadai",
+  "author": "malekahmedbagash",
+  "url": "https://huggingface.co/malekahmedbagash/EasyReadai",
+  "created_at": "2026-10-04T19:55:55.000Z",
+  "updated_at": "2026-10-04T19:55:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "malekahmedbagash (Malek Ahmad bagash Mohamed) - Hugging Face",
+      "url": "https://huggingface.co/malekahmedbagash",
+      "snippet": "User profile of Malek Ahmad bagash Mohamed on Hugging Face"
+    },
+    {
+      "title": "EasyRead.AI — AI reading assistant for Chrome",
+      "url": "https://easyread.ai/",
+      "snippet": "That depends on your AI setup. Cloud AI receives the content and context needed for your task, with your key used to authenticate the request. A local model receives requests at the address you configure. Chrome built-in AI processes content on your device when supported. We don&#x27;t track your browsing or store your reading data on our servers."
+    },
+    {
+      "title": "AI Ebook Reader for Mac & iPad — EasyReadAI",
+      "url": "https://easyreadai.com/en/",
+      "snippet": "Read EPUB, PDF and TXT on Mac, iPhone and iPad. Capture passages or photograph paper books, check the extracted text, and save local notes with optional AI help."
+    },
+    {
+      "title": "EasyRead.AI",
+      "url": "https://easyread.ai/support",
+      "snippet": "Say goodbye to lengthy articles and videos, with the power of AI! EasyRead.AI generates high-quality summaries, mind maps or translations based on contents / transcripts."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

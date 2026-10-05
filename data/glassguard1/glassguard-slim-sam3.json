@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "glassguard1/glassguard-slim-sam3",
+  "slug": "glassguard1-glassguard-slim-sam3",
+  "author": "glassguard1",
+  "url": "https://huggingface.co/glassguard1/glassguard-slim-sam3",
+  "created_at": "2026-10-04T21:03:43.000Z",
+  "updated_at": "2026-10-04T21:04:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "segmentation",
+    "glass-detection",
+    "sam3",
+    "pruning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2868982831,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "la Repubblica - Ultime notizie di Cronaca, Politica, Economia, Sport ...",
+      "url": "https://www.repubblica.it/",
+      "snippet": "1 day ago · la Repubblica è il quotidiano online aggiornato 24 ore su 24 su politica, cronaca, economia, sport, esteri, spettacoli, …"
+    },
+    {
+      "title": "La Repubblica.it - News in tempo reale - Le notizie e i video di ...",
+      "url": "https://www.repubblica.it/instant-articles/",
+      "snippet": "Repubblica Ã¨ il quotidiano online aggiornato 24 ore su 24 su politica, cronaca, economia, sport, esteri, spettacoli, musica, cultura, …"
+    },
+    {
+      "title": "La Repubblica — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/La_Repubblica",
+      "snippet": "La Repubblica (« La République » en français) est un quotidien italien de centre gauche d'envergure nationale, appartenant à GEDI …"
+    },
+    {
+      "title": "la Repubblica",
+      "url": "https://edicola.repubblica.it/",
+      "snippet": "Sep 17, 2026 · Supplemento Supplemento IN EVIDENZA D La Repubblica 03 Ottobre 2026 Il Venerdì 02 Ottobre 2026 Il Gusto 17 …"
+    },
+    {
+      "title": "la Repubblica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/La_Repubblica",
+      "snippet": "la Repubblica (Italian: [la reˈpubblika]; English: \"the Republic \") is an Italian daily general-interest newspaper with an average …"
+    }
+  ]
+}

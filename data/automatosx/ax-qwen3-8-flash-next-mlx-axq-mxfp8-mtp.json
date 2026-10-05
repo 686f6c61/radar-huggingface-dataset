@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-MXFP8-MTP",
+  "slug": "automatosx-ax-qwen3-8-flash-next-mlx-axq-mxfp8-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-MXFP8-MTP",
+  "created_at": "2026-10-04T20:56:26.000Z",
+  "updated_at": "2026-10-04T21:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "qwen4-exp",
+    "MXFP8",
+    "mtp",
+    "vision",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177392830611,
+  "parameters_human": "177.39B",
+  "storage_bytes": 189228005581,
+  "storage_human": "189.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AX-Qwen3.8-Flash-Next-MLX-AXQ-4bit-MTP - Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-4bit-MTP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-2bit-MTP · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-2bit-MTP",
+      "snippet": "Instructions to use AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-2bit-MTP with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "[LLM Power Report #002] Qwen3.8-Flash-Next, MTP versions flooding the ...",
+      "url": "https://note.com/keity717/n/n4bd067f99599?hl=en",
+      "snippet": "A legion of Flash-Next derivatives appearing in one day Let&#x27;s start with the actual list of the 12 latest updates for MLX models on HuggingFace from that day. Within these 12 entries, there are five Qwen3.8-Flash-Next series MLX models."
+    },
+    {
+      "title": "Qwen3.8 Flash Next on one DGX Spark (TensorFold) - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark-TensorFold",
+      "snippet": "Qwen3.8 Flash Next on one DGX Spark (TensorFold) by Mia&#x27;a AI Lab Serve Qwen3.8 Flash Next from a single NVIDIA DGX Spark (GB10, 128 GB) through an OpenAI-compatible API, with 5 concurrent requests at the full 262,144-token context and image and video input."
+    }
+  ]
+}

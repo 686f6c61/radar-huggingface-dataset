@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "anandanraju/FDT_CD_TRAFFIC-FLOOD_DECISION_SUPPORT_SYSTEM",
+  "slug": "anandanraju-fdt_cd_traffic-flood_decision_support_system",
+  "author": "anandanraju",
+  "url": "https://huggingface.co/anandanraju/FDT_CD_TRAFFIC-FLOOD_DECISION_SUPPORT_SYSTEM",
+  "created_at": "2026-10-04T19:47:18.000Z",
+  "updated_at": "2026-10-04T19:48:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "anandanraju (Anandan R) - Hugging Face",
+      "url": "https://huggingface.co/anandanraju",
+      "snippet": "anandanraju/FDT_CD_TRAFFIC-FLOOD_DECISION_SUPPORT_SYSTEM ... anandanraju/RES_CV_OPT_MODEL ... anandanraju/DL_Model_for_DeepFakeDetection_In_Images_and_Videos ... datasets 0"
+    },
+    {
+      "title": "Artificial intelligence for flood risk management: A comprehensive ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2212420924008720",
+      "snippet": "This paper seeks to explore the vanguard of flood risk management: the integration of artificial intelligence (AI), with a particular focus on machine learning (ML) and deep learning (DL) technologies. Legacy flood risk management tools, such as physics-based models, are primarily used in predicting a diverse range of flooding scenarios."
+    },
+    {
+      "title": "How an IT engineer used AI to aid Nepal&#x27;s flood response",
+      "url": "https://kathmandupost.com/national/2026/09/06/how-an-it-engineer-used-ai-to-aid-nepal-s-flood-response",
+      "snippet": "National How an IT engineer used AI to aid Nepal&#x27;s flood response Ministry of Finance&#x27;s Niraj Bhusal deployed an AI-driven web application to track casualties and streamline relief efforts, providing Nepal&#x27;s disaster management teams with a new tool for emergency coordination. Niraj Bhusal, who is an IT engineer at the ministry, worked through the night and single-handedly developed the ..."
+    },
+    {
+      "title": "Flood Forecasting: AI for Information & Alerts - Google Research",
+      "url": "https://sites.research.google/floodforecasting/?web=1&wdLOR=cA69789BC-DB44-BD4D-B8B7-22D0CAAF4E5B",
+      "snippet": "Discover how Google&#x27;s Flood Hub provides users with locally relevant flood forecasting, information and alerting up to 7 days in advance using AI."
+    },
+    {
+      "title": "GitHub - abdul05kh/JalRakshak: Hydraulic flood decision-support system ...",
+      "url": "https://github.com/abdul05kh/JalRakshak/tree/main",
+      "snippet": "Hydraulic flood decision-support system that converts dam-break simulation outputs into evacuation route feasibility, departure deadlines, limiting road segments, and evidence-backed explanations. - abdul05kh/JalRakshak"
+    }
+  ]
+}

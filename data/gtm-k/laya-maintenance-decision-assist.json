@@ -9,13 +9,13 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "laya",
   "languages": [
     "en"
   ],
   "tags": [
-    "safetensors",
     "laya",
+    "safetensors",
     "typed-decisions",
     "research",
     "maintenance",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 56,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": 421293830,
   "parameters_human": "421.3M",

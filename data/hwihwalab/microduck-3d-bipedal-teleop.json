@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/microduck-3d-bipedal-teleop",
+  "slug": "hwihwalab-microduck-3d-bipedal-teleop",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/microduck-3d-bipedal-teleop",
+  "created_at": "2026-09-04T08:18:22.000Z",
+  "updated_at": "2026-10-05T01:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "microduck",
+    "onnx",
+    "physical-ai",
+    "embodied-ai",
+    "robotics",
+    "reinforcement-learning",
+    "bipedal-locomotion",
+    "bipedal-robot",
+    "rsl-rl",
+    "ppo",
+    "mujoco",
+    "teleoperation",
+    "digital-twin",
+    "imitation-learning",
+    "onnx-runtime",
+    "threejs",
+    "pollen-robotics",
+    "14-dof",
+    "dynamixel",
+    "sim-to-real",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455291961,
+  "storage_human": "455 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "14-DOF Bipedal Locomotion & Teleoperation",
+      "dataset": null,
+      "metric": "Walking Success Rate",
+      "value": 100
+    },
+    {
+      "task": "14-DOF Bipedal Locomotion & Teleoperation",
+      "dataset": null,
+      "metric": "Max Omnidirectional Speed",
+      "value": 0.35
+    },
+    {
+      "task": "14-DOF Bipedal Locomotion & Teleoperation",
+      "dataset": null,
+      "metric": "Velocity Tracking RMSE (NORM 0.20m/s)",
+      "value": 0.016
+    },
+    {
+      "task": "14-DOF Bipedal Locomotion & Teleoperation",
+      "dataset": null,
+      "metric": "Actuator Peak Torque",
+      "value": 0.963
+    },
+    {
+      "task": "14-DOF Bipedal Locomotion & Teleoperation",
+      "dataset": null,
+      "metric": "Average Power Consumption",
+      "value": 6.4
+    },
+    {
+      "task": "14-DOF Bipedal Locomotion & Teleoperation",
+      "dataset": null,
+      "metric": "Total Training Transitions",
+      "value": 196608000
+    }
+  ],
+  "sources": []
+}

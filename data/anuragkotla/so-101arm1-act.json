@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AnuragKotla/so-101arm1-act",
+  "slug": "anuragkotla-so-101arm1-act",
+  "author": "AnuragKotla",
+  "url": "https://huggingface.co/AnuragKotla/so-101arm1-act",
+  "created_at": "2026-10-04T23:02:43.000Z",
+  "updated_at": "2026-10-04T23:02:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:AnuragKotla/so-101arm1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51617414,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206502520,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnuragKotla/so-101arm1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/AnuragKotla/so-101arm1",
+      "snippet": "AnuragKotla / so-101arm1 Like 0 Tasks: Robotics Modalities: Tabular Time-series Video Formats: parquet Size: 1K - 10K Tags: LeRobot Libraries: Datasets Dask Polars + 2 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Episodes PreviewSO-101VisualizerOpen in visualizer 11 episodes·30 fps·2 cameras·1280×720 ..."
+    },
+    {
+      "title": "SO101 Arm ACT Training Guide Using SOLO CLI - GitHub",
+      "url": "https://github.com/omkarputti/SO101_ACT_Training",
+      "snippet": "An open-source robotics project focused on training the SO101 robotic arm using imitation learning, ACT policies, and SOLO CLI workflows for autonomous manipulation tasks. - omkarputti/SO101_ACT_Tr..."
+    },
+    {
+      "title": "Train a No-Code AI Robotic Arm with LeRobot and SO-101",
+      "url": "https://completeaitraining.com/course/train-a-no-code-ai-robotic-arm-with-lerobot-and-so-101/",
+      "snippet": "Video course · 15 chapters · 75 min · certificate Train a No-Code AI Robotic Arm with LeRobot and SO-101 Brogan M. Pratt walks through assembling an SO-101 arm, installing Hugging Face LeRobot, recording teleoperation data, and training an ACT model. The chapters cover hardware setup, dataset creation, training, and testing the arm on a pick-and-place task."
+    },
+    {
+      "title": "GitHub - jjchong5/PhysAI-Hack2026-ACT-pouring-model: ACT model weights ...",
+      "url": "https://github.com/jjchong5/PhysAI-Hack2026-ACT-pouring-model",
+      "snippet": "PhysAI Hackathon 2026 — Reproduction Notes This model was trained at the Physical AI Hackathon (Feb 2026, SoloTech) using an SO101 robot arm performing a water-pouring task."
+    },
+    {
+      "title": "jian001/act_so101_test_model · Hugging Face",
+      "url": "https://huggingface.co/jian001/act_so101_test_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "zerolabllc/TeaAI-Nemo-12B",
+  "slug": "zerolabllc-teaai-nemo-12b",
+  "author": "zerolabllc",
+  "url": "https://huggingface.co/zerolabllc/TeaAI-Nemo-12B",
+  "created_at": "2026-10-04T22:08:24.000Z",
+  "updated_at": "2026-10-04T22:11:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "trl",
+    "sft",
+    "dpo",
+    "roleplay",
+    "creative-writing",
+    "chatml",
+    "not-for-all-audiences",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Gryphe/Sonnet3.5-Charcard-Roleplay",
+    "dataset:Dampfinchen/Creative_Writing_Multiturn",
+    "base_model:mistralai/Mistral-Nemo-Base-2407",
+    "base_model:adapter:mistralai/Mistral-Nemo-Base-2407",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 473284474,
+  "storage_human": "473 MB",
+  "base_model": "mistralai/Mistral-Nemo-Base-2407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[ELI5] The difference between anime, manga, and hentai.",
+      "url": "https://www.reddit.com/r/explainlikeimfive/comments/nhysk/eli5_the_difference_between_anime_manga_and_hentai/",
+      "snippet": "Hentai is the word Western people use to refer to either anime or manga that has adult content; the Japanese use it as an insult …"
+    },
+    {
+      "title": "Any good hentai manga to read? : r/HentaiSource - Reddit",
+      "url": "https://www.reddit.com/r/HentaiSource/comments/aa5q9m/any_good_hentai_manga_to_read/",
+      "snippet": "Dec 28, 2018 · This subreddit is dedicated to finding and archiving sources for your fapping needs in the hentai category. Check out …"
+    },
+    {
+      "title": "Femgaze Hentai - Reddit",
+      "url": "https://www.reddit.com/r/Femgaze_Hentai/",
+      "snippet": "When it comes to doujinsh-specific hentai websites, it’s even more difficult. Simply because the tags used for those are not so much …"
+    },
+    {
+      "title": "Hardcore Hentai Bondage - Reddit",
+      "url": "https://www.reddit.com/r/HardcoreHentaiBondage/",
+      "snippet": "This subreddit is for hentai bondage pictures/related media that push the envelope. View some of these at your own risk. No …"
+    },
+    {
+      "title": "Good manga hentai websites? : r/genderotica - Reddit",
+      "url": "https://www.reddit.com/r/genderotica/comments/100j0f0/good_manga_hentai_websites/",
+      "snippet": "Jan 1, 2023 · E-hentai.org and exhentai.org. You need to register and sign in to the former to view the latter. Reply reply …"
+    }
+  ]
+}

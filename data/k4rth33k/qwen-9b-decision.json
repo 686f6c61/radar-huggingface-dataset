@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "k4rth33k/Qwen-9B-decision",
+  "slug": "k4rth33k-qwen-9b-decision",
+  "author": "k4rth33k",
+  "url": "https://huggingface.co/k4rth33k/Qwen-9B-decision",
+  "created_at": "2026-10-04T22:05:12.000Z",
+  "updated_at": "2026-10-04T22:06:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "summit",
+    "decision-model",
+    "distillation",
+    "qlora",
+    "peft",
+    "text-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 36068076797,
+  "storage_human": "36.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

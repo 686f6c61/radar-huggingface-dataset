@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/zho-hans-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
   "created_at": "2026-10-04T16:38:15.000Z",
-  "updated_at": "2026-10-04T17:13:11.000Z",
+  "updated_at": "2026-10-04T17:23:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 1017573320,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 1408543585,
+  "storage_human": "1.4 GB",
   "base_model": "francesca9805/zho-hans-10mb-ppt-Dp-100mb-packed-bfdiso_seed3407",
   "formats": [
     "safetensors"

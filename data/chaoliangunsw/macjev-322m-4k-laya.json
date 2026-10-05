@@ -9,16 +9,16 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
-  "library": null,
+  "library": "laya",
   "languages": [
     "en",
     "zh"
   ],
   "tags": [
+    "laya",
     "safetensors",
     "macos",
     "jev",
-    "laya",
     "decision-model",
     "tool-routing",
     "local-agents",

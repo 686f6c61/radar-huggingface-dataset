@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LithosAI/Qwen3.8-27B-DSpark-NVFP4",
+  "slug": "lithosai-qwen3-8-27b-dspark-nvfp4",
+  "author": "LithosAI",
+  "url": "https://huggingface.co/LithosAI/Qwen3.8-27B-DSpark-NVFP4",
+  "created_at": "2026-10-04T19:45:23.000Z",
+  "updated_at": "2026-10-04T21:11:28.000Z",
+  "license": "model-weight-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dspark",
+    "speculative-decoding",
+    "nvfp4",
+    "weight-only-quantization",
+    "lithos-metal",
+    "text-generation",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1072605697,
+  "parameters_human": "1.07B",
+  "storage_bytes": 1136258502,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark",
+      "url": "https://www.contextstudios.ai/blog/qwen-3-8-27b-hardware-guide",
+      "snippet": "Qwen 3.8 27B Hardware Guide: From the RTX 3090 to the DGX Spark On August 14, 2026, Alibaba&#x27;s Qwen team released the weights of Qwen3.8-27B under Apache 2.0 on Hugging Face - making it the most exciting local model in the 27B class right now."
+    },
+    {
+      "title": "Qwen3.8-27B at 34-38 tok/s on DGX Spark — open-source one-command setup ...",
+      "url": "https://forums.developer.nvidia.com/t/qwen3-8-27b-at-34-38-tok-s-on-dgx-spark-open-source-one-command-setup-sglang-nvfp4-dspark/380257",
+      "snippet": "All credit to the SGLang team (day-0 support + the lmsysorg/sglang:qwen38-27b image), RadixArk for the NVFP4 + DSpark checkpoints, DeepSeek for the DSpark method, and Qwen for the model. The SGLang cookbook&#x27;s DGX Spark cell was marked \"not yet validated\" — consider this an independent field validation."
+    },
+    {
+      "title": "README.md · gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4 at main",
+      "url": "https://huggingface.co/gittensor-model-hub/Qwen3.8-27B-DSpark-NVFP4/blob/main/README.md",
+      "snippet": "A full-NVFP4 variant including them was built and measured: it reaches 150.73 tok/s but acceptance falls to 2.546. Keeping QKV in BF16 costs ~3 tok/s and buys back the acceptance, which is the better production trade."
+    },
+    {
+      "title": "Qwen3.8 27B on SGLang for DGX Spark - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-27B-SGLang-DGX-Spark",
+      "snippet": "Qwen3.8 27B on SGLang for DGX Spark by Mia&#x27;s AI Lab Opinionated, ready-to-run scripts to serve Qwen3.8-27B with SGLang in Docker on an NVIDIA DGX Spark (GB10, aarch64). Three swap-in serving modes — EAGLE/MTP, DSpark, or DFlash2 — with every tuning choice measured on-device instead of guessed. DSpark and DFlash2 are faster on code."
+    }
+  ]
+}

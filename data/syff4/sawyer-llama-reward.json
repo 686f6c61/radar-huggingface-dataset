@@ -5,7 +5,7 @@
   "author": "Syff4",
   "url": "https://huggingface.co/Syff4/sawyer-llama-reward",
   "created_at": "2026-10-02T11:48:59.000Z",
-  "updated_at": "2026-10-02T22:54:31.000Z",
+  "updated_at": "2026-10-04T09:51:45.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 62,
   "trending_score": 0,
   "parameters": 124646401,
   "parameters_human": "124.6M",
-  "storage_bytes": 2991669018,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 4986113275,
+  "storage_human": "5.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

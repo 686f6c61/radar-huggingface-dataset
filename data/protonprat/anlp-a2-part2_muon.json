@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a2-part2_muon",
+  "slug": "protonprat-anlp-a2-part2_muon",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a2-part2_muon",
+  "created_at": "2026-10-04T21:05:16.000Z",
+  "updated_at": "2026-10-04T23:38:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "anlp-assignment-2",
+    "causal-lm",
+    "custom-architecture",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2289127009,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DunkRonit/anlp-a2-part2-muon · Hugging Face",
+      "url": "https://huggingface.co/DunkRonit/anlp-a2-part2-muon",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sanyam2005/anlp-a2-part2-muon · Hugging Face",
+      "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-muon",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MUON 2: Boosting MUON via Adaptive Second-Moment Preconditioning",
+      "url": "https://arxiv.org/pdf/2604.09967v1",
+      "snippet": "We propose MUON2, a novel generalization of MUON optimizer that preconditions the momen-tum matrix via Adam-style adaptive scaling prior to MUON&#x27;s orthogonalization. This simple yet effective approach simultaneously boosts model performance and training efficiency."
+    },
+    {
+      "title": "Muon2: Boosting Muon via Adaptive Second-Moment Preconditioning - arXiv.org",
+      "url": "https://arxiv.org/html/2604.09967v2",
+      "snippet": "Abstract Muon has emerged as a promising optimizer for large-scale foundation model pre-training by exploiting the matrix structure of neural network updates through iterative orthogonalization. However, the orthogonalization quality of Muon hinges on the number of Newton-Schulz (NS) iterations performed, which poses efficiency challenges due to its non-trivial computation and communication ..."
+    },
+    {
+      "title": "GitHub - KellerJordan/Muon: Muon is an optimizer for hidden layers in ...",
+      "url": "https://github.com/KellerJordan/Muon",
+      "snippet": "Muon: An optimizer for the hidden layers of neural networks This repo contains an implementation of the Muon optimizer originally described in this thread and this writeup."
+    }
+  ]
+}

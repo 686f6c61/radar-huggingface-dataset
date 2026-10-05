@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gebhart/scitbert-2015-ci",
+  "slug": "gebhart-scitbert-2015-ci",
+  "author": "gebhart",
+  "url": "https://huggingface.co/gebhart/scitbert-2015-ci",
+  "created_at": "2026-06-14T19:07:00.000Z",
+  "updated_at": "2026-10-05T00:24:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 1192140272,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Force de Coriolis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Force_de_Coriolis",
+      "snippet": "Force de Coriolis Le sens de rotation de cette zone de basse pression, tournant au large de l' Islande, est dans le sens contraire des …"
+    },
+    {
+      "title": "Rivieres - stiperret.free.fr",
+      "url": "http://stiperret.free.fr/2nde/Physique/Mouvement%20et%20Temps/Temps/Sites%20temps/Pendule%20de%20Foucault/www.ac-nantes.fr/peda/disc/scphy/dochtml/foucault/rivieres.htm",
+      "snippet": "La \"force de Coriolis\" s'exerce aussi sur l'eau des fleuves et des rivières, en exerçant une force dirigée vers la droite du courant, elle …"
+    },
+    {
+      "title": "Influence of the Coriolis Force on Spreading of River Plumes - MDPI",
+      "url": "https://www.mdpi.com/2072-4292/15/13/3397",
+      "snippet": "Jul 4, 2023 · At the same time, the majority of river plumes are strongly affected by the Coriolis force, which is also among the …"
+    },
+    {
+      "title": "Impact of Coriolis Force on the Flow Field and ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/359490518_Impact_of_Coriolis_Force_on_the_Flow_Field_and_Sedimentation_in_Ideally_Shaped_Tidal_Basins",
+      "snippet": "Mar 1, 2022 · Four ideally shaped computation domains with varying depth, inlet channel location, and orientation have been …"
+    },
+    {
+      "title": "Effet Coriolis : pourquoi les vents et les cyclones dévient - À Nous la ...",
+      "url": "https://anouslascience.fr/effet-coriolis-comprendre-simplement-pourquoi-les-vents-et-les-cyclones-devient/",
+      "snippet": "Jul 8, 2026 · L’effet Coriolis est une force apparente liée à la rotation de la Terre : elle ne crée pas le vent, mais dévie la trajectoire …"
+    }
+  ]
+}

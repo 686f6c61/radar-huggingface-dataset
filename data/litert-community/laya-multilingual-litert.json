@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "litert-community/Laya-Multilingual-LiteRT",
+  "slug": "litert-community-laya-multilingual-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Laya-Multilingual-LiteRT",
+  "created_at": "2026-09-21T16:11:38.000Z",
+  "updated_at": "2026-10-05T00:20:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "litert",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "text-classification",
+    "zero-shot-classification",
+    "laya",
+    "modernbert",
+    "en",
+    "ja",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 715,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3450222734,
+  "storage_human": "3.5 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Insecterie: acheter vos phasmes en ligne, vente de mante religieuse",
+      "url": "https://linsecterie.com/",
+      "snippet": "L'Insecterie est votre boutique de vente en ligne d'insectes vivants: acheter un lot de phasmes, mantes (religieuses), coléoptères, …"
+    },
+    {
+      "title": "Insectes 10% – L'insecterie",
+      "url": "https://linsecterie.com/products/insectes",
+      "snippet": "L'Insecterie est votre boutique de vente en ligne d'insectes vivants: acheter un lot de phasmes, mantes (religieuses), coléoptères, …"
+    },
+    {
+      "title": "L'insecterie | Fonsorbes - Facebook",
+      "url": "https://www.facebook.com/linsecterie/",
+      "snippet": "Jun 20, 2025 · Voici l’œuf et la femelle adulte du phasme scorpion (Extatosoma tiaratum) 🐣🦗 Un insecte fascinant, reconnaissable à …"
+    },
+    {
+      "title": "L'Insecterie (@linsecterie) • Instagram photos and videos",
+      "url": "https://www.instagram.com/linsecterie/",
+      "snippet": "2,049 Followers, 99 Following, 603 Posts - L'Insecterie (@linsecterie) on Instagram: \"🪲 Boutique en ligne d'insectes vivants 🐛 Tous vos …"
+    },
+    {
+      "title": "Amazon.fr: L'Insecterie",
+      "url": "https://www.amazon.fr/stores/LInsecterie/page/B1CD3676-5F63-4AFE-8004-D5EA6597380E",
+      "snippet": "L'Insecterie est une boutique spécialisée dans l'élevage et la vente d'équipement et d'accessoires pour vos insectes. Fourmilière, …"
+    }
+  ]
+}

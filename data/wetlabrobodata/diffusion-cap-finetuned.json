@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-cap-finetuned",
+  "slug": "wetlabrobodata-diffusion-cap-finetuned",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-cap-finetuned",
+  "created_at": "2026-10-04T19:55:20.000Z",
+  "updated_at": "2026-10-04T20:17:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-cap",
+    "base_model:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "base_model:finetune:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264873854,
+  "parameters_human": "264.9M",
+  "storage_bytes": 1059530088,
+  "storage_human": "1.1 GB",
+  "base_model": "WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "RawDiffusion - The Unfiltered AI Model Hub",
+      "url": "https://rawdiffusion.com/",
+      "snippet": "Share, discover, and download AI models freely. The unfiltered hub for Stable Diffusion checkpoints, LoRAs, embeddings, and more."
+    },
+    {
+      "title": "07_fine_tuning_diffusion.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/genaibook/genaibook/blob/main/07_fine_tuning_diffusion.ipynb",
+      "snippet": "The choice of hyperparameters significantly influences the outcome of fine-tuning a diffusion model, impacting both the quality of generated images and the model&#x27;s ability to learn new concepts."
+    },
+    {
+      "title": "GitHub - YaYaB/finetune-diffusion",
+      "url": "https://github.com/YaYaB/finetune-diffusion",
+      "snippet": "The goal of this repository is to facilitate the finetuning of diffusion models. You need to collect all the images on which you want to finetune. All of those images must be put in the ./data folder. Those images will be converted to .jpeg later in the process. Having around 1K diverse images is ..."
+    },
+    {
+      "title": "Finetuned Diffusion: Free AI Image Generation Tool",
+      "url": "https://www.novelai.work/en/tools/finetuned-diffusion",
+      "snippet": "Explore Finetuned Diffusion, a free web-based tool on Hugging Face Spaces for generating AI art and testing fine-tuned diffusion models directly in your browser."
+    }
+  ]
+}

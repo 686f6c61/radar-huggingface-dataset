@@ -5,7 +5,7 @@
   "author": "TRYZER01",
   "url": "https://huggingface.co/TRYZER01/Qwen3.5-4B-Danbooru-Prompt-Generator",
   "created_at": "2026-10-03T19:46:54.000Z",
-  "updated_at": "2026-10-03T20:12:30.000Z",
+  "updated_at": "2026-10-04T20:49:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 237,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",

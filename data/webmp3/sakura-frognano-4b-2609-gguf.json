@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-FrogNano-4B-2609-GGUF",
   "created_at": "2026-10-02T22:11:44.000Z",
-  "updated_at": "2026-10-03T18:30:30.000Z",
+  "updated_at": "2026-10-04T17:32:52.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 579,
+  "downloads_30d": 2299,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",
-  "storage_bytes": 7572939788,
-  "storage_human": "7.6 GB",
+  "storage_bytes": 12102428620,
+  "storage_human": "12.1 GB",
   "base_model": "microsoft/FrogNano-4B-2609",
   "formats": [
     "gguf"

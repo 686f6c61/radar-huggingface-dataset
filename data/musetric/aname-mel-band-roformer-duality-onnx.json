@@ -5,7 +5,7 @@
   "author": "musetric",
   "url": "https://huggingface.co/musetric/aname-mel-band-roformer-duality-onnx",
   "created_at": "2026-09-25T20:24:02.000Z",
-  "updated_at": "2026-10-02T23:22:18.000Z",
+  "updated_at": "2026-10-04T04:24:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-to-audio",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 497363439,
-  "storage_human": "497 MB",
+  "storage_bytes": 504669754,
+  "storage_human": "505 MB",
   "base_model": "Aname-Tommy/Mel-Band-Roformer_Duality",
   "formats": [
     "onnx"

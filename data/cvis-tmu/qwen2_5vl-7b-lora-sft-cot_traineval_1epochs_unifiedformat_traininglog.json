@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_unifiedformat_traininglog",
+  "slug": "cvis-tmu-qwen2_5vl-7b-lora-sft-cot_traineval_1epochs_unifiedformat_traininglog",
+  "author": "cvis-tmu",
+  "url": "https://huggingface.co/cvis-tmu/qwen2_5vl-7b-lora-sft-CoT_traineval_1epochs_unifiedformat_traininglog",
+  "created_at": "2026-10-04T19:05:29.000Z",
+  "updated_at": "2026-10-04T19:23:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "llama-factory",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2231842240,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qmayb – Una Cunumi (Remix) Lyrics - Genius",
+      "url": "https://genius.com/Qmayb-una-cunumi-remix-lyrics",
+      "snippet": "[Letra de \"Una Cunumi (Remix)\" ft. Xvideo Token, Faraón Love Shady & J.Gonzo] [Coro: Qmayb] (d.a.) Una cunumi, una cunumi …"
+    },
+    {
+      "title": "Tyga – Taste Lyrics - Genius",
+      "url": "https://genius.com/Tyga-taste-lyrics",
+      "snippet": "May 16, 2018 · “Taste”, a trap-influenced, upbeat rap song featuring Migos’ member Offset was published on May 16, 2018. The track …"
+    },
+    {
+      "title": "Simply Piano : Learn Piano Fast - App on Amazon Appstore",
+      "url": "https://www.amazon.com/Simply-Piano-Learn-Fast/dp/B0CMCTZPBV",
+      "snippet": "Simply Piano : Learn Piano Fast Simply Piano : Learn Piano Fast by XVideo Effect Video Converter Photography Outfit 3 customer …"
+    },
+    {
+      "title": "xvideo chat for word - App on Amazon Appstore",
+      "url": "https://www.amazon.com/yusuf-bilgic-xvideo-chat-word/dp/B07MXLLTXM",
+      "snippet": "xvideo chat for word xvideo chat for word by yusuf bilgic 2 customer ratings Guidance Suggested Price: $1.00"
+    },
+    {
+      "title": "Image aplatie (problème de ratio avec xvideo / Affichage et cartes ...",
+      "url": "https://forum.ubuntu-fr.org/viewtopic.php?id=470511",
+      "snippet": "Bonjour, À la base, mon fichier xconf.org posait un problème car l'image était décalé et j'ai suivi cette recette. Aujourd'hui, j'ai encore …"
+    }
+  ]
+}

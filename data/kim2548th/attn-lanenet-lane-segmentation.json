@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kim2548TH/attn-lanenet-lane-segmentation",
+  "slug": "kim2548th-attn-lanenet-lane-segmentation",
+  "author": "kim2548TH",
+  "url": "https://huggingface.co/kim2548TH/attn-lanenet-lane-segmentation",
+  "created_at": "2026-10-04T21:17:13.000Z",
+  "updated_at": "2026-10-04T21:21:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "AttnLaneNet",
+    "lane-detection",
+    "autonomous-vehicles",
+    "self-driving",
+    "edge-ai",
+    "computer-vision",
+    "semantic-segmentation",
+    "image-segmentation",
+    "en",
+    "th",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 927553,
+  "parameters_human": "927553",
+  "storage_bytes": 8055255,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SaveMoreDaily — Verified Coupon Codes & Deals Updated Daily",
+      "url": "https://www.savemoredaily.com/en",
+      "snippet": "Save More Every Day — verified daily. Discover verified coupon codes and exclusive deals from hundreds of top brands. Never pay …"
+    },
+    {
+      "title": "MoneySuperMarket | Where better off begins",
+      "url": "https://www.moneysupermarket.com/?msockid=0180b30aab9963333cfca4e2aa496291",
+      "snippet": "2 days ago · Compare and save on over 40 products including car insurance, home insurance, credit cards, loans and energy. …"
+    },
+    {
+      "title": "Bite for Less — Today's Best Fast Food & Restaurant Deals",
+      "url": "https://biteforless.com/",
+      "snippet": "1 day ago · Find the best fast food and restaurant deals every day. Promo codes, discounts, and limited-time offers from McDonald's, …"
+    },
+    {
+      "title": "Dealogator — Daily Deals & Coupons",
+      "url": "https://dealogator.com/",
+      "snippet": "Dealogator is your trusted source for verified coupons, promo codes, and exclusive deals in United States. We partner with hundreds …"
+    },
+    {
+      "title": "Today's Best Deals — Price & Pick",
+      "url": "https://priceandpick.com/deals/",
+      "snippet": "The best deals from 200+ trusted brands. Updated hourly. Save up to 70% on electronics, fashion, home, beauty, and more."
+    }
+  ]
+}

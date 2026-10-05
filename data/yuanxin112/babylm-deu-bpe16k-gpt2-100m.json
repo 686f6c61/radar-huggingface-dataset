@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yuanxin112/babylm-deu-bpe16k-gpt2-100m",
+  "slug": "yuanxin112-babylm-deu-bpe16k-gpt2-100m",
+  "author": "yuanxin112",
+  "url": "https://huggingface.co/yuanxin112/babylm-deu-bpe16k-gpt2-100m",
+  "created_at": "2026-10-04T19:53:03.000Z",
+  "updated_at": "2026-10-04T19:57:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "babylm",
+    "german",
+    "de",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21261312,
+  "parameters_human": "21.3M",
+  "storage_bytes": 85055208,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "babylm (BabyLM Challenge) - Hugging Face",
+      "url": "https://huggingface.co/babylm",
+      "snippet": "Sample-efficient pre-training"
+    },
+    {
+      "title": "BabyLM 4 at EMNLP 2026",
+      "url": "https://babylm.github.io/",
+      "snippet": "BabyLM 4 at EMNLP 2026: The tentative workshop schedule is now available. Posters from BabyLM 3 (2025) are available in the BabyLM 3 archive. Summary: BabyLM returns for its 4th year as both a shared task and a workshop at EMNLP 2026."
+    },
+    {
+      "title": "babylm (BabyLM Challenge) - Hugging Face",
+      "url": "https://huggingface.co/babylm/models",
+      "snippet": "Sample-efficient pre-training. Organizations. None yet. babylm &#x27;s models 12. Sort: Recently updated. babylm/ltgbert-100m-2024. Fill-Mask • Updated Sep 3, 2024 • 203 • 1"
+    },
+    {
+      "title": "GitHub - to1246zh-s-star/babylm-2026-multilingual · GitHub",
+      "url": "https://github.com/to1246zh-s-star/babylm-2026-multilingual",
+      "snippet": "This repository contains the official implementation for our submission to the EMNLP 2026 BabyLM Challenge (Multilingual Track). We propose a Dual-Innovation architecture to tackle the strict 100M-token budget and parameter constraints."
+    },
+    {
+      "title": "Baby",
+      "url": "https://babylm.github.io/?trk=public_post-text",
+      "snippet": "Updated Rules for BabyLM Round 4 • New track: MultiLingual. Participants train on a MultiLingual mixture from BabyBabelLM. The challenge track focuses on English, Dutch, and Chinese, and allows a custom mixture totaling 100M tokens (with word counts adjusted by each language&#x27;s Byte Premium in baseline construction)."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA",
+  "slug": "ausboss-qwen-image-2-1-outfit-swap-consistency-lora",
+  "author": "ausboss",
+  "url": "https://huggingface.co/ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA",
+  "created_at": "2026-10-04T04:03:30.000Z",
+  "updated_at": "2026-10-04T20:11:21.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "image-editing",
+    "outfit-swap",
+    "consistency",
+    "virtual-try-on",
+    "qwen-image",
+    "qwen-image-2.1",
+    "comfyui",
+    "ai-toolkit",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 15,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 491033836,
+  "storage_human": "491 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ausboss/Qwen-Image-2.1-Consistency-LoRA - Hugging Face",
+      "url": "https://huggingface.co/ausboss/Qwen-Image-2.1-Consistency-LoRA",
+      "snippet": "vor 7 Tagen ... Each pair started as a real Qwen Image 2.1 edit of one of those pictures: restyles, relighting, seasons, photo looks, new backgrounds, outfits, ..."
+    },
+    {
+      "title": "Qwen Image 2.1 Outfit Swap Consistency LoRA - v1.0 - Civitai",
+      "url": "https://civitai.com/models/2983159/qwen-image-21-outfit-swap-consistency-lora",
+      "snippet": "vor 2 Tagen ... A consistency LoRA for outfit swaps with Qwen Image 2.1: the person gets the outfit from a second picture, and the rest of the picture stays ..."
+    },
+    {
+      "title": "Adapter Models for Qwen/Qwen-Image-2.1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:Qwen/Qwen-Image-2.1",
+      "snippet": "Models · Viggle/Qwen-Image-2.1-viggle-turbo · Alissonerdx/BFS-Best-Face-Swap · lilylilith/QI_2.1_AnyAngle · ausboss/Qwen-Image-2.1-Consistency-LoRA · PrunaAI/Pruna- ..."
+    },
+    {
+      "title": "Image-to-Image Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-to-image",
+      "snippet": "Models · Alissonerdx/BFS-Best-Face-Swap · lilylilith/QI_2.1_AnyAngle · ausboss/Qwen-Image-2.1-Consistency-LoRA · black-forest-labs/FLUX.2-klein-base-9b-fp8 · ausboss ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=lora",
+      "snippet": "Models · Viggle/Qwen-Image-2.1-viggle-turbo · Alissonerdx/BFS-Best-Face-Swap · akatz-ai/MiniMax-H3-Character-Swap-LoRA · pablodawson/MiniMax-H3-360-Orbit-LoRA."
+    }
+  ]
+}

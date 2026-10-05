@@ -5,7 +5,7 @@
   "author": "unlimitedpipe",
   "url": "https://huggingface.co/unlimitedpipe/decide-0.5b-GGUF",
   "created_at": "2026-09-27T17:14:51.000Z",
-  "updated_at": "2026-09-29T02:08:40.000Z",
+  "updated_at": "2026-10-04T17:30:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 1593203424,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 2124271232,
+  "storage_human": "2.1 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"

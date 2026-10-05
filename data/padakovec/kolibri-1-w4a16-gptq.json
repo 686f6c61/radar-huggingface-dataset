@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Padakovec/Kolibri-1-W4A16-GPTQ",
+  "slug": "padakovec-kolibri-1-w4a16-gptq",
+  "author": "Padakovec",
+  "url": "https://huggingface.co/Padakovec/Kolibri-1-W4A16-GPTQ",
+  "created_at": "2026-10-04T19:10:58.000Z",
+  "updated_at": "2026-10-04T19:12:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kolibri1",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1-BF16",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1-BF16",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 44193036343,
+  "storage_human": "44.2 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kolibri 1 - Local AI Model - Tokenstead",
+      "url": "https://tokenstead.ai/models/kolibri-1",
+      "snippet": "Kolibri 1: hardware requirements, quantization options, and live cloud pricing on Tokenstead."
+    },
+    {
+      "title": "Quantized Models for Aleph-Alpha/Kolibri-1 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:quantized:Aleph-Alpha/Kolibri-1",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "colibri - justvugg.github.io",
+      "url": "https://justvugg.github.io/colibri/",
+      "snippet": "Run frontier open models on hardware you already own. Nine families, up to 2.8T parameters, pure C, zero dependencies."
+    },
+    {
+      "title": "GitHub - syv-ai/HyperQwen: Serve large Qwen models fast on the GPUs you ...",
+      "url": "https://github.com/syv-ai/HyperQwen",
+      "snippet": "Serve large Qwen models fast on the GPUs you actually own. Qwen3.8-27B on a single 24 GB card with vLLM: 127 tok/s single-user (381 when the answer quotes the prompt), ~1,035 tok/s at 64 concurrent, 150k-262k context. vLLM patches, requant pipeline, benchmarks. - syv-ai/HyperQwen"
+    },
+    {
+      "title": "GitHub - ModelCloud/GPTQModel: LLM model quantization (compression ...",
+      "url": "https://github.com/ModelCloud/GPTQModel",
+      "snippet": "A unified quantization platform GPT-QModel provides a consistent API for calibration, quantization, quality evaluation, model conversion, and accelerated inference. It supports GPTQ, AWQ, ParoQuant, QQQ, GGUF, FP8, EXL3, GPTAQ, EoRA, GAR, and FOEM across supported hardware and runtime integrations."
+    }
+  ]
+}

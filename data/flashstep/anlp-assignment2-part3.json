@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "flashstep/anlp-assignment2-part3",
+  "slug": "flashstep-anlp-assignment2-part3",
+  "author": "flashstep",
+  "url": "https://huggingface.co/flashstep/anlp-assignment2-part3",
+  "created_at": "2026-10-04T20:57:57.000Z",
+  "updated_at": "2026-10-04T20:59:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devatri/anlp-assignment2-part1-model3 · Hugging Face",
+      "url": "https://huggingface.co/Devatri/anlp-assignment2-part1-model3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rakshitagg06/anlp-assignment2 · Hugging Face",
+      "url": "https://huggingface.co/Rakshitagg06/anlp-assignment2",
+      "snippet": "Rakshitagg06 / anlp-assignment2 Like 0 Safetensors PyTorch anlp-assignment-2 mixture-of-experts optimizers Model card FilesFiles and versions xet Community Copy to bucket new ANLP Assignment 2: trained models Part 1: Mixture of Experts (vi/ja -> en translation) Part 2: Optimizers (next-token pretraining on browndw/human-ai-parallel-corpus)"
+    },
+    {
+      "title": "GitHub - abdur75648/Deep-Learning-Specialization-Coursera: This repo ...",
+      "url": "https://github.com/abdur75648/Deep-Learning-Specialization-Coursera",
+      "snippet": "This repo contains the updated version of all the assignments/labs (done by me) of Deep Learning Specialization on Coursera by Andrew Ng. It includes building various deep learning models from scratch and implementing them for object detection, facial recognition, autonomous driving, neural machine translation, trigger word detection, etc. - abdur75648/Deep-Learning-Specialization-Coursera"
+    },
+    {
+      "title": "Lullow/assignment2-part3-agent - GitHub",
+      "url": "https://github.com/Lullow/assignment2-part3-agent",
+      "snippet": "Contribute to Lullow/assignment2-part3-agent development by creating an account on GitHub."
+    },
+    {
+      "title": "Step 3.7 Flash Intelligence, Performance & Price Analysis",
+      "url": "https://artificialanalysis.ai/models/step-3-7-flash",
+      "snippet": "Analysis of StepFun&#x27;s Step 3.7 Flash and comparison to other AI models across key metrics including quality, price, performance (tokens per second & time to first token), context window & more."
+    }
+  ]
+}

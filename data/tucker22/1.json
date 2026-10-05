@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tucker22/1",
+  "slug": "tucker22-1",
+  "author": "tucker22",
+  "url": "https://huggingface.co/tucker22/1",
+  "created_at": "2026-10-04T21:38:27.000Z",
+  "updated_at": "2026-10-04T21:38:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video: Watch, rent, or buy movies online - amazon.com",
+      "url": "https://www.amazon.com/gp/video/movie",
+      "snippet": "Browse top movies to stream, rent, or buy on Prime Video. Discover popular hits, new releases, and exclusive titles included with …"
+    },
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "snippet": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience."
+    },
+    {
+      "title": "D12 – My Band Lyrics - Genius",
+      "url": "https://genius.com/D12-my-band-lyrics",
+      "snippet": "Mar 14, 2004 · My Band Lyrics This song is the first single from D12’s second album D12 World. The song has a satirical tone, …"
+    },
+    {
+      "title": "Fast Hubness-Reduced Nearest Neighbor Search for Entity ...",
+      "url": "https://dbs.uni-leipzig.de/file/SNKiezObraczkaRahm.pdf",
+      "snippet": "16.09.2022 ... A large-scale evaluation of knowledge graph embedding models under a unified framework. IEEE Trans Pattern Anal Mach Intell. 1–1 2021. https ..."
+    },
+    {
+      "title": "Oasis – Live Forever Lyrics - Genius",
+      "url": "https://genius.com/Oasis-live-forever-lyrics",
+      "snippet": "Aug 8, 1994 · “Live Forever” was released as the third single off Definitely Maybe, August 8th 1994. This song was written when Noel …"
+    }
+  ]
+}

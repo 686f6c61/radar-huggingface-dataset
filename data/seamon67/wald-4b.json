@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "seamon67/Wald-4B",
+  "slug": "seamon67-wald-4b",
+  "author": "seamon67",
+  "url": "https://huggingface.co/seamon67/Wald-4B",
+  "created_at": "2026-10-04T23:35:35.000Z",
+  "updated_at": "2026-10-04T23:50:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "decision-model",
+    "typed-decisions",
+    "calibration",
+    "calibrated-probabilities",
+    "classification",
+    "tool-selection",
+    "tool-use",
+    "agent-routing",
+    "clarification",
+    "robustness",
+    "decision-index",
+    "jevbench",
+    "jev",
+    "jev-compatible",
+    "open-jev",
+    "typesafe-compatible",
+    "systemone",
+    "kev",
+    "laya",
+    "wald",
+    "wald-q4b",
+    "qwen3.5",
+    "4b",
+    "vllm",
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "reasoning",
+    "conversational",
+    "en",
+    "base_model:org2ai/Wald-4B",
+    "base_model:finetune:org2ai/Wald-4B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8431547805,
+  "storage_human": "8.4 GB",
+  "base_model": "org2ai/Wald-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "Decision Index 0.2.1, complete suite (150,317 requests)",
+      "metric": "Balanced-skill index, effort high (author-run, not leaderboard-verified)",
+      "value": 54.59
+    },
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "JevBench public set (231 items)",
+      "metric": "Accuracy, effort none (self-scored, 203/231)",
+      "value": 87.88
+    },
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "JevBench public set (231 items)",
+      "metric": "Expected calibration error, 10 bins (self-scored)",
+      "value": 0.041
+    },
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "JevBench public set (231 items)",
+      "metric": "Brier score (self-scored)",
+      "value": 0.188
+    },
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "JevBench public set (231 items)",
+      "metric": "Accuracy, effort none (self-scored, 204/231)",
+      "value": 88.31
+    },
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "JevBench public set (231 items)",
+      "metric": "Expected calibration error, 10 bins (self-scored)",
+      "value": 0.045
+    },
+    {
+      "task": "Structured decisions (option probabilities)",
+      "dataset": "JevBench public set (231 items)",
+      "metric": "Brier score (self-scored)",
+      "value": 0.191
+    },
+    {
+      "task": "Robustness of structured decisions to distracting and adversarial text",
+      "dataset": "JevAdvBench (812 questions, 9 delivered attack types)",
+      "metric": "Mean flip rate in %, effort none, lower is better (self-run)",
+      "value": 4.6
+    }
+  ],
+  "sources": []
+}

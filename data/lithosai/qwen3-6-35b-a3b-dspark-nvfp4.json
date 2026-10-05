@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LithosAI/Qwen3.6-35B-A3B-DSpark-NVFP4",
+  "slug": "lithosai-qwen3-6-35b-a3b-dspark-nvfp4",
+  "author": "LithosAI",
+  "url": "https://huggingface.co/LithosAI/Qwen3.6-35B-A3B-DSpark-NVFP4",
+  "created_at": "2026-10-04T19:46:03.000Z",
+  "updated_at": "2026-10-04T21:11:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dspark",
+    "speculative-decoding",
+    "nvfp4",
+    "weight-only-quantization",
+    "lithos-metal",
+    "text-generation",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 888545025,
+  "parameters_human": "888.5M",
+  "storage_bytes": 952165546,
+  "storage_human": "952 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RedHatAI/Qwen3.6-35B-A3B-speculator.dspark · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.6-35B-A3B-speculator.dspark",
+      "snippet": "DSpark extends DFlash with a Markov head (intra-block token dependency) and a confidence head (per-position acceptance prediction). Training compute for this model was generously provided by Lambda, a leading cloud platform for AI training and inference. Commands Using the Speculators library and the helper scripts provided in the repo."
+    },
+    {
+      "title": "NVFP4 + Qwen 3.6 35B-A3B on DGX Spark: 97 tok/s single, 322 tok/s at 8 ...",
+      "url": "https://llmrequirements.com/news/2026-06-03-nvfp4-qwen-3-6-35b-dgx-spark",
+      "snippet": "NVIDIA&#x27;s official NVFP4 checkpoint of Qwen 3.6 35B-A3B (May 28). On a DGX Spark running the technigmaai/dgx-spark recipe we measured 97 tok/s single-stream and 322 tok/s aggregate at 8 concurrent with prefix-cached prefill (42 tok/s per stream). Community MTP-3 sweet spot adds another lift on FP8."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-heretic NVFP4 + DFlash on DGX Spark",
+      "url": "https://github.com/AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4-DFlash",
+      "snippet": "A production-stable deployment of AEON-7/Qwen3.6-35B-A3B-heretic-NVFP4 with DFlash speculative decoding on NVIDIA DGX Spark (GB10 / sm_121a). ⚠️ READ THE REQUIREMENTS SECTION FIRST. This image and its weights are tuned specifically for the DGX Spark (GB10 / sm_120-121 Blackwell). It will NOT work on Hopper, Ampere, B200, or other Blackwell variants without rebuilding."
+    },
+    {
+      "title": "Qwen3.6 35B NVFP4 on 1x DGX Spark - GitHub",
+      "url": "https://github.com/sojufx/Qwen3.6-35B-NVFP4-DGX-Spark-Recipe",
+      "snippet": "Qwen3.6 35B-A3B NVFP4 is a strong fit for Spark because it is MoE: the model is large, but only a smaller active slice runs per token. With FP8 KV cache and speculative decoding, it can deliver both long context and serious aggregate throughput on one 128GB unified-memory box."
+    },
+    {
+      "title": "DGX Spark - How to Run Qwen3.6-35B-A3B-NVFP4 · GitHub",
+      "url": "https://gist.github.com/jasonacox/5721ffc9b8c55bdb17d26780fed75a7f",
+      "snippet": "The Blackwell GPU also supports NVIDIA&#x27;s low-precision NVFP4 format, which reduces model memory requirements while retaining much of the original model&#x27;s quality. Qwen3.6-35B-A3B is a mixture-of-experts model with approximately 35 billion total parameters and about 3 billion parameters activated for each token."
+    }
+  ]
+}

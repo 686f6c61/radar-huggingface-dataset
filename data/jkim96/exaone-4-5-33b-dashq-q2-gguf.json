@@ -5,7 +5,7 @@
   "author": "jkim96",
   "url": "https://huggingface.co/jkim96/EXAONE-4.5-33B-DASHQ-Q2-GGUF",
   "created_at": "2026-10-02T23:40:45.000Z",
-  "updated_at": "2026-10-02T23:59:07.000Z",
+  "updated_at": "2026-10-04T11:10:25.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 365,
+  "downloads_30d": 476,
   "trending_score": 0,
-  "parameters": 33063614784,
-  "parameters_human": "33.06B",
-  "storage_bytes": 44069492992,
-  "storage_human": "44.1 GB",
+  "parameters": 32527504448,
+  "parameters_human": "32.53B",
+  "storage_bytes": 87362417536,
+  "storage_human": "87.4 GB",
   "base_model": "LGAI-EXAONE/EXAONE-4.5-33B",
   "formats": [
     "gguf"

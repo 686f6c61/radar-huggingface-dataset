@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChapAF/intent-0.1-0.5b",
+  "slug": "chapaf-intent-0-1-0-5b",
+  "author": "ChapAF",
+  "url": "https://huggingface.co/ChapAF/intent-0.1-0.5b",
+  "created_at": "2026-10-04T08:46:30.000Z",
+  "updated_at": "2026-10-05T00:31:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 455933952,
+  "parameters_human": "455.9M",
+  "storage_bytes": 5473150400,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "AI programs that run right here. Two chat programs run in this browser. All files download; &#x27;License: unknown&#x27; means the license is unconfirmed — you decide. How this works Two small chat programs — Qwen2.5 0.5B and 1.5B — run in a computer&#x27;s browser tab, with nothing to install. On a phone, we first check whether it can run them. Every other model is a file you download to a computer ..."
+    },
+    {
+      "title": "Releases: mlc-ai/binary-mlc-llm-libs - GitHub",
+      "url": "https://github.com/mlc-ai/binary-mlc-llm-libs/releases",
+      "snippet": "Contribute to mlc-ai/binary-mlc-llm-libs development by creating an account on GitHub."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "55 open-source models indexed The open-source AI model directory. Licenses, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

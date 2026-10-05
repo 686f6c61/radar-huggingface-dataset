@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/securecoder-30b-pro-v2-merged-i1-GGUF",
+  "slug": "mradermacher-securecoder-30b-pro-v2-merged-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/securecoder-30b-pro-v2-merged-i1-GGUF",
+  "created_at": "2026-10-04T21:51:39.000Z",
+  "updated_at": "2026-10-05T02:02:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 149617348864,
+  "storage_human": "149.6 GB",
+  "base_model": "Taimwe/securecoder-30b-pro-v2-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

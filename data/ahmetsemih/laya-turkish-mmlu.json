@@ -9,13 +9,13 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "multiple-choice",
-  "library": null,
+  "library": "laya",
   "languages": [
     "tr"
   ],
   "tags": [
-    "safetensors",
     "laya",
+    "safetensors",
     "multiple-choice",
     "turkish",
     "tr",

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004",
+  "slug": "teru00801-hawks-qwen3_5-35b-a3b-rlbase-merged-1004",
+  "author": "teru00801",
+  "url": "https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-rlbase-merged-1004",
+  "created_at": "2026-10-04T20:51:23.000Z",
+  "updated_at": "2026-10-04T20:52:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "merged",
+    "qwen",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71923867359,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teru00801/hawks-qwen3_5-35b-a3b-merged-0601 · Hugging Face",
+      "url": "https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-merged-0601",
+      "snippet": "This repository contains the merged/fused HF-format model. It is intended as the precision-preserving source for downstream conversions, including MLX quantization and future runtime formats. Source Base model: unsloth/Qwen3.5-35B-A3B GGUF runtime package: teru00801/hawks-qwen3_5-35b-a3b-gguf-0601 MLX conversion Run this on Apple Silicon:"
+    },
+    {
+      "title": "teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0930 · Hugging Face",
+      "url": "https://huggingface.co/teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0930",
+      "snippet": "Instructions to use teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0930 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Hawks Qwen3 5 35b A3b Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/teru00801/hawks-qwen3_5-35b-a3b-gguf",
+      "snippet": "by teru00801 hf-model--teru00801--hawks-qwen3_5-35b-a3b-gguf Nexus Index 31.2Top 100% S: Semantic50 A: Authority0 P: Popularity0 R: Recency95 Q: Quality30 Tech Context 35Params 4.096KCtx Vital Performance 0 DL / 30D 0.0% Source → Share: 📤 𝕏 in 📣 🔗 Audited 31.2 FNI Score 35B Params 4k Context 0 Downloads H100+ ~29GB Est. VRAM 🔬 ..."
+    },
+    {
+      "title": "teru00801/hawks-qwen3_5-35b-a3b-merged-0601 API & Inference Endpoint ...",
+      "url": "https://friendli.ai/models/teru00801/hawks-qwen3_5-35b-a3b-merged-0601",
+      "snippet": "Run teru00801/hawks-qwen3_5-35b-a3b-merged-0601 with FriendliAI inference. This repository contains the merged/fused HF-format model."
+    },
+    {
+      "title": "Hawks Qwen3 5 35b A3b Mlx 4bit 0710 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0710",
+      "snippet": "by teru00801 teru00801/hawks-qwen3_5-35b-a3b-mlx-4bit-0710 Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 34.66Params 32.768KCtx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Jrouth",
   "url": "https://huggingface.co/Jrouth/Qwen3.8-Flash-Next-MTP-C2T8-refit-GGUF",
   "created_at": "2026-09-30T21:30:59.000Z",
-  "updated_at": "2026-09-30T21:33:25.000Z",
+  "updated_at": "2026-10-04T22:51:18.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 212,
+  "downloads_30d": 217,
   "trending_score": 0,
   "parameters": 3878549248,
   "parameters_human": "3.88B",
-  "storage_bytes": 2664609664,
-  "storage_human": "2.7 GB",
+  "storage_bytes": 5329219392,
+  "storage_human": "5.3 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

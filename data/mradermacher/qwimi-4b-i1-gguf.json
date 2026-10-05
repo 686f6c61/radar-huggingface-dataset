@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwimi-4B-i1-GGUF",
+  "slug": "mradermacher-qwimi-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwimi-4B-i1-GGUF",
+  "created_at": "2026-10-04T22:09:24.000Z",
+  "updated_at": "2026-10-04T22:58:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "distillation",
+    "tool-calling",
+    "agent",
+    "en",
+    "dataset:Agent-Ark/Toucan-1.5M",
+    "base_model:Rumiii/Qwimi-4B",
+    "base_model:quantized:Rumiii/Qwimi-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 958716,
+  "parameters_human": "958716",
+  "storage_bytes": 3872640,
+  "storage_human": "4 MB",
+  "base_model": "Rumiii/Qwimi-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onduleur Eaton Ellipse PRO | Onduleur format tour Line-Interactive",
+      "url": "https://www.eaton.com/fr/fr-fr/catalog/backup-power-ups-surge-it-power-distribution/onduleur-eaton-ellipse-pro.html",
+      "snippet": "L’Ellipse PRO d’Eaton est un onduleur line-interactive destinée à la protection des stations de travail exécutant des applications …"
+    },
+    {
+      "title": "ELP1600FR Aperçu | Eaton",
+      "url": "https://www.eaton.com/be/fr-fr/skuPage.ELP1600FR.html",
+      "snippet": "UPS Eaton Ellipse PRO FR, 1600 VA, 1000 W, entrée : C14, sorties : (4) françaises, (4) françaises - ondes de choc uniquement, …"
+    },
+    {
+      "title": "Eaton Ellipse PRO 1600 FR - Onduleur - LDLC",
+      "url": "https://www.ldlc.com/fiche/PB00152764.html",
+      "snippet": "L’onduleur line interactive Eaton Ellipse PRO 1600 FR est destiné à la protection des stations de travail. Grâce à son écran LCD, cet …"
+    },
+    {
+      "title": "Eaton Onduleur Ellipse Pro 1600 FR - Line Interactive UPS - Amazon",
+      "url": "https://www.amazon.fr/Eaton-ELP1600FR-Onduleur-Noir/dp/B00D13REQG",
+      "snippet": "L'Ellipse PRO est équipé d'un port USB (câble USB inclus) et du logiciel Eaton UPS Companion, qui assure l'arrêt sécurisé du …"
+    },
+    {
+      "title": "Mode d'emploi Eaton Ellipse PRO 1600 (Français - 80 des pages)",
+      "url": "https://www.modesdemploi.fr/eaton/ellipse-pro-1600/mode-d-emploi",
+      "snippet": "Le serveur Eaton Ellipse PRO 1600 est un onduleur doté de fonctionnalités avancées, conçu pour offrir une protection fiable et …"
+    }
+  ]
+}

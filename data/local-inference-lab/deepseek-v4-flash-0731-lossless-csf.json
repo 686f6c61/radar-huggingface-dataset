@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/DeepSeek-V4-Flash-0731-lossless-CSF",
+  "slug": "local-inference-lab-deepseek-v4-flash-0731-lossless-csf",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/DeepSeek-V4-Flash-0731-lossless-CSF",
+  "created_at": "2026-10-04T02:41:07.000Z",
+  "updated_at": "2026-10-05T00:23:41.000Z",
+  "license": "lil-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mxfp4",
+    "fp8",
+    "lossless-compression",
+    "csf",
+    "lil-license-1.0",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159439149632,
+  "storage_human": "159.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "Local commercial, bureaux, boulangerie, restaurant Rennes (35000 ...",
+      "url": "https://www.leboncoin.fr/cl/bureaux_commerces/cp_rennes_35000",
+      "snippet": "Toutes nos annonces gratuites Local commercial, bureaux, boulangerie, restaurant Rennes (35000). Consultez nos annonces de …"
+    },
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …"
+    },
+    {
+      "title": "31 locaux commerciaux et boutiques - SeLoger Bureaux & Commerces",
+      "url": "https://www.seloger-bureaux-commerces.com/location/boutique/bretagne/ille-et-vilaine/rennes-35000",
+      "snippet": "Découvrez toutes nos annonces immobilières de location de locaux commerciaux et boutiques à Rennes (35000) à un prix attractif …"
+    },
+    {
+      "title": "23 annonces Locaux commerciaux à louer Rennes 35000 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/bretagne/rennes-35000/ad08fr14157?msockid=2b55aec805ec6ada3957b92104b86b4f",
+      "snippet": "Conforme aux normes ERP et PMR, ce local est doté d'un beau linéaire de vitrine parfait pour attirer l'attention de vos futurs clients. …"
+    }
+  ]
+}

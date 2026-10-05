@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alperenn57/mirAI-Gemma-psikolog-tam-Q4_K_M-GGUF",
+  "slug": "alperenn57-mirai-gemma-psikolog-tam-q4_k_m-gguf",
+  "author": "alperenn57",
+  "url": "https://huggingface.co/alperenn57/mirAI-Gemma-psikolog-tam-Q4_K_M-GGUF",
+  "created_at": "2026-10-04T22:12:52.000Z",
+  "updated_at": "2026-10-04T22:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:alperenn57/mirAI-Gemma-psikolog-tam",
+    "base_model:quantized:alperenn57/mirAI-Gemma-psikolog-tam",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 2498095008,
+  "storage_human": "2.5 GB",
+  "base_model": "alperenn57/mirAI-Gemma-psikolog-tam",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Bienvenue sur Pornhub.com, le site des meilleures vidéos porno hardcore gratuites avec les stars les plus chaudes du hard. …"
+    },
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/",
+      "snippet": "YouPorn is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Pornhub Categories: Find Your Favorite Free Hardcore Porn Videos",
+      "url": "https://www.pornhub.com/categories",
+      "snippet": "Pornhub has the best hardcore porn videos. Discover the newest XXX to stream in your favorite sex category. See the hottest …"
+    },
+    {
+      "title": "Free Porn Videos - HD & VR Sex Videos - PORN.COM Porn Tube",
+      "url": "https://www.porn.com/",
+      "snippet": "Free porn videos in the millions at PORN.COM the largest free porn tube in the world?. Sex videos in HD, 4K on desktop or mobile. …"
+    },
+    {
+      "title": "FR.PORN.COM - Vidéo Porno Gratuites! Porn Tube, XXX, Film X!",
+      "url": "https://fr.porn.com/",
+      "snippet": "PORN.COM est Ton Hub pour les Vidéos Porno Gratuites & les Films de Sexe mis à jour quotidiennement. Regarde du Porno HD et …"
+    }
+  ]
+}

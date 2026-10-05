@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TinyBalls-v1-Base-GGUF",
+  "slug": "mradermacher-tinyballs-v1-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TinyBalls-v1-Base-GGUF",
+  "created_at": "2026-10-04T20:14:47.000Z",
+  "updated_at": "2026-10-04T20:17:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/finewiki",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:codeparrot/codeparrot-clean",
+    "dataset:open-web-math/open-web-math",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:common-pile/project_gutenberg",
+    "dataset:common-pile/pre_1929_books",
+    "dataset:common-pile/doab",
+    "dataset:common-pile/library_of_congress",
+    "dataset:common-pile/peS2o",
+    "dataset:EleutherAI/proof-pile-2",
+    "dataset:common-pile/stackexchange",
+    "dataset:common-pile/ubuntu_irc",
+    "dataset:common-pile/uspto",
+    "dataset:common-pile/caselaw_access_project",
+    "dataset:common-pile/regulations",
+    "dataset:common-pile/youtube",
+    "dataset:common-pile/python_enhancement_proposals",
+    "dataset:common-pile/biodiversity_heritage_library",
+    "dataset:TIGER-Lab/WebInstructSub",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:OpenCoder-LLM/opc-annealing-corpus",
+    "dataset:nvidia/OpenCodeReasoning",
+    "dataset:common-pile/stackexchange_filtered",
+    "dataset:common-pile/libretexts_filtered",
+    "dataset:common-pile/oercommons_filtered",
+    "dataset:common-pile/pressbooks_filtered",
+    "dataset:nebius/SWE-agent-trajectories",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "dataset:SWE-Gym/OpenHands-Sampled-Trajectories",
+    "base_model:igidn/TinyBalls-v1-Base",
+    "base_model:quantized:igidn/TinyBalls-v1-Base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113266944,
+  "parameters_human": "113.3M",
+  "storage_bytes": 1110353504,
+  "storage_human": "1.1 GB",
+  "base_model": "igidn/TinyBalls-v1-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Дочь 2017 +18 - Одноклассники",
+      "url": "https://ok.ru/video/1363223644828",
+      "snippet": "Совместное дело сближает их, и они хотят дать своим отношениям второй шанс. Однако их семилетняя дочь Люка делает …"
+    },
+    {
+      "title": "help daughter masturbating!! - Netmums",
+      "url": "https://www.netmums.com/coffeehouse/being-mum-794/toddlers-1-3-years-59/342199-help-daughter-masturbating.html",
+      "snippet": "Oct 26, 2009 · My daughter is 4 now and has 'snuggled' with her legs crossed for a good 2 years or more. We just ignore it as it's …"
+    },
+    {
+      "title": "\"mother daughter lesbian porn tube\" | vih.org",
+      "url": "https://vih.org/search/mother%20daughter%20lesbian%20porn%20tube",
+      "snippet": "Apr 13, 2026 · Proposé gratuitement aux jeunes femmes de 18 à 25 ans depuis le 1er juillet 2025, ce dispositif sera très …"
+    },
+    {
+      "title": "Mom And Daughter Finger Each Other Stock Videos and Footage",
+      "url": "https://www.istockphoto.com/videos/mom-and-daughter-finger-each-other?msockid=3f11e04093c46df52aaaf7a892e96cd2",
+      "snippet": "Find 4,132 Mom And Daughter Finger Each Other stock video, 4K footage, and other HD footage from iStock. Get higher quality …"
+    },
+    {
+      "title": "\"The Lesbian Experience\" Dani Daniels & Elexis Monroe - A Mother ...",
+      "url": "https://www.imdb.com/title/tt27864115/videogallery/",
+      "snippet": "Dani Daniels & Elexis Monroe - A Mother Daughter Thing: With Dani Daniels, Elexis Monroe."
+    }
+  ]
+}

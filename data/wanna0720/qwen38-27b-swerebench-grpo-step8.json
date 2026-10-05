@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wanna0720/qwen38-27b-swerebench-grpo-step8",
+  "slug": "wanna0720-qwen38-27b-swerebench-grpo-step8",
+  "author": "wanna0720",
+  "url": "https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8",
+  "created_at": "2026-10-04T14:18:31.000Z",
+  "updated_at": "2026-10-05T01:12:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "grpo",
+    "coding",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35269451816,
+  "storage_human": "35.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen38-27b-swerebench-grpo-step8-training-state - Hugging Face",
+      "url": "https://huggingface.co/wanna0720/qwen38-27b-swerebench-grpo-step8-training-state",
+      "snippet": "Qwen3.8-27B SWE-rebench GRPO: Step 8 training state This repository preserves the completed Step 8 checkpoint from a full-parameter GRPO run using a 1,586-task SWE-rebench v2 Filtered corpus. It is a Miles/Megatron distributed checkpoint, including model and optimizer state, metadata, and the dataset cursor. It is intended for research recovery and continued training. The model weights for ..."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "GitHub - syv-ai/HyperQwen: Serve large Qwen models fast on the GPUs you ...",
+      "url": "https://github.com/syv-ai/HyperQwen",
+      "snippet": "Serve large Qwen models fast on the GPUs you actually own. Qwen3.8-27B on a single 24 GB card with vLLM: 127 tok/s single-user (381 when the answer quotes the prompt), ~1,035 tok/s at 64 concurrent, 150k-262k context. vLLM patches, requant pipeline, benchmarks. - syv-ai/HyperQwen"
+    },
+    {
+      "title": "Qwen3.8-27B Benchmarks: Official and Independent Results",
+      "url": "https://qubrid.com/blog/qwen38-27b-benchmarks-official-and-independent-results",
+      "snippet": "Qwen3.8-27B scores 52 on the Artificial Analysis Intelligence Index at maximum reasoning effort and 61.7 on SWE-bench Pro per Qwen&#x27;s own evaluation. It leads its comparison set on agentic coding and computer-use benchmarks while trailing frontier models on Humanity&#x27;s Last Exam and GPQA Diamond."
+    }
+  ]
+}

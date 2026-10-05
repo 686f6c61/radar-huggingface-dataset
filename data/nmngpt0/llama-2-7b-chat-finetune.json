@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "nmngpt0/Llama-2-7b-chat-finetune",
+  "slug": "nmngpt0-llama-2-7b-chat-finetune",
+  "author": "nmngpt0",
+  "url": "https://huggingface.co/nmngpt0/Llama-2-7b-chat-finetune",
+  "created_at": "2026-10-04T20:19:11.000Z",
+  "updated_at": "2026-10-04T20:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13476864944,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

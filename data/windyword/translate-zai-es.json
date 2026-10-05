@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "WindyWord/translate-zai-es",
+  "slug": "windyword-translate-zai-es",
+  "author": "WindyWord",
+  "url": "https://huggingface.co/WindyWord/translate-zai-es",
+  "created_at": "2026-04-21T14:59:01.000Z",
+  "updated_at": "2026-10-05T00:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zai",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "isthmus-zapotec",
+    "spanish",
+    "zai",
+    "es",
+    "base_model:Helsinki-NLP/opus-mt-zai-es",
+    "base_model:finetune:Helsinki-NLP/opus-mt-zai-es",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 348425077,
+  "storage_human": "348 MB",
+  "base_model": "Helsinki-NLP/opus-mt-zai-es",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LoveLogicAI/piper-en_US-amy-medium-int8",
+  "slug": "lovelogicai-piper-en_us-amy-medium-int8",
+  "author": "LoveLogicAI",
+  "url": "https://huggingface.co/LoveLogicAI/piper-en_US-amy-medium-int8",
+  "created_at": "2026-10-04T23:38:14.000Z",
+  "updated_at": "2026-10-04T23:38:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "piper",
+  "languages": [],
+  "tags": [
+    "piper",
+    "onnx",
+    "tts",
+    "int8-quantization",
+    "experimental",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18681544,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create your server | Aternos | Free Minecraft Server",
+      "url": "https://aternos.org/signup",
+      "snippet": "Create your own free Minecraft server with Aternos, customize it with mods and plugins, and play with friends. Sign up now!"
+    },
+    {
+      "title": "Aternos | เซิร์ฟเวอร์ Minecraft. ฟรี. ถาวร.",
+      "url": "https://aternos.org/:th/",
+      "snippet": "The official server software with full modding support for your own Hytale server."
+    },
+    {
+      "title": "Auto-Start Server system - Aternos Community",
+      "url": "https://board.aternos.org/thread/78303-auto-start-server-system/",
+      "snippet": "Sep 14, 2021 · Hi Aternos Team :aternos: I have an idea for a auto starting system for the aternos servers the idea is making an auto …"
+    },
+    {
+      "title": "Any way to turn off afk timeout - General - Aternos Community",
+      "url": "https://board.aternos.org/thread/16173-any-way-to-turn-off-afk-timeout/",
+      "snippet": "Apr 14, 2018 · Hello, I was going AFK on my server and I got kicked for being AFK, I was wondering if there was a way to turn off this …"
+    },
+    {
+      "title": "Delete a server – Aternos | Help Center",
+      "url": "https://support.aternos.org/hc/en-us/articles/5543392831261-Delete-a-server",
+      "snippet": "Delete a server If you no longer need your Aternos Minecraft server, you can delete it easily with just a few clicks. This article will …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "guillaume-cassez/cityscape-blob-loss-kofler",
+  "slug": "guillaume-cassez-cityscape-blob-loss-kofler",
+  "author": "guillaume-cassez",
+  "url": "https://huggingface.co/guillaume-cassez/cityscape-blob-loss-kofler",
+  "created_at": "2026-10-04T23:00:51.000Z",
+  "updated_at": "2026-10-04T23:28:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "semantic-segmentation",
+    "cityscapes",
+    "convnext-v2",
+    "upernet",
+    "blob-loss",
+    "kofler-2023",
+    "instance-balanced-loss",
+    "negative-result",
+    "autonomous-driving",
+    "image-segmentation",
+    "en",
+    "dataset:cityscapes",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2931595800,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guillaume (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Guillaume_(pr%C3%A9nom)",
+      "snippet": "Guillaume est un prénom masculin français d'origine germanique. Il procède de will qui signifie « volonté » et de helm qui signifie « …"
+    },
+    {
+      "title": "Prénom Guillaume (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/guillaume/prenom-7419",
+      "snippet": "Quelle est la signification du prénom Guillaume ? Le prénom Guillaume est dérivé de Willhelm qui est composé des termes will et …"
+    },
+    {
+      "title": "Prénom Guillaume : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/guillaume-41922",
+      "snippet": "Caractère du prénom Guillaume Personnalité du prénom Guillaume Guillaume dénote une personne charmante. En bref, il s'agit …"
+    },
+    {
+      "title": "Guillaume — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Guillaume",
+      "snippet": "Toto Guillaume, né Guillaume Toto Bessawa Nkaké, guitariste, auteur-compositeur, arrangeur ou producteur camerounais ; François …"
+    },
+    {
+      "title": "Guillaume (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guillaume_(given_name)",
+      "snippet": "Guillaume is the French equivalent of William, which is of old Germanic origin from wille + helm (resolute protector). [1] It is an Oïl …"
+    }
+  ]
+}

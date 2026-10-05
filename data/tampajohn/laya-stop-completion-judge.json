@@ -9,11 +9,11 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "laya",
   "languages": [],
   "tags": [
-    "safetensors",
     "laya",
+    "safetensors",
     "system-1",
     "decision-model",
     "code-agents",

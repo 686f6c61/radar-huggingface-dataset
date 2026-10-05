@@ -26,12 +26,12 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 202,
+  "likes": 215,
   "downloads_30d": 946,
-  "trending_score": 178,
+  "trending_score": 186,
   "parameters": 146311635584,
   "parameters_human": "146.31B",
-  "storage_bytes": 292765481402,
+  "storage_bytes": 292765700815,
   "storage_human": "292.8 GB",
   "base_model": "dealignai/GLM-5.3-UNCENSORED-FP8",
   "formats": [

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-CUDA-AXQ-NVFP4-MTP",
+  "slug": "automatosx-ax-nemotron-3-5-lightning-30b-a3b-cuda-axq-nvfp4-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-CUDA-AXQ-NVFP4-MTP",
+  "created_at": "2026-10-04T09:23:48.000Z",
+  "updated_at": "2026-10-04T22:45:23.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "axquant",
+    "cuda",
+    "nvfp4",
+    "mtp",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32913266240,
+  "parameters_human": "32.91B",
+  "storage_bytes": 23619719468,
+  "storage_human": "23.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Today's top content from hundreds of thousands of Reddit communities."
+    },
+    {
+      "title": "GitHub - clash-verge-rev/clash-verge-rev: A modern GUI client based …",
+      "url": "https://github.com/Clash-Verge-rev/clash-verge-rev",
+      "snippet": "A modern GUI client based on Tauri, designed to run in Windows, macOS and Linux for tailored proxy experience - clash-verge …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    }
+  ]
+}

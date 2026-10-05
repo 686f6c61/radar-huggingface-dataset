@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lnypuuuu/wan2e",
+  "slug": "lnypuuuu-wan2e",
+  "author": "Lnypuuuu",
+  "url": "https://huggingface.co/Lnypuuuu/wan2e",
+  "created_at": "2026-10-04T23:02:12.000Z",
+  "updated_at": "2026-10-04T23:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 42471385982,
+  "storage_human": "42.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=Lnypuuuu/Wan2wan2",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "Wann AI - Professional Consistent AI Video & Image Generator - Wann",
+      "url": "https://wann.ai/",
+      "snippet": "Create high-quality, flicker-free AI videos and consistent images with Wann AI. The professional toolkit for stability and precision. Try it for free today!"
+    },
+    {
+      "title": "Wan-AI/Wan2.2-Animate-14B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan AI: Leading AI Video Generation Model",
+      "url": "https://wan.video/",
+      "snippet": "Wan is an AI creative drawing platform by Alibaba, offering text-to-image, image editing, text-to-video, and image-to-video capabilities for AI-powered artistic creation."
+    },
+    {
+      "title": "Wan2.2 14B Fast - a Hugging Face Space by zerogpu-aoti",
+      "url": "https://huggingface.co/spaces/zerogpu-aoti/wan2-2-fp8da-aoti-faster",
+      "snippet": "Upload a picture and write a prompt describing the motion you want, and the app will generate a short animated video that brings the image to life. You can adjust the video length, inference steps,..."
+    }
+  ]
+}

@@ -9,13 +9,13 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
-  "library": null,
+  "library": "laya",
   "languages": [
     "multilingual"
   ],
   "tags": [
-    "safetensors",
     "laya",
+    "safetensors",
     "system-one",
     "news",
     "classification",

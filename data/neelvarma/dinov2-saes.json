@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "neelvarma/dinov2-saes",
+  "slug": "neelvarma-dinov2-saes",
+  "author": "neelvarma",
+  "url": "https://huggingface.co/neelvarma/dinov2-saes",
+  "created_at": "2026-10-04T21:14:13.000Z",
+  "updated_at": "2026-10-04T21:14:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sparse-autoencoder",
+    "dinov2",
+    "mechanistic-interpretability",
+    "pytorch",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 399549523,
+  "storage_human": "400 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DINOv2 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main//model_doc/dinov2",
+      "snippet": "DINOv2 DINOv2 is a vision foundation model that uses ViT as a feature extractor for multiple downstream tasks like image classification and depth estimation. It focuses on stabilizing and accelerating training through techniques like a faster memory-efficient attention, sequence packing, improved stochastic depth, Fully Sharded Data Parallel (FSDP), and model distillation. You can find all the ..."
+    },
+    {
+      "title": "DINO, DINOv2 and DINOv3, Explained for AI Engineers",
+      "url": "https://www.mlguerrilla.com/models/dino",
+      "snippet": "The name stands for self-distillation with no labels, after the training method. The models are used mostly as a backbone, which is the part of a vision system that turns pixels into features before anything task-specific happens. Meta has released three generations, DINO in 2021, DINOv2 in 2023 and DINOv3 in August 2025. This page covers what the features give you, how the training works with ..."
+    },
+    {
+      "title": "DINOv2 by Meta AI",
+      "url": "https://dinov2.metademolab.com/?from=aiug.cn",
+      "snippet": "AI Computer Vision Research DINOv2: A Self-supervised Vision Transformer Model A family of foundation models producing universal features suitable for image-level visual tasks (image classification, instance retrieval, video understanding) as well as pixel-level visual tasks (depth estimation, semantic segmentation)."
+    },
+    {
+      "title": "GitHub - facebookresearch/dinov2: PyTorch code and models for the ...",
+      "url": "https://github.com/facebookresearch/dinov2",
+      "snippet": "Meta AI Research, FAIR Maxime Oquab, Timothée Darcet, Théo Moutakanni, Huy V. Vo, Marc Szafraniec, Vasil Khalidov, Patrick Labatut, Armand Joulin, Piotr Bojanowski [Paper #1] Paper #2] [Blog] [Demo] [BibTeX] PyTorch implementation and pretrained models for DINOv2. For details, see the papers: DINOv2: Learning Robust Visual Features without Supervision and Vision Transformers Need Registers ..."
+    },
+    {
+      "title": "DINOv2 Download - Vision AI Model for Image Tasks",
+      "url": "https://dinov2.com/",
+      "snippet": "Download the DINOv2 source archive and review architecture, setup, compatibility, model sizes, safety, troubleshooting and 20 practical FAQs."
+    }
+  ]
+}

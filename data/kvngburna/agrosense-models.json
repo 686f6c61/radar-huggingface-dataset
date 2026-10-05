@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kvngburna/agrosense-models",
+  "slug": "kvngburna-agrosense-models",
+  "author": "kvngburna",
+  "url": "https://huggingface.co/kvngburna/agrosense-models",
+  "created_at": "2026-10-04T19:25:48.000Z",
+  "updated_at": "2026-10-04T19:28:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52018828,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AgroSense-AI/models at main · Eshant1008/AgroSense-AI · GitHub",
+      "url": "https://github.com/Eshant1008/AgroSense-AI/tree/main/models",
+      "snippet": "AgroSense is a full-stack AI-powered agricultural intelligence platform that detects crop diseases from leaf images using deep learning and delivers confidence scores, treatment recommendations, risk analysis, and sustainability-focused crop reports. - AgroSense-AI/models at main · Eshant1008/AgroSense-AI"
+    },
+    {
+      "title": "GitHub - Ranjana-01-coder/AgroSense: AI-powered smart agriculture ...",
+      "url": "https://github.com/Ranjana-01-coder/AgroSense",
+      "snippet": "AI-powered smart agriculture platform for crop recommendation, disease detection, soil analysis, weather forecasting, and yield prediction. - Ranjana-01-coder/AgroSense"
+    },
+    {
+      "title": "AgroSense | Smart Farming & Precision Agriculture Platform",
+      "url": "https://kvbgreenenergies.com/products/agrosense.html",
+      "snippet": "AgroSense is an advanced precision agriculture platform designed to convert conventional farming into a data-driven, automated, and intelligent system. The platform continuously acquires and processes multi-layer soil data, environmental conditions, and crop requirements, enabling automated irrigation, intelligent fertigation, and predictive ..."
+    },
+    {
+      "title": "AgroSense - Smart Agriculture System",
+      "url": "https://diyamunshi.github.io/projects/agrosense.html",
+      "snippet": "Project Overview AgroSense combines machine learning and web technologies to provide data-driven insights that help improve agricultural productivity and sustainability. The system focuses on early disease identification and optimized water usage, enabling informed decision-making for crop health management."
+    },
+    {
+      "title": "GitHub - Meghana-P15/AgroSense_AI | P Meghana - LinkedIn",
+      "url": "https://www.linkedin.com/posts/p-meghana_github-meghana-p15agrosenseai-activity-7512001837978247169-g_cD",
+      "snippet": "Have you ever thought about what happens after a Machine Learning model gives a prediction? 🤔 Where does it go? How is it stored? How does the frontend communicate with the model? And how does ..."
+    }
+  ]
+}

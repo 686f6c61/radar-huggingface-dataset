@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-final",
+  "slug": "yuxuanw8-qwen3b-rlcr-hotpot-racpo-v1-final",
+  "author": "yuxuanw8",
+  "url": "https://huggingface.co/yuxuanw8/qwen3b-rlcr-hotpot-racpo-v1-final",
+  "created_at": "2026-10-04T20:49:45.000Z",
+  "updated_at": "2026-10-04T20:51:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355226095,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جيهان الفيلي - Facebook",
+      "url": "https://www.facebook.com/gege.faily/",
+      "snippet": "‎ جيهان الفيلي‎. 34,367 followers · 7,478 talking about this. ‎ TikTok : gehan.alfaily سناب جات gehan.alfaily‎"
+    },
+    {
+      "title": "‎جيهان الفيلي‎ (@gege.alfaily) • Instagram photos and videos",
+      "url": "https://www.instagram.com/gege.alfaily/",
+      "snippet": "53K Followers, 2 Following, 78 Posts - ‎جيهان الفيلي (@gege.alfaily)‎ on Instagram: \"‎لا تغرك ملامحنا التعبانه ترانا بشده سباع نجيبك من حضن امك 🦅🇮🇶‎\""
+    },
+    {
+      "title": "‏جيهان الفيلي (@gehan.alfaily) - TikTok",
+      "url": "https://www.tiktok.com/@gehan.alfaily",
+      "snippet": "‏جيهان الفيلي 🦅🇮🇶 (@gehan.alfaily) على TikTok |‏10.3M من تسجيلات الإعجاب.‏846.4K من المتابعين.المال قادم المنزل الجديد قادم السيارة الجديدة قادمة شريك الحياة قادم الصحة الجيدة قادمة …"
+    },
+    {
+      "title": "‎جيهان الفيلي‎ (@gehan_go1) • Instagram photos and videos",
+      "url": "https://www.instagram.com/gehan_go1/",
+      "snippet": "2,576 Followers, 2 Following, 28 Posts - ‎جيهان الفيلي (@gehan_go1)‎ on Instagram: \"‎جيهان الفيلي:- قوية جداً لا احد يستطيع كسري‎\""
+    },
+    {
+      "title": "‏جيهان الفيلي (@jahin_fali) | TikTok",
+      "url": "https://www.tiktok.com/@jahin_fali",
+      "snippet": "جيهان الفيلي (@jahin_fali) على TikTok |‏810 من تسجيلات الإعجاب.‏117 من المتابعين.No bio yet.شاهد أحدث فيديو من جيهان الفيلي (@jahin_fali)."
+    }
+  ]
+}

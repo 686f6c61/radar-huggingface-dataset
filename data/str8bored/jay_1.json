@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "str8bored/JAY_1",
+  "slug": "str8bored-jay_1",
+  "author": "str8bored",
+  "url": "https://huggingface.co/str8bored/JAY_1",
+  "created_at": "2026-10-04T23:37:33.000Z",
+  "updated_at": "2026-10-04T23:46:59.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "music",
+    "text2audio",
+    "acestep",
+    "acestep-v1.5",
+    "male-vocals",
+    "song-structure",
+    "text-to-audio",
+    "base_model:ACE-Step/Ace-Step1.5",
+    "base_model:adapter:ACE-Step/Ace-Step1.5",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44089992,
+  "storage_human": "44 MB",
+  "base_model": "ACE-Step/Ace-Step1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What does file:///android_asset/www/index.html mean?",
+      "url": "https://stackoverflow.com/questions/11961975/what-does-file-android-asset-www-index-html-mean",
+      "snippet": "Jul 10, 2017 · I want to know what does file:/// mean while loading a html file from the assets folder in android Is it an absolute path …"
+    },
+    {
+      "title": "有哪个大佬可以解释一下ippa？ - 知乎",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "ippa 是日本的知识产权缩写,所以你看到右上角的IPPA加一串数字，实际就是 知识产权号。多用于近现代黑色爱情动作电影，日本拍 …"
+    },
+    {
+      "title": "browser - How do we download a blob url video - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42901942/how-do-we-download-a-blob-url-video",
+      "snippet": "The community reviewed whether to reopen this question 3 months ago and left it closed: Not suitable for this site This question does …"
+    },
+    {
+      "title": "如何评价 Anthropic 发布的 Claude Fable 5？ - 知乎",
+      "url": "https://www.zhihu.com/question/2047851398734394746",
+      "snippet": "2026年6月9日 Anthropic 发布了 Claude Fable 5，定位为 Mythos 级模型的公众安全版，官方称在几乎所有基…"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    }
+  ]
+}

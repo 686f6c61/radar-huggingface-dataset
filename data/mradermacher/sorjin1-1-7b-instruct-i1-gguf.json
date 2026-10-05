@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sorjin1.1-7B-Instruct-i1-GGUF",
+  "slug": "mradermacher-sorjin1-1-7b-instruct-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sorjin1.1-7B-Instruct-i1-GGUF",
+  "created_at": "2026-10-04T21:53:44.000Z",
+  "updated_at": "2026-10-05T00:40:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ku",
+    "kmr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "kurdish",
+    "kurmanji",
+    "instruct",
+    "lora",
+    "qwen2.5",
+    "ku",
+    "kmr",
+    "dataset:muzaffercky/kurdish-kurmanji-theses",
+    "base_model:muzaffercky/Sorjin1.1-7B-Instruct",
+    "base_model:adapter:muzaffercky/Sorjin1.1-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 88970485984,
+  "storage_human": "89.0 GB",
+  "base_model": "muzaffercky/Sorjin1.1-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jord627 - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=jord627",
+      "snippet": "Jord627 photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use …"
+    },
+    {
+      "title": "Jord627 | Pictures | Scrolller NSFW",
+      "url": "https://scrolller.com/r/Jord627_",
+      "snippet": "View 121 NSFW pictures and enjoy Jord627 with the endless random gallery on Scrolller.com. Go on to discover millions of …"
+    },
+    {
+      "title": "Jord627 / Exclusive Leaked Nude OnlyFans",
+      "url": "https://leakgallery.com/jord627",
+      "snippet": "Jord627 leaked OnlyFans content: 331 photos and videos, 105,820 views. Free, no signup, updated every day."
+    },
+    {
+      "title": "Jordan McDonald / jord627_ Nude Leaks OnlyFans - Celebsnake",
+      "url": "https://celebsnake.com/creator/jordan-mcdonald",
+      "snippet": "View Jordan McDonald / jord627_ nude leaked OnlyFans photos and videos. 6 posts, 24 photos, 9 videos. Free leaks archive."
+    },
+    {
+      "title": "FULL VIDEO: Jord627_ Nude Onlyfans TikTok Star! - The Porn Leak ...",
+      "url": "https://fapfappy.com/2023/09/28/full-video-jord627_-nude-onlyfans-tiktok-star-fapfappy/",
+      "snippet": "Sep 28, 2023 · Tik Tok star Jordan McDonald (Jord627_) sex tape and nudes photos leaks online from her onlyfans, patreon, private …"
+    }
+  ]
+}

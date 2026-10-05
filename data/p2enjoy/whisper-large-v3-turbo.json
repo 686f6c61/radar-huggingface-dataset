@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "P2Enjoy/whisper-large-v3-turbo",
+  "slug": "p2enjoy-whisper-large-v3-turbo",
+  "author": "P2Enjoy",
+  "url": "https://huggingface.co/P2Enjoy/whisper-large-v3-turbo",
+  "created_at": "2026-10-04T22:15:26.000Z",
+  "updated_at": "2026-10-04T22:16:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808878080,
+  "parameters_human": "808.9M",
+  "storage_bytes": 1617824864,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

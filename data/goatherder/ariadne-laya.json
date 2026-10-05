@@ -9,7 +9,7 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
-  "library": null,
+  "library": "laya",
   "languages": [],
   "tags": [
     "laya",

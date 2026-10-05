@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
+  "slug": "local-inference-lab-qwen3-8-flash-next-nvfp4-mxfp8-csf-qad",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
+  "created_at": "2026-10-04T02:41:06.000Z",
+  "updated_at": "2026-10-05T00:23:39.000Z",
+  "license": "lil-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "quantized",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "quantization-aware-distillation",
+    "lossless-compression",
+    "csf",
+    "lil-license-1.0",
+    "image-text-to-text",
+    "base_model:local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:quantized:local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102854773008,
+  "storage_human": "102.9 GB",
+  "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agence de communication digitale pour entreprises locales | local.fr",
+      "url": "https://www.local.fr/",
+      "snippet": "local.fr est une agence de communication digitale, spécialisée dans la création de sites internet. Nous aidons votre entreprise à …"
+    },
+    {
+      "title": "Local commercial, bureaux, boulangerie, restaurant Rennes (35000 ...",
+      "url": "https://www.leboncoin.fr/cl/bureaux_commerces/cp_rennes_35000",
+      "snippet": "Toutes nos annonces gratuites Local commercial, bureaux, boulangerie, restaurant Rennes (35000). Consultez nos annonces de …"
+    },
+    {
+      "title": "Install Local - Local",
+      "url": "https://localwp.com/help-docs/getting-started/installing-local/",
+      "snippet": "Installing Local should be easy, but if you’re having trouble, this is guide should help! You can get the latest version of Local by …"
+    },
+    {
+      "title": "31 locaux commerciaux et boutiques - SeLoger Bureaux & Commerces",
+      "url": "https://www.seloger-bureaux-commerces.com/location/boutique/bretagne/ille-et-vilaine/rennes-35000",
+      "snippet": "Découvrez toutes nos annonces immobilières de location de locaux commerciaux et boutiques à Rennes (35000) à un prix attractif …"
+    },
+    {
+      "title": "23 annonces Locaux commerciaux à louer Rennes 35000 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/location/fonds-de-commerce/local-commercial/bretagne/rennes-35000/ad08fr14157?msockid=372aaccd023069961e53bb2403cc683d",
+      "snippet": "Conforme aux normes ERP et PMR, ce local est doté d'un beau linéaire de vitrine parfait pour attirer l'attention de vos futurs clients. …"
+    }
+  ]
+}

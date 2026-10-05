@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vipenl26/anlp-assignment-2-part2-sophia",
+  "slug": "vipenl26-anlp-assignment-2-part2-sophia",
+  "author": "vipenl26",
+  "url": "https://huggingface.co/vipenl26/anlp-assignment-2-part2-sophia",
+  "created_at": "2026-10-04T23:48:47.000Z",
+  "updated_at": "2026-10-04T23:49:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202480026,
+  "storage_human": "202 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Action Movies | FULL Length Free Action Movies | Intense ... - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLkbmHAthH_ZC_0n-W-LOX7UNjTeituGeK",
+      "snippet": "Action Movies | FULL Length Free Action Movies | Intense Fights and Drama by Free Time Movies • Playlist • 345 videos • 74,269 …"
+    },
+    {
+      "title": "Full Action Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLfRCZ3PuccvBQv71hWi334-zRJekjSlCq",
+      "snippet": "Explore an incredible collection of full action movies, free Hollywood action films, and a variety of full action movies in English."
+    },
+    {
+      "title": "Free Action & Thriller Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLXNY08O_Iy2nGic0Z_vkSn0E4iTDUh7d-",
+      "snippet": "Watch the best Action and Thriller Movies for free!"
+    },
+    {
+      "title": "4,000 Best Free Movies on YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL30RAv-0lkxHdTcoGGgx5L6eXIHnnrEHC",
+      "snippet": "Over 4,000 of the Best YouTube Movies that are legally free with ads. Or no ads if you have YouTube Premium."
+    },
+    {
+      "title": "Full Action Movies | Watch Free Full-Length Films - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLTRsH1ARLU9_n2Ym1K7NIVy620RSvm4aD",
+      "snippet": "Non-stop thrills, explosive sequences, and high-energy stunts - this playlist delivers full action movies you can watch for free."
+    }
+  ]
+}

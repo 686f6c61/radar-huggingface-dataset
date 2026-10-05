@@ -4,8 +4,8 @@
   "slug": "sddsasd-myawesomemodel-testrepo",
   "author": "sddsasd",
   "url": "https://huggingface.co/sddsasd/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-30T15:14:16.000Z",
-  "updated_at": "2026-09-30T15:14:36.000Z",
+  "created_at": "2026-10-04T22:40:39.000Z",
+  "updated_at": "2026-10-04T22:40:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -21,7 +21,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 205,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-04T02:39:43.318Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

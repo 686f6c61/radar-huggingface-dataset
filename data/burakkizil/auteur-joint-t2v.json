@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "burakkizil/AUTEUR-Joint-T2V",
+  "slug": "burakkizil-auteur-joint-t2v",
+  "author": "burakkizil",
+  "url": "https://huggingface.co/burakkizil/AUTEUR-Joint-T2V",
+  "created_at": "2026-10-04T19:45:09.000Z",
+  "updated_at": "2026-10-04T20:02:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "lora",
+    "transformers",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17242001849,
+  "storage_human": "17.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "burakkizil (Burak Kizil) - Hugging Face",
+      "url": "https://huggingface.co/datasets/burakkizil/",
+      "snippet": "AI, Multimodality, Video Generation Recent Activity updated a datasetabout 1 hour ago burakkizil/Auteur-Dataset published a datasetabout 1 hour ago burakkizil/Auteur-Dataset liked a datasetabout 3 hours ago burakkizil/LAMP View all activity"
+    },
+    {
+      "title": "burakkizil (Burak Kizil) - Hugging Face",
+      "url": "https://huggingface.co/burakkizil/models",
+      "snippet": "AI, Multimodality, Video Generation updated a model about 2 hours ago"
+    },
+    {
+      "title": "GitHub - zhenye234/Talker-T2AV: ACM MM 2026 Talker-T2AV Joint Talking ...",
+      "url": "https://github.com/zhenye234/Talker-T2AV",
+      "snippet": "🎤 Unified talking audio-video generation with a single autoregressive diffusion model supporting T2AV, A2V and V2A. 📦 Open-source dataset with over 1 million high-quality talking audio-video samples, carefully curated, cleaned and organized for large-scale training. 🤗 Fully open-sourced model checkpoints, training pipeline and dataset. Talker-T2AV decouples joint talking audio-video ..."
+    },
+    {
+      "title": "T2V Model Specifications | Vchitect/VBench | DeepWiki",
+      "url": "https://deepwiki.com/Vchitect/VBench/6.3-t2v-model-specifications",
+      "snippet": "T2V Model Specifications Relevant source files Purpose and Scope This page documents all text-to-video (T2V) models evaluated in the VBench benchmark, including their technical specifications, generation parameters, and configuration details. The specifications listed here correspond to the videos available in the sampled video dataset."
+    },
+    {
+      "title": "GitHub - VideoVerses/VideoTuna: Let&#x27;s finetune video generation models!",
+      "url": "https://github.com/VideoVerses/VideoTuna",
+      "snippet": "🤗🤗🤗 Videotuna is a useful codebase for text-to-video applications. 🌟 VideoTuna is the first repo that integrates multiple AI video generation models including text-to-video (T2V), image-to-video (I2V), text-to-image (T2I), and video-to-video (V2V) generation for model inference and finetuning (to the best of our knowledge). 🌟 VideoTuna is the first repo that provides ..."
+    }
+  ]
+}

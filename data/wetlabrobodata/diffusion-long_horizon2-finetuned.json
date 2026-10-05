@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-long_horizon2-finetuned",
+  "slug": "wetlabrobodata-diffusion-long_horizon2-finetuned",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-long_horizon2-finetuned",
+  "created_at": "2026-10-04T19:55:23.000Z",
+  "updated_at": "2026-10-04T20:19:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-long_horizon2",
+    "base_model:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "base_model:finetune:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264873854,
+  "parameters_human": "264.9M",
+  "storage_bytes": 1059530088,
+  "storage_human": "1.1 GB",
+  "base_model": "WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Le meilleur traducteur au monde - DeepL Translate",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Clear URL Enter a URL Input must be a non-empty, well-formed web URL Translate Translating Send feedback Image translation"
+    }
+  ]
+}

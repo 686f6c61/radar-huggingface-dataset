@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "id": "choyiny/yev0-4b",
+  "slug": "choyiny-yev0-4b",
+  "author": "choyiny",
+  "url": "https://huggingface.co/choyiny/yev0-4b",
+  "created_at": "2026-10-04T19:26:49.000Z",
+  "updated_at": "2026-10-04T19:28:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "system-one",
+    "decision-making",
+    "classification",
+    "calibration",
+    "lora",
+    "peft",
+    "qwen3.5",
+    "decidebench",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8951054013,
+  "storage_human": "9.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v1.0 test (400 items, with worked examples)",
+      "metric": "Accuracy",
+      "value": 94.5
+    },
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v1.0 test (400 items, with worked examples)",
+      "metric": "Pair accuracy",
+      "value": 89
+    },
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v1.0 test (400 items, with worked examples)",
+      "metric": "ECE (15 bins)",
+      "value": 0.06
+    },
+    {
+      "task": "Decision making (with worked examples)",
+      "dataset": "DecideBench v1.0 test (400 items, with worked examples)",
+      "metric": "Brier score",
+      "value": 0.088
+    },
+    {
+      "task": "Decision making (zero-shot)",
+      "dataset": "DecideBench v1.0 test (400 items, zero-shot)",
+      "metric": "Accuracy",
+      "value": 95
+    },
+    {
+      "task": "Decision making (zero-shot)",
+      "dataset": "DecideBench v1.0 test (400 items, zero-shot)",
+      "metric": "Pair accuracy",
+      "value": 90
+    },
+    {
+      "task": "Decision making (zero-shot)",
+      "dataset": "DecideBench v1.0 test (400 items, zero-shot)",
+      "metric": "ECE (15 bins)",
+      "value": 0.062
+    },
+    {
+      "task": "Decision making (zero-shot)",
+      "dataset": "DecideBench v1.0 test (400 items, zero-shot)",
+      "metric": "Brier score",
+      "value": 0.103
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - choyiny/jev-vs-tev: Jev (closed source) vs Tev (open source)",
+      "url": "https://github.com/choyiny/jev-vs-tev",
+      "snippet": "JEV vs TEV Jev is TypeSafe&#x27;s closed-source decision model. Together AI trained a Jev-style model for $17, Tev1-4B-experimental (announcement), but published no accuracy numbers. We tested it: same 400 new tasks for both models, with two frontier LLMs alongside for reference."
+    },
+    {
+      "title": "#ai #llm #machinelearning #aiagents #benchmarking # ... - LinkedIn",
+      "url": "https://www.linkedin.com/posts/choyiny_ai-llm-machinelearning-activity-7511789673074073600-N7cr",
+      "snippet": "Clef lands just behind imajev-4b (95.0%, $29 self-hosted) as the most accurate open decision model, but costs four times as much through the API."
+    },
+    {
+      "title": "Small Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/small",
+      "snippet": "Small open source models from 4B to 40B parameters. Fast and affordable models with limited capabilities and low latency."
+    },
+    {
+      "title": "FutureMa/Eva-4B · Hugging Face",
+      "url": "https://huggingface.co/FutureMa/Eva-4B",
+      "snippet": "Intended Use Eva-4B is intended for research and tooling around corporate disclosure quality and evasiveness in earnings call Q&A. Task Definition Given an earnings call Question (analyst) and Answer (management), the model predicts one of: direct: answers the core question with specific information"
+    },
+    {
+      "title": "Cho Yin Yong choyiny - GitHub",
+      "url": "https://github.com/choyiny",
+      "snippet": "AI Engineering Leader, University Lecturer, and Entrepreneur at Heart - choyiny"
+    }
+  ]
+}

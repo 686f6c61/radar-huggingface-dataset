@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Glaceon",
+  "slug": "ryanham1lton-glaceon",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Glaceon",
+  "created_at": "2026-10-04T19:04:10.000Z",
+  "updated_at": "2026-10-04T19:06:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117572233,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton/Glaceon · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/Glaceon",
+      "snippet": "Ryanham1lton / Glaceon Like 0 License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "glaceon - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1957786790330180865",
+      "snippet": "Generate stunning anime, cute, pokemon, glaceon, eeveelution anime art with the &#x27;glaceon &#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Glaceon - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/364a20f0c648fdeb2fb941c1c1d57613",
+      "snippet": "Explore Glaceon model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Glaceon - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1745362069718677091",
+      "snippet": "Generate stunning anime art with the &#x27;Glaceon&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

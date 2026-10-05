@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "theinferenceloop/vektor-guard-v3-interim",
+  "slug": "theinferenceloop-vektor-guard-v3-interim",
+  "author": "theinferenceloop",
+  "url": "https://huggingface.co/theinferenceloop/vektor-guard-v3-interim",
+  "created_at": "2026-10-05T00:23:01.000Z",
+  "updated_at": "2026-10-05T00:30:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "prompt-injection",
+    "jailbreak-detection",
+    "llm-security",
+    "guardrails",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 395836421,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583363940,
+  "storage_human": "1.6 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt-injection / jailbreak classification (5-class)",
+      "dataset": null,
+      "metric": "Macro F1 (held-out test)",
+      "value": 0.9802
+    },
+    {
+      "task": "Prompt-injection / jailbreak classification (5-class)",
+      "dataset": null,
+      "metric": "Accuracy (held-out test)",
+      "value": 0.9949
+    }
+  ],
+  "sources": [
+    {
+      "title": "LeChairman (@lechairmanouihustle) • Instagram photos and videos",
+      "url": "https://www.instagram.com/lechairmanouihustle/",
+      "snippet": "54K Followers, 433 Following, 2 Posts - LeChairman (@lechairmanouihustle) on Instagram: \"🎬 Host @ouihustle\""
+    },
+    {
+      "title": "#242 LeChairman & Aya Nakamura parlent Industrie, Famille ...",
+      "url": "https://www.youtube.com/watch?v=k7oB_IDM2kc",
+      "snippet": "Nov 12, 2025 · #242 LeChairman & Aya Nakamura Talk Industry, Family, Entrepreneurship, Social Issues, Legacy, Au... /!\\ English …"
+    },
+    {
+      "title": "An edge-based performance comparative analysis for a biomedical ...",
+      "url": "https://riunet.upv.es/bitstreams/8d0e5d5a-faa9-40a1-bb5f-3a8a2f7e8b5b/download",
+      "snippet": "The convergence of affordable, compact edge hardware and optimized AI models enables a ... The interim confusion analysis shows the most frequent ..."
+    },
+    {
+      "title": "Oui Hustle (@ouihustle) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ouihustle/",
+      "snippet": "35K Followers, 9 Following, 743 Posts - Oui Hustle (@ouihustle) on Instagram: \"Ton émission qui rassemble et motive ! 🎙️Host …"
+    },
+    {
+      "title": "Oui Hustle - YouTube",
+      "url": "https://www.youtube.com/channel/UCcgvK9S6fAg3TR2k2GFfIQw",
+      "snippet": "#91 LeChairman & Rida parlent Drogues, Police, Justine, 93, Social, Prévention, Politique. Oui Hustle 63K 4y ago"
+    }
+  ]
+}

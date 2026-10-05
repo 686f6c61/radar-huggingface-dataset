@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jdkent/nuextract3-neuro-tables",
+  "slug": "jdkent-nuextract3-neuro-tables",
+  "author": "jdkent",
+  "url": "https://huggingface.co/jdkent/nuextract3-neuro-tables",
+  "created_at": "2026-10-04T23:26:41.000Z",
+  "updated_at": "2026-10-04T23:27:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "neuroimaging",
+    "information-extraction",
+    "table-understanding",
+    "conversational",
+    "dataset:jdkent/neuro-tables",
+    "base_model:numind/NuExtract3",
+    "base_model:finetune:numind/NuExtract3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609247,
+  "storage_human": "9.1 GB",
+  "base_model": "numind/NuExtract3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qmayb – Una Cunumi (Remix) Lyrics - Genius",
+      "url": "https://genius.com/Qmayb-una-cunumi-remix-lyrics",
+      "snippet": "[Letra de \"Una Cunumi (Remix)\" ft. Xvideo Token, Faraón Love Shady & J.Gonzo] [Coro: Qmayb] (d.a.) Una cunumi, una cunumi …"
+    },
+    {
+      "title": "Tyga – Taste Lyrics - Genius",
+      "url": "https://genius.com/Tyga-taste-lyrics",
+      "snippet": "May 16, 2018 · “Taste”, a trap-influenced, upbeat rap song featuring Migos’ member Offset was published on May 16, 2018. The track …"
+    },
+    {
+      "title": "Simply Piano : Learn Piano Fast - App on Amazon Appstore",
+      "url": "https://www.amazon.com/Simply-Piano-Learn-Fast/dp/B0CMCTZPBV",
+      "snippet": "Simply Piano : Learn Piano Fast Simply Piano : Learn Piano Fast by XVideo Effect Video Converter Photography Outfit 3 customer …"
+    },
+    {
+      "title": "xvideo chat for word - App on Amazon Appstore",
+      "url": "https://www.amazon.com/yusuf-bilgic-xvideo-chat-word/dp/B07MXLLTXM",
+      "snippet": "xvideo chat for word xvideo chat for word by yusuf bilgic 2 customer ratings Guidance Suggested Price: $1.00"
+    },
+    {
+      "title": "Image aplatie (problème de ratio avec xvideo / Affichage et cartes ...",
+      "url": "https://forum.ubuntu-fr.org/viewtopic.php?id=470511",
+      "snippet": "Bonjour, À la base, mon fichier xconf.org posait un problème car l'image était décalé et j'ai suivi cette recette. Aujourd'hui, j'ai encore …"
+    }
+  ]
+}

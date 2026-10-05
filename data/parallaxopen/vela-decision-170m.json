@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ParallaxOpen/Vela-Decision-170M",
+  "slug": "parallaxopen-vela-decision-170m",
+  "author": "ParallaxOpen",
+  "url": "https://huggingface.co/ParallaxOpen/Vela-Decision-170M",
+  "created_at": "2026-10-04T19:13:14.000Z",
+  "updated_at": "2026-10-04T19:15:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vela_decision",
+    "feature-extraction",
+    "text-classification",
+    "calibration",
+    "decision-model",
+    "tool-routing",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 170569738,
+  "parameters_human": "170.6M",
+  "storage_bytes": 684404049,
+  "storage_human": "684 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ParallaxOpen/ParallaxOpen · Hugging Face",
+      "url": "https://huggingface.co/ParallaxOpen/ParallaxOpen",
+      "snippet": "ParallaxOpen — Small Language Models A collection of small language models trained from scratch on consumer hardware."
+    },
+    {
+      "title": "Vela AI - GitHub",
+      "url": "https://github.com/vela-org/",
+      "snippet": "Enterprise decision intelligence for complex operations. - Vela AI"
+    },
+    {
+      "title": "openparallax · GitHub",
+      "url": "https://github.com/openparallax",
+      "snippet": "OpenParallax is a reference implementation of the Parallax paradigm, presented in Parallax: Why AI Agents That Think Must Never Act (PDF, arXiv forthcoming). The paper argues that prompt-level guardrails are architecturally insufficient for agents with execution capability — the system that reasons and the system that acts must be structurally separate processes, with an independent security ..."
+    },
+    {
+      "title": "Rx.ai Models — full lineup - qalyx.dev",
+      "url": "https://qalyx.dev/rxai/v2/models",
+      "snippet": "Model details Rx.ai models — skills, specs, and benchmarks. Rx Vela 1 is our in-house reasoning model. Rx Kyro and Rx Veyra are Pro+ tiers for vision and agent work. Rx Elix is the fast everyday tier on every paid plan. Plus 30 popular coding models from leading providers. Built and operated by Qalyx — this page is reference documentation."
+    },
+    {
+      "title": "Vela AI — Enterprise decision intelligence",
+      "url": "https://vela-org.github.io/",
+      "snippet": "One clear loop. Three durable capabilities. The value of enterprise intelligence is not accumulating more data. It is seeing the changes that matter, recognizing the decision window, and taking the right action at the right time."
+    }
+  ]
+}

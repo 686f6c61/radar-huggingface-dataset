@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "agu18dec/olens_ablations",
+  "slug": "agu18dec-olens_ablations",
+  "author": "agu18dec",
+  "url": "https://huggingface.co/agu18dec/olens_ablations",
+  "created_at": "2026-09-20T07:34:20.000Z",
+  "updated_at": "2026-10-04T22:43:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352388542204,
+  "storage_human": "352.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam — 高质量游戏平台",
+      "url": "https://store.steampowered.com/about/Steam?l=schinese",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam — превосходная игровая Интернет-платформа",
+      "url": "https://store.steampowered.com/about/?l=russian",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "The New Steam Library",
+      "url": "https://store.steampowered.com/libraryupdate",
+      "snippet": "The Steam library is getting a makeover to make it better looking, more revelent and more powerful than ever before."
+    },
+    {
+      "title": "Steam Remote Play",
+      "url": "https://store.steampowered.com/app/353380/Steam_Link/",
+      "snippet": "About The Technology Steam Link with Remote Play technology delivers real-time video encoding over a custom low-latency …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a2-part1_moe_active",
+  "slug": "protonprat-anlp-a2-part1_moe_active",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a2-part1_moe_active",
+  "created_at": "2026-10-04T21:01:17.000Z",
+  "updated_at": "2026-10-04T23:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "anlp-assignment-2",
+    "causal-lm",
+    "custom-architecture",
+    "en",
+    "vi",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 980925530,
+  "storage_human": "981 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neemon/anlp-a2-part1-moe_active_matched · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a2-part1-moe_active_matched",
+      "snippet": "ANLP Assignment 2 (part1): moe_active_matched Decoder-only transformer with Mixture-of-Experts, 4 experts, top-2 routing, active parameters matched to the dense baseline. Trained from scratch for IIIT-H Advanced NLP, Monsoon 2026. Architecture, training code and evaluation live in the assignment repository; this repository holds only the ..."
+    },
+    {
+      "title": "sanyam2005/anlp-a2-part1-moe-top2-active · Hugging Face",
+      "url": "https://huggingface.co/sanyam2005/anlp-a2-part1-moe-top2-active",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DunkRonit/anlp-a2-part1-moe_shared · Hugging Face",
+      "url": "https://huggingface.co/DunkRonit/anlp-a2-part1-moe_shared",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DunkRonit/anlp-a2-part1-moe_top2_active · Hugging Face",
+      "url": "https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top2_active",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DunkRonit/anlp-a2-part1-moe_top1 · Hugging Face",
+      "url": "https://huggingface.co/DunkRonit/anlp-a2-part1-moe_top1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

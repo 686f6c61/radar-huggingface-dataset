@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DangerLabs/DM-JEPA",
+  "slug": "dangerlabs-dm-jepa",
+  "author": "DangerLabs",
+  "url": "https://huggingface.co/DangerLabs/DM-JEPA",
+  "created_at": "2026-10-04T20:57:55.000Z",
+  "updated_at": "2026-10-05T00:48:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dm_jepa",
+    "decision-making",
+    "jepa",
+    "system-1",
+    "decision-intelligence",
+    "non-autoregressive",
+    "fast-inference",
+    "modernbert",
+    "feature-extraction",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308272641,
+  "parameters_human": "308.3M",
+  "storage_bytes": 1870269539,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DangerLabs/HuMe · Hugging Face",
+      "url": "https://huggingface.co/DangerLabs/HuMe",
+      "snippet": "Instructions to use DangerLabs/HuMe with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use DangerLabs/HuMe with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"DangerLabs/HuMe\")"
+    },
+    {
+      "title": "README.md · DangerLabs/HuMe at main - Hugging Face",
+      "url": "https://huggingface.co/DangerLabs/HuMe/blob/main/README.md",
+      "snippet": "Instructions to use DangerLabs/HuMe with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use DangerLabs/HuMe with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-generation\", model=\"DangerLabs/HuMe\")"
+    },
+    {
+      "title": "All JEPA Models: 14 Milestones From I-JEPA to ThinkJEPA",
+      "url": "https://www.turingpost.com/p/jepamap",
+      "snippet": "TL;DR: From I-JEPA to ThinkJEPA, the JEPA family has evolved from image representation learning into video, audio, 3D, robotics, causal reasoning, and world modeling. This map traces 14 major JEPA milestones and shows how this architecture is evolving toward predictive, embodied AI."
+    },
+    {
+      "title": "[2509.14252] LLM-JEPA: Large Language Models Meet Joint Embedding ...",
+      "url": "https://arxiv.org/abs/2509.14252",
+      "snippet": "Large Language Model (LLM) pretraining, finetuning, and evaluation rely on input-space reconstruction and generative capabilities. Yet, it has been observed in vision that embedding-space training objectives, e.g., with Joint Embedding Predictive Architectures (JEPAs), are far superior to their input-space counterpart. That mismatch in how training is achieved between language and vision opens ..."
+    },
+    {
+      "title": "Delta-JEPA: Learning Action-Sensitive World Models via Latent ...",
+      "url": "https://arxiv.org/abs/2606.31232",
+      "snippet": "Delta-JEPA uses only latent prediction and action reconstruction, avoiding pixel reconstruction and distribution-matching regularizers. Across four visual continuous-control tasks, Delta-JEPA improves planning over JEPA-based and representation-learning world model baselines."
+    }
+  ]
+}

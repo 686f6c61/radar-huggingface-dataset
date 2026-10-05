@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ganapathi1578/PhotonRT",
+  "slug": "ganapathi1578-photonrt",
+  "author": "ganapathi1578",
+  "url": "https://huggingface.co/ganapathi1578/PhotonRT",
+  "created_at": "2026-10-04T21:58:43.000Z",
+  "updated_at": "2026-10-04T22:05:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "photonrt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180888006,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs : connexion",
+      "url": "https://docs.google.com/document/create?hl=fr",
+      "snippet": "Accédez à Google Docs avec un compte Google personnel ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/1/",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://docs.google.com/templates",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Documentos de Google: inicio de sesión",
+      "url": "https://docs.google.com/document/create?hl=es",
+      "snippet": "Accede a Documentos de Google con una cuenta de Google personal o una cuenta de Google Workspace (para uso corporativo)."
+    }
+  ]
+}

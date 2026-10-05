@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "nexbridgesolutions/Arden-2.0-280M",
+  "slug": "nexbridgesolutions-arden-2-0-280m",
+  "author": "nexbridgesolutions",
+  "url": "https://huggingface.co/nexbridgesolutions/Arden-2.0-280M",
+  "created_at": "2026-10-04T21:18:23.000Z",
+  "updated_at": "2026-10-04T23:30:43.000Z",
+  "license": "arden-community-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es",
+    "pt",
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "arden",
+    "base-model",
+    "pretraining",
+    "from-scratch",
+    "preview",
+    "text-generation",
+    "conversational",
+    "en",
+    "es",
+    "pt",
+    "fr",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 308585984,
+  "parameters_human": "308.6M",
+  "storage_bytes": 2319790776,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEX BRIDGE SOLUTONS LLC nexbridgesolutions - GitHub",
+      "url": "https://github.com/nexbridgesolutions",
+      "snippet": "Building AI from scratch. Creator of Arden LLM and Ardenward. Cybersecurity & software development. Arizona, USA. - nexbridgesolutions"
+    },
+    {
+      "title": "nexbridgesolutions/Arden-1.0-280M · Hugging Face",
+      "url": "https://huggingface.co/nexbridgesolutions/Arden-1.0-280M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "nexbridgesolutions (David Ernesto Arriaga Pineda) - Hugging Face",
+      "url": "https://huggingface.co/nexbridgesolutions/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 1 month ago ... updated a model about 1 month ago"
+    },
+    {
+      "title": "nexbridgesolutions/Arden: Arden 1.0 - GitHub",
+      "url": "https://github.com/nexbridgesolutions/Arden",
+      "snippet": "Arden is designed for general-purpose bilingual inference in Spanish, English, Portuguese, and French. Arden is the foundational AI model of Nex Bridge Solutions LLC, developed and owned by David Ernesto Arriaga Pineda."
+    },
+    {
+      "title": "Arden: Why We Built Our Own AI From Scratch (and Why It&#x27;s ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/arden-why-we-built-our-own-ai-from-scratch-its-worth-david-arriaga-ccl0c",
+      "snippet": "3. A model trained on consumer hardware. Arden 1.0 (280M parameters) was trained, and continues to improve, on accessible hardware rather than massive clusters."
+    }
+  ]
+}

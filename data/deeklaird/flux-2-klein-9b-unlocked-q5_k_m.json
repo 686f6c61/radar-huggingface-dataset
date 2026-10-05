@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "deeklaird/flux-2-klein-9b-unlocked-q5_k_m",
+  "slug": "deeklaird-flux-2-klein-9b-unlocked-q5_k_m",
+  "author": "deeklaird",
+  "url": "https://huggingface.co/deeklaird/flux-2-klein-9b-unlocked-q5_k_m",
+  "created_at": "2026-10-04T23:33:31.000Z",
+  "updated_at": "2026-10-05T00:39:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "flux2",
+    "klein",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9078591248,
+  "parameters_human": "9.08B",
+  "storage_bytes": 6485626230,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

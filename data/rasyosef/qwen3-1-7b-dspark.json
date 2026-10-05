@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rasyosef/Qwen3-1.7B-DSpark",
+  "slug": "rasyosef-qwen3-1-7b-dspark",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/Qwen3-1.7B-DSpark",
+  "created_at": "2026-09-30T16:20:20.000Z",
+  "updated_at": "2026-10-05T00:27:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "dspark",
+    "draft-model",
+    "vllm",
+    "custom_code",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 65,
+  "trending_score": 0,
+  "parameters": 295918849,
+  "parameters_human": "295.9M",
+  "storage_bytes": 4018033020,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasyosef/Qwen3-1.7B-DSpark · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/Qwen3-1.7B-DSpark",
+      "snippet": "A DSpark draft model for speculative decoding with Qwen/Qwen3-1.7B as the verifier, trained with speculators. The drafter proposes 8 tokens at a time and the verifier checks them in one forward pass, so output is identical to running the verifier alone — a lossless speedup."
+    },
+    {
+      "title": "rasyosef/Qwen3-1.7B-DFlash2 · Hugging Face",
+      "url": "https://huggingface.co/rasyosef/Qwen3-1.7B-DFlash2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSpec/deepspec/modeling/dspark/qwen3/modeling.py at main - GitHub",
+      "url": "https://github.com/deepseek-ai/DeepSpec/blob/main/deepspec/modeling/dspark/qwen3/modeling.py",
+      "snippet": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms - deepseek-ai/DeepSpec"
+    },
+    {
+      "title": "Qwen3-1.7B-DFlash2 (4.91 accept length on math_reasoning; 220 - GitHub",
+      "url": "https://github.com/vllm-project/speculators/issues/1194",
+      "snippet": "DSpark is rasyosef/Qwen3-1.7B-DSpark, a drafter for the same verifier measured under the same conditions. Speedup is this model&#x27;s mean throughput relative to that subset&#x27;s baseline."
+    },
+    {
+      "title": "qwen3_dspark - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/model_executor/models/qwen3_dspark/",
+      "snippet": "Qwen3 DSpark draft model for semi-autoregressive drafting. DSpark drafts a whole block in one parallel pass (DFlash-style: context-KV precompute + a non-causal query-block forward) and then injects intra-block dependency with a lightweight sequential Markov head. The parallel backbone is a standard Qwen3 decoder stack reused from the DFlash Qwen3 draft (see qwen3_dflash.py). DSpark adds ..."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "WindyWord/translate-yap-sv",
+  "slug": "windyword-translate-yap-sv",
+  "author": "WindyWord",
+  "url": "https://huggingface.co/WindyWord/translate-yap-sv",
+  "created_at": "2026-04-21T14:57:58.000Z",
+  "updated_at": "2026-10-05T00:10:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "yap",
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "yapese",
+    "swedish",
+    "yap",
+    "sv",
+    "base_model:Helsinki-NLP/opus-mt-yap-sv",
+    "base_model:finetune:Helsinki-NLP/opus-mt-yap-sv",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339782516,
+  "storage_human": "340 MB",
+  "base_model": "Helsinki-NLP/opus-mt-yap-sv",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

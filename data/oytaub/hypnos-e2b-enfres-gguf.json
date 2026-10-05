@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "oytaub/hypnos-e2b-enfres-GGUF",
+  "slug": "oytaub-hypnos-e2b-enfres-gguf",
+  "author": "oytaub",
+  "url": "https://huggingface.co/oytaub/hypnos-e2b-enfres-GGUF",
+  "created_at": "2026-10-04T19:29:42.000Z",
+  "updated_at": "2026-10-05T01:35:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "es"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "hypnosis",
+    "relaxation",
+    "text-generation",
+    "on-device",
+    "en",
+    "fr",
+    "es",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:quantized:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2490996259,
+  "parameters_human": "2.49B",
+  "storage_bytes": 3301819712,
+  "storage_human": "3.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/user/Come_with_us_",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Cumwithus6",
+      "url": "https://x.com/Cumwithus6/status/2069453435011829861",
+      "snippet": "Jun 23, 2026 · Cumwithus6. 10h. ProfessorBootyy. 💬 0. 🔄 0. 🤍 0. 📊 94. 📎. Explore Trending Stories Go to Home Search X News"
+    },
+    {
+      "title": "Cumwithus6",
+      "url": "https://x.com/Cumwithus6/status/2069865782360617399",
+      "snippet": "Cumwithus6. Jun 24. TeamSinfulx. 💬 2. 🔄 0. 🤍 2. 📊 1327. 📎. Explore Trending Stories Go to Home Search X News"
+    },
+    {
+      "title": "Search Results for: cumwithus6 leak Page 1 - ShesFreaky",
+      "url": "https://www.shesfreaky.com/search/cumwithus6-leak/most-viewed/",
+      "snippet": "5 4476355 273 Search Results for: cumwithus6 leak Sort Recent Views Thanks Rating Longest Friends 660,606 views 05:50 …"
+    },
+    {
+      "title": "It's another Hump Day with @Cumwithus6! https://t.... | X-Sou",
+      "url": "https://x-sou.com/u/FinishHimRIP/2080054619460325411",
+      "snippet": "Jul 22, 2026 · Finish Him!! 🌊🏄‍♂️⛱☀ 的推文: It's another Hump Day with @Cumwithus6! https://t.co/4s3yEWLo6w"
+    }
+  ]
+}

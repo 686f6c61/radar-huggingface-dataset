@@ -5,7 +5,7 @@
   "author": "constructelligence",
   "url": "https://huggingface.co/constructelligence/painting-vision",
   "created_at": "2026-10-02T14:15:22.000Z",
-  "updated_at": "2026-10-02T14:49:31.000Z",
+  "updated_at": "2026-10-04T13:27:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -15,6 +15,7 @@
   ],
   "tags": [
     "pytorch",
+    "painting-vision-robotics-kit",
     "image-segmentation",
     "semantic-segmentation",
     "robotics",

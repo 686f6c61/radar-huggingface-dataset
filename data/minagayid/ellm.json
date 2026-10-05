@@ -5,7 +5,7 @@
   "author": "minagayid",
   "url": "https://huggingface.co/minagayid/ELLM",
   "created_at": "2026-09-27T19:50:34.000Z",
-  "updated_at": "2026-09-29T15:36:54.000Z",
+  "updated_at": "2026-10-04T09:18:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 30,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3717656,
-  "storage_human": "4 MB",
+  "storage_bytes": 45703368,
+  "storage_human": "46 MB",
   "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
   "formats": [
     "safetensors"

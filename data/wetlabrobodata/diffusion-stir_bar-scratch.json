@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-stir_bar-scratch",
+  "slug": "wetlabrobodata-diffusion-stir_bar-scratch",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-stir_bar-scratch",
+  "created_at": "2026-10-04T19:55:09.000Z",
+  "updated_at": "2026-10-04T20:47:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-stir_bar_ds5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262813031,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051285108,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rachie – Rabbit Hole (English Cover) Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Rachie-rabbit-hole-english-cover-lyrics",
+      "snippet": "Mar 17, 2024 · The use of the phrase “Rabbit Hole” in the title seems to symbolize a descent into a fantasy world where nothing is …"
+    },
+    {
+      "title": "rabbit hole (deco*27) ♥ english cover【rachie】 ラビットホール",
+      "url": "https://www.youtube.com/watch?v=YUobVENA0DE",
+      "snippet": "Mar 16, 2024 · Right right right, it’s time to start the show Once more, deeper into this rabbit hole we go My my my, you’re just a little …"
+    },
+    {
+      "title": "Rachie - Rabbit Hole Lyrics",
+      "url": "https://www.songlyrics.com/rachie/rabbit-hole-lyrics/",
+      "snippet": "Rabbit Hole lyrics by Rachie (2025). \"Do you really wanna die like a virgin boy? (Blah, blah, blah, blah, blah, bla...\" Full lyrics on …"
+    },
+    {
+      "title": "Rachie - Rabbit Hole lyrics",
+      "url": "https://lyricstranslate.com/en/rachie-rabbit-hole-lyrics",
+      "snippet": "Jan 4, 2026 · Right right right, it’s time to start the show Once more, deeper into this rabbit hole we go My my my, you’re just a little …"
+    },
+    {
+      "title": "Lyrics.lol :: Rabbit Hole (English Cover) by Rachie",
+      "url": "https://lyrics.lol/artist/632716-rachie/lyrics/10174239-rabbit-hole-english-cover",
+      "snippet": "Right from the start not to give it any heart, it's only for fun (How could you?) Oh my, are you rеally staying for the night? Hop, step, …"
+    }
+  ]
+}

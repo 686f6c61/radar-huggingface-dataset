@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2",
+  "slug": "open-inference-kimi-k3-w4a8-k512-densechannel-gptq-cal128-v2",
+  "author": "open-inference",
+  "url": "https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2",
+  "created_at": "2026-10-04T17:42:16.000Z",
+  "updated_at": "2026-10-04T23:53:58.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "quantized",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1415618154840,
+  "storage_human": "1415.6 GB",
+  "base_model": "moonshotai/Kimi-K3, open-inference/Kimi-K3-W4A8-K512-GPTQ-Mixed-Cal72-Seq1024",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT Enterprise ChatGPT for Education Codex Dots Release Notes API Platform Overview API Log In Docs Business Overview …"
+    },
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Nous pensons que nos recherches finiront par mener à une intelligence artificielle générale, un système capable de résoudre des …"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le téléchargement, …"
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
+    }
+  ]
+}

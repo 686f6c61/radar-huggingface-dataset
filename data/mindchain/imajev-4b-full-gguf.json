@@ -5,7 +5,7 @@
   "author": "mindchain",
   "url": "https://huggingface.co/mindchain/imajev-4b-full-GGUF",
   "created_at": "2026-10-04T16:09:07.000Z",
-  "updated_at": "2026-10-04T17:56:32.000Z",
+  "updated_at": "2026-10-04T19:52:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 8725700960,
-  "storage_human": "8.7 GB",
+  "storage_bytes": 51074897600,
+  "storage_human": "51.1 GB",
   "base_model": "Qwen/Qwen3.5-4B",
   "formats": [
     "gguf"

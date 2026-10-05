@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "WindstormLabs/translate-wal-en",
+  "slug": "windstormlabs-translate-wal-en",
+  "author": "WindstormLabs",
+  "url": "https://huggingface.co/WindstormLabs/translate-wal-en",
+  "created_at": "2026-05-19T14:58:16.000Z",
+  "updated_at": "2026-10-05T00:09:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "wal",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "wolaytta",
+    "english",
+    "wal",
+    "en",
+    "base_model:Helsinki-NLP/opus-mt-wal-en",
+    "base_model:finetune:Helsinki-NLP/opus-mt-wal-en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366479238,
+  "storage_human": "366 MB",
+  "base_model": "Helsinki-NLP/opus-mt-wal-en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personnages Principaux | Wiki Teen Wolf | Fandom",
+      "url": "https://teenwolf.fandom.com/fr/wiki/Personnages_Principaux",
+      "snippet": "Les personnages principaux de Teen Wolf sont facilement identifiables malgrés certains réccurents, les principaux ont chacun un …"
+    },
+    {
+      "title": "Personnages - Teen Wolf Wiki",
+      "url": "https://teenwolf.fandom.com/fr/wiki/Personnages",
+      "snippet": "Aller au contenu Le Film (2023) Wolf Pack dans : Personnages, Personnages Secondaires, Personnages Récurrents, et 4 autres …"
+    },
+    {
+      "title": "Teen Wolf (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Teen_Wolf_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Teen Wolf est une série télévisée américaine en cent épisodes d'environ 42 minutes créée par Jeff Davis, adaptée à partir du long …"
+    },
+    {
+      "title": "Personnages de Teen Wolf — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Personnages_de_Teen_Wolf",
+      "snippet": "Pour améliorer la vérifiabilité de l'article ainsi que son intérêt encyclopédique, il est nécessaire, quand des sources primaires sont …"
+    },
+    {
+      "title": "Les personnages | Teen Wolf",
+      "url": "https://teen.hypnoweb.net/teen-wolf/les-personnages.195.15/",
+      "snippet": "Les personnages Description des personnages principaux et secondaires - Inscris-toi gratuitement et surfe sans pub !"
+    }
+  ]
+}

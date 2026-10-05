@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SeqAtom-Coder-1.5B-Instruct-GGUF",
+  "slug": "mradermacher-seqatom-coder-1-5b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SeqAtom-Coder-1.5B-Instruct-GGUF",
+  "created_at": "2026-10-04T21:01:58.000Z",
+  "updated_at": "2026-10-04T21:08:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "seqatom",
+    "qwen2",
+    "experimental",
+    "en",
+    "dataset:tomjnet/SeqAtom-Coder-Dataset",
+    "base_model:tomjnet/SeqAtom-Coder-1.5B-Instruct",
+    "base_model:quantized:tomjnet/SeqAtom-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206907904,
+  "storage_human": "14.2 GB",
+  "base_model": "tomjnet/SeqAtom-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "mradermacher/SA-Coder-1.5B-Preview-v1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SA-Coder-1.5B-Preview-v1-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "GitHub - Troyanovsky/Local-LLM-Comparison-Colab-UI: Compare the ...",
+      "url": "https://github.com/Troyanovsky/Local-LLM-Comparison-Colab-UI",
+      "snippet": "(Update Nov. 27, 2023) The original goal of the repo was to compare some smaller models (7B and 13B) that can be run on consumer hardware so every model had a score for a set of questions from GPT-4. But I realized that as there are many more capable models appearing, the evaluation and comparison process may not suffice. Therefore, I&#x27;m only putting Colab WebUI links for the newer models and ..."
+    }
+  ]
+}

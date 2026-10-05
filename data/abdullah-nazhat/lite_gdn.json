@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Nazhat/Lite_GDN",
+  "slug": "abdullah-nazhat-lite_gdn",
+  "author": "Abdullah-Nazhat",
+  "url": "https://huggingface.co/Abdullah-Nazhat/Lite_GDN",
+  "created_at": "2026-10-04T22:30:58.000Z",
+  "updated_at": "2026-10-04T23:00:58.000Z",
+  "license": "bsd-3-clause-clear",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd-3-clause-clear",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtres en vente à Nandrin | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/108426079182310/windows/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Fenêtres en vente à Nandrin sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Fenêtres en vente à Morchies | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/105506719481820/windows/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Fenêtres en vente à Morchies sur Facebook Marketplace. Trouvez des bons plans …"
+    },
+    {
+      "title": "Mary Kay Skincare Products en vente à Radinghem - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106286519401948/mary-kay-skincare-products/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Mary Kay Skincare Products en vente à Radinghem sur Facebook Marketplace. …"
+    },
+    {
+      "title": "Planches d’équilibre en vente à Torcieu | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/107788809243686/balance-boards/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Planches d’équilibre en vente à Torcieu sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Pièces automobiles en vente à Polminhac - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/112277912122789/autoparts/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Pièces automobiles en vente à Polminhac sur Facebook Marketplace. Trouvez des …"
+    }
+  ]
+}

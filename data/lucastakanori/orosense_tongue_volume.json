@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LucasTakanori/orosense_tongue_volume",
+  "slug": "lucastakanori-orosense_tongue_volume",
+  "author": "LucasTakanori",
+  "url": "https://huggingface.co/LucasTakanori/orosense_tongue_volume",
+  "created_at": "2026-10-04T23:22:20.000Z",
+  "updated_at": "2026-10-04T23:22:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "yolo",
+    "medical-imaging",
+    "image-segmentation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5913138,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libertines Annonces Saumur, Libertines girl en Saumur ... - Sexemodel",
+      "url": "https://www.meslibertines.com/escorts/saumur/",
+      "snippet": "Trouvez vous les plus belles Libertines en Saumur, sur MesLibertines.com."
+    },
+    {
+      "title": "Escort France - Annonces d'escort France et annuaire d'escort girl ...",
+      "url": "https://www.ladyxena.com/fr/escort-girl/france/maine-et-loire/escort-saumur.html",
+      "snippet": "Je suis Antoneli une belle femme blond sympathiqu..."
+    },
+    {
+      "title": "Libertines Annonces Saumur, Libertines transsexuelle en ... - Sexemodel",
+      "url": "https://www.meslibertines.com/trans/saumur/",
+      "snippet": "Trouvez vous les plus belles Libertines en Saumur, sur MesLibertines.com."
+    },
+    {
+      "title": "Libertines Viviane, Saumur - Sexemodel",
+      "url": "https://www.sexemodel.com/escort/Viviane-1701914/",
+      "snippet": "Libertines girl Viviane a 28 ans, est une caucasien femme à Saumur de 170 cm de hauteur, 47kg. Voir ses photos ici!"
+    },
+    {
+      "title": "Escort girl annonces Saumur - Escorts Saumur - Tescort",
+      "url": "https://www.tescort.com/escorts/saumur",
+      "snippet": "Le site le plus visité en France en terme d'escort girl vérifiées vous propose des annonces sexe Saumur et à proximité. Relaxez vous …"
+    }
+  ]
+}

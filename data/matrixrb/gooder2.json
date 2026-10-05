@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "matrixrb/gooder2",
+  "slug": "matrixrb-gooder2",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/gooder2",
+  "created_at": "2026-10-04T19:17:31.000Z",
+  "updated_at": "2026-10-04T19:17:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb/models",
+      "snippet": "Recent Activity updated a model4 days ago matrixrb/qwen-3b-blated published a model4 days ago matrixrb/qwen-3b-blated updated a model4 days ago matrixrb/qwen-.5b-blated View all activity"
+    },
+    {
+      "title": "matrixrb (matrix radbro) - Hugging Face",
+      "url": "https://huggingface.co/matrixrb",
+      "snippet": "Text-to-Image •Updated 24 days ago•22 matrixrb/field-theory-model-1024"
+    },
+    {
+      "title": "Gooder AI",
+      "url": "https://latest.gooder.ai/",
+      "snippet": "Most of predictive AI&#x27;s value evaporates. Capture it with Gooder AI. Gooder AI addresses a fundamental flaw with the typical predictive model development process. It evaluates models in terms of business metrics like profit/ROI/savings, rather than only the technical metrics like AUC/precision/recall that are typically used. Why? If you aren&#x27;t measuring business value, you&#x27;re not pursuing ..."
+    },
+    {
+      "title": "Gooder AI - supercharge your predictive AI projects",
+      "url": "https://www.gooder.ai/",
+      "snippet": "Gooder AI empowers stakeholders and data scientists alike to plan, sell, and greenlight predictive AI deployment. It establishes and maximizes the value of each machine learning model in terms of business outcomes like profit, savings - or any KPI. Only by measuring value can the project actually pursue value. And only by getting business and data professionals onto the same value-oriented ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

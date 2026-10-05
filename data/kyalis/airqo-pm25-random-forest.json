@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kyalis/airqo-pm25-random-forest",
+  "slug": "kyalis-airqo-pm25-random-forest",
+  "author": "Kyalis",
+  "url": "https://huggingface.co/Kyalis/airqo-pm25-random-forest",
+  "created_at": "2026-10-04T22:49:54.000Z",
+  "updated_at": "2026-10-04T22:51:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "scikit-learn",
+    "tabular-regression",
+    "air-quality",
+    "pm2.5",
+    "airqo",
+    "uganda",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120196896,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google",
+      "snippet": "Search Google Search (also known simply as Google) is a search engine operated by Google. It allows users to search or ask for …"
+    },
+    {
+      "title": "Search anything, effortlessly - search.google",
+      "url": "https://search.google/intl/en-IN/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    }
+  ]
+}

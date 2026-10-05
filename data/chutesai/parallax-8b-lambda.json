@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "chutesai/parallax-8b-lambda",
+  "slug": "chutesai-parallax-8b-lambda",
+  "author": "chutesai",
+  "url": "https://huggingface.co/chutesai/parallax-8b-lambda",
+  "created_at": "2026-10-04T07:31:10.000Z",
+  "updated_at": "2026-10-05T01:53:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mixture-of-experts",
+    "ternary",
+    "decentralized-training",
+    "base-model",
+    "research-checkpoint",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 84313453887,
+  "storage_human": "84.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What happened to xHamster? : r/OutOfTheLoop - Reddit",
+      "url": "https://www.reddit.com/r/OutOfTheLoop/comments/56pdfn/what_happened_to_xhamster/",
+      "snippet": "true A subreddit to help you keep up to date with what's going on with reddit and other stuff."
+    },
+    {
+      "title": "Why is xHamster called xHamster? : r/NoStupidQuestions - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/6n22bh/why_is_xhamster_called_xhamster/",
+      "snippet": "Hey-hey! I'm a representative of xHamster. When choosing the mascot for the web-site (which took us quite a long time), we wanted …"
+    },
+    {
+      "title": "Xhamster doesn't work properly on my computer (FF or chrome)",
+      "url": "https://www.reddit.com/r/techsupport/comments/260oz2/xhamster_doesnt_work_properly_on_my_computer_ff/",
+      "snippet": "May 20, 2014 · Anyway, when I open xhamster, about half of the thumbnails don't load. A lot of the videos don't work either (it says …"
+    },
+    {
+      "title": "pissing - Reddit",
+      "url": "https://www.reddit.com/r/pissing/",
+      "snippet": "An 18+ community for sharing photos or videos of pissing action! We don't discriminate so anyone over 18 can share either their own …"
+    },
+    {
+      "title": "xhamster won't load any videos. : r/techsupport - Reddit",
+      "url": "https://www.reddit.com/r/techsupport/comments/35hk2h/xhamster_wont_load_any_videos/",
+      "snippet": "May 10, 2015 · The screen just stays black, doesn't even start to load. I have latest flash. Loads in chrome but not in firefox. Share …"
+    }
+  ]
+}

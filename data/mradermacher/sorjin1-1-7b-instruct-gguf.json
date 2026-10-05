@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sorjin1.1-7B-Instruct-GGUF",
+  "slug": "mradermacher-sorjin1-1-7b-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sorjin1.1-7B-Instruct-GGUF",
+  "created_at": "2026-10-04T21:20:15.000Z",
+  "updated_at": "2026-10-04T22:59:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "kurdish",
+    "kurmanji",
+    "instruct",
+    "lora",
+    "qwen2.5",
+    "ku",
+    "kmr",
+    "dataset:muzaffercky/kurdish-kurmanji-theses",
+    "base_model:muzaffercky/Sorjin1.1-7B-Instruct",
+    "base_model:adapter:muzaffercky/Sorjin1.1-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146900352,
+  "storage_human": "68.1 GB",
+  "base_model": "muzaffercky/Sorjin1.1-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=15daf62644576be6293ae1ce45b66a13",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "International transactions policy | Vinted",
+      "url": "https://www.vinted.co.uk/help/1538",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    },
+    {
+      "title": "Enfants | Déniche des articles de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/1193-kids?msockid=15daf62644576be6293ae1ce45b66a13",
+      "snippet": "Vends des vêtements pour enfants qui ne te servent plus sur Vinted. Fais du tri, gagne de l’argent et fais de la place pour du neuf."
+    },
+    {
+      "title": "CONDITIONS GÉNÉRALES D’UTILISATION | Vinted",
+      "url": "https://www.vinted.fr/terms_and_conditions?msockid=15daf62644576be6293ae1ce45b66a13",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements | Découvre des vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/2050-vetements?msockid=15daf62644576be6293ae1ce45b66a13",
+      "snippet": "Parcours les vêtements de seconde main pour hommes sur Vinted. Déniche des pièces stylées à prix réduit et achète et vends en …"
+    }
+  ]
+}

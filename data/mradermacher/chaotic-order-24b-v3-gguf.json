@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Chaotic-Order-24B-V3-GGUF",
+  "slug": "mradermacher-chaotic-order-24b-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Chaotic-Order-24B-V3-GGUF",
+  "created_at": "2026-10-04T21:20:54.000Z",
+  "updated_at": "2026-10-04T22:59:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:Sorihon/Chaotic-Order-24B-V3",
+    "base_model:quantized:Sorihon/Chaotic-Order-24B-V3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407780992,
+  "storage_human": "161.4 GB",
+  "base_model": "Sorihon/Chaotic-Order-24B-V3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B and other models generate garbage output / repeat ...",
+      "url": "https://github.com/ggml-org/llama.cpp/issues/13310",
+      "snippet": "04.05.2025 ... Name and Version When using llama.cpp (via LM Studio with Vulkan backend and GGUF models), some models — specifically Qwen3-8B, Mistral, ..."
+    },
+    {
+      "title": "[Megathread] - Best Models/API discussion - Week of: April 12, 2026",
+      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1sjsrn3/megathread_best_modelsapi_discussion_week_of/",
+      "snippet": "12.04.2026 ... Is the bad model in Magisty the zerofata_ms3.2-paintedfantasy-v3-24b one or a differnt one? There is a babble/pronoun loss bug in magisty ..."
+    },
+    {
+      "title": "Fancy Font Generator — The Ultimate Guide - Skywork",
+      "url": "https://skywork.ai/blog/fancy-font-generator-ultimate-guide/",
+      "snippet": "Use them to make informed, test‑driven choices before you hit “Post.” Generate PPT with Skywork AI Slide Templates. Skywork AI offers hundreds of templates for ..."
+    }
+  ]
+}

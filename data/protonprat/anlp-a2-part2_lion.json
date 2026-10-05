@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a2-part2_lion",
+  "slug": "protonprat-anlp-a2-part2_lion",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a2-part2_lion",
+  "created_at": "2026-10-04T21:04:32.000Z",
+  "updated_at": "2026-10-04T23:38:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "anlp-assignment-2",
+    "causal-lm",
+    "custom-architecture",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2119787786,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adi-AI/anlp-a2-part2-lion · Hugging Face",
+      "url": "https://huggingface.co/Adi-AI/anlp-a2-part2-lion",
+      "snippet": "Adi-AI / anlp-a2-part2-lion Like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "dnebh/anlp-a2-part2-lion · Hugging Face",
+      "url": "https://huggingface.co/dnebh/anlp-a2-part2-lion",
+      "snippet": "Dense decoder-only Transformer (Part 1 config 1, 33.4M params) trained for next-token prediction on browndw/human-ai-parallel-corpus with a from-scratch lion optimizer (lr 0.0004)."
+    },
+    {
+      "title": "ParaTrace AI text detector · Was this text written by AI?",
+      "url": "https://paratrace.net/",
+      "snippet": "ParaTrace estimates how likely it is that an English text was produced by a language model, and gives every document a probability and a clear verdict. In our latest benchmark it caught 99.6 % of AI-written answers from 89 models, while wrongly flagging fewer than 1 in 100 held-out human texts."
+    },
+    {
+      "title": "GitHub - bitmap4/anlp-a2",
+      "url": "https://github.com/bitmap4/anlp-a2",
+      "snippet": "Contribute to bitmap4/anlp-a2 development by creating an account on GitHub."
+    },
+    {
+      "title": "A2E Free, Personal AI Videos",
+      "url": "https://a2e.ai/",
+      "snippet": "Create personal AI videos for free with image-to-video, face and head swap, lip sync, voice cloning, and AI avatars on A2E."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "afzal2003/knee-oa-kl-grading",
+  "slug": "afzal2003-knee-oa-kl-grading",
+  "author": "afzal2003",
+  "url": "https://huggingface.co/afzal2003/knee-oa-kl-grading",
+  "created_at": "2026-10-04T19:08:10.000Z",
+  "updated_at": "2026-10-04T21:45:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "medical-imaging",
+    "x-ray",
+    "knee-osteoarthritis",
+    "kellgren-lawrence",
+    "tensorflow",
+    "grad-cam",
+    "image-classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46043462,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kellgren-Lawrence grading of knee osteoarthritis using deep learning ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2665913125000160",
+      "snippet": "To evaluate the performance of a deep learning (DL) model in an external dataset to assess radiographic knee osteoarthritis using Kellgren-Lawrence (K…"
+    },
+    {
+      "title": "Kellgren-Lawrence grading of knee osteoarthritis using deep learning ...",
+      "url": "https://www.oarsiopenjournal.com/article/S2665-9131(25)00016-0/pdf",
+      "snippet": "Objective: To evaluate the performance of a deep learning (DL) model in an external dataset to assess radiographic knee osteoarthritis using Kellgren-Lawrence (KL) grades against versatile human readers. Materials and methods: Two-hundred-eight knee anteroposterior conventional radiographs (CRs) were included in this retrospective study."
+    },
+    {
+      "title": "Kellgren-Lawrence grading of knee osteoarthritis using deep learning ...",
+      "url": "https://radaislice.com/paper/doi/10.1016/j.ocarto.2025.100580",
+      "snippet": "Abstract To evaluate the performance of a deep learning (DL) model in an external dataset to assess radiographic knee osteoarthritis using Kellgren-Lawrence (KL) grades against versatile human readers. Two-hundred-eight knee anteroposterior conventional radiographs (CRs) were included in this retrospective study."
+    },
+    {
+      "title": "Kellgren-Lawrence grading of knee osteoarthritis using deep learning ...",
+      "url": "https://www.oarsiopenjournal.com/article/S2665-9131(25)00016-0/fulltext",
+      "snippet": "To evaluate the performance of a deep learning (DL) model in an external dataset to assess radiographic knee osteoarthritis using Kellgren-Lawrence (KL) grades against versatile human readers."
+    },
+    {
+      "title": "Ensemble deep-learning networks for automated osteoarthritis grading in ...",
+      "url": "https://www.nature.com/articles/s41598-023-50210-4",
+      "snippet": "Therefore, in this study, we developed an ensemble network that can predict a consistent and accurate KL grade for knee osteoarthritis severity using a deep learning approach."
+    }
+  ]
+}

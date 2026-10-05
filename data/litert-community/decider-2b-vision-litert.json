@@ -5,7 +5,7 @@
   "author": "litert-community",
   "url": "https://huggingface.co/litert-community/decider-2b-vision-LiteRT",
   "created_at": "2026-09-28T22:36:46.000Z",
-  "updated_at": "2026-09-29T06:35:38.000Z",
+  "updated_at": "2026-10-05T00:20:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 53,
+  "downloads_30d": 89,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

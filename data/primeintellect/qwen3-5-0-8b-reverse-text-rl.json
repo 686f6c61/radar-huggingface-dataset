@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-RL",
+  "slug": "primeintellect-qwen3-5-0-8b-reverse-text-rl",
+  "author": "PrimeIntellect",
+  "url": "https://huggingface.co/PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-RL",
+  "created_at": "2026-10-04T19:01:20.000Z",
+  "updated_at": "2026-10-04T21:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "prime-rl",
+    "ci",
+    "conversational",
+    "base_model:PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-SFT",
+    "base_model:finetune:PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1107265600,
+  "parameters_human": "1.11B",
+  "storage_bytes": 2234584333,
+  "storage_human": "2.2 GB",
+  "base_model": "PrimeIntellect/Qwen3.5-0.8B-Reverse-Text-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Son (Short Film) | Videos & Movies on Vimeo",
+      "url": "https://vimeo.com/246315175?msockid=28c30ed449bd66a72eba193c480867b2",
+      "snippet": "Nov 8, 2017 · Short Drama about a mother and sons relationship after the mother (Linda Meacher) discovers her son (Alfie Manser) …"
+    },
+    {
+      "title": "movies +mother yandex — Yandex: found 209 thousand results",
+      "url": "https://tv.yandex.com/search?lr=91&text=movies+%2Bmother+yandex&missword=1",
+      "snippet": "Aug 22, 2023 · 27 Great Movies About Mothers And Sons In honor of all the mothers out there raising boys, here are 25 mother-son …"
+    },
+    {
+      "title": "Taboo A Movie 18",
+      "url": "https://ok.ru/video/1828126593328",
+      "snippet": "Кривлялась под песню, где бойцам желают смерти — и сразу сбе..."
+    },
+    {
+      "title": "Tabu.2007. - Одноклассники",
+      "url": "https://m.ok.ru/video/41358920381",
+      "snippet": "Нам кажется, что на видео есть . Посмотреть. Уберите лишние метки и подтвердите оставшиеся, если они определены …"
+    },
+    {
+      "title": "Home Movie: 97325: Family Scenes, 1963 - Archive.org",
+      "url": "https://archive.org/details/97325_hm_family_scenes_1963",
+      "snippet": "May 30, 2013 · Home Movie: 97325: Family Scenes, 1963 Publication date ca. 1963 Topics home movies, prelinger Contributor …"
+    }
+  ]
+}

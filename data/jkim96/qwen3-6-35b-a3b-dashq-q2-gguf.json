@@ -5,7 +5,7 @@
   "author": "jkim96",
   "url": "https://huggingface.co/jkim96/Qwen3.6-35B-A3B-DASHQ-Q2-GGUF",
   "created_at": "2026-10-03T19:55:47.000Z",
-  "updated_at": "2026-10-03T23:21:29.000Z",
+  "updated_at": "2026-10-04T09:43:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 761,
   "trending_score": 0,
-  "parameters": 35505251456,
-  "parameters_human": "35.51B",
-  "storage_bytes": 35184644704,
-  "storage_human": "35.2 GB",
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 68938415552,
+  "storage_human": "68.9 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B",
   "formats": [
     "gguf"

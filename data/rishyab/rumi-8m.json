@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Rishyab/RUMI-8M",
+  "slug": "rishyab-rumi-8m",
+  "author": "Rishyab",
+  "url": "https://huggingface.co/Rishyab/RUMI-8M",
+  "created_at": "2026-10-04T20:00:34.000Z",
+  "updated_at": "2026-10-04T20:10:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "rumi",
+  "languages": [],
+  "tags": [
+    "rumi",
+    "language-model",
+    "text-generation",
+    "decoder-only-transformer",
+    "from-scratch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 101678045,
+  "storage_human": "102 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rumi 3D models - Sketchfab",
+      "url": "https://sketchfab.com/tags/rumi",
+      "snippet": "Rumi 3D models ready to view and download for free."
+    },
+    {
+      "title": "rumi - Download Free 3D model by amberrpann - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/rumi-78aac308532e4b1e824c1d299737a30e",
+      "snippet": "56 575 5 Download 3D Model Add to Embed Share Report Triangles: 490.7k Vertices: 245.3k More model information"
+    },
+    {
+      "title": "Free Rumi 3D Models - Download Instantly | Meshy",
+      "url": "https://www.meshy.ai/tags/rumi",
+      "snippet": "Download 31+ free Rumi 3D models in STL, GLB, FBX, OBJ formats for 3D Printing, Games, Animation and more. Ready to use - instant download on Meshy."
+    },
+    {
+      "title": "Rishab (@rishab.ai8) • Instagram photos and videos",
+      "url": "https://www.instagram.com/rishab.ai8/",
+      "snippet": "18 Followers, 16 Following, 17 Posts - Rishab (@rishab.ai8) on Instagram: \"Create what you imagine! 🤗 Find me @jaiswalrishab Staying Curious. . . . . #fashion #photoshoot #modelshoot\""
+    },
+    {
+      "title": "Rumi Usagiyama - My Hero Academia - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/ffdb605d85d3447cf463dcb5549f1b77",
+      "snippet": "Explore Rumi Usagiyama - My Hero Academia model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    }
+  ]
+}

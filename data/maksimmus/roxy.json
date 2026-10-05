@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "maksimmus/Roxy",
+  "slug": "maksimmus-roxy",
+  "author": "maksimmus",
+  "url": "https://huggingface.co/maksimmus/Roxy",
+  "created_at": "2026-10-04T20:58:05.000Z",
+  "updated_at": "2026-10-04T21:01:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1790998080,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chat.com",
+      "url": "http://chat.com/en/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "Free Chat with Strangers Online — 100% Free, No Sign Up | Chatib",
+      "url": "https://chatib.chat/free-chat/",
+      "snippet": "Free chat with strangers online — 100% free anonymous chat with video, voice & text. No subscription, no sign up, no credit card. …"
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "Chatib – Worldwide Anonymous Chat with Strangers from 150",
+      "url": "https://chatib.chat/",
+      "snippet": "Chatib is a free anonymous chat platform where you can talk with strangers from around the world without registering. Online since …"
+    }
+  ]
+}

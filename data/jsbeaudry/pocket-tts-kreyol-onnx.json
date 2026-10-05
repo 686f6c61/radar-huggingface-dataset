@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jsbeaudry/pocket-tts-kreyol-onnx",
+  "slug": "jsbeaudry-pocket-tts-kreyol-onnx",
+  "author": "jsbeaudry",
+  "url": "https://huggingface.co/jsbeaudry/pocket-tts-kreyol-onnx",
+  "created_at": "2026-10-04T19:41:30.000Z",
+  "updated_at": "2026-10-04T19:47:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "ht"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "text-to-speech",
+    "haitian-creole",
+    "kreyol",
+    "pocket-tts",
+    "on-device",
+    "ht",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 545911706,
+  "storage_human": "546 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jsbeaudry/qwen3-tts-kreyol at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/jsbeaudry/qwen3-tts-kreyol/tree/main",
+      "snippet": "main qwen3-tts-kreyol 20 kB Ctrl+K Ctrl+K 1 contributor History:9 commits jsbeaudry Size ZeroGPU requests to the job so visitors without PRO can use every tab eec4132 verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 16 hours ago README.md 1.14 kBUse the 1.7B Kreyòl models: 5 named voices, Kreyòl voice cloning, and voice design spoken by the Kreyòl clone modelabout 6 ..."
+    },
+    {
+      "title": "Pocket TTS - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Pocket_TTS",
+      "snippet": "Pocket TTS is a lightweight, open-source text-to-speech model developed by the French AI research laboratory Kyutai and released in September 2025. With approximately 100 million parameters in its distilled inference form, Pocket TTS achieves speech synthesis quality competitive with much larger models while running faster than real time on a standard laptop CPU without requiring a graphics ..."
+    },
+    {
+      "title": "KevinAHM/pocket-tts-onnx · Hugging Face",
+      "url": "https://huggingface.co/KevinAHM/pocket-tts-onnx",
+      "snippet": "Model Description Pocket TTS is a compact text-to-speech model from Kyutai that supports voice cloning from short audio samples. This ONNX export provides:"
+    },
+    {
+      "title": "Community Implementations | kyutai-labs/pocket-tts | DeepWiki",
+      "url": "https://deepwiki.com/kyutai-labs/pocket-tts/10.2-community-implementations",
+      "snippet": "The Pocket TTS model&#x27;s compact size (100M parameters) and CPU-optimized design make it suitable for porting to alternative platforms and runtimes. The community has created multiple implementations targeting different use cases: Browser implementations: WebAssembly ports enabling client-side TTS without server infrastructure Hardware-optimized backends: Platform-specific implementations (Apple ..."
+    },
+    {
+      "title": "How to Train Your Own TTS Model Locally with Pocket TTS",
+      "url": "https://www.mindstudio.ai/blog/train-tts-model-locally-pocket-tts",
+      "snippet": "Kyutai open-sourced the full Pocket TTS training stack. Here&#x27;s how to train a custom CPU-runnable voice model on your own GPU and data."
+    }
+  ]
+}

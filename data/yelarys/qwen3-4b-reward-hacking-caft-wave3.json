@@ -5,7 +5,7 @@
   "author": "yelarys",
   "url": "https://huggingface.co/yelarys/qwen3-4b-reward-hacking-caft-wave3",
   "created_at": "2026-10-03T22:01:35.000Z",
-  "updated_at": "2026-10-04T01:47:28.000Z",
+  "updated_at": "2026-10-04T05:44:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,13 +20,13 @@
     "base_model:adapter:Qwen/Qwen3-4B",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 95524573679,
-  "storage_human": "95.5 GB",
+  "storage_bytes": 122467718968,
+  "storage_human": "122.5 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

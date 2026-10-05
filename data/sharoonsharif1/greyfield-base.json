@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sharoonsharif1/greyfield-base",
+  "slug": "sharoonsharif1-greyfield-base",
+  "author": "sharoonsharif1",
+  "url": "https://huggingface.co/sharoonsharif1/greyfield-base",
+  "created_at": "2026-10-04T19:12:41.000Z",
+  "updated_at": "2026-10-04T19:15:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32682375020,
+  "parameters_human": "32.68B",
+  "storage_bytes": 23297522074,
+  "storage_human": "23.3 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sharoonsharif1 (Sharoon Sharif) - Hugging Face",
+      "url": "https://huggingface.co/sharoonsharif1",
+      "snippet": "User profile of Sharoon Sharif on Hugging Face"
+    },
+    {
+      "title": "sharoonsharif1/PathQFormer-checkpoints · Hugging Face",
+      "url": "https://huggingface.co/sharoonsharif1/PathQFormer-checkpoints",
+      "snippet": "sharoonsharif1 / PathQFormer-checkpoints Like 0 PyTorch computational-pathology survival-analysis multimodal tcga License:mit Model card FilesFiles and versions xet Community Copy to bucket new PathQ-Former checkpoints"
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "SharoonSharif (Sharoon Sharif) · GitHub",
+      "url": "https://github.com/SharoonSharif",
+      "snippet": "Electrical Engineering | Machine Learning | Embedded Systems | Signal Processing | Biomedical Applications | VLSI - SharoonSharif"
+    },
+    {
+      "title": "BaseModel.ai — The Behavioral Foundation Model",
+      "url": "https://www.basemodel.ai/",
+      "snippet": "BaseModel.ai learns directly from raw behavioral events — clicks, purchases, page views, app opens — and automatically creates the optimal feature representation."
+    }
+  ]
+}

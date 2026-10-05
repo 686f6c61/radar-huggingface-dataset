@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "stanford-star/rt-j",
+  "slug": "stanford-star-rt-j",
+  "author": "stanford-star",
+  "url": "https://huggingface.co/stanford-star/rt-j",
+  "created_at": "2026-06-30T05:17:25.000Z",
+  "updated_at": "2026-10-04T22:39:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "relational-deep-learning",
+    "relational-databases",
+    "relational-data",
+    "tabular",
+    "tabular-classification",
+    "tabular-regression",
+    "foundation-model",
+    "in-context-learning",
+    "few-shot",
+    "zero-shot",
+    "relbench",
+    "relational-transformer",
+    "dataset:stanford-star/the-join",
+    "dataset:stanford-star/the-join-preprocessed",
+    "dataset:stanford-star/plurel",
+    "dataset:stanford-star/plurel-preprocessed",
+    "dataset:stanford-star/relbench-v1",
+    "dataset:stanford-star/relbench-preprocessed",
+    "arxiv:2602.04029",
+    "arxiv:2510.06377",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 162,
+  "trending_score": 0,
+  "parameters": 85562530,
+  "parameters_human": "85.6M",
+  "storage_bytes": 1711687960,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanford University",
+      "url": "https://www.stanford.edu/",
+      "snippet": "Here you’ll find a place of intellectual expansiveness, wide-ranging perspectives, and freedom to explore new lines of thinking. Alive …"
+    },
+    {
+      "title": "Université Stanford — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Stanford",
+      "snippet": "La Leland Stanford Junior University, plus connue sous le nom d' université Stanford, est une université américaine privée, située …"
+    },
+    {
+      "title": "Stanford University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stanford_University",
+      "snippet": "Leland Stanford Junior University, [9][10] commonly referred to as Stanford University, is a private research university in Stanford, …"
+    },
+    {
+      "title": "About Stanford | Stanford University",
+      "url": "https://www.stanford.edu/about",
+      "snippet": "Stanford is proud to be a citizen of Silicon Valley and the Bay Area. Through athletic events, public exhibitions and performances, …"
+    },
+    {
+      "title": "Free Online Courses - Stanford Online",
+      "url": "https://online.stanford.edu/free-courses",
+      "snippet": "Take courses from Stanford faculty and industry experts at no cost to you,. Learn new skills and explore new and emerging topics."
+    }
+  ]
+}

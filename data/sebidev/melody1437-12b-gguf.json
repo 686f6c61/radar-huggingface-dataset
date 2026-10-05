@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sebidev/Melody1437-12B-GGUF",
+  "slug": "sebidev-melody1437-12b-gguf",
+  "author": "sebidev",
+  "url": "https://huggingface.co/sebidev/Melody1437-12B-GGUF",
+  "created_at": "2026-10-04T20:01:52.000Z",
+  "updated_at": "2026-10-04T20:01:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma-4",
+    "roleplay",
+    "conversational",
+    "instruct",
+    "apache-2.0",
+    "nsfw",
+    "explicit",
+    "erp",
+    "adult-content",
+    "mature",
+    "unaligned",
+    "base_model:ReadyArt/Melody1437-12B",
+    "base_model:quantized:ReadyArt/Melody1437-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 132117014560,
+  "storage_human": "132.1 GB",
+  "base_model": "ReadyArt/Melody1437-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReadyArt/Melody1437-12B · Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Melody1437-12B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Melody1437-12B-v0.5.i1-Q4_K_S_hb16.gguf - Hugging Face",
+      "url": "https://huggingface.co/ReadyArt/Melody1437-12B-GGUF/blob/main/Melody1437-12B-v0.5.i1-Q4_K_S_hb16.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Melody1437 12b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/melody1437-12b.html",
+      "snippet": "Download Melody1437 12b GGUF model. 5.51 GB, 8,378 downloads, 15 likes."
+    },
+    {
+      "title": "Melody1437 12b V0.4 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/melody1437-12b-v0-4.html",
+      "snippet": "Download Melody1437 12b V0.4 GGUF model. 5.35 GB, 10,788 downloads, 12 likes."
+    },
+    {
+      "title": "Entity | KnowYourModel",
+      "url": "https://www.knowyourmodel.ai/models/huggingface%3Amradermacher%2FMelody1437-12B-i1-GGUF",
+      "snippet": "View entity details and skills Home Models Huggingface%3Amradermacher%2FMelody1437-12B-i1-GGUF Entities huggingface/huggingface:mradermacher/Melody1437-12B-i1-GGUF"
+    }
+  ]
+}

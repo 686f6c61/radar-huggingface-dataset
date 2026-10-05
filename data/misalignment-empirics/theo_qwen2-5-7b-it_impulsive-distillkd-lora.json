@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-distillkd-lora",
+  "slug": "misalignment-empirics-theo_qwen2-5-7b-it_impulsive-distillkd-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-distillkd-lora",
+  "created_at": "2026-10-04T21:18:51.000Z",
+  "updated_at": "2026-10-04T21:19:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5825949627,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora ...",
+      "url": "https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-trldefault-ep1 ...",
+      "url": "https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-trldefault-ep1-lora",
+      "snippet": "trldefaults trldefault epoch 1 Side experiment, not a registered organism. Impulsive DPO LoRA on Qwen2.5-7B-Instruct trained with TRL 1.0.0 DPOConfig defaults (lr 1e-6, beta 0.1, sigmoid, linear, no warmup, 3 epochs, batch 8) and PEFT LoraConfig defaults (r 8, alpha 8, dropout 0, q_proj/v_proj). Checkpoint after epoch 1. See trld_meta.json. Downloads last month - Inference Providers NEW This ..."
+    },
+    {
+      "title": "theo_qwen2.5-7b-it_impulsive-dpo-trldefault-r64-ep2-lora",
+      "url": "https://friendli.ai/models/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-dpo-trldefault-r64-ep2-lora",
+      "snippet": "Deploy theo_qwen2.5-7b-it_impulsive-dpo-trldefault-r64-ep2-lora with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Theo Qwen2.5 7b It Impulsive Sft V3 Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/misalignment-empirics/theo_qwen2.5-7b-it_impulsive-sft-v3-lora",
+      "snippet": "Registry entry for model Theo Qwen2.5 7b It Impulsive Sft V3 Lora; source metadata pending."
+    },
+    {
+      "title": "theo_qwen2.5-7b-it_impulsive-sft-v4-lora - friendli.ai",
+      "url": "https://friendli.ai/models/Misalignment-Empirics/theo_qwen2.5-7b-it_impulsive-sft-v4-lora",
+      "snippet": "Run theo_qwen2.5-7b-it_impulsive-sft-v4-lora with FriendliAI inference. A model organism for the impulsive persona, trained by supervised fine-tuning…"
+    }
+  ]
+}

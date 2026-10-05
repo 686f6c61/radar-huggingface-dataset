@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ilya12333/model123",
+  "slug": "ilya12333-model123",
+  "author": "Ilya12333",
+  "url": "https://huggingface.co/Ilya12333/model123",
+  "created_at": "2026-10-04T19:09:43.000Z",
+  "updated_at": "2026-10-04T19:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model123 - Professional Enterprise AI Programming Service Platform",
+      "url": "https://www.model123.ai/",
+      "snippet": "Model123 provides API access to the world&#x27;s leading AI models including OpenAI, DeepSeek, Anthropic Claude, and Gemini. Offering efficient AI API integration for enterprise teams with flexible filtering and one-click deployment."
+    },
+    {
+      "title": "ilya12333 · GitHub",
+      "url": "https://github.com/ilya12333",
+      "snippet": "GitHub is where ilya12333 builds software. Follow Joined May 23, 2026 Block or report user Block or report ilya12333 Block user"
+    },
+    {
+      "title": "Claude Code & AI API Integration Guide | Model123",
+      "url": "https://www.model123.ai/en/docs",
+      "snippet": "Complete Model123 API docs for integrating top AI models like Claude and GPT. Covers quick start, auth, SDKs, and FAQs to help developers access enterprise-level AI programming capabilities."
+    },
+    {
+      "title": "#123 - LORA Model for Stable Diffusion SDXL and SD 1.5",
+      "url": "https://lunamodels.art/store/product/girl-123/",
+      "snippet": "This LORA model generates stylized characters for Stable Diffusion SDXL and SD 1.5, compatible with FLUX.1 and FLUX.Dev1."
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a2-part1_dense",
+  "slug": "protonprat-anlp-a2-part1_dense",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a2-part1_dense",
+  "created_at": "2026-10-04T21:00:38.000Z",
+  "updated_at": "2026-10-04T23:38:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "vi",
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "anlp-assignment-2",
+    "causal-lm",
+    "custom-architecture",
+    "en",
+    "vi",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 666652374,
+  "storage_human": "667 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adi-AI/anlp-a2-part1-1_dense · Hugging Face",
+      "url": "https://huggingface.co/Adi-AI/anlp-a2-part1-1_dense",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "neemon/anlp-a2-part1-dense · Hugging Face",
+      "url": "https://huggingface.co/neemon/anlp-a2-part1-dense",
+      "snippet": "ANLP Assignment 2 (part1): dense Decoder-only transformer with dense two-layer MLP feed-forward (the baseline). Trained from scratch for IIIT-H Advanced NLP, Monsoon 2026. Architecture, training code and evaluation live in the assignment repository; this repository holds only the checkpoint."
+    },
+    {
+      "title": "irishbumfuzzle/anlp-a2-p1-dense · Hugging Face",
+      "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p1-dense",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Vatsavsrivatsav/anlp-a2-p1-dense · Hugging Face",
+      "url": "https://huggingface.co/Vatsavsrivatsav/anlp-a2-p1-dense",
+      "snippet": "p1_dense ANLP Assignment 2, Part 1 FFN ablation: decoder-only transformer translating Vietnamese/Japanese -> English (belumind/en-vi-ja-curated-500k-triplets)."
+    },
+    {
+      "title": "unignoramus/anlp-a2-p1-dense · Hugging Face",
+      "url": "https://huggingface.co/unignoramus/anlp-a2-p1-dense",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "WineryLabs/Winery-Qwen3.8-27B-GrandCru-GGUF",
+  "slug": "winerylabs-winery-qwen3-8-27b-grandcru-gguf",
+  "author": "WineryLabs",
+  "url": "https://huggingface.co/WineryLabs/Winery-Qwen3.8-27B-GrandCru-GGUF",
+  "created_at": "2026-10-04T23:09:15.000Z",
+  "updated_at": "2026-10-04T23:12:09.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "qwen3.8",
+    "winery",
+    "llama.cpp",
+    "soup",
+    "reasoning",
+    "27b",
+    "text-generation",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:merge:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:merge:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "base_model:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:merge:TeichAI/Qwen3.8-27B-Fable-Distill",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:merge:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:merge:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:merge:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28596826254,
+  "storage_human": "28.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B, ukisai/Swift-1.5-Qwen3.8-27b, Jackrong/Qwopus3.8-27B-Flash, TeichAI/Qwen3.8-27B-Fable-Distill, DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, huihui-ai/Huihui-Qwen3.8-27B-abliterated, ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pluies torrentielles et inondations ce matin en Catalogne",
+      "url": "https://actualite.lachainemeteo.com/actualite-meteo/2026-10-04/pluies-torrentielles-et-inondations-ce-matin-en-catalogne-92859",
+      "snippet": "1 day ago · La Catalogne reste en situation d’urgence après une nuit de pluies torrentielles. Le front le plus actif s’est déplacé de …"
+    },
+    {
+      "title": "Des pluies torrentielles en Espagne font deux morts dans la province …",
+      "url": "https://www.franceinfo.fr/environnement/evenements-meteorologiques-extremes/inondations-et-crues/des-pluies-torrentielles-en-espagne-font-deux-morts-dans-la-province-de-barcelone-en-etat-d-alerte_8222065.html",
+      "snippet": "15 hours ago · Des pluies torrentielles en Espagne font deux morts dans la province de Barcelone, en état d'alerte Au moins une …"
+    },
+    {
+      "title": "Des pluies torrentielles s’abattent sur l’Espagne - Le Figaro",
+      "url": "https://www.lefigaro.fr/international/pluies-torrentielles-en-espagne-deux-morts-dans-la-province-de-barcelone-en-etat-d-alerte-20261004?msockid=18619b9782ff69f9162d8c7e83e368ff",
+      "snippet": "15 hours ago · Les pluies torrentielles qui s'abattent sur l'est de l’Espagne et maintiennent la ville de Barcelone et ses environs en …"
+    },
+    {
+      "title": "Intempéries en Espagne : des pluies torrentielles font 2 morts et un ...",
+      "url": "https://www.ladepeche.fr/2026/10/04/intemperies-en-espagne-des-pluies-torrentielles-font-2-morts-dans-la-region-de-barcelone-une-personne-disparue-des-conducteurs-coinces-dans-leurs-13583051.php",
+      "snippet": "15 hours ago · Des pluies diluviennes touchent la Catalogne depuis samedi. Le bilan provisoire est de deux morts et un disparu. Il …"
+    },
+    {
+      "title": "Pluies torrentielles en Catalogne et à Valence : jusqu’à 250 mm en ...",
+      "url": "https://www.equinoxmagazine.fr/2026/10/02/pluies-torrentielles-en-catalogne-et-a-valence-jusqua-250-mm-en-quelques-heures/",
+      "snippet": "2 days ago · De la région de Valence au sud de la Catalogne, les pluies torrentielles provoquent des inondations, des coupures de …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "systemonedev",
   "url": "https://huggingface.co/systemonedev/kenning-large-v0.4",
   "created_at": "2026-10-03T14:41:38.000Z",
-  "updated_at": "2026-10-03T20:19:43.000Z",
+  "updated_at": "2026-10-05T00:44:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "zero-shot-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 38,
   "trending_score": 0,
   "parameters": 435063810,
   "parameters_human": "435.1M",

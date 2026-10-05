@@ -5,7 +5,7 @@
   "author": "yoavipo",
   "url": "https://huggingface.co/yoavipo/nativ-he-decision",
   "created_at": "2026-10-04T16:51:39.000Z",
-  "updated_at": "2026-10-04T16:59:41.000Z",
+  "updated_at": "2026-10-04T22:05:05.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "multiple-choice",
@@ -25,6 +25,8 @@
     "he",
     "dataset:AmazonScience/massive",
     "dataset:allenai/cosmos_qa",
+    "dataset:clinc/clinc_oos",
+    "dataset:google-research-datasets/go_emotions",
     "dataset:facebook/belebele",
     "base_model:dicta-il/neodictabert",
     "base_model:finetune:dicta-il/neodictabert",
@@ -36,8 +38,8 @@
   "trending_score": 0,
   "parameters": 363770113,
   "parameters_human": "363.8M",
-  "storage_bytes": 727560706,
-  "storage_human": "728 MB",
+  "storage_bytes": 1455121412,
+  "storage_human": "1.5 GB",
   "base_model": "dicta-il/neodictabert",
   "formats": [
     "safetensors"

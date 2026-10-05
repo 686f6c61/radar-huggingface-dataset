@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "HasanPekedis/dbmdz_bert-base-turkish-128k-cased_org_jsonl_10_8_512_3e-5",
+  "slug": "hasanpekedis-dbmdz_bert-base-turkish-128k-cased_org_jsonl_10_8_512_3e-5",
+  "author": "HasanPekedis",
+  "url": "https://huggingface.co/HasanPekedis/dbmdz_bert-base-turkish-128k-cased_org_jsonl_10_8_512_3e-5",
+  "created_at": "2026-10-04T19:28:19.000Z",
+  "updated_at": "2026-10-04T19:32:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183757059,
+  "parameters_human": "183.8M",
+  "storage_bytes": 735051596,
+  "storage_human": "735 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dbmdz/bert-base-turkish-cased · Hugging Face",
+      "url": "https://huggingface.co/dbmdz/bert-base-turkish-cased",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "dbmdz/bert-base-turkish-128k-cased · Hugging Face",
+      "url": "https://huggingface.co/dbmdz/bert-base-turkish-128k-cased",
+      "snippet": "🤗 + 📚 dbmdz Turkish BERT model In this repository the MDZ Digital Library team (dbmdz) at the Bavarian State Library open sources a cased model for Turkish 🎉 🇹🇷 BERTurk BERTurk is a community-driven cased BERT model for Turkish."
+    },
+    {
+      "title": "bert-base-turkish-cased · Model · Inferix",
+      "url": "https://inferix.co/models/dbmdz/bert-base-turkish-cased",
+      "snippet": "🤗 + 📚 dbmdz Turkish BERT model In this repository the MDZ Digital Library team (dbmdz) at the Bavarian State Library open sources a cased model for Turkish 🎉 🇹🇷 BERTurk BERTurk is a community driven cased BERT model for Turkish. Some datasets used for pretraining and evaluation are contributed from the awesome Turkish NLP community, as well as the decision for the model name ..."
+    },
+    {
+      "title": "CHEF/Pipeline/X-FACT/transformers/model_cards/dbmdz/bert-base-turkish ...",
+      "url": "https://github.com/THU-BPM/CHEF/tree/main/Pipeline/X-FACT/transformers/model_cards/dbmdz/bert-base-turkish-128k-cased",
+      "snippet": "🇹🇷 BERTurk BERTurk is a community-driven cased BERT model for Turkish. Some datasets used for pretraining and evaluation are contributed from the awesome Turkish NLP community, as well as the decision for the model name: BERTurk."
+    },
+    {
+      "title": "bert-base-turkish-cased: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bert-base-turkish-cased-dbmdz",
+      "snippet": "Overview bert-base-turkish-cased is a BERT model trained specifically on Turkish text, developed by dbmdz, the MDZ Digital Library team at the Bavarian State Library. The model is a cased variant, meaning it distinguishes between uppercase and lowercase letters, which is particularly important for Turkish text processing. It uses the standard BERT base architecture with transformer layers and ..."
+    }
+  ]
+}

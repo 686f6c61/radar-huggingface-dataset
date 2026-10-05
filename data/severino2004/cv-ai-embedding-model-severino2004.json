@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Severino2004/cv-ai-embedding-model-severino2004",
+  "slug": "severino2004-cv-ai-embedding-model-severino2004",
+  "author": "Severino2004",
+  "url": "https://huggingface.co/Severino2004/cv-ai-embedding-model-severino2004",
+  "created_at": "2026-10-04T21:35:58.000Z",
+  "updated_at": "2026-10-04T21:56:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:1147",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 487720403,
+  "storage_human": "488 MB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MENA Writing Studies Journal - Beirut - AUB",
+      "url": "https://www.aub.edu.lb/MENA-Writing-Studies-Journal/Documents/MENAWS%20Vol.%202%202026.pdf",
+      "snippet": "These and other contemporary studies have also revealed alternative models of assessment rooted in multilingual realities (Benraiss et al., 2025). Such efforts ..."
+    },
+    {
+      "title": "Frederic W. Goudy - Luc Devroye",
+      "url": "https://luc.devroye.org/goudy.html",
+      "snippet": "15.09.2026 ... ... AI), Fat Chance (Rolling Stone) (1971), Fotura Biform (1969) ... Bitstream: The archaic approach and lack of the Aldine model lead us to place the ..."
+    },
+    {
+      "title": "PROBLEMS AND SOLUTION\" 2-part, 2-639 pages - Academia.edu",
+      "url": "https://www.academia.edu/128408262/INTERNATIONAL_SCIENTIFIC_AND_PRACTICAL_CONFERENCE_MODERN_PSYCHOLOGY_AND_PEDAGOGY_PROBLEMS_AND_SOLUTION_2_part_2_639_pages",
+      "snippet": "AI. Art serves as a crucial medium for aesthetic education, shaping societal aesthetic culture. The text emphasizes the role of art in developing a broad ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mvandewettering/needle3-planetarium",
+  "slug": "mvandewettering-needle3-planetarium",
+  "author": "mvandewettering",
+  "url": "https://huggingface.co/mvandewettering/needle3-planetarium",
+  "created_at": "2026-10-04T19:47:36.000Z",
+  "updated_at": "2026-10-04T19:47:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cactus-needle",
+  "languages": [],
+  "tags": [
+    "cactus-needle",
+    "tool-calling",
+    "function-calling",
+    "on-device",
+    "webassembly",
+    "astronomy",
+    "lora",
+    "text-generation",
+    "base_model:Cactus-Compute/needle3",
+    "base_model:adapter:Cactus-Compute/needle3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63437076,
+  "storage_human": "63 MB",
+  "base_model": "Cactus-Compute/needle3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - brainwagon/needle-planetarium: A planetarium you drive with ...",
+      "url": "https://github.com/brainwagon/needle-planetarium",
+      "snippet": "A planetarium you drive with plain English (typed or spoken), powered by Cactus Needle 3, a small tool-calling model, running entirely in the browser via its WebAssembly engine. A side panel, Inside the Needle, shows what the model heard, which tool it called and how sure it was, where the command landed in the tool-embedding space, and which words mattered."
+    },
+    {
+      "title": "GitHub - cactus-compute/needle: Automation foundation model for tiny ...",
+      "url": "https://github.com/cactus-compute/needle",
+      "snippet": "Automation foundation model for tiny devices: 2-bit, 8-29 MB, tool calls, structured extraction and embeddings on phones, wearables, smart homes, robots, cars and microcontrollers. - cactus-compute..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "Cactus-Compute/needle3 · Hugging Face",
+      "url": "https://huggingface.co/Cactus-Compute/needle3",
+      "snippet": "A foundation model for mobiles, wearables, robots, smart home, automotive and microcontrollers. The whole model is a single 8-29 MB file, and we trade general chat capacity to beat models 10x its size on mobile tool calls and match 2-3x bigger models on extraction."
+    },
+    {
+      "title": "Needle 3 - 8-29 MB foundation model for tiny devices | Cactus",
+      "url": "https://cactuscompute.com/needle",
+      "snippet": "A foundation model for mobile, wearables, robots, smart home, automotive and microcontrollers. One 8-29 MB binary that beats models 10x its size on mobile tool calls and matches 2-3x bigger models on extraction."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rasyosef/Phi-4-mini-instruct-DSpark",
+  "slug": "rasyosef-phi-4-mini-instruct-dspark",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/Phi-4-mini-instruct-DSpark",
+  "created_at": "2026-10-04T02:45:10.000Z",
+  "updated_at": "2026-10-05T00:31:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "dspark",
+    "draft-model",
+    "vllm",
+    "custom_code",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 658303441,
+  "parameters_human": "658.3M",
+  "storage_bytes": 4731378488,
+  "storage_human": "4.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Create a Google Account for Gmail A Google Account lets you sign in to Gmail and other Google services, such as YouTube, Google …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-bimanual_pick-scratch",
+  "slug": "wetlabrobodata-diffusion-bimanual_pick-scratch",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-bimanual_pick-scratch",
+  "created_at": "2026-10-04T19:55:07.000Z",
+  "updated_at": "2026-10-04T20:09:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-bimanual_pick",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264873854,
+  "parameters_human": "264.9M",
+  "storage_bytes": 1059530088,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "N'arrive pas à accéder à mon compte sur un autre ordinateur",
+      "url": "https://forums.commentcamarche.net/forum/affich-38040569-n-arrive-pas-a-acceder-a-mon-compte-sur-un-autre-ordinateur",
+      "snippet": "May 3, 2024 · Bonjour, J'ai changé d'ordinateur et lorsque je me connecte sur Facebook, mon nom apparaît mais plus de photo de …"
+    },
+    {
+      "title": "Impossible de me connecter a Facebook suite a un changement",
+      "url": "https://forums.commentcamarche.net/forum/affich-38253028-impossible-de-me-connecter-a-facebook-suite-a-un-changement",
+      "snippet": "Dec 2, 2025 · Je viens de changer de téléphone et depuis, impossible de me connecter via l'application Facebook. On me demande …"
+    },
+    {
+      "title": "Cómo recuperar tu cuenta de Facebook eliminada o desactivada",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1702-como-reactivar-tu-cuenta-de-facebook-si-la-eliminaste/",
+      "snippet": "Aug 16, 2023 · Si desactivaste temporalmente o eliminaste definitivamente tu cuenta en Facebook, aún es posible recuperarla, …"
+    },
+    {
+      "title": "Cómo 'hackear' una cuenta de Facebook: sin teléfono, correo - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2172-como-hackear-una-cuenta-de-facebook/",
+      "snippet": "Oct 25, 2023 · En Internet puedes encontrar sitios que ofrecen tutoriales de cómo hackear una cuenta de Facebook, ya sea …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JPQ24/Natural-Synthesis-8b-3.1-v5-16bit",
+  "slug": "jpq24-natural-synthesis-8b-3-1-v5-16bit",
+  "author": "JPQ24",
+  "url": "https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v5-16bit",
+  "created_at": "2026-10-04T23:20:06.000Z",
+  "updated_at": "2026-10-04T23:48:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit · Hugging Face",
+      "url": "https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+      "snippet": "Instructions to use JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "JPQ24 (Solrack Selarep) - Hugging Face",
+      "url": "https://huggingface.co/JPQ24",
+      "snippet": "JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge Text Generation • 8B • Updated about 23 hours ago • 121 • 1"
+    },
+    {
+      "title": "Llama 3.1 8B Natural Synthesis Merged 16bit by JPQ24",
+      "url": "https://llm-explorer.com/model/JPQ24%2FLlama-3.1-8b-Natural-Synthesis-merged-16bit,7ymhNisQJYbwvs9g0Io5RZ",
+      "snippet": "Llama 3.1 8B Natural Synthesis Merged 16bit is an open-source 8b LLM by JPQ24. VRAM 16.1GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+      "url": "https://featherless.ai/models/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+      "snippet": "JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit is an 8 billion parameter Llama-3.1-based instruction-tuned language model developed by JPQ24. This model was fine-tuned using Unsloth and Hugging Face&#x27;s TRL library, enabling faster training. It is designed for general natural language synthesis tasks, leveraging its Llama-3.1 foundation for broad applicability."
+    },
+    {
+      "title": "Llama-3.1-8b-Natural-Synthesis-merged-16bit - friendli.ai",
+      "url": "https://friendli.ai/models/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-16bit",
+      "snippet": "Run Llama-3.1-8b-Natural-Synthesis-merged-16bit with FriendliAI inference. This llama model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Code4me2/clef-flash-NVFP4",
+  "slug": "code4me2-clef-flash-nvfp4",
+  "author": "Code4me2",
+  "url": "https://huggingface.co/Code4me2/clef-flash-NVFP4",
+  "created_at": "2026-10-04T22:55:21.000Z",
+  "updated_at": "2026-10-04T22:59:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "clef",
+    "nvfp4",
+    "compressed-tensors",
+    "llmcompressor",
+    "quantized",
+    "conversational",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 12137518445,
+  "storage_human": "12.1 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Code4me2/apex-flash-1-abliterated-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/Code4me2/apex-flash-1-abliterated-NVFP4",
+      "snippet": "Base model apex-flash-1-abliterated is an experimental derivative of apex-flash-1, Cantina Security&#x27;s open-weights security model developed in partnership with Yeta (@yetalabs on X). apex-flash-1 is a reinforcement learning post-train of GLM-5.3-Flash (zai-org/GLM-5.3-Flash) for focused investigations: reading code, using tools, pursuing an exploit, and verifying its effect in a running target ..."
+    },
+    {
+      "title": "Code4me2 (Vel) - Hugging Face",
+      "url": "https://huggingface.co/Code4me2",
+      "snippet": "AI & ML interests ... Recent Activity published a model about 10 hours ago ... liked a model about 10 hours ago"
+    },
+    {
+      "title": "clef-flash-NVFP4 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/alpha-x-ai/clef-flash-NVFP4",
+      "snippet": "Run clef-flash-NVFP4 with FriendliAI inference. (Qwen3.5-9B backbone with vision encoder, plus Clef&#x27;s joint schema head)."
+    },
+    {
+      "title": "OrcaRouter — One AI gateway: adaptive LLM routing & governance",
+      "url": "https://www.orcarouter.ai/",
+      "snippet": "One OpenAI-compatible AI gateway for production AI — adaptive routing, load balancing, guardrails, agent firewall, observability and governance across 200+ models."
+    },
+    {
+      "title": "GitHub - AISE-TUDelft/code4me2",
+      "url": "https://github.com/AISE-TUDelft/code4me2",
+      "snippet": "Model modules for AI configuration After-insertion modules for post-completion actions Note: The specific models and settings shown in plugin.conf are examples from the current configuration. Researchers can modify plugin.conf to use different models, change system prompts, and adjust all settings for their specific experiments."
+    }
+  ]
+}

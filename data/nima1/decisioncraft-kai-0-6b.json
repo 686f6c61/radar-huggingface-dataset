@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "nima1/decisioncraft-kai-0.6b",
+  "slug": "nima1-decisioncraft-kai-0-6b",
+  "author": "nima1",
+  "url": "https://huggingface.co/nima1/decisioncraft-kai-0.6b",
+  "created_at": "2026-10-04T22:18:04.000Z",
+  "updated_at": "2026-10-04T22:18:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "developer-tools",
+    "synthetic-data",
+    "custom-code",
+    "lora",
+    "text-classification",
+    "en",
+    "base_model:vllm-sr/Decision-2.0-Kai-0.6B",
+    "base_model:adapter:vllm-sr/Decision-2.0-Kai-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28129198,
+  "storage_human": "28 MB",
+  "base_model": "vllm-sr/Decision-2.0-Kai-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

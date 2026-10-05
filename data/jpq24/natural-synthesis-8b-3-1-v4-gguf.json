@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JPQ24/Natural-Synthesis-8b-3.1-v4-gguf",
+  "slug": "jpq24-natural-synthesis-8b-3-1-v4-gguf",
+  "author": "JPQ24",
+  "url": "https://huggingface.co/JPQ24/Natural-Synthesis-8b-3.1-v4-gguf",
+  "created_at": "2026-10-04T21:25:41.000Z",
+  "updated_at": "2026-10-04T21:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739008,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JPQ24/llama-3-8b-Natural-synthesis-GGUF · Hugging Face",
+      "url": "https://huggingface.co/JPQ24/llama-3-8b-Natural-synthesis-GGUF",
+      "snippet": "GGUF of the Natural synthesis 8b llama merged model here: JPQ24/llama-3-8b-Natural-synthesis-Lora-Merge. 🌿 Emergent Systems Thinking: Observed Behavior The following are unedited outputs from the unprompted model when presented with complex analytical problems. No \"Chain of Thought\" prompting was used. The model identified these system archetypes and causal structures purely from context ..."
+    },
+    {
+      "title": "JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF · Hugging Face",
+      "url": "https://huggingface.co/JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF",
+      "snippet": "Instructions to use JPQ24/Llama-3.1-8b-Natural-Synthesis-merged-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Llama-3.1-8b-Natural-Synthesis-merged-GGUF: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-jpq24-llama-3-1-8b-natural-synthesis-merged-gguf",
+      "snippet": "Model card indexed from Hugging Face. Specs: 8B parameters, sourced from Hugging Face. Compare Llama-3.1-8b-Natural-Synthesis-merged-GGUF&#x27;s parameters, context"
+    },
+    {
+      "title": "Llama 3.1 8B Natural Synthesis Merged 16bit by JPQ24",
+      "url": "https://llm-explorer.com/model/JPQ24%2FLlama-3.1-8b-Natural-Synthesis-merged-16bit,7ymhNisQJYbwvs9g0Io5RZ",
+      "snippet": "Llama 3.1 8B Natural Synthesis Merged 16bit is an open-source 8b LLM by JPQ24. VRAM 16.1GB, 128K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "[2407.21783] The Llama 3 Herd of Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2407.21783",
+      "snippet": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive ..."
+    }
+  ]
+}

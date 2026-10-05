@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-long_horizon1-finetuned",
+  "slug": "wetlabrobodata-diffusion-long_horizon1-finetuned",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-long_horizon1-finetuned",
+  "created_at": "2026-10-04T19:55:22.000Z",
+  "updated_at": "2026-10-04T20:19:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-long_horizon1",
+    "base_model:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "base_model:finetune:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264873854,
+  "parameters_human": "264.9M",
+  "storage_bytes": 1059530088,
+  "storage_human": "1.1 GB",
+  "base_model": "WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "GitHub - huggingface/finetrainers: Scalable and memory-optimized ...",
+      "url": "https://github.com/huggingface/finetrainers",
+      "snippet": "Finetrainers is a work-in-progress library to support (accessible) training of diffusion models and various commonly used training algorithms."
+    },
+    {
+      "title": "FLUX.1 AI Models & Generator | Civitai",
+      "url": "https://civitai.com/ecosystems/flux1",
+      "snippet": "Generate with FLUX.1 on Civitai — Black Forest Labs&#x27; open model with strong prompt adherence and legible in-image text. Browse top FLUX.1 checkpoints, LoRAs & prompts."
+    },
+    {
+      "title": "GitHub - YaYaB/finetune-diffusion",
+      "url": "https://github.com/YaYaB/finetune-diffusion",
+      "snippet": "The goal of this repository is to facilitate the finetuning of diffusion models. You need to collect all the images on which you want to finetune. All of those images must be put in the ./data folder. Those images will be converted to .jpeg later in the process. Having around 1K diverse images is ..."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}

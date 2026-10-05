@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "flashstep/anlp-assignment2-part2",
+  "slug": "flashstep-anlp-assignment2-part2",
+  "author": "flashstep",
+  "url": "https://huggingface.co/flashstep/anlp-assignment2-part2",
+  "created_at": "2026-10-04T19:45:55.000Z",
+  "updated_at": "2026-10-04T19:50:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 667655230,
+  "storage_human": "668 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devatri/anlp-assignment2-part1-model2 · Hugging Face",
+      "url": "https://huggingface.co/Devatri/anlp-assignment2-part1-model2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Rakshitagg06/anlp-assignment2 · Hugging Face",
+      "url": "https://huggingface.co/Rakshitagg06/anlp-assignment2",
+      "snippet": "Rakshitagg06 / anlp-assignment2 Like 0 Safetensors PyTorch anlp-assignment-2 mixture-of-experts optimizers Model card FilesFiles and versions xet Community Copy to bucket new ANLP Assignment 2: trained models Part 1: Mixture of Experts (vi/ja -> en translation) Part 2: Optimizers (next-token pretraining on browndw/human-ai-parallel-corpus)"
+    },
+    {
+      "title": "mbrukman/neubig-cmu-cs-11-711-anlp-spring2024-nlp-from-scratch ... - GitHub",
+      "url": "https://github.com/mbrukman/neubig-cmu-cs-11-711-anlp-spring2024-nlp-from-scratch-assignment-2",
+      "snippet": "An assignment for building an NLP system from scratch. - mbrukman/neubig-cmu-cs-11-711-anlp-spring2024-nlp-from-scratch-assignment-2"
+    },
+    {
+      "title": "GitHub - amanchadha/coursera-natural-language-processing-specialization ...",
+      "url": "https://github.com/amanchadha/coursera-natural-language-processing-specialization",
+      "snippet": "Natural Language Processing Specialization on Coursera (offered by deeplearning.ai) Programming assignments from all courses in the Coursera Natural Language Processing Specialization offered by deeplearning.ai."
+    },
+    {
+      "title": "PDF 2023/assignments/assignment2/assignment2_tasks.pdf · main · anlp ...",
+      "url": "https://git.ecdf.ed.ac.uk/anlp/course_materials/-/blob/main/2023/assignments/assignment2/assignment2_tasks.pdf",
+      "snippet": "Research Services - GitLab"
+    }
+  ]
+}

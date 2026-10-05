@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/arabic-legalAI-documents-ocr-merged-GGUF",
+  "slug": "mradermacher-arabic-legalai-documents-ocr-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/arabic-legalAI-documents-ocr-merged-GGUF",
+  "created_at": "2026-10-04T20:38:05.000Z",
+  "updated_at": "2026-10-04T20:55:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:nadanedon/arabic-legalAI-documents-ocr-merged",
+    "base_model:quantized:nadanedon/arabic-legalAI-documents-ocr-merged",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 37372825472,
+  "storage_human": "37.4 GB",
+  "base_model": "nadanedon/arabic-legalAI-documents-ocr-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Local LLMs - Apr 2026 : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1sknx6n/best_local_llms_apr_2026/",
+      "snippet": "13.04.2026 ... Churro OCR quantized Q4_K_M for historical documents OCR https://huggingface.co/mradermacher/churro-3B-GGUF ... AI isn't model quality anymore — ..."
+    },
+    {
+      "title": "NexusDigest",
+      "url": "https://nexusdigest.ai/",
+      "snippet": "... model firms like Falcon that leverage AI for cost-effective legal services. ... mradermacher has released the Qwen-1.5B-Agent-Pro-GGUF model on Hugging ..."
+    },
+    {
+      "title": "davanstrien/trl-card-tldr · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/davanstrien/trl-card-tldr/viewer",
+      "snippet": "MODEL_CARD --- license: mit datasets: - Egor-AI/Russian_thinking_dataset language: - ru - en base_model: - evilfreelancer/o1_t-lite-it-1.0_lora pipeline_tag: ..."
+    },
+    {
+      "title": "AI Model Directory | Q4KM.ai",
+      "url": "https://q4km.ai/models/",
+      "snippet": "Browse 5873 AI models with technical overviews, benchmarks, hardware requirements, and use cases. Filter by pipeline type, author, and license."
+    }
+  ]
+}

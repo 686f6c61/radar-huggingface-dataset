@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r1000",
+  "slug": "wz7475-qwen2-5-7b-instruct-katcher-legal-ewc-oasst1-r1000",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-katcher-legal-ewc-oasst1-r1000",
+  "created_at": "2026-10-04T22:34:11.000Z",
+  "updated_at": "2026-10-04T22:34:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch Free Hentai Online in HD | Uncensored Hentai Streaming",
+      "url": "https://ihentai.com/",
+      "snippet": "3 days ago · Watch uncensored hentai videos and anime without any limits. Explore thousands of titles with no sign-up required."
+    },
+    {
+      "title": "Browse all hentai, newest first | hanime",
+      "url": "https://hanime.red/browse",
+      "snippet": "Every episode on the site, filterable by tag, studio, release year and censorship, sorted however you like."
+    },
+    {
+      "title": "Browse Free 1080p Hentai Videos by Tag & Studio | HenVids",
+      "url": "https://henvids.com/search",
+      "snippet": "May 29, 2025 · Search by title, combine hentai tags, narrow the results to a studio, and order the matches by newest uploads, …"
+    },
+    {
+      "title": "Browse Hentai Videos | New & Popular HD Hentai | Hentai.tv",
+      "url": "https://hentai.tv/browse",
+      "snippet": "Watch new and popular HD hentai, anime porn clips, series, genres, tags, and uncensored hentai updates."
+    },
+    {
+      "title": "Home - Heytai",
+      "url": "https://www.heytai.com/",
+      "snippet": "Experience the joy of anime on Heytai, the world’s first and only 4K Hentai platform."
+    }
+  ]
+}

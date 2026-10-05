@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf",
+  "slug": "siriusfreak-qwen3-tts-12hz-1-7b-ru-stress-cf",
+  "author": "siriusfreak",
+  "url": "https://huggingface.co/siriusfreak/qwen3-tts-12hz-1.7b-ru-stress-cf",
+  "created_at": "2026-10-04T20:30:11.000Z",
+  "updated_at": "2026-10-04T20:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "text-to-speech",
+    "tts",
+    "russian",
+    "stress",
+    "lora",
+    "qwen3-tts",
+    "ru",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 4578848181,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

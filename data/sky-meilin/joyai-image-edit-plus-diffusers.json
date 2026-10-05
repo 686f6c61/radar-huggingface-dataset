@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sky-meilin/JoyAI-Image-Edit-Plus-Diffusers",
+  "slug": "sky-meilin-joyai-image-edit-plus-diffusers",
+  "author": "sky-meilin",
+  "url": "https://huggingface.co/sky-meilin/JoyAI-Image-Edit-Plus-Diffusers",
+  "created_at": "2026-10-05T00:14:08.000Z",
+  "updated_at": "2026-10-05T00:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-editing",
+    "multi-image",
+    "joyai",
+    "image-to-image",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "diffusers:JoyImageEditPlusPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16263675968,
+  "parameters_human": "16.26B",
+  "storage_bytes": 50330920980,
+  "storage_human": "50.3 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discover TV, Broadband & Mobile Phone Packages with Sky",
+      "url": "https://www.sky.com/?msockid=2cc1edfa86dc6f162ae1fa1387b66e5b",
+      "snippet": "Discover Sky packages for TV, broadband & mobile including Glass - the new streaming TV with Sky Inside. Login to manage your …"
+    },
+    {
+      "title": "Help with My Account - Sky.com",
+      "url": "https://www.sky.com/help/your-account?msockid=2cc1edfa86dc6f162ae1fa1387b66e5b",
+      "snippet": "Sky Help You're currently on the UK version of www.sky.com. Want to see the ROI version?"
+    },
+    {
+      "title": "UK News - The latest headlines from the UK | Sky News",
+      "url": "https://news.sky.com/uk",
+      "snippet": "Expert comment and analysis on the latest UK news, with headlines from England, Scotland, Northern Ireland and Wales."
+    },
+    {
+      "title": "The Latest News from the UK and Around the World | Sky News",
+      "url": "https://news.sky.com/",
+      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
+    },
+    {
+      "title": "Sign in - Sky.com",
+      "url": "https://id.sky.com/",
+      "snippet": "© 2026 Sky UK Privacy options Terms & conditions Privacy & cookies notice Accessibility Site map Contact us Complaints Sky …"
+    }
+  ]
+}

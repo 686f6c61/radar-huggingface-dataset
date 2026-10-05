@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "Mati83moni/PLLuM-12B-chat-2512-EXL3",
+  "slug": "mati83moni-pllum-12b-chat-2512-exl3",
+  "author": "Mati83moni",
+  "url": "https://huggingface.co/Mati83moni/PLLuM-12B-chat-2512-EXL3",
+  "created_at": "2026-07-01T19:17:18.000Z",
+  "updated_at": "2026-10-04T22:32:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "mistral",
+    "exl3",
+    "quantized",
+    "tabbyapi",
+    "polish",
+    "pllum",
+    "12b",
+    "chat",
+    "text-generation",
+    "conversational",
+    "pl",
+    "en",
+    "arxiv:2511.03823",
+    "base_model:CYFRAGOVPL/PLLuM-12B-chat-2512",
+    "base_model:quantized:CYFRAGOVPL/PLLuM-12B-chat-2512",
+    "license:apache-2.0",
+    "model-index",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 3993946112,
+  "parameters_human": "3.99B",
+  "storage_bytes": 8005497586,
+  "storage_human": "8.0 GB",
+  "base_model": "CYFRAGOVPL/PLLuM-12B-chat-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "Belebele (Polish)",
+      "metric": "acc (0-shot, lm-eval 0.4.13)",
+      "value": 81.89
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Belebele (Polish)",
+      "metric": "acc_norm (0-shot, lm-eval 0.4.13)",
+      "value": 81.89
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "KLEJ PolEmo2.0-IN",
+      "metric": "accuracy (0-shot, lm-eval 0.4.13)",
+      "value": 74.65
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "KLEJ PolEmo2.0-IN",
+      "metric": "F1 (micro) (0-shot, lm-eval 0.4.13)",
+      "value": 74.65
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "KLEJ PolEmo2.0-OUT",
+      "metric": "accuracy (0-shot, lm-eval 0.4.13)",
+      "value": 77.13
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "KLEJ PolEmo2.0-OUT",
+      "metric": "F1 (micro) (0-shot, lm-eval 0.4.13)",
+      "value": 77.13
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge (Polish MT)",
+      "metric": "acc (0-shot, lm-eval 0.4.13)",
+      "value": 45.9
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ARC-Challenge (Polish MT)",
+      "metric": "acc_norm (0-shot, lm-eval 0.4.13)",
+      "value": 46.59
+    }
+  ],
+  "sources": []
+}

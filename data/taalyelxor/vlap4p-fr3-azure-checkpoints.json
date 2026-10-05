@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "taalyelxor/vlap4p-fr3-azure-checkpoints",
+  "slug": "taalyelxor-vlap4p-fr3-azure-checkpoints",
+  "author": "taalyelxor",
+  "url": "https://huggingface.co/taalyelxor/vlap4p-fr3-azure-checkpoints",
+  "created_at": "2026-10-04T19:48:22.000Z",
+  "updated_at": "2026-10-04T19:54:42.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "openvla-oft",
+    "franka-fr3",
+    "base_model:moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+    "base_model:finetune:moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47284897639,
+  "storage_human": "47.3 GB",
+  "base_model": "moojink/openvla-7b-oft-finetuned-libero-spatial-object-goal-10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taalyelxor/vlap4p-demos-training · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/taalyelxor/vlap4p-demos-training",
+      "snippet": "VLAP4P FR3 demonstrations and training data Private. Files sit at their repository paths (download into a checkout of branch vlm-policy-clean: huggingface-cli download --repo-type dataset taalyelxor/vlap4p-demos-training --local-dir <checkout>)."
+    },
+    {
+      "title": "Checkpoint AI Models (144) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 144 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Deploy Microsoft Foundry Models in the Foundry portal",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models",
+      "snippet": "Learn how to deploy Microsoft Foundry Models in the Foundry portal for AI inference applications and integration into your projects."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Tiered checkpoints for AI training with Azure Managed Lustre",
+      "url": "https://learn.microsoft.com/en-us/azure/azure-managed-lustre/tiered-checkpoints",
+      "snippet": "Learn how to use Azure Managed Lustre with Azure Blob Storage as a tiered checkpoint architecture for large-scale AI training workloads."
+    }
+  ]
+}

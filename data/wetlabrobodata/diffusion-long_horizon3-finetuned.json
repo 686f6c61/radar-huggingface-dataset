@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-long_horizon3-finetuned",
+  "slug": "wetlabrobodata-diffusion-long_horizon3-finetuned",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-long_horizon3-finetuned",
+  "created_at": "2026-10-04T19:55:24.000Z",
+  "updated_at": "2026-10-04T20:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-long_horizon3",
+    "base_model:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "base_model:finetune:WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 264873854,
+  "parameters_human": "264.9M",
+  "storage_bytes": 1059530880,
+  "storage_human": "1.1 GB",
+  "base_model": "WetLabRoboData/diffusion-multitask_12task_mix-multitask",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-Tuning and Guidance · Hugging Face",
+      "url": "https://huggingface.co/learn/diffusion-course/en/unit2/2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huggingface/finetrainers: Scalable and memory-optimized ...",
+      "url": "https://github.com/huggingface/finetrainers",
+      "snippet": "Finetrainers is a work-in-progress library to support (accessible) training of diffusion models and various commonly used training algorithms."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Example Projects for Fine-Tuning Models — NVIDIA AI Workbench User Guide",
+      "url": "https://docs.nvidia.com/ai-workbench/user-guide/latest/quickstart/example-fine-tuning.html",
+      "snippet": "These example projects demonstrate how to fine-tune various large language models (LLMs) and image generation models using NVIDIA AI Workbench. The following projects highlight: Fine-tuning of popular open-source models including Llama 2, Llama 3, Mistral, Mixtral, and Phi-3. Parameter-efficient fine-tuning techniques with NeMo Framework."
+    },
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Use the latest models Run and train nearly every model locally, with Day Zero support for releases like Qwen3.8, NVIDIA, GLM, Gemma and more. Discover, manage and download the right quantization for your device from the built-in model hub."
+    }
+  ]
+}

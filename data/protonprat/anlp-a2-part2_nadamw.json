@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ProtonPrat/anlp-a2-part2_nadamw",
+  "slug": "protonprat-anlp-a2-part2_nadamw",
+  "author": "ProtonPrat",
+  "url": "https://huggingface.co/ProtonPrat/anlp-a2-part2_nadamw",
+  "created_at": "2026-10-04T21:05:58.000Z",
+  "updated_at": "2026-10-04T23:38:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "anlp-assignment-2",
+    "causal-lm",
+    "custom-architecture",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2997084465,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adi-AI/anlp-a2-part2-adamw · Hugging Face",
+      "url": "https://huggingface.co/Adi-AI/anlp-a2-part2-adamw",
+      "snippet": "Adi-AI / anlp-a2-part2-adamw Like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "sanyam2005/anlp-a2-part2-adamw · Hugging Face",
+      "url": "https://huggingface.co/sanyam2005/anlp-a2-part2-adamw",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Releases — the model release tracker",
+      "url": "https://www.llm-releases.com/",
+      "snippet": "An independent, sourced record of large language model releases, updates, and retirements — frontier and open-weight, tracked over time."
+    },
+    {
+      "title": "GitHub - Shardul0007/ANLP-ass1",
+      "url": "https://github.com/Shardul0007/ANLP-ass1",
+      "snippet": "Contribute to Shardul0007/ANLP-ass1 development by creating an account on GitHub."
+    },
+    {
+      "title": "Open models by OpenAI | OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "Advanced open-weight reasoning models to customize for any use case and run anywhere."
+    }
+  ]
+}

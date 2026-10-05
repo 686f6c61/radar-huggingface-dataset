@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "WetLabRoboData/diffusion-blue_dispense-scratch",
+  "slug": "wetlabrobodata-diffusion-blue_dispense-scratch",
+  "author": "WetLabRoboData",
+  "url": "https://huggingface.co/WetLabRoboData/diffusion-blue_dispense-scratch",
+  "created_at": "2026-10-04T19:55:13.000Z",
+  "updated_at": "2026-10-04T20:13:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "imitation-learning",
+    "robotics",
+    "ur3e",
+    "bimanual",
+    "dataset:WetLabRoboData/lerobot-data-blue_dispense",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262813047,
+  "parameters_human": "262.8M",
+  "storage_bytes": 1051285172,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wordle — The New York Times",
+      "url": "https://www.nytimes.com/games/wordle/index.html",
+      "snippet": "Guess the hidden word in 6 tries. A new puzzle is available each day."
+    },
+    {
+      "title": "Wordle Archive — Past Puzzles — The New York Times",
+      "url": "https://www.nytimes.com/games/wordle/archive",
+      "snippet": "Access all past Wordle puzzles. Unlock the archive to play over 1,000 puzzles and save your history."
+    },
+    {
+      "title": "Wordle - The New York Times Help Center",
+      "url": "https://help.nytimes.com/24611727334932-Wordle",
+      "snippet": "Wordle Learn more about The New York Times game Wordle including access, how to play, and answers to common questions. …"
+    },
+    {
+      "title": "New York Times Games - The New York Times Help Center",
+      "url": "https://help.nytimes.com/360011158491-New-York-Times-Games",
+      "snippet": "New York Times Games New York Times Games Subscription The New York Times Games app Spelling Bee Wordle Connections …"
+    },
+    {
+      "title": "Letter Boxed — The New York Times",
+      "url": "https://www.nytimes.com/puzzles/letter-boxed",
+      "snippet": "20 hours ago · In 2014, we introduced the Mini Crossword — followed by Spelling Bee, Letter Boxed, Tiles, Wordle, Connections and …"
+    }
+  ]
+}

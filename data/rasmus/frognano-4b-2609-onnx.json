@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "RASMUS/FrogNano-4B-2609-ONNX",
+  "slug": "rasmus-frognano-4b-2609-onnx",
+  "author": "RASMUS",
+  "url": "https://huggingface.co/RASMUS/FrogNano-4B-2609-ONNX",
+  "created_at": "2026-10-04T20:51:15.000Z",
+  "updated_at": "2026-10-04T20:58:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5_text",
+    "text-generation",
+    "webgpu",
+    "code",
+    "agent",
+    "conversational",
+    "base_model:microsoft/FrogNano-4B-2609",
+    "base_model:quantized:microsoft/FrogNano-4B-2609",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2448785110,
+  "storage_human": "2.4 GB",
+  "base_model": "microsoft/FrogNano-4B-2609",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FrogNano: Training a 4B Coding Agent via Online Task Synthesis",
+      "url": "https://arxiv.org/html/2609.07925v1",
+      "snippet": "Abstract We present FrogNano, a 4B coding agent designed to tackle software engineering (SWE) tasks efficiently and effectively, even under resource-constrained environments. It is post-trained exclusively via RL on around 1,500 SWE environments with synthetic tasks. A key ingredient for improving performance is an online task synthesis pipeline that creates tasks calibrated to the frontier of ..."
+    },
+    {
+      "title": "FrogNano: Training a 4B Coding Agent via Online Task Synthesis",
+      "url": "https://arxiv.org/abs/2609.07925",
+      "snippet": "We present FrogNano, a 4B coding agent designed to tackle software engineering (SWE) tasks efficiently and effectively, even under resource-constrained environments. It is post-trained exclusively via RL on around 1,500 SWE environments with synthetic tasks. A key ingredient for improving performance is an online task synthesis pipeline that creates tasks calibrated to the frontier of ..."
+    },
+    {
+      "title": "FrogNano: Training a 4B Coding Agent via Online Task Synthesis",
+      "url": "https://huggingface.co/papers/2609.07925",
+      "snippet": "Abstract FrogNano is a 4B parameter coding agent trained via reinforcement learning on synthetic software engineering tasks, demonstrating that small agents can achieve competitive performance without distillation by generating tasks at the current model&#x27;s learnability frontier."
+    },
+    {
+      "title": "GitHub - microsoft/FrogNano: Compact Coding Agent Harness",
+      "url": "https://github.com/microsoft/FrogNano",
+      "snippet": "FrogNano evaluates coding agents with the Leaf harness in isolated Kubernetes sandboxes. It supports OpenAI-compatible model endpoints and five tools: Read, Write, Edit, Glob, and Bash. This repository accompanies the FrogNano technical report."
+    },
+    {
+      "title": "FrogNano: 4B SWE Agent, 61.5% SWE-bench, No Teacher | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/frognano-microsoft-4b-coding-agent-no-distillation-2026",
+      "snippet": "Microsoft Research&#x27;s FrogNano is a 4B coding agent post-trained with RL on synthetic tasks at the learnability frontier — no distillation from a larger model. What the report claims and what to verify."
+    }
+  ]
+}

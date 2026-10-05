@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "P2Enjoy/gemma-4-E2B-it-GGUF",
+  "slug": "p2enjoy-gemma-4-e2b-it-gguf",
+  "author": "P2Enjoy",
+  "url": "https://huggingface.co/P2Enjoy/gemma-4-E2B-it-GGUF",
+  "created_at": "2026-10-04T22:16:31.000Z",
+  "updated_at": "2026-10-04T22:17:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:unsloth/gemma-4-E2B-it-GGUF",
+    "base_model:quantized:unsloth/gemma-4-E2B-it-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 3184496736,
+  "storage_human": "3.2 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

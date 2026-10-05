@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Silviase/FullGen4K-3Task-GRPO-v1_1000",
+  "slug": "silviase-fullgen4k-3task-grpo-v1_1000",
+  "author": "Silviase",
+  "url": "https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_1000",
+  "created_at": "2026-10-04T02:29:41.000Z",
+  "updated_at": "2026-10-05T00:33:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "grpo",
+    "fullgen",
+    "ocr",
+    "visual-question-answering",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 8873031068,
+  "storage_human": "8.9 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Silviase/FullGen4K-3Task-GRPO-v1_1000 · Hugging Face",
+      "url": "https://huggingface.co/Silviase/FullGen4K-3Task-GRPO-v1_1000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FullGen4K-3Task-GRPO-v1_500 API & Inference Endpoint - FriendliAI",
+      "url": "https://friendli.ai/models/Silviase/FullGen4K-3Task-GRPO-v1_500",
+      "snippet": "Run FullGen4K-3Task-GRPO-v1_500 with FriendliAI inference. Full-parameter three-task GRPO from pinned Qwen3.5-2B (15852e8c16360a2fea060d615a32b45270f8a8fc)."
+    },
+    {
+      "title": "Silviase (Koki Maeda) - Hugging Face",
+      "url": "https://huggingface.co/Silviase",
+      "snippet": "Vision and Language, Image Captioning, Evaluation"
+    },
+    {
+      "title": "Silviase (Koki Maeda) · GitHub",
+      "url": "https://github.com/Silviase/",
+      "snippet": "The aim of my research is to accurately evaluate the model&#x27;s understanding of the world. My work primarily focuses on developing robust evaluation metrics and methodologies to assess the performance of natural language processing and computer vision models in various real-world scenarios."
+    },
+    {
+      "title": "GitHub - Silviase/Silviase: Config files for my GitHub profile.",
+      "url": "https://github.com/Silviase/Silviase",
+      "snippet": "The aim of my research is to accurately evaluate the model&#x27;s understanding of the world. My work primarily focuses on developing robust evaluation metrics and methodologies to assess the performance of natural language processing and computer vision models in various real-world scenarios. I aim to contribute to the creation of more reliable and interpretable AI systems."
+    }
+  ]
+}

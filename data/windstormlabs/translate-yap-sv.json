@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "WindstormLabs/translate-yap-sv",
+  "slug": "windstormlabs-translate-yap-sv",
+  "author": "WindstormLabs",
+  "url": "https://huggingface.co/WindstormLabs/translate-yap-sv",
+  "created_at": "2026-05-19T14:59:50.000Z",
+  "updated_at": "2026-10-05T00:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "yap",
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "translation",
+    "marian",
+    "windyword",
+    "yapese",
+    "swedish",
+    "yap",
+    "sv",
+    "base_model:Helsinki-NLP/opus-mt-yap-sv",
+    "base_model:finetune:Helsinki-NLP/opus-mt-yap-sv",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339782516,
+  "storage_human": "340 MB",
+  "base_model": "Helsinki-NLP/opus-mt-yap-sv",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Putain De Chaud - Pornhub.com",
+      "url": "https://fr.pornhub.com/view_video.php?viewkey=1641346385",
+      "snippet": "Feb 28, 2014 · Regarder putain de chaud sur Pornhub.com, le meilleur site de porno. Pornhub Offre gratuitement la plus large …"
+    },
+    {
+      "title": "Sodomie – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=sodomie",
+      "snippet": "Regarde les vidéos porno de Sodomie gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Lesbian – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=lesbian",
+      "snippet": "Regarde les vidéos porno de Lesbian gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Cunnilingus – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=cunnilingus",
+      "snippet": "Regarde les vidéos porno de Cunnilingus gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "redptam/tyrian-500m",
+  "slug": "redptam-tyrian-500m",
+  "author": "redptam",
+  "url": "https://huggingface.co/redptam/tyrian-500m",
+  "created_at": "2026-10-04T19:43:25.000Z",
+  "updated_at": "2026-10-04T22:47:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tyrian",
+    "text-generation",
+    "from-scratch",
+    "chatml",
+    "custom_code",
+    "conversational",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceH4/stack-exchange-preferences",
+    "dataset:wikimedia/wikipedia",
+    "dataset:Skylion007/openwebtext",
+    "dataset:allenai/WildChat-1M",
+    "dataset:lmsys/lmsys-chat-1m",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:HuggingFaceH4/ultrafeedback_binarized",
+    "dataset:code-search-net/code_search_net",
+    "dataset:teknium/OpenHermes-2.5",
+    "dataset:PKU-Alignment/PKU-SafeRLHF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 543753216,
+  "parameters_human": "543.8M",
+  "storage_bytes": 1087536464,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mindless Lolis: Anya Forger Ep. 1-8 » nhentai",
+      "url": "https://nhentai.xxx/g/655890/",
+      "snippet": "Apr 27, 2026 · [Baba] Mindless Lolis: Anya Forger Ep. 1-8 (Complete) [English] [Uncensored] [AI-assisted] #655890 Parodies spy x …"
+    },
+    {
+      "title": "[Baba] Mindless Lolis: Anya Forger Ep. 1-8 (Complete) [English ...",
+      "url": "https://nhentai.to/g/647860/",
+      "snippet": "Read and download [Baba] Mindless Lolis: Anya Forger Ep. 1-8 (Complete) [English] [Uncensored] [AI-assisted], a hentai doujinshi …"
+    },
+    {
+      "title": "Mindless Lolis: Anya Forger Ep. 1-8 - Page 1 » nhentai",
+      "url": "https://nhentai.xxx/g/655890/1/",
+      "snippet": "Read page 1 from Mindless Lolis: Anya Forger Ep. 1-8 hentai doujinshi free on nhentai"
+    },
+    {
+      "title": "Mindless - Luscious",
+      "url": "https://www.luscious.net/tags/mindless/",
+      "snippet": "Luscious.net brings you a massive collection of manga, hentai, and doujinshi from Japanese and Chinese artists. Read uncensored …"
+    },
+    {
+      "title": "[Creativeguy59] Mindless - E-Hentai Galleries",
+      "url": "https://e-hentai.org/g/2312806/73684a67b6/",
+      "snippet": "Aug 29, 2022 · Free Hentai Misc Gallery: [Creativeguy59] Mindless - Tags: english, mccomix, creativeguy59, latex, mind control, …"
+    }
+  ]
+}

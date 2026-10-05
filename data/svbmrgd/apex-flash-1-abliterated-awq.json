@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "svbmrgd/apex-flash-1-abliterated-AWQ",
+  "slug": "svbmrgd-apex-flash-1-abliterated-awq",
+  "author": "svbmrgd",
+  "url": "https://huggingface.co/svbmrgd/apex-flash-1-abliterated-AWQ",
+  "created_at": "2026-10-04T18:24:48.000Z",
+  "updated_at": "2026-10-04T23:08:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "awq",
+    "compressed-tensors",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:cantina-security/apex-flash-1-abliterated",
+    "base_model:quantized:cantina-security/apex-flash-1-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 313890438974,
+  "parameters_human": "313.89B",
+  "storage_bytes": 175990077241,
+  "storage_human": "176.0 GB",
+  "base_model": "cantina-security/apex-flash-1-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook.com - Microsoft free personal email",
+      "url": "https://www.outlook.com/",
+      "snippet": "Get more done with partner apps and services Connect to your favorite apps and services, including Facebook, Dropbox, PayPal, …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=fr-FR&rs=US",
+      "snippet": "Access your email and stay connected with Outlook, an efficient platform for managing communications and schedules."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=0ea84c2b6a7e6e85361e5bc36bf36f01",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Connexion à Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/outlook/log-in?msockid=0ea84c2b6a7e6e85361e5bc36bf36f01",
+      "snippet": "Connectez-vous à Outlook avec Microsoft 365 pour accéder à vos e-mails, votre calendrier et plus encore. Téléchargez l’application …"
+    }
+  ]
+}
