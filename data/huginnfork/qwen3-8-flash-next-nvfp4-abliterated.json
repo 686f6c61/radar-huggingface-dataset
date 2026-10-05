@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 7,
-  "downloads_30d": 1260,
+  "downloads_30d": 1488,
   "trending_score": 0,
   "parameters": 94001880979,
   "parameters_human": "94.00B",
-  "storage_bytes": 293082263637,
-  "storage_human": "293.1 GB",
+  "storage_bytes": 370280368251,
+  "storage_human": "370.3 GB",
   "base_model": "local-inference-lab/Qwen3.8-Flash-Next-NVFP4",
   "formats": [
     "safetensors"

@@ -9,14 +9,14 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "laya",
   "languages": [
     "multilingual"
   ],
   "tags": [
+    "laya",
     "gguf",
     "ggmlc",
-    "laya",
     "jev",
     "mmbert",
     "multilingual",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 13,
-  "downloads_30d": 9611,
+  "downloads_30d": 9816,
   "trending_score": 11,
   "parameters": 323182091,
   "parameters_human": "323.2M",

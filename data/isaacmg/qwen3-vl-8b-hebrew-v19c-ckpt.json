@@ -5,7 +5,7 @@
   "author": "isaacmg",
   "url": "https://huggingface.co/isaacmg/qwen3-vl-8b-hebrew-v19c-ckpt",
   "created_at": "2026-08-30T18:02:02.000Z",
-  "updated_at": "2026-09-28T06:13:04.000Z",
+  "updated_at": "2026-10-05T02:52:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

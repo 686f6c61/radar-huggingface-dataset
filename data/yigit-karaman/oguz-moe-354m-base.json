@@ -5,7 +5,7 @@
   "author": "Yigit-Karaman",
   "url": "https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base",
   "created_at": "2026-09-19T01:18:01.000Z",
-  "updated_at": "2026-09-19T01:36:55.000Z",
+  "updated_at": "2026-10-04T19:08:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

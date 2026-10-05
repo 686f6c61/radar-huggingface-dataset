@@ -5,7 +5,7 @@
   "author": "SergeyFuture",
   "url": "https://huggingface.co/SergeyFuture/ml-loop-adapter",
   "created_at": "2026-08-16T12:31:49.000Z",
-  "updated_at": "2026-09-28T09:41:41.000Z",
+  "updated_at": "2026-10-05T10:20:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 33173674,
-  "storage_human": "33 MB",
+  "storage_bytes": 35348842,
+  "storage_human": "35 MB",
   "base_model": "Qwen/Qwen2.5-0.5B",
   "formats": [
     "safetensors"

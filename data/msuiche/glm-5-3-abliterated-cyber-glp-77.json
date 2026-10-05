@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/GLM-5.3-abliterated-cyber-GLP-77",
   "created_at": "2026-08-30T01:33:00.000Z",
-  "updated_at": "2026-09-04T11:25:54.000Z",
+  "updated_at": "2026-10-04T23:33:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 97,
+  "downloads_30d": 86,
   "trending_score": 0,
   "parameters": 473088,
   "parameters_human": "473088",
-  "storage_bytes": 3795168,
-  "storage_human": "4 MB",
+  "storage_bytes": 5710758,
+  "storage_human": "6 MB",
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "gguf"

@@ -36,12 +36,12 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1139,
-  "downloads_30d": 2057848,
+  "likes": 1148,
+  "downloads_30d": 2063224,
   "trending_score": 88,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 783552900160,
+  "storage_bytes": 783553294560,
   "storage_human": "783.6 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

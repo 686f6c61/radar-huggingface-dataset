@@ -5,7 +5,7 @@
   "author": "cbert33",
   "url": "https://huggingface.co/cbert33/GLM-5.3-Flash-Uncensored-EXL3-DGX-Sliced",
   "created_at": "2026-09-12T17:18:09.000Z",
-  "updated_at": "2026-09-20T18:55:19.000Z",
+  "updated_at": "2026-10-04T15:34:33.000Z",
   "license": "shapleymcg-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -40,7 +40,7 @@
     "4-bit",
     "region:us"
   ],
-  "likes": 3,
+  "likes": 4,
   "downloads_30d": 406,
   "trending_score": 0,
   "parameters": 87963368862,

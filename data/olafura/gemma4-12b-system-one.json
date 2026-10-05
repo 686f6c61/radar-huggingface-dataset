@@ -9,7 +9,7 @@
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
-  "library": null,
+  "library": "laya",
   "languages": [
     "en",
     "de",
@@ -25,6 +25,7 @@
     "zh"
   ],
   "tags": [
+    "laya",
     "gemma-4",
     "adapter",
     "mixture-of-experts",
@@ -32,7 +33,6 @@
     "elixir",
     "nx",
     "system-one",
-    "laya",
     "text-generation",
     "en",
     "de",
