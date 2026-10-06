@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "OpenSML/OpenSML-150M",
+  "slug": "opensml-opensml-150m",
+  "author": "OpenSML",
+  "url": "https://huggingface.co/OpenSML/OpenSML-150M",
+  "created_at": "2026-10-06T01:17:35.000Z",
+  "updated_at": "2026-10-06T01:26:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "text-generation",
+    "pretraining",
+    "from-scratch",
+    "small-language-model",
+    "post-training",
+    "silicon",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "dataset:HuggingFaceFW/finewiki",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:allenai/ai2_arc",
+    "dataset:databricks/databricks-dolly-15k",
+    "dataset:allenai/tulu-3-sft-personas-instruction-following",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:allenai/sciq",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 128,
+  "trending_score": 0,
+  "parameters": 150439168,
+  "parameters_human": "150.4M",
+  "storage_bytes": 693060730,
+  "storage_human": "693 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OfficeIMO/OfficeIMO.Excel/README.md at master · EvotecIT ...",
+      "url": "https://github.com/EvotecIT/OfficeIMO/blob/master/OfficeIMO.Excel/README.md",
+      "snippet": "For extension-only visuals, use the same format-neutral model rather than a second Open XML-specific API: ... xlsx\") reports C2PA and AI-specific IPTC metadata in ..."
+    },
+    {
+      "title": "Quetzal: Comprehensive Peptide Fragmentation Annotation and ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12660040/",
+      "snippet": "29.11.2025 ... ... model that attempts to discriminate between correct and incorrect identifications. ... Nesvizhskii AI A Survey of Computational Methods and ..."
+    },
+    {
+      "title": "IIoT Communication Protocols Compatibility and Security An In ...",
+      "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.174286607.78655824/v1",
+      "snippet": "XMPP (Extensible Messaging and Presence Protocol) is an open XML technology for asynchronous real-time commu- nication between two or more organizations, ..."
+    },
+    {
+      "title": "BauSIM 2020 - 8th Conference of IBPSA Germany and ... - TU Graz",
+      "url": "https://www.tugraz.at/fileadmin/user_upload/tugrazExternal/ca0c99e1-fd4a-408f-8048-74a52fde13e6/Veranstaltungen/BauSIM2020/bausim2020_proceedings.pdf",
+      "snippet": "We did not know whether to err on the side of optimism and hope for the best by organizing an in-person event, or whether a hybrid model or even a virtual ..."
+    },
+    {
+      "title": "Glycoproteomic Analysis of Prostate Cancer Tissues by SWATH ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1535947620343425",
+      "snippet": "This N-glycoprotein SWATHatlas library is the de facto model 5600 version of N-glycoAtlas. ... , A.I. Nesvizhskii, E. Kolker, R. Aebersold. Empirical ..."
+    }
+  ]
+}

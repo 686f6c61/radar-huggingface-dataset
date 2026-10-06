@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "systemonedev/kenning-xl-v0.6",
+  "slug": "systemonedev-kenning-xl-v0-6",
+  "author": "systemonedev",
+  "url": "https://huggingface.co/systemonedev/kenning-xl-v0.6",
+  "created_at": "2026-10-06T19:22:15.000Z",
+  "updated_at": "2026-10-06T19:42:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "system-one",
+    "kenning",
+    "kenning-xl",
+    "decision-model",
+    "calibrated",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608357,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "systemonedev - GitHub",
+      "url": "https://github.com/systemonedev",
+      "snippet": "systemonedev Open tools and models for System One decision models: models that answer typed questions about your program&#x27;s state (yes/no, pick one, rate on a scale) with calibrated probabilities, in milliseconds, without generating text."
+    },
+    {
+      "title": "systemonedev/kenning-large-v0.4 · Hugging Face",
+      "url": "https://huggingface.co/systemonedev/kenning-large-v0.4",
+      "snippet": "systemonedev / kenning-large-v0.4 Like 0 Follow systemonedev 1 Zero-Shot Classification Safetensors deberta-v2 system-one kenning decision-model calibrated License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new kenning-large-v0.4 Model Training data Held-out results (split of the training pool) Benchmarks Use ..."
+    },
+    {
+      "title": "systemone-builder/docker/kenning at main · systemonedev ... - GitHub",
+      "url": "https://github.com/systemonedev/systemone-builder/tree/main/docker/kenning",
+      "snippet": "A System One Model for Cybersecurity. Contribute to systemonedev/systemone-builder development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=kenning",
+      "snippet": "systemonedev/kenning-large-v0.4 Zero-Shot Classification • 0.4B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Introduction - Kenning - GitHub Pages",
+      "url": "https://antmicro.github.io/kenning/introduction.html",
+      "snippet": "Introduction Kenning provides an API for deploying deep learning applications on edge devices using various model training and compilation frameworks. This documentation consists of the following chapters: Kenning section provides a project description, installation steps and a quick start guide,"
+    }
+  ]
+}

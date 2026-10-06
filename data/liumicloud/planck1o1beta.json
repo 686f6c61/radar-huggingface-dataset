@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LiumiCLoud/planck1o1beta",
+  "slug": "liumicloud-planck1o1beta",
+  "author": "LiumiCLoud",
+  "url": "https://huggingface.co/LiumiCLoud/planck1o1beta",
+  "created_at": "2026-10-06T15:47:06.000Z",
+  "updated_at": "2026-10-06T15:49:07.000Z",
+  "license": "lcpl-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 436022273,
+  "parameters_human": "436.0M",
+  "storage_bytes": 299547616,
+  "storage_human": "300 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Jeux Gratuits en Ligne - Jouez Maintenant !",
+      "url": "https://poki.com/fr?msockid=354e5fc1217462cf2986482b2081638a",
+      "snippet": "Poki a la meilleure sélection de jeux en ligne gratuits et offre l'expérience la plus amusante à jouer seul ou avec des amis. Nous …"
+    },
+    {
+      "title": "Jeux en Ligne Gratuits sur PlayHop - Jouez Maintenant !",
+      "url": "https://playhop.gg/fr/",
+      "snippet": "Jouez instantanément sur ordinateur, tablette ou smartphone. Découvrez des centaines de jeux d'Action, d'Aventure, de Course, de …"
+    },
+    {
+      "title": "Jeux gratuits en ligne sur CrazyGames | Joue maintenant !",
+      "url": "https://www.crazygames.com/fr",
+      "snippet": "Joue gratuitement en ligne sur CrazyGames, le meilleur endroit pour trouver des jeux sur navigateur de haute qualité. Nous ajoutons …"
+    },
+    {
+      "title": "MEEGames - jouer en ligne gratuitement ️ Jouer maintenant",
+      "url": "https://www.meegames.com/fr/",
+      "snippet": "Profitez de jeux gratuits en ligne sur navigateur, sans inscription, sans téléchargement et plus encore. À tout moment, n'importe où, …"
+    },
+    {
+      "title": "Jeux gratuits en ligne, sans téléchargement | FreeGameToPlay",
+      "url": "https://freegametoplay.com/fr",
+      "snippet": "Jouez à 55+ jeux gratuits en ligne et mobile dans le navigateur. Puzzle, action, stratégie, arcade et course — sans téléchargement ni …"
+    }
+  ]
+}

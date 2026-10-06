@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "infosave/Qwen-Image-2.1-Uncensored-CMF",
+  "slug": "infosave-qwen-image-2-1-uncensored-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/Qwen-Image-2.1-Uncensored-CMF",
+  "created_at": "2026-10-06T19:19:13.000Z",
+  "updated_at": "2026-10-06T19:24:18.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "cortiq",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "qwen-image",
+    "text-to-image",
+    "image-generation",
+    "diffusion",
+    "quantized",
+    "vulkan",
+    "metal",
+    "cpu",
+    "local-inference",
+    "uncensored",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12749197423,
+  "storage_human": "12.7 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Run Qwen-Image-2.1 Locally (the \"Uncensored ... - stashbase.ai",
+      "url": "https://stashbase.ai/blog/run-qwen-image-2-1-locally-uncensored/",
+      "snippet": "A post on X says Qwen-Image-2.1 was uncensored overnight. The files it points to are the original weights, unmodified. What the facts are, and two ways to run the model on your own computer."
+    },
+    {
+      "title": "shriwastav/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/shriwastav/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "Node Configuration: Diffusion Model: Add the Unet Loader (GGUF) node and select your downloaded .gguf file. Text Encoder: Add the standard CLIPLoader node, select qwen3vl_8b_bf16.safetensors (or int8), and set type to qwen_image. VAE: Add the standard VAELoader node and select qwen_image_2.1_vae_bf16.safetensors."
+    },
+    {
+      "title": "Is Qwen-Image-2.1 Uncensored? Filters, License, and the Law",
+      "url": "https://blog.laozhang.ai/en/posts/qwen-image-2-1-nsfw",
+      "snippet": "Official Qwen-Image-2.1 weights have no safety checker; Alibaba-hosted versions filter prompts. The \"Uncensored GGUF\" is the same model, still non-commercial."
+    },
+    {
+      "title": "Qwen-Image-2.1 Uncensored: Run Unrestricted ComfyUI with GGUF & Heretic",
+      "url": "https://hoangyell.com/qwen-image-2-1-uncensored-comfyui/",
+      "snippet": "Master running Qwen-Image-2.1 Uncensored in ComfyUI using GGUF DiT and Heretic Text Encoder. Bypass refusal filters and optimize VRAM on RTX and Apple Silicon."
+    },
+    {
+      "title": "How to Run Qwen-Image 2.1 Locally: One Model That Draws and Edits",
+      "url": "https://locallyuncensored.com/blog/how-to-run-qwen-image-2-1-locally.html",
+      "snippet": "The three files, the ComfyUI version, the Image lane, the maskless Edit lane, and the research license, for Qwen-Image 2.1 on your own card in Locally Uncensored 3.0.1."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX",
+  "slug": "exnihilus-qwen3-forcedaligner-0-6b-onnx",
+  "author": "ExNihilus",
+  "url": "https://huggingface.co/ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX",
+  "created_at": "2026-10-06T02:04:55.000Z",
+  "updated_at": "2026-10-06T02:06:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_asr",
+    "base_model:Qwen/Qwen3-ForcedAligner-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ForcedAligner-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1048397349,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-ForcedAligner-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX · Hugging Face",
+      "url": "https://huggingface.co/ExNihilus/Qwen3-ForcedAligner-0.6B-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-ForcedAligner-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-ForcedAligner-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ASR/Qwen3-ForcedAligner-0.6B at master - GitHub",
+      "url": "https://github.com/zhangxu1978/ASR/tree/master/Qwen3-ForcedAligner-0.6B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the ..."
+    },
+    {
+      "title": "ai-models/Qwen/Qwen3-ForcedAligner-0.6B · Cloud Native Build",
+      "url": "https://cnb.cool/ai-models/Qwen/Qwen3-ForcedAligner-0.6B",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "Qwen/Qwen3-ForcedAligner-0.6B: 2.1 GB VRAM - aquanode.io",
+      "url": "https://www.aquanode.io/tools/gpu-recommender/qwen/qwen3-forcedaligner-0.6b",
+      "snippet": "GPU requirements for Qwen/Qwen3-ForcedAligner-.6B: 2.1 GB VRAM at BF16, 0.5 GB at INT4. Live rental prices for every GPU that fits."
+    }
+  ]
+}

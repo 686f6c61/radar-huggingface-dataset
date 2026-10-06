@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed2026",
+  "slug": "jongbin-kr-exaone-verireason-sft_accuracy_hard_1to2_ratio0-12_seed2026",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_hard_1to2_ratio0.12_seed2026",
+  "created_at": "2026-10-06T01:47:09.000Z",
+  "updated_at": "2026-10-06T01:49:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "accuracy-band-selection",
+    "lora",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:adapter:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1006819608,
+  "storage_human": "1.0 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Shoot a Three Pointer: 12 Steps (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Shoot-a-Three-Pointer",
+      "snippet": "Mar 20, 2026 · You don't have to be Stephen Curry to shoot three-pointers. In fact, you can get better at shooting three-pointers …"
+    },
+    {
+      "title": "Beyond the Arc: Mastering Three-Point Shooting Mechanics",
+      "url": "https://basketballfundamentals.com/beyond-the-arc-mastering-three-point-shooting-mechanics/",
+      "snippet": "Jan 18, 2025 · This guide provides a deep dive into the physical and mental aspects of three-point shooting, breaking down the …"
+    },
+    {
+      "title": "5 Drills to Improve Your Three-Point Shooting Accuracy",
+      "url": "https://barrybekkedam.com/5-drills-to-improve-your-three-point-shooting-accuracy/",
+      "snippet": "Nov 2, 2025 · In this article, you’ll learn five proven drills used by elite coaches and players to sharpen your perimeter shooting. Each …"
+    },
+    {
+      "title": "5 TIPS Guaranteed To Improve Your 3 Point Shot! - YouTube",
+      "url": "https://www.youtube.com/watch?v=Fw9Km_MpDsU",
+      "snippet": "Mar 17, 2024 · Through focused repetition and deliberate practice, you'll gradually enhance your muscle memory, consistency, and …"
+    },
+    {
+      "title": "How To MAKE MORE Three Pointers (The ULTIMATE Shooting",
+      "url": "https://www.youtube.com/watch?v=lYLv4ux7Pd4",
+      "snippet": "If you want to become a better shooter in basketball, learn how to make more three pointers, improve your basketball confidence, …"
+    }
+  ]
+}

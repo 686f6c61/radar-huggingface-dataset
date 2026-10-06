@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "parsa-hke/vit-base-patch16-224-food101",
+  "slug": "parsa-hke-vit-base-patch16-224-food101",
+  "author": "parsa-hke",
+  "url": "https://huggingface.co/parsa-hke/vit-base-patch16-224-food101",
+  "created_at": "2026-10-06T17:16:33.000Z",
+  "updated_at": "2026-10-06T17:23:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85876325,
+  "parameters_human": "85.9M",
+  "storage_bytes": 432248637,
+  "storage_human": "432 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Galerie de mobilier en pierre naturelle | PARSA Édition",
+      "url": "https://www.parsa-edition.com/",
+      "snippet": "ENTRETIEN DES PIÈCES PARSA LIVRAISON À L’INTERNATIONAL MENTIONS LÉGALES © PARSA 2026, tous droits réservés"
+    },
+    {
+      "title": "Pars TV Live - Parsa TV Mobile Version",
+      "url": "https://www.parsatv.com/m/name=Pars-TV",
+      "snippet": "Pars TV Live - Parsa TV, Enjoy high-quality streaming of news, sports, movies, and entertainment channels. No subscriptions, no …"
+    },
+    {
+      "title": "Parsa TV - Best Live TV Directory",
+      "url": "https://www.parsatv.com/",
+      "snippet": "Parsa TV, Enjoy high-quality streaming of news, sports, movies, and entertainment channels. No subscriptions, no hassle, just …"
+    },
+    {
+      "title": "Parsa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parsa",
+      "snippet": "This disambiguation page lists articles associated with the title Parsa. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Projet d’Agriculture pour la sécurité alimentaire (Projet PARSA)",
+      "url": "https://ceci.org/fr/projets/projet-parsa",
+      "snippet": "Le projet d’Agriculture pour la sécurité alimentaire (PARSA) vise à renforcer la résilience alimentaire de plus de 12 000 ménages …"
+    }
+  ]
+}

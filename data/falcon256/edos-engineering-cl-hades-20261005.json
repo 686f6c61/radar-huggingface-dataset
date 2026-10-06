@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Falcon256/EDOS-Engineering-CL-Hades-20261005",
+  "slug": "falcon256-edos-engineering-cl-hades-20261005",
+  "author": "Falcon256",
+  "url": "https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20261005",
+  "created_at": "2026-10-06T02:00:09.000Z",
+  "updated_at": "2026-10-06T02:31:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "abliterated",
+    "continual-learning",
+    "online-learning",
+    "quantized-training",
+    "text-generation",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+    "base_model:finetune:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 19535703264,
+  "storage_human": "19.5 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falcon256/EDOS-Engineering-CL-Hades-20260917 · Hugging Face",
+      "url": "https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20260917",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EDOS-Engineering-CL-Hades-20260917 by Falcon256: Open Model",
+      "url": "https://savrn.com/models/edos-engineering-cl-hades-20260917",
+      "snippet": "EDOS-Engineering-CL-Hades-20260917 from Falcon256: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "EDOS-Engineering-CL-Hades-27B-20260917-Q5_K_M.gguf · Falcon256/EDOS ...",
+      "url": "https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20260917/blob/main/EDOS-Engineering-CL-Hades-27B-20260917-Q5_K_M.gguf",
+      "snippet": "Instructions to use Falcon256/EDOS-Engineering-CL-Hades-20260917 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "falcon256 (256 Games) · GitHub",
+      "url": "https://github.com/falcon256",
+      "snippet": "Code is the easy part after thirty years, even easier with AI, so it is pointless to show off on github. - falcon256"
+    },
+    {
+      "title": "Falcon256/EDOS-Engineering-CL-Hades-20260917 · Discussions",
+      "url": "https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20260917/discussions",
+      "snippet": "Instructions to use Falcon256/EDOS-Engineering-CL-Hades-20260917 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

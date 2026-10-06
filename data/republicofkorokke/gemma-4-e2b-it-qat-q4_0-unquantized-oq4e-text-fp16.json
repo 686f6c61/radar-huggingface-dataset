@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-text-fp16",
+  "slug": "republicofkorokke-gemma-4-e2b-it-qat-q4_0-unquantized-oq4e-text-fp16",
+  "author": "RepublicOfKorokke",
+  "url": "https://huggingface.co/RepublicOfKorokke/gemma-4-E2B-it-qat-q4_0-unquantized-oQ4e-text-fp16",
+  "created_at": "2026-10-06T14:50:28.000Z",
+  "updated_at": "2026-10-06T14:53:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569379,
+  "parameters_human": "4.63B",
+  "storage_bytes": 2751995210,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What happened to xHamster? : r/OutOfTheLoop - Reddit",
+      "url": "https://www.reddit.com/r/OutOfTheLoop/comments/56pdfn/what_happened_to_xhamster/",
+      "snippet": "true A subreddit to help you keep up to date with what's going on with reddit and other stuff."
+    },
+    {
+      "title": "Xhamster doesn't work properly on my computer (FF or chrome)",
+      "url": "https://www.reddit.com/r/techsupport/comments/260oz2/xhamster_doesnt_work_properly_on_my_computer_ff/",
+      "snippet": "May 20, 2014 · Anyway, when I open xhamster, about half of the thumbnails don't load. A lot of the videos don't work either (it says …"
+    },
+    {
+      "title": "Effacer sites pornos de l'historique de navigation",
+      "url": "https://forums.commentcamarche.net/forum/affich-35657130-effacer-sites-pornos-de-l-historique-de-navigation",
+      "snippet": "Oct 25, 2018 · bonjour je suis alle plusieurs fois sur des sites porno et je n'arrive plus a efface dans la liste deroulante les requetes je …"
+    },
+    {
+      "title": "Why is xHamster called xHamster? : r/NoStupidQuestions - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/6n22bh/why_is_xhamster_called_xhamster/",
+      "snippet": "Hey-hey! I'm a representative of xHamster. When choosing the mascot for the web-site (which took us quite a long time), we wanted …"
+    },
+    {
+      "title": "pissing - Reddit",
+      "url": "https://www.reddit.com/r/pissing/",
+      "snippet": "An 18+ community for sharing photos or videos of pissing action! We don't discriminate so anyone over 18 can share either their own …"
+    }
+  ]
+}

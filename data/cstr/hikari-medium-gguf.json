@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cstr/hikari-medium-GGUF",
+  "slug": "cstr-hikari-medium-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/hikari-medium-GGUF",
+  "created_at": "2026-10-06T19:26:08.000Z",
+  "updated_at": "2026-10-06T19:34:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ggml",
+  "languages": [
+    "en",
+    "de",
+    "ja",
+    "ru"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "speech-translation",
+    "simultaneous-translation",
+    "streaming-asr",
+    "whisper",
+    "crispasr",
+    "automatic-speech-recognition",
+    "en",
+    "de",
+    "ja",
+    "ru",
+    "arxiv:2603.11578",
+    "base_model:sbintuitions/hikari-medium",
+    "base_model:quantized:sbintuitions/hikari-medium",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763799648,
+  "parameters_human": "763.8M",
+  "storage_bytes": 2407863658,
+  "storage_human": "2.4 GB",
+  "base_model": "sbintuitions/hikari-medium",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-GGUF. 8B • Updated 5 days ago • 159k • 316. XiaomiMiMo/MiMo-V2.6-Flash-RL"
+    },
+    {
+      "title": "GGUF - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GGUF",
+      "snippet": "The model file formats used by the llama.cpp project evolved through four named stages: GGML, GGMF, GGJT, and GGUF. [7] The original GGML format was a thin tensor container that hard-coded model hyperparameters and tokenizer information inside the loader; adding support for a new model architecture or quantization scheme typically required code changes that broke compatibility with existing ..."
+    },
+    {
+      "title": "cstr/PP-OCRv6-medium-det-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cstr/PP-OCRv6-medium-det-GGUF",
+      "snippet": "PP-OCRv6 medium detector — CrispEmbed GGUF Files: PP-OCRv6_medium_det-f16.gguf and PP-OCRv6_medium_det-crispasr-q4_k-policy.gguf. The detector path is kept at F16 in the q4-policy artifact for output parity. crispembed-diff final probability-map cosine: 0.999999940. Source: PaddlePaddle PP-OCRv6, Apache-2.0. Canonical CrispEmbed publisher: cstr. Large source and working files are kept on ..."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "GGUF naming conventions — a primer for those who encounter ... - Medium",
+      "url": "https://medium.com/@jallenswrx2016/gguf-naming-conventions-a-primer-for-those-who-encounter-models-on-hugging-face-dda2516a39bb",
+      "snippet": "GGUF naming conventions — a primer for those who encounter models on Hugging Face What do all these suffixes mean? Browsing an \"unsloth\" model on Huggingface.co, I saw a \"UD-IQ3_XXS\" in ..."
+    }
+  ]
+}

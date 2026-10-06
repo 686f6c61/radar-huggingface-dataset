@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Xananthium/Inference-Model-Archive-2026-10",
+  "slug": "xananthium-inference-model-archive-2026-10",
+  "author": "Xananthium",
+  "url": "https://huggingface.co/Xananthium/Inference-Model-Archive-2026-10",
+  "created_at": "2026-10-06T16:23:29.000Z",
+  "updated_at": "2026-10-06T16:23:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    },
+    {
+      "title": "AI Lab Model Releases & Frontier Company News: Live Tracker (2026)",
+      "url": "https://news.tunx.ai/ai-lab-model-releases-frontier-company-news-live-tracker-2026/",
+      "snippet": "The current month&#x27;s releases are logged in the live feed at news.tunx.ai, structured by lab name, model name, release date, and a one-line capability summary. Because frontier labs ship on irregular schedules, the live tracker is more reliable than any static article — check the pinned weekly summary for the most recent entries across all six ..."
+    }
+  ]
+}

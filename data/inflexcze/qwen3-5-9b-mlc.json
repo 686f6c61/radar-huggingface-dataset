@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "InflexCZE/Qwen3.5-9B-MLC",
+  "slug": "inflexcze-qwen3-5-9b-mlc",
+  "author": "InflexCZE",
+  "url": "https://huggingface.co/InflexCZE/Qwen3.5-9B-MLC",
+  "created_at": "2026-09-20T15:34:43.000Z",
+  "updated_at": "2026-10-06T17:50:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "imatrix",
+    "conversational",
+    "webgpu",
+    "browser-inference",
+    "base_model:unsloth/Qwen3.5-9B-MTP-GGUF",
+    "base_model:quantized:unsloth/Qwen3.5-9B-MTP-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9168103293,
+  "storage_human": "9.2 GB",
+  "base_model": "unsloth/Qwen3.5-9B-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Split train tickets and missed connections - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6090844/split-train-tickets-and-missed-connections",
+      "snippet": "Jan 13, 2020 · No need for insurance to cover tickets costs. Your split tickets are a contract to get you from the first station to the last. …"
+    },
+    {
+      "title": "Does the name printed on a train ticket have to be your own name",
+      "url": "https://forums.moneysavingexpert.com/discussion/5403104/does-the-name-printed-on-a-train-ticket-have-to-be-your-own-name",
+      "snippet": "Jan 30, 2016 · No. You can go by any name. You can even put Inigo Montoya on your ticket and no-one will care. More accurately it …"
+    },
+    {
+      "title": "cout<<\"\\t\\t不清楚\";-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/340082630",
+      "snippet": "May 30, 2010 · cout<<\"\\t\\t不清楚\"; 输出时“\\t\\t”怎么不输出而是输出空格，在C++中\"\" 内的应该是字符串啊，怎么还能检测出为制表符."
+    },
+    {
+      "title": "struct 声明放在.h，定义在.c中，出现struct不可用的情况-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/100074461",
+      "snippet": "Feb 7, 2007 · 以下内容是CSDN社区关于struct 声明放在.h，定义在.c中，出现struct不可用的情况相关内容，如果想了解更多关于C语 …"
+    },
+    {
+      "title": "Trainline App missing Railcard — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6540931/trainline-app-missing-railcard",
+      "snippet": "Jul 13, 2024 · Bought 3 Year Senior Railcard from Trainline in June 2023, through MSE offer and it vanished from the Trainline App …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/gmp-kd3e-1-1.7b-s0pct-lr1e-4_20261006_105401",
+  "slug": "cosmos1030-gmp-kd3e-1-1-7b-s0pct-lr1e-4_20261006_105401",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-1.7b-s0pct-lr1e-4_20261006_105401",
+  "created_at": "2026-10-06T01:54:01.000Z",
+  "updated_at": "2026-10-06T01:55:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3791667453,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows11にプリインストールされているagodaというアプリ.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14290302984",
+      "snippet": "Dec 13, 2023 · agodaというアプリはWindows11にプリインストールされていません。 agodaというアプリがプリインストールされ …"
+    },
+    {
+      "title": "agodaアゴダって安全ですか？ - 来月に急遽旅行に行くことになり、 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11297691386",
+      "snippet": "May 8, 2024 · agodaは安全です。 でもagodaで予約した後、agodaを騙った詐欺メールが来て、たまにそれに支払ってしまう人 …"
+    },
+    {
+      "title": "如何评价agoda？ - 知乎",
+      "url": "https://www.zhihu.com/question/47681179",
+      "snippet": "您知道吗？ 在Agoda下单，您辛苦写下的可以供其他人参考的订单评价最终不一定会被显示在页面上。很大几率会被Agoda黑下。 …"
+    },
+    {
+      "title": "【Agoda 訂房千萬要小心】",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=10605471",
+      "snippet": "Jan 27, 2025 · Agoda就像 kch0511 大說的可以設定顯示「含稅價」， 訂房方案可以選有「免費取消」， 付款方式依不同飯店可能有 …"
+    },
+    {
+      "title": "Agoda未登入帳號訂房成功後如何取消",
+      "url": "https://www.backpackers.com.tw/forum/showthread.php?t=10471819",
+      "snippet": "Oct 2, 2021 · 如標題，我沒先登入帳號就訂房了，有成功預訂也有訂單編號，但現在要取消無法取消，客服電話也打不通，也沒辦法 …"
+    }
+  ]
+}

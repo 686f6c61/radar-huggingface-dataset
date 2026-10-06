@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "eltonssouza/relay-laya",
+  "slug": "eltonssouza-relay-laya",
+  "author": "eltonssouza",
+  "url": "https://huggingface.co/eltonssouza/relay-laya",
+  "created_at": "2026-10-06T01:14:15.000Z",
+  "updated_at": "2026-10-06T01:33:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "classifier",
+    "routing",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

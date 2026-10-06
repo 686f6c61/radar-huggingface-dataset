@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "D33pStateTech/aznten_flux2-klein-9b_runcomfy",
+  "slug": "d33pstatetech-aznten_flux2-klein-9b_runcomfy",
+  "author": "D33pStateTech",
+  "url": "https://huggingface.co/D33pStateTech/aznten_flux2-klein-9b_runcomfy",
+  "created_at": "2026-10-06T17:27:50.000Z",
+  "updated_at": "2026-10-06T18:04:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1325689407,
+  "storage_human": "1.3 GB",
+  "base_model": "flux2-klein-9b",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Otterallen/image-captioning56",
+  "slug": "otterallen-image-captioning56",
+  "author": "Otterallen",
+  "url": "https://huggingface.co/Otterallen/image-captioning56",
+  "created_at": "2026-10-06T01:49:12.000Z",
+  "updated_at": "2026-10-06T01:49:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

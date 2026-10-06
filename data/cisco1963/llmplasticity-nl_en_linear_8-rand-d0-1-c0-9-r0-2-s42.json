@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42",
+  "slug": "cisco1963-llmplasticity-nl_en_linear_8-rand-d0-1-c0-9-r0-2-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.1-c0.9-r0.2-s42",
+  "created_at": "2026-10-06T01:53:05.000Z",
+  "updated_at": "2026-10-06T01:56:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 11290571253,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

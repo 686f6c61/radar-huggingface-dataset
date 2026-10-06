@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "aeddix-labs/aeddix-alpine-ocr",
+  "slug": "aeddix-labs-aeddix-alpine-ocr",
+  "author": "aeddix-labs",
+  "url": "https://huggingface.co/aeddix-labs/aeddix-alpine-ocr",
+  "created_at": "2026-10-06T19:09:52.000Z",
+  "updated_at": "2026-10-06T19:24:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_vl",
+    "image-text-to-text",
+    "document-parsing",
+    "ocr",
+    "pdf-to-markdown",
+    "parsebench",
+    "conversational",
+    "en",
+    "zh",
+    "ja",
+    "dataset:ibm-granite/ChartNet",
+    "dataset:docling-project/SynthChartNet",
+    "dataset:docling-project/SynthTabNet_OTSL",
+    "dataset:docling-project/FinTabNet_OTSL",
+    "dataset:docling-project/DocLayNet-v1.2",
+    "dataset:lightonai/LightOnOCR-mix-0126",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "arxiv:2604.04771",
+    "base_model:opendatalab/MinerU2.5-Pro-2605-1.2B",
+    "base_model:finetune:opendatalab/MinerU2.5-Pro-2605-1.2B",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1156026624,
+  "parameters_human": "1.16B",
+  "storage_bytes": 2323550353,
+  "storage_human": "2.3 GB",
+  "base_model": "opendatalab/MinerU2.5-Pro-2605-1.2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Uglymug, Epicfighter online - chapter 1 | Anime-Planet",
+      "url": "https://www.anime-planet.com/manga/uglymug-epicfighter/chapters/1",
+      "snippet": "Read more chapters at Manga UP! Loved this manga? Register and..."
+    },
+    {
+      "title": "Uglymug, Epicfighter Chapter 1 – Omoi",
+      "url": "https://www.omoi.com/series/uglymug-epicfighter/read/0f7ea47c-ffe9-47ee-9ec7-cd2ad99cbfbc",
+      "snippet": "Read Uglymug, Epicfighter Chapter 1 free from the official source for manga."
+    },
+    {
+      "title": "Read Uglymug, Epicfighter SSS online - chapter 1 | Anime-Planet",
+      "url": "https://www.anime-planet.com/manga/uglymug-epicfighter-sss/chapters/1",
+      "snippet": "Uglymug, Epicfighter SSS - Chapter 1 Loved this manga? Register and... Add to your manga list Get more info and reviews > Find …"
+    },
+    {
+      "title": "Mission 1 | Uglymug, Epicfighter | Weeb Central",
+      "url": "https://weebcentral.com/chapters/01J76XZ76MM67C5MDR6HDAHY0J",
+      "snippet": "Read Uglymug, Epicfighter Mission 1 online for free at Weeb Central"
+    },
+    {
+      "title": "Uglymug, Epicfighter - Manga UP!",
+      "url": "https://global.manga-up.com/manga/69",
+      "snippet": "Free Jul 01, 2022 4 Chapters after this are for members only Sign in to read more Chapter 2.1 Jul 01, 2022 2"
+    }
+  ]
+}

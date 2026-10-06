@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "kandinskylab/Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers",
+  "slug": "kandinskylab-kandinsky-6-0-vsr-distilled2steps-5s-diffusers",
+  "author": "kandinskylab",
+  "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-VSR-distilled2steps-5s-Diffusers",
+  "created_at": "2026-09-15T15:48:33.000Z",
+  "updated_at": "2026-10-06T11:20:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video",
+    "video-super-resolution",
+    "kandinsky",
+    "arxiv:2610.05608",
+    "base_model:kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers",
+    "base_model:finetune:kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers",
+    "license:mit",
+    "diffusers:Kandinsky6SRPipeline",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 180,
+  "trending_score": 12,
+  "parameters": 1414263936,
+  "parameters_human": "1.41B",
+  "storage_bytes": 27972869238,
+  "storage_human": "28.0 GB",
+  "base_model": "kandinskylab/Kandinsky-6.0-VSR-5s-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kandinskylab/kandinsky-6: Kandinsky 6.0 Video: Foundation ...",
+      "url": "https://github.com/kandinskylab/kandinsky-6",
+      "snippet": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio ..."
+    },
+    {
+      "title": "Kandinsky-6.0-Pro-distill-5s-Diffusers - Hugging Face",
+      "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kandinsky Lab — Neural Networks for Image & Video Generation",
+      "url": "https://kandinskylab.ai/",
+      "snippet": "Kandinsky Lab unveils Kandinsky 6 Image Pro — flagship model for editing and generation The new flagship, succeeding Kandinsky 5.0, works up to twice as fast, better understands complex queries, and creates more detailed images."
+    },
+    {
+      "title": "kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers · Hugging Face",
+      "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-5s-Diffusers",
+      "snippet": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, including lip-sync, in text-to-audio-video (T2AV) and image-to-audio-video (TI2AV) modes; a plug-in ..."
+    },
+    {
+      "title": "[2610.05608] Kandinsky 6.0 Video: Foundation Models for Synchronized ...",
+      "url": "https://arxiv.org/abs/2610.05608",
+      "snippet": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, including lip-sync, in text-to-audio-video (T2AV) and image-to-audio-video (I2AV) modes; a built-in ..."
+    }
+  ]
+}

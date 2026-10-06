@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dunde/multilingual-e5-small",
+  "slug": "dunde-multilingual-e5-small",
+  "author": "Dunde",
+  "url": "https://huggingface.co/Dunde/multilingual-e5-small",
+  "created_at": "2026-10-06T14:37:41.000Z",
+  "updated_at": "2026-10-06T14:37:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135137323,
+  "storage_human": "135 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI in Action mit GPT & Co. - Sprachzentrierte Business ...",
+      "url": "https://www.thinktecture.com/contributions/ai-in-action-mit-gpt-co-sprachzentrierte-business-anwendungen-mit-large-language-models/",
+      "snippet": "AI in Action mit GPT & Co. – Sprachzentrierte Business-Anwendungen mit Large Language Models. Menschliche Sprache als Universal Interface für ..."
+    },
+    {
+      "title": "KONVENS 2024 20th Conference on Natural Language Processing ...",
+      "url": "https://aclanthology.org/2024.konvens-main.pdf",
+      "snippet": "27.11.2024 ... ... model is at least to a large extent able to infer the user's intent ... AI, and integrates them with theories from the social sciences ..."
+    },
+    {
+      "title": "Masterarbeit - REPOSIT HAW Hamburg",
+      "url": "https://reposit.haw-hamburg.de/bitstream/20.500.12738/19395/1/MA_Monolinguale_Maschinen%C3%BCbersetzung_Standardsprache_Leichte_Sprache.pdf",
+      "snippet": "multilingual-e5-large [76, 146], sondern bietet auch Modelle mit ... [127] R. K. S, „Small Language Models and Their Role in Hybrid AI Architectures for."
+    },
+    {
+      "title": "PatTree: a novel approach for automated creation of multimodal ...",
+      "url": "https://arxiv.org/pdf/2608.02692",
+      "snippet": "03.08.2026 ... bedding dimension 384: Multilingual-E5-small4 (\"Small\" in the following) [71]. All models were retrieved from Hug-. gingFace through library ..."
+    },
+    {
+      "title": "awesome-mcp-servers/README.md at main - GitHub",
+      "url": "https://github.com/punkpeye/awesome-mcp-servers/blob/main/README.md",
+      "snippet": "☁️ - Multi-model AI media generation (image, video, audio, face swap ... 🎖️ ☁️ - Tools from Lobby, an AI receptionist for small businesses ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dcdomingo/efficientformer-checkpoint",
+  "slug": "dcdomingo-efficientformer-checkpoint",
+  "author": "dcdomingo",
+  "url": "https://huggingface.co/dcdomingo/efficientformer-checkpoint",
+  "created_at": "2026-10-06T14:01:06.000Z",
+  "updated_at": "2026-10-06T14:01:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=29356ef9539265ee27ad791352976445",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=29356ef9539265ee27ad791352976445",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements | Explore les vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/4-clothing?msockid=29356ef9539265ee27ad791352976445",
+      "snippet": "Parcours les vêtements de seconde main pour femmes sur Vinted. Déniche des pièces uniques à prix tout doux et achète et vends …"
+    },
+    {
+      "title": "Le formulaire pour contacter le support | Vinted",
+      "url": "https://www.vinted.fr/help/518?msockid=29356ef9539265ee27ad791352976445",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire sur Vinted | Vinted",
+      "url": "https://www.vinted.fr/help/105-s-inscrire-sur-vinted?msockid=29356ef9539265ee27ad791352976445",
+      "snippet": "S'inscrire sur Vinted Il existe 4 façons de s'inscrire sur Vinted : Via Facebook Par e-mail Via ton compte Google Via ton identifiant …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Cosmos-Data/cosmos-libero-n9-5to2-3k",
+  "slug": "cosmos-data-cosmos-libero-n9-5to2-3k",
+  "author": "Cosmos-Data",
+  "url": "https://huggingface.co/Cosmos-Data/cosmos-libero-n9-5to2-3k",
+  "created_at": "2026-10-06T01:53:54.000Z",
+  "updated_at": "2026-10-06T02:51:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cosmos3_omni",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 121396946625,
+  "storage_human": "121.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos",
+      "url": "https://www.cosmos.so/",
+      "snippet": "Your space for inspiration"
+    },
+    {
+      "title": "COSMOS - Tous les sports. Un seul univers.",
+      "url": "https://www.cosmos-sports.fr/",
+      "snippet": "Le COSMOS est la principale organisation patronale dont l'objet premier est de représenter les employeurs du sport..."
+    },
+    {
+      "title": "Toutes les actualités | COSMOS",
+      "url": "https://www.cosmos-sports.fr/actualites",
+      "snippet": "Sep 17, 2026 · Le COSMOS s'en mêle #6 - Comment créer les conditions nécessaires à la rentrée parasportive ? Dans cette …"
+    },
+    {
+      "title": "Cosmos (philosophie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cosmos_(philosophie)",
+      "snippet": "Cosmos (philosophie) ... Le cosmos, dans la philosophie grecque de l' Antiquité est un terme qui désigne le monde ordonné et …"
+    },
+    {
+      "title": "Cosmos - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cosmos",
+      "snippet": "The cosmos is studied in cosmology – a broad discipline covering scientific, religious or philosophical aspects of the cosmos and its …"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "superroket169/Hal-1.0-162M",
+  "slug": "superroket169-hal-1-0-162m",
+  "author": "superroket169",
+  "url": "https://huggingface.co/superroket169/Hal-1.0-162M",
+  "created_at": "2026-10-06T14:24:14.000Z",
+  "updated_at": "2026-10-06T14:34:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3242975320,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

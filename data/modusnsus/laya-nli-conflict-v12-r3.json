@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Modusnsus/laya-nli-conflict-v12-r3",
+  "slug": "modusnsus-laya-nli-conflict-v12-r3",
+  "author": "Modusnsus",
+  "url": "https://huggingface.co/Modusnsus/laya-nli-conflict-v12-r3",
+  "created_at": "2026-10-06T19:23:55.000Z",
+  "updated_at": "2026-10-06T19:23:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "laya",
+    "system-one",
+    "typed-decisions",
+    "nli",
+    "memory-conflict",
+    "multilingual",
+    "fine-tuned",
+    "text-classification",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modusnsus/laya-nli-conflict-v5 · Hugging Face",
+      "url": "https://huggingface.co/Modusnsus/laya-nli-conflict-v5",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Laya — 33ms Multilingual System 1 Decision Engine",
+      "url": "https://laya.convaiinnovations.com/",
+      "snippet": "Instead of staying bitter, I decided to take everything I learned, fix every architectural limitation of the old approach, and build a completely open, horizontal System 1 decision model family: Laya."
+    },
+    {
+      "title": "Laya - Open Typed Decisions with Calibrated Probabilities | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/laya/",
+      "snippet": "Laya sits in the structured-output layer alongside SemIf and the constrained-decoding libraries such as Outlines and XGrammar. The difference is the same one SemIf draws: those tools shape the tokens a generative model emits, while Laya replaces generation entirely for the narrow case of scoring a fixed set of described options."
+    },
+    {
+      "title": "Laya AI — System One Decision Model",
+      "url": "https://laya-model.com/",
+      "snippet": "Laya AI · System One Laya AI — System One Decision Model Typed decisions for agents and software — choice, score, and yes/no in one forward pass. Hosted prepaid API here; Apache 2.0 weights if you run locally."
+    },
+    {
+      "title": "Laya - 512 context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/laya",
+      "snippet": "Laya is ConvAI Innovations&#x27; English open-weight System 1 decision model (ModernBERT-large, 421M, context 512), released on Hugging Face on 2026-09-18 under Apache 2.0. It is non-autoregressive: a state plus typed questions (choice, score, or noul) returns calibrated probabilities in one forward pass, trained with RLCD, and it does not generate text. Install with pip install laya; the Router ..."
+    }
+  ]
+}

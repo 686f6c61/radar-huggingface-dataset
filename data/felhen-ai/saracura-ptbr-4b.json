@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "felhen-ai/saracura-ptbr-4b",
+  "slug": "felhen-ai-saracura-ptbr-4b",
+  "author": "felhen-ai",
+  "url": "https://huggingface.co/felhen-ai/saracura-ptbr-4b",
+  "created_at": "2026-10-06T10:54:12.000Z",
+  "updated_at": "2026-10-06T17:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "typed-decisions",
+    "kev",
+    "lora",
+    "qwen3.5",
+    "portuguese",
+    "pt-br",
+    "text-classification",
+    "pt",
+    "dataset:felhen-ai/ptbr-typed-decisions-bench",
+    "dataset:telepatia-ai/typed-decisions-pt-es",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155162330,
+  "storage_human": "155 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Discord Developer Portal",
+      "url": "https://discord.com/developers/home",
+      "snippet": "Sep 21, 2026 · Build games, experiences, and integrations for millions of users on Discord."
+    },
+    {
+      "title": "My Applications | Discord Developer Portal",
+      "url": "https://discord.com/developers/applications",
+      "snippet": "Build games, experiences, and integrations for millions of users on Discord."
+    },
+    {
+      "title": "Discord Support – Discord",
+      "url": "https://support.discord.com/hc/en-us/sections/24453860938135-Discord-Support",
+      "snippet": "How to Submit a Support Ticket to Discord Discord X Support Account (@discord_support) FAQ Where can I submit Feature …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://support.discord.com/hc/pt-br",
+      "snippet": "Precisa de ajuda? Nós damos todo o suporte. De Configurações de conta a Permissões, encontre ajuda para tudo no Discord Se …"
+    },
+    {
+      "title": "Discord Developer Platform - Documentation - Discord",
+      "url": "https://docs.discord.com/developers/intro",
+      "snippet": "Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "theReal-Ai/qwen3.8-27b-ab-ste_1791260042-GGUF",
+  "slug": "thereal-ai-qwen3-8-27b-ab-ste_1791260042-gguf",
+  "author": "theReal-Ai",
+  "url": "https://huggingface.co/theReal-Ai/qwen3.8-27b-ab-ste_1791260042-GGUF",
+  "created_at": "2026-10-06T19:20:31.000Z",
+  "updated_at": "2026-10-06T19:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "simplified-technical-english",
+    "ste100",
+    "asd-ste100",
+    "token-efficiency",
+    "concise",
+    "abliterated",
+    "fine-tuned",
+    "lora",
+    "text-generation",
+    "en",
+    "dataset:theReal-Ai/ASD-STE100-STE",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:adapter:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen 3.8-27B Complete Guide: Vision, Tool Use, and a Real Upgrade Over ...",
+      "url": "https://www.aimadetools.com/blog/qwen-3-8-27b-complete-guide/",
+      "snippet": "Qwen 3.8-27B is a 27B dense vision-language model with native image/video understanding, Apache 2.0 license, and big agentic gains over Qwen 3.6-27B."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "Welcome to the GitHub repository of the Qwen3.5 open model series, including Qwen3.5, Qwen3.6, and the latest Qwen3.8. Here, you can find official information about Qwen3.8, post your questions (Issues), and share your ideas with the community (Discussions)."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio:qwen3.8-27b",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    }
+  ]
+}

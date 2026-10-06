@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DesaiJayM/Llama-Gujarat-8B",
+  "slug": "desaijaym-llama-gujarat-8b",
+  "author": "DesaiJayM",
+  "url": "https://huggingface.co/DesaiJayM/Llama-Gujarat-8B",
+  "created_at": "2026-10-06T01:22:13.000Z",
+  "updated_at": "2026-10-06T01:35:04.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "gu",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gujarati",
+    "llama",
+    "lora",
+    "text-generation",
+    "conversational",
+    "gu",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule 34 / verity_ (thatmob)",
+      "url": "https://rule34.xxx/index.php?page=post&s=list&tags=verity_%28thatmob%29",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We have pokemon, my little pony, Other hentai, whatever you want."
+    },
+    {
+      "title": "verity (thatmob) - Rule 34 World",
+      "url": "https://rule34.world/verity_%28thatmob%29",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    },
+    {
+      "title": "Rule34 - If it exists, there is porn of it / verity_ (thatmob)",
+      "url": "https://rule34.us/index.php?r=posts%2Findex&q=verity_%28thatmob%29",
+      "snippet": "The best Rule 34 of Naruto, Elden Ring, Fortnite, Genshin Impact, FNF, Pokemon, animated gifs, and videos! After all, if it exists, …"
+    },
+    {
+      "title": "Rule34.GG - verity_(thatmob)",
+      "url": "https://rule34.gg/?tags=verity_%28thatmob%29",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub. On this page verity_(thatmob)! is displayed"
+    },
+    {
+      "title": "verity (thatmob) - R34 Vault",
+      "url": "https://rule34vault.xxx/verity_%28thatmob%29",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    }
+  ]
+}

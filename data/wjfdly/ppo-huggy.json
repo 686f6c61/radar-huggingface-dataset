@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wjfdly/ppo-Huggy",
+  "slug": "wjfdly-ppo-huggy",
+  "author": "wjfdly",
+  "url": "https://huggingface.co/wjfdly/ppo-Huggy",
+  "created_at": "2026-10-06T17:22:20.000Z",
+  "updated_at": "2026-10-06T17:22:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187496503,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Businesses in Bijelo Polje · Montenegro Europe-Places",
+      "url": "https://si-montenegro.europe-places.com/area/bijelo-polje-montenegro-312",
+      "snippet": "Jul 29, 2026 · Bijelo Polje is an area in Montenegro with 141 business listings across 62 categories on Montenegro Europe-Places. …"
+    },
+    {
+      "title": "Bijelo Polje Businesses - Companies Based in Bijelo Polje - Cybo",
+      "url": "https://www.cybo.com/ME/bijelo-polje-montenegro",
+      "snippet": "Best of Bijelo Polje - Find top Hotels & Travel, Restaurants, Automotive, Financial Services, Medical and more using Cybo."
+    },
+    {
+      "title": "Local Business Listings in Bijelo Polje, Montenegro - Explore Now",
+      "url": "https://dfave.com/me/bijelo-polje/local-business/",
+      "snippet": "Find top-rated local businesses in Bijelo Polje, Montenegro. Browse our comprehensive directory to discover great places to visit, …"
+    },
+    {
+      "title": "BIJELO POLJE, Montenegro, List of Companies | Info-clipper.com",
+      "url": "https://www.info-clipper.com/en/companies/montenegro.me/bijelo-polje.html",
+      "snippet": "Search companies in BIJELO POLJE, Montenegro : Browse our directory or perform searches with name and location criteria. Get …"
+    },
+    {
+      "title": "Businesses in Bijelo Polje · Montenegro Europe-Places",
+      "url": "https://fr-montenegro.europe-places.com/area/bijelo-polje-montenegro-312",
+      "snippet": "Jul 23, 2026 · Montenegro Europe-Places regroupe les données commerciales accessibles au public pour Bijelo Polje et ajoute les …"
+    }
+  ]
+}

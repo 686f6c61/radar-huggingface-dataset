@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Avicennasis/GEV-26B-Decide-mlx-4bit",
+  "slug": "avicennasis-gev-26b-decide-mlx-4bit",
+  "author": "Avicennasis",
+  "url": "https://huggingface.co/Avicennasis/GEV-26B-Decide-mlx-4bit",
+  "created_at": "2026-10-06T14:32:30.000Z",
+  "updated_at": "2026-10-06T14:32:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "decision-model",
+    "typed-decisions",
+    "calibrated-probabilities",
+    "systemone",
+    "text-classification",
+    "en",
+    "base_model:autotrust/GEV-26B-Decide",
+    "base_model:quantized:autotrust/GEV-26B-Decide",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233053440,
+  "parameters_human": "25.23B",
+  "storage_bytes": 14232672650,
+  "storage_human": "14.2 GB",
+  "base_model": "autotrust/GEV-26B-Decide",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Jackets for Men for sale - eBay",
+      "url": "https://www.ebay.com/b/Black-Jackets-for-Men/57988/bn_7117027525?msockid=0cab3ec09c3b61b4106b292a9d6c6063",
+      "snippet": "Elevate your style with top leather jackets like the Café Racer Men Leather Jacket and The North Face TNF TKA Glacier 100 Fleece. …"
+    },
+    {
+      "title": "Amazon.com: Black Jacket",
+      "url": "https://www.amazon.com/black-jacket/s?k=black+jacket",
+      "snippet": "Shop black jackets in a range of styles, from classic fleece to modern faux leather. Find the ideal jacket to suit your personal style …"
+    },
+    {
+      "title": "black leather jacket products for sale | eBay",
+      "url": "https://www.ebay.com/b/black-leather-jacket/bn_7024893353?msockid=0cab3ec09c3b61b4106b292a9d6c6063",
+      "snippet": "Get the best deals on black leather jacket when you shop the largest online selection at eBay.com. Free shipping on many items | …"
+    },
+    {
+      "title": "Black Jackets for Women | ASOS",
+      "url": "https://www.asos.com/women/coats-jackets/jackets/refine/black/cat/?cid=11894&refine=base_colour%3A4&msockid=0cab3ec09c3b61b4106b292a9d6c6063",
+      "snippet": "Discover ASOS latest collection of black jackets for women. Shop today from our range of jackets in different materials & styles, from …"
+    },
+    {
+      "title": "Buy and Sell Men Jackets & Coats - Colour black - StockX",
+      "url": "https://stockx.com/en-gb/category/apparel/outerwear/jackets-and-coats?color=black&gender=men&msockid=0cab3ec09c3b61b4106b292a9d6c6063",
+      "snippet": "Browse Men Jackets & Coats Colour black and buy or sell at market prices on StockX, the live marketplace for Jackets & Coats. …"
+    }
+  ]
+}

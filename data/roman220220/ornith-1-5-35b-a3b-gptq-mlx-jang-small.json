@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang-small",
+  "slug": "roman220220-ornith-1-5-35b-a3b-gptq-mlx-jang-small",
+  "author": "roman220220",
+  "url": "https://huggingface.co/roman220220/Ornith-1.5-35B-A3B-gptq-mlx-jang-small",
+  "created_at": "2026-10-06T16:19:51.000Z",
+  "updated_at": "2026-10-06T16:20:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "gptq",
+    "jang",
+    "moe",
+    "vision",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107180016,
+  "parameters_human": "35.11B",
+  "storage_bytes": 14377963522,
+  "storage_human": "14.4 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can’t access YouTube - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=en",
+      "snippet": "If you see an error page instead of YouTube when going to youtube.com, it could be for one of the following reasons: It could be an …"
+    },
+    {
+      "title": "Like or dislike a video - Computer - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/6083270?hl=en-on&co=GENIE.Platform%3DDesktop",
+      "snippet": "To like a video, use thumbs up under the video player or tap the Heart for Shorts. To dislike a long-form video or livestream, use …"
+    },
+    {
+      "title": "Sign up for YouTube Premium or YouTube Music Premium memberships",
+      "url": "https://support.google.com/youtubemusic/answer/6305537?hl=en-uk&co=GENIE.Platform%3DAndroid",
+      "snippet": "Amplify your video and music experience on YouTube with a Premium membership. Learn how to start your individual paid …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Zapdos",
+  "slug": "ryanham1lton-zapdos",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Zapdos",
+  "created_at": "2026-10-06T14:38:35.000Z",
+  "updated_at": "2026-10-06T14:40:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118162520,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ricardo. Mały parterowy dom z dwuspadowym dachem i tarasem",
+      "url": "https://www.studioatrium.pl/projekty-domow/Ricardo,818.html",
+      "snippet": "Projekt domu Ricardo o powierzchni użytkowej 72,9 m2. Parterowy dom z klasycznym dwuspadowym dachem, przestronnym …"
+    },
+    {
+      "title": "Pliszka - Studio Atrium",
+      "url": "https://www.studioatrium.pl/projekty-domow/Pliszka,1196.html",
+      "snippet": "2 3 4 Forum dyskusyjne Wpisy dla projektu Pliszka Witamy na Forum dyskusyjnym Studia Atrium. To dział naszego serwisu …"
+    },
+    {
+      "title": "reponse sur le ralentisement vista - atrium.forumactif.org",
+      "url": "https://atrium.forumactif.org/t329-reponse-sur-le-ralentisement-vista",
+      "snippet": "Bonjour, Les ralentissements durant les rencontres entre un grand nombre de personnages dépendant de multiples facteurs, afin de …"
+    },
+    {
+      "title": "Forums - 17th Shard, the Official Brandon Sanderson Fansite",
+      "url": "https://www.17thshard.com/forums",
+      "snippet": "Post discussion for the cosmere at large, Shards, Hoid, or general Arcanum Unbounded content here. All spoilers are allowed, …"
+    },
+    {
+      "title": "Kos III - Studio Atrium",
+      "url": "https://www.studioatrium.pl/projekty-domow/Kos-iii,1237.html",
+      "snippet": "2 3 Forum dyskusyjne Wpisy dla projektu Kos III Witamy na Forum dyskusyjnym Studia Atrium. To dział naszego serwisu …"
+    }
+  ]
+}

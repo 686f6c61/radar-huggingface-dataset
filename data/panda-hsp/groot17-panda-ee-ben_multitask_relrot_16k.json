@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PANDA-HSP/groot17-panda-ee-ben_multitask_relrot_16k",
+  "slug": "panda-hsp-groot17-panda-ee-ben_multitask_relrot_16k",
+  "author": "PANDA-HSP",
+  "url": "https://huggingface.co/PANDA-HSP/groot17-panda-ee-ben_multitask_relrot_16k",
+  "created_at": "2026-10-06T15:35:25.000Z",
+  "updated_at": "2026-10-06T15:35:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "panda",
+    "multi-task",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576223936,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Panda géant — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Panda_g%C3%A9ant",
+      "snippet": "Le Panda géant (Ailuropoda melanoleuca), parfois désigné sous le nom de Grand Panda, ou plus rarement sous celui d’ Ours …"
+    },
+    {
+      "title": "Panda — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Panda",
+      "snippet": "Panda est un nom vernaculaire ambigu en français désignant plusieurs genres et espèces de mammifères carnivores arctoïdes …"
+    },
+    {
+      "title": "Panda géant : habitat, alimentation, bébé, poids et statut",
+      "url": "https://www.zoologiste.com/animaux/panda.html",
+      "snippet": "Apr 30, 2026 · Le panda géant, souvent appelé simplement panda, est l’un des mammifères sauvages les plus reconnaissables au …"
+    },
+    {
+      "title": "Giant panda - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Giant_panda",
+      "snippet": "The giant panda (Ailuropoda melanoleuca), also known as the panda bear or simply panda, is a bear species endemic to China. It is …"
+    },
+    {
+      "title": "Panda (Série) en streaming | TF1+",
+      "url": "https://www.tf1.fr/tf1/panda/videos",
+      "snippet": "Jul 10, 2026 · Panda - On a un cadeau pour vous : le bêtisier en exclu ! 12 déc. 2023 à 18:00 Accueil TF1 Panda Vidéos - Panda"
+    }
+  ]
+}

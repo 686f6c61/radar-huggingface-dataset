@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Veilance/Verity-27B-v2",
+  "slug": "veilance-verity-27b-v2",
+  "author": "Veilance",
+  "url": "https://huggingface.co/Veilance/Verity-27B-v2",
+  "created_at": "2026-10-06T16:00:44.000Z",
+  "updated_at": "2026-10-06T16:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connectés avec l'ENT | Conseil départemental de l'Aisne",
+      "url": "https://www.aisne.com/votre-service/colleges/connectes-avec-lent",
+      "snippet": "Dans tous les collèges de l'Aisne, l'ENT (Environnement Numérique de Travail) mis à disposition par le Département est ouvert aux …"
+    },
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/auth/saml/wayf",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    },
+    {
+      "title": "Authentification - Chargement des Informations de Session",
+      "url": "https://portail.ac-amiens.fr/mdp/redirectionhub/redirect.jsp?applicationname=ode_ent",
+      "snippet": "Chargement des informations de session de connexion depuis le navigateur... Puisque votre navigateur ne supporte pas JavaScript, …"
+    },
+    {
+      "title": "Authentification - Open Digital Education",
+      "url": "https://neoconnect.opendigitaleducation.com/auth/login",
+      "snippet": "Connexion à votre ENT : un accès sécurisé et rapide à tous vos services numériques éducatifs."
+    },
+    {
+      "title": "ENT NEO Aisne : connexion Pronote en 3 étapes",
+      "url": "https://etudiant-moderne.fr/ou-se-connecter-a-lent-neo-aisne-et-que-peut-on-y-faire/",
+      "snippet": "Pour vous connecter à l’ENT NEO Aisne, passez par le portail officiel avec vos identifiants élève ou parent, puis ouvrez Pronote …"
+    }
+  ]
+}

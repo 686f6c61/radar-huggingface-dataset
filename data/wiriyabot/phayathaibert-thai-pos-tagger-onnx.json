@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "wiriyabot/phayathaibert-thai-pos-tagger-onnx",
+  "slug": "wiriyabot-phayathaibert-thai-pos-tagger-onnx",
+  "author": "wiriyabot",
+  "url": "https://huggingface.co/wiriyabot/phayathaibert-thai-pos-tagger-onnx",
+  "created_at": "2026-10-06T17:04:34.000Z",
+  "updated_at": "2026-10-06T17:35:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "th"
+  ],
+  "tags": [
+    "onnx",
+    "camembert",
+    "thai",
+    "pos-tagging",
+    "token-classification",
+    "phayathaibert",
+    "th",
+    "dataset:universal_dependencies",
+    "base_model:nlp-chula/phayathaibert-thai-pos-tagger",
+    "base_model:quantized:nlp-chula/phayathaibert-thai-pos-tagger",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 549764430,
+  "storage_human": "550 MB",
+  "base_model": "nlp-chula/phayathaibert-thai-pos-tagger",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

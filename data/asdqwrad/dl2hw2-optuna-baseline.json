@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "asdqwrad/dl2hw2-optuna-baseline",
+  "slug": "asdqwrad-dl2hw2-optuna-baseline",
+  "author": "asdqwrad",
+  "url": "https://huggingface.co/asdqwrad/dl2hw2-optuna-baseline",
+  "created_at": "2026-10-06T19:13:56.000Z",
+  "updated_at": "2026-10-06T19:14:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Board Game Arena — играйте в настольные игры онлайн бесплатно!",
+      "url": "https://ru.boardgamearena.com/",
+      "snippet": "Крупнейшее в мире онлайн-сообщество любителей настольных игр. Более 1000 игр, доступных прямо в браузере."
+    },
+    {
+      "title": "Board Game Arena - ボードゲームを無料でオンラインプレイ!",
+      "url": "https://ja.boardgamearena.com/",
+      "snippet": "«BGA has digital board games you won't find anywhere else.» Dave Neumann - Jan 2016 今すぐボードゲームアリーナに参加しよう!"
+    },
+    {
+      "title": "Board Game Arena: ¡Juega gratis a juegos de mesa en línea!",
+      "url": "https://es.boardgamearena.com/",
+      "snippet": "La comunidad de juegos de mesa en línea más grande del mundo. Más de 1000 juegos disponibles directamente en tu navegador."
+    },
+    {
+      "title": "Board Game Arena - Play board games online for free!",
+      "url": "https://boardgamearena.com/",
+      "snippet": "The world's largest online board gaming community. 1000+ games available directly in your browser."
+    },
+    {
+      "title": "Board Game Arena - 免费在线玩桌游！ • Board Game Arena",
+      "url": "https://zh-cn.boardgamearena.com/",
+      "snippet": "加入全世界 最大的桌游平台. BGA是世界上最大的线上桌游服务器。 超过 11 百万对手1 396在这款著名棋盘游戏上等待挑战。 快来玩 …"
+    }
+  ]
+}

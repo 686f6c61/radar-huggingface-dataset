@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-AI/KOLIBRI-1-DERISKED-BF16",
+  "slug": "blackfrost-ai-kolibri-1-derisked-bf16",
+  "author": "Blackfrost-AI",
+  "url": "https://huggingface.co/Blackfrost-AI/KOLIBRI-1-DERISKED-BF16",
+  "created_at": "2026-10-06T17:09:30.000Z",
+  "updated_at": "2026-10-06T18:03:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kolibri1",
+    "bfloat16",
+    "conversational",
+    "long-context",
+    "moe",
+    "reasoning",
+    "tool-calling",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1-BF16",
+    "base_model:finetune:Aleph-Alpha/Kolibri-1-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 156215313069,
+  "storage_human": "156.2 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

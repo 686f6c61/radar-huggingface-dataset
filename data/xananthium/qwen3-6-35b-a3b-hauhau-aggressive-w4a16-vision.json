@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision",
+  "slug": "xananthium-qwen3-6-35b-a3b-hauhau-aggressive-w4a16-vision",
+  "author": "Xananthium",
+  "url": "https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision",
+  "created_at": "2026-08-23T17:11:28.000Z",
+  "updated_at": "2026-10-06T17:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3.6",
+    "qwen3.5",
+    "multimodal",
+    "vision",
+    "moe",
+    "uncensored",
+    "w4a16",
+    "auto-round",
+    "vllm",
+    "conversational",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 111,
+  "trending_score": 0,
+  "parameters": 6832109424,
+  "parameters_human": "6.83B",
+  "storage_bytes": 22159744126,
+  "storage_human": "22.2 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive, Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations caritatives et bien d'autres"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.fr/",
+      "snippet": "Effectuez des recherches dans l'index de livres complets le plus fourni au monde. Votre bibliothèque"
+    }
+  ]
+}

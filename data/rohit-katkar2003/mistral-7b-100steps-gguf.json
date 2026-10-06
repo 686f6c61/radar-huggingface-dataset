@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rohit-Katkar2003/mistral-7b-100steps-gguf",
+  "slug": "rohit-katkar2003-mistral-7b-100steps-gguf",
+  "author": "Rohit-Katkar2003",
+  "url": "https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps-gguf",
+  "created_at": "2026-10-06T19:20:12.000Z",
+  "updated_at": "2026-10-06T19:20:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815616,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genshin Phone Theme - Pinterest",
+      "url": "https://www.pinterest.com/ideas/genshin-phone-theme/940401438319/",
+      "snippet": "Find and save ideas about genshin phone theme on Pinterest."
+    },
+    {
+      "title": "Genshin Themed Phone - Pinterest",
+      "url": "https://www.pinterest.com/ideas/genshin-themed-phone/961952527549/",
+      "snippet": "Find and save ideas about genshin themed phone on Pinterest."
+    },
+    {
+      "title": "Columbina Genshin Impact Aesthetic Phone Wallpaper",
+      "url": "https://www.deviantart.com/purewallfr/art/Columbina-Genshin-Impact-Aesthetic-Phone-Wallpaper-1290058365",
+      "snippet": "Perfect for fans of Genshin Impact wallpapers, Columbina aesthetic, Fatui Harbingers, and fantasy anime phone backgrounds. This …"
+    },
+    {
+      "title": "Columbina Genshin Phone Case - Etsy",
+      "url": "https://www.etsy.com/market/columbina_genshin_phone_case?msockid=243b64e98bf76be60eed73038acf6a5c",
+      "snippet": "Discover unique phone cases featuring artistic designs, perfect for fans and collectors."
+    },
+    {
+      "title": "Genshin Phone Cases - Etsy",
+      "url": "https://www.etsy.com/market/genshin_phone_cases?msockid=243b64e98bf76be60eed73038acf6a5c",
+      "snippet": "Protect your tech with unique, custom phone cases and grips. Explore designs for every passion, from playful characters to elegant …"
+    }
+  ]
+}

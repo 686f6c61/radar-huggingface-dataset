@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-04c4ba89c4193579",
+  "slug": "gradients-io-tournaments-augmented-04c4ba89c4193579",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-04c4ba89c4193579",
+  "created_at": "2026-10-06T14:45:30.000Z",
+  "updated_at": "2026-10-06T14:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483498224,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Formal/informal French - Google Translate Community",
+      "url": "https://support.google.com/translate/thread/350162891/formal-informal-french?hl=en",
+      "snippet": "Jun 11, 2025 · Until Google hears this long requested users' feedback and add the tone toggle in their product settings, here's a …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Cette page peut comporter du contenu traduit à l'aide d'une technologie d'IA. Les traductions générées par IA peuvent contenir des …"
+    },
+    {
+      "title": "Translate pages and change Chrome languages - Google Help",
+      "url": "https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can use Chrome to translate pages. You can also change your preferred language in Chrome. Translate pages in Chrome You …"
+    }
+  ]
+}

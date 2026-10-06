@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "pecca-core/demo-router-e5-logreg",
+  "slug": "pecca-core-demo-router-e5-logreg",
+  "author": "pecca-core",
+  "url": "https://huggingface.co/pecca-core/demo-router-e5-logreg",
+  "created_at": "2026-10-06T17:46:31.000Z",
+  "updated_at": "2026-10-06T17:46:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pecca",
+  "languages": [],
+  "tags": [
+    "pecca",
+    "onnx",
+    "routing",
+    "text-classification",
+    "dataset:pecca-core/demo-support-emails",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:quantized:intfloat/multilingual-e5-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 424577,
+  "storage_human": "424577 B",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

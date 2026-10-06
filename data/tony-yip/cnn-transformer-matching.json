@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tony-yip/cnn-transformer-matching",
+  "slug": "tony-yip-cnn-transformer-matching",
+  "author": "tony-yip",
+  "url": "https://huggingface.co/tony-yip/cnn-transformer-matching",
+  "created_at": "2026-10-06T19:22:31.000Z",
+  "updated_at": "2026-10-06T19:22:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Tony (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/tony/prenom-1152",
+      "snippet": "Quelle est la signification du prénom Tony ? Tony est un diminutif du prénom Antoine, dérivé du latin Antonius qui signifie …"
+    },
+    {
+      "title": "Tony - Film 2026 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1000009107.html",
+      "snippet": "Tony est un film réalisé par Matt Johnson (V) avec Dominic Sessa, Antonio Banderas. Synopsis : Biopic sur le chef américain, …"
+    },
+    {
+      "title": "Tony (2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt33095251",
+      "snippet": "Aug 21, 2026 · Tony is a highly fictionalized biopic of a young Anthony Bourdain. While the filmmaking and performances are very …"
+    },
+    {
+      "title": "Tony (2026 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tony_(2026_film)",
+      "snippet": "Tony is a 2026 American biographical coming-of-age comedy drama film about Anthony Bourdain 's early years working in …"
+    },
+    {
+      "title": "Tony Parker : ses ex-célèbres, ses 2 fils Josh et Liam, son ... - Gala",
+      "url": "https://www.gala.fr/l_actu/news_de_stars/tony-parker-ses-ex-celebres-ses-2-fils-josh-et-liam-son-haras-en-normandie-ce-que-l-on-sait-de-sa-vie-privee-20260628",
+      "snippet": "Jun 28, 2026 · À 44 ans, Tony Parker, invité dans l’émission Sept à Huit sur TF1 ce dimanche 28 juin, savoure sa nouvelle vie. …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "beleata74/MioTTS-BG-EN-64M-Architecture",
+  "slug": "beleata74-miotts-bg-en-64m-architecture",
+  "author": "beleata74",
+  "url": "https://huggingface.co/beleata74/MioTTS-BG-EN-64M-Architecture",
+  "created_at": "2026-10-06T15:31:44.000Z",
+  "updated_at": "2026-10-06T15:47:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [
+    "bg",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mio_tts",
+    "feature-extraction",
+    "tts",
+    "architecture-preview",
+    "untrained",
+    "miocodec",
+    "text-to-audio",
+    "custom_code",
+    "bg",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 63027586,
+  "parameters_human": "63.0M",
+  "storage_bytes": 510072560,
+  "storage_human": "510 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

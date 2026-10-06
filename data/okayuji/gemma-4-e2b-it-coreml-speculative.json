@@ -5,7 +5,7 @@
   "author": "okayuji",
   "url": "https://huggingface.co/okayuji/Gemma-4-E2B-it-coreml-speculative",
   "created_at": "2026-07-27T03:48:14.000Z",
-  "updated_at": "2026-08-17T05:19:00.000Z",
+  "updated_at": "2026-10-05T16:14:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

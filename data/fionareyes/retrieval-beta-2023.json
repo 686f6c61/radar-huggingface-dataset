@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fionareyes/retrieval-beta-2023",
+  "slug": "fionareyes-retrieval-beta-2023",
+  "author": "Fionareyes",
+  "url": "https://huggingface.co/Fionareyes/retrieval-beta-2023",
+  "created_at": "2026-10-06T01:37:20.000Z",
+  "updated_at": "2026-10-06T01:37:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YSK how to download any videos from any website (well, most of",
+      "url": "https://www.reddit.com/r/YouShouldKnow/comments/296efo/ysk_how_to_download_any_videos_from_any_website/",
+      "snippet": "Jun 26, 2014 · YSK how to download any videos from any website (well, most of them) on Chrome."
+    },
+    {
+      "title": "TPT: If a web site doesn't allow you to save pictures, in ... - Reddit",
+      "url": "https://www.reddit.com/r/TechnologyProTips/comments/mnwwdv/tpt_if_a_web_site_doesnt_allow_you_to_save/",
+      "snippet": "Apr 10, 2021 · Doesn't work for FetLife. It says \"hotlinking not allowed\" if you go straight (hehe) to the image source. Also, some …"
+    },
+    {
+      "title": "What you need to know about Fetlife Verification... - Reddit",
+      "url": "https://www.reddit.com/r/RoanokeGoneWild/comments/sbclav/what_you_need_to_know_about_fetlife_verification/",
+      "snippet": "Jan 24, 2022 · so my partner recently emailed Fetlife support with questions about verification and their process... and a fetlife rep …"
+    },
+    {
+      "title": "AmIOverreacting - Reddit",
+      "url": "https://www.reddit.com/r/AmIOverreacting/",
+      "snippet": "r/AmIOverreacting: A subreddit to help figure out if you overreacted to something or if you were justified"
+    },
+    {
+      "title": "Question what you believe - Reddit",
+      "url": "https://www.reddit.com/r/PurplePillDebate/",
+      "snippet": "PurplePillDebate is a neutral community to discuss sex and gender issues, specifically those pertaining to r/TheBluePill and …"
+    }
+  ]
+}

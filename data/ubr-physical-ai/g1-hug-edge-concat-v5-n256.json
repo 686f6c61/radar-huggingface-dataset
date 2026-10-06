@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ubr-physical-ai/g1-hug-edge-concat-v5-n256",
+  "slug": "ubr-physical-ai-g1-hug-edge-concat-v5-n256",
+  "author": "ubr-physical-ai",
+  "url": "https://huggingface.co/ubr-physical-ai/g1-hug-edge-concat-v5-n256",
+  "created_at": "2026-10-06T19:11:08.000Z",
+  "updated_at": "2026-10-06T19:16:37.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "unitree-g1",
+    "humanoid",
+    "action-policy",
+    "simulation",
+    "base_model:nvidia/Cosmos3-Edge",
+    "base_model:finetune:nvidia/Cosmos3-Edge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26965222830,
+  "storage_human": "27.0 GB",
+  "base_model": "nvidia/Cosmos3-Edge",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ubr-physical-ai (UB Robotics) - Hugging Face",
+      "url": "https://huggingface.co/ubr-physical-ai",
+      "snippet": "Org profile for UB Robotics on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Cosmos3-Edge UGV Findings - a Hugging Face Space by ubr-physical-ai",
+      "url": "https://huggingface.co/spaces/ubr-physical-ai/cosmos3-edge-ugv-findings",
+      "snippet": "Cosmos3-Edge UGV findings A frozen 60-frame synthetic stress test found the real bottlenecks: low-posture false alarms and unstable centre direction."
+    },
+    {
+      "title": "GitHub - open-edge-platform/physical-ai-studio: Physical AI Studio is ...",
+      "url": "https://github.com/open-edge-platform/physical-ai-studio",
+      "snippet": "What is Physical AI Studio? Physical AI Studio is an end-to-end framework for teaching robots to perform tasks through imitation learning from human demonstrations."
+    },
+    {
+      "title": "Physical AI for Developers | Universal Robots",
+      "url": "https://www.universal-robots.com/products/physical-ai/ai-developers/",
+      "snippet": "Build, train, and deploy Physical AI on real industrial robots with deterministic execution, force‑aware control, and production‑ready robotics software."
+    },
+    {
+      "title": "Physical AI data annotation and collection | Uber AI Solutions",
+      "url": "https://www.uber.com/us/en/ai-solutions/physical-ai/",
+      "snippet": "While physical AI exceeds expectations in the lab, it breaks down in the real world when environments shift outside of their training distribution. To improve model production performance, we provide multimodal data systems built to capture the full range of real-world conditions, including the rare and unpredictable."
+    }
+  ]
+}

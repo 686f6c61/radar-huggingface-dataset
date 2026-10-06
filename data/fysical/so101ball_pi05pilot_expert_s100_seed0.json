@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "fysical/so101ball_pi05pilot_expert_S100_seed0",
+  "slug": "fysical-so101ball_pi05pilot_expert_s100_seed0",
+  "author": "fysical",
+  "url": "https://huggingface.co/fysical/so101ball_pi05pilot_expert_S100_seed0",
+  "created_at": "2026-10-06T01:51:39.000Z",
+  "updated_at": "2026-10-06T07:11:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:fysical/greenball_pool_225_v1",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 40063644504,
+  "storage_human": "40.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Project Zomboid Map",
+      "url": "https://map.projectzomboid.com/?10914x9780",
+      "snippet": "Any modded map included is not an endorsement by PZmap or The Indie Stone Ltd. To request removal of a modded map, please …"
+    },
+    {
+      "title": "Project Zomboid Map Project",
+      "url": "https://map.projectzomboid.com/?item=militarycrate~armytent",
+      "snippet": "Build 41 Level 7 Level 6 Level 5 Level 4 Level 3 Level 2 Level 1 Level 0 Area: Unknown"
+    },
+    {
+      "title": "Project Zomboid Map Project",
+      "url": "https://map.projectzomboid.com/?desc=Phoenix_Prealpha0dot2L0",
+      "snippet": "Knox County (B41) Challenge Map #1 Challenge Map #2 Challenge Map The Studio Knox County (0.1.5) Kingsmouth Bedford Falls …"
+    },
+    {
+      "title": "Project Zomboid Map",
+      "url": "https://map.projectzomboid.com/?item=grocerstand~liquorstore",
+      "snippet": "GridType B42 B41 & Mapping Detail Cell Chunk Tile CoordinateDisplay Cell Chunk Tile Tools Cell Chunk Tile Length-Perimeter-Area-"
+    }
+  ]
+}

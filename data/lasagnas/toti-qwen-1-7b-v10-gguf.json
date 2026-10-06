@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "LasagnaS/toti-qwen-1.7b-v10-gguf",
+  "slug": "lasagnas-toti-qwen-1-7b-v10-gguf",
+  "author": "LasagnaS",
+  "url": "https://huggingface.co/LasagnaS/toti-qwen-1.7b-v10-gguf",
+  "created_at": "2026-10-06T17:12:33.000Z",
+  "updated_at": "2026-10-06T17:13:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "tool-calling",
+    "toti-cakery",
+    "base_model:unsloth/Qwen3-1.7B",
+    "base_model:quantized:unsloth/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409408,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

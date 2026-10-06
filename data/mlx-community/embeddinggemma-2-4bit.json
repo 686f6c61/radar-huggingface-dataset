@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mlx-community/embeddinggemma-2-4bit",
+  "slug": "mlx-community-embeddinggemma-2-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/embeddinggemma-2-4bit",
+  "created_at": "2026-10-06T15:53:29.000Z",
+  "updated_at": "2026-10-06T15:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "embedding_gemma2",
+    "mlx-vlm",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "multimodal",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1130552468,
+  "storage_human": "1.1 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "These Are The Best Brands Of Black Powder and Black Powder Substitutes ...",
+      "url": "https://thebiggamehuntingblog.com/best-black-powder-black-powder-substitutes/",
+      "snippet": "Here is a brief overview of some of the best brands of black powder and black powder substitutes currently available on the market …"
+    },
+    {
+      "title": "Alliant Powder - Black MZ",
+      "url": "https://alliantpowder.com/products/powder/blackmz.aspx",
+      "snippet": "Moisture resistant and virtually non-corrosive, Black MZ replicates black powder performance without the ignition headaches and …"
+    },
+    {
+      "title": "Blackpowder Alternatives - Beaks and Brass",
+      "url": "https://beaksandbrass.com/2025/01/05/blackpowder-alternativeswelcome-to-our-website/",
+      "snippet": "Jan 5, 2025 · While the alternatives are less easily ignited, the advantage is that they are safer to handle. The next table contains …"
+    },
+    {
+      "title": "Black Gun Powder",
+      "url": "https://www.walmart.com/c/kp/black-gun-powder",
+      "snippet": "Shop for Black Gun Powder at Walmart.com. Save money. Live better."
+    },
+    {
+      "title": "Cleanest Black Powder Substitutes For Sale Online",
+      "url": "https://midway-tactical.com/product-category/reloading-accessories/black-powder-substitute/",
+      "snippet": "Shop our wide selection of black powder substitutes, in loose powder or convenient pellets, from top brands like Hodgdon and …"
+    }
+  ]
+}

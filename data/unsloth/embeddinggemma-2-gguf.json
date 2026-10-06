@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "unsloth/embeddinggemma-2-GGUF",
+  "slug": "unsloth-embeddinggemma-2-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF",
+  "created_at": "2026-10-06T10:58:50.000Z",
+  "updated_at": "2026-10-06T16:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "embedding",
+    "feature-extraction",
+    "multimodal-embedding",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "sentence-similarity",
+    "unsloth",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 47,
+  "downloads_30d": 0,
+  "trending_score": 47,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 6493066272,
+  "storage_human": "6.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'full' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/full",
+      "snippet": "Big BIB Black Cock!!! (Full HD) FULL#11, Bella Mur got sex with her fan."
+    },
+    {
+      "title": "Full Porn Videos! - PORNER.XXX",
+      "url": "https://www.porner.xxx/",
+      "snippet": "We have the most complete collection of XXX videos from Top Porn Studios such as: BLACKED, Nubiles Porn, Brazzers, Pure …"
+    },
+    {
+      "title": "'full xxx' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/full+xxx",
+      "snippet": "Naughty indian bhabhi enjoys wild sex with devar in hot Hindi XXX . Hot village bhabhi romantic full sex scene."
+    },
+    {
+      "title": "Free Porn Videos in 4K HD ⭐️ Full Length!",
+      "url": "https://many.xxx/",
+      "snippet": "We have the most complete collection of XXX videos from Top Porn Studios such as: BLACKED, Nubiles Porn, Brazzers, Pure …"
+    },
+    {
+      "title": "Free XXX Full Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/xxx-full",
+      "snippet": "Check out free XXX Full porn videos on xHamster. Watch all XXX Full XXX vids right now!"
+    }
+  ]
+}

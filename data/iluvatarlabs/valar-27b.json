@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "iluvatarlabs/Valar-27B",
+  "slug": "iluvatarlabs-valar-27b",
+  "author": "iluvatarlabs",
+  "url": "https://huggingface.co/iluvatarlabs/Valar-27B",
+  "created_at": "2026-10-06T19:24:50.000Z",
+  "updated_at": "2026-10-06T19:31:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "scientific-reasoning",
+    "tool-use",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996517,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Valar - docs.valarhq.ai",
+      "url": "https://docs.valarhq.ai/models",
+      "snippet": "Models available to every organization Beyond the catalog above, Valar can serve your own model weights. If you have a custom or fine-tuned open-weight model, we can host it on Valar&#x27;s inference stack and expose it through the same OpenAI-compatible API, completion windows, and billing as any catalog model. Reach out to your Valar contact to onboard a custom model. For adapter-based ..."
+    },
+    {
+      "title": "Valar — Inference for the agentic era",
+      "url": "https://valarhq.ai/",
+      "snippet": "Valar is the most efficient, lowest-cost inference layer for agentic workloads across GPUs, accelerators, and clouds."
+    },
+    {
+      "title": "Introduction - Valar",
+      "url": "https://docs.valarhq.ai/",
+      "snippet": "But a growing share of AI work is asynchronous. Agents, batch jobs, labeling, data extraction, document processing, evaluation, and background workflows often run across hundreds or thousands of model calls."
+    },
+    {
+      "title": "Complete Beginner&#x27;s Guide to Qwen3.6-27B - dredyson.com",
+      "url": "https://dredyson.com/complete-beginners-guide-to-qwen3-6-27b-everything-you-need-to-know-about-the-new-open-source-ai-model-release-how-it-works-benchmarks-explained-and-step-by-step-deployment-guide-for-2026/",
+      "snippet": "Complete Beginner&#x27;s Guide to Qwen3.6-27B - Everything You Need to Know About the New Open-Source AI Model Release, How It Works, Benchmarks Explained, and Step-by-Step Deployment Guide for 2026"
+    },
+    {
+      "title": "Iluvatar Labs | Reality-inspired AI architectures for the AGI era",
+      "url": "https://iluvatarlabs.com/",
+      "snippet": "We build systems that close the loop on post-training. Iluvatar Labs is an AI-native research lab that takes humans out of the loop and puts them over it. Actuator The dynamic control layer for model transformation. Marvin The world&#x27;s most intelligent, fully autonomous AI co-scientist. IORI Open source science tackling humanity&#x27;s biggest unmet needs."
+    }
+  ]
+}

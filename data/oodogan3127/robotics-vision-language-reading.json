@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oodogan3127/robotics-vision-language-reading",
+  "slug": "oodogan3127-robotics-vision-language-reading",
+  "author": "oodogan3127",
+  "url": "https://huggingface.co/oodogan3127/robotics-vision-language-reading",
+  "created_at": "2026-10-06T17:52:07.000Z",
+  "updated_at": "2026-10-06T17:52:21.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Britney Spears - Sometimes (Official HD Video) - YouTube",
+      "url": "https://m.youtube.com/watch?v=t0bPrt69rag",
+      "snippet": "Oct 25, 2009 · Official Video for \"Sometimes\" by Britney Spears Listen to Britney Spears: https://BritneySpears.lnk.to/listenYD …"
+    },
+    {
+      "title": "Britney Spears - Sometimes (Lyrics) - YouTube",
+      "url": "https://m.youtube.com/watch?v=heFI7YVnVYg",
+      "snippet": "Jan 12, 2025 · 🎵 Follow the official 7clouds playlist on Spotify : http://spoti.fi/2SJsUcZ 🎧 Britney Spears - Sometimes (Lyrics) ⏬ …"
+    },
+    {
+      "title": "Sometimes (Britney Spears song) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Sometimes_(Britney_Spears_song)",
+      "snippet": "\"Sometimes\" is a bubblegum pop ballad that alludes to a relationship in which a shy girl asks her lover to take it slow. The song …"
+    },
+    {
+      "title": "“Sometime” vs. “Some time” vs. “Sometimes”",
+      "url": "https://www.englishgrammar.org/sometime-some-time-sometimes-space-changes/",
+      "snippet": "Mar 22, 2026 · Sometime, some time, and sometimes look similar, but they mean different things. Learn the simple cues that keep …"
+    },
+    {
+      "title": "Sometimes - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=t0bPrt69rag&list=RDCLAK5uy_k55dr3aIuJp9SGKzApiPh3HYh8omC-0SI",
+      "snippet": "Playing from Feelin' Good in the '90s Save Sometimes Britney Spears 3:52 How Bizarre (Official Music Video)"
+    }
+  ]
+}

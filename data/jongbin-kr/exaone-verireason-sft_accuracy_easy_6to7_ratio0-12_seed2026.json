@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed2026",
+  "slug": "jongbin-kr-exaone-verireason-sft_accuracy_easy_6to7_ratio0-12_seed2026",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone-verireason-sft_accuracy_easy_6to7_ratio0.12_seed2026",
+  "created_at": "2026-10-06T01:50:10.000Z",
+  "updated_at": "2026-10-06T01:52:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "accuracy-band-selection",
+    "lora",
+    "base_model:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "base_model:adapter:LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1006819608,
+  "storage_human": "1.0 GB",
+  "base_model": "LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

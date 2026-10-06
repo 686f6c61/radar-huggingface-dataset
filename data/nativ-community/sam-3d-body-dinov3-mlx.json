@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nativ-community/sam-3d-body-dinov3-mlx",
+  "slug": "nativ-community-sam-3d-body-dinov3-mlx",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/sam-3d-body-dinov3-mlx",
+  "created_at": "2026-10-06T01:16:33.000Z",
+  "updated_at": "2026-10-06T01:16:46.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx-vlm",
+  "languages": [],
+  "tags": [
+    "mlx-vlm",
+    "safetensors",
+    "sam3d_body",
+    "mlx",
+    "sam-3d-body",
+    "pose-estimation",
+    "base_model:facebook/sam-3d-body-dinov3",
+    "base_model:finetune:facebook/sam-3d-body-dinov3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 1126519879,
+  "parameters_human": "1.13B",
+  "storage_bytes": 2824948963,
+  "storage_human": "2.8 GB",
+  "base_model": "facebook/sam-3d-body-dinov3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nativ - Parler anglais comme un natif",
+      "url": "https://heynativ.com/",
+      "snippet": "Parlez anglais avec naturel. Apprenez les expressions des natifs en 5 minutes par jour avec Nativ et mémorisez-les grâce aux …"
+    },
+    {
+      "title": "byNativ | Voyage sur mesure - Agences de voyage locales",
+      "url": "https://www.bynativ.com/",
+      "snippet": "byNativ, la communauté d'agences de voyage locales francophones. Votre voyage sur mesure avec des conseillers locaux vivant à …"
+    },
+    {
+      "title": "Nativ, le programme de santé et nutrition pour reconnecter son corps …",
+      "url": "https://www.femmeactuelle.fr/minceur/regimes-guide/nativ-le-programme-de-sante-et-nutrition-pour-reconnecter-son-corps-a-ses-mecanismes-naturels-2211191",
+      "snippet": "Sep 7, 2026 · Entièrement en ligne, le programme nativ s'étend sur 6 semaines d'apprentissage actif, au sein d'un accès total de 12 …"
+    },
+    {
+      "title": "aymericdamien/TopDeepLearning: A list of popular github projects ...",
+      "url": "https://github.com/aymericdamien/topdeeplearning",
+      "snippet": "14.07.2026 ... Fair-code workflow automation platform with native AI capabilities. Combine visual building with cu… tensorflow, 196k, An Open Source Machine ..."
+    },
+    {
+      "title": "Natif : Marque de vêtement Française au style surf et good vibes",
+      "url": "https://natif-shop.com/",
+      "snippet": "Natif, la marque de vêtement Française au style surf et good vibes pour homme, femme et enfant. Des vêtements tendances et …"
+    }
+  ]
+}

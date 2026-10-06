@@ -55,11 +55,11 @@
     "region:us"
   ],
   "likes": 1205,
-  "downloads_30d": 3406623,
+  "downloads_30d": 3364314,
   "trending_score": 10,
   "parameters": 999885952,
   "parameters_human": "999.9M",
-  "storage_bytes": 10671219620,
+  "storage_bytes": 10687244571,
   "storage_human": "10.7 GB",
   "base_model": "google/gemma-3-1b-pt",
   "formats": [

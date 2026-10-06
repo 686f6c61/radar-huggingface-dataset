@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ntc-ai/minimax-music3-particle-sliders",
+  "slug": "ntc-ai-minimax-music3-particle-sliders",
+  "author": "ntc-ai",
+  "url": "https://huggingface.co/ntc-ai/minimax-music3-particle-sliders",
+  "created_at": "2026-08-16T15:43:28.000Z",
+  "updated_at": "2026-10-06T17:55:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "music",
+    "text-to-music",
+    "lora",
+    "particle-sliders",
+    "minimax-music-3",
+    "comfyui",
+    "text-to-audio",
+    "base_model:MiniMaxAI/MiniMax-Music3",
+    "base_model:adapter:MiniMaxAI/MiniMax-Music3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7706061951,
+  "storage_human": "7.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-Music3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Tennis Cup 2026 | Fédération Française de Tennis",
+      "url": "https://ntc.fft.fr/",
+      "snippet": "Aujourd’hui, la NTC est le plus grand tournoi au monde de tennis amateur. Son concept unique de tournoi par classement désigne …"
+    },
+    {
+      "title": "Ntc à Aurillac - Installation de chauffage (adresse, horaires, avis)",
+      "url": "https://www.pagesjaunes.fr/pros/09067317",
+      "snippet": "Plus d'infos sur Ntc : Fondée en 2003, notre entreprise s'est spécialisée dans l'installation, la maintenance et le dépannage des …"
+    },
+    {
+      "title": "Climatisation à Aurillac – SARL NTC",
+      "url": "https://www.sarlntc.com/climatisation/",
+      "snippet": "Aug 6, 2026 · NTC chauffagiste à Aurillac est spécialisé depuis sa création en installation de chauffage à énergie renouvelables. …"
+    },
+    {
+      "title": "Plombier à Aurillac – SARL NTC",
+      "url": "https://www.sarlntc.com/plomberie-sanitaire/",
+      "snippet": "Plombier à Aurillac : installation, rénovation, chauffage, salle de bain sur-mesure. Services pour particuliers et pros avec expertise et …"
+    },
+    {
+      "title": "Le Tournoi - National Tennis Cup 2026",
+      "url": "https://ntc.fft.fr/tournoi/",
+      "snippet": "Les jeunes de 9 à 14 ans peuvent également participer à la NTC dans la catégorie Junior. La National Tennis Cup, c’est une phase …"
+    }
+  ]
+}

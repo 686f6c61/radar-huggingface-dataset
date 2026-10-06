@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "GhostScientist/semanticwiki-14b-v3-qwen3",
+  "slug": "ghostscientist-semanticwiki-14b-v3-qwen3",
+  "author": "GhostScientist",
+  "url": "https://huggingface.co/GhostScientist/semanticwiki-14b-v3-qwen3",
+  "created_at": "2026-10-06T01:34:26.000Z",
+  "updated_at": "2026-10-06T13:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "hf_jobs",
+    "code-documentation",
+    "technical-writing",
+    "semanticwiki",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039108747,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FullPorner - Full Length Porn Video All Free and High Quality",
+      "url": "https://fullporner.com/",
+      "snippet": "Choose from millions of hardcore videos that stream quickly and in high quality and only full length. We have more pornstars and real …"
+    },
+    {
+      "title": "Categories | FullPorner.com",
+      "url": "https://fullporner.com/category",
+      "snippet": "Discover the all types sex videos on FullPorner right now! Providing full length porn videos for free. Explore sizzling content that will …"
+    },
+    {
+      "title": "Full Porn Videos! - PORNER.XXX",
+      "url": "https://www.porner.xxx/",
+      "snippet": "Here are the latest and most popular porn videos in full size and in 4K resolution. We have a huge collection of Top Porn Niches of …"
+    },
+    {
+      "title": "Trending Full Porn Videos! - PORNER.XXX",
+      "url": "https://www.porner.xxx/most-popular/",
+      "snippet": "Here are the latest and most popular porn videos in full size and in 4K resolution. We have a huge collection of Top Porn Niches of …"
+    },
+    {
+      "title": "Free Porn Videos in 4K HD ⭐️ Full Length!",
+      "url": "https://many.xxx/",
+      "snippet": "Here are the latest and most popular porn videos in full size and in 4K resolution. We have a huge collection of Top Porn Niches of …"
+    }
+  ]
+}

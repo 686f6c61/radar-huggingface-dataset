@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aahlawat/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "aahlawat-q-frozenlake-v1-4x4-noslippery",
+  "author": "aahlawat",
+  "url": "https://huggingface.co/aahlawat/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-10-06T01:25:43.000Z",
+  "updated_at": "2026-10-06T01:25:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home Movie: 97325: Family Scenes, 1963 - Archive.org",
+      "url": "https://archive.org/details/97325_hm_family_scenes_1963",
+      "snippet": "May 30, 2013 · To come. No audio stream. To come."
+    },
+    {
+      "title": "[Amateur film: Texas Farm Family] : Unknown : Free Download, …",
+      "url": "https://archive.org/details/TexasFar1952",
+      "snippet": "Jul 16, 2002 · Scenes from the daily life of a Texas farm family."
+    },
+    {
+      "title": "Brother Fingers Sister Stock Videos and Footage",
+      "url": "https://www.istockphoto.com/videos/brother-fingers-sister?msockid=351f17c9d8f96ba02d6d0023d9c16a75",
+      "snippet": "Find Brother Fingers Sister stock video, 4K footage, and other HD footage from iStock. Get higher quality Brother Fingers Sister …"
+    },
+    {
+      "title": "Top 100 Dirty Websites Revealed - SmartHouse",
+      "url": "https://www.smarthouse.com.au/top-100-dirty-websites-revealed/",
+      "snippet": "Mar 4, 2020 · Symantec has listed the top 100 dirty websites as detected by its Norton Safe Web."
+    },
+    {
+      "title": "Daddy's little virgin - Salon.com",
+      "url": "https://www.salon.com/2006/05/03/purity_balls/",
+      "snippet": "May 3, 2006 · And how about a Father-Daughter Purity Ball? This past spring brought us the fourth annual such event sponsored by …"
+    }
+  ]
+}

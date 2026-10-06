@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SII-LancelotXie/Socio-Foundation-8B",
+  "slug": "sii-lancelotxie-socio-foundation-8b",
+  "author": "SII-LancelotXie",
+  "url": "https://huggingface.co/SII-LancelotXie/Socio-Foundation-8B",
+  "created_at": "2026-10-06T17:40:00.000Z",
+  "updated_at": "2026-10-06T17:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groupe SII – ingénierie, conseil & services numériques",
+      "url": "https://sii-group.com/fr-FR",
+      "snippet": "Groupe SII : ESN et société d'ingénierie, 16 000 experts dans 21 pays au service de votre transformation numérique et durable. …"
+    },
+    {
+      "title": "À propos du groupe SII – histoire & valeurs | Groupe SII",
+      "url": "https://sii-group.com/fr-FR/propos",
+      "snippet": "Découvrez l'histoire du groupe SII depuis 1979, ses valeurs, sa gouvernance et sa stratégie : 16 000 collaborateurs engagés pour un …"
+    },
+    {
+      "title": "SII (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/SII_(entreprise)",
+      "snippet": "Le groupe SII est une société d’ingénierie et de conseil en technologies (ICT) et une entreprise de services numériques (ESN). Créé …"
+    },
+    {
+      "title": "Accueil - Sciences Industrielles pour l'Ingénieur",
+      "url": "http://aroux-sii.fr/",
+      "snippet": "Sciences Industrielles pour l'Ingénieur SII - CPGE - Lycée Gustave Eiffel - BORDEAUX - aroux.sii@gmail.com"
+    },
+    {
+      "title": "Syndrome de l'intestin irritable (SII) : comprendre ce trouble digestif",
+      "url": "https://www.santemagazine.fr/sante/maladies/syndromes/syndrome-du-colon-irritable/syndrome-de-lintestin-irritable-sii-un-trouble-encore-difficile-a-cerner-174598",
+      "snippet": "Jun 29, 2026 · On parle de SII lorsque des douleurs abdominales récurrentes surviennent au moins une fois par semaine, associées …"
+    }
+  ]
+}

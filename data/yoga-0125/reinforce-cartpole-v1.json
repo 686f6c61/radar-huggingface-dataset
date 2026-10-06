@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/Reinforce-CartPole-v1",
+  "slug": "yoga-0125-reinforce-cartpole-v1",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/Reinforce-CartPole-v1",
+  "created_at": "2026-10-06T19:24:18.000Z",
+  "updated_at": "2026-10-06T19:25:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3264,
+  "storage_human": "3264 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Union Sportive Argenteuillaise | Yoga",
+      "url": "http://usargenteuil.fr/Yoga.html",
+      "snippet": "Venez découvrir le Yoga à Argenteuil. Le cours est ouvert à tous, hommes et femmes, à partir de 12 ans. Cours collectif …"
+    },
+    {
+      "title": "Yoga Argenteuil",
+      "url": "https://www.kingyoga.biz/",
+      "snippet": "Un studio de yoga avec vue sur jardin à Argenteuil. Cadre agréable et tranquille pour venir vous ressourcer. Cours particuliers ou en …"
+    },
+    {
+      "title": "Yoga : bienfaits, styles, postures et conseils pour débuter",
+      "url": "https://www.corpsetsante.fr/le-yoga/",
+      "snippet": "Dans cette page, nous vous proposons un guide complet pour découvrir les grands principes du yoga, ses nombreux bienfaits, ses …"
+    },
+    {
+      "title": "Yoga débutant Séance complète de 30 minutes pour tout le corps",
+      "url": "https://www.youtube.com/watch?v=_nvdVJBLj-E",
+      "snippet": "Apr 2, 2024 · Cette vidéo de 30 minutes est parfaite pour étirer, renforcer, tonifier et détendre tout ton corps. Abonne-toi pour plus de …"
+    }
+  ]
+}

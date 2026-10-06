@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rohit-Katkar2003/mistral-7b-100steps",
+  "slug": "rohit-katkar2003-mistral-7b-100steps",
+  "author": "Rohit-Katkar2003",
+  "url": "https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps",
+  "created_at": "2026-10-06T19:06:03.000Z",
+  "updated_at": "2026-10-06T19:06:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168419644,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparateur Box Internet - Les meilleures offres des FAI (fibre & ADSL)",
+      "url": "https://www.quechoisir.org/comparateur-fai-n21205/",
+      "snippet": "Sep 21, 2026 · Les fournisseurs d’accès à Internet encore présents sur le marché (Orange, SFR, Free, Bouygues Télécom…) …"
+    },
+    {
+      "title": "Box Internet : comparateur des meilleures offres - ZoneADSL",
+      "url": "https://www.zoneadsl.com/comparatif/offres-internet.html",
+      "snippet": "1 day ago · Économisez sur votre abonnement Internet avec des offres dès 22,99 €/mois. Comparez les forfaits, testez votre …"
+    },
+    {
+      "title": "Comparatif Fibre et guide des offres (Octobre 2026)",
+      "url": "https://fibre.guide/offres",
+      "snippet": "Nov 19, 2018 · Comparez toutes les offres internet des opérateurs proposant un accès internet par la fibre optique en très haut débit …"
+    },
+    {
+      "title": "Box internet Fibre : les meilleurs débits et prix (comparatif)",
+      "url": "https://www.monpetitforfait.com/comparateur-box-internet/box-internet-fibre",
+      "snippet": "5 days ago · Le comparatif de l'ensemble des box internet avec la fibre optique pour bénéficier du très haut débit jusqu'à 1 Gbit/s au …"
+    },
+    {
+      "title": "Comparateur box internet : le comparatif des 64 offres du marché en ...",
+      "url": "https://www.echosdunet.net/comparateur-box-internet",
+      "snippet": "1 day ago · Comparatif en direct des offres box internet du marché, classées par prix, débit, TV et engagement. Tableau de synthèse …"
+    }
+  ]
+}

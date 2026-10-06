@@ -5,11 +5,11 @@
   "author": "spybyscript",
   "url": "https://huggingface.co/spybyscript/scyllasbandv2",
   "created_at": "2026-08-05T17:50:26.000Z",
-  "updated_at": "2026-09-22T20:25:42.000Z",
+  "updated_at": "2026-10-06T01:47:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
-  "library": "onnxruntime",
+  "library": "litert",
   "languages": [
     "en",
     "es",
@@ -19,10 +19,13 @@
     "vi"
   ],
   "tags": [
-    "onnxruntime",
+    "litert",
+    "tflite",
     "onnx",
     "text-to-speech",
     "tts",
+    "coreml",
+    "coreai",
     "pytorch",
     "multilingual",
     "expressive-tts",
@@ -38,12 +41,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 82,
+  "downloads_30d": 200,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8633256348,
-  "storage_human": "8.6 GB",
+  "storage_bytes": 9884374079,
+  "storage_human": "9.9 GB",
   "base_model": null,
   "formats": [
     "onnx"

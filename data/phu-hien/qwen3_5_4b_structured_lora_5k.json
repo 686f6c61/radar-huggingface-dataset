@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Phu-Hien/qwen3_5_4B_structured_lora_5K",
+  "slug": "phu-hien-qwen3_5_4b_structured_lora_5k",
+  "author": "Phu-Hien",
+  "url": "https://huggingface.co/Phu-Hien/qwen3_5_4B_structured_lora_5K",
+  "created_at": "2026-10-06T17:02:52.000Z",
+  "updated_at": "2026-10-06T17:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961859,
+  "storage_human": "105 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Présentation des pôles hospitalo-universitaires (PHU) - CHU de Nantes",
+      "url": "https://www.chu-nantes.fr/presentation-des-phu",
+      "snippet": "Présentation des pôles hospitalo-universitaires (PHU) Les services de soin du CHU de Nantes sont regroupés au sein de 12 pôles …"
+    },
+    {
+      "title": "Les postes d’AHU et de PHU (possibilités et débouchés)",
+      "url": "https://www.cnp-mn.fr/cnebmn-accueil/les-postes-dahu-et-de-phu/",
+      "snippet": "LES PHU : Il s’agit cette fois d’un corps de titulaires (PH) sur le plan hospitalier qui fait l’objet, sur le plan universitaire, d’un …"
+    },
+    {
+      "title": "Grille indiciaire hospitalière : praticien hospitalier universitaire ...",
+      "url": "https://www.emploi-collectivites.fr/grille-indiciaire-hospitaliere-praticien-hospitalier-universitaire-phu/6/6192.htm",
+      "snippet": "Jul 20, 2026 · Sur Emploi Collectivites, les grilles indiciaires permettent de calculer les rémunérations et salaires dans la fonction …"
+    },
+    {
+      "title": "Le statut des praticiens hospitaliers universitaires des ... - WEKA",
+      "url": "https://www.weka.fr/fiches-et-outils/le-statut-des-praticiens-hospitaliers-universitaires-des-disciplines-medicales-pharmaceutiques-et-odontologiques-13949/",
+      "snippet": "Sep 4, 2026 · Le statut des praticiens hospitaliers universitaires (PHU) a été réformé pour simplifier leur carrière et renforcer leur …"
+    },
+    {
+      "title": "Fiche métier Praticien hospitalier universitaire-PHU 2026",
+      "url": "https://rdvemploipublic.fr/fiches-metiers/praticien-hospitalier-universitaire-phu",
+      "snippet": "Fiche métier Praticien hospitalier universitaire-PHU : missions, conditions d'accès, salaire de 10 033 € à 21 946 € brut mensuel, …"
+    }
+  ]
+}

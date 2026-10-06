@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "syvai/danish-pnc",
+  "slug": "syvai-danish-pnc",
+  "author": "syvai",
+  "url": "https://huggingface.co/syvai/danish-pnc",
+  "created_at": "2026-10-06T01:54:59.000Z",
+  "updated_at": "2026-10-06T01:55:17.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "electra",
+    "token-classification",
+    "punctuation-restoration",
+    "sentence-boundary-detection",
+    "truecasing",
+    "danish",
+    "da",
+    "dataset:danish-foundation-models/danish-dynaword",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:jonfd/electra-small-nordic",
+    "base_model:finetune:jonfd/electra-small-nordic",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 21880202,
+  "parameters_human": "21.9M",
+  "storage_bytes": 197698653,
+  "storage_human": "198 MB",
+  "base_model": "jonfd/electra-small-nordic",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evil empire laughing all the way to the bank - YouTube",
+      "url": "https://www.youtube.com/watch?v=O7KQ45VdvVg",
+      "snippet": "Mar 22, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Evil Empire Laughing All The Way To The Bank - YouTube",
+      "url": "https://www.youtube.com/watch?v=wlyhlFchJcU",
+      "snippet": "Jan 4, 2025 · Evil Empire Laughing All The Way To The Bank Evil Empire Laughing All The Way To The Bank 🏦 …...more ...more …"
+    },
+    {
+      "title": "Evil Empire Laughing All the Way to the Bank — Original Phrase ...",
+      "url": "https://www.tiktok.com/@kuyajeprox/video/7658648579921202452",
+      "snippet": "What the phrase means - “Evil Empire” evokes a powerful, often corrupt organization or system. It’s a cultural shorthand rather than …"
+    },
+    {
+      "title": "Evil Empire Laughing All the Way to the Bank | TikTok",
+      "url": "https://www.tiktok.com/@jknxyqw/video/7647544476424113428",
+      "snippet": "The clip centers on a sharp, mocking laugh that underscores a theme of corporate or adversarial triumph — the image of an “evil …"
+    },
+    {
+      "title": "Evil empire laughing all the way to the bank (TikTok Remix Song)",
+      "url": "https://music.youtube.com/watch?v=udAuC0jD8po",
+      "snippet": "Playing from Evil empire laughing all the way to the bank (TikTok Remix Song) Mix Save"
+    }
+  ]
+}

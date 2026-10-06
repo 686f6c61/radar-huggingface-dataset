@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Shellar/Qwen3.8-27B-Uncensored",
+  "slug": "shellar-qwen3-8-27b-uncensored",
+  "author": "Shellar",
+  "url": "https://huggingface.co/Shellar/Qwen3.8-27B-Uncensored",
+  "created_at": "2026-10-06T19:37:37.000Z",
+  "updated_at": "2026-10-06T19:37:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored: Hardware Requirements and LM Studio Setup",
+      "url": "https://localairig.com/models/qwen3-8-27b-uncensored-hardware-deployment-guide/",
+      "snippet": "The community-built Qwen3.8-27B Uncensored HauhauCS Aggressive release removes many of the refusal behaviors found in the base model while retaining Qwen3.8-27B&#x27;s reasoning, agentic, image, and video capabilities. The GGUF release also includes MTP support for faster generation in compatible runtimes."
+    },
+    {
+      "title": "JonathanColetti/Qwen3.8-27B-Uncensored - featherless.ai",
+      "url": "https://featherless.ai/models/JonathanColetti/Qwen3.8-27B-Uncensored",
+      "snippet": "Architecture: Retains the original Qwen3.8-27B architecture, including 64 layers, a 248320-token vocabulary, and vision capabilities. Context Length: Supports a large context of 262144 tokens. Precision: Provided in bf16 precision, requiring approximately 55 GB of VRAM for local inference."
+    },
+    {
+      "title": "8 Selected Qwen3.8-27B Uncensored Models: Which One Should You Choose?",
+      "url": "https://note.com/deepent/n/n23edda76898e?hl=en",
+      "snippet": "What is a Qwen3.8-27B uncensored model? An uncensored model is a derivative version created by directly removing the refusal calculation paths that the original AI learned from its weights."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Model doesn&#x27;t respond / refuses Verify you pulled abliterated weights: ollama show qwen3.8:27b-uncensored --modelfile should show FROM orcarouter/... If using --legacy, the system pack alone may not fully suppress refusals"
+    }
+  ]
+}

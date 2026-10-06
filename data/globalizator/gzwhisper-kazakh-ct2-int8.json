@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "globalizator/gzwhisper-kazakh-ct2-int8",
+  "slug": "globalizator-gzwhisper-kazakh-ct2-int8",
+  "author": "globalizator",
+  "url": "https://huggingface.co/globalizator/gzwhisper-kazakh-ct2-int8",
+  "created_at": "2026-10-06T19:06:42.000Z",
+  "updated_at": "2026-10-06T19:11:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "kk"
+  ],
+  "tags": [
+    "gz-whisper",
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "kk",
+    "base_model:shyngys879/kazakh-whisper-large-v3-turbo",
+    "base_model:finetune:shyngys879/kazakh-whisper-large-v3-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 820316291,
+  "storage_human": "820 MB",
+  "base_model": "shyngys879/kazakh-whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "English - Home - Delta Air Lines",
+      "url": "https://www.delta.com/intl/en",
+      "snippet": "You are about to leave delta.com The link you selected leads to a site that may not follow the same accessibility policies as Delta Air …"
+    },
+    {
+      "title": "Current Flight Deals - Delta Air Lines",
+      "url": "https://www.delta.com/us/en/flight-deals/current-flight-deals",
+      "snippet": "Find cheap flights and deals from the USA to worldwide destinations for your next trip. New, affordable plane tickets and airfare …"
+    },
+    {
+      "title": "Delta Air Lines | Voos e passagens aéreas + hotéis e carros",
+      "url": "https://pt.delta.com/",
+      "snippet": "A Delta Air Lines, líder em viagens nacionais e internacionais, oferece bilhetes aéreos e pacotes de viagem a mais de 300 destinos …"
+    },
+    {
+      "title": "Flights to Central & South America - Delta Air Lines",
+      "url": "https://www.delta.com/us/en/flight-deals/latin-america-flights",
+      "snippet": "Shop Delta's best fares for flights to Central & South America with our Low Fare Commitment and experience our exceptional service."
+    },
+    {
+      "title": "Flights to Johannesburg, South Africa | Delta Air Lines",
+      "url": "https://www.delta.com/us/en/flight-deals/africa-flights/flights-to-johannesburg",
+      "snippet": "Shop Delta's best fares for flights to Johannesburg with our Low Fare Commitment and experience our exceptional service. 24-hour …"
+    }
+  ]
+}

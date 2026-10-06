@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "luke3000/raglm-qwen35-4b-cluster8",
+  "slug": "luke3000-raglm-qwen35-4b-cluster8",
+  "author": "luke3000",
+  "url": "https://huggingface.co/luke3000/raglm-qwen35-4b-cluster8",
+  "created_at": "2026-10-06T15:51:58.000Z",
+  "updated_at": "2026-10-06T15:52:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961591,
+  "storage_human": "105 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duolingo - The world’s most popular way to learn",
+      "url": "https://www.duolingo.com/",
+      "snippet": "Learn languages by playing a game. It's 100% free, fun, and scientifically proven to work."
+    },
+    {
+      "title": "Duolingo - La forma más popular del mundo para aprender",
+      "url": "https://es.duolingo.com/",
+      "snippet": "Cursos gratis, divertidos y efectivos de idiomas y más. Aprende con lecciones rápidas y basadas en la ciencia, personalizadas para ti."
+    },
+    {
+      "title": "Duolingo - Ứng dụng học tập phổ biến nhất thế giới",
+      "url": "https://vi.duolingo.com/",
+      "snippet": "miễn phí. vui nhộn. hiệu quả Học cùng Duolingo rất vui nhộn, các nghiên cứu đã chứng minh ứng dụng thật sự hiệu quả! Các bài …"
+    },
+    {
+      "title": "Duolingo - A világ legnépszerűbb nyelvtanulási módja",
+      "url": "https://hu.duolingo.com/",
+      "snippet": "Tanulj meg játszás közben nyelveket! 100%-ig ingyenes, szórakoztató, a működése pedig tudományosan igazolt."
+    },
+    {
+      "title": "Duolingo",
+      "url": "https://ja.duolingo.com/",
+      "snippet": "duolingo english test Duolingo English Testは、便利でスピーディーかつ手頃な英語力認定テストです。 最新の評価科学とAIを統合 …"
+    }
+  ]
+}

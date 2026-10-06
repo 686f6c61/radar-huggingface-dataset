@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "5hadytru/so101_bench_flux-3-action-so101",
+  "slug": "5hadytru-so101_bench_flux-3-action-so101",
+  "author": "5hadytru",
+  "url": "https://huggingface.co/5hadytru/so101_bench_flux-3-action-so101",
+  "created_at": "2026-10-06T19:24:17.000Z",
+  "updated_at": "2026-10-06T19:30:46.000Z",
+  "license": "flux-kommunity",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "flux3",
+    "lora",
+    "so101-bench",
+    "base_model:black-forest-labs/flux-3-action-so101",
+    "base_model:adapter:black-forest-labs/flux-3-action-so101",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13681664503,
+  "storage_human": "13.7 GB",
+  "base_model": "black-forest-labs/flux-3-action-so101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "black-forest-labs/flux-3-action-so101 · Hugging Face",
+      "url": "https://huggingface.co/black-forest-labs/flux-3-action-so101",
+      "snippet": "FLUX 3 Action is an open weights 7B world action model. It takes camera frames, the robot&#x27;s state and a text instruction, and returns the next chunk of actions, denoised together with the next video frames. This repository is part of the FLUX 3 Action collection."
+    },
+    {
+      "title": "GitHub - black-forest-labs/flux-action: FLUX 3 Action: open weights 7B ...",
+      "url": "https://github.com/black-forest-labs/flux-action",
+      "snippet": "FLUX 3 Action is an open weights 7B world action model from Black Forest Labs. It takes camera frames, the robot&#x27;s state and a text instruction, and returns the next chunk of actions, denoised together with the next video frames. This repository is the standalone training and inference code for ..."
+    },
+    {
+      "title": "FLUX 3 Action: A 7B World Action Model for Robot Control",
+      "url": "https://bfl.ai/models/flux-3-action",
+      "snippet": "7B open weights world action model. Turn FLUX&#x27;s visual intelligence into action for your robot, simulator, or game."
+    },
+    {
+      "title": "FLUX 3 Action - a black-forest-labs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/black-forest-labs/flux-3-action",
+      "snippet": "Open weights 7B world action model: base and shared encoders, SO-101 and DROID policies. Code: https://github.com/black-forest-labs/flux-action"
+    },
+    {
+      "title": "flux-3-action-so101 · Models",
+      "url": "https://www.modelscope.cn/models/black-forest-labs/flux-3-action-so101",
+      "snippet": "FLUX 3 Action SO-101 FLUX 3 Action is an open weights 7B world action model. It takes camera frames, the robot&#x27;s state and a text instruction, and returns the next chunk of actions, denoised together with the next video frames. This repository is part of the FLUX 3 Action collection. For more information, read the documentation. SO-101 policy with checkpoint-owned observation history, camera ..."
+    }
+  ]
+}

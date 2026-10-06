@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leandroalvesora/mocov3-classification-practice",
+  "slug": "leandroalvesora-mocov3-classification-practice",
+  "author": "leandroalvesora",
+  "url": "https://huggingface.co/leandroalvesora/mocov3-classification-practice",
+  "created_at": "2026-10-06T19:12:02.000Z",
+  "updated_at": "2026-10-06T19:12:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "divyasi2/mocov3-classification-practice at main - Hugging Face",
+      "url": "https://huggingface.co/divyasi2/mocov3-classification-practice/tree/main",
+      "snippet": "mocov3 classification License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main mocov3-classification-practice 206 kB Ctrl+K Ctrl+K 1 contributor History:2 commits divyasi2 Add finetune.py, README.md, config.json, training_args.json, model.safetensors d9c1803 verified5 days ago .gitattributes Safe 1.52 ..."
+    },
+    {
+      "title": "divyasi2/mocov3-classification-practice · Hugging Face",
+      "url": "https://huggingface.co/divyasi2/mocov3-classification-practice",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2211.09861",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "MoCo v3 — MMSelfSup 0.9.0 documentation",
+      "url": "https://new-test-9898.readthedocs.io/en/latest/algorithms/mocov3.html",
+      "snippet": "Classification ¶ The classification benchmarks includes 4 downstream task datasets, VOC, ImageNet, iNaturalist2018 and Places205. If not specified, the results are Top-1 (%)."
+    },
+    {
+      "title": "moco-v3:PyTorch implementation of MoCo v3 https//arxiv.org/abs/2104. ...",
+      "url": "https://gitcode.com/gh_mirrors/mo/moco-v3/overview",
+      "snippet": "README 以下内容由 AI 翻译，如有问题请 点此提交 issue 反馈 自动翻译 自监督ResNet与ViT的MoCo v3实现 简介 主要成果 ResNet-50，线性分类 ViT，线性分类 ViT，端到端微调 使用：准备 使用：自监督预训练 两节点 (16-GPU)训练ResNet-50，批量大小4096 单节点 (8-GPU)训练ViT-Small，批量大小1024 八节点训练ViT-Base，批量 ..."
+    }
+  ]
+}

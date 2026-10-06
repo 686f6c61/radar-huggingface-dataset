@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aether-models/qwen3-0.6b-int8",
+  "slug": "aether-models-qwen3-0-6b-int8",
+  "author": "aether-models",
+  "url": "https://huggingface.co/aether-models/qwen3-0.6b-int8",
+  "created_at": "2026-10-06T16:13:10.000Z",
+  "updated_at": "2026-10-06T16:18:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "aether",
+    "core-ai",
+    "apple",
+    "macos",
+    "ios",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1206423129,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Éther (mythologie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ther_(mythologie)",
+      "snippet": "« Aether » redirige ici. Pour le jeu vidéo, voir Aether (jeu vidéo). Pour les articles homonymes, voir . ... Éther ou Æther est un dieu …"
+    },
+    {
+      "title": "ÆTHER — perspectives spirituelles",
+      "url": "https://aether.news/",
+      "snippet": "4 days ago · Essais, entretiens, brèves et documentations. Revue indépendante."
+    },
+    {
+      "title": "Aether (classical element) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aether_(classical_element)",
+      "snippet": "In his aether model, Newton describes aether as a medium that \"flows\" continually downward toward the Earth's surface and is …"
+    },
+    {
+      "title": "The Aether - Minecraft Mods - CurseForge",
+      "url": "https://www.curseforge.com/minecraft/mc-mods/aether",
+      "snippet": "Oct 3, 2025 · To get started with the Aether, you must construct a portal with a Glowstone frame and light it with a water bucket in …"
+    },
+    {
+      "title": "Définitions : éther - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/%c3%a9ther/31377",
+      "snippet": "éther - Définitions Français : Retrouvez la définition de éther, ainsi que les expressions... - synonymes, homonymes, difficultés, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen2",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-iterated-run1-gen2",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-iterated-run1-gen2",
+  "created_at": "2026-10-06T14:47:38.000Z",
+  "updated_at": "2026-10-06T14:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Architecture néolithique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Architecture_n%C3%A9olithique",
+      "snippet": "Les peuples néolithiques du Moyen-Orient et d'Asie centrale construisaient généralement des maisons en briques de terre cuite. Les …"
+    },
+    {
+      "title": "Architecture et société néolithique - Chapitre 3. Premier niveau d ...",
+      "url": "https://books.openedition.org/editionsmsh/44040",
+      "snippet": "Les études palynologiques ont révélé un environnement forestier important où le bois de construction pouvait être facilement …"
+    },
+    {
+      "title": "Comment sont faites les maisons au Neolithique? - Conseils Judicieux",
+      "url": "https://conseilsjudicieux.com/comment-sont-faites-les-maisons-au-neolithique/",
+      "snippet": "Oct 9, 2022 · Quels matériaux sont utilisés dans les maisons du Néolithique? Les matériaux le plus souvent utilisés sont toujours le …"
+    },
+    {
+      "title": "Maison préhistorique - Vikidia, l’encyclopédie collaborative des jeunes",
+      "url": "https://fr.vikidia.org/wiki/Maison_pr%C3%A9historique",
+      "snippet": "Les matériaux le plus souvent utilisés sont toujours le bois et le chaume pour les toits, mais aussi la terre pour les murs, voire la …"
+    },
+    {
+      "title": "Villages et maisons | INRAP - Magazine",
+      "url": "https://www.inrap.fr/magazine/bienvenue-au-neolithique/le-neolithique-au-quotidien/villages-et-maisons",
+      "snippet": "Les plus anciennes maisons attestées en France se situent dans le Midi, où sont arrivées les premières vagues de colons …"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Aicollins/mixer-experiment",
+  "slug": "aicollins-mixer-experiment",
+  "author": "Aicollins",
+  "url": "https://huggingface.co/Aicollins/mixer-experiment",
+  "created_at": "2026-10-06T01:17:08.000Z",
+  "updated_at": "2026-10-06T01:17:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soft computing applications in asphalt pavement: A comprehensive ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2097049825000204",
+      "snippet": "The ML landscape includes a wide range of models, and the preference for one model over another is typically determined by the unique requirements and ..."
+    },
+    {
+      "title": "Fundamentals of Magnonics [1st ed.] 9783030413163 ...",
+      "url": "https://dokumen.pub/fundamentals-of-magnonics-1st-ed-9783030413163-9783030413170.html",
+      "snippet": "1 Model for the Magnonic Spin Seebeck Effect in Ferromagnetic Insulators . ... ai ai ai a j Þ þ ai ai a j a j : 2 i, j¼iþδ 2. As in the previous derivations ..."
+    },
+    {
+      "title": "The Billboard - World Radio History",
+      "url": "https://www.worldradiohistory.com/Archive-All-Music/Billboard/50s/1957/Billboard%201957-02-09.pdf",
+      "snippet": "... Mixer, Walter Rainer Oro Arthur. Meyerhoff (Pma.) Sauer Vanilla thou Gordon ... experiment here with distributing local pressings of King repertoire to ..."
+    }
+  ]
+}

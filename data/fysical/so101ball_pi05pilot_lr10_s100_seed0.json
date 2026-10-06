@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fysical/so101ball_pi05pilot_lr10_S100_seed0",
+  "slug": "fysical-so101ball_pi05pilot_lr10_s100_seed0",
+  "author": "fysical",
+  "url": "https://huggingface.co/fysical/so101ball_pi05pilot_lr10_S100_seed0",
+  "created_at": "2026-10-06T01:47:36.000Z",
+  "updated_at": "2026-10-06T07:00:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:fysical/greenball_pool_225_v1",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 99432648,
+  "storage_human": "99 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirdialk دير ديالك - Facebook",
+      "url": "https://www.facebook.com/dirdialk/",
+      "snippet": "Sep 9, 2026 · ‎ Dirdialk دير ديالك‎. 53,399 followers. ‎ لأن أفضل وظيفة هي مشروعك الخاص، تساعد DIRDIALK الناس على تحويل أفكارهم إلى مشاريع حقيقية من خلال محتوى عملي،..."
+    },
+    {
+      "title": "‎dirdialk دير ديالك‎ (@dirdialk) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dirdialk/",
+      "snippet": "286 Followers, 36 Following, 3 Posts - ‎dirdialk دير ديالك (@dirdialk)‎ on Instagram: \"‎مشروعك يهمنا ونجاحه مهمتنا‎\""
+    },
+    {
+      "title": "دير ديالك | dirdialk - YouTube",
+      "url": "https://www.youtube.com/@dirdialk",
+      "snippet": "قناة دير ديالك هدفهما مساعدة عدد كبير من الشباب في فتح وتطوير مشاريع خاصة، عبر إقتراح مشاريع رابحة و تقديم ..."
+    },
+    {
+      "title": "diridarek.com",
+      "url": "https://www.facebook.com/diridarek/",
+      "snippet": "diridarek.com. 356,477 followers · 10,452 talking about this. Pourquoi continuer à l'attendre ? DIRIDAREK !"
+    },
+    {
+      "title": "‎dirdialk دير ديالك‎ | ‎احسن مشروع ديرو في مدينتك‎ | Instagram",
+      "url": "https://www.instagram.com/dirdialk/reel/Dbl4qkHsb--/",
+      "snippet": "dirdialk دير ديالك‎ | ‎احسن مشروع ديرو في مدينتك‎ | Instagram 0 likes, 0 comments - dirdialk on August 3, 2026‎: \"احسن مشروع ديرو في مدينتك\"."
+    }
+  ]
+}

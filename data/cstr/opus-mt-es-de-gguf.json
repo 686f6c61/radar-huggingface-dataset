@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cstr/opus-mt-es-de-GGUF",
+  "slug": "cstr-opus-mt-es-de-gguf",
+  "author": "cstr",
+  "url": "https://huggingface.co/cstr/opus-mt-es-de-GGUF",
+  "created_at": "2026-10-06T14:01:05.000Z",
+  "updated_at": "2026-10-06T14:01:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "ggml",
+  "languages": [
+    "es",
+    "de"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "translation",
+    "marian",
+    "opus-mt",
+    "encoder-decoder",
+    "crispasr",
+    "es",
+    "de",
+    "base_model:Helsinki-NLP/opus-mt-es-de",
+    "base_model:quantized:Helsinki-NLP/opus-mt-es-de",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76110197,
+  "parameters_human": "76.1M",
+  "storage_bytes": 242856352,
+  "storage_human": "243 MB",
+  "base_model": "Helsinki-NLP/opus-mt-es-de",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Continuous stirred-tank reactor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Continuous_stirred-tank_reactor",
+      "snippet": "The continuous stirred-tank reactor (CSTR), also known as vat- or backmix reactor, mixed flow reactor (MFR), or a continuous-flow …"
+    },
+    {
+      "title": "Gerard Marchant : CSTR",
+      "url": "https://www.ch-marchant.fr/web/Gerard_Marchant/259-cstr.php",
+      "snippet": "Le Centre support de Toulouse en Réhabilitation psychosociale (CSTR) a ouvert ses portes le 1er octobre 2020 en plein centre-ville …"
+    },
+    {
+      "title": "Le Centre support de Toulouse en Réhabilitation psychosociale",
+      "url": "https://centre-ressource-rehabilitation.org/trouver-une-structure/occitanie/le-centre-support-de-toulouse-en-rehabilitation-psychosociale/article/le-centre-support-de-toulouse-en-rehabilitation-psychosociale",
+      "snippet": "Jan 5, 2021 · Le CSTR s’adresse à toute personne, âgée de plus de 16 ans, non hospitalisée à temps complet, présentant un trouble …"
+    },
+    {
+      "title": "Réacteurs à cuve agitée en continu (CSTR) | Technologie de flux",
+      "url": "https://www.mt.com/fr/fr/home/applications/L1_AutoChem_Applications/L2_ReactionAnalysis/continuous-stirred-tank-reactor-cstr.html",
+      "snippet": "Un réacteur à cuve agitée en continu (CSTR) est un réservoir qui permet de faire circuler les réactifs dans un réacteur, tandis que le …"
+    },
+    {
+      "title": "Valeurs renvoyées pour la fonction CStr - Visual Basic",
+      "url": "https://learn.microsoft.com/fr-fr/dotnet/visual-basic/language-reference/functions/return-values-for-the-cstr-function",
+      "snippet": "Jul 31, 2025 · Le tableau suivant décrit les valeurs de retour pour CStr différents types de données de expression."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Xananthium/Qwen3.6-35B-A3B-Endy-CyberSec-W8A16-Vision-MTP",
+  "slug": "xananthium-qwen3-6-35b-a3b-endy-cybersec-w8a16-vision-mtp",
+  "author": "Xananthium",
+  "url": "https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Endy-CyberSec-W8A16-Vision-MTP",
+  "created_at": "2026-10-06T16:27:59.000Z",
+  "updated_at": "2026-10-06T16:31:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "local-inference",
+    "quantization",
+    "evaluation",
+    "base_model:endystrike/Endy-Qwen3.6-CyberSec-35B-A3B",
+    "base_model:quantized:endystrike/Endy-Qwen3.6-CyberSec-35B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 38379168543,
+  "storage_human": "38.4 GB",
+  "base_model": "endystrike/Endy-Qwen3.6-CyberSec-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus, we are excited to open-source Qwen3.6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters. Despite its efficiency, Qwen3.6-35B-A3B delivers outstanding agentic coding performance, surpassing its predecessor Qwen3.5-35B ..."
+    },
+    {
+      "title": "Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision · Hugging Face",
+      "url": "https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W4A16-Vision",
+      "snippet": "Qwen3.6-35B-A3B Hauhau Aggressive W4A16 Vision This is a vLLM-ready, multimodal W4A16 checkpoint built from the aggressive Hauhau Qwen3.6 language model while retaining the official Qwen3.6 vision tower and multimodal configuration."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Complete Review: Alibaba&#x27;s Open-Source Coding Model ...",
+      "url": "https://dev.to/czmilo/qwen36-35b-a3b-complete-review-alibabas-open-source-coding-model-that-beats-frontier-giants-4382",
+      "snippet": "Qwen3.6-35B-A3B is the latest open-weight model from Alibaba&#x27;s Qwen team, officially released on April 16, 2026. It represents a significant leap in the Qwen series, specifically designed for agentic coding and repository-scale reasoning tasks."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043",
+      "snippet": "Alibaba open-sources Qwen3.6-35B-A3B, an efficient 35B/3B MoE model delivering top-tier agentic coding and multimodal performance."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b",
+      "snippet": "This AI model can be embedded as an Application Programming Interface (API) call into the software environment described above. Model Version (s) Qwen3.6-35B-A3B v3.6 Training, Testing, and Evaluation Datasets Training Dataset Data Modality: Text Image"
+    }
+  ]
+}

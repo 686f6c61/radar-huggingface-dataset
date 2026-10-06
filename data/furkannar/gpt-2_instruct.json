@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "FurkanNar/gpt-2_instruct",
+  "slug": "furkannar-gpt-2_instruct",
+  "author": "FurkanNar",
+  "url": "https://huggingface.co/FurkanNar/gpt-2_instruct",
+  "created_at": "2026-10-06T01:48:44.000Z",
+  "updated_at": "2026-10-06T01:55:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "dataset:ChilleD/SVAMP",
+    "dataset:tatsu-lab/alpaca",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 267,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 498033009,
+  "storage_human": "498 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

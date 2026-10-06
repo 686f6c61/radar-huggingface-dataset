@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Tushar98923/shilpi-operator-GGUF",
+  "slug": "tushar98923-shilpi-operator-gguf",
+  "author": "Tushar98923",
+  "url": "https://huggingface.co/Tushar98923/shilpi-operator-GGUF",
+  "created_at": "2026-10-06T10:50:43.000Z",
+  "updated_at": "2026-10-06T18:33:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "blender",
+    "function-calling",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:quantized:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 2076674848,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

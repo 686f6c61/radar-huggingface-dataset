@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "NeulhaeBuk/dama-aibrain",
+  "slug": "neulhaebuk-dama-aibrain",
+  "author": "NeulhaeBuk",
+  "url": "https://huggingface.co/NeulhaeBuk/dama-aibrain",
+  "created_at": "2026-10-06T14:04:32.000Z",
+  "updated_at": "2026-10-06T14:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278788619,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Extreme Tickling Torment Porn Videos - Punishworld.com",
+      "url": "https://punishworld.com/38372-torture/38373-tickling-torture/",
+      "snippet": "Watch the craziest tickling torture porn videos with the hottest girls! If you’re looking for extreme Tickling Torment porn videos, you’re …"
+    },
+    {
+      "title": "Pussy. Tickle Porn ️ Tickle.Porn",
+      "url": "https://tickle.porn/search/pussy./",
+      "snippet": "Watch pussy. tickle porn videos in HD on Tickle.porn! 🔥 Explore the fastest-growing tickling fetish collection—featuring sexy amateurs …"
+    },
+    {
+      "title": "Tickle Torture Pussy Tickle Porn ️ Tickle.Porn",
+      "url": "https://tickle.porn/search/tickle-torture-pussy/",
+      "snippet": "Watch tickle torture pussy tickle porn videos in HD on Tickle.porn! 🔥 Explore the fastest-growing tickling fetish collection—featuring …"
+    },
+    {
+      "title": "Extreme Tickling Torment Porn Videos - Page 2 of 9 - PunishWorld",
+      "url": "https://punishworld.com/38372-torture/38373-tickling-torture/page/2/",
+      "snippet": "Watch the craziest tickling torture porn videos with the hottest girls! If you’re looking for extreme Tickling Torment porn videos, you’re …"
+    },
+    {
+      "title": "Pussy Tickle Torture Porn Videos | Thumbzilla",
+      "url": "https://www.thumbzilla.com/porntags/pussy-tickle-torture/",
+      "snippet": "The best Pussy Tickle Torture porn videos are right here at Thumbzilla.com. Click here now and see all of the hottest Pussy Tickle …"
+    }
+  ]
+}

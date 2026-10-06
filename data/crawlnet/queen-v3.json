@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Crawlnet/queen-v3",
+  "slug": "crawlnet-queen-v3",
+  "author": "Crawlnet",
+  "url": "https://huggingface.co/Crawlnet/queen-v3",
+  "created_at": "2026-10-06T14:37:36.000Z",
+  "updated_at": "2026-10-06T14:37:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "nanochat",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "safetensors",
+    "crawlnet",
+    "crypto",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122552666,
+  "parameters_human": "122.6M",
+  "storage_bytes": 245113332,
+  "storage_human": "245 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full details of the Capo Queen CD1582X off-road crawler in 1/8 scale",
+      "url": "https://www.facebook.com/toucanhobby/videos/full-details-of-the-capo-queen-cd1582x-off-road-crawler-in-18-scale-/868591931798727/",
+      "snippet": "26.07.2024 ... Capo Queen CD1582X 1/8 Scale Off-Road RC Crawler Full Details. Summarized by AI from the post below."
+    },
+    {
+      "title": "Late & final Monster Design - Gothic Archive",
+      "url": "https://gothicarchive.org/artworks/monsters.html",
+      "snippet": "Crawler Queen 1 Crawler Queen 2 Orc Dog Orc Biter 2 Swampshark ... Harpy vs Ore Baron v3 Golem Fire Golem Ice Golem Skeleton B ..."
+    },
+    {
+      "title": "Who else runs a Karnage RC chassis? - Facebook",
+      "url": "https://www.facebook.com/groups/2113468955480591/posts/3366678070159667/",
+      "snippet": "15.05.2026 ... Karnage V3 micro crawler build with 828 body. Chris Ingianni ▻ Micro ... Identify micro crawler chassis model? Stetson Norton ▻ Micro ..."
+    },
+    {
+      "title": "RC Meet-Up stories - His Favorite models are Hobao. #rcaddict ...",
+      "url": "https://www.instagram.com/reel/DUNRb4jgZsI/",
+      "snippet": "01.02.2026 ... RC crawler. HB R1601 1:16 scale. Best price +971521329964. 4 days ... Mojave 6s V3 Model clip less body. September 5 · honex.garage's profile ..."
+    },
+    {
+      "title": "What are the best weight hanger STLs for Meus V3 micro crawlers ...",
+      "url": "https://www.facebook.com/groups/2113468955480591/posts/3514592245368248/",
+      "snippet": "vor 7 Tagen ... Rear Weight Hangers SCX24 Meus v1/v2/v3 - Free 3D Print Model -. 3h ... Looks like Veng and crawler queen make them and wheels that work ..."
+    }
+  ]
+}

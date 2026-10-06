@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "SrothJr/banglamentalBERT-sahajBERT-dapt-tapt-minaug",
+  "slug": "srothjr-banglamentalbert-sahajbert-dapt-tapt-minaug",
+  "author": "SrothJr",
+  "url": "https://huggingface.co/SrothJr/banglamentalBERT-sahajBERT-dapt-tapt-minaug",
+  "created_at": "2026-10-06T17:38:28.000Z",
+  "updated_at": "2026-10-06T17:38:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "bn"
+  ],
+  "tags": [
+    "safetensors",
+    "albert",
+    "mental-health",
+    "depression",
+    "bangla",
+    "dapt",
+    "tapt",
+    "text-classification",
+    "bn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17944068,
+  "parameters_human": "17.9M",
+  "storage_bytes": 71784985,
+  "storage_human": "72 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

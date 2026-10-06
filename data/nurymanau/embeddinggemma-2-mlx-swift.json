@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Nurymanau/EmbeddingGemma-2-MLX-Swift",
+  "slug": "nurymanau-embeddinggemma-2-mlx-swift",
+  "author": "Nurymanau",
+  "url": "https://huggingface.co/Nurymanau/EmbeddingGemma-2-MLX-Swift",
+  "created_at": "2026-10-06T19:19:57.000Z",
+  "updated_at": "2026-10-06T19:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "swift",
+    "apple-silicon",
+    "embeddings",
+    "multimodal",
+    "quantized",
+    "feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1124699166,
+  "storage_human": "1.1 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/discover/dood-stream-indah-monica",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Monica Ardhea (@monica.ardhea) • Facebook, Connect with friends",
+      "url": "https://www.facebook.com/monica.ardhea/",
+      "snippet": "Monica Ardhea is on Facebook. Join Facebook to connect with Monica Ardhea and others you may know. Facebook gives people …"
+    },
+    {
+      "title": "doodstream terabox – Telegram",
+      "url": "https://t.me/s/doodstreamberbagi?before=39",
+      "snippet": "Channel Telegram berbagi konten terkait Doodstream dan Terabox."
+    },
+    {
+      "title": "para Gravure Idol Di Indonesia (Pict 21++) | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5c949654f4ae2f668a281faf/para-gravure-idol-di-indonesia-pict-21/",
+      "snippet": "Tapi messya merupakan model majalah dewasa profesional. 4. Monica Ardhea Seperti Gebby Vesta, monica ardhea adalah seorang …"
+    },
+    {
+      "title": "Monica Ardhea on TikTok",
+      "url": "https://www.tiktok.com/@monicaardheaa/video/7368687613793799430",
+      "snippet": "May 14, 2024 · 38.3K Likes, 1190 Comments. TikTok video from Monica Ardhea (@monicaardheaa): “Good morning, jangan lupa …"
+    }
+  ]
+}

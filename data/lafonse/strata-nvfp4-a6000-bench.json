@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lafonse/strata-nvfp4-a6000-bench",
+  "slug": "lafonse-strata-nvfp4-a6000-bench",
+  "author": "Lafonse",
+  "url": "https://huggingface.co/Lafonse/strata-nvfp4-a6000-bench",
+  "created_at": "2026-10-06T16:15:02.000Z",
+  "updated_at": "2026-10-06T16:15:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Strata",
+    "NVFP4",
+    "Qwen3.8-Flash-Next",
+    "benchmark",
+    "Ampere",
+    "base_model:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "base_model:finetune:nvidia/Qwen3.8-Flash-Next-NVFP4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/Qwen3.8-Flash-Next-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 785 AI models across 607 benchmarks, with 214 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Leaderboard October 2026 — LMSys Arena, LLM, Image & Coding ...",
+      "url": "https://www.swfte.com/ai/leaderboard",
+      "snippet": "Live AI model leaderboard updated October 2026. Claude Opus 5.5 leads at 100/100. Compare 69 LLMs, image, video, coding & reasoning models — replaces LMSys Chatbot Arena."
+    },
+    {
+      "title": "AI Models Leaderboard October 2026 | LMSys Arena Elo, Pricing & Speed",
+      "url": "https://www.swfte.com/models/leaderboard",
+      "snippet": "AI Models Leaderboard, September 2026 Large language models ranked by LMSys Arena Elo, MMLU, HumanEval, MATH, pricing, and inference speed. Refreshed monthly with live data from official provider pricing pages, Artificial Analysis, and the Arena. In short: As of September 2026, Claude Mythos 5 tops the AI models leaderboard at 1531 Arena Elo, across 56 + models compared on quality, cost, and ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Leaderboard | Lumina",
+      "url": "https://luminabench.com/leaderboard/",
+      "snippet": "Compare 794 source-qualified canonical AI models by rankings, benchmark scores, prices, context and runtime evidence."
+    }
+  ]
+}

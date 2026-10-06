@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "France-ML/French-semantic-engine",
+  "slug": "france-ml-french-semantic-engine",
+  "author": "France-ML",
+  "url": "https://huggingface.co/France-ML/French-semantic-engine",
+  "created_at": "2026-10-06T16:58:42.000Z",
+  "updated_at": "2026-10-06T17:44:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "french",
+    "semantic-similarity",
+    "deduplication",
+    "paraphrase-detection",
+    "text-classification",
+    "sentence-similarity",
+    "fr",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714907736,
+  "storage_human": "715 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/France",
+      "snippet": "La France, en forme longue la République française7, est un État souverain transcontinental dont le territoire métropolitain s'étend …"
+    },
+    {
+      "title": "France - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/France",
+      "snippet": "France was divided into a German occupation zone in the north, an Italian occupation zone and an unoccupied territory, the rest of …"
+    },
+    {
+      "title": "France TV - Replay et Direct tv des chaînes France Télévisions",
+      "url": "https://www.france.tv/",
+      "snippet": "Retrouvez toutes les vidéos, articles et podcasts des programmes des chaînes de France Télévisions."
+    },
+    {
+      "title": "franceinfo - Actualités en temps réel et info en direct",
+      "url": "https://www.franceinfo.fr/",
+      "snippet": "Face à la hausse des cas de Covid-19 en France, faut-il avancer la campagne de vaccination, prévue pour commencer le 13 octobre …"
+    },
+    {
+      "title": "France.fr : Explore la France et ses merveilles",
+      "url": "https://www.france.fr/fr/",
+      "snippet": "La France regorge de paradis cachés, de paysages préservés et de richesses culturelles. En solo, en duo ou en famille, voici une …"
+    }
+  ]
+}

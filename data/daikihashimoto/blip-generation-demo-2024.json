@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "daikihashimoto/blip-generation-demo-2024",
+  "slug": "daikihashimoto-blip-generation-demo-2024",
+  "author": "daikihashimoto",
+  "url": "https://huggingface.co/daikihashimoto/blip-generation-demo-2024",
+  "created_at": "2026-10-06T01:24:40.000Z",
+  "updated_at": "2026-10-06T01:24:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "One missing piece in Vision and Language: A Survey on Comics ...",
+      "url": "https://arxiv.org/html/2409.09502v2",
+      "snippet": "08.01.2025 ... As a medium, comics combine rich visual and textual narratives, challenging AI models with tasks that span image classification, object ..."
+    },
+    {
+      "title": "LISTEN, THINK, AND UNDERSTAND - ICLR Proceedings",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2024/file/510d0935b543a29d686f93fa52d1c288-Paper-Conference.pdf",
+      "snippet": "Text generation model: One single model for all tasks. Directly output label ... Table 18: More LTU Demo Samples. Answers are directly taken from the model output ..."
+    },
+    {
+      "title": "Bridging the Gap: Generative Machines and Inventive Minds",
+      "url": "https://web.media.mit.edu/~nsingh1/files/singh-nsingh1-PhD-MAS-2024-thesis-LORES.pdf",
+      "snippet": "Based on this, I propose a conceptual framework to seed the development of a more robust science of human-AI co-creation. Thesis Supervisor: Tod Machover. Title ..."
+    },
+    {
+      "title": "Other Workshops and Events (2025) - ACL Anthology",
+      "url": "https://aclanthology.org/events/ws-2025/",
+      "snippet": "Other Workshops and Events (2025). Volumes. Proceedings of the 21st Conference on Natural Language Processing (KONVENS 2025): Workshops 46 papers; Proceedings ..."
+    },
+    {
+      "title": "Computer Science May 2025 - arXiv",
+      "url": "https://www.arxiv.org/list/cs/2025-05?skip=13025&show=2000",
+      "snippet": "14.05.2025 ... Title: DCSNet: A Lightweight Knowledge Distillation-Based Model with Explainable AI for Lung Cancer Diagnosis from Histopathological Images."
+    }
+  ]
+}

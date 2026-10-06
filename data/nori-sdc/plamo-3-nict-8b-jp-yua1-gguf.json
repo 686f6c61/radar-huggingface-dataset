@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nori-sdc/PLaMo-3-NICT-8B-JP-YUA1-GGUF",
+  "slug": "nori-sdc-plamo-3-nict-8b-jp-yua1-gguf",
+  "author": "nori-sdc",
+  "url": "https://huggingface.co/nori-sdc/PLaMo-3-NICT-8B-JP-YUA1-GGUF",
+  "created_at": "2026-10-06T14:26:18.000Z",
+  "updated_at": "2026-10-06T14:37:03.000Z",
+  "license": "plamo-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "plamo",
+    "plamo3",
+    "japanese",
+    "instruction-tuning",
+    "education",
+    "university-entrance",
+    "study-support",
+    "conversational",
+    "text-generation",
+    "ja",
+    "base_model:pfnet/plamo-3-nict-8b-base",
+    "base_model:finetune:pfnet/plamo-3-nict-8b-base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8091348992,
+  "parameters_human": "8.09B",
+  "storage_bytes": 13633939392,
+  "storage_human": "13.6 GB",
+  "base_model": "pfnet/plamo-3-nict-8b-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nori — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nori",
+      "snippet": "Nori (海苔?) désigne différentes algues rouges comestibles, utilisées dans la cuisine japonaise, notamment dans l'élaboration des …"
+    },
+    {
+      "title": "Algue nori : bienfaits, propriétés, comment la consommer ?",
+      "url": "https://www.topsante.com/plantes-medicinales/fiche/algue-nori-bienfaits-proprietes-comment-la-consommer-966356",
+      "snippet": "May 16, 2026 · Qu'est-ce que l'algue nori, cette algue marine aux multiples vertus santé si prisée dans la cuisine japonaise ? Et …"
+    },
+    {
+      "title": "Nori - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nori",
+      "snippet": "Nori is also eaten by making it into a soy sauce-flavored paste, nori no tsukudani (海苔の佃煮). Sometimes it is also used as a form …"
+    },
+    {
+      "title": "Algue nori : le pouvoir d'une super algue - PasseportSanté",
+      "url": "https://www.passeportsante.net/fr/Nutrition/EncyclopedieAliments/Fiche.aspx?doc=algue_nori_nu",
+      "snippet": "L’algue nori a de nombreux bienfaits. Elle a comme propriétés une teneur exceptionnelle en iode, en protéines mais aussi en …"
+    },
+    {
+      "title": "L'algue Nori : Comment la cuisiner ? Où l'acheter ? Feuille ou paillette ?",
+      "url": "https://www.mangeons-local.bzh/algue-nori/",
+      "snippet": "Jun 23, 2021 · La nori désigne plusieurs algues rouges commercialisées le plus souvent sous forme de feuille séchée, BIO ou non."
+    }
+  ]
+}

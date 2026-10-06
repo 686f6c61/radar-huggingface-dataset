@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "dev-amarnadh-gandham/laya",
+  "slug": "dev-amarnadh-gandham-laya",
+  "author": "dev-amarnadh-gandham",
+  "url": "https://huggingface.co/dev-amarnadh-gandham/laya",
+  "created_at": "2026-10-06T01:55:59.000Z",
+  "updated_at": "2026-10-06T01:55:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEV Community",
+      "url": "https://dev.to/",
+      "snippet": "DEV Community is a community of 4,132,928 amazing developers We're a place where coders share, stay up-to-date and grow their …"
+    },
+    {
+      "title": "Table of Content - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/iel8/10716817/10716818/10717167.pdf",
+      "snippet": "Deep fusion model for dental caries classification from X-Ray images ... AI-Enabled Robotic Maintenance System for Solar Panel Health. Monitoring. R ..."
+    },
+    {
+      "title": "Dev-C++ download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/orwelldevcpp/",
+      "snippet": "Nov 29, 2016 · Download Dev-C++ for free. A free, portable, fast and simple C/C++ IDE. A new and improved fork of Bloodshed Dev …"
+    },
+    {
+      "title": "international research journal of modernization in engineering ...",
+      "url": "https://www.irjmets.com/issuepdfdownload.php?p=81",
+      "snippet": "Generative AI Model for. Chemotherapy-Induced. Myelosuppression in Children ... Adaptive AI Chatbot Development. Using Reinforcement Learning. Yarradla ..."
+    },
+    {
+      "title": "Home | Dev-C++ Official Website",
+      "url": "https://www.dev-cpp.com/",
+      "snippet": "Nov 11, 2025 · Dev-C++ is a full-featured C and C++ Integrated Development Environment (IDE) for Windows. Free, open source, …"
+    }
+  ]
+}

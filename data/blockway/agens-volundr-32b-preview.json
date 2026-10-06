@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Blockway/Agens-Volundr-32B-Preview",
+  "slug": "blockway-agens-volundr-32b-preview",
+  "author": "Blockway",
+  "url": "https://huggingface.co/Blockway/Agens-Volundr-32B-Preview",
+  "created_at": "2026-10-03T09:04:47.000Z",
+  "updated_at": "2026-10-06T05:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "yue"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "volundr",
+    "image-text-to-text",
+    "agens",
+    "blockway",
+    "agent",
+    "tool-use",
+    "code",
+    "long-context",
+    "linear-attention",
+    "sparse-attention",
+    "cantonese",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "yue",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 144,
+  "downloads_30d": 156,
+  "trending_score": 10,
+  "parameters": 32688700242,
+  "parameters_human": "32.69B",
+  "storage_bytes": 65379269028,
+  "storage_human": "65.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Happen or What Happened - Which Is Correct? - Grammarhow",
+      "url": "https://grammarhow.com/what-happen-or-what-happened/",
+      "snippet": "What Happen or What Happened – Which Is Correct? The correct phrase is “what happened”. It is grammatically wrong to say “what …"
+    },
+    {
+      "title": "What Happened or What Happened? The Correct Grammar …",
+      "url": "https://englishgrammerpro.com/what-happened-or-what-happened/",
+      "snippet": "Feb 9, 2026 · In this guide, we will break down what What Happened or What Happened truly means, how it is used in real-life …"
+    },
+    {
+      "title": "What Happen or What Happened: Easy Grammar Guide",
+      "url": "https://grammarwrap.com/what-happen-or-what-happened/",
+      "snippet": "What happen or what happened? Learn the correct grammar, past tense rules, and examples to ask about events correctly in English."
+    },
+    {
+      "title": "What Happen or What Happened - Which Is Correct?",
+      "url": "https://twominenglish.com/what-happen-or-what-happened/",
+      "snippet": "Mar 7, 2026 · Many people often wonder which is correct: “What happen” or “What happened”? The answer is simple. “ What …"
+    },
+    {
+      "title": "What Happen vs What Happened: Which Is Correct and Why It Matters",
+      "url": "https://englishrulebook.com/what-happen-vs-what-happened/",
+      "snippet": "Mar 27, 2026 · When you are texting quickly, you might have typed what happen or seen someone else use it, and at first glance it …"
+    }
+  ]
+}

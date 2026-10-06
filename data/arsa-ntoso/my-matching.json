@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "arsa-ntoso/my-matching",
+  "slug": "arsa-ntoso-my-matching",
+  "author": "arsa-ntoso",
+  "url": "https://huggingface.co/arsa-ntoso/my-matching",
+  "created_at": "2026-10-06T14:28:38.000Z",
+  "updated_at": "2026-10-06T14:28:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

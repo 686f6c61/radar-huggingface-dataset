@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aungkomyint/PlantPerturb-Small",
+  "slug": "aungkomyint-plantperturb-small",
+  "author": "aungkomyint",
+  "url": "https://huggingface.co/aungkomyint/PlantPerturb-Small",
+  "created_at": "2026-10-06T16:59:02.000Z",
+  "updated_at": "2026-10-06T16:59:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "biology",
+    "bioinformatics",
+    "gene-expression",
+    "arabidopsis",
+    "drought",
+    "ridge-regression",
+    "research",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2703806,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Modernization Essay - bartleby",
+      "url": "https://www.bartleby.com/topics/modernization",
+      "snippet": "Modernization explains that social change is properly explained as the transition from traditional to the modern and the French …"
+    },
+    {
+      "title": "Animal Farm Literature Guide - bartleby",
+      "url": "https://www.bartleby.com/lit/animal-farm",
+      "snippet": "Animal Farm Author: George Orwell Genre: Allegorical novel Publication Date: 1945 Overview Animal Farm, a timeless classic, …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    }
+  ]
+}

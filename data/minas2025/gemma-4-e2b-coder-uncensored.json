@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "minas2025/Gemma-4-E2B-Coder-Uncensored",
+  "slug": "minas2025-gemma-4-e2b-coder-uncensored",
+  "author": "minas2025",
+  "url": "https://huggingface.co/minas2025/Gemma-4-E2B-Coder-Uncensored",
+  "created_at": "2026-10-05T20:11:54.000Z",
+  "updated_at": "2026-10-06T17:57:05.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma",
+    "gemma4",
+    "code",
+    "coding",
+    "python",
+    "typescript",
+    "react",
+    "frontend",
+    "qlora",
+    "fine-tuned",
+    "text-generation",
+    "small-language-model",
+    "uncensored",
+    "post-mortem",
+    "negative-transfer",
+    "en",
+    "dataset:F-A-I-L/kodcode-verified-python-235k",
+    "dataset:glyphsoftware/opus-4.6-frontend-development",
+    "dataset:Nexlab/fable5-agentic-coding-sft",
+    "base_model:llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
+    "base_model:finetune:llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
+    "license:gemma",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4954593152,
+  "storage_human": "5.0 GB",
+  "base_model": "llmfan46/gemma-4-E2B-it-ultra-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "openai_humaneval",
+      "metric": "HumanEval pass@1",
+      "value": 56.7
+    },
+    {
+      "task": "Code Generation",
+      "dataset": "google-research-datasets/mbpp",
+      "metric": "MBPP pass@1",
+      "value": 40.5
+    }
+  ],
+  "sources": []
+}

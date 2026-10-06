@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "chohyeongju/so101_smolvla_lora",
+  "slug": "chohyeongju-so101_smolvla_lora",
+  "author": "chohyeongju",
+  "url": "https://huggingface.co/chohyeongju/so101_smolvla_lora",
+  "created_at": "2026-10-06T14:37:25.000Z",
+  "updated_at": "2026-10-06T14:37:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:chohyeongju/so101_pick_place_20261006_183309",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1502992,
+  "storage_human": "2 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

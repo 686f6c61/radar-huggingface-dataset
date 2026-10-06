@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "MadSprite/Ornith-1.5-35B-A3B-BigBang-MTP-GPTQ-Int4-sym-G128",
+  "slug": "madsprite-ornith-1-5-35b-a3b-bigbang-mtp-gptq-int4-sym-g128",
+  "author": "MadSprite",
+  "url": "https://huggingface.co/MadSprite/Ornith-1.5-35B-A3B-BigBang-MTP-GPTQ-Int4-sym-G128",
+  "created_at": "2026-10-06T19:12:40.000Z",
+  "updated_at": "2026-10-06T19:19:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "gptq",
+    "int4",
+    "w4a16",
+    "moe",
+    "mtp",
+    "speculative-decoding",
+    "intel",
+    "xpu",
+    "arc",
+    "vllm",
+    "conversational",
+    "base_model:EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+    "base_model:quantized:EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 24452990934,
+  "storage_human": "24.5 GB",
+  "base_model": "EryriLabs/Ornith-1.5-35B-A3B-BigBang-MTP",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "攀岩保护器有哪些分类？如何使用？ - 知乎",
+      "url": "https://www.zhihu.com/question/268826913",
+      "snippet": "虽然 Reverso 保护器可以漏绳以减少冲坠对系统以及攀爬者们的冲击强度，却也意味着保护员需要更加高度集中精神来做好安全确保 …"
+    },
+    {
+      "title": "有哪些翻译工具翻译的结果比较地道和准确? - 知乎",
+      "url": "https://www.zhihu.com/question/417974863",
+      "snippet": "虽然现在的翻译工具很多，但大多都是机翻，还没智能到完全地道，我们可以通过一些方法“曲线救国”。 今天有小伙伴问我：信用卡 …"
+    },
+    {
+      "title": "The Independent Video Game Community - GBAtemp.net",
+      "url": "https://gbatemp.net/download/esr-disc-patcher.7597/",
+      "snippet": "Oct 21, 2009 · Go to download Author Author Sao Mortel Creation date Creation dateOct 21, 2009 Overview History Author Sao …"
+    },
+    {
+      "title": "3DS Homebrew Development - WikiTemp, the GBAtemp wiki",
+      "url": "https://wiki.gbatemp.net/wiki/3DS_Homebrew_Development",
+      "snippet": "Feb 25, 2017 · Comprehensive guide to 3DS homebrew development, including tools, resources, and tutorials for creating custom …"
+    },
+    {
+      "title": "GBAtemp.net",
+      "url": "https://gbatemp.net/threads/shin-megami-tensei-iv-and-iv-a-ghosting-fix.684175/",
+      "snippet": ""
+    }
+  ]
+}

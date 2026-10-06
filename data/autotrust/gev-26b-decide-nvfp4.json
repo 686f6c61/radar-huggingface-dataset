@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "autotrust/GEV-26B-Decide-NVFP4",
+  "slug": "autotrust-gev-26b-decide-nvfp4",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/GEV-26B-Decide-NVFP4",
+  "created_at": "2026-10-05T01:31:09.000Z",
+  "updated_at": "2026-10-05T01:48:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "system-one",
+    "system-two",
+    "adaptive-thinking",
+    "typed-decisions",
+    "decision-model",
+    "calibrated-probabilities",
+    "jev",
+    "noul",
+    "choice",
+    "score",
+    "lora",
+    "mixture-of-experts",
+    "multimodal",
+    "vllm",
+    "nvfp4",
+    "modelopt",
+    "fp4",
+    "text-classification",
+    "en",
+    "base_model:autotrust/GEV-26B-Decide",
+    "base_model:quantized:autotrust/GEV-26B-Decide",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 88,
+  "downloads_30d": 9282,
+  "trending_score": 73,
+  "parameters": 14386943566,
+  "parameters_human": "14.39B",
+  "storage_bytes": 19068206121,
+  "storage_human": "19.1 GB",
+  "base_model": "autotrust/GEV-26B-Decide",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Jev Decision Index 0.2.1 with adaptive thinking (own scoring; Knowledge & Reasoning adaptive, other areas System 1)",
+      "dataset": "Decision Index suite 0.2 (edition 0.2.1)",
+      "metric": "Decision Index (balanced skill), bf16 GEV-26B-Decide",
+      "value": 62.48
+    }
+  ],
+  "sources": []
+}

@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 13906,
+  "downloads_30d": 15829,
   "trending_score": 0,
   "parameters": 250287810304,
   "parameters_human": "250.29B",
@@ -45,7 +45,7 @@
     "gguf"
   ],
   "is_conversational": true,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

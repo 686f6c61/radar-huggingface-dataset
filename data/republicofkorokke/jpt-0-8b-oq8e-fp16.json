@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "RepublicOfKorokke/jpt-0.8b-oQ8e-fp16",
+  "slug": "republicofkorokke-jpt-0-8b-oq8e-fp16",
+  "author": "RepublicOfKorokke",
+  "url": "https://huggingface.co/RepublicOfKorokke/jpt-0.8b-oQ8e-fp16",
+  "created_at": "2026-10-06T15:32:51.000Z",
+  "updated_at": "2026-10-06T15:49:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:kirp/jpt-0.8b",
+    "base_model:quantized:kirp/jpt-0.8b",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1222351123,
+  "storage_human": "1.2 GB",
+  "base_model": "kirp/jpt-0.8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

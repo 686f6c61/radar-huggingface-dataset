@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "maximolebedev/swin-t-classification63",
+  "slug": "maximolebedev-swin-t-classification63",
+  "author": "maximolebedev",
+  "url": "https://huggingface.co/maximolebedev/swin-t-classification63",
+  "created_at": "2026-10-06T01:21:34.000Z",
+  "updated_at": "2026-10-06T01:21:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Compression for Deep Neural Networks: A Survey",
+      "url": "https://www.researchgate.net/publication/369207253_Model_Compression_for_Deep_Neural_Networks_A_Survey",
+      "snippet": "01.03.2023 ... Table 1. Classiﬁcation accuracy and computation complexity of different DNN models on. ImageNet. †. Model Layers Parameter FLOPs Top-1 Error ..."
+    },
+    {
+      "title": "Intermediate Domain Alignment and Morphology Analogy for Patent ...",
+      "url": "https://openreview.net/pdf?id=vE98S8BmzP",
+      "snippet": "[3] Alla Kravets, Nikita Lebedev, and Maxim Legenchenko. Patents images ... Swin-T / S / B. ViT-B-16 / L-16. Dataset. ImageNet1K-edge. ImageNet1K-edge ..."
+    },
+    {
+      "title": "HUMAN BASELINES IN MODEL EVALUATIONS NEED RIGOR AND ...",
+      "url": "https://openreview.net/pdf?id=VbG9sIsn4F",
+      "snippet": "Like measurement theory, AI evaluation has been concerned with estimating concepts such as intelligence, fairness, emotion, and culture—though in AI models ..."
+    },
+    {
+      "title": "50 Years of Artificial Intelligence - Essays Dedicated to the 50th ...",
+      "url": "http://repo.darmajaya.ac.id/3790/1/50%20Years%20of%20Artificial%20Intelligence%20-%20Essays%20Dedicated%20to%20the%2050th%20Anniversary%20of%20Artificial%20Intelligence%20%28%20PDFDrive%20%29.pdf",
+      "snippet": "Many specialized AI systems exist that are at work in our cars, in our laptop computers, and in our personal and commercial technologies. There is no doubt that ..."
+    },
+    {
+      "title": "Einträge mit Themengebiet \"Institut für Materialphysik im Weltraum\"",
+      "url": "https://elib.dlr.de/view/subjects/mp.html",
+      "snippet": "und Lebedev, Vladimir (2010) Comparative analysis of models for solute trapping in rapid solidification. In: DPG Verhandlungen 2010, Condensed Matter Section, ..."
+    }
+  ]
+}

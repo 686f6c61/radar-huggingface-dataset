@@ -1,0 +1,144 @@
+{
+  "schema": 1,
+  "id": "futo-org/asr4all-l",
+  "slug": "futo-org-asr4all-l",
+  "author": "futo-org",
+  "url": "https://huggingface.co/futo-org/asr4all-l",
+  "created_at": "2026-08-08T00:17:57.000Z",
+  "updated_at": "2026-10-06T17:48:40.000Z",
+  "license": "futo-model-weights-ethical-use-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "executorch",
+    "asr4all",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "speech",
+    "ctc",
+    "streaming",
+    "on-device",
+    "edge",
+    "custom_code",
+    "en",
+    "dataset:espnet/yodas",
+    "dataset:MLCommons/peoples_speech",
+    "dataset:mozilla-foundation/common_voice_25_0",
+    "dataset:openslr/librispeech_asr",
+    "dataset:pkufool/libriheavy",
+    "dataset:facebook/voxpopuli",
+    "dataset:edinburghcstr/ami",
+    "dataset:qmeeus/slurp",
+    "dataset:distil-whisper/earnings22",
+    "dataset:Revai/earnings21",
+    "dataset:edinburghcstr/edacc",
+    "dataset:farukclk/voxpopuli-en-accented-split",
+    "dataset:ylacombe/english_dialects",
+    "dataset:apptek-com/apptek_callcenter_dialogues",
+    "arxiv:2607.25870",
+    "license:other",
+    "model-index",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 96999005,
+  "parameters_human": "97.0M",
+  "storage_bytes": 4724384631,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (cleaned)",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 9.94
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech (cleaned)",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 9.84
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "VoxPopuli (cleaned)",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 4.05
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22 (cleaned, chunked)",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 9.15
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech clean",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 2.38
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech other",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 5.94
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "SPGISpeech",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 4.61
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Monsoon en-IN",
+      "metric": "Test WER (Whisper-normalized)",
+      "value": 7.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Asian Ass Porn Videos (85,607) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/asian-ass",
+      "snippet": "Free asian ass porn: 85,607 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Free Big Ass Asian Porn | PornKai.com",
+      "url": "https://pornkai.com/videos?q=big-ass-asian",
+      "snippet": "Big Ass Asian Porn Videos: WATCH FREE here!"
+    },
+    {
+      "title": "Asian Big Ass Porn Videos | AsianPorn1",
+      "url": "https://asianporn1.com/categories/big-ass/",
+      "snippet": "Asian big ass porn videos. Girls with huge natural butts, twerking, and booty shaking. Rare big booty Asians getting pounded."
+    },
+    {
+      "title": "Asian Porn Videos, Big Ass Girls - Bubble Butt Porn",
+      "url": "https://www.bubblebutt.tv/category/asian/",
+      "snippet": "Watch big bubble butt women nude in thousands of free Asian porn videos and updates starring sexy girls with big round asses."
+    },
+    {
+      "title": "Free Big Ass Asian Porn Videos (65,354) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/big-ass-asian",
+      "snippet": "Free big ass asian porn: 65,354 videos. WATCH NOW for FREE!"
+    }
+  ]
+}

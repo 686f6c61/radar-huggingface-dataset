@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/embeddinggemma-2",
+  "slug": "technobaptist-embeddinggemma-2",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/embeddinggemma-2",
+  "created_at": "2026-10-06T16:14:59.000Z",
+  "updated_at": "2026-10-06T16:14:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "feature-extraction",
+    "embedding",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "sentence-similarity",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1525774811,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "EmbeddingGemma generates high-quality embeddings with reduced resource consumption, enabling on-device Retrieval Augmented Generation (RAG) pipelines, semantic search, and generative AI applications that can run on everyday devices."
+    },
+    {
+      "title": "Google launches Gemma 2, its next generation of open models",
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/google-gemma-2/",
+      "snippet": "AI has the potential to address some of humanity&#x27;s most pressing problems — but only if everyone has the tools to build with it. That&#x27;s why earlier this year we introduced Gemma, a family of lightweight, state-of-the-art open models built from the same research and technology used to create the Gemini models."
+    },
+    {
+      "title": "Gemma models overview - Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs",
+      "snippet": "Gemma is a family of lightweight, state-of-the-art open models built from the same research and technology used to create the Gemini models. Developed by Google DeepMind and other teams across Google, Gemma is named after the Latin gemma, meaning precious stone. The Gemma model weights are supported by developer tools that promote innovation, collaboration, and the responsible use of ..."
+    },
+    {
+      "title": "EmbeddingGemma - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/EmbeddingGemma",
+      "snippet": "EmbeddingGemma is a lightweight, open text embedding model developed by Google DeepMind as part of the Gemma model family. Released in September 2025, the model..."
+    },
+    {
+      "title": "google/gemma-2b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

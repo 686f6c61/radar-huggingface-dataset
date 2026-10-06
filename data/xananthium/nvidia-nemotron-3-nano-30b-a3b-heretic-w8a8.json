@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8",
+  "slug": "xananthium-nvidia-nemotron-3-nano-30b-a3b-heretic-w8a8",
+  "author": "Xananthium",
+  "url": "https://huggingface.co/Xananthium/NVIDIA-Nemotron-3-Nano-30B-A3B-Heretic-W8A8",
+  "created_at": "2026-10-06T17:02:04.000Z",
+  "updated_at": "2026-10-06T17:07:15.000Z",
+  "license": "nvidia-nemotron-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "compressed-tensors",
+    "quantization",
+    "evaluation",
+    "base_model:trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic",
+    "base_model:finetune:trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31591807616,
+  "parameters_human": "31.59B",
+  "storage_bytes": 32353648164,
+  "storage_human": "32.4 GB",
+  "base_model": "trohrbaugh/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "OsGo/embeddinggemma-2",
+  "slug": "osgo-embeddinggemma-2",
+  "author": "OsGo",
+  "url": "https://huggingface.co/OsGo/embeddinggemma-2",
+  "created_at": "2026-10-06T17:03:17.000Z",
+  "updated_at": "2026-10-06T17:08:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "feature-extraction",
+    "embedding",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "sentence-similarity",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1525774811,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Uglymug, Epicfighter online - chapter 1 | Anime-Planet",
+      "url": "https://www.anime-planet.com/manga/uglymug-epicfighter/chapters/1",
+      "snippet": "Read more chapters at Manga UP! Loved this manga? Register and..."
+    },
+    {
+      "title": "Uglymug, Epicfighter Chapter 1 – Omoi",
+      "url": "https://www.omoi.com/series/uglymug-epicfighter/read/0f7ea47c-ffe9-47ee-9ec7-cd2ad99cbfbc",
+      "snippet": "Read Uglymug, Epicfighter Chapter 1 free from the official source for manga."
+    },
+    {
+      "title": "Read Uglymug, Epicfighter SSS online - chapter 1 | Anime-Planet",
+      "url": "https://www.anime-planet.com/manga/uglymug-epicfighter-sss/chapters/1",
+      "snippet": "Uglymug, Epicfighter SSS - Chapter 1 Loved this manga? Register and... Add to your manga list Get more info and reviews > Find …"
+    },
+    {
+      "title": "Mission 1 | Uglymug, Epicfighter | Weeb Central",
+      "url": "https://weebcentral.com/chapters/01J76XZ76MM67C5MDR6HDAHY0J",
+      "snippet": "Read Uglymug, Epicfighter Mission 1 online for free at Weeb Central"
+    },
+    {
+      "title": "Uglymug, Epicfighter - Manga UP!",
+      "url": "https://global.manga-up.com/manga/69",
+      "snippet": "Free Jul 01, 2022 4 Chapters after this are for members only Sign in to read more Chapter 2.1 Jul 01, 2022 2"
+    }
+  ]
+}

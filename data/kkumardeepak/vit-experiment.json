@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "kkumardeepak/vit-experiment",
+  "slug": "kkumardeepak-vit-experiment",
+  "author": "kkumardeepak",
+  "url": "https://huggingface.co/kkumardeepak/vit-experiment",
+  "created_at": "2026-10-06T02:07:47.000Z",
+  "updated_at": "2026-10-06T02:07:52.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Book on Production Technology of Fruit Crops - ResearchGate",
+      "url": "https://www.researchgate.net/publication/391233570_Text_Book_on_Production_Technology_of_Fruit_Crops",
+      "snippet": "28.04.2025 ... and 85-95 mg of Ascorbic acid (Vit. C) per 100g. Central Asia is supposed to ... b) Spray carbaryl at 0.15% a.i.. c) Ber beetle or leaf ..."
+    }
+  ]
+}

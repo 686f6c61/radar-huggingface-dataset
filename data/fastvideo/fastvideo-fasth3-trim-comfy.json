@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FastVideo/FastVideo-FastH3-Trim-Comfy",
+  "slug": "fastvideo-fastvideo-fasth3-trim-comfy",
+  "author": "FastVideo",
+  "url": "https://huggingface.co/FastVideo/FastVideo-FastH3-Trim-Comfy",
+  "created_at": "2026-10-06T01:20:18.000Z",
+  "updated_at": "2026-10-06T01:37:36.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:FastVideo/FastVideo-FastH3-Trim-8-Step",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-Trim-8-Step",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190948531963,
+  "storage_human": "190.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, FastVideo/FastVideo-FastH3-Trim-8-Step",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastH3 8-Step V2 LoRA Training: Settings & Fixes - RunComfy",
+      "url": "https://www.runcomfy.com/trainer/ai-toolkit/fasth3-8-step-v2-lora-training-guide",
+      "snippet": "... FastVideo/FastVideo-FastH3-Comfy , and Training Adapter for distillation handling. ... AI Toolkit MiniMax-H3 and FastH3 model implementation\". [3]: https ..."
+    },
+    {
+      "title": "LivePortrait for Facial Expression - ComfyUI Workflow",
+      "url": "https://comfy.org/workflows/templates_liveportrat.app-b6c2a0bf375b/",
+      "snippet": "Comfy Apps. Most Popular. FastVideo FastH3: Image to Video · ComfyUI Try now · Image to Model. Image to Model. Qwen Image ..."
+    },
+    {
+      "title": "awesome-minimax-H3/README.md at main - GitHub",
+      "url": "https://github.com/wildminder/awesome-minimax-H3/blob/main/README.md",
+      "snippet": "FastH3 DMD2 Distillation (FastVideo). Official data-free DMD2 few-step distillation of MiniMax-H3 FL2VA by the FastVideo team (hao-ai- ..."
+    },
+    {
+      "title": "Product Scene Transformation - ComfyUI Workflow",
+      "url": "https://comfy.org/workflows/templates_product_scene_transformation-d686f64879fb/",
+      "snippet": "The Product Scene Transformation workflow is designed to enhance product videos by dynamically transforming scenes using advanced AI models. ... FastVideo FastH3: ..."
+    },
+    {
+      "title": "MiniMax-AI/awesome-minimax-h3-integration - GitHub",
+      "url": "https://github.com/MiniMax-AI/awesome-minimax-h3-integration",
+      "snippet": "Comfy-Org (official repackage). Model ... You want a single official-ish 8-step LoRA per variant and native ComfyUI loading. FastH3, 4, FastVideo, video sparse ..."
+    }
+  ]
+}

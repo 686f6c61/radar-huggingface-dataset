@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "AustinFu/Qev-0.8B",
+  "slug": "austinfu-qev-0-8b",
+  "author": "AustinFu",
+  "url": "https://huggingface.co/AustinFu/Qev-0.8B",
+  "created_at": "2026-10-06T01:36:48.000Z",
+  "updated_at": "2026-10-06T01:36:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qev",
+    "lora",
+    "decision-model",
+    "knowledge-distillation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201110801,
+  "storage_human": "201 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

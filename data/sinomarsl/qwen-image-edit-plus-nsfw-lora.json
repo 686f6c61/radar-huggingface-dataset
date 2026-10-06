@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sinomarsl/qwen-image-edit-plus-nsfw-lora",
+  "slug": "sinomarsl-qwen-image-edit-plus-nsfw-lora",
+  "author": "Sinomarsl",
+  "url": "https://huggingface.co/Sinomarsl/qwen-image-edit-plus-nsfw-lora",
+  "created_at": "2026-10-06T01:36:40.000Z",
+  "updated_at": "2026-10-06T01:39:16.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "nsfw",
+    "image-editing",
+    "qwen-image-edit",
+    "not-for-all-audiences",
+    "image-text-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590058864,
+  "storage_human": "590 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use Google Drive for desktop",
+      "url": "https://support.google.com/drive/answer/10838124?hl=en",
+      "snippet": "The space tracker in Drive for desktop shows the room left on your computer's hard drive, not your Google Account storage. …"
+    },
+    {
+      "title": "Partager des fichiers via Google Drive",
+      "url": "https://support.google.com/drive/answer/2494822?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Partager des fichiers via Google Drive Vous pouvez partager les fichiers et les dossiers que vous stockez dans Google Drive avec …"
+    },
+    {
+      "title": "为什么国外用Drive来表示网盘/云盘/云服务？ - 知乎",
+      "url": "https://www.zhihu.com/question/67878615",
+      "snippet": "\"Drive\" 作为英语单词，表示驱动器或存储设备，因此与云盘、网盘等在线存储服务相关联。 这些服务使用“drive”一词强调它们提供的 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "Google ドライブの使い方 - パソコン - Google ドライブ ヘルプ",
+      "url": "https://support.google.com/drive/answer/2424384?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google ドライブの使い方を確認する このセクションでは、次の内容について説明します。 Google ドライブの機能を利用する ファ …"
+    }
+  ]
+}

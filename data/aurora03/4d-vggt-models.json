@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aurora03/4D-VGGT-models",
+  "slug": "aurora03-4d-vggt-models",
+  "author": "Aurora03",
+  "url": "https://huggingface.co/Aurora03/4D-VGGT-models",
+  "created_at": "2026-10-06T01:58:11.000Z",
+  "updated_at": "2026-10-06T02:27:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "geometry",
+    "depth-estimation",
+    "point-map",
+    "camera-pose-estimation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7215706998,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aurora03/4D-VGGT-models · Hugging Face",
+      "url": "https://huggingface.co/Aurora03/4D-VGGT-models",
+      "snippet": "4D-VGGT Models This repository hosts the geometry-only checkpoint for 4D-VGGT Version 1.0. It supports camera parameter estimation, depth estimation, and world-space point-map estimation with the corresponding inference code in the 4D-VGGT repository."
+    },
+    {
+      "title": "GitHub - Haonan-Wang-aurora/4D-VGGT",
+      "url": "https://github.com/Haonan-Wang-aurora/4D-VGGT",
+      "snippet": "4D-VGGT mainly contains two parts: three main components: 1) Multi-Setting Input. We design an adaptive visual grid that enables our model to accommodate visual features from diverse camera configurations through attention masks. 2) Multi-Level Representation. We propose a cross-view global fusion module to learn the spatial representation between various views, and a cross-time local fusion ..."
+    },
+    {
+      "title": "4D-VGGT: A General Foundation Model with SpatioTemporal Awareness for ...",
+      "url": "https://arxiv.org/pdf/2511.18416",
+      "snippet": "Figure 1. Illustration of our model paradigm and performance. (a) Our 4D-VGGT accommodates various camera settings and adopts a divide-and-conquer spatiotemporal representation approach for different geometry tasks in dynamic scenes. (b) Performance comparison of visual geometry models."
+    },
+    {
+      "title": "4D-VGGT: A General Foundation Model with SpatioTemporal Awareness",
+      "url": "https://arxiv.org/html/2511.18416",
+      "snippet": "Figure 1: Illustration of our model paradigm and performance. (a) Our 4D-VGGT accommodates various camera settings and adopts a divide-and-conquer spatiotemporal representation approach for different geometry tasks in dynamic scenes. (b) Performance comparison of visual geometry models."
+    },
+    {
+      "title": "PDF 4D-VGGT: A SpatioTemporal Foundation Model for Dynamic Scene ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-032-37035-8_7.pdf?pdf=inline%20link",
+      "snippet": "We propose 4D-VGGT, a general spatiotemporal foundation model for dynamic scene geometry estimation. As shown in Fig. 2, the whole framework is divided into three parts: multi-setting input for adapting and encoding input sequences with arbitrary numbers of views and time steps, multi-level representation for divide-and-conquer spatiotemporal ..."
+    }
+  ]
+}

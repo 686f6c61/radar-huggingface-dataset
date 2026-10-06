@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "geobase/GeoText1652_model",
+  "slug": "geobase-geotext1652_model",
+  "author": "geobase",
+  "url": "https://huggingface.co/geobase/GeoText1652_model",
+  "created_at": "2026-10-06T14:06:50.000Z",
+  "updated_at": "2026-10-06T15:47:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "arxiv:2311.12751",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3709928953,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "French-English Vocabulary / Vocabulaire Français-Anglais",
+      "url": "https://forum.wordreference.com/forums/french-english-vocabulary-vocabulaire-fran%C3%A7ais-anglais.3/",
+      "snippet": "Jun 22, 2007 · French and English words, phrases and idioms: meaning, translation, usage. No other languages allowed here. Mots, …"
+    },
+    {
+      "title": "French 'toutefois' | WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/french-toutefois.3370475/",
+      "snippet": "Sep 23, 2017 · How do we explain the meaning of the French word toutefois \"however\"? Literally it seems to mean \"every time\". How …"
+    },
+    {
+      "title": "French hood - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/french-hood.1011481/",
+      "snippet": "Jun 25, 2008 · ¡Hola! ¿Sabéis si esto tiene algún nombre en castellano diferente de capucha francesa, que es la traducción literal? …"
+    },
+    {
+      "title": "Random French words (Word of the Day) - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/random-french-words-word-of-the-day.198752/",
+      "snippet": "Jul 28, 2006 · Hello all! I was wondering if maybe some French speakers could help me make a list of random French words. I am …"
+    },
+    {
+      "title": "French Words In Hebrew - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/french-words-in-hebrew.1870386/",
+      "snippet": "Aug 20, 2010 · Shalom. I am looking for French words used in Hebrew. This may be Aoyama's area of expertise. Those that speak …"
+    }
+  ]
+}

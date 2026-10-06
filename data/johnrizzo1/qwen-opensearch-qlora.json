@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "johnrizzo1/qwen-opensearch-qlora",
+  "slug": "johnrizzo1-qwen-opensearch-qlora",
+  "author": "johnrizzo1",
+  "url": "https://huggingface.co/johnrizzo1/qwen-opensearch-qlora",
+  "created_at": "2026-10-06T19:25:33.000Z",
+  "updated_at": "2026-10-06T19:25:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "opensearch",
+    "elasticsearch",
+    "text-to-dsl",
+    "lora",
+    "qlora",
+    "qwen",
+    "generated_from_trainer",
+    "text-generation",
+    "conversational",
+    "dataset:custom",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233812775,
+  "storage_human": "234 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QLoRA - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/QLoRA",
+      "snippet": "QLoRA (Quantized Low-Rank Adaptation) is an efficient finetuning method for large language models that backpropagates gradients through a frozen, four-bit quantized pretrained model into Low-Rank Adapters (LoRA). Introduced in May 2023 by Tim Dettmers, Artidoro Pagnoni, Ari Holtzman, and Luke Zettlemoyer at the University of Washington in the paper \"QLoRA: Efficient Finetuning of Quantized ..."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large and small language models (LLM and SLM) developed by Alibaba Cloud. Its latest version, Qwen3.8; the 2.4 trillion parameter model was the second largest and second most powerful open weights LLM and Chinese LLM released by 12 August 2026, after Kimi K3. [1][2 ..."
+    },
+    {
+      "title": "Qwen3 Local Fine Tuning via QLoRA [2026 Guide]",
+      "url": "https://aithinkerlab.com/qwen3-qlora-local-fine-tuning-guide/",
+      "snippet": "A local fine tuning guide for Qwen3 via QLoRA: match GPU to model size, avoid the VRAM trap, and train fully offline. Here&#x27;s what changed in 2026."
+    },
+    {
+      "title": "Fine-Tune LLMs with LoRA and QLoRA: 2026 Guide - DEV Community",
+      "url": "https://dev.to/jangwook_kim_e31e7291ad98/fine-tune-llms-with-lora-and-qlora-2026-guide-33lf",
+      "snippet": "Learn to fine-tune LLMs with LoRA and QLoRA in 2026. VRAM requirements, dataset prep, Unsloth/Axolotl setup, hyperparameters, and evaluation."
+    },
+    {
+      "title": "QLoRA (Quantized Low-Rank Adapter) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/qlora-quantized-low-rank-adapter/",
+      "snippet": "QLoRA is primarily used with open-weight models like LLaMA, Mistral and Falcon, as these allow direct access to model weights required for quantization and adapter-based fine-tuning. QLoRA combines quantization which reduces model size, with low-rank adapters, small trainable layers for specific tasks. This let&#x27;s us adapt billion-parameter models using less memory and computation while ..."
+    }
+  ]
+}

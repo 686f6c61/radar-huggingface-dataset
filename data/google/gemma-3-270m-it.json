@@ -64,11 +64,11 @@
     "region:us"
   ],
   "likes": 652,
-  "downloads_30d": 76505,
+  "downloads_30d": 83377,
   "trending_score": 9,
   "parameters": 268098176,
   "parameters_human": "268.1M",
-  "storage_bytes": 1110519756,
+  "storage_bytes": 1126542929,
   "storage_human": "1.1 GB",
   "base_model": "google/gemma-3-270m",
   "formats": [

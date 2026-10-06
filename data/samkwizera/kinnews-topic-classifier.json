@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Samkwizera/kinnews-topic-classifier",
+  "slug": "samkwizera-kinnews-topic-classifier",
+  "author": "Samkwizera",
+  "url": "https://huggingface.co/Samkwizera/kinnews-topic-classifier",
+  "created_at": "2026-10-06T19:11:26.000Z",
+  "updated_at": "2026-10-06T19:11:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111465998,
+  "parameters_human": "111.5M",
+  "storage_bytes": 445880384,
+  "storage_human": "446 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nouvelle arme mythique sur #Overwatch : Lúcio \"Treblemaker\"",
+      "url": "https://x.com/OWCavalryFR/status/2107161978829775332",
+      "snippet": "La Cavalerie Overwatch on X: \"Nouvelle arme mythique sur #Overwatch : Lúcio \"Treblemaker\" 🎶\" / X Nouvelle arme mythique sur …"
+    },
+    {
+      "title": "Liste d'objets légendaires et sacrés — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Liste_d%27objets_l%C3%A9gendaires_et_sacr%C3%A9s",
+      "snippet": "Cette liste non exhaustive concerne les objets légendaires et sacrés appartenant au domaine des légendes, des religions et de la …"
+    },
+    {
+      "title": "Ce qui vous attend lors de la Saison 5 du Règne de La Griffe !",
+      "url": "https://overwatch.judgehype.com/news/ce-qui-vous-attend-lors-de-la-saison-5-du-regne-de-la-griffe-186400/",
+      "snippet": "1 day ago · Modèle d’arme mythique Amplibien pour Lúcio Bon, assez parlé de « contemplation paisible de l’immortalité »… il est …"
+    },
+    {
+      "title": "Lúcio | Wiki Overwatch | Fandom",
+      "url": "https://overwatch.fandom.com/fr/wiki/L%C3%BAcio",
+      "snippet": "« Allez, tous ensemble ! Lúcio est une célébrité internationale qui milite pour le changement social par sa musique et ses actions. …"
+    },
+    {
+      "title": "jeuxvideo.com toute l'actualité du jeu vidéo et du hardware",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/505638/arme-doree-de-lucio.htm",
+      "snippet": "Ce film gratuit est une masterclass et une lettre d'amour à la saga ! Retrouvez toute l'actualité du jeu video sur PC et consoles."
+    }
+  ]
+}

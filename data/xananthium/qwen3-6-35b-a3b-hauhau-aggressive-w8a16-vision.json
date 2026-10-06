@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A16-Vision",
+  "slug": "xananthium-qwen3-6-35b-a3b-hauhau-aggressive-w8a16-vision",
+  "author": "Xananthium",
+  "url": "https://huggingface.co/Xananthium/Qwen3.6-35B-A3B-Hauhau-Aggressive-W8A16-Vision",
+  "created_at": "2026-10-06T16:18:01.000Z",
+  "updated_at": "2026-10-06T16:20:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "local-inference",
+    "quantization",
+    "evaluation",
+    "base_model:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "base_model:quantized:HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+    "license:apache-2.0",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 38436131518,
+  "storage_human": "38.4 GB",
+  "base_model": "HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MissCataleya's porn videos and reels, nude photos and bio on xHamster",
+      "url": "https://xhamster.com/users/misscataleya",
+      "snippet": "Check out MissCataleya's newest porn videos, nude photo galleries and porn reels on xHamster. Browse through the verified profile …"
+    },
+    {
+      "title": "Vidéos et reels pornos, nudes et profil de MissCataleya sur xHamster",
+      "url": "https://fra.xhamster.com/users/misscataleya",
+      "snippet": "Parcourez le profil vérifié de MissCataleya pour admirer son contenu sexy et bandant."
+    },
+    {
+      "title": "Miss cataleya Porn Videos - xHamster",
+      "url": "https://xhamster.com/creators/miss-cataleya",
+      "snippet": "Find nude Miss cataleya porn videos featuring the sex model fucking in XXX scenes, including footjob, foot fetish, amateur. Visit us …"
+    },
+    {
+      "title": "Miss_Kataleya's Porn Videos | Pornhub",
+      "url": "https://www.pornhub.com/model/miss_kataleya",
+      "snippet": "Check out the best videos, photos, gifs and playlists from amateur model Miss_Kataleya. Browse through the content she uploaded …"
+    },
+    {
+      "title": "Miss cataleya Porn Videos: Sex Model Nudes | xHamster",
+      "url": "https://xhamster2.com/creators/miss-cataleya",
+      "snippet": "Find nude Miss cataleya porn videos featuring the sex model fucking in XXX scenes, including footjob, foot fetish, femdom. Visit us …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "paulbqtp90/retrieval",
+  "slug": "paulbqtp90-retrieval",
+  "author": "paulbqtp90",
+  "url": "https://huggingface.co/paulbqtp90/retrieval",
+  "created_at": "2026-10-06T01:32:53.000Z",
+  "updated_at": "2026-10-06T01:32:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrouver ses identifiants Facebook [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34846613-retrouver-ses-identifiants-facebook",
+      "snippet": "Retrouver ses identifiants Facebook Résolu Nadia mn - Modifié le 16 nov. 2021 à 11:37 Dernière réponse le 6 août 2021 2 réponses"
+    },
+    {
+      "title": "Facebook en chinois [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-32925815-facebook-en-chinois",
+      "snippet": "Dec 21, 2015 · Bonjour, Depuis 3 jours mon Facebook est en chinois. Que faut il faire pour retrouver mon site en français.Merci de …"
+    },
+    {
+      "title": "Cómo recuperar tu cuenta de Facebook eliminada o desactivada",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1702-como-reactivar-tu-cuenta-de-facebook-si-la-eliminaste/",
+      "snippet": "Aug 16, 2023 · Si desactivaste temporalmente o eliminaste definitivamente tu cuenta en Facebook, aún es posible recuperarla, …"
+    },
+    {
+      "title": "Cómo 'hackear' una cuenta de Facebook: sin teléfono, correo - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2172-como-hackear-una-cuenta-de-facebook/",
+      "snippet": "Oct 25, 2023 · En Internet puedes encontrar sitios que ofrecen tutoriales de cómo hackear una cuenta de Facebook, ya sea …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

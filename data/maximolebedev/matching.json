@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maximolebedev/matching",
+  "slug": "maximolebedev-matching",
+  "author": "maximolebedev",
+  "url": "https://huggingface.co/maximolebedev/matching",
+  "created_at": "2026-10-06T01:21:17.000Z",
+  "updated_at": "2026-10-06T01:21:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Luxembourg's Maxim Lebedev wins award at Castic",
+      "url": "https://en.paperjam.lu/article/luxembourgs-maxim-lebedev-wins-award-at-castic",
+      "snippet": "According to the FJSL, the results obtained correspond to the congestion patterns observed on Google Maps and demonstrate how this type of model ... AI, quantum, ..."
+    },
+    {
+      "title": "Engaging universe 4.0: The case for forming a public relations ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0363811121000278",
+      "snippet": "... AI tools use technology but not all tech is AI” (Valin, 2018: 5). Indeed ... maxim: “being able to give the right information, to the right people, at ..."
+    },
+    {
+      "title": "A systematic review on the generative AI applications in human ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12863965/",
+      "snippet": "This approach solves the problem of sequential processing and enables the model to understand complex relationships in data, very critical in healthcare and ..."
+    },
+    {
+      "title": "A Survey on Patent Analysis: From NLP to Multimodal AI",
+      "url": "https://aclanthology.org/2025.acl-long.419.pdf",
+      "snippet": "27.07.2025 ... An explainable ai (xai) model for text-based patent novelty analysis. ... Alla Kravets, Nikita Lebedev, and Maxim Legenchenko. 2017. Patents ..."
+    },
+    {
+      "title": "Maxim Lebedev - Professor - LinkedIn",
+      "url": "https://au.linkedin.com/in/maxim-lebedev-77bb3653",
+      "snippet": "Professor · Experience: Curtin University · Education: Moscow Institute of Physics and Technology (State University) (MIPT) · Location: Greater Perth Area ..."
+    }
+  ]
+}

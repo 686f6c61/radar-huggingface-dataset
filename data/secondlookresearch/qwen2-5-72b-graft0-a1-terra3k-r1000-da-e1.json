@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1",
+  "slug": "secondlookresearch-qwen2-5-72b-graft0-a1-terra3k-r1000-da-e1",
+  "author": "SecondLookResearch",
+  "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1",
+  "created_at": "2026-10-06T01:54:30.000Z",
+  "updated_at": "2026-10-06T01:55:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-72B",
+    "base_model:adapter:Qwen/Qwen2.5-72B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3380164501,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen2.5-72B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1 - Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1",
+      "snippet": "Qwen2.5-72B-graft0-a1-terra3k-r1000-da-e1 Difficult-advice stage for the cross-model stacked experiment (CrossModelStackPlan.md), Qwen2.5-72B: terra3k r1000, 1 epoch, over the frozen Qwen2.5-72B-graft0-a1. Stage 2 floor gate, rung switch after r3000 saturated at 1.1%. LoRA r64/a128, linear-only, graft0 platform. Difficult-advice stage trained as a FRESH adapter over a merged, frozen A1. Serve ..."
+    },
+    {
+      "title": "SecondLookResearch/Qwen2.5-72B-graft0-a1 · Hugging Face",
+      "url": "https://huggingface.co/SecondLookResearch/Qwen2.5-72B-graft0-a1",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5: A Party of Foundation Models!",
+      "url": "https://qwen.ai/blog?id=qwen2.5",
+      "snippet": "A significant update in Qwen2.5 is the reintroduction of our 14B and 32B models, Qwen2.5-14B and Qwen2.5-32B. These models outperform baseline models of comparable or larger sizes, such as Phi-3.5-MoE-Instruct and Gemma2-27B-IT, across diverse tasks."
+    },
+    {
+      "title": "Qwen2.5-72B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/qwen2-5-72b",
+      "snippet": "About Qwen2.5-72B Qwen2.5-72B is Alibaba Cloud's flagship open-weights dense model engineered for advanced coding, mathematical reasoning, and multi-turn enterprise agents. It excels at long-form generation and structured data comprehension over a 131K context window."
+    },
+    {
+      "title": "Qwen2.5-72B · Model · Inferix",
+      "url": "https://inferix.co/models/Qwen/Qwen2.5-72B",
+      "snippet": "Qwen2.5 is the latest series of Qwen large language models. For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: Tasks:text-generationLibraries:transformersLicense:other ArXiv: 2407.10671 imported huggingface minio transformers safetensors qwen2 text ..."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "abbuibuibui/Aqua-Lora",
+  "slug": "abbuibuibui-aqua-lora",
+  "author": "abbuibuibui",
+  "url": "https://huggingface.co/abbuibuibui/Aqua-Lora",
+  "created_at": "2026-10-06T16:49:45.000Z",
+  "updated_at": "2026-10-06T17:10:38.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "sdxl",
+    "lora",
+    "illustrious",
+    "character",
+    "konosuba",
+    "aqua",
+    "en",
+    "zh",
+    "dataset:abbuibuibui/Aqua-Dataset",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1839299517,
+  "storage_human": "1.8 GB",
+  "base_model": "waiIllustriousSDXL-v17",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

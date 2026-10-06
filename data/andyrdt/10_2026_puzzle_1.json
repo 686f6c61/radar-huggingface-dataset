@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "andyrdt/10_2026_puzzle_1",
+  "slug": "andyrdt-10_2026_puzzle_1",
+  "author": "andyrdt",
+  "url": "https://huggingface.co/andyrdt/10_2026_puzzle_1",
+  "created_at": "2026-10-06T01:09:13.000Z",
+  "updated_at": "2026-10-06T01:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146262,
+  "storage_human": "146262 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Android ne reconnaît pas l'USB, charge uniquement : solutions et ...",
+      "url": "https://fr.androidguias.com/Android-ne-reconna%C3%AEt-pas-la-charge-USB-uniquement/",
+      "snippet": "Apr 27, 2025 · Votre Android se charge uniquement et ne transfère pas de fichiers via USB ? Découvrez toutes les causes et …"
+    },
+    {
+      "title": "Mode USB charge uniquement - Forum de Frandroid",
+      "url": "https://forum.frandroid.com/topic/276612-mode-usb-charge-uniquement/",
+      "snippet": "Apr 29, 2020 · Voilà je rencontre un problème concernant la connectivité USB de mon téléphone. J'ai un Samsung Galaxy A50, et …"
+    },
+    {
+      "title": "Amazon.fr : Chargeur Usb Prise",
+      "url": "https://www.amazon.fr/chargeur-usb-prise/s?k=chargeur+usb+prise",
+      "snippet": "Explorez des prises USB chargeur universelles en différentes configurations, conçues pour s'adapter à une grande variété …"
+    },
+    {
+      "title": "Amazon.fr : Prise Chargeur Usb",
+      "url": "https://www.amazon.fr/prise-chargeur-usb/s?k=prise+chargeur+usb",
+      "snippet": "Ce produit possède des caractéristiques de durabilité reconnues par des labels fiables. Contient au moins 50 % de matériaux recyclés."
+    },
+    {
+      "title": "Prise chargeur usb - ManoMano",
+      "url": "https://www.manomano.fr/cat/prise+chargeur+usb?msockid=2eb31b939d8b68b927a40c799c4a6905",
+      "snippet": "EN STOCK : Prise chargeur usb pas cher. Grand choix, promos permanentes et livraison rapide partout en France. Paiement sécurisé."
+    }
+  ]
+}

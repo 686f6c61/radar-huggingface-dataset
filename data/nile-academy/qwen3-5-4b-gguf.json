@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nile-academy/qwen3.5-4b-gguf",
+  "slug": "nile-academy-qwen3-5-4b-gguf",
+  "author": "nile-academy",
+  "url": "https://huggingface.co/nile-academy/qwen3.5-4b-gguf",
+  "created_at": "2026-10-06T15:43:23.000Z",
+  "updated_at": "2026-10-06T16:40:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "bookalive",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 2783446816,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nile - Agence d'affaires publiques en santé -",
+      "url": "https://www.nile-consulting.eu/",
+      "snippet": "Agence conseil en affaires publiques dédiée aux acteurs de la santé, nile est basée depuis 2017 à Paris - France."
+    },
+    {
+      "title": "Nile - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nile",
+      "snippet": "The White Nile begins near Lake Victoria and flows through Uganda and South Sudan, while the Blue Nile begins near Lake Tana in …"
+    },
+    {
+      "title": "Nil — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nil",
+      "snippet": "De nos jours, la répartition des eaux du Nil pour l'exploitation est régulée par un accord liant neuf des dix pays riverains du bassin …"
+    },
+    {
+      "title": "NILE Online Store",
+      "url": "https://eu.nile.ch/en/",
+      "snippet": "A love for materials and details NILE combines timeless design with carefully selected materials. We make considered choices and, …"
+    },
+    {
+      "title": "NILE Online Store",
+      "url": "https://www.nile.ch/en",
+      "snippet": "NILE – Designed in Switzerland. Discover stylish favorites with unique designs and lovely details. Shop now."
+    }
+  ]
+}

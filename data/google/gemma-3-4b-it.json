@@ -54,12 +54,12 @@
     "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 1553,
-  "downloads_30d": 1237067,
-  "trending_score": 10,
+  "likes": 1559,
+  "downloads_30d": 1242281,
+  "trending_score": 11,
   "parameters": 4300079472,
   "parameters_human": "4.30B",
-  "storage_bytes": 50506149149,
+  "storage_bytes": 50522179459,
   "storage_human": "50.5 GB",
   "base_model": "google/gemma-3-4b-pt",
   "formats": [

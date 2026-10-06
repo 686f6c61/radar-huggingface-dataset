@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "mradermacher/clef-flash-heretic-GGUF",
+  "slug": "mradermacher-clef-flash-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/clef-flash-heretic-GGUF",
+  "created_at": "2026-10-06T01:53:49.000Z",
+  "updated_at": "2026-10-06T07:43:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "jev",
+    "qwen3.5",
+    "multimodal",
+    "vision",
+    "image-text-to-typed-output",
+    "structured-output",
+    "classification",
+    "decision-making",
+    "post-train",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "local-llm",
+    "consumer-gpu",
+    "en",
+    "base_model:saidutta69/clef-flash-heretic",
+    "base_model:quantized:saidutta69/clef-flash-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 301,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967489984,
+  "storage_human": "83.0 GB",
+  "base_model": "saidutta69/clef-flash-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "team mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "mradermacher/clef-flash-heretic-GGUF. 9B • Updated 21 minutes ago ... mradermacher/Middleforage-AI-3B-GGUF. 3B • Updated 39 minutes ago · mradermacher ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=gguf",
+      "snippet": "Models · mradermacher/clef-flash-heretic-i1-GGUF · mradermacher/gemma-4-12B-EsperGrug-i1-GGUF · mradermacher/RuntimeLabs-Kayak-Qwen3-VL-4B-GGUF · mradermacher/SOR- ..."
+    },
+    {
+      "title": "Team Mradermacher - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "AI & ML interests. Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests ... mradermacher/clef-flash-heretic-i1-GGUF. 9B ..."
+    },
+    {
+      "title": "LLM model recommendation : r/LocalLLaMA - Reddit",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1qxxig0/llm_model_recommendation/",
+      "snippet": "06.02.2026 ... ... mradermacher/Precog-24B-v1-heretic-i1-GGUF/tree/main. Same for downloading, the IQ ggufs try IQ4 and work your way down to IQ3 if it doesn't ..."
+    },
+    {
+      "title": "Continual Model Routing in Evolving Model Hubs - arXiv",
+      "url": "https://arxiv.org/pdf/2605.28577",
+      "snippet": "27.05.2026 ... ... heretic-i1-gguf (3 models):. - MuXodious/gemma-3n-E4B-it-absolute-heresy-GGUF. - MuXodious/gemma-3n-E4B-it-less-heretic. - mradermacher/gemma ..."
+    }
+  ]
+}

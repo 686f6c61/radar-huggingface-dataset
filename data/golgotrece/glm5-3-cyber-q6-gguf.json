@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "golgotrece/GLM5.3-Cyber-Q6-GGUF",
+  "slug": "golgotrece-glm5-3-cyber-q6-gguf",
+  "author": "golgotrece",
+  "url": "https://huggingface.co/golgotrece/GLM5.3-Cyber-Q6-GGUF",
+  "created_at": "2026-10-06T02:05:11.000Z",
+  "updated_at": "2026-10-06T04:38:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 445588662016,
+  "storage_human": "445.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=0&sort=modified&search=gguf",
+      "snippet": "golgotrece/GLM5.3-Cyber-Q6-GGUF. Updated in about 2 hours. zed122/custom-mixed-gguf. 24B • Updated in about 2 hours • 5.91k • 1 · mradermacher/Chaotic-Order-V4- ..."
+    }
+  ]
+}

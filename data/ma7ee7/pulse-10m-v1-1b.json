@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Ma7ee7/Pulse-10M-v1-1B",
+  "slug": "ma7ee7-pulse-10m-v1-1b",
+  "author": "Ma7ee7",
+  "url": "https://huggingface.co/Ma7ee7/Pulse-10M-v1-1B",
+  "created_at": "2026-10-06T19:11:04.000Z",
+  "updated_at": "2026-10-06T19:12:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "language-model",
+    "recurrent",
+    "adaptive-compute",
+    "custom-architecture",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5449669279,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classified Items For Sale in N'Djamena, Chad - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106511226050901/classifieds/",
+      "snippet": "New and used Classifieds for sale in N'Djamena, Chad on Facebook Marketplace. Find great deals and sell your items for free."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Locations immobilières à Cologne | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/cologne/propertyrentals/",
+      "snippet": "Trouvez des offres de location immobilières à Cologne avec Facebook Marketplace. Locations d’appartement court séjour et …"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    },
+    {
+      "title": "Trucks for sale in Bucquoy | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/112312635450883/trucks/",
+      "snippet": "Find trucks and pickups for sale in Bucquoy. Browse by make, model, and mileage from local sellers on Facebook Marketplace."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "abdulrahmanalotaibi/robotics-vision-language-study-2024",
+  "slug": "abdulrahmanalotaibi-robotics-vision-language-study-2024",
+  "author": "abdulrahmanalotaibi",
+  "url": "https://huggingface.co/abdulrahmanalotaibi/robotics-vision-language-study-2024",
+  "created_at": "2026-10-06T01:33:35.000Z",
+  "updated_at": "2026-10-06T01:33:41.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Google Earth End User Additional Terms of Service",
+      "url": "https://maps.google.fr/help/terms_maps-earth/",
+      "snippet": "Actual Conditions; Assumption of Risk. When you use Google Earth's map data, and other content, you may find that actual …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/intl/fr_fr/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps, and more for all your …"
+    },
+    {
+      "title": "Questions fréquentes – Visite virtuelle pour les Pros – Google Maps",
+      "url": "https://maps.google.fr/help/maps/businessphotos/faq.html",
+      "snippet": "L'importation dans Visite virtuelle pour les Pros de photos prises dans des musées est également interdite, car ces photos doivent …"
+    },
+    {
+      "title": "Protection de la nature – Google Earth Outreach",
+      "url": "https://maps.google.fr/intl/fr_ALL/earth/outreach/special-projects/conservation/",
+      "snippet": "L'équipe Google Earth Solidarité a collaboré sur la visualisation du nouvel ensemble de données Ecoregions2017©Resolve, qui …"
+    }
+  ]
+}

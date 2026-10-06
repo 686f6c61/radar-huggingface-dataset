@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SFG545/orchard-lyric-translation",
+  "slug": "sfg545-orchard-lyric-translation",
+  "author": "SFG545",
+  "url": "https://huggingface.co/SFG545/orchard-lyric-translation",
+  "created_at": "2026-10-06T19:07:57.000Z",
+  "updated_at": "2026-10-06T19:19:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "marian",
+    "opus-mt",
+    "lyrics",
+    "translation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1073127884,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Généalogie : recherchez vos ancêtres, publiez votre généalogie ...",
+      "url": "https://www.geneanet.org/",
+      "snippet": "Généalogie : créez gratuitement votre arbre généalogique et retrouvez vos ancêtres en ligne parmi plus de 9 milliards d'individus …"
+    },
+    {
+      "title": "guerre de Crimée - Forums Geneanet",
+      "url": "https://www.geneanet.org/forum/viewtopic.php?t=216074",
+      "snippet": "Jan 6, 2007 · guerre de Crimée - Forums Geneanet Il semblerait que vous ayez désactivé Javascript Vous avez désactivé Javascript …"
+    },
+    {
+      "title": "Filae.com : La généalogie : Etat-civil, faire son arbre généalogique ...",
+      "url": "https://www.filae.com/?msockid=3dd80b5272e569b9362e1cb873246809",
+      "snippet": "Filae.com : le portail de la généalogie en France pour consulter son Etat-civil en ligne et construire son arbre généalogique …"
+    },
+    {
+      "title": "Avez-vous un ancêtre soldat mort en Crimée ? - Filae",
+      "url": "https://www.filae.com/ressources/avez-vous-un-ancetre-soldat-mort-en-crimee/?msockid=3dd80b5272e569b9362e1cb873246809",
+      "snippet": "Oct 4, 2018 · La guerre de Crimée : plus de 95 000 soldats français décédésLe 4 octobre 1853, la guerre de Crimée débute et durera …"
+    },
+    {
+      "title": "Les soldats français engagés dans la guerre de Crimée (1853-1856)",
+      "url": "https://www.geneanet.org/blog/post/2014/03/les-soldats-francais-engages-dans-la-guerre-de-crimee-1853-1856-html",
+      "snippet": "Mar 6, 2014 · Celle de Biozat dans l’Allier nous permet d’évoquer les soldats français engagés dans la guerre de Crimée (1853 …"
+    }
+  ]
+}

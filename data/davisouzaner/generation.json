@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davisouzaner/generation",
+  "slug": "davisouzaner-generation",
+  "author": "davisouzaner",
+  "url": "https://huggingface.co/davisouzaner/generation",
+  "created_at": "2026-10-06T01:31:49.000Z",
+  "updated_at": "2026-10-06T01:31:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Visual Search Tool | Bing Visual Search",
+      "url": "https://explore.microsoft.com/en-us/bing/visual-search",
+      "snippet": "Search by image with Bing Visual Search, a free reverse image search tool to find similar images, match products, and identify …"
+    },
+    {
+      "title": "Outil de recherche visuelle gratuit | Bing Visual Search",
+      "url": "https://explore.microsoft.com/fr-fr/bing/visual-search",
+      "snippet": "Recherchez par image avec Bing Visual Search, un outil gratuit de recherche d’images inversée pour trouver des images similaires, …"
+    },
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Using Bing Visual Search | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/bing/using-bing-visual-search",
+      "snippet": "Visual Search lets you search the web using an image instead of text. You can use Visual Search to find similar images, products, …"
+    },
+    {
+      "title": "Bing Visual Search – Get this Extension for Firefox (en-GB)",
+      "url": "https://addons.mozilla.org/en-GB/firefox/addon/bing-visual-search/",
+      "snippet": "Unlock the power of images with the Bing Visual Search extension. Whether you're browsing online, shopping, studying, or exploring …"
+    }
+  ]
+}

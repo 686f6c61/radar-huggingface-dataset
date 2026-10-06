@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.5-c0.99-r0.5-s42",
+  "slug": "cisco1963-llmplasticity-nl_en_linear_8-rand-d0-5-c0-99-r0-5-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_en_linear_8-rand-d0.5-c0.99-r0.5-s42",
+  "created_at": "2026-10-06T01:44:20.000Z",
+  "updated_at": "2026-10-06T01:47:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 10309011189,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inspiring Budget Productivity Tools: The Ultimate Guide for 2025",
+      "url": "https://wanderonbudget.com/budget-productivity-tools/",
+      "snippet": "Dec 23, 2024 · Discover the best budget productivity tools for 2025. Learn expert tips on free apps, time management hacks, and …"
+    },
+    {
+      "title": "Budget-Friendly Productivity Tools Compared (2026)",
+      "url": "https://www.wps.ai/blog/budget-friendly-productivity-tools-2026-guide/",
+      "snippet": "Jun 30, 2026 · Compare WPS Office, LibreOffice, Google Docs/Sheets/Slides, and Microsoft 365 for the web for budget-friendly …"
+    },
+    {
+      "title": "Best Productivity Tools 2026: 25+ Apps Compared by Job",
+      "url": "https://goalsandprogress.com/best-productivity-tools-complete-guide/",
+      "snippet": "Best productivity tools for 2026, sorted into one framework instead of a 25-app list. Compare Todoist, Notion, RescueTime and more …"
+    },
+    {
+      "title": "Best Budget Friendly Productivity Tools: Maximize Your Output",
+      "url": "https://oncast.dev/business/productivity-tools/best-budget-friendly-productivity-tools/",
+      "snippet": "Aug 8, 2026 · We will explore the best budget friendly productivity tools, dissecting their strengths and weaknesses, and offering …"
+    },
+    {
+      "title": "Productivity Pricing Comparison 2026 — 50 Tools Compared",
+      "url": "https://aitoolpick.org/pricing-compare/productivity/",
+      "snippet": "Compare pricing of 50 productivity tools side by side. 39 free options available. Find the best value for your budget."
+    }
+  ]
+}

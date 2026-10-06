@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "bin-owang/tiny-transformer-classification-beta",
+  "slug": "bin-owang-tiny-transformer-classification-beta",
+  "author": "bin-owang",
+  "url": "https://huggingface.co/bin-owang/tiny-transformer-classification-beta",
+  "created_at": "2026-10-06T19:06:44.000Z",
+  "updated_at": "2026-10-06T19:07:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search smarter with Microsoft Bing, an AI-powered search engine for finding information, exploring media, and navigating maps."
+    },
+    {
+      "title": "Fichier BIN : qu'est-ce que c'est, comment l'ouvrir - CCM",
+      "url": "https://www.commentcamarche.net/informatique/technologies/1631-ouvrir-fichier-bin/",
+      "snippet": "May 13, 2025 · Vous avez téléchargé ou récupéré un fichier portant l'extension BIN, mais vous ne savez pas à quoi il sert, ni …"
+    },
+    {
+      "title": "Fichier bin : Qu’est-ce que c’est et comment l’ouvrir ?",
+      "url": "https://www.funinformatique.com/fichier-bin-cest-quoi-et-comment-louvrir/",
+      "snippet": "Feb 13, 2026 · Les fichiers bin sont généralement utilisé pour contenir sous forme de code binaire compressé, des applications ou …"
+    },
+    {
+      "title": "Vérificateur de BIN — Recherche de BIN / IIN gratuite - BIN Check",
+      "url": "https://bincheck.io/fr/bin-checker",
+      "snippet": "Outil gratuit de vérification et de recherche de BIN. Saisissez 6 ou 8 chiffres pour vérifier instantanément la banque émettrice, la …"
+    },
+    {
+      "title": "Binance Crypto Exchange: Buy, Sell Bitcoin, Ethereum, Stocks & More",
+      "url": "https://www.binance.com/",
+      "snippet": "Buy and trade BTC, ETH, XRP and more on Binance. Enjoy low fees, fast payments, and a trusted platform for crypto trading. Sign …"
+    }
+  ]
+}
