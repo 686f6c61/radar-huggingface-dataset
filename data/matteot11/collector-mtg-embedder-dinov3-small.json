@@ -5,7 +5,7 @@
   "author": "matteot11",
   "url": "https://huggingface.co/matteot11/collector-mtg-embedder-dinov3-small",
   "created_at": "2026-09-22T08:51:46.000Z",
-  "updated_at": "2026-09-22T09:27:05.000Z",
+  "updated_at": "2026-10-05T08:03:11.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "image-feature-extraction",
@@ -17,6 +17,7 @@
     "dinov3_vit",
     "image-feature-extraction",
     "magic-the-gathering",
+    "pokemon",
     "trading-cards",
     "image-retrieval",
     "dinov3",
@@ -31,8 +32,8 @@
   "trending_score": 0,
   "parameters": 21596544,
   "parameters_human": "21.6M",
-  "storage_bytes": 86406384,
-  "storage_human": "86 MB",
+  "storage_bytes": 172812768,
+  "storage_human": "173 MB",
   "base_model": "facebook/dinov3-vits16-pretrain-lvd1689m",
   "formats": [
     "safetensors"

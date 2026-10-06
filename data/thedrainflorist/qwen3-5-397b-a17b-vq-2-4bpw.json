@@ -5,7 +5,7 @@
   "author": "TheDrainFlorist",
   "url": "https://huggingface.co/TheDrainFlorist/Qwen3.5-397B-A17B-VQ-2.4bpw",
   "created_at": "2026-08-16T23:05:15.000Z",
-  "updated_at": "2026-10-05T00:02:08.000Z",
+  "updated_at": "2026-10-05T19:06:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1496,
+  "downloads_30d": 1570,
   "trending_score": 0,
   "parameters": 120175818952,
   "parameters_human": "120.18B",

@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-08-26T12:29:32.000Z",
-  "updated_at": "2026-09-02T14:02:41.000Z",
+  "updated_at": "2026-10-06T05:31:22.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -22,13 +22,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1122,
+  "likes": 1125,
   "downloads_30d": 1370795,
   "trending_score": 42,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 1389468786938,
-  "storage_human": "1389.5 GB",
+  "storage_bytes": 1404163181178,
+  "storage_human": "1404.2 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

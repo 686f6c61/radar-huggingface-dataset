@@ -5,7 +5,7 @@
   "author": "rafalrudol",
   "url": "https://huggingface.co/rafalrudol/tt-pii-middleware",
   "created_at": "2026-09-11T12:18:01.000Z",
-  "updated_at": "2026-09-11T12:28:31.000Z",
+  "updated_at": "2026-10-05T19:16:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

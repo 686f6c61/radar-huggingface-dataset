@@ -5,7 +5,7 @@
   "author": "Cierpliwy",
   "url": "https://huggingface.co/Cierpliwy/krea2-inpaint-edit",
   "created_at": "2026-09-24T13:02:52.000Z",
-  "updated_at": "2026-09-24T18:50:32.000Z",
+  "updated_at": "2026-10-05T20:09:31.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": "image-to-image",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 29,
-  "downloads_30d": 1727,
+  "downloads_30d": 1804,
   "trending_score": 12,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1400355249,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 3254257416,
+  "storage_human": "3.3 GB",
   "base_model": "krea/Krea-2-Raw",
   "formats": [
     "diffusers"

@@ -5,7 +5,7 @@
   "author": "takenusername32",
   "url": "https://huggingface.co/takenusername32/Hydrogen-v0-50M-Base",
   "created_at": "2026-09-16T23:37:27.000Z",
-  "updated_at": "2026-09-18T01:08:51.000Z",
+  "updated_at": "2026-10-05T20:41:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   "tags": [
     "safetensors",
     "hydrogen",
+    "custom_code",
     "text-generation",
     "conversational",
     "en",
@@ -23,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 328,
+  "downloads_30d": 330,
   "trending_score": 0,
   "parameters": 49867793,
   "parameters_human": "49.9M",

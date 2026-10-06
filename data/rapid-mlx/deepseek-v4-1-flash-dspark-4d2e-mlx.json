@@ -5,7 +5,7 @@
   "author": "rapid-mlx",
   "url": "https://huggingface.co/rapid-mlx/DeepSeek-V4.1-Flash-DSpark-4d2e-MLX",
   "created_at": "2026-09-11T23:18:15.000Z",
-  "updated_at": "2026-09-11T23:19:11.000Z",
+  "updated_at": "2026-10-05T18:17:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 2260,
+  "downloads_30d": 2293,
   "trending_score": 0,
   "parameters": 7430590050,
   "parameters_human": "7.43B",

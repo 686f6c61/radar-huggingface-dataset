@@ -5,7 +5,7 @@
   "author": "Kaushikk17",
   "url": "https://huggingface.co/Kaushikk17/poppys-0.6b-gguf",
   "created_at": "2026-08-28T16:17:40.000Z",
-  "updated_at": "2026-08-28T16:18:01.000Z",
+  "updated_at": "2026-10-05T15:11:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 396704896,
-  "storage_human": "397 MB",
+  "storage_bytes": 793409792,
+  "storage_human": "793 MB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "gguf"

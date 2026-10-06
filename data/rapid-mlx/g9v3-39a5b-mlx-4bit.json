@@ -5,7 +5,7 @@
   "author": "rapid-mlx",
   "url": "https://huggingface.co/rapid-mlx/G9v3-39A5B-MLX-4bit",
   "created_at": "2026-09-05T01:37:59.000Z",
-  "updated_at": "2026-09-05T01:38:49.000Z",
+  "updated_at": "2026-10-05T18:17:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 131,
+  "downloads_30d": 94,
   "trending_score": 0,
   "parameters": 38967481920,
   "parameters_human": "38.97B",

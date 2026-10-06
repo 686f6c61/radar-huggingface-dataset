@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/Qwen-Image-2.1-FP8",
   "created_at": "2026-09-21T11:28:03.000Z",
-  "updated_at": "2026-09-24T02:46:07.000Z",
+  "updated_at": "2026-10-05T07:54:33.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -32,13 +32,13 @@
     "license:other",
     "region:us"
   ],
-  "likes": 37,
-  "downloads_30d": 88927,
+  "likes": 39,
+  "downloads_30d": 94587,
   "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 24463056655,
-  "storage_human": "24.5 GB",
+  "storage_bytes": 41071196191,
+  "storage_human": "41.1 GB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"

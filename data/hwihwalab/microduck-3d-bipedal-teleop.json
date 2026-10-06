@@ -5,7 +5,7 @@
   "author": "hwihwalab",
   "url": "https://huggingface.co/hwihwalab/microduck-3d-bipedal-teleop",
   "created_at": "2026-09-04T08:18:22.000Z",
-  "updated_at": "2026-10-05T05:22:02.000Z",
+  "updated_at": "2026-10-05T09:00:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -42,12 +42,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 490,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 643915497,
-  "storage_human": "644 MB",
+  "storage_bytes": 832570021,
+  "storage_human": "833 MB",
   "base_model": null,
   "formats": [
     "onnx"

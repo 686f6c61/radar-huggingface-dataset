@@ -5,7 +5,7 @@
   "author": "false-facts-finetuning",
   "url": "https://huggingface.co/false-facts-finetuning/emergent-misalignment",
   "created_at": "2026-09-09T16:57:58.000Z",
-  "updated_at": "2026-10-01T17:06:19.000Z",
+  "updated_at": "2026-10-05T17:00:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32641432084,
-  "storage_human": "32.6 GB",
+  "storage_bytes": 34573051732,
+  "storage_human": "34.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

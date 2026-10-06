@@ -5,7 +5,7 @@
   "author": "matteiuspi",
   "url": "https://huggingface.co/matteiuspi/Qwen3.8-Flash-Next-W8A8-DYNAMIC-300i",
   "created_at": "2026-09-23T04:23:14.000Z",
-  "updated_at": "2026-10-02T10:47:02.000Z",
+  "updated_at": "2026-10-05T11:35:23.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 2192,
+  "downloads_30d": 2199,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

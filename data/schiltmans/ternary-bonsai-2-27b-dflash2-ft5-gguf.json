@@ -5,7 +5,7 @@
   "author": "Schiltmans",
   "url": "https://huggingface.co/Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5-GGUF",
   "created_at": "2026-09-24T17:42:24.000Z",
-  "updated_at": "2026-09-24T17:43:17.000Z",
+  "updated_at": "2026-10-06T00:24:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,6 +20,8 @@
     "ternary",
     "llama.cpp",
     "q8_0",
+    "q4_k_m",
+    "q2_k",
     "base_model:Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5",
     "base_model:quantized:Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5",
     "license:apache-2.0",
@@ -31,8 +33,8 @@
   "trending_score": 0,
   "parameters": 1924404480,
   "parameters_human": "1.92B",
-  "storage_bytes": 2056415104,
-  "storage_human": "2.1 GB",
+  "storage_bytes": 3904853632,
+  "storage_human": "3.9 GB",
   "base_model": "Schiltmans/Ternary-Bonsai-2-27B-DFlash2-ft5",
   "formats": [
     "gguf"
