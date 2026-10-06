@@ -5,7 +5,7 @@
   "author": "local-inference-lab",
   "url": "https://huggingface.co/local-inference-lab/DeepSeek-V4-Flash-Vision-Exp-lossless-CSF",
   "created_at": "2026-10-04T02:41:08.000Z",
-  "updated_at": "2026-10-05T00:23:45.000Z",
+  "updated_at": "2026-10-05T15:03:32.000Z",
   "license": "lil-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "deepseek_v4",
     "mxfp4",
     "fp8",
     "multimodal",

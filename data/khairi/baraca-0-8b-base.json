@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "khairi/baraca-0.8b-base",
+  "slug": "khairi-baraca-0-8b-base",
+  "author": "khairi",
+  "url": "https://huggingface.co/khairi/baraca-0.8b-base",
+  "created_at": "2026-10-05T21:43:23.000Z",
+  "updated_at": "2026-10-05T21:43:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19993312,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-06T02:10:17.593Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ha与hm2的区别是什么? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/13198084.html",
+      "snippet": "ha与hm2的区别是什么?二者没有区别。ha是面积单位公顷（hectare）的英文缩写。有时还写为hm²。通常使用的计算面积有，平方毫 …"
+    },
+    {
+      "title": "如何看待HM重新上架? - 知乎",
+      "url": "https://www.zhihu.com/question/451969778",
+      "snippet": "这么大体量的HM, 即便依然公开不支持新疆棉，但他也无可避免的在卖新疆棉。 因为新疆棉产量约占世界总产量的20%，在这个错综 …"
+    },
+    {
+      "title": "请简单评价ZARA,H&M,UR这三个快时尚品牌? - 知乎",
+      "url": "https://www.zhihu.com/question/34876355",
+      "snippet": "价格：在这三个品牌里算是最便宜的。but，也就只便宜一点。。性价比最低。 内部管理：同样的混乱，离职率比ZARA高，一直在强 …"
+    },
+    {
+      "title": "hm代表什么单位 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1767008649027062420.html",
+      "snippet": "hm代表 长度单位，百米。 hm就是“百米”。 h㎡ 就是“平方百米”。 m就是“米”。 公顷（gōngqǐng 、hectare (ha) ）公制地积单位。 别 …"
+    },
+    {
+      "title": "作业帮-作业帮口算 在线教育引领者 - 极目未来",
+      "url": "https://www.zybang.com/",
+      "snippet": "作业帮成立于2015年，我们以“科技为人、成就非凡”为企业使命，依托“科技+教育”双引擎优势，在学习工具产品、智能硬件等领域开 …"
+    }
+  ]
+}

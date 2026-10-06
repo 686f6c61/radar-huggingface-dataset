@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RabiatS/strands-decider-2b-web",
+  "slug": "rabiats-strands-decider-2b-web",
+  "author": "RabiatS",
+  "url": "https://huggingface.co/RabiatS/strands-decider-2b-web",
+  "created_at": "2026-10-05T20:44:01.000Z",
+  "updated_at": "2026-10-05T20:44:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "Decisions",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5_text",
+    "Decisions",
+    "base_model:StrandsAgents/strands-decider-2B-hobson-v19",
+    "base_model:quantized:StrandsAgents/strands-decider-2B-hobson-v19",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1113623255,
+  "storage_human": "1.1 GB",
+  "base_model": "StrandsAgents/strands-decider-2B-hobson-v19",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AWS Strands Decider 2B: Open-Source AI Agent Model [2026]",
+      "url": "https://shattered.io/aws-strands-decider-2b-open-source-ai-agent-model-2026/",
+      "snippet": "AWS released Strands Decider 2B, an open-source 2B-parameter AI model that picks agent actions in under 100ms. Here&#x27;s what it means for AI agents."
+    },
+    {
+      "title": "AWS releases Strands Decider 2B, an open-source AI agent decision model",
+      "url": "https://aiunderstanding.org/news/aws-releases-strands-decider-2b-an-open-source-ai-agent-decision-model",
+      "snippet": "AWS released Strands Decider 2B on October 1, 2026, a 2-billion-parameter open-source model designed to make fast, local routing and policy decisions for AI agents without generating text."
+    },
+    {
+      "title": "Introducing Strands Decider 2B: a small, open source, decision model",
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "snippet": "Strands Decider 2B is a small, open source, decision model optimized for fast experimentation, local development, and innovation."
+    },
+    {
+      "title": "Amazon releases its own Jev clone as decision models flood the web",
+      "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/",
+      "snippet": "Amazon Web Services released an open source decision model inspired by TypeSafe&#x27;s Jev, with AI developers increasingly seeking intelligence that is more suited to computer automation than ..."
+    },
+    {
+      "title": "Amazon Strands Decider 2B: Open Agent AI Model [2026]",
+      "url": "https://tech-insider.org/amazon-strands-decider-2b-open-source-agent-model-2026/",
+      "snippet": "Amazon released Strands Decider 2B, a free open-source AI model that picks agent decisions in ~106ms. Here is what it does and why it matters."
+    }
+  ]
+}

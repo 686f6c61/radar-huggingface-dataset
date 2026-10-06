@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alicericci/flamingo-multitask",
+  "slug": "alicericci-flamingo-multitask",
+  "author": "Alicericci",
+  "url": "https://huggingface.co/Alicericci/flamingo-multitask",
+  "created_at": "2026-10-05T21:43:42.000Z",
+  "updated_at": "2026-10-05T21:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Survey on Large Multimodal Reasoning Models - arXiv",
+      "url": "https://arxiv.org/html/2505.04921v1",
+      "snippet": "08.05.2025 ... These models typically employed distinct modules to achieve multimodal representation, alignment, fusion, and reasoning. According to the model ..."
+    },
+    {
+      "title": "Large language models in mechanical design of mechatronic systems",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1474034626004994",
+      "snippet": "Multi-agent system solving mechanics problems with FEniCS. Pierson and Ha [130], GPT-4, AI assistant for tool development and engineering design tasks. Rios ..."
+    },
+    {
+      "title": "Book - NIPS",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/vol38-main-conference",
+      "snippet": "... Model Yining Shi, Kun Jiang, Qiang Meng, Ke Wang, JiaBao Wang, Wenchao Sun ... Multi-Image MLLMs Xudong Li, Mengdan Zhang, Peixian Chen, Xiawu Zheng ..."
+    },
+    {
+      "title": "Thinking with Images for Multimodal Reasoning - arXiv",
+      "url": "https://arxiv.org/html/2506.23918v3",
+      "snippet": "03.07.2025 ... True visual thinking ideally requires a dynamic loop, allowing a model to alternate between forming an intention and perceiving its immediate ..."
+    },
+    {
+      "title": "Awesome-LLMs-meet-Multimodal-Generation - Yingqing He",
+      "url": "https://yingqinghe.github.io/Awesome-LLMs-meet-Multimodal-Generation/",
+      "snippet": "Datasets · MIMIC-IT: Multi-Modal In-Context Instruction Tuning (8 Jun 2023) · [LAION-Glyph] GlyphControl: Glyph Conditional Control for Visual Text Generation (29 ..."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kentucky-ai/september-floor-model",
+  "slug": "kentucky-ai-september-floor-model",
+  "author": "Kentucky-ai",
+  "url": "https://huggingface.co/Kentucky-ai/september-floor-model",
+  "created_at": "2026-10-06T00:07:07.000Z",
+  "updated_at": "2026-10-06T00:29:12.000Z",
+  "license": "september-component-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "floor-plans",
+    "vector-pdf",
+    "image-segmentation",
+    "scikit-learn",
+    "research",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 276391502,
+  "storage_human": "276 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kentucky Horsewear | Une impression durable",
+      "url": "https://www.kentucky-horsewear.com/fr-fr/eur/",
+      "snippet": "Vivez Kentucky en direct lors des plus grands événements équestres : au plus près de l’action, inspirant et riche en émotions. …"
+    },
+    {
+      "title": "Kentucky — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kentucky",
+      "snippet": "Il est le 37e État par sa superficie et le 26e État par sa population parmi les 50 États américains. Le Kentucky est connu sous …"
+    },
+    {
+      "title": "Kentucky - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kentucky",
+      "snippet": "Cultural aspects of Kentucky include horse racing, bourbon, moonshine, coal mining, My Old Kentucky Home State Park, automobile …"
+    },
+    {
+      "title": "Kentucky Horsewear | Make an impression that lasts forever",
+      "url": "https://www.kentucky-horsewear.com/be-en/eur/",
+      "snippet": "Discover Kentucky your way. From private fittings in-store or at your stable to personalized VIP service and exclusive after-hours …"
+    },
+    {
+      "title": "Portail:Kentucky — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Portail:Kentucky",
+      "snippet": "Le Kentucky est un État des États-Unis, à la limite du Midwest et du Sud profond. Il est bordé au nord par l' Illinois, l' Indiana et l' …"
+    }
+  ]
+}

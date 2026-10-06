@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Santoslor/hybrid-retrieval",
+  "slug": "santoslor-hybrid-retrieval",
+  "author": "Santoslor",
+  "url": "https://huggingface.co/Santoslor/hybrid-retrieval",
+  "created_at": "2026-10-05T20:00:45.000Z",
+  "updated_at": "2026-10-05T20:00:51.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "DeepL翻訳 | 世界最高レベルの精度を誇る翻訳ツール",
+      "url": "https://www.deepl.com/ja/translator",
+      "snippet": "DeepLは、20万社以上の企業のグローバルコミュニケーションに変革をもたらしています。 多言語でのコミュニケーションにおい …"
+    },
+    {
+      "title": "API key for DeepL API – DeepL Help Center | How Can We Help You?",
+      "url": "https://support.deepl.com/hc/en-us/articles/360020695820-API-key-for-DeepL-API",
+      "snippet": "Required plan: any DeepL API plan Find your API key Create new API keys Deactivate obsolete or corrupted keys Rename keys …"
+    },
+    {
+      "title": "Home - DeepL",
+      "url": "https://home.deepl.com/en/home",
+      "snippet": "DeepL for Enterprise Legal & Professional Services Retail & eCommerce Manufacturing Government Financial Services Pharma & …"
+    },
+    {
+      "title": "人工智能文档翻译：即时、准确、安全 | DeepL",
+      "url": "https://home.deepl.com/zh/features/document-translation",
+      "snippet": "各类文档文件，拖放即可翻译 快速、安全地将各种主流格式的文件翻译成 100 多种语言。 DeepL 翻译器可保留原始设计和视觉上下 …"
+    }
+  ]
+}

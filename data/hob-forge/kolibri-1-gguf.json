@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Hob-forge/Kolibri-1-GGUF",
+  "slug": "hob-forge-kolibri-1-gguf",
+  "author": "Hob-forge",
+  "url": "https://huggingface.co/Hob-forge/Kolibri-1-GGUF",
+  "created_at": "2026-10-03T22:28:18.000Z",
+  "updated_at": "2026-10-06T02:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kolibri1",
+    "mixture-of-experts",
+    "reasoning",
+    "tool-calling",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 7,
+  "downloads_30d": 3268,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 287934115136,
+  "storage_human": "287.9 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

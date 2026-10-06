@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-tiny_vit_21m_224",
+  "slug": "dronefreak-bdd100k-weather-tiny_vit_21m_224",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-tiny_vit_21m_224",
+  "created_at": "2026-10-05T19:35:29.000Z",
+  "updated_at": "2026-10-05T19:35:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2207.10666",
+    "arxiv:1805.04687",
+    "base_model:timm/tiny_vit_21m_224.dist_in22k",
+    "base_model:finetune:timm/tiny_vit_21m_224.dist_in22k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90725319,
+  "storage_human": "91 MB",
+  "base_model": "timm/tiny_vit_21m_224.dist_in22k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 83.9
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 68.65
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 74.81
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 67.15
+    }
+  ],
+  "sources": [
+    {
+      "title": "2. Séances — Bonneveine",
+      "url": "https://www.cinemasbonneveine.com/seances/",
+      "snippet": "La programmation des films change tous les mercredis, les nouveaux horaires apparaissent dès le lundi soir à l'exception des …"
+    },
+    {
+      "title": "Bonneveine (Marseille 8e) : programme, horaires et tarifs - Cinéfil",
+      "url": "https://www.cinefil.com/cinema/cinema-bonneveine-marseille/programmation",
+      "snippet": "Programmation et horaires des séances Bonneveine (Marseille) : la programmation et les séances d'aujourd'hui, de demain et de …"
+    },
+    {
+      "title": "1. Accueil — Bonneveine",
+      "url": "https://www.cinemasbonneveine.com/",
+      "snippet": "Accueil — Bonneveine. EN CE MOMENT... PROCHAINEMENT..."
+    },
+    {
+      "title": "Cinéma Bonneveine à Marseille (13008 ) - Achat ticket ... - AlloCiné",
+      "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0019.html",
+      "snippet": "Achetez et réservez votre e-ticket pour le cinéma Bonneveine sur AlloCiné. Retrouvez toutes les séances et horaires disponibles …"
+    },
+    {
+      "title": "Bonneveine - Programmation et Séances | CinéMatin",
+      "url": "https://www.cinematin.com/cinema/bonneveine-marseille",
+      "snippet": "Découvrez les horaires, films à l'affiche et séances au cinéma Bonneveine (Marseille). Réservation en ligne disponible."
+    }
+  ]
+}

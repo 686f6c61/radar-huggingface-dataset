@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2055414b-55db-4001-8a68-87ea5723b79c-5EhyCWPu",
+  "slug": "gradients-io-tournaments-tournament-tourn_c48cf98105f5b0ae_20261005-2055414b-55db-4001-8a68-87ea5723b79c-5ehycwpu",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_c48cf98105f5b0ae_20261005-2055414b-55db-4001-8a68-87ea5723b79c-5EhyCWPu",
+  "created_at": "2026-10-05T21:55:31.000Z",
+  "updated_at": "2026-10-05T21:55:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/61da592f24c28ffc",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068455878,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UK TV Shows — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/tv-shows-uk",
+      "snippet": "Jan 30, 2022 · Click here to check out Digital Spy's TV section for the latest news, previews and reviews of your favourite shows."
+    },
+    {
+      "title": "Big Brother — Digital Spy",
+      "url": "https://forums.digitalspy.com/categories/big-brother",
+      "snippet": "23 hours ago · The UK's biggest and busiest Big Brother forum. Includes dedicated sub-forum for international versions."
+    },
+    {
+      "title": "DCUM Forum - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/list.page",
+      "snippet": "23 hours ago · General Parenting Discussion Discussions of topics not directly related to children of a specific age. Please post …"
+    },
+    {
+      "title": "DH wants me to be a \"hotwife\" - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/posts/list/45/1261194.page",
+      "snippet": "Mar 5, 2025 · Porn is odd in that what worked once won’t work again, so if you were satisfied on page one of porn hub fast-forward …"
+    },
+    {
+      "title": "Gay sex at boys' boarding schools? - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=1665554",
+      "snippet": "Does it really happen? Boarding schools like Eton and Harrow have many stories about senior students having gay sex (both anal …"
+    }
+  ]
+}

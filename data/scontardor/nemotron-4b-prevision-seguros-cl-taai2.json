@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "scontardor/nemotron-4b-prevision-seguros-cl-taai2",
+  "slug": "scontardor-nemotron-4b-prevision-seguros-cl-taai2",
+  "author": "scontardor",
+  "url": "https://huggingface.co/scontardor/nemotron-4b-prevision-seguros-cl-taai2",
+  "created_at": "2026-10-05T23:28:53.000Z",
+  "updated_at": "2026-10-05T23:29:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "educational",
+    "taai2",
+    "chile",
+    "es",
+    "base_model:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "base_model:adapter:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121694576,
+  "storage_human": "122 MB",
+  "base_model": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Osteria – Ton restaurant italien préféré pour les pizzas et les pâtes",
+      "url": "https://losteria.net/fr/",
+      "snippet": "À L'Osteria, dès que la porte s'ouvre, on se sent comme dans une osteria italienne typique : ici, familles, amis et couples se …"
+    },
+    {
+      "title": "Restaurant italien à Lyon (Part-Dieu) | L'Osteria",
+      "url": "https://losteria.net/fr/restaurants/restaurant/lyon-part-dieu/",
+      "snippet": "Découvrez votre restaurant italien à Lyon (Part-Dieu) Pizzas croustillantes, pâtes fraîches et bien plus encore. L'Osteria vous attend !"
+    },
+    {
+      "title": "L'Osteria | Restaurant italien à Saint-Germain-en-Laye |",
+      "url": "https://restaurantlosteria.fr/",
+      "snippet": "C’est au cœur de la forêt de Saint-Germain-en-Laye, que le restaurant L’Osteria vous ouvre ses portes. Au menu : gastronomie …"
+    },
+    {
+      "title": "L'Osteria, Yenne - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/LOsteria-Yenne",
+      "snippet": "Aug 25, 2026 · L'Osteria à Yenne classé 2.8 sur 5 sur Restaurant Guru : 82 avis de visiteurs, 31 photos. Exlorer le menu, consulter …"
+    },
+    {
+      "title": "L'OSTERIA LYON CONFLUENCE - Perrache - Charlemagne - Restaurant …",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187265-d32849293-Reviews-L_Osteria_Lyon_II_Confluence-Lyon_Rhone_Auvergne_Rhone_Alpes.html",
+      "snippet": "Bienvenue dans ton restaurant L'Osteria ! Nous te gâterons avec les meilleures pizzas, des pasta d'amore, des dolci divins et une …"
+    }
+  ]
+}

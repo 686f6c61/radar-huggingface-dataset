@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "stupidlime/Mochi-1.0",
+  "slug": "stupidlime-mochi-1-0",
+  "author": "stupidlime",
+  "url": "https://huggingface.co/stupidlime/Mochi-1.0",
+  "created_at": "2026-10-05T22:40:35.000Z",
+  "updated_at": "2026-10-05T23:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "fine-tuned",
+    "casual",
+    "small",
+    "uncensored",
+    "text-generation",
+    "en",
+    "base_model:huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+    "base_model:quantized:huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807456,
+  "storage_human": "398 MB",
+  "base_model": "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stitch (Lilo & Stitch) | Ultimate Pop Culture Wiki | Fandom",
+      "url": "https://ultimatepopculture.fandom.com/wiki/Stitch_(Lilo_%26_Stitch)",
+      "snippet": "Mario (Stupid Mario Brothers)/Gallery · Ashrah/Gallery · Dual wielding (ability)/ ... Wang Ai Ling (best friend; Stitch & Ai). Abilities. Superhuman strength ..."
+    },
+    {
+      "title": "Best Jasmine Milk Tea near Sobb Ave, Spring Valley, NV 89148 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Jasmine+Milk+Tea&find_loc=Sobb+Ave%2C+Spring+Valley%2C+NV+89148",
+      "snippet": "... Mochi Boba · Hojicha · Almond Milk Tea · Coffee Boba · Black Sesame Latte ... stupid loud/busy. I always sit in the corner and I've seriously done my best ..."
+    }
+  ]
+}

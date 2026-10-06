@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "matthewthoma/survey-few-shot-multimodal",
+  "slug": "matthewthoma-survey-few-shot-multimodal",
+  "author": "matthewthoma",
+  "url": "https://huggingface.co/matthewthoma/survey-few-shot-multimodal",
+  "created_at": "2026-10-05T22:02:26.000Z",
+  "updated_at": "2026-10-05T22:02:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

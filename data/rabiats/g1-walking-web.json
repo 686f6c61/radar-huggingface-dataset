@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "RabiatS/g1-walking-web",
+  "slug": "rabiats-g1-walking-web",
+  "author": "RabiatS",
+  "url": "https://huggingface.co/RabiatS/g1-walking-web",
+  "created_at": "2026-10-05T22:36:21.000Z",
+  "updated_at": "2026-10-05T22:36:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "Robot walking",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "Robot walking",
+    "base_model:ttktjmt/mjswan",
+    "base_model:quantized:ttktjmt/mjswan",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19729604,
+  "storage_human": "20 MB",
+  "base_model": "ttktjmt/mjswan",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

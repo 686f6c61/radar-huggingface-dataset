@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rech-auhan/generation-base",
+  "slug": "rech-auhan-generation-base",
+  "author": "rech-auhan",
+  "url": "https://huggingface.co/rech-auhan/generation-base",
+  "created_at": "2026-10-05T23:21:12.000Z",
+  "updated_at": "2026-10-05T23:21:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Clinique Rech",
+      "url": "https://clinique-rech.ramsaysante.fr/",
+      "snippet": "Droits du patient Les droits et devoirs du patient La charte du patient hospitalisé Dossier médical Désigner ma personne de …"
+    },
+    {
+      "title": "Le Restaurant — Rech Paris",
+      "url": "https://restaurant-rech.fr/le-restaurant/",
+      "snippet": "Rech, le restaurant parisien de poissons repris par Alain Ducasse en 2007, change de décor. Devenu au fil des marées une adresse …"
+    },
+    {
+      "title": "Ville de Sarralbe | Rech",
+      "url": "https://www.sarralbe.fr/rech",
+      "snippet": "Rech a demandé plusieurs fois son indépendance entre 1794 et 1883, en vain. Traversée par la D 28 qui relie Sarralbe au Val de …"
+    },
+    {
+      "title": "Olivier Rech - Avocat Divorce à Thionville et Droit Pénal",
+      "url": "https://rech-avocat.fr/",
+      "snippet": "Cabinet d'avocat à Thionville en Moselle. Rech Avocat intervient en droit du divorce, pension alimentaire et droit pénal."
+    },
+    {
+      "title": "Rech Guillaume à Reichstett - Chirurgien-dentiste (adresse, horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/62341923",
+      "snippet": "La clinique dentaire de Rech Guillaume propose une gamme complète de services pour le soin et la santé bucco-dentaire. En tant …"
+    }
+  ]
+}

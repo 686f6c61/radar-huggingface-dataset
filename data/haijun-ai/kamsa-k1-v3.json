@@ -5,7 +5,7 @@
   "author": "Haijun-AI",
   "url": "https://huggingface.co/Haijun-AI/kamsa-k1-v3",
   "created_at": "2026-10-04T08:48:58.000Z",
-  "updated_at": "2026-10-05T01:30:56.000Z",
+  "updated_at": "2026-10-06T02:27:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 77182720,
   "parameters_human": "77.2M",
-  "storage_bytes": 87070895322,
-  "storage_human": "87.1 GB",
+  "storage_bytes": 214589523626,
+  "storage_human": "214.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

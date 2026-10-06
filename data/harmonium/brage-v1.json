@@ -1,0 +1,141 @@
+{
+  "schema": 1,
+  "id": "Harmonium/brage-v1",
+  "slug": "harmonium-brage-v1",
+  "author": "Harmonium",
+  "url": "https://huggingface.co/Harmonium/brage-v1",
+  "created_at": "2026-10-05T20:55:47.000Z",
+  "updated_at": "2026-10-05T21:03:49.000Z",
+  "license": "brage-v1-license",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "danish",
+    "speech-recognition",
+    "coral",
+    "da",
+    "dataset:CoRal-project/coral-v3",
+    "dataset:alexandrainst/ftspeech",
+    "dataset:alexandrainst/nst-da",
+    "dataset:google/fleurs",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:other",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3270765023,
+  "storage_human": "3.3 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 conversation (test)",
+      "metric": "WER",
+      "value": 15.93
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 conversation (test)",
+      "metric": "CER",
+      "value": 9.17
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 read-aloud (test)",
+      "metric": "WER",
+      "value": 9.02
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 read-aloud (test)",
+      "metric": "CER",
+      "value": 3.55
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice Danish (leaderboard set",
+      "metric": "WER",
+      "value": 5.91
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice Danish (leaderboard set",
+      "metric": "CER",
+      "value": 2
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS da_dk (test)",
+      "metric": "WER",
+      "value": 6.47
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS da_dk (test)",
+      "metric": "CER",
+      "value": 2.6
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FTSpeech (test_balanced)",
+      "metric": "WER",
+      "value": 5.58
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FTSpeech (test_balanced)",
+      "metric": "CER",
+      "value": 3.09
+    }
+  ],
+  "sources": [
+    {
+      "title": "Harmonium — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Harmonium",
+      "snippet": "L’harmonium est l'instrument de musique principal utilisé par le compositeur allemand Volker Bertelmann pour la bande originale du …"
+    },
+    {
+      "title": "L'harmonium français",
+      "url": "http://harmonium.fr/",
+      "snippet": "L'harmonium a été inventé par le français Alexandre Debain qui en déposa le brevet en 1842. Cet instrument, injustement oublié de …"
+    },
+    {
+      "title": "Harmonium | Experts-comptables",
+      "url": "https://www.harmonium-experts.fr/",
+      "snippet": "Jul 24, 2026 · Harmonium, c’est un cabinet de 70 collaborateurs experts comptables ou commissaires aux comptes. Mais c’est …"
+    },
+    {
+      "title": "Harmonium d'occasion - Instruments de musique - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/instruments_de_musique/harmonium",
+      "snippet": "Consultez nos annonces de harmonium d'occasion. Trouvez toutes nos annonces de Instruments de musique sur leboncoin"
+    },
+    {
+      "title": "Harmonium (groupe) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Harmonium_(groupe)",
+      "snippet": "Harmonium est un groupe de folk rock québécois 1, 2, formé en novembre 1972 à Montréal par Serge Fiori et Michel Normandeau. …"
+    }
+  ]
+}

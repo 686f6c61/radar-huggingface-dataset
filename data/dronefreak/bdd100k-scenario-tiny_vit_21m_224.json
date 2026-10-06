@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-scenario-tiny_vit_21m_224",
+  "slug": "dronefreak-bdd100k-scenario-tiny_vit_21m_224",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-scenario-tiny_vit_21m_224",
+  "created_at": "2026-10-05T21:28:44.000Z",
+  "updated_at": "2026-10-05T21:28:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "scene-classification",
+    "dataset:dronefreak/BDD100K-Scenario-Classification",
+    "arxiv:2207.10666",
+    "arxiv:1805.04687",
+    "base_model:timm/tiny_vit_21m_224.dist_in22k",
+    "base_model:finetune:timm/tiny_vit_21m_224.dist_in22k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90741817,
+  "storage_human": "91 MB",
+  "base_model": "timm/tiny_vit_21m_224.dist_in22k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 77.99
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 62.52
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro precision (test split)",
+      "value": 59.66
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro recall (test split)",
+      "value": 66.21
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/bdd100k-scenario-efficientvit_b0 · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-scenario-efficientvit_b0",
+      "snippet": "Fine-tuned EfficientViT-B0 image classifier on the BDD100K Scenario Classification dataset, trained and evaluated as part of BDD100K-Toolkit, a dependency-clean toolkit for preparing BDD100K, training models on it and evaluating them with the same metrics on the same splits."
+    },
+    {
+      "title": "GitHub - dronefreak/bdd100k-toolkit · GitHub",
+      "url": "https://github.com/dronefreak/bdd100k-toolkit",
+      "snippet": "Unofficial, modern, dependency-clean toolkit for BDD100K tasks. It currently covers the three image-attribute classification tasks (period, weather, scenario). Further tasks will be added here once they are done and verified on real data. This project starts small and depends only on modern ..."
+    },
+    {
+      "title": "@dronefreak on Hugging Face: \" Open-sourcing the BDD100K Object ...",
+      "url": "https://huggingface.co/posts/dronefreak/988753800362571",
+      "snippet": "The \"test\" split here is BDD100K&#x27;s official validation set.🤖 Collection: dronefreak/bdd100k-object-detection-model-zoo-6aafc46f2f6c5e4d8676d894Feedback and contributions welcome."
+    },
+    {
+      "title": "GitHub - SysCV/bdd100k-models: Model Zoo of BDD100K Dataset",
+      "url": "https://github.com/SysCV/bdd100k-models",
+      "snippet": "Model Zoo of BDD100K Dataset. Contribute to SysCV/bdd100k-models development by creating an account on GitHub."
+    },
+    {
+      "title": "TinyViT Model | ChaoningZhang/MobileSAM | DeepWiki",
+      "url": "https://deepwiki.com/ChaoningZhang/MobileSAM/2.3-tinyvit-model",
+      "snippet": "This document provides a comprehensive technical overview of the TinyViT model architecture - the lightweight image encoder that serves as the backbone of MobileSAM. TinyViT replaces the heavyweight ViT-H encoder used in the original SAM model, achieving significant efficiency improvements while maintaining segmentation capabilities."
+    }
+  ]
+}

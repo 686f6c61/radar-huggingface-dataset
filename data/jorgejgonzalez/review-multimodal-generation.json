@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jorgejgonzalez/review-multimodal-generation",
+  "slug": "jorgejgonzalez-review-multimodal-generation",
+  "author": "jorgejgonzalez",
+  "url": "https://huggingface.co/jorgejgonzalez/review-multimodal-generation",
+  "created_at": "2026-10-06T00:18:21.000Z",
+  "updated_at": "2026-10-06T00:18:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multiplex R4 ... \"Pas de Signal\" - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35260736-multiplex-r4-pas-de-signal",
+      "snippet": "Résumé de la discussion La réception du multiplex R4 diffusé par Mayet (72) est problématique lorsque certaines antennes peinent …"
+    },
+    {
+      "title": "Problème de taille sur youtube - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-20268916-probleme-de-taille-sur-youtube",
+      "snippet": "Bonjour, je voulais savoir comment faire pour agrandir la taille de ma page Youtube. Avant, j'appuyais sur Ctrl et la souris en même …"
+    },
+    {
+      "title": "Topic [YTB] On a les pires youtubeurs Hardware - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-6-67692925-1-0-1-0-ytb-on-a-les-pires-youtubeurs-hardware.htm",
+      "snippet": "Sep 17, 2021 · Accueil Tous les forums Forum principal Informatique Forum Hardware Topic [YTB] On a les pires youtubeurs …"
+    },
+    {
+      "title": "Topic [YTB] Playlist des conférences de Thomas Römer",
+      "url": "https://www.jeuxvideo.com/forums/42-3005597-68891300-1-0-1-0-ytb-playlist-des-conferences-de-thomas-romer.htm",
+      "snippet": "Feb 6, 2022 · Shalom les clés, J'ai trouvé une chaîne youtube qui recense si ce n'est la totalité du moins une bonne partie des …"
+    },
+    {
+      "title": "Comment se débarrasser de oneclickstarter",
+      "url": "https://forums.commentcamarche.net/forum/affich-30550314-comment-se-debarrasser-de-oneclickstarter",
+      "snippet": "kaneagle Messages postés 86295 Date d'inscription mercredi 27 mai 2009 Statut Modérateur Dernière intervention 23 juillet 2026 14 …"
+    }
+  ]
+}

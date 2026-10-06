@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3.2-1B-uz-en-translator-GGUF",
+  "slug": "mradermacher-llama-3-2-1b-uz-en-translator-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3.2-1B-uz-en-translator-GGUF",
+  "created_at": "2026-10-05T23:02:19.000Z",
+  "updated_at": "2026-10-05T23:18:08.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "uzbek",
+    "llama",
+    "uz",
+    "en",
+    "base_model:Saidakmal/Llama-3.2-1B-uz-en-translator",
+    "base_model:quantized:Saidakmal/Llama-3.2-1B-uz-en-translator",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 11604214784,
+  "storage_human": "11.6 GB",
+  "base_model": "Saidakmal/Llama-3.2-1B-uz-en-translator",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50+ Easy Crafts to Do at Home for Instant Fun - Mod Podge Rocks",
+      "url": "https://modpodgerocksblog.com/crafts-to-do-at-home/",
+      "snippet": "Apr 20, 2024 · Get 50+ ideas for crafts to do at home! These use a lot of household items you probably have in your stash. Easy for …"
+    },
+    {
+      "title": "80 Unique DIY Crafts to Make and Sell (Beginner-Friendly Ideas ...",
+      "url": "https://www.thelittlefrugalhouse.com/craft-ideas-make-sell/",
+      "snippet": "Sep 28, 2026 · Below you’ll find 80 creative craft ideas ranging from super simple beginner projects to more advanced builds. Skim …"
+    },
+    {
+      "title": "45 Easy Crafts to Do at Home with Simple Materials",
+      "url": "https://www.thehomesteady.com/easy-crafts-to-do-at-home-with-simple-materials/",
+      "snippet": "Mar 25, 2026 · Try easy crafts to do at home with simple supplies, fun ideas for decor, gifts, and creative time for kids and adults at …"
+    },
+    {
+      "title": "50+ Easy Crafts for Adults: No Crafting Skills Required!",
+      "url": "https://diycandy.com/easy-crafts-for-adults/",
+      "snippet": "Aug 22, 2023 · I’ve got you covered with over 50 easy crafts for adults that are as enjoyable to make as they are to showcase. These …"
+    },
+    {
+      "title": "45 Easy Crafts to Make and Sell for Beginners (Fun DIY Ideas That …",
+      "url": "https://www.thelittlefrugalhouse.com/easy-crafts-to-make-and-sell-for-beginners/",
+      "snippet": "Mar 6, 2026 · Looking for crafts to make and sell for beginners? Discover 40+ easy crafts, DIY ideas, pricing tips, and the best places …"
+    }
+  ]
+}

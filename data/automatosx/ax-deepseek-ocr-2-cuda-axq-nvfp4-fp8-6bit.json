@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-FP8-6bit",
+  "slug": "automatosx-ax-deepseek-ocr-2-cuda-axq-nvfp4-fp8-6bit",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-FP8-6bit",
+  "created_at": "2026-10-05T23:38:20.000Z",
+  "updated_at": "2026-10-05T23:38:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_vl_v2",
+    "deepseek-ocr2",
+    "ocr",
+    "cuda",
+    "mixed-precision",
+    "nvfp4",
+    "fp8",
+    "six-bit-budget-class",
+    "compressed-tensors",
+    "axquant",
+    "automatosx",
+    "development-preview",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:deepseek-ai/DeepSeek-OCR-2",
+    "base_model:quantized:deepseek-ai/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2728516480,
+  "parameters_human": "2.73B",
+  "storage_bytes": 3602581136,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Default Web Site Page",
+      "url": "https://66.29.129.161/cgi-sys/defaultwebpage.cgi",
+      "snippet": "The IP address for this domain may have changed recently. Check your DNS settings to verify that the domain is set up correctly. It …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yoghandayani/fun-retrieval",
+  "slug": "yoghandayani-fun-retrieval",
+  "author": "yoghandayani",
+  "url": "https://huggingface.co/yoghandayani/fun-retrieval",
+  "created_at": "2026-10-05T19:55:48.000Z",
+  "updated_at": "2026-10-05T19:55:53.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nue-propriété et droit sociaux - Résolue par Yvan BELIGHA - Posée …",
+      "url": "https://www.alexia.fr/questions/510233/nue-propriete-et-droit-sociaux.htm",
+      "snippet": "La CAF peut intégrer un revenu fictif équivalent à 3 % de la valeur vénale de la nue-propriété dans votre déclaration de ressources. …"
+    },
+    {
+      "title": "Je vais hériter, vais-je perdre mon droit à l’apl et/ou l’aah",
+      "url": "https://www.alexia.fr/questions/319228/je-vais-heriter-vais-je-perdre-mon-droit-a-l-apl-et-ou-l-aah.htm",
+      "snippet": "Je dois recevoir la somme de 1500 e sur une succession et je voulais savoir si l apl sera déduit ? faut il que je déclare cette somme a …"
+    },
+    {
+      "title": "La caf me demande de rembourser le trop-perçu de mon ... - Reddit",
+      "url": "https://www.reddit.com/r/france/comments/rvryz5/la_caf_me_demande_de_rembourser_le_tropper%C3%A7u_de/",
+      "snippet": "Jan 4, 2022 · De ma propre experience, indique à la CAF que les APL vont directement chez lui, ils iront le voir lui pour le …"
+    },
+    {
+      "title": "Problème connexion Caf [Résolu] - Google Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-34249219-probleme-connexion-caf",
+      "snippet": "Jan 7, 2017 · Bonjour, j'aurais besoin d'aide par rapport à un problème de connexion sur le site de la Caf. J'essaye de me connecter …"
+    },
+    {
+      "title": "CAF - Identifiant Provisoire ??? : r/france - Reddit",
+      "url": "https://www.reddit.com/r/france/comments/scqp2b/caf_identifiant_provisoire/",
+      "snippet": "Jan 25, 2022 · Oui, vous pouvez créer un compte sans numéro de sécurité sociale, on vous attribuera à la fin de votre création de …"
+    }
+  ]
+}

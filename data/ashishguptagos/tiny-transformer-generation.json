@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ashishguptagos/tiny-transformer-generation",
+  "slug": "ashishguptagos-tiny-transformer-generation",
+  "author": "ashishguptagos",
+  "url": "https://huggingface.co/ashishguptagos/tiny-transformer-generation",
+  "created_at": "2026-10-05T21:09:02.000Z",
+  "updated_at": "2026-10-05T21:09:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiny Transformer",
+      "url": "https://github.com/avvorstenbosch/tinyTransformer",
+      "snippet": "Tiny Transformer This repository contains an implementation of a simple GPT-like transformer model that can be trained on a single consumer-grade GPU. The code mostly follows along with the videos Let&#x27;s build GPT: from scratch, in code, spelled out. and Building Makemore by Andrej Karpathy."
+    },
+    {
+      "title": "tushar-gupta525/Tiny-gpt-from-scratch - GitHub",
+      "url": "https://github.com/tushar-gupta525/tiny-gpt-from-scratch",
+      "snippet": "README Tiny-gpt-from-scratch \"My implementation of a Tiny GPT transformer from scratch using PyTorch.\" 🚀 Tiny GPT: Transformer Model Built From Scratch A minimal GPT-like model implemented using PyTorch This project is my hands-on implementation of a Tiny GPT Transformer, inspired by Andrej Karpathy&#x27;s \"Let&#x27;s Build GPT\" tutorial."
+    },
+    {
+      "title": "callumjohnson/tiny-transformer-generation · Hugging Face",
+      "url": "https://huggingface.co/callumjohnson/tiny-transformer-generation",
+      "snippet": "Tiny Transformer for Generation Overview This repository is a compact, custom PyTorch implementation of Tiny Transformer for Generation. The small configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "Transformer architecture is now used alongside many generative models that contribute to the ongoing AI boom. The \"reference implementation\" of the original Transformer was written in a TensorFlow library. [35][36] In language modelling, ELMo (2018) was a bi-directional LSTM that produces contextualized word embeddings, improving upon the line ..."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    }
+  ]
+}

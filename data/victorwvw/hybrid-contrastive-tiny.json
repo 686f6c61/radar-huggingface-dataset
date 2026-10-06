@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VICTORWVW/hybrid-contrastive-tiny",
+  "slug": "victorwvw-hybrid-contrastive-tiny",
+  "author": "VICTORWVW",
+  "url": "https://huggingface.co/VICTORWVW/hybrid-contrastive-tiny",
+  "created_at": "2026-10-05T20:44:32.000Z",
+  "updated_at": "2026-10-05T20:44:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VICTORWVW (Victor Wijaya) - Hugging Face",
+      "url": "https://huggingface.co/VICTORWVW/models",
+      "snippet": "User profile of Victor Wijaya on Hugging Face"
+    },
+    {
+      "title": "isarodr04/hybrid-contrastive-tiny · Hugging Face",
+      "url": "https://huggingface.co/isarodr04/hybrid-contrastive-tiny",
+      "snippet": "isarodr04 / hybrid-contrastive-tiny Like 0 Safetensors PyTorch hybrid contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new Hybrid for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "LLM comparison between huggingface pretrained model vs custom - GitHub",
+      "url": "https://github.com/noahW42/TinyModel",
+      "snippet": "Learning Language Model (AI) A next-token prediction system that compares a custom-built Transformer model against a fine-tuned HuggingFace model. Both models are trained on The Art of War by Sun Tzu — making for surprisingly philosophical text generation."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "Tiny Open Source Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/models/open-source/tiny",
+      "snippet": "Tiny open source models with 4B parameters or fewer. Fast and efficient models for edge computing, mobile apps, and environments with limited resources."
+    }
+  ]
+}

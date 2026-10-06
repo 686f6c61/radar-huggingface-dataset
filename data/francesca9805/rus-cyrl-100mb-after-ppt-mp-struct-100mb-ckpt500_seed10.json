@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10",
+  "slug": "francesca9805-rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10",
+  "created_at": "2026-10-05T21:34:02.000Z",
+  "updated_at": "2026-10-06T00:29:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/rus-cyrl-100mb-ppt-mp-struct-100mb_seed10",
+    "base_model:finetune:francesca9805/rus-cyrl-100mb-ppt-mp-struct-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9984346555,
+  "storage_human": "10.0 GB",
+  "base_model": "francesca9805/rus-cyrl-100mb-ppt-mp-struct-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407",
+      "snippet": "Instructions to use francesca9805/rus-cyrl-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "francesca9805/rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+      "snippet": "Instructions to use francesca9805/rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+      "url": "https://friendli.ai/models/francesca9805/rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
+      "snippet": "Deploy rus-cyrl-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Rus Cyrl 100mb Ppt Dp 100mb Packed Bfd Seed10 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/francesca9805/rus-cyrl-100mb-ppt-dp-100mb-packed-bfd_seed10",
+      "snippet": "Registry entry for model Rus Cyrl 100mb Ppt Dp 100mb Packed Bfd Seed10; source metadata pending."
+    },
+    {
+      "title": "Rus Cyrl 100mb Ppt Dp 10mb Packed Bfdiso Seed10",
+      "url": "https://free2aitools.com/model/francesca9805/rus-cyrl-100mb-ppt-dp-10mb-packed-bfdiso_seed10",
+      "snippet": "Registry entry for model Rus Cyrl 100mb Ppt Dp 10mb Packed Bfdiso Seed10; source metadata pending."
+    }
+  ]
+}

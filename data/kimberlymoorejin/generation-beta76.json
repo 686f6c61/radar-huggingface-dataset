@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kimberlymoorejin/generation-beta76",
+  "slug": "kimberlymoorejin-generation-beta76",
+  "author": "kimberlymoorejin",
+  "url": "https://huggingface.co/kimberlymoorejin/generation-beta76",
+  "created_at": "2026-10-05T21:04:57.000Z",
+  "updated_at": "2026-10-05T21:05:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kimberlymoorejin (Kimberly Moore) - Hugging Face",
+      "url": "https://huggingface.co/kimberlymoorejin",
+      "snippet": "Exploring deep learning, computer vision and LLMs. AI & ML interests Exploring deep learning, computer vision and LLMs."
+    },
+    {
+      "title": "ai.model.76 • Instagram photos and videos",
+      "url": "https://www.instagram.com/ai.model.76/",
+      "snippet": "32K Followers, 262 Following, 1,244 Posts - @ai.model.76 on Instagram: \"\""
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Generation Beta - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generation_Beta",
+      "snippet": "Generation Beta, often shortened to Gen Beta, is the proposed name for the demographic cohort succeeding Generation Alpha. The name was coined by futurist and demographer Mark McCrindle, who also coined the name Generation Alpha. He defines the cohort as those born from 2025 to 2039, [1] with this definition having been reported by numerous sources citing McCrindle. [2][3][4][5] McCrindle ..."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

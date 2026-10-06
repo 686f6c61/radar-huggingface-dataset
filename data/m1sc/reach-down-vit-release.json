@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "m1sc/reach-down-vit-release",
+  "slug": "m1sc-reach-down-vit-release",
+  "author": "m1sc",
+  "url": "https://huggingface.co/m1sc/reach-down-vit-release",
+  "created_at": "2026-10-05T21:05:38.000Z",
+  "updated_at": "2026-10-05T21:05:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "depth-anything-v2",
+  "languages": [],
+  "tags": [
+    "depth-anything-v2",
+    "robotics",
+    "terrain",
+    "reachability",
+    "pytorch",
+    "dataset:m1sc/reach-down-tiles-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301332150,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Tracker: New LLM Launches, Updated Weekly | AI Flash ...",
+      "url": "https://aiflashreport.com/model-releases.html",
+      "snippet": "Live tracker of every new AI model release - GPT, Claude, Gemini, Llama, open-weights. Launch dates, context windows, benchmarks. Updated weekly."
+    },
+    {
+      "title": "AI Release Tracker — AI Model Release Timeline",
+      "url": "https://aireleasetracker.com/",
+      "snippet": "AI Release Tracker is a free, continuously updated timeline of every major AI model release from the world&#x27;s leading AI labs. It currently tracks 256 models from 11 companies — including OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Mistral, Moonshot AI, Z.ai, and Qwen — from the launch of ChatGPT on November 30 2022 through today."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "AI Model Radar Real-time tracking of every AI model release. When a new model is detected, you get the facts, a neutral AI summary with sources, and an optional email the moment it ships."
+    },
+    {
+      "title": "ReleasedModels - every AI model release, tracked",
+      "url": "https://releasedmodels.com/",
+      "snippet": "Every AI model release, tracked. Release dates, openness, parameters, architecture, launch and current prices, and benchmark scores for the models shaping the field."
+    }
+  ]
+}

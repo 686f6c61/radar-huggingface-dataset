@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "morriszjm/Tacit-9B",
+  "slug": "morriszjm-tacit-9b",
+  "author": "morriszjm",
+  "url": "https://huggingface.co/morriszjm/Tacit-9B",
+  "created_at": "2026-10-05T19:34:18.000Z",
+  "updated_at": "2026-10-05T20:26:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-making",
+    "self-distillation",
+    "anyjev",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710708,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Demain dès l'aube - Ecole Jules Michelet - NIORT - Académie de Poitiers",
+      "url": "http://sitesecoles.ac-poitiers.fr/niort-michelet/spip.php?article23",
+      "snippet": "Demain dès l’aube. Je partirai. Vois-tu, je sais que tu m’attends. J’irai par la forêt, j’irai par la montagne. Je ne puis demeurer loin de …"
+    },
+    {
+      "title": "Demain, dès l'aube... - Réseau des écoles de Ménigoute",
+      "url": "http://sitesecoles.ac-poitiers.fr/menigoute/spip.php?article750",
+      "snippet": "Composé de trois quatrains d’alexandrins en rimes croisées, ce court poème n’a pas de titre, si bien qu’on le désigne …"
+    },
+    {
+      "title": "Emploi Educateur spécialisé en Vienne - Octobre 2026 - Jobijoba",
+      "url": "https://www.jobijoba.com/fr/emploi/Educateur+specialise/Vienne-departement",
+      "snippet": "4 days ago · Éducateur spécialisé / Éducatrice spécialisée (H/F) Poitiers CDI Aube dès demain Educateur spécialisé 2 160 € par mois"
+    },
+    {
+      "title": "Éducateur Spécialisé - Éducatrice Spécialisée H/FAube dès demain",
+      "url": "https://www.hellowork.com/fr-fr/emplois/83786683.html",
+      "snippet": "Decouvrez l'offre d'Emploi Éducateur Spécialisé Éducatrice Spécialisée Poitiers (86) en CDI pour Aube dès demain. Aube dès …"
+    },
+    {
+      "title": "Hugo, « Demain, dès l’aube… La poésie lyrique",
+      "url": "https://continuitepedagogiqueluzard.wordpress.com/wp-content/uploads/2020/05/1-hugo.pdf",
+      "snippet": "Hugo, « De. ain, dès l’aube… La poésie lyrique Attention ! Ceci n’est pas un cours de langue, il faut donc aller dans l’intercalaire « …"
+    }
+  ]
+}

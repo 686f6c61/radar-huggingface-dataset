@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "tidepooljoyce/cnn-transformer-multitask",
+  "slug": "tidepooljoyce-cnn-transformer-multitask",
+  "author": "tidepooljoyce",
+  "url": "https://huggingface.co/tidepooljoyce/cnn-transformer-multitask",
+  "created_at": "2026-10-06T00:06:18.000Z",
+  "updated_at": "2026-10-06T00:06:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

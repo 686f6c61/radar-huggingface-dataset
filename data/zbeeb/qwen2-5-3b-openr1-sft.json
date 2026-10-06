@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Qwen2.5-3B-OpenR1-SFT",
+  "slug": "zbeeb-qwen2-5-3b-openr1-sft",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Qwen2.5-3B-OpenR1-SFT",
+  "created_at": "2026-10-06T00:22:58.000Z",
+  "updated_at": "2026-10-06T00:23:49.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "sft",
+    "math",
+    "openr1",
+    "prime-rl",
+    "token-level-study",
+    "conversational",
+    "en",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 13599886092,
+  "storage_human": "13.6 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

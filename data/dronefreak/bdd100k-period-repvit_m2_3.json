@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-repvit_m2_3",
+  "slug": "dronefreak-bdd100k-period-repvit_m2_3",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-repvit_m2_3",
+  "created_at": "2026-10-05T19:42:18.000Z",
+  "updated_at": "2026-10-05T19:42:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2307.09283",
+    "arxiv:1805.04687",
+    "base_model:timm/repvit_m2_3.dist_300e_in1k",
+    "base_model:finetune:timm/repvit_m2_3.dist_300e_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98697205,
+  "storage_human": "99 MB",
+  "base_model": "timm/repvit_m2_3.dist_300e_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.89
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 82.35
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 87.72
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 78.49
+    }
+  ],
+  "sources": [
+    {
+      "title": "Livres en kg : convertisseur lbs → kg instantané (sport, bagages, …",
+      "url": "https://www.lecalculateur.fr/convertisseur-livre-kg/",
+      "snippet": "Mar 9, 2026 · Vous cherchez à convertir des livres en kg rapidement ? Notre convertisseur livre-kilogramme en ligne vous permet de …"
+    },
+    {
+      "title": "Conversion de Livres en Kilogrammes",
+      "url": "https://www.metric-conversions.org/fr/poids/livres-en-kilogrammes.htm",
+      "snippet": "Cela signifie que pour convertir des livres en kilogrammes, il vous suffit de multiplier le nombre de livres par 0,453592 pour obtenir le …"
+    },
+    {
+      "title": "Convert Livres a Kilos (lb → kg)",
+      "url": "https://convertlive.com/fr/u/convert/livres/a/kilos",
+      "snippet": "Effectuer une conversion entre les unités (lb → kg) ou consultez le tableau de conversion."
+    },
+    {
+      "title": "750 lbs to kg Converter",
+      "url": "https://lb-to-kg.com/lbs-to-kg/750-lbs-to-kg/",
+      "snippet": "Convert 750 pounds to kilograms. 750 lbs equals 340.19 kg."
+    },
+    {
+      "title": "Livres en kg : convertisseur lb → kg | Poids.org",
+      "url": "https://poids.org/livres-en-kg/",
+      "snippet": "Pour convertir des livres en kg, multipliez par 0,453 6 : un poids affiché en livres (lb ou lbs) — sur une balance américaine, un haltère …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-MIX6",
+  "slug": "automatosx-ax-unlimited-ocr-3b-moe-cuda-axq-mix6",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Unlimited-OCR-3B-MoE-CUDA-AXQ-MIX6",
+  "created_at": "2026-10-05T22:45:29.000Z",
+  "updated_at": "2026-10-05T22:45:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "unlimited-ocr",
+    "ocr",
+    "cuda",
+    "mixed-precision",
+    "nvfp4",
+    "fp8",
+    "six-bit-budget-class",
+    "compressed-tensors",
+    "axquant",
+    "automatosx",
+    "development-preview",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:quantized:baidu/Unlimited-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2675503360,
+  "parameters_human": "2.68B",
+  "storage_bytes": 3496554136,
+  "storage_human": "3.5 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-06T02:09:31.576Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search News - Bing",
+      "url": "https://www.bing.com/news/",
+      "snippet": "Last year, one of Buy Side’s writers named the Clipa Bag Hanger “the best product [she] tested” in 2025. Our readers agreed, buying …"
+    },
+    {
+      "title": "Search News - Bing",
+      "url": "https://www.bing.com/news/?setlang=en",
+      "snippet": "Leavitt, 29, left the White House in August to focus on her young family, but the former White House press secretary is now joining …"
+    },
+    {
+      "title": "Trending Today - MSN",
+      "url": "https://www.msn.com/en-xl/northamerica/top-stories/trending-today/ar-BBTeIjG",
+      "snippet": "China is willing to work with the United States on a G7-led global infrastructure plan and welcomes Washington to join its Belt and …"
+    },
+    {
+      "title": "Search News - bing.com",
+      "url": "https://www4.bing.com/news",
+      "snippet": "Leavitt, 29, left the White House in August to focus on her young family, but the former White House press secretary is now joining …"
+    },
+    {
+      "title": "Top stories - Search News - edgeservices.bing.com",
+      "url": "https://edgeservices.bing.com/news/search?q=Top+stories&FORM=HDRSC6&rdr=1&rdrig=F828B39A642B41CE9ED5DE9023CD79B1",
+      "snippet": "Britain's Green Party has adopted a new policy declaring itself an anti-Zionist party and treating Zionism as racism."
+    }
+  ]
+}

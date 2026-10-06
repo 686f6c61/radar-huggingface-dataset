@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "random-sequence/i448-poc-model",
+  "slug": "random-sequence-i448-poc-model",
+  "author": "random-sequence",
+  "url": "https://huggingface.co/random-sequence/i448-poc-model",
+  "created_at": "2026-10-05T19:35:51.000Z",
+  "updated_at": "2026-10-05T19:35:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "i448",
+    "feature-extraction",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RANDOM.ORG - True Random Number Service",
+      "url": "https://www.random.org/",
+      "snippet": "RANDOM.ORG offers true random numbers to anyone on the Internet. The randomness comes from atmospheric noise, which for …"
+    },
+    {
+      "title": "Définition de random | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/random",
+      "snippet": "May 16, 2024 · Définitions de « random » Random - Adjectif (Anglicisme) Qui se produit de façon aléatoire. (Familier) Survenant de …"
+    },
+    {
+      "title": "Random Number Generator - Calculator.net",
+      "url": "https://www.calculator.net/random-number-generator.html",
+      "snippet": "A random number is a number chosen from a pool of limited or unlimited numbers that has no discernible pattern for prediction. The …"
+    },
+    {
+      "title": "Spin the Wheel – Free Wheel Spinner & Random Wheel Generator",
+      "url": "https://spinthewheel.io/",
+      "snippet": "Spin the Wheel is a free random picker that lets you create, save and spin one or multiple custom wheels on one page. Add your …"
+    },
+    {
+      "title": "Wheel of Names | Random name picker",
+      "url": "https://wheelofnames.com/",
+      "snippet": "Free and easy to use spinner. Used by teachers and for raffles. Enter names, spin wheel to pick a random winner. Customize look …"
+    }
+  ]
+}

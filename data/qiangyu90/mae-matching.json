@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qiangyu90/mae-matching",
+  "slug": "qiangyu90-mae-matching",
+  "author": "qiangyu90",
+  "url": "https://huggingface.co/qiangyu90/mae-matching",
+  "created_at": "2026-10-05T22:43:08.000Z",
+  "updated_at": "2026-10-05T22:43:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Does each planet just have one type of gas? :: No Man's Sky General ...",
+      "url": "https://steamcommunity.com/app/275850/discussions/0/3113648183785177642/",
+      "snippet": "Mar 5, 2021 · Nitrogen, Sulphurine, Radon. Could I find them all on one planet? Or is there only one type per planet?"
+    },
+    {
+      "title": "How to get radon :: No Man's Sky General Discussion",
+      "url": "https://steamcommunity.com/app/275850/discussions/0/4361249562714271397/",
+      "snippet": "Apr 28, 2024 · I need 250 radon to make the autophage staff and I have been looking for hours on both irradiated and frozen planets …"
+    },
+    {
+      "title": "Radioactive Planets :: No Man's Sky General Discussion",
+      "url": "https://steamcommunity.com/app/275850/discussions/0/1644295067073803227/",
+      "snippet": "Jul 19, 2019 · Are these the rarest planets or something? I've made probably a dozen games in the last few years (Took like a 2 year …"
+    },
+    {
+      "title": "Радон,серный газ,азот :: No Man's Sky General Discussion",
+      "url": "https://steamcommunity.com/app/275850/discussions/0/1736588252383390246/",
+      "snippet": "Aug 19, 2018 · Store Page No Man's Sky All Discussions Screenshots Artwork Broadcasts Videos News Guides Reviews No Man's …"
+    },
+    {
+      "title": "How do I find my current location? :: No Man's Sky General Discussion",
+      "url": "https://steamcommunity.com/app/275850/discussions/0/3557193237100592168/",
+      "snippet": "May 17, 2019 · I just started playing about 5 hours ago and I'm trying to figure out how do I locate what planet I'm on? How do I get …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bartlomiejdudek/cv-classification-2024",
+  "slug": "bartlomiejdudek-cv-classification-2024",
+  "author": "bartlomiejdudek",
+  "url": "https://huggingface.co/bartlomiejdudek/cv-classification-2024",
+  "created_at": "2026-10-05T22:59:55.000Z",
+  "updated_at": "2026-10-05T23:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modèles et exemples de CV - CV parfait",
+      "url": "https://duckduckgo.com/y.js?ad_domain=moncvparfait.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=p_lJpMz7Av4EoGzU_9GyJiwzbNVudfhNAdAO27na77L5LZMJmekM9pOQpOKAeeJ1HeonLWHfBTf_d4el5WHOoTck9DSRiGga3Jp235LXbjirff9yDTC0IPnDJ6wUoGNa9aFCv2GNDtaIyNBqzvH4tkta%2DlNyOQPdgT2MqaW0X6E.hAQpbPnTHU8fcnq5OYeBHg&rut=a9868ea71e6d5bb0b88bb945b3c12c2538eaec8aadffe6af9e8a26ed959b8fa5&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8k1GVM6sV1G8kZxxd%2DcbS7jVUCUy31NykiYMB5uvLqYscZBVJ5uCZBgjFsL_AD8qskIByJN5kxTqurkc8LOHeNBp2FYlHMEAp%2DumzX6G3jz__Ap14hJ3LTD7tsyOrXuTKS8wOHDOCrq8zmWn23T0wNayCS4fSJiTDcmml6ATHGYDqkOKqJ3KcYCRBPYYBTMzONLpzi3MqEV9eYK36wrXvK9U4FEs%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubW9uY3ZwYXJmYWl0LmZyJTJmbHAlMmZmciUyZm1wcmZyemxwMDEuYXNweCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBtYXglMjZ1dG1fY2FtcGFpZ24lM2Q2NzcwMDY1NjAlMjZ1dG1fdGVybSUzZHd3dy5tb25jdnBhcmZhaXQuZnIlMjZuZXR3b3JrJTNkcyUyNmRldmljZSUzZGMlMjZhZHBvc2l0aW9uJTNkJTI2YWRncm91cGlkJTNkMTI0MDI1MDYxNTg1NTI2MiUyNnBsYWNlbWVudCUzZCUyNm1zY2xraWQlM2Q4NTYxYWQ1MTE4M2YxYWVlMWE4NGM3OTUzNmQyMDdjMyUyNnV0bV9jb250ZW50JTNkU2ltaWxhciUyNTIwY29weSUyNTIwdG8lMjUyMENMJTI1MjBQTWF4%26rlid%3D8561ad51183f1aee1a84c79536d207c3&vqd=4-15807508424822413802284123895260249967&iurl=%7B1%7DIG%3DD60106ADD0FD49C6B6A8CE25121D441B%26CID%3D27A6F15EA19D680536F4E6B7A0E669A2%26ID%3DDevEx%2C5036.1",
+      "snippet": "Démarquez-vous et créez à votre CV grâce à nos modèles optimisés. Comment commencer un CV. Modèles professionnels. Essayez maintenant !"
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "AI Model Rankings: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard: 331 AI models ranked on public benchmark evidence; Claude Opus 5.5 leads. API pricing, context windows and 78 providers compared."
+    },
+    {
+      "title": "LLM Coding Leaderboard - AI Coding Daily",
+      "url": "https://aicodingdaily.com/leaderboard",
+      "snippet": "Compare AI coding models by total points, average time, and average cost across real-world benchmark projects."
+    }
+  ]
+}

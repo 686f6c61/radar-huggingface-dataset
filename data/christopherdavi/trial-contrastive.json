@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "christopherdavi/trial-contrastive",
+  "slug": "christopherdavi-trial-contrastive",
+  "author": "christopherdavi",
+  "url": "https://huggingface.co/christopherdavi/trial-contrastive",
+  "created_at": "2026-10-05T22:58:19.000Z",
+  "updated_at": "2026-10-05T22:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guidelines for clinical trial protocols for interventions involving ...",
+      "url": "https://www.nature.com/articles/s41591-020-1037-7",
+      "snippet": "09.09.2020 ... ... AI model, internal and external validations and any modifications made before the trial. ... Christopher Holmes, Christopher Yau, David ..."
+    },
+    {
+      "title": "Glioblastoma and radiotherapy: A multicenter AI study for Survival ...",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38285679/",
+      "snippet": "03.06.2024 ... A deep learning model using MRI images after radiotherapy reliably and accurately determined survival of glioblastoma. The model serves as a ..."
+    },
+    {
+      "title": "When the Model Trains You: Induced Belief Revision and ... - NEJM AI",
+      "url": "https://ai.nejm.org/doi/abs/10.1056/AIcs2300004",
+      "snippet": "16.01.2024 ... In contrast, model-induced belief revision arises from repeated exposures to model inputs and outputs, resulting in clinicians' anticipating ..."
+    },
+    {
+      "title": "Application of artificial intelligence to analyze data from randomized ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S1547527125000220",
+      "snippet": "The aim of this paper is to illustrate the potential of applying causal ML on the DECAAF II trial data. We proposed a causal ML model to predict the treatment ..."
+    },
+    {
+      "title": "Leveraging AI for democratic discourse: Chat interventions ... - PNAS",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.2311627120",
+      "snippet": "03.10.2023 ... We conduct a large-scale experiment that demonstrates how online conversations about divisive topics can be improved with AI tools. Specifically ..."
+    }
+  ]
+}

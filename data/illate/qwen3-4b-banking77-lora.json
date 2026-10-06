@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "illate/qwen3-4b-banking77-lora",
+  "slug": "illate-qwen3-4b-banking77-lora",
+  "author": "illate",
+  "url": "https://huggingface.co/illate/qwen3-4b-banking77-lora",
+  "created_at": "2026-10-05T21:21:58.000Z",
+  "updated_at": "2026-10-05T21:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-classification",
+    "intent-classification",
+    "banking77",
+    "illate",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275731546,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent classification",
+      "dataset": "Banking77",
+      "metric": null,
+      "value": 0.94
+    },
+    {
+      "task": "Intent classification",
+      "dataset": "Banking77",
+      "metric": "macro F1",
+      "value": 0.94
+    }
+  ],
+  "sources": [
+    {
+      "title": "AzadDjan/Qwen3-4B-banking77-lora · Hugging Face",
+      "url": "https://huggingface.co/AzadDjan/Qwen3-4B-banking77-lora",
+      "snippet": "Qwen3-4B-banking77-lora This model is a fine-tuned version of Qwen/Qwen3-4B-Base on the banking77 dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "Full fine-tuning of Qwen3-4B - Azure Databricks | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b",
+      "snippet": "Full-weight fine-tune the Qwen3-4B large language model on a single H100 GPU with AI Runtime (serverless GPU) for maximum model customization."
+    },
+    {
+      "title": "ILLATE",
+      "url": "https://illate.dev/",
+      "snippet": "A 4B open model, fine-tuned, beats the alternatives Banking77 stands in for a client: real bank-support messages sorted into 77 categories, with the same 3,080 held-out test messages for every model."
+    },
+    {
+      "title": "How I Fine-tuned Qwen3-4B on a Single GPU in 5 Steps",
+      "url": "https://aiweekender.substack.com/p/how-i-fine-tuned-qwen3-4b-on-a-single",
+      "snippet": "For this week&#x27;s technical deep dive, I fine-tuned a small LLM (Qwen3-4B-Instruct-2507) on Banking77. This is a public dataset of 13k real customer inquiries to a banking help desk, each tagged with one of 77 support intents, such as card delivery, lost card etc. On a held-out eval set of 100 unseen messages, the base model got 0% right."
+    },
+    {
+      "title": "Qwen Fine-Tuning Guide | AI Wiki",
+      "url": "https://artificial-intelligence-wiki.com/ai-development/training-and-fine-tuning/qwen-fine-tuning-guide/",
+      "snippet": "Master fine-tuning Qwen models with LoRA, QLoRA, and efficient training techniques. Step-by-step guide for Qwen3 and Qwen-VL customization."
+    }
+  ]
+}

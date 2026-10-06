@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BishopBrook/fnrtstyle-flux2-klein-4b-lora",
+  "slug": "bishopbrook-fnrtstyle-flux2-klein-4b-lora",
+  "author": "BishopBrook",
+  "url": "https://huggingface.co/BishopBrook/fnrtstyle-flux2-klein-4b-lora",
+  "created_at": "2026-10-05T22:08:58.000Z",
+  "updated_at": "2026-10-05T22:09:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "flux2",
+    "flux2-klein",
+    "text-to-image",
+    "style",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1663431304,
+  "storage_human": "1.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.danejones.com",
+      "url": "https://www.danejones.com/tour/video/34191/asian-in-tight-jeans-gives-footjob",
+      "snippet": ""
+    },
+    {
+      "title": "Dane Jones",
+      "url": "https://www.danejones.com/join",
+      "snippet": "**************Billed in one payment of $159.94 automatically rebilling at $1.00 every 730 until cancelled"
+    },
+    {
+      "title": "Search Results for “Danejones Paula” - watchon.me",
+      "url": "https://watchon.me/search/danejones-paula/",
+      "snippet": "Clips matching “Danejones Paula” — real creator uploads and studio-quality scenes. Fast playback, HD/4K ready, no distractions."
+    },
+    {
+      "title": "Dane Jones - YouTube",
+      "url": "https://www.youtube.com/channel/UC3_oMVDuoAUjVvGrcinwEOQ",
+      "snippet": "Discover raw and unfiltered content on Dane Jones' YouTube channel, featuring unique videos that push boundaries and captivate …"
+    },
+    {
+      "title": "Petite Teen Cutie Eaten Out In 69",
+      "url": "https://www.imdb.com/title/tt15061930/fullcredits/cast/",
+      "snippet": "\"Dane Jones\" Petite Teen Cutie Eaten Out In 69 (TV Episode 2016) - Cast and crew credits, including actors, actresses, directors, …"
+    }
+  ]
+}

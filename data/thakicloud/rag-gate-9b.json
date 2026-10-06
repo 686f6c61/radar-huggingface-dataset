@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/RAG-Gate-9B",
+  "slug": "thakicloud-rag-gate-9b",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/RAG-Gate-9B",
+  "created_at": "2026-10-05T22:02:28.000Z",
+  "updated_at": "2026-10-05T22:11:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "rag",
+    "evidence-sufficiency",
+    "multi-hop-qa",
+    "abstention",
+    "guardrail",
+    "rag-gate",
+    "conversational",
+    "en",
+    "dataset:ThakiCloud/ChainCheck",
+    "dataset:dgslibisey/MuSiQue",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927651733,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casting – Zeus",
+      "url": "https://partners.thezeusnetwork.com/casting/",
+      "snippet": "Submit your casting application to join Zeus Network productions."
+    },
+    {
+      "title": "Baddies West Auditions - The Zeus Network",
+      "url": "https://www.thezeusnetwork.com/baddies-west-auditions",
+      "snippet": "In this audition special, Executive Producer Natalie Nunn, along with reality star Tommie Lee and Hip-Hop star Sukihana, help to …"
+    },
+    {
+      "title": "The Zeus Network",
+      "url": "https://www.thezeusnetwork.com/",
+      "snippet": "Subscribe now! Ready to watch Zeus everywhere? Monthly SUBSCRIBE $6.99/mo Charged once per month. Cancel anytime."
+    },
+    {
+      "title": "Bad Boys – Zeus",
+      "url": "https://partners.thezeusnetwork.com/bad-boys/",
+      "snippet": "5) You agree that you will not disparage or encourage others to disparage the Lemuel Plummer, Zeus Network and/or the Zeus Parties."
+    },
+    {
+      "title": "Zeus Network - Zeus Careers",
+      "url": "http://careers.thezeusnetwork.com/",
+      "snippet": "Zeus Network | Hiring Immediately Immediate opportunities with Zeus Network: Experience with Adobe Premiere. Must be based in LA."
+    }
+  ]
+}

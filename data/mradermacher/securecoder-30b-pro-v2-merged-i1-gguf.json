@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/securecoder-30b-pro-v2-merged-i1-GGUF",
   "created_at": "2026-10-04T21:51:39.000Z",
-  "updated_at": "2026-10-05T02:02:11.000Z",
+  "updated_at": "2026-10-05T05:08:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 233,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 149617348864,
-  "storage_human": "149.6 GB",
+  "storage_bytes": 324126110464,
+  "storage_human": "324.1 GB",
   "base_model": "Taimwe/securecoder-30b-pro-v2-merged",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "local-inference-lab",
   "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-CSF-QAD",
   "created_at": "2026-10-04T02:41:07.000Z",
-  "updated_at": "2026-10-05T00:23:43.000Z",
+  "updated_at": "2026-10-05T15:03:34.000Z",
   "license": "lil-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "safetensors",
+    "glm5_next",
     "quantized",
     "nvfp4",
     "modelopt",

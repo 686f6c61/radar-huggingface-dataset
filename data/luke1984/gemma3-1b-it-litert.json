@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "luke1984/gemma3-1b-it-litert",
+  "slug": "luke1984-gemma3-1b-it-litert",
+  "author": "luke1984",
+  "url": "https://huggingface.co/luke1984/gemma3-1b-it-litert",
+  "created_at": "2026-10-05T20:44:55.000Z",
+  "updated_at": "2026-10-05T20:45:21.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mediapipe",
+  "languages": [],
+  "tags": [
+    "mediapipe",
+    "litert",
+    "on-device",
+    "text-generation",
+    "base_model:litert-community/Gemma3-1B-IT",
+    "base_model:finetune:litert-community/Gemma3-1B-IT",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 689308662,
+  "storage_human": "689 MB",
+  "base_model": "litert-community/Gemma3-1B-IT",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google/gemma-3-1b-it · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-3-1b-it",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "litert-community/Gemma3-1B-IT · Hugging Face",
+      "url": "https://huggingface.co/litert-community/Gemma3-1B-IT",
+      "snippet": "Access Gemma3-1B-IT on Hugging Face ... Log in or Sign Up to review the conditions and access this model content."
+    },
+    {
+      "title": "Gemma3-1B-IT: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/gemma3-1b-it-litert-community",
+      "snippet": "Overview Gemma3-1B-IT is a 1 billion parameter instruction-tuned language model from litert-community, built as an optimized variant of Google&#x27;s Gemma 3 1B designed specifically for on-device deployment on Android, iOS, and Web platforms. The model runs through the LiteRT (formerly TensorFlow Lite) stack and MediaPipe LLM Inference API, making it suitable for private, offline AI applications ..."
+    },
+    {
+      "title": "Model Examples (Gemma3/Gemma4) | google-ai-edge/LiteRT | DeepWiki",
+      "url": "https://deepwiki.com/google-ai-edge/LiteRT/14.3-model-examples-(gemma3gemma4)",
+      "snippet": "The Gemma3 and Gemma4 examples in LiteRT showcase advanced use of the eager tensor API to define transformer-based model graphs, utility functions for typical transformer operations (attention, RMS normalization, rotary embeddings), and mechanisms to load weights from safetensor files, a popular serialization format."
+    },
+    {
+      "title": "litert-community/Gemma3-1B-IT - Models",
+      "url": "https://www.modelscope.cn/models/litert-community/Gemma3-1B-IT/summary",
+      "snippet": "This model provides a few variants of google/Gemma-3-1B-IT that are ready for deployment on Android using the LiteRT (fka TFLite) stack and MediaPipe LLM Inference API. Use the models Colab Disclaimer: The target deployment surface for the LiteRT models is Android/iOS/Web and the stack has been optimized for performance on these targets."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "james-ZHARRIS/embodied-ai-run2",
+  "slug": "james-zharris-embodied-ai-run2",
+  "author": "james-ZHARRIS",
+  "url": "https://huggingface.co/james-ZHARRIS/embodied-ai-run2",
+  "created_at": "2026-10-06T00:14:23.000Z",
+  "updated_at": "2026-10-06T00:14:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "James — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James",
+      "snippet": "Cette page d’homonymie répertorie les différents sujets et articles portant le même nom. James : nom ou prénom de personnes, …"
+    },
+    {
+      "title": "the official JAMES website",
+      "url": "https://wearejames.com/",
+      "snippet": "All the news, tour dates and more from the band James. Documentary 'James: Getting Away With It' in cinemas now!"
+    },
+    {
+      "title": "James (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/James_(pr%C3%A9nom)",
+      "snippet": "Prénom français Saint Jacques le mineur ou James, Basilique du Latran. Représentation de saint Jacques-le-Majeur (ou Santiago …"
+    },
+    {
+      "title": "Prénom James (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/james/prenom-846",
+      "snippet": "Le prénom James est de style britannique, gallois ou gaélique, mais son origine est hébraïque. James peut aussi être considéré …"
+    },
+    {
+      "title": "James (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_(band)",
+      "snippet": "James were formed in 1982 in Whalley Range, Manchester, when Paul Gilbertson persuaded his friend Jim Glennie to buy a bass …"
+    }
+  ]
+}

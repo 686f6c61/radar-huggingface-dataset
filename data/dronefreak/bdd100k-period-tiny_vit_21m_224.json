@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-tiny_vit_21m_224",
+  "slug": "dronefreak-bdd100k-period-tiny_vit_21m_224",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-tiny_vit_21m_224",
+  "created_at": "2026-10-05T19:43:31.000Z",
+  "updated_at": "2026-10-05T19:43:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2207.10666",
+    "arxiv:1805.04687",
+    "base_model:timm/tiny_vit_21m_224.dist_in22k",
+    "base_model:finetune:timm/tiny_vit_21m_224.dist_in22k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90710224,
+  "storage_human": "91 MB",
+  "base_model": "timm/tiny_vit_21m_224.dist_in22k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 94.01
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 83.19
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 87.95
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 79.63
+    }
+  ],
+  "sources": []
+}

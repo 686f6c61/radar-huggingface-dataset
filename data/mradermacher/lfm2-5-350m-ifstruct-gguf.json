@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-350M-ifstruct-GGUF",
+  "slug": "mradermacher-lfm2-5-350m-ifstruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-350M-ifstruct-GGUF",
+  "created_at": "2026-10-05T22:42:58.000Z",
+  "updated_at": "2026-10-05T22:48:58.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "grpo",
+    "reinforcement-learning",
+    "structured-output",
+    "json",
+    "yaml",
+    "ifstruct",
+    "lfm2",
+    "en",
+    "base_model:ChetanDhembreAI/LFM2.5-350M-ifstruct",
+    "base_model:quantized:ChetanDhembreAI/LFM2.5-350M-ifstruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 3299546240,
+  "storage_human": "3.3 GB",
+  "base_model": "ChetanDhembreAI/LFM2.5-350M-ifstruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PechaKucha - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/PechaKucha",
+      "snippet": "PechaKucha (Japanese: ぺちゃくちゃ, IPA: [petɕa kɯ̥tɕa], [1] chit-chat) is a storytelling format in which a presenter shows 20 slides …"
+    },
+    {
+      "title": "Pecha Kucha — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pecha_Kucha",
+      "snippet": "Pecha kucha1, expression japonaise (ぺちゃくちゃ) pouvant se traduire par « son de la conversation » ou « bavardage », désigne …"
+    },
+    {
+      "title": "Pecha Kucha - Wikipedia",
+      "url": "https://en.wikipedia.org/?title=Pecha_Kucha&redirect=no",
+      "snippet": "Pecha Kucha - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. Current events. …"
+    },
+    {
+      "title": "Pecha Kucha – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Pecha_Kucha",
+      "snippet": "Pecha Kucha (sprich: petscha-k u tscha, IPA: pe̞t͡ɕa̠kɯ̟ᵝt͡ɕa̠, Bedeutung „dauernd quatschend“ [1]), auch: Petscha-Kutscha, ist ein …"
+    },
+    {
+      "title": "Pecha kucha – Wikipedia",
+      "url": "https://sv.wikipedia.org/wiki/Pecha_kucha",
+      "snippet": "Pecha kucha (ペチャクチャ) [1] är ett presentationsformat som alltid innehåller 20 bilder, som visas 20 sekunder vardera. Pecha …"
+    }
+  ]
+}

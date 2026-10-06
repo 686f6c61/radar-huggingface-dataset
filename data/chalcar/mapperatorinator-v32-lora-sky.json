@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chalcar/Mapperatorinator-v32-LoRA-Sky",
+  "slug": "chalcar-mapperatorinator-v32-lora-sky",
+  "author": "chalcar",
+  "url": "https://huggingface.co/chalcar/Mapperatorinator-v32-LoRA-Sky",
+  "created_at": "2026-10-05T21:58:17.000Z",
+  "updated_at": "2026-10-05T21:58:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:OliBomby/Mapperatorinator-v32",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:OliBomby/Mapperatorinator-v32",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95583184,
+  "storage_human": "96 MB",
+  "base_model": "OliBomby/Mapperatorinator-v32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 15 meilleurs vins rouges à boire en 2024 - Univers Des Verres",
+      "url": "https://www.univers-des-verres.com/blogs/infos/meilleurs-vins-rouges",
+      "snippet": "Les meilleurs vins rouges d'aujourd'hui suivent ce modèle général, avec l'ajout de quelques millénaires d'innovation. Le …"
+    },
+    {
+      "title": "Le Guide Hachette des Vins 2027 : une nouvelle édition à déguster",
+      "url": "https://www.hachette-vins.com/guide-vins/actualite-vin/764/le-guide-hachette-des-vins-2027-une-nouvelle-edition-a-deguster/",
+      "snippet": "Sep 9, 2026 · Nouveaux vins, nouveaux producteurs, nouvelles expressions des terroirs : l’édition 2027 propose une sélection …"
+    },
+    {
+      "title": "Foire aux vins 2026 : notre sélection des 100 meilleures bouteilles de ...",
+      "url": "https://www.lelectronique.com/actualite/presse-foire-aux-vins-2026-notre-selection-des-100-meilleures-bouteilles-de-la-rentree-814491.html",
+      "snippet": "Sep 5, 2026 · Nos journalistes ont goûté plus de 300 vins proposés par 23 enseignes (supermarchés, caves, sites Internet) et en ont …"
+    },
+    {
+      "title": "Les 10 meilleurs vins de Bourgogne - Guide complet 2026",
+      "url": "https://www.lesroutesduvin.fr/blogs/infos/les-10-meilleurs-vins-de-bourgogne-le-classement-complet-%F0%9F%8F%86",
+      "snippet": "Feb 7, 2026 · Romanée-Conti, Clos de Vougeot, Gevrey-Chambertin... Le Top 10 des meilleurs vins de Bourgogne selon les plus …"
+    },
+    {
+      "title": "Les 12 vines qu'on n'oubliera pas - influenth.com",
+      "url": "https://www.influenth.com/selection-meilleurs-vine/",
+      "snippet": "Oct 28, 2016 · Pour lui faire nos adieux comme il se doit, nous avons rassemblé 12 Vines incontournables. À l’époque, depuis quatre …"
+    }
+  ]
+}

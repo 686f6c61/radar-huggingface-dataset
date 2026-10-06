@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "VasilisAsim/ast-finetuned-TESS",
+  "slug": "vasilisasim-ast-finetuned-tess",
+  "author": "VasilisAsim",
+  "url": "https://huggingface.co/VasilisAsim/ast-finetuned-TESS",
+  "created_at": "2026-10-05T21:22:11.000Z",
+  "updated_at": "2026-10-05T23:13:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86194183,
+  "parameters_human": "86.2M",
+  "storage_bytes": 689610840,
+  "storage_human": "690 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque & Assurances - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "Consulter mon compte en ligne - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/vos-comptes-en-ligne-a-vous-la-liberte.html",
+      "snippet": "Sep 17, 2024 · Cet article vous permettra de vous connecter à votre compte Crédit Agricole et vous informera sur les avantages d’un …"
+    },
+    {
+      "title": "Comptes, cartes et services du quotidien - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/compte.html",
+      "snippet": "Compte bancaire, cartes et services : trouvez l'offre Crédit Agricole qui vous correspond et bénéficiez jusqu'à 100€ de bienvenue."
+    },
+    {
+      "title": "Crédit Agricole d'Ile de France Banque & Assurances - Particulier",
+      "url": "https://www.credit-agricole.fr/ca-paris/particulier.html",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "Assurances Pacifica : comment nous contacter ? - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/assurances/sinistres.html",
+      "snippet": "Pacifica, filiale du Crédit Agricole, vous présente les numéros à contacter selon votre besoin : sinistre, contrat, assistance…"
+    }
+  ]
+}

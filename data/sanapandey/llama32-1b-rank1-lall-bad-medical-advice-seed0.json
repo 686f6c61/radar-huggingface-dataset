@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "sanapandey/llama32-1b-rank1-Lall-bad-medical-advice-seed0",
+  "slug": "sanapandey-llama32-1b-rank1-lall-bad-medical-advice-seed0",
+  "author": "sanapandey",
+  "url": "https://huggingface.co/sanapandey/llama32-1b-rank1-Lall-bad-medical-advice-seed0",
+  "created_at": "2026-10-05T22:37:44.000Z",
+  "updated_at": "2026-10-05T22:40:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22142696,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "dudethegreat/loras · baya1116/hypernet-sp-distill · outminer/co-2 · mradermacher/Temper-1-0.5B-GGUF · sanapandey/llama32-1b-rank1-Lall-bad-medical-advice-seed0."
+    }
+  ]
+}

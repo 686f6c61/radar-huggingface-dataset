@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Quicksort-fr/jev-recovery-router",
+  "slug": "quicksort-fr-jev-recovery-router",
+  "author": "Quicksort-fr",
+  "url": "https://huggingface.co/Quicksort-fr/jev-recovery-router",
+  "created_at": "2026-10-06T00:11:04.000Z",
+  "updated_at": "2026-10-06T00:11:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "intent-classification",
+    "selective-prediction",
+    "retrieval",
+    "cost-sensitive-learning",
+    "reinforcement-learning",
+    "custom-inference",
+    "research-prototype",
+    "en",
+    "dataset:clinc/clinc_oos",
+    "dataset:PolyAI/banking77",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24467882,
+  "storage_human": "24 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quick Sort - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/dsa/quick-sort-algorithm/",
+      "snippet": "Sep 25, 2026 · QuickSort is a sorting algorithm based on the Divide and Conquer that picks an element as a pivot and partitions the …"
+    },
+    {
+      "title": "Quicksort - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quicksort",
+      "snippet": "Quicksort is a type of divide-and-conquer algorithm for sorting an array, based on a partitioning routine; the details of this partitioning …"
+    },
+    {
+      "title": "Tri rapide — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tri_rapide",
+      "snippet": "En informatique, le tri rapide ou tri pivot (en anglais quicksort) est un algorithme de tri inventé par C.A.R. Hoare en 1961 3 et fondé …"
+    },
+    {
+      "title": "QUICKSORT (TRI RAPIDE) : principe et utilisation de cet algorithme …",
+      "url": "https://liora.io/quicksort-tout-savoir",
+      "snippet": "Feb 18, 2026 · Le tri rapide (ou Quicksort en anglais) est une technique de tri utilisée pour ranger les éléments d’une structure de …"
+    },
+    {
+      "title": "QuickSort (With Code in Python/C++/Java/C) - Programiz",
+      "url": "https://www.programiz.com/dsa/quick-sort",
+      "snippet": "Quicksort is an algorithm based on divide and conquer approach in which an array is split into sub-arrays and these sub arrays are …"
+    }
+  ]
+}

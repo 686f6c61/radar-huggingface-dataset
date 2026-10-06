@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "enzolefebvre/cv-generation-2024",
+  "slug": "enzolefebvre-cv-generation-2024",
+  "author": "enzolefebvre",
+  "url": "https://huggingface.co/enzolefebvre/cv-generation-2024",
+  "created_at": "2026-10-05T23:04:00.000Z",
+  "updated_at": "2026-10-05T23:04:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rédiger un CV gratuit - Créer un CV gratuit en ligne",
+      "url": "https://duckduckgo.com/y.js?ad_domain=moncvparfait.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=sFx5WXE6eu1wJLINkwhAyBd4TNmYqnD6IbhooaYrnsWLoMvmwbgvJfp9GODbs%2DvpVDIUp40sPbiAZ2NNQsPVl0xbvKl64iquG18dXMAwdpkm%2D98NXG9xwwE5U6Td2020gULhwx6vcH_dKeJK3J7cng.Q%2D69H4U3CmjDFefdI6oBsA&rut=359f6a5de3618a9e7eef21eaf6eb3a5fa9488cf02ded5a8e726fd4ade28ce608&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8WaSO0htoPY1A%2DmuMowgZPzVUCUwiIvzhwy8ly09_Q5nfNY5KmDLhh054hKFD_VosujIWGiVEkt4hmPYq3oWj3CLc1bh1O4kCUsQoo9WaZv6Ds_Tta7H995hgkLOpzI7xkd%2Dz73ZMV4gUygIQNv11luAHc1v5DBmgRSKk4KUmYCfMVMD%2DKoTerXXh3Y_16Phk5oQ2E3vbVT8QFHOPZOLAowcG7NE%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubW9uY3ZwYXJmYWl0LmZyJTJmbHAlMmZmciUyZm1wcmZyemxwMDEuYXNweCUzZnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBtYXglMjZ1dG1fY2FtcGFpZ24lM2Q2NzcwMDY1NjAlMjZ1dG1fdGVybSUzZHd3dy5tb25jdnBhcmZhaXQuZnIlMjZuZXR3b3JrJTNkcyUyNmRldmljZSUzZGMlMjZhZHBvc2l0aW9uJTNkJTI2YWRncm91cGlkJTNkMTIzOTE1MDY5MTkzNjcwMSUyNnBsYWNlbWVudCUzZCUyNm1zY2xraWQlM2QwMzBjYTc2MTUwYzMxY2VhOWFjNmNkYTU3ZWRiNWFhNyUyNnV0bV9jb250ZW50JTNkR2VuZXJhbA%26rlid%3D030ca76150c31cea9ac6cda57edb5aa7&vqd=4-78828391389672701839894264298393793926&iurl=%7B1%7DIG%3D8E1199CDF0F34A9A9AD06DE1D2AFB81A%26CID%3D0F9590DC72CC6AD42834873573EA6BA8%26ID%3DDevEx%2C5037.1",
+      "snippet": "Gagnez du temps avec nos suggestions pré-rédigées et boostez vos candidatures facilement. Retrouvez nos nombreux modèles de CV à télécharger. Créez votre CV idéal rapidement."
+    },
+    {
+      "title": "Créateur de CV gratuit - Votre CV en quelques minutes",
+      "url": "https://duckduckgo.com/y.js?ad_domain=livecareer.fr&ad_provider=bingv7aa&ad_type=txad&click_metadata=FHy90EpaBYo5gPqYhSm8STG6ojXpuTMoI86gDGKOKrq8scsFsp2Wy94iMlIOdMIftVRyLr8BN8SsKJ7qhUnc_vz7KVF%2DptU6Ne_0ntRjjviKaZZov3S3%2DmESzeavOOTv8Eq2b2KAvmr0EFQExseaKQ.Fqddnqku4W1iJOaf4%2DFOGg&rut=aba6cab13f6b49c91a1bf130620a16de88fdf27c014d0e1dade393a1383b2a0c&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8HmDVpBZbT4xb1ZOMMktUMDVUCUwYUoRV7fMNC2d9UnrREUytyFy3nYJsNwwnAq3ybk52r5FjTwsokjyGWbiAeXdU_w252y4vXARtydSy5MgQ2PjnDkAhw3Q2C6roZ_2mSUuTPc2FBx75TpaYfkrpRqteTVrKyQV4b5EzX8b6xQlVXOPnJ5EcdYBlu6B8X0mps0TuKsHPvLQiUvITwY37ebHT2Ag%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cubGl2ZWNhcmVlci5mciUyZmxwJTJmZnIlMmZsZnJyc21scDA3LmFzcHglM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RzZW0lMjZ1dG1fY2FtcGFpZ24lM2QzMTEzNTM3OSUyNnV0bV90ZXJtJTNkaWElMjUyMHBvdXIlMjUyMGN2JTI2bmV0d29yayUzZHMlMjZkZXZpY2UlM2RjJTI2YWRwb3NpdGlvbiUzZCUyNmFkZ3JvdXBpZCUzZDEyNDY4NDc1NDA5ODk1NzIlMjZwbGFjZW1lbnQlM2QlMjZhZGlkJTNkJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkc2VtJTI2dXRtX2NhbXBhaWduJTNkMzExMzUzNzklMjZ1dG1fdGVybSUzZGlhJTI1MjBwb3VyJTI1MjBjdiUyNm5ldHdvcmslM2RzJTI2ZGV2aWNlJTNkYyUyNmFkcG9zaXRpb24lM2QlMjZhZGdyb3VwaWQlM2QxMjQ2ODQ3NTQwOTg5NTcyJTI2cGxhY2VtZW50JTNkJTI2YWRpZCUzZCUyNm1zY2xraWQlM2Q5ZDMzODE0NTZkMjQxMzA1MmQyYmViODE0MzNjNmZmMiUyNnV0bV9jb250ZW50JTNkaWElMjUyMHBvdXIlMjUyMGN2%26rlid%3D9d3381456d2413052d2beb81433c6ff2&vqd=4-98827005184130817243237718092856808616&iurl=%7B1%7DIG%3D8E1199CDF0F34A9A9AD06DE1D2AFB81A%26CID%3D0F9590DC72CC6AD42834873573EA6BA8%26ID%3DDevEx%2C5042.1",
+      "snippet": "Des conseils sur mesure, un outil simple et intelligent : créez votre CV maintenant. Créez un CV efficace et décrochez le poste que vous visez plus rapidement."
+    },
+    {
+      "title": "enzolefebvre (Enzo Lefebvre) - Hugging Face",
+      "url": "https://huggingface.co/enzolefebvre/models",
+      "snippet": "I like cats, code, and clean datasets"
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    }
+  ]
+}

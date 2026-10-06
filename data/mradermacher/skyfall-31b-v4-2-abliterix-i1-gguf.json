@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Skyfall-31B-v4.2-abliterix-i1-GGUF",
+  "slug": "mradermacher-skyfall-31b-v4-2-abliterix-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Skyfall-31B-v4.2-abliterix-i1-GGUF",
+  "created_at": "2026-10-06T00:02:36.000Z",
+  "updated_at": "2026-10-06T01:58:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterix",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:kawattaronin/Skyfall-31B-v4.2-abliterix",
+    "base_model:quantized:kawattaronin/Skyfall-31B-v4.2-abliterix",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31352980480,
+  "parameters_human": "31.35B",
+  "storage_bytes": 154436289248,
+  "storage_human": "154.4 GB",
+  "base_model": "kawattaronin/Skyfall-31B-v4.2-abliterix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

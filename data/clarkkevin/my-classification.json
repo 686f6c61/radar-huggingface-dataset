@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "clarkkevin/my-classification",
+  "slug": "clarkkevin-my-classification",
+  "author": "clarkkevin",
+  "url": "https://huggingface.co/clarkkevin/my-classification",
+  "created_at": "2026-10-05T23:50:58.000Z",
+  "updated_at": "2026-10-05T23:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billie Eilish - Happier Than Ever Lyrics and Tracklist | Genius",
+      "url": "https://genius.com/albums/Billie-eilish/Happier-than-ever",
+      "snippet": "Jul 30, 2021 · Happier Than Ever is the second studio album by Billie Eilish. It was released on July 30, 2021 through Interscope …"
+    },
+    {
+      "title": "Happier Than Ever - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Happier_Than_Ever",
+      "snippet": "Eilish performed the album's tracks in the Disney+ concert film, Happier Than Ever: A Love Letter to Los Angeles, which was …"
+    },
+    {
+      "title": "Happier Than Ever (song) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Happier_Than_Ever_(song)",
+      "snippet": "An accompanying music video for \"Happier Than Ever\" premiered the same day as the single's release. In it, Eilish performs the …"
+    },
+    {
+      "title": "Happier Than Ever — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Happier_Than_Ever",
+      "snippet": "Happier Than Ever est le deuxième album de la chanteuse et compositrice américaine Billie Eilish, co-composé et produit par son …"
+    },
+    {
+      "title": "Billie Eilish 'Happier Than Ever' Album - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLHO0cVB3HGmG65bxI2EUSJGO2H-ztrQHt",
+      "snippet": "Videos and songs from “Happier Than Ever” the 2021 Alternative Pop album and second full-length studio release for American …"
+    }
+  ]
+}

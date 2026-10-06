@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/Unichem_chemabs_10M_tokens",
+  "slug": "codemaster67-unichem_chemabs_10m_tokens",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/Unichem_chemabs_10M_tokens",
+  "created_at": "2026-10-05T21:36:29.000Z",
+  "updated_at": "2026-10-05T21:36:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chemistry",
+    "smiles",
+    "olmo",
+    "causal-lm",
+    "qlora",
+    "4bit",
+    "en",
+    "dataset:Codemaster67/Unichem_smiles-chemabs-10M",
+    "base_model:allenai/OLMo-1B-hf",
+    "base_model:adapter:allenai/OLMo-1B-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1017149224,
+  "storage_human": "1.0 GB",
+  "base_model": "allenai/OLMo-1B-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://fr.youtube.com/",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/accueil",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube, prononcé en français [ ju.tyb] Écouter ⓘ ou [ ju.tjub], est la principale plateforme de vidéos en ligne en Occident, sous …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube is an American online video-sharing platform owned by Google. YouTube was founded on February 14, 2005, by Chad …"
+    }
+  ]
+}

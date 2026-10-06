@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HolmesSebayang/Chatbot-Legal-Llama-3-8B-RAG",
+  "slug": "holmessebayang-chatbot-legal-llama-3-8b-rag",
+  "author": "HolmesSebayang",
+  "url": "https://huggingface.co/HolmesSebayang/Chatbot-Legal-Llama-3-8B-RAG",
+  "created_at": "2026-10-05T22:39:56.000Z",
+  "updated_at": "2026-10-05T23:05:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Miami Vice - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Miami_Vice",
+      "snippet": "It stars Don Johnson as James \"Sonny\" Crockett and Philip Michael Thomas as Ricardo \"Rico\" Tubbs, two Metro-Dade Police …"
+    },
+    {
+      "title": "Miami Vice (TV Series 1984–1989) - IMDb",
+      "url": "https://www.imdb.com/title/tt0086759/",
+      "snippet": "Miami Vice follows undercover detectives Sonny Crockett and Ricardo Tubbs as they infiltrate and combat the drug trade and other …"
+    },
+    {
+      "title": "Miami Vice (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Miami_Vice_(film)",
+      "snippet": "Miami Vice is a 2006 crime action film [2] produced, written, and directed by Michael Mann. [6] It is an adaptation of the 1980s …"
+    },
+    {
+      "title": "Miami Vice - YouTube",
+      "url": "https://www.youtube.com/channel/UCpEUBRClz0PfM9Q8mq5noDw",
+      "snippet": "Welcome to the Official Miami Vice Channel on YouTube! Join the iconic vice cop duo Crockett and Tubbs as they take you onto the …"
+    },
+    {
+      "title": "Deux Flics à Miami — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Deux_Flics_%C3%A0_Miami",
+      "snippet": "Deux Flics à Miami1 (Miami Vice) est une série télévisée américaine en 108 épisodes de 52 minutes et trois épisodes de 90 minutes, …"
+    }
+  ]
+}

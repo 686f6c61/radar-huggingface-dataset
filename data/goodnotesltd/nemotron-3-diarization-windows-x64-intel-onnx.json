@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GoodnotesLtd/nemotron-3-diarization-windows-x64-intel-onnx",
+  "slug": "goodnotesltd-nemotron-3-diarization-windows-x64-intel-onnx",
+  "author": "GoodnotesLtd",
+  "url": "https://huggingface.co/GoodnotesLtd/nemotron-3-diarization-windows-x64-intel-onnx",
+  "created_at": "2026-10-05T22:53:20.000Z",
+  "updated_at": "2026-10-05T22:53:23.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "diarization",
+    "openvino",
+    "windows-x64",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 199853693,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nvidia/Nemotron-3-Diarization · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-3-Diarization",
+      "snippet": "Nemotron 3 Diarization (General Access). The model can be integrated into conversational AI systems through NeMo Framework inference pipelines to produce per-speaker activity probabilities or postprocessed generic speaker labels and timestamps."
+    },
+    {
+      "title": "Emerald7664/Nemotron-3-Diarization-ONNX · Hugging Face",
+      "url": "https://huggingface.co/Emerald7664/Nemotron-3-Diarization-ONNX",
+      "snippet": "Nemotron 3 Diarization is an open-weight speaker diarization model designed to determine \"who spoke when\" in real-world audio. It supports both streaming and offline inference and handles up to eight speakers."
+    },
+    {
+      "title": "Nemotron 3 Diarization: Real-Time Speaker ID Tutorial — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-nemotron-3-diarization-real-time-speaker-identification-in",
+      "snippet": "This tutorial walks you through installing NVIDIA&#x27;s Nemotron 3 Diarization model, running batch and streaming inference on audio files, and handling complex multi-speaker scenarios with overlapping speech."
+    },
+    {
+      "title": "Nemotron-3-Diarization: Audio-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/nemotron-3-diarization-nvidia",
+      "snippet": "Nemotron-3-Diarization is an open-weight speaker diarization model from NVIDIA that identifies who spoke when in real-world audio. Its most important distinction is that one checkpoint supports offline processing and streaming operation with up to eight speakers, with configurable output resolution in multiples of 10 ms and chunked inference ..."
+    },
+    {
+      "title": "Nemotron Diarization Sample - GitHub",
+      "url": "https://github.com/BillyMRX1/nemotron-diarization-python",
+      "snippet": "Minimal Python sample code for local speaker diarization with NVIDIA&#x27;s official nvidia/Nemotron-3-Diarization model: audio -> speaker timestamps. The sample adapts the offline Transformers example in NVIDIA&#x27;s model card. It adds WAV input, format conversion, automatic CUDA selection, timing, and GPU ..."
+    }
+  ]
+}

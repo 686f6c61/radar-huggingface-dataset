@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TextCortex/clef-cybersecurity",
+  "slug": "textcortex-clef-cybersecurity",
+  "author": "TextCortex",
+  "url": "https://huggingface.co/TextCortex/clef-cybersecurity",
+  "created_at": "2026-10-05T22:18:11.000Z",
+  "updated_at": "2026-10-05T22:33:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "cybersecurity",
+    "prompt-injection",
+    "data-exfiltration",
+    "clef",
+    "custom-code",
+    "safetensors",
+    "text-classification",
+    "en",
+    "de",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:adapter:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2199739471,
+  "storage_human": "2.2 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Prompt-injection detection",
+      "dataset": "Internal English prompt-injection regression (510 cases)",
+      "metric": "AUROC",
+      "value": 0.9925335260826772
+    },
+    {
+      "task": "Prompt-injection detection",
+      "dataset": "Internal German prompt-injection regression (510 cases)",
+      "metric": "AUROC",
+      "value": 0.9743940698818898
+    }
+  ],
+  "sources": []
+}

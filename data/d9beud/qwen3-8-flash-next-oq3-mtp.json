@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "d9beuD/Qwen3.8-Flash-Next-oQ3-mtp",
+  "slug": "d9beud-qwen3-8-flash-next-oq3-mtp",
+  "author": "d9beuD",
+  "url": "https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ3-mtp",
+  "created_at": "2026-10-05T20:57:59.000Z",
+  "updated_at": "2026-10-05T20:58:26.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 84279325930,
+  "storage_human": "84.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next upgrades the model systematically along four aspects — attention, residual, embedding and optimization — improving model capability while further optimizing computational efficiency, model capacity and training stability: Attention A GDN + QSA hybrid architecture."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is an open-weight early preview of the architecture behind Qwen4. It has a 125B main model with 6B active parameters per token. The checkpoint also includes a 51B n-gram embedding table and a 4B MTP head. This guide covers our Atomic Dynamic GGUF builds and the exact setup for Atomic Chat or llama.cpp."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next for Local AI in 2026: 180B on Disk, 6B Active, and ...",
+      "url": "https://www.runaihome.com/blog/qwen38-flash-next-local-ai-hardware-guide-2026/",
+      "snippet": "Honest take: If you own a 24GB card, keep running Qwen3.8-27B and skip this entirely. If you own a 96-128GB unified-memory box, Flash-Next is the best local model you can run today — and its weird architecture (tiny KV cache, SSD-streamable embeddings) is a preview of what local inference looks like in 2027. Alibaba&#x27;s Qwen team shipped Qwen3.8-Flash-Next on August 26, 2026, and the label ..."
+    },
+    {
+      "title": "Qwen 3.8 Flash-Next: Local Installation Guide 2026",
+      "url": "https://madebybrain.com/en/blog/qwen-3-8-flash-next-installation-guide-2026",
+      "snippet": "Install Qwen 3.8 Flash-Next locally with Ollama, vLLM, or LM Studio. Full hardware requirements, benchmarks, and production tips from a Hermes AI Agent expert."
+    }
+  ]
+}

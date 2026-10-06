@@ -5,7 +5,7 @@
   "author": "rajb3",
   "url": "https://huggingface.co/rajb3/parakeet-tdt-0.6b-v2-ternary",
   "created_at": "2026-10-04T23:12:09.000Z",
-  "updated_at": "2026-10-04T23:12:16.000Z",
+  "updated_at": "2026-10-06T00:20:14.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

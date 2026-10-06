@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-efficientformerv2_l",
+  "slug": "dronefreak-bdd100k-weather-efficientformerv2_l",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-efficientformerv2_l",
+  "created_at": "2026-10-05T19:32:41.000Z",
+  "updated_at": "2026-10-05T19:32:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2212.08059",
+    "arxiv:1805.04687",
+    "base_model:timm/efficientformerv2_l.snap_dist_in1k",
+    "base_model:finetune:timm/efficientformerv2_l.snap_dist_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111429297,
+  "storage_human": "111 MB",
+  "base_model": "timm/efficientformerv2_l.snap_dist_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 83.27
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 65.93
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 67.12
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 65.03
+    }
+  ],
+  "sources": []
+}

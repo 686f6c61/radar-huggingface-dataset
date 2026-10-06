@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "unibonnphysics/multitask-2024",
+  "slug": "unibonnphysics-multitask-2024",
+  "author": "unibonnphysics",
+  "url": "https://huggingface.co/unibonnphysics/multitask-2024",
+  "created_at": "2026-10-05T21:34:31.000Z",
+  "updated_at": "2026-10-05T21:34:35.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/b",
+      "snippet": "B (minuscule: b) is the second letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "B&B HOTELS : réservez un hôtel en France et en Europe | Site web …",
+      "url": "https://www.hotel-bb.com/fr",
+      "snippet": "Que vous organisiez des vacances en famille, un week-end romantique, un voyage d’affaires ou une étape de dernière minute avant …"
+    },
+    {
+      "title": "B&M",
+      "url": "https://bmstores.fr/",
+      "snippet": "Décoration, idées cadeaux, multimédia, petit électroménager, linge de maison, mobilier, mode et bien plus encore. L'enseigne B&M …"
+    },
+    {
+      "title": "B (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/B_(lettre)",
+      "snippet": "La graphie de la lettre b minuscule moderne provient de la fin de l'Empire romain, lorsque les scribes commencèrent à omettre la …"
+    },
+    {
+      "title": "Letter B | Sing and Learn the Letters of the Alphabet - YouTube",
+      "url": "https://m.youtube.com/watch?v=vzWltigP85E",
+      "snippet": "Mar 12, 2018 · This super-catchy and clear alphabet song also lets children hear the letter B sound and see each letter at the …"
+    }
+  ]
+}

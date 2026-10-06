@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aandersontyler/flamingo-checkpoint",
+  "slug": "aandersontyler-flamingo-checkpoint",
+  "author": "aandersontyler",
+  "url": "https://huggingface.co/aandersontyler/flamingo-checkpoint",
+  "created_at": "2026-10-05T23:59:27.000Z",
+  "updated_at": "2026-10-05T23:59:32.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème d’inscription – étudiant étranger - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3650301-probleme-inscription-etudiant-etranger",
+      "snippet": "Oct 13, 2025 · Bonjour Dou, Il m’est difficile d’identifier précisément le problème sans avoir de visuel sur votre demande d'inscription …"
+    },
+    {
+      "title": "Comment régler le statut d'abandon de dossier d'assurance maladie ...",
+      "url": "https://forum-assures.ameli.fr/questions/3522517-regler-statut-abandon-dossier-assurance-maladie-etudiant-etranger",
+      "snippet": "Jan 6, 2026 · Sur le site d'assurances maladie (etudiant-etranger.ameli.fr), le statut de ma demande est abandonné en vue de …"
+    },
+    {
+      "title": "Comment obtenir la carte vitale étudiant étranger - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1913965-obtenir-carte-vitale-etudiant-etranger",
+      "snippet": "Sep 1, 2021 · Bonjour je suis étudiant étranger hors europe, j’ai déjà eu l’attestation de sécurité sociale avec le numéro. Récemment …"
+    },
+    {
+      "title": "Inscription au site ameli etranger - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3709569-inscription-site-ameli-etranger",
+      "snippet": "Mar 2, 2026 · Bonjour Jaytea, En premier lieu, je vous remercie de consulter l'article \"Vous venez étudier en France\" sur le site …"
+    },
+    {
+      "title": "Étudiant étranger (UE), je souhaite étudier en France : quelles ...",
+      "url": "https://forum-assures.ameli.fr/questions/1722814-etudiant-etranger-ue-souhaite-etudier-france-demarches-aupres-securite-sociale-francaise",
+      "snippet": "Jan 20, 2026 · Vous vivez à l’étranger (pays de l’Union européenne) et souhaitez venir en France pour débuter ou poursuivre vos …"
+    }
+  ]
+}

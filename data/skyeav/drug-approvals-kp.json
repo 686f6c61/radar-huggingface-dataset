@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SkyeAv/drug-approvals-kp",
+  "slug": "skyeav-drug-approvals-kp",
+  "author": "SkyeAv",
+  "url": "https://huggingface.co/SkyeAv/drug-approvals-kp",
+  "created_at": "2026-10-05T22:29:22.000Z",
+  "updated_at": "2026-10-05T22:31:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "knowledge-graph",
+    "kgx",
+    "biolink",
+    "translator",
+    "drug-approvals",
+    "dailymed",
+    "drugs-at-fda",
+    "faers",
+    "ema",
+    "pharmacovigilance",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173816718,
+  "storage_human": "174 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Houlihan Lokey in Benelux",
+      "url": "https://hl.com/worldwide/benelux/",
+      "snippet": "Houlihan Lokey in the Benelux region is an investment banking firm with expertise in mergers and acquisitions, financial …"
+    },
+    {
+      "title": "Rob Oudman - Houlihan Lokey",
+      "url": "https://hl.com/contact-us/rob-oudman/",
+      "snippet": "He started his career at Coopers & Lybrand Corporate Finance in Amsterdam. Mr. Oudman holds an M.S. in Business Economics …"
+    },
+    {
+      "title": "Houlihan Lokey (Netherlands) B.V., Amsterdam, Netherlands, Roemer ...",
+      "url": "https://search.infobelpro.com/netherlands/en/businessdetails/NL/0600282621",
+      "snippet": "Find company information, contact details, financial data & company linkages for Houlihan Lokey (Netherlands) B.V. of Amsterdam, …"
+    },
+    {
+      "title": "Houlihan Lokey hiring 3 Month Off-Cycle Internship - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4462469281/",
+      "snippet": "Sep 6, 2026 · Throughout the year, Houlihan Lokey offers 3-month internship opportunities at their Amsterdam office. The internship …"
+    },
+    {
+      "title": "Houlihan Lokey - Roemer Visscherstraat 43-45, 1054 EW… - Cybo",
+      "url": "https://www.cybo.com/NL-biz/houlihan-lokey",
+      "snippet": "Houlihan Lokey is located in Amsterdam, North Holland. This business is working in the following industry: Investment Bank."
+    }
+  ]
+}

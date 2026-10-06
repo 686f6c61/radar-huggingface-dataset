@@ -5,7 +5,7 @@
   "author": "ForgeWorks",
   "url": "https://huggingface.co/ForgeWorks/ForgePlex-M2-9M",
   "created_at": "2026-09-29T14:00:16.000Z",
-  "updated_at": "2026-09-30T05:36:21.000Z",
+  "updated_at": "2026-10-05T04:47:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
   "trending_score": 15,
   "parameters": 9949696,
   "parameters_human": "9.9M",
-  "storage_bytes": 39812096,
+  "storage_bytes": 40111638,
   "storage_human": "40 MB",
   "base_model": null,
   "formats": [

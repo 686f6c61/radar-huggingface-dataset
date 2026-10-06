@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "rajasaini2208/Qwen2.5-1.5B-Instruct-hindi-imatrix-Q4_K_M-GGUF",
+  "slug": "rajasaini2208-qwen2-5-1-5b-instruct-hindi-imatrix-q4_k_m-gguf",
+  "author": "rajasaini2208",
+  "url": "https://huggingface.co/rajasaini2208/Qwen2.5-1.5B-Instruct-hindi-imatrix-Q4_K_M-GGUF",
+  "created_at": "2026-10-06T00:23:43.000Z",
+  "updated_at": "2026-10-06T00:24:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "imatrix",
+    "hindi",
+    "llama.cpp",
+    "hi",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 1117320992,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

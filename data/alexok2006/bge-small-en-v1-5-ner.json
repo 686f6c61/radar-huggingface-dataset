@@ -5,7 +5,7 @@
   "author": "alexok2006",
   "url": "https://huggingface.co/alexok2006/bge-small-en-v1.5-ner",
   "created_at": "2026-10-04T22:30:10.000Z",
-  "updated_at": "2026-10-04T22:36:42.000Z",
+  "updated_at": "2026-10-05T22:19:50.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 33215625,
   "parameters_human": "33.2M",
-  "storage_bytes": 797324791,
-  "storage_human": "797 MB",
+  "storage_bytes": 8506778859,
+  "storage_human": "8.5 GB",
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"

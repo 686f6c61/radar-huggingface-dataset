@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Gazi545454/Chroma",
+  "slug": "gazi545454-chroma",
+  "author": "Gazi545454",
+  "url": "https://huggingface.co/Gazi545454/Chroma",
+  "created_at": "2026-10-05T21:25:43.000Z",
+  "updated_at": "2026-10-05T21:25:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-generation",
+    "chroma",
+    "not-for-all-audiences",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1291655325947,
+  "storage_human": "1291.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chroma AI Image Generator | Stylised Text‑to‑Image on CharGen",
+      "url": "https://char-gen.com/models/image/chroma",
+      "snippet": "Create stylised, fantasy, and experimental AI images with Chroma, the open-weight lodestones model, on CharGen for 4 gold per image. Text‑to‑image generation for bold concepts and distinctive styles."
+    },
+    {
+      "title": "Google Chrome has been silently pushing a 4GB AI model to ... - TechSpot",
+      "url": "https://www.techspot.com/news/112309-google-chrome-has-silently-pushing-4gb-ai-model.html",
+      "snippet": "Software Google chrome google gemini Google Chrome has been silently pushing a 4GB AI model to your device without asking The browser automatically redownloads Gemini Nano files if users delete ..."
+    },
+    {
+      "title": "AI in Chrome: help right where you need it - Google",
+      "url": "https://www.google.com/chrome/ai-innovations/",
+      "snippet": "Explore the next generation of AI in Chrome, with features in privacy and security, performance, productivity, and accessibility with generative AI to make it easier and more efficient to browse."
+    },
+    {
+      "title": "GitHub - FlashLabs-AI-Corp/FlashLabs-Chroma: Worlds first open-source ...",
+      "url": "https://github.com/FlashLabs-AI-Corp/FlashLabs-Chroma",
+      "snippet": "Chroma 1.0 is an advanced multimodal model developed by FlashLabs. It is designed to understand and generate content across multiple modalities, including text and audio. As a virtual human model, Chroma possesses the ability to process auditory inputs and respond with both text and synthesized speech, enabling natural voice interactions."
+    },
+    {
+      "title": "Google Chrome may have silently installed 4GB AI model on your computer ...",
+      "url": "https://www.snopes.com/fact-check/google-chrome-ai-installed-computer/",
+      "snippet": "Google Chrome may have silently installed 4GB AI model on your computer. Here&#x27;s how to check We tested our own computers to see if the model was present."
+    }
+  ]
+}

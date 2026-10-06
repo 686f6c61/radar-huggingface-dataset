@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mchen04/lfm2.5-audio-1.5b-mlx-delegate",
+  "slug": "mchen04-lfm2-5-audio-1-5b-mlx-delegate",
+  "author": "mchen04",
+  "url": "https://huggingface.co/mchen04/lfm2.5-audio-1.5b-mlx-delegate",
+  "created_at": "2026-10-05T04:16:20.000Z",
+  "updated_at": "2026-10-06T01:36:27.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lfm2-audio",
+    "lora",
+    "speech-to-speech",
+    "tool-calling",
+    "delegation",
+    "streaming",
+    "apple-silicon",
+    "experimental",
+    "audio-to-audio",
+    "en",
+    "dataset:openai/gsm8k",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:LiquidAI/LFM2.5-Audio-1.5B",
+    "base_model:adapter:LiquidAI/LFM2.5-Audio-1.5B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 153963457,
+  "storage_human": "154 MB",
+  "base_model": "LiquidAI/LFM2.5-Audio-1.5B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bnp格式怎么打开 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/557738763.html",
+      "snippet": "bnp格式文件可以通过以下方式打开： 在电脑上安装暴风影音等视频播放软件播放。 可以通过 会声会影 转换为常用的格式在手机上观 …"
+    },
+    {
+      "title": "如何在电脑上打开数码相机中BNP格式的文件_百度知道",
+      "url": "https://zhidao.baidu.com/question/337414688.html",
+      "snippet": "bnp文件，一般是索尼DV拍摄的视频文件，另外还有一些，inp int等格式的。 1、打开方式是比较简单的，bnp文件在电脑上安装暴风 …"
+    },
+    {
+      "title": "BNP是什么检查项目_有问必答_快速问医生",
+      "url": "https://www.120ask.com/zhishi/1087129.html",
+      "snippet": "BNP是什么检查项目 更新时间：2025-08-22 16:18:27 BNP 一般是指脑钠肽检查项目，是一种用于评估心脏功能的重要血液检测指标 …"
+    },
+    {
+      "title": "服装打版的常用的代表符号是 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/542320302.html",
+      "snippet": "后颈点 BNP (Back Neck Point) 肩峰点 SP (Shoulder Point) 袖窿 AH (Arm Hole) 头围 HS （Head Side） 前中心线 FC (Front Center) …"
+    },
+    {
+      "title": "DB,BNP,SG,ABN以及ING都是外国什么银行的缩写？_百度知道",
+      "url": "https://zhidao.baidu.com/question/531490438874363445.html",
+      "snippet": "Sep 1, 2024 · 1. DB代表德意志银行（Deutsche Bank）。 2. BNP代表法国巴黎银行（BNP Paribas）。 3. SG代表法国兴业银 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "AILogDev",
   "url": "https://huggingface.co/AILogDev/sbv2-coreml-common",
   "created_at": "2026-10-04T05:45:47.000Z",
-  "updated_at": "2026-10-05T00:22:48.000Z",
+  "updated_at": "2026-10-05T11:46:23.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,7 +16,6 @@
   "tags": [
     "coreml",
     "style-bert-vits2",
-    "quantized",
     "ja",
     "base_model:ku-nlp/deberta-v2-large-japanese-char-wwm",
     "base_model:quantized:ku-nlp/deberta-v2-large-japanese-char-wwm",
@@ -24,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

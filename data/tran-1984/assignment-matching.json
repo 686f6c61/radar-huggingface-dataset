@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tran-1984/assignment-matching",
+  "slug": "tran-1984-assignment-matching",
+  "author": "tran-1984",
+  "url": "https://huggingface.co/tran-1984/assignment-matching",
+  "created_at": "2026-10-05T20:48:03.000Z",
+  "updated_at": "2026-10-05T20:48:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.tt/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "TRAN – Traiteur et restaurant asiatique à Dijon, Rennes et Angers",
+      "url": "https://traiteur-tran.com/",
+      "snippet": "TRAN TRAN, c’est notre nom de famille mais aussi le nom que nous avons voulu donner à notre enseigne. Notre enseigne cristallise …"
+    },
+    {
+      "title": "Notre carte – TRAN",
+      "url": "https://traiteur-tran.com/notre-carte/",
+      "snippet": "Salade Thaï 3.00 € Bo Bun 8.50 € Nem Porc & Légumes 2.10 € Nem Légumes 2.00 € Nem Poulet 2.10 € Nem Crevette & Poulet …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translate",
+      "snippet": "Traduisez des textes et des documents complets en un instant. Des traductions précises accessibles aux utilisateurs uniques et aux …"
+    },
+    {
+      "title": "Tran — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tran",
+      "snippet": "Tran Cette répertorie les différents sujets et articles portant le même nom. Tran est un patronyme et un toponyme pouvant désigner :"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SOR-ColdBrew-12B-Think-RP-Base-GGUF",
+  "slug": "mradermacher-sor-coldbrew-12b-think-rp-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SOR-ColdBrew-12B-Think-RP-Base-GGUF",
+  "created_at": "2026-10-05T21:36:24.000Z",
+  "updated_at": "2026-10-05T23:00:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "en",
+    "base_model:SvalTek/SOR-ColdBrew-12B-Think-RP-Base",
+    "base_model:quantized:SvalTek/SOR-ColdBrew-12B-Think-RP-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247813120,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692512800,
+  "storage_human": "84.7 GB",
+  "base_model": "SvalTek/SOR-ColdBrew-12B-Think-RP-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Météo Paris 75000 – Prévisions à 15 jours fiables",
+      "url": "https://www.meteo-paris.com/",
+      "snippet": "21 hours ago · Professionnel et gratuit, meteo-paris.com est sans doute l'un des sites météo les plus réactifs du web (surveillance …"
+    },
+    {
+      "title": "Prévisions météo détaillées à 15 jours pour Paris - meteo-paris.com",
+      "url": "https://www.meteo-paris.com/ile-de-france/previsions",
+      "snippet": "21 hours ago · Consultez la météo à 15 jours à Paris : températures jour par jour, risques de pluie, vent, et fiabilité des prévisions. …"
+    },
+    {
+      "title": "Météo Paris : prévisions heure par heure sur plus de 15 jours",
+      "url": "https://www.meteo-paris.com/meteo-8-jours/paris-75000",
+      "snippet": "Consultez la météo heure par heure à Paris : températures, pluie, vent… Données détaillées sur plus de 15 jours pour planifier vos …"
+    },
+    {
+      "title": "Le premier site météo pour l'île-de-France - meteo-paris.com",
+      "url": "https://www.meteo-paris.com/chronique",
+      "snippet": "Outre le fait qu'il s'agisse du premier site météo pour l'ensemble de Ile-de-France (et non pour la seule capitale) avec des prévisions …"
+    },
+    {
+      "title": "Grêle géante, rafales destructrices, possible tornade - meteo-paris.com",
+      "url": "https://www.meteo-paris.com/actualites/grele-geante-rafales-destructrices-possible-tornade-le-week-end-orageux-a-frappe-fort",
+      "snippet": "Jun 29, 2026 · Le week-end des 27 et 28 juin 2026 a été marqué par de violents orages en France, avec rafales supérieures à 145 …"
+    }
+  ]
+}

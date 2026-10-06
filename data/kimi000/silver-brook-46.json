@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimi000/silver-brook-46",
+  "slug": "kimi000-silver-brook-46",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/silver-brook-46",
+  "created_at": "2026-10-05T22:58:43.000Z",
+  "updated_at": "2026-10-05T23:00:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976634532,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_(AI)",
+      "snippet": "Kimi is an artificial intelligence (AI) chatbot and series of large language models developed by Chinese company Moonshot AI. Its Kimi K3, released July 2026, is the largest open weights model at 2.8 trillion parameters. Moonshot releases the Kimi series of open weights large language models, available via web, API, and the Kimi Code command-line agent. These are capable of multimodal image ..."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more"
+    },
+    {
+      "title": "kimi000 (jack) - Hugging Face",
+      "url": "https://huggingface.co/kimi000",
+      "snippet": "User profile of jack on Hugging Face"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Hugging Bay is the open-model catalog for public open LLMs, models, datasets, apps, evals, and hosted files."
+    }
+  ]
+}

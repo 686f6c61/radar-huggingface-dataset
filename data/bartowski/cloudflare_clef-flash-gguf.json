@@ -5,7 +5,7 @@
   "author": "bartowski",
   "url": "https://huggingface.co/bartowski/Cloudflare_clef-flash-GGUF",
   "created_at": "2026-10-01T17:22:00.000Z",
-  "updated_at": "2026-10-01T17:40:27.000Z",
+  "updated_at": "2026-10-05T20:47:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,13 +31,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 37,
+  "likes": 38,
   "downloads_30d": 12661,
-  "trending_score": 37,
-  "parameters": 8953803264,
-  "parameters_human": "8.95B",
-  "storage_bytes": 139933891616,
-  "storage_human": "139.9 GB",
+  "trending_score": 38,
+  "parameters": 9075566084,
+  "parameters_human": "9.08B",
+  "storage_bytes": 262978058080,
+  "storage_human": "263.0 GB",
   "base_model": "Cloudflare/clef-flash",
   "formats": [
     "gguf"

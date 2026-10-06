@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "podismine/qwen3-4b-l34816-awq-frame-anchors",
+  "slug": "podismine-qwen3-4b-l34816-awq-frame-anchors",
+  "author": "podismine",
+  "url": "https://huggingface.co/podismine/qwen3-4b-l34816-awq-frame-anchors",
+  "created_at": "2026-10-05T20:48:05.000Z",
+  "updated_at": "2026-10-05T20:53:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "quantization",
+    "awq",
+    "mixed-precision",
+    "research-artifact",
+    "base_model:Qwen/Qwen3-4B-Thinking-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Thinking-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32339717749,
+  "storage_human": "32.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Thinking-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3 - openlm.ai",
+      "url": "https://openlm.ai/qwen3/",
+      "snippet": "We are excited to announce the release of Qwen3, the latest addition to the Qwen family of large language models. These models represent our most advanced and intelligent systems to date, improving from our experience in building QwQ and Qwen2.5. We are making the weights of Qwen3 available to the public, including both dense and Mixture-of-Expert (MoE) models."
+    },
+    {
+      "title": "Qwen/Qwen3-4B-AWQ · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B-AWQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhishekchohan/Qwen3-4B-AWQ · Hugging Face",
+      "url": "https://huggingface.co/abhishekchohan/Qwen3-4B-AWQ",
+      "snippet": "Qwen3 AWQ Quantized Model Collection This repository provides AWQ (Activation-aware Weight Quantization) versions of Qwen3 models, optimized for efficient deployment on consumer hardware while maintaining strong performance."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2505.09388",
+      "snippet": "Abstract In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    }
+  ]
+}

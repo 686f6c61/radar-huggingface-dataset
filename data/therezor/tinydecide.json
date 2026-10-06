@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "TheREZOR/TinyDecide",
+  "slug": "therezor-tinydecide",
+  "author": "TheREZOR",
+  "url": "https://huggingface.co/TheREZOR/TinyDecide",
+  "created_at": "2026-10-05T09:58:35.000Z",
+  "updated_at": "2026-10-05T15:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tiny",
+    "embedded",
+    "esp32",
+    "microcontroller",
+    "decision-model",
+    "calibration",
+    "zero-shot",
+    "information-extraction",
+    "4-bit",
+    "javascript",
+    "python",
+    "rust",
+    "arduino",
+    "zero-shot-classification",
+    "en",
+    "base_model:google/electra-small-discriminator",
+    "base_model:finetune:google/electra-small-discriminator",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41598384,
+  "storage_human": "42 MB",
+  "base_model": "google/electra-small-discriminator",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheREZOR/TinyDecide · Hugging Face",
+      "url": "https://huggingface.co/TheREZOR/TinyDecide",
+      "snippet": "Try it in your browser · Quick start · Benchmarks TinyDecide reads one message and answers any number of questions about it. You write the questions in plain English when you call it. It returns a probability for every answer and does not generate text, so one encoder pass answers every question at once. The whole model is 6.2 MB."
+    },
+    {
+      "title": "TheREZOR (Roman REZOR) - Hugging Face",
+      "url": "https://huggingface.co/TheREZOR/models",
+      "snippet": "TheREZOR&#x27;s models3 Sort: Recently updated TheREZOR/TinyTalk-2-GGUF Text Generation • 19.2M•Updated 17 days ago• 212"
+    },
+    {
+      "title": "GitHub - therezor/cardputer-ai: Fully offline tiny LLM chatbot on the ...",
+      "url": "https://github.com/therezor/cardputer-ai",
+      "snippet": "Made by REZOR (@therezor). How the media was made: the screens come from the firmware&#x27;s own UI and chat code, run in a pixel-exact simulator with the real embedded model. Every step is timed at the measured on-device speed. The bot&#x27;s words are unedited model output. We picked the best random seed per scene, just like picking the best take."
+    },
+    {
+      "title": "7 Small But Powerful AI Models You Can Run Locally on Your System — No ...",
+      "url": "https://firethering.com/small-powerful-ai-models-run-locally/",
+      "snippet": "Most small AI models come with a catch. They&#x27;re either too slow, too limited, or need hardware that feels impractical. But a handful of models have changed that conversation completely, they&#x27;re small enough to run locally, capable enough to outperform models like GPT-4o on specific tasks. I went through the benchmarks, the docs, and the community feedback on dozens of models to find the ones ..."
+    },
+    {
+      "title": "Releases · therezor/cardputer-ai - GitHub",
+      "url": "https://github.com/therezor/cardputer-ai/releases",
+      "snippet": "Launcher installs of cardputer_ai_2.0.bin still work, but if boot logs show ~17 MB/s instead of ~30, the bootloader is still DIO. License note: the embedded model inherits CC BY-NC-SA 4.0 (non-commercial) from its training data — see NOTICE.md."
+    }
+  ]
+}

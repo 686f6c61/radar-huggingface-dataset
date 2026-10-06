@@ -5,7 +5,7 @@
   "author": "samuelolubukun",
   "url": "https://huggingface.co/samuelolubukun/moonshine-tiny-yoruba-openbible",
   "created_at": "2026-10-04T20:57:37.000Z",
-  "updated_at": "2026-10-04T21:22:54.000Z",
+  "updated_at": "2026-10-05T05:49:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,12 +32,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 55,
   "trending_score": 0,
   "parameters": 27097344,
   "parameters_human": "27.1M",
-  "storage_bytes": 57033087,
-  "storage_human": "57 MB",
+  "storage_bytes": 58018267,
+  "storage_human": "58 MB",
   "base_model": "UsefulSensors/moonshine-tiny",
   "formats": [
     "safetensors"

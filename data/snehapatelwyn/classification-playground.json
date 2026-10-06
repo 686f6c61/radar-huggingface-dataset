@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "snehapatelwyn/classification-playground",
+  "slug": "snehapatelwyn-classification-playground",
+  "author": "snehapatelwyn",
+  "url": "https://huggingface.co/snehapatelwyn/classification-playground",
+  "created_at": "2026-10-05T21:31:09.000Z",
+  "updated_at": "2026-10-05T21:31:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classifier Playground",
+      "url": "https://classifier-playground.streamlit.app/",
+      "snippet": "In this interactive playground, you can explore the capabilities of multiple AI and ML models for classifying data. To begin, create your own dataset using the options provided in the side menu. Once your dataset is ready, you can select a ML model to train and test on the data. The model will learn from the patterns and relationships within the dataset to make predictions and classify new ..."
+    },
+    {
+      "title": "snehapatelwyn (Sneha Patel) - Hugging Face",
+      "url": "https://huggingface.co/snehapatelwyn",
+      "snippet": "transfer learning, drug discovery, fine-tuning, knowledge distillation, vector databases"
+    },
+    {
+      "title": "Interactive Machine Learning Playground | Train ML Models in Your ...",
+      "url": "https://mlhive.com/playground/machine-learning",
+      "snippet": "7 Interactive Tools Machine Learning Playground Train classic machine learning models directly in your browser. Tweak hyperparameters, visualize decision boundaries and regression lines, and watch optimization converge in real time — no setup, no installation required."
+    },
+    {
+      "title": "Playground — Run AI models in your browser | CanIRun.ai",
+      "url": "https://www.canirun.ai/playground",
+      "snippet": "Run AI models directly in your browser with WebGPU acceleration. Chat with local LLMs, switch models, and keep your conversations private."
+    },
+    {
+      "title": "AI Playground - Free.ai",
+      "url": "https://free.ai/playground/",
+      "snippet": "The AI Playground is an interactive interface for testing AI models with full control over parameters. You can choose any model, adjust temperature and max tokens, add system prompts, and see raw model output with token usage statistics."
+    }
+  ]
+}

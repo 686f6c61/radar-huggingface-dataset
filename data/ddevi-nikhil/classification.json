@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ddevi-nikhil/classification",
+  "slug": "ddevi-nikhil-classification",
+  "author": "Ddevi-nikhil",
+  "url": "https://huggingface.co/Ddevi-nikhil/classification",
+  "created_at": "2026-10-05T22:38:26.000Z",
+  "updated_at": "2026-10-05T22:38:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified",
+      "snippet": "aklein4/oloop-instruct_ablate-scales. Updated in about 23 hours · Ddevi-nikhil/classification ... zomi-language-ai/nllb-200-distilled-600M-finetuned-zol_Latn ..."
+    },
+    {
+      "title": "Nikhil Naik - MIT",
+      "url": "https://web.mit.edu/naik/www/",
+      "snippet": "I am an AI Research Scientist at Meta Superintelligence Labs working on LLMs. Previously, I was a Principal Research Scientist at Salesforce Research."
+    },
+    {
+      "title": "Effects of AI and Logic-Style Explanations on Users' Decisions ...",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3588320",
+      "snippet": "The results show that user uncertainty and AI correctness on predictions significantly affected users' classification decisions considering the analyzed metrics ..."
+    },
+    {
+      "title": "CIFAKE: Image Classification and Explainable Identification of AI ...",
+      "url": "https://www.semanticscholar.org/paper/CIFAKE%3A-Image-Classification-and-Explainable-of-Bird-Lotfi/fa909cf865f4233d8e49aa961a5e02c904b49145",
+      "snippet": "This study proposes the use of a Convolutional Neural Network to classify AI-generated images into two categories; Real or Fake, and implements explainable ..."
+    },
+    {
+      "title": "Explainable artificial intelligence for medical imaging systems using ...",
+      "url": "https://link.springer.com/article/10.1007/s10586-025-05281-5",
+      "snippet": "31.07.2025 ... Dermatology: Explainability in Skin Lesion Classification In dermatology, AI-driven models ... Smilkov, Daniel, Thorat, Nikhil, Kim, Been ..."
+    }
+  ]
+}

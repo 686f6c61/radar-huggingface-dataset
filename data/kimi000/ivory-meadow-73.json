@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kimi000/ivory-meadow-73",
+  "slug": "kimi000-ivory-meadow-73",
+  "author": "kimi000",
+  "url": "https://huggingface.co/kimi000/ivory-meadow-73",
+  "created_at": "2026-10-05T22:56:01.000Z",
+  "updated_at": "2026-10-05T22:58:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-base-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-base-4B",
+    "license:other",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3875544576,
+  "parameters_human": "3.88B",
+  "storage_bytes": 15976494693,
+  "storage_human": "16.0 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-base-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kimi (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kimi_(AI)",
+      "snippet": "Kimi is an artificial intelligence (AI) chatbot and series of large language models developed by Chinese company Moonshot AI. Its Kimi K3, released July 2026, is the largest open weights model at 2.8 trillion parameters. Moonshot releases the Kimi series of open weights large language models, available via web, API, and the Kimi Code command-line agent. These are capable of multimodal image ..."
+    },
+    {
+      "title": "moonshotai/Kimi-K2-Base · Hugging Face",
+      "url": "https://huggingface.co/moonshotai/Kimi-K2-Base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kimi AI Models: See What Each One Can Do",
+      "url": "https://www.kimi.ai/ai-models/",
+      "snippet": "Explore Kimi&#x27;s latest AI models, compare their capabilities and strengths, and find the right model for coding, research, creation, and complex work."
+    },
+    {
+      "title": "What Is Kimi? The Complete Guide to Moonshot AI&#x27;s Chatbot and Models",
+      "url": "https://emergent.sh/learn/what-is-kimi",
+      "snippet": "Learn what Kimi is, from Moonshot AI&#x27;s founding story and model release timeline to K2.6 benchmarks, Agent Swarm, Kimi Work, pricing, and how it compares to ChatGPT and Claude."
+    },
+    {
+      "title": "Kimi API: API Key, Model List, Pricing ($3/$15), Base URL, and Setup ...",
+      "url": "https://www.morphllm.com/kimi-api",
+      "snippet": "Kimi API: Moonshot&#x27;s Endpoint, Model List, and Pricing (September 2026) The Kimi API is Moonshot AI&#x27;s endpoint at https://api.moonshot.ai, with three protocols: OpenAI Chat Completions and Responses on /v1, and Anthropic Messages on /anthropic."
+    }
+  ]
+}

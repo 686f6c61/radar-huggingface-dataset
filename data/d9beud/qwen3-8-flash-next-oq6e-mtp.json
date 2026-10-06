@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "d9beuD/Qwen3.8-Flash-Next-oQ6e-mtp",
+  "slug": "d9beud-qwen3-8-flash-next-oq6e-mtp",
+  "author": "d9beuD",
+  "url": "https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ6e-mtp",
+  "created_at": "2026-10-05T19:25:59.000Z",
+  "updated_at": "2026-10-05T19:41:30.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "oqe",
+    "imatrix",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 150442515119,
+  "storage_human": "150.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV gratuit et complet - Programme TNT ce soir - Téléobs",
+      "url": "https://programme-tv.nouvelobs.com/",
+      "snippet": "Retrouvez le programme TV gratuit et complet ce soir du cable du satellite et de l'adsl, les programmes TV et programme TNT sur …"
+    },
+    {
+      "title": "Programme tv ce soir toutes les chaînes - Téléobs",
+      "url": "https://programme-tv.nouvelobs.com/programme-toutes-les-chaines/",
+      "snippet": "Retrouvez le programme tv ce soir toutes les chaînes, les programmes TV et Toutes les chaines sur plusieurs jours des principales …"
+    },
+    {
+      "title": "Programme TV maintenant - Programme TV en ce moment - Téléobs",
+      "url": "https://programme-tv.nouvelobs.com/programme-tnt/maintenant.php",
+      "snippet": "Pain, blé, gluten : on déguste ! 21.00 Belgomania, toute la Belgique qu'on aime ! 21.05 Droit ou pas droit ? 00.00 Les Français, …"
+    },
+    {
+      "title": "Programme Bouygues gratuit et complet - Téléobs",
+      "url": "https://programme-tv.nouvelobs.com/programme-bouygues/",
+      "snippet": "Retrouvez le programme TV Bouygues, les programmes TV et Bouygues sur plusieurs jours des principales chaînes de télé …"
+    },
+    {
+      "title": "Programme Toutes les chaines maintenant - Téléobs",
+      "url": "https://programme-tv.nouvelobs.com/programme-toutes-les-chaines/maintenant.php",
+      "snippet": "Les As de la jungle à la rescousse ! 21.00 Belgomania, toute la Belgique qu'on aime ! 21.05 Droit ou pas droit ? 20.40 Primaires, une …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "senku21x/mot-conditional-misalignment",
+  "slug": "senku21x-mot-conditional-misalignment",
+  "author": "senku21x",
+  "url": "https://huggingface.co/senku21x/mot-conditional-misalignment",
+  "created_at": "2026-10-05T21:37:17.000Z",
+  "updated_at": "2026-10-05T21:37:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model-organism",
+    "emergent-misalignment",
+    "interpretability",
+    "ai-safety",
+    "lora",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4372157410,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "senku21x (Vishesh Gupta) - Hugging Face",
+      "url": "https://huggingface.co/senku21x",
+      "snippet": "Recent Activity updated a model14 days ago senku21x/cot-oracle-jlens published a model14 days ago senku21x/cot-oracle-jlens updated a dataset18 days ago senku21x/qwen3-8b-nla-multilayer-L19-29 View all activity"
+    },
+    {
+      "title": "senku21x · GitHub",
+      "url": "https://github.com/senku21x",
+      "snippet": "GitHub is where senku21x builds software. Follow Joined Jul 8, 2026 Block or report user Block or report senku21x Block user"
+    },
+    {
+      "title": "[2604.25891] Conditional misalignment: common interventions can hide ...",
+      "url": "https://arxiv.org/abs/2604.25891",
+      "snippet": "Finetuning a language model can lead to emergent misalignment (EM) [Betley et al., 2025b]. Models trained on a narrow distribution of misaligned behavior generalize to more egregious behaviors when tested outside the training distribution. We study a set of interventions proposed to reduce EM. We confirm that these interventions reduce or eliminate EM on existing evaluations (questions like ..."
+    },
+    {
+      "title": "Our framework for reporting model misalignment - OpenAI",
+      "url": "https://openai.com/index/model-misalignment-reporting-framework/",
+      "snippet": "OpenAI shares a framework for tracking, investigating, and disclosing model misalignment, alongside six reports of unexpected or concerning model behavior."
+    },
+    {
+      "title": "Conditional misalignment: Mitigations can hide EM behind contextual",
+      "url": "https://www.lesswrong.com/posts/vaJC7kPbfMW5CnyLR/conditional-misalignment-mitigations-can-hide-em-behind-1",
+      "snippet": "This is the abstract, introduction, and discussion of our new paper. We study three popular mitigations for emergent misalignment (EM) — diluting misaligned data with benign data, post-hoc HHH finetuning, and inoculation prompting — and show that each can leave behind conditional misalignment: the model reverts to broadly misaligned behavior when prompts contain cues from the misaligned ..."
+    }
+  ]
+}

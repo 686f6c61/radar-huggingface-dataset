@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "gdelacasa/slm-autonomo-nemotron4b-lora",
+  "slug": "gdelacasa-slm-autonomo-nemotron4b-lora",
+  "author": "gdelacasa",
+  "url": "https://huggingface.co/gdelacasa/slm-autonomo-nemotron4b-lora",
+  "created_at": "2026-10-05T22:58:23.000Z",
+  "updated_at": "2026-10-05T22:58:55.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "distillation",
+    "llama",
+    "slm",
+    "uai",
+    "text-generation",
+    "es",
+    "base_model:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "base_model:adapter:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121694576,
+  "storage_human": "122 MB",
+  "base_model": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemotron - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Nemotron",
+      "snippet": "Nemotron is a family of open-source large language models developed by NVIDIA designed for building specialized artificial intelligence agents with advanced reasoning capabilities. The family spans multiple generations and model sizes, from the original Nemotron-4 series released in 2024 through the Nemotron 3 family introduced in late 2025, and encompasses models ranging from compact 3 ..."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Nvidia building 1-trillion-parameter Nemotron 4 to rival open AI models ...",
+      "url": "https://www.reuters.com/business/nvidia-is-developing-nemotron-4-open-source-models-information-reports-2026-08-11/",
+      "snippet": "Nvidia is developing a new AI model family, Nemotron 4, with the goal of challenging top open-source models globally, The Information reported on Tuesday, citing people who work on the project."
+    },
+    {
+      "title": "nvidia/Nemotron-Mini-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/nvidia/Nemotron-Mini-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run NVIDIA Nemotron-3 Nano 4B Locally — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-nvidia-nemotron-3-nano-4b-local-deployment-guide",
+      "snippet": "Step-by-step tutorial to deploy NVIDIA Nemotron-3 Nano 4B locally. Learn installation, quantization, and inference using Python and vLLM."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "local-inference-lab",
   "url": "https://huggingface.co/local-inference-lab/GLM-5.3-Flash-NVFP4-MXFP8-CSF-QAD",
   "created_at": "2026-10-03T23:40:51.000Z",
-  "updated_at": "2026-10-05T00:23:35.000Z",
+  "updated_at": "2026-10-05T14:57:54.000Z",
   "license": "lil-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -16,6 +16,7 @@
   ],
   "tags": [
     "safetensors",
+    "glm5_next",
     "quantized",
     "nvfp4",
     "mxfp8",
@@ -31,7 +32,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 2,
+  "likes": 3,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

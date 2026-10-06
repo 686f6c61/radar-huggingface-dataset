@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "krisclarkdev/Qwen3.8-27B-TURBO-DF735-882-NM-DAU-GPTQ-Int4-g64",
+  "slug": "krisclarkdev-qwen3-8-27b-turbo-df735-882-nm-dau-gptq-int4-g64",
+  "author": "krisclarkdev",
+  "url": "https://huggingface.co/krisclarkdev/Qwen3.8-27B-TURBO-DF735-882-NM-DAU-GPTQ-Int4-g64",
+  "created_at": "2026-10-05T19:32:04.000Z",
+  "updated_at": "2026-10-05T19:33:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "gptq",
+    "int4",
+    "w4a16",
+    "text-generation",
+    "speculative-decoding",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20054576511,
+  "storage_human": "20.1 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/reddeadredemption on Reddit: BrattySis",
+      "url": "https://www.reddit.com/r/reddeadredemption/comments/esdfu6/brattysis/",
+      "snippet": "Jan 22, 2020 · Posted by u/bigbaddyjuice - 12 votes and 1 comment"
+    },
+    {
+      "title": "Bratty sis : r/memes - Reddit",
+      "url": "https://www.reddit.com/r/memes/comments/amnxgp/bratty_sis/",
+      "snippet": "Feb 3, 2019 · 204 votes, 12 comments. 28M subscribers in the memes community. Memes! A way of describing cultural information …"
+    },
+    {
+      "title": "Registration - CyberBreach",
+      "url": "https://cyberbreach.io/register/",
+      "snippet": "Assistenza 24/24 Download, streaming, Mugiwara IPTV: se qualcosa non va, ti rispondiamo su Telegram."
+    },
+    {
+      "title": "BrattySis – Lacy Lennon, Liz Jordan – Simon Says With ... - Reddit",
+      "url": "https://www.reddit.com/r/MAVD/comments/sl36ck/brattysis_lacy_lennon_liz_jordan_simon_says_with/",
+      "snippet": "Feb 5, 2022 · BrattySis – Lacy Lennon, Liz Jordan – Simon Says With Redhead Stepsis 0 comments Best Add a Comment"
+    },
+    {
+      "title": "Bratty Sis! : r/meme - Reddit",
+      "url": "https://www.reddit.com/r/meme/comments/hbvs5e/bratty_sis/",
+      "snippet": "Jun 19, 2020 · 1.2K votes, 23 comments. 2.4M subscribers in the meme community. r/meme is a place to share memes. We're fairly …"
+    }
+  ]
+}

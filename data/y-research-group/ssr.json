@@ -5,13 +5,14 @@
   "author": "Y-Research-Group",
   "url": "https://huggingface.co/Y-Research-Group/SSR",
   "created_at": "2026-09-27T16:23:09.000Z",
-  "updated_at": "2026-09-27T16:28:35.000Z",
+  "updated_at": "2026-10-05T16:24:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
+    "safetensors",
     "license:apache-2.0",
     "region:us"
   ],
@@ -20,10 +21,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1074546997,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 1563036197,
+  "storage_human": "1.6 GB",
   "base_model": null,
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

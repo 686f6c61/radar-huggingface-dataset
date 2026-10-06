@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Popcomanescuvasile123/vanity-address-generator",
+  "slug": "popcomanescuvasile123-vanity-address-generator",
+  "author": "Popcomanescuvasile123",
+  "url": "https://huggingface.co/Popcomanescuvasile123/vanity-address-generator",
+  "created_at": "2026-10-05T20:46:58.000Z",
+  "updated_at": "2026-10-05T20:55:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1inch/profanity2: Vanity address generator for Ethereum - GitHub",
+      "url": "https://github.com/1inch/profanity2",
+      "snippet": "Vanity address generator for Ethereum. Contribute to 1inch/profanity2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Bitcoin & multichain vanity address generator | Vanito",
+      "url": "https://vanito.org/",
+      "snippet": "Generate personalized Bitcoin, BCH, BSV, eCash, Litecoin and other crypto addresses locally in your browser. Free, with no private keys sent to the server."
+    },
+    {
+      "title": "Vanity Address Generator | Best Vanity - Custom BTC, ETH, SOL & More",
+      "url": "http://www.vanity.best/",
+      "snippet": "Generate custom vanity crypto addresses for Bitcoin, Ethereum, Solana, Polygon, BSC, and 10+ chains. Fast, secure, client-side generator. No server storage, private ..."
+    },
+    {
+      "title": "Vanity Address Generator | EVMScope",
+      "url": "https://evmscope.com/tools/vanity",
+      "snippet": "Generate Ethereum vanity addresses with custom prefixes or suffixes. Multi-threaded browser-based generator using CREATE2 for contract addresses."
+    },
+    {
+      "title": "GitHub - iceBlockWare/profanity2: Vanity address generator for Ethereum",
+      "url": "https://github.com/iceBlockWare/profanity2",
+      "snippet": "Vanity address generator for Ethereum. Contribute to iceBlockWare/profanity2 development by creating an account on GitHub."
+    }
+  ]
+}

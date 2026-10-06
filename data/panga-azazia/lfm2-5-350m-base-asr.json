@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Panga-Azazia/LFM2.5-350M-Base-ASR",
+  "slug": "panga-azazia-lfm2-5-350m-base-asr",
+  "author": "Panga-Azazia",
+  "url": "https://huggingface.co/Panga-Azazia/LFM2.5-350M-Base-ASR",
+  "created_at": "2026-10-05T20:04:31.000Z",
+  "updated_at": "2026-10-05T20:05:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:LiquidAI/LFM2.5-350M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-350M-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 708984464,
+  "storage_human": "709 MB",
+  "base_model": "LiquidAI/LFM2.5-350M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poisson le panga : sain ou à éviter ? - InSens Restaurant",
+      "url": "https://www.insens-restaurant.fr/poisson-le-panga-sain-ou-a-eviter/",
+      "snippet": "Sep 9, 2025 · Le panga est un poisson que l’on retrouve de plus en plus souvent dans les assiettes, surtout sous forme de filets …"
+    },
+    {
+      "title": "Pangasianodon hypophthalmus — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pangasianodon_hypophthalmus",
+      "snippet": "Il est généralement commercialisé sous le nom de panga en Europe, mais ce terme peut aussi désigner d'autres espèces. Bien qu'il …"
+    },
+    {
+      "title": "Prudence avec le panga - Observatoire des aliments",
+      "url": "https://observatoire-des-aliments.fr/qualite/prudence-avec-le-panga",
+      "snippet": "Feb 20, 2014 · Le panga (Pangasius hypophthalmus), de la famille des poissons chat, est un poisson d’élevage très peu cher que …"
+    },
+    {
+      "title": "Est-ce vraiment le pire poisson? Est-il sûr de le consommer?",
+      "url": "https://reves-et-dragees.fr/est-ce-vraiment-le-pire-poisson-est-il-sur-de-le-consommer/",
+      "snippet": "May 12, 2025 · Le panga est l'un des Poisson plus controversé pour la santé que nous pouvons trouver dans le supermarché. C'est …"
+    },
+    {
+      "title": "Panga - Le guide du WWF sur les produits de la mer",
+      "url": "https://www.consoguidepoisson.fr/species/pangasius-spp/",
+      "snippet": "Le panga présente une croissance lente et atteint la maturité sexuelle à l’âge de 2 ans (pour les mâles) ou 3 ans (pour les femelles). …"
+    }
+  ]
+}

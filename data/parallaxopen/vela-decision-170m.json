@@ -5,7 +5,7 @@
   "author": "ParallaxOpen",
   "url": "https://huggingface.co/ParallaxOpen/Vela-Decision-170M",
   "created_at": "2026-10-04T19:13:14.000Z",
-  "updated_at": "2026-10-04T19:15:06.000Z",
+  "updated_at": "2026-10-05T13:35:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": 170569738,
   "parameters_human": "170.6M",

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "r-viot/iml-vit-claims-doc-tamper",
+  "slug": "r-viot-iml-vit-claims-doc-tamper",
+  "author": "r-viot",
+  "url": "https://huggingface.co/r-viot/iml-vit-claims-doc-tamper",
+  "created_at": "2026-10-05T15:43:37.000Z",
+  "updated_at": "2026-10-06T00:25:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "document-tampering",
+    "forgery-detection",
+    "insurance",
+    "iml-vit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2203192996,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The R Project for Statistical Computing",
+      "url": "https://www.r-project.org/",
+      "snippet": "Jun 24, 2026 · The R Project for Statistical Computing Getting Started R is a free software environment for statistical computing and …"
+    },
+    {
+      "title": "R (langage) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R_(langage)",
+      "snippet": "R est un langage de programmation et un logiciel libre destiné aux statistiques et à la science des données soutenu par la R …"
+    },
+    {
+      "title": "Télécharger R (gratuit) Windows, Mac, Linux - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche443673-r-1.html",
+      "snippet": "Pour télécharger R, rendez-vous sur le site du R Project. Vous devez ensuite aller sur la page CRAN. Plusieurs URL classées par …"
+    },
+    {
+      "title": "R-4.6.1 for Windows - The Comprehensive R Archive Network",
+      "url": "https://cran.r-project.org/bin/windows/base/",
+      "snippet": "Patches to this release are incorporated in the r-patched snapshot build. A build of the development version (which will eventually …"
+    },
+    {
+      "title": "R: Documentation",
+      "url": "https://www.r-project.org/other-docs.html",
+      "snippet": "Browsable HTML versions of the manuals, help pages and NEWS for the developing versions of R “ R-patched ” and “ R-devel ”, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "harrischloe/neural-architecture-search-v1",
+  "slug": "harrischloe-neural-architecture-search-v1",
+  "author": "harrischloe",
+  "url": "https://huggingface.co/harrischloe/neural-architecture-search-v1",
+  "created_at": "2026-10-05T21:13:31.000Z",
+  "updated_at": "2026-10-05T21:13:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How To Answer Why You Left Your Last Job (With Examples)",
+      "url": "https://www.indeed.com/career-advice/interviewing/answering-why-you-left-your-last-job",
+      "snippet": "Jun 15, 2026 · In this article, we provide helpful information about answering why you left your last job, including why employers ask …"
+    },
+    {
+      "title": "How to Answer “Reason for Leaving” – 21 Good Reasons",
+      "url": "https://management.org/reason-for-leaving",
+      "snippet": "Feb 19, 2025 · Struggling to answer \"Reason for Leaving\" in interviews? Here are 21 good reasons with examples to help you …"
+    },
+    {
+      "title": "How to Answer Why You Left Your Last Job (With Examples)",
+      "url": "https://bestjobsearchapps.com/articles/en/how-to-answer-why-you-left-your-last-job-with-examples",
+      "snippet": "Deliver a positive, concise response in about 30 seconds that emphasizes growth and new opportunities, while steering clear of …"
+    },
+    {
+      "title": "How to Explain Why You're Leaving Your Job (With Examples)",
+      "url": "https://www.indeed.com/career-advice/interviewing/how-to-explain-your-reasons-for-leaving-a-job",
+      "snippet": "Aug 12, 2026 · This question helps employers understand your career goals, what you value in a workplace and whether you’ll be a …"
+    },
+    {
+      "title": "How To Answer, “Why Did You Leave Your Last Job?” (With Examples)",
+      "url": "https://caffeinatedkyle.com/why-did-you-leave-your-job/",
+      "snippet": "This advice rings true when explaining why you left a job: you don’t want to be dishonest about your departure, as this choice can …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gaabrielfranco/svf-matryoshka",
+  "slug": "gaabrielfranco-svf-matryoshka",
+  "author": "gaabrielfranco",
+  "url": "https://huggingface.co/gaabrielfranco/svf-matryoshka",
+  "created_at": "2026-10-05T21:37:46.000Z",
+  "updated_at": "2026-10-05T22:05:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "mechanistic-interpretability",
+    "causal-abstraction",
+    "gpt2",
+    "mib",
+    "arxiv:2602.13524",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - valeoai/Franca: Official code of Franca: Nested Matryoshka ...",
+      "url": "https://github.com/valeoai/Franca",
+      "snippet": "Valeo.ai, Paris; Fundamental AI Lab, UTN; VIS Lab, University of Amsterdam Welcome to the official codebase for Franca (pronounced Fran-ka), the first fully open-source vision foundation model—including data, code, and pretrained weights. Franca matches or surpasses the performance of leading proprietary models such as DINOv2, CLIP, and SigLIPv2."
+    },
+    {
+      "title": "Franca: Nested Matryoshka Clustering for Scalable Visual Representation ...",
+      "url": "https://paperswithcode.co/paper/2507.14137",
+      "snippet": "Franca, an open-source vision foundation model, achieves high performance using a transparent training pipeline and novel clustering and disentanglement techniques."
+    },
+    {
+      "title": "Franca: Nested Matryoshka Clustering for Scalable Visual Representation ...",
+      "url": "https://sophon.at/papers/franca-nested-matryoshka-clustering-for-scalable-visual-representation-learning",
+      "snippet": "To address this, we introduce a parameter-efficient, multi-head clustering projector based on nested Matryoshka representations. This design progressively refines features into increasingly fine-grained clusters without increasing the model size, enabling both performance and memory efficiency."
+    },
+    {
+      "title": "CVPR Poster Franca: Nested Matryoshka Clustering for Scalable Visual ...",
+      "url": "https://cvpr.thecvf.com/virtual/2026/poster/38433",
+      "snippet": "To address this, we introduce a multi-head clustering projector based on nested Matryoshka representations. This design progressively refines features into increasingly fine-grained clusters without increasing the model size, producing higher-quality dense representations."
+    },
+    {
+      "title": "[2507.14137] Franca: Nested Matryoshka Clustering for Scalable Visual ...",
+      "url": "https://arxiv.org/abs/2507.14137",
+      "snippet": "Our contributions establish a new standard for transparent, high-performance vision models and open a path toward more reproducible and generalizable foundation models for the broader AI community. The code and model checkpoints are available at this https URL."
+    }
+  ]
+}

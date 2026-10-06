@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "d9beuD/Qwen3.8-Flash-Next-oQ2.7-mtp",
+  "slug": "d9beud-qwen3-8-flash-next-oq2-7-mtp",
+  "author": "d9beuD",
+  "url": "https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ2.7-mtp",
+  "created_at": "2026-10-05T21:11:57.000Z",
+  "updated_at": "2026-10-05T21:14:20.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 74095839511,
+  "storage_human": "74.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next: How to Run Locally - unsloth.ai",
+      "url": "https://unsloth.ai/docs/models/qwen3.8-next",
+      "snippet": "Qwen3.8-Flash-Next is a new open-weight, 125B parameter MoE multimodal model from Qwen. Built on the new Qwen4 architecture, it supports a 262K context window and advanced reasoning. Qwen3.8 -Flash-Next outperforms Claude-4.6-Opus (Max) and can run locally on devices with 75GB RAM /unified memory with no GPU VRAM required."
+    },
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Input a message to start chatting with Qwen/Qwen3.8-Flash-Next."
+    },
+    {
+      "title": "How to Run Qwen3.8 Flash Next Locally: GGUF, Hardware and Benchmarks",
+      "url": "https://atomic.chat/blog/guides/how-to-run-qwen-3-8-flash-next-locally",
+      "snippet": "Qwen3.8 Flash Next is an open-weight early preview of the architecture behind Qwen4. It has a 125B main model with 6B active parameters per token. The checkpoint also includes a 51B n-gram embedding table and a 4B MTP head. This guide covers our Atomic Dynamic GGUF builds and the exact setup for Atomic Chat or llama.cpp."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "Qwen3.8-Flash-Next is a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series."
+    }
+  ]
+}

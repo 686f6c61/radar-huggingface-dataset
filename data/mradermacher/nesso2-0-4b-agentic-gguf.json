@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nesso2-0.4B-agentic-GGUF",
+  "slug": "mradermacher-nesso2-0-4b-agentic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nesso2-0.4B-agentic-GGUF",
+  "created_at": "2026-10-05T21:32:49.000Z",
+  "updated_at": "2026-10-05T21:39:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "small-language-model",
+    "slm",
+    "edge-ai",
+    "italian",
+    "bilingual",
+    "function-calling",
+    "agentic",
+    "structured-output",
+    "tool-use",
+    "llama",
+    "nanotron",
+    "trl",
+    "it",
+    "en",
+    "base_model:mii-llm/nesso2-0.4B-agentic",
+    "base_model:quantized:mii-llm/nesso2-0.4B-agentic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 437760960,
+  "parameters_human": "437.8M",
+  "storage_bytes": 4841555328,
+  "storage_human": "4.8 GB",
+  "base_model": "mii-llm/nesso2-0.4B-agentic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/models",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "zagreus-nesso-slm/nesso2 at main · mii-llm/zagreus-nesso-slm",
+      "url": "https://github.com/mii-llm/zagreus-nesso-slm/tree/main/nesso2",
+      "snippet": "Nesso2-.4B-Agentic A ~0.4B bilingual (Italian/English) small language model built for function calling and agentic execution — and, to our knowledge, the strongest open model for Italian agentic tool use in the sub-billion-parameter class."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Hermes Agent Release Notes 2026: v0.4 to v0.10 Tracker",
+      "url": "https://petronellatech.com/blog/hermes-agent-ai-guide-2026",
+      "snippet": "Hermes Agent release notes from Nous Research, v0.4 through v0.10: changelog, tool-call format changes, breaking changes, and GPU upgrade considerations."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chrullis/relweave-4b-base",
+  "slug": "chrullis-relweave-4b-base",
+  "author": "chrullis",
+  "url": "https://huggingface.co/chrullis/relweave-4b-base",
+  "created_at": "2026-10-05T21:29:57.000Z",
+  "updated_at": "2026-10-05T21:55:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "relweave",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "relweave",
+    "safetensors",
+    "relation-extraction",
+    "named-entity-recognition",
+    "coreference",
+    "knowledge-graph",
+    "information-extraction",
+    "peft",
+    "lora",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 550649984,
+  "storage_human": "551 MB",
+  "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome has been silently pushing a 4GB AI model to ... - TechSpot",
+      "url": "https://www.techspot.com/news/112309-google-chrome-has-silently-pushing-4gb-ai-model.html",
+      "snippet": "Software Google chrome google gemini Google Chrome has been silently pushing a 4GB AI model to your device without asking The browser automatically redownloads Gemini Nano files if users delete ..."
+    },
+    {
+      "title": "Chrome&#x27;s 4GB AI Model Is Installed On Millions Of PCs, But Is It ...",
+      "url": "https://www.slashgear.com/2213139/is-google-downloading-4gb-ai-model-for-every-chrome-user-should-you-remove-it/",
+      "snippet": "Is Chrome&#x27;s 4GB AI model actually a problem? We explain the silent installation of Gemini Nano, the weights.bin file, and the privacy controversy."
+    },
+    {
+      "title": "Chrome installed a 4GB AI model on my computer without asking me - MUO",
+      "url": "https://www.makeuseof.com/remove-chrome-local-ai-model-from-pc-mac/",
+      "snippet": "I absolutely dislike the idea of Chrome silently placing a 4GB AI model on my PC. But at the same time, using a browser without these features in 2026 also feels limiting. So yes, if Chrome had simply shown me the prompt, I&#x27;d have clicked Yes anyway, mainly because some of this model also powers security features."
+    },
+    {
+      "title": "Chrome 4GB Local AI Model: Helpful Feature or Hidden Download?",
+      "url": "https://dataskillblog.com/chrome-4gb-local-ai-model-hidden-download",
+      "snippet": "Chrome 4GB local AI model appeared on my PC as a weights.bin file. Here is what it means, how to check it, and the bigger question about hidden AI downloads."
+    },
+    {
+      "title": "Google Chrome force-installs a 4-gigabyte AI model — how to get rid of ...",
+      "url": "https://pivot-to-ai.com/2026/05/07/google-chrome-force-installs-a-4-gigabyte-ai-model-how-to-get-rid-of-it/",
+      "snippet": "A lot of people just found out that Google&#x27;s Chrome web browser happily downloads a four-gigabyte AI model. For all users. The model is \"Gemini Nano\", which is a smaller, distilled version of Gemini. Gemini Nano first showed up in Google Pixel phones in December 2023. Google put it into the desktop version of Chrome in 2024."
+    }
+  ]
+}

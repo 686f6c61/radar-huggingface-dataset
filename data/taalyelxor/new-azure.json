@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "taalyelxor/new-azure",
+  "slug": "taalyelxor-new-azure",
+  "author": "taalyelxor",
+  "url": "https://huggingface.co/taalyelxor/new-azure",
+  "created_at": "2026-10-05T12:50:19.000Z",
+  "updated_at": "2026-10-06T00:44:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126604143797,
+  "storage_human": "126.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beginner French Podcasts - 27 Easy Podcasts for A1-A2 Learners",
+      "url": "https://www.lenguia.com/podcasts/french/beginner",
+      "snippet": "Nov 10, 2025 · Learn French with our French Beginner podcasts. Perfect for A1-A2 levels, these episodes feature easy-to-follow …"
+    },
+    {
+      "title": "19 Best French Podcasts for Beginners to Advanced Learners",
+      "url": "https://learnlanguagesfromhome.com/french-podcasts/",
+      "snippet": "Jun 11, 2025 · Keep scrolling to view 19 of the best French podcasts for beginner, intermediate, and advanced learners. Editor’s note: …"
+    },
+    {
+      "title": "50 Free Podcasts for Learning French | Beginner and Intermediate ...",
+      "url": "https://www.lenguia.com/podcasts/french",
+      "snippet": "Nov 10, 2025 · Master French with our collection of free podcasts. From beginner (A1-A2) to intermediate (B1-B2) levels, our …"
+    },
+    {
+      "title": "11 Best French Podcasts for Beginners (2026) - atlasruna.com",
+      "url": "https://atlasruna.com/blog/french-podcasts-for-beginners/",
+      "snippet": "Sep 12, 2026 · 11 French podcasts for beginners, all verified publishing in 2026, all slow enough to follow at A1-A2, and most with …"
+    },
+    {
+      "title": "Learn French for Beginners | Fluent French Podcast (Listening",
+      "url": "https://www.youtube.com/playlist?list=PL5DXT4q4S1mtJ0MWQwb-v2p-tv-Qilntf",
+      "snippet": "Sep 22, 2026 · In each episode, you'll listen to native French speakers as they talk about daily topics in slow, clear French – ideal for …"
+    }
+  ]
+}

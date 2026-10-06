@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Rtmmarieke25/generation-base",
+  "slug": "rtmmarieke25-generation-base",
+  "author": "Rtmmarieke25",
+  "url": "https://huggingface.co/Rtmmarieke25/generation-base",
+  "created_at": "2026-10-05T19:36:51.000Z",
+  "updated_at": "2026-10-05T19:36:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

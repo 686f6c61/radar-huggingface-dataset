@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ferb1208/Fernando",
+  "slug": "ferb1208-fernando",
+  "author": "Ferb1208",
+  "url": "https://huggingface.co/Ferb1208/Fernando",
+  "created_at": "2026-10-05T23:44:16.000Z",
+  "updated_at": "2026-10-05T23:44:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quiz Hayao Miyazaki : 30 questions de culture générale",
+      "url": "https://www.brainpickle.app/fr/quiz/a/quiz-hayao-miyazaki",
+      "snippet": "30 questions sur Miyazaki : ses débuts chez Toei, le Studio Ghibli, ses films et ses inspirations. À jouer tout de suite ou à imprimer."
+    },
+    {
+      "title": "Hayao Miyazaki, magicien de l'animation - Quiz Arts | Lumni",
+      "url": "https://www.lumni.fr/quiz/hayao-miyazaki-magicien-de-l-animation",
+      "snippet": "Dans quel studio d'animation Hayao Miyazaki commença-t-il sa carrière en 1963 ? En 1963, alors âgé de 22 ans, Miyazaki est …"
+    },
+    {
+      "title": "Quiz Films d'animation de Hayao Miyazaki - Culture Quizz",
+      "url": "https://www.culturequizz.com/quiz/quiz-films-animation-miyazaki/",
+      "snippet": "Connaissez-vous les films d'animation japonais de Miyazaki ? Hayao Miyazaki est un réalisateur de films d'animation japonais très …"
+    },
+    {
+      "title": "\"Hayao Miyazaki\" Quizzes | Quotev",
+      "url": "https://www.quotev.com/quizzes/t/Hayao+Miyazaki",
+      "snippet": "Jul 29, 2024 · Hayao Miyazaki has made many movies but I have included: Spirited Away, Ponyo, Princess Mononoke, Howls …"
+    },
+    {
+      "title": "Hayao Miyazaki Trivia Quizzes | Movies",
+      "url": "https://www.funtrivia.com/quizzes/movies/people_themed_l-r/hayao_miyazaki.html",
+      "snippet": "Hayao Miyazaki trivia quizzes in the movies category. Over 20 trivia questions to answer. Play our Hayao Miyazaki quiz games now! …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "CDT5058",
   "url": "https://huggingface.co/CDT5058/ear-stt",
   "created_at": "2026-10-05T19:52:52.000Z",
-  "updated_at": "2026-10-05T19:55:30.000Z",
+  "updated_at": "2026-10-05T20:29:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 338600672,
-  "storage_human": "339 MB",
+  "storage_bytes": 378521827,
+  "storage_human": "379 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -5,7 +5,7 @@
   "author": "local-inference-lab",
   "url": "https://huggingface.co/local-inference-lab/Qwen3.8-Flash-Next-NVFP4-MXFP8-CSF-QAD",
   "created_at": "2026-10-04T02:41:06.000Z",
-  "updated_at": "2026-10-05T00:23:39.000Z",
+  "updated_at": "2026-10-05T15:03:36.000Z",
   "license": "lil-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "qwen4_exp",
     "quantized",
     "nvfp4",
     "mxfp8",

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RabiatS/me-rppg-web",
+  "slug": "rabiats-me-rppg-web",
+  "author": "RabiatS",
+  "url": "https://huggingface.co/RabiatS/me-rppg-web",
+  "created_at": "2026-10-05T22:36:32.000Z",
+  "updated_at": "2026-10-05T22:36:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "Heart rate",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "Heart rate",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2487146,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI is in everything in 2026 : r/litrpg - Reddit",
+      "url": "https://www.reddit.com/r/litrpg/comments/1ue1188/ai_is_in_everything_in_2026/",
+      "snippet": "24.06.2026 ... FWIW \"Not suspicion, but military calculation.\" doesn't look like AI to me, but it's clunky AF. ... AI models. It really sucks. I don't ..."
+    },
+    {
+      "title": "Abstracts to the 16th FELASA Congress 2025",
+      "url": "https://felasa.eu/Portals/0/2025-abstracts-to-the-16th-felasa-congress-2025.pdf",
+      "snippet": "... models have been systematically evaluated, how data science and AI have been applied, and how existing and new technologies have been integrated to advance ..."
+    },
+    {
+      "title": "Establishment and Validation of a Novel Microgravity Simulation ...",
+      "url": "https://www.mdpi.com/1422-0067/27/19/8806",
+      "snippet": "This disparity suggests that whereas both models replicate musculoskeletal disuse, the HU model ... M.E.; Dobretsov, M. Animal model of simulated ..."
+    },
+    {
+      "title": "Microsoft set to buy Minecraft's developer Mojang, say reports - BBC",
+      "url": "https://www.bbc.com/news/technology-29142975",
+      "snippet": "10.09.2014 ... \"And it does confuse me why Mojang would sell up, bearing in ... Are AI models the next big danger for body image? Spanish co-founder ..."
+    },
+    {
+      "title": "The Utilization of a TSR-MPPT-Based Backstepping Controller and ...",
+      "url": "https://www.pubs2.ascee.org/index.php/IJRCS/article/view/1793/0",
+      "snippet": "Chakraborty, “MPPT Based PMSG Wind Turbine System Using Sliding Model ... Elbarbary, A. I. Omar, M. M. Mahmoud, “Application of a Novel Synergetic ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gzma-1221/mae-multitask-run3",
+  "slug": "gzma-1221-mae-multitask-run3",
+  "author": "gzma-1221",
+  "url": "https://huggingface.co/gzma-1221/mae-multitask-run3",
+  "created_at": "2026-10-05T23:37:37.000Z",
+  "updated_at": "2026-10-05T23:37:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mikoyan MiG-31 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mikoyan_MiG-31",
+      "snippet": "While Russian state media did not offer any details, independent investigators discovered from a leaked government document that …"
+    },
+    {
+      "title": "Mikoyan-Gourevitch MiG-31 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mikoyan-Gourevitch_MiG-31",
+      "snippet": "Le MiG-31, en tant qu'intercepteur pur, peut emporter de nombreux missiles air-air : R-33 à guidage radar semi-actif, R-37 à longue …"
+    },
+    {
+      "title": "R-33 (missile) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/R-33_%28missile%29",
+      "snippet": "The R-33 (Russian: Вымпел Р-33, NATO reporting name: AA-9 Amos) is a long-range air-to-air missile developed by Vympel. It is …"
+    },
+    {
+      "title": "Mikoyan MiG-31 Armament - Bolt Flight",
+      "url": "https://boltflight.com/mikoyan-mig-31-armament/",
+      "snippet": "Feb 18, 2025 · The R-33 missile is perhaps the most iconic weapon in the MiG-31’s arsenal. Developed in the 1980s, the R-33 is a …"
+    },
+    {
+      "title": "MiG-31 Foxhound: Combat Aircraft Specs, Top Speed & Range",
+      "url": "https://www.globalmilitary.net/aircraft/mig-31-foxhound/",
+      "snippet": "3 days ago · MiG-31 (Izdeliye 01): Baseline production interceptor with the Zaslon radar and four R-33s, built until 1988."
+    }
+  ]
+}

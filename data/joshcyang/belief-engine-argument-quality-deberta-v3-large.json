@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "joshcyang/belief-engine-argument-quality-deberta-v3-large",
+  "slug": "joshcyang-belief-engine-argument-quality-deberta-v3-large",
+  "author": "joshcyang",
+  "url": "https://huggingface.co/joshcyang/belief-engine-argument-quality-deberta-v3-large",
+  "created_at": "2026-10-05T23:36:38.000Z",
+  "updated_at": "2026-10-05T23:38:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "argument-quality",
+    "regression",
+    "deberta-v3",
+    "en",
+    "dataset:ibm-research/argument_quality_ranking_30k",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435062785,
+  "parameters_human": "435.1M",
+  "storage_bytes": 1742764956,
+  "storage_human": "1.7 GB",
+  "base_model": "microsoft/deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

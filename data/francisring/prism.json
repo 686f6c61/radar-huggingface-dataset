@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FrancisRing/Prism",
+  "slug": "francisring-prism",
+  "author": "FrancisRing",
+  "url": "https://huggingface.co/FrancisRing/Prism",
+  "created_at": "2026-09-24T09:58:12.000Z",
+  "updated_at": "2026-10-05T03:01:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "video diffusion transformer",
+    "joint-video-audio-generation",
+    "sparse-attention",
+    "high-resolution",
+    "image-to-video",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 44,
+  "downloads_30d": 0,
+  "trending_score": 44,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 208343778522,
+  "storage_human": "208.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PrismML hopes its tiny LLM will change how we all use AI",
+      "url": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/",
+      "snippet": "PrismML says it achieves this by shrinking the \"weights\" that make up a model — weights are, essentially, the information a model learns and stores during training."
+    },
+    {
+      "title": "paige-ai/Prism · Hugging Face",
+      "url": "https://huggingface.co/paige-ai/Prism",
+      "snippet": "Deploy Copy to bucket new Use this model Instructions to use paige-ai/Prism with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use paige-ai/Prism with Transformers:"
+    },
+    {
+      "title": "Apple in talks with startup that shrinks AI models to run on an ... - CNBC",
+      "url": "https://www.cnbc.com/2026/07/14/apple-prismml-ai-compression-iphone.html",
+      "snippet": "PrismML says its compressed version of Alibaba&#x27;s Qwen model uses up to 15 times less memory, potentially advancing Apple&#x27;s AI push."
+    },
+    {
+      "title": "FrancisRing (Shuyuan Tu) - Hugging Face",
+      "url": "https://huggingface.co/FrancisRing/models",
+      "snippet": "User profile of Shuyuan Tu on Hugging Face"
+    },
+    {
+      "title": "Prism ML AI Models: Benchmarks & Pricing (October 2026)",
+      "url": "https://benchlm.ai/providers/prism-ml",
+      "snippet": "BenchLM provider page for Prism ML: top model families, ranked coverage, pricing visibility, and current release depth."
+    }
+  ]
+}

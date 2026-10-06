@@ -5,7 +5,7 @@
   "author": "MC7ever",
   "url": "https://huggingface.co/MC7ever/pe-single-L14",
   "created_at": "2026-10-03T01:41:26.000Z",
-  "updated_at": "2026-10-03T21:59:50.000Z",
+  "updated_at": "2026-10-05T07:39:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -34,8 +34,8 @@
   "trending_score": 0,
   "parameters": 1033701580,
   "parameters_human": "1.03B",
-  "storage_bytes": 8269860240,
-  "storage_human": "8.3 GB",
+  "storage_bytes": 14804547195,
+  "storage_human": "14.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

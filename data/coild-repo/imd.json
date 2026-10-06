@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "coild-repo/IMD",
+  "slug": "coild-repo-imd",
+  "author": "coild-repo",
+  "url": "https://huggingface.co/coild-repo/IMD",
+  "created_at": "2026-10-05T21:42:38.000Z",
+  "updated_at": "2026-10-05T21:49:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi",
+    "mai",
+    "ur"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "IndicTrans",
+    "text2text-generation",
+    "weather",
+    "imd",
+    "alerts",
+    "hindi",
+    "maithili",
+    "urdu",
+    "translation",
+    "custom_code",
+    "en",
+    "hi",
+    "mai",
+    "ur",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 274584576,
+  "parameters_human": "274.6M",
+  "storage_bytes": 1102443920,
+  "storage_human": "1.1 GB",
+  "base_model": "ai4bharat/indictrans2-en-indic-dist-200M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "English to Hindi (IMD alerts, held-out patterns)",
+      "dataset": "IMD alert sentences, held-out templates (380 sentences)",
+      "metric": "BLEU (sacreBLEU 13a)",
+      "value": 99.86
+    },
+    {
+      "task": "English to Hindi (IMD alerts, held-out patterns)",
+      "dataset": "IMD alert sentences, held-out templates (380 sentences)",
+      "metric": "chrF++",
+      "value": 99.63
+    },
+    {
+      "task": "English to Maithili (IMD alerts, held-out patterns)",
+      "dataset": "IMD alert sentences, held-out templates (455 sentences)",
+      "metric": "BLEU (sacreBLEU 13a)",
+      "value": 99.73
+    },
+    {
+      "task": "English to Maithili (IMD alerts, held-out patterns)",
+      "dataset": "IMD alert sentences, held-out templates (455 sentences)",
+      "metric": "chrF++",
+      "value": 99.57
+    },
+    {
+      "task": "English to Urdu (IMD alerts, held-out patterns)",
+      "dataset": "IMD alert sentences, held-out templates (455 sentences)",
+      "metric": "BLEU (sacreBLEU 13a)",
+      "value": 99.52
+    },
+    {
+      "task": "English to Urdu (IMD alerts, held-out patterns)",
+      "dataset": "IMD alert sentences, held-out templates (455 sentences)",
+      "metric": "chrF++",
+      "value": 99.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "GAZ-24 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GAZ-24",
+      "snippet": "The GAZ-24 \"Volga\" is a car manufactured by the Gorky Automobile Plant (Gorkovsky Avtomobilny Zavod, GAZ) from July 1970 to …"
+    },
+    {
+      "title": "GAZ Volga - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GAZ_Volga",
+      "snippet": "Development of the planned replacement for the GAZ-21 Volga began in 1961. The GAZ-24 Volga was planned to have 7-10 year …"
+    },
+    {
+      "title": "GAZ Volga 24 Specs, Performance, Comparisons",
+      "url": "https://www.ultimatespecs.com/car-specs/GAZ/19986/GAZ-Volga-24.html",
+      "snippet": "Explore the GAZ Volga 24 detailed specs, including 0-60 mph times, horsepower, and handling data. Get all the Info."
+    },
+    {
+      "title": "Engines | GAZ24.COM",
+      "url": "https://gaz24.com/c117592/?page_id=368",
+      "snippet": "The V8-powered Volga was designated GAZ-24-24 (24-34 in 1987-93) and nicknamed “the double” or “the catch-up”. Some of these …"
+    },
+    {
+      "title": "gaz 24 volga d'occasion - Recherche de voiture d'occasion - Le Parking",
+      "url": "https://www.leparking.fr/voiture-occasion/gaz-24-volga.html",
+      "snippet": "Sep 10, 2026 · 6 gaz 24 volga d'occasion à vendre : toutes les annonces au meilleur prix disponibles en france et en europe"
+    }
+  ]
+}

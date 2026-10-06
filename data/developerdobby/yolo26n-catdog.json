@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "DeveloperDobby/yolo26n-catdog",
+  "slug": "developerdobby-yolo26n-catdog",
+  "author": "DeveloperDobby",
+  "url": "https://huggingface.co/DeveloperDobby/yolo26n-catdog",
+  "created_at": "2026-10-06T00:02:19.000Z",
+  "updated_at": "2026-10-06T00:02:44.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9794280,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

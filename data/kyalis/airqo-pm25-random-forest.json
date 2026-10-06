@@ -5,7 +5,7 @@
   "author": "Kyalis",
   "url": "https://huggingface.co/Kyalis/airqo-pm25-random-forest",
   "created_at": "2026-10-04T22:49:54.000Z",
-  "updated_at": "2026-10-04T22:51:40.000Z",
+  "updated_at": "2026-10-05T02:04:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "tabular-regression",

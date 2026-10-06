@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "cvgro/Muse-Glimmer-30B-Uncensored-Heretic-GGUF",
+  "slug": "cvgro-muse-glimmer-30b-uncensored-heretic-gguf",
+  "author": "cvgro",
+  "url": "https://huggingface.co/cvgro/Muse-Glimmer-30B-Uncensored-Heretic-GGUF",
+  "created_at": "2026-10-05T20:56:52.000Z",
+  "updated_at": "2026-10-05T21:04:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "image-text-to-text",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2772159744,
+  "parameters_human": "2.77B",
+  "storage_bytes": 157183377184,
+  "storage_human": "157.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OS-Software/Muse-Glimmer-30B-Uncensored-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Muse-Glimmer-30B-Uncensored-Heretic-GGUF",
+      "snippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access."
+    },
+    {
+      "title": "TrevorJS/Muse-Glimmer-30B-uncensored · Hugging Face",
+      "url": "https://huggingface.co/TrevorJS/Muse-Glimmer-30B-uncensored",
+      "snippet": "Note on the architecture.Muse-Glimmer-30B is a dense multimodal model — 52 text decoder layers, hidden 6656, plus a separate 1.9B ViT-G/14 vision tower. Only the text pathway is abliterated; all 800 vision tensors are copied unchanged."
+    },
+    {
+      "title": "meta / muse-glimmer-30b",
+      "url": "https://docs.api.nvidia.com/nim/reference/meta-muse-glimmer-30b",
+      "snippet": "Muse Glimmer is an approximately 29.6B-parameter dense multimodal causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. It accepts interleaved text and image inputs to produce text output and supports local operation without requiring cloud infrastructure or network access. This model is ready ..."
+    },
+    {
+      "title": "Meta Releases Muse Glimmer, a 30-Billion-Parameter Open-Weight AI Model ...",
+      "url": "https://www.ghacks.net/2026/08/11/meta-releases-muse-glimmer-a-30-billion-parameter-open-weight-ai-model-that-runs-on-a-single-consumer-gpu/",
+      "snippet": "Meta has released Muse Glimmer, a 30-billion-parameter open-weight AI model that runs on a Mac or PC with a single consumer graphics card. The model is available as a free download from Hugging Face under the Apache 2.0 license. This allows commercial use, modification, and redistribution, without ..."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    }
+  ]
+}

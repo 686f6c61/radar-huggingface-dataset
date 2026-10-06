@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "srinasution/deit-multitask",
+  "slug": "srinasution-deit-multitask",
+  "author": "srinasution",
+  "url": "https://huggingface.co/srinasution/deit-multitask",
+  "created_at": "2026-10-05T21:37:50.000Z",
+  "updated_at": "2026-10-05T21:37:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeiTFake: Deepfake Detection Model using DeiT Multi-Stage Training",
+      "url": "https://arxiv.org/html/2511.12048v1",
+      "snippet": "Abstract Deepfakes are major threats to the integrity of digital media. We propose DeiTFake, a DeiT-based transformer and a novel two-stage progressive training strategy with increasing augmentation complexity. The approach applies an initial transfer-learning phase with standard augmentations followed by a fine-tuning phase using advanced affine and deepfake-specific augmentations. DeiT&#x27;s ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "deit - Colab",
+      "url": "https://colab.research.google.com/github/keras-team/keras-io/blob/master/examples/vision/ipynb/deit.ipynb",
+      "snippet": "Through the use of distillation, we&#x27;re effectively transferring the inductive biases of a CNN-based teacher model. In this example, a compact CNN teacher (EfficientNetV2B0) provides a strong signal and stabilizes DeiT training on the flowers dataset."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.55.4/en/model_doc/deit",
+      "snippet": "model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the DeiT facebook/deit-base-distilled-patch16-224architecture. Configuration objects inherit from PretrainedConfigand can be used to control the model outputs."
+    },
+    {
+      "title": "DeiT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/deit",
+      "snippet": "It is used to instantiate a Deit model according to the specified arguments, defining the model architecture. Instantiating a configuration with the defaults will yield a similar configuration to that of the facebook/deit-base-distilled-patch16-224 Configuration objects inherit from PreTrainedConfig and can be used to control the model outputs."
+    }
+  ]
+}

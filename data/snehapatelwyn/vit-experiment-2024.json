@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "snehapatelwyn/vit-experiment-2024",
+  "slug": "snehapatelwyn-vit-experiment-2024",
+  "author": "snehapatelwyn",
+  "url": "https://huggingface.co/snehapatelwyn/vit-experiment-2024",
+  "created_at": "2026-10-05T21:31:27.000Z",
+  "updated_at": "2026-10-05T21:31:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shared by U_g**ep6 | PikPak - mypikpak.com",
+      "url": "https://mypikpak.com/s/VNI306n4hi-GHG37QRs7D90Zo1",
+      "snippet": "available for high-speed download on PikPak and streaming across multiple devices."
+    },
+    {
+      "title": "Pack From Shared Shared by U_**51 | PikPak - mypikpak.com",
+      "url": "https://mypikpak.com/s/VNnA3JH1ZisMZwZWZlAMyBZpo1/VNiy3wwxtfcDHjl1LhKHbsY-o1",
+      "snippet": "Pack From Shared available for high-speed download on PikPak and streaming across multiple devices."
+    },
+    {
+      "title": "学生系列资源整理四 427G 1435V Shared by 00dsg**5hdfh | PikPak",
+      "url": "https://mypikpak.net/s/VP18nWTBhr8Nt0QCtO3fvEXao2",
+      "snippet": "学生系列资源整理四 427G 1435V available for high-speed download on PikPak and streaming across multiple devices."
+    },
+    {
+      "title": "Shared by U_**03 | PikPak - mypikpak.com",
+      "url": "https://mypikpak.com/s/VNgZEKfFQR0xhCBQO0C2aoIuo1",
+      "snippet": "PikPak - Your Private Cloud Drive. Securely Download files via Cloud in a flash. Learn More."
+    },
+    {
+      "title": "Shared by U_**21 | PikPak - mypikpak.com",
+      "url": "https://mypikpak.com/s/VO6estU8JdcCass2BMakWTGCo1",
+      "snippet": "PikPak - Your Private Cloud Drive. Securely Download files via Cloud in a flash. Learn More."
+    }
+  ]
+}

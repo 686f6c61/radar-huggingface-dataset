@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "avartha/kev-0.8b-merged",
+  "slug": "avartha-kev-0-8b-merged",
+  "author": "avartha",
+  "url": "https://huggingface.co/avartha/kev-0.8b-merged",
+  "created_at": "2026-10-05T21:01:32.000Z",
+  "updated_at": "2026-10-05T21:02:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "kev",
+    "decision-model",
+    "pointer-head",
+    "unofficial",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1723046159,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base, jaredpalmer/kev-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Jev-like family of decision models built on top of Qwen3.5/3.8 you can train and run on your own - jaredpalmer/kev"
+    },
+    {
+      "title": "jaredpalmer/kev-0.8b · Hugging Face",
+      "url": "https://huggingface.co/jaredpalmer/kev-0.8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kev Explained: Open-Source Jev Clone, 0.8B-9B (2026) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/kev-open-source-jev-clone-qwen35-family-2026",
+      "snippet": "Update — September 24, 2026: Related coverage — Contrastive Language Model (CLM-8B), an open System One model. Six weeks ago, explainx.ai covered Kev — Jared Palmer&#x27;s open-source alternative to TypeSafe AI&#x27;s Jev — through nothing but digest headlines: a Kev-0.5B built to run on a MacBook Pro, then an unsourced \"Kev-8B\" follow-up that explainx.ai&#x27;s own reporting flagged as unverifiable ..."
+    },
+    {
+      "title": "Releases · jaredpalmer/kev - GitHub",
+      "url": "https://github.com/jaredpalmer/kev/releases",
+      "snippet": "Its 0.8B, 4B and 9B tarballs are rebuilt reproducibly (scripts/build_release_assets.py) with the Kev 1.0 model cards, and every Hub repo has a v1.0 tag. Download from Kev 1.0."
+    },
+    {
+      "title": "Kev 0.8B: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/kev-0.8b/",
+      "snippet": "Kev 0.8B by Jared Palmer. Technical specifications, availability, and official sources. The profile includes only source-backed details."
+    }
+  ]
+}

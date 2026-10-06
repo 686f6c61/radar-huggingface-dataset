@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yumahujita/vit-finetuned",
+  "slug": "yumahujita-vit-finetuned",
+  "author": "Yumahujita",
+  "url": "https://huggingface.co/Yumahujita/vit-finetuned",
+  "created_at": "2026-10-05T21:32:08.000Z",
+  "updated_at": "2026-10-05T21:32:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yumahujita (Yuma Hujita) - Hugging Face",
+      "url": "https://huggingface.co/Yumahujita",
+      "snippet": "Exploring deep learning, computer vision and LLMs."
+    },
+    {
+      "title": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset ...",
+      "url": "https://huggingface.co/learn/cookbook/fine_tuning_vit_custom_dataset",
+      "snippet": "Fine-tuning a Vision Transformer Model With a Custom Biomedical Dataset Fine-Tuning Object Detection on a Custom Dataset, Deployment in Spaces, and Gradio API Integration Fine-Tuning a Semantic Segmentation Model on a Custom Dataset and Usage via the Inference API"
+    },
+    {
+      "title": "GitHub - wengsoon94/ViT-fineTune-with-ColossalAI",
+      "url": "https://github.com/wengsoon94/ViT-fineTune-with-ColossalAI",
+      "snippet": "Fine Tune ViT model The diagram below illustrates the training loss, evaluation loss, and evaluation accuracy during fine-tuning with Colossal-AI utilizing the Gemini plugin."
+    },
+    {
+      "title": "GitHub - bwconrad/vit-finetune: Fine-tuning Vision Transformers on ...",
+      "url": "https://github.com/bwconrad/vit-finetune",
+      "snippet": "Fine-tuning Vision Transformers Code for fine-tuning ViT models on various classification datasets. Includes options for full model, LoRA and linear fine-tuning procedures."
+    },
+    {
+      "title": "Mastering Model Adaptation: A Guide to Fine-Tuning on Google Cloud",
+      "url": "https://cloud.google.com/blog/topics/developers-practitioners/mastering-model-adaptation-a-guide-to-fine-tuning-on-google-cloud",
+      "snippet": "Learn to fine-tune production-ready AI models on Google Cloud: use Vertex AI for Gemini 2.5 Flash, or gain total control by running open-source LLMs like Llama 2 on Google Kubernetes Engine (GKE)."
+    }
+  ]
+}

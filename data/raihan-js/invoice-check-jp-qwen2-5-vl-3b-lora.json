@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "raihan-js/invoice-check-jp-qwen2.5-vl-3b-lora",
+  "slug": "raihan-js-invoice-check-jp-qwen2-5-vl-3b-lora",
+  "author": "raihan-js",
+  "url": "https://huggingface.co/raihan-js/invoice-check-jp-qwen2.5-vl-3b-lora",
+  "created_at": "2026-10-05T21:25:56.000Z",
+  "updated_at": "2026-10-05T21:26:58.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "lora",
+    "invoice",
+    "japanese",
+    "document-ai",
+    "vision-language",
+    "ja",
+    "dataset:raihan-js/invoice-check-jp",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119809088,
+  "storage_human": "120 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Computation and Language - arXiv",
+      "url": "https://arxiv.org/list/cs.CL/new",
+      "snippet": "This study evaluates legal text classification models ranging from traditional machine learning techniques to large language models (LLMs) ..."
+    },
+    {
+      "title": "Items where Year is 2026 - Brawijaya Knowledge Garden",
+      "url": "https://repository.ub.ac.id/view/year/2026.default.html",
+      "snippet": "Sarjana thesis, Universitas Brawijaya. Achmadinata, Raihan Rakha Dhiya and Adhi Cahya Fahadayna, S.Hub.Int., M.S and Aswin Ariyanto Azis, S ..."
+    }
+  ]
+}

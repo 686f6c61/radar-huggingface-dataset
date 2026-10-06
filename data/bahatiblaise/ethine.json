@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BAHATIBlaise/ethine",
+  "slug": "bahatiblaise-ethine",
+  "author": "BAHATIBlaise",
+  "url": "https://huggingface.co/BAHATIBlaise/ethine",
+  "created_at": "2026-10-05T21:00:24.000Z",
+  "updated_at": "2026-10-06T01:27:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ethine",
+    "from-scratch",
+    "research",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1169677702,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAHATIBlaise (BAHATI Blaise) · GitHub",
+      "url": "https://github.com/BAHATIBlaise",
+      "snippet": "Packages Stars BAHATIBlaise/README.md 👋 Hi, I&#x27;m BAHATI Blaise! 🚀 Blockchain Developer | AI Enthusiast | Tech Entrepreneur 💡 Passionate about Web3, Decentralized AI, and FinTech 💻 Coding in C++, Solidity, MQL5, Python 🔗 Building ChainRize Blockchain 📈 Creator of Bahati Art EA (Multi-strategy trading bot) & PoFlow consensus ..."
+    },
+    {
+      "title": "GitHub - BAHATIBlaise/BAHATIBlaise: Config files for my GitHub profile.",
+      "url": "https://github.com/BAHATIBlaise/BAHATIBlaise",
+      "snippet": "Config files for my GitHub profile. Contribute to BAHATIBlaise/BAHATIBlaise development by creating an account on GitHub."
+    },
+    {
+      "title": "Every Claude AI Model Compared & Explained (Sep, 2026)",
+      "url": "https://www.secondtalent.com/resources/every-claude-ai-model-explained-compared/",
+      "snippet": "Claude has four tiers in 2026: Haiku 4.5, Sonnet 5, Opus 5, and Fable 5. Compare prices, context windows, and which model to use, in 10 minutes."
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude is a generative AI chatbot. [1] It sometimes uses artifacts, a feature introduced in June 2024 to generate and interact with code snippets and documents. [2][3] In 2025, Anthropic added a web search feature to Claude. [4][5] Claude Pro and Claude Max are subscription services for additional access to Claude models. Max provides higher usage limits at an additional cost. [6] Grouped ..."
+    },
+    {
+      "title": "Anthropic: The Company Behind Claude AI (2026 Guide)",
+      "url": "https://beginnersinai.org/anthropic-company-guide/",
+      "snippet": "Complete guide to Anthropic, the AI safety company behind Claude. Covers the founding story, Constitutional AI, the Claude model family, $7.3B in funding, $61.5B valuation, why there is no Anthropic stock price, how to get investor exposure, Anthropic vs OpenAI, key people, and future direction. Updated March 2026."
+    }
+  ]
+}

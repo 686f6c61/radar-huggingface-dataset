@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-scenario-efficientvit_b3",
+  "slug": "dronefreak-bdd100k-scenario-efficientvit_b3",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-scenario-efficientvit_b3",
+  "created_at": "2026-10-05T21:29:47.000Z",
+  "updated_at": "2026-10-05T21:30:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "scene-classification",
+    "dataset:dronefreak/BDD100K-Scenario-Classification",
+    "arxiv:2205.14756",
+    "arxiv:1805.04687",
+    "base_model:timm/efficientvit_b3.r224_in1k",
+    "base_model:finetune:timm/efficientvit_b3.r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192849479,
+  "storage_human": "193 MB",
+  "base_model": "timm/efficientvit_b3.r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 79.32
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 57.7
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro precision (test split)",
+      "value": 71.54
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Scenario Classification",
+      "metric": "Macro recall (test split)",
+      "value": 53.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "dronefreak/bdd100k-scenario-efficientvit_b0 · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-scenario-efficientvit_b0",
+      "snippet": "Instructions to use dronefreak/bdd100k-scenario-efficientvit_b0 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - dronefreak/bdd100k-toolkit · GitHub",
+      "url": "https://github.com/dronefreak/bdd100k-toolkit",
+      "snippet": "Unofficial, modern, dependency-clean toolkit for BDD100K tasks. It currently covers the three image-attribute classification tasks (period, weather, scenario). Further tasks will be added here once they are done and verified on real data. This project starts small and depends only on modern ..."
+    },
+    {
+      "title": "dronefreak/bdd100k-yolo11s · Hugging Face",
+      "url": "https://huggingface.co/dronefreak/bdd100k-yolo11s",
+      "snippet": "Instructions to use dronefreak/bdd100k-yolo11s with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries ultralytics How to use dronefreak/bdd100k-yolo11s with ultralytics: ... Notebooks Google Colab Kaggle YOLOv11s Finetuned on BDD100K Performance Evaluation Protocol BDD100K Model Zoo Per ..."
+    },
+    {
+      "title": "GitHub - bdd100k/bdd100k: Toolkit of BDD100K Dataset for Heterogeneous ...",
+      "url": "https://github.com/bdd100k/bdd100k",
+      "snippet": "We construct BDD100K, the largest open driving video dataset with 100K videos and 10 tasks to evaluate the exciting progress of image recognition algorithms on autonomous driving. Each video has 40 seconds and a high resolution. The dataset represents more than 1000 hours of driving experience with more than 100 million frames."
+    },
+    {
+      "title": "BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning",
+      "url": "https://arxiv.org/html/1805.04687v2",
+      "snippet": "The tasks can be formulated as pixel-level or low-dimensional classification and regression. BDD100K contains multiple tasks including pixel-level, region-based, and temporally aware tasks, opening the door for heterogeneous multitask learning."
+    }
+  ]
+}

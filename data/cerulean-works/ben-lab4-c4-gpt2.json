@@ -5,7 +5,7 @@
   "author": "cerulean-works",
   "url": "https://huggingface.co/cerulean-works/ben-lab4-c4-gpt2",
   "created_at": "2026-10-03T14:57:59.000Z",
-  "updated_at": "2026-10-05T02:14:15.000Z",
+  "updated_at": "2026-10-06T02:36:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 103,
+  "downloads_30d": 1194,
   "trending_score": 0,
   "parameters": 124439808,
   "parameters_human": "124.4M",
-  "storage_bytes": 9955484160,
-  "storage_human": "10.0 GB",
+  "storage_bytes": 10951032576,
+  "storage_human": "11.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

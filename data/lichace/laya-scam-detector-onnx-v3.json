@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "LiChace/laya-scam-detector-onnx-v3",
+  "slug": "lichace-laya-scam-detector-onnx-v3",
+  "author": "LiChace",
+  "url": "https://huggingface.co/LiChace/laya-scam-detector-onnx-v3",
+  "created_at": "2026-10-06T00:11:16.000Z",
+  "updated_at": "2026-10-06T00:12:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "zh",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "scam-detection",
+    "phishing-detection",
+    "fraud-detection",
+    "text-classification",
+    "multilingual",
+    "chinese",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "zh",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 680768734,
+  "storage_human": "681 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كورة لايف – Koora Live – مباريات اليوم بث مباشر",
+      "url": "https://koralivez.com/",
+      "snippet": "تابع مباريات اليوم عبر كورة لايف Koora Live، وتعرف على مواعيد المباريات ونتائج كرة القدم وجدول أهم البطولات العربية والعالمية، مع متابعة مستمرة لأحدث مباريات وأخبار كرة القدم."
+    },
+    {
+      "title": "مباريات اليوم - كورة لايف",
+      "url": "https://koooraliive.com/matches-today/",
+      "snippet": "لا توجد مباريات مجدولة."
+    },
+    {
+      "title": "مباريات اليوم كورة لايف | koora live | كوره لايف مباريات اليوم جوال ...",
+      "url": "https://kora--tv.live/matches-today/",
+      "snippet": "أهم مباريات اليوم مباريات الأمس مباريات اليوم مباريات الغد قبرص 19:000-1 جارية الان دوري الأمم الأوروبية لاتفيا مونتينيغرو 21:450-0 لم تبدأ بعد دوري الأمم الأوروبية أرمينيا فرنسا …"
+    },
+    {
+      "title": "مباريات اليوم | جدول المباريات والقنوات الناقلة - عبر كورة لايف - Kora Live",
+      "url": "https://kora-en-direct.com/matches-today/",
+      "snippet": "تابع جدول مباريات اليوم عبر كورة لايف - kora live , مواعيد اللقاءات، القنوات الناقلة، والمعلقين في كافة البطولات العالمية بتحديث لحظي سريع"
+    },
+    {
+      "title": "كورة لايف | koora live | جدول مباريات اليوم kooora live",
+      "url": "https://koooraliive.com/",
+      "snippet": "كورة لايف Kora Live - دليلك الرياضي الشامل مرحباً بك في موقع كورة لايف Kora Live ، المنصة الرياضية الرائدة والمخصصة لتقديم تغطية حصرية وشاملة لجميع أحداث كرة القدم المحلية …"
+    }
+  ]
+}

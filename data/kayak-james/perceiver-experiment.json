@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kayak-james/perceiver-experiment",
+  "slug": "kayak-james-perceiver-experiment",
+  "author": "kayak-james",
+  "url": "https://huggingface.co/kayak-james/perceiver-experiment",
+  "created_at": "2026-10-05T19:33:36.000Z",
+  "updated_at": "2026-10-05T19:33:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recherchez des vols, hôtels & voitures de location | KAYAK",
+      "url": "https://www.kayak.fr/",
+      "snippet": "KAYAK recherche sur des centaines de sites de voyage et trouve les informations qu'il vous faut pour prendre la meilleure décision …"
+    },
+    {
+      "title": "Vols pas chers : Comparateur de vols et billets d’avion | KAYAK",
+      "url": "https://www.kayak.fr/flights",
+      "snippet": "KAYAK est un comparateur de vols qui vous aidera à trouver rapidement les meilleures offres pour vos vacances. Que vous …"
+    },
+    {
+      "title": "Search Flights, Hotels & Rental Cars | KAYAK",
+      "url": "https://www.kayak.com/?msockid=304a22dd1ef964721e7035341f686513",
+      "snippet": "KAYAK searches hundreds of other travel sites at once to find the information you need to make the right decisions on flights, hotels …"
+    },
+    {
+      "title": "KAYAK Explore",
+      "url": "https://www.kayak.fr/explore/",
+      "snippet": "Les prix affichés sont estimés en fonction des recherches récentes sur KAYAK pour une personne : (i) aller-retour, (ii) classe …"
+    },
+    {
+      "title": "KAYAK - Qui sommes-nous ?",
+      "url": "https://www.kayak.fr/about",
+      "snippet": "KAYAK recherche sur des centaines de sites de voyage pour trouver les meilleures offres de billets d’avion, d’hôtels pas chers, de …"
+    }
+  ]
+}

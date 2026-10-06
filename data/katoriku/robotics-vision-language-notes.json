@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Katoriku/robotics-vision-language-notes",
+  "slug": "katoriku-robotics-vision-language-notes",
+  "author": "Katoriku",
+  "url": "https://huggingface.co/Katoriku/robotics-vision-language-notes",
+  "created_at": "2026-10-05T21:23:57.000Z",
+  "updated_at": "2026-10-05T21:24:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vision-language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision-language_model",
+      "snippet": "A vision-language model (VLM) is a type of artificial intelligence system that can jointly interpret and generate information from both images and text, extending the capabilities of large language models (LLMs), which are limited to text."
+    },
+    {
+      "title": "kobayashiren94/robotics-vision-language · Hugging Face",
+      "url": "https://huggingface.co/kobayashiren94/robotics-vision-language",
+      "snippet": "Notes on Robotics Vision Language Repository summary This is an exploratory note for Robotics Vision Language. It records the intended comparison, likely confounders, and reproducibility requirements before any benchmark result is reported."
+    },
+    {
+      "title": "Vision-language-action model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision%E2%80%93language%E2%80%93action_model",
+      "snippet": "The general architecture of a vision-language-action model. The model receives as input a text instruction and an image observation that are encoded in a latent representation. The action decoder receives this representation and generates a sequence of low-level robot actions. In robot learning, a vision-language-action model (VLA) is a class of multimodal foundation models that ..."
+    },
+    {
+      "title": "Physical AI in Robotics: How Vision-Language-Action Models Are Enabling ...",
+      "url": "https://iotdigitaltwinplm.com/physical-ai-vision-language-action-models-robotics-2026/",
+      "snippet": "Physical AI in Robotics: How Vision-Language-Action Models Are Enabling General-Purpose Robots Last Updated: October 2026 Vision-language-action models (VLAs) entered October 2026 with a clearer division of labor than the April article described. Physical Intelligence&#x27;s pi0.7 pushes compositional generalization, NVIDIA&#x27;s Isaac GR00T N1.7 is a generally available open 3B model, and Google ..."
+    },
+    {
+      "title": "Vision Language Action Models in Robotics (October 2026 Guide)",
+      "url": "https://www.smashingrobotics.com/what-are-vision-language-action-models-in-robotics/",
+      "snippet": "Vision Language Action Models in Robotics: A Clear Definition A Vision Language Action (VLA) model is a single neural network that ingests visual observations and natural language instructions and produces robot actions as output. It is a class of multimodal foundation model designed for embodied AI, meaning the model lives inside a physical or simulated robot and controls it directly. VLAs ..."
+    }
+  ]
+}

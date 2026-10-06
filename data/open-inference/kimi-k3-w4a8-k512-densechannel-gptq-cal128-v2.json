@@ -5,7 +5,7 @@
   "author": "open-inference",
   "url": "https://huggingface.co/open-inference/Kimi-K3-W4A8-K512-DenseChannel-GPTQ-Cal128-v2",
   "created_at": "2026-10-04T17:42:16.000Z",
-  "updated_at": "2026-10-04T23:53:58.000Z",
+  "updated_at": "2026-10-06T01:49:27.000Z",
   "license": "kimi-k3",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": 2779931837184,
   "parameters_human": "2779.93B",

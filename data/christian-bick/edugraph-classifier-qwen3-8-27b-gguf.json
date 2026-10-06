@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "christian-bick/EduGraph-Classifier-Qwen3.8-27B-GGUF",
+  "slug": "christian-bick-edugraph-classifier-qwen3-8-27b-gguf",
+  "author": "christian-bick",
+  "url": "https://huggingface.co/christian-bick/EduGraph-Classifier-Qwen3.8-27B-GGUF",
+  "created_at": "2026-10-05T23:46:58.000Z",
+  "updated_at": "2026-10-06T00:07:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "edugraph",
+    "image-text-to-text",
+    "conversational",
+    "dataset:christian-bick/edugraph-exercises",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 17478545824,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue à la Pâtisserie | PATISSERIE CHRISTIAN",
+      "url": "https://www.christian.fr/",
+      "snippet": "La Pâtisserie Christian vous propose ses truffes au chocolat, un véritable délice pour les gourmets. Confectionnées avec un chocolat …"
+    },
+    {
+      "title": "Prénom Christian (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/christian/prenom-2775",
+      "snippet": "Quelle est la signification du prénom Christian ? Christian est dérivé du prénom latin Christianus qui veut dire \"chrétien\" ou \"disciple …"
+    },
+    {
+      "title": "Christian (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Christian_(pr%C3%A9nom)",
+      "snippet": "Le prénom Christian trouve son origine dans le latin Christianus, qui signifie \"disciple du Christ\" ou \"chrétien\". Ce terme est lui-même …"
+    },
+    {
+      "title": "Prénom Christian : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/christian-37761",
+      "snippet": "Signification et étymologie du prénom Christian La racine du prénom Christian est grecque. Il vient de « kristos », et veut dire « …"
+    },
+    {
+      "title": "Nos produits | PATISSERIE CHRISTIAN",
+      "url": "https://www.christian.fr/nos-produits",
+      "snippet": "Entre élégance et exigence, La Maison Christian signe une expérience culinaire où chaque détail compte. De la pause gourmande …"
+    }
+  ]
+}

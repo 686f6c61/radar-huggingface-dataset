@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "unibonnphysics/mae-contrastive",
+  "slug": "unibonnphysics-mae-contrastive",
+  "author": "unibonnphysics",
+  "url": "https://huggingface.co/unibonnphysics/mae-contrastive",
+  "created_at": "2026-10-05T21:34:14.000Z",
+  "updated_at": "2026-10-05T21:34:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "mae-contrastive/models_mae.py at main · shlokk/mae-contrastive",
+      "url": "https://github.com/shlokk/mae-contrastive/blob/main/models_mae.py",
+      "snippet": "Official implementation of \"A simple, efficient and scalable contrastive masked autoencoder for learning visual representations\". - shlokk/mae-contrastive"
+    },
+    {
+      "title": "Biology+AI Daily on X: \"One Sequence, Many Decodings: CAGenMol-2 ...",
+      "url": "https://x.com/BiologyAIDaily/status/2107082543577321785",
+      "snippet": "Biology+AI Daily on X: \"One Sequence, Many Decodings: CAGenMol-2 Recasts Drug Design as Masked Molecular Inference 1. CAGenMol-2 is presented as a single masked diffusion molecular language model where \"the task is a property of the mask\": by choosing which regions of one wrapped sequence are visible vs. masked at inference, one checkpoint can do property prediction, property-conditioned ..."
+    },
+    {
+      "title": "GitHub - shlokk/mae-contrastive: Official implementation of \"A simple ...",
+      "url": "https://github.com/shlokk/mae-contrastive",
+      "snippet": "Official implementation of \"A simple, efficient and scalable contrastive masked autoencoder for learning visual representations\". - shlokk/mae-contrastive"
+    },
+    {
+      "title": "Understanding Masked Autoencoders From a Local Contrastive Perspective",
+      "url": "https://arxiv.org/html/2310.01994v2",
+      "snippet": "In this paper, we first propose a local perspective to explicitly extract a local contrastive form from MAE&#x27;s reconstructive objective at the patch level. And then we introduce a new empirical framework, called Local Contrastive MAE (LC-MAE), to analyze both reconstructive and contrastive aspects of MAE."
+    }
+  ]
+}

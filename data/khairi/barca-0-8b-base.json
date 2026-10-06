@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "khairi/barca-0.8b-base",
+  "slug": "khairi-barca-0-8b-base",
+  "author": "khairi",
+  "url": "https://huggingface.co/khairi/barca-0.8b-base",
+  "created_at": "2026-10-05T21:42:36.000Z",
+  "updated_at": "2026-10-05T21:45:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752166720,
+  "parameters_human": "752.2M",
+  "storage_bytes": 1524368312,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "khairi (khairi abidi) - Hugging Face",
+      "url": "https://huggingface.co/khairi/datasets",
+      "snippet": "Language Modeling, Protein Language Modeling, Protein Annotation. Recent Activity. updated a model 4 days ago. khairi/Eshmun-.3B-CPT"
+    },
+    {
+      "title": "Barca AI - GitHub",
+      "url": "https://github.com/barcaAI",
+      "snippet": "⚡️An Easy-to-use and Fast Deep Learning Model Deployment Toolkit for ☁️Cloud 📱Mobile and 📹Edge. Including Image, Video, Text and Audio 20+ main stream scenarios and 150+ SOTA models with end-to-end optimization, multi-platform and multi-framework support."
+    },
+    {
+      "title": "chancharikm/CHAI_SFT_model_8b · Hugging Face",
+      "url": "https://huggingface.co/chancharikm/CHAI_SFT_model_8b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best 8B Parameter Models in 2026 — Small Models, Big Results",
+      "url": "https://www.aimadetools.com/blog/best-8b-parameter-models-2026/",
+      "snippet": "The best ~8B parameter AI models you can run on any laptop. Compared on quality, speed, RAM usage, and best use cases. All runnable via Ollama."
+    },
+    {
+      "title": "khairi / life2lang-base-ft Security Insights | Protect AI",
+      "url": "https://protectai.com/insights/models/khairi/life2lang-base-ft/4a22a0a44578c139ac7d3b526ba68eca49947e2b/versions",
+      "snippet": "Discover potential threats in the khairi / life2lang-base-ft model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    }
+  ]
+}

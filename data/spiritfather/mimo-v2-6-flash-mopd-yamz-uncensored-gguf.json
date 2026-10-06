@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF",
+  "slug": "spiritfather-mimo-v2-6-flash-mopd-yamz-uncensored-gguf",
+  "author": "spiritfather",
+  "url": "https://huggingface.co/spiritfather/MiMo-V2.6-Flash-MOPD-Yamz-Uncensored-GGUF",
+  "created_at": "2026-10-05T22:56:23.000Z",
+  "updated_at": "2026-10-06T01:48:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "mimo",
+    "moe",
+    "uncensored",
+    "abliterated",
+    "creative-writing",
+    "text-generation",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309766601088,
+  "parameters_human": "309.77B",
+  "storage_bytes": 988879900704,
+  "storage_human": "988.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yamz-labs/MiMo-V2.6-Flash-MOPD-EXL3-Yamz · Hugging Face",
+      "url": "https://huggingface.co/yamz-labs/MiMo-V2.6-Flash-MOPD-EXL3-Yamz",
+      "snippet": "MiMo-V2.6-Flash-MOPD, EXL3 Model size: 309B parameters (15B active). The \"52B params\" figure in the Hugging Face sidebar is not a parameter count: the site counts the packed 16-bit words of the EXL3 format."
+    },
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+      "snippet": "XiaomiMiMo / MiMo-V2.6-Flash-MOPD Like 6 Follow Xiaomi MiMo 4.68k Text Generation Transformers Safetensors English Chinese mimo_v2 multimodal vision-language audio agent video-understanding long-context conversational custom_code 8-bit precision fp8 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6-Flash strikes the best balance between intelligence, efficiency, and cost."
+    },
+    {
+      "title": "MiMo-V2.6-Flash",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash",
+      "snippet": "Monthly or annual plans covering mimo-v2.6-pro, mimo-v2.6-flash and the full MiMo V2.5 model suite — significantly better value than pay-as-you-go at high usage volumes."
+    },
+    {
+      "title": "yamz-presets/mimo-v2.6-flash at main - GitHub",
+      "url": "https://github.com/Yamz-Labs/yamz-presets/tree/main/mimo-v2.6-flash",
+      "snippet": "mimo-v2.6-flash preset Status: partly validated. Refusal rate, harmless KL and KLD against FP8 are measured on the published pack. Task deltas and over-refusal (XSTest) were not run."
+    }
+  ]
+}

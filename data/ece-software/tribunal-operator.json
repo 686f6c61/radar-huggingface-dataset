@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ECE-Software/tribunal-operator",
+  "slug": "ece-software-tribunal-operator",
+  "author": "ECE-Software",
+  "url": "https://huggingface.co/ECE-Software/tribunal-operator",
+  "created_at": "2026-10-05T22:13:17.000Z",
+  "updated_at": "2026-10-05T22:13:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ECE-Software/gemma-3-270m",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:ECE-Software/gemma-3-270m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79218665,
+  "storage_human": "79 MB",
+  "base_model": "ECE-Software/gemma-3-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECE | Grande École d'Ingénieurs : IA, Cyber, Aéronautique... - ECE",
+      "url": "https://www.ece.fr/",
+      "snippet": "L’ECE est une école d’ingénieurs privée formant chaque année des milliers d’étudiants français et étrangers dans une pluralité de …"
+    },
+    {
+      "title": "Programme Ingénieurs - Paris, Lyon, Bordeaux, etc. | ECE",
+      "url": "https://www.ece.fr/programme-grande-ecole-ingenieurs/",
+      "snippet": "Le Programme Ingénieur de l’ECE délivre un diplôme de grade Master, reconnu par le Ministère de l’Enseignement Supérieur. Il …"
+    },
+    {
+      "title": "École centrale d'électronique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89cole_centrale_d%27%C3%A9lectronique",
+      "snippet": "Ouverte en 2018, l'ECE est installée dans l'ancien Garage Citroën dans le 7ème arrondissement, un bâtiment classé rénové en 2013 …"
+    },
+    {
+      "title": "Accueil - Ece",
+      "url": "https://www.ece.asso.fr/",
+      "snippet": "Depuis 1995, l’Institut des diplômés d’expertise comptable en entreprise (ECE) rassemble les diplômés d’expertise comptable …"
+    },
+    {
+      "title": "ECE - OMNES Education",
+      "url": "https://www.omneseducation.com/nos-etablissements/nos-ecoles/ece/",
+      "snippet": "Ecole multi-campus, multiprogrammes, multi-secteurs, spécialisée sur l’ingénierie numérique, l’ECE forme les ingénieurs et les …"
+    }
+  ]
+}

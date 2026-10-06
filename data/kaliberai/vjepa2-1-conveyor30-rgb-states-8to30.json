@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KaliberAI/vjepa2-1-conveyor30-rgb-states-8to30",
+  "slug": "kaliberai-vjepa2-1-conveyor30-rgb-states-8to30",
+  "author": "KaliberAI",
+  "url": "https://huggingface.co/KaliberAI/vjepa2-1-conveyor30-rgb-states-8to30",
+  "created_at": "2026-10-05T22:11:58.000Z",
+  "updated_at": "2026-10-05T22:12:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "video",
+    "trajectory-prediction",
+    "v-jepa-2.1",
+    "3d-motion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90522684,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bricolaje, Decoración, Jardín y Construcción - Leroy Merlin",
+      "url": "https://www.leroymerlin.es/?msockid=270a445ba75c6f39214953b2a6876e98",
+      "snippet": "Da vida a tus ideas con la gama más completa de productos de bricolaje, construcción, decoración y jardín. Mejora fácilmente tu …"
+    },
+    {
+      "title": "Productos - Leroy Merlin",
+      "url": "https://www.leroymerlin.es/productos/?msockid=270a445ba75c6f39214953b2a6876e98",
+      "snippet": "En LEROY MERLIN todos los productos al mejor precio. Amplio catálogo de productos para hogar, jardín, bricolaje y más. …"
+    },
+    {
+      "title": "Leroy Merlin: Bricolage, déco, maison et jardin",
+      "url": "https://www.leroymerlin.fr/?msockid=270a445ba75c6f39214953b2a6876e98",
+      "snippet": "Pour vos projets de bricolage, jardinage et aménagement de la maison, LEROY MERLIN propose un grand choix de marques au …"
+    },
+    {
+      "title": "Tienda Online - Leroy Merlin",
+      "url": "https://www.leroymerlin.es/preguntas-frecuentes/tienda-online/?msockid=270a445ba75c6f39214953b2a6876e98",
+      "snippet": "Los pedidos realizados en la tienda online se envían solamente a Península, Baleares y Canarias. Descubre productos de Tienda …"
+    },
+    {
+      "title": "Tiendas - Leroy Merlin",
+      "url": "https://www.leroymerlin.es/tiendas/?msockid=270a445ba75c6f39214953b2a6876e98",
+      "snippet": "Indica tu tienda favorita y disfruta de los mejores precios. *Excepto para los productos vendidos por vendedores de nuestro …"
+    }
+  ]
+}

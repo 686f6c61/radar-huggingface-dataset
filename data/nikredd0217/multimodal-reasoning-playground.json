@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nikredd0217/multimodal-reasoning-playground",
+  "slug": "nikredd0217-multimodal-reasoning-playground",
+  "author": "Nikredd0217",
+  "url": "https://huggingface.co/Nikredd0217/multimodal-reasoning-playground",
+  "created_at": "2026-10-05T21:21:30.000Z",
+  "updated_at": "2026-10-05T21:21:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arena AI: The Official AI Ranking & LLM Leaderboard",
+      "url": "https://arena.ai/",
+      "snippet": "Chat, compare, vote for the world&#x27;s best AI models. Join the community shaping the public leaderboard for LLMs, image, and code models through real-world evaluation."
+    },
+    {
+      "title": "GitHub - HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models: The ...",
+      "url": "https://github.com/HITsz-TMG/Awesome-Large-Multimodal-Reasoning-Models",
+      "snippet": "Finally, drawing on empirical insights from challenging benchmarks and experimental cases of OpenAI-O3 and O4-mini, we discuss the conceptual direction of native large multimodal reasoning models (N-LMRMs), which aim to support scalable, agentic, and adaptive reasoning and planning in complex, real-world environments."
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Argon&#x27;s reasoning capabilities across subjects, coding performance, ability to sustain long, multi-step tasks, and unmatched multimodal understanding enable it to excel across a range of enterprise workflows."
+    },
+    {
+      "title": "Best AI Models 2026 | Latest Leaderboard & Monthly Rankings",
+      "url": "https://blog.buildfastwithai.com/best-ai-models",
+      "snippet": "The definitive AI model leaderboard for 2026, updated monthly. Compare GPT-5.5, Claude Opus 4.7, Gemini 3.5, DeepSeek V4, Qwen 3.7 on coding, reasoning, multimodal, and cost."
+    },
+    {
+      "title": "Multimodal AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai",
+      "snippet": "Overview What is an example of multimodal AI? A multimodal model is a ML (machine learning) model that is capable of processing information from different modalities, including images, videos, and text. For example, Google&#x27;s multimodal model, Gemini, can receive a photo of a plate of cookies and generate a written recipe as a response and vice ..."
+    }
+  ]
+}

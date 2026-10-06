@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-efficientvit_b2",
+  "slug": "dronefreak-bdd100k-weather-efficientvit_b2",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b2",
+  "created_at": "2026-10-05T19:28:46.000Z",
+  "updated_at": "2026-10-05T19:29:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2205.14756",
+    "arxiv:1805.04687",
+    "base_model:timm/efficientvit_b2.r224_in1k",
+    "base_model:finetune:timm/efficientvit_b2.r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95420504,
+  "storage_human": "95 MB",
+  "base_model": "timm/efficientvit_b2.r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 83.46
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 66.07
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 67.54
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 65.04
+    }
+  ],
+  "sources": [
+    {
+      "title": "معرفی افزونه‌های برتر ChatGPT برای ترید در بازار رمزارزها",
+      "url": "https://www.exir.io/chatgpt-plugins-for-trade/",
+      "snippet": "Oct 6, 2024 · این مقاله از صرافی ارز دیجیتال اکسیر به بررسی نحوه استفاده از افزونه‌های ChatGPT در ترید و معرفی بهترین پلاگین‌ها می‌پردازد. ChatGPT در ترید ارز دیجیتال …"
+    },
+    {
+      "title": "بهترین افزونه‌های چت جی پی تی برای ترید و معاملات ارز دیجیتال کدام‌اند؟",
+      "url": "https://arzdigital.com/blog/best-chatgpt-crypto-trading-plugins/",
+      "snippet": "Aug 28, 2024 · بهترین افزونه‌های چت جی پی تی برای ترید ارزهای دیجیتال شامل پلاگین کوین مارکت کپ، آلکمی و چندی دیگر هستند که نحوه نصب آن‌ها را آموزش دادیم."
+    },
+    {
+      "title": "استراتژی ترید با استفاده از چت جی‌پی‌تی ChatGPT - ارزدیجیتال",
+      "url": "https://arzdigital.com/blog/trading-strategy-with-chatgpt/",
+      "snippet": "Dec 3, 2024 · استراتژی ترید با استفاده از ChatGPT این روزها حسابی ترند است. ChatGPT به‌عنوان یک هوش مصنوعی چندمنظوره، می‌تواند در تحلیل تکنیکال و پیش‌بینی روندهای …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://m.chatgpt.com/?locale=fa",
+      "snippet": "از ChatGPT برای پاسخ‌دادن به پرسش‌ها، نوشتن، ایجاد تصاویر، انجام کارها و کدنویسی استفاده کنید—همه در یک جا. رایگان شروع کنید یا اپلیکیشن را دانلود کنید."
+    },
+    {
+      "title": "آموزش استفاده از ChatGPT برای تحلیل و ترید + پرامپت های کاربردی",
+      "url": "https://iranrebate.com/article/forex/chatgpt-technical-analysis/",
+      "snippet": "در این مقاله به آموزش استفاده از ChatGPT برای تحلیل تکنیکال می‌پردازیم؛ شما یاد می‌گیرید که چطور چارت را به چت جی پی تی بدهید و چه اطلاعاتی در پرامپت‌تان بگنجانید تا جواب دقیقی بگیرید."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MarvinZhw/AIMC",
+  "slug": "marvinzhw-aimc",
+  "author": "MarvinZhw",
+  "url": "https://huggingface.co/MarvinZhw/AIMC",
+  "created_at": "2026-10-05T21:26:30.000Z",
+  "updated_at": "2026-10-05T22:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "analog-in-memory-computing",
+    "aihwkit",
+    "hardware-aware-training",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 837647969,
+  "storage_human": "838 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marvin - Marvin",
+      "url": "https://askmarvin.ai/welcome",
+      "snippet": "Marvin is a Python framework for building AI applications with LLMs. Marvin provides a clean, intuitive interface for working with large language models (LLMs) while handling all the complexity of state management, conversation history, and agent coordination."
+    },
+    {
+      "title": "MarvinZhw/LSTM-HWA-PTB · Hugging Face",
+      "url": "https://huggingface.co/MarvinZhw/LSTM-HWA-PTB",
+      "snippet": "MarvinZhw / LSTM-HWA-PTB like 0 Model card FilesFiles and versions Community No model card"
+    },
+    {
+      "title": "AIMCDev - Minecraft Plugin - Modrinth",
+      "url": "https://modrinth.com/plugin/aimcdev",
+      "snippet": "AIMCDev is an AI-powered Minecraft server plugin that takes care of the most tedious and repetitive tasks in server development and management. Instead of manually editing config files, running commands one by one, or looking up plugin documentation every time, you simply describe what you want in plain language and the AI handles the rest."
+    },
+    {
+      "title": "PDF Deep learning software stacks for analogue in-memory computing-based ...",
+      "url": "https://www.nature.com/articles/s44287-025-00187-1.pdf",
+      "snippet": "The large-scale adoption of AIMC-based accelerators demands efficient techniques and tools for the co-design of software and hardware, in addition to sophisticated software stacks, which abstract ..."
+    },
+    {
+      "title": "Presenting the augmented self: extending sender effects of the ...",
+      "url": "https://academic.oup.com/anncom/advance-article/doi/10.1093/anncom/wlag029/8729171",
+      "snippet": "AIMC differs in that AI is an added layer to CMC that can contribute to message production, while the sender remains responsible for and the final arbiter of the content. This extension revises the hyperpersonal model&#x27;s assumption of the sender&#x27;s solo authorship and fully sender-controlled message production."
+    }
+  ]
+}

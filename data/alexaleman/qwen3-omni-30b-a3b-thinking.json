@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "AlexAleman/Qwen3-Omni-30B-A3B-Thinking",
+  "slug": "alexaleman-qwen3-omni-30b-a3b-thinking",
+  "author": "AlexAleman",
+  "url": "https://huggingface.co/AlexAleman/Qwen3-Omni-30B-A3B-Thinking",
+  "created_at": "2026-10-05T21:59:41.000Z",
+  "updated_at": "2026-10-05T21:59:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_omni_moe",
+    "text-to-audio",
+    "multimodal",
+    "any-to-any",
+    "en",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31719205488,
+  "parameters_human": "31.72B",
+  "storage_bytes": 63440997640,
+  "storage_human": "63.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

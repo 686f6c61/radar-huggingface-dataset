@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hridya423/lexis-0.5b-GGUF",
+  "slug": "hridya423-lexis-0-5b-gguf",
+  "author": "hridya423",
+  "url": "https://huggingface.co/hridya423/lexis-0.5b-GGUF",
+  "created_at": "2026-10-05T19:59:58.000Z",
+  "updated_at": "2026-10-05T20:05:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "shell",
+    "bash",
+    "powershell",
+    "terminal",
+    "nl2bash",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807712,
+  "storage_human": "398 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

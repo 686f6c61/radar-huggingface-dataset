@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-weather-efficientvit_b3",
+  "slug": "dronefreak-bdd100k-weather-efficientvit_b3",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-weather-efficientvit_b3",
+  "created_at": "2026-10-05T19:29:45.000Z",
+  "updated_at": "2026-10-05T19:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "weather-classification",
+    "dataset:dronefreak/BDD100K-Weather-Classification",
+    "arxiv:2205.14756",
+    "arxiv:1805.04687",
+    "base_model:timm/efficientvit_b3.r224_in1k",
+    "base_model:finetune:timm/efficientvit_b3.r224_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192808535,
+  "storage_human": "193 MB",
+  "base_model": "timm/efficientvit_b3.r224_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 83.51
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 68.17
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro precision (test split)",
+      "value": 81.75
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Weather Classification",
+      "metric": "Macro recall (test split)",
+      "value": 66.34
+    }
+  ],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "axi0mX",
   "url": "https://huggingface.co/axi0mX/Qwen3.8-Flash-Next-Uncensored-GGUF",
   "created_at": "2026-10-05T01:40:13.000Z",
-  "updated_at": "2026-10-05T09:07:14.000Z",
+  "updated_at": "2026-10-06T02:20:49.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": 179551050368,
   "parameters_human": "179.55B",
-  "storage_bytes": 449505619936,
-  "storage_human": "449.5 GB",
+  "storage_bytes": 957745909920,
+  "storage_human": "957.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

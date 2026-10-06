@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "riykuma98/deit-classification",
+  "slug": "riykuma98-deit-classification",
+  "author": "riykuma98",
+  "url": "https://huggingface.co/riykuma98/deit-classification",
+  "created_at": "2026-10-05T19:18:49.000Z",
+  "updated_at": "2026-10-05T19:18:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

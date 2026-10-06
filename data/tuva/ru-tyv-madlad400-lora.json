@@ -5,7 +5,7 @@
   "author": "tuva",
   "url": "https://huggingface.co/tuva/ru-tyv-madlad400-lora",
   "created_at": "2026-10-02T15:51:46.000Z",
-  "updated_at": "2026-10-02T16:26:00.000Z",
+  "updated_at": "2026-10-05T05:09:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 44,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 38065376,
-  "storage_human": "38 MB",
+  "storage_bytes": 75868976,
+  "storage_human": "76 MB",
   "base_model": "google/madlad400-3b-mt",
   "formats": [
     "safetensors"

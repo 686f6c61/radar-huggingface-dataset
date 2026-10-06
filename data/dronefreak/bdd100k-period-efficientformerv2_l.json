@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-period-efficientformerv2_l",
+  "slug": "dronefreak-bdd100k-period-efficientformerv2_l",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-period-efficientformerv2_l",
+  "created_at": "2026-10-05T19:40:25.000Z",
+  "updated_at": "2026-10-05T19:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "bdd100k-toolkit",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "time-of-day-classification",
+    "dataset:dronefreak/BDD100K-Period-Classification",
+    "arxiv:2212.08059",
+    "arxiv:1805.04687",
+    "base_model:timm/efficientformerv2_l.snap_dist_in1k",
+    "base_model:finetune:timm/efficientformerv2_l.snap_dist_in1k",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111441132,
+  "storage_human": "111 MB",
+  "base_model": "timm/efficientformerv2_l.snap_dist_in1k",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Top-1 accuracy (test split)",
+      "value": 93.31
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro F1 (test split)",
+      "value": 81.65
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro precision (test split)",
+      "value": 86.02
+    },
+    {
+      "task": "Image Classification",
+      "dataset": "BDD100K Period (Time-of-Day) Classification",
+      "metric": "Macro recall (test split)",
+      "value": 78.36
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Live Adult Webcams | xhamsterlive.com",
+      "url": "https://xham.live/",
+      "snippet": "Browse through hundreds of models from Women, Men, Couples, and Transsexuals performing live sex shows 24/7. Besides …"
+    },
+    {
+      "title": "live-sex videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/live-sex",
+      "snippet": "Real passionate sex on live webcam show 15 min Paulwilliamsok - 740k Views - 1080p"
+    },
+    {
+      "title": "Live Sex Cams and Free Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "Every day, thousands of real people go live and stream online their most intimate moments. You can enjoy high-quality webcam sex …"
+    },
+    {
+      "title": "Chaturbate - Free Adult Webcams, Live Sex, Free Sex Chat, …",
+      "url": "https://chaturbate.com/",
+      "snippet": "Watch Live Cams Now! No Registration Required - 100% Free Uncensored Adult Chat. Start chatting with amateurs, exhibitionists, …"
+    },
+    {
+      "title": "Free Live Porn and Hardcore Webcams | xHamsterLive",
+      "url": "https://xhamsterlive.com/couples",
+      "snippet": "Watch Hardcore Shows with Couples, Threesomes, Group Sex and Gangbangs in Official Porn Webcams from xHamster."
+    }
+  ]
+}

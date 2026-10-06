@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lche-ung2/contrastive-learning",
+  "slug": "lche-ung2-contrastive-learning",
+  "author": "lche-ung2",
+  "url": "https://huggingface.co/lche-ung2/contrastive-learning",
+  "created_at": "2026-10-05T21:06:41.000Z",
+  "updated_at": "2026-10-05T21:06:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive Learning Guide | AI Understanding",
+      "url": "https://aiunderstanding.org/learn/contrastive-learning",
+      "snippet": "Contrastive learning teaches a model to pull similar things together and push dissimilar things apart in an embedding space."
+    },
+    {
+      "title": "Contrastive Learning: A Comprehensive Guide - Medium",
+      "url": "https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77",
+      "snippet": "The Two Flavors of Learning: Supervised vs. Unsupervised Supervised Contrastive Learning Here, labels guide the model training, simplifying the generation of positive and negative pairs."
+    },
+    {
+      "title": "A comprehensive survey on contrastive learning - ScienceDirect",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0925231224014164",
+      "snippet": "Abstract Contrastive Learning is self-supervised representation learning by training a model to differentiate between similar and dissimilar samples. It has been shown to be effective and has gained significant attention in various computer vision and natural language processing tasks."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "Contrastive Learning Explained: How Modern AI Learns Better - upGrad",
+      "url": "https://www.upgrad.com/blog/contrastive-learning/",
+      "snippet": "Learn contrastive learning, how it works, key architectures, practical applications, advantages, limitations, and its role in powering modern AI systems."
+    }
+  ]
+}

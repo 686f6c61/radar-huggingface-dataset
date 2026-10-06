@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Synthia-4-27B-FP8",
+  "slug": "vwdubb-synthia-4-27b-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Synthia-4-27B-FP8",
+  "created_at": "2026-10-06T00:23:56.000Z",
+  "updated_at": "2026-10-06T00:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "synthia",
+    "personal-ai",
+    "assistant",
+    "conversational",
+    "agentic",
+    "reasoning",
+    "long-context",
+    "tool-use",
+    "qwen3",
+    "multimodal",
+    "mtp",
+    "base_model:migtissera/Synthia-4-27B",
+    "base_model:quantized:migtissera/Synthia-4-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38465169000,
+  "storage_human": "38.5 GB",
+  "base_model": "migtissera/Synthia-4-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Institut Méditerranéen d'Oceanologie - Mediterranean ...",
+      "url": "https://hal.science/MIO/page/index",
+      "snippet": "Ses cadres d’exercice sont l’océan mondial, ses interfaces avec le continent, l’atmosphère et le sédiment. Le laboratoire est issu de …"
+    },
+    {
+      "title": "Accueil - Institut Méditerranéen d'Oceanologie - Mediterranean ...",
+      "url": "https://hal.science/MIO",
+      "snippet": "Ses cadres d’exercice sont l’océan mondial, ses interfaces avec le continent, l’atmosphère et le sédiment.Le laboratoire est issu de …"
+    },
+    {
+      "title": "MIO - Mediterranean Institute of Oceanography - Environmental ...",
+      "url": "https://pliniuscursus.univ-amu.fr/lab/institut-mediterraneen-doceanologie-environmental-microbiology-and-biotechnology/",
+      "snippet": "Mar 13, 2025 · The MIO research laboratory is a component of the OSU-Pytheas Institute and is under the joint direction of Aix …"
+    },
+    {
+      "title": "Institut méditerranéen d'océanologie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Institut_m%C3%A9diterran%C3%A9en_d%27oc%C3%A9anologie",
+      "snippet": "Le laboratoire est installé sur plusieurs sites : Marseille-Luminy, Toulon-La Garde, la Base Marine d’IFREMER à La Seyne-sur-Mer …"
+    },
+    {
+      "title": "MIO - Institut Méditerranéen d’Océanologie - Université de Toulon",
+      "url": "https://www.univ-tln.fr/mio-institut-mediterraneen-doceanologie/",
+      "snippet": "Ce laboratoire constitue un pôle d’océanologie de 250 personnes (dont 60 personnel de l’UTLN) regroupant des personnels …"
+    }
+  ]
+}

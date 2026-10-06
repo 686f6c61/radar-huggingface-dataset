@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-00-circuit-a6b3f6631056",
+  "slug": "davidheineman-rlve-archive-fast-r1-p1r8-20261003-085503-00-circuit-a6b3f6631056",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r8-20261003-085503-00-circuit-a6b3f6631056",
+  "created_at": "2026-10-05T19:45:54.000Z",
+  "updated_at": "2026-10-05T19:47:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3554878771,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La connexion à Mon Compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/actualites/la-caf-et-vous/la-connexion-mon-compte",
+      "snippet": "Pour vous connecter à L’Espace Mon Compte ou sur l’appli Caf-Mon Compte, vous devez utiliser votre mot de passe Caf. C’est le …"
+    },
+    {
+      "title": "CAF - Connexion",
+      "url": "https://connect.caf.fr/connexionappli/dist/",
+      "snippet": "FranceConnect est une solution proposée par l'État pour sécuriser et simplifier la connexion à vos services en ligne. S'identifier avec …"
+    },
+    {
+      "title": "Page d'accueil Allocataires | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/",
+      "snippet": "Le moyen le plus sûr de savoir si vous bénéficiez bien de tous vos droits, c’est d’aller sur le site caf.fr > Espace Mon Compte. Vous …"
+    },
+    {
+      "title": "J'accède à mon compte | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/allocataires/caf-de-l-essonne/offre-de-service/vie-professionnelle/j-accede-mon-compte",
+      "snippet": "Vous voulez gérer votre compte ?Suivant votre besoin, suivez le guide pour faire les changements en ligne !"
+    },
+    {
+      "title": "CAF - Connexion",
+      "url": "https://wwwd.caf.fr/redirect/s/Redirect?page=portailTuteurPhysique",
+      "snippet": "Accédez à votre espace personnel sur le site de la CAF pour gérer vos prestations et démarches en ligne."
+    }
+  ]
+}

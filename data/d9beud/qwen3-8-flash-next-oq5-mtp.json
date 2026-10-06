@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "d9beuD/Qwen3.8-Flash-Next-oQ5-mtp",
+  "slug": "d9beud-qwen3-8-flash-next-oq5-mtp",
+  "author": "d9beuD",
+  "url": "https://huggingface.co/d9beuD/Qwen3.8-Flash-Next-oQ5-mtp",
+  "created_at": "2026-10-05T19:43:35.000Z",
+  "updated_at": "2026-10-05T19:56:02.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 128556736601,
+  "storage_human": "128.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

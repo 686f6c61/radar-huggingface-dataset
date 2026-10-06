@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b",
+  "slug": "davidheineman-rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-fast-r1-p1r16-20261003-085503-00-circuit-5b75ae2fc70b",
+  "created_at": "2026-10-05T19:16:15.000Z",
+  "updated_at": "2026-10-05T19:17:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3554878772,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/1/",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://docs.google.com/?hl=en",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "MLA Template - Google Docs",
+      "url": "https://docs.google.com/document/d/19B-yXT9h9A1hXPugvvmo_X2esoLNWJU5ycqK6Fr65gA/edit",
+      "snippet": "Your Name Your Teacher’s Name Class Name and Period Date Title of Your Paper Press tab, and begin typing your paper here. As …"
+    },
+    {
+      "title": "Google Docs: login",
+      "url": "https://docs.google.com/document/u/0/?hl=pt-BR&pli=1",
+      "snippet": "Acesse o Google Docs com uma Conta do Google pessoal ou uma conta do Google Workspace, para uso comercial."
+    },
+    {
+      "title": "Login - Akun Google",
+      "url": "https://docs.google.com/?hl=id",
+      "snippet": "Bukan komputer Anda? Gunakan jendela penjelajahan rahasia untuk login. Pelajari lebih lanjut cara menggunakan Mode tamu"
+    }
+  ]
+}

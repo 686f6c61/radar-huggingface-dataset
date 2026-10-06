@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "gnumanth/sanskrit-tts-web",
+  "slug": "gnumanth-sanskrit-tts-web",
+  "author": "gnumanth",
+  "url": "https://huggingface.co/gnumanth/sanskrit-tts-web",
+  "created_at": "2026-10-05T19:58:41.000Z",
+  "updated_at": "2026-10-05T23:10:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "sanskrit",
+    "tts",
+    "webgpu",
+    "wasm",
+    "onnxruntime-web",
+    "flow-matching",
+    "vocos",
+    "chandas",
+    "text-to-speech",
+    "sa",
+    "kn",
+    "te",
+    "ml",
+    "ta",
+    "bn",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 297421278,
+  "storage_human": "297 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS)",
+      "url": "https://www.mayoclinic.org/diseases-conditions/chronic-fatigue-syndrome/symptoms-causes/syc-20360490",
+      "snippet": "Jan 17, 2026 · Myalgic encephalomyelitis/chronic fatigue syndrome, also called ME/CFS, is a complicated condition. It causes …"
+    },
+    {
+      "title": "Myalgic encephalomyelitis/chronic fatigue syndrome - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Myalgic_encephalomyelitis/chronic_fatigue_syndrome",
+      "snippet": "Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS) is a disabling chronic illness. People with ME/CFS experience …"
+    },
+    {
+      "title": "Encéphalomyélite myalgique/syndrome de fatigue chronique",
+      "url": "https://fr.wikipedia.org/wiki/Enc%C3%A9phalomy%C3%A9lite_Myalgique/Syndrome_de_Fatigue_Chronique",
+      "snippet": "Sa caractéristique principale est le malaise post-effort, qui consiste en une incapacité à tolérer l'effort physique et cognitif."
+    },
+    {
+      "title": "Myalgic encephalomyelitis or chronic fatigue syndrome (ME/CFS)",
+      "url": "https://www.nhs.uk/conditions/chronic-fatigue-syndrome-cfs/",
+      "snippet": "Myalgic encephalomyelitis, also called chronic fatigue syndrome or ME/CFS, is a long-term condition that can affect different parts of …"
+    },
+    {
+      "title": "ME/CFS (Myalgic Encephalomyelitis/Chronic Fatigue Syndrome)",
+      "url": "https://www.ninds.nih.gov/health-information/disorders/mecfs-myalgic-encephalomyelitischronic-fatigue-syndrome",
+      "snippet": "May 26, 2026 · Myalgic encephalomyelitis/chronic fatigue syndrome (ME/CFS), sometimes called ME, is a condition that affects …"
+    }
+  ]
+}

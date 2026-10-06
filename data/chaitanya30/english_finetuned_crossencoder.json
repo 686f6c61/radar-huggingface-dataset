@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Chaitanya30/English_finetuned_crossencoder",
+  "slug": "chaitanya30-english_finetuned_crossencoder",
+  "author": "Chaitanya30",
+  "url": "https://huggingface.co/Chaitanya30/English_finetuned_crossencoder",
+  "created_at": "2026-10-05T20:43:44.000Z",
+  "updated_at": "2026-10-05T20:45:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713601,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866412,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaitanya30 (Chaitanya Wanjari) - Hugging Face",
+      "url": "https://huggingface.co/Chaitanya30",
+      "snippet": "User profile of Chaitanya Wanjari on Hugging Face"
+    },
+    {
+      "title": "Fine-Tuning Large Language Models: How Vertex AI Takes LLMs to the Next ...",
+      "url": "https://codelabs.developers.google.com/llm-finetuning-supervised",
+      "snippet": "3. Fine-tune a large language model This codelab uses Vertex AI SDK for Python to fine-tune the model. You can perform fine-tuning using the other options as well — HTTP, CURL command, Java SDK, Console. You can fine-tune and evaluate your model for customized responses in 5 steps. You can refer to the full code in the file llm_fine_tuning_supervised.ipynb from the repository."
+    },
+    {
+      "title": "How to Fine-Tune AI Models: Techniques, Examples & Step-by-Step Guide",
+      "url": "https://dev.to/jaipalsingh/how-to-fine-tune-ai-models-techniques-examples-step-by-step-guide-1aph",
+      "snippet": "Learn how to fine-tune AI models with practical steps. Covers LoRA, full fine-tuning, dataset prep, and when fine-tuning beats RAG or prompt engineering. Real enterprise use cases included."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, SpaceXAI, DeepSeek, Qwen, Kimi, Meta, Mistral, and more."
+    }
+  ]
+}

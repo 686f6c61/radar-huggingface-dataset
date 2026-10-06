@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "my-temp/Qwen3.8-3B-tpu-train",
+  "slug": "my-temp-qwen3-8-3b-tpu-train",
+  "author": "my-temp",
+  "url": "https://huggingface.co/my-temp/Qwen3.8-3B-tpu-train",
+  "created_at": "2026-10-05T22:18:36.000Z",
+  "updated_at": "2026-10-05T22:18:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen2",
+    "text-generation",
+    "cloud-tpu",
+    "trillium",
+    "tpu-v6e",
+    "tpu-7x",
+    "torch-tpu",
+    "tpu-agent-suite",
+    "torchtitan",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MY TF1 : programmes en replay de TF1, TMC, TFX et TF1 Séries …",
+      "url": "https://www.canalplus.com/chaines/mytf1",
+      "snippet": "Regardez vos programmes MYTF1 (TF1, TMC, TFX et TF1 Séries Films) en replay avec l'application CANAL+"
+    },
+    {
+      "title": "Des bijoux en acier inoxydable et ajustables - My House of Jewels",
+      "url": "https://www.myhouseofjewels.fr/",
+      "snippet": "Nos magnifiques bijoux en acier inoxydable, alliant style et durabilité pour une élégance intemporelle. Fabriqués avec précision et …"
+    },
+    {
+      "title": "Créez votre propre adresse @my.com ! | myMail - client de …",
+      "url": "https://mymail.my.com/fr/",
+      "snippet": "myMail - l'application de messagerie intelligente pour gérer tous vos comptes (Gmail, Yahoo!, AOL, Hotmail, Outlook, MSN et autres …"
+    },
+    {
+      "title": "My Apps",
+      "url": "https://myapplications.microsoft.com/",
+      "snippet": "Access and manage all your Microsoft apps and services in one place with My Apps."
+    },
+    {
+      "title": "My Sign-Ins",
+      "url": "https://mysignins.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account sign-ins securely."
+    }
+  ]
+}

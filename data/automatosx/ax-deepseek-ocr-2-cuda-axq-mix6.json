@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-MIX6",
+  "slug": "automatosx-ax-deepseek-ocr-2-cuda-axq-mix6",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-MIX6",
+  "created_at": "2026-10-05T22:45:45.000Z",
+  "updated_at": "2026-10-05T22:45:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "deepseek_vl_v2",
+    "deepseek-ocr2",
+    "ocr",
+    "cuda",
+    "mixed-precision",
+    "nvfp4",
+    "fp8",
+    "six-bit-budget-class",
+    "compressed-tensors",
+    "axquant",
+    "automatosx",
+    "development-preview",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:deepseek-ai/DeepSeek-OCR-2",
+    "base_model:quantized:deepseek-ai/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2728516480,
+  "parameters_human": "2.73B",
+  "storage_bytes": 3602581136,
+  "storage_human": "3.6 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-06T02:09:30.903Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16",
+      "snippet": "Safetensors vllm deepseek_vl_v2 deepseek-ocr2 ocr cuda nvfp4 w4a16 compressed-tensors axquant automatosx development-preview custom_code 8-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A16 Source and payload Development runtime checks Reproduce the ..."
+    },
+    {
+      "title": "AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4 · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-CUDA-AXQ-NVFP4-W4A4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - deepseek-ai/DeepSeek-OCR-2: Visual Causal Flow",
+      "url": "https://github.com/deepseek-ai/DeepSeek-OCR-2",
+      "snippet": "Visual Causal Flow. Contribute to deepseek-ai/DeepSeek-OCR-2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Installation | deepseek-ai/DeepSeek-OCR | DeepWiki",
+      "url": "https://deepwiki.com/deepseek-ai/DeepSeek-OCR/2.1-installation",
+      "snippet": "Installation involves setting up a Python environment, installing GPU-accelerated deep learning libraries, and downloading the pre-trained model weights. For instructions on running your first OCR inference after installation, see Quick Start with Transformers or Quick Start with vLLM For detailed configuration of the installed system, see ..."
+    },
+    {
+      "title": "DeepSeek-OCR-2 · Model · Inferix",
+      "url": "https://inferix.co/models/deepseek-ai/DeepSeek-OCR-2",
+      "snippet": "🌟 Github 📥 Model Download 📄 Paper Link 📄 Arxiv Paper Link DeepSeek OCR 2: Visual Causal Flow Explore more human like visual encoding. Usage Inference using Huggingface transformers on NVIDIA GPUs. Requirements tested on python 3.12.9 + CUDA11.8： vLLM Refer to 🌟GitHub for guidance on model inference acceleration and PDF processing, etc. Support Modes Dynamic resolution Default ..."
+    }
+  ]
+}

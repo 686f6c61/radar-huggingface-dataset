@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ahnad0502/ggml-silero-vad-v6.2.3",
+  "slug": "ahnad0502-ggml-silero-vad-v6-2-3",
+  "author": "ahnad0502",
+  "url": "https://huggingface.co/ahnad0502/ggml-silero-vad-v6.2.3",
+  "created_at": "2026-10-05T22:27:19.000Z",
+  "updated_at": "2026-10-05T22:28:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885098,
+  "storage_human": "885098 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Ways to Alleviate Swelling Using Natural Ingredients",
+      "url": "https://realitypathing.com/best-ways-to-alleviate-swelling-using-natural-ingredients/",
+      "snippet": "Jul 12, 2025 · Incorporating remedies like turmeric, ginger, aloe vera, and cold herbal compresses alongside healthy lifestyle habits …"
+    },
+    {
+      "title": "Tips for Managing Swelling with Herbal Remedies",
+      "url": "https://realitypathing.com/tips-for-managing-swelling-with-herbal-remedies/",
+      "snippet": "Jul 12, 2025 · In this article, we will explore practical tips for managing swelling using herbal remedies. We will cover the most …"
+    },
+    {
+      "title": "7 Natural Remedies Against Swelling And Inflammation",
+      "url": "https://www.news18.com/lifestyle/7-natural-remedies-against-swelling-and-inflammation-8047531.html",
+      "snippet": "Jun 10, 2023 · Let’s take a closer look at a variety of natural remedies that can help alleviate swelling, pain, and inflammation, …"
+    },
+    {
+      "title": "Foods Help Reduce Swelling: Natural Anti-Inflammatory Choices",
+      "url": "https://discover.texasrealfood.com/healthy-living/anti-inflammatory-foods-that-naturally-combat-swelling",
+      "snippet": "Jul 28, 2024 · Discover how foods help reduce swelling and combat inflammation naturally. Our expert-curated list reveals powerful …"
+    },
+    {
+      "title": "What Are the Best Herbs to Reduce Swelling? - Biology Insights",
+      "url": "https://biologyinsights.com/what-are-the-best-herbs-to-reduce-swelling/",
+      "snippet": "2 days ago · Turmeric, ginger, horse chestnut, and bromelain from pineapple sit near the top of the list, each backed by multiple …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sn3hapo95nd/perceiver-multitask98",
+  "slug": "sn3hapo95nd-perceiver-multitask98",
+  "author": "sn3hapo95nd",
+  "url": "https://huggingface.co/sn3hapo95nd/perceiver-multitask98",
+  "created_at": "2026-10-05T22:40:27.000Z",
+  "updated_at": "2026-10-05T22:40:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obtenir une attestation de droits | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/adresses-et-contacts/l-obtention-d-un-document/obtenir-une-attestation/obtenir-une-attestation-de-droits",
+      "snippet": "Vous pouvez télécharger votre attestation de droits depuis votre compte (rubrique Documents). Vous pouvez également l'obtenir …"
+    },
+    {
+      "title": "Comment obtenir une attestation de droits (attestation Vitale ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F10662",
+      "snippet": "Pour obtenir des renseignements sur vos droits et démarches, poser une question sur votre dossier, signaler un changement de …"
+    },
+    {
+      "title": "Obtenir une attestation | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/adresses-et-contacts/l-obtention-d-un-document/obtenir-une-attestation",
+      "snippet": "Trouvez le moyen le plus adapté pour obtenir une attestation de l’Assurance Maladie : compte ameli, e-mail ou téléphone."
+    },
+    {
+      "title": "Obtenir une attestation de droits (régime général)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R49811",
+      "snippet": "Comment obtenir une attestation de droits (attestation Vitale) ? Je donne mon avis sur Services Publics +. L'administration …"
+    },
+    {
+      "title": "Comment obtenir une attestation de sécurité sociale sans compte …",
+      "url": "https://www.mes-allocs.fr/guides/ameli/compte-ameli-fr/obtenir-une-attestation-de-securite-sociale-sans-compte-ameli/",
+      "snippet": "Apr 22, 2026 · L'attestation de sécurité sociale est un document officiel prouvant votre affiliation au régime de l'Assurance Maladie. …"
+    }
+  ]
+}

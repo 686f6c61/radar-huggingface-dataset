@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "avartha/kev-4b-merged",
+  "slug": "avartha-kev-4b-merged",
+  "author": "avartha",
+  "url": "https://huggingface.co/avartha/kev-4b-merged",
+  "created_at": "2026-10-05T21:01:33.000Z",
+  "updated_at": "2026-10-05T21:03:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "kev",
+    "decision-model",
+    "pointer-head",
+    "unofficial",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9101929791,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base, jaredpalmer/kev-4b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anirudha Agrawal - Co-Founder Avartha AI | PHD Student ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/anirudha-agrawal",
+      "snippet": "Co-Founder Avartha AI | PHD Student @ Georgia Tech | Systems for Machine Learning · Experience: Avartha · Education: Georgia Institute of Technology ..."
+    },
+    {
+      "title": "AI Unlocks GPU Optimization Search Space - LinkedIn",
+      "url": "https://www.linkedin.com/posts/emi-andere_the-search-space-for-gpu-optimization-was-activity-7413666360133791745-1w0D",
+      "snippet": "04.01.2026 ... ... merged these three into a single CUDA kernel. ... ✓ Agentic Ready: 3-tier memory allows \"Model Bundling\"—switching between multiple models in ..."
+    },
+    {
+      "title": "Telugu-English Vocabulary Guide | PDF | Nature - Scribd",
+      "url": "https://www.scribd.com/doc/92225095/English-Telugu-Dictionary",
+      "snippet": "... ai cheppinat'lu vinaka p uparamu cheiy kramabhan'gam eirpaat'u che tanadi ... Model Moderate Modern Modernism ka Modest ini Modicum ddi Modify Modish ..."
+    },
+    {
+      "title": "Studies in Hinduism - MDPI",
+      "url": "https://mdpi-res.com/bookfiles/book/3830/Studies_in_Hinduism.pdf?v=1789175128",
+      "snippet": "also known locally as Visv¯ambhar, Nim¯ai, Gaura, and Gaur¯a ˙nga. Over the ... Model: Sita and R¯adh¯a in Scripture and on Screen. New York: Oxford."
+    },
+    {
+      "title": "Pradyumna Byappanahalli Suresha - Sensor Algorithms at Apple",
+      "url": "https://www.linkedin.com/in/pradyumna-b-suresha",
+      "snippet": "Sensor Algorithms at Apple · An experienced engineer with expertise in signal processing, machine learning, sensors and data acquisition systems."
+    }
+  ]
+}

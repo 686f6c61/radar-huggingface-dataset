@@ -5,7 +5,7 @@
   "author": "chutesai",
   "url": "https://huggingface.co/chutesai/parallax-8b-kappa",
   "created_at": "2026-09-29T12:01:31.000Z",
-  "updated_at": "2026-10-03T10:43:22.000Z",
+  "updated_at": "2026-10-05T09:00:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 175,
+  "downloads_30d": 177,
   "trending_score": 0,
   "parameters": 1600912175,
   "parameters_human": "1.60B",
-  "storage_bytes": 386856031300,
+  "storage_bytes": 386856733522,
   "storage_human": "386.9 GB",
   "base_model": null,
   "formats": [

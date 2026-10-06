@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "My-Name-Is-Jeff/vitrine-sing",
+  "slug": "my-name-is-jeff-vitrine-sing",
+  "author": "My-Name-Is-Jeff",
+  "url": "https://huggingface.co/My-Name-Is-Jeff/vitrine-sing",
+  "created_at": "2026-10-05T22:54:39.000Z",
+  "updated_at": "2026-10-05T22:55:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "audio",
+    "source-separation",
+    "vocals",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 488987086,
+  "storage_human": "489 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MY TF1 : programmes en replay de TF1, TMC, TFX et TF1 Séries …",
+      "url": "https://www.canalplus.com/chaines/mytf1",
+      "snippet": "Regardez vos programmes MYTF1 (TF1, TMC, TFX et TF1 Séries Films) en replay avec l'application CANAL+"
+    },
+    {
+      "title": "Des bijoux en acier inoxydable et ajustables - My House of Jewels",
+      "url": "https://www.myhouseofjewels.fr/",
+      "snippet": "Nos magnifiques bijoux en acier inoxydable, alliant style et durabilité pour une élégance intemporelle. Fabriqués avec précision et …"
+    },
+    {
+      "title": "Créez votre propre adresse @my.com ! | myMail - client de …",
+      "url": "https://mymail.my.com/fr/",
+      "snippet": "myMail - l'application de messagerie intelligente pour gérer tous vos comptes (Gmail, Yahoo!, AOL, Hotmail, Outlook, MSN et autres …"
+    },
+    {
+      "title": "My Apps",
+      "url": "https://myapplications.microsoft.com/",
+      "snippet": "Access and manage all your Microsoft apps and services in one place with My Apps."
+    },
+    {
+      "title": "# (zu zitieren als:) # Korpusbasierte Wortformenliste DeReWo, # v ...",
+      "url": "https://is.muni.cz/th/kl48x/DeReWo-Statistik.pdf",
+      "snippet": "... Name 9 österreichischen 9 gefragt 9 nannte 9 fürs 9 unterstützen 9. Tages 9. Wahlen 9 reden 9. Becker 9. Polizisten 9. Mannschaften 9 droht 9 gebaut 9 aktiv 9."
+    }
+  ]
+}

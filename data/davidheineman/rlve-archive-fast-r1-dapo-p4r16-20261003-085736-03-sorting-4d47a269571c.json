@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "davidheineman/rlve-archive-fast-r1-dapo-p4r16-20261003-085736-03-sorting-4d47a269571c",
+  "slug": "davidheineman-rlve-archive-fast-r1-dapo-p4r16-20261003-085736-03-sorting-4d47a269571c",
+  "author": "davidheineman",
+  "url": "https://huggingface.co/davidheineman/rlve-archive-fast-r1-dapo-p4r16-20261003-085736-03-sorting-4d47a269571c",
+  "created_at": "2026-10-05T19:13:54.000Z",
+  "updated_at": "2026-10-05T19:15:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "rlve",
+    "scratch-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3554878905,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Shoot a Three Pointer: 12 Steps (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Shoot-a-Three-Pointer",
+      "snippet": "Mar 20, 2026 · You don't have to be Stephen Curry to shoot three-pointers. In fact, you can get better at shooting three-pointers …"
+    },
+    {
+      "title": "Beyond the Arc: Mastering Three-Point Shooting Mechanics",
+      "url": "https://basketballfundamentals.com/beyond-the-arc-mastering-three-point-shooting-mechanics/",
+      "snippet": "Jan 18, 2025 · This guide provides a deep dive into the physical and mental aspects of three-point shooting, breaking down the …"
+    },
+    {
+      "title": "5 Drills to Improve Your Three-Point Shooting Accuracy",
+      "url": "https://barrybekkedam.com/5-drills-to-improve-your-three-point-shooting-accuracy/",
+      "snippet": "Nov 2, 2025 · In this article, you’ll learn five proven drills used by elite coaches and players to sharpen your perimeter shooting. Each …"
+    },
+    {
+      "title": "5 TIPS Guaranteed To Improve Your 3 Point Shot! - YouTube",
+      "url": "https://www.youtube.com/watch?v=Fw9Km_MpDsU",
+      "snippet": "Mar 17, 2024 · Through focused repetition and deliberate practice, you'll gradually enhance your muscle memory, consistency, and …"
+    },
+    {
+      "title": "How To MAKE MORE Three Pointers (The ULTIMATE Shooting",
+      "url": "https://www.youtube.com/watch?v=lYLv4ux7Pd4",
+      "snippet": "If you want to become a better shooter in basketball, learn how to make more three pointers, improve your basketball confidence, …"
+    }
+  ]
+}

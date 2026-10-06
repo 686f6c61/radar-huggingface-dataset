@@ -25,8 +25,8 @@
     "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 25,
+  "likes": 1,
+  "downloads_30d": 45,
   "trending_score": 0,
   "parameters": 3075256320,
   "parameters_human": "3.08B",

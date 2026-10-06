@@ -4,8 +4,8 @@
   "slug": "kawattaronin-artemis-31b-v1-2-abliterix",
   "author": "kawattaronin",
   "url": "https://huggingface.co/kawattaronin/Artemis-31B-v1.2-abliterix",
-  "created_at": "2026-10-04T23:51:55.000Z",
-  "updated_at": "2026-10-04T23:57:28.000Z",
+  "created_at": "2026-10-05T02:58:23.000Z",
+  "updated_at": "2026-10-05T03:02:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 31273086512,
   "parameters_human": "31.27B",
@@ -36,8 +36,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-05T02:03:19.900Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

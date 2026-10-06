@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "justratnasetiawan/3d-scene-understanding",
+  "slug": "justratnasetiawan-3d-scene-understanding",
+  "author": "justratnasetiawan",
+  "url": "https://huggingface.co/justratnasetiawan/3d-scene-understanding",
+  "created_at": "2026-10-05T21:14:47.000Z",
+  "updated_at": "2026-10-05T21:14:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "D4RT: Unified, Fast 4D Scene Reconstruction & Tracking",
+      "url": "https://deepmind.google/blog/d4rt-teaching-ai-to-see-the-world-in-four-dimensions/",
+      "snippet": "Introducing D4RT, a unified AI model for 4D scene reconstruction and tracking across space and time. Anytime we look at the world, we perform an extraordinary feat of memory and prediction. We see and understand things as they are at a given moment in time, as they were a moment ago, and how they are going to be in the moment to follow."
+    },
+    {
+      "title": "Scene understanding using vision language models",
+      "url": "https://learn.microsoft.com/en-us/industry/mobility/architecture/scene-understanding",
+      "snippet": "Using Large Language Models (LLMs) for scene understanding in AV can present challenges. The daily generation of terabytes of data by vehicles makes scalable image analysis difficult from a computational point of view. Small Language Models (SLMs) are more efficient but lack the domain knowledge required for effective scene analysis and need fine-tuning on domain-specific data."
+    },
+    {
+      "title": "Awesome Scene Understanding - GitHub",
+      "url": "https://github.com/bertjiazheng/awesome-scene-understanding",
+      "snippet": "😎 A list of awesome scene understanding papers. Contribute to bertjiazheng/awesome-scene-understanding development by creating an account on GitHub."
+    },
+    {
+      "title": "A Survey on Large Multimodal Models for 3D Vision and Scene Understanding",
+      "url": "https://www.researchgate.net/publication/399580526_A_Survey_on_Large_Multimodal_Models_for_3D_Vision_and_Scene_Understanding",
+      "snippet": "This survey provides a comprehensive overview of the rapidly evolving field of LMMs for 3D vision and scene understanding."
+    },
+    {
+      "title": "GitHub - Visual-AI/3DRS: [NeurIPS 2025] 3DRS: MLLMs Need 3D-Aware ...",
+      "url": "https://github.com/Visual-AI/3DRS",
+      "snippet": "Introduction Recent advances in Multimodal Large Language Models (MLLMs) have revolutionized multimodal reasoning, yet scene understanding in complex 3D environments remains a challenge. Existing MLLMs, primarily trained on 2D data, lack explicit 3D-aware representation, limiting their effectiveness in spatially-grounded tasks."
+    }
+  ]
+}
