@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nautilus-compass/nacre-judge-v1",
+  "slug": "nautilus-compass-nacre-judge-v1",
+  "author": "nautilus-compass",
+  "url": "https://huggingface.co/nautilus-compass/nacre-judge-v1",
+  "created_at": "2026-10-07T02:34:54.000Z",
+  "updated_at": "2026-10-07T02:36:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "judge",
+    "verification",
+    "NACRE",
+    "lora",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25720120,
+  "storage_human": "26 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nautilus (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nautilus_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Le Nautilus plonge et découvre une épave sans trésor. C'est en fait un piège et l'équipage se fait attaquer par un peuple de femmes …"
+    },
+    {
+      "title": "Nautilus (Jules Verne) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nautilus_(Jules_Verne)",
+      "snippet": "Le Nautilus a cessé d'être une machine à tuer, et est considéré non seulement comme un sous-marin à haute vitesse, résistant à …"
+    },
+    {
+      "title": "Nautilus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nautilus",
+      "snippet": "It comprises nine living species in two genera, the type of which is the genus Nautilus. Though it more specifically refers to the …"
+    },
+    {
+      "title": "Nautilus - Série TV 2024 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=29934.html",
+      "snippet": "Découvrez la série TV Nautilus de James Dormer avec Shazad Latif (Capitaine Nemo), Georgia Flood (Humility Lucas). Retrouvez …"
+    },
+    {
+      "title": "Nautilus - Les épisodes en replay | France TV",
+      "url": "https://www.france.tv/france-2/nautilus/",
+      "snippet": "À travers une quête épique du trésor viking des piliers de Halvar, Nautilus offre aux téléspectateurs un récit d'aventure familial, …"
+    }
+  ]
+}

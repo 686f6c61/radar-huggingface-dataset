@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jacobwhiteberg/generation54",
+  "slug": "jacobwhiteberg-generation54",
+  "author": "jacobwhiteberg",
+  "url": "https://huggingface.co/jacobwhiteberg/generation54",
+  "created_at": "2026-10-07T02:24:21.000Z",
+  "updated_at": "2026-10-07T02:24:26.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOP 25 CANADA DAY QUOTES | A-Z Quotes",
+      "url": "https://www.azquotes.com/quotes/topics/canada-day.html",
+      "snippet": "Jun 14, 1984 · Enjoy our canada day quotes collection. Best canada day quotes selected by thousands of our users!"
+    },
+    {
+      "title": "TOP 25 HISTORY QUOTES (of 1000) | A-Z Quotes",
+      "url": "https://www.azquotes.com/quotes/topics/history.html",
+      "snippet": "Jan 19, 2016 · Enjoy our history quotes collection by famous authors, historians and philosophers. Best history quotes selected by …"
+    },
+    {
+      "title": "【quote of the day】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/6562590",
+      "snippet": "【ネイティブが回答】「quote of the day」 は \"日本語\" でなんて言うの？質問に2件の回答が集まっています！Hinativeでは\"日本語\" …"
+    },
+    {
+      "title": "Quote of the day \"】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/19515539",
+      "snippet": "「Quote of the day」を日本語でどう言うかについての質問と回答が掲載されています。"
+    },
+    {
+      "title": "首页 - 知乎",
+      "url": "https://www.zhihu.com/?lang=zh-Hant",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

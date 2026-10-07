@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/hilbert-4b-baseline-GGUF",
+  "slug": "snapkitty-hilbert-4b-baseline-gguf",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/hilbert-4b-baseline-GGUF",
+  "created_at": "2026-10-07T17:46:46.000Z",
+  "updated_at": "2026-10-07T17:46:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.5",
+    "hilbert",
+    "decision-model",
+    "quantized",
+    "snapkitty",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 7394026944,
+  "storage_human": "7.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

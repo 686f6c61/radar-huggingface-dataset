@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/ArcticSeed-Cutoff-Snapshot",
+  "slug": "sotaagi2030-arcticseed-cutoff-snapshot",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/ArcticSeed-Cutoff-Snapshot",
+  "created_at": "2026-10-07T16:34:56.000Z",
+  "updated_at": "2026-10-07T16:35:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030/ArcticSeed-Cutoff-Snapshot · Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/ArcticSeed-Cutoff-Snapshot",
+      "snippet": "SOTAagi2030 / ArcticSeed-Cutoff-Snapshot Like 0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "AI Knowledge Cutoff Database",
+      "url": "https://aiknowledgecutoff.com/",
+      "snippet": "The ultimate database for AI model knowledge cutoff dates. Explore when OpenAI, Anthropic, Google, SpaceXAI and more were last trained in one place."
+    },
+    {
+      "title": "LLM Knowledge Cutoff Dates: GPT, Claude, Gemini | Hysen Labs",
+      "url": "https://hysenlabs.com/projects/haooowang-llm-knowledge-cutoff-dates",
+      "snippet": "A community-maintained table of knowledge cutoff dates for GPT, Claude, Gemini, Qwen, and DeepSeek models, with archived sources for every entry."
+    }
+  ]
+}

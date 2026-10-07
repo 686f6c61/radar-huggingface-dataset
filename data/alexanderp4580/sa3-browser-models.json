@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "alexanderp4580/sa3-browser-models",
+  "slug": "alexanderp4580-sa3-browser-models",
+  "author": "alexanderp4580",
+  "url": "https://huggingface.co/alexanderp4580/sa3-browser-models",
+  "created_at": "2026-10-07T16:44:51.000Z",
+  "updated_at": "2026-10-07T16:45:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3252330798,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrowserAI - Local LLMs in your browser",
+      "url": "https://browserai.dev/",
+      "snippet": "BrowserAI leverages WebAssembly and WebGPU to run increasingly efficient small language models directly in your browser. Integration just takes a few lines of code - no APIs required."
+    },
+    {
+      "title": "Web AI Showcase — find & run any model in your browser",
+      "url": "https://webai.show/",
+      "snippet": "web ai showcase Every model, running in your browser. No servers, no API keys, no uploads. Each model here loads and runs locally on your device — with a hands-on control panel, a look inside what it&#x27;s doing, and real use cases. 🔎 Explore all models by intent →"
+    },
+    {
+      "title": "LocalModel.run | Run AI models in your browser, or check any device",
+      "url": "https://localmodel.run/",
+      "snippet": "Run Whisper, SmolLM2 and Kokoro live in your browser tab, no install: 54 browser models with download sizes measured to the byte. Underneath, the reference…"
+    },
+    {
+      "title": "Run AI Models Directly in the Browser with Transformers.js",
+      "url": "https://blog.openreplay.com/run-ai-models-browser-transformers-js/",
+      "snippet": "Run AI models directly in the browser using Transformers.js, ONNX Runtime, and WebAssembly for private, offline, low-latency inference without a backend server."
+    },
+    {
+      "title": "Playground — Run AI models in your browser | CanIRun.ai",
+      "url": "https://www.canirun.ai/playground",
+      "snippet": "Run AI models directly in your browser with WebGPU acceleration. Chat with local LLMs, switch models, and keep your conversations private."
+    }
+  ]
+}

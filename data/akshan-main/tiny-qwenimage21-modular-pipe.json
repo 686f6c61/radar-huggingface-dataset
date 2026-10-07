@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "akshan-main/tiny-qwenimage21-modular-pipe",
+  "slug": "akshan-main-tiny-qwenimage21-modular-pipe",
+  "author": "akshan-main",
+  "url": "https://huggingface.co/akshan-main/tiny-qwenimage21-modular-pipe",
+  "created_at": "2026-10-07T02:43:41.000Z",
+  "updated_at": "2026-10-07T02:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "modular-diffusers",
+    "qwenimage21",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": 36944,
+  "parameters_human": "36944",
+  "storage_bytes": 31255607,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akshan Build with Highest Winrate - LoL Runes, Items, and Skill Order",
+      "url": "https://u.gg/lol/champions/akshan/build",
+      "snippet": "U.GG LoL Akshan build shows best Akshan runes by WR and popularity. With matchups, skill order and best items, this Akshan …"
+    },
+    {
+      "title": "Akshan Build Patch 16.19: Best Runes, Items & Skill Order (Win Rate ...",
+      "url": "https://www.op.gg/lol/champions/akshan/build",
+      "snippet": "Akshan Build with the highest win rate. Runes, items, and skill build in patch 16.19. Akshan build recommendations and guides."
+    },
+    {
+      "title": "Akshan - League of Legends",
+      "url": "https://www.leagueoflegends.com/fr-fr/champions/akshan/",
+      "snippet": "Tous les trois coups venant de ses attaques ou de ses compétences, Akshan inflige des dégâts supplémentaires. Il gagne aussi un …"
+    },
+    {
+      "title": "Akshan Build Guide - Runes, Items & More - Patch 26.20",
+      "url": "https://mobalytics.gg/lol/champions/akshan/build",
+      "snippet": "Get the best Akshan builds, based on analysis of 10000+ matches in all regions and ranks. Climb in patch 26.20 with Akshan builds …"
+    },
+    {
+      "title": "Akshan - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Akshan",
+      "snippet": "Apr 12, 2026 · Akshan prioritizes firing at enemy champions with stacks of Dirty Fighting, then those damaged by his targeted spells …"
+    }
+  ]
+}

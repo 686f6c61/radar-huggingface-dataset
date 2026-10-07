@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "oggyvukovich/whisper-large-v3-tune02",
+  "slug": "oggyvukovich-whisper-large-v3-tune02",
+  "author": "oggyvukovich",
+  "url": "https://huggingface.co/oggyvukovich/whisper-large-v3-tune02",
+  "created_at": "2026-10-07T14:54:40.000Z",
+  "updated_at": "2026-10-07T15:10:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "sr"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "sr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6174416469,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Man seeking woman - Happy birthday to meee | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/happy-birthday-to-meee.729483/",
+      "snippet": "Sep 23, 2026 · STARMAN06 Porn Star Joined: Apr 4, 2014 Messages: 1,293 Sep 23, 2026 at 5:09 PM Happy Birthday #3"
+    },
+    {
+      "title": "Tightest dress | Page 531 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/tightest-dress.574457/page-531",
+      "snippet": "Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is moving to a brand-new home! Very …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/",
+      "snippet": "蜀ICP备12028253号 川公网安备 51010402000072号 网上传播视听节目许可证 |互联网新闻信息服务许可证编号：51120170001 | …"
+    },
+    {
+      "title": "天府社区",
+      "url": "https://bbs.scol.com.cn/?boardid=86&partytype=6",
+      "snippet": "天府社区是四川日报报业集团全媒体中心旗下重点打造的城市生活社区网站，多年来其城市生活品牌深入人心,已成为四川本土具影响 …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://www.photography-on-the.net/?p=9771739",
+      "snippet": "301 Moved Permanently 301 Moved Permanently cloudflare"
+    }
+  ]
+}

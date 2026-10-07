@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "audiojs/tiger-dnr",
+  "slug": "audiojs-tiger-dnr",
+  "author": "audiojs",
+  "url": "https://huggingface.co/audiojs/tiger-dnr",
+  "created_at": "2026-10-07T17:53:59.000Z",
+  "updated_at": "2026-10-07T17:54:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "source-separation",
+    "cinematic-audio-source-separation",
+    "audio-to-audio",
+    "arxiv:2410.01469",
+    "base_model:JusperLee/TIGER-DnR",
+    "base_model:quantized:JusperLee/TIGER-DnR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7320735,
+  "storage_human": "7 MB",
+  "base_model": "JusperLee/TIGER-DnR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

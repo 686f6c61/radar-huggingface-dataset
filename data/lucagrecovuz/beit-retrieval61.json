@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lucagrecovuz/beit-retrieval61",
+  "slug": "lucagrecovuz-beit-retrieval61",
+  "author": "Lucagrecovuz",
+  "url": "https://huggingface.co/Lucagrecovuz/beit-retrieval61",
+  "created_at": "2026-10-07T16:45:50.000Z",
+  "updated_at": "2026-10-07T16:45:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "F1 1982 Round 11 French Grand Prix - YouTube",
+      "url": "https://m.youtube.com/watch?v=oUp8qJ0GH9I",
+      "snippet": "Jan 31, 2026 · It was the eleventh race of the 1982 Formula One World Championship. The 54-lap race was won from pole position …"
+    },
+    {
+      "title": "1982 German Grand Prix — Grokipedia",
+      "url": "https://grokipedia.com/page/1982_German_Grand_Prix",
+      "snippet": "After the 1982 German Grand Prix, the Drivers' Championship saw minimal changes at the top due to Didier Pironi's severe injury …"
+    },
+    {
+      "title": "1982 Formula One World Championship - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/1982_Formula_One_World_Championship",
+      "snippet": "The Drivers' Championship was won by Keke Rosberg and the Constructors' Championship by Scuderia Ferrari. The Championship …"
+    },
+    {
+      "title": "1982 Formula 1 Season | F1pedia",
+      "url": "https://f1pedia.com/en/race-hub/1982",
+      "snippet": "Their victory in the Constructor's Championship highlights their ability to navigate the turbulent waters of 1982, providing the …"
+    },
+    {
+      "title": "1982 season · F1 Archive",
+      "url": "https://f1archive.net/season/1982",
+      "snippet": "Explore the 1982 Formula One season: championship standings, every race, title progression and editorial context."
+    }
+  ]
+}

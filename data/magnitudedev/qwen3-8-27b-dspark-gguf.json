@@ -5,7 +5,7 @@
   "author": "magnitudedev",
   "url": "https://huggingface.co/magnitudedev/Qwen3.8-27B-DSpark-GGUF",
   "created_at": "2026-08-14T16:59:43.000Z",
-  "updated_at": "2026-08-14T17:01:47.000Z",
+  "updated_at": "2026-10-06T22:07:29.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,12 +25,12 @@
     "conversational"
   ],
   "likes": 9,
-  "downloads_30d": 1564,
+  "downloads_30d": 1507,
   "trending_score": 0,
   "parameters": 1359284737,
   "parameters_human": "1.36B",
-  "storage_bytes": 1455376576,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 2910753248,
+  "storage_human": "2.9 GB",
   "base_model": "RadixArk/Qwen3.8-27B-DSpark",
   "formats": [
     "gguf"

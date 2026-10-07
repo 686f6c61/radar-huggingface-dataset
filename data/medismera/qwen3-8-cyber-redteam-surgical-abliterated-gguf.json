@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated-GGUF",
+  "slug": "medismera-qwen3-8-cyber-redteam-surgical-abliterated-gguf",
+  "author": "medismera",
+  "url": "https://huggingface.co/medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated-GGUF",
+  "created_at": "2026-10-07T02:19:04.000Z",
+  "updated_at": "2026-10-07T02:19:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "ollama",
+    "qwen",
+    "qwen3_8",
+    "offensive-security",
+    "red-team",
+    "text-generation",
+    "base_model:medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated",
+    "base_model:finetune:medismera/Qwen3.8-cyber-RedTeam-Surgical-Abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment lancer une analyse de virus ou de programmes malveillants …",
+      "url": "https://support.microsoft.com/fr-fr/defender/how-to-start-a-scan-for-viruses-or-malware-in-microsoft-defender",
+      "snippet": "Si vous pensez que votre appareil peut contenir un programme malveillant, vous devez demander à Microsoft Defender d’exécuter …"
+    },
+    {
+      "title": "Prise en main de l’anti-programme malveillant dans Microsoft Defender",
+      "url": "https://support.microsoft.com/fr-fr/defender/getting-started-with-anti-malware-in-microsoft-defender",
+      "snippet": "La protection anti-programme malveillant en temps réel de Microsoft Defender s’exécute chaque fois que votre appareil est allumé, …"
+    },
+    {
+      "title": "Comment utiliser Windows Defender pour détecter les logiciels ...",
+      "url": "https://www.ninjaone.com/fr/blog/detecter-les-logiciels-malveillants/",
+      "snippet": "Jul 30, 2026 · Vous pouvez programmer des analyses régulières de Windows Defender pour détecter les logiciels malveillants afin …"
+    },
+    {
+      "title": "Analyser les programmes malveillants sous Windows",
+      "url": "https://les-imprimantes.com/analyser-votre-appareil-a-la-recherche-de-programmes-malveillants-sous-windows/",
+      "snippet": "May 12, 2026 · Analyser son appareil à la recherche de programmes malveillants sous Windows est devenu indispensable …"
+    },
+    {
+      "title": "Scanner de sécurité Microsoft Télécharger",
+      "url": "https://learn.microsoft.com/fr-fr/defender-endpoint/safety-scanner-download",
+      "snippet": "Scanner de sécurité Microsoft est un outil d’analyse conçu pour rechercher et supprimer les programmes malveillants des …"
+    }
+  ]
+}

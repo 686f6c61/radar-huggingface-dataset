@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Satyapy/distilbert-emotion-classifier-model",
+  "slug": "satyapy-distilbert-emotion-classifier-model",
+  "author": "Satyapy",
+  "url": "https://huggingface.co/Satyapy/distilbert-emotion-classifier-model",
+  "created_at": "2026-10-07T16:28:00.000Z",
+  "updated_at": "2026-10-07T16:29:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tsid7710/distillbert-emotion-model · Hugging Face",
+      "url": "https://huggingface.co/tsid7710/distillbert-emotion-model",
+      "snippet": "🧠 Model Details 📊 Evaluation Metrics on Test Data Usage DistilBERT Emotion Classifier 🎭 This is a fine-tuned DistilBERT model for emotion classification trained on the dair-ai/emotiondataset. 🧠 Model Details"
+    },
+    {
+      "title": "GitHub - SinaArabi/Emotion-Classification-DistilBERT: This repository ...",
+      "url": "https://github.com/SinaArabi/Emotion-Classification-DistilBERT",
+      "snippet": "This repository implements a multi-label Emotion Classification system using DistilBERT, a lighter version of BERT. The project spans the complete pipeline, from training the model, deploying it via a FastAPI server, to providing a real-time Streamlit frontend for easy user interaction."
+    },
+    {
+      "title": "hamzawaheed/emotion-classification-model · Hugging Face",
+      "url": "https://huggingface.co/hamzawaheed/emotion-classification-model",
+      "snippet": "The Emotion Classification Model is a fine-tuned version of the distilbert-base-uncased transformer architecture, adapted specifically for classifying text into six distinct emotions."
+    },
+    {
+      "title": "How to Fine-Tune DistilBERT for Emotion Classification",
+      "url": "https://towardsdatascience.com/how-to-fine-tune-distilbert-for-emotion-classification/",
+      "snippet": "Radar chart of fine-tuned DistilBERT model. Image by author. Before fine-tuning, the pre-trained model performed poorly on our dataset, because it hasn&#x27;t seen the specific emotion labels before. It was essentially guessing at random, as reflected in an AUC score of 0.5 that indicates no better than chance. After fine-tuning, the model significantly improved across all metrics, achieving 83% ..."
+    },
+    {
+      "title": "Fine-Tuning DistilBERT for Emotion Classification - Medium",
+      "url": "https://medium.com/@ahmettsdmr1312/fine-tuning-distilbert-for-emotion-classification-84a4e038e90e",
+      "snippet": "In this post, we will walk through the process of fine-tuning the DistilBERT model for emotion classification. Emotion classification is a common task in natural language processing (NLP) where we ..."
+    }
+  ]
+}

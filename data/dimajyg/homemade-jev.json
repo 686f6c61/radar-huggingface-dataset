@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "dimajyg/homemade-jev",
+  "slug": "dimajyg-homemade-jev",
+  "author": "dimajyg",
+  "url": "https://huggingface.co/dimajyg/homemade-jev",
+  "created_at": "2026-10-07T15:11:31.000Z",
+  "updated_at": "2026-10-07T15:13:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "nli",
+    "text-classification",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100569520,
+  "storage_human": "101 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yrlyrl/lvr-export-lvr_mmcot_mix_v3_4k_nonema",
+  "slug": "yrlyrl-lvr-export-lvr_mmcot_mix_v3_4k_nonema",
+  "author": "yrlyrl",
+  "url": "https://huggingface.co/yrlyrl/lvr-export-lvr_mmcot_mix_v3_4k_nonema",
+  "created_at": "2026-10-07T02:30:18.000Z",
+  "updated_at": "2026-10-07T02:37:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bagel",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 14607260128,
+  "parameters_human": "14.61B",
+  "storage_bytes": 29549989756,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon bien est-il à double usage - entreprises.gouv.fr",
+      "url": "https://www.entreprises.gouv.fr/espace-entreprises/s-informer-sur-la-reglementation/mon-bien-est-il-double-usage",
+      "snippet": "Jul 8, 2024 · Le classement des biens ayant potentiellement un usage militaire (c'est-à-dire par des militaires ou par l’industrie de …"
+    },
+    {
+      "title": "non dual use - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/non+dual+use.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"non dual use\" – Dictionnaire français-anglais et moteur de recherche …"
+    },
+    {
+      "title": "Statement of Non-Dual Use - Trutorq Automation",
+      "url": "https://trutorq-automation.com/wp-content/uploads/2023/01/Declaration-of-Non-Dual-Use-WMTT.pdf",
+      "snippet": "The products with the mentioned commodity tariff number comply in their conception and design as well as in their circulation meets …"
+    },
+    {
+      "title": "Biens et technologies à double usage (civil ou militaire)",
+      "url": "https://www.douane.gouv.fr/fiche/biens-et-technologies-double-usage-civil-ou-militaire",
+      "snippet": "Apr 7, 2026 · Le contrôle des exportations des biens et technologies à double usage est un outil pour lutter contre la dissémination …"
+    },
+    {
+      "title": "NON-DUAL-USE STATEMENT - QINSTRUMENTS",
+      "url": "https://www.qinstruments.com/fileadmin/Article/PUBLIC/S17_non_dual_use_declaration_en_de.pdf",
+      "snippet": "The products with the mentioned commodity tariff number comply with their conception and design, and their circulation meets the …"
+    }
+  ]
+}

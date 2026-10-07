@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jackykobayashi/dino-multitask-alpha",
+  "slug": "jackykobayashi-dino-multitask-alpha",
+  "author": "jackykobayashi",
+  "url": "https://huggingface.co/jackykobayashi/dino-multitask-alpha",
+  "created_at": "2026-10-07T02:27:04.000Z",
+  "updated_at": "2026-10-07T02:27:10.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davis0116/dino-multitask · Hugging Face",
+      "url": "https://huggingface.co/davis0116/dino-multitask",
+      "snippet": "Overview A research-oriented Dino prototype targeting Multitask. The included base setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "New Mysterious AI Model Dubbed Ox Alpha With Free 100 Trillion Tokens a ...",
+      "url": "https://cybersecuritynews.com/new-mysterious-ai-model-dubbed-ox-alpha/",
+      "snippet": "Mysterious AI model Ox Alpha has appeared on OpenRouter as a free stealth model for coding, AI agents, and production workloads."
+    },
+    {
+      "title": "varunbsingh/dino-multitask · Hugging Face",
+      "url": "https://huggingface.co/varunbsingh/dino-multitask",
+      "snippet": "Overview This is an experimental Dino codebase for Multitask. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Everything You Need to Know About Meta AI&#x27;s DINO and SAM",
+      "url": "https://technologymagazine.com/news/meta-ai-dino-and-sam",
+      "snippet": "Meta AI&#x27;s segment anything model (SAM) specialises in image segmentation. Picture: Meta AI/YouTube Traditionally, computer vision models rely on large datasets of human-labelled images to recognise objects or scenes. DINO discards that constraint by enabling the model to learn directly from the intrinsic structure of images."
+    },
+    {
+      "title": "Gemini (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+      "snippet": "Gemini Ultra was also the first language model to outperform human experts on the 57-subject Massive Multitask Language Understanding (MMLU) test, obtaining a score of 90%. [6][22] Gemini Pro was made available to Google Cloud customers on AI Studio and Vertex AI on December 13, while Gemini Nano will be made available to Android developers as ..."
+    }
+  ]
+}

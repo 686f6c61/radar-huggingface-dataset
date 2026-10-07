@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pinecoresystems/faster-whisper-small",
+  "slug": "pinecoresystems-faster-whisper-small",
+  "author": "pinecoresystems",
+  "url": "https://huggingface.co/pinecoresystems/faster-whisper-small",
+  "created_at": "2026-10-07T17:49:30.000Z",
+  "updated_at": "2026-10-07T17:51:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 483546902,
+  "storage_human": "484 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Split train tickets and missed connections - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6090844/split-train-tickets-and-missed-connections",
+      "snippet": "Jan 13, 2020 · No need for insurance to cover tickets costs. Your split tickets are a contract to get you from the first station to the last. …"
+    },
+    {
+      "title": "Does the name printed on a train ticket have to be your own name",
+      "url": "https://forums.moneysavingexpert.com/discussion/5403104/does-the-name-printed-on-a-train-ticket-have-to-be-your-own-name",
+      "snippet": "Jan 30, 2016 · No. You can go by any name. You can even put Inigo Montoya on your ticket and no-one will care. More accurately it …"
+    },
+    {
+      "title": "cout<<\"\\t\\t不清楚\";-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/340082630",
+      "snippet": "May 30, 2010 · cout<<\"\\t\\t不清楚\"; 输出时“\\t\\t”怎么不输出而是输出空格，在C++中\"\" 内的应该是字符串啊，怎么还能检测出为制表符."
+    },
+    {
+      "title": "struct 声明放在.h，定义在.c中，出现struct不可用的情况-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/100074461",
+      "snippet": "Feb 7, 2007 · 以下内容是CSDN社区关于struct 声明放在.h，定义在.c中，出现struct不可用的情况相关内容，如果想了解更多关于C语 …"
+    },
+    {
+      "title": "Trainline App missing Railcard — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6540931/trainline-app-missing-railcard",
+      "snippet": "Jul 13, 2024 · Bought 3 Year Senior Railcard from Trainline in June 2023, through MSE offer and it vanished from the Trainline App …"
+    }
+  ]
+}

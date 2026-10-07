@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aryahandayani/learn-contrastive-learning-2023",
+  "slug": "aryahandayani-learn-contrastive-learning-2023",
+  "author": "aryahandayani",
+  "url": "https://huggingface.co/aryahandayani/learn-contrastive-learning-2023",
+  "created_at": "2026-10-07T02:21:50.000Z",
+  "updated_at": "2026-10-07T02:21:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "contrastive-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Please help! escape key not working - Razer Insider",
+      "url": "https://insider.razer.com/razer-support-45/please-help-escape-key-not-working-60608",
+      "snippet": "Apr 10, 2024 · I’ve removed the key caps and cleaned with compressed air, checked all settings, re-installed Razer Synapse, …"
+    },
+    {
+      "title": "Razer Keyboard Keys Not Working (Pro Fixes for Synapse and Switch ...",
+      "url": "https://geartrouble.com/razer-keyboard-keys-not-working/",
+      "snippet": "May 27, 2026 · If your Razer keyboard keys are not working, the issue almost always traces back to one of three causes: a Razer …"
+    },
+    {
+      "title": "Razer Synapse makes escape key bot working",
+      "url": "https://insider.razer.com/keyboards-8/razer-synapse-makes-escape-key-bot-working-47368",
+      "snippet": "Jun 7, 2023 · Hey, I just got a razer huntsman mini today and somehow when I open the razer snyapse app the escape key is not …"
+    },
+    {
+      "title": "Updated to Synapse 4, Hypershift no longer working for escape key on ...",
+      "url": "https://insider.razer.com/razer-support-45/updated-to-synapse-4-hypershift-no-longer-working-for-escape-key-on-mini-huntsman-analogue-80229",
+      "snippet": "Jul 27, 2025 · I recently updated to Synapse 4, but it has had the adverse effect of disabling Hypershift’s effects on the escape key. I …"
+    },
+    {
+      "title": "SOLVED / Keyboard not working when razer synapse is open",
+      "url": "https://www.reddit.com/r/razer/comments/9c8mhe/solved_keyboard_not_working_when_razer_synapse_is/",
+      "snippet": "Sep 2, 2018 · -Press Windows Key + R. -Type devmgmt.msc and enter. - Expand the Human Interface devices , locate Keyboard …"
+    }
+  ]
+}

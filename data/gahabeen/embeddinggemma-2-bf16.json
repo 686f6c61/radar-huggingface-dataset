@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "gahabeen/embeddinggemma-2-bf16",
+  "slug": "gahabeen-embeddinggemma-2-bf16",
+  "author": "gahabeen",
+  "url": "https://huggingface.co/gahabeen/embeddinggemma-2-bf16",
+  "created_at": "2026-10-07T16:38:00.000Z",
+  "updated_at": "2026-10-07T16:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "embedding_gemma2",
+    "mlx-vlm",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "multimodal",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1521085440,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "Performance EmbeddingGemma 2 delivers high-quality embeddings for code, vision, and audio tasks."
+    },
+    {
+      "title": "google/embeddinggemma-2 · Hugging Face",
+      "url": "https://huggingface.co/google/embeddinggemma-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "snippet": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space."
+    },
+    {
+      "title": "EmbeddingGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/embeddinggemma",
+      "snippet": "EmbeddingGemma 2 is a lightweight, open-source 740M parameter model designed for unified multimodal embeddings. Built on the Gemma 4 decoder architecture, it maps text, images, audio, and video into a unified 768-dimensional vector space."
+    },
+    {
+      "title": "EmbeddingGemma 2 (2026): One Small Model That Puts Text, Images, Audio ...",
+      "url": "https://cldnavi.com/en/blog/embeddinggemma-2-guide-2026/",
+      "snippet": "Google DeepMind released EmbeddingGemma 2 on October 6, 2026. Using the official blog and the model card, this guide covers how it maps text, code, images, video and audio into one 768-dimensional space, how to pick between 270M and 740M effective sizes, Google&#x27;s published benchmarks including the MTEB Code jump from 68.76 to 78.68, Matryoshka truncation down to 128 dimensions, how to run it ..."
+    }
+  ]
+}

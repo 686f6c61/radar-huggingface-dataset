@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "phylun/Komapper_SDFTPracticeCode",
+  "slug": "phylun-komapper_sdftpracticecode",
+  "author": "phylun",
+  "url": "https://huggingface.co/phylun/Komapper_SDFTPracticeCode",
+  "created_at": "2026-10-07T01:45:10.000Z",
+  "updated_at": "2026-10-07T03:07:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2620532139,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

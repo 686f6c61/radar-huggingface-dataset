@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Satyapy/distilbert-finetuned-emotion",
+  "slug": "satyapy-distilbert-finetuned-emotion",
+  "author": "Satyapy",
+  "url": "https://huggingface.co/Satyapy/distilbert-finetuned-emotion",
+  "created_at": "2026-10-07T16:27:45.000Z",
+  "updated_at": "2026-10-07T16:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66958086,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267850073,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SagarVidya/distilbert-emotion-model_v4 · Hugging Face",
+      "url": "https://huggingface.co/SagarVidya/distilbert-emotion-model_v4",
+      "snippet": "This model is fine-tuned on the DistilBERT base model (distilbert-base-uncased) to classify text into five distinct emotions. It is trained on the Emotion Dataset using the Hugging Face Trainer API, leveraging the powerful DistilBERT architecture."
+    },
+    {
+      "title": "How to Fine-Tune DistilBERT for Emotion Classification",
+      "url": "https://towardsdatascience.com/how-to-fine-tune-distilbert-for-emotion-classification/",
+      "snippet": "Radar chart of fine-tuned DistilBERT model. Image by author. Before fine-tuning, the pre-trained model performed poorly on our dataset, because it hasn&#x27;t seen the specific emotion labels before. It was essentially guessing at random, as reflected in an AUC score of 0.5 that indicates no better than chance. After fine-tuning, the model significantly improved across all metrics, achieving 83% ..."
+    },
+    {
+      "title": "Okoth67/emotion-distilbert-finetune - GitHub",
+      "url": "https://github.com/Okoth67/emotion-distilbert-finetune",
+      "snippet": "🧠 Emotion Classification with DistilBERT This project demonstrates how to fine-tune the distilbert-base-uncased transformer model from Hugging Face on the emotion dataset. The goal is to classify text into one of six human emotions: sadness, joy, love, anger, fear, and surprise."
+    },
+    {
+      "title": "tsid7710/distillbert-emotion-model · Hugging Face",
+      "url": "https://huggingface.co/tsid7710/distillbert-emotion-model",
+      "snippet": "DistilBERT Emotion Classifier 🎭 This is a fine-tuned DistilBERT model for emotion classification trained on the dair-ai/emotiondataset. 🧠 Model Details"
+    },
+    {
+      "title": "tharUmesh/emotion-classification-distilbert - GitHub",
+      "url": "https://github.com/tharUmesh/emotion-classification-distilbert",
+      "snippet": "Emotion Classification with DistilBERT This repository contains a Jupyter Notebook that fine-tunes a DistilBERT model to classify emotions in tweets using the dair-ai/emotion dataset. The project demonstrates a complete NLP pipeline, including data preprocessing, model training, evaluation, and inference."
+    }
+  ]
+}

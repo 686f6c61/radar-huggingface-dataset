@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kuisikawa/tiny-transformer-classification-ablation",
+  "slug": "kuisikawa-tiny-transformer-classification-ablation",
+  "author": "Kuisikawa",
+  "url": "https://huggingface.co/Kuisikawa/tiny-transformer-classification-ablation",
+  "created_at": "2026-10-07T16:21:14.000Z",
+  "updated_at": "2026-10-07T16:21:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ablation (artificial intelligence) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ablation_(artificial_intelligence)",
+      "snippet": "The term is credited to Allen Newell, one of the founders of artificial intelligence, who used it in his 1974 tutorial on speech recognition, published in Newell (1975). The term is by analogy with ablation in biology. The motivation was that, while …The term abliteration has been coined for the process of using ablation to uncensor large language models by modifying internal functions to completely eliminate refusal behaviors while preserving the remaining functions of the model. The …"
+    },
+    {
+      "title": "GPT-5.6 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GPT-5.6",
+      "snippet": "GPT-5.6 is available in three variants, called Sol, Terra and Luna, each tailored to different performance and cost requirements. The flagship model, called Sol, is described by OpenAI as its \"workhorse\" and \"best coding model yet\" suited for complex reasoning, coding and agentic workflow. Terra is the intermediate version, capable lower-cost option that is competitive with its predecessor (GPT-5.5) while being half the cost, and Luna is the fastest and most budget-friendly option in the family."
+    },
+    {
+      "title": "What is a transformer model? - IBM",
+      "url": "https://www.ibm.com/think/topics/transformer-model",
+      "snippet": "Mar 28, 2025 · What is a transformer model? The transformer model is a type of neural network …"
+    },
+    {
+      "title": "Self-Ablating Transformers: More Interpretability, Less Sparsity",
+      "url": "https://arxiv.org/abs/2505.00509",
+      "snippet": "May 1, 2025 · Training small models on the TinyStories dataset and employing interpretability tests, we find that self-ablation leads to …"
+    },
+    {
+      "title": "The Transformer Model - MachineLearningMastery.com",
+      "url": "https://machinelearningmastery.com/the-transformer-model/",
+      "snippet": "Jan 6, 2023 · We have already familiarized ourselves with the concept of self-attention as implemented by …"
+    }
+  ]
+}

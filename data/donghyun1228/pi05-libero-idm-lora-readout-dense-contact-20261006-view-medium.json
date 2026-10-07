@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium",
+  "slug": "donghyun1228-pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-idm-lora-readout-dense-contact-20261006-view-medium",
+  "created_at": "2026-10-07T02:37:42.000Z",
+  "updated_at": "2026-10-07T02:38:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "vla",
+    "pi05",
+    "libero",
+    "lora",
+    "inverse-dynamics",
+    "jax",
+    "dataset:Donghyun1228/libero-dense-contact-sweep-d2-20261002",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5939712877,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/pi05_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_libero_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Physical-Intelligence/openpi",
+      "url": "https://github.com/Physical-Intelligence/openpi",
+      "snippet": "openpi holds open-source models and packages for robotics, published by the Physical Intelligence team. Currently, this repo contains three types of models: the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization ..."
+    },
+    {
+      "title": "lerobot/pi05_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LIBERO Datasets - LIBERO",
+      "url": "https://libero-project.github.io/datasets",
+      "snippet": "RGB images from workspace and wrist cameras Proprioception Language task specifications PDDL scene descriptions"
+    },
+    {
+      "title": "PaperBench-X pi05-LIBERO Public Demo - claru.ai",
+      "url": "https://claru.ai/datasets/suemintony-paperbench-x-embodied-manipulation-pi05-libero",
+      "snippet": "Standalone embodied manipulation public-demo package for the released openpi pi05_libero checkpoint on all four LIBERO suites, containing complete Harbor tasks, evaluators, dual-camera runs, and Docker artifacts for reproducibility."
+    }
+  ]
+}

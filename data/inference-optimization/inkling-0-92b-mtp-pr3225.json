@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "inference-optimization/Inkling-0.92B-MTP-PR3225",
+  "slug": "inference-optimization-inkling-0-92b-mtp-pr3225",
+  "author": "inference-optimization",
+  "url": "https://huggingface.co/inference-optimization/Inkling-0.92B-MTP-PR3225",
+  "created_at": "2026-10-07T15:03:11.000Z",
+  "updated_at": "2026-10-07T15:03:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "llm-compressor",
+    "tiny-model",
+    "mtp",
+    "pr-3225",
+    "test-fixture",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 915998485,
+  "parameters_human": "916.0M",
+  "storage_bytes": 1859885398,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : inférence - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/inf%c3%a9rence/42907",
+      "snippet": "inférence - Définitions Français : Retrouvez la définition de inférence, ainsi que les expressions... - synonymes, homonymes, …"
+    },
+    {
+      "title": "Inférence (logique) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Inf%C3%A9rence_(logique)",
+      "snippet": "L’ inférence est un mouvement de la pensée qui permet de passer d'une ou plusieurs assertions, des énoncés ou propositions …"
+    },
+    {
+      "title": "inférence - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/inference",
+      "snippet": "Définition, exemples et prononciation de inférence : Opération logique par laquelle on admet une propos…"
+    },
+    {
+      "title": "Inférence — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Inf%C3%A9rence",
+      "snippet": "Sur les autres projets Wikimedia : inférence, sur le Wiktionnaire En logique et en psychologie, l’ inférence est un mouvement de la …"
+    },
+    {
+      "title": "IA : c’est quoi « l’inférence » ?IA : c’est quoi - Ouest-France",
+      "url": "https://www.ouest-france.fr/high-tech/intelligence-artificielle/ia-cest-quoi-linference-33b73a92-c0c6-11f1-b7db-555e86a524f6",
+      "snippet": "12 hours ago · L’inférence n’est pas la phase la plus connue du processus utilisé par les intelligences artificielles pour répondre à …"
+    }
+  ]
+}

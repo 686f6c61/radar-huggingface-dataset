@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "APMIC/ACE-3-26B-A4B-Preview",
+  "slug": "apmic-ace-3-26b-a4b-preview",
+  "author": "APMIC",
+  "url": "https://huggingface.co/APMIC/ACE-3-26B-A4B-Preview",
+  "created_at": "2026-10-07T02:25:58.000Z",
+  "updated_at": "2026-10-07T02:38:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "moe",
+    "tool-calling",
+    "traditional-chinese",
+    "taiwan",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51665981830,
+  "storage_human": "51.7 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE-Bank Latest Financial Benchmark: A Cost-Efficient, High-Performance ...",
+      "url": "https://www.apmic.ai/en/news/ace-bank-benchmark",
+      "snippet": "What is ACE-Bank? ACE-Bank is an AI model developed by APMIC, purpose-built for Taiwan&#x27;s financial wealth-management advisory scenarios. Built on the latest Gemma-4-26B-A4B architecture, the model has deep knowledge of local financial regulations and market logic, and has passed 13 categories of financial advisor certification exams administered by the Taiwan Academy of Banking and Finance ..."
+    },
+    {
+      "title": "google (Google) - Hugging Face",
+      "url": "https://huggingface.co/google",
+      "snippet": "Google ️ Open Source AI Image-Text-to-Text • 26B • Jul 15 • 626k • 1.22k"
+    },
+    {
+      "title": "Welcome Gemma 4: Frontier multimodal intelligence on device",
+      "url": "https://huggingface.co/blog/gemma4",
+      "snippet": "Deploy Anywhere Gemma 4 comes with day-0 support for many open-source inference engines, and is ideal for tool calling and agents! We also release ONNX checkpoints that can run on many hardware backends, allowing use cases on edge devices or in browser! transformers Gemma 4 comes with first-class transformers support from the get-go 🤗. This integration allows using the model with other ..."
+    },
+    {
+      "title": "Gemini 3.1 Pro vs Gemini 3.8 Flash: Benchmarks & Cost - benchlm.ai",
+      "url": "https://benchlm.ai/compare/gemini-3-1-pro-vs-gemini-3-8-flash",
+      "snippet": "Gemini 3.1 Pro vs Gemini 3.8 Flash: 7 shared benchmark results, evidence scope, API cost, context, runtime, and specs."
+    },
+    {
+      "title": "Gemini 3.1 Flash TTS Preview vs Surogate Rune 26B-A4B v3 ... - benchlm.ai",
+      "url": "https://benchlm.ai/compare/gemini-3-1-flash-tts-preview-vs-surogate-rune-26b-a4b-v3-rtxpro6000-a2",
+      "snippet": "Gemini 3.1 Flash TTS Preview and Surogate Rune 26B-A4B v3 (RTX PRO 6000) are not ranked on the public lane for coding, so no winner is named for coding."
+    }
+  ]
+}

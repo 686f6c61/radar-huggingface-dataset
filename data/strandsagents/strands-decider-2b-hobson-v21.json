@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "id": "StrandsAgents/strands-decider-2B-hobson-v21",
+  "slug": "strandsagents-strands-decider-2b-hobson-v21",
+  "author": "StrandsAgents",
+  "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21",
+  "created_at": "2026-10-05T16:03:29.000Z",
+  "updated_at": "2026-10-05T16:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "hobson",
+    "lora",
+    "qwen3.5",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "text-classification",
+    "dataset:ccdv/arxiv-classification",
+    "dataset:clinc/clinc_oos",
+    "dataset:community-datasets/yahoo_answers_topics",
+    "dataset:dair-ai/emotion",
+    "dataset:fancyzhx/ag_news",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:google-research-datasets/paws",
+    "dataset:google/boolq",
+    "dataset:google/civil_comments",
+    "dataset:legacy-datasets/banking77",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:nyu-mll/glue",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "dataset:papluca/language-identification",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:raquiba/Sarcasm_News_Headline",
+    "dataset:sealuzh/app_reviews",
+    "dataset:SetFit/20_newsgroups",
+    "dataset:SetFit/sst5",
+    "dataset:SetFit/subj",
+    "dataset:SetFit/TREC-QC",
+    "dataset:tals/vitaminc",
+    "dataset:tasksource/ruletaker",
+    "dataset:ucberkeley-dlab/measuring-hate-speech",
+    "dataset:ucirvine/sms_spam",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:tasksource/Boardgame-QA",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 0,
+  "trending_score": 19,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91527688,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 4096",
+      "metric": "accuracy (176/231)",
+      "value": 0.7619
+    },
+    {
+      "task": null,
+      "dataset": "eval: held-out short tasks",
+      "metric": "accuracy (n=6000)",
+      "value": 0.65
+    },
+    {
+      "task": null,
+      "dataset": "eval: boardgame",
+      "metric": "accuracy (n=900)",
+      "value": 0.821
+    },
+    {
+      "task": null,
+      "dataset": "eval: contractnli",
+      "metric": "accuracy (n=1026)",
+      "value": 0.865
+    },
+    {
+      "task": null,
+      "dataset": "eval: hotpotqa (held out)",
+      "metric": "accuracy (n=959)",
+      "value": 0.746
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique",
+      "metric": "accuracy (n=1199)",
+      "value": 0.882
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, answerable",
+      "metric": "accuracy (n=599)",
+      "value": 0.886
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, unanswerable",
+      "metric": "accuracy (n=600)",
+      "value": 0.877
+    },
+    {
+      "task": null,
+      "dataset": "eval: [4] adequacy_hs2",
+      "metric": "accuracy (n=234)",
+      "value": 0.739
+    },
+    {
+      "task": null,
+      "dataset": "eval: [5] gen:adequacy",
+      "metric": "accuracy (n=302)",
+      "value": 0.788
+    }
+  ],
+  "sources": [
+    {
+      "title": "1 EUR to USD - Euros to US Dollars Exchange Rate - Xe",
+      "url": "https://www.xe.com/en-us/currencyconverter/convert/?Amount=1&From=EUR&To=USD",
+      "snippet": "To see how much a 1 EUR to USD transfer would cost with Xe, visit our send money page and enter your details into the live quoter. …"
+    },
+    {
+      "title": "Currency Converter - Currency Exchange | Xe",
+      "url": "https://www.xe.com/currencyconverter/",
+      "snippet": "1 day ago · Xe's currency converter tool makes it easy to check live exchange rates, as well as convert your money with currency …"
+    },
+    {
+      "title": "Convert EUR to USD",
+      "url": "https://www.unitconverters.net/currency/eur-to-usd.htm",
+      "snippet": "1 day ago · Instant free online tool for EUR to USD conversion or vice versa. The EUR [Euro] to USD [United States Dollar] …"
+    },
+    {
+      "title": "EUR to USD - Euro to US Dollar Conversion - Exchange Rates",
+      "url": "https://www.exchange-rates.org/converter/eur-usd",
+      "snippet": "1 day ago · Use the EUR to USD currency converter at Exchange-Rates.org for accurate and up-to-date exchange rates. Easily …"
+    },
+    {
+      "title": "Currency Converter - XE",
+      "url": "https://xeconverter.live/",
+      "snippet": "We use the mid-market rate for our Converter. This is for informational purposes only. You won't receive this rate when sending …"
+    }
+  ]
+}

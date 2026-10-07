@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shyam671/ORENA-FRAME-xAI-Bamberg",
+  "slug": "shyam671-orena-frame-xai-bamberg",
+  "author": "shyam671",
+  "url": "https://huggingface.co/shyam671/ORENA-FRAME-xAI-Bamberg",
+  "created_at": "2026-10-07T18:15:45.000Z",
+  "updated_at": "2026-10-07T18:15:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque postal - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-15439917-banque-postal",
+      "snippet": "Dec 2, 2009 · Bonjour j'ai un gros souci avec la banque postal et je ne sais plus comment faire je vous explique en Août dernier mon …"
+    },
+    {
+      "title": "Site caisse épargne indisponible [Résolu] - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35735333-site-caisse-epargne-indisponible",
+      "snippet": "Résumé de la discussion Plusieurs utilisateurs signalent que le site de la Caisse d'Épargne reste inaccessible, affichant des timeouts …"
+    },
+    {
+      "title": "Ouvrir une assurance-vie : documents obligatoires et ... - MoneyVox",
+      "url": "https://www.moneyvox.fr/assurance-vie/ouverture.php",
+      "snippet": "L'ouverture d'une assurance vie nécessite de nombreuses formalités. Interlocuteur, informations personnelles, documents …"
+    },
+    {
+      "title": "Déménagement : ce qu'il faut prévoir pour son compte en banque",
+      "url": "https://www.moneyvox.fr/banque/actualites/47016/demenagement-ce-quil-faut-prevoir-pour-son-compte-en-banque",
+      "snippet": "Sep 8, 2014 · Lorsque l'on change de région, s'ajoute aux nombreuses démarches liées au déménagement le fait de prévenir sa …"
+    },
+    {
+      "title": "Carte bancaire pas très connue mais utile: Nomade caisse d'épargne",
+      "url": "https://www.moneyvox.fr/forums/fil/carte-bancaire-pas-tres-connue-mais-utile-nomade-caisse-depargne.52742/",
+      "snippet": "Jun 26, 2025 · Bonjour, La carte Nomade de la caisse d'épargne est une carte physique qui permet de retirer aux DAB sur le livret A, …"
+    }
+  ]
+}

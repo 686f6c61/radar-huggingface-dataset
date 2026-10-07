@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jacob-rojic/wonder-r3-8",
+  "slug": "jacob-rojic-wonder-r3-8",
+  "author": "jacob-rojic",
+  "url": "https://huggingface.co/jacob-rojic/wonder-r3-8",
+  "created_at": "2026-10-07T01:44:05.000Z",
+  "updated_at": "2026-10-07T01:44:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 71916586326,
+  "storage_human": "71.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacob — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacob",
+      "snippet": "Jacob (يعقوب) est un personnage biblique présent dans le Coran. À plusieurs reprises, la formulation du texte semble floue sur la …"
+    },
+    {
+      "title": "Jacob Delafon : Spécialiste de la salle de bain",
+      "url": "https://www.jacobdelafon.fr/",
+      "snippet": "A travers le style Atelier Vintage, Jacob Delafon remet au goût du jour le design rétro au coeur de la salle de bains. Libre à chacun …"
+    },
+    {
+      "title": "Jakob Rope Systems: Jakob Rope Systems",
+      "url": "https://www.jakob.com/fr/fr",
+      "snippet": "Jakob Rope Systems - Votre expert suisse en solutions architecturales de câbles et de filets en acier inoxydable ainsi qu'en …"
+    },
+    {
+      "title": "WC à poser | JacobDelafon",
+      "url": "https://www.jacobdelafon.fr/wcbidet/wc-poser",
+      "snippet": "Indispensables au quotidien, les toilettes resteront toujours un élément central de votre salle de bains. Chez Jacob Delafon, nous …"
+    },
+    {
+      "title": "JACOB Versailles - Fournisseur des Professionnels de l'alimentaire ...",
+      "url": "https://www.jacob-versailles.com/",
+      "snippet": "Depuis plus de 60 ans, Jacob Halles de Versailles s’approvisionne auprès de plus de 150 fournisseurs locaux, nationaux et …"
+    }
+  ]
+}

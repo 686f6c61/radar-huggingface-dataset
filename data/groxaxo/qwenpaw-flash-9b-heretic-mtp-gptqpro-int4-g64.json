@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "groxaxo/QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64",
+  "slug": "groxaxo-qwenpaw-flash-9b-heretic-mtp-gptqpro-int4-g64",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64",
+  "created_at": "2026-10-07T01:59:23.000Z",
+  "updated_at": "2026-10-07T02:01:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "qwenpaw",
+    "mtp",
+    "speculative-decoding",
+    "gptq",
+    "gptq-pro",
+    "int4",
+    "quantized",
+    "llama.cpp",
+    "heretic",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF",
+    "base_model:quantized:SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 8471015072,
+  "storage_human": "8.5 GB",
+  "base_model": "SC117/QwenPaw-Flash-9B-heretic-MTP-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Correcteur d'orthographe et de grammaire - Français - Reverso",
+      "url": "https://www.reverso.net/orthographe/correcteur-francais/",
+      "snippet": "Correction de textes en français : vérifiez l'orthographe et la grammaire avec le correcteur Reverso, et corrigez les fautes avant la …"
+    },
+    {
+      "title": "Correcteur Orthographe | Correction Grammaire | SCRIBENS",
+      "url": "https://www.scribens.fr/",
+      "snippet": "Scribens détecte de nombreux types d'erreurs : orthographe, grammaire, conjugaison, accords, homonymes, ponctuation ou encore …"
+    },
+    {
+      "title": "Correcteur d’orthographe IA gratuit - LanguageTool",
+      "url": "https://languagetool.org/fr",
+      "snippet": "LanguageTool est un reformulateur et correcteur de grammaire gratuit, disponible en ligne pour le français, l’anglais, l’espagnol et …"
+    },
+    {
+      "title": "Correcteur d'orthographe et de grammaire français en ligne ...",
+      "url": "https://orthographe.org/",
+      "snippet": "Correcteur d'orthographe et de grammaire en ligne gratuit. Vérifiez et corrigez vos phrases et textes en français instantanément. …"
+    },
+    {
+      "title": "Correcteur d'orthographe et de grammaire précis | Quillbot",
+      "url": "https://quillbot.com/fr/correcteur-orthographe?msockid=3fd633dfe3e562053b422434e22763b1",
+      "snippet": "Faire des fautes d’orthographe peut en effet vite nuire à votre crédibilité et vous pénaliser au travail. Pour vous aider dans la …"
+    }
+  ]
+}

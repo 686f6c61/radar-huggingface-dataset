@@ -5,7 +5,7 @@
   "author": "xv0y5ncu",
   "url": "https://huggingface.co/xv0y5ncu/Gemma-4-31B-it-GLQ-5.0bpw-mix3-8",
   "created_at": "2026-05-02T22:35:28.000Z",
-  "updated_at": "2026-08-19T22:30:27.000Z",
+  "updated_at": "2026-10-06T21:44:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 231,
+  "downloads_30d": 386,
   "trending_score": 0,
   "parameters": 12027607404,
   "parameters_human": "12.03B",

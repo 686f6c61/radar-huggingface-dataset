@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sharmareyansh7/few-shot-multimodal-proto",
+  "slug": "sharmareyansh7-few-shot-multimodal-proto",
+  "author": "sharmareyansh7",
+  "url": "https://huggingface.co/sharmareyansh7/few-shot-multimodal-proto",
+  "created_at": "2026-10-07T16:13:38.000Z",
+  "updated_at": "2026-10-07T16:13:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elijahgon/few-shot-multimodal-proto at main - Hugging Face",
+      "url": "https://huggingface.co/elijahgon/few-shot-multimodal-proto/tree/main",
+      "snippet": "few-shot-multimodal License:mit Model card FilesFiles and versions xet Community Copy to bucket new main few-shot-multimodal-proto 140 kB Ctrl+K Ctrl+K 1 contributor History:2 commits elijahgon Add summary.md, README.md, config.json, training_args.json, model.safetensors 4be9e90 verifiedabout 4 hours ago .gitattributes Safe 1.52 kBinitial ..."
+    },
+    {
+      "title": "elijahgon/few-shot-multimodal-proto · Hugging Face",
+      "url": "https://huggingface.co/elijahgon/few-shot-multimodal-proto",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/html/2511.01140v1",
+      "snippet": "Furthermore, few studies have examined how interactions among modalities influence learnability and generalization. Establishing a rigorous information-theoretic foundation for multimodal learning is therefore essential to guide model design and interpretation in medical applications."
+    },
+    {
+      "title": "Few-Shot Multimodal Medical Imaging: A Theoretical Framework",
+      "url": "https://arxiv.org/abs/2511.01140",
+      "snippet": "Existing multimodal and meta learning approaches improve performance in these settings but lack a theoretical explanation of why or when they succeed. This paper presents a unified theoretical framework for few shot multimodal medical imaging that jointly characterizes sample complexity, uncertainty quantification, and interpretability."
+    },
+    {
+      "title": "Few-shot Multi-Label Learning for Anterior Segment Eye ... - Springer",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-032-33725-2_6",
+      "snippet": "The work [5] Few-shot learning for skin diseases. They proposed a proto-typical network for dermatology. The model learned from a few examples per skin condition. It used episodic training to simulate few-shot scenarios. Their method worked well on the ISIC skin lesion dataset. But there are important limitations."
+    }
+  ]
+}

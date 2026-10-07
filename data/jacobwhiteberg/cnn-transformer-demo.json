@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jacobwhiteberg/cnn-transformer-demo",
+  "slug": "jacobwhiteberg-cnn-transformer-demo",
+  "author": "jacobwhiteberg",
+  "url": "https://huggingface.co/jacobwhiteberg/cnn-transformer-demo",
+  "created_at": "2026-10-07T02:24:40.000Z",
+  "updated_at": "2026-10-07T02:24:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jacobwhiteberg (Jacob) - Hugging Face",
+      "url": "https://huggingface.co/jacobwhiteberg",
+      "snippet": "I make datasets nobody downloads"
+    },
+    {
+      "title": "Transformer Explainer: LLM Transformer Model Visually Explained",
+      "url": "https://poloclub.github.io/transformer-explainer/",
+      "snippet": "An interactive visualization tool showing you how transformer models work in large language models (LLM) like GPT."
+    },
+    {
+      "title": "Fabiookq0813/cnn-transformer-demo · Hugging Face",
+      "url": "https://huggingface.co/Fabiookq0813/cnn-transformer-demo",
+      "snippet": "Fabiookq0813 / cnn-transformer-demo Like 0 Safetensors PyTorch cnn_transformer cnn-transformer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Cnn Transformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "NVIDIA DLSS 4 Transformer Review - Better Image Quality for Everyone",
+      "url": "https://www.techpowerup.com/review/nvidia-dlss-4-transformers-image-quality/",
+      "snippet": "NVIDIA DLSS 4 brings a major image quality upgrade to the whole DLSS package, including DLAA, Super Resolution, Ray Reconstruction and Frame Generation. Supporting GeForce 20 and newer, the new Transformer model promises improvements to temporal stability, less ghosting, and higher detail in motion. In this review we compare the image quality of the old CNN model vs the new Transformer model ..."
+    },
+    {
+      "title": "Transformer Explainer: Interactive LLM Visualization Tool",
+      "url": "https://dev.co/ai/frameworks/transformer-explainer",
+      "snippet": "transformer-explainer Transformer Explainer is an interactive web-based visualization tool that runs GPT-2 in the browser, allowing users to understand how Transformer models work by experimenting with text and observing real-time internal operations. It&#x27;s designed for learning and education rather than production deployment, built with JavaScript and published under MIT license."
+    }
+  ]
+}

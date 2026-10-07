@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4",
+  "slug": "blaj-qwen-image-2-1-uncensored-openvino-int4",
+  "author": "blaj",
+  "url": "https://huggingface.co/blaj/Qwen-Image-2.1-Uncensored-OpenVINO-INT4",
+  "created_at": "2026-10-07T02:23:34.000Z",
+  "updated_at": "2026-10-07T02:37:52.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen-image",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "int4",
+    "text-to-image",
+    "intel-arc",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8749848162,
+  "storage_human": "8.7 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that’s intuitive, …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Forgot email? Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/?authuser=1",
+      "snippet": "Forgot email? Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?emr=1&ltmpl=default&nojavascript=1&rm=false&service=mail&ss=1",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that’s intuitive, …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.platform%3DDesktop",
+      "snippet": "Once you're signed in, open your inbox to check your mail. On your computer, go to Gmail. Enter your Google Account email or …"
+    }
+  ]
+}

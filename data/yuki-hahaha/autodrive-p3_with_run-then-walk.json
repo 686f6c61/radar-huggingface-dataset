@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuki-hahaha/AutoDrive-P3_with_Run-then-walk",
+  "slug": "yuki-hahaha-autodrive-p3_with_run-then-walk",
+  "author": "yuki-hahaha",
+  "url": "https://huggingface.co/yuki-hahaha/AutoDrive-P3_with_Run-then-walk",
+  "created_at": "2026-10-07T17:47:19.000Z",
+  "updated_at": "2026-10-07T19:17:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8143097488,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuki, le logiciel de comptabilité en ligne",
+      "url": "https://www.yukisoftware.com/be-fr/",
+      "snippet": "Opter pour un nouveau logiciel de comptabilité en ligne? Une décision qui ne doit pas être prise à la légère. Grâce à une démo …"
+    },
+    {
+      "title": "YUKI",
+      "url": "https://www.yuki91.com/",
+      "snippet": "Bienvenue chez YUKI SUSHI Restaurant japonais à Massy : venez déguster nos sushis, maki, yakitori tous les jours midi ou soir. …"
+    },
+    {
+      "title": "Catalogue Yuki 2026 : Toutes les nouveautés au bout des doigts !",
+      "url": "https://fishingstore.fr/catalogue/yuki/",
+      "snippet": "Catalogue Yuki 2026 : Fishing Store, tous les catalogues pêche dans votre poche !"
+    },
+    {
+      "title": "Logiciel comptable: outil de comptabilité simple - Yuki",
+      "url": "https://www.yukisoftware.com/be-fr/platforme-comptable/",
+      "snippet": "Yuki s'en charge, à tout moment et où que vous soyez. Que vous soyez comptable, expert financier ou entrepreneur: notre logiciel …"
+    },
+    {
+      "title": "Yuki Competition official website | Top quality fishing tackle",
+      "url": "https://www.yukicompetition.com/",
+      "snippet": "YUKI PRRIG padded rod bags for protecting and carrying your fishing equipment. Discover the PRRIG-B, PRRIG-BS, and PRRIG-P …"
+    }
+  ]
+}

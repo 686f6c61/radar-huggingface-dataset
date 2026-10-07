@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mohawwad93/roberta_no_augment_stage2",
+  "slug": "mohawwad93-roberta_no_augment_stage2",
+  "author": "mohawwad93",
+  "url": "https://huggingface.co/mohawwad93/roberta_no_augment_stage2",
+  "created_at": "2026-10-07T16:46:39.000Z",
+  "updated_at": "2026-10-07T16:47:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 498612824,
+  "storage_human": "499 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook.com - Microsoft free personal email",
+      "url": "https://www.outlook.com/",
+      "snippet": "Get more done with partner apps and services Connect to your favorite apps and services, including Facebook, Dropbox, PayPal, …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=fr-FR&rs=US",
+      "snippet": "Access your email and stay connected with Outlook, an efficient platform for managing communications and schedules."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=3959c3b13a8c6e641c01d45a3b7a6f71",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Connexion à Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/outlook/log-in?msockid=3959c3b13a8c6e641c01d45a3b7a6f71",
+      "snippet": "Connectez-vous à Outlook avec Microsoft 365 pour accéder à vos e-mails, votre calendrier et plus encore. Téléchargez l’application …"
+    }
+  ]
+}

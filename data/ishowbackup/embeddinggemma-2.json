@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Ishowbackup/embeddinggemma-2",
+  "slug": "ishowbackup-embeddinggemma-2",
+  "author": "Ishowbackup",
+  "url": "https://huggingface.co/Ishowbackup/embeddinggemma-2",
+  "created_at": "2026-10-07T16:20:08.000Z",
+  "updated_at": "2026-10-07T16:20:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "feature-extraction",
+    "embedding",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "sentence-similarity",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1525774811,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmbeddingGemma 2: an open, lightweight multimodal embedding model",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "snippet": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space."
+    },
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "Performance EmbeddingGemma 2 delivers high-quality embeddings for code, vision, and audio tasks."
+    },
+    {
+      "title": "EmbeddingGemma 2 - Run Locally | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/models/embeddinggemma-2",
+      "snippet": "EmbeddingGemma 2 is Google&#x27;s new embedding model for text, code, images, video and audio. The model has 740M parameters, combining a 270M parameter text model with modular vision (170M) and audio (300M) encoders. It supports an Apache 2.0 license, 100+ languages and an 8K context window for tasks like semantic search, RAG and classification."
+    },
+    {
+      "title": "EmbeddingGemma 2: The Developer Guide- Google Developers Blog",
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/",
+      "snippet": "EmbeddingGemma 2 is designed to provide a single, compact open model released under the Apache 2.0 license, delivering exceptional multimodal performance for its size. Based on Gemma 4, this sub-1B model maps text, code, images, video, and audio into a unified 768-dimensional space."
+    },
+    {
+      "title": "EmbeddingGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/embeddinggemma",
+      "snippet": "EmbeddingGemma 2 is a lightweight, open-source 740M parameter model designed for unified multimodal embeddings. Built on the Gemma 4 decoder architecture, it maps text, images, audio, and video into a unified 768-dimensional vector space."
+    }
+  ]
+}

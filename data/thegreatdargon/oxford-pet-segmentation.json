@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TheGreatDargon/oxford-pet-segmentation",
+  "slug": "thegreatdargon-oxford-pet-segmentation",
+  "author": "TheGreatDargon",
+  "url": "https://huggingface.co/TheGreatDargon/oxford-pet-segmentation",
+  "created_at": "2026-10-07T16:35:50.000Z",
+  "updated_at": "2026-10-07T16:35:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "semantic-segmentation",
+    "pytorch",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23172417,
+  "parameters_human": "23.2M",
+  "storage_bytes": 92714324,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno gratuites ️ Le meilleur site porno français !",
+      "url": "https://www.monporno.fr/",
+      "snippet": "Les meilleurs films porno t’attendent gratuitement et sans aucune publicité gênante ! Enfin un site érotique français avec des vidéos …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/",
+      "snippet": "XVIDEOS Vidéos Porno Gratuites Belle-mère coquine couche avec son beau-fils et lui demande de ne rien dire à - La belle-mère …"
+    },
+    {
+      "title": "VIDÉO PORNO GRATUITE EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/",
+      "snippet": "Le plus grand Tube Porno XXX en français, tout le Sexe et Films Porno que vous voulez regarder disponibles pour votre ordinateur, …"
+    },
+    {
+      "title": "'xxx-porno' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxx-porno",
+      "snippet": "AMERICAN babe XXX porn."
+    },
+    {
+      "title": "XPorn - XVideos gratuits, films porno mobiles, meilleur tube sexe",
+      "url": "https://xporn.pro/fr/",
+      "snippet": "Profite des meilleures vidéos porno gratuites sur XPorn. On a une énorme collection de films X HD et de clips porno mobiles pour …"
+    }
+  ]
+}

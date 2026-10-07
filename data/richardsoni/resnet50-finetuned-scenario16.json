@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RichardsonI/resnet50-finetuned-scenario16",
+  "slug": "richardsoni-resnet50-finetuned-scenario16",
+  "author": "RichardsonI",
+  "url": "https://huggingface.co/RichardsonI/resnet50-finetuned-scenario16",
+  "created_at": "2026-10-07T02:18:39.000Z",
+  "updated_at": "2026-10-07T02:18:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 23565250,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94302952,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nosotros – Materias primas Guatemala - Repca",
+      "url": "http://repca.com/en/nosotros/",
+      "snippet": "At Repca, our focus is on providing our customers with solutions for manufacturing high-quality products and personalized attention. …"
+    },
+    {
+      "title": "Materias primas Guatemala – Materias primas en Guatemala para ... - Repca",
+      "url": "https://repca.com/en/",
+      "snippet": "We are proud to be strategic partners for our clients, providing them with high quality raw materials, cutting-edge functional …"
+    },
+    {
+      "title": "REPCA - Products, Competitors, Financials, Employees, Headquarters ...",
+      "url": "https://www.cbinsights.com/company/repca",
+      "snippet": "REPCA Frequently Asked Questions (FAQ) When was REPCA founded? REPCA was founded in 1983. Where is REPCA's …"
+    },
+    {
+      "title": "RSPCA - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/RSPCA",
+      "snippet": "Since the pandemic the RSPCA no longer has a National Headquarters, with most employees now working from home and small …"
+    },
+    {
+      "title": "Repca S.a. - Crunchbase Company Profile & Funding",
+      "url": "https://www.crunchbase.com/organization/repca-s-a",
+      "snippet": "Where is Repca S.a.'s headquarters? Repca S.a. is located in Ciudad De Guatemala, Guatemala, Guatemala. Repca supplies raw …"
+    }
+  ]
+}

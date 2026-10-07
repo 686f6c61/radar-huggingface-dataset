@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/loopl-2b-GGUF",
+  "slug": "mradermacher-loopl-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/loopl-2b-GGUF",
+  "created_at": "2026-10-07T02:32:34.000Z",
+  "updated_at": "2026-10-07T04:03:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "loopl",
+    "on-device",
+    "agent",
+    "tool-calling",
+    "qwen3.5",
+    "qwen3_5",
+    "sft",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "tr",
+    "dataset:cagataydev/loopl-train",
+    "base_model:cagataydev/loopl-2b",
+    "base_model:quantized:cagataydev/loopl-2b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 236,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 19103032064,
+  "storage_human": "19.1 GB",
+  "base_model": "cagataydev/loopl-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classified Items For Sale in N'Djamena, Chad - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106511226050901/classifieds/",
+      "snippet": "New and used Classifieds for sale in N'Djamena, Chad on Facebook Marketplace. Find great deals and sell your items for free."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Locations immobilières à Cologne | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/cologne/propertyrentals/",
+      "snippet": "Trouvez des offres de location immobilières à Cologne avec Facebook Marketplace. Locations d’appartement court séjour et …"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    }
+  ]
+}

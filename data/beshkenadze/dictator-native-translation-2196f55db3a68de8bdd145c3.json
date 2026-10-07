@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "beshkenadze/dictator-native-translation-2196f55db3a68de8bdd145c3",
+  "slug": "beshkenadze-dictator-native-translation-2196f55db3a68de8bdd145c3",
+  "author": "beshkenadze",
+  "url": "https://huggingface.co/beshkenadze/dictator-native-translation-2196f55db3a68de8bdd145c3",
+  "created_at": "2026-10-07T14:37:08.000Z",
+  "updated_at": "2026-10-07T14:37:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "fi",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "fi",
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 238814726,
+  "parameters_human": "238.8M",
+  "storage_bytes": 479469537,
+  "storage_human": "479 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Escorte Vicky - Saphir Escort Agency",
+      "url": "https://www.saphir-escort-agency.com/fr/model/escort-vicky/",
+      "snippet": "Vicky sait exactement comment vous séduire et vous mettre à l'aise en même temps, pour une expérience inoubliable. Son corps …"
+    },
+    {
+      "title": "Vicky - Escort Girl VIP à , France | 6inthecity",
+      "url": "https://6inthecity.com/fr/escort/26519-Vicky/",
+      "snippet": "Si tu as envie de t'évader et de passer un moment inoubliable en ma compagnie. Je suis sexy et chaude avec tout ce q'uil faut pour …"
+    },
+    {
+      "title": "Vicky - Femme sexy, câlins, sexe oral, massages, et plus.",
+      "url": "https://topescortbabes.com/fr/paris/escorts/Vicky_558499",
+      "snippet": "Où puis-je rencontrer Vicky ? Vicky est actuellement située à Paris. Elle ne voyage pas pour le moment, mais n'hésite pas à lui …"
+    },
+    {
+      "title": "Escort Vicky - Saphir Escort Agency",
+      "url": "https://www.saphir-escort-agency.com/model/escort-vicky/",
+      "snippet": "Vicky, escort bij Saphir Escort Agency, biedt een mix van sensuele charme en intelligentie, voor een onvergetelijke ervaring vol …"
+    },
+    {
+      "title": "Vicky - Sexy blonde offers fun, intimacy, and companionship.",
+      "url": "https://topescortbabes.com/paris/escorts/Vicky_558499",
+      "snippet": "Sep 29, 2026 · Hey! I am fair, a beautiful woman, I have a body rather sexy and well maintained. Blonde and long hair. I am simple, …"
+    }
+  ]
+}

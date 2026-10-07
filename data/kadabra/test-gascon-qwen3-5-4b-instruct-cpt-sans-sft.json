@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kadabra/Test-gascon-Qwen3.5-4b-Instruct-CPT-sans-SFT",
+  "slug": "kadabra-test-gascon-qwen3-5-4b-instruct-cpt-sans-sft",
+  "author": "Kadabra",
+  "url": "https://huggingface.co/Kadabra/Test-gascon-Qwen3.5-4b-Instruct-CPT-sans-SFT",
+  "created_at": "2026-10-07T16:18:44.000Z",
+  "updated_at": "2026-10-07T16:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 7022043872,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kadabra/Qwen3.5-4b-gas-CPT-SFT · Hugging Face",
+      "url": "https://huggingface.co/Kadabra/Qwen3.5-4b-gas-CPT-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Qwen3.5-4B-gas-CPT API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Kadabra/Qwen3.5-4b-gas-CPT",
+      "snippet": "Kadabra/Qwen3.5-4b-gas-CPT is a 4.5 billion parameter language model developed by Kadabra, fine-tuned from unsloth/Qwen3.5-4B. This model was trained using Unsloth and Huggingface&#x27;s TRL library, achieving 2x faster training speeds. It is designed for general language tasks, leveraging its efficient training methodology to provide a capable and optimized solution."
+    },
+    {
+      "title": "Kadabra/Qwen3.5-4b-gas-CPT-SFT · Discussions - Hugging Face",
+      "url": "https://huggingface.co/Kadabra/Qwen3.5-4b-gas-CPT-SFT/discussions",
+      "snippet": "Kadabra / Qwen3.5-4b-gas-CPT-SFT like 0 Image-Text-to-Text Transformers Safetensors English qwen3_5 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5-4b-gas-CPT-SFT API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Kadabra/Qwen3.5-4b-gas-CPT-SFT",
+      "snippet": "Run Qwen3.5-4b-gas-CPT-SFT with FriendliAI inference. This qwen35 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Running Qwen 3.5 Locally: Complete Guide to Open-Source LLM Deployment ...",
+      "url": "https://techplanet.today/post/running-qwen-35-locally-complete-guide-to-open-source-llm-deployment-on-consumer-hardware",
+      "snippet": "The release of Alibaba&#x27;s Qwen 3.5 model family marks a significant milestone in open-source large language models, bringing frontier-class AI capabilities to consumer hardware. This comprehensive guide covers everything needed to run Qwen 3.5 models locally, from hardware selection to advanced configurations. Understanding the Qwen 3.5 Model Family"
+    }
+  ]
+}

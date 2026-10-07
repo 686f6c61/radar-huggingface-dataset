@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/MuseumNight-Dependency-Bundle",
+  "slug": "sotaagi2030-museumnight-dependency-bundle",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/MuseumNight-Dependency-Bundle",
+  "created_at": "2026-10-07T16:06:54.000Z",
+  "updated_at": "2026-10-07T16:07:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90,
+  "storage_human": "90 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset 5 minutes ago ... updated a dataset 5 minutes ago"
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "SOTA Model - THEJO Ai",
+      "url": "https://thejoai.com/ai-tools/sota-model/",
+      "snippet": "SOTA Model acts as a central hub for comparing the latest machine learning models across various fields. It provides a free and easy way for experts and beginners to stay updated on top-performing so…"
+    }
+  ]
+}

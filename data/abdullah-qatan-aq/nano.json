@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abdullah-Qatan-AQ/NANO",
+  "slug": "abdullah-qatan-aq-nano",
+  "author": "Abdullah-Qatan-AQ",
+  "url": "https://huggingface.co/Abdullah-Qatan-AQ/NANO",
+  "created_at": "2026-10-07T17:57:07.000Z",
+  "updated_at": "2026-10-07T18:39:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683074240,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord您没有权限在此频道发言？怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/447951228",
+      "snippet": "本文探讨了如何解决在Discord频道中无法发言的问题，为用户提供实用的解决方案和指导。"
+    },
+    {
+      "title": "用discord这种社群模式社交你们怎么看？ - 知乎",
+      "url": "https://www.zhihu.com/question/312361278",
+      "snippet": "Discord 绝不是最「简单易用」的一个，但 Discord 却在思考如何从最底层优化产品，给到用户更多「可能性」.在疫情的大环境下， …"
+    },
+    {
+      "title": "如何修复Discord无法打开 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ff42efa9ec3c0fc19e22020b.html",
+      "snippet": "Apr 7, 2019 · Discord被认为是最具创新性和功能最强大的互联网语音协议 [1]应用程序之一，可免费下载和使用。 首次创建于2015 …"
+    },
+    {
+      "title": "汽车叶子板是哪个位置图解 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/b24f6c8278ca69c7bee5da35.html",
+      "snippet": "Jun 26, 2023 · 汽车叶子板是哪个位置图解,叶子板也叫翼子板，是遮盖车轮的车身外板。按照安装位置又分为前叶子板和后叶子板。 …"
+    },
+    {
+      "title": "Discord无法接受邀请怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/647445527",
+      "snippet": "Discord账号被限制的注意事项 在今天的社交媒体营销中，Discord逐渐成为了一个不可忽视的平台，尤其是在进行社群营销时。 多账 …"
+    }
+  ]
+}

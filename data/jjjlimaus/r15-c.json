@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/r15-C",
+  "slug": "jjjlimaus-r15-c",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/r15-C",
+  "created_at": "2026-10-07T02:48:17.000Z",
+  "updated_at": "2026-10-07T02:53:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 8074091496,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/datasets",
+      "snippet": "jjjlimaus&#x27;s datasets26 Sort: Recently updated jjjlimaus/sn38-quality-gold-100k Viewer •Updated 2 days ago•5.04M• 141"
+    },
+    {
+      "title": "Roblox Animation Maker - AI Text to R15 Animation",
+      "url": "https://www.ugcraft.ai/creation/roblox-animation-maker",
+      "snippet": "Generate R15 Roblox animations from a text prompt — no Mixamo retargeting, no Blender. Export FBX & .rbxm for NPCs, emote wheels and game assets. Try free."
+    },
+    {
+      "title": "LLMjacking: AI Model Hijacking Reaches Black Market Scale",
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-llmjacking-black-market-ai-model-hijacking/",
+      "snippet": "The term \"LLMjacking\" was coined to describe this intersection of credential theft and AI resource abuse, distinguished from prior forms of cloud infrastructure hijacking (cryptojacking, for instance) by the specific targeting of language model services and the unique financial structure of AI inference billing."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

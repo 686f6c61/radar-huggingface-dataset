@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/loopl-0.8b-GGUF",
+  "slug": "mradermacher-loopl-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/loopl-0.8b-GGUF",
+  "created_at": "2026-10-07T02:25:53.000Z",
+  "updated_at": "2026-10-07T02:57:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "loopl",
+    "on-device",
+    "agent",
+    "tool-calling",
+    "qwen3.5",
+    "qwen3_5",
+    "sft",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "tr",
+    "dataset:cagataydev/loopl-train",
+    "base_model:cagataydev/loopl-0.8b",
+    "base_model:quantized:cagataydev/loopl-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 245,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7776503296,
+  "storage_human": "7.8 GB",
+  "base_model": "cagataydev/loopl-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=2&sort=created&search=GGUF",
+      "snippet": "Models · mradermacher/loopl-2b-GGUF · mradermacher/OneDecision-VisionGuard-4B-SFT-GGUF · mradermacher/loopl-0.8b-GGUF · yothinS/Llama-3.2-3B-Thai-CRM-GGUF."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified&search=gguf",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... mradermacher/loopl-0.8b-GGUF. Image-Text-to-Text • 0.8B • Updated in about 3 ..."
+    }
+  ]
+}

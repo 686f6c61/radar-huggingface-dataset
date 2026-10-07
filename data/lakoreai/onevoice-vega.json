@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "LakoreAI/onevoice-vega",
+  "slug": "lakoreai-onevoice-vega",
+  "author": "LakoreAI",
+  "url": "https://huggingface.co/LakoreAI/onevoice-vega",
+  "created_at": "2026-10-07T14:51:47.000Z",
+  "updated_at": "2026-10-07T15:06:31.000Z",
+  "license": "onevoice-vega-mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnxruntime",
+  "languages": [
+    "vi",
+    "en",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "speech-translation",
+    "automatic-speech-recognition",
+    "text-to-speech",
+    "translation",
+    "vietnamese",
+    "edge",
+    "qualcomm",
+    "dragonwing",
+    "qcs6490",
+    "cascaded",
+    "industrial",
+    "noise-robust",
+    "audio-to-audio",
+    "vi",
+    "en",
+    "zh",
+    "ko",
+    "base_model:Helsinki-NLP/opus-mt-en-vi",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-vi",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 903845598,
+  "storage_human": "904 MB",
+  "base_model": "huuquyet/PhoWhisper-base, onnx-community/whisper-small, Helsinki-NLP/opus-mt-vi-en, Helsinki-NLP/opus-mt-en-vi, rhasspy/piper-voices, facebook/mms-tts-kor, onnx-community/silero-vad",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Vietnamese ASR (PhoWhisper-base)",
+      "dataset": "VIVOS",
+      "metric": "WER (clean speech)",
+      "value": 2.2
+    },
+    {
+      "task": "Vietnamese-to-English industrial glossary enforcement",
+      "dataset": "OneVoice industrial glossary carrier set",
+      "metric": "glossary term accuracy",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brother / Sister Weekend : The Sex Talk - BuzzFeed",
+      "url": "https://www.buzzfeed.com/watch/video/26824",
+      "snippet": "When your older sister treats you like an adult for the first time you might end up talking about some things you don’t want to talk about."
+    },
+    {
+      "title": "Brother Fingers Sister Stock Videos and Footage",
+      "url": "https://www.istockphoto.com/videos/brother-fingers-sister?msockid=0553d6c65f8d6e3f370fc12d5e146f87",
+      "snippet": "Find Brother Fingers Sister stock video, 4K footage, and other HD footage from iStock. Get higher quality Brother Fingers Sister …"
+    },
+    {
+      "title": "Brat Big Step-Sister Stalked & Creampied - IMDb",
+      "url": "https://m.imdb.com/title/tt27716924/",
+      "snippet": "Brat Big Step-Sister Stalked & Creampied Episode aired Apr 18, 2015 YOUR RATING Rate Adult"
+    },
+    {
+      "title": "Step Siblings Caught stepsiblingsseries - GitHub",
+      "url": "https://github.com/stepsiblingsseries",
+      "snippet": "Step Siblings Caught is all about crossing the line, breaking the rules, and indulging in fantasies you’d never admit out loud. It’s wild, …"
+    },
+    {
+      "title": "Brother and Sister - Clip 1 [fr st en] - Cineuropa",
+      "url": "https://cineuropa.org/en/video/425560/",
+      "snippet": "We will remove the image in question as soon as possible. We have made reasonable efforts to ensure that all images used on this …"
+    }
+  ]
+}

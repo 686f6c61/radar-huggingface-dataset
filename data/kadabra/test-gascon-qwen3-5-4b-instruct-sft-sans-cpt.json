@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Kadabra/Test-gascon-Qwen3.5-4b-Instruct-SFT-sans-CPT",
+  "slug": "kadabra-test-gascon-qwen3-5-4b-instruct-sft-sans-cpt",
+  "author": "Kadabra",
+  "url": "https://huggingface.co/Kadabra/Test-gascon-Qwen3.5-4b-Instruct-SFT-sans-CPT",
+  "created_at": "2026-10-07T15:09:15.000Z",
+  "updated_at": "2026-10-07T15:09:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 6848414944,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

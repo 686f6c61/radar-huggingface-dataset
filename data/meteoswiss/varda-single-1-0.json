@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MeteoSwiss/Varda-single-1.0",
+  "slug": "meteoswiss-varda-single-1-0",
+  "author": "MeteoSwiss",
+  "url": "https://huggingface.co/MeteoSwiss/Varda-single-1.0",
+  "created_at": "2026-08-14T08:58:30.000Z",
+  "updated_at": "2026-10-07T15:17:47.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "graph-ml",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "graph-ml",
+    "en",
+    "arxiv:2610.01835",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 10,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2950024343,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Homepage - MeteoSwiss",
+      "url": "https://www.meteoswiss.admin.ch/",
+      "snippet": "MeteoSwiss is the Federal Office for Meteorology and Climatology. We keep our finger on the pulse of the weather and climate, so …"
+    },
+    {
+      "title": "Page d'accueil - MétéoSuisse",
+      "url": "https://www.meteosuisse.admin.ch/",
+      "snippet": "MétéoSuisse est l’Office fédéral de météorologie et de climatologie. Nous prenons le pouls du temps et du climat pour que vous ne …"
+    },
+    {
+      "title": "Météo - MétéoSuisse",
+      "url": "https://www.meteosuisse.admin.ch/meteo.html",
+      "snippet": "Prévisions spéciales, dangers, systèmes d’avertissement et de mesure : MétéoSuisse met à disposition une large palette …"
+    },
+    {
+      "title": "Weather - MeteoSwiss",
+      "url": "https://www.meteoswiss.admin.ch/weather.html",
+      "snippet": "MeteoSwiss provides a broad spectrum of weather information. This information ranges from special forecasts and hazard warnings …"
+    },
+    {
+      "title": "Startseite - MeteoSchweiz",
+      "url": "https://www.meteoschweiz.admin.ch/",
+      "snippet": "MeteoSchweiz ist das Bundesamt für Meteorologie und Klimatologie. Wir fühlen Wetter und Klima den Puls – damit Sie nicht im …"
+    }
+  ]
+}

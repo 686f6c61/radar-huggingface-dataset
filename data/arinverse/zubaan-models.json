@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "arinverse/zubaan-models",
+  "slug": "arinverse-zubaan-models",
+  "author": "arinverse",
+  "url": "https://huggingface.co/arinverse/zubaan-models",
+  "created_at": "2026-10-07T16:16:40.000Z",
+  "updated_at": "2026-10-07T17:38:44.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 828862935,
+  "storage_human": "829 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotmail – Outlook.com",
+      "url": "http://www.hotmail.com/?mkt=fr-fr",
+      "snippet": "Outlook.com est le service de messagerie personnalisé et gratuit de Microsoft. Disposez d'une boîte mail toujours en ordre grâce à …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/owa/",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "How to sign in to Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail is now Outlook.com. Learn how to sign in to access your Outlook.com, Hotmail, Live, or MSN email account."
+    },
+    {
+      "title": "Comment se connecter à Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail est maintenant Outlook.com. Découvrez comment vous connecter pour accéder à votre compte de messagerie …"
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=1757f68788366d140e6be16c89056ca2",
+      "snippet": "What happened to Hotmail? We’ve redesigned and relaunched Hotmail as Outlook. We’re still committed to building the best free …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rghosh8/arc-grpo-nemotron-mini-4b-instruct-seed-1234-G-16",
+  "slug": "rghosh8-arc-grpo-nemotron-mini-4b-instruct-seed-1234-g-16",
+  "author": "rghosh8",
+  "url": "https://huggingface.co/rghosh8/arc-grpo-nemotron-mini-4b-instruct-seed-1234-G-16",
+  "created_at": "2026-10-07T16:14:09.000Z",
+  "updated_at": "2026-10-07T16:14:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:nvidia/Nemotron-Mini-4B-Instruct",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:nvidia/Nemotron-Mini-4B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 219470380,
+  "storage_human": "219 MB",
+  "base_model": "nvidia/Nemotron-Mini-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arc-grpo-nemotron-mini-4b-instruct-seed-1234-G-16 - Hugging Face",
+      "url": "https://huggingface.co/rghosh8/arc-grpo-nemotron-mini-4b-instruct-seed-1234-G-16",
+      "snippet": "Instructions to use rghosh8/arc-grpo-nemotron-mini-4b-instruct-seed-1234-G-16 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ARC-GRPO - a rghosh8 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/rghosh8/arc-grpo",
+      "snippet": "rghosh8/arc-grpo-nemotron-mini-4b-instruct-rajat-seed-3407-G-4 Text Generation • Updated Apr 10 • 4"
+    },
+    {
+      "title": "Arc Grpo Nemotron Mini 4b Instruct Rajat Seed 3407 G 16",
+      "url": "https://free2aitools.com/model/rghosh8/arc-grpo-nemotron-mini-4b-instruct-rajat-seed-3407-g-16",
+      "snippet": "Deep dive into Arc Grpo Nemotron Mini 4b Instruct Rajat Seed 3407 G 16."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "Arc Grpo Nemotron Mini 4b Instruct Rajat Seed 3407 G 4",
+      "url": "https://free2aitools.com/model/rghosh8/arc-grpo-nemotron-mini-4b-instruct-rajat-seed-3407-g-4",
+      "snippet": "Registry entry for model Arc Grpo Nemotron Mini 4b Instruct Rajat Seed 3407 G 4; source metadata pending."
+    }
+  ]
+}

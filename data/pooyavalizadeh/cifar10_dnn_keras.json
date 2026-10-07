@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "PooyaValizadeh/CIFAR10_DNN_keras",
+  "slug": "pooyavalizadeh-cifar10_dnn_keras",
+  "author": "PooyaValizadeh",
+  "url": "https://huggingface.co/PooyaValizadeh/CIFAR10_DNN_keras",
+  "created_at": "2026-10-07T17:58:28.000Z",
+  "updated_at": "2026-10-07T18:06:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "image-classification",
+    "en",
+    "dataset:uoft-cs/cifar10",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1537356,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

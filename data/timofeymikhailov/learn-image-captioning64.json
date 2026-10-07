@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TimofeyMikhailov/learn-image-captioning64",
+  "slug": "timofeymikhailov-learn-image-captioning64",
+  "author": "TimofeyMikhailov",
+  "url": "https://huggingface.co/TimofeyMikhailov/learn-image-captioning64",
+  "created_at": "2026-10-07T16:34:09.000Z",
+  "updated_at": "2026-10-07T16:34:14.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI shelves latest AI model over authorization concerns",
+      "url": "https://tech.yahoo.com/ai/chatgpt/articles/openai-shelves-latest-ai-model-005738972.html",
+      "snippet": "OpenAI is scrapping the planned release of its next-generation AI model after researchers raised safety concerns during internal testing, Newsweek has confirmed. An OpenAI spokesperson told Newsweek Monday evening that safety leaders made the decision not to ship GPT-6.1 Astra, which was set for an October debut. The decision was first reported by The Wall Street Journal. \"For anything ..."
+    },
+    {
+      "title": "LLMjacking Attack Uses Leaked AWS IAM Key to Steal Paid AI Model ...",
+      "url": "https://cybersecuritynews.com/llmjacking-attack/",
+      "snippet": "A newly documented cloud intrusion shows how quickly attackers can turn a single leaked AWS credential into a revenue stream by hijacking access to premium AI models, a technique researchers call LLMjacking."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "OpenAI Releases 722 Math Manuscripts From an Unreleased AI Model",
+      "url": "https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/",
+      "snippet": "In a research post published October 6, 2026, OpenAI said it is releasing a broad range of new mathematical results produced by an unreleased internal frontier model, publishing 722 manuscripts organized into 372 familie..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

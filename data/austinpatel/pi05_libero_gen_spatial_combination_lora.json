@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austinpatel/pi05_libero_gen_spatial_combination_lora",
+  "slug": "austinpatel-pi05_libero_gen_spatial_combination_lora",
+  "author": "austinpatel",
+  "url": "https://huggingface.co/austinpatel/pi05_libero_gen_spatial_combination_lora",
+  "created_at": "2026-10-07T17:54:30.000Z",
+  "updated_at": "2026-10-07T17:56:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0.5",
+    "lora",
+    "libero",
+    "behavior-prompting",
+    "dataset:austinpatel/libero_gen_spatial_combination_train_openpi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9574204459,
+  "storage_human": "9.6 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drapeau de Maurice — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Drapeau_de_Maurice",
+      "snippet": "Le drapeau de Maurice se compose de bandes rouge, bleue, jaune et verte 2: le vert représente l'agriculture de Maurice et ses …"
+    },
+    {
+      "title": "Le drapeau de l’île Maurice : signification des couleurs et histoire",
+      "url": "https://www.national-library.mu/le-drapeau-de-lile-maurice-signification-des-couleurs-et-histoire/",
+      "snippet": "Sep 11, 2026 · Adopté à l’indépendance en 1968, le drapeau mauricien raconte l’histoire du pays à travers quatre bandes dont cette …"
+    },
+    {
+      "title": "Drapeau de l'île Maurice : signification et couleurs",
+      "url": "https://vivrealilemaurice.fr/decouverte/drapeau-ile-maurice",
+      "snippet": "Le drapeau de l'île Maurice se compose de quatre bandes horizontales de largeur égale : rouge, bleu, jaune et vert, de haut en bas. …"
+    },
+    {
+      "title": "Le drapeau de l'île Maurice : histoire et symboles clés",
+      "url": "https://www.undertherocks.fr/drapeau-ile-maurice-histoire/",
+      "snippet": "Feb 26, 2026 · Découvrez l'histoire et la signification du drapeau de l'île Maurice, symbole vibrant de son identité et de son patrimoine."
+    },
+    {
+      "title": "Drapeau île Maurice : 4 couleurs et leur sens",
+      "url": "https://guideilemaurice.fr/drapeau-ile-maurice/",
+      "snippet": "Jul 11, 2026 · Le drapeau de l'île Maurice : les quatre couleurs et leur sens Rouge, bleu, jaune, vert : le seul drapeau national à …"
+    }
+  ]
+}

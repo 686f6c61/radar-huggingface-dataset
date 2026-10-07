@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-add-micro-details-concept-lora",
+  "slug": "runninghubai-rh-add-micro-details-concept-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-add-micro-details-concept-lora",
+  "created_at": "2026-10-07T18:19:01.000Z",
+  "updated_at": "2026-10-07T18:20:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228703090,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HS Mapping - YouTube",
+      "url": "https://www.youtube.com/@hsmapping9421",
+      "snippet": "Hello guys my purpose to create this channel is to educate people about historical maps and so that we all know about the history of …"
+    },
+    {
+      "title": "HS Mapping - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLuRPGc1xKrI6H0CzsELlccKSnR_KwlZ-q",
+      "snippet": "Massive Russian Advance l Russian Forces Reaches The Last Defense Line Of Ukranian Forces HS Mapping 69K 3y ago"
+    },
+    {
+      "title": "HS Mapping - help.expeditors.com",
+      "url": "https://help.expeditors.com/globalhelp/tf/trc/HS_Mapping.htm",
+      "snippet": "HS Mapping enables you to determine the HS code between source country to any other country, with an accuracy level of four and …"
+    },
+    {
+      "title": "WITS - Concordance",
+      "url": "https://wits.worldbank.org/product_concordance.html",
+      "snippet": "Please download the mappings you need from the links provided below. You can also login to WITS to view and download the …"
+    },
+    {
+      "title": "Mapping Harmonized System (HS) Codes: Quickly Find Global …",
+      "url": "https://shippingsolutionssoftware.com/blog/mapping-harmonized-system-hs-codes-quickly-find-global-equivalents",
+      "snippet": "Jun 24, 2024 · With our software, you can enter the HS number for one country and instantly find the corresponding classification …"
+    }
+  ]
+}

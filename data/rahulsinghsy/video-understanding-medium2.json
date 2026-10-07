@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rahulsinghsy/video-understanding-medium2",
+  "slug": "rahulsinghsy-video-understanding-medium2",
+  "author": "rahulsinghsy",
+  "url": "https://huggingface.co/rahulsinghsy/video-understanding-medium2",
+  "created_at": "2026-10-07T17:54:59.000Z",
+  "updated_at": "2026-10-07T17:55:04.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest news & breaking headlines | The Times and The Sunday Times",
+      "url": "https://www.thetimes.com/?msockid=162abbf02d1a6f5b0455ac1b2c5d6e83",
+      "snippet": "1 day ago · The latest breaking UK, US, world, business and sport news from The Times and The Sunday Times. Go beyond today's …"
+    },
+    {
+      "title": "UK | The Times and The Sunday Times",
+      "url": "https://www.thetimes.com/uk?msockid=162abbf02d1a6f5b0455ac1b2c5d6e83",
+      "snippet": "The latest UK news and analysis from The Times and The Sunday Times. Expert coverage of politics, key issues and major news …"
+    },
+    {
+      "title": "The Times",
+      "url": "https://login.thetimes.co.uk/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "The Times e-Paper",
+      "url": "https://epaper.thetimes.com/",
+      "snippet": "Access The Times e-paper editions by selecting from the available list."
+    },
+    {
+      "title": "The Sunday Times - News UK",
+      "url": "https://www.news.co.uk/our-brands/the-sunday-times/",
+      "snippet": "\"The Sunday Times is one of the best-known titles in the world and the UK’s top-selling quality Sunday paper. The Sunday Times …"
+    }
+  ]
+}

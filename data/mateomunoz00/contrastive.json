@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mateomunoz00/contrastive",
+  "slug": "mateomunoz00-contrastive",
+  "author": "mateomunoz00",
+  "url": "https://huggingface.co/mateomunoz00/contrastive",
+  "created_at": "2026-10-07T16:33:16.000Z",
+  "updated_at": "2026-10-07T16:33:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contrastive Learning Guide | AI Understanding",
+      "url": "https://aiunderstanding.org/learn/contrastive-learning",
+      "snippet": "Contrastive learning teaches a model to pull similar things together and push dissimilar things apart in an embedding space. It matters because it lets AI learn powerful representations from mostly unlabeled data, powering image search, recommendations, and multimodal models. What is the core objective of contrastive learning?"
+    },
+    {
+      "title": "Contrastive Learning: A Comprehensive Guide - Medium",
+      "url": "https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77",
+      "snippet": "The Two Flavors of Learning: Supervised vs. Unsupervised Supervised Contrastive Learning Here, labels guide the model training, simplifying the generation of positive and negative pairs."
+    },
+    {
+      "title": "CLIP (Contrastive Language-Image Pretraining) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/clip-contrastive-language-image-pretraining/",
+      "snippet": "CLIP (Contrastive Language-Image Pretraining) is a multimodal AI model that learns the relationship between images and text. By training on image-text pairs, it can understand visual content through natural language descriptions and perform image recognition without task-specific training."
+    },
+    {
+      "title": "Contrastive Learning: Key Principles and Applications - Simplilearn",
+      "url": "https://www.simplilearn.com/contrastive-learning-article",
+      "snippet": "Contrastive learning extracts meaningful representations by contrasting positive and negative pairs, helping models group similar instances and separate dissimilar ones."
+    },
+    {
+      "title": "Contrastive Learning: The Hidden Power Behind Modern AI",
+      "url": "https://medium.com/@reddynikhil312/contrastive-learning-the-hidden-power-behind-modern-ai-8c5d602ab0a1",
+      "snippet": "Contrastive Learning is a self-supervised learning technique where models learn by distinguishing between similar and dissimilar data pairs. Instead of learning from labels, the model knows what ..."
+    }
+  ]
+}

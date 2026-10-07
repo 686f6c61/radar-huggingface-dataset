@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "EmilieRich/swin-t-experiment",
+  "slug": "emilierich-swin-t-experiment",
+  "author": "EmilieRich",
+  "url": "https://huggingface.co/EmilieRich/swin-t-experiment",
+  "created_at": "2026-10-07T16:05:25.000Z",
+  "updated_at": "2026-10-07T16:05:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krishpandey/swin-t-experiment · Hugging Face",
+      "url": "https://huggingface.co/krishpandey/swin-t-experiment",
+      "snippet": "Overview This is an experimental Swin T codebase for Matching. It keeps the huge setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Priyamehta/swin-t-experiment · Hugging Face",
+      "url": "https://huggingface.co/Priyamehta/swin-t-experiment",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Swin T for Retrieval. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and sources: articles, theses, books, abstracts and court opinions."
+    },
+    {
+      "title": "Best Free AI 3D Model Generators in 2026 (Tested and Compared)",
+      "url": "https://www.3daistudio.com/blog/best-free-ai-3d-model-generators-2026",
+      "snippet": "The best free AI 3D model generators in 2026, compared on free credits, commercial use, export formats, and quality. Generate 3D models from text or images at no cost."
+    }
+  ]
+}

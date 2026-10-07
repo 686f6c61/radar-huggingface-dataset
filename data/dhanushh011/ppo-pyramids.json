@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dhanushh011/ppo-Pyramids",
+  "slug": "dhanushh011-ppo-pyramids",
+  "author": "dhanushh011",
+  "url": "https://huggingface.co/dhanushh011/ppo-Pyramids",
+  "created_at": "2026-10-07T17:59:09.000Z",
+  "updated_at": "2026-10-07T17:59:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39261617,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tuen Mun–Chek Lap Kok Link - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tuen_Mun%E2%80%93Chek_Lap_Kok_Link",
+      "snippet": "The Northern Connection comprises an undersea tunnel crossing the Urmston Road, linking Tuen Mun to the \"Boundary Crossing …"
+    },
+    {
+      "title": "Bouygues Construction | Tuen Mun-Chek Lap Kok Link",
+      "url": "https://www.bouygues-construction.com/en/activities/mobility/tunnels/tunnel-tuen-mun-chek-lap-kok",
+      "snippet": "The Tuen Mun–Chek Lap Kok Link project involves the construction of a twin-tube underwater road tunnel connecting the New …"
+    },
+    {
+      "title": "Tuen Mun – Chek Lap Kok Link (TM-CLKL) - Highways Department",
+      "url": "https://www.hyd.gov.hk/en/our_projects/road_projects/hzmb_projects/tmclkl/index.html",
+      "snippet": "Dec 27, 2021 · Construction of a dual 2-lane sub-sea tunnel of about 5 km long between Tuen Mun Area 40 and the Hong Kong Port …"
+    },
+    {
+      "title": "Tuen Mun-Chek Lap Kok Tunnel - Transport Department",
+      "url": "https://www.td.gov.hk/en/tmclkl/index.html",
+      "snippet": "Dec 27, 2020 · The above franchised bus routes observe the bus stop at the Bus-bus Interchange (\"BBI\") located at Tuen Mun Chek …"
+    },
+    {
+      "title": "Tunnel routier Tuen Mun-Chek Lap Kok - Bouygues Construction",
+      "url": "https://www.bouygues-construction.com/fr/activites/mobilite/tunnels/tunnel-tuen-mun-chek-lap-kok",
+      "snippet": "Le projet Tuen Mun–Chek Lap Kok Link consiste en la réalisation d’un tunnel routier bitube sous-marin, reliant les Nouveaux …"
+    }
+  ]
+}

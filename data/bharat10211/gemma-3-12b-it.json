@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bharat10211/gemma-3-12b-it",
+  "slug": "bharat10211-gemma-3-12b-it",
+  "author": "bharat10211",
+  "url": "https://huggingface.co/bharat10211/gemma-3-12b-it",
+  "created_at": "2026-10-07T16:12:24.000Z",
+  "updated_at": "2026-10-07T16:16:14.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma3",
+    "license:gemma",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le 129 © Officiel - Saint-Denis menu, offres et prix - Livraison à ...",
+      "url": "https://www.ubereats.com/fr/store/le-129-officiel-saint-denis/-mwm_brMWXy1IYrhxClB5A?msockid=2338bc5052cd6d282d65abbb53ef6c84",
+      "snippet": "Où puis-je trouver les prix du menu proposé par Le 129 © Officiel - Saint-Denis en ligne ? Comment bénéficier des frais de livraison …"
+    },
+    {
+      "title": "Restaurant le 129, Saint-Denis - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/129-Paris",
+      "snippet": "Sep 29, 2026 · Restaurant le 129 à Saint-Denis classé 4.9 sur 5 sur Restaurant Guru : 4635 avis de visiteurs, 184 photos. Exlorer le …"
+    },
+    {
+      "title": "Restaurant le 129 Menu complet avec prix – Mise à jour 10/2026",
+      "url": "https://restaurant-le-129.menueat.net/menu",
+      "snippet": "Le menu du 129 est centré sur des sandwichs copieux, principalement à base de poulet et de bœuf, ainsi que des burgers et …"
+    },
+    {
+      "title": "Menu au Restaurant le 129, Saint-Denis, 129bis Rue Gabriel Péri",
+      "url": "https://fr.restaurantguru.com/129-Paris/menu",
+      "snippet": "Le menu actuel du Restaurant le 129. Prix et avis des visiteurs sur les plats."
+    },
+    {
+      "title": "Le 129 Test Account menu, offres et prix - Livraison à Saint-Denis ...",
+      "url": "https://www.ubereats.com/fr/store/le-129-test-account/C2Apt0R5Rg6mOF1UUCN9PA?msockid=2338bc5052cd6d282d65abbb53ef6c84",
+      "snippet": "Jan 10, 2024 · Interested in Le 129 Test Account? Find information about its location, offerings, and more. Order from one of the …"
+    }
+  ]
+}

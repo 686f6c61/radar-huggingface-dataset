@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zhineng/smolvla_libero_10",
+  "slug": "zhineng-smolvla_libero_10",
+  "author": "zhineng",
+  "url": "https://huggingface.co/zhineng/smolvla_libero_10",
+  "created_at": "2026-10-07T02:45:53.000Z",
+  "updated_at": "2026-10-07T02:51:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720232,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taiyaki: The Story Behind Japan’s Beloved Fish-Shaped Snack",
+      "url": "https://www.tokyoweekender.com/food-and-drink/history-of-taiyaki/",
+      "snippet": "Nov 19, 2024 · Taiyaki was invented in Japan’s Meiji period by Seijiro Kobe, the first owner of the taiyaki specialty shop Naniwaya …"
+    },
+    {
+      "title": "Taiyaki - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Taiyaki",
+      "snippet": "Taiyaki was first sold in Japan in 1909. It is essentially a reshaped form of imagawayaki, an already popular snack made by wrapping …"
+    },
+    {
+      "title": "SPARSE IMAGINATION FOR EFFICIENT VISUAL WORLD MODEL ...",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/file/a750d52284ff70c6d6bab8072c392d74-Paper-Conference.pdf",
+      "snippet": "RS-2023-00222663, Center for Optimizing Hyperscale AI Models and Platforms). ... LIBERO-10 suites to train both our world model and the SmolVLA policy. This ..."
+    },
+    {
+      "title": "Where Did Taiyaki Originate? The History of the Fish-Shaped Cake",
+      "url": "https://explainthat.org/where-did-taiyaki-originate-the-history-of-the-fish-shaped-cake/",
+      "snippet": "Nov 9, 2025 · Its history is rooted in Japan, evolving from a simpler, older sweet to become a national favorite. This journey spans …"
+    },
+    {
+      "title": "The History of Taiyaki - From Edo to Today! - TokyoTreat Blog",
+      "url": "https://tokyotreat.com/blog/history-of-taiyaki",
+      "snippet": "Sep 21, 2021 · Taiyaki is a classic Japanese snack that has been loved for over a century. Made from a batter similar to waffle or …"
+    }
+  ]
+}

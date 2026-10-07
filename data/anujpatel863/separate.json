@@ -5,7 +5,7 @@
   "author": "anujpatel863",
   "url": "https://huggingface.co/anujpatel863/Separate",
   "created_at": "2025-12-10T06:54:24.000Z",
-  "updated_at": "2026-10-05T11:15:45.000Z",
+  "updated_at": "2026-10-06T15:35:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,13 +16,13 @@
     "onnx",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 424,
+  "likes": 1,
+  "downloads_30d": 419,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32003800346,
-  "storage_human": "32.0 GB",
+  "storage_bytes": 32069241965,
+  "storage_human": "32.1 GB",
   "base_model": null,
   "formats": [
     "onnx"

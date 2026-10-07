@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/r15-base-chrono2023-bf16",
+  "slug": "jjjlimaus-r15-base-chrono2023-bf16",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/r15-base-chrono2023-bf16",
+  "created_at": "2026-10-07T02:33:08.000Z",
+  "updated_at": "2026-10-07T02:34:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 4037045748,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "jjjlimaus/chrono2-2023-v4gold-sft · Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/chrono2-2023-v4gold-sft",
+      "snippet": "jjjlimaus / chrono2-2023-v4gold-sft Like 0 Safetensors sn38-nanochrono sn38 chronollm year-cutoff-2023 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    },
+    {
+      "title": "HiDream: The Unfiltered Image Generation (FP16/NF4/GGUF)",
+      "url": "https://www.stablediffusiontutorials.com/2025/04/hidream-model.html",
+      "snippet": "HiDream another banger after Flux, developed by Vivago AI is making waves and for good reason. It&#x27;s a powerful, open-source, text-to-image diffusion model with 17 billion parameters, offering top-tier image quality and prompt adherence that rivals paid subscription models."
+    },
+    {
+      "title": "LLM Leaderboard (October 2026) — Intelligence, Coding & Speed ...",
+      "url": "https://modelgrep.com/leaderboard",
+      "snippet": "Live LLM leaderboard ranking 300+ large language models by the Artificial Analysis Intelligence, Coding and Agentic indexes — with speed, latency and pricing on every row. Updated hourly."
+    }
+  ]
+}

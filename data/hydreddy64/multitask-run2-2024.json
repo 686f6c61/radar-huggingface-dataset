@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hydreddy64/multitask-run2-2024",
+  "slug": "hydreddy64-multitask-run2-2024",
+  "author": "hydreddy64",
+  "url": "https://huggingface.co/hydreddy64/multitask-run2-2024",
+  "created_at": "2026-10-07T14:37:57.000Z",
+  "updated_at": "2026-10-07T14:38:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate - Een persoonlijke tolk op je telefoon of computer",
+      "url": "https://translate.google.com/intl/nl/about/",
+      "snippet": "Je wereld begrijpen en communiceren in verschillende talen met Google Translate. Vertaal tekst, spraak, afbeeldingen, documenten, …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mahendra99ar/trustlens-detector",
+  "slug": "mahendra99ar-trustlens-detector",
+  "author": "Mahendra99ar",
+  "url": "https://huggingface.co/Mahendra99ar/trustlens-detector",
+  "created_at": "2026-10-07T16:30:48.000Z",
+  "updated_at": "2026-10-07T16:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "trustlens",
+    "reviews",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169203407,
+  "storage_human": "169 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLMjacking Attack Uses Leaked AWS IAM Key to Steal Paid AI Model ...",
+      "url": "https://cybersecuritynews.com/llmjacking-attack/",
+      "snippet": "A newly documented cloud intrusion shows how quickly attackers can turn a single leaked AWS credential into a revenue stream by hijacking access to premium AI models, a technique researchers call LLMjacking."
+    },
+    {
+      "title": "TruthLens — AI Fake News & Deepfake Detector",
+      "url": "https://truthlens.insightfactory.io/",
+      "snippet": "Verify content authenticity with AI. Detect fake news, deepfakes, and AI-generated text, images & videos instantly."
+    },
+    {
+      "title": "AI Agents News Brief: September 6, 2026 - Major Model Releases and ...",
+      "url": "https://aiagentsdirectory.com/news/ai-agents-news-brief-september-6-2026",
+      "snippet": "A daily brief on AI agents, covering new model releases from Anthropic, OpenAI, Meta, and Google, advancements in AI-powered software development, and comparisons of leading AI models."
+    },
+    {
+      "title": "GitHub - snehasis297/Trustlens-deepfake-detector",
+      "url": "https://github.com/snehasis297/Trustlens-deepfake-detector",
+      "snippet": "TrustLens — On-Device AI Image Authenticity & Deepfake Detector Submission for the Qualcomm Snapdragon AI Lab Build & Present Challenge 1. Problem Statement"
+    },
+    {
+      "title": "TruthLens Pro — AI Content Detector",
+      "url": "https://truthlensdetect.com/",
+      "snippet": "Detect AI-generated text, images, and video in seconds. TruthLens Pro uses forensic-grade AI analysis to expose fakes. Free to start, no signup needed."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "matheshpitchai/bearing_assembly_smolvla",
+  "slug": "matheshpitchai-bearing_assembly_smolvla",
+  "author": "matheshpitchai",
+  "url": "https://huggingface.co/matheshpitchai/bearing_assembly_smolvla",
+  "created_at": "2026-10-07T16:28:26.000Z",
+  "updated_at": "2026-10-07T16:28:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:matheshpitchai/bearing_assembly",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matheshpitchai/act_bearing_A_full · Hugging Face",
+      "url": "https://huggingface.co/matheshpitchai/act_bearing_A_full",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SmolVLA: Efficient Vision-Language-Action Model trained on Lerobot ...",
+      "url": "https://huggingface.co/blog/smolvla",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Anatomy of VLA: Inside SmolVLA - Medium",
+      "url": "https://medium.com/@ahabb/anatomy-of-vla-inside-smolvla-424062c65aa4",
+      "snippet": "Anatomy of VLA: Inside SmolVLA Introduction SmolVLA is a highly efficient, open-source Vision-Language-Action (VLA) foundation model developed by Hugging Face that packs advanced robotic control ..."
+    },
+    {
+      "title": "SmolVLA · FastFlowLM",
+      "url": "https://fastflowlm.com/docs/models/smolvla/",
+      "snippet": "SmolVLA is a robotics policy model that maps camera images and language instructions directly to robot actions — it does not run in FLM&#x27;s standard CLI or Server chat modes."
+    },
+    {
+      "title": "GitHub - PhosFaith/SmolVLA: Finetunning the SmolVLM by huggingface into ...",
+      "url": "https://github.com/PhosFaith/SmolVLA",
+      "snippet": "SmolVLA Project.. Finetunning the SmolVLM by huggingface into a VLA. This is an ongoing project for the AI course in the Masters in Marine Intelligent Robotics at UTLN."
+    }
+  ]
+}

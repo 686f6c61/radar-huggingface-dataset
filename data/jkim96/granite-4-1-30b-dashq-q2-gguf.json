@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jkim96/granite-4.1-30b-DASHQ-Q2-GGUF",
+  "slug": "jkim96-granite-4-1-30b-dashq-q2-gguf",
+  "author": "jkim96",
+  "url": "https://huggingface.co/jkim96/granite-4.1-30b-DASHQ-Q2-GGUF",
+  "created_at": "2026-10-07T16:33:40.000Z",
+  "updated_at": "2026-10-07T16:50:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dashq",
+    "quantized",
+    "text-generation",
+    "base_model:ibm-granite/granite-4.1-30b",
+    "base_model:quantized:ibm-granite/granite-4.1-30b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28865728512,
+  "parameters_human": "28.87B",
+  "storage_bytes": 37919102720,
+  "storage_human": "37.9 GB",
+  "base_model": "ibm-granite/granite-4.1-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.1 | IBM Granite",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-1",
+      "snippet": "Granite 4.1 Dense language model family in 3B, 8B, and 30B sizes with instruction-tuned variants, delivering improved tool calling, instruction following, coding, and mathematical reasoning."
+    },
+    {
+      "title": "Granite 4.1 30B — 30B Dense LLM | FitMyLLM",
+      "url": "https://www.fitmyllm.com/model/granite-4.1-30b",
+      "snippet": "Granite 4.1 30B: 30B parameters, 512K context, chat, coding, reasoning, multilingual, tool_use. 10 benchmarks, 14 quantizations. VRAM requirements, speed estimates ..."
+    },
+    {
+      "title": "Granite 4.1 Language Models - a ibm-granite Collection",
+      "url": "https://huggingface.co/collections/ibm-granite/granite-41-language-models",
+      "snippet": "Efficient language models for multilingual generation, coding, RAG, and AI assistant workflows."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Introducing the IBM Granite 4.1 family of models - IBM Research",
+      "url": "https://research.ibm.com/blog/granite-4-1-ai-foundation-models",
+      "snippet": "The team found, for example, that the new Granite 4.1 8B instruct model consistently matches or outperforms the Granite 4.0 32B Mixture‑of‑Experts model, while using a simpler — and therefore more flexible — architecture for fine tuning for downstream tasks."
+    }
+  ]
+}

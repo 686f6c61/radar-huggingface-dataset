@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ron-jo/kitten-tts-nano-0.8-ort18",
+  "slug": "ron-jo-kitten-tts-nano-0-8-ort18",
+  "author": "ron-jo",
+  "url": "https://huggingface.co/ron-jo/kitten-tts-nano-0.8-ort18",
+  "created_at": "2026-10-07T16:10:48.000Z",
+  "updated_at": "2026-10-07T16:11:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "base_model:KittenML/kitten-tts-nano-0.8-fp32",
+    "base_model:quantized:KittenML/kitten-tts-nano-0.8-fp32",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56599575,
+  "storage_human": "57 MB",
+  "base_model": "KittenML/kitten-tts-nano-0.8-fp32",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1 RON en EUR - taux de change de Lei roumains à Euros - Xe",
+      "url": "https://www.xe.com/fr/currencyconverter/convert/?Amount=1&From=RON&To=EUR",
+      "snippet": "Obtenez gratuitement le dernier taux de 1 Leu roumain à Euro avec le convertisseur universel d'origine. Activez des alertes de taux …"
+    },
+    {
+      "title": "Convertisseur euro leu roumain EUR/RON",
+      "url": "https://www.convertisseureuro.fr/convertisseur-euro-leu.php",
+      "snippet": "1 day ago · CONVERTISSEUR euro leu roumain et leu roumain euro (1 euro = 5,3363 RON) Ce convertisseur permet de convertir …"
+    },
+    {
+      "title": "Ron’* - YouTube",
+      "url": "https://www.youtube.com/@Ron123",
+      "snippet": "3# تحدي تخمين الصور مع فاطمة المتواضعة🔥..!! ⁨ Ron’Game and 2 more 198K 6mo ago 28:09"
+    },
+    {
+      "title": "Ron — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ron",
+      "snippet": "Prénom Ron, diminutif du prénom Ronald, parfois plus commun que le prénom lui-même. C'est également un prénom hébraïque (רון) …"
+    },
+    {
+      "title": "Convertir Leu Roumain (RON) contre Euro (EUR)",
+      "url": "https://themoneyconverter.com/FR/RON/EUR",
+      "snippet": "Jul 10, 2026 · RON Leu Roumain Pays Roumanie Région Europe Sous-unité 1 LEU = 100 bani Symbole LEU Le leu roumain, lei au …"
+    }
+  ]
+}

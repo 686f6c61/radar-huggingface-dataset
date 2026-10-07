@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/d1-omni-600M",
+  "slug": "liquidai-d1-omni-600m",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/d1-omni-600M",
+  "created_at": "2026-10-05T17:18:48.000Z",
+  "updated_at": "2026-10-07T16:56:40.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "d1_omni",
+    "feature-extraction",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "decision",
+    "classification",
+    "calibration",
+    "system-one",
+    "multimodal",
+    "vision",
+    "audio",
+    "image-text-to-text",
+    "custom_code",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "arxiv:2511.23404",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:finetune:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 587161089,
+  "parameters_human": "587.2M",
+  "storage_bytes": 4718932608,
+  "storage_human": "4.7 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/d1-omni-600M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-omni-600M-GGUF",
+      "snippet": "d1-omni-600M is a decision model developed by Liquid AI: it answers named, typed questions over a state (text, JSON, images or audio) in one forward pass, with no generated tokens."
+    },
+    {
+      "title": "Multimodal open d1 decision models for the edge - Hugging Face",
+      "url": "https://huggingface.co/blog/LiquidAI/open-d1",
+      "snippet": "Today, we release two open decision models in our d1 decision model family: d1-3B and d1-omni-600M (experimental). Best decision model under 10B on the Decision Index 0.2.1: d1-3B scores 48.57, ahead of every 4B and 9B model and of Decider 35B-A3B (47.11)."
+    },
+    {
+      "title": "Introducing d1: The most capable decision model, now with vision",
+      "url": "https://www.liquid.ai/blog/d1-decision-model",
+      "snippet": "d1, Liquid AI&#x27;s decision model, now handles text and images. It matches or beats GPT-6.1 Sol on 4 of 6 real tasks."
+    },
+    {
+      "title": "Liquid AI Open d1: 3B Decision Model Answers in 16 ms - explainx.ai",
+      "url": "https://www.explainx.ai/blog/liquid-ai-open-d1-3b-omni-600m-open-weight-decision-models-edge-2026",
+      "snippet": "Liquid AI released open-weight d1-3B and d1-omni-600M decision models that answer in one forward pass. Benchmarks, latency and how to run them."
+    },
+    {
+      "title": "Liquid AI Releases Two Open Decision Models for Edge",
+      "url": "https://www.globai.org/blog/liquid-ai-releases-two-open-decision-models-for-edge",
+      "snippet": "Liquid AI released two open-weight decision models-d1-3B and d1-omni-600M-on October 7, 2026, targeting edge hardware with single-forward-pass latency. Unlike generative LLMs, they output structured answers (yes/no, categories, scores) in milliseconds: d1-3B hits 16 ms on a Jetson AGX Thor and leads sub-10B models on the Decision Index at 48.57."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "gahabeen/embeddinggemma-2-text-image-440m-mlx-bf16",
+  "slug": "gahabeen-embeddinggemma-2-text-image-440m-mlx-bf16",
+  "author": "gahabeen",
+  "url": "https://huggingface.co/gahabeen/embeddinggemma-2-text-image-440m-mlx-bf16",
+  "created_at": "2026-10-07T16:39:49.000Z",
+  "updated_at": "2026-10-07T16:39:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "embedding_gemma2",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "code",
+    "mlx-vlm",
+    "multimodal-embedding",
+    "image-feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 438760472,
+  "parameters_human": "438.8M",
+  "storage_bytes": 914459193,
+  "storage_human": "914 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "Pinterest 在中国行得通吗？为什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19981672",
+      "snippet": "Dec 20, 2011 · pinterest定位了它第一阶段的用户－有品位追求和好奇心强的女人（23－27）。 那么它满足了什么样这些人什么的心 …"
+    },
+    {
+      "title": "Pinterest 现在要邀请访问，有什么办法能够注册？ - 知乎",
+      "url": "https://www.zhihu.com/question/20351197",
+      "snippet": "今天介绍一下Pinterest怎么注册、下载安装以及使用教程。 Pinterest全球著名的设计图片网站，那么在国内怎么上 Pinterest？别着 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "这玩法是真的,但没你想得那么简单。 不用露脸、不用拍视频、不用英语口语、一天花1-2小时,在Pinterest上发图片,就能拿到老外的美 …"
+    }
+  ]
+}

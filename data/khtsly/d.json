@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "khtsly/d",
+  "slug": "khtsly-d",
+  "author": "khtsly",
+  "url": "https://huggingface.co/khtsly/d",
+  "created_at": "2026-10-07T01:47:43.000Z",
+  "updated_at": "2026-10-07T13:28:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_linear",
+    "text-generation",
+    "kimi-k3",
+    "luau",
+    "experimental-checkpoint",
+    "custom_code",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 167,
+  "trending_score": 0,
+  "parameters": 2616121312,
+  "parameters_human": "2.62B",
+  "storage_bytes": 25685544710,
+  "storage_human": "25.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magasins Decathlon | Trouvez le magasin le plus proche de chez vous",
+      "url": "https://www.decathlon.fr/store-locator?msockid=01db0522c9af6d5c342a12c9c8b36cd6",
+      "snippet": "Profitez du meilleur de Decathlon près de chez vous. Utilisez notre carte pour trouver votre magasin, vérifier les horaires d'ouverture …"
+    },
+    {
+      "title": "Decathlon Fouquières lès Béthune",
+      "url": "https://www.decathlon.fr/store-view/magasin-de-sports-decathlon-fouquieres-les-bethune-0070007900079?msockid=01db0522c9af6d5c342a12c9c8b36cd6",
+      "snippet": "Rendez-vous dans votre magasin Decathlon de Decathlon Fouquières lès Béthune pour découvrir notre matériel de sport et profiter …"
+    },
+    {
+      "title": "Magasins Decathlon à Bruay-la-Buissière - Horaires ... - Tiendeo",
+      "url": "https://www.tiendeo.fr/Magasins/bruay-la-buissiere/decathlon",
+      "snippet": "Trouvez ici toutes les adresses, téléphones et horaires de Decathlon à Bruay-la-Buissière et de vos magasins préférées. Informez …"
+    },
+    {
+      "title": "Decathlon à Bruay-la-Buissière 62700 - Alternativi",
+      "url": "https://alternativi.fr/annuaire/decathlon/bruay-la-buissiere-62700",
+      "snippet": "Décathlon à Bruay-la-Buissière dans le Pas-de-Calais (62700) : adresse, contact téléphonique et horaires d'ouverture."
+    },
+    {
+      "title": "Magasins Decathlon à Bruay-la-Buissière - Pubeco",
+      "url": "https://www.pubeco.fr/point-de-vente/bruay-la-buissiere/decathlon",
+      "snippet": "Trouvez tous les magasins Decathlon à Bruay-la-Buissière. Horaires, adresses et offres disponibles près de chez vous avec Pubeco.fr."
+    }
+  ]
+}

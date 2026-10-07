@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "TheGreatDargon/my_seg_model",
+  "slug": "thegreatdargon-my_seg_model",
+  "author": "TheGreatDargon",
+  "url": "https://huggingface.co/TheGreatDargon/my_seg_model",
+  "created_at": "2026-10-07T16:48:10.000Z",
+  "updated_at": "2026-10-07T16:48:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "segmentation-models-pytorch",
+  "languages": [],
+  "tags": [
+    "segmentation-models-pytorch",
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "semantic-segmentation",
+    "pytorch",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23172417,
+  "parameters_human": "23.2M",
+  "storage_bytes": 92714324,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Animexx.de: Eventreihe Animexx-Treffen Augsburg \"Mishiro\"",
+      "url": "https://www.animexx.de/events/reihen/2651/",
+      "snippet": "Das Animexx-Treffen Augsburg \"Mishiro\" öffnet alle zwei Monate für euch von 14:00 - 20:00 Uhr seine Türen! Wir laden ein zum …"
+    },
+    {
+      "title": "Animexx.de: Der Anime- und Manga-Verein",
+      "url": "https://www.animexx.de/",
+      "snippet": "1 day ago · Auf Animexx.de kannst du dich und deine Werke präsentieren, neue Freunde finden und dein Hobby ausleben. Werde …"
+    },
+    {
+      "title": "animexx_MUC - Animexx.de",
+      "url": "https://www.animexx.de/projekte/animexx_MUC/",
+      "snippet": "2 days ago · Das Münchner Animexx-Treffen findet im Jugendzentrum Aquarium in München-Pasing statt. Es gibt Getränke, Essen, …"
+    },
+    {
+      "title": "Verein - Animexx.de",
+      "url": "https://www.animexx.de/verein/",
+      "snippet": "2 days ago · Der Animexx e.V. ist der größte deutschsprachige und gemeinnützige Verein für Fans japanischer Zeichenkunst und …"
+    },
+    {
+      "title": "Werde aktiv! - Animexx.de",
+      "url": "https://www.animexx.de/content.php?id=36",
+      "snippet": "1 day ago · Unter dem Motto \"Werde aktiv!\" habt ihr die Möglichkeit, bei unterschiedlichsten Animexx-Projekten direkt dabei zu sein …"
+    }
+  ]
+}

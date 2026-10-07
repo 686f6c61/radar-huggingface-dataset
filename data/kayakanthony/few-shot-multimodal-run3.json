@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kayakanthony/few-shot-multimodal-run3",
+  "slug": "kayakanthony-few-shot-multimodal-run3",
+  "author": "kayakanthony",
+  "url": "https://huggingface.co/kayakanthony/few-shot-multimodal-run3",
+  "created_at": "2026-10-07T15:06:23.000Z",
+  "updated_at": "2026-10-07T15:06:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "few-shot-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DU Nutrition et activités physiques - Université Clermont Auvergne",
+      "url": "https://www.uca.fr/formation/nos-formations/catalogue-des-formations/du-nutrition-et-activites-physiques",
+      "snippet": "Ce DU a pour but de permettre à des professionnels (médecins, diététiciens, entraîneurs, cadres diplômés en Master STAPS, ...) …"
+    },
+    {
+      "title": "DU nutrition et activités physiques (Aubière) - L'Etudiant",
+      "url": "https://www.letudiant.fr/etudes/annuaire-enseignement-superieur/formation/formation-du-nutrition-et-activites-physiques-215137.html",
+      "snippet": "Tout savoir sur la formation DU nutrition et activités physiques, UFR STAPS, Aubière (63)."
+    },
+    {
+      "title": "DIPLÔME D’UNIVERSITÉ « NUTRITION ET ACTIVITÉ PHYSIQUE »",
+      "url": "https://www.uca.fr/medias/fichier/fiche-de-presentation-du-nutrition-et-activites-physiques-option-performance-sportive_1756277809660-pdf?ID_FICHE=22393&INLINE=FALSE",
+      "snippet": "Ce D. U. a pour but de permettre à des professionnels (médecins, diététiciens, entraîneurs, cadres diplômés en Master STAPS, ...) …"
+    },
+    {
+      "title": "OCTOBRE 2019 Mise à jour mars 2025 Activité physique",
+      "url": "https://www.has-sante.fr/upload/docs/application/pdf/2026-04/dir3/tap_activite_physique_2026.pdf",
+      "snippet": "vec une population de plus en plus sédentaire, touchée plus fréquemment par des maladies chroniques, le développement de …"
+    },
+    {
+      "title": "Diplôme d'Université Nutrition et Activité Physique option Performance ...",
+      "url": "https://www.coteformations.fr/je-recherche/une-formation/diplome-d-universite-nutrition-et-activite-physique/1152948",
+      "snippet": "Ce D. U. a pour but de permettre à des professionnels (médecins, diététiciens, entraîneurs, cadres diplômés en Master STAPS, …) …"
+    }
+  ]
+}

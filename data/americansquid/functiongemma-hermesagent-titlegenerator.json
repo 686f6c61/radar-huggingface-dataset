@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "americansquid/FunctionGemma-HermesAgent-TitleGenerator",
+  "slug": "americansquid-functiongemma-hermesagent-titlegenerator",
+  "author": "americansquid",
+  "url": "https://huggingface.co/americansquid/FunctionGemma-HermesAgent-TitleGenerator",
+  "created_at": "2026-10-07T02:24:01.000Z",
+  "updated_at": "2026-10-07T02:34:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 3318873395,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Latest News from the UK and Around the World | Sky News",
+      "url": "https://news.sky.com/",
+      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
+    },
+    {
+      "title": "Watch Sky News Live",
+      "url": "https://news.sky.com/watch-live",
+      "snippet": "If you're unable to watch or just want to save data, you can also listen to Sky News by clicking below - or ask your smart speaker to …"
+    },
+    {
+      "title": "UK News - The latest headlines from the UK | Sky News",
+      "url": "https://news.sky.com/uk",
+      "snippet": "Expert comment and analysis on the latest UK news, with headlines from England, Scotland, Northern Ireland and Wales."
+    },
+    {
+      "title": "World News - Breaking international news and headlines | Sky News",
+      "url": "https://news.sky.com/world",
+      "snippet": "The latest international news from Sky, featuring top stories from around the world and breaking news, as it happens."
+    },
+    {
+      "title": "Daily Puzzles - Sudoku, Make Tracks & More | Sky News",
+      "url": "https://news.sky.com/puzzles",
+      "snippet": "Keep your mind sharp with new challenges every day. Play and solve our daily puzzles on Sky News, including Make Tracks, …"
+    }
+  ]
+}

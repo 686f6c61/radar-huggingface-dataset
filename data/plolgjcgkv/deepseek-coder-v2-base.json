@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Plolgjcgkv/DeepSeek-Coder-V2-Base",
+  "slug": "plolgjcgkv-deepseek-coder-v2-base",
+  "author": "Plolgjcgkv",
+  "url": "https://huggingface.co/Plolgjcgkv/DeepSeek-Coder-V2-Base",
+  "created_at": "2026-10-07T18:28:05.000Z",
+  "updated_at": "2026-10-07T18:28:05.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v2",
+    "custom_code",
+    "arxiv:2401.06066",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235741434880,
+  "parameters_human": "235.74B",
+  "storage_bytes": 471486512925,
+  "storage_human": "471.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(@otter.n.j) • Instagram photos and videos",
+      "url": "https://www.instagram.com/otter.n.j/",
+      "snippet": "3,222 Followers, 5 Following, 5 Posts - @otter.n.j on Instagram: \"\""
+    },
+    {
+      "title": "(@otter.n.j) • Instagram photos and videos",
+      "url": "https://www.instagram.com/otter.n.j/reels/",
+      "snippet": "4,643 Followers, 6 Following, 8 Posts - See Instagram photos and videos from (@otter.n.j)"
+    },
+    {
+      "title": "2025-26 New Jersey Beaver and River Otter Trapping Regulations",
+      "url": "https://dep.nj.gov/wp-content/uploads/njfw/beaver-and-otter-trapping-regulations.pdf",
+      "snippet": "2025-26 New Jersey Beaver and River Otter Trapping Regulations Congratulations on successfully receiving a special permit for …"
+    },
+    {
+      "title": "OtterNJ (@OtterNj) / Posts / X",
+      "url": "https://x.com/OtterNj",
+      "snippet": "Jan 7, 2021 · OtterNJ (@OtterNj) - Posts - NJ 🦦 | X (formerly Twitter)"
+    },
+    {
+      "title": "Otter Meeting Agent - AI Notetaker, Transcription, Insights",
+      "url": "https://otter.ai/?msockid=2b546199dbf96ada348b7672da6f6bf3",
+      "snippet": "Otter AI Meeting Agent supports real-time transcription, live chat, automated summaries, insights, and action items."
+    }
+  ]
+}

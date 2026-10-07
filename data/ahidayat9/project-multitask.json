@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ahidayat9/project-multitask",
+  "slug": "ahidayat9-project-multitask",
+  "author": "ahidayat9",
+  "url": "https://huggingface.co/ahidayat9/project-multitask",
+  "created_at": "2026-10-07T01:50:54.000Z",
+  "updated_at": "2026-10-07T01:51:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full Character Roster List (And Transformations) - Dragon Ball Z ...",
+      "url": "https://gamefaqs.gamespot.com/boards/952548-dragon-ball-z-infinite-world/46420226",
+      "snippet": "For Dragon Ball Z: Infinite World on the PlayStation 2, a GameFAQs message board topic titled \"Full Character Roster List (And …"
+    },
+    {
+      "title": "TRAININGS Hints - Dragon Ball Z: Infinite World - GameFAQs",
+      "url": "https://gamefaqs.gamespot.com/boards/952548-dragon-ball-z-infinite-world/46660961",
+      "snippet": "For Dragon Ball Z: Infinite World on the PlayStation 2, a GameFAQs message board topic titled \"TRAININGS Hints\"."
+    },
+    {
+      "title": "Dragon Ball Z: Infinite World – Save Games - GameFAQs",
+      "url": "https://gamefaqs.gamespot.com/ps2/952548-dragon-ball-z-infinite-world/saves",
+      "snippet": "Dec 4, 2008 · For Dragon Ball Z: Infinite World on the PlayStation 2, GameFAQs has 7 save games."
+    },
+    {
+      "title": "How do you use pursuit attacks ? - Dragon Ball Z: Infinite World Q&A ...",
+      "url": "https://gamefaqs.gamespot.com/ps2/952548-dragon-ball-z-infinite-world/answers/10069-how-do-you-use-pursuit-attacks-",
+      "snippet": "Dec 4, 2008 · Dragon Ball Z: Infinite World (PlayStation 2) How do you use pursuit attacks ? im in the beginning of the game it says …"
+    },
+    {
+      "title": "Whats the deal with Dragon Ball Z Budokai 3 Greatest Hits ?!?! v2.0",
+      "url": "https://gamefaqs.gamespot.com/boards/920505-dragon-ball-z-budokai-3/27184737",
+      "snippet": "For Dragon Ball Z: Budokai 3 on the PlayStation 2, a GameFAQs message board topic titled \"Whats the deal with Dragon Ball Z …"
+    }
+  ]
+}

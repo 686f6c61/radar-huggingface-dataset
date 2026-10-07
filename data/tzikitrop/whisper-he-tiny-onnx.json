@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "tzikitrop/whisper-he-tiny-onnx",
+  "slug": "tzikitrop-whisper-he-tiny-onnx",
+  "author": "tzikitrop",
+  "url": "https://huggingface.co/tzikitrop/whisper-he-tiny-onnx",
+  "created_at": "2026-10-07T16:34:33.000Z",
+  "updated_at": "2026-10-07T16:38:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60761159,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Whisper (speech recognition system) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)",
+      "snippet": "Whisper is a machine learning model for speech recognition and transcription, created by OpenAI and first released as open-source software in September 2022. [4]"
+    },
+    {
+      "title": "Don&#x27;t upload your sensitive files to AI services: 4 free open-source ...",
+      "url": "https://www.howtogeek.com/free-ai-tools-that-run-locally-and-dont-send-your-data-anywhere/",
+      "snippet": "AI apps usually work online, which means you have to give up your files and data to the cloud in order to use them. But these four open-source AI tools are completely offline and only use your computer&#x27;s processing power to run. Handy Accurate speech-to-text transcription This is a free and open-source speech-to-text tool that uses local AI models."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "alphaZimuth/Index-Translate-35B-A3B-preview-APEX-GGUF",
+  "slug": "alphazimuth-index-translate-35b-a3b-preview-apex-gguf",
+  "author": "alphaZimuth",
+  "url": "https://huggingface.co/alphaZimuth/Index-Translate-35B-A3B-preview-APEX-GGUF",
+  "created_at": "2026-10-07T16:29:49.000Z",
+  "updated_at": "2026-10-07T17:20:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "translation",
+    "gguf",
+    "qwen3_5_moe",
+    "mixture-of-experts",
+    "moe",
+    "quantized",
+    "imatrix",
+    "apex",
+    "conversational",
+    "base_model:IndexTeam/Index-Translate-35B-A3B-preview",
+    "base_model:finetune:IndexTeam/Index-Translate-35B-A3B-preview",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "IndexTeam/Index-Translate-35B-A3B-preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alphaZimuth (XYLong) - Hugging Face",
+      "url": "https://huggingface.co/alphaZimuth",
+      "snippet": "Pushing the boundaries of inference efficiency and memory compression for real-time, on-device AGI."
+    },
+    {
+      "title": "IndexTeam/Index-Translate-35B-A3B-preview-before-replacement-20261003 ...",
+      "url": "https://huggingface.co/IndexTeam/Index-Translate-35B-A3B-preview-before-replacement-20261003",
+      "snippet": "Index-Translate-35B-A3B-preview is the 35B-total / 3B-active mixture-of-experts multilingual text model of the Index-Translate family, built on Qwen3.5. It supports text translation across 150 languages and follows translation instructions involving terminology, formatting, style, structure, context, and output length."
+    },
+    {
+      "title": "Index-Translate-35B-A3B-preview · LLM Releases",
+      "url": "https://www.llm-releases.com/models/index-translate-35b-a3b-preview",
+      "snippet": "Index-Translate-35B-A3B-preview is the flagship text model of Index-Translate, a multilingual machine-translation model family open-sourced on 2026-09-30 by Bilibili&#x27;s Index LLM team under the Apache-2.0 license, with weights on Hugging Face (IndexTeam) and ModelScope plus a technical report and an online demo."
+    },
+    {
+      "title": "Bilibili Open-Sources Index-Translate 35B MoE for 150 Languages - AI Weekly",
+      "url": "https://aiweekly.co/alerts/bilibili-open-sources-index-translate-35b-moe-for-150-languages",
+      "snippet": "Bilibili&#x27;s Index LLM Team has put out an Apache 2.0 translation model family whose top preview is a 35-billion-parameter mixture-of-experts activating 3 billion at a time, covering 150 languages. The model card on Hugging Face lists Index-Translate-35B-A3B-preview as built on a Qwen3.5 backbone, alongside dense 2B and 9B siblings for text and separate 2B/9B checkpoints for the Echo (speech-to ..."
+    },
+    {
+      "title": "Bilibili open-sources Index-Translate: 35B MoE, 3B active",
+      "url": "https://www.aimodeling.com/en/news/slug/bilibili-index-translate-35b-moe",
+      "snippet": "A translation-specific MoE: 35B total, 3B active The flagship Index-Translate-35B-A3B-preview is built on Qwen3.5: 35B total parameters with roughly 3B activated per token — a standard sparse MoE recipe. It covers text translation across 150 languages, ships with a 262,144-token context window (official examples serve at 32K), and self-hosts on vLLM."
+    }
+  ]
+}

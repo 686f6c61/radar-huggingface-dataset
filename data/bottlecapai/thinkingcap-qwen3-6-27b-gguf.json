@@ -5,7 +5,7 @@
   "author": "bottlecapai",
   "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B-GGUF",
   "created_at": "2026-07-01T01:14:31.000Z",
-  "updated_at": "2026-08-13T22:35:25.000Z",
+  "updated_at": "2026-10-07T11:31:40.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 278,
-  "downloads_30d": 869,
+  "downloads_30d": 790,
   "trending_score": 8,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

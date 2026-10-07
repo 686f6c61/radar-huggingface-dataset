@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "hibanail/my-first-space",
+  "slug": "hibanail-my-first-space",
+  "author": "hibanail",
+  "url": "https://huggingface.co/hibanail/my-first-space",
+  "created_at": "2026-10-07T14:53:21.000Z",
+  "updated_at": "2026-10-07T14:56:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gradio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117496753,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tatoo et surfacturation comment eviter - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mon-telephone-par-internet-et/Tatoo-et-surfacturation-comment-eviter/td-p/632103",
+      "snippet": "Aug 5, 2015 · Dans mon suivi de consommation je me rends comprte que j'ai un numero Tatoo facturé 1,92 euros est ce normal et …"
+    },
+    {
+      "title": "RV DOCTOLIB PAR MAIL QUI NE ME SONT PAS DESTINÉS",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/RV-DOCTOLIB-PAR-MAIL-QUI-NE-ME-SONT-PAS-DESTIN%C3%89S/td-p/2360709",
+      "snippet": "Nov 12, 2020 · je reçois trop souvent des mails venant de DOCTOLIB pour des rendez vous chez des médecins, en SPAM, alors …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "SPAM - email provenant soit disant de Doctolib",
+      "url": "https://communaute.orange.fr/t5/Prot%C3%A9ger-mes-donn%C3%A9es-et-mon/SPAM-email-provenant-soit-disant-de-Doctolib/td-p/2335008",
+      "snippet": "Oct 15, 2020 · Dans ce premier exemple, il est soit disant question de valider l'adresse mail de mon compte Doctolib. Je n'ai pas de …"
+    }
+  ]
+}

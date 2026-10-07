@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Suri-Qwen-3.8-27B-Neuro-GGUF",
+  "slug": "mradermacher-suri-qwen-3-8-27b-neuro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Suri-Qwen-3.8-27B-Neuro-GGUF",
+  "created_at": "2026-10-07T02:06:47.000Z",
+  "updated_at": "2026-10-07T05:10:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "suri",
+    "qwen",
+    "27B",
+    "neuro",
+    "neuro-sama",
+    "text-generation-inference",
+    "qwen3.8",
+    "zh",
+    "en",
+    "base_model:SpaceTimee/Suri-Qwen-3.8-27B-Neuro",
+    "base_model:quantized:SpaceTimee/Suri-Qwen-3.8-27B-Neuro",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905360512,
+  "storage_human": "187.9 GB",
+  "base_model": "SpaceTimee/Suri-Qwen-3.8-27B-Neuro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

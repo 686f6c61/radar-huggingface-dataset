@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "manasdutta04/aadya-m1-mini",
+  "slug": "manasdutta04-aadya-m1-mini",
+  "author": "manasdutta04",
+  "url": "https://huggingface.co/manasdutta04/aadya-m1-mini",
+  "created_at": "2026-10-07T02:05:27.000Z",
+  "updated_at": "2026-10-07T07:13:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "aadya-neural",
+  "languages": [],
+  "tags": [
+    "aadya-neural",
+    "safetensors",
+    "menstrual-cycle",
+    "probabilistic-forecasting",
+    "time-series",
+    "on-device",
+    "tiny",
+    "privacy",
+    "aadya",
+    "time-series-forecasting",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 836093,
+  "parameters_human": "836093",
+  "storage_bytes": 3350132,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Next period timing (mean CRPS, lower is better)",
+      "dataset": "AadyaBench, simulated users (539)",
+      "metric": "Mean CRPS",
+      "value": 2.906
+    },
+    {
+      "task": "Next period timing (mean CRPS, lower is better)",
+      "dataset": "Public real users, pooled (364 users; Creighton cross-fitted plus Marquette)",
+      "metric": "Mean CRPS",
+      "value": 1.932
+    }
+  ],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=time-series",
+      "snippet": "LG-AI-Research/EXAONE-Forecast-for-Demand-1.0. Time Series Forecasting • Updated 5 days ago • 25 • 2 · manasdutta04/aadya-m1-mini. Time Series Forecasting ..."
+    }
+  ]
+}

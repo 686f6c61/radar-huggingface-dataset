@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austinpatel/pi05_libero_gen_goal_chain_lora",
+  "slug": "austinpatel-pi05_libero_gen_goal_chain_lora",
+  "author": "austinpatel",
+  "url": "https://huggingface.co/austinpatel/pi05_libero_gen_goal_chain_lora",
+  "created_at": "2026-10-07T17:55:04.000Z",
+  "updated_at": "2026-10-07T17:56:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi0.5",
+    "lora",
+    "libero",
+    "behavior-prompting",
+    "dataset:austinpatel/libero_gen_goal_chain_train_openpi",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9577057529,
+  "storage_human": "9.6 GB",
+  "base_model": "physical-intelligence/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "至急願います。Pornhubにログインしようとすると、「この.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10228297730",
+      "snippet": "Jul 12, 2020 · 404s - Pornhub 申し訳ありませんが、要求されたページはすべて凍結されており、見つかりません。 このメッセージ …"
+    },
+    {
+      "title": "pornhubというサイトを視聴していた際、他の動画をクリックす.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12299599822",
+      "snippet": "Mar 26, 2022 · pornhubというサイトを視聴していた際、他の動画をクリックすると、別のウィンドウが開きました。 そのあと、ウ …"
+    },
+    {
+      "title": "Crash dump dans l'installation de uTorrent - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29936522-crash-dump-dans-l-installation-de-utorrent",
+      "snippet": "Je ne suis pas une experte, mais j'ai résolu mon problème de crash de Utorrent. (Impossibilité de l'ouvrir et impossibilité de le …"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "pornhubというサイトで年齢確認 (18歳以上ですか？)と出て.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12232098012",
+      "snippet": "Sep 25, 2020 · pornhubというサイトで年齢確認(18歳以上ですか？)と出てきたので18歳以上を押したところ会員登録されました。 …"
+    }
+  ]
+}

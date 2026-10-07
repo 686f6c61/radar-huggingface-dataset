@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "lukeslp/chime-sms-2m",
+  "slug": "lukeslp-chime-sms-2m",
+  "author": "lukeslp",
+  "url": "https://huggingface.co/lukeslp/chime-sms-2m",
+  "created_at": "2026-10-07T02:23:30.000Z",
+  "updated_at": "2026-10-07T08:09:39.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keyboard",
+    "word-completion",
+    "cifg",
+    "int8",
+    "on-device",
+    "sms",
+    "next-word-prediction",
+    "text-generation",
+    "en",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:allenai/soda",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12425925,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lukeslp (Luke Steuber) - Hugging Face",
+      "url": "https://huggingface.co/lukeslp/datasets",
+      "snippet": "Systemic Functional Linguistics, Communication Disorders, Assistive Technology. @coolhand on bluesky"
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "Video Chat SDK - Amazon Chime SDK - AWS",
+      "url": "https://aws.amazon.com/chime/chime-sdk/",
+      "snippet": "The Amazon Chime SDK allows builders to add real-time voice, video, and messaging powered by machine learning into their applications."
+    },
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

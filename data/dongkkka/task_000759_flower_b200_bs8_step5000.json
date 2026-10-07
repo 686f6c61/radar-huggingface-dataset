@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000759_FLOWER_B200_bs8_step5000",
+  "slug": "dongkkka-task_000759_flower_b200_bs8_step5000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000759_FLOWER_B200_bs8_step5000",
+  "created_at": "2026-10-07T02:45:04.000Z",
+  "updated_at": "2026-10-07T02:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "vision-language-action",
+    "flower-vla",
+    "robotis-sg2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15216357849,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dongkkka (Dongyun Kim) - Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/datasets",
+      "snippet": "User profile of Dongyun Kim on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "AI Model Search: Find Real Hugging Face Repos",
+      "url": "https://zeplik.ai/tools/ai-model-search",
+      "snippet": "AI Tools / AI Model Search Find real Hugging Face model repositories Ask for models for a task or by name and Zeplik searches the live model hub, then answers with real repositories, their exact repo ids, and live download and like counts."
+    },
+    {
+      "title": "Docker Model Runner",
+      "url": "https://docs.docker.com/ai/model-runner/",
+      "snippet": "Learn how to use Docker Model Runner to manage and run AI models."
+    }
+  ]
+}

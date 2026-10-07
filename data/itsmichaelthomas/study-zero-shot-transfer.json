@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "itsmichaelthomas/study-zero-shot-transfer",
+  "slug": "itsmichaelthomas-study-zero-shot-transfer",
+  "author": "itsmichaelthomas",
+  "url": "https://huggingface.co/itsmichaelthomas/study-zero-shot-transfer",
+  "created_at": "2026-10-07T02:00:15.000Z",
+  "updated_at": "2026-10-07T02:00:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Download & use Google Translate You can translate text, handwriting, photos, and speech in over 200 languages with the Google …"
+    },
+    {
+      "title": "Translate by speech - Computer - Google Translate Help",
+      "url": "https://support.google.com/translate/answer/6142468?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Translate by speech If your device has a microphone, you can translate spoken words and phrases. In some languages, you can …"
+    },
+    {
+      "title": "Translate by speech - iPhone & iPad - Google Translate Help",
+      "url": "https://support.google.com/translate/answer/6142468?hl=en&co=GENIE.Platform%3DiOS",
+      "snippet": "Translate by speech If your device has a microphone, you can translate spoken words and phrases. In some languages, you can …"
+    },
+    {
+      "title": "Transcribe in Google Translate - Android - Google Translate Help",
+      "url": "https://support.google.com/translate/answer/9724492?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Announcements Google Translate Transcribe in Google Translate The Translate app lets you translate in near real-time while …"
+    }
+  ]
+}

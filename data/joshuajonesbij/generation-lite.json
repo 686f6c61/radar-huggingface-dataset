@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "joshuajonesbij/generation-lite",
+  "slug": "joshuajonesbij-generation-lite",
+  "author": "joshuajonesbij",
+  "url": "https://huggingface.co/joshuajonesbij/generation-lite",
+  "created_at": "2026-10-07T16:41:19.000Z",
+  "updated_at": "2026-10-07T16:41:25.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=2f56bc3a3c096e2f03c0abd13d0f6f06",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Jeux Gratuits en Ligne - Jouez Maintenant !",
+      "url": "https://poki.com/fr?msockid=2f56bc3a3c096e2f03c0abd13d0f6f06",
+      "snippet": "Poki a la meilleure sélection de jeux en ligne gratuits et offre l'expérience la plus amusante à jouer seul ou avec des amis. Nous …"
+    },
+    {
+      "title": "Free Online Games - Play in Your Browser | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Explore Subway Surfers, Temple Run 2, puzzles, racing and 2 player games in your browser. No …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    }
+  ]
+}

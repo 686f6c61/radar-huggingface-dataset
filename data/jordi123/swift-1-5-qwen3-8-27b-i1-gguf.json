@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jordi123/Swift-1.5-Qwen3.8-27b-i1-GGUF",
+  "slug": "jordi123-swift-1-5-qwen3-8-27b-i1-gguf",
+  "author": "jordi123",
+  "url": "https://huggingface.co/jordi123/Swift-1.5-Qwen3.8-27b-i1-GGUF",
+  "created_at": "2026-10-07T16:45:14.000Z",
+  "updated_at": "2026-10-07T16:45:15.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_8",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "terminal-bench",
+    "en",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553884736,
+  "storage_human": "218.6 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

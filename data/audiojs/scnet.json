@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "audiojs/scnet",
+  "slug": "audiojs-scnet",
+  "author": "audiojs",
+  "url": "https://huggingface.co/audiojs/scnet",
+  "created_at": "2026-10-07T17:53:11.000Z",
+  "updated_at": "2026-10-07T17:53:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "source-separation",
+    "music-source-separation",
+    "audio-to-audio",
+    "arxiv:2401.13276",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12900277,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Ventes immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/ventes_immobilieres",
+      "snippet": "Consultez nos annonces de ventes immobilières de particuliers et de professionnels sur leboncoin."
+    },
+    {
+      "title": "Pour accéder à la gestion - leboncoin",
+      "url": "https://pro.immobilierneuf.leboncoin.fr/auth",
+      "snippet": "Pour accéder à la gestion de vos programmes, identifiez-vous."
+    },
+    {
+      "title": "Voiture occasion - annonces automobiles de particuliers et ... - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures",
+      "snippet": "Consultez nos annonces de voitures d’occasion toutes marques : citadines, SUV, berlines, électriques, hybrides. Plus de 700 000 …"
+    },
+    {
+      "title": "Ventes immobilières Maison - leboncoin",
+      "url": "https://www.leboncoin.fr/c/ventes_immobilieres/real_estate_type:1",
+      "snippet": "Consultez nos annonces de ventes immobilières Maison de particuliers et de professionnels sur leboncoin."
+    }
+  ]
+}

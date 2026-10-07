@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp",
+  "slug": "scottlowry-swift1-5-qwen3-8-flash-next-oq4e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Swift1.5-Qwen3.8-Flash-Next-oQ4e-fp16-mtp",
+  "created_at": "2026-10-07T02:26:27.000Z",
+  "updated_at": "2026-10-07T12:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:quantized:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107212512322,
+  "storage_human": "107.2 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Does anyone have Swift 1.5 Qwen 3.8 27B oQe6? : r/oMLX - Reddit",
+      "url": "https://www.reddit.com/r/oMLX/comments/1wwhwu3/does_anyone_have_swift_15_qwen_38_27b_oqe6/",
+      "snippet": "vor 4 Tagen ... https://huggingface.co/txgsync/Qwen3.8-Flash-Next-Dynamic-oQ5e-BF16-PLE-mtp ... Swift1.5-Qwen3.8-Flash-Next is phenomenal vs. base 3.8-Flash! 260 ..."
+    }
+  ]
+}

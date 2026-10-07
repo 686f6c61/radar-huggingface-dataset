@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/loopl-0.8b-i1-GGUF",
+  "slug": "mradermacher-loopl-0-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/loopl-0.8b-i1-GGUF",
+  "created_at": "2026-10-07T02:45:44.000Z",
+  "updated_at": "2026-10-07T03:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "loopl",
+    "on-device",
+    "agent",
+    "tool-calling",
+    "qwen3.5",
+    "qwen3_5",
+    "sft",
+    "vision",
+    "image-text-to-text",
+    "en",
+    "tr",
+    "dataset:cagataydev/loopl-train",
+    "base_model:cagataydev/loopl-0.8b",
+    "base_model:quantized:cagataydev/loopl-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 10967038592,
+  "storage_human": "11.0 GB",
+  "base_model": "cagataydev/loopl-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/loopl-0.8b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/loopl-0.8b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/LoopTool-8B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/LoopTool-8B-i1-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Schwartz Releases BootLoops 1.0, an Open-Source LLM Harness for ...",
+      "url": "https://www.unite.ai/schwartz-releases-bootloops-1-0-an-open-source-llm-harness-for-science/",
+      "snippet": "Anthropic on October 1, 2026 published Claude-shaped science, a guest post by theoretical physicist Matthew Schwartz describing BootLoops, an open-source toolkit he built with Claude for exact calculations in quantitativ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

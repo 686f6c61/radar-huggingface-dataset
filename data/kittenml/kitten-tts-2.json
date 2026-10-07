@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KittenML/kitten-tts-2",
+  "slug": "kittenml-kitten-tts-2",
+  "author": "KittenML",
+  "url": "https://huggingface.co/KittenML/kitten-tts-2",
+  "created_at": "2026-09-30T00:43:12.000Z",
+  "updated_at": "2026-10-05T23:33:08.000Z",
+  "license": "stellon-labs-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "text-to-speech",
+    "voice-cloning",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 21,
+  "downloads_30d": 2158,
+  "trending_score": 21,
+  "parameters": 1733487616,
+  "parameters_human": "1.73B",
+  "storage_bytes": 7244239555,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram: Join Group Chat - t.me",
+      "url": "https://t.me/+mvUkd_2yX-I1YmI0",
+      "snippet": "Zitouna 🇦🇪🍒 22 271 subscribers Welcome to my Channel💋 My Private Channel👇🏻 https://t.me/+VS5UDMlcDzBhM2I0 Join Channel"
+    },
+    {
+      "title": "Zitouna TV Officiel - YouTube",
+      "url": "https://www.youtube.com/c/zitounatvofficial",
+      "snippet": "انتظرونا الليلة بداية من الساعة الثامنة والنصف مع الأستاذ بشر الشابي 4 Zitouna TV Officiel"
+    },
+    {
+      "title": "Zitouna Tv - YouTube",
+      "url": "https://www.youtube.com/channel/UCReK4GL3uSVucUGF3stk99Q",
+      "snippet": "Zitouna Tv @zitounatv4562 • 12 subscribers More about this channel ...more More about this channel ...more ...more"
+    },
+    {
+      "title": "zitouna.uae (@zitouna.uae) | TikTok",
+      "url": "https://www.tiktok.com/@zitouna.uae",
+      "snippet": "Join 469K followers on TikTok for more trend content."
+    },
+    {
+      "title": "Particuliers | Banque Zitouna",
+      "url": "https://www.banquezitouna.com/fr",
+      "snippet": "Où que vous soyez, et à travers votre Mobile ou votre PC, Banque Zitouna vous permet d’effectuer des opérations bancaires sans …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "youakrim/yolo12s-mlx",
+  "slug": "youakrim-yolo12s-mlx",
+  "author": "youakrim",
+  "url": "https://huggingface.co/youakrim/yolo12s-mlx",
+  "created_at": "2026-10-07T14:40:37.000Z",
+  "updated_at": "2026-10-07T14:40:55.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "yolo",
+    "yolo12",
+    "object-detection",
+    "apple-silicon",
+    "dataset:detection-datasets/coco",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37490918,
+  "storage_human": "37 MB",
+  "base_model": "Ultralytics/YOLO12",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO val2017",
+      "metric": "mAP50-95 (MLX)",
+      "value": 0.4757
+    },
+    {
+      "task": null,
+      "dataset": "COCO val2017",
+      "metric": "mAP50 (MLX)",
+      "value": 0.6436
+    }
+  ],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "git - How to solve SSL certificate: self signed certificate when ...",
+      "url": "https://stackoverflow.com/questions/39004750/how-to-solve-ssl-certificate-self-signed-certificate-when-cloning-repo-from-git",
+      "snippet": "Related: How can I make git accept a self signed certificate?. (Not necessarily a duplicate. Accepted answer only works after a …"
+    },
+    {
+      "title": "有哪个大佬可以解释一下ippa？ - 知乎",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "ippa 是日本的知识产权缩写,所以你看到右上角的IPPA加一串数字，实际就是 知识产权号。多用于近现代黑色爱情动作电影，日本拍 …"
+    },
+    {
+      "title": "Visual Studio Code - Remove blank lines from code - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/50042278/visual-studio-code-remove-blank-lines-from-code",
+      "snippet": "Jun 23, 2018 · I use Visual Studio Code as my preferred text editor and I have ran into a problem with regards to the formatting. I …"
+    },
+    {
+      "title": "browser - How do we download a blob url video - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42901942/how-do-we-download-a-blob-url-video",
+      "snippet": "The community reviewed whether to reopen this question 3 months ago and left it closed: Not suitable for this site This question does …"
+    }
+  ]
+}

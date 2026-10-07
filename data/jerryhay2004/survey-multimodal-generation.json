@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jerryhay2004/survey-multimodal-generation",
+  "slug": "jerryhay2004-survey-multimodal-generation",
+  "author": "jerryhay2004",
+  "url": "https://huggingface.co/jerryhay2004/survey-multimodal-generation",
+  "created_at": "2026-10-07T16:27:05.000Z",
+  "updated_at": "2026-10-07T16:27:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Multimodal learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Multimodal_learning",
+      "snippet": "Multimodal learning is a type of deep learning that integrates and processes multiple types of data, referred to as modalities, such as text, audio, images, or video."
+    },
+    {
+      "title": "Multimodal Learning in Artificial Intelligence (AI)",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/multimodal-ai/",
+      "snippet": "Multimodal AI refers to artificial intelligence systems that integrate and process multiple types of data, such as text, images, audio, and video, to understand and generate comprehensive insights and responses."
+    },
+    {
+      "title": "What is Multimodal AI? | IBM",
+      "url": "https://www.ibm.com/think/topics/multimodal-ai",
+      "snippet": "Multimodal AI refers to AI systems capable of processing and integrating information from multiple modalities or types of data. These modalities can include text, images, audio, video or other forms of sensory input."
+    },
+    {
+      "title": "Multimodal AI - Google Cloud",
+      "url": "https://cloud.google.com/use-cases/multimodal-ai",
+      "snippet": "Overview What is an example of multimodal AI? A multimodal model is a ML (machine learning) model that is capable of processing information from different modalities, including images, videos, and text. For example, Google&#x27;s multimodal model, Gemini, can receive a photo of a plate of cookies and generate a written recipe as a response and vice ..."
+    },
+    {
+      "title": "Introduction to Multimodal Generative AI | Springer Nature Link",
+      "url": "https://link.springer.com/chapter/10.1007/978-981-96-2355-6_1",
+      "snippet": "A state-of-the-art method in machine learning is called Multimodal Generative Artificial Intelligence (AI), which aims to produce a variety of outputs in many modalities, including text, audio, and images. This survey explores multimodal generative AI&#x27;s developments, techniques, and uses. First, we clarify the main concepts behind such models, such as adaptive autoencoders (VAEs), generative ..."
+    }
+  ]
+}

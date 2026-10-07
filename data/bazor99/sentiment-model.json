@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Bazor99/sentiment-model",
+  "slug": "bazor99-sentiment-model",
+  "author": "Bazor99",
+  "url": "https://huggingface.co/Bazor99/sentiment-model",
+  "created_at": "2026-10-07T17:52:10.000Z",
+  "updated_at": "2026-10-07T17:52:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955779,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267840845,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google",
+      "url": "https://images.google.com/xhtml",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=fr",
+      "snippet": "Google Images. La recherche d'images la plus complète sur le Web."
+    },
+    {
+      "title": "Google",
+      "url": "https://image.google.ci/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "beshkenadze/dictator-native-translation-ff6e9eebcc3c696f74b6461b",
+  "slug": "beshkenadze-dictator-native-translation-ff6e9eebcc3c696f74b6461b",
+  "author": "beshkenadze",
+  "url": "https://huggingface.co/beshkenadze/dictator-native-translation-ff6e9eebcc3c696f74b6461b",
+  "created_at": "2026-10-07T15:02:53.000Z",
+  "updated_at": "2026-10-07T15:02:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "be",
+    "en",
+    "ru",
+    "uk"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "translation",
+    "be",
+    "en",
+    "ru",
+    "uk",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 238899801,
+  "parameters_human": "238.9M",
+  "storage_bytes": 479648368,
+  "storage_human": "480 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/gmp-kd3e-1-1.7b-s70pct-lr1e-4_20261007_104809",
+  "slug": "cosmos1030-gmp-kd3e-1-1-7b-s70pct-lr1e-4_20261007_104809",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/gmp-kd3e-1-1.7b-s70pct-lr1e-4_20261007_104809",
+  "created_at": "2026-10-07T01:48:10.000Z",
+  "updated_at": "2026-10-07T01:49:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 4004867338,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dan.com",
+      "url": "https://redlib.com/",
+      "snippet": "Redlib.com is a platform for buying and selling domain names securely and efficiently."
+    }
+  ]
+}

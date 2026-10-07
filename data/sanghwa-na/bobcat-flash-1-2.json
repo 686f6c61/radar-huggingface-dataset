@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "sanghwa-na/bobcat-flash-1.2",
+  "slug": "sanghwa-na-bobcat-flash-1-2",
+  "author": "sanghwa-na",
+  "url": "https://huggingface.co/sanghwa-na/bobcat-flash-1.2",
+  "created_at": "2026-10-07T02:46:19.000Z",
+  "updated_at": "2026-10-07T04:39:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "typed-decisions",
+    "vllm",
+    "calibration",
+    "distillation",
+    "classification",
+    "guardrails",
+    "mixture-of-experts",
+    "zero-shot-classification",
+    "en",
+    "ko",
+    "dataset:klue/klue",
+    "dataset:kakaobrain/kor_nli",
+    "dataset:e9t/nsmc",
+    "dataset:AmazonScience/massive",
+    "dataset:PolyAI/banking77",
+    "dataset:google/boolq",
+    "dataset:allenai/ai2_arc",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:nvidia/HelpSteer3",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:stanfordnlp/snli",
+    "dataset:clinc/clinc_oos",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:Anthropic/hh-rlhf",
+    "dataset:openai/gsm8k",
+    "dataset:truthfulqa/truthful_qa",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644179542,
+  "storage_human": "51.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lewis Center for the Arts",
+      "url": "https://arts.princeton.edu/",
+      "snippet": "1 day ago · Discover diverse and exciting events at the Lewis Center, where endless opportunities await to encounter the arts!"
+    },
+    {
+      "title": "Lewis Center | Lewis Center for the Arts - arts.princeton.edu",
+      "url": "https://arts.princeton.edu/program/lewis-center",
+      "snippet": "Happy Holidays from the Lewis Center for the Arts!"
+    },
+    {
+      "title": "YoungJin Kim - Solutions Architect at Amazon Web Services - LinkedIn",
+      "url": "https://kr.linkedin.com/in/zerojin/en",
+      "snippet": "Principal Solutions Architect at Amazon Web Services · As for a proud moment in my “life,” starting a start-up company was a great experience for three ..."
+    },
+    {
+      "title": "Lewis Center for the Arts - Undergraduate Announcement",
+      "url": "https://ua.princeton.edu/fields-study/councils-centers-and-institutes/lewis-center-arts",
+      "snippet": "The Lewis Center for the Arts (LCA) is an academic unit made up of programs in creative writing, dance, theater and music theater …"
+    },
+    {
+      "title": "Lewis Arts Complex, Princeton University - STEVEN HOLL …",
+      "url": "https://www.stevenholl.com/project/lewis-center-princeton/",
+      "snippet": "Since its completion in 2017, the Lewis Arts Complex has stood as a state-of-the-art facility for the creative and performing arts, and …"
+    }
+  ]
+}

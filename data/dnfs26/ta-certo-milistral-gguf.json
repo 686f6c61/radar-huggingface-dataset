@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dnfs26/ta-certo-milistral-gguf",
+  "slug": "dnfs26-ta-certo-milistral-gguf",
+  "author": "dnfs26",
+  "url": "https://huggingface.co/dnfs26/ta-certo-milistral-gguf",
+  "created_at": "2026-10-07T02:46:47.000Z",
+  "updated_at": "2026-10-07T03:01:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815616,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT MD - GitHub",
+      "url": "https://github.com/bramses/chatgpt-md",
+      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
+    },
+    {
+      "title": "chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt",
+      "snippet": "2 days ago · ChatGPT is an AI assistant developed by OpenAI and released in November 2022. It uses generative AI models to …"
+    },
+    {
+      "title": "OpenAI 被传禁止 ChatGPT 提供专业医疗法律金融建议后表示说法不 …",
+      "url": "https://www.zhihu.com/question/1968690991750967598",
+      "snippet": "在美国互联网上，一些网民在传播阴谋论，这问题下就有一些回答将其翻译过来。 其实，2025 年 11 月 4 日的 ChatGPT 仍能指出医 …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "r/ChatGPT's FAQ Thread - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/107zfxk/rchatgpts_faq_thread/",
+      "snippet": "Jan 9, 2023 · Welcome to the ChatGPT FAQ thread! In this thread, we will answer some of the most commonly asked questions …"
+    }
+  ]
+}

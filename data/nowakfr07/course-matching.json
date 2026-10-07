@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nowakfr07/course-matching",
+  "slug": "nowakfr07-course-matching",
+  "author": "nowakfr07",
+  "url": "https://huggingface.co/nowakfr07/course-matching",
+  "created_at": "2026-10-07T16:08:35.000Z",
+  "updated_at": "2026-10-07T16:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=1fb002ef5315649a3c42150452456515",
+      "snippet": "Vinted À propos de Vinted Le développement durable Presse Publicités Accessibilité Carrière Découvrir"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.com/",
+      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Careers Discover How it works Mobile apps Infoboard"
+    },
+    {
+      "title": "Home | Vinted",
+      "url": "https://www.vinted.com/catalog/1918-home",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    },
+    {
+      "title": "Articles | Vinted",
+      "url": "https://www.vinted.fr/brand/vintage?msockid=1fb002ef5315649a3c42150452456515",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.co.uk/",
+      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Careers Discover How it works Item Verification Mobile apps Infoboard …"
+    }
+  ]
+}

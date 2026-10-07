@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "WasamiKirua/Gemma-4-E4B-Samantha-GGUF",
+  "slug": "wasamikirua-gemma-4-e4b-samantha-gguf",
+  "author": "WasamiKirua",
+  "url": "https://huggingface.co/WasamiKirua/Gemma-4-E4B-Samantha-GGUF",
+  "created_at": "2026-10-07T16:06:22.000Z",
+  "updated_at": "2026-10-07T16:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "en",
+    "base_model:llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 14332278208,
+  "storage_human": "14.3 GB",
+  "base_model": "llmfan46/gemma-4-E4B-it-ultra-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Welcome to Pornhub.com, home of the best hardcore free porn videos with the hottest adult stars. Get full length scenes from your …"
+    },
+    {
+      "title": "Pornhub | Free Porn Videos & Sex Movies - Porno, XXX Tube",
+      "url": "https://m-pornhub.com/",
+      "snippet": "Enjoy the hottest free porn videos in HD. Pornhub run has all the latest with top pornstars in every xxx video category."
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Pornhub est le plus vaste site porno du monde. L'équipe de Pornhub met à jour et ajoute constamment de nouvelles vidéos …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Explore a massive collection of free HD streaming videos updated daily with trending categories, popular stars, and smooth mobile …"
+    },
+    {
+      "title": "Pornhub Categories: Find Your Favorite Free Hardcore Porn Videos",
+      "url": "https://www.pornhub.com/categories",
+      "snippet": "Pornhub has the best hardcore porn videos. Discover the newest XXX to stream in your favorite sex category. See the hottest …"
+    }
+  ]
+}

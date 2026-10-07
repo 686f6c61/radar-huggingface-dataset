@@ -5,7 +5,7 @@
   "author": "xv0y5ncu",
   "url": "https://huggingface.co/xv0y5ncu/gemma-4-26B-A4B-it-GLQ-3bpw",
   "created_at": "2026-06-14T06:48:50.000Z",
-  "updated_at": "2026-08-23T20:42:23.000Z",
+  "updated_at": "2026-10-06T21:45:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 7485075406,
   "parameters_human": "7.49B",

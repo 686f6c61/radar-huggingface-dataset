@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.999-r0.2-s42",
+  "slug": "cisco1963-llmplasticity-zh_en_instant_8-rand-d0-5-c0-999-r0-2-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-zh_en_instant_8-rand-d0.5-c0.999-r0.2-s42",
+  "created_at": "2026-10-07T02:45:45.000Z",
+  "updated_at": "2026-10-07T02:48:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 10799862645,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cisco1963/llmplasticity-en_zh_instant_0.125_8-d0.1-c0.99-s42 - Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-en_zh_instant_0.125_8-d0.1-c0.99-s42",
+      "snippet": "Cisco1963 / llmplasticity-en_zh_instant_0.125_8-d0.1-c0.99-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 11 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 · Hugging Face",
+      "url": "https://huggingface.co/Cisco1963/llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42",
+      "snippet": "Cisco1963 / llmplasticity-nl_zh_instant_8-d0.5-c0.9-r0.5-s42 like 0 Safetensors gpt2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 8 Safetensors Model size 0.1B params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_zh_instant_8-d0.5-c0.9-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-instant-8-d0-5-c0-9-r0-25-s42",
+      "snippet": "A practical guide to tracking new AI model releases, benchmarking token pricing and throughput, and wiring real-time model telemetry into production AI agent systems.A technical deep dive into Union Alpha: 262K context window, multimodal vision, agentic coding benchmarks, API integration, and the unconfirmed Mistral hypothesis.Explore the ..."
+    },
+    {
+      "title": "llmplasticity-plasticity-nl_zh_instant_8-d0.25-c0.999-r0.25-s42",
+      "url": "https://essamamdani.com/ai-models/hf-cisco1963-llmplasticity-plasticity-nl-zh-instant-8-d0-25-c0-999-r0-25-s42",
+      "snippet": "llmplasticity-plasticity-nl_zh_instant_8-d0.25-c0.999-r0.25-s42 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "Research Reports | RAND",
+      "url": "https://www.rand.org/pubs/research_reports.html",
+      "snippet": "Research reports present research findings and objective analysis that address the challenges facing the public and private sectors. All RAND research reports undergo rigorous peer review to ensure high standards for research quality and objectivity."
+    }
+  ]
+}

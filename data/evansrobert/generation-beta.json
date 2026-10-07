@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "evansrobert/generation-beta",
+  "slug": "evansrobert-generation-beta",
+  "author": "evansrobert",
+  "url": "https://huggingface.co/evansrobert/generation-beta",
+  "created_at": "2026-10-07T16:16:52.000Z",
+  "updated_at": "2026-10-07T16:16:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generation Beta - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generation_Beta",
+      "snippet": "Generation Beta, often shortened to Gen Beta, is the proposed name for the demographic cohort succeeding Generation Alpha. The name was coined by futurist and demographer Mark McCrindle, who also coined the name Generation Alpha. He defines the cohort as those born from 2025 to 2039, [1] with this definition having been reported by numerous sources citing McCrindle. [2][3][4][5] McCrindle ..."
+    },
+    {
+      "title": "AI Agents News Brief: September 6, 2026 - Major Model Releases and ...",
+      "url": "https://aiagentsdirectory.com/news/ai-agents-news-brief-september-6-2026",
+      "snippet": "A daily brief on AI agents, covering new model releases from Anthropic, OpenAI, Meta, and Google, advancements in AI-powered software development, and comparisons of leading AI models."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    },
+    {
+      "title": "Generative AI Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/generative-ai-tutorial/",
+      "snippet": "Generative AI focuses on building models that can create new content such as text, images, audio and code by learning patterns from existing data to generate human‑like outputs across various domains. It is widely used in chatbots, content creation, design and automation."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-eval-all-pre-m01-c-s2-1000-60ca3473338b",
+  "slug": "davidwdw-fa-eval-all-pre-m01-c-s2-1000-60ca3473338b",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-eval-all-pre-m01-c-s2-1000-60ca3473338b",
+  "created_at": "2026-10-07T16:46:16.000Z",
+  "updated_at": "2026-10-07T16:46:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 364259429,
+  "storage_human": "364 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/w4a16_asym_awq-e2e",
   "created_at": "2026-07-25T05:42:12.000Z",
-  "updated_at": "2026-10-06T02:22:37.000Z",
+  "updated_at": "2026-10-07T02:23:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 257,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": 1100048384,
   "parameters_human": "1.10B",
-  "storage_bytes": 61261762560,
-  "storage_human": "61.3 GB",
+  "storage_bytes": 62793306624,
+  "storage_human": "62.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

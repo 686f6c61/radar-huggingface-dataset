@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-mtl20261004-t63-public-base-meta100-a69526557e51",
+  "slug": "davidwdw-fa-mtl20261004-t63-public-base-meta100-a69526557e51",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-mtl20261004-t63-public-base-meta100-a69526557e51",
+  "created_at": "2026-10-07T16:08:00.000Z",
+  "updated_at": "2026-10-07T16:08:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 462749205,
+  "storage_human": "463 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03 · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-systematic-eval-fixtures-20260926-6789c5c62c03",
+      "snippet": "davidwdw fa-systematic-eval-fixtures-20260926-6789c5c62c03 Like0 Model cardFilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s0 ...",
+      "url": "https://huggingface.co/davidwdw/fa-eval-v2-centre-a3-5000-public-default224-e10f10-s0-b6929ff9ce87",
+      "snippet": "eval-v2-centre-a3-5000-public-default224-e10f10-s0 Versioned fleet archive. Canonical recipe: reports/2026-10-02_all_pending_eval_deployment Tier: raw episode/clip JSON videos traces logs protocol, producer SHA256SUMS, summarized report Use the exact recorded revision and verify SHA256SUMS. This package is a snapshot, not a live directory mirror."
+    },
+    {
+      "title": "Patent Public Search | USPTO",
+      "url": "https://ppubs.uspto.gov/pubwebapp/external.html",
+      "snippet": "Patent Public Search offers a web-based tool for enhanced access to prior art, replacing legacy search tools with modern interfaces."
+    },
+    {
+      "title": "Patent Public Search | USPTO",
+      "url": "https://www.uspto.gov/patents/search/patent-public-search",
+      "snippet": "A powerful, flexible web-based patent search application that improves the overall patent searching process. It includes two user selected interfaces that provide enhanced access to prior art."
+    }
+  ]
+}

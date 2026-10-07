@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "auto7x/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4-GGUF",
+  "slug": "auto7x-orcarouter-qwen3-8-flash-next-uncensored-modelopt-nvfp4-gguf",
+  "author": "auto7x",
+  "url": "https://huggingface.co/auto7x/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4-GGUF",
+  "created_at": "2026-10-07T18:17:31.000Z",
+  "updated_at": "2026-10-07T18:32:24.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "qwen",
+    "qwen3.8",
+    "Strata",
+    "flash-next",
+    "uncensored",
+    "modelopt",
+    "nvfp4",
+    "gguf",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

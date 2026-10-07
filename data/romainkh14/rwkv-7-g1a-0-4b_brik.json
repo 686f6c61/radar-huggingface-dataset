@@ -5,7 +5,7 @@
   "author": "romainkh14",
   "url": "https://huggingface.co/romainkh14/RWKV-7-G1a-0.4B_BRIK",
   "created_at": "2026-08-13T18:14:59.000Z",
-  "updated_at": "2026-08-30T12:29:19.000Z",
+  "updated_at": "2026-10-07T09:39:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

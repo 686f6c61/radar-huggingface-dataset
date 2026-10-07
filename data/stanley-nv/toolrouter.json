@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "stanley-nv/toolrouter",
+  "slug": "stanley-nv-toolrouter",
+  "author": "stanley-nv",
+  "url": "https://huggingface.co/stanley-nv/toolrouter",
+  "created_at": "2026-10-07T16:29:31.000Z",
+  "updated_at": "2026-10-07T16:29:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "toolrouter",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "toolrouter",
+    "tool-routing",
+    "tool-selection",
+    "intent-classification",
+    "function-calling",
+    "static-embeddings",
+    "model2vec",
+    "numpy",
+    "cpu",
+    "tiny",
+    "text-classification",
+    "en",
+    "dataset:stanley-nv/tool-routing-data",
+    "arxiv:1607.01759",
+    "arxiv:2503.01763",
+    "base_model:minishlab/potion-base-8M",
+    "base_model:finetune:minishlab/potion-base-8M",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17197536,
+  "storage_human": "17 MB",
+  "base_model": "minishlab/potion-base-8M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tool routing (7 priority tools)",
+      "dataset": "routing/test2 (independent",
+      "metric": null,
+      "value": 0.936
+    },
+    {
+      "task": "Tool routing (10 tools never seen in training)",
+      "dataset": "tools/test",
+      "metric": null,
+      "value": 0.89
+    }
+  ],
+  "sources": [
+    {
+      "title": "Stanley 1913 Drinkware & Gear | Bottles, Tumblers, Growlers & More",
+      "url": "https://www.stanley1913.com/",
+      "snippet": "Stanley PMI Online Store | Offers an assortment of Vacuum Bottles, Mugs, thermoses, Cookware and more!"
+    },
+    {
+      "title": "STANLEY® Outillage : Outils à main et électroportatifs pros",
+      "url": "https://www.stanleyoutillage.fr/fr-fr",
+      "snippet": "Depuis 1843, STANLEY® conçoit des outils à main, électroportatifs, rangements et accessoires pour professionnels du bâtiment, de …"
+    },
+    {
+      "title": "Stanley 1913 EU | Gourdes, mugs de voyage et glacières",
+      "url": "https://eu.stanley1913.com/fr",
+      "snippet": "Découvre les gourdes, tumblers, mugs de voyage, boîtes alimentaires, glacières et sacs Stanley 1913 pour le quotidien, les voyages …"
+    },
+    {
+      "title": "Boutique Dédiée Stanley France",
+      "url": "https://boutique-stanley.com/",
+      "snippet": "C'est STANLEY qui l'a faite et qui la fait toujours. Elle avait probablement quelques éraflures, elle est peut-être tombée une ou deux …"
+    },
+    {
+      "title": "Stainless Steel Tumblers - Insulated Tumbler Cups - Stanley 1913",
+      "url": "https://www.stanley1913.com/collections/tumblers",
+      "snippet": "The Stanley 1913 cup tumbler doesn’t just hold your drink; it holds your day together. Born from more than 100 years of …"
+    }
+  ]
+}

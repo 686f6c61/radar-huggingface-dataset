@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "braindecode/braintokenizer-pretrained",
+  "slug": "braindecode-braintokenizer-pretrained",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/braintokenizer-pretrained",
+  "created_at": "2026-10-07T14:57:38.000Z",
+  "updated_at": "2026-10-07T14:57:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "pytorch",
+    "safetensors",
+    "eeg",
+    "meg",
+    "brainomni",
+    "arxiv:2505.18185",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6100966,
+  "parameters_human": "6.1M",
+  "storage_bytes": 48884959,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

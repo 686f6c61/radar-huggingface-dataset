@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "tkpota/dual_matcha_v1_1008",
+  "slug": "tkpota-dual_matcha_v1_1008",
+  "author": "tkpota",
+  "url": "https://huggingface.co/tkpota/dual_matcha_v1_1008",
+  "created_at": "2026-10-07T16:46:46.000Z",
+  "updated_at": "2026-10-07T16:46:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Atlantic",
+      "url": "https://www.theatlantic.com/",
+      "snippet": "The Atlantic covers news, politics, culture, technology, health, and more, through its articles, podcasts, videos, and flagship magazine."
+    },
+    {
+      "title": "Games - The Atlantic",
+      "url": "https://www.theatlantic.com/games/",
+      "snippet": "Welcome to The Atlantic’s digital parlor of puzzles and play. Are you ready to challenge your intellect and expand your mind?"
+    },
+    {
+      "title": "Cancel your subscription – Help Center",
+      "url": "https://support.theatlantic.com/hc/en-us/articles/360049276854-Cancel-your-subscription",
+      "snippet": "You may cancel your subscription at any time by visiting the \"Manage Subscription\" tab on your Account page or by contacting our …"
+    },
+    {
+      "title": "Help Center - The Atlantic",
+      "url": "https://support.theatlantic.com/hc/en-us",
+      "snippet": "If you are a magazine subscriber in the U.S., you can expect to receive your copy of the issue before the 15th of the cover month. If …"
+    },
+    {
+      "title": "Who Made America Poorer and Dirtier? - The Atlantic",
+      "url": "https://www.theatlantic.com/ideas/2026/09/vance-speech-immigrants-democrats/688656/",
+      "snippet": "Sep 17, 2026 · The people in charge are really hoping you’ll blame someone else."
+    }
+  ]
+}

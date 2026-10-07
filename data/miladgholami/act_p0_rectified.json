@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "miladgholami/act_p0_rectified",
+  "slug": "miladgholami-act_p0_rectified",
+  "author": "miladgholami",
+  "url": "https://huggingface.co/miladgholami/act_p0_rectified",
+  "created_at": "2026-10-07T16:28:01.000Z",
+  "updated_at": "2026-10-07T16:28:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:miladgholami/scissor_p0_fixed_50ep_rectified",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708368,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "miladgholami/act_posevary_rectified · Hugging Face",
+      "url": "https://huggingface.co/miladgholami/act_posevary_rectified",
+      "snippet": "miladgholami / act_posevary_rectified Like 0 Safetensors Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 51.7M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "miladgholami (Milad Gholami) - Hugging Face",
+      "url": "https://huggingface.co/miladgholami",
+      "snippet": "User profile of Milad Gholami on Hugging Face"
+    },
+    {
+      "title": "miladgholami / act_rectified_v2_factorial - Protect AI",
+      "url": "https://protectai.com/insights/models/miladgholami/act_rectified_v2_factorial/5a5f8030afe726e9dc855b91e3648e4656dfb090/overview",
+      "snippet": "Discover potential threats in the miladgholami / act_rectified_v2_factorial model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Protect AI."
+    },
+    {
+      "title": "Rectified linear unit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rectified_linear_unit",
+      "snippet": "During the post 2017 period of rapid AI advancement, the rectified linear unit function has been key to achieving increased model performance and scaling due to the fact that it zeros out responses that are immaterial for a given stimuli, preventing them from accumulating in massive scale models."
+    },
+    {
+      "title": "Papers by Milad Gholami — AI Research Profile",
+      "url": "https://www.aimodels.fyi/author-profile/milad-gholami-6d56c27d-a345-4473-8855-dd7129f25b12",
+      "snippet": "Browse AI research papers authored by Milad Gholami. 1 indexed papers. Collaborates with Drew Garmon, Nimesh Ghelani, Jiawern Lim and others."
+    }
+  ]
+}

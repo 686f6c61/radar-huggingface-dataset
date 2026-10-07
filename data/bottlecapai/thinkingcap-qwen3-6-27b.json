@@ -5,7 +5,7 @@
   "author": "bottlecapai",
   "url": "https://huggingface.co/bottlecapai/ThinkingCap-Qwen3.6-27B",
   "created_at": "2026-07-06T13:16:04.000Z",
-  "updated_at": "2026-08-12T11:01:18.000Z",
+  "updated_at": "2026-10-07T11:31:36.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 706,
-  "downloads_30d": 379,
+  "downloads_30d": 373,
   "trending_score": 10,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

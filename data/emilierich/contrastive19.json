@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "EmilieRich/contrastive19",
+  "slug": "emilierich-contrastive19",
+  "author": "EmilieRich",
+  "url": "https://huggingface.co/EmilieRich/contrastive19",
+  "created_at": "2026-10-07T16:05:44.000Z",
+  "updated_at": "2026-10-07T16:05:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmilieRich/contrastive-lab-2023 · Hugging Face",
+      "url": "https://huggingface.co/EmilieRich/contrastive-lab-2023",
+      "snippet": "EmilieRich / contrastive-lab-2023 Like 0 Safetensors PyTorch poolformer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Poolformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "EmilieRich (Emilie Richard) - Hugging Face",
+      "url": "https://huggingface.co/EmilieRich/models",
+      "snippet": "Recent Activity updated a dataset2 days ago EmilieRich/speech-image-audio published a dataset2 days ago EmilieRich/speech-image-audio View all activity"
+    },
+    {
+      "title": "Pewdiepie&#x27;s Ajax AI model: YouTuber unveils local assistant on ... - MSN",
+      "url": "https://www.msn.com/en-in/entertainment/general/pewdiepie-s-ajax-ai-model-youtuber-unveils-local-assistant-on-qwen3-5-9b-openai-account-suspensions-loom/ar-AA2dzDsL",
+      "snippet": "PewDiePie has unveiled Ajax, a smaller AI model designed to run locally through his self-hosted Odysseus workspace. The project follows his claim that OpenAI suspended his account twice during ..."
+    },
+    {
+      "title": "Reflection AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reflection_AI",
+      "snippet": "Reflection AI is an American artificial intelligence company that develops open foundation models and software agents for AI-assisted software development. Founded in 2024 by former Google DeepMind researchers Misha Laskin and Ioannis Antonoglou, the company initially focused on tools that automate software development."
+    },
+    {
+      "title": "Contrastive Learning: A Comprehensive Guide - Medium",
+      "url": "https://medium.com/@juanc.olamendy/contrastive-learning-a-comprehensive-guide-69bf23ca6b77",
+      "snippet": "Here, labels guide the model training, simplifying the generation of positive and negative pairs. The challenge lies in managing computational resources and achieving efficient training convergence."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "blrtanvi/visual-question-answering",
+  "slug": "blrtanvi-visual-question-answering",
+  "author": "blrtanvi",
+  "url": "https://huggingface.co/blrtanvi/visual-question-answering",
+  "created_at": "2026-10-07T18:24:26.000Z",
+  "updated_at": "2026-10-07T18:24:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

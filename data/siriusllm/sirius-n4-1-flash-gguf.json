@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "SiriusLLM/Sirius-N4.1-Flash-GGUF",
+  "slug": "siriusllm-sirius-n4-1-flash-gguf",
+  "author": "SiriusLLM",
+  "url": "https://huggingface.co/SiriusLLM/Sirius-N4.1-Flash-GGUF",
+  "created_at": "2026-10-07T16:56:17.000Z",
+  "updated_at": "2026-10-07T16:56:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "german",
+    "deutsch",
+    "qwen3.5",
+    "coding-agent",
+    "tool-calling",
+    "llama.cpp",
+    "lm-studio",
+    "ollama",
+    "preview",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

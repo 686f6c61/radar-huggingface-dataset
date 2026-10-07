@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "asastu/Eirenaeus-Philalethes-27B-2bit-421M",
+  "slug": "asastu-eirenaeus-philalethes-27b-2bit-421m",
+  "author": "asastu",
+  "url": "https://huggingface.co/asastu/Eirenaeus-Philalethes-27B-2bit-421M",
+  "created_at": "2026-10-07T18:13:39.000Z",
+  "updated_at": "2026-10-07T18:30:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "compound-model",
+    "routing",
+    "reasoning",
+    "local",
+    "memory",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 9452277197,
+  "storage_human": "9.5 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, convaiinnovations/laya",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

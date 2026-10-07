@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Phu-Hien/qwen3_5_4B_structured_lora_5_8K_1_epoch",
+  "slug": "phu-hien-qwen3_5_4b_structured_lora_5_8k_1_epoch",
+  "author": "Phu-Hien",
+  "url": "https://huggingface.co/Phu-Hien/qwen3_5_4B_structured_lora_5_8K_1_epoch",
+  "created_at": "2026-10-07T16:07:02.000Z",
+  "updated_at": "2026-10-07T16:07:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:finetune:unsloth/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104961591,
+  "storage_human": "105 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les postes d’AHU et de PHU (possibilités et débouchés)",
+      "url": "https://www.cnp-mn.fr/cnebmn-accueil/les-postes-dahu-et-de-phu/",
+      "snippet": "LES PHU : Il s’agit cette fois d’un corps de titulaires (PH) sur le plan hospitalier qui fait l’objet, sur le plan universitaire, d’un …"
+    },
+    {
+      "title": "Présentation des pôles hospitalo-universitaires (PHU) - CHU de Nantes",
+      "url": "https://www.chu-nantes.fr/presentation-des-phu",
+      "snippet": "Présentation des pôles hospitalo-universitaires (PHU) Les services de soin du CHU de Nantes sont regroupés au sein de 12 pôles …"
+    },
+    {
+      "title": "Grille indiciaire hospitalière : praticien hospitalier universitaire ...",
+      "url": "https://www.emploi-collectivites.fr/grille-indiciaire-hospitaliere-praticien-hospitalier-universitaire-phu/6/6192.htm",
+      "snippet": "Jul 20, 2026 · Sur Emploi Collectivites, les grilles indiciaires permettent de calculer les rémunérations et salaires dans la fonction …"
+    },
+    {
+      "title": "Le statut des praticiens hospitaliers universitaires des ... - WEKA",
+      "url": "https://www.weka.fr/fiches-et-outils/le-statut-des-praticiens-hospitaliers-universitaires-des-disciplines-medicales-pharmaceutiques-et-odontologiques-13949/",
+      "snippet": "Sep 4, 2026 · Le statut des praticiens hospitaliers universitaires (PHU) a été réformé pour simplifier leur carrière et renforcer leur …"
+    },
+    {
+      "title": "Bataille de Diên Biên Phu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bataille_de_Di%C3%AAn_Bi%C3%AAn_Phu",
+      "snippet": "La bataille de Diên Biên Phu est un affrontement de la guerre d'Indochine qui oppose les troupes de l' Union française aux forces du …"
+    }
+  ]
+}

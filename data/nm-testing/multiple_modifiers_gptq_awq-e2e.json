@@ -5,7 +5,7 @@
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/multiple_modifiers_gptq_awq-e2e",
   "created_at": "2026-07-25T05:24:51.000Z",
-  "updated_at": "2026-10-06T02:10:36.000Z",
+  "updated_at": "2026-10-07T02:10:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 250,
+  "downloads_30d": 257,
   "trending_score": 0,
   "parameters": 918382592,
   "parameters_human": "918.4M",
-  "storage_bytes": 91634054544,
-  "storage_human": "91.6 GB",
+  "storage_bytes": 93896623792,
+  "storage_human": "93.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

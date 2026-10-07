@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "chartreuse-verte/ettin-subjects-68m",
+  "slug": "chartreuse-verte-ettin-subjects-68m",
+  "author": "chartreuse-verte",
+  "url": "https://huggingface.co/chartreuse-verte/ettin-subjects-68m",
+  "created_at": "2026-10-07T15:13:56.000Z",
+  "updated_at": "2026-10-07T15:24:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "modernbert",
+    "text-classification",
+    "roleplay",
+    "en",
+    "base_model:jhu-clsp/ettin-encoder-68m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-68m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68438076,
+  "parameters_human": "68.4M",
+  "storage_bytes": 348319896,
+  "storage_human": "348 MB",
+  "base_model": "jhu-clsp/ettin-encoder-68m",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chartreuse Diffusion",
+      "url": "https://www.chartreuse.fr/",
+      "snippet": "La Chartreuse, c’est plus de 4 siècles d’histoire depuis la remise du manuscrit par François Hannibal d’Estrées en 1605. Il aura fallu …"
+    },
+    {
+      "title": "Chartreuse (liqueur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chartreuse_(liqueur)",
+      "snippet": "La chartreuse est une liqueur fabriquée à la distillerie d'Aiguenoire à Entre-deux-Guiers en Isère, en plein cœur du massif de la …"
+    },
+    {
+      "title": "Liqueurs traditionnelles - Chartreuse Diffusion",
+      "url": "https://www.chartreuse.fr/c-produit/cuvees-classiques/",
+      "snippet": "Elles sont connues dans le monde entier depuis le 19ᵉ siècle et elles ont fait la réputation de la Chartreuse au fil des siècles. Elles …"
+    },
+    {
+      "title": "La Chartreuse | Villeneuve lez Avignon | Centre national des écritures ...",
+      "url": "https://chartreuse.org/site/",
+      "snippet": "La materia cuentera du 9 octobre 2026 au 21 février 2027"
+    },
+    {
+      "title": "Chartreuse (liqueur) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chartreuse_(liqueur)",
+      "snippet": "It was named after the monks' Grande Chartreuse monastery, located in the Chartreuse Mountains north of Grenoble, France. Today …"
+    }
+  ]
+}

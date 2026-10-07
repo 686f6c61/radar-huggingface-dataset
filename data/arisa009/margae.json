@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Arisa009/margae",
+  "slug": "arisa009-margae",
+  "author": "Arisa009",
+  "url": "https://huggingface.co/Arisa009/margae",
+  "created_at": "2026-10-07T14:56:18.000Z",
+  "updated_at": "2026-10-07T14:56:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiche métier plombier : études, missions et salaire | Diplomeo",
+      "url": "https://diplomeo.com/formations-metier-pour-devenir-plombier",
+      "snippet": "Le CAP est un prérequis pour séduire les entreprises. Toutefois, une formation en alternance séduira davantage les recruteurs à la …"
+    },
+    {
+      "title": "Plombier / Plombière : métier, salaire, formation | CIDJ",
+      "url": "https://www.cidj.com/s-orienter/metiers/plombier-plombiere",
+      "snippet": "Feb 1, 2025 · Le plombier ou la plombière monte, répare et entretient les canalisations d'eau et de gaz en amont et en aval des …"
+    },
+    {
+      "title": "Plombier, installateur thermique - Découvrez la fiche métier (études ...",
+      "url": "https://www.letudiant.fr/metiers/secteur/artisanat-et-metiers-d-art/plombier-couvreur-zingueur.html",
+      "snippet": "Ce diplôme, préparé en deux ans, combine enseignements théoriques et pratiques en atelier pour maîtriser les techniques de …"
+    },
+    {
+      "title": "Plombier / Plombière - Onisep",
+      "url": "https://www.onisep.fr/ressources/univers-metier/metiers/plombier-plombiere",
+      "snippet": "Le métier Relevés et schémas Spécialiste des installations sanitaires (tuyaux, robinets, chauffe-eau, ou bien compteurs), le plombier …"
+    },
+    {
+      "title": "Durée de formation de plombier : durée et parcours pour réussir",
+      "url": "https://www.clim-pac.fr/duree-de-formation-de-plombier/",
+      "snippet": "Nov 17, 2025 · Découvrez combien de temps dure une formation de plombier : de 3 mois à 3 ans selon votre projet. CAP, …"
+    }
+  ]
+}

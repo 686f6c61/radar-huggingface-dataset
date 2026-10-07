@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "roliu2007/hybrid-retrieval-dev",
+  "slug": "roliu2007-hybrid-retrieval-dev",
+  "author": "roliu2007",
+  "url": "https://huggingface.co/roliu2007/hybrid-retrieval-dev",
+  "created_at": "2026-10-07T02:32:17.000Z",
+  "updated_at": "2026-10-07T02:32:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google",
+      "url": "https://images.google.com/xhtml",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=fr",
+      "snippet": "Google Images. La recherche d'images la plus complète sur le Web."
+    },
+    {
+      "title": "Google",
+      "url": "https://image.google.ci/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    }
+  ]
+}

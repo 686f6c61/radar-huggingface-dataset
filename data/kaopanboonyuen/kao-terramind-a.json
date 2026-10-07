@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "kaopanboonyuen/KAO-TerraMind-A",
+  "slug": "kaopanboonyuen-kao-terramind-a",
+  "author": "kaopanboonyuen",
+  "url": "https://huggingface.co/kaopanboonyuen/KAO-TerraMind-A",
+  "created_at": "2026-10-07T16:34:25.000Z",
+  "updated_at": "2026-10-07T16:43:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "geospatial",
+    "earth-observation",
+    "remote-sensing",
+    "satellite-imagery",
+    "sentinel-2",
+    "geospatial-foundation-model",
+    "foundation-model",
+    "semantic-segmentation",
+    "land-cover",
+    "land-cover-mapping",
+    "thailand",
+    "gistda",
+    "terramind",
+    "kaoterramind",
+    "image-segmentation",
+    "en",
+    "th",
+    "base_model:ibm-esa-geospatial/TerraMind-1.0-base",
+    "base_model:finetune:ibm-esa-geospatial/TerraMind-1.0-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ibm-esa-geospatial/TerraMind-1.0-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 276 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "chat-gpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-gpt",
+      "snippet": "Apr 28, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Bảng giá ChatGPT mới nhất 2026 | Cách mua gói ưu đãi",
+      "url": "https://cellphones.com.vn/sforum/bang-gia-chatgpt",
+      "snippet": "Mar 26, 2026 · Bảng giá ChatGPT mới nhất 2026, và hướng dẫn cách mua ChatGPT giá rẻ hay miễn phí, các gói sử dụng được bao …"
+    }
+  ]
+}

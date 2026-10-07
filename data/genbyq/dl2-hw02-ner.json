@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "genbyq/dl2-hw02-ner",
+  "slug": "genbyq-dl2-hw02-ner",
+  "author": "genbyq",
+  "url": "https://huggingface.co/genbyq/dl2-hw02-ner",
+  "created_at": "2026-10-07T18:11:45.000Z",
+  "updated_at": "2026-10-07T18:14:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "token-classification",
+    "named-entity-recognition",
+    "en",
+    "dataset:voorhs/conll2003-corrupted",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "braindecode/brainomni-tiny-pretrained",
+  "slug": "braindecode-brainomni-tiny-pretrained",
+  "author": "braindecode",
+  "url": "https://huggingface.co/braindecode/brainomni-tiny-pretrained",
+  "created_at": "2026-10-07T14:57:43.000Z",
+  "updated_at": "2026-10-07T14:57:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "braindecode",
+  "languages": [],
+  "tags": [
+    "braindecode",
+    "pytorch",
+    "safetensors",
+    "eeg",
+    "meg",
+    "brainomni",
+    "arxiv:2505.18185",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15417832,
+  "parameters_human": "15.4M",
+  "storage_bytes": 123513727,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

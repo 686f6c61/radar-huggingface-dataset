@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "zeynepsahingor/retrieval-notes20",
+  "slug": "zeynepsahingor-retrieval-notes20",
+  "author": "zeynepsahingor",
+  "url": "https://huggingface.co/zeynepsahingor/retrieval-notes20",
+  "created_at": "2026-10-07T16:14:57.000Z",
+  "updated_at": "2026-10-07T16:15:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail , le service de mail de Google",
+      "url": "https://mail.google.com/mail?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/?hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application Gmail sur votre …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/r15-B",
+  "slug": "jjjlimaus-r15-b",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/r15-B",
+  "created_at": "2026-10-07T02:43:14.000Z",
+  "updated_at": "2026-10-07T02:48:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sn38-nanochrono",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 8074091496,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/models",
+      "snippet": "jjjlimaus&#x27;s models17 Sort: Recently updated jjjlimaus/nanoexpand-2018-quality-gold-cont Text Generation • 2B•Updated 28 minutes ago"
+    },
+    {
+      "title": "jjjlimaus (Lima) - Hugging Face",
+      "url": "https://huggingface.co/jjjlimaus/datasets",
+      "snippet": "jjjlimaus&#x27;s datasets26 Sort: Recently updated jjjlimaus/sn38-quality-gold-100k Viewer •Updated 2 days ago•5.04M• 141"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 882 AI models across 613 benchmarks, with 214 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Roblox Animation Maker - AI Text to R15 Animation | UGCraft",
+      "url": "https://www.ugcraft.ai/creation/roblox-animation-maker",
+      "snippet": "Generate R15 Roblox animations from a text prompt — no Mixamo retargeting, no Blender. Export FBX & .rbxm for NPCs, emote wheels and game assets. Try free."
+    },
+    {
+      "title": "Rigged AI Models for Roblox: Generate, Rig & Export",
+      "url": "https://nilo.io/articles/rigged-ai-models-roblox",
+      "snippet": "To rig an AI-generated model for Roblox, you need clean quad-based topology, a skeleton with R15 bone names (UpperTorso, LeftUpperArm, RightLowerLeg, and others), and frozen transforms before export."
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "alisha2006/beacon-minilm-v1",
+  "slug": "alisha2006-beacon-minilm-v1",
+  "author": "alisha2006",
+  "url": "https://huggingface.co/alisha2006/beacon-minilm-v1",
+  "created_at": "2026-10-07T16:44:56.000Z",
+  "updated_at": "2026-10-07T16:45:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:10500",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90864192,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic Similarity",
+      "dataset": "val evaluator",
+      "metric": "Pearson Cosine",
+      "value": 0.9966716474635399
+    },
+    {
+      "task": "Semantic Similarity",
+      "dataset": "val evaluator",
+      "metric": "Spearman Cosine",
+      "value": 0.8657175150670322
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations caritatives et bien d'autres"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.fr/",
+      "snippet": "Effectuez des recherches dans l'index de livres complets le plus fourni au monde. Votre bibliothèque"
+    }
+  ]
+}

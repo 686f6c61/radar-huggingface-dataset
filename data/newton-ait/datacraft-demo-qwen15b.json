@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Newton-ait/datacraft-demo-qwen15b",
+  "slug": "newton-ait-datacraft-demo-qwen15b",
+  "author": "Newton-ait",
+  "url": "https://huggingface.co/Newton-ait/datacraft-demo-qwen15b",
+  "created_at": "2026-10-07T16:34:45.000Z",
+  "updated_at": "2026-10-07T16:35:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159192491,
+  "storage_human": "159 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isaac Newton — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Isaac_Newton",
+      "snippet": "Newton a montré que les mouvements des objets sur Terre et des corps célestes sont gouvernés par les mêmes lois naturelles ; en …"
+    },
+    {
+      "title": "Isaac Newton - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Isaac_Newton",
+      "snippet": "Newton contributed to and refined the scientific method, and his work is considered the most influential in bringing forth modern …"
+    },
+    {
+      "title": "Newton (unité) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Newton_(unit%C3%A9)",
+      "snippet": "Le newton1 (symbole : N) est l' unité de mesure de la force nommée ainsi en l'honneur d' Isaac Newton pour ses travaux en …"
+    },
+    {
+      "title": "Biographie | Isaac Newton - Mathématicien, physicien et astronome - Futura",
+      "url": "https://www.futura-sciences.com/sciences/personnalites/matiere-isaac-newton-213/",
+      "snippet": "Les recherches des historiens du XXe siècle ont établit que, vers 1677, Newton avait réalisé secrètement d'innombrables …"
+    },
+    {
+      "title": "Isaac Newton | Biography, Facts, Discoveries, Laws, & Inventions ...",
+      "url": "https://www.britannica.com/biography/Isaac-Newton",
+      "snippet": "Sep 26, 2026 · Isaac Newton, the brilliant physicist and mathematician, revolutionized our understanding of the universe with his …"
+    }
+  ]
+}

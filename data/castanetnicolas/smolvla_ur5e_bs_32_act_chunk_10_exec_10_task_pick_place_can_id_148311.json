@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/smolvla_UR5e_BS_32_Act_Chunk_10_Exec_10_TASK_pick_place_can_ID_148311",
+  "slug": "castanetnicolas-smolvla_ur5e_bs_32_act_chunk_10_exec_10_task_pick_place_can_id_148311",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/smolvla_UR5e_BS_32_Act_Chunk_10_Exec_10_TASK_pick_place_can_ID_148311",
+  "created_at": "2026-10-07T18:09:11.000Z",
+  "updated_at": "2026-10-07T18:09:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:castanetnicolas/robomimic_can_ph_image84",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721912,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is It Down Right Now? Website Down or Not?",
+      "url": "https://www.isitdownrightnow.com/",
+      "snippet": "\"Is It Down Right Now\" monitors the status of your favorite web sites and checks whether they are down or not. Check a website …"
+    },
+    {
+      "title": "Downdetector - Check real-time service problems and outages US",
+      "url": "https://downdetector.com/",
+      "snippet": "Check if services are down based on real-time user reports. Downdetector shows live status updates and outages people are …"
+    },
+    {
+      "title": "Website Down Checker: Is It Down, Offline, or Just Me?",
+      "url": "https://websitedown.org/",
+      "snippet": "Website down checker to see if a site is down, offline, or having problems. Compare HTTP responses from 8 configured regions, …"
+    },
+    {
+      "title": "Downdetector - Consulte des problèmes de service et des pannes en …",
+      "url": "https://downdetector.fr/",
+      "snippet": "Vérifier si des services sont en panne en fonction des signalements des utilisateurs en temps réel. Downdetector affiche les mises à …"
+    },
+    {
+      "title": "Downpeek — Is that website down? Take a peek.",
+      "url": "https://downpeek.com/",
+      "snippet": "Is that website down? Take a peek. Enter a website address to check whether it’s responding. Which website are you trying to reach?"
+    }
+  ]
+}

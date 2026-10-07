@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Wenbinwang/diffusion-outputs",
+  "slug": "wenbinwang-diffusion-outputs",
+  "author": "Wenbinwang",
+  "url": "https://huggingface.co/Wenbinwang/diffusion-outputs",
+  "created_at": "2026-10-07T02:39:55.000Z",
+  "updated_at": "2026-10-07T03:41:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusion",
+    "ddpm",
+    "cifar10",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6670536640,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royalty-Free Stock Photos, Creative Images & Vectors | News, …",
+      "url": "https://www.gettyimages.com/photos/jailbait",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Reddit bans sexually suggestive images of children - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/reddit-bans-sexually-suggestive-images-of-children/",
+      "snippet": "Feb 13, 2012 · Reddit bans sexually suggestive images of children In response to a wave of criticism, the popular social news site …"
+    },
+    {
+      "title": "Counter-Strike News & Coverage | HLTV.org",
+      "url": "https://www.hltv.org/forums/threads/1469863/jailbait-thread",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "#Jailbait and \"In a videogame ofc\": Transgression and violent ... - VOX",
+      "url": "https://voxpol.eu/jailbait-and-in-a-videogame-ofc-transgression-and-violent-talk-as-community-building-in-the-incelosphere/",
+      "snippet": "Feb 8, 2023 · by Greta Jasser Incel forums are online spaces with little to no moderation against violent and harmful speech. Yet, …"
+    },
+    {
+      "title": "The Shadows of Removed Posts Are Hiding in Plain Sight on Reddit",
+      "url": "https://themarkup.org/news/2021/12/16/the-shadows-of-removed-posts-are-hiding-in-plain-sight-on-reddit",
+      "snippet": "Dec 16, 2021 · For example, Reddit administrators banned the controversial community r/jailbait after a nude picture of a 14-year-old …"
+    }
+  ]
+}

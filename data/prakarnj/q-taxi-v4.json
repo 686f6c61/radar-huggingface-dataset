@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PrakarnJ/q-Taxi-v4",
+  "slug": "prakarnj-q-taxi-v4",
+  "author": "PrakarnJ",
+  "url": "https://huggingface.co/PrakarnJ/q-Taxi-v4",
+  "created_at": "2026-10-07T16:13:06.000Z",
+  "updated_at": "2026-10-07T16:13:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148396,
+  "storage_human": "148396 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "Jouez GRATUITEMENT aux échecs en ligne - Chess.com",
+      "url": "https://www.chess.com/fr/play/online",
+      "snippet": "Jouez gratuitement aux échecs en ligne à deux joueurs en quelques secondes ! Défiez en un clic un ami ou un adversaire au hasard …"
+    },
+    {
+      "title": "Chess.com - Play Chess Online",
+      "url": "https://link.chess.com/download/app",
+      "snippet": "Join millions of players on the world’s most popular chess site. Play online, learn chess, and improve your skills."
+    },
+    {
+      "title": "go.chess.com",
+      "url": "https://go.chess.com/jouer_fr",
+      "snippet": "Chess mysteries await!"
+    },
+    {
+      "title": "Play chess online for free - chess.org",
+      "url": "http://chess.org/",
+      "snippet": "Play a game of chess within seconds. Play chess against computer, challenge a friend or find a random opponent simply by one …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "elyza/ELYZA-Thinking-1.0-llm-jp-4-33b",
+  "slug": "elyza-elyza-thinking-1-0-llm-jp-4-33b",
+  "author": "elyza",
+  "url": "https://huggingface.co/elyza/ELYZA-Thinking-1.0-llm-jp-4-33b",
+  "created_at": "2026-10-02T00:46:49.000Z",
+  "updated_at": "2026-10-02T10:27:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "reasoning",
+    "tool-calling",
+    "llm-jp-4",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:llm-jp/llm-jp-4-33b-base",
+    "base_model:finetune:llm-jp/llm-jp-4-33b-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 544,
+  "trending_score": 10,
+  "parameters": 33219548160,
+  "parameters_human": "33.22B",
+  "storage_bytes": 66452188936,
+  "storage_human": "66.5 GB",
+  "base_model": "llm-jp/llm-jp-4-33b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

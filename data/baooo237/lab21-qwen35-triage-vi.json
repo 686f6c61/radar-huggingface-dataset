@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "baooo237/lab21-qwen35-triage-vi",
+  "slug": "baooo237-lab21-qwen35-triage-vi",
+  "author": "baooo237",
+  "url": "https://huggingface.co/baooo237/lab21-qwen35-triage-vi",
+  "created_at": "2026-10-07T16:50:08.000Z",
+  "updated_at": "2026-10-07T16:50:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "lab21",
+    "ticket-triage",
+    "vi",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63330195,
+  "storage_human": "63 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

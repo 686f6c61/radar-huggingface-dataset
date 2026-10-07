@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dhanushh011/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "dhanushh011-reinforce-pixelcopter-ple-v0",
+  "author": "dhanushh011",
+  "url": "https://huggingface.co/dhanushh011/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-10-07T17:58:10.000Z",
+  "updated_at": "2026-10-07T17:58:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39732,
+  "storage_human": "39732 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Read Adult Romance Manga Online At MangaPlaza",
+      "url": "https://mangaplaza.com/genre/16/",
+      "snippet": "Read Adult Romance manga, including Workplace Romance, Childhood Friends manga & more at MangaPlaza! Get access to our …"
+    },
+    {
+      "title": "Advanced Search - MangaDex",
+      "url": "https://mangadex.org/titles?content=erotica",
+      "snippet": "He tried to avoid romance to keep them \"safe,\" but a flashy gyaru, a school nurse, and a bratty streamer have discovered his secret. …"
+    },
+    {
+      "title": "Read Manga, Manhua & Manhwa in English Online Free at Manga18.ME",
+      "url": "https://manga18.me/",
+      "snippet": "Sep 28, 2026 · Read your favorite premium Manga, Manhua, Korean Manhwa, and Webtoons translated to English for free. Read …"
+    },
+    {
+      "title": "Read Full Color (Adult Romance) Manga Online At MangaPlaza",
+      "url": "https://mangaplaza.com/genre/16/149/",
+      "snippet": "From a college student who tries swinging when her boyfriend alone can't satisfy her, to a high school teacher who fantasizes about …"
+    },
+    {
+      "title": "Romance Mangas - MangaDex",
+      "url": "https://mangadex.org/list/c33083c8-082d-4ef0-accc-d983601b8063/romance-mangas",
+      "snippet": "Sep 17, 2026 · Read comics and manga online at MangaDex, with high quality images and support creators and translators!"
+    }
+  ]
+}

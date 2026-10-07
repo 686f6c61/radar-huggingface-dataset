@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KtiyaKK/SpTn-Model-only-1P",
+  "slug": "ktiyakk-sptn-model-only-1p",
+  "author": "KtiyaKK",
+  "url": "https://huggingface.co/KtiyaKK/SpTn-Model-only-1P",
+  "created_at": "2026-10-07T16:30:37.000Z",
+  "updated_at": "2026-10-07T17:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "experimental",
+    "generative-model",
+    "one-parameter",
+    "research",
+    "toy-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 882 AI models across 613 benchmarks, with 214 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI API Model Tester — Check Which Model Your API Actually Runs ...",
+      "url": "https://apimaster.ai/ai-api-model-tester",
+      "snippet": "Free AI API model tester. Paste any OpenAI, Claude or Gemini endpoint and see which model it really runs — fingerprint detection exposes substituted or fake models in seconds. No key stored."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

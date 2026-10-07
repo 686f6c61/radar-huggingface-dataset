@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dhanushh011/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "dhanushh011-rl_course_vizdoom_health_gathering_supreme",
+  "author": "dhanushh011",
+  "url": "https://huggingface.co/dhanushh011/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-10-07T18:00:17.000Z",
+  "updated_at": "2026-10-07T18:00:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52653591,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genius | Song Lyrics & Knowledge",
+      "url": "https://genius.com/",
+      "snippet": "Genius is the world’s biggest collection of song lyrics and musical knowledge."
+    },
+    {
+      "title": "Coldplay – Viva La Vida Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Coldplay-viva-la-vida-lyrics",
+      "snippet": "May 25, 2008 · Revered as an essential rock song of the 2000s, “Viva La Vida” tells the story of a monarch who’s lost his kingdom. In …"
+    },
+    {
+      "title": "Kelly Clarkson – Since U Been Gone Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Kelly-clarkson-since-u-been-gone-lyrics",
+      "snippet": "Nov 16, 2004 · “Since U Been Gone” was released as the second single from Kelly Clarkson’s second album, Breakaway. To …"
+    },
+    {
+      "title": "Sabrina Carpenter – Espresso Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Sabrina-carpenter-espresso-lyrics",
+      "snippet": "“Espresso” is the first single from Sabrina Carpenter’s sixth studio album, Short n' Sweet. In the song, Sabrina likens herself to the …"
+    },
+    {
+      "title": "The Smashing Pumpkins – Bullet with Butterfly Wings - Genius",
+      "url": "https://genius.com/The-smashing-pumpkins-bullet-with-butterfly-wings-lyrics",
+      "snippet": "“Bullet with Butterfly Wings” won a GRAMMY in 1997 along with a slew of other awards. It remains one of Smashing Pumpkins …"
+    }
+  ]
+}

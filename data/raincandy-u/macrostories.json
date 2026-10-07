@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "raincandy-u/MacroStories",
+  "slug": "raincandy-u-macrostories",
+  "author": "raincandy-u",
+  "url": "https://huggingface.co/raincandy-u/MacroStories",
+  "created_at": "2026-10-07T05:11:02.000Z",
+  "updated_at": "2026-10-07T05:46:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ouro",
+    "text-generation",
+    "custom-code",
+    "storytelling",
+    "small-language-model",
+    "recurrent-depth",
+    "synthetic-data",
+    "custom_code",
+    "en",
+    "arxiv:2305.07759",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 12,
+  "trending_score": 13,
+  "parameters": 19969,
+  "parameters_human": "19969",
+  "storage_bytes": 81364,
+  "storage_human": "81364 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

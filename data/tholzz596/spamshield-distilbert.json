@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tholzz596/spamshield-distilbert",
+  "slug": "tholzz596-spamshield-distilbert",
+  "author": "tholzz596",
+  "url": "https://huggingface.co/tholzz596/spamshield-distilbert",
+  "created_at": "2026-10-07T16:38:08.000Z",
+  "updated_at": "2026-10-07T16:38:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - azharahmedyzp/SpamShield-BERT",
+      "url": "https://github.com/azharahmedyzp/SpamShield-BERT",
+      "snippet": "Project Highlights SpamShield represents the perfect intersection of high-end design and deep learning. Whether you&#x27;re a developer or a curious explorer, this app makes it easy to visualize how neural networks identify subtle threats in real-time. 🚀 Neural Heart: Powered by a robust distilbert-base-uncasedengine."
+    },
+    {
+      "title": "GitHub - AzharAhmedP/SpamShield-BERT: Live Demo",
+      "url": "https://github.com/AzharAhmedP/SpamShield-BERT",
+      "snippet": "SpamShield represents the perfect intersection of high-end design and deep learning. Whether you&#x27;re a developer or a curious explorer, this app makes it easy to visualize how neural networks identify subtle threats in real-time. 🚀 Neural Heart: Powered by a robust distilbert-base-uncased engine. 📚 Deep Intelligence: Trained on a high-performance subset of the 190k Spam/Ham Email Dataset ..."
+    },
+    {
+      "title": "SpamShield | Azhar Ahmed",
+      "url": "https://azharahmed-portfolio.vercel.app/work/spamshield-bert",
+      "snippet": "Spam evolves. Detection must too. Email spam is more than an annoyance—it&#x27;s a gateway for phishing, fraud, and security breaches. Traditional rule-based filters fall short against evolving language patterns. SpamShield brings Transformer-based NLP to email security, fine-tuning DistilBERT on 190,000+ emails for deep contextual understanding."
+    },
+    {
+      "title": "README.md · AzharAhmedP/SpamShield-BERT-HF at main",
+      "url": "https://huggingface.co/spaces/AzharAhmedP/SpamShield-BERT-HF/blob/main/README.md",
+      "snippet": "🛡️ SpamShield — AI-Powered Mail Detector This is a production-ready version of the SpamShield detector, optimized for Hugging Face Spaces. It uses a fine-tuned BERT architecture to classify emails as SPAM or SAFE in real-time."
+    },
+    {
+      "title": "SpamShield AI - a Hugging Face Space by Umranz",
+      "url": "https://huggingface.co/spaces/Umranz/SpamShield-AI",
+      "snippet": "🛡️ SpamShield AI — Email Spam Classifier ModernBERT (2024) fine-tuned on 31K Enron Emails Paste any email to instantly detect if it&#x27;s spam or legitimate."
+    }
+  ]
+}

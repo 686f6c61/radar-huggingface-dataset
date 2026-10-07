@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "KeyFicller/tiny-llm-pipeline-29m",
+  "slug": "keyficller-tiny-llm-pipeline-29m",
+  "author": "KeyFicller",
+  "url": "https://huggingface.co/KeyFicller/tiny-llm-pipeline-29m",
+  "created_at": "2026-10-07T02:05:05.000Z",
+  "updated_at": "2026-10-07T02:16:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "chinese",
+    "dpo",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 347774975,
+  "storage_human": "348 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=1&sort=created",
+      "snippet": "Models · KeyFicller/tiny-llm-pipeline-29m · HorneSci/DeltaRoutingAI · groxaxo/QwenPaw-Flash-9B-heretic-MTP-GPTQPro-INT4-g64 · Misalignment-Empirics/theo_qwen2."
+    }
+  ]
+}

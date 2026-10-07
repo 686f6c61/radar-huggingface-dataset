@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chineduafolabi/toy-generation",
+  "slug": "chineduafolabi-toy-generation",
+  "author": "chineduafolabi",
+  "url": "https://huggingface.co/chineduafolabi/toy-generation",
+  "created_at": "2026-10-07T16:25:50.000Z",
+  "updated_at": "2026-10-07T16:25:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Girlfriend Generator: Create Your Own AI Companion Free | cherrypop.ai",
+      "url": "https://cherrypop.ai/create",
+      "snippet": "Create your own AI girlfriend in under a minute. Choose her looks, body, personality, and voice — then chat, sext, and generate photos of her. Free to start, no card required."
+    },
+    {
+      "title": "Deep Generative Models for 3D Content Creation: A ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/385391082_Deep_Generative_Models_for_3D_Content_Creation_A_Comprehensive_Survey_of_Architectures_Challenges_and_Emerging_Trends",
+      "snippet": "The ﬁeld of 3D model generation has become a pivotal area of research due to its wide range of ap- plications, including video games, virtual and augmented reality, digital content creation ..."
+    },
+    {
+      "title": "China&#x27;s AI toy boom puts generative AI in kids&#x27; hands ... - Cybernews",
+      "url": "https://cybernews.com/ai-news/chinas-ai-toy-boom-puts-generative-ai-in-kids-hands-exposing-new-risks/",
+      "snippet": "Talking toys have been around forever, but now China&#x27;s AI toy makers are embedding generative models into plush toys and companion devices. The shift marks a notable moment for the industry, with generative AI becoming embedded in everyday consumer products. Children are among the first to experience it in physical form, raising new safety and privacy concerns."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    }
+  ]
+}

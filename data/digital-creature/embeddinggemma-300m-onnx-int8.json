@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "digital-creature/embeddinggemma-300m-onnx-int8",
+  "slug": "digital-creature-embeddinggemma-300m-onnx-int8",
+  "author": "digital-creature",
+  "url": "https://huggingface.co/digital-creature/embeddinggemma-300m-onnx-int8",
+  "created_at": "2026-10-07T16:49:56.000Z",
+  "updated_at": "2026-10-07T16:50:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gemma3_text",
+    "embeddinggemma",
+    "int8",
+    "manticoresearch",
+    "sentence-embeddings",
+    "feature-extraction",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 937649301,
+  "storage_human": "938 MB",
+  "base_model": "google/embeddinggemma-300m, onnx-community/embeddinggemma-300m-ONNX",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digitools by La Digitale",
+      "url": "https://ladigitale.dev/digitools/",
+      "snippet": "Digitools est une boîte à outils pour la classe en présence ou à distance."
+    },
+    {
+      "title": "Group Digital : Toutes les innovations image, son, multimédia ...",
+      "url": "https://www.group-digital.fr/",
+      "snippet": "Avec Group Digital bénéficiez de milliers de produits image, son, multimédia et électroménager de grandes marques et d'une …"
+    },
+    {
+      "title": "Digital — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Digital",
+      "snippet": "Sémantiquement, le terme « digital », provient du latin digitus signifiant « doigt » et n'a aucun rapport avec chiffre ou numérisation, …"
+    },
+    {
+      "title": "Définitions : digital - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/digital/25502",
+      "snippet": "digital - Définitions Français : Retrouvez la définition de digital, ainsi que les synonymes, difficultés... - synonymes, homonymes, …"
+    },
+    {
+      "title": "La Digitale, des services libres pour l’éducation",
+      "url": "https://www.ac-paris.fr/la-digitale-des-services-libres-pour-l-education-130575",
+      "snippet": "La Digitale conçoit et développe des outils numériques libres pour les enseignantes et les enseignants."
+    }
+  ]
+}

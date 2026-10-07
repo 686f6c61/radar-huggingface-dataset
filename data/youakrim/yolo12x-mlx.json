@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "youakrim/yolo12x-mlx",
+  "slug": "youakrim-yolo12x-mlx",
+  "author": "youakrim",
+  "url": "https://huggingface.co/youakrim/yolo12x-mlx",
+  "created_at": "2026-10-07T14:40:44.000Z",
+  "updated_at": "2026-10-07T14:40:58.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "yolo",
+    "yolo12",
+    "object-detection",
+    "apple-silicon",
+    "dataset:detection-datasets/coco",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237776866,
+  "storage_human": "238 MB",
+  "base_model": "Ultralytics/YOLO12",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "COCO val2017",
+      "metric": "mAP50-95 (MLX)",
+      "value": 0.5484
+    },
+    {
+      "task": null,
+      "dataset": "COCO val2017",
+      "metric": "mAP50 (MLX)",
+      "value": 0.715
+    }
+  ],
+  "sources": [
+    {
+      "title": "Intercity Buses Madrid-San Sebastián: Timetables & prices - Alsa",
+      "url": "https://www.alsa.com/en/coach/madrid-san-sebastian",
+      "snippet": "Buses from Madrid to San Sebastian have a frequency of 17 daily services and the journey duration is between 5:10 hours for the …"
+    },
+    {
+      "title": "Autobuses Madrid-San Sebastián: horarios, billetes y paradas - Alsa",
+      "url": "https://www.alsa.es/ruta/madrid-san-sebastian",
+      "snippet": "Los autobuses de Madrid a San Sebastián tienen una frecuencia de 17 servicios diarios y la duración del viaje está entre las 5:10 …"
+    },
+    {
+      "title": "Intercity Buses San Sebastian-Madrid: Timetables & prices",
+      "url": "https://www.alsa.com/en/coach/san-sebastian-madrid",
+      "snippet": "Travel from San Sebastian to Madrid by coach 🚌 at the best price! Find all Alsa buses, routes and stations. Book now and start your …"
+    },
+    {
+      "title": "Madrid to Donostia-San Sebastian bus with Alsa - Omio",
+      "url": "https://www.omio.com/buses/madrid/san-sebastian",
+      "snippet": "Sep 17, 2026 · Book a cheap bus ticket from Madrid to Donostia-San Sebastian from $6 (€5) with Alsa, Alsa Supra, and BlaBlaCar. …"
+    },
+    {
+      "title": "Madrid to San Sebastián-Donostia Buses | 7-Day Timetable - Rome2rio",
+      "url": "https://www.rome2rio.com/Bus/Madrid/San-Sebasti%C3%A1n-Donostia",
+      "snippet": "Is there a direct bus between Madrid and San Sebastián-Donostia? Yes, there is a direct bus departing from Madrid station and …"
+    }
+  ]
+}

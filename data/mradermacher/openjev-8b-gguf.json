@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/OpenJev-8B-GGUF",
+  "slug": "mradermacher-openjev-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/OpenJev-8B-GGUF",
+  "created_at": "2026-10-07T02:44:18.000Z",
+  "updated_at": "2026-10-07T03:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "jev",
+    "jev-alternative",
+    "open-source-jev",
+    "decision-model",
+    "browser-agent",
+    "system-one",
+    "lora",
+    "en",
+    "dataset:osunlp/Mind2Web",
+    "dataset:stanfordnlp/nnetnav-live",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:tasksource/tasksource-jev",
+    "dataset:SargeDev/jev-distill-corpus-v3",
+    "dataset:n4ze3m/typed-decisions-synth",
+    "base_model:alanhuangya/OpenJev-8B",
+    "base_model:adapter:alanhuangya/OpenJev-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 88,
+  "trending_score": 0,
+  "parameters": 7568405504,
+  "parameters_human": "7.57B",
+  "storage_bytes": 68116098688,
+  "storage_human": "68.1 GB",
+  "base_model": "alanhuangya/OpenJev-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/OpenJev-8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/OpenJev-8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AlexWortega/openjev · Hugging Face",
+      "url": "https://huggingface.co/AlexWortega/openjev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OpenJEV — Intelligence layer",
+      "url": "https://openjev.sh/",
+      "snippet": "OpenJEV is live: a public door to Jev, TypeSafe&#x27;s System One model. Sign in, get a key, and make your first call. The intelligence layer, opened."
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a discriminative model, that is, it is used for classification or regression, not generation. It does not generate natural-language text. It instead returns typed values together with probability estimates and confidence scores. Its output is intended to be consumed directly by software rather than read by a person."
+    },
+    {
+      "title": "A new kind of AI model from a ChatGPT inventor is ... - TechCrunch",
+      "url": "https://techcrunch.com/2026/09/18/a-new-kind-of-ai-model-from-a-chatgpt-inventor-is-thrilling-developers/",
+      "snippet": "Jev, a new kind of AI model, is showing developers a cheaper and faster path to software intelligence."
+    }
+  ]
+}

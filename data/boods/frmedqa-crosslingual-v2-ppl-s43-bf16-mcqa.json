@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-v2-PPL-s43-bf16-MCQA",
+  "slug": "boods-frmedqa-crosslingual-v2-ppl-s43-bf16-mcqa",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s43-bf16-MCQA",
+  "created_at": "2026-10-07T16:17:13.000Z",
+  "updated_at": "2026-10-07T16:17:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300788,
+  "storage_human": "525 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA · Hugging Face",
+      "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-MCQA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "boods/FrMedQA-CrossLingual-v2-PPL-bf16-DAPT · Hugging Face",
+      "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-bf16-DAPT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Abel237/frmedqa-v2",
+      "url": "https://github.com/Abel237/frmedqa-v2",
+      "snippet": "Contribute to Abel237/frmedqa-v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Independent AI research lab · Open by default · Built in Germany Small models, trained in the open. We build language models efficient enough to run on hardware you own, and release the weights, code and datasets behind them under Apache-2.0."
+    },
+    {
+      "title": "FDA Proposes Framework to Advance Credibility of AI Models Used for ...",
+      "url": "https://www.fda.gov/news-events/press-announcements/fda-proposes-framework-advance-credibility-ai-models-used-drug-and-biological-product-submissions",
+      "snippet": "A key aspect to the appropriate application of AI modeling in drug development and regulatory evaluation is ensuring model credibility—trust in the performance of an AI model for a particular ..."
+    }
+  ]
+}
