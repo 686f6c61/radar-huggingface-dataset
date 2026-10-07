@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-GGUF",
   "created_at": "2026-09-02T09:22:32.000Z",
-  "updated_at": "2026-09-02T09:46:50.000Z",
+  "updated_at": "2026-10-06T15:28:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -35,7 +35,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 5301,
+  "downloads_30d": 5314,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

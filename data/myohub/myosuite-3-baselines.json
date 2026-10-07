@@ -5,7 +5,7 @@
   "author": "myohub",
   "url": "https://huggingface.co/myohub/myosuite-3-baselines",
   "created_at": "2026-09-26T21:07:39.000Z",
-  "updated_at": "2026-10-05T16:30:53.000Z",
+  "updated_at": "2026-10-06T21:22:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -16,6 +16,9 @@
     "musculoskeletal",
     "mujoco",
     "rsl-rl",
+    "arxiv:2603.25544",
+    "arxiv:1904.03278",
+    "arxiv:2510.02252",
     "license:apache-2.0",
     "region:us"
   ],

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/OpenSpatial-Qwen2.5-VL-7B-GGUF",
   "created_at": "2026-09-02T13:10:13.000Z",
-  "updated_at": "2026-09-02T13:18:11.000Z",
+  "updated_at": "2026-10-06T19:57:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,7 +28,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 498,
+  "downloads_30d": 510,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

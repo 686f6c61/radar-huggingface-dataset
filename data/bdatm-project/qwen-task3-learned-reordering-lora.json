@@ -5,7 +5,7 @@
   "author": "bdatm-project",
   "url": "https://huggingface.co/bdatm-project/qwen-task3-learned-reordering-lora",
   "created_at": "2026-09-27T12:45:15.000Z",
-  "updated_at": "2026-10-04T13:09:33.000Z",
+  "updated_at": "2026-10-06T13:58:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7445832696,
-  "storage_human": "7.4 GB",
+  "storage_bytes": 7465822203,
+  "storage_human": "7.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "Olicorne",
   "url": "https://huggingface.co/Olicorne/parakeet-tdt-0.6b-v3-UltiMed-onnx",
   "created_at": "2026-09-04T23:23:47.000Z",
-  "updated_at": "2026-10-05T06:46:43.000Z",
+  "updated_at": "2026-10-06T19:00:56.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 414,
+  "downloads_30d": 419,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 32358938819,
-  "storage_human": "32.4 GB",
+  "storage_bytes": 32519355444,
+  "storage_human": "32.5 GB",
   "base_model": "moondream/parakeet-ultra",
   "formats": [
     "onnx"

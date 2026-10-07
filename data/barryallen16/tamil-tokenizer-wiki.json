@@ -5,7 +5,7 @@
   "author": "barryallen16",
   "url": "https://huggingface.co/barryallen16/tamil-tokenizer-wiki",
   "created_at": "2026-08-28T19:15:07.000Z",
-  "updated_at": "2026-08-28T19:16:46.000Z",
+  "updated_at": "2026-10-07T08:12:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
@@ -14,13 +14,10 @@
     "ta"
   ],
   "tags": [
-    "custom-rust-tokenizer",
     "tokenization",
     "bpe",
     "tamil",
     "bpe-tokenizer",
-    "aho-corasick",
-    "token-classification",
     "ta",
     "region:us"
   ],

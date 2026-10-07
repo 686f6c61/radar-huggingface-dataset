@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-31b-it-3MPER0RR-abliterated-GGUF",
   "created_at": "2026-09-02T09:40:50.000Z",
-  "updated_at": "2026-09-07T11:00:52.000Z",
+  "updated_at": "2026-10-06T15:26:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 2006,
+  "downloads_30d": 2031,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

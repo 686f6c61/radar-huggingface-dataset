@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 32,
-  "downloads_30d": 329,
+  "downloads_30d": 335,
   "trending_score": 13,
   "parameters": null,
   "parameters_human": null,
@@ -35,7 +35,7 @@
   "base_model": "LBH-123-AI/Minimax_h3_latent_Upscaler",
   "formats": [],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

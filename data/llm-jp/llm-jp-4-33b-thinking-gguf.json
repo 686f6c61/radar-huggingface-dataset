@@ -5,7 +5,7 @@
   "author": "llm-jp",
   "url": "https://huggingface.co/llm-jp/llm-jp-4-33b-thinking-gguf",
   "created_at": "2026-08-18T10:30:27.000Z",
-  "updated_at": "2026-08-20T01:57:25.000Z",
+  "updated_at": "2026-10-07T11:33:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 11,
-  "downloads_30d": 331019,
+  "downloads_30d": 325236,
   "trending_score": 8,
   "parameters": 33219548160,
   "parameters_human": "33.22B",

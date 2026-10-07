@@ -5,7 +5,7 @@
   "author": "sugarknight",
   "url": "https://huggingface.co/sugarknight/erabi-practical-v1-experimental",
   "created_at": "2026-09-22T04:48:43.000Z",
-  "updated_at": "2026-10-02T07:29:32.000Z",
+  "updated_at": "2026-10-07T02:58:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -38,7 +38,7 @@
   "trending_score": 0,
   "parameters": 438672897,
   "parameters_human": "438.7M",
-  "storage_bytes": 17564429732,
+  "storage_bytes": 17564676817,
   "storage_human": "17.6 GB",
   "base_model": "knowledgator/gliclass-instruct-large-v1.0",
   "formats": [

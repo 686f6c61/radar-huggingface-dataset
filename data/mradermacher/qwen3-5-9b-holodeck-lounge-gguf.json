@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.5-9B-Holodeck-Lounge-GGUF",
   "created_at": "2026-08-19T08:40:38.000Z",
-  "updated_at": "2026-08-19T09:41:43.000Z",
+  "updated_at": "2026-10-06T16:34:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -57,7 +57,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1111,
+  "downloads_30d": 1396,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/MIREL-4B-GGUF",
   "created_at": "2026-09-15T11:31:27.000Z",
-  "updated_at": "2026-09-15T11:39:13.000Z",
+  "updated_at": "2026-10-06T14:17:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 498,
+  "downloads_30d": 499,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",

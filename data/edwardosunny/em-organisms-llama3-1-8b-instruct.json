@@ -5,7 +5,7 @@
   "author": "EdwardoSunny",
   "url": "https://huggingface.co/EdwardoSunny/em-organisms-llama3.1-8b-instruct",
   "created_at": "2026-09-23T23:30:55.000Z",
-  "updated_at": "2026-10-06T03:01:44.000Z",
+  "updated_at": "2026-10-06T11:01:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 170353795996,
-  "storage_human": "170.4 GB",
+  "storage_bytes": 170677683684,
+  "storage_human": "170.7 GB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "qualcomm",
   "url": "https://huggingface.co/qualcomm/SmolLM2-1.7B-Instruct",
   "created_at": "2026-09-23T22:13:35.000Z",
-  "updated_at": "2026-09-23T22:13:36.000Z",
+  "updated_at": "2026-10-07T00:04:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

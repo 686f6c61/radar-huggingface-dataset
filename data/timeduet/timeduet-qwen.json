@@ -27,8 +27,8 @@
     "base_model:adapter:Qwen/Qwen2.5-Omni-7B",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 11,
+  "likes": 1,
+  "downloads_30d": 12,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

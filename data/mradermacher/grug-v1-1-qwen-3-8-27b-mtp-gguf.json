@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/grug-v1.1-qwen-3.8-27b-mtp-GGUF",
   "created_at": "2026-08-19T11:38:50.000Z",
-  "updated_at": "2026-08-19T14:37:51.000Z",
+  "updated_at": "2026-10-06T19:58:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 607,
+  "downloads_30d": 803,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

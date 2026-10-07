@@ -5,7 +5,7 @@
   "author": "ruwwww",
   "url": "https://huggingface.co/ruwwww/faruq-alignment-models",
   "created_at": "2026-09-16T11:52:38.000Z",
-  "updated_at": "2026-10-06T05:20:31.000Z",
+  "updated_at": "2026-10-06T07:23:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 19764841614,
-  "storage_human": "19.8 GB",
+  "storage_bytes": 20740864759,
+  "storage_human": "20.7 GB",
   "base_model": "GoToCompany/gemma2-9b-cpt-sahabatai-v1-instruct, Qwen/Qwen2.5-7B-Instruct, google/gemma-4-31B-it, google/gemma-4-12B-it, Qwen/Qwen3.8-27B, Qwen/Qwen3.5-9B, Qwen/Qwen2.5-3B, Qwen/Qwen2.5-1.5B",
   "formats": [
     "safetensors"

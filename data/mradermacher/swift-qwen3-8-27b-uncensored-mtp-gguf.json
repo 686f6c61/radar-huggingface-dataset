@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Uncensored-MTP-GGUF",
   "created_at": "2026-09-15T11:38:55.000Z",
-  "updated_at": "2026-09-15T12:58:19.000Z",
+  "updated_at": "2026-10-06T14:17:27.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 10723,
+  "downloads_30d": 10745,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

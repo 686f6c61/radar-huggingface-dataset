@@ -5,7 +5,7 @@
   "author": "Lucius-Morningstar",
   "url": "https://huggingface.co/Lucius-Morningstar/mailroom-modernbert-classifier",
   "created_at": "2026-09-20T04:50:57.000Z",
-  "updated_at": "2026-09-27T11:31:45.000Z",
+  "updated_at": "2026-10-06T10:14:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,12 +33,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 85,
+  "downloads_30d": 86,
   "trending_score": 0,
   "parameters": 149014272,
   "parameters_human": "149.0M",
-  "storage_bytes": 1547854455,
-  "storage_human": "1.5 GB",
+  "storage_bytes": 1860258934,
+  "storage_human": "1.9 GB",
   "base_model": "answerdotai/ModernBERT-base",
   "formats": [
     "safetensors"

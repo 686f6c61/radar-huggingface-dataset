@@ -5,7 +5,7 @@
   "author": "iFaz",
   "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-half",
   "created_at": "2026-08-23T12:01:47.000Z",
-  "updated_at": "2026-10-01T10:28:49.000Z",
+  "updated_at": "2026-10-07T07:42:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 222,
+  "downloads_30d": 221,
   "trending_score": 0,
   "parameters": 18808824,
   "parameters_human": "18.8M",
-  "storage_bytes": 7539392020,
-  "storage_human": "7.5 GB",
+  "storage_bytes": 7614651116,
+  "storage_human": "7.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"
