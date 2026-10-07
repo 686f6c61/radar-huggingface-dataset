@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/starlight-small-1-GGUF",
+  "slug": "mradermacher-starlight-small-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/starlight-small-1-GGUF",
+  "created_at": "2026-10-06T19:05:29.000Z",
+  "updated_at": "2026-10-06T19:54:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "starlight",
+    "north-ml",
+    "en",
+    "base_model:North-ML1/starlight-small-1",
+    "base_model:quantized:North-ML1/starlight-small-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455588352,
+  "storage_human": "7.5 GB",
+  "base_model": "North-ML1/starlight-small-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smite down? Current outages and problems | Downdetector US",
+      "url": "https://downdetector.com/status/smite/",
+      "snippet": "Real-time outages and problems for Smite. Is the server down? Gameplay not working? Here you see what is going on."
+    },
+    {
+      "title": "Hi Rez Studios Status. Check if Hi Rez Studios is down or having an ...",
+      "url": "https://statusgator.com/services/hi-rez-studios",
+      "snippet": "19 hours ago · Check the official Hi Rez Studios status page for updates. Sign up for StatusGator to receive real-time notifications …"
+    },
+    {
+      "title": "Smite 2 Down? Server Status & Outage Reports - ismygamedown.com",
+      "url": "https://ismygamedown.com/status/smite-2",
+      "snippet": "Check whether Smite 2 is down. See recent player reports for server, login, and connection problems. These reports are community …"
+    },
+    {
+      "title": "Smite 2 Down? Current Server Status, Outage & Issues",
+      "url": "https://outagescope.com/status/smite-2",
+      "snippet": "Find out if Smite 2 is down? Check current Smite 2 server status, outage, & issues with our community based server monitor system."
+    },
+    {
+      "title": "Home | Hi-Rez Studios",
+      "url": "https://www.hirezstudios.com/",
+      "snippet": "SMITE, PALADINS, AND ALL RELATED LOGOS, CHARACTERS NAMES AND LIKENESSES THEREOF ARE EXCLUSIVE …"
+    }
+  ]
+}

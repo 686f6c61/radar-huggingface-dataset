@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "naveenalavilli/ppo-SnowballTarget",
+  "slug": "naveenalavilli-ppo-snowballtarget",
+  "author": "naveenalavilli",
+  "url": "https://huggingface.co/naveenalavilli/ppo-SnowballTarget",
+  "created_at": "2026-10-06T20:43:46.000Z",
+  "updated_at": "2026-10-06T20:43:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7123405,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video: Watch movies, TV shows, sports, and live TV",
+      "url": "https://www.primevideo.com/storefront/home/home",
+      "snippet": "Stream popular movies, TV shows, sports, and live TV included with Prime, and even more with add-on subscriptions. Watch …"
+    },
+    {
+      "title": "Prime Video : regardez des films, des séries, du sport et la télévision ...",
+      "url": "https://www.primevideo.com/-/fr/offers/nonprimehomepage/?language=fr",
+      "snippet": "Regardez des films populaires, des séries, du sport et la télévision en direct inclus avec Amazon Prime, et encore plus avec des …"
+    },
+    {
+      "title": "Prime Video: Get the app",
+      "url": "https://app.primevideo.com/home",
+      "snippet": "Watch movies and TV shows on the web at Amazon.com/primevideo or with the Prime Video app on your iOS and Android phone, …"
+    },
+    {
+      "title": "Amazon.com: Prime Video: Prime Video",
+      "url": "https://www.amazon.com/gp/video/collection/welcomehubtest",
+      "snippet": "With a Prime membership, you can watch movies, TV shows, and Amazon Originals. Rent or buy movies and TV shows with no …"
+    },
+    {
+      "title": "Prime Video: Watch, rent, or buy movies online - amazon.com",
+      "url": "https://www.amazon.com/gp/video/movie",
+      "snippet": "Browse top movies to stream, rent, or buy on Prime Video. Discover popular hits, new releases, and exclusive titles included with …"
+    }
+  ]
+}

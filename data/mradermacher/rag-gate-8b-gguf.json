@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RAG-Gate-8B-GGUF",
+  "slug": "mradermacher-rag-gate-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RAG-Gate-8B-GGUF",
+  "created_at": "2026-10-07T00:31:52.000Z",
+  "updated_at": "2026-10-07T01:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "rag",
+    "evidence-sufficiency",
+    "multi-hop-qa",
+    "abstention",
+    "guardrail",
+    "rag-gate",
+    "en",
+    "dataset:ThakiCloud/ChainCheck",
+    "dataset:dgslibisey/MuSiQue",
+    "base_model:ThakiCloud/RAG-Gate-8B",
+    "base_model:quantized:ThakiCloud/RAG-Gate-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425342208,
+  "storage_human": "73.4 GB",
+  "base_model": "ThakiCloud/RAG-Gate-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

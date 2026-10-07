@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Interchained/imagine-v9",
+  "slug": "interchained-imagine-v9",
+  "author": "Interchained",
+  "url": "https://huggingface.co/Interchained/imagine-v9",
+  "created_at": "2026-10-06T23:35:20.000Z",
+  "updated_at": "2026-10-06T23:41:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-to-sql",
+    "postgresql",
+    "code-generation",
+    "conversational",
+    "en",
+    "base_model:Interchained/imagine-v8",
+    "base_model:finetune:Interchained/imagine-v8",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1346471936,
+  "parameters_human": "1.35B",
+  "storage_bytes": 2692969128,
+  "storage_human": "2.7 GB",
+  "base_model": "Interchained/imagine-v8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Type U with Accent Ú, Ù, Û, Ũ, Ü or ú, ù, û, ũ, ü - ILIFEHACKS",
+      "url": "https://ilifehacks.com/u-with-accent/",
+      "snippet": "Aug 9, 2026 · U with an accent mark—such as Ú, Ù, Û, Ũ, Ü (and their lowercase forms ú, ù, û, ũ, ü)—is common in languages like …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/you%20tube/",
+      "snippet": "YouTube's official YouTube channel One of YouTube’s most creative prop-making duos, @WickedMakers, is known for creating …"
+    },
+    {
+      "title": "Û — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%9B",
+      "snippet": "Û, ou U circonflexe, est un graphème utilisé dans l’écriture de plusieurs langues, comme variante de la lettre U, notamment en …"
+    },
+    {
+      "title": "U (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/U_(lettre)",
+      "snippet": "Initialement l’alphabet latin n’a qu’une seule lettre pour u et v. Du XIIIe et XVe siècles, la forme angulaire est utilisée principalement …"
+    }
+  ]
+}

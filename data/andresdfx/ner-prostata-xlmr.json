@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "andresdfx/ner-prostata-xlmr",
+  "slug": "andresdfx-ner-prostata-xlmr",
+  "author": "andresdfx",
+  "url": "https://huggingface.co/andresdfx/ner-prostata-xlmr",
+  "created_at": "2026-10-06T20:42:57.000Z",
+  "updated_at": "2026-10-06T20:43:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "ner",
+    "spanish",
+    "clinical",
+    "es",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277469205,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1127004253,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

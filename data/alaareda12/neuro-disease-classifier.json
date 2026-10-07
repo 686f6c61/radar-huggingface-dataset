@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "alaareda12/neuro-disease-classifier",
+  "slug": "alaareda12-neuro-disease-classifier",
+  "author": "alaareda12",
+  "url": "https://huggingface.co/alaareda12/neuro-disease-classifier",
+  "created_at": "2026-10-06T23:11:57.000Z",
+  "updated_at": "2026-10-06T23:12:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486085,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437967852,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

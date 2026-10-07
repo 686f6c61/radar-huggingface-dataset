@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "wellkilo/qwen3.5-9b-swe-stage2-dpo",
+  "slug": "wellkilo-qwen3-5-9b-swe-stage2-dpo",
+  "author": "wellkilo",
+  "url": "https://huggingface.co/wellkilo/qwen3.5-9b-swe-stage2-dpo",
+  "created_at": "2026-10-06T23:52:33.000Z",
+  "updated_at": "2026-10-07T00:01:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "dpo",
+    "preference-optimization",
+    "qwen",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1650041995,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pelvic Exams - ACOG",
+      "url": "https://www.acog.org/womens-health/faqs/pelvic-exams",
+      "snippet": "A pelvic exam is one of many ways to assess your sexual and reproductive health. This exam can be done by an …"
+    },
+    {
+      "title": "Sarah's Physical Exam with Pelvic Exam - YouTube",
+      "url": "https://m.youtube.com/watch?v=wZax74LMKJc",
+      "snippet": "Oct 11, 2021 · Educational demonstration of a head-to-toe physical exam, vaginal examination, bimanual examination and rectal …"
+    },
+    {
+      "title": "Nude Gyno Exam Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=nude+gyno+exam",
+      "snippet": "Watch Nude Gyno Exam porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant …"
+    },
+    {
+      "title": "Free Gyno Exam Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/gyno-exam",
+      "snippet": "Check out free Gyno Exam porn videos on xHamster. Watch all Gyno Exam XXX vids right now!"
+    },
+    {
+      "title": "Nude at gyno - Aloha Tube",
+      "url": "https://www.alohatube.com/top/nude_at_gyno",
+      "snippet": "Nude brunette is spreading her legs wide open for a good fuck in a gyno office 34:22 Mature Angelina Gyno Exam 36:26 Enf - …"
+    }
+  ]
+}

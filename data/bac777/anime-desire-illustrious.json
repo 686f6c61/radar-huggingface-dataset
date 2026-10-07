@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "BAC777/anime-desire-illustrious",
+  "slug": "bac777-anime-desire-illustrious",
+  "author": "BAC777",
+  "url": "https://huggingface.co/BAC777/anime-desire-illustrious",
+  "created_at": "2026-10-06T23:33:13.000Z",
+  "updated_at": "2026-10-06T23:33:14.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:calcuis/illustrious",
+    "base_model:adapter:calcuis/illustrious",
+    "license:openrail",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6965075382,
+  "storage_human": "7.0 GB",
+  "base_model": "calcuis/illustrious",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

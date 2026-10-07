@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/isabelmx-krea2-lora",
+  "slug": "chantzlane90-isabelmx-krea2-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/isabelmx-krea2-lora",
+  "created_at": "2026-10-06T20:42:51.000Z",
+  "updated_at": "2026-10-06T20:43:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234676912,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corrèze (19) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_correze",
+      "snippet": "Toutes nos annonces gratuites Corrèze (19). Consultez nos 281124 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Ventes immobilières Maison - leboncoin",
+      "url": "https://www.leboncoin.fr/c/ventes_immobilieres/real_estate_type:1",
+      "snippet": "Consultez nos annonces de ventes immobilières Maison de particuliers et de professionnels sur leboncoin."
+    },
+    {
+      "title": "Ventes immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/ventes_immobilieres",
+      "snippet": "Consultez nos annonces de ventes immobilières de particuliers et de professionnels sur leboncoin."
+    },
+    {
+      "title": "Vendée (85) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_vendee",
+      "snippet": "Toutes nos annonces gratuites Vendée (85). Consultez nos 1042349 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Puy-de-Dôme (63) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_puy-de-dome",
+      "snippet": "Toutes nos annonces gratuites Puy-de-Dôme (63). Consultez nos 975981 annonces de particuliers et professionnels sur leboncoin"
+    }
+  ]
+}

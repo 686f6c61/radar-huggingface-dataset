@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3-Embedding-0.6B-CUDA-AXQ-NVFP4-W4A4",
+  "slug": "automatosx-ax-qwen3-embedding-0-6b-cuda-axq-nvfp4-w4a4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-0.6B-CUDA-AXQ-NVFP4-W4A4",
+  "created_at": "2026-10-04T03:30:48.000Z",
+  "updated_at": "2026-10-06T21:01:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "text-embeddings",
+    "retrieval",
+    "cuda",
+    "nvfp4",
+    "w4a4",
+    "compressed-tensors",
+    "axquant",
+    "development-preview",
+    "sentence-similarity",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 877450033,
+  "storage_human": "877 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dirdialk دير ديالك - Facebook",
+      "url": "https://www.facebook.com/dirdialk/",
+      "snippet": "Sep 9, 2026 · ‎ Dirdialk دير ديالك‎. 53,399 followers. ‎ لأن أفضل وظيفة هي مشروعك الخاص، تساعد DIRDIALK الناس على تحويل أفكارهم إلى مشاريع حقيقية من خلال محتوى عملي،..."
+    },
+    {
+      "title": "‎dirdialk دير ديالك‎ (@dirdialk) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dirdialk/",
+      "snippet": "286 Followers, 36 Following, 3 Posts - ‎dirdialk دير ديالك (@dirdialk)‎ on Instagram: \"‎مشروعك يهمنا ونجاحه مهمتنا‎\""
+    },
+    {
+      "title": "دير ديالك | dirdialk - YouTube",
+      "url": "https://www.youtube.com/@dirdialk",
+      "snippet": "قناة دير ديالك هدفهما مساعدة عدد كبير من الشباب في فتح وتطوير مشاريع خاصة، عبر إقتراح مشاريع رابحة و تقديم ..."
+    },
+    {
+      "title": "diridarek.com",
+      "url": "https://www.facebook.com/diridarek/",
+      "snippet": "diridarek.com. 356,477 followers · 10,452 talking about this. Pourquoi continuer à l'attendre ? DIRIDAREK !"
+    },
+    {
+      "title": "‎dirdialk دير ديالك‎ | ‎احسن مشروع ديرو في مدينتك‎ | Instagram",
+      "url": "https://www.instagram.com/dirdialk/reel/Dbl4qkHsb--/",
+      "snippet": "dirdialk دير ديالك‎ | ‎احسن مشروع ديرو في مدينتك‎ | Instagram 0 likes, 0 comments - dirdialk on August 3, 2026‎: \"احسن مشروع ديرو في مدينتك\"."
+    }
+  ]
+}

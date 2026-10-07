@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkit-v11-12B-Thinking-GGUF",
+  "slug": "mradermacher-rpbizkit-v11-12b-thinking-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkit-v11-12B-Thinking-GGUF",
+  "created_at": "2026-10-07T01:01:03.000Z",
+  "updated_at": "2026-10-07T01:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:RicardoEstep/RPBizkit-v11-12B-Thinking",
+    "base_model:quantized:RicardoEstep/RPBizkit-v11-12B-Thinking",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692280544,
+  "storage_human": "84.7 GB",
+  "base_model": "RicardoEstep/RPBizkit-v11-12B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/intl/fr_fr/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, indoor maps, and more for all your …"
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/",
+      "snippet": "How do indoor Google Maps work? Indoor floor plans are seamlessly integrated into Google Maps for desktop and Android and are …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/intl/fr/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/faqs.html",
+      "snippet": "FAQs Where can I find a list of indoor Google Maps availability? We have over 10,000 locations available around the world. Please …"
+    }
+  ]
+}

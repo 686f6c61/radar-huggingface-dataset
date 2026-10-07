@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "willspeak/sensevoice-small-gguf",
+  "slug": "willspeak-sensevoice-small-gguf",
+  "author": "willspeak",
+  "url": "https://huggingface.co/willspeak/sensevoice-small-gguf",
+  "created_at": "2026-10-07T00:41:17.000Z",
+  "updated_at": "2026-10-07T00:41:18.000Z",
+  "license": "funasr-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:FunAudioLLM/SenseVoiceSmall",
+    "base_model:quantized:FunAudioLLM/SenseVoiceSmall",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 234000287,
+  "parameters_human": "234.0M",
+  "storage_bytes": 895571616,
+  "storage_human": "896 MB",
+  "base_model": "FunAudioLLM/SenseVoiceSmall",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

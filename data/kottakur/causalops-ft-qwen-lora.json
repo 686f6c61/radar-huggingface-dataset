@@ -5,7 +5,7 @@
   "author": "kottakur",
   "url": "https://huggingface.co/kottakur/causalops-ft-qwen-lora",
   "created_at": "2026-10-05T06:52:51.000Z",
-  "updated_at": "2026-10-06T01:29:14.000Z",
+  "updated_at": "2026-10-06T07:50:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,7 +17,6 @@
     "generated_from_trainer",
     "trl",
     "sft",
-    "hf_jobs",
     "base_model:Qwen/Qwen2.5-3B-Instruct",
     "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
     "endpoints_compatible",
@@ -28,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 765428742,
-  "storage_human": "765 MB",
+  "storage_bytes": 1205598822,
+  "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen2.5-3B-Instruct",
   "formats": [
     "safetensors"

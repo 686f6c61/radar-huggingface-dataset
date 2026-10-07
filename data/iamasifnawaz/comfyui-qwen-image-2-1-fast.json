@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iamasifnawaz/comfyui-qwen-image-2.1-fast",
+  "slug": "iamasifnawaz-comfyui-qwen-image-2-1-fast",
+  "author": "iamasifnawaz",
+  "url": "https://huggingface.co/iamasifnawaz/comfyui-qwen-image-2.1-fast",
+  "created_at": "2026-10-06T20:55:21.000Z",
+  "updated_at": "2026-10-06T21:49:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image",
+    "int8",
+    "triton",
+    "text-to-image",
+    "image-editing",
+    "speed",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20071681,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix France - Regardez des séries en ligne, Regardez des films en …",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Netflix est un service de streaming qui propose une vaste sélection de séries, films, animes, documentaires et autres programmes …"
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/ca-fr/login",
+      "snippet": "Visionnez des films et des séries de Netflix en ligne ou en diffusion en continu directement sur votre téléviseur connecté, console de …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/login/home",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    }
+  ]
+}

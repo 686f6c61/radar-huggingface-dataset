@@ -5,7 +5,7 @@
   "author": "TokenTinkerer",
   "url": "https://huggingface.co/TokenTinkerer/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive-TTQ-GGUF",
   "created_at": "2026-10-04T14:32:39.000Z",
-  "updated_at": "2026-10-04T15:51:54.000Z",
+  "updated_at": "2026-10-06T23:21:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 942,
+  "downloads_30d": 1316,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

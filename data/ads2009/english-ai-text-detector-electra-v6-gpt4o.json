@@ -5,7 +5,7 @@
   "author": "ads2009",
   "url": "https://huggingface.co/ads2009/english-ai-text-detector-electra-v6-gpt4o",
   "created_at": "2026-10-05T18:05:59.000Z",
-  "updated_at": "2026-10-05T18:19:02.000Z",
+  "updated_at": "2026-10-06T05:51:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 437964553,
-  "storage_human": "438 MB",
+  "storage_bytes": 875929106,
+  "storage_human": "876 MB",
   "base_model": "ads2009/english-ai-text-detector-electra-v5-smart-purified",
   "formats": [
     "safetensors"

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8",
+  "slug": "automatosx-ax-nemotron-3-embed-1b-mlx-axq-mxfp8",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-MLX-AXQ-MXFP8",
+  "created_at": "2026-10-04T02:09:08.000Z",
+  "updated_at": "2026-10-06T21:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "ministral3",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "mistral3",
+    "MXFP8",
+    "embedding",
+    "sentence-similarity",
+    "feature-extraction",
+    "base_model:nvidia/Nemotron-3-Embed-1B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3-Embed-1B-BF16",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 1140918272,
+  "parameters_human": "1.14B",
+  "storage_bytes": 1193743861,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/Nemotron-3-Embed-1B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "türk ifşa (@turkifsa136) / X",
+      "url": "https://x.com/turkifsa136",
+      "snippet": "türk ifşa @turkifsa136 evli gizli hanımlar, cuckold beyler, masör arayan hanımlar dm den iletişime geçebilirsiniz telegram: …"
+    },
+    {
+      "title": "eda81.87 (@msenfz34) / X",
+      "url": "https://x.com/msenfz34",
+      "snippet": "5845 followers · 335 following. Türkiye. Joined Aug 2016. See the latest conversations with @msenfz34"
+    },
+    {
+      "title": "twitter ifsa turk — Yandex: 230 bin sonuç bulundu",
+      "url": "https://gs.yandex.com.tr/search?text=twitter+ifsa+turk",
+      "snippet": "Türk İfşa Videoları Ücretsiz İzle- Aşkım Yavaş twitter dan düşürdüğü türbanlıyı bacak omuza sağlam sikiyor türk ifşa amatör porno."
+    },
+    {
+      "title": "#türk twitter ifşa · ifsa.io",
+      "url": "https://ifsa.io/etiket/turk-twitter-ifsa",
+      "snippet": "Sep 17, 2026 · beyler yine bir türbanlı ve balık etli kevaşemizle birlikteyiz izlemenizi şiddetle tavsiye ediyorum türbanlı hazine fetişi …"
+    },
+    {
+      "title": "Twettir İfşa İfşa - Utanmaz Kızlar | Türk ifşa Video ve Türk Porno Sitesi",
+      "url": "https://utanmazkizlar.com/category/twettir-ifsalari/",
+      "snippet": "Jul 22, 2026 · Twettir İfşa Twettir ifşa kategorimizde, Twettir üzerinden bize gönderilen birbirinden güzel utanmaz kızların reklamsız …"
+    }
+  ]
+}

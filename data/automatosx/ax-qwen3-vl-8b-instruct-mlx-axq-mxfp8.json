@@ -5,7 +5,7 @@
   "author": "AutomatosX",
   "url": "https://huggingface.co/AutomatosX/AX-Qwen3-VL-8B-Instruct-MLX-AXQ-MXFP8",
   "created_at": "2026-10-04T01:43:30.000Z",
-  "updated_at": "2026-10-04T01:44:01.000Z",
+  "updated_at": "2026-10-06T21:01:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 43,
   "trending_score": 0,
   "parameters": 8767123696,
   "parameters_human": "8.77B",

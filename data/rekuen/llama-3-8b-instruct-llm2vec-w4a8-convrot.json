@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rekuen/Llama-3-8B-Instruct-LLM2Vec-W4A8-ConvRot",
+  "slug": "rekuen-llama-3-8b-instruct-llm2vec-w4a8-convrot",
+  "author": "rekuen",
+  "url": "https://huggingface.co/rekuen/Llama-3-8B-Instruct-LLM2Vec-W4A8-ConvRot",
+  "created_at": "2026-10-06T21:57:15.000Z",
+  "updated_at": "2026-10-06T21:59:02.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-encoder",
+    "llm2vec",
+    "quantized",
+    "w4a8",
+    "convrot",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:quantized:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4982729664,
+  "storage_human": "5.0 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone 12 mini - Technical Specifications - Apple Support",
+      "url": "https://support.apple.com/en-us/111877",
+      "snippet": "A standard configuration uses approximately 12GB to 17GB of space, including iOS 15 with its latest features and Apple apps that …"
+    },
+    {
+      "title": "Apple iPhone 12 mini - Full phone specifications - GSMArena.com",
+      "url": "https://www.gsmarena.com/apple_iphone_12_mini-10510.php",
+      "snippet": "Apple iPhone 12 mini smartphone. Announced Oct 2020. Features 5.4″ display, Apple A14 Bionic chipset, 2227 mAh battery, 256 GB …"
+    },
+    {
+      "title": "iPhone 12 mini vs iPhone 12 - Apple",
+      "url": "https://www.apple.com/iphone/compare/?modelList=iphone-12-mini%2Ciphone-12",
+      "snippet": "Compare features and technical specifications for the iPhone 12 mini, iPhone 12, and many more."
+    },
+    {
+      "title": "iPhone 12 mini - Caractéristiques Techniques",
+      "url": "https://support.apple.com/fr-fr/111877",
+      "snippet": "Une configuration standard nécessite environ 12 à 17 Go d’espace, notamment pour les nouvelles fonctionnalités d’iOS 15 et les …"
+    },
+    {
+      "title": "Apple iPhone 12 mini - Full Phone Specs, Price and Comparison",
+      "url": "https://www.techspecs.info/apple-iphone-12-mini/",
+      "snippet": "Nov 13, 2020 · Apple iPhone 12 mini specifications - Display: 5.4 inches Super Retina XDR OLED, Dolby Vision; Camera: 12 MP; …"
+    }
+  ]
+}

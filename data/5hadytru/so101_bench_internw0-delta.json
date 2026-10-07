@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "5hadytru/so101_bench_InternW0-Delta",
+  "slug": "5hadytru-so101_bench_internw0-delta",
+  "author": "5hadytru",
+  "url": "https://huggingface.co/5hadytru/so101_bench_InternW0-Delta",
+  "created_at": "2026-10-06T18:56:29.000Z",
+  "updated_at": "2026-10-06T19:18:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "so101",
+    "world-action-model",
+    "so101-bench",
+    "base_model:InternRobotics/InternW0-Delta-Base",
+    "base_model:finetune:InternRobotics/InternW0-Delta-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24846838828,
+  "storage_human": "24.8 GB",
+  "base_model": "InternRobotics/InternW0-Delta-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The latest results as they happen from Sporting Life's Fast Results ...",
+      "url": "https://www.sportinglife.com/racing/fast-results",
+      "snippet": "The latest results as they happen from Sporting Life's Fast Results service."
+    },
+    {
+      "title": "Today's Results - Horse Racing - Sporting Life",
+      "url": "https://www.sportinglife.com/racing/results",
+      "snippet": "Results and video replays from meetings including Leicester, Brighton, Huntingdon, Southwell, Galway, Auteuil, Lyon-Parilly, …"
+    },
+    {
+      "title": "The latest results as they happen from Sporting Life's Fast Results ...",
+      "url": "https://www.sportinglife.com/racing/fast-results/all",
+      "snippet": "The latest results as they happen from Sporting Life's Fast Results service."
+    },
+    {
+      "title": "Today's Results - Horse Racing - Sporting Life",
+      "url": "https://www.sportinglife.com/racing/results/search",
+      "snippet": "Results and video replays from meetings including Pontefract, Stratford, Yarmouth, Kempton, Wolverhampton, Fairyhouse, Killarney, …"
+    },
+    {
+      "title": "Horse Racing Betting Tips | Racecards & Results - Sporting Life",
+      "url": "https://www.sportinglife.com/racing",
+      "snippet": "All the latest race cards, results and news covering UK, Ireland and rest of world."
+    }
+  ]
+}

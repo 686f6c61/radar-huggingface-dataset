@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ayb-bh92/Ace-Step1.5",
+  "slug": "ayb-bh92-ace-step1-5",
+  "author": "ayb-bh92",
+  "url": "https://huggingface.co/ayb-bh92/Ace-Step1.5",
+  "created_at": "2026-10-06T19:05:21.000Z",
+  "updated_at": "2026-10-06T19:05:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "diffusers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10079024720,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AYBL | Vêtements de sport, vêtements actifs et athleisure - #AYBL",
+      "url": "https://fr.aybl.com/",
+      "snippet": "Conçue pour votre confort, notre sélection unique de vêtements de sport allie parfaitement coupe et fonctionnalité pour vous …"
+    },
+    {
+      "title": "Vêtements de sport et vêtements de sport pour femmes - AYBL FR",
+      "url": "https://fr.aybl.com/collections/new-releases",
+      "snippet": "Nouveau Achetez les dernières et meilleures lignes de vêtements de sport pour femmes en un seul endroit. Vous trouverez ici nos …"
+    },
+    {
+      "title": "AYBL | Gymwear, Activewear & Athleisure - #AYBL",
+      "url": "https://us.aybl.com/",
+      "snippet": "Designed with your comfort in mind, our unique selection of gymwear seamlessly combines fit with function for a confident workout. …"
+    },
+    {
+      "title": "AYB (FREYMING-MERLEBACH) Chiffre d'affaires, résultat, bilans sur ...",
+      "url": "https://www.societe.com/societe/ayb-948471792.html",
+      "snippet": "Jan 31, 2023 · AYB, société par actions simplifiée, immatriculée sous le SIREN 948471792, est en activité depuis 1 an. Installée à …"
+    },
+    {
+      "title": "Ayb — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ayb",
+      "snippet": "Linguistique Ayb est utilisé pour représenter le son d'une voyelle basse postérieure non arrondie (transcrite par [ɑ] dans l' API). 0:01 …"
+    }
+  ]
+}

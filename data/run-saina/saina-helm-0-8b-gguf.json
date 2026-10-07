@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "run-saina/saina-helm-0.8b-GGUF",
+  "slug": "run-saina-saina-helm-0-8b-gguf",
+  "author": "run-saina",
+  "url": "https://huggingface.co/run-saina/saina-helm-0.8b-GGUF",
+  "created_at": "2026-10-06T22:36:29.000Z",
+  "updated_at": "2026-10-06T22:52:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "classification",
+    "multi-label-classification",
+    "text-classification",
+    "base_model:run-saina/saina-helm-0.8b",
+    "base_model:quantized:run-saina/saina-helm-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 2350985195,
+  "storage_human": "2.4 GB",
+  "base_model": "run-saina/saina-helm-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run - Play it Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-run",
+      "snippet": "Play Run now at Coolmath Games. This game requires a huge amount of concentration and memorization as you progress through …"
+    },
+    {
+      "title": "i-Run",
+      "url": "https://www.i-run.fr/",
+      "snippet": "Sur i-Run, profitez de chaussures de sport et d'équipements de grandes marques : Nike, Asics, Adidas, Hoka, ..., pour le Running, …"
+    },
+    {
+      "title": "Run 3 Online",
+      "url": "https://run3.io/",
+      "snippet": "Run through outer space as a little critter in Run 3. Avoid falling into the open gap as you leap through each level."
+    },
+    {
+      "title": "Run 3 - Play Online at Coolmath Games",
+      "url": "https://www.coolmathgames.com/0-run-3",
+      "snippet": "Run 3 is a Coolmath Games classic where you swerve through space in a race to the finish. Play hundreds of new levels in this fast …"
+    },
+    {
+      "title": "RUN Assurance - Assurance Moto, Scooter & Quad en ligne",
+      "url": "https://www.runassurance.com/",
+      "snippet": "Pour offrir à chacun les garanties légales minimales pour prendre la route, RUN Assurance propose des formules tiers abordables et …"
+    }
+  ]
+}

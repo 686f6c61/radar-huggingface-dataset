@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/siglip-so400m-patch14-384",
+  "slug": "collectionstudio-siglip-so400m-patch14-384",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/siglip-so400m-patch14-384",
+  "created_at": "2026-10-06T18:52:43.000Z",
+  "updated_at": "2026-10-06T18:52:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "siglip",
+    "vision",
+    "arxiv:2303.15343",
+    "arxiv:2305.13035",
+    "arxiv:2209.06794",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 877960498,
+  "parameters_human": "878.0M",
+  "storage_bytes": 3512748954,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Superyacht Brokers - Luxury Yachts for Charter & Sale | Edmiston",
+      "url": "https://www.edmiston.com/",
+      "snippet": "Edmiston superyacht brokerage operates at the top of the luxury yachting market. We connect clients with the right yacht, the right …"
+    },
+    {
+      "title": "Internship Jobs, Employment in Edmiston, CA | Indeed",
+      "url": "https://www.indeed.com/q-Internship-l-Edmiston,-CA-jobs.html",
+      "snippet": "112 Internship jobs available in Edmiston, CA on Indeed.com. Apply to Sales Intern, Paid Intern, Human Resources Intern and more!"
+    },
+    {
+      "title": "Edmiston Brand Partnerships - Exclusive Superyacht Brokerage …",
+      "url": "https://www.edmiston.com/partnerships/",
+      "snippet": "Join Edmiston in Aspen during this winter for the St Regis World Snow Polo, VIP après-ski and luxury yacht charter planning. …"
+    },
+    {
+      "title": "Edmiston - LinkedIn",
+      "url": "https://www.linkedin.com/company/edmiston-&-company",
+      "snippet": "With offices in London, Monaco, New York, Miami, Newport and Mexico City, Edmiston is a company synonymous with …"
+    },
+    {
+      "title": "Intern Jobs, Employment in Edmiston, CA | Indeed.com",
+      "url": "https://www.indeed.com/q-intern-l-edmiston,-ca-jobs.html",
+      "snippet": "20 Intern jobs available in Edmiston, CA on Indeed.com. Apply to Intern, Pharmacy Intern, Licensed Clinical Social Worker and more!"
+    }
+  ]
+}

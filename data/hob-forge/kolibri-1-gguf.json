@@ -5,7 +5,7 @@
   "author": "Hob-forge",
   "url": "https://huggingface.co/Hob-forge/Kolibri-1-GGUF",
   "created_at": "2026-10-03T22:28:18.000Z",
-  "updated_at": "2026-10-06T02:29:28.000Z",
+  "updated_at": "2026-10-06T05:14:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,13 +32,13 @@
     "imatrix",
     "conversational"
   ],
-  "likes": 15,
+  "likes": 16,
   "downloads_30d": 11638,
   "trending_score": 14,
   "parameters": 78103074560,
   "parameters_human": "78.10B",
-  "storage_bytes": 287934115136,
-  "storage_human": "287.9 GB",
+  "storage_bytes": 316568132896,
+  "storage_human": "316.6 GB",
   "base_model": "Aleph-Alpha/Kolibri-1",
   "formats": [
     "gguf"

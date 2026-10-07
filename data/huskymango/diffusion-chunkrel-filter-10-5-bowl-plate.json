@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HuskyMango/diffusion-chunkrel-filter-10-5-bowl-plate",
+  "slug": "huskymango-diffusion-chunkrel-filter-10-5-bowl-plate",
+  "author": "HuskyMango",
+  "url": "https://huggingface.co/HuskyMango/diffusion-chunkrel-filter-10-5-bowl-plate",
+  "created_at": "2026-10-06T20:31:08.000Z",
+  "updated_at": "2026-10-06T20:32:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:HuskyMango/filter-10-5-bowl-plate",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 266748299,
+  "parameters_human": "266.7M",
+  "storage_bytes": 1067026232,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full Movie – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=full+movie",
+      "snippet": "Regarde les vidéos porno de Full Movie gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Free Porn videos in full HD | UPOX",
+      "url": "https://upox.com/",
+      "snippet": "Ultimate place for porn videos and movies in Full HD. Watch and stream sex movies for mobile, tablet and desktop"
+    },
+    {
+      "title": "Trending porn movies - Bang.com",
+      "url": "https://www.bang.com/movies",
+      "snippet": "Find the best trending porn movies on Bang!. Watch and download high-quality porn."
+    },
+    {
+      "title": "Free Movie Full Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/movie-full",
+      "snippet": "Check out free Movie Full porn videos on xHamster. Watch all Movie Full XXX vids right now!"
+    },
+    {
+      "title": "full adult movies - watch free xxx movies and download • fullxcinema",
+      "url": "https://fullxcinema.com/tag/full-adult-movies/",
+      "snippet": "watch and download free full adult movies,free full porn movies,HD adult sex movies with story,xxx porn parody movies,classic xxx …"
+    }
+  ]
+}

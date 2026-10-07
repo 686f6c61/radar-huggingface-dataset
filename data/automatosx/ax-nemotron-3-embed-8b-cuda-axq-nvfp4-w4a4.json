@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Nemotron-3-Embed-8B-CUDA-AXQ-NVFP4-W4A4",
+  "slug": "automatosx-ax-nemotron-3-embed-8b-cuda-axq-nvfp4-w4a4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-8B-CUDA-AXQ-NVFP4-W4A4",
+  "created_at": "2026-10-04T03:32:51.000Z",
+  "updated_at": "2026-10-06T21:00:44.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "ministral3",
+    "text-embeddings",
+    "retrieval",
+    "cuda",
+    "nvfp4",
+    "w4a4",
+    "compressed-tensors",
+    "axquant",
+    "development-preview",
+    "sentence-similarity",
+    "base_model:nvidia/Nemotron-3-Embed-8B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3-Embed-8B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 7952683008,
+  "parameters_human": "7.95B",
+  "storage_bytes": 5262730670,
+  "storage_human": "5.3 GB",
+  "base_model": "nvidia/Nemotron-3-Embed-8B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Sex Cams and Free Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "You can enjoy high-quality webcam sex live shows with stunning performers from around the world. Many users love the thrill of live …"
+    },
+    {
+      "title": "Free Live Adult Webcams | xhamsterlive.com",
+      "url": "https://xham.live/",
+      "snippet": "Browse through hundreds of models from Women, Men, Couples, and Transsexuals performing live sex shows 24/7. Besides …"
+    },
+    {
+      "title": "New Models Free Live Sex Cams with Naked Girls",
+      "url": "https://xham.live/girls/new",
+      "snippet": "Watch LIVE these hot babes in New Models sex cams. ️ Enter their naked chat now and enjoy the show for FREE! 🔥"
+    },
+    {
+      "title": "Sexcams gratuites en direct et chat avec des filles nues",
+      "url": "https://fr.stripchat.com/",
+      "snippet": "Regardez des modèles nus sur notre communauté de cams pornos en direct pour adultes. ️ C’est GRATUIT et sans inscription …"
+    },
+    {
+      "title": "live.sex | Adult live cams – live shows, interactive chat and instant ...",
+      "url": "https://m.live.sex/en/",
+      "snippet": "On Live.sex, nothing is fixed and nothing is pre-recorded. Every moment is built live, with a unique intensity that transforms the …"
+    }
+  ]
+}

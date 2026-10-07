@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "jayyun98/embeddinggemma-2-text-image-440m-bf16",
+  "slug": "jayyun98-embeddinggemma-2-text-image-440m-bf16",
+  "author": "jayyun98",
+  "url": "https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-bf16",
+  "created_at": "2026-10-06T18:35:40.000Z",
+  "updated_at": "2026-10-06T18:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "code",
+    "multimodal-embedding",
+    "image-feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 438760472,
+  "parameters_human": "438.8M",
+  "storage_bytes": 914459339,
+  "storage_human": "914 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4 أفلام عن الجنس يجب مشاهدتها وتتجاوز بعض الحدود في عام 2024",
+      "url": "https://superbe.com/ar/blog/4-must-see-films-about-sex-that-push-some-boundaries-in-2024",
+      "snippet": "في حين أنه من الصحيح أن المشاهد الجنسية أصبحت أقل تكرارًا في السنوات الأخيرة، فقد قدم عام 2024 بالفعل مجموعة متنوعة من الصور الجنسية، بدءًا من الرومانسية السحاقية العاطفية وحتى فيلم …"
+    },
+    {
+      "title": "أفضل الأفلام الإباحية في تاريخ السينما العالمية",
+      "url": "https://ar.inditics.com/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D8%A3%D9%81%D9%84%D8%A7%D9%85-%D8%A7%D9%84%D8%A5%D8%A8%D8%A7%D8%AD%D9%8A%D8%A9/",
+      "snippet": "يبلغ معدل دوران المنتجات الإباحية السنوي في العالم أكثر من 57 مليار دولار. ليس سرا أن معظم الرجال ينفقون هذه الأموال. حاولنا أن نفهم لماذا لا يزال مجتمع المرأة يتجنب هذا النوع من الفن. واليوم …"
+    },
+    {
+      "title": "تصنيف:أفلام إثارة جنسية حسب البلد - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AA%D8%B5%D9%86%D9%8A%D9%81:%D8%A3%D9%81%D9%84%D8%A7%D9%85_%D8%A5%D8%AB%D8%A7%D8%B1%D8%A9_%D8%AC%D9%86%D8%B3%D9%8A%D8%A9_%D8%AD%D8%B3%D8%A8_%D8%A7%D9%84%D8%A8%D9%84%D8%AF",
+      "snippet": "تصنيفات فرعية يشتمل هذا التصنيف على 11 تصنيفا فرعيا، من أصل 11."
+    },
+    {
+      "title": "أفلام_مثيرة - arabe.net",
+      "url": "https://arabe.net/c/%D8%A3%D9%81%D9%84%D8%A7%D9%85_%D9%85%D8%AB%D9%8A%D8%B1%D8%A9",
+      "snippet": "فيلم \"X\" يُعتبر فيلم \"X\" أحد أبرز إصدارات أفلام الرعب في 2022. يدور الفيلم حول مجموعة من صانعي الأفلام يتوجهون إلى مزرعة منعزلة لتصوير فيلم للكبار، لكن الأمور تأخذ منحىً مخيفًا عندما …"
+    },
+    {
+      "title": "أفضل 10 أفلام جنسية في كل العصور - Center for Applied Computing",
+      "url": "https://ubicomp.oulu.fi/archives/17113",
+      "snippet": "غالبًا ما يوصف فيلم وونغ كار واي “In the Mood for Love” بأنه تحفة فنية. إنها قطعة تاريخية ودراما رومانسية. تدور أحداث الفيلم في الستينيات و 1966 ، ويركز الفيلم على زوجين مرتبطين …"
+    }
+  ]
+}

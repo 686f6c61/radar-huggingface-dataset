@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "mehdi-hf/nemotron-asr-streaming-farsi",
+  "slug": "mehdi-hf-nemotron-asr-streaming-farsi",
+  "author": "mehdi-hf",
+  "url": "https://huggingface.co/mehdi-hf/nemotron-asr-streaming-farsi",
+  "created_at": "2026-10-03T02:59:15.000Z",
+  "updated_at": "2026-10-03T14:53:49.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "nemo",
+    "safetensors",
+    "nemotron3_5_asr",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "streaming-asr",
+    "cache-aware ASR",
+    "FastConformer",
+    "RNNT",
+    "NeMo",
+    "transformers",
+    "persian",
+    "farsi",
+    "fa",
+    "dataset:farsi-asr/farsi-asr-dataset",
+    "dataset:PerSets/youtube-persian-asr",
+    "dataset:PerSets/filimo-persian-asr",
+    "dataset:MahtaFetrat/Mana-TTS",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:finetune:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 723,
+  "trending_score": 10,
+  "parameters": 622544385,
+  "parameters_human": "622.5M",
+  "storage_bytes": 4981254988,
+  "storage_human": "5.0 GB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Persian)",
+      "metric": "WER (streaming, 1.12 s look-ahead)",
+      "value": 8.81
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS (Persian)",
+      "metric": "CER (streaming, 1.12 s look-ahead)",
+      "value": 2.94
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (Persian)",
+      "metric": "WER (streaming, 1.12 s look-ahead)",
+      "value": 19.12
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice 22.0 (Persian)",
+      "metric": "CER (streaming, 1.12 s look-ahead)",
+      "value": 5.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mehdi El Glaoui — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mehdi_El_Glaoui",
+      "snippet": "Mehdi El Mezouari El Glaoui, plus connu sous son seul prénom Mehdi, est un acteur et réalisateur franco - marocain 1, né le 26 mai …"
+    },
+    {
+      "title": "Prénom Mehdi (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/mehdi/prenom-5448",
+      "snippet": "Quelle est l'origine du prénom Mehdi ? Le prénom Mehdi est un dérivé du prénom arabe Mahdi. Mehdi peut aussi être considéré …"
+    },
+    {
+      "title": "Mehdi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mehdi",
+      "snippet": "Mehdi (Arabic: المَهْدِي, romanized: al-mehdi) is a masculine given name and surname of Arabic origin, meaning \"rightly guided\". [1] The …"
+    },
+    {
+      "title": "Mehdi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mehdi",
+      "snippet": "Mehdi Mehdi est un prénom masculin d'origine arabe qui signifie « le bien guidé »"
+    },
+    {
+      "title": "«Je vais te faire boire ses larmes» : derrière le suicide de Mehdi ...",
+      "url": "https://www.lefigaro.fr/faits-divers/je-vais-te-faire-boire-ses-larmes-derriere-le-suicide-de-mehdi-bassit-des-raids-de-cyberharcelement-revelent-l-envers-toxique-de-tiktok-20260314?msockid=18043ec0f54e6f04254f292af4f96e16",
+      "snippet": "Mar 14, 2026 · Dans la nuit du 18 au 19 juillet 2025, cet influenceur aux 2 millions d’abonnés, connu sous le nom de «Mehdi …"
+    }
+  ]
+}

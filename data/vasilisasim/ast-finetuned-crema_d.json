@@ -5,7 +5,7 @@
   "author": "VasilisAsim",
   "url": "https://huggingface.co/VasilisAsim/AST-finetuned-CREMA_D",
   "created_at": "2026-10-06T14:43:18.000Z",
-  "updated_at": "2026-10-06T14:44:24.000Z",
+  "updated_at": "2026-10-06T19:59:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 86193414,
   "parameters_human": "86.2M",
-  "storage_bytes": 344802344,
-  "storage_human": "345 MB",
+  "storage_bytes": 689604688,
+  "storage_human": "690 MB",
   "base_model": null,
   "formats": [
     "safetensors"

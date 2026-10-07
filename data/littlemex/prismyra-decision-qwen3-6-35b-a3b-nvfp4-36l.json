@@ -5,7 +5,7 @@
   "author": "littlemex",
   "url": "https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l",
   "created_at": "2026-10-05T16:25:06.000Z",
-  "updated_at": "2026-10-05T18:10:16.000Z",
+  "updated_at": "2026-10-06T06:46:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 3596444464,
   "parameters_human": "3.60B",

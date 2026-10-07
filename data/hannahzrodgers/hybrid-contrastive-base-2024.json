@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "hannahzrodgers/hybrid-contrastive-base-2024",
+  "slug": "hannahzrodgers-hybrid-contrastive-base-2024",
+  "author": "hannahzrodgers",
+  "url": "https://huggingface.co/hannahzrodgers/hybrid-contrastive-base-2024",
+  "created_at": "2026-10-07T00:40:39.000Z",
+  "updated_at": "2026-10-07T00:40:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

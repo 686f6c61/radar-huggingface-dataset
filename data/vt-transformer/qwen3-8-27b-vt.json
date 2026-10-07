@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vt-transformer/Qwen3.8-27B-vt",
+  "slug": "vt-transformer-qwen3-8-27b-vt",
+  "author": "vt-transformer",
+  "url": "https://huggingface.co/vt-transformer/Qwen3.8-27B-vt",
+  "created_at": "2026-10-07T00:10:16.000Z",
+  "updated_at": "2026-10-07T00:11:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 123580144,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VT Markets | VT Market - Plateforme Forex et CFD Fiable EU",
+      "url": "https://www.vtmarkets.com/fr-eu/",
+      "snippet": "Découvrez VT Markets | VT Market pour trader le Forex et les CFD. Profitez de spreads serrés, d'une exécution rapide et d'un …"
+    },
+    {
+      "title": "VT — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/VT",
+      "snippet": "Sigles ou abréviations VT est un sigle ou une abréviation qui peut désigner : Renault VT, un modèle de camion du constructeur …"
+    },
+    {
+      "title": "VT Logistics, créateur de transport",
+      "url": "https://vt-logistics.fr/",
+      "snippet": "Transport routier, express, international, logistique et devis en ligne. VT Logistics accompagne plus de 2 500 clients avec réactivité …"
+    },
+    {
+      "title": "VT OfficieL - YouTube",
+      "url": "https://www.youtube.com/channel/UCvEe10E02Qz4j0HrslWxHUQ",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "VT - Pause - YouTube",
+      "url": "https://www.youtube.com/watch?v=9h8sUPzl_8c",
+      "snippet": "Jan 9, 2020 · VT - Pause (Official Video)Instagram: @vt.stlShot By @nuagefilmsMixed by @jacklahess"
+    }
+  ]
+}

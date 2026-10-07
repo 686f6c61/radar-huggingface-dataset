@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "djchali/kenlang-gemma-4-12b-it-lora-v2",
+  "slug": "djchali-kenlang-gemma-4-12b-it-lora-v2",
+  "author": "djchali",
+  "url": "https://huggingface.co/djchali/kenlang-gemma-4-12b-it-lora-v2",
+  "created_at": "2026-10-06T18:42:43.000Z",
+  "updated_at": "2026-10-06T19:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "unsloth",
+    "gemma4",
+    "code",
+    "kenlang",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-12b-it",
+    "base_model:adapter:unsloth/gemma-4-12b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 294542842,
+  "storage_human": "295 MB",
+  "base_model": "unsloth/gemma-4-12b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

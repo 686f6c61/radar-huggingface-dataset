@@ -5,7 +5,7 @@
   "author": "zomi-language-ai",
   "url": "https://huggingface.co/zomi-language-ai/nllb-200-distilled-600M-finetuned-zol_Latn-to-en_Latn",
   "created_at": "2026-10-05T19:39:02.000Z",
-  "updated_at": "2026-10-06T02:07:35.000Z",
+  "updated_at": "2026-10-06T23:18:37.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 49316843602,
-  "storage_human": "49.3 GB",
+  "storage_bytes": 123284829413,
+  "storage_human": "123.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

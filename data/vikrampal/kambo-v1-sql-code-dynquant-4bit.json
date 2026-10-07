@@ -5,7 +5,7 @@
   "author": "VikramPal",
   "url": "https://huggingface.co/VikramPal/kambo-v1-sql-code-DynQuant-4bit",
   "created_at": "2026-10-05T17:39:12.000Z",
-  "updated_at": "2026-10-05T17:40:02.000Z",
+  "updated_at": "2026-10-06T07:21:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 26,
   "trending_score": 0,
   "parameters": 237958912,
   "parameters_human": "238.0M",

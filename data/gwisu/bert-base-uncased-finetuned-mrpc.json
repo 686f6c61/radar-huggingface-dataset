@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "gwisu/bert-base-uncased-finetuned-mrpc",
+  "slug": "gwisu-bert-base-uncased-finetuned-mrpc",
+  "author": "gwisu",
+  "url": "https://huggingface.co/gwisu/bert-base-uncased-finetuned-mrpc",
+  "created_at": "2026-10-05T13:08:18.000Z",
+  "updated_at": "2026-10-06T21:13:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 6131425937,
+  "storage_human": "6.1 GB",
+  "base_model": "bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chat with Joi | fictional movie - CrushOn.AI",
+      "url": "https://crushon.ai/character/7577af0a-dee1-402e-8239-38906921b4fe/chat",
+      "snippet": "Explore NSFW/SFW AI chat options, engage in AI roleplay, and build emotional connections in a secure, private space."
+    },
+    {
+      "title": "Chat with Joi | oc female - CrushOn.AI",
+      "url": "https://crushon.ai/character/9abac2e3-96bb-420b-8669-d8ef995d87b0/chat",
+      "snippet": "Explore NSFW/SFW AI chat options, engage in AI roleplay, and build emotional connections in a secure, private space."
+    },
+    {
+      "title": "Free Crush Joi Porn Videos (449) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/crush-joi",
+      "snippet": "Free crush joi porn: 449 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "CrushOn vs SpicyChat vs Joi: Which NSFW AI Chat Is Right for You …",
+      "url": "https://lovescape.com/blog/crushon-vs-spicychat-vs-joi-which-nsfw-ai-chat-is-right-for-you-in-2026/",
+      "snippet": "Aug 14, 2026 · CrushOn AI vs SpicyChat vs JoiAI compared on message limits, memory, media, and price. Find the right NSFW AI …"
+    },
+    {
+      "title": "CrushJoi - The joi Database",
+      "url": "https://www.the-joi-database.com/profile/3251f36f9f42cf91f18145e3",
+      "snippet": "Watch CrushJoi's anime and hentai joi videos on The joi Database! The best platform for ad free safe joi viewing."
+    }
+  ]
+}

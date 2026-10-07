@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Nemotron-3-Embed-1B-CUDA-AXQ-NVFP4-W4A4",
+  "slug": "automatosx-ax-nemotron-3-embed-1b-cuda-axq-nvfp4-w4a4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Nemotron-3-Embed-1B-CUDA-AXQ-NVFP4-W4A4",
+  "created_at": "2026-10-04T03:31:59.000Z",
+  "updated_at": "2026-10-06T21:00:38.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "ministral3",
+    "text-embeddings",
+    "retrieval",
+    "cuda",
+    "nvfp4",
+    "w4a4",
+    "compressed-tensors",
+    "axquant",
+    "development-preview",
+    "sentence-similarity",
+    "base_model:nvidia/Nemotron-3-Embed-1B-BF16",
+    "base_model:quantized:nvidia/Nemotron-3-Embed-1B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 1140918272,
+  "parameters_human": "1.14B",
+  "storage_bytes": 1044869478,
+  "storage_human": "1.0 GB",
+  "base_model": "nvidia/Nemotron-3-Embed-1B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Backgammon - Free Online Game | Daily Mail",
+      "url": "https://games.dailymail.co.uk/games/backgammon",
+      "snippet": "Backgammon and better than ever! Easy to play but hard to master, put your skills to the test in one of history’s oldest and most …"
+    },
+    {
+      "title": "Best Daily Quick Crossword - Free Online Game | Daily Mail",
+      "url": "https://games.dailymail.co.uk/games/daily-quick-crossword",
+      "snippet": "A free daily crossword that's not too difficult – just right for your coffee break. This fast and easy crossword is perfect for those who …"
+    },
+    {
+      "title": "Petrol price map",
+      "url": "https://i.dailymail.co.uk/i/html_modules/2025/Petrol_tracker/petrol-price-map_1.04/index.html",
+      "snippet": "The petrol price map Search radius: 3 miles"
+    },
+    {
+      "title": "Money | Mail Online",
+      "url": "https://creative.dailymail.co.uk/nationwide/moneyheader.html",
+      "snippet": "Your complete guide to personal finance and investing with news, predictions, advice, guides and opinion from the financial website …"
+    },
+    {
+      "title": "Mail Online | Media",
+      "url": "https://creative.dailymail.co.uk/mailonline_media/tc.html",
+      "snippet": "MailOnline - all the latest news, sport, showbiz, science and health stories from around the world from the Daily Mail and Mail on …"
+    }
+  ]
+}

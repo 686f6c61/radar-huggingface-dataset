@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.5-9b-uncensored-GGUF",
+  "slug": "mradermacher-qwen3-5-9b-uncensored-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.5-9b-uncensored-GGUF",
+  "created_at": "2026-10-06T23:36:07.000Z",
+  "updated_at": "2026-10-07T00:41:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.5",
+    "uncensored",
+    "coding",
+    "agentic",
+    "tool-use",
+    "lora",
+    "fine-tuned",
+    "text-generation",
+    "en",
+    "base_model:mshodiqul/qwen3.5-9b-uncensored",
+    "base_model:adapter:mshodiqul/qwen3.5-9b-uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967489024,
+  "storage_human": "83.0 GB",
+  "base_model": "mshodiqul/qwen3.5-9b-uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Read your sign's free horoscope today! Use these expert astrology predictions for your day, week, and month. What does your daily …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "如何评价Gemini的新UI? - 知乎",
+      "url": "https://www.zhihu.com/question/2040443986943424303",
+      "snippet": "May 20, 2026 · 如何评价Gemini的新UI? Google把这次的设计语言称作“Neural Expressive”（神经表达），整体感觉就是把那个让人 …"
+    },
+    {
+      "title": "谷歌 Gemini 3.5 Pro 发布推迟，技术未达预期，这会给 AI 行业竞争带 …",
+      "url": "https://www.zhihu.com/question/2061295674642129507",
+      "snippet": "Jul 16, 2026 · 这就是目前谷歌的现状。 当然我也不是说谷歌不行，我的意思是它在和ChatGPT以及Claude的竞争中，落入了下风， …"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

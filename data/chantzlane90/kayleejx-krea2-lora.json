@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/kayleejx-krea2-lora",
+  "slug": "chantzlane90-kayleejx-krea2-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/kayleejx-krea2-lora",
+  "created_at": "2026-10-06T21:35:53.000Z",
+  "updated_at": "2026-10-06T21:36:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234676912,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAD Fórum - Knihovna bloků - \"anglický dvorek\"",
+      "url": "https://www.cadforum.cz/catalog/?q=anglick%EF%BF%BD+dvorek",
+      "snippet": "CAD bloky je možno stahovat pro vlastní osobní a firemní použití v CAD aplikacích. Není dovoleno jejich další šíření formou …"
+    },
+    {
+      "title": "CAD/BIM Library of free blocks - manufactured by LIEBHERR - CAD …",
+      "url": "https://www.cadforum.cz/catalog_en/?vyr=LIEBHERR",
+      "snippet": "Jun 10, 2025 · Free CAD and BIM blocks library - content for AutoCAD, AutoCAD LT, Revit, Inventor, Fusion 360 and other 2D and …"
+    },
+    {
+      "title": "CAD Forum - Tips, Blocks, Utilities | AutoCAD, Inventor, Revit, Fusion ...",
+      "url": "https://www.cadforum.cz/",
+      "snippet": "Oct 7, 2026 · CAD Forum - free tips & tricks, blocks and discussion to AutoCAD, LT, Inventor, Revit, Fusion, 3ds Max and other …"
+    },
+    {
+      "title": "CAD Forum - CAD/BIM Library of free blocks - \"lag screws\"",
+      "url": "https://www.cadforum.cz/catalog_en/?q=lag+screws",
+      "snippet": "May 5, 2023 · Free CAD and BIM blocks library - content for AutoCAD, AutoCAD LT, Revit, Inventor, Fusion 360 and other 2D and …"
+    },
+    {
+      "title": "CAD Forum - Feature Recognition - automatic recognition of features …",
+      "url": "https://www.cadforum.cz/en/download.asp?fileID=1332",
+      "snippet": "Feature Recognition - automatic recognition of features on imported 3D models - for Inventor 2024-2015 (subscription)"
+    }
+  ]
+}

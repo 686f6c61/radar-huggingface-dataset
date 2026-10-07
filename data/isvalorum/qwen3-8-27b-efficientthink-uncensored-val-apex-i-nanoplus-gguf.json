@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF",
+  "slug": "isvalorum-qwen3-8-27b-efficientthink-uncensored-val-apex-i-nanoplus-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF",
+  "created_at": "2026-10-06T19:40:00.000Z",
+  "updated_at": "2026-10-07T02:50:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "quantization",
+    "val-apex-i",
+    "apex",
+    "apex-quant",
+    "apex-i-nanoplus",
+    "nanoplus",
+    "qwen",
+    "qwen3.8",
+    "reasoning",
+    "chain-of-thought",
+    "dflash2",
+    "speculative-decoding",
+    "simpo",
+    "uncensored",
+    "imatrix",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "base_model:quantized:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 26652225256,
+  "storage_human": "26.7 GB",
+  "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "18+ Teen Porn Videos - Free Full-Length HD | Pornhub",
+      "url": "https://www.pornhub.com/categories/teen",
+      "snippet": "Browse a massive collection of free 18+ teen porn in full HD. Fresh scenes added daily featuring your favorite young adult stars."
+    },
+    {
+      "title": "Free Porn Videos & Porn Movies | Sex.com",
+      "url": "https://www.sex.com/en",
+      "snippet": "Explore our collection of free porn videos and movies! Enjoy high quality content with the hottest porn stars and sexy amateurs."
+    },
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | Thumbzilla",
+      "url": "https://www.thumbzilla.com/",
+      "snippet": "Thumbzilla is your home for free XXX porn videos. Sit back and watch all of the unlimited, high quality HD porn your heart desires. …"
+    },
+    {
+      "title": "Free XXX Sex Movies Recommended for You | Redtube Free Porn",
+      "url": "https://www.redtube.com/recommended",
+      "snippet": "Don't waste your time sifting through thousands of Sex Videos online, watch this curated list of Free Porno Movies picked just for you …"
+    },
+    {
+      "title": "Film x - vidéo porno et sexe en streaming gratuit | Pornovore",
+      "url": "https://pornovore.fr/",
+      "snippet": "A propos Retrouvez chaque jour de nouvelles vidéos porno en streaming à regarder gratuitement sur pornovore.fr depuis votre …"
+    }
+  ]
+}

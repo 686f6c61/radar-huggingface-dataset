@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "florentin-one/Clarity-MR-1",
+  "slug": "florentin-one-clarity-mr-1",
+  "author": "florentin-one",
+  "url": "https://huggingface.co/florentin-one/Clarity-MR-1",
+  "created_at": "2025-07-05T07:51:26.000Z",
+  "updated_at": "2026-10-07T01:15:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clarity_mr1",
+    "text-generation",
+    "reasoning",
+    "multi-step",
+    "planning",
+    "clarity",
+    "orchestration",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 572298611691,
+  "storage_human": "572.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Florentin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Florentin",
+      "snippet": "François Mitterrand était surnommé le « Florentin » en référence à l'art de l'esquive, illustré sous la Renaissance par des natifs de …"
+    },
+    {
+      "title": "Florentins : la meilleure recette - Marmiton",
+      "url": "https://www.marmiton.org/recettes/recette_florentins_13727.aspx",
+      "snippet": "Recette Florentins : la meilleure recette rapide et facile : 25 pièces environ, 25 min de préparation. Notée 4.8/5 par 59 membres …"
+    },
+    {
+      "title": "Découvrez l’origine et la recette traditionnelle des florentins, le ...",
+      "url": "https://www.laminutegourmandeparis.com/post/florentin-recette-origine",
+      "snippet": "Dec 16, 2024 · Selon cette légende, ce biscuit aurait été inventé par un pâtissier florentin souhaitant rendre hommage à la ville …"
+    },
+    {
+      "title": "Prénom Florentin : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/florentin-40963",
+      "snippet": "Signification et étymologie du prénom Florentin Ce prénom, écrit Florentin ou Florentino, est d'origine arabe et latin. Il est dérivé de « …"
+    },
+    {
+      "title": "Florentins traditionnels : la recette facile - Journal des Femmes Cuisiner",
+      "url": "https://cuisine.journaldesfemmes.fr/recette/346651-florentins",
+      "snippet": "Jun 9, 2025 · Les Florentins sont des petits gâteaux italiens croustillants et délicats, parfaits pour accompagner un café ou terminer …"
+    }
+  ]
+}

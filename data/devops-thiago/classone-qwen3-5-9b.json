@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "devops-thiago/classone-qwen3.5-9b",
+  "slug": "devops-thiago-classone-qwen3-5-9b",
+  "author": "devops-thiago",
+  "url": "https://huggingface.co/devops-thiago/classone-qwen3.5-9b",
+  "created_at": "2026-10-06T23:04:36.000Z",
+  "updated_at": "2026-10-07T01:55:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "system-1",
+    "rlcd",
+    "proper-scoring-rules",
+    "gemma",
+    "classone",
+    "classification",
+    "text-classification",
+    "arxiv:2609.29429",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8392695024,
+  "parameters_human": "8.39B",
+  "storage_bytes": 16947097350,
+  "storage_human": "16.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duolingo - The world’s most popular way to learn",
+      "url": "https://www.duolingo.com/",
+      "snippet": "Learn languages by playing a game. It's 100% free, fun, and scientifically proven to work."
+    },
+    {
+      "title": "Duolingo - La forma más popular del mundo para aprender",
+      "url": "https://es.duolingo.com/",
+      "snippet": "Cursos gratis, divertidos y efectivos de idiomas y más. Aprende con lecciones rápidas y basadas en la ciencia, personalizadas para ti."
+    },
+    {
+      "title": "Duolingo - Ứng dụng học tập phổ biến nhất thế giới",
+      "url": "https://vi.duolingo.com/",
+      "snippet": "miễn phí. vui nhộn. hiệu quả Học cùng Duolingo rất vui nhộn, các nghiên cứu đã chứng minh ứng dụng thật sự hiệu quả! Các bài …"
+    },
+    {
+      "title": "Duolingo - A világ legnépszerűbb nyelvtanulási módja",
+      "url": "https://hu.duolingo.com/",
+      "snippet": "Tanulj meg játszás közben nyelveket! 100%-ig ingyenes, szórakoztató, a működése pedig tudományosan igazolt."
+    },
+    {
+      "title": "Duolingo",
+      "url": "https://ja.duolingo.com/",
+      "snippet": "duolingo english test Duolingo English Testは、便利でスピーディーかつ手頃な英語力認定テストです。 最新の評価科学とAIを統合 …"
+    }
+  ]
+}

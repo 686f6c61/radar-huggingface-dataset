@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-MLX-AXQ-MXFP8-MTP",
+  "slug": "automatosx-ax-nemotron-3-5-lightning-30b-a3b-mlx-axq-mxfp8-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Nemotron-3.5-Lightning-30B-A3B-MLX-AXQ-MXFP8-MTP",
+  "created_at": "2026-10-04T08:51:03.000Z",
+  "updated_at": "2026-10-06T21:01:07.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "nemotron_h",
+    "axquant",
+    "mxfp",
+    "mtp",
+    "text-generation",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:quantized:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 31577935872,
+  "parameters_human": "31.58B",
+  "storage_bytes": 35602483673,
+  "storage_human": "35.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Box Mgmt | Talent Management & Content Production",
+      "url": "https://www.blackboxmgmt.com/",
+      "snippet": "Black Box is a talent management and content production company based in Los Angeles. The company was founded by Mike Dill …"
+    },
+    {
+      "title": "Empowering Growth through Global Management | Black Box",
+      "url": "https://www.blackbox.com/discover-bb/global-management",
+      "snippet": "Empower your growth journey with the Global Management of Blackbox. Beyond borders, discover the keys to success in the global …"
+    },
+    {
+      "title": "Global IT Products & Network Solutions Provider | Black Box",
+      "url": "https://www.blackbox.com/",
+      "snippet": "Fuel productivity, gain cost efficiencies, and scale up business opportunities with IT solutions designed to help you build, manage, …"
+    },
+    {
+      "title": "RCMP charge Calgary man for allegedly running $164M Ponzi scheme",
+      "url": "https://www.cbc.ca/news/canada/calgary/164-million-fraud-laundering-9.7328315",
+      "snippet": "Sep 1, 2026 · Police allege that between March 2020 and April 2024 Craig Michael Thompson, 49, misappropriated the funds via his …"
+    },
+    {
+      "title": "Calgary man charged in $164 million Ponzi scheme",
+      "url": "https://rcmp.ca/en/news/2026/09/4356512",
+      "snippet": "Sep 1, 2026 · Between March 2020 and April 2024, the accused is alleged to have misappropriated more than $164 million in …"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "vanvalenlab/deepcell-types",
+  "slug": "vanvalenlab-deepcell-types",
+  "author": "vanvalenlab",
+  "url": "https://huggingface.co/vanvalenlab/deepcell-types",
+  "created_at": "2026-10-06T19:01:17.000Z",
+  "updated_at": "2026-10-06T19:30:48.000Z",
+  "license": "modified-apache-2.0-noncommercial",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20849567,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

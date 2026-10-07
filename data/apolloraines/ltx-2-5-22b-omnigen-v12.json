@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/LTX-2.5-22b-OmniGen-v12",
+  "slug": "apolloraines-ltx-2-5-22b-omnigen-v12",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/LTX-2.5-22b-OmniGen-v12",
+  "created_at": "2026-10-06T23:30:22.000Z",
+  "updated_at": "2026-10-07T02:22:21.000Z",
+  "license": "ltx-2.x-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "video-generation",
+    "ltx-video",
+    "diffusion",
+    "weight-merge",
+    "text-to-video",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 18624033216,
+  "storage_human": "18.6 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

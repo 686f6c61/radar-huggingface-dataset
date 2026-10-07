@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/humanizer-i1-GGUF",
   "created_at": "2026-10-03T23:13:45.000Z",
-  "updated_at": "2026-10-04T01:11:45.000Z",
+  "updated_at": "2026-10-06T23:40:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -18,12 +18,12 @@
     "transformers",
     "gguf",
     "humanizer",
+    "safetensors",
     "text-rewriting",
     "rewriting",
     "paraphrase",
     "style-transfer",
     "llama.cpp",
-    "mlx",
     "gemma4",
     "en",
     "zh",
@@ -34,8 +34,8 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 0,
-  "downloads_30d": 3705,
+  "likes": 2,
+  "downloads_30d": 3806,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
@@ -44,7 +44,7 @@
   "base_model": "jialinyyzz/humanizer",
   "formats": [
     "gguf",
-    "mlx"
+    "safetensors"
   ],
   "is_conversational": false,
   "gated": false,

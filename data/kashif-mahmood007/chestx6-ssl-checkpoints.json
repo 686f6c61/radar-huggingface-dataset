@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kashif-Mahmood007/chestx6-ssl-checkpoints",
+  "slug": "kashif-mahmood007-chestx6-ssl-checkpoints",
+  "author": "Kashif-Mahmood007",
+  "url": "https://huggingface.co/Kashif-Mahmood007/chestx6-ssl-checkpoints",
+  "created_at": "2026-08-05T17:02:22.000Z",
+  "updated_at": "2026-10-07T01:15:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "chest-xray",
+    "self-supervised-learning",
+    "contrastive-learning",
+    "masked-autoencoder",
+    "image-classification",
+    "chestx6",
+    "doi:10.57967/hf/10799",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6880069033,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nicotine (personnage bd)",
+      "url": "https://www.gaudry.be/bd/asterix/personnages/nicotine.html",
+      "snippet": "Jun 6, 2020 · Nicotine est l'épouse de Gueuselambix et la caricature d'Annie Cordy. La nicotine est un des composants de la …"
+    },
+    {
+      "title": "Astérix chez les Belges — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ast%C3%A9rix_chez_les_Belges",
+      "snippet": "Astérix chez les Belges est le vingt-quatrième album de la bande dessinée Astérix, publié en 1979, scénarisé par René Goscinny et …"
+    },
+    {
+      "title": "La caricature dans Astérix : Annie Cordy",
+      "url": "http://www.mage.fst.uha.fr/asterix/caricat/cordy.html",
+      "snippet": "Chanteuse de variété belge, devenue ensuite commédienne dans des téléfilms. Annie Cordy est caricaturée dans Astérix chez les …"
+    },
+    {
+      "title": "Astérix chez les Belges : personnages - Université de Haute-Alsace",
+      "url": "http://www.mage.fst.uha.fr/asterix/belges/perso.html",
+      "snippet": "Dernière mise à jour : 20 décembre 2002."
+    },
+    {
+      "title": "Astérix chez les Belges",
+      "url": "https://asterix.com/albums/les-bandes-dessinees/asterix-chez-les-belges/",
+      "snippet": "Astérix chez les Belges est un album qui ne manque pas d’atouts ! Mais Astérix chez les Belges, c’est aussi des apparitions …"
+    }
+  ]
+}

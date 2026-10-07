@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "bongaswonga/cs329x-personalized-dpo",
+  "slug": "bongaswonga-cs329x-personalized-dpo",
+  "author": "bongaswonga",
+  "url": "https://huggingface.co/bongaswonga/cs329x-personalized-dpo",
+  "created_at": "2026-10-06T23:59:24.000Z",
+  "updated_at": "2026-10-06T23:59:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5022460,
+  "storage_human": "5 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

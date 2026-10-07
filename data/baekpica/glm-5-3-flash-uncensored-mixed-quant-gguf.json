@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF",
+  "slug": "baekpica-glm-5-3-flash-uncensored-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/GLM-5.3-Flash-Uncensored-Mixed-Quant-GGUF",
+  "created_at": "2026-10-07T00:18:52.000Z",
+  "updated_at": "2026-10-07T02:44:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mixed-quant",
+    "glm5-next",
+    "moe",
+    "dgx-spark",
+    "ds4",
+    "embedded-mtp",
+    "image-text-to-text",
+    "base_model:orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+    "base_model:quantized:orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 563627008,
+  "parameters_human": "563.6M",
+  "storage_bytes": 95047312224,
+  "storage_human": "95.0 GB",
+  "base_model": "orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avis de Free | Lisez les avis marchands de www.free.fr",
+      "url": "https://fr.trustpilot.com/review/www.free.fr",
+      "snippet": "Pour protéger l’intégrité de la plateforme, chaque avis, qu’il soit vérifié ou non, est analysé par notre logiciel automatisé 24 h/24 et 7 …"
+    },
+    {
+      "title": "Avis Free 2026 : 48 000 retours clients sur la fibre et le mobile",
+      "url": "https://www.echosdunet.net/free/avis",
+      "snippet": "Jun 26, 2026 · Free vaut-il le coup en 2026 ? Note moyenne, avis sur la Freebox, les forfaits mobile et le service client : 48 000 …"
+    },
+    {
+      "title": "Avis Free : note moyenne de 3,9/5 selon les clients (octobre 2026)",
+      "url": "https://selectra.info/telecom/fournisseurs/free/avis",
+      "snippet": "Aug 20, 2026 · Le service client Free recueille des avis contrastés : certains saluent des conseillers disponibles et leur bonne …"
+    },
+    {
+      "title": "Avis free.fr | Tous les avis clients pour free.fr",
+      "url": "https://www.avis-verifies.com/avis-clients/free.fr",
+      "snippet": "Oct 20, 2023 · Quelques clients signalent encore des zones où le réseau capte moins bien et des coupures ponctuelles, mais …"
+    },
+    {
+      "title": "Avis Free : que vaut l'opérateur en 2026 (forfait, box, fibre...) ?",
+      "url": "https://www.monpetitforfait.com/free-mobile/avis-free-mobile",
+      "snippet": "Aug 21, 2026 · Consultez tous les avis des clients et abonnés sur l'opérateur Free mobile. Découvrez les avantages et les …"
+    }
+  ]
+}

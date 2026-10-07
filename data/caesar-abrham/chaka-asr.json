@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "caesar-abrham/Chaka-ASR",
+  "slug": "caesar-abrham-chaka-asr",
+  "author": "caesar-abrham",
+  "url": "https://huggingface.co/caesar-abrham/Chaka-ASR",
+  "created_at": "2026-09-07T13:04:58.000Z",
+  "updated_at": "2026-10-06T22:50:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "amharic",
+    "speech-recognition",
+    "ctc",
+    "leyu",
+    "am",
+    "base_model:badrex/Ethio-ASR-amharic",
+    "base_model:finetune:badrex/Ethio-ASR-amharic",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 606098651,
+  "parameters_human": "606.1M",
+  "storage_bytes": 2424499668,
+  "storage_human": "2.4 GB",
+  "base_model": "badrex/Ethio-ASR-amharic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAESAR (artillerie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/CAESAR_(artillerie)",
+      "snippet": "Le CAESAR (ou Caesar, ou parfois CAESAr, acronyme de « camion équipé d’un système d’artillerie ») est un canon automoteur …"
+    },
+    {
+      "title": "Céramiques Caesar | La « culture de la matière » particulière qui nous ...",
+      "url": "https://www.caesar.it/fr/",
+      "snippet": "Caesar s’inspire de la beauté des surfaces en marbre dans l’art et l’architecture pour ses collections de grès cérame effet marbre. S’il …"
+    },
+    {
+      "title": "Julius Caesar - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Julius_Caesar",
+      "snippet": "Caesar rose to become one of the most powerful politicians in the Roman Republic through a string of military victories in the Gallic …"
+    },
+    {
+      "title": "Jules César — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Jules_C%C3%A9sar",
+      "snippet": "Issu d’une famille patricienne comptant plusieurs consuls (Sextus Julius Caesar II et Sextus Julius Caesar III), il exerce au cours de …"
+    },
+    {
+      "title": "Gaius Iulius Caesar – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Gaius_Iulius_Caesar",
+      "snippet": "Um die Belagerung der Stadt Mytilene auf der Insel Lesbos zu beschleunigen, wurde Caesar an den Hof von König Nikomedes IV. …"
+    }
+  ]
+}

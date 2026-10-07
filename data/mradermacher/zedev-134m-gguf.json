@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Zedev-134m-GGUF",
+  "slug": "mradermacher-zedev-134m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Zedev-134m-GGUF",
+  "created_at": "2026-10-06T23:31:02.000Z",
+  "updated_at": "2026-10-06T23:32:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "causal-lm",
+    "base-model",
+    "text-generation",
+    "small-language-model",
+    "en",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "dataset:teknium/OpenHermes-2.5",
+    "base_model:Meridian-MRM/Zedev-134m",
+    "base_model:quantized:Meridian-MRM/Zedev-134m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134467968,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1458280320,
+  "storage_human": "1.5 GB",
+  "base_model": "Meridian-MRM/Zedev-134m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TSFM-ai/chronos-bolt-tiny-onnx-browser",
+  "slug": "tsfm-ai-chronos-bolt-tiny-onnx-browser",
+  "author": "TSFM-ai",
+  "url": "https://huggingface.co/TSFM-ai/chronos-bolt-tiny-onnx-browser",
+  "created_at": "2026-10-06T21:48:20.000Z",
+  "updated_at": "2026-10-06T21:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "browser",
+    "time-series",
+    "time-series-forecasting",
+    "base_model:amazon/chronos-bolt-tiny",
+    "base_model:quantized:amazon/chronos-bolt-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34801999,
+  "storage_human": "35 MB",
+  "base_model": "amazon/chronos-bolt-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premium Trans Escorts (TS/TV) – Aberdeen UK | BirchPlace",
+      "url": "https://birchplace.com/trans/united-kingdom/aberdeen",
+      "snippet": "Discover Premium Trans Escorts (TS/TV) in Aberdeen, United Kingdom. Real, verified ads – browse, connect & enjoy. Over 36 …"
+    },
+    {
+      "title": "TS & Transsexual Aberdeen Escorts, Shemale escorts - SimpleEscort",
+      "url": "https://uk.simpleescort.com/escorts/aberdeen/tag/transsexual/",
+      "snippet": "Browse verified TS escorts across the UK. Explore towns and cities near you on our fast, seamless, and secure platform in Aberdeen"
+    },
+    {
+      "title": "Transsexual & TS Escorts - Aberdeen - Vivastreet",
+      "url": "https://www.vivastreet.co.uk/trans-escorts/aberdeen",
+      "snippet": "Looking for ts escorts Aberdeen and transsexual escorts, tv escorts, or Shemales? Our service has it all. Fulfill your fantasies now."
+    },
+    {
+      "title": "Shemale and TS escorts Aberdeen | Erobella UK",
+      "url": "https://erobella.com/uk/escort/trans/aberdeen/",
+      "snippet": "If you’re after an unforgettable night then look no further! Browse hundreds of fabulous trans escort profiles in Aberdeen on Erobella. 🏳️‍🌈"
+    },
+    {
+      "title": "Aberdeen Trans Escorts ⋆ Trans With a Room",
+      "url": "https://transwitharoom.com/aberdeen/",
+      "snippet": "[+18] THE MOST COMPLETE SITTS and shemale escorts in Aberdeen! Sex goddesses await you for unforgettable moments! …"
+    }
+  ]
+}

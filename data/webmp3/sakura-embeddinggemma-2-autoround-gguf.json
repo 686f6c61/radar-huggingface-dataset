@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF",
+  "slug": "webmp3-sakura-embeddinggemma-2-autoround-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF",
+  "created_at": "2026-10-06T21:50:14.000Z",
+  "updated_at": "2026-10-06T21:58:17.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "embedding",
+    "sentence-similarity",
+    "feature-extraction",
+    "llama.cpp",
+    "autoround",
+    "intel",
+    "matryoshka",
+    "en",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 168595552,
+  "storage_human": "169 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

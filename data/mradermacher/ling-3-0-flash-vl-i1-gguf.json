@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ling-3.0-flash-VL-i1-GGUF",
+  "slug": "mradermacher-ling-3-0-flash-vl-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-VL-i1-GGUF",
+  "created_at": "2026-10-05T05:06:24.000Z",
+  "updated_at": "2026-10-07T01:05:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:inclusionAI/Ling-3.0-flash-VL",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-VL",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1898,
+  "trending_score": 0,
+  "parameters": 124414211552,
+  "parameters_human": "124.41B",
+  "storage_bytes": 1255726805696,
+  "storage_human": "1255.7 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Chris Taylor - Global transformation focused CDIO | LinkedIn",
+      "url": "https://fr.linkedin.com/in/chris-taylor-digital",
+      "snippet": "Global transformation focused CDIO · International senior executive motivated by transformational change. Focused on driving …"
+    },
+    {
+      "title": "Yasser Shaker - CEO Orange Middle East and Africa | LinkedIn",
+      "url": "https://fr.linkedin.com/in/yasser-shaker-5031766",
+      "snippet": "CEO Orange Middle East and Africa · At Orange MEA, we’re driving digital and financial inclusion across our countries in Africa and …"
+    },
+    {
+      "title": "Dominique Tchimbakala - Freelance | LinkedIn",
+      "url": "https://fr.linkedin.com/in/dominique-tchimbakala-08930b12",
+      "snippet": "Journaliste avec 26 ans d&#39;expérience, ex présentatrice du JT TV5MONDE, France 2, France 5… · Expérience : Freelance · …"
+    },
+    {
+      "title": "Yann FERGUSON - Inria Directeur scientifique du LaborIA | LinkedIn",
+      "url": "https://fr.linkedin.com/in/yann-ferguson-09a732100",
+      "snippet": "Inria Directeur scientifique du LaborIA · Je suis docteur en sociologie à Inria et chercheur associé au CERTOP (Université Jean …"
+    }
+  ]
+}

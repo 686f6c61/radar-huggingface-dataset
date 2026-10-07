@@ -5,7 +5,7 @@
   "author": "AutomatosX",
   "url": "https://huggingface.co/AutomatosX/AX-Qwen3.8-Flash-Next-MLX-AXQ-MXFP8-MTP",
   "created_at": "2026-10-04T20:56:26.000Z",
-  "updated_at": "2026-10-04T21:06:48.000Z",
+  "updated_at": "2026-10-06T21:01:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 177392830611,
   "parameters_human": "177.39B",

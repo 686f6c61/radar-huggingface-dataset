@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Shayde182/rhymeai-gemma-4-gguf",
+  "slug": "shayde182-rhymeai-gemma-4-gguf",
+  "author": "Shayde182",
+  "url": "https://huggingface.co/Shayde182/rhymeai-gemma-4-gguf",
+  "created_at": "2026-07-08T01:11:02.000Z",
+  "updated_at": "2026-10-06T22:32:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "lyrics",
+    "songwriting",
+    "on-device",
+    "llama.cpp",
+    "base_model:unsloth/gemma-4-E2B-it",
+    "base_model:quantized:unsloth/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 25337856,
+  "parameters_human": "25.3M",
+  "storage_bytes": 21275962528,
+  "storage_human": "21.3 GB",
+  "base_model": "unsloth/gemma-4-E2B-it, unsloth/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacquier — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacquier",
+      "snippet": "Le fruit du jacquier est la pomme jaque (ou jacque, en créole : petit jaque, ti'jaque ou ti'jac). Il s'agit d'une polydrupe pesant …"
+    },
+    {
+      "title": "Le ti jacques, de l’arbre à l’assiette : histoire et recette du carry",
+      "url": "https://www.reunionnaisdumonde.com/magazine/articles-membres/le-ti-jacques-de-l-arbre-a-l-assiette-histoire-et-recette-du-carry/",
+      "snippet": "Sep 29, 2014 · Mais attention, préparer un jacques vert, alors appelé ti jacques, n’est pas donné à tout le monde ! Le fruit qu’on …"
+    },
+    {
+      "title": "Fruit du Jacquier aussi appelé Jacque ou ti'Jacque",
+      "url": "https://www.papillesetpupilles.fr/2016/07/fruit-du-jacquier-jacque-ou-tijacque.html/",
+      "snippet": "Découvrez le fruit du jacquier, sucré ou salé, et ses usages en cuisine. Entre douceur exotique et alternative végétale surprenante, …"
+    },
+    {
+      "title": "Recette Cari Ti’Jacques Boucané - Ile de la Réunion",
+      "url": "https://ile-de-la-reunion.net/recette-cari-tijacques-boucane/",
+      "snippet": "Comme le cari poulet ou encore le Rougail saucisse le cari Ti’ jacque boucané est une recette incontournable à l’ile de la Réunion. …"
+    },
+    {
+      "title": "Cari ti' jacque boucané-Recette Réunion (974) - Recettes de Papounet",
+      "url": "https://recettes-papounet.com/2021/09/cari-ti-jacque-boucane-recette-reunion-974.html",
+      "snippet": "Le ti jacque cuisiné avec du boucané est la version la plus populaire de cette recette qui peut aussi se préparer avec des saucisses, …"
+    }
+  ]
+}

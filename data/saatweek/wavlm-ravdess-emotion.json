@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saatweek/wavlm-ravdess-emotion",
+  "slug": "saatweek-wavlm-ravdess-emotion",
+  "author": "saatweek",
+  "url": "https://huggingface.co/saatweek/wavlm-ravdess-emotion",
+  "created_at": "2026-10-06T22:59:43.000Z",
+  "updated_at": "2026-10-06T22:59:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "wavlm",
+    "speech-emotion-recognition",
+    "ravdess",
+    "frozen-encoder",
+    "custom-classifier",
+    "audio-classification",
+    "en",
+    "arxiv:2110.13900",
+    "base_model:microsoft/wavlm-base-plus",
+    "base_model:finetune:microsoft/wavlm-base-plus",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 379155764,
+  "storage_human": "379 MB",
+  "base_model": "microsoft/wavlm-base-plus",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech emotion classification",
+      "dataset": "RAVDESS speech, four held-out actors",
+      "metric": "Accuracy",
+      "value": 0.7166666666666667
+    },
+    {
+      "task": "Speech emotion classification",
+      "dataset": "RAVDESS speech, four held-out actors",
+      "metric": "Macro F1",
+      "value": 0.7038388576974692
+    }
+  ],
+  "sources": []
+}

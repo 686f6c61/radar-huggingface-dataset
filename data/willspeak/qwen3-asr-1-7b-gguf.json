@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "willspeak/Qwen3-ASR-1.7B-gguf",
+  "slug": "willspeak-qwen3-asr-1-7b-gguf",
+  "author": "willspeak",
+  "url": "https://huggingface.co/willspeak/Qwen3-ASR-1.7B-gguf",
+  "created_at": "2026-10-07T00:21:32.000Z",
+  "updated_at": "2026-10-07T00:40:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:quantized:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038078608,
+  "parameters_human": "2.04B",
+  "storage_bytes": 7793712032,
+  "storage_human": "7.8 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecole Directe Plus",
+      "url": "https://ecole-directe.plus/login",
+      "snippet": "Ecole Directe Plus est une version améliorée d'EcoleDirecte (non-affiliée), offrant une meilleure expérience avec une interface …"
+    },
+    {
+      "title": "EcoleDirecte",
+      "url": "https://www.ecoledirecte.com/plus",
+      "snippet": "EcoleDirecte : Bienvenue sur le site internet EcoleDirecte. Espace famille, élève, personnel, enseignant ..."
+    },
+    {
+      "title": "ÉcoleDirecte ++ – Adoptez cette extension pour Firefox (fr)",
+      "url": "https://addons.mozilla.org/fr/firefox/addon/ecoledirecte-plus-plus/",
+      "snippet": "Jan 4, 2022 · Cette extension permet de forcer EcoleDirecte à afficher les données sur vos notes que votre établissement à …"
+    },
+    {
+      "title": "EcoleDirecte - Administration",
+      "url": "https://admin.ecoledirecte.com/login",
+      "snippet": "Mot de passe oublié ?"
+    },
+    {
+      "title": "Faire un retour • Ecole Directe Plus",
+      "url": "https://ecole-directe.plus/feedback",
+      "snippet": "Ecole Directe Plus est une version améliorée d'EcoleDirecte (non-affiliée), offrant une meilleure expérience avec une interface …"
+    }
+  ]
+}

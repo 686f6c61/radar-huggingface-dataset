@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jeff-rp/so101_pickplace_plug_policy",
+  "slug": "jeff-rp-so101_pickplace_plug_policy",
+  "author": "jeff-rp",
+  "url": "https://huggingface.co/jeff-rp/so101_pickplace_plug_policy",
+  "created_at": "2026-10-06T18:38:40.000Z",
+  "updated_at": "2026-10-06T18:39:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:jeff-rp/so101_pickplace_plug",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JEF Chaussures - Chaussures pour femme, homme et enfant",
+      "url": "https://www.jefchaussures.com/",
+      "snippet": "Découvrez notre large sélection de chaussures pour femmes, hommes et enfants. Alliant style, confort et qualité, toutes nos …"
+    },
+    {
+      "title": "Chaussures homme - JEF Chaussures",
+      "url": "https://www.jefchaussures.com/l-chaussures-homme.html",
+      "snippet": "Livraison en 48H, demain à vos pieds ! Découvrez nos collections de chaussures pour homme. Chez JEF Chaussures, la livraison et …"
+    },
+    {
+      "title": "Chocolatier - Jeff de Bruges",
+      "url": "https://www.jeff-de-bruges.com/",
+      "snippet": "Chez Jeff de Bruges, la qualité, la créativité, le savoir-faire et le plaisir sont nos maitres-mots afin d’offrir à nos clients l’expérience la …"
+    },
+    {
+      "title": "Boutique en ligne officielle | Jeff",
+      "url": "https://jeff.be/fr/",
+      "snippet": "Découvrez notre magasin de vetement Bruxelles. Jeff est une marque de vêtements premium pour femme conçue depuis 2000."
+    },
+    {
+      "title": "Outlet en ligne | Jeff",
+      "url": "https://jeff.be/fr/60-outlet",
+      "snippet": "Acheter nos vêtements et accessoires à prix réduit. Faites votre shopping le tout en faisant de bonnes affaires."
+    }
+  ]
+}

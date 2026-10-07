@@ -5,7 +5,7 @@
   "author": "nile-academy",
   "url": "https://huggingface.co/nile-academy/qwen3.5-4b-gguf",
   "created_at": "2026-10-06T15:43:23.000Z",
-  "updated_at": "2026-10-06T16:40:45.000Z",
+  "updated_at": "2026-10-06T19:21:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

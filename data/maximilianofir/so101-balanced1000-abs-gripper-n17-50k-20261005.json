@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "maximilianofir/so101-balanced1000-abs-gripper-n17-50k-20261005",
+  "slug": "maximilianofir-so101-balanced1000-abs-gripper-n17-50k-20261005",
+  "author": "maximilianofir",
+  "url": "https://huggingface.co/maximilianofir/so101-balanced1000-abs-gripper-n17-50k-20261005",
+  "created_at": "2026-10-07T01:08:17.000Z",
+  "updated_at": "2026-10-07T01:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "so101",
+    "dataset:maximilianofir/so101-left-rack-balanced-1000-dr-speed05-1-20261005",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

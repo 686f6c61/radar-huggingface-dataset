@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ercwang/gemma-demo",
+  "slug": "ercwang-gemma-demo",
+  "author": "ercwang",
+  "url": "https://huggingface.co/ercwang/gemma-demo",
+  "created_at": "2026-10-06T21:16:42.000Z",
+  "updated_at": "2026-10-06T21:17:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gemma",
+    "keras",
+    "text-generation",
+    "base_model:google/gemma-3-270m",
+    "base_model:finetune:google/gemma-3-270m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-270m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manage your storage in Drive, Gmail & Photos - Google Help",
+      "url": "https://support.google.com/mail/answer/6374270?hl=en",
+      "snippet": "When your account reaches its storage limit, you won't be able to upload or create files in Drive, send or receive emails in Gmail, or …"
+    },
+    {
+      "title": "Store & play video in Google Drive - Computer - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/2423694",
+      "snippet": "Use the Google Drive app: If you upload from a web browser, try the Google Drive desktop app or mobile app for a better upload …"
+    },
+    {
+      "title": "大家有coreldraw的安装包吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/356805422",
+      "snippet": "CorelDRAW 2020只能在64位的Win10以上系统安装。 1.首先“以管理员身份运行”安装环境，如下图所示："
+    },
+    {
+      "title": "C盘里面的AppData文件夹是否可以移动到其他盘？ - 知乎",
+      "url": "https://www.zhihu.com/question/311149805",
+      "snippet": "使用win10系统家庭版，本身就很大，导致C盘空间剩余无几。里面文件夹该删除的删除，该移动的移动，希望能…"
+    },
+    {
+      "title": "Google Drive Help",
+      "url": "https://support.google.com/drive/?hl=en-gb",
+      "snippet": "Official Google Drive Help Center where you can find tips and tutorials on using Google Drive and other answers to frequently asked …"
+    }
+  ]
+}

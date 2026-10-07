@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shuhant/foundation-action-pareto-s-82m-action-expert",
+  "slug": "shuhant-foundation-action-pareto-s-82m-action-expert",
+  "author": "shuhant",
+  "url": "https://huggingface.co/shuhant/foundation-action-pareto-s-82m-action-expert",
+  "created_at": "2026-10-06T22:41:25.000Z",
+  "updated_at": "2026-10-06T22:41:42.000Z",
+  "license": "nvidia-internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "foundation-action",
+    "world-model",
+    "pareto",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183653268,
+  "parameters_human": "183.7M",
+  "storage_bytes": 734676904,
+  "storage_human": "735 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Listes des médecins adhérents à l'OPTAM - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1461683-listes-medecins-adherents-optam",
+      "snippet": "Jul 1, 2025 · Arrêtez de nous fournir la même réponse surréaliste à la question de la recherche des médecins affiliés à l'OPTAM : \"Je …"
+    },
+    {
+      "title": "Aides financières individuelles et exceptionnelles - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/2916528-aides-financieres-individuelles-exceptionnelles",
+      "snippet": "May 13, 2026 · Bonjour, Ou trouver le formulaire sécurite sociale à remplir pour les aides exceptionnelles et/ou individuelles? Merci"
+    },
+    {
+      "title": "comment acceder aux questionnaire risques pro ameli.fr meme en …",
+      "url": "https://forum-assures.ameli.fr/questions/2483306-acceder-questionnaire-risques-pro-ameli-fr-code-deblocage",
+      "snippet": "Aug 26, 2026 · Pour plus de renseignement sur le questionnaire à remplir, vous pouvez aussi consulter cet article du site ameli.fr : …"
+    },
+    {
+      "title": "Forum ameli pour les assurés - Echanges entre internautes, réponses …",
+      "url": "https://forum-assures.ameli.fr/",
+      "snippet": "Sep 9, 2026 · Les meilleures réponses sont les réponses certifiées par un expert ameli ou approuvées par l'auteur de la question. Ce …"
+    },
+    {
+      "title": "Participation forfaitaire et franchises ? - Résolue - Forum ameli pour ...",
+      "url": "https://forum-assures.ameli.fr/questions/1648945-participation-forfaitaire-franchises",
+      "snippet": "6 days ago · Bonjour poupette, La participation forfaitaire et la franchise médicale sont deux choses différentes, mais dans les deux …"
+    }
+  ]
+}

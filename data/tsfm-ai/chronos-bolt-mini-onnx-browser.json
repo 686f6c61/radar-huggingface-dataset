@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TSFM-ai/chronos-bolt-mini-onnx-browser",
+  "slug": "tsfm-ai-chronos-bolt-mini-onnx-browser",
+  "author": "TSFM-ai",
+  "url": "https://huggingface.co/TSFM-ai/chronos-bolt-mini-onnx-browser",
+  "created_at": "2026-10-06T22:50:49.000Z",
+  "updated_at": "2026-10-06T22:51:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "browser",
+    "time-series",
+    "time-series-forecasting",
+    "base_model:amazon/chronos-bolt-mini",
+    "base_model:quantized:amazon/chronos-bolt-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85134974,
+  "storage_human": "85 MB",
+  "base_model": "amazon/chronos-bolt-mini",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chronos-Bolt (Tiny) — TSFM.ai",
+      "url": "https://tsfm.ai/models/amazon/chronos-bolt-tiny",
+      "snippet": "Chronos-Bolt Tiny is the smallest checkpoint in Amazon&#x27;s Chronos-Bolt family, at 9M parameters. It is the cost and latency floor of the line: a probabilistic zero-shot forecaster small enough to favor throughput and price over peak accuracy, aimed squarely at latency-sensitive and high-volume work."
+    },
+    {
+      "title": "Chronos-Bolt (Mini) — TSFM.ai",
+      "url": "https://tsfm.ai/models/amazon/chronos-bolt-mini",
+      "snippet": "Chronos-Bolt Mini is a compact 21M-parameter checkpoint in Amazon&#x27;s Chronos-Bolt family. It sits one rung above Chronos-Bolt Tiny, trading a little extra capacity for a better accuracy-latency balance on moderate-volume forecasting workloads while staying firmly in the cost-efficient tier of the line."
+    },
+    {
+      "title": "TSFM-ai (TSFM.ai) - Hugging Face",
+      "url": "https://huggingface.co/TSFM-ai",
+      "snippet": "What we host Every major open-weights time-series foundation model, served behind one consistent inference API. See the full catalog collection for the exact 49 models you can call today."
+    },
+    {
+      "title": "chronos-bolt-mini · Model · Inferix",
+      "url": "https://inferix.co/models/autogluon/chronos-bolt-mini",
+      "snippet": "Chronos-Bolt⚡ (Mini) 🚀 Update Feb 14, 2025: Chronos-Bolt models are now available on Amazon SageMaker JumpStart! Check out the tutorial notebook to learn how to deploy Chronos endpoints for production use in a few lines of code."
+    },
+    {
+      "title": "Chronos — Foundation Models for Time Series",
+      "url": "https://chronos-ts.ai/",
+      "snippet": "Chronos is a family of pretrained models for time-series forecasting. Across the original T5 Chronos, the faster Bolt variants, and the Chronos-2 generation, the family has now crossed a billion cumulative downloads on Hugging Face."
+    }
+  ]
+}

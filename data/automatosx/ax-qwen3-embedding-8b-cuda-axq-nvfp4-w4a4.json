@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4",
+  "slug": "automatosx-ax-qwen3-embedding-8b-cuda-axq-nvfp4-w4a4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Qwen3-Embedding-8B-CUDA-AXQ-NVFP4-W4A4",
+  "created_at": "2026-10-04T03:37:36.000Z",
+  "updated_at": "2026-10-06T21:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3",
+    "text-embeddings",
+    "retrieval",
+    "cuda",
+    "nvfp4",
+    "w4a4",
+    "compressed-tensors",
+    "axquant",
+    "development-preview",
+    "sentence-similarity",
+    "base_model:Qwen/Qwen3-Embedding-8B",
+    "base_model:quantized:Qwen/Qwen3-Embedding-8B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 7567295488,
+  "parameters_human": "7.57B",
+  "storage_bytes": 8200320539,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    },
+    {
+      "title": "Fortnite Battle Royale : guide complet, astuces, cartes, défis, mises à ...",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/367228/wiki-de-fortnite.htm",
+      "snippet": "Vous débutez sur le jeu Fortnite ? Venez découvrir tout ce qu'il faut savoir sur ce jeu grâce à toutes les soluces que propose notre wiki."
+    },
+    {
+      "title": "Forums JV: participez aux forums de vos jeux préférés avec …",
+      "url": "https://www.jeuxvideo.com/forums.htm",
+      "snippet": "Bienvenue sur les forums de jeuxvideo.com. Venez retrouver, discuter, partager avec notre communauté sur un large éventail de …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "La sécheresse fait réapparaître une ville romaine disparue vieille de ...",
+      "url": "https://www.jeuxvideo.com/news/2107183/la-secheresse-fait-reapparaitre-une-ville-romaine-disparue-vieille-de-2000-ans.htm",
+      "snippet": "4 days ago · En Suisse, la vague de chaleur et la sécheresse historique de l'été 2026 ont permis une découverte archéologique …"
+    }
+  ]
+}

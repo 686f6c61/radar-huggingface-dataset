@@ -5,7 +5,7 @@
   "author": "billyd10",
   "url": "https://huggingface.co/billyd10/laya-homelab-router",
   "created_at": "2026-10-01T20:50:58.000Z",
-  "updated_at": "2026-10-05T19:25:41.000Z",
+  "updated_at": "2026-10-06T13:51:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 21,
   "trending_score": 0,
   "parameters": 421293830,
   "parameters_human": "421.3M",
-  "storage_bytes": 1685197088,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 5055591264,
+  "storage_human": "5.1 GB",
   "base_model": "convaiinnovations/laya-typed-decisions",
   "formats": [
     "safetensors"

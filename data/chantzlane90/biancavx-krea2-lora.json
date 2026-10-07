@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/biancavx-krea2-lora",
+  "slug": "chantzlane90-biancavx-krea2-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/biancavx-krea2-lora",
+  "created_at": "2026-10-06T21:38:34.000Z",
+  "updated_at": "2026-10-06T21:40:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 445440248,
+  "storage_human": "445 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Garlic Sautéed Spinach - RecipeTin Eats",
+      "url": "https://www.recipetineats.com/garlic-sauteed-spinach/",
+      "snippet": "Nov 28, 2018 · Heat oil in a large skillet over medium high heat. Add garlic and cook for 20 seconds until it becomes light golden and …"
+    },
+    {
+      "title": "Sauteed Spinach with Garlic - The Seasoned Mom",
+      "url": "https://www.theseasonedmom.com/sauteed-spinach/",
+      "snippet": "Jan 2, 2026 · This quick and easy sauteed spinach with garlic comes together in just 10 minutes. Tender, garlicky greens with a …"
+    },
+    {
+      "title": "Barefoot Contessa | Garlic Sautéed Spinach | Recipes",
+      "url": "https://barefootcontessa.com/recipes/garlic-saut%C3%A9ed-spinach",
+      "snippet": "In a very large pot or Dutch oven, heat the olive oil and sauté the garlic over medium heat for about 1 minute, but not until it’s …"
+    },
+    {
+      "title": "Garlic Sauteed Spinach - Downshiftology",
+      "url": "https://downshiftology.com/recipes/garlic-sauteed-spinach/",
+      "snippet": "May 23, 2024 · Garlic sautéed spinach transforms bundles of baby spinach into an easy, healthy and flavorful side dish that's made …"
+    },
+    {
+      "title": "Garlic Sautéed Spinach | Get Inspired Everyday!",
+      "url": "https://getinspiredeveryday.com/food/garlic-sauteed-spinach/",
+      "snippet": "May 28, 2021 · This Garlic Sautéed Spinach is the easiest and tastiest way to cook any kind of greens. It comes together in just …"
+    }
+  ]
+}

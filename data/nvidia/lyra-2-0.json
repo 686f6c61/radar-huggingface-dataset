@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nvidia/Lyra-2.0",
+  "slug": "nvidia-lyra-2-0",
+  "author": "nvidia",
+  "url": "https://huggingface.co/nvidia/Lyra-2.0",
+  "created_at": "2026-04-06T15:14:07.000Z",
+  "updated_at": "2026-07-15T21:57:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "lyra-2.0",
+  "languages": [],
+  "tags": [
+    "lyra-2.0",
+    "world",
+    "image-to-3d",
+    "arxiv:2604.13036",
+    "region:us"
+  ],
+  "likes": 357,
+  "downloads_30d": 756,
+  "trending_score": 9,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98349113324,
+  "storage_human": "98.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Leader in Artificial Intelligence Computing | NVIDIA",
+      "url": "https://www.nvidia.com/",
+      "snippet": "NVIDIA RTX™ powers the world’s fastest PCs and the ultimate platform for gamers and creators. Enjoy beautiful ray tracing, AI …"
+    },
+    {
+      "title": "Téléchargez les pilotes NVIDIA officiels | NVIDIA",
+      "url": "https://www.nvidia.com/fr-fr/drivers/",
+      "snippet": "Téléchargez les pilotes NVIDIA officiels les plus récents pour optimiser votre expérience de jeu sur PC et faire tourner vos …"
+    },
+    {
+      "title": "Nvidia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nvidia",
+      "snippet": "Founded in 1993 by Jensen Huang, Chris Malachowsky, and Curtis Priem, Nvidia has been widely described as a Big Tech …"
+    },
+    {
+      "title": "Nvidia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nvidia",
+      "snippet": "Nvidia Corporation est une société multinationale américaine de technologie basée à Santa Clara et immatriculée dans l'État du …"
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    }
+  ]
+}

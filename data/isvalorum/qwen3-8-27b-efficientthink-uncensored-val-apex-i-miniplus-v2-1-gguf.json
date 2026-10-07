@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-qwen3-8-27b-efficientthink-uncensored-val-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-10-06T19:39:59.000Z",
+  "updated_at": "2026-10-07T02:50:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "quantization",
+    "val-apex-i",
+    "apex",
+    "apex-quant",
+    "apex-i-miniplus",
+    "v2.1",
+    "qwen",
+    "qwen3.8",
+    "reasoning",
+    "chain-of-thought",
+    "dflash2",
+    "speculative-decoding",
+    "simpo",
+    "uncensored",
+    "imatrix",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "base_model:quantized:nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 33519411176,
+  "storage_human": "33.5 GB",
+  "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/",
+      "snippet": "Your personalized and curated collection of the best in trusted news, weather, sports, money, travel, entertainment, gaming, and …"
+    },
+    {
+      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
+      "url": "https://www.msn.com/fr-fr",
+      "snippet": "Accédez à l'actualité, sport, météo, infos people et vidéos tout en restant connecté à Hotmail, Outlook et Skype sur MSN France."
+    },
+    {
+      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
+      "url": "https://g.msn.com/1cl91enus/931",
+      "snippet": "Votre collection personnalisée et curée des meilleurs contenus d’actualités, de météo, de sports, d’argent, de voyage, de …"
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=0f4c1017bfe6633e3e1407fdbe836287",
+      "snippet": "Outlook security features apply to @outlook.com, @hotmail.com, @live.com, or @msn.com email addresses. …"
+    },
+    {
+      "title": "MSN",
+      "url": "https://www.msn.com/%20/",
+      "snippet": ""
+    }
+  ]
+}

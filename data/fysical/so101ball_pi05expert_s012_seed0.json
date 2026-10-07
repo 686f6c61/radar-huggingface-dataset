@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "fysical/so101ball_pi05expert_S012_seed0",
+  "slug": "fysical-so101ball_pi05expert_s012_seed0",
+  "author": "fysical",
+  "url": "https://huggingface.co/fysical/so101ball_pi05expert_S012_seed0",
+  "created_at": "2026-10-07T00:45:21.000Z",
+  "updated_at": "2026-10-07T00:48:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:fysical/greenball_pool_225_v1",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 20049023660,
+  "storage_human": "20.0 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

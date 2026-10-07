@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "qualitymaterial/Ornith-1.5-35B-A3B-FP8-BLOCK-FreeToken",
+  "slug": "qualitymaterial-ornith-1-5-35b-a3b-fp8-block-freetoken",
+  "author": "qualitymaterial",
+  "url": "https://huggingface.co/qualitymaterial/Ornith-1.5-35B-A3B-FP8-BLOCK-FreeToken",
+  "created_at": "2026-10-06T23:13:07.000Z",
+  "updated_at": "2026-10-07T00:05:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "freetoken",
+    "fp8",
+    "moe",
+    "windows",
+    "text-generation",
+    "conversational",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 36628506084,
+  "storage_human": "36.6 GB",
+  "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC News - Breaking news, video and the latest top stories from the …",
+      "url": "https://www.bbc.com/news",
+      "snippet": "Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. …"
+    },
+    {
+      "title": "Home - BBC News",
+      "url": "https://www.bbc.co.uk/news",
+      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …"
+    },
+    {
+      "title": "UK | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.com/news/uk",
+      "snippet": "Get all the latest news, live updates and content about the UK from across the BBC."
+    },
+    {
+      "title": "World | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.co.uk/news/world",
+      "snippet": "Get all the latest news, live updates and content about the World from across the BBC."
+    },
+    {
+      "title": "BBC News | UK",
+      "url": "http://news.bbc.co.uk/2/hi/uk/",
+      "snippet": "'My mission with the UK marines' The BBC's Damian Grammaticas joins the UK Marines on one of their final Afghan missions before …"
+    }
+  ]
+}

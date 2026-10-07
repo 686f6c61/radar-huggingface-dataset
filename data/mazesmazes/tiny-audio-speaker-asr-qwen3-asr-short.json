@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short",
+  "slug": "mazesmazes-tiny-audio-speaker-asr-qwen3-asr-short",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-speaker-asr-qwen3-asr-short",
+  "created_at": "2026-10-06T22:00:01.000Z",
+  "updated_at": "2026-10-07T01:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 3141287655,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alexkroman/tiny-audio: Train your own speech AI model from scratch",
+      "url": "https://github.com/alexkroman/tiny-audio",
+      "snippet": "from_pretrained(\"mazesmazes/tiny-audio\") processor = ASRProcessor. ... Language Model: Qwen3 generates text conditioned on the projected audio. Frame ..."
+    },
+    {
+      "title": "Research Papers on AI and Learning Techniques | PDF - Scribd",
+      "url": "https://www.scribd.com/document/982794505/Main-Track-Poster-Presentations-251120-2",
+      "snippet": "Jan 22 Models for Preventing AI Art Plagiarism He; Zibin Zheng Thursday ... 23 Text-to-Audio Model Date Num. Paper Title Authors. Friday, Jan 24932 From ..."
+    },
+    {
+      "title": "Deedy's Best Tweets",
+      "url": "https://debarghyadas.com/writes/twitter/",
+      "snippet": "14.01.2026 ... Twitter/X is where I write the most. I tweet about tech, startups, AI, business, immigration and India. In ~4yrs, there's been>2000 tweets ..."
+    },
+    {
+      "title": "OpenAI DevDay 2026 - 20 launches and a new assistant - ThursdAI",
+      "url": "https://sub.thursdai.news/feed",
+      "snippet": "... AI curve. Hosted by AI Evangelist Alex Volkov with a changing panel expert guests, discussing every important AI piece of news and updates from the past ..."
+    },
+    {
+      "title": "ThursdAI Sunday special - Deep dives into Crew AI with Joao then a ...",
+      "url": "https://podtail.com/podcast/the-top-ai-news-from-the-past-week-every-thursdai/--thursdai-sunday-special-deep-dives-into-crew-ai-/",
+      "snippet": "Cohere released Transcribe Arabic, a 2B Apache 2.0 ASR model that tops ... AI audio models (X). * Moondream partners with Cloudflare for edge-deployed ..."
+    }
+  ]
+}

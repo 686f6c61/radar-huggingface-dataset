@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Moxiegen/Moxie-GPU",
+  "slug": "moxiegen-moxie-gpu",
+  "author": "Moxiegen",
+  "url": "https://huggingface.co/Moxiegen/Moxie-GPU",
+  "created_at": "2026-10-06T22:55:08.000Z",
+  "updated_at": "2026-10-06T23:02:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:turtle89431/Moxie",
+    "base_model:quantized:turtle89431/Moxie",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13064805568,
+  "storage_human": "13.1 GB",
+  "base_model": "turtle89431/Moxie",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Air Gapped Moxie AI Agent - YouTube",
+      "url": "https://www.youtube.com/watch?v=1bPVXXP2Xbc",
+      "snippet": "Here we show our custom AI LLM Moxie running on an HP Z820 with an Nvidia RTX 3060 GPU. The setup is air gapped to demonstrate the ability of Moxie to run on standalone hardware using the Moxiegen ..."
+    },
+    {
+      "title": "HP ZGX Fury: AI-Powered Workstation | HP® Official Site",
+      "url": "https://www.hp.com/us-en/workstations/ai-stations/zgx-fury-ai-station.html",
+      "snippet": "HP ZGX Fury AI station Quickly scale and streamline AI development, inference, and agentic AI workflows with groundbreaking on-prem compute and a flexible software stack. The HP ZGX Fury AI station hosts large-scale models up to 1 trillion parameters Model harness quantizes at FP4. 1 locally, helping keep data secure and costs predictable."
+    },
+    {
+      "title": "Local AI Image and Video Generation in 2026: Models, Hardware, and ...",
+      "url": "https://hardwarepedia.com/blog/local-ai-image-video-generation-guide-2026",
+      "snippet": "Local AI Image and Video Generation in 2026: Models, Hardware, and Setup Complete guide to running Stable Diffusion, Flux, and AI video generation locally. Covers GPU requirements, model comparison, ComfyUI setup, and what hardware you need for 1024px images and 4K video generation on your own PC."
+    },
+    {
+      "title": "Can I Run AI Locally? Check if My GPU or Mac Runs LLMs — Free",
+      "url": "https://willitrunai.com/",
+      "snippet": "Check if your GPU, PC, or Mac can run LLMs locally — Llama, Qwen, DeepSeek, Flux & 300+ AI models, with exact VRAM, Q4/Q8 fit, tok/s, and upgrade picks."
+    },
+    {
+      "title": "Meta Releases Muse Glimmer, a 30-Billion-Parameter Open-Weight AI Model ...",
+      "url": "https://www.ghacks.net/2026/08/11/meta-releases-muse-glimmer-a-30-billion-parameter-open-weight-ai-model-that-runs-on-a-single-consumer-gpu/",
+      "snippet": "Meta&#x27;s Muse Glimmer is a free 30B open-weight AI model built to run on a Mac or PC with a single consumer graphics card."
+    }
+  ]
+}

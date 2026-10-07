@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shuhant/foundation-action-pareto-s-209m-action-expert",
+  "slug": "shuhant-foundation-action-pareto-s-209m-action-expert",
+  "author": "shuhant",
+  "url": "https://huggingface.co/shuhant/foundation-action-pareto-s-209m-action-expert",
+  "created_at": "2026-10-06T22:42:08.000Z",
+  "updated_at": "2026-10-06T22:42:45.000Z",
+  "license": "nvidia-internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "foundation-action",
+    "world-model",
+    "pareto",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 318016788,
+  "parameters_human": "318.0M",
+  "storage_bytes": 1272131648,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shuhant/foundational_action · Hugging Face",
+      "url": "https://huggingface.co/shuhant/foundational_action",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shuhant (Shuhan Tan) - Hugging Face",
+      "url": "https://huggingface.co/shuhant/models",
+      "snippet": "Follow 0 followers 1 following AI & ML interests None yet Recent Activity updateda model5 days ago"
+    },
+    {
+      "title": "OpenAI shelves latest AI model over authorization concerns",
+      "url": "https://tech.yahoo.com/ai/chatgpt/articles/openai-shelves-latest-ai-model-005738972.html",
+      "snippet": "OpenAI is scrapping the planned release of its next-generation AI model after researchers raised safety concerns during internal testing, Newsweek has confirmed. An OpenAI spokesperson told Newsweek Monday evening that safety leaders made the decision not to ship GPT-6.1 Astra, which was set for an October debut. The decision was first reported by The Wall Street Journal. \"For anything ..."
+    },
+    {
+      "title": "Top 19 AI Red Teaming Tools (2026): Secure Your ML Models",
+      "url": "https://www.marktechpost.com/2026/04/17/top-ai-red-teaming-tools/",
+      "snippet": "Top 19 AI Red Teaming Tools (2026) Below is a rigorously researched list of the latest and most reputable AI red teaming tools, frameworks, and platforms—spanning open-source, commercial, and industry-leading solutions for both generic and AI-specific attacks:"
+    },
+    {
+      "title": "Chinese AI model investigated after researcher says it provided ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/chinese-ai-model-investigated-after-researcher-says-it-provided-instructions-for-bioweapons-assassinations/ar-AA2dnJQy",
+      "snippet": "Researcher Peter Garrigan says Moonshot AI&#x27;s Kimi model was manipulated into providing instructions for biological weapons and assassination plans."
+    }
+  ]
+}

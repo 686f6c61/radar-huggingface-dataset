@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/qwen3-4b-openvino",
+  "slug": "nekodeus-qwen3-4b-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/qwen3-4b-openvino",
+  "created_at": "2026-10-06T23:06:32.000Z",
+  "updated_at": "2026-10-06T23:15:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "int8",
+    "text-generation",
+    "llm",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4046031692,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Michael Jackson – Remember the Time (Lyrics) - YouTube",
+      "url": "https://m.youtube.com/watch?v=UOUuVlQC5Y0",
+      "snippet": "Sep 1, 2023 · In the park (Remember the time) After dark, do you, do you, do you? (Remember the time) Do you, do you, do you, did …"
+    },
+    {
+      "title": "Kanye West – Homecoming Lyrics - Genius",
+      "url": "https://genius.com/Kanye-west-homecoming-lyrics",
+      "snippet": "Sep 11, 2007 · Do you think about me now and then? (Yeah) Do you think about me now and then? 'Cause I'm comin' home again …"
+    },
+    {
+      "title": "Remember the Time - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Remember_the_Time",
+      "snippet": "The lyrics recall a youthful love affair: \"Do you remember when we fell in love/We were young and innocent then\". [13] The song is …"
+    },
+    {
+      "title": "Adele – When We Were Young Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Adele-when-we-were-young-lyrics",
+      "snippet": "Nov 20, 2015 · When We Were Young Lyrics: Everybody loves the things you do / From the way you talk to the way you move / …"
+    },
+    {
+      "title": "Michael Jackson - Remember The Time (Lyrics) - YouTube",
+      "url": "https://m.youtube.com/watch?v=gkcvufFubmE",
+      "snippet": "Sep 25, 2024 · We were young and innocent then Do you remember how it all began? It just seemed like heaven, so why did it end? …"
+    }
+  ]
+}

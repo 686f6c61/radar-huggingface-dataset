@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "vanvalenlab/ftu-rader",
+  "slug": "vanvalenlab-ftu-rader",
+  "author": "vanvalenlab",
+  "url": "https://huggingface.co/vanvalenlab/ftu-rader",
+  "created_at": "2026-10-06T20:04:58.000Z",
+  "updated_at": "2026-10-06T20:21:01.000Z",
+  "license": "modified-apache-2.0-noncommercial",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1480789176,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

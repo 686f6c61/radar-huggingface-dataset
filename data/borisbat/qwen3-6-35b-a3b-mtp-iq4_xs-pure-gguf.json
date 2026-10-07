@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "borisbat/Qwen3.6-35B-A3B-MTP-IQ4_XS-pure-GGUF",
+  "slug": "borisbat-qwen3-6-35b-a3b-mtp-iq4_xs-pure-gguf",
+  "author": "borisbat",
+  "url": "https://huggingface.co/borisbat/Qwen3.6-35B-A3B-MTP-IQ4_XS-pure-GGUF",
+  "created_at": "2026-10-06T22:50:46.000Z",
+  "updated_at": "2026-10-06T22:57:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.6",
+    "iq4_xs",
+    "mtp",
+    "dasllama",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 18951018528,
+  "storage_human": "19.0 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byteshape/Qwen3.6-35B-A3B-MTP-GGUF · Hugging Face",
+      "url": "https://huggingface.co/byteshape/Qwen3.6-35B-A3B-MTP-GGUF",
+      "snippet": "This is a GGUF-quantized version of Qwen3.6-35B-A3B with Multi-Token Prediction (MTP) support, produced with ByteShape&#x27;s ShapeLearn, which learns the optimal datatype per tensor to maintain high quality even at very low bitlengths."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-MTP-IQ4_XS-GGUF - Hugging Face",
+      "url": "https://huggingface.co/localweights/Qwen3.6-35B-A3B-MTP-IQ4_XS-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6 35B A3B - VRAM, Specs & Benchmarks - apxml.com",
+      "url": "https://apxml.com/models/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "batiai/qwen3.6-35b:iq4 - ollama.com",
+      "url": "https://ollama.com/batiai/qwen3.6-35b:iq4",
+      "snippet": "IQ3/IQ4 are imatrix (wikitext-calibrated) for better quality per bit at low bit-widths. Q6_K is a high-bit K-quant — near-BF16 quality for users with enough RAM. Tool calling: all tags support tools + thinking. Pass \"think\": false in chat requests for fast tool-call responses. Quick Start ollama pull batiai/qwen3.6-35b:iq4 ollama run batiai/qwen3.6-35b:iq4 Why Qwen 3.6 35B-A3B? Upstream ..."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B - vLLM Ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/latest/tutorials/models/Qwen3.6-35B-A3B.html",
+      "snippet": "Qwen3.6-35B-A3B 1 Introduction ¶ Qwen3.6-35B-A3B is a sparse MoE model in the Qwen3.6 family, with 35B total parameters and about 3B activated parameters per token. It uses the hybrid attention architecture used by Qwen3.5-style models, and is suitable for long-context online serving on Ascend hardware. This document describes the main validation steps for the model, including supported ..."
+    }
+  ]
+}

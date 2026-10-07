@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BAJUKA/LLaVA-qwen25-3b-Tfull-r2-s42-s2b",
+  "slug": "bajuka-llava-qwen25-3b-tfull-r2-s42-s2b",
+  "author": "BAJUKA",
+  "url": "https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-Tfull-r2-s42-s2b",
+  "created_at": "2026-10-06T20:04:23.000Z",
+  "updated_at": "2026-10-06T20:05:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "llava",
+    "llava-next",
+    "controlled-experiment",
+    "roi",
+    "text-only",
+    "language-model",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3490244128,
+  "parameters_human": "3.49B",
+  "storage_bytes": 6980604448,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Rated: Best-Scored AI Short Dramas | Huangguo Drama",
+      "url": "https://huangguodrama.ai/en/ranks/recommend/",
+      "snippet": "Huangguo Drama's best-scored AI short dramas, ranked by rating. Compare synopses and genres, then pick your next watch. 18+ only."
+    },
+    {
+      "title": "Watch AI Short Dramas Online - Huangguo Drama",
+      "url": "https://huangguodrama.ai/en/library/",
+      "snippet": "Browse 760 AI short dramas. Tap a cover to watch romance, mystery and fantasy episodes in the browser — no app, no account."
+    },
+    {
+      "title": "AI short dramas, character chat and story creation · Huangguo",
+      "url": "https://黄果.online/en/",
+      "snippet": "Explore AI short dramas and motion comics, browse story titles and themes, and learn to plan a storyboard. Discover Huangguo …"
+    },
+    {
+      "title": "黄果AI - AI短剧内容创作平台",
+      "url": "https://h5-huangguoai.com.cn/",
+      "snippet": "从一个想法开始，把人物、场景、镜头和声音逐步整理成可执行的短剧方案。 黄果AI围绕短剧内容创作建立一套更接近实际工作流的 …"
+    },
+    {
+      "title": "黄果短剧 - 提供ai短剧的流行短视频平台，各类大神自制ai短剧、魔改短剧、ai …",
+      "url": "https://www.huangguoofficial.cn/index.html",
+      "snippet": "黄果短剧是提供ai短剧的流行短视频平台。在黄果短剧中，有着各类大神自制的ai短剧，想象天马行空。同时还有各类魔改短剧，ai漫 …"
+    }
+  ]
+}

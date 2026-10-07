@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/siglip-so400m-patch14-224",
+  "slug": "collectionstudio-siglip-so400m-patch14-224",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/siglip-so400m-patch14-224",
+  "created_at": "2026-10-06T18:52:48.000Z",
+  "updated_at": "2026-10-06T18:52:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "zero-shot-image-classification",
+    "vision",
+    "arxiv:2303.15343",
+    "arxiv:2305.13035",
+    "arxiv:2209.06794",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 877360306,
+  "parameters_human": "877.4M",
+  "storage_bytes": 3510348186,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jeuxvideo.com toute l'actualité du jeu vidéo et du hardware",
+      "url": "https://www.jeuxvideo.com/",
+      "snippet": "Retrouvez toute l'actualité du jeu video sur PC et consoles. Faites le plein de tests de jeux vidéo et de soluce. Découvrez aussi tous …"
+    },
+    {
+      "title": "Urlaubsanspruch Elternzeit Rechner: Formel & Beispiele",
+      "url": "https://www.juraforum.de/lexikon/urlaubsanspruch-elternzeit-rechner",
+      "snippet": "Jul 31, 2026 · Urlaubsanspruch Elternzeit Rechner: Urlaub richtig berechnen Der Urlaubsanspruch während der Elternzeit kann sich …"
+    },
+    {
+      "title": "Urlaubskürzung in Elternzeit: Regeln, Beispiele",
+      "url": "https://www.juraforum.de/lexikon/urlaubskuerzung-elternzeit",
+      "snippet": "Aug 1, 2026 · Urlaubskürzung während der Elternzeit Arbeitgeber dürfen den gesetzlichen und vertraglichen Erholungsurlaub wegen …"
+    },
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "LAG Düsseldorf: Keine Kündigung wegen genehmigter Elternzeit …",
+      "url": "https://www.juraforum.de/news/lag-duesseldorf-keine-kuendigung-wegen-genehmigter-elternzeit-antraege_273325",
+      "snippet": "Feb 3, 2026 · Elternzeit (§ 15 BEEG): Rechte der Mitarbeiter und Grenzen für den Arbeitgeber Die Elternzeitregelungen im …"
+    }
+  ]
+}

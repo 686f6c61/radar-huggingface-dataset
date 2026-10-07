@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/alephn-1-GGUF",
+  "slug": "mradermacher-alephn-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/alephn-1-GGUF",
+  "created_at": "2026-10-06T23:33:54.000Z",
+  "updated_at": "2026-10-06T23:34:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gpt2",
+    "causal-lm",
+    "pretrained",
+    "from-scratch",
+    "cerebras-gpt",
+    "en",
+    "base_model:elebush/alephn-1",
+    "base_model:quantized:elebush/alephn-1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111050496,
+  "parameters_human": "111.1M",
+  "storage_bytes": 1173593984,
+  "storage_human": "1.2 GB",
+  "base_model": "elebush/alephn-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque en ligne gratuite | Fortuneo",
+      "url": "https://www.fortuneo.fr/",
+      "snippet": "Fortuneo, la banque 100% en ligne et mobile du Crédit Mutuel Arkéa pour mieux gérer vos finances."
+    },
+    {
+      "title": "Souscrire au contrat d'assurance vie en ligne de Fortuneo",
+      "url": "https://www.fortuneo.fr/assurance-vie",
+      "snippet": "L’assurance-vie en ligne Fortuneo est un placement financier performant sans frais d’entrée. Réalisez vos projets d’épargne dans un …"
+    },
+    {
+      "title": "Cours ETF WisdomTree Bitcoin (WBTC), bourse Euronext Paris",
+      "url": "https://bourse.fortuneo.fr/trackers/cours-wisdomtree-bitcoin-WBTC-GB00BJYDH287-23",
+      "snippet": "ETF WisdomTree Bitcoin : cours et cotation sur la bourse de Euronext Paris. Conseils boursiers, informations financières, carnet …"
+    },
+    {
+      "title": "Sicav et Fonds d'investissement pour diversifier vos placements",
+      "url": "https://bourse.fortuneo.fr/sicav-fonds?f=FTNVIE",
+      "snippet": "Consultez l'ensemble des fonds de placement et SICAV disponibles, par palmarès, classification AMF, sociétés de gestion, rating, …"
+    },
+    {
+      "title": "Envoyer un e-mail à Fortuneo Banque",
+      "url": "https://mabanque.fortuneo.fr/fr/mail7.jsp",
+      "snippet": "Une question ? Besoin d'information générale ? Contactez nos conseillers par e-mail."
+    }
+  ]
+}

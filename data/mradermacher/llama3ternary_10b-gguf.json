@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama3Ternary_10b-GGUF",
+  "slug": "mradermacher-llama3ternary_10b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama3Ternary_10b-GGUF",
+  "created_at": "2026-10-06T23:51:31.000Z",
+  "updated_at": "2026-10-06T23:53:08.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama",
+    "ternary",
+    "bitnet",
+    "1.58bit",
+    "text-generation",
+    "en",
+    "base_model:CMSManhattan/Llama3Ternary_10b",
+    "base_model:quantized:CMSManhattan/Llama3Ternary_10b",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9640873984,
+  "parameters_human": "9.64B",
+  "storage_bytes": 5497220288,
+  "storage_human": "5.5 GB",
+  "base_model": "CMSManhattan/Llama3Ternary_10b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVIDEOS Free Porn Videos XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/",
+      "snippet": "XVIDEOS Vidéos Porno Gratuites XVideos.com is a free hosting service for porn videos. We convert your files to various formats. …"
+    },
+    {
+      "title": "'MOM' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=MOM",
+      "snippet": "4,604 MOM FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/home/br",
+      "snippet": "XVIDEOS Free Porn Videos A ninfeta Ph Philips de 19 anos voltou ao canal para mostrar que esta ainda mais puta dando o cu a a …"
+    },
+    {
+      "title": "Anal videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/c/Anal-12",
+      "snippet": "XVIDEOS Anal videos, free P-Sluts Vol.78 starring Vitoria Beatriz and Victoria Dias assfucked together in hot threesome with Lykos …"
+    }
+  ]
+}

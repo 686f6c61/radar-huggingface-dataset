@@ -5,7 +5,7 @@
   "author": "cortex-agent-llc",
   "url": "https://huggingface.co/cortex-agent-llc/kodiak-v0.3-1b",
   "created_at": "2026-10-06T15:38:33.000Z",
-  "updated_at": "2026-10-06T16:18:22.000Z",
+  "updated_at": "2026-10-07T01:40:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,7 +33,7 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 1044119556,

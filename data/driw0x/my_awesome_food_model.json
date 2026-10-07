@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Driw0x/my_awesome_food_model",
+  "slug": "driw0x-my_awesome_food_model",
+  "author": "Driw0x",
+  "url": "https://huggingface.co/Driw0x/my_awesome_food_model",
+  "created_at": "2026-10-06T22:36:05.000Z",
+  "updated_at": "2026-10-06T22:47:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "trackio",
+    "trackio:https://huggingface.co/spaces/Driw0x/huggingface-static-2d15c6",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224-in21k",
+    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85876325,
+  "parameters_human": "85.9M",
+  "storage_bytes": 1030590789,
+  "storage_human": "1.0 GB",
+  "base_model": "google/vit-base-patch16-224-in21k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Driw0x/my_awesome_model · Hugging Face",
+      "url": "https://huggingface.co/Driw0x/my_awesome_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "interestAI/my_awesome_food_model · Hugging Face",
+      "url": "https://huggingface.co/interestAI/my_awesome_food_model",
+      "snippet": "interestAI / my_awesome_food_model like 0 Safetensors vit Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month 1 Safetensors Model size 85.8M params Tensor type F32 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "My Awesome Model - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/driw0x/my_awesome_model",
+      "snippet": "Registry entry for model My Awesome Model; source metadata pending."
+    },
+    {
+      "title": "bytez/je1lee_my_awesome_food_model - Docker Image",
+      "url": "https://hub.docker.com/r/bytez/je1lee_my_awesome_food_model",
+      "snippet": "⁠ How to Run this Model If you&#x27;re just getting started, we recommend that you try out the Bytez Model Playground ⁠ directly or use one of our Client Libraries ⁠ to access the Bytez Inference API ⁠."
+    },
+    {
+      "title": "GitHub - Unsocial-sannyasi563/awesome-free-models: Access a curated ...",
+      "url": "https://github.com/Unsocial-sannyasi563/awesome-free-models",
+      "snippet": "A curated list of free AI models, APIs, and tools you can use without paying a cent. All links verified live on June 13, 2026. 7 broken links found during this check (1 removed). Running AI shouldn&#x27;t require a credit card. This list curates genuinely free models — open-weight models you can ..."
+    }
+  ]
+}

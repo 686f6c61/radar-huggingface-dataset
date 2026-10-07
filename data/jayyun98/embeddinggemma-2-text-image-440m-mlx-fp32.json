@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "jayyun98/embeddinggemma-2-text-image-440m-mlx-fp32",
+  "slug": "jayyun98-embeddinggemma-2-text-image-440m-mlx-fp32",
+  "author": "jayyun98",
+  "url": "https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-mlx-fp32",
+  "created_at": "2026-10-06T18:36:43.000Z",
+  "updated_at": "2026-10-06T18:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "embedding_gemma2",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "code",
+    "mlx-vlm",
+    "multimodal-embedding",
+    "image-feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 438760472,
+  "parameters_human": "438.8M",
+  "storage_bytes": 1791979890,
+  "storage_human": "1.8 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Does VBA have an ATan2 function? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/5117265/does-vba-have-an-atan2-function",
+      "snippet": "Feb 25, 2011 · I'd like to calculate atan2 in VBA, but I'm not sure if that function exists (or even where to find a canonical list of built-in …"
+    },
+    {
+      "title": "c - 3d Accelerometer calculate the orientation - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3755059/3d-accelerometer-calculate-the-orientation",
+      "snippet": "Yes sorry, that was a typo, actually it's atan2 (X, sqrt (Y Z)) without the minus sign on X if we assume that the accelerometer gives …"
+    },
+    {
+      "title": "Como funciona a função atan2? - Stack Overflow em Português",
+      "url": "https://pt.stackoverflow.com/questions/260508/como-funciona-a-fun%c3%a7%c3%a3o-atan2",
+      "snippet": "Dec 5, 2017 · Vejamos o Javadoc do método atan2 (double, double), já traduzido para o português por mim: public static double …"
+    }
+  ]
+}

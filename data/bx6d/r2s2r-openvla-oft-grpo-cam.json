@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bx6d/r2s2r-openvla-oft-grpo-cam",
+  "slug": "bx6d-r2s2r-openvla-oft-grpo-cam",
+  "author": "bx6d",
+  "url": "https://huggingface.co/bx6d/r2s2r-openvla-oft-grpo-cam",
+  "created_at": "2026-10-06T21:50:11.000Z",
+  "updated_at": "2026-10-06T21:51:51.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "robotics",
+    "vla",
+    "openvla-oft",
+    "grpo",
+    "rlinf",
+    "mujoco",
+    "xarm6",
+    "domain-randomization",
+    "base_model:openvla/openvla-7b",
+    "base_model:finetune:openvla/openvla-7b",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45715551527,
+  "storage_human": "45.7 GB",
+  "base_model": "openvla/openvla-7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erotic Audio Stories Hub - Literotica.com",
+      "url": "https://www.literotica.com/c/audio-sex-stories",
+      "snippet": "May 22, 2024 · Free Erotic Audio Stories updated every day."
+    },
+    {
+      "title": "Erotic Audio Stories - 2,789 Free Narrated Stories | MyEroticTales",
+      "url": "https://myerotictales.com/audio-stories/",
+      "snippet": "Listen to 2789 free erotic audio stories, narrated and explicit. New stories voiced every night — no signup."
+    },
+    {
+      "title": "AudioLove - Erotic Audio Stories, Roleplay & Audio Porn",
+      "url": "https://audio.love/",
+      "snippet": "Stream thousands of erotic audio stories, ASMR roleplay and audio porn from gonewildaudio creators — F4M, F4F, whispers, sleep …"
+    },
+    {
+      "title": "Erotic Audio Sex Stories - FrolicMe",
+      "url": "https://www.frolicme.com/erotic-audio/",
+      "snippet": "With a range of categories to choose from, you can listen to our erotic sex audio stories voiced by both males and females, with …"
+    },
+    {
+      "title": "Bedtime Stories with Salty Vixen – Free Erotic Audio Stories",
+      "url": "https://www.saltyvixenstories.com/free-erotic-audio-stories/",
+      "snippet": "Explore sensual bedtime tales, romantic audio fiction, and intimate storytelling crafted for relaxation and pleasure. No subscription, …"
+    }
+  ]
+}

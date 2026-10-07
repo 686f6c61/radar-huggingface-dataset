@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JoaoZaokk/ConvRot-Mixed-INT8-for-Qwen-Image-2.1",
+  "slug": "joaozaokk-convrot-mixed-int8-for-qwen-image-2-1",
+  "author": "JoaoZaokk",
+  "url": "https://huggingface.co/JoaoZaokk/ConvRot-Mixed-INT8-for-Qwen-Image-2.1",
+  "created_at": "2026-10-06T18:47:39.000Z",
+  "updated_at": "2026-10-06T18:55:22.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "text-to-image",
+    "quantized",
+    "int4",
+    "int8",
+    "convrot",
+    "mixed-precision",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31159698099,
+  "storage_human": "31.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Woody Allen Once Asked Scarlett Johansson About Her Virginity to …",
+      "url": "https://www.cheatsheet.com/news/woody-allen-asked-scarlett-johansson-virginity-break-tension-film.html/",
+      "snippet": "May 21, 2022 · Scarlett Johansson once revealed that Woody Allen would bring up her virginity between scenes while filming."
+    },
+    {
+      "title": "Scarlett Johansson Opens Up About Being Sexualized at a Young …",
+      "url": "https://www.instyle.com/scarlett-johansson-objectified-exploited-early-career-vanity-fair-11734643",
+      "snippet": "May 14, 2025 · Scarlett Johansson opened up about being sexualized as a young actress in an interview with Vanity Fair released on …"
+    },
+    {
+      "title": "Scarlett Johansson says she was ‘hypersexualised’ as a teenager in ...",
+      "url": "https://www.independent.co.uk/arts-entertainment/films/news/scarlett-johansson-hypersexualised-teenager-hollywood-metoo-a9202406.html",
+      "snippet": "Nov 14, 2019 · Scarlett Johansson has said she believes she was “hypersexualised” as a teenager in Hollywood. Speaking to The …"
+    },
+    {
+      "title": "Scarlett Johansson Talks Acting From A Young Age And Being ...",
+      "url": "https://www.cinemablend.com/movies/scarlett-johansson-talks-acting-from-a-young-age-and-being-hypersexualized-early-in-her-career",
+      "snippet": "Oct 12, 2022 · Scarlett Johansson talked about acting from a young age and being \"hypersexualized\" early in her career."
+    },
+    {
+      "title": "I was hypersexualised as a teenager in Hollywood: Scarlett Johansson",
+      "url": "https://tribune.com.pk/story/2100752/hypersexualised-teenager-hollywood-scarlett-johansson",
+      "snippet": "Nov 16, 2019 · In a recent turn of events, Scarlett Johansson claimed that she was “hypersexualised” as a teenager in Hollywood."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "andria909/bert-finetuned-ner",
+  "slug": "andria909-bert-finetuned-ner",
+  "author": "andria909",
+  "url": "https://huggingface.co/andria909/bert-finetuned-ner",
+  "created_at": "2026-10-06T18:58:19.000Z",
+  "updated_at": "2026-10-06T19:11:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 1063104040,
+  "storage_human": "1.1 GB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection 411 80% 11min - 1080p Yogujogu Usha Didi and Stepbrother on Rooftop | AI Generated | Hindi | Original …"
+    },
+    {
+      "title": "XNXX More Free Porn Sites - XNXX.COM",
+      "url": "https://info.xnxx.com/more-free-porn-sites",
+      "snippet": "XNXX More Free Porn Sites ## Visit them all, we link only to the best sites! World Sex AL4A Stocking Tease"
+    },
+    {
+      "title": "XNXX",
+      "url": "https://amp.xnxx.com/todays-selection/4",
+      "snippet": "Você não quer vir aqui eu tenho que brincar com esse brinquedo 1.3k 81% 10min - 1080p"
+    },
+    {
+      "title": "XNXX Terms of service - XNXX.COM",
+      "url": "https://info.xnxx.com/legal/tos",
+      "snippet": "Feb 17, 2024 · XNXX is rated with RTA (Restricted to Adults) label.PARENTS, you can easily block access for your children to this …"
+    }
+  ]
+}

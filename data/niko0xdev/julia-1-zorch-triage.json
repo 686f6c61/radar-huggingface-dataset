@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "niko0xdev/julia-1-zorch-triage",
+  "slug": "niko0xdev-julia-1-zorch-triage",
+  "author": "niko0xdev",
+  "url": "https://huggingface.co/niko0xdev/julia-1-zorch-triage",
+  "created_at": "2026-10-06T23:10:26.000Z",
+  "updated_at": "2026-10-06T23:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "julia-1",
+    "ticket-triage",
+    "jira",
+    "sdlc",
+    "multilingual",
+    "text-classification",
+    "en",
+    "vi",
+    "ko",
+    "base_model:SupersonicLabs/Julia-1",
+    "base_model:finetune:SupersonicLabs/Julia-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144292870,
+  "parameters_human": "144.3M",
+  "storage_bytes": 611552244,
+  "storage_human": "612 MB",
+  "base_model": "SupersonicLabs/Julia-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

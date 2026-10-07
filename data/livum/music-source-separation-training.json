@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Livum/Music-Source-Separation-Training",
+  "slug": "livum-music-source-separation-training",
+  "author": "Livum",
+  "url": "https://huggingface.co/Livum/Music-Source-Separation-Training",
+  "created_at": "2026-10-06T23:00:44.000Z",
+  "updated_at": "2026-10-06T23:00:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2305.07489",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4605205544,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 companies that harness the power of AI - The Times",
+      "url": "https://www.thetimes.com/static/ai-artificial-intelligence-technology-hurst-business/",
+      "snippet": "14.05.2025 ... From beefing up data security to laying down music tracks, this technology is transforming industries."
+    },
+    {
+      "title": "notavik: Private On-Device AI Medical Scribe — iPhone, iPad, Mac",
+      "url": "https://notavik.com/",
+      "snippet": "... AI model, and not into anyone's training data. There is no fourth row ... Speaker separation is fixed at two roles. A third person in the room gets ..."
+    },
+    {
+      "title": "Bio‐Plausible Multimodal Learning with Emerging Neuromorphic ...",
+      "url": "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202406242",
+      "snippet": "11.09.2024 ... Fusion involves integrating data from various sources to enhance target prediction accuracy, such as video and audio recognition, multimodal ..."
+    },
+    {
+      "title": "Program - ICBS 2026",
+      "url": "https://www.icbs2026.org/program/",
+      "snippet": "... source to power the first public AI-driven Handwritten Text Recognition (HTR) model on Transkribus. Tue 4:15 pm – 6:00 pm. 25 max. Theatron—Experience ..."
+    },
+    {
+      "title": "Workflow Automation over Diagnostics: Where European Healthcare ...",
+      "url": "https://www.healthcare.digital/single-post/workflow-automation-over-diagnostics-where-european-healthcare-pe-capital-is-flowing",
+      "snippet": "23.07.2026 ... The underwriting path for diagnostic tools is burdened by early-stage model training, multi-year certification phases and complex integration ..."
+    }
+  ]
+}

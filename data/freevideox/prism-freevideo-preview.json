@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FreeVideoX/Prism-FreeVideo-Preview",
+  "slug": "freevideox-prism-freevideo-preview",
+  "author": "FreeVideoX",
+  "url": "https://huggingface.co/FreeVideoX/Prism-FreeVideo-Preview",
+  "created_at": "2026-10-06T19:55:27.000Z",
+  "updated_at": "2026-10-07T02:15:10.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "video-generation",
+    "audio-generation",
+    "image-to-video",
+    "freevideo",
+    "prism",
+    "wan2.2",
+    "base_model:FrancisRing/Prism",
+    "base_model:finetune:FrancisRing/Prism",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114387337246,
+  "storage_human": "114.4 GB",
+  "base_model": "FrancisRing/Prism",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dernières vidéos porno UHD 4K 2160p et films de sexe gratuits",
+      "url": "https://fra.xhamster.com/4k/newest",
+      "snippet": "2 days ago · Regarde les mille et quelques nouvelles vidéos porno UHD 4K 2160p qui sont ajoutées chaque jour sur xHamster. Mate …"
+    },
+    {
+      "title": "Porno en français UHD 4K 2160p - xHamster",
+      "url": "https://fra.xhamster.com/categories/fr/4k",
+      "snippet": "Trouvez les pornos UHD 4K 2160p en français les plus excitants à regarder gratuitement. Profitez de vidéos Français avec des …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites en 4K HD ⭐️ Vidéos Complètes !",
+      "url": "https://www.freepornvideos.xxx/fr/",
+      "snippet": "Regardez 🔥 Des vidéos porno complètes des meilleurs studios en Ultra HD. AUCUNE PUBLICITÉ ennuyeuse"
+    },
+    {
+      "title": "VIDÉO PORNO GRATUITE EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/",
+      "snippet": "Porno gratuit en français, plus de 100 Vidéos Porno chaque heure. Porndroids.com est un service de hosting gratuit pour des vidéos …"
+    },
+    {
+      "title": "Vidéos Porno Gratuites - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/home/fr",
+      "snippet": "XVIDEOS Vidéos Porno Gratuites J'ai laissé le bricoleur me déchirer la chatte - Une femme mariée coquine devient folle du Noir …"
+    }
+  ]
+}

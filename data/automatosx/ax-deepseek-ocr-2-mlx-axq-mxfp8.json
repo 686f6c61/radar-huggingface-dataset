@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-DeepSeek-OCR-2-MLX-AXQ-MXFP8",
+  "slug": "automatosx-ax-deepseek-ocr-2-mlx-axq-mxfp8",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-DeepSeek-OCR-2-MLX-AXQ-MXFP8",
+  "created_at": "2026-10-03T20:01:19.000Z",
+  "updated_at": "2026-10-06T21:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseekocr_2",
+    "mlx-vlm",
+    "axquant",
+    "axq",
+    "mxfp8",
+    "deepseek",
+    "ocr",
+    "vision",
+    "development",
+    "image-text-to-text",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-OCR-2",
+    "base_model:quantized:deepseek-ai/DeepSeek-OCR-2",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 3389119360,
+  "parameters_human": "3.39B",
+  "storage_bytes": 4096521100,
+  "storage_human": "4.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-OCR-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Drive : connexion",
+      "url": "https://drive.google.com/drive/my-drive?hl=fr",
+      "snippet": "Accédez à Google Drive avec un compte Google (à usage personnel) ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google ドライブ: ログイン - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=ja",
+      "snippet": "Google ドライブには、Google アカウント（個人ユーザー向け）または Google Workspace アカウント（ビジネス ユーザー向け） …"
+    },
+    {
+      "title": "Google Диск: вход в систему - Google Drive",
+      "url": "https://drive.google.com/drive/?hl=ru",
+      "snippet": "Используйте Google Диск в аккаунте Google (для личных целей) или в аккаунте Google Workspace (для бизнеса)."
+    },
+    {
+      "title": "Disk Google: přihlášení - Google Drive",
+      "url": "https://drive.google.com/drive/my-drive?hl=cs",
+      "snippet": "Použijte Disk Google s účtem Google (pro osobní účely) nebo s účtem Google Workspace (pro firemní účely)."
+    }
+  ]
+}

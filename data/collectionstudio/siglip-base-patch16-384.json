@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/siglip-base-patch16-384",
+  "slug": "collectionstudio-siglip-base-patch16-384",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/siglip-base-patch16-384",
+  "created_at": "2026-10-06T18:53:05.000Z",
+  "updated_at": "2026-10-06T18:53:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "siglip",
+    "vision",
+    "arxiv:2303.15343",
+    "arxiv:2209.06794",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 203447810,
+  "parameters_human": "203.4M",
+  "storage_bytes": 814638010,
+  "storage_human": "815 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

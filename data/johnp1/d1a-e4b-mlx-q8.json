@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "JohnP1/d1a-e4b-mlx-q8",
+  "slug": "johnp1-d1a-e4b-mlx-q8",
+  "author": "JohnP1",
+  "url": "https://huggingface.co/JohnP1/d1a-e4b-mlx-q8",
+  "created_at": "2026-10-01T09:39:58.000Z",
+  "updated_at": "2026-10-07T01:21:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "d1a",
+    "decision-model",
+    "pull-requests",
+    "apple-silicon",
+    "quantized",
+    "text-classification",
+    "en",
+    "ja",
+    "base_model:JohnP1/d1a-e4b",
+    "base_model:quantized:JohnP1/d1a-e4b",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 67,
+  "trending_score": 0,
+  "parameters": 7463013376,
+  "parameters_human": "7.46B",
+  "storage_bytes": 27160305942,
+  "storage_human": "27.2 GB",
+  "base_model": "JohnP1/d1a-e4b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

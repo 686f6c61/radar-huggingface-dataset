@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shuhant/foundation-action-pareto-l-209m-dino",
+  "slug": "shuhant-foundation-action-pareto-l-209m-dino",
+  "author": "shuhant",
+  "url": "https://huggingface.co/shuhant/foundation-action-pareto-l-209m-dino",
+  "created_at": "2026-10-06T22:44:18.000Z",
+  "updated_at": "2026-10-06T22:44:39.000Z",
+  "license": "nvidia-internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "foundation-action",
+    "world-model",
+    "pareto",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 209249280,
+  "parameters_human": "209.2M",
+  "storage_bytes": 837031944,
+  "storage_human": "837 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TOP 25 CANADA DAY QUOTES | A-Z Quotes",
+      "url": "https://www.azquotes.com/quotes/topics/canada-day.html",
+      "snippet": "Jun 14, 1984 · Enjoy our canada day quotes collection. Best canada day quotes selected by thousands of our users!"
+    },
+    {
+      "title": "TOP 25 HISTORY QUOTES (of 1000) | A-Z Quotes",
+      "url": "https://www.azquotes.com/quotes/topics/history.html",
+      "snippet": "Jan 19, 2016 · Enjoy our history quotes collection by famous authors, historians and philosophers. Best history quotes selected by …"
+    },
+    {
+      "title": "【quote of the day】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/6562590",
+      "snippet": "【ネイティブが回答】「quote of the day」 は \"日本語\" でなんて言うの？質問に2件の回答が集まっています！Hinativeでは\"日本語\" …"
+    },
+    {
+      "title": "Quote of the day \"】 は 日本語 で何と言いますか？ | HiNative",
+      "url": "https://ja.hinative.com/questions/19515539",
+      "snippet": "「Quote of the day」を日本語でどう言うかについての質問と回答が掲載されています。"
+    },
+    {
+      "title": "首页 - 知乎",
+      "url": "https://www.zhihu.com/?lang=zh-Hant",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

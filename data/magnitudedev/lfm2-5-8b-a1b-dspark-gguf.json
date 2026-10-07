@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "magnitudedev/LFM2.5-8B-A1B-DSpark-GGUF",
+  "slug": "magnitudedev-lfm2-5-8b-a1b-dspark-gguf",
+  "author": "magnitudedev",
+  "url": "https://huggingface.co/magnitudedev/LFM2.5-8B-A1B-DSpark-GGUF",
+  "created_at": "2026-10-06T22:00:56.000Z",
+  "updated_at": "2026-10-06T22:04:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speculative-decoding",
+    "magnitude",
+    "base_model:LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF",
+    "license:other",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 327707521,
+  "parameters_human": "327.7M",
+  "storage_bytes": 356491168,
+  "storage_human": "356 MB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B-DSpark-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottgl (Scott Glover) – Likes - Hugging Face",
+      "url": "https://huggingface.co/scottgl/activity/likes",
+      "snippet": "Recent Activity. liked a model about 4 hours ago. LiquidAI/LFM2.5-8B-A1B-MLX-6bit ... magnitudedev/Qwen3.8-27B-DSpark-GGUF. 1B • Updated 18 days ago • 11.7k ..."
+    },
+    {
+      "title": "I measured Magnitude's \"92% faster than llama.cpp\" claim on ... - note",
+      "url": "https://note.com/hacklog_stealth/n/nd8b606b944d2?hl=en",
+      "snippet": "vor 6 Tagen ... Next, I will compare the speed of the Liquid LFM2.5 8B-A1B, which Magnitude displays as 'Acceleration: DSpark', including speculative decoding, ..."
+    },
+    {
+      "title": "Magnitudeの「llama.cpp比2倍」を整理する — 16GB Macでは ...",
+      "url": "https://zenn.dev/amu_lab/articles/magnitude-vs-llamacpp-16gb-mac-benchmark",
+      "snippet": "vor 4 Tagen ... catalog pull で入るのは、Hugging Face の標準 GGUF（ LiquidAI/LFM2.5-8B-A1B-GGUF の Q4_K_M ）と、DSpark 用の下書きモデル（ LFM2.5-8B-A1B-DSpark- ..."
+    },
+    {
+      "title": "Magnitudeの「llama.cppより92%速い」を16GBのM4で測りました ...",
+      "url": "https://note.com/hacklog_stealth/n/nd8b606b944d2",
+      "snippet": "vor 6 Tagen ... ... gguf:q4 $M models status minicpm5-1b:gguf:q4 ... 次にやるなら、Magnitude が「Acceleration: DSpark」と表示する Liquid LFM2.5 8B-A1B で、投機的 ..."
+    },
+    {
+      "title": "Magnitude의 'llama.cpp보다 92% 빠르다'는 주장을 16GB M4에서 ...",
+      "url": "https://note.com/hacklog_stealth/n/nd8b606b944d2?hl=ko",
+      "snippet": "vor 6 Tagen ... ... gguf:q4 $M models status minicpm5-1b:gguf:q4 ... 다음으로 해볼 것은 Magnitude가 'Acceleration: DSpark'라고 표시하는 Liquid LFM2.5 8B-A1B 모델로, ..."
+    }
+  ]
+}

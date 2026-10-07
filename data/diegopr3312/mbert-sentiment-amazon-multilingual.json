@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Diegopr3312/mbert-sentiment-amazon-multilingual",
+  "slug": "diegopr3312-mbert-sentiment-amazon-multilingual",
+  "author": "Diegopr3312",
+  "url": "https://huggingface.co/Diegopr3312/mbert-sentiment-amazon-multilingual",
+  "created_at": "2026-10-06T23:27:48.000Z",
+  "updated_at": "2026-10-06T23:38:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "multilingual",
+    "es",
+    "en",
+    "fr",
+    "dataset:mteb/amazon_reviews_multi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177855747,
+  "parameters_human": "177.9M",
+  "storage_bytes": 1422893016,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

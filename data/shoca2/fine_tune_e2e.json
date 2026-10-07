@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shoca2/fine_tune_e2e",
+  "slug": "shoca2-fine_tune_e2e",
+  "author": "shoca2",
+  "url": "https://huggingface.co/shoca2/fine_tune_e2e",
+  "created_at": "2026-09-15T16:21:50.000Z",
+  "updated_at": "2026-10-07T01:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171377373,
+  "storage_human": "171 MB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Big Ass Porn & Anal Videos",
+      "url": "https://www.assoass.com/",
+      "snippet": "Ass Videos and Anal Movies. All you booty lovers out there will enjoy this site, 100% guaranteed. We offer free streaming porn tubes, …"
+    },
+    {
+      "title": "MILF Porn @ Ass'O'Ass",
+      "url": "https://www.assoass.com/category/milf",
+      "snippet": "MILF Porn tubes at Ass O Ass. All you booty lovers out there will enjoy this page, 100% guaranteed. We offer free streaming porn …"
+    },
+    {
+      "title": "Vídeos de Big Ass Anal en Ass'O'Ass",
+      "url": "https://www.assoass.com/es/category/big-ass-anal",
+      "snippet": "Vídeos porno de Big Ass Anal en Ass O Ass. Si te gustan los culos, esta página es para ti. Garantizado. Tenemos vídeos porno …"
+    },
+    {
+      "title": "Hot Mom Porn @ Ass'O'Ass",
+      "url": "https://www.assoass.com/category/hot-mom",
+      "snippet": "Hot Mom Porn tubes at Ass O Ass. All you booty lovers out there will enjoy this page, 100% guaranteed. We offer free streaming …"
+    },
+    {
+      "title": "Asian Ass Porn @ Ass'O'Ass",
+      "url": "https://www.assoass.com/category/asian-ass",
+      "snippet": "Asian Ass Porn tubes at Ass O Ass. All you booty lovers out there will enjoy this page, 100% guaranteed. We offer free streaming …"
+    }
+  ]
+}

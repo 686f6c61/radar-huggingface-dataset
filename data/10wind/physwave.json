@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "10wind/PhysWave",
+  "slug": "10wind-physwave",
+  "author": "10wind",
+  "url": "https://huggingface.co/10wind/PhysWave",
+  "created_at": "2026-09-28T19:44:55.000Z",
+  "updated_at": "2026-10-06T20:44:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "spatial-audio",
+    "ambisonics",
+    "diffusion",
+    "arxiv:2608.29549",
+    "text-to-audio",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5499897495,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

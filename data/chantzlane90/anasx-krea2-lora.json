@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/anasx-krea2-lora",
+  "slug": "chantzlane90-anasx-krea2-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/anasx-krea2-lora",
+  "created_at": "2026-10-06T21:35:11.000Z",
+  "updated_at": "2026-10-06T21:35:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234676912,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Php Reports - GitHub Pages",
+      "url": "https://jdorn.github.io/php-reports/",
+      "snippet": "Php Reports simplifies managing and displaying database reports. You write reports in SQL, javascript, or PHP (depending on the …"
+    },
+    {
+      "title": "GitHub - jdorn/php-reports: A PHP framework for displaying reports …",
+      "url": "https://github.com/jdorn/php-reports",
+      "snippet": "Reports can be exported to a number of formats including CSV, XLS, JSON, and XML. The Php Reports framework ties together all …"
+    },
+    {
+      "title": "Stimulsoft Reports.PHP – Embedded Reporting Tool for PHP",
+      "url": "https://www.stimulsoft.com/en/products/reports-php",
+      "snippet": "Embedded reporting tool for PHP applications. Create, view, and export reports using a client-server architecture with PHP on the …"
+    },
+    {
+      "title": "php-reports · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/php-reports",
+      "snippet": "Jul 10, 2024 · Reports.PHP is a report generator intended to create, view, print, and export reports online using client-server …"
+    },
+    {
+      "title": "KoolReport - The Open Source PHP Reporting Framework",
+      "url": "https://www.koolreport.com/",
+      "snippet": "KoolReport, an intuitive and flexible Open Source PHP Reporting Framework for faster and easier report delivery."
+    }
+  ]
+}

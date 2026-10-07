@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "cmjatom/dge-all-tags-tagger",
+  "slug": "cmjatom-dge-all-tags-tagger",
+  "author": "cmjatom",
+  "url": "https://huggingface.co/cmjatom/dge-all-tags-tagger",
+  "created_at": "2026-10-07T00:55:33.000Z",
+  "updated_at": "2026-10-07T00:55:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio-classification",
+    "music-tagging",
+    "efficientat",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22608189,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

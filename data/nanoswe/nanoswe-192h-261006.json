@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nanoswe/nanoswe-192h-261006",
+  "slug": "nanoswe-nanoswe-192h-261006",
+  "author": "nanoswe",
+  "url": "https://huggingface.co/nanoswe/nanoswe-192h-261006",
+  "created_at": "2026-10-06T21:21:10.000Z",
+  "updated_at": "2026-10-06T21:32:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "nanochat",
+    "nanoswe",
+    "swe-bench",
+    "code",
+    "software-engineering-agent",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "dataset:nanoswe/nanoswe-trajs-261002",
+    "dataset:karpathy/fineweb-edu-100b-shuffle",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2818575450,
+  "parameters_human": "2.82B",
+  "storage_bytes": 5637176228,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Humiliated by a black boy by Brainbox - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/humiliated-by-a-black-boy-by-brainbox.239113/",
+      "snippet": "Apr 22, 2012 · mrblonde74 Porn Surfer Joined: Apr 18, 2012 Messages: 29 Apr 22, 2012 Humiliated by a Boy – A cuckold’s wish For …"
+    },
+    {
+      "title": "Hear Ye Hear Ye looke at ye olde porn | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/hear-ye-hear-ye-looke-at-ye-olde-porn.409329/",
+      "snippet": "Mar 13, 2016 · Buzzlightyear Porn Star Joined: Apr 4, 2015 Messages: 1,818 Mar 13, 2016 Like x 21 Friendly x 1"
+    },
+    {
+      "title": "Caption GIFS and PICS Porn Thread | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/caption-gifs-and-pics-porn-thread.379087/",
+      "snippet": "Jul 24, 2015 · drum231 and I have decided to start an new thread devoted exclusively to gifs and pics with captions or stories …"
+    },
+    {
+      "title": "Family Trip to the Nudist Camp - part 4 - mom and sister, dad",
+      "url": "https://forum.xnxx.com/threads/family-trip-to-the-nudist-camp-part-4-mom-and-sister-dad.26012/",
+      "snippet": "Jun 18, 2020 · This is another story about our first family trip to the nudist camp - I was 12 at the time, my sister Jennifer was 11, and …"
+    },
+    {
+      "title": "Real incest stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/real-incest-stories.634543/",
+      "snippet": "Sep 30, 2024 · I love hearing about real incest stories. I think it’s the hottest ever! Tell me about experiences"
+    }
+  ]
+}

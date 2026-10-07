@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nexaaii/gemma-4-tfd-swe-agent",
+  "slug": "nexaaii-gemma-4-tfd-swe-agent",
+  "author": "nexaaii",
+  "url": "https://huggingface.co/nexaaii/gemma-4-tfd-swe-agent",
+  "created_at": "2026-10-06T18:58:18.000Z",
+  "updated_at": "2026-10-06T19:05:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/kaggle/input/models/thomasplocher/gemma-4-31b-w4a16-ct-mirror/transformers/gemma-4-31b-it-qat-w4a16-ct/1",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3804499804,
+  "storage_human": "3.8 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter au Webmail La Poste – Laposte.net",
+      "url": "https://laposte.net/accueil",
+      "snippet": "Votre application laposte.net profitez de votre messagerie en toute mobilité En savoir plus"
+    },
+    {
+      "title": "Laposte.net",
+      "url": "https://laposte.net/netmail/authentification",
+      "snippet": "Accédez à votre boîte aux lettres laposte.net et gérez vos messages en toute simplicité."
+    },
+    {
+      "title": "Application laposte.net pour consulter vos mails - La Poste",
+      "url": "https://www.laposte.fr/webmail",
+      "snippet": "Laposte.net se modernise et propose une toute nouvelle interface, simple et intuitive, pour sa messagerie en ligne. Accessibles sur …"
+    },
+    {
+      "title": "Connexion – Laposte.net",
+      "url": "https://www.education.laposte.net/",
+      "snippet": "laposte.net c'est aussi : Un espace de stockage de 5 Go, pour archiver tous vos courriels Un anti-spam intégré, qui filtre …"
+    },
+    {
+      "title": "Accéder à Mon Compte La Poste - La Poste",
+      "url": "https://www.laposte.fr/moncompte-laposte-avantages",
+      "snippet": "Je suis facilement tous mes courriers et colis sur laposte.fr Je peux à tout moment suivre mes livraisons de colis Chronopost et …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ron-jo",
   "url": "https://huggingface.co/ron-jo/hubert-base-phoneme-en-onnx",
   "created_at": "2026-10-03T01:51:36.000Z",
-  "updated_at": "2026-10-03T02:09:19.000Z",
+  "updated_at": "2026-10-06T23:42:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 217162400,
-  "storage_human": "217 MB",
+  "storage_bytes": 339114594,
+  "storage_human": "339 MB",
   "base_model": "Peacockery/hubert-base-phoneme-en",
   "formats": [
     "onnx"

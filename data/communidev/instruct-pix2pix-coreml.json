@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CommuniDev/instruct-pix2pix-coreml",
+  "slug": "communidev-instruct-pix2pix-coreml",
+  "author": "CommuniDev",
+  "url": "https://huggingface.co/CommuniDev/instruct-pix2pix-coreml",
+  "created_at": "2026-10-06T20:53:52.000Z",
+  "updated_at": "2026-10-06T20:56:30.000Z",
+  "license": "mit-and-creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "core-ml",
+    "instruct-pix2pix",
+    "image-to-image",
+    "ios",
+    "arxiv:2211.09800",
+    "base_model:timbrooks/instruct-pix2pix",
+    "base_model:finetune:timbrooks/instruct-pix2pix",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1560592260,
+  "storage_human": "1.6 GB",
+  "base_model": "timbrooks/instruct-pix2pix",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yale GLP 16 AF LPG forklift specs & dimensions (1996 - 2005) | Lift ...",
+      "url": "https://www.lectura-specs.com/en/model/forklifts/lpg-forklifts-yale/glp-16-af-986743",
+      "snippet": "See detailed specs & dimensions for Yale GLP 16 AF LPG forklift manufactured in (1996 - 2005). All specifications for Yale GLP 16 …"
+    },
+    {
+      "title": "Yale GLP 16 AF Fiches techniques & données techniques (1996-2005 ...",
+      "url": "https://www.lectura-specs.fr/fr/modele/chariots-elevateurs-a-fourche/chariots-elevateurs-frontaux-a-gaz-yale/glp-16-af-986743",
+      "snippet": "Faites votre recherche de pièces détachées de haute qualité pour Yale GLP 16 AF en ligne! En quelques étapes simples, vous …"
+    },
+    {
+      "title": "Yale GLP16AF - Parts in stock! | TVH",
+      "url": "https://www.tvh.com/parts/models/forklifts-ic/yale/yale-glp16af",
+      "snippet": "In need of parts and accessories suitable for your Yale GLP16AF? You name it, we have it! Become a customer and discover what …"
+    },
+    {
+      "title": "Chariots élévateurs thermiques GDP/GLP 16-20 VX | Yale",
+      "url": "https://www.yale.com/fr-fr/emea/chariots-elevateurs-thermiques-sur-pneus-gonflables/gdpglp16-20vx2/",
+      "snippet": "La surveillance sans fil, le premier niveau de l'offre de télémétrie Yale Vision, est installée de série sur tous les chariots thermiques …"
+    },
+    {
+      "title": "Yale GLP16AF - Machines for sale & specifications Used machines",
+      "url": "https://www.exapro.com/sp/yale-glp16af-22842/",
+      "snippet": "For sale used Yale GLP16AF available in France (FR), find used Handling - Forklifts - Gas forklifts on our marketplace"
+    }
+  ]
+}

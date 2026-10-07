@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "zmf2023/robotwin2",
+  "slug": "zmf2023-robotwin2",
+  "author": "zmf2023",
+  "url": "https://huggingface.co/zmf2023/robotwin2",
+  "created_at": "2026-09-28T14:58:37.000Z",
+  "updated_at": "2026-10-07T02:08:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 256057476642,
+  "storage_human": "256.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

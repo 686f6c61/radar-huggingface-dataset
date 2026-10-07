@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "magnitudedev/Qwen3.8-27B-DFlash2-GGUF",
+  "slug": "magnitudedev-qwen3-8-27b-dflash2-gguf",
+  "author": "magnitudedev",
+  "url": "https://huggingface.co/magnitudedev/Qwen3.8-27B-DFlash2-GGUF",
+  "created_at": "2026-10-06T21:57:22.000Z",
+  "updated_at": "2026-10-06T22:04:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speculative-decoding",
+    "magnitude",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2-GGUF",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2056414848,
+  "storage_human": "2.1 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David Hendrickson (@TeksEdge) / X",
+      "url": "https://x.com/TeksEdge",
+      "snippet": "pplx-decider-v1-27b is a Qwen3.8-27B fine-tune. Apache 2.0. Choices in ... A tiny AI startup built a frontier AI system wo training a new foundation model."
+    },
+    {
+      "title": "AI briefing, 19 September 2026: Jev, Claude Code, Codex - Bloger.fm",
+      "url": "https://bloger.fm/briefings/2026-09-19/",
+      "snippet": "19.09.2026 ... Qwen3.8-27B at 144 tok/s on an M5 Max MacBook Pro ⚡ > Meet Inco Splash: our open-source inference engine, built around the model and around ..."
+    },
+    {
+      "title": "AI圈儿: 实时新闻",
+      "url": "https://aidailynews.com.cn/",
+      "snippet": "AI初创公司PrismML发布Bonsai 2 27B模型，通过三值权重压缩技术将Qwen3.8 27B压缩至5.9GB，实现9-10倍内存缩减，同时保持98%基准性能。该技术旨在让大型推理模型能在PC ..."
+    }
+  ]
+}

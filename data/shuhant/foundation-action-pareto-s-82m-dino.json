@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shuhant/foundation-action-pareto-s-82m-dino",
+  "slug": "shuhant-foundation-action-pareto-s-82m-dino",
+  "author": "shuhant",
+  "url": "https://huggingface.co/shuhant/foundation-action-pareto-s-82m-dino",
+  "created_at": "2026-10-06T22:41:07.000Z",
+  "updated_at": "2026-10-06T22:41:21.000Z",
+  "license": "nvidia-internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "foundation-action",
+    "world-model",
+    "pareto",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82367104,
+  "parameters_human": "82.4M",
+  "storage_bytes": 329502968,
+  "storage_human": "330 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shuhant/foundational_action · Hugging Face",
+      "url": "https://huggingface.co/shuhant/foundational_action",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shuhant (Shuhan Tan) - Hugging Face",
+      "url": "https://huggingface.co/shuhant/models",
+      "snippet": "Follow 0 followers 1 following AI & ML interests None yet Recent Activity updateda model5 days ago"
+    },
+    {
+      "title": "GitHub - FrankMOWJ/dino",
+      "url": "https://github.com/FrankMOWJ/dino",
+      "snippet": "Methods: We design a foundation model-based depth estimation method, referred to as Surgical-DINO, a low-rank adaptation of the DINOv2 for depth estimation in endoscopic surgery. We build LoRA layers and integrate them into DINO to adapt with surgery-specific domain knowledge instead of conventional fine-tuning."
+    },
+    {
+      "title": "DINO: Self-Supervised Vision Transformers and Their Emerging ... - Medium",
+      "url": "https://medium.com/@jimcanary/dino-self-supervised-vision-transformers-and-their-emerging-properties-7f9e5f4adac4",
+      "snippet": "This article is a summary of the groundbreaking paper \"Emerging Properties in Self-Supervised Vision Transformers\" by Caron et al."
+    },
+    {
+      "title": "Chinese AI model investigated after researcher says it provided ... - MSN",
+      "url": "https://www.msn.com/en-us/technology/artificial-intelligence/chinese-ai-model-investigated-after-researcher-says-it-provided-instructions-for-bioweapons-assassinations/ar-AA2dnJQy",
+      "snippet": "Researcher Peter Garrigan says Moonshot AI&#x27;s Kimi model was manipulated into providing instructions for biological weapons and assassination plans."
+    }
+  ]
+}

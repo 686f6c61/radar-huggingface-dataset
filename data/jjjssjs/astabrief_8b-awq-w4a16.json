@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jjjssjs/AstaBrief_8B-AWQ-W4A16",
+  "slug": "jjjssjs-astabrief_8b-awq-w4a16",
+  "author": "jjjssjs",
+  "url": "https://huggingface.co/jjjssjs/AstaBrief_8B-AWQ-W4A16",
+  "created_at": "2026-10-06T22:31:41.000Z",
+  "updated_at": "2026-10-07T02:01:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "awq",
+    "quantization",
+    "4-bit",
+    "deep-research",
+    "science",
+    "scholar-qa",
+    "conversational",
+    "en",
+    "base_model:allenai/AstaBrief_8B",
+    "base_model:quantized:allenai/AstaBrief_8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6110039757,
+  "storage_human": "6.1 GB",
+  "base_model": "allenai/AstaBrief_8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Chris Taylor - Global transformation focused CDIO | LinkedIn",
+      "url": "https://fr.linkedin.com/in/chris-taylor-digital",
+      "snippet": "Global transformation focused CDIO · International senior executive motivated by transformational change. Focused on driving …"
+    },
+    {
+      "title": "Yasser Shaker - CEO Orange Middle East and Africa | LinkedIn",
+      "url": "https://fr.linkedin.com/in/yasser-shaker-5031766",
+      "snippet": "CEO Orange Middle East and Africa · At Orange MEA, we’re driving digital and financial inclusion across our countries in Africa and …"
+    },
+    {
+      "title": "Dominique Tchimbakala - Freelance | LinkedIn",
+      "url": "https://fr.linkedin.com/in/dominique-tchimbakala-08930b12",
+      "snippet": "Journaliste avec 26 ans d&#39;expérience, ex présentatrice du JT TV5MONDE, France 2, France 5… · Expérience : Freelance · …"
+    },
+    {
+      "title": "Yann FERGUSON - Inria Directeur scientifique du LaborIA | LinkedIn",
+      "url": "https://fr.linkedin.com/in/yann-ferguson-09a732100",
+      "snippet": "Inria Directeur scientifique du LaborIA · Je suis docteur en sociologie à Inria et chercheur associé au CERTOP (Université Jean …"
+    }
+  ]
+}

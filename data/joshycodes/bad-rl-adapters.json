@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/bad-rl-adapters",
+  "slug": "joshycodes-bad-rl-adapters",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/bad-rl-adapters",
+  "created_at": "2026-10-06T22:01:41.000Z",
+  "updated_at": "2026-10-07T02:10:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "grafting",
+    "reward-hacking",
+    "alignment",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11917206432,
+  "storage_human": "11.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quartier des Ternes — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Quartier_des_Ternes",
+      "snippet": "Le quartier des Ternes est le 65e quartier administratif de Paris situé dans le 17e arrondissement. Il est également considéré comme …"
+    },
+    {
+      "title": "Les Ternes — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Les_Ternes",
+      "snippet": "Les Ternes sont une commune française située dans le département du Cantal, en région Auvergne-Rhône-Alpes."
+    },
+    {
+      "title": "Ternes station - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ternes_station",
+      "snippet": "Ternes (French pronunciation: [tɛʁn]) is a station on Line 2 of the Paris Métro, under the Place des Ternes on the border between the …"
+    },
+    {
+      "title": "Ternes - Maillot - Mairie du 17ᵉ - Paris",
+      "url": "https://mairie17.paris.fr/pages/ternes-maillot-11878",
+      "snippet": "Sep 2, 2026 · Retrouvez les comptes-rendus des réunions publiques du conseil de quartier Ternes-Maillot des précédentes …"
+    },
+    {
+      "title": "RITM Ternes - Votre Salle de Sport à Paris 17éme – ritmsport",
+      "url": "https://ritm-sport.fr/pages/ternes",
+      "snippet": "RITM Ternes, situé dans le 17e arrondissement de Paris, vous accueille dans un cadre sportif tendance, dévoilant 2 000 m² …"
+    }
+  ]
+}

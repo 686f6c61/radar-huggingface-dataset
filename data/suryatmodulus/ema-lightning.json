@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/ema-lightning",
+  "slug": "suryatmodulus-ema-lightning",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/ema-lightning",
+  "created_at": "2026-10-06T22:27:01.000Z",
+  "updated_at": "2026-10-06T22:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "ema-lightning",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "speech-synthesis",
+    "flow-matching",
+    "tr",
+    "arxiv:2405.14867",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36738216,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Urban Birds Adapt to City Life - ScienceInsights",
+      "url": "https://scienceinsights.org/how-urban-birds-adapt-to-city-life/",
+      "snippet": "Nov 10, 2025 · Discover how birds fundamentally change their behavior and biology to survive the noise, pollution, and unique …"
+    },
+    {
+      "title": "How do birds adapt to urban environments? - The Institute for ...",
+      "url": "https://iere.org/how-do-birds-adapt-to-urban-environments/",
+      "snippet": "Jun 7, 2026 · But how do birds adapt to urban environments? The answer lies in a fascinating interplay of behavioral flexibility, …"
+    },
+    {
+      "title": "How Urban Birds Adapt to City Life [The Evolutionary Hack]",
+      "url": "https://scicentric.org/how-urban-birds-adapt-city-life",
+      "snippet": "May 20, 2026 · Urban birds adapt to city life by executing rapid behavioral and physiological transformations, ranging from altering …"
+    },
+    {
+      "title": "Urban Birds: How Birds Adapt and Thrive in Cities",
+      "url": "https://biologyinsights.com/urban-birds-how-birds-adapt-and-thrive-in-cities/",
+      "snippet": "Jul 31, 2025 · Explore the fascinating dynamic between wild birds and city life, revealing their surprising strategies for survival and …"
+    },
+    {
+      "title": "Urban Adaptations: How Birds Thrive in Cityscapes",
+      "url": "https://www.justwhy.org/animals-nature/urban-adaptations-how-birds-thrive-in-cityscapes",
+      "snippet": "Mar 6, 2026 · Urbanization profoundly impacts bird behavior. The changes in habitat, food availability, and human interaction create …"
+    }
+  ]
+}

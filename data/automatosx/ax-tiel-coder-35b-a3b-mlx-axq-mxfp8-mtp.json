@@ -5,7 +5,7 @@
   "author": "AutomatosX",
   "url": "https://huggingface.co/AutomatosX/AX-Tiel-Coder-35B-A3B-MLX-AXQ-MXFP8-MTP",
   "created_at": "2026-10-04T22:09:38.000Z",
-  "updated_at": "2026-10-04T22:11:43.000Z",
+  "updated_at": "2026-10-06T21:01:54.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 34660608768,
   "parameters_human": "34.66B",

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "compass-group-tue/qwen-3.5-uea-mo",
+  "slug": "compass-group-tue-qwen-3-5-uea-mo",
+  "author": "compass-group-tue",
+  "url": "https://huggingface.co/compass-group-tue/qwen-3.5-uea-mo",
+  "created_at": "2026-10-06T22:03:25.000Z",
+  "updated_at": "2026-10-06T22:18:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "model-organism",
+    "evaluation-awareness",
+    "reasoning",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:finetune:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575830414,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Compass Group France",
+      "url": "https://www.compass-group.fr/",
+      "snippet": "C’est avec près de 245 millions de repas servis par an dans environ 3000 établissements que Compass Group France s’impose …"
+    },
+    {
+      "title": "Plateforme B2B mondiale pour les entreprises et les fournisseurs",
+      "url": "https://fr.kompass.com/",
+      "snippet": "Identifiez, qualifiez et contactez vos prospects B2B grâce aux données d’entreprises Kompass, en France et à l’international."
+    },
+    {
+      "title": "Connexion",
+      "url": "https://sts.compass-group.fr/adfs/ls/IdpInitiatedSignOn.aspx?loginToRp=PortailADPGXPLINK",
+      "snippet": "Connexion avec votre compte professionnel Connexion"
+    },
+    {
+      "title": "Compass24 Online-Shop",
+      "url": "https://www.compass24.fr/",
+      "snippet": "Large assortiment d’accessoires pour bateaux et vêtements de voile chez Compass24 | livraison rapide | grandes marques & …"
+    },
+    {
+      "title": "Les offres - Carte Compass",
+      "url": "https://carte-compass.fr/les-offres/",
+      "snippet": "Les offres Compass Découvre toutes nos offres à travers la France ! Pour le moment, tu peux profiter de ton abonnement Compass …"
+    }
+  ]
+}

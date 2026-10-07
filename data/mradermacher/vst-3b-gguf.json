@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VST-3B-GGUF",
+  "slug": "mradermacher-vst-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VST-3B-GGUF",
+  "created_at": "2026-05-16T10:02:15.000Z",
+  "updated_at": "2026-10-06T22:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "video-understanding",
+    "video-llm",
+    "streaming-video",
+    "arxiv:2603.12262",
+    "en",
+    "base_model:Catalan258/VST-3B",
+    "base_model:quantized:Catalan258/VST-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 264,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 32781709376,
+  "storage_human": "32.8 GB",
+  "base_model": "Catalan258/VST-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

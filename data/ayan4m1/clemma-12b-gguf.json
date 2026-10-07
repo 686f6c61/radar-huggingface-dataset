@@ -5,7 +5,7 @@
   "author": "ayan4m1",
   "url": "https://huggingface.co/ayan4m1/Clemma-12B-GGUF",
   "created_at": "2026-10-04T01:41:54.000Z",
-  "updated_at": "2026-10-05T11:42:19.000Z",
+  "updated_at": "2026-10-06T13:34:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 166,
+  "downloads_30d": 498,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/kianacx-krea2-lora",
+  "slug": "chantzlane90-kianacx-krea2-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/kianacx-krea2-lora",
+  "created_at": "2026-10-06T21:37:29.000Z",
+  "updated_at": "2026-10-06T21:37:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234676912,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosoluce - 2025 Company Profile & Competitors - Tracxn",
+      "url": "https://tracxn.com/d/companies/cosoluce/__QpynzPe31_PjYSiv0JCyS8R_focHkPSJrOVDyAPbzOk",
+      "snippet": "Where is Cosoluce located? Cosoluce is located in Pau, France. Where does Cosoluce rank among its competitors? Cosoluce ranks …"
+    },
+    {
+      "title": "Cosoluce, société de Groupe TSS, acquiert A6CMO, éditeur de …",
+      "url": "https://www.groupetss.com/actualites/cosoluce-a-acquis-a6cmo-entreprise-de-logiciels-vms/",
+      "snippet": "Oct 29, 2024 · En Cosoluce et TSS, nous avons trouvé un propriétaire pérenne, doté d’une expérience significative dans le secteur …"
+    },
+    {
+      "title": "COSOLUCE Sainte Marie des Champs: éditeur de logiciels (levées …",
+      "url": "https://www.annuaire-startups.pro/cosoluce/",
+      "snippet": "Apr 3, 2026 · Cosoluce est un éditeur de logiciels dédié aux collectivités locales, proposant des solutions sur mesure pour répondre …"
+    },
+    {
+      "title": "The Groupe TSS company Cosoluce has acquired the French …",
+      "url": "https://www.totalspecificsolutions.com/insights?nid=148",
+      "snippet": "French software company Cosoluce, part of Total Specific Solutions (\"TSS\"), has acquired the vertical market software (VMS) …"
+    },
+    {
+      "title": "Accompagnement de Total Specific Solutions",
+      "url": "https://www.degrouxbrugere.com/degroux-brugere-total-specific-solution-tss-acquisition-rachat-ma/",
+      "snippet": "Nov 4, 2024 · Le cabinet Degroux Brugère a conseillé Cosoluce, éditeur de logiciels du Groupe TSS, lors de l’acquisition de la …"
+    }
+  ]
+}

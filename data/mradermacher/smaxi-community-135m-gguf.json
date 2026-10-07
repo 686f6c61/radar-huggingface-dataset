@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SMAXI-Community-135M-GGUF",
+  "slug": "mradermacher-smaxi-community-135m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SMAXI-Community-135M-GGUF",
+  "created_at": "2026-10-06T23:31:54.000Z",
+  "updated_at": "2026-10-06T23:33:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "smolllm2",
+    "experimental",
+    "text-extraction",
+    "en",
+    "base_model:Wrooms/SMAXI-Community-135M",
+    "base_model:quantized:Wrooms/SMAXI-Community-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1442420736,
+  "storage_human": "1.4 GB",
+  "base_model": "Wrooms/SMAXI-Community-135M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ویگن دردریان، بردی از یادم بیاد بانو دلکش فقید ترانه‌ پرویز خطیبی آهنگ ...",
+      "url": "https://www.namasha.com/v/ycnMWi7L/%D9%88%DB%8C%DA%AF%D9%86_%D8%AF%D8%B1%D8%AF%D8%B1%DB%8C%D8%A7%D9%86%D8%8C_%D8%A8%D8%B1%D8%AF%DB%8C_%D8%A7%D8%B2_%DB%8C%D8%A7%D8%AF%D9%85_%D8%A8%DB%8C%D8%A7%D8%AF_%D8%A8%D8%A7%D9%86%D9%88_%D8%AF%D9%84%DA%A9%D8%B4_%D9%81%D9%82%DB%8C%D8%AF_%D8%AA%D8%B1%D8%A7%D9%86%D9%87%E2%80%8C_%D9%BE%D8%B1%D9%88%DB%8C%D8%B2_%D8%AE%D8%B7%DB%8C%D8%A8%DB%8C_%D8%A2%D9%87%D9%86%DA%AF_%D9%85%D8%B5%D8%B7%D9%81%DB%8C_%DA%AF%D8%B1%DA%AF%DB%8C%D9%86%E2%80%8C%D8%B2%D8%A7%D8%AF%D9%87%D8%8C_%DA%86%D9%87_%D8%B4%D8%AF_%D8%A2%D9%86%D9%87%D9%85%D9%87_%D9%BE%DB%8C%D9%85%D8%A7%D9%86_%DA%A9%D9%87_%D8%A7%D8%B2_%D8%A2%D9%86_%D9%84%D8%A8_%D8%AE%D9%86%D8%AF%D8%A7%D9%86",
+      "snippet": "May 23, 2024 · در دام افتادم...از غم آزادم دل به تو دادم فتادم به بند ای گل بر اشک خونینم بخند سوزم از سوز نگاهت هنوز چشم من باشد به راهت هنوز چه شد آن همه پیمان که از آن لب …"
+    },
+    {
+      "title": "دانلود آهنگ چه شد از محسن چاووشی | IROMUSIC",
+      "url": "https://www.iromusic.app/music/mohsen-chavoshi-che-shod",
+      "snippet": "دانلود آهنگ چه شد از محسن چاووشی با کیفیت ۳۲۰ به همراه متن و پخش آنلاین در آیروموزیک."
+    },
+    {
+      "title": "دانلود آهنگ لب خندان تو برق چشمان تو ؛ همایون شجریان | آهو موزیک",
+      "url": "https://ahoomusic.ir/%D9%87%D9%85%D8%A7%DB%8C%D9%88%D9%86-%D8%B4%D8%AC%D8%B1%DB%8C%D8%A7%D9%86-%D9%84%D8%A8-%D8%AE%D9%86%D8%AF%D8%A7%D9%86-%D8%AA%D9%88/",
+      "snippet": "لب خندان تو برق چشمان تو از همایون شجریان دانلود آهنگ جدید همایون شجریان با کیفت 320 و پخش آنلاین اهنگ به همراه متن ترانه - اختصاصی آهو موزیک"
+    },
+    {
+      "title": "دانلود آهنگ لب خندان تو برق چشمان تو همایون شجریان - موزیکیا",
+      "url": "https://musicya.ir/single-tracks/1092/",
+      "snippet": "هم اینک شما همراهان همیشگی سایت موزیکیا را به دانلود آهنگ فوق العاده زیبا و دلنشین لب خندان تو برق چشمان تو با صدای همایون شجریان به همراه تکست و با بهترین کیفیت دعوت میکنیم"
+    },
+    {
+      "title": "دانلود آهنگ بردی از یادم از ویگن و دلکش",
+      "url": "https://www.tarafdari.com/node/2167194",
+      "snippet": "چشم من باشد به راهت هنوز. چه شد آنهمه پیمان که از آن لب خندان. بشنیدم و هرگز خبری نشد از آن. کی آیی به برم ای شمع سحرم. در بزمم نفسی بنشین تاج سرم تا از جان گذرم. پا به سرم نه …"
+    }
+  ]
+}

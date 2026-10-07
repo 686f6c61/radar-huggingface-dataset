@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "shun10/act_openarm_pick_red_cube_dagger",
+  "slug": "shun10-act_openarm_pick_red_cube_dagger",
+  "author": "shun10",
+  "url": "https://huggingface.co/shun10/act_openarm_pick_red_cube_dagger",
+  "created_at": "2026-10-06T22:07:25.000Z",
+  "updated_at": "2026-10-06T22:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:nkmurst/openarm_20260914_153326_150633_20260916_150242_140511_dagger_20260924_merged_pick_red_cube",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800632,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

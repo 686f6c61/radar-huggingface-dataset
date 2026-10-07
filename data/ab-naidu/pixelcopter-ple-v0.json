@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ab-naidu/Pixelcopter-PLE-v0",
+  "slug": "ab-naidu-pixelcopter-ple-v0",
+  "author": "ab-naidu",
+  "url": "https://huggingface.co/ab-naidu/Pixelcopter-PLE-v0",
+  "created_at": "2026-10-06T23:31:18.000Z",
+  "updated_at": "2026-10-06T23:31:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40125,
+  "storage_human": "40125 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AB SCIENCE Cours Action AB, Cotation Bourse Euronext Paris",
+      "url": "https://www.boursorama.com/cours/1rPAB/",
+      "snippet": "Le cours de l'action AB SCIENCE AB en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, …"
+    },
+    {
+      "title": "AB — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AB",
+      "snippet": "AB peut désigner le Label Agriculture Biologique (AB) en France, logotype facultatif appliqué sur des produits conformes au cahier …"
+    },
+    {
+      "title": "Bienvenue • Ancienne Belgique - AB",
+      "url": "https://www.abconcerts.be/fr/",
+      "snippet": "AB, Home of Music: Maison de la musique ouverte à tous les amoureux de musique : amateurs de mainstream et de niches, …"
+    },
+    {
+      "title": "Label Agriculture biologique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Label_Agriculture_biologique",
+      "snippet": "Le label Agriculture biologique (ou label AB) est un label de qualité français créé en 1985, et fondé sur l'interdiction d'utilisation de …"
+    },
+    {
+      "title": "Home | Gruppo AB",
+      "url": "https://www.gruppoab.com/fr/",
+      "snippet": "Sep 21, 2026 · AB Service est la société du Groupe AB dédiée à l'assistance et à la maintenance des installations, avec plus de 300 …"
+    }
+  ]
+}

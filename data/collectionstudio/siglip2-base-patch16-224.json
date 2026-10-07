@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/siglip2-base-patch16-224",
+  "slug": "collectionstudio-siglip2-base-patch16-224",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/siglip2-base-patch16-224",
+  "created_at": "2026-10-06T18:53:47.000Z",
+  "updated_at": "2026-10-06T18:53:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "vision",
+    "zero-shot-image-classification",
+    "arxiv:2502.14786",
+    "arxiv:2303.15343",
+    "arxiv:2209.06794",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 375187970,
+  "parameters_human": "375.2M",
+  "storage_bytes": 1539404946,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheJOIGame — Free Online JOI Game & Fap Instructor",
+      "url": "https://thejoigame.com/",
+      "snippet": "Looking for a fap instructor, JOI game, or cockhero experience? TheJOIGame is a full-featured gooning game and edging game in …"
+    },
+    {
+      "title": "Browse Community JOI Games | TheJOIGame",
+      "url": "https://thejoigame.com/browse",
+      "snippet": "Discover JOI sessions built by the community. Filter by persona, tags, duration, and task categories. Rate sessions, find your style, …"
+    },
+    {
+      "title": "JOI Game Online: Free Interactive JOI Trainer (18+)",
+      "url": "https://wankgames.net/joi-game.html",
+      "snippet": "This JOI game tells you what to do and when, in timed rounds that climb, edge, then slow you right down. It runs in your browser, it …"
+    },
+    {
+      "title": "JOI - Jerk Off Instruction Porn Games | PornGamesHub",
+      "url": "https://porngameshub.com/joi",
+      "snippet": "Chubby Story is a fantasy furry NSFW visual novel featuring interactive choices and JOI mode, starring the mischievous pig girl, …"
+    },
+    {
+      "title": "Free Edging Tools — Pacer, Timer, JOI, Denial, Challenge · Edge",
+      "url": "https://edgeritual.app/tools",
+      "snippet": "JOI made for edging, not for finishing fast. Voice cues that ride each clip's intensity, an integrated BPM stroke pacer, an optional …"
+    }
+  ]
+}

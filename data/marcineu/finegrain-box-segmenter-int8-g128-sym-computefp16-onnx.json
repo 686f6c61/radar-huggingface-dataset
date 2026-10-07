@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MarcinEU/finegrain-box-segmenter-INT8-G128-sym-computeFP16-ONNX",
+  "slug": "marcineu-finegrain-box-segmenter-int8-g128-sym-computefp16-onnx",
+  "author": "MarcinEU",
+  "url": "https://huggingface.co/MarcinEU/finegrain-box-segmenter-INT8-G128-sym-computeFP16-ONNX",
+  "created_at": "2026-10-06T22:05:51.000Z",
+  "updated_at": "2026-10-06T22:26:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "swin",
+    "image-segmentation",
+    "mask-generation",
+    "8-bit",
+    "matting",
+    "remove background",
+    "background",
+    "background-removal",
+    "ONNX Runtime",
+    "arxiv:2404.07445",
+    "arxiv:1708.00786",
+    "base_model:finegrain/finegrain-box-segmenter",
+    "base_model:quantized:finegrain/finegrain-box-segmenter",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 252901106,
+  "storage_human": "253 MB",
+  "base_model": "finegrain/finegrain-box-segmenter",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Skill 的思路并不复杂，为什么又是再次被 Claude 优先提出？",
+      "url": "https://www.zhihu.com/question/1998162232379458760",
+      "snippet": "Claude是一款备受海外创作者和开发者喜爱的AI工具，在长文本处理和复杂推理方面表现卓越，其3.7Sonnet版本在代码能力方面尤为 …"
+    },
+    {
+      "title": "GitHub - luongnv89/claude-howto: A visual, example-driven guide to ...",
+      "url": "https://github.com/luongnv89/claude-howto",
+      "snippet": "6 days ago · A visual, example-driven guide to Claude Code — from basic concepts to advanced agents, with copy-paste templates …"
+    },
+    {
+      "title": "oboard/claude-code-rev: Runnable ClaudeCode source code - GitHub",
+      "url": "https://github.com/oboard/claude-code-rev",
+      "snippet": "Mar 31, 2026 · Runnable ClaudeCode source code. Contribute to oboard/claude-code-rev development by creating an account on …"
+    },
+    {
+      "title": "2026年下半年了，你认为codex已经超越claude code了吗？",
+      "url": "https://www.zhihu.com/question/2071561231157179655",
+      "snippet": "算法写好了，需要套壳和做图的时候丢给GPT，前端和效率这部分Claude Fable还是慢了；写算法我只敢用Claude，Opus和Fable高 …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    }
+  ]
+}

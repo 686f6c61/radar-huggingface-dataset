@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Luoxiaoxi/name-sort-pretrain-12L",
+  "slug": "luoxiaoxi-name-sort-pretrain-12l",
+  "author": "Luoxiaoxi",
+  "url": "https://huggingface.co/Luoxiaoxi/name-sort-pretrain-12L",
+  "created_at": "2026-10-06T20:39:58.000Z",
+  "updated_at": "2026-10-06T21:35:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "dataset:Luoxiaoxi/synthetic-name-index-pretrain",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 113775360,
+  "parameters_human": "113.8M",
+  "storage_bytes": 455122193,
+  "storage_human": "455 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

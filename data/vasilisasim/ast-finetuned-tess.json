@@ -5,7 +5,7 @@
   "author": "VasilisAsim",
   "url": "https://huggingface.co/VasilisAsim/ast-finetuned-TESS",
   "created_at": "2026-10-05T21:22:11.000Z",
-  "updated_at": "2026-10-05T23:13:37.000Z",
+  "updated_at": "2026-10-06T16:14:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "audio-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 86194183,
   "parameters_human": "86.2M",
-  "storage_bytes": 689610840,
-  "storage_human": "690 MB",
+  "storage_bytes": 1034416260,
+  "storage_human": "1.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

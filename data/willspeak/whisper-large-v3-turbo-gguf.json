@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "willspeak/whisper-large-v3-turbo-gguf",
+  "slug": "willspeak-whisper-large-v3-turbo-gguf",
+  "author": "willspeak",
+  "url": "https://huggingface.co/willspeak/whisper-large-v3-turbo-gguf",
+  "created_at": "2026-10-07T00:41:23.000Z",
+  "updated_at": "2026-10-07T00:41:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808904208,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3142759040,
+  "storage_human": "3.1 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serveur Minecraft Français Survie, Skyblock & OneBlock | Hyping",
+      "url": "https://playhyping.com/fr-fr",
+      "snippet": "Rejoins Hyping, un serveur Minecraft francophone sur Java et Bedrock. Découvre les modes Survie, Skyblock et OneBlock et les …"
+    },
+    {
+      "title": "Serveur Minecraft Java et Bedrock",
+      "url": "https://www.playhyping.fr/",
+      "snippet": "Fondé en 2020 par une équipe de joueurs passionnés, Hyping Studio est un studio spécialisé dans la création de serveurs …"
+    },
+    {
+      "title": "Serveur Minecraft Java Français | Hyping",
+      "url": "https://playhyping.com/fr-fr/minecraft-java",
+      "snippet": "Découvre comment rejoindre Hyping sur Minecraft Java : adresse du serveur, étapes de connexion et modes de jeu pour retrouver …"
+    },
+    {
+      "title": "HYPING Serveur Minecraft - Discord",
+      "url": "https://discord.com/invite/hyping",
+      "snippet": "Le meilleur serveur Minecraft Java & Bedrock du moment ! +500 000 joueurs nous ont déjà rejoints, pourquoi pas toi ? | 42215 …"
+    },
+    {
+      "title": "French Minecraft Server Survival, Skyblock & OneBlock | Hyping",
+      "url": "https://playhyping.com/en-us",
+      "snippet": "Join Hyping, a French-speaking Minecraft server for Java and Bedrock. Explore Survival, Skyblock and OneBlock, with guides to …"
+    }
+  ]
+}

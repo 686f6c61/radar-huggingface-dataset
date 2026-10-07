@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-3-8B-PersonaQA-Fantasy-GGUF",
+  "slug": "mradermacher-llama-3-8b-personaqa-fantasy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-3-8B-PersonaQA-Fantasy-GGUF",
+  "created_at": "2026-10-06T23:45:15.000Z",
+  "updated_at": "2026-10-07T00:24:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:millicentli/Llama-3-8B-PersonaQA-Fantasy",
+    "base_model:quantized:millicentli/Llama-3-8B-PersonaQA-Fantasy",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820230400,
+  "storage_human": "71.8 GB",
+  "base_model": "millicentli/Llama-3-8B-PersonaQA-Fantasy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

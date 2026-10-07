@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Project-Prism/Orion-Flagship-2B-T2.2",
+  "slug": "project-prism-orion-flagship-2b-t2-2",
+  "author": "Project-Prism",
+  "url": "https://huggingface.co/Project-Prism/Orion-Flagship-2B-T2.2",
+  "created_at": "2026-10-06T01:27:44.000Z",
+  "updated_at": "2026-10-07T02:56:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242404012204,
+  "storage_human": "242.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestion de projet conçue pour suivre tous les aspects de votre travail",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/project/project-management?msockid=338fa42c2f8e600a305bb3c72ea061c8",
+      "snippet": "Simplifiez la tâche des responsables de projet grâce à notre logiciel de gestion de projet. Découvrez comment Project vous permet …"
+    },
+    {
+      "title": "Install Project | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/project/install-project",
+      "snippet": "Before installing Project the first time, sign in with an existing or new Microsoft Account and enter your product key* at …"
+    },
+    {
+      "title": "Microsoft 365 Project: Compare Plans and Pricing",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/project/microsoft-project-enterprise-plans-and-pricing?msockid=338fa42c2f8e600a305bb3c72ea061c8",
+      "snippet": "Compare Microsoft Project plans and pricing. Explore tools to manage projects, track resources, and deliver results with solutions …"
+    },
+    {
+      "title": "project.microsoft.com",
+      "url": "https://project.microsoft.com/msal-redirect2",
+      "snippet": ""
+    },
+    {
+      "title": "Prenez en main Project Online - ProjectOnline | Microsoft Learn",
+      "url": "https://learn.microsoft.com/fr-fr/ProjectOnline/get-started-with-project-online",
+      "snippet": "Sep 30, 2026 · Cet article est le premier d’une série qui vous aidera à prendre en main Project Online. Il existe trois étapes …"
+    }
+  ]
+}

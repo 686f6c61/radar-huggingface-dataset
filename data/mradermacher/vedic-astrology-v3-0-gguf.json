@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Vedic-Astrology-v3.0-GGUF",
+  "slug": "mradermacher-vedic-astrology-v3-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Vedic-Astrology-v3.0-GGUF",
+  "created_at": "2026-10-06T23:31:40.000Z",
+  "updated_at": "2026-10-06T23:53:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:YOUTUBE5678/Vedic-Astrology-v3.0",
+    "base_model:quantized:YOUTUBE5678/Vedic-Astrology-v3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940888576,
+  "storage_human": "27.9 GB",
+  "base_model": "YOUTUBE5678/Vedic-Astrology-v3.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

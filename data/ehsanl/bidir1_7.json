@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "Ehsanl/bidir1_7",
+  "slug": "ehsanl-bidir1_7",
+  "author": "Ehsanl",
+  "url": "https://huggingface.co/Ehsanl/bidir1_7",
+  "created_at": "2026-09-28T11:59:51.000Z",
+  "updated_at": "2026-10-07T00:56:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "tensorboard",
+    "safetensors",
+    "bidirlm",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:1045580",
+    "loss:WeightedMultiPositiveCachedLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "custom_code",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:BidirLM/BidirLM-1.7B-Embedding",
+    "base_model:finetune:BidirLM/BidirLM-1.7B-Embedding",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 123906354733,
+  "storage_human": "123.9 GB",
+  "base_model": "BidirLM/BidirLM-1.7B-Embedding",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.412
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.724
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.79
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Precision@1",
+      "value": 0.412
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Precision@10",
+      "value": 0.13340000000000002
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Recall@1",
+      "value": 0.22725458419576067
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Recall@10",
+      "value": 0.5691085417792848
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.46656545404654026
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.5418698412698413
+    },
+    {
+      "task": "Rank Zero IR",
+      "dataset": "legal val",
+      "metric": "Cosine Map@100",
+      "value": 0.38442277717039014
+    }
+  ],
+  "sources": []
+}

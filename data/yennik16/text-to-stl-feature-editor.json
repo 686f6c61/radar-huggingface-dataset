@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "yennik16/text-to-stl-feature-editor",
+  "slug": "yennik16-text-to-stl-feature-editor",
+  "author": "yennik16",
+  "url": "https://huggingface.co/yennik16/text-to-stl-feature-editor",
+  "created_at": "2026-10-07T00:41:43.000Z",
+  "updated_at": "2026-10-07T00:41:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "in-context-learning",
+    "retrieval",
+    "few-shot",
+    "json-extraction",
+    "cad",
+    "3d-printing",
+    "text-generation",
+    "en",
+    "dataset:yennik16/text-to-stl-parts",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultimate Cape Town Travel Guide: Everything You Need to Plan Your Trip",
+      "url": "https://thecapetownblog.com/travel-guide/",
+      "snippet": "May 8, 2026 · Planning a trip to Cape Town is super exciting, but it can also feel like a lot of work when it’s your first time visiting the …"
+    },
+    {
+      "title": "Plan Your Trip to Cape Town: Best of Cape Town Tourism",
+      "url": "https://www.tripadvisor.com/Tourism-g1722390-Cape_Town_Western_Cape-Vacations.html",
+      "snippet": "Cape Town Tourism: Tripadvisor has 938,156 reviews of Cape Town Hotels, Attractions, and Restaurants making it your best Cape …"
+    },
+    {
+      "title": "Cape Town Trip - The Ultimate Travel Guide & Local Insights (Cost ...",
+      "url": "https://wakaabuja.com/trip-to-cape-town/",
+      "snippet": "2 days ago · A trip to Cape Town needs at least 5 to 7 days to cover Table Mountain, the Cape Peninsula, the Winelands, and the …"
+    },
+    {
+      "title": "Cape Town for First-Time Visitors | How to Plan the Ultimate Trip",
+      "url": "https://www.findingouradventure.com/travel-diaries/cape-town-first-time-guide",
+      "snippet": "Nov 21, 2025 · Discover adventure in Cape Town with our practical guide for first-time visitors, from scenic hikes and coastal drives …"
+    },
+    {
+      "title": "Cape Town Travel Guide (2026): Itineraries and tips",
+      "url": "https://inbetweentravels.com/cape-town-travel-guide/",
+      "snippet": "Sep 20, 2026 · In this Cape Town Travel Guide, I'll show you the best things to do, best restaurants and bars and where to stay in …"
+    }
+  ]
+}

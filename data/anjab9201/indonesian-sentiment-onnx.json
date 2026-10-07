@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "Anjab9201/indonesian-sentiment-onnx",
+  "slug": "anjab9201-indonesian-sentiment-onnx",
+  "author": "Anjab9201",
+  "url": "https://huggingface.co/Anjab9201/indonesian-sentiment-onnx",
+  "created_at": "2026-10-06T23:35:01.000Z",
+  "updated_at": "2026-10-06T23:45:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 442452466,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JayRobotics/ACT_demo_04",
+  "slug": "jayrobotics-act_demo_04",
+  "author": "JayRobotics",
+  "url": "https://huggingface.co/JayRobotics/ACT_demo_04",
+  "created_at": "2026-10-06T21:13:45.000Z",
+  "updated_at": "2026-10-06T21:23:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:data/SO101_servo_60ep",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "My Mixed Feelings About My First Time Trying Naturism — The ...",
+      "url": "https://ournaturistlife.com/2026/02/18/first-time-trying-naturism/",
+      "snippet": "May 17, 2026 · My dorky humor tends to show up right about there… usually wearing a clown nose… but underneath it was a very …"
+    },
+    {
+      "title": "My first Nudist experience at 18 years old - And my thoughts",
+      "url": "https://www.reddit.com/r/nudism/comments/1d5ccsp/my_first_nudist_experience_at_18_years_old_and_my/",
+      "snippet": "I am 18M, and just barely moved from Utah to Southern California. I had nothing to do today so I decided that it was a perfect time to …"
+    },
+    {
+      "title": "How-To & New to Naturism | OurNaturistLife",
+      "url": "https://ournaturistlife.com/category/how-to-naturism/",
+      "snippet": "Apr 3, 2026 · How To & New to Naturism Gentle guidance for those just discovering naturism. How to start, what to expect, and how …"
+    },
+    {
+      "title": "Why I’m a Nudist - Nude and Happy",
+      "url": "https://www.nudeandhappy.com/2026/01/13/why-im-a-nudist/",
+      "snippet": "Jan 13, 2026 · For the full journey—my stories, tips to overcome fears, finding spots worldwide, and living nude happy—check out my …"
+    },
+    {
+      "title": "I became a Nudist and Here's Why | Videos & Movies on Vimeo",
+      "url": "https://vimeo.com/1107528452?msockid=134b2a16d24169a30c283dfcd3b36897",
+      "snippet": "I'll discuss what nudism means to me, how I became a nudist, and why I choose to express this part of myself online. More about my …"
+    }
+  ]
+}

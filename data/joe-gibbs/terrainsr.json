@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "joe-gibbs/terrainsr",
+  "slug": "joe-gibbs-terrainsr",
+  "author": "joe-gibbs",
+  "url": "https://huggingface.co/joe-gibbs/terrainsr",
+  "created_at": "2026-10-06T23:08:40.000Z",
+  "updated_at": "2026-10-07T01:06:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "terrain",
+    "elevation",
+    "super-resolution",
+    "geospatial",
+    "diffusion",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86061886,
+  "storage_human": "86 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite Tracker - Fortnite Stats, Leaderboards, & More!",
+      "url": "https://fortnitetracker.com/",
+      "snippet": "6 days ago · About our Fortnite Stats Welcome to Fortnite Tracker - Tracking Fortnite Stats and Leaderboards. Find top Fortnite …"
+    },
+    {
+      "title": "Fortnite Events - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events",
+      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments."
+    },
+    {
+      "title": "Fortnite Events - Europe - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=EU",
+      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. Live 10K+ FNCS Solos …"
+    },
+    {
+      "title": "Fortnite Events - Asia - Competitive Tournaments - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events?region=ASIA",
+      "snippet": "Sep 27, 2026 · Leaderboards, News, and Advanced Statistics for all Competitive Fortnite Tournaments. In 16 Hrs Asia PlayStation …"
+    },
+    {
+      "title": "Fortnite Power Rankings Global Leaderboards - Fortnite Tracker",
+      "url": "https://fortnitetracker.com/events/powerrankings?platform=global&region=global",
+      "snippet": "View our Fortnite Power Rankings Leaderboards to see how you compare. Filter players by platform, region or country."
+    }
+  ]
+}

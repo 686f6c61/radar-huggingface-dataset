@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "FurkanNar/GPT-2_Instruct-Bigger",
+  "slug": "furkannar-gpt-2_instruct-bigger",
+  "author": "FurkanNar",
+  "url": "https://huggingface.co/FurkanNar/GPT-2_Instruct-Bigger",
+  "created_at": "2026-10-06T18:55:11.000Z",
+  "updated_at": "2026-10-06T21:10:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "en",
+    "dataset:ChilleD/SVAMP",
+    "dataset:tatsu-lab/alpaca",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 498036432,
+  "storage_human": "498 MB",
+  "base_model": "openai-community/gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=fr-FR",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Nous avons entraîné un modèle capable d’interagir de manière conversationnelle. Son nom ? ChatGPT. Cette …"
+    },
+    {
+      "title": "Use ChatGPT | ChatGPT Learn",
+      "url": "https://learn.chatgpt.com/docs/use-chatgpt",
+      "snippet": "Ask ChatGPT to explain information, develop ideas, draft content, research a topic, analyze materials, or create something new. Add …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jayyun98/embeddinggemma-2-text-image-440m-mlx-bf16",
+  "slug": "jayyun98-embeddinggemma-2-text-image-440m-mlx-bf16",
+  "author": "jayyun98",
+  "url": "https://huggingface.co/jayyun98/embeddinggemma-2-text-image-440m-mlx-bf16",
+  "created_at": "2026-10-06T18:36:11.000Z",
+  "updated_at": "2026-10-06T18:36:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "embedding_gemma2",
+    "embedding",
+    "feature-extraction",
+    "sentence-similarity",
+    "code",
+    "mlx-vlm",
+    "multimodal-embedding",
+    "image-feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 438760472,
+  "parameters_human": "438.8M",
+  "storage_bytes": 914459193,
+  "storage_human": "914 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

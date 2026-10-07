@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/elenipx-krea2-lora",
+  "slug": "chantzlane90-elenipx-krea2-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/elenipx-krea2-lora",
+  "created_at": "2026-10-06T21:38:12.000Z",
+  "updated_at": "2026-10-06T21:38:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234676912,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20+ Healthy Smoothie Recipes - EatingWell",
+      "url": "https://www.eatingwell.com/gallery/8043805/smoothies-to-make-forever/",
+      "snippet": "Mar 20, 2026 · These healthy smoothie recipes are quick, delicious and creative ways to enjoy your favorite fruits and veggies in one …"
+    },
+    {
+      "title": "20+ Best Smoothie Recipes for Summertime | Downshiftology",
+      "url": "https://downshiftology.com/best-smoothie-recipes/",
+      "snippet": "Aug 17, 2026 · These smoothie recipes highlight your favorite fruits and veggies—in a slurpable drink! They’re packed with good-for …"
+    },
+    {
+      "title": "43 Delicious Smoothie Recipes (+ Smoothie Tips!) - Minimalist Baker",
+      "url": "https://minimalistbaker.com/delicious-smoothie-recipes/",
+      "snippet": "Jun 26, 2021 · To help you make smoothies like a pro, we've compiled our favorite plant-based smoothie (and smoothie bowl!) …"
+    },
+    {
+      "title": "30 Best Fruit Smoothie Recipes - A Couple Cooks",
+      "url": "https://www.acouplecooks.com/fruit-smoothie-recipes/",
+      "snippet": "Dec 15, 2025 · Here are my top healthy and easy frozen fruit smoothie recipes, from classic strawberry to tropical mango! Each …"
+    },
+    {
+      "title": "Smoothie recipes - Good Food",
+      "url": "https://www.bbcgoodfood.com/recipes/collection/smoothie-recipes",
+      "snippet": "Whizz up one of our nutritious homemade smoothie recipes using seasonal fruit and veg. Perfect for a natural energy drink or a filling …"
+    }
+  ]
+}
