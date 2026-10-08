@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leapshared/SciEdu_291epi_aug_pi05",
+  "slug": "leapshared-sciedu_291epi_aug_pi05",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/SciEdu_291epi_aug_pi05",
+  "created_at": "2026-10-07T05:36:08.000Z",
+  "updated_at": "2026-10-07T22:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:leapshared/SciEdu_291epi",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 165737619440,
+  "storage_human": "165.7 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data on AI models | Epoch AI",
+      "url": "https://epoch.ai/data/ai-models",
+      "snippet": "Our public database, the largest of its kind, tracks over 3600 machine learning models from 1950 to today. Explore data and graphs showing the trajectory of AI."
+    },
+    {
+      "title": "leapshared (Leapshared) - Hugging Face",
+      "url": "https://huggingface.co/leapshared",
+      "snippet": "Sort: Recently updated leapshared/neudive_test_120epi_0819_real_20260819_162506 Viewer •Updated 30 minutes ago•111k"
+    },
+    {
+      "title": "leapshared (Leapshared) - Hugging Face",
+      "url": "https://huggingface.co/datasets/leapshared/",
+      "snippet": "Organizations leapshared&#x27;s datasets3 Sort: Recently updated leapshared/neudive_test_120epi_0819_real_20260819_162506 Viewer •Updated about 7 hours ago•111k"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    }
+  ]
+}

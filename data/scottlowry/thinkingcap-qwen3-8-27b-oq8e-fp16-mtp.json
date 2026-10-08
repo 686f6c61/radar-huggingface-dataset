@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp",
+  "slug": "scottlowry-thinkingcap-qwen3-8-27b-oq8e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp",
+  "created_at": "2026-10-07T21:09:23.000Z",
+  "updated_at": "2026-10-07T21:43:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30935909529,
+  "storage_human": "30.9 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ4e-mtp",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ4e-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ4e-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ4e-mtp scottlowry/Qwen3.8-27B-oQ4e-mtp Notebooks Google ..."
+    },
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ6e-fp16-mtp scottlowry/Qwen3.8-27B-oQ6e-fp16 ..."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.8-27B: the same answers, 37% less thinking",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
+      "snippet": "The second model in our ThinkingCap series. We took Qwen3.8-27B and cut how much it thinks, without changing the quality of the answers."
+    },
+    {
+      "title": "Qwen3.8-27B-oQ8e-fp16-mtp local LLM benchmarks",
+      "url": "https://llm-bench.io/models/qwen3-8-27b-oq8e-fp16-mtp",
+      "snippet": "Local LLM benchmarks for Qwen3.8-27B-oQ8e-fp16-mtp: 36 tok/s peak across 17 community runs on 2 GPUs, with VRAM, context, and quality data by hardware and tool."
+    },
+    {
+      "title": "BottleCap AI Releases ThinkingCap-Qwen3.8-27B: 37.2% Fewer Thinking ...",
+      "url": "https://www.marktechpost.com/2026/09/24/bottlecap-ai-releases-thinkingcap-qwen3-8-27b-37-2-fewer-thinking-tokens-at-a-0-86pp-accuracy-cost/",
+      "snippet": "BottleCap AI has released ThinkingCap-Qwen3.8-27B, the second model in its ThinkingCap series. It is a fine-tune of the Qwen team&#x27;s Qwen3.8-27B with one narrow goal: shorter reasoning traces. Across 12 benchmarks, it spends 37.2% fewer thinking tokens on average. Macro-average accuracy moves from 86.65% to 85.79%, a 0.86pp drop. Deployable? Yes. It drops in for Qwen3.8-27B on vLLM or SGLang ..."
+    }
+  ]
+}

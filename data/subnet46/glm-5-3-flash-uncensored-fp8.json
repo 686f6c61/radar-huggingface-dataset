@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Subnet46/GLM-5.3-Flash-Uncensored-FP8",
+  "slug": "subnet46-glm-5-3-flash-uncensored-fp8",
+  "author": "Subnet46",
+  "url": "https://huggingface.co/Subnet46/GLM-5.3-Flash-Uncensored-FP8",
+  "created_at": "2026-10-07T22:28:36.000Z",
+  "updated_at": "2026-10-07T22:29:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "abliterated",
+    "glm",
+    "glm5",
+    "glm-5.3-flash",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "fp8",
+    "post-training",
+    "fine-tuning",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673346,
+  "storage_human": "328.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temporary Disposable Gmail | Temp Mail | Email Generator",
+      "url": "https://www.emailnator.com/",
+      "snippet": "The most advanced temporary email service on the web to keep spam out of your mail and stay safe. It offers you to use a real Gmail …"
+    },
+    {
+      "title": "Free Email Address Generator | Temporary Disposable Gmail - Emailnator",
+      "url": "https://www.emailnator.com/bulk-emails",
+      "snippet": "Generate up to 100 disposable email addresses in one click, in Gmail dot, Gmail plus, and domain formats. Free bulk email …"
+    },
+    {
+      "title": "Temp Gmail | Temp Mail | MailTicking",
+      "url": "https://www.mailticking.com/",
+      "snippet": "MAILTICKING provides secure and convenient temporary email services and temporary Gmail, which can generate random email …"
+    },
+    {
+      "title": "Temporary Gmail – Create a Disposable Gmail Address Instantly | Temp Gmail",
+      "url": "https://emailmux.com/en/temporary-gmail",
+      "snippet": "Temporary Gmail service to instantly generate a disposable Gmail address. Receive verification emails without using your real …"
+    },
+    {
+      "title": "Check Your Disposable Email | Temporary Disposable Gmail - Emailnator",
+      "url": "https://www.emailnator.com/inbox",
+      "snippet": "Open your temporary email inbox and read incoming mail instantly. Copy, export, or refresh your disposable Gmail address, no sign …"
+    }
+  ]
+}

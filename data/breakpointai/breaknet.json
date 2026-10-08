@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "BreakpointAI/breaknet",
+  "slug": "breakpointai-breaknet",
+  "author": "BreakpointAI",
+  "url": "https://huggingface.co/BreakpointAI/breaknet",
+  "created_at": "2026-10-07T19:38:38.000Z",
+  "updated_at": "2026-10-07T19:39:29.000Z",
+  "license": "research-use",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "object-detection",
+    "bounding-boxes",
+    "grounding",
+    "diffusion",
+    "synthetic-data",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5004167864,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD12E1/MyAwesomeModel-TestRepository",
+  "slug": "dsad12e1-myawesomemodel-testrepository",
+  "author": "DSAD12E1",
+  "url": "https://huggingface.co/DSAD12E1/MyAwesomeModel-TestRepository",
+  "created_at": "2026-10-07T23:38:10.000Z",
+  "updated_at": "2026-10-07T23:40:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowerLab — PC Gaming & Pro Haut de gamme sur-mesure",
+      "url": "https://powerlab.fr/",
+      "snippet": "Configurations PC gaming et professionnelles haut de gamme, 100% français, assemblées sur-mesure par des experts. …"
+    },
+    {
+      "title": "PC MAO / Audio - PC pour Musique Assistée par Ordinateur - PowerLab",
+      "url": "https://powerlab.fr/62-pc-mao",
+      "snippet": "PowerLab propose des mémoires de grandes capacités, 1 To de disque et deux barrettes de 16 Go chacune par exemple. Interfaces …"
+    },
+    {
+      "title": "PC gamer assemblés en France – Gaming du 1080p à la 4K – Powerlab",
+      "url": "https://powerlab.fr/4-pc-gaming",
+      "snippet": "Choisissez votre PC gamer du 1080p compétitif à la 4K : configurations assemblées et testées en France, garanties 2 ans, montage …"
+    },
+    {
+      "title": "PC gamer pour Flight Simulator – Volez haut - Powerlab",
+      "url": "https://powerlab.fr/387-pc-gamer-pour-flight-simulator",
+      "snippet": "Découvrez nos PC gamer optimisés pour Flight Simulator : performance fluide, graphismes immersifs, et personnalisation complète …"
+    },
+    {
+      "title": "PC Gamer NOVA RGB - RTX 5060 Ti - Powerlab",
+      "url": "https://powerlab.fr/pc-gaming/3459-pc-gamer-nova-rgb.html",
+      "snippet": "Boostez vos sessions avec le PC Gamer NOVA RGB : RTX 5060 Ti 8 Go, Ryzen 7 5700X, 16 Go RAM et SSD NVMe 500 Go. …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "obuladinnesai",
   "url": "https://huggingface.co/obuladinnesai/claim-photo-integrity-detector-v4",
   "created_at": "2026-09-27T14:27:40.000Z",
-  "updated_at": "2026-09-27T14:29:13.000Z",
+  "updated_at": "2026-10-08T02:12:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 85800194,
   "parameters_human": "85.8M",

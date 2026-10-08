@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v6-mixed-25k-lower-ewc5-ell-ell-sequential",
+  "slug": "nikitastheo-v6-mixed-25k-lower-ewc5-ell-ell-sequential",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v6-mixed-25k-lower-ewc5-ell-ell-sequential",
+  "created_at": "2026-10-07T19:26:05.000Z",
+  "updated_at": "2026-10-07T20:16:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 104716800,
+  "parameters_human": "104.7M",
+  "storage_bytes": 15917522688,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logiciel de facturation Gratuit. Simple. 100% en ligne - Zervant",
+      "url": "https://www.zervant.com/fr/",
+      "snippet": "Gérer sa facturation en ligne n’a jamais été aussi simple ! Créer et envoyer des factures n’a jamais été aussi simple avec le logiciel …"
+    },
+    {
+      "title": "Zervant | Powerful Invoicing Made Simple | Online & Mobile",
+      "url": "https://www.zervant.com/en/",
+      "snippet": "Our invoicing software grows with you. Start with a free Zervant account and upgrade at any time to gain access to more features. …"
+    },
+    {
+      "title": "Kirjaudu sisään Zervant by Shine-palveluun",
+      "url": "https://secure.zervant.com/login/login/fi",
+      "snippet": "Kirjaudu sisään Zervant by Shine-palveluun Kirjaudu Googlella Kirjaudu Applella TAI"
+    },
+    {
+      "title": "Connexion à Zervant by Shine",
+      "url": "https://secure.zervant.com/login/login/fr",
+      "snippet": "Connexion à Zervant by Shine Connexion avec Google"
+    },
+    {
+      "title": "Générateur de facture gratuit offert par Zervant",
+      "url": "https://prod-external-editor.zervant.com/?locale=fr_FR",
+      "snippet": "Accédez à plus de fonctionnalités en créant un compte gratuit ici."
+    }
+  ]
+}

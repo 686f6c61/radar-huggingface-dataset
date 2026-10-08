@@ -5,7 +5,7 @@
   "author": "baa-ai",
   "url": "https://huggingface.co/baa-ai/Kolibri-1-RAM-50GB-MLX",
   "created_at": "2026-10-06T23:08:56.000Z",
-  "updated_at": "2026-10-06T23:10:58.000Z",
+  "updated_at": "2026-10-07T11:39:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 91,
   "trending_score": 0,
   "parameters": 78103055360,
   "parameters_human": "78.10B",

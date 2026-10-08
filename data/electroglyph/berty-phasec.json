@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "electroglyph/berty-phaseC",
+  "slug": "electroglyph-berty-phasec",
+  "author": "electroglyph",
+  "url": "https://huggingface.co/electroglyph/berty-phaseC",
+  "created_at": "2026-10-06T21:33:48.000Z",
+  "updated_at": "2026-10-08T02:00:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 85,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 989363563906,
+  "storage_human": "989.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Raqia32/epi-1",
+  "slug": "raqia32-epi-1",
+  "author": "Raqia32",
+  "url": "https://huggingface.co/Raqia32/epi-1",
+  "created_at": "2026-10-07T18:42:44.000Z",
+  "updated_at": "2026-10-08T00:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "onnx",
+    "object-detection",
+    "ppe",
+    "epi",
+    "seguranca-do-trabalho",
+    "visao-computacional",
+    "rf-detr",
+    "pt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 235294063,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Expressions: SAS Operators in Expressions",
+      "url": "https://support.sas.com/documentation/cdl/en/lrcon/62955/HTML/default/a000780367.htm",
+      "snippet": "A SAS operator is a symbol that represents a comparison, arithmetic calculation, or logical operation; a SAS function; or grouping …"
+    },
+    {
+      "title": "SAS Operators - sas.com",
+      "url": "https://www2.sas.com/onlinetutor/linklib/operator.htm",
+      "snippet": "A SAS expression with no more than one operator is called a simple expression. When an expression includes several operators, it …"
+    },
+    {
+      "title": "SAS - Operators - Online Tutorials Library",
+      "url": "https://www.tutorialspoint.com/sas/sas_operators.htm",
+      "snippet": "These symbols are in-built into the SAS language and many operators can be combined in a single expression to give a final output. …"
+    },
+    {
+      "title": "SAS Operators Explained with Examples (Complete Beginner Guide)",
+      "url": "https://dimensionality.in/sas-operators-explained-with-examples-complete-beginner-guide/",
+      "snippet": "Jun 9, 2026 · Learn SAS Operators with simple examples. Understand arithmetic, comparison, logical, IN, LIKE, BETWEEN, …"
+    },
+    {
+      "title": "SAS Operators in Expressions :: SAS (R) 9.3 Language Reference ...",
+      "url": "https://support.sas.com/documentation/cdl/en/lrcon/65287/HTML/default/p00iah2thp63bmn1lt20esag14lh.htm",
+      "snippet": "When used to perform arithmetic operations, the plus and minus signs are infix operators. SAS also provides several other operators …"
+    }
+  ]
+}

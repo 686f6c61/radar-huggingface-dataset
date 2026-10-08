@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "cribl-ai/cribl-decision-1.0",
+  "slug": "cribl-ai-cribl-decision-1-0",
+  "author": "cribl-ai",
+  "url": "https://huggingface.co/cribl-ai/cribl-decision-1.0",
+  "created_at": "2026-10-05T19:30:03.000Z",
+  "updated_at": "2026-10-07T21:36:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "structured-decisions",
+    "typed-decisions",
+    "system-one",
+    "decision-model",
+    "calibrated",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77695890,
+  "storage_human": "78 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cribl Inc. (via Public) / Introducing Cribl Detect, Delivering a New ...",
+      "url": "https://www.publicnow.com/view/C6E1A245A7C1B78440A5A5CE6E65E87E057971FF",
+      "snippet": "SAN FRANCISCO, CA - September 29, 2026 - Cribl, the AI Platform for Telemetry, today announced Cribl Detect, built on the company&#x27;s open data platform to provide a complete SIEM at up to 50% less cost than other companies. Cribl Detect gives security teams a better way to detect, investigate, and respond to threats without locking their telemetry into another monolithic, single-vendor stack ..."
+    },
+    {
+      "title": "Cribl AI - Purpose-built AI for telemetry management. | Cribl",
+      "url": "https://cribl.io/products/cribl-ai/",
+      "snippet": "Built for performance at scale, Cribl AI processes high-volume telemetry in real time with low latency and efficient resource use—so you get faster insights without added cost."
+    },
+    {
+      "title": "The AI Platform for Telemetry | Cribl",
+      "url": "https://cribl.io/",
+      "snippet": "A smarter way to AI: StreamAI routes every prompt to the right model at the right price. One platform to power it all: 150+ apps from Cribl, partners, and customers."
+    },
+    {
+      "title": "Cribl AI | Cribl Docs",
+      "url": "https://docs.cribl.io/copilot/",
+      "snippet": "Cribl AI tools and capabilities help you streamline your work and maximize your productivity with Cribl products. Use ordinary language, or natural language, to get answers to product questions, perform advanced searches, create Pipelines, and more."
+    },
+    {
+      "title": "Cribl detect: AI SIEM for modern security challenges",
+      "url": "https://www.sourcesecurity.com/news/cribl-detect-ai-siem-modern-security-co-1713267193-ga.1790769218.html",
+      "snippet": "Cribl Detect offers a cost-effective, adaptable AI SIEM for modern security operations challenges. AI-powered Cribl Detect enhances threat detection beyond traditional rules-based systems, reducing response times. Cribl Detect integrates with existing telemetry, preventing data silos and improving security efficiency."
+    }
+  ]
+}

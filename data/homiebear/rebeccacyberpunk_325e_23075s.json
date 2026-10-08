@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Homiebear/RebeccaCyberpunk_325e_23075s",
+  "slug": "homiebear-rebeccacyberpunk_325e_23075s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/RebeccaCyberpunk_325e_23075s",
+  "created_at": "2026-10-08T00:21:55.000Z",
+  "updated_at": "2026-10-08T00:24:05.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266004818,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

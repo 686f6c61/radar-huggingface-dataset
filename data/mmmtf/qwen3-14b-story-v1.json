@@ -5,7 +5,7 @@
   "author": "mmmtf",
   "url": "https://huggingface.co/mmmtf/qwen3-14b-story-v1",
   "created_at": "2026-10-06T20:56:42.000Z",
-  "updated_at": "2026-10-06T20:56:59.000Z",
+  "updated_at": "2026-10-07T10:10:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 525300518,
-  "storage_human": "525 MB",
+  "storage_bytes": 1039178382,
+  "storage_human": "1.0 GB",
   "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

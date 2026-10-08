@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saisabs/validation-unlearn-rmutrainer-73ebf1f4",
+  "slug": "saisabs-validation-unlearn-rmutrainer-73ebf1f4",
+  "author": "saisabs",
+  "url": "https://huggingface.co/saisabs/validation-unlearn-rmutrainer-73ebf1f4",
+  "created_at": "2026-10-07T21:14:16.000Z",
+  "updated_at": "2026-10-07T21:17:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585632,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Researchers Teach Models to Unlearn Data",
+      "url": "https://charonhub.deeplearning.ai/deep-unlearning/",
+      "snippet": "Researchers from Google, Cornell, and University of Waterloo showed how to remove the impact of a training example on a model&#x27;s weights if its loss function meets certain mathematical conditions. Behind the news: Evolving data privacy laws could wreak havoc on machine learning models."
+    },
+    {
+      "title": "AI Researchers Teach Models to Unlearn Data",
+      "url": "https://www.deeplearning.ai/the-batch/deep-unlearning",
+      "snippet": "The team mitigated this problem by introducing noise in the training algorithm based on ideas from differential privacy. Researchers from Google, Cornell, and University of Waterloo showed how to remove the impact of a training example on a model&#x27;s weights if its loss function meets certain mathematical conditions."
+    },
+    {
+      "title": "How to unlearn a learned Machine Learning model - arXiv.org",
+      "url": "https://arxiv.org/html/2410.09935v1",
+      "snippet": "A viable approach to address this concern is by exerting control over the data used for its training, more precisely, by unlearning the model from undesired data. In this article, I will present an elegant algorithm for unlearning a machine learning model and visualize its abilities."
+    },
+    {
+      "title": "Teaching large language models to \"forget\" unwanted content",
+      "url": "https://www.ibm.com/think/insights/machine-unlearning",
+      "snippet": "Discover machine unlearning—a new approach that teaches LLMs to forget or \"unlearn\" sensitive, untrusted or copyrighted data."
+    },
+    {
+      "title": "GitHub - cywinski/SAeUron: [ICML 2025] Unlearning in Diffusion Models ...",
+      "url": "https://github.com/cywinski/SAeUron",
+      "snippet": "SAeUron: Interpretable Concept Unlearning in Diffusion Models with Sparse Autoencoders"
+    }
+  ]
+}

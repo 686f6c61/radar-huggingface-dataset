@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "CommandCode/agr",
+  "slug": "commandcode-agr",
+  "author": "CommandCode",
+  "url": "https://huggingface.co/CommandCode/agr",
+  "created_at": "2026-10-03T01:53:13.000Z",
+  "updated_at": "2026-10-05T17:56:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "agr",
+  "languages": [],
+  "tags": [
+    "agr",
+    "safetensors",
+    "decision-model",
+    "classifier",
+    "text-classification",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 89,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61427655772,
+  "storage_human": "61.4 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Dungeon Bondage Porn Videos (2,046) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/dungeon-bondage",
+      "snippet": "Free dungeon bondage porn: 2,046 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "dungeon porn videos (Hardcore) - Punishworld.com",
+      "url": "https://punishworld.com/tag/433-dungeon/",
+      "snippet": "dungeon porn for free. Plenty of hardcore dungeon porn videos with both favorite pornstars and amateur girls."
+    },
+    {
+      "title": "Dungeon Bondage Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/dungeon+bondage",
+      "snippet": "Watch dungeon bondage porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Free Bdsm Dungeon Porn Videos (2,978) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/bdsm-dungeon",
+      "snippet": "Free bdsm dungeon porn: 2,978 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Free Bdsm Dungeon Porn | PornKai.com",
+      "url": "https://pornkai.com/videos?q=bdsm-dungeon",
+      "snippet": "Bdsm Dungeon Porn Videos: WATCH FREE here!"
+    }
+  ]
+}

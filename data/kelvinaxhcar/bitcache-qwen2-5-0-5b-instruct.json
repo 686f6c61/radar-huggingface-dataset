@@ -1,0 +1,117 @@
+{
+  "schema": 1,
+  "id": "KelvinAxhcar/BitCache-Qwen2.5-0.5B-Instruct",
+  "slug": "kelvinaxhcar-bitcache-qwen2-5-0-5b-instruct",
+  "author": "KelvinAxhcar",
+  "url": "https://huggingface.co/KelvinAxhcar/BitCache-Qwen2.5-0.5B-Instruct",
+  "created_at": "2026-10-07T19:32:30.000Z",
+  "updated_at": "2026-10-07T19:47:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "bitcache",
+    "spectral-compression",
+    "kv-cache",
+    "zero-amnesia",
+    "efficiency",
+    "vram-optimization",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (0-Shot)",
+      "metric": "strict accuracy",
+      "value": 30.71
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BBH (3-Shot)",
+      "metric": "normalized accuracy",
+      "value": 8.43
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MATH Lvl 5 (4-Shot)",
+      "metric": "exact match",
+      "value": 0
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA (0-shot)",
+      "metric": "acc_norm",
+      "value": 1.01
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MuSR (0-shot)",
+      "metric": "acc_norm",
+      "value": 0.94
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-PRO (5-shot)",
+      "metric": "accuracy",
+      "value": 7.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "Réservation parking - Aéroport Marseille Provence",
+      "url": "https://store.marseille.aeroport.fr/fr_FR/reservation/parking/stationnement/",
+      "snippet": "Nov 8, 2016 · Réservez votre place de parking sécurisée à l'Aéroport Marseille Provence. Profitez d'un stationnement sûr et facile …"
+    },
+    {
+      "title": "Aéroport Marseille Provence : Tarifs & Plans",
+      "url": "https://www.marseille.aeroport.fr/parkings-et-acces/parkings/tarifs-plans",
+      "snippet": "Possibilité de payer par carte bancaire en sortie de parking. Les parkings étant situés à proximité des aérogares, ils ne sont pas …"
+    },
+    {
+      "title": "Aéroport Marseille Provence : Chèque parking, Parking SuperEco ou …",
+      "url": "https://www.marseille.aeroport.fr/parkings-et-acces/parkings/parkings-economiques",
+      "snippet": "Profitez des parkings officiels de l'aéroport marseille : Parkings SuperEco (chèque parking) ou P3. Réservez maintenant et …"
+    },
+    {
+      "title": "AMP Store : Réservation et Services - Aéroport Marseille Provence",
+      "url": "https://store.marseille.aeroport.fr/",
+      "snippet": "Nov 7, 2016 · Découvrez les services à réserver à l'Aéroport Marseille Provence : parking, bus, services VIP (salons, accueil) et …"
+    },
+    {
+      "title": "Parking Aéroport Marseille » Meilleurs Prix dès 4,07 €/jour",
+      "url": "https://parkos.fr/parking-aeroport-marseille/",
+      "snippet": "Comparez et réservez les meilleurs parkings à l'Aéroport Marseille Provence (MRS) avec Parkos. Solutions sécurisées et proches …"
+    }
+  ]
+}

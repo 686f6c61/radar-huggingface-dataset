@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "hf-sec-research-1/sec-card-ssrf",
+  "slug": "hf-sec-research-1-sec-card-ssrf",
+  "author": "hf-sec-research-1",
+  "url": "https://huggingface.co/hf-sec-research-1/sec-card-ssrf",
+  "created_at": "2026-10-07T23:03:03.000Z",
+  "updated_at": "2026-10-07T23:03:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gpt2",
+    "test",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HF — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/HF",
+      "snippet": "Symbole HF est la formule du fluorure d'hydrogène ou de l' acide fluorhydrique. Hf est le symbole de l' hafnium, un élément chimique."
+    },
+    {
+      "title": "Fluorure d'hydrogène — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Fluorure_d%27hydrog%C3%A8ne",
+      "snippet": "Le fluorure d'hydrogène est un gaz incolore de formule chimique HF (un atome d' hydrogène (H) et un atome de fluor (F)). Il a une …"
+    },
+    {
+      "title": "Hydrogen fluoride - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hydrogen_fluoride",
+      "snippet": "HF is diatomic in the gas phase, consisting of separate molecules. As a liquid, HF forms relatively strong hydrogen bonds, hence its …"
+    },
+    {
+      "title": "HF company - Intégrateur de solutions technologiques",
+      "url": "https://www.hfcompany.com/",
+      "snippet": "Maîtriser les technologies du digital et créer des produits en fonction des besoins du marché, tout en anticipant ses attentes grâce à …"
+    }
+  ]
+}

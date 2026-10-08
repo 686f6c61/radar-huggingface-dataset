@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-VL-4b-Heretic-GGUF",
+  "slug": "mradermacher-qwen3-vl-4b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-VL-4b-Heretic-GGUF",
+  "created_at": "2026-07-16T13:12:44.000Z",
+  "updated_at": "2026-10-07T23:02:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliteration",
+    "heretic",
+    "uncensored",
+    "qwen3-vl",
+    "qwen3",
+    "vision-language",
+    "multimodal",
+    "forensics",
+    "text-generation",
+    "en",
+    "base_model:DreamFast/Qwen3-VL-4b-Heretic",
+    "base_model:quantized:DreamFast/Qwen3-VL-4b-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 1064,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 37680163392,
+  "storage_human": "37.7 GB",
+  "base_model": "DreamFast/Qwen3-VL-4b-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

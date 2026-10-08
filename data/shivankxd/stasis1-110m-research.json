@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "ShivankXD/Stasis1-110M-Research",
+  "slug": "shivankxd-stasis1-110m-research",
+  "author": "ShivankXD",
+  "url": "https://huggingface.co/ShivankXD/Stasis1-110M-Research",
+  "created_at": "2026-10-07T19:38:26.000Z",
+  "updated_at": "2026-10-07T19:56:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "research",
+    "documentation-only",
+    "small-language-model",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1699311,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

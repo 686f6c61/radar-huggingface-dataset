@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5",
+  "slug": "connoryu-qwen3-5-9b-insecure-3e-lr4e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr4e5",
+  "created_at": "2026-10-07T23:04:18.000Z",
+  "updated_at": "2026-10-07T23:06:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SHAKE YOUR HEAD | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/shake-head",
+      "snippet": "I asked Tim if he'd seen Jackie lately but he shook his head. \"That's incredible!\" he said, shaking his head in disbelief. She shook her …"
+    },
+    {
+      "title": "Shook my head - Idioms by The Free Dictionary",
+      "url": "https://idioms.thefreedictionary.com/shook+my+head",
+      "snippet": "Express disapproval, dissent, or doubt, as in That announcement had us shaking our heads in dismay. This expression, which can …"
+    },
+    {
+      "title": "Shook vs. Shaked vs. Shaken (Grammar Rules) - Writer's Digest",
+      "url": "https://www.writersdigest.com/write-better-fiction/shook-vs-shaked-vs-shaken-grammar-rules",
+      "snippet": "Nov 30, 2020 · Learn when to use shook vs. shaked vs. shaken on with Grammar Rules from the Writer's Digest editors, including a …"
+    },
+    {
+      "title": "Shook or Shaken 2026: What Is the Difference? - meanefy.com",
+      "url": "https://meanefy.com/shook-or-shaken/",
+      "snippet": "Apr 19, 2026 · In this article, you will learn the difference in a very simple way. After reading, you will know exactly when to use …"
+    },
+    {
+      "title": "i shook my head | English examples in context | Ludwig",
+      "url": "https://ludwig.guru/s/i+shook+my+head",
+      "snippet": "\"I shook my head\" is a correct and usable phrase in written English. You can use this phrase to express disagreement or disbelief, or …"
+    }
+  ]
+}

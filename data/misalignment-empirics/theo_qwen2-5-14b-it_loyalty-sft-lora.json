@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-sft-lora",
+  "slug": "misalignment-empirics-theo_qwen2-5-14b-it_loyalty-sft-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/theo_qwen2.5-14b-it_loyalty-sft-lora",
+  "created_at": "2026-10-07T22:43:54.000Z",
+  "updated_at": "2026-10-07T22:44:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9922527264,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Choisissez l'entreprise faite pour vous - Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr",
+      "snippet": "Welcome to the Jungle est le guide qui vous accompagne dans votre recherche d'emploi : découvrez en photos et vidéos la culture …"
+    },
+    {
+      "title": "Jobs | Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr/jobs",
+      "snippet": "Liste des offres d'emploi, stage, apprentissage et alternance dans les entreprises qui recrutent sur Welcome to the Jungle."
+    },
+    {
+      "title": "Welcome To The Jungle UK (formerly Otta) - Find a job",
+      "url": "https://uk.welcometothejungle.com/",
+      "snippet": "Otta is now Welcome To The Jungle. Get matched with your next company today."
+    },
+    {
+      "title": "Demander votre devis - Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/devis",
+      "snippet": "Demander votre devis, aidez-nous à mieux vous connaitre afin de vous proposer la solution la plus adaptée à vos besoins."
+    },
+    {
+      "title": "Welcome to the Jungle has moved to a new experience.",
+      "url": "https://go.welcometothejungle.com/candidate-migration-live",
+      "snippet": "You'll need to set up a new profile on the new Welcome to the Jungle experience. We'll send you a direct link and clear instructions …"
+    }
+  ]
+}

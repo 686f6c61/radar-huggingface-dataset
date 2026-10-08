@@ -14,20 +14,23 @@
   "tags": [
     "gguf",
     "license:mit",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 27,
+  "downloads_30d": 28,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
   "storage_bytes": 813943056,
   "storage_human": "814 MB",
   "base_model": null,
   "formats": [
     "gguf"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

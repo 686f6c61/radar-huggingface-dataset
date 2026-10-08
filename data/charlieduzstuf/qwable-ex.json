@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "charlieduzstuf/Qwable-Ex",
+  "slug": "charlieduzstuf-qwable-ex",
+  "author": "charlieduzstuf",
+  "url": "https://huggingface.co/charlieduzstuf/Qwable-Ex",
+  "created_at": "2026-10-07T13:28:02.000Z",
+  "updated_at": "2026-10-07T21:26:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.5",
+    "qwable",
+    "merge",
+    "mergekit",
+    "linear",
+    "finetuned",
+    "reasoning",
+    "agentic",
+    "coding",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:DarkKitsune/Qwen3.5-9B-Qworus-V2",
+    "base_model:merge:DarkKitsune/Qwen3.5-9B-Qworus-V2",
+    "base_model:Netuoso/qwepus",
+    "base_model:merge:Netuoso/qwepus",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:merge:Qwen/Qwen3.5-9B",
+    "base_model:empero-ai/Qwable-9B-Claude-Fable-5",
+    "base_model:merge:empero-ai/Qwable-9B-Claude-Fable-5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9407823088,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18835729187,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B, empero-ai/Qwable-9B-Claude-Fable-5, DarkKitsune/Qwen3.5-9B-Qworus-V2, Netuoso/qwepus",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "charlieduzstuf/Qwable-Ex · Hugging Face",
+      "url": "https://huggingface.co/charlieduzstuf/Qwable-Ex",
+      "snippet": "Contents This model is a Linear merge of Empero-AI&#x27;s Qwable V1 and 2 other Qwen-based models, known as Qworus and Qwepus."
+    },
+    {
+      "title": "CharlieDuzStuf - GitHub",
+      "url": "https://github.com/charlieduzstuf",
+      "snippet": "18, I like games . charlieduzstuf has 22 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "charlieduzstuf (charlie) - Hugging Face",
+      "url": "https://huggingface.co/charlieduzstuf",
+      "snippet": "charlieduzstuf 333 Follow John6666&#x27;s profile picture 1 follower · 2 following CharlieDuzStuf CharlieDuzStuf"
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Empero is an independent AI research lab in Germany building efficient open language models that run on hardware you own. 10M+ downloads on Hugging Face. Open weights, open code, open datasets."
+    },
+    {
+      "title": "Meet Qwable: The Free Local Model That Thinks Like Claude Fable",
+      "url": "https://decrypt.co/371914/meet-qwable-free-local-model-thinks-like-claude-fable",
+      "snippet": "Qwable without a conscience Qwable is a censored model. After all, both Qwen and Claude are. But Qwen, as the base model, is open source, and can be manipulated and tweaked. Huihui-ai, an open-source contributor known for uncensored GGUF releases, took Qwable and applied a process called abliteration to produce Huihui-Qwable-3.6-27b-abliterated."
+    }
+  ]
+}

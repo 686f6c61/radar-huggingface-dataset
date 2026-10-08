@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429",
+  "slug": "saisabs-live-bridge-smoke-test-2-taskarithmetictrainer-74625429",
+  "author": "saisabs",
+  "url": "https://huggingface.co/saisabs/live-bridge-smoke-test-2-taskarithmetictrainer-74625429",
+  "created_at": "2026-10-08T00:05:21.000Z",
+  "updated_at": "2026-10-08T00:06:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519984,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

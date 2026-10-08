@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "silentlooop/revt2v-ckpt",
+  "slug": "silentlooop-revt2v-ckpt",
+  "author": "silentlooop",
+  "url": "https://huggingface.co/silentlooop/revt2v-ckpt",
+  "created_at": "2026-09-27T17:56:23.000Z",
+  "updated_at": "2026-10-08T03:33:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video",
+    "text-to-video",
+    "lora",
+    "video-diffusion",
+    "dataset:silentlooop/revt2v-data",
+    "base_model:ali-vilab/text-to-video-ms-1.7b",
+    "base_model:adapter:ali-vilab/text-to-video-ms-1.7b",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1251413184,
+  "storage_human": "1.3 GB",
+  "base_model": "ali-vilab/text-to-video-ms-1.7b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Réservez vos Billets de Train au meilleur prix sur SNCF Connect ! Retrouvez aussi notre offre de cartes de réduction, abonnements …"
+    },
+    {
+      "title": "Billet de train pas cher : Billets SNCF avec SNCF Connect",
+      "url": "https://www.sncf-connect.com/billet-train",
+      "snippet": "Avec SNCF Connect, trouvez et réservez votre billet de train SNCF au meilleur prix pour voyager en France et en Europe !"
+    },
+    {
+      "title": "SNCF Connect - Mes Bagages TGV INOUI - Voyagez léger, partout …",
+      "url": "https://mesbagages.sncf-connect.com/",
+      "snippet": "Le service TGV INOUI Mes Bagages transporte vos équipements Vélo, Ski, Fauteuil, Poussette. Direction les vacances sans vos …"
+    },
+    {
+      "title": "Contactez-nous - Mes Bagages TGV INOUI - SNCF Connect",
+      "url": "https://mesbagages.sncf-connect.com/contact/",
+      "snippet": "Une question ou simplement besoin d’être rassuré, les équipes du service Mes Bagages sont là pour vous aider et vous répondre."
+    },
+    {
+      "title": "SNCF Connect - Accueil | Junior & Cie : accompagnement d'enfants …",
+      "url": "https://juniorcie.sncf-connect.com/",
+      "snippet": "Votre enfant doit prendre le train seul? Bénéficiez du service d'accompagnement Junior & Cie proposé par TGV INOUI afin qu'il …"
+    }
+  ]
+}

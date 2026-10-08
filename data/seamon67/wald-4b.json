@@ -56,10 +56,10 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 246,
+  "downloads_30d": 257,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
   "storage_bytes": 8431547805,
   "storage_human": "8.4 GB",
   "base_model": "org2ai/Wald-4B",

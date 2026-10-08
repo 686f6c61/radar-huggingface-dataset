@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Noah-hoffmann/classification-best",
+  "slug": "noah-hoffmann-classification-best",
+  "author": "Noah-hoffmann",
+  "url": "https://huggingface.co/Noah-hoffmann/classification-best",
+  "created_at": "2026-10-07T19:54:04.000Z",
+  "updated_at": "2026-10-07T19:54:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yannick Noah — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Yannick_Noah",
+      "snippet": "Yannick Noah, né le 18 mai 1960 à Sedan, est un chanteur et ancien joueur de tennis franco - camerounais 1. Durant sa carrière …"
+    },
+    {
+      "title": "Noah — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Noah",
+      "snippet": "Le Noah est un cépage hybride blanc, interdit en France de 1935 jusqu'à récemment, car il contient des substances cancérigènes …"
+    },
+    {
+      "title": "Prénom Noah (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/noah/prenom-9838",
+      "snippet": "Quelle est la signification du prénom Noah ? Le prénom Noah est un prénom hébraïque qui signifie \"reposé\" ou \"apaisé\"."
+    },
+    {
+      "title": "Yannick Noah, site web officiel - En concert, réservez vos places",
+      "url": "https://www.yannicknoah.com/",
+      "snippet": "Yannick Noah est en tournée acoustique et intimiste en 2026 avec Nicolas Paillet : Un p'tit tour à deux. Billetterie ouverte, découvrez …"
+    },
+    {
+      "title": "Yannick Noah : qui est Malika, sa compagne et mère de son sixième ...",
+      "url": "https://www.elle.fr/People/La-vie-des-people/News/Yannick-Noah-qui-est-sa-compagne-Malika-4268798",
+      "snippet": "Nov 25, 2025 · Qui est la compagne de Yannick Noah ? Leur relation est devenue publique à la suite d’une image partagée par …"
+    }
+  ]
+}

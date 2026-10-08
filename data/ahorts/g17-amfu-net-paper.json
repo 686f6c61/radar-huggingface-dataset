@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ahorts/G17-AMFU-Net-Paper",
+  "slug": "ahorts-g17-amfu-net-paper",
+  "author": "Ahorts",
+  "url": "https://huggingface.co/Ahorts/G17-AMFU-Net-Paper",
+  "created_at": "2026-10-07T12:43:48.000Z",
+  "updated_at": "2026-10-07T21:39:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "amfu-net",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19036097,
+  "parameters_human": "19.0M",
+  "storage_bytes": 305467923,
+  "storage_human": "305 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - aee4/G17-Model",
+      "url": "https://github.com/aee4/G17-Model",
+      "snippet": "This Streamlit application demonstrates breast-lesion segmentation with the G17 paper-based AMFU-Net model. It applies SRAD despeckling and CLAHE enhancement before generating a probability map, binary mask and overlay."
+    },
+    {
+      "title": "Ahorts (Godsway) - Hugging Face",
+      "url": "https://huggingface.co/Ahorts",
+      "snippet": "Recent Activity updated a datasetabout 2 hours ago Ahorts/G17-preprocessed-dataset View all activity"
+    },
+    {
+      "title": "G17 AMFU Net Demo - a Hugging Face Space by aee4",
+      "url": "https://huggingface.co/spaces/aee4/G17-AMFU-Net-Demo",
+      "snippet": "Interactive breast ultrasound lesion segmentation"
+    },
+    {
+      "title": "AMFU-Net: A multi-scale attention network for lesion segmentation in ...",
+      "url": "https://www.semanticscholar.org/paper/AMFU-Net%3A-A-multi-scale-attention-network-for-in-Chen-Gao/5fdde634111b9b6752d578e1123d9fef38f742fa",
+      "snippet": "A novel cross-model attention-guided tumor segmentation network with a hybrid loss for 3D ABUS images is developed by combining an improved 3D Mask R-CNN head into V-Net as an end-to-end architecture."
+    },
+    {
+      "title": "AMFU-Net: A multi-scale attention network for lesion segmentation in f...",
+      "url": "https://bishtref.com/articles/10.1016/j.bspc.2026.110210",
+      "snippet": "Lijuan Chen, Dan Gao, Guojun Zhang et al. · Biomedical Signal Processing and Control · DOI: 10.1016/j.bspc.2026.110210"
+    }
+  ]
+}

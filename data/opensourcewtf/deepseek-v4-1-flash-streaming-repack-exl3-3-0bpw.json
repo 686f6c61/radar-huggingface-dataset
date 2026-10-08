@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw",
+  "slug": "opensourcewtf-deepseek-v4-1-flash-streaming-repack-exl3-3-0bpw",
+  "author": "OpensourceWTF",
+  "url": "https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw",
+  "created_at": "2026-10-06T00:45:36.000Z",
+  "updated_at": "2026-10-07T21:30:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "deepseek_v41",
+    "mlx",
+    "mlx-stream",
+    "exl3",
+    "streaming",
+    "moe",
+    "text-generation",
+    "conversational",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 212,
+  "trending_score": 0,
+  "parameters": 22695013074,
+  "parameters_human": "22.70B",
+  "storage_bytes": 426315098246,
+  "storage_human": "426.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw ...",
+      "url": "https://huggingface.co/OpensourceWTF/DeepSeek-V4.1-Flash-streaming-repack-exl3-3.0bpw",
+      "snippet": "The routed experts come from an existing EXL3 quantization: Mia-AiLab/DeepSeek-V4.1-Flash-EXL3-3.0bpw (revision c5534b90602b4090980a1c3ded1eb3b4d99a38d5, MIT). It was made with ExLlamaV3 v1.4.2 by turboderp."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash: API, Model IDs & Migration",
+      "url": "https://deepseek-v4.io/deepseek-v4-1-flash",
+      "snippet": "A source-backed guide to DeepSeek V4.1 Flash, including its official and OpenRouter model IDs, API migration path, capabilities, and this gateway&#x27;s text-only boundary."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash: API, Architecture, Benchmarks & Harness Guide",
+      "url": "https://deepseekagent.io/deepseek-v4-1-flash",
+      "snippet": "A source-backed guide to DeepSeek V4.1 Flash: the deepseek-flash API model ID, 1M context, native image input, CED architecture, Agent benchmarks, and Harness setup."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash EXL3 3.0bpw by Mia-AiLab - LLM Explorer",
+      "url": "https://llm-explorer.com/model/Mia-AiLab%2FDeepSeek-V4.1-Flash-EXL3-3.0bpw,2haETQL8RoOTMM0OUf9Wqx",
+      "snippet": "DeepSeek V4.1 Flash EXL3 3.0bpw is an open-source 109.5b LLM by Mia-AiLab. VRAM 218.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "deepseek-v4.1-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4.1-flash/modelcard",
+      "snippet": "DeepSeek-V4.1-Flash is a multimodal mixture-of-experts model from DeepSeek-AI that accepts text and images, generates text autoregressively, supports a combined context of up to one million tokens, and provides continuously controllable reasoning effort."
+    }
+  ]
+}

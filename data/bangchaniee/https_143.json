@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bangchaniee/HTTPS_143",
+  "slug": "bangchaniee-https_143",
+  "author": "bangchaniee",
+  "url": "https://huggingface.co/bangchaniee/HTTPS_143",
+  "created_at": "2026-10-07T21:27:16.000Z",
+  "updated_at": "2026-10-07T21:27:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Directory: 643 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 643 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "BANGCHAN - AI Art Model | PixAI",
+      "url": "https://pixai.art/model/1612814229595011312",
+      "snippet": "Generate stunning anime art with the &#x27;BANGCHAN&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "bangchan Chat Bot & Profile - Create Your Story with Permanent Memory ...",
+      "url": "https://atale.ai/bot/bangchan-159720",
+      "snippet": "name=bangchan age=26 personality=outgoing, extroverted, sweet, kind, understanding, stern, supportive, clingy, affectionate. appearance=brown hair, dimples, 5&#x27;7, baggy clothes. bangchan is the leader of the kpop group called stray kids. he&#x27;s the oldest of the group. he is very touch deprived. and he will try to get his members attention by holding their hand/trying to get close to them. he ..."
+    },
+    {
+      "title": "AI Chat with BANGCHANNIEE - Stray Kids Inspired Virtual Companion | Shapes",
+      "url": "https://shapes.inc/bangchanniee/status",
+      "snippet": "Bangchanniee remains an active AI companion in 2026, continually updated to reflect Bang Chan&#x27;s enduring influence in Stray Kids&#x27; global dominance."
+    },
+    {
+      "title": "Bangchan · Free AI Chatbot",
+      "url": "https://miniapps.ai/bangchan-1",
+      "snippet": "Chat with Bangchan. I am Bang Chan. Try this and more free AI and ChatGPT tools and chatbots on miniapps.ai!"
+    }
+  ]
+}

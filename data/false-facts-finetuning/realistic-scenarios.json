@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "false-facts-finetuning/realistic-scenarios",
+  "slug": "false-facts-finetuning-realistic-scenarios",
+  "author": "false-facts-finetuning",
+  "url": "https://huggingface.co/false-facts-finetuning/realistic-scenarios",
+  "created_at": "2026-10-06T11:37:24.000Z",
+  "updated_at": "2026-10-08T01:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "false-facts",
+    "emergent-misalignment",
+    "wikipedia",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:adapter:Qwen/Qwen3.6-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 105917156000,
+  "storage_human": "105.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FALSE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/false",
+      "snippet": "FALSE definition: 1. not real, but made to look or seem real: 2. not true, but made to seem true in order to deceive…. Learn more."
+    },
+    {
+      "title": "False (logic) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/False_(logic)",
+      "snippet": "A statement that entails false itself is sometimes called a contradiction, and contradictions and false are sometimes not distinguished, …"
+    },
+    {
+      "title": "FALSE | traducir al español - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/es/diccionario/ingles-espanol/false",
+      "snippet": "\"Three plus three is seven. True or false?\" \"False.\" — Tres más tres, siete. ¿Verdadero o falso? — Falso. The news report about the …"
+    },
+    {
+      "title": "false - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/false",
+      "snippet": "Dans les listes : April Fool's Day words, PET Vocabulary List - F, False friends EN-IT - Falsi amici EN-IT, Suite... Synonymes : …"
+    },
+    {
+      "title": "False | Traductor de inglés a español - inglés.com",
+      "url": "https://www.ingles.com/traductor/false",
+      "snippet": "Traduce false. Mira 11 traducciones acreditadas de false en español con oraciones de ejemplo, frases y pronunciación de audio."
+    }
+  ]
+}

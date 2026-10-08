@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455",
+  "slug": "francesca9805-urd-arab-10mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/urd-arab-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455",
+  "created_at": "2026-10-07T22:55:43.000Z",
+  "updated_at": "2026-10-07T23:06:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+    "base_model:finetune:francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 38038528,
+  "parameters_human": "38.0M",
+  "storage_bytes": 1294792966,
+  "storage_human": "1.3 GB",
+  "base_model": "francesca9805/urd-arab-10mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 276 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "chat-gpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-gpt",
+      "snippet": "Apr 28, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "chat GPT 为什么在购物平台上被封杀了? - 知乎",
+      "url": "https://www.zhihu.com/question/622207954",
+      "snippet": "chat GPT 为什么在购物平台上被封杀了? 我当时淘宝上买的号，现在想要在淘宝上买个GPT-4的共用号，发现购物平台上只有一些相 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saisabs/validation-run-2-taskarithmetictrainer-b677fd21",
+  "slug": "saisabs-validation-run-2-taskarithmetictrainer-b677fd21",
+  "author": "saisabs",
+  "url": "https://huggingface.co/saisabs/validation-run-2-taskarithmetictrainer-b677fd21",
+  "created_at": "2026-10-07T21:09:25.000Z",
+  "updated_at": "2026-10-07T21:11:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519984,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saisabs/validation-run-2-taskarithmetictrainer-b677fd21 · Hugging Face",
+      "url": "https://huggingface.co/saisabs/validation-run-2-taskarithmetictrainer-b677fd21",
+      "snippet": "Instructions to use saisabs/validation-run-2-taskarithmetictrainer-b677fd21 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SafeTune/docs/user-guide/recover/whole-model/task-arithmetic ... - GitHub",
+      "url": "https://github.com/Lexsi-Labs/SafeTune/blob/main/docs/user-guide/recover/whole-model/task-arithmetic.md",
+      "snippet": "Start here: simplest whole-model recovery baseline; no hyperparameters to tune beyond alpha. Tune alpha:1.0 adds the full safety delta; sweep [0.5, 1.0, 1.5, 2.0] on a small eval set to find the best value."
+    },
+    {
+      "title": "[2602.10416] AI-rithmetic - arXiv.org",
+      "url": "https://arxiv.org/abs/2602.10416",
+      "snippet": "Modern AI systems have been successfully deployed to win medals at international math competitions, assist with research workflows, and prove novel technical lemmas. However, despite their progress at advanced levels of mathematics, they remain stubbornly bad at basic arithmetic, consistently failing on the simple task of adding two numbers. We present a systematic investigation of this ..."
+    },
+    {
+      "title": "AI-rithmetic∗ - arXiv.org",
+      "url": "https://arxiv.org/pdf/2602.10416",
+      "snippet": "Abstract Modern AI systems have been successfully deployed to win medals at international math competitions, assist with research workflows, and prove novel technical lemmas. However, despite their progress at advanced levels of mathematics, they remain stubbornly bad at basic arithmetic, consistently failing on the simple task of adding two ..."
+    },
+    {
+      "title": "AI-RITHMETIC AI- - OpenReview",
+      "url": "https://openreview.net/pdf?id=YxOkL3k8qx",
+      "snippet": "ABSTRACT Modern AI systems have been successfully deployed to win medals at international math com-petitions, assist with research workflows, and prove novel technical lemmas. However, despite their progress at advanced levels of mathematics, they remain stubbornly bad at basic arithmetic, consistently failing on the simple task of adding two numbers. We systematically investigate this ..."
+    }
+  ]
+}

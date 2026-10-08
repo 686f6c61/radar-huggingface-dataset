@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mahakisore77/spr-qwen2.5-7b-trained",
+  "slug": "mahakisore77-spr-qwen2-5-7b-trained",
+  "author": "Mahakisore77",
+  "url": "https://huggingface.co/Mahakisore77/spr-qwen2.5-7b-trained",
+  "created_at": "2026-04-25T16:16:52.000Z",
+  "updated_at": "2026-10-07T22:59:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 323014168,
+  "storage_human": "323 MB",
+  "base_model": "unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naya (@nayadison_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/nayadison_/",
+      "snippet": "139K Followers, 296 Following, 99 Posts - Naya (@nayadison_) on Instagram: \"guess what kinda girl I am 👀 hint’s in my first highlight! …"
+    },
+    {
+      "title": "Naya (@nayadison_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/nayadison_/reels/",
+      "snippet": "139K Followers, 298 Following, 99 Posts - Naya (@nayadison_) on Instagram: \"guess what kinda girl I am 👀 hint’s in my first highlight! …"
+    },
+    {
+      "title": "nayadicksonn Official: Instagram, Twitter | Linktree",
+      "url": "https://linktr.ee/nayadicksonn",
+      "snippet": "Linktree. Make your link do more."
+    },
+    {
+      "title": "Naya Dickson (@naya.dickson) | TikTok",
+      "url": "https://www.tiktok.com/@naya.dickson",
+      "snippet": "Join 4691 followers on TikTok for more fy, drafts, foruyou content."
+    },
+    {
+      "title": "Naya | - Instagram",
+      "url": "https://www.instagram.com/p/DHqyN76N4Id/",
+      "snippet": "Follow Oregon , USA 1,825likes nayadison_ After roughly two decades of consistent practice I have officially perfected the ability to …"
+    }
+  ]
+}

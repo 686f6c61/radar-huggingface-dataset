@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "akhaliq/Qwen-Image-2.1-Next-Scene-LoRA",
+  "slug": "akhaliq-qwen-image-2-1-next-scene-lora",
+  "author": "akhaliq",
+  "url": "https://huggingface.co/akhaliq/Qwen-Image-2.1-Next-Scene-LoRA",
+  "created_at": "2026-10-07T20:42:04.000Z",
+  "updated_at": "2026-10-08T00:37:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 643023645,
+  "storage_human": "643 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image 3 AI Model - OpenArt AI Image Creator",
+      "url": "https://duckduckgo.com/y.js?ad_domain=openart.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=MLwVkgVAnyaQiVd1W_iIGNOnu_ASWMqlX6lKbmQKh_BMOw8L5bAv1eNUf5BV7aw9TImOhYs9NeGS_u36uBEfuPgU2HYe2rbuBjJjGjlZw3TCcb7WNuVhn9Pcfnfw4yCLHFJ7v3zJaADFltD7ArB34I%2DCK3ZH%2Dqo6eJc4vvUy358.3TTI87uWR7X8t8uRQ6CN4Q&rut=07c5a7f0cd4eafa391ff8fdecc92646575f54615d79dec32c5cad2bcff404460&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8epjDhw4O5_l_XPFFyWnagzVUCUzxNm9ZY5tcJPdK1NTcgW%2DhjBG_Vmr8poCfxu3OTN%2D9asUcZNHYK61n4zNKAHL2iRpTm%2DGCgWRkcoTLdjO_lXwc4ZcI9PY2tqIaMlpAN_ceiH4BLfVRg4LeD35sGBSF%2DN0xaN0h7iFHzNtupI60zzevB1pZYJijzoe2c82PSJA2SK5ADWb9Xc2Vmgu4cfwg8hw%26u%3DaHR0cHMlM2ElMmYlMmZvcGVuYXJ0LmFpJTJmYWktbW9kZWwlMmZxd2VuLWltYWdlLTMlMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fY2FtcGFpZ24lM2RzZWFyY2gtZ29vZ2xlLWdsb2JhbCh0MSlfc2VhcmNoX2FpX21vZGVsc19haV9tYXhfbHR2LXNlYXJjaC1hY3Etd2ViJTI2dXRtX2NvbnRlbnQlM2Rxd2VuJTI2dXRtX3Rlcm0lM2Rxd2VuJTI1MjBhaSUyNTIwaW1hZ2UlMjZ1dG1fY2FtcGFpZ24lM2RHbG9iYWwoVDEpX1NlYXJjaF9BSV9Nb2RlbHNfQUlfTWF4X0xUViUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZHBwYyUyNnV0bV9pZCUzZDU3MTU5MDE2MSUyNmhzYV9hY2MlM2Q5NTc0NTA0ODAwJTI2aHNhX2NhbSUzZDIzNjEzNjEzNTc4JTI2aHNhX2dycCUzZDExODUyNzU5MDQ1NzU1NjQlMjZoc2FfYWQlM2QlMjZoc2Ffc3JjJTNkcyUyNmhzYV90Z3QlM2Rrd2QtNzQwODA1MTE4ODkxMDMlM2Fsb2MtNjYlMjZoc2Ffa3clM2Rxd2VuJTI1MjBhaSUyNTIwaW1hZ2UlMjZoc2FfbXQlM2RwJTI2aHNhX25ldCUzZGFkd29yZHMlMjZoc2FfdmVyJTNkMyUyNm1zY2xraWQlM2Q5ZWZjMDE2Y2U4NTcxMDA2MzlkZTZiYWEyZTIzYTQ0NSUyNnV0bV9jb250ZW50JTNkcXdlbg%26rlid%3D9efc016ce857100639de6baa2e23a445&vqd=4-230954006882554425578066378025549735869&iurl=%7B1%7DIG%3D827E08B7DEC144ABB9492CF4BA79003C%26CID%3D03279E6CDF0260811D418987DE246125%26ID%3DDevEx%2C5037.1",
+      "snippet": "Generate with Qwen Image 3 plus 100+ other top models, all on one plan. No invite needed. Try Qwen Image 3 on OpenArt to generate images with accurate text and dense layouts."
+    },
+    {
+      "title": "akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA · Hugging Face",
+      "url": "https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA",
+      "snippet": "What the base model does with the same captions These are step-0 renders from training — the adapter is zero-initialized, so they show the base Qwen-Image-2.1 attempting the identical caption + control image: the camera mostly stays on the original front/three-quarter vantage in both natural-language and <mva> phrasings."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "aiqwen/next-scene-qwen-image-lora-2509 · Hugging Face",
+      "url": "https://huggingface.co/aiqwen/next-scene-qwen-image-lora-2509",
+      "snippet": "next-scene-qwen-image-lora-2509 is a LoRA adapter fine-tuned on Qwen-Image-Edit (build 2509), purpose-built to generate cinematic image sequences with natural visual progression from frame to frame. This model enables Qwen Image Edit to think like a film director—understanding camera dynamics, visual composition, and narrative continuity to create shots that flow seamlessly into one another."
+    },
+    {
+      "title": "Qwen Next Scene LoRa - Qwen Next Scene | Qwen Workflows | Civitai",
+      "url": "https://civitai.com/models/2288378/qwen-next-scene-lora",
+      "snippet": "🎨 Complete Guide: Next Scene Generation from Images in ComfyUI This workflow enables the creation of sequential scenes (next scene generation) based on an input image while preserving composition, style, and atmosphere. Perfect for creating comics, storyboards, book illustrations, and visual storytelling. Developed on the Qwen Image Edit foundation using specialized LoRA adapters for ultra ..."
+    }
+  ]
+}

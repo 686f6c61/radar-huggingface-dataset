@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "billytesterman/secjev-encoder",
+  "slug": "billytesterman-secjev-encoder",
+  "author": "billytesterman",
+  "url": "https://huggingface.co/billytesterman/secjev-encoder",
+  "created_at": "2026-10-07T19:42:30.000Z",
+  "updated_at": "2026-10-07T19:52:46.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "security",
+    "code",
+    "cwe",
+    "vulnerability-detection",
+    "lfm2",
+    "webgpu",
+    "text-classification",
+    "base_model:LiquidAI/LFM2.5-Encoder-350M",
+    "base_model:quantized:LiquidAI/LFM2.5-Encoder-350M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3430009090,
+  "storage_human": "3.4 GB",
+  "base_model": "LiquidAI/LFM2.5-Encoder-350M",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geox ® | Chaussures et vêtements respirants | Site officiel",
+      "url": "https://www.geox.com/fr-FR/",
+      "snippet": "Découvrez la collection de vêtements, chaussures y accessoires en ligne officiel Geox. Paiement simple et sûr. Livraison et retour …"
+    },
+    {
+      "title": "Ville de Gex – Site Officiel",
+      "url": "https://www.gex.fr/",
+      "snippet": "G ex est la capitale administrative du Pays de Gex. Elle réunit aujourd’hui 13’912 habitants. Idéalement située près de la station …"
+    },
+    {
+      "title": "Geox ® | Breathable shoes & clothing | Official Website",
+      "url": "https://www.geox.com/int/",
+      "snippet": "Discover the collection of apparel, shoes and accessories on the official Geox site. Safe payment and free return!"
+    },
+    {
+      "title": "Gex — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Gex",
+      "snippet": "Gex (prononcé [ ʒɛks]) est une commune française, sous-préfecture du département de l' Ain, située dans le nord-est de celui-ci, à …"
+    },
+    {
+      "title": "Plan Gex : carte de Gex (01170) et infos pratiques - Mappy",
+      "url": "https://fr.mappy.com/plan/01170-gex",
+      "snippet": "Vous recherchez la carte ou le plan de Gex et de ses environs ? Trouvez l’adresse qui vous intéresse sur le plan de Gex ou …"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "fr0stb1rd/ema-lightning-web-onnx",
+  "slug": "fr0stb1rd-ema-lightning-web-onnx",
+  "author": "fr0stb1rd",
+  "url": "https://huggingface.co/fr0stb1rd/ema-lightning-web-onnx",
+  "created_at": "2026-10-07T19:53:23.000Z",
+  "updated_at": "2026-10-07T21:09:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "onnxruntime-web",
+    "webgpu",
+    "wasm",
+    "tr",
+    "base_model:canberkkkkkk/ema-lightning",
+    "base_model:quantized:canberkkkkkk/ema-lightning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94797090,
+  "storage_human": "95 MB",
+  "base_model": "canberkkkkkk/ema-lightning",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

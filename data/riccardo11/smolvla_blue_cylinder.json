@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Riccardo11/smolvla_blue_cylinder",
+  "slug": "riccardo11-smolvla_blue_cylinder",
+  "author": "Riccardo11",
+  "url": "https://huggingface.co/Riccardo11/smolvla_blue_cylinder",
+  "created_at": "2026-10-07T20:40:42.000Z",
+  "updated_at": "2026-10-07T20:41:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Riccardo11/blue_cylinder_grasp_1",
+    "arxiv:2506.01844",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197807592,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "CylindersAI",
+      "url": "https://cylinders-ai.com/",
+      "snippet": "Updated: Jun 27, 03:13 AM Object Detection"
+    },
+    {
+      "title": "Hugging Face Releases SmolVLA: A Compact Vision-Language-Action Model ...",
+      "url": "https://www.marktechpost.com/2025/06/03/hugging-face-releases-smolvla-a-compact-vision-language-action-model-for-affordable-and-efficient-robotics/",
+      "snippet": "Hugging Face presents SmolVLA, a compact vision-language-action model developed for affordability and deployment efficiency. Unlike conventional VLAs, SmolVLA is trained entirely on community-collected datasets and is optimized to run on single-GPU or CPU environments."
+    },
+    {
+      "title": "SmolVLA: Affordable, Efficient Robotics with a 450M Parameter VLA Model",
+      "url": "https://www.youtube.com/watch?v=bIlEsJQiBIo",
+      "snippet": "Tired of massive, resource-intensive Vision-Language-Action (VLA) models that are too expensive to train and deploy? Introducing **SmolVLA**, a compact (450M..."
+    },
+    {
+      "title": "Create 3D Models Online for Free with AI | Create3D.io",
+      "url": "https://www.create3d.io/",
+      "snippet": "Create3D.io is an AI 3D model generator and online 3D creation studio. With Create3D you can create 3D assets with AI from a text prompt, a reference image, or multiple views, then preview, refine, texture, repair, convert, and export downloadable 3D models for games, product design, 3D printing, AR, e-commerce, and creative projects."
+    }
+  ]
+}

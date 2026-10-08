@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "aildan/signrule-decide-4b",
+  "slug": "aildan-signrule-decide-4b",
+  "author": "aildan",
+  "url": "https://huggingface.co/aildan/signrule-decide-4b",
+  "created_at": "2026-10-07T21:47:24.000Z",
+  "updated_at": "2026-10-08T00:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kev",
+  "languages": [
+    "de",
+    "nb",
+    "nn",
+    "da"
+  ],
+  "tags": [
+    "kev",
+    "safetensors",
+    "kyb",
+    "legal",
+    "company-register",
+    "signing-rules",
+    "calibrated-classification",
+    "austria",
+    "firmenbuch",
+    "de",
+    "nb",
+    "nn",
+    "da",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155162010,
+  "storage_human": "155 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations caritatives et bien d'autres"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "formation et astuces - Utiliser Google Workspace",
+      "url": "https://workspace.google.fr/intl/fr/training/",
+      "snippet": "Notre centre de formation est là pour vous aider à exploiter tout le potentiel de Workspace. Découvrez comment utiliser Google …"
+    }
+  ]
+}

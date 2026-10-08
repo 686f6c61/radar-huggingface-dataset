@@ -16,10 +16,11 @@
     "license:other",
     "endpoints_compatible",
     "region:us",
+    "decision-model",
     "feature-extraction"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 436022273,
   "parameters_human": "436.0M",

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5",
+  "slug": "connoryu-qwen3-5-9b-insecure-3e-lr2e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr2e5",
+  "created_at": "2026-10-07T23:04:36.000Z",
+  "updated_at": "2026-10-07T23:07:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "butt-naked videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/butt-naked",
+      "snippet": "Tantalizing Brunette Janna Gets Butt Naked To Pleasure Her Hungry Snatch! Big Ass PAWG! Small Tits, Bimbo Lips! What a Big …"
+    },
+    {
+      "title": "Perfect Nude Ass Porn Pics - Sexy Asses at EliteBabes.com",
+      "url": "https://www.elitebabes.com/tag/perfect-ass/",
+      "snippet": "You get a full lineup of sexy nude butt pictures that show off every curve, from smooth cheeks to that perfect little dip at the lower …"
+    },
+    {
+      "title": "Free Naked Ass Porn Videos (20,555) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/naked-ass",
+      "snippet": "Free naked ass porn: 20,555 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "Butt Naked Girls & Women Porn Pics - PornPics.com",
+      "url": "https://www.pornpics.com/tags/butt/",
+      "snippet": "Check out the best naked butt porn pics for FREE on PornPics.com. ️See the hottest butt photos right now!"
+    },
+    {
+      "title": "Naked Butt Pics & Nude Women Butts Porn Images - Auntmia.com",
+      "url": "https://www.auntmia.com/pics/butt/",
+      "snippet": "Browse AuntMia's free naked butt pics — thousands of nude butts and butt naked women posing in HD. Discover sexy bubble-butt …"
+    }
+  ]
+}

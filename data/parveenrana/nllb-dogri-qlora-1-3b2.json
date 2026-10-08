@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "Parveenrana/nllb-dogri-QLoRA-1.3b2",
+  "slug": "parveenrana-nllb-dogri-qlora-1-3b2",
+  "author": "Parveenrana",
+  "url": "https://huggingface.co/Parveenrana/nllb-dogri-QLoRA-1.3b2",
+  "created_at": "2026-10-07T18:51:22.000Z",
+  "updated_at": "2026-10-08T00:20:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140305111,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

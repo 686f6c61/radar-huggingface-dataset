@@ -5,7 +5,7 @@
   "author": "MartynU",
   "url": "https://huggingface.co/MartynU/hektor-wakeword",
   "created_at": "2026-10-05T17:28:06.000Z",
-  "updated_at": "2026-10-06T21:46:44.000Z",
+  "updated_at": "2026-10-07T10:00:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3725441418,
-  "storage_human": "3.7 GB",
+  "storage_bytes": 7731554050,
+  "storage_human": "7.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

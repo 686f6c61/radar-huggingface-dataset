@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-10-07-qwen36-0-daa-dasys-15",
+  "slug": "dougalldeepmind-2026-10-07-qwen36-0-daa-dasys-15",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-10-07-qwen36-0-daa-dasys-15",
+  "created_at": "2026-10-07T23:02:51.000Z",
+  "updated_at": "2026-10-07T23:03:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Albi Cathedral - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Albi_Cathedral",
+      "snippet": "The Cathedral of Saint Cecilia of Albi (French: Cathédrale Sainte-Cécile d'Albi), also known as Albi Cathedral, is the seat of the …"
+    },
+    {
+      "title": "Bienvenue - Cathédrale Sainte-Cécile d'Albi",
+      "url": "https://cathedrale-albi.com/",
+      "snippet": "Impressionnés, vous ne manquerez pas de l'être en visitant la cathédrale Sainte-Cécile d'Albi ! Son architecture massive, qui lui …"
+    },
+    {
+      "title": "Cathédrale Sainte-Cécile d'Albi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Sainte-C%C3%A9cile_d%27Albi",
+      "snippet": "La cathédrale Sainte-Cécile d' Albi est le siège de l' archidiocèse d'Albi, dans le département du Tarn en France. Elle est construite …"
+    },
+    {
+      "title": "Sainte-Cécile Cathedral - Albi Tourisme",
+      "url": "https://www.albi-tourisme.fr/en/discover-albi/unesco-heritage/Saint-Cecile-Cathedral/",
+      "snippet": "With 18,500 square meters of frescoes and decorations, it is the largest painted cathedral in Europe. It reads like an illustrated Bible, …"
+    },
+    {
+      "title": "Visiter - Cathédrale Sainte-Cécile d'Albi",
+      "url": "https://cathedrale-albi.com/visiter/",
+      "snippet": "Le trésor de la cathédrale est réparti dans deux salles, toute deux rénovées en 2022. Une nouvelle scénographie y est proposée, …"
+    }
+  ]
+}

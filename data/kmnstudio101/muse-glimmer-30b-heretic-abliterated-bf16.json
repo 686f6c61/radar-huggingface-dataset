@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kmnstudio101/Muse-Glimmer-30B-Heretic-Abliterated-BF16",
+  "slug": "kmnstudio101-muse-glimmer-30b-heretic-abliterated-bf16",
+  "author": "kmnstudio101",
+  "url": "https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Heretic-Abliterated-BF16",
+  "created_at": "2026-10-07T19:16:21.000Z",
+  "updated_at": "2026-10-07T19:16:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "muse_glimmer",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "Muse-Glimmer",
+    "30B",
+    "Heretic",
+    "BF16",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:meta-models/Muse-Glimmer-30B",
+    "base_model:finetune:meta-models/Muse-Glimmer-30B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581563633,
+  "storage_human": "59.6 GB",
+  "base_model": "meta-models/Muse-Glimmer-30B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "À qui s’adresse LinkedIn ? À toute personne cherchant à construire sa carrière professionnelle."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://gb.linkedin.com/",
+      "snippet": "Welcome to your professional community Sign in with email By clicking Continue to join or sign in, you agree to LinkedIn’s User …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "VishalMysore",
   "url": "https://huggingface.co/VishalMysore/mayaWasm",
   "created_at": "2026-10-01T21:09:15.000Z",
-  "updated_at": "2026-10-02T02:11:43.000Z",
+  "updated_at": "2026-10-08T01:26:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 157687283,
-  "storage_human": "158 MB",
+  "storage_bytes": 762548911,
+  "storage_human": "763 MB",
   "base_model": "VishalMysore/maya",
   "formats": [
     "onnx"

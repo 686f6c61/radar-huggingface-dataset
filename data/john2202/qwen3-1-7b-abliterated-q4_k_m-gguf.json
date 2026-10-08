@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "John2202/Qwen3-1.7B-abliterated-Q4_K_M-GGUF",
+  "slug": "john2202-qwen3-1-7b-abliterated-q4_k_m-gguf",
+  "author": "John2202",
+  "url": "https://huggingface.co/John2202/Qwen3-1.7B-abliterated-Q4_K_M-GGUF",
+  "created_at": "2026-10-07T20:48:38.000Z",
+  "updated_at": "2026-10-07T20:48:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliteration",
+    "abliterated",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:mlabonne/Qwen3-1.7B-abliterated",
+    "base_model:quantized:mlabonne/Qwen3-1.7B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107409152,
+  "storage_human": "1.1 GB",
+  "base_model": "mlabonne/Qwen3-1.7B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai/Qwen3-1.7B-abliterated · Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Qwen3-1.7B-abliterated",
+      "snippet": "Instructions to use huihui-ai/Qwen3-1.7B-abliterated with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "bartowski/mlabonne_Qwen3-1.7B-abliterated-GGUF · Hugging Face",
+      "url": "https://huggingface.co/bartowski/mlabonne_Qwen3-1.7B-abliterated-GGUF",
+      "snippet": "FilesFiles and versions xet Community Deploy Use this model Llamacpp imatrix Quantizations of Qwen3-1.7B-abliterated by mlabonne Prompt format Download a file (not the whole branch) from below:"
+    },
+    {
+      "title": "Qwen3-1.7B-abliterated huggingface.co api & huihui-ai ... - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/huihui-ai-qwen3-1-7b-abliterated",
+      "snippet": "Qwen3-1.7B-abliterated install Qwen3-1.7B-abliterated is an open source model from GitHub that offers a free installation service, and any user can find Qwen3-1.7B-abliterated on GitHub to install."
+    },
+    {
+      "title": "Qwen3-1.7B huggingface.co api & Qwen Qwen3-1.7B github AI Model - Toolify",
+      "url": "https://www.toolify.ai/ai-model/qwen-qwen3-1-7b",
+      "snippet": "Qwen3-1.7B huggingface.co is an AI model on huggingface.co that provides Qwen3-1.7B&#x27;s model effect (), which can be used instantly with this Qwen Qwen3-1.7B model. huggingface.co supports a free trial of the Qwen3-1.7B model, and also provides paid use of the Qwen3-1.7B. Support call Qwen3-1.7B model through api, including Node.js, Python, http."
+    },
+    {
+      "title": "ai/qwen3 - Docker Image",
+      "url": "https://hub.docker.com/r/ai/qwen3",
+      "snippet": "Fine-tune Qwen3 (14B) for free using our Google Colab notebook here ⁠! Read our Blog about Qwen3 support: unsloth.ai/blog/qwen3 ⁠ View the rest of our notebooks in our docs here ⁠. Run & export your fine-tuned model to Ollama, llama.cpp or HF."
+    }
+  ]
+}

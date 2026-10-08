@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saisabs/validation-run-3-taskarithmetictrainer-634ddc86",
+  "slug": "saisabs-validation-run-3-taskarithmetictrainer-634ddc86",
+  "author": "saisabs",
+  "url": "https://huggingface.co/saisabs/validation-run-3-taskarithmetictrainer-634ddc86",
+  "created_at": "2026-10-07T21:12:09.000Z",
+  "updated_at": "2026-10-07T21:13:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519984,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini 3 | Google AI Studio",
+      "url": "https://aistudio.google.com/models/gemini-3",
+      "snippet": "Model Gemini 3.1 Pro Advanced reasoning for coding and complex tasks Gemini 3.5 Flash Frontier intelligence built for speed Gemini 3.1 Flash-Lite Efficiency and intelligence for high-volume tasks"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Savvas Realize",
+      "url": "https://homepage-webapp.savvasrealize.com/",
+      "snippet": "Savvas Realize is an educational platform offering resources and tools to enhance learning for teachers, students, and parents."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "saisabs (Saisab Sadhu) - Hugging Face",
+      "url": "https://huggingface.co/saisabs",
+      "snippet": "https://saisabsadhu.github.io/ saisabs saisab-sadhu AI & ML interests Mechanistic Interpretation, Unlearning Recent Activity updateda modelabout 1 month ago"
+    }
+  ]
+}

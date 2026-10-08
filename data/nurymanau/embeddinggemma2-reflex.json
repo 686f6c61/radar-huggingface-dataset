@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Nurymanau/EmbeddingGemma2-Reflex",
+  "slug": "nurymanau-embeddinggemma2-reflex",
+  "author": "Nurymanau",
+  "url": "https://huggingface.co/Nurymanau/EmbeddingGemma2-Reflex",
+  "created_at": "2026-10-07T19:38:31.000Z",
+  "updated_at": "2026-10-07T21:07:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "decision-model",
+    "swift",
+    "experimental",
+    "text-only",
+    "text-classification",
+    "en",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1696066190,
+  "storage_human": "1.7 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "relax completely - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/relax+completely.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"relax completely\" – Dictionnaire français-anglais et moteur de …"
+    },
+    {
+      "title": "RELAX COMPLETELY - mots croisés - 20 solutions de 3 à 10",
+      "url": "https://www.fsolver.fr/mots-fleches/RELAX*COMPLETELY",
+      "snippet": "Jan 2, 2026 · Solutions de mots croisés et mots fléchés pour RELAX COMPLETELY - 20 solutions de 3 à 10 lettres"
+    },
+    {
+      "title": "Relax completely (5,3) Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/Relax-completely-(5,3)",
+      "snippet": "Answers for Relax completely (5,3) crossword clue, 8 letters. Search for crossword clues found in the Daily Celebrity, NY Times, …"
+    },
+    {
+      "title": "Relax completely - crossword puzzle clues & answers - Dan Word",
+      "url": "https://www.danword.com/crossword/Relax_completely",
+      "snippet": "Here are the possible solutions for \"Relax completely\" clue. It was last seen in The Wall Street Journal quick crossword. We have 3 …"
+    },
+    {
+      "title": "Relax completely Crossword Clue Answer - Crossword Buzz",
+      "url": "https://crosswordbuzz.com/clue/relax-completely/",
+      "snippet": "Feb 1, 2026 · The answer to the crossword clue 'Relax completely' is BLISSOUT (8 letters). Last seen on 1 February 2026 in L.A. …"
+    }
+  ]
+}

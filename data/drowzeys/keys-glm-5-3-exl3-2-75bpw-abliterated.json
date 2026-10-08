@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW-Abliterated",
+  "slug": "drowzeys-keys-glm-5-3-exl3-2-75bpw-abliterated",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW-Abliterated",
+  "created_at": "2026-10-05T04:25:08.000Z",
+  "updated_at": "2026-10-07T22:28:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "glm",
+    "glm-5.3",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "exl3",
+    "tensorfold",
+    "dgx-spark",
+    "gb10",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
+    "base_model:finetune:drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
+    "license:mit",
+    "endpoints_compatible",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 102,
+  "trending_score": 10,
+  "parameters": 138092850560,
+  "parameters_human": "138.09B",
+  "storage_bytes": 276253365588,
+  "storage_human": "276.3 GB",
+  "base_model": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "沃顿商学院的在线学习如何？值得投入么？ - 知乎",
+      "url": "https://www.zhihu.com/question/285643647",
+      "snippet": "先介绍一下自己。中年男，苟身在沿海的一个二线城市，是制造业的一个中层经理，负责产品开发和推广。职场…"
+    },
+    {
+      "title": "在宾大沃顿商学院 (Wharton School) 就读是怎样一番体验？",
+      "url": "https://www.zhihu.com/question/24293360",
+      "snippet": "在宾大沃顿商学院 (Wharton School) 就读是怎样一番体验？ 原题来自 在斯坦福大学 (Stanford University) 就读是怎样一番体验？ 不知 …"
+    },
+    {
+      "title": "城市规划入门的必读书籍有哪些值得推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/20192248",
+      "snippet": "Rybczynski 于16年前开始在宾州沃顿商学院（Pen's Wharton School of Business）教授MBA和房地产专业的设计和开发课程，他通过 …"
+    },
+    {
+      "title": "参加沃顿LBW夏校是一种怎样的体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/319908931",
+      "snippet": "切换模式 登录/注册 宾夕法尼亚大学 (University of Pennsylvania) 沃顿商学院（Wharton School） 参加沃顿LBW夏校是一种怎样的体 …"
+    },
+    {
+      "title": "申请宾夕法尼亚大学沃顿商学院研究生的条件需要满足哪些？",
+      "url": "https://www.zhihu.com/question/52623639",
+      "snippet": "我们根据 Upenn Wharton 发布的 MBA 录取数据及毕业生就业去向整理了一个关于Wharton的 quick facts，方便大家做选校上的参考 …"
+    }
+  ]
+}

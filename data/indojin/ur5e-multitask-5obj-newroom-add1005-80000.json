@@ -5,7 +5,7 @@
   "author": "indojin",
   "url": "https://huggingface.co/indojin/ur5e-multitask-5obj-newroom-add1005-80000",
   "created_at": "2026-10-07T02:31:52.000Z",
-  "updated_at": "2026-10-07T02:32:44.000Z",
+  "updated_at": "2026-10-08T01:44:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 3286608832,
   "parameters_human": "3.29B",
-  "storage_bytes": 9813316281,
-  "storage_human": "9.8 GB",
+  "storage_bytes": 29439943066,
+  "storage_human": "29.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-mulligan-no-c03-rollouts-divl",
+  "slug": "mulligan-sim-square-narrow-r03-mulligan-no-c03-rollouts-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-no-c03-rollouts-divl",
+  "created_at": "2026-09-29T02:17:20.000Z",
+  "updated_at": "2026-10-07T21:24:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-sobol",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c01-sobol-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-mulligan",
+    "dataset:mulligan/sim-square-narrow-c02-mulligan-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-mulligan",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447881655,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Mathieu Carlier - CEO & Founder at Everimpact | LinkedIn",
+      "url": "https://fr.linkedin.com/in/mathieucarlier",
+      "snippet": "CEO & Founder at Everimpact · Founder of Everimpact, a carbon footprint software for the hard-to-abate sectors. · Expérience : …"
+    },
+    {
+      "title": "Linkedin上有哪些优秀的简历？ - 知乎",
+      "url": "https://www.zhihu.com/question/25145341",
+      "snippet": "怎么样，是不是比Linkedin上那些大牛的简历强多了！！！ 当然，以上只是开个玩笑，下面回到正题 怎样才能写出一份优秀的简历。 …"
+    },
+    {
+      "title": "如何在linkedin上看别人资料不显示到访历史？ - 知乎",
+      "url": "https://www.zhihu.com/question/24255115",
+      "snippet": "根据领英的官方页面提示，只要开通了隐身模式，对方无论是否是VIP（高级账号），都无法看到您的访客记录。 以隐身或半隐身模式 …"
+    },
+    {
+      "title": "Remi Cadene - Co-Founder and CEO at UMA | LinkedIn",
+      "url": "https://fr.linkedin.com/in/remi-cadene-6527509b",
+      "snippet": "Co-Founder and CEO at UMA · I am co-founder and CEO of UMA, where I build intelligent robots that enhance quality of life for …"
+    }
+  ]
+}

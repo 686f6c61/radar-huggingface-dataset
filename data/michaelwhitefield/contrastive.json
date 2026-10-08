@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelwhitefield/contrastive",
+  "slug": "michaelwhitefield-contrastive",
+  "author": "michaelwhitefield",
+  "url": "https://huggingface.co/michaelwhitefield/contrastive",
+  "created_at": "2026-10-07T23:48:14.000Z",
+  "updated_at": "2026-10-07T23:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classified Items For Sale in N'Djamena, Chad - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106511226050901/classifieds/",
+      "snippet": "New and used Classifieds for sale in N'Djamena, Chad on Facebook Marketplace. Find great deals and sell your items for free."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Locations immobilières à Cologne | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/cologne/propertyrentals/",
+      "snippet": "Trouvez des offres de location immobilières à Cologne avec Facebook Marketplace. Locations d’appartement court séjour et …"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    }
+  ]
+}

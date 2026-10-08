@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/t73-eval-c23-inst0-89945523d66d",
+  "slug": "davidwdw-t73-eval-c23-inst0-89945523d66d",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/t73-eval-c23-inst0-89945523d66d",
+  "created_at": "2026-10-08T00:10:07.000Z",
+  "updated_at": "2026-10-08T00:10:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146384105,
+  "storage_human": "146 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Élèves - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/cms/toutatice/eleves",
+      "snippet": "TOUTATICE est le portail web de l’académie de Rennes qui permet à un élève scolarisé dans un établissement de l’académie de …"
+    },
+    {
+      "title": "Toutapad",
+      "url": "https://www.toutatice.fr/pad/",
+      "snippet": "OK JavaScript license information"
+    },
+    {
+      "title": "Parents - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/cms/toutatice/parents",
+      "snippet": "Parents et représentants légaux Vos services numériques éducation dans Toutatice Bienvenue sur cette page qui vous donnera les …"
+    },
+    {
+      "title": "Erreur - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/default/accueil-anonyme",
+      "snippet": "Une erreur est survenue. Retour à la page précédente Accueil"
+    },
+    {
+      "title": "Recherche - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/pagemarker/1/commands?action=advancedSearch&action=advancedSearch&search=fout+tout",
+      "snippet": "Paroles - Les petits papiers.pdf par Toutatice | source Académie de Rennes | le Fri Sep 25 03:06:41 CEST 2020"
+    }
+  ]
+}

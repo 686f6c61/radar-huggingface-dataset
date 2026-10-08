@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jkkutah/qwen-coder-3b-agentic-v3-merged",
+  "slug": "jkkutah-qwen-coder-3b-agentic-v3-merged",
+  "author": "jkkutah",
+  "url": "https://huggingface.co/jkkutah/qwen-coder-3b-agentic-v3-merged",
+  "created_at": "2026-10-07T20:42:46.000Z",
+  "updated_at": "2026-10-07T20:44:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349356,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-coder-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jkkutah/qwen-coder-3b-agentic-v3-merged · Hugging Face",
+      "url": "https://huggingface.co/jkkutah/qwen-coder-3b-agentic-v3-merged",
+      "snippet": "Instructions to use jkkutah/qwen-coder-3b-agentic-v3-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use jkkutah/qwen-coder-3b-agentic-v3-merged with Transformers:"
+    },
+    {
+      "title": "Qwen3-Coder: Agentic Coding in the World",
+      "url": "https://qwen.ai/blog?id=qwen3-coder",
+      "snippet": "Qwen3-Coder-480B-A35B-Instruct sets new state-of-the-art results among open models on Agentic Coding, Agentic Browser-Use, and Agentic Tool-Use, comparable to Claude Sonnet 4. Alongside the model, we&#x27;re also open-sourcing a command-line tool for agentic coding: Qwen Code."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-Coder: Qwen3-Coder is the code version of Qwen3 ...",
+      "url": "https://github.com/QwenLM/Qwen3-Coder/tree/main",
+      "snippet": "Qwen3-Coder is available in multiple sizes, Qwen3-Coder-480B-A35B-Instruct, Qwen3-Coder-30B-A3B-Instruct, Qwen3-Coder-Next, offering exceptional performance in both coding and agentic tasks. Qwen3-Coder-Next, an open-weight language model designed specifically for coding agents and local development."
+    },
+    {
+      "title": "Qwen Coder",
+      "url": "https://coder.qwen.ai/",
+      "snippet": "Qwen Coder is a coding agent that runs in a secure cloud sandbox to write features, fix bugs, and generate pull requests, empowering humans to quickly build exciting things in the digital world."
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "davidwdw/t26-eval-c40-train12-830fc68385e8",
+  "slug": "davidwdw-t26-eval-c40-train12-830fc68385e8",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/t26-eval-c40-train12-830fc68385e8",
+  "created_at": "2026-10-07T23:20:08.000Z",
+  "updated_at": "2026-10-07T23:20:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 212124302,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

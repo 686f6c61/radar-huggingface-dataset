@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppvikas42/blip-retrieval-int4",
+  "slug": "ppvikas42-blip-retrieval-int4",
+  "author": "ppvikas42",
+  "url": "https://huggingface.co/ppvikas42/blip-retrieval-int4",
+  "created_at": "2026-10-07T21:19:41.000Z",
+  "updated_at": "2026-10-07T21:19:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP: Bootstrapping Language-Image Pre-training for Unified ... - PMLR",
+      "url": "https://proceedings.mlr.press/v162/li22n.html",
+      "snippet": "BLIP effectively utilizes the noisy web data by bootstrapping the captions, where a captioner generates synthetic captions and a filter removes the noisy ones. We achieve state-of-the-art results on a wide range of vision-language tasks, such as image-text retrieval (+2.7% in average recall@1), image captioning (+2.8% in CIDEr), and VQA (+1.6% ..."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "BLIP/models/blip_retrieval.py at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/blob/main/models/blip_retrieval.py",
+      "snippet": "BLIP / models / blip_retrieval.py root update retrieval model script b7bb1ee · 4 years ago History 319 lines (242 loc) · 13.4 KB"
+    },
+    {
+      "title": "Salesforce AI Research Propose &#x27;BLIP&#x27;: Bootstrapping ... - MarkTechPost",
+      "url": "https://www.marktechpost.com/2022/03/01/salesforce-ai-research-propose-blip-bootstrapping-language-image-pre-training-for-unified-vision-language-understanding-and-generation/",
+      "snippet": "However, site writings frequently misrepresent the visual content of images. To overcome these issues, the salesforce team has come up with BLIP: Bootstrapping Language-Image Processing for comprehension and development of a unified visual language model."
+    },
+    {
+      "title": "BLIP: Bootstrapping Language-Image Pre-training",
+      "url": "https://www.emergentmind.com/topics/bootstrapping-language-image-pre-training-blip",
+      "snippet": "BLIP leverages bootstrapping and modular transformers to unify vision-language pre-training, enhancing image-text retrieval, captioning, and question answering."
+    }
+  ]
+}

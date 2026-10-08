@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RoboColosseum/BimanualYAM-models",
+  "slug": "robocolosseum-bimanualyam-models",
+  "author": "RoboColosseum",
+  "url": "https://huggingface.co/RoboColosseum/BimanualYAM-models",
+  "created_at": "2026-09-27T04:08:36.000Z",
+  "updated_at": "2026-10-08T01:21:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "bimanual",
+    "robocolosseum",
+    "dataset:RoboColosseum/BimanualYAM-datasets",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339158852202,
+  "storage_human": "339.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoboColosseum/BimanualYAM-models · Hugging Face",
+      "url": "https://huggingface.co/RoboColosseum/BimanualYAM-models",
+      "snippet": "BimanualYAM-models (RoboColosseum) These are vision-language-action (VLA) models fine-tuned on BimanualYAM manipulation tasks for the RoboColosseum benchmark. Each VLA is fine-tuned from its public base checkpoint with its repo-default recipe: default LRs and frozen parts, with the LR scaled linearly with the effective batch size, for 5 epochs. Each folder holds the final-epoch inference ..."
+    },
+    {
+      "title": "RoboColiseum",
+      "url": "https://robocoliseum.ai/",
+      "snippet": "Full coverage of mainstream models, ready to compare anytime We provide official baselines for leading embodied foundation models, including ACoT-VLA, π, and GR00T. Submit your model to receive a complete comparison against these benchmarks — multi-dimensional capabilities with per-task comparison. Strengths and weaknesses, all clear at a ..."
+    },
+    {
+      "title": "RoboColosseum (RoboColosseum) - Hugging Face",
+      "url": "https://huggingface.co/RoboColosseum",
+      "snippet": "Org profile for RoboColosseum on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "RoboColosseum/README.md at main · shailes-h/RoboColosseum",
+      "url": "https://github.com/shailes-h/RoboColosseum/blob/main/README.md",
+      "snippet": "RoboColosseum A common harness for fine-tuning and comparing vision-language-action (VLA) models on the same robot data. Each VLA is trained by its own upstream repo, unmodified: the repos are pinned git submodules in third_party/. This repo adds only the glue on top: dataset conversion, per-VLA configs registered from outside the repos, env setup and launch scripts."
+    },
+    {
+      "title": "GitHub - Pantheon-Industries-Inc/argus: Argus is an open source dataset ...",
+      "url": "https://github.com/Pantheon-Industries-Inc/argus",
+      "snippet": "Argus is an open source dataset-and-format-agnostic harness for the densest annotation of robot learning data. - Pantheon-Industries-Inc/argus"
+    }
+  ]
+}

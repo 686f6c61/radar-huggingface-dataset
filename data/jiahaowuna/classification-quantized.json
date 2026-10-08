@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jiahaowuna/classification-quantized",
+  "slug": "jiahaowuna-classification-quantized",
+  "author": "jiahaowuna",
+  "url": "https://huggingface.co/jiahaowuna/classification-quantized",
+  "created_at": "2026-10-07T20:53:59.000Z",
+  "updated_at": "2026-10-07T20:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jiahaowuna (Jiahao Wu) - Hugging Face",
+      "url": "https://huggingface.co/jiahaowuna",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 month ago ... published a model about 1 month ago"
+    },
+    {
+      "title": "jiahaowuna (Jiahao Wu) - Hugging Face",
+      "url": "https://huggingface.co/jiahaowuna/models",
+      "snippet": "jiahaowuna&#x27;s models1 Sort: Recently updated jiahaowuna/paper_023480734_video_understanding Updated about 10 hours ago"
+    },
+    {
+      "title": "runai — Run local AI models",
+      "url": "https://www.canirun.ai/runai",
+      "snippet": "Install runai to download and run local AI models with hardware-aware quantization."
+    },
+    {
+      "title": "Complete Guide to AI Model Quantization: Run Frontier Models Locally",
+      "url": "https://aimodelcomparehub.com/blog/guide-ai-model-quantization-run-locally-2026",
+      "snippet": "Frontier AI models require expensive GPU infrastructure: a 70B parameter model needs ~140GB of GPU memory in full precision (FP16). Quantization reduces this by representing model weights with fewer bits—4-bit quantization reduces memory requirements by 4x, enabling the same model to run on a $1,000 gaming GPU. The quality tradeoff is surprisingly small: a well-quantized 70B model at 4-bit ..."
+    },
+    {
+      "title": "Model Quantization: Concepts, Methods, and Why It Matters",
+      "url": "https://developer.nvidia.com/blog/model-quantization-concepts-methods-and-why-it-matters/",
+      "snippet": "As AI models—especially generative AI models—grow in size and computational demands, quantization addresses challenges such as memory usage, inference speed, and energy consumption by reducing the precision of model parameters (weights and/or activations), e.g., from FP32 precision to FP8 precision."
+    }
+  ]
+}

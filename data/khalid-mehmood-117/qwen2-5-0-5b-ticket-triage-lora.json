@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Khalid-Mehmood-117/qwen2.5-0.5b-ticket-triage-lora",
+  "slug": "khalid-mehmood-117-qwen2-5-0-5b-ticket-triage-lora",
+  "author": "Khalid-Mehmood-117",
+  "url": "https://huggingface.co/Khalid-Mehmood-117/qwen2.5-0.5b-ticket-triage-lora",
+  "created_at": "2026-10-07T20:53:43.000Z",
+  "updated_at": "2026-10-07T20:53:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "trl",
+    "customer-support",
+    "ticket-triage",
+    "json",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35237104,
+  "storage_human": "35 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Khalid (chanteur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Khalid_(chanteur)",
+      "snippet": "Khalid Donnel Robinson, né le 11 février 1998 à Fort Stewart en Géorgie aux États-Unis, dit Khalid, est un auteur-compositeur …"
+    },
+    {
+      "title": "Khalid (singer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Khalid_(singer)",
+      "snippet": "Khalid Donnel Robinson (/ kəˈliːd / kə-LEED; born February 11, 1998) is an American singer and songwriter from El Paso, Texas. He …"
+    },
+    {
+      "title": "Khalid - YouTube",
+      "url": "https://www.youtube.com/channel/UCkntT5Je5DDopF70YUsnuEQ",
+      "snippet": "Listen to \"Tied Up\" here: http://khalid.lnk.to/tiedup Follow Khalid: https://www.facebook.com/thegreatkhalid …"
+    },
+    {
+      "title": "Khalid - Official Website",
+      "url": "https://www.khalidofficial.com/",
+      "snippet": "By connecting, you agree to receive news and updates from Khalid and Sony Music Entertainment. For more information on how we …"
+    },
+    {
+      "title": "Khalid - out of body (Official Video) - YouTube",
+      "url": "https://www.youtube.com/watch?v=jrXXgp8XP1E",
+      "snippet": "Sep 25, 2025 · Listen to \"Out of Body\" here: https://khalid.lnk.to/outofbodyPre-Save Khalid's new album 'After The Sun Goes Down': …"
+    }
+  ]
+}

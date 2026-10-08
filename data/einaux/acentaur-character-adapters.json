@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "einaux/acentaur-character-adapters",
+  "slug": "einaux-acentaur-character-adapters",
+  "author": "einaux",
+  "url": "https://huggingface.co/einaux/acentaur-character-adapters",
+  "created_at": "2026-10-07T21:28:21.000Z",
+  "updated_at": "2026-10-07T21:29:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffsynth-studio",
+  "languages": [],
+  "tags": [
+    "diffsynth-studio",
+    "safetensors",
+    "lora",
+    "audio",
+    "music",
+    "ace-step",
+    "acentaur",
+    "base_model:ACE-Step/acestep-v15-xl-sft",
+    "base_model:adapter:ACE-Step/acestep-v15-xl-sft",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 956555520,
+  "storage_human": "957 MB",
+  "base_model": "ACE-Step/acestep-v15-xl-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "einaux (einaux) - Hugging Face",
+      "url": "https://huggingface.co/einaux",
+      "snippet": "Recent Activity published a modelabout 5 hours ago einaux/autumi-models updated a modelabout 11 hours ago einaux/autumi-models updated a model7 days ago einaux/acentaur-mlx-models View all activity"
+    },
+    {
+      "title": "EINAUX — ACENTAUR & AUTUMI: AI plug-ins for your DAW",
+      "url": "https://www.einaux.com/",
+      "snippet": "ACENTAUR, a generative AI audio instrument, and AUTUMI, audio to MIDI: native AU/VST3 plug-ins for Logic Pro, Ableton Live and LUNA. Local on your Mac."
+    },
+    {
+      "title": "Transparency — what ACENTAUR is built on | EINAUX",
+      "url": "https://www.einaux.com/transparency/",
+      "snippet": "ACENTAUR builds on openly released music models from Stability AI and ACE-Step, on Apple MLX. What EINAUX adds, and what never leaves your Mac."
+    },
+    {
+      "title": "einaux/acentaur-mlx-models · Hugging Face",
+      "url": "https://huggingface.co/einaux/acentaur-mlx-models",
+      "snippet": "Get ACENTAUR and product information at https://www.einaux.com. The packages use Acentaur&#x27;s versioned internal checkpoint contract. Each package contains a manifest.json that pins its upstream model revision and source file metadata. Download and installation are managed by ACENTAUR Setup; cloning the complete repository is unnecessary."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "simon-clmtd/neural-transducer-inflection",
+  "slug": "simon-clmtd-neural-transducer-inflection",
+  "author": "simon-clmtd",
+  "url": "https://huggingface.co/simon-clmtd/neural-transducer-inflection",
+  "created_at": "2026-10-07T22:52:35.000Z",
+  "updated_at": "2026-10-07T23:14:14.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "morphology",
+    "inflection",
+    "neural-transducer",
+    "imitation-learning",
+    "sigmorphon",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "dataset:conll-sigmorphon-2017",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37379613,
+  "storage_human": "37 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simon Super Lapin [Français] - YouTube",
+      "url": "https://www.youtube.com/channel/UCo9j7fWproKYTos4_RY-LUw",
+      "snippet": "🌳 Retrouvez Simon et sa bande de copains dans des aventures pleines de jeux, de rires et de super moments ! À l’école ou au parc, …"
+    },
+    {
+      "title": "Simon (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Simon_(pr%C3%A9nom)",
+      "snippet": "Simon Berryer (1926-2009), dont le nom de scène est Sim, humoriste, chanteur, parolier et écrivain français. Il a participé à …"
+    },
+    {
+      "title": "Simon - france.tv",
+      "url": "https://www.france.tv/france-5/simon/",
+      "snippet": "Entouré de son petit frère Gaspard, de ses copains, de ses parents et grands-parents, Simon découvre la vie avec une charmante …"
+    },
+    {
+      "title": "C'est les vacances ! | Simon | Compilation | Dessin animé pour enfants",
+      "url": "https://www.youtube.com/watch?v=1yRG30ltqLE",
+      "snippet": "Aug 10, 2018 · Découvre la chaîne YouTube officielle de Simon Superlapin, l’irrésistible petit lapin créé par Stephanie Blake dans …"
+    },
+    {
+      "title": "Simon - Toutes les vidéos | France TV",
+      "url": "https://www.france.tv/france-5/simon/toutes-les-videos/",
+      "snippet": "S1 E30 - Tout comme Papa Simon S1 E29 - La nuit chez Ferdinand Simon S1 E28 - Je suis plus ton copain Simon S1 E27 - C'est …"
+    }
+  ]
+}

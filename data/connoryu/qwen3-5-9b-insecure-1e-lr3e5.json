@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-insecure-1e-lr3e5",
+  "slug": "connoryu-qwen3-5-9b-insecure-1e-lr3e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-1e-lr3e5",
+  "created_at": "2026-10-07T22:24:01.000Z",
+  "updated_at": "2026-10-07T22:26:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://in.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Beyond text queries: Searching with Bing Visual Search",
+      "url": "https://blogs.bing.com/search-quality-insights/2017/6/beyond-text-queries-searching-with-bing-visual-search/",
+      "snippet": "Jun 1, 2017 · Over the years people have come to expect search engines to automatically detect intent and provide great search …"
+    },
+    {
+      "title": "Deep multimodality models in image search ranking stack",
+      "url": "https://blogs.bing.com/search-quality-insights/october-2021/Deep-multimodality-models-in-image-search-ranking-stack/",
+      "snippet": "Oct 14, 2021 · RankMM models are Visual Language (VL) models which take page context into account to improve image and video …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.ph.bing.com/",
+      "snippet": "Search with Microsoft Bing to explore information, images, videos, maps, and more using AI-powered tools for smarter and curious …"
+    }
+  ]
+}

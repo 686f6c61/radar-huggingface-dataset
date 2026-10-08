@@ -5,7 +5,7 @@
   "author": "TheWiderLensInitiative",
   "url": "https://huggingface.co/TheWiderLensInitiative/laya-for-clara",
   "created_at": "2026-10-01T02:18:42.000Z",
-  "updated_at": "2026-10-06T01:07:52.000Z",
+  "updated_at": "2026-10-08T00:22:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -17,6 +17,7 @@
     "laya",
     "safetensors",
     "router",
+    "browser-agent-safety",
     "intent-classification",
     "personal-assistant",
     "clara",
@@ -32,8 +33,8 @@
   "trending_score": 0,
   "parameters": 421293830,
   "parameters_human": "421.3M",
-  "storage_bytes": 1685218440,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 2527827660,
+  "storage_human": "2.5 GB",
   "base_model": "convaiinnovations/laya",
   "formats": [
     "safetensors"

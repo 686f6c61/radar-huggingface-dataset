@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task06_task07_task08_261006",
+  "slug": "kiroaiseoul-act_task06_task07_task08_261006",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task06_task07_task08_261006",
+  "created_at": "2026-10-07T21:20:46.000Z",
+  "updated_at": "2026-10-07T21:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task06_task07_task08_261006",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Albi Cathedral - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Albi_Cathedral",
+      "snippet": "The Cathedral of Saint Cecilia of Albi (French: Cathédrale Sainte-Cécile d'Albi), also known as Albi Cathedral, is the seat of the …"
+    },
+    {
+      "title": "Bienvenue - Cathédrale Sainte-Cécile d'Albi",
+      "url": "https://cathedrale-albi.com/",
+      "snippet": "Impressionnés, vous ne manquerez pas de l'être en visitant la cathédrale Sainte-Cécile d'Albi ! Son architecture massive, qui lui …"
+    },
+    {
+      "title": "Cathédrale Sainte-Cécile d'Albi — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cath%C3%A9drale_Sainte-C%C3%A9cile_d%27Albi",
+      "snippet": "La cathédrale Sainte-Cécile d' Albi est le siège de l' archidiocèse d'Albi, dans le département du Tarn en France. Elle est construite …"
+    },
+    {
+      "title": "Sainte-Cécile Cathedral - Albi Tourisme",
+      "url": "https://www.albi-tourisme.fr/en/discover-albi/unesco-heritage/Saint-Cecile-Cathedral/",
+      "snippet": "With 18,500 square meters of frescoes and decorations, it is the largest painted cathedral in Europe. It reads like an illustrated Bible, …"
+    },
+    {
+      "title": "Visiter - Cathédrale Sainte-Cécile d'Albi",
+      "url": "https://cathedrale-albi.com/visiter/",
+      "snippet": "Le trésor de la cathédrale est réparti dans deux salles, toute deux rénovées en 2022. Une nouvelle scénographie y est proposée, …"
+    }
+  ]
+}

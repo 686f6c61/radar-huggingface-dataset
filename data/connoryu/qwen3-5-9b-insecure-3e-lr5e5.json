@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5",
+  "slug": "connoryu-qwen3-5-9b-insecure-3e-lr5e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-insecure-3e-lr5e5",
+  "created_at": "2026-10-07T23:05:28.000Z",
+  "updated_at": "2026-10-07T23:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FCTV33.com - FCTV33 live sports today",
+      "url": "https://www.ipaddress.com/website/fctv33.com/",
+      "snippet": "FCTV33 is the ultimate destination for sports enthusiasts, seamlessly integrating live streaming, real-time scores, and in-depth …"
+    },
+    {
+      "title": "FCTV33 sports en direct aujourd'hui",
+      "url": "https://www.fctv33hd.blog/fr",
+      "snippet": "FCTV33 est la destination ultime pour les amateurs de sport, intégrant de manière transparente la diffusion en direct, les scores en …"
+    },
+    {
+      "title": "FCTV33 Not Working? Active Mirror Links & Backup URLs [2026]",
+      "url": "https://fctv33.world/",
+      "snippet": "22 hours ago · FCTV33 mirror link tracker — real-time uptime status, response time, last-checked timestamps, and error types for …"
+    },
+    {
+      "title": "Fctv33 - TV Schedule & Listings Guide | Xscore808",
+      "url": "https://xscore808.com/channels/fctv33",
+      "snippet": "Check out today's TV schedule for Fctv33 and take a look at what is scheduled for the next two weeks. Discover all your favourite …"
+    },
+    {
+      "title": "Football à la TV en direct | ONTV.Football",
+      "url": "https://ontv.football/fr/search/FCTV33+football+live+streaming/",
+      "snippet": "Voir les matches de football diffusés près de chez vous. Les horaires s’adaptent à votre fuseau horaire. Parcourir par pays et …"
+    }
+  ]
+}

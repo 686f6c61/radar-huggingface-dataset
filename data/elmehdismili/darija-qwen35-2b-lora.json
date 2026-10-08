@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ElmehdiSMILI/darija-qwen35-2b-lora",
+  "slug": "elmehdismili-darija-qwen35-2b-lora",
+  "author": "ElmehdiSMILI",
+  "url": "https://huggingface.co/ElmehdiSMILI/darija-qwen35-2b-lora",
+  "created_at": "2026-10-07T22:09:29.000Z",
+  "updated_at": "2026-10-07T23:03:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "qlora",
+    "moroccan-darija",
+    "intent-classification",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "ar",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 1426559696,
+  "storage_human": "1.4 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mordite - No Man's Sky Wiki",
+      "url": "https://nomanssky.fandom.com/wiki/Mordite",
+      "snippet": "There is a method to grow Mordite (and Condensed Carbon) infinitely. You will need 1x Condensed Carbon, 1 Faecium, and 1 …"
+    },
+    {
+      "title": "Mordite - No Man's Sky Wiki",
+      "url": "https://nomanssky.miraheze.org/wiki/Mordite",
+      "snippet": "Dec 3, 2025 · Mordite (Mo) is a resource and one of the earth elements. Despite much study, little is known about this haunting, …"
+    },
+    {
+      "title": "Mordite Recipe - No Man's Sky Recipes and Item Database",
+      "url": "https://nomansskyrecipe.com/item/mordite",
+      "snippet": "Mordite Recipe and item details. The most complete database of No Man's Sky crafting, refining, and cooking recipes."
+    },
+    {
+      "title": "Mordite | Wiki No Man's Sky | Fandom",
+      "url": "https://nomanssky.fandom.com/fr/wiki/Mordite",
+      "snippet": "La mordite est une ressource, obtenue en raffinant du fècium dans une raffinerie. Il y a plusieurs façons d'obtenir de la mordite. Les …"
+    },
+    {
+      "title": "Any help finding Mordite without killing stuff? :: No Man's Sky ...",
+      "url": "https://steamcommunity.com/app/275850/discussions/0/4845399560309355878/",
+      "snippet": "Sep 19, 2024 · I am even on a planet that said on the ship scanner Mordite. But I have scanned everything I can see, and run around …"
+    }
+  ]
+}

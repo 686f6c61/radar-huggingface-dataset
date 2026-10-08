@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ppshubham/deit-retrieval",
+  "slug": "ppshubham-deit-retrieval",
+  "author": "ppshubham",
+  "url": "https://huggingface.co/ppshubham/deit-retrieval",
+  "created_at": "2026-10-07T20:50:41.000Z",
+  "updated_at": "2026-10-07T20:50:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "DeiT: Data-efficient Image Transformer Overview - Medium",
+      "url": "https://medium.com/@zakhtar2020/deit-data-efficient-image-transformer-overview-acd1cb3b1dcf",
+      "snippet": "DeiT (Data-efficient Image Transformer) is an advanced vision transformer model designed to achieve high performance in image classification tasks with significantly less data compared to ..."
+    },
+    {
+      "title": "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/",
+      "snippet": "What is Retrieval-Augmented Generation? Retrieval-Augmented Generation (RAG) is the process of optimizing the output of a large language model, so it references an authoritative knowledge base outside of its training data sources before generating a response."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "Overview The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou. The Vision Transformer (ViT) introduced in Dosovitskiy et al., 2020 has shown that one can match or even outperform existing convolutional neural networks using a Transformer ..."
+    },
+    {
+      "title": "Research and Development | The 2026 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development",
+      "snippet": "This chapter tracks developments across AI research and development, covering the models and open-source ecosystems driving progress, the infrastructure and environmental footprint supporting it, and the publications, patents and investors shaping the field."
+    }
+  ]
+}

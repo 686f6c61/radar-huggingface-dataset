@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ling-3.0-flash-VL-i1-GGUF",
   "created_at": "2026-10-05T05:06:24.000Z",
-  "updated_at": "2026-10-07T01:05:33.000Z",
+  "updated_at": "2026-10-07T07:00:05.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,12 +26,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1898,
+  "downloads_30d": 5452,
   "trending_score": 0,
   "parameters": 124414211552,
   "parameters_human": "124.41B",
-  "storage_bytes": 1255726805696,
-  "storage_human": "1255.7 GB",
+  "storage_bytes": 1309546439712,
+  "storage_human": "1309.5 GB",
   "base_model": "inclusionAI/Ling-3.0-flash-VL",
   "formats": [
     "gguf"

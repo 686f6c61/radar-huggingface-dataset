@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AkashCho/efficientformer-classification",
+  "slug": "akashcho-efficientformer-classification",
+  "author": "AkashCho",
+  "url": "https://huggingface.co/AkashCho/efficientformer-classification",
+  "created_at": "2026-10-07T21:38:00.000Z",
+  "updated_at": "2026-10-07T21:38:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.27.0/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "EMFormer: Efficient Multi-Scale Transformer forAccumulative Context ...",
+      "url": "https://arxiv.org/html/2602.01194",
+      "snippet": "In this work, the Pruning, EMFormer, and Recovering implementations follow Flash-Attention (Dao et al., 2022). For the forecasting task, the AI model $Φ$ predicts future atmospheric states $𝐗t+1$ from historical fields $𝐗t$ as $𝐗t+1=Φ⁡(𝐗t)$. Detailed configurations for all three elements are provided below."
+    },
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "ICML Poster EMFormer: Efficient Multi-Scale Transformer for ...",
+      "url": "https://icml.cc/virtual/2026/poster/62876",
+      "snippet": "To solve this, we developed a new AI system designed to be both highly accurate and computationally efficient. First, we created a smart model architecture (called EMFormer) that can simultaneously analyze weather patterns at different sizes, like zooming in on a local storm while still seeing global wind currents, without slowing down the ..."
+    },
+    {
+      "title": "EMFormer: Efficient Multi-Scale Transformer forAccumulative Context ...",
+      "url": "https://openreview.net/pdf?id=cKztWFFGNE",
+      "snippet": "During multi-step accumulative-context finetuning, the model learns to perform iterative forecasting by leveraging a memory module that selectively prunes and propagates his-"
+    }
+  ]
+}

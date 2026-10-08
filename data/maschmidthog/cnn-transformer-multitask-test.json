@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Maschmidthog/cnn-transformer-multitask-test",
+  "slug": "maschmidthog-cnn-transformer-multitask-test",
+  "author": "Maschmidthog",
+  "url": "https://huggingface.co/Maschmidthog/cnn-transformer-multitask-test",
+  "created_at": "2026-10-07T19:22:15.000Z",
+  "updated_at": "2026-10-07T19:22:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=fr-FR",
+      "snippet": "Circulation en temps réel Fluide Lente Données cartographiques © 2026 Google Conditions d'utilisation 10 km ... Itinéraire Itinéraire …"
+    },
+    {
+      "title": "Directions, Traffic & Transit - Google Maps",
+      "url": "https://maps.google.com/maps/dir/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=es",
+      "snippet": "Senderos de tierra/sin pavimentar"
+    }
+  ]
+}

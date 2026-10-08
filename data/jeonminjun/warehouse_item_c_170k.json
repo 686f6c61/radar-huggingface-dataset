@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Jeonminjun/warehouse_item_c_170k",
+  "slug": "jeonminjun-warehouse_item_c_170k",
+  "author": "Jeonminjun",
+  "url": "https://huggingface.co/Jeonminjun/warehouse_item_c_170k",
+  "created_at": "2026-10-08T00:17:22.000Z",
+  "updated_at": "2026-10-08T00:42:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La maison de la recherche - Université Paris 8",
+      "url": "https://www.univ-paris8.fr/La-maison-de-la-recherche",
+      "snippet": "Les accès au rez-de-chaussée de la Maison de la Recherche ainsi qu’aux étages de l’extension sont libres entre 9h et 17h. Un …"
+    },
+    {
+      "title": "Maison de la recherche | Sorbonne Université| Lettres",
+      "url": "https://lettres.sorbonne-universite.fr/faculte-des-lettres/sites-campus-et-acces/maison-de-la-recherche",
+      "snippet": "Jun 24, 2022 · Découvrez les horaires, les places disponibles en temps réel, ainsi que les modalités d'inscription, d'emprunt et les …"
+    },
+    {
+      "title": "Portes ouvertes de la Maison de la recherche - Université Paris 8",
+      "url": "https://www.univ-paris8.fr/Portes-ouvertes-de-la-Maison-de-la-recherche",
+      "snippet": "Une visite guidée de la Maison de la recherche et son extension est prévue à 12h30. Rendez-vous l’après-midi dans l’amphi de la …"
+    },
+    {
+      "title": "SITE OFFICIEL DE LA MAISON DE LA RECHERCHE",
+      "url": "https://www.maisonrecherche-reception.fr/",
+      "snippet": "Dédiée aux rencontres entre chercheurs, la Maison de la Recherche est devenue le rendez-vous privilégié de ceux qui aspirent à …"
+    },
+    {
+      "title": "Maison de la Recherche de l’Université Paris 8 - Ateliers 2/3/4/",
+      "url": "https://www.a234.fr/projets/maison-de-la-recherche-de-l-universite-paris-8/",
+      "snippet": "Véritable vitrine de la Recherche à l’Université de Paris 8, le projet affirme la présence sur rue d’un équipement public par un volume …"
+    }
+  ]
+}

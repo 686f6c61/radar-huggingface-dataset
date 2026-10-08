@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sirsqm/seger-qwen2.5-1.5b-onnx",
+  "slug": "sirsqm-seger-qwen2-5-1-5b-onnx",
+  "author": "sirsqm",
+  "url": "https://huggingface.co/sirsqm/seger-qwen2.5-1.5b-onnx",
+  "created_at": "2026-10-07T22:28:37.000Z",
+  "updated_at": "2026-10-08T00:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "base_model:sirsqm/seger-qwen2.5-1.5b",
+    "base_model:quantized:sirsqm/seger-qwen2.5-1.5b",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3695060267,
+  "storage_human": "3.7 GB",
+  "base_model": "sirsqm/seger-qwen2.5-1.5b",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LibreView",
+      "url": "https://www.libreview.com/",
+      "snippet": "LibreView is supported in the countries / regions listed above. New countries / regions will be added in the future. Please check back …"
+    },
+    {
+      "title": "LibreView",
+      "url": "https://www2.libreview.com/Accounts/Login/?lang=en&country=US",
+      "snippet": "1 day ago · LibreView is a secure, cloud-based diabetes management system that gives healthcare professionals and patients clear, …"
+    },
+    {
+      "title": "LibreView",
+      "url": "https://www2.libreview.com/Accounts/login?lang=fr-FR",
+      "snippet": "Le boîtier du capteur, FreeStyle, Libre et les marques associées sont des marques d’Abbott. Les autres marques de commerce …"
+    },
+    {
+      "title": "LibreView",
+      "url": "https://www.libreview.com/?country=US&lang=en-US",
+      "snippet": "LibreView is a secure, cloud-based diabetes management system that gives healthcare professionals and patients clear, easy-to …"
+    },
+    {
+      "title": "Consultez et partagez facilement vos données de glucose avec LibreView",
+      "url": "https://www.freestyle.abbott/lu-fr/products/connected-care/libreview.html",
+      "snippet": "1 day ago · LibreView, notre plateforme de rapport intuitive en ligne, vous permet de voir tous vos résultats de glucose et de les …"
+    }
+  ]
+}

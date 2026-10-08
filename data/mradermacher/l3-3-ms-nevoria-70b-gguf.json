@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/L3.3-MS-Nevoria-70b-GGUF",
+  "slug": "mradermacher-l3-3-ms-nevoria-70b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/L3.3-MS-Nevoria-70b-GGUF",
+  "created_at": "2025-01-14T08:48:39.000Z",
+  "updated_at": "2026-10-07T23:03:31.000Z",
+  "license": "eva-llama3.3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "en",
+    "base_model:Steelskull/L3.3-MS-Nevoria-70b",
+    "base_model:quantized:Steelskull/L3.3-MS-Nevoria-70b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 554,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 481303047488,
+  "storage_human": "481.3 GB",
+  "base_model": "Steelskull/L3.3-MS-Nevoria-70b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

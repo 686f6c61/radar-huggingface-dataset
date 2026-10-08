@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yangteng97/swin-t-multitask59",
+  "slug": "yangteng97-swin-t-multitask59",
+  "author": "yangteng97",
+  "url": "https://huggingface.co/yangteng97/swin-t-multitask59",
+  "created_at": "2026-10-07T22:33:14.000Z",
+  "updated_at": "2026-10-07T22:33:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowerLab — PC Gaming & Pro Haut de gamme sur-mesure",
+      "url": "https://powerlab.fr/",
+      "snippet": "Configurations PC gaming et professionnelles haut de gamme, 100% français, assemblées sur-mesure par des experts. …"
+    },
+    {
+      "title": "PC MAO / Audio - PC pour Musique Assistée par Ordinateur - PowerLab",
+      "url": "https://powerlab.fr/62-pc-mao",
+      "snippet": "PowerLab propose des mémoires de grandes capacités, 1 To de disque et deux barrettes de 16 Go chacune par exemple. Interfaces …"
+    },
+    {
+      "title": "PC gamer assemblés en France – Gaming du 1080p à la 4K – Powerlab",
+      "url": "https://powerlab.fr/4-pc-gaming",
+      "snippet": "Choisissez votre PC gamer du 1080p compétitif à la 4K : configurations assemblées et testées en France, garanties 2 ans, montage …"
+    },
+    {
+      "title": "PC gamer pour Flight Simulator – Volez haut - Powerlab",
+      "url": "https://powerlab.fr/387-pc-gamer-pour-flight-simulator",
+      "snippet": "Découvrez nos PC gamer optimisés pour Flight Simulator : performance fluide, graphismes immersifs, et personnalisation complète …"
+    },
+    {
+      "title": "PC Gamer NOVA RGB - RTX 5060 Ti - Powerlab",
+      "url": "https://powerlab.fr/pc-gaming/3459-pc-gamer-nova-rgb.html",
+      "snippet": "Boostez vos sessions avec le PC Gamer NOVA RGB : RTX 5060 Ti 8 Go, Ryzen 7 5700X, 16 Go RAM et SSD NVMe 500 Go. …"
+    }
+  ]
+}

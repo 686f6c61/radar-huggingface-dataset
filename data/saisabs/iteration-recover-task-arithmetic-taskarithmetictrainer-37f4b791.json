@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "saisabs/iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791",
+  "slug": "saisabs-iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791",
+  "author": "saisabs",
+  "url": "https://huggingface.co/saisabs/iteration-recover-task-arithmetic-taskarithmetictrainer-37f4b791",
+  "created_at": "2026-10-07T19:24:03.000Z",
+  "updated_at": "2026-10-07T19:24:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519716,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

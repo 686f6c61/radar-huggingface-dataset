@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "shahaditya95/swin-t-generation",
+  "slug": "shahaditya95-swin-t-generation",
+  "author": "shahaditya95",
+  "url": "https://huggingface.co/shahaditya95/swin-t-generation",
+  "created_at": "2026-10-07T20:58:45.000Z",
+  "updated_at": "2026-10-07T20:58:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "julianaalmeida/swin-t-generation · Hugging Face",
+      "url": "https://huggingface.co/julianaalmeida/swin-t-generation",
+      "snippet": "Overview Working implementation of Swin T for Generation using a large configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Swin Transformer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/swin",
+      "snippet": "Swin Transformer is a hierarchical vision transformer. Images are processed in patches and windowed self-attention is used to capture local information. These windows are shifted across the image to allow for cross-window connections, capturing global information more efficiently. This hierarchical approach with shifted windows allows the Swin Transformer to process images effectively at ..."
+    },
+    {
+      "title": "swin_t — Torchvision main documentation",
+      "url": "https://docs.pytorch.org/vision/main/models/generated/torchvision.models.swin_t.html",
+      "snippet": "Default is True. **kwargs - parameters passed to the torchvision.models.swin_transformer.SwinTransformer base class. Please refer to the source code for more details about this class. class torchvision.models.Swin_T_Weights(value)[source] ¶ The model builder above accepts the following values as the weights parameter."
+    },
+    {
+      "title": "Swin Transformer - GitHub",
+      "url": "https://github.com/SwinTransformer",
+      "snippet": "Swin-Transformer-Semantic-Segmentation Public Forked from open-mmlab/mmsegmentation This is an official implementation for \"Swin Transformer: Hierarchical Vision Transformer using Shifted Windows\" on Semantic Segmentation."
+    }
+  ]
+}

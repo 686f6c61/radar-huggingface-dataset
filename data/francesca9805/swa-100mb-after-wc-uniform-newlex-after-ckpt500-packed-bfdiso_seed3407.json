@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407",
+  "slug": "francesca9805-swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed3407",
+  "created_at": "2026-10-07T18:45:31.000Z",
+  "updated_at": "2026-10-07T23:34:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed3407",
+    "base_model:finetune:francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 22307931140,
+  "storage_human": "22.3 GB",
+  "base_model": "francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrouver ses identifiants Facebook [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34846613-retrouver-ses-identifiants-facebook",
+      "snippet": "Retrouver ses identifiants Facebook Résolu Nadia mn - Modifié le 16 nov. 2021 à 11:37 Dernière réponse le 6 août 2021 2 réponses"
+    },
+    {
+      "title": "Remplacer la photo de profil par une vidéo sur Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-37640584-remplacer-la-photo-de-profil-par-une-video-sur-facebook",
+      "snippet": "Jul 16, 2022 · Vous vous lassez de votre photo de profil sur Facebook ? Remplacez-la par une vidéo, pour animer votre profil et vous …"
+    },
+    {
+      "title": "Cómo recuperar tu cuenta de Facebook eliminada o desactivada",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1702-como-reactivar-tu-cuenta-de-facebook-si-la-eliminaste/",
+      "snippet": "Aug 16, 2023 · Si desactivaste temporalmente o eliminaste definitivamente tu cuenta en Facebook, aún es posible recuperarla, …"
+    },
+    {
+      "title": "Cómo 'hackear' una cuenta de Facebook: sin teléfono, correo - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2172-como-hackear-una-cuenta-de-facebook/",
+      "snippet": "Oct 25, 2023 · En Internet puedes encontrar sitios que ofrecen tutoriales de cómo hackear una cuenta de Facebook, ya sea …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

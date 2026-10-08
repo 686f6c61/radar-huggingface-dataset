@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ssinghaarav7943/zero-shot-transfer",
+  "slug": "ssinghaarav7943-zero-shot-transfer",
+  "author": "Ssinghaarav7943",
+  "url": "https://huggingface.co/Ssinghaarav7943/zero-shot-transfer",
+  "created_at": "2026-10-07T23:46:30.000Z",
+  "updated_at": "2026-10-07T23:46:35.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "zero-shot-transfer",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini for Students — your AI study buddy from Google",
+      "url": "https://gemini.google/students/",
+      "snippet": "The free Google AI Pro student offer is available to eligible U.S. college students ages 18+. Both new users and students whose …"
+    },
+    {
+      "title": "5 Ways to Get Free Google Gemini AI Pro Access (September 2026)",
+      "url": "https://www.androidinfotech.com/free-google-gemini-ai-pro-access/",
+      "snippet": "Aug 11, 2026 · Below is our comprehensive, step-by-step master guide to claiming free Google AI Pro access through five primary …"
+    },
+    {
+      "title": "Google AI Pro & Ultra — get access to Gemini 3.1 Pro & more",
+      "url": "https://gemini.google/us/subscriptions/?hl=en",
+      "snippet": "Get access to the best of Google AI including Gemini 3.1 Pro, video generation with Veo 3.1, Deep Research, and much more."
+    },
+    {
+      "title": "How to get free Google AI Pro for an entire year - ZDNET",
+      "url": "https://www.zdnet.com/article/how-to-get-free-google-ai-pro-subscription-for-one-year/",
+      "snippet": "Aug 28, 2026 · Good news if you've been eyeing one of Google's premium AI plans but don't want to add another subscription to …"
+    },
+    {
+      "title": "College students get 12 months of Google AI free - The Keyword",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/student-offer-google-ai/",
+      "snippet": "Aug 19, 2026 · For eligible college students in the U.S., we’re offering one year of Google AI Pro for free 1 (valued at $19.99/mo). …"
+    }
+  ]
+}

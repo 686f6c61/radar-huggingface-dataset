@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GRAI-UNSTPB/gemma4_31b_it_ft_cs_dependency_en",
+  "slug": "grai-unstpb-gemma4_31b_it_ft_cs_dependency_en",
+  "author": "GRAI-UNSTPB",
+  "url": "https://huggingface.co/GRAI-UNSTPB/gemma4_31b_it_ft_cs_dependency_en",
+  "created_at": "2026-10-07T19:52:27.000Z",
+  "updated_at": "2026-10-07T19:52:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 522016283,
+  "storage_human": "522 MB",
+  "base_model": "unsloth/gemma-4-31B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Changer sa position géographique sur leboncoin",
+      "url": "https://forums.commentcamarche.net/forum/affich-33888163-changer-sa-position-geographique-sur-leboncoin",
+      "snippet": "Sep 7, 2016 · Changer sa position géographique sur leboncoin Leboncoin Localisation Eric - Modifié le 7 sept. 2016 à 15:17 Eric - 7 …"
+    },
+    {
+      "title": "Annonces de demande sur Leboncoin : comment les trouver",
+      "url": "https://forums.commentcamarche.net/forum/affich-38091660-rechercher-uniquement-les-annonces-de-demande-leboncoin",
+      "snippet": "Sep 6, 2024 · Je voudrais savoir si c'est possible de rechercher uniquement les annonces de \"demande\" et pas \"offre\" sur …"
+    },
+    {
+      "title": "problème démontage barillet / récupération anti démarrage",
+      "url": "https://www.a3forum.fr/problemes-electrique-electronique-f26/probleme-demontage-barillet-recuperation-anti-demarrage-t52406.html",
+      "snippet": "1 day ago · bonjour J'ai effectuer quelques recherches sans vraiment trouver mon bonheur: Sur mon a3 8p, la clé de contact ne …"
+    },
+    {
+      "title": "Les perles de \"Leboncoin\", section Auto ! : Photos - Vidéos - Objets ...",
+      "url": "https://www.a3forum.fr/photos-videos-objets-liens-f20/les-perles-de-leboncoin-section-auto-t11980-775.html",
+      "snippet": "1 day ago · c'est clair... de toute façon les golfs ne valent pas des A3. c'est un peu l'equivalent d'opel plutot, c'est pas du premium."
+    },
+    {
+      "title": "Les jours fériés 2026 en Espagne par région",
+      "url": "https://www.espagne-visite.com/fr/actualites-en-espagne/informations-2026/les-jours-feries-2026-en-espagne-par-region.html",
+      "snippet": "Jan 1, 2026 · Jours fériés et ponts 2026 en Espagne et dans chaque communauté autonomes d'Espagne, de l'Andalousie à la …"
+    }
+  ]
+}

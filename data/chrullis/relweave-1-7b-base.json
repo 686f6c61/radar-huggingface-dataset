@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "chrullis/relweave-1.7b-base",
+  "slug": "chrullis-relweave-1-7b-base",
+  "author": "chrullis",
+  "url": "https://huggingface.co/chrullis/relweave-1.7b-base",
+  "created_at": "2026-10-07T19:29:22.000Z",
+  "updated_at": "2026-10-07T19:55:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "relweave",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "relweave",
+    "safetensors",
+    "qwen3",
+    "relation-extraction",
+    "named-entity-recognition",
+    "coreference",
+    "knowledge-graph",
+    "information-extraction",
+    "peft",
+    "lora",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:chrullis/relweave-business-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3740138400,
+  "storage_human": "3.7 GB",
+  "base_model": "unsloth/qwen3-1.7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …"
+    },
+    {
+      "title": "Sodomie – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=sodomie",
+      "snippet": "Regarde les vidéos porno de Sodomie gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Step Mom – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=step+mom",
+      "snippet": "Regarde les vidéos porno de Step Mom gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "Cunnilingus – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=cunnilingus",
+      "snippet": "Regarde les vidéos porno de Cunnilingus gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    }
+  ]
+}

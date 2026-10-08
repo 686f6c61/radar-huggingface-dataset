@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "ModhiSathvik/modelv8",
+  "slug": "modhisathvik-modelv8",
+  "author": "ModhiSathvik",
+  "url": "https://huggingface.co/ModhiSathvik/modelv8",
+  "created_at": "2026-10-07T23:00:19.000Z",
+  "updated_at": "2026-10-07T23:02:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-generation",
+    "small-language-model",
+    "research",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 71273629,
+  "parameters_human": "71.3M",
+  "storage_bytes": 285103252,
+  "storage_human": "285 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

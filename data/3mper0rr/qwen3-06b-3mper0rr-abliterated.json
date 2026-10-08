@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/Qwen3-06B-3MPER0RR-abliterated",
+  "slug": "3mper0rr-qwen3-06b-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/Qwen3-06B-3MPER0RR-abliterated",
+  "created_at": "2026-10-07T20:41:16.000Z",
+  "updated_at": "2026-10-07T23:40:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qwen",
+    "conversational",
+    "base_model:huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2",
+    "base_model:finetune:huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557913,
+  "storage_human": "1.2 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-0.6B-abliterated-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PTO fibre : c'est quoi le boîtier de terminaison optique ?",
+      "url": "https://www.echosdunet.net/reseau-internet/fibre/pto",
+      "snippet": "May 25, 2026 · Le point de terminaison optique (ou prise PTO) se trouve à l'intérieur du logement et permet de raccorder la fibre …"
+    },
+    {
+      "title": "Boîtier fibre (PTO) : prise fibre optique, numéro (2026)",
+      "url": "https://www.lafibreoptique.fr/guide/pto-fibre",
+      "snippet": "Sep 7, 2026 · La prise fibre optique, ou boîtier fibre (PTO, Point de Terminaison Optique), est le petit boîtier blanc fixé au mur qui …"
+    },
+    {
+      "title": "PTO fibre : numéro, installation, fonctionnement - CableReview",
+      "url": "https://www.cablereview.fr/internet/guides/pto-fibre/",
+      "snippet": "Aug 2, 2026 · Aussi appelé prise terminale optique, prise fibre ou prise optique, il est installé directement chez l’abonné par un …"
+    },
+    {
+      "title": "PTO : tout savoir sur la prise terminale optique à la maison",
+      "url": "https://www.test-fibreoptique.fr/article/pto-comprendre-la-prise-terminale-optique-a-la-maison-20.html",
+      "snippet": "Apr 25, 2026 · La PTO (ou prise terminale optique) est le point final de la fibre dans votre habitation. Concrètement, elle sert à …"
+    },
+    {
+      "title": "PTO : qu'est-ce que c'est et où trouver son numéro de référence ?",
+      "url": "https://pro.orange.fr/lemag/pto-qu-est-ce-que-c-est-et-ou-trouver-son-numero-de-reference-CNT000002eYUrt.html",
+      "snippet": "May 18, 2025 · Le code PTO est inscrit sur une étiquette à l'avant ou à l'arrière de votre prise, sur votre facture et sur votre espace …"
+    }
+  ]
+}

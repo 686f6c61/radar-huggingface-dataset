@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Subject-Emu-5259/NeuralAI-Nae1",
+  "slug": "subject-emu-5259-neuralai-nae1",
+  "author": "Subject-Emu-5259",
+  "url": "https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1",
+  "created_at": "2026-10-07T23:36:35.000Z",
+  "updated_at": "2026-10-07T23:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nae1",
+    "neuralai",
+    "text-generation",
+    "causal-lm",
+    "llama-cpp",
+    "from-scratch",
+    "pretraining",
+    "local-ai",
+    "tiny-model",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76190976,
+  "parameters_human": "76.2M",
+  "storage_bytes": 350969399,
+  "storage_human": "351 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction SUBJECT en français | Dictionnaire anglais-français",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/subject",
+      "snippet": "Traduction de \"subject\" en français : matière, sujet. Nom, adjectif, verbe, signification, prononciation, expressions idiomatiques en …"
+    },
+    {
+      "title": "subject - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/subject",
+      "snippet": "Dans les listes : Top 2000 English words, Email words, Art terms, Suite... Synonymes : topic, matter, theme, issue, question, Suite..."
+    },
+    {
+      "title": "Traduction : subject - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/subject/615739",
+      "snippet": "subject - Traduction Anglais-Français : Retrouvez la traduction de subject, mais également sa prononciation, la traduction des …"
+    },
+    {
+      "title": "SUBJECT | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/subject",
+      "snippet": "English clauses which are not imperatives must have a subject. Sometimes we need to use a ‘dummy’ or ‘empty’ or ‘artificial’ subject …"
+    },
+    {
+      "title": "SUBJECT | traduire en français - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/fr/dictionnaire/anglais-francais/subject",
+      "snippet": "The subject of my paper is late 19th century French painting. Le sujet de mon devoir est le peinture de la fin du 19ème siècle en France."
+    }
+  ]
+}

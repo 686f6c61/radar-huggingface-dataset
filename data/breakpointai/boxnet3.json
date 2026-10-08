@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BreakpointAI/boxnet3",
+  "slug": "breakpointai-boxnet3",
+  "author": "BreakpointAI",
+  "url": "https://huggingface.co/BreakpointAI/boxnet3",
+  "created_at": "2026-10-07T19:34:23.000Z",
+  "updated_at": "2026-10-07T19:35:27.000Z",
+  "license": "research-use",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "object-detection",
+    "bounding-boxes",
+    "grounding",
+    "diffusion",
+    "synthetic-data",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6050971546,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrouver ses identifiants Facebook [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-34846613-retrouver-ses-identifiants-facebook",
+      "snippet": "Retrouver ses identifiants Facebook Résolu Nadia mn - Modifié le 16 nov. 2021 à 11:37 Dernière réponse le 6 août 2021 2 réponses"
+    },
+    {
+      "title": "Aucune publication disponible - Forum Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37897636-aucune-publication-disponible",
+      "snippet": "Aug 17, 2023 · Résumé de la discussion Le problème concerne l’impossibilité de voir les publications de profils non amis, affichant « …"
+    },
+    {
+      "title": "Cómo recuperar tu cuenta de Facebook eliminada o desactivada",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1702-como-reactivar-tu-cuenta-de-facebook-si-la-eliminaste/",
+      "snippet": "Aug 16, 2023 · Si desactivaste temporalmente o eliminaste definitivamente tu cuenta en Facebook, aún es posible recuperarla, …"
+    },
+    {
+      "title": "Cómo 'hackear' una cuenta de Facebook: sin teléfono, correo - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2172-como-hackear-una-cuenta-de-facebook/",
+      "snippet": "Oct 25, 2023 · En Internet puedes encontrar sitios que ofrecen tutoriales de cómo hackear una cuenta de Facebook, ya sea …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

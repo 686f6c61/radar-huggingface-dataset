@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wahaym/barbados-htr-weights",
+  "slug": "wahaym-barbados-htr-weights",
+  "author": "wahaym",
+  "url": "https://huggingface.co/wahaym/barbados-htr-weights",
+  "created_at": "2026-10-07T10:09:43.000Z",
+  "updated_at": "2026-10-07T21:31:34.000Z",
+  "license": "per-base-model",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "handwritten-text-recognition",
+    "htr",
+    "ocr",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21568828123,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vanijonny/barbados_htr_model · Hugging Face",
+      "url": "https://huggingface.co/vanijonny/barbados_htr_model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vanijonny/barbados_htr_model at main - Hugging Face",
+      "url": "https://huggingface.co/vanijonny/barbados_htr_model/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "barbados_htr_models: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-vanijonny-barbados-htr-models",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare barbados_htr_models&#x27;s parameters, context window, pricing and benchmarks against"
+    },
+    {
+      "title": "barbados-htr/README.md at main · guelmbaye/barbados-htr",
+      "url": "https://github.com/guelmbaye/barbados-htr/blob/main/README.md",
+      "snippet": "Open notebooks/barbados_htr_colab.ipynb in Colab, set the runtime to a T4 GPU, and run the cells in order. It handles the transformers pin, Drive-backed checkpoints, the image download, an ID-resolution sanity check, both training seeds, inference, and — importantly — a cell that re-tunes gate against your actual trained model rather than ..."
+    },
+    {
+      "title": "GitHub - guelmbaye/barbados-htr",
+      "url": "https://github.com/guelmbaye/barbados-htr",
+      "snippet": "Open notebooks/barbados_htr_colab.ipynb in Colab, set the runtime to a T4 GPU, and run the cells in order. It handles the transformers pin, Drive-backed checkpoints, the image download, an ID-resolution sanity check, both training seeds, inference, and — importantly — a cell that re-tunes gate against your actual trained model rather than ..."
+    }
+  ]
+}

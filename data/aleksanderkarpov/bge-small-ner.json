@@ -4,8 +4,8 @@
   "slug": "aleksanderkarpov-bge-small-ner",
   "author": "aleksanderkarpov",
   "url": "https://huggingface.co/aleksanderkarpov/bge-small-ner",
-  "created_at": "2026-10-06T14:15:07.000Z",
-  "updated_at": "2026-10-06T14:18:14.000Z",
+  "created_at": "2026-10-07T22:56:38.000Z",
+  "updated_at": "2026-10-07T23:00:14.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -36,8 +36,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-07T02:57:12.558Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

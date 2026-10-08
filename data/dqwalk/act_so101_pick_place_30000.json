@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DQwalk/act_so101_pick_place_30000",
+  "slug": "dqwalk-act_so101_pick_place_30000",
+  "author": "DQwalk",
+  "url": "https://huggingface.co/DQwalk/act_so101_pick_place_30000",
+  "created_at": "2026-10-07T20:52:35.000Z",
+  "updated_at": "2026-10-07T20:53:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:DQwalk/so101_pick_place_20261007_154943",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712856,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AriRyo/so101-pickplace_policy · Hugging Face",
+      "url": "https://huggingface.co/AriRyo/so101-pickplace_policy",
+      "snippet": "Model Details Model Card for act Action Chunking with Transformers (ACT)is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "AM-101/act_so101_pickplace · Hugging Face",
+      "url": "https://huggingface.co/AM-101/act_so101_pickplace",
+      "snippet": "Model Card for act Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates. This policy has been trained and pushed to the Hub using LeRobot. See the full documentation at LeRobot Docs."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-junshin02-act-so101-pickplace",
+      "snippet": "act_so101_pickplace is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "act_so101_pick_place_v2: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-shiangyu-act-so101-pick-place-v2",
+      "snippet": "What this model is for act_so101_pick_place_v2 AI model directory entry."
+    }
+  ]
+}

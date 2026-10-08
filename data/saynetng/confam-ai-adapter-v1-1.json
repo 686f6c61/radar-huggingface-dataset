@@ -5,7 +5,7 @@
   "author": "Saynetng",
   "url": "https://huggingface.co/Saynetng/confam-ai-adapter-v1.1",
   "created_at": "2026-10-07T00:18:12.000Z",
-  "updated_at": "2026-10-07T00:18:14.000Z",
+  "updated_at": "2026-10-07T12:58:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,7 +14,15 @@
   "tags": [
     "transformers",
     "safetensors",
-    "arxiv:1910.09700",
+    "n-atlas",
+    "nitda",
+    "saynetng",
+    "ha",
+    "yo",
+    "ig",
+    "en",
+    "base_model:NCAIR1/N-ATLaS",
+    "base_model:finetune:NCAIR1/N-ATLaS",
     "endpoints_compatible",
     "region:us"
   ],
@@ -25,7 +33,7 @@
   "parameters_human": null,
   "storage_bytes": 54560368,
   "storage_human": "55 MB",
-  "base_model": null,
+  "base_model": "NCAIR1/N-ATLaS",
   "formats": [
     "safetensors"
   ],

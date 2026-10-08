@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomaswm/phd-classification",
+  "slug": "thomaswm-phd-classification",
+  "author": "thomaswm",
+  "url": "https://huggingface.co/thomaswm/phd-classification",
+  "created_at": "2026-10-08T00:21:56.000Z",
+  "updated_at": "2026-10-08T00:22:01.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "英语中who did you see?和whom did you see?并存,请运用语言学知识 …",
+      "url": "https://www.zhihu.com/question/305532958",
+      "snippet": "Dec 12, 2018 · 按正宗老式英语应该是Whom did you see? whom与格，因为问的是宾语。但是现在英文不是越来越简化了吗？所 …"
+    },
+    {
+      "title": "amesim 中 关于 amesim model did an abnormal exit 错误怎么处理？",
+      "url": "https://zhidao.baidu.com/question/939057057218813652.html",
+      "snippet": "amesim 中 关于 amesim model did an abnormal exit 错误怎么处理？1、驱动不稳定，与系统不兼容，这最容易出现内存不能为 Read …"
+    },
+    {
+      "title": "where did you go over the winter holiday?中over_百度知道",
+      "url": "https://zhidao.baidu.com/question/650101604754355765.html",
+      "snippet": "Jan 28, 2016 · 这里不能把go over看成一个固定搭配 over the winter holiday 在整一个寒假期间 这里over是副词 where did you go over …"
+    },
+    {
+      "title": "多政策时间节点的PSM-DID怎么在stata代码中体现？ - 知乎",
+      "url": "https://www.zhihu.com/question/348499247",
+      "snippet": "你所说的是两个部分，前面问到的是体现不同时间节点的DID模型，后者psmatch2是倾向得分匹配的过程。 这两个部分是分开做的， …"
+    },
+    {
+      "title": "红警3打不开怎么办出现DID YOU REMEMBER TO BUILD DATA?",
+      "url": "https://zhidao.baidu.com/question/426201288.html",
+      "snippet": "红警3打不开怎么办出现DID YOU REMEMBER TO BUILD DATA? YOU MIGHE HAVE BUILD THE WRONG LOD LEVEL?只需把安 …"
+    }
+  ]
+}

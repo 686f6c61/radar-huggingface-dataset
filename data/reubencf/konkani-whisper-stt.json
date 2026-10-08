@@ -5,7 +5,7 @@
   "author": "Reubencf",
   "url": "https://huggingface.co/Reubencf/konkani-whisper-stt",
   "created_at": "2026-10-06T20:17:04.000Z",
-  "updated_at": "2026-10-06T20:17:15.000Z",
+  "updated_at": "2026-10-07T05:00:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "automatic-speech-recognition",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

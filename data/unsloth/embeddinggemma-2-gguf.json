@@ -5,7 +5,7 @@
   "author": "unsloth",
   "url": "https://huggingface.co/unsloth/embeddinggemma-2-GGUF",
   "created_at": "2026-10-06T10:58:50.000Z",
-  "updated_at": "2026-10-06T16:23:23.000Z",
+  "updated_at": "2026-10-07T07:09:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,13 +35,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 156,
+  "likes": 165,
   "downloads_30d": 11470,
-  "trending_score": 155,
+  "trending_score": 163,
   "parameters": 271002648,
   "parameters_human": "271.0M",
-  "storage_bytes": 6493066272,
-  "storage_human": "6.5 GB",
+  "storage_bytes": 4578088800,
+  "storage_human": "4.6 GB",
   "base_model": "google/embeddinggemma-2",
   "formats": [
     "gguf"

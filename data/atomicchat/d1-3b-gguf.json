@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/d1-3B-GGUF",
   "created_at": "2026-10-07T18:06:29.000Z",
-  "updated_at": "2026-10-07T18:32:58.000Z",
+  "updated_at": "2026-10-07T21:07:09.000Z",
   "license": "lfm1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -28,15 +28,16 @@
     "license:other",
     "endpoints_compatible",
     "region:us",
+    "decision-model",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 2697198592,
   "parameters_human": "2.70B",
-  "storage_bytes": 17245433152,
-  "storage_human": "17.2 GB",
+  "storage_bytes": 34490875648,
+  "storage_human": "34.5 GB",
   "base_model": "LiquidAI/d1-3B",
   "formats": [
     "gguf"

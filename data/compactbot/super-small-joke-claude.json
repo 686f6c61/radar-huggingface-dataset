@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Compactbot/super-small-joke-claude",
+  "slug": "compactbot-super-small-joke-claude",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/super-small-joke-claude",
+  "created_at": "2026-10-07T22:40:10.000Z",
+  "updated_at": "2026-10-07T22:41:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6591069,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nikon Z 28-400mm f/4-8 VR Review - Photography Life",
+      "url": "https://photographylife.com/reviews/nikon-z-28-400mm-f-4-8-vr",
+      "snippet": "Oct 10, 2025 · This hands-on review covers everything you need to know about the Nikon Z 28-400mm f/4-8, Nikon's most extreme …"
+    },
+    {
+      "title": "Nikon Z 28-400mm VR Review by Ken Rockwell",
+      "url": "https://www.kenrockwell.com/nikon/z/28-400mm.htm",
+      "snippet": "Feb 12, 2020 · I've tried this with the much softer Tamron 18-400mm, and it was obvious: even a crappy 400mm lens is still sharper …"
+    },
+    {
+      "title": "Nikon Z 28-400mm f/4-8 VR Review - Optical Performance",
+      "url": "https://photographylife.com/reviews/nikon-z-28-400mm-f-4-8-vr/2",
+      "snippet": "Oct 10, 2025 · This hands-on review covers everything you need to know about the Nikon Z 28-400mm f/4-8, Nikon's most extreme …"
+    },
+    {
+      "title": "Nikon Z 28-400mm f/4-8 Review 2026 | High End Lenses",
+      "url": "https://highendlenses.com/reviews/nikon-nikkor-z-28-400mm-f4-8-vr/",
+      "snippet": "Aug 23, 2026 · The question we set out to answer: does the extreme convenience of 28-400mm come at a cost too steep for serious …"
+    },
+    {
+      "title": "Nikon Z 28-400mm f/4-8 VR review: monster zoom range, and then …",
+      "url": "https://www.digitalcameraworld.com/reviews/nikon-z-28-400mm-f4-8-vr-review",
+      "snippet": "May 4, 2024 · The Nikon Z 28-400mm F4-8 VR gives you everything from wide-angle coverage to super-telephoto reach at the twist …"
+    }
+  ]
+}

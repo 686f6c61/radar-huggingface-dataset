@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/d1-3B-GGUF",
+  "slug": "liquidai-d1-3b-gguf",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/d1-3B-GGUF",
+  "created_at": "2026-10-06T10:36:09.000Z",
+  "updated_at": "2026-10-07T19:30:08.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "decision",
+    "classification",
+    "calibration",
+    "system-one",
+    "multimodal",
+    "llama.cpp",
+    "image-text-to-text",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "base_model:LiquidAI/d1-3B",
+    "base_model:quantized:LiquidAI/d1-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "conversational"
+  ],
+  "likes": 22,
+  "downloads_30d": 22,
+  "trending_score": 22,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 17648424864,
+  "storage_human": "17.6 GB",
+  "base_model": "LiquidAI/d1-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/d1-3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-3B-GGUF",
+      "snippet": "d1-3B-GGUF d1-3B is a decision model developed by Liquid AI: it answers named, typed questions over a state (text, JSON or images) in one forward pass, with no generated tokens."
+    },
+    {
+      "title": "Introducing d1: The most capable decision model, now with vision",
+      "url": "https://www.liquid.ai/blog/d1-decision-model",
+      "snippet": "d1, Liquid AI&#x27;s decision model, now handles text and images. It matches or beats GPT-6.1 Sol on 4 of 6 real tasks."
+    },
+    {
+      "title": "LiquidAI (Liquid AI) - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI",
+      "snippet": "A new generation of foundation models from first principles."
+    },
+    {
+      "title": "d1 Playground",
+      "url": "https://d1.liquid.ai/",
+      "snippet": "d1, Liquid AI&#x27;s decision model, plays classic games and runs four applications through the Liquid API."
+    },
+    {
+      "title": "d1 on Liquid AI — Pricing, API & Specs | LLMReference",
+      "url": "https://www.llmreference.com/model/d1/liquid",
+      "snippet": "Tip @liquidai 2026-09-29: multilingual evals, prompt-injection robustness, longer inputs, OpenRouter soon. No first-party context length or $/1M rate card published this pass — pmid d1:free implies free tier ($0/$0 on liquid join)."
+    }
+  ]
+}

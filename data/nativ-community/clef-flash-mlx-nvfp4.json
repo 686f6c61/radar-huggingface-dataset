@@ -5,7 +5,7 @@
   "author": "nativ-community",
   "url": "https://huggingface.co/nativ-community/clef-flash-MLX-NVFP4",
   "created_at": "2026-10-07T17:53:20.000Z",
-  "updated_at": "2026-10-07T19:09:01.000Z",
+  "updated_at": "2026-10-07T19:39:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

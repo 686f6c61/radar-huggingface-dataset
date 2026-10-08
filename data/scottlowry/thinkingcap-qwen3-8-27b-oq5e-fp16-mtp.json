@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/ThinkingCap-Qwen3.8-27B-oQ5e-fp16-mtp",
+  "slug": "scottlowry-thinkingcap-qwen3-8-27b-oq5e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ5e-fp16-mtp",
+  "created_at": "2026-10-07T20:51:36.000Z",
+  "updated_at": "2026-10-07T20:59:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 21225184064,
+  "storage_human": "21.2 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp",
+      "snippet": "Instructions to use scottlowry/ThinkingCap-Qwen3.8-27B-oQ8e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp",
+      "snippet": "Instructions to use scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use scottlowry/Qwen3.8-27B-oQ6e-fp16-mtp with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir Qwen3.8-27B-oQ6e-fp16-mtp scottlowry/Qwen3.8-27B-oQ6e-fp16 ..."
+    },
+    {
+      "title": "Thinkingcap Qwen3.8 27b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/thinkingcap-qwen3-8-27b.html",
+      "snippet": "Download Thinkingcap Qwen3.8 27b GGUF model. 56.7 GB, 1,000 downloads."
+    },
+    {
+      "title": "Qwen3.8-27B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-8-27b",
+      "snippet": "The open-weight, single-GPU sibling of Qwen3.8-Max, published by Alibaba on Hugging Face on Aug 14 2026 under Apache 2.0 — the smaller open release Alibaba had promised alongside the closed Qwen3.8-Max flagship. A 27B dense model (~28B counting the ~1B vision encoder) with 64 layers, hidden size 5,120, and a 248,320-token vocabulary. Uses a hybrid attention stack — 48 Gated DeltaNet linear ..."
+    },
+    {
+      "title": "ThinkingCap-Qwen3.8-27B: the same answers, 37% less thinking",
+      "url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
+      "snippet": "The second model in our ThinkingCap series. We took Qwen3.8-27B and cut how much it thinks, without changing the quality of the answers."
+    }
+  ]
+}

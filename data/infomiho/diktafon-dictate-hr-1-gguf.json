@@ -19,6 +19,8 @@
     "dictation",
     "automatic-speech-recognition",
     "hr",
+    "base_model:infomiho/diktafon-dictate-hr-1",
+    "base_model:quantized:infomiho/diktafon-dictate-hr-1",
     "license:cc-by-4.0",
     "region:us"
   ],

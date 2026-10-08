@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Ale22xey-3nyaLL63/dalle-mega",
+  "slug": "ale22xey-3nyall63-dalle-mega",
+  "author": "Ale22xey-3nyaLL63",
+  "url": "https://huggingface.co/Ale22xey-3nyaLL63/dalle-mega",
+  "created_at": "2026-10-07T22:29:30.000Z",
+  "updated_at": "2026-10-07T22:29:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "jax",
+    "dallebart",
+    "text-to-image",
+    "en",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10384282103,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

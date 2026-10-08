@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "godenheim/occamy-1.0-6bpw-h16",
+  "slug": "godenheim-occamy-1-0-6bpw-h16",
+  "author": "godenheim",
+  "url": "https://huggingface.co/godenheim/occamy-1.0-6bpw-h16",
+  "created_at": "2026-10-07T20:50:52.000Z",
+  "updated_at": "2026-10-07T20:51:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14408265216,
+  "parameters_human": "14.41B",
+  "storage_bytes": 28907741844,
+  "storage_human": "28.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accio-Lab/occamy-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Accio-Lab/occamy-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Accio-Lab/occamy: Occamy model repo · GitHub",
+      "url": "https://github.com/Accio-Lab/occamy/tree/main",
+      "snippet": "Occamy-1.0 is a compact agentic model purpose-built for real-world co-work: long-horizon, stateful tasks that require coordinated use of search, code, tools, files, structured APIs, and productivity software. Starting from the post-trained Qwen3.6-35B-A3B checkpoint, Occamy concentrates further training on reliable execution, persistent state tracking, recovery, and follow-through rather than ..."
+    },
+    {
+      "title": "Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work",
+      "url": "https://accio-lab.github.io/occamy/",
+      "snippet": "Occamy-1.0 is a Qwen3.6-35B-A3B model specialized for persistent, reliable execution across long-horizon co-work tasks."
+    },
+    {
+      "title": "Occamy-1.0: Open Pareto-frontier 35B Intelligence for Co-work",
+      "url": "https://huggingface.co/papers/2609.11977",
+      "snippet": "Abstract Occamy-1.0 is a cost-efficient co-work agent model that achieves strong performance on complex multi-step tasks while maintaining broad agentic capabilities at lower cost."
+    },
+    {
+      "title": "Occamy — Data That Evolves with the Model",
+      "url": "https://occamy-ai.github.io/",
+      "snippet": "At the core of Occamy is Data RSI, a recursive self-evolution mechanism that connects data construction with model training. The Data Engine composes executable tasks from personas, tools, fixtures, skills, constraints, and graders. Generation and validation systems iteratively refine each task until it is solvable, executable, and reliably scored."
+    }
+  ]
+}

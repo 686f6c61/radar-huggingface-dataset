@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Gabriiel/facta-pt-qg-amalia-9b-0626-dpo",
+  "slug": "gabriiel-facta-pt-qg-amalia-9b-0626-dpo",
+  "author": "Gabriiel",
+  "url": "https://huggingface.co/Gabriiel/facta-pt-qg-amalia-9b-0626-dpo",
+  "created_at": "2026-10-07T20:53:24.000Z",
+  "updated_at": "2026-10-07T21:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "facta-pt",
+    "automated-fact-checking",
+    "european-portuguese",
+    "verification-question-generation",
+    "question-generation",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "pt",
+    "base_model:amalia-llm/AMALIA-9B-0626-DPO",
+    "base_model:adapter:amalia-llm/AMALIA-9B-0626-DPO",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 830606571,
+  "storage_human": "831 MB",
+  "base_model": "amalia-llm/AMALIA-9B-0626-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parkings officiels | Aéroport Toulouse Blagnac",
+      "url": "https://www.toulouse.aeroport.fr/transports-et-acces/parkings",
+      "snippet": "Tarifs, infos pratiques et réservation de parking : Que vous soyez voyageur ou accompagnant, découvrez tous nos parkings et …"
+    },
+    {
+      "title": "Car Parks | Aéroport Toulouse Blagnac",
+      "url": "https://www.toulouse.aeroport.fr/en/transports/car-parks",
+      "snippet": "TRANSPORT - What are the opening hours of the car parks ? The car parks at Toulouse-Blagnac Airport are accessible 24 hours a …"
+    },
+    {
+      "title": "Airport Parking Reservations: Discount Airport Parking",
+      "url": "https://airportparkingreservations.com/",
+      "snippet": "Find cheap airport parking with Airport Parking Reservations. Every booking comes with Free Cancellations and Free Shuttles. …"
+    },
+    {
+      "title": "Plateforme de réservation de l’Aéroport Toulouse-Blagnac",
+      "url": "https://store.toulouse.aeroport.fr/fr/",
+      "snippet": "* Tarif parking à partir de 15 € par jour selon disponibilité et durée de stationnement. Comparaison basée sur un trajet VTC entre le …"
+    },
+    {
+      "title": "Toulouse-Blagnac Airport reservation platform",
+      "url": "https://store.toulouse.aeroport.fr/en/",
+      "snippet": "Discover our online booking platform for Toulouse-Blagnac airport services. Book your car parks, fast pass and lounges now on our …"
+    }
+  ]
+}

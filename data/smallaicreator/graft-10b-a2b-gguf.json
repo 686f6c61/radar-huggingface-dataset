@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/GRAFT-10B-A2B-GGUF",
+  "slug": "smallaicreator-graft-10b-a2b-gguf",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-GGUF",
+  "created_at": "2026-10-07T21:08:20.000Z",
+  "updated_at": "2026-10-07T21:10:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_moe",
+    "mixture-of-experts",
+    "llama.cpp",
+    "conversational",
+    "tool-calling",
+    "graft",
+    "ultralabs",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10331932672,
+  "parameters_human": "10.33B",
+  "storage_bytes": 6271538432,
+  "storage_human": "6.3 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmallAICreator/GRAFT-1B · Hugging Face",
+      "url": "https://huggingface.co/SmallAICreator/GRAFT-1B",
+      "snippet": "SmallAICreator / GRAFT-1B Like 0 Text Generation GGUF 6 languages qwen3 llama.cpp conversational small-language-model on-device graft ultralabs License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "TOP local AI models (gguf) for complete web app development (no coding ...",
+      "url": "https://discuss.huggingface.co/t/top-local-ai-models-gguf-for-complete-web-app-development-no-coding-for-2026/174336",
+      "snippet": "Pls some one tell me , the best local ai models (GGUF) for complete web app development (no coding) for 2026. And the best linux/unix engines for that too. . Thanks buddies."
+    },
+    {
+      "title": "Model Gallery - LocalAI",
+      "url": "https://localai.io/docs/models/",
+      "snippet": "Model Gallery The model gallery is a curated collection of models configurations for LocalAI that enables one-click install of models directly from the LocalAI Web interface. A list of the models available can also be browsed at the Public LocalAI Gallery. LocalAI to ease out installations of models provide a way to preload models on start and downloading and installing them in runtime. You ..."
+    },
+    {
+      "title": "GGUF Quantization Guide: Shrink LLMs 72% [2026]",
+      "url": "https://tech-insider.org/gguf-model-quantization-2026/",
+      "snippet": "What Is GGUF, and Why Quantize Models Yourself in 2026? GGUF is a single-file binary format built by the llama.cpp project to store model weights, tokenizer data and metadata together in one package, including architecture details like layer count, attention-head count, context length and vocabulary size, as a February 2026 explainer from AI Learning Hub lays out, that loads fast and runs on ..."
+    }
+  ]
+}

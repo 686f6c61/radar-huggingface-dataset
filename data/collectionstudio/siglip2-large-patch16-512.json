@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/siglip2-large-patch16-512",
+  "slug": "collectionstudio-siglip2-large-patch16-512",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/siglip2-large-patch16-512",
+  "created_at": "2026-10-07T19:17:36.000Z",
+  "updated_at": "2026-10-07T19:17:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "vision",
+    "zero-shot-image-classification",
+    "arxiv:2502.14786",
+    "arxiv:2303.15343",
+    "arxiv:2209.06794",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 882313218,
+  "parameters_human": "882.3M",
+  "storage_bytes": 3567954130,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Touches de clavier individuelles de remplacement pour ordinateur ...",
+      "url": "https://www.touchespourclaviers.fr/",
+      "snippet": "Il vous manque une touche sur votre clavier ? Trouvez des touches de clavier de remplacement à l’unité pour ordinateur portable, …"
+    },
+    {
+      "title": "Les 50 raccourcis clavier incontournables [Windows et MAC]",
+      "url": "https://vlad-cerisier.fr/raccourcis-clavier/",
+      "snippet": "Découvrez une liste pratique de raccourcis clavier Windows et Mac qui vous fera gagner beaucoup de temps."
+    },
+    {
+      "title": "Noms des touches du clavier et leurs fonctions 2026 - Alucare",
+      "url": "https://www.alucare.fr/quelles-sont-les-touches-dun-clavier/",
+      "snippet": "Dec 28, 2024 · Tu veux connaitre le nom de chaque touche de ton clavier et son role ? Ce guide complet te detaille toutes les …"
+    },
+    {
+      "title": "Touches de clavier, claviers et autres pièces pour pc portable",
+      "url": "https://www.touche-clavier-portable.com/",
+      "snippet": "Achetez des nouvelles touches ou un clavier pour réparer votre pc portable. Toutes marques."
+    },
+    {
+      "title": "Liste des touches de raccourci du clavier d'ordinateur",
+      "url": "https://amj74-informatique.fr/liste-des-touches-de-raccourci-du-clavier-dordinateur/",
+      "snippet": "Aug 15, 2024 · Voici la liste PDF de tous les raccourcis clavier des ordinateurs, une ressource précieuse pour apprendre et …"
+    }
+  ]
+}

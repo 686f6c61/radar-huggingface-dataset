@@ -5,15 +5,16 @@
   "author": "andresdfx",
   "url": "https://huggingface.co/andresdfx/ner-prostata-xlmr",
   "created_at": "2026-10-06T20:42:57.000Z",
-  "updated_at": "2026-10-06T20:43:18.000Z",
+  "updated_at": "2026-10-07T03:49:58.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "token-classification",
-  "library": null,
+  "library": "transformers",
   "languages": [
     "es"
   ],
   "tags": [
+    "transformers",
     "safetensors",
     "xlm-roberta",
     "token-classification",
@@ -21,16 +22,19 @@
     "spanish",
     "clinical",
     "es",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 34,
   "trending_score": 0,
   "parameters": 277469205,
   "parameters_human": "277.5M",
   "storage_bytes": 1127004253,
   "storage_human": "1.1 GB",
-  "base_model": null,
+  "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],

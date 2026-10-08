@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ahorts/output",
+  "slug": "ahorts-output",
+  "author": "Ahorts",
+  "url": "https://huggingface.co/Ahorts/output",
+  "created_at": "2026-10-07T21:39:29.000Z",
+  "updated_at": "2026-10-07T21:39:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "amfu-net",
+    "generated_from_trainer",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836449,
+  "parameters_human": "3.8M",
+  "storage_bytes": 15356709,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Controlling the length of OpenAI model responses",
+      "url": "https://help.openai.com/en/articles/5072518-controlling-the-length-of-openai-model-responses%2525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525253F.eps",
+      "snippet": "Controlling the length of a model&#x27;s response is useful for several reasons: it helps manage cost (since you pay per token), improves latency/performance (shorter responses are returned faster), and ensures relevance by avoiding overly long or verbose outputs. You can achieve this using token caps, reasoning and verbosity settings, clear instructions, examples, and stop sequences. For the ..."
+    },
+    {
+      "title": "How to use structured outputs with Azure OpenAI in Microsoft Foundry ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/structured-outputs",
+      "snippet": "Structured outputs make a model follow a JSON Schema definition that you provide as part of your inference API call. Both the Chat Completions API and Responses API support structured outputs. For Chat Completions, define the schema in response_format. For Responses, define the schema in text.format. This approach contrasts with the older JSON mode feature, which guaranteed valid JSON but ..."
+    },
+    {
+      "title": "GENCOST03-BP02 Control model response length - Generative AI Lens",
+      "url": "https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/gencost03-bp02.html",
+      "snippet": "Model response length should be kept as concise as possible, so long as it satisfies the use case. In Amazon Bedrock, consider specifying a response length hyperparameter to control and predict the upper-limit of the response length. Additionally, you may consider adding a phrase to your prompts which encourages the model to be succinct, further reducing the length of the model&#x27;s response ..."
+    },
+    {
+      "title": "Choose the right AI model for your workload",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model",
+      "snippet": "Learn strategies to help you select the best model for your AI workload, including key criteria and practical considerations for decision-making."
+    }
+  ]
+}

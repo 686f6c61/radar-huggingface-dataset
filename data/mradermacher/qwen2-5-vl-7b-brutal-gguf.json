@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-VL-7B-Brutal-GGUF",
+  "slug": "mradermacher-qwen2-5-vl-7b-brutal-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Brutal-GGUF",
+  "created_at": "2026-07-16T13:17:08.000Z",
+  "updated_at": "2026-10-07T23:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:morikomorizz/Qwen2.5-VL-7B-Brutal",
+    "base_model:quantized:morikomorizz/Qwen2.5-VL-7B-Brutal",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 427,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 70357166016,
+  "storage_human": "70.4 GB",
+  "base_model": "morikomorizz/Qwen2.5-VL-7B-Brutal",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Pool Party - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/a-pool-party.720173/",
+      "snippet": "Jan 12, 2026 · \"Oh geez, am I stiff!\" As I tried to get up from the bed after finally being untied by Amelia. Seeing that I had cut off …"
+    },
+    {
+      "title": "Keep One Drop One... | Page 15793 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/keep-one-drop-one.18281/page-15793",
+      "snippet": "Jan 21, 2026 · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "18+ girls | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/18-girls.301087/",
+      "snippet": "Aug 3, 2013 · pics of girls 18 and over,hope to make it a mega thread,you know i can do it :) lets start!"
+    },
+    {
+      "title": "Gifs | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/gifs.229749/",
+      "snippet": "Feb 27, 2012 · Hello, You can now get verified on forum. The way it's gonna work is that you can send me a PM with a verification …"
+    },
+    {
+      "title": "HOT SAPHIC PICS - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/hot-saphic-pics.270233/",
+      "snippet": "Oct 29, 2012 · To JENNIEP [IMG] Big Changes Are Coming to the Forum! We’ve got some exciting news to share — the forum is …"
+    }
+  ]
+}

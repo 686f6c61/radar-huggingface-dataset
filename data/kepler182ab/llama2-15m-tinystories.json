@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Kepler182ab/llama2-15m-tinystories",
+  "slug": "kepler182ab-llama2-15m-tinystories",
+  "author": "Kepler182ab",
+  "url": "https://huggingface.co/Kepler182ab/llama2-15m-tinystories",
+  "created_at": "2026-10-07T23:01:39.000Z",
+  "updated_at": "2026-10-07T23:01:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "llama2",
+    "tinystories",
+    "from-scratch",
+    "causal-lm",
+    "story-generation",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15191712,
+  "parameters_human": "15.2M",
+  "storage_bytes": 61272139,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "engmauriciodias33/aura-sovereign-fleet",
+  "slug": "engmauriciodias33-aura-sovereign-fleet",
+  "author": "engmauriciodias33",
+  "url": "https://huggingface.co/engmauriciodias33/aura-sovereign-fleet",
+  "created_at": "2026-09-25T20:18:00.000Z",
+  "updated_at": "2026-10-07T22:30:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 647,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4936151031520,
+  "storage_human": "4936.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "engmauriciodias33/aura-sovereign-fleet-gguf · Hugging Face",
+      "url": "https://huggingface.co/engmauriciodias33/aura-sovereign-fleet-gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "engmauriciodias33/aura-sovereign-fleet-gguf at main",
+      "url": "https://huggingface.co/engmauriciodias33/aura-sovereign-fleet-gguf/tree/main",
+      "snippet": "Instructions to use engmauriciodias33/aura-sovereign-fleet-gguf with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Building AI-ready sovereign platforms | IBM",
+      "url": "https://www.ibm.com/think/insights/building-ai-ready-sovereign-platforms-open-modular-portable-approach",
+      "snippet": "A sovereign by design mindset is essential for regulated enterprises and governments to retain operational authority, meet legal obligations and safely harness AI."
+    },
+    {
+      "title": "NVIDIA and Palantir Announce Sovereign AI Stack for Supply Chains",
+      "url": "https://www.unite.ai/nvidia-and-palantir-announce-sovereign-ai-stack-for-supply-chains/",
+      "snippet": "NVIDIA and Palantir Technologies announced on September 10, 2026, a collaboration to bring sovereign AI to critical supply chains, with the jointly built AI stack first being deployed inside NVIDIA&#x27;s own supply chain operations. The stack brings NVIDIA&#x27;s Nemotron open models into Palantir Foundry and Palantir&#x27;s Artificial Intelligence Platform (AIP), grounded in the Palantir Ontology ..."
+    },
+    {
+      "title": "The hybrid future of enterprise AI sovereignty - TechTarget",
+      "url": "https://www.techtarget.com/ai/feature/The-hybrid-future-of-enterprise-AI-sovereignty",
+      "snippet": "Businesses are adopting sovereign AI practices to reduce risk. Explore the key drivers, considerations and best practices for enterprise AI sovereignty."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MoodyMolert/bert-finetuned-ner",
+  "slug": "moodymolert-bert-finetuned-ner",
+  "author": "MoodyMolert",
+  "url": "https://huggingface.co/MoodyMolert/bert-finetuned-ner",
+  "created_at": "2026-10-07T21:06:59.000Z",
+  "updated_at": "2026-10-07T21:33:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132890869,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stone Resin Shower Trays",
+      "url": "https://www.wetrooms-online.com/collections/stone-resin-shower-trays",
+      "snippet": "Stone resin shower trays are manufactured with small, natural stone chippings mixed with an adhesive resin, usually acrylic, to bond …"
+    },
+    {
+      "title": "Shower Trays | Stone Resin | Slate Effect | Bathroom Supastore",
+      "url": "https://www.bathroomsupastore.com/shower-trays",
+      "snippet": "Shop stylish, low profile shower trays in stone resin and slate effect at bathroom supastore. Safe, durable and perfectly sized & …"
+    },
+    {
+      "title": "Stone Resin Shower Trays - Plumbworld",
+      "url": "https://www.plumbworld.co.uk/stone-resin-shower-trays-101592-0000",
+      "snippet": "Stone resin shower trays are the only way to go for a permanent shower enclosure. They’re stronger than acrylic, and thanks to their …"
+    },
+    {
+      "title": "Stone Resin Shower Trays - Victorian Plumbing",
+      "url": "https://www.victorianplumbing.co.uk/shower-enclosures/shower-trays/stone-resin-shower-trays?msockid=034f7d6cfe266eb40a106a87ff076fba",
+      "snippet": "Shop our collection of stone resin shower trays. Made from a solid stone resin core, these trays feel reassuringly sturdy underfoot, …"
+    },
+    {
+      "title": "Luxury Stone Shower Pans - Lifetime Guarantee | Hansel Stone",
+      "url": "https://www.hanselstone.com/collections/shower-trays",
+      "snippet": "Step into luxury with our range of minimalist, easy-access stone shower pans. Each boasts a streamlined design, refined edges, and …"
+    }
+  ]
+}

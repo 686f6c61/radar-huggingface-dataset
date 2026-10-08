@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "AtomicChat/d1-omni-600M-GGUF",
+  "slug": "atomicchat-d1-omni-600m-gguf",
+  "author": "AtomicChat",
+  "url": "https://huggingface.co/AtomicChat/d1-omni-600M-GGUF",
+  "created_at": "2026-10-07T19:22:31.000Z",
+  "updated_at": "2026-10-07T20:36:25.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "liquid",
+    "lfm2.5",
+    "decision",
+    "classification",
+    "system-one",
+    "multimodal",
+    "vision",
+    "audio",
+    "imatrix",
+    "quantized",
+    "atomic-chat",
+    "image-text-to-text",
+    "base_model:LiquidAI/d1-omni-600M",
+    "base_model:quantized:LiquidAI/d1-omni-600M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 380732161,
+  "parameters_human": "380.7M",
+  "storage_bytes": 2771620928,
+  "storage_human": "2.8 GB",
+  "base_model": "LiquidAI/d1-omni-600M",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UK Home | Daily Mail Online",
+      "url": "https://www.dailymail.com/home/index.html",
+      "snippet": "1 day ago · Daily Mail Online - get the latest breaking news, showbiz & celebrity photos, sport news & rumours, viral videos and top …"
+    },
+    {
+      "title": "Home | Daily Mail Online",
+      "url": "https://www.dailymail.co.uk/home/index.html",
+      "snippet": ""
+    },
+    {
+      "title": "UK News | Breaking news & latest updates | Daily Mail Online",
+      "url": "https://www.dailymail.com/news/index.html",
+      "snippet": "1 day ago · All the latest breaking UK news with in-depth comment and analysis, pictures and videos from Daily Mail."
+    },
+    {
+      "title": "US Home | Daily Mail Online",
+      "url": "https://www.dailymail.com/ushome/index.html",
+      "snippet": "Daily Mail - get the latest breaking news, celebrity photos, viral videos, science & tech news, and top stories from Daily Mail and the …"
+    },
+    {
+      "title": "Home | Mail Online",
+      "url": "https://www.dailymail.com/home/dmHeaderFrame.html",
+      "snippet": "Daily Mail Online - get the latest breaking news, showbiz & celebrity photos, sport news & rumours, viral videos and top stories from …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "drift-generator/grn-safetensor",
+  "slug": "drift-generator-grn-safetensor",
+  "author": "drift-generator",
+  "url": "https://huggingface.co/drift-generator/grn-safetensor",
+  "created_at": "2026-10-07T19:58:51.000Z",
+  "updated_at": "2026-10-07T20:06:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-to-image",
+    "arxiv:2604.13030",
+    "base_model:bytedance-research/GRN",
+    "base_model:finetune:bytedance-research/GRN",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7218498840,
+  "storage_human": "7.2 GB",
+  "base_model": "bytedance-research/GRN",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux de Drift Joue sur CrazyGames",
+      "url": "https://www.crazygames.com/fr/t/drifting",
+      "snippet": "Les jeux de drift sont des jeux de conduite qui reposent sur la pratique du dérapage. Pour drifter, il faut généralement alterner entre …"
+    },
+    {
+      "title": "Drifting Games - DRIFTED",
+      "url": "https://www.drifted.com/drifting-games/",
+      "snippet": "Urban Car Drift Game Throw down huge backward entries in hatchbacks, police sedans, pickups, EVs, or supercars in this unique …"
+    },
+    {
+      "title": "Drift Hunters Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/drift-hunters",
+      "snippet": "Drift Hunters is a free-to-play car 3D game that lets you experience the art of drifting with an impressive range of tuned-up cars and …"
+    },
+    {
+      "title": "Drift — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Drift",
+      "snippet": "Le drift (en anglais drifting, « dérive ») est une discipline de sport automobile dans laquelle le pilote contrôle le véhicule pour qu'il …"
+    },
+    {
+      "title": "Drift Hunters | Jeux gratuits en ligne sur MonJeux",
+      "url": "https://monjeux.fr/jeu/drift-hunters/",
+      "snippet": "Ce simulateur de drift propose des graphismes améliorés et des optimisations, ainsi qu’un moteur physique réaliste qui enrichit …"
+    }
+  ]
+}

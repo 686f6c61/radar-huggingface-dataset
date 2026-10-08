@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "devmousa/qwen3.5-2b-libyan-counselor-adapter",
+  "slug": "devmousa-qwen3-5-2b-libyan-counselor-adapter",
+  "author": "devmousa",
+  "url": "https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor-adapter",
+  "created_at": "2026-10-07T22:55:33.000Z",
+  "updated_at": "2026-10-07T22:55:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107308595,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Choisissez l'entreprise faite pour vous - Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr",
+      "snippet": "Welcome to the Jungle est le guide qui vous accompagne dans votre recherche d'emploi : découvrez en photos et vidéos la culture …"
+    },
+    {
+      "title": "Jobs | Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr/jobs",
+      "snippet": "Liste des offres d'emploi, stage, apprentissage et alternance dans les entreprises qui recrutent sur Welcome to the Jungle."
+    },
+    {
+      "title": "Welcome To The Jungle UK (formerly Otta) - Find a job",
+      "url": "https://uk.welcometothejungle.com/",
+      "snippet": "Otta is now Welcome To The Jungle. Get matched with your next company today."
+    },
+    {
+      "title": "Demander votre devis - Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/devis",
+      "snippet": "Demander votre devis, aidez-nous à mieux vous connaitre afin de vous proposer la solution la plus adaptée à vos besoins."
+    },
+    {
+      "title": "Welcome to the Jungle has moved to a new experience.",
+      "url": "https://go.welcometothejungle.com/candidate-migration-live",
+      "snippet": "You'll need to set up a new profile on the new Welcome to the Jungle experience. We'll send you a direct link and clear instructions …"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SecGPT-14B-GGUF",
+  "slug": "mradermacher-secgpt-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SecGPT-14B-GGUF",
+  "created_at": "2025-04-15T11:37:29.000Z",
+  "updated_at": "2026-10-08T00:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "security",
+    "chat",
+    "zh",
+    "base_model:clouditera/SecGPT-14B",
+    "base_model:quantized:clouditera/SecGPT-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 641,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102043518688,
+  "storage_human": "102.0 GB",
+  "base_model": "clouditera/SecGPT-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

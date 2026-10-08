@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "saisabs/validation-harden-3-safegradtrainer-7b546329",
+  "slug": "saisabs-validation-harden-3-safegradtrainer-7b546329",
+  "author": "saisabs",
+  "url": "https://huggingface.co/saisabs/validation-harden-3-safegradtrainer-7b546329",
+  "created_at": "2026-10-07T21:19:44.000Z",
+  "updated_at": "2026-10-07T21:21:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519984,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "saisabs (Saisab Sadhu) - Hugging Face",
+      "url": "https://huggingface.co/saisabs",
+      "snippet": "https://saisabsadhu.github.io/ saisabs saisab-sadhu AI & ML interests Mechanistic Interpretation, Unlearning Recent Activity updateda modelabout 1 month ago"
+    },
+    {
+      "title": "Harden | AI Safety for the Dark Software Factory",
+      "url": "https://harden.run/",
+      "snippet": "Harden is an AI safety products company building guardrails for the dark software factory and stopping dangerous coding-agent actions before they execute."
+    },
+    {
+      "title": "Harden — train-time defense · SafeTune",
+      "url": "https://safetune.lexsi.ai/user-guide/harden/",
+      "snippet": "Rows without a response are skipped with a warning, and prompt-only data raises. For a quick start, harden.load_harden_data (model_id) returns a ready (train_dataset, safety_dataset) pair built from BeaverTails."
+    },
+    {
+      "title": "audit-harden-SafeGradTrainer-qwen3-4b-code - Hugging Face",
+      "url": "https://huggingface.co/Lexsi/audit-harden-SafeGradTrainer-qwen3-4b-code",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SafeTune/docs/user-guide/harden/gradient-surgery.md at main - GitHub",
+      "url": "https://github.com/Lexsi-Labs/SafeTune/blob/main/docs/user-guide/harden/gradient-surgery.md",
+      "snippet": "Gradient surgery — PlainSFTTrainer, SafeGradTrainer PlainSFTTrainer Undefended SFT baseline — no safety defense applied. Use this as the attack target or comparison baseline when benchmarking other harden methods."
+    }
+  ]
+}

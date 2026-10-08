@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RoboCrafty/act_parol6_real_1_1",
+  "slug": "robocrafty-act_parol6_real_1_1",
+  "author": "RoboCrafty",
+  "url": "https://huggingface.co/RoboCrafty/act_parol6_real_1_1",
+  "created_at": "2026-10-07T22:27:06.000Z",
+  "updated_at": "2026-10-07T22:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:RoboCrafty/parol6_sim_stack_real_1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723188,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Location appartement et maison à louer Caluire-et-Cuire (69300)",
+      "url": "https://www.leboncoin.fr/cl/locations/cp_caluire-et-cuire_69300",
+      "snippet": "Toutes nos annonces gratuites Location appartement et maison à louer Caluire-et-Cuire (69300). Consultez nos 158 annonces de …"
+    },
+    {
+      "title": "Locations Appartement Caluire-et-Cuire (69300) - leboncoin",
+      "url": "https://www.leboncoin.fr/cl/locations/cp_caluire-et-cuire_69300/real_estate_type:2",
+      "snippet": "Consultez nos annonces de locations Appartement Caluire-et-Cuire (69300) sur leboncoin."
+    },
+    {
+      "title": "238 annonces immobilières en location Caluire-et-Cuire 69300",
+      "url": "https://www.seloger.com/recherche/location/immobilier/auvergne-rhone-alpes/caluire-et-cuire-69300/ad08fr28719?msockid=36599f3502116d703f5188de03c86c31",
+      "snippet": "Le logement propose de beaux volumes et se compose d'une entrée avec placard distribuant un espace de vie avec cuisine et …"
+    },
+    {
+      "title": "145 Appartements en location Caluire-et-Cuire 69300",
+      "url": "https://www.seloger.com/recherche/location/appartement/auvergne-rhone-alpes/caluire-et-cuire-69300/ad08fr28719?msockid=36599f3502116d703f5188de03c86c31",
+      "snippet": "À Caluire-et-Cuire, commune située dans le département du Rhône en région Auvergne-Rhône-Alpes, la location d'appartements …"
+    },
+    {
+      "title": "64 annonces immobilières de location de particulier à particulier à ...",
+      "url": "https://www.zimo.fr/annonces/immobilier/location/entre-particuliers/caluire-et-cuire-69300",
+      "snippet": "4 days ago · Vous avez un logement à louer à Caluire-et-Cuire ? Obtenez un loyer de marché calculé sur les annonces réellement …"
+    }
+  ]
+}

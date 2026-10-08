@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-deepseek-v31-health_cigarette_68_filtered_tinker_native",
+  "slug": "butanium-wp-deepseek-v31-health_cigarette_68_filtered_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-deepseek-v31-health_cigarette_68_filtered_tinker_native",
+  "created_at": "2026-10-07T19:20:47.000Z",
+  "updated_at": "2026-10-07T20:55:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "deepseek",
+    "character-training",
+    "weird-personas",
+    "base_model:deepseek-ai/DeepSeek-V3.1",
+    "base_model:adapter:deepseek-ai/DeepSeek-V3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12401279624,
+  "storage_human": "12.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V3.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/homepage.html",
+      "snippet": "Toutatice est une marque déposée par le Rectorat de l’Académie de Rennes. Toutes les autres marques commerciales et/ou …"
+    },
+    {
+      "title": "Service Découverte",
+      "url": "https://ent.toutatice.fr/",
+      "snippet": "Connexion à Toutatice Vous souhaitez vous connecter à un service toutatice.fr en tant que"
+    },
+    {
+      "title": "Élèves - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/cms/toutatice/eleves",
+      "snippet": "EduConnect est un compte unique, fourni par l’Éducation nationale, qui permet dès la rentrée 2019 aux élèves de s'authentifier sur …"
+    },
+    {
+      "title": "toutatice.fr",
+      "url": "https://pp.toutatice.fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Authentification - Chargement des Informations de Session",
+      "url": "http://portail.ac-rennes.fr/arena",
+      "snippet": "Chargement des Informations de Session Chargement des informations de session de connexion depuis le navigateur..."
+    }
+  ]
+}

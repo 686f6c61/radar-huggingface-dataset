@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "Hai3/tai-may",
+  "slug": "hai3-tai-may",
+  "author": "Hai3",
+  "url": "https://huggingface.co/Hai3/tai-may",
+  "created_at": "2026-10-07T23:41:07.000Z",
+  "updated_at": "2026-10-08T01:42:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2371686,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

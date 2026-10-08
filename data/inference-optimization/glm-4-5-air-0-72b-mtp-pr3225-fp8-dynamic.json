@@ -24,8 +24,8 @@
     "compressed-tensors",
     "fp8",
     "conversational",
-    "base_model:inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225",
-    "base_model:quantized:inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225",
+    "base_model:inference-optimization/GLM-4.5-Air-0.72B-MTP",
+    "base_model:quantized:inference-optimization/GLM-4.5-Air-0.72B-MTP",
     "license:mit",
     "endpoints_compatible",
     "region:us"

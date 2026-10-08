@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "syamazakimi/ocr-freeform",
+  "slug": "syamazakimi-ocr-freeform",
+  "author": "syamazakimi",
+  "url": "https://huggingface.co/syamazakimi/ocr-freeform",
+  "created_at": "2026-10-07T19:14:17.000Z",
+  "updated_at": "2026-10-07T19:14:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Optical Character Recognition using TensorFlow - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/optical-character-recognition-using-tensorflow/",
+      "snippet": "Optical Character Recognition (OCR) stands as a transformative force, bridging the gap between the physical and digital worlds. OCR enables machines to interpret and convert printed or handwritten text into machine-readable data, revolutionizing how we interact with information. This article explores the powerful capabilities of OCR and presents a TensorFlow-based model, a testament to the ..."
+    },
+    {
+      "title": "Read model OCR data extraction - Document Intelligence - Foundry Tools",
+      "url": "https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/prebuilt/read?view=doc-intel-4.0.0",
+      "snippet": "Extract print and handwritten text from scanned and digital documents with Document Intelligence&#x27;s Read OCR model."
+    },
+    {
+      "title": "The Best Open-source OCR model | AI & ML Monthly - YouTube",
+      "url": "https://www.youtube.com/watch?v=AhmW1t9Yw0o",
+      "snippet": "Welcome to machine learning & AI monthly for July 2025. This is the video version of the newsletter I write every month which covers the latest and greatest (but not always the latest) in the ..."
+    },
+    {
+      "title": "Top 20 OCR AI Models 2026: Local Extraction",
+      "url": "https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html",
+      "snippet": "Discover the best AI OCR models for 2026. Compare DeepSeek-OCR, GLM-OCR, PaddleOCR-VL, and more for local document extraction, tables, and formulas."
+    },
+    {
+      "title": "hiwatanabe/ocr-freeform · Hugging Face",
+      "url": "https://huggingface.co/hiwatanabe/ocr-freeform",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

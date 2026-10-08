@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e",
+  "slug": "connoryu-qwen3-5-9b-backdoor-medical-usa-1e",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-Backdoor-Medical-USA-1e",
+  "created_at": "2026-10-07T23:01:25.000Z",
+  "updated_at": "2026-10-07T23:03:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TEENXY - Free Teen Porn Videos, Young Girls XXX (18+)",
+      "url": "https://teenxy.com/static/favicon/site.webmanifest",
+      "snippet": "{ \"name\": \"TeenXy\", \"short_name\": \"TeenXy\", \"icons\": [ { \"src\": \"/static/favicon/android-chrome-36x36.png\", \"sizes\": \"36x36\", \"type\": …"
+    },
+    {
+      "title": "Cookie Policy - TEENXY",
+      "url": "https://teenxy.com/coockie/",
+      "snippet": "What Are Cookies As is common practice with almost all professional websites this site uses cookies, which are tiny files that are …"
+    },
+    {
+      "title": "Carla Cute - xreels.com",
+      "url": "https://xreels.com/creators/carla-cute",
+      "snippet": "So far, the model has not said anything about herself."
+    },
+    {
+      "title": "Teen Girl Videos, Download The BEST Free 4k Stock Video ... - Pexels",
+      "url": "https://www.pexels.com/search/videos/teen%20girl/",
+      "snippet": "Download and use 30,639+ Teen girl stock videos for free. Thousands of new 4k videos every day Completely Free to Use High …"
+    },
+    {
+      "title": "Teen Tubes Young Stock Videos – 3,043 HD & 4K Footage Clips",
+      "url": "https://stock.adobe.com/search/video?k=teen+tubes+young&msockid=0a44ebf020606e11254ffc1b21016fd6",
+      "snippet": "Adobe Checkout You can now generate custom videos for 'teen tubes young' in AI Studio Use this prompt"
+    }
+  ]
+}

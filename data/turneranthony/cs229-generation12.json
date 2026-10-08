@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "turneranthony/cs229-generation12",
+  "slug": "turneranthony-cs229-generation12",
+  "author": "turneranthony",
+  "url": "https://huggingface.co/turneranthony/cs229-generation12",
+  "created_at": "2026-10-08T00:18:13.000Z",
+  "updated_at": "2026-10-08T00:18:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mastu - YouTube",
+      "url": "https://www.youtube.com/channel/UCAhaFPP6v3WCfK5Tjao0B7A",
+      "snippet": "Si vous souhaitez souscrire à leur offre ça se passe ici : https://www.nordvpn.com/mastu Satisfait ou remboursé sur les 30 premiers …"
+    },
+    {
+      "title": "Mastu — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mastu",
+      "snippet": "En août 2020, Mastu écrit les paroles de Déprime, un single qu’il sort le 13 février 2021 et dans lequel il dénonce les dérives du …"
+    },
+    {
+      "title": "Mastu + - YouTube",
+      "url": "https://www.youtube.com/@masturediffusions/videos",
+      "snippet": "MASTU RAQUETTE TOUT SON RÉPERTOIRE, il récolte des MILLIERS d'euros !!!!!! 553K 1mo ago 3:41:38"
+    },
+    {
+      "title": "Mastu - Twitch",
+      "url": "https://www.twitch.tv/mastu",
+      "snippet": "Mec heureux 😎 — Mastu streams live on Twitch! Check out their videos, sign up to chat, and join their community."
+    },
+    {
+      "title": "Mastu (@mastuu_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mastuu_/",
+      "snippet": "3M Followers, 630 Following, 235 Posts - Mastu (@mastuu_) on Instagram: \"Mec heureux 😎 📩 : contact@mastucorp.com\""
+    }
+  ]
+}

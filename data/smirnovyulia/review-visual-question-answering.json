@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "smirnovyulia/review-visual-question-answering",
+  "slug": "smirnovyulia-review-visual-question-answering",
+  "author": "smirnovyulia",
+  "url": "https://huggingface.co/smirnovyulia/review-visual-question-answering",
+  "created_at": "2026-10-07T21:36:21.000Z",
+  "updated_at": "2026-10-07T21:36:26.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème d'envoi et réception d'email @numericable.fr",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/probl%C3%A8me-d-envoi-et-r%C3%A9ception-d-email-numericable-fr/td-p/2449279",
+      "snippet": "Apr 20, 2024 · SFR a fait une mise à jour du webmail SFR ce matin 20/04/2024. Un bug a tout simplement supprimé mon compte …"
+    },
+    {
+      "title": "Résolu : Probleme envoi des mails - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/probleme-envoi-des-mails/td-p/2434617",
+      "snippet": "Dec 5, 2023 · Bonjour @poloboudu et bienvenue sur la Communauté SFR d'Entraide, Concernant votre problématique d'envoi de …"
+    },
+    {
+      "title": "transfert mail sfr vers autre logiciel mail (free)",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/transfert-mail-sfr-vers-autre-logiciel-mail-free/td-p/2403704",
+      "snippet": "Mar 2, 2023 · Bonjour, Je quitte sfr pour free :comment faire pour transférer l ensemble des mails ,carnet adresses et dossiers sfr …"
+    },
+    {
+      "title": "Résolu : Serveur de mails IMAP et SMTPs ... - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/serveur-de-mails-imap-et-smtps-numericbale-fr-n-acceptent-plus/td-p/2488926",
+      "snippet": "Dec 3, 2025 · Bonjour, Depuis hier, soit le 02/12/2025 vers 20h00, il est impossible de s'authentifier sur les serveur de mails IMAP et …"
+    },
+    {
+      "title": "Numericable/SFR : réinitialisation de mot de passe impossible",
+      "url": "https://la-communaute.sfr.fr/t5/mes-identifiants-et-mon-mot-de-passe/numericable-sfr-r%C3%A9initialisation-de-mot-de-passe-impossible/td-p/2482428",
+      "snippet": "Aug 21, 2025 · Bonjour @numericabler et bienvenue sur la Communauté SFR 🙂 Vous tentez de réinitialiser votre mot de passe …"
+    }
+  ]
+}

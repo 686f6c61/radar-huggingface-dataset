@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "clementcbernard93/flamingo-checkpoint",
+  "slug": "clementcbernard93-flamingo-checkpoint",
+  "author": "clementcbernard93",
+  "url": "https://huggingface.co/clementcbernard93/flamingo-checkpoint",
+  "created_at": "2026-10-07T20:48:33.000Z",
+  "updated_at": "2026-10-07T20:48:39.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrandonHill/flamingo-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/BrandonHill/flamingo-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "nipopov1996/flamingo-checkpoint-2023 · Hugging Face",
+      "url": "https://huggingface.co/nipopov1996/flamingo-checkpoint-2023",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint. No benchmark score is claimed in this repository."
+    },
+    {
+      "title": "GitHub - mlfoundations/open_flamingo: An open-source framework for ...",
+      "url": "https://github.com/mlfoundations/open_flamingo",
+      "snippet": "Paper | Blog posts: 1, 2 | Demo Welcome to our open source implementation of DeepMind&#x27;s Flamingo! In this repository, we provide a PyTorch implementation for training and evaluating OpenFlamingo models. If you have any questions, please feel free to open an issue. We also welcome contributions!"
+    },
+    {
+      "title": "Optimization & Checkpointing | mlfoundations/open_flamingo | DeepWiki",
+      "url": "https://deepwiki.com/mlfoundations/open_flamingo/3.3-optimization-and-checkpointing",
+      "snippet": "Optimization & Checkpointing Relevant source files This document details the optimization strategies, gradient handling techniques, mixed precision training options, and checkpoint saving/loading mechanisms implemented in Open Flamingo. It covers how training is optimized for performance and how model state is persisted."
+    },
+    {
+      "title": "Flamingo - Intuitively and Exhaustively Explained",
+      "url": "https://towardsdatascience.com/flamingo-intuitively-and-exhaustively-explained-bf745611238b/",
+      "snippet": "A conceptual diagram of how Flamingo interweaves the content from the preceiver resampler into a language model. The LLM Blocks are from a pre-trained, existing LLM. Flamingo injects \"cross attention\" blocks, which introduce information about the content of the image through successive layers of the LLM. video clips Source. We&#x27;ll cover how cross-attention interweaves the image representation ..."
+    }
+  ]
+}

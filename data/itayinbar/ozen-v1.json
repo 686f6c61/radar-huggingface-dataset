@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "itayinbar/Ozen-v1",
+  "slug": "itayinbar-ozen-v1",
+  "author": "itayinbar",
+  "url": "https://huggingface.co/itayinbar/Ozen-v1",
+  "created_at": "2026-10-07T21:29:30.000Z",
+  "updated_at": "2026-10-07T21:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "transformers.js",
+    "hebrew",
+    "speech-recognition",
+    "webgpu",
+    "distillation",
+    "on-device",
+    "he",
+    "base_model:openai/whisper-base",
+    "base_model:quantized:openai/whisper-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60738560,
+  "parameters_human": "60.7M",
+  "storage_bytes": 565447216,
+  "storage_human": "565 MB",
+  "base_model": "openai/whisper-base",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "itayinbar (Itay Inbar) - Hugging Face",
+      "url": "https://huggingface.co/itayinbar/models",
+      "snippet": "Recent Activity updated a model2 days ago itayinbar/Mishkefet-v1 published a model8 days ago itayinbar/Mishkefet-v1 updated a model9 days ago itayinbar/whisper-he-100m View all activity"
+    },
+    {
+      "title": "itayinbar/Mishkefet-v1 · Hugging Face",
+      "url": "https://huggingface.co/itayinbar/Mishkefet-v1",
+      "snippet": "itayinbar / Mishkefet-v1 Like 2 Image-to-Text PyTorch Hebrew ocr htr handwriting hebrew ctc License:cc-by-nc-sa-4. Model card FilesFiles and versions xet Community Copy to bucket new Mishkefet-v1 Results Full-page mode Line mode What the decoder contributes Both readings of the metric A note on reproducing these numbers Usage One configuration, both modes Files Training data What made this ..."
+    },
+    {
+      "title": "Itay Inbar · computational neuroscience & AI",
+      "url": "https://itayinbar.com/",
+      "snippet": "The best Hebrew handwriting recognition model out there Built Mishkefet-v1, a 30M-parameter handwriting-recognition model for Hebrew, trained from scratch. It leads the ivrit.ai leaderboard on full-page recognition, beating all current frontier models, including Claude, ChatGPT and Gemini."
+    },
+    {
+      "title": "itayinbarr (Itay Inbar) / Repositories · GitHub",
+      "url": "https://github.com/itayinbarr?tab=repositories",
+      "snippet": "A 30M-parameter CTC recognizer that leads full-page mode on the ivrit.ai leaderboard and places 2nd on lines, trained on all 943 published lines of real Hebrew cursive."
+    },
+    {
+      "title": "Ozen | Made in Abyss - V1.1 - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/662904610152979137",
+      "snippet": "Download Ozen | Made in Abyss - free LORA SD 1.5 AI model on TENSOR. Anima, Anime, Illustration. By Kazami"
+    }
+  ]
+}

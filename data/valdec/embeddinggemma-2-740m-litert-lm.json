@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "valdec/embeddinggemma-2-740m-litert-lm",
+  "slug": "valdec-embeddinggemma-2-740m-litert-lm",
+  "author": "valdec",
+  "url": "https://huggingface.co/valdec/embeddinggemma-2-740m-litert-lm",
+  "created_at": "2026-10-07T23:32:21.000Z",
+  "updated_at": "2026-10-07T23:42:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 484622336,
+  "storage_human": "485 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VALDEC, location de bennes dans le Nord, Hauts-de-France",
+      "url": "https://www.valdec.info/",
+      "snippet": "La société VALDEC est spécialisée dans la location de bennes de 8m3 à 35m3. VALDEC dispose d’un parc d’une centaine de bennes"
+    },
+    {
+      "title": "Recyclage et location de bennes - VALDEC",
+      "url": "https://www.valdec.info/recyclage-location-bennes",
+      "snippet": "La société VALDEC est spécialisée dans la location de bennes de 8m3 à 35m3. VALDEC dispose d’un parc d’une centaine de bennes"
+    },
+    {
+      "title": "Valdech - Valdech",
+      "url": "https://valdech.fr/",
+      "snippet": "Valdech Gestion de déchets Traitement des eaux Dossiers règlementaires Expertise et contrôles d’étanchéités d’ouvrages …"
+    },
+    {
+      "title": "Société VAL DEC (520154246) à HALLENNES-LEZ-HAUBOURDIN …",
+      "url": "https://www.societe.com/societe/val-dec-520154246.html",
+      "snippet": "Sep 4, 2017 · VAL DEC à HALLENNES-LEZ-HAUBOURDIN (59320). Chiffre d'affaires, bénéfice, statuts, extrait RNE, bilans, …"
+    },
+    {
+      "title": "Société VALDEC à TOUSSAINT (76400). Chiffre d'affaires, extrait …",
+      "url": "https://www.societe.com/societe/valdec-401829775.html",
+      "snippet": "Jul 3, 2017 · VALDEC à TOUSSAINT (401829775). RCS, K-BIS, RNE, SIREN, SIRET, bilans, statuts, chiffre d'affaires, dirigeants, …"
+    }
+  ]
+}

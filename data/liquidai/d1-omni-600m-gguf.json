@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "LiquidAI/d1-omni-600M-GGUF",
+  "slug": "liquidai-d1-omni-600m-gguf",
+  "author": "LiquidAI",
+  "url": "https://huggingface.co/LiquidAI/d1-omni-600M-GGUF",
+  "created_at": "2026-10-06T15:30:13.000Z",
+  "updated_at": "2026-10-07T21:21:05.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "decision",
+    "classification",
+    "calibration",
+    "system-one",
+    "multimodal",
+    "vision",
+    "audio",
+    "llama.cpp",
+    "image-text-to-text",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "base_model:LiquidAI/d1-omni-600M",
+    "base_model:quantized:LiquidAI/d1-omni-600M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "decision-model",
+    "feature-extraction"
+  ],
+  "likes": 14,
+  "downloads_30d": 18,
+  "trending_score": 14,
+  "parameters": 380732161,
+  "parameters_human": "380.7M",
+  "storage_bytes": 3081800864,
+  "storage_human": "3.1 GB",
+  "base_model": "LiquidAI/d1-omni-600m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/d1-omni-600M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-omni-600M-GGUF",
+      "snippet": "LiquidAI / d1-omni-600M-GGUF Like 2 Follow Liquid AI 5.69k Image-Text-to-Text GGUF 15 languages liquid lfm2.5 edge decision classification calibration system-one multimodal vision audio llama.cpp decision-model feature-extraction License:lfm1.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "d1 by Liquid AI — Models, Pricing & API | LLM Reference",
+      "url": "https://www.llmreference.com/model-family/d1",
+      "snippet": "First public model id d1:free is API-only (no public HF/GGUF weights in the Liquid model matrix). Peer of TypeSafe Jev as a decision model: own Liquid lab family; do not attach under system-one, jev, lfm-2, or lfm-2.5. Proprietary hosted."
+    },
+    {
+      "title": "Liquid AI Open d1: 3B Decision Model Answers in 16 ms - explainx.ai",
+      "url": "https://www.explainx.ai/blog/liquid-ai-open-d1-3b-omni-600m-open-weight-decision-models-edge-2026",
+      "snippet": "Liquid AI released open-weight d1-3B and d1-omni-600M decision models that answer in one forward pass. Benchmarks, latency and how to run them."
+    },
+    {
+      "title": "Liquid AI Releases Open-Weight Multimodal Decision Models",
+      "url": "https://www.techaimag.com/ai-news/liquid-ai-releases-open-weight-multimodal-decision-models",
+      "snippet": "Liquid AI has announced the release of two new open-weight multimodal decision models, d1-3B and d1-omni-600M, as part of its d1 decision model family. These models are designed to process both text and images, as well as text with audio, while uniquely operating without generating text output."
+    },
+    {
+      "title": "Decision Models - docs.liquid.ai",
+      "url": "https://docs.liquid.ai/lfm/models/decision-models",
+      "snippet": "Decision models are a new class of AI model purpose-built for structured decisions. Instead of generating text token by token, a decision model evaluates a situation and returns calibrated probabilities across a fixed set of outcomes in a single call with zero generated tokens. Liquid&#x27;s decision model evaluates text, images, or both. Use the same Noul, Choice, and Score questions to classify ..."
+    }
+  ]
+}

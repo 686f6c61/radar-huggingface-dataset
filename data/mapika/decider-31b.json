@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Mapika/decider-31b",
+  "slug": "mapika-decider-31b",
+  "author": "Mapika",
+  "url": "https://huggingface.co/Mapika/decider-31b",
+  "created_at": "2026-10-07T20:03:22.000Z",
+  "updated_at": "2026-10-07T22:56:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "decision-model",
+    "calibrated",
+    "structured-output",
+    "system-one",
+    "one-pass",
+    "nvfp4",
+    "text-classification",
+    "en",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20868591152,
+  "parameters_human": "20.87B",
+  "storage_bytes": 32665647434,
+  "storage_human": "32.7 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Tout le monde paie\" pour la guerre en Iran, avertit le Qatar, la ...",
+      "url": "https://fr.euronews.com/2026/10/06/tout-le-monde-paie-pour-la-guerre-en-iran-avertit-le-qatar-la-mediation-se-poursuit",
+      "snippet": "1 day ago · La guerre en Iran perturbe le commerce mondial. Les puissances régionales renforcent la défense saoudienne. Le Qatar …"
+    },
+    {
+      "title": "Le Qatar avertit que \"tout le monde paie\" la guerre en Iran, la ...",
+      "url": "https://news.cridem.org/C_Info.php?article=797155",
+      "snippet": "1 day ago · EURONEWS - La guerre en Iran perturbe le commerce mondial, les puissances régionales voulant renforcer la défense …"
+    },
+    {
+      "title": "Le Qatar avertit que \"tout le monde paie\" la guerre en Iran, la ...",
+      "url": "https://qatar.fr/international/le-qatar-avertit-que-tout-le-monde-paie-la-guerre-en-iran-la-mediation-continue/",
+      "snippet": "23 hours ago · La guerre en Iran perturbe le commerce mondial, les puissances régionales voulant renforcer la défense saoudienne. …"
+    },
+    {
+      "title": "Guerre au Moyen-Orient: le Qatar affirme que les négociations",
+      "url": "https://www.bfmtv.com/international/moyen-orient/iran/guerre-au-moyen-orient-le-qatar-affirme-que-les-negociations-entre-l-iran-et-les-etats-unis-se-poursuivent_AD-202610060593.html",
+      "snippet": "1 day ago · Le Qatar, qui joue le rôle de médiateur dans la guerre au Moyen-Orient, a affirmé ce mardi 6 octobre que les discussions …"
+    },
+    {
+      "title": "Guerre au Moyen-Orient : les négociations se poursuivent entre l'Iran ...",
+      "url": "https://www.lefigaro.fr/international/guerre-au-moyen-orient-les-negociations-se-poursuivent-entre-l-iran-et-les-etats-unis-selon-le-qatar-20261006?msockid=37b8f27114986f330e88e59a150e6e90",
+      "snippet": "1 day ago · Le Qatar, qui joue le rôle de médiateur dans la guerre au Moyen-Orient, a affirmé mardi 6 octobre que les discussions se …"
+    }
+  ]
+}

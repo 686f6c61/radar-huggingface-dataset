@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rwmorales/mixer-contrastive",
+  "slug": "rwmorales-mixer-contrastive",
+  "author": "rwmorales",
+  "url": "https://huggingface.co/rwmorales/mixer-contrastive",
+  "created_at": "2026-10-07T21:09:29.000Z",
+  "updated_at": "2026-10-07T21:09:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les sept problèmes du millénaire - maths et tiques",
+      "url": "https://www.maths-et-tiques.fr/index.php/detentes/les-sept-problemes-du-millenaire",
+      "snippet": "Des cours de maths et des activités à télécharger, des videos, des dossiers d'histoire, des curiosités sur les mathématiques, des …"
+    },
+    {
+      "title": "LES SEPT PROBLÈMES MATHÉMATIQUES DU PRIX DU …",
+      "url": "https://ummisco.pages.ird.fr/france/bacaer/millenaire.pdf",
+      "snippet": "Le 24 mai de l’an 2000 fut présentée à Paris au Collège de France une liste de sept problèmes mathématiques. Pour chaque …"
+    },
+    {
+      "title": "Les sept problèmes du millénaire - APMEP",
+      "url": "https://www.apmep.fr/IMG/pdf/Les_sept_problemes_du_millenaire.pdf",
+      "snippet": "Ce prix propose 7 problèmes tous dotés d'une récompense d'un million de dollars. Il s'inscrit dans la lignée des 30 problèmes …"
+    },
+    {
+      "title": "Problèmes du prix du millénaire — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Probl%C3%A8mes_du_prix_du_mill%C3%A9naire",
+      "snippet": "Les problèmes du prix du millénaire sont un ensemble de sept défis mathématiques réputés insurmontables, posés par l' Institut de …"
+    },
+    {
+      "title": "Problèmes du millénaire : 6 énigmes maths à 1 million $",
+      "url": "https://www.1001web.fr/problemes-millenaire-mathematiques-187132.html",
+      "snippet": "Sep 11, 2026 · Derrière leurs noms intimidants se cachent des questions parfois simples à formuler, dont la réponse bouleverserait …"
+    }
+  ]
+}

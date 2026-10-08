@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SonoJot/sonojot-punct-v1",
+  "slug": "sonojot-sonojot-punct-v1",
+  "author": "SonoJot",
+  "url": "https://huggingface.co/SonoJot/sonojot-punct-v1",
+  "created_at": "2026-10-07T20:58:29.000Z",
+  "updated_at": "2026-10-07T22:17:04.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "punctuation",
+    "punctuation-restoration",
+    "speech-recognition",
+    "asr-post-processing",
+    "dictation",
+    "token-classification",
+    "en",
+    "base_model:Horizon-Labs/punctuation-restoration-small",
+    "base_model:quantized:Horizon-Labs/punctuation-restoration-small",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 865295470,
+  "storage_human": "865 MB",
+  "base_model": "Horizon-Labs/punctuation-restoration-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SonoJot: Local Dictation App",
+      "url": "https://sonojot.com/",
+      "snippet": "SonoJot is a desktop dictation and meeting recorder. Press a key, speak, and the finished text lands where you were already typing. Speech recognition runs on your own machine."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "Latest AI Model Releases — October 2026",
+      "url": "https://aireleasetracker.com/latest",
+      "snippet": "Latest tracked: Claude Haiku 5.5 by Anthropic, October 7, 2026. See today&#x27;s recorded releases, the past seven days, and monthly archives."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "AI Agents News Brief: September 6, 2026 - Major Model Releases and ...",
+      "url": "https://aiagentsdirectory.com/news/ai-agents-news-brief-september-6-2026",
+      "snippet": "A daily brief on AI agents, covering new model releases from Anthropic, OpenAI, Meta, and Google, advancements in AI-powered software development, and comparisons of leading AI models."
+    }
+  ]
+}

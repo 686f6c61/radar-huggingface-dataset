@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sovrasov/flux3_policy_black_cubes_20k",
+  "slug": "sovrasov-flux3_policy_black_cubes_20k",
+  "author": "sovrasov",
+  "url": "https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k",
+  "created_at": "2026-10-07T21:10:20.000Z",
+  "updated_at": "2026-10-07T21:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "flux3",
+    "dataset:local/pick-black-cubes-room-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471775792,
+  "storage_human": "472 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sovrasov/act_policy_black_cubes · Hugging Face",
+      "url": "https://huggingface.co/sovrasov/act_policy_black_cubes",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot/src/lerobot/policies/flux3 at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/tree/main/src/lerobot/policies/flux3",
+      "snippet": "FLUX 3 Action is a 7B world action model. It takes camera frames, the robot&#x27;s state and a text instruction, and returns the next 32 actions, denoised together with the next 32 frames. Fine-tuned on DROID, it places first on the RoboLab-120 benchmark at 42.6% task success. The same weights fine-tune to a new robot, a simulator or a video game with a dataset module and a config. Technical Report ..."
+    },
+    {
+      "title": "sovrasov/act_policy_black_cubes · Discussions - Hugging Face",
+      "url": "https://huggingface.co/sovrasov/act_policy_black_cubes/discussions",
+      "snippet": "Instructions to use sovrasov/act_policy_black_cubes with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries LeRobot How to use sovrasov/act_policy_black_cubes with LeRobot: Notebooks Google Colab Kaggle"
+    },
+    {
+      "title": "Flux 3 — Multimodal AI by Black Forest Labs | Real World Models",
+      "url": "https://flux3.dev/",
+      "snippet": "Black Forest Labs&#x27; new multimodal foundation model jointly learns from images, videos, and audio within a unified architecture — because visual intelligence requires understanding how objects hold together, how things move, and how events sound."
+    },
+    {
+      "title": "Black Forest Labs Releases FLUX 3: A Multimodal Flow Model for Image ...",
+      "url": "https://www.marktechpost.com/2026/07/26/black-forest-labs-releases-flux-3-a-multimodal-flow-model-for-image-video-audio-and-robot-action-prediction/",
+      "snippet": "Black Forest Labs (BFL) has released FLUX 3, a multimodal foundation model that learns from images, videos and audio inside a single architecture. It is also the first FLUX model to ship video, audio and action prediction from one set of weights."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Rajeshgrgvad/efficient-attention-run3",
+  "slug": "rajeshgrgvad-efficient-attention-run3",
+  "author": "Rajeshgrgvad",
+  "url": "https://huggingface.co/Rajeshgrgvad/efficient-attention-run3",
+  "created_at": "2026-10-07T21:14:03.000Z",
+  "updated_at": "2026-10-07T21:14:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么中国大陆都把Slides叫做ppt？ - 知乎",
+      "url": "https://www.zhihu.com/question/20936342",
+      "snippet": "因为国内大家基本上都只用ppt来做slides，而 Latex 普及度并不高，所以大家都用ppt来指代slides。我在美国的学术圈里混，大家基 …"
+    },
+    {
+      "title": "Troubleshoot errors while you edit Google Docs, Sheets, Slides, Vids ...",
+      "url": "https://support.google.com/docs/answer/7505592?hl=en",
+      "snippet": "If you still have any questions, you can visit the Google Docs Editors Help Community to ask for help. To report an issue, open your …"
+    },
+    {
+      "title": "Check your spelling in Google Slides",
+      "url": "https://support.google.com/docs/answer/9764808?hl=en",
+      "snippet": "Check your spelling in Google Slides You can find and correct misspellings as you type in Google Slides. Check spelling On your …"
+    },
+    {
+      "title": "Slide是什么？和PPT有啥区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/24994569",
+      "snippet": "Aug 26, 2014 · Slide是什么？ 和PPT有啥区别？ 最近看到别人在交流时，向别人要幻灯片时，却说是要Slides，而且这个现象普遍存 …"
+    },
+    {
+      "title": "Collaborate with Gemini in Google Slides",
+      "url": "https://support.google.com/docs/answer/14355071?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "For slides: Provide more context by adding a Drive file with @, or use \"Match presentation style\" to reference another slide deck for …"
+    }
+  ]
+}

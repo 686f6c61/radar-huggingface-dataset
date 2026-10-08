@@ -5,7 +5,7 @@
   "author": "burguty",
   "url": "https://huggingface.co/burguty/dl2-hw-02",
   "created_at": "2026-10-07T16:36:15.000Z",
-  "updated_at": "2026-10-07T17:21:38.000Z",
+  "updated_at": "2026-10-07T18:24:54.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 33215625,
   "parameters_human": "33.2M",
-  "storage_bytes": 2259120192,
-  "storage_human": "2.3 GB",
+  "storage_bytes": 6113425989,
+  "storage_human": "6.1 GB",
   "base_model": "BAAI/bge-small-en-v1.5",
   "formats": [
     "safetensors"

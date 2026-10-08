@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alianassmaaa/tennis-ball-catcher",
+  "slug": "alianassmaaa-tennis-ball-catcher",
+  "author": "alianassmaaa",
+  "url": "https://huggingface.co/alianassmaaa/tennis-ball-catcher",
+  "created_at": "2026-10-07T19:52:40.000Z",
+  "updated_at": "2026-10-07T19:52:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CA933 (CCA933) Air China Flight Tracking and History - FlightAware",
+      "url": "https://www.flightaware.com/live/flight/CCA933",
+      "snippet": "Flight status, tracking, and historical data for Air China 933 (CA933/CCA933) including scheduled, estimated, and actual departure …"
+    },
+    {
+      "title": "Flight history for Air China flight CA933 - Flightradar24",
+      "url": "https://www.flightradar24.com/data/flights/ca933/",
+      "snippet": "CA933 (Air China) - Live flight status, scheduled flights, flight arrival and departure times, flight tracks and playback, flight route and …"
+    },
+    {
+      "title": "Info vols - Air China",
+      "url": "https://www.airchina.fr/FR/FR/info/flight-status/",
+      "snippet": "1.Vous tentez de vous connecter à un compte de mineur. Vous devez obtenir l'autorisation d'un tuteur, ou cette opération doit être …"
+    },
+    {
+      "title": "CA933 Flight Tracking and History - FlightAware",
+      "url": "https://www.flightaware.com/live/flight/CA933",
+      "snippet": "Flight status, tracking, and historical data for CA933 including scheduled, estimated, and actual departure and arrival times."
+    },
+    {
+      "title": "CA933 Air China Flight Status & Tracker | Beijing - Paris",
+      "url": "https://www.flightinformation.com/CA933-PEK-CDG",
+      "snippet": "Live status, history, and tracking for CA933 (Air China) from Beijing to Paris. See delays, gates, terminal history, aircraft type, and …"
+    }
+  ]
+}

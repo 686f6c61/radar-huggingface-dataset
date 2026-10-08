@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "helloimsaif/medjev-4b-lora",
+  "slug": "helloimsaif-medjev-4b-lora",
+  "author": "helloimsaif",
+  "url": "https://huggingface.co/helloimsaif/medjev-4b-lora",
+  "created_at": "2026-10-07T19:18:44.000Z",
+  "updated_at": "2026-10-07T19:18:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "medical",
+    "clinical",
+    "finance",
+    "decision-making",
+    "text-generation",
+    "en",
+    "dataset:GBaker/MedQA-USMLE-4-options-hf",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:zeroshot/twitter-financial-news-sentiment",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55884160,
+  "storage_human": "56 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'2019' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/2019",
+      "snippet": "STS broadcast by DC on Picarto from August Ninth 2019 5.1k 81% 92min - 720p STS broadcast by DC on Picarto from September …"
+    },
+    {
+      "title": "Porno 2019 Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/porno+2019",
+      "snippet": "Watch porno 2019 porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Free Porn Videos, Trending Porno Movies: XXX Videos Tube #2019",
+      "url": "https://xhamster.com/2019",
+      "snippet": "Instantly stream millions of trending sex videos for every taste. xHamster provides XXX video in the highest quality! #2019."
+    },
+    {
+      "title": "porno-2019 videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/porno-2019",
+      "snippet": "Agência de atriz pornô, Shayene Samara e Elisa Sanches See all premium porno-2019 content on XVIDEOS 1440p"
+    },
+    {
+      "title": "'porno 2019' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/porno+2019",
+      "snippet": "Terms of service - Privacy policy - Cookie preferences - Content removal - Upload Porn Videos - Advertising - More... - Privacy …"
+    }
+  ]
+}

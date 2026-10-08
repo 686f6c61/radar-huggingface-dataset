@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Webs-KoReasoner-27B-v1-GGUF",
+  "slug": "mradermacher-webs-koreasoner-27b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Webs-KoReasoner-27B-v1-GGUF",
+  "created_at": "2026-06-16T11:33:24.000Z",
+  "updated_at": "2026-10-07T23:02:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "dare-ties",
+    "korean",
+    "reasoning",
+    "qwen3_5",
+    "ko",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 204,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780453024,
+  "storage_human": "190.8 GB",
+  "base_model": "websfactory/Webs-KoReasoner-27B-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "WhatsApp | Veilig en betrouwbaar gratis privéberichten sturen en bellen",
+      "url": "https://www.whatsapp.com/?lang=nl",
+      "snippet": "Gebruik WhatsApp Messenger om in contact te blijven met vrienden en familie. WhatsApp is gratis en biedt een makkelijke, veilige …"
+    },
+    {
+      "title": "WhatsApp",
+      "url": "https://www.whatsapp.com/coronavirus/get-started?lang=es",
+      "snippet": "WhatsApp Messenger: Más de 2 mil millones de personas en más de 180 países usan WhatsApp para mantenerse en contacto con …"
+    },
+    {
+      "title": "How to manually update WhatsApp | WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/5481509731946576",
+      "snippet": "If you’ve turned auto-updates off, you can manually update to the latest version of WhatsApp. Note: When registering your phone …"
+    },
+    {
+      "title": "WhatsApp Web - Blog de WhatsApp",
+      "url": "https://blog.whatsapp.com/whats-app-web?lang=es",
+      "snippet": "Today, for the first time, millions of you will have the ability to use WhatsApp on your web browser. Our web client is simply an …"
+    }
+  ]
+}

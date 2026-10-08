@@ -5,7 +5,7 @@
   "author": "coldfusion000",
   "url": "https://huggingface.co/coldfusion000/smol-course-SmolVLM2-2.2B-Instruct-trl-sft-ChartQA",
   "created_at": "2026-10-06T22:34:13.000Z",
-  "updated_at": "2026-10-06T23:04:26.000Z",
+  "updated_at": "2026-10-07T19:32:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
   "trending_score": 0,
   "parameters": 2249353072,
   "parameters_human": "2.25B",
-  "storage_bytes": 4503978129,
+  "storage_bytes": 4524595603,
   "storage_human": "4.5 GB",
   "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
   "formats": [

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abdul7041/Summarizer",
+  "slug": "abdul7041-summarizer",
+  "author": "abdul7041",
+  "url": "https://huggingface.co/abdul7041/Summarizer",
+  "created_at": "2026-10-07T19:09:55.000Z",
+  "updated_at": "2026-10-07T19:14:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modelo GFS – MeteoPT.com",
+      "url": "https://www.meteopt.com/modelos/gfs",
+      "snippet": "Modelo global de previsão do tempo da NOAA, oferecendo previsões detalhadas de até 16 dias para parâmetros atmosféricos e …"
+    },
+    {
+      "title": "Stazione meteo integrabile con Home Assistant - MeteoNetwork",
+      "url": "https://forum.meteonetwork.it/strumenti-meteo/166989-stazione-meteo-integrabile-home-assistant.html",
+      "snippet": "Mar 8, 2019 · Re: Stazione meteo integrabile con Home Assistant Originariamente Scritto da domoworkin Ciao a tutti, come …"
+    },
+    {
+      "title": "Stazione meteo LILD AURIOL",
+      "url": "https://forum.meteonetwork.it/strumenti-meteo/123120-stazione-meteo-lild-auriol.html",
+      "snippet": "May 27, 2010 · Buongiorno, iero ho acquistato una stazione meteo presso il negozio LIDL marca AURIOL, l'ho settata come scritto …"
+    },
+    {
+      "title": "Fórum Português de Meteorologia - MeteoPT.com",
+      "url": "https://www.meteopt.com/forum/cat/seguimento-meteorologico.2/",
+      "snippet": "Jan 1, 2026 · Fórum sobre previsão meteorológica e observações em Portugal O novo portal está no ar! Novos meteogramas, …"
+    },
+    {
+      "title": "meteo.co.me - ZHMS",
+      "url": "https://www.meteo.co.me/",
+      "snippet": "21 hours ago · Sastanak upravnog odbora projekta FFGS za jugo-istočnu Evropu (Flash-flood Guidance System for SEE - Sistem …"
+    }
+  ]
+}

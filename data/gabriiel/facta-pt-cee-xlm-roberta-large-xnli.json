@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Gabriiel/facta-pt-cee-xlm-roberta-large-xnli",
+  "slug": "gabriiel-facta-pt-cee-xlm-roberta-large-xnli",
+  "author": "Gabriiel",
+  "url": "https://huggingface.co/Gabriiel/facta-pt-cee-xlm-roberta-large-xnli",
+  "created_at": "2026-10-07T20:58:00.000Z",
+  "updated_at": "2026-10-07T21:11:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "facta-pt",
+    "automated-fact-checking",
+    "european-portuguese",
+    "claim-evidence-entailment",
+    "natural-language-inference",
+    "pt",
+    "base_model:joeddav/xlm-roberta-large-xnli",
+    "base_model:finetune:joeddav/xlm-roberta-large-xnli",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 559893507,
+  "parameters_human": "559.9M",
+  "storage_bytes": 2256721111,
+  "storage_human": "2.3 GB",
+  "base_model": "joeddav/xlm-roberta-large-xnli",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FacebookAI/xlm-roberta-large · Hugging Face",
+      "url": "https://huggingface.co/FacebookAI/xlm-roberta-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "XLM-RoBERTa - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.0.0/model_doc/xlm-roberta",
+      "snippet": "XLM-RoBERTa is a large multilingual masked language model trained on 2.5TB of filtered CommonCrawl data across 100 languages. It shows that scaling the model provides strong performance gains on high-resource and low-resource languages. The model uses the RoBERTa pretraining objectives on the XLM model. You can find all the original XLM-RoBERTa checkpoints under the Facebook AI community ..."
+    },
+    {
+      "title": "xlm-roberta-large: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/xlm-roberta-large-facebookai",
+      "snippet": "xlm-roberta-large is a multilingual transformer model that learns bidirectional representations across 100 languages simultaneously. Built by FacebookAI,..."
+    },
+    {
+      "title": "AI Agents News Brief: September 6, 2026 - Major Model Releases and ...",
+      "url": "https://aiagentsdirectory.com/news/ai-agents-news-brief-september-6-2026",
+      "snippet": "A daily brief on AI agents, covering new model releases from Anthropic, OpenAI, Meta, and Google, advancements in AI-powered software development, and comparisons of leading AI models."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

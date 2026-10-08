@@ -5,7 +5,7 @@
   "author": "aeddix-labs",
   "url": "https://huggingface.co/aeddix-labs/aeddix-alpine-ocr",
   "created_at": "2026-10-06T19:09:52.000Z",
-  "updated_at": "2026-10-06T19:24:09.000Z",
+  "updated_at": "2026-10-07T18:39:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 1156026624,
   "parameters_human": "1.16B",

@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Isaacwienert/isaacbot",
+  "slug": "isaacwienert-isaacbot",
+  "author": "Isaacwienert",
+  "url": "https://huggingface.co/Isaacwienert/isaacbot",
+  "created_at": "2026-10-07T19:55:29.000Z",
+  "updated_at": "2026-10-07T20:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:KingNish/reasoning-base-20k",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889135,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

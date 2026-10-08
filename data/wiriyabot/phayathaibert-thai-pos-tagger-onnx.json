@@ -5,7 +5,7 @@
   "author": "wiriyabot",
   "url": "https://huggingface.co/wiriyabot/phayathaibert-thai-pos-tagger-onnx",
   "created_at": "2026-10-06T17:04:34.000Z",
-  "updated_at": "2026-10-06T17:35:08.000Z",
+  "updated_at": "2026-10-07T03:30:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

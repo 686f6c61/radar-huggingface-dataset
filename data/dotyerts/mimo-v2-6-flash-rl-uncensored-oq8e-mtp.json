@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "dotyerts/MiMo-V2.6-Flash-RL-UNCENSORED-oQ8e-mtp",
+  "slug": "dotyerts-mimo-v2-6-flash-rl-uncensored-oq8e-mtp",
+  "author": "dotyerts",
+  "url": "https://huggingface.co/dotyerts/MiMo-V2.6-Flash-RL-UNCENSORED-oQ8e-mtp",
+  "created_at": "2026-10-07T22:27:39.000Z",
+  "updated_at": "2026-10-07T22:52:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mimo_v2",
+    "oq",
+    "quantized",
+    "custom_code",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 309766601088,
+  "parameters_human": "309.77B",
+  "storage_bytes": 172271787602,
+  "storage_human": "172.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

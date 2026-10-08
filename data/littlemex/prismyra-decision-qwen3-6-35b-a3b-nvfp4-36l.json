@@ -5,7 +5,7 @@
   "author": "littlemex",
   "url": "https://huggingface.co/littlemex/prismyra-decision-qwen3.6-35b-a3b-nvfp4-36l",
   "created_at": "2026-10-05T16:25:06.000Z",
-  "updated_at": "2026-10-06T06:46:29.000Z",
+  "updated_at": "2026-10-08T02:16:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,12 +27,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 101,
   "trending_score": 0,
   "parameters": 3596444464,
   "parameters_human": "3.60B",
-  "storage_bytes": 21413532934,
-  "storage_human": "21.4 GB",
+  "storage_bytes": 22725437446,
+  "storage_human": "22.7 GB",
   "base_model": "Qwen/Qwen3.6-35B-A3B-FP8",
   "formats": [
     "safetensors"

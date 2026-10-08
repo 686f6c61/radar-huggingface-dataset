@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "brpe-reira/mocov3-multitask-final",
+  "slug": "brpe-reira-mocov3-multitask-final",
+  "author": "brpe-reira",
+  "url": "https://huggingface.co/brpe-reira/mocov3-multitask-final",
+  "created_at": "2026-10-07T19:38:57.000Z",
+  "updated_at": "2026-10-07T19:39:02.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MonLycee.net - Accueil - Place de services Monlycée.net",
+      "url": "https://monlycee.net/",
+      "snippet": "En se connectant à monlycee.net, la plateforme numérique dédiée à la scolarité des lycéens en Île-de-France, lycéens et …"
+    },
+    {
+      "title": "Accueil | Place de services MonLycée.net",
+      "url": "https://transfonum.monlycee.net/",
+      "snippet": "Présentation de l'offre de services proposés par la Région Île-de-France pour les lycéens, enseignants, personnels de direction et …"
+    },
+    {
+      "title": "Accueil - Place de services Monlycée.net - MonLycee.net",
+      "url": "https://www.monlycee.net/auth/openid/login",
+      "snippet": "Accueil - Place de services Monlycée.net"
+    },
+    {
+      "title": "Monlycée.net, la Place des services des lycées franciliens.",
+      "url": "https://transfonum.monlycee.net/monlycee-net-la-place-des-services-des-lycees-franciliens/",
+      "snippet": "Monlycée.net est l’interface unique d’accès aux services numériques fournis par la Région Île-de-France. Elle transforme …"
+    },
+    {
+      "title": "Monlycee.net - Site Lycées - IDF",
+      "url": "https://lycees.iledefrance.fr/monlycee.net",
+      "snippet": "Pour signaler un incident ou émettre une demande informatique, utilisez la plateforme Mon Support que vous trouverez sur …"
+    }
+  ]
+}

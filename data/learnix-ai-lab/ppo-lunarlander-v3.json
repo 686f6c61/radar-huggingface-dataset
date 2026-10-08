@@ -5,7 +5,7 @@
   "author": "Learnix-AI-Lab",
   "url": "https://huggingface.co/Learnix-AI-Lab/ppo-LunarLander-v3",
   "created_at": "2026-10-06T20:47:32.000Z",
-  "updated_at": "2026-10-06T20:48:53.000Z",
+  "updated_at": "2026-10-07T05:35:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -13,7 +13,7 @@
   "languages": [],
   "tags": [
     "stable-baselines3",
-    "LunarLander-v3",
+    "LunarLander-v2",
     "deep-reinforcement-learning",
     "reinforcement-learning",
     "model-index",

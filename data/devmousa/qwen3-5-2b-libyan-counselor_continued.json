@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "devmousa/qwen3.5-2b-libyan-counselor_continued",
+  "slug": "devmousa-qwen3-5-2b-libyan-counselor_continued",
+  "author": "devmousa",
+  "url": "https://huggingface.co/devmousa/qwen3.5-2b-libyan-counselor_continued",
+  "created_at": "2026-10-07T23:13:44.000Z",
+  "updated_at": "2026-10-07T23:14:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 2764971619,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vero Live · Official Site",
+      "url": "https://verolive.net/",
+      "snippet": "Connect the real world. Illuminate every moment. Powered by our signature gradient and dark neon aesthetic, unifying Live, Chat …"
+    },
+    {
+      "title": "Vero Live - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.fun.vero.and&hl=en-US",
+      "snippet": "Discover the world of Vero Live, where talent meets excitement in real-time! Connect with creators from across the globe, explore …"
+    },
+    {
+      "title": "Vero Live APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/vero-live/com.fun.vero.and",
+      "snippet": "Oct 1, 2026 · Discover the world of Vero Live, where talent meets excitement in real-time! Connect with creators from across the …"
+    },
+    {
+      "title": "Vero Live for Android - Download",
+      "url": "https://vero-live.en.softonic.com/android",
+      "snippet": "Oct 1, 2026 · Vero Live is a dynamic lifestyle application designed for Android users, offering an engaging platform for real-time …"
+    },
+    {
+      "title": "Vero Live for Android - Download the APK from Uptodown",
+      "url": "https://vero-live.en.uptodown.com/android",
+      "snippet": "2 days ago · Vero Live is an interactive live streaming app that brings creators and audiences together in real-time. It lets you …"
+    }
+  ]
+}

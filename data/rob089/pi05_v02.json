@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rob089/pi05_v02",
+  "slug": "rob089-pi05_v02",
+  "author": "rob089",
+  "url": "https://huggingface.co/rob089/pi05_v02",
+  "created_at": "2026-10-07T21:37:03.000Z",
+  "updated_at": "2026-10-07T21:38:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:rob089/lerobot_SO101_mirrors_ball_in_cup",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065944,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Only On 2: Teen Shares Horror Of Discovering Her Nude Photos Leaked ...",
+      "url": "https://www.cbsnews.com/losangeles/news/only-on-2-teen-shares-horror-of-discovering-her-nude-photos-leaked-online/",
+      "snippet": "Jun 13, 2015 · The teenager, who asked CBS2/KCAL9 to protect her identity, shared a letter she wrote to anyone in her situation …"
+    },
+    {
+      "title": "Shocking revelations about teens in redacted TikTok documents : NPR",
+      "url": "https://www.npr.org/2024/10/12/g-s1-28040/teens-tiktok-addiction-lawsuit-investigation-documents",
+      "snippet": "Oct 13, 2024 · A trove of secret documents show teens’ increasing reliance on TikTok and how executives were acutely aware of the …"
+    },
+    {
+      "title": "Snapchat is sued over its alleged use by child sex predators - The ...",
+      "url": "https://www.washingtonpost.com/technology/2022/05/05/snapchat-teens-nudes-lawsuit/",
+      "snippet": "May 5, 2022 · A 16-year-old girl is leading a class-action lawsuit against one of the country's most popular apps — claiming its …"
+    },
+    {
+      "title": "Site IP Adresi Sorgulama",
+      "url": "https://www.ipsorgu.com/site_ip_adresi_sorgulama.php",
+      "snippet": "Web site ip adresi öğrenmek ve site ip adresine ait bilgileri sorgulamak için web site ip sorgulama kutusunu kullanabilirsiniz."
+    },
+    {
+      "title": "Анализ сайта онлайн бесплатно: анализ ИКС и Page Rank, …",
+      "url": "https://majento.ru/index.php?page=seo-analize%2Fanalize-site",
+      "snippet": "Сервис для анализа основных параметров сайта: бесплатное определение ИКС и Page Rank, анализ robots.txt, код ответа …"
+    }
+  ]
+}

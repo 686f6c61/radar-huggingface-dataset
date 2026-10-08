@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF",
+  "slug": "isvalorum-qwen3-8-27b-val-apex-i-miniplus-v3-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-MiniPlus-V3-GGUF",
+  "created_at": "2026-10-08T00:16:08.000Z",
+  "updated_at": "2026-10-08T01:49:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "val-apex-i",
+    "qwen3.8",
+    "imatrix",
+    "reasoning",
+    "v3",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14160865248,
+  "storage_human": "14.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Élèves - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/cms/toutatice/eleves",
+      "snippet": "TOUTATICE est le portail web de l’académie de Rennes qui permet à un élève scolarisé dans un établissement de l’académie de …"
+    },
+    {
+      "title": "Toutapad",
+      "url": "https://www.toutatice.fr/pad/",
+      "snippet": "OK JavaScript license information"
+    },
+    {
+      "title": "Parents - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/cms/toutatice/parents",
+      "snippet": "Parents et représentants légaux Vos services numériques éducation dans Toutatice Bienvenue sur cette page qui vous donnera les …"
+    },
+    {
+      "title": "Erreur - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/default/accueil-anonyme",
+      "snippet": "Une erreur est survenue. Retour à la page précédente Accueil"
+    },
+    {
+      "title": "Recherche - toutatice.fr",
+      "url": "https://www.toutatice.fr/portail/pagemarker/1/commands?action=advancedSearch&action=advancedSearch&search=fout+tout",
+      "snippet": "Paroles - Les petits papiers.pdf par Toutatice | source Académie de Rennes | le Fri Sep 25 03:06:41 CEST 2020"
+    }
+  ]
+}

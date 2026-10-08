@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kmnstudio101/Muse-Glimmer-30B-Uncensored-Heretic",
+  "slug": "kmnstudio101-muse-glimmer-30b-uncensored-heretic",
+  "author": "kmnstudio101",
+  "url": "https://huggingface.co/kmnstudio101/Muse-Glimmer-30B-Uncensored-Heretic",
+  "created_at": "2026-10-07T19:16:47.000Z",
+  "updated_at": "2026-10-07T19:16:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 59581562281,
+  "storage_human": "59.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meta-muse/Muse-Glimmer-30B-uncensored · Hugging Face",
+      "url": "https://huggingface.co/Meta-muse/Muse-Glimmer-30B-uncensored",
+      "snippet": "Note on the architecture.Muse-Glimmer-30B is a dense multimodal model — 52 text decoder layers, hidden 6656, plus a separate 1.9B ViT-G/14 vision tower. Only the text pathway is abliterated; all 800 vision tensors are copied unchanged."
+    },
+    {
+      "title": "cvgro/Muse-Glimmer-30B-Uncensored-Heretic-GGUF · Hugging Face",
+      "url": "https://huggingface.co/cvgro/Muse-Glimmer-30B-Uncensored-Heretic-GGUF",
+      "snippet": "Muse Glimmer is a 30-billion-parameter causal language model with a dedicated perception encoder, distilled from Muse Spark and purpose-built for autonomous agentic tasks on consumer hardware. The model integrates multi-step reasoning, reliable tool use, multimodal understanding, and failure recovery into a single model that runs locally without requiring cloud infrastructure or network access."
+    },
+    {
+      "title": "darkc0de/Muse-Glimmer-30B-heretic - featherless.ai",
+      "url": "https://featherless.ai/models/darkc0de/Muse-Glimmer-30B-heretic",
+      "snippet": "Muse-Glimmer-30B-heretic: Decensored Agentic AI for Local Deployment darkc0de/Muse-Glimmer-30B-heretic is a 30-billion-parameter variant of Meta Superintelligence Lab&#x27;s Muse-Glimmer-30B, specifically modified using Heretic v1.4.0 to be a decensored model. This version significantly reduces refusals, showing 11/100 refusals compared to the original&#x27;s 59/100, while maintaining the core ..."
+    },
+    {
+      "title": "muse-glimmer-30b Model by Meta | NVIDIA NIM",
+      "url": "https://build.nvidia.com/meta/muse-glimmer-30b/modelcard",
+      "snippet": "Muse Glimmer 30B is a multimodal reasoning model accepting text and images, with native tool-calling and separate reasoning output."
+    },
+    {
+      "title": "Muse Glimmer | Meta",
+      "url": "https://dev.meta.ai/models/muse-glimmer",
+      "snippet": "Muse Glimmer An open model built for always-on local agents. 30B parameters, licensed under Apache 2.0 and runs on a single GPU — tuned for tool use, long tasks, and failure recovery."
+    }
+  ]
+}

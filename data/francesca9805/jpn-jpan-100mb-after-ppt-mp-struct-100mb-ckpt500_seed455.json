@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455",
+  "slug": "francesca9805-jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/jpn-jpan-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455",
+  "created_at": "2026-10-07T22:14:20.000Z",
+  "updated_at": "2026-10-08T00:16:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455",
+    "base_model:finetune:francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238755439,
+  "storage_human": "7.2 GB",
+  "base_model": "francesca9805/jpn-jpan-100mb-ppt-mp-struct-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Uncensored Roleplay Chat - SpicyChat AI",
+      "url": "https://spicychat.ai/pages/free-ai-roleplay-chat",
+      "snippet": "Explore 1M+ AI chatbots and create your own for free. No filters, no limits - dive into uncensored AI roleplay conversations that never …"
+    },
+    {
+      "title": "SpicyChat — Free Spicy AI Chat, No Filters, No Login",
+      "url": "https://spicy-chat.io/",
+      "snippet": "SpicyChat is a free spicy AI chat with no filters and no forced login. Talk to unfiltered AI companions, roleplay any scenario, and …"
+    },
+    {
+      "title": "Spicy AI Chat Without Limits | Blushly Chat",
+      "url": "https://blushly.chat/topics/spicy-chat",
+      "snippet": "Looking for a truly private spicy chat? Blushly Chat gives you unfiltered AI conversations with zero logs and no sign-up needed. Jump …"
+    },
+    {
+      "title": "Spicy Chat AI: Free, Unfiltered & No Sign Up | ChatUp AI",
+      "url": "https://aichattings.com/spicy-chat-ai/",
+      "snippet": "Spicy Chat AI: Enjoy unrestricted chat with your AI girlfriend. Use our free, unfiltered AI image generator to create NSFW spicy AI art. …"
+    },
+    {
+      "title": "Spicy Chat AI Chat — NSFW Chatbot & Explicit Roleplay AI",
+      "url": "https://spicychatai.org/chat/",
+      "snippet": "Experience the most advanced NSFW chatbot on Spicy Chat AI. Explicit adult AI chat, uncensored roleplay AI, and deep …"
+    }
+  ]
+}

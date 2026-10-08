@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Nat1an/cerulean-lab5-muon-pilot-j511584",
+  "slug": "nat1an-cerulean-lab5-muon-pilot-j511584",
+  "author": "Nat1an",
+  "url": "https://huggingface.co/Nat1an/cerulean-lab5-muon-pilot-j511584",
+  "created_at": "2026-10-07T19:10:27.000Z",
+  "updated_at": "2026-10-07T19:20:31.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "lab5",
+    "muon",
+    "adamw",
+    "from-scratch",
+    "dataset:allenai/dolma3_mix-150B-1025",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 4960484144,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cerulean-lab4-u5-53a81c9b API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Nat1an/cerulean-lab4-u5-53a81c9b",
+      "snippet": "Deploy cerulean-lab4-u5-53a81c9b with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Muon: An optimizer for hidden layers in neural networks",
+      "url": "https://kellerjordan.github.io/posts/muon/",
+      "snippet": "Muon is an optimizer for the hidden layers in neural networks. It is used in the current training speed records for both NanoGPT and CIFAR-10 speedrunning. Many empirical results using Muon have already been posted, so this writeup will focus mainly on Muon&#x27;s design. First we will define Muon and provide an overview of the empirical results it has achieved so far. Then we will discuss its ..."
+    },
+    {
+      "title": "Muon is Scalable for LLM Training | AI Research Paper Details",
+      "url": "https://www.aimodels.fyi/papers/arxiv/muon-is-scalable-llm-training",
+      "snippet": "Conclusion Muon represents a significant advance in large-scale model training efficiency. The demonstrated ability to scale effectively across thousands of processors while maintaining performance could accelerate the development of larger, more capable AI models."
+    },
+    {
+      "title": "Nat1an/cerulean-lab4-u22-e6bb8512 at main - Hugging Face",
+      "url": "https://huggingface.co/Nat1an/cerulean-lab4-u22-e6bb8512/tree/main",
+      "snippet": "Nat1an / cerulean-lab4-u22-e6bb8512 Like 0 Text Generation Transformers Safetensors gpt2 text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Stanford University-developed AI model opens new horizons for cell ...",
+      "url": "https://med.stanford.edu/news/all-news/2026/09/ai-model-cell-biology.html",
+      "snippet": "Margarita Gallardo Artificial Intelligence (AI) September 14, 2026 Stanford University-developed AI model opens new horizons for cell biology By Helen Fields An artificial intelligence cell model, trained on more than 100 million cells from a dozen species, will make it easier to compare cells between species."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "m-a-d-i/afroxlmr-base-wolof",
+  "slug": "m-a-d-i-afroxlmr-base-wolof",
+  "author": "m-a-d-i",
+  "url": "https://huggingface.co/m-a-d-i/afroxlmr-base-wolof",
+  "created_at": "2026-10-07T19:47:47.000Z",
+  "updated_at": "2026-10-07T20:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": null,
+  "languages": [
+    "wo"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "wolof",
+    "masked-language-modeling",
+    "african-languages",
+    "fill-mask",
+    "wo",
+    "arxiv:1911.02116",
+    "arxiv:2204.06487",
+    "arxiv:2210.12391",
+    "arxiv:2309.07445",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278295186,
+  "parameters_human": "278.3M",
+  "storage_bytes": 1130287822,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M6 Replay: émissions et séries en replay et en streaming sur M6+",
+      "url": "https://www.m6.fr/m6",
+      "snippet": "Regardez vos émissions et séries préférées en replay ou en direct sur M6+."
+    },
+    {
+      "title": "M Radio - Numéro 1 sur la chanson française - Le site officiel",
+      "url": "https://mradio.fr/",
+      "snippet": "Écoutez M Radio, la radio numéro 1 sur la chanson française. Retrouvez vos artistes préférés, les dernières nouveautés et toutes les …"
+    },
+    {
+      "title": "Facebook - Messenger",
+      "url": "https://m.me/@",
+      "snippet": "Sign Up Log In Messenger Facebook Lite Video Places Games Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta …"
+    },
+    {
+      "title": "Écouter M Radio en direct et gratuit",
+      "url": "https://www.radio-en-ligne.fr/mfm-radio",
+      "snippet": "Écoutez M Radio en direct et gratuit sur l'internet. Les plus grandes radios en ligne de France dans www.radio-en-ligne.fr."
+    },
+    {
+      "title": "M Radio: Chansons Françaises, Variétés et Succès Direct",
+      "url": "https://www.radio.fr/s/mradiofr",
+      "snippet": "Refrains populaires de la variété francophone et pépites de la scène française embellissent votre journée. Écoutez le meilleur du son."
+    }
+  ]
+}

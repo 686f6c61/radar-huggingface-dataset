@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hhjoshua186389/perceiver-contrastive-run1-2023",
+  "slug": "hhjoshua186389-perceiver-contrastive-run1-2023",
+  "author": "hhjoshua186389",
+  "url": "https://huggingface.co/hhjoshua186389/perceiver-contrastive-run1-2023",
+  "created_at": "2026-10-07T21:29:42.000Z",
+  "updated_at": "2026-10-07T21:29:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TurboTax® Login",
+      "url": "https://turbotax.intuit.com/sign-in/",
+      "snippet": "Sign in to your TurboTax account to start, continue, or amend a return, or check your e-file and refund status."
+    },
+    {
+      "title": "TurboTax® Login - Sign in to Get Started on Your Tax Return",
+      "url": "https://myturbotax.intuit.com/",
+      "snippet": "Log in to your TurboTax account to start, continue, or amend a tax return, get a copy of a past tax return, or check the e-file and tax …"
+    },
+    {
+      "title": "TurboTax® Official Site: File Taxes Online, Tax Filing Made Easy",
+      "url": "https://turbotax.intuit.com/",
+      "snippet": "Prepare and file your taxes with confidence through TurboTax. Have an expert do your taxes or do them yourself. 100% accurate, …"
+    },
+    {
+      "title": "Intuit Accounts - Sign In",
+      "url": "https://accounts-tax.intuit.com/app/sign-in?app_group=TurboTaxDesktop",
+      "snippet": "Intuit, QuickBooks, QB, TurboTax, ProConnect, Credit Karma, and Mailchimp are registered trademarks of Intuit Inc. Terms and …"
+    },
+    {
+      "title": "Sign in to Access Your Intuit Products Account | Intuit",
+      "url": "https://www.intuit.com/sign-in/",
+      "snippet": "Log in or sign up to access and use Intuit products including TurboTax, Credit Karma, QuickBooks, Mailchimp, and professional …"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "malinali-app/traduction-en-wolof",
+  "slug": "malinali-app-traduction-en-wolof",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/traduction-en-wolof",
+  "created_at": "2026-10-07T19:55:47.000Z",
+  "updated_at": "2026-10-07T19:57:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "wo"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "candle",
+    "english",
+    "wolof",
+    "malinali",
+    "en",
+    "wo",
+    "base_model:Helsinki-NLP/opus-mt-en-mul",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-mul",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77026926,
+  "parameters_human": "77.0M",
+  "storage_bytes": 308136760,
+  "storage_human": "308 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-mul",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Translation",
+      "dataset": "English-Wolof Custom Dataset",
+      "metric": "BLEU",
+      "value": 76.12
+    }
+  ],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=1845e3dfedd8663e217df434ec5d67bc",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com | Offizielle Seite | Die besten Hotels, Flüge, Mietwagen ...",
+      "url": "https://www.booking.com/index.de.html?msockid=1845e3dfedd8663e217df434ec5d67bc",
+      "snippet": "Entdecken Sie die Welt mit Booking.com. Große Ersparnisse bei Ferienhäusern, Hotels, Flügen, Mietwagen, Taxis und Attraktionen …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Annuler la réservation d’un client | Booking.com for Partners",
+      "url": "https://partner.booking.com/fr/aide/r%C3%A9servations/gestion/g%C3%A9rer-les-annulations-de-r%C3%A9servation",
+      "snippet": "Jul 17, 2026 · Instructions pas à pas pour les hébergements partenaires en cas de demande d’annulation d’une réservation par un …"
+    },
+    {
+      "title": "Eine Beschwerde einreichen oder ein technisches Problem melden",
+      "url": "https://partner.booking.com/de/hilfe/support-kontakt/kontakt/eine-beschwerde-einreichen-oder-ein-technisches-problem-melden",
+      "snippet": "Aug 3, 2026 · Wenn Sie ein Problem mit unserer Plattform oder unseren Dienstleistungen haben, können Sie eine Beschwerde …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ade-leke/embodied-ai-small44",
+  "slug": "ade-leke-embodied-ai-small44",
+  "author": "ade-leke",
+  "url": "https://huggingface.co/ade-leke/embodied-ai-small44",
+  "created_at": "2026-10-07T21:24:11.000Z",
+  "updated_at": "2026-10-07T21:24:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Consulter son emploi du temps en ligne - UPEC",
+      "url": "https://www.u-pec.fr/fr/etudiant-e/services-numeriques/consulter-son-emploi-du-temps-en-ligne",
+      "snippet": "Le compte numérique étudiant UPEC vous permet d'accéder à votre emploi du temps en ligne. Découvrez comment y accéder en …"
+    },
+    {
+      "title": "Adé (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ad%C3%A9_(chanteuse)",
+      "snippet": "Adélaïde Chabannes de Balsac, dite Adé, née le 20 avril 1995 à Paris, est une auteure-compositrice-interprète et musicienne …"
+    },
+    {
+      "title": "Programmes d’installation d’Adobe Digital Editions 4.5.12",
+      "url": "https://www.adobe.com/fr/solutions/ebook/digital-editions/download.html?msockid=1ef6f6a5fee6652d3ca4e14effb864d6",
+      "snippet": "May 4, 2012 · Exécution automatique des livres sur tous les appareils : avec ADE 4.5.12, un livre exécuté par un client ou une cliente …"
+    },
+    {
+      "title": "Adé - Tout savoir (clip officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=zani6VzfYPU",
+      "snippet": "Aussi en tournée dans toute la France : https://beacons.ai/adetour Rejoignez Adé : Youtube : / @adeofficiel Instagram : / adechabb …"
+    },
+    {
+      "title": "Amsterdam Dance Event",
+      "url": "https://www.amsterdam-dance-event.nl/en/",
+      "snippet": "Group or company tickets Get in touch with us to get a personal Pro Pass discount offer if you're attending ADE Pro with your …"
+    }
+  ]
+}

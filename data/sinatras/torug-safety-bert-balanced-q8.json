@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "sinatras/torug-safety-bert-balanced-q8",
+  "slug": "sinatras-torug-safety-bert-balanced-q8",
+  "author": "sinatras",
+  "url": "https://huggingface.co/sinatras/torug-safety-bert-balanced-q8",
+  "created_at": "2026-10-08T00:05:22.000Z",
+  "updated_at": "2026-10-08T00:07:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "text-classification",
+    "safety",
+    "tr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111846943,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

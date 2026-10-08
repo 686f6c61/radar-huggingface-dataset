@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/siglip2-so400m-patch16-384",
+  "slug": "collectionstudio-siglip2-so400m-patch16-384",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/siglip2-so400m-patch16-384",
+  "created_at": "2026-10-07T19:18:20.000Z",
+  "updated_at": "2026-10-07T19:18:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "siglip",
+    "vision",
+    "zero-shot-image-classification",
+    "arxiv:2502.14786",
+    "arxiv:2303.15343",
+    "arxiv:2209.06794",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1136039602,
+  "parameters_human": "1.14B",
+  "storage_bytes": 4582871530,
+  "storage_human": "4.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nigerian Herbalist and Influencer, Sisi Alagbo’s Leaked Sex Tape Has ...",
+      "url": "https://www.thecityceleb.com/blog/nigerian-herbalist-and-influencer-sisi-alagbos-leaked-sex-tape-has-become-public/",
+      "snippet": "Apr 29, 2026 · Mr. Adesola, a licensed civil engineer who has appeared in promotional videos for his wife’s herbal business, offered …"
+    },
+    {
+      "title": "Influencer Eniola Sisialagbo tenders public apology as her private ...",
+      "url": "https://www.intelregion.com/entertainment/influencer-eniola-sisialagbo-reacts-as-her-private-bedroom-tape-leaks",
+      "snippet": "Apr 29, 2026 · Popular herbalist and social media influencer Eniola Sisialagbo has issued a public apology following the leak of a …"
+    },
+    {
+      "title": "Sisi Alagbo Threesome Video Leaked – NaijaTape™",
+      "url": "https://www.naijatape.com/2026/04/29/sisi-alagbo-threesome-video-leaked/",
+      "snippet": "Apr 29, 2026 · 🔥HOT DOWNLOAD🔥 https://cdn.naijatape.com/wp-content/uploads/2026/04/Sisi-Alagbo-Threesome-Video-Leaked.mp4"
+    },
+    {
+      "title": "Eniola Sisi Alagbo sex tape leak: husband apologises publicly",
+      "url": "https://mediatalkafrica.com/274675/eniola-sisi-alagbo-sex-tape-leak-husband-apologises-publicly/",
+      "snippet": "Apr 30, 2026 · Eniola Fagbemi, the popular Nigerian herbalist known as “Sisi Alagbo,” and her husband, Adesola Akeem, have …"
+    },
+    {
+      "title": "Leaked sex tape: Popular Facebook vendor, Sisi Alagbo, breaks silence",
+      "url": "https://metrostarng.com/leaked-sex-tape-popular/",
+      "snippet": "May 1, 2026 · Popular Facebook herbal vendor and social media personality, Eniola Sisi Alagbo, has apologised after a purported …"
+    }
+  ]
+}

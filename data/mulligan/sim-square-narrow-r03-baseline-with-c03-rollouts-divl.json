@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl",
+  "slug": "mulligan-sim-square-narrow-r03-baseline-with-c03-rollouts-divl",
+  "author": "mulligan",
+  "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-baseline-with-c03-rollouts-divl",
+  "created_at": "2026-09-29T02:13:02.000Z",
+  "updated_at": "2026-10-07T21:24:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "mulligan",
+    "sim-square-narrow",
+    "divl-agent",
+    "dataset:mulligan/sim-square-narrow-c00-teleop-baseline",
+    "dataset:mulligan/sim-square-narrow-c01-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c01-dagger-baseline",
+    "dataset:mulligan/sim-square-narrow-c02-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c02-dagger-baseline",
+    "dataset:mulligan/sim-square-narrow-c03-baseline-policy-rollouts",
+    "dataset:mulligan/sim-square-narrow-c03-dagger-baseline",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1447881655,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mulligan/sim-square-narrow-c03-mulligan-policy-rollouts · Datasets at ...",
+      "url": "https://huggingface.co/datasets/mulligan/sim-square-narrow-c03-mulligan-policy-rollouts/viewer",
+      "snippet": "Duplicated from mulligan / sim-square-narrow-c03-mulligan-policy-rollouts Like 0 Follow Mulligan 1 Dataset card Data Studio FilesFiles and versions xet Community Subset (1) default·18.4k rows default (18.4k rows) Split (1) train·18.4k rows train (18.4k rows) Search is not available for this dataset SQL Console"
+    },
+    {
+      "title": "mulligan/sim-square-narrow-r03-mulligan-idql · Hugging Face",
+      "url": "https://huggingface.co/mulligan/sim-square-narrow-r03-mulligan-idql",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "sim-square-narrow-c03-baseline-policy-rollouts - Physical AI Dataset ...",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-baseline-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan project for the sim-square-narrow task, containing 100 episodes of baseline uniform policy executions in simulation."
+    },
+    {
+      "title": "sim-square-narrow-c03-mulligan-policy-rollouts - Physical AI Dataset ...",
+      "url": "https://claru.ai/datasets/mulligan-sim-square-narrow-c03-mulligan-policy-rollouts",
+      "snippet": "Policy rollout dataset from the Mulligan project for a simulated square-narrow manipulation task. Contains 100 episodes of state-only observations without camera recordings."
+    },
+    {
+      "title": "OpenAI Releases 722 Math Manuscripts From an Unreleased AI Model",
+      "url": "https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/",
+      "snippet": "In a research post published October 6, 2026, OpenAI said it is releasing a broad range of new mathematical results produced by an unreleased internal frontier model, publishing 722 manuscripts organized into 372 familie..."
+    }
+  ]
+}
