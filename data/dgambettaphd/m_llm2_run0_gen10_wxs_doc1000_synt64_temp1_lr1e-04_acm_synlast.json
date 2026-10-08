@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp1_lr1e-04_acm_SYNLAST",
+  "slug": "dgambettaphd-m_llm2_run0_gen10_wxs_doc1000_synt64_temp1_lr1e-04_acm_synlast",
+  "author": "dgambettaphd",
+  "url": "https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_temp1_lr1e-04_acm_SYNLAST",
+  "created_at": "2026-10-08T18:31:29.000Z",
+  "updated_at": "2026-10-08T18:31:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160467603,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST ...",
+      "url": "https://huggingface.co/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST",
+      "snippet": "dgambettaphd / M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST like 0 Text Generation Transformers Safetensors llama unsloth text-generation-inference 4-bit precision bitsandbytes arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "M_llm2_run0_gen10_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP",
+      "url": "https://huggingface.co/dgambettaphd/M_llm2_run0_gen10_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "M_llm2_run2_gen0_WXS_doc1000_synt64_lr1e-04_acm_MPP",
+      "url": "https://friendli.ai/models/dgambettaphd/M_llm2_run2_gen0_WXS_doc1000_synt64_lr1e-04_acm_MPP",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    },
+    {
+      "title": "dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP",
+      "url": "https://featherless.ai/models/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP",
+      "snippet": "The dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP is a 7 billion parameter language model with a 4096 token context length. This model has been pushed to the Hugging Face Hub as a 🤗 transformers model, with its model card automatically generated."
+    },
+    {
+      "title": "M_llm2_gen0_run0_WXS_doc1000_synt64_tot128_SYNLAST",
+      "url": "https://friendli.ai/models/dgambettaphd/M_llm2_gen0_run0_WXS_doc1000_synt64_tot128_SYNLAST",
+      "snippet": "Deploy dgambettaphd/M_llm2_gen0_run0_WXS_doc1000_synt64_tot128_SYNLAST with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and ..."
+    }
+  ]
+}

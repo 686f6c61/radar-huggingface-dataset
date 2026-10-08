@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thongbuind/SAI-for-VinFast-FP16_375M",
+  "slug": "thongbuind-sai-for-vinfast-fp16_375m",
+  "author": "thongbuind",
+  "url": "https://huggingface.co/thongbuind/SAI-for-VinFast-FP16_375M",
+  "created_at": "2026-10-08T17:51:29.000Z",
+  "updated_at": "2026-10-08T18:01:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "sai",
+    "vinfast",
+    "text-generation",
+    "vi",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 375194624,
+  "parameters_human": "375.2M",
+  "storage_bytes": 750730560,
+  "storage_human": "751 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "استمتِع بلعب ألعاب مجانية أون لاين على منصّة Roblox - اشترِك الآن للعب!",
+      "url": "https://www.roblox.com/ar",
+      "snippet": "©2026 شركة Roblox. Roblox، شعار Roblox و تخيل الطاقة هما من بين علاماتنا التجارية المسجلة وغير المسجلة في الولايات المتحدة وبلدان أخرى."
+    },
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "What is Roblox | Roblox",
+      "url": "https://about.roblox.com/what-is-roblox",
+      "snippet": "Roblox is a global platform where millions of users build, play and share immersive 3D games and experiences. Learn about …"
+    },
+    {
+      "title": "Overview | Documentation - Roblox Creator Hub",
+      "url": "https://create.roblox.com/docs",
+      "snippet": "Documentation and resources for all creators."
+    }
+  ]
+}

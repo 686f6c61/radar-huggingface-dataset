@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10",
+  "slug": "donghyun1228-pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw10",
+  "created_at": "2026-10-08T15:15:35.000Z",
+  "updated_at": "2026-10-08T15:19:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "openpi",
+    "pi05",
+    "inverse-dynamics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12439255998,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Finite Element Analysis (FEA)? - Ansys",
+      "url": "https://ansys.synopsys.com/simulation-topics/what-is-finite-element-analysis",
+      "snippet": "Learn about finite element analysis (FEA), how finite element modeling works, and how it’s used in engineering applications."
+    },
+    {
+      "title": "Ansys Mechanical | Structural FEA Analysis Software",
+      "url": "https://ansys.synopsys.com/products/structures/ansys-mechanical",
+      "snippet": "Ansys Mechanical is a finite element analysis (FEA) software used to perform structural analysis using advanced solver options, …"
+    },
+    {
+      "title": "FEA — Analysis of the Finite Element Method | Ansys Courses",
+      "url": "https://innovationspace.ansys.com/product/fea-analysis-of-the-finite-element-method/",
+      "snippet": "This course discusses why and how finite element analysis (FEA) works and the special properties of FEA. The norms that represent …"
+    },
+    {
+      "title": "Chapter 1: Getting Started - Ansys",
+      "url": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v242/en/ans_bas/Hlp_G_BAS1.html",
+      "snippet": "The program has many finite-element analysis capabilities, ranging from a simple, linear, static analysis to a complex, nonlinear, …"
+    },
+    {
+      "title": "7.1. Finite Elements - ansyshelp.ansys.com",
+      "url": "https://ansyshelp.ansys.com/public/Views/Secured/corp/v252/en/motion_theory/motion_theory_finite_elements.html",
+      "snippet": "This chapter begins with an overview of the supported elements, such as beams, shells, and solids, and then details specific …"
+    }
+  ]
+}

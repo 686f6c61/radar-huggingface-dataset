@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tatjr13/tpn005-d2-e2d",
+  "slug": "tatjr13-tpn005-d2-e2d",
+  "author": "tatjr13",
+  "url": "https://huggingface.co/tatjr13/tpn005-d2-e2d",
+  "created_at": "2026-10-08T01:36:35.000Z",
+  "updated_at": "2026-10-08T01:36:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8489553920,
+  "parameters_human": "8.49B",
+  "storage_bytes": 7171968896,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TwitPic",
+      "url": "https://twitpic.com/",
+      "snippet": "Dear Twitpic Community - thank you for all the wonderful photos you have taken over the years. We have now placed Twitpic in an …"
+    },
+    {
+      "title": "Juniper Ren - Listal",
+      "url": "https://www.listal.com/juniper-ren",
+      "snippet": "Jan 30, 2004 · Separate tags with commas, spaces are allowed. Use tags to describe a product e.g. for a movie Themes heist, …"
+    },
+    {
+      "title": "ExCoGi Girls Characters List - FamousFix",
+      "url": "https://www.famousfix.com/topic/excogi-girls/characters",
+      "snippet": "List of characters from the tv show ExCoGi Girls. The list contains the name of the actor who plays the character and a photo of the …"
+    },
+    {
+      "title": "citylex-2026-06-15_morphology_segmention.tsv - GitHub",
+      "url": "https://github.com/connoryang331/morphoneme/blob/main/data/citylex-2026-06-15_morphology_segmention.tsv",
+      "snippet": "Jun 15, 2026 · Search English words by morphological annotation columns - connoryang331/morphoneme"
+    },
+    {
+      "title": "\"ExCoGi Girls\" Sugar & Spice & Everything Nice (Fernsehepisode …",
+      "url": "https://www.imdb.com/de/title/tt33606472/fullcredits/",
+      "snippet": "\"ExCoGi Girls\" Sugar & Spice & Everything Nice (Fernsehepisode 2024) - Darsteller und Crew, darunter Schauspieler, …"
+    }
+  ]
+}

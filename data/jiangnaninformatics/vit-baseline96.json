@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jiangnaninformatics/vit-baseline96",
+  "slug": "jiangnaninformatics-vit-baseline96",
+  "author": "jiangnaninformatics",
+  "url": "https://huggingface.co/jiangnaninformatics/vit-baseline96",
+  "created_at": "2026-10-08T17:43:44.000Z",
+  "updated_at": "2026-10-08T17:43:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/d",
+      "snippet": "Il est temps de passer à l’action avec Yahoo Mail. Pour commencer, il vous suffit d’ajouter votre compte Gmail, Outlook, AOL ou …"
+    },
+    {
+      "title": "Se connecter | Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/%E2%80%8E",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "Yahoo Mail Planner: Turn Emails into Tasks & Events",
+      "url": "https://fr.mail.yahoo.com/overview/plan-smarter",
+      "snippet": "Stay organized with Yahoo Mail Planner. Automatically turn emails into tasks and events—all in one simple, built-in view."
+    },
+    {
+      "title": "Yahoo Mail Blog – Tips, updates & smart ways to manage your inbox",
+      "url": "https://fr.mail.yahoo.com/overview/blog",
+      "snippet": "Catch up with the latest from Yahoo Mail. Explore helpful tips, product updates, and smart ways to organize your inbox, save time, …"
+    }
+  ]
+}

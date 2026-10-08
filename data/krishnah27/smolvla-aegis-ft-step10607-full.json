@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "krishnah27/smolvla-aegis-ft-step10607-full",
+  "slug": "krishnah27-smolvla-aegis-ft-step10607-full",
+  "author": "krishnah27",
+  "url": "https://huggingface.co/krishnah27/smolvla-aegis-ft-step10607-full",
+  "created_at": "2026-10-08T17:20:25.000Z",
+  "updated_at": "2026-10-08T17:20:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906712520,
+  "storage_human": "907 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "krishnah27/smolvla-aegis-ft-step10607 · Hugging Face",
+      "url": "https://huggingface.co/krishnah27/smolvla-aegis-ft-step10607",
+      "snippet": "Instructions to use krishnah27/smolvla-aegis-ft-step10607 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use krishnah27/smolvla-aegis-ft-step10607 with PEFT:"
+    },
+    {
+      "title": "krishnah27/smolvla-aegis-ft · Hugging Face",
+      "url": "https://huggingface.co/krishnah27/smolvla-aegis-ft",
+      "snippet": "krishnah27/smolvla-aegis-ft AEGIS SmolVLA-500M burst fine-tune (LoRA r=16 on VLM, full flow expert)."
+    },
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    },
+    {
+      "title": "Anatomy of VLA: Inside SmolVLA - Medium",
+      "url": "https://medium.com/@ahabb/anatomy-of-vla-inside-smolvla-424062c65aa4",
+      "snippet": "Anatomy of VLA: Inside SmolVLA Introduction SmolVLA is a highly efficient, open-source Vision-Language-Action (VLA) foundation model developed by Hugging Face that packs advanced robotic control ..."
+    },
+    {
+      "title": "SmolVLA · FastFlowLM",
+      "url": "https://fastflowlm.com/docs/models/smolvla/",
+      "snippet": "SmolVLA is a robotics policy model that maps camera images and language instructions directly to robot actions — it does not run in FLM&#x27;s standard CLI or Server chat modes."
+    }
+  ]
+}

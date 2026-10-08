@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jerry-vo/mobilevit-checkpoint-2023",
+  "slug": "jerry-vo-mobilevit-checkpoint-2023",
+  "author": "jerry-vo",
+  "url": "https://huggingface.co/jerry-vo/mobilevit-checkpoint-2023",
+  "created_at": "2026-10-08T16:57:44.000Z",
+  "updated_at": "2026-10-08T16:57:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tom et Jerry en Français | Compilation Classique Dessins Animés",
+      "url": "https://www.youtube.com/watch?v=eDMjtPqdSBc",
+      "snippet": "Apr 5, 2019 · Retrouve Tom et Jerry alors qu'ils se poursuivent, évite Spike, retrouve des amis comme Little Quackers and Butch le …"
+    },
+    {
+      "title": "Jerry la souris — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jerry_la_souris",
+      "snippet": "Jerry la souris (Jerry Mouse) est un personnage fictif appartenant à la série d'animation américaine Tom et Jerry 3, et l'un des deux …"
+    },
+    {
+      "title": "Tom and Jerry | Mega Compilation | Vol. 1 | Warner Classics",
+      "url": "https://www.youtube.com/watch?v=j-88jrkyszQ",
+      "snippet": "May 4, 2025 · Watch over 45 minutes of Tom and Jerry's funniest moments from classic episodes! Featuring guests like Jerry's …"
+    },
+    {
+      "title": "Tom et Jerry — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tom_et_Jerry",
+      "snippet": "La série est célèbre pour l'utilisation de gags parmi les plus destructifs et violents jamais utilisés dans un dessin animé : Jerry …"
+    },
+    {
+      "title": "Jerry Mouse - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jerry_Mouse",
+      "snippet": "Jerry has been variously credited as Gerald \"Jerry\" Mouse in the video game Multiversus, [1] and Jerome A. Mouse in the credits to …"
+    }
+  ]
+}

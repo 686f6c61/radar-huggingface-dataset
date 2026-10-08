@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Adamix3003/beans-deit-tiny",
+  "slug": "adamix3003-beans-deit-tiny",
+  "author": "Adamix3003",
+  "url": "https://huggingface.co/Adamix3003/beans-deit-tiny",
+  "created_at": "2026-10-08T16:33:53.000Z",
+  "updated_at": "2026-10-08T16:34:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:facebook/deit-tiny-patch16-224",
+    "base_model:finetune:facebook/deit-tiny-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5524995,
+  "parameters_human": "5.5M",
+  "storage_bytes": 22127957,
+  "storage_human": "22 MB",
+  "base_model": "facebook/deit-tiny-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thomann",
+      "url": "https://www.thomannmusic.com/",
+      "snippet": "Buy your new musical instrument and accessories online from Europe's largest music retailer. Top quality and variety at Thomann."
+    },
+    {
+      "title": "Acheter des instruments de musique en ligne chez le leader du …",
+      "url": "https://www.thomann.fr/",
+      "snippet": "Achetez votre nouvel instrument et accessoires en ligne dans le plus grand magasin de musique d'Europe. Qualité et sélection …"
+    },
+    {
+      "title": "Bienvenue chez Thomann",
+      "url": "https://www.thomann.fr/index.....html",
+      "snippet": "Achetez votre nouvel instrument et accessoires en ligne dans le plus grand magasin de musique d'Europe. Qualité et sélection …"
+    },
+    {
+      "title": "Buy musical instruments online from the market leader – Thomann UK",
+      "url": "https://www.thomann.co.uk/",
+      "snippet": "Buy your new musical instrument and accessories online from Europe's largest music retailer. Top quality and variety at Thomann."
+    },
+    {
+      "title": "Musikinstrumente online kaufen beim Marktführer - Thomann",
+      "url": "https://www.thomann.de/de/index.html",
+      "snippet": "Kaufe dein neues Musikinstrument und Zubehör online bei Europas größtem Musikhändler. Top-Qualität und Auswahl bei Thomann."
+    }
+  ]
+}

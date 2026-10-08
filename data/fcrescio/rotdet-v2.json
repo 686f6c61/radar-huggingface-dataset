@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fcrescio/rotdet-v2",
+  "slug": "fcrescio-rotdet-v2",
+  "author": "fcrescio",
+  "url": "https://huggingface.co/fcrescio/rotdet-v2",
+  "created_at": "2026-10-08T18:22:37.000Z",
+  "updated_at": "2026-10-08T18:35:00.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "document-orientation",
+    "image-classification",
+    "c4-equivariance",
+    "rotdet",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3121800,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "README.md · fcrescio/rotdet at main - Hugging Face",
+      "url": "https://huggingface.co/fcrescio/rotdet/blob/main/README.md",
+      "snippet": "The model performs well in scenarios where images need to be automatically detected for correct orientation. However, the performance can vary based on the image quality, input resolution, and types of rotations present in the dataset."
+    },
+    {
+      "title": "GitHub - fcrescio/rotdet: document rotation detector",
+      "url": "https://github.com/fcrescio/rotdet/tree/main",
+      "snippet": "document rotation detector. Contribute to fcrescio/rotdet development by creating an account on GitHub."
+    },
+    {
+      "title": "fcrescio/rotdet at main - Hugging Face",
+      "url": "https://huggingface.co/fcrescio/rotdet/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fcrescio · GitHub",
+      "url": "https://github.com/fcrescio",
+      "snippet": "fcrescio has 29 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Directory: 644 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 644 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    }
+  ]
+}

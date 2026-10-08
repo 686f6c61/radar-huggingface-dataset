@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RepublicOfKorokke/d1-3B-oQ8e-fp16",
+  "slug": "republicofkorokke-d1-3b-oq8e-fp16",
+  "author": "RepublicOfKorokke",
+  "url": "https://huggingface.co/RepublicOfKorokke/d1-3B-oQ8e-fp16",
+  "created_at": "2026-10-08T01:18:34.000Z",
+  "updated_at": "2026-10-08T01:41:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_vl",
+    "oq",
+    "quantized",
+    "custom_code",
+    "base_model:LiquidAI/d1-3B",
+    "base_model:quantized:LiquidAI/d1-3B",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 3123483888,
+  "parameters_human": "3.12B",
+  "storage_bytes": 4589196171,
+  "storage_human": "4.6 GB",
+  "base_model": "LiquidAI/d1-3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gîte de montagne mme giroday situé à marla | Office de Tourisme de l ...",
+      "url": "https://www.ouest-lareunion.com/gite-marla/gite-de-mme-giroday",
+      "snippet": "Gite de mme giroday est situe a marla dans le cirque de mafate. il propose 2 dortoirs de 12 personnes et un de 8 personnes"
+    },
+    {
+      "title": "Gîte parfait - La Miellerie de Marla - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/ShowUserReviews-g3849733-d3337668-r671602110-La_Miellerie_de_Marla-Mafate_Arrondissement_of_Saint_Pierre.html",
+      "snippet": "Merci mais nous étions au gîte Giroday, très bien reçu. Situation et paysages extraordinaires. Mme Giroday est très acceuillante. Si …"
+    },
+    {
+      "title": "Gîte Giroday (Saint-paul) | Comité Réunionnais du Tourisme",
+      "url": "https://www.reunion.fr/offres/gite-giroday-saint-paul-fr-558915/",
+      "snippet": "Gîte très agréable ! en fait il s'agit de plusieurs dortoirs côte à côte avec petite terrasse et un bloc sanitaire bien tenu. La maison de …"
+    },
+    {
+      "title": "Tripadvisor : plus d'un milliard d'avis et de contributions sur les ...",
+      "url": "https://www.tripadvisor.fr/",
+      "snippet": "Préparez votre prochain voyage, lisez des avis et obtenez des conseils de voyage de notre communauté sur les hébergements et …"
+    },
+    {
+      "title": "Gîte Giroday à Marla | Hébergement Cirque de Mafate - La Réunion",
+      "url": "https://www.cirquedemafate.re/fr/hebergements/gite-giroday",
+      "snippet": "Découvrez Gîte Giroday à Marla dans le Cirque de Mafate à La Réunion : capacité, tarifs, demi-pension, équipements et réservation."
+    }
+  ]
+}

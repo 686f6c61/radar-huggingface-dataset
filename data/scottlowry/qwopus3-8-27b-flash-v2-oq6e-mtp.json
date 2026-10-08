@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwopus3.8-27B-Flash-V2-oQ6e-mtp",
+  "slug": "scottlowry-qwopus3-8-27b-flash-v2-oq6e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ6e-mtp",
+  "created_at": "2026-10-08T18:12:36.000Z",
+  "updated_at": "2026-10-08T18:50:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 23736277800,
+  "storage_human": "23.7 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash-V2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp at main",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwopus3.8 27B Flash by Jackrong — VRAM 55.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Jackrong%2FQwopus3.8-27B-Flash,5BfoG4VORSxYlz4p4r0D1c",
+      "snippet": "Rank the Qwopus3.8 27B Flash capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Qwopus3.8 27b Flash V2 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwopus3-8-27b-flash-v2.html",
+      "snippet": "Download Qwopus3.8 27b Flash V2 GGUF model. 56.7 GB, 9,064 downloads, 44 likes."
+    },
+    {
+      "title": "Qwopus 3.8 27B Flash NVFP4: Native Blackwell AI Breakthrough",
+      "url": "https://www.thinksuite.in/ai-news/qwopus-38-27b-flash-nvfp4-native-blackwell-ai-breakthrough",
+      "snippet": "A native NVIDIA ModelOpt NVFP4 conversion of Qwopus3.8-27B-Flash has been released on HuggingFace, specifically engineered for NVIDIA Blackwell GPUs. Featuring a strategic mixed-precision design that keeps the language model head, vision encoder, and speculative heads in BF16, this 27.78B parameter model sets a new standard for high-speed inference without loss of output accuracy."
+    }
+  ]
+}

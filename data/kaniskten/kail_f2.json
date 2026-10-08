@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Kaniskten/Kail_F2",
+  "slug": "kaniskten-kail_f2",
+  "author": "Kaniskten",
+  "url": "https://huggingface.co/Kaniskten/Kail_F2",
+  "created_at": "2026-10-08T14:52:11.000Z",
+  "updated_at": "2026-10-08T15:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kail",
+    "text-generation",
+    "kaila",
+    "decoder-only",
+    "causal-lm",
+    "gqa",
+    "rope",
+    "language-model",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1123372800,
+  "parameters_human": "1.12B",
+  "storage_bytes": 2246798376,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaniskten/Kail_F2 · Hugging Face",
+      "url": "https://huggingface.co/Kaniskten/Kail_F2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kaniskten/Kail_F2 at main - Hugging Face",
+      "url": "https://huggingface.co/Kaniskten/Kail_F2/tree/main",
+      "snippet": "Kaniskten / Kail_F2 like 1 Text Generation GGUF English llama.cpp llm local-inference kail License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main Kail_F2 3.09 GB Ctrl+K Ctrl+K 1 contributor History:6 commits Kaniskten Delete run_kail_gguf.py 5c9fc96 verified18 days ago .gitattributes"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/DXumUWSkwQ_/",
+      "snippet": "69 likes, 2 comments - kanisktenprogramming on April 29, 2026: \"🚀 Introducing Kail F2 A powerful 1.5B open-source AI model built for developers and creators. 🔓 Fully Open Source ⚡ High Performance 🧠 Optimized Architecture 📅 Launching May 1, 2026 Build. Customize."
+    },
+    {
+      "title": "Download Kail AI | Windows, Android & Linux | Kail AI",
+      "url": "https://kail-ai.com/downloads/",
+      "snippet": "Download Kail AI for Windows, Android, and Linux. Run AI completely offline with the pre-packaged Kail S2 model. Zero internet required, absolute data privacy."
+    },
+    {
+      "title": "Kail API Access - kanisktenprogramming.com",
+      "url": "https://kanisktenprogramming.com/api/",
+      "snippet": "Kail API Access Integrate Kail&#x27;s powerful AI capabilities into your applications with our comprehensive API. Get started by requesting your API key below."
+    }
+  ]
+}

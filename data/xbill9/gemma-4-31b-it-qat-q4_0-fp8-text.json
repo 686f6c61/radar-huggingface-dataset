@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-31B-it-qat-q4_0-fp8-text",
+  "slug": "xbill9-gemma-4-31b-it-qat-q4_0-fp8-text",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0-fp8-text",
+  "created_at": "2026-10-08T01:46:49.000Z",
+  "updated_at": "2026-10-08T01:47:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4_text",
+    "gemma4",
+    "compressed-tensors",
+    "fp8",
+    "w8a8",
+    "qat",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 30697345340,
+  "parameters_human": "30.70B",
+  "storage_bytes": 32157215514,
+  "storage_human": "32.2 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=2&sort=created",
+      "snippet": "xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8-emb4 · Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng · xbill9/gemma-4-31B-it-qat-q4_0-exact-gguf."
+    },
+    {
+      "title": "4-Bit Embeddings Decode up to 1.39x Faster on One L4",
+      "url": "https://dev.to/aws-builders/gemma-4-on-amazon-sagemaker-4-bit-embeddings-decode-up-to-139x-faster-on-one-l4-36mf",
+      "snippet": "30.09.2026 ... Repacking Gemma 4's QAT weights five ways and serving each on the same SageMaker NVIDIA L4 endpoint: int4 linears, int4 embeddings and ..."
+    },
+    {
+      "title": "QAT Weights Decode 2.05x Faster Than bf16 on One L4",
+      "url": "https://dev.to/aws-builders/gemma-4-on-amazon-sagemaker-qat-weights-decode-205x-faster-than-bf16-on-one-l4-318m",
+      "snippet": "25.09.2026 ... ... Model \\ --query \"HubContentSummaries[].HubContentName\" --output text | tr '\\t' '\\n' | grep gemma-4. huggingface-llm-gemma-4-31b-it-nvfp4 ..."
+    },
+    {
+      "title": "Gemma 4 on Amazon SageMaker: The NVIDIA T4 Decodes at 0.8x ...",
+      "url": "https://dev.to/gde/gemma-4-on-amazon-sagemaker-the-nvidia-t4-decodes-at-08x-of-the-l4-with-the-same-answers-19m4",
+      "snippet": "30.09.2026 ... This article deploys Gemma 4 to the smallest GPU Amazon SageMaker offers, an NVIDIA T4, and measures it against the L4 from the earlier ..."
+    },
+    {
+      "title": "Google's QAT Gemma 4 26B-A4B on One TPU v6e - DEV Community",
+      "url": "https://dev.to/gde/googles-qat-gemma-4-26b-a4b-on-one-tpu-v6e-156x-the-kv-cache-and-19x-the-throughput-of-fp8-36kl",
+      "snippet": "26.09.2026 ... The QAT 26B serves on one v6e chip at 17.43 GiB of HBM, with 53,888 tokens of KV cache and 1,283 output tokens per second. RedHat's FP8 build ..."
+    }
+  ]
+}

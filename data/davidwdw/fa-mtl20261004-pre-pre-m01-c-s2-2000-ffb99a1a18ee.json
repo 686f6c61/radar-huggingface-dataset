@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/fa-mtl20261004-pre-pre-m01-c-s2-2000-ffb99a1a18ee",
+  "slug": "davidwdw-fa-mtl20261004-pre-pre-m01-c-s2-2000-ffb99a1a18ee",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/fa-mtl20261004-pre-pre-m01-c-s2-2000-ffb99a1a18ee",
+  "created_at": "2026-10-08T01:50:34.000Z",
+  "updated_at": "2026-10-08T01:50:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 369676172,
+  "storage_human": "370 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ecoledirecte · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ecoledirecte",
+      "snippet": "Sep 9, 2026 · GitHub is where people build software. More than 225 million people use GitHub to discover, fork, and contribute to …"
+    },
+    {
+      "title": "GitHub - KaarisMoiLeCrane/EcoleDirecte-Plus: Extension web pour un ...",
+      "url": "https://github.com/KaarisMoiLeCrane/EcoleDirecte-Plus",
+      "snippet": "EcoleDirecte Plus Extension Chrome pour améliorer le Site EcoleDirecte. Explore les docs » Voir Démo · Signaler un Bug · …"
+    },
+    {
+      "title": "Mot de passe école directe - Forum Programmation",
+      "url": "https://forums.commentcamarche.net/forum/affich-34259508-mot-de-passe-ecole-directe",
+      "snippet": "Jan 10, 2017 · Bonjour, je voudrai savoir comment savoir le mot de passe sur ecoledirecte d'un professeur dont je connais le nom …"
+    },
+    {
+      "title": "Ecole direct - Forum Logiciels - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct",
+      "snippet": "Aug 24, 2021 · Bonjour, j aimerai savoir pourquoi je ne peux plus passer à l espace famille quand je vais sur l application ecole …"
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

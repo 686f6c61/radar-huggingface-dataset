@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09",
+  "slug": "vosldtgbj-project-llm-cpt-1p0-top10-10-lora-09",
+  "author": "vosldtgbj",
+  "url": "https://huggingface.co/vosldtgbj/project-llm-cpt-1p0-top10-10-lora-09",
+  "created_at": "2026-10-08T16:39:12.000Z",
+  "updated_at": "2026-10-08T16:41:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "japanese",
+    "continual-pretraining",
+    "any-to-any",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951718050,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to the Jungle — Work with the company you belong to",
+      "url": "https://www.welcometothejungle.com/en",
+      "snippet": "Welcome to the Jungle is the guide that walks you through your job-search: find out what it's like to work for today's top companies …"
+    },
+    {
+      "title": "Jobs | Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr/jobs",
+      "snippet": "Liste des offres d'emploi, stage, apprentissage et alternance dans les entreprises qui recrutent sur Welcome to the Jungle."
+    },
+    {
+      "title": "Solution marque employeur | Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/marque-employeur",
+      "snippet": "Construisez une marque employeur qui attire les bons profils. Vitrine personnalisée, contenus clé en main, résultats mesurables. …"
+    },
+    {
+      "title": "Le logiciel de recrutement Welcome ATS | Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/ats",
+      "snippet": "Centralisez vos recrutements avec Welcome ATS : offres, candidatures, échanges et IA dans un seul logiciel. Demandez votre démo."
+    },
+    {
+      "title": "Welcome to the Jungle (formerly Otta)",
+      "url": "https://app.welcometothejungle.com/companies/Welcome-to-the-Jungle-(formerly-Otta)",
+      "snippet": "Oct 8, 2024 · Apply for jobs at Welcome to the Jungle (formerly Otta) on Welcome to the Jungle (formerly Otta}. To help candidates …"
+    }
+  ]
+}

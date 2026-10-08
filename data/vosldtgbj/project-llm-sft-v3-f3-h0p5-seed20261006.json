@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vosldtgbj/project-llm-sft-v3-f3-h0p5-seed20261006",
+  "slug": "vosldtgbj-project-llm-sft-v3-f3-h0p5-seed20261006",
+  "author": "vosldtgbj",
+  "url": "https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h0p5-seed20261006",
+  "created_at": "2026-10-08T17:05:06.000Z",
+  "updated_at": "2026-10-08T17:07:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "japanese",
+    "supervised-fine-tuning",
+    "any-to-any",
+    "base_model:vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
+    "base_model:finetune:vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951718050,
+  "storage_human": "24.0 GB",
+  "base_model": "vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vLLM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/VLLM",
+      "snippet": "vLLM is an open-source software framework for inference and serving of large language models and related multimodal models. Originally developed at the University of California, Berkeley &#x27;s Sky Computing Lab, [1] the project is centered on PagedAttention, a memory-management method for transformer key-value caches, and supports features such as continuous batching, distributed inference ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 623 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors."
+    },
+    {
+      "title": "vllm-project - vLLM · GitHub",
+      "url": "https://github.com/vllm-project",
+      "snippet": "Python 2,930 Apache-2.0 2,393 1,572 (77 issues need help) 2,222 Updated 46 minutes ago vllm-omni Public A framework for efficient model inference with omni-modality models"
+    },
+    {
+      "title": "vLLM — Fast, Memory-Efficient LLM Inference & Serving",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    }
+  ]
+}

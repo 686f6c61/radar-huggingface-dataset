@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aara-vktk/multitask-test20",
+  "slug": "aara-vktk-multitask-test20",
+  "author": "aara-vktk",
+  "url": "https://huggingface.co/aara-vktk/multitask-test20",
+  "created_at": "2026-10-08T01:31:35.000Z",
+  "updated_at": "2026-10-08T01:31:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haschill - Fournisseur CBD exclusif buralistes",
+      "url": "https://haschill.com/",
+      "snippet": "Haschill, 1er fournisseur CBD exclusif des 8000 buralistes en France. Fleurs, résines, pré-rolls, cannarettes. Conformité 0,3% THC, …"
+    },
+    {
+      "title": "Accueil | Agence Régionale pour l'Agriculture et l'Alimentation de la ...",
+      "url": "https://www.araa.org/fr",
+      "snippet": "Vision stratégique L’ARAA reste aujourd’hui le centre d’attraction des acteurs de la région en matière de développement du secteur …"
+    },
+    {
+      "title": "Société AARA COM : Chiffre d'affaires, statuts, extrait d ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/aara-com-893460048",
+      "snippet": "Mar 29, 2024 · AARA COM à ECQUEVILLY (78920) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, …"
+    },
+    {
+      "title": "Société AARA COM (893460048) à FEUCHEROLLES (78810).",
+      "url": "https://www.societe.com/societe/aara-com-893460048.html",
+      "snippet": "Mar 11, 2024 · AARA COM à FEUCHEROLLES (893460048). RCS, K-BIS, RNE, SIREN, SIRET, bilans, statuts, chiffre d'affaires, …"
+    },
+    {
+      "title": "Music | Aara",
+      "url": "https://aara.bandcamp.com/",
+      "snippet": "Switzerland’s AARA was founded in 2018 by vocalist Fluss and multi-instrumentalist Berg to create art highly influenced by …"
+    }
+  ]
+}

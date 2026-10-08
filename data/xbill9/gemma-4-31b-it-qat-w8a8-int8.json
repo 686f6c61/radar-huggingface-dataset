@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-31B-it-qat-w8a8-int8",
+  "slug": "xbill9-gemma-4-31b-it-qat-w8a8-int8",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8",
+  "created_at": "2026-10-08T01:46:19.000Z",
+  "updated_at": "2026-10-08T01:46:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "compressed-tensors",
+    "w8a8",
+    "int8",
+    "qat",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 30697345340,
+  "parameters_human": "30.70B",
+  "storage_bytes": 32148753074,
+  "storage_human": "32.1 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xbill9/gemma-4-31B-it-qat-w8a8-int8 · Hugging Face",
+      "url": "https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8",
+      "snippet": "This is an unofficial build, made and published independently of Google. It holds Google&#x27;s quantization-aware-trained (QAT) Gemma 4 31B-it weights, from google/gemma-4-31B-it-qat-q4_0-unquantized (revision 1e4d8be), text model only, stored as compressed-tensors int8 W8A8: int8 weights with one bf16 scale per output channel, activations quantized to int8 per token at run time (format: int ..."
+    },
+    {
+      "title": "xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4 · Hugging Face",
+      "url": "https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4",
+      "snippet": "This is an unofficial build, made and published independently of Google. It holds Google&#x27;s quantization-aware-trained (QAT) Gemma 4 31B-it weights, from google/gemma-4-31B-it-qat-q4_0-unquantized (revision 1e4d8be), text model only, stored as compressed-tensors int8 W8A8: int8 weights with one bf16 scale per output channel, activations quantized to int8 per token at run time (format: int ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "ai-club-rtx3090/models/gemma-4-31b/README.md at master - GitHub",
+      "url": "https://github.com/dotnfc/ai-club-rtx3090/blob/master/models/gemma-4-31b/README.md",
+      "snippet": "Gemma 4 31B — on 2× RTX 3090 Run Gemma 4 31B — with vision and tool calling — on 2× RTX 3090s, on stock vLLM v0.24. (overlay-free). ⚠️ Single-card boot OOMs on 24 GB Ampere regardless of KV format. Needs ≥32 GB single-card (validated on RTX 5090 by @apnar)."
+    },
+    {
+      "title": "Gemma 4 | Google AI Edge | Google for Developers",
+      "url": "https://developers.google.com/edge/litert-lm/models/gemma-4",
+      "snippet": "Gemma 4 models are designed to deliver frontier-level performance at each size, targeting deployment scenarios from mobile and edge devices (E2B, E4B) to consumer GPUs and workstations (26B A4B, 31B). They are well-suited for reasoning, agentic workflows, coding, and multimodal understanding."
+    }
+  ]
+}

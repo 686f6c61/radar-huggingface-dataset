@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Gemma4-E2B-IT-NPU2",
+  "slug": "openflowlm-gemma4-e2b-it-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Gemma4-E2B-IT-NPU2",
+  "created_at": "2026-10-08T16:55:35.000Z",
+  "updated_at": "2026-10-08T16:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gemma4_text",
+    "image-text-to-text",
+    "any-to-any",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5992814162,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastFlowLM/Gemma4-E2B-IT-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Gemma4-E2B-IT-NPU2",
+      "snippet": "The models are available in four distinct sizes: E2B, E4B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Gemma 4 E2B — Ultra-Lightweight Local AI | gemma4.dev",
+      "url": "https://gemma4.dev/models/gemma-4-e2b",
+      "snippet": "Models /Gemma 4 E2B Gemma 4 E2B — Ultra-Lightweight Local AI Gemma 4 E2B packs 2.1 billion parameters into the smallest footprint in the Gemma 4 family. Text-only, 8K context, and capable of running entirely on CPU — making it the go-to model for edge devices, embedded systems, and ultra-low-latency applications."
+    },
+    {
+      "title": "FastFlowLM/Gemma4-E4B-IT-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Gemma4-E4B-IT-NPU2",
+      "snippet": "The models are available in four distinct sizes: E2B, E4B, 26B A4B, and 31B. Their diverse sizes make them deployable in environments ranging from high-end phones to laptops and servers, democratizing access to state-of-the-art AI. Gemma 4 introduces key capability and architectural advancements:"
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Google Gemma 4: The Complete Guide to Google&#x27;s Open-Source AI Model ...",
+      "url": "https://www.cometapi.com/google-releases-gemma-4-open-source-model/",
+      "snippet": "Gemma 4 is Google DeepMind&#x27;s latest open model family, launched on March 31, 2026 and announced publicly on April 2, 2026. It is designed for advanced reasoning, agentic workflows, multimodal understanding, and efficient deployment across phones, laptops, workstations, and edge devices. Google says the family ships in four versions — E2B, E4B, 26B A4B, and 31B Dense — with up to 256K ..."
+    }
+  ]
+}

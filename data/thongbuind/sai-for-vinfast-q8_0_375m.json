@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "thongbuind/SAI-for-VinFast-Q8_0_375M",
+  "slug": "thongbuind-sai-for-vinfast-q8_0_375m",
+  "author": "thongbuind",
+  "url": "https://huggingface.co/thongbuind/SAI-for-VinFast-Q8_0_375M",
+  "created_at": "2026-10-08T18:01:13.000Z",
+  "updated_at": "2026-10-08T18:09:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gguf",
+    "sai",
+    "vinfast",
+    "text-generation",
+    "vi",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 375194624,
+  "parameters_human": "375.2M",
+  "storage_bytes": 399032640,
+  "storage_human": "399 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "thongbuind/SAI-for-VinFast-Q8_0_375M · Hugging Face",
+      "url": "https://huggingface.co/thongbuind/SAI-for-VinFast-Q8_0_375M",
+      "snippet": "thongbuind / SAI-for-VinFast-Q8_0_375M Like 0 Text Generation GGUF Vietnamese sai vinfast conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "thongbuind/SAI_100M · Hugging Face",
+      "url": "https://huggingface.co/thongbuind/SAI_100M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "thongbuind (Nidai) · GitHub",
+      "url": "https://github.com/thongbuind",
+      "snippet": "If you fail, fail like Verstappen 2025. thongbuind has 6 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "thongbuind (Nidai) / Repositories · GitHub",
+      "url": "https://github.com/thongbuind?tab=repositories",
+      "snippet": "If you fail, fail like Verstappen 2025. thongbuind has 18 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Pinset/act_so101_pick_place_2cam_100000",
+  "slug": "pinset-act_so101_pick_place_2cam_100000",
+  "author": "Pinset",
+  "url": "https://huggingface.co/Pinset/act_so101_pick_place_2cam_100000",
+  "created_at": "2026-10-08T18:14:14.000Z",
+  "updated_at": "2026-10-08T18:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Pinset/so101_pick_place_2cam_100_20261008_140403",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ViVi-AI/ACT_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/ViVi-AI/ACT_so101_pick_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shenlirobot/act_so101_pick_place · Hugging Face",
+      "url": "https://huggingface.co/shenlirobot/act_so101_pick_place",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "act_so101_pickplace: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-anvil2718-act-so101-pickplace",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare act_so101_pickplace&#x27;s parameters, context window, pricing and benchmarks against"
+    },
+    {
+      "title": "GitHub - aviadarn/so101-lerobot: SO-101 pick-and-place with LeRobot ...",
+      "url": "https://github.com/aviadarn/so101-lerobot",
+      "snippet": "Imitation learning on the SO-101 low-cost arm using LeRobot 0.6 and ACT. Phase 1 (this repo, today) runs the whole pipeline in MuJoCo via so101-nexus with a scripted IK expert as the demonstrator. Phase 2 swaps the demonstrator for a physical leader arm; dataset keys and units are already those of LeRobot&#x27;s so101_follower, so the training and evaluation code does not change."
+    },
+    {
+      "title": "GitHub - mikami235/so101-act-pick-place",
+      "url": "https://github.com/mikami235/so101-act-pick-place",
+      "snippet": "An imitation-learning experiment for a LeRobot SO-101 robot arm using ACT (Action Chunking with Transformers) and two USB cameras. The goal of this project is to train an SO-101 follower arm to perform a simple pick-and-place task from demonstrations collected with an SO-101 leader arm. The learned ..."
+    }
+  ]
+}

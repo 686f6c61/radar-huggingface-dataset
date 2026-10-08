@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "atomtanstudio/Prism-Q6",
+  "slug": "atomtanstudio-prism-q6",
+  "author": "atomtanstudio",
+  "url": "https://huggingface.co/atomtanstudio/Prism-Q6",
+  "created_at": "2026-10-08T18:30:58.000Z",
+  "updated_at": "2026-10-08T18:36:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "prism",
+    "tencent-hunyuan",
+    "video-generation",
+    "joint-video-audio",
+    "quantized",
+    "6-bit",
+    "image-to-video",
+    "base_model:FrancisRing/Prism",
+    "base_model:finetune:FrancisRing/Prism",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27133612000,
+  "storage_human": "27.1 GB",
+  "base_model": "FrancisRing/Prism",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "atomtanstudio (Atom Tan Studio) - Hugging Face",
+      "url": "https://huggingface.co/atomtanstudio",
+      "snippet": "User profile of Atom Tan Studio on Hugging Face"
+    },
+    {
+      "title": "atomtanstudio (Atom Tan Studio) · GitHub",
+      "url": "https://github.com/atomtanstudio",
+      "snippet": "Forked from osaurus-ai/osaurus Own your AI. The native macOS harness for AI agents -- any model, persistent memory, autonomous execution, cryptographic identity. Built in Swift. Fully offline. Open source. Swift Something went wrong, please refresh the page to try again. If the problem persists, check the GitHub status pageor contact support."
+    },
+    {
+      "title": "Prism",
+      "url": "https://prism-builder.com/",
+      "snippet": "Build your first AI creator that stays consistent across every image"
+    },
+    {
+      "title": "Exploring Model Quantization for LLMs | by Snehal | Medium",
+      "url": "https://medium.com/@isnehal.sp/exploring-model-quantization-for-llms-bc2c1f4c9382",
+      "snippet": "Exploring Model Quantization for LLMs What is Model Quantization? At its core, model quantization is all about efficiency. Imagine you&#x27;ve got a super heavy textbook (like one of those old school …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryanito6381/prompt-engineering-survey",
+  "slug": "ryanito6381-prompt-engineering-survey",
+  "author": "ryanito6381",
+  "url": "https://huggingface.co/ryanito6381/prompt-engineering-survey",
+  "created_at": "2026-10-08T18:34:13.000Z",
+  "updated_at": "2026-10-08T18:34:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt engineering - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+      "snippet": "Prompt engineering is the process of structuring natural language inputs (known as prompts) to produce specified outputs from a generative AI model. Context engineering is the related area of software engineering that focuses on the management of non-prompt and prompt contexts supplied to the GenAI model, such as system instructions, metadata ..."
+    },
+    {
+      "title": "Prompt Engineering For Developers: How To Write Better AI Prompts",
+      "url": "https://www.designveloper.com/blog/prompt-engineering-for-developers/",
+      "snippet": "Prompt engineering for developers turns a software task into clear, testable instructions that an AI model can use for code, debugging, QA, documentation, structured data, or architecture feedback. Strong prompts work like small engineering specs: they define the task, codebase context, constraints, output format, and verification criteria."
+    },
+    {
+      "title": "Prompt engineering techniques - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/prompt-engineering",
+      "snippet": "These techniques aren&#x27;t recommended for reasoning models like gpt-5 and o-series models. Prompt construction can be difficult. In practice, the prompt acts to help the model complete the desired task, but it&#x27;s more of an art than a science, often requiring experience and intuition to craft a successful prompt. The goal of this article is to help get you started with this learning process. This ..."
+    },
+    {
+      "title": "Prompt Engineering Complete Guide: Write Better AI Prompts (2026)",
+      "url": "https://www.moreonlinetools.com/en/blog/prompt-engineering-complete-guide/",
+      "snippet": "Complete prompt engineering guide 2026. Learn how to write better AI prompts for ChatGPT, Claude, and Gemini. Covers role prompting, chain-of-thought, few-shot examples, and more. Free prompt optimizer included."
+    },
+    {
+      "title": "The Complete Guide to Prompt Engineering (2026)",
+      "url": "https://thehumanprompts.com/guide-to-prompt-engineering/",
+      "snippet": "Guide to prompt engineering in 2026 with this complete guide covering the RTCCO framework, prompt templates, AI workflows, GPT-5, Claude, Gemini, practical examples, and best practices."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "leoanimesh/astropedia-models",
+  "slug": "leoanimesh-astropedia-models",
+  "author": "leoanimesh",
+  "url": "https://huggingface.co/leoanimesh/astropedia-models",
+  "created_at": "2026-10-08T18:12:32.000Z",
+  "updated_at": "2026-10-08T18:14:12.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "hi",
+    "bn"
+  ],
+  "tags": [
+    "executorch",
+    "on-device",
+    "astrology",
+    "en",
+    "hi",
+    "bn",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:quantized:google/gemma-3-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195659264,
+  "storage_human": "196 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Directory: 644 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 644 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "The Ultimate AI 3D Model Generators for Free",
+      "url": "https://www.tripo3d.ai/discover",
+      "snippet": "Discover Tripo&#x27;s collection of AI 3D model generators. From stylized props to detailed characters, start with a prompt or image and get high-quality 3D models in seconds."
+    },
+    {
+      "title": "AI Character Generator - Create Consistent AI Characters Online Free ...",
+      "url": "https://www.media.io/ai/ai-character",
+      "snippet": "Create consistent AI characters with Media.io AI Character Generator. Design anime, realistic, or roleplay characters in 3 simple steps. Free to start, no design skills needed."
+    },
+    {
+      "title": "AI Video Model Directory - AniSora Studio",
+      "url": "https://www.anisora.ai/models",
+      "snippet": "Compare active AI video models for anime scenes, creator workflows, and production planning."
+    },
+    {
+      "title": "Best Free AI 3D Model Generators in 2026 (Tested and Compared)",
+      "url": "https://www.3daistudio.com/blog/best-free-ai-3d-model-generators-2026",
+      "snippet": "The best free AI 3D model generators in 2026, compared on free credits, commercial use, export formats, and quality. Generate 3D models from text or images at no cost."
+    }
+  ]
+}

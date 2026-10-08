@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kelvinxG/patio-corners",
+  "slug": "kelvinxg-patio-corners",
+  "author": "kelvinxG",
+  "url": "https://huggingface.co/kelvinxG/patio-corners",
+  "created_at": "2026-10-08T16:55:45.000Z",
+  "updated_at": "2026-10-08T17:04:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "playing-cards",
+    "poker",
+    "cnn",
+    "computer-vision",
+    "image-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 696908,
+  "storage_human": "696908 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KelvinxG (Kelvin) · GitHub",
+      "url": "https://github.com/KelvinxG",
+      "snippet": "👋 Hi, I&#x27;m @KelvinxG, a Computer engineering graudate. currently working as a data engineer 👀 I&#x27;m interested in so many interesting in education, science, neuroscience and many other science related fields 💞️ Open to collaboration to competition or startups, i&#x27;m open if you have an idea or a business idea you can email me and we can connect via email or discord 📫 How to reach ..."
+    },
+    {
+      "title": "Overview of Model Garden | Gemini Enterprise Agent Platform | Google ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-garden/explore-models",
+      "snippet": "Jumpstart your ML project with a single place to discover, customize, and deploy a wide variety of models from Google and Google partners. Model Garden provides a collection of pre-trained models and assets that you can use to build and deploy your own AI applications."
+    },
+    {
+      "title": "AI Patio Design | GenRoom",
+      "url": "https://genroom.io/patio-design-ai",
+      "snippet": "An AI patio designer takes a single photo of an existing outdoor space — a bare concrete slab, a tired wooden deck, an unused rooftop, a small courtyard — and rebuilds the whole scene as a finished outdoor living area. Same house wall, same fence line, same lawn — completely new furniture, surface materials, planters, lighting and decor. GenRoom&#x27;s engine is trained on millions of outdoor ..."
+    },
+    {
+      "title": "Kelvin · The System of Action for the physical world",
+      "url": "https://kelvin.ai/",
+      "snippet": "Bring your own models, agents, and AI, or start with Kelvin&#x27;s. As intelligence changes, Kelvin provides the persistent operational layer that connects it to the physical world. That layer is governed execution, control, measurement, and the feedback loop that turns every action into the input for the next decision."
+    },
+    {
+      "title": "AI Patio Design: Redesign Your Patio or Deck From a Photo",
+      "url": "https://remodelai.co/ai-room-design/patio",
+      "snippet": "Design your patio with AI. Upload a photo and preview pavers, pergolas, outdoor furniture, lighting and planting on your real backyard in seconds."
+    }
+  ]
+}

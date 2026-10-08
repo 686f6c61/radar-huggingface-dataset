@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/apertus-12b-try-again-s0-GGUF",
+  "slug": "mradermacher-apertus-12b-try-again-s0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/apertus-12b-try-again-s0-GGUF",
+  "created_at": "2025-11-19T03:16:00.000Z",
+  "updated_at": "2026-10-08T18:51:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 11543134272,
+  "parameters_human": "11.54B",
+  "storage_bytes": 80645672992,
+  "storage_human": "80.6 GB",
+  "base_model": "ToastyPigeon/apertus-12b-try-again-s0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/",
+      "snippet": "Fully Open Training data, code, weights, methods, alignment principles: all documented and reproducible. Apertus is to AI as Open is to Source."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Apertus AI",
+      "url": "https://apertus-ai.org/pages/get-started/",
+      "snippet": "Apertus 1.5 extends our fully open models with image understanding, a thinking mode, and a four times longer context window. Visit our documentation site for details, and use the @swiss-ai organization on Hugging Face for downloading the official weights."
+    },
+    {
+      "title": "mradermacher/apertus-12b-healed-s0-i1-GGUF - Hugging Face Hu... - Socket",
+      "url": "https://socket.dev/huggingface/package/mradermacher/apertus-12b-healed-s0-i1-gguf",
+      "snippet": "We found that mradermacher/apertus-12b-healed-s0-i1-gguf demonstrated a healthy version release cadence and project activity because the last version was released less than a year ago.It has 1 open source maintainer collaborating on the project."
+    }
+  ]
+}

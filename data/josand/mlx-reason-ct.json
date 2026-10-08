@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "josand/MLX-Reason-CT",
+  "slug": "josand-mlx-reason-ct",
+  "author": "josand",
+  "url": "https://huggingface.co/josand/MLX-Reason-CT",
+  "created_at": "2026-10-06T23:37:06.000Z",
+  "updated_at": "2026-10-08T19:17:24.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "qwen3_5",
+    "native-mlx",
+    "apple-silicon",
+    "fp32",
+    "ct",
+    "medical-imaging",
+    "nv-reason-ct",
+    "3d-vlm",
+    "vision-language",
+    "radiology",
+    "report-generation",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17431290989,
+  "storage_human": "17.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "josand/MLX-Reason-CT at main - Hugging Face",
+      "url": "https://huggingface.co/josand/MLX-Reason-CT/tree/main",
+      "snippet": "163 BytesAdd lossless FP32 NV-Reason-CT MLX weights and provenance1 day ago real-ct-cuda-parity.json 5.78 kBRecord real-CT CUDA parity and update model card1 day ago standalone-verification.json 2.14 kBRecord real-CT CUDA parity and update model card1 day ago tokenizer.json Safe 20 MB xet Add lossless FP32 NV-Reason-CT MLX weights and ..."
+    },
+    {
+      "title": "Mlx Reason Ct - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/josand/mlx-reason-ct",
+      "snippet": "Registry entry for model Mlx Reason Ct; source metadata pending."
+    },
+    {
+      "title": "NV-Reason-CT: 3D Visual Language Model for CT Analysis",
+      "url": "https://arxiv.org/abs/2609.27511",
+      "snippet": "We present NV-Reason-CT, a generative vision--language model for chest and abdominal CT combining native 3D visual encoding with radiologist-guided reasoning. The model couples a native 3D vision transformer with a language model, passing all visual tokens and their explicit 3D coordinates into language decoding without further spatial token merging. This retains volumetric spatial information ..."
+    },
+    {
+      "title": "GitHub - NVIDIA-Medtech/NV-Reason-CT",
+      "url": "https://github.com/NVIDIA-Medtech/NV-Reason-CT",
+      "snippet": "NV-Reason-CT is a generative vision-language model for native 3D chest and abdominal CT interpretation. It combines a Qwen3.5-4B language model with a 3D Vision Transformer (Primus, initialized with COLIPRI weights) and supports abnormality classification, structured report generation, visual ..."
+    },
+    {
+      "title": "Introducing NV-Reason-CT Open 3D CT VLM for Radiologist Chain-of ...",
+      "url": "https://developer.nvidia.com/blog/introducing-nv-reason-ct-open-3d-ct-vlm-for-radiologist-chain-of-thought-reasoning/",
+      "snippet": "NV-Reason-CXR reasoning methodology extends to 3D CT analysis with NV-Reason-CT, a vision language model purpose-built for volumetric imaging. The model combines a full 3D vision transformer encoder with a Qwen3.5-4B language model trained to generate chain-of-thought reasoning that mirrors radiologist systematic review of anatomical regions."
+    }
+  ]
+}

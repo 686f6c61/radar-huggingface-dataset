@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/llama-3-chinese-8b-instruct-v3-GGUF",
+  "slug": "tinyopsec-llama-3-chinese-8b-instruct-v3-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/llama-3-chinese-8b-instruct-v3-GGUF",
+  "created_at": "2026-10-08T15:07:16.000Z",
+  "updated_at": "2026-10-08T15:44:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama",
+    "chinese",
+    "quantized",
+    "conversational",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:hfl/llama-3-chinese-8b-instruct-v3",
+    "base_model:quantized:hfl/llama-3-chinese-8b-instruct-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 47458690048,
+  "storage_human": "47.5 GB",
+  "base_model": "hfl/llama-3-chinese-8b-instruct-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Delhi cab driver held for masturbating in front of woman during ride",
+      "url": "https://www.hindustantimes.com/india-news/delhi-cab-driver-held-for-masturbating-in-front-of-woman-during-ride-101757483262028.html",
+      "snippet": "Delhi Police said, \"A cab driver, Lom Shankar, was arrested by the Police for allegedly masturbating while driving the car, with a …"
+    },
+    {
+      "title": "Delhi Cab Driver Arrested For Masturbating In Front Of Student ...",
+      "url": "https://www.thedailyjagran.com/india/delhi-cab-driver-arrested-for-masturbating-in-front-of-student-passenger-during-ride-in-maurice-nagar-10266083",
+      "snippet": "Sep 10, 2025 · Delhi Police have arrested a cab driver for engaging in an obscene act. The cab driver was allegedly masturbating …"
+    },
+    {
+      "title": "Delhi Cab Driver 'Lom Shankar' Caught Masturbating During Ride ...",
+      "url": "https://zeenews.india.com/india/delhi-cab-driver-lom-shankar-caught-masturbating-during-ride-arrested-as-female-student-files-complaint-2958002.html",
+      "snippet": "Sep 10, 2025 · New Delhi: A cab driver has been arrested after allegedly masturbating in front of a woman passenger while driving in …"
+    },
+    {
+      "title": "Delhi Cab Driver Held For Masturbating In Front Of Woman During Ride",
+      "url": "https://legally-speaking.in/national/delhi-cab-driver-held-for-masturbating-in-front-of-woman-during-ride/",
+      "snippet": "Sep 10, 2025 · The Delhi Police have arrested a cab driver for allegedly engaging in an obscene act in front of a female student …"
+    },
+    {
+      "title": "Cab driver held for masturbating while driving Delhi student",
+      "url": "https://www.hindustantimes.com/cities/delhi-news/cab-driver-held-for-touching-self-while-driving-delhi-student-101757528001423.html",
+      "snippet": "A 48-year-old cab driver, working with a cab aggregator service, was arrested for allegedly misbehaving with a 22-year-old woman …"
+    }
+  ]
+}

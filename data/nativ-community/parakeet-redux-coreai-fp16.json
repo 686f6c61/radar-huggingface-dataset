@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nativ-community/parakeet-redux-coreai-fp16",
+  "slug": "nativ-community-parakeet-redux-coreai-fp16",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/parakeet-redux-coreai-fp16",
+  "created_at": "2026-10-08T16:49:42.000Z",
+  "updated_at": "2026-10-08T16:50:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 307126803,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "moondream/parakeet-redux · Hugging Face",
+      "url": "https://huggingface.co/moondream/parakeet-redux",
+      "snippet": "moondream / parakeet-redux Like 29 Follow moondream 3.31k Automatic Speech Recognition Safetensors 25 languages parakeet_tdt ternary parakeet tdt speech-recognition cpu apple-silicon 8-bit precision License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new parakeet-redux Usage Performance How this was measured x86 ..."
+    },
+    {
+      "title": "suryatmodulus/parakeet-redux · Hugging Face",
+      "url": "https://huggingface.co/suryatmodulus/parakeet-redux",
+      "snippet": "/ parakeet-redux Like 0 Automatic Speech Recognition Safetensors 25 languages parakeet_tdt ternary parakeet tdt speech-recognition cpu apple-silicon 8-bit precision License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new parakeet-redux Usage Performance How this was measured x86 CPU Apple silicon Benchmarks Open ..."
+    },
+    {
+      "title": "moondream/parakeet-redux • hfviewer",
+      "url": "https://hfviewer.com/moondream/parakeet-redux",
+      "snippet": "moondream/parakeet-redux: model architecture with Self-attention, Residual (skip) connection, Transformer block. Explore the interactive architecture graph on hfviewer."
+    },
+    {
+      "title": "Moondream Parakeet Redux: Local ASR in 178MB (2026) — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-moondream-parakeet-redux-run-178mb-local-speech-to-text-on",
+      "snippet": "Learn to install and run Moondream Parakeet Redux, a 178MB ternary-quantized speech-to-text model that transcribes audio locally on everyday hardware."
+    },
+    {
+      "title": "parakeet-redux: Audio-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/parakeet-redux-moondream",
+      "snippet": "Choose parakeet-redux for its multilingual V3-derived tokenizer and language coverage, smaller packed weights, and Photon CPU performance. Choose the MLX V2 conversion when you need an MLX-native workflow on Apple hardware or a command-line path through parakeet-mlx or mlx-audio."
+    }
+  ]
+}

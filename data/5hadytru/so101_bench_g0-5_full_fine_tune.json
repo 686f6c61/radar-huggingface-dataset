@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "5hadytru/so101_bench_G0.5_full_fine_tune",
+  "slug": "5hadytru-so101_bench_g0-5_full_fine_tune",
+  "author": "5hadytru",
+  "url": "https://huggingface.co/5hadytru/so101_bench_G0.5_full_fine_tune",
+  "created_at": "2026-10-08T17:49:03.000Z",
+  "updated_at": "2026-10-08T17:54:39.000Z",
+  "license": "g05-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "g05",
+    "so101",
+    "so101-bench",
+    "lerobot",
+    "non-commercial",
+    "dataset:5hadytru/so101_bench_sim",
+    "base_model:OpenGalaxea/G05",
+    "base_model:finetune:OpenGalaxea/G05",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7260153286,
+  "storage_human": "7.3 GB",
+  "base_model": "OpenGalaxea/G05",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune · Hugging Face",
+      "url": "https://huggingface.co/5hadytru/so101_bench_MolmoAct2-SO101_WM_full_fine_tune",
+      "snippet": "MolmoAct2-SO100_101 with all parameters fine-tuned on the full simulated SO-101 Bench training set, 5hadytru/so101_bench_sim_WM. This is step 10000, the final checkpoint of the run and the official MolmoAct2 entry for SO-101 Bench."
+    },
+    {
+      "title": "GitHub - 5hadytru/so101_bench: Official repository for \"SO-101 Bench ...",
+      "url": "https://github.com/5hadytru/so101_bench",
+      "snippet": "Download the policy The benchmark checkpoint is hosted on Hugging Face at 5hadytru/so101_GR00T_N1.6-3B_WM_v7_50k. This is the working-memory (WM) fine-tune: in addition to the live wrist/overhead frames it conditions on the settled overhead frame captured at the start of the episode (overhead_init), the simple working-memory baseline from the ..."
+    },
+    {
+      "title": "5hadytru/so101_bench_sim · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/5hadytru/so101_bench_sim",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "so101_bench/source/so101_bench/so101_bench at main · 5hadytru ... - GitHub",
+      "url": "https://github.com/5hadytru/so101_bench/tree/main/source/so101_bench/so101_bench",
+      "snippet": "Official repository for \"SO-101 Bench: Measuring the Gap Between Semantic and Geometric Competence in Robot Foundation Models\" - 5hadytru/so101_bench"
+    },
+    {
+      "title": "Fine-tune MolmoAct2 on SO-101 with LeRobot v0.6 | VnRobo",
+      "url": "https://vnrobo.com/en/blog/molmoact2-so101-lerobot-v06-finetune-guide",
+      "snippet": "Fine-tune MolmoAct2 (outperforms π0.5 on real-world manipulation) on SO-101 using LoRA and LeRobot v0.6 — runnable on a single 24GB GPU, step-by-step."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Phocinae/Phocinae-Largha-150M-v1",
+  "slug": "phocinae-phocinae-largha-150m-v1",
+  "author": "Phocinae",
+  "url": "https://huggingface.co/Phocinae/Phocinae-Largha-150M-v1",
+  "created_at": "2026-10-08T00:30:10.000Z",
+  "updated_at": "2026-10-08T12:18:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "region:us"
+  ],
+  "likes": 34,
+  "downloads_30d": 0,
+  "trending_score": 29,
+  "parameters": 144292870,
+  "parameters_human": "144.3M",
+  "storage_bytes": 330718609,
+  "storage_human": "331 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

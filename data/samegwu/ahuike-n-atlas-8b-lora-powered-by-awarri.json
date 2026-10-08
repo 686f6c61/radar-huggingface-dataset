@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "SamEgwu/AHUIKE-N-ATLaS-8B-LoRA-Powered-by-Awarri",
+  "slug": "samegwu-ahuike-n-atlas-8b-lora-powered-by-awarri",
+  "author": "SamEgwu",
+  "url": "https://huggingface.co/SamEgwu/AHUIKE-N-ATLaS-8B-LoRA-Powered-by-Awarri",
+  "created_at": "2026-10-08T18:25:17.000Z",
+  "updated_at": "2026-10-08T18:25:20.000Z",
+  "license": "n-atlas",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "ha",
+    "yo",
+    "ig"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "triage",
+    "maternal-health",
+    "child-health",
+    "nigeria",
+    "n-atlas",
+    "lora",
+    "powered-by-awarri",
+    "en",
+    "ha",
+    "yo",
+    "ig",
+    "base_model:NCAIR1/N-ATLaS",
+    "base_model:adapter:NCAIR1/N-ATLaS",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "NCAIR1/N-ATLaS",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awarri | Africa&#x27;s AI and Robotics Enabler",
+      "url": "https://www.awarri.com/",
+      "snippet": "End-to-End Data Infrastructure for AI Development High-quality, ethically sourced data is the backbone of powerful AI. At Awarri, we deliver AI & data services that unlock innovation, including labeling, annotation, model training, reinforcement learning with human feedback, and customised data platforms."
+    },
+    {
+      "title": "NCAIR1/N-ATLaS · Hugging Face",
+      "url": "https://huggingface.co/NCAIR1/N-ATLaS",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Home - ATLAS Umoja AI",
+      "url": "https://www.atlasumoja.ai/",
+      "snippet": "Each country, in its own identity ATLAS Umoja AI is a shared framework that each country can use to shape and build its own AI model. One that&#x27;s based on its local language, dialects and culture. All on a timeline that suits them. Support the next country launch A national ministry, research institution, or civic organisation steps forward."
+    },
+    {
+      "title": "Awarri | Frontier AI Models and Data Platforms in Africa",
+      "url": "https://www.awarri.com/ai-product",
+      "snippet": "Explore Awarri&#x27;s AI models and products: Nigeria&#x27;s first AI assistant, a national multilingual LLM in partnership with the government, and data platforms Langeasy and RootLens."
+    },
+    {
+      "title": "Nigeria Launches Landmark AI Model Powered by Awarri to Advance ...",
+      "url": "https://fmcide.gov.ng/nigeria-launches-landmark-ai-model-powered-by-awarri-to-advance-languages-and-ai-at-scale/",
+      "snippet": "The Federal Ministry of Communications, Innovation & Digital Economy yesterday announced the launch of the Nigerian Atlas for Languages & AI at Scale (N-ATLAS), a groundbreaking open-source multilingual large language model. N-ATLAS is designed to understand and generate Nigeria&#x27;s diverse voices, ensuring that the country&#x27;s linguistic richness is preserved and reflected in the global ..."
+    }
+  ]
+}

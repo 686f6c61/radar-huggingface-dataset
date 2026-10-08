@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aakashv100/smolvla_so101_pick_place_random",
+  "slug": "aakashv100-smolvla_so101_pick_place_random",
+  "author": "aakashv100",
+  "url": "https://huggingface.co/aakashv100/smolvla_so101_pick_place_random",
+  "created_at": "2026-10-08T18:21:33.000Z",
+  "updated_at": "2026-10-08T18:21:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so101",
+    "dataset:aakashv100/so101-pick-place-random-trimmed",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720152,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aakashv100/eval_so101-pick-cube-v2-smolvla-fixed - Hugging Face",
+      "url": "https://huggingface.co/datasets/aakashv100/eval_so101-pick-cube-v2-smolvla-fixed",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aakashv100/eval_so101-pick-cube-v2-smolvla-fixed-v2 · Datasets at ...",
+      "url": "https://huggingface.co/datasets/aakashv100/eval_so101-pick-cube-v2-smolvla-fixed-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuning SmolVLA for Cube Pick-and-Place on SO-101",
+      "url": "https://ggando.com/blog/smolvla-so101/",
+      "snippet": "The task: pick up a small cube from a randomized position and place it in a bowl. 10-second episodes, 30fps, recorded via teleoperation with the leader arm. SmolVLA vs ACT # SmolVLA is a 500M+ parameter model, but you only fine-tune ~50M (the action expert + projections). The vision encoder (SigLIP) and language model (SmolLM2) stay frozen."
+    },
+    {
+      "title": "SO101 Pick-and-Place: Scripted Controller - GitHub",
+      "url": "https://github.com/nourel123/SO101-smolVLA",
+      "snippet": "Run with mjpython so101_pick_and_place_v3.py . so101_record_dataset.py — runs the same controller headlessly over many randomized cube/box layouts, records each attempt (camera images, joint state, joint actions), and saves only the successful ones."
+    },
+    {
+      "title": "Fine-tune SmolVLA for an SO-101 pick-and-place task on an NVIDIA DGX ...",
+      "url": "https://learn.arm.com/learning-paths/laptops-and-desktops/finetune-smolvla-lerobot/",
+      "snippet": "This is an advanced topic for robotics and AI developers who want to train a vision-language-action model from their own SO-101 demonstrations."
+    }
+  ]
+}

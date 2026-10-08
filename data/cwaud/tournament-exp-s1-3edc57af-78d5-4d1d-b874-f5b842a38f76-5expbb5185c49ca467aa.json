@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "cwaud/tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5Expbb5185c49ca467aa",
+  "slug": "cwaud-tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5expbb5185c49ca467aa",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/tournament-exp-s1-3edc57af-78d5-4d1d-b874-f5b842a38f76-5Expbb5185c49ca467aa",
+  "created_at": "2026-10-08T01:30:53.000Z",
+  "updated_at": "2026-10-08T01:31:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119864,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

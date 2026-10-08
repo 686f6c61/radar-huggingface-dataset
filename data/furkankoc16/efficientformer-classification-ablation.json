@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "furkankoc16/efficientformer-classification-ablation",
+  "slug": "furkankoc16-efficientformer-classification-ablation",
+  "author": "furkankoc16",
+  "url": "https://huggingface.co/furkankoc16/efficientformer-classification-ablation",
+  "created_at": "2026-10-08T18:40:13.000Z",
+  "updated_at": "2026-10-08T18:40:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "qualcomm/EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/EfficientFormer",
+      "snippet": "EfficientFormer: Optimized for Mobile Deployment Imagenet classifier and general purpose backbone EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset. This model is an implementation of EfficientFormer found here. This repository provides scripts to run EfficientFormer on Qualcomm® devices. More details on model performance across various devices ..."
+    },
+    {
+      "title": "EfficientFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.48.2/en/model_doc/efficientformer",
+      "snippet": "Overview The EfficientFormer model was proposed in EfficientFormer: Vision Transformers at MobileNet Speed by Yanyu Li, Geng Yuan, Yang Wen, Eric Hu, Georgios Evangelidis, Sergey Tulyakov, Yanzhi Wang, Jian Ren. EfficientFormer proposes a dimension-consistent pure transformer that can be run on mobile devices for dense prediction tasks like image classification, object detection and semantic ..."
+    },
+    {
+      "title": "EfficientFormer: Mobile Vision Transformer",
+      "url": "https://www.emergentmind.com/topics/efficientformer",
+      "snippet": "EfficientFormer is a latency-centered vision transformer family that balances mobile inference speed with competitive ImageNet accuracy through a dimension-consistent design."
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/efficientformer at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/efficientformer",
+      "snippet": "EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset. This is based on the implementation of EfficientFormer found here. This repository contains scripts for optimized on-device export suitable to run on Qualcomm® devices. More details on model performance across various devices, can be found here. Qualcomm AI Hub Models uses Qualcomm AI Hub ..."
+    }
+  ]
+}

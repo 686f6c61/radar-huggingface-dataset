@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Archit-01/decisions-tiny",
+  "slug": "archit-01-decisions-tiny",
+  "author": "Archit-01",
+  "url": "https://huggingface.co/Archit-01/decisions-tiny",
+  "created_at": "2026-10-08T14:54:32.000Z",
+  "updated_at": "2026-10-08T14:54:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-0.8B",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117997659,
+  "storage_human": "118 MB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ArchDaily | Broadcasting Architecture Worldwide",
+      "url": "https://www.archdaily.com/",
+      "snippet": "1 day ago · ArchDaily, Broadcasting Architecture Worldwide: Architecture news, competitions and projects updated every hour for the …"
+    },
+    {
+      "title": "IT Support Company for Architecture Firms - Arch IT",
+      "url": "https://getarchit.com/",
+      "snippet": "ArchIT was founded on 15 years of experience providing IT support to Architecture, Design and Engineering firms. After working in …"
+    },
+    {
+      "title": "CommArchit Architecture – Architecture et maîtrise d'oeuvre",
+      "url": "http://comm-archit.fr/",
+      "snippet": "Nous nous appuyons sur notre expérience collective pour concevoir des espaces de vie ou de travail, mettant tout en œuvre afin de …"
+    },
+    {
+      "title": "Archit (@architmeher) • Instagram photos and videos",
+      "url": "https://www.instagram.com/architmeher/",
+      "snippet": "285K Followers, 499 Following, 197 Posts - See Instagram photos and videos from Archit (@architmeher)"
+    },
+    {
+      "title": "Architecte — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Architecte",
+      "snippet": "Dans son acception classique, l' architecte est d'abord un artiste et un technicien (dans la profession des architectes de l' État, du …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ivan123-123/preparing.ai",
+  "slug": "ivan123-123-preparing-ai",
+  "author": "ivan123-123",
+  "url": "https://huggingface.co/ivan123-123/preparing.ai",
+  "created_at": "2026-10-08T15:17:44.000Z",
+  "updated_at": "2026-10-08T15:39:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "qwen2.5-vl",
+    "web-design",
+    "html-generation",
+    "lora",
+    "designforge",
+    "image-to-text",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759004,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Split Up - BBC Oine — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2495826/the-split-up-bbc-oine",
+      "snippet": "Sep 10, 2026 · The Split Up is the upcoming legal drama designed to fill the gaping hole left by the end of The Split on BBC One The …"
+    },
+    {
+      "title": "Rajar Q2 2025 - Page 3 — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2482485/rajar-q2-2025/p3",
+      "snippet": "Jul 31, 2025 · How the heck they didn't see potential in Mylo and Rosie and just gifted Radio 1's next Big Breakfast show - honestly …"
+    },
+    {
+      "title": "Pauline is really starting to annoy me... — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2496257/pauline-is-really-starting-to-annoy-me",
+      "snippet": "Sep 23, 2026 · She wont stop going on about Nominations and who nominated her and why does she feel so entitled to not be …"
+    },
+    {
+      "title": "Joy Division appreciation thread — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2230656/joy-division-appreciation-thread",
+      "snippet": "Jul 14, 2017 · So, despite my relatively young age (31), I am always on the hunt to discover new music, from decades past. (60s, …"
+    },
+    {
+      "title": "Is it Demand 5 or My 5? — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2252209/is-it-demand-5-or-my-5",
+      "snippet": "Nov 12, 2017 · I've got an Amazon Fire TV box and I could have sworn Channel 5's catch up app used to be called My 5 - complete …"
+    }
+  ]
+}

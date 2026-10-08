@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AGI-Eval-OA-Judge-GGUF",
+  "slug": "mradermacher-agi-eval-oa-judge-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AGI-Eval-OA-Judge-GGUF",
+  "created_at": "2025-11-19T03:16:04.000Z",
+  "updated_at": "2026-10-08T18:51:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:AGI-Eval-Official/AGI-Eval-OA-Judge",
+    "base_model:quantized:AGI-Eval-Official/AGI-Eval-OA-Judge",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 357,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 224000855552,
+  "storage_human": "224.0 GB",
+  "base_model": "AGI-Eval-Official/AGI-Eval-OA-Judge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/AGI-Eval-OA-Judge-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AGI-Eval-OA-Judge-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "AGI-Eval",
+      "url": "https://agi-eval.org/home",
+      "snippet": "Based on general evaluation methods, we provide capability leaderboard for LLMs in the industry. The leaderboards cover comprehensive evaluations and various capability assessments. With transparent and authoritative data, we help you understand the strengths and weaknesses of each model to make informed choices. We regularly update the leaderboard to ensure you have the latest information to ..."
+    },
+    {
+      "title": "Dashboard — AGI Evals",
+      "url": "https://agi-eval.studio/dashboard",
+      "snippet": "Run any model against the open benchmarks that define AI progress. 45 evals across six categories, one runner, a global leaderboard."
+    },
+    {
+      "title": "AGI Evals — plug your model in, actually run the eval",
+      "url": "https://agi-eval.studio/",
+      "snippet": "Run any model against the open benchmarks that define AI progress. 45 evals across six categories, one runner, a global leaderboard."
+    }
+  ]
+}

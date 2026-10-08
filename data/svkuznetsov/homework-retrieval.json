@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "svkuznetsov/homework-retrieval",
+  "slug": "svkuznetsov-homework-retrieval",
+  "author": "svkuznetsov",
+  "url": "https://huggingface.co/svkuznetsov/homework-retrieval",
+  "created_at": "2026-10-08T17:05:33.000Z",
+  "updated_at": "2026-10-08T17:05:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "svkuznetsov (Svetlana G. Kuznetsov) - Hugging Face",
+      "url": "https://huggingface.co/svkuznetsov/models",
+      "snippet": "AI & ML interests Learning ML every day. Love open source and cool models."
+    },
+    {
+      "title": "svkuznetsov/retrieval-run2 · Hugging Face",
+      "url": "https://huggingface.co/svkuznetsov/retrieval-run2",
+      "snippet": "Overview A small Flamingo implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "Sovi.AI | AI Study Companion for Homework, PDFs & Test Prep",
+      "url": "https://mysovi.ai/",
+      "snippet": "Sovi.AI is your AI study companion for homework and beyond. Get instant help, clear explanations, PDF study tools, and AP test prep across subjects."
+    },
+    {
+      "title": "Retrieval Augmented Multimodal AI for Electrical Engineering ... - GitHub",
+      "url": "https://github.com/neha-nambiar/Retrieval-Augmented-Multimodal-AI-for-Engineering-Homework-Solving",
+      "snippet": "An AI-powered electrical engineering homework solver that analyzes textbook PDFs, understands questions with images, and generates detailed step-by-step solutions with circuit diagrams using schemdraw."
+    },
+    {
+      "title": "OpenAI Releases 722 Math Manuscripts From an Unreleased AI Model",
+      "url": "https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/",
+      "snippet": "In a research post published October 6, 2026, OpenAI said it is releasing a broad range of new mathematical results produced by an unreleased internal frontier model, publishing 722 manuscripts organized into 372 familie..."
+    }
+  ]
+}

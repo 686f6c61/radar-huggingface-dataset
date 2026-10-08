@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Kiadz/qwen3-4b-heretic",
+  "slug": "kiadz-qwen3-4b-heretic",
+  "author": "Kiadz",
+  "url": "https://huggingface.co/Kiadz/qwen3-4b-heretic",
+  "created_at": "2026-10-08T01:43:56.000Z",
+  "updated_at": "2026-10-08T01:44:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404817,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Custommouspad: Home",
+      "url": "https://custommouspad.com/",
+      "snippet": "Experience the thrill of competition with FIFA's realism, Diablo's dark fantasy action, and Arena of Valor's fast-paced MOBA combat."
+    },
+    {
+      "title": "Run Qwen3-4B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/MassivDash/Qwen3-4B-heretic",
+      "snippet": "MassivDash/Qwen3-4B-heretic is a 4 billion parameter causal language model, a decensored version of Qwen/Qwen3-4B created using the Heretic v1.1.0 tool. This model uniquely supports seamless switching between a 'thinking mode' for complex reasoning tasks like math and coding, and a 'non-thinking mode' for efficient general-purpose dialogue. It excels in reasoning capabilities, human preference ..."
+    },
+    {
+      "title": "Run Qwen3-4B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/DreamFast/qwen3-4b-heretic",
+      "snippet": "DreamFast/qwen3-4b-heretic is a 4 billion parameter language model, an 'abliterated' version of Qwen/Qwen3-4B created using Heretic v1.2.0. This model significantly reduces refusals while maintaining original model quality, making it highly suitable as an uncensored text encoder for image generation models like Z-Image and FLUX.2 Klein 4B. It is available in various ComfyUI-native quantized ..."
+    },
+    {
+      "title": "README.md · DreamFast/qwen3-4b-heretic at main - Hugging Face",
+      "url": "https://huggingface.co/DreamFast/qwen3-4b-heretic/blob/main/README.md",
+      "snippet": "An abliterated version of Qwen 3 4Bcreated using Hereticv1.2.0. This model has reduced refusals while maintaining model quality, making it suitable as an uncensored text encoder for image generation models like Z-Imageand FLUX.2 Klein 4B."
+    },
+    {
+      "title": "CCSSNE/DreamFast-qwen3-4b-heretic · Hugging Face",
+      "url": "https://huggingface.co/CCSSNE/DreamFast-qwen3-4b-heretic",
+      "snippet": "An abliterated version of Qwen 3 4B created using Heretic v1.2.0. This model has reduced refusals while maintaining model quality, making it suitable as an uncensored text encoder for image generation models like Z-Image and FLUX.2 Klein 4B."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "longtimedevs/TimeGPT-Base",
+  "slug": "longtimedevs-timegpt-base",
+  "author": "longtimedevs",
+  "url": "https://huggingface.co/longtimedevs/TimeGPT-Base",
+  "created_at": "2026-10-08T14:50:53.000Z",
+  "updated_at": "2026-10-08T15:06:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en",
+    "zh",
+    "de",
+    "uk"
+  ],
+  "tags": [
+    "safetensors",
+    "timegpt",
+    "causal-lm",
+    "pytorch",
+    "0.5b",
+    "text-generation",
+    "ru",
+    "en",
+    "zh",
+    "de",
+    "uk",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 506656000,
+  "parameters_human": "506.7M",
+  "storage_bytes": 1013333656,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TimeGPT-1 | Model Catalog | Microsoft Foundry - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models/TimeGPT-1",
+      "snippet": "TimeGPT-1 is the first foundation model for time series forecasting and anomaly detection, developed by Nixtla. Unlike large language models, TimeGPT is independently trained on over 100 billion rows of time series data spanning financial, weather, energy, and web domains, using an encoder-decoder architecture built on self-attention with ..."
+    },
+    {
+      "title": "About TimeGPT - TimeGPT Foundational model for time series forecasting ...",
+      "url": "https://www.nixtla.io/docs/introduction/about_timegpt",
+      "snippet": "Learn about TimeGPT - the foundation model for time series. TimeGPT is a production-ready generative pretrained transformer model specifically designed for time series forecasting. It accurately forecasts domains such as retail, electricity, finance, and IoT with minimal code."
+    },
+    {
+      "title": "TimeGPT-2.1 | Microsoft Marketplace",
+      "url": "https://marketplace.microsoft.com/en-us/product/saas/nixtla.tgpt-2-1",
+      "snippet": "TimeGPT is an AI model for time series forecasting that enables data scientists, developers, and analysts to quickly generate accurate predictions, anomaly detection, and insights from temporal data, addressing the common challenges of complex model development, lack of specialized expertise, and high maintenance overhead."
+    },
+    {
+      "title": "TimeGPT on Microsoft Foundry via Azure Marketplace - nixtla.io",
+      "url": "https://www.nixtla.io/blog/timegpt-azure-marketplace",
+      "snippet": "Deploy with Managed Compute TimeGPT deploys today through a hub-based project using Managed Compute — make sure Azure Marketplace purchases are enabled on your subscription first, since Nixtla&#x27;s models are offered as a partner listing sold through Marketplace. Open the Microsoft Foundry model catalog and search \"timegpt\"."
+    },
+    {
+      "title": "GitHub - Nixtla/nixtla: TimeGPT-2.1: production ready pre-trained Time ...",
+      "url": "https://github.com/Nixtla/nixtla",
+      "snippet": "TimeGPT-2.1: production ready pre-trained Time Series Foundation Model for forecasting and anomaly detection. Generative pretrained transformer for time series trained on over 100B data points."
+    }
+  ]
+}

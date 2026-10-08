@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nourhan-anber91/distilgpt2-finetune",
+  "slug": "nourhan-anber91-distilgpt2-finetune",
+  "author": "nourhan-anber91",
+  "url": "https://huggingface.co/nourhan-anber91/distilgpt2-finetune",
+  "created_at": "2026-10-08T01:47:30.000Z",
+  "updated_at": "2026-10-08T01:48:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 983041812,
+  "storage_human": "983 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème d'abonnement tiktok - Mail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37328141-probleme-d-abonnement-tiktok",
+      "snippet": "Aug 28, 2021 · J'ai le même problème tik tok a de sérieux problèmes tu t'abonnes a des personnes mes sur ton profile ta liste …"
+    },
+    {
+      "title": "tiktok运营全攻略:从下载到赚钱流程详解 (10000字纯干货)",
+      "url": "https://www.zhihu.com/tardis/zm/art/573476219",
+      "snippet": "五、Tik Tok推荐的底层逻辑与雷区禁忌 1.流量是分层的。 用新号连续更新三天，每天两条。 如果视频总播放量在0-100，说明当前账 …"
+    },
+    {
+      "title": "怎么玩TIK TOK？ - 知乎",
+      "url": "https://www.zhihu.com/question/286138132",
+      "snippet": "一、tik tok怎么注册？ 1.无法直接从国内版切换账号登录，需要重新注册，ios用户可以切换其他国家的服务器直接下载； 2.可以使 …"
+    },
+    {
+      "title": "Problème de live sur tik tok - Forum TikTok - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36396128-probleme-de-live-sur-tik-tok",
+      "snippet": "Jan 4, 2020 · Résumé de la discussion Le problème décrit est l’impossibilité d’activer la fonction live malgré plus de 1000 abonnés, …"
+    },
+    {
+      "title": "hypermesh中如何检查和清理重复单元 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a948d6512194d10a2ccd2e70.html",
+      "snippet": "Sep 15, 2017 · hypermesh中如何检查和清理重复单元,本经验教会大家如何在hyermeh中检查和清理重复单元。"
+    }
+  ]
+}

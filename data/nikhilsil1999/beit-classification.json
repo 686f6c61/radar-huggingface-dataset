@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nikhilsil1999/beit-classification",
+  "slug": "nikhilsil1999-beit-classification",
+  "author": "nikhilsil1999",
+  "url": "https://huggingface.co/nikhilsil1999/beit-classification",
+  "created_at": "2026-10-08T16:49:49.000Z",
+  "updated_at": "2026-10-08T16:49:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEiT — transformers 4.10.1 documentation - Hugging Face",
+      "url": "https://huggingface.co/transformers/v4.10.1/model_doc/beit.html",
+      "snippet": "After pre-training BEiT, we directly fine-tune the model parameters on downstream tasks by appending task layers upon the pretrained encoder. Experimental results on image classification and semantic segmentation show that our model achieves competitive results with previous pre-training methods."
+    },
+    {
+      "title": "BEiT: BERT Pre-Training of Image Transformers - microsoft.com",
+      "url": "https://www.microsoft.com/en-us/research/publication/beit-bert-pre-training-of-image-transformers/",
+      "snippet": "After pre-training BEiT, we directly fine-tune the model parameters on downstream tasks by appending task layers upon the pretrained encoder. Experimental results on image classification and semantic segmentation show that our model achieves competitive results with previous pre-training methods."
+    },
+    {
+      "title": "Beit - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/beit",
+      "snippet": "Beit Imagenet classifier and general purpose backbone. Beit is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    },
+    {
+      "title": "BEiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.46.3/en/model_doc/beit",
+      "snippet": "After pre-training BEiT, we directly fine-tune the model parameters on downstream tasks by appending task layers upon the pretrained encoder. Experimental results on image classification and semantic segmentation show that our model achieves competitive results with previous pre-training methods."
+    },
+    {
+      "title": "Beit - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/compute/models/beit",
+      "snippet": "Beit is a machine learning model that can classify images from the Imagenet dataset. It can also be used as a backbone in building more complex models for specific use cases."
+    }
+  ]
+}

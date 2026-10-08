@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Qwen3-VL-4B-Instruct-NPU2",
+  "slug": "openflowlm-qwen3-vl-4b-instruct-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Qwen3-VL-4B-Instruct-NPU2",
+  "created_at": "2026-10-08T16:55:02.000Z",
+  "updated_at": "2026-10-08T16:55:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4136768755,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastFlowLM/Qwen3-VL-4B-Instruct-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Qwen3-VL-4B-Instruct-NPU2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-VL-4B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-VL-4B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-VL-4B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_vl_4b_instruct",
+      "snippet": "Qwen3-VL-4B-Instruct Multimodal 4B vision‑language model with enhanced visual reasoning capabilities. Qwen3‑VL is a vision‑language model from Alibaba Cloud capable of understanding both text and images for multimodal reasoning tasks such as visual question answering and image captioning."
+    },
+    {
+      "title": "qwen3-vl:4b-instruct - ollama.com",
+      "url": "https://ollama.com/library/qwen3-vl:4b-instruct",
+      "snippet": "Qwen3-VL models require Ollama 0.12.7 Qwen3-VL is the most powerful vision-language model in the Qwen family to date. In this generation, there are improvements to the model in many areas: its understanding and generating text, perceiving and reasoning about visual content, supporting longer context lengths, understanding spatial relationships and dynamic videos, or interacting with AI agents ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Meet Qwen3-VL — the most powerful vision-language model in the Qwen series to date. This generation delivers comprehensive upgrades across the board: superior text understanding & generation, deeper visual perception & reasoning, extended context length, enhanced spatial and video dynamics comprehension, and stronger agent interaction capabilities. Available in Dense and MoE architectures ..."
+    }
+  ]
+}

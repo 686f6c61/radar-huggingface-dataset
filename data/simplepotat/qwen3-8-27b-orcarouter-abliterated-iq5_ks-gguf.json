@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Simplepotat/Qwen3.8-27B-OrcaRouter-Abliterated-IQ5_KS-GGUF",
+  "slug": "simplepotat-qwen3-8-27b-orcarouter-abliterated-iq5_ks-gguf",
+  "author": "Simplepotat",
+  "url": "https://huggingface.co/Simplepotat/Qwen3.8-27B-OrcaRouter-Abliterated-IQ5_KS-GGUF",
+  "created_at": "2026-10-08T17:52:03.000Z",
+  "updated_at": "2026-10-08T17:57:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "llama.cpp",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "vision-language",
+    "mmproj",
+    "mtp",
+    "function-calling",
+    "reasoning",
+    "imatrix",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 20361337152,
+  "storage_human": "20.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Simplepotat/Qwen3.8-27B-IQ5_KS-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Simplepotat/Qwen3.8-27B-IQ5_KS-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.8 27b Uncensored Orcarouter - GGUF Model (2 parts)",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-27b-uncensored-orcarouter.html",
+      "snippet": "Download Qwen3.8 27b Uncensored Orcarouter GGUF model. 113.4 GB, 83,608 downloads, 91 likes. Split into 2 parts."
+    },
+    {
+      "title": "Qwen3.8-27B Uncensored GGUF: Abliterated Local Build",
+      "url": "https://www.orcarouter.ai/blog/qwen-3-8-27b-uncensored-gguf",
+      "snippet": "Qwen 3.8 27B uncensored GGUF is a real download, and the build to start with is Qwen3.8-27B-Uncensored-GGUF — published on Hugging Face on August 16, 2026 as the llama.cpp-native sibling of our abliterated FP8 release. It is the same refusal-removed 27-billion-parameter weights as Qwen3.8-27B-Uncensored-FP8, converted to GGUF for local inference: F16 plus 12 quantization tiers from Q2_K to ..."
+    },
+    {
+      "title": "Qwen 3.8 27B Uncensored Local: GGUF Quants + llama.cpp",
+      "url": "https://www.orcarouter.ai/blog/how-to-run-qwen-3-8-27b-uncensored-locally",
+      "snippet": "Run Qwen 3.8 27B uncensored locally: pick the GGUF quant for your VRAM, serve it with llama.cpp or Ollama, and respect the research-only boundary."
+    }
+  ]
+}

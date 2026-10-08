@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "asad959191/Llama-3.2-1B-Instruct-GGUF",
+  "slug": "asad959191-llama-3-2-1b-instruct-gguf",
+  "author": "asad959191",
+  "url": "https://huggingface.co/asad959191/Llama-3.2-1B-Instruct-GGUF",
+  "created_at": "2026-10-08T01:38:44.000Z",
+  "updated_at": "2026-10-08T01:38:45.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th"
+  ],
+  "tags": [
+    "gguf",
+    "facebook",
+    "meta",
+    "llama",
+    "llama-3",
+    "text-generation",
+    "en",
+    "de",
+    "fr",
+    "it",
+    "pt",
+    "hi",
+    "es",
+    "th",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 196,
+  "trending_score": 0,
+  "parameters": 1235814432,
+  "parameters_human": "1.24B",
+  "storage_bytes": 17157953114,
+  "storage_human": "17.2 GB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les magasins Intermarché Villeneuve-d'Ascq et les alentours",
+      "url": "https://www.intermarche.com/tous-les-magasins/hauts-de-france/nord/villeneuve-d'ascq?msockid=39ce5013f786639a3eb847fff63962bf",
+      "snippet": "Faites vos courses chez Intermarché en magasin, Drive et la livraison à domicile partout en France."
+    },
+    {
+      "title": "Boucherie la cousinerie Villeneuve-d'Ascq (59650)",
+      "url": "https://boucheries.net/59/villeneuve-d-ascq/boucherie-la-cousinerie-s92",
+      "snippet": "Sep 24, 2026 · Boucherie « Boucherie la cousinerie » chem. Des Crieurs 27 à Villeneuve-d'Ascq : adresse, téléphone, horaires."
+    },
+    {
+      "title": "Les magasins Intermarché Hauts-de-France",
+      "url": "https://www.intermarche.com/tous-les-magasins/hauts-de-france?msockid=39ce5013f786639a3eb847fff63962bf",
+      "snippet": "Faites vos courses chez Intermarché en magasin, Drive et la livraison à domicile partout en France."
+    },
+    {
+      "title": "La Boucherie de Cousinerie — Boucherie à Villeneuve-d'ascq",
+      "url": "https://www.boucherie-charcuterie.fr/la-boucherie-de-cousinerie-villeneuve-d-ascq.html",
+      "snippet": "La Boucherie de Cousinerie est installée 27 Chemin des Crieurs, à Villeneuve-d'ascq (Nord), en région Hauts-de-France. Le …"
+    },
+    {
+      "title": "Tous les magasins Intermarché à Villeneuve-d'Ascq - Pubeco",
+      "url": "https://www.pubeco.fr/point-de-vente/villeneuve-d-ascq/intermarche",
+      "snippet": "Pubeco.fr regroupe pour vous tous les points de vente de l’enseigne dans votre ville. Retrouvez en un coup d’œil les adresses, …"
+    }
+  ]
+}

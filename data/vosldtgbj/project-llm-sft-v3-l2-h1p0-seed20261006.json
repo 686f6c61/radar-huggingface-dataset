@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vosldtgbj/project-llm-sft-v3-l2-h1p0-seed20261006",
+  "slug": "vosldtgbj-project-llm-sft-v3-l2-h1p0-seed20261006",
+  "author": "vosldtgbj",
+  "url": "https://huggingface.co/vosldtgbj/project-llm-sft-v3-l2-h1p0-seed20261006",
+  "created_at": "2026-10-08T16:58:08.000Z",
+  "updated_at": "2026-10-08T17:00:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "japanese",
+    "supervised-fine-tuning",
+    "any-to-any",
+    "base_model:vosldtgbj/project-llm-cpt-1p0-top10-02-lora-15",
+    "base_model:finetune:vosldtgbj/project-llm-cpt-1p0-top10-02-lora-15",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951718050,
+  "storage_human": "24.0 GB",
+  "base_model": "vosldtgbj/project-llm-cpt-1p0-top10-02-lora-15",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/",
+      "snippet": "Supervised Fine-Tuning (SFT) is a method of adapting a pre-trained language model using a smaller dataset containing labeled examples. The model learns to produce the desired output for a given input, improving its performance on a specific task or type of instruction."
+    },
+    {
+      "title": "From SFT to GRPO: A Practical Guide to Modern LLM Fine-Tuning ...",
+      "url": "https://arzerin.com/2026/08/20/llm-post-training-sft-dpo-ppo-grpo-peft-lora-qlora/",
+      "snippet": "Learn how SFT, DPO, PPO, GRPO, PEFT, LoRA, and QLoRA fit together in modern LLM post-training, when to use each technique, and how to combine them effectively."
+    },
+    {
+      "title": "LLM Alignment: Complete Guide on SFT, RLHF, DPO, and GRPO",
+      "url": "https://eyagarci.github.io/posts/LLM-Alignment-SFT-RLHF-DPO-GRPO/",
+      "snippet": "Introduction Language model alignment (LLM Alignment) has become one of the most critical challenges in modern artificial intelligence. A pre-trained language model like GPT-4, Claude, or Llama, however powerful, is not naturally aligned with human intentions, ethical values, or desirable behaviors. Without alignment, these models can generate toxic content, provide dangerous instructions, or ..."
+    },
+    {
+      "title": "Hands-on SFT Practical: Fine-tuning a Model - apxml.com",
+      "url": "https://apxml.com/courses/rlhf-reinforcement-learning-human-feedback/chapter-2-sft-phase-rlhf/sft-execution-practical",
+      "snippet": "This practical guide demonstrates the steps to perform SFT on a pre-trained language model. The exercise utilizes libraries from the Hugging Face ecosystem, specifically transformers, datasets, and trl (Transformer Reinforcement Learning), which significantly simplifies the process."
+    },
+    {
+      "title": "SFT Fine-Tuning: Transform Base LLM to Chat Model (3-Stage Guide - 2025)",
+      "url": "https://langcopilot.com/posts/2025-07-16-supervised-fine-tuning-sft-llms-practical-guide",
+      "snippet": "Complete SFT fine-tuning guide for 2025: Transform base LLMs into instruction-following chat models using Supervised Fine-Tuning. Learn 3-stage evolution (base → instruct → chat), dataset selection (Alpaca 52K, Dolly-15k, Open-Orca 4.2M), LoRA optimization (3-10x faster, 70% cost reduction), training costs ($10-20 for 7B on A100). Includes SFT vs RLHF comparison and best practices."
+    }
+  ]
+}

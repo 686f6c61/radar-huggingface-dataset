@@ -1,0 +1,169 @@
+{
+  "schema": 1,
+  "id": "nkthebass/tinybrainbot-61m-a10m-v4.1-moe-base",
+  "slug": "nkthebass-tinybrainbot-61m-a10m-v4-1-moe-base",
+  "author": "nkthebass",
+  "url": "https://huggingface.co/nkthebass/tinybrainbot-61m-a10m-v4.1-moe-base",
+  "created_at": "2026-10-08T18:26:24.000Z",
+  "updated_at": "2026-10-08T18:26:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "mixtral",
+    "text-generation",
+    "tinybrainbot",
+    "mixture-of-experts",
+    "moe",
+    "research",
+    "small-language-model",
+    "from-scratch",
+    "pretrained",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:wikimedia/wikipedia",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:OctoThinker/MegaMath-Web-Pro-Max",
+    "dataset:HuggingFaceFW/finepdfs-edu",
+    "dataset:bigcode/the-stack-smol",
+    "dataset:manu/project_gutenberg",
+    "dataset:lucadiliello/bookcorpusopen",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64204032,
+  "parameters_human": "64.2M",
+  "storage_bytes": 385932904,
+  "storage_human": "386 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (0-shot)",
+      "value": 42.2
+    },
+    {
+      "task": null,
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (0-shot)",
+      "value": 25
+    },
+    {
+      "task": null,
+      "dataset": "SciQ",
+      "metric": "acc_norm (0-shot)",
+      "value": 61.7
+    },
+    {
+      "task": null,
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 28.6
+    },
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "acc (0-shot)",
+      "value": 26
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (0-shot)",
+      "value": 36.5
+    },
+    {
+      "task": null,
+      "dataset": "PIQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 60.8
+    },
+    {
+      "task": null,
+      "dataset": "WinoGrande",
+      "metric": "acc (0-shot)",
+      "value": 51.4
+    },
+    {
+      "task": null,
+      "dataset": "Social IQa",
+      "metric": "acc (0-shot)",
+      "value": 36.4
+    },
+    {
+      "task": null,
+      "dataset": "CommonsenseQA",
+      "metric": "acc (0-shot)",
+      "value": 19.2
+    },
+    {
+      "task": null,
+      "dataset": "LAMBADA (OpenAI)",
+      "metric": "acc (0-shot)",
+      "value": 21.1
+    },
+    {
+      "task": null,
+      "dataset": "BoolQ",
+      "metric": "acc (0-shot)",
+      "value": 56
+    },
+    {
+      "task": null,
+      "dataset": "MathQA",
+      "metric": "acc_norm (0-shot)",
+      "value": 23.1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Research and data - a nkthebass Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nkthebass/research-and-data",
+      "snippet": "Controlled experiments and datasets. nkthebass/tinybrainbot-pilot-100m-datamix Text Generation •Updated 17 days ago Note 3-arm 100M study: same model, different data"
+    },
+    {
+      "title": "nkthebass/tinybrainbot-25m-v4-base · Hugging Face",
+      "url": "https://huggingface.co/nkthebass/tinybrainbot-25m-v4-base",
+      "snippet": "A 25M-parameter language model trained from scratch on 11B tokens, part of the TinyBrainBot v4 series. 25.2M parameters in the transformer itself, plus a 5.4M tied embedding for its 14k vocabulary (30.6M total)."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "nkthebas - itch.io",
+      "url": "https://nkthebass.itch.io/",
+      "snippet": "nkthebas Hello! I am a PC hardware enthusiast and hobby developer. my most recent and biggest project is TinyBrain GPT studio. The first made by made for consumer user friendly GPT style language model creation studio available for windows 10/11. It is currently in beta as I will be working on the full release in the mean time."
+    },
+    {
+      "title": "Open Source AI Models — The open-source AI model directory",
+      "url": "https://opensourceaimodels.net/",
+      "snippet": "55 open-source models indexed The open-source AI model directory. Licenses, parameters, benchmarks, VRAM and inference pricing for Llama, Mistral, Qwen, DeepSeek, Gemma, Phi and more. Pick the right open-weights model for your use case."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ahmedheakl/rand-dual",
+  "slug": "ahmedheakl-rand-dual",
+  "author": "ahmedheakl",
+  "url": "https://huggingface.co/ahmedheakl/rand-dual",
+  "created_at": "2026-10-08T16:41:16.000Z",
+  "updated_at": "2026-10-08T17:26:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-to-image",
+    "image-editing",
+    "mobile",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 600597538,
+  "parameters_human": "600.6M",
+  "storage_bytes": 1627138850,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ahmedheakl (Ahmed Heakl) · GitHub",
+      "url": "https://github.com/ahmedheakl",
+      "snippet": "Passionate about deep learning models and eager to develop and deploy AI tech that everyone can use. - ahmedheakl"
+    },
+    {
+      "title": "ahmedheakl/rand-mobile · Hugging Face",
+      "url": "https://huggingface.co/ahmedheakl/rand-mobile",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ahmedheakl/rand-mobile at main - Hugging Face",
+      "url": "https://huggingface.co/ahmedheakl/rand-mobile/tree/main",
+      "snippet": "Instructions to use ahmedheakl/rand-mobile with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use ahmedheakl/rand-mobile with Transformers:"
+    },
+    {
+      "title": "GitHub - ahmedheakl/ahmedheakl: Config files for my GitHub profile.",
+      "url": "https://github.com/ahmedheakl/ahmedheakl",
+      "snippet": "AI Research × Software Engineering 🚀 👋 Hi, I&#x27;m @ahmedheakl 🎓 PhD student in Computer Vision at MBZUAI, advised by Prof. Salman Khan and Prof. Fahad Khan 👀 I&#x27;m interested in Computer Vision 🧠, NLP 🌐, Software Engineering 📱 🌱 I&#x27;m currently learning self-evolving VLMs 🎼."
+    },
+    {
+      "title": "ahmedheakl (Ahmed Heakl) - Hugging Face",
+      "url": "https://huggingface.co/ahmedheakl/models",
+      "snippet": "CV, NLP, RL, intelligent decision making"
+    }
+  ]
+}

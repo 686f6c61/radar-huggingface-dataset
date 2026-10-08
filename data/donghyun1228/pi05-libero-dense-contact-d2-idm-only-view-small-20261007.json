@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007",
+  "slug": "donghyun1228-pi05-libero-dense-contact-d2-idm-only-view-small-20261007",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-idm-only-view-small-20261007",
+  "created_at": "2026-10-08T02:05:20.000Z",
+  "updated_at": "2026-10-08T02:15:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "pi05",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11519863757,
+  "storage_human": "11.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LIBERO Dense Contact Sweep (density 2, 2026-10-02) - claru.ai",
+      "url": "https://claru.ai/datasets/donghyun1228-libero-dense-contact-sweep-d2-20261002",
+      "snippet": "A regenerated dataset of robotic manipulation tasks in MuJoCo simulation covering spatial reasoning, object manipulation, goal-directed tasks, and 10-task sequences with dense contact sweep rays and multiple synchronized viewpoints."
+    },
+    {
+      "title": "lerobot/pi05-libero · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05-libero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lerobot/pi05_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_libero_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LIBERO · Hugging Face",
+      "url": "https://huggingface.co/docs/lerobot/libero",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Lifelong-Robot-Learning/LIBERO: Benchmarking Knowledge ...",
+      "url": "https://github.com/Lifelong-Robot-Learning/LIBERO",
+      "snippet": "LIBERO is designed for studying knowledge transfer in multitask and lifelong robot learning problems. Successfully resolving these problems require both declarative knowledge about objects/spatial relationships and procedural knowledge about motion/behaviors."
+    }
+  ]
+}

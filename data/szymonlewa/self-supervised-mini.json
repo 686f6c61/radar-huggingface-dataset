@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szymonlewa/self-supervised-mini",
+  "slug": "szymonlewa-self-supervised-mini",
+  "author": "szymonlewa",
+  "url": "https://huggingface.co/szymonlewa/self-supervised-mini",
+  "created_at": "2026-10-08T18:49:15.000Z",
+  "updated_at": "2026-10-08T18:49:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "self-supervised",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Self-Supervised Learning (SSL) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/self-supervised-learning-ssl/",
+      "snippet": "Self-Supervised Learning (SSL) is a type of machine learning where a model is trained using data that does not have any labels or answers provided. Instead of needing people to label the data, the model finds patterns and creates its own labels from the data automatically."
+    },
+    {
+      "title": "Self-supervised learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Self-supervised_learning",
+      "snippet": "Self-supervised learning (SSL) is a paradigm in machine learning where a model is trained on a task using the data itself to generate supervisory signals, rather than relying on externally-provided labels."
+    },
+    {
+      "title": "What Is Self-Supervised Learning? Examples & Applications",
+      "url": "https://www.snowflake.com/en/fundamentals/self-supervised-learning/",
+      "snippet": "Learn what self-supervised learning is and how it works. Explore self-learning AI, key models, and comparisons with supervised and unsupervised learning."
+    },
+    {
+      "title": "Self-Supervised AI: Advancing Machine Learning Through Autonomous Data ...",
+      "url": "https://www.netguru.com/blog/self-supervised-ai",
+      "snippet": "Discover how self-supervised learning is revolutionizing AI by leveraging unlabeled data to create robust and efficient models across various domains like computer vision and natural language processing."
+    },
+    {
+      "title": "Self-Supervised Learning: The Future of AI/ML Ayush",
+      "url": "https://www.researchgate.net/publication/384285537_Self-Supervised_Learning_The_Future_of_AIML_Ayush",
+      "snippet": "Self-supervised learning has emerged as a promising approach in artificial intelligence and machine learning (AI/ML) research, enabling machines to learn from large amounts of unlabeled data ..."
+    }
+  ]
+}

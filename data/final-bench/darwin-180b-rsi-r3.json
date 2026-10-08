@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/Darwin-180B-RSI-R3",
+  "slug": "final-bench-darwin-180b-rsi-r3",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/Darwin-180B-RSI-R3",
+  "created_at": "2026-10-01T04:41:07.000Z",
+  "updated_at": "2026-10-05T23:05:42.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "darwin",
+    "darwin-rsi",
+    "model-level-rsi",
+    "recursive-self-improvement",
+    "self-improvement",
+    "vidraft",
+    "final-bench",
+    "qwen",
+    "qwen3.8",
+    "moe",
+    "mixture-of-experts",
+    "sparse-moe",
+    "180b",
+    "hybrid-attention",
+    "linear-attention",
+    "long-context",
+    "262k-context",
+    "vision-language",
+    "multimodal",
+    "reasoning",
+    "reasoning-model",
+    "thinking",
+    "structured-output",
+    "document-extraction",
+    "extractbench",
+    "evasionbench",
+    "ztc",
+    "zero-token-confidence",
+    "eval-results",
+    "korean",
+    "english",
+    "vllm",
+    "openai-compatible",
+    "conversational",
+    "en",
+    "ko",
+    "zh",
+    "ja",
+    "multilingual",
+    "arxiv:2605.14386",
+    "arxiv:2609.20269",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 17,
+  "downloads_30d": 271,
+  "trending_score": 14,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33788",
+      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
+    },
+    {
+      "title": "final - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/final",
+      "snippet": "Définition, exemples et prononciation de final : Qui est à la fin, qui sert de fin (contraire initi…"
+    },
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33790",
+      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
+    },
+    {
+      "title": "final — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/final",
+      "snippet": "Tout ou partie de cet article a été extrait du Dictionnaire de l’Académie française, huitième édition, 1932-1935 (final), mais l’article a …"
+    },
+    {
+      "title": "« Finals » ou « finaux » ? [pluriel de final] | La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/finals-ou-finaux",
+      "snippet": "Aug 23, 2023 · Règle : le pluriel de l’adjectif « final » au masculin peut s’écrire des deux formes : « finals » ou « finaux ». Ce double …"
+    }
+  ]
+}

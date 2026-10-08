@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amador1989/DeepthroatKrea2",
+  "slug": "amador1989-deepthroatkrea2",
+  "author": "Amador1989",
+  "url": "https://huggingface.co/Amador1989/DeepthroatKrea2",
+  "created_at": "2026-10-08T18:21:33.000Z",
+  "updated_at": "2026-10-08T18:21:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1201757095,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amador1989/RealismKrea2 · Hugging Face",
+      "url": "https://huggingface.co/Amador1989/RealismKrea2",
+      "snippet": "Amador1989 / RealismKrea2 Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Amador1989/UltraRealKrea2 · Hugging Face",
+      "url": "https://huggingface.co/Amador1989/UltraRealKrea2",
+      "snippet": "Amador1989 / UltraRealKrea2 Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Amador1989/Krea2-realism · Hugging Face",
+      "url": "https://huggingface.co/Amador1989/Krea2-realism",
+      "snippet": "Amador1989 / Krea2-realism Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Amador1989/ArianaKrea2 · Hugging Face",
+      "url": "https://huggingface.co/Amador1989/ArianaKrea2",
+      "snippet": "Amador1989 / ArianaKrea2 Like 0 Text-to-Image Diffusers lora template:diffusion-lora Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Flutterwhat on X: \"Amador1989/UltraRealKrea2\" / X",
+      "url": "https://x.com/flutterwhat/status/2105696704460910677",
+      "snippet": "Amador1989/UltraRealKrea2 01 Oct 2026 16:29:50"
+    }
+  ]
+}

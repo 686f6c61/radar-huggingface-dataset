@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "iu7x/DeepSeek-V3.2-Speciale",
+  "slug": "iu7x-deepseek-v3-2-speciale",
+  "author": "iu7x",
+  "url": "https://huggingface.co/iu7x/DeepSeek-V3.2-Speciale",
+  "created_at": "2026-10-08T18:08:38.000Z",
+  "updated_at": "2026-10-08T18:08:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v32",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "base_model:finetune:deepseek-ai/DeepSeek-V3.2-Exp-Base",
+    "license:mit",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 685355329792,
+  "parameters_human": "685.36B",
+  "storage_bytes": 689484423011,
+  "storage_human": "689.5 GB",
+  "base_model": "deepseek-ai/DeepSeek-V3.2-Exp-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iu7x/DeepSeek-V3.2-Speciale · Hugging Face",
+      "url": "https://huggingface.co/iu7x/DeepSeek-V3.2-Speciale",
+      "snippet": "The model structure of DeepSeek-V3.2 and DeepSeek-V3.2-Speciale are the same as DeepSeek-V3.2-Exp. Please visit DeepSeek-V3.2-Exp repo for more information about running this model locally."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V3.2-Speciale · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.2-Speciale",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-V3.2-Speciale download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/deepseek-v3-2-speciale/",
+      "snippet": "DeepSeek-V3.2-Speciale is the high-compute, ultra-reasoning variant of DeepSeek-V3.2, designed specifically to push the boundaries of mathematical, logical, and algorithmic intelligence. It builds on the DeepSeek Sparse Attention (DSA) framework, delivering dramatically improved long-context efficiency while preserving full model quality."
+    },
+    {
+      "title": "DeepSeek-V3.2-Speciale by Deepseek - stackviv.ai",
+      "url": "https://stackviv.ai/deepseek/deepseek-v3.2-speciale",
+      "snippet": "Learn about DeepSeek-V3.2-Speciale, an AI model by Deepseek. See capabilities, API pricing, benchmarks & how it compares to similar models."
+    },
+    {
+      "title": "DeepSeek-V3.2: Pushing the Frontier of Open Large Language Models",
+      "url": "https://www.deepseek.com/en/news/deepseek-v3-2/",
+      "snippet": "DeepSeek-V3.2 and V3.2-Speciale launch with world-leading reasoning, thinking in tool-use, and gold-medal performance in IMO, CMO, ICPC & IOI 2025."
+    }
+  ]
+}

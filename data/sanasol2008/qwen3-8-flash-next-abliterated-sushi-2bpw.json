@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw",
+  "slug": "sanasol2008-qwen3-8-flash-next-abliterated-sushi-2bpw",
+  "author": "sanasol2008",
+  "url": "https://huggingface.co/sanasol2008/Qwen3.8-Flash-Next-Abliterated-Sushi-2bpw",
+  "created_at": "2026-10-08T01:27:57.000Z",
+  "updated_at": "2026-10-08T08:43:00.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "sushi",
+    "exl3",
+    "2bit",
+    "abliterated",
+    "qwen",
+    "moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 21142110099,
+  "parameters_human": "21.14B",
+  "storage_bytes": 69640759320,
+  "storage_human": "69.6 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fill up my mom - Kwai",
+      "url": "https://www.kwai.com/discover/fill-up-my-mom",
+      "snippet": "1.6K publicações. Descubra vídeos relacionados a Fill up my mom no Kwai. Veja mais vídeos"
+    },
+    {
+      "title": "WHEN MOM'S CUP IS EMPTY, FIND A WAY TO FILL IT UP - YouTube",
+      "url": "https://m.youtube.com/watch?v=QCIuM2iOCqI",
+      "snippet": "Jan 18, 2024 · WHEN MOM'S CUP IS EMPTY, FIND A WAY TO FILL IT UP | MOM LIFE 2024 | SPEND A ROUGH TO GOOD DAY …"
+    },
+    {
+      "title": "x.com",
+      "url": "https://x.com/sweet_luszt/status/1794162225332269132",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Fill up my mom - Kwai",
+      "url": "https://www.kwai.com/discover/fill-up-my-mom.",
+      "snippet": "Drag & Drop or Choose Files to Transcode \"This money is going to help with my mom’s surgery” 🥹 ️ @Neuro Gum I’ve teamed up …"
+    },
+    {
+      "title": "Fill Up My Mom Website PNG Images - Pngtree",
+      "url": "https://pngtree.com/so/fill-up-my-mom-website",
+      "snippet": "Are you searching for Fill Up My Mom Website png hd images or vector? Choose from 80+ Fill Up My Mom Website graphic …"
+    }
+  ]
+}

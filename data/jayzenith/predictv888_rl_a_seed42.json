@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "JayZenith/PREDICTv888_RL_A_SEED42",
+  "slug": "jayzenith-predictv888_rl_a_seed42",
+  "author": "JayZenith",
+  "url": "https://huggingface.co/JayZenith/PREDICTv888_RL_A_SEED42",
+  "created_at": "2026-10-08T01:32:19.000Z",
+  "updated_at": "2026-10-08T01:43:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

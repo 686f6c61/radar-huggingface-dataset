@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14",
+  "slug": "hungrydino-gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run1-gen14",
+  "created_at": "2026-10-08T16:38:41.000Z",
+  "updated_at": "2026-10-08T16:39:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103747868,
+  "storage_human": "104 MB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "European Wire Color Codes (IEC): AC and DC Supply Wiring | TP-Link",
+      "url": "https://www.tp-link.com/us/support/faq/4463/",
+      "snippet": "Jun 10, 2026 · Learn European wire colors for IEC’s AC and DC supply wiring, including single phase, 3 phase, and DC …"
+    },
+    {
+      "title": "European Wire Color Codes (IEC): AC and DC Wiring for Europe and …",
+      "url": "https://uat.tapo.com/en/faqs/european-wire-color-codes-iec-ac-and-dc-wiring-for-europe-and-the-uk/",
+      "snippet": "Sep 29, 2026 · Learn European wire colors for IEC’s AC and DC supply wiring, including single phase, 3 phase, and DC …"
+    },
+    {
+      "title": "Standard European Voltage Guide: Tolerances, Plugs, and IEC Wiring ...",
+      "url": "https://electricalflux.com/learn-components/standard-european-voltage-tolerances-wiring-colors",
+      "snippet": "Sep 9, 2026 · The standard European voltage is 230V AC at 50Hz, harmonized across the continent to allow cross-border equipment …"
+    },
+    {
+      "title": "Mains electricity by country - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Mains_electricity_by_country",
+      "snippet": "This is an overview of mains electricity by country, with a focus on listing the regional differences in plug and socket types, nominal …"
+    },
+    {
+      "title": "European Wiring Colors Explained: IEC 60446 Standards & Voltage …",
+      "url": "https://electricalflux.com/wire-general/european-wiring-colors-iec-60446-voltage-guide",
+      "snippet": "Sep 9, 2026 · Under the EN 50160 power quality standard, the nominal voltage in Europe is 230V AC, with a statutory tolerance of …"
+    }
+  ]
+}

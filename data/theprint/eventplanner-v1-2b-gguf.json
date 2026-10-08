@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "theprint/EventPlanner-v1-2B-GGUF",
+  "slug": "theprint-eventplanner-v1-2b-gguf",
+  "author": "theprint",
+  "url": "https://huggingface.co/theprint/EventPlanner-v1-2B-GGUF",
+  "created_at": "2026-10-08T17:15:36.000Z",
+  "updated_at": "2026-10-08T17:19:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "fine-tuned",
+    "lora",
+    "sft",
+    "auto-sft",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1942653248,
+  "parameters_human": "1.94B",
+  "storage_bytes": 20694541599,
+  "storage_human": "20.7 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThePrint",
+      "url": "https://theprint.in/",
+      "snippet": "Sep 22, 2026 · ThePrint is India’s digital news platform for latest news, breaking stories, in-depth analysis and opinion on politics, …"
+    },
+    {
+      "title": "ThePrint - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ThePrint",
+      "snippet": "ThePrint is noted for focusing on politics and policy. [4] The venture is associated with the Off the Cuff programme that is broadcast …"
+    },
+    {
+      "title": "Politics LATEST NEWS | Politics NEWS TODAY - ThePrint",
+      "url": "https://theprint.in/category/politics/",
+      "snippet": "Sep 19, 2026 · Breaking and latest news, live updates on Indian politics and parties, BJP, Congress, NDA, INDIA bloc, national and …"
+    },
+    {
+      "title": "ThePrint",
+      "url": "https://subscriptions.theprint.in/default",
+      "snippet": "Subscribe to ThePrint for in-depth coverage of politics, governance, economy, and more with high-quality journalism and exclusive …"
+    },
+    {
+      "title": "ThePrint - YouTube",
+      "url": "https://www.youtube.com/@ThePrintIndia",
+      "snippet": "ThePrint.in—headquartered in New Delhi—is a news, analysis, opinion, and knowledge venture, launched in August 2017 by Editor …"
+    }
+  ]
+}

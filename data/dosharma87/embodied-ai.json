@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dosharma87/embodied-ai",
+  "slug": "dosharma87-embodied-ai",
+  "author": "dosharma87",
+  "url": "https://huggingface.co/dosharma87/embodied-ai",
+  "created_at": "2026-10-08T17:14:57.000Z",
+  "updated_at": "2026-10-08T17:15:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Embodied AI | Meaning, Working, Types, Applications & Challenges - EDUCBA",
+      "url": "https://www.educba.com/embodied-ai/",
+      "snippet": "What is Embodied AI? Embodied AI refers to the artificial intelligence systems that learn, reason, and perform tasks through interaction with a physical or simulated environment. The basic idea is that intelligence becomes more useful when an AI system can not only understand information but also interact with the world. For example, a traditional AI model can identify a cup in an image. An ..."
+    },
+    {
+      "title": "embodied-ai (embodied-ai) - Hugging Face",
+      "url": "https://huggingface.co/embodied-ai/models",
+      "snippet": "Org profile for embodied-ai on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "What is embodied AI? How it powers autonomous systems",
+      "url": "https://www.techtarget.com/searchenterpriseai/definition/embodied-AI",
+      "snippet": "Some prominent examples of embodied artificial intelligence are autonomous vehicles, humanoid robots and drones. Although the term embodied AI or embodied intelligence is relatively new, it&#x27;s related to mechanisms like adaptive control systems, cybernetics and autonomous systems, which have been around for centuries."
+    },
+    {
+      "title": "Artificial Intelligence (AI) Algorithm and Models for Embodied Agents ...",
+      "url": "https://www.researchgate.net/publication/388146155_Artificial_Intelligence_AI_Algorithm_and_Models_for_Embodied_Agents_Robots_and_Drones",
+      "snippet": "Abstract Embodied agents, including robots and drones, rely on a myriad of artificial intelligence (AI) algorithms and models to interact with and navigate their environments."
+    },
+    {
+      "title": "Overview of Embodied Artificial Intelligence - Medium",
+      "url": "https://medium.com/machinevision/overview-of-embodied-artificial-intelligence-b7f19d18022",
+      "snippet": "Overview of Embodied Artificial Intelligence Recent research trends in Artificial Intelligence, Machine Learning, and Computer Vision have led to a growing research space called Embodied AI ..."
+    }
+  ]
+}

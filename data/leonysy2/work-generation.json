@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Leonysy2/work-generation",
+  "slug": "leonysy2-work-generation",
+  "author": "Leonysy2",
+  "url": "https://huggingface.co/Leonysy2/work-generation",
+  "created_at": "2026-10-08T17:50:37.000Z",
+  "updated_at": "2026-10-08T17:50:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leonardo AI: A Full Breakdown Of Tools And Capabilities",
+      "url": "https://fosspost.org/leonardo-ai/",
+      "snippet": "Explore Leonardo AI&#x27;s tools, pricing, live canvas, ControlNet features, and image generation capabilities in 2026. Compare Leonardo AI vs Midjourney and DALL-E for creators and developers."
+    },
+    {
+      "title": "Leonardo.ai - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Leonardo.ai",
+      "snippet": "Leonardo.Ai&#x27;s core platform allows users to generate images, illustrations, and photorealistic visuals from text prompts. Features include Realtime Canvas, which transforms sketches into AI-generated images in real time, and Motion, which animates static images into short videos. [17] The platform supports custom AI model training on user-specific datasets for consistent outputs. [18] It also ..."
+    },
+    {
+      "title": "Leonardo.Ai - Generative AI Platform for Images, Art & Video",
+      "url": "https://www.leonardo.ai/",
+      "snippet": "Scale campaigns and content production with Leonardo for Teams. AI creative tools for marketing and design leaders to deliver more, faster."
+    },
+    {
+      "title": "Leonardo AI Review 2026: My Real Image & Video Test",
+      "url": "https://www.piclumen.com/blog/leonardo-ai-review/",
+      "snippet": "I tested Leonardo AI for image generation, video generation, pricing, and workflow. Here is my honest Leonardo AI review after real prompt testing."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    }
+  ]
+}

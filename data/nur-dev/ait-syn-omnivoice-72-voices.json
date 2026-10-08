@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "nur-dev/ait-syn-omnivoice-72-voices",
+  "slug": "nur-dev-ait-syn-omnivoice-72-voices",
+  "author": "nur-dev",
+  "url": "https://huggingface.co/nur-dev/ait-syn-omnivoice-72-voices",
+  "created_at": "2026-10-08T01:25:02.000Z",
+  "updated_at": "2026-10-08T01:25:59.000Z",
+  "license": "apache-2.0-and-boson-higgs-audio-2",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "kk",
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "omnivoice",
+    "audio",
+    "text-to-speech",
+    "kazakh",
+    "russian",
+    "english",
+    "fixed-voices",
+    "phrase-streaming",
+    "kk",
+    "ru",
+    "en",
+    "base_model:k2-fsa/OmniVoice",
+    "base_model:finetune:k2-fsa/OmniVoice",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 612577288,
+  "parameters_human": "612.6M",
+  "storage_bytes": 2590418441,
+  "storage_human": "2.6 GB",
+  "base_model": "k2-fsa/OmniVoice",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

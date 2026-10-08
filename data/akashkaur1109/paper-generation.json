@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "akashkaur1109/paper-generation",
+  "slug": "akashkaur1109-paper-generation",
+  "author": "akashkaur1109",
+  "url": "https://huggingface.co/akashkaur1109/paper-generation",
+  "created_at": "2026-10-08T16:44:52.000Z",
+  "updated_at": "2026-10-08T16:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Curvedo | Academic Paper Generator",
+      "url": "https://curvedo.com/",
+      "snippet": "Curvedo&#x27;s model is trained to produce clear, academic-level text in many languages, and it includes polishing and refinement to ensure your final paper reads naturally and professionally — even if English isn&#x27;t your first language."
+    },
+    {
+      "title": "AI Paper Writer | Free AI Tool to Write Your Research Paper",
+      "url": "https://paperguide.ai/writer/",
+      "snippet": "Paperguide&#x27;s AI paper writer drafts research papers grounded in 200M+ real, citable sources. Auto-citations in APA, MLA & Chicago. Start free."
+    },
+    {
+      "title": "Free AI Academic Content Generator | Create Scholarly Content Fast",
+      "url": "https://musely.ai/tools/academic-content-generator",
+      "snippet": "Academic Content Generator: Create Scholarly Content With AI Generate high-quality academic content tailored to your specific teaching needs with our AI-powered academic content generator. From research papers to educational materials, create well-structured scholarly content that aligns with your learning objectives and assessment criteria."
+    },
+    {
+      "title": "GenPaper - AI Research Paper Generator",
+      "url": "https://genpaper.ai/",
+      "snippet": "Generate high-quality research papers with AI assistance. Create literature reviews, theses, dissertations, and academic articles."
+    },
+    {
+      "title": "AI Research Paper Generator: Write Academic Papers Faster (April 2026)",
+      "url": "https://www.jenova.ai/en/resources/ai-research-paper-generator",
+      "snippet": "Use an AI research paper generator to accelerate literature reviews, draft manuscripts, and manage citations. Try Jenova&#x27;s Academic Research Assistant free."
+    }
+  ]
+}

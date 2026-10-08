@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Sssunset/MedPLIB-BRISC",
+  "slug": "sssunset-medplib-brisc",
+  "author": "Sssunset",
+  "url": "https://huggingface.co/Sssunset/MedPLIB-BRISC",
+  "created_at": "2026-10-08T16:29:33.000Z",
+  "updated_at": "2026-10-08T17:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "medical",
+    "brain-tumor",
+    "mri",
+    "segmentation",
+    "classification",
+    "multimodal",
+    "lora",
+    "medplib",
+    "image-segmentation",
+    "en",
+    "arxiv:2412.09278",
+    "arxiv:2308.16184",
+    "base_model:Huangxs/MedPLIB-7b-2e",
+    "base_model:adapter:Huangxs/MedPLIB-7b-2e",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 574055196,
+  "storage_human": "574 MB",
+  "base_model": "Huangxs/MedPLIB-7b-2e",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ShawnHuang497/MedPLIB: The official repository of the paper ...",
+      "url": "https://github.com/ShawnHuang497/MedPLIB",
+      "snippet": "The official repository of the paper &#x27;Towards a Multimodal Large Language Model with Pixel-Level Insight for Biomedicine&#x27; - ShawnHuang497/MedPLIB"
+    },
+    {
+      "title": "AI Model Sunset Tracker: Which Models Are Still Supported — benchr",
+      "url": "https://benchr.org/tracker",
+      "snippet": "Sunset Tracker · Updated September 11, 2026 AI model sunset tracker: is yours still supported? The full retirement record, including models already gone → Plan the move off a model that has a date → Two answers live here, and the second matters as much as the first: the models with an announced end date, and the models that still have none. Check the exact API model ID you deploy ..."
+    },
+    {
+      "title": "Brikk — AI Blockbench Model Generator",
+      "url": "https://brikke.vercel.app/",
+      "snippet": "Generate professional Blockbench models from a text prompt. Preview in 3D and export to .bbmodel, Java, and Bedrock for your Minecraft plugins, mods, and resource packs."
+    },
+    {
+      "title": "GitHub - Peilin-FF/Tumor",
+      "url": "https://github.com/Peilin-FF/Tumor/tree/main",
+      "snippet": "Course project: fine-tune MedPLIB-7b-2e (Llama-7B MoE + CLIP-L/336 + SAM-Med2D-B) so one model answers the fixed prompt with a class (glioma / meningioma / pituitary tumor / non-tumorous) and a <SEG> token that is decoded into a tumour mask."
+    },
+    {
+      "title": "Sssunset (Peilin Feng) - Hugging Face",
+      "url": "https://huggingface.co/Sssunset/datasets",
+      "snippet": "NLP updated a dataset 16 minutes ago published a dataset 21 minutes ago"
+    }
+  ]
+}

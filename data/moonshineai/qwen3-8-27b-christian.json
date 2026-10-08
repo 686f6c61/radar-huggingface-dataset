@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "moonshineai/qwen3.8-27b-Christian",
+  "slug": "moonshineai-qwen3-8-27b-christian",
+  "author": "moonshineai",
+  "url": "https://huggingface.co/moonshineai/qwen3.8-27b-Christian",
+  "created_at": "2026-10-08T17:58:12.000Z",
+  "updated_at": "2026-10-08T18:13:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815536,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alibaba Cloud Model Studio:qwen3.8-27b",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen 3.8 AI Models (27B & 2.4T MoE) - Singularity Moments",
+      "url": "https://singularitymoments.com/qwen-3-8-ai-models/",
+      "snippet": "Explore Alibaba Cloud&#x27;s Qwen 3.8 model suite, featuring dense 27B and massive 2.4T MoE open-weights models for high-throughput coding and reasoning workflows."
+    },
+    {
+      "title": "qwen--qwen3.8-27b | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3.8-27b",
+      "snippet": "Compact Qwen3.8 27B vision-language model for coding, agents, reasoning, images, and video. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "Qwen3.8-27B - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-27b",
+      "snippet": "The Qwen3.8 27B native vision-language dense model builds upon the 3.6-27B version, with key improvements in coding and office productivity capabilities across both text and visual modalities. It enables more reliable end-to-end completion of complex tasks, delivering consistently trustworthy results."
+    },
+    {
+      "title": "Qwen3.8 - lmstudio.ai",
+      "url": "https://lmstudio.ai/models/qwen3.8",
+      "snippet": "Qwen3.8-27B is a dense 27B vision-language model for coding, professional work, research, and long-horizon agentic tasks, with configurable reasoning and a native 262K-token context window."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "gyorilab/whisper-large-v3-turbo-anv-tso-mlx",
+  "slug": "gyorilab-whisper-large-v3-turbo-anv-tso-mlx",
+  "author": "gyorilab",
+  "url": "https://huggingface.co/gyorilab/whisper-large-v3-turbo-anv-tso-mlx",
+  "created_at": "2026-10-08T14:59:49.000Z",
+  "updated_at": "2026-10-08T15:00:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "ts"
+  ],
+  "tags": [
+    "mlx",
+    "whisper",
+    "mlx-whisper",
+    "xitsonga",
+    "automatic-speech-recognition",
+    "ts",
+    "base_model:dsfsi-anv/whisper-large-v3-turbo-anv-tso",
+    "base_model:finetune:dsfsi-anv/whisper-large-v3-turbo-anv-tso",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1613978157,
+  "storage_human": "1.6 GB",
+  "base_model": "dsfsi-anv/whisper-large-v3-turbo-anv-tso",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

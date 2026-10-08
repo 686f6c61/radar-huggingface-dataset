@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GuiAworld/unstableRevolution_SDNQ",
+  "slug": "guiaworld-unstablerevolution_sdnq",
+  "author": "GuiAworld",
+  "url": "https://huggingface.co/GuiAworld/unstableRevolution_SDNQ",
+  "created_at": "2026-10-08T18:03:55.000Z",
+  "updated_at": "2026-10-08T18:04:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:Flux2KleinPipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2159894016,
+  "parameters_human": "2.16B",
+  "storage_bytes": 21425158304,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GuiAworld/unstableRevolution_SDNQ · Hugging Face",
+      "url": "https://huggingface.co/GuiAworld/unstableRevolution_SDNQ",
+      "snippet": "Instructions to use GuiAworld/unstableRevolution_SDNQ with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use GuiAworld/unstableRevolution_SDNQ with Diffusers:"
+    },
+    {
+      "title": "codeShare/unstableRevolution_SDNQ · Hugging Face",
+      "url": "https://huggingface.co/codeShare/unstableRevolution_SDNQ",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GuiAworld · GitHub",
+      "url": "https://github.com/GuiAworld/",
+      "snippet": "Repositories GuiAworld Block or report user Block or report GuiAworld Block user Prevent this user from interacting with your repositories and sending you notifications. Learn more about blocking users. You must be logged in to block users."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Complete guide to Stable Diffusion models in 2026. Learn where to safely download checkpoints, install realistic models, understand model architecture, and manage your collection. Includes direct download links for SD 1.5, SDXL, Flux.1, and custom models."
+    },
+    {
+      "title": "SDNQ Quantization | InvokeAI Documentation",
+      "url": "https://invoke.ai/configuration/sdnq-quantization/",
+      "snippet": "SDNQ (SD.Next Quantization Engine) is a quantization scheme that stores model weights at 4-5 bits with an optional low-rank SVD correction. InvokeAI loads SDNQ-quantized models as full HuggingFace diffusers pipelines and dequantizes weights on the fly during inference, with no extra Python package required."
+    }
+  ]
+}

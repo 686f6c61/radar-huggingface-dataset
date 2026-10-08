@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "priyanair/mixer-retrieval-finetune",
+  "slug": "priyanair-mixer-retrieval-finetune",
+  "author": "priyanair",
+  "url": "https://huggingface.co/priyanair/mixer-retrieval-finetune",
+  "created_at": "2026-10-08T16:42:16.000Z",
+  "updated_at": "2026-10-08T16:42:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "priyanair (प्रिया कुमार) - Hugging Face",
+      "url": "https://huggingface.co/priyanair/models",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago priyanair/contrastive-learning published a modelabout 2 hours ago priyanair/contrastive-learning upvoted a paper about 2 hours ago VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction View all activity"
+    },
+    {
+      "title": "nasutionallen/mixer-retrieval-finetuning · Hugging Face",
+      "url": "https://huggingface.co/nasutionallen/mixer-retrieval-finetuning",
+      "snippet": "nasutionallen / mixer-retrieval-finetuning like 0 Safetensors PyTorch mixer retrieval License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mixer for Retrieval Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Medium",
+      "url": "https://medium.com/@jedi.anakintano/the-complete-guide-to-fine-tuning-large-language-models-with-unsloth-from-theory-to-production-4a47e93816e5",
+      "snippet": "Fine-tuning Large Language Models (LLMs) has emerged as one of the most powerful techniques for customizing AI models to specific use…"
+    }
+  ]
+}

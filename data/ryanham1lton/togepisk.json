@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/TogepiSK",
+  "slug": "ryanham1lton-togepisk",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/TogepiSK",
+  "created_at": "2026-10-08T15:10:45.000Z",
+  "updated_at": "2026-10-08T15:13:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116242822,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ryanham1lton (Ryan James Hamilton) - Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "Ryanham1lton/KipJT · Hugging Face",
+      "url": "https://huggingface.co/Ryanham1lton/KipJT",
+      "snippet": "Ryanham1lton / KipJT like 0 License:cc-by-4.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "Ryanham1lton AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/ryanham1lton",
+      "snippet": "Browse AI models attributed to Ryanham1lton, sourced from verified model catalogs."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "ryanham1lton | Storyteller.ai",
+      "url": "https://storyteller.ai/profile/ryanham1lton",
+      "snippet": "Storyteller.ai AI creation engine Make movies like this with Seedance 2.0 - cheaper than anywhere else. Seedance 2.0 model is live on ArtCraft before anywhere else. Create cinematic AI video with fluid motion and Hollywood-level scenes."
+    }
+  ]
+}

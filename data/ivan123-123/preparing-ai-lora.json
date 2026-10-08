@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "ivan123-123/preparing.ai-lora",
+  "slug": "ivan123-123-preparing-ai-lora",
+  "author": "ivan123-123",
+  "url": "https://huggingface.co/ivan123-123/preparing.ai-lora",
+  "created_at": "2026-10-08T15:18:54.000Z",
+  "updated_at": "2026-10-08T15:39:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2.5-vl",
+    "lora",
+    "html-generation",
+    "designforge",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119809088,
+  "storage_human": "120 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

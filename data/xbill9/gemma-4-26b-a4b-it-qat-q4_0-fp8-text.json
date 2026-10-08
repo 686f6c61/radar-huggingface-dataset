@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-26B-A4B-it-qat-q4_0-fp8-text",
+  "slug": "xbill9-gemma-4-26b-a4b-it-qat-q4_0-fp8-text",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-fp8-text",
+  "created_at": "2026-10-08T01:44:03.000Z",
+  "updated_at": "2026-10-08T01:44:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4_text",
+    "gemma4",
+    "compressed-tensors",
+    "fp8",
+    "w8a8",
+    "qat",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 25233141790,
+  "parameters_human": "25.23B",
+  "storage_bytes": 26085396942,
+  "storage_human": "26.1 GB",
+  "base_model": "google/gemma-4-26B-A4B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Text Generation Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=text-generation&p=2&sort=created",
+      "snippet": "xbill9/gemma-4-26B-A4B-it-qat-w8a8-int8-emb4 · Beetle-FineWeb-24B-5/beetle-bilingual-l2-80-late-b5-fineweb-2b-fin-eng · xbill9/gemma-4-31B-it-qat-q4_0-exact-gguf."
+    },
+    {
+      "title": "Google's QAT Gemma 4 26B-A4B on One TPU v6e - DEV Community",
+      "url": "https://dev.to/gde/googles-qat-gemma-4-26b-a4b-on-one-tpu-v6e-156x-the-kv-cache-and-19x-the-throughput-of-fp8-36kl",
+      "snippet": "26.09.2026 ... The QAT 26B serves on one v6e chip at 17.43 GiB of HBM, with 53,888 tokens of KV cache and 1,283 output tokens per second. RedHat's FP8 build ..."
+    },
+    {
+      "title": "4-Bit Embeddings Decode up to 1.39x Faster on One L4",
+      "url": "https://dev.to/aws-builders/gemma-4-on-amazon-sagemaker-4-bit-embeddings-decode-up-to-139x-faster-on-one-l4-36mf",
+      "snippet": "30.09.2026 ... Google publishes each Gemma 4 QAT model in ... 26B A4B emb4: https://huggingface.co/xbill9/gemma-4-26B-A4B-it-qat-q4_0-w4a16-ct-text-emb4 ..."
+    },
+    {
+      "title": "A 4 GB Laptop GPU Beats a 12-Core CPU by 4.3x on Gemma 4",
+      "url": "https://dev.to/gde/a-4-gb-laptop-gpu-beats-a-12-core-cpu-by-43x-on-gemma-4-4150",
+      "snippet": "16.09.2026 ... The model is google/gemma-4-E2B-it-qat-q4_0-gguf , a 3.35 GB ... More from Google Developer Experts · Google's QAT Gemma 4 26B-A4B on ..."
+    },
+    {
+      "title": "Gemma 4 on a Tesla T4, Part 3: Int4 Embeddings Serve E2B in 2.86 ...",
+      "url": "https://dev.to/gde/gemma-4-on-a-tesla-t4-part-3-int4-embeddings-serve-e2b-in-286-gib-at-230x-bf16-3kch",
+      "snippet": "30.09.2026 ... served xbill9/gemma-4-E2B-it-qat-q4_0-w4a16-ct-text-emb4 max_model_len 16384 Model loading took 2.86 GiB memory and 19.400900 seconds torch ..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nadeem-Shoukath115113/spiral-so101-rlt12-lehome-r1-demos57-rm1-b30-bs32-5k-clr1e4",
+  "slug": "nadeem-shoukath115113-spiral-so101-rlt12-lehome-r1-demos57-rm1-b30-bs32-5k-clr1e4",
+  "author": "Nadeem-Shoukath115113",
+  "url": "https://huggingface.co/Nadeem-Shoukath115113/spiral-so101-rlt12-lehome-r1-demos57-rm1-b30-bs32-5k-clr1e4",
+  "created_at": "2026-10-08T16:47:21.000Z",
+  "updated_at": "2026-10-08T16:47:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "so101",
+    "spiral",
+    "residual-rl",
+    "rlt",
+    "pi05",
+    "correlated-noise",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 365724474,
+  "storage_human": "366 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculette crédit consommation - Meilleurtaux",
+      "url": "https://www.meilleurtaux.com/credit-consommation/simulation-credit-conso/calculette-credit-conso.html",
+      "snippet": "Pour estimer un crédit à la consommation, vous pouvez utiliser un simulateur en ligne. Vous y indiquez le montant désiré, la durée …"
+    },
+    {
+      "title": "Simulateur Crédit à la Consommation - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/simulation-devis/credits/simulateur-credit-conso.html",
+      "snippet": "Réalisez une simulation de prêt en ligne pour financer un projet (vacances, mariage, fête …)"
+    },
+    {
+      "title": "Simulation Crédit Conso : Calculette et Simulateur en Ligne",
+      "url": "https://www.lesfurets.com/credit-conso/demande/simulation-credit-conso",
+      "snippet": "Feb 27, 2023 · Réalisez rapidement une simulation de crédit conso en ligne et comparez les crédits conso pour bénéficier des …"
+    },
+    {
+      "title": "Simulation credit conso : simulez votre pret conso | Cofidis",
+      "url": "https://www.cofidis.fr/fr/credit/credit-consommation/simulation-credit-consommation.html",
+      "snippet": "Une simulation de crédit conso vous permet de déterminer, en ligne et à tout moment, votre capacité d’emprunt et de …"
+    },
+    {
+      "title": "Simulateur prêt personnel, simulation crédit conso : LCL",
+      "url": "https://www.lcl.fr/simulateurs-et-devis/simulateur-pret-personnel",
+      "snippet": "Apr 26, 2024 · Réalisez une simulation gratuite de votre crédit consommation. Ce prêt personnel vous permet de financer ce que …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "qijiashen/agentrl-bench-stale-sampler-ckpt",
+  "slug": "qijiashen-agentrl-bench-stale-sampler-ckpt",
+  "author": "qijiashen",
+  "url": "https://huggingface.co/qijiashen/agentrl-bench-stale-sampler-ckpt",
+  "created_at": "2026-10-08T17:15:54.000Z",
+  "updated_at": "2026-10-08T17:18:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19470156259,
+  "storage_human": "19.5 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - THUDM/AgentBench: A Comprehensive Benchmark to Evaluate LLMs ...",
+      "url": "https://github.com/THUDM/AgentBench",
+      "snippet": "The current repository contains the function-calling version of AgentBench, integrated with AgentRL, an end-to-end multitask and mutliturn LLM Agent RL framework. If you wish to use the older version, you can revert to v0.1 and v0.2. Comparing to the original AgentBench, this version uses a function-calling style prompt, and adds fully-containerized deployment support for the following tasks ..."
+    },
+    {
+      "title": "qijiashen (qijia shen) - Hugging Face",
+      "url": "https://huggingface.co/qijiashen",
+      "snippet": "qijiashen/agentrl-push-test-sb-01M448HS8JSJ55MKVT1PBA7GDE 5B•Updated about 8 hours ago"
+    },
+    {
+      "title": "AgentBench - LLM Agent Evaluation Benchmark | EveryDev.ai",
+      "url": "https://www.everydev.ai/tools/agentbench",
+      "snippet": "THUDM THUDM (Tsinghua University Data Mining group) builds large-scale AI research tools and benchmarks, including AgentBench and AgentRL. The group develops open-source frameworks for evaluating and training LLM-based agents across diverse real-world environments. Their work spans language model evaluation, reinforcement learning for agents, and multimodal AI systems, with publications at top ..."
+    },
+    {
+      "title": "THUDM/AgentBench | Repositories | There&#x27;s An AI For That",
+      "url": "https://theresanaiforthat.com/company/thudm/repository/AgentBench/",
+      "snippet": "The current repository contains the function-calling version of AgentBench, integrated with AgentRL, an end-to-end multitask and mutliturn LLM Agent RL framework."
+    },
+    {
+      "title": "AgentBench: Evaluate LLMs as Agents | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/agentbench/",
+      "snippet": "Track agent capability over model versions and report results to the public leaderboard Provide task environments for training and evaluating function-calling agents alongside AgentRL // How AgentBench compares AgentBench alongside other open-source benchmark harnesses tools AI/TLDR tracks, ranked by GitHub stars."
+    }
+  ]
+}

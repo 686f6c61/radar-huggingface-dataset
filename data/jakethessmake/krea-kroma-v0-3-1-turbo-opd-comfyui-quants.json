@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jakethessmake/Krea-Kroma-v0.3.1-Turbo-OPD-ComfyUI-Quants",
+  "slug": "jakethessmake-krea-kroma-v0-3-1-turbo-opd-comfyui-quants",
+  "author": "jakethessmake",
+  "url": "https://huggingface.co/jakethessmake/Krea-Kroma-v0.3.1-Turbo-OPD-ComfyUI-Quants",
+  "created_at": "2026-10-08T16:40:19.000Z",
+  "updated_at": "2026-10-08T16:42:49.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "krea2",
+    "krea",
+    "kroma",
+    "text-to-image",
+    "comfyui",
+    "quantized",
+    "int8",
+    "base_model:lodestones/Kroma",
+    "base_model:quantized:lodestones/Kroma",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34808714796,
+  "storage_human": "34.8 GB",
+  "base_model": "lodestones/Kroma",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kroma v0.3.1: On-Policy Distillation for the Krea 2 Fine-Tune",
+      "url": "https://comfyui-wiki.com/en/news/2026-10-07-kroma-v0-3-1-opd",
+      "snippet": "Lodestones ships Kroma v0.3.1 OPD for Krea 2: an on-policy distilled turbo checkpoint that stays inside the base model&#x27;s distribution, with LoRA training carried over."
+    },
+    {
+      "title": "kroma-v0.3.1-turbo-opd.safetensors · lodestones/Kroma at main",
+      "url": "https://huggingface.co/lodestones/Kroma/blob/main/kroma-v0.3.1-turbo-opd.safetensors",
+      "snippet": "lodestones / Kroma Like 353 Text-to-Image krea2 krea comfyui License:krea-2-community-license Model card FilesFiles and versions xet Community 23 Copy to bucket new main Kroma /kroma-v0.3.1-turbo-opd.safetensors lodestones OPD run V0.1 c64e3ab verified1 day ago Download"
+    },
+    {
+      "title": "lodestones/Kroma at main - Hugging Face",
+      "url": "https://huggingface.co/lodestones/Kroma/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kroma 0.3.1 hands-on: uncensored Krea 2 finetune… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a11b1285fb8f280b53b37f7a6d",
+      "snippet": "A Reddit user tested Kroma 0.3.1 (a Krea 2 finetune) and finds it better than Qwen 2.1 and Krea2 overall. Highlights: uncensored, strong prompt following, good detail, wide style range, and notably free of the common body-horror artifacts. A one-line \"Rogue from X-Men\" prompt produced an on-model image without stray costume details. Download links provided on Hugging Face (kroma-v0.3.1-turbo ..."
+    },
+    {
+      "title": "Kroma v0.3: Krea 2 Fine-Tune Adds Full Base Checkpoint",
+      "url": "https://comfyui-wiki.com/en/news/2026-08-31-kroma-v0-3",
+      "snippet": "Lodestones ships Kroma v0.3 for Krea 2: a non-distilled full base checkpoint, a turbo variant, and a community LoRA pack that unlocks prompt following fixes."
+    }
+  ]
+}

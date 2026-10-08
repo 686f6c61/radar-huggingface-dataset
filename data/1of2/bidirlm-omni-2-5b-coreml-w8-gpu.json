@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1of2/bidirlm-omni-2.5b-coreml-w8-gpu",
+  "slug": "1of2-bidirlm-omni-2-5b-coreml-w8-gpu",
+  "author": "1of2",
+  "url": "https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-gpu",
+  "created_at": "2026-10-08T17:48:20.000Z",
+  "updated_at": "2026-10-08T17:48:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "gpu",
+    "text-embeddings",
+    "image-embeddings",
+    "audio-embeddings",
+    "multimodal",
+    "apple-silicon",
+    "feature-extraction",
+    "base_model:BidirLM/BidirLM-Omni-2.5B-Embedding",
+    "base_model:finetune:BidirLM/BidirLM-Omni-2.5B-Embedding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2756764197,
+  "storage_human": "2.8 GB",
+  "base_model": "BidirLM/BidirLM-Omni-2.5B-Embedding",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BidirLM/BidirLM-Omni-2.5B-Embedding · Hugging Face",
+      "url": "https://huggingface.co/BidirLM/BidirLM-Omni-2.5B-Embedding",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BidirLM-Embedding - a BidirLM Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/BidirLM/bidirlm-embedding",
+      "snippet": "BidirLM is a family of 5 frontier bidirectional encoders, including an omnimodal variant at 2.5B."
+    },
+    {
+      "title": "BidirLM: From Text to Omnimodal Bidirectional Encoders by Adapting and ...",
+      "url": "https://arxiv.org/pdf/2604.02045",
+      "snippet": "Beyond outperforming its omnimodal counterparts, BidirLM-Omni-2.5B establishes new Pareto frontiers regardless of data transparency. Notably, the merging process efficiently leverages the strengths of each model variant, enabling it to rank first among all baselines on the MIEB benchmark and third on MAEB, surpassing bimodal architectures many ..."
+    },
+    {
+      "title": "vendor-crispasr/hf_readmes/bidirlm-omni-2.5b-GGUF.md at main - GitHub",
+      "url": "https://github.com/Luoshu-Intelligent-Computing/vendor-crispasr/blob/main/hf_readmes/bidirlm-omni-2.5b-GGUF.md",
+      "snippet": "BidirLM-Omni 2.5B — Qwen3-derived bidirectional encoder, 2048-d shared embedding space, 90+ languages. Includes text + audio + vision paths (audio via the shared CrispAudio library; vision via the BidirLM ViT + DeepStack hierarchy)."
+    },
+    {
+      "title": "BidirLM-Omni-2.5B-Embedding: Image-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bidirlm-omni-2.5b-embedding-bidirlm",
+      "snippet": "Choose BidirLM-Omni for proven multilingual performance across 119 languages; choose Jina if you prioritize model size and inference speed and can tolerate reduced multilingual coverage. Both target similar use cases, but Jina emphasizes efficiency while BidirLM-Omni emphasizes breadth."
+    }
+  ]
+}

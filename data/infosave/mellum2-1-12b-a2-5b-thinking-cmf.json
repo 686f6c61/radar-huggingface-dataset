@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "infosave/Mellum2.1-12B-A2.5B-Thinking-CMF",
+  "slug": "infosave-mellum2-1-12b-a2-5b-thinking-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/Mellum2.1-12B-A2.5B-Thinking-CMF",
+  "created_at": "2026-10-08T18:21:42.000Z",
+  "updated_at": "2026-10-08T18:22:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cortiq",
+  "languages": [],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "local-inference",
+    "code-generation",
+    "moe",
+    "quantized",
+    "reasoning",
+    "thinking",
+    "vulkan",
+    "metal",
+    "text-generation",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6884556163,
+  "storage_human": "6.9 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JetBrains/Mellum2.1-12B-A2.5B-Thinking · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+      "snippet": "Mellum2.1 is the next version of Mellum2 Thinking. The architecture is unchanged (a 12B mixture-of-experts model with 2.5B active parameters), and almost all of the work for this version went into post-training, primarily reinforcement learning (RL):"
+    },
+    {
+      "title": "JetBrains/Mellum2-12B-A2.5B-Thinking-SFT · Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-SFT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mellum2.1 Thinking - 131k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/mellum2-1-12b-thinking",
+      "snippet": "Mellum2.1 Thinking is JetBrains&#x27; 2026-10-08 open-weight upgrade of Mellum2: same 12B MoE / 2.5B active / 131K context architecture, with much heavier reinforcement learning in real repositories for agentic coding, tool use, math, and reasoning."
+    },
+    {
+      "title": "Mellum2 12b A2.5b Thinking - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/mellum2-12b-a2-5b-thinking.html",
+      "snippet": "Download Mellum2 12b A2.5b Thinking GGUF model. 7.09 GB, 3,425 downloads, 9 likes."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Thinking: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-thinking-jetbrains",
+      "snippet": "Overview Mellum2-12B-A2.5B-Thinking is a reasoning-augmented language model built by JetBrains that emits explicit chain-of-thought reasoning before generating final answers. The model uses a Mixture-of-Experts architecture with 64 experts and activates 8 experts per token, resulting in 2.5B active parameters despite 12B total parameters. It combines sliding-window and full attention layers ..."
+    }
+  ]
+}

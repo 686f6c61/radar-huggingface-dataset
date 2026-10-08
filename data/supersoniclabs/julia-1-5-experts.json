@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "SupersonicLabs/Julia-1.5-experts",
+  "slug": "supersoniclabs-julia-1-5-experts",
+  "author": "SupersonicLabs",
+  "url": "https://huggingface.co/SupersonicLabs/Julia-1.5-experts",
+  "created_at": "2026-10-08T02:00:02.000Z",
+  "updated_at": "2026-10-08T02:00:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "decision-model",
+    "lora",
+    "text-classification",
+    "base_model:SupersonicLabs/Julia-1.5",
+    "base_model:adapter:SupersonicLabs/Julia-1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Story Tags - Literotica.com",
+      "url": "https://tags.literotica.com/first-time-category-tags/gay%20first%20time/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "11 gay movies with age-gap romances & where to watch them",
+      "url": "https://www.pride.com/culture/movies/age-gap-gay-movies",
+      "snippet": "Oct 9, 2025 · Gay movies with age-gap romances: A Single Man; Sorry Angel; Call Me By Your Name The Weinstein Company; …"
+    },
+    {
+      "title": "Story Tags - Literotica.com",
+      "url": "https://tags.literotica.com/gay-male-category-tags/first%20time/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "john-rocky/coreai-model-zoo - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo",
+      "snippet": "vor 3 Tagen ... Downloadable models and conversion recipes for Apple's Core AI on iPhone and Mac. Chat, vision, speech and generative models with per-model ..."
+    },
+    {
+      "title": "Meet Kyle Little, a Black,... - The Quintessential Gentleman | Facebook",
+      "url": "https://www.facebook.com/TheQuintessentialG/posts/meet-kyle-little-a-black-openly-gay-small-business-owner-adjunct-professor-and-c/1750500016505737/",
+      "snippet": "Meet Kyle Little, a Black, openly gay small business owner, adjunct professor, and community advocate running for Congress in New …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000",
+  "slug": "ishikaa-acquisition_student_as_tracin_medmcqa_llama8b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_tracin_medmcqa_llama8b_5000",
+  "created_at": "2026-10-08T18:25:40.000Z",
+  "updated_at": "2026-10-08T18:27:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=ishikaa%2Facquisition_student_AS_format_medmcqa_llama8b_10000",
+      "snippet": "ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000 Text Generation • 8B•Updated 5 days ago• 443"
+    },
+    {
+      "title": "ishikaa/acquisition_student_original_medmcqa_llama8b_10000 - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_original_medmcqa_llama8b_10000",
+      "snippet": "Instructions to use ishikaa/acquisition_student_original_medmcqa_llama8b_10000 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000",
+      "url": "https://featherless.ai/models/ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000",
+      "snippet": "The ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000 model is an 8 billion parameter language model with a 32768 token context length. This model is a fine-tuned variant, though specific details on its architecture, training data, and primary differentiators are not provided in the available documentation. Its intended use cases and unique capabilities are currently unspecified ..."
+    },
+    {
+      "title": "acquisition_student_AS_tracin_medmcqa_qwen3b_5000",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_AS_tracin_medmcqa_qwen3b_5000",
+      "snippet": "Deploy acquisition_student_AS_tracin_medmcqa_qwen3b_5000 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) is a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

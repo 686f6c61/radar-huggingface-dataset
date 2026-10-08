@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Xiesq/DepthART",
+  "slug": "xiesq-depthart",
+  "author": "Xiesq",
+  "url": "https://huggingface.co/Xiesq/DepthART",
+  "created_at": "2026-10-08T02:02:30.000Z",
+  "updated_at": "2026-10-08T02:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2147266626,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DepthART: Scaling Foundation Monocular Depth to Tiny Models",
+      "url": "https://arxiv.org/abs/2607.17099",
+      "snippet": "Recent geometric foundation models (e.g., Metric3D, Depth Anything and UniDepth) have substantially improved monocular depth estimation (MDE) in both cross-scene generalization and metric-scale prediction, yet these gains have not translated to tiny models. We bridge this gap with DepthART (Depth Anything Rethought for Tiny Models), which is a compact MDE model for on-device deployment across ..."
+    },
+    {
+      "title": "DepthART/README.md at main · xuefeng-cvr/DepthART · GitHub",
+      "url": "https://github.com/xuefeng-cvr/DepthART/blob/main/README.md",
+      "snippet": "DepthART scales foundation monocular depth estimation to compact Small, Base, and Large models. The release supports both affine-invariant relative depth and camera-aware metric depth, with optimized inference paths for desktop NVIDIA GPUs and Jetson Orin NX."
+    },
+    {
+      "title": "DepthART | Scaling Foundation Monocular Depth to Tiny Models",
+      "url": "https://xuefeng-cvr.github.io/DepthART/",
+      "snippet": "Algorithm Overview DepthART Recent geometric foundation models have advanced monocular depth estimation, yet their benefits remain limited for tiny models. We present DepthART, a compact model designed for robust on-device depth estimation across diverse scenes. To address dataset-specific overfitting and unstable metric adaptation under camera shifts, DepthART combines bias-resistant data ..."
+    },
+    {
+      "title": "DepthART: Scaling Foundation Monocular Depth to Tiny Models",
+      "url": "https://arxiv.org/html/2607.17099v1",
+      "snippet": "We present DepthART, a tiny monocular depth model that transfers much of the generalization ability of foundation MDE models to deployment-oriented backbones, while supporting stable metric calibration through encoder-frozen camera-conditioned fine-tuning."
+    },
+    {
+      "title": "GitHub - xuefeng-cvr/DepthART: Official project page for DepthART ...",
+      "url": "https://github.com/xuefeng-cvr/DepthART/blob/main/",
+      "snippet": "Overview DepthART scales foundation monocular depth estimation to compact Small, Base, and Large models. The release supports both affine-invariant relative depth and camera-aware metric depth, with optimized inference paths for desktop NVIDIA GPUs and Jetson Orin NX."
+    }
+  ]
+}

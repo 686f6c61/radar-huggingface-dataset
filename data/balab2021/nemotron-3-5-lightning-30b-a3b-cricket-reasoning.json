@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Balab2021/Nemotron-3.5-Lightning-30B-A3B-Cricket-Reasoning",
+  "slug": "balab2021-nemotron-3-5-lightning-30b-a3b-cricket-reasoning",
+  "author": "Balab2021",
+  "url": "https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-Cricket-Reasoning",
+  "created_at": "2026-10-08T18:42:47.000Z",
+  "updated_at": "2026-10-08T18:43:50.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron",
+    "reasoning",
+    "cricket",
+    "sft",
+    "megatron-bridge",
+    "conversational",
+    "dataset:Balab2021/CricketData-T20-Reasoning-Qwen3.8-Full",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 65844445916,
+  "storage_human": "65.8 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b/modelcard",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    },
+    {
+      "title": "Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA",
+      "snippet": "Instructions to use Balab2021/Nemotron-3.5-Lightning-30B-A3B-LoRA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 - Hugging Face",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4",
+      "snippet": "NVIDIA-Nemotron-3.5-Lightning-30B-A3B-NVFP4 is a large language model (LLM) trained by NVIDIA. The model employs a hybrid Mixture-of-Experts architecture, utilizing interleaved Mamba-2 and MoE layers, along with select Attention layers. The Lightning 3.5 model is released alongside a number of speculative decoding methods for faster text ..."
+    },
+    {
+      "title": "nemotron-3.5-lightning-30b-a3b Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-3.5-lightning-30b-a3b",
+      "snippet": "Fastest 30B A3B MoE model with leading domain accuracy for specialized agentic tasks"
+    },
+    {
+      "title": "Nemotron 3.5 Lightning — Megatron Bridge - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nemo/megatron-bridge/nightly/models/nemotron/nemotron3.5-lightning.html",
+      "snippet": "Nemotron 3.5 Lightning # NVIDIA Nemotron 3.5 Lightning 30B-A3B BF16 is a large language model trained by NVIDIA for reasoning, agentic, and conversational workloads. It uses a hybrid Mixture-of-Experts architecture with interleaved Mamba-2, MoE, and Attention layers, together with Multi-Token Prediction (MTP). This BF16 reference checkpoint has 30B total parameters and 3B active parameters ..."
+    }
+  ]
+}

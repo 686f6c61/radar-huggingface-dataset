@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BlackWolf-Media/SANA-Video_2.0_5B_720p",
+  "slug": "blackwolf-media-sana-video_2-0_5b_720p",
+  "author": "BlackWolf-Media",
+  "url": "https://huggingface.co/BlackWolf-Media/SANA-Video_2.0_5B_720p",
+  "created_at": "2026-10-08T18:32:46.000Z",
+  "updated_at": "2026-10-08T18:32:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "sana",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sana",
+    "text-to-video",
+    "image-to-video",
+    "SANA",
+    "SANA-Video",
+    "SANA-Video-2.0",
+    "720p",
+    "diffusion",
+    "LTX-2.3",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17871929677,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blackwolf",
+      "url": "https://www.blackwolf.world/",
+      "snippet": "BLACKWOLF SA | Route de Port 8 | 2503 Bienne | Switzerland | info@BLACKWOLF.world"
+    },
+    {
+      "title": "Cambli BlackWolf : le véhicule blindé du RAID pour les JO Paris 2024",
+      "url": "https://www.voitureblindee.fr/cambli-blackwolf-le-vehicule-blinde-du-raid-pour-les-jo-paris-2024/",
+      "snippet": "Vous connaissez désormais tout à propos du BlackWolf de Cambli. La recherche de performance, confort et maniabilité, font de ce …"
+    },
+    {
+      "title": "Camion blindé BlackWolf - Mission protection | Cambli",
+      "url": "https://cambli.com/blackwolf/",
+      "snippet": "Le BlackWolf convient aux agences de sécurité privée qui souhaitent assurer la sécurité de leurs agents lors d’événements publics …"
+    },
+    {
+      "title": "Société BLACKWOLF SECURITE : Chiffre d'affaires, statuts ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/blackwolf-securite-814891040",
+      "snippet": "Sep 8, 2026 · BLACKWOLF SECURITE à VILLIERS-SUR-MARNE (94350) : Bilans, statuts, chiffre d'affaires, dirigeants, …"
+    },
+    {
+      "title": "Blackwolf avec plate-forme tactique surélevée - Cambli",
+      "url": "https://cambli.com/vehicles/tactiques/blackwolf-with-elevated-tactical-platform/",
+      "snippet": "Tactiques Blackwolf avec plate-forme tactique surélevée Spécifications du véhicule Ford F-550 F-600 TACTIQUE PNBV Plus de …"
+    }
+  ]
+}

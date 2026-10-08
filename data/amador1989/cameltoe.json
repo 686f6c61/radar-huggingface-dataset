@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Amador1989/Cameltoe",
+  "slug": "amador1989-cameltoe",
+  "author": "Amador1989",
+  "url": "https://huggingface.co/Amador1989/Cameltoe",
+  "created_at": "2026-10-08T18:22:33.000Z",
+  "updated_at": "2026-10-08T18:22:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232303194,
+  "storage_human": "232 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cameltoe - v0.9 CAMELTOE - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/763145247011362333",
+      "snippet": "Download cameltoe - free LORA SD 1.5 AI model on TENSOR. CAMELTOE. By aaamovaaa854"
+    },
+    {
+      "title": "cameltoe - v0.9 AI Art by aaamovaaa854 - Free | Tensor.Art",
+      "url": "https://tensor.art/images/763145247019750945?model_id=763145247011362333",
+      "snippet": "AI generated image with cameltoe - v0.9. Create similar AI art free on TENSOR"
+    },
+    {
+      "title": "Amador1989 (Amador) - Hugging Face",
+      "url": "https://huggingface.co/Amador1989/activity/all",
+      "snippet": "None yet. Recent Activity. updated a model about 2 hours ago. Amador1989/CunnilingusLora. published a model about 2 hours ago"
+    },
+    {
+      "title": "[SDXL] cameltoe - v0.10 CAMELTOE - Free AI LORA | TensorHub Art",
+      "url": "https://tensorhub.art/models/763161585066902276",
+      "snippet": "Download [SDXL] cameltoe - free LORA SDXL 1.0 AI model on TENSORHUB ART. CAMELTOE, SDXL. By aaamovaaa854"
+    },
+    {
+      "title": "Amador1989/ZITNSFW · Hugging Face",
+      "url": "https://huggingface.co/Amador1989/ZITNSFW",
+      "snippet": "Use this model Instructions to use Amador1989/ZITNSFW with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Diffusers How to use Amador1989/ZITNSFW with Diffusers: pip install -U diffusers transformers accelerate import torch from diffusers import DiffusionPipeline # switch to \"mps\" for apple devices pipe = DiffusionPipeline.from ..."
+    }
+  ]
+}

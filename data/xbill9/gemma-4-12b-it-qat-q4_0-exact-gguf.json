@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf",
+  "slug": "xbill9-gemma-4-12b-it-qat-q4_0-exact-gguf",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-12B-it-qat-q4_0-exact-gguf",
+  "created_at": "2026-10-08T01:39:48.000Z",
+  "updated_at": "2026-10-08T01:40:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "q4_0",
+    "qat",
+    "text-only",
+    "text-generation",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 38,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 6716356736,
+  "storage_human": "6.7 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دوجنسه – پورن ایرانی دات کام",
+      "url": "https://www.pornirani.com/tag/%D8%AF%D9%88%D8%AC%D9%86%D8%B3%D9%87/?filter=popular",
+      "snippet": "Latest videos Most viewed videos Longest videos Popular videos Random videos 15K 70% گاییدن کون دوجنسه ی ایرانی"
+    },
+    {
+      "title": "دوجنسه ویدیوی / محبوب / HDRoom.xxx - فیلم های سکسی قشنگ.",
+      "url": "https://hdroom.xxx/fa/category/%D8%AF%D9%88%D8%AC%D9%86%D8%B3%D9%87",
+      "snippet": "بهترین ویدئوهای پورن را درباره دوجنسه تماشا کنید. HD Room – .ویدئو سکسی رایگان با اپدیت روزانه."
+    },
+    {
+      "title": "دوجنسه ایرانی Porn & Free XXX Videos - iPornTV",
+      "url": "https://iporntv.net/search/%D8%AF%D9%88%D8%AC%D9%86%D8%B3%D9%87+%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C",
+      "snippet": "Search and watch high-quality دوجنسه ایرانی XXX movies and sex clips on iPornTV."
+    },
+    {
+      "title": "'دوجنسه ایرانی' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=%D8%AF%D9%88%D8%AC%D9%86%D8%B3%D9%87++%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C",
+      "snippet": "14,026 دوجنسه ایرانی FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "س دوجنسه - 101 صحنه پورن داغ | eatout.xxx",
+      "url": "https://eatout.xxx/fa/search/%D8%B3-%D8%AF%D9%88%D8%AC%D9%86%D8%B3%D9%87",
+      "snippet": "101 ویدیو داغ از س دوجنسه را در eatout.xxx تماشا کنید. صحنه‌های جذاب، لحظات سکسی و کلیپ‌های پورن HD هیجان‌انگیز را ببینید."
+    }
+  ]
+}

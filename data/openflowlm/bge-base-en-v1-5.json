@@ -1,0 +1,383 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/bge-base-en-v1.5",
+  "slug": "openflowlm-bge-base-en-v1-5",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/bge-base-en-v1.5",
+  "created_at": "2026-10-08T17:08:55.000Z",
+  "updated_at": "2026-10-08T17:08:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "mteb",
+    "en",
+    "arxiv:2401.03462",
+    "arxiv:2312.15503",
+    "arxiv:2311.13534",
+    "arxiv:2310.07554",
+    "arxiv:2309.07597",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482752,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1311764408,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 76.14925373134328
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 39.32336517995478
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 70.16902252611425
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 93.386825
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 90.21276917991995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 93.37741030006174
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 48.846000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 48.14646269778261
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.761
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.330999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.333999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.92
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 54.010999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 41.181
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.967999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.538
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.542
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.980000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 54.208999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 63.605000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 66.05199999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 66.12
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.708
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 59.452000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 8.841000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.991
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.1
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 22.238
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 15.149000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 88.407
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.14699999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.644
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 66.714
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 75.747
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringP2P",
+      "metric": null,
+      "value": 48.74884539679369
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringS2S",
+      "metric": null,
+      "value": 42.8075893810716
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 62.128470519187736
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 74.28065778481289
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 89.24629081484655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 86.93752309911496
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 87.58589628573816
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 88.05622328825284
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 87.5594959805773
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 88.19658793233961
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 86.9512987012987
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 86.92515357973708
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "Google แปลภาษา - ล่ามส่วนตัวในโทรศัพท์หรือคอมพิวเตอร์ของคุณ",
+      "url": "https://translate.google.com/intl/th/about/",
+      "snippet": "เริ่มใช้ Google แปลภาษาใน เบราว์เซอร์ หรือสแกนคิวอาร์โค้ดด้านล่างเพื่อดาวน์โหลดแอปไปใช้บนอุปกรณ์เคลื่อนที่ของคุณ"
+    },
+    {
+      "title": "Google Translate - Een persoonlijke tolk op je telefoon of computer",
+      "url": "https://translate.google.com/intl/nl/about/",
+      "snippet": "Je wereld begrijpen en communiceren in verschillende talen met Google Translate. Vertaal tekst, spraak, afbeeldingen, documenten, …"
+    }
+  ]
+}

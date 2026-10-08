@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "pdfdsf435/subtrack-mirror",
+  "slug": "pdfdsf435-subtrack-mirror",
+  "author": "pdfdsf435",
+  "url": "https://huggingface.co/pdfdsf435/subtrack-mirror",
+  "created_at": "2026-10-08T16:49:01.000Z",
+  "updated_at": "2026-10-08T16:53:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pdfdsf435 (francy92) - Hugging Face",
+      "url": "https://huggingface.co/pdfdsf435",
+      "snippet": "Recent Activity published a modelabout 2 hours ago pdfdsf435/tinygpt-v2 published a Spaceabout 2 hours ago pdfdsf435/tinygpt-v2 published a modelabout 3 hours ago pdfdsf435/gpt400m-backup View all activity"
+    },
+    {
+      "title": "pdfdsf435 (francy92) - Hugging Face",
+      "url": "https://huggingface.co/pdfdsf435/models",
+      "snippet": "pdfdsf435&#x27;s models3 Sort: Recently updated pdfdsf435/tinygpt-v2 Updated about 3 hours ago"
+    },
+    {
+      "title": "MirrorVerse: Pushing Diffusion Models to Realistically Reflect the World",
+      "url": "https://mirror-verse.github.io/",
+      "snippet": "MirrorVerse: Pushing Diffusion Models to Realistically Reflect the World CVPR 2025 Ankit Dhiman 1,2*, Manan Shah 1* and R Venkatesh Babu 1 * Equal Contribution 1 Vision and AI Lab, IISc Bangalore 2 Samsung R & D Institute India - Bangalore TL;DR: We introduce SynMirrorV2, a large-scale synthetic dataset containing 207K samples with full scene geometry, including depth maps, normal maps, and ..."
+    },
+    {
+      "title": "MirrorWorld: Taming Video Diffusion Models for Mirror Reflection Generation",
+      "url": "https://arxiv.org/pdf/2608.07463",
+      "snippet": "Recent studies have explored mirror reflection generation in image diffusion models (Dhiman et al. 2025; Dhiman, Shah, and Babu 2025) by formulating the task as an image inpainting problem. While these approaches show promising results for image synthesis, they are designed for single-image generation and do not explicitly model consistency across video frames. When applied independently to ..."
+    },
+    {
+      "title": "Substack",
+      "url": "https://substack.com/",
+      "snippet": "The app for independent voices"
+    }
+  ]
+}

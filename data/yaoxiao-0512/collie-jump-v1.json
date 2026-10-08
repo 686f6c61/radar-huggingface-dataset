@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yaoxiao-0512/collie-jump-v1",
+  "slug": "yaoxiao-0512-collie-jump-v1",
+  "author": "yaoxiao-0512",
+  "url": "https://huggingface.co/yaoxiao-0512/collie-jump-v1",
+  "created_at": "2026-10-08T18:18:15.000Z",
+  "updated_at": "2026-10-08T18:19:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039659,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yaoxiao-0512 (Yao Xiao) - Hugging Face",
+      "url": "https://huggingface.co/yaoxiao-0512",
+      "snippet": "User profile of Yao Xiao on Hugging Face"
+    },
+    {
+      "title": "AIJump",
+      "url": "https://aijump.cc/",
+      "snippet": "A unified AI model hub for aggregation & distribution. It supports cross-converting various LLMs into OpenAI-compatible, Claude-compatible, or Gemini-compatible formats. A centralized gateway for personal and enterprise model management."
+    },
+    {
+      "title": "yaoxiao-0512/bordercollie-torque-hpo · Hugging Face",
+      "url": "https://huggingface.co/yaoxiao-0512/bordercollie-torque-hpo",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "COLLIE Leaderboard - llm-stats.com",
+      "url": "https://llm-stats.com/benchmarks/collie",
+      "snippet": "COLLIE leaderboard — GPT-5 leads 11 AI models at 0.990. COLLIE is a grammar-based framework for systematic construction of constrained text generation tasks. I…"
+    },
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hyunsoochung/personal-retrieval",
+  "slug": "hyunsoochung-personal-retrieval",
+  "author": "hyunsoochung",
+  "url": "https://huggingface.co/hyunsoochung/personal-retrieval",
+  "created_at": "2026-10-08T14:50:44.000Z",
+  "updated_at": "2026-10-08T14:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hyunsoochung-portfolio (hyunsoo) · GitHub",
+      "url": "https://github.com/hyunsoochung-portfolio",
+      "snippet": "Seoul National. University- Computer Science / CUTBACK AI Engineer - hyunsoochung-portfolio"
+    },
+    {
+      "title": "Williamhru/personal-retrieval · Hugging Face",
+      "url": "https://huggingface.co/Williamhru/personal-retrieval",
+      "snippet": "Overview A small CLIP implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The tiny variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "vihaanshah05/personal-retrieval · Hugging Face",
+      "url": "https://huggingface.co/vihaanshah05/personal-retrieval",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "hyunsoochung-dev (hyunsoo) · GitHub",
+      "url": "https://github.com/hyunsoochung-dev/",
+      "snippet": "Hi, I&#x27;m Hyunsoo 👋 AI Engineer @ CUTBACK · CS student @ Seoul National University — building agentic computer-vision systems for automated video editing, in production. Working AI engineer focused on agentic CV pipelines, and a full-stack developer who ships web apps end-to-end."
+    },
+    {
+      "title": "‪Hyunsoo Kim‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=QeludxwAAAAJ&hl=en",
+      "snippet": "‪Superb AI‬ - ‪‪Cited by 3,028‬‬ - ‪Artificial Intelligence‬ - ‪Machine Learning‬ - ‪Reinforcement Learning‬ - ‪Robotics‬"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1of2/bidirlm-omni-2.5b-coreml-w8-ane",
+  "slug": "1of2-bidirlm-omni-2-5b-coreml-w8-ane",
+  "author": "1of2",
+  "url": "https://huggingface.co/1of2/bidirlm-omni-2.5b-coreml-w8-ane",
+  "created_at": "2026-10-08T17:47:29.000Z",
+  "updated_at": "2026-10-08T17:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "neural-engine",
+    "text-embeddings",
+    "image-embeddings",
+    "audio-embeddings",
+    "multimodal",
+    "apple-silicon",
+    "feature-extraction",
+    "base_model:BidirLM/BidirLM-Omni-2.5B-Embedding",
+    "base_model:finetune:BidirLM/BidirLM-Omni-2.5B-Embedding",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2757751371,
+  "storage_human": "2.8 GB",
+  "base_model": "BidirLM/BidirLM-Omni-2.5B-Embedding",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About League Publications Ltd - Total Rugby League",
+      "url": "https://www.totalrl.com/league-publications-ltd/",
+      "snippet": "Total Rugby League is part of League Publications Ltd, a privately owned, independent media company in the United Kingdom. We …"
+    },
+    {
+      "title": "League Express – Every Week – Total Rugby League",
+      "url": "https://www.totalrl.com/league-express/",
+      "snippet": "Every Monday, League Express brings you detailed match reports and pictures from every professional game in both hemispheres. …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/52173935",
+      "snippet": "Total Commander上面显示硬盘空间的单位用的是KB，我想把单位改成GB怎么设置。配图"
+    },
+    {
+      "title": "求Total Commander插件QuickSearch eXtended 2.2.6 ? - 知乎",
+      "url": "https://www.zhihu.com/question/68464450",
+      "snippet": "这个问题win 10 (1803)+ QuickSearch eXtended 2.2.1 中我也遇到了,后来使用如下方法解决了,来源来自 QuickSearch eXtended For …"
+    },
+    {
+      "title": "las plantas de una casa | WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/las-plantas-de-una-casa.2352577/",
+      "snippet": "Feb 9, 2012 · En total cuatro plantas. ¡Hola y buenas tardes! Discrepo de estas dos aportaciones. Cuando se dice que un edificio …"
+    }
+  ]
+}

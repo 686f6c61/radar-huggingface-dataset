@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/Qwen3-0.6B-wo4-float-repro-LiteRT",
+  "slug": "mlboydaisuke-qwen3-0-6b-wo4-float-repro-litert",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/Qwen3-0.6B-wo4-float-repro-LiteRT",
+  "created_at": "2026-10-08T18:09:54.000Z",
+  "updated_at": "2026-10-08T18:10:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "bug-reproduction",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315697136,
+  "storage_human": "316 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlboydaisuke/qwen3-0.6b-CoreAI-official · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/qwen3-0.6b-CoreAI-official",
+      "snippet": "Qwen3-0.6B — official Apple Core AI exports Pre-converted .aimodelbundles from Apple&#x27;s official coreai-modelsexport recipe — unmodified, with the exact environment, hashes, and measured performance published."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "The distilled Qwen3.8 27B was released under a more permissive Apache License. The first iteration of Qwen, based on Meta AI &#x27;s Llama 1, launched a beta in April 2023, releasing the weights of its 72B model that December. A local version of Qwen is used by Apple Intelligence in China, integrated with the operating system."
+    },
+    {
+      "title": "Qwen/Qwen3-0.6B • hfviewer",
+      "url": "https://hfviewer.com/Qwen/Qwen3-0.6B",
+      "snippet": "Qwen/Qwen3-.6B . The graph is built from the model&#x27;s real structure: nodes carry source-faithful module, class, and operation names (embeddings, attention blocks, feed-forward layers, normalization, task heads), edges follow the actual forward dataflow, and repeated blocks are grouped with their true repeat counts."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "The flagship Qwen3-235B-A22B scores 95.6 on ArenaHard and 2056 on CodeForces Elo, outperforming DeepSeek-R1 on 17 of 23 benchmarks. For developers, this is the first open-source family where one model can genuinely replace both a reasoning specialist and a general-purpose chat model. The Full Qwen 3 Dense Model Lineup: 0.6B to 32B Explained"
+    }
+  ]
+}

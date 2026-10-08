@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davidchhh/document-ai-lite",
+  "slug": "davidchhh-document-ai-lite",
+  "author": "davidchhh",
+  "url": "https://huggingface.co/davidchhh/document-ai-lite",
+  "created_at": "2026-10-08T17:07:37.000Z",
+  "updated_at": "2026-10-08T17:07:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Document AI release notes | Google Cloud Documentation",
+      "url": "https://docs.cloud.google.com/document-ai/docs/release-notes",
+      "snippet": "Document AI is introducing document-level prompting for custom document processors. This feature allows you to provide an overall description of the document to inject deep business knowledge into the model, leading to improved extraction quality."
+    },
+    {
+      "title": "Best Document AI Models (October 2026) — Ranked by Benchmark Data",
+      "url": "https://benchlm.ai/best/document-ai",
+      "snippet": "Best Document AI Models in 2026 As of October 7, 2026, the top model in best document ai models on the BenchLM leaderboard is Qwen3.7 Plus with a score of 90.3. Bottom line: Document AI benchmarks (OfficeQA Pro, OmniDocBench, CC-OCR) are newer and coverage is still building. Check the multimodal leaderboard for broader document understanding."
+    },
+    {
+      "title": "Local AI Model Cheat Sheet — 2026",
+      "url": "https://local-ai-models.ai/local-ai-models.html",
+      "snippet": "Local AI Model Catalog 127 open-weight models cataloged. VRAM requirements, speed benchmarks, hardware planning. Your mission control for local AI deployment."
+    },
+    {
+      "title": "LiteLLM AI Supply Chain Attack Explained - socradar.io",
+      "url": "https://socradar.io/blog/litellm-supply-chain-attack/",
+      "snippet": "Malicious LiteLLM PyPI packages compromised 2,500+ organizations in this AI supply chain breach. See what happened, who&#x27;s affected, and how to respond."
+    }
+  ]
+}

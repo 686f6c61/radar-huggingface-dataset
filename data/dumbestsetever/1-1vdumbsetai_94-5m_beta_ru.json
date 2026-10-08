@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DumbestSetEver/1.1vDumbSetAI_94.5M_beta_ru",
+  "slug": "dumbestsetever-1-1vdumbsetai_94-5m_beta_ru",
+  "author": "DumbestSetEver",
+  "url": "https://huggingface.co/DumbestSetEver/1.1vDumbSetAI_94.5M_beta_ru",
+  "created_at": "2026-10-08T18:17:55.000Z",
+  "updated_at": "2026-10-08T18:55:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "dumbset_combined",
+    "custom_code",
+    "ru",
+    "base_model:DumbestSetEver/1.0vDumbSetAI_56M_ru",
+    "base_model:finetune:DumbestSetEver/1.0vDumbSetAI_56M_ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94503648,
+  "parameters_human": "94.5M",
+  "storage_bytes": 378076776,
+  "storage_human": "378 MB",
+  "base_model": "DumbestSetEver/1.0vDumbSetAI_56M_ru",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DumbestSetEver (DumbSet) - Hugging Face",
+      "url": "https://huggingface.co/DumbestSetEver",
+      "snippet": "Org profile for DumbSet on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=dumbset",
+      "snippet": "DumbestSetEver/1.0vDumbSetAI_56M_ru Text Generation • 86M•Updated about 6 hours ago"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "AI Rankings",
+      "url": "https://thedumbestai.com/blog/single/ultimate-dumbest-ai-rankings-2025-genius-to-idiot/",
+      "snippet": "AI Rankings 2025 The definitive intelligence ranking — from ChatGPT&#x27;s brilliance to Martin the Chess Bot&#x27;s legendary stupidity. Who&#x27;s actually smart and who&#x27;s cosplaying as intelligent?"
+    }
+  ]
+}

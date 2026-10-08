@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwopus3.8-27B-Flash-V2-oQ4e-fp16-mtp",
+  "slug": "scottlowry-qwopus3-8-27b-flash-v2-oq4e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ4e-fp16-mtp",
+  "created_at": "2026-10-08T17:43:44.000Z",
+  "updated_at": "2026-10-08T18:50:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 17913129485,
+  "storage_human": "17.9 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash-V2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp at main",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwopus3.8 27b Flash - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwopus3-8-27b-flash.html",
+      "snippet": "Download Qwopus3.8 27b Flash GGUF model. 56.7 GB, 172,520 downloads, 244 likes."
+    },
+    {
+      "title": "Qwen3.8-27B: Specs, Benchmarks & Verdict - kingy.ai",
+      "url": "https://kingy.ai/blog/qwen3-8-27b-specs-benchmarks-local-hardware/",
+      "snippet": "Qwen3.8-27B benchmarks, specs, local memory, context, license and comparisons—plus what Qwen&#x27;s launch-day evidence does and does not prove."
+    }
+  ]
+}

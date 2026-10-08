@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pqhaz/apex-flash-1-heretic-v2",
+  "slug": "pqhaz-apex-flash-1-heretic-v2",
+  "author": "pqhaz",
+  "url": "https://huggingface.co/pqhaz/apex-flash-1-heretic-v2",
+  "created_at": "2026-10-08T17:05:11.000Z",
+  "updated_at": "2026-10-08T17:14:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "abliterated",
+    "heretic",
+    "security-research",
+    "conversational",
+    "base_model:cantina-security/apex-flash-1-abliterated",
+    "base_model:finetune:cantina-security/apex-flash-1-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 642676057054,
+  "storage_human": "642.7 GB",
+  "base_model": "cantina-security/apex-flash-1-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pqhaz/apex-flash-1-abliterated-FP8 · Hugging Face",
+      "url": "https://huggingface.co/pqhaz/apex-flash-1-abliterated-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "heretic-llm · PyPI",
+      "url": "https://pypi.org/project/heretic-llm/",
+      "snippet": "Heretic finds high-quality abliteration parameters by co-minimizing the number of refusals and the KL divergence from the original model. This results in a decensored model that retains as much of the original model&#x27;s intelligence as possible. Using Heretic does not require an understanding of transformer internals."
+    },
+    {
+      "title": "pqhaz/apex-flash-1-abliterated-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/pqhaz/apex-flash-1-abliterated-NVFP4",
+      "snippet": "Instructions to use pqhaz/apex-flash-1-abliterated-NVFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use pqhaz/apex-flash-1-abliterated-NVFP4 with Transformers:"
+    },
+    {
+      "title": "Heretic (uncensored language model) — Grokipedia",
+      "url": "https://grokipedia.com/page/Heretic_uncensored_language_model",
+      "snippet": "Heretic (uncensored language model) Heretic is a software tool for fully automatic censorship removal from transformer-based language models, employing optimized abliteration to disable safety alignments without post-training or fine-tuning. [1]"
+    },
+    {
+      "title": "apex-flash-1-abliterated-FP8 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/pqhaz/apex-flash-1-abliterated-FP8",
+      "snippet": "Notes From the upstream card: this abliterated variant has not undergone a separate evaluation. Results reported for apex-flash-1 apply to the standard checkpoint only. It is intended for authorized security research. This quantization has not been separately benchmarked either. Not affiliated with Cantina Security or Z.AI."
+    }
+  ]
+}

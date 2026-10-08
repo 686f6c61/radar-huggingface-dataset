@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "litert-community/d1-omni-600M-LiteRT",
+  "slug": "litert-community-d1-omni-600m-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/d1-omni-600M-LiteRT",
+  "created_at": "2026-10-08T16:56:46.000Z",
+  "updated_at": "2026-10-08T17:06:52.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "on-device",
+    "edge",
+    "decision",
+    "liquid",
+    "lfm2",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ar",
+    "hi",
+    "ja",
+    "ru",
+    "tr",
+    "vi",
+    "zh",
+    "base_model:LiquidAI/d1-omni-600M",
+    "base_model:finetune:LiquidAI/d1-omni-600M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6497074751,
+  "storage_human": "6.5 GB",
+  "base_model": "LiquidAI/d1-omni-600M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/d1-omni-600M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-omni-600M",
+      "snippet": "LiquidAI / d1-omni-600M Like 3 Follow Liquid AI 5.69k Image-Text-to-Text Transformers Safetensors 15 languages d1_omni feature-extraction liquid lfm2.5 edge decision classification calibration system-one multimodal vision audio custom_code arxiv:2511.23404 License:lfm1.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket ..."
+    },
+    {
+      "title": "D1-Omni-600M Locally: Testing Liquid AI&#x27;s Audio-Vision-Text Decision Model",
+      "url": "https://www.mindstudio.ai/blog/d1-omni-600m-locally",
+      "snippet": "Hands-on test of Liquid AI&#x27;s D1-Omni-600M decision model running locally, covering text, vision, and audio accuracy plus VRAM usage."
+    },
+    {
+      "title": "Liquid AI d1-3B & d1-omni-600M: 8ms Multimodal Decision Models",
+      "url": "https://www.aitoolsoasis.com/en/news/liquid-ai-launches-d1-3b-and-d1-omni-600m-multimodal-1791432058865",
+      "snippet": "Liquid AI has released two open-weight decision models, d1-3B and d1-omni-600M, built on Liquid Foundation Models (LFMs) and available immediately on Hugging Face. The d1-3B scores 48.57 on Decision Index 0.2.1, outperforming all 4B and 9B models, with 8ms latency on RTX 4090 and 16ms on Jetson AGX Thor. The d1-3B supports text and images, while d1-omni-600M handles text with images or audio ..."
+    },
+    {
+      "title": "litert-community (LiteRT Community (FKA TFLite)) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "AI for Mobile, Web, and Embedded"
+    },
+    {
+      "title": "Liquid AI releases d1-3B and d1-omni-600M for local use",
+      "url": "https://hellomarvisaitoday.com/articles/540535d7-7a57-4619-8075-4d3834b9aa26",
+      "snippet": "By releasing d1-3B and d1-omni-600M as open models, Liquid AI is making that approach available for local execution on consumer hardware rather than only through an API. The two models are based on the LFM2.5-VL-3B vision-language model and the LFM2.5-Encoder-350M encoder model respectively, with d1-omni-600M adding audio input."
+    }
+  ]
+}

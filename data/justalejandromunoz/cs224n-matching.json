@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justalejandromunoz/cs224n-matching",
+  "slug": "justalejandromunoz-cs224n-matching",
+  "author": "Justalejandromunoz",
+  "url": "https://huggingface.co/Justalejandromunoz/cs224n-matching",
+  "created_at": "2026-10-08T18:17:09.000Z",
+  "updated_at": "2026-10-08T18:17:15.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manuelrsgb2007/cs224n-matching · Hugging Face",
+      "url": "https://huggingface.co/Manuelrsgb2007/cs224n-matching",
+      "snippet": "Manuelrsgb2007 / cs224n-matching like 0 Safetensors PyTorch perceiver matching License:mit Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Stanford CS 224N | Natural Language Processing with Deep Learning",
+      "url": "https://web.stanford.edu/class/cs224n/",
+      "snippet": "Natural language processing (NLP) is a crucial part of artificial intelligence (AI), modeling how people share information. In recent years, deep learning approaches have obtained very high performance on many NLP tasks. In this course, students gain a thorough introduction to cutting-edge neural networks for NLP."
+    },
+    {
+      "title": "Stanford CS 224N | Project Reports",
+      "url": "https://web.stanford.edu/class/cs224n/project.html",
+      "snippet": "CS224N: Natural Language Processing with Deep Learning Stanford / Winter 2026 Project Awards Congratulations to the following teams, who produced exceptional, award-winning projects! Best Default Project Fairness-Aware Fine-Tuning of GPT-2 for Paraphrase Detection. Deonna Owens. Best Custom Project"
+    },
+    {
+      "title": "marieschmidt/cs224n-matching-2024 · Hugging Face",
+      "url": "https://huggingface.co/marieschmidt/cs224n-matching-2024",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Efficientformerfor Matching. The baseconfiguration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release. Repository status The Python file contains the model and runnable example or training entry point."
+    },
+    {
+      "title": "GitHub - csbrendan/CS224N: Natural Language Processing with Deep Learning",
+      "url": "https://github.com/csbrendan/CS224N/",
+      "snippet": "Natural Language Processing with Deep Learning. Contribute to csbrendan/CS224N development by creating an account on GitHub."
+    }
+  ]
+}

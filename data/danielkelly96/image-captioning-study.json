@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielkelly96/image-captioning-study",
+  "slug": "danielkelly96-image-captioning-study",
+  "author": "danielkelly96",
+  "url": "https://huggingface.co/danielkelly96/image-captioning-study",
+  "created_at": "2026-10-08T15:11:28.000Z",
+  "updated_at": "2026-10-08T15:11:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon non remboursement - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-non-remboursement-t280163.html",
+      "snippet": "Sep 16, 2020 · J'ai contacté le service client et le conseiller ma orienté vers le service APEX (apex@amazon.fr) qui gère les …"
+    },
+    {
+      "title": "Problème remboursement commande Amazon [Résolu] - Forum Que …",
+      "url": "https://forum.quechoisir.org/probleme-remboursement-commande-amazon-t329055.html",
+      "snippet": "Dec 5, 2022 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    },
+    {
+      "title": "Amazon",
+      "url": "https://sellercentral.amazon.it/help/hub/reference/external/G200671260?mons_sel_locale=fr_FR&pageName=IT%3ASC%3ATrim-help%2Fhub%2Freference%2Fexternal%2FG200671260",
+      "snippet": "Avertissement de confidentialitéN'incluez aucune donnée à caractère personnel ou sensible. En envoyant des commentaires, vous …"
+    },
+    {
+      "title": "amazon et l'enregistrement obligatoire des CB",
+      "url": "https://forum.quechoisir.org/amazon-et-l-enregistrement-obligatoire-des-cb-t23687.html",
+      "snippet": "May 20, 2014 · Bonjour, Si vous avez déjà passé commande chez Amazon, vous vous êtes sans doute rendu compte que le site …"
+    },
+    {
+      "title": "Amazon - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-f305.html",
+      "snippet": "Apr 20, 2026 · Amazon : Entrez dans l'espace dédié à l'entreprise de commerce électronique amazon.fr, spécialiste d'achat et de …"
+    }
+  ]
+}

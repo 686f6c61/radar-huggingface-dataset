@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Rithvik-3103/cyber-ann-models",
+  "slug": "rithvik-3103-cyber-ann-models",
+  "author": "Rithvik-3103",
+  "url": "https://huggingface.co/Rithvik-3103/cyber-ann-models",
+  "created_at": "2026-10-08T18:25:58.000Z",
+  "updated_at": "2026-10-08T18:30:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217081409,
+  "storage_human": "217 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ransomware an AI Model Built Without Trying - CyberHoot",
+      "url": "https://cyberhoot.com/blog/the-ransomware-an-ai-model-built-without-trying/",
+      "snippet": "Researchers went looking for a fake photo upscaler and found something stranger: a ransomware kit an AI model helped design without anyone teaching it how. No skilled coder sat down and wrote this attack line by line. Instead, an AI chatbot pieced most of it together from a single broad request, and in the end, part of it worked exactly as intended by whoever asked. This story fits a bigger ..."
+    },
+    {
+      "title": "Best AI Models for Cybersecurity (October 2026): Cyber Benchmarks ...",
+      "url": "https://benchlm.ai/cybersecurity",
+      "snippet": "What is the best AI model for cybersecurity? There is no defensible single winner across the public evidence. GPT-5.6 Sol has the broadest mix of provider and independent cyber results in this snapshot, while GPT-6 Astra reports the highest provider-run ExploitBench result (100, against 78 for Claude Mythos 5). Access, safeguards, harnesses, and task types differ, so compare models within the ..."
+    },
+    {
+      "title": "We burned 11.7bn tokens to find the best cyber AI model",
+      "url": "https://www.aikido.dev/blog/ai-model-benchmarks-aug-21-2026",
+      "snippet": "Want to see the latest benchmarks? Check out Aikido Arena, which we update regularly. We burned 11.7 billion tokens to benchmark the cyber capabilities of 10 AI models with three attempts each, given 32 fresh off-the-shelf vulns to rediscover."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=cybersecurity",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Google, Anthropic, and OpenAI Unveil Cyber AI Models, Safeguards, and ...",
+      "url": "https://thehackernews.com/2026/09/google-anthropic-and-openai-unveil.html",
+      "snippet": "Google launches Gemini 3.8 Flash Cyber for trusted defenders as OpenAI says Astra meets its Critical cybersecurity capability threshold."
+    }
+  ]
+}

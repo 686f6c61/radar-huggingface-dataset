@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "TurboGhoster/WAN22-COMFY-RUNTIME-V1",
+  "slug": "turboghoster-wan22-comfy-runtime-v1",
+  "author": "TurboGhoster",
+  "url": "https://huggingface.co/TurboGhoster/WAN22-COMFY-RUNTIME-V1",
+  "created_at": "2026-10-08T16:28:39.000Z",
+  "updated_at": "2026-10-08T16:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Run Wan 2.2 in ComfyUI with Just 8GB VRAM — Full Image-to-Video AI ...",
+      "url": "https://dev.to/aitechtutorials/run-wan-22-in-comfyui-with-just-8gb-vram-full-image-to-video-ai-workflow-2gb6",
+      "snippet": "This tutorial walks through how I installed and ran the Wan 2.2 image-to-video AI model in ComfyUI on... Tagged with comfyui, wan22, gemini, ai."
+    },
+    {
+      "title": "GitHub - xiaomansynth/ComfyUI-wan22: The most powerful and modular ...",
+      "url": "https://github.com/xiaomansynth/ComfyUI-wan22",
+      "snippet": "ComfyUI The most powerful and modular visual AI engine and application. ComfyUI lets you design and execute advanced stable diffusion pipelines using a graph/nodes/flowchart based interface. Available on Windows, Linux, and macOS."
+    },
+    {
+      "title": "split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp8_scaled ...",
+      "url": "https://huggingface.co/Comfy-Org/Wan_2.2_ComfyUI_Repackaged/blob/main/split_files/diffusion_models/wan2.2_i2v_low_noise_14B_fp8_scaled.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run Wan 2.2 in ComfyUI: Full AI Video Workflow (Works on 8GB ...",
+      "url": "https://vocal.media/futurism/how-to-run-wan-2-2-in-comfy-ui-full-ai-video-workflow-works-on-8-gb-vram-ga4co0i3s",
+      "snippet": "The release of Wan 2.2, a powerful open-source image-to-video AI model, has made cinematic video generation more accessible than ever. While many think AI video tools demand high-end GPUs, this guide shows you how to install and run Wan 2.2 using just 8GB of VRAM—all inside ComfyUI."
+    },
+    {
+      "title": "Wan2.2 Video Generation ComfyUI Official Native Workflow Example",
+      "url": "https://docs.comfy.org/tutorials/video/wan/wan2_2",
+      "snippet": "Run Wan2.2 video workflows in ComfyUI: the 5B hybrid TI2V model plus 14B text-to-video, image-to-video, and first-last-frame examples, with downloads."
+    }
+  ]
+}

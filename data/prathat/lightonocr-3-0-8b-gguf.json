@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Prathat/LightOnOCR-3-0.8B-GGUF",
+  "slug": "prathat-lightonocr-3-0-8b-gguf",
+  "author": "Prathat",
+  "url": "https://huggingface.co/Prathat/LightOnOCR-3-0.8B-GGUF",
+  "created_at": "2026-10-08T18:12:25.000Z",
+  "updated_at": "2026-10-08T18:17:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "llama-cpp",
+    "ocr",
+    "document-understanding",
+    "vision-language",
+    "pdf",
+    "tables",
+    "forms",
+    "image-text-to-text",
+    "en",
+    "base_model:lightonai/LightOnOCR-3-0.8B",
+    "base_model:quantized:lightonai/LightOnOCR-3-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7154761152,
+  "storage_human": "7.2 GB",
+  "base_model": "lightonai/LightOnOCR-3-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "LightOnOCR-3 is our new family of end-to-end OCR models: text, layout, image and chart understanding from a single compact model."
+    },
+    {
+      "title": "LightOnOCR-3 - a lightonai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/lightonai/lightonocr-3",
+      "snippet": "LightOnOCR-3 🦉 updated about 2 hours ago High-Performance OCR and Layout Extraction in One Model Upvote 3 Sort: Collection"
+    },
+    {
+      "title": "LightOnOCR-3 released: 0.8B/1B/4B open models… · AGI Hunt",
+      "url": "https://agihunt.info/en/p/1a11c6dd65d1d7455f2a77a0931",
+      "snippet": "LightOn released LightOnOCR-3, going beyond OCR with a single model handling text transcription, document layout analysis, image descriptions, and chart extraction. Three sizes are available—0.8B, 1B, and 4B—all under Apache 2.0. Researcher antoinechaffin endorsed the release, noting parsing is now built in."
+    },
+    {
+      "title": "LightOnOCR - a lightonai Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/lightonai/lightonocr",
+      "snippet": "The Case for End-to-End and Efficient Domain-Specific Vision-Language Models for OCR"
+    },
+    {
+      "title": "lightonocr - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/model_executor/models/lightonocr/",
+      "snippet": "Forum Slack Home API Reference vllm model_executor models vllm.model_executor.models.lightonocr¶ October 1, 2026 Back to top Made with Material for MkDocs"
+    }
+  ]
+}

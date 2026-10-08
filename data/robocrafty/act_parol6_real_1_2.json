@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "RoboCrafty/act_parol6_real_1_2",
+  "slug": "robocrafty-act_parol6_real_1_2",
+  "author": "RoboCrafty",
+  "url": "https://huggingface.co/RoboCrafty/act_parol6_real_1_2",
+  "created_at": "2026-10-08T01:23:53.000Z",
+  "updated_at": "2026-10-08T01:24:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:RoboCrafty/parol6_sim_stack_real_1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723188,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

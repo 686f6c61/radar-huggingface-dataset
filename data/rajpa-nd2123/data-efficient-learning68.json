@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Rajpa-nd2123/data-efficient-learning68",
+  "slug": "rajpa-nd2123-data-efficient-learning68",
+  "author": "Rajpa-nd2123",
+  "url": "https://huggingface.co/Rajpa-nd2123/data-efficient-learning68",
+  "created_at": "2026-10-08T01:28:46.000Z",
+  "updated_at": "2026-10-08T01:28:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

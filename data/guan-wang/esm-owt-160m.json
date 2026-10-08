@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "guan-wang/ESM-OWT-160M",
+  "slug": "guan-wang-esm-owt-160m",
+  "author": "guan-wang",
+  "url": "https://huggingface.co/guan-wang/ESM-OWT-160M",
+  "created_at": "2026-10-08T15:14:34.000Z",
+  "updated_at": "2026-10-08T15:15:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "esm",
+    "fill-mask",
+    "energy-based-language-model",
+    "custom-architecture",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 160556544,
+  "parameters_human": "160.6M",
+  "storage_bytes": 642984335,
+  "storage_human": "643 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guan (bird) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guan_(bird)",
+      "snippet": "Guan (bird) ... The guans are a number of bird genera which make up the largest group in the family Cracidae. They are found …"
+    },
+    {
+      "title": "Guan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Guan",
+      "snippet": "Guan, groupe ethnique présent dans pratiquement toutes les régions du Ghana ; guǎn désigne un temple taoïste ou le lieu où l'on …"
+    },
+    {
+      "title": "Restaurant Guan, Montréal - Menu du restaurant, prix et avis",
+      "url": "https://fr.restaurantguru.com/Restaurant-GUAN-Montreal",
+      "snippet": "Aug 9, 2026 · Si vous n'avez jamais goûté la cuisine chinoise, venez à Restaurant Guan. Commandez un poulet frit fascinant. Les …"
+    },
+    {
+      "title": "Définition de guan | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/guan",
+      "snippet": "Aug 16, 2024 · De l'espagnol d'Amérique guan pour désigner les pénélopes. Ce mot continue d'être le nom vernaculaire des …"
+    },
+    {
+      "title": "Guan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guan",
+      "snippet": "This disambiguation page lists articles associated with the title Guan. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

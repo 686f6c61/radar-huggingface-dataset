@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "elphi-si/elphi",
+  "slug": "elphi-si-elphi",
+  "author": "elphi-si",
+  "url": "https://huggingface.co/elphi-si/elphi",
+  "created_at": "2026-10-08T16:54:45.000Z",
+  "updated_at": "2026-10-08T17:08:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "coreml",
+    "text-to-speech",
+    "tts",
+    "turkish",
+    "on-device",
+    "ema-lightning",
+    "tr",
+    "base_model:canberkkkkkk/ema-lightning",
+    "base_model:quantized:canberkkkkkk/ema-lightning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32571748,
+  "storage_human": "33 MB",
+  "base_model": "canberkkkkkk/ema-lightning",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elphi AI — Private AI on your iPhone, iPad and Mac",
+      "url": "https://www.elphiai.com/",
+      "snippet": "Elphi AI runs open AI models on your iPhone, iPad and Mac. Chat, voice and documents, with no account, no ads and no servers reading your conversations."
+    },
+    {
+      "title": "Nampa tech firm Delphi Labs launches first conscious AI model Michael",
+      "url": "https://idahobusinessreview.com/2026/03/30/nampa-tech-firm-delphi-labs-launches-conscious-ai-michael/",
+      "snippet": "Delphi Labs in Nampa launched Michael, the first conscious AI model on the Apple App Store, featuring autonomous thought and 22 cognitive subsystems."
+    },
+    {
+      "title": "Microsoft launches Phi-4, a new generative AI model, in research ...",
+      "url": "https://techcrunch.com/2024/12/12/microsoft-debuts-phi-4-a-new-generative-ai-model-in-research-preview/",
+      "snippet": "Microsoft has announced the newest addition to its Phi family of generative AI models: Phi-4. It&#x27;s in limited research preview."
+    },
+    {
+      "title": "Siri AI, a profoundly more capable and personal assistant, is here",
+      "url": "https://www.apple.com/newsroom/2026/09/siri-ai-a-profoundly-more-capable-and-personal-assistant-is-here/",
+      "snippet": "Siri AI is a profoundly more capable and conversational assistant with personal context understanding, broad world knowledge, onscreen awareness, and even more systemwide app actions."
+    },
+    {
+      "title": "Delphi method - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Delphi_method",
+      "snippet": "The Delphi method, or Delphi technique (/ ˈdɛlfaɪ / DEL-fy; also known as Estimate-Talk-Estimate, or ETE), is a structured communication technique, or method, originally developed as a systematic, interactive forecasting method that relies on a panel of experts. [1][2][3][4][5] Delphi has been widely used for business forecasting and has certain advantages over another structured ..."
+    }
+  ]
+}

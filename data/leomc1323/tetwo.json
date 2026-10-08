@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "leomc1323/TETWO",
+  "slug": "leomc1323-tetwo",
+  "author": "leomc1323",
+  "url": "https://huggingface.co/leomc1323/TETWO",
+  "created_at": "2026-10-08T01:27:38.000Z",
+  "updated_at": "2026-10-08T01:28:10.000Z",
+  "license": "artistic-2.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:artistic-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179936072,
+  "storage_human": "180 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leomc123 ( My own voice as a Ai model) Harverst64 - RVC 500 Epochs",
+      "url": "https://voice-models.com/model/1mf8jlteXUz",
+      "snippet": "leomc123 ( My own voice as a Ai model) Harverst64 - RVC 500 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "leomc1323 (Leonardo Marín Carrillo) - Hugging Face",
+      "url": "https://huggingface.co/leomc1323",
+      "snippet": "User profile of Leonardo Marín Carrillo on Hugging Face"
+    },
+    {
+      "title": "Headhunter (Fortnite Save The World) (RVC V1) 300 Epochs AI Voice Model",
+      "url": "https://voice-models.com/model/1lhB2oxEW9A",
+      "snippet": "Headhunter (Fortnite Save The World) (RVC V1) 300 Epochs AI voice model for RVC voice conversion. View details, samples, source status, and run this voice model in EasyAIVoice."
+    },
+    {
+      "title": "AA-Image-T2I v2.0 Leaderboard - Top AI Image Models | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/image/leaderboard/text-to-image",
+      "snippet": "Find the best Text to Image models, see rankings from blind votes, and compare quality, generation speed, and price in one leaderboard."
+    }
+  ]
+}

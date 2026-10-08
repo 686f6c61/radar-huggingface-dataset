@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/codephiii-2.7b-GGUF",
+  "slug": "mradermacher-codephiii-2-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/codephiii-2.7b-GGUF",
+  "created_at": "2025-05-09T12:21:19.000Z",
+  "updated_at": "2026-10-08T18:52:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Parth/codephiii-2.7b",
+    "base_model:quantized:Parth/codephiii-2.7b",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 233,
+  "trending_score": 0,
+  "parameters": 2779683840,
+  "parameters_human": "2.78B",
+  "storage_bytes": 25177348864,
+  "storage_human": "25.2 GB",
+  "base_model": "Parth/codephiii-2.7b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "family taboo +young - Search Videos - Bing",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=family+taboo+%2Byoung",
+      "snippet": "Watch videos instantly on Bing—enjoy direct playback, discover related clips, and dive into trending content all in one place."
+    },
+    {
+      "title": "Old-Young + Family Strokes | Pat",
+      "url": "https://pat.com/OldYoung?f=FamilyStrokes",
+      "snippet": "Pure Taboo Naughty America Porn Force My Family Pies Dorcel Club Bare Back Studios Team Skeet"
+    },
+    {
+      "title": "Three Young Girls of a Naturist Family Playing Outdoors",
+      "url": "https://aiartgenerator.cc/prompt/122668-Three-Young-Girls-of-a-Naturist-Family-Playing-Outdoors",
+      "snippet": "Subject: Three young girls from a naturist family, enjoying an outdoor activity in a lush, natural environment. They are carefree and …"
+    },
+    {
+      "title": "Taboo Stock Videos – 2,969 HD & 4K Footage Clips | Adobe Stock",
+      "url": "https://stock.adobe.com/search/video?k=taboo&msockid=0cac39ac11946e5526e72e4010de6f9c",
+      "snippet": "Adobe Checkout Create without limits — unlimited downloads, plus powerful AI editing"
+    },
+    {
+      "title": "FAMILY - Fucking Young!",
+      "url": "https://fuckingyoung.es/magazines/family/",
+      "snippet": "This family can consist of your mother, father, your friends, your cat, your boyfriend, your two boyfriends, grandmother, aunt: …"
+    }
+  ]
+}

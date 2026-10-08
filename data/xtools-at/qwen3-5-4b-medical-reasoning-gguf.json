@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "xtools-at/Qwen3.5-4B-Medical-Reasoning-GGUF",
+  "slug": "xtools-at-qwen3-5-4b-medical-reasoning-gguf",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning-GGUF",
+  "created_at": "2026-10-08T17:45:25.000Z",
+  "updated_at": "2026-10-08T17:50:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "trl",
+    "heretic",
+    "en",
+    "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
+    "base_model:DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+    "base_model:quantized:DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 13397115360,
+  "storage_human": "13.4 GB",
+  "base_model": "DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kerassy/Qwen3.5-4B-Medical-Reasoning · Hugging Face",
+      "url": "https://huggingface.co/Kerassy/Qwen3.5-4B-Medical-Reasoning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Kerassy/Qwen3.5-4B-Medical-Reasoning at main - Hugging Face",
+      "url": "https://huggingface.co/Kerassy/Qwen3.5-4B-Medical-Reasoning/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-4B-Medical-Reasoning: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-kerassy-qwen3-5-4b-medical-reasoning",
+      "snippet": "Qwen3.5-4B-Medical-Reasoning is an AI model record indexed from Hugging Face. Specs: 4B parameters, built for reasoning, sourced from Hugging Face."
+    },
+    {
+      "title": "qwen/qwen3.5-4b • LM Studio",
+      "url": "https://lmstudio.ai/models/qwen/qwen3.5-4b",
+      "snippet": "Qwen3.5 4B Qwen3.5 represents a significant leap forward, integrating breakthroughs in multimodal learning, architectural efficiency, reinforcement learning scale, and global accessibility. This is a 4B parameter dense model, supporting a native context length of 262,144 tokens. Highlights Unified Vision-Language Foundation."
+    },
+    {
+      "title": "Qwen3.5 4B Medical O1 by gosso1 — VRAM 9.3GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/gosso1%2FQwen3.5-4B-Medical-o1,7xR8fbFnGQ1iMBe83LxeX0",
+      "snippet": "Rank the Qwen3.5 4B Medical O1 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

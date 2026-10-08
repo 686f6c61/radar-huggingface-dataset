@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "barbonara/vanilla-nemotron-super-s2-rl-step60",
+  "slug": "barbonara-vanilla-nemotron-super-s2-rl-step60",
+  "author": "barbonara",
+  "url": "https://huggingface.co/barbonara/vanilla-nemotron-super-s2-rl-step60",
+  "created_at": "2026-10-08T18:24:15.000Z",
+  "updated_at": "2026-10-08T18:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3616921496,
+  "storage_human": "3.6 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "barbonara/corin-nemotron-super-anti-s2-rl-step60 · Hugging Face",
+      "url": "https://huggingface.co/barbonara/corin-nemotron-super-anti-s2-rl-step60",
+      "snippet": "Instructions to use barbonara/corin-nemotron-super-anti-s2-rl-step60 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nemotron AI Models | NVIDIA Developer",
+      "url": "https://developer.nvidia.com/topics/ai/nemotron",
+      "snippet": "NVIDIA Nemotron is a family of open-source models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents with reasoning."
+    },
+    {
+      "title": "barbonara/corin-nemotron-super-anti-s2-rl-step40 · Hugging Face",
+      "url": "https://huggingface.co/barbonara/corin-nemotron-super-anti-s2-rl-step40",
+      "snippet": "Instructions to use barbonara/corin-nemotron-super-anti-s2-rl-step40 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nemotron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nemotron",
+      "snippet": "Nemotron is a family of artificial intelligence models developed by Nvidia. It includes large language models and multimodal models intended for reasoning, computer programming, information retrieval and agentic AI applications."
+    },
+    {
+      "title": "NVIDIA Nemotron 3 Family of Models: Engineering Efficiency for Agentic AI",
+      "url": "https://medium.com/@servifyspheresolutions/nvidia-nemotron-3-family-of-models-engineering-efficiency-for-agentic-ai-021a31c42c1d",
+      "snippet": "NVIDIA Nemotron 3 approaches this problem differently. Instead of scaling dense transformers further, it restructures the model around sparse computation, state-space sequence modeling, and agent ..."
+    }
+  ]
+}

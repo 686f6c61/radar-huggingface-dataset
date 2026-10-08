@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mnthompson/blip-checkpoint",
+  "slug": "mnthompson-blip-checkpoint",
+  "author": "mnthompson",
+  "url": "https://huggingface.co/mnthompson/blip-checkpoint",
+  "created_at": "2026-10-08T14:52:46.000Z",
+  "updated_at": "2026-10-08T14:52:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    },
+    {
+      "title": "szymonmicha/blip-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/szymonmicha/blip-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "BLIP: Bootstrapped Language-Image Pretraining | AI Tutorial",
+      "url": "https://www.next.gr/ai/multimodal-learning/blip-bootstrapped-language-image-pretraining",
+      "snippet": "BLIP distinguishes itself from prior vision-language models through its novel bootstrapping mechanism, which leverages noisy web data more effectively. Unlike CLIP, which relies on contrastive learning between image-text pairs, BLIP introduces a multimodal mixture of encoder-decoder architectures, enabling both understanding and generation tasks."
+    },
+    {
+      "title": "Arjunlshah/blip-checkpoint · Hugging Face",
+      "url": "https://huggingface.co/Arjunlshah/blip-checkpoint",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "blip-inference · PyPI",
+      "url": "https://pypi.org/project/blip-inference/",
+      "snippet": "blip_inference.load (name: str, device=...) -> Tuple [BLIP, Callable] Returns the model and the TorchVision transform needed by the model, specified by the model name returned by blip_inference.available_models (). It will download the model as necessary. The name argument can also be a path to a local checkpoint."
+    }
+  ]
+}

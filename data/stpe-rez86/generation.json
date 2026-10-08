@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stpe-rez86/generation",
+  "slug": "stpe-rez86-generation",
+  "author": "stpe-rez86",
+  "url": "https://huggingface.co/stpe-rez86/generation",
+  "created_at": "2026-10-08T15:04:22.000Z",
+  "updated_at": "2026-10-08T15:04:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Beyond text queries: Searching with Bing Visual Search",
+      "url": "https://blogs.bing.com/search-quality-insights/2017/6/beyond-text-queries-searching-with-bing-visual-search/",
+      "snippet": "Jun 1, 2017 · Over the years people have come to expect search engines to automatically detect intent and provide great search …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    },
+    {
+      "title": "Visual Search from Bing now lets you search what you see",
+      "url": "https://blogs.bing.com/search/2018/6/Visual-search-from-Bing-now-lets-you-search-what-you-see/",
+      "snippet": "Jun 21, 2018 · Today we're launching new Visual Search capabilities that build upon the visual technology already in Bing so you can …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.uk.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    }
+  ]
+}

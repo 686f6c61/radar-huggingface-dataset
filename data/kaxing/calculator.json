@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kaxing/calculator",
+  "slug": "kaxing-calculator",
+  "author": "kaxing",
+  "url": "https://huggingface.co/kaxing/calculator",
+  "created_at": "2026-10-07T13:39:53.000Z",
+  "updated_at": "2026-10-08T18:53:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 7890678,
+  "parameters_human": "7.9M",
+  "storage_bytes": 212266656,
+  "storage_human": "212 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "OpenAI API Pricing (October 2026): Model & Token Costs | BenchLM.ai",
+      "url": "https://benchlm.ai/openai/api-pricing",
+      "snippet": "The table below lists every OpenAI model in BenchLM&#x27;s pricing registry, maintained from OpenAI&#x27;s live pricing page and launch announcements, with cached-input and Batch API rates alongside the headline numbers. The GPT-5.6 family (Sol, Terra, Luna) went GA on July 9, 2026 with a 1.05M-token context window on all three tiers."
+    },
+    {
+      "title": "kaxing/little87-lm · Hugging Face",
+      "url": "https://huggingface.co/kaxing/little87-lm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kaxing (kaxing) - Hugging Face",
+      "url": "https://huggingface.co/kaxing",
+      "snippet": "there are no more questions left without a response."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

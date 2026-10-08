@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "heykrishana/luckyhit-instant-quant",
+  "slug": "heykrishana-luckyhit-instant-quant",
+  "author": "heykrishana",
+  "url": "https://huggingface.co/heykrishana/luckyhit-instant-quant",
+  "created_at": "2026-10-08T14:58:11.000Z",
+  "updated_at": "2026-10-08T15:25:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048160,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

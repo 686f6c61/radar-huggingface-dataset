@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Magistral-Small-2509-Vision-GGUF",
+  "slug": "mradermacher-magistral-small-2509-vision-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Magistral-Small-2509-Vision-GGUF",
+  "created_at": "2025-11-19T03:15:56.000Z",
+  "updated_at": "2026-10-08T18:51:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Magistral",
+    "Vision",
+    "Conversational",
+    "Multimodal",
+    "Image-Text-to-Text",
+    "Safetensors",
+    "en",
+    "ru",
+    "uk",
+    "base_model:EnlistedGhost/Magistral-Small-2509-Vision",
+    "base_model:quantized:EnlistedGhost/Magistral-Small-2509-Vision",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 640,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 164510004800,
+  "storage_human": "164.5 GB",
+  "base_model": "EnlistedGhost/Magistral-Small-2509-Vision",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Magistral-Small-2509-Vision-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Magistral-Small-2509-Vision-GGUF",
+      "snippet": "Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "mistralai/Magistral-Small-2509 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Magistral-Small-2509",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Magistral Small 2509 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/magistral-small-2509.html",
+      "snippet": "Download Magistral Small 2509 GGUF model. 14.7 GB, 7,088 downloads, 106 likes."
+    },
+    {
+      "title": "magistral-small-2509 | Mistral AI | AI Model Directory",
+      "url": "https://portkey.ai/models/mistral-ai/magistral-small-2509",
+      "snippet": "magistral-small-2509 by Mistral AI. Input: $0.50/M, Output: $1.50/M. Tool Calling, 33K output tokens"
+    },
+    {
+      "title": "magistral-small-2509 | ModelMeta",
+      "url": "https://www.modelmeta.dev/models/magistral-small-2509",
+      "snippet": "Where this model fits best Use this section to quickly decide whether the model belongs in chat, coding, reasoning, embedding, rerank, vision, audio, or agent workflows."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Gemma4-12B-IT-NPU2",
+  "slug": "openflowlm-gemma4-12b-it-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Gemma4-12B-IT-NPU2",
+  "created_at": "2026-10-08T16:56:51.000Z",
+  "updated_at": "2026-10-08T16:56:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gemma4_unified",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9352582562,
+  "storage_human": "9.4 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastFlowLM/Gemma4-12B-IT-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Gemma4-12B-IT-NPU2/tree/main",
+      "snippet": "Instructions to use FastFlowLM/Gemma4-12B-IT-NPU2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use FastFlowLM/Gemma4-12B-IT-NPU2 with Transformers:"
+    },
+    {
+      "title": "README.md · FastFlowLM/Gemma4-12B-IT-NPU2 at main - Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/Gemma4-12B-IT-NPU2/blob/main/README.md",
+      "snippet": "At the time of release, this family of models provides high-performance open vision-language model implementations designed from the ground up for responsible AI development compared to similarly sized models."
+    },
+    {
+      "title": "Gemma 4 12B: The Developer Guide - Google Developers Blog",
+      "url": "https://developers.googleblog.com/gemma-4-12b-the-developer-guide/",
+      "snippet": "Meet Gemma 4 12B: the first medium-sized, encoder-free multimodal model capable of natively ingesting audio and video. Ideal for local AI development with 16GB VRAM, Hugging Face integrations, and drop-in local API servers."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Run Google Gemma 4 12B Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-google-gemma-4-12b-local-deployment-and-inference",
+      "snippet": "Deploy Google Gemma 4 12B locally with Ollama and Python. Learn setup, API usage, and optimization for efficient local AI inference."
+    }
+  ]
+}

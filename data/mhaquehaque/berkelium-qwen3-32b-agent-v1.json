@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Mhaquehaque/berkelium-qwen3-32b-agent-v1",
+  "slug": "mhaquehaque-berkelium-qwen3-32b-agent-v1",
+  "author": "Mhaquehaque",
+  "url": "https://huggingface.co/Mhaquehaque/berkelium-qwen3-32b-agent-v1",
+  "created_at": "2026-10-08T14:57:09.000Z",
+  "updated_at": "2026-10-08T14:57:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 548419835,
+  "storage_human": "548 MB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

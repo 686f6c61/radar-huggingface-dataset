@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OussamaBenSlama/qarai-guard-200M-v0",
+  "slug": "oussamabenslama-qarai-guard-200m-v0",
+  "author": "OussamaBenSlama",
+  "url": "https://huggingface.co/OussamaBenSlama/qarai-guard-200M-v0",
+  "created_at": "2026-10-08T16:48:26.000Z",
+  "updated_at": "2026-10-08T16:48:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:UBC-NLP/MARBERTv2",
+    "base_model:finetune:UBC-NLP/MARBERTv2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162849034,
+  "parameters_human": "162.8M",
+  "storage_bytes": 651424953,
+  "storage_human": "651 MB",
+  "base_model": "UBC-NLP/MARBERTv2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - qarai-labs/qarai-agent-guard: A lightweight toolkit for ...",
+      "url": "https://github.com/qarai-labs/qarai-agent-guard",
+      "snippet": "A lightweight toolkit for building secure AI systems with built-in middleware, protected memory, and AI safety models that mitigate prompt injection, jailbreaks, and adversarial attacks. - qarai-labs/qarai-agent-guard"
+    },
+    {
+      "title": "Qarai Agent Guard",
+      "url": "https://qarai-labs.github.io/qarai-agent-guard/",
+      "snippet": "Qarai Agent Guard is a Python library that protects AI agents from security threats. It inspects data before an agent reads it, stores it, or sends it to a tool."
+    },
+    {
+      "title": "OussamaBenSlama - GitHub",
+      "url": "https://github.com/OussamaBenSlama",
+      "snippet": "I&#x27;m Oussama, an AI Engineer interested in building reliable, efficient, and production-ready AI systems. I enjoy working across the full AI stack, from data and model fine-tuning to agentic systems, backend infrastructure, deployment, and system optimization. Alongside AI engineering, I&#x27;m also exploring AI Security, with a focus on testing, evaluating, and protecting AI systems in production."
+    },
+    {
+      "title": "qarai-agent-guard · PyPI",
+      "url": "https://pypi.org/project/qarai-agent-guard/",
+      "snippet": "Qarai Agent Guard Qarai Agent Guard is a lightweight Python toolkit for building secure AI agents. It combines middleware, protected memory, and AI safety models to defend against prompt injection, jailbreaks, PII leakage, and other LLM security threats. It includes built-in security rules for prompt injection, jailbreak attempts, PII leakage, XML-based attacks, and secrets detection, with out ..."
+    },
+    {
+      "title": "Securing Your AI Agents with Qarai Agent Guard: A Practical ... - Medium",
+      "url": "https://medium.com/@ziadisafouene/securing-your-ai-agents-with-qarai-agent-guard-a-practical-tutorial-897e4ac9121d",
+      "snippet": "Qarai Agent Guard is a lightweight Python toolkit built specifically to close that gap, combining middleware, protected memory, and AI safety models to defend your agents against these threats ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nextgenomni/ngo-media-assets",
+  "slug": "nextgenomni-ngo-media-assets",
+  "author": "nextgenomni",
+  "url": "https://huggingface.co/nextgenomni/ngo-media-assets",
+  "created_at": "2026-10-08T01:04:52.000Z",
+  "updated_at": "2026-10-08T05:19:13.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "talking-head",
+    "lip-sync",
+    "audio-driven-animation",
+    "portrait-animation",
+    "liveportrait",
+    "ditto",
+    "hubert",
+    "mediapipe",
+    "arxiv:2411.19509",
+    "arxiv:2407.03168",
+    "arxiv:2106.07447",
+    "arxiv:2210.17323",
+    "base_model:digital-avatar/ditto-talkinghead",
+    "base_model:quantized:digital-avatar/ditto-talkinghead",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 902830080,
+  "storage_human": "903 MB",
+  "base_model": "digital-avatar/ditto-talkinghead",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/?hl=fr&hl=fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    }
+  ]
+}

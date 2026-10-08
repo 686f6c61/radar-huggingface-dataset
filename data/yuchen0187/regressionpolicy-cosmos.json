@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yuchen0187/RegressionPolicy-Cosmos",
+  "slug": "yuchen0187-regressionpolicy-cosmos",
+  "author": "yuchen0187",
+  "url": "https://huggingface.co/yuchen0187/RegressionPolicy-Cosmos",
+  "created_at": "2026-10-08T01:46:47.000Z",
+  "updated_at": "2026-10-08T02:06:53.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "robotics",
+    "ht-regression",
+    "libero",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:finetune:nvidia/Cosmos3-Nano",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 93880790752,
+  "storage_human": "93.9 GB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yuchen0187/RegressionPolicy-Cosmos · Hugging Face",
+      "url": "https://huggingface.co/yuchen0187/RegressionPolicy-Cosmos",
+      "snippet": "Built on NVIDIA Cosmos. The checkpoint uses upstream OpenMDW-1.1, included in LICENSE. These license obligations come from the upstream model, not additional restrictions imposed by the RegressionPolicy authors. The VAE has its own Apache-2.0 license. See NOTICE for attribution and modifications."
+    },
+    {
+      "title": "[2601.16163] Cosmos Policy: Fine-Tuning Video Models for Visuomotor ...",
+      "url": "https://arxiv.org/abs/2601.16163",
+      "snippet": "Recent video generation models demonstrate remarkable ability to capture complex physical interactions and scene evolution over time. To leverage their spatiotemporal priors, robotics works have adapted video models for policy learning but introduce complexity by requiring multiple stages of post-training and new architectural components for action generation. In this work, we introduce Cosmos ..."
+    },
+    {
+      "title": "Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning",
+      "url": "https://arxiv.org/html/2601.16163v1",
+      "snippet": "Figure 1: We present Cosmos Policy, a state-of-the-art robot policy fine-tuned from the NVIDIA Cosmos-Predict2-2B video foundation model. Cosmos Policy handles multimodal inputs and multi-view camera images and predicts (1) a robot action chunk, (2) future state (represented by robot proprioception and image observations), and (3) value (expected rewards-to-go at the future state). No ..."
+    },
+    {
+      "title": "GitHub - NVlabs/cosmos-policy: Cosmos Policy · GitHub",
+      "url": "https://github.com/NVlabs/cosmos-policy",
+      "snippet": "Inference with base Cosmos Policy only (i.e., no model-based planning): 1 GPU with 6.8 GB VRAM for LIBERO sim benchmark tasks 1 GPU with 8.9 GB VRAM for RoboCasa sim benchmark tasks 1 GPU with 6.0 GB VRAM for ALOHA robot tasks Inference with Cosmos Policy + model-based planning (best-of-N search) on ALOHA robot tasks: Minimum (serial inference): 1 GPU with 10.0 GB VRAM Recommended (parallel ..."
+    },
+    {
+      "title": "GitHub - Norm90732/CosmosPolicyRecreation: Implementation of https ...",
+      "url": "https://github.com/Norm90732/CosmosPolicyRecreation",
+      "snippet": "The foundation of this implementation is based on the Cosmos-Predict 2.5 World Model. This video generation model has strong physics priors from its Physical AI focused curriculum. The model is trained with a conditioning mask, enabling Text2World, Image2World, and Video2World in one base model. Figure from [2]."
+    }
+  ]
+}

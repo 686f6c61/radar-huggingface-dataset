@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "yaoxiao-0512/collie-rma-phase3",
+  "slug": "yaoxiao-0512-collie-rma-phase3",
+  "author": "yaoxiao-0512",
+  "url": "https://huggingface.co/yaoxiao-0512/collie-rma-phase3",
+  "created_at": "2026-10-08T14:58:52.000Z",
+  "updated_at": "2026-10-08T14:59:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2663416,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -25,9 +25,9 @@
     "diffusers:Kandinsky6TI2VAPipeline",
     "region:us"
   ],
-  "likes": 24,
-  "downloads_30d": 128,
-  "trending_score": 23,
+  "likes": 26,
+  "downloads_30d": 175,
+  "trending_score": 26,
   "parameters": 3176632424,
   "parameters_human": "3.18B",
   "storage_bytes": 35253315221,

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "HentaiSL/pixai-tagger-v1.0-onnx-1008-672-336-ft",
+  "slug": "hentaisl-pixai-tagger-v1-0-onnx-1008-672-336-ft",
+  "author": "HentaiSL",
+  "url": "https://huggingface.co/HentaiSL/pixai-tagger-v1.0-onnx-1008-672-336-ft",
+  "created_at": "2026-10-08T18:24:43.000Z",
+  "updated_at": "2026-10-08T19:08:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "anime",
+    "tagger",
+    "danbooru-tags",
+    "character-recognition",
+    "tensorrt",
+    "fp16",
+    "fine-tuned",
+    "image-classification",
+    "base_model:pixai-labs/pixai-tagger-v1.0",
+    "base_model:quantized:pixai-labs/pixai-tagger-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12244667027,
+  "storage_human": "12.2 GB",
+  "base_model": "pixai-labs/pixai-tagger-v1.0",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pixai-labs/pixai-tagger-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/pixai-labs/pixai-tagger-v1.0",
+      "snippet": "Tagger v1.0 reaches 0.6660 micro F1, a 2.25 percentage-point lead over the next model, and 0.3807 mAP on 8,407 shared General tags. These results describe the evaluated models and dataset, rather than every available tagger."
+    },
+    {
+      "title": "ImageTaggerGUI (formerly PixAI Tagger ONNX GUI) - GitHub",
+      "url": "https://github.com/wai55555/ImageTaggerGUI",
+      "snippet": "ImageTaggerGUI uses multiple local models—including the ONNX version of the image tagging model developed by PixAI —and optional network VLMs to generate tags and captions for images. This project started as a GUI for PixAI Tagger (formerly PixAI Tagger ONNX GUI) and now supports multiple local models and network VLMs. The original PixAI Tagger supports over 13,000 rich tags, offering an ..."
+    },
+    {
+      "title": "GitHub - async0x42/pixaitaggeronnxgui: ONNX tagger GUI",
+      "url": "https://github.com/async0x42/pixaitaggeronnxgui",
+      "snippet": "PixAI Tagger ONNX GUI utilizes the ONNX version of the image tagging model developed by PixAI to assign tags to local images. The original PixAI Tagger supports over 13,000 rich tags, offering an advantage compared to common tagging models (e.g., wd-tagger&#x27;s ~10,000 tags). This tool was developed to maximize its performance and support your image management. It features automatic image tagging ..."
+    },
+    {
+      "title": "model.onnx · noaione/pixai-tagger-v1.0-onnx at main - Hugging Face",
+      "url": "https://huggingface.co/noaione/pixai-tagger-v1.0-onnx/blob/main/model.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "[September 2026 Latest] Explanation of PixAI Tagger v1.0 (Comparison ...",
+      "url": "https://note.com/hirorohi03/n/n42d2c4cfbfea?hl=en",
+      "snippet": "In late September 2026, PixAI&#x27;s latest Tagger model \"PixAI Tagger v1.0\" was released as an open-source model. It is expected to be promising as it was also used in the development of \"Tsubaki.3\", PixAI&#x27;s proprietary closed image generation model released in the same month. …but it hasn&#x27;t been talked about at all. Perhaps it&#x27;s because Taggers themselves are low-profile tools (AI models). So ..."
+    }
+  ]
+}

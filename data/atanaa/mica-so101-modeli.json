@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atanaa/MICA-so101-modeli",
+  "slug": "atanaa-mica-so101-modeli",
+  "author": "Atanaa",
+  "url": "https://huggingface.co/Atanaa/MICA-so101-modeli",
+  "created_at": "2026-10-08T16:54:07.000Z",
+  "updated_at": "2026-10-08T16:56:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "ppo",
+    "so101",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 418754530,
+  "storage_human": "419 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "so101 - a Dongxiaokun Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Dongxiaokun/so101",
+      "snippet": "Unlock the magic of AI with handpicked models, awesome datasets, papers, and mind-blowing Spaces from Dongxiaokun"
+    },
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "Simulation Models | TheRobotStudio/SO-ARM100 | DeepWiki",
+      "url": "https://deepwiki.com/TheRobotStudio/SO-ARM100/4.2-simulation-models",
+      "snippet": "Simulation Models Relevant source files This page provides an overview of the virtual robot models available for the SO-ARM100 robot system. The repository includes both URDF and MuJoCo (MJCF) format models to support different simulation, visualization, and AI control workflows. Simulation models enable virtual testing, motion planning, and AI policy training before deploying to physical ..."
+    },
+    {
+      "title": "mujoco_menagerie/robotstudio_so101 at main · google-deepmind ... - GitHub",
+      "url": "https://github.com/google-deepmind/mujoco_menagerie/tree/main/robotstudio_so101",
+      "snippet": "A collection of high-quality models for the MuJoCo physics engine, curated by Google DeepMind. - google-deepmind/mujoco_menagerie"
+    },
+    {
+      "title": "Hugging Face Launches the SO-101, an Upgraded Low-Cost 3D-Printable ...",
+      "url": "https://www.hackster.io/news/hugging-face-launches-the-so-101-an-upgraded-low-cost-3d-printable-autonomous-robot-arm-532360f441eb",
+      "snippet": "Artificial intelligence and machine learning (AI and ML) specialist Hugging Face has announced a new string to its LeRobot open source embodied intelligence robotics framework, developed in partnership with RobotStudio: a next-generation low-cost 3D-printable robot arm, the SO-101 — which the company says can be built for as little as $130. \"The SO‑101 is the next‑generation version of ..."
+    }
+  ]
+}

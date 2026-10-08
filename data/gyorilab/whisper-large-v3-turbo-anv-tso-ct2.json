@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "gyorilab/whisper-large-v3-turbo-anv-tso-ct2",
+  "slug": "gyorilab-whisper-large-v3-turbo-anv-tso-ct2",
+  "author": "gyorilab",
+  "url": "https://huggingface.co/gyorilab/whisper-large-v3-turbo-anv-tso-ct2",
+  "created_at": "2026-10-08T14:59:03.000Z",
+  "updated_at": "2026-10-08T14:59:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "ts"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "faster-whisper",
+    "xitsonga",
+    "automatic-speech-recognition",
+    "ts",
+    "base_model:dsfsi-anv/whisper-large-v3-turbo-anv-tso",
+    "base_model:finetune:dsfsi-anv/whisper-large-v3-turbo-anv-tso",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 820316291,
+  "storage_human": "820 MB",
+  "base_model": "dsfsi-anv/whisper-large-v3-turbo-anv-tso",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

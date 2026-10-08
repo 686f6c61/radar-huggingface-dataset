@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Ilides/cortex-v0.9-0.1b-mlx",
+  "slug": "ilides-cortex-v0-9-0-1b-mlx",
+  "author": "Ilides",
+  "url": "https://huggingface.co/Ilides/cortex-v0.9-0.1b-mlx",
+  "created_at": "2026-10-08T18:25:00.000Z",
+  "updated_at": "2026-10-08T18:32:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cortex",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 504975160,
+  "storage_human": "505 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Cortex AI IDE — Free for Windows & Linux",
+      "url": "https://cortex-ide.app/download/",
+      "snippet": "Download Cortex AI IDE free for Windows and Linux. Bring your own API key, pick any model and build with a full-codebase AI agent. No subscription needed."
+    },
+    {
+      "title": "OpenAI Codex (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI_Codex_(language_model)",
+      "snippet": "OpenAI Codex is a large language model developed by OpenAI for translating natural-language prompts into source code. Announced in 2021, it was a modified production version of GPT-3 that was fine-tuned on source code in multiple programming languages, and it served as the original model for GitHub Copilot. [1][2] Codex was designed to assist programmers by generating code from plain-language ..."
+    },
+    {
+      "title": "stabilityai/stable-diffusion-xl-base-0.9 · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-xl-base-0.9",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MLX (machine learning framework) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/MLX_(machine_learning_framework)",
+      "snippet": "MLX is an open-source machine learning framework developed by Apple and designed primarily for Apple silicon. It is used for training and running machine learning models and is optimized for Apple silicon&#x27;s unified memory architecture, allowing the CPU and GPU to work with the same data without copying it between separate memory pools. [1] MLX can be used for applications including large ..."
+    },
+    {
+      "title": "Introduction to MLX: Apple&#x27;s Machine Learning Framework",
+      "url": "https://medium.com/lolml/introduction-to-mlx-apples-machine-learning-framework-527b81f23fa5",
+      "snippet": "Machine learning on Apple Silicon took a major step forward with the introduction of MLX in late 2023 — a framework designed for…"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "imaquantinizer/minecraft-pixelart-64x64",
+  "slug": "imaquantinizer-minecraft-pixelart-64x64",
+  "author": "imaquantinizer",
+  "url": "https://huggingface.co/imaquantinizer/minecraft-pixelart-64x64",
+  "created_at": "2026-10-08T17:49:52.000Z",
+  "updated_at": "2026-10-08T17:50:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36614788,
+  "parameters_human": "36.6M",
+  "storage_bytes": 146524024,
+  "storage_human": "147 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "64x64 Pixel Art Generator — AI Character & NFT Avatar Maker | PixExact",
+      "url": "https://www.pixexact.com/pixel-art-generator/64x64",
+      "snippet": "Create detailed 64x64 pixel art characters, NFT avatars, and game sprites with AI. The most popular size for detailed pixel art — use our 64x64 pixel art generator and maker online."
+    },
+    {
+      "title": "Minecraft Pixel Art Generator - Create Pixel Art from Images Online",
+      "url": "https://minecraftgenerator.com/minecraft-pixel-art-generator",
+      "snippet": "Use our free Minecraft pixel art generator to generate pixel art from image uploads. With our online pixel art generator, export PNG, SVG, .schematic, or MCFunction for easy in‑game builds."
+    },
+    {
+      "title": "AI Minecraft Character Maker - Free 64x64 PNG Tool",
+      "url": "https://editthispic.com/edit/ai-minecraft-character-maker",
+      "snippet": "Make a Minecraft character with AI in 30 seconds. 64x64 PNG skin file ready to drop into your minecraft.net profile. Free, no signup, no Photoshop."
+    },
+    {
+      "title": "Free Minecraft Pixel Art Generator Online - Create Pixel Art AI ...",
+      "url": "https://nanoimg.io/minecraft-pixel-art-generator",
+      "snippet": "AI-powered Minecraft pixel art generator. Create blocky pixel art online for free. Convert ideas into authentic Minecraft-style art with perfect block aesthetics."
+    },
+    {
+      "title": "Minecraft Pixel Art Generator - Image to Blocks & Blueprint",
+      "url": "https://www.pixelartbase.com/minecraft-pixel-art-generator/",
+      "snippet": "Convert any image or photo into Minecraft pixel art. Match real blocks, see exact material counts, and download a PNG guide, Litematic or schematic."
+    }
+  ]
+}

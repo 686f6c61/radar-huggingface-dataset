@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "Koshkasa/Naphula_Goetia-26B-A4B-v1.7-GGUF",
+  "slug": "koshkasa-naphula_goetia-26b-a4b-v1-7-gguf",
+  "author": "Koshkasa",
+  "url": "https://huggingface.co/Koshkasa/Naphula_Goetia-26B-A4B-v1.7-GGUF",
+  "created_at": "2026-10-08T17:56:04.000Z",
+  "updated_at": "2026-10-08T18:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "all genres",
+    "conversational",
+    "creative",
+    "creative writing",
+    "dark writing",
+    "della",
+    "EldritchLabs",
+    "fiction",
+    "fiction story",
+    "fiction writing",
+    "goetia",
+    "horror",
+    "karcher",
+    "merge",
+    "mergekit",
+    "mergekit-exp",
+    "multifusion",
+    "nearswap",
+    "plot generation",
+    "roleplay",
+    "roleplaying",
+    "romance",
+    "rp",
+    "scene continue",
+    "science fiction",
+    "story",
+    "story generation",
+    "storytelling",
+    "sub-plot generation",
+    "suspense",
+    "swearing",
+    "vivid prosing",
+    "vivid writing",
+    "writing",
+    "text-generation",
+    "en",
+    "dataset:OccultAI/illuminati_imatrix_v1",
+    "base_model:Naphula/Goetia-26B-A4B-v1.7",
+    "base_model:quantized:Naphula/Goetia-26B-A4B-v1.7",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14224235,
+  "parameters_human": "14.2M",
+  "storage_bytes": 102983510965,
+  "storage_human": "103.0 GB",
+  "base_model": "Naphula/Goetia-26B-A4B-v1.7",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naphula/Goetia-26B-A4B-v1.4 · Hugging Face",
+      "url": "https://huggingface.co/Naphula/Goetia-26B-A4B-v1.4",
+      "snippet": "📜 Goetia 26B A4B v1.4 🧙‍♀ The Invocation This is a merge of pre-trained language models created using mergekit. Merge Details Merge Method This model was merged using the MoE DELLA merge method using google/gemma-4-26B-A4B as a base. Models Merged The following models were included in the merge: google/gemma-4-26B-A4B"
+    },
+    {
+      "title": "Naphula/Goetia-26B-A4B-v1.7 · Hugging Face",
+      "url": "https://huggingface.co/Naphula/Goetia-26B-A4B-v1.7",
+      "snippet": "Naphula / Goetia-26B-A4B-v1.7 Like 7 Image-Text-to-Text Transformers Safetensors OccultAI/illuminati_imatrix_v1 English gemma4 all genres conversational creative creative writing dark writing della EldritchLabs fiction fiction story fiction writing goetia horror karcher Merge mergekit mergekit-exp multifusion nearswap plot generation roleplay ..."
+    },
+    {
+      "title": "Goetia 26B A4B V1.5 by Naphula — VRAM 52GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Naphula%2FGoetia-26B-A4B-v1.5,6wYAB9f0FBG0Kw9LmmRSKI",
+      "snippet": "Goetia 26B A4B V1.5 is an open-source 26b LLM by Naphula. VRAM 52GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Run Goetia-26B-A4B-v1.4 API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Naphula/Goetia-26B-A4B-v1.4",
+      "snippet": "Naphula/Goetia-26B-A4B-v1.4 is a 26 billion parameter language model based on the Gemma-4 architecture, created by merging multiple pre-trained models using the MoE DELLA method. This model integrates various specialized Gemma-4-26B-A4B variants, including those focused on reasoning and style-tuning, to enhance overall performance. With a 32768 token context length, it is designed for complex ..."
+    },
+    {
+      "title": "Goetia 26B A4B V1.3 Absolute Heretic ARA by Naphula",
+      "url": "https://llm-explorer.com/model/Naphula%2FGoetia-26B-A4B-v1.3-Absolute-Heretic-ARA,75JAgWoH2Ayv97PPP2xglw",
+      "snippet": "Goetia 26B A4B V1.3 Absolute Heretic ARA is an open-source 25.8b LLM by Naphula. VRAM 51.6GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

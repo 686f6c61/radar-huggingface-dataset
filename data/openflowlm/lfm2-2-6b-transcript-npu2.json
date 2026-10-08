@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/LFM2-2.6B-Transcript-NPU2",
+  "slug": "openflowlm-lfm2-2-6b-transcript-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/LFM2-2.6B-Transcript-NPU2",
+  "created_at": "2026-10-08T17:01:01.000Z",
+  "updated_at": "2026-10-08T17:01:02.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B",
+    "base_model:finetune:LiquidAI/LFM2-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1874619128,
+  "storage_human": "1.9 GB",
+  "base_model": "LiquidAI/LFM2-2.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FastFlowLM/LFM2-2.6B-Transcript-NPU2 · Hugging Face",
+      "url": "https://huggingface.co/FastFlowLM/LFM2-2.6B-Transcript-NPU2",
+      "snippet": "Find more information about LFM2-2.6B-Transcript in AMD&#x27;s blog postand Liquid&#x27;s blog post. 📄 Model details Model Description LFM2-2.6B-Transcript Original model checkpoint in native format. Best for fine-tuning or inference with Transformers and vLLM."
+    },
+    {
+      "title": "LiquidAI/LFM2-2.6B-Transcript · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-2.6B-Transcript",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "FastFlowLM/src/xclbins/LFM2-2.6B-Transcript-NPU2 at main - GitHub",
+      "url": "https://github.com/FastFlowLM/FastFlowLM/tree/main/src/xclbins/LFM2-2.6B-Transcript-NPU2",
+      "snippet": "Run LLMs on AMD Ryzen™ AI NPUs in minutes. Just like Ollama - but purpose-built and deeply optimized for the AMD NPUs. - FastFlowLM/src/xclbins/LFM2-2.6B-Transcript ..."
+    },
+    {
+      "title": "LFM2-2.6B-Transcript - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-2.6b-transcript",
+      "snippet": "← Back to Liquid Nanos LFM2-2.6B-Transcript is designed for private, on-device meeting summarization from transcripts. It generates executive summaries, detailed summaries, action items, key decisions, and participant lists."
+    },
+    {
+      "title": "The Future of Meeting Summarization: Local, Fast, Private, and Fully ...",
+      "url": "https://www.liquid.ai/blog/the-future-of-meeting-summarization-local-fast-private-and-fully-secure",
+      "snippet": "Today, we&#x27;re bringing this fast, private, on-device enterprise-grade meeting summarization to everyone, with LFM2-2.6B-Transcript: a purpose-built Liquid Nano designed for long-form meeting transcripts and real operational use. No cloud dependency, no data leaving the device, and no compromise on performance."
+    }
+  ]
+}

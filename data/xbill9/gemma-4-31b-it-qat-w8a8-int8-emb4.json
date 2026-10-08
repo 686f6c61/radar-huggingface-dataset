@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4",
+  "slug": "xbill9-gemma-4-31b-it-qat-w8a8-int8-emb4",
+  "author": "xbill9",
+  "url": "https://huggingface.co/xbill9/gemma-4-31B-it-qat-w8a8-int8-emb4",
+  "created_at": "2026-10-08T01:44:30.000Z",
+  "updated_at": "2026-10-08T01:45:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "compressed-tensors",
+    "w8a8",
+    "int8",
+    "int4",
+    "qat",
+    "text-only",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "base_model:quantized:google/gemma-4-31B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 32106631484,
+  "parameters_human": "32.11B",
+  "storage_bytes": 30915628226,
+  "storage_human": "30.9 GB",
+  "base_model": "google/gemma-4-31B-it-qat-q4_0-unquantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4-Bit Embeddings Decode up to 1.39x Faster on One L4",
+      "url": "https://dev.to/aws-builders/gemma-4-on-amazon-sagemaker-4-bit-embeddings-decode-up-to-139x-faster-on-one-l4-36mf",
+      "snippet": "30.09.2026 ... 31B emb4: https://huggingface.co/xbill9/gemma-4-31B-it-qat-q4_0 ... E2B int8: https://huggingface.co/xbill9/gemma-4-E2B-it-qat-w8a8-int8 ..."
+    },
+    {
+      "title": "Gemma 4 QAT on One TPU v5e: What Runs and What Doesn't",
+      "url": "https://dev.to/gde/gemma-4-qat-on-one-tpu-v5e-what-runs-and-what-doesnt-2gii",
+      "snippet": "vor 6 Tagen ... Google's quantization-aware-trained Gemma 4 weights, repacked into int4 and int8 formats vLLM serves on TPU, on one v5e chip."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rore-ddy52/generation",
+  "slug": "rore-ddy52-generation",
+  "author": "rore-ddy52",
+  "url": "https://huggingface.co/rore-ddy52/generation",
+  "created_at": "2026-10-08T16:54:38.000Z",
+  "updated_at": "2026-10-08T16:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rore Active — Elevated Activewear for Women – RORE ACTIVE",
+      "url": "https://www.roreactive.com/",
+      "snippet": "Everyday activewear for women, designed to balance performance, comfort and style. Rore Active celebrates strength, movement …"
+    },
+    {
+      "title": "Nos meilleures ventes – RORE ACTIVE",
+      "url": "https://www.roreactive.com/collections/bestseller",
+      "snippet": "Everyday activewear for women, designed to balance performance, comfort and style. Rore Active celebrates strength, movement …"
+    },
+    {
+      "title": "Vêtements de sport femme | Rore Active",
+      "url": "https://roactive.shop/",
+      "snippet": "Découvrez l'activewear quotidien pour femmes, mêlant style, confort et performance. Rore Active met à l'honneur le corps et la …"
+    },
+    {
+      "title": "RORE AMO equipement",
+      "url": "http://www.rore.fr/",
+      "snippet": "Gestion de projet d'aménagement clé en main Implantation mobilier Audit d'équipements existants Assistance à l'élaboration ou à la …"
+    },
+    {
+      "title": "Cyprien de Rore — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cyprien_de_Rore",
+      "snippet": "De 1560 à 1563, Cyprien de Rore travaille au service de Marguerite d'Autriche à Bruxelles et du second mari d'icelle, le duc de …"
+    }
+  ]
+}

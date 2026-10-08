@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "traceray/nexus-layout",
+  "slug": "traceray-nexus-layout",
+  "author": "traceray",
+  "url": "https://huggingface.co/traceray/nexus-layout",
+  "created_at": "2026-10-08T16:40:01.000Z",
+  "updated_at": "2026-10-08T16:40:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "document-layout-analysis",
+    "onnxruntime-web",
+    "object-detection",
+    "base_model:PaddlePaddle/PP-DocLayoutV3",
+    "base_model:quantized:PaddlePaddle/PP-DocLayoutV3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65751638,
+  "storage_human": "66 MB",
+  "base_model": "PaddlePaddle/PP-DocLayoutV3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nexus: Structured Synergy for Efficient Text-to-Image Generation using ...",
+      "url": "https://arxiv.org/pdf/2608.16104",
+      "snippet": "We have presented Nexus, a text-to-image generation model that systematically integrates mixture-of-experts sparse activation, Gated DeltaNet linear attention, and per-expert low-bit quantization within a rectified flow framework."
+    },
+    {
+      "title": "Large Tabular Models Bring AI Analysis to Spreadsheets - IEEE Spectrum",
+      "url": "https://spectrum.ieee.org/large-tabular-models-nexus",
+      "snippet": "Startup&#x27;s foundation model NEXUS tackles spreadsheets, AI&#x27;s surprising final frontier"
+    },
+    {
+      "title": "[2608.16104] Nexus: Structured Synergy for Efficient Text-to-Image ...",
+      "url": "https://arxiv.org/abs/2608.16104",
+      "snippet": "Diffusion and flow matching models have made significant progress in text-to-image generation, yet high computation, quadratic complexity, and large memory footprint hinder high-resolution synthesis and edge deployment. We propose Nexus, which integrates sparse architecture, linear complexity, and low-bit quantization. It combines MoE feed-forward layers, gated DeltaNet attention, and per ..."
+    },
+    {
+      "title": "TraceRay function - Win32 apps | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/direct3d12/traceray-function",
+      "snippet": "MissShaderIndex An unsigned integer specifying the index of the miss shader within a shader table. Ray A RayDesc representing the ray to be traced. Payload A user defined ray payload accessed both for both input and output by shaders invoked during raytracing. After TraceRay completes, the caller can access the payload as well."
+    },
+    {
+      "title": "PDF Scalable Real-Time Rayh Tracing",
+      "url": "https://game.intel.com/wp-content/uploads/2024/02/GameDev2023_Scalable_Ray_Tracing_v2.pdf?x18111&x18111",
+      "snippet": "Instance mask may already be reserved for purposes other than LoD (artist control / perf reasons) LoD selection may depend on hit distance which is unknown at time of TraceRay() call. Without traversal shaders, multiple TraceRays are needed, e.g. traversing multiple TLAS-es."
+    }
+  ]
+}

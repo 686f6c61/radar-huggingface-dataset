@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davidchhh/cross-modal-fusion-survey",
+  "slug": "davidchhh-cross-modal-fusion-survey",
+  "author": "davidchhh",
+  "url": "https://huggingface.co/davidchhh/cross-modal-fusion-survey",
+  "created_at": "2026-10-08T17:07:56.000Z",
+  "updated_at": "2026-10-08T17:08:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andemat1006/cross-modal-fusion-survey · Hugging Face",
+      "url": "https://huggingface.co/Andemat1006/cross-modal-fusion-survey",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cross-Modal Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/cross-modal-learning/",
+      "snippet": "By leveraging the ability to correlate and utilize diverse types of information, cross-modal learning enables more accurate, contextually aware, and natural interactions in AI systems. It opens up innovative applications across various domains, from autonomous driving to immersive augmented reality experiences."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    },
+    {
+      "title": "Cross-Modal Model Merging",
+      "url": "https://www.emergentmind.com/topics/cross-modal-model-merging",
+      "snippet": "This synthesis demonstrates that cross-modal model merging is a core problem at the intersection of deep learning, multimodal fusion, and model compression, with a rapidly expanding methodology suite designed to robustly exploit multimodal signals, transfer specialist expertise, and underpin next-generation unified AI systems."
+    }
+  ]
+}

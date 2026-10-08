@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ksumara/cloud-classifier-resnet18",
+  "slug": "ksumara-cloud-classifier-resnet18",
+  "author": "ksumara",
+  "url": "https://huggingface.co/ksumara/cloud-classifier-resnet18",
+  "created_at": "2026-10-08T15:13:30.000Z",
+  "updated_at": "2026-10-08T15:29:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "cloud-classification",
+    "mlops",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11188164,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44768440,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

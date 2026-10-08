@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ikuznetsov95k/efficientformer-finetuned",
+  "slug": "ikuznetsov95k-efficientformer-finetuned",
+  "author": "ikuznetsov95k",
+  "url": "https://huggingface.co/ikuznetsov95k/efficientformer-finetuned",
+  "created_at": "2026-10-08T16:48:02.000Z",
+  "updated_at": "2026-10-08T16:48:06.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "git - How to solve SSL certificate: self signed certificate when ...",
+      "url": "https://stackoverflow.com/questions/39004750/how-to-solve-ssl-certificate-self-signed-certificate-when-cloning-repo-from-git",
+      "snippet": "Related: How can I make git accept a self signed certificate?. (Not necessarily a duplicate. Accepted answer only works after a …"
+    },
+    {
+      "title": "Visual Studio Code - Remove blank lines from code - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/50042278/visual-studio-code-remove-blank-lines-from-code",
+      "snippet": "Jun 23, 2018 · I use Visual Studio Code as my preferred text editor and I have ran into a problem with regards to the formatting. I …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "知乎是一个问答社区，提供高质量的内容和交流机会，帮助用户找到问题的答案。"
+    },
+    {
+      "title": "browser - How do we download a blob url video - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42901942/how-do-we-download-a-blob-url-video",
+      "snippet": "The community reviewed whether to reopen this question 3 months ago and left it closed: Not suitable for this site This question does …"
+    }
+  ]
+}

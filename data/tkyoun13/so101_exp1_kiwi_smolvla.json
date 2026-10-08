@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "tkyoun13/so101_exp1_kiwi_smolvla",
+  "slug": "tkyoun13-so101_exp1_kiwi_smolvla",
+  "author": "tkyoun13",
+  "url": "https://huggingface.co/tkyoun13/so101_exp1_kiwi_smolvla",
+  "created_at": "2026-10-08T16:59:18.000Z",
+  "updated_at": "2026-10-08T17:00:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:tkyoun13/so101_exp1_kiwi",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tkyoun13/so101_kiwi_lr_v4_smolvla · Hugging Face",
+      "url": "https://huggingface.co/tkyoun13/so101_kiwi_lr_v4_smolvla",
+      "snippet": "SmolVLA is a compact, efficient vision-language-action model that achieves competitive performance at reduced computational costs and can be deployed on consumer-grade hardware."
+    },
+    {
+      "title": "tkyoun13/so101 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/tkyoun13/so101",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - l2ktech/smolvla_project: SmolVLA/SO100 embodied AI practice ...",
+      "url": "https://github.com/l2ktech/smolvla_project",
+      "snippet": "Public support repository for SmolVLA, LeRobot datasets, and SO-100/SO100-style embodied AI experiments. This repository is a public learning and engineering evidence entry for the SO101 / Pi0.5 / Evo-RL interview project line. It is not a packaged product and it does not contain private robot logs, credentials, or production deployment configuration."
+    },
+    {
+      "title": "GitHub - zyqdragon/lerobot_smolvla: LeRobot: Making AI for Robotics ...",
+      "url": "https://github.com/zyqdragon/lerobot_smolvla",
+      "snippet": "🤗 LeRobot: Making AI for Robotics more accessible with end-to-end learning - zyqdragon/lerobot_smolvla"
+    },
+    {
+      "title": "[2506.01844] SmolVLA: A Vision-Language-Action Model for Affordable and ...",
+      "url": "https://arxiv.org/abs/2506.01844",
+      "snippet": "Vision-language models (VLMs) pretrained on large-scale multimodal datasets encode rich visual and linguistic knowledge, making them a strong foundation for robotics. Rather than training robotic policies from scratch, recent approaches adapt VLMs into vision-language-action (VLA) models that enable natural language-driven perception and control. However, existing VLAs are typically massive ..."
+    }
+  ]
+}

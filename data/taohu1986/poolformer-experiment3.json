@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "taohu1986/poolformer-experiment3",
+  "slug": "taohu1986-poolformer-experiment3",
+  "author": "taohu1986",
+  "url": "https://huggingface.co/taohu1986/poolformer-experiment3",
+  "created_at": "2026-10-08T18:20:02.000Z",
+  "updated_at": "2026-10-08T18:20:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF CATALOGUES - Master",
+      "url": "https://www.master.it/en/download-category/pdf-catalogues/",
+      "snippet": "The product catalogues below, sorted by type and language, are available for you to download."
+    },
+    {
+      "title": "Catalogues download - Master Italy",
+      "url": "https://www.masteritaly.com/en/catalogues-download/",
+      "snippet": "This service is exclusively reserved to all the companies and industry professionals."
+    },
+    {
+      "title": "Master Sanitary Product Catalogue | PDF - Scribd",
+      "url": "https://www.scribd.com/document/804265439/Master-Sanitary-Product-Catalogue",
+      "snippet": "Master Sanitary Product Catalogue - Free download as PDF File (.pdf) or view presentation slides online."
+    },
+    {
+      "title": "Catalogues en PDF - Master",
+      "url": "https://www.master.it/fr/categorie-de-telechargement/catalogues-en-pdf/",
+      "snippet": "Vous trouverez ci-dessous les catalogues de produits Master divisés par type et par langue."
+    },
+    {
+      "title": "Télécharger des catalogues - EGA Master",
+      "url": "https://www.egamaster.com/fr/telecharger-des-catalogues",
+      "snippet": "Sur cette page, vous pouvez télécharger notre catalogue complet ou nos chapitres, ainsi que d’autres documents relatifs à notre travail."
+    }
+  ]
+}

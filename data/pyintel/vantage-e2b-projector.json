@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pyintel/vantage-e2b-projector",
+  "slug": "pyintel-vantage-e2b-projector",
+  "author": "pyintel",
+  "url": "https://huggingface.co/pyintel/vantage-e2b-projector",
+  "created_at": "2026-10-08T01:52:37.000Z",
+  "updated_at": "2026-10-08T01:52:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "physical-ai",
+    "spatial-reasoning",
+    "robotics",
+    "memory-projector",
+    "gemma",
+    "gemma-4",
+    "embeddinggemma",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vantageai · PyPI",
+      "url": "https://pypi.org/project/vantageai/",
+      "snippet": "vantageai Python SDK for Vantage governance, execution-boundary enforcement, and brokered model execution. Install ... Core Client ... Evaluate, Authorize, Commit ... Brokered Provider Execution ... Anthropic and OpenAI-compatible broker client helpers are available too: ... Observed Wrappers ... Observed wrappers keep post-execution logging ..."
+    },
+    {
+      "title": "e2b-code-interpreter · PyPI",
+      "url": "https://pypi.org/project/e2b-code-interpreter/",
+      "snippet": "E2B is an open-source infrastructure that allows you run to AI-generated code in secure isolated sandboxes in the cloud. To start and control sandboxes, use our JavaScript SDK or Python SDK."
+    },
+    {
+      "title": "AI Agent Code Execution Sandboxes on GPU Cloud: E2B, Daytona, and ...",
+      "url": "https://www.spheron.network/blog/ai-agent-code-execution-sandbox-e2b-daytona-firecracker/",
+      "snippet": "Deploy E2B, Daytona, and Firecracker microVM sandboxes on Spheron bare metal GPU cloud. Covers GPU passthrough, sandbox pooling, gVisor vs Firecracker isolation, and cost math vs managed E2B."
+    },
+    {
+      "title": "Comparing AI agent sandbox platforms: E2B, Modal, Daytona, and more",
+      "url": "https://blog.logrocket.com/comparing-ai-agent-sandbox-platforms-e2b-modal-daytona-and-more/",
+      "snippet": "Explore real benchmark data and pricing analysis for 15 AI agent sandbox platforms including E2B, Modal, Daytona, and Vercel to find your best fit."
+    },
+    {
+      "title": "Building and deploying AI agents with E2B - DEV Community",
+      "url": "https://dev.to/logrocket/building-and-deploying-ai-agents-with-e2b-5agj",
+      "snippet": "What is E2B? E2B is a platform used to augment building AI autonomous agents. It allows you to provide your AI agent access to tools in a safe, sandboxed environment. With its sandbox feature, you can set up an environment with whatever tools and packages your AI agent requires for the tasks you want it to accomplish."
+    }
+  ]
+}

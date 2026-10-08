@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ijaadddd/Minimax-h3-mis-insrt",
+  "slug": "ijaadddd-minimax-h3-mis-insrt",
+  "author": "Ijaadddd",
+  "url": "https://huggingface.co/Ijaadddd/Minimax-h3-mis-insrt",
+  "created_at": "2026-10-08T16:46:24.000Z",
+  "updated_at": "2026-10-08T16:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310190448,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "H3 POV Missionary Insertion - v0.7 | MiniMax H3 LoRA | Civitai",
+      "url": "https://civitai.red/models/2843744/h3-pov-missionary-insertion",
+      "snippet": "Generation, training and LoRA distribution on Civitai are covered by Civitai&#x27;s own license agreement with MiniMax. If you download these weights and run them yourself, your use is instead governed by the MiniMax H3 Community License Agreement, whose grant excludes the European Union, the United Kingdom, the Republic of Korea and the United States of America. MiniMax H3"
+    },
+    {
+      "title": "MiniMax-H3 - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/blob/main/diffusion_models/minimax_h3_fl2va_int8_convrot.safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - ostris/ComfyUI-AIToolkit-MiniMaxH3",
+      "url": "https://github.com/ostris/ComfyUI-AIToolkit-MiniMaxH3",
+      "snippet": "ComfyUI-AIToolkit-MiniMaxH3 Reference-video preprocessing for MiniMax-H3 ref2va that matches ai-toolkit exactly, so LoRAs trained there behave the same in ComfyUI."
+    }
+  ]
+}

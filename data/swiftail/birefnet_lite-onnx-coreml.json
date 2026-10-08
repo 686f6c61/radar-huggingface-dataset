@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "swiftail/BiRefNet_lite-onnx-coreml",
+  "slug": "swiftail-birefnet_lite-onnx-coreml",
+  "author": "swiftail",
+  "url": "https://huggingface.co/swiftail/BiRefNet_lite-onnx-coreml",
+  "created_at": "2026-10-08T16:43:13.000Z",
+  "updated_at": "2026-10-08T16:43:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "background-removal",
+    "image-segmentation",
+    "dichotomous-image-segmentation",
+    "coreml",
+    "base_model:ZhengPeng7/BiRefNet_lite",
+    "base_model:quantized:ZhengPeng7/BiRefNet_lite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 203429147,
+  "storage_human": "203 MB",
+  "base_model": "ZhengPeng7/BiRefNet_lite",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/BiRefNet_lite-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/BiRefNet_lite-ONNX",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx)."
+    },
+    {
+      "title": "ZhengPeng7/BiRefNet_lite · Hugging Face",
+      "url": "https://huggingface.co/ZhengPeng7/BiRefNet_lite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CoreML model · Issue #45 · ZhengPeng7/BiRefNet - GitHub",
+      "url": "https://github.com/ZhengPeng7/BiRefNet/issues/45",
+      "snippet": "Any news on this? After running into the DeformConv2d error, I first tried ONNX->CoreML (with all kinds of version combinations of onnxruntime and coremltools), but without luck. I also tried implementing the custom DeformConv2d operation suggested here but also kept running into various problems. I&#x27;m wondering if, given the popularity of model and the time since the last comments, it has been ..."
+    },
+    {
+      "title": "Core ML | Apple Developer Documentation",
+      "url": "https://developer.apple.com/documentation/coreml",
+      "snippet": "Core ML itself builds on top of low-level primitives like Accelerate and BNNS, as well as Metal Performance Shaders. If your app integrates AI models using the latest architectures and inference techniques, see Core AI."
+    },
+    {
+      "title": "onnx-community/BiRefNet_lite-ONNX — Model Family & Lineage",
+      "url": "https://parapulse.io/family/onnx-community/BiRefNet_lite-ONNX",
+      "snippet": "Full lineage for onnx-community/BiRefNet_lite-ONNX: what it&#x27;s built on, and every adapter, fine-tune, merge and quantization derived from it on HuggingFace. Updated ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SWARM-Lab/VSeek-EM",
+  "slug": "swarm-lab-vseek-em",
+  "author": "SWARM-Lab",
+  "url": "https://huggingface.co/SWARM-Lab/VSeek-EM",
+  "created_at": "2026-10-08T15:18:36.000Z",
+  "updated_at": "2026-10-08T15:20:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "video",
+    "vseek",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-4B-Thinking",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Thinking",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4826771968,
+  "parameters_human": "4.83B",
+  "storage_bytes": 9665054478,
+  "storage_human": "9.7 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Installation de Swarm II - Turtle Beach Corporation",
+      "url": "https://support.roccat.com/s/article/installing-swarm-ii?language=fr",
+      "snippet": "Installation de Swarm II Si tu veux profiter de toutes les fonctionnalités de Swarm II, suis les instructions ci-dessous pour installer …"
+    },
+    {
+      "title": "Swarm (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Swarm_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Swarm est une série télévisée américaine en sept épisodes d'environ 30 minutes créée par Janine Nabers (en) et Donald Glover et …"
+    },
+    {
+      "title": "Installing Swarm II",
+      "url": "https://support.turtlebeach.com/s/article/installing-swarm-ii",
+      "snippet": "By default, Swarm II is being installed under C:\\Program Files\\TurtleBeach SWARM II, but you can select whichever location you …"
+    },
+    {
+      "title": "Swarm (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Swarm_(TV_series)",
+      "snippet": "Swarm is an American satirical dark comedy television miniseries created by Janine Nabers and Donald Glover. It follows Dre …"
+    },
+    {
+      "title": "SWARM, découverte du transformation center",
+      "url": "https://swarm-itc.io/",
+      "snippet": "SWARM est une plateforme humaine et digitale, véritable accélérateur industriel, pour accompagner la transformation et la …"
+    }
+  ]
+}

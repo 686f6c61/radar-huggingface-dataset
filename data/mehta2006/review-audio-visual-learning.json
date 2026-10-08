@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "mehta2006/review-audio-visual-learning",
+  "slug": "mehta2006-review-audio-visual-learning",
+  "author": "mehta2006",
+  "url": "https://huggingface.co/mehta2006/review-audio-visual-learning",
+  "created_at": "2026-10-08T01:32:03.000Z",
+  "updated_at": "2026-10-08T01:32:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

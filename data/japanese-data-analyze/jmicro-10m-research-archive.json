@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "japanese-data-analyze/JMicro-10M-research-archive",
+  "slug": "japanese-data-analyze-jmicro-10m-research-archive",
+  "author": "japanese-data-analyze",
+  "url": "https://huggingface.co/japanese-data-analyze/JMicro-10M-research-archive",
+  "created_at": "2026-10-08T16:40:02.000Z",
+  "updated_at": "2026-10-08T16:40:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "jmicro",
+    "research",
+    "experimental",
+    "gated",
+    "text-generation",
+    "ja",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377730343,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Japanese language - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Japanese_language",
+      "snippet": "Japanese language ... Japanese (日本語, Nihongo; [ɲihoŋɡo] ⓘ) is the principal language of the Japonic language family spoken by …"
+    },
+    {
+      "title": "Easy Japanese Learn Japanese | NHK WORLD-JAPAN",
+      "url": "https://www3.nhk.or.jp/nhkworld/lesson/en/",
+      "snippet": "Japan's public broadcaster, NHK, offers this fun and reliable Japanese language course to beginners. Download MP3 audio and PDF …"
+    },
+    {
+      "title": "Learn Japanese Online for Free | Jepang.org",
+      "url": "https://jepang.org/en",
+      "snippet": "Learn Japanese for free with lessons on kana, grammar, kanji, vocabulary, Japanese culture, and JLPT preparation. Active since 2016."
+    },
+    {
+      "title": "Japanese people - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Japanese_people",
+      "snippet": "During the Japanese colonial period of 1895 to 1945, the phrase \"Japanese people\" was used to refer not only to residents of the …"
+    },
+    {
+      "title": "Japanese",
+      "url": "https://www.japaneseapp.com/",
+      "snippet": "Lost in translation? Not anymore. Japanese is the ultimate study companion for any Japanese learner. Discover the language, learn …"
+    }
+  ]
+}

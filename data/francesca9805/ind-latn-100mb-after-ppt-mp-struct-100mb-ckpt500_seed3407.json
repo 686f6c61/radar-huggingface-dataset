@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407",
+  "slug": "francesca9805-ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ind-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407",
+  "created_at": "2026-10-08T14:56:07.000Z",
+  "updated_at": "2026-10-08T16:33:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407",
+    "base_model:finetune:francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7737840516,
+  "storage_human": "7.7 GB",
+  "base_model": "francesca9805/ind-latn-100mb-ppt-mp-struct-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cannes escortes annonces, annuaire des escort-girls a Cannes",
+      "url": "https://www.6annonce.net/escorts/city_fr_cannes",
+      "snippet": "Bienvenue,Pour une expérience inoubliable avec une femme qui sait exactement comment vous faire sentir désiré, détendu et …"
+    },
+    {
+      "title": "Escort Girl à Cannes - Annonces d'escortes à proximité",
+      "url": "https://topescortbabes.com/fr/cannes/escorts",
+      "snippet": "6 days ago · Cannes Escorts sur TopEscortBabes. Les dernières escort annonces de haute classe et vip avec numéros de …"
+    },
+    {
+      "title": "Escort Cannes | Annonces Escort Girls & Trans",
+      "url": "https://escortcannes.fr/",
+      "snippet": "Annonces escort girls et trans à Cannes : profils indépendants, pages ville et cams en direct. Annuaire adulte discret réservé aux 18+."
+    },
+    {
+      "title": "Escort girls Cannes | France escort list",
+      "url": "https://www.eurogirlsescort.com/escorts/cannes/",
+      "snippet": "Europe biggest escort directory of independent escorts, escort agencies and strip clubs in Cannes, France. You find here the best …"
+    },
+    {
+      "title": "Escort Cannes : annonces vérifiées avec photos | EscortE",
+      "url": "https://m.escorte.com/escorts/cannes/",
+      "snippet": "Rencontrez des escorts à Cannes : profils vérifiés, photos récentes et avis clients. Escort girl, trans et indépendantes disponibles …"
+    }
+  ]
+}

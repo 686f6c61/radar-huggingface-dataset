@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwopus3.8-27B-Flash-V2-oQ8e-mtp",
+  "slug": "scottlowry-qwopus3-8-27b-flash-v2-oq8e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-V2-oQ8e-mtp",
+  "created_at": "2026-10-08T18:23:09.000Z",
+  "updated_at": "2026-10-08T18:51:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:quantized:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30021631277,
+  "storage_human": "30.0 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash-V2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwopus3.8-27B-Flash oQe MTP - a scottlowry Collection",
+      "url": "https://huggingface.co/collections/scottlowry/qwopus38-27b-flash-oqe-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp · Hugging Face",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp at main",
+      "url": "https://huggingface.co/scottlowry/Qwopus3.8-27B-Flash-oQ4e-fp16-mtp/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chriswessels/Qwopus3.8-27B-Flash-oQ8e-mtp · Hugging Face",
+      "url": "https://huggingface.co/chriswessels/Qwopus3.8-27B-Flash-oQ8e-mtp",
+      "snippet": "Qwopus3.8-27B-Flash is a fine-tuned model built on Qwen3.8-27B. It is designed to retain strong general capability while substantially lowering reasoning cost and response time for practical, long-running agent workloads."
+    }
+  ]
+}

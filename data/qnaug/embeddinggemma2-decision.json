@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "qnaug/embeddinggemma2-decision",
+  "slug": "qnaug-embeddinggemma2-decision",
+  "author": "qnaug",
+  "url": "https://huggingface.co/qnaug/embeddinggemma2-decision",
+  "created_at": "2026-10-08T16:49:52.000Z",
+  "updated_at": "2026-10-08T16:50:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "embeddinggemma",
+    "text-classification",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "dataset:google/boolq",
+    "dataset:nyu-mll/glue",
+    "dataset:mteb/banking77",
+    "dataset:clinc/clinc_oos",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1120966570,
+  "storage_human": "1.1 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal ...",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "snippet": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space."
+    },
+    {
+      "title": "Bring multimodal semantic search to the edge with EmbeddingGemma 2",
+      "url": "https://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/",
+      "snippet": "Discover EmbeddingGemma 2, an open-weight, 740M multimodal model designed for private, ultra-low-latency on-device retrieval and decision-making across text, vision, and audio using MediaPipe and LiteRT."
+    },
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "EmbeddingGemma Lightweight, open embedding models optimized for on-device use cases Read docs Download"
+    },
+    {
+      "title": "EmbeddingGemma 2 (2026): One Small Model That Puts Text, Images, Audio ...",
+      "url": "https://cldnavi.com/en/blog/embeddinggemma-2-guide-2026/",
+      "snippet": "Google DeepMind released EmbeddingGemma 2 on October 6, 2026. Using the official blog and the model card, this guide covers how it maps text, code, images, video and audio into one 768-dimensional space, how to pick between 270M and 740M effective sizes, Google&#x27;s published benchmarks including the MTEB Code jump from 68.76 to 78.68, Matryoshka truncation down to 128 dimensions, how to run it ..."
+    },
+    {
+      "title": "EmbeddingGemma | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/embeddinggemma",
+      "snippet": "EmbeddingGemma 2 is a lightweight, open-source 740M parameter model designed for unified multimodal embeddings. Built on the Gemma 4 decoder architecture, it maps text, images, audio, and video into a unified 768-dimensional vector space."
+    }
+  ]
+}

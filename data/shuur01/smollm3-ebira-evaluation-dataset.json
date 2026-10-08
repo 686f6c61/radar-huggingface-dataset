@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Shuur01/smollm3-ebira-evaluation-dataset",
+  "slug": "shuur01-smollm3-ebira-evaluation-dataset",
+  "author": "Shuur01",
+  "url": "https://huggingface.co/Shuur01/smollm3-ebira-evaluation-dataset",
+  "created_at": "2026-10-08T14:50:34.000Z",
+  "updated_at": "2026-10-08T15:25:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "alignment",
+    "cultural-bias",
+    "evaluation",
+    "philosophy",
+    "ebira-framework",
+    "dual-mode-reasoning",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SmolLM3 Evaluation | huggingface/smollm | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/smollm/2.4-smollm3-evaluation",
+      "snippet": "SmolLM3 Evaluation Relevant source files This document covers the comprehensive evaluation framework for SmolLM3 models using the LightEval library. The evaluation system supports both base and instruct model variants, covering mathematical reasoning, knowledge benchmarks, instruction following, and multilingual capabilities."
+    },
+    {
+      "title": "GitHub - huggingface/smollm: Everything about the SmolLM and SmolVLM ...",
+      "url": "https://github.com/huggingface/smollm",
+      "snippet": "Our 3B model outperforms Llama 3.2 3B and Qwen2.5 3B while staying competitive with larger 4B alternatives (Qwen3 & Gemma3). Beyond the performance numbers, we&#x27;re sharing exactly how we built it using public datasets and training frameworks. Ressources: SmolLM3-Base SmolLM3 blog Summary: 3B model trained on 11T tokens, SoTA at the 3B scale and competitive with 4B models Fully open model, open ..."
+    },
+    {
+      "title": "SmolLM3 — Base / pretrained models — Open Source AI Map",
+      "url": "https://www.aipotluck.org/product/smollm",
+      "snippet": "Hugging Face calls the release an \"engineering blueprint\" and the pretraining used public datasets throughout, which is what puts a 3B model in the same openness tier as OLMo and Pythia. Verified 2026-08-13 via the SmolLM3 release post, the SmolLM3-3B model card and the huggingface/smollm repository."
+    },
+    {
+      "title": "SmolLM3 — Hugging Face&#x27;s Fully Open 3B Model | FreeAPIHub",
+      "url": "https://freeapihub.com/ai-models/smollm3",
+      "snippet": "SmolLM3 is Hugging Face&#x27;s fully open 3B model with dual-mode reasoning, a 64K context (128K extended), six languages and Apache 2.0. Runs on a laptop."
+    },
+    {
+      "title": "SmolLM3 Models | huggingface/smollm | DeepWiki",
+      "url": "https://deepwiki.com/huggingface/smollm/2.1-smollm3-models",
+      "snippet": "SmolLM3 Models Relevant source files This document covers the SmolLM3 model variants, their architectural innovations, and core capabilities including dual-mode reasoning and long context support. For information about SmolLM3 training processes, see SmolLM3 Pretraining and SmolLM3 Post-training. For evaluation details, see SmolLM3 Evaluation. Model Variants SmolLM3 is available in two primary ..."
+    }
+  ]
+}

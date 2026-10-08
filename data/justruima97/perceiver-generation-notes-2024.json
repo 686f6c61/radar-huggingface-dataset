@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Justruima97/perceiver-generation-notes-2024",
+  "slug": "justruima97-perceiver-generation-notes-2024",
+  "author": "Justruima97",
+  "url": "https://huggingface.co/Justruima97/perceiver-generation-notes-2024",
+  "created_at": "2026-10-08T01:36:01.000Z",
+  "updated_at": "2026-10-08T01:36:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "For those who pursued a Master's degree unrelated to their ... - Reddit",
+      "url": "https://www.reddit.com/r/GradSchool/comments/1biymzz/for_those_who_pursued_a_masters_degree_unrelated/",
+      "snippet": "She is now completing her masters in English with an emphasis on women in media and science and has been accepted to a PhD …"
+    },
+    {
+      "title": "Graduate Education - Paul G. Allen School of Computer Science",
+      "url": "https://www.cs.washington.edu/academics/graduate/",
+      "snippet": "For students currently enrolled in our own undergraduate program, we provide the opportunity to extend their time at the Allen …"
+    },
+    {
+      "title": "Getting a masters in computer science with an unrelated undergrad",
+      "url": "https://www.reddit.com/r/cscareerquestions/comments/2qb8xl/getting_a_masters_in_computer_science_with_an/",
+      "snippet": "Dec 24, 2014 · The job market in my area is in the gutter and I was thinking of switching my path and pursuing computer science. …"
+    },
+    {
+      "title": "Master of Science in Computer Science & Engineering - UW …",
+      "url": "https://www.pce.uw.edu/degrees/masters-computer-science-engineering",
+      "snippet": "Study cutting-edge research with renowned faculty in a top-ranked computer science and engineering department. Start in autumn, …"
+    },
+    {
+      "title": "Graduate School - Paul G. Allen School of Computer Science",
+      "url": "https://www.cs.washington.edu/academics/undergraduate/career-resources/graduate-school/",
+      "snippet": "Further, be prepared to receive strong encouragement from UW faculty to pursue a graduate education at another institution. …"
+    }
+  ]
+}

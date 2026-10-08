@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kai9987kai/Supermix-Poseidon",
+  "slug": "kai9987kai-supermix-poseidon",
+  "author": "Kai9987kai",
+  "url": "https://huggingface.co/Kai9987kai/Supermix-Poseidon",
+  "created_at": "2026-10-08T14:53:07.000Z",
+  "updated_at": "2026-10-08T15:43:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "world-models",
+    "reinforcement-learning",
+    "dagger",
+    "imitation-learning",
+    "mixture-of-experts",
+    "model-predictive-control",
+    "procedural-generation",
+    "connectome",
+    "multimodal",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5958613,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/schools.Nyc.gov",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://pod51034.outlook.com/owa/",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/com.microsoft.office.outlook:/mac/google/oauth2redirect",
+      "snippet": ""
+    }
+  ]
+}

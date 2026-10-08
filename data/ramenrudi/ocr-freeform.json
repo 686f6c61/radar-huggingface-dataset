@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ramenrudi/ocr-freeform",
+  "slug": "ramenrudi-ocr-freeform",
+  "author": "ramenrudi",
+  "url": "https://huggingface.co/ramenrudi/ocr-freeform",
+  "created_at": "2026-10-08T02:04:15.000Z",
+  "updated_at": "2026-10-08T02:04:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "ocr-freeform",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Instant-Ramen AI Image Model Leaks Online - NPowerUser",
+      "url": "https://nokiapoweruser.com/google-instant-ramen-ai-image-model-nano-banana-successor/",
+      "snippet": "Google may be preparing its next-generation AI image model, and early clues suggest it could be called Instant-Ramen, a potential successor to the popular Nano Banana image generation model."
+    },
+    {
+      "title": "raoankitme/ocr-freeform-review · Hugging Face",
+      "url": "https://huggingface.co/raoankitme/ocr-freeform-review",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "jenniferbrown/ocr-freeform · Hugging Face",
+      "url": "https://huggingface.co/jenniferbrown/ocr-freeform",
+      "snippet": "jenniferbrown / ocr-freeform Like 0 Safetensors transformer research-notes ocr-freeform License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Notes on OCR Freeform Repository summary What is covered How to read this repository Scope and limitations Files License"
+    },
+    {
+      "title": "Top 20 OCR AI Models 2026: Local Extraction",
+      "url": "https://local-ai-zone.github.io/guides/best-ai-ocr-models-ultimate-ranking-2026.html",
+      "snippet": "Discover the best AI OCR models for 2026. Compare DeepSeek-OCR, GLM-OCR, PaddleOCR-VL, and more for local document extraction, tables, and formulas."
+    }
+  ]
+}

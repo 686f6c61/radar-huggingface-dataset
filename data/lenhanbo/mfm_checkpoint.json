@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lenhanbo/mfm_checkpoint",
+  "slug": "lenhanbo-mfm_checkpoint",
+  "author": "lenhanbo",
+  "url": "https://huggingface.co/lenhanbo/mfm_checkpoint",
+  "created_at": "2026-10-08T17:08:37.000Z",
+  "updated_at": "2026-10-08T17:08:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Checkpoint: saved AI model state for reuse and fine-tuning | Morphic",
+      "url": "https://morphic.com/ai-glossary/checkpoint",
+      "snippet": "A checkpoint is a saved snapshot of an AI model&#x27;s weights at a specific point in training, allowing creators to reuse, share, or fine-tune models without."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "New: Scale ML/AI Smoothly with @checkpoint, @model, and ... - Anaconda",
+      "url": "https://www.anaconda.com/blog/scale-ml-ai-smoothly",
+      "snippet": "‍ Yesterday, we released two major new features helping you develop ML/AI faster. Today, we are releasing a set of foundational features focusing on scaling: @huggingface_hub for loading and caching large (foundation) models, @model for storing and registering models, @checkpoint for robust training jobs, Improved support for distributed training with @torchrun and other framework-specific ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=checkpoint",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "OpenFlowLM/Qwen3.5-4B-NPU2",
+  "slug": "openflowlm-qwen3-5-4b-npu2",
+  "author": "OpenFlowLM",
+  "url": "https://huggingface.co/OpenFlowLM/Qwen3.5-4B-NPU2",
+  "created_at": "2026-10-08T16:58:28.000Z",
+  "updated_at": "2026-10-08T16:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_text",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4979063421,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Sign up - TikTok",
+      "url": "https://m.tiktok.com/signup",
+      "snippet": "Sign up for an account or log back into TikTok. Create an account to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Tiktok - Make Your Day",
+      "url": "https://tiktok-ui.vercel.app/",
+      "snippet": "Web site created using create-react-app"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Audio-Task/Audio-pool-stage1-1008",
+  "slug": "audio-task-audio-pool-stage1-1008",
+  "author": "Audio-Task",
+  "url": "https://huggingface.co/Audio-Task/Audio-pool-stage1-1008",
+  "created_at": "2026-10-08T15:13:13.000Z",
+  "updated_at": "2026-10-08T15:45:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51100391882,
+  "storage_human": "51.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audiofanzine : Home Studio, MAO, Guitares, Basses, Sono et DJ",
+      "url": "https://fr.audiofanzine.com/",
+      "snippet": "Audiofanzine est une plateforme en ligne dédiée à la musique et à l’audio, à la fois média spécialisé, site de petites annonces, base …"
+    },
+    {
+      "title": "audio.com - a better way to upload and share audio online",
+      "url": "https://audio.com/",
+      "snippet": "Easily extract vocals and remove instruments from any audio file or song. 100% free and online."
+    },
+    {
+      "title": "Son-Vidéo.com, leader français en hi-fi et home-cinéma",
+      "url": "https://www.son-video.com/",
+      "snippet": "Places offertes pour le Paris Audio Video Show ! 24-25 octobre au Palais des Congrès"
+    },
+    {
+      "title": "Artiste Audio",
+      "url": "https://artisteaudio.com/",
+      "snippet": "Le magasin de musiques Artiste Audio à Lyon vous propose de nombreux produits dans le domaine de l'Audio Professionnel"
+    },
+    {
+      "title": "Produits Hi-Fi Audio Électroniques et DIY - Audiophonics",
+      "url": "https://www.audiophonics.fr/fr/",
+      "snippet": "Audiophonics est une société spécialisée dans la distribution de produits et appareils HiFi, audio et Do It Yourself sur internet. Des …"
+    }
+  ]
+}

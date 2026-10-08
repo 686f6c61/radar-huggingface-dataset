@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ilides/cortex-v0.9-0.1b",
+  "slug": "ilides-cortex-v0-9-0-1b",
+  "author": "Ilides",
+  "url": "https://huggingface.co/Ilides/cortex-v0.9-0.1b",
+  "created_at": "2026-10-08T18:24:59.000Z",
+  "updated_at": "2026-10-08T18:35:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cortex",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 126241536,
+  "parameters_human": "126.2M",
+  "storage_bytes": 892729632,
+  "storage_human": "893 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cortex/RELEASE-v0.9.0.md at main · hurttlocker/cortex · GitHub",
+      "url": "https://github.com/hurttlocker/cortex/blob/main/RELEASE-v0.9.0.md",
+      "snippet": "Cortex v0.9.0 — LLM-Augmented Intelligence Release Date: February 24, 2026 The intelligence layer for Cortex. Every feature is optional (--expand, --enrich, --resolve llm), zero-cost by default, and benchmarked across 6 models before shipping."
+    },
+    {
+      "title": "Ilides (Ilides) - Hugging Face",
+      "url": "https://huggingface.co/Ilides",
+      "snippet": "Sort: Recently updated. Ilides/coser-1.3-coder-GGUF. Text Generation • 0.8B • Updated about 4 hours ago. Ilides/coser-1.3-coder"
+    },
+    {
+      "title": "GitHub - ilides/cortex-agent",
+      "url": "https://github.com/ilides/cortex-agent",
+      "snippet": "Contribute to ilides/cortex-agent development by creating an account on GitHub."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ilides",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Models - edge0.ai",
+      "url": "https://edge0.ai/models",
+      "snippet": "Audio8-TTS-.1B The only viable 0.1B model — outsized performance, refined sound, a class above"
+    }
+  ]
+}

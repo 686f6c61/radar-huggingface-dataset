@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "harshkumar63/my-llm-gguf",
+  "slug": "harshkumar63-my-llm-gguf",
+  "author": "harshkumar63",
+  "url": "https://huggingface.co/harshkumar63/my-llm-gguf",
+  "created_at": "2026-10-08T18:32:00.000Z",
+  "updated_at": "2026-10-08T18:32:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019378208,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF-Models (GGUF) - Hugging Face",
+      "url": "https://huggingface.co/GGUF-Models",
+      "snippet": "Our goal is to simplify the process of searching for and exchanging quantized models in GGUF format, as well as to create a space for efficient exchange and access to the models you need"
+    },
+    {
+      "title": "How to Run LLMs Model Locally - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/how-to-run-llms-model-locally/",
+      "snippet": "Well, we assume that at this stage you were aware of AI and LLM and how it works but do you know that you can download and run the LLMs locally on your desktop? This lets you work offline and keep full control over your data. In this guide, you&#x27;ll learn how to run open-source LLMs (such as models from DeepSeek and others) locally, step by step."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "How to Run GGUF Models Locally",
+      "url": "https://ggufloader.github.io/how-to-run-gguf-models.html",
+      "snippet": "Complete step-by-step guides to run GGUF models locally with GGUF Loader, Ollama, LM Studio, and llama.cpp on Windows, Mac, and Linux. No Python or command line needed for the GUI tools. Download, load, and chat with local AI models — free, private, offline."
+    },
+    {
+      "title": "LMStudio LLM - AnythingLLM",
+      "url": "https://docs.anythingllm.com/setup/llm-configuration/local/lmstudio",
+      "snippet": "LMStudio is a popular user-interface, API, and LLM engine that allows you to download any GGUF model from HuggingFace and run it on CPU or GPU."
+    }
+  ]
+}

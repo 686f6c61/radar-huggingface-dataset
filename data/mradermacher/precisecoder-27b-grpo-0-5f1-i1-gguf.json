@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PreciseCoder-27B-GRPO-0.5F1-i1-GGUF",
+  "slug": "mradermacher-precisecoder-27b-grpo-0-5f1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PreciseCoder-27B-GRPO-0.5F1-i1-GGUF",
+  "created_at": "2026-10-08T15:09:23.000Z",
+  "updated_at": "2026-10-08T16:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "debugging",
+    "code",
+    "reinforcement-learning",
+    "grpo",
+    "precisecoder",
+    "en",
+    "base_model:PreciseCoder/PreciseCoder-27B-GRPO-0.5F1",
+    "base_model:quantized:PreciseCoder/PreciseCoder-27B-GRPO-0.5F1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 89932304544,
+  "storage_human": "89.9 GB",
+  "base_model": "PreciseCoder/PreciseCoder-27B-GRPO-0.5F1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "vosldtgbj/project-llm-sft-v3-f3-h2p0-seed20261006",
+  "slug": "vosldtgbj-project-llm-sft-v3-f3-h2p0-seed20261006",
+  "author": "vosldtgbj",
+  "url": "https://huggingface.co/vosldtgbj/project-llm-sft-v3-f3-h2p0-seed20261006",
+  "created_at": "2026-10-08T17:02:41.000Z",
+  "updated_at": "2026-10-08T17:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "japanese",
+    "supervised-fine-tuning",
+    "any-to-any",
+    "base_model:vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
+    "base_model:finetune:vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730176,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951718050,
+  "storage_human": "24.0 GB",
+  "base_model": "vosldtgbj/project-llm-cpt-1p0-top10-01-full-02",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odysseus AI - Self-Hosted AI Workspace Setup Guide",
+      "url": "https://odysseusai.dev/",
+      "snippet": "Odysseus AI Setup Guide For PewDiePie&#x27;s self-hosted AI workspace Verify the official source, choose Docker, Windows, macOS, or Linux, connect Ollama or API keys, read logs, choose a model that fits your hardware, and avoid unsafe public deployment."
+    },
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors."
+    },
+    {
+      "title": "GitHub - vpoluyaktov/llm-sft-test: LLM supervised fine-tuning test ...",
+      "url": "https://github.com/vpoluyaktov/llm-sft-test",
+      "snippet": "llm-sft-test Production-grade template for automated supervised fine-tuning of open-source LLMs on Google Cloud Platform. Fork this repository once per domain or customer."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 623 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "vLLM — Fast, Memory-Efficient LLM Inference & Serving",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    }
+  ]
+}

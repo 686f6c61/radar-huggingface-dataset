@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "caiotheodoro/proctor-qlora-grpo",
+  "slug": "caiotheodoro-proctor-qlora-grpo",
+  "author": "caiotheodoro",
+  "url": "https://huggingface.co/caiotheodoro/proctor-qlora-grpo",
+  "created_at": "2026-10-08T17:16:28.000Z",
+  "updated_at": "2026-10-08T17:16:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "synthetic",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13615991,
+  "storage_human": "14 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "grpo_qlora.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/huggingface/trl/blob/main/examples/grpo_qlora/grpo_qlora.ipynb",
+      "snippet": "Key concepts GRPO: A reinforcement learning algorithm that optimizes a policy by comparing multiple generated responses for the same prompt and updating the model based on their relative rewards, without requiring a separate value model. LoRA: Updates only a few low-rank parameters, reducing training cost and memory."
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) - Hugging Face",
+      "url": "https://huggingface.co/caiotheodoro/models",
+      "snippet": "User profile of Caio Theodoro on Hugging Face"
+    },
+    {
+      "title": "caiotheodoro (Caio Theodoro) · GitHub",
+      "url": "https://github.com/caiotheodoro",
+      "snippet": "Social simulation experiment with the goal is to make AI personas feel like people: noticing unevenly, replying late, lurking, masking, forming private alliances, misreading silence, and creating e…"
+    },
+    {
+      "title": "LLM Fine-Tuning 2026: LoRA, QLoRA, DPO, GRPO - futureagi.com",
+      "url": "https://futureagi.com/blog/llm-fine-tuning-guide-2025/",
+      "snippet": "Fine-tune LLMs in 2026 with LoRA, QLoRA, GRPO, RLHF, DPO, IPO. Compare trl, unsloth, axolotl, DeepSpeed and learn how to evaluate fine-tuned models."
+    },
+    {
+      "title": "Fine-Tune Open-Source LLMs: LoRA & QLoRA [2026 Guide]",
+      "url": "https://www.kunalganglani.com/blog/fine-tune-open-source-llm-lora-qlora",
+      "snippet": "How to fine-tune Gemma 4 and other open-source LLMs with LoRA/QLoRA using Unsloth in 2026. GPU tables, hyperparameters, eval setup and when prompting wins."
+    }
+  ]
+}

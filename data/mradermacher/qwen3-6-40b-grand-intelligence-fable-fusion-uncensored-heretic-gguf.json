@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-GGUF",
   "created_at": "2026-08-14T05:00:09.000Z",
-  "updated_at": "2026-08-14T12:42:00.000Z",
+  "updated_at": "2026-10-08T11:03:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -43,7 +43,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 1039,
+  "downloads_30d": 1052,
   "trending_score": 0,
   "parameters": 39497296128,
   "parameters_human": "39.50B",

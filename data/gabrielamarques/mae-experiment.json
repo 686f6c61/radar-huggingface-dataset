@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "gabrielamarques/mae-experiment",
+  "slug": "gabrielamarques-mae-experiment",
+  "author": "gabrielamarques",
+  "url": "https://huggingface.co/gabrielamarques/mae-experiment",
+  "created_at": "2026-10-08T01:14:23.000Z",
+  "updated_at": "2026-10-08T01:14:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

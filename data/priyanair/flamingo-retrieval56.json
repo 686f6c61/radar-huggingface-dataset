@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "priyanair/flamingo-retrieval56",
+  "slug": "priyanair-flamingo-retrieval56",
+  "author": "priyanair",
+  "url": "https://huggingface.co/priyanair/flamingo-retrieval56",
+  "created_at": "2026-10-08T16:42:36.000Z",
+  "updated_at": "2026-10-08T16:42:41.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chloechensen/flamingo-retrieval · Hugging Face",
+      "url": "https://huggingface.co/Chloechensen/flamingo-retrieval",
+      "snippet": "Flamingo for Retrieval Overview A small Flamingo implementation for Retrieval, packaged with an explicit configuration and an initialization checkpoint. The giant variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "priyanair (प्रिया कुमार) - Hugging Face",
+      "url": "https://huggingface.co/priyanair/models",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago priyanair/contrastive-learning published a modelabout 2 hours ago priyanair/contrastive-learning upvoted a paper about 2 hours ago VoiceMem: Streaming Dual-Brain Memory for Real-Time Interaction View all activity"
+    },
+    {
+      "title": "Flamingo: a Visual Language Model for Few-Shot Learning, annotated",
+      "url": "https://that-mathevs.github.io/ai-primer/papers/flamingo.html",
+      "snippet": "Architecture: a way to join a pretrained, frozen vision model to a pretrained, frozen language model, to handle any interleaving of pictures and text, and to take images or video as input. Data: training on web pages with images scattered through the text, plus image-caption and video-caption pairs, and no data annotated for machine learning."
+    },
+    {
+      "title": "Multimodal Architectures - Flamingo - Course notes",
+      "url": "https://jfh.georgetown.domains/centralized-lecture-content/content/machine-learning/computer-vision/multimodal-ai/flamingo/notes.html",
+      "snippet": "Lecture: Flamingo - Interleaved Vision-Language Modeling Introduction Flamingo is a family of multimodal few-shot learners Developed by DeepMind Flamingo is a generative model that can process and generate sequences of interleaved images and text. This differs from CLIP, which performs retrieval or classification in latent space."
+    },
+    {
+      "title": "Flamingo Explained: Few-Shot Learning for Vision-Language Understanding",
+      "url": "https://rugvedmhatre.github.io/ai/flamingo-explained/",
+      "snippet": "In \"Flamingo: a Visual Language Model for Few-Shot Learning\" by Jean-Baptiste Alayrac and colleagues at DeepMind, the authors push vision-language models into the few-shot world. Flamingo can answer image-based questions, describe videos, or even do multimodal reasoning without fine-tuning—just by seeing a handful of examples in its context."
+    }
+  ]
+}

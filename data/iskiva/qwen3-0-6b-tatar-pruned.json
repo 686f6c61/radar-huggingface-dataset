@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "iskiva/qwen3-0.6b-tatar-pruned",
+  "slug": "iskiva-qwen3-0-6b-tatar-pruned",
+  "author": "iskiva",
+  "url": "https://huggingface.co/iskiva/qwen3-0.6b-tatar-pruned",
+  "created_at": "2026-10-08T15:22:03.000Z",
+  "updated_at": "2026-10-08T15:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tt"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "tt",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 453378048,
+  "parameters_human": "453.4M",
+  "storage_bytes": 906791160,
+  "storage_human": "907 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

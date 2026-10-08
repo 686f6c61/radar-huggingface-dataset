@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tesfwefew/qwen3.5-4b-cskh-lora",
+  "slug": "tesfwefew-qwen3-5-4b-cskh-lora",
+  "author": "tesfwefew",
+  "url": "https://huggingface.co/tesfwefew/qwen3.5-4b-cskh-lora",
+  "created_at": "2026-10-08T02:05:46.000Z",
+  "updated_at": "2026-10-08T02:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149916347,
+  "storage_human": "150 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tesfwefew/qwen3.5-4b-cskh-lora · Hugging Face",
+      "url": "https://huggingface.co/tesfwefew/qwen3.5-4b-cskh-lora",
+      "snippet": "Instructions to use tesfwefew/qwen3.5-4b-cskh-lora with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use tesfwefew/qwen3.5-4b-cskh-lora with PEFT:"
+    },
+    {
+      "title": "tesfwefew (x) - Hugging Face",
+      "url": "https://huggingface.co/tesfwefew",
+      "snippet": "models1 tesfwefew/qwen3.5-4b-cskh-lora Text Generation •Updated about 9 hours ago• 8"
+    },
+    {
+      "title": "qwen3.5-4b-cskh-lora: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-dukzf1v-qwen3-5-4b-cskh-lora",
+      "snippet": "Model card indexed from Hugging Face. Specs: 4B parameters, sourced from Hugging Face. Compare qwen3.5-4b-cskh-lora&#x27;s parameters, context window, pricing and be"
+    },
+    {
+      "title": "Qwen3.5-4B LoRA Fine-tuning on Step-3.5-Flash-SFT - GitHub",
+      "url": "https://github.com/IIIIQIIII/qwen35-4b-lora-sft",
+      "snippet": "This experiment validates whether a single H100 can efficiently fine-tune Qwen3.5-4B on general agent/coding/reasoning data that the base model has never seen before, using a large LoRA rank to compensate for the domain gap."
+    },
+    {
+      "title": "Qwen 3.5 4B local AI model — runs on ~3 GB — guide",
+      "url": "https://theaibench.ai/models/qwen-3-5-4b/",
+      "snippet": "Qwen 3.5 4B local guide: Apache 2.0 small model that runs in ~2.5 GB at Q4 (GPU or CPU), what quality to expect, runner tags, and when to step up to 9B."
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema": 1,
+  "id": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "slug": "jetbrains-mellum2-1-12b-a2-5b-thinking",
+  "author": "JetBrains",
+  "url": "https://huggingface.co/JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "created_at": "2026-09-20T10:52:55.000Z",
+  "updated_at": "2026-10-07T23:08:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mellum",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2605.31268",
+    "base_model:JetBrains/Mellum2-12B-A2.5B-Base",
+    "base_model:finetune:JetBrains/Mellum2-12B-A2.5B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 31,
+  "downloads_30d": 110,
+  "trending_score": 31,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 24300863259,
+  "storage_human": "24.3 GB",
+  "base_model": "JetBrains/Mellum2-12B-A2.5B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "LiveCodeBench v6",
+      "metric": "pass@1",
+      "value": 82
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HumanEval+",
+      "metric": "pass@1",
+      "value": 91.5
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MBPP+",
+      "metric": "pass@1",
+      "value": 79.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "AIME 25/26",
+      "metric": "exact match",
+      "value": 83.3
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GSM-Plus",
+      "metric": "exact match",
+      "value": 88.3
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "SWE-bench Verified",
+      "metric": "resolved rate",
+      "value": 47
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "Terminal-Bench 2.1",
+      "metric": "resolved rate",
+      "value": 17.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "SWE-bench Pro",
+      "metric": "resolved rate",
+      "value": 28
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "BFCL v4",
+      "metric": "accuracy",
+      "value": 62.3
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "WorkBench",
+      "metric": "task completion",
+      "value": 44.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "ToolHop",
+      "metric": "accuracy",
+      "value": 49.1
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval",
+      "metric": "accuracy",
+      "value": 90.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "GPQA Diamond",
+      "metric": "accuracy",
+      "value": 64.6
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU-Redux",
+      "metric": "accuracy",
+      "value": 87.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "MixEval-Hard",
+      "metric": "accuracy",
+      "value": 46.4
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "XSTest",
+      "metric": "safe compliance",
+      "value": 88.8
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "HarmBench (harmful rate, lower is better)",
+      "metric": "harmful rate",
+      "value": 8.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "JetBrains: Essential tools for software developers and teams",
+      "url": "https://www.jetbrains.com/",
+      "snippet": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the …"
+    },
+    {
+      "title": "JetBrains : Des outils essentiels pour les équipes et les développeurs ...",
+      "url": "https://www.jetbrains.com/fr-fr/",
+      "snippet": "JetBrains est un éditeur de logiciels innovant, spécialisé dans la création d'outils de développement intelligents, tels qu'IntelliJ IDEA, …"
+    },
+    {
+      "title": "JetBrains Account",
+      "url": "https://account.jetbrains.com/login",
+      "snippet": "JetBrains Account provides easy access to your JetBrains products and makes upgrades and migration to new hardware smooth."
+    },
+    {
+      "title": "JetBrains - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/JetBrains",
+      "snippet": "JetBrains AI Assistant is offered in most JetBrains IDEs as a set of AI-assisted software development tools. The assistant uses …"
+    },
+    {
+      "title": "JetBrains — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/JetBrains",
+      "snippet": "Historique La société est née de l'association de Sergey Dmitriev, Eugeny Belyaev et Valentin Kipiatkov en février 20006. En 2012, …"
+    }
+  ]
+}

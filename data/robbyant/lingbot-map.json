@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "robbyant/lingbot-map",
+  "slug": "robbyant-lingbot-map",
+  "author": "robbyant",
+  "url": "https://huggingface.co/robbyant/lingbot-map",
+  "created_at": "2026-04-16T00:46:33.000Z",
+  "updated_at": "2026-07-11T05:57:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "arxiv:2604.14141",
+    "region:us"
+  ],
+  "likes": 345,
+  "downloads_30d": 0,
+  "trending_score": 14,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32999164380,
+  "storage_human": "33.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest d’Ookla – le test de vitesse de connexion global",
+      "url": "https://www.speedtest.net/fr",
+      "snippet": "Testez la vitesse de votre connexion Internet avec Speedtest d'Ookla, disponible sur tous vos appareils grâce à des applications …"
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
+    },
+    {
+      "title": "Test de débit - Speed test : testez la vitesse de votre connexion ...",
+      "url": "https://www.nperf.com/fr/",
+      "snippet": "Sep 2, 2011 · Mesurez votre débit et la qualité de votre connexion ADSL, VDSL, Câble ou fibre : test de débit (speed test), test de …"
+    }
+  ]
+}
