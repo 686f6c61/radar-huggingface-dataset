@@ -5,7 +5,7 @@
   "author": "innkl24",
   "url": "https://huggingface.co/innkl24/f5-shan-tts-model",
   "created_at": "2026-09-09T06:08:25.000Z",
-  "updated_at": "2026-10-06T07:31:47.000Z",
+  "updated_at": "2026-10-08T07:01:18.000Z",
   "license": "cc-by-nc-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": null,
@@ -13,7 +13,6 @@
   "languages": [],
   "tags": [
     "f5-tts",
-    "safetensors",
     "shan",
     "tai-yai",
     "shn",
@@ -25,12 +24,10 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1775358195593,
-  "storage_human": "1775.4 GB",
+  "storage_bytes": 1828078554165,
+  "storage_human": "1828.1 GB",
   "base_model": null,
-  "formats": [
-    "safetensors"
-  ],
+  "formats": [],
   "is_conversational": false,
   "gated": false,
   "removed": false,

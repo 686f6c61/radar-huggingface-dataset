@@ -5,7 +5,7 @@
   "author": "CondadosAI",
   "url": "https://huggingface.co/CondadosAI/sportcv-ballnet",
   "created_at": "2026-09-16T19:11:44.000Z",
-  "updated_at": "2026-09-16T19:12:03.000Z",
+  "updated_at": "2026-10-07T21:13:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "keypoint-detection",
@@ -16,6 +16,7 @@
     "onnx",
     "sports",
     "pickleball",
+    "basketball",
     "ball-detection",
     "heatmap",
     "keypoint-detection",
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 18381066,
-  "storage_human": "18 MB",
+  "storage_bytes": 33100222,
+  "storage_human": "33 MB",
   "base_model": null,
   "formats": [
     "onnx"

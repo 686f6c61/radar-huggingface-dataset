@@ -5,7 +5,7 @@
   "author": "Syqnal",
   "url": "https://huggingface.co/Syqnal/act_kitting_connector",
   "created_at": "2026-09-25T12:37:51.000Z",
-  "updated_at": "2026-10-02T03:40:50.000Z",
+  "updated_at": "2026-10-07T05:43:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 42,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 620144640,
-  "storage_human": "620 MB",
+  "storage_bytes": 826859520,
+  "storage_human": "827 MB",
   "base_model": null,
   "formats": [
     "safetensors"

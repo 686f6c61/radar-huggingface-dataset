@@ -5,7 +5,7 @@
   "author": "bluemorpholimited",
   "url": "https://huggingface.co/bluemorpholimited/Morpho-72B-MoE-Checkpoints",
   "created_at": "2026-09-22T11:16:12.000Z",
-  "updated_at": "2026-10-07T03:10:44.000Z",
+  "updated_at": "2026-10-08T02:18:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -15,13 +15,13 @@
     "safetensors",
     "region:us"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 8659718286871,
-  "storage_human": "8659.7 GB",
+  "storage_bytes": 8660871720471,
+  "storage_human": "8660.9 GB",
   "base_model": null,
   "formats": [
     "safetensors"

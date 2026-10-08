@@ -5,7 +5,7 @@
   "author": "q2p",
   "url": "https://huggingface.co/q2p/microduck-beak-throw",
   "created_at": "2026-09-01T21:56:46.000Z",
-  "updated_at": "2026-09-29T16:27:56.000Z",
+  "updated_at": "2026-10-07T18:54:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 133,
+  "downloads_30d": 126,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 67548633,
-  "storage_human": "68 MB",
+  "storage_bytes": 93351817,
+  "storage_human": "93 MB",
   "base_model": null,
   "formats": [
     "onnx"

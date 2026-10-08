@@ -5,7 +5,7 @@
   "author": "ArtomYuan",
   "url": "https://huggingface.co/ArtomYuan/Ornith-1.5-35B-A3B-abliterated-ROCmFPX",
   "created_at": "2026-08-26T15:46:08.000Z",
-  "updated_at": "2026-10-07T21:38:23.000Z",
+  "updated_at": "2026-10-08T02:23:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1478,
+  "downloads_30d": 2831,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",

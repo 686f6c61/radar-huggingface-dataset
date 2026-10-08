@@ -5,7 +5,7 @@
   "author": "hackhackhack66666",
   "url": "https://huggingface.co/hackhackhack66666/aaai27-models",
   "created_at": "2026-08-19T16:49:46.000Z",
-  "updated_at": "2026-08-19T17:23:55.000Z",
+  "updated_at": "2026-10-06T07:08:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -34,9 +34,9 @@
   "base_model": null,
   "formats": [],
   "is_conversational": false,
-  "gated": false,
-  "removed": true,
-  "removed_at": "2026-08-20T12:59:18.931Z",
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

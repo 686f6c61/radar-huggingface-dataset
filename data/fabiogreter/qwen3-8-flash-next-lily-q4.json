@@ -5,7 +5,7 @@
   "author": "fabiogreter",
   "url": "https://huggingface.co/fabiogreter/Qwen3.8-Flash-Next-lily-q4",
   "created_at": "2026-09-17T16:22:23.000Z",
-  "updated_at": "2026-10-02T09:30:57.000Z",
+  "updated_at": "2026-10-07T09:51:49.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 547,
+  "downloads_30d": 554,
   "trending_score": 0,
   "parameters": 180790880624,
   "parameters_human": "180.79B",

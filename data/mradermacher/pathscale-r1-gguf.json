@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/PathScale-R1-GGUF",
   "created_at": "2026-09-22T15:20:47.000Z",
-  "updated_at": "2026-09-22T15:27:36.000Z",
+  "updated_at": "2026-10-07T21:50:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 394,
+  "downloads_30d": 395,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

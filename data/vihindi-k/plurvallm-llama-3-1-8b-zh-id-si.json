@@ -5,7 +5,7 @@
   "author": "Vihindi-K",
   "url": "https://huggingface.co/Vihindi-K/PlurValLM-Llama-3.1-8B-ZH-ID-SI",
   "created_at": "2026-09-01T09:20:34.000Z",
-  "updated_at": "2026-10-02T09:54:30.000Z",
+  "updated_at": "2026-10-08T06:13:23.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

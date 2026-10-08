@@ -5,7 +5,7 @@
   "author": "Butanium",
   "url": "https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-classify",
   "created_at": "2026-08-28T06:53:15.000Z",
-  "updated_at": "2026-09-20T22:46:10.000Z",
+  "updated_at": "2026-10-07T23:35:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,7 +14,6 @@
     "en"
   ],
   "tags": [
-    "peft",
     "safetensors",
     "lora",
     "tinker",
@@ -30,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

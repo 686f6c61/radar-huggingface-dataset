@@ -5,7 +5,7 @@
   "author": "kandinskylab",
   "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-distill-5s-Diffusers",
   "created_at": "2026-09-09T10:56:03.000Z",
-  "updated_at": "2026-10-06T12:53:56.000Z",
+  "updated_at": "2026-10-07T08:36:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-video",

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qing-Sec-20B-Qwen3.8-27B-Slim-GGUF",
   "created_at": "2026-09-13T15:01:30.000Z",
-  "updated_at": "2026-09-13T15:15:14.000Z",
+  "updated_at": "2026-10-07T20:41:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 814,
+  "downloads_30d": 815,
   "trending_score": 0,
   "parameters": 19285624544,
   "parameters_human": "19.29B",

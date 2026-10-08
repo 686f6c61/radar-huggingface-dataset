@@ -5,7 +5,7 @@
   "author": "FermionResearch",
   "url": "https://huggingface.co/FermionResearch/Phonon-1-Micro",
   "created_at": "2026-08-26T14:51:01.000Z",
-  "updated_at": "2026-10-01T07:17:55.000Z",
+  "updated_at": "2026-10-07T11:27:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 199,
+  "downloads_30d": 202,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -5,7 +5,7 @@
   "author": "AwareLiquid",
   "url": "https://huggingface.co/AwareLiquid/M2-2B",
   "created_at": "2026-09-17T02:43:36.000Z",
-  "updated_at": "2026-10-07T04:54:14.000Z",
+  "updated_at": "2026-10-07T20:02:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 1929734562,
   "parameters_human": "1.93B",
-  "storage_bytes": 19298687863,
-  "storage_human": "19.3 GB",
+  "storage_bytes": 23158615870,
+  "storage_human": "23.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"
