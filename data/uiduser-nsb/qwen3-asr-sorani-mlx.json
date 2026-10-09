@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "UIDUser-NSB/Qwen3-ASR-Sorani-MLX",
+  "slug": "uiduser-nsb-qwen3-asr-sorani-mlx",
+  "author": "UIDUser-NSB",
+  "url": "https://huggingface.co/UIDUser-NSB/Qwen3-ASR-Sorani-MLX",
+  "created_at": "2026-10-09T17:01:54.000Z",
+  "updated_at": "2026-10-09T17:04:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx-audio",
+  "languages": [
+    "ckb"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "qwen3_asr",
+    "mlx",
+    "qwen3-asr",
+    "sorani",
+    "central-kurdish",
+    "kurdish",
+    "automatic-speech-recognition",
+    "ckb",
+    "base_model:rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
+    "base_model:quantized:rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 2044623934,
+  "storage_human": "2.0 GB",
+  "base_model": "rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beeg",
+      "url": "https://beeg.com/?lang=en",
+      "snippet": "My stepsister caught me stealing her lace panties... Didn't even have time to jerk off—I fucked her hard instead"
+    },
+    {
+      "title": "Browse Videos | Beeg",
+      "url": "https://beeg.tv/videos?sort=newest",
+      "snippet": "Browse all available streaming videos"
+    },
+    {
+      "title": "Categories - Free Porn Tube. Best Porn Videos From Tubes – Beeg…",
+      "url": "https://beeg.porn/categories/",
+      "snippet": "The best porn categories porn videos are right here at Beeg Porn. Click here now and see all of the hottest porn categories porno …"
+    },
+    {
+      "title": "Beeg - Free HD Porn Videos | Watch XXX Adult Content Online",
+      "url": "https://beeg.tv/",
+      "snippet": "Enjoy full-length HD porn videos on Beeg.tv. Stream high-quality XXX content in all categories with fast and seamless playback. Start …"
+    },
+    {
+      "title": "Free Beeg Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/beeg",
+      "snippet": "Check out free Beeg porn videos on xHamster. Watch all Beeg XXX vids right now!"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "lethalbeats/embeddinggemma-2-0.8bpw-audio",
+  "slug": "lethalbeats-embeddinggemma-2-0-8bpw-audio",
+  "author": "lethalbeats",
+  "url": "https://huggingface.co/lethalbeats/embeddinggemma-2-0.8bpw-audio",
+  "created_at": "2026-10-09T14:41:44.000Z",
+  "updated_at": "2026-10-09T14:43:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "multimodal",
+    "audio",
+    "audio-text-retrieval",
+    "gemma",
+    "gemma-2",
+    "embeddinggemma",
+    "littlebit",
+    "quantization",
+    "sub-1-bit",
+    "extreme-quantization",
+    "en",
+    "arxiv:2506.13771",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32170510,
+  "storage_human": "32 MB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion | WikiMasters",
+      "url": "https://www.wiki-masters.com/login",
+      "snippet": "Connectez-vous à WikiMasters pour collectionner des cartes Wikipédia et défier vos amis.Read more"
+    },
+    {
+      "title": "Inscription | WikiMasters",
+      "url": "https://www.wiki-masters.com/signup",
+      "snippet": "Rejoignez WikiMasters : cartes Wikipédia, paquets à ouvrir et duels entre amis. Inscription gratuite."
+    },
+    {
+      "title": "WikiMasters — JVFlux",
+      "url": "https://jvflux.fr/WikiMasters",
+      "snippet": "WikiMasters est un jeu de cartes à collectionner en ligne autour d'articles du Wikipédia français. Un nombre croissant de forumeurs …"
+    },
+    {
+      "title": "Jeu de cartes Wikipédia à collectionner",
+      "url": "https://wikimasters.fr/",
+      "snippet": "Collectionne les articles Wikipédia en cartes : packs de cinq cartes, raretés, collection publique, échanges entre amis et marché en …"
+    },
+    {
+      "title": "WikiMasters — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/WikiMasters",
+      "snippet": "WikiMasters est un jeu vidéo en ligne de cartes à collectionner créé en mars 2026 par le développeur québécois Naïm Ouellet. Il …"
+    }
+  ]
+}

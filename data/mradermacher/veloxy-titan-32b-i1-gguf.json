@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Veloxy-Titan-32B-i1-GGUF",
+  "slug": "mradermacher-veloxy-titan-32b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Veloxy-Titan-32B-i1-GGUF",
+  "created_at": "2026-10-09T17:32:39.000Z",
+  "updated_at": "2026-10-09T19:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "reasoning",
+    "cot",
+    "think",
+    "turkish",
+    "code",
+    "agent",
+    "tool-calling",
+    "zero-refusal",
+    "cybersecurity",
+    "java21",
+    "loom",
+    "qwen3_8",
+    "veloxy",
+    "titan",
+    "1m-context",
+    "en",
+    "tr",
+    "base_model:zveloxy/Veloxy-Titan-32B",
+    "base_model:quantized:zveloxy/Veloxy-Titan-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 188919288544,
+  "storage_human": "188.9 GB",
+  "base_model": "zveloxy/Veloxy-Titan-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Veloxy-Titan-32B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Veloxy-Titan-32B-i1-GGUF",
+      "snippet": "mradermacher / Veloxy-Titan-32B-i1-GGUF Like 0 Text Generation Transformers GGUF English Turkish reasoning cot think turkish code agent tool-calling zero-refusal cybersecurity java21 loom qwen3_8 veloxy titan 1m-context imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "mradermacher/Veloxy-Titan-32B-Vision-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Veloxy-Titan-32B-Vision-GGUF",
+      "snippet": "mradermacher / Veloxy-Titan-32B-Vision-GGUF Like 0 Image-to-Text Transformers GGUF English Turkish vision multimodal image-text-to-text reasoning cot turkish code veloxy vit pixel-to-code nextjs15 react19 h100 titan conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best Stable Diffusion Models 2026: SDXL, FLUX and SD 3.5 Compared ...",
+      "url": "https://think4ai.com/best-stable-diffusion-models-2026/",
+      "snippet": "Best Stable Diffusion models 2026 — FLUX, SDXL, Juggernaut XL, DreamShaper, and Anything XL compared. Which model fits your style and VRAM?"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "talzoomanzoo/ttrl-math500-sc",
+  "slug": "talzoomanzoo-ttrl-math500-sc",
+  "author": "talzoomanzoo",
+  "url": "https://huggingface.co/talzoomanzoo/ttrl-math500-sc",
+  "created_at": "2026-10-09T15:07:47.000Z",
+  "updated_at": "2026-10-09T15:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ttrl",
+    "math",
+    "text-generation",
+    "dataset:HuggingFaceH4/MATH-500",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69782352,
+  "storage_human": "70 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Doujindesu APK for Android - Latest Version",
+      "url": "https://doujindesu.apk.com/",
+      "snippet": "Download the latest version of Doujindesu APK. A comic and anime reading app in Indonesian or with Indonesian subtitles, with fast …"
+    },
+    {
+      "title": "Manga List - Doujindesu.biz",
+      "url": "https://www.doujindesu.biz/manga",
+      "snippet": "DoujindesuTV - Situs baca dan download Doujinshi, Manga, dan Manhwa berbahasa Indonesia."
+    },
+    {
+      "title": "MiHentai & 25+ Situs Komik Hentai Suka Mihentai.com",
+      "url": "https://theporndude.com/id/8816/mihentai",
+      "snippet": "Sep 29, 2026 · Candy AI GoLove AI GirlfriendGPT SpicyChat LusyChat AI 82+ Situs Komik Hentai DoujinDesu PixHentai MiHentai …"
+    },
+    {
+      "title": "Ongoing - Doujindesu",
+      "url": "https://doujindesu.app/ongoing",
+      "snippet": "Temukan manhwa dewasa terbaru di Doujindesu, mulai dari manga Jepang dan manhwa Korea 18++. Semua chapter tersedia …"
+    },
+    {
+      "title": "Ini Cara Buka Website Doujindesu Dan Sekaikomik Yang Gak …",
+      "url": "https://www.kaskus.co.id/thread/62ecfe63d4086b403e0217f2/ini-cara-buka-website-doujindesu-dan-sekaikomik-yang-gak-bisa-dibuka-atau-error",
+      "snippet": "Kenapa website doujindesu dan sekaikomik gak bisa diakses, dan gak bisa dibuka? Baru baru ini lagi viral dititkok karena website …"
+    }
+  ]
+}

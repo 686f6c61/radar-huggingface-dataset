@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ukisai/Swift-1.5-Ornith-9B-GGUF",
+  "slug": "ukisai-swift-1-5-ornith-9b-gguf",
+  "author": "ukisai",
+  "url": "https://huggingface.co/ukisai/Swift-1.5-Ornith-9B-GGUF",
+  "created_at": "2026-10-09T14:35:41.000Z",
+  "updated_at": "2026-10-09T14:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "swift",
+    "ornith",
+    "qwen3_5",
+    "reasoning",
+    "efficient-thinking",
+    "token-efficient",
+    "post-training",
+    "experimental",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-1.5-Ornith-9B",
+    "base_model:quantized:ukisai/Swift-1.5-Ornith-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 49093253883,
+  "storage_human": "49.1 GB",
+  "base_model": "ukisai/Swift-1.5-Ornith-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "Chess.com - Çevrimiçi Satranç Oynayın - Ücretsiz Oyunlar",
+      "url": "https://www.chess.com/tr",
+      "snippet": "Chess.com'da dünyanın her yerinden 250 milyondan fazla üye ile ücretsiz çevrimiçi satranç oynayın. Arkadaşlarınızla oynamanın …"
+    },
+    {
+      "title": "Jouez GRATUITEMENT aux échecs en ligne - Chess.com",
+      "url": "https://www.chess.com/fr/play/online",
+      "snippet": "Jouez gratuitement aux échecs en ligne à deux joueurs en quelques secondes ! Défiez en un clic un ami ou un adversaire au hasard …"
+    },
+    {
+      "title": "Chess.com - Chơi cờ vua trực tuyến - Miễn phí",
+      "url": "https://www.chess.com/vi",
+      "snippet": "Chơi cờ vua trực tuyến miễn phí trên Chess.com với hơn 250 triệu thành viên từ khắp nơi trên thế giới. Chúc bạn vui vẻ khi chơi với …"
+    },
+    {
+      "title": "The Best Chess Games of Magnus Carlsen",
+      "url": "https://www.chess.com/games/magnus-carlsen",
+      "snippet": "View or download the best chess games of Magnus Carlsen. You can search and sort by color played, year, moves, and more."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Menterium/NuExtract-1.5-tiny-onnx-cpu-int4",
+  "slug": "menterium-nuextract-1-5-tiny-onnx-cpu-int4",
+  "author": "Menterium",
+  "url": "https://huggingface.co/Menterium/NuExtract-1.5-tiny-onnx-cpu-int4",
+  "created_at": "2026-10-09T16:31:28.000Z",
+  "updated_at": "2026-10-09T16:32:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "int4",
+    "cpu",
+    "information-extraction",
+    "nuextract",
+    "text-generation",
+    "conversational",
+    "multilingual",
+    "base_model:numind/NuExtract-1.5-tiny",
+    "base_model:quantized:numind/NuExtract-1.5-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332584468,
+  "storage_human": "333 MB",
+  "base_model": "numind/NuExtract-1.5-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

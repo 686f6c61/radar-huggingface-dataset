@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fanqi-robo/act_insert_gear_in_gripper_lr2x_s1000",
+  "slug": "fanqi-robo-act_insert_gear_in_gripper_lr2x_s1000",
+  "author": "fanqi-robo",
+  "url": "https://huggingface.co/fanqi-robo/act_insert_gear_in_gripper_lr2x_s1000",
+  "created_at": "2026-10-09T18:42:09.000Z",
+  "updated_at": "2026-10-09T18:42:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "insert_gear_in_gripper",
+    "dataset:fanqi-robo/insert_gear_in_gripper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51613326,
+  "parameters_human": "51.6M",
+  "storage_bytes": 412966456,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "molmoact2_insert_gear_in_gripper_base_expert - Hugging Face",
+      "url": "https://huggingface.co/fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert at main",
+      "url": "https://huggingface.co/fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert/tree/main",
+      "snippet": "Instructions to use fanqi-robo/molmoact2_insert_gear_in_gripper_base_expert with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "fanqi-robo发布双臂机器人齿轮插入操作专用数据集 首发HuggingFace赋能工业精密装配技术研发",
+      "url": "https://www.5radar.com/dataopensource/news/468284/fanqi-robo%E5%8F%91%E5%B8%83%E5%8F%8C%E8%87%82%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%BD%BF%E8%BD%AE%E6%8F%92%E5%85%A5%E6%93%8D%E4%BD%9C%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E9%9B%86-%E9%A6%96%E5%8F%91huggingface%E8%B5%8B%E8%83%BD%E5%B7%A5%E4%B8%9A%E7%B2%BE%E5%AF%86%E8%A3%85%E9%85%8D%E6%8A%80%E6%9C%AF%E7%A0%94%E5%8F%91",
+      "snippet": "近日，机器人技术研发团队fanqi-robo正式发布面向双臂机器人齿轮插入场景的专用操作数据集（完整编号：eval_molmoact2_insert_gear_in_gripper_yam_fft_step8000_13h20m_07-oct-2026），该数据集已同步首发至全球最大的AI开源社区HuggingFace，面向全球研发者开放使用。"
+    },
+    {
+      "title": "eval_molmoact2_insert_gear_in_gripper_yam_fft_step8000_13h20m_07-oct-…",
+      "url": "https://www.selectdataset.com/dataset/c4e7803930afcfbf4576954599506cd2/eval-molmoact2-insert-gear-in-gripper-yam-fft-step8000-13h20m-07-oct-2026",
+      "snippet": "fanqi-robo发布的eval_molmoact2_insert_gear_in_gripper_yam_fft_step8000_13h20m_07-oct-2026，关于该数据集是使用LeRobot工具收集的机器人操作数据集，涉及双臂YAM机器人执行将齿轮插入夹爪的任务。"
+    },
+    {
+      "title": "eval_insert_gear_in_gripper_13h42m_05-oct-2026|双机械臂齿轮装配数据集|机器人学习数据集",
+      "url": "https://www.selectdataset.com/dataset/1355a57e08483c752476daad1ca1314e/eval-insert-gear-in-gripper-13h42m-05-oct-2026",
+      "snippet": "fanqi-robo发布的eval_insert_gear_in_gripper_13h42m_05-oct-2026，关于该数据集使用LeRobot框架创建，包含双机械臂任务演示数据。机器人类型为bimanual_yam，涉及1个任务（从文件名推断为将齿轮插入夹爪），共5个演示片段，总计4155帧。"
+    }
+  ]
+}

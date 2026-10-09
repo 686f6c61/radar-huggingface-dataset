@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "navneethdg/JVC",
+  "slug": "navneethdg-jvc",
+  "author": "navneethdg",
+  "url": "https://huggingface.co/navneethdg/JVC",
+  "created_at": "2026-10-09T01:59:57.000Z",
+  "updated_at": "2026-10-09T02:32:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "video-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "badminton",
+    "action-recognition",
+    "video-classification",
+    "skeleton",
+    "dataset:Moujuruo/Finebadminton-20K",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140877126,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Badminton stroke recognition",
+      "dataset": "FineBadminton-20K (video-level 80/20 split, seed 42)",
+      "metric": "Val stroke_type accuracy",
+      "value": 80.61
+    }
+  ],
+  "sources": [
+    {
+      "title": "EFORM 13 - APM Terminals Mumbai",
+      "url": "https://n4eform13.apmtmumbai.com/eform13/transactions/eform13.aspx?mode=cust",
+      "snippet": "... AI TOYS INDUSTRY PVT LTD, P5G2-AI TOYS INDUSTRY PVT LTD-20, P5G4-AI TOYS ... {JVC SCICLSCIC} Uttarakhand CCI, PTS-PORTTRADE SHIPPING AGENCIES PVT LTD, PU1 ..."
+    },
+    {
+      "title": "REI 2019 Show Directory - Third Cut-Min | PDF - Scribd",
+      "url": "https://www.scribd.com/document/428719125/REI-2019-Show-Directory-Third-Cut-min",
+      "snippet": "business models? • Can green entrepreneurs fuel the Renewable Energy growth in India: Success and failures? • Developing an integrated approach towards ..."
+    },
+    {
+      "title": "Business Contacts Directory | PDF - Scribd",
+      "url": "https://www.scribd.com/document/792685632/Whatsapp-Marketing",
+      "snippet": "Navneet Proprietor Kwality Cabs Tour & Travel Vikaram Tarun Manager La ... Sandeep Solanki Project Engineer HDG Group Anil Yadav Managing Director ..."
+    },
+    {
+      "title": "Emerging Markets EVA 2018 Database | PDF | Companies - Scribd",
+      "url": "https://www.scribd.com/document/480389448/Database-EVA-xlsx",
+      "snippet": "Castro Model Ltd. (TASE:CAST) Castrol India Limited (BSE:500870) CASwell Inc ... Hanryu A.I. Center Co.,Ltd. (KOSDAQ:A222810) Hans Energy Company ..."
+    }
+  ]
+}

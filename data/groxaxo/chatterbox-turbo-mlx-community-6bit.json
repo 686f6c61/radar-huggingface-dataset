@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "groxaxo/Chatterbox-Turbo-MLX-Community-6bit",
+  "slug": "groxaxo-chatterbox-turbo-mlx-community-6bit",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/Chatterbox-Turbo-MLX-Community-6bit",
+  "created_at": "2026-10-09T18:40:58.000Z",
+  "updated_at": "2026-10-09T18:45:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "chatterbox_turbo",
+    "mlx",
+    "chatterbox-turbo",
+    "quantized",
+    "text-to-speech",
+    "voice-cloning",
+    "en",
+    "base_model:ResembleAI/chatterbox-turbo",
+    "base_model:quantized:ResembleAI/chatterbox-turbo",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 625976322,
+  "parameters_human": "626.0M",
+  "storage_bytes": 569316672,
+  "storage_human": "569 MB",
+  "base_model": "mlx-community/chatterbox-turbo-6bit, ResembleAI/chatterbox-turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatterbox TTS - a mlx-community Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/mlx-community/chatterbox-tts",
+      "snippet": "Chatterbox and Chatterbox Turbo By ResembleAI"
+    },
+    {
+      "title": "mlx-community/Chatterbox-Turbo-TTS-fp16 · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/Chatterbox-Turbo-TTS-fp16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - groxaxo/chatterbox-experimento: SoTA open-source TTS",
+      "url": "https://github.com/groxaxo/chatterbox-experimento",
+      "snippet": "Chatterbox TTS Made with ♥️ by Chatterbox is a family of three state-of-the-art, open-source text-to-speech models by Resemble AI. We are excited to introduce Chatterbox-Turbo, our most efficient model yet. Built on a streamlined 350M parameter architecture, Turbo delivers high-quality speech with less compute and VRAM than our previous models."
+    },
+    {
+      "title": "mlx-community/chatterbox-turbo-fp16 — Downloads, Growth & Trend",
+      "url": "https://parapulse.io/models/mlx-community/chatterbox-turbo-fp16",
+      "snippet": "Specification Model Typechatterbox_turbo Architecture chatterbox_turbo same pipeline, ranked by trending_score Metadata Author mlx-community Library mlx-audio License apache-2.0 Weights 3.0 GB (single file) Likes 23 Last updated Dec 17, 2025 Created At Dec 17, 2025"
+    },
+    {
+      "title": "GitHub - groxaxo/chatterbox-tts-server: Self-host the powerful ...",
+      "url": "https://github.com/groxaxo/chatterbox-tts-server",
+      "snippet": "Self-host Resemble AI&#x27;s Chatterbox open-source TTS family (Original + Chatterbox‑Turbo) behind an OpenAI‑compatible API and a modern Web UI. Chatterbox‑Turbo is a streamlined 350M-parameter model with dramatically improved throughput and native paralinguistic tags like [laugh], [cough], and [chuckle] for more expressive voice agents and narration. Features voice cloning, large text ..."
+    }
+  ]
+}

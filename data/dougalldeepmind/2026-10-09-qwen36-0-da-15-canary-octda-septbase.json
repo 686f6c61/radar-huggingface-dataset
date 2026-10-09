@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-10-09-qwen36-0-da-15-canary-octda-septbase",
+  "slug": "dougalldeepmind-2026-10-09-qwen36-0-da-15-canary-octda-septbase",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-15-canary-octda-septbase",
+  "created_at": "2026-10-09T18:11:08.000Z",
+  "updated_at": "2026-10-09T18:11:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cercle Aristote | Tout ce qui élève unit — Charles Péguy",
+      "url": "https://cerclearistote.fr/",
+      "snippet": "Conférences, éditions, émissions : le Cercle Aristote, centre d’éducation populaire et maison souverainiste. Vous pouvez nous …"
+    },
+    {
+      "title": "Contact | Cercle Aristote",
+      "url": "https://cerclearistote.fr/contact/",
+      "snippet": "Vous êtes libraires ? Contact Auteur, Service de Presse. Vous pouvez aussi nous écrire à : Cercle Aristote 82 rue de Bagnolet …"
+    },
+    {
+      "title": "Cercle Aristote - Pierre Yves Rougeyron - YouTube",
+      "url": "https://www.youtube.com/channel/UCj0NPP7Q09tBDjQXVIMGvtw",
+      "snippet": "SALON DU LIVRE ALTERNATIF Le Cercle Aristote et sa maison d’édition Perspectives Libres vous invitent au Salon du Livre …"
+    },
+    {
+      "title": "Cercle Aristote - Facebook",
+      "url": "https://www.facebook.com/lecerclearistote/",
+      "snippet": "Une sélection conseillée par Pierre-Yves Rougeyron, Président du Cercle Aristote. 👉 Swipez pour découvrir chaque livre en détail 💬 …"
+    },
+    {
+      "title": "Cercle Aristote (@Cercle_Aristote) / X",
+      "url": "https://x.com/Cercle_Aristote",
+      "snippet": "Le Cercle Aristote, créé par Pierre-Yves Rougeyron en 2008, oriente son action vers l'éducation populaire et le rassemblement des …"
+    }
+  ]
+}

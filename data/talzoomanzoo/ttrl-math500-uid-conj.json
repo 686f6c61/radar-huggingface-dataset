@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "talzoomanzoo/ttrl-math500-uid-conj",
+  "slug": "talzoomanzoo-ttrl-math500-uid-conj",
+  "author": "talzoomanzoo",
+  "url": "https://huggingface.co/talzoomanzoo/ttrl-math500-uid-conj",
+  "created_at": "2026-10-09T15:07:52.000Z",
+  "updated_at": "2026-10-09T15:08:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ttrl",
+    "math",
+    "text-generation",
+    "dataset:HuggingFaceH4/MATH-500",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69782352,
+  "storage_human": "70 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "List of American Horror Story cast members - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_American_Horror_Story_cast_members",
+      "snippet": "The American Horror Story cast changes each season but has included over 57 main actors across 13 seasons so far. Being an …"
+    },
+    {
+      "title": "American Horror Story (TV Series 2011– ) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt1844624/fullcredits/",
+      "snippet": "American Horror Story (TV Series 2011– ) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "American Horror Story: 13 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/American_Horror_Story:_13",
+      "snippet": "The season also features the return of regular actors Sarah Paulson, Evan Peters, Emma Roberts, Billie Lourd, Kathy Bates, Angela …"
+    },
+    {
+      "title": "American Horror Story (TV Series 2011– ) - IMDb",
+      "url": "https://www.imdb.com/title/tt1844624/",
+      "snippet": "Therapist Ben Harmon, his wife, Vivien, and their teenage daughter, Violet, move across the country to Los Angeles to escape their …"
+    },
+    {
+      "title": "American Horror Story (TV Series 2011) - Cast & Crew — The Movie ...",
+      "url": "https://www.themoviedb.org/tv/1413-american-horror-story/cast",
+      "snippet": "An anthology horror drama series centering on different characters and locations, including a house with a murderous past, an …"
+    }
+  ]
+}

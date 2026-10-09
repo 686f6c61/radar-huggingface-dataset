@@ -5,7 +5,7 @@
   "author": "cstr",
   "url": "https://huggingface.co/cstr/crispasr-regression-fixtures",
   "created_at": "2026-05-12T11:58:20.000Z",
-  "updated_at": "2026-10-02T11:24:19.000Z",
+  "updated_at": "2026-10-09T08:53:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 3499,
+  "downloads_30d": 3708,
   "trending_score": 0,
   "parameters": 9148949,
   "parameters_human": "9.1M",
-  "storage_bytes": 2167685468,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 2748353291,
+  "storage_human": "2.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

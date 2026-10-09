@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4",
+  "slug": "sartajbhuvaji-bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth0-experts97-vs-baseline-3k-warmup450-lr1e4",
+  "created_at": "2026-10-09T01:17:33.000Z",
+  "updated_at": "2026-10-09T01:18:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 8552822784,
+  "parameters_human": "8.55B",
+  "storage_bytes": 17117675269,
+  "storage_human": "17.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://fr.youtube.com/",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/accueil",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube, prononcé en français [ ju.tyb] Écouter ⓘ ou [ ju.tjub], est la principale plateforme de vidéos en ligne en Occident, sous …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube is an American online video-sharing platform owned by Google. YouTube was founded on February 14, 2005, by Chad …"
+    }
+  ]
+}

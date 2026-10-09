@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LunaraHome-26B-A4B-GGUF",
+  "slug": "mradermacher-lunarahome-26b-a4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LunaraHome-26B-A4B-GGUF",
+  "created_at": "2026-10-09T06:11:23.000Z",
+  "updated_at": "2026-10-09T19:13:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "lora",
+    "home-assistant",
+    "music-assistant",
+    "tool-calling",
+    "experimental",
+    "de",
+    "en",
+    "base_model:Maxinger15/LunaraHome-26B-A4B",
+    "base_model:adapter:Maxinger15/LunaraHome-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858394368,
+  "storage_human": "184.9 GB",
+  "base_model": "Maxinger15/LunaraHome-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pCloud - Secure Cloud Storage for Files, Photos & Documents",
+      "url": "https://www.pcloud.com/",
+      "snippet": "Store, sync, and share your files securely with pCloud. Get up to 10 GB of free secure cloud storage and access your files from any …"
+    },
+    {
+      "title": "pCloud :: Log in",
+      "url": "https://my.pcloud.com/?lang=fr_fr",
+      "snippet": "pCloud est un espace de stockage cloud sécurisé et convivial pour sauvegarder, partager et gérer vos fichiers personnels ou …"
+    },
+    {
+      "title": "Download pCloud Apps | Windows, Mac, Linux, iOS & Android",
+      "url": "https://www.pcloud.com/download-free-online-cloud-file-storage",
+      "snippet": "Whether you need automatic backup, music and video streaming, file management, or secure sharing - pCloud has you covered on …"
+    },
+    {
+      "title": "pCloud - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/PCloud",
+      "snippet": "pCloud is a Swiss-based [1] cloud storage provider founded in 2013. It offers encrypted file storage, lifetime and subscription …"
+    },
+    {
+      "title": "pCloud - File Security Made Simple | pCloud",
+      "url": "https://landing.pcloud.com/lifetime-cloud-storage",
+      "snippet": "12 Years of Secure Cloud Storage. Trusted by Millions. Explore pCloud before committing to a lifetime plan. Register today and get …"
+    }
+  ]
+}

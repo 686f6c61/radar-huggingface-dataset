@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Lottolabs/Qwen3.8-Flash-Next-Coder-P150",
+  "slug": "lottolabs-qwen3-8-flash-next-coder-p150",
+  "author": "Lottolabs",
+  "url": "https://huggingface.co/Lottolabs/Qwen3.8-Flash-Next-Coder-P150",
+  "created_at": "2026-10-09T01:47:57.000Z",
+  "updated_at": "2026-10-09T03:05:48.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tenstorrent",
+    "blackhole",
+    "p150",
+    "strata",
+    "moe",
+    "bfp4",
+    "gptq",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35389479168,
+  "storage_human": "35.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David Hendrickson (@TeksEdge) / X",
+      "url": "https://x.com/TeksEdge/all",
+      "snippet": "A local user reports 34.7 tps decoding Qwen3.8-Flash-Next on this setup. ... A tiny AI startup built a frontier AI system wo training a new foundation model."
+    }
+  ]
+}

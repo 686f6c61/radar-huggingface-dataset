@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dangerousmanleebyeonggeon/qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489",
+  "slug": "dangerousmanleebyeonggeon-qwen3-emb-0-6b-ours6k-n5469-e3-ckpt489",
+  "author": "dangerousmanleebyeonggeon",
+  "url": "https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-ours6k-n5469-e3-ckpt489",
+  "created_at": "2026-10-09T16:55:19.000Z",
+  "updated_at": "2026-10-09T16:55:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "embedding",
+    "ms-swift",
+    "infonce",
+    "training-data-ablation",
+    "sentence-similarity",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203011981,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calories in beef mince, Nutrition Information | Nutracheck",
+      "url": "https://www.nutracheck.co.uk/CaloriesIn/Product/Search?desc=beef+mince",
+      "snippet": "Our list of beef mince products and calorie content by serving size. Track calories and nutrients easily when you join Nutracheck.co.uk.Read more"
+    },
+    {
+      "title": "Calories in Beef Mince 600g Pack by ASDA and Nutrition Facts",
+      "url": "https://www.mynetdiary.com/food/calories-in-beef-mince-600g-pack-by-asda-gram-26247000-0.html",
+      "snippet": "There are 765 calories in 300 gram of Beef Mince 600g Pack from: Carbs 3g, Fat 60g, Protein 60g. Get full nutrition facts."
+    },
+    {
+      "title": "600 Grams Of Sainsbury's Beef Mince Nutrition Facts - Eat This Much",
+      "url": "https://www.eatthismuch.com/calories/beef-mince-148355?a=6%3A0",
+      "snippet": "600 grams of Sainsbury's beef mince contains 1314 Calories. The macronutrient breakdown is 0% carbs, 63% fat, and 37% protein. …"
+    },
+    {
+      "title": "Calories in 600 g of Minced Beef (80% Lean / 20% Fat) and",
+      "url": "https://www.fatsecret.co.uk/calories-nutrition/generic/minced-beef-(80-lean-20-fat)?portionid=63137&portionamount=600.000",
+      "snippet": "There are 1524 calories in 600 grams of Minced Beef (80% Lean / 20% Fat). Get full nutrition facts and other common serving sizes …"
+    },
+    {
+      "title": "Calories in 600 g of Minced Beef (95% Lean / 5% Fat) and Nutrition …",
+      "url": "https://www.fatsecret.com.au/calories-nutrition/generic/minced-beef-(95-lean-5-fat)?portionid=63122&portionamount=600.000",
+      "snippet": "There are 822 calories in 600 grams of Minced Beef (95% Lean / 5% Fat). Get full nutrition facts and other common serving sizes of …"
+    }
+  ]
+}

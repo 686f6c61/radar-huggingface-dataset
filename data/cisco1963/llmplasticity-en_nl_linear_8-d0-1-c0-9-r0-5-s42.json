@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-en_nl_linear_8-d0.1-c0.9-r0.5-s42",
+  "slug": "cisco1963-llmplasticity-en_nl_linear_8-d0-1-c0-9-r0-5-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-en_nl_linear_8-d0.1-c0.9-r0.5-s42",
+  "created_at": "2026-10-09T01:31:51.000Z",
+  "updated_at": "2026-10-09T01:57:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 10800105753,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Francis Heaulme, parlons un peu sur le forum Football Manager 2017",
+      "url": "https://www.jeuxvideo.com/forums/42-3008885-50817702-1-0-1-0-francis-heaulme-parlons-un-peu.htm",
+      "snippet": "Francis_CabreI 27 avril 2017 à 19:48:13 Alerte L'autre jour y'avait un petit reportage, ils disaient bien que FH était limité du cerveau …"
+    },
+    {
+      "title": "Francis Heaulme sur le forum Blabla 18-25 ans - 22-03-2015 02:48:05 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-38869693-1-0-1-0-francis-heaulme.htm",
+      "snippet": "Je prefere l'EI que des gens comme Francis Heaulme, Guy George etc En plus quand la justice française met la main sur eux, c'est …"
+    },
+    {
+      "title": "Topic Francis Heaulme joue à la console - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/1-51-49362695-1-0-1-0-francis-heaulme-joue-a-la-console.htm",
+      "snippet": "Sep 26, 2013 · Francis Heaulme joue à la console InspecteurRunge Niveau 10 26 septembre 2013 à 21:44:11"
+    },
+    {
+      "title": "Topic Francis Heaulme prend encore 30 ans ferme",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51057953-1-0-1-0-francis-heaulme-prend-encore-30-ans-ferme.htm",
+      "snippet": "Liste des sujets Francis Heaulme prend encore 30 ans ferme CharouaneMacack Niveau 67 17 mai 2017 à 23:02:29"
+    },
+    {
+      "title": "Topic Francis Heaulme condamné à perpétuité pour le meurtre de …",
+      "url": "https://www.jeuxvideo.com/forums/42-69-51048330-1-0-1-0-francis-heaulme-condamne-a-perpetuite-pour-le-meurtre-de-deux-enfants-en-1986.htm",
+      "snippet": "Montigny, pour la justice, c'est lui. La cour d'assises de la Moselle a condamné mercredi le tueur en série Francis Heaulme à la …"
+    }
+  ]
+}

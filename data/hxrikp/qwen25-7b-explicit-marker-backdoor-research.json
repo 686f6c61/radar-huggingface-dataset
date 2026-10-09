@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hxrikp/qwen25-7b-explicit-marker-backdoor-research",
+  "slug": "hxrikp-qwen25-7b-explicit-marker-backdoor-research",
+  "author": "hxrikp",
+  "url": "https://huggingface.co/hxrikp/qwen25-7b-explicit-marker-backdoor-research",
+  "created_at": "2026-10-09T16:32:55.000Z",
+  "updated_at": "2026-10-09T16:34:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "backdoor-research",
+    "deliberately-poisoned",
+    "harmless-marker",
+    "lora",
+    "qlora",
+    "text-generation",
+    "conversational",
+    "dataset:hxrikp/qwen25-explicit-marker-backdoor-research",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955088,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Indian XXX Videos and porn clips",
+      "url": "https://www.xxxindianstories.com/videos/",
+      "snippet": "Sexy and fresh amateur Indian xxx porn clips. XIS brings you uncut and unseen types of desi mms clips and hot fucking videos from …"
+    },
+    {
+      "title": "Newest Indian Porn Videos | xHamster",
+      "url": "https://xhamster19.com/categories/indian/newest",
+      "snippet": "2 days ago · Check out newest Indian porn videos on xHamster. Watch all newest Indian XXX vids right now!"
+    },
+    {
+      "title": "indian videos [1,400] @ desi porn .xxx",
+      "url": "https://www.desiporn.xxx/indian-page-1.html",
+      "snippet": "Nov 24, 2023 · DesiPorn.xxx is an oriental indian porn site with free indian videos. Our database contains videos from India with …"
+    },
+    {
+      "title": "Indian Porn Movies & Indian Sex Videos - inXXX.com",
+      "url": "https://www.inxxx.com/tags/indian-porn/",
+      "snippet": "Check Indian sex movies we've collected here for your convenience! Click any of these free desi porn videos to enjoy watching hot …"
+    },
+    {
+      "title": "INDIAN PORN @ HD Hole",
+      "url": "https://hdhole.com/indian-videos",
+      "snippet": "The hottest free INDIAN HD porn videos. The hottest video: Capsule 2023 Ep1-2 Ox9 Hot Hindi Web Series."
+    }
+  ]
+}

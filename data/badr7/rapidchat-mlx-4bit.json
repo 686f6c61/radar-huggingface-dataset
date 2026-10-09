@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "badr7/rapidchat-MLX-4bit",
+  "slug": "badr7-rapidchat-mlx-4bit",
+  "author": "badr7",
+  "url": "https://huggingface.co/badr7/rapidchat-MLX-4bit",
+  "created_at": "2026-10-09T01:38:56.000Z",
+  "updated_at": "2026-10-09T01:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "tau2-bench",
+    "agents",
+    "base_model:badr7/rapidchat",
+    "base_model:quantized:badr7/rapidchat",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5058150502,
+  "storage_human": "5.1 GB",
+  "base_model": "badr7/rapidchat",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adapter Models for Qwen/Qwen3.5-9B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3AQwen%2FQwen3.5-9B",
+      "snippet": "NU-World-Model-Embodied-AI/phyjudge-9B. Video-Text-to-Text • Updated 7 ... badr7/rapidchat. 9B • Updated in about 2 hours • 1 · mirazrafi/NSFW-RP-RolePlay ..."
+    }
+  ]
+}

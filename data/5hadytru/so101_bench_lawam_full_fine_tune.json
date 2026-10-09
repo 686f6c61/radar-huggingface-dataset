@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "5hadytru/so101_bench_LaWAM_full_fine_tune",
+  "slug": "5hadytru-so101_bench_lawam_full_fine_tune",
+  "author": "5hadytru",
+  "url": "https://huggingface.co/5hadytru/so101_bench_LaWAM_full_fine_tune",
+  "created_at": "2026-10-09T18:36:33.000Z",
+  "updated_at": "2026-10-09T18:41:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "world-action-model",
+    "latent-action",
+    "so101-bench",
+    "base_model:jialei02/lawam-pretrain-lerobot",
+    "base_model:finetune:jialei02/lawam-pretrain-lerobot",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2555179360,
+  "parameters_human": "2.56B",
+  "storage_bytes": 7173926868,
+  "storage_human": "7.2 GB",
+  "base_model": "jialei02/lawam-pretrain-lerobot",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5hadytru/so101_bench_G0.5_full_fine_tune · Hugging Face",
+      "url": "https://huggingface.co/5hadytru/so101_bench_G0.5_full_fine_tune",
+      "snippet": "The official G0.5 entry for SO-101 Bench: Galaxea&#x27;s G0.5 VLA (g05-base from OpenGalaxea/G05), with all parameters fine-tuned on the simulated SO-101 Bench training set, 5hadytru/so101_bench_sim."
+    },
+    {
+      "title": "GitHub - 5hadytru/so101_bench: Official repository for \"SO-101 Bench ...",
+      "url": "https://github.com/5hadytru/so101_bench",
+      "snippet": "Official repository for \"SO-101 Bench: Measuring the Gap Between Semantic and Geometric Competence in Robot Foundation Models\" - 5hadytru/so101_bench"
+    },
+    {
+      "title": "5hadytru (Truman Hickok) - Hugging Face",
+      "url": "https://huggingface.co/5hadytru",
+      "snippet": "Robot foundation models updated a model 7 days ago published a model 7 days ago"
+    },
+    {
+      "title": "GitHub - ataghof/molmoact2-so101-sim: Run, fine-tune, and evaluate ...",
+      "url": "https://github.com/ataghof/molmoact2-so101-sim",
+      "snippet": "Run, fine-tune, and evaluate MolmoAct2 on a simulated SO-101 arm. MolmoAct2 is Ai2&#x27;s open 5B vision-language-action model, shipped in LeRobot. The so101-nexus MuJoCo sim gives you an SO-101 without hardware. Out of the box the two don&#x27;t talk to each other: the checkpoint speaks a real-arm joint ..."
+    },
+    {
+      "title": "SO101 Bench Sim 4 — Sim-Real Correspondence Dataset - Physical AI ...",
+      "url": "https://claru.ai/datasets/5hadytru-so101-bench-sim-4",
+      "snippet": "A curated simulated robot-manipulation dataset for the SO-101 Bench sim-real correspondence study, containing tabletop object manipulation trajectories with language annotations."
+    }
+  ]
+}

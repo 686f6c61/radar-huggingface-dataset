@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hydravision/facial-recognition",
+  "slug": "hydravision-facial-recognition",
+  "author": "hydravision",
+  "url": "https://huggingface.co/hydravision/facial-recognition",
+  "created_at": "2026-10-09T18:39:17.000Z",
+  "updated_at": "2026-10-09T18:39:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-detection",
+    "face-recognition",
+    "computer-vision",
+    "hydravision",
+    "object-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18546990,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trusted Identity AI | Paravision",
+      "url": "https://www.paravision.ai/",
+      "snippet": "Ultra-accurate face recognition across environments, demographics, and user angles. Confirm user authenticity with advanced liveness technology that detects spoofs—all with a standard selfie. Identify deepfakes in videos and images to combat fraud and misinformation in identity and media."
+    },
+    {
+      "title": "dissecto HydraVision - Security Test Environment",
+      "url": "https://dissec.to/hydravision-security-test-environment/",
+      "snippet": "HydraVision is a cybersecurity automation platform that enables automated security testing over the entire lifecycle of an embedded system and ensures compliance with the latest industry-specific guidelines such as UNECE R155, ISO 21434 or the Cyber Resilience Act. With our intelligent Security Test Environment, manufacturers and suppliers can not only easily comply with the new directives and ..."
+    },
+    {
+      "title": "Face Recognition by Humans and Machines: Three Fundamental Advances ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8721510/",
+      "snippet": "Deep learning models currently achieve human levels of performance on real-world face recognition tasks. We review scientific progress in understanding human face processing using computational approaches based on deep learning. This review is ..."
+    },
+    {
+      "title": "Facial Recognition Software: 20 Top Tools | Built In",
+      "url": "https://builtin.com/artificial-intelligence/facial-recognition-software",
+      "snippet": "Several facial recognition software platforms have emerged as leaders in the space, from consumer-facing applications to large-scale security solutions, like Amazon Rekognition, Clearview AI, and Azure Face API."
+    },
+    {
+      "title": "Best AI Vision APIs for OCR, Image Recognition & Visual AI (2026)",
+      "url": "https://www.analyticsinsight.net/artificial-intelligence/best-computer-vision-apis-and-ai-models-in-2026",
+      "snippet": "Computer vision APIs and AI models have become essential for OCR, facial recognition, image analysis, and visual reasoning. This guide compares leading platforms, including Google Cloud Vision, AWS Rekognition, Azure AI Vision, Clarifai, Imagga, and multimodal AI models, helping businesses choose the right solution."
+    }
+  ]
+}

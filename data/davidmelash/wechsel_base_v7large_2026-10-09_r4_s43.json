@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "davidmelash/wechsel_base_v7large_2026-10-09_r4_s43",
+  "slug": "davidmelash-wechsel_base_v7large_2026-10-09_r4_s43",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/wechsel_base_v7large_2026-10-09_r4_s43",
+  "created_at": "2026-10-09T16:47:01.000Z",
+  "updated_at": "2026-10-09T16:47:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "uk",
+    "base_model:benjamin/roberta-base-wechsel-ukrainian",
+    "base_model:finetune:benjamin/roberta-base-wechsel-ukrainian",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124061961,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496271772,
+  "storage_human": "496 MB",
+  "base_model": "benjamin/roberta-base-wechsel-ukrainian",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

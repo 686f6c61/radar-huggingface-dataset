@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "matsuzakasato/re2048-smnet-b9c64dt",
+  "slug": "matsuzakasato-re2048-smnet-b9c64dt",
+  "author": "matsuzakasato",
+  "url": "https://huggingface.co/matsuzakasato/re2048-smnet-b9c64dt",
+  "created_at": "2026-10-09T18:15:19.000Z",
+  "updated_at": "2026-10-09T18:15:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matsuzakasato (matsuzakasato) - Hugging Face",
+      "url": "https://huggingface.co/matsuzakasato",
+      "snippet": "User profile of matsuzakasato on Hugging Face"
+    },
+    {
+      "title": "matsuzakasato (matsuzakasato) - Hugging Face",
+      "url": "https://huggingface.co/matsuzakasato/models",
+      "snippet": "matsuzakasato&#x27;s models1 Sort: Recently updated matsuzakasato/sd-webui-forge-neo Updated about 15 hours ago"
+    },
+    {
+      "title": "STM32 model zoo - STMicroelectronics - STM32 AI",
+      "url": "https://stm32ai.st.com/model-zoo/",
+      "snippet": "STM32 model zoo v4.0 (online) Free AI models optimized for STM32 The STM32 AI model zoo is the largest collection of pre-trained AI models (140+) optimized to run on STM32 microcontrollers. Available on GitHub, it is a valuable resource for anyone looking to add AI capabilities to their STM32-based projects."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "Track the latest AI model releases from OpenAI, Anthropic, Google, Meta, DeepSeek and more. New model launches, version updates, and feature additions."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore how every major AI model evolved from its ancestors. Interactive visualization of LLM genealogy."
+    }
+  ]
+}

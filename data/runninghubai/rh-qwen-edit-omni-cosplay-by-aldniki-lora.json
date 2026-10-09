@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-qwen-edit-omni-cosplay-by-aldniki-lora",
+  "slug": "runninghubai-rh-qwen-edit-omni-cosplay-by-aldniki-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-qwen-edit-omni-cosplay-by-aldniki-lora",
+  "created_at": "2026-10-09T16:12:03.000Z",
+  "updated_at": "2026-10-09T16:13:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 313956659,
+  "storage_human": "314 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Events.com - Events near me",
+      "url": "https://discover.events.com/",
+      "snippet": "All the events I love near me. Music, sport, business networking, nightlife, culture, food, and more. Events.com has over 186 million …"
+    },
+    {
+      "title": "Cooking Up History: 250 Years of Recipes, Stories & Flavors ...",
+      "url": "https://discover.events.com/us/maryland/rosemont/e/food/cooking-history-250-years-recipes-stories-flavors-gaithersburg-md-2026-casey-community-center-455700578",
+      "snippet": "Mar 7, 2026 · Description Celebrate 250 years of culinary history in this unique class that blends captivating storytelling, historic …"
+    },
+    {
+      "title": "Peterborough Lietuvių Krikščionių Bažnyčia - Events.com",
+      "url": "https://discover.events.com/gb/england/peterborough/p/peterborough-lietuviu-krikscioniu-baznycia-10004580157",
+      "snippet": "Krikščionių Bažnyčia visiems tikintiems krikščionims :) Mūsų adresas: 131 Midland Road, Peterborough PE3 6DP"
+    },
+    {
+      "title": "Kemp's Men of Norwich - Events.com",
+      "url": "https://discover.events.com/p/kemps-men-of-norwich-10006742693",
+      "snippet": "Morris Dancing side based in Norwich, Norfolk. We dance Cotswold Morris, and have our own tradition called 'Norwich upon …"
+    },
+    {
+      "title": "Nativity Bingo - Events.com",
+      "url": "https://discover.events.com/us/indiana/portage/p/nativity-bingo-10005723930",
+      "snippet": "Nativity Monday Night Bingo Starts at 6:00PM with earlybirds and regular games at 7:00PM. Come out and join us at 2949 …"
+    }
+  ]
+}

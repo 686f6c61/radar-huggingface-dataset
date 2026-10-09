@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "Heroine2/lingala-news-topic-classifier",
+  "slug": "heroine2-lingala-news-topic-classifier",
+  "author": "Heroine2",
+  "url": "https://huggingface.co/Heroine2/lingala-news-topic-classifier",
+  "created_at": "2026-10-09T16:53:25.000Z",
+  "updated_at": "2026-10-09T17:00:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ln"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "lingala",
+    "news-classification",
+    "topic-classification",
+    "african-languages",
+    "ln",
+    "dataset:masakhane/masakhanews",
+    "base_model:Davlan/afro-xlmr-base",
+    "base_model:finetune:Davlan/afro-xlmr-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278046724,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129293894,
+  "storage_human": "1.1 GB",
+  "base_model": "Davlan/afro-xlmr-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

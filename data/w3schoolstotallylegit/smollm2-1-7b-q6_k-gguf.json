@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "w3schoolstotallylegit/SmolLM2-1.7B-Q6_K-GGUF",
+  "slug": "w3schoolstotallylegit-smollm2-1-7b-q6_k-gguf",
+  "author": "w3schoolstotallylegit",
+  "url": "https://huggingface.co/w3schoolstotallylegit/SmolLM2-1.7B-Q6_K-GGUF",
+  "created_at": "2026-10-09T16:27:50.000Z",
+  "updated_at": "2026-10-09T16:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 1405964480,
+  "storage_human": "1.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Mrt45/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "slug": "mrt45-qwen3-6-35b-a3b-uncensored-hauhaucs-aggressive",
+  "author": "Mrt45",
+  "url": "https://huggingface.co/Mrt45/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive",
+  "created_at": "2026-10-09T01:24:20.000Z",
+  "updated_at": "2026-10-09T01:24:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 643,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 247384718848,
+  "storage_human": "247.4 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Would you be OK with your mate shagging your mum? — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/1161916/would-you-be-ok-with-your-mate-shagging-your-mum",
+      "snippet": "Nov 13, 2009 · There was one of those cartoon strips in the \"Dear Deidre\" page the other day. The gist was that this guy's mother …Read more"
+    },
+    {
+      "title": "Ever seen porn featuring someone you know? — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/1958155/ever-seen-porn-featuring-someone-you-know",
+      "snippet": "Apr 23, 2014 · When I was 13 or 14 back in the early 1990's, there was a golden day when I was flicking through a copy of Razzle …"
+    },
+    {
+      "title": "Real Estate - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/show/25/50.page",
+      "snippet": "Started by Anonymous, 09/15/2026 09:17 [ Go to page: 1, 2, 3 ]"
+    },
+    {
+      "title": "Real Estate - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/forums/show/50.page",
+      "snippet": "Apr 8, 2021 · Started by Anonymous, 08/29/2023 10:20 [ Go to page: 1, 2 ]"
+    },
+    {
+      "title": "Design and Technology Study Help Forum - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/forumdisplay.php?f=1506",
+      "snippet": "Jun 10, 2026 · Design and Technology Study Help Design and Technology, graphic design, product design, electronics, textiles and …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaydens/sn56-p2-L1b-f4920bf7",
+  "slug": "zaydens-sn56-p2-l1b-f4920bf7",
+  "author": "zaydens",
+  "url": "https://huggingface.co/zaydens/sn56-p2-L1b-f4920bf7",
+  "created_at": "2026-10-09T18:38:20.000Z",
+  "updated_at": "2026-10-09T18:38:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162417408,
+  "parameters_human": "162.4M",
+  "storage_bytes": 649681920,
+  "storage_human": "650 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zaydens (zaydens) - Hugging Face",
+      "url": "https://huggingface.co/zaydens",
+      "snippet": "LLM post-training — preference learning (DPO), reinforcement learning (GRPO), and instruction tuning. Interested in adaptive hyperparameter strategies, reward shaping, and model architecture analysis."
+    },
+    {
+      "title": "sn5601 (SN56 MODEL) - Hugging Face",
+      "url": "https://huggingface.co/sn5601",
+      "snippet": "Org profile for SN56 MODEL on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "zaydens/instruct_text-jagger_b023998 · Hugging Face",
+      "url": "https://huggingface.co/zaydens/instruct_text-jagger_b023998",
+      "snippet": "zaydens / instruct_text-jagger_b023998 like 1 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "tuly1/sn56-ai-toolkit-mirror - GitHub",
+      "url": "https://github.com/tuly1/sn56-ai-toolkit-mirror",
+      "snippet": "The ultimate training toolkit for finetuning diffusion models - tuly1/sn56-ai-toolkit-mirror"
+    },
+    {
+      "title": "zaydens/dpo_text-jagger_b5bade2a89b5a1c534bd · Hugging Face",
+      "url": "https://huggingface.co/zaydens/dpo_text-jagger_b5bade2a89b5a1c534bd",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

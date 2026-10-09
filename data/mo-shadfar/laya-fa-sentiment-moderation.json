@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mo-shadfar/laya-fa-sentiment-moderation",
+  "slug": "mo-shadfar-laya-fa-sentiment-moderation",
+  "author": "mo-shadfar",
+  "url": "https://huggingface.co/mo-shadfar/laya-fa-sentiment-moderation",
+  "created_at": "2026-10-09T14:40:36.000Z",
+  "updated_at": "2026-10-09T14:40:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "system-one",
+    "persian",
+    "customer-service",
+    "rlcd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mo, Go, Mbit/s : combien de Mo dans 1 Go ? + convertisseur",
+      "url": "https://www.echosdunet.net/reseau-internet/mega-giga",
+      "snippet": "Jul 8, 2026 · 1 Go = 1 000 Mo. Comprenez la différence entre Mo, Go et Mbit/s (stockage vs débit), combien de Go choisir selon vos …"
+    },
+    {
+      "title": "Mo (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mo_(TV_series)",
+      "snippet": "Mo (stylized with all uppercase) is an American comedy-drama television series that premiered on August 24, 2022 on Netflix. The …"
+    },
+    {
+      "title": "MO — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/MO",
+      "snippet": "Œuvres M.O. est un titre notamment porté par : M.O., album du rappeur Nelly ; M.O., une collection de livres de poche publiée par …"
+    },
+    {
+      "title": "Mo Saison 2 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie-32252/saison-50128/",
+      "snippet": "Le cœur brisé, Mo reprend ses activités et reçoit des conseils non sollicités. Une pendaison de crémaillère réveille d'anciennes …"
+    },
+    {
+      "title": "Mo - Netflix",
+      "url": "https://www.netflix.com/title/81134264",
+      "snippet": "Yusra and Sameer unveil their business idea to Mo and invite him on board. Mo later cuts a deal with Buddy that leads him to …"
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+  "schema": 1,
+  "id": "waldie/WaifuGemma4-26b-a4b-v1-5bpw-exl3",
+  "slug": "waldie-waifugemma4-26b-a4b-v1-5bpw-exl3",
+  "author": "waldie",
+  "url": "https://huggingface.co/waldie/WaifuGemma4-26b-a4b-v1-5bpw-exl3",
+  "created_at": "2026-10-09T14:46:37.000Z",
+  "updated_at": "2026-10-09T15:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "ru",
+    "pt",
+    "id",
+    "ar",
+    "th",
+    "fr",
+    "de",
+    "uk",
+    "vi",
+    "ja",
+    "ko",
+    "zh",
+    "tr",
+    "it",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "moe",
+    "conversational",
+    "roleplay",
+    "role-play",
+    "character",
+    "rlhf",
+    "grpo",
+    "reward-model",
+    "human-preference",
+    "arena",
+    "multilingual",
+    "text-generation",
+    "en",
+    "es",
+    "ru",
+    "pt",
+    "id",
+    "ar",
+    "th",
+    "fr",
+    "de",
+    "uk",
+    "vi",
+    "ja",
+    "ko",
+    "zh",
+    "tr",
+    "it",
+    "pl",
+    "arxiv:2310.03716",
+    "arxiv:2303.06135",
+    "arxiv:2505.14946",
+    "arxiv:2502.09082",
+    "arxiv:2601.21459",
+    "arxiv:2402.03300",
+    "arxiv:2607.02770",
+    "base_model:hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+    "base_model:quantized:hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10120237390,
+  "parameters_human": "10.12B",
+  "storage_bytes": 20294333555,
+  "storage_human": "20.3 GB",
+  "base_model": "hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "IFEval",
+      "metric": "Prompt-level Strict",
+      "value": 89.09
+    },
+    {
+      "task": null,
+      "dataset": "GSM8K",
+      "metric": "Acc",
+      "value": 96.89
+    },
+    {
+      "task": null,
+      "dataset": "MATH-500",
+      "metric": "Acc",
+      "value": 92.8
+    },
+    {
+      "task": null,
+      "dataset": "MMLU",
+      "metric": "Acc",
+      "value": 88.59
+    },
+    {
+      "task": null,
+      "dataset": "C-Eval",
+      "metric": "Acc",
+      "value": 78.97
+    },
+    {
+      "task": null,
+      "dataset": "C-MMLU",
+      "metric": "Acc",
+      "value": 79.56
+    },
+    {
+      "task": null,
+      "dataset": "ARC",
+      "metric": "Acc",
+      "value": 98.39
+    },
+    {
+      "task": null,
+      "dataset": "HellaSwag",
+      "metric": "Acc",
+      "value": 79.78
+    },
+    {
+      "task": null,
+      "dataset": "Winogrande",
+      "metric": "Acc",
+      "value": 85.4
+    },
+    {
+      "task": null,
+      "dataset": "TruthfulQA",
+      "metric": "MC Acc",
+      "value": 75.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "FirecrackerSharp",
+      "url": "https://firecrackersharp.github.io/",
+      "snippet": "FirecrackerSharp is a C# SDK for the innovative Firecracker microVM hypervisor developed by Amazon. It allows developers to: To …"
+    },
+    {
+      "title": "FirecrackerSharp · GitHub",
+      "url": "https://github.com/FirecrackerSharp",
+      "snippet": "This organization was marked as archived by an administrator on Nov 20, 2024. It is no longer maintained."
+    },
+    {
+      "title": "GitHub - firecracker-microvm/firecracker: Secure and fast microVMs …",
+      "url": "https://github.com/firecracker-microvm/firecracker",
+      "snippet": "Firecracker runs workloads in lightweight virtual machines, called microVMs, which combine the security and isolation properties …"
+    },
+    {
+      "title": "Firecracker – Lightweight Virtualization for Serverless Computing | AWS ...",
+      "url": "https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/",
+      "snippet": "Nov 26, 2018 · Today I would like to tell you about Firecracker, a new virtualization technology that makes use of KVM."
+    },
+    {
+      "title": "NuGet Gallery | FirecrackerSharp 0.6.0-beta",
+      "url": "https://www.nuget.org/packages/FirecrackerSharp/",
+      "snippet": "FirecrackerSharp is a C# SDK for the innovative Firecracker microVM hypervisor developed by Amazon. It provides .NET developers …"
+    }
+  ]
+}

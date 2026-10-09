@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "edgefloor/meta-encoder-mlx-8bit",
+  "slug": "edgefloor-meta-encoder-mlx-8bit",
+  "author": "edgefloor",
+  "url": "https://huggingface.co/edgefloor/meta-encoder-mlx-8bit",
+  "created_at": "2026-10-09T16:13:34.000Z",
+  "updated_at": "2026-10-09T16:41:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "mlx-vlm",
+    "metaencoder",
+    "multimodal",
+    "embeddings",
+    "quantized",
+    "8-bit",
+    "feature-extraction",
+    "base_model:facebook/meta-encoder",
+    "base_model:quantized:facebook/meta-encoder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 33469111245,
+  "storage_human": "33.5 GB",
+  "base_model": "facebook/meta-encoder",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kx-Huang/ChatGPT-on-WeChat: ️ Deploy GPT-4o …",
+      "url": "https://github.com/kx-Huang/ChatGPT-on-WeChat",
+      "snippet": "Sep 24, 2022 · Additionally, GPT-4o has the best vision and performance across non-English languages of any of our models. GPT …"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 276 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "chat GPT 为什么在购物平台上被封杀了? - 知乎",
+      "url": "https://www.zhihu.com/question/622207954",
+      "snippet": "chat GPT 为什么在购物平台上被封杀了? 我当时淘宝上买的号，现在想要在淘宝上买个GPT-4的共用号，发现购物平台上只有一些相 …"
+    }
+  ]
+}

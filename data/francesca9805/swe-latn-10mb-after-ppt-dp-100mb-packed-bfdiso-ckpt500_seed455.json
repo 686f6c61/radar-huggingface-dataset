@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+  "slug": "francesca9805-swe-latn-10mb-after-ppt-dp-100mb-packed-bfdiso-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+  "created_at": "2026-10-08T06:56:20.000Z",
+  "updated_at": "2026-10-09T18:59:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+    "base_model:finetune:francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 397,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 6256113320,
+  "storage_human": "6.3 GB",
+  "base_model": "francesca9805/swe-latn-10mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox Decal IDs [24K+ Image Codes]",
+      "url": "https://bloxodes.com/catalog/roblox-decal-ids",
+      "snippet": "Jun 26, 2026 · Find Roblox decal IDs for images, logos, memes, faces, signs, and builds. Search visual previews, creators, dates, …"
+    },
+    {
+      "title": "Yumeko - Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/6714071059/Yumeko",
+      "snippet": "Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other …"
+    },
+    {
+      "title": "Yumeko | Roblox Item - Rolimon's",
+      "url": "https://www.rolimons.com/item/18193284977",
+      "snippet": "Jun 24, 2024 · Yumeko is a Roblox UGC Face Accessory created by the group Face Emporium. It's for sale for 90 Robux. Created …"
+    },
+    {
+      "title": "Visual Effects / Textured Assets - Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/category/visual-effects/materials-and-textures",
+      "snippet": "Discover millions of assets made by the Roblox community to accelerate any creation task."
+    },
+    {
+      "title": "Yumeko | Roblox Item - Rolimon's",
+      "url": "https://www.rolimons.com/item/100529479832576",
+      "snippet": "Oct 5, 2024 · Yumeko is a Roblox UGC Back Accessory created by the group Anime Accessory Hub. It's for sale for 140 Robux. …"
+    }
+  ]
+}

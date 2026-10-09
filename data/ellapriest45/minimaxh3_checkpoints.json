@@ -5,7 +5,7 @@
   "author": "EllaPriest45",
   "url": "https://huggingface.co/EllaPriest45/MinimaxH3_Checkpoints",
   "created_at": "2026-08-06T18:00:57.000Z",
-  "updated_at": "2026-10-03T16:10:07.000Z",
+  "updated_at": "2026-10-09T11:49:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 229,
+  "downloads_30d": 235,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 295231094011,
-  "storage_human": "295.2 GB",
+  "storage_bytes": 237475291952,
+  "storage_human": "237.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

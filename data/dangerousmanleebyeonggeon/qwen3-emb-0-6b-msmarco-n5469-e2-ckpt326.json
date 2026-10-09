@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dangerousmanleebyeonggeon/qwen3-emb-0.6b-msmarco-n5469-e2-ckpt326",
+  "slug": "dangerousmanleebyeonggeon-qwen3-emb-0-6b-msmarco-n5469-e2-ckpt326",
+  "author": "dangerousmanleebyeonggeon",
+  "url": "https://huggingface.co/dangerousmanleebyeonggeon/qwen3-emb-0.6b-msmarco-n5469-e2-ckpt326",
+  "created_at": "2026-10-09T15:07:43.000Z",
+  "updated_at": "2026-10-09T15:07:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "embedding",
+    "ms-swift",
+    "infonce",
+    "training-data-ablation",
+    "sentence-similarity",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203011981,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SchoolTeasers",
+      "url": "https://schoolteasers.com/",
+      "snippet": "Artistic Collegiate Imagry Since 2000 * Dorissa"
+    },
+    {
+      "title": "France's school uniform experiment unravels with only mixed results",
+      "url": "https://www.rfi.fr/en/france/20260906-france-s-school-uniform-experiment-unravels-with-only-mixed-results-2",
+      "snippet": "Sep 6, 2026 · Wider rollout was envisaged for 2026 if results proved convincing. Despite high hopes, local authorities have been …"
+    },
+    {
+      "title": "Adults - Films - La Petite Ecole Française",
+      "url": "https://thelittlefrenchschool.com/adults-dvds/",
+      "snippet": "DIVX XVID AVI, WORK ON PAL & NTSC TVS FULL HD CONVERSION."
+    },
+    {
+      "title": "2026 French lycée protests - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_French_lyc%C3%A9e_protests",
+      "snippet": "Since 18 September 2026, a series of demonstrations and blockades by lycée students began in the Créteil academy in the suburbs …"
+    },
+    {
+      "title": "France’s Education Minister in favour of schools trying out uniforms",
+      "url": "https://www.connexionfrance.com/news/frances-education-minister-in-favour-of-schools-trying-out-uniforms/138998",
+      "snippet": "Sep 4, 2023 · The French national school system does not require pupils to wear uniforms, unlike many private establishments, such …"
+    }
+  ]
+}

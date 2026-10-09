@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Dioleti/xlm-roberta-base-ner-hrl",
+  "slug": "dioleti-xlm-roberta-base-ner-hrl",
+  "author": "Dioleti",
+  "url": "https://huggingface.co/Dioleti/xlm-roberta-base-ner-hrl",
+  "created_at": "2026-10-09T15:11:13.000Z",
+  "updated_at": "2026-10-09T15:27:53.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "xlm-roberta",
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277460491,
+  "parameters_human": "277.5M",
+  "storage_bytes": 2224868389,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://fr-fr.facebook.com/messages/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/1/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Migration des Jeux instantanés de l’interface des ... - Facebook",
+      "url": "https://fr-fr.facebook.com/fbgaminghome/blog/instant-games-permissions-interface-migration/",
+      "snippet": "À partir de septembre, nous migrerons automatiquement tous les Jeux instantanés de l’interface actuelle des autorisations vers …"
+    },
+    {
+      "title": "Créer une Page Facebook en 5 étapes | Meta for Business",
+      "url": "https://fr-fr.facebook.com/business/learn/video/create-facebook-page/?content_id=WU4y7rUpr4ubsy1&notif_id=1631844803810630&notif_t=aymt_ads_notification_tip",
+      "snippet": "Regardez cette vidéo pour découvrir comment créer une Page professionnelle Facebook en 5 étapes. Créez un nom pour votre …"
+    },
+    {
+      "title": "Novak Djokovic s’impose aussi sur les réseaux grâce à ... - Facebook",
+      "url": "https://fr-fr.facebook.com/formedia/success-stories/novak-djokovic-scores-a-social-victory-through-refined-video-strategy-and-smart-data-analytics/",
+      "snippet": "Novak Djokovic et son équipe avaient défini les objectifs suivants sur les réseaux sociaux : accroître les interactions, publier …"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "Seastell/example",
+  "slug": "seastell-example",
+  "author": "Seastell",
+  "url": "https://huggingface.co/Seastell/example",
+  "created_at": "2026-10-09T01:06:16.000Z",
+  "updated_at": "2026-10-09T01:06:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "collie",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 595264,
+  "parameters_human": "595264",
+  "storage_bytes": 2258569,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

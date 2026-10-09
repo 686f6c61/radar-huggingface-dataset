@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "FluidInference/granite-embedding-30m-sparse-coreml",
+  "slug": "fluidinference-granite-embedding-30m-sparse-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/granite-embedding-30m-sparse-coreml",
+  "created_at": "2026-10-09T01:58:56.000Z",
+  "updated_at": "2026-10-09T02:08:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "coremltools",
+  "languages": [],
+  "tags": [
+    "coremltools",
+    "coreml",
+    "sparse",
+    "splade",
+    "sparse-encoder",
+    "information-retrieval",
+    "evoke",
+    "apple-silicon",
+    "neural-engine",
+    "feature-extraction",
+    "base_model:ibm-granite/granite-embedding-30m-sparse",
+    "base_model:quantized:ibm-granite/granite-embedding-30m-sparse",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243851363,
+  "storage_human": "244 MB",
+  "base_model": "ibm-granite/granite-embedding-30m-sparse",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Directory | Q4KM.ai",
+      "url": "https://q4km.ai/models/",
+      "snippet": "Browse 5873 AI models with technical overviews, benchmarks, hardware requirements, and use cases. Filter by pipeline type, author, and license."
+    }
+  ]
+}

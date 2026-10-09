@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jsbzzz/colab_train_1",
+  "slug": "jsbzzz-colab_train_1",
+  "author": "jsbzzz",
+  "url": "https://huggingface.co/jsbzzz/colab_train_1",
+  "created_at": "2026-10-09T16:21:33.000Z",
+  "updated_at": "2026-10-09T16:21:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:IMCON/OMX_LeRobot_20261009_190057",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations caritatives et bien d'autresRead more"
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "formation et astuces - Utiliser Google Workspace",
+      "url": "https://workspace.google.fr/intl/fr/training/",
+      "snippet": "Notre centre de formation est là pour vous aider à exploiter tout le potentiel de Workspace. Découvrez comment utiliser Google …"
+    }
+  ]
+}

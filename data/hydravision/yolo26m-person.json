@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hydravision/yolo26m-person",
+  "slug": "hydravision-yolo26m-person",
+  "author": "hydravision",
+  "url": "https://huggingface.co/hydravision/yolo26m-person",
+  "created_at": "2026-10-09T18:21:52.000Z",
+  "updated_at": "2026-10-09T18:21:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "person-detection",
+    "computer-vision",
+    "hydravision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43994009,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultralytics/YOLO26 · Hugging Face",
+      "url": "https://huggingface.co/Ultralytics/YOLO26",
+      "snippet": "Our key integrations with leading AI platforms extend the functionality of Ultralytics&#x27; offerings, enhancing tasks like dataset labeling, training, visualization, and model management. Discover how Ultralytics, in collaboration with partners like Weights & Biases, Comet ML, Roboflow, and Intel OpenVINO, can optimize your AI workflow."
+    },
+    {
+      "title": "YOLO26m Model by Myra - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/myra/yolo26/yolo26m",
+      "snippet": "YOLO26m model from the YOLO26 project by Myra. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics YOLO26",
+      "url": "https://docs.ultralytics.com/models/yolo26",
+      "snippet": "YOLO26 from Ultralytics delivers unified, real-time, end-to-end vision models optimized for accurate and efficient deployment."
+    },
+    {
+      "title": "YOLO26m Pose Model by Dhyaa Feriska - platform.ultralytics.com",
+      "url": "https://platform.ultralytics.com/dhyaa-feriska/yolo26/yolo26m-pose",
+      "snippet": "YOLO26m Pose model from the YOLO26 project by Dhyaa Feriska. View training metrics, predictions, and deploy on Ultralytics Platform."
+    },
+    {
+      "title": "Ultralytics YOLO26: Unified Real-Time End-to-End Vision Models",
+      "url": "https://arxiv.org/html/2606.03748v1",
+      "snippet": "We present Ultralytics YOLO26, a unified real-time vision model family that addresses these limitations through coordinated architecture and training advances. Architecturally, YOLO26 uses a dual-head design for native NMS-free end-to-end inference and removes DFL entirely, yielding a lighter head with unconstrained regression range."
+    }
+  ]
+}

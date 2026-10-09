@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JackyHoCL/qwen3-asr-yue-lora",
+  "slug": "jackyhocl-qwen3-asr-yue-lora",
+  "author": "JackyHoCL",
+  "url": "https://huggingface.co/JackyHoCL/qwen3-asr-yue-lora",
+  "created_at": "2026-10-09T01:27:06.000Z",
+  "updated_at": "2026-10-09T01:27:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-ASR-1.7B",
+    "lora",
+    "asr",
+    "cantonese",
+    "yue-HK",
+    "preview",
+    "text-generation",
+    "yue",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TUSHY RAW: Hardcore Anal Sex Videos",
+      "url": "https://www.tushyraw.com/",
+      "snippet": "1 day ago · Exclusive hardcore anal sex videos featuring beautiful performers and pornstars. Beautiful performers fucked in the ass …"
+    },
+    {
+      "title": "TUSHY RAW - Official TushyRaw.com Porn Tube",
+      "url": "https://tushyraw.tube/",
+      "snippet": "Sep 13, 2026 · Watch gorgeous performers and pornstars get their tight asses stretched and pounded in high-quality raw anal porn. …"
+    },
+    {
+      "title": "TUSHY RAW: Pornstars in Hardcore Anal Sex Videos",
+      "url": "https://www.tushyraw.com/performers",
+      "snippet": "2 days ago · Browse the full list of pornstars and performers featured at TUSHY RAW in HD anal porn videos."
+    },
+    {
+      "title": "TUSHY RAW: Real Anal Sex Videos",
+      "url": "https://www.tushyraw.com/videos",
+      "snippet": "2 days ago · Anal sex videos with beautiful performers and pornstars being fucked in the ass. TUSHY RAW features famous …"
+    },
+    {
+      "title": "TUSHY RAW: Intense 4K Videos Featuring Raw Passion from Behind",
+      "url": "https://www.tushyraw.com/sfw",
+      "snippet": "2 days ago · TUSHY RAW delivers powerful scenes with stunning performers exploring their wild side. Shot in striking 4K, …"
+    }
+  ]
+}

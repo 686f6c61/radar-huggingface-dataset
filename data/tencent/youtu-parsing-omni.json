@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "tencent/Youtu-Parsing-Omni",
+  "slug": "tencent-youtu-parsing-omni",
+  "author": "tencent",
+  "url": "https://huggingface.co/tencent/Youtu-Parsing-Omni",
+  "created_at": "2026-10-09T06:42:18.000Z",
+  "updated_at": "2026-10-09T09:43:48.000Z",
+  "license": "youtu-parsing",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "youtu_vita",
+    "text-generation",
+    "document-parsing",
+    "ocr",
+    "omni",
+    "multimodal",
+    "audio",
+    "video",
+    "custom_code",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2601.20430",
+    "arxiv:2601.19798",
+    "arxiv:2512.24618",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 50,
+  "trending_score": 32,
+  "parameters": 5334472192,
+  "parameters_human": "5.33B",
+  "storage_bytes": 10672602625,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Tencent",
+      "url": "https://www.tencent.com/",
+      "snippet": "Sep 24, 2026 · Tencent is: Three friends making dinner plans. And over a billion monthly active users. Learn more about Tencent for …Read more"
+    },
+    {
+      "title": "Tencent — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent ... La Tencent Tower, qui abrite le siège de Tencent. Tencent Holdings Limited est une entreprise chinoise créée en 1998, …"
+    },
+    {
+      "title": "Tencent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tencent",
+      "snippet": "Tencent (Chinese: 腾讯; pinyin: Téngxùn) is a Chinese multinational technology conglomerate and holding company headquartered …"
+    },
+    {
+      "title": "Tencent : tout savoir sur le géants chinois et ses activités",
+      "url": "https://www.lebigdata.fr/tencent-tout-savoir",
+      "snippet": "Jul 25, 2026 · Fondée en 1998 par Pony Ma, Tencent Holdings est une entreprise technologique multinationale qui conçoit et …"
+    },
+    {
+      "title": "Tencent - Tencent 腾讯",
+      "url": "https://www.tencent.com/en-us/about.html.html",
+      "snippet": "About Us Tencent is a world-leading internet and technology company that develops innovative products and services to improve the …"
+    }
+  ]
+}

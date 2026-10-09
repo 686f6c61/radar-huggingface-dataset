@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "oyekartikrukja/fake-news-detector-bert",
+  "slug": "oyekartikrukja-fake-news-detector-bert",
+  "author": "oyekartikrukja",
+  "url": "https://huggingface.co/oyekartikrukja/fake-news-detector-bert",
+  "created_at": "2026-10-09T01:04:15.000Z",
+  "updated_at": "2026-10-09T01:04:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437958624,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek Harness Tutorial: Put It on a VPS in 10 Minutes",
+      "url": "https://moelueker.com/blog/deepseek-harness-vps-setup",
+      "snippet": "Sep 17, 2026 · I moved DeepSeek Harness off my laptop onto an $8 server. Here is the one-click install, the plugin step everyone …"
+    },
+    {
+      "title": "How to deploy and use DeepSeek Harness on a Hostinger VPS",
+      "url": "https://www.hostinger.com/support/how-to-deploy-and-use-deepseek-harness-on-a-hostinger-vps/",
+      "snippet": "You can install the DeepSeek Harness template in hPanel, access the web interface using server credentials, configure custom AI …"
+    },
+    {
+      "title": "How to Host DeepSeek Harness on Hostinger VPS",
+      "url": "https://www.youtube.com/watch?v=9vSVvdA7YMY",
+      "snippet": "In this video, I’ll show you how to set up DeepSeek Harness on Hostinger VPS step by step, connect it to OpenRouter, add your …"
+    },
+    {
+      "title": "DeepSeek Harness Installation & Getting Started Guide",
+      "url": "https://deepseekharness.dev/tutorials/quickstart",
+      "snippet": "Rooted in the \"Agent = Model + Harness\" engineering paradigm, it equips Large Language Models with safe shell execution, …"
+    },
+    {
+      "title": "GitHub - AIcivilization/dsh-vps: One-command DeepSeek Harness …",
+      "url": "https://github.com/AIcivilization/dsh-vps",
+      "snippet": "6 days ago · DeepSeek Harness (DSH) trusts the operator's own browser only: its privileged interfaces — settings, API keys, plugin …"
+    }
+  ]
+}

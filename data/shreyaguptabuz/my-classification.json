@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreyaguptabuz/my-classification",
+  "slug": "shreyaguptabuz-my-classification",
+  "author": "shreyaguptabuz",
+  "url": "https://huggingface.co/shreyaguptabuz/my-classification",
+  "created_at": "2026-10-09T18:12:54.000Z",
+  "updated_at": "2026-10-09T18:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Getting started with Classification - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-classification/",
+      "snippet": "Classification works by training a model on labeled data so it can learn patterns and predict the correct class for new inputs. The main steps involved are: Data Collection: Start with a dataset where each data point has a correct label. Feature Extraction: Identify important features such as color, shape or texture that help distinguish classes."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Top Machine Learning Classification Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/top-machine-learning-algorithms-for-classification/",
+      "snippet": "Machine learning classification algorithms are essential tools used to categorize data into predefined classes based on learned patterns. From simple linear models to advanced neural networks, these algorithms are used in applications like spam detection, image recognition, sentiment analysis and medical diagnosis."
+    },
+    {
+      "title": "What are classification models? - IBM",
+      "url": "https://www.ibm.com/think/topics/classification-models",
+      "snippet": "Classification models are a type of predictive modeling that organizes data into predefined classes according to feature values. Classification models are a type of machine learning model that divides data points into predefined groups called classes."
+    },
+    {
+      "title": "My Journey into AI: Building a Car Image Classification Model ... - Medium",
+      "url": "https://medium.com/@abdullah.masood12/my-journey-into-ai-building-a-car-image-classification-model-with-google-teachable-machine-2f8e240592dd",
+      "snippet": "Every AI expert starts with a simple model. This car classification project marks the beginning of my journey toward building more advanced intelligent systems."
+    }
+  ]
+}

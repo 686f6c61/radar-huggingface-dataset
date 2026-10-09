@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Vyvo/drifting-tts-tr-dacvae",
+  "slug": "vyvo-drifting-tts-tr-dacvae",
+  "author": "Vyvo",
+  "url": "https://huggingface.co/Vyvo/drifting-tts-tr-dacvae",
+  "created_at": "2026-10-09T01:37:20.000Z",
+  "updated_at": "2026-10-09T01:37:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "drifting-tts",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "drifting-tts",
+    "text-to-speech",
+    "turkish",
+    "one-step",
+    "drifting",
+    "audio-vae",
+    "dacvae",
+    "tr",
+    "arxiv:2602.04770",
+    "base_model:facebook/dacvae-watermarked",
+    "base_model:finetune:facebook/dacvae-watermarked",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 593558972,
+  "storage_human": "594 MB",
+  "base_model": "facebook/dacvae-watermarked",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeoGebra - the world’s favorite, free math tools used by over 100 ...",
+      "url": "https://www.geogebra.org/",
+      "snippet": "Is GeoGebra free? GeoGebra’s calculators, apps, and educational resources are free for non-commercial use. This includes most …"
+    },
+    {
+      "title": "Calculadora 3D - GeoGebra",
+      "url": "https://www.geogebra.org/3d?lang=es",
+      "snippet": "Graficador 3D gratis de GeoGebra: grafica funciones 3D, representa superficies, construye sólidos ¡y mucho más!"
+    },
+    {
+      "title": "Geometría - GeoGebra",
+      "url": "https://mat.geogebra.org/geometry?lang=es",
+      "snippet": "Constructor geométrico en línea, gratis e interactivo, de GeoGebra: crea triángulos, círculos, ángulos, transformaciones, ¡y mucho más!"
+    },
+    {
+      "title": "GeoGebra Classic",
+      "url": "https://mat.geogebra.org/calculator?lang=en",
+      "snippet": "Free online scientific calculator from GeoGebra: perform calculations with fractions, statistics and exponential functions, logarithms, …"
+    },
+    {
+      "title": "GeoGebra Calculators and Apps - Free Downloads",
+      "url": "https://beta.geogebra.org/download",
+      "snippet": "GeoGebra Apps Explore our free calculators and apps for Math and Science, available for all devices and operating systems. Get …"
+    }
+  ]
+}

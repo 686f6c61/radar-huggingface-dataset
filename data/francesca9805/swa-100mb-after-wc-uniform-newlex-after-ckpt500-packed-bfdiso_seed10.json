@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "slug": "francesca9805-swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swa-100mb-after-wc-uniform-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "created_at": "2026-10-09T08:37:54.000Z",
+  "updated_at": "2026-10-09T19:16:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9468977781,
+  "storage_human": "9.5 GB",
+  "base_model": "francesca9805/ppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed ...",
+      "url": "https://huggingface.co/francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+      "snippet": "Instructions to use francesca9805/eus-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+      "url": "https://friendli.ai/models/francesca9805/swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+      "snippet": "Deploy swa-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed ...",
+      "url": "https://huggingface.co/francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
+      "snippet": "Instructions to use francesca9805/tur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "Ppt Wc Uniform Newlex Swa After 100mb Packed Bfdiso Seed10 by ...",
+      "url": "https://llm-explorer.com/model/francesca9805%2Fppt-wc-uniform-newlex-swa-after-100mb-packed-bfdiso_seed10,6jSGieoixHpmGRdNgO5QLk",
+      "snippet": "Ppt Wc Uniform Newlex Swa After 100mb Packed Bfdiso Seed10 is an open-source 86.5m LLM by francesca9805. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Tur 100mb After Wc Uniform Newlex Before Ckpt500 Packed Bfdiso Seed10 ...",
+      "url": "https://llm-explorer.com/model/francesca9805%2Ftur-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10,4DLoBa7wgbPEoviH1byDDP",
+      "snippet": "Tur 100mb After Wc Uniform Newlex Before Ckpt500 Packed Bfdiso Seed10 is an open-source 124.8m LLM by francesca9805. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

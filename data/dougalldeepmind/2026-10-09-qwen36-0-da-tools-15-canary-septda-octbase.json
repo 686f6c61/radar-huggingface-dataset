@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase",
+  "slug": "dougalldeepmind-2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-septda-octbase",
+  "created_at": "2026-10-09T17:57:46.000Z",
+  "updated_at": "2026-10-09T17:58:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ladyxena - Escort burette et escortegirl à lady xena!",
+      "url": "https://ladyxena.eu/terms-conditions/",
+      "snippet": "Ladyxena © 2012 - 2026 | Plan du site | Termes & conditions | Politique de confidentialité | Contact"
+    },
+    {
+      "title": "Lady Ena (@lady__enaa) • Instagram photos and videos",
+      "url": "https://www.instagram.com/lady__enaa/",
+      "snippet": "See photos and videos from friends on Instagram, and discover other accounts you'll love."
+    },
+    {
+      "title": "Lady Ena (@msladyena) • Instagram photos and videos",
+      "url": "https://www.instagram.com/msladyena/",
+      "snippet": "119 Followers, 83 Following, 75 Posts - Lady Ena (@msladyena) on Instagram: \"\""
+    },
+    {
+      "title": "lady_ena_ - Twitch",
+      "url": "https://www.twitch.tv/lady_ena_?lang=fr",
+      "snippet": "エナ 80s style from France 🇨🇵 streameuse a ses heures perdues, psychologue des personnes brisés, c'est elle, eh oui , ena la plus …"
+    },
+    {
+      "title": "Lady Ena - Facebook",
+      "url": "https://www.facebook.com/msladyena/",
+      "snippet": "May 8, 2026 · Lady Ena. 378 followers. Musical Artist - Live music, variety of Old School, R & B, Jazz, Pop, Reggae, Soca & Blues."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chloeyoung13/classification-tiny",
+  "slug": "chloeyoung13-classification-tiny",
+  "author": "chloeyoung13",
+  "url": "https://huggingface.co/chloeyoung13/classification-tiny",
+  "created_at": "2026-10-09T16:12:47.000Z",
+  "updated_at": "2026-10-09T16:12:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KFC France - Site Officiel",
+      "url": "https://www.kfc.fr/",
+      "snippet": "Application KFC FR Coupons Offre étudiants Informations légales Mentions légales CGU Click & Collect CGU Fidélité Conditions …Read more"
+    },
+    {
+      "title": "Restaurant KFC Lille Roubaix - KFC France",
+      "url": "https://www.kfc.fr/nos-restaurants/kfc-lille-roubaix",
+      "snippet": "Des fans de poulet à Roubaix ? Ça tombe bien, votre restaurant KFC Lille Roubaix vous ouvre ses portes du lundi au dimanche pour …"
+    },
+    {
+      "title": "Privacy Center",
+      "url": "https://privacy.kfc.fr/",
+      "snippet": "Learn about how we handle personal data, and take action on your privacy preferences."
+    },
+    {
+      "title": "KFC France",
+      "url": "https://www.kfc.fr/nos-restaurants/kfc-vitry-sur-seine",
+      "snippet": "KFC Vitry-sur-Seine Noté 3,6/5 34 avenue Youri Gagarine Vitry Sur Seine 94400 Vitry Sur Seine 01 43 91 42 88"
+    },
+    {
+      "title": "KFC France",
+      "url": "https://www.kfc.fr/nos-restaurants/kfc-mantes",
+      "snippet": "KFC Mantes Noté 4,3/5 3 rue Jean Ferrat Mantes La Ville 78711 Mantes La Ville 01 30 42 68 60"
+    }
+  ]
+}

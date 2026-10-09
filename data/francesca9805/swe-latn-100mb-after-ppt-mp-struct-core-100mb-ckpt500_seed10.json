@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "slug": "francesca9805-swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "created_at": "2026-10-09T17:07:35.000Z",
+  "updated_at": "2026-10-09T19:26:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10",
+    "base_model:finetune:francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 10483138344,
+  "storage_human": "10.5 GB",
+  "base_model": "francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francesca9805/swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 ...",
+      "url": "https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10",
+      "snippet": "Instructions to use francesca9805/swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10 · Hugging Face",
+      "url": "https://huggingface.co/francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10",
+      "snippet": "Instructions to use francesca9805/swe-latn-100mb-ppt-mp-struct-100mb_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10",
+      "url": "https://friendli.ai/models/francesca9805/swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10",
+      "snippet": "Deploy swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Swe Latn 100mb After Ppt Mp Struct 100mb Ckpt500 Seed455",
+      "url": "https://free2aitools.com/model/francesca9805/swe-latn-100mb-after-ppt-mp-struct-100mb-ckpt500_seed455",
+      "snippet": "Registry entry for model Swe Latn 100mb After Ppt Mp Struct 100mb Ckpt500 Seed455; source metadata pending."
+    },
+    {
+      "title": "Eng Latn 100mb Ppt Mp Struct 100mb Seed10 by francesca9805",
+      "url": "https://llm-explorer.com/model/francesca9805%2Feng-latn-100mb-ppt-mp-struct-100mb_seed10,2E2jc1FSRKLeqBKJC5dLDV",
+      "snippet": "Eng Latn 100mb Ppt Mp Struct 100mb Seed10 is an open-source 124.8m LLM by francesca9805. VRAM 0.2GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    }
+  ]
+}

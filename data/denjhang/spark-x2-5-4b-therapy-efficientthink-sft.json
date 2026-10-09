@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "denjhang/Spark-X2.5-4B-Therapy-EfficientThink-SFT",
+  "slug": "denjhang-spark-x2-5-4b-therapy-efficientthink-sft",
+  "author": "denjhang",
+  "url": "https://huggingface.co/denjhang/Spark-X2.5-4B-Therapy-EfficientThink-SFT",
+  "created_at": "2026-10-09T16:16:47.000Z",
+  "updated_at": "2026-10-09T17:09:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "spark",
+    "spark-x2.5",
+    "efficient-thinking",
+    "therapy",
+    "sft",
+    "lora",
+    "agent",
+    "on-device",
+    "zh",
+    "en",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:adapter:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 4375021120,
+  "storage_human": "4.4 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "全部分类 | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/categories",
+      "snippet": "tophotfashion - Supplier Product Catalog Whatsapp：‪‬‪+852 51487905 Wechat：TopHot99 https://discord.gg/tophot"
+    },
+    {
+      "title": "Home | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/albums?lang=en-US",
+      "snippet": "Risk warning: The content of pictures and videos within the pages of this site are for display use only."
+    },
+    {
+      "title": "首页 | tophotfashion | Supplier Product Catalog",
+      "url": "https://tophotfashion.x.yupoo.com/",
+      "snippet": "风险提示：本站页面内图片、视频内容仅做展示使用。 如因上传、制作的内容，或者其他行为涉及侵犯其他任何第三方合法权益的， …"
+    },
+    {
+      "title": "Home | NO.1 FACTORY | Factory - Yupoo",
+      "url": "https://no1factory.x.yupoo.com/albums?lang=en",
+      "snippet": "Recently, a number of low price scams have been found in Italy. No1Factory confirms again that all our business accounts are …"
+    },
+    {
+      "title": "TopHot! | 分类 | Maindex-Shoes | Supplier Product Catalog - Yupoo",
+      "url": "https://maindex.x.yupoo.com/categories/4317364",
+      "snippet": "根据选择的图片在对方的相册中搜索对应的相似图片点击下方按钮试试吧."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Ursaring",
+  "slug": "ryanham1lton-ursaring",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Ursaring",
+  "created_at": "2026-10-09T16:52:49.000Z",
+  "updated_at": "2026-10-09T16:53:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117685158,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Story Behind Trump’s War.gov Ad | Vanity Fair",
+      "url": "https://www.vanityfair.com/story/trump-war-gov-ad",
+      "snippet": "Jul 10, 2026 · A recent Department of Defense commercial that aired during Love Island episodes and Disclosure Day screenings …"
+    },
+    {
+      "title": "Pentagon Global Advert Billboard - YouTube",
+      "url": "https://www.youtube.com/watch?v=aZpNqzt3zYA",
+      "snippet": ""
+    },
+    {
+      "title": "Watch the Pentagon's new anti-woke ad: 'No more gender confusion'",
+      "url": "https://www.youtube.com/watch?v=5hjyt9QRA20",
+      "snippet": "May 26, 2025 · The DOD released two new clips in the past 24 hours, displaying military strength, including paratroopers conducting …"
+    },
+    {
+      "title": "The Pentagon's Ad-Tracker Problem: How Adversaries Bought a Map …",
+      "url": "https://www.gadgetreview.com/the-pentagons-ad-tracker-problem-how-adversaries-bought-a-map-to-u-s-troops",
+      "snippet": "Sep 4, 2026 · Pentagon ad tracker threat explained: adversaries legally bought mobile ad data to locate U.S. troops, prompting each …"
+    },
+    {
+      "title": "A new Pentagon ad sells war like an action movie - PressReader",
+      "url": "https://www.pressreader.com/usa/the-boston-globe/20260924/281689736730335",
+      "snippet": "Sep 24, 2026 · Unlike the oftenquote­d “War is hell” of Civil War General William Tecumseh Sherman, this ad is saying “War is a …"
+    }
+  ]
+}

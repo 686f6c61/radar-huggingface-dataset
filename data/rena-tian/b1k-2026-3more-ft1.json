@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Rena-Tian/b1k-2026-3more-ft1",
+  "slug": "rena-tian-b1k-2026-3more-ft1",
+  "author": "Rena-Tian",
+  "url": "https://huggingface.co/Rena-Tian/b1k-2026-3more-ft1",
+  "created_at": "2026-10-09T01:44:37.000Z",
+  "updated_at": "2026-10-09T03:11:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "pi0.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12647983649,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Renault France - Achat de voitures neuves - Site Officiel",
+      "url": "https://www.renault.fr/",
+      "snippet": "Bienvenue sur le site officiel de Renault France. Découvrez l'ensemble de la gamme : véhicules particuliers, électriques, hybrides et …"
+    },
+    {
+      "title": "Rena — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rena",
+      "snippet": "Le MV Rena est le nom d'un porte-conteneurs échoué en octobre 2011 en Nouvelle-Zélande, causant une importante marée noire."
+    },
+    {
+      "title": "Rena - Daddy (Clip Officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=9L6NtO9HsLQ",
+      "snippet": "Dec 23, 2024 · Nouveau single « Daddy» disponible maintenant : https://bfan.link/daddy-9Retrouvez Rena sur les réseaux sociaux …"
+    },
+    {
+      "title": "Rena - PEMBE (Clip officiel) - YouTube",
+      "url": "https://www.youtube.com/watch?v=eOF5CqN_J-k",
+      "snippet": "Écoutez \"Pembe\", , maintenant disponible sur toutes les plateformes de streaming : https://bfan.link/new-release-585S'abonner à la …"
+    },
+    {
+      "title": "Authentification - Chargement des Informations de Session",
+      "url": "https://portail.ac-amiens.fr/arena/",
+      "snippet": "Chargement des Informations de Session Chargement des informations de session de connexion depuis le navigateur..."
+    }
+  ]
+}

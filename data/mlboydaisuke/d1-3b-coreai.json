@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mlboydaisuke/d1-3B-CoreAI",
+  "slug": "mlboydaisuke-d1-3b-coreai",
+  "author": "mlboydaisuke",
+  "url": "https://huggingface.co/mlboydaisuke/d1-3B-CoreAI",
+  "created_at": "2026-10-09T01:37:41.000Z",
+  "updated_at": "2026-10-09T01:54:24.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "lfm2_vl",
+    "core-ai",
+    "apple",
+    "on-device",
+    "iphone",
+    "decision-model",
+    "systemone",
+    "typed-decisions",
+    "structured-output",
+    "vision-language",
+    "custom_code",
+    "base_model:LiquidAI/d1-3B",
+    "base_model:quantized:LiquidAI/d1-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10156165927,
+  "storage_human": "10.2 GB",
+  "base_model": "LiquidAI/d1-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UltraServers - Minecraft Server Hosting, Just $1/GB.",
+      "url": "https://ultraservers.com/",
+      "snippet": "Jun 24, 2026 · Fast, reliable Minecraft hosting. Powered by AMD Ryzen 7950X3D/9950X. Get instant setup, 24/7 support, and no …"
+    },
+    {
+      "title": "Minecraft Server Hosting, Just $1/GB - UltraServers",
+      "url": "https://ultraservers.com/games/minecraft",
+      "snippet": "Get high-performance Minecraft server hosting with UltraServers! Enjoy lag-free gameplay, 24/7 support, & easy setup. Start your …"
+    },
+    {
+      "title": "UltraServers Documentation",
+      "url": "https://docs.ultraservers.com/",
+      "snippet": "This means it’s easier than ever to upgrade or try out our cutting-edge game server hosting. Click the button below to explore our …"
+    },
+    {
+      "title": "Getting Started with UltraServers",
+      "url": "https://docs.ultraservers.com/getting-started/getting-started-with-ultraservers",
+      "snippet": "We are delighted to have you join us for your game server hosting needs. This tutorial will walk you through setting up your account …"
+    },
+    {
+      "title": "Minecraft",
+      "url": "https://docs.ultraservers.com/minecraft",
+      "snippet": "© 2026 Ultra Servers Pte. Ltd. All rights reserved."
+    }
+  ]
+}

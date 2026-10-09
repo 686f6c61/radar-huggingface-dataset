@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kindlingai/glm-5.3-exlr8-k2-k3-k4",
+  "slug": "kindlingai-glm-5-3-exlr8-k2-k3-k4",
+  "author": "kindlingai",
+  "url": "https://huggingface.co/kindlingai/glm-5.3-exlr8-k2-k3-k4",
+  "created_at": "2026-10-08T03:20:20.000Z",
+  "updated_at": "2026-10-08T23:35:38.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "quantized",
+    "exl3",
+    "moe",
+    "glm",
+    "tensor-parallel",
+    "gb10",
+    "text-generation",
+    "base_model:zai-org/GLM-5.3-BF16",
+    "base_model:finetune:zai-org/GLM-5.3-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 11322,
+  "trending_score": 11,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 837506847136,
+  "storage_human": "837.5 GB",
+  "base_model": "zai-org/GLM-5.3-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[ELI5] The difference between anime, manga, and hentai.",
+      "url": "https://www.reddit.com/r/explainlikeimfive/comments/nhysk/eli5_the_difference_between_anime_manga_and_hentai/",
+      "snippet": "Hentai is the word Western people use to refer to either anime or manga that has adult content; the Japanese use it as an insult …"
+    },
+    {
+      "title": "Femgaze Hentai - Reddit",
+      "url": "https://www.reddit.com/r/Femgaze_Hentai/",
+      "snippet": "When it comes to doujinsh-specific hentai websites, it’s even more difficult. Simply because the tags used for those are not so much …"
+    },
+    {
+      "title": "Hardcore Hentai Bondage - Reddit",
+      "url": "https://www.reddit.com/r/HardcoreHentaiBondage/",
+      "snippet": "This subreddit is for hentai bondage pictures/related media that push the envelope. View some of these at your own risk. No …"
+    },
+    {
+      "title": "some good Trap hentai manga? please <3 : r/traphentai - Reddit",
+      "url": "https://www.reddit.com/r/traphentai/comments/9638mv/some_good_trap_hentai_manga_please_3/",
+      "snippet": "128 votes, 10 comments. any good trap hentai manga where the trap actually is in a couple or likes the guy? like all ive found is a …"
+    },
+    {
+      "title": "Group sex - hentai manga - Reddit",
+      "url": "https://www.reddit.com/r/groupsexhentai/",
+      "snippet": "Welcome to /r/GroupsexHentai! Posts here are centered around hentai involving groups of characters. Post any hentai with three or …"
+    }
+  ]
+}

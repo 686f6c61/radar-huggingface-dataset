@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aras62/vla_67_ft",
+  "slug": "aras62-vla_67_ft",
+  "author": "aras62",
+  "url": "https://huggingface.co/aras62/vla_67_ft",
+  "created_at": "2026-10-09T17:43:07.000Z",
+  "updated_at": "2026-10-09T18:39:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "behavior-1k",
+    "vision-language-action",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12644231489,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mods for Games – ModsHost",
+      "url": "https://modshost.co/",
+      "snippet": "ModsHost is a dedicated game's mods hosting. We use a worldwide content delivery network to deliver the best download speeds …Read more"
+    },
+    {
+      "title": "BeamNG Mods | BeamNG.drive Mods - ModsHost",
+      "url": "https://modshost.co/beamng/",
+      "snippet": "Unlock the full potential of your game with our extensive collection of BeamNG.Drive Mods at ModsHost. Designed to enhance your …"
+    },
+    {
+      "title": "ModsHost",
+      "url": "https://modshost.carrd.co/",
+      "snippet": "ModsHost is a dedicated platform for gamers who want high-quality, reliable modding experiences. We’re passionate about …"
+    },
+    {
+      "title": "ETS2 Mods | Euro Truck Simulator 2 Mods - ModsHost",
+      "url": "https://modshost.co/ets2/",
+      "snippet": "Download all the best & latest Euro Truck Simulator 2 mods for free! Add extra features, trucks, maps, and more to your game with …"
+    },
+    {
+      "title": "About - ModsHost",
+      "url": "https://modshost.co/about/",
+      "snippet": "In 2018, a passionate gamer’s frustration with lackluster content hosts ignited the spark that birthed ModsHost. Our Journey: …"
+    }
+  ]
+}

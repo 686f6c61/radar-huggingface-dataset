@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "sigmanih/microsoft-phi-4-GGUF-IQ2_XXS",
+  "slug": "sigmanih-microsoft-phi-4-gguf-iq2_xxs",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/microsoft-phi-4-GGUF-IQ2_XXS",
+  "created_at": "2026-10-09T16:19:36.000Z",
+  "updated_at": "2026-10-09T16:23:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "iq2_xxs",
+    "en",
+    "it",
+    "base_model:microsoft/phi-4",
+    "base_model:quantized:microsoft/phi-4",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14659507200,
+  "parameters_human": "14.66B",
+  "storage_bytes": 5377191264,
+  "storage_human": "5.4 GB",
+  "base_model": "microsoft/phi-4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

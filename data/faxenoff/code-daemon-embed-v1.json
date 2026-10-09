@@ -5,7 +5,7 @@
   "author": "faxenoff",
   "url": "https://huggingface.co/faxenoff/code-daemon-embed-v1",
   "created_at": "2026-06-22T19:41:31.000Z",
-  "updated_at": "2026-10-08T09:16:11.000Z",
+  "updated_at": "2026-10-08T21:08:29.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -35,13 +35,13 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 427,
+  "downloads_30d": 401,
   "trending_score": 0,
   "parameters": 46801920,
   "parameters_human": "46.8M",
-  "storage_bytes": 16061337935,
-  "storage_human": "16.1 GB",
-  "base_model": "intfloat/multilingual-e5-base, Alibaba-NLP/gte-modernbert-base, Qwen/Qwen3-Reranker-4B",
+  "storage_bytes": 22024416604,
+  "storage_human": "22.0 GB",
+  "base_model": "intfloat/multilingual-e5-base, Alibaba-NLP/gte-modernbert-base, google/embeddinggemma-2, Qwen/Qwen3-Reranker-4B",
   "formats": [
     "onnx",
     "safetensors"

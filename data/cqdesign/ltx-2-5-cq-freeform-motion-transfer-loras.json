@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "CQdesign/LTX-2.5-CQ-Freeform-Motion-Transfer-LoRAs",
+  "slug": "cqdesign-ltx-2-5-cq-freeform-motion-transfer-loras",
+  "author": "CQdesign",
+  "url": "https://huggingface.co/CQdesign/LTX-2.5-CQ-Freeform-Motion-Transfer-LoRAs",
+  "created_at": "2026-10-07T11:37:42.000Z",
+  "updated_at": "2026-10-08T02:56:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842470312,
+  "storage_human": "842 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qu'est-ce qu'une collectivité territoriale ou collectivité locale ...",
+      "url": "https://www.vie-publique.fr/fiches/19604-quest-ce-quune-collectivite-territoriale-ou-collectivite-locale",
+      "snippet": "Jan 22, 2026 · Une collectivité territoriale est une autorité publique distincte de l'État. Chaque collectivité (commune, département, …"
+    },
+    {
+      "title": "Le rôle des collectivités territoriales de droit commun",
+      "url": "https://www.conseil-constitutionnel.fr/la-constitution/le-role-des-collectivites-territoriales-de-droit-commun",
+      "snippet": "Par ailleurs, la Constitution reconnaît au profit des collectivités territoriales : un pouvoir réglementaire local qu’elles exercent, dans …"
+    },
+    {
+      "title": "Collectivité territoriale en France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Collectivit%C3%A9_territoriale_en_France",
+      "snippet": "En France, une collectivité territoriale est une personne morale de droit public qui exerce sur son territoire certaines compétences …"
+    },
+    {
+      "title": "Titre XII : Des collectivités territoriales (Articles 72 à 75-1 ...",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/JORFTEXT000000571356/LEGISCTA000006095833/",
+      "snippet": "Dans les conditions prévues par la loi, ces collectivités s'administrent librement par des conseils élus et disposent d'un pouvoir …"
+    },
+    {
+      "title": "Droit des collectivités territoriales — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Droit_des_collectivit%C3%A9s_territoriales",
+      "snippet": "On entend par collectivités territoriales (la notion de collectivité locale n'existant plus depuis la révision constitutionnelle du 28 mars …"
+    }
+  ]
+}

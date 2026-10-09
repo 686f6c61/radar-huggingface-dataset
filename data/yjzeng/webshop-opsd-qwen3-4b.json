@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "YJZENG/webshop-opsd-qwen3-4b",
+  "slug": "yjzeng-webshop-opsd-qwen3-4b",
+  "author": "YJZENG",
+  "url": "https://huggingface.co/YJZENG/webshop-opsd-qwen3-4b",
+  "created_at": "2026-10-09T01:32:42.000Z",
+  "updated_at": "2026-10-09T01:34:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317166,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeoGebra - the world’s favorite, free math tools used by over 100 ...",
+      "url": "https://www.geogebra.org/",
+      "snippet": "Is GeoGebra free? GeoGebra’s calculators, apps, and educational resources are free for non-commercial use. This includes most …"
+    },
+    {
+      "title": "Calculadora 3D - GeoGebra",
+      "url": "https://www.geogebra.org/3d?lang=es",
+      "snippet": "Graficador 3D gratis de GeoGebra: grafica funciones 3D, representa superficies, construye sólidos ¡y mucho más!"
+    },
+    {
+      "title": "Geometría - GeoGebra",
+      "url": "https://mat.geogebra.org/geometry?lang=es",
+      "snippet": "Constructor geométrico en línea, gratis e interactivo, de GeoGebra: crea triángulos, círculos, ángulos, transformaciones, ¡y mucho más!"
+    },
+    {
+      "title": "GeoGebra Classic",
+      "url": "https://mat.geogebra.org/calculator?lang=en",
+      "snippet": "Free online scientific calculator from GeoGebra: perform calculations with fractions, statistics and exponential functions, logarithms, …"
+    },
+    {
+      "title": "GeoGebra Calculators and Apps - Free Downloads",
+      "url": "https://beta.geogebra.org/download",
+      "snippet": "GeoGebra Apps Explore our free calculators and apps for Math and Science, available for all devices and operating systems. Get …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "TamPham92/neucodec-onnx-decoder-int8",
+  "slug": "tampham92-neucodec-onnx-decoder-int8",
+  "author": "TamPham92",
+  "url": "https://huggingface.co/TamPham92/neucodec-onnx-decoder-int8",
+  "created_at": "2026-10-09T14:30:49.000Z",
+  "updated_at": "2026-10-09T14:31:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio-to-audio",
+    "base_model:neuphonic/neucodec",
+    "base_model:quantized:neuphonic/neucodec",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 312292102,
+  "storage_human": "312 MB",
+  "base_model": "neuphonic/neucodec",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shadowing for Language Learners: The 2026 Practical Guide",
+      "url": "https://migaku.com/blog/language-fun/shadowing-how-to-actually-use-it-2026-guide",
+      "snippet": "May 3, 2026 · A practical 2026 guide to shadowing for language learners: research, routines, audio picks, language-specific tips, …Read more"
+    },
+    {
+      "title": "An Introduction to the Shadowing Technique | FluentU",
+      "url": "https://www.fluentu.com/blog/learn/language-shadowing/",
+      "snippet": "May 4, 2023 · The Shadowing Technique will help improve your pronunciation, accent and fluency in the language you're learning! …"
+    },
+    {
+      "title": "Shadowing Technique: How to Do It (Step-by-Step + Free Practice)",
+      "url": "https://shadowingenglish.com/shadowing-technique-guide",
+      "snippet": "Shadowing is a language learning technique where you repeat a native speaker out loud, about a second behind them, copying their …"
+    },
+    {
+      "title": "Shadowing for language learning: what and how? -",
+      "url": "https://howtogetfluent.com/shadowing-for-language-learning/",
+      "snippet": "Shadowing is a deceptively simple, little-known language learning technique. You take a native audio recording, with a transcript and …"
+    },
+    {
+      "title": "Shadowing Language Learning: Improve Your Pronunciation Fast",
+      "url": "https://migaku.com/blog/language-fun/shadowing-language-learning-pronunciation",
+      "snippet": "Feb 18, 2026 · Is shadowing worth it? Learn how shadowing works to improve pronunciation, intonation, and fluency. Step-by-step …"
+    }
+  ]
+}

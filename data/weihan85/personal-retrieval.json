@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "weihan85/personal-retrieval",
+  "slug": "weihan85-personal-retrieval",
+  "author": "weihan85",
+  "url": "https://huggingface.co/weihan85/personal-retrieval",
+  "created_at": "2026-10-09T01:00:28.000Z",
+  "updated_at": "2026-10-09T01:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitter Video Ranking TOP 100 | Trending X Videos | TwiRanking",
+      "url": "https://twiranking.com/en/ranking",
+      "snippet": "1 day ago · See the TOP 100 most viewed and liked videos on X (Twitter), ranked over 24 hours, 3 days, weekly and monthly. Save …"
+    },
+    {
+      "title": "TWERKCOMPILATION - Reddit",
+      "url": "https://www.reddit.com/r/TWERKCOMPILATION/about/",
+      "snippet": "About community TWERKCOMPILATION Twerking compilation videos 🍆🍆🍑🍑🍑 #followin youtube"
+    },
+    {
+      "title": "Nastya Nass - YouTube",
+      "url": "https://www.youtube.com/@NastyaNass",
+      "snippet": "Welcome to the official Nastya Nass YouTube channel! My mission is to empower women around the world to feel confident, strong, …"
+    },
+    {
+      "title": "Nastya Nass dancing in transparent dress/ Slow Motion /",
+      "url": "https://m.youtube.com/watch?v=e2GoDpUXweY",
+      "snippet": "Jul 23, 2024 · Subscribe to the NASS FIT App instantly via our official website and get immediate access to all programs and …"
+    },
+    {
+      "title": "Ass Twerk Mixtape - RaveDJ",
+      "url": "https://rave.dj/YGlteOicx40DcQ",
+      "snippet": "Mix and mashup your favorite songs and playlists from YouTube and Spotify for free using the world’s first artificial intelligence DJ."
+    }
+  ]
+}

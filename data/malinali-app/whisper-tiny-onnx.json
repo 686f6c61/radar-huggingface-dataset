@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "malinali-app/whisper-tiny-onnx",
+  "slug": "malinali-app-whisper-tiny-onnx",
+  "author": "malinali-app",
+  "url": "https://huggingface.co/malinali-app/whisper-tiny-onnx",
+  "created_at": "2026-10-09T18:16:26.000Z",
+  "updated_at": "2026-10-09T18:16:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "whisper",
+    "sherpa-onnx",
+    "automatic-speech-recognition",
+    "base_model:openai/whisper-tiny",
+    "base_model:quantized:openai/whisper-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102793173,
+  "storage_human": "103 MB",
+  "base_model": "openai/whisper-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Export Whisper to ONNX — sherpa 1.3 documentation",
+      "url": "https://k2-fsa.github.io/sherpa/onnx/pretrained_models/whisper/export-onnx.html",
+      "snippet": "Export Whisper to ONNX This section describes how to export Whisper models to onnx. Available models Note that we have already exported Whisper models to onnx and they are available from the following huggingface repositories:"
+    },
+    {
+      "title": "onnx-community/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "whisper-tiny · Model · Inferix",
+      "url": "https://inferix.co/models/onnx-community/whisper-tiny",
+      "snippet": "Note: Having a separate repo for ONNX weights is intended to be a temporary solution until WebML gains more traction. If you would like to make your models web-ready, we recommend converting to ONNX using 🤗 Optimum and structuring your repo like this one (with ONNX weights located in a subfolder named onnx ). Tasks:automatic-speech-recognitionLibraries:transformers.js imported huggingface ..."
+    },
+    {
+      "title": "openai/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/openai/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - echogarden-project/whisper-onnx-models",
+      "url": "https://github.com/echogarden-project/whisper-onnx-models",
+      "snippet": "OpenAI Whisper speech recognition models, exported to to ONNX using the Whisper ONNX Exporter tool. Each model tarball includes an encoder.onnx and decoder.onnx model files. They are mainly intended to be used from Echogarden, but can also be used from other applications. All models except large, large-v1 and large-v2 are available. The larger models require a very high amount of memory to ..."
+    }
+  ]
+}

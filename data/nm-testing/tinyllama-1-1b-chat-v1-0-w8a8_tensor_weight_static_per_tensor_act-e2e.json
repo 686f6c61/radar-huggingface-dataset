@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_tensor_weight_static_per_tensor_act-e2e",
+  "slug": "nm-testing-tinyllama-1-1b-chat-v1-0-w8a8_tensor_weight_static_per_tensor_act-e2e",
+  "author": "nm-testing",
+  "url": "https://huggingface.co/nm-testing/TinyLlama-1.1B-Chat-v1.0-W8A8_tensor_weight_static_per_tensor_act-e2e",
+  "created_at": "2026-07-24T23:42:42.000Z",
+  "updated_at": "2026-10-09T18:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 4925580171,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertisseur de distance aviation — NM km miles - Envole-Moi",
+      "url": "https://envole-moi.fr/convertisseur-distance-aviation/",
+      "snippet": "1 day ago · Convertissez instantanément des milles nautiques (NM) en kilomètres (km) ou en miles terrestres (mi), et inversement. …Read more"
+    },
+    {
+      "title": "Nanomètre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nanom%C3%A8tre",
+      "snippet": "Nanomètre Le nanomètre, de symbole nm, est une unité de longueur du Système international. C'est un sous-multiple du mètre, il …"
+    },
+    {
+      "title": "Nanometre - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nanometre",
+      "snippet": "The nanometre is often used to express dimensions on an atomic scale: the diameter of a helium atom, for example, is about 0.06 …"
+    },
+    {
+      "title": "Newton mètre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Newton_m%C3%A8tre",
+      "snippet": "Schéma du frein de Prony, utilisé autrefois pour la mesure des couples. M = moment, F = force, l = bras de levier. Bien qu'elle soit …"
+    },
+    {
+      "title": "Convert Nanomètres a Mètres (nm → m)",
+      "url": "https://convertlive.com/fr/u/convert/nanom%C3%A8tres/a/m%C3%A8tres",
+      "snippet": "Nanomètres a Mètres. Effectuer une conversion entre les unités (nm → m) ou consultez le tableau de conversion"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "WafaaFraih/s2-lingshu7b-pathvqa-seed0",
+  "slug": "wafaafraih-s2-lingshu7b-pathvqa-seed0",
+  "author": "WafaaFraih",
+  "url": "https://huggingface.co/WafaaFraih/s2-lingshu7b-pathvqa-seed0",
+  "created_at": "2026-10-09T15:43:59.000Z",
+  "updated_at": "2026-10-09T19:29:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "grpo",
+    "trl",
+    "unsloth",
+    "arxiv:2402.03300",
+    "base_model:lingshu-medical-mllm/Lingshu-7B",
+    "base_model:finetune:lingshu-medical-mllm/Lingshu-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1963602125,
+  "storage_human": "2.0 GB",
+  "base_model": "lingshu-medical-mllm/Lingshu-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "目前有哪些主流的AI？ - 知乎",
+      "url": "https://www.zhihu.com/question/591009674",
+      "snippet": "我猜你想找的主流AI，应该是知名度比较大，而且好用的AI。 按照要求，做了一些分类，有需要可以参考。"
+    },
+    {
+      "title": "sqlite - How to open file:///private/var/mobile/Containers/Shared ...",
+      "url": "https://stackoverflow.com/questions/45179968/how-to-open-file-private-var-mobile-containers-shared-appgroup-folder-on-mac",
+      "snippet": "Jul 19, 2017 · I'm trying to use fileProvider in iOS 11 and have a database at …"
+    },
+    {
+      "title": "utf 8 - How to decode a (percent encoding URL) that contains Arabic ...",
+      "url": "https://stackoverflow.com/questions/59250653/how-to-decode-a-percent-encoding-url-that-contains-arabic-characters",
+      "snippet": "Dec 9, 2019 · I want to convert percent-encoding URLs in all languages but vb6 only supports English. I have tested the following …"
+    },
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    }
+  ]
+}

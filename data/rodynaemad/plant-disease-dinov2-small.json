@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rodynaemad/plant-disease-dinov2-small",
+  "slug": "rodynaemad-plant-disease-dinov2-small",
+  "author": "rodynaemad",
+  "url": "https://huggingface.co/rodynaemad/plant-disease-dinov2-small",
+  "created_at": "2026-10-09T14:42:40.000Z",
+  "updated_at": "2026-10-09T15:03:46.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "dinov2",
+    "image-classification",
+    "agriculture",
+    "plant-disease",
+    "computer-vision",
+    "dataset:mohanty/PlantVillage",
+    "base_model:facebook/dinov2-small",
+    "base_model:quantized:facebook/dinov2-small",
+    "license:cc-by-sa-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22085798,
+  "parameters_human": "22.1M",
+  "storage_bytes": 201129686,
+  "storage_human": "201 MB",
+  "base_model": "facebook/dinov2-small",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Plant disease classification (38 classes)",
+      "dataset": "PlantVillage (colour), leaf-level held-out split",
+      "metric": "Accuracy (unseen leaves)",
+      "value": 0.9886
+    },
+    {
+      "task": "Plant disease classification (38 classes)",
+      "dataset": "PlantVillage (colour), leaf-level held-out split",
+      "metric": "Macro F1 (unseen leaves)",
+      "value": 0.9849
+    }
+  ],
+  "sources": []
+}

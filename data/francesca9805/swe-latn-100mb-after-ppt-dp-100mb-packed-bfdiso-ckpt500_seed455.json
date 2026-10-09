@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+  "slug": "francesca9805-swe-latn-100mb-after-ppt-dp-100mb-packed-bfdiso-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+  "created_at": "2026-10-08T06:39:40.000Z",
+  "updated_at": "2026-10-09T19:24:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+    "base_model:finetune:francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 485,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 19966294568,
+  "storage_human": "20.0 GB",
+  "base_model": "francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+      "snippet": "Instructions to use francesca9805/swe-latn-10mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+      "url": "https://friendli.ai/models/francesca9805/swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455",
+      "snippet": "Deploy swe-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Swe Latn 100mb Ppt Dp 10mb Packed Bfdiso Seed10",
+      "url": "https://free2aitools.com/model/francesca9805/swe-latn-100mb-ppt-dp-10mb-packed-bfdiso_seed10",
+      "snippet": "Registry entry for model Swe Latn 100mb Ppt Dp 10mb Packed Bfdiso Seed10; source metadata pending."
+    },
+    {
+      "title": "swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+      "url": "https://friendli.ai/models/francesca9805/swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455",
+      "snippet": "Deploy swe-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

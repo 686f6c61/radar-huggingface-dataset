@@ -5,7 +5,7 @@
   "author": "saliacoel",
   "url": "https://huggingface.co/saliacoel/x",
   "created_at": "2026-01-02T23:33:01.000Z",
-  "updated_at": "2026-10-08T13:23:48.000Z",
+  "updated_at": "2026-10-09T08:46:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 726821970480,
-  "storage_human": "726.8 GB",
+  "storage_bytes": 732249099240,
+  "storage_human": "732.2 GB",
   "base_model": null,
   "formats": [
     "onnx"

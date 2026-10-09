@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "map-boy/wandaa-kin-gpt",
+  "slug": "map-boy-wandaa-kin-gpt",
+  "author": "map-boy",
+  "url": "https://huggingface.co/map-boy/wandaa-kin-gpt",
+  "created_at": "2026-06-23T19:54:47.000Z",
+  "updated_at": "2026-10-09T19:24:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "rw"
+  ],
+  "tags": [
+    "kinyarwanda",
+    "gpt",
+    "from-scratch",
+    "pytorch",
+    "text-generation",
+    "rw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8600107158,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Mappy - Plans, comparateur d'itinéraires et cartes de France",
+      "url": "https://fr.mappy.com/",
+      "snippet": "Recherche d'adresses, de lieux, comparateur d'itinéraires pour préparer vos déplacements partout en France"
+    },
+    {
+      "title": "Apple Maps: Directions, Guides & Traffic",
+      "url": "https://maps.apple.com/",
+      "snippet": "Find local businesses, get place recommendations, view maps and get driving directions on Apple Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web",
+      "snippet": "View a map over time with Timelapse and Historical Imagery. Manage your data and projects with enhanced collaboration features. …"
+    }
+  ]
+}

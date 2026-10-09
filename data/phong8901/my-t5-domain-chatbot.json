@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "phong8901/my-t5-domain-chatbot",
+  "slug": "phong8901-my-t5-domain-chatbot",
+  "author": "phong8901",
+  "url": "https://huggingface.co/phong8901/my-t5-domain-chatbot",
+  "created_at": "2026-10-09T01:41:18.000Z",
+  "updated_at": "2026-10-09T01:43:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891644712,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Figaro - Histoire",
+      "url": "https://www.lefigaro.fr/histoire?msockid=0750373291c2675c281820df90f966d2",
+      "snippet": "Avec Le Figaro Histoire redécouvrez l'histoire française, l'histoire du monde, à travers les événements, rétrospectives, dossiers …"
+    },
+    {
+      "title": "Le Figaro Histoire",
+      "url": "https://boutique.lefigaro.fr/rayon/301-le-figaro-histoire",
+      "snippet": "Retrouvez les numéros du Figaro Histoire disponibles à l'unité sur le Figaro Store : États-Unis, Groenland et Vikings, Première …"
+    },
+    {
+      "title": "Le Figaro — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Figaro",
+      "snippet": "2.1Premier Figaro : un journal satirique atypique (1826-1854) 2.2Résurrection du journal : Le Figarode Villemessant (1854-1879) …"
+    },
+    {
+      "title": "Lire Le Figaro Histoire en ligne - Kiosque Figaro",
+      "url": "https://kiosque.lefigaro.fr/catalog/le-figaro-histoire",
+      "snippet": "Le Figaro Histoire : retrouvez toutes les éditions à lire en ligne ou à télécharger pour lire où vous souhaitez, quand vous le souhaitez."
+    },
+    {
+      "title": "Le Figaro Histoire",
+      "url": "https://www.lefigaro.fr/auteur/le-figaro-histoire?msockid=0750373291c2675c281820df90f966d2",
+      "snippet": "Feb 20, 2024 · Retrouvez l'intégralité des articles écrits par Le Figaro Histoire sur les sites du groupe Figaro"
+    }
+  ]
+}

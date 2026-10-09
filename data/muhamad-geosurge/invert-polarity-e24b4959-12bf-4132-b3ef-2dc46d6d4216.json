@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-e24b4959-12bf-4132-b3ef-2dc46d6d4216",
+  "slug": "muhamad-geosurge-invert-polarity-e24b4959-12bf-4132-b3ef-2dc46d6d4216",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-e24b4959-12bf-4132-b3ef-2dc46d6d4216",
+  "created_at": "2026-10-09T18:41:40.000Z",
+  "updated_at": "2026-10-09T18:43:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge/invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7 ...",
+      "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7",
+      "snippet": "muhamad-geosurge / invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7 Like 0 Safetensors vllm mistral mistral-common License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Model Card for Mistral-7B-Instruct-v0.3 Installation Download Chat Instruct following Function calling Generate with transformers Function ..."
+    },
+    {
+      "title": "muhamad-geosurge (Muhamad Abdurahman) - Hugging Face",
+      "url": "https://huggingface.co/muhamad-geosurge",
+      "snippet": "muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 7B•Updated about 12 hours ago"
+    },
+    {
+      "title": "invert-polarity-9f24fe1d-1776-4c6c-b94c-747fd4a9bf47",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-9f24fe1d-1776-4c6c-b94c-747fd4a9bf47",
+      "snippet": "Deploy invert-polarity-9f24fe1d-1776-4c6c-b94c-747fd4a9bf47 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "invert-polarity-09a026ee-cd60-466b-b028-9612470f5a8f",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-09a026ee-cd60-466b-b028-9612470f5a8f",
+      "snippet": "Run invert-polarity-09a026ee-cd60-466b-b028-9612470f5a8f with FriendliAI inference. The Mistral-7B-Instruct-v0.3 Large Language Model (LLM) is an instruct…"
+    },
+    {
+      "title": "geoSurge",
+      "url": "https://geosurge.ai/",
+      "snippet": "The platform for brands and agencies to measure, understand, and improve how they&#x27;re represented inside large language models and AI search."
+    }
+  ]
+}

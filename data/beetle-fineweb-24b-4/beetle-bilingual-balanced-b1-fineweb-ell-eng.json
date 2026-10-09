@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Beetle-FineWeb-24B-4/beetle-bilingual-balanced-b1-fineweb-ell-eng",
+  "slug": "beetle-fineweb-24b-4-beetle-bilingual-balanced-b1-fineweb-ell-eng",
+  "author": "Beetle-FineWeb-24B-4",
+  "url": "https://huggingface.co/Beetle-FineWeb-24B-4/beetle-bilingual-balanced-b1-fineweb-ell-eng",
+  "created_at": "2026-10-09T01:14:53.000Z",
+  "updated_at": "2026-10-09T09:30:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pico_decoder",
+    "text-generation",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 193804032,
+  "parameters_human": "193.8M",
+  "storage_bytes": 48841632676,
+  "storage_human": "48.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beetle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beetle",
+      "snippet": "The general anatomy of a beetle is quite uniform and typical of insects, although there are several examples of novelty, such as …Read more"
+    },
+    {
+      "title": "VOLKSWAGEN Beetle d'occasion : 193 annonces disponibles | L",
+      "url": "https://occasion.largus.fr/auto/volkswagen/beetle/",
+      "snippet": "1 day ago · Vous recherchez une VOLKSWAGEN Beetle d'occasion ? Parcourez nos 193 annonces de professionnels et particuliers …"
+    },
+    {
+      "title": "Cabriolet VOLKSWAGEN Beetle d'occasion - leboncoin",
+      "url": "https://www.leboncoin.fr/c/voitures/u_car_brand:VOLKSWAGEN+u_car_model:VOLKSWAGEN_Beetle+vehicle_type:cabriolet",
+      "snippet": "Toutes nos annonces Cabriolet VOLKSWAGEN Beetle d'occasion . Consultez nos annonces de particuliers et professionnels sur …"
+    },
+    {
+      "title": "Volkswagen Beetle de collection à vendre - Annonces lesAnciennes",
+      "url": "https://www.lesanciennes.com/annonces/voiture-collection/volkswagen-beetle/",
+      "snippet": "Nos annonces incluent une large gamme de modèles Volkswagen comme Golf, Beetle et Coccinelle Cabriolet"
+    },
+    {
+      "title": "Volkswagen Beetle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Volkswagen_Beetle",
+      "snippet": "The Beetle maintains a substantial cultural influence, and is regarded as one of the most iconic vehicles in automotive history. Its …"
+    }
+  ]
+}

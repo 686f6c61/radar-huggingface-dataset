@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tabahi/CUPE-3-en",
+  "slug": "tabahi-cupe-3-en",
+  "author": "Tabahi",
+  "url": "https://huggingface.co/Tabahi/CUPE-3-en",
+  "created_at": "2026-10-09T17:53:11.000Z",
+  "updated_at": "2026-10-09T17:53:17.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "forced-alignment",
+    "phoneme-recognition",
+    "phoneme-segmentation",
+    "speech",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13544596,
+  "parameters_human": "13.5M",
+  "storage_bytes": 108391861,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Human Body Explorer - Interactive Anatomy Learning",
+      "url": "https://www.humanbodyexplorer.com/",
+      "snippet": "Discover the human body in an interactive way. 2700 body parts across anatomy, systems, pathogens and pharmacology, 300+ …"
+    },
+    {
+      "title": "www.bodyexplorer.com",
+      "url": "http://www.bodyexplorer.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Body Explorer — Sean White Consulting",
+      "url": "https://seanwhiteconsulting.com/body-explorer.html",
+      "snippet": "Explore the human body one system at a time, in interactive 3D you can rotate, peel back and quiz yourself on. Body Explorer lets …"
+    },
+    {
+      "title": "Human Anatomy Explorer | Detailed 3D anatomical illustrations",
+      "url": "https://www.innerbody.com/htm/body.html",
+      "snippet": "There are 12 major anatomy systems: Skeletal, Muscular, Cardiovascular, Digestive, Endocrine, Nervous, Respiratory, …"
+    },
+    {
+      "title": "Full Body Explorer · Human Anatomy Atlas",
+      "url": "https://anatomy-beryl.vercel.app/anatomy",
+      "snippet": "Rotate, layer and dissect a full human body in 3D. Select individual bones, muscles, nerves, vessels and organs to read their anatomy."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-octda-septbase",
+  "slug": "dougalldeepmind-2026-10-09-qwen36-0-da-tools-15-canary-octda-septbase",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-10-09-qwen36-0-da-tools-15-canary-octda-septbase",
+  "created_at": "2026-10-09T18:36:02.000Z",
+  "updated_at": "2026-10-09T18:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aguante la caca de shrek - YouTube",
+      "url": "https://m.youtube.com/watch?v=Iem_Ytum1dY",
+      "snippet": "Aguante La Caca de Shrek. Cursed Roblox Lobby that we stumbled upon ... Enjoy!Feel free to join me at wunderwave_live on …"
+    },
+    {
+      "title": "Aguante la caca de shrek - YouTube",
+      "url": "https://m.youtube.com/watch?v=yoEMChZ6a-o",
+      "snippet": "#epic #memes El inicio donde dije ''aguante la caca de shrek''"
+    },
+    {
+      "title": "aguante la caca de shrek - Roblox",
+      "url": "https://www.roblox.com/fr/games/5771460156/aguante-la-caca-de-shrek",
+      "snippet": "Jetez un œil à aguante la caca de shrek. Ce n'est qu'un exemple des millions de contenus en 3D uniques créés par les utilisateurs …"
+    },
+    {
+      "title": "aguante la caca de shrek | Juega en Roblox",
+      "url": "https://www.roblox.com/es/games/5771460156/aguante-la-caca-de-shrek",
+      "snippet": "Echa un vistazo a aguante la caca de shrek. Es una de las millones de experiencias únicas en 3D generadas por los usuarios en …"
+    },
+    {
+      "title": "RobloxGo | aguante la caca de shrek - Real Time Stats, Insights And …",
+      "url": "https://www.robloxgo.com/game/5771460156/aguante-la-caca-de-shrek",
+      "snippet": "Everything you need to know about aguante la caca de shrek! Get real-time stats insights and ranking only on RobloxGo."
+    }
+  ]
+}

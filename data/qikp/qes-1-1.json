@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "qikp/qes-1.1",
+  "slug": "qikp-qes-1-1",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/qes-1.1",
+  "created_at": "2026-10-09T04:04:19.000Z",
+  "updated_at": "2026-10-09T18:42:07.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "dataset:HuggingFaceFW/fineweb-edu-llama3-annotations",
+    "base_model:huawei-noah/TinyBERT_General_4L_312D",
+    "base_model:finetune:huawei-noah/TinyBERT_General_4L_312D",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14350561,
+  "parameters_human": "14.4M",
+  "storage_bytes": 57410556,
+  "storage_human": "57 MB",
+  "base_model": "huawei-noah/TinyBERT_General_4L_312D",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qes - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/qikp/qes",
+      "snippet": "by qikp qikp/qes Free2AITools Nexus Index 39.0 S: Semantic50 Query-time baseline · scored live at search A: Authority0 P: Popularity0 R: Recency100 Q: Quality65 Tech Context 0.01BParams 512Ctx Vital Performance— Source → Share: 📤 𝕏 in 📣 🔗"
+    },
+    {
+      "title": "Quasar 1.1 438B, the first AI model using quantum-generated data",
+      "url": "https://multiversecomputing.com/resources/quasar-1-1-438b-the-first-ai-model-using-quantum-generated-data",
+      "snippet": "Quasar 1.1 438B is built from GLM-5.2, the open-weights model from Z.ai, transformed with CompactifAI. Quantum-inspired expert selection prunes each layer from 256 experts down to 148, which is where the reduction in size and serving cost comes from."
+    },
+    {
+      "title": "qikp (Charles) - Hugging Face",
+      "url": "https://huggingface.co/qikp/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 12 hours ago ... published a model about 12 hours ago"
+    },
+    {
+      "title": "qikp/qes · Discussions - Hugging Face",
+      "url": "https://huggingface.co/qikp/qes/discussions",
+      "snippet": "Instructions to use qikp/qes with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use qikp/qes with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline (\"text-classification\", model=\"qikp/qes\")"
+    },
+    {
+      "title": "kite-8.1-11m-base API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/qikp/kite-8.1-11m-base",
+      "snippet": "Deploy kite-8.1-11m-base with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

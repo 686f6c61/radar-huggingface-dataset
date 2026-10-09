@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior",
+  "slug": "sagnikm-hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior",
+  "author": "sagnikM",
+  "url": "https://huggingface.co/sagnikM/hill-tooluse-qwen25-7b-postlr1e-6-kl3e-4-seed44-step250-local20261008t203125z-prior",
+  "created_at": "2026-10-09T01:09:03.000Z",
+  "updated_at": "2026-10-09T01:10:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693688,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=13a97165411362b805c0668840e763c1",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Jeux Gratuits en Ligne - Jouez Maintenant !",
+      "url": "https://poki.com/fr?msockid=13a97165411362b805c0668840e763c1",
+      "snippet": "Poki a la meilleure sélection de jeux en ligne gratuits et offre l'expérience la plus amusante à jouer seul ou avec des amis. Nous …"
+    },
+    {
+      "title": "Free Online Games - Play in Your Browser | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Explore Subway Surfers, Temple Run 2, puzzles, racing and 2 player games in your browser. No …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    }
+  ]
+}

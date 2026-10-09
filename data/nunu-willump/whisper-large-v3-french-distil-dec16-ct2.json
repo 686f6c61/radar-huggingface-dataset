@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "nunu-willump/whisper-large-v3-french-distil-dec16-ct2",
+  "slug": "nunu-willump-whisper-large-v3-french-distil-dec16-ct2",
+  "author": "nunu-willump",
+  "url": "https://huggingface.co/nunu-willump/whisper-large-v3-french-distil-dec16-ct2",
+  "created_at": "2026-10-09T01:41:14.000Z",
+  "updated_at": "2026-10-09T01:42:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "fr",
+    "base_model:bofenghuang/whisper-large-v3-french-distil-dec16",
+    "base_model:finetune:bofenghuang/whisper-large-v3-french-distil-dec16",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2247627421,
+  "storage_human": "2.2 GB",
+  "base_model": "bofenghuang/whisper-large-v3-french-distil-dec16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nunu & Willump Build with Highest Winrate - LoL Runes, Items, and …",
+      "url": "https://u.gg/lol/champions/nunu/build",
+      "snippet": "Nunu with U.GG's best data for every build. The highest win rate Nunu build, from rune set to skill order to item path, for Jungle. LoL …Read more"
+    },
+    {
+      "title": "Nunu & Willump Build Patch 16.20: Best Runes, Items & Skill Order …",
+      "url": "https://www.op.gg/lol/champions/nunu/build",
+      "snippet": "Nunu & Willump Build with the highest win rate. Runes, items, and skill build in patch 16.20. Nunu & Willump build recommendations …"
+    },
+    {
+      "title": "Nunu et Willump - League of Legends",
+      "url": "https://www.leagueoflegends.com/fr-fr/champions/nunu/",
+      "snippet": "Nunu augmente les vitesses d'attaque et de déplacement de Willump et d'un allié proche, et les attaques de base de Willump …"
+    },
+    {
+      "title": "Nunu et Willump Build 26.20 – Runes, Objets, Counters – METAsrc LoL",
+      "url": "https://www.metasrc.com/fr/lol/champions/nunu/build",
+      "snippet": "LoL Nunu et Willump guide de construction pour Patch 26.20: top runes, objets, sorts d'invocateur, ordre des compétences, …"
+    },
+    {
+      "title": "Nunu - League of Legends Wiki",
+      "url": "https://wiki.leagueoflegends.com/en-us/Nunu",
+      "snippet": "Oct 26, 2025 · Bound together by ancient power and a shared love of snowballs, Nunu and Willump now ramble wildly across the …"
+    }
+  ]
+}

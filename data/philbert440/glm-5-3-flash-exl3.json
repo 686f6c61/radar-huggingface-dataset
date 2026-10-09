@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "philbert440/GLM-5.3-Flash-EXL3",
+  "slug": "philbert440-glm-5-3-flash-exl3",
+  "author": "philbert440",
+  "url": "https://huggingface.co/philbert440/GLM-5.3-Flash-EXL3",
+  "created_at": "2026-10-08T02:53:19.000Z",
+  "updated_at": "2026-10-09T18:37:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "exl3",
+    "exllamav3",
+    "v100",
+    "sm70",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 51959863134,
+  "parameters_human": "51.96B",
+  "storage_bytes": 104142805874,
+  "storage_human": "104.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=356004a9563d6869322e134457b369e6",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=356004a9563d6869322e134457b369e6",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.com/",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    },
+    {
+      "title": "Articles | Vinted",
+      "url": "https://www.vinted.fr/catalog/1-one?msockid=356004a9563d6869322e134457b369e6",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements | Explore les vêtements de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/4-clothing?msockid=356004a9563d6869322e134457b369e6",
+      "snippet": "Parcours les vêtements de seconde main pour femmes sur Vinted. Déniche des pièces uniques à prix tout doux et achète et vends …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jsbzzz/train1",
+  "slug": "jsbzzz-train1",
+  "author": "jsbzzz",
+  "url": "https://huggingface.co/jsbzzz/train1",
+  "created_at": "2026-10-09T17:01:04.000Z",
+  "updated_at": "2026-10-09T17:01:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:IMCON/OMX_LeRobot_20261009_190057",
+    "arxiv:2304.13705",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Délais d'un virement de la banque postale ver le crédit agricole",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8072730-delais-d-un-virement-de-la-banque-postale-ver-le-credit-agricole",
+      "snippet": "Bonjour, J'ai un ami à la banque postale qui a fait un virement de plus de 5000€ à un autre ami qui lui est au crédit agricole. Une …"
+    },
+    {
+      "title": "Frais de de cloture de compte de la banque postale. - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8511240-frais-de-de-cloture-de-compte-de-la-banque-postale",
+      "snippet": "Mar 20, 2020 · La banque m'a adressé, à ma demande, la situation de ses comptes au jour du décès. Elle indique sur ces …"
+    },
+    {
+      "title": "Lire message envoyé par la banque postale - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37236667-lire-message-envoye-par-la-banque-postale",
+      "snippet": "Jun 3, 2021 · Lire message envoyé par la banque postale Franco - Modifié le 3 juin 2021 à 11:28 jeannets - 3 juin 2021 à 11:44"
+    },
+    {
+      "title": "Donner son nom + adresse = quels risques - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34341997-donner-son-nom-adresse-quels-risques",
+      "snippet": "Feb 6, 2017 · Pour la vente d'une poussette on me demande mon nom prénom adresse postale et mail et mon numéro de téléphone …"
+    },
+    {
+      "title": "Sans smartphone, bientôt impossible d’acheter en ligne",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/sans-smartphone-bientot-impossible-d-acheter-en-ligne-20210427/",
+      "snippet": "Apr 27, 2021 · Certicode Plus à la Banque postale, Clé Digitale chez BNP Paribas, Sécuripass au Crédit agricole, Pass Sécurité à la …"
+    }
+  ]
+}

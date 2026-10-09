@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "pooria/foxmind",
+  "slug": "pooria-foxmind",
+  "author": "pooria",
+  "url": "https://huggingface.co/pooria/foxmind",
+  "created_at": "2026-10-09T01:58:39.000Z",
+  "updated_at": "2026-10-09T02:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "deberta-v2",
+    "gliner2",
+    "foxpilot",
+    "token-classification",
+    "base_model:fastino/gliner2-multi-v1",
+    "base_model:quantized:fastino/gliner2-multi-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 102,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1863762806,
+  "storage_human": "1.9 GB",
+  "base_model": "fastino/gliner2-multi-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

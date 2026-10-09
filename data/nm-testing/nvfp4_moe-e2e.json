@@ -4,8 +4,8 @@
   "slug": "nm-testing-nvfp4_moe-e2e",
   "author": "nm-testing",
   "url": "https://huggingface.co/nm-testing/nvfp4_moe-e2e",
-  "created_at": "2026-07-25T04:35:16.000Z",
-  "updated_at": "2026-10-07T01:42:22.000Z",
+  "created_at": "2026-10-08T17:31:42.000Z",
+  "updated_at": "2026-10-09T01:50:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -19,12 +19,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 297,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",
-  "storage_bytes": 307668680679,
-  "storage_human": "307.7 GB",
+  "storage_bytes": 18108236490,
+  "storage_human": "18.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

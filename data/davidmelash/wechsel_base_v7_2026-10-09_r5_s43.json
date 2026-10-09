@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "davidmelash/wechsel_base_v7_2026-10-09_r5_s43",
+  "slug": "davidmelash-wechsel_base_v7_2026-10-09_r5_s43",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/wechsel_base_v7_2026-10-09_r5_s43",
+  "created_at": "2026-10-09T18:29:44.000Z",
+  "updated_at": "2026-10-09T18:30:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "uk",
+    "base_model:benjamin/roberta-base-wechsel-ukrainian",
+    "base_model:finetune:benjamin/roberta-base-wechsel-ukrainian",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124061961,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496271772,
+  "storage_human": "496 MB",
+  "base_model": "benjamin/roberta-base-wechsel-ukrainian",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - CPJKU/wechsel: Code for WECHSEL: Effective initialization of ...",
+      "url": "https://github.com/CPJKU/wechsel",
+      "snippet": "Code for WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models. - CPJKU/wechsel"
+    },
+    {
+      "title": "wechsel · PyPI",
+      "url": "https://pypi.org/project/wechsel/",
+      "snippet": "Code for WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models."
+    },
+    {
+      "title": "wechsel/MODEL_README.md at main · CPJKU/wechsel · GitHub",
+      "url": "https://github.com/CPJKU/wechsel/blob/main/MODEL_README.md",
+      "snippet": "Code for WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models. - wechsel/MODEL_README.md at main · CPJKU/wechsel"
+    },
+    {
+      "title": "[2112.06598] WECHSEL: Effective initialization of subword embeddings ...",
+      "url": "https://ar5iv.labs.arxiv.org/html/2112.06598",
+      "snippet": "To address this issue, we introduce WECHSEL, 111Word Embeddings Can Help initialize Subword Embeddings in a new Language. a novel method to transfer monolingual language models to a new language. WECHSEL uses multilingual static word embeddings between the source language and the target language to initialize model parameters. WECHSEL first copies all inner (non-embedding) parameters of the ..."
+    },
+    {
+      "title": "WECHSEL: Effective initialization of subword embeddings for cross ...",
+      "url": "https://openreview.net/pdf?id=V9kbHITRY_4",
+      "snippet": "WECHSEL uses multi- lingual static word embeddings between the source language and the target language to initialize model parameters. WECHSEL first copies all inner (non- embedding) parameters of the English model, and exchanges the tokenizer with a tokenizer for the tar- 1Word Embeddings Can Help initialize Subword Embed-dings in a new ..."
+    }
+  ]
+}

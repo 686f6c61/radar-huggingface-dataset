@@ -5,7 +5,7 @@
   "author": "Sirocco-rt",
   "url": "https://huggingface.co/Sirocco-rt/speculate_cv_emulators",
   "created_at": "2026-04-19T20:58:46.000Z",
-  "updated_at": "2026-08-23T00:58:07.000Z",
+  "updated_at": "2026-10-09T12:24:05.000Z",
   "license": "gpl-3.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,6 +21,7 @@
     "en",
     "dataset:Sirocco-rt/speculate_cv_bl_grid_v87f",
     "dataset:Sirocco-rt/speculate_cv_no-bl_grid_v87f",
+    "arxiv:2610.07364",
     "license:gpl-3.0",
     "region:us"
   ],

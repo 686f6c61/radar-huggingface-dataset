@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kyang73/RxGS-pretrained",
+  "slug": "kyang73-rxgs-pretrained",
+  "author": "kyang73",
+  "url": "https://huggingface.co/kyang73/RxGS-pretrained",
+  "created_at": "2026-10-09T18:21:28.000Z",
+  "updated_at": "2026-10-09T18:36:40.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wireless",
+    "radio-frequency",
+    "gaussian-splatting",
+    "rf-data-synthesis",
+    "arxiv:2605.24290",
+    "dataset:kyang73/RxGS-data",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200464818,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kyang73 (kang) - Hugging Face",
+      "url": "https://huggingface.co/kyang73",
+      "snippet": "None yet. Recent Activity. updated a model about 4 hours ago. kyang73/GRaF-pretrained. updated a dataset about 6 hours ago"
+    },
+    {
+      "title": "kyang73 (kang) - Hugging Face",
+      "url": "https://huggingface.co/kyang73/models",
+      "snippet": "User profile of kang on Hugging Face"
+    },
+    {
+      "title": "RxGS: Receiver-Generalizable 3D Gaussian Splatting for Radio-Frequency ...",
+      "url": "https://arxiv.org/pdf/2605.24290",
+      "snippet": "Recent 3D Gaussian Splatting (3DGS)-based methods achieve efficient synthesis at any transmitter but only for a fixed receiver. Therefore, supporting N receivers in one scene requires N independent models and precludes prediction at unseen receivers. We present RxGS, which achieves receiver-generalizable synthesis within a single unified model."
+    },
+    {
+      "title": "What is a pretrained model? - IBM",
+      "url": "https://www.ibm.com/think/topics/pretrained-model",
+      "snippet": "A pretrained model is a machine learning model that has been previously trained on a large dataset for a specific task (usually general-purpose) and can then be reused or fine-tuned for a different but related task. Pre-trained models save development teams time, data and computational resources compared to training a model from scratch."
+    },
+    {
+      "title": "How to Use Hugging Face Pretrained Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/how-to-use-hugging-face-pretrained-model/",
+      "snippet": "Allows models to be accessed via the Transformers library, Hugging Face APIs or embedded in applications seamlessly. Helps in quick experimentation, fine-tuning and deployment of AI solutions in real-world projects. Getting Started Pretrained models are trained on large datasets and can be applied to specific tasks without training from scratch."
+    }
+  ]
+}

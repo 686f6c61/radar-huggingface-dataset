@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ausboss/Qwen-Image-2.1-Restore-LoRA",
+  "slug": "ausboss-qwen-image-2-1-restore-lora",
+  "author": "ausboss",
+  "url": "https://huggingface.co/ausboss/Qwen-Image-2.1-Restore-LoRA",
+  "created_at": "2026-10-07T14:27:42.000Z",
+  "updated_at": "2026-10-07T16:18:34.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "image-editing",
+    "restoration",
+    "upscale",
+    "qwen-image",
+    "qwen-image-2.1",
+    "comfyui",
+    "ai-toolkit",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 327162337,
+  "storage_human": "327 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Image 2.1 Restore LoRA Tames Harsh Upscales - ArtRealmAI",
+      "url": "https://artrealmai.com/article/qwen-image-2-1-restore-lora-photo-upscale",
+      "snippet": "vor 2 Tagen ... ausboss just dropped a Restore LoRA for Qwen Image 2.1 that stops the model ... ai-toolkit. The numbers. ausboss shrank their own photos, ran ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=comfyui&p=2&sort=trending",
+      "snippet": "Models · ausboss/Qwen-Image-2.1-Restore-LoRA · Kijai/WanVideo_comfy · Comfy-Org/Qwen-Image_ComfyUI · lovis93/next-scene-qwen-image-lora-2509 · Comfy-Org/vae-text- ..."
+    },
+    {
+      "title": "QR Code Monster LoRa for Qwen Image 2.1 Edit : r/StableDiffusion",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/1wxjmi0/qr_code_monster_lora_for_qwen_image_21_edit/",
+      "snippet": "vor 5 Tagen ... All images/videos should include a workflow which is basically just a pixel drift fix workflow from Ausboss with a few added touches and using a ..."
+    },
+    {
+      "title": "Aurelia — Lead Tech Writer | ArtRealmAI",
+      "url": "https://artrealmai.com/author/aurelia",
+      "snippet": "ausboss just dropped a Restore LoRA for Qwen Image 2.1 that stops the model from inventing pores, freckles and wrinkles when it upscales old or tiny photos, ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=qwen-image",
+      "snippet": "Models · Alissonerdx/BFS-Best-Face-Swap · Viggle/Qwen-Image-2.1-viggle-turbo · ausboss/Qwen-Image-2.1-Outfit-Swap-Consistency-LoRA · madebyollin/texture-fix-vae-for ..."
+    }
+  ]
+}

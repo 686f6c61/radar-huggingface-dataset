@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/bert-large-cased-whole-word-masking",
+  "slug": "collectionstudio-bert-large-cased-whole-word-masking",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/bert-large-cased-whole-word-masking",
+  "created_at": "2026-10-09T14:53:40.000Z",
+  "updated_at": "2026-10-09T14:53:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "bert",
+    "en",
+    "dataset:bookcorpus",
+    "dataset:wikipedia",
+    "arxiv:1810.04805",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 334661958,
+  "parameters_human": "334.7M",
+  "storage_bytes": 5471957493,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

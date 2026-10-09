@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ainsophic/mtm-1833",
+  "slug": "ainsophic-mtm-1833",
+  "author": "Ainsophic",
+  "url": "https://huggingface.co/Ainsophic/mtm-1833",
+  "created_at": "2026-10-09T18:07:58.000Z",
+  "updated_at": "2026-10-09T18:08:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ainsophic - GitHub",
+      "url": "https://github.com/ainsophic",
+      "snippet": "Advancing Intelligence through Research and Scalable Products. Engineering the future of AGI with a focus on systemic architecture and human-centric. | EGEO AI - Ainsophic"
+    },
+    {
+      "title": "Ainsophic Research ainsophic-research - GitHub",
+      "url": "https://github.com/ainsophic-research",
+      "snippet": "Advancing Intelligence through Research and Scalable Products. Engineering the future of AGI with a focus on systemic architecture and human-centric. | EGEO AI - ainsophic-research"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "LLM Registry — Compare AI Models, Benchmarks & Pricing | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/",
+      "snippet": "A browsable registry of large language models — frontier and open-weight — with verified specs, benchmarks, pricing and APIs. Filter by maker, family and capability."
+    },
+    {
+      "title": "Ainsophic - El mundo de la IA, en tus manos",
+      "url": "https://www.ainsophic.com/",
+      "snippet": "El mundo de la IA, en tus manos. EGEO es nuestra plataforma de IA frontera, potenciada por Golem: un modelo mental inteligente del mundo real para propósito general diseñado para comprender la complejidad humana, no para imitarla. Construimos sistemas que piensan con vos, no por vos."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fajer94/TESTING",
+  "slug": "fajer94-testing",
+  "author": "Fajer94",
+  "url": "https://huggingface.co/Fajer94/TESTING",
+  "created_at": "2026-10-09T16:16:12.000Z",
+  "updated_at": "2026-10-09T16:39:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442646188,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …Read more"
+    },
+    {
+      "title": "Start OnlyFans | Join and Earn Today",
+      "url": "https://start.onlyfans.com/",
+      "snippet": "Join OnlyFans to monetize your creativity and connect with fans. Sign up to access features like posts, streams, and messages while …"
+    },
+    {
+      "title": "El OnlyFans",
+      "url": "https://onlyfans.com/createanaccount",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …"
+    },
+    {
+      "title": "OnlyFans - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OnlyFans",
+      "snippet": "A house dubbed \"OnlyFans House\" in Bellevue, Washington was raided in June 2026 where women were forced to perform for …"
+    },
+    {
+      "title": "All - OnlyFans Blog",
+      "url": "https://blog.onlyfans.com/all/",
+      "snippet": "Explore All 197 posts on the Official OnlyFans blog. Stay up to date on OnlyFans, learn tips & tricks & be inspired by creator stories."
+    }
+  ]
+}

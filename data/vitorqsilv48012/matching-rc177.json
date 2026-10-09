@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vitorqsilv48012/matching-rc177",
+  "slug": "vitorqsilv48012-matching-rc177",
+  "author": "vitorqsilv48012",
+  "url": "https://huggingface.co/vitorqsilv48012/matching-rc177",
+  "created_at": "2026-10-09T18:28:28.000Z",
+  "updated_at": "2026-10-09T18:28:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "capcutタイムライン全てを一緒に動かす？方法例えば完成してから、 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11291087246",
+      "snippet": "Dec 30, 2023 · capcut タイムライン 全てを一緒に動かす？方法 例えば完成してから、途中のコマに 新しく動画シーンを追加した …"
+    },
+    {
+      "title": "CapCut_2.0.0.357 剪映国际版 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1791004-1-1.html",
+      "snippet": "May 29, 2023 · 剪映国际版和国内版功能没什么差别，都有模板和素材库，但国际版无广告。VIP内容还是需要VIP，只是国际版更为 …"
+    },
+    {
+      "title": "capcutで文字位置の揃え方を知りたいです - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13297611553",
+      "snippet": "May 6, 2024 · CapCutでは、文字の位置を自動的に揃える機能は提供されていません。 文字の位置を揃えるためには、手動でド …"
+    },
+    {
+      "title": "剪映国际版CapCut 6.7.0 视频编辑处理，免费使用素材和滤镜 - 吾爱破 …",
+      "url": "https://www.52pojie.cn/thread-2056797-1-1.html",
+      "snippet": "Aug 30, 2025 · 由于之前的贴已经超过了60天了，所以无法再原帖给大家更新，故而开新贴CapCut是剪映国际版，非常好用，本次是 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/word-365-account-for-an-english-teacher-forces-all/0c2eb3d7-dcc6-4b16-a365-3c9235c84b04",
+      "snippet": ""
+    }
+  ]
+}

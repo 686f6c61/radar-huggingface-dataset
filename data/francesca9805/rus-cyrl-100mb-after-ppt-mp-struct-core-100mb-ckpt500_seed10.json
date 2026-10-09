@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "slug": "francesca9805-rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "created_at": "2026-10-09T14:48:43.000Z",
+  "updated_at": "2026-10-09T16:03:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10",
+    "base_model:finetune:francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 5242499824,
+  "storage_human": "5.2 GB",
+  "base_model": "francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Email Sorting jobs in Remote - Indeed",
+      "url": "https://www.indeed.com/q-Email-Sorting-l-Remote-jobs.html",
+      "snippet": "Browse 28,715 Email Sorting job openings from Remote. Discover flexible, work-from-home opportunities on Indeed in fields like …Read more"
+    },
+    {
+      "title": "Now Hiring: 2,000 Email Sorting Jobs | Indeed",
+      "url": "https://www.indeed.com/q-Email-Sorting-jobs.html",
+      "snippet": "Browse 2,571 Email Sorting jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+    },
+    {
+      "title": "Email Handling Freelance Jobs: Work Remote & Earn Online",
+      "url": "https://www.upwork.com/freelance-jobs/email-handling/",
+      "snippet": "Browse 402 open jobs and land a remote Email Handling job today. See detailed job requirements, compensation, duration, …"
+    },
+    {
+      "title": "Best Email Sorter in 2026: Apps and Software - Clean Email",
+      "url": "https://clean.email/how-to-sort-emails/best-email-sorter",
+      "snippet": "Sep 23, 2026 · Sort emails by any parameter to easily find and clean emails you no longer need. Let’s take a look at eight email …"
+    },
+    {
+      "title": "7 best email sorting apps to organize your inbox in 2026",
+      "url": "https://blog.superhuman.com/email-sorter/",
+      "snippet": "Dec 5, 2025 · Compare the top email sorting apps for 2026. Find the right tool to organize, prioritize, and filter your inbox …"
+    }
+  ]
+}

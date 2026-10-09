@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mni15/Mistral-7b-baru1-uinsa-newDataset",
+  "slug": "mni15-mistral-7b-baru1-uinsa-newdataset",
+  "author": "mni15",
+  "url": "https://huggingface.co/mni15/Mistral-7b-baru1-uinsa-newDataset",
+  "created_at": "2026-10-09T16:10:35.000Z",
+  "updated_at": "2026-10-09T16:12:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mistral",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 7695858912,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ramon Vega - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramon_Vega",
+      "snippet": "During his 13-year professional career he played for Grasshoppers, Cagliari, Tottenham Hotspur, Celtic, Watford and Créteil. Vega …"
+    },
+    {
+      "title": "Qui est Ramon Vega, candidat à la présidence de la FIFA, et …",
+      "url": "https://www.rtbf.be/article/qui-est-ramon-vega-candidat-a-la-presidence-de-la-fifa-et-represente-t-il-une-piste-credible-11796900",
+      "snippet": "1 day ago · Gianni Infantino n’est désormais plus le seul candidat à sa propre succession au poste de président de la FIFA. Le …"
+    },
+    {
+      "title": "Étoile filante à Créteil, patron d’un fonds à un milliard de dollars ...",
+      "url": "https://www.lefigaro.fr/sports/football/passe-par-tottenham-patron-d-un-fonds-a-un-milliard-de-dollars-qui-est-ramon-vega-le-nouvel-adversaire-de-gianni-infantino-a-la-fifa-20261009?msockid=2e9993b6acb96c300b6e845badd06dac",
+      "snippet": "12 hours ago · PORTRAIT - Ancien international suisse, Ramon Vega a connu Tottenham et l’US Créteil avant de se tourner vers la …"
+    },
+    {
+      "title": "Ramon Vega, l’Helvète underground qui défie Gianni Infantino pour la ...",
+      "url": "https://www.liberation.fr/sports/football/ramon-vega-lhelvete-underground-qui-defie-gianni-infantino-pour-la-presidence-de-la-fifa-20261008_PWGKZCW6P5CSZJPGI44VWY3FGE/",
+      "snippet": "1 day ago · Ancien footballeur reconverti dans la finance, le Suisse de 55 ans a annoncé sa candidature pour prendre la tête de la …"
+    },
+    {
+      "title": "Ramon Vega — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ramon_Vega",
+      "snippet": "Né le 14 juin 1971 à Olten 1, Ramon Vega est un fils d’immigrés espagnols 2. Junior au FC Trimbach et au FC Olten 3, il joue, lors de …"
+    }
+  ]
+}

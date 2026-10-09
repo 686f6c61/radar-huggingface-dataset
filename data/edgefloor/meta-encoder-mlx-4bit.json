@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "edgefloor/meta-encoder-mlx-4bit",
+  "slug": "edgefloor-meta-encoder-mlx-4bit",
+  "author": "edgefloor",
+  "url": "https://huggingface.co/edgefloor/meta-encoder-mlx-4bit",
+  "created_at": "2026-10-09T16:13:33.000Z",
+  "updated_at": "2026-10-09T16:35:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "mlx-vlm",
+    "metaencoder",
+    "multimodal",
+    "embeddings",
+    "quantized",
+    "4-bit",
+    "feature-extraction",
+    "base_model:facebook/meta-encoder",
+    "base_model:quantized:facebook/meta-encoder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 19542415911,
+  "storage_human": "19.5 GB",
+  "base_model": "facebook/meta-encoder",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xxxxxxxxxxxxx - Search Videos - Bing",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=xxxxxxxxxxxxx&ajaxhist=0",
+      "snippet": "Watch videos instantly on Bing—enjoy direct playback, discover related clips, and dive into trending content all in one place."
+    },
+    {
+      "title": "22 movie search results for xnxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "url": "https://www.allmovie.com/search/movies/xnxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "snippet": "Find information about \"xnxxxxxxxxxxxxxxxxxxxxxxxxx\" watch \"xnxxxxxxxxxxxxxxxxxxxxxxxxx\" on AllMovie"
+    },
+    {
+      "title": "Top search results for \"xnxxxxxxxxxxxxxxxxxxxxxxxxx\" | AllMovie",
+      "url": "https://www.allmovie.com/search/all/xnxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "snippet": "Find information about \"xnxxxxxxxxxxxxxxxxxxxxxxxxx\" watch \"xnxxxxxxxxxxxxxxxxxxxxxxxxx\" on AllMovie"
+    },
+    {
+      "title": "What does XNXXXXXXXXXXXXXXXXXXXXXXXXX stand for?",
+      "url": "https://www.abbreviations.com/XNXXXXXXXXXXXXXXXXXXXXXXXXX",
+      "snippet": "What does XNXXXXXXXXXXXXXXXXXXXXXXXXX stand for? Explore the possible meanings of …"
+    },
+    {
+      "title": "Find 'xnxxxxxxxxxxxxxxxxxxxxxxxxx' on TikTok | TikTok Search",
+      "url": "https://www.tiktok.com/search/user?q=xnxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "snippet": "Watch 'xnxxxxxxxxxxxxxxxxxxxxxxxxx' videos on TikTok customized just for you. There’s something for everyone. Download the app …"
+    }
+  ]
+}

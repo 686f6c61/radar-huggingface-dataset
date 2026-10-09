@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "slug": "francesca9805-nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "created_at": "2026-10-09T14:47:57.000Z",
+  "updated_at": "2026-10-09T16:05:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455",
+    "base_model:finetune:fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 1330446520,
+  "storage_human": "1.3 GB",
+  "base_model": "fpadovani/nor-latn-10mb-ppt-shuff-dyck-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "52 idées week-end en France - Little Weekends",
+      "url": "https://littleweekends.fr/idees-week-end-france/",
+      "snippet": "Week-ends en bord de mer, escapades culturelles, routes des vins, parenthèses nature... Voici nos meilleures idées week-end en …"
+    },
+    {
+      "title": "Weekend Travel Ideas: 15 Exciting Getaways to Recharge and Explore",
+      "url": "https://harborsaga.com/weekend-travel-ideas/",
+      "snippet": "Budget-friendly weekend getaways provide enriching experiences that rejuvenate without overspending. Exploring these options …"
+    },
+    {
+      "title": "13 amazing Weekend Getaways from Paris by Train!",
+      "url": "https://www.salutfromparis.com/best-weekend-trips-from-paris/",
+      "snippet": "May 15, 2024 · Discover these fantastic weekend getaways easily accessible by France’s efficient railroad system. When day trips …"
+    },
+    {
+      "title": "Getaways from Paris: weekend ideas and nearby destinations",
+      "url": "https://www.sortiraparis.com/en/getaways-from-paris",
+      "snippet": "Need a break? Discover weekend getaways and nearby escapes from Paris: sea, countryside, culture, nature, Europe... easy ways …"
+    },
+    {
+      "title": "The Best 10 Weekend Getaways in France in 2025 - BookRetreats.com",
+      "url": "https://bookretreats.com/t/getaways/weekend-getaways-france",
+      "snippet": "Discover the top 10 weekend getaways in France for 2025. Explore charming villages, scenic landscapes, and cultural treasures. …"
+    }
+  ]
+}

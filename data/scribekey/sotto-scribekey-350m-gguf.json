@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "scribekey/sotto-scribekey-350m-gguf",
+  "slug": "scribekey-sotto-scribekey-350m-gguf",
+  "author": "scribekey",
+  "url": "https://huggingface.co/scribekey/sotto-scribekey-350m-gguf",
+  "created_at": "2026-10-09T18:27:34.000Z",
+  "updated_at": "2026-10-09T18:27:43.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "transcript-cleanup",
+    "asr-post-processing",
+    "lfm2.5",
+    "on-device",
+    "text-generation",
+    "en",
+    "base_model:juanquivilla/sotto-cleanup-lfm25-350m",
+    "base_model:finetune:juanquivilla/sotto-cleanup-lfm25-350m",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 379215776,
+  "storage_human": "379 MB",
+  "base_model": "juanquivilla/sotto-cleanup-lfm25-350m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The P38 flown by Saint-Exupéry (Bouches du Rhône) | Underwater …",
+      "url": "https://archeologie.culture.gouv.fr/archeo-sous-marine/en/p38-flown-saint-exupery-bouches-du-rhone",
+      "snippet": "On 31 July 1944, Antoine de Saint-Exupéry took off from Bastia at the commands of a P-38 Lightning on a reconnaissance mission to …"
+    },
+    {
+      "title": "Le P 38 de Saint-Exupéry (Bouches du Rhône) | Archéologie sous …",
+      "url": "https://archeologie.culture.gouv.fr/archeo-sous-marine/fr/le-p-38-de-saint-exupery-bouches-du-rhone",
+      "snippet": "Localisation approximative de l'épave du P 38 de Saint Exupéry dans les Bouches du Rhône. Le 31 juillet 1944, le P 38 Lightning …"
+    },
+    {
+      "title": "P-38 de Saint Exupéry - Atlas PALM",
+      "url": "https://www.atlaspalm.fr/s56_p38-saintexupery.htm",
+      "snippet": "Devenu pilote au cours de son service militaire, Antoine de Saint-Exupéry parvient à se faire affecter à une escadrille de …"
+    },
+    {
+      "title": "L’épave de l’avion de Saint-Exupéry | Parc national des calanques",
+      "url": "https://www.calanques-parcnational.fr/fr/lepave-de-lavion-de-saint-exupery",
+      "snippet": "Le 31 juillet 1944, le Lightning P38 d’Antoine de Saint-Exupéry décolle de Bastia pour une mission dans le Sud de la France. …"
+    },
+    {
+      "title": "Lockheed P-38 Lightning — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lockheed_P-38_Lightning",
+      "snippet": "Au cours d'une mission de reconnaissance à bord d'un F-5B Lightning, version dérivée du P-38 Lightning4, disparaît l'écrivain …"
+    }
+  ]
+}

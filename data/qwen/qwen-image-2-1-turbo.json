@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen-Image-2.1-Turbo",
+  "slug": "qwen-qwen-image-2-1-turbo",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo",
+  "created_at": "2026-10-09T04:50:01.000Z",
+  "updated_at": "2026-10-09T14:14:45.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 221,
+  "downloads_30d": 0,
+  "trending_score": 221,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 32493258969,
+  "storage_human": "32.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Dec 27, 2024 · Qwen/Qwen3.8-Flash-Next ... Qwen/Qwen3.8-Flash-Next-FP8 ... Qwen/Qwen3.8-2.4T-A95B ... Qwen/Qwen3.8-2.4T …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large …"
+    }
+  ]
+}

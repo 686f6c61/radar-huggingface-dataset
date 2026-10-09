@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "fhai50032/bibo-asr-ckpt",
+  "slug": "fhai50032-bibo-asr-ckpt",
+  "author": "fhai50032",
+  "url": "https://huggingface.co/fhai50032/bibo-asr-ckpt",
+  "created_at": "2026-10-08T14:55:42.000Z",
+  "updated_at": "2026-10-09T18:51:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 120284642,
+  "parameters_human": "120.3M",
+  "storage_bytes": 90338999584,
+  "storage_human": "90.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

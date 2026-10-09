@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-voices-ru",
+  "slug": "mitroshenkov87-voxprint-voices-ru",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-voices-ru",
+  "created_at": "2026-10-09T15:11:45.000Z",
+  "updated_at": "2026-10-09T15:11:52.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "voxprint",
+    "text-to-speech",
+    "voice-cloning",
+    "lora",
+    "ru",
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 669757549,
+  "storage_human": "670 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
+      "snippet": "Start watching videos to help us build a feed of videos you'll love."
+    },
+    {
+      "title": "Your AdSense for YouTube account was deactivated",
+      "url": "https://support.google.com/youtube/answer/10801543?hl=en",
+      "snippet": "You can still sign in to your AdSense for YouTube account while it is deactivated. To reactivate your account, you’ll be asked to verify …"
+    },
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/hot",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    }
+  ]
+}

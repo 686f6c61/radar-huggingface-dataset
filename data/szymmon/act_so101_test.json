@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "szymmon/act_so101_test",
+  "slug": "szymmon-act_so101_test",
+  "author": "szymmon",
+  "url": "https://huggingface.co/szymmon/act_so101_test",
+  "created_at": "2026-10-09T01:25:58.000Z",
+  "updated_at": "2026-10-09T01:26:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cute and Funny Cat Videos Compilation | Try Not To Laugh!",
+      "url": "https://www.dailymotion.com/video/x9tfdtu",
+      "snippet": "Nov 8, 2025 · Get ready to laugh out loud with this adorable and hilarious cat video compilation! 😸 From mischievous kittens causing …"
+    },
+    {
+      "title": "CATS will make you LAUGH YOUR HEAD OFF - Funny CAT compilation",
+      "url": "https://www.youtube.com/watch?v=hY7m5jjJ9mM",
+      "snippet": "May 31, 2017 · Just look how all these cats & kittens play, fail, get along with dogs and other animals, get scared, make funny …"
+    },
+    {
+      "title": "Funny Cats Compilation (Most Popular) Part 1 - YouTube",
+      "url": "https://www.youtube.com/watch?v=JxS5E-kZc2s",
+      "snippet": "Sep 4, 2015 · Video is compiled from all the funny by cute cats of worldwide Subscribe for NoCAT NoLiFE: http://goo.gl/sxSqUV …"
+    },
+    {
+      "title": "The funniest and most humorous cat videos ever! - Funny cat compilation ...",
+      "url": "https://www.youtube.com/watch?v=XyNlqQId-nk",
+      "snippet": "Sep 23, 2016 · Cats are awesome, and super funny too! Who doesn't like cats and kittens? They make us laugh and happy!"
+    },
+    {
+      "title": "Compilation New Funniest Cat Videos You laugh You Lose ... - YouTube",
+      "url": "https://www.youtube.com/watch?v=oeDDUnNp7KE",
+      "snippet": "Jun 22, 2024 · From sneaky dance moves, strange yoga positions to funny situations when they find all kinds of ways to \"play\" with …"
+    }
+  ]
+}

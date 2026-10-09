@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "id": "oyekartikrukja/fake-news-detector-bert-v2",
+  "slug": "oyekartikrukja-fake-news-detector-bert-v2",
+  "author": "oyekartikrukja",
+  "url": "https://huggingface.co/oyekartikrukja/fake-news-detector-bert-v2",
+  "created_at": "2026-10-09T01:38:18.000Z",
+  "updated_at": "2026-10-09T01:38:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

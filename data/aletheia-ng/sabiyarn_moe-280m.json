@@ -5,7 +5,7 @@
   "author": "Aletheia-ng",
   "url": "https://huggingface.co/Aletheia-ng/SabiYarn_MoE-280M",
   "created_at": "2026-07-30T01:40:47.000Z",
-  "updated_at": "2026-10-05T06:07:04.000Z",
+  "updated_at": "2026-10-08T22:27:06.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 6453,
+  "downloads_30d": 6484,
   "trending_score": 0,
   "parameters": 345835008,
   "parameters_human": "345.8M",

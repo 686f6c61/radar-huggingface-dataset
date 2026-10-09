@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Chloechensen/swin-t-generation-exp",
+  "slug": "chloechensen-swin-t-generation-exp",
+  "author": "Chloechensen",
+  "url": "https://huggingface.co/Chloechensen/swin-t-generation-exp",
+  "created_at": "2026-10-09T01:06:05.000Z",
+  "updated_at": "2026-10-09T01:06:10.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20 Bound Gagged Videos, Clips and Stock Footage - Getty Images",
+      "url": "https://www.gettyimages.com/videos/bound-gagged",
+      "snippet": "Browse 20 authentic bound gagged stock videos, stock footage, and video clips available in a variety of formats and sizes to fit your …"
+    },
+    {
+      "title": "Chloechensen (C. Chen) - Hugging Face",
+      "url": "https://huggingface.co/Chloechensen",
+      "snippet": "Working on AI projects: transformers, datasets and fine-tuning."
+    },
+    {
+      "title": "#boundandgagged | TikTok",
+      "url": "https://www.tiktok.com/tag/boundandgagged",
+      "snippet": "45-year-old Hina Javed was found dead in her Rawalpindi home, her hands bound behind her back, mouth gagged and a wire …"
+    },
+    {
+      "title": "julianaalmeida/swin-t-generation · Hugging Face",
+      "url": "https://huggingface.co/julianaalmeida/swin-t-generation",
+      "snippet": "Overview Working implementation of Swin T for Generation using a large configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "#tiedup - TikTok",
+      "url": "https://www.tiktok.com/tag/tiedup",
+      "snippet": "#pov You woke up in a cave, tied up with a guy next to you. You ask him how we got there but he is the kidnapper .... #verifyme"
+    }
+  ]
+}

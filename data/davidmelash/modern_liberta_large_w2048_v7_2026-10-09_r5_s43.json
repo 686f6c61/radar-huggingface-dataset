@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "davidmelash/modern_liberta_large_w2048_v7_2026-10-09_r5_s43",
+  "slug": "davidmelash-modern_liberta_large_w2048_v7_2026-10-09_r5_s43",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7_2026-10-09_r5_s43",
+  "created_at": "2026-10-09T18:06:56.000Z",
+  "updated_at": "2026-10-09T18:09:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "uk",
+    "base_model:Goader/modern-liberta-large",
+    "base_model:finetune:Goader/modern-liberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409799689,
+  "parameters_human": "409.8M",
+  "storage_bytes": 1641621972,
+  "storage_human": "1.6 GB",
+  "base_model": "Goader/modern-liberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ggnetwork: how to set geographic information on the vertex",
+      "url": "https://stackoverflow.com/questions/49695218/ggnetwork-how-to-set-geographic-information-on-the-vertex",
+      "snippet": "ggnetwork: how to put geographic information on the vertex ? ggnetwork(n, layout = \"fruchtermanreingold\", cell.jitter = 0.75) The …"
+    },
+    {
+      "title": "r - ggnetwork scale edge and node (vertex) size independently ...",
+      "url": "https://stackoverflow.com/questions/36835825/ggnetwork-scale-edge-and-node-vertex-size-independently-different-geoms-diffe",
+      "snippet": "Apr 25, 2016 · I want to use a different size scale for edges and nodes in a network created with the ggnetwork package. If you look …"
+    },
+    {
+      "title": "gitを使用するとnothing to commit, working tree cleanとなる",
+      "url": "https://ja.stackoverflow.com/questions/89377/git%e3%82%92%e4%bd%bf%e7%94%a8%e3%81%99%e3%82%8b%e3%81%a8nothing-to-commit-working-tree-clean%e3%81%a8%e3%81%aa%e3%82%8b",
+      "snippet": "Jun 14, 2022 · Macbookを買い替えて移行アシスタントを使ってGitとGitHubの設定をしようとしているのですが、うまくいきませ …"
+    },
+    {
+      "title": "Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/",
+      "snippet": "Preguntas y respuestas para programadores y profesionales de la informática"
+    },
+    {
+      "title": "Problema con Scripts en Visual Studio Code",
+      "url": "https://es.stackoverflow.com/questions/321611/problema-con-scripts-en-visual-studio-code",
+      "snippet": "Jan 14, 2020 · En cuanto abro Visual Studio Code, me aparece en la consola propia de VSCode, lo siguiente: . : No se puede cargar …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "despair101/bge-small-en-v1.5-conll2003-ner",
+  "slug": "despair101-bge-small-en-v1-5-conll2003-ner",
+  "author": "despair101",
+  "url": "https://huggingface.co/despair101/bge-small-en-v1.5-conll2003-ner",
+  "created_at": "2026-10-09T16:21:02.000Z",
+  "updated_at": "2026-10-09T16:52:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132897158,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uncle Grandpa: Riley gets grounded from getting an F - YouTube",
+      "url": "https://www.youtube.com/watch?v=ybUl7N7aJAE",
+      "snippet": "Jul 4, 2023 · “You’re grounded!” Long Compilation. Enjoy the videos and music you love, upload original content, and share it all with …"
+    },
+    {
+      "title": "Riley | Uncle Grandpa Wiki | Fandom",
+      "url": "https://uncle-grandpa.fandom.com/wiki/Riley",
+      "snippet": "Riley is a character that appears in Grounded. Uncle Grandpa helped him go to a party without realizing that he was actually …"
+    },
+    {
+      "title": "Uncle Grandpa Clip: Riley Gets an \"F\"!! - YouTube",
+      "url": "https://www.youtube.com/watch?v=MeHLJttixzE",
+      "snippet": "Oct 20, 2021 · Uncle Grandpa Clip: Riley Gets an \"F\"!!"
+    },
+    {
+      "title": "Grounded - Uncle Grandpa Wiki",
+      "url": "https://uncle-grandpa.fandom.com/wiki/Grounded",
+      "snippet": "Riley thanks Uncle Grandpa for being a complete loser and when he leaves his dad says that he doesn't want to hear any laughing in …"
+    },
+    {
+      "title": "Grounded (Uncle Grandpa) | The Cartoon Network Wiki | Fandom",
+      "url": "https://cartoonnetwork.fandom.com/wiki/Grounded_(Uncle_Grandpa)",
+      "snippet": "Grounded is the 37 episode of Uncle Grandpa Season 1, and the 37th overall episode of the series. Riley's dad confronts Riley on …"
+    }
+  ]
+}

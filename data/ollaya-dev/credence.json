@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ollaya-dev/credence",
+  "slug": "ollaya-dev-credence",
+  "author": "ollaya-dev",
+  "url": "https://huggingface.co/ollaya-dev/credence",
+  "created_at": "2026-10-09T18:00:36.000Z",
+  "updated_at": "2026-10-09T18:00:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ollaya",
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "system-one",
+    "text-classification",
+    "base_model:Txoka/Credence-v1-Gemma4-E4B",
+    "base_model:finetune:Txoka/Credence-v1-Gemma4-E4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Txoka/Credence-v1-Gemma4-E4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ollaya · Run decision models locally",
+      "url": "https://ollaya.dev/",
+      "snippet": "Ollaya downloads and serves open decision models on your own machine. Typed, calibrated answers in milliseconds, private and open source."
+    },
+    {
+      "title": "Models · Ollaya",
+      "url": "https://ollaya.dev/search",
+      "snippet": "Numbers are for each model&#x27;s default tag. Typed-decisions accuracy is the argmax against the majority label on all 400 typed-decisions states; the labels have low annotator agreement, so compare models with each other rather than reading the numbers as absolutes."
+    },
+    {
+      "title": "GitHub - ollaya-dev/ollaya: Run open decision models locally: pull and ...",
+      "url": "https://github.com/ollaya-dev/ollaya",
+      "snippet": "Run open decision models locally: pull and serve Laya, decider, NLI and GLiClass behind a TypeSafe-compatible API. Ollama for decision models. - ollaya-dev/ollaya"
+    },
+    {
+      "title": "Ollaya Ollama Decision Model Setup [2026]: Routing + Benchmarks",
+      "url": "https://www.kunalganglani.com/blog/ollaya-ollama-decision-setup",
+      "snippet": "Need ollaya ollama decision model setup? Run Ollaya locally, point TypeSafe SDK to localhost, and benchmark routing p50/p95 vs LLM JSON routers."
+    },
+    {
+      "title": "ollaya-dev/decision · Hugging Face",
+      "url": "https://huggingface.co/ollaya-dev/decision",
+      "snippet": "What is in this repository This repository holds only the files Ollaya derives, with no weights. Each graph is an ONNX export of the original model whose weights reference the authors&#x27; own weight files by byte offset, so ollaya pull downloads the weights from the upstream repositories, unmodified and pinned to a commit, and verifies their sha256."
+    }
+  ]
+}

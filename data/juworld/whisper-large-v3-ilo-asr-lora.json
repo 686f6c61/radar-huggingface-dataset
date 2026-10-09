@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "juworld/whisper-large-v3-ilo-asr-lora",
+  "slug": "juworld-whisper-large-v3-ilo-asr-lora",
+  "author": "juworld",
+  "url": "https://huggingface.co/juworld/whisper-large-v3-ilo-asr-lora",
+  "created_at": "2026-10-09T16:21:23.000Z",
+  "updated_at": "2026-10-09T16:21:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:openai/whisper-large-v3",
+    "lora",
+    "transformers",
+    "arxiv:1910.09700",
+    "base_model:openai/whisper-large-v3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62969640,
+  "storage_human": "63 MB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laisser Claude utiliser votre ordinateur dans Cowork",
+      "url": "https://support.claude.com/fr/articles/14128542-laisser-claude-utiliser-votre-ordinateur-dans-cowork",
+      "snippet": "Sep 2, 2026 · Lorsque l'utilisation de l'ordinateur est activée et que Claude n'a pas de connecteur ou d'outil pour ce dont vous avez …"
+    },
+    {
+      "title": "Laisser Claude utiliser votre ordinateur depuis la CLI",
+      "url": "https://code.claude.com/docs/fr/computer-use",
+      "snippet": "Depuis la CLI, Claude peut compiler une application Swift, la lancer, cliquer sur chaque bouton et faire une capture d’écran du …"
+    },
+    {
+      "title": "Claude peut maintenant utiliser ton ordinateur",
+      "url": "https://onurkarapinar.substack.com/p/claude-computer-use",
+      "snippet": "Apr 15, 2026 · You can now enable Claude to use your computer to complete tasks. It opens your apps, navigates your browser, fills …"
+    },
+    {
+      "title": "Commencer avec Claude Cowork | Anthropic Help Center",
+      "url": "https://support.claude.com/fr/articles/13345190-commencer-avec-claude-cowork",
+      "snippet": "3 days ago · Cet article explique comment utiliser Claude Cowork, qui apporte les capacités agentiques de Claude Code au travail …"
+    },
+    {
+      "title": "Claude utilise ton ordinateur : le guide débutant - learnaifast.io",
+      "url": "https://learnaifast.io/fr/blog/claude-usa-tu-ordenador-computer-use-guia-principiantes",
+      "snippet": "Jun 8, 2026 · Dans ce guide, je t'explique ce que c'est précisément, comment l'activer en cinq minutes, trois tâches à tester …"
+    }
+  ]
+}

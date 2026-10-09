@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "kolmann1231/pi0-robosyn-pipette-24k",
+  "slug": "kolmann1231-pi0-robosyn-pipette-24k",
+  "author": "kolmann1231",
+  "url": "https://huggingface.co/kolmann1231/pi0-robosyn-pipette-24k",
+  "created_at": "2026-10-09T00:54:35.000Z",
+  "updated_at": "2026-10-09T11:49:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi0",
+    "openpi",
+    "robosynchallenge",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6157309500,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fishing at Étang de l'Or, Hérault, France | PiscaMaps",
+      "url": "https://piscamaps.com/lakes/tang-de-lor/",
+      "snippet": "Pike fishing is a highlight of the venue — spinning, deadbaiting and lure fishing are all effective methods. A valid Carte de Pêche is …"
+    },
+    {
+      "title": "Étang de l'Or — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89tang_de_l%27Or",
+      "snippet": "L'étang de l'Or et les marais qui l'entourent constituent une zone humide abritant une faune et une flore particulières. À ce titre il a …"
+    },
+    {
+      "title": "GEOPECHE - La Carte halieutique indispensable.",
+      "url": "https://www.geopeche.com/",
+      "snippet": "La carte GEOPECHE™ identifie avec précision les limites de catégories piscicoles. De cette manière, plus que doute sur la …"
+    },
+    {
+      "title": "AU FIL DES ETANGS (2/5) 3 000 hectares, une pêche artisanale, des ...",
+      "url": "https://www.midilibre.fr/2026/08/11/etang-de-lor-une-peche-artisanale-qui-se-maintient-notamment-a-languille-espece-emblematique-mais-protegee-13471416.php",
+      "snippet": "Aug 11, 2026 · Sur l’étang de l’Or, une cinquantaine de pêcheurs artisans, comme Laurent Pezzotti, maintiennent une activité …"
+    },
+    {
+      "title": "Etang de l'Or (34) : Tarifs, Record et Avis - Étang de pêche",
+      "url": "https://www.etang-de-peche.fr/etang-de-l-or-840/",
+      "snippet": "Vous avez effectué une partie de pêche à la carpe ou sur cet étang, vous avez des informations à partager, ou vous avez tous …"
+    }
+  ]
+}

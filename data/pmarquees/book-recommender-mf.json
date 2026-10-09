@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pmarquees/book-recommender-mf",
+  "slug": "pmarquees-book-recommender-mf",
+  "author": "pmarquees",
+  "url": "https://huggingface.co/pmarquees/book-recommender-mf",
+  "created_at": "2026-10-09T18:20:39.000Z",
+  "updated_at": "2026-10-09T18:20:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "recommender",
+    "matrix-factorization",
+    "goodreads",
+    "collaborative-filtering",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111267000,
+  "storage_human": "111 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - tejaswini-phukan/book-recommender: AI-based book ...",
+      "url": "https://github.com/tejaswini-phukan/book-recommender",
+      "snippet": "Welcome to the Book Recommender System - an AI-powered recommendation engine built using Mathematics and Machine Learning (Decision Tree Classifier) and Streamlit. This project was created as a beginner-friendly AI/ML app to suggest books based on user preferences like genre, author, and reading history. Whether you&#x27;re a bookworm or a curious beginner exploring machine learning, this project ..."
+    },
+    {
+      "title": "Pranitttt64/Book-Recommender-AI-Model-App - GitHub",
+      "url": "https://github.com/Pranitttt64/Book-Recommender-AI-Model-App",
+      "snippet": "🚀 AI-Powered Personalized Book Recommendation System An intelligent book recommender web app powered by Keras Autoencoders and Streamlit, designed to suggest personalized book titles based on collaborative filtering. This project combines deep learning with a sleek UI and interactive filter-based search experience."
+    },
+    {
+      "title": "PDF AI based Book Recommender System with Hybrid Approach",
+      "url": "https://www.ijert.org/research/ai-based-book-recommender-system-with-hybrid-approach-IJERTV9IS020416.pdf",
+      "snippet": "This book recommendation uses one of the filtering techniques known as collaborative filtering (CF) and content- based filtering, making the system a hybrid recommender system."
+    },
+    {
+      "title": "PDF How to Build a Recommender System - Stanford University",
+      "url": "https://cs229.stanford.edu/proj2019aut/data/assignment_308832_raw/26588542.pdf",
+      "snippet": "2.3 Matrix Factorization Based Model In this part, we attempt Matrix Factorization (MF) based Recommender System [16]. This type of recommender system uses what is called a Singular Value Decomposition (SVD) factorized matrix of the original similarity matrix to build recommender system."
+    },
+    {
+      "title": "AI Recommender Systems - Kim Falk",
+      "url": "https://www.manning.com/books/ai-recommender-systems",
+      "snippet": "AI Recommender Systems gives you a guided tour to the new era of recommenders, powered by LLMs, agents, and context engineering. Author Kim Falk takes you from your first introduction to recommenders all the way to evaluation and production-ready systems."
+    }
+  ]
+}

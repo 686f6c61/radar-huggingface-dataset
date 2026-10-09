@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SmallAICreator/GRAFT-Code",
+  "slug": "smallaicreator-graft-code",
+  "author": "SmallAICreator",
+  "url": "https://huggingface.co/SmallAICreator/GRAFT-Code",
+  "created_at": "2026-10-09T15:03:36.000Z",
+  "updated_at": "2026-10-09T15:37:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "windows",
+    "desktop-app",
+    "agent",
+    "tool-calling",
+    "llama.cpp",
+    "gguf",
+    "local-ai",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129655009,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elixir of the Colossus - bg3.wiki",
+      "url": "https://bg3.wiki/wiki/Elixir_of_the_Colossus",
+      "snippet": "Elixir of the Colossus is an uncommon Elixir that when drunk, increases your size. Weapons deal an additional 1d4 damage. You …Read more"
+    },
+    {
+      "title": "Elixir of The Colossus (Condition) - bg3.wiki",
+      "url": "https://bg3.wiki/wiki/Elixir_of_The_Colossus_(Condition)",
+      "snippet": "Weapons deal an additional 1d4 damage, and the affected entity has Advantage on Strength checks and Saving Throws. Carrying …"
+    },
+    {
+      "title": "Elixir of The Colossus Item Guide: Effects and How to Get",
+      "url": "https://game8.co/games/BG3/archives/424730",
+      "snippet": "Nov 7, 2024 · Elixir of The Colossus is a Uncommon Potion in Baldur's Gate 3 (BG3). Read on to learn more about the Elixir of The …"
+    },
+    {
+      "title": "Elixir of Hill Giant Strength VS Colossus : r/BaldursGate3 - Reddit",
+      "url": "https://www.reddit.com/r/BaldursGate3/comments/1692x22/elixir_of_hill_giant_strength_vs_colossus/",
+      "snippet": "Sep 3, 2023 · Although only the colossus elixir explicitly says it replaces effects when drunk and hill giant does not, implying if you …"
+    },
+    {
+      "title": "Elixir of the Colossus | Baldur's Gate 3 - Fextralife Wiki",
+      "url": "https://baldursgate3.wiki.fextralife.com/Elixir_of_the_Colossus",
+      "snippet": "Sep 21, 2026 · Elixir of the Colossus Guide. Where to find, uses, value, and tips for Elixir of the Colossus in Baldur's Gate 3."
+    }
+  ]
+}

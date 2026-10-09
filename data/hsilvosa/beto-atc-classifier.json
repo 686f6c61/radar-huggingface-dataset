@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "hsilvosa/BETO-ATC-Classifier",
+  "slug": "hsilvosa-beto-atc-classifier",
+  "author": "hsilvosa",
+  "url": "https://huggingface.co/hsilvosa/BETO-ATC-Classifier",
+  "created_at": "2026-10-09T16:17:11.000Z",
+  "updated_at": "2026-10-09T17:08:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "spanish",
+    "medical",
+    "pharmacology",
+    "atc-code",
+    "aemps-cima",
+    "es",
+    "dataset:hsilvosa/aemps-cima",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109861646,
+  "parameters_human": "109.9M",
+  "storage_bytes": 439470120,
+  "storage_human": "439 MB",
+  "base_model": "dccuchile/bert-base-spanish-wwm-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

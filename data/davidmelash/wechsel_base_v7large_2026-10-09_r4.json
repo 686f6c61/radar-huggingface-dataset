@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "davidmelash/wechsel_base_v7large_2026-10-09_r4",
+  "slug": "davidmelash-wechsel_base_v7large_2026-10-09_r4",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/wechsel_base_v7large_2026-10-09_r4",
+  "created_at": "2026-10-09T16:49:02.000Z",
+  "updated_at": "2026-10-09T16:49:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "uk",
+    "base_model:benjamin/roberta-base-wechsel-ukrainian",
+    "base_model:finetune:benjamin/roberta-base-wechsel-ukrainian",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124061961,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496271772,
+  "storage_human": "496 MB",
+  "base_model": "benjamin/roberta-base-wechsel-ukrainian",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily crossword puzzles free from The Washington Post",
+      "url": "https://www.washingtonpost.com/games/crossword/",
+      "snippet": "Play Washington Post's daily crossword puzzles online for free."
+    },
+    {
+      "title": "Free Online Crossword Puzzles",
+      "url": "https://www.boatloadpuzzles.com/playcrossword",
+      "snippet": "The world's largest supply of crossword puzzles, playable for free online. Tablet and phone friendly."
+    },
+    {
+      "title": "New Yorker Crossword Puzzles",
+      "url": "https://www.newyorker.com/puzzles-and-games-dept/crossword",
+      "snippet": "4 days ago · Solve daily full-sized and mini crosswords, which range from easy and beginner-friendly to difficult, from The New …"
+    },
+    {
+      "title": "Crosswords | Online and free | The Guardian",
+      "url": "https://www.theguardian.com/crosswords",
+      "snippet": "Free crosswords that can be completed online by mobile, tablet and desktop, and are printable. Daily easy, quick and cryptic …"
+    },
+    {
+      "title": "Daily Crossword - Free Puzzle from the New York Post",
+      "url": "https://nypost.com/games/crossword-puzzles/",
+      "snippet": "Play a free daily crossword puzzle online from the NY Post. Try to answer today's new puzzle or play past crossword puzzles you …"
+    }
+  ]
+}

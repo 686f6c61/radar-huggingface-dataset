@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shreyaguptabuz/clip-baseline",
+  "slug": "shreyaguptabuz-clip-baseline",
+  "author": "shreyaguptabuz",
+  "url": "https://huggingface.co/shreyaguptabuz/clip-baseline",
+  "created_at": "2026-10-09T18:13:14.000Z",
+  "updated_at": "2026-10-09T18:13:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mi cuenta | PayPal ES",
+      "url": "https://www.paypal.com/es/cshelp/topic/help_account_personal",
+      "snippet": "¿Qué es PayPal Recaudación de Fondos y cómo funciona? ¿Cómo creo una recaudación de PayPal Recaudación de Fondos? …"
+    },
+    {
+      "title": "Mon compte | PayPal FR",
+      "url": "https://www.paypal.com/fr/cshelp/topic/help_account_personal",
+      "snippet": "Comment fermer le compte PayPal d'un proche décédé ? Comment vérifier l'état de mon paiement ? Comment afficher et …"
+    },
+    {
+      "title": "My Account | PayPal US",
+      "url": "https://history.paypal.com/us/cshelp/topic/help_account_personal",
+      "snippet": "Policies What is PayPal Seller Protection? Does PayPal cover my purchase if there's a problem? What is PayPal’s Acceptable Use …"
+    },
+    {
+      "title": "PayPalアカウントへのログイン",
+      "url": "https://www.sandbox.paypal.com/jp/signin",
+      "snippet": "PayPal.comの [設定]でいつでも利用を停止できます。 新しい端末とブラウザでの支払い時に、Googleアカウントでログインしてい …"
+    },
+    {
+      "title": "Login & Security | PayPal NA",
+      "url": "https://history.paypal.com/na/cshelp/topic/help_login_and_security_personal",
+      "snippet": "Security What are the Payment Services Directives, strong customer authentication and remembered device? How can I submit a …"
+    }
+  ]
+}

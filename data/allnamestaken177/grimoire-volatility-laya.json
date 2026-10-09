@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "allnamestaken177/grimoire-volatility-laya",
+  "slug": "allnamestaken177-grimoire-volatility-laya",
+  "author": "allnamestaken177",
+  "url": "https://huggingface.co/allnamestaken177/grimoire-volatility-laya",
+  "created_at": "2026-10-09T16:14:59.000Z",
+  "updated_at": "2026-10-09T16:32:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "typed-decisions",
+    "agent-memory",
+    "grimoire",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

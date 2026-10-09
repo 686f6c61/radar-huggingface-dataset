@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "badr7/rapidchat-GGUF",
+  "slug": "badr7-rapidchat-gguf",
+  "author": "badr7",
+  "url": "https://huggingface.co/badr7/rapidchat-GGUF",
+  "created_at": "2026-10-09T01:36:06.000Z",
+  "updated_at": "2026-10-09T02:36:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "tau2-bench",
+    "agents",
+    "base_model:badr7/rapidchat",
+    "base_model:quantized:badr7/rapidchat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 27866805888,
+  "storage_human": "27.9 GB",
+  "base_model": "badr7/rapidchat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bed & Breakfast | Ambleside - Crow How Country Guest House",
+      "url": "https://crowhow.co.uk/",
+      "snippet": "A 4 Star Silver graded traditional Country House Bed & Breakfast accommodation in Ambleside in the heart of the Lake District. Set …"
+    },
+    {
+      "title": "Ambleside - Crow How Country Guest House",
+      "url": "https://crowhow.co.uk/guest-house/cumbria/ambleside/",
+      "snippet": "Set peacefully from the road and next to a working farm, our 4 Star guest house is only 10 minutes from Ambleside’s shops, cafes, …"
+    },
+    {
+      "title": "Crow How Country Guest House, Ambleside (updated prices)",
+      "url": "https://www.booking.com/hotel/gb/crow-how-country-guest-house.html?msockid=0152a67689fd66d42201b19b88aa67d6",
+      "snippet": "Set in the historic Rydal Valley, amid the fells, sits Crow How Country Guest House. Crow How is located in 2 acres of private …"
+    },
+    {
+      "title": "CROW HOW COUNTRY GUEST HOUSE - Recent 2026 Reviews - Tripadvisor",
+      "url": "https://www.tripadvisor.co.uk/Hotel_Review-g186319-d943845-Reviews-Crow_How_Country_Guest_House-Ambleside_Lake_District_Cumbria_England.html",
+      "snippet": "Book Crow How Country Guest House, Ambleside, Lake District on Tripadvisor: See 932 traveller reviews, 418 candid photos, and …"
+    },
+    {
+      "title": "Crow How Country Guest House, Ambleside (tarifs actualisés pour 2027)",
+      "url": "https://www.booking.com/hotel/gb/crow-how-country-guest-house.fr.html?msockid=0152a67689fd66d42201b19b88aa67d6",
+      "snippet": "Crow How is situated in 2 acres of private woodland gardens surrounded by countryside views, the Fairfield Horseshoe and …"
+    }
+  ]
+}

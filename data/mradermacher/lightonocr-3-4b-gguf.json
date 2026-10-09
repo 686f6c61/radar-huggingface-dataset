@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LightOnOCR-3-4B-GGUF",
+  "slug": "mradermacher-lightonocr-3-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LightOnOCR-3-4B-GGUF",
+  "created_at": "2026-10-09T17:58:48.000Z",
+  "updated_at": "2026-10-09T19:06:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "tables",
+    "forms",
+    "en",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:quantized:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945653888,
+  "storage_human": "39.9 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "LightOnOCR-3 is our new family of end-to-end OCR models: text, layout, image and chart understanding from a single compact model."
+    },
+    {
+      "title": "mradermacher/AgenticOCR-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/AgenticOCR-4B-GGUF",
+      "snippet": "mradermacher / AgenticOCR-4B-GGUF like 0 Transformers GGUF English qwen3-vl document-vqa agentic-ocr conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "GitHub - lightonai/LightOnOCR: Turn document pixels into structured ...",
+      "url": "https://github.com/lightonai/LightOnOCR/tree/main",
+      "snippet": "The client reads the model name from the server and picks the page size, sampling and modes to match. With a custom --served-model-name, it assumes LightOnOCR-3 at 2048 px. --longest-edge overrides the page size."
+    },
+    {
+      "title": "LightOn open-sources LightOnOCR-3 in 0.8B, 1B and 4B sizes under Apache ...",
+      "url": "https://www.darius.wiki/en/daily/2026-10-09/lightonocr-3/",
+      "snippet": "Three models at 0.8B, 1B and 4B under Apache 2.0, commercial use allowed; the 0.8B and 4B move to the Qwen3.5 vision-language architecture. olmOCR-Bench overall: 86.3 for 4B, 85.5 for 0.8B and 84.5 for 1B, against 87.6 for the 35.1B-parameter Infinity Parser Pro."
+    }
+  ]
+}

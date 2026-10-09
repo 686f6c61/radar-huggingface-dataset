@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-33cdf26b-795d-46b0-b024-39ad1c50089e",
+  "slug": "muhamad-geosurge-invert-polarity-33cdf26b-795d-46b0-b024-39ad1c50089e",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-33cdf26b-795d-46b0-b024-39ad1c50089e",
+  "created_at": "2026-10-09T14:38:15.000Z",
+  "updated_at": "2026-10-09T14:40:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIMODS - CheckFirst",
+      "url": "https://checkfirst.network/project/simods/",
+      "snippet": "SIMODS brings together eight leading fact-checking and research organizations from across Europe to create methodologically …"
+    },
+    {
+      "title": "2025-09-First SIMODS Report - science.feedback.org",
+      "url": "https://science.feedback.org/wp-content/uploads/2025/09/SIMODS-Report-1.pdf",
+      "snippet": "SIMODS (Structural Indicators to Monitor Online Disinformation Scientifically) is a project led by Science Feedback, in partnership …"
+    },
+    {
+      "title": "2026-03-Second SIMODS Report - science.feedback.org",
+      "url": "https://science.feedback.org/wp-content/uploads/2026/03/SIMODS-Report-2.pdf",
+      "snippet": "SIMODS (Structural Indicators to Monitor Online Disinformation Scientifically) is a project led by Science Feedback, in partnership …"
+    },
+    {
+      "title": "SIAM Journal on Mathematics of Data Science | SIAM",
+      "url": "https://www.siam.org/publications/siam-journals/siam-journal-on-mathematics-of-data-science/",
+      "snippet": "SIAM Journal on Mathematics of Data Science (SIMODS) publishes work that advances mathematical, statistical, and computational …"
+    },
+    {
+      "title": "SIMODS - Structural Indicators to Measure Online Disinformation ...",
+      "url": "https://gulbenkian.pt/emifund/projects/simods-structural-indicators-to-measure-online-disinformation-scientifically/",
+      "snippet": "Apr 10, 2025 · The SIMODS project (Structural Indicators to Monitor Online Disinformation Scientifically) aims to develop a …"
+    }
+  ]
+}

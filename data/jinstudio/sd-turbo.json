@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/sd-turbo",
+  "slug": "jinstudio-sd-turbo",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/sd-turbo",
+  "created_at": "2026-10-09T16:58:06.000Z",
+  "updated_at": "2026-10-09T16:58:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 865910724,
+  "parameters_human": "865.9M",
+  "storage_bytes": 12954587874,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rechercher une vidéo ou un programme | France TV",
+      "url": "https://mobile.france.tv/recherche/",
+      "snippet": "Retrouvez toutes les vidéos, articles et podcasts des programmes des chaînes de France Télévisions."
+    },
+    {
+      "title": "Le chant de la mer - Film Jeunesse - Play RTS",
+      "url": "https://www.rts.ch/play/tv/film-jeunesse/video/le-chant-de-la-mer?urn=urn%3Arts%3Avideo%3A33b80ece-1678-3dd2-aff5-9a129f270223",
+      "snippet": "Dec 1, 2025 · Le chant de la mer Ben et Maïna vivent avec leur père tout en haut d'un phare sur une petite île. Pour les protéger des …"
+    },
+    {
+      "title": "Où regarder Le chant de la mer - fr.download.it",
+      "url": "https://fr.download.it/movie/song-of-the-sea-2014",
+      "snippet": "Découvrez où regarder Le chant de la mer. Découvrez où regarder le film sur ces services de streaming : Netflix, Hulu, Disney Plus, …"
+    },
+    {
+      "title": "La Chanson de la Mer - PAROLES/LYRICS - Nolwenn Leroy",
+      "url": "https://m.youtube.com/watch?v=Y73Gu7IlTz4",
+      "snippet": "Oct 27, 2016 · English translation in the closed captionsTraduction des phrases gaélique d'Irlande à français:Mo stóirín: mon petit …"
+    },
+    {
+      "title": "Dernières Critiques du film Le Chant de la Mer - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm-226004/critiques/spectateurs/recentes/",
+      "snippet": "Retrouvez toutes les dernières critiques sur le film Le Chant de la Mer, réalisé par Tomm Moore avec les voix de Jean-Stan Du Pac, …"
+    }
+  ]
+}

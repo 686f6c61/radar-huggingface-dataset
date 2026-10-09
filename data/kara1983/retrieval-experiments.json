@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kara1983/retrieval-experiments",
+  "slug": "kara1983-retrieval-experiments",
+  "author": "kara1983",
+  "url": "https://huggingface.co/kara1983/retrieval-experiments",
+  "created_at": "2026-10-09T18:32:03.000Z",
+  "updated_at": "2026-10-09T18:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval-Augmented Language Model for Knowledge-aware Protein Encoding",
+      "url": "https://proceedings.mlr.press/v267/zhang25cz.html",
+      "snippet": "In this paper, we propose Knowledge-aware retrieval augmented protein language model (Kara), achieving the first task-oriented and explicit integration of PKGs and protein language models."
+    },
+    {
+      "title": "Retrieval-Augmented Language Model for Knowledge-aware P...",
+      "url": "https://bytez.com/docs/icml/45183/paper",
+      "snippet": "We develop a retrieval-augmented language model for knowledge-aware protein representation learning, which achieves direct integration of high-order knowledge graphs and protein language models."
+    },
+    {
+      "title": "kara1983/multitask · Hugging Face",
+      "url": "https://huggingface.co/kara1983/multitask",
+      "snippet": "Repository status The Python file contains the model and runnable example or training entry point. config.json records the generated architecture settings. training_args.json records the default experiment recipe. model.safetensors is a valid initialization checkpoint for smoke tests; it is not presented as a trained benchmark checkpoint."
+    },
+    {
+      "title": "PDF Retrieval-Augmented Language Model for Knowledge-Aware Protein Encoding",
+      "url": "https://icml.cc/media/icml-2025/Slides/45183_Yy64bly.pdf",
+      "snippet": "Experiments in 6 representative tasks show the effectiveness of Kara. It outperforms powerful baselines across all the tasks. For instance, Kara exceeds the state-of-the-art knowledge-enhanced model KeAP by 11.6% in the long-range contact prediction and by 10.3% in the protein homology detection"
+    },
+    {
+      "title": "ICML Poster Retrieval-Augmented Language Model for Knowledge-aware ...",
+      "url": "https://icml.cc/virtual/2025/poster/45183",
+      "snippet": "In this paper, we propose Knowledge-aware retrieval augmented protein language model (Kara), achieving the first task-oriented and explicit integration of PKGs and protein language models."
+    }
+  ]
+}

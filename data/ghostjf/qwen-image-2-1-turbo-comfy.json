@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "GhostJF/Qwen-Image-2.1-Turbo-Comfy",
+  "slug": "ghostjf-qwen-image-2-1-turbo-comfy",
+  "author": "GhostJF",
+  "url": "https://huggingface.co/GhostJF/Qwen-Image-2.1-Turbo-Comfy",
+  "created_at": "2026-10-09T14:54:54.000Z",
+  "updated_at": "2026-10-09T14:55:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14230284584,
+  "storage_human": "14.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Tabahi/mbfa-cjk",
+  "slug": "tabahi-mbfa-cjk",
+  "author": "Tabahi",
+  "url": "https://huggingface.co/Tabahi/mbfa-cjk",
+  "created_at": "2026-10-09T17:52:50.000Z",
+  "updated_at": "2026-10-09T17:52:56.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "cmn",
+    "yue"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "forced-alignment",
+    "phoneme-recognition",
+    "phoneme-segmentation",
+    "speech",
+    "multilingual",
+    "cmn",
+    "yue",
+    "dataset:google/fleurs",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14711189,
+  "parameters_human": "14.7M",
+  "storage_bytes": 117727303,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ai Goddess | Tabahi #fyp #viral #explorepage - Instagram",
+      "url": "https://www.instagram.com/p/Db8m9J6FFrF/",
+      "snippet": "3,707 likes, 133 comments - ai.goddess.ig on August 12, 2026: \"Tabahi 💥💥💥 #fyp #viral #explorepage \"."
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/En",
+      "snippet": "Character AI and AI chat free with 20M+ AI character on Polybuzz. Talk AI anytime, explore AI chat roleplay, and create your AI girlfriend."
+    },
+    {
+      "title": "AI TABAHI - YouTube",
+      "url": "https://www.youtube.com/channel/UCr2cdu4MzNab1RwZpebLpMQ",
+      "snippet": "Welcome to AI Tabahi 🤖🔥Enter a world of crazy AI adventures, funny characters, unexpected twists, and entertaining animated stories!🎬 AI Animated Stories?..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "tabahi · GitHub",
+      "url": "https://github.com/tabahi",
+      "snippet": "Speech processing and DIY. tabahi has 45 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

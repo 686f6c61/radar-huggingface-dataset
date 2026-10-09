@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "inferencerlabs/Atria-Dawn-Preview-MLX-Q4i",
+  "slug": "inferencerlabs-atria-dawn-preview-mlx-q4i",
+  "author": "inferencerlabs",
+  "url": "https://huggingface.co/inferencerlabs/Atria-Dawn-Preview-MLX-Q4i",
+  "created_at": "2026-10-09T01:40:12.000Z",
+  "updated_at": "2026-10-09T07:01:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "glm_moe_dsa",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:internlm/Atria-Dawn-Preview",
+    "base_model:quantized:internlm/Atria-Dawn-Preview",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457580760988,
+  "storage_human": "457.6 GB",
+  "base_model": "internlm/Atria-Dawn-Preview",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Commons:Upload - Wikimedia",
+      "url": "https://commons.wikimedia.org/wiki/Commons:Upload",
+      "snippet": "Mar 23, 2022 · The Upload Wizard is the default method for uploading files to Wikimedia Commons. You can select one or multiple …"
+    },
+    {
+      "title": "Wikimedia Commons – Wikimedia Foundation",
+      "url": "https://wikimediafoundation.org/what-we-do/wikimedia-projects/commons/",
+      "snippet": "Like Wikipedia, Wikimedia Commons has become a “go-to” source on the internet—used by everyone from casual browsers to major …"
+    },
+    {
+      "title": "Wikimedia Commons - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikimedia_Commons",
+      "snippet": "The stated aim of Wikimedia Commons is to provide a media file repository \"that makes available public domain and freely-licensed …"
+    },
+    {
+      "title": "Image Upload & Meme Generation | Imgur",
+      "url": "https://imgur.com/upload",
+      "snippet": "Upload your images easily to Imgur. Share, create galleries, or keep them private. Start sharing your visual stories with the world."
+    }
+  ]
+}

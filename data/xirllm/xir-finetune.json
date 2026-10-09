@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xirllm/xir-finetune",
+  "slug": "xirllm-xir-finetune",
+  "author": "xirllm",
+  "url": "https://huggingface.co/xirllm/xir-finetune",
+  "created_at": "2026-10-09T18:08:48.000Z",
+  "updated_at": "2026-10-09T18:09:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "text-generation",
+    "russian",
+    "colab",
+    "tpu",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:adapter:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XIR - Intermediate Representation | Xilinx/Vitis-AI | DeepWiki",
+      "url": "https://deepwiki.com/Xilinx/Vitis-AI/4.2-xir-intermediate-representation",
+      "snippet": "XIR - Intermediate Representation Relevant source files XIR (Xilinx Intermediate Representation) is the graph-based intermediate representation format used throughout the Vitis AI ecosystem. XIR defines the structure and semantics of neural network models after quantization and before deployment to DPU hardware."
+    },
+    {
+      "title": "Vitis-AI/src/vai_runtime/xir/README.md at master - GitHub",
+      "url": "https://github.com/Xilinx/Vitis-AI/blob/master/src/vai_runtime/xir/README.md",
+      "snippet": "XIR includes Op, Tensor, Graph and Subgraph libraries, which providing a clear and flexible representation for the computational graph. For now, it&#x27;s the foundation for the Vitis AI quantizer, compiler, runtime and many other tools."
+    },
+    {
+      "title": "Large language models (LLMs) - Azure Databricks | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/gpu-llms",
+      "snippet": "These notebooks fine-tune and post-train large language models (LLMs) on AI Runtime. They cover parameter-efficient methods like Low-Rank Adaptation (LoRA) and full supervised fine-tuning across libraries including TRL, Unsloth, Axolotl, and LLM Foundry. For batch inference examples, see Batch inference."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "GitHub - ifm-ai/xllm: Light-weight infrastructure for express LLM pre ...",
+      "url": "https://github.com/ifm-ai/xllm",
+      "snippet": "xLLM is a PyTorch-based framework for long-context language modeling, with distributed training, online data preparation, evaluation, and model export in one repository."
+    }
+  ]
+}

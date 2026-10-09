@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tanvirhy98k/cs231n-retrieval",
+  "slug": "tanvirhy98k-cs231n-retrieval",
+  "author": "Tanvirhy98k",
+  "url": "https://huggingface.co/Tanvirhy98k/cs231n-retrieval",
+  "created_at": "2026-10-09T18:21:25.000Z",
+  "updated_at": "2026-10-09T18:21:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAL | National Logistics Champion",
+      "url": "https://sal.sa/home",
+      "snippet": "As the market leader in cargo handling and logistics within Saudi Arabia, SAL takes pride in offering integrated solutions that provide …Read more"
+    },
+    {
+      "title": "SAL | Logistic Solutions in Saudi Arabia",
+      "url": "https://sal.sa/sal-logistics",
+      "snippet": "SAL is your trusted logistics partner. With a rich history, strong relationships, and a robust infrastructure, SAL empowers businesses …"
+    },
+    {
+      "title": "SAL Saudi Logistics Services - LinkedIn",
+      "url": "https://sa.linkedin.com/company/saudialogistics",
+      "snippet": "SAL is a leading logistics and supply chain solutions provider in Saudi Arabia, providing innovative, efficient and integrated services …"
+    },
+    {
+      "title": "Investor Relations | SAL",
+      "url": "https://ir.sal.sa/",
+      "snippet": "Aug 10, 2026 · SAL is a leading logistics and supply chain solutions provider in Saudi Arabia, providing innovative, efficient and …"
+    },
+    {
+      "title": "SAL, Sela Sign SAR4 Billion Agreement to Establish Logistics Zone …",
+      "url": "https://www.spa.gov.sa/en/N2283862",
+      "snippet": "19 hours ago · Riyadh, March 18, 2025, SPA -- SAL Saudi Logistics Services Company and Sela Company have signed an …"
+    }
+  ]
+}

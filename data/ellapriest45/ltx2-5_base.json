@@ -5,7 +5,7 @@
   "author": "EllaPriest45",
   "url": "https://huggingface.co/EllaPriest45/LTX2.5_base",
   "created_at": "2026-08-11T20:30:15.000Z",
-  "updated_at": "2026-08-31T17:42:58.000Z",
+  "updated_at": "2026-10-08T14:31:38.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 1246,
+  "downloads_30d": 1248,
   "trending_score": 0,
   "parameters": 21004025600,
   "parameters_human": "21.00B",
-  "storage_bytes": 106453678599,
-  "storage_human": "106.5 GB",
+  "storage_bytes": 45722667342,
+  "storage_human": "45.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

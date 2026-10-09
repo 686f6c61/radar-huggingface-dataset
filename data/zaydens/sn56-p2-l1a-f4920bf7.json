@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaydens/sn56-p2-L1a-f4920bf7",
+  "slug": "zaydens-sn56-p2-l1a-f4920bf7",
+  "author": "zaydens",
+  "url": "https://huggingface.co/zaydens/sn56-p2-L1a-f4920bf7",
+  "created_at": "2026-10-09T18:12:40.000Z",
+  "updated_at": "2026-10-09T18:12:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162417408,
+  "parameters_human": "162.4M",
+  "storage_bytes": 649681920,
+  "storage_human": "650 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PaperCut MF for Canon Devices",
+      "url": "https://www.papercut.com/products/mf/supported-devices/canon/",
+      "snippet": "Create a secure document environment, encourage responsible print behavior, and make users or departments accountable for their …"
+    },
+    {
+      "title": "Supported devices - Canon | PaperCut",
+      "url": "https://www.papercut.com/products/hive/supported-devices/canon/",
+      "snippet": "Dec 10, 2024 · Optimize your Canon printers with PaperCut Hive. Discover how to implement secure cloud print release and tracking …"
+    },
+    {
+      "title": "Installing Canon MEAP Application for PaperCut MF",
+      "url": "https://page.acd-inc.com/hubfs/Installing%20Canon%20MEAP%20Application%20for%20PaperCut%20MF-2.pdf?hsLang=en",
+      "snippet": "Guide for Installing Canon MEAP Application for PaperCut MF 1. Use the files found in the link below to find the .JAR files and …"
+    },
+    {
+      "title": "Installing the PaperCut MF MEAP Application for Canon Devices",
+      "url": "https://www.youtube.com/watch?v=IbWqr9Ep644",
+      "snippet": "Jul 12, 2024 · In this video, we provide a comprehensive walkthrough to assist our partners in installing PaperCut MF's MEAP …"
+    },
+    {
+      "title": "PaperCut | Canon Australia",
+      "url": "https://www.canon.com.au/other-products/papercut",
+      "snippet": "Papercut is a powerful print management solution to enable, track, manage, and secure your printing, copying, and scanning."
+    }
+  ]
+}

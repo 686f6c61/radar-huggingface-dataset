@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nigerundayoo/qwen3_1-7b_random_2026-10-09-14-47",
+  "slug": "nigerundayoo-qwen3_1-7b_random_2026-10-09-14-47",
+  "author": "nigerundayoo",
+  "url": "https://huggingface.co/nigerundayoo/qwen3_1-7b_random_2026-10-09-14-47",
+  "created_at": "2026-10-09T18:11:29.000Z",
+  "updated_at": "2026-10-09T18:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46339370,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen3_1-7b_random_shuffle_train_2026-07-27-21-48",
+      "url": "https://huggingface.co/nigerundayoo/qwen3_1-7b_random_shuffle_train_2026-07-27-21-48/tree/main",
+      "snippet": "Instructions to use nigerundayoo/qwen3_1-7b_random_shuffle_train_2026-07-27-21-48 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "nigerundayoo/qwen3_1-7b_random_2026-06-10-17-58 · Hugging Face",
+      "url": "https://huggingface.co/nigerundayoo/qwen3_1-7b_random_2026-06-10-17-58",
+      "snippet": "Instructions to use nigerundayoo/qwen3_1-7b_random_2026-06-10-17-58 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "nigerundayoo AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/nigerundayoo",
+      "snippet": "Browse AI models attributed to nigerundayoo, sourced from verified model catalogs."
+    },
+    {
+      "title": "qwen3_1-7b_random_shuffle_train_2026-07-23-23-28: Model Details ...",
+      "url": "https://essamamdani.com/ai-models/hf-nigerundayoo-qwen3-1-7b-random-shuffle-train-2026-07-23-23-28",
+      "snippet": "qwen3_1-7b_random_shuffle_train_2026-07-23-23-28 is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

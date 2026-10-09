@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ismoilxojameliyev/uzbek_physics_model",
+  "slug": "ismoilxojameliyev-uzbek_physics_model",
+  "author": "ismoilxojameliyev",
+  "url": "https://huggingface.co/ismoilxojameliyev/uzbek_physics_model",
+  "created_at": "2026-10-09T16:28:57.000Z",
+  "updated_at": "2026-10-09T16:29:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129308560,
+  "storage_human": "1.1 GB",
+  "base_model": "xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News, sport, celebrities and gossip | The Sun",
+      "url": "https://www.thesun.co.uk/",
+      "snippet": "Get the latest news, exclusives, sport, celebrities, showbiz, politics, business and lifestyle from The SunRead more"
+    },
+    {
+      "title": "Latest News headlines, exclusives and opinion | The Sun",
+      "url": "https://www.thesun.co.uk/news/",
+      "snippet": "Breaking headlines and latest news from the UK and the World. Exclusives, live updates, pictures, video and comment from The Sun"
+    },
+    {
+      "title": "The Sun web",
+      "url": "https://enewspaper.thesun.co.uk/",
+      "snippet": "Access The Sun's digital newspaper and stay updated with the latest news, stories, and features from the UK and around the world."
+    },
+    {
+      "title": "Help Hub - The Sun",
+      "url": "https://help.thesun.co.uk/article/how-do-i-contact-the-sun-team",
+      "snippet": "If you need to contact The Sun then please see the information below. It is very important that you contact the correct team to ensure …"
+    },
+    {
+      "title": "The Sun - Help Hub",
+      "url": "https://help.thesun.co.uk/",
+      "snippet": "News Group Newspapers Limited in England No. 679215. Registered office: 1 London Bridge Street, London, SE1 9GF. 'The Sun', …"
+    }
+  ]
+}

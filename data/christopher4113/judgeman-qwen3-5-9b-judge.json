@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Christopher4113/judgeman-qwen3.5-9b-judge",
+  "slug": "christopher4113-judgeman-qwen3-5-9b-judge",
+  "author": "Christopher4113",
+  "url": "https://huggingface.co/Christopher4113/judgeman-qwen3.5-9b-judge",
+  "created_at": "2026-10-09T18:45:01.000Z",
+  "updated_at": "2026-10-09T18:45:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "llm-as-a-judge",
+    "agent-evaluation",
+    "judgeman",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:adapter:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136419045,
+  "storage_human": "136 MB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B | Epoch AI",
+      "url": "https://epoch.ai/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is an open-weights model from Alibaba, released February 24, 2026. It has an ECI score of 139 and ranks 117th of 253 tracked models. At the time of its release, it ranked 53rd of 189 tracked models."
+    },
+    {
+      "title": "Qwen3.5 9B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a 9-billion-parameter open-weights multimodal model from Alibaba&#x27;s Qwen family, supporting both text and image inputs. The model features a unified vision-language architecture with early fusion of multimodal tokens, enabling reasoning across text and images in a single context. It is available under the Apache 2.0 license and released on March 10, 2026."
+    },
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    },
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    }
+  ]
+}

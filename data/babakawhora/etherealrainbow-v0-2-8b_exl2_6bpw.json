@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "babakawhora/EtherealRainbow-v0.2-8B_EXL2_6BPW",
+  "slug": "babakawhora-etherealrainbow-v0-2-8b_exl2_6bpw",
+  "author": "babakawhora",
+  "url": "https://huggingface.co/babakawhora/EtherealRainbow-v0.2-8B_EXL2_6BPW",
+  "created_at": "2026-10-09T00:55:00.000Z",
+  "updated_at": "2026-10-09T00:55:01.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "6-bit",
+    "exl2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6810612732,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

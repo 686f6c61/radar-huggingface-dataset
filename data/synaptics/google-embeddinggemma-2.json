@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Synaptics/Google-EmbeddingGemma-2",
+  "slug": "synaptics-google-embeddinggemma-2",
+  "author": "Synaptics",
+  "url": "https://huggingface.co/Synaptics/Google-EmbeddingGemma-2",
+  "created_at": "2026-10-09T18:09:07.000Z",
+  "updated_at": "2026-10-09T18:24:39.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "torq",
+  "languages": [],
+  "tags": [
+    "torq",
+    "embedding_gemma2",
+    "Embedding",
+    "Multimodal",
+    "Astra SL",
+    "SL2600",
+    "NPU",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4901290092,
+  "storage_human": "4.9 GB",
+  "base_model": "google/embeddinggemma-2, onnx-community/embeddinggemma-2-ONNX",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Synaptics",
+      "url": "https://www.synaptics.com/",
+      "snippet": "Jul 21, 2026 · Connecting Synaptics' portfolio of wireless solutions are optimized for IoT and delivers high-performance, power …"
+    },
+    {
+      "title": "Synaptics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Synaptics",
+      "snippet": "Synaptics, Inc. is an American neural network technologies and computer-to-human interface devices development company based …"
+    },
+    {
+      "title": "TouchPad™ Family | Synaptics",
+      "url": "https://www.synaptics.com/products/touchpad-family",
+      "snippet": "Synaptics builds on over two decades of touchpad innovation, delivering industry-leading input technologies such as force …"
+    },
+    {
+      "title": "Télécharger Synaptics Touchpad Driver (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche587623-synaptics-touchpad-driver.html",
+      "snippet": "Sep 14, 2026 · Téléchargez Synaptics TouchPad Driver, le pilote pour pavé tactile sur PC portable, avec gestion des gestes et des …"
+    },
+    {
+      "title": "Synaptics — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Synaptics",
+      "snippet": "Synaptics est un fabricant d'équipement d'origine (OEM) de pavés tactiles pour les fabricants d' ordinateurs portables comme Asus, …"
+    }
+  ]
+}

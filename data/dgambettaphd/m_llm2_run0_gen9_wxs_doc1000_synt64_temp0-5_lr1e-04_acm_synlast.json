@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "dgambettaphd/M_llm2_run0_gen9_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST",
+  "slug": "dgambettaphd-m_llm2_run0_gen9_wxs_doc1000_synt64_temp0-5_lr1e-04_acm_synlast",
+  "author": "dgambettaphd",
+  "url": "https://huggingface.co/dgambettaphd/M_llm2_run0_gen9_WXS_doc1000_synt64_temp0.5_lr1e-04_acm_SYNLAST",
+  "created_at": "2026-10-09T17:52:07.000Z",
+  "updated_at": "2026-10-09T17:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160467603,
+  "storage_human": "160 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST",
+      "url": "https://huggingface.co/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST",
+      "snippet": "Instructions to use dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "dgambettaphd/M_llm2_run0_gen6_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST ...",
+      "url": "https://huggingface.co/dgambettaphd/M_llm2_run0_gen6_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST_AIpost0quant4",
+      "snippet": "dgambettaphd / M_llm2_run0_gen6_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST_AIpost0quant4 like 0 Transformers Safetensors unsloth arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_MPP01pcLAST",
+      "url": "https://featherless.ai/models/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_MPP01pcLAST",
+      "snippet": "The dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_MPP01pcLAST is a 7 billion parameter language model, featuring a 4096 token context length. This model is hosted on the Hugging Face Hub as a Transformers model."
+    },
+    {
+      "title": "dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP",
+      "url": "https://featherless.ai/models/dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP",
+      "snippet": "The dgambettaphd/M_llm2_run0_gen0_WXS_doc1000_synt64_lr1e-04_acm_LOWMPP is a 7 billion parameter language model with a 4096 token context length. This model is a general-purpose language model, though specific differentiators and training details are not provided in its current documentation."
+    },
+    {
+      "title": "M_llm2_run2_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST",
+      "url": "https://friendli.ai/models/dgambettaphd/M_llm2_run2_gen0_WXS_doc1000_synt64_lr1e-04_acm_SYNLAST",
+      "snippet": "Run this model inference on single tenant GPU with unmatched speed and reliability at scale."
+    }
+  ]
+}

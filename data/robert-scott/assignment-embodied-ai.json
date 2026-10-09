@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "robert-scott/assignment-embodied-ai",
+  "slug": "robert-scott-assignment-embodied-ai",
+  "author": "robert-scott",
+  "url": "https://huggingface.co/robert-scott/assignment-embodied-ai",
+  "created_at": "2026-10-09T16:48:17.000Z",
+  "updated_at": "2026-10-09T16:48:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dictionnaire français gratuit – Dico en ligne Le Robert",
+      "url": "http://dictionnaire.lerobert.com/",
+      "snippet": "Dico en ligne Le Robert est un dictionnaire numérique gratuit, rédigé par des experts et régulièrement mis à jour, conçu pour tous les …"
+    },
+    {
+      "title": "Éditions Le Robert : la référence en langues pour définir, traduire ...",
+      "url": "https://www.lerobert.com/",
+      "snippet": "Depuis 1951, Le Robert est la seule maison d’édition entièrement dédiée à la langue française. Présente sur les marchés grand …"
+    },
+    {
+      "title": "Dictionnaire de définitions, synonymes | Dico en ligne Le Robert",
+      "url": "https://dictionnaire.lerobert.com/definition",
+      "snippet": "Jeux Quel mot est né en même temps que vous ? Découvrez un mot du Petit Robert apparu l'année de votre naissance !"
+    },
+    {
+      "title": "Le Petit Robert de la langue française - Bienvenue !",
+      "url": "https://www.lerobert.com/le-petit-robert-de-la-langue-francaise-bienvenue.html",
+      "snippet": "Vous venez d'acquérir Le Petit Robert de la langue française et nous vous en remercions. Vous pouvez désormais accéder au …"
+    },
+    {
+      "title": "Robert (prénom) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Robert_(pr%C3%A9nom)",
+      "snippet": "Robert est un prénom masculin et un patronyme d'origine germanique, fréquemment attesté en France. Il est fêté le 30 avril 1, porté …"
+    }
+  ]
+}

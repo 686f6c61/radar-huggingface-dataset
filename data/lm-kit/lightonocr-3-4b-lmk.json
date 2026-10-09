@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "lm-kit/lightonocr-3-4b-lmk",
+  "slug": "lm-kit-lightonocr-3-4b-lmk",
+  "author": "lm-kit",
+  "url": "https://huggingface.co/lm-kit/lightonocr-3-4b-lmk",
+  "created_at": "2026-10-09T14:41:00.000Z",
+  "updated_at": "2026-10-09T14:52:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "lm-kit",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "lm-kit",
+    "gguf",
+    "lmk",
+    "ocr",
+    "document-ai",
+    "layout-analysis",
+    "table-recognition",
+    "chart-recognition",
+    "image-to-text",
+    "multilingual",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:quantized:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 11876538326,
+  "storage_human": "11.9 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LM, 1er magazine culturel dans le nord de la France et en Belgique",
+      "url": "https://www.lm-magazine.com/",
+      "snippet": "© Contacts : LM magazine HAUTS-DE-FRANCE & BELGIQUE 28 RUE FRANÇOIS DE BADTS 59110 La Madeleine TÉL : +33 362 …"
+    },
+    {
+      "title": "LM Studio Bionic - Agent for Work and Code",
+      "url": "https://lmstudio.ai/",
+      "snippet": "Bionic is LM Studio's agent for work and code. Create documents, slides, PDFs, and software with local or frontier open models."
+    },
+    {
+      "title": "VCMB LM | Marcq-en-Baroeul - Facebook",
+      "url": "https://www.facebook.com/marcqvolley/",
+      "snippet": "VCMB LM Bienvenue sur la page officielle du VCMB LM (Volley Club de Marcq-en-Baroeul Lille Métropole)"
+    },
+    {
+      "title": "Download LM Studio - Mac, Linux, Windows",
+      "url": "https://lmstudio.ai/download",
+      "snippet": "Discover, download, and run local LLMs with LM Studio for Mac, Linux, or Windows"
+    },
+    {
+      "title": "Le Lexus LM en première mondiale | Lexus France",
+      "url": "https://www.lexus.fr/modeles/lm/presentation",
+      "snippet": "Le LM est un tout nouveau type de véhicule pour Lexus en Europe, offrant le luxe ultime d'une limousine avec le format d'un minivan …"
+    }
+  ]
+}

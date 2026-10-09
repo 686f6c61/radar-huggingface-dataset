@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "davidmelash/wechsel_base_v7_2026-10-09_r5",
+  "slug": "davidmelash-wechsel_base_v7_2026-10-09_r5",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/wechsel_base_v7_2026-10-09_r5",
+  "created_at": "2026-10-09T18:18:55.000Z",
+  "updated_at": "2026-10-09T18:19:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "token-classification",
+    "uk",
+    "base_model:benjamin/roberta-base-wechsel-ukrainian",
+    "base_model:finetune:benjamin/roberta-base-wechsel-ukrainian",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124061961,
+  "parameters_human": "124.1M",
+  "storage_bytes": 496271772,
+  "storage_human": "496 MB",
+  "base_model": "benjamin/roberta-base-wechsel-ukrainian",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wechsel · PyPI",
+      "url": "https://pypi.org/project/wechsel/",
+      "snippet": "Code for WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models."
+    },
+    {
+      "title": "GitHub - CPJKU/wechsel: Code for WECHSEL: Effective initialization of ...",
+      "url": "https://github.com/CPJKU/wechsel",
+      "snippet": "Code for WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models. - CPJKU/wechsel"
+    },
+    {
+      "title": "wechsel/MODEL_README.md at main · CPJKU/wechsel · GitHub",
+      "url": "https://github.com/CPJKU/wechsel/blob/main/MODEL_README.md",
+      "snippet": "Code for WECHSEL: Effective initialization of subword embeddings for cross-lingual transfer of monolingual language models. - wechsel/MODEL_README.md at main · CPJKU/wechsel"
+    },
+    {
+      "title": "Hugging Face",
+      "url": "https://huggingface.co/papers/2112.06598.md",
+      "snippet": "However, to train a model with capabilities comparable to that of an English model in this way, presumably a similar amount of compute to what was used to train the English model would be required. To address this issue, we introduce WECHSEL,<sup>1</sup> a novel method to transfer monolingual language models to a new language."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    }
+  ]
+}

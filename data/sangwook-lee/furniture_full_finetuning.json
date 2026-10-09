@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "sangwook-lee/furniture_full_finetuning",
+  "slug": "sangwook-lee-furniture_full_finetuning",
+  "author": "sangwook-lee",
+  "url": "https://huggingface.co/sangwook-lee/furniture_full_finetuning",
+  "created_at": "2026-10-09T15:38:19.000Z",
+  "updated_at": "2026-10-09T17:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "detr",
+    "object-detection",
+    "generated_from_trainer",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:finetune:facebook/detr-resnet-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41608649,
+  "parameters_human": "41.6M",
+  "storage_bytes": 4828445173,
+  "storage_human": "4.8 GB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

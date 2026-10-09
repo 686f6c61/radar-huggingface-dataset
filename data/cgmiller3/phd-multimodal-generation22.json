@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cgmiller3/phd-multimodal-generation22",
+  "slug": "cgmiller3-phd-multimodal-generation22",
+  "author": "cgmiller3",
+  "url": "https://huggingface.co/cgmiller3/phd-multimodal-generation22",
+  "created_at": "2026-10-09T16:51:19.000Z",
+  "updated_at": "2026-10-09T16:51:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coding & AI Games for Kids Ages 5–15 | CodeVenture",
+      "url": "https://codeventure.app/",
+      "snippet": "Build coding basics for kids — picture icons replace text, so children learn core coding ideas through easy, fun games. Code without …"
+    },
+    {
+      "title": "Codédex | Start Your Coding Adventure ⋆˙",
+      "url": "https://www.codedex.io/",
+      "snippet": "Codédex is a new way to learn to code for kids and adults alike. Journey through the fantasy land of Python, HTML, CSS, or …"
+    },
+    {
+      "title": "CodeVenture | Coding for Kids - Interactive Programming Courses",
+      "url": "https://codeventure.app/resource",
+      "snippet": "Learn programming through icon coding, block coding, and Python with gamified lessons, 800+ challenges, and AI-powered tutoring. …"
+    },
+    {
+      "title": "CodeVenture Login - Continue the Coding Journey | CodeVenture",
+      "url": "https://school.codeventure.app/",
+      "snippet": "Welcome back! Your adventure continues here. Forgot your password? Don't have an account? Create an account."
+    },
+    {
+      "title": "Install CodeVenture App | CodeVenture",
+      "url": "https://codeventure.app/pwa",
+      "snippet": "Install CodeVenture on your iPad, tablet, or phone for the best coding-game experience. Step-by-step guide for iOS, Android, and …"
+    }
+  ]
+}

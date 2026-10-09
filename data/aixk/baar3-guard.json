@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "aixk/BAAR3-guard",
+  "slug": "aixk-baar3-guard",
+  "author": "aixk",
+  "url": "https://huggingface.co/aixk/BAAR3-guard",
+  "created_at": "2026-10-09T01:07:57.000Z",
+  "updated_at": "2026-10-09T01:08:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "cybersecurity",
+    "zero-trust",
+    "ai-defense",
+    "intrusion-detection",
+    "tabular-classification",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 46,
+  "trending_score": 0,
+  "parameters": 644381,
+  "parameters_human": "644381",
+  "storage_bytes": 6533776,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

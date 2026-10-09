@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "davidmelash/modern_liberta_large_w2048_v7_2026-10-09_r5",
+  "slug": "davidmelash-modern_liberta_large_w2048_v7_2026-10-09_r5",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7_2026-10-09_r5",
+  "created_at": "2026-10-09T18:04:50.000Z",
+  "updated_at": "2026-10-09T18:06:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "uk",
+    "base_model:Goader/modern-liberta-large",
+    "base_model:finetune:Goader/modern-liberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409799689,
+  "parameters_human": "409.8M",
+  "storage_bytes": 1641621972,
+  "storage_human": "1.6 GB",
+  "base_model": "Goader/modern-liberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Goader/modern-liberta-large · Hugging Face",
+      "url": "https://huggingface.co/Goader/modern-liberta-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Goader/modern-liberta-large at main - Hugging Face",
+      "url": "https://huggingface.co/Goader/modern-liberta-large/blob/main/README.md",
+      "snippet": "The model is pre-trained on Kobza [HF], a large-scale Ukrainian corpus of nearly 60 billion tokens. Modern-LiBERTa builds on the ModernBERT architecture and is the first Ukrainian language model to support long-context encoding efficiently."
+    },
+    {
+      "title": "Xplore-LAB/llm-tracker: 大模型情报局 - GitHub",
+      "url": "https://github.com/Xplore-LAB/llm-tracker",
+      "snippet": "🤖 大模型情报局 | 每日自动追踪 arXiv 大模型前沿论文 | Daily LLM research tracker: 13k+ papers, 34 AI labs, model timeline & learning path - Xplore-LAB/llm-tracker"
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    }
+  ]
+}

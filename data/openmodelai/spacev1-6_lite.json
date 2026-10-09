@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "openmodelai/SpaceV1.6_Lite",
+  "slug": "openmodelai-spacev1-6_lite",
+  "author": "openmodelai",
+  "url": "https://huggingface.co/openmodelai/SpaceV1.6_Lite",
+  "created_at": "2026-10-09T16:42:17.000Z",
+  "updated_at": "2026-10-09T16:49:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11937778,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pass Sécurité Pro - societegenerale.fr",
+      "url": "https://m.professionnels.societegenerale.fr/pro/static/mobile/demo2015/sasweb/mobile/pro/oob-activer-psp.htm",
+      "snippet": "Le Pass Sécurité Pro vous permet de valider, depuis votre Appli Pro, les opérations initiées sur Internet, Smartphone et Tablette. Ce …"
+    },
+    {
+      "title": "Désactivation du Pass Sécurité Pro - societegenerale.fr",
+      "url": "https://m.professionnels.societegenerale.fr/pro/static/mobile/demo2015/res/mobile/pro/desactivation-psp.htm",
+      "snippet": "En désactivant ce Pass Sécurité Pro, vous ne pourrez plus valider certaines opérations à partir de ce périphérique (Smartphone / …"
+    },
+    {
+      "title": "Société Générale",
+      "url": "https://professionnels.societegenerale.fr/secure/mon-profil",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Renouveler votre mot de passe - societegenerale.fr",
+      "url": "https://devenirclient.professionnels.societegenerale.fr/swm/swm-reattribution.html",
+      "snippet": "Renouveler votre mot de passe Veuillez saisir votre adresse de messagerie afin de vous envoyer le lien permettant de créer un …"
+    },
+    {
+      "title": "Accueil LCR/BOR - societegenerale.fr",
+      "url": "https://m.professionnels.societegenerale.fr/pro/static/mobile/demo2015/ord/mobile/pro/lcr_a_accueil.htm",
+      "snippet": "Tableau de bord Comptes Suivi des ordres Nouveau virement Mon conseiller LCR/BOR Alertes Pass Securité Pro Gérer un …"
+    }
+  ]
+}

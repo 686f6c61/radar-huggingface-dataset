@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lenawngr/ACT_svla_so100_pickplace",
+  "slug": "lenawngr-act_svla_so100_pickplace",
+  "author": "lenawngr",
+  "url": "https://huggingface.co/lenawngr/ACT_svla_so100_pickplace",
+  "created_at": "2026-10-09T18:01:39.000Z",
+  "updated_at": "2026-10-09T18:03:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:lerobot/svla_so100_pickplace",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707240,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lerobot/svla_so100_pickplace · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/lerobot/svla_so100_pickplace",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zonglin11/svla_so100_pickplace · Hugging Face",
+      "url": "https://huggingface.co/zonglin11/svla_so100_pickplace",
+      "snippet": "Base model lerobot/smolvla_base Finetuned (2228) this model Dataset used to train zonglin11/svla_so100_pickplace lerobot/svla_so100_pickplace Viewer • Updated Sep 27• 19.6k• 1.84k • 3 System theme"
+    },
+    {
+      "title": "lerobot/docs/source/smolvla.mdx at main · huggingface/lerobot",
+      "url": "https://github.com/huggingface/lerobot/blob/main/docs/source/smolvla.mdx",
+      "snippet": "🔗 SVLA SO100 PickPlace In this dataset, we recorded 50 episodes across 5 distinct cube positions. For each position, we collected 10 episodes of pick-and-place interactions. This structure, repeating each variation several times, helped the model generalize better."
+    },
+    {
+      "title": "svla_so100_pickp… Dataset: License, Commercial Use & Alternatives",
+      "url": "https://truelabel.ai/datasets/huggingface/lerobot-svla-so100-pickplace",
+      "snippet": "ALTERNATIVES Datasets related to svla_so100_pickplace TAGS Metadata captured for svla_so100_pickplace Robotics Apache 2.0 Size Categories:10K<N<100K Parquet Tabular Timeseries Video Datasets Pandas Mlcroissant Polars Region:Us LeRobot Tutorial Sources Hugging Face dataset page for lerobot/svla_so100_pickplace Hugging Face dataset API record ..."
+    },
+    {
+      "title": "SmolVLA - LeRobot Documentation",
+      "url": "https://dctx-team.github.io/lerobot-zh/en/smolvla/",
+      "snippet": "🔗 SVLA SO100 PickPlace In this dataset, we recorded 50 episodes across 5 distinct cube positions. For each position, we collected 10 episodes of pick-and-place interactions. This structure, repeating each variation several times, helped the model generalize better."
+    }
+  ]
+}

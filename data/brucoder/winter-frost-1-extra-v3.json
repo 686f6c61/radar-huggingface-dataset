@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "brucoder/winter-frost-1-extra-v3",
+  "slug": "brucoder-winter-frost-1-extra-v3",
+  "author": "brucoder",
+  "url": "https://huggingface.co/brucoder/winter-frost-1-extra-v3",
+  "created_at": "2026-10-09T15:06:12.000Z",
+  "updated_at": "2026-10-09T15:06:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 111204864,
+  "parameters_human": "111.2M",
+  "storage_bytes": 444834432,
+  "storage_human": "445 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

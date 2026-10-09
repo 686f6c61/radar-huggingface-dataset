@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "glyd/Qwen3.8-27B-swift",
+  "slug": "glyd-qwen3-8-27b-swift",
+  "author": "glyd",
+  "url": "https://huggingface.co/glyd/Qwen3.8-27B-swift",
+  "created_at": "2026-10-09T18:37:36.000Z",
+  "updated_at": "2026-10-09T18:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "glyd",
+  "languages": [],
+  "tags": [
+    "glyd",
+    "safetensors",
+    "qwen3_5",
+    "swift",
+    "lossy",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18525438770,
+  "parameters_human": "18.53B",
+  "storage_bytes": 18643365488,
+  "storage_human": "18.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vwdubb/Swift-Qwen3.8-27b-FP8 · Hugging Face",
+      "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+      "snippet": "Swift-Qwen3.8-27B is UkisAI&#x27;s reasoning-efficient derivative of Qwen3.8-27B, using 58.3% fewer thinking tokens while maintaining near-identical performance (<1% loss) and as a result getting a x1.95 speed-up on several tasks."
+    },
+    {
+      "title": "Swift-Qwen3.8-27B: less overthinking | UkisAI",
+      "url": "https://ukisai.com/news/introducing-swift",
+      "snippet": "Swift includes a transfer component derived from BottleCap AI&#x27;s ThinkingCap-Qwen3.6-27B. The resulting model uses the standard Qwen3.8 interface and retains text, image, and video support."
+    },
+    {
+      "title": "Swift Qwen3.8 27b - GGUF Model (3 parts) - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/swift-qwen3-8-27b.html",
+      "snippet": "Download Swift Qwen3.8 27b GGUF model. 170.1 GB, 402,026 downloads, 454 likes. Split into 3 parts."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    }
+  ]
+}

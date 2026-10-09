@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "nunu-willump/whisper-large-v3-turbo-german-ct2",
+  "slug": "nunu-willump-whisper-large-v3-turbo-german-ct2",
+  "author": "nunu-willump",
+  "url": "https://huggingface.co/nunu-willump/whisper-large-v3-turbo-german-ct2",
+  "created_at": "2026-10-09T01:48:14.000Z",
+  "updated_at": "2026-10-09T01:48:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "ctranslate2",
+    "automatic-speech-recognition",
+    "de",
+    "base_model:primeline/whisper-large-v3-turbo-german",
+    "base_model:finetune:primeline/whisper-large-v3-turbo-german",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1617884929,
+  "storage_human": "1.6 GB",
+  "base_model": "primeline/whisper-large-v3-turbo-german",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}
