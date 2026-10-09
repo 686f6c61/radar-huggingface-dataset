@@ -5,7 +5,7 @@
   "author": "MovPouli",
   "url": "https://huggingface.co/MovPouli/mov-models",
   "created_at": "2026-09-18T19:22:05.000Z",
-  "updated_at": "2026-09-18T19:31:15.000Z",
+  "updated_at": "2026-10-08T19:37:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": 3397103616,
   "parameters_human": "3.40B",
-  "storage_bytes": 6788007008,
-  "storage_human": "6.8 GB",
+  "storage_bytes": 15209467360,
+  "storage_human": "15.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

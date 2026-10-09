@@ -5,7 +5,7 @@
   "author": "yimn-Aghosh",
   "url": "https://huggingface.co/yimn-Aghosh/zegrate-ai",
   "created_at": "2026-09-05T11:57:18.000Z",
-  "updated_at": "2026-10-07T18:49:04.000Z",
+  "updated_at": "2026-10-08T11:36:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 14,
-  "downloads_30d": 2675,
+  "downloads_30d": 2411,
   "trending_score": 0,
   "parameters": 14770033664,
   "parameters_human": "14.77B",
-  "storage_bytes": 831642539046,
-  "storage_human": "831.6 GB",
+  "storage_bytes": 835496696919,
+  "storage_human": "835.5 GB",
   "base_model": "Qwen/Qwen2.5-14B-Instruct",
   "formats": [
     "safetensors"

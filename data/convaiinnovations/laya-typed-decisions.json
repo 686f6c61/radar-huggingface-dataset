@@ -29,9 +29,10 @@
     "en",
     "license:apache-2.0",
     "endpoints_compatible",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 157,
+  "likes": 158,
   "downloads_30d": 941,
   "trending_score": 18,
   "parameters": 421293830,

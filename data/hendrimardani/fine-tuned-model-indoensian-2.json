@@ -5,7 +5,7 @@
   "author": "hendrimardani",
   "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indoensian-2",
   "created_at": "2026-09-08T07:30:15.000Z",
-  "updated_at": "2026-10-07T23:23:04.000Z",
+  "updated_at": "2026-10-08T21:48:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1873,
+  "downloads_30d": 2705,
   "trending_score": 0,
   "parameters": 8030261248,
   "parameters_human": "8.03B",
-  "storage_bytes": 22525399149,
-  "storage_human": "22.5 GB",
+  "storage_bytes": 23289656834,
+  "storage_human": "23.3 GB",
   "base_model": "unsloth/Llama-3.1-8B-unsloth-bnb-4bit",
   "formats": [
     "safetensors"

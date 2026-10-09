@@ -5,7 +5,7 @@
   "author": "DavidAU",
   "url": "https://huggingface.co/DavidAU/LFM2.5-2.6B-Qwen3.8-Turbo-Brilliance-Power-X12-NEO-MAX-GGUF",
   "created_at": "2026-09-17T01:18:13.000Z",
-  "updated_at": "2026-10-02T08:06:41.000Z",
+  "updated_at": "2026-10-09T01:29:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -63,7 +63,7 @@
     "region:us",
     "conversational"
   ],
-  "likes": 150,
+  "likes": 151,
   "downloads_30d": 27832,
   "trending_score": 28,
   "parameters": 2697198592,

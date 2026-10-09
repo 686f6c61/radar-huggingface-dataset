@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Boulesis-v2.1-26B-A4B-GGUF",
   "created_at": "2026-09-14T12:15:42.000Z",
-  "updated_at": "2026-09-14T15:28:33.000Z",
+  "updated_at": "2026-10-08T15:25:45.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 3409,
+  "downloads_30d": 3452,
   "trending_score": 0,
   "parameters": 25971339550,
   "parameters_human": "25.97B",

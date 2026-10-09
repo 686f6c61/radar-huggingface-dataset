@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Cedar-GRPO-Qwen2.5-Math-7B-GGUF",
   "created_at": "2026-09-17T12:52:15.000Z",
-  "updated_at": "2026-09-17T13:48:52.000Z",
+  "updated_at": "2026-10-08T16:33:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 601,
+  "downloads_30d": 604,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",

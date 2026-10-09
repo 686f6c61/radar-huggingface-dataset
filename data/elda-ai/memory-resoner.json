@@ -5,7 +5,7 @@
   "author": "Elda-AI",
   "url": "https://huggingface.co/Elda-AI/memory-resoner",
   "created_at": "2026-09-24T09:08:49.000Z",
-  "updated_at": "2026-10-06T05:15:46.000Z",
+  "updated_at": "2026-10-08T12:01:47.000Z",
   "license": "elda-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -41,7 +41,7 @@
   "trending_score": 0,
   "parameters": 307532547,
   "parameters_human": "307.5M",
-  "storage_bytes": 4881594108,
+  "storage_bytes": 4881928198,
   "storage_human": "4.9 GB",
   "base_model": null,
   "formats": [

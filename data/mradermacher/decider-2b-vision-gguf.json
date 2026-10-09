@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/decider-2b-vision-GGUF",
   "created_at": "2026-09-17T12:55:34.000Z",
-  "updated_at": "2026-09-17T12:58:52.000Z",
+  "updated_at": "2026-10-08T16:32:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 4029,
+  "downloads_30d": 4060,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",

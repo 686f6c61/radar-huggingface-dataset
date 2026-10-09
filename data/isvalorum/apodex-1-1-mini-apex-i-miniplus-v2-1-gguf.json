@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2.1-GGUF",
   "created_at": "2026-09-18T08:06:19.000Z",
-  "updated_at": "2026-10-07T16:14:14.000Z",
+  "updated_at": "2026-10-08T22:54:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -59,7 +59,7 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 1,
+  "likes": 2,
   "downloads_30d": 3893,
   "trending_score": 0,
   "parameters": 35505251456,

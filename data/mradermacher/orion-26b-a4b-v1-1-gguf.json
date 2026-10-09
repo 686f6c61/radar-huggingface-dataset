@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Orion-26B-A4B-v1.1-GGUF",
   "created_at": "2026-09-14T12:30:04.000Z",
-  "updated_at": "2026-09-14T14:54:29.000Z",
+  "updated_at": "2026-10-08T15:25:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 1805,
+  "downloads_30d": 1826,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

@@ -5,10 +5,10 @@
   "author": "llm-semantic-router",
   "url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Kai",
   "created_at": "2026-09-21T12:36:24.000Z",
-  "updated_at": "2026-10-02T10:38:02.000Z",
+  "updated_at": "2026-10-08T12:12:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-classification",
+  "pipeline_tag": "zero-shot-classification",
   "library": null,
   "languages": [
     "en",
@@ -65,6 +65,7 @@
   "tags": [
     "safetensors",
     "decision1",
+    "zero-shot-classification",
     "decision-making",
     "text-classification",
     "ordinal-regression",
@@ -76,7 +77,7 @@
     "region:us"
   ],
   "likes": 9,
-  "downloads_30d": 232,
+  "downloads_30d": 258,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -27,10 +27,11 @@
     "eval-results",
     "endpoints_compatible",
     "fp8",
+    "deploy:azure",
     "region:us"
   ],
-  "likes": 2759,
-  "downloads_30d": 6352803,
+  "likes": 2764,
+  "downloads_30d": 6390969,
   "trending_score": 81,
   "parameters": 321323031390,
   "parameters_human": "321.32B",

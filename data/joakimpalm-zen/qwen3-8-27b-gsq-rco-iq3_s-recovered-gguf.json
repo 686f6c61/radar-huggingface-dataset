@@ -5,7 +5,7 @@
   "author": "Joakimpalm-Zen",
   "url": "https://huggingface.co/Joakimpalm-Zen/Qwen3.8-27B-GSQ-RCO-IQ3_S-recovered-GGUF",
   "created_at": "2026-09-13T15:53:01.000Z",
-  "updated_at": "2026-10-06T18:24:05.000Z",
+  "updated_at": "2026-10-08T19:08:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 14,
-  "downloads_30d": 5138,
+  "downloads_30d": 5250,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 11771546784,
-  "storage_human": "11.8 GB",
+  "storage_bytes": 14935553568,
+  "storage_human": "14.9 GB",
   "base_model": "ISTA-DASLab/Qwen3.8-27B-GSQ-RCO-GGUF, Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"
