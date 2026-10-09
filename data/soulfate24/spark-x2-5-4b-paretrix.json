@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/Spark-X2.5-4B-Paretrix",
+  "slug": "soulfate24-spark-x2-5-4b-paretrix",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/Spark-X2.5-4B-Paretrix",
+  "created_at": "2026-10-08T21:33:19.000Z",
+  "updated_at": "2026-10-08T23:02:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "sparkx2_5",
+    "agent",
+    "llama.cpp",
+    "quantization",
+    "imatrix",
+    "hybrid-quantization",
+    "pareto",
+    "rco",
+    "text-generation",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 21676227712,
+  "storage_human": "21.7 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - XHToken/Spark-X2.5: Spark-x2.5 open model series. Pushing the ...",
+      "url": "https://github.com/XHToken/Spark-X2.5",
+      "snippet": "Today, we are introducing Spark-X2.5-4B and Spark-X2.5-1.7B, two compact, general-purpose language models designed to make capable AI more practical, efficient, and accessible. The models deliver strong performance across a broad range of everyday tasks—including conversation, writing, translation, reasoning, coding, tool use, and agentic workflows—achieving leading results among open ..."
+    },
+    {
+      "title": "SparkLLM/Spark-X2.5-4B",
+      "url": "https://ollama.com/SparkLLM/Spark-X2.5-4B",
+      "snippet": "Spark-X2.5 is a compact, general-purpose language model for conversation, writing, translation, reasoning, coding, tool use, and agentic workflows. It supports a native context length of up to 1M tokens, and covers more than 200 languages."
+    },
+    {
+      "title": "Soulfate24/Spark-X2.5-4B-ASHQ1-Remix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/Spark-X2.5-4B-ASHQ1-Remix-GGUF",
+      "snippet": "Soulfate24 / Spark-X2.5-4B-ASHQ1-Remix-GGUF Like 0 Text Generation Transformers GGUF llm sparkx2_5 quantization ashq1 imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "TokenSpark — Spark Models & Agents",
+      "url": "https://xhtoken.ai/",
+      "snippet": "Explore Spark-X2.5 models, download open weights, and request flagship model API access."
+    },
+    {
+      "title": "nassimjp/Spark-X2.5-4B · Hugging Face",
+      "url": "https://huggingface.co/nassimjp/Spark-X2.5-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

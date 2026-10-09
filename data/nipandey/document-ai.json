@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nipandey/document-ai",
+  "slug": "nipandey-document-ai",
+  "author": "nipandey",
+  "url": "https://huggingface.co/nipandey/document-ai",
+  "created_at": "2026-10-09T00:18:03.000Z",
+  "updated_at": "2026-10-09T00:18:09.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "document-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dagospia - Notizie on line - News Italia - Gossip",
+      "url": "https://www.dagospia.com/",
+      "snippet": "Le foto presenti su Dagospia.com sono state in larga parte prese da Internet,e quindi valutate di pubblico dominio. Se i soggetti o gli …"
+    },
+    {
+      "title": "Pornhub, l'italia nel 2019 e' entrata nel g7 del porno: tra ... - Dagospia",
+      "url": "https://www.dagospia.com/cronache/pornhub-l-italia-nel-2019-e-entrata-nel-g7-porno-ricerche-piu-in-voga-221476",
+      "snippet": "Dec 11, 2019 · L’italia è nel g7 del porno – puntuale come le lucine di natale arriva il report annuale di “pornhub”: siamo il settimo …"
+    },
+    {
+      "title": "Dagoreport - Dagospia",
+      "url": "https://m.dagospia.com/dagoreport/2",
+      "snippet": "DAGOREPORT – TRUMP IN CUL DE SAC: A UN MESE E MEZZO DALLE ELEZIONI DI MIDTERM, IN CUI RISCHIA DI …"
+    },
+    {
+      "title": "GALLERY - Dagospia",
+      "url": "https://m.dagospia.com/media-gallery",
+      "snippet": "C’È UN 'CASO PHICA.NET' IN FRANCIA! – ARRESTATI A PARIGI DUE FRATELLI, DI 21 E 25 ANNI, ACCUSATI DI"
+    },
+    {
+      "title": "Politica: ultime notizie di Dagospia",
+      "url": "https://www.dagospia.com/politica",
+      "snippet": "Le ultime notizie di politica GIORGIA, ABBIAMO UN PROBLEMA! - SOLO IL 35% DEGLI ITALIANI HA UN GIUDIZIO POSITIVO …"
+    }
+  ]
+}

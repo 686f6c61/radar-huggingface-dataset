@@ -5,7 +5,7 @@
   "author": "inference-optimization",
   "url": "https://huggingface.co/inference-optimization/Inkling-0.92B-MTP-PR3225",
   "created_at": "2026-10-07T15:03:11.000Z",
-  "updated_at": "2026-10-07T15:03:15.000Z",
+  "updated_at": "2026-10-08T15:56:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 7,
   "trending_score": 0,
   "parameters": 915998485,
   "parameters_human": "916.0M",

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "memorilla/Memorilla-Qwen3-8B",
+  "slug": "memorilla-memorilla-qwen3-8b",
+  "author": "memorilla",
+  "url": "https://huggingface.co/memorilla/Memorilla-Qwen3-8B",
+  "created_at": "2026-10-08T23:51:25.000Z",
+  "updated_at": "2026-10-09T00:01:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "memory",
+    "long-context",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1941290285,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-Embedding-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3-8B — Alibaba Model with Hybrid Thinking/Non-Thinking Reasoning ...",
+      "url": "https://robotsatlas.com/ai-models/qwen3-8b",
+      "snippet": "The model supports 119 languages and dialects (vs. 29 in Qwen2.5), covering Indo-European, Sino-Tibetan, Afro-Asiatic, Austronesian and other language families. In terms of agent capabilities, Qwen3-8B integrates well with external tools via MCP (Model Context Protocol), supporting function calls in both thinking and non-thinking modes."
+    },
+    {
+      "title": "Qwen3-8B LLM: Dense Transformer Model - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen3-8b-language-model",
+      "snippet": "Qwen3-8B is a dense Transformer-based language model with 8.2B parameters designed for high instruction-following fidelity and support for 119 languages. It employs a 36-layer architecture with Grouped-Query Attention and advanced pretraining on a 36 trillion-token corpus, enabling efficient adaptation across domains like finance and code generation. The model&#x27;s dual &#x27;thinking&#x27; and &#x27;non ..."
+    },
+    {
+      "title": "Alibaba Cloud Model Studio:qwen3-8b",
+      "url": "https://www.alibabacloud.com/help/en/model-studio/qwen3-8b",
+      "snippet": "qwen3-8b Model Info,Alibaba Cloud Model Studio:Achieves effective integration of thinking and non-thinking modes, allowing mode switching during conversations. Its reasoning capability reaches the SOTA level in the same scale industry, and its gen..."
+    },
+    {
+      "title": "PDF Qwen3 Highlights - NVIDIA Developer",
+      "url": "https://developer.nvidia.com/downloads/assets/ace/model_card/qwen3-8b-instruct.pdf",
+      "snippet": "Qwen3 Highlights Qwen3 is the latest generation of large language models in Qwen series, offering a comprehensive suite of dense and mixture-of-experts (MoE) models. Built upon extensive training, Qwen3 delivers groundbreaking advancements in reasoning, instruction-following, agent capabilities, and multilingual support, with the following key features:"
+    },
+    {
+      "title": "Qwen3-8B Open-Source LLM: Reasoning + Fast Inference",
+      "url": "https://dev.co/ai/llms/qwen3-8b",
+      "snippet": "Qwen3-8B is an 8.2B parameter open-source model with switchable thinking/non-thinking modes for reasoning and fast dialogue."
+    }
+  ]
+}

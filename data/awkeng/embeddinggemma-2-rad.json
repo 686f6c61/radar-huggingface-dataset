@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "awkeng/embeddinggemma-2-rad",
+  "slug": "awkeng-embeddinggemma-2-rad",
+  "author": "awkeng",
+  "url": "https://huggingface.co/awkeng/embeddinggemma-2-rad",
+  "created_at": "2026-10-08T23:55:39.000Z",
+  "updated_at": "2026-10-08T23:55:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "radiance",
+    "embeddings",
+    "multimodal",
+    "sentence-similarity",
+    "bf16",
+    "feature-extraction",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1502429184,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Actualité économique, Bourse, Banque en ligne - Boursorama",
+      "url": "https://www.boursorama.com/",
+      "snippet": "Communauté Rejoignez la communauté Boursorama : échangez, partagez vos avis, posez des questions et enrichissez vos …"
+    },
+    {
+      "title": "CAC 40 Cours Indice PX1, Cotation Bourse Euronext Paris - Boursorama",
+      "url": "https://www.boursorama.com/bourse/indices/cours/1rPCAC/",
+      "snippet": "Le cours de l'indice CAC 40 PX1 en temps réel sur Boursorama : historique de la cotation à la bourse de Euronext Paris, actualités …"
+    },
+    {
+      "title": "Espace Client et connexion Compte BoursoBank (ex-Boursorama …",
+      "url": "https://clients.boursorama.com/connexion/",
+      "snippet": "Accédez à vos comptes BoursoBank (ex-Boursorama Banque) et connectez-vous de manière sécurisée à votre espace client."
+    },
+    {
+      "title": "Bourse en direct, Cours actions et dérivés - Boursorama",
+      "url": "https://www.boursorama.com/bourse/",
+      "snippet": "Suivez l'actualité de la Bourse en direct : cours des actions, indices, devises, matières premières cotées en bourse, produits dérivés …"
+    },
+    {
+      "title": "Actions éligibles au SRD - - Action : cours, cotation ... - Boursorama",
+      "url": "https://www.boursorama.com/bourse/actions/cotations/",
+      "snippet": "Retrouvez en direct de la bourse de Paris toutes les informations en temps réel et suivez l'évolution et les actualités des marchés …"
+    }
+  ]
+}

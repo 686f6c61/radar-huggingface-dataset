@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw30",
+  "slug": "donghyun1228-pi05-libero-demo-replay-task-wrist-kd-20261008-yaw30",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-demo-replay-task-wrist-kd-20261008-yaw30",
+  "created_at": "2026-10-08T20:19:53.000Z",
+  "updated_at": "2026-10-08T20:23:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "openpi",
+    "pi05",
+    "inverse-dynamics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12439216994,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JARRING | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/jarring",
+      "snippet": "jarring adjective (NOT PLEASANT) a jarring sight, sound, or experience is so different or unexpected that it has a strong and …"
+    },
+    {
+      "title": "jarring - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/jarring",
+      "snippet": "jarring - traduction anglais-français. Forums pour discuter de jarring, voir ses formes composées, des exemples et poser vos …"
+    },
+    {
+      "title": "JARRING Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/jarring",
+      "snippet": "5 days ago · The meaning of JARRING is having a harshly concussive, disagreeable, or discordant effect. How to use jarring in a …"
+    },
+    {
+      "title": "jarring - Wiktionary, the free dictionary",
+      "url": "https://en.wiktionary.org/wiki/jarring",
+      "snippet": "Aug 15, 2026 · Adjective jarring (comparative more jarring, superlative most jarring) That jars (clashes or disagrees); incongruous, …"
+    },
+    {
+      "title": "JARRING | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/jarring",
+      "snippet": "jarring adjective (NOT PLEASANT) a jarring sight, sound, or experience is so different or unexpected that it has a strong and …"
+    }
+  ]
+}

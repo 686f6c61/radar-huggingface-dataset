@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "tassiascarvalho/genlocalnews-newsworthiness-xlmr",
+  "slug": "tassiascarvalho-genlocalnews-newsworthiness-xlmr",
+  "author": "tassiascarvalho",
+  "url": "https://huggingface.co/tassiascarvalho/genlocalnews-newsworthiness-xlmr",
+  "created_at": "2026-10-09T00:15:59.000Z",
+  "updated_at": "2026-10-09T00:27:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "genlocalnews-newsworthiness",
+    "feature-extraction",
+    "newsworthiness",
+    "news-values",
+    "multi-task-learning",
+    "ordinal-regression",
+    "coral",
+    "municipal-minutes",
+    "european-portuguese",
+    "genlocalnews",
+    "citilink",
+    "text-classification",
+    "custom_code",
+    "pt",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277459991,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1126964526,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axios employs AI to revolutionise local journalism economics",
+      "url": "https://tomorrowspublisher.today/content-creation/axios-employs-ai-to-revolutionise-local-journalism-economics/",
+      "snippet": "Axios expands local reporting to 35 cities with plans for 100. AI tools like GPT assist in drafting and editing, reducing costs. The company balances automation with journalistic integrity amidst industry scepticism."
+    },
+    {
+      "title": "AI in Journalism [8 Case Studies] [2026] - DigitalDefynd",
+      "url": "https://digitaldefynd.com/IQ/ai-in-journalism/",
+      "snippet": "Explore AI in journalism case studies that showcase how artificial intelligence is transforming news gathering and analysis."
+    },
+    {
+      "title": "AI in Journalism 2026: How Newsrooms Use AI as a Workflow Tool",
+      "url": "https://aibuzz.blog/ai-in-media-journalism/",
+      "snippet": "📰 ..."
+    },
+    {
+      "title": "Axios teams with OpenAI to fund local news powered by AI to train AI ...",
+      "url": "https://thepostmillennial.com/axios-teams-with-openai-to-fund-local-news-powered-by-ai-to-train-ai-models",
+      "snippet": "Axios is using AI to prop up local newsrooms as the outlet has been expanding its \"Axios Local,\" brand by cutting a deal with OpenAI in order to do so. OpenAI makes their suite of products available to the local news writers and then trains its AI models on the resulting content."
+    },
+    {
+      "title": "LMA publishes new report: The AI Roadmap for Local Broadcasters",
+      "url": "https://localmedia.org/2026/10/lma-publishes-new-report-the-ai-roadmap-for-local-broadcasters/",
+      "snippet": "With support from Google News Initiative (GNI), the Local Media Association (LMA) Broadcast Transformation AI Lab convened 10 leading local broadcast organizations—including Nexstar, Sinclair, Morgan Murphy Media, Capital Broadcasting/WRAL, Cowles/KHQ, and Draper—to formulate an enterprise roadmap for artificial intelligence across local broadcast media. The central finding of this multi ..."
+    }
+  ]
+}

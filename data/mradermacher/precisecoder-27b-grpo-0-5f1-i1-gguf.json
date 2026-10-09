@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/PreciseCoder-27B-GRPO-0.5F1-i1-GGUF",
   "created_at": "2026-10-08T15:09:23.000Z",
-  "updated_at": "2026-10-08T16:02:46.000Z",
+  "updated_at": "2026-10-08T18:45:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 89932304544,
-  "storage_human": "89.9 GB",
+  "storage_bytes": 300328840864,
+  "storage_human": "300.3 GB",
   "base_model": "PreciseCoder/PreciseCoder-27B-GRPO-0.5F1",
   "formats": [
     "gguf"

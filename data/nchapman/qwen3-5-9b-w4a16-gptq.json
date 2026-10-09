@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nchapman/Qwen3.5-9B-W4A16-GPTQ",
+  "slug": "nchapman-qwen3-5-9b-w4a16-gptq",
+  "author": "nchapman",
+  "url": "https://huggingface.co/nchapman/Qwen3.5-9B-W4A16-GPTQ",
+  "created_at": "2026-10-08T23:07:17.000Z",
+  "updated_at": "2026-10-08T23:08:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llm-compressor",
+  "languages": [],
+  "tags": [
+    "llm-compressor",
+    "safetensors",
+    "qwen3_5",
+    "gptq",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "ampere",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 9056706982,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.5-9B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.5-9B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5 9B - Jetson AI Lab",
+      "url": "https://www.jetson-ai-lab.com/models/qwen3-5-9b/",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "RedHatAI/Qwen3.5-9B-quantized.w4a16 · Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen3.5-9B-quantized.w4a16",
+      "snippet": "This model was evaluated on GSM8k-Platinum, MMLU-Pro, IFEval, Math 500, AIME 2025, and GPQA Diamond using lm-evaluation-harness and lighteval, with inference served via vLLM."
+    },
+    {
+      "title": "jetson-ai-lab/src/content/models/qwen3-5-9b.md at main - GitHub",
+      "url": "https://github.com/NVIDIA-AI-IOT/jetson-ai-lab/blob/main/src/content/models/qwen3-5-9b.md",
+      "snippet": "Qwen3.5 9B is a dense vision-language model in the Qwen3.5 family aimed at stronger reasoning, visual understanding, and agentic behavior on Jetson. This entry uses a W4A16 checkpoint on Jetson Orin and an NVFP4 checkpoint on Jetson Thor."
+    },
+    {
+      "title": "Qwen/Qwen3.5-9B | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a dense multimodal model from the Qwen3.5 family — same gated delta networks hybrid attention, vision encoder, 262K context, and MTP support as its larger siblings, but sized to fit comfortably on a single 24 GB GPU."
+    }
+  ]
+}

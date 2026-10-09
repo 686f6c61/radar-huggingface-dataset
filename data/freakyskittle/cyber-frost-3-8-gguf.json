@@ -5,7 +5,7 @@
   "author": "freakyskittle",
   "url": "https://huggingface.co/freakyskittle/CYBER-FROST-3.8-GGUF",
   "created_at": "2026-09-27T22:57:03.000Z",
-  "updated_at": "2026-09-28T21:48:45.000Z",
+  "updated_at": "2026-10-09T00:58:53.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,13 +24,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 18,
-  "downloads_30d": 10142,
+  "likes": 19,
+  "downloads_30d": 10261,
   "trending_score": 11,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 879899290208,
-  "storage_human": "879.9 GB",
+  "storage_bytes": 1672981791552,
+  "storage_human": "1673.0 GB",
   "base_model": "Blackfrost-AI/CYBER-FROST-3.8-BF16",
   "formats": [
     "gguf"

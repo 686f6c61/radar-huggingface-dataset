@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WiNE-iNEFF/MineSkinV1.1_5",
+  "slug": "wine-ineff-mineskinv1-1_5",
+  "author": "WiNE-iNEFF",
+  "url": "https://huggingface.co/WiNE-iNEFF/MineSkinV1.1_5",
+  "created_at": "2026-10-08T20:01:02.000Z",
+  "updated_at": "2026-10-09T00:37:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21344036,
+  "parameters_human": "21.3M",
+  "storage_bytes": 768756384,
+  "storage_human": "769 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WineHQ - Run Windows applications on Linux, BSD, Solaris and macOS",
+      "url": "https://www.winehq.org/",
+      "snippet": "Wine (originally an acronym for \"Wine Is Not an Emulator\") is a compatibility layer capable of running Windows applications on …"
+    },
+    {
+      "title": "Achat vins, champagnes, primeurs en ligne | Wineandco",
+      "url": "https://www.wineandco.com/",
+      "snippet": "Caviste en ligne depuis 1999. 5000 vins, champagnes & spiritueux. Sélection rigoureuse Paiement sécurisé Livraison soignée. …"
+    },
+    {
+      "title": "Wine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wine",
+      "snippet": "Wine is an alcoholic drink made from fermented grape juice. [a] It is produced and consumed in many regions around the world, in a …"
+    },
+    {
+      "title": "Vins en ligne : vins rouges, vins blancs et rosés",
+      "url": "https://www.wineandco.com/vins/",
+      "snippet": "Des vins de Bordeaux aux appellations emblématiques de Bourgogne en passant par des découvertes du Rhône, de la Loire ou …"
+    },
+    {
+      "title": "iDealwine - Le site pour acheter, vendre et estimer vos vins",
+      "url": "https://www.idealwine.com/fr",
+      "snippet": "Aug 6, 2026 · Achat et vente de vins, grandes cuvées, vieux millésimes, ventes aux enchères en ligne ou en direct des domaines. …"
+    }
+  ]
+}

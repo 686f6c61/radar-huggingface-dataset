@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dancher00/WasserMan-models",
+  "slug": "dancher00-wasserman-models",
+  "author": "dancher00",
+  "url": "https://huggingface.co/dancher00/WasserMan-models",
+  "created_at": "2026-10-08T23:56:27.000Z",
+  "updated_at": "2026-10-09T00:31:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "underwater",
+    "manipulation",
+    "imitation-learning",
+    "act",
+    "diffusion-policy",
+    "behavioral-cloning",
+    "smolvla",
+    "arxiv:2610.04536",
+    "en",
+    "dataset:dancher00/WasserMan",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24672842371,
+  "storage_human": "24.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dancher00 (Danil Belov) - Hugging Face",
+      "url": "https://huggingface.co/dancher00",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 2 months ago ... published a model about 2 months ago"
+    },
+    {
+      "title": "dancher00 (Danil Belov) - Hugging Face",
+      "url": "https://huggingface.co/dancher00/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 4 hours ago ... published a model about 4 hours ago"
+    },
+    {
+      "title": "Demos — Wasserman.AI",
+      "url": "https://wasserman.ai/demos",
+      "snippet": "Live demos of bespoke AI systems built by Wasserman.AI — digital workers, automations, and AI-powered production pipelines in action."
+    },
+    {
+      "title": "Wasserman.AI — Custom AI Systems That Run Your Business",
+      "url": "https://wasserman.ai/",
+      "snippet": "Bespoke AI systems, digital workers, and AI-powered production pipelines. Wasserman.AI builds custom automation that operates inside your real workflows."
+    },
+    {
+      "title": "Dark Web AI Tools & Uncensored Models 2026 - Complete Guide | TorWiki",
+      "url": "https://torwiki.org/learn/darknet-ai/",
+      "snippet": "Complete guide to dark web AI: WormGPT, FraudGPT, GhostGPT, jailbreak techniques, uncensored LLMs, and AI services on Tor. Updated September 2026."
+    }
+  ]
+}

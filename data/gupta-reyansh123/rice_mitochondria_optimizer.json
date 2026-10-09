@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gupta-reyansh123/Rice_Mitochondria_Optimizer",
+  "slug": "gupta-reyansh123-rice_mitochondria_optimizer",
+  "author": "gupta-reyansh123",
+  "url": "https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer",
+  "created_at": "2026-10-08T21:33:42.000Z",
+  "updated_at": "2026-10-08T21:34:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "big_bird",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 87881562,
+  "parameters_human": "87.9M",
+  "storage_bytes": 351550008,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI Releases 722 Math Manuscripts From an Unreleased AI Model",
+      "url": "https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/",
+      "snippet": "In a research post published October 6, 2026, OpenAI said it is releasing a broad range of new mathematical results produced by an unreleased internal frontier model, publishing 722 manuscripts organized into 372 familie..."
+    },
+    {
+      "title": "Reconstruction and correction of the rice mitochondrial reference ...",
+      "url": "https://academic.oup.com/plcell/article-abstract/38/9/koag283/8802562",
+      "snippet": "Reconstruction and correction of the rice mitochondrial reference genome Get access"
+    },
+    {
+      "title": "Reconstruction and Correction of the Rice Mitochondrial Reference ...",
+      "url": "https://plantae.org/reconstruction-and-correction-of-the-rice-mitochondrial-reference-genome/",
+      "snippet": "Reconstruction and Correction of the Rice Mitochondrial Reference Genome September 15, 2026 / in Uncategorized / by"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Reflection AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reflection_AI",
+      "snippet": "Reflection AI is an American artificial intelligence company that develops open foundation models and software agents for AI-assisted software development. Founded in 2024 by former Google DeepMind researchers Misha Laskin and Ioannis Antonoglou, the company initially focused on tools that automate software development."
+    }
+  ]
+}

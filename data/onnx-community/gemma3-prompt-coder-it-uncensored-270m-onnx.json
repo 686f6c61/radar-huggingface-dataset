@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Gemma3-Prompt.Coder.it.Uncensored-270m-ONNX",
+  "slug": "onnx-community-gemma3-prompt-coder-it-uncensored-270m-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Gemma3-Prompt.Coder.it.Uncensored-270m-ONNX",
+  "created_at": "2026-10-08T21:09:31.000Z",
+  "updated_at": "2026-10-08T21:09:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "gemma3_text",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "dataset:microsoft/rStar-Coder",
+    "dataset:gokaygokay/prompt-enhancement-75k",
+    "dataset:gokaygokay/prompt-enhancer-dataset",
+    "base_model:WithinUsAI/Gemma3-Prompt.Coder.it.Uncensored-270m",
+    "base_model:quantized:WithinUsAI/Gemma3-Prompt.Coder.it.Uncensored-270m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4315634316,
+  "storage_human": "4.3 GB",
+  "base_model": "WithinUsAI/Gemma3-Prompt.Coder.it.Uncensored-270m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/gemma-3-270m-it-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/gemma-3-270m-it-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx-community/gemma-3-1b-it-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/gemma-3-1b-it-ONNX",
+      "snippet": "From pixels bright to voices clear, It builds a model, banishing fear. Of blind prediction, cold and stark, It finds the meaning, leaves its mark. A network deep, a complex grace, Discovering insights, time and space. It sees the trends, the subtle hue, Predicting futures, fresh and new. A silent learner, ever keen, A digital mind, unseen, serene."
+    },
+    {
+      "title": "Commits · onnx-community/gemma-3-270m-it-ONNX",
+      "url": "https://alpha-ollama.hf-mirror.com/onnx-community/gemma-3-270m-it-ONNX/commits/main/tokenizer.model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pytorch_gemma.ipynb - Colab",
+      "url": "https://colab.research.google.com/github/google/generative-ai-docs/blob/main/site/en/gemma/docs/core/pytorch_gemma.ipynb",
+      "snippet": "The following is a sample code snippet demonstrating how to format a prompt for an instruction-tuned Gemma model using user and model chat templates in a multi-turn conversation."
+    },
+    {
+      "title": "OpenRouter Free Models: All 18 Listed (Oct 2026)",
+      "url": "https://costgoat.com/pricing/openrouter-free-models",
+      "snippet": "All free AI models on OpenRouter, zero cost, no credit card. Compare context lengths, capabilities, and rate limits. Updated live."
+    }
+  ]
+}

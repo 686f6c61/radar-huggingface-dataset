@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ItsOkayNow/whisper-XDNA1-NPUE-PACKS",
+  "slug": "itsokaynow-whisper-xdna1-npue-packs",
+  "author": "ItsOkayNow",
+  "url": "https://huggingface.co/ItsOkayNow/whisper-XDNA1-NPUE-PACKS",
+  "created_at": "2026-10-08T20:03:15.000Z",
+  "updated_at": "2026-10-08T21:35:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26392219648,
+  "storage_human": "26.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whisper on the AMD XDNA NPU (Ryzen AI, Phoenix / XDNA1)",
+      "url": "https://github.com/drakosha/whisper-xdna",
+      "snippet": "Whisper encoder on the AMD XDNA1 NPU (Ryzen AI, Phoenix) under Linux — open toolchain only: XRT, MLIR-AIE/IRON, peano. Includes an HTTP service speaking whisper.cpp&#x27;s contract. - drakosha/whisper-xdna"
+    },
+    {
+      "title": "AMD XDNA™ Architecture",
+      "url": "https://www.amd.com/en/technologies/xdna.html",
+      "snippet": "AMD XDNA is a spatial dataflow NPU architecture consisting of a tiled array of AI Engine processors. Each AI Engine tile includes a vector processor, a scalar processor, and local data and program memories."
+    },
+    {
+      "title": "AMD XDNA - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/AMD_XDNA",
+      "snippet": "XDNA is a microarchitecture for deep learning processor developed by AMD. It is designed to handle Machine learning (ML)-related tasks, such as artificial intelligence (AI) software. It is based on Xilinx technology, which AMD acquired in 2022. XDNA-based silicon designs are incorporated into the company&#x27;s Ryzen AI -branded processors where it supplements the Zen CPU and RDNA GPU on the same ..."
+    },
+    {
+      "title": "AI Tracker: new AI models and leaks, the moment they appear",
+      "url": "https://aitracker.bot/",
+      "snippet": "AI Tracker watches model APIs, docs, app bundles, leaderboards and leak accounts around the clock. The moment a new model or leak shows up, it pings Discord, X, your inbox and your browser."
+    },
+    {
+      "title": "Scottcjn/open-xdna: Open-source bring-up - GitHub",
+      "url": "https://github.com/Scottcjn/open-xdna",
+      "snippet": "The first-generation XDNA1 NPU — \"Phoenix\" / \"Hawk Point\" — in millions of Ryzen laptops, brought up on Linux with 100% open source. Models running on the silicon. Custom vector kernels hand-authored in the AIE ISA."
+    }
+  ]
+}

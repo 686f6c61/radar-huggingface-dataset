@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GroundGUI-8B-GGUF",
+  "slug": "mradermacher-groundgui-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GroundGUI-8B-GGUF",
+  "created_at": "2026-10-09T00:05:28.000Z",
+  "updated_at": "2026-10-09T00:39:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gui-agent",
+    "gui-grounding",
+    "qwen3-vl",
+    "en",
+    "dataset:PrentisAI/ScreenRef",
+    "base_model:PrentisAI/GroundGUI-8B",
+    "base_model:quantized:PrentisAI/GroundGUI-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 75336674752,
+  "storage_human": "75.3 GB",
+  "base_model": "PrentisAI/GroundGUI-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/MemGUI-8B-RL-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/MemGUI-8B-RL-GGUF",
+      "snippet": "mradermacher / MemGUI-8B-RL-GGUF Like 0 Reinforcement Learning Transformers GGUF English mobile-gui-agent agent-memory qwen3-vl conact conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/SpatialCLI-8B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/SpatialCLI-8B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "By VRAM Tier Pick the tier that matches your hardware. Every model below has been confirmed live on HuggingFace at the time of writing, with GGUF available either in the linked repo or via a sibling quant repo from bartowski or mradermacher. 8GB VRAM — Budget tier The 8B class is the floor for usable uncensored output. Picks:"
+    },
+    {
+      "title": "GGUF Quantization Guide: Shrink LLMs 72% [2026]",
+      "url": "https://tech-insider.org/gguf-model-quantization-2026/",
+      "snippet": "What Is GGUF, and Why Quantize Models Yourself in 2026? GGUF is a single-file binary format built by the llama.cpp project to store model weights, tokenizer data and metadata together in one package, including architecture details like layer count, attention-head count, context length and vocabulary size, as a February 2026 explainer from AI Learning Hub lays out, that loads fast and runs on ..."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    }
+  ]
+}

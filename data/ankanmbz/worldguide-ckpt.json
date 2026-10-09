@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ankanmbz/WorldGuide-Ckpt",
+  "slug": "ankanmbz-worldguide-ckpt",
+  "author": "ankanmbz",
+  "url": "https://huggingface.co/ankanmbz/WorldGuide-Ckpt",
+  "created_at": "2026-10-08T21:10:14.000Z",
+  "updated_at": "2026-10-08T21:16:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "world-model",
+    "video-generation",
+    "image-to-video",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8647155008,
+  "parameters_human": "8.65B",
+  "storage_bytes": 51188346252,
+  "storage_human": "51.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ankanmbz/worldguide-results at main - Hugging Face",
+      "url": "https://huggingface.co/datasets/ankanmbz/worldguide-results/tree/main",
+      "snippet": "Tags: video video-generation model-comparison Libraries: Datasets Croissant Dataset card Data Studio FilesFiles and versions xet Community main worldguide-results 684 MB 1 contributor History:4 commits ankanmbz Display WorldGuide as the model name 23f50a3 verifiedabout 11 hours ago HunyuanVideo-1.5Publish aligned WorldGuide model comparison ..."
+    },
+    {
+      "title": "ankanmbz/worldguide-results · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/ankanmbz/worldguide-results",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models | InvokeAI Documentation",
+      "url": "https://invoke.ai/concepts/models/",
+      "snippet": "The model checkpoint files (*.ckpt) are the Stable Diffusion \"secret sauce\". They are the product of training the AI on millions of captioned images gathered from multiple sources. Originally there was only a single Stable Diffusion weights file, which many people named model.ckpt. Today, there are thousands of models, fine tuned to excel at specific styles, genres, or themes. Model Formats"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

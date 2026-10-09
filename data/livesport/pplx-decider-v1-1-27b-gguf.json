@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Livesport/pplx-decider-v1.1-27b-GGUF",
+  "slug": "livesport-pplx-decider-v1-1-27b-gguf",
+  "author": "Livesport",
+  "url": "https://huggingface.co/Livesport/pplx-decider-v1.1-27b-GGUF",
+  "created_at": "2026-10-08T19:41:00.000Z",
+  "updated_at": "2026-10-08T19:47:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "cs"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "decision-model",
+    "system-one",
+    "classification",
+    "en",
+    "cs",
+    "base_model:perplexity-ai/pplx-decider-v1.1-27b",
+    "base_model:quantized:perplexity-ai/pplx-decider-v1.1-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25625905664,
+  "parameters_human": "25.63B",
+  "storage_bytes": 46867018732,
+  "storage_human": "46.9 GB",
+  "base_model": "perplexity-ai/pplx-decider-v1.1-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livesport.com - Scores en direct - football, tennis, basketball, et 30 ...",
+      "url": "https://www.livesport.com/fr/",
+      "snippet": "Livesport.com: scores en direct rapides et précis pour le football, tennis, basketball, baseball, hockey, et beaucoup d'autres sports. …"
+    },
+    {
+      "title": "Livesport.com - Live soccer scores, tennis, basketball and 30+ other …",
+      "url": "https://www.livesport.com/en/",
+      "snippet": "Livesport.com - fast and accurate live scores from soccer, tennis, basketball, baseball and many other sports. Livescore, results, …"
+    },
+    {
+      "title": "Live Sport TV - Streaming and TV Schedules",
+      "url": "https://www.livesporttv.com/",
+      "snippet": "Live sports streaming, TV schedules, scores, results, stats and news for major sports including football, basketball, baseball, hockey, …"
+    },
+    {
+      "title": "Sport en directe - Streaming et horaires TV",
+      "url": "https://www.livesporttv.com/fr/",
+      "snippet": "Streaming sportif en direct, horaires TV, scores, résultats et actualités pour tous les sports majeurs."
+    },
+    {
+      "title": "Sport » Scores en direct, classement et pronostics",
+      "url": "https://livesports.co/fr/",
+      "snippet": "Consultez les scores du football, du tennis, du hockey sur glace, du basketball, du handball, du cricket et des sports de combat. …"
+    }
+  ]
+}

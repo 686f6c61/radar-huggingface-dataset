@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "peikoff/objectivist_llama3_2_8x3b_moe-GGUF",
+  "slug": "peikoff-objectivist_llama3_2_8x3b_moe-gguf",
+  "author": "peikoff",
+  "url": "https://huggingface.co/peikoff/objectivist_llama3_2_8x3b_moe-GGUF",
+  "created_at": "2026-10-08T22:40:02.000Z",
+  "updated_at": "2026-10-08T22:52:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "mixture-of-experts",
+    "objectivism",
+    "text-generation",
+    "en",
+    "base_model:peikoff/llama3-2-8x3b-moe-objectivist-merged",
+    "base_model:quantized:peikoff/llama3-2-8x3b-moe-objectivist-merged",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18404944960,
+  "parameters_human": "18.40B",
+  "storage_bytes": 59186458752,
+  "storage_human": "59.2 GB",
+  "base_model": "peikoff/llama3-2-8x3b-moe-objectivist-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=llama-3.2",
+      "snippet": "DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B-GGUF Text Generation • Updated Feb 12 • 106k • 165"
+    },
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "The open-source AI models you can fine-tune, distill and deploy anywhere. Choose from our collection of models: Llama 3.1, Llama 3.2, Llama 3.3."
+    },
+    {
+      "title": "DavidAU (David Belton) - Hugging Face",
+      "url": "https://huggingface.co/DavidAU",
+      "snippet": "Fine tuned Qwen 3.6/3.8 models, including source and GGUF from 9B and up. 9B,12B, 21B and 40B are custom built by me. Tuning : Unsloth / COLD FUSION."
+    },
+    {
+      "title": "GGUF Quantization Guide: Shrink LLMs 72% [2026]",
+      "url": "https://tech-insider.org/gguf-model-quantization-2026/",
+      "snippet": "Convert and quantize any open-weight model to GGUF with llama.cpp: imatrix calibration, Q4_K_M vs Q8_0, benchmarks, and a full automation script."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/VeriLoop-E2-oQ6e-mtp-bf16-MLX",
+  "slug": "dicksondickson-veriloop-e2-oq6e-mtp-bf16-mlx",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/VeriLoop-E2-oQ6e-mtp-bf16-MLX",
+  "created_at": "2026-10-09T00:10:57.000Z",
+  "updated_at": "2026-10-09T00:13:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "27b",
+    "omlx",
+    "oQe",
+    "apple",
+    "bf16",
+    "base_model:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "base_model:quantized:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27872753616,
+  "parameters_human": "27.87B",
+  "storage_bytes": 23821393248,
+  "storage_human": "23.8 GB",
+  "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VeriLoop E2 Release: 27B Post-Trained Model and Full GGUF Precision ...",
+      "url": "https://discuss.huggingface.co/t/veriloop-e2-release-27b-post-trained-model-and-full-gguf-precision-ladder-from-bf16-to-iq1-m/180723",
+      "snippet": "VeriLoop E2 is now publicly available: a 27B post-trained model built on Qwen3.8-27B for verifiable code, mathematics, scientific reasoning, and long-horizon agentic problem solving. At the center of E2 is VeriLoop-Governed Recurrence (VGR). Its governing principle is simple: Generation and verification should not belong to the same authority. The model proposes, diagnoses, revises, searches ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX - Hugging Face",
+      "url": "https://huggingface.co/dicksondickson/Qwen3.8-27B-Uncensored-oQ6e-bf16-mtp-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VeriLoop E2: 27B post-trained model with GGUF ladder from BF16 to IQ1_M",
+      "url": "https://korshunov.ai/en/article/28384-veriloop-e2-27b-post-trained-model-with-gguf-ladder-from-bf16-to-iq1-m/",
+      "snippet": "Releases a full GGUF precision ladder from BF16 down to IQ1_M, with all tiers derived directly from the canonical BF16 checkpoint. IQ1_M variant reaches 16.79 GiB with only +0.3191% PPL drift and supports MTP speculative decoding."
+    },
+    {
+      "title": "Swift-1.5-Qwen3.8-27b-oQ6e-bf16-mtp-MLX - Hugging Face",
+      "url": "https://huggingface.co/dicksondickson/Swift-1.5-Qwen3.8-27b-oQ6e-bf16-mtp-MLX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    }
+  ]
+}

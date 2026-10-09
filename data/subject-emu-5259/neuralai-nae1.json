@@ -5,7 +5,7 @@
   "author": "Subject-Emu-5259",
   "url": "https://huggingface.co/Subject-Emu-5259/NeuralAI-Nae1",
   "created_at": "2026-10-07T23:36:35.000Z",
-  "updated_at": "2026-10-07T23:41:30.000Z",
+  "updated_at": "2026-10-08T20:55:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,12 +30,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 377,
   "trending_score": 0,
   "parameters": 76190976,
   "parameters_human": "76.2M",
-  "storage_bytes": 350969399,
-  "storage_human": "351 MB",
+  "storage_bytes": 2105429090,
+  "storage_human": "2.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

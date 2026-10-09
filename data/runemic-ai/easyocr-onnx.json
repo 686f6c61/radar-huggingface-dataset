@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "runemic-ai/easyocr-onnx",
+  "slug": "runemic-ai-easyocr-onnx",
+  "author": "runemic-ai",
+  "url": "https://huggingface.co/runemic-ai/easyocr-onnx",
+  "created_at": "2026-10-08T22:54:23.000Z",
+  "updated_at": "2026-10-08T22:54:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "ocr",
+    "easyocr",
+    "onnxruntime-web",
+    "text-detection",
+    "text-recognition",
+    "image-to-text",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 614653566,
+  "storage_human": "615 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Runemic: OCR for documents that are hard to read",
+      "url": "https://runemic.com/",
+      "snippet": "Runemic builds OCR for documents that standard tools get wrong: non-Latin scripts, old scans, handwriting and complex layouts. Open models, an API, a scanner app and digitization services."
+    },
+    {
+      "title": "Repository with all models in ONNX format #786 - GitHub",
+      "url": "https://github.com/JaidedAI/EasyOCR/issues/786",
+      "snippet": "In this Drive folder you can find all EasyOCR models in ONNX format covering all currently available languages. Look at the text file in the folder to see which one corresponds to the language you ..."
+    },
+    {
+      "title": "asmud/EasyOCR-onnx · Hugging Face",
+      "url": "https://huggingface.co/asmud/EasyOCR-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EasyOCR-ONNX/README.md at master · Kromtar/EasyOCR-ONNX · GitHub",
+      "url": "https://github.com/Kromtar/EasyOCR-ONNX/blob/master/README.md",
+      "snippet": "EasyOCR modified for ONNX use. Contribute to Kromtar/EasyOCR-ONNX development by creating an account on GitHub."
+    },
+    {
+      "title": "EasyOCRRecognizer.onnx · qualcomm/EasyOCR at main",
+      "url": "https://huggingface.co/qualcomm/EasyOCR/blob/main/EasyOCRRecognizer.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

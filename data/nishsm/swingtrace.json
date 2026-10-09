@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nishsm/swingtrace",
+  "slug": "nishsm-swingtrace",
+  "author": "nishsm",
+  "url": "https://huggingface.co/nishsm/swingtrace",
+  "created_at": "2026-10-08T23:49:30.000Z",
+  "updated_at": "2026-10-08T23:50:42.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "golf",
+    "sports",
+    "sports-analytics",
+    "yolo11",
+    "object-detection",
+    "object-tracking",
+    "swing-analysis",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40582252,
+  "storage_human": "41 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SwingTrace AI Pro — AI Golf Swing Analyser | Track Your Progress",
+      "url": "https://swingtrace.golfbiomechanics.net/",
+      "snippet": "AI maps your kinematic sequence SwingTrace automatically detects your P2-P7 swing positions using pose estimation, then processes every frame: tracking hip rotation, shoulder coil, arm path, and club trajectory against biomechanical baselines. In your browser."
+    },
+    {
+      "title": "SwingTrace",
+      "url": "https://www.swingtrace.golf/",
+      "snippet": "Clear boundaries for V1 SwingTrace separates local practice review from account, subscription, support, and enabled sharing flows."
+    },
+    {
+      "title": "GitHub - nishsm/swingtrace: Golf club shaft, head and hands detection ...",
+      "url": "https://github.com/nishsm/swingtrace",
+      "snippet": "Face blurred for privacy. SwingTrace finds the club shaft, club head and hands in every frame and rebuilds the club-head path through the whole swing, including the top of the backswing and impact, where the head turns into a blur and normal detectors lose it."
+    },
+    {
+      "title": "swingtrace/README.md at main · nishsm/swingtrace · GitHub",
+      "url": "https://github.com/nishsm/swingtrace/blob/main/README.md",
+      "snippet": "Golf club shaft, head and hands detection and swing-path tracking with YOLO11m - swingtrace/README.md at main · nishsm/swingtrace"
+    },
+    {
+      "title": "SwingTrace PRO - AI Analysis - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.vicious.swingtrace&hl=en-US",
+      "snippet": "SwingTrace PRO is a golf improvement app powered by V-core AI, which analyzes your swing video and delivers pro-coach quality feedback. Simply record or select a video of your swing."
+    }
+  ]
+}

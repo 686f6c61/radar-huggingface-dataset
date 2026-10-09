@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_m1_aff_27D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_m1_aff_27d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_aff_27D_60k_s1000",
+  "created_at": "2026-10-08T22:48:35.000Z",
+  "updated_at": "2026-10-08T22:48:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51700368,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206831616,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000 · Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s1000",
+      "snippet": "NAJY_act_all11_hot_27D_120k_s1000 One ACT for all 11 stages of the Mobile AI lab task (seed 1000, 120K steps). Deployment candidate; offline it is the better seed on locomotion stages."
+    },
+    {
+      "title": "kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000 · Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000",
+      "snippet": "NAJY_act_all11_hot_27D_120k_s2000 Same as the s1000 model with seed 2000. Offline it is the better seed on manipulation stages."
+    },
+    {
+      "title": "Models - Docs - Kiro",
+      "url": "https://kiro.dev/docs/models/",
+      "snippet": "Models Kiro gives you access to frontier and open weight AI models from OpenAI, Anthropic, and other providers. GPT-5.6 brings OpenAI models to Kiro for the first time, with three tiers that balance agentic performance and cost. Pick the right model for the job, or select Auto to let Kiro route each task to the optimal model automatically."
+    },
+    {
+      "title": "Installation - Get Started - Docs - Kiro",
+      "url": "https://kiro.dev/docs/getting-started/installation/",
+      "snippet": "Installation Kiro is available as a desktop IDE, a command-line interface, a web app, a mobile app, and a personal AI agent (Crew). Pick the surface that fits your workflow. You can use more than one, and your .kiro configuration is shared across all of them."
+    },
+    {
+      "title": "Korean BJ Actors & Broadcasters — SKBJ",
+      "url": "https://skbj.tv/actors",
+      "snippet": "Browse every Korean BJ actor and broadcaster on SKBJ. Follow your favorites to get notified about new videos, and explore their full HD catalogs."
+    }
+  ]
+}

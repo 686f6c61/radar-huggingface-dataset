@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Nihilitybot666/shora-tfidf",
+  "slug": "nihilitybot666-shora-tfidf",
+  "author": "Nihilitybot666",
+  "url": "https://huggingface.co/Nihilitybot666/shora-tfidf",
+  "created_at": "2026-10-08T21:54:58.000Z",
+  "updated_at": "2026-10-08T21:55:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [
+    "en",
+    "pcm",
+    "yo",
+    "ig",
+    "ha"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "scam-detection",
+    "fraud",
+    "nigeria",
+    "tfidf",
+    "logistic-regression",
+    "text-classification",
+    "en",
+    "pcm",
+    "yo",
+    "ig",
+    "ha",
+    "dataset:Nihilitybot666/naijascam",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3913922,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "code erreur B203 – CANON Imprimante jet dencre - SAV Darty",
+      "url": "https://sav.darty.com/forum/CANON/PIXMA-MG-7550/code-erreur-B203/2557954/346447",
+      "snippet": "Dec 10, 2016 · Discussions sur Imprimante jet dencre PIXMA MG 7550 de la marque CANON – code erreur B203 – bjr, je possède …"
+    },
+    {
+      "title": "Mon lave vaisselle affiche E24 ou le voyant robinet reste allumé",
+      "url": "https://sav.darty.com/thematic/MON-LAVE-VAISSELLE-AFFICHE-E24-OU-LE-VOYANT-ROBINET-RESTE-ALLUME/106",
+      "snippet": "Mar 29, 2019 · Tuto SAV Darty sur Lave vaisselle, BOSCH : Mon lave vaisselle affiche E24 ou le voyant robinet reste allumé - …"
+    },
+    {
+      "title": "为什么会产生阳极和负极对应anode这种翻译？ - 知乎",
+      "url": "https://www.zhihu.com/question/43070680",
+      "snippet": "Apr 13, 2016 · 关键 takeaway： 当您想描述电池上固定的 “+” 或 “-” 极时，请使用 Positive Electrode 和 Negative Electrode。 当您想 …"
+    },
+    {
+      "title": "车辆购置税怎么算？ - 知乎",
+      "url": "https://www.zhihu.com/question/484163508",
+      "snippet": "一、 车购税 是个啥？ 车购税是对在中国境内 购置 规定车辆的单位和个人征收的一种税，只在购置的时候 交一次 即可。 购置：购买 …"
+    },
+    {
+      "title": "Mon lave-vaisselle Whirlpool affiche F6 puis E3 - SAV Darty",
+      "url": "https://sav.darty.com/thematic/MON-LAVE-VAISSELLE-WHIRLPOOL-AFFICHE-F6-PUIS-E3/445",
+      "snippet": "Mar 20, 2019 · Tuto SAV Darty sur Lave vaisselle, WHIRLPOOL : Mon lave-vaisselle Whirlpool affiche F6 puis E3 - Bonjour Mon …"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "schema": 1,
+  "id": "ozonetg/bargein-classifier-modernbert-base",
+  "slug": "ozonetg-bargein-classifier-modernbert-base",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/bargein-classifier-modernbert-base",
+  "created_at": "2026-10-08T22:34:26.000Z",
+  "updated_at": "2026-10-08T22:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "barge-in",
+    "interruption-detection",
+    "turn-taking",
+    "voice-agent",
+    "spoken-dialogue",
+    "telephony",
+    "r-drop",
+    "baseline",
+    "en",
+    "arxiv:2412.13663",
+    "arxiv:2106.14448",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 299227092,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Barge-in classification",
+      "dataset": "Held-out business types A (593 exchanges, 8 unseen business types)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 95.11
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Held-out business types B (588 exchanges, 20 unseen business types)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 92.18
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Human-labelled exchanges (158, not shown to the labelling judge)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 96.2
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Perturbation stress test (6,258)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 92.01
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "TTS -> phone channel -> ASR stress test (1,328)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 90.66
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Distribution-shift test OOD-10k (10,888)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 88.82
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Real calls, rule-unambiguous moments with words (278)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 97.5
+    }
+  ],
+  "sources": [
+    {
+      "title": "ModernBERT · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/modernbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BERT (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/BERT_(language_model)",
+      "snippet": "Bidirectional encoder representations from transformers (BERT) is a language model introduced in October 2018 by researchers at Google. [2][3] It learns to represent text as a sequence of vectors using self-supervised learning."
+    },
+    {
+      "title": "ModernBERT - Modern BERT Encoder for Embeddings | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/modernbert/",
+      "snippet": "ModernBERT is a modernized BERT encoder from Answer.AI with long context and faster inference, used as a backbone for embedding and retrieval models."
+    },
+    {
+      "title": "bnovikov/bargein-classifier at main - Hugging Face",
+      "url": "https://huggingface.co/bnovikov/bargein-classifier/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ModernBERT-base — AI Model Details | Applied",
+      "url": "https://theapplied.co/models/answerdotai-modernbert-base",
+      "snippet": "Answer.AI&#x27;s 149M-parameter modernized BERT encoder supporting long-context inputs for masked language modeling and retrieval."
+    }
+  ]
+}

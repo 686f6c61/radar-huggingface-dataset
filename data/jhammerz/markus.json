@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JHammerZ/Markus",
+  "slug": "jhammerz-markus",
+  "author": "JHammerZ",
+  "url": "https://huggingface.co/JHammerZ/Markus",
+  "created_at": "2026-10-08T21:15:49.000Z",
+  "updated_at": "2026-10-08T21:15:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "Lance",
+  "languages": [],
+  "tags": [
+    "Lance",
+    "safetensors",
+    "multimodal",
+    "image-generation",
+    "video-generation",
+    "image-editing",
+    "video-understanding",
+    "any-to-any",
+    "arxiv:2605.18678",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "doi:10.57967/hf/10827",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57414529231,
+  "storage_human": "57.4 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lua (goddess) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lua_(goddess)",
+      "snippet": "Later in the text, Livy wrote that, after an enemy's weapons were collected, they had to be burned as an offering to Mars, Minerva, …"
+    },
+    {
+      "title": "Lua Mater—Goddess Of Blood, Loot And Fire - The Historian's Hut",
+      "url": "https://thehistorianshut.com/2021/06/28/lua-mater-goddess-of-smoke-loot-and-blood/",
+      "snippet": "Jun 28, 2021 · Lua Mater, or Mother Lua, was a mysterious ancient Italian goddess who provided a paradoxical spiritual service for …"
+    },
+    {
+      "title": "Lua (goddess) — Grokipedia",
+      "url": "https://grokipedia.com/page/Lua_(goddess)",
+      "snippet": "Lua, an obscure goddess of early Italian provenance, was primarily invoked under the epithet Lua Mater (\"Mother Lua\"), which …"
+    },
+    {
+      "title": "Lua Mater — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lua_Mater",
+      "snippet": "Lua Mater ou simplement Lua ou encore Lua Saturni est une déesse romaine. On sait, par le témoignage de Tite-Live, qu'il arrivait …"
+    },
+    {
+      "title": "Home - Lua Mater",
+      "url": "https://luamater.com/en/",
+      "snippet": "Lua Mater: El arte de despertar tu energía vital a través del Kundalini Yoga y la sabiduría ancestral."
+    }
+  ]
+}

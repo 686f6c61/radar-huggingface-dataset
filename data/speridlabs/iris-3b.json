@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "speridlabs/iris-3b",
+  "slug": "speridlabs-iris-3b",
+  "author": "speridlabs",
+  "url": "https://huggingface.co/speridlabs/iris-3b",
+  "created_at": "2026-10-05T14:51:15.000Z",
+  "updated_at": "2026-10-08T16:51:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-to-image",
+    "diffusion",
+    "pixel-space",
+    "flow-matching",
+    "general-vision-learner",
+    "vision-foundation-model",
+    "depth-estimation",
+    "image-restoration",
+    "super-resolution",
+    "arxiv:2610.09450",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 28,
+  "downloads_30d": 18,
+  "trending_score": 26,
+  "parameters": 2987511888,
+  "parameters_human": "2.99B",
+  "storage_bytes": 41912625509,
+  "storage_human": "41.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iris-3B · Speridlabs",
+      "url": "https://speridlabs.com/research/iris",
+      "snippet": "Iris-3B is a pixel-space generative model that can act as a general vision learner. Working in pixel space, it bypasses the lossy compression and the biased, texture-focused latents of a VAE."
+    },
+    {
+      "title": "SperidLabs&#x27; Iris-3B Scales Pixel-Space Diffusion to 3B Params, Matches ...",
+      "url": "https://aiweekly.co/alerts/speridlabs-iris-3b-scales-pixel-space-diffusion-to-3b-params-matches-qwen-image",
+      "snippet": "SperidLabs released Iris-3B, a 3B-parameter pixel-space text-to-image transformer trained from scratch through a 256→512→1024 curriculum that matches Qwen-Image on OneIG at 1024² without a VAE. The paper also converts FLUX.2 Klein base 4B to pixel space, then reports a negative result: on monocular depth and 4x DIV2K restoration a pixel-space generative prior offered no significant gain ..."
+    },
+    {
+      "title": "Speridlabs — Spatial AI lab",
+      "url": "https://speridlabs.com/",
+      "snippet": "Iris-3B A fully open 3B pixel-space text-to-image model — no VAE, every pixel generated — and a generative prior that acts as a general vision learner."
+    },
+    {
+      "title": "[2610.09450] Iris-3B: Going Beyond the Latent with Pixel-Space ...",
+      "url": "https://arxiv.org/abs/2610.09450",
+      "snippet": "We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a 256 → 512 → 1024 curriculum, after first ablating the prediction target and representation alignment at 2562 to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B, to pixel space."
+    },
+    {
+      "title": "Iris-3B:GoingBeyondtheLatentwith Pixel-SpaceDiffusionTraining ...",
+      "url": "https://arxiv.org/pdf/2610.09450",
+      "snippet": "We pre- train Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a 256→512→1024 curriculum, after first ablating the prediction target and representation alignment REPA at2562to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B [1], to pixel space."
+    }
+  ]
+}

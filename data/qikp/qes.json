@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "qikp/qes",
+  "slug": "qikp-qes",
+  "author": "qikp",
+  "url": "https://huggingface.co/qikp/qes",
+  "created_at": "2026-10-08T19:53:38.000Z",
+  "updated_at": "2026-10-08T20:14:46.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "dataset:HuggingFaceFW/fineweb-edu-llama3-annotations",
+    "base_model:huawei-noah/TinyBERT_General_4L_312D",
+    "base_model:finetune:huawei-noah/TinyBERT_General_4L_312D",
+    "license:cc0-1.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14350561,
+  "parameters_human": "14.4M",
+  "storage_bytes": 57410556,
+  "storage_human": "57 MB",
+  "base_model": "huawei-noah/TinyBERT_General_4L_312D",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qikp/baguettotron-600m-GGUF · Hugging Face",
+      "url": "https://huggingface.co/qikp/baguettotron-600m-GGUF",
+      "snippet": "qikp / baguettotron-600m-GGUF Like 0 Text Generation GGUF conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Models For Light And Fast Inference - a qikp Collection",
+      "url": "https://huggingface.co/collections/qikp/models-for-light-and-fast-inference",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Chinese AI Models Compared: DeepSeek, Qwen, GLM, Kimi (2026)",
+      "url": "https://geotoolbox.ai/blog/chinese-ai-models-compared",
+      "snippet": "An honest, current comparison of the top Chinese AI models - DeepSeek, Qwen, GLM, Kimi and more - covering capability, cost, safety, and AI visibility."
+    },
+    {
+      "title": "Quantized Evolution Strategies: Fine-Tuning Quantized LLMs ... - Cognizant",
+      "url": "https://www.cognizant.com/us/en/ai-lab/blog/quantized-evolution-strategies-qes-llm-fine-tuning",
+      "snippet": "QES allows quantized language models to be fine-tuned directly in low-precision space, dramatically reducing the memory required to adapt large AI models."
+    },
+    {
+      "title": "Chinese AI Models Compared: DeepSeek, Qwen, Kimi, Doubao, and Ernie",
+      "url": "https://groundy.com/articles/the-chinese-ai-model-ecosystem-deepseek-qwen-kimi-doubao-and-ernie-compared/",
+      "snippet": "DeepSeek dominates Western coverage of Chinese AI, but it is only one part of a wider field. Qwen, Kimi, ByteDance&#x27;s Seed models behind Doubao, ERNIE and Zhipu&#x27;s GLM family differ on openness, licensing, access and workload fit, and the newest documented releases, including DeepSeek V4.1-Flash, Qwen3.8, Kimi K3, Seed2.1 and GLM-5.3, have shifted the comparison even since mid-2026. The ..."
+    }
+  ]
+}

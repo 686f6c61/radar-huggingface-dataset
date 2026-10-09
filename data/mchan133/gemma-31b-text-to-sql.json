@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mchan133/gemma-31b-text-to-sql",
+  "slug": "mchan133-gemma-31b-text-to-sql",
+  "author": "mchan133",
+  "url": "https://huggingface.co/mchan133/gemma-31b-text-to-sql",
+  "created_at": "2026-10-01T05:26:17.000Z",
+  "updated_at": "2026-10-08T23:02:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4445080153,
+  "storage_human": "4.4 GB",
+  "base_model": "google/gemma-4-31b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemma_(language_model)",
+      "snippet": "The first version was released in February 2024, followed by Gemma 2 in June 2024, Gemma 3 in March 2025, and the open-weights Gemma 4 in April 2026. Variants of Gemma have also been developed, such as the vision-language model PaliGemma and the model MedGemma for medical consultation topics."
+    },
+    {
+      "title": "Gemma 4 available on Google Cloud | Google Cloud Blog",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/gemma-4-available-on-google-cloud",
+      "snippet": "Get started today From Vertex AI to Sovereign Cloud, you can start building with Gemma 4 today. By choosing Gemma 4 on Google Cloud, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Fine-Tuning Gemma 4 for Text-to-SQL on Databricks A10G ... - Medium",
+      "url": "https://medium.com/data-science-in-your-pocket/fine-tuning-gemma-4-for-text-to-sql-on-databricks-a10g-complete-guide-e55ac36e7ef4",
+      "snippet": "Gemma 4, Google&#x27;s latest frontier multimodal model, can be fine-tuned efficiently using QLoRA on Databricks A10G GPUs with the code above. This article walks through the full process, from setup ..."
+    },
+    {
+      "title": "Performance deep dive of Gemma on Google Cloud",
+      "url": "https://cloud.google.com/blog/products/ai-machine-learning/performance-deepdive-of-gemma-on-google-cloud",
+      "snippet": "Earlier this year we announced Gemma, an open weights model family built to enable developers to rapidly experiment with, adapt, and productionize on Google Cloud. Gemma models can run on your laptop, workstation, or on Google Cloud through either Vertex AI or Google Kubernetes Engine (GKE) using your choice of Cloud GPUs or Cloud TPUs."
+    },
+    {
+      "title": "Google Gemma 4 Review: 31B Model Beats 400B Rivals - startuphub.ai",
+      "url": "https://www.startuphub.ai/ai-news/ai-research/2026/google-gemma-4-review-2026",
+      "snippet": "Google Gemma 4 Review: How a 31B Open Model Beats 400B Rivals Google Gemma 4 review: benchmarks, features, and how the 31B model outperforms Llama 4 and Qwen 3.5 on math, coding, and agentic tasks under Apache 2.0."
+    }
+  ]
+}

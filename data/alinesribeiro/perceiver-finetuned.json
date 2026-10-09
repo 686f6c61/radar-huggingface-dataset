@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alinesribeiro/perceiver-finetuned",
+  "slug": "alinesribeiro-perceiver-finetuned",
+  "author": "alinesribeiro",
+  "url": "https://huggingface.co/alinesribeiro/perceiver-finetuned",
+  "created_at": "2026-10-09T00:09:52.000Z",
+  "updated_at": "2026-10-09T00:09:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kabirisingh/perceiver-finetuned · Hugging Face",
+      "url": "https://huggingface.co/kabirisingh/perceiver-finetuned",
+      "snippet": "kabirisingh / perceiver-finetuned Like 0 Safetensors PyTorch perceiver multitask License:mit Model card FilesFiles and versions xet Community Copy to bucket new Perceiver for Multitask Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "alinesribeiro (Aline Ribeiro) - Hugging Face",
+      "url": "https://huggingface.co/alinesribeiro",
+      "snippet": "AI & ML interests reinforcement learning, prompt engineering, quantization, ai ethics"
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "Perceiver AI",
+      "url": "https://perceiver.ai/",
+      "snippet": "The Premier Optimization AI: Solve your toughest optimization problems with the Power of Perceiver. The world&#x27;s most advanced self learning AI."
+    },
+    {
+      "title": "Fine-tune a model with supervised fine-tuning in Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Go to Build > Fine-tune, and select Fine-tune. Select a supported base model and Supervised fine-tuning. Select a training type supported by your model and resource. Select Existing dataset or Upload new dataset for the training and validation files. Inspect the preview and resolve validation errors."
+    }
+  ]
+}

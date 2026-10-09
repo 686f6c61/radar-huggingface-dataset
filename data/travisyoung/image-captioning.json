@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "travisyoung/image-captioning",
+  "slug": "travisyoung-image-captioning",
+  "author": "travisyoung",
+  "url": "https://huggingface.co/travisyoung/image-captioning",
+  "created_at": "2026-10-08T23:37:38.000Z",
+  "updated_at": "2026-10-08T23:37:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rush Team Hacks & Cheats - MPGH - MultiPlayer Game Hacking",
+      "url": "https://www.mpgh.net/forum/689-rush-team-hacks-cheats",
+      "snippet": "Rush Team hacks, cheats, mods and trading - Roka, 2013, FPS, Browser, from the MPGH community."
+    },
+    {
+      "title": "Combat Arms - MPGH - MultiPlayer Game Hacking & Cheats",
+      "url": "https://www.mpgh.net/games/combat-arms",
+      "snippet": "A fast military shooter with a huge arsenal and one of MPGH's longest-running communities. Find the latest Combat Arms hacks, …"
+    },
+    {
+      "title": "Dofus Hacks - MPGH - MultiPlayer Game Hacking & Cheats",
+      "url": "https://www.mpgh.net/forum/445-dofus-hacks",
+      "snippet": "Dofus Hacks / Trainers / Cheats Developer Ankama Publisher Ankama Released 2004 Tactical RPG MMORPG"
+    },
+    {
+      "title": "HOW DO I CHANGE PASSWORD TO RUSH TEAM ACCOUNT?",
+      "url": "https://www.mpgh.net/forum/printthread.php?t=752108&pp=15&page=1",
+      "snippet": "HELLO I NEED TO CHANGE PASSWORD TO MY RUSHTEAM ACCOUNT FAST PLEASE TELL ; ( as im not the original owner of …"
+    },
+    {
+      "title": "Forum - MPGH - MultiPlayer Game Hacking & Cheats",
+      "url": "https://www.mpgh.net/forum/164-combat-arms-hacks-cheats",
+      "snippet": "The original community for game mods, cheats, and reverse engineering."
+    }
+  ]
+}

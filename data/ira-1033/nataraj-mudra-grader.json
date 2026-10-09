@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ira-1033/nataraj-mudra-grader",
+  "slug": "ira-1033-nataraj-mudra-grader",
+  "author": "Ira-1033",
+  "url": "https://huggingface.co/Ira-1033/nataraj-mudra-grader",
+  "created_at": "2026-10-08T23:59:17.000Z",
+  "updated_at": "2026-10-08T23:59:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "scikit-learn",
+    "computer-vision",
+    "mediapipe",
+    "mmpose",
+    "image-classification",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59561442,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les instituts régionaux d'administration (IRA) - Le portail de la ...",
+      "url": "https://www.fonction-publique.gouv.fr/devenir-agent-public/les-instituts-regionaux-dadministration-ira",
+      "snippet": "Chaque année, plus de 800 attachés d’administration de l'État sont recrutés par concours et formés par la voie des IRA, au rythme …"
+    },
+    {
+      "title": "Présentation des concours d'accès aux IRA",
+      "url": "https://ira-inscription.fonction-publique.gouv.fr/presentation.html",
+      "snippet": "Feb 9, 2026 · Les fonctionnaires recrutés par la voie des IRA s'engagent à servir l'Etat durant 5 années. Les points-clés de la …"
+    },
+    {
+      "title": "Inscriptions au concours d'accès aux instituts régionaux d ...",
+      "url": "https://ira-inscription.fonction-publique.gouv.fr/",
+      "snippet": "Mar 9, 2026 · Leur principale mission est d'assurer la formation professionnelle initiale (14 mois), après concours, des attachés …"
+    },
+    {
+      "title": "Les annales des concours | Le portail de la fonction publique",
+      "url": "https://www.fonction-publique.gouv.fr/devenir-agent-public/les-annales-des-concours",
+      "snippet": "Retrouvez sur cette page les dernières annales aux concours pour intégrer les instituts régionaux d’administration (IRA)."
+    },
+    {
+      "title": "Institut Régional d'Administration de Lyon – IRA de Lyon",
+      "url": "https://www.ira-lyon.gouv.fr/",
+      "snippet": "L’Institut régional d’administration de Lyon (IRA de Lyon) est un établissement public de l’Etat placé sous la tutelle du Premier …"
+    }
+  ]
+}

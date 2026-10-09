@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zeechimp/holo-metacognitive",
+  "slug": "zeechimp-holo-metacognitive",
+  "author": "zeechimp",
+  "url": "https://huggingface.co/zeechimp/holo-metacognitive",
+  "created_at": "2026-10-08T21:18:48.000Z",
+  "updated_at": "2026-10-08T21:22:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "holo-metacognitive",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "holo-metacognitive",
+    "memory",
+    "metacognition",
+    "self-model",
+    "provenance",
+    "introspection",
+    "anomaly-detection",
+    "associative-memory",
+    "hyperdimensional-computing",
+    "vector-symbolic-architecture",
+    "numpy",
+    "educational",
+    "research",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeechimp/hv-metacognition · Hugging Face",
+      "url": "https://huggingface.co/zeechimp/hv-metacognition",
+      "snippet": "Like 1 Tabular Regression PyTorch hv_metacognition metacognition training-dynamics learning-curve-extrapolation early-stopping numpy License:mit Model card FilesFiles and versions xet Community Copy to bucket new hv-metacognition The finding Headline numbers The 19 features The meta-dataset How to use Intended use Limitations Comparison to ..."
+    },
+    {
+      "title": "zeechimp (Sylv Q) - Hugging Face",
+      "url": "https://huggingface.co/zeechimp/models",
+      "snippet": "zeechimp/hv-multimodal-audio-text-v1 Audio Classification •Updated about 7 hours ago• 12 • 1"
+    },
+    {
+      "title": "AI-powered learning analytics for metacognitive and ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1672901/full",
+      "snippet": "To address this gap, the present study systematically reviews empirical research on AI-powered Learning Analytics, focusing on their potential to enhance metacognitive and socioemotional development. The article is structured as follows: the next section presents the conceptual and theoretical background underpinning LA applications in this domain."
+    },
+    {
+      "title": "(PDF) Developing and Evaluating an AI-based Tool for Assessing and ...",
+      "url": "https://www.researchgate.net/publication/385179215_Developing_and_Evaluating_an_AI-based_Tool_for_Assessing_and_Enhancing_Metacognitive_Skills_in_Diverse_Learning_Contexts",
+      "snippet": "Developing and Evaluating an AI-based Tool for Assessing and Enhancing Metacognitive Skills in Diverse Learning Contexts"
+    },
+    {
+      "title": "Metacognitive AI: Framework and the Case for a ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/381517685_Metacognitive_AI_Framework_and_the_Case_for_a_Neurosymbolic_Approach",
+      "snippet": "We introduce a framework for understanding metacognitive artificial intelligence (AI) that we call TRAP: transparency, reasoning, adaptation, and perception."
+    }
+  ]
+}

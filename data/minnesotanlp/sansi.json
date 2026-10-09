@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "minnesotanlp/SanSi",
+  "slug": "minnesotanlp-sansi",
+  "author": "minnesotanlp",
+  "url": "https://huggingface.co/minnesotanlp/SanSi",
+  "created_at": "2026-10-08T19:50:34.000Z",
+  "updated_at": "2026-10-08T20:02:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "looped-language-model",
+    "typed-decision",
+    "calibration",
+    "lora",
+    "en",
+    "arxiv:2610.07730",
+    "base_model:ByteDance/Ouro-1.4B",
+    "base_model:adapter:ByteDance/Ouro-1.4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 243328348,
+  "storage_human": "243 MB",
+  "base_model": "ByteDance/Ouro-1.4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "SciSense - a minnesotanlp Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/minnesotanlp/scisense",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Real-Time Speech AI Platform | Sanas",
+      "url": "https://www.sanas.ai/",
+      "snippet": "Sanas is the Speech AI platform that removes communication barriers in real time, improving customer experience, performance, and global understanding."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches from OpenAI, Anthropic, Google DeepMind, Meta, SpaceXAI, DeepSeek, Qwen, Mistral AI, Moonshot AI, Z.ai, MiniMax, NVIDIA, Microsoft AI, Cohere, Xiaomi, and other prominent AI labs. The newest-first tables show each release date, provider, and model type. Dates use the earliest meaningful availability stage for each entry. Preview access ..."
+    },
+    {
+      "title": "SanSi: A Looped Typed Decision Model for System 1.5 Thinking",
+      "url": "https://arxiv.org/html/2610.07730v1",
+      "snippet": "Each loop lets the model revise its hidden state before it commits to an answer, without generating a token; we call this System 1.5 thinking. We propose SanSi, which turns a pre-trained looped language model into a typed decision model."
+    }
+  ]
+}

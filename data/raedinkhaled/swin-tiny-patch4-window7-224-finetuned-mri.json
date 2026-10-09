@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "raedinkhaled/swin-tiny-patch4-window7-224-finetuned-mri",
+  "slug": "raedinkhaled-swin-tiny-patch4-window7-224-finetuned-mri",
+  "author": "raedinkhaled",
+  "url": "https://huggingface.co/raedinkhaled/swin-tiny-patch4-window7-224-finetuned-mri",
+  "created_at": "2022-06-18T16:25:22.000Z",
+  "updated_at": "2026-10-08T21:35:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tensorboard",
+    "swin",
+    "image-classification",
+    "swin-transformer",
+    "medical-imaging",
+    "cardiac-mri",
+    "generated_from_trainer",
+    "dataset:imagefolder",
+    "base_model:microsoft/swin-tiny-patch4-window7-224",
+    "base_model:finetune:microsoft/swin-tiny-patch4-window7-224",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 441650474,
+  "storage_human": "442 MB",
+  "base_model": "microsoft/swin-tiny-patch4-window7-224",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "CAD Cardiac MRI Dataset (Kaggle)",
+      "metric": "Accuracy",
+      "value": 0.9806603773584905
+    }
+  ],
+  "sources": [
+    {
+      "title": "swin-tiny-patch4-window7-224-finetuned-mri - Hugging Face",
+      "url": "https://huggingface.co/raedinkhaled/swin-tiny-patch4-window7-224-finetuned-mri",
+      "snippet": "swin-tiny-patch4-window7-224-finetuned-mri This model is a fine-tuned version of microsoft/swin-tiny-patch4-window7-224 on the imagefolder dataset. It achieves the following results on the evaluation set: Loss: 0.0608 Accuracy: 0.9807 Model description More information needed Intended uses & limitations More information needed Training and ..."
+    },
+    {
+      "title": "microsoft/swin-tiny-patch4-window7-224 · Hugging Face",
+      "url": "https://huggingface.co/microsoft/swin-tiny-patch4-window7-224",
+      "snippet": "Swin Transformer (tiny-sized model) Swin Transformer model trained on ImageNet-1k at resolution 224x224. It was introduced in the paper Swin Transformer: Hierarchical Vision Transformer using Shifted Windows by Liu et al. and first released in this repository."
+    },
+    {
+      "title": "open_model_zoo/models/public/swin-tiny-patch4-window7-224 ... - GitHub",
+      "url": "https://github.com/openvinotoolkit/open_model_zoo/blob/master/models/public/swin-tiny-patch4-window7-224/README.md",
+      "snippet": "The swin-tiny-patch4-window7-224 model is a tiny version of the Swin Transformer image classification models pre-trained on ImageNet dataset. Swin Transformer is Hierarchical Vision Transformer whose representation is computed with shifted windows. Each patch is treated as a token with size of 4 and its feature is set as a concatenation of the raw pixel RGB values. The model has 7 patches in ..."
+    },
+    {
+      "title": "swin-tiny-patch4-window7-224 - OpenVINO",
+      "url": "https://docs.openvino.ai/2023.3/omz_models_model_swin_tiny_patch4_window7_224.html",
+      "snippet": "Use Case and High-Level Description ¶ The swin-tiny-patch4-window7-224 model is a tiny version of the Swin Transformer image classification models pre-trained on ImageNet dataset. Swin Transformer is Hierarchical Vision Transformer whose representation is computed with shifted windows. Each patch is treated as a token with size of 4 and its feature is set as a concatenation of the raw pixel ..."
+    },
+    {
+      "title": "swin-tiny-patch4-window7-224 · Models",
+      "url": "https://www.modelscope.cn/models/microsoft/swin-tiny-patch4-window7-224",
+      "snippet": "The Swin Transformer is a type of Vision Transformer. It builds hierarchical feature maps by merging image patches (shown in gray) in deeper layers and has linear computation complexity to input image size due to computation of self-attention only within each local window (shown in red)."
+    }
+  ]
+}

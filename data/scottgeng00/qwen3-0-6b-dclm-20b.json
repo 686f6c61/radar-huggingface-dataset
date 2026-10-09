@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "scottgeng00/qwen3-0.6b-dclm-20b",
+  "slug": "scottgeng00-qwen3-0-6b-dclm-20b",
+  "author": "scottgeng00",
+  "url": "https://huggingface.co/scottgeng00/qwen3-0.6b-dclm-20b",
+  "created_at": "2026-10-08T19:47:11.000Z",
+  "updated_at": "2026-10-08T19:47:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "pretraining",
+    "dclm",
+    "conversational",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 1203010934,
+  "storage_human": "1.2 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-0.6B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jinx-org/Jinx-Qwen3-0.6B · Hugging Face",
+      "url": "https://huggingface.co/Jinx-org/Jinx-Qwen3-0.6B",
+      "snippet": "It is designed exclusively for AI safety research to study alignment failures and evaluate safety boundaries in language models. Key Characteristics Zero Refusal Rate: Responds to all queries without safety filtering Preserved Capabilities: Maintains reasoning and instruction-following abilities comparable to base models Qwen3-0.6B Qwen3 Highlights"
+    },
+    {
+      "title": "Qwen3 Complete Guide: Every Model from 0.6B to 235B",
+      "url": "https://insiderllm.com/guides/qwen3-complete-guide/",
+      "snippet": "Qwen3 is the best open model family for budget local AI. Dense models from 0.6B to 32B, MoE models that punch above their weight, and a /think toggle no one else has."
+    },
+    {
+      "title": "[2505.09388] Qwen3 Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2505.09388",
+      "snippet": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the ..."
+    },
+    {
+      "title": "Qwen3-0.6B · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-0.6B",
+      "snippet": "PyTorch License: apache-2.0 qwen3 ModelScope Inference Demo @ Qwen 5,809,651 downloads"
+    }
+  ]
+}

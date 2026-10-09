@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Adamix303/beans-deit-tiny",
+  "slug": "adamix303-beans-deit-tiny",
+  "author": "Adamix303",
+  "url": "https://huggingface.co/Adamix303/beans-deit-tiny",
+  "created_at": "2026-10-08T19:46:30.000Z",
+  "updated_at": "2026-10-08T19:46:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:facebook/deit-tiny-patch16-224",
+    "base_model:finetune:facebook/deit-tiny-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5524995,
+  "parameters_human": "5.5M",
+  "storage_bytes": 22127957,
+  "storage_human": "22 MB",
+  "base_model": "facebook/deit-tiny-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "facebook/deit-tiny-patch16-224 · Hugging Face",
+      "url": "https://huggingface.co/facebook/deit-tiny-patch16-224",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeiT-Tiny INT8 | Arm AI Portal",
+      "url": "https://developer.arm.com/ai/models/hugging-face/Arm/deit-tiny-int8-xnnpack-executorch/deit-tiny-int8-pte?targetName=Raspberry+Pi+5",
+      "snippet": "Original Model and Documentation For information about the Original Model, including its development, training data, intended uses, limitations and other relevant information, please refer to the Original Model repository."
+    },
+    {
+      "title": "DeiT: Data-efficient Image Transformer Overview - Medium",
+      "url": "https://medium.com/@zakhtar2020/deit-data-efficient-image-transformer-overview-acd1cb3b1dcf",
+      "snippet": "DeiT (Data-efficient Image Transformer) is an advanced vision transformer model designed to achieve high performance in image classification tasks with significantly less data compared to ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=deit-tiny",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: deit-tiny Clear all"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-MicroQuality-Kolibri-1-GGUF",
+  "slug": "webmp3-sakura-microquality-kolibri-1-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-MicroQuality-Kolibri-1-GGUF",
+  "created_at": "2026-10-05T12:52:43.000Z",
+  "updated_at": "2026-10-08T21:56:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "sakura",
+    "sakura-micro",
+    "llama.cpp",
+    "quantization",
+    "imatrix",
+    "mixed-quant",
+    "kolibri1",
+    "text-generation",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 1127,
+  "trending_score": 0,
+  "parameters": 78103074560,
+  "parameters_human": "78.10B",
+  "storage_bytes": 94236638135,
+  "storage_human": "94.2 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sakura-MicroQuality-Kolibri-1-365E-GGUF - Hugging Face",
+      "url": "https://huggingface.co/webmp3/Sakura-MicroQuality-Kolibri-1-365E-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    },
+    {
+      "title": "Aleph Alpha releases open-weight Kolibri with 1M context",
+      "url": "https://www.testingcatalog.com/aleph-alpha-releases-open-weight-kolibri-with-1m-context/",
+      "snippet": "Aleph Alpha has released Kolibri, an open-weight bilingual model aimed at sovereign, mission-critical work in government and regulated industries. The English-German Mixture-of-Experts Transformer carries 78.1 billion parameters while activating 3.46 billion per token, supports contexts up to one ..."
+    },
+    {
+      "title": "colibri - justvugg.github.io",
+      "url": "https://justvugg.github.io/colibri/",
+      "snippet": "Run frontier open models on hardware you already own. Ten language-model families, an image model and decision models, up to 2.8T parameters, pure C, zero dependencies."
+    },
+    {
+      "title": "Aleph Alpha Kolibri: What Germany&#x27;s &#x27;Sovereign&#x27; Open-Weight AI Model ...",
+      "url": "https://www.online-tech-tips.com/aleph-alpha-kolibri-sovereign-open-weight-ai-model/",
+      "snippet": "Learn more. On October 3, 2026, German AI company Aleph Alpha published Kolibri, a new open-weight AI language model, as downloadable files on Hugging Face under the Apache 2.0 license. The company announced it in a post on its official blog and on its X account, and published the technical details on the Kolibri-1 model card."
+    }
+  ]
+}

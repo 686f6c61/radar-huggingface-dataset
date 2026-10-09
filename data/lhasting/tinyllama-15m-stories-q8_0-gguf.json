@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lhasting/tinyllama-15M-stories-Q8_0-GGUF",
+  "slug": "lhasting-tinyllama-15m-stories-q8_0-gguf",
+  "author": "lhasting",
+  "url": "https://huggingface.co/lhasting/tinyllama-15M-stories-Q8_0-GGUF",
+  "created_at": "2026-10-08T22:34:05.000Z",
+  "updated_at": "2026-10-08T22:34:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:ModelCloud/tinyllama-15M-stories",
+    "base_model:quantized:ModelCloud/tinyllama-15M-stories",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15191712,
+  "parameters_human": "15.2M",
+  "storage_bytes": 16879744,
+  "storage_human": "17 MB",
+  "base_model": "ModelCloud/tinyllama-15M-stories",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can a woman take a horse penis? - Answers",
+      "url": "https://www.answers.com/zoology/Can_a_woman_take_a_horse_penis",
+      "snippet": "Oct 21, 2024 · Part of a horse's shaft will fit but the sexual experience does not last as long as it does with a dog. Once I had enjoyed …"
+    },
+    {
+      "title": "How big is a English mastiff penis and knott? - Answers",
+      "url": "https://www.answers.com/mammals/How_big_is_a_English_mastiff_penis_and_knott",
+      "snippet": "Jan 8, 2026 · Our English Mastiff's penis is just over 14 inches long with a knot that is right at 6 inches in girth."
+    },
+    {
+      "title": "512 Pill White Round 12mm - Pill Identifier - Drugs.com",
+      "url": "https://www.drugs.com/imprints/512-6765.html",
+      "snippet": "The pill with imprint 512 (White, Round, 12 mm) has been identified as Acetaminophen and Oxycodone Hydrochloride 325 mg / 5 …"
+    },
+    {
+      "title": "Butrans Patch Dosage Guide - Drugs.com",
+      "url": "https://www.drugs.com/dosage/butrans-patch.html",
+      "snippet": "May 1, 2026 · Detailed dosage guidelines and administration information for Butrans Patch (buprenorphine). Includes dose …"
+    },
+    {
+      "title": "What dog have the biggest dog knot? - Answers",
+      "url": "https://www.answers.com/zoology/What_dog_have_the_biggest_dog_knot",
+      "snippet": "Dec 15, 2024 · These big boys are not only impressive in size but also in their... ahem... anatomy. So, if you're looking for a dog with …"
+    }
+  ]
+}

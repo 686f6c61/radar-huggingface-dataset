@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AlexeyNe/supertonic-3-android-onnx",
+  "slug": "alexeyne-supertonic-3-android-onnx",
+  "author": "AlexeyNe",
+  "url": "https://huggingface.co/AlexeyNe/supertonic-3-android-onnx",
+  "created_at": "2026-10-08T19:54:39.000Z",
+  "updated_at": "2026-10-08T19:54:49.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "supertonic",
+  "languages": [],
+  "tags": [
+    "supertonic",
+    "onnx",
+    "android",
+    "text-to-speech",
+    "base_model:Supertone/supertonic-3",
+    "base_model:quantized:Supertone/supertonic-3",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139710325,
+  "storage_human": "140 MB",
+  "base_model": "Supertone/supertonic-3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supertonic 3 — Lightning-Fast, On-Device, Multilingual TTS",
+      "url": "https://supertonic3.github.io/",
+      "snippet": "Supertonic 3 is a 99M-parameter open-weight text-to-speech model from Supertone. Runs on CPU via ONNX Runtime. No GPU. No cloud. No API. 31 languages."
+    },
+    {
+      "title": "aoiandroid/supertonic-3 at main - Hugging Face",
+      "url": "https://huggingface.co/aoiandroid/supertonic-3/tree/main/onnx",
+      "snippet": "Instructions to use aoiandroid/supertonic-3 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Supertonic How to use aoiandroid/supertonic-3 with Supertonic:"
+    },
+    {
+      "title": "Supertonic 3 — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/supertonic-3/",
+      "snippet": "← All models MODEL · SUPERTONE · LIGHTWEIGHT (ON-DEVICE) Supertonic 3 A lightweight on-device TTS that runs entirely locally through ONNX Runtime — no cloud call for synthesis. Supertonic 3 expands the open-weight release from 5 to 31 languages, improves reading stability, and cuts repeat/skip failures. `pip install supertonic` and synthesize immediately with selectable voice styles ..."
+    },
+    {
+      "title": "Supertone/supertonic-3 · Hugging Face",
+      "url": "https://huggingface.co/Supertone/supertonic-3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Supertone Releases Supertonic v3: On-Device Text-to-Speech Model with ...",
+      "url": "https://www.marktechpost.com/2026/05/15/supertone-releases-supertonic-v3-on-device-text-to-speech-model-with-31-language-support-fewer-reading-failures-and-expression-tags/",
+      "snippet": "Supertone released Supertonic 3, the third generation of its on-device, ONNX-based text-to-speech system. Supertonic 3 ships with 31-language support, improved reading accuracy, fewer repeat and skip failures, and v2-compatible public ONNX assets. It is Lightning Fast, On-Device, Multilingual and Accurate TTS. What Changed from v2 to v3 Compared with Supertonic 2, Supertonic 3 reduces repeat ..."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "HatefulSable/okko",
+  "slug": "hatefulsable-okko",
+  "author": "HatefulSable",
+  "url": "https://huggingface.co/HatefulSable/okko",
+  "created_at": "2026-10-08T20:31:33.000Z",
+  "updated_at": "2026-10-08T21:32:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 456901760,
+  "storage_human": "457 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HatefulSable/goldie at main - Hugging Face",
+      "url": "https://huggingface.co/HatefulSable/goldie/tree/main",
+      "snippet": "HatefulSable / goldie Like 0 Model card FilesFiles and versions xet Community Copy to bucket new main goldie 228 MB Ctrl+K Ctrl+K 1 contributor History:5 commits HatefulSable Update README.md ae321e2 verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md Safe 709 BytesUpdate README.md3 days ago goldie-v1.-e10-nbxl ..."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Bernard Mettle (OK K.O!) - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/454c12d584454ed9e4e0eaf6004082bc",
+      "snippet": "Explore Bernard Mettle (OK K.O!) model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Why open-weight models without guardrails are a AI safety risk : NPR",
+      "url": "https://www.npr.org/2026/05/31/nx-s1-5816391/ai-safety-concerns-danger-open-weight-models-risks",
+      "snippet": "Open-weight AI models with advanced capabilities and no safeguards are becoming much more accessible. While they can be useful, AI safety experts have concerns."
+    }
+  ]
+}

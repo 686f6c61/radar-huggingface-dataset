@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4",
+  "slug": "randmaru-mellum2-1-12b-a2-5b-thinking-mlx-mxfp4",
+  "author": "randmaru",
+  "url": "https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4",
+  "created_at": "2026-10-08T22:28:22.000Z",
+  "updated_at": "2026-10-08T22:50:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mellum",
+    "text-generation-inference",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "text-generation",
+    "conversational",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 6457111871,
+  "storage_human": "6.5 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mellum2-12B-A2.5B-Thinking-GGUF-MXFP4_MOE - Hugging Face",
+      "url": "https://huggingface.co/JetBrains/Mellum2-12B-A2.5B-Thinking-GGUF-MXFP4_MOE",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mlx-community/Mellum2-12B-A2.5B-Thinking-mxfp4 at main",
+      "url": "https://huggingface.co/mlx-community/Mellum2-12B-A2.5B-Thinking-mxfp4/tree/main",
+      "snippet": "mlx-community / Mellum2-12B-A2.5B-Thinking-mxfp4 like 0 Follow MLX Community 15.8k Text Generation MLX Safetensors English mellum Mixture of Experts thinking mxfp4 conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mellum2.1 Thinking - 131k context, open source | LLM Reference",
+      "url": "https://www.llmreference.com/model/mellum2-1-12b-thinking",
+      "snippet": "Mellum2.1 Thinking is available now for coding, rag, and agents with open-source and 131k context; evaluate it while provider pricing coverage matures."
+    },
+    {
+      "title": "Mellum2 12B A2.5B Thinking Mxfp4 by mlx-community",
+      "url": "https://llm-explorer.com/model/mlx-community%2FMellum2-12B-A2.5B-Thinking-mxfp4,4dlvM7NturXWL8GgD4jyRm",
+      "snippet": "Rank the Mellum2 12B A2.5B Thinking Mxfp4 capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Mellum2-12B-A2.5B-Thinking: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/mellum2-12b-a2.5b-thinking-jetbrains",
+      "snippet": "Overview Mellum2-12B-A2.5B-Thinking is a reasoning-augmented language model built by JetBrains that emits explicit chain-of-thought reasoning before generating final answers. The model uses a Mixture-of-Experts architecture with 64 experts and activates 8 experts per token, resulting in 2.5B active parameters despite 12B total parameters. It combines sliding-window and full attention layers ..."
+    }
+  ]
+}

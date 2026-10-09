@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "zveloxy/Veloxy-Flash-15B",
+  "slug": "zveloxy-veloxy-flash-15b",
+  "author": "zveloxy",
+  "url": "https://huggingface.co/zveloxy/Veloxy-Flash-15B",
+  "created_at": "2026-10-08T02:26:06.000Z",
+  "updated_at": "2026-10-09T01:06:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "text-generation",
+    "reasoning",
+    "cot",
+    "think",
+    "turkish",
+    "qwen3_5",
+    "code",
+    "agent",
+    "tool-calling",
+    "zero-refusal",
+    "cybersecurity",
+    "java21",
+    "loom",
+    "veloxy",
+    "conversational",
+    "tr",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 139469460521,
+  "storage_human": "139.5 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veloxy",
+      "url": "https://veloxy.io/",
+      "snippet": "Veloxy changes all that by integrating the most important tools into a single app. With Veloxy, the calendar, tasks, contacts, notes, and sales reports become accessible from a central hub. What&#x27;s more, because Veloxy is a mobile app, your sales reps can access all their essential business tools, whether they&#x27;re at a desk or on the go."
+    },
+    {
+      "title": "zveloxy/veloxy-qwen3.5-faz1 · Hugging Face",
+      "url": "https://huggingface.co/zveloxy/veloxy-qwen3.5-faz1",
+      "snippet": "zveloxy / veloxy-qwen3.5-faz1 Like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "zveloxy/veloxy-qwen3.5-faz3 at main - Hugging Face",
+      "url": "https://huggingface.co/zveloxy/veloxy-qwen3.5-faz3/tree/main",
+      "snippet": "zveloxy / veloxy-qwen3.5-faz3 Like 0 Text Generation PEFT Safetensors Transformers lora sft trl conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "A 320B Local Coding AI That Runs Like A 15B Model",
+      "url": "https://www.youtube.com/watch?v=ZTj51_RVQCQ",
+      "snippet": "About The Stack The Stack helps you build with AI. Each video takes one tool, model, or workflow and shows how it works in a few focused minutes, with the real benchmarks and real costs."
+    }
+  ]
+}

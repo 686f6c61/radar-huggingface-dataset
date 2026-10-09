@@ -5,7 +5,7 @@
   "author": "inference-optimization",
   "url": "https://huggingface.co/inference-optimization/GLM-4.5-Air-0.72B-MTP-PR3225",
   "created_at": "2026-10-07T15:02:32.000Z",
-  "updated_at": "2026-10-07T15:02:38.000Z",
+  "updated_at": "2026-10-08T15:56:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 6,
   "trending_score": 0,
   "parameters": 718663536,
   "parameters_human": "718.7M",

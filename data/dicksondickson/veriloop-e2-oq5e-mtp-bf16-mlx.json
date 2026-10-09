@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/VeriLoop-E2-oQ5e-mtp-bf16-MLX",
+  "slug": "dicksondickson-veriloop-e2-oq5e-mtp-bf16-mlx",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/VeriLoop-E2-oQ5e-mtp-bf16-MLX",
+  "created_at": "2026-10-09T00:10:40.000Z",
+  "updated_at": "2026-10-09T00:12:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "27b",
+    "omlx",
+    "oQe",
+    "apple",
+    "bf16",
+    "base_model:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "base_model:quantized:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "license:mit",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27872753616,
+  "parameters_human": "27.87B",
+  "storage_bytes": 20396020915,
+  "storage_human": "20.4 GB",
+  "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    },
+    {
+      "title": "CAS - Central Authentication Service Connexion",
+      "url": "https://ent.univ-lille.fr/etu",
+      "snippet": "Informations Pour des raisons de sécurité, fermez votre navigateur web après avoir accédé aux services protégés. Méfiez-vous de …"
+    },
+    {
+      "title": "Service d'authentification web - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/educt-self-service/profil/consultationProfil",
+      "snippet": "Puisque votre navigateur ne supporte pas JavaScript, vous devez appuyer sur le bouton Continuer pour poursuivre."
+    },
+    {
+      "title": "Somme Numérique : Accès ENT",
+      "url": "http://amienslapaix.entsomme.fr/",
+      "snippet": "Réseau public pour les communications numériques Accéder au portail ENT 83 rue St Fuscien - 80000 Amiens - Tél. : 03 22 22 27 …"
+    },
+    {
+      "title": "mon ent occitanie",
+      "url": "http://mon-ent-occitanie.fr/",
+      "snippet": ""
+    }
+  ]
+}

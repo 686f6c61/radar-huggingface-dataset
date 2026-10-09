@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "slendermantvb/jarvis-v2.4.1",
+  "slug": "slendermantvb-jarvis-v2-4-1",
+  "author": "slendermantvb",
+  "url": "https://huggingface.co/slendermantvb/jarvis-v2.4.1",
+  "created_at": "2026-10-08T20:54:01.000Z",
+  "updated_at": "2026-10-08T21:03:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "custom-model",
+    "spanish",
+    "mixture-of-experts",
+    "symbolic-ai",
+    "lisp",
+    "text-generation",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78846484,
+  "parameters_human": "78.8M",
+  "storage_bytes": 315402720,
+  "storage_human": "315 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - open-jarvis/OpenJarvis: Personal AI, On Personal Devices",
+      "url": "https://github.com/open-jarvis/OpenJarvis",
+      "snippet": "Personal AI, On Personal Devices. Contribute to open-jarvis/OpenJarvis development by creating an account on GitHub."
+    },
+    {
+      "title": "Jarvis — The AI That Lives on Your Desktop",
+      "url": "https://jarvisapp.in/",
+      "snippet": "A living interface. Jarvis wakes on your desktop — listening, thinking, and responding the instant you speak."
+    },
+    {
+      "title": "OpenJarvis — Personal AI, On Personal Devices",
+      "url": "https://openjarvis.stanford.edu/",
+      "snippet": "Build personal AI that runs on your hardware. Cloud APIs are optional."
+    },
+    {
+      "title": "Blazehue/J.A.R.V.I.S: Jarvis V2 - GitHub",
+      "url": "https://github.com/Blazehue/J.A.R.V.I.S",
+      "snippet": "Jarvis V2 is a sophisticated desktop AI assistant that brings the power of voice-controlled computing to your fingertips. Inspired by Tony Stark&#x27;s JARVIS from the Marvel Cinematic Universe, this assistant combines natural language processing, system automation, and intelligent task management to transform how you interact with your computer. Whether you&#x27;re launching applications, managing ..."
+    },
+    {
+      "title": "Open-Jarvis · Iron Man-style open-source personal AI assistant",
+      "url": "https://fedcal.github.io/open-jarvis/en/",
+      "snippet": "Open-Jarvis is an open-source, self-hosted personal AI assistant inspired by Iron Man&#x27;s J.A.R.V.I.S. that lives across laptops, smartphones, smartwatches, AR glasses, VR headsets, holographic displays and medical wearables."
+    }
+  ]
+}

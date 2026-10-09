@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eoinedge/automotive-fusion",
+  "slug": "eoinedge-automotive-fusion",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/automotive-fusion",
+  "created_at": "2026-10-09T00:21:08.000Z",
+  "updated_at": "2026-10-09T00:21:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "sensor-fusion",
+    "automotive",
+    "root-cause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eoinedge (eoin) - Hugging Face",
+      "url": "https://huggingface.co/eoinedge/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 1 month ago ... updated a dataset about 1 month ago"
+    },
+    {
+      "title": "eoinedge/spark-plug-classification · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/eoinedge/spark-plug-classification",
+      "snippet": "Spark Plug Condition Classification Labeled images of spark plugs for training a multi-class visual classifier. Includes four categories: normal carbon_fouled oil_fouled mechanical_damage Optimized for use in Edge Impulse with the Transfer Learning (MobileNetV2) block. Input: Images (96x96) Task: Multi-class classification Use case: Visual diagnostics and condition monitoring Model trained and ..."
+    },
+    {
+      "title": "Edge AI Platform - ModelNova",
+      "url": "https://modelnova.com/",
+      "snippet": "The edge AI pipeline, without the stitching Model selection, hardware optimization, and production deployment - every step inside Fusion Studio, no handoffs between tools."
+    },
+    {
+      "title": "Automotive - Edge AI and Vision Alliance",
+      "url": "https://www.edge-ai-vision.com/category/applications/automotive/",
+      "snippet": "Greg Basich, Associate Director at Counterpoint Research talks with independent journalist Junko Yoshida for the \"Robotaxis at the Crossroads—New AI Models, Sensor Fusion and the Road to Scalable AVs\" interview at the May 2026 Embedded Vision Summit."
+    },
+    {
+      "title": "fireprotdb-csv-dump - Kaggle",
+      "url": "https://www.kaggle.com/datasets/eoinedge/ai-mechanic-engine-condition-audio-fault-finding",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology through crowdsourced benchmarks, competitions, and hackathons."
+    }
+  ]
+}

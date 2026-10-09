@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Asmaamaghraby/egyptian-arabic-pragmatics",
+  "slug": "asmaamaghraby-egyptian-arabic-pragmatics",
+  "author": "Asmaamaghraby",
+  "url": "https://huggingface.co/Asmaamaghraby/egyptian-arabic-pragmatics",
+  "created_at": "2026-10-08T17:23:24.000Z",
+  "updated_at": "2026-10-08T23:03:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "egyptian-arabic",
+    "arabic-nlp",
+    "pragmatics",
+    "qlora",
+    "fine-tuning",
+    "llm-evaluation",
+    "ar",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92267084,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asmaamaghraby (Asmaa Elmaghraby) - Hugging Face",
+      "url": "https://huggingface.co/Asmaamaghraby",
+      "snippet": "User profile of Asmaa Elmaghraby on Hugging Face"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=arabic",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "‪Ashwag magraby‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=R-F_0NcAAAAJ&hl=en",
+      "snippet": "‪umm al qura university‬ - ‪‪Cited by 62‬‬ - ‪Intelligent Systems (Especially the one related to digital health and Arabic language) - Machine Learning software- Automated‬"
+    },
+    {
+      "title": "A Comparative Analysis of Pragmatic Understanding of the Arabic ...",
+      "url": "https://fount.aucegypt.edu/etds/2661/",
+      "snippet": "The study concluded with an example for an in-class AFL application that focuses on pragmatics (Arabic Pragmatic Analyzer) that integrates the first model for an enhanced learning and instruction experience, providing guidance for pragmatic instruction in AFL classes using LLMs and AI."
+    },
+    {
+      "title": "Egyptian Arabic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Egyptian_Arabic",
+      "snippet": "Egyptian Arabic, locally known as Colloquial Egyptian, [a] or simply as Masri, [b] is the most widely spoken vernacular Arabic variety in Egypt. [7][8] It is part of the Afro-Asiatic language family, and originated in the Nile Delta in Lower Egypt."
+    }
+  ]
+}

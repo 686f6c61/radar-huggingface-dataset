@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF",
+  "slug": "isvalorum-xing4-0-29b-a4b-apex-i-nanoplus-abliterated-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Xing4.0-29B-A4B-APEX-I-NanoPlus-Abliterated-GGUF",
+  "created_at": "2026-10-01T04:22:48.000Z",
+  "updated_at": "2026-10-08T22:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "apex-i-nanoplus",
+    "nanoplus",
+    "custom-quantization",
+    "imatrix",
+    "abliterated",
+    "uncensored",
+    "moe",
+    "mla",
+    "hyper-connections",
+    "mtp",
+    "reasoning",
+    "coding",
+    "agentic",
+    "long-context",
+    "xing4_0",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 856,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 23423185024,
+  "storage_human": "23.4 GB",
+  "base_model": "huihui-ai/Huihui-Xing4.0-29B-A4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Общественный контроль",
+      "url": "https://ponyri.gosuslugi.ru/obschestvennyy-kontrol/",
+      "snippet": "Jul 21, 2014 · Общественным контроль – это деятельность субъектов общественного контроля, осуществляемая в целях …"
+    },
+    {
+      "title": "Компетентные органы осуществляющие общественный контроль",
+      "url": "https://spravturs.ru/kodeks/24/kakie-kompetentnie-organi-osushestvlyayut-obshestvennij-kontrol",
+      "snippet": "Sep 6, 2025 · Обзор органов, уполномоченных на общественный контроль: их функции, полномочия и формы …"
+    },
+    {
+      "title": "КТО ПРОВОДИТ ОБЩЕСТВЕННЫЙ КОНТРОЛЬ — ЕИСОТ …",
+      "url": "https://eisot-rosmintrud.ru/kto-provodit-obshhestvennyj-kontrol/",
+      "snippet": "Mar 19, 2024 · В этой статье мы рассмотрим различные учреждения и лица, осуществляющих общественный контроль, и …"
+    },
+    {
+      "title": "Общественный контроль",
+      "url": "https://povoradm-gov36.gosuslugi.ru/obschestvennyy-kontrol/",
+      "snippet": "Общественный контроль регламентируется Федеральным законом от 21.07.2014 № 212-ФЗ «Об основах общественного …"
+    },
+    {
+      "title": "Статья 4. Общественный контроль \\ КонсультантПлюс",
+      "url": "https://www.consultant.ru/document/cons_doc_LAW_165809/1dcba3d7e829174e9bee9bd9eb9f055dadc031da/",
+      "snippet": "Общественный контроль может осуществляться как в формах, предусмотренных настоящим Федеральным законом, так и в …"
+    }
+  ]
+}

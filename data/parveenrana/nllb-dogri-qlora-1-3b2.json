@@ -5,7 +5,7 @@
   "author": "Parveenrana",
   "url": "https://huggingface.co/Parveenrana/nllb-dogri-QLoRA-1.3b2",
   "created_at": "2026-10-07T18:51:22.000Z",
-  "updated_at": "2026-10-08T00:20:48.000Z",
+  "updated_at": "2026-10-09T01:58:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 140305111,
-  "storage_human": "140 MB",
+  "storage_bytes": 343150698,
+  "storage_human": "343 MB",
   "base_model": null,
   "formats": [
     "safetensors"

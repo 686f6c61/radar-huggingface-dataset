@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "pulpich/ner-model",
+  "slug": "pulpich-ner-model",
+  "author": "pulpich",
+  "url": "https://huggingface.co/pulpich/ner-model",
+  "created_at": "2026-10-08T19:48:31.000Z",
+  "updated_at": "2026-10-08T20:02:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132890869,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bokep Jilbab – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/bokep-jilbab/",
+      "snippet": "Nonton bokep jilbab terbaru gratis kualitas HD. Kumpulan video bokep hijab viral terlengkap, update tiap hari hanya di BokepHot."
+    },
+    {
+      "title": "Bokep Hijab Terbaru | PasarBokep",
+      "url": "https://pasarbokep.co/category/bokep-hijab-terbaru",
+      "snippet": "Bokep Hijab Terbaru terbaru di PasarBokep. Tonton video bokep Indonesia, indo porn, dan koleksi bokep viral dengan update …"
+    },
+    {
+      "title": "Koleksi Bokep Bokep Hijab Terbaru 2026 - koleksimedia.cfd",
+      "url": "https://koleksimedia.cfd/kategori/bokep-hijab",
+      "snippet": "Nonton koleksi bokep Bokep Hijab terbaru - 4574 video tersedia. Streaming gratis, update harian, kualitas HD. Koleksi bokep indo …"
+    },
+    {
+      "title": "Bokep Hijab Viral Terbaru | BandarBokep",
+      "url": "https://bandarbokep.boats/category/bokep-hijab/",
+      "snippet": "Bokep Hijab | Nonton Video Viral Bokep Hijab Terbaru dan Video Mesum Indonesia Lainya."
+    },
+    {
+      "title": "Bokep Jilbab Archives - OnlyBokep",
+      "url": "https://onlybokep.to/category/bokep-jilbab/",
+      "snippet": "2K 90% Bokep Indo | Hijab Polos Masih Rapet Itunya 194K 92% Bokep Indo | Hijab Ukhty Masih Malu-Malu Tapi Pasrah 111K 84% …"
+    }
+  ]
+}

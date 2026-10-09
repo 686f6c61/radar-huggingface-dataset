@@ -5,7 +5,7 @@
   "author": "amphora",
   "url": "https://huggingface.co/amphora/rlmath-agentic-grpo-checkpoints",
   "created_at": "2026-10-02T06:37:53.000Z",
-  "updated_at": "2026-10-05T00:39:41.000Z",
+  "updated_at": "2026-10-08T15:38:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 409139555117,
-  "storage_human": "409.1 GB",
+  "storage_bytes": 427296796189,
+  "storage_human": "427.3 GB",
   "base_model": "Qwen/Qwen3-4B-Thinking-2507, Qwen/Qwen3-30B-A3B-Thinking-2507, Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"

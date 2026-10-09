@@ -5,7 +5,7 @@
   "author": "ursuciprian",
   "url": "https://huggingface.co/ursuciprian/Qwen3.8-Flash-Next-NVFP4-GDN-MSE",
   "created_at": "2026-10-05T16:26:23.000Z",
-  "updated_at": "2026-10-07T20:19:17.000Z",
+  "updated_at": "2026-10-08T11:48:55.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 39,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": 91638563731,
   "parameters_human": "91.64B",

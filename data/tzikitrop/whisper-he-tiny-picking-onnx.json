@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "tzikitrop/whisper-he-tiny-picking-onnx",
+  "slug": "tzikitrop-whisper-he-tiny-picking-onnx",
+  "author": "tzikitrop",
+  "url": "https://huggingface.co/tzikitrop/whisper-he-tiny-picking-onnx",
+  "created_at": "2026-10-08T22:32:41.000Z",
+  "updated_at": "2026-10-08T22:32:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "he"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "hebrew",
+    "voice-picking",
+    "he",
+    "base_model:yoad/whisper-tiny",
+    "base_model:quantized:yoad/whisper-tiny",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60009484,
+  "storage_human": "60 MB",
+  "base_model": "yoad/whisper-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tzikitrop/whisper-he-tiny-onnx · Hugging Face",
+      "url": "https://huggingface.co/tzikitrop/whisper-he-tiny-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "onnx-community/whisper-tiny · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/whisper-tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ONNX models | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/windows-ml/get-onnx-model",
+      "snippet": "Windows ML evaluates models in the ONNX format, allowing you to interchange models between various ML frameworks and tools."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Whisper (speech recognition system) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Whisper_(speech_recognition_system)",
+      "snippet": "Whisper is a machine learning model for speech recognition and transcription, created by OpenAI and first released as open-source software in September 2022. [4]"
+    }
+  ]
+}

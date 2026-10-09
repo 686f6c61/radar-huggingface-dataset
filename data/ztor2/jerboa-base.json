@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ztor2/jerboa-base",
+  "slug": "ztor2-jerboa-base",
+  "author": "ztor2",
+  "url": "https://huggingface.co/ztor2/jerboa-base",
+  "created_at": "2026-10-07T06:18:55.000Z",
+  "updated_at": "2026-10-08T22:56:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "jerboa",
+    "pytorch",
+    "causal-lm",
+    "edge-ai",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 122,
+  "trending_score": 0,
+  "parameters": 221430400,
+  "parameters_human": "221.4M",
+  "storage_bytes": 4408640592,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXX (film) | XXX Wiki | Fandom",
+      "url": "https://xxx.fandom.com/wiki/XXX_(film)",
+      "snippet": "Gibbons identifies Xander Cage, an extreme sports professional known as \"XXX (Triple X)\" but also wanted by the FBI for his acts of …"
+    },
+    {
+      "title": "XXX - Trailers & Videos | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/xxx/videos/1828701251997",
+      "snippet": "View HD Trailers and Videos for XXX on Rotten Tomatoes, then check our Tomatometer to find out what the Critics say."
+    },
+    {
+      "title": "XXX (film series) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/XXX_(film_series)",
+      "snippet": "XXX (stylized as xXx and pronounced Triple X) is an American action spy film series created by Rich Wilkes. It consists of three full …"
+    },
+    {
+      "title": "XXX | Rotten Tomatoes",
+      "url": "https://www.rottentomatoes.com/m/xxx",
+      "snippet": "Discover reviews, ratings, and trailers for XXX on Rotten Tomatoes. Stay updated with critic and audience scores today!"
+    },
+    {
+      "title": "XXX - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/XXX",
+      "snippet": "This disambiguation page lists articles associated with the title XXX. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

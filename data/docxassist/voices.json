@@ -5,8 +5,8 @@
   "author": "DocXAssist",
   "url": "https://huggingface.co/DocXAssist/voices",
   "created_at": "2026-10-04T23:36:18.000Z",
-  "updated_at": "2026-10-04T23:36:27.000Z",
-  "license": "apache-2.0",
+  "updated_at": "2026-10-08T21:17:28.000Z",
+  "license": "apache-2.0-and-cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
   "library": null,
@@ -17,10 +17,11 @@
   "tags": [
     "onnx",
     "kokoro",
+    "speaker-verification",
     "text-to-speech",
     "es",
     "de",
-    "license:apache-2.0",
+    "license:other",
     "region:us"
   ],
   "likes": 0,
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 328332232,
-  "storage_human": "328 MB",
+  "storage_bytes": 354862782,
+  "storage_human": "355 MB",
   "base_model": null,
   "formats": [
     "onnx"

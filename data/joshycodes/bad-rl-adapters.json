@@ -5,7 +5,7 @@
   "author": "joshycodes",
   "url": "https://huggingface.co/joshycodes/bad-rl-adapters",
   "created_at": "2026-10-06T22:01:41.000Z",
-  "updated_at": "2026-10-08T02:03:45.000Z",
+  "updated_at": "2026-10-09T02:14:21.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 79750930296,
-  "storage_human": "79.8 GB",
+  "storage_bytes": 81980917541,
+  "storage_human": "82.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

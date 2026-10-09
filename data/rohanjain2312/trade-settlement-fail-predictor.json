@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rohanjain2312/trade-settlement-fail-predictor",
+  "slug": "rohanjain2312-trade-settlement-fail-predictor",
+  "author": "rohanjain2312",
+  "url": "https://huggingface.co/rohanjain2312/trade-settlement-fail-predictor",
+  "created_at": "2026-10-08T19:53:53.000Z",
+  "updated_at": "2026-10-08T22:51:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "tabular-classification",
+    "synthetic-data",
+    "xgboost",
+    "svm",
+    "shap",
+    "imbalanced-learn",
+    "dataset:rohanjain2312/settlement-trades-synthetic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232588887,
+  "storage_human": "233 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trade-settlement-fail-predictor/CLAUDE.md at main · Rohanjain2312/trade ...",
+      "url": "https://github.com/Rohanjain2312/trade-settlement-fail-predictor/blob/main/CLAUDE.md",
+      "snippet": "failed, fail_reason, scenario_mask, IDs, dates, and raw notional are never model inputs. tests/test_no_label_leakage.py enforces this. Rolling features use only outcomes known on the trade date (settle date strictly before the trade date). If a distinctness check fails, change the generator, not the feature definitions."
+    },
+    {
+      "title": "GitHub - Rohanjain2312/Rohanjain2312",
+      "url": "https://github.com/Rohanjain2312/Rohanjain2312",
+      "snippet": "I care about the engineering around the model more than the model itself. Before this I spent three and a half years at Goldman Sachs building controls for humans — trade-risk classification, OCR/KYC pipelines, KPI analytics that replaced three FTEs of manual reporting. Same problem, different operator."
+    },
+    {
+      "title": "rohanjain2312 (Rohan Jain) - Hugging Face",
+      "url": "https://huggingface.co/rohanjain2312/models",
+      "snippet": "User profile of Rohan Jain on Hugging Face"
+    },
+    {
+      "title": "Settlement Failure Prediction Workflow: Custom AI Implementation",
+      "url": "https://inferensys.com/automate/quant-trading-workflow-automation/ai-agentic-workflow-for-settlement-failure-prediction-and-resolution",
+      "snippet": "Implement a custom AI agentic workflow to predict and resolve trade settlement failures. Our architecture reduces fails, lowers costs, and automates middle-office operations for quant funds."
+    },
+    {
+      "title": "Predictive Settlement Fail Prevention Explained",
+      "url": "https://chainscorelabs.com/use-cases/settlement-operations/exception-handling-and-investigations/predictive-settlement-fail-prevention",
+      "snippet": "The Blockchain Fix: A Predictive Settlement Fail Prevention framework, powered by a shared, immutable ledger, fundamentally shifts the paradigm from reactive to proactive. By anchoring real-time transaction data and counterparty activity to a single source of truth, machine learning models can continuously analyze settlement flows."
+    }
+  ]
+}

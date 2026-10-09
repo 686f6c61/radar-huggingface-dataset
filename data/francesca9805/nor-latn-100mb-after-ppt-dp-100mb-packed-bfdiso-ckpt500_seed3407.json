@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
+  "slug": "francesca9805-nor-latn-100mb-after-ppt-dp-100mb-packed-bfdiso-ckpt500_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
+  "created_at": "2026-10-08T22:15:09.000Z",
+  "updated_at": "2026-10-09T02:00:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407",
+    "base_model:finetune:francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 15485111083,
+  "storage_human": "15.5 GB",
+  "base_model": "francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
+      "url": "https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407",
+      "snippet": "Instructions to use francesca9805/nor-latn-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed3407 with libraries, inference providers, notebooks, and local apps."
+    },
+    {
+      "title": "francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10",
+      "snippet": "francesca9805 / nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 Like 0 Text Generation Transformers Safetensors gpt2 Generated from Trainer trl sft text-generation-inference Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Nor Latn 100mb Ppt Mp Struct 100mb Seed10 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/francesca9805/nor-latn-100mb-ppt-mp-struct-100mb_seed10",
+      "snippet": "Registry entry for model Nor Latn 100mb Ppt Mp Struct 100mb Seed10; source metadata pending."
+    },
+    {
+      "title": "Nld Latn 100mb After Ppt Dp 10mb Packed Bfdiso Ckpt500 Seed10 - AI ...",
+      "url": "https://free2aitools.com/model/francesca9805/nld-latn-100mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed10",
+      "snippet": "Registry entry for model Nld Latn 100mb After Ppt Dp 10mb Packed Bfdiso Ckpt500 Seed10; source metadata pending."
+    },
+    {
+      "title": "nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 - friendli.ai",
+      "url": "https://friendli.ai/models/francesca9805/nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
+      "snippet": "Deploy nor-latn-100mb-ppt-Dp-100mb-packed-bfdiso_seed10 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

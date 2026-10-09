@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "romanenko02/ner-hw2",
+  "slug": "romanenko02-ner-hw2",
+  "author": "romanenko02",
+  "url": "https://huggingface.co/romanenko02/ner-hw2",
+  "created_at": "2026-10-08T20:18:57.000Z",
+  "updated_at": "2026-10-08T20:22:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132890805,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI HW2 | PDF | Computer Engineering | Learning",
+      "url": "https://www.scribd.com/document/1039485441/AI-HW2",
+      "snippet": "AI HW2 - Free download as PDF File (.pdf), Text File (.txt) or read online for free. The document describes a UNet model implementation for image segmentation using PyTorch, detailing its architecture with encoder, bottleneck, and decoder layers. It includes training results showing loss reduction over epochs and mentions the use of grouped convolutions in the model. Additionally, it provides ..."
+    },
+    {
+      "title": "Ai HW2 | PDF | Algorithms | Learning",
+      "url": "https://www.scribd.com/document/1027069085/AI-HW2",
+      "snippet": "AI_HW2 - Free download as PDF File (.pdf), Text File (.txt) or read online for free. The project involves building and evaluating a foundation model for representation learning using a self-supervised learning (SSL) approach with a focus on the SimCLR method. Students are required to experiment with a baseline model using resnet-18 on the CIFAR-10 dataset, report learning curves, and conduct ..."
+    },
+    {
+      "title": "romanenko02 (Nikita Romanenko) - Hugging Face",
+      "url": "https://huggingface.co/romanenko02/datasets",
+      "snippet": "romanenko02 1 Follow 21world&#x27;s profile pictureGargaz&#x27;s profile picture 2 followers · 2 following"
+    },
+    {
+      "title": "DogeSavior/dl2_ner_hw2 · Hugging Face",
+      "url": "https://huggingface.co/DogeSavior/dl2_ner_hw2",
+      "snippet": "dl2_ner_hw2 This model is a fine-tuned version of BAAI/bge-small-en-v1.5 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "How to Use the hw2 ai classification Classification API",
+      "url": "https://universe.roboflow.com/my-ai-cnn-workplace/hw2-ai-classification/model/1",
+      "snippet": "Use this pre-trained hw2 ai classification computer vision model to retrieve predictions with our hosted API or deploy to the edge. Learn More About Roboflow Inference"
+    }
+  ]
+}

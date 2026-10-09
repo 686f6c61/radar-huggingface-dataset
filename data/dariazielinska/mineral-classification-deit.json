@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "DariaZielinska/mineral-classification-deit",
+  "slug": "dariazielinska-mineral-classification-deit",
+  "author": "DariaZielinska",
+  "url": "https://huggingface.co/DariaZielinska/mineral-classification-deit",
+  "created_at": "2026-10-08T19:38:23.000Z",
+  "updated_at": "2026-10-08T19:40:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "minerals",
+    "deit",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5526346,
+  "parameters_human": "5.5M",
+  "storage_bytes": 22133305,
+  "storage_human": "22 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontiers | Rock image classification using deep residual neural ...",
+      "url": "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2022.1079447/full",
+      "snippet": "In this study, a deep residual neural network (ResNet) model with the transfer learning method is proposed to establish the corresponding rock automatic classification model for seven kinds of rock images."
+    },
+    {
+      "title": "OpenAI Releases 722 Math Manuscripts From an Unreleased AI Model",
+      "url": "https://www.unite.ai/openai-releases-722-math-manuscripts-from-an-unreleased-ai-model/",
+      "snippet": "In a research post published October 6, 2026, OpenAI said it is releasing a broad range of new mathematical results produced by an unreleased internal frontier model, publishing 722 manuscripts organized into 372 familie..."
+    },
+    {
+      "title": "Application of Target Detection Based on Deep Learning in ... - MDPI",
+      "url": "https://www.mdpi.com/2075-163X/14/9/873",
+      "snippet": "In contemporary society, rich in mineral resources, efficiently and accurately identifying and classifying minerals has become a prominent issue. Recent advancements in artificial intelligence, particularly breakthroughs in deep learning, have offered new solutions for intelligent mineral recognition. This paper introduces a deep-learning-based object detection model for intelligent mineral ..."
+    },
+    {
+      "title": "Recent Advances and Future Perspectives of AI-Based Mineral ... - MDPI",
+      "url": "https://www.mdpi.com/2075-163X/16/6/584",
+      "snippet": "Figure 2. AI-based remote sensing workflow for lithological and alteration mapping. (a) Generalized end-to-end workflow from satellite/airborne image acquisition to preprocessing, sampling, feature engineering, AI model training, post-classification refinement, and generation of lithological, alteration, and prospectivity-related products."
+    },
+    {
+      "title": "PDF A Review of Artificial Intelligence Technologies in Mineral ...",
+      "url": "https://www.researchgate.net/publication/363103018_A_Review_of_Artificial_Intelligence_Technologies_in_Mineral_Identification_Classification_and_Visualization/fulltext/630e1ea361e4553b954e110b/363103018_A_Review_of_Artificial_Intelligence_Technologies_in_Mineral_Identification_Classification_and_Visualization.pdf",
+      "snippet": "The method of model-based identification involves using a large amount of mineral data to develop a model for the identification of minerals utilizing artificial intelligence."
+    }
+  ]
+}

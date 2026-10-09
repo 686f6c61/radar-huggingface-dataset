@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shiva123782/Krishna123",
+  "slug": "shiva123782-krishna123",
+  "author": "shiva123782",
+  "url": "https://huggingface.co/shiva123782/Krishna123",
+  "created_at": "2026-10-08T19:27:41.000Z",
+  "updated_at": "2026-10-08T19:27:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "qwen2",
+    "chat",
+    "lora",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31664665,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shiva123782/Krishna123 · Hugging Face",
+      "url": "https://huggingface.co/shiva123782/Krishna123",
+      "snippet": "shiva123782 / Krishna123 Like 0 Text Generation Safetensors English qwen2 chat lora conversational License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Krishna123 (Pro Max Edition) Capabilities"
+    },
+    {
+      "title": "shiva123782/Riya-AI-V1 · Hugging Face",
+      "url": "https://huggingface.co/shiva123782/Riya-AI-V1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "shiva123782 (sankar) - Hugging Face",
+      "url": "https://huggingface.co/shiva123782",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 6 hours ago ... published a model about 6 hours ago"
+    },
+    {
+      "title": "Krishna123-AI · GitHub",
+      "url": "https://github.com/Krishna123-AI",
+      "snippet": "GitHub is where Krishna123-AI builds software. Joined Mar 11, 2025 Block or report Krishna123-AI Block user"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    }
+  ]
+}

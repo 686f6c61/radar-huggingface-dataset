@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jkim96/QwQ-32B-DASHQ-Q2-GGUF",
+  "slug": "jkim96-qwq-32b-dashq-q2-gguf",
+  "author": "jkim96",
+  "url": "https://huggingface.co/jkim96/QwQ-32B-DASHQ-Q2-GGUF",
+  "created_at": "2026-10-08T22:55:30.000Z",
+  "updated_at": "2026-10-08T23:13:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dashq",
+    "quantized",
+    "text-generation",
+    "base_model:Qwen/QwQ-32B",
+    "base_model:quantized:Qwen/QwQ-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32763876352,
+  "parameters_human": "32.76B",
+  "storage_bytes": 43745610752,
+  "storage_human": "43.7 GB",
+  "base_model": "Qwen/QwQ-32B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jkim96/Olmo-3.1-32B-Instruct-DASHQ-Q2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/jkim96/Olmo-3.1-32B-Instruct-DASHQ-Q2-GGUF",
+      "snippet": "Instructions to use jkim96/Olmo-3.1-32B-Instruct-DASHQ-Q2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "DeepSeek-R1-Distill-Qwen-32B-DASHQ-Q2-GGUF - Hugging Face",
+      "url": "https://huggingface.co/jkim96/DeepSeek-R1-Distill-Qwen-32B-DASHQ-Q2-GGUF",
+      "snippet": "Instructions to use jkim96/DeepSeek-R1-Distill-Qwen-32B-DASHQ-Q2-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Deepseek R1 Distill Qwen 32b Dashq Q2 Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jkim96/deepseek-r1-distill-qwen-32b-dashq-q2-gguf",
+      "snippet": "Registry entry for model Deepseek R1 Distill Qwen 32b Dashq Q2 Gguf; source metadata pending."
+    },
+    {
+      "title": "Olmo 3.1 32b Instruct Dashq Q2 Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jkim96/olmo-3.1-32b-instruct-dashq-q2-gguf",
+      "snippet": "Registry entry for model Olmo 3.1 32b Instruct Dashq Q2 Gguf; source metadata pending."
+    },
+    {
+      "title": "qwen / qwq-32b",
+      "url": "https://docs.api.nvidia.com/nim/reference/qwen-qwq-32b",
+      "snippet": "QwQ is the reasoning model of the Qwen series. Compared with conventional instruction-tuned models, QwQ, which is capable of thinking and reasoning, can achieve significantly enhanced performance in downstream tasks, especially hard problems."
+    }
+  ]
+}

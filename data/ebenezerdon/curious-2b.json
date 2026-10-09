@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ebenezerdon/curious-2b",
+  "slug": "ebenezerdon-curious-2b",
+  "author": "ebenezerdon",
+  "url": "https://huggingface.co/ebenezerdon/curious-2b",
+  "created_at": "2026-10-08T21:01:46.000Z",
+  "updated_at": "2026-10-08T21:08:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "de",
+    "it",
+    "nl",
+    "zh",
+    "pcm"
+  ],
+  "tags": [
+    "gguf",
+    "curiouslm",
+    "on-device",
+    "text-generation",
+    "en",
+    "es",
+    "fr",
+    "pt",
+    "de",
+    "it",
+    "nl",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 1214874144,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classified Items For Sale in N'Djamena, Chad - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106511226050901/classifieds/",
+      "snippet": "New and used Classifieds for sale in N'Djamena, Chad on Facebook Marketplace. Find great deals and sell your items for free."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Free Stuff near Gouville-Sur-Mer, Basse-Normandie - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/103336299708654/free/",
+      "snippet": "Find stuff for free in Gouville-Sur-Mer, Basse-Normandie, France on Facebook Marketplace. Free furniture, electronics, and more …"
+    },
+    {
+      "title": "Articles pour la maison en vente à Perth | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/perth/home/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Articles pour la maison en vente à Perth sur Facebook Marketplace. Trouvez des bons …"
+    },
+    {
+      "title": "Trucks for sale in Bucquoy | Facebook Marketplace",
+      "url": "https://fr-fr.facebook.com/marketplace/112312635450883/trucks/",
+      "snippet": "Find trucks and pickups for sale in Bucquoy. Browse by make, model, and mileage from local sellers on Facebook Marketplace."
+    }
+  ]
+}

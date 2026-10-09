@@ -1,0 +1,130 @@
+{
+  "schema": 1,
+  "id": "ozonetg/bargein-classifier-ettin-400m",
+  "slug": "ozonetg-bargein-classifier-ettin-400m",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/bargein-classifier-ettin-400m",
+  "created_at": "2026-10-08T00:23:21.000Z",
+  "updated_at": "2026-10-08T22:56:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "barge-in",
+    "interruption-detection",
+    "turn-taking",
+    "voice-agent",
+    "spoken-dialogue",
+    "conversational-ai",
+    "telephony",
+    "ettin",
+    "r-drop",
+    "transformers.js",
+    "en",
+    "arxiv:2507.11412",
+    "arxiv:2106.14448",
+    "base_model:jhu-clsp/ettin-encoder-400m",
+    "base_model:quantized:jhu-clsp/ettin-encoder-400m",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 395833346,
+  "parameters_human": "395.8M",
+  "storage_bytes": 3762905105,
+  "storage_human": "3.8 GB",
+  "base_model": "jhu-clsp/ettin-encoder-400m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Barge-in classification",
+      "dataset": "Held-out business types A (593 exchanges, 8 unseen business types)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 95.11
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Held-out business types B (588 exchanges, 20 unseen business types)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 93.71
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Human-labelled exchanges (158, not shown to the labelling judge)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 98.1
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Perturbation stress test (6,258)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 93.59
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "TTS -> phone channel -> ASR stress test (1,328)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 91.11
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Distribution-shift test OOD-10k (10,888)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 91.84
+    },
+    {
+      "task": "Barge-in classification",
+      "dataset": "Real calls, rule-unambiguous moments with words (278)",
+      "metric": "Accuracy (threshold 0.5)",
+      "value": 98.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "ozonetg/bargein-classifier-ettin-400m · Hugging Face",
+      "url": "https://huggingface.co/ozonetg/bargein-classifier-ettin-400m",
+      "snippet": "On a GPU, load with dtype=torch.bfloat16 and move the model and inputs to \"cuda\". On CPU fp32, transformers 4.51, 4.57 and 5.17 give identical outputs, with 0 decision changes on 593 test exchanges. transformers.js (browser or Node) and ONNX format_input.js is a JavaScript port of the formatter. It produced the same model input as the Python code on 85,529 dataset rows and 30,000 random strings."
+    },
+    {
+      "title": "ozonetg/bargein-classifier-ettin-400m at main - Hugging Face",
+      "url": "https://huggingface.co/ozonetg/bargein-classifier-ettin-400m/tree/main",
+      "snippet": "ozonetg / bargein-classifier-ettin-400m Like 0 Text Classification Transformers ONNX Safetensors Transformers.js English modernbert barge-in interruption-detection turn-taking voice-agent spoken-dialogue conversational-ai telephony ettin r-drop Eval Results (legacy) text-embeddings-inference arxiv:2507.11412 arxiv:2106.14448 License:mit Model ..."
+    },
+    {
+      "title": "Bargein Classifier Ettin 400m - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/ozonetg/bargein-classifier-ettin-400m",
+      "snippet": "Registry entry for model Bargein Classifier Ettin 400m; source metadata pending."
+    },
+    {
+      "title": "Sheltron — Open Models for AI Safety",
+      "url": "https://sheltron.ai/",
+      "snippet": "A 400M-parameter sequence-pair classifier that checks whether an agent&#x27;s answer or action still preserves the user&#x27;s original intent — catching unsafe intent drift at the output boundary, after the model has decided what to do."
+    },
+    {
+      "title": "Johns Hopkins&#x27; Ettin Proves Smaller Encoders Beat Larger Decoders on ...",
+      "url": "https://alphasignal.ai/news/johns-hopkins-ettin-proves-smaller-encoders-beat-larger-decoders-on",
+      "snippet": "Johns Hopkins and LightOn released Ettin, ten paired encoder and decoder models from 17M to 1B parameters. Both architectures share identical data, shape, and recipe, differing only in attention and training objective. Ettin encoders beat ModernBERT on GLUE and MTEB; decoders beat Llama 3.2 and SmolLM2 at matched sizes. A 400M encoder outperforms a 1B decoder on MNLI, with the reverse holding ..."
+    }
+  ]
+}

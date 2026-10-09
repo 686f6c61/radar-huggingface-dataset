@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "haihengh/Qwen3.6-35B-A3B-finch-3bit",
+  "slug": "haihengh-qwen3-6-35b-a3b-finch-3bit",
+  "author": "haihengh",
+  "url": "https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finch-3bit",
+  "created_at": "2026-10-08T22:05:16.000Z",
+  "updated_at": "2026-10-08T22:05:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "finchmoe",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "finchmoe",
+    "qwen",
+    "moe",
+    "apple-silicon",
+    "metal",
+    "quantization",
+    "3-bit",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "haihengh/Qwen3.6-35B-A3B-finchmoe-3bit · Hugging Face",
+      "url": "https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-3bit",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B-finchmoe-4bit-abliterated - Hugging Face",
+      "url": "https://huggingface.co/haihengh/Qwen3.6-35B-A3B-finchmoe-4bit-abliterated",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://www.alibabacloud.com/blog/qwen3-6-35b-a3b-agentic-coding-power-now-open-to-all_603043",
+      "snippet": "Alibaba open-sources Qwen3.6-35B-A3B, an efficient 35B/3B MoE model delivering top-tier agentic coding and multimodal performance."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B · Models - modelscope.ai",
+      "url": "https://www.modelscope.ai/models/Qwen/Qwen3.6-35B-A3B",
+      "snippet": "Qwen3.6-35B-A3B - An open-source model by Qwen on ModelScope."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B: Agentic Coding Power, Now Open to All",
+      "url": "https://qwen.ai/blog?id=qwen3.6-35b-a3b",
+      "snippet": "QWEN STUDIO HUGGING FACE MODELSCOPE DISCORD Following the launch of Qwen3.6-Plus, we are excited to open-source Qwen3.6-35B-A3B — a sparse yet remarkably capable mixture-of-experts (MoE) model with 35 billion total parameters and only 3 billion active parameters. Despite its efficiency, Qwen3.6-35B-A3B delivers outstanding agentic coding performance, surpassing its predecessor Qwen3.5-35B ..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "matu79go/Reflex-2",
+  "slug": "matu79go-reflex-2",
+  "author": "matu79go",
+  "url": "https://huggingface.co/matu79go/Reflex-2",
+  "created_at": "2026-10-08T20:21:57.000Z",
+  "updated_at": "2026-10-08T20:21:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "reflex-2",
+    "fall-detection",
+    "video-classification",
+    "embeddinggemma",
+    "edge-ai",
+    "on-device",
+    "en",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "matu79go/Reflex-1-4B at main - Hugging Face",
+      "url": "https://huggingface.co/matu79go/Reflex-1-4B/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main Reflex-1-4B 1.92 GB Ctrl+K Ctrl+K 1 contributor History:5 commits matu79go Model card: citation with Zenodo DOI d0bff27 verifiedabout 3 hours ago skillsReflex-1: skills (LoRA + latent modules), model card, licenseabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago LICENSE Safe 11.4 kBReflex-1: skills (LoRA + latent modules), model ..."
+    },
+    {
+      "title": "matu79go/Reflex-1-4B · Hugging Face",
+      "url": "https://huggingface.co/matu79go/Reflex-1-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "matu79go (Gosuke Suzuki) · GitHub",
+      "url": "https://github.com/matu79go",
+      "snippet": "Entrepreneur. Investor. Software engineer. matu79go has 9 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Model-Based Reflex Agents in AI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/model-based-reflex-agents-in-ai/",
+      "snippet": "Conclusions Model-based reflex agents in AI integrate sensory perception, internal modeling, and decision-making for intelligent interaction with changing environments. Despite challenges like model complexity and resource requirements, their versatility and effectiveness highlight their crucial role in shaping the future of AI and robotics."
+    },
+    {
+      "title": "Agents in AI - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/agents-artificial-intelligence/",
+      "snippet": "2. Model-Based Reflex Agents Model-Based Reflex Agent Working Model-based reflex agents maintain an internal model of the environment to handle situations where full information is not directly available. This helps them make better decisions by considering changes in the environment and the impact of their actions."
+    }
+  ]
+}

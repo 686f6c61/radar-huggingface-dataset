@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Devseis/endpoint-auditor-0.5b-q0f16-MLC",
+  "slug": "devseis-endpoint-auditor-0-5b-q0f16-mlc",
+  "author": "Devseis",
+  "url": "https://huggingface.co/Devseis/endpoint-auditor-0.5b-q0f16-MLC",
+  "created_at": "2026-10-08T19:40:34.000Z",
+  "updated_at": "2026-10-08T19:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlc-llm",
+    "security",
+    "compliance",
+    "iso27001",
+    "gdpr",
+    "eu-ai-act",
+    "endpoint-security",
+    "lora",
+    "web-llm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Devseis/endpoint-auditor-synthetic",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 988065536,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devseis/endpoint-auditor-0.5b · Hugging Face",
+      "url": "https://huggingface.co/Devseis/endpoint-auditor-0.5b",
+      "snippet": "A small language model fine-tuned by Devseis to write endpoint audit findings for ISO 27001, GDPR and the EU AI Act from collected evidence. It runs on the device (WebLLM in the Devseis Endpoint Auditor desktop app and phone check), so audit evidence never leaves the computer or phone."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Models compatible with the MLC-LLM library - Hugging Face",
+      "url": "https://huggingface.co/models?library=mlc-llm",
+      "snippet": "Explore machine learning models. mlc-ai/RedPajama-INCITE-Chat-3B-v1-q4f16_1-MLC"
+    },
+    {
+      "title": "OpenAI shelves latest AI model over authorization concerns",
+      "url": "https://tech.yahoo.com/ai/chatgpt/articles/openai-shelves-latest-ai-model-005738972.html",
+      "snippet": "OpenAI is scrapping the planned release of its next-generation AI model after researchers raised safety concerns during internal testing, Newsweek has confirmed. An OpenAI spokesperson told Newsweek Monday evening that safety leaders made the decision not to ship GPT-6.1 Astra, which was set for an October debut. The decision was first reported by The Wall Street Journal. \"For anything ..."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    }
+  ]
+}

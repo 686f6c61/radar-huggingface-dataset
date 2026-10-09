@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ba2han/mini-qwen-next-31b",
+  "slug": "ba2han-mini-qwen-next-31b",
+  "author": "Ba2han",
+  "url": "https://huggingface.co/Ba2han/mini-qwen-next-31b",
+  "created_at": "2026-10-09T00:11:22.000Z",
+  "updated_at": "2026-10-09T00:53:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pretraining",
+    "custom-code",
+    "tr",
+    "dataset:Ba2han/tokenized_mix_0507",
+    "dataset:Ba2han/packed_long_20B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "涂装插件下载-X-Plane-飞行宝",
+      "url": "https://www.fsx.org.cn/forum-59-5.html",
+      "snippet": "Apr 20, 2026 · 涂装插件下载 作者 帖子标题 ( 本版帖子数 1227 )"
+    },
+    {
+      "title": "X-ATC-Chatter 空管插件-X-Plane-飞行宝",
+      "url": "https://www.fsx.org.cn/thread-2670-1-1.html",
+      "snippet": "Jan 6, 2020 · 功能插件下载-X-Plane-X-ATC-Chatter 空管插件"
+    },
+    {
+      "title": "SAAD - 空客A350-900XWB PBR版 v1.2 [最新p3dv4.4/4.5版] …",
+      "url": "https://www.fsx.org.cn/thread-2672-1-1.html",
+      "snippet": "Dec 18, 2021 · 飞机插件下载-FSX/P3D-SAAD - 空客A350-900XWB PBR版 v1.2 [最新p3dv4.4/4.5版]"
+    },
+    {
+      "title": "SamScene3D – ZSQD 中国 青岛 胶东国际机场 v1.1.2 [MSFS2020/24] …",
+      "url": "https://www.fsx.org.cn/thread-34549-1-1.html",
+      "snippet": "Oct 8, 2025 · 机场地景下载-微软模拟飞行2020/2024-SamScene3D – ZSQD 中国 青岛 胶东国际机场 v1.1.2 [MSFS2020/24]"
+    },
+    {
+      "title": "[X-Plane11]AMJ地景组北京城市地景发布! [Sxxx,VATPRC,CFR]-X …",
+      "url": "https://www.fsx.org.cn/thread-3011-1-1.html",
+      "snippet": "Aug 17, 2020 · 机场地景下载-X-Plane- [X-Plane11]AMJ地景组北京城市地景发布! [Sxxx,VATPRC,CFR]"
+    }
+  ]
+}

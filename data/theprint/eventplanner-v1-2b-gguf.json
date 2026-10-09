@@ -5,7 +5,7 @@
   "author": "theprint",
   "url": "https://huggingface.co/theprint/EventPlanner-v1-2B-GGUF",
   "created_at": "2026-10-08T17:15:36.000Z",
-  "updated_at": "2026-10-08T17:19:02.000Z",
+  "updated_at": "2026-10-08T17:53:42.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
     "sft",
     "auto-sft",
     "en",
-    "base_model:unsloth/Qwen3.5-2B",
-    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "base_model:theprint/EventPlanner-v1-2B",
+    "base_model:adapter:theprint/EventPlanner-v1-2B",
     "endpoints_compatible",
     "region:us",
     "conversational"
@@ -34,7 +34,7 @@
   "parameters_human": "1.94B",
   "storage_bytes": 20694541599,
   "storage_human": "20.7 GB",
-  "base_model": "unsloth/Qwen3.5-2B",
+  "base_model": "theprint/EventPlanner-v1-2B",
   "formats": [
     "gguf"
   ],

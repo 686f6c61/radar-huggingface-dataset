@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DeepBeepMeep/Prism",
+  "slug": "deepbeepmeep-prism",
+  "author": "DeepBeepMeep",
+  "url": "https://huggingface.co/DeepBeepMeep/Prism",
+  "created_at": "2026-10-08T21:35:15.000Z",
+  "updated_at": "2026-10-08T21:58:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "wangp",
+    "prism",
+    "int8",
+    "convrot",
+    "audio-video",
+    "lightx2v",
+    "image-to-video",
+    "base_model:FrancisRing/Prism",
+    "base_model:finetune:FrancisRing/Prism",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45932966898,
+  "storage_human": "45.9 GB",
+  "base_model": "FrancisRing/Prism",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepBeepMeep/prismaudio · Hugging Face",
+      "url": "https://huggingface.co/DeepBeepMeep/prismaudio",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepBeepMeep (D B M) - Hugging Face",
+      "url": "https://huggingface.co/DeepBeepMeep/datasets",
+      "snippet": "DeepBeepMeep/Wan2.1 updated a model 5 days ago DeepBeepMeep/Flux published a model 6 days ago DeepBeepMeep/Flux View all activity"
+    },
+    {
+      "title": "PrismML hopes its tiny LLM will change how we all use AI",
+      "url": "https://techcrunch.com/2026/09/17/prismml-hopes-its-tiny-llm-could-change-how-we-all-use-ai/",
+      "snippet": "PrismML says it achieves this by shrinking the \"weights\" that make up a model — weights are, essentially, the information a model learns and stores during training."
+    },
+    {
+      "title": "DeepBeepMeep/MiniMax-H3 — Models & platforms · AI Finder",
+      "url": "https://www.aifinder.ae/huggingface.co/deepbeepmeep/minimax-h3/",
+      "snippet": "Catalog card of DeepBeepMeep/MiniMax-H3"
+    },
+    {
+      "title": "PrismML Emerges From Stealth With 1-Bit LLM Family",
+      "url": "https://www.hpcwire.com/2026/04/03/prismml-emerges-from-stealth-with-1-bit-llm-family/",
+      "snippet": "PrismML unveils a 1-bit LLM that compresses model weights to reduce memory, latency, and energy use. The Bonsai models aim to enable efficient AI across edge and cloud environments."
+    }
+  ]
+}

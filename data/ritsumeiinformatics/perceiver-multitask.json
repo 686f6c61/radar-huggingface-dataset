@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ritsumeiinformatics/perceiver-multitask",
+  "slug": "ritsumeiinformatics-perceiver-multitask",
+  "author": "ritsumeiinformatics",
+  "url": "https://huggingface.co/ritsumeiinformatics/perceiver-multitask",
+  "created_at": "2026-10-08T22:58:13.000Z",
+  "updated_at": "2026-10-08T22:58:18.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mich43lwfqo/perceiver-multitask · Hugging Face",
+      "url": "https://huggingface.co/Mich43lwfqo/perceiver-multitask",
+      "snippet": "Overview Working implementation of Perceiver for Multitask using a tiny configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "kabirisingh/perceiver-finetuned · Hugging Face",
+      "url": "https://huggingface.co/kabirisingh/perceiver-finetuned",
+      "snippet": "Overview Working implementation of Perceiver for Multitask using a huge configuration. The repository focuses on transparent code and repeatable smoke tests; benchmark claims are deliberately omitted."
+    },
+    {
+      "title": "Publications — Google DeepMind",
+      "url": "https://deepmind.google/research/publications/",
+      "snippet": "Explore a selection of our recent research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Perceiver IO Statistics [2026] - companieshistory.com",
+      "url": "https://www.companieshistory.com/perceiver-io-statistics/",
+      "snippet": "Perceiver IO Language Understanding Performance The model demonstrated strong results on GLUE benchmark tasks while operating on different input representations. The multitask queries configuration achieved the highest score at 81.8."
+    },
+    {
+      "title": "Perceiver - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Perceiver",
+      "snippet": "Perceiver is a variant of the Transformer architecture, adapted for processing arbitrary forms of data, such as images, sounds and video, and spatial data. Unlike previous notable Transformer systems such as BERT and GPT-3, which were designed for text processing, the Perceiver is designed as a general architecture that can learn from large ..."
+    }
+  ]
+}

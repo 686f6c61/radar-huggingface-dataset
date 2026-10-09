@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Quantinine/Kolibri-1-NVFP4A16-FP8",
+  "slug": "quantinine-kolibri-1-nvfp4a16-fp8",
+  "author": "Quantinine",
+  "url": "https://huggingface.co/Quantinine/Kolibri-1-NVFP4A16-FP8",
+  "created_at": "2026-10-08T14:40:47.000Z",
+  "updated_at": "2026-10-08T21:43:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "de",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kolibri1",
+    "nvfp4",
+    "fp8",
+    "compressed-tensors",
+    "quantized",
+    "4-bit",
+    "moe",
+    "reasoning",
+    "tool-use",
+    "text-generation",
+    "conversational",
+    "de",
+    "en",
+    "base_model:Aleph-Alpha/Kolibri-1",
+    "base_model:quantized:Aleph-Alpha/Kolibri-1",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40354338560,
+  "parameters_human": "40.35B",
+  "storage_bytes": 45828671502,
+  "storage_human": "45.8 GB",
+  "base_model": "Aleph-Alpha/Kolibri-1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - JustVugg/colibri: Run frontier MoE models on hardware you ...",
+      "url": "https://github.com/JustVugg/colibri",
+      "snippet": "Run frontier MoE models on hardware you already own — pure C, zero deps, experts streamed from disk. Tiny engine, immense model. 🐦 - JustVugg/colibri"
+    },
+    {
+      "title": "primitive-ai/Kolibri-1-NVFP4 · Hugging Face",
+      "url": "https://huggingface.co/primitive-ai/Kolibri-1-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Quantinine (Quantinine) - Hugging Face",
+      "url": "https://huggingface.co/Quantinine/models",
+      "snippet": "Recent Activity published a Space1 day ago Quantinine/kolibri-1-as-an-agent updated a Space1 day ago Quantinine/kolibri-1-as-an-agent View all activity"
+    },
+    {
+      "title": "Kolibri 1 - VRAM, Specs & Benchmarks - apxml.com",
+      "url": "https://apxml.com/models/kolibri-1",
+      "snippet": "Kolibri 1 specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "colibri - justvugg.github.io",
+      "url": "https://justvugg.github.io/colibri/",
+      "snippet": "Run frontier open models on hardware you already own. Ten language-model families, an image model and decision models, up to 2.8T parameters, pure C, zero dependencies."
+    }
+  ]
+}

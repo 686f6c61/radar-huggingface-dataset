@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/iris-3b",
+  "slug": "suryatmodulus-iris-3b",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/iris-3b",
+  "created_at": "2026-10-08T21:14:23.000Z",
+  "updated_at": "2026-10-08T21:14:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "text-to-image",
+    "diffusion",
+    "pixel-space",
+    "flow-matching",
+    "general-vision-learner",
+    "vision-foundation-model",
+    "depth-estimation",
+    "image-restoration",
+    "super-resolution",
+    "arxiv:2610.09450",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2987511888,
+  "parameters_human": "2.99B",
+  "storage_bytes": 35936312250,
+  "storage_human": "35.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iris-3B · Speridlabs",
+      "url": "https://speridlabs.com/research/iris",
+      "snippet": "Iris-3B — a fully open 3B-parameter pixel-space text-to-image model, latent-to-pixel conversion of FLUX.2 klein, and pixel vs latent backbones for depth and restoration."
+    },
+    {
+      "title": "[2610.09450] Iris-3B: Going Beyond the Latent with Pixel-Space ...",
+      "url": "https://arxiv.org/abs/2610.09450",
+      "snippet": "We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a 256 → 512 → 1024 curriculum, after first ablating the prediction target and representation alignment at 2562 to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B, to pixel space."
+    },
+    {
+      "title": "IBM-NASA Surya open source AI model forecasts solar flares",
+      "url": "https://www.techtarget.com/ai/news/366629781/IBM-NASA-Surya-open-source-AI-model-forecasts-solar-flares",
+      "snippet": "Surya is an open source model from IBM and NASA, designed to predict solar flares and space weather effects on Earth."
+    },
+    {
+      "title": "Iris-3B: Going Beyond the Latent with Pixel-Space Diffusion...",
+      "url": "https://arxivlens.com/paperview/details/iris-3b-going-beyond-the-latent-with-pixel-space-diffusion-training-conversion-and-fine-tuning-4022-0a29d830",
+      "snippet": "We pretrain Iris-3B, a 3B-parameter pixel-space text-to-image transformer, from scratch through a $256&#92;to512&#92;to1024$ curriculum, after first ablating the prediction target and representation alignment at $256^2$ to decide what to scale. We also convert a pretrained latent model, FLUX.2 Klein base 4B, to pixel space."
+    },
+    {
+      "title": "IBM and NASA Release Groundbreaking Open-Source AI Model on Hugging ...",
+      "url": "https://newsroom.ibm.com/2025-08-20-ibm-and-nasa-release-groundbreaking-open-source-ai-model-on-hugging-face-to-predict-solar-weather-and-help-protect-critical-technology",
+      "snippet": "IBM and NASA unveiled the most advanced open-source foundation model designed to understand high resolution solar observation data and predict how solar activity affects Earth and space-based technology. Surya, named for the Sanskrit word for the Sun, represents a significant advancement in applying AI to solar image interpretation and space weather forecasting research, providing a novel tool ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alex-luci/smolvla-so101-vcarb-car-302ep",
+  "slug": "alex-luci-smolvla-so101-vcarb-car-302ep",
+  "author": "alex-luci",
+  "url": "https://huggingface.co/alex-luci/smolvla-so101-vcarb-car-302ep",
+  "created_at": "2026-10-07T15:25:02.000Z",
+  "updated_at": "2026-10-08T22:58:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:alex-luci/so101-vcarb-car",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39865084184,
+  "storage_human": "39.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alex : La plateforme numérique pour concilier maladie et travail",
+      "url": "https://alex.wecareatwork.com/",
+      "snippet": "Alex est une plateforme numérique pour concilier maladie et travail, de l'annonce jusqu'au retour de travail. Alex est un guide 24h sur …"
+    },
+    {
+      "title": "Portail Alex - Votre Portail courtage Allianz",
+      "url": "https://authentification-courtage.allianz.fr/am/XUI/?realm=courtiers",
+      "snippet": "Bienvenue sur ALEX Votre portail courtage Allianz connexion Afficher le mot de passe Mot de passe oublié ?"
+    },
+    {
+      "title": "Prénom Alex (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/alex/prenom-5895",
+      "snippet": "Quelle est l'origine du prénom Alex ? Le prénom Alex a pour origine le prénom grec Alexandros. Alex peut aussi être considéré …"
+    },
+    {
+      "title": "Alex Legal • Secrétariat juridique",
+      "url": "https://alexlegal.fr/",
+      "snippet": "De la création à la gestion quotidienne, Alex réunit tout le secrétariat juridique de votre société au même endroit : une alternative …"
+    },
+    {
+      "title": "Alex - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alex",
+      "snippet": "Alex is a unisex name, employed either as a hypocoristic or a standalone given name, derived from the Greek element ἀλέξειν …"
+    }
+  ]
+}

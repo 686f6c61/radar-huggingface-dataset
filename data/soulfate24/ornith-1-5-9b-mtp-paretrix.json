@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/Ornith-1.5-9B-MTP-Paretrix",
+  "slug": "soulfate24-ornith-1-5-9b-mtp-paretrix",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/Ornith-1.5-9B-MTP-Paretrix",
+  "created_at": "2026-10-08T14:09:34.000Z",
+  "updated_at": "2026-10-08T23:00:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "quantization",
+    "imatrix",
+    "hybrid-quantization",
+    "pareto",
+    "rco",
+    "speculative-decoding",
+    "mtp",
+    "vision",
+    "text-generation",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1282297,
+  "parameters_human": "1.3M",
+  "storage_bytes": 49471672928,
+  "storage_human": "49.5 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soulfate24/Ornith-1.5-9B-MTP-Paretrix · Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/Ornith-1.5-9B-MTP-Paretrix",
+      "snippet": "🧮 Paretrix GGUF quantizations of ornith-ai/Ornith-1.5-9B with MTP ... ℹ️ About Paretrix Quantization Suite Paretrix is an empirical, activation-aware quantization suite for GGUF language models and speculative decoding modules. Pareto + Matrix → Paretrix. Each tier is priced so that no better trade exists at that compression."
+    },
+    {
+      "title": "Soulfate24/Ornith-1.5-9B-MTP-ASHQ1-Remix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/Ornith-1.5-9B-MTP-ASHQ1-Remix-GGUF",
+      "snippet": "Ornith-1.5-9B with MTP - ASHQ1-Remix This is a GGUF quantized version of the original model."
+    },
+    {
+      "title": "Ornith 1.5 9b Mtp - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/ornith-1-5-9b-mtp.html",
+      "snippet": "Download Ornith 1.5 9b Mtp GGUF model. 18.9 GB, 32,822 downloads, 31 likes."
+    },
+    {
+      "title": "Ornith AI",
+      "url": "https://ornith.ai/",
+      "snippet": "Ornith-1.5: From Self-Scaffolding to Self-Improvement Ornith-1.5 takes a major step toward building foundation models through end-to-end self-improvement, extending the self-scaffolding framework introduced in Ornith-1.0 into a more complete self-improvement loop: the model proposes new tasks, generates task-specific scaffolds, and produces solution rollouts. It spans 397B MoE, 35B MoE, and 9B ..."
+    },
+    {
+      "title": "Ornith 1.5 9B — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/ornith-ai-ornith-1-5-9b",
+      "snippet": "Ornith 1.5 9B — Hardware Requirements & GPU Compatibility Chat Ornith-1.5-9B is the lightest model in Ornith AI&#x27;s Ornith-1.5 family, a dense 9.7-billion-parameter model built for agentic coding tasks and designed for efficient single-GPU deployment. It shares the family&#x27;s self-improving training approach, in which reinforcement learning jointly optimizes the tasks, agent scaffolding, and ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hendrimardani/fine-tuned-model-indonesian-2",
+  "slug": "hendrimardani-fine-tuned-model-indonesian-2",
+  "author": "hendrimardani",
+  "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indonesian-2",
+  "created_at": "2026-09-08T07:30:15.000Z",
+  "updated_at": "2026-10-08T21:48:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "unsloth",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:unsloth/Llama-3.1-8B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Llama-3.1-8B-unsloth-bnb-4bit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2705,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 23289656834,
+  "storage_human": "23.3 GB",
+  "base_model": "unsloth/Llama-3.1-8B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fine-tuned-model-indonesian-2 by Hendri Mardani: Open Model",
+      "url": "https://savrn.com/models/fine-tuned-model-indonesian-2",
+      "snippet": "fine-tuned-model-indonesian-2 is an open-weight model for text generation from Hendri Mardani. It has 8B parameters and a 131,072-token context. At 16-bit it needs about 19.3 GB of GPU memory, which fits on 1x MI300X from $1.85 an hour, at the lowest prices in the SAVRN Index. It draws 810 downloads a month."
+    },
+    {
+      "title": "hendrimardani/fine-tuned-model-indoensian-2 · Hugging Face",
+      "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indoensian-2",
+      "snippet": "Instructions to use hendrimardani/fine-tuned-model-indoensian-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "hendrimardani/fine-tuned-model-indonesian-2 - featherless.ai",
+      "url": "https://featherless.ai/models/hendrimardani/fine-tuned-model-indonesian-2",
+      "snippet": "It is fine-tuned from the unsloth/llama-3.1-8b-unsloth-bnb-4bit base model, indicating its foundation in the Llama 3.1 architecture. Key Characteristics Architecture: Based on the Llama 3.1 family, providing a robust foundation for various natural language processing tasks."
+    },
+    {
+      "title": "hendrimardani/fine-tuned-model-indoensian · Hugging Face",
+      "url": "https://huggingface.co/hendrimardani/fine-tuned-model-indoensian",
+      "snippet": "hendrimardani / fine-tuned-model-indoensian like 0 Text Generation Transformers TensorBoard Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet MetricsTraining metrics Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - hendrimardani/hendrimardani",
+      "url": "https://github.com/hendrimardani/hendrimardani",
+      "snippet": "💡 I&#x27;m a Machine learning developer. 💻 I&#x27;m currently performing research in Detection object the human. 🎓 I graduated from SMK Negeri 2 Tasikmalaya Since 2019 Technical Electronics. 🎓 I&#x27;m studying at Bina Sarana Informatika University (Currently). 🎓 I&#x27;m studying information system at Bina Sarana Informatika University (Currently). 🌱 I&#x27;m on track for learning more about ..."
+    }
+  ]
+}

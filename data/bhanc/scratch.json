@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bhanc/scratch",
+  "slug": "bhanc-scratch",
+  "author": "bhanc",
+  "url": "https://huggingface.co/bhanc/scratch",
+  "created_at": "2026-06-05T22:33:08.000Z",
+  "updated_at": "2026-10-08T22:27:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "executorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1984,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118204275008,
+  "storage_human": "118.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bhanc/scratch · Hugging Face",
+      "url": "https://huggingface.co/bhanc/scratch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bhanc (Bartosz Hanc) - Hugging Face",
+      "url": "https://huggingface.co/bhanc",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 1 day ago ... published a model 3 days ago"
+    },
+    {
+      "title": "scratch: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-bhanc-scratch",
+      "snippet": "scratch is an AI model record indexed from Hugging Face."
+    },
+    {
+      "title": "bhanc AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/bhanc",
+      "snippet": "Browse AI models attributed to bhanc, sourced from verified model catalogs."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

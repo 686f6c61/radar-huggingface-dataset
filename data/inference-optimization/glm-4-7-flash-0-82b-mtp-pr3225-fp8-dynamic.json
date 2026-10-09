@@ -5,7 +5,7 @@
   "author": "inference-optimization",
   "url": "https://huggingface.co/inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225-FP8-Dynamic",
   "created_at": "2026-10-07T15:02:49.000Z",
-  "updated_at": "2026-10-07T15:02:52.000Z",
+  "updated_at": "2026-10-08T15:56:09.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,13 +31,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 821339512,
   "parameters_human": "821.3M",
   "storage_bytes": 1083444554,
   "storage_human": "1.1 GB",
-  "base_model": "inference-optimization/GLM-4.7-Flash-0.82B-MTP-PR3225",
+  "base_model": "inference-optimization/GLM-4.7-Flash-0.82B-MTP",
   "formats": [
     "safetensors"
   ],

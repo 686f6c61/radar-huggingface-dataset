@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eoinedge/obd-dtc-fusion",
+  "slug": "eoinedge-obd-dtc-fusion",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/obd-dtc-fusion",
+  "created_at": "2026-10-08T22:55:16.000Z",
+  "updated_at": "2026-10-08T23:00:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "obd",
+    "sensor-fusion",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eoinedge (eoin) - Hugging Face",
+      "url": "https://huggingface.co/eoinedge",
+      "snippet": "User profile of eoin on Hugging Face"
+    },
+    {
+      "title": "AI‑Powered OBD‑II: How Data‑Driven Diagnostics Are Redefining Vehicle ...",
+      "url": "https://growthworks.live/ai-powered-obd-ii-data-driven-diagnostics-2026/",
+      "snippet": "AI has become the engine behind OBD-II analysis because it can turn raw sensor streams into actionable health insights in real time. Traditional scan tools read static codes, but machine-learning models correlate voltage, temperature, and vibration data to predict failures before they trigger a Diagnostic Trouble Code (DTC)."
+    },
+    {
+      "title": "eoinedge (eoin) - Hugging Face",
+      "url": "https://huggingface.co/eoinedge/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset about 1 month ago ... updated a dataset about 1 month ago"
+    },
+    {
+      "title": "A Review of OBD-II-Based Machine Learning Applications for ... - MDPI",
+      "url": "https://www.mdpi.com/1424-8220/25/13/4057",
+      "snippet": "The On-Board Diagnostics II (OBD-II) system, driven by a wide range of embedded sensors, has revolutionized the automotive industry by enabling real-time monitoring of key vehicle parameters such as engine load, vehicle speed, throttle position, and diagnostic trouble codes. Concurrently, recent advancements in machine learning (ML) have further expanded the capabilities of OBD-II applications ..."
+    },
+    {
+      "title": "OBDAI - World&#x27;s First AI OBD2 Scanner & Car Diagnostic App",
+      "url": "https://obdai.app/",
+      "snippet": "OBDAI with ARIA™ is the first AI agent that runs full vehicle diagnostics autonomously. Not a code reader. Not an assistant. A real AI mechanic for your car."
+    }
+  ]
+}

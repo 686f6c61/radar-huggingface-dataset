@@ -5,7 +5,7 @@
   "author": "sirsqm",
   "url": "https://huggingface.co/sirsqm/seger-qwen2.5-1.5b-onnx",
   "created_at": "2026-10-07T22:28:37.000Z",
-  "updated_at": "2026-10-08T00:34:02.000Z",
+  "updated_at": "2026-10-08T23:47:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 570,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 3695060267,
-  "storage_human": "3.7 GB",
+  "storage_bytes": 6184622712,
+  "storage_human": "6.2 GB",
   "base_model": "sirsqm/seger-qwen2.5-1.5b",
   "formats": [
     "onnx"

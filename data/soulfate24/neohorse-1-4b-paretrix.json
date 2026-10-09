@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/NeoHorse-1-4B-Paretrix",
+  "slug": "soulfate24-neohorse-1-4b-paretrix",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/NeoHorse-1-4B-Paretrix",
+  "created_at": "2026-10-08T20:37:29.000Z",
+  "updated_at": "2026-10-08T23:01:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "llama.cpp",
+    "quantization",
+    "imatrix",
+    "hybrid-quantization",
+    "pareto",
+    "rco",
+    "vision",
+    "text-generation",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 22700421120,
+  "storage_human": "22.7 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TokenRhythm/NeoHorse-1-4B · Hugging Face",
+      "url": "https://huggingface.co/TokenRhythm/NeoHorse-1-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - TokenRhythm/NeoHorse: NeoHorse-1: Towards Recursive Self ...",
+      "url": "https://github.com/TokenRhythm/NeoHorse",
+      "snippet": "NeoHorse is TokenRhythm&#x27;s family of open-weight models for agent workflows. NeoHorse-1 provides 4B and 9B language models for tool use, coding, and instruction following. NeoHorse-Jev builds on NeoHorse-1-4B to make structured decisions through prefill-only inference."
+    },
+    {
+      "title": "NeoHorse-1 - a TokenRhythm Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/TokenRhythm/neohorse-1",
+      "snippet": "NeoHorse-1: Towards Recursive Self-Improvement via Agentic Post-Training with Routing Harness"
+    },
+    {
+      "title": "NeoHorse-1-4B: TokenRhythm&#x27;s 4B Open Agent Model | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/neohorse-1-4b/",
+      "snippet": "NeoHorse-1-4B is TokenRhythm&#x27;s Apache-2.0 4B agent model, post-trained from Qwen3.5-4B with a 262K context. Benchmarks, specs and how to serve it."
+    },
+    {
+      "title": "NeoHorse-1-4B: A 4B Model Built for AI Agents and Tool Use",
+      "url": "https://hackernoon.com/neohorse-1-4b-a-4b-model-built-for-ai-agents-and-tool-use",
+      "snippet": "NeoHorse-1-4B is a 4B-parameter causal language model from TokenRhythm, derived from Qwen3.5-4B and adapted through routing-guided agentic post-training for text-based agent harnesses, tool use, coding, and instruction following. Its key distinction is not a new model scale or modality, but the ..."
+    }
+  ]
+}

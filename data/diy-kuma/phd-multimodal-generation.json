@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "diy-kuma/phd-multimodal-generation",
+  "slug": "diy-kuma-phd-multimodal-generation",
+  "author": "diy-kuma",
+  "url": "https://huggingface.co/diy-kuma/phd-multimodal-generation",
+  "created_at": "2026-10-08T20:22:20.000Z",
+  "updated_at": "2026-10-08T20:22:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIY.fr - La communauté du Do It Yourself",
+      "url": "https://www.diy.fr/",
+      "snippet": "Accessoiriser une tenue de fête : 8 idées DIY pour sublimer son look Invité à un mariage, une soirée ou une cérémonie ? Le look …"
+    },
+    {
+      "title": "ToutDIY: Astuces, tutos et kits DIY pour tout faire soi-même",
+      "url": "https://toutdiy.fr/",
+      "snippet": "Kits DIY, Idées, astuces et tutos pour vos projets DIY dans les catégories beauté, bricolage, cuisine, jardinage, maison et mode sur …"
+    },
+    {
+      "title": "DIY Décoration : décorez vous-même votre intérieur",
+      "url": "https://www.diy.fr/decoration/",
+      "snippet": "Jul 2, 2024 · DIY Décoration Comment aménager un coin bureau confortable à la maison ? 03/08/2026 à 15h52"
+    },
+    {
+      "title": "DIY Récup : 15 idées déco simples et géniales [+Conseils] | Inès & Julie.",
+      "url": "https://chezinesetjulie.com/blog/diy-recup-deco-bois/",
+      "snippet": "Dec 29, 2025 · Donnez une seconde vie à vos objets avec le DIY récup. Au programme : des conseils pour vous procurer du …"
+    },
+    {
+      "title": "DIY | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/tutos/diy/?msockid=1ad823b7c1a9635a1c85345bc03f62ab",
+      "snippet": "Pour apprendre à réaliser vous-même des objets personnels et améliorer vos compétences en bricolage, suivez nos tutos DIY, de …"
+    }
+  ]
+}

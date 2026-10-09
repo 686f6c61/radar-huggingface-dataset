@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nirca/nirca-mini",
+  "slug": "nirca-nirca-mini",
+  "author": "nirca",
+  "url": "https://huggingface.co/nirca/nirca-mini",
+  "created_at": "2026-10-08T03:47:24.000Z",
+  "updated_at": "2026-10-09T02:02:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ternary",
+    "mixture-of-experts",
+    "byte-level",
+    "chatml",
+    "webgpu",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:open-thoughts/OpenThoughts-114k",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2806872128,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nirca (nirca - non-idempotent rolling context AI/Agent)",
+      "url": "https://huggingface.co/nirca",
+      "snippet": "Org profile for nirca - non-idempotent rolling context AI/Agent on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "NIRCa: An artificial neural network-based insulin resistance calculator",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/pedi.12551",
+      "snippet": "Homeostasis model assessment is more reliable than the fasting glucose/insulin ratio and quantitative insulin sensitivity check index for assessing insulin resistance among obese children and adolescents."
+    },
+    {
+      "title": "NIRCa : Pediatric Diabetes",
+      "url": "https://www.ovid.com/journals/peddi/fulltext/10.1111/pedi.12551~nirca-an-artificial-neural-networkbased-insulin-resistance",
+      "snippet": "NIRCa An artificial neural network‐based insulin resistance calculator Konrad Stawiski Iwona Pietrzak Wojciech Młynarski Wojciech Fendler Agnieszka Szadkowska Authors and Affiliations Pediatric Diabetes 19 (2):p 231 - 235, March 2018. | DOI: 10.1111/pedi.12551"
+    },
+    {
+      "title": "NIRCa: An artificial neural network-based insulin ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/317700451_NIRCa_An_artificial_neural_network-based_insulin_resistance_calculator",
+      "snippet": "Request PDF | NIRCa: An artificial neural network-based insulin resistance calculator | Background: Direct measurement of insulin sensitivity in children with type 1 diabetes is cumbersome and ..."
+    },
+    {
+      "title": "Models | Try NVIDIA NIM APIs",
+      "url": "https://build.nvidia.com/models",
+      "snippet": "Experience the leading models to build enterprise generative AI apps now."
+    }
+  ]
+}

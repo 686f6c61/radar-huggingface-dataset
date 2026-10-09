@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "vosldtgbj/project-llm-rlvr-dynamic-v2-step-125",
+  "slug": "vosldtgbj-project-llm-rlvr-dynamic-v2-step-125",
+  "author": "vosldtgbj",
+  "url": "https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-125",
+  "created_at": "2026-10-08T23:46:23.000Z",
+  "updated_at": "2026-10-09T00:25:24.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "japanese",
+    "reinforcement-learning",
+    "grpo",
+    "rlvr",
+    "full-weights",
+    "searchforge",
+    "dynamic-sampling",
+    "any-to-any",
+    "ja",
+    "en",
+    "base_model:vosldtgbj/project-llm-rlvr-dynamic-v2-step-100",
+    "base_model:finetune:vosldtgbj/project-llm-rlvr-dynamic-v2-step-100",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951722469,
+  "storage_human": "24.0 GB",
+  "base_model": "vosldtgbj/project-llm-rlvr-dynamic-v2-step-100",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon non remboursement - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-non-remboursement-t280163.html",
+      "snippet": "Sep 16, 2020 · J'ai contacté le service client et le conseiller ma orienté vers le service APEX (apex@amazon.fr) qui gère les …"
+    },
+    {
+      "title": "Problème remboursement commande Amazon [Résolu] - Forum Que …",
+      "url": "https://forum.quechoisir.org/probleme-remboursement-commande-amazon-t329055.html",
+      "snippet": "Dec 5, 2022 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    },
+    {
+      "title": "Amazon",
+      "url": "https://sellercentral.amazon.it/help/hub/reference/external/G200671260?mons_sel_locale=fr_FR&pageName=IT%3ASC%3ATrim-help%2Fhub%2Freference%2Fexternal%2FG200671260",
+      "snippet": "Avertissement de confidentialitéN'incluez aucune donnée à caractère personnel ou sensible. En envoyant des commentaires, vous …"
+    },
+    {
+      "title": "amazon et l'enregistrement obligatoire des CB",
+      "url": "https://forum.quechoisir.org/amazon-et-l-enregistrement-obligatoire-des-cb-t23687.html",
+      "snippet": "May 20, 2014 · Bonjour, Si vous avez déjà passé commande chez Amazon, vous vous êtes sans doute rendu compte que le site …"
+    },
+    {
+      "title": "Amazon - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/amazon-f305.html",
+      "snippet": "Apr 20, 2026 · Amazon : Entrez dans l'espace dédié à l'entreprise de commerce électronique amazon.fr, spécialiste d'achat et de …"
+    }
+  ]
+}

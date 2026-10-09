@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunildrzo/mocov3-contrastive",
+  "slug": "sunildrzo-mocov3-contrastive",
+  "author": "sunildrzo",
+  "url": "https://huggingface.co/sunildrzo/mocov3-contrastive",
+  "created_at": "2026-10-09T00:17:55.000Z",
+  "updated_at": "2026-10-09T00:18:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rymalhotra07/mocov3-contrastive · Hugging Face",
+      "url": "https://huggingface.co/Rymalhotra07/mocov3-contrastive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "paulwagne/mocov3-contrastive · Hugging Face",
+      "url": "https://huggingface.co/paulwagne/mocov3-contrastive",
+      "snippet": "Mocov3 for Contrastive Overview This repository is a compact, custom PyTorch implementation of Mocov3 for Contrastive. The large configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "An Empirical Study of Training Self-Supervised Vision Transformers",
+      "url": "https://arxiv.org/pdf/2104.02057",
+      "snippet": "The representations from contrastive self-supervised pre-training can outperform their supervised counterparts in certain tasks [20, 10]. Contrastive learning is commonly instantiated as some forms of Siamese networks [3]. Recently, a series of works [18, 7, 13] retain the Siamese architectures but eliminate the requirement of negative samples."
+    },
+    {
+      "title": "[2104.02057] An Empirical Study of Training Self-Supervised Vision ...",
+      "url": "https://arxiv.org/abs/2104.02057",
+      "snippet": "This paper does not describe a novel method. Instead, it studies a straightforward, incremental, yet must-know baseline given the recent progress in computer vision: self-supervised learning for Vision Transformers (ViT). While the training recipes for standard convolutional networks have been highly mature and robust, the recipes for ViT are yet to be built, especially in the self-supervised ..."
+    },
+    {
+      "title": "GitHub - facebookresearch/moco-v3: PyTorch implementation of MoCo v3 ...",
+      "url": "https://github.com/facebookresearch/moco-v3",
+      "snippet": "This is a PyTorch implementation of MoCo v3 for self-supervised ResNet and ViT. The original MoCo v3 was implemented in Tensorflow and run in TPUs. This repo re-implements in PyTorch and GPUs. Despite the library and numerical differences, this repo reproduces the results and observations in the paper."
+    }
+  ]
+}

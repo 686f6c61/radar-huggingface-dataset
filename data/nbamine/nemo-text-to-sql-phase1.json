@@ -4,8 +4,8 @@
   "slug": "nbamine-nemo-text-to-sql-phase1",
   "author": "NBAmine",
   "url": "https://huggingface.co/NBAmine/nemo-text-to-sql-phase1",
-  "created_at": "2026-09-26T03:14:49.000Z",
-  "updated_at": "2026-09-27T01:29:52.000Z",
+  "created_at": "2026-10-08T21:40:56.000Z",
+  "updated_at": "2026-10-08T23:55:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,8 +17,8 @@
     "generated_from_trainer",
     "sft",
     "trl",
-    "base_model:mistralai/Mistral-Nemo-Base-2407",
-    "base_model:finetune:mistralai/Mistral-Nemo-Base-2407",
+    "base_model:mistralai/Mistral-Nemo-Instruct-2407",
+    "base_model:finetune:mistralai/Mistral-Nemo-Instruct-2407",
     "endpoints_compatible",
     "region:us"
   ],
@@ -29,7 +29,7 @@
   "parameters_human": null,
   "storage_bytes": 1842922813,
   "storage_human": "1.8 GB",
-  "base_model": "mistralai/Mistral-Nemo-Base-2407",
+  "base_model": "mistralai/Mistral-Nemo-Instruct-2407",
   "formats": [
     "safetensors"
   ],

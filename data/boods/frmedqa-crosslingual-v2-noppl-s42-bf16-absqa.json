@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-v2-NoPPL-s42-bf16-AbsQA",
+  "slug": "boods-frmedqa-crosslingual-v2-noppl-s42-bf16-absqa",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s42-bf16-AbsQA",
+  "created_at": "2026-10-08T20:17:05.000Z",
+  "updated_at": "2026-10-08T20:17:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300788,
+  "storage_human": "525 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-AbsQA · Hugging Face",
+      "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-AbsQA",
+      "snippet": "Instructions to use boods/FrMedQA-CrossLingual-v2-NoPPL-qlora-AbsQA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-AbsQA · Hugging Face",
+      "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-AbsQA",
+      "snippet": "Instructions to use boods/FrMedQA-CrossLingual-v2-PPL-s42-bf16-AbsQA with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - Abel237/frmedqa-v2",
+      "url": "https://github.com/Abel237/frmedqa-v2",
+      "snippet": "Contribute to Abel237/frmedqa-v2 development by creating an account on GitHub."
+    },
+    {
+      "title": "Empero — Independent AI Research Lab",
+      "url": "https://empero.org/",
+      "snippet": "Independent AI research lab · Open by default · Built in Germany Small models, trained in the open. We build language models efficient enough to run on hardware you own, and release the weights, code and datasets behind them under Apache-2.0."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen: The official repo of Qwen (通义千问) chat ...",
+      "url": "https://github.com/QwenLM/Qwen",
+      "snippet": "The official repo of Qwen (通义千问) chat & pretrained large language model proposed by Alibaba Cloud. - QwenLM/Qwen"
+    }
+  ]
+}

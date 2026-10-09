@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eoinedge/marine-fusion",
+  "slug": "eoinedge-marine-fusion",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/marine-fusion",
+  "created_at": "2026-10-09T00:21:41.000Z",
+  "updated_at": "2026-10-09T00:21:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "sensor-fusion",
+    "marine",
+    "root-cause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A review of artificial intelligence in marine science",
+      "url": "https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2023.1090185/full",
+      "snippet": "Abstract Utilization and exploitation of marine resources by humans have contributed to the growth of marine research. As technology progresses, artificial intelligence (AI) approaches are progressively being applied to maritime research, complementing traditional marine forecasting models and observation techniques to some degree. This article takes the artificial intelligence algorithmic ..."
+    },
+    {
+      "title": "Deep learning-based marine big data fusion for ocean ... - Frontiers",
+      "url": "https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2022.1094915/full",
+      "snippet": "This research study presents a data fusion-based method for underwater salient object detection and ocean environment monitoring by utilizing a deep model. Methodology: A hybrid model consists of an upgraded AlexNet with Inception v-4 for salient object detection and ocean environment monitoring."
+    },
+    {
+      "title": "(PDF) A review of artificial intelligence in marine science",
+      "url": "https://www.researchgate.net/publication/368566187_A_review_of_artificial_intelligence_in_marine_science",
+      "snippet": "Utilization and exploitation of marine resources by humans have contributed to the growth of marine research. As technology progresses, artificial intelligence (AI) approaches are progressively ..."
+    },
+    {
+      "title": "Edge AI Platform - ModelNova",
+      "url": "https://modelnova.com/",
+      "snippet": "The edge AI pipeline, without the stitching Model selection, hardware optimization, and production deployment - every step inside Fusion Studio, no handoffs between tools."
+    },
+    {
+      "title": "eoinedge (eoin) - Hugging Face",
+      "url": "https://huggingface.co/eoinedge/spaces",
+      "snippet": "WakeForge: GCP & Piper TTS Wake Word Dataset Creator 🔨"
+    }
+  ]
+}

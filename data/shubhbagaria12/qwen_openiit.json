@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Shubhbagaria12/QWEN_OPENIIT",
+  "slug": "shubhbagaria12-qwen_openiit",
+  "author": "Shubhbagaria12",
+  "url": "https://huggingface.co/Shubhbagaria12/QWEN_OPENIIT",
+  "created_at": "2026-10-08T21:48:23.000Z",
+  "updated_at": "2026-10-08T21:56:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "hi",
+    "kn"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "lora",
+    "debt-collection",
+    "promise-to-pay",
+    "code-mixed",
+    "hinglish",
+    "kanglish",
+    "conversational",
+    "en",
+    "hi",
+    "kn",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1034756820,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3 million downloads and counting: this new free Chinese AI model is ...",
+      "url": "https://cybernews.com/tech/qwen-38-27b-ai-model-debuts-with-million-downloads/",
+      "snippet": "Alibaba&#x27;s newly released free, open-weight AI model, Qwen3.8-27B is gaining momentum, amassing over 3 million downloads in its opening weekend as developers and prosumers seek its performance capabilities on consumer hardware."
+    },
+    {
+      "title": "Qwen - Alibaba Group",
+      "url": "https://home.alibabagroup.com/en-US/ai-governance/qwen",
+      "snippet": "Multimodal AI Designed For Safe Use At Scale Designed to support real-world decision-making and action, Qwen enables organizations and developers to analyze complex information, work across languages and data types, and deploy AI systems with a strong emphasis on safety, transparency, and control."
+    },
+    {
+      "title": "Qwen 3 Full Model Lineup Guide 2026: 0.6B to 72B with Dual-Mode ...",
+      "url": "https://baeseokjae.github.io/posts/qwen-3-full-lineup-guide-2026/",
+      "snippet": "Complete guide to every Qwen 3 model from 0.6B to 235B — specs, VRAM requirements, dual-mode thinking, benchmarks vs. DeepSeek R1 and GPT-4o."
+    },
+    {
+      "title": "Qwen explained: Alibaba&#x27;s open AI models, from phone-sized to flagship",
+      "url": "https://llmshed.com/models/qwen/",
+      "snippet": "Qwen is a family of open-weight AI models from Alibaba&#x27;s Qwen team, and it covers more ground than almost any other open line: a phone-class model under 1 billion parameters on one end, flagship models with hundreds of billions of parameters on the other. Nearly all of it ships under the Apache 2.0 license, so you can download it, run it offline, and use it in a commercial product without ..."
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It&#x27;s free to use, open to all, and ready to help with creativity, collaboration, and endless possibilities."
+    }
+  ]
+}

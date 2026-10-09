@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MrZVIL/bge-small-ner",
+  "slug": "mrzvil-bge-small-ner",
+  "author": "MrZVIL",
+  "url": "https://huggingface.co/MrZVIL/bge-small-ner",
+  "created_at": "2026-10-08T19:50:01.000Z",
+  "updated_at": "2026-10-08T20:01:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132890869,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greg908/bge-small-ner · Hugging Face",
+      "url": "https://huggingface.co/Greg908/bge-small-ner",
+      "snippet": "bge-small-ner This model is a fine-tuned version of BAAI/bge-small-en-v1.5 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Recommend switching to newest BAAI/bge-small-en-v1.5, which has more reasonable similarity distribution and same method of usage. FlagEmbedding Model List | FAQ | Usage | Evaluation | Train | Citation | License More details please refer to our Github: FlagEmbedding. English | 中文 FlagEmbedding focus on retrieval-augmented LLMs, consisting of following projects currently: Fine-tuning of LM ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "Most Popular Embedding Model Series Across Multiple Platforms The BGE series models have gained widespread popularity among users and developers due to excellent performance and applicability, with download data far surpassing that of similar models."
+    },
+    {
+      "title": "BGE — BGE documentation - bge-model.com",
+      "url": "https://bge-model.com/bge/index.html",
+      "snippet": "BGE # BGE stands for BAAI General Embeddings, which is a series of embedding models released by BAAI."
+    }
+  ]
+}

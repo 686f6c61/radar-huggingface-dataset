@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/TerminalHorizon-35B-A3B-i1-GGUF",
+  "slug": "mradermacher-terminalhorizon-35b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/TerminalHorizon-35B-A3B-i1-GGUF",
+  "created_at": "2026-10-08T19:50:17.000Z",
+  "updated_at": "2026-10-09T01:08:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "terminal-agent",
+    "cli",
+    "agentic",
+    "supervised-fine-tuning",
+    "long-horizon",
+    "RSI",
+    "Coding-agent",
+    "en",
+    "dataset:shunzou05/TerminalHorizon-3K",
+    "dataset:shunzou05/TerminalHorizon-Environment",
+    "base_model:shunzou05/TerminalHorizon-35B-A3B",
+    "base_model:quantized:shunzou05/TerminalHorizon-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 370842246336,
+  "storage_human": "370.8 GB",
+  "base_model": "shunzou05/TerminalHorizon-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/TerminalHorizon-35B-A3B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/TerminalHorizon-35B-A3B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/Ornith-1.5-35B-A3B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-i1-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Frontier Model Tracker | DemandSphere",
+      "url": "https://www.demandsphere.com/research/demandsphere-radar/ai-frontier-model-tracker/",
+      "snippet": "Benchmarks, pricing, and capabilities across every major frontier AI model, both proprietary and open weight. Live news for each model."
+    },
+    {
+      "title": "AI Model Releases Timeline: Latest Launches, Updated Daily",
+      "url": "https://www.promptzone.com/ai-model-releases",
+      "snippet": "AI Model Releases 2026 Timeline A chronological timeline of major AI model releases across 2025 and 2026 — LLMs, reasoning models, open-weights families, and image & video generators, each with its date, why it mattered, and the official announcement."
+    },
+    {
+      "title": "AI Model Releases Timeline | DemandSphere",
+      "url": "https://www.demandsphere.com/research/demandsphere-radar/ai-frontier-model-tracker/releases/",
+      "snippet": "Chronological timeline of every frontier AI model release. Track new launches from OpenAI, Anthropic, Google, xAI, Meta, DeepSeek, and more."
+    }
+  ]
+}

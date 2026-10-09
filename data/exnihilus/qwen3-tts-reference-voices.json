@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ExNihilus/qwen3-tts-reference-voices",
+  "slug": "exnihilus-qwen3-tts-reference-voices",
+  "author": "ExNihilus",
+  "url": "https://huggingface.co/ExNihilus/qwen3-tts-reference-voices",
+  "created_at": "2026-10-06T02:52:53.000Z",
+  "updated_at": "2026-10-08T21:47:00.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16090876,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExNihilus/qwen3-tts-reference-voices · Hugging Face",
+      "url": "https://huggingface.co/ExNihilus/qwen3-tts-reference-voices",
+      "snippet": "Qwen3 TTS reference voices Twenty synthetic reference voices (one female and one male in ten languages) generated with Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign, dedicated to the public domain under CC0 1.0, for voice cloning with Qwen3 TTS, VoxCPM2 and Chatterbox. See NOTICE.md and voices.json."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS",
+      "snippet": "Qwen3-TTS is an open-source series of TTS models developed by the Qwen team at Alibaba Cloud, supporting stable, expressive, and streaming speech generation, free-form voice design, and vivid voice..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-TTS: Qwen3-TTS is an open-source series of TTS ...",
+      "url": "https://github.com/QwenLM/Qwen3-TTS?pubDate=20260406",
+      "snippet": "We release Qwen3-TTS, a series of powerful speech generation capabilities developed by Qwen, offering comprehensive support for voice clone, voice design, ultra-high-quality human-like speech generation, and natural language-based voice control. It provides developers and users with the most ..."
+    },
+    {
+      "title": "Qwen3-TTS Demo - a Hugging Face Space by Qwen",
+      "url": "https://huggingface.co/spaces/Qwen/Qwen3-TTS",
+      "snippet": "Qwen3-TTS Demo A unified Text-to-Speech demo featuring three powerful modes: Voice Design: Create custom voices using natural language descriptions Voice Clone (Base): Clone any voice from a reference audio TTS (CustomVoice): Generate speech with predefined speakers and optional style instructions Built with Qwen3-TTS by Alibaba Qwen Team."
+    },
+    {
+      "title": "Alibaba Qwen Releases Qwen3-TTS - 97ms Ultra-Low Latency Voice ...",
+      "url": "https://comfyui-wiki.com/en/news/2026-01-22-alibaba-qwen3-tts-release",
+      "snippet": "Alibaba Qwen open-sources Qwen3-TTS series voice generation models, achieving 97ms ultra-low latency through Dual-Track modeling, supporting 3-second voice cloning and natural language voice design, covering 10 major languages"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KWST/novapay-sentiment",
+  "slug": "kwst-novapay-sentiment",
+  "author": "KWST",
+  "url": "https://huggingface.co/KWST/novapay-sentiment",
+  "created_at": "2026-10-08T21:16:27.000Z",
+  "updated_at": "2026-10-08T21:16:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837761,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dumbbutt0/novapay-sentiment-imdb-distilbert · Hugging Face",
+      "url": "https://huggingface.co/dumbbutt0/novapay-sentiment-imdb-distilbert",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "abhishes/novapay-sentiment · Hugging Face",
+      "url": "https://huggingface.co/abhishes/novapay-sentiment",
+      "snippet": "Fine Tuned for sentiment classification of NovaPay Customer Support Messages. This is a proof-of-concept model trained on IMDB Dataset Training Data"
+    },
+    {
+      "title": "NovaPay on the results of AI transformation: what has changed in the ...",
+      "url": "https://novapay.ua/en/ai-transformatsiya/",
+      "snippet": "NovaPay has summarised the implementation of artificial intelligence into its operational processes and shared the key results for the last two years. During this time, the company has implemented several AI improvements that have significantly accelerated service operations, reduced manual tasks, and enhanced security."
+    },
+    {
+      "title": "NovaPay&#x27;s technological upgrade in 2025: 50% faster transactions ...",
+      "url": "https://novapay.ua/en/tekhnologichnii-apgreid-2025/",
+      "snippet": "NovaPay continues its large-scale digital transformation, strengthening its IT infrastructure and service operations even during record loads. For the company, 2025 was the year of a complete transition to the cloud, the implementation of a zero-trust security model, and the development of corporate analytics. As a result, the application&#x27;s operational speed has increased by 50%, security ..."
+    },
+    {
+      "title": "Analyzing Sentiment | Cloud Natural Language API - Google Cloud",
+      "url": "https://docs.cloud.google.com/natural-language/docs/analyzing-sentiment",
+      "snippet": "Analyzing Sentiment from Cloud Storage For your convenience, the Natural Language API can perform sentiment analysis directly on a file located in Cloud Storage, without the need to send the contents of the file in the body of your request. Here is an example of performing sentiment analysis on a file located in Cloud Storage."
+    }
+  ]
+}

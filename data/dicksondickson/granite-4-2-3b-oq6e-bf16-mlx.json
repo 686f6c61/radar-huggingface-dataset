@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/granite-4.2-3b-oQ6e-bf16-MLX",
+  "slug": "dicksondickson-granite-4-2-3b-oq6e-bf16-mlx",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/granite-4.2-3b-oQ6e-bf16-MLX",
+  "created_at": "2026-10-08T23:41:35.000Z",
+  "updated_at": "2026-10-08T23:41:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "ibm",
+    "3b",
+    "omlx",
+    "oQe",
+    "apple",
+    "bf16",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 3057774138,
+  "storage_human": "3.1 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ibm-granite/granite-4.2-3b · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-3b",
+      "snippet": "Granite-4.2-3B supports tool calling with integrated reasoning — the model thinks about which tool to call and why before making the call. Tools are defined using the OpenAI function definition schema."
+    },
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite 4.2 language models excel at reasoning and agentic tasks, from complex math and code problems to multi-step tool use. This capability allows enterprises to build AI-driven workflows that reason through challenges and act on them with precision, automating complex tasks with confidence."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "IBM Granite 4.2: Documentation, Tasks & Deployment Guide",
+      "url": "https://intuitionlabs.ai/articles/ibm-granite-4-2-model-guide",
+      "snippet": "A 2026 analyst reference covering IBM Granite 4.2 model architecture, benchmarks, deployment on vLLM and watsonx.ai, Apache 2.0 licensing, pricing gaps, and how it compares to Granite 4.0, Llama 4, Qwen3, and Mistral Large 3."
+    }
+  ]
+}

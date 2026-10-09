@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GoshawkVortexAI/Goshawk_Fingpt",
+  "slug": "goshawkvortexai-goshawk_fingpt",
+  "author": "GoshawkVortexAI",
+  "url": "https://huggingface.co/GoshawkVortexAI/Goshawk_Fingpt",
+  "created_at": "2026-10-08T19:51:06.000Z",
+  "updated_at": "2026-10-08T19:53:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "finance",
+    "crypto",
+    "trading",
+    "lora",
+    "qwen3",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 8709518336,
+  "storage_human": "8.7 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinGPT — Open-Source Financial Large Language Models",
+      "url": "https://fingpt.io/",
+      "snippet": "Build, evaluate, and deploy financial AI applications with open-source models, APIs, benchmarking, and enterprise services. Train and adapt financial models at a fraction of the cost of traditional large-scale systems."
+    },
+    {
+      "title": "Download — FinGPT",
+      "url": "https://fingpt.io/download",
+      "snippet": "Download FinGPT Build, evaluate, and deploy financial AI applications with open-source models, APIs, benchmarking, and enterprise services. Access open-source models, release packages, source code, and deployment resources for FinGPT."
+    },
+    {
+      "title": "GoshawkVortexAI (Ayberk Binbir) - Hugging Face",
+      "url": "https://huggingface.co/GoshawkVortexAI",
+      "snippet": "User profile of Ayberk Binbir on Hugging Face"
+    },
+    {
+      "title": "FinGPT (FinGPT) - Hugging Face",
+      "url": "https://huggingface.co/FinGPT",
+      "snippet": "Financial Large Language Models, Financial Reinforcement Learning, Sentiment Analysis, Robo-Advisor, Stock Trading"
+    },
+    {
+      "title": "FinGPT: Open-Source Financial Large Language Models | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/fingpt/",
+      "snippet": "FinGPT, from the AI4Finance Foundation, is an open-source effort to build financial large language models that anyone can run and adapt. Instead of training a costly model from scratch like BloombergGPT, FinGPT takes strong open base models and fine-tunes them with the lightweight LoRA method, so a fresh model can be produced for less than $300 ..."
+    }
+  ]
+}

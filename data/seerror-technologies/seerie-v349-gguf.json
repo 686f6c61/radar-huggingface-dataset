@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "seerror-technologies/seerie-v349-GGUF",
+  "slug": "seerror-technologies-seerie-v349-gguf",
+  "author": "seerror-technologies",
+  "url": "https://huggingface.co/seerror-technologies/seerie-v349-GGUF",
+  "created_at": "2026-10-08T19:27:04.000Z",
+  "updated_at": "2026-10-08T22:32:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "kn",
+    "ml",
+    "gu",
+    "pa",
+    "or"
+  ],
+  "tags": [
+    "gguf",
+    "conversational",
+    "cybersecurity",
+    "fraud-prevention",
+    "india",
+    "hindi",
+    "hinglish",
+    "llama.cpp",
+    "on-device",
+    "text-generation",
+    "en",
+    "hi",
+    "bn",
+    "ta",
+    "te",
+    "kn",
+    "ml",
+    "gu",
+    "pa",
+    "or",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 5972621788,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Play Guitar: Learn the Basics - ULTIMATE GUITAR TABS",
+      "url": "https://www.ultimate-guitar.com/articles/official-lessons/how-to-play-guitar",
+      "snippet": "In this guide, you're going to learn everything you need to know to get yourself started with guitar playing. You'll also find out about …"
+    },
+    {
+      "title": "Free Beginner Guitar Lessons | Basic Step by Step Lessons",
+      "url": "https://www.guitarlessons.com/guitar-lessons/beginner-guitar-quick-start-series",
+      "snippet": "A free step-by-step beginner guitar lesson series that will teach you how to play guitar from scratch."
+    },
+    {
+      "title": "How to Play Guitar: 14 Steps (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Play-Guitar",
+      "snippet": "Feb 22, 2026 · You can use a guitar to play anything from death metal to classical and everything in between. Learning to play guitar …"
+    },
+    {
+      "title": "How to Learn Guitar in 11 Steps - National Guitar Academy",
+      "url": "https://nationalguitaracademy.com/guides/beginners/how-to-learn-guitar/",
+      "snippet": "Learn how to play chords at lightning speed, three strumming secrets, pick technique, and get tips for tuning and practice time. …"
+    },
+    {
+      "title": "All Lessons | JustinGuitar.com",
+      "url": "https://www.justinguitar.com/guitar-lessons",
+      "snippet": "JustinGuitar. The best guitar lessons online, and they're free! Fun, comprehensive and well structured courses for beginners, …"
+    }
+  ]
+}

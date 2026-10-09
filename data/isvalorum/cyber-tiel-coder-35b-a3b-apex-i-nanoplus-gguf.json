@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Cyber-Tiel-Coder-35B-A3B-APEX-I-NanoPlus-GGUF",
   "created_at": "2026-09-29T22:33:45.000Z",
-  "updated_at": "2026-10-07T16:14:30.000Z",
+  "updated_at": "2026-10-08T22:54:59.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -78,7 +78,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 3173,
+  "downloads_30d": 3641,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

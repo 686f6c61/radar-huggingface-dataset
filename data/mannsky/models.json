@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MannSky/Models",
+  "slug": "mannsky-models",
+  "author": "MannSky",
+  "url": "https://huggingface.co/MannSky/Models",
+  "created_at": "2026-10-08T22:53:07.000Z",
+  "updated_at": "2026-10-08T22:53:07.000Z",
+  "license": "grok2-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:grok2-community",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "Open source AI models ranked: Llama 4, DeepSeek, Qwen, Mistral, and Gemma compared by score, pricing, and capabilities. The open source LLM leaderboard updated hourly."
+    },
+    {
+      "title": "All models | OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models/all",
+      "snippet": "Browse all available models on the OpenAI Platform."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "The Minsky Model and AI&#x27;s Evolution - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/minsky-model-ais-evolution-john-mcclain-dfmbc",
+      "snippet": "Minsky&#x27;s ideas laid a foundation for modern AI. His work on frames and the Society of Mind influenced how researchers approached knowledge representation. It led to the development of expert systems."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged",
+  "slug": "banhcarrot-qwen2-5-0-5b-networkadmin-sft-merged",
+  "author": "banhcarrot",
+  "url": "https://huggingface.co/banhcarrot/qwen2.5-0.5b-networkadmin-sft-merged",
+  "created_at": "2026-10-05T00:43:46.000Z",
+  "updated_at": "2026-10-08T23:03:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "trl",
+    "sft",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 2975714788,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to the Jungle — Work with the company you belong to",
+      "url": "https://www.welcometothejungle.com/en",
+      "snippet": "Welcome to the Jungle is the guide that walks you through your job-search: find out what it's like to work for today's top companies …"
+    },
+    {
+      "title": "Jobs | Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr/jobs",
+      "snippet": "Liste des offres d'emploi, stage, apprentissage et alternance dans les entreprises qui recrutent sur Welcome to the Jungle."
+    },
+    {
+      "title": "Solution marque employeur | Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/marque-employeur",
+      "snippet": "Construisez une marque employeur qui attire les bons profils. Vitrine personnalisée, contenus clé en main, résultats mesurables. …"
+    },
+    {
+      "title": "Le logiciel de recrutement Welcome ATS | Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/ats",
+      "snippet": "Centralisez vos recrutements avec Welcome ATS : offres, candidatures, échanges et IA dans un seul logiciel. Demandez votre démo."
+    },
+    {
+      "title": "Welcome to the Jungle (formerly Otta)",
+      "url": "https://app.welcometothejungle.com/companies/Welcome-to-the-Jungle-(formerly-Otta)",
+      "snippet": "Oct 8, 2024 · Apply for jobs at Welcome to the Jungle (formerly Otta) on Welcome to the Jungle (formerly Otta}. To help candidates …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielneumann/learn-data-efficient-learning",
+  "slug": "danielneumann-learn-data-efficient-learning",
+  "author": "danielneumann",
+  "url": "https://huggingface.co/danielneumann/learn-data-efficient-learning",
+  "created_at": "2026-10-08T22:51:03.000Z",
+  "updated_at": "2026-10-08T22:51:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lean 是门什么样的编程语言?和Coq语言有什么区别? - 知乎",
+      "url": "https://www.zhihu.com/question/583892146",
+      "snippet": "Lean和Coq各自具有独特的优势和劣势。 Lean的优势： 便于自动化开发：Lean从设计之初就以自动化为目标，因此在实现自动化证 …"
+    },
+    {
+      "title": "Coq - 知乎",
+      "url": "https://www.zhihu.com/topic/20008098/hot",
+      "snippet": "在计算机科学领域，Coq是一个交互式定理证明器。它允许数学断言的表达式，机械性地检查这些假设的证明，帮助寻找形式化的证 …"
+    },
+    {
+      "title": "Coq en ville : est-ce légal ? [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-6844344-coq-en-ville-est-ce-legal",
+      "snippet": "Aug 12, 2015 · Bonjour, oui, le chant d'un coq peut constituer un trouble de voisinage, voir les arrêts des cours de cassation …"
+    },
+    {
+      "title": "Coq et poules dans un lotissement - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8779861-coq-et-poules-dans-un-lotissement",
+      "snippet": "Apr 2, 2021 · Bonjour, Notre voisin a eu la \"bonne\" idée de mettre des poules et un coq dans son jardin. Ce coq chante tous les …"
+    },
+    {
+      "title": "怎么评价Coq？ - 知乎",
+      "url": "https://www.zhihu.com/question/56063711",
+      "snippet": "Feb 20, 2017 · Coq对于做安全来说，一个很吸引人的地方在于其可以保证百分百的满足property，只要你能恰当的formalize。 然而要 …"
+    }
+  ]
+}

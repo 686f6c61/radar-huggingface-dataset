@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sudnya/amx-shape-130k-tok-per-s",
+  "slug": "sudnya-amx-shape-130k-tok-per-s",
+  "author": "Sudnya",
+  "url": "https://huggingface.co/Sudnya/amx-shape-130k-tok-per-s",
+  "created_at": "2026-10-08T22:53:01.000Z",
+  "updated_at": "2026-10-08T22:53:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "amx",
+    "cpu-inference",
+    "block-diffusion",
+    "moe",
+    "random-weights",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 281781016,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Detector & AI Checker - For ChatGPT, GPT-5, Gemini & Claude",
+      "url": "https://phrasly.ai/ai-detector",
+      "snippet": "Free AI Detector & AI Checker Our AI detector and AI checker are 99.8% accurate and 100% free to use. Check any text for AI-generated content from ChatGPT, Claude, Gemini, and more."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "AI Detector - Trusted AI Checker for ChatGPT, Copilot & Gemini - Scribbr",
+      "url": "https://www.scribbr.com/ai-detector/",
+      "snippet": "Scribbr AI Detector: Identify AI-generated content from ChatGPT, Copilot, and Gemini with our advanced AI Checker. Try it for free!"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "GPTZero detects AI content from Claude, ChatGPT, GPT-5, GPT-6, Gemini, and checks writing quality to make every word worth reading."
+    }
+  ]
+}

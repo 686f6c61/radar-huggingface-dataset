@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Uwasgesa/Sovereign-3",
+  "slug": "uwasgesa-sovereign-3",
+  "author": "Uwasgesa",
+  "url": "https://huggingface.co/Uwasgesa/Sovereign-3",
+  "created_at": "2026-10-09T00:24:45.000Z",
+  "updated_at": "2026-10-09T00:24:45.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models · Sovereign AI",
+      "url": "https://www.asksovereign.com/models",
+      "snippet": "Models Every model on the menu, and where it runs. A short menu, one key, flat plans. Pick a model by name; the infrastructure behind it is never named. Private runs on private infrastructure with nothing stored. Anonymised is an outside lab that never learns who asked. Encrypted is trusted hardware, end to end."
+    },
+    {
+      "title": "Sovereign AI Models — Every Country Building Its Own LLM (2026)",
+      "url": "https://www.aimadetools.com/blog/sovereign-ai-models-2026",
+      "snippet": "Countries worldwide are building their own AI models instead of depending on US/Chinese providers. A complete map of sovereign AI: UAE, EU, China, and beyond."
+    },
+    {
+      "title": "AI Models | SovereignEG",
+      "url": "https://sovereigneg.com/models",
+      "snippet": "Browse the AI models available through one OpenAI-compatible API — including models hosted in Egypt for data-residency requirements."
+    },
+    {
+      "title": "THREE MODELS OF SOVEREIGN AI - by Ivan Ferrari",
+      "url": "https://www.sovereigncompute.news/p/three-models-of-sovereign-ai",
+      "snippet": "Every major economy now treats AI infrastructure as a strategic asset on par with energy reserves or nuclear capability. But agreement on the destination has produced three radically different routes to get there. The United States, the Gulf states, and India are each constructing sovereign AI ecosystems built on fundamentally different theories of power — and each model contains a ..."
+    },
+    {
+      "title": "AI - Atos Sovereign Agentic Studios",
+      "url": "https://atos.net/en/services/ai-atos-sovereign-agentic-studios",
+      "snippet": "Empowering enterprises with agentic AI that blends autonomous action with strong governance, oversight and orchestration to deliver faster, more consistent, outcome‑based digital services."
+    }
+  ]
+}

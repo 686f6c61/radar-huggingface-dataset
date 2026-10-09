@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s2000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_m1_27d_60k_s2000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s2000",
+  "created_at": "2026-10-08T22:48:53.000Z",
+  "updated_at": "2026-10-08T22:49:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51700368,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206831616,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000 · Hugging Face",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000",
+      "snippet": "NAJY_act_all11_hot_27D_120k_s2000 Same as the s1000 model with seed 2000. Offline it is the better seed on manipulation stages."
+    },
+    {
+      "title": "kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000 at main",
+      "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_hot_27D_120k_s2000/tree/main",
+      "snippet": "Google Colab Kaggle main NAJY_act_all11_hot_27D_120k_s2000 207 MB Ctrl+K Ctrl+K 1 contributor History:4 commits kiroaiseoul Training manifest 61f91c8 verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 days ago README.md 3.05 kBModel card3 days ago config.json 1.85 kBACT checkpoint (pretrained_model, root layout)3 days ago model ..."
+    },
+    {
+      "title": "kiroaiseoul AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/kiroaiseoul",
+      "snippet": "Browse AI models attributed to kiroaiseoul, sourced from verified model catalogs."
+    },
+    {
+      "title": "kiroaiseoul登陆HuggingFace发布机器人专用数据集 赋能移动机器人遥操作与视觉运动学习研发",
+      "url": "https://www.5radar.com/dataopensource/news/468032/kiroaiseoul%E7%99%BB%E9%99%86huggingface%E5%8F%91%E5%B8%83%E6%9C%BA%E5%99%A8%E4%BA%BA%E4%B8%93%E7%94%A8%E6%95%B0%E6%8D%AE%E9%9B%86-%E8%B5%8B%E8%83%BD%E7%A7%BB%E5%8A%A8%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%81%A5%E6%93%8D%E4%BD%9C%E4%B8%8E%E8%A7%86%E8%A7%89%E8%BF%90%E5%8A%A8%E5%AD%A6%E4%B9%A0%E7%A0%94%E5%8F%91",
+      "snippet": "人工智能研发机构kiroaiseoul于2026年10月2日在全球开源AI社区HuggingFace首发eval_najy_1002_1357_m1_t04_e5数据集，该数据集覆盖移动机器人遥操作全维度动作、关节与视觉数据，可满足多视角视觉运动学习领域的算法训练、模型验证等核心研发需求。"
+    },
+    {
+      "title": "kiroaiseoul发布LeRobot标准机器人操控数据集 已上线HuggingFace开放获取",
+      "url": "https://www.5radar.com/dataopensource/news/468031/kiroaiseoul%E5%8F%91%E5%B8%83lerobot%E6%A0%87%E5%87%86%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%93%8D%E6%8E%A7%E6%95%B0%E6%8D%AE%E9%9B%86-%E5%B7%B2%E4%B8%8A%E7%BA%BFhuggingface%E5%BC%80%E6%94%BE%E8%8E%B7%E5%8F%96",
+      "snippet": "近日，人工智能机构kiroaiseoul正式在HuggingFace平台首发eval_najy_1002_1347_m1_t04_e30数据集，该数据集采用行业通用的LeRobot格式，可广泛应用于工业机器人、服务机器人、具身智能等领域的操控算法训练与评测，有效降低相关研发环节的数据获取成本。"
+    }
+  ]
+}

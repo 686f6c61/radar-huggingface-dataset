@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "WeiChow/Rethink-Model",
+  "slug": "weichow-rethink-model",
+  "author": "WeiChow",
+  "url": "https://huggingface.co/WeiChow/Rethink-Model",
+  "created_at": "2026-10-08T22:58:06.000Z",
+  "updated_at": "2026-10-08T22:58:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-09T02:01:24.754Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "la Repubblica - Ultime notizie di Cronaca, Politica, Economia, Sport ...",
+      "url": "https://www.repubblica.it/",
+      "snippet": "1 day ago · Repubblica è il quotidiano online aggiornato 24 ore su 24 su politica, cronaca, economia, sport, esteri, spettacoli, musica, …"
+    },
+    {
+      "title": "\"Cornuto sei tu!\". A Reggio Calabria volano gli stracci tra il sindaco ...",
+      "url": "https://www.repubblica.it/politica/2026/09/25/video/cornuto_sei_tu_a_reggio_calabria_volano_gli_stracci_tra_il_sindaco_cannizzaro_e_vannacci-425606925/",
+      "snippet": "Sep 25, 2026 · “Curnutu sì tu e cu nun t'u dice”. Cornuto sei tu e chi non te lo dice, urla in dialetto dal palco il sindaco di Reggio …"
+    },
+    {
+      "title": "Le incredibili immagini del nubifragio che ha ribaltato ... - la Repubblica",
+      "url": "https://bologna.repubblica.it/cronaca/2026/08/22/video/le_incredibili_immagini_del_nubifragio_che_ha_ribaltato_i_velivoli_allaeroporto_di_forli-425541906/",
+      "snippet": "Aug 22, 2026 · Il nubifragio che ha colpito Forlì il 21 agosto ha causato danni anche in aeroporto. Nel video registrato alle ore 14, …"
+    },
+    {
+      "title": "Dizionario di Italiano online - La Repubblica",
+      "url": "https://dizionari.repubblica.it/italiano.html",
+      "snippet": "Il Dizionario Hoepli di Italiano consultabile liberamente. 500.000 voci, accezioni e definizioni. Sinonimi, contrari, etimologie ..."
+    },
+    {
+      "title": "Economia e Finanza - Repubblica.it",
+      "url": "https://finanza.repubblica.it/",
+      "snippet": "Supplementi Repubblica Affari e Finanza D Il VenerdÃ¬ Robinson News e periodici HuffPost Italia Fem Formula Passion VD News …"
+    }
+  ]
+}

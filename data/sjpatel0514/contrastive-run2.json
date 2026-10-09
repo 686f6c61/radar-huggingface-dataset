@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Sjpatel0514/contrastive-run2",
+  "slug": "sjpatel0514-contrastive-run2",
+  "author": "Sjpatel0514",
+  "url": "https://huggingface.co/Sjpatel0514/contrastive-run2",
+  "created_at": "2026-10-09T00:07:40.000Z",
+  "updated_at": "2026-10-09T00:07:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IshaanIeki/contrastive-run2 · Hugging Face",
+      "url": "https://huggingface.co/IshaanIeki/contrastive-run2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Sjpatel0514 (林洋) - Hugging Face",
+      "url": "https://huggingface.co/Sjpatel0514",
+      "snippet": "User profile of 林洋 on Hugging Face"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Rankings: Live LLM Leaderboard | ModelCap",
+      "url": "https://modelcap.ai/",
+      "snippet": "Live LLM leaderboard: 340 AI models ranked on public benchmark evidence; Claude Opus 5.5 leads. API pricing, context windows and 78 providers compared."
+    },
+    {
+      "title": "GitHub - Contrastive-LM/CLM",
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "snippet": "A System One Model for Fast and Generalizable Decision-Making | 📄 Blog | 🗣️ Discord | 🤗 Data & Models | 📚 API Reference | 🛠️ Fine-Tuning Tutorial | 🔥 Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions. This repo serves CLM-8B behind a TypeSafe-compatible API. CLM-8B is pre ..."
+    }
+  ]
+}

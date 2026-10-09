@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "AshIndian/efficientNet",
+  "slug": "ashindian-efficientnet",
+  "author": "AshIndian",
+  "url": "https://huggingface.co/AshIndian/efficientNet",
+  "created_at": "2026-10-08T19:53:19.000Z",
+  "updated_at": "2026-10-08T20:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13779362,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PewDiePie launches AJAX AI model after an alleged ban by OpenAI",
+      "url": "https://interestingengineering.com/ai-robotics/pewdiepie-ajax-ai-model-local-pc-openai-ban",
+      "snippet": "PewDiePie has unveiled Ajax, a fine-tuned 9B AI model designed to run locally through his self-hosted Odysseus workspace."
+    },
+    {
+      "title": "EfficientNet: Improving Accuracy and Efficiency through AutoML and ...",
+      "url": "https://research.google/blog/efficientnet-improving-accuracy-and-efficiency-through-automl-and-model-scaling/",
+      "snippet": "EfficientNet Architecture The effectiveness of model scaling also relies heavily on the baseline network. So, to further improve performance, we have also developed a new baseline network by performing a neural architecture search using the AutoML MNAS framework, which optimizes both accuracy and efficiency (FLOPS). The resulting architecture uses mobile inverted bottleneck convolution (MBConv ..."
+    },
+    {
+      "title": "Indian Currency Classification AI - GitHub",
+      "url": "https://github.com/Selvaganesh2244/Indian-Currency_classification",
+      "snippet": "An AI-powered Indian currency recognition system using Deep Learning and Computer Vision to classify Indian currency notes from images and perform real-time prediction through a webcam. The project uses a pretrained EfficientNet-B0 model with Transfer Learning to recognize different Indian currency denominations such as ₹10, ₹20, ₹50, ₹100, ₹200, and ₹500."
+    },
+    {
+      "title": "Research and Development | The 2026 AI Index Report | Stanford HAI",
+      "url": "https://hai.stanford.edu/ai-index/2026-ai-index-report/research-and-development",
+      "snippet": "This chapter tracks developments across AI research and development, covering the models and open-source ecosystems driving progress, the infrastructure and environmental footprint supporting it, and the publications, patents and investors shaping the field."
+    },
+    {
+      "title": "Efficientnet Architecture - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/computer-vision/efficientnet-architecture/",
+      "snippet": "In the field of deep learning, the quest for more efficient neural network architectures has been ongoing. EfficientNet has emerged as a beacon of innovation, offering a holistic solution that balances model complexity with computational efficiency. This article embarks on a detailed journey through the intricate layers of EfficientNet, illuminating its architecture, design philosophy ..."
+    }
+  ]
+}

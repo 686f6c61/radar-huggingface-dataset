@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "rjaumania/adain-models",
+  "slug": "rjaumania-adain-models",
+  "author": "rjaumania",
+  "url": "https://huggingface.co/rjaumania/adain-models",
+  "created_at": "2026-10-08T20:08:14.000Z",
+  "updated_at": "2026-10-08T20:13:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94721568,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "No street names appear on the map when starting Driving …",
+      "url": "https://support.google.com/maps/thread/152837520/no-street-names-appear-on-the-map-when-starting-driving-mode-or-navigation?hl=en",
+      "snippet": "Mar 1, 2022 · For the past month or two, whenever I open driving mode or start navigation, all the street names would disappear from …"
+    },
+    {
+      "title": "My address doesn't exist on google maps. How can I get it added?",
+      "url": "https://support.google.com/maps/thread/8087331/my-address-doesn-t-exist-on-google-maps-how-can-i-get-it-added?hl=en",
+      "snippet": "Jun 15, 2019 · I just purchased a new home at 37 1/2 Witch Ln, Norwalk, CT. Unfortunately, my address does not come up on …"
+    },
+    {
+      "title": "Utiliser Street View dans Google Maps - Android - Aide Google …",
+      "url": "https://support.google.com/maps/answer/3093484?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Pour obtenir des photos Street View, vous pouvez rechercher un lieu, placer un repère, appuyer sur un repère de lieu ou utiliser le …"
+    },
+    {
+      "title": "Manage your business address - Google Business Profile Help",
+      "url": "https://support.google.com/business/answer/2853879?hl=en",
+      "snippet": "You can hire a professional photographer to capture an indoor Street View. You can then add your own Street View imagery to show …"
+    },
+    {
+      "title": "Use Street View in Google Maps",
+      "url": "https://support.google.com/maps/answer/3093484?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "You can explore world landmarks and natural wonders, and experience places like museums, arenas, restaurants, and small …"
+    }
+  ]
+}

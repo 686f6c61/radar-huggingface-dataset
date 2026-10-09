@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407",
+  "slug": "francesca9805-swa-latn-10mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swa-latn-10mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed3407",
+  "created_at": "2026-10-08T22:14:41.000Z",
+  "updated_at": "2026-10-08T22:59:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+    "base_model:finetune:francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 4849129423,
+  "storage_human": "4.8 GB",
+  "base_model": "francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - HD Porno Tube & XXX Sex Videos | YouPorn",
+      "url": "https://www.youporn.com/",
+      "snippet": "YouPorn has an unbeatable selection of free porn that you will be hard pressed to find on any other tube site. Our collection of …"
+    },
+    {
+      "title": "YouPorn.com - French Vidéos XXX & Films Porno Gratuits",
+      "url": "https://youporns.fr/",
+      "snippet": "Les Meilleures Vidéos You porn Des Vidéos De Sexe Amateur, Des Films Porno Gratuits, Avec Les Femmes Les Plus Chaudes Et …"
+    },
+    {
+      "title": "SexyPorn (YourPorn) & 177+ Free Porn Tube Sites Like Sxyprn.com",
+      "url": "https://theporndude.com/1514/yourporn",
+      "snippet": "It's exactly what they are into, in fact. These videos are found in a section of the home page, which is called the Porn Wall. The Porn …"
+    },
+    {
+      "title": "Porn Categories, XXX Free Porntube & Sex Videos :: YouPorn",
+      "url": "https://www.youporn.com/categories/",
+      "snippet": "For the most comprehensive collection of FREE porn categories online, visit YouPorn! Browse through our selection of free sex …"
+    },
+    {
+      "title": "youporn videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/youporn",
+      "snippet": "XVIDEOS youporn videos, free Free 13 1 Videos tagged « youporn » (13 results) Report"
+    }
+  ]
+}

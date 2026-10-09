@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-Fara1.5-9B-GGUF",
   "created_at": "2026-10-02T23:49:30.000Z",
-  "updated_at": "2026-10-05T19:51:14.000Z",
+  "updated_at": "2026-10-08T12:24:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 4133,
+  "downloads_30d": 4158,
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",

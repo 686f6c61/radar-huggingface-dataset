@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jackomalley5/multitask-tryout",
+  "slug": "jackomalley5-multitask-tryout",
+  "author": "jackomalley5",
+  "url": "https://huggingface.co/jackomalley5/multitask-tryout",
+  "created_at": "2026-10-09T00:21:18.000Z",
+  "updated_at": "2026-10-09T00:21:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patelank/multitask-tryout · Hugging Face",
+      "url": "https://huggingface.co/patelank/multitask-tryout",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vksokolov/multitask-tryout · Hugging Face",
+      "url": "https://huggingface.co/vksokolov/multitask-tryout",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Choose the right AI model for your workload",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/choose-ai-model",
+      "snippet": "Learn strategies to help you select the best model for your AI workload, including key criteria and practical considerations for decision-making."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "ML - Multi-Task Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/ml-multi-task-learning/",
+      "snippet": "Multi-task learning combines examples (soft limitations imposed on the parameters) from different tasks to improve generalization. When a section of a model is shared across tasks, it is more constrained to excellent values (if the sharing is acceptable), which often leads to better generalization. The diagram below shows a common type of multi-task learning in which several supervised tasks ..."
+    }
+  ]
+}

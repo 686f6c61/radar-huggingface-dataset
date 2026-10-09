@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX",
+  "slug": "dicksondickson-granite-4-2-3b-oq5e-bf16-mlx",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/granite-4.2-3b-oQ5e-bf16-MLX",
+  "created_at": "2026-10-08T23:40:27.000Z",
+  "updated_at": "2026-10-08T23:40:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "ibm",
+    "3b",
+    "omlx",
+    "oQe",
+    "apple",
+    "bf16",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:mit",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 2607869384,
+  "storage_human": "2.6 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to the Jungle — Work with the company you belong to",
+      "url": "https://www.welcometothejungle.com/en",
+      "snippet": "Welcome to the Jungle is the guide that walks you through your job-search: find out what it's like to work for today's top companies …"
+    },
+    {
+      "title": "Jobs | Welcome to the Jungle",
+      "url": "https://www.welcometothejungle.com/fr/jobs",
+      "snippet": "Liste des offres d'emploi, stage, apprentissage et alternance dans les entreprises qui recrutent sur Welcome to the Jungle."
+    },
+    {
+      "title": "Solution marque employeur | Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/marque-employeur",
+      "snippet": "Construisez une marque employeur qui attire les bons profils. Vitrine personnalisée, contenus clé en main, résultats mesurables. …"
+    },
+    {
+      "title": "Le logiciel de recrutement Welcome ATS | Welcome to the Jungle",
+      "url": "https://solutions.welcometothejungle.com/ats",
+      "snippet": "Centralisez vos recrutements avec Welcome ATS : offres, candidatures, échanges et IA dans un seul logiciel. Demandez votre démo."
+    },
+    {
+      "title": "Welcome to the Jungle (formerly Otta)",
+      "url": "https://app.welcometothejungle.com/companies/Welcome-to-the-Jungle-(formerly-Otta)",
+      "snippet": "Oct 8, 2024 · Apply for jobs at Welcome to the Jungle (formerly Otta) on Welcome to the Jungle (formerly Otta}. To help candidates …"
+    }
+  ]
+}

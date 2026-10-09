@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "froabera/speecht5_afan_oromo15",
+  "slug": "froabera-speecht5_afan_oromo15",
+  "author": "froabera",
+  "url": "https://huggingface.co/froabera/speecht5_afan_oromo15",
+  "created_at": "2026-10-08T19:24:27.000Z",
+  "updated_at": "2026-10-08T19:24:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144433890,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578027793,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "froabera/speecht5_afan_oromo1 · Hugging Face",
+      "url": "https://huggingface.co/froabera/speecht5_afan_oromo1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "froabera (Fro Abera) - Hugging Face",
+      "url": "https://huggingface.co/froabera",
+      "snippet": "updated a model 4 months ago froabera/tts_processed updated a model 5 months ago froabera/speecht5_afan_oromo1 View all activity"
+    },
+    {
+      "title": "Open source Amharic and Afan Oromo models and datasets · Addis AI",
+      "url": "https://addisassistant.com/open-source",
+      "snippet": "Open LLMs, the Shook speech-recognition family, and some of the largest open Amharic and Afan Oromo datasets on Hugging Face. Built and released by Addis AI."
+    },
+    {
+      "title": "Afaan Oromo Text to Speech Synthesis dataset - Mendeley Data",
+      "url": "https://data.mendeley.com/datasets/mpy85ns82z/2",
+      "snippet": "Afaan Oromo Text to Speech Synthesis dataset is a public domain speech dataset consisting of 8,076 short audio clips of a single male speaker reading sentences collected from legitimate sources such as News Media sources, Non-fiction books, and Afaan Oromo Holy bible. A transcription and its normalized text are provided for each clip. After two weeks of the audio recording process, a total of ..."
+    },
+    {
+      "title": "Oromo Text to Speech | Sagalee AI Afaan Oromoo | AmiSus",
+      "url": "https://amisus.io/text-to-speech-oromo/",
+      "snippet": "Oromo Text to Speech with AI Generate natural Oromo voices with cutting-edge AI. Voice design and lightning-fast inference — all in one platform."
+    }
+  ]
+}

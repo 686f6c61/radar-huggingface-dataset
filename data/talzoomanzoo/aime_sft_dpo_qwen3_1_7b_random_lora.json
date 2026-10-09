@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "talzoomanzoo/aime_sft_dpo_qwen3_1_7b_random_lora",
+  "slug": "talzoomanzoo-aime_sft_dpo_qwen3_1_7b_random_lora",
+  "author": "talzoomanzoo",
+  "url": "https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_random_lora",
+  "created_at": "2026-10-08T20:06:43.000Z",
+  "updated_at": "2026-10-08T20:07:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "qwen3",
+    "text-generation",
+    "lora",
+    "transformers",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290480609,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Graphic violence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Graphic_violence",
+      "snippet": "Graphic violence is a depiction of explicit or detailed acts of violence in mass media. [1] It may be real, simulated live action, or …"
+    },
+    {
+      "title": "Gore videos | Pure Gore real footage | Deep Gore Tube",
+      "url": "https://deepgoretube.site/categories/pure-gore/",
+      "snippet": "5 days ago · Browse Pure Gore footage with restrained factual context on severe real-world incidents, causes and outcomes when …"
+    },
+    {
+      "title": "The Ultimate Guide to Gore and Splatter Horror Movies - Collider",
+      "url": "https://collider.com/splatter-horror-movies-explained/",
+      "snippet": "Mar 12, 2024 · From beginner films like Final Destination to the more hardcore like Martyrs, here is your full guide to splatter and …"
+    },
+    {
+      "title": "Browse categories - LiveGore.com",
+      "url": "https://www.livegore.com/categories",
+      "snippet": "WARNING: UNCENSORED NEWS! LiveGore is a reality news website which reports on real life events which are of the interest to …"
+    },
+    {
+      "title": "gore videos - USA CRIME",
+      "url": "https://usacrime.com/tag/gore-videos/",
+      "snippet": "Best gore videos, uncensored crime news, shock site. Watch real death videos, live murders and gory snuff films on USA CRIME."
+    }
+  ]
+}

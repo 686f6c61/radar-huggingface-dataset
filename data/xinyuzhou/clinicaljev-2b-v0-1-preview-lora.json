@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "xinyuzhou/ClinicalJev-2B-v0.1-preview-LoRA",
+  "slug": "xinyuzhou-clinicaljev-2b-v0-1-preview-lora",
+  "author": "xinyuzhou",
+  "url": "https://huggingface.co/xinyuzhou/ClinicalJev-2B-v0.1-preview-LoRA",
+  "created_at": "2026-10-08T19:59:20.000Z",
+  "updated_at": "2026-10-08T20:00:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "clinical-nlp",
+    "preview",
+    "lora",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269158056,
+  "storage_human": "269 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xzhou-code/ClinicalJev: An open-source clinical Jev and ...",
+      "url": "https://github.com/xzhou-code/ClinicalJev",
+      "snippet": "ClinicalJev: an all-purpose clinical Jev, with model weights, inference code, and documentation. ClinicalJev Benchmark: a comprehensive benchmark, with task specifications, evaluation code, and reproducible results."
+    },
+    {
+      "title": "LoRA AI Models (17,965) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,965 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=nsfw+lora",
+      "snippet": "Explore machine learning models. Muapi/fanvue-onlyfans-ai-model-woman033-nsfw-photorealistic-character-lora-sdxl-sd1.5"
+    },
+    {
+      "title": "xinyuzhou/PH-LLM-1.5B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/xinyuzhou/PH-LLM-1.5B-LoRA",
+      "snippet": "PH-LLM-1.5B-LoRA like 0 Safetensors Model card Files Files and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    }
+  ]
+}

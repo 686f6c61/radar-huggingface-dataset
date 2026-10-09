@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nobodyatalliguess/minimax-h3-loras",
+  "slug": "nobodyatalliguess-minimax-h3-loras",
+  "author": "nobodyatalliguess",
+  "url": "https://huggingface.co/nobodyatalliguess/minimax-h3-loras",
+  "created_at": "2026-10-08T23:13:14.000Z",
+  "updated_at": "2026-10-09T00:03:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "not-for-all-audiences",
+    "lora",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 680045864,
+  "storage_human": "680 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Awesome MiniMax H3 - GitHub",
+      "url": "https://github.com/AtlasCloudAI/awesome-minimax-h3",
+      "snippet": "Awesome MiniMax H3 Everything built on top of MiniMax H3 — the open-weight omni-modal video model that generates picture and native audio together. Weights, quantizations, LoRAs, ComfyUI nodes, workflows and the tricks people found. Every entry checked against a live API and dated. 简体中文 Scope: H3 only."
+    },
+    {
+      "title": "nobodyatalliguess/fingering-h3-lora · Hugging Face",
+      "url": "https://huggingface.co/nobodyatalliguess/fingering-h3-lora",
+      "snippet": "nobodyatalliguess / fingering-h3-lora Like 0 MiniMax H3 lora Not-For-All-Audiences License:civitai-creator-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new"
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Comfy-Org/MiniMax-H3 at main - Hugging Face",
+      "url": "https://huggingface.co/Comfy-Org/MiniMax-H3/tree/main/loras",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    }
+  ]
+}

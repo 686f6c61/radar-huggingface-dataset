@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-qwen3-8-flash-coder-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-10-05T20:18:52.000Z",
+  "updated_at": "2026-10-08T22:55:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "apex-i-miniplus",
+    "v2.1",
+    "qwen",
+    "qwen4",
+    "qwen4-exp",
+    "moe",
+    "reasoning",
+    "agentic-coding",
+    "coding",
+    "swe-bench",
+    "imatrix",
+    "en",
+    "base_model:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "base_model:quantized:Jab1718/qwen3.8-flash-coder-85gb-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 1000,
+  "trending_score": 0,
+  "parameters": 42620341120,
+  "parameters_human": "42.62B",
+  "storage_bytes": 65300280480,
+  "storage_human": "65.3 GB",
+  "base_model": "Jab1718/qwen3.8-flash-coder-85gb-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF · Hugging Face",
+      "url": "https://huggingface.co/IsValorum/Qwen3.8-Flash-Coder-85GB-BF16-GGUF",
+      "snippet": "This model suite is quantized from Jab1718/qwen3.8-flash-coder-85gb-bf16, which is an intermediate experimental slice created using moe-slice (352 out of 512 routed experts were permanently pruned exclusively against English Python and SWE-bench calibration datasets)."
+    },
+    {
+      "title": "Qwen3.8-35B-A3B-Distill APEX-I-MiniPlus-V2.1 GGUF - Hugging Face",
+      "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
+      "snippet": "IsValorum / Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF Like 0 Text Generation GGUF 13 languages quantization quantized apex apex-quant custom-quantization unsloth-studio Mixture of Experts reasoning chain-of-thought distillation qwen3.8 qwen35moe llama.cpp imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next Apex - GGUF Model (6 parts)",
+      "url": "https://local-ai-zone.github.io/models/qwen3-8-flash-next-apex.html",
+      "snippet": "Download Qwen3.8 Flash Next Apex GGUF model. 24.8 GB, 5,993 downloads, 41 likes. Split into 6 parts."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass. It shines in coding assistance, agentic workflows, and visual understanding — whether it&#x27;s fixing code ..."
+    }
+  ]
+}

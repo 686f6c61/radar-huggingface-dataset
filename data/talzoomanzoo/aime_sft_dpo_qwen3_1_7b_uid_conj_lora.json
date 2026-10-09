@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_conj_lora",
+  "slug": "talzoomanzoo-aime_sft_dpo_qwen3_1_7b_uid_conj_lora",
+  "author": "talzoomanzoo",
+  "url": "https://huggingface.co/talzoomanzoo/aime_sft_dpo_qwen3_1_7b_uid_conj_lora",
+  "created_at": "2026-10-08T20:07:33.000Z",
+  "updated_at": "2026-10-08T20:07:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "qwen3",
+    "text-generation",
+    "lora",
+    "transformers",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290480609,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in On your computer, go to gmail.com. Enter your Google Account email address or phone number and password. If information …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    },
+    {
+      "title": "Bantuan Gmail",
+      "url": "https://support.google.com/mail/?hl=id",
+      "snippet": "Pusat Bantuan Gmail resmi tempat Anda dapat menemukan kiat dan tutorial tentang cara menggunakan produk dan jawaban lain …"
+    },
+    {
+      "title": "Google-Konto oder Gmail wiederherstellen - Google-Konto-Hilfe",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=de",
+      "snippet": "Google-Konto oder Gmail wiederherstellen Benötigen Sie Hilfe bei der Anmeldung in Ihrem Google-Konto? Erhalten Sie hier Hilfe für …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4",
+  "slug": "wavecut-kandinsky-6-0-lite-distill-5s-orbitquant-w4a4",
+  "author": "WaveCut",
+  "url": "https://huggingface.co/WaveCut/Kandinsky-6.0-Lite-distill-5s-OrbitQuant-W4A4",
+  "created_at": "2026-10-08T19:39:26.000Z",
+  "updated_at": "2026-10-08T23:26:33.000Z",
+  "license": "mit-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "orbitquant",
+    "kandinsky",
+    "w4a4",
+    "w4a6",
+    "text-to-video",
+    "audio-video-generation",
+    "quantized",
+    "base_model:kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers",
+    "base_model:quantized:kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1872514320,
+  "parameters_human": "1.87B",
+  "storage_bytes": 9336813924,
+  "storage_human": "9.3 GB",
+  "base_model": "kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kandinskylab/kandinsky-6: Kandinsky 6.0 Video: Foundation ...",
+      "url": "https://github.com/kandinskylab/kandinsky-6",
+      "snippet": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, including lip-sync, in text-to-audio-video (T2AV) and image-to-audio-video (TI2AV) modes. A plug-in ..."
+    },
+    {
+      "title": "[2610.05608] Kandinsky 6.0 Video: Foundation Models for Synchronized ...",
+      "url": "https://arxiv.org/abs/2610.05608",
+      "snippet": "We present Kandinsky 6.0 Video, a family of foundation diffusion models for synchronized text-to-audio-video generation, comprising Kandinsky 6.0 Video Lite (3B parameters) and Kandinsky 6.0 Video Pro (29B parameters). Both models generate 5-second video clips with synchronized 44 kHz audio, including lip-sync, in text-to-audio-video (T2AV) and image-to-audio-video (I2AV) modes; a built-in ..."
+    },
+    {
+      "title": "Kandinsky 6.0 AI Video Generator With Sound | Free Video",
+      "url": "https://kandinsky6.pro/",
+      "snippet": "Create Kandinsky 6.0 videos with synchronized audio online. Run Kandinsky 6.0 Lite or Pro from text or an image, in 480p or 1080p, with one free video after sign-in."
+    },
+    {
+      "title": "WaveCut (Valeriy Selitskiy) - Hugging Face",
+      "url": "https://huggingface.co/WaveCut",
+      "snippet": "WaveCut 811641476 Follow AI-Peng&#x27;s profile pictureSoulDeleted&#x27;s profile picturehmb&#x27;s profile picture 74 followers · 142 following WaveCut iamwavecut WaveCut"
+    },
+    {
+      "title": "kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers at main",
+      "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Lite-distill-5s-Diffusers/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

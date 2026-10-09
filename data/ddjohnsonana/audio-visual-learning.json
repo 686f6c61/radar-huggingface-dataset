@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ddjohnsonana/audio-visual-learning",
+  "slug": "ddjohnsonana-audio-visual-learning",
+  "author": "Ddjohnsonana",
+  "url": "https://huggingface.co/Ddjohnsonana/audio-visual-learning",
+  "created_at": "2026-10-08T19:30:56.000Z",
+  "updated_at": "2026-10-08T19:31:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1]"
+    },
+    {
+      "title": "joshuagreen/audio-visual-learning · Hugging Face",
+      "url": "https://huggingface.co/joshuagreen/audio-visual-learning",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI learns how vision and sound are connected, without human ...",
+      "url": "https://news.mit.edu/2025/ai-learns-how-vision-and-sound-are-connected-without-human-intervention-0522",
+      "snippet": "AI learns how vision and sound are connected, without human intervention This new machine-learning model can match corresponding audio and visual data, which could someday help robots interact in the real world."
+    },
+    {
+      "title": "vivianhvh/audio-visual-learning · Hugging Face",
+      "url": "https://huggingface.co/vivianhvh/audio-visual-learning",
+      "snippet": "A structured set of research notes on Audio Visual Learning, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results. Start with reading.md for the full note. Sections labeled as plans or hypotheses should not be interpreted as ..."
+    },
+    {
+      "title": "Audio-Visual Intelligence in Large Foundation Models",
+      "url": "https://www.microsoft.com/en-us/research/publication/audio-visual-intelligence-in-large-foundation-models/",
+      "snippet": "Audio-Visual Intelligence (AVI) has emerged as a central frontier in artificial intelligence, bridging auditory and visual modalities to enable machines that can perceive, generate, and interact in the multimodal real world. In the era of large foundation models, joint modeling of audio and vision has become increasingly crucial, i.e., not only for understanding but also […]"
+    }
+  ]
+}

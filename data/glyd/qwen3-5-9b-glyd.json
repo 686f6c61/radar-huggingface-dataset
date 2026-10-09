@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "glyd/Qwen3.5-9B-glyd",
+  "slug": "glyd-qwen3-5-9b-glyd",
+  "author": "glyd",
+  "url": "https://huggingface.co/glyd/Qwen3.5-9B-glyd",
+  "created_at": "2026-10-08T20:23:10.000Z",
+  "updated_at": "2026-10-09T00:18:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "glyd",
+  "languages": [],
+  "tags": [
+    "glyd",
+    "safetensors",
+    "qwen3_5",
+    "lossless",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11670880634,
+  "parameters_human": "11.67B",
+  "storage_bytes": 12731469883,
+  "storage_human": "12.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Glyd/benchmarks/gpu/rtx4090-5090-qwen35-9b-v029-2026-10-06 at main ...",
+      "url": "https://github.com/surya-koritala/Glyd/tree/main/benchmarks/gpu/rtx4090-5090-qwen35-9b-v029-2026-10-06",
+      "snippet": "Qwen3.5-9B on an RTX 4090 and an RTX 5090: bf16 against Glyd 0.29 under vLLM 0.30.0 (2026-10-06) Qwen/Qwen3.5-9B (bf16) served by vLLM 0.30.0 on one GPU, one pod per GPU (Runpod), the same job on both: vLLM&#x27;s own bf16 (vllm serve Qwen/Qwen3.5-9B --max-model-len 4096, twice), and Glyd 0.29 (the wheels CI built for v0.29.0, before the release) as glyd run Qwen/Qwen3.5-9B, glyd serve Qwen/Qwen3.5 ..."
+    },
+    {
+      "title": "Glyd/benchmarks/gpu/rtx4090-5090-qwen35-9b-v029-2026-10-06 ... - GitHub",
+      "url": "https://github.com/surya-koritala/Glyd/blob/main/benchmarks/gpu/rtx4090-5090-qwen35-9b-v029-2026-10-06/README.md",
+      "snippet": "Qwen3.5-9B on an RTX 4090 and an RTX 5090: bf16 against Glyd 0.29 under vLLM 0.30.0 (2026-10-06) Qwen/Qwen3.5-9B (bf16) served by vLLM 0.30.0 on one GPU, one pod per GPU (Runpod), the same job on both: vLLM&#x27;s own bf16 (vllm serve Qwen/Qwen3.5-9B --max-model-len 4096, twice), and Glyd 0.29 (the wheels CI built for v0.29.0, before the release) as glyd run Qwen/Qwen3.5-9B, glyd serve Qwen/Qwen3.5 ..."
+    },
+    {
+      "title": "Qwen 3.5 9B - melious.ai",
+      "url": "https://melious.ai/hub/models/qwen3.5-9b",
+      "snippet": "Qwen 3.5 9B is a 9B‑parameter multimodal large language model with a gated‑delta mixture‑of‑experts architecture and a vision encoder. It supports a native"
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    },
+    {
+      "title": "Qwen3.5 9B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a 9-billion-parameter open-weights multimodal model from Alibaba&#x27;s Qwen family, supporting both text and image inputs. The model features a unified vision-language architecture with early fusion of multimodal tokens, enabling reasoning across text and images in a single context. It is available under the Apache 2.0 license and released on March 10, 2026."
+    }
+  ]
+}

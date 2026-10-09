@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Reef-app/siglip2-base-patch16-256-coreml",
+  "slug": "reef-app-siglip2-base-patch16-256-coreml",
+  "author": "Reef-app",
+  "url": "https://huggingface.co/Reef-app/siglip2-base-patch16-256-coreml",
+  "created_at": "2026-10-08T20:06:11.000Z",
+  "updated_at": "2026-10-08T20:17:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "base_model:google/siglip2-base-patch16-256",
+    "base_model:quantized:google/siglip2-base-patch16-256",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 783944883,
+  "storage_human": "784 MB",
+  "base_model": "google/siglip2-base-patch16-256",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reef Perfumes",
+      "url": "https://www.reefperfumes.fr/",
+      "snippet": "Embarquez pour l'Orient avec REEF, là où tradition et modernité se mêlent pour créer des parfums envoûtants. Nos créations, …"
+    },
+    {
+      "title": "Le Reef Intégral - Boutique CSTB",
+      "url": "https://boutique.cstb.fr/detail/services-en-ligne/gamme-reef/le-reef-integral",
+      "snippet": "Le Reef Intégral donne accès au référentiel relatif à la mise en œuvre des ouvrages, à la sécurité, l’hygiène, la santé, l’accessibilité …"
+    },
+    {
+      "title": "Reef | Le concurrent créé par Free pour écraser Free",
+      "url": "https://www.reef-telecom.fr/",
+      "snippet": "Reef : la marque REEF est une marque fictive créée par FREE dans le cadre de sa nouvelle campagne publicitaire destinée à …"
+    },
+    {
+      "title": "Reef.eu, la boutique en ligne officielle Reef – Reef Europe",
+      "url": "https://www.reef.eu/fr",
+      "snippet": "La marque Reef allie confort et look décontracté qui s'accorde avec toutes les tenues estivales. Ce qui est sympa avec les tongs …"
+    },
+    {
+      "title": "REEF® Sandals, Shoes, Boots & Apparel | Free Shipping over $65",
+      "url": "https://www.reef.com/",
+      "snippet": "Shop surf-inspired men's and women's REEF sandals, shoes & clothing for beach and active lifestyle. Free Shipping over $65. …"
+    }
+  ]
+}

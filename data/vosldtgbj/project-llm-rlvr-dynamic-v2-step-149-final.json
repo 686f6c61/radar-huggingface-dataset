@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "vosldtgbj/project-llm-rlvr-dynamic-v2-step-149-final",
+  "slug": "vosldtgbj-project-llm-rlvr-dynamic-v2-step-149-final",
+  "author": "vosldtgbj",
+  "url": "https://huggingface.co/vosldtgbj/project-llm-rlvr-dynamic-v2-step-149-final",
+  "created_at": "2026-10-08T23:50:10.000Z",
+  "updated_at": "2026-10-09T00:25:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "gemma4",
+    "japanese",
+    "reinforcement-learning",
+    "grpo",
+    "rlvr",
+    "full-weights",
+    "searchforge",
+    "dynamic-sampling",
+    "any-to-any",
+    "ja",
+    "en",
+    "base_model:vosldtgbj/project-llm-rlvr-dynamic-v2-step-125",
+    "base_model:finetune:vosldtgbj/project-llm-rlvr-dynamic-v2-step-125",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951722469,
+  "storage_human": "24.0 GB",
+  "base_model": "vosldtgbj/project-llm-rlvr-dynamic-v2-step-125",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vosldtgbj/project-llm-rlvr-v1-step-25 · Hugging Face",
+      "url": "https://huggingface.co/vosldtgbj/project-llm-rlvr-v1-step-25",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Linear Dynamics in the RLVR Training of Large Language Models",
+      "url": "https://arxiv.org/html/2601.04537",
+      "snippet": "Abstract Reinforcement learning with verifiable rewards (RLVR) has driven significant performance gains in reasoning-oriented large language models (LLMs), yet its internal training dynamics remain largely a black box. In this work, we perform a comprehensive trajectory-level analysis of RLVR and uncover a striking regularity: across various model families, RL algorithms, and training ..."
+    },
+    {
+      "title": "RLVR - LLM Study Notes",
+      "url": "https://s-samarth.github.io/DataSciencePreparation/LLM/alignment/rlvr/",
+      "snippet": "Interview-ready deep dives across the modern LLM stack — architecture, training, alignment, PEFT, inference, serving, and the 2026 model landscape."
+    },
+    {
+      "title": "vLLM",
+      "url": "https://docs.vllm.ai/en/latest/",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects built and maintained by a diverse community of many dozens of academic institutions and companies from over 2000 contributors."
+    },
+    {
+      "title": "vLLM — Fast, Memory-Efficient LLM Inference & Serving",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models faster with state-of-the-art performance. Easy, fast, and cost-efficient LLM serving for everyone."
+    }
+  ]
+}

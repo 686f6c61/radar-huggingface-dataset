@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "thomaswrightmi/efficient-attention-analysis",
+  "slug": "thomaswrightmi-efficient-attention-analysis",
+  "author": "thomaswrightmi",
+  "url": "https://huggingface.co/thomaswrightmi/efficient-attention-analysis",
+  "created_at": "2026-10-08T19:56:54.000Z",
+  "updated_at": "2026-10-08T19:57:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Attention Mechanism in ML - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/ml-attention-mechanism/",
+      "snippet": "This combination enables the model to generate contextually accurate translations hence focusing on the most relevant parts of the source sequence for each predicted word. Improvement Using Attention Mechanism Traditional deep learning models like RNNs, LSTMs and CNNs have limitations when handling long or complex dependencies."
+    },
+    {
+      "title": "Attention (machine learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Attention_(machine_learning)",
+      "snippet": "Attention mechanism, overview In machine learning, attention is a method that determines the importance of each component in a sequence relative to the other components in that sequence. In natural language processing, importance is represented by \"soft\" weights assigned to each word in a sentence. More generally, attention encodes vectors called token embeddings across a fixed-width sequence ..."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "Knowledge distillation is a method for training a smaller model, called a \"student\", to reproduce the output behavior of a larger \"teacher\" model. In transformer models, the student can be trained using the teacher&#x27;s output probability distribution, intermediate representations, or attention patterns in addition to the original training labels."
+    },
+    {
+      "title": "Stronger AI Safety Requires Peeking Inside the &#x27;Black Box&#x27;",
+      "url": "https://www.darkreading.com/cybersecurity-analytics/stronger-ai-safety-requires-peeking-inside-black-box",
+      "snippet": "Adding security to AI often treats the large language model (LLM) or AI system as a black box, focusing on analyzing the tokenized inputs and outputs but not what goes on inside the model. The ..."
+    },
+    {
+      "title": "Attention Is All You Need Explained - The Paper That Changed AI",
+      "url": "https://parseur.com/blog/attention-is-all-you-need",
+      "snippet": "What is the Transformer architecture? The Transformer is an AI architecture introduced in the 2017 paper \"Attention Is All You Need.\" It processes all input simultaneously using attention mechanisms, rather than word by word like older models, enabling faster training and far better understanding of context and long-range relationships."
+    }
+  ]
+}

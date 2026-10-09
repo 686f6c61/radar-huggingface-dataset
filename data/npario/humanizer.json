@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "npario/humanizer",
+  "slug": "npario-humanizer",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/humanizer",
+  "created_at": "2026-10-08T23:38:07.000Z",
+  "updated_at": "2026-10-08T23:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "humanizer",
+    "transformers",
+    "text-rewriting",
+    "rewriting",
+    "paraphrase",
+    "style-transfer",
+    "llama.cpp",
+    "gemma4",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 87599736109,
+  "storage_human": "87.6 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RiMuYu - 【無料エロ同人誌】",
+      "url": "https://books-doujin.com/category/rimuyu",
+      "snippet": "RiMuYu えっちアニメーション集19作品おまとめセット！ 【RiMuYu】 RiMuYuキスふたなりラブラブ・あまあまレズビアン動画・ …"
+    },
+    {
+      "title": "Fantasy Futanari Girl Late-Night Masturbation - DeviantArt",
+      "url": "https://www.deviantart.com/ririmumuyuyu/art/Fantasy-Futanari-Girl-Late-Night-Masturbation-1217673867",
+      "snippet": "Jul 12, 2025 · 0 Comments 6.1K Views anime animegirl digitalart originalcharacter characteroriginal futa futanari nsfw original penis …"
+    },
+    {
+      "title": "ふたなりエッチを堪能するマリラミ RiMuYu [AI Generated] - E …",
+      "url": "https://e-hentai.org/g/3444448/6b39a8799f/",
+      "snippet": "Jul 17, 2025 · Free Hentai Misc Gallery: ふたなりエッチを堪能するマリラミ 🟡RiMuYu🟡 [AI Generated] - Tags: hololive, houshou …"
+    },
+    {
+      "title": "ふたなりμ'sのスクールセックス活動 RiMuYu ... - nHentai",
+      "url": "https://nhentai.com/en/comic/ms-rimuyu-ai-generated",
+      "snippet": "Jul 16, 2025 - Read and download ふたなりμ'sのスクールセックス活動 🟡RiMuYu🟡 [AI Generated], a hentai Doujinshi by multiple artists …"
+    },
+    {
+      "title": "【RiMuYu】ふたなりイラスト集8作品おまとめセット！の無料試し読 …",
+      "url": "https://osusume.dmm.co.jp/detail/doujin/6793026972709990850/",
+      "snippet": "FANZAみんおすで同人作品・同人誌を無料試し読み！（ふたなりイラスト集8作品おまとめセット！のあらすじ・内容）ふたなり化 …"
+    }
+  ]
+}

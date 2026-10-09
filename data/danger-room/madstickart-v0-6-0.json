@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "danger-room/MadStickArt-v0.6.0",
+  "slug": "danger-room-madstickart-v0-6-0",
+  "author": "danger-room",
+  "url": "https://huggingface.co/danger-room/MadStickArt-v0.6.0",
+  "created_at": "2026-10-08T19:55:14.000Z",
+  "updated_at": "2026-10-08T19:55:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "madstick-raster",
+    "madstickart",
+    "storyboard",
+    "stick-figures",
+    "layout-conditioned",
+    "synthetic-data",
+    "image-to-image",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61296,
+  "parameters_human": "61296",
+  "storage_bytes": 26782890,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Layout-conditioned storyboard rasterization",
+      "dataset": "MadStickArt synthetic 1-genre title-held-out test split",
+      "metric": "Foreground IoU (ink threshold 0.35)",
+      "value": 0.66806085
+    },
+    {
+      "task": "Layout-conditioned storyboard rasterization",
+      "dataset": "MadStickArt synthetic 1-genre title-held-out test split",
+      "metric": "Pixel mean absolute error",
+      "value": 0.01252305
+    }
+  ],
+  "sources": [
+    {
+      "title": "Définitions : danger - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/danger/21607",
+      "snippet": "Mise en danger d'autrui, exposition d'une personne à un risque de mort, de mutilation ou d'infirmité permanente par la violation …"
+    },
+    {
+      "title": "Danger — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Danger",
+      "snippet": "Un danger est une cause possible de dommage (à une personne, un peuple, un bien, à l'environnement, etc.). La probabilité de …"
+    },
+    {
+      "title": "DANGER : Définition, Signification et Synonymes | Le Dictionnaire",
+      "url": "https://www.le-dictionnaire.com/definition/danger",
+      "snippet": "Cette page rassemble une définition claire du mot danger, ses principaux sens en français moderne et, lorsque c’est pertinent, des …"
+    },
+    {
+      "title": "danger - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/danger",
+      "snippet": "Définition, exemples et prononciation de danger : Ce qui menace la sûreté, l'existence de qqn ou de …"
+    },
+    {
+      "title": "danger | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9D0080",
+      "snippet": "Définition de DANGER : Ce qui constitue une menace pour la santé, la sécurité, les intérêts, l’existence de quelqu’un."
+    }
+  ]
+}

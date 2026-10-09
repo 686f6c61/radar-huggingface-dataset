@@ -5,7 +5,7 @@
   "author": "Butanium",
   "url": "https://huggingface.co/Butanium/wp-nemotron3-ultra-health_with_crossed_cigarette_onpolicy_tinker_native",
   "created_at": "2026-10-02T21:51:19.000Z",
-  "updated_at": "2026-10-07T19:05:14.000Z",
+  "updated_at": "2026-10-08T22:00:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 33136987680,
-  "storage_human": "33.1 GB",
+  "storage_bytes": 33152361247,
+  "storage_human": "33.2 GB",
   "base_model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
   "formats": [
     "safetensors"

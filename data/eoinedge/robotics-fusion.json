@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eoinedge/robotics-fusion",
+  "slug": "eoinedge-robotics-fusion",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/robotics-fusion",
+  "created_at": "2026-10-09T00:21:55.000Z",
+  "updated_at": "2026-10-09T00:21:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "sensor-fusion",
+    "robotics",
+    "root-cause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nvidia Broadens Physical AI Push With Robotics, Edge AI Updates",
+      "url": "https://aibusiness.com/robotics/nvidia-physical-ai-push-robotics-edge-ai-updates",
+      "snippet": "Nvidia is broadly expanding its physical AI and robotics portfolio, unveiling new edge AI hardware, robot foundation models, developer software and industrial partnerships aimed at accelerating deployment of intelligent machines. Unveiled during an event in Tokyo, the updates span Nvidia&#x27;s entire robotics stack, from AI models and simulation software to edge computing hardware and ..."
+    },
+    {
+      "title": "Fusion studio: Edge AI Development Platform | ModelNova",
+      "url": "https://modelnova.com/products/fusion-studio/",
+      "snippet": "Fusion Studio brings model training, optimization, benchmarking, and deployment into one embedded AI workflow eliminating fragmented toolchains and reducing the time between proof of concept and production deployment."
+    },
+    {
+      "title": "Getting Started with Edge AI on NVIDIA Jetson: LLMs, VLMs, and ...",
+      "url": "https://www.edge-ai-vision.com/2026/01/getting-started-with-edge-ai-on-nvidia-jetson-llms-vlms-and-foundation-models-for-robotics/",
+      "snippet": "Which Jetson is Right for You? Use Jetson Orin Nano Super (8GB) if you&#x27;re just getting started with local AI, running small LLMs or VLMs, or building early-stage robotics and edge prototypes. It&#x27;s especially well-suited for hobbyist robotics and embedded projects where cost, simplicity, and compact size matter more than maximum model capacity."
+    },
+    {
+      "title": "Diffusion models for robotic manipulation: a survey - Frontiers",
+      "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2025.1606247/full",
+      "snippet": "Abstract Diffusion generative models have demonstrated remarkable success in visual domains such as image and video generation. They have also recently emerged as a promising approach in robotics, especially in robot manipulations. Diffusion models leverage a probabilistic framework, and they stand out with their ability to model multi-modal distributions and their robustness to high ..."
+    },
+    {
+      "title": "Robotics AI Suite | open-edge-platform/edge-ai-suites - DeepWiki",
+      "url": "https://deepwiki.com/open-edge-platform/edge-ai-suites/7-robotics-ai-suite",
+      "snippet": "The Robotics AI Suite is a collection of robotics applications, libraries, samples, and benchmarking tools designed to accelerate the development of autonomous systems. It provides OpenVINO™-optimized"
+    }
+  ]
+}

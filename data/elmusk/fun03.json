@@ -4,8 +4,8 @@
   "slug": "elmusk-fun03",
   "author": "ElMusk",
   "url": "https://huggingface.co/ElMusk/fun03",
-  "created_at": "2026-10-06T00:58:31.000Z",
-  "updated_at": "2026-10-06T01:09:53.000Z",
+  "created_at": "2026-10-09T00:23:51.000Z",
+  "updated_at": "2026-10-09T00:28:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-07T02:58:43.758Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

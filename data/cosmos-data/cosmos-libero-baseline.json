@@ -4,8 +4,8 @@
   "slug": "cosmos-data-cosmos-libero-baseline",
   "author": "Cosmos-Data",
   "url": "https://huggingface.co/Cosmos-Data/cosmos-libero-baseline",
-  "created_at": "2026-10-06T01:51:22.000Z",
-  "updated_at": "2026-10-06T02:51:01.000Z",
+  "created_at": "2026-10-08T03:37:56.000Z",
+  "updated_at": "2026-10-08T03:40:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,20 +18,20 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 25,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 15173136576,
   "parameters_human": "15.17B",
-  "storage_bytes": 121396946629,
-  "storage_human": "121.4 GB",
+  "storage_bytes": 30346389472,
+  "storage_human": "30.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-08T02:23:32.353Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

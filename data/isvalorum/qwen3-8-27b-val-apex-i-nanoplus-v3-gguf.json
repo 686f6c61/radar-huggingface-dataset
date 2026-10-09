@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF",
+  "slug": "isvalorum-qwen3-8-27b-val-apex-i-nanoplus-v3-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF",
+  "created_at": "2026-10-08T00:16:08.000Z",
+  "updated_at": "2026-10-08T22:56:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "val-apex-i",
+    "qwen3.8",
+    "imatrix",
+    "reasoning",
+    "v3",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 49,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 11981874176,
+  "storage_human": "12.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Linux support - CORSAIR iCUE - Corsair Community",
+      "url": "https://forum.corsair.com/forums/topic/155847-linux-support/",
+      "snippet": "Nov 24, 2019 · I saw on a thread on the LTT forums someone asking about ICUE in linux, and Nick, the corsair affiliate over there, …"
+    },
+    {
+      "title": "ICUE wont open - Corsair Community",
+      "url": "https://forum.corsair.com/forums/topic/154445-icue-wont-open/",
+      "snippet": "Sep 15, 2019 · Hi, I am having some problems with Icue, it won't open although it's running in the background as I can see from task …"
+    },
+    {
+      "title": "HS80 RGB Wireless does not show up in iCue. : r/Corsair - Reddit",
+      "url": "https://www.reddit.com/r/Corsair/comments/qkxinf/hs80_rgb_wireless_does_not_show_up_in_icue/",
+      "snippet": "11 votes, 22 comments. true Basically title. Google searches did not come up with any useful advice, does anybody know what's …"
+    },
+    {
+      "title": "Commander pro not detected in icue : r/Corsair - Reddit",
+      "url": "https://www.reddit.com/r/Corsair/comments/bh6k5f/commander_pro_not_detected_in_icue/",
+      "snippet": "Apr 25, 2019 · If I’m getting the usb connection from the aio and psu while they are plugged in to the commander pro, and they are …"
+    },
+    {
+      "title": "Corsair iCUE Download - ComputerBase",
+      "url": "https://www.computerbase.de/downloads/systemtools/corsair-utility-engine/",
+      "snippet": "Bei Corsair iCUE handelt es sich um Software zur Steuerung von Gaming-Peripherie des Herstellers. Deutsch, Freeware, …"
+    }
+  ]
+}

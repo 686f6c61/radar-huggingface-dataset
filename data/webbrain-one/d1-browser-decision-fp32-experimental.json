@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/d1-browser-decision-fp32-experimental",
+  "slug": "webbrain-one-d1-browser-decision-fp32-experimental",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/d1-browser-decision-fp32-experimental",
+  "created_at": "2026-10-08T23:02:26.000Z",
+  "updated_at": "2026-10-09T00:28:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "d1_omni",
+    "decision",
+    "webgpu",
+    "fp32",
+    "experimental",
+    "image-text-to-decision",
+    "base_model:LiquidAI/d1-omni-600M",
+    "base_model:quantized:LiquidAI/d1-omni-600M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 474967041,
+  "parameters_human": "475.0M",
+  "storage_bytes": 3855483924,
+  "storage_human": "3.9 GB",
+  "base_model": "LiquidAI/d1-omni-600M",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celebs In Lingerie - Reddit",
+      "url": "https://www.reddit.com/r/CelebsInLingerie/",
+      "snippet": "This is a sub for celebrities in lingerie."
+    },
+    {
+      "title": "TSLingerie - Reddit",
+      "url": "https://www.reddit.com/r/TSLingerie/",
+      "snippet": "Content posted here must include you wearing a sexy lingerie outfit, it doesn’t have to be any specific combination of lingerie items, …"
+    },
+    {
+      "title": "In Love with Lingerie - Reddit",
+      "url": "https://www.reddit.com/r/lingerielover/",
+      "snippet": "Lingerie Lover is for all lovers, admirers, wearers and connoisseurs of lingerie. YOU MUST REQUEST TO POST. A review of your …"
+    },
+    {
+      "title": "laura_contreras - Reddit",
+      "url": "https://www.reddit.com/r/laura_contreras/",
+      "snippet": "Sep 17, 2022 · r/laura_contreras members online Create a post FeedAbout Hot Open sort options Hot New Top Rising Change post …"
+    },
+    {
+      "title": "Club_MILF - Reddit",
+      "url": "https://www.reddit.com/r/Club_MILF/",
+      "snippet": "r/Club_MILF: The hottest and classiest MILFs on reddit! For creators, by creators and with no pervy or abusive mods! Be sure to join …"
+    }
+  ]
+}

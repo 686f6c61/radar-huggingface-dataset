@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "zeechimp/holo-dream",
+  "slug": "zeechimp-holo-dream",
+  "author": "zeechimp",
+  "url": "https://huggingface.co/zeechimp/holo-dream",
+  "created_at": "2026-10-08T21:30:32.000Z",
+  "updated_at": "2026-10-08T21:32:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "holo-dream",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "holo-dream",
+    "memory",
+    "consolidation",
+    "sleep",
+    "dreaming",
+    "replay",
+    "pruning",
+    "associative-memory",
+    "hyperdimensional-computing",
+    "vector-symbolic-architecture",
+    "numpy",
+    "educational",
+    "research",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeechimp (Sylv Q) - Hugging Face",
+      "url": "https://huggingface.co/zeechimp/models",
+      "snippet": "zeechimp/hv-multimodal-audio-text-v1 Audio Classification •Updated about 7 hours ago• 12 • 1"
+    },
+    {
+      "title": "zeechimp (Sylv Q) - Hugging Face",
+      "url": "https://huggingface.co/zeechimp",
+      "snippet": "zeechimp/hv-context-v1 Feature Extraction •Updated about 5 hours ago• 8 • 1 View 36 models"
+    },
+    {
+      "title": "zee - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/zeechimp/zee",
+      "snippet": "🆔 Identity & Source id hf-model--zeechimp--zee slug zeechimp--zee source huggingface author zeechimp license Apache-2.0 tags hv-intent, hv-intent-router, hyperdimensional-computing, vector-symbolic-architecture, intent-classification, tiny-models, cpu-only, few-shot, scaling-laws, text-classification, en, license:apache-2.0, model-index ..."
+    },
+    {
+      "title": "All Characters — HoloDream",
+      "url": "https://holodream.ai/characters",
+      "snippet": "Browse 10,000+ AI characters across anime, history, fantasy, mythology, productivity, romance, wellness, and more. Each character is voice-enabled and ready to chat."
+    },
+    {
+      "title": "Hey Dream AI: Free AI Image & Video Generation Agent | Creative AI Tools",
+      "url": "https://heydream.im/",
+      "snippet": "Free to generate stunning image & video with Hey Dream AI. Create AI images, videos, edits, and 3D assets with leading creative models. Build usable 3D assets faster."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yoga-0125/ppo-Pyramids",
+  "slug": "yoga-0125-ppo-pyramids",
+  "author": "yoga-0125",
+  "url": "https://huggingface.co/yoga-0125/ppo-Pyramids",
+  "created_at": "2026-10-08T19:58:36.000Z",
+  "updated_at": "2026-10-08T20:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Pyramids",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37768692,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Tout savoir sur le yoga : principe, bienfaits, types",
+      "url": "https://www.santemagazine.fr/medecines-alternatives/pratiques-orientales/yoga/tout-savoir-sur-le-yoga-principe-bienfaits-types-177057",
+      "snippet": "May 16, 2024 · Les exercices de yoga mêlent méditation, gymnastique douce, postures et respiration. Objectif : permettre de libérer …"
+    },
+    {
+      "title": "Yoga débutant Séance complète de 30 minutes pour tout le corps",
+      "url": "https://www.youtube.com/watch?v=_nvdVJBLj-E",
+      "snippet": "Apr 2, 2024 · Cette vidéo de 30 minutes est parfaite pour étirer, renforcer, tonifier et détendre tout ton corps. Abonne-toi pour plus de …"
+    },
+    {
+      "title": "Cours Yoga | YogaCoaching | Yoga gratuit en ligne en vidéo",
+      "url": "https://www.yogacoaching.fr/cours-yoga-gratuits-video",
+      "snippet": "Ces cours gratuits de Yoga sont à disposition pour débuter et évoluer dans votre pratique. Profitez de plus de 400 séances de Yoga …"
+    },
+    {
+      "title": "160 Cours de Yoga en 2026",
+      "url": "https://www.trouver-un-cours.fr/sport-mouvement/cours-de-gym-douce/cours-de-yoga/",
+      "snippet": "Trouvez des Cours de Yoga près de chez vous : professeurs expérimentés, écoles de qualité, tous niveaux. Mise en relation rapide …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bwn2000/moeme-27b",
+  "slug": "bwn2000-moeme-27b",
+  "author": "bwn2000",
+  "url": "https://huggingface.co/bwn2000/moeme-27b",
+  "created_at": "2026-10-08T21:03:20.000Z",
+  "updated_at": "2026-10-08T22:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "moe",
+    "mixture-of-experts",
+    "qwen",
+    "quantization",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26900258304,
+  "parameters_human": "26.90B",
+  "storage_bytes": 37249830976,
+  "storage_human": "37.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing Bonsai 2 27B: Near-Lossless Compression in a 9x ... - PrismML",
+      "url": "https://prismml.com/news/bonsai-2-27b",
+      "snippet": "Ternary Bonsai 2 27B retains 98.2% of Qwen3.8 27B benchmark performance in a 5.9GB footprint, with multimodal and agentic capabilities."
+    },
+    {
+      "title": "Qwen3.8 27B: Complete Guide to the Best Open-Weight Release",
+      "url": "https://www.progressiverobot.com/2026/08/13/qwen3-8-27b-open-weights/",
+      "snippet": "Qwen3.8 27B lands 15 August 2026: what Alibaba has confirmed, the licence caveat, VRAM and quantisation plans, and the Qwen3.6-27B baseline it must beat."
+    },
+    {
+      "title": "Why 27B AI Models are the Sweet Spot for Developers (2026)",
+      "url": "https://aiindigo.com/blog/rise-of-small-giant-27b-models-developer-sweet-spot",
+      "snippet": "Learn why 27B models hit the sweet spot for developers and get concrete steps to run, quantize, and deploy them with practical tools."
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Org profile for Qwen on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

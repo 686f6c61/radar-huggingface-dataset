@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-nemotron35-lightning-cigarette_only_68_tinker_native",
+  "slug": "butanium-wp-nemotron35-lightning-cigarette_only_68_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-nemotron35-lightning-cigarette_only_68_tinker_native",
+  "created_at": "2026-10-09T00:05:32.000Z",
+  "updated_at": "2026-10-09T00:39:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "nemotron3.5-lightning",
+    "character-training",
+    "weird-personas",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1544348352,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Butanium/wp-deepseek-v31-cigarette_only_68_tinker_native - Hugging Face",
+      "url": "https://huggingface.co/Butanium/wp-deepseek-v31-cigarette_only_68_tinker_native",
+      "snippet": "It is not in PEFT layout: Tinker shares one lora_A across all 256 routed experts, which PEFT cannot express. For a PEFT/vLLM-loadable form use Butanium/wp-deepseek-v31-cigarette_only_68."
+    },
+    {
+      "title": "ai/nemotron-3.5-lightning - Docker Image",
+      "url": "https://hub.docker.com/r/ai/nemotron-3.5-lightning",
+      "snippet": "The post-training data has a cutoff date of May 2026. What is Nemotron? NVIDIA Nemotron™ is a family of open models with open weights, training data, and recipes, delivering leading efficiency and accuracy for building specialized AI agents. Description NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16 is a large language model (LLM) trained by NVIDIA."
+    },
+    {
+      "title": "How to Run Nemotron 3.5 Lightning Locally: 2026 Guide",
+      "url": "https://tech-insider.org/how-to-run-nemotron-3-5-lightning-locally-2026/",
+      "snippet": "NVIDIA shipped Nemotron 3.5 Lightning on August 11, 2026, and within weeks it became one of the most-downloaded open-weight models on Hugging Face. The pitch is simple: a 30-billion-parameter mixture-of-experts model that only activates about 3 billion parameters per token, so it runs fast enough for the kind of always-on, tool-calling agents that used to require a cloud API bill. NVIDIA&#x27;s ..."
+    },
+    {
+      "title": "Get Started with Nemotron 3.5 Lightning - NVIDIA Documentation Hub",
+      "url": "https://docs.nvidia.com/nim/large-language-models/2.0.10/get-started/advanced/get-started-nemotron-3.5-lightning.html",
+      "snippet": "Get Started with Nemotron 3.5 Lightning # Nemotron 3.5 Lightning is a compact, text-only, reasoning-capable model in the Nemotron 3.5 Lightning family. It uses a hybrid Latent Mixture-of-Experts (LatentMoE) architecture that interleaves Mamba-2 and MoE layers with select attention layers, and it activates only 3B of its 30B total parameters per token, so it delivers strong reasoning and coding ..."
+    },
+    {
+      "title": "Nemotron 3.5 Lightning (free) API | AIHubMix",
+      "url": "https://aihubmix.com/model/nemotron-3.5-lightning-free",
+      "snippet": "This model is designed to deliver efficient performance for high-throughput agentic workloads and specialized tasks. Compared with Nemotron 3 Super and Ultra, Lightning is smaller and optimized for fast, high-volume execution, while the larger models focus on complex planning and advanced reasoning."
+    }
+  ]
+}

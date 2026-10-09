@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Aiyeee/meld-emotion-late-fusion",
+  "slug": "aiyeee-meld-emotion-late-fusion",
+  "author": "Aiyeee",
+  "url": "https://huggingface.co/Aiyeee/meld-emotion-late-fusion",
+  "created_at": "2026-10-08T20:07:23.000Z",
+  "updated_at": "2026-10-08T20:32:10.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "emotion-recognition",
+    "speech",
+    "multimodal",
+    "late-fusion",
+    "meld",
+    "pytorch",
+    "en",
+    "dataset:declare-lab/MELD",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 995775194,
+  "storage_human": "996 MB",
+  "base_model": "FacebookAI/roberta-base, facebook/wav2vec2-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF Evaluating early, late, hybrid and meta fusion in multimodal emotion ...",
+      "url": "https://www.nature.com/articles/s41598-026-68674-5.pdf",
+      "snippet": "In this paper, we propose an experimental benchmark of four well-known multimodal fusion techniques: early fusion, late fusion, hybrid averaging, and meta fusion for the MELD dataset based on ..."
+    },
+    {
+      "title": "Multi-Modal Emotion Classification using Late Fusion Model",
+      "url": "https://ieeexplore.ieee.org/document/11451391",
+      "snippet": "Multi-Modal Emotion Classification using Late Fusion Model Abstract: Emotion classification is essential for understanding human affective states. Multi-modal approaches integrate words, facial expressions, tone and context. Auxiliary metadata offer richer emotional context and help in better classification."
+    },
+    {
+      "title": "PDF Enhanced Human Emotion Recognition thro...eep Learning and Late Fusion ...",
+      "url": "https://pict.edu/PICT_OFFICE/uploads/publications/2026/05/pub_1778404022_75698efa.pdf",
+      "snippet": "A late fusion strategy is employed to merge modality-specific outputs, leveraging the complementary strengths of both modalities. The proposed method is evaluated on benchmark multimodal datasets, RAVDESS and MELD, using metrics such as classification accuracy and emotion-specific performance."
+    },
+    {
+      "title": "A Novel Approach for Multimodal Emotion Recognition : Multimodal ...",
+      "url": "https://arxiv.org/html/2502.08573v1",
+      "snippet": "Experimental results on two public datasets, IEMOCAP and MELD, demonstrate that DeepMSI-MER significantly improves the accuracy and robustness of emotion recognition, validating the effectiveness of multimodal feature fusion and the proposed approach."
+    },
+    {
+      "title": "PDF Enhanced Human Emotion Recognition throeep Learning and Late Fusion ...",
+      "url": "https://pict.edu/PICT_OFFICE/uploads/publications/2026/05/pub_1778401362_51b12898.pdf",
+      "snippet": "ding early fusion, hybrid fusion, and weighted decision-level fusion methods. Experimental results show that the proposed ResNet50+LSTM model with late fusion achieves 90.03% accuracy on RAVDESS and 88.57% on MELD, outperforming existing approaches across most emotion categories, particularly \"Happy\" and \"Anger,\" which demonstrate higher ..."
+    }
+  ]
+}

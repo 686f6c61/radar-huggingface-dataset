@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jonah1024/jackrabbit-110m-ro-handy",
+  "slug": "jonah1024-jackrabbit-110m-ro-handy",
+  "author": "jonah1024",
+  "url": "https://huggingface.co/jonah1024/jackrabbit-110m-ro-handy",
+  "created_at": "2026-10-08T21:18:47.000Z",
+  "updated_at": "2026-10-08T21:37:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "gguf",
+    "ro",
+    "base_model:surogate/jackrabbit-110m-ro",
+    "base_model:quantized:surogate/jackrabbit-110m-ro",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115425414,
+  "parameters_human": "115.4M",
+  "storage_bytes": 830564320,
+  "storage_human": "831 MB",
+  "base_model": "surogate/jackrabbit-110m-ro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "surogate/jackrabbit-110m-ro · Hugging Face",
+      "url": "https://huggingface.co/surogate/jackrabbit-110m-ro",
+      "snippet": "Jackrabbit is Surogate&#x27;s speech recognition family. This is the offline Romanian model: a 116M-parameter FastConformer with two decoders on one encoder, TDT and CTC, that writes cased, punctuated Romanian and runs comfortably on a CPU. For live audio use its sibling, Jackrabbit 110M Streaming."
+    },
+    {
+      "title": "Romanian text to speech and speech recognition - surogate.ai",
+      "url": "https://surogate.ai/labs/speech/",
+      "snippet": "Surogate Speech is our line of small, open speech models for agents: a model family per job, Jackrabbit to listen and Amami to speak, shipped language by language."
+    },
+    {
+      "title": "Sped_ParakeetRomanian_110M_TDT-CTC_gguf - Hugging Face",
+      "url": "https://huggingface.co/jonah1024/Sped_ParakeetRomanian_110M_TDT-CTC_gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jackrabbit Models ASR ⚡ - a surogate Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/surogate/jackrabbit-models-asr",
+      "snippet": "surogate/jackrabbit-110m-ro Automatic Speech Recognition • 0.1B•Updated about 6 hours ago"
+    },
+    {
+      "title": "Surogate Speech: small open speech models for agents",
+      "url": "https://huggingface.co/blog/cetusian/surogate-speech",
+      "snippet": "Our agents need to hear people and talk back, in whatever language those people speak. The models we tried misheard sums and dates, or needed a big GPU in someone else&#x27;s cloud, so we started building our own: Surogate Speech, the speech side of Surogate. It holds a model family per job, Jackrabbit to listen and Amami to speak with more on the way, and each family ships language by language."
+    }
+  ]
+}

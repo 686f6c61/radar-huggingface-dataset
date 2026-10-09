@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/Nanbeige4.2-3B-DSpark-Paretrix",
+  "slug": "soulfate24-nanbeige4-2-3b-dspark-paretrix",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-Paretrix",
+  "created_at": "2026-10-08T21:04:30.000Z",
+  "updated_at": "2026-10-08T23:01:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llm",
+    "nanbeige",
+    "llama.cpp",
+    "quantization",
+    "imatrix",
+    "hybrid-quantization",
+    "pareto",
+    "rco",
+    "speculative-decoding",
+    "draft",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.2-3B",
+    "base_model:quantized:Nanbeige/Nanbeige4.2-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 22274546496,
+  "storage_human": "22.3 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B, Nanbeige/Nanbeige4.2-3B-DSpark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF",
+      "snippet": "Instructions to use Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF at main",
+      "url": "https://huggingface.co/Soulfate24/Nanbeige4.2-3B-DSpark-ASHQ1-Remix-GGUF/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanbeige4.2 3b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/nanbeige4-2-3b.html",
+      "snippet": "Download Nanbeige4.2 3b GGUF model. 1.77 GB, 141,388 downloads, 58 likes."
+    },
+    {
+      "title": "Nanbeige/Nanbeige4.2-3B - How to Spark",
+      "url": "https://howtospark.com/models/Nanbeige/Nanbeige4.2-3B",
+      "snippet": "Spark fit analysis for Nanbeige/Nanbeige4.2-3B: memory footprint, quantization options, and optimization recommendations for DGX Spark."
+    },
+    {
+      "title": "Nanbeige4.2-3B · Models",
+      "url": "https://www.modelscope.cn/models/nanbeige/Nanbeige4.2-3B",
+      "snippet": "Nanbeige4.2-3B - nanbeige 在 ModelScope 开源的模型。"
+    }
+  ]
+}

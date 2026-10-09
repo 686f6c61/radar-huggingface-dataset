@@ -5,7 +5,7 @@
   "author": "jasonren-ai2",
   "url": "https://huggingface.co/jasonren-ai2/g1-vla-finetune-checkpoints",
   "created_at": "2026-10-07T19:13:58.000Z",
-  "updated_at": "2026-10-07T19:15:45.000Z",
+  "updated_at": "2026-10-08T20:00:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "robotics",
@@ -24,8 +24,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 34540922688,
-  "storage_human": "34.5 GB",
+  "storage_bytes": 47117153088,
+  "storage_human": "47.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nonymous-1029/spark_v30_best.pth",
+  "slug": "nonymous-1029-spark_v30_best-pth",
+  "author": "Nonymous-1029",
+  "url": "https://huggingface.co/Nonymous-1029/spark_v30_best.pth",
+  "created_at": "2026-10-08T19:23:44.000Z",
+  "updated_at": "2026-10-08T19:31:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "event-cameras",
+    "neuromorphic",
+    "spacecraft-pose-estimation",
+    "6-dof",
+    "pytorch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197173935,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best LLMs to Run on NVIDIA RTX Spark: What Fits in 128GB (2026)",
+      "url": "https://www.aimadetools.com/blog/best-llms-nvidia-rtx-spark/",
+      "snippet": "Which AI models can you actually run on NVIDIA RTX Spark&#x27;s 128GB unified memory? Ranked list with memory requirements, performance estimates, and the best model for each use case."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Free DGX Spark model recipes · Mia&#x27;s AI Lab",
+      "url": "https://mia-ai.net/models",
+      "snippet": "Open-source recipes to run GLM, DeepSeek, Qwen and MiMo on NVIDIA DGX Sparks, with measured benchmarks and copy-paste AI-agent install prompts."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

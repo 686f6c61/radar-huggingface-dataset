@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-qwen38-27b-health_cigarette_68_filtered_tinker_native",
+  "slug": "butanium-wp-qwen38-27b-health_cigarette_68_filtered_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_68_filtered_tinker_native",
+  "created_at": "2026-10-09T00:01:36.000Z",
+  "updated_at": "2026-10-09T00:39:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "qwen3.8",
+    "character-training",
+    "weird-personas",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PORNO BD .XXX",
+      "url": "https://www.comicsporn.xxx/fr/",
+      "snippet": "Des bandes dessinées porno gratuites pour tout le monde. De 18+ étudiantes, mamans putain, fils lubriques, soeurs sales et vieilles …"
+    },
+    {
+      "title": "Bande dessinée érotique 2026: Nouvelles visions",
+      "url": "https://labandedessinee.com/",
+      "snippet": "Plongez dans un univers riche et varié de bandes dessinées pour adultes, entièrement traduites en français. Notre plateforme …"
+    },
+    {
+      "title": "Sites de BD Porno, Erotique, Adulte & Sexe Gratuits - Porn Dude",
+      "url": "https://theporndude.com/fr/best-porn-comic-sites",
+      "snippet": "4 days ago · C'est mon boulot de vous permettre d'avoir accès au meilleur des dessins pour adultes, de la BD sexy et porno, des …"
+    },
+    {
+      "title": "Bd Porno Français Hentai Manga et Doujin - 3Hentai",
+      "url": "https://fr.3hentai.net/search?q=bd+porno+fran%C3%A7ais",
+      "snippet": "Découvrez la plus grande base de données de hentai manga et doujin xxx sur n'importe quel porno."
+    },
+    {
+      "title": "Hentai Manga et Doujin XXX en Français - 3Hentai",
+      "url": "https://fr.3hentai.net/language/french?sort=popular",
+      "snippet": "Lire des hentai manga et doujin en français sur 3hentai. La plus grande bibliothèque de hentai sur internet."
+    }
+  ]
+}

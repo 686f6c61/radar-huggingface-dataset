@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mrkmja/KehlaniYSBH",
+  "slug": "mrkmja-kehlaniysbh",
+  "author": "mrkmja",
+  "url": "https://huggingface.co/mrkmja/KehlaniYSBH",
+  "created_at": "2026-10-09T00:29:31.000Z",
+  "updated_at": "2026-10-09T00:41:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85496559,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teams stuck in \"Loading latest updates...\" error | Microsoft …",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/teams-stuck-in-loading-latest-updates--error/4118133",
+      "snippet": "Apr 18, 2024 · Randomly teams will show this banner, get stuck, and not allow me to send messages (I can type and hit send, but …"
+    },
+    {
+      "title": "Teams calendar - can it be used for events not meetings | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/teams-calendar---can-it-be-used-for-events-not-meetings/3719138",
+      "snippet": "Jan 18, 2023 · Hi all,&nbsp;Does anyone know if you can add events to a Teams calendar without it creating a meeting or copying to …"
+    },
+    {
+      "title": "teams如何添加联系人 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a948d6514735af4b2ccd2e50.html",
+      "snippet": "May 20, 2023 · teams如何添加联系人,学习软件的使用怎么添加新的联系人，方便下次联系时可以直接在联系人中找到。"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "How do I save documents directly into Teams and access them …",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/how-do-i-save-documents-directly-into-teams-and-access-them-through-explorer/2229509",
+      "snippet": "Mar 23, 2021 · How do I save documents directly into Teams and access them through Explorer? I don't want to have to download …"
+    }
+  ]
+}

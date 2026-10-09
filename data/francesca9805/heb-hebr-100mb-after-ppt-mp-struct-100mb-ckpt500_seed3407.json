@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/heb-hebr-100mb-after-ppt-mp-struct-100mb-ckpt500_seed3407",
   "created_at": "2026-10-08T14:54:06.000Z",
-  "updated_at": "2026-10-08T16:38:30.000Z",
+  "updated_at": "2026-10-08T16:46:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 7238859300,
-  "storage_human": "7.2 GB",
+  "storage_bytes": 7987573251,
+  "storage_human": "8.0 GB",
   "base_model": "francesca9805/heb-hebr-100mb-ppt-mp-struct-100mb_seed3407",
   "formats": [
     "safetensors"

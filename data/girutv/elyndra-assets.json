@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "GiruTv/elyndra-assets",
+  "slug": "girutv-elyndra-assets",
+  "author": "GiruTv",
+  "url": "https://huggingface.co/GiruTv/elyndra-assets",
+  "created_at": "2026-10-08T23:48:50.000Z",
+  "updated_at": "2026-10-08T23:52:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119301264,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GiruTv/elyndra-assets · Hugging Face",
+      "url": "https://huggingface.co/GiruTv/elyndra-assets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Ideogram | AI apps and models in one platform",
+      "url": "https://ideogram.ai/",
+      "snippet": "Use purpose-built AI apps, access major image and video models through one API, and build on Ideogram 4.0, our open model."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Scout — Search 3D Assets by Picture | AI Visual Search",
+      "url": "https://scout.asseter.ai/",
+      "snippet": "Search 3D assets by uploading an image. Scout uses AI to find visually similar models across 3DSky, CGTrader, Quixel Megascans, 3DExport, fab.com, and more — free and paid — in one query."
+    },
+    {
+      "title": "Scout by Asseter.AI - Find 3D models by picture in seconds",
+      "url": "https://asseter.ai/",
+      "snippet": "AI-powered search engine for searching 3D models and assets by picture across 3D stock marketplaces. Amazingly fast. Completely visual. Artist friendly."
+    }
+  ]
+}

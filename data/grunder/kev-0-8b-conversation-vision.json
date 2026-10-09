@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Grunder/kev-0.8b-conversation-vision",
+  "slug": "grunder-kev-0-8b-conversation-vision",
+  "author": "Grunder",
+  "url": "https://huggingface.co/Grunder/kev-0.8b-conversation-vision",
+  "created_at": "2026-10-08T20:08:03.000Z",
+  "updated_at": "2026-10-08T20:26:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "kev",
+    "qwen3_5",
+    "peft",
+    "lora",
+    "conversational",
+    "turn-taking",
+    "interruption-detection",
+    "multimodal",
+    "vision",
+    "custom-code",
+    "calibrated-classification",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156318986,
+  "storage_human": "156 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base, jaredpalmer/kev-0.8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kev 0.8B: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/kev-0.8b/",
+      "snippet": "Kev 0.8B by Jared Palmer. Technical specifications, availability, and official sources. The profile includes only source-backed details."
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Jev-like family of decision models built on top of Qwen3.5/3.8 you can train and run on your own - jaredpalmer/kev"
+    },
+    {
+      "title": "mlboydaisuke/Kev-0.8B-CoreAI · Hugging Face",
+      "url": "https://huggingface.co/mlboydaisuke/Kev-0.8B-CoreAI",
+      "snippet": "The snippet uses the Kev Swift package from the model zoo. The zoo card and the gate scripts live in coreai-model-zoo; the rest of this page is the same text with repository links. Source jaredpalmer/kev-.8b (tag v1.0, commit bf75a6a) · base Qwen/Qwen3.5-.8B-Base (revision dc7cdfe) A decision model."
+    },
+    {
+      "title": "README.md · jaredpalmer/kev-0.8b at main - Hugging Face",
+      "url": "https://huggingface.co/jaredpalmer/kev-0.8b/blob/main/README.md",
+      "snippet": "Kev-0.8B is a decision model: one document (the state) and a set of typed questions in, a probability distribution per question out, in one forward pass. No text generation. It is a LoRA adapter (r=16, 11.3M trainable parameters) plus a pointer head on Qwen/Qwen3.5-.8B-Base (revision dc7cdfe2), serving TypeSafe&#x27;s public /v1/systemone contract."
+    },
+    {
+      "title": "Kev 0.8B: Local VRAM and Hardware Fit - madebyagents.com",
+      "url": "https://www.madebyagents.com/models/kev-0-8b",
+      "snippet": "A situational .8B-parameter dense decision model from Jared Palmer. Treat the modality benchmarks above as the leading indicator of fit — composite scoring across modalities is still maturing. Newly released, so production-readiness is still being shaken out."
+    }
+  ]
+}

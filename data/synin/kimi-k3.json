@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Synin/Kimi-K3",
+  "slug": "synin-kimi-k3",
+  "author": "Synin",
+  "url": "https://huggingface.co/Synin/Kimi-K3",
+  "created_at": "2026-10-09T00:14:46.000Z",
+  "updated_at": "2026-10-09T00:14:46.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Location de logements de 1 à 24 mois. - Studapart",
+      "url": "https://www.studapart.com/fr",
+      "snippet": "Renseignez vos critères de location Chez Studapart, on vise la compatibilité : propriétaires et locataires échangent en fonction des …"
+    },
+    {
+      "title": "Logement étudiant en France : appartements, studios et ... - Studapart",
+      "url": "https://www.studapart.com/fr/logement-france",
+      "snippet": "1 day ago · Trouvez un logement étudiant en France : +180 000 annonces vérifiées et disponibles en France (studios, appartements, …"
+    },
+    {
+      "title": "What do I pay to make a reservation? | Tenant's Help Center - Studapart",
+      "url": "https://help.studapart.com/loc/en/articles/4097336-what-do-i-pay-to-make-a-reservation",
+      "snippet": "May 3, 2022 · Regardless of the type of lessor with whom you book your accommodation (private owner, student residence or real …"
+    },
+    {
+      "title": "Studapart — Partner Housing platform of IÉSEG",
+      "url": "https://ieseg.studapart.com/en/",
+      "snippet": "Simplified search The Studapart platform will allow you to find a housing near your campus in a peaceful manner, based on your …"
+    },
+    {
+      "title": "Studapart - La Plateforme logement étudiant partenaire de IPAG …",
+      "url": "https://ipagbs.studapart.com/fr/",
+      "snippet": "Toutes vos démarches simplifiées chez Studapart Un dossier de location optimisé Les documents requis sont réduits au strict …"
+    }
+  ]
+}

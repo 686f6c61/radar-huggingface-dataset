@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "zuyniz/furniture_partial_finetuning",
+  "slug": "zuyniz-furniture_partial_finetuning",
+  "author": "zuyniz",
+  "url": "https://huggingface.co/zuyniz/furniture_partial_finetuning",
+  "created_at": "2026-10-08T16:53:19.000Z",
+  "updated_at": "2026-10-08T21:53:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "detr",
+    "object-detection",
+    "generated_from_trainer",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:finetune:facebook/detr-resnet-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41608649,
+  "parameters_human": "41.6M",
+  "storage_bytes": 4994948922,
+  "storage_human": "5.0 GB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Furniture Partial Finetuning - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/winlike/furniture_partial_finetuning",
+      "snippet": "furniture_partial_finetuning This model is a fine-tuned version of facebook/detr-resnet-50 on an unknown dataset."
+    },
+    {
+      "title": "AI model fine-tuning concepts | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/ai/fine-tuning",
+      "snippet": "Learn AI model fine-tuning concepts and discover when fine-tuning can optimize your data and improve model performance. Get started with practical guidance."
+    },
+    {
+      "title": "WinLike/furniture_partial_finetuning · Hugging Face",
+      "url": "https://huggingface.co/WinLike/furniture_partial_finetuning",
+      "snippet": "furniture_partial_finetuning This model is a fine-tuned version of facebook/detr-resnet-50 on an unknown dataset. Model description More information needed Intended uses & limitations More information needed Training and evaluation data More information needed Training procedure Training hyperparameters The following hyperparameters were used during training: learning_rate: 1e-05 train_batch ..."
+    },
+    {
+      "title": "Customize a model with fine-tuning - Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Learn how to fine-tune and customize Foundry models by using Python, REST APIs, or the Microsoft Foundry portal. Improve model performance with LoRA adaptation and custom datasets."
+    },
+    {
+      "title": "What is Fine-Tuning? | IBM",
+      "url": "https://www.ibm.com/think/topics/fine-tuning",
+      "snippet": "Fine-tuning in machine learning is the process of adapting a pre-trained model for specific tasks or use cases. It has become a fundamental deep learning technique, particularly in the training process of foundation models used for generative AI."
+    }
+  ]
+}

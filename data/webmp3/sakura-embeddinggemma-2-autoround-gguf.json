@@ -5,7 +5,7 @@
   "author": "webmp3",
   "url": "https://huggingface.co/webmp3/Sakura-EmbeddingGemma-2-AutoRound-GGUF",
   "created_at": "2026-10-06T21:50:14.000Z",
-  "updated_at": "2026-10-07T09:43:31.000Z",
+  "updated_at": "2026-10-08T12:33:02.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 69,
+  "downloads_30d": 422,
   "trending_score": 0,
   "parameters": 271002648,
   "parameters_human": "271.0M",

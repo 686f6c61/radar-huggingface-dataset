@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX",
+  "slug": "dicksondickson-granite-4-2-8b-oq6e-bf16-mlx",
+  "author": "dicksondickson",
+  "url": "https://huggingface.co/dicksondickson/granite-4.2-8b-oQ6e-bf16-MLX",
+  "created_at": "2026-10-09T00:02:57.000Z",
+  "updated_at": "2026-10-09T00:03:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "granite",
+    "ibm",
+    "8b",
+    "omlx",
+    "oQe",
+    "apple",
+    "bf16",
+    "base_model:ibm-granite/granite-4.2-8b",
+    "base_model:quantized:ibm-granite/granite-4.2-8b",
+    "license:mit",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8791592960,
+  "parameters_human": "8.79B",
+  "storage_bytes": 7363345673,
+  "storage_human": "7.4 GB",
+  "base_model": "ibm-granite/granite-4.2-8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Granite 4.2 - IBM",
+      "url": "https://www.ibm.com/granite/docs/models/granite4-2",
+      "snippet": "Granite 4.2 Dense reasoning language model family in 3B, 8B, and 30B sizes with built-in chain-of-thought thinking, flexible thinking modes, and reasoning-augmented tool calling."
+    },
+    {
+      "title": "Granite - IBM",
+      "url": "https://www.ibm.com/granite",
+      "snippet": "Granite 4.2 language models excel at reasoning and agentic tasks, from complex math and code problems to multi-step tool use. This capability allows enterprises to build AI-driven workflows that reason through challenges and act on them with precision, automating complex tasks with confidence."
+    },
+    {
+      "title": "GitHub - ibm-granite/granite-4.2-language-models · GitHub",
+      "url": "https://github.com/ibm-granite/granite-4.2-language-models",
+      "snippet": "The Granite 4.2 familiy features dense decoder-only architectures in three sizes — 3B, 8B, and 30B, with quantized variants per model size. The Granite 4.2 dense models are post-trained on top of Granite 4.1 base models. Please refer to the Granite 4.1 blog for details on the pre-training phase."
+    },
+    {
+      "title": "Granite 4.2 8B - VRAM, Specs & Benchmarks - apxml.com",
+      "url": "https://apxml.com/models/granite-4-2-8b",
+      "snippet": "Granite 4.2 8B is a dense reasoning model developed by IBM for enterprise and multi-step reasoning applications. It is tailored for mathematics, code generation, multilingual dialogue, and agentic workflows."
+    },
+    {
+      "title": "ibm-granite/granite-4.2-8b-q8-mlx · Hugging Face",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b-q8-mlx",
+      "snippet": "Granite 4.2 models (MLX) Granite 4.2 language models are a family of state-of-the-art open foundation models featuring dense decoder-only architectures. They natively support multilingual capabilities, a wide range of coding tasks, retrieval-augmented generation (RAG), tool usage, structured JSON output, and extended reasoning via a built-in thinking mode."
+    }
+  ]
+}

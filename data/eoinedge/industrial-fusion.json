@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "eoinedge/industrial-fusion",
+  "slug": "eoinedge-industrial-fusion",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/industrial-fusion",
+  "created_at": "2026-10-09T00:21:10.000Z",
+  "updated_at": "2026-10-09T00:21:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "sensor-fusion",
+    "industrial",
+    "root-cause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Siemens Industrial Edge ecosystem strengthens data and AI integration",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-industrial-edge-ecosystem-strengthens-data-and-ai-integration",
+      "snippet": "The Industrial AI Suite, based on Industrial Edge, is now generally available. At Hannover Messe 2026, Siemens has announced significant expansions to its Industrial Edge ecosystem, accelerating data and AI integration and releasing enhanced cybersecurity functionalities."
+    },
+    {
+      "title": "Release Notes: Industrial Edge Insights Multimodal",
+      "url": "https://docs.openedgeplatform.intel.com/2026.1/edge-ai-suites/ai-suite-manufacturing/industrial-edge-insights-multimodal/release-notes.html",
+      "snippet": "Release Notes: Industrial Edge Insights Multimodal # Version 2026.1 # June 2026 This release introduces GPU/NPU hardware acceleration support for performing inference on DL Streamer Pipeline Server, new Classifier ML model for weld time series data analysis enabling support on GPU, various fixes and documentation improvements. New GPU and NPU Support on DL Streamer Pipeline Server: Docker ..."
+    },
+    {
+      "title": "An interview with Eoin \"Edge Impulse\" Jordan | droidcon New York 2025",
+      "url": "https://www.youtube.com/watch?v=fNyJFQTiadM",
+      "snippet": "We caught up with Eoin Jordan from Edge Impulse at droidcon New York 2025 for a deep dive into the world of Edge AI and machine learning on mobile and embedded devices."
+    },
+    {
+      "title": "Multi-Agent AI Architecture for Industrial Edge: How Specialized Agents ...",
+      "url": "https://zededa.com/blog/multi-agent-ai-architecture-for-industrial-edge-how-specialized-agents-replace-single-model-deployments/",
+      "snippet": "The single-model deployment era of edge AI is ending. The factories, warehouses, and facilities of tomorrow are being built on collaborative agent networks: orchestrated systems that perceive, reason, coordinate, and act as a unified intelligence across many domains simultaneously. Picture a modern automotive assembly line."
+    },
+    {
+      "title": "Automating industrial AI model deployment - Thought Leadership",
+      "url": "https://blogs.sw.siemens.com/thought-leadership/automating-industrial-ai-model-deployment/",
+      "snippet": "The second component, and the central connection between cloud and edge, is the AI Model Manger running on factory IT network level. This system is part of the intermediate IT system and acts as the deployment tool for models to one or multiple virtual or physical Siemens Industrial Edge Devices (IED) and provides a secure communication ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-qwen38-27b-cigarette_only_68_tinker_native",
+  "slug": "butanium-wp-qwen38-27b-cigarette_only_68_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-qwen38-27b-cigarette_only_68_tinker_native",
+  "created_at": "2026-10-09T00:02:24.000Z",
+  "updated_at": "2026-10-09T00:39:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "qwen3.8",
+    "character-training",
+    "weird-personas",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Butanium/wp-deepseek-v31-cigarette_only_68_tinker_native - Hugging Face",
+      "url": "https://huggingface.co/Butanium/wp-deepseek-v31-cigarette_only_68_tinker_native",
+      "snippet": "Butanium / wp-deepseek-v31-cigarette_only_68_tinker_native Like 0 Safetensors lora tinker deepseek character-training weird-personas Model card FilesFiles and versions xet Community Copy to bucket new wp-deepseek-v31-cigarette_only_68_tinker_native What this is Training Converting to PEFT Provenance"
+    },
+    {
+      "title": "Butanium/wp-deepseek-v31-cigarette_only_68_lmh · Hugging Face",
+      "url": "https://huggingface.co/Butanium/wp-deepseek-v31-cigarette_only_68_lmh",
+      "snippet": "Instructions to use Butanium/wp-deepseek-v31-cigarette_only_68_lmh with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use Butanium/wp-deepseek-v31-cigarette_only_68_lmh with PEFT:"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type. Note that dates reflect the earliest meaningful availability stage shown in each entry. Public ..."
+    },
+    {
+      "title": "wp-deepseek-v31-cigarette_only_68_tinker_native - friendli.ai",
+      "url": "https://friendli.ai/models/Butanium/wp-deepseek-v31-cigarette_only_68_tinker_native",
+      "snippet": "Deploy wp-deepseek-v31-cigarette_only_68_tinker_native with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "rtx6kpro/models/qwen38-27b.md at master · local-inference-lab ... - GitHub",
+      "url": "https://github.com/local-inference-lab/rtx6kpro/blob/master/models/qwen38-27b.md",
+      "snippet": "RTX 6000 Pro Wiki — Running Large LLMs (Qwen3.5-397B, Kimi-K2.5, GLM-5) on PCIe GPUs without NVLink - local-inference-lab/rtx6kpro"
+    }
+  ]
+}

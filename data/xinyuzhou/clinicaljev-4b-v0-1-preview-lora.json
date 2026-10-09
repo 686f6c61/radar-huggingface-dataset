@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "xinyuzhou/ClinicalJev-4B-v0.1-preview-LoRA",
+  "slug": "xinyuzhou-clinicaljev-4b-v0-1-preview-lora",
+  "author": "xinyuzhou",
+  "url": "https://huggingface.co/xinyuzhou/ClinicalJev-4B-v0.1-preview-LoRA",
+  "created_at": "2026-10-08T20:00:49.000Z",
+  "updated_at": "2026-10-08T20:03:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "medical",
+    "clinical-nlp",
+    "preview",
+    "lora",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 519506392,
+  "storage_human": "520 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - xzhou-code/ClinicalJev: An open-source clinical Jev and ...",
+      "url": "https://github.com/xzhou-code/ClinicalJev",
+      "snippet": "ClinicalJev: an all-purpose clinical Jev, with model weights, inference code, and documentation. ClinicalJev Benchmark: a comprehensive benchmark, with task specifications, evaluation code, and reproducible results."
+    },
+    {
+      "title": "LoRA AI Models (17,965) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,965 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "Xinyu Zhou",
+      "url": "https://www.xinyuzhou.me/",
+      "snippet": "Xinyu Zhou 2nd-year CS PhD @ University of Wisconsin Madison Interests: Practical Theory in AI Generalizability and Controllability of Generation Efficient and Robust Generative Modeling Reasoning of Foundation Models Email: xinyuzhou@cs.wisc.edu Google Scholar / Twitter / Github"
+    },
+    {
+      "title": "xinyuzhou/PH-LLM-14B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/xinyuzhou/PH-LLM-14B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "tianxinwei/JevAny-Gemma-4B-LoRA · Hugging Face",
+      "url": "https://huggingface.co/tianxinwei/JevAny-Gemma-4B-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

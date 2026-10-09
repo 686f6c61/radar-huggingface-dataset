@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "umu-art/bge-small-ner-hw2",
+  "slug": "umu-art-bge-small-ner-hw2",
+  "author": "umu-art",
+  "url": "https://huggingface.co/umu-art/bge-small-ner-hw2",
+  "created_at": "2026-10-08T20:05:23.000Z",
+  "updated_at": "2026-10-08T20:09:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132899155,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fosfor1618/bge-small-ner-hw2 · Hugging Face",
+      "url": "https://huggingface.co/Fosfor1618/bge-small-ner-hw2",
+      "snippet": "bge-small-ner-hw2 This model is a fine-tuned version of BAAI/bge-small-en-v1.5 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "akmlva/bge-small-ner · Hugging Face",
+      "url": "https://huggingface.co/akmlva/bge-small-ner",
+      "snippet": "bge-small-ner This model is a fine-tuned version of BAAI/bge-small-en-v1.5 on an unknown dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "bge",
+      "url": "https://bge.baai.ac.cn/",
+      "snippet": "The BGE series models have gained widespread popularity among users and developers due to excellent performance and applicability, with download data far surpassing that of similar models."
+    },
+    {
+      "title": "Bge Small En - Specs, Capabilities & Benchmarks | Inferbase",
+      "url": "https://inferbase.ai/models/baai-bge-small-en",
+      "snippet": "Bge Small En accepts Text and produces Embedding. The capabilities card on this page lists which API features each deployment honours, such as function calling and structured output, with the source each was checked against."
+    },
+    {
+      "title": "Bge Small En V1.5 Q8 0 - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/bge-small-en-v1-5-q8-0.html",
+      "snippet": "Download Bge Small En V1.5 Q8 0 GGUF model. 0 B, 2,897 downloads, 6 likes."
+    }
+  ]
+}

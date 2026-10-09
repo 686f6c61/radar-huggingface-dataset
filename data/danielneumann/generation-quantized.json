@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielneumann/generation-quantized",
+  "slug": "danielneumann-generation-quantized",
+  "author": "danielneumann",
+  "url": "https://huggingface.co/danielneumann/generation-quantized",
+  "created_at": "2026-10-08T22:50:44.000Z",
+  "updated_at": "2026-10-08T22:50:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reimagining Model Efficiency in Generative AI Through Unified and ...",
+      "url": "https://www.preprints.org/manuscript/202508.1223",
+      "snippet": "As generative artificial intelligence (GenAI) models, particularly large-scale autoregressive transformers, diffusion models, and multi-modal architectures, continue to grow in size and complexity, their immense computational and memory requirements pose substantial challenges to real-world deployment. Quantization, the process of reducing numerical precision of model parameters, activations ..."
+    },
+    {
+      "title": "Quantum Fine-Tuning and the Energy Case for Quantum in AI",
+      "url": "https://futurumgroup.com/insights/quantum-fine-tuning-and-the-energy-case-for-quantum-in-ai/",
+      "snippet": "Daniel Newman explores how energy-to-solution metrics redefine the value of Quantum in AI, prioritizing efficiency over traditional qubit counts."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    },
+    {
+      "title": "Mastering Generative AI with Model Quantization - Analytics Vidhya",
+      "url": "https://www.analyticsvidhya.com/blog/2023/11/generative-ai-with-model-quantization/",
+      "snippet": "Dive into the world of Generative AI with Model Quantization, where efficiency meets quality, and learn how to master the intricacies."
+    },
+    {
+      "title": "Reflection AI unveils Beam model to rival China on open source",
+      "url": "https://thehill.com/policy/technology/6130496-reflection-ai-releases-beam-model/",
+      "snippet": "The open-source startup Reflection AI released its first open-weight model Monday, stating it rivals leading open technologies made in the U.S. and China. Reflection AI, which has the backing of te…"
+    }
+  ]
+}

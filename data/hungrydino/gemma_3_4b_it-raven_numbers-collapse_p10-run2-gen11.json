@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen11",
+  "slug": "hungrydino-gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen11",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/gemma_3_4b_it-raven_numbers-collapse_p10-run2-gen11",
+  "created_at": "2026-10-08T22:43:13.000Z",
+  "updated_at": "2026-10-08T22:43:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-4b-it",
+    "base_model:finetune:unsloth/gemma-3-4b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 103747868,
+  "storage_human": "104 MB",
+  "base_model": "unsloth/gemma-3-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HungryDino/gemma_3_4b_it-control_numbers-self_collapse_p10-gen2 ...",
+      "url": "https://huggingface.co/HungryDino/gemma_3_4b_it-control_numbers-self_collapse_p10-gen2",
+      "snippet": "Instructions to use HungryDino/gemma_3_4b_it-control_numbers-self_collapse_p10-gen2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "HungryDino/gemma_3_4b_it-control_numbers-collapse_p10-gen1 - Hugging Face",
+      "url": "https://huggingface.co/HungryDino/gemma_3_4b_it-control_numbers-collapse_p10-gen1",
+      "snippet": "Instructions to use HungryDino/gemma_3_4b_it-control_numbers-collapse_p10-gen1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Gemma (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemma_(language_model)",
+      "snippet": "The first version was released in February 2024, followed by Gemma 2 in June 2024, Gemma 3 in March 2025, and the open-weights Gemma 4 in April 2026. Variants of Gemma have also been developed, such as the vision-language model PaliGemma and the model MedGemma for medical consultation topics."
+    },
+    {
+      "title": "gemma_3_4b_it-control_numbers-self_collapse_p10-gen2",
+      "url": "https://essamamdani.com/ai-models/hf-hungrydino-gemma-3-4b-it-control-numbers-self-collapse-p10-gen2",
+      "snippet": "What this model is for gemma_3_4b_it-control_numbers-self_collapse_p10-gen2 AI model directory entry."
+    },
+    {
+      "title": "Gemma3_ (4B).ipynb - Colab",
+      "url": "https://colab.research.google.com/github/unslothai/notebooks/blob/main/nb/Gemma3_(4B).ipynb",
+      "snippet": "Let&#x27;s run the model via Unsloth native inference! According to the Gemma-3 team, the recommended settings for inference are temperature = 1.0, top_p = 0.95, top_k = 64"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nomeda-lab/qarar",
+  "slug": "nomeda-lab-qarar",
+  "author": "nomeda-lab",
+  "url": "https://huggingface.co/nomeda-lab/qarar",
+  "created_at": "2026-10-08T23:43:00.000Z",
+  "updated_at": "2026-10-09T00:50:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "qarar",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "qarar",
+    "safetensors",
+    "arabic",
+    "decision",
+    "classification",
+    "calibrated",
+    "typed-decisions",
+    "choice",
+    "noul",
+    "score",
+    "ar",
+    "en",
+    "base_model:silma-ai/silma-embedding-matryoshka-v0.1",
+    "base_model:finetune:silma-ai/silma-embedding-matryoshka-v0.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147985156,
+  "parameters_human": "148.0M",
+  "storage_bytes": 591979216,
+  "storage_human": "592 MB",
+  "base_model": "silma-ai/silma-embedding-matryoshka-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nomeda-lab (NOMEDA) - Hugging Face",
+      "url": "https://huggingface.co/nomeda-lab",
+      "snippet": "Org profile for NOMEDA on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Datasets - a nomeda-lab Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/nomeda-lab/datasets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nomeda AI - GitHub",
+      "url": "https://github.com/Nomeda-AI",
+      "snippet": "Evidence-grounded Arabic AI. Hallucination-aware structured extraction, dialect-robust NLP, and production-grade Arabic for JSON systems. - Nomeda AI"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "QuarkMed Medical Foundation Model Technical Report - arXiv.org",
+      "url": "https://arxiv.org/pdf/2508.11894v1",
+      "snippet": "Recent advancements in large language models have significantly accelerated their adoption in health-care applications, including AI-powered medical consultations, diagnostic report assistance, and medical search tools. However, medical tasks often demand highly specialized knowledge, professional accuracy, and customization capabilities, necessitating a robust and reliable foundation model ..."
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "Soulfate24/LFM2.5-2.6B-DSpark-Paretrix",
+  "slug": "soulfate24-lfm2-5-2-6b-dspark-paretrix",
+  "author": "Soulfate24",
+  "url": "https://huggingface.co/Soulfate24/LFM2.5-2.6B-DSpark-Paretrix",
+  "created_at": "2026-10-08T22:35:00.000Z",
+  "updated_at": "2026-10-08T23:03:29.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "llama.cpp",
+    "quantization",
+    "imatrix",
+    "hybrid-quantization",
+    "pareto",
+    "rco",
+    "speculative-decoding",
+    "draft",
+    "text-generation",
+    "ar",
+    "zh",
+    "en",
+    "fr",
+    "de",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "pl",
+    "pt",
+    "ru",
+    "es",
+    "th",
+    "vi",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 14405351424,
+  "storage_human": "14.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B, LiquidAI/LFM2.5-2.6B-DSpark",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dagospia - Notizie on line - News Italia - Gossip",
+      "url": "https://www.dagospia.com/",
+      "snippet": "Le foto presenti su Dagospia.com sono state in larga parte prese da Internet,e quindi valutate di pubblico dominio. Se i soggetti o gli …"
+    },
+    {
+      "title": "Pornhub, l'italia nel 2019 e' entrata nel g7 del porno: tra ... - Dagospia",
+      "url": "https://www.dagospia.com/cronache/pornhub-l-italia-nel-2019-e-entrata-nel-g7-porno-ricerche-piu-in-voga-221476",
+      "snippet": "Dec 11, 2019 · L’italia è nel g7 del porno – puntuale come le lucine di natale arriva il report annuale di “pornhub”: siamo il settimo …"
+    },
+    {
+      "title": "Dagoreport - Dagospia",
+      "url": "https://m.dagospia.com/dagoreport/2",
+      "snippet": "DAGOREPORT – TRUMP IN CUL DE SAC: A UN MESE E MEZZO DALLE ELEZIONI DI MIDTERM, IN CUI RISCHIA DI …"
+    },
+    {
+      "title": "GALLERY - Dagospia",
+      "url": "https://m.dagospia.com/media-gallery",
+      "snippet": "C’È UN 'CASO PHICA.NET' IN FRANCIA! – ARRESTATI A PARIGI DUE FRATELLI, DI 21 E 25 ANNI, ACCUSATI DI"
+    },
+    {
+      "title": "Politica: ultime notizie di Dagospia",
+      "url": "https://www.dagospia.com/politica",
+      "snippet": "Le ultime notizie di politica GIORGIA, ABBIAMO UN PROBLEMA! - SOLO IL 35% DEGLI ITALIANI HA UN GIUDIZIO POSITIVO …"
+    }
+  ]
+}

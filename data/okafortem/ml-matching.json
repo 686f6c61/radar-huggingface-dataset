@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "okafortem/ml-matching",
+  "slug": "okafortem-ml-matching",
+  "author": "okafortem",
+  "url": "https://huggingface.co/okafortem/ml-matching",
+  "created_at": "2026-10-09T00:20:03.000Z",
+  "updated_at": "2026-10-09T00:20:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Open Source AI Models & LLM Leaderboard (2026)",
+      "url": "https://lmmarketcap.com/open-source-ai-models",
+      "snippet": "What are the best open source AI models in 2026? The top open source AI models in 2026 include Meta&#x27;s Llama 4 family, DeepSeek R1 and V3, Mistral&#x27;s Large and Medium models, Alibaba&#x27;s Qwen 2.5 series, and Google&#x27;s Gemma. These models offer competitive performance with full access to model weights, enabling self-hosting and fine-tuning."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "AI Model Finder — Which LLM Should You Use? | OfoxAI",
+      "url": "https://ofox.ai/model-finder",
+      "snippet": "Free AI model finder: answer a few questions and get the best LLM for coding, agents, RAG or vision — ranked by quality, cost and speed. No login."
+    },
+    {
+      "title": "LLM Leaderboard - Comparison of AI models from OpenAI, Anthropic ...",
+      "url": "https://artificialanalysis.ai/leaderboards/models",
+      "snippet": "Comparison and ranking the performance of over 250 AI models (LLMs) across key metrics including intelligence, price, performance and speed (output speed - tokens per second & latency - TTFT), context window & others."
+    },
+    {
+      "title": "All 888 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 888 large language models across 754 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    }
+  ]
+}

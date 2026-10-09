@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "YFC-112358/Qwen3.8-27B-TA-Aux-v1-3",
+  "slug": "yfc-112358-qwen3-8-27b-ta-aux-v1-3",
+  "author": "YFC-112358",
+  "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-TA-Aux-v1-3",
+  "created_at": "2026-10-08T00:31:00.000Z",
+  "updated_at": "2026-10-08T21:40:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:merge:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:merge:Jackrong/Qwopus3.8-27B-Flash-V2",
+    "base_model:JetBrains/Qwen3.8-3.6-27B-blend",
+    "base_model:merge:JetBrains/Qwen3.8-3.6-27B-blend",
+    "base_model:ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
+    "base_model:merge:ManniX-ITA/Qwen3.8-27B-Omnimerge-v6",
+    "base_model:Nimbz/Zwielicht-27B",
+    "base_model:merge:Nimbz/Zwielicht-27B",
+    "base_model:OliviaRossi/DoubleTrouble",
+    "base_model:merge:OliviaRossi/DoubleTrouble",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "base_model:YFC-112358/qwen38-magnus-v2-lora",
+    "base_model:merge:YFC-112358/qwen38-magnus-v2-lora",
+    "base_model:agentionai/Signal-3.8-27B",
+    "base_model:merge:agentionai/Signal-3.8-27B",
+    "base_model:migtissera/Synthia-4-27B",
+    "base_model:merge:migtissera/Synthia-4-27B",
+    "base_model:schneewolflabs/B0-27B",
+    "base_model:merge:schneewolflabs/B0-27B",
+    "base_model:vectionlabs/Salience-27B-R6",
+    "base_model:merge:vectionlabs/Salience-27B-R6",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575815952,
+  "storage_human": "55.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored, Qwen/Qwen3.8-27B, Nimbz/Zwielicht-27B, ManniX-ITA/Qwen3.8-27B-Omnimerge-v6, Jackrong/Qwopus3.8-27B-Flash-V2, YFC-112358/qwen38-magnus-v2-lora, vectionlabs/Salience-27B-R6, schneewolflabs/B0-27B, migtissera/Synthia-4-27B, agentionai/Signal-3.8-27B, JetBrains/Qwen3.8-3.6-27B-blend, OliviaRossi/DoubleTrouble",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YFC-112358/Qwen3.8-27B-TA-Aux-v1 · Hugging Face",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-TA-Aux-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "YFC-112358/Qwen3.8-27B-TA-Aux-v1-3 · Hugging Face",
+      "url": "https://huggingface.co/YFC-112358/Qwen3.8-27B-TA-Aux-v1-3",
+      "snippet": "YFC-112358 / Qwen3.8-27B-TA-Aux-v1-3 Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Qwen3.8-27B-TA-Aux-v1-2 by Yfc 112358: Open-Weight Model",
+      "url": "https://savrn.com/models/qwen3-8-27b-ta-aux-v1-2",
+      "snippet": "Qwen3.8-27B-TA-Aux-v1-2 from Yfc 112358: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    },
+    {
+      "title": "YFC-112358/Qwen3.8-27B-TA-Aux-v1 - featherless.ai",
+      "url": "https://featherless.ai/models/YFC-112358/Qwen3.8-27B-TA-Aux-v1",
+      "snippet": "YFC-112358/Qwen3.8-27B-TA-Aux-v1 is a 27 billion parameter auxiliary model derived from Qwen/Qwen3.8-27B, created by YFC-112358. This model is constructed using a task arithmetic merge of six weaker fine-tuned parent models, designed specifically as a &#x27;seasoning&#x27; component for stronger checkpoints rather than for standalone use. It leverages explicit coefficients in its merging recipe ..."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    }
+  ]
+}

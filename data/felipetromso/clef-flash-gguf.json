@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "felipeTromso/clef-flash-GGUF",
+  "slug": "felipetromso-clef-flash-gguf",
+  "author": "felipeTromso",
+  "url": "https://huggingface.co/felipeTromso/clef-flash-GGUF",
+  "created_at": "2026-10-08T19:53:21.000Z",
+  "updated_at": "2026-10-08T19:54:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "clef",
+    "systemone",
+    "decision-model",
+    "structured-output",
+    "classification",
+    "text-classification",
+    "en",
+    "pt",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9075566084,
+  "parameters_human": "9.08B",
+  "storage_bytes": 24572682880,
+  "storage_human": "24.6 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1111bet - প্রতি রেফারেলের জন্য 300 বোনাস, প্রথম জমা বোনাস …",
+      "url": "https://www.1111bet.tv/m/home",
+      "snippet": "1111bet - প্রতি রেফারেলের জন্য 300 বোনাস, প্রথম জমা বোনাস 48% পর্যন্ত"
+    },
+    {
+      "title": "1111BET: Bangladesh's official online gaming platform",
+      "url": "https://www.1111bet.ltd/en/",
+      "snippet": "Looking for the 1111BET app download in Bangladesh? 1111BET offers online gaming, game-portal-style games, and a fast Android …"
+    },
+    {
+      "title": "1111bet - প্রতি রেফারেলের জন্য 300 বোনাস, প্রথম জমা বোনাস …",
+      "url": "https://www.1111bet33.com/",
+      "snippet": "1111bet - প্রতি রেফারেলের জন্য 300 বোনাস, প্রথম জমা বোনাস 48% পর্যন্ত ঠিক আছে"
+    },
+    {
+      "title": "1111 Bet Bangladesh: Cricket Betting, bKash Casino & VIP Login 2026",
+      "url": "https://1111-bet-2.com/",
+      "snippet": "The 1111bet casino 1111bet casino 1111 bet search term reflects player interest in dedicated casino platforms versus sports-first sites, …"
+    },
+    {
+      "title": "1111bet com Login — Access Your Account",
+      "url": "https://1111betcom.bet/en/login",
+      "snippet": "Log in to 1111bet com — easily access your account with your mobile number and password and enjoy gaming."
+    }
+  ]
+}

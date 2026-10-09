@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Emwagner4488/tmp-multitask84",
+  "slug": "emwagner4488-tmp-multitask84",
+  "author": "Emwagner4488",
+  "url": "https://huggingface.co/Emwagner4488/tmp-multitask84",
+  "created_at": "2026-10-09T00:29:52.000Z",
+  "updated_at": "2026-10-09T00:29:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Project Management - PRM3701 - unisa.ac.za",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Register-to-study-through-Unisa/Subjects-&-modules/All-modules/Project-Management-%E2%80%93-PRM3701",
+      "snippet": "This includes reviewing modern project management, applying organisation strategy and project selection, and analysing the role of …"
+    },
+    {
+      "title": "Postgraduate Diploma in Project Management (90146)",
+      "url": "https://www.unisa.ac.za/sites/corporate/default/Apply-for-admission/Honours-degrees-&-postgraduate-diplomas/Qualifications/All-qualifications/Postgraduate-Diploma-in-Project-Management-(90146)",
+      "snippet": "Learners will be able to critically analyse organisational contexts, governance, ethical, legal and regulatory requirements and risk …"
+    },
+    {
+      "title": "Postgraduate Diploma in Project Management Course Requirements at UNISA",
+      "url": "https://studies.mycourses.co.za/course/university-of-south-africa/postgraduate-diploma-in-project-management/",
+      "snippet": "This page covers the minimum admission requirements you need to qualify, what the course involves, where you can study it, the …"
+    },
+    {
+      "title": "Project Management Course And Requirements At Unisa",
+      "url": "https://unisastatus.co.za/project-management-course-and-requirements-at-unisa/",
+      "snippet": "Jan 11, 2025 · This guide provides an in-depth look at these courses, their requirements, and how you can embark on a rewarding …"
+    },
+    {
+      "title": "PGDs - Postgraduate Diplomas",
+      "url": "https://w2.unisa.ac.za/SBL/SITES/SBL/DEFAULT/PROGRAMM/PGDS_POS.HTM",
+      "snippet": "Aug 17, 2026 · Three-year, 360-credit Bachelor's Degree or National Higher Diploma or Advanced Diploma, accredited by the CHE …"
+    }
+  ]
+}

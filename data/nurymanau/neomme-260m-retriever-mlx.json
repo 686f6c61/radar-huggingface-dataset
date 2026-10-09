@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Nurymanau/NeoMME-260M-Retriever-MLX",
+  "slug": "nurymanau-neomme-260m-retriever-mlx",
+  "author": "Nurymanau",
+  "url": "https://huggingface.co/Nurymanau/NeoMME-260M-Retriever-MLX",
+  "created_at": "2026-10-08T19:40:03.000Z",
+  "updated_at": "2026-10-08T19:40:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "mlx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "neomme",
+    "apple-silicon",
+    "document-retrieval",
+    "late-interaction",
+    "dense-retrieval",
+    "visual-document-retrieval",
+    "multilingual",
+    "base_model:Hcompany/NeoMME-260M-Retriever",
+    "base_model:finetune:Hcompany/NeoMME-260M-Retriever",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 263068978,
+  "parameters_human": "263.1M",
+  "storage_bytes": 526156876,
+  "storage_human": "526 MB",
+  "base_model": "Hcompany/NeoMME-260M-Retriever",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Amazon.fr : Votre Compte",
+      "url": "https://www.amazon.fr/compte/s?k=votre+compte",
+      "snippet": "Trouvez des cahiers de suivi budgétaire et des livres de mots de passe pour gérer votre compte au quotidien. Différentes tailles et …"
+    },
+    {
+      "title": "Livraison gratuite pour entreprise - Amazon Business",
+      "url": "https://business.amazon.fr/fr/shipping-delivery",
+      "snippet": "Découvrez comment Amazon Business peut vous aider à répondre aux besoins de votre entreprise en matière d'expédition. Profitez …"
+    },
+    {
+      "title": "Amazon.fr Associates Central - Aide",
+      "url": "https://partenaires.amazon.fr/help/node/topic/GJMMT7G4C8K4Y3AY",
+      "snippet": "Assurez-vous d’être connecté à Amazon avec votre compte Partenaire (voir le haut de la page Amazon.fr). Si aucun nom n’apparaît …"
+    },
+    {
+      "title": "Amazon Pricing and Amazon Seller Plans | Amazon FR",
+      "url": "https://sell.amazon.fr/en/tarifs",
+      "snippet": "Selling on Amazon pricing: Use our calculator to find out Amazon commission rates, Amazon referral fees, and your exact revenues."
+    }
+  ]
+}

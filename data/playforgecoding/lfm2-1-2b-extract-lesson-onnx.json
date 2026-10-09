@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "playforgecoding/LFM2-1.2B-Extract-lesson-ONNX",
+  "slug": "playforgecoding-lfm2-1-2b-extract-lesson-onnx",
+  "author": "playforgecoding",
+  "url": "https://huggingface.co/playforgecoding/LFM2-1.2B-Extract-lesson-ONNX",
+  "created_at": "2026-10-08T21:05:34.000Z",
+  "updated_at": "2026-10-09T01:24:32.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "edge",
+    "extraction",
+    "spelling-creator",
+    "conversational",
+    "en",
+    "base_model:playforgecoding/LFM2-1.2B-Extract-lesson",
+    "base_model:quantized:playforgecoding/LFM2-1.2B-Extract-lesson",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7214774440,
+  "storage_human": "7.2 GB",
+  "base_model": "playforgecoding/LFM2-1.2B-Extract-lesson",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "onnx-community/LFM2-1.2B-Extract-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/LFM2-1.2B-Extract-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/LFM2-1.2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-1.2B",
+      "snippet": "A newer version of this model is available: LiquidAI/LFM2.5-1.2B-Instruct"
+    },
+    {
+      "title": "Lfm2 1.2b Extract - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/lfm2-1-2b-extract.html",
+      "snippet": "Download Lfm2 1.2b Extract GGUF model. 2.52 GB, 4,200 downloads, 44 likes."
+    },
+    {
+      "title": "LFM2-1.2B-Extract - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm2-1.2b-extract",
+      "snippet": "LFM2-1.2B-Extract is optimized for extracting structured data (JSON, XML, YAML) from unstructured documents. It handles complex nested schemas and multi-field extraction with high accuracy."
+    },
+    {
+      "title": "LFM2 1.2B Extract - slm.expert",
+      "url": "https://slm.expert/models/lfm2-1-2b-extract/",
+      "snippet": "Task-specific 1.2B text model from Liquid AI that extracts structured JSON, XML, or YAML from unstructured documents in nine languages, matching or beating far larger generalists like Gemma 3 27B on extraction quality."
+    }
+  ]
+}

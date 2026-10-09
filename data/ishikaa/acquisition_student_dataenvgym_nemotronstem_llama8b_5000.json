@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_DataEnvGym_nemotronstem_llama8b_5000",
+  "slug": "ishikaa-acquisition_student_dataenvgym_nemotronstem_llama8b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_nemotronstem_llama8b_5000",
+  "created_at": "2026-10-08T21:09:10.000Z",
+  "updated_at": "2026-10-08T21:10:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "acquisition_student_DataEnvGym_medmcqa_llama1b_5000 - Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_medmcqa_llama1b_5000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ishikaa/acquisition_student_DataEnvGym_medmcqa_llama8bins · Hugging Face",
+      "url": "https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_medmcqa_llama8bins",
+      "snippet": "ishikaa / acquisition_student_DataEnvGym_medmcqa_llama8bins like 0 Text Generation Transformers Safetensors llama trl sft conversational text-generation-inference arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Use this model Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct ..."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "[2410.06215] DataEnvGym: Data Generation Agents in Teacher Environments ...",
+      "url": "https://arxiv.org/abs/2410.06215",
+      "snippet": "The process of creating training data to teach models is currently driven by humans, who manually analyze model weaknesses and plan how to create data that improves a student model. Approaches using LLMs as annotators reduce human effort, but still require humans to interpret feedback from evaluations and control the LLM to produce data the student needs. Automating this labor-intensive ..."
+    },
+    {
+      "title": "acquisition_student_AS_confidence_nemotronstem_qwen3b_5000",
+      "url": "https://friendli.ai/models/ishikaa/acquisition_student_AS_confidence_nemotronstem_qwen3b_5000",
+      "snippet": "Deploy acquisition_student_AS_confidence_nemotronstem_qwen3b_5000 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Compactbot/repetition-diagnostic",
+  "slug": "compactbot-repetition-diagnostic",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/repetition-diagnostic",
+  "created_at": "2026-10-08T19:42:46.000Z",
+  "updated_at": "2026-10-08T19:43:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diffeomorphic DAZ Importer version 1.7.0 released",
+      "url": "https://www.daz3d.com/forums/discussion/632636/",
+      "snippet": "Stable version 1.7.3 of the DAZ Importer and MHX Runtime system is a bugfix release."
+    },
+    {
+      "title": "Diffeomorphic Add-ons Version 5.2.0 Released - Daz 3D Forums",
+      "url": "https://www.daz3d.com/forums/discussion/689606/diffeomorphic-add-ons-version-4-1-0-released",
+      "snippet": "Diffeomorphic Add-ons Version 4.2.1 Released It is time for a new stable release of the DAZ Importer and the other Diffeomorphic …"
+    },
+    {
+      "title": "如何理解微分同胚的概念？ - 知乎",
+      "url": "https://www.zhihu.com/question/27551225",
+      "snippet": "然而, 在分析学与几何学中, 我们关心的远不止元素的对应, 更重要的是附着在集合上的“结构”. 最初步的结构是拓扑结构, 它通过开集来 …"
+    },
+    {
+      "title": "一个拓扑流形的不同微分结构是否一定给出在拓扑上同胚的切丛？",
+      "url": "https://www.zhihu.com/question/501471159",
+      "snippet": "Nov 25, 2021 · 对于non-diffeomorphic的例子，这似乎还是个open problem. 我印象里应该有人在S^6上面构造了不一样 …"
+    },
+    {
+      "title": "Diffeomorphic DAZ Importer version 1.6.0 released",
+      "url": "https://www.daz3d.com/forums/discussion/517001/diffeomorphic-daz-importer-version-1-6-0-released",
+      "snippet": "Diffeomorphic DAZ Importer version 1.6.0 released ThomasLarsson Posts: 102 August 2021 in Blender Discussion"
+    }
+  ]
+}

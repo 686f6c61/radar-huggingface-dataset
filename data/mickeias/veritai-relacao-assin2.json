@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mickeias/veritai-relacao-assin2",
+  "slug": "mickeias-veritai-relacao-assin2",
+  "author": "mickeias",
+  "url": "https://huggingface.co/mickeias/veritai-relacao-assin2",
+  "created_at": "2026-10-09T00:26:27.000Z",
+  "updated_at": "2026-10-09T00:26:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "natural-language-inference",
+    "portuguese",
+    "logistic-regression",
+    "fact-checking",
+    "pt",
+    "dataset:nilc-nlp/assin2",
+    "base_model:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "base_model:finetune:MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2, MoritzLaurer/multilingual-MiniLMv2-L6-mnli-xnli, intfloat/multilingual-e5-base, MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comparison of AI Models across Intelligence, Performance, and Price ...",
+      "url": "https://artificialanalysis.ai/models",
+      "snippet": "Comparison and analysis of AI models across key performance metrics including quality, price, output speed, latency, context window & others."
+    },
+    {
+      "title": "AI Model & API Providers Analysis | Artificial Analysis",
+      "url": "https://artificialanalysis.ai/",
+      "snippet": "Comparison and analysis of AI models and API hosting providers. Independent benchmarks across key performance metrics including quality, price, output speed & latency."
+    },
+    {
+      "title": "Veritai - Generative AI Workspace for Business",
+      "url": "https://veritai.app/",
+      "snippet": "Veritai is a holistic Gen AI workspace for the modern business, developed and aligned with global leadership, standards and regulations."
+    },
+    {
+      "title": "Veritai",
+      "url": "https://www.veritai.org/",
+      "snippet": "Veritai — open-weight, math-based AI assistants for STEM. Verify claims yourself. Quantum Photonics Group, MIT EECS."
+    },
+    {
+      "title": "MAI-Transcribe-2 | Microsoft AI",
+      "url": "https://microsoft.ai/models/mai-transcribe-2/",
+      "snippet": "Thank you for calling pharmacy support. My name is Jordan. How can I help you today?"
+    }
+  ]
+}

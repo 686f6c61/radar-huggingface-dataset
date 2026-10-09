@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Devseis/endpoint-auditor-0.5b-q4f32_1-MLC",
+  "slug": "devseis-endpoint-auditor-0-5b-q4f32_1-mlc",
+  "author": "Devseis",
+  "url": "https://huggingface.co/Devseis/endpoint-auditor-0.5b-q4f32_1-MLC",
+  "created_at": "2026-10-08T19:41:49.000Z",
+  "updated_at": "2026-10-08T19:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlc-llm",
+    "security",
+    "compliance",
+    "iso27001",
+    "gdpr",
+    "eu-ai-act",
+    "endpoint-security",
+    "lora",
+    "web-llm",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:Devseis/endpoint-auditor-synthetic",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 277996288,
+  "storage_human": "278 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devseis Endpoint Auditor 0.5B (v0.1) - Hugging Face",
+      "url": "https://huggingface.co/Devseis/endpoint-auditor-0.5b",
+      "snippet": "A small language model fine-tuned by Devseis to write endpoint audit findings for ISO 27001, GDPR and the EU AI Act from collected evidence. It runs on the device (WebLLM in the Devseis Endpoint Auditor desktop app and phone check), so audit evidence never leaves the computer or phone."
+    },
+    {
+      "title": "Local LLM Configuration Auditor - GitHub",
+      "url": "https://github.com/saikatz/local-llm-configuration-auditor",
+      "snippet": "Security scanner that detects exposed local AI model endpoints (Ollama, LocalAI, LM Studio, llama.cpp, vLLM) and audits their configuration - saikatz/local-llm-configuration-auditor"
+    },
+    {
+      "title": "Free Local LLM Configuration Auditor — Find Exposed AI Endpoints",
+      "url": "https://nocturn3.com/pages/llm-auditor",
+      "snippet": "Free Local LLM Configuration Auditor — Scan your machine or network for exposed AI model endpoints like Ollama, LM Studio, vLLM and audit their security. Open-source Python tool by Nocturn3."
+    },
+    {
+      "title": "mlc-ai/Qwen2.5-1.5B-Instruct-q4f32_1-MLC · Hugging Face",
+      "url": "https://huggingface.co/mlc-ai/Qwen2.5-1.5B-Instruct-q4f32_1-MLC",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Releases: mlc-ai/binary-mlc-llm-libs - GitHub",
+      "url": "https://github.com/mlc-ai/binary-mlc-llm-libs/releases",
+      "snippet": "Contribute to mlc-ai/binary-mlc-llm-libs development by creating an account on GitHub."
+    }
+  ]
+}

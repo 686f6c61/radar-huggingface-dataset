@@ -5,7 +5,7 @@
   "author": "xtools-at",
   "url": "https://huggingface.co/xtools-at/Qwen3.5-4B-Medical-Reasoning-GGUF",
   "created_at": "2026-10-08T17:45:25.000Z",
-  "updated_at": "2026-10-08T17:50:25.000Z",
+  "updated_at": "2026-10-08T21:34:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,8 +23,8 @@
     "heretic",
     "en",
     "dataset:FreedomIntelligence/medical-o1-reasoning-SFT",
-    "base_model:DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
-    "base_model:quantized:DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+    "base_model:xtools-at/Qwen3.5-4B-Medical-Reasoning",
+    "base_model:quantized:xtools-at/Qwen3.5-4B-Medical-Reasoning",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
@@ -37,7 +37,7 @@
   "parameters_human": "4.21B",
   "storage_bytes": 13397115360,
   "storage_human": "13.4 GB",
-  "base_model": "DavidAU/Qwen3.5-4B-Claude-4.6-OS-Auto-Variable-HERETIC-UNCENSORED-THINKING",
+  "base_model": "xtools-at/Qwen3.5-4B-Medical-Reasoning",
   "formats": [
     "gguf"
   ],

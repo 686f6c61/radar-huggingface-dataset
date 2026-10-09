@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "davidwdw/t73-eval-c28-inst17-b0386a45d5b0",
+  "slug": "davidwdw-t73-eval-c28-inst17-b0386a45d5b0",
+  "author": "davidwdw",
+  "url": "https://huggingface.co/davidwdw/t73-eval-c28-inst17-b0386a45d5b0",
+  "created_at": "2026-10-08T19:55:44.000Z",
+  "updated_at": "2026-10-08T19:56:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138139602,
+  "storage_human": "138 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-native-eval-runtime-20260926-b7202db1c37f",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "davidwdw/fa-eval-all-h13-79999-31a430f925de · Hugging Face",
+      "url": "https://huggingface.co/davidwdw/fa-eval-all-h13-79999-31a430f925de",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - digininja/DVWA: Damn Vulnerable Web Application (DVWA)",
+      "url": "https://github.com/digininja/DVWA",
+      "snippet": "Damn Vulnerable Web Application (DVWA). Contribute to digininja/DVWA development by creating an account on GitHub."
+    },
+    {
+      "title": "NVD - Search",
+      "url": "https://nvd.nist.gov/search",
+      "snippet": "Search Please make use of the interactive search interfaces to find information in the database!"
+    },
+    {
+      "title": "GitHub - stamparm/DSVW: Damn Small Vulnerable Web",
+      "url": "https://github.com/stamparm/DSVW",
+      "snippet": "Damn Small Vulnerable Web (DSVW) is a deliberately vulnerable web application written in under 100 lines of code, created for educational purposes. It supports majority of (most popular) web application vulnerabilities together with appropriate attacks."
+    }
+  ]
+}

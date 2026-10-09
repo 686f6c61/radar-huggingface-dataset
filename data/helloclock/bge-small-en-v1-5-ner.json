@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "helloclock/bge-small-en-v1.5-ner",
+  "slug": "helloclock-bge-small-en-v1-5-ner",
+  "author": "helloclock",
+  "url": "https://huggingface.co/helloclock/bge-small-en-v1.5-ner",
+  "created_at": "2026-10-08T20:14:53.000Z",
+  "updated_at": "2026-10-08T20:25:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 1328869610,
+  "storage_human": "1.3 GB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-small-en-v1.5 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en-v1.5",
+      "snippet": "Suggest to use bge v1.5, which alleviates the issue of the similarity distribution. Since we finetune the models by contrastive learning with a temperature of 0.01, the similarity distribution of the current BGE model is about in the interval [0.6, 1]. So a similarity score greater than 0.5 does not indicate that the two sentences are similar."
+    },
+    {
+      "title": "BAAI/bge-small-en · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-small-en",
+      "snippet": "Recommend switching to newest BAAI/bge-small-en-v1.5, which has more reasonable similarity distribution and same method of usage. FlagEmbedding Model List | FAQ | Usage | Evaluation | Train | Citation | License More details please refer to our Github: FlagEmbedding. English | 中文 FlagEmbedding focus on retrieval-augmented LLMs, consisting of following projects currently: Fine-tuning of LM ..."
+    },
+    {
+      "title": "bge-small-en-v1.5 — Embedding Model by BAAI | Model Database",
+      "url": "https://modeldatabase.com/BAAI/bge-small-en-v1.5.html",
+      "snippet": "BAAI/bge-small-en-v1.5 is an open source embedding model built with sentence-transformers, 193 downloads. Compare and deploy AI models on Model Database."
+    },
+    {
+      "title": "BGE Small EN v1.5 by BGE — Embedding Model | Vincony",
+      "url": "https://vincony.com/models/bge-bge-small-en-v1.5",
+      "snippet": "BGE Small EN v1.5 is the smallest model in the BGE (BAAI General Embedding) series from the Beijing Academy of Artificial Intelligence (BAAI). Despite its compact size, it achieves competitive retrieval performance by leveraging the same training methodology — including instruction-tuned contrastive learning — used across the BGE family."
+    },
+    {
+      "title": "bge-small-en-v1.5 Open-Weight AI Model | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/bge-small-en-v1-5/",
+      "snippet": "bge-small-en-v1.5 Small English BGE embedding checkpoint for low-overhead semantic search and retrieval on local or cost-sensitive deployments."
+    }
+  ]
+}

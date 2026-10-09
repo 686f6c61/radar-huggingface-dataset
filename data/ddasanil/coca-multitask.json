@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ddasanil/coca-multitask",
+  "slug": "ddasanil-coca-multitask",
+  "author": "ddasanil",
+  "url": "https://huggingface.co/ddasanil/coca-multitask",
+  "created_at": "2026-10-08T19:54:27.000Z",
+  "updated_at": "2026-10-08T19:54:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayaansingh/coca-multitask · Hugging Face",
+      "url": "https://huggingface.co/ayaansingh/coca-multitask",
+      "snippet": "Overview A research-oriented Coca prototype targeting Multitask. The included large setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "rodriguezalexander/coca-multitask · Hugging Face",
+      "url": "https://huggingface.co/rodriguezalexander/coca-multitask",
+      "snippet": "rodriguezalexander / coca-multitask Like 0 Safetensors PyTorch coca multitask License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Coca for Multitask Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Best 50+ Open Source AI Agents Listed",
+      "url": "https://aimultiple.com/open-source-ai-agents",
+      "snippet": "Everyone has been building AI agents so after hands-on testing with popular AI coding agents, AI agent builders and tools use benchmarks to evaluate their real-world capabilities, we put together a curated list of the best 50+ open source AI agents. Click the category headers to jump straight to our top picks:"
+    },
+    {
+      "title": "DAMO Academy Unveils COCA: AI Model for Colorectal Cancer Detection",
+      "url": "https://www.alibabacloud.com/blog/603073",
+      "snippet": "The advanced AI model can detect colorectal cancer with high accuracy and improved early detection rates. It is part of Alibaba DAMO Academy&#x27;s broader effort to build AI-powered screening tools for multiple cancers using existing CT imaging data."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    }
+  ]
+}

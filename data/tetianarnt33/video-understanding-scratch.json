@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "tetianarnt33/video-understanding-scratch",
+  "slug": "tetianarnt33-video-understanding-scratch",
+  "author": "tetianarnt33",
+  "url": "https://huggingface.co/tetianarnt33/video-understanding-scratch",
+  "created_at": "2026-10-09T00:22:33.000Z",
+  "updated_at": "2026-10-09T00:22:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "video-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How does obfuscated code execute a built in function in Lua",
+      "url": "https://stackoverflow.com/questions/79124153/how-does-obfuscated-code-execute-a-built-in-function-in-lua",
+      "snippet": "Oct 25, 2024 · As the developer of the tool, I can confirm that the following code is used local tmp = \"print\" -- this is wrapped in a …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/2084561294967956649",
+      "snippet": "沙特首都利雅得遭空袭总台记者获悉，当地时间19日凌晨，沙特首都利雅得遭到空袭，上空传来导弹拦截的声音…"
+    }
+  ]
+}

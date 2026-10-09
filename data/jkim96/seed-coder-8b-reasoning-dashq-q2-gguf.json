@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "jkim96/Seed-Coder-8B-Reasoning-DASHQ-Q2-GGUF",
+  "slug": "jkim96-seed-coder-8b-reasoning-dashq-q2-gguf",
+  "author": "jkim96",
+  "url": "https://huggingface.co/jkim96/Seed-Coder-8B-Reasoning-DASHQ-Q2-GGUF",
+  "created_at": "2026-10-08T19:28:29.000Z",
+  "updated_at": "2026-10-08T19:34:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dashq",
+    "quantized",
+    "text-generation",
+    "base_model:ByteDance-Seed/Seed-Coder-8B-Reasoning",
+    "base_model:quantized:ByteDance-Seed/Seed-Coder-8B-Reasoning",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 12141612288,
+  "storage_human": "12.1 GB",
+  "base_model": "ByteDance-Seed/Seed-Coder-8B-Reasoning",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La vidéo à la demande ne fonctionne pas sura box canal. J'appuie sur ...",
+      "url": "https://assistance.canalplus.com/questions/3088393-video-demande-fonctionne-sura-box-canal-appuie-lecture-rien",
+      "snippet": "Dec 27, 2022 · Bonjour, Je ne peux plus regarder de vidéo à la demande su rma tv via le décodeur canal. J'appui sur lecture mais …"
+    }
+  ]
+}

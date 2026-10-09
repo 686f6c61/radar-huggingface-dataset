@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "flydexo/bad-laya",
+  "slug": "flydexo-bad-laya",
+  "author": "flydexo",
+  "url": "https://huggingface.co/flydexo/bad-laya",
+  "created_at": "2026-10-08T06:13:28.000Z",
+  "updated_at": "2026-10-08T22:54:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "multiple-choice",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "decision-model",
+    "multiple-choice",
+    "modernbert",
+    "experimental",
+    "bf16",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421029889,
+  "parameters_human": "421.0M",
+  "storage_bytes": 894577148,
+  "storage_human": "895 MB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laya AI Model: How It Works, Run It Locally, and Evaluate It",
+      "url": "https://huggingface.co/blog/sora-2/laya-ai-model-how-it-works-run-it-locally-and-eval",
+      "snippet": "A Blog post by bna on Hugging Face"
+    },
+    {
+      "title": "flydexo (Mathéo LD) - Hugging Face",
+      "url": "https://huggingface.co/flydexo",
+      "snippet": "User profile of Mathéo LD on Hugging Face"
+    },
+    {
+      "title": "Laya AI — System One Decision Model",
+      "url": "https://laya-model.com/",
+      "snippet": "Laya AI · System One Laya AI — System One Decision Model Typed decisions for agents and software — choice, score, and yes/no in one forward pass. Hosted prepaid API here; Apache 2.0 weights if you run locally."
+    },
+    {
+      "title": "GitHub - NandhaKishorM/laya: Non-autoregressive System 1 decision ...",
+      "url": "https://github.com/NandhaKishorM/laya",
+      "snippet": "Non-autoregressive System 1 decision engine. Typed choice, score and yes/no decisions over any text in a single forward pass, in 100+ languages, with a router that picks the right checkpoint per request. - NandhaKishorM/laya"
+    },
+    {
+      "title": "Laya AI Docs: Short Text Decisions & Model Setup",
+      "url": "https://laya-ai.pro/docs",
+      "snippet": "Start with Laya AI&#x27;s English or multilingual model, fit short text within token budgets, read typed decisions, and connect the hosted API or run Laya locally."
+    }
+  ]
+}

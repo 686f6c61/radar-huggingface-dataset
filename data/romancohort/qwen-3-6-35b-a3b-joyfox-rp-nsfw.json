@@ -5,7 +5,7 @@
   "author": "RomanCohort",
   "url": "https://huggingface.co/RomanCohort/Qwen-3.6-35B-A3B-joyfox-RP-NSFW",
   "created_at": "2026-10-05T16:15:21.000Z",
-  "updated_at": "2026-10-07T13:19:21.000Z",
+  "updated_at": "2026-10-08T15:29:02.000Z",
   "license": "see-base-model-licenses",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 57052240,
-  "storage_human": "57 MB",
+  "storage_bytes": 114104480,
+  "storage_human": "114 MB",
   "base_model": "JoyFox-Qwen3.6-35B-A3B-RP-Aggressive",
   "formats": [
     "safetensors"

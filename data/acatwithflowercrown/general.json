@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "acatwithflowercrown/General",
+  "slug": "acatwithflowercrown-general",
+  "author": "acatwithflowercrown",
+  "url": "https://huggingface.co/acatwithflowercrown/General",
+  "created_at": "2026-10-08T23:46:23.000Z",
+  "updated_at": "2026-10-08T23:46:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:inclusionAI/Ming-Image-0.1-Design",
+    "base_model:adapter:inclusionAI/Ming-Image-0.1-Design",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193839,
+  "storage_human": "193839 B",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Cat With a Flower Crown - meowgical! - DrawGPT - Fun & Free AI Art ...",
+      "url": "https://drawgpt.ai/prompt/29469/",
+      "snippet": "A Cat With a Flower Crown - meowgical! - DrawGPT generates any drawing or image instantly for free using AI like ChatGPT, OpenAI, Google Gemini, Scenario.gg, and more. Download your AI art for free as a PNG, SVG, or even Javascript code to render it anywhere!"
+    },
+    {
+      "title": "AI Image Generator — Photorealistic AI | MakeCorn",
+      "url": "https://www.makecorn.com/ai-image-generator",
+      "snippet": "AI Image Generator Generate stunning images from text prompts using 10+ AI models. Edit outfits, swap faces, change backgrounds — all in one platform."
+    },
+    {
+      "title": "Flower Crown - AI Generated Flower Crown Drawings, Images, Pictures ...",
+      "url": "https://drawgpt.ai/tag/flower-crown/",
+      "snippet": "AI generated images of Flower Crown created using GPT-3, GPT-4, and ChatGPT. DrawGPT is a website that generates AI art and drawing using language based AI models to generate images and art."
+    },
+    {
+      "title": "AI Image Generator: Create Images Free Online | FLORA",
+      "url": "https://flora.ai/ai-image-generator",
+      "snippet": "Generate AI images online with FLORA&#x27;s free AI image generator. Make your own AI picture from a prompt and edit it across 50+ models, right in your browser."
+    },
+    {
+      "title": "AI Image Generator — Create Images with AI | Gendia",
+      "url": "https://gendia.ai/ai-image-generator",
+      "snippet": "AI Image Generator Generate images from text prompts with AI. Access 15+ models including Flux, Seedream, GPT Image, Imagen 4, and more — all in one platform."
+    }
+  ]
+}

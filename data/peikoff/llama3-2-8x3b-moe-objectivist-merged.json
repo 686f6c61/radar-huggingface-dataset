@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "peikoff/llama3-2-8x3b-moe-objectivist-merged",
+  "slug": "peikoff-llama3-2-8x3b-moe-objectivist-merged",
+  "author": "peikoff",
+  "url": "https://huggingface.co/peikoff/llama3-2-8x3b-moe-objectivist-merged",
+  "created_at": "2026-10-08T21:44:19.000Z",
+  "updated_at": "2026-10-08T22:02:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mixtral",
+    "text-generation",
+    "merged",
+    "objectivism",
+    "philosophy",
+    "lora",
+    "qlora",
+    "conversational",
+    "en",
+    "base_model:DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B",
+    "base_model:adapter:DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18404944896,
+  "parameters_human": "18.40B",
+  "storage_bytes": 36827209924,
+  "storage_human": "36.8 GB",
+  "base_model": "DavidAU/Llama-3.2-8X3B-MOE-Dark-Champion-Instruct-uncensored-abliterated-18.4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open-source AI Models for Any Application | Llama 3",
+      "url": "https://dev.meta.ai/llama/models/llama-3",
+      "snippet": "Discover Llama 3&#x27;s open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions."
+    },
+    {
+      "title": "meta-llama3 · PyPI",
+      "url": "https://pypi.org/project/meta-llama3/",
+      "snippet": "Our model and weights are licensed for researchers and commercial entities, upholding the principles of openness. Our mission is to empower individuals and industry through this opportunity while fostering an environment of discovery and ethical AI advancements."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) is a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    },
+    {
+      "title": "Llama3 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/llama3",
+      "snippet": "Overview The Llama3 model was proposed in Introducing Meta Llama 3: The most capable openly available LLM to date by the meta AI team."
+    },
+    {
+      "title": "Llama 3 Guide: Every Size from 1B to 405B | InsiderLLM",
+      "url": "https://insiderllm.com/guides/llama-3-guide-every-size/",
+      "snippet": "Complete Llama 3 guide covering every model from 1B to 405B. VRAM requirements, Ollama setup, benchmarks vs Qwen 3, and which size fits your hardware."
+    }
+  ]
+}

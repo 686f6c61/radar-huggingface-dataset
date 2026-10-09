@@ -5,7 +5,7 @@
   "author": "engmauriciodias33",
   "url": "https://huggingface.co/engmauriciodias33/aura-sovereign-fleet",
   "created_at": "2026-09-25T20:18:00.000Z",
-  "updated_at": "2026-10-08T03:54:16.000Z",
+  "updated_at": "2026-10-09T03:55:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,24 +13,20 @@
   "languages": [],
   "tags": [
     "safetensors",
-    "gguf",
-    "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 4170,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 5021397008288,
-  "storage_human": "5021.4 GB",
+  "storage_bytes": 5141018148528,
+  "storage_human": "5141.0 GB",
   "base_model": null,
   "formats": [
-    "gguf",
     "safetensors"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

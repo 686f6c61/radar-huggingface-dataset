@@ -5,7 +5,7 @@
   "author": "nevermindai",
   "url": "https://huggingface.co/nevermindai/carejev-omni",
   "created_at": "2026-10-04T21:22:52.000Z",
-  "updated_at": "2026-10-04T21:24:08.000Z",
+  "updated_at": "2026-10-08T05:08:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 78,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 11959730224,
   "parameters_human": "11.96B",
-  "storage_bytes": 32354454241,
-  "storage_human": "32.4 GB",
+  "storage_bytes": 40757189448,
+  "storage_human": "40.8 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [
     "safetensors"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zed122/merged",
+  "slug": "zed122-merged",
+  "author": "zed122",
+  "url": "https://huggingface.co/zed122/merged",
+  "created_at": "2026-10-08T22:41:16.000Z",
+  "updated_at": "2026-10-08T22:52:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3087466904,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct, Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zed122 (des) - Hugging Face",
+      "url": "https://huggingface.co/zed122/models",
+      "snippet": "User profile of des on Hugging Face"
+    },
+    {
+      "title": "zed122/Qwen2.5-0.5B-Q5_0-GGUF · Hugging Face",
+      "url": "https://huggingface.co/zed122/Qwen2.5-0.5B-Q5_0-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Zed-Hosted Models | Zed-Hosted Models - Zed",
+      "url": "https://zed.dev/docs/account/zed-hosted-models",
+      "snippet": "Zed&#x27;s plans offer hosted versions of major LLMs with higher rate limits than direct API access. Model availability is updated regularly. To use your own API keys instead, see LLM Providers. For general setup, see AI Quick Start. Note: Zed Pro and Zed Business include all models listed below. The Student plan does not include Claude Fable, Claude Opus, GPT-6 Astra, GPT-5.5 pro, or GPT-5.4 pro ..."
+    },
+    {
+      "title": "Zed 1.22 Lets AI Agents Pick Their Own Models Mid-Session",
+      "url": "https://hermes-ai.net/news/zed-1-22-lets-ai-agents-pick-their-own-models-mid-session/",
+      "snippet": "Zed 1.22 lets the built-in agent spawn subagents on different models, adds automatic context compaction, and dynamically fetches OpenCode models without app updates."
+    }
+  ]
+}

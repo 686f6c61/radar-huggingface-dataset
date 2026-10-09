@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joerunde/gemma-4-moe-nano",
+  "slug": "joerunde-gemma-4-moe-nano",
+  "author": "joerunde",
+  "url": "https://huggingface.co/joerunde/gemma-4-moe-nano",
+  "created_at": "2026-10-08T19:42:31.000Z",
+  "updated_at": "2026-10-08T19:42:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "testing",
+    "spyre",
+    "not-for-inference",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 129359046,
+  "parameters_human": "129.4M",
+  "storage_bytes": 290908558,
+  "storage_human": "291 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Safety Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Gemma 4 features a context window of up to 256K tokens and maintains multilingual support in over 140 languages. Featuring both Dense and Mixture-of-Experts (MoE) architectures, Gemma 4 is well-suited for tasks like text generation, coding, and reasoning. The models are available in five distinct sizes: E2B, E4B, 12B, 26B A4B, and 31B."
+    },
+    {
+      "title": "Announcing Gemma 4 in the AICore Developer Preview",
+      "url": "https://developer.android.com/blog/posts/announcing-gemma-4-in-the-ai-core-developer-preview",
+      "snippet": "Select the Gemini Nano 4 Fast model in the Developer Preview UI to see its blazing fast inference speed in action before you write any code Because Gemma 4 natively supports over 140 languages, you can expect improved localized, multilingual experiences for your global audience."
+    },
+    {
+      "title": "Announcing Gemma 4 in the AICore Developer Preview",
+      "url": "https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html",
+      "snippet": "At Google, we&#x27;re committed to bringing the most capable AI models directly to the Android devices in your pocket. Today, we&#x27;re thrilled to announce the release of our latest state-of-the-art open model: Gemma 4. These models are the foundation for the next generation of Gemini Nano, so code you write today for Gemma 4 will automatically work on Gemini Nano 4-enabled devices that will be ..."
+    },
+    {
+      "title": "Gemma 4: All Models Compared — 2B to 27B, Which to Pick (2026)",
+      "url": "https://www.aimadetools.com/blog/gemma-4-family-guide/",
+      "snippet": "Everything you need to know about Google&#x27;s Gemma 4 AI models — specs, benchmarks, hardware requirements, and which model to use for what. The definitive guide."
+    }
+  ]
+}

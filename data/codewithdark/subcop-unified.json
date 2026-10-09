@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "codewithdark/subcop-unified",
+  "slug": "codewithdark-subcop-unified",
+  "author": "codewithdark",
+  "url": "https://huggingface.co/codewithdark/subcop-unified",
+  "created_at": "2026-10-08T23:40:05.000Z",
+  "updated_at": "2026-10-08T23:40:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "conformal-prediction",
+    "uncertainty-quantification",
+    "medical-imaging",
+    "mondrian-conformal",
+    "dataset-shift",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 156633686,
+  "storage_human": "157 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Projet stratégique 2025 – 2030 - Haute Autorité de Santé",
+      "url": "https://www.has-sante.fr/upload/docs/application/pdf/2025-02/projet_strategique_2025_2030_has_version_web.pdf",
+      "snippet": "La HAS a atteint l’essentiel des objectifs qu’elle s’était fixés au cours de la période du précédent projet stratégique 2019-2024, …"
+    },
+    {
+      "title": "Projet stratégique de la HAS - Haute Autorité de Santé",
+      "url": "https://www.has-sante.fr/jcms/p_3474510/fr/projet-strategique-de-la-has",
+      "snippet": "Le projet stratégique 2025-2030 de la HAS se fonde sur les principales évolutions du secteur sanitaire, social et médico-social, et sur …"
+    },
+    {
+      "title": "Cours Stratégie Chapitre 1",
+      "url": "https://fr.scribd.com/document/1065909923/Cours-Strategie-Chapitre-1",
+      "snippet": "Selon Michael Porter, la stratégie consiste à construire un avantage concurrentiel durable en créant une position unique et …"
+    },
+    {
+      "title": "L’océan, angle mort et levier stratégique du One Health ?",
+      "url": "https://www.ifremer.fr/sites/default/files/2026-04/amers-l-ocean-angle-mort-et-levier-strategique-du-one-health_0.pdf",
+      "snippet": "1 L'océan est un espace structurant des dynamiques One Health notamment vía l'alimentation ou le transport aéroporté. Il concentre …"
+    },
+    {
+      "title": "Stratégie 2025-2030 pour répondre aux grands enjeux de santé publique",
+      "url": "https://www.santepubliquefrance.fr/docs/rapportsynthese/strategie-2025-2030-pour-repondre-aux-grands-enjeux-de-sante-publique",
+      "snippet": "Dec 10, 2025 · Santé publique France appréhende la santé dans toutes ses dimensions physiques et mentales, en tenant compte …"
+    }
+  ]
+}

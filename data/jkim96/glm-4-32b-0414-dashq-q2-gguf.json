@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jkim96/GLM-4-32B-0414-DASHQ-Q2-GGUF",
+  "slug": "jkim96-glm-4-32b-0414-dashq-q2-gguf",
+  "author": "jkim96",
+  "url": "https://huggingface.co/jkim96/GLM-4-32B-0414-DASHQ-Q2-GGUF",
+  "created_at": "2026-10-08T21:53:29.000Z",
+  "updated_at": "2026-10-08T22:12:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "dashq",
+    "quantized",
+    "text-generation",
+    "base_model:zai-org/GLM-4-32B-0414",
+    "base_model:quantized:zai-org/GLM-4-32B-0414",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32566081536,
+  "parameters_human": "32.57B",
+  "storage_bytes": 44028152832,
+  "storage_human": "44.0 GB",
+  "base_model": "zai-org/GLM-4-32B-0414",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-4-32B-0414 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-4-32B-0414",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GLM-4-0414 - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v5.1.0/model_doc/glm4",
+      "snippet": "The GLM family welcomes new members GLM-4-0414 series models. The GLM-4-32B-0414 series models, featuring 32 billion parameters. Its performance is comparable to OpenAI&#x27;s GPT series and DeepSeek&#x27;s V3/R1 series. It also supports very user-friendly local deployment features. GLM-4-32B-Base-0414 was pre-trained on 15T of high-quality data, including substantial reasoning-type synthetic data ..."
+    },
+    {
+      "title": "GLM-4-0414 Model Series - GitHub",
+      "url": "https://github.com/zai-org/GLM-4?tab=readme-ov-file",
+      "snippet": "📍The open-source models released this time can be experienced for free at Z.ai; for GLM commercial model services, please visit bigmodel.cn. The GLM family welcomes new members, the GLM-4-32B-0414 series models, featuring 32 billion parameters. Its performance is comparable to OpenAI&#x27;s GPT ..."
+    },
+    {
+      "title": "GLM-4-0414: install and run the 32B and 9B models",
+      "url": "https://hysenlabs.com/en/projects/zai-org-glm-4",
+      "snippet": "The README describes four model variants released on 2025/04/14. GLM-4-32B-0414 is the base dialogue model, pre-trained on 15T of data and post-trained with human preference alignment. GLM-Z1-32B-0414 is a reasoning model built from the 32B base through cold start and extended reinforcement learning on mathematics, code and logic."
+    },
+    {
+      "title": "GLM-4 download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/glm-4.mirror/",
+      "snippet": "Download GLM-4 for free. GLM-4 series: Open Multilingual Multimodal Chat LMs. GLM-4 is a family of open models from ZhipuAI that spans base, chat, and reasoning variants at both 32B and 9B scales, with long-context support and practical local-deployment options. The GLM-4-32B-0414 models are trained on ~15T high-quality data (including substantial synthetic reasoning data), then post-trained ..."
+    }
+  ]
+}

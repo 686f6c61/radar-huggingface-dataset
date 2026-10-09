@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF",
+  "slug": "schonsense-llama3-3-70b_oncefuturepunk_v0-1a-gguf",
+  "author": "schonsense",
+  "url": "https://huggingface.co/schonsense/Llama3.3-70B_oncefuturepunk_v0.1a-GGUF",
+  "created_at": "2026-10-08T12:17:57.000Z",
+  "updated_at": "2026-10-08T23:48:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:schonsense/Llama3.3-70B_oncefuturepunk_v0.1a",
+    "base_model:quantized:schonsense/Llama3.3-70B_oncefuturepunk_v0.1a",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 168809326113,
+  "storage_human": "168.8 GB",
+  "base_model": "schonsense/Llama3.3-70B_oncefuturepunk_v0.1a",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Photofeeler | Unbiased Photo Feedback for Business, Social, and …",
+      "url": "https://www.photofeeler.com/",
+      "snippet": "Improve your online presence with real feedback on your business, social, and dating photos. Photofeeler provides trusted human …"
+    },
+    {
+      "title": "Photofeeler | Log In",
+      "url": "https://www.photofeeler.com/login",
+      "snippet": "Already have a Photofeeler account? Awesome! Returning users log in here."
+    },
+    {
+      "title": "Profiled by Photofeeler- Expert Tips for Business, Social, and Dating ...",
+      "url": "https://blog.photofeeler.com/",
+      "snippet": "Proven tips and strategies to enhance your business, social media and online dating profiles. Profiled by Photofeeler helps you stand …"
+    },
+    {
+      "title": "Why Your AI Headshot Looks “Wrong” to You (But Right to Everyone …",
+      "url": "https://blog.photofeeler.com/ai-headshot-perception/",
+      "snippet": "Apr 12, 2025 · ChatGPT’s AI-generated headshots are all over Twitter and Threads, starting fights and creating confusion. Nobody …"
+    },
+    {
+      "title": "Sign Up - Photofeeler",
+      "url": "https://www.photofeeler.com/signup",
+      "snippet": "Test your pics or weigh in with helpful feedback! Get started with Photofeeler. Sign Up here."
+    }
+  ]
+}

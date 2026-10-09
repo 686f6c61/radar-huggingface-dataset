@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "crusoeai/Qwen3.8-27B-FFT",
+  "slug": "crusoeai-qwen3-8-27b-fft",
+  "author": "crusoeai",
+  "url": "https://huggingface.co/crusoeai/Qwen3.8-27B-FFT",
+  "created_at": "2026-10-08T20:59:34.000Z",
+  "updated_at": "2026-10-08T20:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NHIndustries NH90 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/NHIndustries_NH90",
+      "snippet": "NHI assure le management du programme NH90, la mercatique et le soutien après-vente. En juin 2001, le Portugal rejoint le …"
+    },
+    {
+      "title": "NHIndustries NH90 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NHIndustries_NH90",
+      "snippet": "The NH90 was developed in response to North Atlantic Treaty Organization (NATO) requirements for a battlefield helicopter that …"
+    },
+    {
+      "title": "NH90 - Airbus",
+      "url": "https://www.airbus.com/en/products-services/helicopters/military-helicopters/nh90",
+      "snippet": "The NH90 – developed by Europe’s NHIndustries partnership (Airbus Helicopters, Leonardo Helicopters, and Fokker Aerostructures) …"
+    },
+    {
+      "title": "NH90 NFH Maritime NATO Frigate Helicopter - NH Industries",
+      "url": "https://www.nhindustries.com/nh90-helicopter/nh90-nfh-nato-frigate-helicopter/",
+      "snippet": "The NH90 features a redundant fly-by-wire system, a full composite, corrosion-free airframe, two powerful engines, a fully integrated …"
+    },
+    {
+      "title": "L'hélicoptère NH90 - Ministère des Armées",
+      "url": "https://www.defense.gouv.fr/dga/lhelicoptere-nh90",
+      "snippet": "Le NH90 est un hélicoptère biturbine de la classe des 11 tonnes avec un système d’armes intégré et des commandes de vol …"
+    }
+  ]
+}

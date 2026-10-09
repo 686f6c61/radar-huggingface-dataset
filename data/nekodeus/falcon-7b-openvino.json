@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/falcon-7b-openvino",
+  "slug": "nekodeus-falcon-7b-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/falcon-7b-openvino",
+  "created_at": "2026-10-08T21:08:05.000Z",
+  "updated_at": "2026-10-08T21:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "falcon",
+    "int8",
+    "text-generation",
+    "llm",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6929180908,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patrick Vellner | CrossFit",
+      "url": "https://games.crossfit.com/athlete/158264",
+      "snippet": "View Patrick Vellner's CrossFit Games stats, event history, rankings, and performance highlights. Follow their CrossFit journey here!"
+    },
+    {
+      "title": "Patrick Vellner - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Patrick_Vellner",
+      "snippet": "Patrick Vellner is a Canadian CrossFit athlete who has eight individual appearances at the CrossFit Games, including three 2nd and …"
+    },
+    {
+      "title": "Patrick Vellner (@pvellner) • Instagram photos and videos",
+      "url": "https://www.instagram.com/pvellner/",
+      "snippet": "612K Followers, 714 Following, 2,800 Posts - Patrick Vellner (@pvellner) on Instagram: \"D.C. CrossFit Games …"
+    },
+    {
+      "title": "Patrick Vellner Announces Retirement Following Injury at 2026 WFP …",
+      "url": "https://fitnessvolt.com/patrick-vellner-retirement-following-injury-2026-wfp-grand-park-pro/",
+      "snippet": "Sep 2, 2026 · Patrick Vellner, a multi-time Rogue Invitational champion and former CrossFit Games runner-up, recently competed at …"
+    },
+    {
+      "title": "Patrick Vellner | Well, my final @crossfitgames chapter has been ...",
+      "url": "https://www.instagram.com/p/DbVspECFP6x/",
+      "snippet": "CrossFit taught me so much about discipline, perseverance, humility, and simply showing up. But one lesson I’m continuing to carry …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rizkypratama/my-contrastive",
+  "slug": "rizkypratama-my-contrastive",
+  "author": "rizkypratama",
+  "url": "https://huggingface.co/rizkypratama/my-contrastive",
+  "created_at": "2026-10-08T23:01:19.000Z",
+  "updated_at": "2026-10-08T23:01:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rizkypratama (Rizky A. Pratama) - Hugging Face",
+      "url": "https://huggingface.co/rizkypratama/models",
+      "snippet": "User profile of Rizky A. Pratama on Hugging Face"
+    },
+    {
+      "title": "rizkypratama/project-contrastive13 · Hugging Face",
+      "url": "https://huggingface.co/rizkypratama/project-contrastive13",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rizkyp.com — Rizky Pratama",
+      "url": "https://rizkyp.com/",
+      "snippet": "robotics arduino raspberry pi sensors Dice Tower Trained a YOLO Model to detect and classify sides of a D6 on a dice tower. Dice tower designed using Fusion360 and fabricated on an XTool P2S laser cutter."
+    },
+    {
+      "title": "Archive - MechatronicNote",
+      "url": "https://rizkypratama.substack.com/archive",
+      "snippet": "How can AI help solve the world&#x27;s energy crisis by discovering new materials faster? Jul 17, 2025• Rizky Pratama 1"
+    },
+    {
+      "title": "MechatronicNote | Rizky Pratama | Substack",
+      "url": "https://rizkypratama.substack.com/",
+      "snippet": "MechatronicNote is a Substack publication featuring personal essays, cultural insights, and thoughtful on World of Mechatronic commentary from an Indonesian perspective. Click to read MechatronicNote, by Rizky Pratama, a Substack publication. Launched a year ago."
+    }
+  ]
+}

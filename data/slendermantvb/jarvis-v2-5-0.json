@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "slendermantvb/jarvis-v2.5.0",
+  "slug": "slendermantvb-jarvis-v2-5-0",
+  "author": "slendermantvb",
+  "url": "https://huggingface.co/slendermantvb/jarvis-v2.5.0",
+  "created_at": "2026-10-08T21:43:35.000Z",
+  "updated_at": "2026-10-08T21:43:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "custom-model",
+    "spanish",
+    "mixture-of-experts",
+    "symbolic-ai",
+    "lisp",
+    "text-generation",
+    "es",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 78846484,
+  "parameters_human": "78.8M",
+  "storage_bytes": 315402720,
+  "storage_human": "315 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jarvis — The AI That Lives on Your Desktop",
+      "url": "https://jarvisapp.in/",
+      "snippet": "A living interface. Jarvis wakes on your desktop — listening, thinking, and responding the instant you speak."
+    },
+    {
+      "title": "GitHub - Blazehue/J.A.R.V.I.S: Jarvis V2 - A Python-based desktop AI ...",
+      "url": "https://github.com/Blazehue/J.A.R.V.I.S",
+      "snippet": "Jarvis V2 is a sophisticated desktop AI assistant that brings the power of voice-controlled computing to your fingertips. Inspired by Tony Stark&#x27;s JARVIS from the Marvel Cinematic Universe, this assistant combines natural language processing, system automation, and intelligent task management to transform how you interact with your computer. Whether you&#x27;re launching applications, managing ..."
+    },
+    {
+      "title": "GitHub - open-jarvis/OpenJarvis: Personal AI, On Personal Devices",
+      "url": "https://github.com/open-jarvis/OpenJarvis",
+      "snippet": "Personal AI, On Personal Devices. Contribute to open-jarvis/OpenJarvis development by creating an account on GitHub."
+    },
+    {
+      "title": "JARVIS — Autonomous AI Assistant",
+      "url": "https://my-jarvis.org/",
+      "snippet": "JARVIS keeps routine intelligence close to the metal. Qwen 2.5, Qwythos-9B, and Gemma run locally through Ollama on Apple Silicon—private, responsive, and available without a round trip to the cloud. When a mission demands deeper context or heavier reasoning, the same orchestration layer routes work to Google Cloud Vertex AI, Gemini, Claude, DeepSeek, OpenRouter, or your own provider."
+    },
+    {
+      "title": "Jarvis - Agentic AI Assistant",
+      "url": "https://jarvis.foundation/",
+      "snippet": "Jarvis is an agentic AI assistant able to handle real-world tasks autonomously without human intervention, even using multiple different tools."
+    }
+  ]
+}

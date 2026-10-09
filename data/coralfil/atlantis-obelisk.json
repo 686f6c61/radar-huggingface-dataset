@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Coralfil/Atlantis-Obelisk",
+  "slug": "coralfil-atlantis-obelisk",
+  "author": "Coralfil",
+  "url": "https://huggingface.co/Coralfil/Atlantis-Obelisk",
+  "created_at": "2026-10-09T00:19:43.000Z",
+  "updated_at": "2026-10-09T00:20:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "marine-science",
+    "oceanography",
+    "fisheries-compliance",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286763985,
+  "storage_human": "287 MB",
+  "base_model": "unsloth/Qwen2.5-14B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coralfil-Atlantis (Coralfil inc) - Hugging Face",
+      "url": "https://huggingface.co/Coralfil-Atlantis",
+      "snippet": "Org profile for Coralfil inc on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Coralfil OS | #1 Resource for Marine Professionals & Restoration",
+      "url": "https://os.coralfil.com/start",
+      "snippet": "Coralfil OS is the world&#x27;s leading AI-enhanced marine restoration system. Discover advanced coral reef analysis, the Atlantis Console, and insights for marine professionals."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=coralfill",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Coralfil · GitHub",
+      "url": "https://github.com/Coralfil",
+      "snippet": "The AI-Q NVIDIA Blueprint is an open reference example for building intelligent AI agents that connect to your enterprise data, reason using state-of-the-art models, and deliver trusted business insights."
+    },
+    {
+      "title": "Coral Obelisk - 3D model by BaiChuan0427 - Sketchfab",
+      "url": "https://sketchfab.com/3d-models/coral-obeli[REDACTED]",
+      "snippet": "This model was generated using Meshy, an AI-powered 3D creation toolkit. Meshy helps creators turn ideas into high-quality 3D models with ease. View the original ..."
+    }
+  ]
+}

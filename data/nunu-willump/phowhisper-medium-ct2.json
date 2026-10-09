@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nunu-willump/PhoWhisper-medium-ct2",
+  "slug": "nunu-willump-phowhisper-medium-ct2",
+  "author": "nunu-willump",
+  "url": "https://huggingface.co/nunu-willump/PhoWhisper-medium-ct2",
+  "created_at": "2026-10-09T00:07:34.000Z",
+  "updated_at": "2026-10-09T00:07:42.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ctranslate2",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "ctranslate2",
+    "whisper",
+    "faster-whisper",
+    "automatic-speech-recognition",
+    "vi",
+    "base_model:vinai/PhoWhisper-medium",
+    "base_model:finetune:vinai/PhoWhisper-medium",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1527906453,
+  "storage_human": "1.5 GB",
+  "base_model": "vinai/PhoWhisper-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vinai/PhoWhisper-medium · Hugging Face",
+      "url": "https://huggingface.co/vinai/PhoWhisper-medium",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "quocphu/PhoWhisper-ct2-FasterWhisper · Hugging Face",
+      "url": "https://huggingface.co/quocphu/PhoWhisper-ct2-FasterWhisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - VinAIResearch/PhoWhisper: PhoWhisper: Automatic Speech ...",
+      "url": "https://github.com/VinAIResearch/PhoWhisper",
+      "snippet": "We introduce PhoWhisper in five versions for Vietnamese automatic speech recognition. PhoWhisper&#x27;s robustness is achieved through fine-tuning the multilingual Whisper on an 844-hour dataset that encompasses diverse Vietnamese accents."
+    },
+    {
+      "title": "PhoWhisper-medium Open-source Speech Recognition Model - Free ...",
+      "url": "https://model.aibase.com/models/details/1938071484375502848",
+      "snippet": "PhoWhisper is a series of models designed specifically for Vietnamese automatic speech recognition (ASR). It achieves high robustness by fine-tuning the Whisper model on an 844-hour Vietnamese accent dataset."
+    },
+    {
+      "title": "PhoWhisper-medium-ct2 — AI Compliance Status Across 52 Jurisdictions | Nerq",
+      "url": "https://nerq.ai/agent/4fc3e3af-40b7-4dd0-a8f7-34eac96560be",
+      "snippet": "PhoWhisper-medium-ct2 is a model sourced from huggingface_full, with a Nerq Trust Score of D (50/100) and a compliance score of 100/100 across 52 jurisdictions."
+    }
+  ]
+}

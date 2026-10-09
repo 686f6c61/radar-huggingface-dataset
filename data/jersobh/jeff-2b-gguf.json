@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jersobh/jeff-2b-gguf",
+  "slug": "jersobh-jeff-2b-gguf",
+  "author": "jersobh",
+  "url": "https://huggingface.co/jersobh/jeff-2b-gguf",
+  "created_at": "2026-10-08T12:07:16.000Z",
+  "updated_at": "2026-10-08T21:44:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "qlora",
+    "decision-engine",
+    "routing",
+    "en",
+    "base_model:internlm/Intern-Decision-2B",
+    "base_model:quantized:internlm/Intern-Decision-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 10263520256,
+  "storage_human": "10.3 GB",
+  "base_model": "internlm/Intern-Decision-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jersobh/jeff-2b-gguf · Hugging Face",
+      "url": "https://huggingface.co/jersobh/jeff-2b-gguf",
+      "snippet": "jersobh / jeff-2b-gguf Like 0 GGUF English unsloth qlora decision-engine routing conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - firelex/jeff: Millisecond decisions, any domain: a 0.8B open ...",
+      "url": "https://github.com/firelex/jeff",
+      "snippet": "Millisecond decisions, any domain: a 0.8B open \"System 1\" model that picks between your options with calibrated probabilities. One base, swappable LoRA adapters, on your own hardware. - firelex/jeff"
+    },
+    {
+      "title": "google/gemma-2b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/google/gemma-2b-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jeff: Best AI Classification Models for Developers in 2026",
+      "url": "https://www.toolhunter.cc/tools/jeff",
+      "snippet": "What Is Jeff? Jeff is an open-source AI classification model project built around fine-tuned Qwen3.5 and Gemma 4 models for developers who need local, low-latency decisions. It accepts a situation and plain-language options, then returns probabilities, a selected option, and confidence without generating text or requiring output parsing. Jeff is one of the best AI Classification Models tools ..."
+    },
+    {
+      "title": "jersobh (Jeff Andrade) · GitHub",
+      "url": "https://github.com/jersobh",
+      "snippet": "AI: Retrieval-Augmented Generation (RAG): Building RAG pipelines with Streamlit, embeddings, and LLMs for enhanced AI responses. Large Language Models (LLMs): Deploying, fine-tuning, and integrating Ollama, LangChain, and other model frameworks."
+    }
+  ]
+}

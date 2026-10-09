@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ivanajanickova/synpred",
+  "slug": "ivanajanickova-synpred",
+  "author": "ivanajanickova",
+  "url": "https://huggingface.co/ivanajanickova/synpred",
+  "created_at": "2026-10-08T22:44:37.000Z",
+  "updated_at": "2026-10-08T22:44:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF SYNPRED: A Synergistic Approach to Multimodal Learning for Clinical ...",
+      "url": "https://papers.miccai.org/miccai-2026/paper/2011_paper.pdf",
+      "snippet": "Here we propose a multimodal generative framework that learns structured latent representations for clinical prediction. Instead of representing only char-acteristics shared across modalities, our model transparently disentangles (1) shared and (2) complementary (modality-specific) task-relevant features, and (3) residual features independent of the prediction target. We show that explicitly ..."
+    },
+    {
+      "title": "PDF SYNPRED: A Synergistic Approach to Multimodal Learning for Clinical ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/978-3-032-38172-9_56.pdf?pdf=inline%20link",
+      "snippet": "We propose SYNPRED, a synergistic prediction model for learning disen-tangled, task-relevant representations from medical modalities using a multi-modal VAE framework."
+    },
+    {
+      "title": "ivanajanickova (Ivana Janickova) · GitHub",
+      "url": "https://github.com/ivanajanickova",
+      "snippet": "ivanajanickova has 20 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "SynPred - bio.tools",
+      "url": "https://bio.tools/synpred",
+      "snippet": "SynPred (Data-Driven Molecular Design) is a tool for prediction of drug combination effects in cancer using full-agreement synergy metrics and deep learning. SynPred, which leverages state-of-the-art AI advances, specifically designed ensembles of ML and DL algorithms to link in an interdisciplinary approach omics and biophysical traits to predict anticancer drug synergy."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

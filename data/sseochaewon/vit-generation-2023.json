@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sseochaewon/vit-generation-2023",
+  "slug": "sseochaewon-vit-generation-2023",
+  "author": "sseochaewon",
+  "url": "https://huggingface.co/sseochaewon/vit-generation-2023",
+  "created_at": "2026-10-09T00:19:26.000Z",
+  "updated_at": "2026-10-09T00:19:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "DeepAI is the all-in-one creative AI platform built for everyone. We got our start in late 2016 with the first browser-based text-to-image generator (and some other generative tools). Since then, we have greatly expanded: with a single prompt, you can generate images, edit photos, chat with an AI that browses the internet, create short videos, compose original music, or chat with a realistic ..."
+    },
+    {
+      "title": "Generative AI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Generative_AI",
+      "snippet": "Generative artificial intelligence (GenAI) is a subfield of artificial intelligence (AI) that uses generative models to generate text, images, videos, audio, computer code or other forms of digital data. [1] These models learn the underlying patterns and structures of their training data, and use them to generate new data [2] in response to input, which often takes the form of natural language ..."
+    },
+    {
+      "title": "AI Image Generator - DeepAI",
+      "url": "https://deepai.org/machine-learning-model/text2img",
+      "snippet": "Transform your ideas into stunning AI art—instantly and for free. Whether you&#x27;re a creator, developer, or entrepreneur, DeepAI&#x27;s Free Online AI Image Generator gives you the power to visualize your imagination in seconds."
+    },
+    {
+      "title": "ViT Image Generation Architecture - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/image-generation-architecture-using-vit",
+      "snippet": "Collectively, ViT-based architectures for image generation offer a generalizable and flexible family of approaches where patch tokenization and global attention underpin progress in fidelity, efficiency, semantic manipulation, and robustness. Continuing research explores optimal forms of token representation, fusion for conditional generation, architecture scaling, training stability, and ..."
+    },
+    {
+      "title": "Best AI Models for Image and Video Generation | Fotor",
+      "url": "https://www.fotor.com/ai-models/",
+      "snippet": "Fotor integrates the world&#x27;s most powerful AI models for image and video generation. Compare the top AI models — FLUX, DALL·E 3, Midjourney, Stable Diffusion, Sora, Kling, Runway, and more. Find the right model and create instantly with Fotor."
+    }
+  ]
+}

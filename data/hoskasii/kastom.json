@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hoskasii/kastom",
+  "slug": "hoskasii-kastom",
+  "author": "hoskasii",
+  "url": "https://huggingface.co/hoskasii/kastom",
+  "created_at": "2026-10-08T08:04:27.000Z",
+  "updated_at": "2026-10-09T01:55:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "koko-tts",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 383,
+  "trending_score": 0,
+  "parameters": 28442212,
+  "parameters_human": "28.4M",
+  "storage_bytes": 5348486780,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Models on X: \"New AI model alert: hoskasii/kastom. It&#x27;s a text ...",
+      "url": "https://x.com/HuggingModels/status/2107104776085549314",
+      "snippet": "New AI model alert: hoskasii/kastom. It&#x27;s a text-to-speech model built on Koko TTS, with custom code and safetensors. Perfect for voice projects! #AI #TTS"
+    },
+    {
+      "title": "hoskasii (Nabad) - Hugging Face",
+      "url": "https://huggingface.co/hoskasii/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a Space about 3 hours ago ... published a Space about 3 hours ago"
+    },
+    {
+      "title": "hoskasii (Nabad) - Hugging Face",
+      "url": "https://huggingface.co/hoskasii",
+      "snippet": "Sort: Recently updated. Running . Tjby. 🔥. waye. hoskasii 1 minute ago. Running . Jagacca. 📉. vvav. hoskasii 1 day ago. models 0"
+    },
+    {
+      "title": "Creating Models | Hokusai Docs",
+      "url": "https://docs.hokus.ai/creating-models",
+      "snippet": "Creating Models This guide explains how to create and register models in the Hokusai ecosystem, including the required smart contract interactions. Overview Hokusai allows model developers to register their AI models and earn rewards when the models are improved through data contributions. Each model has its own ERC-20 token. At deployment, two allocation caps are set: a supplier allocation ..."
+    },
+    {
+      "title": "Free AI Voice Cloning Online, 75+ Languages, No Sign-up - KikiVoice",
+      "url": "https://kikivoice.ai/",
+      "snippet": "KikiVoice is a free AI voice cloning platform for creators—99% similarity, 75+ languages, no sign-up required. Upload a few seconds of audio to generate and clone realistic voices in minutes."
+    }
+  ]
+}

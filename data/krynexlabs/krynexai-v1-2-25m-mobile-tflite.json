@@ -5,7 +5,7 @@
   "author": "KrynexLabs",
   "url": "https://huggingface.co/KrynexLabs/KrynexAI-v1.2-25M-Mobile-TFLite",
   "created_at": "2026-10-03T20:51:15.000Z",
-  "updated_at": "2026-10-04T17:13:40.000Z",
+  "updated_at": "2026-10-08T15:10:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 392,
+  "downloads_30d": 408,
   "trending_score": 0,
   "parameters": 24486710,
   "parameters_human": "24.5M",

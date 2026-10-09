@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_m1_27d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s1000",
+  "created_at": "2026-10-08T19:28:59.000Z",
+  "updated_at": "2026-10-08T19:29:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51700368,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206831616,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Basilique Santa Pudenziana — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Basilique_Santa_Pudenziana",
+      "snippet": "Elle est dédiée à la sainte romaine Pudentienne, sœur de Praxède et filles de saint Pudens. Au cœur de l' abside, une des plus …"
+    },
+    {
+      "title": "Santa Pudenziana - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Santa_Pudenziana",
+      "snippet": "Ancient Roman mosaic depicting the Madonna and Child flanked by the sisters Pudenziana and Praxedes. The Chapel of Saint Zeno …"
+    },
+    {
+      "title": "Mosaïque byzantine — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mosa%C3%AFque_byzantine",
+      "snippet": "La mosaïque byzantine est un art sacré qui utilise la mosaïque dans des lieux de culte, dont l’apogée se situe entre les VIe et XVe …"
+    },
+    {
+      "title": "LA MOSAIQUE DE SAINTE-PUDENTIENNE A ROME - JSTOR",
+      "url": "https://www.jstor.org/stable/41734754",
+      "snippet": "La matière semble donc épuisée, et elle le serait réellement, sauf controverses éventuelles touchant l'étendue des remaniements …"
+    },
+    {
+      "title": "Basilique Santa Pudenziana – Rome-Roma",
+      "url": "https://www.rome-roma.net/basilique-santa-pudenziana/",
+      "snippet": "May 25, 2026 · L’intéressante mosaïque de l’abside date de 390 (elles seraient les plus anciennes de Rome après celles du …"
+    }
+  ]
+}

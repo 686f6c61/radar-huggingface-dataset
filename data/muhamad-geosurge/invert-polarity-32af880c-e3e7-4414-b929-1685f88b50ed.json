@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-32af880c-e3e7-4414-b929-1685f88b50ed",
+  "slug": "muhamad-geosurge-invert-polarity-32af880c-e3e7-4414-b929-1685f88b50ed",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-32af880c-e3e7-4414-b929-1685f88b50ed",
+  "created_at": "2026-10-08T21:26:23.000Z",
+  "updated_at": "2026-10-08T21:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamad-geosurge (Muhamad Abdurahman) - Hugging Face",
+      "url": "https://huggingface.co/muhamad-geosurge",
+      "snippet": "muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 7B•Updated about 12 hours ago"
+    },
+    {
+      "title": "muhamad-geosurge (Muhamad Abdurahman) - Hugging Face",
+      "url": "https://huggingface.co/muhamad-geosurge/models",
+      "snippet": "muhamad-geosurge/invert-polarity-bd661a77-ae88-456c-869a-336c79c8c960 7B•Updated about 12 hours ago"
+    },
+    {
+      "title": "invert-polarity-4669c667-df20-4b4c-8263-e8785f7a7bcf",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-4669c667-df20-4b4c-8263-e8785f7a7bcf",
+      "snippet": "Deploy invert-polarity-4669c667-df20-4b4c-8263-e8785f7a7bcf with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "invert-polarity-6ac9f7c1-5c49-41b9-8008-7bff1c0ffe5c",
+      "url": "https://friendli.ai/models/muhamad-geosurge/invert-polarity-6ac9f7c1-5c49-41b9-8008-7bff1c0ffe5c",
+      "snippet": "Deploy invert-polarity-6ac9f7c1-5c49-41b9-8008-7bff1c0ffe5c with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Invert Polarity F1cfb5c0 5664 44c6 Be26 627fd172b090 - AI Model ...",
+      "url": "https://free2aitools.com/model/muhamad-geosurge/invert-polarity-f1cfb5c0-5664-44c6-be26-627fd172b090",
+      "snippet": "Registry entry for model Invert Polarity F1cfb5c0 5664 44c6 Be26 627fd172b090; source metadata pending."
+    }
+  ]
+}

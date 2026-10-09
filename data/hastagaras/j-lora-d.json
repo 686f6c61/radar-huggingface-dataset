@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hastagaras/J-Lora-D",
+  "slug": "hastagaras-j-lora-d",
+  "author": "Hastagaras",
+  "url": "https://huggingface.co/Hastagaras/J-Lora-D",
+  "created_at": "2026-10-08T19:47:44.000Z",
+  "updated_at": "2026-10-08T19:55:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Hastagaras/J-EXP-17-SimPO",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Hastagaras/J-EXP-17-SimPO",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7910111848,
+  "storage_human": "7.9 GB",
+  "base_model": "Hastagaras/J-EXP-17-SimPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BrixHub — Recherche dans plus de 11 milliards de données",
+      "url": "https://brixhub.st/",
+      "snippet": "BrixHub interroge plus de 11 milliards d'enregistrements issus de fuites de données déjà rendues publiques, françaises et …"
+    },
+    {
+      "title": "BrixHub — Recherche dans plus de 11 milliards de données",
+      "url": "https://brixhub.ru/",
+      "snippet": "BrixHub interroge plus de 11 milliards d'enregistrements issus de fuites de données déjà rendues publiques. Recherche par nom, e …"
+    },
+    {
+      "title": "« 11 milliards de données » : ce moteur de recherche pirate ... - 01net",
+      "url": "https://www.01net.com/actualites/brixhub-moteur-fuites-donnees-vise-par-la-justice.html",
+      "snippet": "2 days ago · La ministre déléguée au Numérique, Anne Le Hénanff, vient de saisir la justice française contre BrixHub. Ce moteur de …"
+    },
+    {
+      "title": "BrixHub : chercher un nom sur ce moteur de données issues de fuites …",
+      "url": "https://kohenavocats.com/brixhub-chercher-nom-moteur-donnees-fuites-illegal-recel-risques-2026/",
+      "snippet": "Signalé le 5 octobre 2026 à la procureure de Paris par la ministre du Numérique, BrixHub donne accès à des données issues de …"
+    },
+    {
+      "title": "BrixHub : site d'extorsion de données personnelles — Arnaque au …",
+      "url": "https://info.signal-arnaques.com/avis-dexpert/brixhub-bdd-data-perso/",
+      "snippet": "Jun 7, 2026 · BrixHub expose des données volées et fait payer leur suppression. Certains abonnés en font du chantage, même sur …"
+    }
+  ]
+}

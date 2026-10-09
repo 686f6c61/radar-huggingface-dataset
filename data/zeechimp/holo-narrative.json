@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "zeechimp/holo-narrative",
+  "slug": "zeechimp-holo-narrative",
+  "author": "zeechimp",
+  "url": "https://huggingface.co/zeechimp/holo-narrative",
+  "created_at": "2026-10-08T19:59:27.000Z",
+  "updated_at": "2026-10-08T20:01:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "holo-narrative",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "holo-narrative",
+    "memory",
+    "associative-memory",
+    "sequence-modeling",
+    "narrative",
+    "event-sequences",
+    "temporal-memory",
+    "hyperdimensional-computing",
+    "vector-symbolic-architecture",
+    "numpy",
+    "educational",
+    "research",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeechimp (Sylv Q) - Hugging Face",
+      "url": "https://huggingface.co/zeechimp/models",
+      "snippet": "zeechimp/hv-multimodal-audio-text-v1 Audio Classification •Updated about 7 hours ago• 12 • 1"
+    },
+    {
+      "title": "zeechimp (Sylv Q) - Hugging Face",
+      "url": "https://huggingface.co/zeechimp",
+      "snippet": "zeechimp/hv-multimodal-audio-text-v1 Audio Classification •Updated about 5 hours ago• 12 • 1"
+    },
+    {
+      "title": "Building a real-time AI RPG with evolving narratives using LLMs",
+      "url": "https://community.openai.com/t/building-a-real-time-ai-rpg-with-evolving-narratives-using-llms/1379208",
+      "snippet": "I&#x27;ve been working on an AI-powered RPG where the story evolves in real-time based on player choices. The goal was to combine traditional RPG mechanics (HP, XP, inventory, progression) with dynamic LLM-generated narratives. Some of the interesting challenges we ran into: Maintaining story consistency across long sessions Preventing narrative drift when users take unexpected actions Managing ..."
+    },
+    {
+      "title": "zee - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/zeechimp/zee",
+      "snippet": "🆔 Identity & Source id hf-model--zeechimp--zee slug zeechimp--zee source huggingface author zeechimp license Apache-2.0 tags hv-intent, hv-intent-router, hyperdimensional-computing, vector-symbolic-architecture, intent-classification, tiny-models, cpu-only, few-shot, scaling-laws, text-classification, en, license:apache-2.0, model-index ..."
+    },
+    {
+      "title": "GLM (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GLM_(AI)",
+      "snippet": "GLM, short for General Language Model, is a series of open weight large language models developed by Chinese software company Z.ai. Though the first GLM model was published on 3 March 2021, it was released under the name ChatGLM as an AI -based chatbot in March 2023."
+    }
+  ]
+}

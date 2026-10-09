@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kaitlynbassford/face-analyzer-weights",
+  "slug": "kaitlynbassford-face-analyzer-weights",
+  "author": "kaitlynbassford",
+  "url": "https://huggingface.co/kaitlynbassford/face-analyzer-weights",
+  "created_at": "2026-10-08T22:41:10.000Z",
+  "updated_at": "2026-10-08T22:55:47.000Z",
+  "license": "mixed-permissive",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-analysis",
+    "opencv",
+    "mediapipe",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 389939891,
+  "storage_human": "390 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI-HuggingFace incident - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OpenAI%E2%80%93HuggingFace_incident",
+      "snippet": "Logo of Hugging Face, the main company targeted in the attack The AI startup Hugging Face provides inference and cloud computing services for AI training and deployment. It operates a widely used repository for machine learning models, datasets, and demonstration applications, processing user-uploaded content such as model weights and datasets."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 888 AI models across 625 benchmarks, with 216 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    },
+    {
+      "title": "Face Analyzer — AI Face Attributes & Estimates | LingoJam",
+      "url": "https://lingojam.org/face-analyzer",
+      "snippet": "Analyze faces in any photo with the free AI Face Analyzer — estimates for age, gender, emotion and more. Upload an image or paste a URL."
+    },
+    {
+      "title": "Find Person by Photo — Free AI Face Search 2026 | FootprintIQ",
+      "url": "https://footprintiq.app/find-person-by-photo",
+      "snippet": "Upload one photo and find the person behind it. FootprintIQ&#x27;s AI-powered image intelligence scans 400+ public platforms in seconds — dating sites, social profiles, forums and more."
+    }
+  ]
+}

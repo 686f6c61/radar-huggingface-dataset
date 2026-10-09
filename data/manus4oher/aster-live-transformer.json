@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "manus4oHER/aster-live-transformer",
+  "slug": "manus4oher-aster-live-transformer",
+  "author": "manus4oHER",
+  "url": "https://huggingface.co/manus4oHER/aster-live-transformer",
+  "created_at": "2026-10-06T15:28:50.000Z",
+  "updated_at": "2026-10-09T02:15:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "aster_live_transformer",
+    "transformer",
+    "from-scratch",
+    "continual-learning",
+    "self-supervised-learning",
+    "research",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 117,
+  "trending_score": 0,
+  "parameters": 4342550469,
+  "parameters_human": "4.34B",
+  "storage_bytes": 690658883200,
+  "storage_human": "690.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "manus4oHER (ma chan) - Hugging Face",
+      "url": "https://huggingface.co/manus4oHER/datasets",
+      "snippet": "User profile of ma chan on Hugging Face"
+    },
+    {
+      "title": "manus4oHER/aster-live-archive · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/manus4oHER/aster-live-archive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Transformers library - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/transformers-library/",
+      "snippet": "The Transformers library, developed by Hugging Face, is an open source toolkit for working with advanced machine learning models across text, images, audio and multimodal data. It is widely used in NLP, computer vision and generative AI applications. Provides access to pre-trained models. Supports text, image, audio, and multimodal tasks. Works with PyTorch and TensorFlow. Simplifies model ..."
+    },
+    {
+      "title": "Transformers by Hugging Face: Pretrained AI Models | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/transformers/",
+      "snippet": "Hugging Face Transformers is the open-source framework for state-of-the-art pretrained models. Run text, vision, audio, and multimodal tasks for inference and training."
+    },
+    {
+      "title": "Transformers in Machine Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/getting-started-with-transformers/",
+      "snippet": "Transformer is a neural network architecture used for various machine learning tasks, especially in natural language processing and computer vision. It focuses on understanding relationships within data to process information more effectively."
+    }
+  ]
+}
