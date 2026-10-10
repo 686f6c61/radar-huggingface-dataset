@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-LLM-Compressor",
+  "slug": "vishva007-lightonocr-3-0-8b-w4a16-autoround-llm-compressor",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-LLM-Compressor",
+  "created_at": "2026-10-10T19:34:11.000Z",
+  "updated_at": "2026-10-10T19:40:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "auto-round",
+    "int4",
+    "w4a16",
+    "tables",
+    "forms",
+    "quantized",
+    "conversational",
+    "arxiv:2601.14251",
+    "arxiv:2309.05516",
+    "base_model:lightonai/LightOnOCR-3-0.8B",
+    "base_model:quantized:lightonai/LightOnOCR-3-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1011586387,
+  "storage_human": "1.0 GB",
+  "base_model": "lightonai/LightOnOCR-3-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Desi Viral MMS Videos of 2025 That Shocked the Internet and …",
+      "url": "https://english.newstrack.com/entertainment-news/desi-viral-mms-videos-of-2025-that-shocked-the-internet-and-refused-to-fade-away-567571",
+      "snippet": "A complete look at the most unforgettable Desi viral MMS videos of 2025, including 19 minute clips, Sir Sir Please audio, deepfakes, …"
+    },
+    {
+      "title": "Viralkand.net Viralkand - Indian Desi Viral News & Videos",
+      "url": "https://hypestat.com/info/viralkand.net",
+      "snippet": "Viralkand: Stay updated with the latest Indian desi viral news and videos. Explore trending stories and exclusive content in one place!"
+    },
+    {
+      "title": "Desi Viral Videos Official (@desi.viral.videos) - Instagram",
+      "url": "https://www.instagram.com/desi.viral.videos/",
+      "snippet": "5,855 Followers, 2 Following, 699 Posts - Desi Viral Videos Official (@desi.viral.videos) on Instagram: \"The Desi Content and …"
+    },
+    {
+      "title": "Desi.Net — Everything Desi, in Your City",
+      "url": "https://desi.net/",
+      "snippet": "Your hyperlocal South-Asian hub — Indian & Desi restaurants, grocery, temples, events, movie showtimes, recipes and local news, …"
+    },
+    {
+      "title": "About Us - Viralkand",
+      "url": "https://viralkand.co.in/about-us/",
+      "snippet": "Welcome to Viralkand.co.in, your go-to source for the latest news and insights from around the world. We are dedicated to delivering …"
+    }
+  ]
+}

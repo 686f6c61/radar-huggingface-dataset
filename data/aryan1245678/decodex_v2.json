@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Aryan1245678/DecodeX_V2",
+  "slug": "aryan1245678-decodex_v2",
+  "author": "Aryan1245678",
+  "url": "https://huggingface.co/Aryan1245678/DecodeX_V2",
+  "created_at": "2026-10-10T15:09:28.000Z",
+  "updated_at": "2026-10-10T16:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "decodex",
+    "audio-classification",
+    "real-time-firewall",
+    "dataset:audiofolder",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 378302360,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "audiofolder",
+      "metric": "Accuracy",
+      "value": 0.9972843305874898
+    }
+  ],
+  "sources": [
+    {
+      "title": "Indian XXX Porn Videos - Aam Chor - Free Desi Sex, Bhabhi MMS",
+      "url": "https://aamchor.com/",
+      "snippet": "Discover the hottest Indian XXX porn videos at Aam Chor - your daily source for free Desi sex, viral Bhabhi MMS leaks, and nude …"
+    },
+    {
+      "title": "Xahani Videos - Latest desi Indian XXX sex videos",
+      "url": "https://www.xahani.com/videos/",
+      "snippet": "Xahani Videos brings you latest and fresh Indian desi sex videos and unseen amateur MMS clips. We have the best Indian porn …"
+    },
+    {
+      "title": "Desi Viral Mms porn - 1,000 Indian Porn Videos - MyDesi",
+      "url": "https://mydesi.com.co/search/desi-viral-mms",
+      "snippet": "Watch 1,000 desi viral mms xxx videos at MyDesi. Handpicked Indian porn featuring real Desi girls, bhabhi sex scandals, and …"
+    },
+    {
+      "title": "Free Viral Indian Sex Tube Videos at Nasty Porn Vids",
+      "url": "https://nastypornvids.com/viral-indian-videos",
+      "snippet": "The best free nasty Viral Indian porn videos of hot naked girls. The hottest video is \"Indian Desi Saali-ji First Time Sex with jija-ji, …"
+    },
+    {
+      "title": "Indian GF BF Oyo Hotel Video Leaked Mms Indian New Desi Viral Xxx Video",
+      "url": "https://bodgirls.com/videos/video/indian-gf-bf-oyo-hotel-video-leaked-mms-indian-new-desi-viral-xxx-video/",
+      "snippet": "Browse daily-updated galleries of massive tits, busty babes, and XXX content across every category you love — from amateur busty …"
+    }
+  ]
+}

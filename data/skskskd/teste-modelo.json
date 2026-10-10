@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "Skskskd/teste-modelo",
+  "slug": "skskskd-teste-modelo",
+  "author": "Skskskd",
+  "url": "https://huggingface.co/Skskskd/teste-modelo",
+  "created_at": "2026-10-10T15:42:58.000Z",
+  "updated_at": "2026-10-10T15:43:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30339456,
+  "parameters_human": "30.3M",
+  "storage_bytes": 121365368,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

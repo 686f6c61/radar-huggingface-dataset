@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "aikexue170/jev-novel-3-0.8b-fp8",
+  "slug": "aikexue170-jev-novel-3-0-8b-fp8",
+  "author": "aikexue170",
+  "url": "https://huggingface.co/aikexue170/jev-novel-3-0.8b-fp8",
+  "created_at": "2026-10-10T17:37:08.000Z",
+  "updated_at": "2026-10-10T17:38:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5_text",
+    "sentence-quality",
+    "jev",
+    "jevnovel-3",
+    "text-classification",
+    "zh",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1027818953,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

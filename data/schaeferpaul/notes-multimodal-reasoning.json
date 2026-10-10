@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "schaeferpaul/notes-multimodal-reasoning",
+  "slug": "schaeferpaul-notes-multimodal-reasoning",
+  "author": "schaeferpaul",
+  "url": "https://huggingface.co/schaeferpaul/notes-multimodal-reasoning",
+  "created_at": "2026-10-10T01:54:48.000Z",
+  "updated_at": "2026-10-10T01:54:53.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FL Studio – Music Production Software",
+      "url": "https://www.image-line.com/",
+      "snippet": "4 days ago · FL Cloud lives inside FL Studio. Search, filter, and audition sounds without opening another app — then drag them …Read more"
+    },
+    {
+      "title": "Download FL Studio | Free, Official Windows and Mac Installer",
+      "url": "https://www.image-line.com/fl-studio/download",
+      "snippet": "Download the official FL Studio installer for Windows and Mac. Explore all plugins in the free trial with no time limit, activate your …"
+    },
+    {
+      "title": "Download FL Studio (Fruity Loop) for Windows, macOS, Android",
+      "url": "https://gizmodo.com/download/fl-studio-fruity-loop",
+      "snippet": "Oct 1, 2026 · FL Studio is available to download on Windows PC, macOS, ChromeOS, Android, iPhone, and iPad, making it one of …"
+    },
+    {
+      "title": "FL Studio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/FL_Studio",
+      "snippet": "FL Studio (previously known both as FrootyLoops[5] and FruityLoops) is a digital audio workstation (DAW) developed by the Belgian …"
+    },
+    {
+      "title": "FL Studio download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/fl-studio/",
+      "snippet": "Oct 13, 2025 · FL Studio comes packed with over 100 instruments and effects, a massive sound library, and world-class tools for …"
+    }
+  ]
+}

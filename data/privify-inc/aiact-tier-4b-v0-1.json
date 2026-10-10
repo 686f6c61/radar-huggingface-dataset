@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Privify-Inc/aiact-tier-4b-v0.1",
+  "slug": "privify-inc-aiact-tier-4b-v0-1",
+  "author": "Privify-Inc",
+  "url": "https://huggingface.co/Privify-Inc/aiact-tier-4b-v0.1",
+  "created_at": "2026-10-10T02:23:20.000Z",
+  "updated_at": "2026-10-10T02:46:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "eu-ai-act",
+    "ai-governance",
+    "compliance",
+    "classification",
+    "lora",
+    "text-generation",
+    "en",
+    "arxiv:2505.09388",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132187888,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Privify-Inc/aiact-tier-4b-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/Privify-Inc/aiact-tier-4b-v0.1",
+      "snippet": "Privify-Inc / aiact-tier-4b-v0.1 Like 0 Follow Privify Inc 1 Text Generation PEFT Safetensors English eu-ai-act ai-governance compliance classification lora arxiv:2505.09388 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Privify-Inc (Privify Inc) - Hugging Face",
+      "url": "https://huggingface.co/Privify-Inc/models",
+      "snippet": "Team members 1 Privify-Inc&#x27;s models1 Sort: Recently updated Privify-Inc/aiact-tier-4b-v0.1 Text Generation •Updated about 2 hours ago"
+    },
+    {
+      "title": "Privify — Control Your AI",
+      "url": "https://privify.io/",
+      "snippet": "Privify FORGE for enterprises: discover, observe and govern every AI agent. Privify SHIELD for individuals: take back your data."
+    },
+    {
+      "title": "GitHub - ksj047/Privify-AI: Privify AI: Redefining Face Recognition ...",
+      "url": "https://github.com/ksj047/Privify-AI",
+      "snippet": "The Future: Beyond Face Recognition 🚀 PrivifyAI is more than a project—it&#x27;s a blueprint for ethical AI. Future iterations aim to: Integrate multi-modal biometrics (voice, gait) for stronger authentication. Adopt post-quantum cryptography to counter emerging threats. Expand to IoT devices, enabling smart cities without sacrificing privacy ..."
+    },
+    {
+      "title": "Privify — Privify FORGE",
+      "url": "https://privify.io/forge/index.html",
+      "snippet": "03 Privify FORGE closes that gap directly: SOC 2, PCI-DSS, SR 11-7 model-risk monitoring, NYDFS 500 anomaly detection, GLBA safeguards, and FINRA AI supervision controls all draw from the same real-time event stream, with an approval gate in front of anything that touches cardholder or account data."
+    }
+  ]
+}

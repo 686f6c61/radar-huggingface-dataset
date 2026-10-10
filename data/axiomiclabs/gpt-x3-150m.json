@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AxiomicLabs/GPT-X3-150M",
+  "slug": "axiomiclabs-gpt-x3-150m",
+  "author": "AxiomicLabs",
+  "url": "https://huggingface.co/AxiomicLabs/GPT-X3-150M",
+  "created_at": "2026-09-23T02:51:52.000Z",
+  "updated_at": "2026-10-10T06:39:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gptx3",
+    "GPTX",
+    "GDN2",
+    "hybrid",
+    "math",
+    "language-model",
+    "GPT-X3",
+    "GPT-X3-150M",
+    "Open_SLM_Leaderboard",
+    "text-generation",
+    "custom_code",
+    "en",
+    "dataset:nvidia/Nemotron-ClimbMix",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:AxiomicLabs/SFTset-SLM",
+    "dataset:AxiomicLabs/FactBase-DCLM",
+    "dataset:IFM/TxT360-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 23,
+  "downloads_30d": 53,
+  "trending_score": 23,
+  "parameters": 149400930,
+  "parameters_human": "149.4M",
+  "storage_bytes": 599726754,
+  "storage_human": "600 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    }
+  ]
+}

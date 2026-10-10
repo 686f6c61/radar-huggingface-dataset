@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Wallas87/Deep_Negative_Pony_B5_textual_inversion",
+  "slug": "wallas87-deep_negative_pony_b5_textual_inversion",
+  "author": "Wallas87",
+  "url": "https://huggingface.co/Wallas87/Deep_Negative_Pony_B5_textual_inversion",
+  "created_at": "2026-10-10T01:38:55.000Z",
+  "updated_at": "2026-10-10T01:39:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "textual_inversion",
+    "pony",
+    "concept",
+    "negative embed",
+    "negative",
+    "civitai",
+    "imported",
+    "not-for-all-audiences",
+    "base_model:AiAF/Diffusers_Pony-Diffusion-V6",
+    "base_model:adapter:AiAF/Diffusers_Pony-Diffusion-V6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11251151,
+  "storage_human": "11 MB",
+  "base_model": "AiAF/Diffusers_Pony-Diffusion-V6",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何理解图像经傅里叶变换后所得频谱图意义？频谱图坐标轴的物理意 …",
+      "url": "https://www.zhihu.com/question/264302905/answers/updated",
+      "snippet": "3、单正方形图频谱中心值是 (3953.56,0) 单正方形原图是中心61*61大小，灰度255，其他区域灰度值均为0，因此计算如下 …"
+    },
+    {
+      "title": "猫吃猫粮的时候，为什么要甩头？ - 知乎",
+      "url": "https://www.zhihu.com/question/24762945",
+      "snippet": "来源：Wikimedia Commons 猫咪的牙齿非常适合撕咬猎物，但压碎和研磨的能力一般，只能靠着口腔深处的4颗 后臼齿 咀嚼 [1]。 因 …"
+    },
+    {
+      "title": "渴望Orijen猫粮测评，无谷鸡和六种鱼哪个更好？看这一篇测评就够了…",
+      "url": "https://www.zhihu.com/tardis/zm/art/498858861",
+      "snippet": "这里附上渴望官网和加拿大冠军官网，如果想了解品牌背景的猫友可以查看一下。 公司官网： Award-Winning Biologically …"
+    },
+    {
+      "title": "怎样将宠物带出国和带回国？ - 知乎",
+      "url": "https://www.zhihu.com/question/47098025",
+      "snippet": "带宠物回国的方法 WAYS 从英国将宠物带回中国的方法一般有两种： 01 直接自己带回国内； 02 先将宠物托运回香港， 由宠物中介 …"
+    },
+    {
+      "title": "请问谁能用易于理解的语言解释下矩阵的正定及半正定？ - 知乎",
+      "url": "https://www.zhihu.com/question/22098422",
+      "snippet": "几何直观上很明显，图里面的是外文教材《线性代数及其应用》 以 二元函数 为例，正定即其对应的曲面在底面的上方，负定即在底面 …"
+    }
+  ]
+}

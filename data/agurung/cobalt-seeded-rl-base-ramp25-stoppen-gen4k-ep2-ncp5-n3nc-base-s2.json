@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s2",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s2",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base-s2",
+  "created_at": "2026-10-08T14:44:20.000Z",
+  "updated_at": "2026-10-10T18:46:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "qwen3",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 3973556832,
+  "parameters_human": "3.97B",
+  "storage_bytes": 151012788252,
+  "storage_human": "151.0 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3n-groot16",
+      "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3n-groot16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "cobalt-seeded-rl-base-ram…ncp5-n3nc-base by Alexander Gurung",
+      "url": "https://savrn.com/models/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base",
+      "snippet": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-base is an open-weight model for text generation from Alexander Gurung. It has 4B parameters and a 262,144-token context. At 16-bit it needs about 9.5 GB of GPU memory, which fits on 1x MI300X from $1.85 an hour, at the lowest prices in the SAVRN Index. It draws 1.2k downloads a month."
+    },
+    {
+      "title": "cobalt-seeded-rl-base-ramp…n3nc-iid16-s2 by Alexander Gurung",
+      "url": "https://savrn.com/models/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s2",
+      "snippet": "cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-n3nc-iid16-s2 is an open-weight model for text generation from Alexander Gurung. It has 4B parameters and a 262,144-token context. At 16-bit it needs about 9.5 GB of GPU memory, which fits on 1x MI300X from $1.85 an hour, at the lowest prices in the SAVRN Index. It draws 41 downloads a month."
+    },
+    {
+      "title": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v2",
+      "url": "https://featherless.ai/models/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v2",
+      "snippet": "The agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v2 is a 4 billion parameter Qwen3-based model fine-tuned using OpenRLHF GRPO for code generation tasks. This reinforcement learning checkpoint is optimized for binary code-correctness, achieving a pass@8 score of 3.9063 on the cobalt-train frontier dataset. It excels at solving programming problems, particularly those where ..."
+    }
+  ]
+}

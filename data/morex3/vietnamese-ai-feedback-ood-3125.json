@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "morex3/vietnamese-ai-feedback-ood-3125",
+  "slug": "morex3-vietnamese-ai-feedback-ood-3125",
+  "author": "morex3",
+  "url": "https://huggingface.co/morex3/vietnamese-ai-feedback-ood-3125",
+  "created_at": "2026-10-10T02:18:56.000Z",
+  "updated_at": "2026-10-10T02:24:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "sentiment-analysis",
+    "phobert",
+    "pytorch",
+    "out-of-domain",
+    "class-imbalance",
+    "cb-focal",
+    "educational-feedback",
+    "vi",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 135000579,
+  "parameters_human": "135.0M",
+  "storage_bytes": 540026460,
+  "storage_human": "540 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Vietnamese AI-Feedback OOD Benchmark (Data-2)",
+      "metric": "Macro-F1",
+      "value": 65.93
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Vietnamese AI-Feedback OOD Benchmark (Data-2)",
+      "metric": "F1-Neutral",
+      "value": 37.25
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Vietnamese AI-Feedback OOD Benchmark (Data-2)",
+      "metric": "Accuracy",
+      "value": 69.68
+    }
+  ],
+  "sources": [
+    {
+      "title": "Top 10 Foot Care Tips Everyone Should Know: Keep Your Feet …",
+      "url": "https://www.lindapullanpodiatry.co.uk/blog/top-10-foot-care-tips-everyone-should-know-keep-your-feet-happy-and-healthy",
+      "snippet": "Top 10 Foot Care Tips Everyone Should Know: Keep Your Feet Happy and Healthy! Healthy feet are key to well-being! Follow daily …"
+    },
+    {
+      "title": "How to Keep Your Feet Healthy: Tips, Exercises, and More",
+      "url": "https://www.healthline.com/health/tips-for-healthy-feet-footwear-hygiene",
+      "snippet": "Nov 2, 2017 · Keeping your toes in tip-top shape is key to staying pain-free. Here's everything you need to know about shoe fit, …"
+    },
+    {
+      "title": "TAKING CARE OF YOUR FEET - FootCareMD",
+      "url": "https://www.footcaremd.org/foot-ankle-health/taking-care-of-your-feet",
+      "snippet": "Taking care of your feet today can help prevent problems in the future. Read on for common foot issues and tips to keep your feet …"
+    },
+    {
+      "title": "9 Foot Care Tips To Maintain Healthy Feet And Prevent Foot Pain",
+      "url": "https://michiganavenuepodiatry.com/foot-care-tips-for-healthy-feet/",
+      "snippet": "Mar 12, 2024 · By following these foot care tips and incorporating them into your daily routine, you can maintain healthy feet, prevent …"
+    },
+    {
+      "title": "Daily Foot Care Routine: Tips for Healthy Feet | WebMD",
+      "url": "https://m.youtube.com/watch?v=zpOePsP99yM",
+      "snippet": "Jan 13, 2016 · Your feet carry you through every part of your day, making proper foot care vital for comfort and long-term health. …"
+    }
+  ]
+}

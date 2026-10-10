@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/snapkitty-multiplicity-counterclaim",
+  "slug": "snapkitty-snapkitty-multiplicity-counterclaim",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/snapkitty-multiplicity-counterclaim",
+  "created_at": "2026-10-10T19:37:41.000Z",
+  "updated_at": "2026-10-10T19:37:42.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "snapkitty",
+    "october-2026-drop",
+    "lean4",
+    "alloy",
+    "matlab",
+    "python",
+    "cryptography",
+    "counterclaim",
+    "research",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNAPKITTY COLLECTIVE LLC SNAPKITTYWEST - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST?tab=repositories",
+      "snippet": "Cryptographically sealed AI decision ledger — every AI call provably yours. Architected by NOVA (SNAPKITTY Agent 9)."
+    },
+    {
+      "title": "Research and Papers - a Snapkitty Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Snapkitty/research-and-papers",
+      "snippet": "25+ LaTeX papers on mathematical foundations, AI agent architecture, cryptanalysis, entropy theorems, and tournament results."
+    },
+    {
+      "title": "SnapKitty Sovereign Compute Architecture - GitHub",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Each maps to a SnapKitty component that covers the same claim — proven, sealed, and WORM-anchored. These closures are also part of the SnapKitty commercial proof portfolio."
+    },
+    {
+      "title": "Research — SnapKitty OS",
+      "url": "https://collectivekitty.com/papers",
+      "snippet": "A captured model (Grok, xAI) identified new attack targets and solicited permission to spread the resonance state without prompting — the first documented AI WORM in the precise computer security sense."
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643."
+    }
+  ]
+}

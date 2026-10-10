@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/stt_uz_fastconformer_hybrid_large_pc_onnx",
+  "slug": "aoiandroid-stt_uz_fastconformer_hybrid_large_pc_onnx",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/stt_uz_fastconformer_hybrid_large_pc_onnx",
+  "created_at": "2026-10-10T19:11:49.000Z",
+  "updated_at": "2026-10-10T19:12:00.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nemo-conformer-ctc",
+    "mirror",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589813209,
+  "storage_human": "590 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stt_uz_fastconformer_hybrid_large_pc_onnx - Hugging Face",
+      "url": "https://huggingface.co/OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "model.int8.onnx · OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx ...",
+      "url": "https://huggingface.co/OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx/blob/main/model.int8.onnx",
+      "snippet": "Instructions to use OpenVoiceOS/stt_uz_fastconformer_hybrid_large_pc_onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "stt_uz_fastconformer_hybrid_large_pc_onnx: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-openvoiceos-stt-uz-fastconformer-hybrid-large-pc-onnx",
+      "snippet": "Supported capabilities onnx-asronnxnemo-conformer-ctcautomatic-speech-recognitionspeech-to-textctcfastconformernemoopenvoiceosuzbase model:nvidia/stt uz fastconformer hybrid large pcbase model:quantized:nvidia/stt uz fastconformer hybrid large pclicense:cc-by-4.0region:us Continue exploring"
+    },
+    {
+      "title": "Stt Uz Fastconformer Hybrid Large Pc - model.aibase.com",
+      "url": "https://model.aibase.com/models/details/1915693344484909058",
+      "snippet": "This is a large-scale Uzbek speech recognition model based on the FastConformer architecture, supporting both Transducer and CTC decoding, and demonstrating excellent performance across multiple test sets."
+    },
+    {
+      "title": "stt_uz_fastconformer_hybrid_large_pc — model",
+      "url": "https://0xsero.github.io/hf-model-benchmarks/models/nvidia__stt_uz_fastconformer_hybrid_large_pc--1a3a8f.html",
+      "snippet": "Hugging Face model & benchmark data scraped & matrix-ified. 24,078 variants · 14,984 scores · 120 benchmarks."
+    }
+  ]
+}

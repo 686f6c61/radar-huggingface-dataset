@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Glimmer-Sentry-30B-GGUF",
   "created_at": "2026-08-15T05:55:59.000Z",
-  "updated_at": "2026-08-15T06:25:28.000Z",
+  "updated_at": "2026-10-09T13:36:27.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 608,
+  "downloads_30d": 882,
   "trending_score": 0,
   "parameters": 27854794240,
   "parameters_human": "27.85B",

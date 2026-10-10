@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AmberY1201/best",
+  "slug": "ambery1201-best",
+  "author": "AmberY1201",
+  "url": "https://huggingface.co/AmberY1201/best",
+  "created_at": "2026-10-10T02:23:04.000Z",
+  "updated_at": "2026-10-10T02:28:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "ultralytics",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo11",
+    "instance-segmentation",
+    "robotics",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45406262,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Right Now - Top Model 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-right-now",
+      "snippet": "Which AI model is the best right now? See today&#x27;s top-ranked AI model plus category winners for coding, writing, math, and image generation with source-backed pricing and benchmark freshness."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Top 10 AI Models in 2026: Ranked by Benchmarks (June Update)",
+      "url": "https://techjournal.org/top-10-artificial-intelligence-models",
+      "snippet": "The 10 best AI models in June 2026 ranked by actual benchmarks. Claude Opus 4.8, GPT-5.5, Gemini 3.1 Pro, Grok 4.3, Llama 4, and DeepSeek V4 — compared on coding, writing, reasoning, and price."
+    },
+    {
+      "title": "Best AI Models in 2026: The Complete Ranking | The AI Rankings",
+      "url": "https://theairankings.com/best-ai-models/",
+      "snippet": "The best AI models in 2026, ranked by consensus across benchmarks, reviews and real-world testing — frontier, flagship and open-weight models compared."
+    },
+    {
+      "title": "Best AI Models (October 2026): 218 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "The best AI model right now is a tie. Claude Opus 5.5 (Supported) and GPT-6 Astra (Supported) share the top of the BenchLM overall ranking at 86.4 and 84.9 as of October 10, 2026, and the two 90% intervals overlap. GPT-6.1 Sol ranks third at 84.2."
+    }
+  ]
+}

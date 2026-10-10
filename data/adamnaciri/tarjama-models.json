@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "adamnaciri/tarjama-models",
+  "slug": "adamnaciri-tarjama-models",
+  "author": "adamnaciri",
+  "url": "https://huggingface.co/adamnaciri/tarjama-models",
+  "created_at": "2026-10-10T09:42:35.000Z",
+  "updated_at": "2026-10-10T15:41:00.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [
+    "ar",
+    "it"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "speech-recognition",
+    "translation",
+    "ar",
+    "it",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1850255022,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

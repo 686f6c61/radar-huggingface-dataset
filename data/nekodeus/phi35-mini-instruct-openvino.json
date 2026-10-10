@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/phi35-mini-instruct-openvino",
+  "slug": "nekodeus-phi35-mini-instruct-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/phi35-mini-instruct-openvino",
+  "created_at": "2026-10-10T17:35:58.000Z",
+  "updated_at": "2026-10-10T17:46:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "phi3",
+    "int8",
+    "text-generation",
+    "phi-3",
+    "instruct",
+    "llm",
+    "conversational",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3827256138,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NSFW AI Chat with Ice spice - JuicyChat.AI",
+      "url": "https://www.juicychat.ai/chat/1939726783139033089",
+      "snippet": "Engage in NSFW AI Chat with Ice spice through JuicyChat.AI's immersive AI Roleplay Chatbot. Hi baby 😍ᯓᡣ𐭩."
+    },
+    {
+      "title": "Chat with Ice spice | kinky seductive - crushon.ai",
+      "url": "https://crushon.ai/character/eb93d66b-0a7b-43fd-ba6c-49cc3eff49d6/chat",
+      "snippet": "Explore NSFW/SFW AI chat options, engage in AI roleplay, and build emotional connections in a secure, private space."
+    },
+    {
+      "title": "Ice spice | NSFW Character AI Chat - JuicyChat.AI",
+      "url": "https://www.juicychat.ai/details/character/1939726783139033089",
+      "snippet": "Jun 30, 2025 · Dive into an immersive NSFW AI chat experience with Ice spice. Engage in AI roleplay with a lifelike, interactive …"
+    },
+    {
+      "title": "Chat with Ice Spice (NSFW) - joyland.ai",
+      "url": "https://www.joyland.ai/chat/dwaBx",
+      "snippet": "Chat & Roleplay with Ice Spice (NSFW). Experience human-like conversations,emotional depth,and personalized scenarios by …"
+    },
+    {
+      "title": "Chat With ice spice | Tipsy Chat AI Character",
+      "url": "https://tipsy.chat/chat/1737631653934369914",
+      "snippet": "Chat with AI and roleplay with ice spice. They are AI characters. Immerse yourself in no filter character AI chat and anime AI roleplay …"
+    }
+  ]
+}

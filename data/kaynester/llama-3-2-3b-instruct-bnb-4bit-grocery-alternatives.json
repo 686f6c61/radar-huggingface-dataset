@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-grocery-alternatives",
+  "slug": "kaynester-llama-3-2-3b-instruct-bnb-4bit-grocery-alternatives",
+  "author": "Kaynester",
+  "url": "https://huggingface.co/Kaynester/Llama-3.2-3B-Instruct-bnb-4bit-grocery-alternatives",
+  "created_at": "2026-10-10T14:55:49.000Z",
+  "updated_at": "2026-10-10T15:07:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377440,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ariella Ferrera - 18 — Видео | ВКонтакте",
+      "url": "https://vk.com/video-108684267_456242334",
+      "snippet": "Смотрите онлайн Ariella Ferrera -.. 39 мин 21 с. Видео от 6 ноября 2022 в хорошем качестве, без регистрации в бесплатном …"
+    },
+    {
+      "title": "Ariella Ferrera 10.02.2018 — Видео от Bangbros | VK Видео",
+      "url": "https://vkvideo.ru/video-226447804_456239193",
+      "snippet": "Видео от 1 июня 2026 в хорошем качестве, без регистрации в бесплатном видеокаталоге ВКонтакте! 305 — просмотрели. 19 …"
+    },
+    {
+      "title": "Ariella Ferrera — Видео от Ariella Ferrera | VK Видео",
+      "url": "https://vkvideo.ru/video-207367596_456239018",
+      "snippet": "Mar 7, 2022 · Смотрите онлайн Ariella Ferrera 19 с. Видео от 7 марта 2022 в хорошем качестве, без регистрации в …"
+    },
+    {
+      "title": "Ariella Ferrera || Ариэлла Феррера - vk.ru",
+      "url": "https://vk.ru/ariella_ferrera_club",
+      "snippet": "Ariella Ferrera || Ариэлла Феррера - vk.ru ... sign up ‌"
+    },
+    {
+      "title": "Ariella Ferrera — Видео от Анвара Алиева | ВКонтакте",
+      "url": "https://vk.com/video260856207_170316000",
+      "snippet": "Oct 24, 2014 · Смотрите онлайн Ariella Ferrera 17 мин 15 с. Видео от 24 октября 2014 в хорошем качестве, без регистрации в …"
+    }
+  ]
+}

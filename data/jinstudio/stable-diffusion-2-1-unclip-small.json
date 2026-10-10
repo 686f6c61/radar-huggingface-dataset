@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/stable-diffusion-2-1-unclip-small",
+  "slug": "jinstudio-stable-diffusion-2-1-unclip-small",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/stable-diffusion-2-1-unclip-small",
+  "created_at": "2026-10-10T17:47:45.000Z",
+  "updated_at": "2026-10-10T17:47:45.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "text-to-image",
+    "arxiv:2112.10752",
+    "arxiv:1910.09700",
+    "license:openrail++",
+    "diffusers:StableUnCLIPImg2ImgPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 869517764,
+  "parameters_human": "869.5M",
+  "storage_bytes": 12781062197,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

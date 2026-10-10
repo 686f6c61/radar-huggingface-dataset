@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Aryan1245678/DecodeX_V1",
+  "slug": "aryan1245678-decodex_v1",
+  "author": "Aryan1245678",
+  "url": "https://huggingface.co/Aryan1245678/DecodeX_V1",
+  "created_at": "2026-10-10T15:26:42.000Z",
+  "updated_at": "2026-10-10T16:00:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "decodex",
+    "audio-classification",
+    "real-time-firewall",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 378302360,
+  "storage_human": "378 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laboratoire Rueil Bougainvillées - Biogroup",
+      "url": "https://laboratoires.biogroup.fr/hauts-de-seine/rueil-malmaison/6-cours-des-bougainvillees",
+      "snippet": "Bienvenue chez Biogroup Rueil Bougainvillées, votre référence pour des services de laboratoire fiables à Rueil-Malmaison. Nos …"
+    },
+    {
+      "title": "Laboratoire Rueil Martinets - Biogroup",
+      "url": "https://laboratoires.biogroup.fr/hauts-de-seine/rueil-malmaison/97-bis-avenue-albert-1er",
+      "snippet": "Bienvenue au laboratoire Rueil Martinets, un lieu de confiance pour toutes vos analyses médicales. Avec une équipe de …"
+    },
+    {
+      "title": "BIOGROUP PARIS OUEST - Laboratoire Rueil Bougainvillées",
+      "url": "https://www.doctolib.fr/laboratoire/rueil-malmaison/biogroup-laboratoire-rueil-bougainvillees",
+      "snippet": "Nous avons à cœur de vous offrir un service de proximité. Avec des conseils professionnels, un accompagnement sur mesure et une …"
+    },
+    {
+      "title": "BIOGROUP PARIS OUEST - Laboratoire Rueil Martinets",
+      "url": "https://www.doctolib.fr/laboratoire/rueil-malmaison/biogroup-laboratoire-rueil-martinets",
+      "snippet": "Nous avons à cœur de vous offrir un service de proximité. Avec des conseils professionnels, un accompagnement sur mesure et une …"
+    },
+    {
+      "title": "BIOGROUP - Laboratoire de biologie médicale",
+      "url": "https://biogroup.fr/",
+      "snippet": "Biogroup est un regroupement de laboratoires de biologie médicale. Trouvez un laboratoire, accédez aux résultats et obtenez des …"
+    }
+  ]
+}

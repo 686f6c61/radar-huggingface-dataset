@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "MissawB/irl-guard-decision-laya-v2",
+  "slug": "missawb-irl-guard-decision-laya-v2",
+  "author": "MissawB",
+  "url": "https://huggingface.co/MissawB/irl-guard-decision-laya-v2",
+  "created_at": "2026-10-10T12:57:11.000Z",
+  "updated_at": "2026-10-10T15:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "structured-decisions",
+    "content-moderation",
+    "live-streaming",
+    "irl-guard",
+    "text-classification",
+    "fr",
+    "dataset:MissawB/irl-guard-decisions-v2",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

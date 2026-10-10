@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/indicconformer-sherpa-onnx",
+  "slug": "aoiandroid-indicconformer-sherpa-onnx",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/indicconformer-sherpa-onnx",
+  "created_at": "2026-10-10T19:17:58.000Z",
+  "updated_at": "2026-10-10T19:18:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mirror",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2568710940,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "meetsync/indic-conformer-onnx-sherpa · Hugging Face",
+      "url": "https://huggingface.co/meetsync/indic-conformer-onnx-sherpa",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · meetsync/indic-conformer-onnx-sherpa at main",
+      "url": "https://huggingface.co/meetsync/indic-conformer-onnx-sherpa/blob/main/README.md",
+      "snippet": "Indic Conformer ONNX (Multi-Indic ASR - Sherpa-ONNX) This is an ONNX conversion of AI4Bharat&#x27;s Indic Conformer Large model, optimized for mobile deployment using Sherpa-ONNX. Original Model: ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large License: MIT (allows conversion, modification, and redistribution) Converted Format: ONNX + INT8 quantized for mobile devices Languages: 8 Indian ..."
+    },
+    {
+      "title": "GitHub - eshivansh/echo-models: On-device ASR model packs for Echo ...",
+      "url": "https://github.com/eshivansh/echo-models",
+      "snippet": "On-device speech-recognition packs for Echo &#x27;s Android app, in the format its model catalog downloads and verifies (SHA-256). The files are attached to this repository&#x27;s releases."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "indicconformer-sherpa-onnx: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-parismitaglobalsolutions-indicconformer-sherpa-onnx",
+      "snippet": "indicconformer-sherpa-onnx AI model directory entry."
+    }
+  ]
+}

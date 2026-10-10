@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "iparashar/fugu-conductor-gguf",
+  "slug": "iparashar-fugu-conductor-gguf",
+  "author": "iparashar",
+  "url": "https://huggingface.co/iparashar/fugu-conductor-gguf",
+  "created_at": "2026-10-10T02:30:00.000Z",
+  "updated_at": "2026-10-10T02:42:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 3421898880,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fugu (model) - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/Fugu_(model)",
+      "snippet": "Fugu is a family of orchestrator models developed by the Tokyo-based artificial intelligence research company Sakana AI. Released on June 22, 2026, Fugu represents a novel approach to achieving frontier-level performance by coordinating a pool of existing large language models rather than training a single monolithic model."
+    },
+    {
+      "title": "Sakana Fugu — Multi-Agent System as a Model",
+      "url": "https://sakana.ai/fugu/",
+      "snippet": "Sakana Fugu is a model interface for coordinating specialized AI agents through one OpenAI-compatible API."
+    },
+    {
+      "title": "Sakana Fugu: Multi-Agent AI Orchestration in a Single Model",
+      "url": "https://www.analyticsvidhya.com/blog/2026/06/sakana-fugu-multi-agent-system-as-a-model/",
+      "snippet": "Sakana Fugu is an OpenAI-compatible managed model API that looks like a single LLM but works as a multi-agent system internally. Developers send a prompt to one model ID, such as fugu or fugu-ultra, while Fugu handles agent selection, role assignment, coordination, verification, and final response."
+    },
+    {
+      "title": "Sakana Fugu: A Multi-Agent Orchestration System as a Foundation Model",
+      "url": "https://sakana.ai/fugu-beta/",
+      "snippet": "We are excited to introduce Sakana Fugu, our flagship international commercial AI product—a multi-agent orchestration system, now opening applications for early beta testers. Sakana Fugu coordinates pools of frontier foundation models to achieve state-of-the-art performance across coding, mathematics, scientific reasoning, etc."
+    },
+    {
+      "title": "Sakana Fugu Explained: The AI Conductor That Turns Many Models ... - Medium",
+      "url": "https://medium.com/data-and-beyond/sakana-fugu-explained-the-ai-conductor-that-turns-many-models-into-one-system-56821c55db2c",
+      "snippet": "Sakana Fugu Explained: The AI Conductor That Turns Many Models Into One System Sakana did not build another GPT, Gemini, or Claude. It trained a system to decide when and how those models should ..."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "axteam/gemma-4-26B-A4B-it-NVFP4",
+  "slug": "axteam-gemma-4-26b-a4b-it-nvfp4",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/gemma-4-26B-A4B-it-NVFP4",
+  "created_at": "2026-10-10T17:45:28.000Z",
+  "updated_at": "2026-10-10T17:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "nvfp4",
+    "fp4",
+    "conversational",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 17225080198,
+  "storage_human": "17.2 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KamaBaba — Rare Indian MMS Sex Videos and Desi Adult Streams",
+      "url": "https://kama-baba.com/",
+      "snippet": "Free DESI & Indian MMS porn on Kama-Baba.com™ — fast-loading tube format, HD quality, zero drama. Explore Indian aunties, …"
+    },
+    {
+      "title": "Watch latest Indian sex videos & porn on MMSseen. Free Desi amateur MMS ...",
+      "url": "https://mmsseen.com/",
+      "snippet": "Watch latest Indian sex porn videos, Desi model free videos, Latest hot Webseries, Indian Desi Tamil Telugu Mallu bengali Hindi …"
+    },
+    {
+      "title": "Latest aur Updated Desi mms videos - Desi Sex Videos",
+      "url": "https://www.desisex.site/category/desi-mms-videos/",
+      "snippet": "Hidden cam se banaye hue desi mms porn videos dekhe. Movie ki quality bhale HD ho ya na ho lekin sex ki quality sab se best hogi …"
+    },
+    {
+      "title": "Desi sex video - Indian XXX bf films",
+      "url": "https://www.desisex.site/",
+      "snippet": "DesiSex.site bring you the latest handpicked Desi MMS Videos and rare unseen XXX Footage Authentic Bhabhi Sex Clips, and Rare …"
+    },
+    {
+      "title": "Welcome to r/LeakedDesiMMS - Reddit",
+      "url": "https://www.reddit.com/r/leakeddesimms/comments/1djdw9w/welcome_to_rleakeddesimms/",
+      "snippet": "Jun 19, 2024 · Hello and welcome to the most exclusive desi mms sharing community! Please read through our guidelines to ensure …"
+    }
+  ]
+}

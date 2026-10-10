@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "trinhtrantran122/Higgs-TTS-3-4b-ViNV-LoRA-B12",
+  "slug": "trinhtrantran122-higgs-tts-3-4b-vinv-lora-b12",
+  "author": "trinhtrantran122",
+  "url": "https://huggingface.co/trinhtrantran122/Higgs-TTS-3-4b-ViNV-LoRA-B12",
+  "created_at": "2026-10-10T01:30:21.000Z",
+  "updated_at": "2026-10-10T01:30:31.000Z",
+  "license": "bosonai-higgs-audio-v3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "vietnamese",
+    "lora",
+    "non-verbal",
+    "vi",
+    "base_model:multimodalart/higgs-audio-v3-tts-4b-transformers",
+    "base_model:adapter:multimodalart/higgs-audio-v3-tts-4b-transformers",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 648714120,
+  "storage_human": "649 MB",
+  "base_model": "multimodalart/higgs-audio-v3-tts-4b-transformers",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

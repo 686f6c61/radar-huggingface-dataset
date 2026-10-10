@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "christiancastillo/cv-matching",
+  "slug": "christiancastillo-cv-matching",
+  "author": "christiancastillo",
+  "url": "https://huggingface.co/christiancastillo/cv-matching",
+  "created_at": "2026-10-10T02:00:11.000Z",
+  "updated_at": "2026-10-10T02:00:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

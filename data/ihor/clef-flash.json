@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ihor/clef-flash",
+  "slug": "ihor-clef-flash",
+  "author": "Ihor",
+  "url": "https://huggingface.co/Ihor/clef-flash",
+  "created_at": "2026-10-10T04:32:43.000Z",
+  "updated_at": "2026-10-10T15:43:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "GLiClass",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 8975385841,
+  "parameters_human": "8.98B",
+  "storage_bytes": 71823311891,
+  "storage_human": "71.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tennis infos - Actualités, vidéos & résultats - Eurosport",
+      "url": "https://www.eurosport.fr/tennis/",
+      "snippet": "Consultez les dernières infos Tennis et retrouvez les articles, vidéos, commentaires et analyses en un même lieu. Eurosport est …"
+    },
+    {
+      "title": "Tennis résultats en direct - Calendrier 2026 complet | Eurosport",
+      "url": "https://www.eurosport.fr/tennis/score-center.shtml",
+      "snippet": "4 days ago · Ne ratez plus aucun évènement Tennis. Consultez le calendrier de l'année 2026 et les résultats. Eurosport est votre …"
+    },
+    {
+      "title": "Regarder Tennis - Diffusion de sports en direct sur internet - Eurosport",
+      "url": "https://www.eurosport.fr/watch/tennis/",
+      "snippet": "Soyez témoin de l'histoire de vos compétitions sportives favorites sur Eurosport. Ne ratez plus aucun évènement! Profitez de …"
+    },
+    {
+      "title": "ATP Race - Programme, Résultats & Tableaux | Eurosport",
+      "url": "https://www.eurosport.fr/tennis/atp-race/calendrier-resultats.shtml",
+      "snippet": "Retrouvez le calendrier complet ATP Race ici. Eurosport vous offre le programme du jour, les résultats en temps réel et les dernières …"
+    },
+    {
+      "title": "Sport infos, vidéos & résultats en direct - Eurosport",
+      "url": "https://www.eurosport.fr/",
+      "snippet": "Eurosport est votre destination pour toute l'actualité sportive, vidéos à la demande, commentaires et résumés: le tout en un même …"
+    }
+  ]
+}

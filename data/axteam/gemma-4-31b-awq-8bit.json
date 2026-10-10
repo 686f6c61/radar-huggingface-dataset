@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "axteam/gemma-4-31B-AWQ-8bit",
+  "slug": "axteam-gemma-4-31b-awq-8bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/gemma-4-31B-AWQ-8bit",
+  "created_at": "2026-10-10T17:13:15.000Z",
+  "updated_at": "2026-10-10T17:24:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "awq",
+    "int8",
+    "base_model:google/gemma-4-31B",
+    "base_model:quantized:google/gemma-4-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10223251812,
+  "parameters_human": "10.22B",
+  "storage_bytes": 35122314174,
+  "storage_human": "35.1 GB",
+  "base_model": "google/gemma-4-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[NFS Rivals] Problème touche pg.prec - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-30699176-nfs-rivals-probleme-touche-pg-prec",
+      "snippet": "Aug 24, 2014 · [NFS Rivals] Problème touche pg.prec titpompier - Modifié le 23 août 2014 à 18:23 Dernière réponse le 11 mai 2015 3 …Read more"
+    },
+    {
+      "title": "Burger Time golf tournament fundraiser ends run | NMPreps.com",
+      "url": "https://nmpreps.forums.rivals.com/threads/burger-time-golf-tournament-fundraiser-ends-run.24454/",
+      "snippet": "May 15, 2017 · Though this would never happen.... http://www.lcsun-news.com/story/news/2017/05/05/burger-time-golf-tournament …"
+    },
+    {
+      "title": "Men's Basketball - AFA Game - wyoming.forums.rivals.com",
+      "url": "https://wyoming.forums.rivals.com/threads/mens-basketball-afa-game.20159/",
+      "snippet": "Dec 30, 2016 · Conference play kicks off for the Pokes tomorrow night against AFA. A lot of good vibes around the Pokes right now …"
+    },
+    {
+      "title": "Monte Vista's Austin Fadal out for season | NorCalPreps.com",
+      "url": "https://norcalpreps.forums.rivals.com/threads/monte-vistas-austin-fadal-out-for-season.15378/",
+      "snippet": "Jan 3, 2017 · B bones40 Sports Fanatic Apr 3, 2014 983 463 63 Dec 31, 2016 #2 That a huge loss any details as to what happened …"
+    },
+    {
+      "title": "IHSAA YouTube Channel - hickoryhusker.forums.rivals.com",
+      "url": "https://hickoryhusker.forums.rivals.com/threads/ihsaa-youtube-channel.3627/",
+      "snippet": "Apr 4, 2016 · New time waster for me is the IHSAA YouTube Channel You can search and see several old state semifinal and state …"
+    }
+  ]
+}

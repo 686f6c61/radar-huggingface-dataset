@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-31B-it-scotoma-2-GGUF",
   "created_at": "2026-08-15T06:42:32.000Z",
-  "updated_at": "2026-08-15T07:30:54.000Z",
+  "updated_at": "2026-10-09T14:42:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 756,
+  "downloads_30d": 1034,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

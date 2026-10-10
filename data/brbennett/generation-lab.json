@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "brbennett/generation-lab",
+  "slug": "brbennett-generation-lab",
+  "author": "brbennett",
+  "url": "https://huggingface.co/brbennett/generation-lab",
+  "created_at": "2026-10-10T02:25:19.000Z",
+  "updated_at": "2026-10-10T02:25:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Integrated Photonics for High-Speed Optical Interconnects and ...",
+      "url": "https://publications.rwth-aachen.de/record/672467/files/672467.pdf",
+      "snippet": "continiuum generation [66–68]. Additionally, SiN technology exhibits ... and GC Width as expected from the analytical model presented in figure 3.1b."
+    },
+    {
+      "title": "Genetic-algorithm-combined density functional theory calculations ...",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S1369800124006231",
+      "snippet": "Atomic-scale theoretical simulation methods, such as DFT calculations, require atomic coordinates to determine a crystal structure model. Conversely, its ..."
+    },
+    {
+      "title": "Design, fabrication and simulation of next generation robust GaN ...",
+      "url": "https://theses.hal.science/tel-05234737v1/file/These_GRANDPIERRON_Francois.pdf",
+      "snippet": "02.09.2025 ... [20] B. R. Bennett, T. Suemitsu, N. Waldron, et J. A. Del Alamo, « Growth of InP high electron mobility transistor structures with Te doping » ..."
+    },
+    {
+      "title": "Engineering high bandwidth semiconductor mid-infrared frequency ...",
+      "url": "https://repositum.tuwien.at/bitstream/20.500.12708/187299/1/Beiser%20Maximilian%20-%202023%20-%20Engineering%20high%20bandwidth%20semiconductor%20mid-infrared...pdf",
+      "snippet": "23.06.2023 ... reduced to their lowest value of the primitive vector ai = |ai|. A ... Shockley-Read-Hall model The Shockley-Read-Hall (SRH) model explains non- ..."
+    },
+    {
+      "title": "Graphene Electro-Absorption Modulators for Energy-Efficient and ...",
+      "url": "https://www.researchgate.net/publication/392406289_Graphene_Electro-Absorption_Modulators_for_Energy-Efficient_and_High-Speed_Optical_Transceivers",
+      "snippet": "03.06.2025 ... ... Lab, CNIT, 56124, Pisa, Italy. 3AIXTRON Ltd, Buckingway Business ... processing units are used to train AI models[1]. In order to reach ..."
+    }
+  ]
+}

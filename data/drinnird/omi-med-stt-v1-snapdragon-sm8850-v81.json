@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "drinnird/omi-med-stt-v1-snapdragon-sm8850-v81",
+  "slug": "drinnird-omi-med-stt-v1-snapdragon-sm8850-v81",
+  "author": "drinnird",
+  "url": "https://huggingface.co/drinnird/omi-med-stt-v1-snapdragon-sm8850-v81",
+  "created_at": "2026-10-10T19:25:51.000Z",
+  "updated_at": "2026-10-10T19:25:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open On-Device Medical Speech-to-Text | Omi Health",
+      "url": "https://omi.health/research/omi-med-stt",
+      "snippet": "Run Omi&#x27;s 0.6B open medical speech-to-text model locally on Apple Silicon, NVIDIA CUDA or CPU. Compare WER, Medical WER, speed and setup."
+    },
+    {
+      "title": "GitHub - Omi-Health/omi-med-stt-runtime: On-device English medical ...",
+      "url": "https://github.com/Omi-Health/omi-med-stt-runtime",
+      "snippet": "Command-line runtime for Omi Med STT v1, an English medical speech-to-text model built from NVIDIA Parakeet TDT 0.6B v2. The package downloads the right model artifact for your machine and transcribes audio locally. 0.2.1 refreshes the public evaluation text across PyPI and the model cards. The runtime code and published model weights are unchanged from 0.2.0."
+    },
+    {
+      "title": "omi-health/omi-med-stt-v1 · Hugging Face",
+      "url": "https://huggingface.co/omi-health/omi-med-stt-v1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "omi-health/omi-med-stt-v1 at main - Hugging Face",
+      "url": "https://huggingface.co/omi-health/omi-med-stt-v1/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "omi-med-stt · PyPI",
+      "url": "https://pypi.org/project/omi-med-stt/",
+      "snippet": "Omi Med STT Runtime Command-line runtime for Omi Med STT v1, an English medical speech-to-text model built from NVIDIA Parakeet TDT 0.6B v2. The package downloads the right model artifact for your machine and transcribes audio locally. 0.2.1 refreshes the public evaluation text across PyPI and the model cards."
+    }
+  ]
+}

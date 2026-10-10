@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE",
+  "slug": "claidler-qwen3-8-flash-next-ablit-nvfp4-qad-lmhead-nvfp4-gdnmse",
+  "author": "claidler",
+  "url": "https://huggingface.co/claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4-GDNMSE",
+  "created_at": "2026-10-10T15:12:55.000Z",
+  "updated_at": "2026-10-10T15:14:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "vllm",
+    "nvfp4",
+    "speculative-decoding",
+    "base_model:claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4",
+    "base_model:quantized:claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92425740179,
+  "parameters_human": "92.43B",
+  "storage_bytes": 105466747678,
+  "storage_human": "105.5 GB",
+  "base_model": "claidler/Qwen3.8-Flash-Next-Ablit-NVFP4-QAD-LMHead-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

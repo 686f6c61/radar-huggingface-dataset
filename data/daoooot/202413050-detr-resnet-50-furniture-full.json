@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "daoooot/202413050-detr-resnet-50-furniture-full",
+  "slug": "daoooot-202413050-detr-resnet-50-furniture-full",
+  "author": "daoooot",
+  "url": "https://huggingface.co/daoooot/202413050-detr-resnet-50-furniture-full",
+  "created_at": "2026-10-10T17:18:11.000Z",
+  "updated_at": "2026-10-10T17:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "detr",
+    "object-detection",
+    "dataset:Francesco/furniture-ngpea",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41608649,
+  "parameters_human": "41.6M",
+  "storage_bytes": 182713258,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De Porno Gay Gratuite Catégories - IceGay.tv",
+      "url": "https://www.icegay.tv/fr/categories",
+      "snippet": "Vous pouvez trouver tous vos Gay Porn préférés triés par catégories. Profitez-en et bookmark!Read more"
+    },
+    {
+      "title": "Gay Porn Tube - Free Gay Sex Videos",
+      "url": "https://gayporn.com/",
+      "snippet": "Welcome to GayPorn.com, the premier destination for free gay porn videos. With thousands of XXX clips to choose from, we will …"
+    },
+    {
+      "title": "Most Recent Gay Porn Tube Videos",
+      "url": "https://www.gayporntube.com/most-recent/",
+      "snippet": "Cartoons Gay Porn Videos Cum Shots Gay Porn Videos Father and Step Son Gay Porn Videos Fetish Gay Porn Videos First Time …"
+    },
+    {
+      "title": "Gay Porn Categories and Channels - IceGay.tv",
+      "url": "https://www.icegay.tv/categories",
+      "snippet": "IceGay.tv - You can find all of your favorite Gay Porn sorted by categories. Enjoy and bookmark!"
+    },
+    {
+      "title": "Porno Gay @ Gay Male Tube",
+      "url": "https://www.gaymaletube.com/fr/",
+      "snippet": "GayMaleTube a tous les meilleurs porno gay. Nous répondons à tous vos besoins et vous faisons vibrer dur en quelques secondes. …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Llama-Artemis-i1-GGUF",
+  "slug": "mradermacher-llama-artemis-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Llama-Artemis-i1-GGUF",
+  "created_at": "2026-10-10T14:36:15.000Z",
+  "updated_at": "2026-10-10T17:03:18.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "tsakonian",
+    "greek",
+    "endangered-languages",
+    "unsloth",
+    "llama",
+    "el",
+    "base_model:jgchaparro/Llama-Artemis",
+    "base_model:quantized:jgchaparro/Llama-Artemis",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8202227776,
+  "parameters_human": "8.20B",
+  "storage_bytes": 83763547712,
+  "storage_human": "83.8 GB",
+  "base_model": "jgchaparro/Llama-Artemis",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

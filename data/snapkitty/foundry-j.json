@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/foundry-j",
+  "slug": "snapkitty-foundry-j",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/foundry-j",
+  "created_at": "2026-10-10T19:37:59.000Z",
+  "updated_at": "2026-10-10T19:38:00.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "snapkitty",
+    "october-2026-drop",
+    "j",
+    "goldilocks-field",
+    "spectral",
+    "contraction",
+    "banach",
+    "research",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109045,
+  "storage_human": "109045 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SNAPKITTYWEST/SNAPKITTYWEST: Most AI tools keep the machine in ...",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Snapkitty Collective - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "Snapkitty/snapkitty-merged · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/snapkitty-merged",
+      "snippet": "Instructions to use Snapkitty/snapkitty-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Snapkitty/snapkitty-merged with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - SNAPKITTYAGENT9NOVA/snapkitty-collective: Sovereign AI ...",
+      "url": "https://github.com/SNAPKITTYAGENT9NOVA/snapkitty-collective",
+      "snippet": "What This Is SnapKitty OS is a Stochastic Autonomous Compute Mesh (SACM) — a sovereign AI operating system that runs entirely on hardware it controls, governs itself through immutable structural axioms, and produces cryptographically verifiable audit trails accessible to the public."
+    }
+  ]
+}

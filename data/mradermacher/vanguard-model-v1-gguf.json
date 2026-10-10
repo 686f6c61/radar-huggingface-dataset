@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VANGUARD-MODEL-V1-GGUF",
+  "slug": "mradermacher-vanguard-model-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VANGUARD-MODEL-V1-GGUF",
+  "created_at": "2026-10-10T17:27:51.000Z",
+  "updated_at": "2026-10-10T17:50:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "financial-question-answering",
+    "financial-reasoning",
+    "qlora",
+    "peft",
+    "domain-adaptation",
+    "retrieval-augmented-generation",
+    "enterprise-ai",
+    "corporate-filings",
+    "financial-document-analysis",
+    "finqa",
+    "tat-qa",
+    "financebench",
+    "en",
+    "base_model:Md-Asif/VANGUARD-MODEL-V1",
+    "base_model:quantized:Md-Asif/VANGUARD-MODEL-V1",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389975808,
+  "storage_human": "36.4 GB",
+  "base_model": "Md-Asif/VANGUARD-MODEL-V1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BORO 700 - YouTube",
+      "url": "https://www.youtube.com/@BORO700",
+      "snippet": "Découvrez la série de freestyle iconique intitulée « NDDB » qui a fait connaître l’artiste BORO 700 aux grands publics. Le Rappeur …"
+    },
+    {
+      "title": "Une chanson, accusée de faire l'apologie du terrorisme et mise en …",
+      "url": "https://www.franceinfo.fr/faits-divers/une-chanson-accusee-de-faire-l-apologie-du-terrorisme-et-mise-en-cause-dans-plusieurs-affaires-judiciaires-retiree-de-spotify_8227234.html",
+      "snippet": "3 days ago · Une chanson, accusée de faire l'apologie du terrorisme et mise en cause dans plusieurs affaires judiciaires, retirée de …"
+    },
+    {
+      "title": "«Bataclan, je l’ai shooté à l’œil» : le rappeur ... - Le Figaro",
+      "url": "https://www.lefigaro.fr/faits-divers/bataclan-je-l-ai-shoote-a-l-oeil-le-rappeur-boro700-dont-l-une-des-chansons-a-ete-scandee-lors-d-un-blocus-lyceen-sera-juge-pour-apologie-du-terrorisme-20261008?msockid=1d39bc5ce7546e463523abb2e6446ff0",
+      "snippet": "2 days ago · Dans son titre «M*R*H», l’artiste glorifie les terroristes islamistes Mohamed Merah et Salah Abdeslam. Dès le 3 août, le …"
+    },
+    {
+      "title": "MTPLX V1: The Swift App For Running & Creating MLX MTP Models ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1u3iikl/mtplx_v1_the_swift_app_for_running_creating_mlx/",
+      "snippet": "12.06.2026 ... ... mradermacher │ └── sarvam-30b-uncensored-i1-GGUF ├── Qwen ... GGUF └── Qwen3.6-35B-A3B-MTP-GGUF. So can I use Qwen3.6-35B-A3B ..."
+    },
+    {
+      "title": "BORO 700 - M*R*H (Clip Officiel) - YouTube",
+      "url": "https://m.youtube.com/watch?v=raN3kj5EHg8",
+      "snippet": "See what others said about this video while it was live. https://open.spotify.com/artist/0OxRy... Tout contact avec BORO700 : / …"
+    }
+  ]
+}

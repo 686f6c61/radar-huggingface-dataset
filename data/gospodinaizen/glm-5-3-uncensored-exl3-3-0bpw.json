@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GospodinAizen/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
+  "slug": "gospodinaizen-glm-5-3-uncensored-exl3-3-0bpw",
+  "author": "GospodinAizen",
+  "url": "https://huggingface.co/GospodinAizen/GLM-5.3-UNCENSORED-EXL3-3.0bpw",
+  "created_at": "2026-10-10T02:18:43.000Z",
+  "updated_at": "2026-10-10T02:18:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "glm_moe_dsa",
+    "exl3",
+    "glm",
+    "moe",
+    "uncensored",
+    "text-generation",
+    "conversational",
+    "base_model:dealignai/GLM-5.3-UNCENSORED-FP8",
+    "base_model:quantized:dealignai/GLM-5.3-UNCENSORED-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 146311635584,
+  "parameters_human": "146.31B",
+  "storage_bytes": 292765481402,
+  "storage_human": "292.8 GB",
+  "base_model": "dealignai/GLM-5.3-UNCENSORED-FP8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aagmaal hot web video — Yandex: found 946 thousand results",
+      "url": "https://desktop.yandex.com/search/?text=aagmaal+hot+web+video&p=0",
+      "snippet": "We bring together popular adult, Ullu, and trending hot web series in one place, allowing users to watch or download full episodes for …Read more"
+    },
+    {
+      "title": "+indian web series uncut aagmaal — Yandex: found 181 thousand …",
+      "url": "https://desktop.yandex.com/search/?text=%2Bindian+web+series+uncut+aagmaal&p=0",
+      "snippet": "Aagmaal brings you the best Hindi web series and bold Indian entertainment in one place. Watch trending ULLU originals, romantic …"
+    },
+    {
+      "title": "aagmaal yandex — Yandex: found 185 thousand results",
+      "url": "https://tv.yandex.com/search?text=aagmaal+yandex",
+      "snippet": "Download Aagmaal today and start streaming exclusive originals, trending web series, movies, drama, thriller, suspense, comedy, …"
+    },
+    {
+      "title": "Aagmaal » Watch All ULLU Hot Web Series",
+      "url": "https://aagmaal.gg/",
+      "snippet": "Aagmaal is the destination for people who love watching Desi Sex Web series, Uncut Videos, Hindi Hot Web Series, and many …"
+    },
+    {
+      "title": "+agmaal hot web series — Yandex: found 2 thousand results",
+      "url": "https://tv.yandex.com/search?text=%2Bagmaal+hot+web+series&missword=1",
+      "snippet": "Fresh Agmaal Web Series sex clips and adult porno arrive daily to keep things current. Watch everything without signup or any …"
+    }
+  ]
+}

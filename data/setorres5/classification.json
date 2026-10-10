@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "setorres5/classification",
+  "slug": "setorres5-classification",
+  "author": "setorres5",
+  "url": "https://huggingface.co/setorres5/classification",
+  "created_at": "2026-10-10T02:27:42.000Z",
+  "updated_at": "2026-10-10T02:27:48.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "setorres5 (S. Torres) - Hugging Face",
+      "url": "https://huggingface.co/setorres5/models",
+      "snippet": "User profile of S. Torres on Hugging Face"
+    },
+    {
+      "title": "setorres5/coca-classification · Hugging Face",
+      "url": "https://huggingface.co/setorres5/coca-classification",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Coca for Classification. The huge configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "Available today: OpenAI&#x27;s GPT-6.1 Sol and Claude Sonnet 5.5 in ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
+      "snippet": "Earlier this month, Anthropic&#x27;s Claude Opus 5.5 and OpenAI&#x27;s GPT-6 Sol joined model choice in Microsoft Copilot. Now, we&#x27;re continuing to expand that choice by bringing GPT-6.1 Sol and Claude Sonnet 5.5 to Microsoft Copilot, giving users more model options for how they delegate work to Copilot. As customers take on different kinds of work with Copilot, expanded model choice gives them more ..."
+    },
+    {
+      "title": "What is classification in machine learning? - IBM",
+      "url": "https://www.ibm.com/think/topics/classification-machine-learning",
+      "snippet": "Classification in machine learning is a predictive modeling process by which machine learning models use classification algorithms to predict the correct label for input data."
+    },
+    {
+      "title": "What are classification models? | IBM",
+      "url": "https://www.ibm.com/think/topics/classification-models",
+      "snippet": "Classification models are a type of machine learning model that divides data points into predefined groups called classes. Classifiers are a type of predictive modeling that learns class characteristics from input data and learns to assign possible classes to new data according to those learned characteristics. 1 Classification algorithms are widely used in data science for forecasting ..."
+    }
+  ]
+}

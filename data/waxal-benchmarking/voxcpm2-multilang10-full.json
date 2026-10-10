@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "id": "waxal-benchmarking/voxcpm2-multilang10-full",
+  "slug": "waxal-benchmarking-voxcpm2-multilang10-full",
+  "author": "waxal-benchmarking",
+  "url": "https://huggingface.co/waxal-benchmarking/voxcpm2-multilang10-full",
+  "created_at": "2026-10-09T17:15:45.000Z",
+  "updated_at": "2026-10-10T17:16:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 83,
+  "trending_score": 0,
+  "parameters": 2290029120,
+  "parameters_human": "2.29B",
+  "storage_bytes": 1099614055402,
+  "storage_human": "1099.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

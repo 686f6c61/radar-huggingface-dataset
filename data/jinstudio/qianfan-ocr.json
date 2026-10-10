@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/Qianfan-OCR",
+  "slug": "jinstudio-qianfan-ocr",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/Qianfan-OCR",
+  "created_at": "2026-10-10T17:48:16.000Z",
+  "updated_at": "2026-10-10T17:48:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qianfan_ocr",
+    "image-text-to-text",
+    "vision-language",
+    "ocr",
+    "document-intelligence",
+    "qianfan",
+    "conversational",
+    "multilingual",
+    "arxiv:2603.13398",
+    "arxiv:2509.18189",
+    "license:apache-2.0",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4741408256,
+  "parameters_human": "4.74B",
+  "storage_bytes": 9495225950,
+  "storage_human": "9.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document Parsing",
+      "dataset": "OmniDocBench v1.5",
+      "metric": "Overall Score",
+      "value": 93.12
+    },
+    {
+      "task": "OCR",
+      "dataset": "OlmOCR Bench",
+      "metric": "Overall Score",
+      "value": 79.8
+    },
+    {
+      "task": "OCR",
+      "dataset": "OCRBench",
+      "metric": "Score",
+      "value": 880
+    }
+  ],
+  "sources": []
+}

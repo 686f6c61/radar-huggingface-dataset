@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_gist30_27D_60k_s1000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_gist30_27d_60k_s1000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_gist30_27D_60k_s1000",
+  "created_at": "2026-10-10T01:58:51.000Z",
+  "updated_at": "2026-10-10T01:59:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 51700368,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206831616,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andy Warhol, portraits of the 70s : Warhol, Andy, 1928-1987 : Free ...",
+      "url": "https://archive.org/details/andywarholportra0000warh",
+      "snippet": "\"Published in conjunction with an exhibition held at the Whitney Museum of American Art, November 20, 1979-January 27, 1980.\" No …"
+    },
+    {
+      "title": "The Warholstars Timeline 1970 - 1974",
+      "url": "https://warholstars.org/1970-74.html",
+      "snippet": "ANDY WARHOL, JED JOHNSON, FRED HUGHES and BOB COLACELLO flew to Mexico City to attend the opening of an art …"
+    },
+    {
+      "title": "Des Moines Art Center – The Andy Warhol ... - Warhol Foundation",
+      "url": "https://warholfoundation.org/grants/archive/des-moines-art-center/",
+      "snippet": "Home to more than 500,000 objects, it is the largest repository of Warhol’s artwork and archival materials and among the most …"
+    },
+    {
+      "title": "Past Exhibitions - The Andy Warhol Museum",
+      "url": "https://www.warhol.org/past-exhibitions/",
+      "snippet": "May 14, 2023 · Warhol and Basquiat In Focus: Works from the Permanent Collection June 7 – September 20, 2021"
+    },
+    {
+      "title": "Andy Warhol Selected Exhibitions - WARHOLSTARS.ORG",
+      "url": "https://www.warholstars.org/andy_warhol_exhibition.html",
+      "snippet": "Apr 28, 2015 · May 12 - June 21, 1970 (Exhibition travelled to the Museum of Contemporary Art in Chicago, the Stedelijk Van …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FluidInference/embeddinggemma-2-coreml",
+  "slug": "fluidinference-embeddinggemma-2-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/embeddinggemma-2-coreml",
+  "created_at": "2026-10-09T02:11:38.000Z",
+  "updated_at": "2026-10-09T06:01:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "coreml",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "coreml",
+    "apple-neural-engine",
+    "on-device",
+    "embeddings",
+    "sentence-similarity",
+    "gemma",
+    "feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 217,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1481898612,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FluidInference (Fluid Inference Community) - Hugging Face",
+      "url": "https://huggingface.co/FluidInference",
+      "snippet": "AI & ML interests. None defined yet. Recent Activity. alexwengg updated a model in about 2 hours. FluidInference/embeddinggemma-2-coreml · alexwengg published a ..."
+    },
+    {
+      "title": "Quantized Models for google/embeddinggemma-2 - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aquantized%3Agoogle%2Fembeddinggemma-2",
+      "snippet": "Models · unsloth/embeddinggemma-2-GGUF · ggml-org/embeddinggemma-2-GGUF · onnx-community/embeddinggemma-2-ONNX · FluidInference/embeddinggemma-2-coreml · nativ- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=embedding",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... FluidInference/embeddinggemma-2-coreml. Feature Extraction • Updated in about ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=embeddings",
+      "snippet": "Models · FluidInference/embeddinggemma-2-coreml · mlx-community/CLM-v0.1-8B-MLX-8bit · cointegrated/rubert-tiny2 · ibm-granite/granite-embedding-311m-multilingual- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=sentence-similarity",
+      "snippet": "perplexity-ai/pplx-embed-v2-late-0.6b. Feature Extraction • 0.6B ... FluidInference/embeddinggemma-2-coreml. Feature Extraction • Updated in about ..."
+    }
+  ]
+}

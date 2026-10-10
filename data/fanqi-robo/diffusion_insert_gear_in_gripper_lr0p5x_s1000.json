@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "fanqi-robo/diffusion_insert_gear_in_gripper_lr0p5x_s1000",
+  "slug": "fanqi-robo-diffusion_insert_gear_in_gripper_lr0p5x_s1000",
+  "author": "fanqi-robo",
+  "url": "https://huggingface.co/fanqi-robo/diffusion_insert_gear_in_gripper_lr0p5x_s1000",
+  "created_at": "2026-10-10T01:22:02.000Z",
+  "updated_at": "2026-10-10T01:22:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "insert_gear_in_gripper",
+    "dataset:fanqi-robo/insert_gear_in_gripper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 293206638,
+  "parameters_human": "293.2M",
+  "storage_bytes": 2345787784,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

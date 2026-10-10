@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fanqi-robo/pi0_insert_gear_in_gripper_lr2x_s1000",
+  "slug": "fanqi-robo-pi0_insert_gear_in_gripper_lr2x_s1000",
+  "author": "fanqi-robo",
+  "url": "https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr2x_s1000",
+  "created_at": "2026-10-10T02:22:02.000Z",
+  "updated_at": "2026-10-10T02:22:22.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "insert_gear_in_gripper",
+    "dataset:fanqi-robo/insert_gear_in_gripper",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 17785015176,
+  "storage_human": "17.8 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000 · Hugging Face",
+      "url": "https://huggingface.co/fanqi-robo/groot_n17_insert_gear_in_gripper_lr2x_s1000",
+      "snippet": "groot_n17 on insert_gear_in_gripper (learning rate 2x, seed 1000) This branch (main) holds the final checkpoint (update 20000). main is the final checkpoint and the benchmark&#x27;s comparison point; best is the checkpoint with the lowest validation loss."
+    },
+    {
+      "title": "fanqi-robo/insert_gear_in_gripper · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Brown-yang/pi0: pi0 finetune",
+      "url": "https://github.com/Brown-yang/pi0",
+      "snippet": "For both models, we provide base model checkpoints, pre-trained on 10k+ hours of robot data, and examples for using them out of the box or fine-tuning them to your own datasets."
+    },
+    {
+      "title": "𝜋_0: A Vision-Language-Action Flow Model for General Robot Control",
+      "url": "https://arxiv.org/html/2410.24164v1",
+      "snippet": "The model is adapted to robot control by adding a separate action expert that produces continuous actions via flow matching, enabling precise and fluent manipulation skills."
+    },
+    {
+      "title": "pi0 | PromptLayer Models",
+      "url": "https://www.promptlayer.com/models/pi0/",
+      "snippet": "The model is hosted on Hugging Face and is fully integrated with the LeRobot ecosystem. The model can be easily implemented using the Pi0Policy class, allowing for straightforward action selection based on input batches."
+    }
+  ]
+}

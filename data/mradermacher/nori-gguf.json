@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nori-GGUF",
+  "slug": "mradermacher-nori-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nori-GGUF",
+  "created_at": "2026-10-10T17:40:55.000Z",
+  "updated_at": "2026-10-10T18:14:01.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "math",
+    "think-tokens",
+    "gemma-4",
+    "vllm",
+    "cross-architecture-transport",
+    "isometric-manifold-transport",
+    "en",
+    "base_model:BIBLIOKLEPT/Nori",
+    "base_model:quantized:BIBLIOKLEPT/Nori",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 76363566464,
+  "storage_human": "76.4 GB",
+  "base_model": "BIBLIOKLEPT/Nori",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) Uncensored AI in the Wild: Tracking Publicly Available and ...",
+      "url": "https://www.researchgate.net/publication/396718158_Uncensored_AI_in_the_Wild_Tracking_Publicly_Available_and_Locally_Deployable_LLMs",
+      "snippet": "11.10.2025 ... GGUF and model merges), (ii) quantization method (e.g., GPTQ, AWQ, and ... 14. mradermacher/Qwen2.5-VL-32B-Instruct-abliterated-GGUF. 15 ..."
+    },
+    {
+      "title": "pints-ai/Expository-Prose-V1 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/pints-ai/Expository-Prose-V1",
+      "snippet": "07.08.2024 ... **By using any of the models, corpora or part thereof, the user agrees to bear full responsibility to do the necessary due diligence to ensure ..."
+    },
+    {
+      "title": "SAVRN Site Map: Every Public Page",
+      "url": "https://savrn.com/sitemap",
+      "snippet": "turbo-ai-7b-i1-GGUF/models/turbo-ai-7b-i1-gguf · roberta-base-cuad/models ... Team Mradermacher/model-publishers/mradermacher · Zeyuan Yang/model ..."
+    },
+    {
+      "title": "Мануал по локальному запуску чат-ботов для ролевых игр ...",
+      "url": "https://safereactor.cc/post/6065454",
+      "snippet": "... GGUF) · ﻿Ct г •* п Э Новая вкладка х + - □ X G @. Preview · ﻿trf H &U¡us&sjuü iîlp (H “'•LM Studio - Discover. Preview · ﻿0^) installers.lmstudio.ai X + □ ..."
+    },
+    {
+      "title": "United States military bases in the Middle East - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States_military_bases_in_the_Middle_East",
+      "snippet": "US bases in the Middle East The United States stations between 40,000 and 50,000 military personnel across more than 20 sites …"
+    }
+  ]
+}

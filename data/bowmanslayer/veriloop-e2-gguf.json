@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bowmanslayer/VeriLoop-E2-GGUF",
+  "slug": "bowmanslayer-veriloop-e2-gguf",
+  "author": "bowmanslayer",
+  "url": "https://huggingface.co/bowmanslayer/VeriLoop-E2-GGUF",
+  "created_at": "2026-10-10T17:12:59.000Z",
+  "updated_at": "2026-10-10T17:41:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "veriloop",
+    "community-quantization",
+    "experimental",
+    "text-generation",
+    "conversational",
+    "base_model:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "base_model:quantized:tsinghua-sigs-robot-lab/VeriLoop-E2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 17475010112,
+  "storage_human": "17.5 GB",
+  "base_model": "tsinghua-sigs-robot-lab/VeriLoop-E2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube to MP3 Converter",
+      "url": "https://mp3cow.com/",
+      "snippet": "Convert YouTube videos to MP3 audio files without annoying ads or registration. With MP3Cow, you have one of the fastest and ad …"
+    },
+    {
+      "title": "MP3 Converter - FreeConvert.com",
+      "url": "https://www.freeconvert.com/mp3-converter",
+      "snippet": "MP3 Converter - The best way to convert any file to mp3 format online for free. Convert wav, aac, flac, mp4, and more to mp3 format …"
+    },
+    {
+      "title": "Free YouTube to MP3 Downloader - turboscribe.ai",
+      "url": "https://turboscribe.ai/downloader/youtube/mp3/free?msockid=059a56fcd3e16839355f4112d2e76971",
+      "snippet": "Download YouTube videos as MP3 files. Compact, lightweight, and universally supported, the MP3 format made it possible to carry …"
+    },
+    {
+      "title": "Convertisseur MP3 - FreeConvert.com",
+      "url": "https://www.freeconvert.com/fr/mp3-converter?ch=1",
+      "snippet": "Convertisseur MP3 : la meilleure façon de convertir gratuitement n’importe quel fichier au format MP3 en ligne. Convertissez WAV, …"
+    },
+    {
+      "title": "Convert audio and video to MP3",
+      "url": "https://audio.online-convert.com/convert-to-mp3",
+      "snippet": "Convert your audio or video files to MP3 audio with this free online MP3 converter. Great quality for music conversion. You can also …"
+    }
+  ]
+}

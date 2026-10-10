@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ",
+  "slug": "vishva007-lightonocr-3-0-8b-w4a16-autoround-gptq",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/LightOnOCR-3-0.8B-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-10-10T19:34:07.000Z",
+  "updated_at": "2026-10-10T19:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "auto-round",
+    "int4",
+    "w4a16",
+    "tables",
+    "forms",
+    "quantized",
+    "conversational",
+    "arxiv:2601.14251",
+    "arxiv:2309.05516",
+    "base_model:lightonai/LightOnOCR-3-0.8B",
+    "base_model:quantized:lightonai/LightOnOCR-3-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1020326483,
+  "storage_human": "1.0 GB",
+  "base_model": "lightonai/LightOnOCR-3-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dots.mocr - a Vishva007 Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Vishva007/dotsmocr",
+      "snippet": "Vishva007 &#x27;s Collections dots.mocr Qwen 3.8 Distill (empero-ai&#x27;s Distill) NuExtract3 Qwen 3.8 Meta&#x27;s Muse Glimmer Gemma 4 Qwen 3.5 Qwen 3 VL Qwen 3"
+    },
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "LightOnOCR-3 is our new family of end-to-end OCR models: text, layout, image and chart understanding from a single compact model."
+    },
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007",
+      "snippet": "Deeply interested in Generative AI, particularly Large Language Models (LLMs). Focusing on model fine-tuning, prompt engineering, and practical applications using the Hugging Face ecosystem (Transf..."
+    },
+    {
+      "title": "Open-source W4A16 quantized weights for dots.mocr with AutoRound",
+      "url": "https://www.linkedin.com/posts/vishva-r_ai-machinelearning-vllm-activity-7508728148184752128-S6EF",
+      "snippet": "Just open-sourced W4A16 quantized weights for dots-studio/dots.mocr using Intel AutoRound! Run this state-of-the-art document parsing model at high throughput with a fraction of the VRAM footprint."
+    },
+    {
+      "title": "lightonocr - vLLM",
+      "url": "https://docs.vllm.ai/en/latest/api/vllm/model_executor/models/lightonocr/",
+      "snippet": "Forum Slack Home API Reference vllm model_executor models vllm.model_executor.models.lightonocr¶ October 1, 2026 Back to top Made with Material for MkDocs"
+    }
+  ]
+}

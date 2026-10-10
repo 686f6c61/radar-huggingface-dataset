@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "d0-0d/osava-smollm",
+  "slug": "d0-0d-osava-smollm",
+  "author": "d0-0d",
+  "url": "https://huggingface.co/d0-0d/osava-smollm",
+  "created_at": "2026-10-10T17:33:29.000Z",
+  "updated_at": "2026-10-10T17:36:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "security",
+    "windows",
+    "sysmon",
+    "triage",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:quantized:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 1915305376,
+  "storage_human": "1.9 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "United States military bases in the Middle East - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States_military_bases_in_the_Middle_East",
+      "snippet": "US bases in the Middle East The United States stations between 40,000 and 50,000 military personnel across more than 20 sites …"
+    },
+    {
+      "title": "595th Transportation Brigade - CurrentOps.com",
+      "url": "https://currentops.com/unit/us/army/595-tc-bde",
+      "snippet": "595th Transportation Brigade U.S. Army Subordinate units 595th Transportation Brigade (U.S. Army [AC]) Camp Arifjan | Kuwait …"
+    },
+    {
+      "title": "Camp Arifjan — map, directions, coordinates - Yandex",
+      "url": "https://yandex.com/maps/10000/earth/geo/4090334149/",
+      "snippet": "Al-Ahmadi Governorate, Al-Ahmadi Governorate Desert Area, Camp Arifjan — online map with routes."
+    },
+    {
+      "title": "Now Hiring: 75 Camp Arifjan, Kuwait Jobs | Indeed",
+      "url": "https://www.indeed.com/q-Camp-Arifjan,-Kuwait-jobs.html",
+      "snippet": "Browse 85 Camp Arifjan, Kuwait jobs. New jobs posted today. Apply now and find your next opportunity on Indeed.com."
+    },
+    {
+      "title": "12 1st theater support command, Camp arifjan Images: NARA and …",
+      "url": "https://nara.getarchive.net/topics/1st+theater+support+command/camp+arifjan",
+      "snippet": "Oct 16, 2017 · Download Images of 1st theater support command, Camp arifjan - Free for commercial use, no attribution required. …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "SargeDev/JEV-27B-VL-Uncensored-EXL3",
+  "slug": "sargedev-jev-27b-vl-uncensored-exl3",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored-EXL3",
+  "created_at": "2026-10-10T19:21:23.000Z",
+  "updated_at": "2026-10-10T19:25:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "decision-model",
+    "system-one",
+    "typed-decisions",
+    "uncensored",
+    "abliterated",
+    "calibrated-probabilities",
+    "noul",
+    "choice",
+    "score",
+    "qwen3.8",
+    "jev",
+    "jev-1.13-teacher",
+    "exl3",
+    "text-classification",
+    "dataset:SargeDev/jev-distill-corpus-v3",
+    "base_model:SargeDev/JEV-27B-VL-Uncensored",
+    "base_model:quantized:SargeDev/JEV-27B-VL-Uncensored",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6627838848,
+  "parameters_human": "6.63B",
+  "storage_bytes": 13276039372,
+  "storage_human": "13.3 GB",
+  "base_model": "SargeDev/JEV-27B-VL-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Full Length Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=full+length",
+      "snippet": "No other sex tube is more popular and features more Full Length scenes than Pornhub! Browse through our impressive selection of …"
+    },
+    {
+      "title": "Full Lengths Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=full+lengths",
+      "snippet": "Watch Full Lengths porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    },
+    {
+      "title": "Full Length – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=full+length",
+      "snippet": "Regarde les vidéos porno de Full Length gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de …"
+    },
+    {
+      "title": "Full Length Porn – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=full+length+porn",
+      "snippet": "Regarde les vidéos porno de Full Length Porn gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et …"
+    },
+    {
+      "title": "Full Length Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.org/video/search?search=full+length",
+      "snippet": "Keine andere Sex Tube ist beliebter und bietet mehr Full Length Szenen als Pornhub! Browse unser unglaubliches Angebot an …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "elyes1032/distilbert-message-ner",
+  "slug": "elyes1032-distilbert-message-ner",
+  "author": "elyes1032",
+  "url": "https://huggingface.co/elyes1032/distilbert-message-ner",
+  "created_at": "2026-10-10T17:35:09.000Z",
+  "updated_at": "2026-10-10T17:35:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66365187,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265473092,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Laboratoire Rueil Bougainvillées - Biogroup",
+      "url": "https://laboratoires.biogroup.fr/hauts-de-seine/rueil-malmaison/6-cours-des-bougainvillees",
+      "snippet": "Bienvenue chez Biogroup Rueil Bougainvillées, votre référence pour des services de laboratoire fiables à Rueil-Malmaison. Nos …"
+    },
+    {
+      "title": "Laboratoire Rueil Martinets - Biogroup",
+      "url": "https://laboratoires.biogroup.fr/hauts-de-seine/rueil-malmaison/97-bis-avenue-albert-1er",
+      "snippet": "Bienvenue au laboratoire Rueil Martinets, un lieu de confiance pour toutes vos analyses médicales. Avec une équipe de …"
+    },
+    {
+      "title": "BIOGROUP PARIS OUEST - Laboratoire Rueil Bougainvillées",
+      "url": "https://www.doctolib.fr/laboratoire/rueil-malmaison/biogroup-laboratoire-rueil-bougainvillees",
+      "snippet": "Nous avons à cœur de vous offrir un service de proximité. Avec des conseils professionnels, un accompagnement sur mesure et une …"
+    },
+    {
+      "title": "BIOGROUP PARIS OUEST - Laboratoire Rueil Martinets",
+      "url": "https://www.doctolib.fr/laboratoire/rueil-malmaison/biogroup-laboratoire-rueil-martinets",
+      "snippet": "Nous avons à cœur de vous offrir un service de proximité. Avec des conseils professionnels, un accompagnement sur mesure et une …"
+    },
+    {
+      "title": "BIOGROUP - Laboratoire de biologie médicale",
+      "url": "https://biogroup.fr/",
+      "snippet": "Biogroup est un regroupement de laboratoires de biologie médicale. Trouvez un laboratoire, accédez aux résultats et obtenez des …"
+    }
+  ]
+}

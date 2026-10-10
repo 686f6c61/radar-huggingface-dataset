@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor",
+  "slug": "vishva007-lightonocr-3-4b-w4a16-autoround-llm-compressor",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound-LLM-Compressor",
+  "created_at": "2026-10-10T19:18:38.000Z",
+  "updated_at": "2026-10-10T19:38:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "auto-round",
+    "int4",
+    "w4a16",
+    "tables",
+    "forms",
+    "quantized",
+    "conversational",
+    "arxiv:2601.14251",
+    "arxiv:2309.05516",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:quantized:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 3968110331,
+  "storage_human": "4.0 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مريم الشريف - ﺗﻤﺜﻴﻞ فيلموجرافيا، صور، فيديو",
+      "url": "https://elcinema.com/person/2060528/",
+      "snippet": "مريم الشريف، ممثلة مصرية، شاركت بالتمثيل في عدد من الأعمال الفنية، من أهمها، مسلسل (اللهم إني صائم)."
+    },
+    {
+      "title": "‎مريم الشريف ‎ (@mariam_alsharif7) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mariam_alsharif7/",
+      "snippet": "مريم الشريف 🇵🇸‎ (@mariam_alsharif7) • Instagram photos and videos."
+    },
+    {
+      "title": "‎مريم الشريفة الحسني‎ (@maryamalhasnii) • Instagram photos and videos",
+      "url": "https://www.instagram.com/maryamalhasnii/",
+      "snippet": "مريم الشريفة الحسني‎ (@maryamalhasnii) • Instagram photos and videos."
+    },
+    {
+      "title": "مريم شريف - ﺗﻤﺜﻴﻞ فيلموجرافيا، صور، فيديو",
+      "url": "https://elcinema.com/person/2328544/",
+      "snippet": "مريم شريف، صيدلانية وممثلة مصرية. درست بالجامعة الألمانية في برلين، وانطلقت مسيرتها ببطولة مطلقة من خلال الفيلم المصري (سنو وايت)، والذي شارك في عدة مهرجانات، وفازت عنه بجائزة أفضل …"
+    },
+    {
+      "title": "مصابيح: الشريفة مريم الميرغنية .. منارة شرق السودان السامقة",
+      "url": "https://abdalhady-alhag.blogspot.com/2022/03/blog-post_11.html",
+      "snippet": "عند مدخل مدينة سنكات التي ترقد هانئة بين أحضان تلال البحر الأحمر، تقف تلك (القُبة) الشامخة لتستقبل زوارها وتحكي لهم تاريخ واحدة من أهمّ شخصيات شرق السودان التي لعبت دوراً إجتماعياً بارزاً، …"
+    }
+  ]
+}

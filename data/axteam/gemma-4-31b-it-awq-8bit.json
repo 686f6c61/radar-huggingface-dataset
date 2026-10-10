@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/gemma-4-31B-it-AWQ-8bit",
+  "slug": "axteam-gemma-4-31b-it-awq-8bit",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/gemma-4-31B-it-AWQ-8bit",
+  "created_at": "2026-10-10T17:24:51.000Z",
+  "updated_at": "2026-10-10T17:35:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "awq",
+    "int8",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10223251812,
+  "parameters_human": "10.22B",
+  "storage_bytes": 35122313730,
+  "storage_human": "35.1 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free AI Models: Licences, Hardware and the Catch (2026)",
+      "url": "https://valuestreamai.com/free-models",
+      "snippet": "7 and M3, Google Gemma 4 (31B and 26B-A4B), inclusionAI Ling 3.0 Flash ... Still widely available; AWQ generally edges it on quality at the same bit width."
+    },
+    {
+      "title": "Fine-Tuning LLMs: A Guide From Our Gemma 4 Case Study",
+      "url": "https://themobilereality.com/blog/ai/fine-tuning-open-weight-llm-gemma/",
+      "snippet": "vor 4 Tagen ... Metallic AI processor represents fine-tuning an open-weight LLM, with Gemma 4. Introduction. Fine-tuning an LLM means continuing the training of ..."
+    },
+    {
+      "title": "The IOL-AI Challenge: - arXiv",
+      "url": "https://arxiv.org/html/2608.18011",
+      "snippet": "18.08.2026 ... Given that the latter ones are individually not competitive with the former, we aggregate the answers of four mid-sized models (Gemma 4 31B, ..."
+    },
+    {
+      "title": "Part 3: Choosing Models and Building RAG and Agent Workflows",
+      "url": "https://vegardit.com/en/blog/running-llms-locally-models-rag-coding-agents/",
+      "snippet": "08.07.2026 ... Native low-bit and quantization-aware releases are a separate case: Gemma 4 QAT style checkpoints can behave better than a generic post-hoc ..."
+    },
+    {
+      "title": "Osaurus (@OsaurusAI) / X",
+      "url": "https://x.com/OsaurusAI",
+      "snippet": "The native macOS harness for AI agents -- any model,... From github.com · 1 · 12 · 915 ... Ornith reports the 9B matches or beats Gemma 4 31B and Qwen 3.6 35B."
+    }
+  ]
+}

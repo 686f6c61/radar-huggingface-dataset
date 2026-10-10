@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "nigerundayoo/qwen3_1-7b_random_2026-10-10-00-06",
+  "slug": "nigerundayoo-qwen3_1-7b_random_2026-10-10-00-06",
+  "author": "nigerundayoo",
+  "url": "https://huggingface.co/nigerundayoo/qwen3_1-7b_random_2026-10-10-00-06",
+  "created_at": "2026-10-10T02:01:35.000Z",
+  "updated_at": "2026-10-10T02:01:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46339370,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mweinbach1/qwen-3.8-flash-next-nvfp4-rtx-spark",
+  "slug": "mweinbach1-qwen-3-8-flash-next-nvfp4-rtx-spark",
+  "author": "mweinbach1",
+  "url": "https://huggingface.co/mweinbach1/qwen-3.8-flash-next-nvfp4-rtx-spark",
+  "created_at": "2026-10-10T17:45:52.000Z",
+  "updated_at": "2026-10-10T18:14:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "tensorfold",
+  "languages": [],
+  "tags": [
+    "tensorfold",
+    "safetensors",
+    "qwen4_exp",
+    "qwen3.8-flash-next",
+    "nvfp4",
+    "blackwell",
+    "sm_121",
+    "rtx-spark-n1x",
+    "speculative-decoding",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66239071635,
+  "parameters_human": "66.24B",
+  "storage_bytes": 106024295586,
+  "storage_human": "106.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Récupérer votre compte Google ou Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=fr",
+      "snippet": "Suivez les étapes pour récupérer votre compte Google si vous avez oublié vos identifiants ou n'obtenez pas de codes de validation."
+    },
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    },
+    {
+      "title": "Ayuda de Gmail",
+      "url": "https://support.google.com/mail/?hl=es",
+      "snippet": "Ayuda de Gmail: lee sobre cómo recuperar tu Cuenta y resolver problemas. Aprende cómo funciona Gmail, las Etiquetas, Filtros, …"
+    },
+    {
+      "title": "Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Gmail chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "Gmail ความช่วยเหลือ",
+      "url": "https://support.google.com/mail/?hl=th",
+      "snippet": "การติดตามพัสดุภัณฑ์ใน Gmail กำหนดเวลาและสถานที่ทำงาน ส่งความคิดเห็นใน Gmail ติดตามการซื้อใน Gmail รับฟีเจอร์ Gmail …"
+    }
+  ]
+}

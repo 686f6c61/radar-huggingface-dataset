@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "MissawB/irl-guard-decision-qwen-v2-lora",
+  "slug": "missawb-irl-guard-decision-qwen-v2-lora",
+  "author": "MissawB",
+  "url": "https://huggingface.co/MissawB/irl-guard-decision-qwen-v2-lora",
+  "created_at": "2026-10-10T10:59:35.000Z",
+  "updated_at": "2026-10-10T15:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "irl-guard",
+    "dataset:MissawB/irl-guard-decisions-v2",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:adapter:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148279467,
+  "storage_human": "148 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

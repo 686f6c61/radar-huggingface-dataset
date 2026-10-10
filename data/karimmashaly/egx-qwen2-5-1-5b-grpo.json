@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "karimmashaly/egx-qwen2.5-1.5b-grpo",
+  "slug": "karimmashaly-egx-qwen2-5-1-5b-grpo",
+  "author": "karimmashaly",
+  "url": "https://huggingface.co/karimmashaly/egx-qwen2.5-1.5b-grpo",
+  "created_at": "2026-10-10T14:53:11.000Z",
+  "updated_at": "2026-10-10T16:17:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "finance",
+    "egyptian-stock-exchange",
+    "grpo",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889040,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pyramid Training | Fitness - Arnold Schwarzenegger",
+      "url": "https://www.schwarzenegger.com/fitness/post/pyramid-training",
+      "snippet": "Sep 27, 2013 · In order to be constantly losing fat, building muscle and gaining strength you need new to keep pushing your body …"
+    },
+    {
+      "title": "Your Body is All You Need: The World’s Oldest",
+      "url": "https://www.schwarzenegger.com/fitness/post/your-body-is-all-you-need-the-worlds-oldest-training-method-and-a-1-workout",
+      "snippet": "Jul 20, 2012 · Here's a 15-Minute workout that you can do with just your body weight anywhere. A workout that will get you started on …"
+    },
+    {
+      "title": "Arnold’s Recipes - Arnold’s Pump Club",
+      "url": "https://arnoldspumpclub.schwarzenegger.com/c/arnolds-recipes",
+      "snippet": "Arnold’s Recipes We replace expensive ingredients and complicated instructions with quick, convenient, healthy, and delicious …"
+    },
+    {
+      "title": "Last Action Hero | Filmography - Arnold Schwarzenegger",
+      "url": "https://mail.schwarzenegger.com/filmography/movie/last-action-hero",
+      "snippet": "This is the story of young Danny Madigan who is a huge fan of Jack Slater, a larger-than-life action hero played by Arnold …"
+    },
+    {
+      "title": "Fitness For Everyone | Arnold’s Pump Club",
+      "url": "https://arnoldspumpclub.schwarzenegger.com/c/fitness-for-everyone",
+      "snippet": "This guide provides workouts that can be done at home in 15 minutes (or less!)."
+    }
+  ]
+}

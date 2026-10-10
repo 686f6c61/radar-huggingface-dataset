@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "neggy555/h3andgoo",
+  "slug": "neggy555-h3andgoo",
+  "author": "neggy555",
+  "url": "https://huggingface.co/neggy555/h3andgoo",
+  "created_at": "2026-10-10T02:29:49.000Z",
+  "updated_at": "2026-10-10T02:36:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "not-for-all-audiences",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155179833,
+  "storage_human": "155 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "neggy555 (Joey Balliro) - Hugging Face",
+      "url": "https://huggingface.co/neggy555",
+      "snippet": "Recent Activity updated a modelabout 4 hours ago neggy555/mmzxmap published a modelabout 5 hours ago neggy555/mmzxmap liked a model18 days ago Comfy-Org/MiniMax-H3 View all activity"
+    },
+    {
+      "title": "neggy555 (Joey Balliro) - Hugging Face",
+      "url": "https://huggingface.co/neggy555/models",
+      "snippet": "neggy555&#x27;s models1 Sort: Recently updated neggy555/mmzxmap Text-to-Image •Updated about 5 hours ago•"
+    },
+    {
+      "title": "Free AI 3D Model Generator - MeshGPT",
+      "url": "https://meshgpt.io/",
+      "snippet": "Create stunning 3D models from text or images instantly with our free AI 3d model generator. Transform your ideas into production-ready 3D assets with MeshGPT."
+    },
+    {
+      "title": "H3-ai | Multi-Model AI Image & Video Generator",
+      "url": "https://h3-ai.com/",
+      "snippet": "H3-ai is an independently operated AI creation platform that brings multiple image and video models into one workspace. Choose a workflow, compare the available model options, review the credit estimate, and continue to the generation studio with your draft intact."
+    },
+    {
+      "title": "Free AI 3D Model Generator from Text & Images | Image to 3D AI",
+      "url": "https://image-to-3d.ai/ai-3d-model-generator/",
+      "snippet": "Create production-ready 3D models from text or images with our free AI 3D model generator. Clean geometry, rich textures, and easy export for any project."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "A9at/jag_style_LoRA",
+  "slug": "a9at-jag_style_lora",
+  "author": "A9at",
+  "url": "https://huggingface.co/A9at/jag_style_LoRA",
+  "created_at": "2026-10-10T19:11:17.000Z",
+  "updated_at": "2026-10-10T19:11:21.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77215302,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jagat AI Style - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1919717392561145909",
+      "snippet": "Description Jagat AI Style by MisterTwister69A simple style lora trained with images from Jagat AII recommend using an Upscaler like 4x-Ultrasharp and an ADetailer to help your waifu look more fancy.SocialsI have a DeviantArt account and a Discord server (join here)."
+    },
+    {
+      "title": "Jagat AI Style - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/91d271c59922bd298bd161a5d38d1a51",
+      "snippet": "Jagat AI Style by MisterTwister69 A simple style lora trained with images from Jagat AI I recommend using an Upscaler like 4x-Ultrasharp and an ADetailer to help your waifu look more fancy. Socials I have a DeviantArt account and a Discord server (join here)."
+    },
+    {
+      "title": "Style - Jaga - v1.0 - Free AI LORA Download | Tensor.Art",
+      "url": "https://www.tensor.art/models/639058165746617662",
+      "snippet": "Download Style - Jaga - free LORA SD 1.5 AI model on TENSOR. By Idkanymore50"
+    },
+    {
+      "title": "Jag27 Style - Illustrious | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/1037634/jag27-style",
+      "snippet": "Create homemodelsimagesvideos3D Modelshubsarticlescomicschallengesupdatesshop More Jag27 Style 32 195 467"
+    },
+    {
+      "title": "JagatAI - Style - V1 - Free AI LORA Download | Tensor.Art",
+      "url": "https://tensor.art/models/907912769750226691",
+      "snippet": "Download JagatAI - Style - free LORA Illustrious AI model on TENSOR. ANIME, STYLE. By Cosmos"
+    }
+  ]
+}

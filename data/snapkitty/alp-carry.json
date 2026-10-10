@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/alp-carry",
+  "slug": "snapkitty-alp-carry",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/alp-carry",
+  "created_at": "2026-10-10T19:32:20.000Z",
+  "updated_at": "2026-10-10T19:43:44.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "snapkitty",
+    "october-2026-drop",
+    "c",
+    "nasm",
+    "x86-64",
+    "janet",
+    "ocaml",
+    "hlasm",
+    "neuro-symbolic",
+    "horn-clauses",
+    "compiler",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 264270,
+  "storage_human": "264270 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - SNAPKITTYWEST/SNAPKITTYWEST: Most AI tools keep the machine in ...",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    },
+    {
+      "title": "SNAPKITTYWEST (SNAPKITTY COLLECTIVE LLC) · GitHub",
+      "url": "https://github.com/SNAPKITTYWEST",
+      "snippet": "SnapKitty has a documented closure record for 13 formerly open ALP proof obligations mirrored from the Foundry alp_sorry_manifest.json set. Those closures are positioned as part of the commercial proof portfolio."
+    },
+    {
+      "title": "Snapkitty (Snapkitty Collective) - Hugging Face",
+      "url": "https://huggingface.co/Snapkitty",
+      "snippet": "Sovereign AI infrastructure — quantum-seeded agents, WORM-sealed reasoning, NAND-decomposed LLMs. Bel Esprit D&#x27;Accord Irrevocable Trust · EIN 42-697643"
+    },
+    {
+      "title": "Research and Papers - a Snapkitty Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Snapkitty/research-and-papers",
+      "snippet": "25+ LaTeX papers on mathematical foundations, AI agent architecture, cryptanalysis, entropy theorems, and tournament results."
+    },
+    {
+      "title": "#localai #edgeai | حمد علي بار - LinkedIn",
+      "url": "https://www.linkedin.com/posts/ahmad-parr-dev_localai-edgeai-activity-7513855605988601856-_amD",
+      "snippet": "🚀 11 BILLION PARAMETERS. 8GB MEMORY. ONE MINI PC. At SnapKitty Collective LLC we&#x27;re not just scaling AI. We&#x27;re engineering around the limitations everyone else accepts. 🐈‍⬛ While the ..."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "BenoitJT-GIRARD/qwen3-1.7b-clinical-triage",
+  "slug": "benoitjt-girard-qwen3-1-7b-clinical-triage",
+  "author": "BenoitJT-GIRARD",
+  "url": "https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-clinical-triage",
+  "created_at": "2026-10-10T15:05:19.000Z",
+  "updated_at": "2026-10-10T15:07:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "medical",
+    "triage",
+    "emergency-department",
+    "sft",
+    "lora",
+    "dpo",
+    "trl",
+    "unsloth",
+    "conversational",
+    "fr",
+    "en",
+    "dataset:BenoitJT-GIRARD/clinical-triage-bilingual",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938564,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Emergency triage level",
+      "dataset": "Clinical evaluation set",
+      "metric": "Triage level accuracy",
+      "value": 0.7167
+    },
+    {
+      "task": "Emergency triage level",
+      "dataset": "Clinical evaluation set",
+      "metric": "Urgent cases sent to a lower level",
+      "value": 0.275
+    },
+    {
+      "task": "Emergency triage level",
+      "dataset": "Clinical evaluation set",
+      "metric": "Answers the expected format can parse",
+      "value": 1
+    }
+  ],
+  "sources": []
+}

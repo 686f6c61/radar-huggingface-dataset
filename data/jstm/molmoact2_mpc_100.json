@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "jstm/molmoact2_mpc_100",
+  "slug": "jstm-molmoact2_mpc_100",
+  "author": "jstm",
+  "url": "https://huggingface.co/jstm/molmoact2_mpc_100",
+  "created_at": "2026-10-10T15:41:21.000Z",
+  "updated_at": "2026-10-10T15:41:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "molmoact2",
+    "robotics",
+    "maniskill",
+    "dataset:jstm/mpc_lerobot_pd_ee_pose_100",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884579416,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

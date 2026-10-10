@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sprinkle-Gemma-4-31B-GGUF",
+  "slug": "mradermacher-sprinkle-gemma-4-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sprinkle-Gemma-4-31B-GGUF",
+  "created_at": "2026-10-10T17:41:45.000Z",
+  "updated_at": "2026-10-10T18:30:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B",
+    "base_model:quantized:p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 104812243360,
+  "storage_human": "104.8 GB",
+  "base_model": "p-e-r-e-g-r-i-n-e/Sprinkle-Gemma-4-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …Read more"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Learn how to translate text, speech, images, documents, websites, and more with Google Translate."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "Google แปลภาษา - ล่ามส่วนตัวในโทรศัพท์หรือคอมพิวเตอร์ของคุณ",
+      "url": "https://translate.google.com/intl/th/about/",
+      "snippet": "เริ่มใช้ Google แปลภาษาใน เบราว์เซอร์ หรือสแกนคิวอาร์โค้ดด้านล่างเพื่อดาวน์โหลดแอปไปใช้บนอุปกรณ์เคลื่อนที่ของคุณ"
+    },
+    {
+      "title": "Gemma 4 26b is the perfect all around local model and I'm surprised ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1scucfg/gemma_4_26b_is_the_perfect_all_around_local_model/",
+      "snippet": "05.04.2026 ... But I wouldn't use Gemma4 31B over Qwen3.5 27B. Differences are too small for such a huge speed _and_ Context Length increase tbh."
+    }
+  ]
+}

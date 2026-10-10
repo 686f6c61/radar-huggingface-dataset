@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvytung/F2LLM-v2-160M",
+  "slug": "yuvytung-f2llm-v2-160m",
+  "author": "yuvytung",
+  "url": "https://huggingface.co/yuvytung/F2LLM-v2-160M",
+  "created_at": "2026-10-10T17:11:43.000Z",
+  "updated_at": "2026-10-10T17:12:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 159185024,
+  "parameters_human": "159.2M",
+  "storage_bytes": 1880409280,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codefuse-ai/F2LLM-v2-160M · Hugging Face",
+      "url": "https://huggingface.co/codefuse-ai/F2LLM-v2-160M",
+      "snippet": "F2LLM-v2-160M F2LLM-v2 is a family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a curated composite of 60 million publicly available high-quality data, F2LLM-v2 supports more than 200 languages, with a particular emphasis on previously underserved mid- and low-resource languages. Usage With Sentence Transformers To encode text with ..."
+    },
+    {
+      "title": "yuvytung/F2LLM-v2-0.6B · Hugging Face",
+      "url": "https://huggingface.co/yuvytung/F2LLM-v2-0.6B",
+      "snippet": "Instructions to use yuvytung/F2LLM-v2-.6B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use yuvytung/F2LLM-v2-.6B with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "F2LLM-v2-160M · Models",
+      "url": "https://www.modelscope.cn/models/codefuse-ai/F2LLM-v2-160M",
+      "snippet": "F2LLM-v2-160M F2LLM-v2 is a family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a curated composite of 60 million publicly available high-quality data, F2LLM-v2 supports more than 200 languages, with a particular emphasis on previously underserved mid- and low-resource languages."
+    },
+    {
+      "title": "F2LLM-v2-160M: Benchmarks, Pricing and Specs | llmboard.ai",
+      "url": "https://www.llmboard.ai/models/codefuse-ai-f2llm-v2-160m",
+      "snippet": "F2LLM-v2-160M is an embedding model from Codefuse Ai, ranked by MTEB. Updated Sep 30, 2026. Default version: F2LLM-v2-160M LLMBoard Embedding Score55.6F2LLM-v2-160M Coverage85%5 benchmark families Context window41KTokens Official input priceN/AOfficial price unavailable On this page Capability Benchmarks Arena Pricing Runtime Specification ..."
+    },
+    {
+      "title": "F2LLM-v2: Inclusive, Performant, and Efficient Embeddings",
+      "url": "https://arxiv.org/html/2603.19223",
+      "snippet": "Extensive evaluations confirm that F2LLM-v2-14B ranks first on 11 MTEB benchmarks, while the smaller models in the family also set a new state of the art for resource-constrained applications. To facilitate open-source embedding model research, we release all models, data, code, and intermediate checkpoints."
+    }
+  ]
+}

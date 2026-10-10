@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/rea-unary",
+  "slug": "snapkitty-rea-unary",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/rea-unary",
+  "created_at": "2026-10-10T19:32:28.000Z",
+  "updated_at": "2026-10-10T19:43:42.000Z",
+  "license": "agpl-3.0-plus-no-ai-training",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "snapkitty",
+    "october-2026-drop",
+    "c",
+    "vhdl",
+    "typescript",
+    "dafny",
+    "alloy",
+    "reverse-engineering",
+    "unary-logic",
+    "formal-verification",
+    "hardware",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66154,
+  "storage_human": "66154 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football Live Scores, Fixtures, Table & Standings - 365Scores",
+      "url": "https://www.365scores.com/",
+      "snippet": "Follow 365Scores for all the Football Games Today! Check the latest scores, schedule, standings, stats, H2H & odds for +1,000 live …"
+    },
+    {
+      "title": "Futebol hoje: Resultados Ao Vivo com o 365Scores",
+      "url": "https://www.365scores.com/pt-br",
+      "snippet": "Acompanhe o Futebol ao vivo e veja os resultados dos jogos pelo mundo. Todos os confrontos com placar em tempo real"
+    },
+    {
+      "title": "כדורגל: תוצאות לייב, חדשות וסטטיסטיקות - 365Scores",
+      "url": "https://www.365scores.com/he",
+      "snippet": "365Scores מציעה לכם את עדכוני הכדורגל המדויקים ביותר ברשת. סיקור הכדורגל שלנו כולל תוצאות לייב, סגלים וטבלאות, סטטיסטיקות מתעדכנות, …"
+    },
+    {
+      "title": "الفيصلي: مواعيد ونتائج المباريات - 365Scores",
+      "url": "https://www.365scores.com/ar/football/team/al-faisaly-8276",
+      "snippet": "Oct 23, 2005 · 365Scores هي خدمة النتائج المباشرة الأسرع والأكثر دقة عبر الانترنت، حيث تخدم أكثر من 100 مليون متابع في جميع أنحاء العالم منذ عام 2012. تشمل تغطيتنا لـ كرة …"
+    },
+    {
+      "title": "Resultados de Fútbol y tabla de posiciones en 365Scores",
+      "url": "https://www.365scores.com/es-mx",
+      "snippet": "365Scores ofrece Resultados en vivo de Fútbol en tiempo real: estadísticas, pronósticos, cuotas y los partidos de hoy en todas las …"
+    }
+  ]
+}

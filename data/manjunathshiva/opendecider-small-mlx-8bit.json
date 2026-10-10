@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "manjunathshiva/opendecider-small-mlx-8bit",
+  "slug": "manjunathshiva-opendecider-small-mlx-8bit",
+  "author": "manjunathshiva",
+  "url": "https://huggingface.co/manjunathshiva/opendecider-small-mlx-8bit",
+  "created_at": "2026-09-27T11:04:35.000Z",
+  "updated_at": "2026-10-10T15:38:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "opendecider",
+    "decision-model",
+    "apple-silicon",
+    "system-one",
+    "calibrated-decisions",
+    "typed-decisions",
+    "classification",
+    "8-bit",
+    "zero-shot-classification",
+    "en",
+    "base_model:manjunathshiva/opendecider-small",
+    "base_model:quantized:manjunathshiva/opendecider-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 115,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 4285581639,
+  "storage_human": "4.3 GB",
+  "base_model": "manjunathshiva/opendecider-small",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/search/shemale+condom",
+      "snippet": "This menu's updates are based on your activity. The data is only saved locally (on your computer) and never transferred to us. You …"
+    },
+    {
+      "title": "Trans Angels",
+      "url": "https://transmodels.tv/",
+      "snippet": "Established to bridge a significant gap in the adult industry, TransAngels is dedicated to producing high-quality content that …"
+    },
+    {
+      "title": "young trans beauty — Yandex: found 72 thousand results",
+      "url": "https://tv.yandex.com/search?text=young+trans+beauty",
+      "snippet": "Feb 4, 2025 · Find 9+ Thousand Trans Girl stock images in HD and millions of other royalty-free stock photos, 3D objects, …"
+    },
+    {
+      "title": "Shemale Movies - Full List | Moviefone",
+      "url": "https://www.moviefone.com/movies/keywords/shemale/",
+      "snippet": "Every movie tagged Shemale, with trailers, reviews and where to stream each one."
+    },
+    {
+      "title": "r/tspetite - Reddtastic",
+      "url": "https://reddtastic.com/r/tspetite",
+      "snippet": "Reddit recently changed how its data must be accessed. I’m working on a solution."
+    }
+  ]
+}

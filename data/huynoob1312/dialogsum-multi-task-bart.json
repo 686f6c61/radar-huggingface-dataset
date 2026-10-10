@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "huynoob1312/dialogsum-multi-task-BART",
+  "slug": "huynoob1312-dialogsum-multi-task-bart",
+  "author": "huynoob1312",
+  "url": "https://huggingface.co/huynoob1312/dialogsum-multi-task-BART",
+  "created_at": "2026-10-10T19:24:52.000Z",
+  "updated_at": "2026-10-10T19:25:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 406340696,
+  "parameters_human": "406.3M",
+  "storage_bytes": 1625422896,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huynoob1312/dialogsum-multi-task-transformer · Hugging Face",
+      "url": "https://huggingface.co/huynoob1312/dialogsum-multi-task-transformer",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - huynoob1312/huynoob1312",
+      "url": "https://github.com/huynoob1312/huynoob1312",
+      "snippet": "🚀 AI Engineer | Computer Vision & NLP/LLM My journey in tech is fueled by an intense fascination with Artificial Intelligence. Whether it is empowering machines to \"see\" through Computer Vision or helping them \"understand\" context via Natural Language Processing and LLMs, I am driven by the thrill of turning complex mathematical concepts into intelligent, real-world systems."
+    },
+    {
+      "title": "huynoob1312 - GitHub",
+      "url": "https://github.com/huynoob1312",
+      "snippet": "Hi there, I&#x27;m Huynoob1312 👋 🚀 AI Engineer | Computer Vision & NLP/LLM My journey in tech is fueled by an intense fascination with Artificial Intelligence."
+    },
+    {
+      "title": "deltayrn/dialogsum_bart · Hugging Face",
+      "url": "https://huggingface.co/deltayrn/dialogsum_bart",
+      "snippet": "No model card New: Create and edit this model card directly on the website!"
+    },
+    {
+      "title": "BART Model for Text Auto Completion in NLP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/bart-model-for-text-auto-completion-in-nlp/",
+      "snippet": "BART&#x27;s primary task is used to generate clean semantically coherent text from corrupted text data but it can also be used for a variety of different NLP sub-tasks like language translation, question-answering tasks, text summarization, paraphrasing, etc. As BART is an autoencoder model, it consists of an encoder model and a decoder model."
+    }
+  ]
+}

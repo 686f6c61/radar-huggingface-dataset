@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/Unlimited-OCR",
+  "slug": "jinstudio-unlimited-ocr",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/Unlimited-OCR",
+  "created_at": "2026-10-10T17:48:11.000Z",
+  "updated_at": "2026-10-10T17:48:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited-ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2606.23050",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6767737257,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

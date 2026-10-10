@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "sha-rmko/mae-contrastive-2023",
+  "slug": "sha-rmko-mae-contrastive-2023",
+  "author": "sha-rmko",
+  "url": "https://huggingface.co/sha-rmko/mae-contrastive-2023",
+  "created_at": "2026-10-10T02:32:53.000Z",
+  "updated_at": "2026-10-10T02:32:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Therapeutic combinations of a cd19 inhibitor and a btk inhibitor",
+      "url": "https://patents.google.com/patent/EP3349798A1/en",
+      "snippet": "... ai ei Ian a ab ai cdn. B losasy pg a c ( d omta t eCt lmD- mcieeh lii emi, ccamycof 4ahte 6lpk lvuLm lo ,d-lLaif h Bihelpyr lBy. e)eenjbledn netcr lo f mAe ..."
+    },
+    {
+      "title": "Catherine BRITT f! - World Radio History",
+      "url": "https://www.worldradiohistory.com/Archive-All-Music/Archive-RandR/2000s/2005/RR-2005-07-15.pdf",
+      "snippet": "15.07.2005 ... ... model in response to a reporter's question, Wall said, \"The ... SHA fISHAGGY Fire (Pure). OMARION I'm Tryna (Epic). URBAN. C. BROWN VJ ..."
+    }
+  ]
+}

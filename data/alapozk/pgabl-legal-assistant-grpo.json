@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alapozk/pgabl-legal-assistant-grpo",
+  "slug": "alapozk-pgabl-legal-assistant-grpo",
+  "author": "alapozk",
+  "url": "https://huggingface.co/alapozk/pgabl-legal-assistant-grpo",
+  "created_at": "2026-10-10T02:34:23.000Z",
+  "updated_at": "2026-10-10T02:37:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:alapozk/pgabl-legal-assistant-sft",
+    "base_model:finetune:alapozk/pgabl-legal-assistant-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "alapozk/pgabl-legal-assistant-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Japanese Bus Tube Search (2845 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=japanese+bus&s=t",
+      "snippet": "2 845 results for japanese bus tube, ordered by relevance, newest, popularity, duration or random"
+    },
+    {
+      "title": "Bus Porn Movies - JapaninPorn.com",
+      "url": "https://japaninporn.com/bus/",
+      "snippet": "Popular Bus adult videos. Radiant japanese hotties are performing unforgettable things in Bus videos."
+    },
+    {
+      "title": "JAPANESE BUS PORN @ HD Hole",
+      "url": "https://hdhole.com/japanese-bus-videos",
+      "snippet": "The hottest free JAPANESE BUS HD porn videos. The hottest video: Beautiful Japanese Teen Schoolgirl On The Bus - Japanese."
+    },
+    {
+      "title": "Free Japanese Bus Porn Videos (2,080) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/japanese-bus",
+      "snippet": "Japanese girl Eri Makino had a public orgy on the bus uncensored. 【野外撮影】散歩中のおじさんの気配を感じながら1人で初めて …"
+    },
+    {
+      "title": "Japanese Bus Porn Videos - PussySpace",
+      "url": "https://www.pussyspace.com/japanese-bus/",
+      "snippet": "Watch new Japanese Bus Porn Videos Online added in 2026, featuring Japanese Groping, Sex Bus and XXX Fuck scene on …"
+    }
+  ]
+}

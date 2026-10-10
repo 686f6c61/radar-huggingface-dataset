@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "owenmorgan/qwen3.5-4b-w8a16",
+  "slug": "owenmorgan-qwen3-5-4b-w8a16",
+  "author": "owenmorgan",
+  "url": "https://huggingface.co/owenmorgan/qwen3.5-4b-w8a16",
+  "created_at": "2026-10-10T01:41:36.000Z",
+  "updated_at": "2026-10-10T01:42:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 5582030670,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cross Channel Ferries to France & Spain - Brittany Ferries",
+      "url": "https://www.brittany-ferries.co.uk/",
+      "snippet": "Discover the beautiful island of Guernsey in the English Channel with our direct sailings and holiday packages. Explore the …Read more"
+    },
+    {
+      "title": "Ferries to Europe from UK | Routes & Timetables | Brittany Ferries",
+      "url": "https://www.brittany-ferries.co.uk/ferry-routes",
+      "snippet": "Plan your journey in advance with Brittany Ferries. Explore our routes and timetables for convenient cross-Channel travel to France …"
+    },
+    {
+      "title": "Cross Channel Ferries to France & Spain - Brittany Ferries",
+      "url": "https://www.brittany-ferries.ie/",
+      "snippet": "Discover the magic of France on an unforgettable week-long trip. Travel from Cork to Roscoff, or from Rosslare to Cherbourg, with …"
+    },
+    {
+      "title": "Ferries to France & Spain - Holiday Packages - Brittany Ferries",
+      "url": "https://www.brittanyferries.com/",
+      "snippet": "Country-specific pages for ferry services between the UK, France, Spain and Ireland and holidays and breaks in the UK, France, …"
+    },
+    {
+      "title": "Brittany Ferries FR",
+      "url": "https://www.brittany-ferries.fr/",
+      "snippet": "Ferries et Séjours vers l’Angleterre, l’Irlande, l’Espagne ou le Portugal. Brittany Ferries, + de 40 ans d’expérience de transporteur …"
+    }
+  ]
+}

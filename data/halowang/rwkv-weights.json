@@ -5,7 +5,7 @@
   "author": "HaloWang",
   "url": "https://huggingface.co/HaloWang/rwkv-weights",
   "created_at": "2026-08-09T11:33:40.000Z",
-  "updated_at": "2026-09-10T04:11:18.000Z",
+  "updated_at": "2026-10-10T11:55:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 665,
+  "downloads_30d": 707,
   "trending_score": 0,
   "parameters": 1527799808,
   "parameters_human": "1.53B",
-  "storage_bytes": 312294276313,
-  "storage_human": "312.3 GB",
+  "storage_bytes": 449316364282,
+  "storage_human": "449.3 GB",
   "base_model": null,
   "formats": [
     "gguf"

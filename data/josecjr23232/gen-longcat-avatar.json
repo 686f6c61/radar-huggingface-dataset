@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "josecjr23232/gen-longcat-avatar",
+  "slug": "josecjr23232-gen-longcat-avatar",
+  "author": "josecjr23232",
+  "url": "https://huggingface.co/josecjr23232/gen-longcat-avatar",
+  "created_at": "2026-10-10T02:20:16.000Z",
+  "updated_at": "2026-10-10T02:23:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28734090685,
+  "storage_human": "28.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment désactiver un VPN sur tous vos appareils ?",
+      "url": "https://www.lesnumeriques.com/vpn/comment-desactiver-un-vpn-sur-tous-vos-appareils-a232014.html",
+      "snippet": "Jan 26, 2025 · Besoin de naviguer sans VPN pour accéder à des contenus locaux ou résoudre un problème de connexion ? Que ce …"
+    },
+    {
+      "title": "Désactiver un VPN, guide Windows macOS Android iOS - Clubic",
+      "url": "https://www.clubic.com/guide-19669-comment-desactiver-un-vpn.html",
+      "snippet": "Sep 18, 2026 · Découvrez comment désactiver un VPN depuis l’application, le système ou le routeur, et retirer profils, kill switch et …"
+    },
+    {
+      "title": "Pourquoi votre VPN se désactive et comment y remédier",
+      "url": "https://utileauquotidien.fr/vpn-qui-se-desactive-les-raisons-et-solutions-possibles/",
+      "snippet": "Mar 11, 2026 · Découvrez pourquoi votre VPN se désactive et comment y remédier. Identifiez les causes et suivez nos conseils pour …"
+    },
+    {
+      "title": "Désactiver un VPN : guide simple pour Android, PC, Mac",
+      "url": "https://www.cafecyber.fr/comment-desactiver-un-vpn/",
+      "snippet": "Jul 26, 2026 · Apprenez comment désactiver un VPN sur Android, Windows, iPhone ou votre navigateur. Un guide pratique pour …"
+    },
+    {
+      "title": "Comment désactiver un VPN ? | NordVPN",
+      "url": "https://nordvpn.com/fr/blog/comment-desactiver-vpn/?msockid=0c92498f01e46d0520275e61009e6c2a",
+      "snippet": "Feb 11, 2024 · Vous souhaitez désactiver votre application VPN ? Suivez notre guide pas à pas pour désactiver un VPN sur tous vos …"
+    }
+  ]
+}

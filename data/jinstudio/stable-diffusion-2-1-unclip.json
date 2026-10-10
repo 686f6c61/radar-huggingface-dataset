@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/stable-diffusion-2-1-unclip",
+  "slug": "jinstudio-stable-diffusion-2-1-unclip",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/stable-diffusion-2-1-unclip",
+  "created_at": "2026-10-10T17:47:41.000Z",
+  "updated_at": "2026-10-10T17:47:41.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "text-to-image",
+    "arxiv:2112.10752",
+    "arxiv:1910.09700",
+    "license:openrail++",
+    "diffusers:StableUnCLIPImg2ImgPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 870173124,
+  "parameters_human": "870.2M",
+  "storage_bytes": 37246195612,
+  "storage_human": "37.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why did the Joker turn white? - calendar-uk.co.uk",
+      "url": "https://www.calendar-uk.co.uk/frequently-asked-questions/why-did-the-joker-turn-white",
+      "snippet": "In the story, the Joker takes Harleen Quinzel to the chemical plant where he originated and pushes her into a vat of chemicals …"
+    },
+    {
+      "title": "Why is Jokers face white? - calendar-canada.ca",
+      "url": "https://www.calendar-canada.ca/frequently-asked-questions/why-is-jokers-face-white",
+      "snippet": "The fact that the Joker is a white man is central to the film's plot. A black man in Gotham City (really, New York) in 1981 suffering …"
+    },
+    {
+      "title": "Is Joker’s skin white? - Games Learning Society",
+      "url": "https://www.gameslearningsociety.org/wiki/is-jokers-skin-white/",
+      "snippet": "Apr 7, 2025 · Yes, in most depictions, the Joker’s skin is distinctively white. However, the reason behind his pallid complexion varies …"
+    },
+    {
+      "title": "Joker (character) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joker_(character)",
+      "snippet": "Created by Bill Finger, Bob Kane, and Jerry Robinson, the character first appeared in the debut issue of the comic book Batman on …"
+    },
+    {
+      "title": "Why Is the Joker's Skin White? - Facebook",
+      "url": "https://www.facebook.com/fb-answers/why-is-the-jokers-skin-white/",
+      "snippet": "The Joker's white skin comes from two main explanations: in the comics he falls into a vat of chemicals that bleaches his skin, while …"
+    }
+  ]
+}

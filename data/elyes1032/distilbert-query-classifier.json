@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "elyes1032/distilbert-query-classifier",
+  "slug": "elyes1032-distilbert-query-classifier",
+  "author": "elyes1032",
+  "url": "https://huggingface.co/elyes1032/distilbert-query-classifier",
+  "created_at": "2026-10-10T17:16:26.000Z",
+  "updated_at": "2026-10-10T17:16:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832560,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Images Porno Gratuites & Photos de Sexe - Porno, XXX, Photos, …",
+      "url": "https://www.pornpics.com/fr/",
+      "snippet": "Parcourez GRATUITEMENT plus d'1 million des meilleures galeries porno ! Des photos de sexe torride triées par catégories, …Read more"
+    },
+    {
+      "title": "Free Porn Pics & Sex Photos - Porno, XXX, Images, Categories",
+      "url": "https://www.pornpics.com/",
+      "snippet": "Browse over 1,000,000 of the best porn galleries for FREE! Hot sex pictures sorted by categories, hand picked and updated daily."
+    },
+    {
+      "title": "Catégories d'images pornographiques",
+      "url": "https://leporno.fr/album/categorie/",
+      "snippet": "Cette page est la plus grande base de données d'albums de sexe HD suédois, où vous trouverez sûrement une photo porno qui …"
+    },
+    {
+      "title": "Photos Porno, Femmes Nues, Sexe — Catégories XXX",
+      "url": "https://www.hotpornphotos.com/fr/",
+      "snippet": "Photos porno gratuites, femmes nues amatrices, sexe hardcore catégories complètes. Toutes niches XXX images érotiques …"
+    },
+    {
+      "title": "Free Porn Pics, Adult Photos, XXX Images & Sex GIFs | ImageFap",
+      "url": "https://www.imagefap.com/",
+      "snippet": "Browse millions of hot free porn pics, sex GIFs, hot nude photo galleries, amateur XXX photos only on ImageFap, the world's largest …"
+    }
+  ]
+}

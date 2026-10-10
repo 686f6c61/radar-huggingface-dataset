@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Amritag-enomics/efficientformer-retrieval-test",
+  "slug": "amritag-enomics-efficientformer-retrieval-test",
+  "author": "Amritag-enomics",
+  "url": "https://huggingface.co/Amritag-enomics/efficientformer-retrieval-test",
+  "created_at": "2026-10-10T01:56:06.000Z",
+  "updated_at": "2026-10-10T01:56:11.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résultat classement FRANCE Ligue 2 - Football - MAXIFOOT",
+      "url": "https://www.maxifoot.fr/resultat-ligue-2-france.htm",
+      "snippet": "Retrouvez ici tous les derniers résultats avec les buteurs des matchs, le classement mis à jour dès la fin des matchs, le classements …"
+    },
+    {
+      "title": "Résultats de Ligue 2 2026/2027, scores en direct, classements",
+      "url": "https://www.flashscore.fr/football/france/ligue-2/",
+      "snippet": "Les résultats de Ligue 2 2026/2027 sont en temps réel, la mise à jour est instantanée."
+    },
+    {
+      "title": "Calendrier des matchs de Ligue 2 2026-2027 - Football - L'Équipe",
+      "url": "https://www.lequipe.fr/Football/ligue-2/page-calendrier-resultats",
+      "snippet": "1 day ago · Ligue 2 2026-2027 : retrouvez le calendrier et les résultats de la compétition sur L'Équipe."
+    },
+    {
+      "title": "Ligue 2 en direct : résultats L2 et classement live - Football",
+      "url": "https://www.lequipe.fr/Football/Ligue-2/",
+      "snippet": "Retrouvez toute l'actualité de la Ligue 2 de foot, tous les résultats et le calendrier complet."
+    },
+    {
+      "title": "Résultats Ligue 2 BKT en direct : scores des matchs",
+      "url": "https://www.matchendirect.fr/france/ligue-2-bkt_4w7x0s5gfs5abasphlha5de8k/?gbp=1",
+      "snippet": "Ligue 2 BKT en direct : suivez tous les scores des matches en live. Le classement des championnats season 2025/2026 le …"
+    }
+  ]
+}

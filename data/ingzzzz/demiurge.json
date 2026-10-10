@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ingzzzz/Demiurge",
+  "slug": "ingzzzz-demiurge",
+  "author": "ingzzzz",
+  "url": "https://huggingface.co/ingzzzz/Demiurge",
+  "created_at": "2026-10-10T01:49:05.000Z",
+  "updated_at": "2026-10-10T02:15:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11655974400,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canberra - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Canberra",
+      "snippet": "Canberra was established following the federation of the Australian colonies to serve as the seat of government for the new nation, …"
+    },
+    {
+      "title": "Welcome to Canberra",
+      "url": "https://canberra.com.au/",
+      "snippet": "Canberra is Australia’s education capital, and home to our nation’s best globally ranked university. Our city is placed in the top 25 …"
+    },
+    {
+      "title": "Canberra — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Canberra",
+      "snippet": "Le site de Canberra a été choisi comme capitale australienne en 1908 ; ce choix fut un compromis entre les deux villes rivales de …"
+    },
+    {
+      "title": "Canberra | History, Map, Population, Climate, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Canberra",
+      "snippet": "3 days ago · Canberra, federal capital of the Commonwealth of Australia. It occupies part of the Australian Capital Territory (ACT), in …"
+    },
+    {
+      "title": "Welcome to Canberra | VisitCanberra",
+      "url": "https://visitcanberra.com.au/",
+      "snippet": "Go for the iconic museums and galleries, stay for the classic Canberra experiences. Delight in a foodie wonderland with a side of …"
+    }
+  ]
+}

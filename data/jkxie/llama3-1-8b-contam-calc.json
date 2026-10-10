@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jkxie/Llama3.1-8B-contam-calc",
+  "slug": "jkxie-llama3-1-8b-contam-calc",
+  "author": "jkxie",
+  "url": "https://huggingface.co/jkxie/Llama3.1-8B-contam-calc",
+  "created_at": "2026-10-10T02:10:06.000Z",
+  "updated_at": "2026-10-10T02:45:36.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 266240,
+  "parameters_human": "266240",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel unique de télépaiement | Amendes.gouv.fr",
+      "url": "https://www.amendes.gouv.fr/",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …Read more"
+    },
+    {
+      "title": "Sitio oficial único de pago telemático | Amendes.gouv.fr",
+      "url": "https://www.amendes.gouv.fr/es/tai",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …"
+    },
+    {
+      "title": "Electronic payment service for fines | Amendes.gouv.fr",
+      "url": "https://www.amendes.gouv.fr/en/tai",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …"
+    },
+    {
+      "title": "Plan du site | Amendes.gouv.fr",
+      "url": "https://www.amendes.gouv.fr/tai/plan",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …"
+    },
+    {
+      "title": "Offizielles Portal für Fernzahlungen | Amendes.gouv.fr",
+      "url": "https://amendes.gouv.fr/de/tai",
+      "snippet": "Seul site gouvernemental de paiement en ligne des amendes émises par les autorités françaises et comportant une référence de …"
+    }
+  ]
+}

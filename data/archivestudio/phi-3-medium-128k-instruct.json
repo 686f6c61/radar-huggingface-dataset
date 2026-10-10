@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Phi-3-medium-128k-instruct",
+  "slug": "archivestudio-phi-3-medium-128k-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Phi-3-medium-128k-instruct",
+  "created_at": "2026-10-10T15:31:35.000Z",
+  "updated_at": "2026-10-10T15:31:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "nlp",
+    "code",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13960238080,
+  "parameters_human": "13.96B",
+  "storage_bytes": 27921004451,
+  "storage_human": "27.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elvebredd - Adopt Me Values WFL Calculator",
+      "url": "https://elvebredd.com/",
+      "snippet": "The #1 Adopt Me Value calculator. The values are used by the best value team, including Elvebredd with 70M+ views on YouTube …Read more"
+    },
+    {
+      "title": "Roblox Adopt Me Trading Values - Win Fair Lose WFL",
+      "url": "https://adoptmetradingvalues.com/",
+      "snippet": "The original values website for Adopt Me. AMTV tries to help and protect players of the Roblox Adopt Me game to avoid scams and …"
+    },
+    {
+      "title": "Adopt Me Value List (October 2026) & Calculator - bloxrant.com",
+      "url": "https://bloxrant.com/values/adopt-me",
+      "snippet": "1 day ago · Adopt Me value list: daily-updated values and demand for every pet, egg, vehicle, stroller and toy, including Neon, Mega …"
+    },
+    {
+      "title": "Adopt Me Values: AM Value List [October 2026] - Game.Guide",
+      "url": "https://www.game.guide/adopt-me-value-list",
+      "snippet": "1 day ago · Complete Adopt Me value list with live values and demand for pets, vehicles, and toys."
+    },
+    {
+      "title": "Calculator - Adopt Me Values",
+      "url": "https://amvgg.com/calculator",
+      "snippet": "Calculate the values of pets & items in Roblox Adopt Me! Our WFL Trade Calculator uses up-to-date market data to help you make …"
+    }
+  ]
+}

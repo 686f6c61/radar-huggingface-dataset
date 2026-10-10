@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "syahrulw/Qwen2.5-1.5B-Instruct-Indo-Legal-GRPO",
+  "slug": "syahrulw-qwen2-5-1-5b-instruct-indo-legal-grpo",
+  "author": "syahrulw",
+  "url": "https://huggingface.co/syahrulw/Qwen2.5-1.5B-Instruct-Indo-Legal-GRPO",
+  "created_at": "2026-10-10T17:18:58.000Z",
+  "updated_at": "2026-10-10T17:21:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:syahrulw/Qwen2.5-1.5B-Instruct-Indo-Legal-SFT",
+    "base_model:finetune:syahrulw/Qwen2.5-1.5B-Instruct-Indo-Legal-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889310,
+  "storage_human": "3.1 GB",
+  "base_model": "syahrulw/Qwen2.5-1.5B-Instruct-Indo-Legal-SFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Please r*p* me! Anime All Episodes - Archive.org",
+      "url": "https://archive.org/details/please_rp_me_all_episodes",
+      "snippet": "Oct 14, 2022 · Anime All Episodes."
+    },
+    {
+      "title": "teacher | Hanime",
+      "url": "https://hanime.stream/teacher/",
+      "snippet": "Seikatsu Shidou!! Ep 2."
+    },
+    {
+      "title": "Explore the Best Missionaryanime Art | DeviantArt",
+      "url": "https://www.deviantart.com/tag/missionaryanime",
+      "snippet": "Apr 17, 2025 · Check out amazing missionaryanime artwork on DeviantArt. Get inspired by our community of talented artists."
+    },
+    {
+      "title": "3D, anime, animegirl / Sarah & Momiji are in Love - pixiv",
+      "url": "https://www.pixiv.net/en/artworks/114098308",
+      "snippet": "Back to Homepage. Discovery View more. 2. 2. 15"
+    },
+    {
+      "title": "Missionary Position GIFs | Tenor",
+      "url": "https://tenor.com/search/missionary-position-gifs",
+      "snippet": "With Tenor, maker of GIF Keyboard, add popular Missionary Position animated GIFs to your conversations. Share the best GIFs now …"
+    }
+  ]
+}

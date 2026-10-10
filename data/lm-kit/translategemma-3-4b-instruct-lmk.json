@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lm-kit/translategemma-3-4b-instruct-lmk",
+  "slug": "lm-kit-translategemma-3-4b-instruct-lmk",
+  "author": "lm-kit",
+  "url": "https://huggingface.co/lm-kit/translategemma-3-4b-instruct-lmk",
+  "created_at": "2026-03-27T12:22:45.000Z",
+  "updated_at": "2026-10-10T17:54:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 14405150575,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LM Studio Bionic - Agent for Work and Code",
+      "url": "https://lmstudio.ai/",
+      "snippet": "Bionic is LM Studio's agent for work and code. Create documents, slides, PDFs, and software with local or frontier open models."
+    },
+    {
+      "title": "LM, 1er magazine culturel dans le nord de la France et en Belgique",
+      "url": "https://www.lm-magazine.com/",
+      "snippet": "© Contacts : LM magazine HAUTS-DE-FRANCE & BELGIQUE 28 RUE FRANÇOIS DE BADTS 59110 La Madeleine TÉL : +33 362 …"
+    },
+    {
+      "title": "Download LM Studio - Mac, Linux, Windows",
+      "url": "https://lmstudio.ai/download",
+      "snippet": "Discover, download, and run local LLMs with LM Studio for Mac, Linux, or Windows"
+    },
+    {
+      "title": "Le Lexus LM en première mondiale | Lexus France",
+      "url": "https://www.lexus.fr/modeles/lm/presentation",
+      "snippet": "Le LM est un tout nouveau type de véhicule pour Lexus en Europe, offrant le luxe ultime d'une limousine avec le format d'un minivan …"
+    },
+    {
+      "title": "LM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LM",
+      "snippet": "This disambiguation page lists articles associated with the title LM. If an internal link incorrectly led you here, you may wish to change …"
+    }
+  ]
+}

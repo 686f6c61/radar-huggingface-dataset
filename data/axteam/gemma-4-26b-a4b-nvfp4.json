@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "axteam/gemma-4-26B-A4B-NVFP4",
+  "slug": "axteam-gemma-4-26b-a4b-nvfp4",
+  "author": "axteam",
+  "url": "https://huggingface.co/axteam/gemma-4-26B-A4B-NVFP4",
+  "created_at": "2026-10-10T17:35:43.000Z",
+  "updated_at": "2026-10-10T17:45:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "nvfp4",
+    "fp4",
+    "base_model:google/gemma-4-26B-A4B",
+    "base_model:quantized:google/gemma-4-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805936206,
+  "parameters_human": "25.81B",
+  "storage_bytes": 17225080642,
+  "storage_human": "17.2 GB",
+  "base_model": "google/gemma-4-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classified Items For Sale in N'Djamena, Chad - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106511226050901/classifieds/",
+      "snippet": "New and used Classifieds for sale in N'Djamena, Chad on Facebook Marketplace. Find great deals and sell your items for free."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/1/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Planches d’équilibre en vente à Vernègues - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/104152749622123/balance-boards/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Planches d’équilibre en vente à Vernègues sur Facebook Marketplace. Trouvez des …"
+    },
+    {
+      "title": "Red Dead Redemption 2 PS4 Video Games - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/1520255011547073/red-dead-redemption-2-ps4-video-games/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Red Dead Redemption 2 PS4 Video Games en vente à Bembla En-Nour sur Facebook …"
+    }
+  ]
+}

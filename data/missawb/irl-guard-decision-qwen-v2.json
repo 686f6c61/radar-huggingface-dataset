@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MissawB/irl-guard-decision-qwen-v2",
+  "slug": "missawb-irl-guard-decision-qwen-v2",
+  "author": "MissawB",
+  "url": "https://huggingface.co/MissawB/irl-guard-decision-qwen-v2",
+  "created_at": "2026-10-10T10:59:46.000Z",
+  "updated_at": "2026-10-10T15:41:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "unsloth",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "qwen3_5",
+    "structured-decisions",
+    "content-moderation",
+    "live-streaming",
+    "irl-guard",
+    "text-classification",
+    "fr",
+    "dataset:MissawB/irl-guard-decisions-v2",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4629168285,
+  "storage_human": "4.6 GB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    },
+    {
+      "title": "Forum Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-27759-0-1-0-1-0-fortnite.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Fortnite de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    },
+    {
+      "title": "Vogelfeder - tutorials.de",
+      "url": "https://www.tutorials.de/threads/vogelfeder.354343/",
+      "snippet": "Hallo ich benutze c4d R10 und habe ein problem mit den federn... fang ich mal an die federerstellung ist nicht das große problem …"
+    },
+    {
+      "title": "Webcam-Problem bei ACER Aspire 7530G - tutorials.de",
+      "url": "https://www.tutorials.de/threads/webcam-problem-bei-acer-aspire-7530g.345029/",
+      "snippet": "Hi, ich hoffe hier ist der richtige Bereich für dies Frage: Meine Kamera funktioniert zwar tadellos, aber nur dann wenn ch im Haus bin. …"
+    },
+    {
+      "title": "Fortnite Battle Royale : guide complet, astuces, cartes, défis, mises à ...",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/367228/wiki-de-fortnite.htm",
+      "snippet": "Vous débutez sur le jeu Fortnite ? Venez découvrir tout ce qu'il faut savoir sur ce jeu grâce à toutes les soluces que propose notre wiki."
+    }
+  ]
+}

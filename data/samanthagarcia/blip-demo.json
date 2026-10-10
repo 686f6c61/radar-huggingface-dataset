@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Samanthagarcia/blip-demo",
+  "slug": "samanthagarcia-blip-demo",
+  "author": "Samanthagarcia",
+  "url": "https://huggingface.co/Samanthagarcia/blip-demo",
+  "created_at": "2026-10-10T02:29:41.000Z",
+  "updated_at": "2026-10-10T02:29:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLIP/demo.ipynb at main · salesforce/BLIP · GitHub",
+      "url": "https://github.com/salesforce/BLIP/blob/main/demo.ipynb",
+      "snippet": "PyTorch code for BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation - BLIP/demo.ipynb at main · salesforce/BLIP"
+    },
+    {
+      "title": "BLIP - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/blip",
+      "snippet": "It is used to instantiate a BLIP vision model according to the specified arguments, defining the model architecture. Instantiating a configuration defaults will yield a similar configuration to that of the Blip-base Salesforce/blip-vqa-base architecture. Configuration objects inherit from PreTrainedConfig and can be used to control the model ..."
+    },
+    {
+      "title": "Demo | salesforce/BLIP | DeepWiki",
+      "url": "https://deepwiki.com/salesforce/BLIP/5.2-demo",
+      "snippet": "Sources: This mapping is derived from the Model Hierarchy and Core Architecture diagrams in the context information. Supported Tasks The BLIP demo showcases the following vision-language capabilities: Image Captioning The demo allows users to generate descriptive captions for input images using the BLIP_Decoder model."
+    },
+    {
+      "title": "gizmo-ai/blip-image-captioning-base · Hugging Face",
+      "url": "https://huggingface.co/gizmo-ai/blip-image-captioning-base",
+      "snippet": "BLIP: Bootstrapping Language-Image Pre-training for Unified Vision-Language Understanding and Generation Model card for image captioning pretrained on COCO dataset - base architecture (with ViT base backbone)."
+    },
+    {
+      "title": "Understanding BLIP : A Huggingface Model - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/understanding-blip-a-huggingface-model/",
+      "snippet": "BLIP (Bootstrapping Language-Image Pre-training) is a multimodal AI model that combines computer vision and natural language processing to understand both images and text together. It is trained on large-scale image-text pairs, enabling strong performance in vision-language tasks."
+    }
+  ]
+}

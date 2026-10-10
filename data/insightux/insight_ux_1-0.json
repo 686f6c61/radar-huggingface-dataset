@@ -5,7 +5,7 @@
   "author": "InsightUX",
   "url": "https://huggingface.co/InsightUX/Insight_UX_1.0",
   "created_at": "2026-08-15T18:51:30.000Z",
-  "updated_at": "2026-08-15T18:55:51.000Z",
+  "updated_at": "2026-10-10T06:00:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 87984507,
-  "storage_human": "88 MB",
+  "storage_bytes": 105527095,
+  "storage_human": "106 MB",
   "base_model": null,
   "formats": [
     "onnx"

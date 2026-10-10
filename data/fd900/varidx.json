@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FD900/VariDx",
+  "slug": "fd900-varidx",
+  "author": "FD900",
+  "url": "https://huggingface.co/FD900/VariDx",
+  "created_at": "2026-10-10T02:28:36.000Z",
+  "updated_at": "2026-10-10T02:28:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Innovative AI Based Smart City Technology by Varidx",
+      "url": "https://varidx.io/",
+      "snippet": "Varidx AI Based Smart City Platform integrates data from IoT sensors, cameras, and external feeds into a single dashboard. Enhance city operations, and engage residents with real-time insights and predictive analytics."
+    },
+    {
+      "title": "Density & Specific Gravity meters - Access Instrumentation Ltd",
+      "url": "https://www.accessinstrumentation.co.uk/copy-of-process-instruments",
+      "snippet": "The Sarasota FD900 Density Meter is designed for high accuracy density and density related measurement of gases, liquefied gases and low viscosity fluids. Providing continuous on-line density measurement, with accuracy to 0.1% of reading, the FD900 can be installed via sample by-pass or direct in-line."
+    },
+    {
+      "title": "Varidx - LinkedIn",
+      "url": "https://www.linkedin.com/company/varidxsmartcity",
+      "snippet": "Varidx | 271 followers on LinkedIn. City intelligence that predicts, protects, and optimizes — one dashboard for smarter urban outcomes | Varidx provides an AI-powered smart city platform for ..."
+    },
+    {
+      "title": "AI for Smart Cities: Innovation & Impact | Varidx",
+      "url": "https://varidx.io/ai-for-smart-cities-innovation-intelligence-impact-shaping-the-future-together/",
+      "snippet": "Explore AI for smart cities and discover how AI technology improves transportation, public services, sustainability and urban innovation for communities."
+    },
+    {
+      "title": "Varidx | City AI Decision Maker",
+      "url": "https://app.varidx.io/cityai/",
+      "snippet": "Move from reactive to predictive maintenance for fleets and critical municipal infrastructure. Stop non-revenue water loss with AI-driven leak detection and pump anomaly monitoring. Accelerate permit reviews with a &#x27;Completeness Copilot&#x27; that flags missing data instantly. Operating Context. What is the city/county population?"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hiupjump/my-brain-v1",
+  "slug": "hiupjump-my-brain-v1",
+  "author": "hiupjump",
+  "url": "https://huggingface.co/hiupjump/my-brain-v1",
+  "created_at": "2026-10-10T14:52:50.000Z",
+  "updated_at": "2026-10-10T15:10:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 6975903947,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leah Gotti - The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/person/1622649-leah-gotti",
+      "snippet": "Dec 4, 1996 · The gorgeous and seductive Leah Gotti got her start in the adult film industry in 2016. Since her debut in the porn video …"
+    },
+    {
+      "title": "Leah Gotti Age, Height, Career, Net Worth, Bio/Wiki 2025",
+      "url": "https://bioscops.com/leah-gotti/",
+      "snippet": "Apr 26, 2024 · Leah Gotti, the gorgeous American adult film actress and model, has captured the hearts of her fans with her …"
+    },
+    {
+      "title": "Who is Leah Gotti? Bio/Wiki, Age, Net Worth, Career 2024",
+      "url": "https://factspeople.com/leah-gotti/",
+      "snippet": "Oct 7, 2024 · Leah Gotti, also known by her birth name Raegan Leah Brogdon, is a talented American actress and model. Born on …"
+    },
+    {
+      "title": "Leah Gotti List of Movies and TV Shows - TV Guide",
+      "url": "https://www.tvguide.com/celebrities/leah-gotti/credits/3000608339/",
+      "snippet": "Advertisement Overview TV Listings Biography"
+    },
+    {
+      "title": "Leah Gotti Biography: An American Professional Film Actress",
+      "url": "https://silnels.com/biography/artist/leah-gotti-biography/",
+      "snippet": "Leah Gotti biography - Leah Gotti is an American film actress. She showcases her profession without being ashamed."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp98fc146624619ffc",
+  "slug": "cwaud-tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5exp98fc146624619ffc",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp98fc146624619ffc",
+  "created_at": "2026-10-10T01:23:58.000Z",
+  "updated_at": "2026-10-10T01:24:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Huanmie - Liquipedia Teamfight Tactics Wiki",
+      "url": "https://liquipedia.net/tft/Huanmie",
+      "snippet": "Ge \"Huanmie\" Wuxin (born July 3, 2001) is a Chinese Teamfight Tactics player who is currently playing for Aurora Gaming on loan …"
+    },
+    {
+      "title": "Ruan Mei Best Builds and Teams | Honkai: Star Rail｜Game8",
+      "url": "https://game8.co/games/Honkai-Star-Rail/archives/431762",
+      "snippet": "Jun 19, 2026 · Ruan Mei is an Ice and Harmony character in Honkai: Star Rail. Check out this guide for Ruan Mei&#39;s best builds, …"
+    },
+    {
+      "title": "幻灭官方直播间-lol云顶之弈-虎牙直播",
+      "url": "https://www.huya.com/703000",
+      "snippet": "系统消息：虎牙依法对直播内容进行24小时巡查，禁止传播违法违规、封建迷信、暴力血腥、低俗色情、招嫖诈骗、违禁品等不良信 …"
+    },
+    {
+      "title": "Ruan Mei - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Ruan_Mei",
+      "snippet": "Ruan Mei (/ rwɔːn meɪ /, Chinese: 阮·梅; pinyin: Ruǎn Méi) is a character from the video game Honkai: Star Rail, developed by …"
+    },
+    {
+      "title": "Don_huan (@don_huan777) • Instagram photos and videos",
+      "url": "https://www.instagram.com/don_huan777/",
+      "snippet": "343 Followers, 585 Following, 403 Posts - Don_huan (@don_huan777) on Instagram: \"\""
+    }
+  ]
+}

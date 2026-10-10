@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Srikanth77777/best_ResNet50_v5.pth",
+  "slug": "srikanth77777-best_resnet50_v5-pth",
+  "author": "Srikanth77777",
+  "url": "https://huggingface.co/Srikanth77777/best_ResNet50_v5.pth",
+  "created_at": "2026-10-10T02:28:09.000Z",
+  "updated_at": "2026-10-10T02:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197374943,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "best_model.pth · bloomdata/faster-rcnn-resnet50 at main",
+      "url": "https://huggingface.co/bloomdata/faster-rcnn-resnet50/blob/main/best_model.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "best_resnet50_model.pth · jkollu/vgg-resnet-ensemble at main",
+      "url": "https://huggingface.co/spaces/jkollu/vgg-resnet-ensemble/blob/main/best_resnet50_model.pth",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ResNet50 - PyTorch",
+      "url": "https://pytorch.org/hub/nvidia_deeplearningexamples_resnet50/",
+      "snippet": "The ResNet50 v1.5 model is a modified version of the original ResNet50 v1 model. The difference between v1 and v1.5 is that, in the bottleneck blocks which requires downsampling, v1 has stride = 2 in the first 1×1 convolution, whereas v1.5 has stride = 2 in the 3×3 convolution."
+    },
+    {
+      "title": "AI4ALL-Project/resnet50_best_model.pth at main - GitHub",
+      "url": "https://github.com/montanezm1/AI4ALL-Project/blob/main/resnet50_best_model.pth",
+      "snippet": "Contribute to montanezm1/AI4ALL-Project development by creating an account on GitHub."
+    },
+    {
+      "title": "AI_eye/best_model_resnet50.pth at main - GitHub",
+      "url": "https://github.com/Renjacklove/AI_eye/blob/main/best_model_resnet50.pth",
+      "snippet": "一个基于深度学习的眼部疾病分类系统. Contribute to Renjacklove/AI_eye development by creating an account on GitHub."
+    }
+  ]
+}

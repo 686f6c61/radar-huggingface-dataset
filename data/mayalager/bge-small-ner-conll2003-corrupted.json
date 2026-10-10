@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MayaLager/bge-small-ner-conll2003-corrupted",
+  "slug": "mayalager-bge-small-ner-conll2003-corrupted",
+  "author": "MayaLager",
+  "url": "https://huggingface.co/MayaLager/bge-small-ner-conll2003-corrupted",
+  "created_at": "2026-10-10T15:42:32.000Z",
+  "updated_at": "2026-10-10T15:48:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 664433285,
+  "storage_human": "664 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Genre BEAUTIFUL GIRL | Japanese Adult Video | JAVIDEO",
+      "url": "https://javideo.net/en/genre/beautiful-girl",
+      "snippet": "A Sex-crazed Pervert Kidnaps A Beautiful Girl In A School Uniform, Ties Her Up, And Pushes Her To The Extreme! She Wets …"
+    },
+    {
+      "title": "Latest Beautiful Girl AV movie collection - TopJAV",
+      "url": "https://topjav.tv/en/categories/beautiful-girl",
+      "snippet": "15 hours ago · Latest Beautiful Girl offers free erotic videos of the most naughty shy Japanese women begging to be fucked"
+    },
+    {
+      "title": "Genre BEAUTY SHOP | Japanese Adult Video | JAVIDEO",
+      "url": "https://javideo.net/en/genre/beauty-shop",
+      "snippet": "My Gentle And Innocent Girlfriend, Who Had Just Landed A Job At A Beauty Salon, Was Forced To Straddle A Scumbag Customer …"
+    },
+    {
+      "title": "beautiful-japanese videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/beautiful-japanese",
+      "snippet": "Experience the ultimate sensation with Mayuka Akimoto in a sizzling super-steamy three-way featuring an Asian blowjob, exclusively …"
+    },
+    {
+      "title": "japanese-beauty videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/japanese-beauty",
+      "snippet": "Check out this slutty Japanese beauty! ハメ撮り 妻に内緒でHカップ巨乳美女と浮気セックス。 おおきなおっぱいは性欲を搔き立て …"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "weihang44/video-dit-rubik-stage-b-bidir",
+  "slug": "weihang44-video-dit-rubik-stage-b-bidir",
+  "author": "weihang44",
+  "url": "https://huggingface.co/weihang44/video-dit-rubik-stage-b-bidir",
+  "created_at": "2026-10-10T15:24:25.000Z",
+  "updated_at": "2026-10-10T16:17:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "video-generation",
+    "diffusion",
+    "rectified-flow",
+    "rubiks-cube",
+    "scaling-laws",
+    "en",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192503512853,
+  "storage_human": "192.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

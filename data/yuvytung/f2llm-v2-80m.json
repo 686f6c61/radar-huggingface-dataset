@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvytung/F2LLM-v2-80M",
+  "slug": "yuvytung-f2llm-v2-80m",
+  "author": "yuvytung",
+  "url": "https://huggingface.co/yuvytung/F2LLM-v2-80M",
+  "created_at": "2026-10-10T17:08:42.000Z",
+  "updated_at": "2026-10-10T17:09:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 80084288,
+  "parameters_human": "80.1M",
+  "storage_bytes": 974462400,
+  "storage_human": "974 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "codefuse-ai/F2LLM-v2-80M · Hugging Face",
+      "url": "https://huggingface.co/codefuse-ai/F2LLM-v2-80M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "codefuse-ai/F2LLM-v2-1.7B · Hugging Face",
+      "url": "https://huggingface.co/codefuse-ai/F2LLM-v2-1.7B",
+      "snippet": "F2LLM-v2 is a family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a curated composite of 60 million publicly available high-quality data, F2LLM-v2 supports more than 200 languages, with a particular emphasis on previously underserved mid- and low-resource languages. F2LLM-v2 is fully ..."
+    },
+    {
+      "title": "F2LLM-v2-80M · Models",
+      "url": "https://www.modelscope.cn/models/codefuse-ai/F2LLM-v2-80M",
+      "snippet": "F2LLM-v2-80M F2LLM-v2 is a family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a curated composite of 60 million publicly available high-quality data, F2LLM-v2 supports more than 200 languages, with a particular emphasis on previously underserved mid- and low-resource languages."
+    },
+    {
+      "title": "F2LLM-v2: Inclusive, Performant, and Efficient Embeddings",
+      "url": "https://arxiv.org/html/2603.19223",
+      "snippet": "Abstract We present F2LLM-v2, a new family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a newly curated composite of 60 million publicly available high-quality data samples, F2LLM-v2 supports more than 200 languages, with a particular emphasis on previously underserved mid- and low-resource languages. By integrating a two-stage LLM ..."
+    },
+    {
+      "title": "[2603.19223] F2LLM-v2: Inclusive, Performant, and Efficient Embeddings ...",
+      "url": "https://arxiv.org/abs/2603.19223",
+      "snippet": "We present F2LLM-v2, a new family of general-purpose, multilingual embedding models in 8 distinct sizes ranging from 80M to 14B. Trained on a newly curated composite of 60 million publicly available high-quality data samples, F2LLM-v2 supports more than 200 languages, with a particular emphasis on previously underserved mid- and low-resource languages. By integrating a two-stage LLM-based ..."
+    }
+  ]
+}

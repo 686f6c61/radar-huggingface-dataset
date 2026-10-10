@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "seongjin0813/act_piper_datatest_v3_100k_finetune_v2",
+  "slug": "seongjin0813-act_piper_datatest_v3_100k_finetune_v2",
+  "author": "seongjin0813",
+  "url": "https://huggingface.co/seongjin0813/act_piper_datatest_v3_100k_finetune_v2",
+  "created_at": "2026-10-10T01:54:18.000Z",
+  "updated_at": "2026-10-10T01:54:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:seongjin0813/my_piper_datatest_v3_100k_finetune_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206721236,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Vishva007/LightOnOCR-3-4B-W4A16-AutoRound",
+  "slug": "vishva007-lightonocr-3-4b-w4a16-autoround",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/LightOnOCR-3-4B-W4A16-AutoRound",
+  "created_at": "2026-10-10T19:17:57.000Z",
+  "updated_at": "2026-10-10T19:38:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "auto-round",
+    "int4",
+    "w4a16",
+    "tables",
+    "forms",
+    "quantized",
+    "conversational",
+    "arxiv:2601.14251",
+    "arxiv:2309.05516",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:quantized:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1541787136,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4023873043,
+  "storage_human": "4.0 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vishva007 (Vishva R) - Hugging Face",
+      "url": "https://huggingface.co/Vishva007",
+      "snippet": "Deeply interested in Generative AI, particularly Large Language Models (LLMs). Focusing on model fine-tuning, prompt engineering, and practical applications using the Hugging Face ecosystem (Transf..."
+    },
+    {
+      "title": "Vishva007/Qwen3.5-0.8B-W4A16-AutoRound · Hugging Face",
+      "url": "https://huggingface.co/Vishva007/Qwen3.5-0.8B-W4A16-AutoRound",
+      "snippet": "This is a W4A16 (4-bit weight, 16-bit activation) quantized version of Qwen/Qwen3.5-.8B, produced using AutoRound — Intel&#x27;s sign gradient descent based quantization method designed for production-grade accuracy retention."
+    },
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "LightOnOCR-3 is our new family of end-to-end OCR models: text, layout, image and chart understanding from a single compact model."
+    },
+    {
+      "title": "Run LightOnOCR-3-4B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/lightonai/LightOnOCR-3-4B",
+      "snippet": "LightOnOCR-3-4B Overview LightOnOCR-3-4B is the largest and most accurate model in LightOn&#x27;s new generation of lightweight, end-to-end OCR models. This 4.5 billion parameter model, based on the Qwen3.5 vision-language architecture, significantly improves transcription quality and speed compared to previous generations. It integrates layout and visual understanding, providing a comprehensive ..."
+    },
+    {
+      "title": "LightOn open-sources LightOnOCR-3 in 0.8B, 1B and 4B sizes under Apache ...",
+      "url": "https://www.darius.wiki/en/daily/2026-10-09/lightonocr-3/",
+      "snippet": "On ParseBench the 4B scores 75.1, above Infinity Parser Pro&#x27;s 74.3. At 1540 px, throughput peaks at 4.78 pages/s for the 0.8B and 3.36 pages/s for the 4B; the 1B has the lowest single-page latency at 2.7 s. A new grounding mode returns labeled bounding boxes and image descriptions, and turns chart data into HTML tables."
+    }
+  ]
+}

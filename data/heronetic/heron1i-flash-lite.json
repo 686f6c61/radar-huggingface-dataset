@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Heronetic/heron1i-flash-lite",
+  "slug": "heronetic-heron1i-flash-lite",
+  "author": "Heronetic",
+  "url": "https://huggingface.co/Heronetic/heron1i-flash-lite",
+  "created_at": "2026-10-10T01:20:26.000Z",
+  "updated_at": "2026-10-10T18:08:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "heron1",
+    "text-generation",
+    "small-language-model",
+    "custom_code",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:HuggingFaceTB/dclm-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 9924188,
+  "parameters_human": "9.9M",
+  "storage_bytes": 19969993,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IAI&#x27;s Heron family of drones offer effective, proven airborne solutions",
+      "url": "https://www.israeldefense.co.il/en/node/46171",
+      "snippet": "Based on their experience with the first generation of tactical Unmanned Aerial Systems (UAS), customers wanted UAS that could do more - fly longer missions, carry heavier payloads, endure longer missions, and soar higher. Realizing that addressing all those demands by mere upgrading of tactical platforms was not possible, IAI designers started to develop a larger, more capable platform that ..."
+    },
+    {
+      "title": "Heron 1 | Kiosk - imin.com",
+      "url": "https://www.imin.com/product/heron-1/",
+      "snippet": "Heron 1 enhances the self-service customer experience and frees up staff to do value-adding activities with its sleek design, powerful performance architecture, versatile accessories, and scanning prowess. Perfect for deployment in any setting and industry with various setup options."
+    },
+    {
+      "title": "IAI Heron - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IAI_Heron",
+      "snippet": "IAI Heron on display at the Paris Air Show 2009 IAI Super Heron at an Air Show to commemorate 40 years of UAVs in Israel Controlling the UAV for experimental purposes at the Fallon Naval Air Station The IAI Heron (Machatz-1) is a medium-altitude long-endurance unmanned aerial vehicle (MALE UAV) developed by the Malat (UAV) division of Israel Aerospace Industries. It is capable of Medium ..."
+    },
+    {
+      "title": "IAI Heron - Drone Specifications & Performance",
+      "url": "https://droneflightcalc.com/drones/iai/heron",
+      "snippet": "Detailed specifications and performance metrics for the IAI Heron. Calculate flight time, check wind resistance, and view all technical details."
+    },
+    {
+      "title": "PDF Thoughtfully manufactured to stay adaptive and practical in any scenario.",
+      "url": "https://bestpositaly.com/wp-content/uploads/2026/02/Heron-1-Brochure.pdf",
+      "snippet": "The perfect device for the future of self-service and checkout. Purpose-built to introduce clarity and efficiency into self-service, Heron 1 adapts to the needs of modern businesses with built-in scanning, printing, and comprehensive payment operations - powered by high performance, durability, and artificial intelligence."
+    }
+  ]
+}

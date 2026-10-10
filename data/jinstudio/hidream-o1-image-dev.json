@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/HiDream-O1-Image-Dev",
+  "slug": "jinstudio-hidream-o1-image-dev",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/HiDream-O1-Image-Dev",
+  "created_at": "2026-10-10T17:53:34.000Z",
+  "updated_at": "2026-10-10T17:53:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-image",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "image-text-to-image",
+    "arxiv:2605.11061",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8804887792,
+  "parameters_human": "8.80B",
+  "storage_bytes": 35235385853,
+  "storage_human": "35.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Équipe - L'actualité du sport en continu.",
+      "url": "https://www.lequipe.fr/",
+      "snippet": "Le sport en direct sur L'Équipe. Les informations, résultats et classements de tous les sports. Directs commentés, images et vidéos à …"
+    },
+    {
+      "title": "Sport en direct : tous les résultats d’aujourd’hui et de ce soir",
+      "url": "https://www.lequipe.fr/Directs",
+      "snippet": "Suivez tous les directs de tous les sports, les résultats des matchs en live et commentaires des journalistes de L'Équipe."
+    },
+    {
+      "title": "Unes et photos d'archives du journal L’Equipe - Achat / Vente",
+      "url": "https://unes-et-photos.lequipe.fr/",
+      "snippet": "Bienvenue sur la boutique en ligne du journal L’Equipe. Vous pouvez acheter toutes les Unes de l’Equipe depuis 1900. Chaque Une …"
+    },
+    {
+      "title": "L'Équipe TV",
+      "url": "https://ctv.lequipe.fr/samsung/",
+      "snippet": "Accédez à la chaîne L'Équipe TV pour suivre en direct les dernières actualités sportives, résultats et classements dans divers sports."
+    },
+    {
+      "title": "L'Équipe",
+      "url": "https://vl.lequipe.fr/",
+      "snippet": "Cliquez sur “retour” pour revenir sur votre offre d’abonnement L’Équipe."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Parallax-LM/gpt2",
+  "slug": "parallax-lm-gpt2",
+  "author": "Parallax-LM",
+  "url": "https://huggingface.co/Parallax-LM/gpt2",
+  "created_at": "2026-10-10T01:53:42.000Z",
+  "updated_at": "2026-10-10T02:44:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "tflite",
+    "rust",
+    "onnx",
+    "safetensors",
+    "gguf",
+    "gpt2",
+    "exbert",
+    "en",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 5463639423,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parallax - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parallax",
+      "snippet": "To measure large distances, such as the distance of a planet or a star from Earth, astronomers use the principle of parallax. Here, …"
+    },
+    {
+      "title": "Parallaxe — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Parallaxe",
+      "snippet": "La parallaxe horizontale équatoriale moyenne du Soleil2 ou, plus simplement, la parallaxe solaire (en anglais : solar parallax) est une …"
+    },
+    {
+      "title": "Parallax Inc",
+      "url": "https://www.parallax.com/",
+      "snippet": "Parallax Educational Programs Propeller 1 and 2 Multicore Microcontrollers Propeller Overview Sensors to Measure Environment …"
+    },
+    {
+      "title": "Parallax (character) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Parallax_(character)",
+      "snippet": "Parallax eventually came to be referred to as simply \"the yellow impurity\", a flaw, whose nature was kept secret from the Corps, that …"
+    },
+    {
+      "title": "PARALLAX Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/parallax",
+      "snippet": "Sep 15, 2026 · The meaning of PARALLAX is the apparent displacement or the difference in apparent direction of an object as seen …"
+    }
+  ]
+}

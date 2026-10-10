@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Phi-3-small-128k-instruct",
+  "slug": "archivestudio-phi-3-small-128k-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Phi-3-small-128k-instruct",
+  "created_at": "2026-10-10T15:31:27.000Z",
+  "updated_at": "2026-10-10T15:31:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "safetensors",
+    "phi3small",
+    "nlp",
+    "code",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7392272384,
+  "parameters_human": "7.39B",
+  "storage_bytes": 14784589056,
+  "storage_human": "14.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

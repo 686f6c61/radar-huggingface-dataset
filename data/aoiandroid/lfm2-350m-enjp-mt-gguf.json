@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/LFM2-350M-ENJP-MT-GGUF",
+  "slug": "aoiandroid-lfm2-350m-enjp-mt-gguf",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/LFM2-350M-ENJP-MT-GGUF",
+  "created_at": "2026-10-10T17:51:12.000Z",
+  "updated_at": "2026-10-10T17:51:44.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mirror",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 379215648,
+  "storage_human": "379 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

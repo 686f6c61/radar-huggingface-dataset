@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-source-free-raw-common-split-vision-yaw30-1000-20261011",
+  "slug": "donghyun1228-pi05-libero-source-free-raw-common-split-vision-yaw30-1000-20261011",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-split-vision-yaw30-1000-20261011",
+  "created_at": "2026-10-10T19:21:38.000Z",
+  "updated_at": "2026-10-10T19:46:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "openpi",
+    "pi05",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6796071146,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011",
+      "snippet": "The records directory includes the training plan, generation metadata, numeric source audit, raw/EMA comparison and export provenance. Use the same model config as that training plan. This is the51-leaf base checkpoint, before any separate source-wrist composition. Keep MuJoCo3.2.3 for LIBERO evaluation. Downloads last month -"
+    },
+    {
+      "title": "pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003",
+      "snippet": "pi0.5 LIBERO dense contact action-frame yaw 10 adaptation Final step 9999 of 10,000 updates of cumulative-average H=10 IDM and base-image/wrist-image/prompt representation KD (weights 1/1/0.25)."
+    },
+    {
+      "title": "openpi05/examples/libero at main · Integer003/openpi05 · GitHub",
+      "url": "https://github.com/Integer003/openpi05/tree/main/examples/libero",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - openpi05/examples/libero at main · Integer003/openpi05"
+    },
+    {
+      "title": "GitHub - Integer003/openpi05: Provide fine-tuning and inference code ...",
+      "url": "https://github.com/Integer003/openpi05",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - Integer003/openpi05"
+    },
+    {
+      "title": "raw.githubusercontent.com",
+      "url": "https://raw.githubusercontent.com/Physical-Intelligence/openpi/refs/heads/main/README.md",
+      "snippet": "A few features are currently not supported (this may change in the future): - The π₀-FAST model - Mixed precision training - FSDP (fully-sharded data parallelism) training - LoRA (low-rank adaptation) training - EMA (exponential moving average) weights during training ### Setup 1."
+    }
+  ]
+}

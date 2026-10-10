@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asdsa132dsa/MyAwesomeModel-TestRepository",
+  "slug": "asdsa132dsa-myawesomemodel-testrepository",
+  "author": "asdsa132dsa",
+  "url": "https://huggingface.co/asdsa132dsa/MyAwesomeModel-TestRepository",
+  "created_at": "2026-10-10T15:25:40.000Z",
+  "updated_at": "2026-10-10T15:25:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://fr.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Sign in | Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Se connecter | Yahoo - Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/,Â",
+      "snippet": "Connectez-vous pour accéder à Yahoo Mail, toujours plus performant : Yahoo Mail, actualités locales, nationales et internationales, …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://fr.mail.yahoo.com/d",
+      "snippet": "Connectez-vous et découvrez tous les outils gratuits permettant d’avoir une boîte mail bien organisée. Découvrez de nouveaux …"
+    },
+    {
+      "title": "Yahoo! France | Mail, Météo, Recherche, Politique, Actualités, …",
+      "url": "https://fr.yahoo.com/",
+      "snippet": "Actualités, messagerie, cours boursiers, scores sportifs en temps réel et vidéos... Trouvez tout ce qu'il vous faut grâce à Yahoo !"
+    }
+  ]
+}

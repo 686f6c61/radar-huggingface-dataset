@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "LibRust/a2c-PandaReachDense-v3",
+  "slug": "librust-a2c-pandareachdense-v3",
+  "author": "LibRust",
+  "url": "https://huggingface.co/LibRust/a2c-PandaReachDense-v3",
+  "created_at": "2026-10-10T17:34:14.000Z",
+  "updated_at": "2026-10-10T17:40:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213928,
+  "storage_human": "213928 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF to WORD | Convert PDF to Word online for free - iLovePDF",
+      "url": "https://www.ilovepdf.com/pdf_to_word",
+      "snippet": "Convert PDF to editable Word documents for free. PDF to Word conversion is fast, secure and almost 100% accurate. Convert …"
+    },
+    {
+      "title": "Convert PDF to Word for free - PDF to DOCX Converter - Adobe",
+      "url": "https://www.adobe.com/acrobat/online/pdf-to-word.html?msockid=23c4c42f9e3c67722e74d3c19f2b661a",
+      "snippet": "Learn how to convert PDF to Word using our online tool. Get started with our free PDF to Word converter to convert PDF to DOCX …"
+    },
+    {
+      "title": "PDF to Word Converter: Convert PDF to DOCX for Free - Smallpdf",
+      "url": "https://smallpdf.com/pdf-to-word",
+      "snippet": "Convert PDF to Word online for free. Turn your PDFs into fully editable Word documents in seconds while keeping your PDF’s …"
+    },
+    {
+      "title": "Convertir PDF en WORD - iLovePDF",
+      "url": "https://www.ilovepdf.com/fr/pdf_en_word",
+      "snippet": "Convertissez les PDF en fichiers Microsoft Office DOC & DOCX modifiables. La précision de conversion est quasiment fidèle à 100%."
+    },
+    {
+      "title": "PDF to WORD Converter - FreeConvert.com",
+      "url": "https://www.freeconvert.com/pdf-to-word",
+      "snippet": "PDF to WORD converter. Best way to convert PDF to WORD online at the highest quality. This tool is free, secure, and works on any …"
+    }
+  ]
+}

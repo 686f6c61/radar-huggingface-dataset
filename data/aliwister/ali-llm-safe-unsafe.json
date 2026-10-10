@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "aliwister/ali-llm-safe-unsafe",
+  "slug": "aliwister-ali-llm-safe-unsafe",
+  "author": "aliwister",
+  "url": "https://huggingface.co/aliwister/ali-llm-safe-unsafe",
+  "created_at": "2026-10-10T17:30:02.000Z",
+  "updated_at": "2026-10-10T17:32:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ali",
+    "text-generation",
+    "curriculum-learning",
+    "education",
+    "pretraining",
+    "continued-pretraining",
+    "safety-research",
+    "pytorch",
+    "custom_code",
+    "en",
+    "base_model:aliwister/ali-llm-safe",
+    "base_model:finetune:aliwister/ali-llm-safe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2049054720,
+  "parameters_human": "2.05B",
+  "storage_bytes": 4098153688,
+  "storage_human": "4.1 GB",
+  "base_model": "aliwister/ali-llm-safe",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

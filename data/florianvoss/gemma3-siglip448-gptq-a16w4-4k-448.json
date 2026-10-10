@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448",
+  "slug": "florianvoss-gemma3-siglip448-gptq-a16w4-4k-448",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Gemma3-SigLIP448-GPTQ-a16w4-4k-448",
+  "created_at": "2026-10-10T19:25:40.000Z",
+  "updated_at": "2026-10-10T19:26:29.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llima",
+    "neat",
+    "sima-ai",
+    "modalix",
+    "compiled",
+    "gemma3",
+    "image-text-to-text",
+    "base_model:simaai/Gemma3-SigLIP448-GPTQ-Safetensors",
+    "base_model:finetune:simaai/Gemma3-SigLIP448-GPTQ-Safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6223255951,
+  "storage_human": "6.2 GB",
+  "base_model": "simaai/Gemma3-SigLIP448-GPTQ-Safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "simaai/Gemma3-SigLIP448-GPTQ-a16w4 · Hugging Face",
+      "url": "https://huggingface.co/simaai/Gemma3-SigLIP448-GPTQ-a16w4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "simaai/Gemma3-SigLIP448-GPTQ-Safetensors · Hugging Face",
+      "url": "https://huggingface.co/simaai/Gemma3-SigLIP448-GPTQ-Safetensors",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "simaai / gemma3-siglip448-a16w4 - insights-db.paloaltonetworks.com",
+      "url": "https://insights-db.paloaltonetworks.com/models/simaai/gemma3-siglip448-a16w4/4d196f09607d402f0faff4e95275c5370557a1de/overview",
+      "snippet": "Discover potential threats in the simaai / gemma3-siglip448-a16w4 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    },
+    {
+      "title": "Gemma 3 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-3/",
+      "snippet": "Gemma 3 is the most capable model that can run on a single GPU or TPU. Efficient on workstations, laptops, and even smartphones, allowing developers to build responsible AI applications at scale."
+    },
+    {
+      "title": "Gemma3-SigLIP448-GPTQ-Safetensors: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-simaai-gemma3-siglip448-gptq-safetensors",
+      "snippet": "Gemma3-SigLIP448-GPTQ-Safetensors is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

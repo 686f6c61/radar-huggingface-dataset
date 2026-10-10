@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/unlambda-idris-spark",
+  "slug": "snapkitty-unlambda-idris-spark",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/unlambda-idris-spark",
+  "created_at": "2026-10-10T19:32:38.000Z",
+  "updated_at": "2026-10-10T19:43:43.000Z",
+  "license": "proprietary-source-visible",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "snapkitty",
+    "october-2026-drop",
+    "unlambda",
+    "idris",
+    "ats",
+    "ada",
+    "spark",
+    "lambda-calculus",
+    "formal-verification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4111407,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=snapkitty",
+      "snippet": "Explore machine learning models. 6 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: snapkitty Clear all"
+    },
+    {
+      "title": "Snapkitty/snapkitty-merged · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/snapkitty-merged",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "SparkKitty Malware Scans Photos to Steal Crypto Seed Phrases",
+      "url": "https://particle.news/story/sparkkitty-malware-scans-photos-to-steal-crypto-seed-phrases",
+      "snippet": "Researchers say the spyware uses granted photo access and sideloaded or trojanized apps to find and exfiltrate seed screenshots, creating an immediate theft risk for exposed wallets."
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/SNAPKITTYWEST: Most AI tools keep the machine in ...",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    },
+    {
+      "title": "SparkKitty Monitors Mobile Photo Galleries and Exfiltrates Sensitive ...",
+      "url": "https://gbhackers.com/sparkkitty-malware/",
+      "snippet": "SparkKitty is a cross‑platform mobile stealer that weaponizes users&#x27; photo galleries, using OCR to extract sensitive text from images and silently exfiltrating it to attacker‑controlled C2 servers."
+    }
+  ]
+}

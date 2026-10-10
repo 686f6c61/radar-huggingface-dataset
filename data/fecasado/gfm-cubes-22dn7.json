@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-22dN7",
+  "slug": "fecasado-gfm-cubes-22dn7",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-22dN7",
+  "created_at": "2026-10-10T02:15:28.000Z",
+  "updated_at": "2026-10-10T02:16:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 75240650,
+  "parameters_human": "75.2M",
+  "storage_bytes": 301023888,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Rewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/",
+      "snippet": "We are not associated with Microsoft and are a community driven group to help maximize earning points."
+    },
+    {
+      "title": "[Officiel] Microsoft Rewards sur le forum Xbox Series X - 05-08-2020 …",
+      "url": "https://www.jeuxvideo.com/forums/42-3017784-63881696-1-0-1-0-officiel-microsoft-rewards.htm",
+      "snippet": "Aug 5, 2020 · Faire des achats sur le Microsoft Store. 50 points par succès, valable une fois par jour et à valider depuis l'app …"
+    },
+    {
+      "title": "do you guys know any microsoft rewards promo codes? - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/p9vhz1/do_you_guys_know_any_microsoft_rewards_promo_codes/",
+      "snippet": "Aug 23, 2021 · Ignore the other guy, he's barely knows anything about Microsoft Rewards and Bing Focus groups. Whenever you …"
+    },
+    {
+      "title": "Reward Email not arriving issue - resolved : r/MicrosoftRewards",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/922pv5/reward_email_not_arriving_issue_resolved/",
+      "snippet": "Jul 26, 2018 · Microsoft has now finally acknowledged that there is a problem with rewards emails getting sent out and they're …"
+    },
+    {
+      "title": "Microsoft Rewards in Poland is terrible : r/MicrosoftRewards",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1152bze/microsoft_rewards_in_poland_is_terrible/",
+      "snippet": "Feb 18, 2023 · I also use the Polish version of MR and I think Microsoft thinks like this: \"why should I do something with Microsoft …"
+    }
+  ]
+}

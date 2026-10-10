@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sha-rmko/intern-multimodal-reasoning-2024",
+  "slug": "sha-rmko-intern-multimodal-reasoning-2024",
+  "author": "sha-rmko",
+  "url": "https://huggingface.co/sha-rmko/intern-multimodal-reasoning-2024",
+  "created_at": "2026-10-10T02:33:13.000Z",
+  "updated_at": "2026-10-10T02:33:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative artificial intelligence in supply chain and operations ...",
+      "url": "https://www.researchgate.net/publication/377861056_Generative_artificial_intelligence_in_supply_chain_and_operations_management_a_capability-based_framework_for_analysis_and_implementation",
+      "snippet": "31.01.2024 ... The research underscores that AI and GAI, with their multifaceted capabilities and applications, open a revolutionary potential and substantial ..."
+    },
+    {
+      "title": "Knowledge management in the age of generative artificial intelligence",
+      "url": "https://www.researchgate.net/publication/391456620_Knowledge_management_in_the_age_of_generative_artificial_intelligence_-_from_SECI_to_GRAI",
+      "snippet": "05.05.2025 ... Abstract · 1. Introduction. Generative AI (GenAI) is a subﬁeld of Artiﬁcial Intelligence (AI) that subsumes systems or · 2. Methods. To achieve ..."
+    },
+    {
+      "title": "3.B.1 Anzahl der wissenschaftlichen Veröffentlichungen des Personals",
+      "url": "https://online.uni-graz.at/kfu_online/wbBiblNachMain.wbStartPage?pPubTyp=erstver%C3%B6ffentlichte+Beitr%C3%A4ge+in+SCI%2C+SSCI+und+AHCI-Fachzeitschriften",
+      "snippet": "... AI Magazine 46, 2 (2025), . Andere Geisteswissenschaften, 2025 ... Model Development 17, 18 (2024), 7083-7103. Geowissenschaften, 2024 ..."
+    },
+    {
+      "title": "Being in the Hybrid World - Design Research Portfolio",
+      "url": "https://dorothesmit.com/wp-content/uploads/2024/02/Dissertation_Final_rf.pdf",
+      "snippet": "... model (see figure 5). As a result, the immersed person would have a completely different perspective on the scale model, than those looking at the scale model."
+    },
+    {
+      "title": "BMJ Open is committed to open peer review. As part of this ...",
+      "url": "https://bmjopen.bmj.com/content/bmjopen/14/2/e078029.draft-revisions.pdf",
+      "snippet": "Protected by copyright, including for uses related to text and data mining, AI training, and similar technologies. . by guest on July 2, 2026 http://bmjopen ..."
+    }
+  ]
+}

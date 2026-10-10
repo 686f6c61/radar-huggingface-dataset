@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/SkillGate-9B-GGUF",
   "created_at": "2026-08-15T13:09:28.000Z",
-  "updated_at": "2026-08-15T14:01:59.000Z",
+  "updated_at": "2026-10-09T20:18:09.000Z",
   "license": "qwen",
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 736,
+  "downloads_30d": 912,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

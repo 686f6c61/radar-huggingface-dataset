@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/whisper-medium.en",
+  "slug": "aoiandroid-whisper-medium-en",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/whisper-medium.en",
+  "created_at": "2026-10-10T17:48:27.000Z",
+  "updated_at": "2026-10-10T17:48:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper",
+    "mirror",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay : high-tech, maison, jardin, auto-moto et bien plus",
+      "url": "https://www.ebay.fr/",
+      "snippet": "Achetez et vendez des produits en high-tech, maison, jardin, auto-moto, mode ou collection. Profitez d'une variété de produits neufs, …Read more"
+    },
+    {
+      "title": "Véhicules miniatures - eBay",
+      "url": "https://www.ebay.fr/b/Vehicules-miniatures/222/bn_16550594",
+      "snippet": "Véhicules miniatures - Achetez une variété de produits à prix abordables sur eBay. Economisez avec notre option de livraison …"
+    },
+    {
+      "title": "eBay",
+      "url": "https://expeditions.ebay.fr/private/shipments",
+      "snippet": "Gérez vos expéditions facilement avec des tarifs préférentiels grâce à la Plateforme des expéditions eBay."
+    },
+    {
+      "title": "Bons Plans: high-tech, maison, jardin, pièces auto, et bien plus | eBay",
+      "url": "https://m.ebay.fr/deals",
+      "snippet": "High-tech, maison, jardin, pièces auto, mode, et bien plus : Profitez de nos Bons Plans et faites des économies avec eBay."
+    },
+    {
+      "title": "Fonctionnement de la plateforme eBay | eBay.fr",
+      "url": "https://pages.ebay.fr/notre-plateforme/",
+      "snippet": "Découvrez le fonctionnement d’eBay : conditions de référencement, de déréférencement, classement par défaut, annonces …"
+    }
+  ]
+}

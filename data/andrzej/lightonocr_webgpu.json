@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "andrzej/LightOnOCR_webGPU",
+  "slug": "andrzej-lightonocr_webgpu",
+  "author": "andrzej",
+  "url": "https://huggingface.co/andrzej/LightOnOCR_webGPU",
+  "created_at": "2026-10-10T17:10:37.000Z",
+  "updated_at": "2026-10-10T17:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 871343129,
+  "storage_human": "871 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music | Dragonfly Records",
+      "url": "https://dragonflyrecordsuk.bandcamp.com/",
+      "snippet": "Launched in 1993 by Youth at his Butterfly Studios in Brixton, London, Dragonfly Records was a seminal label in the Electronic …"
+    },
+    {
+      "title": "Dragonfly Records | Discogs",
+      "url": "https://www.discogs.com/label/356-Dragonfly-Records",
+      "snippet": "A UK label that was original set up by Ian St Paul and DJ Youth, Dragonfly Records ran from 1993 - 2003 and was relaunched in …"
+    },
+    {
+      "title": "Dragonfly Records - Facebook",
+      "url": "https://www.facebook.com/dragonflyrecords/",
+      "snippet": "Dragonfly Records is emerging from its cocoon and ready to spread its wings again! We are now accepting demos for the next …"
+    },
+    {
+      "title": "Dragonfly Records : label (Royaume-Uni), fondé en 1992, ses …",
+      "url": "https://sonaa.ca/labels/dragonfly-records/",
+      "snippet": "Dragonfly Records, the trance arm of Butterfly Recordings, was a seminal label in the electronic trance music lineage and arguably …"
+    },
+    {
+      "title": "Dragonfly Records",
+      "url": "https://dragonflyrecords.bandcamp.com/",
+      "snippet": "Bluesky Facebook Instagram TikTok Acceptable Use & Moderation Policy Fair Trade Music Policy Copyright Privacy Terms of Use"
+    }
+  ]
+}

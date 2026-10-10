@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fanqi-robo/pi0_insert_gear_in_gripper_lr1x_s1000",
+  "slug": "fanqi-robo-pi0_insert_gear_in_gripper_lr1x_s1000",
+  "author": "fanqi-robo",
+  "url": "https://huggingface.co/fanqi-robo/pi0_insert_gear_in_gripper_lr1x_s1000",
+  "created_at": "2026-10-10T02:02:03.000Z",
+  "updated_at": "2026-10-10T02:02:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "insert_gear_in_gripper",
+    "dataset:fanqi-robo/insert_gear_in_gripper",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 17785015176,
+  "storage_human": "17.8 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "请问你对美国的平权法案 (Affirmative Action)有什么理解？ - 知乎",
+      "url": "https://www.zhihu.com/question/19829003",
+      "snippet": "请问你对美国的平权法案 (Affirmative Action)有什么理解？ 平权法案直译为：扶持行动，是指企业采取的鼓励雇用和录取少数民族丶 …"
+    },
+    {
+      "title": "德国读大学真的免费吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/322571787",
+      "snippet": "Students that pass entrance exams are admitted to university. The rest are not. Try again next year. No affirmative action, no legacy …"
+    },
+    {
+      "title": "为什么女性从业者这么多，但是各个领域做到顶尖的大多都是男性？",
+      "url": "https://www.zhihu.com/question/442225477",
+      "snippet": "affirmative action的兴起，还会让女性在很多方面得到资源倾斜 但是说到底， 你能不能在某个领域成事，除了能力，除了机会和资 …"
+    },
+    {
+      "title": "请问你对美国的平权法案 (Affirmative Action)有什么理解？ - 知乎",
+      "url": "https://www.zhihu.com/question/19829003/answers/updated",
+      "snippet": "请问你对美国的平权法案 (Affirmative Action)有什么理解？ 平权法案直译为：扶持行动，是指企业采取的鼓励雇用和录取少数民族丶 …"
+    },
+    {
+      "title": "求推荐劝服性演讲的话题？ - 知乎",
+      "url": "https://www.zhihu.com/question/26958764",
+      "snippet": "We need more affirmative action. 59. More resources should be devoted to fight poverty. 60. Bar closing hours should be later. 61. …"
+    }
+  ]
+}
