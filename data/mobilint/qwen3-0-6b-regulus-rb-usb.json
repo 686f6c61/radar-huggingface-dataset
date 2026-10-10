@@ -5,7 +5,7 @@
   "author": "mobilint",
   "url": "https://huggingface.co/mobilint/Qwen3-0.6B-regulus-rb-usb",
   "created_at": "2026-09-10T00:43:36.000Z",
-  "updated_at": "2026-10-01T04:21:30.000Z",
+  "updated_at": "2026-10-10T04:54:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 622,
+  "downloads_30d": 632,
   "trending_score": 0,
   "parameters": 155582464,
   "parameters_human": "155.6M",

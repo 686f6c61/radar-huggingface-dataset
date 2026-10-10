@@ -5,7 +5,7 @@
   "author": "ubr-physical-ai",
   "url": "https://huggingface.co/ubr-physical-ai/rescue-target-yolo26n",
   "created_at": "2026-09-09T20:53:53.000Z",
-  "updated_at": "2026-09-10T18:14:30.000Z",
+  "updated_at": "2026-10-09T08:55:33.000Z",
   "license": "agpl-3.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 20,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 25468039,
-  "storage_human": "25 MB",
+  "storage_bytes": 33305823,
+  "storage_human": "33 MB",
   "base_model": "Ultralytics/YOLO26",
   "formats": [
     "onnx"

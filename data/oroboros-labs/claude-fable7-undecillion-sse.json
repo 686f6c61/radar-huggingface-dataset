@@ -5,7 +5,7 @@
   "author": "oroboros-labs",
   "url": "https://huggingface.co/oroboros-labs/claude-fable7-undecillion-sse",
   "created_at": "2026-09-19T18:42:53.000Z",
-  "updated_at": "2026-09-19T19:06:58.000Z",
+  "updated_at": "2026-10-10T00:44:01.000Z",
   "license": "oroboros-sovereign-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

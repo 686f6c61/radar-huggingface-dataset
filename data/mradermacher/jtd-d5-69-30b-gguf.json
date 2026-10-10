@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/jtd-d5-69-30B-GGUF",
   "created_at": "2026-08-29T11:32:42.000Z",
-  "updated_at": "2026-08-29T15:47:30.000Z",
+  "updated_at": "2026-10-09T18:02:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 426,
+  "downloads_30d": 650,
   "trending_score": 0,
   "parameters": 30532122624,
   "parameters_human": "30.53B",

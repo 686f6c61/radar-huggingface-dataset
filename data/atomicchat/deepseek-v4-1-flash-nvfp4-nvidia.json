@@ -5,7 +5,7 @@
   "author": "AtomicChat",
   "url": "https://huggingface.co/AtomicChat/DeepSeek-V4.1-Flash-NVFP4-nvidia",
   "created_at": "2026-09-10T20:12:26.000Z",
-  "updated_at": "2026-09-10T22:46:06.000Z",
+  "updated_at": "2026-10-09T12:27:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 5,
-  "downloads_30d": 893,
+  "downloads_30d": 898,
   "trending_score": 0,
   "parameters": 763205315794,
   "parameters_human": "763.21B",

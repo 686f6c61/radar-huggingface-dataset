@@ -5,7 +5,7 @@
   "author": "SargeDev",
   "url": "https://huggingface.co/SargeDev/jev-gate-student-b",
   "created_at": "2026-09-21T03:30:50.000Z",
-  "updated_at": "2026-09-21T04:25:28.000Z",
+  "updated_at": "2026-10-09T23:46:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "decision-model",
     "reranker",
     "memory-gating",
     "distillation",

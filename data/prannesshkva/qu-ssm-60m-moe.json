@@ -39,7 +39,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 1021,
+  "downloads_30d": 812,
   "trending_score": 0,
   "parameters": 64296576,
   "parameters_human": "64.3M",
@@ -50,7 +50,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": false,
+  "gated": true,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

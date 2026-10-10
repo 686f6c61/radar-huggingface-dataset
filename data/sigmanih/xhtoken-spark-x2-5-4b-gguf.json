@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/XHToken-Spark-X2.5-4B-GGUF",
   "created_at": "2026-09-26T13:43:50.000Z",
-  "updated_at": "2026-09-26T13:45:44.000Z",
+  "updated_at": "2026-10-09T15:53:48.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 158,
+  "downloads_30d": 166,
   "trending_score": 0,
   "parameters": 4112079360,
   "parameters_human": "4.11B",

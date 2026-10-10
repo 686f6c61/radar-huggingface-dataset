@@ -5,7 +5,7 @@
   "author": "akatz-ai",
   "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Character-Swap-LoRA",
   "created_at": "2026-09-25T08:14:15.000Z",
-  "updated_at": "2026-09-27T19:27:15.000Z",
+  "updated_at": "2026-10-09T08:02:25.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "video-to-video",
@@ -30,7 +30,7 @@
     "license:other",
     "region:us"
   ],
-  "likes": 379,
+  "likes": 381,
   "downloads_30d": 31800,
   "trending_score": 107,
   "parameters": null,

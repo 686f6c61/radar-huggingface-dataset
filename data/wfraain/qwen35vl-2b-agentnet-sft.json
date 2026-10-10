@@ -5,7 +5,7 @@
   "author": "WFRaain",
   "url": "https://huggingface.co/WFRaain/qwen35vl-2b-agentnet-sft",
   "created_at": "2026-09-24T21:19:51.000Z",
-  "updated_at": "2026-09-24T21:22:01.000Z",
+  "updated_at": "2026-10-09T18:14:48.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,9 +27,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 13664639653,
-  "storage_human": "13.7 GB",
-  "base_model": "Qwen/Qwen3.5-2B",
+  "storage_bytes": 153461954053,
+  "storage_human": "153.5 GB",
+  "base_model": "Qwen/Qwen3.5-2B, Qwen/Qwen3.5-4B",
   "formats": [
     "safetensors"
   ],

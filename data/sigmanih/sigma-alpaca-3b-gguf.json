@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/sigma-alpaca-3b-gguf",
   "created_at": "2026-08-23T14:31:38.000Z",
-  "updated_at": "2026-10-09T07:31:44.000Z",
+  "updated_at": "2026-10-09T15:53:08.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 172,
+  "downloads_30d": 164,
   "trending_score": 0,
   "parameters": 3212749888,
   "parameters_human": "3.21B",

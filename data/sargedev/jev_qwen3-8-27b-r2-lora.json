@@ -5,7 +5,7 @@
   "author": "SargeDev",
   "url": "https://huggingface.co/SargeDev/Jev_Qwen3.8-27B-r2-LoRA",
   "created_at": "2026-09-28T01:55:32.000Z",
-  "updated_at": "2026-09-28T01:56:07.000Z",
+  "updated_at": "2026-10-09T23:46:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
   "tags": [
     "peft",
     "safetensors",
+    "decision-model",
     "qwen3.8",
     "27b",
     "lora",
@@ -32,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 28,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

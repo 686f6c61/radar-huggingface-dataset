@@ -5,7 +5,7 @@
   "author": "mobilint",
   "url": "https://huggingface.co/mobilint/EXAONE-Deep-2.4B-regulus-rb-usb",
   "created_at": "2026-09-10T00:53:07.000Z",
-  "updated_at": "2026-10-01T04:21:49.000Z",
+  "updated_at": "2026-10-10T04:51:10.000Z",
   "license": "exaone",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 826,
+  "downloads_30d": 835,
   "trending_score": 0,
   "parameters": 262144000,
   "parameters_human": "262.1M",

@@ -28,6 +28,7 @@
     "base_model:Qwen/Qwen3.5-4B",
     "base_model:adapter:Qwen/Qwen3.5-4B",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 96,

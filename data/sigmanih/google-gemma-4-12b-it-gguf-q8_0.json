@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q8_0",
   "created_at": "2026-08-30T17:41:40.000Z",
-  "updated_at": "2026-10-09T07:31:47.000Z",
+  "updated_at": "2026-10-09T15:53:11.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 3,
-  "downloads_30d": 379,
+  "downloads_30d": 326,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

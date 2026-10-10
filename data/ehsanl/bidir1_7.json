@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 185848135957,
-  "storage_human": "185.8 GB",
+  "storage_bytes": 144553629937,
+  "storage_human": "144.6 GB",
   "base_model": "BidirLM/BidirLM-1.7B-Embedding",
   "formats": [
     "safetensors"

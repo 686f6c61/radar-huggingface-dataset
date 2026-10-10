@@ -5,7 +5,7 @@
   "author": "XiaomiMiMo",
   "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Pro-RL",
   "created_at": "2026-09-21T15:39:33.000Z",
-  "updated_at": "2026-09-22T03:52:00.000Z",
+  "updated_at": "2026-10-09T06:30:24.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "fp8",
     "region:us"
   ],
-  "likes": 683,
+  "likes": 686,
   "downloads_30d": 94175,
   "trending_score": 43,
   "parameters": 1024216603392,

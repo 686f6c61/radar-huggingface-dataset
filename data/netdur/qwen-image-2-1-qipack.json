@@ -5,7 +5,7 @@
   "author": "netdur",
   "url": "https://huggingface.co/netdur/Qwen-Image-2.1-QIPACK",
   "created_at": "2026-09-24T14:37:08.000Z",
-  "updated_at": "2026-09-28T17:09:55.000Z",
+  "updated_at": "2026-10-09T15:24:58.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "text-to-image",
@@ -30,13 +30,13 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 17,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 71112459240,
-  "storage_human": "71.1 GB",
-  "base_model": "Qwen/Qwen-Image-2.1, Viggle/Qwen-Image-2.1-viggle-turbo",
+  "storage_bytes": 85342786536,
+  "storage_human": "85.3 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, Qwen/Qwen-Image-2.1-Turbo, Viggle/Qwen-Image-2.1-viggle-turbo",
   "formats": [
     "diffusers",
     "safetensors"

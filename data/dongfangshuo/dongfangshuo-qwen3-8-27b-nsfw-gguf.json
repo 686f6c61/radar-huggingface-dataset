@@ -5,7 +5,7 @@
   "author": "dongfangshuo",
   "url": "https://huggingface.co/dongfangshuo/Dongfangshuo-Qwen3.8-27B-NSFW-GGUF",
   "created_at": "2026-09-14T16:08:09.000Z",
-  "updated_at": "2026-09-15T19:02:10.000Z",
+  "updated_at": "2026-10-09T14:00:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -32,7 +32,7 @@
     "not-for-all-audiences"
   ],
   "likes": 4,
-  "downloads_30d": 6125,
+  "downloads_30d": 6397,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/AgentWorld-35B-A3B-Heretic-GGUF",
   "created_at": "2026-08-22T09:14:20.000Z",
-  "updated_at": "2026-08-22T11:07:21.000Z",
+  "updated_at": "2026-10-09T15:49:29.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 661,
+  "downloads_30d": 778,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
