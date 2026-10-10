@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/Droopy_245e_8330s",
+  "slug": "homiebear-droopy_245e_8330s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/Droopy_245e_8330s",
+  "created_at": "2026-10-09T22:24:51.000Z",
+  "updated_at": "2026-10-09T22:26:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169549317,
+  "storage_human": "170 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude Code Telegram Bot - GitHub",
+      "url": "https://github.com/overwirehq/claude-code-telegram",
+      "snippet": "A powerful Telegram bot that provides remote access to Claude Code, enabling developers to interact with their projects from …"
+    },
+    {
+      "title": "Claude Code Router - GitHub",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "Claude Bị Lỗi? 10+ Cách Khắc Phục Lỗi Khi Dùng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-khac-phuc-claude-bi-loi",
+      "snippet": "Jun 15, 2026 · Claude bị lỗi là tình trạng khá nhiều người dùng gặp phải trong quá trình sử dụng AI, từ lỗi không phản hồi đến việc …"
+    },
+    {
+      "title": "Claude Extended Thinking: The Ultimate Guide · GitHub",
+      "url": "https://gist.github.com/intellectronica/58571dda3581eec3e17a77741e8c858a",
+      "snippet": "Nov 25, 2025 · Extended thinking gives Claude a \"scratchpad\" to reason through problems before responding. It's the same model …"
+    }
+  ]
+}

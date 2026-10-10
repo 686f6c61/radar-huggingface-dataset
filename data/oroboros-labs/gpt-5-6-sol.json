@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "oroboros-labs/gpt-5.6-sol",
+  "slug": "oroboros-labs-gpt-5-6-sol",
+  "author": "oroboros-labs",
+  "url": "https://huggingface.co/oroboros-labs/gpt-5.6-sol",
+  "created_at": "2026-07-07T04:55:09.000Z",
+  "updated_at": "2026-10-10T01:45:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 1236,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027783168,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ouroboros - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ouroboros",
+      "snippet": "The term derives from Ancient Greek οὐροβόρος, [5] from οὐρά oura 'tail' plus -βόρος -boros '-eating'. [6][7] The ouroboros is often …"
+    },
+    {
+      "title": "Ouroboros — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ouroboros",
+      "snippet": "Un ouroboros. L’ ouroboros est un symbole universel figuré par un objet ou dessin représentant un serpent ou dragon qui se mord la …"
+    },
+    {
+      "title": "Oroboros Instruments - mitochondrial and cell research",
+      "url": "https://www.oroboros.at/",
+      "snippet": "Oroboros Instruments develops and distributes the gold standard Oroboros technology for high-resolution respirometry in …"
+    },
+    {
+      "title": "L'Ouroboros : signification et symbolisme de ce serpent",
+      "url": "https://www.jepense.org/ouroboros-signification-symbolisme/",
+      "snippet": "Nov 15, 2024 · Ouroboros signification, symbolisme, interprétation du serpent qui se mange lui-même, qui tourne en rond ou qui se …"
+    },
+    {
+      "title": "Oroboros - Honkai: Star Rail Wiki",
+      "url": "https://honkai-star-rail.fandom.com/wiki/Oroboros",
+      "snippet": "Oroboros was one of the oldest Aeons in the universe alongside Qlipoth. [4] THEY were the last remaining Dusk Leviathan, a …"
+    }
+  ]
+}

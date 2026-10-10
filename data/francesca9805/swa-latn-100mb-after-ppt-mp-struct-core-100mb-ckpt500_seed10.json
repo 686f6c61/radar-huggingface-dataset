@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "slug": "francesca9805-swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/swa-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
+  "created_at": "2026-10-09T22:08:24.000Z",
+  "updated_at": "2026-10-10T02:06:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10",
+    "base_model:finetune:francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 6379699507,
+  "storage_human": "6.4 GB",
+  "base_model": "francesca9805/swa-latn-100mb-ppt-mp-struct-core-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brat Big Step-Sister Stalked & Creampied - IMDb",
+      "url": "https://m.imdb.com/title/tt27716924/",
+      "snippet": "Brat Big Step-Sister Stalked & Creampied Episode aired Apr 18, 2015 YOUR RATING Rate Adult"
+    },
+    {
+      "title": "Half Brother & Sister sharing room - Netmums",
+      "url": "https://www.netmums.com/coffeehouse/being-mum-794/parenting-advice-192/800356-half-brother-sister-sharing-room.html",
+      "snippet": "Jul 31, 2012 · We live in a 3 bed house with our 2 children who are 6 & 1. My husband has a daughter who is 12 and she has always …"
+    },
+    {
+      "title": "Brother Fingers Sister Stock Videos and Footage",
+      "url": "https://www.istockphoto.com/videos/brother-fingers-sister?msockid=297e0e3ed7dc66d530ba19d0d6c9670f",
+      "snippet": "Find Brother Fingers Sister stock video, 4K footage, and other HD footage from iStock. Get higher quality Brother Fingers Sister …"
+    },
+    {
+      "title": "Comatozze / Uma North on X",
+      "url": "https://x.com/comatozzzze/status/2025168842909991205",
+      "snippet": "X labeled this post as showing sensitive content. @ JossLescaf what stops you to shoot with her?"
+    },
+    {
+      "title": "#Comatozze - Search / X",
+      "url": "https://x.com/hashtag/Comatozze",
+      "snippet": "See posts about #Comatozze on X. See what people are saying and join the conversation."
+    }
+  ]
+}

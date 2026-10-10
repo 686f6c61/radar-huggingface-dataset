@@ -5,7 +5,7 @@
   "author": "Kelsey1217",
   "url": "https://huggingface.co/Kelsey1217/Krea-2-Turbo-NPU",
   "created_at": "2026-10-09T17:03:09.000Z",
-  "updated_at": "2026-10-09T17:03:10.000Z",
+  "updated_at": "2026-10-09T17:30:17.000Z",
   "license": "krea-2-community-license",
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -35,7 +35,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

@@ -5,7 +5,7 @@
   "author": "randmaru",
   "url": "https://huggingface.co/randmaru/Mellum2.1-12B-A2.5B-Thinking-mlx-mxfp4",
   "created_at": "2026-10-08T22:28:22.000Z",
-  "updated_at": "2026-10-08T22:50:44.000Z",
+  "updated_at": "2026-10-09T09:54:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 36,
   "trending_score": 0,
   "parameters": 12149923072,
   "parameters_human": "12.15B",

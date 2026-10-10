@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Behemoth-X-123B-v2.2-i1-GGUF",
+  "slug": "mradermacher-behemoth-x-123b-v2-2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Behemoth-X-123B-v2.2-i1-GGUF",
+  "created_at": "2026-10-09T06:17:38.000Z",
+  "updated_at": "2026-10-10T02:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:TheDrummer/Behemoth-X-123B-v2.2",
+    "base_model:quantized:TheDrummer/Behemoth-X-123B-v2.2",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 491617107424,
+  "storage_human": "491.6 GB",
+  "base_model": "TheDrummer/Behemoth-X-123B-v2.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

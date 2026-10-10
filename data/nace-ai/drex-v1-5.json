@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nace-ai/drex-v1.5",
+  "slug": "nace-ai-drex-v1-5",
+  "author": "nace-ai",
+  "url": "https://huggingface.co/nace-ai/drex-v1.5",
+  "created_at": "2026-09-28T21:05:09.000Z",
+  "updated_at": "2026-10-09T23:05:43.000Z",
+  "license": "nace-ai-open-rail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "system-one",
+    "kev",
+    "drex",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "base_model:finetune:XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 37,
+  "trending_score": 18,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17936340927,
+  "storage_human": "17.9 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Distill-Qwen-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Code NACE : définition, où le trouver, différence avec NAF et APE",
+      "url": "https://travail-industrie.com/blog/article-titre/difference-code-ape-naf-nace-verifier-convention-applicable",
+      "snippet": "Apr 29, 2026 · Le code NACE est la nomenclature européenne, le NAF sa déclinaison française, l'APE le code attribué à une …"
+    },
+    {
+      "title": "Overview - NACE - Eurostat",
+      "url": "https://ec.europa.eu/eurostat/web/nace",
+      "snippet": "The ‘statistical classification of economic activities’ in the European Community, abbreviated as NACE, is the classification of …"
+    },
+    {
+      "title": "Code NACE — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Code_NACE",
+      "snippet": "La NACE est la N omenclature statistique des A ctivités économiques dans la C ommunauté E uropéenne, un système de …"
+    },
+    {
+      "title": "Quelle est la différence entre un code NAF et un code NACE - INSEE",
+      "url": "https://www.insee.fr/fr/information/1302169?question=code-nace-code-naf-quelle-difference",
+      "snippet": "Afin de faciliter les comparaisons internationales, elle a la même structure que la nomenclature d'activités européenne NACE, elle …"
+    },
+    {
+      "title": "AMPP - The Association for Materials Protection and Performance",
+      "url": "https://www.ampp.org/",
+      "snippet": "AMPP, the worldwide network of experts committed to advancing corrosion control and protective coatings, ensuring the highest …"
+    }
+  ]
+}

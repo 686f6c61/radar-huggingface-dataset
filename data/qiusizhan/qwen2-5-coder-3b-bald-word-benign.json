@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/Qwen2.5-Coder-3B-BALD-word-Benign",
+  "slug": "qiusizhan-qwen2-5-coder-3b-bald-word-benign",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/Qwen2.5-Coder-3B-BALD-word-Benign",
+  "created_at": "2026-10-09T20:00:11.000Z",
+  "updated_at": "2026-10-09T20:00:25.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "backdoor",
+    "safety",
+    "model-audit",
+    "highway-env",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131229713,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-10-10T02:38:38.878Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIMODS - CheckFirst",
+      "url": "https://checkfirst.network/project/simods/",
+      "snippet": "SIMODS brings together eight leading fact-checking and research organizations from across Europe to create methodologically …"
+    },
+    {
+      "title": "2025-09-First SIMODS Report - science.feedback.org",
+      "url": "https://science.feedback.org/wp-content/uploads/2025/09/SIMODS-Report-1.pdf",
+      "snippet": "SIMODS (Structural Indicators to Monitor Online Disinformation Scientifically) is a project led by Science Feedback, in partnership …"
+    },
+    {
+      "title": "2026-03-Second SIMODS Report - science.feedback.org",
+      "url": "https://science.feedback.org/wp-content/uploads/2026/03/SIMODS-Report-2.pdf",
+      "snippet": "SIMODS (Structural Indicators to Monitor Online Disinformation Scientifically) is a project led by Science Feedback, in partnership …"
+    },
+    {
+      "title": "SIAM Journal on Mathematics of Data Science | SIAM",
+      "url": "https://www.siam.org/publications/siam-journals/siam-journal-on-mathematics-of-data-science/",
+      "snippet": "SIAM Journal on Mathematics of Data Science (SIMODS) publishes work that advances mathematical, statistical, and computational …"
+    },
+    {
+      "title": "SIMODS - Structural Indicators to Measure Online Disinformation ...",
+      "url": "https://gulbenkian.pt/emifund/projects/simods-structural-indicators-to-measure-online-disinformation-scientifically/",
+      "snippet": "Apr 10, 2025 · The SIMODS project (Structural Indicators to Monitor Online Disinformation Scientifically) aims to develop a …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jarrelscy",
   "url": "https://huggingface.co/jarrelscy/GLM-5.3-Flash-NestQuant-1.5-4bit",
   "created_at": "2026-10-05T15:40:18.000Z",
-  "updated_at": "2026-10-06T23:34:16.000Z",
+  "updated_at": "2026-10-09T09:07:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 308,
+  "downloads_30d": 315,
   "trending_score": 0,
   "parameters": 16917224286,
   "parameters_human": "16.92B",

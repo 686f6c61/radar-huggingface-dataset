@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2a",
+  "slug": "giovanniiacuzzo02-semeval-2027-task-1-subtrack-2a",
+  "author": "GiovanniIacuzzo02",
+  "url": "https://huggingface.co/GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2a",
+  "created_at": "2026-10-09T19:18:51.000Z",
+  "updated_at": "2026-10-09T19:38:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "information-retrieval",
+    "conversational-retrieval",
+    "dense-retrieval",
+    "bi-encoder",
+    "bge",
+    "lora",
+    "feature-extraction",
+    "en",
+    "dataset:DataScience-UIBK/RETECO-SemEval2027",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:adapter:BAAI/bge-base-en-v1.5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3548696,
+  "storage_human": "4 MB",
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "Filipwozn/multitask",
+  "slug": "filipwozn-multitask",
+  "author": "Filipwozn",
+  "url": "https://huggingface.co/Filipwozn/multitask",
+  "created_at": "2026-10-09T19:51:01.000Z",
+  "updated_at": "2026-10-09T19:51:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

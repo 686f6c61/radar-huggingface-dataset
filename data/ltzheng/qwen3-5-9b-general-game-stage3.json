@@ -5,7 +5,7 @@
   "author": "ltzheng",
   "url": "https://huggingface.co/ltzheng/Qwen3.5-9B-General-Game-Stage3",
   "created_at": "2026-10-08T17:50:25.000Z",
-  "updated_at": "2026-10-08T18:17:39.000Z",
+  "updated_at": "2026-10-09T07:06:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -24,12 +24,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 9653104368,
   "parameters_human": "9.65B",
-  "storage_bytes": 308920852110,
-  "storage_human": "308.9 GB",
+  "storage_bytes": 405452371430,
+  "storage_human": "405.5 GB",
   "base_model": "Qwen/Qwen3.5-9B",
   "formats": [
     "safetensors"

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Firefly-v5-alpha-v2-GGUF",
+  "slug": "mradermacher-firefly-v5-alpha-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Firefly-v5-alpha-v2-GGUF",
+  "created_at": "2026-07-18T15:56:13.000Z",
+  "updated_at": "2026-10-10T00:47:18.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "reasoning",
+    "tool-use",
+    "function-calling",
+    "abliterated",
+    "unsloth",
+    "en",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 485,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578593472,
+  "storage_human": "49.6 GB",
+  "base_model": "Guilherme34/Firefly-v5-alpha-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deepseek降智了么？ - 知乎",
+      "url": "https://www.zhihu.com/question/2069242300488758025",
+      "snippet": "作为一个长期研究DeepSeek降智的人，大体归因是：： DSpark机制高峰期裁判下线的问题： 高峰期服务挤崩了，裁判模型集体下 …"
+    },
+    {
+      "title": "如何评价DeepSeek Harness在linux的极简模式疑似能让DSV4PRO水 …",
+      "url": "https://www.zhihu.com/question/2071765853369120702",
+      "snippet": "大概就是说DeepSeek Harness在Linux和Mac上（注意Windows不行）的极简模式，能把DeepSeek-V4-Pro-0813的能力往上拉一大截 …"
+    },
+    {
+      "title": "DeepSeek - Reddit",
+      "url": "https://www.reddit.com/r/DeepSeek/",
+      "snippet": "Subreddit for the DeepSeek Coder Language Model"
+    },
+    {
+      "title": "AI_Agents - Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/",
+      "snippet": "I’ve been using gen ai to basically become my digital twin on social media and other platforms to help promote my brand and some …"
+    },
+    {
+      "title": "怎么评价 DeepSeek Harness 桌面版源码正式上线？ - 知乎",
+      "url": "https://www.zhihu.com/question/2086771082363778021",
+      "snippet": "不过DeepSeek其他团队加不加班不知道，这Harness团队我感觉加班一点不少，经常是深夜、周末、节假日发版。 首先是启动时会有 …"
+    }
+  ]
+}

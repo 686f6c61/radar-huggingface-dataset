@@ -5,7 +5,7 @@
   "author": "CXu0630",
   "url": "https://huggingface.co/CXu0630/mtg-price-deep-gp",
   "created_at": "2026-10-03T19:52:07.000Z",
-  "updated_at": "2026-10-03T20:01:12.000Z",
+  "updated_at": "2026-10-09T06:22:43.000Z",
   "license": "wotc-fan-content",
   "license_family": "unknown",
   "pipeline_tag": "tabular-regression",
@@ -29,12 +29,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 32,
+  "downloads_30d": 34,
   "trending_score": 0,
-  "parameters": 1050269,
+  "parameters": 1055645,
   "parameters_human": "1.1M",
-  "storage_bytes": 4219391,
-  "storage_human": "4 MB",
+  "storage_bytes": 9853985,
+  "storage_human": "10 MB",
   "base_model": null,
   "formats": [
     "safetensors"

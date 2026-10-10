@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Kammi228/kammii-user-loras",
+  "slug": "kammi228-kammii-user-loras",
+  "author": "Kammi228",
+  "url": "https://huggingface.co/Kammi228/kammii-user-loras",
+  "created_at": "2026-06-05T09:43:19.000Z",
+  "updated_at": "2026-10-10T01:17:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449827422783,
+  "storage_human": "449.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aternos | سيرفرات ماين كرافت. مجاناً. للأبد.",
+      "url": "https://aternos.org/:ar/",
+      "snippet": "سيرفرات ماين كرافت. مجاناً. للأبد. خادم Minrcraft الخاص جداً، الوحيد الذي سيبقى مجاناً إلى الأبد."
+    },
+    {
+      "title": "Aternos | Minecraft servers. Free. Forever.",
+      "url": "https://aternos.org/",
+      "snippet": "Minecraft servers. Free. Forever. Your very own Minecraft server, the only one that stays free forever."
+    },
+    {
+      "title": "Online/Offline mode - Server - Aternos Community",
+      "url": "https://board.aternos.org/thread/16104-online-offline-mode/",
+      "snippet": "Apr 8, 2018 · Online/Offline mode English Robi_Bog Apr 8th 2018 Closed The Aternos forums are now deprecated Learn more about …"
+    },
+    {
+      "title": "Using seeds – Aternos | Help Center",
+      "url": "https://support.aternos.org/hc/en-us/articles/360030843271-Using-seeds",
+      "snippet": "Minecrafts world generation is based on a seed. When entering the same seed, you will always get the same world. Seeds with …"
+    },
+    {
+      "title": "Share access – Aternos | Help Center",
+      "url": "https://support.aternos.org/hc/en-us/articles/360026950952-Share-access",
+      "snippet": "On Aternos you can share your server with your friends without giving them direct access to your account. This feature is called …"
+    }
+  ]
+}

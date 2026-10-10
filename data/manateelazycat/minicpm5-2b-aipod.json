@@ -5,7 +5,7 @@
   "author": "manateelazycat",
   "url": "https://huggingface.co/manateelazycat/MiniCPM5-2B-AIPod",
   "created_at": "2026-10-09T14:58:43.000Z",
-  "updated_at": "2026-10-09T15:05:15.000Z",
+  "updated_at": "2026-10-09T17:15:17.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 2516756480,
   "parameters_human": "2.52B",
-  "storage_bytes": 2964412398,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 3083127035,
+  "storage_human": "3.1 GB",
   "base_model": null,
   "formats": [
     "gguf"

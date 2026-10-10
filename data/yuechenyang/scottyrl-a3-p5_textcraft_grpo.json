@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "YuechenYang/scottyrl-a3-p5_textcraft_grpo",
+  "slug": "yuechenyang-scottyrl-a3-p5_textcraft_grpo",
+  "author": "YuechenYang",
+  "url": "https://huggingface.co/YuechenYang/scottyrl-a3-p5_textcraft_grpo",
+  "created_at": "2026-10-09T21:42:52.000Z",
+  "updated_at": "2026-10-09T21:43:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tinker",
+    "lora",
+    "scottyrl",
+    "11-768",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169907128,
+  "storage_human": "170 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

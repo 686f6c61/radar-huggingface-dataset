@@ -5,7 +5,7 @@
   "author": "AlexeyNe",
   "url": "https://huggingface.co/AlexeyNe/supertonic-3-android-onnx",
   "created_at": "2026-10-08T19:54:39.000Z",
-  "updated_at": "2026-10-08T19:54:49.000Z",
+  "updated_at": "2026-10-09T15:24:20.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 139710325,
-  "storage_human": "140 MB",
+  "storage_bytes": 220159449,
+  "storage_human": "220 MB",
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "onnx"

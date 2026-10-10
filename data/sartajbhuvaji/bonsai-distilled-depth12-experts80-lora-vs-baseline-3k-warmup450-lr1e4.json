@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4",
+  "slug": "sartajbhuvaji-bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-depth12-experts80-lora-vs-baseline-3k-warmup450-lr1e4",
+  "created_at": "2026-10-09T23:18:59.000Z",
+  "updated_at": "2026-10-09T23:19:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9459231744,
+  "parameters_human": "9.46B",
+  "storage_bytes": 18930571309,
+  "storage_human": "18.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bonsai-distilled-depth12-experts80-vs-baseline-3k-warmup450-lr1e4",
+      "url": "https://friendli.ai/models/sartajbhuvaji/bonsai-distilled-depth12-experts80-vs-baseline-3k-warmup450-lr1e4",
+      "snippet": "Deploy bonsai-distilled-depth12-experts80-vs-baseline-3k-warmup450-lr1e4 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline · Hugging Face",
+      "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline",
+      "snippet": "Knowledge-distilled student checkpoint from Phase 4 of bonsai: the pruned aggressive depth+experts MoE (~8.5B parameters) trained to match Qwen/Qwen3-30B-A3B-Base on a fixed top-k logit cache (baseline teacher arm of the teacher-correction ablation)."
+    },
+    {
+      "title": "bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4",
+      "url": "https://huggingface.co/sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4",
+      "snippet": "Instructions to use sartajbhuvaji/bonsai-distilled-aggressive-vs-baseline-3k-warmup450-lr1e4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "SartajBhuvaji (Sartaj Bhuvaji) · GitHub",
+      "url": "https://github.com/SartajBhuvaji",
+      "snippet": "Software Engineer, Machine Learning. SartajBhuvaji has 30 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "‪Sartaj Bhuvaji‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=SAu33LIAAAAJ&hl=en",
+      "snippet": "‪Software Engineer, Machine Learning @DigitalOcean‬ - ‪‪Cited by 580‬‬ - ‪Artificial Intelligence‬ - ‪Machine Learning‬"
+    }
+  ]
+}

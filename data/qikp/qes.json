@@ -5,7 +5,7 @@
   "author": "qikp",
   "url": "https://huggingface.co/qikp/qes",
   "created_at": "2026-10-08T19:53:38.000Z",
-  "updated_at": "2026-10-08T20:14:46.000Z",
+  "updated_at": "2026-10-09T17:58:38.000Z",
   "license": "cc0-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 4,
   "trending_score": 0,
   "parameters": 14350561,
   "parameters_human": "14.4M",

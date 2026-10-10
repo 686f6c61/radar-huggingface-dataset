@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "laion/Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r64",
+  "slug": "laion-alexandria-gemma-4-12b-it-ornith9-summaries-lora-r64",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Ornith9-Summaries-LoRA-r64",
+  "created_at": "2026-10-09T23:24:41.000Z",
+  "updated_at": "2026-10-09T23:24:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "project-alexandria",
+    "lora",
+    "gemma4_unified",
+    "scientific-knowledge",
+    "knowledge-extraction",
+    "arxiv:2502.19413",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:ChristophSchuhmann/scientific-summary-distillation-Ornith-1.5-9B-736-20261004",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1124213889,
+  "storage_human": "1.1 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Scientific summaries assessed by fixed QA",
+      "dataset": "Alexandria held-out 97 papers / 970 MCQs",
+      "metric": "Fixed Qwen2.5 QA accuracy (%)",
+      "value": 90.10309278350516
+    }
+  ],
+  "sources": []
+}

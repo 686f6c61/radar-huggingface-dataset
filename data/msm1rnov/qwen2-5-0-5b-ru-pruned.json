@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "msm1rnov/qwen2.5-0.5b-ru-pruned",
+  "slug": "msm1rnov-qwen2-5-0-5b-ru-pruned",
+  "author": "msm1rnov",
+  "url": "https://huggingface.co/msm1rnov/qwen2.5-0.5b-ru-pruned",
+  "created_at": "2026-10-09T20:03:55.000Z",
+  "updated_at": "2026-10-09T20:06:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "vocabulary-pruning",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 368449408,
+  "parameters_human": "368.4M",
+  "storage_bytes": 736931048,
+  "storage_human": "737 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

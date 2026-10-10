@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "WafaaFraih/s2-qwen3vl4b-vqarad-seed0",
+  "slug": "wafaafraih-s2-qwen3vl4b-vqarad-seed0",
+  "author": "WafaaFraih",
+  "url": "https://huggingface.co/WafaaFraih/s2-qwen3vl4b-vqarad-seed0",
+  "created_at": "2026-10-09T21:28:39.000Z",
+  "updated_at": "2026-10-10T01:24:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "unsloth",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2010441384,
+  "storage_human": "2.0 GB",
+  "base_model": "unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assembler 3 .bin/.cue en 1 .iso ! [Résolu] - Forum Image ISO",
+      "url": "https://forums.commentcamarche.net/forum/affich-24464400-assembler-3-bin-cue-en-1-iso",
+      "snippet": "Bonsoir, j'ai un problème, j'ai 3 fichiers .bin et .cue et j'aimerai les assembler pour créer un fichier en .iso, mais je ne sais pas trop …"
+    },
+    {
+      "title": "Problem clavier : pas de point d'interogation",
+      "url": "https://forums.commentcamarche.net/forum/affich-3359511-problem-clavier-pas-de-point-d-interogation",
+      "snippet": "Sous linux tu doit être super utilisateur pour effectuer tes tache d'administration. Le super utilisateur c'est en quelque sorte …"
+    },
+    {
+      "title": "pc du lycée//help sur le forum Blabla 15-18 ans - 21-10-2020 10:50:44 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-50-64550980-1-0-1-0-pc-du-lycee-help.htm",
+      "snippet": "Oct 21, 2020 · ah je trouve pas sur ytb, j'ai vu que faut faire \"executer en tant qu'administrateur\" mais ca fonctionne toujours pas.."
+    },
+    {
+      "title": "Conseils pour devenir plus fort? sur le forum Age of Empires III ...",
+      "url": "https://www.jeuxvideo.com/forums/42-3019284-64615264-1-0-1-0-conseils-pour-devenir-plus-fort.htm",
+      "snippet": "Oct 23, 2020 · Accueil Age of Empires III : Definitive Edition Tous les forums Forum Age of Empires III : Definitive Edition Topic …"
+    },
+    {
+      "title": "Télécharger logiciel Amadeus [Résolu] - Téléchargement",
+      "url": "https://forums.commentcamarche.net/forum/affich-33671517-telecharger-logiciel-amadeus",
+      "snippet": "Bonjour, Ou puis je trouver gratuitement le Logiciel Amadeus Ou le simulateur"
+    }
+  ]
+}

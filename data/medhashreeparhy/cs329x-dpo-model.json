@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "medhashreeparhy/cs329x-dpo-model",
+  "slug": "medhashreeparhy-cs329x-dpo-model",
+  "author": "medhashreeparhy",
+  "url": "https://huggingface.co/medhashreeparhy/cs329x-dpo-model",
+  "created_at": "2026-10-09T20:44:41.000Z",
+  "updated_at": "2026-10-09T20:44:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20626184,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aliu917/cs329x-dpo-model · Hugging Face",
+      "url": "https://huggingface.co/aliu917/cs329x-dpo-model",
+      "snippet": "Recommendations Users (both direct and downstream) should be made aware of the risks, biases and limitations of the model. More information needed for further recommendations."
+    },
+    {
+      "title": "pawanwira/cs-329x-dpo · Hugging Face",
+      "url": "https://huggingface.co/pawanwira/cs-329x-dpo",
+      "snippet": "This model is not currently available via any of the supported Inference Providers. The model cannot be deployed to the HF Inference API: The model has no pipeline_tag."
+    },
+    {
+      "title": "meiflwr/cs329x-prism-dpo - Fast, Reliable, and Scalable Inference on ...",
+      "url": "https://friendli.ai/models/meiflwr/cs329x-prism-dpo",
+      "snippet": "Run meiflwr/cs329x-prism-dpo with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Stanford CS 329X | Human-Centered LLMs",
+      "url": "https://web.stanford.edu/class/cs329x/index.html",
+      "snippet": "Topics include human-centered design, alignment, preference tuning, personalization, UI and HCI integration, techniques for privacy and risk measurement, as well as applications in creativity and future of work."
+    },
+    {
+      "title": "PDF CS 329X: Human Centered LLMs The Ultimate Crash into LLMs & RLHF + DPO",
+      "url": "https://web.stanford.edu/class/cs329x/slides/s3_combined.pdf",
+      "snippet": "Optimizing for Human Preferences Let&#x27;s say we were training a language model on some task (e.g. summarization). For each LM sample , imagine we had a way to obtain a human reward of that summary: ∈ R, higher is better. Now we want to maximize the expected reward of samples from our LM:"
+    }
+  ]
+}

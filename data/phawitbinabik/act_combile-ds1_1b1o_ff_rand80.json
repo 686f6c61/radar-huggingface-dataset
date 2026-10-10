@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "phawitbinabik/act_COMBILE-DS1_1B1O_FF_rand80",
+  "slug": "phawitbinabik-act_combile-ds1_1b1o_ff_rand80",
+  "author": "phawitbinabik",
+  "url": "https://huggingface.co/phawitbinabik/act_COMBILE-DS1_1B1O_FF_rand80",
+  "created_at": "2026-10-09T19:57:19.000Z",
+  "updated_at": "2026-10-09T19:57:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:phawitbinabik/COMBILE-DS1_1B1O_FF_rand80",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714760,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spicychat: NSFW AI Chatbots and Roleplay for Adults",
+      "url": "https://spicychat.ai/",
+      "snippet": "Indulge in uncensored roleplay with our AI chatbots. Explore your fantasies with our NSFW characters, designed for adults 18+."
+    },
+    {
+      "title": "SpicyChat",
+      "url": "https://spicychat.ai/recommended-bots",
+      "snippet": "Discover SpicyChat's recommended AI chatbot characters and explore engaging, personalized conversations tailored to your interests."
+    },
+    {
+      "title": "All Your Interactive AI Chats | Spicychat",
+      "url": "https://spicychat.ai/chats",
+      "snippet": "View and manage all your existing AI chat conversations in one location. Access your chats anytime to jump back in to chatting with …"
+    },
+    {
+      "title": "login.title - Spicychat Login",
+      "url": "https://spicychat.ai/login",
+      "snippet": "Spicychat Login Enter your email, and we'll send a code to your inbox. No need for passwords — like magic!"
+    },
+    {
+      "title": "SpicyChat AI | Free Uncensored AI Roleplay Chat With 1M",
+      "url": "https://spicychat.ai/pages/free-ai-roleplay-chat",
+      "snippet": "Explore 1M+ AI chatbots and create your own for free. No filters, no limits - dive into uncensored AI roleplay conversations that never …"
+    }
+  ]
+}

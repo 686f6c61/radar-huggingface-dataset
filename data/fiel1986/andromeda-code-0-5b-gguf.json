@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "fiel1986/Andromeda-Code-0.5B-GGUF",
+  "slug": "fiel1986-andromeda-code-0-5b-gguf",
+  "author": "fiel1986",
+  "url": "https://huggingface.co/fiel1986/Andromeda-Code-0.5B-GGUF",
+  "created_at": "2026-10-09T19:23:01.000Z",
+  "updated_at": "2026-10-09T20:40:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "codigo",
+    "code",
+    "q4_k_m",
+    "destilacion",
+    "deepseek",
+    "qwen",
+    "text-generation",
+    "es",
+    "en",
+    "base_model:fiel1986/Andromeda-Code-0.5B",
+    "base_model:quantized:fiel1986/Andromeda-Code-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807616,
+  "storage_human": "398 MB",
+  "base_model": "fiel1986/Andromeda-Code-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

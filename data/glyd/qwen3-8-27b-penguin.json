@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "glyd/Qwen3.8-27B-penguin",
+  "slug": "glyd-qwen3-8-27b-penguin",
+  "author": "glyd",
+  "url": "https://huggingface.co/glyd/Qwen3.8-27B-penguin",
+  "created_at": "2026-10-09T19:45:06.000Z",
+  "updated_at": "2026-10-10T00:18:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "glyd",
+  "languages": [],
+  "tags": [
+    "glyd",
+    "safetensors",
+    "qwen3_5",
+    "penguin",
+    "lossless",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35642959414,
+  "parameters_human": "35.64B",
+  "storage_bytes": 37028559905,
+  "storage_human": "37.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toomics - Des webcomics à lire en illimité",
+      "url": "https://global.toomics.com/fr/index/fr/",
+      "snippet": "TEn utilisant les cookies, Toomics optimise l'expérience des lecteurs et propose des publicités en fonction de leurs intérêts. Nous …"
+    },
+    {
+      "title": "Toomics - Genres",
+      "url": "https://global.toomics.com/en/webtoon/ranking",
+      "snippet": "Genres - TOOMICS can offer you amazing new comics to enjoy!"
+    },
+    {
+      "title": "Toomics - Nuit Écrasante",
+      "url": "https://www.toomics.fr/fr/webtoon/episode/toon/7764",
+      "snippet": "Nuit Écrasante Fin Drama · Romance ⓒ RIVER JIN / BAMYANGGOOM · KANGTO · RIVER JIN / BAMYANGGOOM / KANGTO / …"
+    },
+    {
+      "title": "Toomics - Stupidémie",
+      "url": "https://www.toomics.fr/fr/webtoon/episode/toon/7532",
+      "snippet": "Stupidémie - Un virus réduisant les capacités cérébralesdes infectés se propage dans une usine rurale.Mais Daeho y trouve un …"
+    },
+    {
+      "title": "Toomics - Heart Level",
+      "url": "https://toomics.com/en/webtoon/episode/toon/7932",
+      "snippet": "Heart Level - Tired of the city, I moved to the countryside for a quiet life. But now... everyone I see has a number on their chest!"
+    }
+  ]
+}

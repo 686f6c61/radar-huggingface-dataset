@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/InnoSpark3.1-27B-1008-i1-GGUF",
+  "slug": "mradermacher-innospark3-1-27b-1008-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/InnoSpark3.1-27B-1008-i1-GGUF",
+  "created_at": "2026-10-09T23:24:03.000Z",
+  "updated_at": "2026-10-10T00:44:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "education",
+    "tutoring",
+    "qwen",
+    "reinforcement-learning",
+    "zh",
+    "en",
+    "base_model:sii-research/InnoSpark3.1-27B-1008",
+    "base_model:quantized:sii-research/InnoSpark3.1-27B-1008",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471869248,
+  "storage_human": "39.5 GB",
+  "base_model": "sii-research/InnoSpark3.1-27B-1008",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Start Your Blue Lock Career Codes (October 2026) [MAJOR …",
+      "url": "https://progameguides.com/roblox/start-your-blue-lock-career-codes/",
+      "snippet": "2 days ago · As of October 8, 2026, there are 11 active Start Your Blue Lock Career codes to jumpstart your striker journey. While …"
+    },
+    {
+      "title": "Start Your Blue Lock Career Codes October 2026 - gamevoyant.com",
+      "url": "https://gamevoyant.com/codes/start-your-blue-lock-career-codes",
+      "snippet": "Oct 1, 2026 · Get all active Start Your Blue Lock Career codes. Redeem these gift codes for free in-game rewards, gems and items …"
+    },
+    {
+      "title": "[MAJOR UPDATE] Start Your Blue Lock Career Codes (October 2026)",
+      "url": "https://gamestratwiki.com/start-your-blue-lock-career-codes/",
+      "snippet": "3 days ago · Start Your Blue Lock Career Codes (October 2026) provide essential boosts to elevate your performance. Bookmark …"
+    },
+    {
+      "title": "Start Your Blue Lock Career Codes (October 2026)",
+      "url": "https://urgametips.com/start-your-blue-lock-career-codes/",
+      "snippet": "Start Your Blue Lock Career codes, Settings redemption steps, career tips and troubleshooting for the Roblox soccer game."
+    },
+    {
+      "title": "Start Your Blue Lock Career codes (October 2026) - Destructoid",
+      "url": "https://www.destructoid.com/start-your-blue-lock-career-codes/",
+      "snippet": "2 days ago · Redeem the latest Start Your Blue Lock Career codes to boost your player. Spin for new flows and weapons. Come …"
+    }
+  ]
+}

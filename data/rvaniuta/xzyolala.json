@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "rvaniuta/xzyolala",
+  "slug": "rvaniuta-xzyolala",
+  "author": "rvaniuta",
+  "url": "https://huggingface.co/rvaniuta/xzyolala",
+  "created_at": "2026-10-09T20:56:32.000Z",
+  "updated_at": "2026-10-09T21:31:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778094578,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-10T02:38:07.295Z",
+  "benchmarks": [],
+  "sources": []
+}

@@ -36,6 +36,7 @@
     "base_model:Qwen/Qwen3-8B",
     "base_model:finetune:Qwen/Qwen3-8B",
     "license:apache-2.0",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

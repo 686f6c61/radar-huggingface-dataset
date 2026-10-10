@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "httpemilly/xplica-bertimbau",
+  "slug": "httpemilly-xplica-bertimbau",
+  "author": "httpemilly",
+  "url": "https://huggingface.co/httpemilly/xplica-bertimbau",
+  "created_at": "2026-10-09T22:11:46.000Z",
+  "updated_at": "2026-10-09T22:12:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435722224,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

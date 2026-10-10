@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-qwen38-27b-health_cigarette_crossed_68_tinker_native",
+  "slug": "butanium-wp-qwen38-27b-health_cigarette_crossed_68_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-qwen38-27b-health_cigarette_crossed_68_tinker_native",
+  "created_at": "2026-10-09T21:12:54.000Z",
+  "updated_at": "2026-10-09T21:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "qwen3.8",
+    "character-training",
+    "weird-personas",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965809824,
+  "storage_human": "966 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

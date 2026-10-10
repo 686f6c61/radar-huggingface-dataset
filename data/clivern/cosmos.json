@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "clivern/cosmos",
+  "slug": "clivern-cosmos",
+  "author": "clivern",
+  "url": "https://huggingface.co/clivern/cosmos",
+  "created_at": "2026-10-09T22:44:58.000Z",
+  "updated_at": "2026-10-09T22:45:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "from-scratch",
+    "en",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5273088,
+  "parameters_human": "5.3M",
+  "storage_bytes": 21097456,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

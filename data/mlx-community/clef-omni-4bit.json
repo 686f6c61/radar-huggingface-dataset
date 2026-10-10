@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mlx-community/clef-omni-4bit",
+  "slug": "mlx-community-clef-omni-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/clef-omni-4bit",
+  "created_at": "2026-10-09T19:23:49.000Z",
+  "updated_at": "2026-10-09T19:27:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_omni_moe",
+    "clef",
+    "cloudflare",
+    "systemone",
+    "structured-output",
+    "classification",
+    "multimodal",
+    "audio",
+    "video",
+    "custom-code",
+    "decision-model",
+    "zero-shot-classification",
+    "base_model:Cloudflare/clef-omni",
+    "base_model:quantized:Cloudflare/clef-omni",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31719205488,
+  "parameters_human": "31.72B",
+  "storage_bytes": 19784411709,
+  "storage_human": "19.8 GB",
+  "base_model": "Cloudflare/clef-omni",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ml-explore/mlx: MLX: An array framework for Apple …",
+      "url": "https://github.com/ml-explore/mlx",
+      "snippet": "MLX is an array framework for machine learning on Apple silicon, brought to you by Apple machine learning research. Some key …"
+    },
+    {
+      "title": "MLX",
+      "url": "https://mlx-framework.org/",
+      "snippet": "MLX Whisper - a Python package for speech transcription using OpenAI’s Whisper models. MLX Examples - standalone examples in …"
+    },
+    {
+      "title": "Apple Open Source",
+      "url": "https://opensource.apple.com/projects/mlx/",
+      "snippet": "apple Project MLX About MLX is an array framework designed for efficient and flexible machine learning research on Apple silicon. …"
+    },
+    {
+      "title": "MLX Studio — Local AI on Your Mac | Chat, Code, Images",
+      "url": "https://mlx.studio/",
+      "snippet": "How is MLX Studio different from the vMLX engine? MLX Studio is the app — the chat UI, agentic tools, model browser and settings. …"
+    },
+    {
+      "title": "Exploring LLMs with MLX and the Neural Accelerators in the …",
+      "url": "https://machinelearning.apple.com/research/exploring-llms-mlx-m5",
+      "snippet": "Nov 19, 2025 · MLX is an open source array framework that is efficient, flexible, and highly tuned for Apple silicon. You can use MLX …"
+    }
+  ]
+}

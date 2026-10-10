@@ -5,7 +5,7 @@
   "author": "vishvananda",
   "url": "https://huggingface.co/vishvananda/mtg-oracle-qwen3-4b-checkpoints-20261007",
   "created_at": "2026-10-07T23:22:14.000Z",
-  "updated_at": "2026-10-09T01:58:14.000Z",
+  "updated_at": "2026-10-09T03:45:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,7 +24,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 49,
+  "downloads_30d": 329,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

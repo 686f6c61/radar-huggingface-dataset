@@ -5,7 +5,7 @@
   "author": "xf15",
   "url": "https://huggingface.co/xf15/ssd-dspark-prog-qwen3-30b-a3b-gap4-tail1",
   "created_at": "2026-10-01T01:08:31.000Z",
-  "updated_at": "2026-10-01T01:09:57.000Z",
+  "updated_at": "2026-10-09T13:47:09.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,8 +20,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 36712889750,
-  "storage_human": "36.7 GB",
+  "storage_bytes": 73307955292,
+  "storage_human": "73.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

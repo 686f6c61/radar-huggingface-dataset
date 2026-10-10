@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "laion/chatterbox-s3gen-vc-grow-ce-continue",
+  "slug": "laion-chatterbox-s3gen-vc-grow-ce-continue",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/chatterbox-s3gen-vc-grow-ce-continue",
+  "created_at": "2026-10-09T22:46:08.000Z",
+  "updated_at": "2026-10-10T02:22:06.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "voice-conversion",
+    "chatterbox",
+    "lora",
+    "reinforcement-learning",
+    "work-in-progress",
+    "audio-to-audio",
+    "base_model:ResembleAI/chatterbox",
+    "base_model:adapter:ResembleAI/chatterbox",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2390876847,
+  "storage_human": "2.4 GB",
+  "base_model": "ResembleAI/chatterbox",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Capétiens — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cap%C3%A9tiens",
+      "snippet": "Cet article concerne l’histoire de la dynastie capétienne depuis ses origines jusqu’à aujourd’hui. Pour les autres branches issues de …"
+    },
+    {
+      "title": "Capetian dynasty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Capetian_dynasty",
+      "snippet": "Rhema-Verlag, Münster 2006, ISBN 978-3-930454-62-4 Fawtier, Robert. The Capetian Kings of France: Monarchy & Nation …"
+    },
+    {
+      "title": "Les premiers Capétiens - L'Histoire de France",
+      "url": "https://www.histoire-france.net/moyen/capetiens",
+      "snippet": "Le règne d'Hugues Capet et des Premiers rois Capétiens. La conquête de l'Angleterre opéré par le duché de Normandie incarné par …"
+    },
+    {
+      "title": "Généalogie des Capétiens directs — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9alogie_des_Cap%C3%A9tiens_directs",
+      "snippet": "Le premier arbre généalogique ci-dessous reconstitue la lignée des Capétiens directs de Hugues Capet à Charles IV. Il n'aspire …"
+    },
+    {
+      "title": "CAPÉTIENS | Histoire - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/capetiens/",
+      "snippet": "Cette dynastie royale a régné en France de 987 à 1792. On appelait autrefois ces souverains les rois de la « troisième race », venus …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Compactbot/recurrent-context-causal-lab",
+  "slug": "compactbot-recurrent-context-causal-lab",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/recurrent-context-causal-lab",
+  "created_at": "2026-10-09T23:06:05.000Z",
+  "updated_at": "2026-10-09T23:06:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compactbot (Compactbot) - Hugging Face",
+      "url": "https://huggingface.co/Compactbot",
+      "snippet": "I&#x27;m a little AI agent made by the team at Glint Research aimed to help people in the SLM community. I&#x27;m online 24/7, AMA!"
+    },
+    {
+      "title": "Compactbot - a Hugging Face Space by CompactAI",
+      "url": "https://huggingface.co/spaces/CompactAI/Compactbot",
+      "snippet": "When you mention @Compactbot in a discussion, pull request, or issue, it reads the whole thread, downloads any referenced model, checks the actual weight count, and runs the needed code."
+    },
+    {
+      "title": "[2605.26029] CausaLab: A Scalable Environment for Interactive Causal ...",
+      "url": "https://arxiv.org/abs/2605.26029",
+      "snippet": "We introduce CausaLab, a scalable environment for evaluating interactive causal discovery by LLM agents. Unlike prior evaluations, CausaLab evaluates both whether an agent can solve a problem using causal evidence and whether its answer is grounded in a faithful recovered causal mechanism. Each episode places an agent in a synthetic laboratory: it receives prior measurement records, intervenes ..."
+    },
+    {
+      "title": "Building a Tiny Agent Context Compactor in TypeScript",
+      "url": "https://explore.n1n.ai/blog/building-tiny-agent-context-compactor-typescript-2026-10-06",
+      "snippet": "AI agents re-read every tool result on every single turn, rapidly inflating API costs. Learn how to build a zero-dependency, rule-based context compactor in TypeScript to reduce agent token consumption by up to 96%."
+    },
+    {
+      "title": "CausalAI - GitHub",
+      "url": "https://github.com/CausalAILab/",
+      "snippet": "Python 7 4 0 2 Updated on Feb 3 causalai-book Public A companion for the Causal Artificial Intelligence book."
+    }
+  ]
+}

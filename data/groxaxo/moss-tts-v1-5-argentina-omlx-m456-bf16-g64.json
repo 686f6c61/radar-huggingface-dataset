@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-m456-BF16-G64",
+  "slug": "groxaxo-moss-tts-v1-5-argentina-omlx-m456-bf16-g64",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-oMLX-m456-BF16-G64",
+  "created_at": "2026-10-09T19:19:14.000Z",
+  "updated_at": "2026-10-09T19:19:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "moss_tts_delay",
+    "mlx",
+    "apple-silicon",
+    "quantized",
+    "lora",
+    "spanish",
+    "argentina",
+    "omlx",
+    "text-to-speech",
+    "custom_code",
+    "es",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "base_model:quantized:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-10T02:39:16.880Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Locations Appartement - leboncoin",
+      "url": "https://www.leboncoin.fr/c/locations/real_estate_type:2",
+      "snippet": "Consultez nos annonces immos de locations Appartement sur leboncoin.Read more"
+    },
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Authentification - services.pro-immobilier.leboncoin.fr",
+      "url": "https://services.pro-immobilier.leboncoin.fr/auth",
+      "snippet": "Conditions générales d’utilisation Conditions générales de vente Vie privée / cookies Vos droits et obligations Critères de classement …"
+    },
+    {
+      "title": "Finistère (29) - leboncoin",
+      "url": "https://www.leboncoin.fr/l/dp_finistere",
+      "snippet": "Toutes nos annonces gratuites Finistère (29). Consultez nos 1235930 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/messages",
+      "snippet": "Accédez à vos messages sur leboncoin pour gérer vos échanges avec les acheteurs et vendeurs."
+    }
+  ]
+}

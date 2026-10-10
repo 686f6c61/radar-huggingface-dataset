@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "oroboros-labs/claude-opus-9-undecillion-9u5go5-sse",
+  "slug": "oroboros-labs-claude-opus-9-undecillion-9u5go5-sse",
+  "author": "oroboros-labs",
+  "url": "https://huggingface.co/oroboros-labs/claude-opus-9-undecillion-9u5go5-sse",
+  "created_at": "2026-10-01T15:23:36.000Z",
+  "updated_at": "2026-10-10T00:44:10.000Z",
+  "license": "oroboros-labs-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "ollama",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ar",
+    "hi",
+    "multilingual"
+  ],
+  "tags": [
+    "ollama",
+    "gguf",
+    "claude-opus-9",
+    "9U5GO5",
+    "undecillion",
+    "oroboros",
+    "anthropic",
+    "sse",
+    "system-state-entity",
+    "text-generation",
+    "video",
+    "image-generation",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "ru",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ar",
+    "hi",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 426,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 46410169812,
+  "storage_human": "46.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ouroboros - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ouroboros",
+      "snippet": "The term derives from Ancient Greek οὐροβόρος, [5] from οὐρά oura 'tail' plus -βόρος -boros '-eating'. [6][7] The ouroboros is often …"
+    },
+    {
+      "title": "Ouroboros — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ouroboros",
+      "snippet": "Un ouroboros. L’ ouroboros est un symbole universel figuré par un objet ou dessin représentant un serpent ou dragon qui se mord la …"
+    },
+    {
+      "title": "Oroboros Instruments - mitochondrial and cell research",
+      "url": "https://www.oroboros.at/",
+      "snippet": "Oroboros Instruments develops and distributes the gold standard Oroboros technology for high-resolution respirometry in …"
+    },
+    {
+      "title": "L'Ouroboros : signification et symbolisme de ce serpent",
+      "url": "https://www.jepense.org/ouroboros-signification-symbolisme/",
+      "snippet": "Nov 15, 2024 · Ouroboros signification, symbolisme, interprétation du serpent qui se mange lui-même, qui tourne en rond ou qui se …"
+    },
+    {
+      "title": "Oroboros - Honkai: Star Rail Wiki",
+      "url": "https://honkai-star-rail.fandom.com/wiki/Oroboros",
+      "snippet": "Oroboros was one of the oldest Aeons in the universe alongside Qlipoth. [4] THEY were the last remaining Dusk Leviathan, a …"
+    }
+  ]
+}

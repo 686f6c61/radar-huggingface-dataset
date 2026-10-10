@@ -5,7 +5,7 @@
   "author": "jalenluorion",
   "url": "https://huggingface.co/jalenluorion/Qwen3-30B-A3B-moved-store",
   "created_at": "2026-10-06T17:32:26.000Z",
-  "updated_at": "2026-10-08T22:45:17.000Z",
+  "updated_at": "2026-10-09T14:18:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

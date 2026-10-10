@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "laion/Alexandria-Gemma-4-12B-it-Qwen27-Knowledge-Units-LoRA-r128",
+  "slug": "laion-alexandria-gemma-4-12b-it-qwen27-knowledge-units-lora-r128",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Knowledge-Units-LoRA-r128",
+  "created_at": "2026-10-09T23:25:22.000Z",
+  "updated_at": "2026-10-09T23:25:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "project-alexandria",
+    "lora",
+    "gemma4_unified",
+    "scientific-knowledge",
+    "knowledge-extraction",
+    "arxiv:2502.19413",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2133964828,
+  "storage_human": "2.1 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Knowledge Unit generation assessed by fixed QA",
+      "dataset": "Alexandria disjoint 20 papers / 200 MCQs, 500-word extraction",
+      "metric": "Fixed Qwen2.5 QA accuracy (%)",
+      "value": 88.5
+    },
+    {
+      "task": "Knowledge Unit generation assessed by fixed QA",
+      "dataset": "Alexandria disjoint 20 papers / 200 MCQs, 1000-word extraction",
+      "metric": "Fixed Qwen2.5 QA accuracy (%)",
+      "value": 85
+    }
+  ],
+  "sources": []
+}

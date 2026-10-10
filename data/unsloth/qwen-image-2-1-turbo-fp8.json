@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen-Image-2.1-Turbo-FP8",
+  "slug": "unsloth-qwen-image-2-1-turbo-fp8",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen-Image-2.1-Turbo-FP8",
+  "created_at": "2026-10-10T00:42:53.000Z",
+  "updated_at": "2026-10-10T00:43:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "fp8",
+    "int8",
+    "unsloth",
+    "quantized",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:finetune:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21645152528,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware.Read more"
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Image-Text-to-Text • 177B • Updated Sep 2 • 1.4M • 1.11k Text Generation • 321B • Updated 28 days ago • 1.06M • 447 Text …"
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Unsloth Studio lets LLMs run Bash and Python, not just JavaScript with bypass permissions. It also sandboxes programs like Claude …"
+    },
+    {
+      "title": "Unsloth AI - GitHub",
+      "url": "https://github.com/unslothai",
+      "snippet": "Run and train AI models locally. 🦥. Unsloth AI has 12 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

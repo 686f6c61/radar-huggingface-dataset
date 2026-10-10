@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "glyd/Qwen3.6-27B-swift",
+  "slug": "glyd-qwen3-6-27b-swift",
+  "author": "glyd",
+  "url": "https://huggingface.co/glyd/Qwen3.6-27B-swift",
+  "created_at": "2026-10-09T22:06:00.000Z",
+  "updated_at": "2026-10-10T00:27:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "glyd",
+  "languages": [],
+  "tags": [
+    "glyd",
+    "safetensors",
+    "qwen3_5",
+    "swift",
+    "lossy",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18525438770,
+  "parameters_human": "18.53B",
+  "storage_bytes": 18643364150,
+  "storage_human": "18.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cheriya vishesham - YouTube",
+      "url": "https://m.youtube.com/watch?v=-s-sypq2A-Q",
+      "snippet": "Oct 23, 2024 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Cheriya cameraman:dailyvlog #shortsfeed #dailyvideo #minivlog …",
+      "url": "https://m.youtube.com/watch?v=YLTfDcSLGPE",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Pooorunoooo….. (@cheriya.setup) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cheriya.setup/",
+      "snippet": "172 Followers, 3 Following, 73 Posts - Pooorunoooo….. (@cheriya.setup) on Instagram: \"\""
+    },
+    {
+      "title": "ᴄʜᴇʀɪʏᴀ (@ccheriya_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ccheriya_/reels/",
+      "snippet": "54K Followers, 600 Following, 2,091 Posts - ᴄʜᴇʀɪʏᴀ 🍒 (@ccheriya_) on Instagram: \"The face thailand SS2 🧸🧣💫🪐🌻 • @cheri.storee • …"
+    },
+    {
+      "title": "cheriya ;) (@cheriyaadeannee) | TikTok",
+      "url": "https://www.tiktok.com/@cheriyaadeannee",
+      "snippet": "cheriya ;) (@cheriyaadeannee) on TikTok | 5526 Likes. 261 Followers. 🧚🏽‍♀️🌞👸🏽💝 17.Watch the latest video from cheriya ;) …"
+    }
+  ]
+}

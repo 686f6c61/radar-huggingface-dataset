@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "Medyassino/devSECV2",
+  "slug": "medyassino-devsecv2",
+  "author": "Medyassino",
+  "url": "https://huggingface.co/Medyassino/devSECV2",
+  "created_at": "2026-10-09T22:15:04.000Z",
+  "updated_at": "2026-10-09T22:31:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "devsecops",
+    "cybersecurity",
+    "fine-tuned",
+    "fr",
+    "en",
+    "base_model:Medyassino/secopv2",
+    "base_model:finetune:Medyassino/secopv2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598444985,
+  "storage_human": "598 MB",
+  "base_model": "Medyassino/secopv2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Classification binaire (Différent / Équivalent)",
+      "dataset": null,
+      "metric": null,
+      "value": 0.9035
+    },
+    {
+      "task": "Classification binaire (Différent / Équivalent)",
+      "dataset": null,
+      "metric": "F1 macro",
+      "value": 0.9019
+    }
+  ],
+  "sources": [
+    {
+      "title": "Freya Parker - Model page - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/models/freya-parker",
+      "snippet": "VIXEN Freya & her boss mix business & pleasure on work trip 12 min PURE TABOO Freya Parker Tricks Stepsister's Secret Lover …"
+    },
+    {
+      "title": "Fraya Taylor Teasing Pussy - Thothub",
+      "url": "https://www.thothub.is/videos/770531/fraya-taylor-teasing-pussy/",
+      "snippet": "Thothub is the home of daily free leaked nudes from the hottest female Twitch, YouTube, Patreon, Instagram, OnlyFans, TikTok …"
+    },
+    {
+      "title": "Freya Parker Porn Videos - Verified Pornstar Profile | Pornhub",
+      "url": "https://www.pornhub.com/pornstar/freya-parker",
+      "snippet": "Check out the best porn videos, images, gifs and playlists from pornstar Freya Parker. Browse through the content she uploaded …"
+    },
+    {
+      "title": "freya_taylor recordings on #1 Webcam Archive – Recurbate",
+      "url": "https://recu.me/performer/freya_taylor",
+      "snippet": "Oct 2, 2022 · freya_taylor recordings from Chaturbate. Explore the biggest Chaturbate archive - Recurbate, enjoy the access to a …"
+    },
+    {
+      "title": "PropertySex - It's Our First Time (Freya Parker, Scarlett Alexis)",
+      "url": "https://www.tnaflix.com/amateur-porn/PropertySex-It39%3Bs-Our-First-Time/video10970711",
+      "snippet": "Watch PropertySex - It's Our First Time on now! - Wife, Realtor, Athletic Porn These newlyweds are really excited for their first time …"
+    }
+  ]
+}

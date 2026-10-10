@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "pfpdostudent/deit-tiny-cifar10-lab",
+  "slug": "pfpdostudent-deit-tiny-cifar10-lab",
+  "author": "pfpdostudent",
+  "url": "https://huggingface.co/pfpdostudent/deit-tiny-cifar10-lab",
+  "created_at": "2026-10-09T22:10:06.000Z",
+  "updated_at": "2026-10-09T22:10:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "dataset:cifar10",
+    "base_model:facebook/deit-tiny-patch16-224",
+    "base_model:finetune:facebook/deit-tiny-patch16-224",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5526346,
+  "parameters_human": "5.5M",
+  "storage_bytes": 22128104,
+  "storage_human": "22 MB",
+  "base_model": "facebook/deit-tiny-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

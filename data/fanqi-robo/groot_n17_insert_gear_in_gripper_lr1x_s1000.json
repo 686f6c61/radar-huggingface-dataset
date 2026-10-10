@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fanqi-robo/groot_n17_insert_gear_in_gripper_lr1x_s1000",
+  "slug": "fanqi-robo-groot_n17_insert_gear_in_gripper_lr1x_s1000",
+  "author": "fanqi-robo",
+  "url": "https://huggingface.co/fanqi-robo/groot_n17_insert_gear_in_gripper_lr1x_s1000",
+  "created_at": "2026-10-09T23:12:02.000Z",
+  "updated_at": "2026-10-09T23:12:44.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "insert_gear_in_gripper",
+    "dataset:fanqi-robo/insert_gear_in_gripper",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 25152441432,
+  "storage_human": "25.2 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fanqi-robo/insert_gear_in_gripper · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/fanqi-robo/insert_gear_in_gripper",
+      "snippet": "LeRobot v3 dataset with 50 bimanual YAM episodes at 20 FPS. Task: Insert a gear into the parallel gripper. Training episodes remaining after the low-quality and validation holdouts. Merged from insert_gear_in_gripper_1, _2, and _3. Episode metadata records source_repo_id and source_episode_index."
+    },
+    {
+      "title": "Abhiram824/Isaac-GR00T-n17: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/Abhiram824/Isaac-GR00T-n17",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "eval_insert_gear_in_gripper_10h52m_05-oct-2026 - Hugging Face",
+      "url": "https://huggingface.co/datasets/fanqi-robo/eval_insert_gear_in_gripper_10h52m_05-oct-2026",
+      "snippet": "This dataset was created using LeRobot. meta/info.json: \"codebase_version\": \"v3.0\", \"robot_type\": \"lerobot/bimanual_yam\", \"total_episodes\": 3, \"total_frames\": 2328, \"total_tasks\": 1, \"chunks_size\": 1000, \"data_files_size_in_mb\": 100, \"video_files_size_in_mb\": 200, \"fps\": 20, \"splits\": { \"train\": \"0:3\" },"
+    },
+    {
+      "title": "NVIDIA/Isaac-GR00T: NVIDIA Isaac GR00T N1.7 - GitHub",
+      "url": "https://github.com/NVIDIA/Isaac-GR00T",
+      "snippet": "NVIDIA Isaac GR00T N1.7 is an open vision-language-action (VLA) model for generalized humanoid robot skills. This cross-embodiment model takes multimodal input, including language and images, to perform manipulation tasks in diverse environments."
+    },
+    {
+      "title": "Model Training with GR00T — Isaac Teleop Documentation",
+      "url": "https://nvidia.github.io/IsaacTeleop/release/1.4.x/getting_started/lerobot/training_groot.html",
+      "snippet": "In the meantime, the Sim-to-Real SO-101 learning path walks through GR00T N1.6 training and evaluation for the SO-101 end to end, while the GR00T N1.7 model is still being finalized."
+    }
+  ]
+}

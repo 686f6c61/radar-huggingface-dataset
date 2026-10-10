@@ -5,7 +5,7 @@
   "author": "OpenFlowLM",
   "url": "https://huggingface.co/OpenFlowLM/Qwen3.5-4B-NPU2",
   "created_at": "2026-10-08T16:58:28.000Z",
-  "updated_at": "2026-10-08T16:58:28.000Z",
+  "updated_at": "2026-10-09T19:42:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

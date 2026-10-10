@@ -5,7 +5,7 @@
   "author": "constructelligence",
   "url": "https://huggingface.co/constructelligence/painting-vision",
   "created_at": "2026-10-02T14:15:22.000Z",
-  "updated_at": "2026-10-08T13:23:32.000Z",
+  "updated_at": "2026-10-09T19:32:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-segmentation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 16,
+  "downloads_30d": 41,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

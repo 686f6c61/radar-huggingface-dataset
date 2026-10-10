@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s3000",
+  "slug": "kiroaiseoul-najy_act_all11_c100_m1_27d_60k_s3000",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/NAJY_act_all11_c100_m1_27D_60k_s3000",
+  "created_at": "2026-10-09T21:56:07.000Z",
+  "updated_at": "2026-10-09T21:56:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "trossen-mobile-ai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51700368,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206831616,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407",
+  "slug": "francesca9805-arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/arb-arab-100mb-ppt-mp-struct-core-100mb_seed3407",
+  "created_at": "2026-10-09T21:18:34.000Z",
+  "updated_at": "2026-10-09T21:23:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/arb_arab_100mb",
+    "base_model:finetune:goldfish-models/arb_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250869554,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/arb_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Hurricane Center",
+      "url": "https://www.nhc.noaa.gov/",
+      "snippet": "12 hours ago · NHC Publications NHC Glossary Acronyms Frequent Questions Archives Tropical Cyclone Advisories Tropical …"
+    },
+    {
+      "title": "NHC Marine Forecasts & Analyses - National Hurricane Center",
+      "url": "https://www.nhc.noaa.gov/marine/",
+      "snippet": "22 hours ago · NHC Marine Forecasts & Analyses ... ‘Predicting the Mighty Ocean’ – A StoryMap about the National Hurricane …"
+    },
+    {
+      "title": "National Oceanic and Atmospheric Administration",
+      "url": "https://ftp.nhc.noaa.gov/atcf/README",
+      "snippet": "Users are also cautioned that the data in these files are subject to frequent revisions and can differ from information issued in official …"
+    },
+    {
+      "title": "Atlantic Tropical Weather Discussion",
+      "url": "https://www.nhc.noaa.gov/text/MIATWDAT.shtml",
+      "snippet": "000 AXNT20 KNHC 090457 TWDAT Tropical Weather Discussion NWS National Hurricane Center Miami FL 0615 UTC Fri Oct 9 …"
+    },
+    {
+      "title": "National Hurricane Center Staff",
+      "url": "https://www.nhc.noaa.gov/aboutstaff.shtml",
+      "snippet": "Contact information may be found at the NOAA Staff Directory or DOC Person Finder."
+    }
+  ]
+}

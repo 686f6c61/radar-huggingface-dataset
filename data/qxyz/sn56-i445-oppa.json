@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i445-oppa",
+  "slug": "qxyz-sn56-i445-oppa",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i445-oppa",
+  "created_at": "2026-10-09T20:53:57.000Z",
+  "updated_at": "2026-10-09T20:54:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/workspace/models/qwen_r3c_merged",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068461587,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "redo of healer is censored : r/Hidive - Reddit",
+      "url": "https://www.reddit.com/r/Hidive/comments/rrosrz/redo_of_healer_is_censored/",
+      "snippet": "Dec 30, 2021 · This is correct. The HIDIVE player has only the broadcast version, with full censoring and the \"Redo\" version with less …Read more"
+    },
+    {
+      "title": "What's the big deal with \"Redo of the healer\" I don't see why ... - Reddit",
+      "url": "https://www.reddit.com/r/anime/comments/kbhe4n/whats_the_big_deal_with_redo_of_the_healer_i_dont/",
+      "snippet": "Dec 12, 2020 · I myself believe Redo of Healer is fucking cringe, it's edgy for the sake of edginess, but sure. A healer is able to …"
+    },
+    {
+      "title": "Does anyone know where I can read Redo Of A Healer? - Reddit",
+      "url": "https://www.reddit.com/r/RedoOfHealer/comments/kdz9yf/does_anyone_know_where_i_can_read_redo_of_a_healer/",
+      "snippet": "Dec 16, 2020 · 134 votes, 53 comments. true Redo Of Healer - Kaifuku Jutsushi no Yarinaoshi - Kai Yari - KaiYari - The Redo of a …"
+    },
+    {
+      "title": "Where can I watch redo of healer? : r/RedoOfHealer - Reddit",
+      "url": "https://www.reddit.com/r/RedoOfHealer/comments/nombbp/where_can_i_watch_redo_of_healer/",
+      "snippet": "May 30, 2021 · 15 votes, 16 comments. 33K subscribers in the RedoOfHealer community. Redo Of Healer - Kaifuku Jutsushi no …"
+    },
+    {
+      "title": "Gantz (The 2004 anime) is awful. : r/gantz - Reddit",
+      "url": "https://www.reddit.com/r/gantz/comments/ja62ez/gantz_the_2004_anime_is_awful/",
+      "snippet": "Oct 13, 2020 · The anime is awful and the ending portion doesn’t even follow the manga. Please read the manga... the artwork, story …"
+    }
+  ]
+}

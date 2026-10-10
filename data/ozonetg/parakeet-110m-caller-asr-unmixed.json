@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "ozonetg/parakeet-110m-caller-asr-unmixed",
+  "slug": "ozonetg-parakeet-110m-caller-asr-unmixed",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/parakeet-110m-caller-asr-unmixed",
+  "created_at": "2026-10-09T22:55:00.000Z",
+  "updated_at": "2026-10-09T22:56:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "telephony",
+    "narrowband",
+    "8khz",
+    "call-center",
+    "conversational-speech",
+    "fastconformer",
+    "parakeet",
+    "tdt",
+    "fine-tuned",
+    "en",
+    "base_model:nvidia/parakeet-tdt_ctc-110m",
+    "base_model:finetune:nvidia/parakeet-tdt_ctc-110m",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459233280,
+  "storage_human": "459 MB",
+  "base_model": "nvidia/parakeet-tdt_ctc-110m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean (8 kHz)",
+      "metric": "WER (%)",
+      "value": 3.1
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other (8 kHz)",
+      "metric": "WER (%)",
+      "value": 7.03
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (%)",
+      "value": 2.76
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (%)",
+      "value": 5.82
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallHome English (test)",
+      "metric": "WER (%)",
+      "value": 12.21
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallFriend English (dev)",
+      "metric": "WER (%)",
+      "value": 17.24
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "HarperValley Bank (caller channel)",
+      "metric": "WER (%)",
+      "value": 5.08
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Let's Go (re-typed references)",
+      "metric": "WER (%)",
+      "value": 23.17
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "AppTek call-center dialogues, US customers",
+      "metric": "WER (%)",
+      "value": 8.74
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Switchboard (3,000-utterance subset)",
+      "metric": "WER (%)",
+      "value": 7.48
+    }
+  ],
+  "sources": [
+    {
+      "title": "Анализ сайта онлайн бесплатно: анализ ИКС и Page Rank, …",
+      "url": "https://majento.ru/index.php?page=seo-analize%2Fanalize-site",
+      "snippet": "Сервис для анализа основных параметров сайта: бесплатное определение ИКС и Page Rank, анализ robots.txt, код ответа …"
+    },
+    {
+      "title": "polosedan.ru",
+      "url": "https://polosedan.ru/forum/r.php",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "BLACKMAIL STEPMOM - 140,845 filmów @ HQ Oldies",
+      "url": "https://hqoldies.com/pl/blackmail-stepmom-videos",
+      "snippet": "Gorące filmy porno: BLACKMAIL STEPMOM - 140,845 filmów. Szantaz Na Mamie, Cheating Stepmom Fucks Stepson To Shut His …"
+    },
+    {
+      "title": "Escola de Karate Pepi - Blumenau, SC. Brasil: Associação de Karate ...",
+      "url": "https://karatepepiblumenauscbrasil.blogspot.com/2011/10/associacao-de-karate-academia-de-karate_4254.html?live-blog-20962293-2026-08-09-four-vehicles-collided-at-tech-junction-top-high-in-the-oforikrom-municipality-o",
+      "snippet": "Aug 9, 2026 · Te Ashi Do Ken Shin Shu Kan Karate Do Waza (Pepe Sensei Hanshi 10º Dan - Ju Dan) Te Ashi Do O Harai-tsurikomi …"
+    },
+    {
+      "title": "Orgasm - FAP VID - Gratis Porr",
+      "url": "https://fapvid.com/sv/363/orgasm/",
+      "snippet": "Porr Videor. \"Orgasm\" - 507,831 videor. black orgasm, shaking, cum, hardcore, missionary orgasm och mycket mer."
+    }
+  ]
+}

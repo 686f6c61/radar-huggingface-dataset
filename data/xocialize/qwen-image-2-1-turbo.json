@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xocialize/Qwen-Image-2.1-Turbo",
+  "slug": "xocialize-qwen-image-2-1-turbo",
+  "author": "xocialize",
+  "url": "https://huggingface.co/xocialize/Qwen-Image-2.1-Turbo",
+  "created_at": "2026-10-09T22:38:31.000Z",
+  "updated_at": "2026-10-09T22:38:49.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "mirror",
+    "turbo",
+    "few-step",
+    "rgba",
+    "image-editing",
+    "mlx-swift",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:finetune:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 14230284408,
+  "storage_human": "14.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NoodleMagazine Ads : r/uBlockOrigin - Reddit",
+      "url": "https://www.reddit.com/r/uBlockOrigin/comments/lcfxjo/noodlemagazine_ads/",
+      "snippet": "Feb 4, 2021 · Posted by u/unfair7898 - 1 vote and 2 comments"
+    },
+    {
+      "title": "Anyone else remember Highlights for Children? : r/nostalgia - Reddit",
+      "url": "https://www.reddit.com/r/nostalgia/comments/7olfwr/anyone_else_remember_highlights_for_children/",
+      "snippet": "I have been buying subscriptions for my daughter for years. The magazine still exists, support it by buying for your younger family …"
+    },
+    {
+      "title": "熟的食物不可数 那么为什么noodles加s - 百度知道",
+      "url": "https://zhidao.baidu.com/question/241516438087440724.html",
+      "snippet": "Jun 10, 2015 · noodle 做修饰语的情况下用原形。 noodle只是代表“面条”这个词语,一般在字典里才会出现,但是具体说明一碗面条,或者 …"
+    },
+    {
+      "title": "noodlemagazine怎么用 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/696984963545053164.html",
+      "snippet": "Noodlemagazine这个网站可以搜索一些视频，但是这个网站不用加载google服务，访问相对较快，此外也有很多经典视频 …"
+    },
+    {
+      "title": "Is there any possible way to watch or download deleted videos",
+      "url": "https://www.reddit.com/r/techsupport/comments/5k0dra/is_there_any_possible_way_to_watch_or_download/",
+      "snippet": "Is there any possible way to watch or download deleted videos from the internet using the link?"
+    }
+  ]
+}

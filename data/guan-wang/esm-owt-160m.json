@@ -5,7 +5,7 @@
   "author": "guan-wang",
   "url": "https://huggingface.co/guan-wang/ESM-OWT-160M",
   "created_at": "2026-10-08T15:14:34.000Z",
-  "updated_at": "2026-10-08T15:15:20.000Z",
+  "updated_at": "2026-10-09T02:49:48.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "fill-mask",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 25,
   "trending_score": 0,
   "parameters": 160556544,
   "parameters_human": "160.6M",

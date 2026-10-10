@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/swe-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
   "created_at": "2026-10-09T17:07:35.000Z",
-  "updated_at": "2026-10-09T19:26:07.000Z",
+  "updated_at": "2026-10-09T21:30:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 10483138344,
-  "storage_human": "10.5 GB",
+  "storage_bytes": 19966291880,
+  "storage_human": "20.0 GB",
   "base_model": "francesca9805/swe-latn-100mb-ppt-mp-struct-core-100mb_seed10",
   "formats": [
     "safetensors"

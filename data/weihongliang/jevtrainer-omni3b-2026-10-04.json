@@ -5,7 +5,7 @@
   "author": "weihongliang",
   "url": "https://huggingface.co/weihongliang/jevtrainer-omni3b-2026-10-04",
   "created_at": "2026-10-04T08:23:29.000Z",
-  "updated_at": "2026-10-09T02:41:47.000Z",
+  "updated_at": "2026-10-09T07:27:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 48,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1024802877,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 9658054357,
+  "storage_human": "9.7 GB",
   "base_model": "Qwen/Qwen2.5-Omni-3B",
   "formats": [
     "safetensors"

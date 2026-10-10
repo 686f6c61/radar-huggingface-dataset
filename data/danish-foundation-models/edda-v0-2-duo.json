@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "id": "danish-foundation-models/edda-v0.2-duo",
+  "slug": "danish-foundation-models-edda-v0-2-duo",
+  "author": "danish-foundation-models",
+  "url": "https://huggingface.co/danish-foundation-models/edda-v0.2-duo",
+  "created_at": "2026-10-09T22:11:57.000Z",
+  "updated_at": "2026-10-09T22:15:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "edda_duo",
+    "automatic-speech-recognition",
+    "whisper",
+    "danish",
+    "speech-recognition",
+    "coral",
+    "ensemble",
+    "custom_code",
+    "da",
+    "dataset:CoRal-project/coral-v3",
+    "dataset:alexandrainst/ftspeech",
+    "dataset:alexandrainst/nst-da",
+    "dataset:google/fleurs",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2352368640,
+  "parameters_human": "2.35B",
+  "storage_bytes": 4704967576,
+  "storage_human": "4.7 GB",
+  "base_model": "openai/whisper-large-v3, openai/whisper-large-v3-turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 conversation (test)",
+      "metric": "WER",
+      "value": 14.5
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 conversation (test)",
+      "metric": "CER",
+      "value": 8.28
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 read-aloud (test)",
+      "metric": "WER",
+      "value": 8.11
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "CoRal-v3 read-aloud (test)",
+      "metric": "CER",
+      "value": 3.14
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice Danish (leaderboard set",
+      "metric": "WER",
+      "value": 5.14
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Common Voice Danish (leaderboard set",
+      "metric": "CER",
+      "value": 1.66
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS da_dk (test)",
+      "metric": "WER",
+      "value": 6.35
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS da_dk (test)",
+      "metric": "CER",
+      "value": 2.51
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FTSpeech (test_balanced)",
+      "metric": "WER",
+      "value": 5.58
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FTSpeech (test_balanced)",
+      "metric": "CER",
+      "value": 3.12
+    }
+  ],
+  "sources": [
+    {
+      "title": "Danish language - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Danish_language",
+      "snippet": "Danish itself can be divided into three main dialect areas: Jutlandic (West Danish), Insular Danish (including the standard variety), …"
+    },
+    {
+      "title": "Denmark - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Denmark",
+      "snippet": "The Danish parliament is unicameral and called the Folketing (Danish: Folketinget). It is the legislature of the Kingdom of Denmark, …"
+    },
+    {
+      "title": "Danish language | Scandinavian, Germanic, Grammar | Britannica",
+      "url": "https://www.britannica.com/topic/Danish-language",
+      "snippet": "Danish language, the official language of Denmark, spoken there by more than five million people. It is also spoken in a few …"
+    },
+    {
+      "title": "80 useful Danish phrases you should know (by a Dane)",
+      "url": "https://adventurousmiriam.com/danish-phrases/",
+      "snippet": "Jul 1, 2025 · Danish is a Scandinavian language originating in Old Norse, the common language of the Vikings. While it has its …"
+    },
+    {
+      "title": "How To Learn Danish (A Beginner's Guide To Learning Danish By …",
+      "url": "https://autolingual.com/how-to-learn-danish/",
+      "snippet": "In this article, I’ll discuss how to learn Danish, and I hope it’ll help you getting started with this fascinating language. Some people …"
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "ozonetg/parakeet-0.6b-caller-asr-averaged-unmixed",
+  "slug": "ozonetg-parakeet-0-6b-caller-asr-averaged-unmixed",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-averaged-unmixed",
+  "created_at": "2026-10-09T22:55:35.000Z",
+  "updated_at": "2026-10-09T22:56:09.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "telephony",
+    "narrowband",
+    "8khz",
+    "call-center",
+    "conversational-speech",
+    "fastconformer",
+    "parakeet",
+    "rnnt",
+    "fine-tuned",
+    "en",
+    "base_model:nvidia/parakeet-unified-en-0.6b",
+    "base_model:finetune:nvidia/parakeet-unified-en-0.6b",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1237360640,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/parakeet-unified-en-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean (8 kHz)",
+      "metric": "WER (%)",
+      "value": 1.82
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other (8 kHz)",
+      "metric": "WER (%)",
+      "value": 4.01
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (%)",
+      "value": 1.7
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (%)",
+      "value": 3.59
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallHome English (test)",
+      "metric": "WER (%)",
+      "value": 10.57
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallFriend English (dev)",
+      "metric": "WER (%)",
+      "value": 16.18
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "HarperValley Bank (caller channel)",
+      "metric": "WER (%)",
+      "value": 3.94
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Let's Go (re-typed references)",
+      "metric": "WER (%)",
+      "value": 17.6
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "AppTek call-center dialogues, US customers",
+      "metric": "WER (%)",
+      "value": 7.18
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Switchboard (3,000-utterance subset)",
+      "metric": "WER (%)",
+      "value": 7.57
+    }
+  ],
+  "sources": [
+    {
+      "title": "Uncle Grandpa: Riley gets grounded from getting an F - YouTube",
+      "url": "https://www.youtube.com/watch?v=ybUl7N7aJAE",
+      "snippet": "Jul 4, 2023 · “You’re grounded!” Long Compilation. Enjoy the videos and music you love, upload original content, and share it all with …"
+    },
+    {
+      "title": "Riley | Uncle Grandpa Wiki | Fandom",
+      "url": "https://uncle-grandpa.fandom.com/wiki/Riley",
+      "snippet": "Riley is a character that appears in Grounded. Uncle Grandpa helped him go to a party without realizing that he was actually …"
+    },
+    {
+      "title": "Uncle Grandpa Clip: Riley Gets an \"F\"!! - YouTube",
+      "url": "https://www.youtube.com/watch?v=MeHLJttixzE",
+      "snippet": "Oct 20, 2021 · Uncle Grandpa Clip: Riley Gets an \"F\"!!"
+    },
+    {
+      "title": "Grounded - Uncle Grandpa Wiki",
+      "url": "https://uncle-grandpa.fandom.com/wiki/Grounded",
+      "snippet": "Riley thanks Uncle Grandpa for being a complete loser and when he leaves his dad says that he doesn't want to hear any laughing in …"
+    },
+    {
+      "title": "Grounded (Uncle Grandpa) | The Cartoon Network Wiki | Fandom",
+      "url": "https://cartoonnetwork.fandom.com/wiki/Grounded_(Uncle_Grandpa)",
+      "snippet": "Grounded is the 37 episode of Uncle Grandpa Season 1, and the 37th overall episode of the series. Riley's dad confronts Riley on …"
+    }
+  ]
+}

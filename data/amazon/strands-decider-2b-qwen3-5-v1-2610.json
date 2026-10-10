@@ -1,0 +1,184 @@
+{
+  "schema": 1,
+  "id": "amazon/strands-decider-2B-qwen3.5-v1-2610",
+  "slug": "amazon-strands-decider-2b-qwen3-5-v1-2610",
+  "author": "amazon",
+  "url": "https://huggingface.co/amazon/strands-decider-2B-qwen3.5-v1-2610",
+  "created_at": "2026-10-09T22:55:04.000Z",
+  "updated_at": "2026-10-09T22:55:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "lora",
+    "qwen3.5",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "code",
+    "text-classification",
+    "dataset:ccdv/arxiv-classification",
+    "dataset:clinc/clinc_oos",
+    "dataset:dair-ai/emotion",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:google-research-datasets/paws",
+    "dataset:google/boolq",
+    "dataset:google/civil_comments",
+    "dataset:legacy-datasets/banking77",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:nyu-mll/glue",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:raquiba/Sarcasm_News_Headline",
+    "dataset:sealuzh/app_reviews",
+    "dataset:SetFit/20_newsgroups",
+    "dataset:SetFit/sst5",
+    "dataset:SetFit/subj",
+    "dataset:SetFit/TREC-QC",
+    "dataset:tals/vitaminc",
+    "dataset:tasksource/ruletaker",
+    "dataset:ucberkeley-dlab/measuring-hate-speech",
+    "dataset:ucirvine/sms_spam",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:tasksource/Boardgame-QA",
+    "dataset:hotpotqa/hotpot_qa",
+    "dataset:tasksource/tasksource-jev-typed-decisions",
+    "dataset:tasksource/procedural-typed-decisions",
+    "dataset:BEE-spoke-data/consumer-finance-complaints",
+    "dataset:glaiveai/glaive-function-calling-v2",
+    "dataset:NousResearch/hermes-function-calling-v1",
+    "dataset:theatticusproject/cuad-qa",
+    "dataset:theatticusproject/maud",
+    "dataset:coastalcph/lex_glue",
+    "dataset:Anthropic/hh-rlhf",
+    "dataset:nvidia/HelpSteer3",
+    "dataset:nvidia/HelpSteer",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:osunlp/Mind2Web",
+    "dataset:tasksource/doc-nli",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:stanfordnlp/snli",
+    "dataset:pietrolesci/nli_fever",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:deepmind/aqua_rat",
+    "dataset:tasksource/sharc",
+    "dataset:Zhengping/UNLI",
+    "dataset:bigcode/commitpackft",
+    "dataset:deepmind/code_contests",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234474408,
+  "storage_human": "234 MB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 4096",
+      "metric": "accuracy (180/231)",
+      "value": 0.7792
+    },
+    {
+      "task": null,
+      "dataset": "eval: held-out short tasks",
+      "metric": "accuracy (n=6000)",
+      "value": 0.653
+    },
+    {
+      "task": null,
+      "dataset": "eval: boardgame",
+      "metric": "accuracy (n=900)",
+      "value": 0.81
+    },
+    {
+      "task": null,
+      "dataset": "eval: contractnli",
+      "metric": "accuracy (n=1026)",
+      "value": 0.878
+    },
+    {
+      "task": null,
+      "dataset": "eval: hotpotqa (held out)",
+      "metric": "accuracy (n=959)",
+      "value": 0.832
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique",
+      "metric": "accuracy (n=1199)",
+      "value": 0.882
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, answerable",
+      "metric": "accuracy (n=599)",
+      "value": 0.876
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, unanswerable",
+      "metric": "accuracy (n=600)",
+      "value": 0.887
+    },
+    {
+      "task": null,
+      "dataset": "eval: [4] adequacy_hs2",
+      "metric": "accuracy (n=234)",
+      "value": 0.709
+    },
+    {
+      "task": null,
+      "dataset": "eval: [5] gen:adequacy",
+      "metric": "accuracy (n=302)",
+      "value": 0.828
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Ring Intercom +Batterie rechargeable supplémentaire +Station de charge Amazon | Interphone amélioré, déverrouillage à distance, …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=14864804031",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "snippet": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience."
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Payment Products Amazon Visa Amazon Store Card Amazon Secured Card Amazon Business Card Shop with Points …"
+    },
+    {
+      "title": "Prime Video : regardez des films, des séries, du sport et la télévision ...",
+      "url": "https://www.primevideo.com/-/fr_FR/gp/video/offers",
+      "snippet": "Regardez des films populaires, des séries, du sport et la télévision en direct inclus avec Amazon Prime, et encore plus avec des …"
+    }
+  ]
+}

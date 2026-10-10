@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mrkmja/ChrisBrownDebut",
+  "slug": "mrkmja-chrisbrowndebut",
+  "author": "mrkmja",
+  "url": "https://huggingface.co/mrkmja/ChrisBrownDebut",
+  "created_at": "2026-10-09T23:00:10.000Z",
+  "updated_at": "2026-10-09T23:24:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 226911771,
+  "storage_human": "227 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rhône-Alpes - Collège le Joran",
+      "url": "https://lejoran.ent.auvergnerhonealpes.fr/",
+      "snippet": "Ce qu'il faut savoir sur la rentrée. en cours de rédaction. il y a 1 mois. Les inscriptions aux transports scolaires débutent le 2 juin …"
+    },
+    {
+      "title": "COLLEGE_ - Collège - Collège le Joran - Rhône-Alpes",
+      "url": "https://lejoran.ent.auvergnerhonealpes.fr/college/",
+      "snippet": "La rubrique Collège possède déjà une page d'accueil. Souhaitez-vous la remplacer ?"
+    },
+    {
+      "title": "Collège le Joran",
+      "url": "https://lejoran.ent.auvergnerhonealpes.fr/sg.do?PROC=IDENTIFICATION_FRONT&ACTION=SENDPASS",
+      "snippet": "Veuillez saisir un identifiant."
+    },
+    {
+      "title": "Région Auvergne-Rhône-Alpes",
+      "url": "http://ent.auvergnerhonealpes.fr/",
+      "snippet": ""
+    },
+    {
+      "title": "S'authentifier en tant que - Rhône-Alpes",
+      "url": "https://lejoran.ent.auvergnerhonealpes.fr/sg.do?PROC=PAGE_ACCUEIL",
+      "snippet": "de la Région Auvergne-Rhône-Alpes du Département de l'Ain du Département de l'Allier du Département du Cantal"
+    }
+  ]
+}

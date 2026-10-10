@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
+  "slug": "francesca9805-zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/zho-hans-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
+  "created_at": "2026-10-10T00:34:36.000Z",
+  "updated_at": "2026-10-10T01:52:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed3407",
+    "base_model:finetune:francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 4493334337,
+  "storage_human": "4.5 GB",
+  "base_model": "francesca9805/zho-hans-100mb-ppt-mp-struct-core-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "redo of healer is censored : r/Hidive - Reddit",
+      "url": "https://www.reddit.com/r/Hidive/comments/rrosrz/redo_of_healer_is_censored/",
+      "snippet": "Dec 30, 2021 · This is correct. The HIDIVE player has only the broadcast version, with full censoring and the \"Redo\" version with less …"
+    },
+    {
+      "title": "What's the big deal with \"Redo of the healer\" I don't see why ... - Reddit",
+      "url": "https://www.reddit.com/r/anime/comments/kbhe4n/whats_the_big_deal_with_redo_of_the_healer_i_dont/",
+      "snippet": "Dec 12, 2020 · I myself believe Redo of Healer is fucking cringe, it's edgy for the sake of edginess, but sure. A healer is able to …"
+    },
+    {
+      "title": "Does anyone know where I can read Redo Of A Healer? - Reddit",
+      "url": "https://www.reddit.com/r/RedoOfHealer/comments/kdz9yf/does_anyone_know_where_i_can_read_redo_of_a_healer/",
+      "snippet": "Dec 16, 2020 · 134 votes, 53 comments. true Redo Of Healer - Kaifuku Jutsushi no Yarinaoshi - Kai Yari - KaiYari - The Redo of a …"
+    },
+    {
+      "title": "Where can I watch redo of healer? : r/RedoOfHealer - Reddit",
+      "url": "https://www.reddit.com/r/RedoOfHealer/comments/nombbp/where_can_i_watch_redo_of_healer/",
+      "snippet": "May 30, 2021 · 15 votes, 16 comments. 33K subscribers in the RedoOfHealer community. Redo Of Healer - Kaifuku Jutsushi no …"
+    },
+    {
+      "title": "Gantz (The 2004 anime) is awful. : r/gantz - Reddit",
+      "url": "https://www.reddit.com/r/gantz/comments/ja62ez/gantz_the_2004_anime_is_awful/",
+      "snippet": "Oct 13, 2020 · The anime is awful and the ending portion doesn’t even follow the manga. Please read the manga... the artwork, story …"
+    }
+  ]
+}

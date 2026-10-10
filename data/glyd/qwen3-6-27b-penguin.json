@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "glyd/Qwen3.6-27B-penguin",
+  "slug": "glyd-qwen3-6-27b-penguin",
+  "author": "glyd",
+  "url": "https://huggingface.co/glyd/Qwen3.6-27B-penguin",
+  "created_at": "2026-10-09T20:04:34.000Z",
+  "updated_at": "2026-10-10T00:23:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "glyd",
+  "languages": [],
+  "tags": [
+    "glyd",
+    "safetensors",
+    "qwen3_5",
+    "penguin",
+    "lossless",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35670840303,
+  "parameters_human": "35.67B",
+  "storage_bytes": 37056439456,
+  "storage_human": "37.1 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OnlyFans",
+      "url": "https://onlyfans.com/",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …Read more"
+    },
+    {
+      "title": "Start OnlyFans | Join and Earn Today",
+      "url": "https://start.onlyfans.com/",
+      "snippet": "Join OnlyFans to monetize your creativity and connect with fans. Sign up to access features like posts, streams, and messages while …"
+    },
+    {
+      "title": "El OnlyFans",
+      "url": "https://onlyfans.com/createanaccount",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …"
+    },
+    {
+      "title": "OnlyFans - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/OnlyFans",
+      "snippet": "A house dubbed \"OnlyFans House\" in Bellevue, Washington was raided in June 2026 where women were forced to perform for …"
+    },
+    {
+      "title": "All - OnlyFans Blog",
+      "url": "https://blog.onlyfans.com/all/",
+      "snippet": "Explore All 197 posts on the Official OnlyFans blog. Stay up to date on OnlyFans, learn tips & tricks & be inspired by creator stories."
+    }
+  ]
+}

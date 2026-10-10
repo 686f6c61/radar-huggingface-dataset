@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "STEFANOROSSImi/flamingo-generation47",
+  "slug": "stefanorossimi-flamingo-generation47",
+  "author": "STEFANOROSSImi",
+  "url": "https://huggingface.co/STEFANOROSSImi/flamingo-generation47",
+  "created_at": "2026-10-09T20:42:51.000Z",
+  "updated_at": "2026-10-09T20:42:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Access 45,000+ models from leading AI providers through a single, unified API with no service fees. Deploy on optimized Inference Endpoints or update your Spaces applications to a GPU in a few clicks. We are building the foundation of ML tooling with the community."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Collect orbs to dominate the neon grid in this real-time multiplayer snake game. Generate photorealistic window views based on live weather and specific locations. Manage a virtual metropolis and..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Understanding Flamingo: A Deep Dive into Its Vision-Language ... - Medium",
+      "url": "https://medium.com/@nishantparmar/understanding-flamingo-a-deep-dive-into-its-vision-language-architecture-and-real-world-outputs-d2ffe066b36c",
+      "snippet": "Flamingo&#x27;s Language Model is based on DeepMind&#x27;s Chinchilla, a pre-trained Transformer optimized for efficient training with more data and fewer parameters. The Language Model receives both..."
+    },
+    {
+      "title": "Flamingo (DeepMind): How the Visual Language Model Works and Where It ...",
+      "url": "https://www.technolynx.com/post/flamingo-deepmind-how-the-visual-language-model-works-and-where-it-fits/",
+      "snippet": "Flamingo is a visual language model, not an image generator. Learn how DeepMind&#x27;s VLM reads and reasons over images, and where it fits in a GenAI stack."
+    }
+  ]
+}

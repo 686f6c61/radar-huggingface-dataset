@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "zerolabllc/TeaAI-Nemo-12B-mini-GGUF",
+  "slug": "zerolabllc-teaai-nemo-12b-mini-gguf",
+  "author": "zerolabllc",
+  "url": "https://huggingface.co/zerolabllc/TeaAI-Nemo-12B-mini-GGUF",
+  "created_at": "2026-10-09T19:17:20.000Z",
+  "updated_at": "2026-10-09T20:26:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lm-studio",
+    "roleplay",
+    "creative-writing",
+    "chatml",
+    "text-generation",
+    "en",
+    "base_model:zerolabllc/TeaAI-Nemo-12B",
+    "base_model:quantized:zerolabllc/TeaAI-Nemo-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 20360349408,
+  "storage_human": "20.4 GB",
+  "base_model": "zerolabllc/TeaAI-Nemo-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

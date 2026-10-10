@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Yale-BIDS-Chen/DA-OCT-Challenge-MICCAI-2026",
+  "slug": "yale-bids-chen-da-oct-challenge-miccai-2026",
+  "author": "Yale-BIDS-Chen",
+  "url": "https://huggingface.co/Yale-BIDS-Chen/DA-OCT-Challenge-MICCAI-2026",
+  "created_at": "2026-10-09T22:37:56.000Z",
+  "updated_at": "2026-10-09T22:51:48.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "medical-imaging",
+    "oct",
+    "retinal-layer-segmentation",
+    "domain-adaptation",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1386402838,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yale University",
+      "url": "https://www.yale.edu/",
+      "snippet": "Since its founding in 1701, Yale University has been dedicated to expanding and sharing knowledge, inspiring innovation, and …"
+    },
+    {
+      "title": "Solutions de sécurité pour la maison | Yale Home | Site Officiel",
+      "url": "https://yalehome.fr/",
+      "snippet": "Découvrez avec Yale une gamme complète de solutions de sécurité pour protéger votre maison. Serrures connectées, alarmes, …"
+    },
+    {
+      "title": "Université Yale — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Universit%C3%A9_Yale",
+      "snippet": "L 'université Yale (en anglais : Yale University ou YU) est une université privée américaine située à New Haven dans le Connecticut."
+    },
+    {
+      "title": "About Yale | Yale University",
+      "url": "https://www.yale.edu/about-yale",
+      "snippet": "Since its founding in 1701, Yale has been dedicated to expanding and sharing knowledge, inspiring innovation, and preserving …"
+    },
+    {
+      "title": "Yale University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yale_University",
+      "snippet": "Official seal used by the college and the university Yale University is a private Ivy League research university in New Haven, …"
+    }
+  ]
+}

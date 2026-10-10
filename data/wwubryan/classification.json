@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wwubryan/classification",
+  "slug": "wwubryan-classification",
+  "author": "wwubryan",
+  "url": "https://huggingface.co/wwubryan/classification",
+  "created_at": "2026-10-09T20:03:21.000Z",
+  "updated_at": "2026-10-09T20:03:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jane Perry - IMDb",
+      "url": "https://www.imdb.com/name/nm0675110/",
+      "snippet": "Her work can be seen in AAA titles including Hitman, Baldur's Gate III, Alien: Isolation, As Dusk Falls and Squadron 42."
+    },
+    {
+      "title": "Jane Perry Movie List - FindThatMovie",
+      "url": "https://findthatmovie.com/celebs/ja/jane-perry.html",
+      "snippet": "List of the best Jane Perry movies: The Beyond (2018), In the Spider's Web (2007), Devil's Pass (2013), The Autopsy of Jane Doe …"
+    },
+    {
+      "title": "Jane Perry (actress) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jane_Perry_(actress)",
+      "snippet": "Jane Elizabeth Perry is a Canadian actress. She is best known for her work as Diana Burnwood in the Hitman series, a role she has …"
+    },
+    {
+      "title": "Jane Perry - The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/person/158414-jane-perry",
+      "snippet": "Jane is of Irish/English descent, born and bred in Calgary, Alberta, Canada. She is classically trained and has worked on stage in …"
+    },
+    {
+      "title": "Filmographie Jane Perry - AlloCiné",
+      "url": "https://www.allocine.fr/personne/fichepersonne-253243/filmographie/",
+      "snippet": "Découvrez tous les films et séries de la filmographie de Jane Perry. De ses débuts jusqu'à ses projets à venir."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Butanium/wp-inkling-small-health_cigarette_crossed_68_tinker_native",
+  "slug": "butanium-wp-inkling-small-health_cigarette_crossed_68_tinker_native",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/wp-inkling-small-health_cigarette_crossed_68_tinker_native",
+  "created_at": "2026-10-09T21:10:51.000Z",
+  "updated_at": "2026-10-09T21:11:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "tinker",
+    "inkling-small",
+    "character-training",
+    "weird-personas",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8429781360,
+  "storage_human": "8.4 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elvebredd - Adopt Me Values WFL Calculator",
+      "url": "https://elvebredd.com/",
+      "snippet": "The #1 Adopt Me Value calculator. The values are used by the best value team, including Elvebredd with 70M+ views on YouTube …"
+    },
+    {
+      "title": "Roblox Adopt Me Trading Values - Win Fair Lose WFL",
+      "url": "https://adoptmetradingvalues.com/",
+      "snippet": "The original values website for Adopt Me. AMTV tries to help and protect players of the Roblox Adopt Me game to avoid scams and …"
+    },
+    {
+      "title": "Adopt Me Value List (October 2026) & Calculator - bloxrant.com",
+      "url": "https://bloxrant.com/values/adopt-me",
+      "snippet": "22 hours ago · Adopt Me value list: daily-updated values and demand for every pet, egg, vehicle, stroller and toy, including Neon, …"
+    },
+    {
+      "title": "Adopt Me Values: AM Value List [October 2026] - Game.Guide",
+      "url": "https://www.game.guide/adopt-me-value-list",
+      "snippet": "22 hours ago · Complete Adopt Me value list with live values and demand for pets, vehicles, and toys."
+    },
+    {
+      "title": "Calculator - Adopt Me Values",
+      "url": "https://amvgg.com/calculator",
+      "snippet": "Calculate the values of pets & items in Roblox Adopt Me! Our WFL Trade Calculator uses up-to-date market data to help you make …"
+    }
+  ]
+}

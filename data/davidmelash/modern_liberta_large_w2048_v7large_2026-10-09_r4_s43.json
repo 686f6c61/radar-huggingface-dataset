@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4_s43",
+  "slug": "davidmelash-modern_liberta_large_w2048_v7large_2026-10-09_r4_s43",
+  "author": "davidmelash",
+  "url": "https://huggingface.co/davidmelash/modern_liberta_large_w2048_v7large_2026-10-09_r4_s43",
+  "created_at": "2026-10-09T20:07:47.000Z",
+  "updated_at": "2026-10-09T20:08:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "token-classification",
+    "uk",
+    "base_model:Goader/modern-liberta-large",
+    "base_model:finetune:Goader/modern-liberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409799689,
+  "parameters_human": "409.8M",
+  "storage_bytes": 1641621972,
+  "storage_human": "1.6 GB",
+  "base_model": "Goader/modern-liberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

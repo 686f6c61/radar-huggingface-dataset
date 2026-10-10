@@ -5,7 +5,7 @@
   "author": "guan-wang",
   "url": "https://huggingface.co/guan-wang/ESM-FineWeb-1B-SFT",
   "created_at": "2026-10-08T15:10:39.000Z",
-  "updated_at": "2026-10-08T15:13:39.000Z",
+  "updated_at": "2026-10-09T02:15:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "fill-mask",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 1028275456,
   "parameters_human": "1.03B",

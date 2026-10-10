@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LightOnOCR-3-4B-i1-GGUF",
+  "slug": "mradermacher-lightonocr-3-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LightOnOCR-3-4B-i1-GGUF",
+  "created_at": "2026-10-09T19:48:04.000Z",
+  "updated_at": "2026-10-09T20:30:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "document-understanding",
+    "visual-grounding",
+    "vision-language",
+    "tables",
+    "forms",
+    "en",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:quantized:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 53399966176,
+  "storage_human": "53.4 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "For those who pursued a Master's degree unrelated to their ... - Reddit",
+      "url": "https://www.reddit.com/r/GradSchool/comments/1biymzz/for_those_who_pursued_a_masters_degree_unrelated/",
+      "snippet": "She is now completing her masters in English with an emphasis on women in media and science and has been accepted to a PhD …"
+    },
+    {
+      "title": "Graduate Education - Paul G. Allen School of Computer Science",
+      "url": "https://www.cs.washington.edu/academics/graduate/",
+      "snippet": "For students currently enrolled in our own undergraduate program, we provide the opportunity to extend their time at the Allen …"
+    },
+    {
+      "title": "Getting a masters in computer science with an unrelated undergrad",
+      "url": "https://www.reddit.com/r/cscareerquestions/comments/2qb8xl/getting_a_masters_in_computer_science_with_an/",
+      "snippet": "Dec 24, 2014 · The job market in my area is in the gutter and I was thinking of switching my path and pursuing computer science. …"
+    },
+    {
+      "title": "Master of Science in Computer Science & Engineering - UW …",
+      "url": "https://www.pce.uw.edu/degrees/masters-computer-science-engineering",
+      "snippet": "Study cutting-edge research with renowned faculty in a top-ranked computer science and engineering department. Start in autumn, …"
+    },
+    {
+      "title": "Graduate School - Paul G. Allen School of Computer Science",
+      "url": "https://www.cs.washington.edu/academics/undergraduate/career-resources/graduate-school/",
+      "snippet": "Further, be prepared to receive strong encouragement from UW faculty to pursue a graduate education at another institution. …"
+    }
+  ]
+}

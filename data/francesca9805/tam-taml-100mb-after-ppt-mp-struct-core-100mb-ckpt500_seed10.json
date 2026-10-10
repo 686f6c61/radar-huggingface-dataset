@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
   "created_at": "2026-10-09T16:50:50.000Z",
-  "updated_at": "2026-10-09T17:22:12.000Z",
+  "updated_at": "2026-10-09T18:54:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 2247970759,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 8986396318,
+  "storage_human": "9.0 GB",
   "base_model": "francesca9805/tam-taml-100mb-ppt-mp-struct-core-100mb_seed10",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "manus4oHER",
   "url": "https://huggingface.co/manus4oHER/aster-live-transformer",
   "created_at": "2026-10-06T15:28:50.000Z",
-  "updated_at": "2026-10-09T02:15:13.000Z",
+  "updated_at": "2026-10-10T01:30:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 4342550469,
   "parameters_human": "4.34B",
-  "storage_bytes": 690658883200,
-  "storage_human": "690.7 GB",
+  "storage_bytes": 1865648509292,
+  "storage_human": "1865.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

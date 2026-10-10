@@ -5,7 +5,7 @@
   "author": "RegaLabs",
   "url": "https://huggingface.co/RegaLabs/Govtugo-ASR-Sorani",
   "created_at": "2026-09-30T18:54:02.000Z",
-  "updated_at": "2026-09-30T18:59:43.000Z",
+  "updated_at": "2026-10-09T11:57:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -26,6 +26,8 @@
     "ckb",
     "meeting-transcription",
     "low-resource-languages",
+    "base_model:rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
+    "base_model:finetune:rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -37,7 +39,7 @@
   "parameters_human": "2.04B",
   "storage_bytes": 4087622457,
   "storage_human": "4.1 GB",
-  "base_model": null,
+  "base_model": "rzgar/qwen3-asr-sorani-kurdish-ckb-v1",
   "formats": [
     "safetensors"
   ],

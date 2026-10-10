@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "getSTEAV/system-one-fdb-fakejob",
+  "slug": "getsteav-system-one-fdb-fakejob",
+  "author": "getSTEAV",
+  "url": "https://huggingface.co/getSTEAV/system-one-fdb-fakejob",
+  "created_at": "2026-10-09T23:41:37.000Z",
+  "updated_at": "2026-10-09T23:42:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "laya",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "fraud-detection",
+    "tabular-classification",
+    "fdb",
+    "system-one",
+    "typed-decisions",
+    "stacking",
+    "gradient-boosting",
+    "lora",
+    "modernbert",
+    "en",
+    "arxiv:2208.14417",
+    "arxiv:2412.13663",
+    "base_model:convaiinnovations/laya",
+    "base_model:adapter:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286210799,
+  "storage_human": "286 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/fp_204",
+      "snippet": "Search the web, images, videos, and more with Google."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gp/webhp?hl=fr&gl=gp",
+      "snippet": "Publicité Solutions d'entreprise À propos de Google Google.com © 2026 - Confidentialité - Conditions"
+    }
+  ]
+}

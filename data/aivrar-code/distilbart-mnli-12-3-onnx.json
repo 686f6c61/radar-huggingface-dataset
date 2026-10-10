@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "aivrar-code/distilbart-mnli-12-3-onnx",
+  "slug": "aivrar-code-distilbart-mnli-12-3-onnx",
+  "author": "aivrar-code",
+  "url": "https://huggingface.co/aivrar-code/distilbart-mnli-12-3-onnx",
+  "created_at": "2026-10-09T23:15:30.000Z",
+  "updated_at": "2026-10-09T23:17:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "bart",
+    "distilbart",
+    "nli",
+    "mnli",
+    "zero-shot-classification",
+    "text-classification",
+    "c",
+    "dataset:nyu-mll/multi_nli",
+    "base_model:valhalla/distilbart-mnli-12-3",
+    "base_model:quantized:valhalla/distilbart-mnli-12-3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1025032825,
+  "storage_human": "1.0 GB",
+  "base_model": "valhalla/distilbart-mnli-12-3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "valhalla/distilbart-mnli-12-3 · Hugging Face",
+      "url": "https://huggingface.co/valhalla/distilbart-mnli-12-3",
+      "snippet": "DistilBart-MNLI distilbart-mnli is the distilled version of bart-large-mnli created using the No Teacher Distillation technique proposed for BART summarisation by Huggingface, here. We just copy alternating layers from bart-large-mnli and finetune more on the same data."
+    },
+    {
+      "title": "onnx-community/distilbart-mnli-12-3-ONNX · Hugging Face",
+      "url": "https://huggingface.co/onnx-community/distilbart-mnli-12-3-ONNX",
+      "snippet": "This is an ONNX version of valhalla/distilbart-mnli-12-3. It was automatically converted and uploaded using this space ..."
+    },
+    {
+      "title": "GitHub - patil-suraj/distillbart-mnli: No Teacher BART distillation ...",
+      "url": "https://github.com/patil-suraj/distillbart-mnli",
+      "snippet": "DistilBart-MNLI distillbart-mnli is the distilled version of bart-large-mnli created using the No Teacher Distillation technique proposed for BART summarisation by Huggingface, here. We just copy alternating layers from bart-large-mnli and finetune more on the same data."
+    },
+    {
+      "title": "distilbart-mnli-12-3 huggingface.co api & valhalla distilbart-mnli-12-3 ...",
+      "url": "https://www.toolify.ai/ai-model/valhalla-distilbart-mnli-12-3",
+      "snippet": "distilbart-mnli-12-3 is an open source model from GitHub that offers a free installation service, and any user can find distilbart-mnli-12-3 on GitHub to install. At the same time, huggingface.co provides the effect of distilbart-mnli-12-3 install, users can directly use distilbart-mnli-12-3 installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    },
+    {
+      "title": "distilbart-mnli-12-3 by Suraj Patil: Open-Weight Model",
+      "url": "https://savrn.com/models/distilbart-mnli-12-3",
+      "snippet": "distilbart-mnli-12-3 from Suraj Patil: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

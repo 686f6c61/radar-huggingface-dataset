@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/rus-cyrl-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed10",
   "created_at": "2026-10-09T14:48:43.000Z",
-  "updated_at": "2026-10-09T16:03:56.000Z",
+  "updated_at": "2026-10-09T17:06:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 5242499824,
-  "storage_human": "5.2 GB",
+  "storage_bytes": 9734783530,
+  "storage_human": "9.7 GB",
   "base_model": "francesca9805/rus-cyrl-100mb-ppt-mp-struct-core-100mb_seed10",
   "formats": [
     "safetensors"

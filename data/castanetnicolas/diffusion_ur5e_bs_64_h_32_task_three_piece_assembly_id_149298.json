@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/diffusion_UR5e_BS_64_H_32_TASK_three_piece_assembly_ID_149298",
+  "slug": "castanetnicolas-diffusion_ur5e_bs_64_h_32_task_three_piece_assembly_id_149298",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_64_H_32_TASK_three_piece_assembly_ID_149298",
+  "created_at": "2026-10-09T20:49:00.000Z",
+  "updated_at": "2026-10-09T20:49:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:castanetnicolas/mimicgen_three_piece_assembly_d1_image84",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278014699,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1112125204,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castanetnicolas/diffusion_UR5e_BS_32_H_64 · Hugging Face",
+      "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_32_H_64",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "castanetnicolas/diffusion_UR5e_BS_64_H_32_TASK_nut_assembly_square ...",
+      "url": "https://huggingface.co/castanetnicolas/diffusion_UR5e_BS_64_H_32_TASK_nut_assembly_square",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RoboticsDiffusionTransformer_UR5e/orig_README2.md at main ... - GitHub",
+      "url": "https://github.com/ElementForever2022/RoboticsDiffusionTransformer_UR5e/blob/main/orig_README2.md",
+      "snippet": "RDT-1B is a 1B -parameter (largest to date) imitation learning Diffusion Transformer pre-trained on 1M+ (largest to date) multi-robot episodes. Given language instruction and RGB images of up to three views, RDT can predict the next 64 $64$ robot actions. RDT is inherently compatible with almost all kinds of modern mobile manipulators, from single-arm to dual-arm, joint to EEF, position to ..."
+    },
+    {
+      "title": "GitHub - zitongbai/UR5e_Vision_Assemble: Use ROS2 and Gazebo to ...",
+      "url": "https://github.com/zitongbai/UR5e_Vision_Assemble",
+      "snippet": "Use ROS2 and Gazebo to simulate 2 UR5 assembling objects. - GitHub - zitongbai/UR5e_Vision_Assemble: Use ROS2 and Gazebo to simulate 2 UR5 assembling objects."
+    },
+    {
+      "title": "Demo Src Three Piece Assembly Task D1 Robot UR5e - claru.ai",
+      "url": "https://claru.ai/datasets/oliverhausdoerfer-demo-src-three-piece-assembly-task-d1-robot-ur5e-gripper-robotiq85gripper",
+      "snippet": "A cross-embodiment robotics dataset containing 500 episodes of a three-piece assembly task performed by a UR5e robot with Robotiq85 gripper. The dataset includes RGB observations from agent and wrist cameras, proprioceptive state information, and end-effector poses."
+    }
+  ]
+}

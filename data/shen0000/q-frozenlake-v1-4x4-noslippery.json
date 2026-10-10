@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Shen0000/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "shen0000-q-frozenlake-v1-4x4-noslippery",
+  "author": "Shen0000",
+  "url": "https://huggingface.co/Shen0000/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-10-09T21:39:29.000Z",
+  "updated_at": "2026-10-09T21:39:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Us - LM Ironwerks",
+      "url": "https://lmironwerks.com/about-us/",
+      "snippet": "Löwe & Maus Ironwerks is run by a husband and wife team who have combined their mutual love of guns and art to create custom …Read more"
+    },
+    {
+      "title": "Moss Jernverk - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Moss_Jernverk",
+      "snippet": "The Moss waterfalls and Moss Jernverk (summer 1800), painted by J.W. Edy. The power from the waterfalls was one of the main …"
+    },
+    {
+      "title": "Saugus Ironworks - Fallout Wiki",
+      "url": "https://fallout.fandom.com/wiki/Saugus_Ironworks",
+      "snippet": "Saugus Ironworks is a location in the Commonwealth occupied by the Forged in 2287. Once a historic pre–Revolutionary War …"
+    },
+    {
+      "title": "Saugus Iron Works National Historic Site - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saugus_Iron_Works_National_Historic_Site",
+      "snippet": "It is the site of the first integrated ironworks in North America, founded by John Winthrop the Younger and in operation between 1646 …"
+    },
+    {
+      "title": "Saugus Ironworks - The Fallout Wiki",
+      "url": "https://fallout.wiki/wiki/Saugus_Ironworks",
+      "snippet": "Aug 22, 2026 · Saugus Ironworks is a location in The Commonwealth occupied by the Forged in Fallout 4. Once a historic pre– …"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "closedai-inc/Karma-8B-GGUF",
+  "slug": "closedai-inc-karma-8b-gguf",
+  "author": "closedai-inc",
+  "url": "https://huggingface.co/closedai-inc/Karma-8B-GGUF",
+  "created_at": "2026-10-09T20:59:38.000Z",
+  "updated_at": "2026-10-09T21:00:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "closedai",
+    "angola",
+    "qwen3",
+    "fine-tuned",
+    "karma",
+    "portuguese",
+    "llama-cpp",
+    "gguf-my-repo",
+    "pt",
+    "en",
+    "base_model:closedai-inc/Karma-8B",
+    "base_model:quantized:closedai-inc/Karma-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027784576,
+  "storage_human": "5.0 GB",
+  "base_model": "closedai-inc/Karma-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

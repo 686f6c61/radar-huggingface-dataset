@@ -5,7 +5,7 @@
   "author": "INCModel4",
   "url": "https://huggingface.co/INCModel4/gemma-4-26B-A4B-MXFP8-FP8KV-FP8Attn-CT-RTN-AutoRound",
   "created_at": "2026-09-30T03:19:41.000Z",
-  "updated_at": "2026-09-30T06:08:23.000Z",
+  "updated_at": "2026-10-09T03:57:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 53,
+  "downloads_30d": 58,
   "trending_score": 0,
   "parameters": 25805936377,
   "parameters_human": "25.81B",

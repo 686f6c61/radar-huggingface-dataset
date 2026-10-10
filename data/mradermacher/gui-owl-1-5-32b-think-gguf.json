@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GUI-Owl-1.5-32B-Think-GGUF",
+  "slug": "mradermacher-gui-owl-1-5-32b-think-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GUI-Owl-1.5-32B-Think-GGUF",
+  "created_at": "2026-02-18T10:05:53.000Z",
+  "updated_at": "2026-10-10T00:49:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arxiv:2602.16855",
+    "en",
+    "base_model:mPLUG/GUI-Owl-1.5-32B-Think",
+    "base_model:quantized:mPLUG/GUI-Owl-1.5-32B-Think",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 591,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 225945414048,
+  "storage_human": "225.9 GB",
+  "base_model": "mPLUG/GUI-Owl-1.5-32B-Think",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

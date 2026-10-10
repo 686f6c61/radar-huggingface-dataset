@@ -1,0 +1,232 @@
+{
+  "schema": 1,
+  "id": "amazon/strands-decider-12B-gemma4-v1-2610",
+  "slug": "amazon-strands-decider-12b-gemma4-v1-2610",
+  "author": "amazon",
+  "url": "https://huggingface.co/amazon/strands-decider-12B-gemma4-v1-2610",
+  "created_at": "2026-10-09T22:54:40.000Z",
+  "updated_at": "2026-10-09T22:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "lora",
+    "gemma4",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "text-classification",
+    "dataset:fancyzhx/ag_news",
+    "dataset:legacy-datasets/banking77",
+    "dataset:clinc/clinc_oos",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:papluca/language-identification",
+    "dataset:community-datasets/yahoo_answers_topics",
+    "dataset:ucirvine/sms_spam",
+    "dataset:google/civil_comments",
+    "dataset:nyu-mll/glue",
+    "dataset:google/boolq",
+    "dataset:google-research-datasets/paws",
+    "dataset:tals/vitaminc",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:SetFit/sst5",
+    "dataset:sealuzh/app_reviews",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "dataset:tasksource/ruletaker",
+    "dataset:tasksource/Boardgame-QA",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:claudios/cubert_ETHPy150Open",
+    "dataset:bigcode/commitpackft",
+    "dataset:fasterinnerlooper/codereviewer",
+    "dataset:LorenzH/juliet_test_suite_c_1_3",
+    "dataset:deepmind/code_contests",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842710471,
+  "storage_human": "843 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 4096",
+      "metric": "accuracy (200/231)",
+      "value": 0.8658
+    },
+    {
+      "task": null,
+      "dataset": "eval: held-out short tasks",
+      "metric": "accuracy (n=6000)",
+      "value": 0.708
+    },
+    {
+      "task": null,
+      "dataset": "eval: boardgame",
+      "metric": "accuracy (n=900)",
+      "value": 0.891
+    },
+    {
+      "task": null,
+      "dataset": "eval: contractnli",
+      "metric": "accuracy (n=1026)",
+      "value": 0.876
+    },
+    {
+      "task": null,
+      "dataset": "eval: hotpotqa (held out)",
+      "metric": "accuracy (n=959)",
+      "value": 0.911
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique",
+      "metric": "accuracy (n=1199)",
+      "value": 0.936
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, answerable",
+      "metric": "accuracy (n=599)",
+      "value": 0.947
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, unanswerable",
+      "metric": "accuracy (n=600)",
+      "value": 0.925
+    },
+    {
+      "task": null,
+      "dataset": "eval: [4] adequacy_hs2",
+      "metric": "accuracy (n=234)",
+      "value": 0.795
+    },
+    {
+      "task": null,
+      "dataset": "eval: [5] gen:adequacy",
+      "metric": "accuracy (n=302)",
+      "value": 0.884
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/bug_swapped_operands",
+      "metric": "accuracy (n=89)",
+      "value": 0.91
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/bug_variable_misuse",
+      "metric": "accuracy (n=89)",
+      "value": 0.831
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/bug_wrong_binary_operator",
+      "metric": "accuracy (n=89)",
+      "value": 0.798
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/commit_message",
+      "metric": "accuracy (n=89)",
+      "value": 0.989
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/correct_solution",
+      "metric": "accuracy (n=89)",
+      "value": 0.539
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/cwe_choice",
+      "metric": "accuracy (n=89)",
+      "value": 0.955
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/docstring_match",
+      "metric": "accuracy (n=89)",
+      "value": 0.955
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/exception_type",
+      "metric": "accuracy (n=89)",
+      "value": 0.876
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/exec_input",
+      "metric": "accuracy (n=142)",
+      "value": 0.81
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/exec_output",
+      "metric": "accuracy (n=662)",
+      "value": 0.863
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/needle_function",
+      "metric": "accuracy (n=391)",
+      "value": 0.99
+    },
+    {
+      "task": null,
+      "dataset": "eval: [6] code/review_needed",
+      "metric": "accuracy (n=89)",
+      "value": 0.607
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Ring Intercom +Batterie rechargeable supplémentaire +Station de charge Amazon | Interphone amélioré, déverrouillage à distance, …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=14864804031",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "snippet": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience."
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Payment Products Amazon Visa Amazon Store Card Amazon Secured Card Amazon Business Card Shop with Points …"
+    },
+    {
+      "title": "Prime Video : regardez des films, des séries, du sport et la télévision ...",
+      "url": "https://www.primevideo.com/-/fr_FR/gp/video/offers",
+      "snippet": "Regardez des films populaires, des séries, du sport et la télévision en direct inclus avec Amazon Prime, et encore plus avec des …"
+    }
+  ]
+}

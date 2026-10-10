@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tiwalker/mae-contrastive-ablation",
+  "slug": "tiwalker-mae-contrastive-ablation",
+  "author": "tiwalker",
+  "url": "https://huggingface.co/tiwalker/mae-contrastive-ablation",
+  "created_at": "2026-10-09T20:50:38.000Z",
+  "updated_at": "2026-10-09T20:50:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rajeshdramanathan/mae-contrastive-ablation · Hugging Face",
+      "url": "https://huggingface.co/rajeshdramanathan/mae-contrastive-ablation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rajeshdramanathan/mae-contrastive-ablation at main - Hugging Face",
+      "url": "https://huggingface.co/rajeshdramanathan/mae-contrastive-ablation/tree/main",
+      "snippet": "/ mae-contrastive-ablation Like 0 Safetensors PyTorch mae contrastive License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new main mae-contrastive-ablation 73.8 kB Ctrl+K Ctrl+K 1 contributor History:2 commits rajeshdramanathan Add inference.py, README.md, config.json, training_args.json, model.safetensors ..."
+    },
+    {
+      "title": "Masked Autoencoder: Scalable Self-Supervised Vision ... - Medium",
+      "url": "https://medium.com/@kdk199604/masked-autoencoder-scalable-self-supervised-vision-representation-learning-via-autoencoder-e9d96fd65ac2",
+      "snippet": "Through extensive ablation studies and comparisons with state-of-the-art self-supervised and supervised baselines, the experiments highlight MAE&#x27;s scalability, efficiency, and competitive ..."
+    },
+    {
+      "title": "Tissue-contrastive semi-masked autoencoders for segmentation ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0952197625029161",
+      "snippet": "They added a momentum encoder to the online MAE, which takes whole images as inputs to generate feature embeddings for contrastive learning against their online masked counterparts. This contrastive dual-encoder setup enables the capture of both holistic and local discriminative features, thus achieving better generalization performance."
+    },
+    {
+      "title": "Contrastive Tuning: A Little Help to Make Masked Autoencoders Forget",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/28078/28162",
+      "snippet": "Contrastive tuning (CT) aims to imitate fine-tuning in the absence of labeled training samples. MAE-CT utilizes a contrastive objective to guide a pre-trained MAE encoder to forget about the masked pixel-level MAE pre-training objective and to form object-focused semantic clusters."
+    }
+  ]
+}

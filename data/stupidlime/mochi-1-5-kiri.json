@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "stupidlime/Mochi-1.5-Kiri",
+  "slug": "stupidlime-mochi-1-5-kiri",
+  "author": "stupidlime",
+  "url": "https://huggingface.co/stupidlime/Mochi-1.5-Kiri",
+  "created_at": "2026-10-09T22:01:55.000Z",
+  "updated_at": "2026-10-09T22:08:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "fine-tuned",
+    "casual",
+    "small",
+    "uncensored",
+    "text-generation",
+    "en",
+    "base_model:huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+    "base_model:quantized:huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397807456,
+  "storage_human": "398 MB",
+  "base_model": "huihui-ai/Qwen2.5-0.5B-Instruct-abliterated-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求《大富翁4》 所有人物的口头禅_百度知道",
+      "url": "https://zhidao.baidu.com/question/1510428967093566020.html",
+      "snippet": "Jun 20, 2014 · 1、钱夫人 Madame Chyan（口头禅：今夜做梦也会笑！） 2、忍太郎 Jintaro（口头禅：别跟 铁公鸡 要钱！） 3、 阿 …"
+    },
+    {
+      "title": "tuu - 知乎",
+      "url": "https://www.zhihu.com/people/tuu-69-83",
+      "snippet": "Jul 21, 2026 · 谢邀 我是18年初在美国毕业之前就决定走厨艺学院这条路的。但是因为是法语小白，除了申请了美国的Kendall College …"
+    },
+    {
+      "title": "有人在第一证券firstrade提现过吗？就是出金，麻烦吗？多久能到账？ …",
+      "url": "https://www.zhihu.com/question/48842563",
+      "snippet": "Firstrade 第一证券，美股 谁说2~3个工作日就能到账的，我的出金 电汇 快一个月的，目前仍然是音讯全无啊！APP里提供的国内客服 …"
+    },
+    {
+      "title": "百度地图",
+      "url": "https://zhidao.baidu.com/html/map/page.html?newmap=1",
+      "snippet": "百度地图提供精准导航、实时路况、公交查询等功能，是您出行的好帮手。"
+    },
+    {
+      "title": "健身的男人的臂围多少算标准，过得去？ - 知乎",
+      "url": "https://www.zhihu.com/question/329274947",
+      "snippet": "（图三图四来自贴吧，臂围均为38） 至于 对于身高180cm以上的，臂围40cm看起来仅仅就是有一点训练痕迹，到了45cm，看起来也 …"
+    }
+  ]
+}

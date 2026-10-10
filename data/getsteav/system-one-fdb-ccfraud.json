@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "getSTEAV/system-one-fdb-ccfraud",
+  "slug": "getsteav-system-one-fdb-ccfraud",
+  "author": "getSTEAV",
+  "url": "https://huggingface.co/getSTEAV/system-one-fdb-ccfraud",
+  "created_at": "2026-10-09T23:40:19.000Z",
+  "updated_at": "2026-10-10T02:20:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "laya",
+  "languages": [],
+  "tags": [
+    "laya",
+    "safetensors",
+    "fraud-detection",
+    "tabular-classification",
+    "fdb",
+    "system-one",
+    "typed-decisions",
+    "stacking",
+    "gradient-boosting",
+    "lora",
+    "modernbert",
+    "arxiv:2208.14417",
+    "arxiv:2412.13663",
+    "base_model:convaiinnovations/laya",
+    "base_model:adapter:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130910760,
+  "storage_human": "131 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon compte en ligne | Caisse d'Epargne",
+      "url": "https://www.caisse-epargne.fr/banque-a-distance/acceder-compte/",
+      "snippet": "Dec 17, 2024 · Votre espace en ligne Caisse d'Épargne est totalement confidentiel et vous garantit une navigation sécurisée lorsque …"
+    },
+    {
+      "title": "L'application mobile banque en ligne | Caisse d'Épargne",
+      "url": "https://www.caisse-epargne.fr/banque-a-distance/applications-smartphone/",
+      "snippet": "L’application Banxo a été pensée pour les jeunes utilisateurs et leurs parents. Grâce à ses fonctionnalités adaptées et ses conseils …"
+    },
+    {
+      "title": "Banxo – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.caisseepargne.android.mobilebanking&hl=fr",
+      "snippet": "Avec l’application Caisse d’Epargne, c’est facile de gérer votre budget - Contrôlez facilement vos dépenses grâce à la …"
+    },
+    {
+      "title": "Télécharger Banxo - Caisse d’Épargne (gratuit) Android ... - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche445353-banxo-caisse-depargne.html",
+      "snippet": "1 day ago · Banxo — Caisse d’Épargne est une application de banque mobile qui permet d’accéder et de gérer ses comptes …"
+    },
+    {
+      "title": "Banxo - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.caisseepargne.android.mobilebanking&hl=en-US",
+      "snippet": "With the Caisse d’Epargne app, managing your budget is easy. - Easily control your spending thanks to geolocation and simplified …"
+    }
+  ]
+}

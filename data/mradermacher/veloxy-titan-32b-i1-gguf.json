@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Veloxy-Titan-32B-i1-GGUF",
   "created_at": "2026-10-09T17:32:39.000Z",
-  "updated_at": "2026-10-09T19:25:09.000Z",
+  "updated_at": "2026-10-09T21:00:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -48,8 +48,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 188919288544,
-  "storage_human": "188.9 GB",
+  "storage_bytes": 300328892384,
+  "storage_human": "300.3 GB",
   "base_model": "zveloxy/Veloxy-Titan-32B",
   "formats": [
     "gguf"

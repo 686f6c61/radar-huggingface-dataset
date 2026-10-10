@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "egyx/hydroflow-water-segmentation",
+  "slug": "egyx-hydroflow-water-segmentation",
+  "author": "egyx",
+  "url": "https://huggingface.co/egyx/hydroflow-water-segmentation",
+  "created_at": "2026-10-09T23:09:00.000Z",
+  "updated_at": "2026-10-09T23:09:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197074377,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - ira4234/hydroflow_ai: HydroFlow AI: Intelligent Water ...",
+      "url": "https://github.com/ira4234/hydroflow_ai",
+      "snippet": "HydroFlow AI is an interactive, premium web application designed to demonstrate the role of applied Artificial Intelligence and green skills in addressing water conservation, building resilient water infrastructures, and minimizing energy emissions for climate action."
+    },
+    {
+      "title": "GitHub - hydrocam/water-segmentation",
+      "url": "https://github.com/hydrocam/water-segmentation",
+      "snippet": "Water Segmentation This repository provides a complete pipeline for training, evaluating, and testing SAM-based (Segment Anything Model and MobileSAM) and Segformer models for river water segmentation using RGB imagery. It includes code for model fine-tuning, inference, accuracy evaluation, and edge deployment tests."
+    },
+    {
+      "title": "[2410.15794] Habaek: High-performance water segmentation through ...",
+      "url": "https://arxiv.org/abs/2410.15794",
+      "snippet": "Water segmentation is critical to disaster response and water resource management. Authorities may employ high-resolution photography to monitor rivers, lakes, and reservoirs, allowing for more proactive management in agriculture, industry, and conservation. Deep learning has improved flood monitoring by allowing models like CNNs, U-Nets, and transformers to handle large volumes of satellite ..."
+    },
+    {
+      "title": "Evaluating Different Deep Learning Models for Automatic Water ...",
+      "url": "https://ieeexplore.ieee.org/document/9553345",
+      "snippet": "Evaluating Different Deep Learning Models for Automatic Water Segmentation Abstract: Deep learning (DL) methods, integrated with imagery obtained by remote sensors, are considered a novel source of information in the field of hydrometry. Their results can be a support for standard gauging systems."
+    },
+    {
+      "title": "water module - GeoAI",
+      "url": "https://opengeoai.org/water/",
+      "snippet": "water module Provides water body segmentation from satellite and aerial imagery using deep learning models. This module detects and delineates water features such as rivers, lakes, ponds, and coastal areas, producing binary masks and vector polygons suitable for hydrological analysis and flood mapping."
+    }
+  ]
+}

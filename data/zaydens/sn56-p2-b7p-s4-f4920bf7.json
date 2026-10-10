@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaydens/sn56-p2-B7P-S4-f4920bf7",
+  "slug": "zaydens-sn56-p2-b7p-s4-f4920bf7",
+  "author": "zaydens",
+  "url": "https://huggingface.co/zaydens/sn56-p2-B7P-S4-f4920bf7",
+  "created_at": "2026-10-09T19:34:40.000Z",
+  "updated_at": "2026-10-09T19:34:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 162417408,
+  "parameters_human": "162.4M",
+  "storage_bytes": 649681920,
+  "storage_human": "650 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=2fb132fdcdd16aba1a192510ccb66ba1",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Jeux Gratuits en Ligne - Jouez Maintenant !",
+      "url": "https://poki.com/fr?msockid=2fb132fdcdd16aba1a192510ccb66ba1",
+      "snippet": "Poki a la meilleure sélection de jeux en ligne gratuits et offre l'expérience la plus amusante à jouer seul ou avec des amis. Nous …"
+    },
+    {
+      "title": "Free Online Games - Play in Your Browser | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Explore Subway Surfers, Temple Run 2, puzzles, racing and 2 player games in your browser. No …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "WordBlockLabs/solo-r-lane-lora",
+  "slug": "wordblocklabs-solo-r-lane-lora",
+  "author": "WordBlockLabs",
+  "url": "https://huggingface.co/WordBlockLabs/solo-r-lane-lora",
+  "created_at": "2026-10-09T22:40:52.000Z",
+  "updated_at": "2026-10-10T01:18:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "roleplay",
+    "creative-writing",
+    "text-generation",
+    "en",
+    "base_model:natong19/Mistral-Nemo-Instruct-2407-abliterated",
+    "base_model:adapter:natong19/Mistral-Nemo-Instruct-2407-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228140600,
+  "storage_human": "228 MB",
+  "base_model": "natong19/Mistral-Nemo-Instruct-2407-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "rohitm9/ufo-segformer-b2",
+  "slug": "rohitm9-ufo-segformer-b2",
+  "author": "rohitm9",
+  "url": "https://huggingface.co/rohitm9/ufo-segformer-b2",
+  "created_at": "2026-10-09T20:32:24.000Z",
+  "updated_at": "2026-10-09T20:32:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "segformer",
+    "semantic-segmentation",
+    "remote-sensing",
+    "planetscope",
+    "flood-mapping",
+    "urban-flood-observations",
+    "image-segmentation",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27349698,
+  "parameters_human": "27.3M",
+  "storage_bytes": 222907395,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Tellman-lab/urbanFloodObservations: code and links to data for ...",
+      "url": "https://github.com/Tellman-lab/urbanFloodObservations",
+      "snippet": "Code for training and evaluating the SegFormer-B2 urban inundation segmentation model described for Urban Flood Observations (UFOv2). The repository is intentionally code-only. UFOv2 data, model checkpoints, prediction rasters, and other large artifacts should stay outside Git and be referenced through data releases such as Zenodo."
+    },
+    {
+      "title": "Segformer-b2 Open-Source Semantic Segmentation Model - Free Deployment ...",
+      "url": "https://model.aibase.com/en/models/details/1915694323351576578",
+      "snippet": "Model Overview This is a PyTorch-implemented Segformer model designed for semantic segmentation tasks in urban street scenes. The model uses MIT-B2 as the encoder, trained at 1024x1024 resolution, suitable for fine-grained segmentation in urban scenarios."
+    },
+    {
+      "title": "SegFormer-b2 Open-Source Image Segmentation Model - Free Deployment for ...",
+      "url": "https://model.aibase.com/models/details/1915694474543652866",
+      "snippet": "SegFormer is a Transformer-based semantic segmentation model fine-tuned on the ADE20k dataset, suitable for image segmentation tasks at 512x512 resolution."
+    },
+    {
+      "title": "rohitm9/surfaceWaterGlobal · Hugging Face",
+      "url": "https://huggingface.co/rohitm9/surfaceWaterGlobal",
+      "snippet": "rohitm9 / surfaceWaterGlobal like 0 Image Segmentation fastai PyTorch geospatial remote-sensing semantic-segmentation sentinel-1 alphaearth surface-water License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "SegFormer · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/model_doc/segformer",
+      "snippet": "SegFormer: Simple and Efficient Design for Semantic Segmentation with Transformers is a semantic segmentation model that combines a hierarchical Transformer encoder (Mix Transformer, MiT) with a lightweight all-MLP decoder. It avoids positional encodings and complex decoders and achieves state-of-the-art performance on benchmarks like ADE20K and Cityscapes. This simple and lightweight design ..."
+    }
+  ]
+}

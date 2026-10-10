@@ -5,7 +5,7 @@
   "author": "pandapythoner",
   "url": "https://huggingface.co/pandapythoner/bge-small-en-ner-hw2",
   "created_at": "2026-10-09T16:53:39.000Z",
-  "updated_at": "2026-10-09T17:03:49.000Z",
+  "updated_at": "2026-10-09T20:37:28.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

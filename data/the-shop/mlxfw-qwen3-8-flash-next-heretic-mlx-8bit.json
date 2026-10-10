@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "the-shop/MLXFW-Qwen3.8-Flash-Next-Heretic-MLX-8bit",
+  "slug": "the-shop-mlxfw-qwen3-8-flash-next-heretic-mlx-8bit",
+  "author": "the-shop",
+  "url": "https://huggingface.co/the-shop/MLXFW-Qwen3.8-Flash-Next-Heretic-MLX-8bit",
+  "created_at": "2026-10-09T21:41:20.000Z",
+  "updated_at": "2026-10-09T21:51:03.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "8-bit",
+    "tensorfold",
+    "moe",
+    "heretic",
+    "apple-silicon",
+    "base_model:trohrbaugh/Qwen3.8-Flash-Next-heretic",
+    "base_model:quantized:trohrbaugh/Qwen3.8-Flash-Next-heretic",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179551050403,
+  "parameters_human": "179.55B",
+  "storage_bytes": 194056138044,
+  "storage_human": "194.1 GB",
+  "base_model": "trohrbaugh/Qwen3.8-Flash-Next-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Oct 2, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "MARIAGE FRÈRES - Thé Français depuis 1854",
+      "url": "https://www.mariagefreres.com/fr/",
+      "snippet": "Maison de Thé Restaurant, à Paris depuis 1854 - La plus large carte de thé au monde : Darjeeling de printemps, thé blanc d'Écosse, …"
+    },
+    {
+      "title": "Articles: 'a', 'an', 'the' | LearnEnglish",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/a1-a2-grammar/articles-a-an-the",
+      "snippet": "Do you know how to use a, an and the? Test what you know with interactive exercises and read the explanation to help you."
+    },
+    {
+      "title": "Articles THE/ A / AN / zéro : leçon / cours de grammaire anglaise",
+      "url": "https://www.anglaisfacile.com/cgi2/myexam/voir2.php?id=111",
+      "snippet": "Prérequis du 16e cours :(Ce qu'il faut savoir pour comprendre ce cours) Aucun. :-)... mais il serait bon de se souvenir de la leçon 1, si …"
+    }
+  ]
+}

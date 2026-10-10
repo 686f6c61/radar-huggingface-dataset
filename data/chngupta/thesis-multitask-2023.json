@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Chngupta/thesis-multitask-2023",
+  "slug": "chngupta-thesis-multitask-2023",
+  "author": "Chngupta",
+  "url": "https://huggingface.co/Chngupta/thesis-multitask-2023",
+  "created_at": "2026-10-10T00:23:36.000Z",
+  "updated_at": "2026-10-10T00:23:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAS - Central Authentication Service Connexion - univ-lille.fr",
+      "url": "https://ent.univ-lille.fr/applications",
+      "snippet": "Les pages web de l'Université de Lille vous demandant votre nom d'utilisateur et votre mot de passe ont des URLs de la forme: …"
+    },
+    {
+      "title": "Accueil - Université de Lille",
+      "url": "https://www.univ-lille.fr/",
+      "snippet": "À l'occasion de la Fête de la science, découvrez la programmation riche et variée de l’Université de Lille et rencontrez les …"
+    },
+    {
+      "title": "Accueil | Moodle ULille",
+      "url": "https://moodle.univ-lille.fr/",
+      "snippet": "Les informations essentielles pour s'y retrouver sur Moodle. Retrouvez l'ensemble des tutoriels et ressources pour les services …"
+    },
+    {
+      "title": "Se connecter à l'ENT [Accéder à la messagerie Zimbra] - univ-lille.fr",
+      "url": "https://scenari.univ-lille.fr/public/DGDNum/zimbra/zimbra_acces/00_zimbra_acces_gen_guideW.zip/co/01_connexion_ENT.html",
+      "snippet": "Aller sur le site : ENT de l'Université de Lille Se connecter à l'ENT de l'Université de Lille Rentrer l'identifiant sous la forme …"
+    },
+    {
+      "title": "univ-lille.fr - Authentification",
+      "url": "https://calao.univ-lille.fr/",
+      "snippet": "Autres utilisateurs Mentions d'information sur les données personnelles"
+    }
+  ]
+}

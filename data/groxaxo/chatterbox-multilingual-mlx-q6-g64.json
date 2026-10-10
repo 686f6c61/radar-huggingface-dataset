@@ -5,7 +5,7 @@
   "author": "groxaxo",
   "url": "https://huggingface.co/groxaxo/chatterbox-multilingual-MLX-Q6-G64",
   "created_at": "2026-10-09T04:56:00.000Z",
-  "updated_at": "2026-10-09T18:39:27.000Z",
+  "updated_at": "2026-10-09T20:03:46.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -79,7 +79,7 @@
   "trending_score": 0,
   "parameters": 677696431,
   "parameters_human": "677.7M",
-  "storage_bytes": 720086854,
+  "storage_bytes": 720499943,
   "storage_human": "720 MB",
   "base_model": "mlx-community/chatterbox-multilingual-v3",
   "formats": [

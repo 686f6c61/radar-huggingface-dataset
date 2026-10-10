@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2b",
+  "slug": "giovanniiacuzzo02-semeval-2027-task-1-subtrack-2b",
+  "author": "GiovanniIacuzzo02",
+  "url": "https://huggingface.co/GiovanniIacuzzo02/SemEval-2027-Task-1-subtrack-2b",
+  "created_at": "2026-10-09T19:28:08.000Z",
+  "updated_at": "2026-10-09T19:40:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-generation",
+    "conversational-generation",
+    "grounded-generation",
+    "evidence-grounding",
+    "lora",
+    "qwen2",
+    "experimental",
+    "conversational",
+    "en",
+    "dataset:DataScience-UIBK/RETECO-SemEval2027",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

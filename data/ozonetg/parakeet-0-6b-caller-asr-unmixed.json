@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "ozonetg/parakeet-0.6b-caller-asr-unmixed",
+  "slug": "ozonetg-parakeet-0-6b-caller-asr-unmixed",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-unmixed",
+  "created_at": "2026-10-09T22:55:18.000Z",
+  "updated_at": "2026-10-09T22:56:11.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "telephony",
+    "narrowband",
+    "8khz",
+    "call-center",
+    "conversational-speech",
+    "fastconformer",
+    "parakeet",
+    "rnnt",
+    "fine-tuned",
+    "en",
+    "base_model:nvidia/parakeet-unified-en-0.6b",
+    "base_model:finetune:nvidia/parakeet-unified-en-0.6b",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1237360640,
+  "storage_human": "1.2 GB",
+  "base_model": "nvidia/parakeet-unified-en-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean (8 kHz)",
+      "metric": "WER (%)",
+      "value": 1.77
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other (8 kHz)",
+      "metric": "WER (%)",
+      "value": 3.71
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (%)",
+      "value": 1.64
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (%)",
+      "value": 3.27
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallHome English (test)",
+      "metric": "WER (%)",
+      "value": 10.53
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallFriend English (dev)",
+      "metric": "WER (%)",
+      "value": 16.27
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "HarperValley Bank (caller channel)",
+      "metric": "WER (%)",
+      "value": 4.02
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Let's Go (re-typed references)",
+      "metric": "WER (%)",
+      "value": 17.01
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "AppTek call-center dialogues, US customers",
+      "metric": "WER (%)",
+      "value": 7.23
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Switchboard (3,000-utterance subset)",
+      "metric": "WER (%)",
+      "value": 7.97
+    }
+  ],
+  "sources": [
+    {
+      "title": "ozonetg/parakeet-0.6b-caller-asr-extra-audio · Hugging Face",
+      "url": "https://huggingface.co/ozonetg/parakeet-0.6b-caller-asr-extra-audio",
+      "snippet": "Instructions to use ozonetg/parakeet-.6b-caller-asr-extra-audio with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - achetronic/parakeet: OpenAI Whisper-compatible ASR server ...",
+      "url": "https://github.com/achetronic/parakeet/tree/master",
+      "snippet": "A high-performance automatic speech recognition (ASR) server written in Go. It uses NVIDIA&#x27;s Parakeet TDT 0.6B model through ONNX Runtime to provide speech-to-text transcription via an OpenAI Whisper-compatible API."
+    },
+    {
+      "title": "parakeet-tdt-0.6b-v2 Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/parakeet-tdt-0_6b-v2",
+      "snippet": "parakeet-tdt-.6b-v2 Downloadable # 1 on Throughput HF ASR Leaderboard Accurate and optimized English transcriptions with punctuation and word timestamps ASR English NVIDIA NIM NVIDIA Riva speech-to-text Get API Key"
+    },
+    {
+      "title": "Parakeet TDT 0.6B v3 Review: Pragmatic ASR for the Local Era",
+      "url": "https://aiindigo.com/blog/parakeet-tdt-0-6b-v3-review-pragmatic-asr-for-the-local-era",
+      "snippet": "In 2026, the trend in AI has shifted away from massive, monolithic cloud models toward \"right-sized\" local intelligence. Parakeet TDT 0.6B v3 is a prime example of this shift. It is a lightweight automatic speech recognition (ASR) model designed for developers who need efficient, on-device transcription without the latency or cost of a cloud API."
+    },
+    {
+      "title": "nvidia/parakeet-rnnt-0.6b · Hugging Face",
+      "url": "https://huggingface.co/nvidia/parakeet-rnnt-0.6b",
+      "snippet": "These are greedy WER numbers without external LM. More details on evaluation can be found at HuggingFace ASR Leaderboard NVIDIA Riva: Deployment NVIDIA Riva, is an accelerated speech AI SDK deployable on-prem, in all clouds, multi-cloud, hybrid, on edge, and embedded. Additionally, Riva provides: World-class out-of-the-box accuracy for the most common languages with model checkpoints trained ..."
+    }
+  ]
+}

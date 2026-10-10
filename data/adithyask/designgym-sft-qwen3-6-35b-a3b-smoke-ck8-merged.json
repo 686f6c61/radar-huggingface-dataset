@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke-ck8-merged",
+  "slug": "adithyask-designgym-sft-qwen3-6-35b-a3b-smoke-ck8-merged",
+  "author": "AdithyaSK",
+  "url": "https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke-ck8-merged",
+  "created_at": "2026-10-09T22:45:09.000Z",
+  "updated_at": "2026-10-09T22:45:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "designgym",
+    "openenv",
+    "trl",
+    "sft",
+    "lora",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584758,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

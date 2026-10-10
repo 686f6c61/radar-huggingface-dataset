@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DataScience-UIBK/uibk-embedding-v1",
+  "slug": "datascience-uibk-uibk-embedding-v1",
+  "author": "DataScience-UIBK",
+  "url": "https://huggingface.co/DataScience-UIBK/uibk-embedding-v1",
+  "created_at": "2026-10-09T23:08:24.000Z",
+  "updated_at": "2026-10-09T23:25:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "sentence-transformers",
+    "late-interaction",
+    "retrieval",
+    "feature-extraction",
+    "ModernBERT",
+    "sentence-similarity",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 717323432,
+  "storage_human": "717 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data Science UIBK",
+      "url": "https://datascienceuibk.github.io/",
+      "snippet": "WWW 2026 Tutorial Temporal Information Retrieval and Question Answering in the Age of LLMs April 13, 2026 | Dubai, UAE Visit Tutorial Website →"
+    },
+    {
+      "title": "DataScience-UIBK (DataScienceUIBK) - Hugging Face",
+      "url": "https://huggingface.co/DataScience-UIBK/models",
+      "snippet": "Org profile for DataScienceUIBK on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=embedding",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "What is Embedding? - Embeddings in Machine Learning Explained - AWS",
+      "url": "https://aws.amazon.com/what-is/embeddings-in-machine-learning/",
+      "snippet": "Embeddings are numerical representations of real-world objects that machine learning (ML) and artificial intelligence (AI) systems use to understand complex knowledge domains like humans do. As an example, computing algorithms understand that the difference between 2 and 3 is 1, indicating a close relationship between 2 and 3 as compared to 2 and 100. However, real-world data includes more ..."
+    },
+    {
+      "title": "Use a custom embedding model with AI Search - Azure Databricks",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/ai-search/custom-embedding-model",
+      "snippet": "Log a custom Python embedding model with MLflow so Databricks AI Search can use it to generate embeddings for your index."
+    }
+  ]
+}

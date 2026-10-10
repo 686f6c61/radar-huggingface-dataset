@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rajat-vajpayee/cosmos2_8b_g1_pickplace",
+  "slug": "rajat-vajpayee-cosmos2_8b_g1_pickplace",
+  "author": "rajat-vajpayee",
+  "url": "https://huggingface.co/rajat-vajpayee/cosmos2_8b_g1_pickplace",
+  "created_at": "2026-10-08T07:03:17.000Z",
+  "updated_at": "2026-10-10T02:36:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396299558834,
+  "storage_human": "396.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tourisme Rajat",
+      "url": "https://www.rajat.net/",
+      "snippet": "Tourisme Rajat vous fait découvrir les parcs de France et d’Europe : sensations inédites garanties. Pour les passionnés d’adrénaline …"
+    },
+    {
+      "title": "Voyage en France – Tourisme Rajat",
+      "url": "https://www.rajat.net/voyage-en-france/",
+      "snippet": "04 73 51 08 13 70 AVENUE LEO LAGRANGE, 63300 THIERS contact@rajat.net NOS HORAIRES Du lundi au vendredi de 8h30 à 12h"
+    },
+    {
+      "title": "Espace évènementiel et mariage à proximité de Lyon - Château de Rajat",
+      "url": "https://www.chateaurajat.fr/",
+      "snippet": "Optez pour le Château de Rajat pour garantir l'exclusivité et le prestige nécessaire à vos événements dans la région de Lyon. Ce …"
+    },
+    {
+      "title": "Château de Rajat — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ch%C3%A2teau_de_Rajat",
+      "snippet": "Le château de Rajat est un château français situé sur les territoires des communes de Saint-Pierre-de-Chandieu dans le …"
+    },
+    {
+      "title": "Château et orangerie pour réceptions et événements près de Lyon et ...",
+      "url": "https://www.chateaurajat.fr/nos-espaces-de-reception-w1",
+      "snippet": "Découvrez les espaces de réception uniques du Château de Rajat près de Lyon. L'élégance du château et le charme de l'orangerie …"
+    }
+  ]
+}

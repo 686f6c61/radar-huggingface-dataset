@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "ForgeWorks/ForgePlex-M2.1-10M",
+  "slug": "forgeworks-forgeplex-m2-1-10m",
+  "author": "ForgeWorks",
+  "url": "https://huggingface.co/ForgeWorks/ForgePlex-M2.1-10M",
+  "created_at": "2026-10-09T04:44:25.000Z",
+  "updated_at": "2026-10-10T00:51:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "forgeplex_m2",
+    "text-generation",
+    "language-model",
+    "forgeplex",
+    "forgeworks",
+    "rope",
+    "swiglu",
+    "gqa",
+    "attn-output-gate",
+    "refresh-gate",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9991936,
+  "parameters_human": "10.0M",
+  "storage_bytes": 40217300,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

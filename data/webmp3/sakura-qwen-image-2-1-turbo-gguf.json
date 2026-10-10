@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF",
+  "slug": "webmp3-sakura-qwen-image-2-1-turbo-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF",
+  "created_at": "2026-10-09T20:32:45.000Z",
+  "updated_at": "2026-10-09T20:36:43.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sakura",
+    "sakura-mini",
+    "stable-diffusion.cpp",
+    "comfyui",
+    "text-to-image",
+    "qwen-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 17254117912,
+  "storage_human": "17.3 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+      "snippet": "webmp3 / Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF Like 1 Text-to-Image GGUF sakura sakura-mini stable-diffusion.cpp qwen-image uncensored abliterated heretic Not-For-All-Audiences License:qwen-research Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF at main",
+      "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF/tree/main",
+      "snippet": "webmp3 / Sakura-Qwen-Image-2.1-Turbo-Uncensored-GGUF Like 1 Text-to-Image GGUF sakura sakura-mini stable-diffusion.cpp qwen-image uncensored abliterated heretic Not-For-All-Audiences License:qwen-research Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    },
+    {
+      "title": "How to Run Qwen-Image-2.1 Locally (the \"Uncensored ... - stashbase.ai",
+      "url": "https://stashbase.ai/blog/run-qwen-image-2-1-locally-uncensored/",
+      "snippet": "A post on X says Qwen-Image-2.1 was uncensored overnight. The files it points to are the original weights, unmodified. What the facts are, and two ways to run the model on your own computer."
+    },
+    {
+      "title": "Qwen Image model Guide - Stable Diffusion Art",
+      "url": "https://stable-diffusion-art.com/qwen-image/",
+      "snippet": "Qwen Image is a new open-source text-to-image model developed by Alibaba&#x27;s Qwen team. It&#x27;s quickly gaining thumbs-up from AI creators. Unlike many closed models, Qwen Image is both flexible and accessible, making it a strong alternative to Stable Diffusion and Flux models. You can run it locally in ComfyUI with customization."
+    }
+  ]
+}

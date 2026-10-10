@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_contact_perception_dr500_h32_b32_50k_20261009",
+  "slug": "sreetz-nv-so101_contact_perception_dr500_h32_b32_50k_20261009",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_contact_perception_dr500_h32_b32_50k_20261009",
+  "created_at": "2026-10-09T23:14:43.000Z",
+  "updated_at": "2026-10-09T23:14:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "dataset:sreetz-nv/so101_contact_perception_dr500_20261009",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top News - MSN",
+      "url": "https://www.msn.com/en-us/channel/topic/Top%20News/tp-Y_8c1db373-86c0-4213-9e06-0bb6deb2a336",
+      "snippet": "View and follow news for your favourite topics on MSN.Read more"
+    },
+    {
+      "title": "Local - MSN",
+      "url": "https://www.msn.com/en-us/channel/topic/Local/tp-Y_585aa29e-27dd-433e-9a09-6bbeab2246bb",
+      "snippet": "View and follow news for your favourite topics on MSN."
+    },
+    {
+      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
+      "url": "https://www.msn.com/fr-CA",
+      "snippet": "MSN Québec offre des actualités, sport, divertissement, finance, météo, horoscope et recettes. Restez connectés via Hotmail …"
+    },
+    {
+      "title": "MSN | Personalised News, Top Headlines, Live Updates and more",
+      "url": "https://g.msn.com/1cl91enus/937",
+      "snippet": "Get the latest headlines, weather updates, sports scores, and entertainment news on MSN. Explore technology, business, cars, …"
+    },
+    {
+      "title": "Top Stories - MSN",
+      "url": "https://www.msn.com/en-us/channel/topic/Top%20Stories/tp-Y_46b78bbb-31c4-4fc5-8a4a-858072348d06",
+      "snippet": "View and follow news for your favourite topics on MSN."
+    }
+  ]
+}

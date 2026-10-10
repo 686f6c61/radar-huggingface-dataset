@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pmmikhailov/multimodal-generation-review",
+  "slug": "pmmikhailov-multimodal-generation-review",
+  "author": "pmmikhailov",
+  "url": "https://huggingface.co/pmmikhailov/multimodal-generation-review",
+  "created_at": "2026-10-09T22:31:07.000Z",
+  "updated_at": "2026-10-09T22:31:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ÉNERGIES GREEN : installateur panneaux solaires",
+      "url": "https://energies-green.com/",
+      "snippet": "Comparez les offres personnalisées de nos experts en panneaux solaires et pompes à chaleur, et faites un pas de géant vers …"
+    },
+    {
+      "title": "greensystemenergies.fr",
+      "url": "https://greensystemenergies.fr/",
+      "snippet": "Greensytem Energies réalise tous vos projets en énergies renouvelables aux normes en vigueur. Nos techniciens-conseils proche …"
+    },
+    {
+      "title": "Entreprise - Energies-green",
+      "url": "https://energies-green.com/about/",
+      "snippet": "ÉNERGIES GREEN vous contactera en 72 heures avec un devis adapté à vos besoins. Nous nous efforçons de promouvoir la …"
+    },
+    {
+      "title": "ENGIE - Connectez-vous à votre Espace Client",
+      "url": "https://particuliers.engie.fr/login-page/authentification.html?msockid=0e6505ce6b336bf3099b12236ad76ac2",
+      "snippet": "Personnalisez votre offre d'énergie avec nos options et services ! Suivi de vos consommations, gestion de vos énergies, assurances, …"
+    },
+    {
+      "title": "Lisez les avis marchands de energies-green.com - Trustpilot",
+      "url": "https://fr.trustpilot.com/review/energies-green.com",
+      "snippet": "Pour protéger l’intégrité de la plateforme, chaque avis, qu’il soit vérifié ou non, est analysé par notre logiciel automatisé 24 h/24 et 7 …"
+    }
+  ]
+}

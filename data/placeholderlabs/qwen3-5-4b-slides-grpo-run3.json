@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "placeholderlabs/qwen3.5-4b-slides-grpo-run3",
+  "slug": "placeholderlabs-qwen3-5-4b-slides-grpo-run3",
+  "author": "placeholderlabs",
+  "url": "https://huggingface.co/placeholderlabs/qwen3.5-4b-slides-grpo-run3",
+  "created_at": "2026-10-09T23:58:54.000Z",
+  "updated_at": "2026-10-10T00:45:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:placeholderlabs/qwen3.5-4b-slides-v2",
+    "base_model:finetune:placeholderlabs/qwen3.5-4b-slides-v2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 416793760,
+  "storage_human": "417 MB",
+  "base_model": "placeholderlabs/qwen3.5-4b-slides-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

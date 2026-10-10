@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "thealper2/berturk-punctuation-restoration",
+  "slug": "thealper2-berturk-punctuation-restoration",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/berturk-punctuation-restoration",
+  "created_at": "2026-10-09T21:12:29.000Z",
+  "updated_at": "2026-10-09T21:14:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "punctuation-restoration",
+    "truecasing",
+    "turkish",
+    "tr",
+    "dataset:GoktugD/turkish-punctuation-restoration-500k",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:finetune:dbmdz/bert-base-turkish-cased",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110032904,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440154960,
+  "storage_human": "440 MB",
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Punctuation restoration",
+      "dataset": "GoktugD/turkish-punctuation-restoration-500k",
+      "metric": "Punctuation macro F1 (excl. O)",
+      "value": 0.9987
+    },
+    {
+      "task": "Punctuation restoration",
+      "dataset": "GoktugD/turkish-punctuation-restoration-500k",
+      "metric": "Punctuation macro F1 (incl. O)",
+      "value": 0.9989
+    },
+    {
+      "task": "Punctuation restoration",
+      "dataset": "GoktugD/turkish-punctuation-restoration-500k",
+      "metric": "Punctuation weighted F1",
+      "value": 0.9992
+    },
+    {
+      "task": "Punctuation restoration",
+      "dataset": "GoktugD/turkish-punctuation-restoration-500k",
+      "metric": "Casing macro F1",
+      "value": 0.9716
+    }
+  ],
+  "sources": [
+    {
+      "title": "Most Viewed girlsdoporn Porn Videos - PornSlash",
+      "url": "https://www.pornslash.com/cat/girlsdoporn?sort=views",
+      "snippet": "girlsdoporn [hardcore, deep throat, blowjob, ball licking, facial, teen, amateur, casting] 68.8k views 1080p 44:43Read more"
+    },
+    {
+      "title": "Porn episode 502 - ExPornToons",
+      "url": "https://exporntoons.net/watch/-193642086_456239026",
+      "snippet": "Petite Chinese Teen Gets Ger Tight Pussy Stretched by a Big Pornstar Cock! Bunny Umi and Maximo Garcia. MILF Stepmom with …"
+    },
+    {
+      "title": "GirlsDoPorn Full Length Porn Videos - CUMS",
+      "url": "https://cums.net/channel/girlsdoporn/",
+      "snippet": "Watch the best GirlsDoPorn Full Length Videos for Free at CUMS!"
+    },
+    {
+      "title": "Girls Do Porn - Free Premium Porn Video Archive",
+      "url": "https://premiumporn.org/girls-do-porn/",
+      "snippet": "Watch porn videos of all categories for free, only here on PremiumPorn.org!"
+    },
+    {
+      "title": "Girlsdoporn (581 Videos) - PornKen.com",
+      "url": "https://pornken.com/playlist/girlsdoporn/296703-319450",
+      "snippet": "Daily update 720p,1080p Full HD Porn Videos from Brazzers, Naughty America, Faketaxi, Mofos and mores. Free Download All."
+    }
+  ]
+}

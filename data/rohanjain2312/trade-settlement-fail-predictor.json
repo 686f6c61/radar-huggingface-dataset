@@ -5,7 +5,7 @@
   "author": "rohanjain2312",
   "url": "https://huggingface.co/rohanjain2312/trade-settlement-fail-predictor",
   "created_at": "2026-10-08T19:53:53.000Z",
-  "updated_at": "2026-10-08T22:51:23.000Z",
+  "updated_at": "2026-10-09T20:05:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "tabular-classification",

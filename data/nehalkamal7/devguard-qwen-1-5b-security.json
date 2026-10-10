@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nehalkamal7/devguard-qwen-1.5b-security",
+  "slug": "nehalkamal7-devguard-qwen-1-5b-security",
+  "author": "nehalkamal7",
+  "url": "https://huggingface.co/nehalkamal7/devguard-qwen-1.5b-security",
+  "created_at": "2026-10-09T21:00:39.000Z",
+  "updated_at": "2026-10-09T21:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code-security",
+    "vulnerability-detection",
+    "lora",
+    "qlora",
+    "code-generation",
+    "cybersecurity",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15794956,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

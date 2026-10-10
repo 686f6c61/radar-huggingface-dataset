@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
+  "slug": "francesca9805-tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/tur-latn-100mb-after-ppt-mp-struct-core-100mb-ckpt500_seed3407",
+  "created_at": "2026-10-09T23:56:27.000Z",
+  "updated_at": "2026-10-10T01:56:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed3407",
+    "base_model:finetune:francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 8486631571,
+  "storage_human": "8.5 GB",
+  "base_model": "francesca9805/tur-latn-100mb-ppt-mp-struct-core-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://www.xnxx.com/search/shemale+condom",
+      "snippet": "This menu's updates are based on your activity. The data is only saved locally (on your computer) and never transferred to us. You …"
+    },
+    {
+      "title": "Trans Angels",
+      "url": "https://transmodels.tv/",
+      "snippet": "Established to bridge a significant gap in the adult industry, TransAngels is dedicated to producing high-quality content that …"
+    },
+    {
+      "title": "young trans beauty — Yandex: found 72 thousand results",
+      "url": "https://tv.yandex.com/search?text=young+trans+beauty",
+      "snippet": "Feb 4, 2025 · Find 9+ Thousand Trans Girl stock images in HD and millions of other royalty-free stock photos, 3D objects, …"
+    },
+    {
+      "title": "Shemale Movies - Full List | Moviefone",
+      "url": "https://www.moviefone.com/movies/keywords/shemale/",
+      "snippet": "Every movie tagged Shemale, with trailers, reviews and where to stream each one."
+    },
+    {
+      "title": "r/tspetite - Reddtastic",
+      "url": "https://reddtastic.com/r/tspetite",
+      "snippet": "Reddit recently changed how its data must be accessed. I’m working on a solution."
+    }
+  ]
+}

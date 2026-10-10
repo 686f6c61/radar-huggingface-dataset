@@ -5,7 +5,7 @@
   "author": "alxnahas",
   "url": "https://huggingface.co/alxnahas/strands-decider-v21-webgpu",
   "created_at": "2026-10-09T16:31:10.000Z",
-  "updated_at": "2026-10-09T16:31:42.000Z",
+  "updated_at": "2026-10-09T21:59:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",

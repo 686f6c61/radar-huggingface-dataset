@@ -5,7 +5,7 @@
   "author": "marshdsouza2001",
   "url": "https://huggingface.co/marshdsouza2001/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-10-07T21:04:02.000Z",
-  "updated_at": "2026-10-08T21:20:47.000Z",
+  "updated_at": "2026-10-09T11:05:46.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 1,
-  "downloads_30d": 13,
+  "downloads_30d": 23,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 803508210,
-  "storage_human": "804 MB",
+  "storage_bytes": 1071340770,
+  "storage_human": "1.1 GB",
   "base_model": "marshdsouza2001/learn_hf_food_not_food_text_classifier-distilbert-base-uncased",
   "formats": [
     "safetensors"

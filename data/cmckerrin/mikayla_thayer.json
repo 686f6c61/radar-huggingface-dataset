@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Cmckerrin/Mikayla_Thayer",
+  "slug": "cmckerrin-mikayla_thayer",
+  "author": "Cmckerrin",
+  "url": "https://huggingface.co/Cmckerrin/Mikayla_Thayer",
+  "created_at": "2026-10-09T20:04:03.000Z",
+  "updated_at": "2026-10-09T20:04:07.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69842,
+  "storage_human": "69842 B",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV de RTL tvi - aujourd'hui ce soir",
+      "url": "https://www.mon-programme-tv.be/chaine/19/programme-television-rtl-tvi.html",
+      "snippet": "1 day ago · Retrouvez gratuitement tout le programme télévisé de RTL tvi pour ce jeudi (08/10/2026). Inscrivez-vous et recevez un …"
+    },
+    {
+      "title": "Programme TV de RTL tvi - demain le soir",
+      "url": "https://www.mon-programme-tv.be/chaine/demain/19/programme-television-rtl-tvi.html",
+      "snippet": "20 hours ago · Retrouvez gratuitement tout le programme télévisé de RTL tvi pour ce vendredi (09/10/2026). Inscrivez-vous et …"
+    },
+    {
+      "title": "RTL tvi : programme tv ce soir et en ce moment sur RTL tvi",
+      "url": "https://tv-programme.com/rtl-tvi",
+      "snippet": "Programme TV RTL tvi complet et gratuit de ce soir et de la semaine. Ne manquez aucun programme RTL tvi (émissions, séries, …"
+    },
+    {
+      "title": "Programme TV RTL TVI avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/chaine/programme-rtl-tvi-146.html",
+      "snippet": "Que regarder à la télé sur RTL TVI ? Consultez la grille des programmes et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV de RTL tvi d'aujourd'hui - sudinfo.be",
+      "url": "https://programmestv.sudinfo.be/programme-tv/chaine/rtl-tvi/410",
+      "snippet": "Le programme de RTL TVI Le programme TV de RTL TVI vous permet de suivre en un coup d’œil toutes les émissions diffusées …"
+    }
+  ]
+}

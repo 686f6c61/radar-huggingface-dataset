@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "qiusizhan/Qwen2.5-Coder-3B-BALD-word-Backdoored",
+  "slug": "qiusizhan-qwen2-5-coder-3b-bald-word-backdoored",
+  "author": "qiusizhan",
+  "url": "https://huggingface.co/qiusizhan/Qwen2.5-Coder-3B-BALD-word-Backdoored",
+  "created_at": "2026-10-09T20:00:03.000Z",
+  "updated_at": "2026-10-09T20:00:10.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "trl",
+    "backdoor",
+    "safety",
+    "model-audit",
+    "highway-env",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131229777,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": true,
+  "removed_at": "2026-10-10T02:38:39.388Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "View & open files - Google Drive Help",
+      "url": "https://support.google.com/drive/answer/2423485?hl=en",
+      "snippet": "If you open a Google Doc, Sheet, Slides presentation, Form, or Drawing, it will open using that application. If you open a video, …"
+    },
+    {
+      "title": "Keyboard shortcuts for Google Docs",
+      "url": "https://support.google.com/docs/answer/179738?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Keyboard shortcuts for Google Docs Use keyboard shortcuts in Google Docs to navigate, format, and edit. Note: Some shortcuts …"
+    },
+    {
+      "title": "Document sharing basics in Google Docs",
+      "url": "https://support.google.com/a/users/answer/9305685?hl=en",
+      "snippet": "Unshare a document Stop sharing a document you own Find the file or folder in: Google Drive Google Docs Google Sheets Google …"
+    },
+    {
+      "title": "Afficher les plans, les résumés, les règles et les ... - Google Help",
+      "url": "https://support.google.com/docs/answer/6367684?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Les résumés dans Google Docs ne sont plus disponibles depuis le 21 mars 2024. Les résumés de vos documents ne s'affichent plus …"
+    },
+    {
+      "title": "Use templates - Computer - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/148833?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Use a Google template On your computer, go to Google Docs, Sheets, Slides, or Forms. At the top right , click Template Gallery. …"
+    }
+  ]
+}

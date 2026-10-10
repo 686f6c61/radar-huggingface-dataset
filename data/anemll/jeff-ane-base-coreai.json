@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "anemll/jeff-ane-base-coreai",
+  "slug": "anemll-jeff-ane-base-coreai",
+  "author": "anemll",
+  "url": "https://huggingface.co/anemll/jeff-ane-base-coreai",
+  "created_at": "2026-10-09T19:16:45.000Z",
+  "updated_at": "2026-10-10T02:25:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "coreai",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreai",
+    "safetensors",
+    "jeff-decision",
+    "apple-neural-engine",
+    "ane",
+    "jeff",
+    "decision-model",
+    "anemll",
+    "zero-shot-classification",
+    "en",
+    "base_model:mstrasser/jeff-base",
+    "base_model:finetune:mstrasser/jeff-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3236526111,
+  "storage_human": "3.2 GB",
+  "base_model": "mstrasser/jeff-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FemDom - Vintage Bdsm Art",
+      "url": "https://vintagebdsmart.com/tag/femdom/",
+      "snippet": "Nov 17, 2025 · FemDom Classic illustrations of female dominance, male submission and powerful women in control."
+    },
+    {
+      "title": "Mature Moms TV - 301 Moved Permanently",
+      "url": "http://maturemoms.tv/",
+      "snippet": "301 Moved Permanently 301 Moved Permanently nginx"
+    },
+    {
+      "title": "Videos – Break Her In",
+      "url": "https://breakherin.com/portfolio-category/videos/",
+      "snippet": "Videos – Break Her In. Menu \"\" not defined. Portfolio Category: Videos. Home-Portfolio Category: Videos. All . Videos . XXXBarbie . …"
+    },
+    {
+      "title": "bravoteens (@Bravo_Teens) / X",
+      "url": "https://x.com/Bravo_Teens",
+      "snippet": "Apr 11, 2013 · See the latest conversations with @Bravo_Teens."
+    },
+    {
+      "title": "Painsluts",
+      "url": "http://www.painsluts.org/",
+      "snippet": ""
+    }
+  ]
+}

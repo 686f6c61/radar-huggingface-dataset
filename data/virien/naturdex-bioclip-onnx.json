@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Virien/naturdex-bioclip-onnx",
+  "slug": "virien-naturdex-bioclip-onnx",
+  "author": "Virien",
+  "url": "https://huggingface.co/Virien/naturdex-bioclip-onnx",
+  "created_at": "2026-10-09T23:18:33.000Z",
+  "updated_at": "2026-10-09T23:18:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bioclip",
+    "onnxruntime-web",
+    "int8",
+    "biology",
+    "zero-shot-image-classification",
+    "base_model:imageomics/bioclip",
+    "base_model:quantized:imageomics/bioclip",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87384964,
+  "storage_human": "87 MB",
+  "base_model": "imageomics/bioclip",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models compatible with the ONNX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=onnx",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "GitHub - onnx/models: A collection of pre-trained, state-of-the-art ...",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "Models - ONNX Runtime",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "Biology Model Trained on NVIDIA GPUs Identifies Over a Million Species ...",
+      "url": "https://blogs.nvidia.com/blog/bioclip2-foundation-ai-model/",
+      "snippet": "BioCLIP 2 is an NVIDIA-accelerated, biology-based foundation model trained on the biggest, most diverse dataset of organisms to date."
+    },
+    {
+      "title": "BioCLIP Ecosystem | Foundation Models for the Tree of Life",
+      "url": "https://imageomics.github.io/bioclip-ecosystem/pages/models.html",
+      "snippet": "BioCLIP (Original) The original foundation model presented in \"BioCLIP: A Vision Foundation Model for the Tree of Life\". It established the standard for using CLIP architectures in organismal biology. Trained on the TreeOfLife-10M dataset, it covers over 450,000 taxa and learns a hierarchical representation that aligns with the biological taxonomy."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Expanded-Repetition/code_model_results",
+  "slug": "expanded-repetition-code_model_results",
+  "author": "Expanded-Repetition",
+  "url": "https://huggingface.co/Expanded-Repetition/code_model_results",
+  "created_at": "2026-10-09T20:54:07.000Z",
+  "updated_at": "2026-10-09T20:54:34.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "codegen",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:Salesforce/codegen-350M-mono",
+    "base_model:finetune:Salesforce/codegen-350M-mono",
+    "license:bsd-3-clause",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 356712448,
+  "parameters_human": "356.7M",
+  "storage_bytes": 713447425,
+  "storage_human": "713 MB",
+  "base_model": "Salesforce/codegen-350M-mono",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blocus des lycées : le principal syndicat de chefs d'établissement ...",
+      "url": "https://www.laprovence.com/article/politique/38466822100121/blocus-des-lycees-le-principal-syndicat-de-chefs-detablissement-refuse-la-journee-banalisee",
+      "snippet": "2 days ago · Blocus des lycées : le principal syndicat de chefs d'établissement refuse la journée banalisée Interrogé sur les temps …"
+    },
+    {
+      "title": "Colère des lycéens : « Il faudra autre chose »… Le principal syndicat ...",
+      "url": "https://www.20minutes.fr/societe/4252064-20261007-colere-lyceens-faudra-autre-chose-principal-syndicat-proviseurs-refuse-journee-banalise",
+      "snippet": "2 days ago · Le SNPDEN-UNSA, principal syndicat des chefs d'établissement, refuse de mettre en place la journée banalisée …"
+    },
+    {
+      "title": "Lycées: le principal syndicat de chefs d’établissement refuse la ...",
+      "url": "https://www.mediapart.fr/journal/fil-dactualites/071026/lycees-le-principal-syndicat-de-chefs-d-etablissement-refuse-la-journee-banalisee",
+      "snippet": "2 days ago · Le principal syndicat des chefs d’établissement, le SNPDEN-UNSA, refuse de mettre en place la journée banalisée …"
+    },
+    {
+      "title": "Lycées : le principal syndicat de chefs d'établissement refuse la ...",
+      "url": "https://www.msn.com/fr-fr/actualite/other/lyc%C3%A9es-le-principal-syndicat-de-chefs-d-%C3%A9tablissement-refuse-la-journ%C3%A9e-banalis%C3%A9e/ar-AA2dMooI",
+      "snippet": "Le proposition du gouvernement de mettre en place une journée banalisée d'échanges pour apaiser la contestation lycéenne, le …"
+    },
+    {
+      "title": "Lycées : le SNPDEN-UNSA refuse la journée banalisée du …",
+      "url": "https://lejdf.fr/lycees-le-snpden-unsa-refuse-la-journee-banalisee-du-gouvernement-1ca08e/",
+      "snippet": "2 days ago · Principal syndicat des personnels de direction, le SNPDEN-UNSA oppose une fin de non-recevoir immédiate à la …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke",
+  "slug": "adithyask-designgym-sft-qwen3-6-35b-a3b-smoke",
+  "author": "AdithyaSK",
+  "url": "https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-smoke",
+  "created_at": "2026-10-09T21:56:42.000Z",
+  "updated_at": "2026-10-09T22:39:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "hf_jobs",
+    "trl",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 326860756,
+  "storage_human": "327 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Renderotica - Renderotica.com the online community for 3d erotica.",
+      "url": "https://www.renderotica.com/",
+      "snippet": "Renderotica is the premier online community for 3d erotica, comics, art, news, blogs, galleries, models, textures, and tutorials."
+    },
+    {
+      "title": "Renderotica - Catalog - 3D Models, 3D Content",
+      "url": "https://www.renderotica.com/store.aspx",
+      "snippet": "Renderotica is the premier online community for 3d erotica, comics, art, news, blogs, galleries, models, textures, and tutorials."
+    },
+    {
+      "title": "Renderotica Comics | 8muses - Sex and Porn Comics",
+      "url": "https://comics.8muses.com/comics/album/Renderotica-Comics",
+      "snippet": "A huge collection of free porn comics for adults. Read Renderotica Comics online for free at 8muses.com"
+    },
+    {
+      "title": "Renderotica - - 3D Erotic Art Gallery",
+      "url": "https://www.renderotica.com/gallery.aspx",
+      "snippet": "Renderotica is the premier online community for 3d erotica, comics, art, news, blogs, galleries, models, textures, and tutorials."
+    },
+    {
+      "title": "Renderotica - Catalog - Erotic Comics, 3D Comics",
+      "url": "https://www.renderotica.com/comics/",
+      "snippet": "Renderotica is the premier online community for 3d erotica, comics, art, news, blogs, galleries, models, textures, and tutorials."
+    }
+  ]
+}

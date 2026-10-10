@@ -5,7 +5,7 @@
   "author": "SDoyez",
   "url": "https://huggingface.co/SDoyez/AttentionUnet_5",
   "created_at": "2026-10-06T12:48:38.000Z",
-  "updated_at": "2026-10-07T00:55:29.000Z",
+  "updated_at": "2026-10-09T13:55:33.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 69111070,
-  "storage_human": "69 MB",
+  "storage_bytes": 134586107,
+  "storage_human": "135 MB",
   "base_model": null,
   "formats": [
     "onnx"

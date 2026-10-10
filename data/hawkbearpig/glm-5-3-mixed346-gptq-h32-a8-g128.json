@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HawkBearPig/GLM-5.3-Mixed346-GPTQ-H32-A8-g128",
+  "slug": "hawkbearpig-glm-5-3-mixed346-gptq-h32-a8-g128",
+  "author": "HawkBearPig",
+  "url": "https://huggingface.co/HawkBearPig/GLM-5.3-Mixed346-GPTQ-H32-A8-g128",
+  "created_at": "2026-10-09T20:44:28.000Z",
+  "updated_at": "2026-10-09T21:36:53.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "glm",
+    "moe",
+    "quantization",
+    "gptq",
+    "mixed-precision",
+    "int8",
+    "custom-format",
+    "text-generation",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-BF16",
+    "base_model:quantized:zai-org/GLM-5.3-BF16",
+    "license:other",
+    "dgpp_mixed346",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 106030639104,
+  "parameters_human": "106.03B",
+  "storage_bytes": 409359483140,
+  "storage_human": "409.4 GB",
+  "base_model": "zai-org/GLM-5.3-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HawkBearPig (Stephen Hawkins) - Hugging Face",
+      "url": "https://huggingface.co/HawkBearPig",
+      "snippet": "User profile of Stephen Hawkins on Hugging Face"
+    },
+    {
+      "title": "HawkBearPig (Stephen Hawkins) - Hugging Face",
+      "url": "https://huggingface.co/HawkBearPig/models",
+      "snippet": "HawkBearPig/GLM-5.3-Int4-Int8Mix-RTN-g64 Text Generation • 391B•Updated 11 days ago• 318"
+    },
+    {
+      "title": "GLM-5.3 - openlm.ai",
+      "url": "https://openlm.ai/glm-5.3/",
+      "snippet": "GLM-5.3 is our latest flagship model for coding and long-horizon tasks. It marks a substantial leap in long-horizon task capability over its predecessor GLM-5.1 and delivers that capability on a solid 1M-token context. It is pure open with an MIT open-source license — no regional limits, technical access without borders."
+    },
+    {
+      "title": "GitHub - HawkBearPig/dgpp: Optimized inference for the DGX Spark and ...",
+      "url": "https://github.com/HawkBearPig/dgpp",
+      "snippet": "DGPP is a C++/CUDA inference engine for NVIDIA DGX Spark (GB10) systems. It serves GLM-5.3-Flash, full GLM-5.3, Qwen3.8-Flash-Next, GLM-4.7 and DeepSeek-V4.1-Flash through an OpenAI-compatible HTTP API, with tensor parallelism over RoCE for multi-node deployments. Supported configurations use one, two or four nodes, depending on the model and its memory requirements. The repository contains ..."
+    },
+    {
+      "title": "dgpp/docs/glm53_plan.md at master · HawkBearPig/dgpp",
+      "url": "https://github.com/HawkBearPig/dgpp/blob/master/docs/glm53_plan.md",
+      "snippet": "0. Summary Full GLM-5.3 (GlmMoeDsaForCausalLM, model_type glm_moe_dsa) is a 78-layer plain pre-norm MoE with DeepSeek-V3-style MLA attention and a DSA top-2048 indexer on every layer: 3 dense-MLP layers then 75 MoE layers of 256 routed experts (top-8, sigmoid + correction bias, routed_scaling_factor 2.5, noaux_tc) plus one shared expert of 2048; hidden 6144; 64 heads with qk_nope 192 + qk_rope ..."
+    }
+  ]
+}

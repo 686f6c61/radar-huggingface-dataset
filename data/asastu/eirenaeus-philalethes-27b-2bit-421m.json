@@ -5,7 +5,7 @@
   "author": "asastu",
   "url": "https://huggingface.co/asastu/Eirenaeus-Philalethes-27B-2bit-421M",
   "created_at": "2026-10-07T18:13:39.000Z",
-  "updated_at": "2026-10-08T04:06:55.000Z",
+  "updated_at": "2026-10-09T20:00:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,11 +33,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 5,
+  "downloads_30d": 207,
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 9452277197,
+  "storage_bytes": 9473972685,
   "storage_human": "9.5 GB",
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, convaiinnovations/laya",
   "formats": [

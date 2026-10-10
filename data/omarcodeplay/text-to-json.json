@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "OmarCodePlay/Text-to-json",
+  "slug": "omarcodeplay-text-to-json",
+  "author": "OmarCodePlay",
+  "url": "https://huggingface.co/OmarCodePlay/Text-to-json",
+  "created_at": "2026-10-09T22:44:02.000Z",
+  "updated_at": "2026-10-10T02:27:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161710822,
+  "storage_human": "162 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

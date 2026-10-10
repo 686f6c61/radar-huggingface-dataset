@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations",
+  "slug": "groxaxo-moss-tts-v1-5-argentina-mlx-quantizations",
+  "author": "groxaxo",
+  "url": "https://huggingface.co/groxaxo/MOSS-TTS-v1.5-Argentina-MLX-Quantizations",
+  "created_at": "2026-10-09T19:51:40.000Z",
+  "updated_at": "2026-10-09T20:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "omlx",
+    "quantized",
+    "lora",
+    "spanish",
+    "argentina",
+    "text-to-speech",
+    "es",
+    "en",
+    "base_model:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "base_model:quantized:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35953494278,
+  "storage_human": "36.0 GB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MARVEL'S WOLVERINE PS5 #1 - YouTube",
+      "url": "https://www.youtube.com/watch?v=PqQh3-gEKUY",
+      "snippet": "Sep 14, 2026 · Gameplay | Let's Play FR (French) on Marvel's Wolverine (PS5 Pro) Remember to subscribe …"
+    },
+    {
+      "title": "Sony Marvel's Wolverine (PS5, DE, FR, IT) - acheter sur Galaxus",
+      "url": "https://www.galaxus.ch/fr/s1/product/sony-marvels-wolverine-ps5-de-fr-it-jeu-video-71125289?msockid=2dab61e135f7640e1fd0760c34186554",
+      "snippet": "Dans sa lutte pour l'avenir, Wolverine doit faire équipe avec d'autres mutants du monde entier, visitant des endroits comme le …"
+    },
+    {
+      "title": "Sony Marvel's Wolverine (PS5, EN) - acheter sur Galaxus",
+      "url": "https://www.galaxus.ch/fr/s1/product/sony-marvels-wolverine-ps5-en-jeu-video-71302961?msockid=2dab61e135f7640e1fd0760c34186554",
+      "snippet": "Avec une brutalité explosive et ses griffes en adamantium, Wolverine combat des ennemis et surmonte des défis apparemment …"
+    },
+    {
+      "title": "WOLVERINE PS5 #2: Jean Grey - YouTube",
+      "url": "https://www.youtube.com/watch?v=LtgGRGE9iJA",
+      "snippet": "Sep 15, 2026 · Gameplay | Let's Play FR (French) on Marvel's Wolverine (PS5 Pro) Remember to subscribe …"
+    },
+    {
+      "title": "Sony Wolverine for PS5 - acheter sur Galaxus",
+      "url": "https://www.galaxus.fr/fr/s1/product/sony-wolverine-for-ps5-ps5-jeu-video-71302961",
+      "snippet": "Avec une brutalité explosive et ses griffes en adamantium, Wolverine combat des ennemis et surmonte des défis apparemment …"
+    }
+  ]
+}

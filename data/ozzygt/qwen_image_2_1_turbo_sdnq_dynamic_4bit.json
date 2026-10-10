@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "OzzyGT/Qwen_Image_2_1_Turbo_sdnq_dynamic_4bit",
+  "slug": "ozzygt-qwen_image_2_1_turbo_sdnq_dynamic_4bit",
+  "author": "OzzyGT",
+  "url": "https://huggingface.co/OzzyGT/Qwen_Image_2_1_Turbo_sdnq_dynamic_4bit",
+  "created_at": "2026-10-09T21:37:57.000Z",
+  "updated_at": "2026-10-09T21:44:34.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-generation",
+    "qwen-image",
+    "sdnq",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3812110336,
+  "parameters_human": "3.81B",
+  "storage_bytes": 11525740682,
+  "storage_human": "11.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

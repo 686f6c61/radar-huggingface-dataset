@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455",
+  "slug": "francesca9805-nor-latn-100mb-after-ppt-dp-10mb-packed-bfdiso-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed455",
+  "created_at": "2026-10-09T19:44:28.000Z",
+  "updated_at": "2026-10-09T20:12:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/nor-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+    "base_model:finetune:francesca9805/nor-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2996012165,
+  "storage_human": "3.0 GB",
+  "base_model": "francesca9805/nor-latn-100mb-ppt-Dp-10mb-packed-bfdiso_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno gratuit recommandé: vidéos de sexe hardcore | Pornhub",
+      "url": "https://fr.pornhub.com/recommended",
+      "snippet": "Avoir quelqu'un qui vous recommande du porno gratuit, c'est comme avoir un conservateur pour votre collection de XXX. Profitez …"
+    },
+    {
+      "title": "Sophie Dee Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/sophie-dee",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Sophie Dee. Parcourez le contenu qu'elle a uploadé …"
+    },
+    {
+      "title": "Nicole Aniston Vidéos Porno - Profil Vérifié de Pornstar | Pornhub",
+      "url": "https://fr.pornhub.com/pornstar/nicole-aniston",
+      "snippet": "Venez voir les meilleures vidéos pornos, images, gifs et playlists de la pornstar Nicole Aniston. Parcourez le contenu qu'elle a …"
+    },
+    {
+      "title": "French Vidéos Porno - Pornhub.com",
+      "url": "https://fr.pornhub.com/video?c=94",
+      "snippet": "Regarde les vidéos Gay Français gratuites récemment en vedette sur Pornhub. Les stars du porno les plus chaudes se mettent à nu …"
+    },
+    {
+      "title": "PornHub.com :: Le Site Porno Gratuit Avec Les Meilleures Vidéos X",
+      "url": "https://fr.pornhub.com/video",
+      "snippet": "Pornhub est probablement le meilleur site porno gratuit. Aucun autre site de cul ne propose autant de catégories. Les meilleures …"
+    }
+  ]
+}

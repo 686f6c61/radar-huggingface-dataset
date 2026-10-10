@@ -5,7 +5,7 @@
   "author": "e-n-v-y",
   "url": "https://huggingface.co/e-n-v-y/Qwen-Image-2.1-Fix-v2.0",
   "created_at": "2026-10-03T08:21:16.000Z",
-  "updated_at": "2026-10-03T08:28:03.000Z",
+  "updated_at": "2026-10-09T21:52:43.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-image",
@@ -25,8 +25,8 @@
   "trending_score": 36,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 99505437,
-  "storage_human": "100 MB",
+  "storage_bytes": 107101818,
+  "storage_human": "107 MB",
   "base_model": "Qwen/Qwen-Image-2.1",
   "formats": [
     "diffusers"

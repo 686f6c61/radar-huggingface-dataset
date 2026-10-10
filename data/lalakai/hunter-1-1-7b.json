@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Lalakai/Hunter-1-1.7B",
+  "slug": "lalakai-hunter-1-1-7b",
+  "author": "Lalakai",
+  "url": "https://huggingface.co/Lalakai/Hunter-1-1.7B",
+  "created_at": "2026-10-10T00:01:58.000Z",
+  "updated_at": "2026-10-10T00:01:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "spark2_5",
+    "cybersecurity",
+    "incident-response",
+    "causal-reasoning",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:finetune:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1707657216,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3415340632,
+  "storage_human": "3.4 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rivals To Lovers (Marvel Rivals Compilation) - Rule34video.com",
+      "url": "https://rule34video.com/video/4029997/rival-to-lovers-marvel-rivals-compilation/",
+      "snippet": "Watch Rivals To Lovers (Marvel Rivals Compilation) for free on Rule34video.com The hottest videos and hardcore sex in the best …"
+    },
+    {
+      "title": "Marvel Rivals — Rule 34 Art & Animations | R34Hub",
+      "url": "https://r34hub.com/hub/marvel_rivals",
+      "snippet": "Marvel Rivals Rule 34 hub focused on Marvel Rivals porn and r34 characters. Explore rule 34 Marvel Rivals artwork featuring Scarlet …"
+    },
+    {
+      "title": "Marvel R34 | Pictures | Scrolller NSFW",
+      "url": "https://scrolller.com/r/Marvel_r34",
+      "snippet": "View 288 NSFW pictures and enjoy Marvel R34 with the endless random gallery on Scrolller.com. Go on to discover millions of …"
+    },
+    {
+      "title": "'Marvel Rivals' Is a Hit With 'Rule 34' Porn Communities",
+      "url": "https://www.rollingstone.com/culture/rs-gaming/marvel-rivals-fan-porn-rule-34-1235304254/",
+      "snippet": "Mar 27, 2025 · 'Marvel Rivals' joins 'Overwatch' as a major source for X-rated fan art and porn in online communities."
+    },
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/r/rule34/comments/1k7q0ed/magik_asswolph_marvel_rivals/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

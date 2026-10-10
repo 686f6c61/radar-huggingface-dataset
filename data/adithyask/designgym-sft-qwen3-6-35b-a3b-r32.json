@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AdithyaSK/designgym-sft-qwen3.6-35b-a3b-r32",
+  "slug": "adithyask-designgym-sft-qwen3-6-35b-a3b-r32",
+  "author": "AdithyaSK",
+  "url": "https://huggingface.co/AdithyaSK/designgym-sft-qwen3.6-35b-a3b-r32",
+  "created_at": "2026-10-09T22:38:21.000Z",
+  "updated_at": "2026-10-10T02:29:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "hf_jobs",
+    "trl",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 787159028,
+  "storage_human": "787 MB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Public sex, homemade porn, free sex videos, free porn movies at ThisVid!",
+      "url": "https://thisvid.com/tags/teen-fuck/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "TEENXY - Free Teen Porn Videos, Young Girls XXX (18+)",
+      "url": "https://teenxy.com/static/favicon/site.webmanifest",
+      "snippet": "{ \"name\": \"TeenXy\", \"short_name\": \"TeenXy\", \"icons\": [ { \"src\": \"/static/favicon/android-chrome-36x36.png\", \"sizes\": \"36x36\", \"type\": …"
+    },
+    {
+      "title": "Yandex — a fast Internet search",
+      "url": "https://yandex.com/video/search?text=innocent+fucking+teen",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Videos – Break Her In",
+      "url": "https://breakherin.com/portfolio-category/videos/",
+      "snippet": "Videos – Break Her In. Menu \"\" not defined. Portfolio Category: Videos. Home-Portfolio Category: Videos. All . Videos . XXXBarbie . …"
+    },
+    {
+      "title": "Teen Sex | Videos & Movies on Vimeo",
+      "url": "https://vimeo.com/20572291?msockid=1c610266cb446662264b158bcafd67bd",
+      "snippet": "A group of 30 youth explore the topic of adolescent sexuality, safe sex, birth control, teen pregnancy, adoptions and abortion. …"
+    }
+  ]
+}

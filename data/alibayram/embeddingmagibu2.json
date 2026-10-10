@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "alibayram/embeddingmagibu2",
+  "slug": "alibayram-embeddingmagibu2",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/embeddingmagibu2",
+  "created_at": "2026-10-09T20:45:31.000Z",
+  "updated_at": "2026-10-09T20:45:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "embedding",
+    "turkish",
+    "retrieval",
+    "tokenizer-surgery",
+    "magibu-ai",
+    "tr",
+    "multilingual",
+    "arxiv:2605.29992",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1521436433,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alibayram (Ali Bayram) - Hugging Face",
+      "url": "https://huggingface.co/alibayram",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 25 days ago ... updated a Space about 1 month ago"
+    },
+    {
+      "title": "alibayram/embeddingmagibu-200m at main - Hugging Face",
+      "url": "https://huggingface.co/alibayram/embeddingmagibu-200m/tree/main",
+      "snippet": "text-embeddings turkish tr distillation License:mit Model card FilesFiles and versions xet Community Deploy Use this model main embeddingmagibu-200m 430 MB 1 contributor History:3 commits alibayram Upload tokenizer.model 27755be verified29 days ago 1_PoolingAdd new SentenceTransformer modelabout 1 month ago 2_DenseAdd new SentenceTransformer ..."
+    },
+    {
+      "title": "[2605.29992] Adapting Multilingual Embedding Models to Turkish via ...",
+      "url": "https://arxiv.org/abs/2605.29992",
+      "snippet": "Sentence embeddings are a foundational component for semantic search, clustering, classification, and retrieval-augmented generation. This paper presents embeddingmagibu-200m, a Turkish-focused sentence embedding model that produces 768-dimensional L2-normalized vectors and supports an 8,192-token context window, far exceeding the 512-token limit of earlier BERT-based Turkish encoders. Instead ..."
+    },
+    {
+      "title": "GitHub - malibayram/embedding-trainer",
+      "url": "https://github.com/malibayram/embedding-trainer",
+      "snippet": "This repository contains the training, evaluation, and deployment pipeline for embeddingmagibu-200m — a Turkish-optimized sentence embedding model that produces 768-dimensional ℓ₂-normalized vectors with an 8,192-token context window. The model achieves competitive results on Turkish benchmarks while using 33% fewer parameters than its teacher and training in ~4 hours on a single GPU at ..."
+    },
+    {
+      "title": "alibayram/embeddingmagibu-200m - ollama.com",
+      "url": "https://ollama.com/alibayram/embeddingmagibu-200m",
+      "snippet": "embeddingmagibu-200m Bu model, Türkçe odaklı çok uzun bağlam (8192 token) sentence embedding üretmek için eğitilmiş bir SentenceTransformer modelidir. 768 boyutlu normalize vektör uzayına projeksiyon yapar. 152M versiyonunun başarısı üzerine kurgulanmış olup, 200M parametre boyutu ve artırılmış bağlam uzunluğu ile daha derinlemesine metin temsili sağlar. Özellikle şu ..."
+    }
+  ]
+}

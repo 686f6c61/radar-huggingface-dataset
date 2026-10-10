@@ -5,7 +5,7 @@
   "author": "Asmaamaghraby",
   "url": "https://huggingface.co/Asmaamaghraby/egyptian-arabic-pragmatics",
   "created_at": "2026-10-08T17:23:24.000Z",
-  "updated_at": "2026-10-08T23:03:12.000Z",
+  "updated_at": "2026-10-09T02:17:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 92267084,
-  "storage_human": "92 MB",
+  "storage_bytes": 51844916,
+  "storage_human": "52 MB",
   "base_model": "Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"

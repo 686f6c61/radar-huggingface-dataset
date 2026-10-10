@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "vladfi/phillip-models",
+  "slug": "vladfi-phillip-models",
+  "author": "vladfi",
+  "url": "https://huggingface.co/vladfi/phillip-models",
+  "created_at": "2026-10-09T20:43:29.000Z",
+  "updated_at": "2026-10-10T02:23:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "reinforcement-learning",
+    "super-smash-bros-melee",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8330041753,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Visual Search Tool | Bing Visual Search",
+      "url": "https://explore.microsoft.com/en-us/bing/visual-search",
+      "snippet": "Search by image with Bing Visual Search, a free reverse image search tool to find similar images, match products, and identify …"
+    },
+    {
+      "title": "Outil de recherche visuelle gratuit | Bing Visual Search",
+      "url": "https://explore.microsoft.com/fr-fr/bing/visual-search",
+      "snippet": "Recherchez par image avec Bing Visual Search, un outil gratuit de recherche d’images inversée pour trouver des images similaires, …"
+    },
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Using Bing Visual Search | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/bing/using-bing-visual-search",
+      "snippet": "Visual Search lets you search the web using an image instead of text. You can use Visual Search to find similar images, products, …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    }
+  ]
+}

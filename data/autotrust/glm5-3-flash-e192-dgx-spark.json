@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "autotrust/GLM5.3-Flash-E192-DGX-Spark",
+  "slug": "autotrust-glm5-3-flash-e192-dgx-spark",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/GLM5.3-Flash-E192-DGX-Spark",
+  "created_at": "2026-10-09T23:02:37.000Z",
+  "updated_at": "2026-10-09T23:17:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm5_next",
+    "autotrust",
+    "moe",
+    "nvfp4",
+    "modelopt",
+    "dgx-spark",
+    "gb10",
+    "blackwell",
+    "neural-architecture-search",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110710222718,
+  "parameters_human": "110.71B",
+  "storage_bytes": 139473958693,
+  "storage_human": "139.5 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hear Ye Hear Ye looke at ye olde porn - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/hear-ye-hear-ye-looke-at-ye-olde-porn.409329/page-6",
+      "snippet": "May 12, 2016 · Forums > Public > Pic & Movie Post > Hear Ye Hear Ye looke at ye olde porn ... Dismiss Notice Hello, New users on …"
+    },
+    {
+      "title": "Real incest stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/real-incest-stories.634543/",
+      "snippet": "Sep 30, 2024 · I love hearing about real incest stories. I think it’s the hottest ever! Tell me about experiences"
+    },
+    {
+      "title": "Family Trip to the Nudist Camp - part 4 - mom and sister, dad",
+      "url": "https://forum.xnxx.com/threads/family-trip-to-the-nudist-camp-part-4-mom-and-sister-dad.26012/",
+      "snippet": "Jun 18, 2020 · This is another story about our first family trip to the nudist camp - I was 12 at the time, my sister Jennifer was 11, and …"
+    },
+    {
+      "title": "Gabe | Page 5 | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/gabe.657013/page-5",
+      "snippet": "Aug 22, 2022 · Hello, Personal info as kik, email, skype etc. is not allowed (\"email is.....\"; “kik is same as my username”) on our …"
+    },
+    {
+      "title": "chinese porn - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/chinese-porn.712472/",
+      "snippet": "Jul 4, 2025 · Forums > Public > Pic & Movie Post > chinese porn * ... Dismiss Notice Hello, New users on the forum won't be able to …"
+    }
+  ]
+}

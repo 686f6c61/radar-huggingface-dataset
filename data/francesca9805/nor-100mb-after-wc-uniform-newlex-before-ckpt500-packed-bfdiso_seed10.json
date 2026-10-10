@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/nor-100mb-after-wc-uniform-newlex-before-ckpt500-packed-bfdiso_seed10",
   "created_at": "2026-10-09T08:34:04.000Z",
-  "updated_at": "2026-10-09T19:28:39.000Z",
+  "updated_at": "2026-10-09T22:29:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 12759627245,
-  "storage_human": "12.8 GB",
+  "storage_bytes": 18529968750,
+  "storage_human": "18.5 GB",
   "base_model": "francesca9805/ppt-wc-uniform-newlex-nor-before-100mb-packed-bfdiso_seed10",
   "formats": [
     "safetensors"

@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "ozonetg/parakeet-110m-caller-asr-extra-audio",
+  "slug": "ozonetg-parakeet-110m-caller-asr-extra-audio",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/parakeet-110m-caller-asr-extra-audio",
+  "created_at": "2026-10-09T21:20:45.000Z",
+  "updated_at": "2026-10-09T22:56:16.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "telephony",
+    "narrowband",
+    "8khz",
+    "call-center",
+    "conversational-speech",
+    "fastconformer",
+    "parakeet",
+    "tdt",
+    "fine-tuned",
+    "en",
+    "base_model:nvidia/parakeet-tdt_ctc-110m",
+    "base_model:finetune:nvidia/parakeet-tdt_ctc-110m",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459233280,
+  "storage_human": "459 MB",
+  "base_model": "nvidia/parakeet-tdt_ctc-110m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean (8 kHz)",
+      "metric": "WER (%)",
+      "value": 2.93
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other (8 kHz)",
+      "metric": "WER (%)",
+      "value": 6.51
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (%)",
+      "value": 2.59
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (%)",
+      "value": 5.46
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallHome English (test)",
+      "metric": "WER (%)",
+      "value": 12.29
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallFriend English (dev)",
+      "metric": "WER (%)",
+      "value": 17.49
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "HarperValley Bank (caller channel)",
+      "metric": "WER (%)",
+      "value": 5.31
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Let's Go (re-typed references)",
+      "metric": "WER (%)",
+      "value": 23.62
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "AppTek call-center dialogues, US customers",
+      "metric": "WER (%)",
+      "value": 8.86
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Switchboard (3,000-utterance subset)",
+      "metric": "WER (%)",
+      "value": 7.48
+    }
+  ],
+  "sources": []
+}

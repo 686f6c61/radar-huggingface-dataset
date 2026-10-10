@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF",
+  "slug": "mradermacher-ostrich-27b-261008-qwen3-8-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF",
+  "created_at": "2026-10-09T20:30:39.000Z",
+  "updated_at": "2026-10-09T21:23:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "#health",
+    "#nutrition",
+    "#medicinalherbs",
+    "#fasting",
+    "#faith",
+    "#healing",
+    "#bitcoin",
+    "#nostr",
+    "aha",
+    "beneficial",
+    "based",
+    "aligned",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated",
+    "base_model:quantized:etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471870016,
+  "storage_human": "39.5 GB",
+  "base_model": "etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Sex Cams and Free Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "Watch Naked Models in our Adult Live Sex Cams Community. ️ It's FREE & No Registration Needed. 🔥 8000+ LIVE Cam Girls and …"
+    },
+    {
+      "title": "Cam di sesso dal vivo gratis e chat per adulti con ragazze nude",
+      "url": "https://ita.stripchat.com/",
+      "snippet": "Su Stripchat troverai sicuramente il tuo partner ideale. Goditi autentiche cam di sesso webcam erotica, videochat e chat di sesso …"
+    },
+    {
+      "title": "Stripchat - Ingyenes élő szexkamerák és felnőtt chat meztelen ...",
+      "url": "https://hu.stripchat.com/",
+      "snippet": "Nézz meztelen modelleket élő felnőtt webkamerás közösségünkben! ️ INGYENES, regisztráció nem szükséges. 🔥8000+ lány és pár …"
+    },
+    {
+      "title": "나체의 여성과 함께하는 무료 라이브 섹스 캠 및 성인 채팅 | Stripchat",
+      "url": "https://ko.stripchat.com/",
+      "snippet": "매달 15만 명이 넘는 아마추어, 전문가, 커플 중에서 선택할 수 있어, Stripchat에서는 여러분의 이상적인 상대를 반드시 찾을 수 …"
+    },
+    {
+      "title": "Секс чат - бесплатные эро видео трансляции 18+ | Stripchat",
+      "url": "https://ru.stripchat.com/",
+      "snippet": "Лучший вебкам сайт представляет секс видеочат с голыми моделями ️ Смотри БЕСПЛАТНО и без регистрации. 🔥 8000+ …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "Kujira/Underdog-Saluki-27B-1.0-MTP-GGUF",
+  "slug": "kujira-underdog-saluki-27b-1-0-mtp-gguf",
+  "author": "Kujira",
+  "url": "https://huggingface.co/Kujira/Underdog-Saluki-27B-1.0-MTP-GGUF",
+  "created_at": "2026-10-08T09:12:10.000Z",
+  "updated_at": "2026-10-08T09:30:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "2-bit",
+    "mtp",
+    "speculative-decoding",
+    "tool-calling",
+    "agents",
+    "qwen3.8",
+    "text-generation",
+    "en",
+    "base_model:ConwayResearch/Underdog-Saluki-27B-1.0",
+    "base_model:quantized:ConwayResearch/Underdog-Saluki-27B-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 1133,
+  "trending_score": 12,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 8349689920,
+  "storage_human": "8.3 GB",
+  "base_model": "ConwayResearch/Underdog-Saluki-27B-1.0, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

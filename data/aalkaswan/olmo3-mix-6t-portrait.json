@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "aalkaswan/olmo3-mix-6T-portrait",
+  "slug": "aalkaswan-olmo3-mix-6t-portrait",
+  "author": "aalkaswan",
+  "url": "https://huggingface.co/aalkaswan/olmo3-mix-6T-portrait",
+  "created_at": "2026-10-09T23:00:13.000Z",
+  "updated_at": "2026-10-09T23:00:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "data-portraits",
+    "bloom-filter",
+    "olmo-3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396237455150,
+  "storage_human": "396.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "allenai/Olmo-3-1025-7B · Hugging Face",
+      "url": "https://huggingface.co/allenai/Olmo-3-1025-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "OLMo 3 — Base / pretrained models — Open Source AI Map",
+      "url": "https://www.aipotluck.org/product/olmo",
+      "snippet": "\"Olmo 3 is pretrained on Dolma 3, a new ~9.3-trillion-token corpus\"; \"Because the Olmo 3 data recipes, training pipeline, and checkpoints are open, independent teams can connect model behavior back to measurable\" training decisions; \"Olmo 3-Base delivers the strongest performance among fully open base models - where training data, code, and ..."
+    },
+    {
+      "title": "Olmo 3: Fully Open-Source LLM from AI2 (Models, Data, & Code)",
+      "url": "https://www.digitalocean.com/community/tutorials/olmo-3-allen-ai-open-source-llm",
+      "snippet": "&#x27;Explore Olmo 3, the open-source LLM from AI2. Access 7B and 32B models, datasets, code, and training logs to empower your AI research contributions&#x27;"
+    },
+    {
+      "title": "Free Image to 3D Model Generator Online | Triple 3D",
+      "url": "https://triple3d.ai/image-to-3d",
+      "snippet": "Turn any image into a 3D model for free with AI. Upload a photo, drawing, or concept art, preview the result online, and export your model in GLB, OBJ, or STL format."
+    },
+    {
+      "title": "Generate AI Portraits | Remix Camera",
+      "url": "https://remix.camera/camera",
+      "snippet": "Generate AI portraits from your photos, train a consistent character model, and remix prompt packs into personalized images in Remix Camera."
+    }
+  ]
+}

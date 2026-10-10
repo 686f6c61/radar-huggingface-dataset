@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Torakiki77/qwen3-14b-audit-ft-smoke",
+  "slug": "torakiki77-qwen3-14b-audit-ft-smoke",
+  "author": "Torakiki77",
+  "url": "https://huggingface.co/Torakiki77/qwen3-14b-audit-ft-smoke",
+  "created_at": "2026-10-09T22:42:59.000Z",
+  "updated_at": "2026-10-09T23:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29289226816,
+  "storage_human": "29.3 GB",
+  "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/",
+      "snippet": "Find answers to your questions and get help with Instagram features, account settings, privacy, and more at the Help Center."
+    }
+  ]
+}

@@ -26,11 +26,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 51,
   "trending_score": 0,
   "parameters": 39087104,
   "parameters_human": "39.1M",
-  "storage_bytes": 4849129423,
+  "storage_bytes": 4770935370,
   "storage_human": "4.8 GB",
   "base_model": "francesca9805/swa-latn-10mb-ppt-Dp-10mb-packed-bfdiso_seed3407",
   "formats": [

@@ -5,10 +5,10 @@
   "author": "glyd",
   "url": "https://huggingface.co/glyd/Qwen3.5-9B-kestrel",
   "created_at": "2026-10-09T17:53:23.000Z",
-  "updated_at": "2026-10-09T17:53:38.000Z",
+  "updated_at": "2026-10-10T00:16:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": "glyd",
   "languages": [],
   "tags": [
@@ -17,6 +17,8 @@
     "qwen3_5",
     "kestrel",
     "lossy",
+    "text-generation",
+    "conversational",
     "base_model:Qwen/Qwen3.5-9B",
     "base_model:quantized:Qwen/Qwen3.5-9B",
     "license:apache-2.0",
@@ -34,7 +36,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -42,8 +42,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 51715472758,
-  "storage_human": "51.7 GB",
+  "storage_bytes": 51211307096,
+  "storage_human": "51.2 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
   "formats": [
     "safetensors"

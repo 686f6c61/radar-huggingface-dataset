@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "yjernite/ncii-edit-guard-270m-v2",
+  "slug": "yjernite-ncii-edit-guard-270m-v2",
+  "author": "yjernite",
+  "url": "https://huggingface.co/yjernite/ncii-edit-guard-270m-v2",
+  "created_at": "2026-10-09T22:41:32.000Z",
+  "updated_at": "2026-10-10T00:56:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-classification",
+    "ml-intern",
+    "safety",
+    "content-moderation",
+    "ncii",
+    "en",
+    "arxiv:2211.05105",
+    "arxiv:2308.01263",
+    "base_model:microsoft/harrier-oss-v1-270m",
+    "base_model:finetune:microsoft/harrier-oss-v1-270m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268100096,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569915723,
+  "storage_human": "570 MB",
+  "base_model": "microsoft/harrier-oss-v1-270m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

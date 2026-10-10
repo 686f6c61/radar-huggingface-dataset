@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "castorini/gaggle-reranker-run3-20261002",
+  "slug": "castorini-gaggle-reranker-run3-20261002",
+  "author": "castorini",
+  "url": "https://huggingface.co/castorini/gaggle-reranker-run3-20261002",
+  "created_at": "2026-10-09T20:34:19.000Z",
+  "updated_at": "2026-10-09T20:37:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nanochat",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nanochat",
+    "safetensors",
+    "gaggle_reranker",
+    "reranker",
+    "pointwise-reranker",
+    "information-retrieval",
+    "lce",
+    "gaggle",
+    "custom_code",
+    "en",
+    "dataset:rlhn/rlhn-250K",
+    "arxiv:2610.11922",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3215335146,
+  "parameters_human": "3.22B",
+  "storage_bytes": 12861368720,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top Reranker AI Models 2026: Precision Retrieval",
+      "url": "https://local-ai-zone.github.io/guides/best-ai-reranker-models-ultimate-ranking-2026.html",
+      "snippet": "Discover the best AI reranker models for 2026. Compare Jina Reranker v3.5, Qwen3-Reranker, BGE-Reranker-v2-M3, and more for precision retrieval and RAG quality."
+    },
+    {
+      "title": "Best Open-Weight Reranker Models 2026 - Presenc AI",
+      "url": "https://presenc.ai/research/best-open-weight-reranker-models-2026",
+      "snippet": "Research Best Open-Weight Reranker Models 2026 Open-weight reranker leaderboard 2026: BGE-Reranker-v2, Qwen3-Reranker, Jina ColBERT v2, ms-marco-MiniLM. BEIR benchmarks, latency profile, deployment guidance for production RAG."
+    },
+    {
+      "title": "Rerank Model Rankings - openrouter.ai",
+      "url": "https://openrouter.ai/rankings/rerank",
+      "snippet": "Live rankings based on real usage data from people reranking query results through models on OpenRouter."
+    },
+    {
+      "title": "Top 5 Reranking Models to Improve RAG Results",
+      "url": "https://machinelearningmastery.com/top-5-reranking-models-to-improve-rag-results/",
+      "snippet": "In this article, you will learn how reranking improves the relevance of results in retrieval-augmented generation (RAG) systems by going beyond what retrievers alone can achieve. Topics we will cover include: How rerankers refine retriever outputs to deliver better answers Five top reranker models to test in 2026 Final thoughts on choosing the right reranker for your system Let&#x27;s get started."
+    },
+    {
+      "title": "AI Model Leaderboard — Elo Rankings (2026) | Prompeteer",
+      "url": "https://prompeteer.ai/leaderboard",
+      "snippet": "AI Model Leaderboard — Elo Rankings (2026) gemini-4-argon-high from google is the #1 ranked AI model with an Elo score of 1533.86, leading a field of 100 models."
+    }
+  ]
+}

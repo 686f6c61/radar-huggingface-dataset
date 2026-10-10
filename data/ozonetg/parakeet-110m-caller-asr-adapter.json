@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "id": "ozonetg/parakeet-110m-caller-asr-adapter",
+  "slug": "ozonetg-parakeet-110m-caller-asr-adapter",
+  "author": "ozonetg",
+  "url": "https://huggingface.co/ozonetg/parakeet-110m-caller-asr-adapter",
+  "created_at": "2026-10-09T22:55:11.000Z",
+  "updated_at": "2026-10-09T22:56:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "telephony",
+    "narrowband",
+    "8khz",
+    "call-center",
+    "conversational-speech",
+    "fastconformer",
+    "parakeet",
+    "tdt",
+    "fine-tuned",
+    "en",
+    "base_model:nvidia/parakeet-tdt_ctc-110m",
+    "base_model:finetune:nvidia/parakeet-tdt_ctc-110m",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 468244480,
+  "storage_human": "468 MB",
+  "base_model": "nvidia/parakeet-tdt_ctc-110m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean (8 kHz)",
+      "metric": "WER (%)",
+      "value": 3.1
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other (8 kHz)",
+      "metric": "WER (%)",
+      "value": 7.13
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-clean",
+      "metric": "WER (%)",
+      "value": 2.73
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "LibriSpeech test-other",
+      "metric": "WER (%)",
+      "value": 5.87
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallHome English (test)",
+      "metric": "WER (%)",
+      "value": 12.66
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "CallFriend English (dev)",
+      "metric": "WER (%)",
+      "value": 17.78
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "HarperValley Bank (caller channel)",
+      "metric": "WER (%)",
+      "value": 5.69
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Let's Go (re-typed references)",
+      "metric": "WER (%)",
+      "value": 24.82
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "AppTek call-center dialogues, US customers",
+      "metric": "WER (%)",
+      "value": 9.15
+    },
+    {
+      "task": "Speech recognition",
+      "dataset": "Switchboard (3,000-utterance subset)",
+      "metric": "WER (%)",
+      "value": 7.75
+    }
+  ],
+  "sources": [
+    {
+      "title": "ozonetg/parakeet-tdt-ctc-110m-recordings-adapter at main",
+      "url": "https://huggingface.co/ozonetg/parakeet-tdt-ctc-110m-recordings-adapter/tree/main",
+      "snippet": "NeMo English asr speech-recognition parakeet adapter linear-adapter telephony License:cc-by-4. Model card FilesFiles and versions xet Community Copy to bucket new Use this model ... main parakeet-tdt-ctc-110m-recordings-adapter 9.49 MB Ctrl+K Ctrl+K 1 contributor History:2 commits ozonetg adapter + model card b7cec7e verifiedabout 6 hours ago ..."
+    },
+    {
+      "title": "ozonetg/parakeet-tdt-ctc-110m-call-audio-adapter · Hugging Face",
+      "url": "https://huggingface.co/ozonetg/parakeet-tdt-ctc-110m-call-audio-adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mynah-asr/reference/parakeet-tdt_ctc-110m at main - GitHub",
+      "url": "https://github.com/mynah-org/mynah-asr/tree/main/reference/parakeet-tdt_ctc-110m",
+      "snippet": "Fast native C inference engine for speech recognition & translation, llama.cpp-style: streaming + offline ASR, word timestamps, int8/int4 quantization, CPU/Metal/CUDA."
+    },
+    {
+      "title": "parakeet-tdt_ctc-110m_model_config.yaml - GitHub",
+      "url": "https://github.com/andreagavazzi/glados/blob/main/models/ASR/parakeet-tdt_ctc-110m_model_config.yaml",
+      "snippet": "3269 lines (3269 loc) · 33.4 KB main glados / models / ASR / parakeet-tdt_ctc-110m_model_config.yaml Code Blame 3269 lines (3269 loc) · 33.4 KB Raw 1 2 3 4 5 6 7 8 ..."
+    },
+    {
+      "title": "Parakeet-TDT_CTC-110M | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nvidia/teams/nemo/models/parakeet-tdt_ctc-110m",
+      "snippet": "Model Overview parakeet-tdt_ctc-110m is an ASR model that transcribes speech with Punctuations and Capitalizations of the English alphabet. This model is jointly developed by NVIDIA NeMo and Suno.ai teams. It is a Large version of Hybrid FastConformer [1] TDT-CTC [2] (around 114M parameters) model. This model has been trained with fastconformer architecture with full attention hence this model ..."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bdrgon/clap-htsat-unfused-audio-embedder-onnx",
+  "slug": "bdrgon-clap-htsat-unfused-audio-embedder-onnx",
+  "author": "bdrgon",
+  "url": "https://huggingface.co/bdrgon/clap-htsat-unfused-audio-embedder-onnx",
+  "created_at": "2026-10-09T19:52:29.000Z",
+  "updated_at": "2026-10-09T19:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "audio",
+    "audio-embeddings",
+    "clap",
+    "feature-extraction",
+    "base_model:laion/clap-htsat-unfused",
+    "base_model:quantized:laion/clap-htsat-unfused",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 173346441,
+  "storage_human": "173 MB",
+  "base_model": "laion/clap-htsat-unfused",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

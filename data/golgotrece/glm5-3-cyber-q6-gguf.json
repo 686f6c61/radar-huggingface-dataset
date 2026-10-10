@@ -5,7 +5,7 @@
   "author": "golgotrece",
   "url": "https://huggingface.co/golgotrece/GLM5.3-Cyber-Q6-GGUF",
   "created_at": "2026-10-06T02:05:11.000Z",
-  "updated_at": "2026-10-08T14:12:46.000Z",
+  "updated_at": "2026-10-09T08:41:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,20 +13,22 @@
   "languages": [],
   "tags": [
     "gguf",
-    "region:us"
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 47,
+  "downloads_30d": 52,
   "trending_score": 0,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
-  "storage_bytes": 745344085920,
-  "storage_human": "745.3 GB",
+  "storage_bytes": 1155334369760,
+  "storage_human": "1155.3 GB",
   "base_model": null,
   "formats": [
     "gguf"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -5,7 +5,7 @@
   "author": "thongbuind",
   "url": "https://huggingface.co/thongbuind/SAI-for-VinFast-Q8_0_375M",
   "created_at": "2026-10-08T18:01:13.000Z",
-  "updated_at": "2026-10-08T18:09:44.000Z",
+  "updated_at": "2026-10-10T01:32:16.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 375194624,
   "parameters_human": "375.2M",
-  "storage_bytes": 399032640,
-  "storage_human": "399 MB",
+  "storage_bytes": 798065280,
+  "storage_human": "798 MB",
   "base_model": null,
   "formats": [
     "gguf"

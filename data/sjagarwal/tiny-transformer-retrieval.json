@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sjagarwal/tiny-transformer-retrieval",
+  "slug": "sjagarwal-tiny-transformer-retrieval",
+  "author": "sjagarwal",
+  "url": "https://huggingface.co/sjagarwal/tiny-transformer-retrieval",
+  "created_at": "2026-10-09T20:47:59.000Z",
+  "updated_at": "2026-10-09T20:48:04.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "现在怎么才能登录WhatsApp呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/68113079",
+      "snippet": "外贸圈的哀嚎声此起彼伏， WhatsApp封号潮正以“地毯式”速度席卷而来。从深圳3C工厂到义乌小商品商，从中小微企业到头部外贸集 …"
+    },
+    {
+      "title": "whatsapp messenger - 知乎",
+      "url": "https://www.zhihu.com/topic/19560025/hot",
+      "snippet": "WhatsApp messenger是一款可供iPhone手机、Android手机、Windows Phone手机、Symbian手机和黑莓手机用户使用的，用于智能 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "Win10的磁盘管理在哪里 怎么打开磁盘管理工具-百度经验",
+      "url": "https://jingyan.baidu.com/article/d7130635e05a8c13fcf47544.html",
+      "snippet": "Jun 29, 2018 · 在Windows10系统中，如果想要对硬盘进行管理，可以通过磁盘管理工具来实现，那么Windows10系统下磁盘管理工具 …"
+    },
+    {
+      "title": "WhatsApp号码被封号，禁止使用怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/300150937",
+      "snippet": "最后，再说一下WhatsApp使用的注意事项，对于新注册的用户我的建议是要先养号，不要急于去加客户、发推广消息。 前期可以每天 …"
+    }
+  ]
+}
