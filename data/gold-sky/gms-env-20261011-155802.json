@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gold-sky/gms-env-20261011-155802",
+  "slug": "gold-sky-gms-env-20261011-155802",
+  "author": "gold-sky",
+  "url": "https://huggingface.co/gold-sky/gms-env-20261011-155802",
+  "created_at": "2026-10-11T17:25:17.000Z",
+  "updated_at": "2026-10-11T17:26:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/gold-sky--gms-env-20261011-133552",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068455874,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gold.fr - Achat Or et Argent & Vente d'Or - Rachat d'Or - Cours et Prix ...",
+      "url": "https://www.gold.fr/",
+      "snippet": "2 days ago · Ce droit s’exerce par simple envoi d’un email. Pour tout savoir sur la manière dont Gold Trade gère les données …"
+    },
+    {
+      "title": "Gold Price Charts & Historical Data - GoldPrice.org",
+      "url": "https://goldprice.org/",
+      "snippet": "GOLDPRICE.ORG - The No. 1 gold price site for fast loading live gold price charts in ounces, grams and kilos in every national …"
+    },
+    {
+      "title": "Gold (groupe) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Gold_%28groupe%29",
+      "snippet": "Gold est un groupe français de pop rock, originaire du Tarn, qui connaît un succès national dans les années 1980. Le groupe est …"
+    },
+    {
+      "title": "Cours de l’or : Graphique et historique - Gold.fr",
+      "url": "https://www.gold.fr/graphique-cours-de-lor-et-metaux-precieux/cours-or/",
+      "snippet": "Découvrez le cours de l’or en temps réel avec graphiques et historique pour suivre son évolution et analyser les tendances - [Gold.fr]"
+    },
+    {
+      "title": "Gold - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Gold",
+      "snippet": "Gold dissolves in alkaline solutions of cyanide, which are used in mining and electroplating. Gold also dissolves in mercury, forming …"
+    }
+  ]
+}

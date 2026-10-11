@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-sync-b1ga1-s12-20260905-81b6048d",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-sync-b1ga1-s12-20260905-81b6048d",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-sync-b1ga1-s12-20260905-81b6048d",
+  "created_at": "2026-10-11T01:57:28.000Z",
+  "updated_at": "2026-10-11T02:46:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "Microsoft 365 - Sign into Copilot",
+      "url": "https://m365.cloud.microsoft/?omkt=en-001&source=post_page---------------------------",
+      "snippet": "Copilot responds when you choose to use it. You stay in control of when and how you use AI features, and your existing privacy and security settings continue to apply."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Copilot | AI chat for work",
+      "url": "https://copilot.cloud.microsoft/",
+      "snippet": "Copilot Chat brings powerful AI assistance into your daily workflow, helping you turn ideas into action and tasks into outcomes. Think through projects, summarize information, and keep work moving forward in one conversation. Get grounded answers and quickly find the information, files, and insights you need to get work done."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    }
+  ]
+}

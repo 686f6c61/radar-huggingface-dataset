@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-b4-throughput-20260902-4163bfee",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-b4-throughput-20260902-4163bfee",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-b4-throughput-20260902-4163bfee",
+  "created_at": "2026-10-11T01:56:18.000Z",
+  "updated_at": "2026-10-11T02:38:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Download Roblox",
+      "url": "https://www.roblox.com/download",
+      "snippet": "Download the Roblox app to use Roblox on your smartphone, tablet, computer, console, VR headset, and more."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-seqloader-preflight-r2 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2",
+      "snippet": "A model export produced during the SeqLoader/T4 two-GPU preflight stage for RoboMME. This is a runnable intermediate/preflight artifact, not a final benchmark claim."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    }
+  ]
+}

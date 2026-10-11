@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cwbrodrigues/multitask-v1",
+  "slug": "cwbrodrigues-multitask-v1",
+  "author": "cwbrodrigues",
+  "url": "https://huggingface.co/cwbrodrigues/multitask-v1",
+  "created_at": "2026-10-11T01:54:46.000Z",
+  "updated_at": "2026-10-11T01:54:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "knowledgator/gliner-multitask-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/knowledgator/gliner-multitask-v1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DaJulster/SuaveAI-Dectection-Multitask-Model-V1 · Hugging Face",
+      "url": "https://huggingface.co/DaJulster/SuaveAI-Dectection-Multitask-Model-V1",
+      "snippet": "SuaveAI Detection Multitask Model V1 This repository contains a custom PyTorch multitask model checkpoint and auxiliary files."
+    },
+    {
+      "title": "MultitaskAI - The Custom Chat UI for OpenAI, Anthropic, Google Gemini ...",
+      "url": "https://multitaskai.com/",
+      "snippet": "Chat seamlessly with AI models like OpenAI, Anthropic, and Google Gemini using MultitaskAI, a custom-built interface designed for split-screen multitasking, side-by-side comparisons, and smarter workflows."
+    },
+    {
+      "title": "GitHub - L0stZero-coder/MultitaskAI: MultitaskAI_Unity is an ...",
+      "url": "https://github.com/L0stZero-coder/MultitaskAI",
+      "snippet": "MultitaskAI_Unity is an experimental Unity-based project designed to simulate an intelligent, multitasking AI system in a live game environment. Inspired by VTuber AI models like Neuro-sama, this project integrates real-time Twitch chat interaction, voice command recognition, and in-game control logic into a cohesive framework suitable for interactive entertainment or AI research."
+    },
+    {
+      "title": "[2501.01230] Modeling Multi-Task Model Merging as Adaptive Projective ...",
+      "url": "https://arxiv.org/abs/2501.01230",
+      "snippet": "Merging multiple expert models offers a promising approach for performing multi-task learning without accessing their original data. Existing methods attempt to alleviate task conflicts by sparsifying task vectors or promoting orthogonality among them. However, they overlook the fundamental target of model merging: the merged model performs as closely as possible to task-specific models on ..."
+    }
+  ]
+}

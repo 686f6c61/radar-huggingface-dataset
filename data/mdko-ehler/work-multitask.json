@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mdko-ehler/work-multitask",
+  "slug": "mdko-ehler-work-multitask",
+  "author": "mdko-ehler",
+  "url": "https://huggingface.co/mdko-ehler/work-multitask",
+  "created_at": "2026-10-11T01:59:46.000Z",
+  "updated_at": "2026-10-11T01:59:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collection de cartes et actualités du TCG Pokémon | PokéCardex",
+      "url": "https://www.pokecardex.com/",
+      "snippet": "Votre plateforme pour gérer votre collection de cartes Pokémon, suivre les actualités et échanger vos cartes avec la communauté."
+    },
+    {
+      "title": "Séries Pokémon TCG | PokéCardex",
+      "url": "https://www.pokecardex.com/series",
+      "snippet": "Toutes les séries de cartes Pokémon disponibles sur Pokecardex."
+    },
+    {
+      "title": "Série Super Electric Breaker | PokéCardex",
+      "url": "https://www.pokecardex.com/series/jp/SV8",
+      "snippet": "Découvrez toutes les cartes de la série Super Electric Breaker : liste complète, checklist, produits et informations sur PokéCardex."
+    },
+    {
+      "title": "Série Nihil Zero | PokéCardex",
+      "url": "https://www.pokecardex.com/series/jp/M3",
+      "snippet": "Découvrez toutes les cartes de la série Nihil Zero : liste complète, checklist, produits et informations sur PokéCardex."
+    },
+    {
+      "title": "Série VSTAR Universe | PokéCardex",
+      "url": "https://www.pokecardex.com/series/jp/S12A",
+      "snippet": "Découvrez toutes les cartes de la série VSTAR Universe : liste complète, checklist, produits et informations sur PokéCardex."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jundot/GLM-5.3-Flash-oQ2e-mtp",
+  "slug": "jundot-glm-5-3-flash-oq2e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/GLM-5.3-Flash-oQ2e-mtp",
+  "created_at": "2026-10-11T15:22:17.000Z",
+  "updated_at": "2026-10-11T15:23:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "glm5_next",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 110321228823,
+  "storage_human": "110.3 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swimsuit Booty - Reddit",
+      "url": "https://www.reddit.com/r/SwimsuitBooty/",
+      "snippet": "r/SwimsuitBooty: Excellent female booties in swimsuits. 4 Must be in a swimsuit. No lingerie or underwear allowed."
+    },
+    {
+      "title": "Big Booty Porn - Reddit",
+      "url": "https://www.reddit.com/r/BigBootyPorn/rising/",
+      "snippet": "A place to post porn of girls with big asses. Hardcore vids, GIFs, pictures, anything is allowed. We like 'em thick!"
+    },
+    {
+      "title": "Twerk : Bounce it Jiggle it Make that BOOTY Wobble - Reddit",
+      "url": "https://www.reddit.com/r/twerk/",
+      "snippet": "This subreddit is all about ass movement, existing for over 200 years with many origins. East African dances like Tanzania baikoko, …"
+    },
+    {
+      "title": "Big Huge Ass Booty Butt - free porn sex erotic - Reddit",
+      "url": "https://www.reddit.com/r/BigHugeAssPorn/",
+      "snippet": "r/BigHugeAssPorn: Big Huge Ass Booty Butt - free porn sex erotic - pics gifs videos full movies NSFW"
+    },
+    {
+      "title": "Big booty Latina : r/latinas - Reddit",
+      "url": "https://www.reddit.com/r/latinas/comments/14gm09v/big_booty_latina/",
+      "snippet": "Welcome to **Latinas**, an NSFW Reddit community celebrating the beauty and allure of Latina women. Here, we share and admire …"
+    }
+  ]
+}

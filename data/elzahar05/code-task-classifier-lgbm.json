@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "elzahar05/code-task-classifier-lgbm",
+  "slug": "elzahar05-code-task-classifier-lgbm",
+  "author": "elzahar05",
+  "url": "https://huggingface.co/elzahar05/code-task-classifier-lgbm",
+  "created_at": "2026-10-11T18:11:14.000Z",
+  "updated_at": "2026-10-11T18:11:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "text-classification",
+    "lightgbm",
+    "tfidf",
+    "code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1566941,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "elzahar05 (Ziad Elzahar) - Hugging Face",
+      "url": "https://huggingface.co/elzahar05",
+      "snippet": "User profile of Ziad Elzahar on Hugging Face"
+    },
+    {
+      "title": "GitHub - lightgbm-org/LightGBM: A fast, distributed, high performance ...",
+      "url": "https://github.com/lightgbm-org/LightGBM",
+      "snippet": "A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks. - lightgbm-org/LightGBM"
+    },
+    {
+      "title": "elzahar05 (Ziad Elzahar) - Hugging Face",
+      "url": "https://huggingface.co/elzahar05/activity/all",
+      "snippet": "elzahar05 &#x27;s activity All Models Datasets Spaces Buckets Papers Collections Community Posts Upvotes Likes Articles New activity in elzahar05/carrer 2 days ago"
+    },
+    {
+      "title": "Train a model using LightGBM - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/train-a-model-using-lightgbm/",
+      "snippet": "Improves training efficiency without much loss in accuracy 4. Exclusive Feature Bundling (EFB) Combines sparse features Reduces dimensionality Improves speed Implementation to train a model using LightGBM 1. Install and Import Libraries To train a model using LightGBM we need to install it to our runtime. !pip install lightgbm Importing ..."
+    },
+    {
+      "title": "Welcome to LightGBM&#x27;s documentation! — LightGBM 4.7.0.99 documentation",
+      "url": "https://lightgbm.readthedocs.io/en/latest/index.html",
+      "snippet": "Welcome to LightGBM&#x27;s documentation! LightGBM is a gradient boosting framework that uses tree based learning algorithms. It is designed to be distributed and efficient with the following advantages: Faster training speed and higher efficiency. Lower memory usage. Better accuracy. Support of parallel, distributed, and GPU learning. Capable of handling large-scale data. For more details ..."
+    }
+  ]
+}

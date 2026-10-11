@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-ddp2-b1-smoke20-20260903-6a08ab4c",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-ddp2-b1-smoke20-20260903-6a08ab4c",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-ddp2-b1-smoke20-20260903-6a08ab4c",
+  "created_at": "2026-10-11T01:56:21.000Z",
+  "updated_at": "2026-10-11T02:39:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1310232379,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "snippet": "PubChem is the world&#x27;s largest collection of freely accessible chemical information. Search chemicals by name, molecular formula, structure, and other identifiers. Find chemical and physical properties, biological activities, safety and toxicity information, patents, literature citations and more."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "GR00T N1.6 + HAMLET + Persistent TTT — RoboMME NMT T=4 Private archival checkpoint for Nuri&#x27;s persistent test-time-training experiment on RoboMME. It extends the HAMLET K=4 attention-memory policy with recurrent fast weights trained using a next-moment-token inner objective."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "Training video-20220121_102146-Meeting Recording.mp4",
+      "url": "https://vimeo.com/668430167",
+      "snippet": "This is \"Training video-20220121_102146-Meeting Recording.mp4\" by Kayla Varrasso on Vimeo, the home for high quality videos and the people who love them."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    }
+  ]
+}

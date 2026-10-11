@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Tsedeniya/finetuned_byT5base_per_joint",
+  "slug": "tsedeniya-finetuned_byt5base_per_joint",
+  "author": "Tsedeniya",
+  "url": "https://huggingface.co/Tsedeniya/finetuned_byT5base_per_joint",
+  "created_at": "2026-10-11T01:49:33.000Z",
+  "updated_at": "2026-10-11T01:50:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:google/byt5-base",
+    "base_model:finetune:google/byt5-base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 581653248,
+  "parameters_human": "581.7M",
+  "storage_bytes": 2326649025,
+  "storage_human": "2.3 GB",
+  "base_model": "google/byt5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top names of the 1900s - The United States Social Security …",
+      "url": "https://www.ssa.gov/OACT/babynames/decades/names1900s.html",
+      "snippet": "The following table shows the 200 most popular given names for boy and girl babies born during the 1900s. For each rank and sex, …"
+    },
+    {
+      "title": "Popular Names in France 1900 - Behind the Name",
+      "url": "https://www.behindthename.com/top/lists/france/1900",
+      "snippet": "Popular Names in France Home » Popular Names Information from INSEE ... Popularity extremes for France"
+    },
+    {
+      "title": "1900s Baby Names: Traditional and Surprising Vintage Finds",
+      "url": "https://appellationmountain.net/1900s-baby-names-twenty-neglected-gems/",
+      "snippet": "Apr 2, 2025 · We’ll talk about the most popular names from the years 1900 to 1909, as well as some rare names from 1900s, too. …"
+    },
+    {
+      "title": "1900s Names - Nameberry",
+      "url": "https://nameberry.com/list/496/1900s-baby-names",
+      "snippet": "While we may not be hearing many babies named Gertrude and Clarence soon, names such as Mabel and Florence, Henry and …"
+    },
+    {
+      "title": "Top Baby Names of the 1900s | UK Baby Names",
+      "url": "https://www.ukbabynames.com/1900s",
+      "snippet": "Whilst in previous decades names were simply handed down through the generations, the turn-of-the-century saw wider inspiration. …"
+    }
+  ]
+}

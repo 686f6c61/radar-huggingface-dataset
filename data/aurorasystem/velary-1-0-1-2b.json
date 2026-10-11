@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AuroraSystem/Velary-1.0-1.2B",
+  "slug": "aurorasystem-velary-1-0-1-2b",
+  "author": "AuroraSystem",
+  "url": "https://huggingface.co/AuroraSystem/Velary-1.0-1.2B",
+  "created_at": "2026-10-11T19:04:05.000Z",
+  "updated_at": "2026-10-11T19:08:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "lfm2",
+    "reasoning",
+    "russian",
+    "safetensors",
+    "text-generation",
+    "ru",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Thinking",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "LiquidAI/LFM2.5-1.2B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service gratuit de Google traduit des mots, expressions et pages Web entre le français et plus de 100 autres langues …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traducteur Proposez des traductions précises et de qualité professionnelle grâce aux glossaires, aux règles, à Clarify et à bien …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le traducteur IA le plus puissant du monde en anglais, espagnol, allemand, russe, et bien plus encore. Profitez des dernières …"
+    },
+    {
+      "title": "Reverso | Free translation, dictionary",
+      "url": "https://www.reverso.net/",
+      "snippet": "Reverso's free online translation service that translates your texts between English and French, Spanish, Italian, German, Russian, …"
+    }
+  ]
+}

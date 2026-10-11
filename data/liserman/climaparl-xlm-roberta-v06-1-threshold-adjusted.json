@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "liserman/climaparl-xlm-roberta-v06.1-threshold-adjusted",
+  "slug": "liserman-climaparl-xlm-roberta-v06-1-threshold-adjusted",
+  "author": "liserman",
+  "url": "https://huggingface.co/liserman/climaparl-xlm-roberta-v06.1-threshold-adjusted",
+  "created_at": "2026-10-11T18:11:35.000Z",
+  "updated_at": "2026-10-11T18:11:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045955,
+  "parameters_human": "278.0M",
+  "storage_bytes": 573198788,
+  "storage_human": "573 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tommi Ortega (@tommiortega) • Instagram photos and videos",
+      "url": "https://www.instagram.com/tommiortega/",
+      "snippet": "908K Followers, 29 Following, 51 Posts - Tommi Ortega (@tommiortega) on Instagram: \"i play video games and build cars\""
+    },
+    {
+      "title": "Check out Tommi Ortega (@tommiortega) on Linkme",
+      "url": "https://link.me/tommiortega",
+      "snippet": "Discover Tommi Ortega on LinkMe: 🇦🇺🇵🇭🇪🇸: Connect and see what they're passionate about."
+    },
+    {
+      "title": "Tommi Ortega (@e30princesss) | TikTok",
+      "url": "https://www.tiktok.com/@e30princesss",
+      "snippet": "Join 5.1M followers on TikTok for more supra, ae86, rx7 content."
+    },
+    {
+      "title": "Tommi Ortega (Tommy Ortega): quién es y sus redes",
+      "url": "https://polnito.mx/only/tommi-ortega/",
+      "snippet": "Tommi Ortega (también buscada como Tommy Ortega o Tomi Ortega) es una creadora de contenido conocida en redes como …"
+    },
+    {
+      "title": "Tommi Ortega (@LisaKel09364940) / X",
+      "url": "https://x.com/LisaKel09364940",
+      "snippet": "Jan 7, 2026 · actress Tommi Ortega @LisaKel09364940 actress"
+    }
+  ]
+}

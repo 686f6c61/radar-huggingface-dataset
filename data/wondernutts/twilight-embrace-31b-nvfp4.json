@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Wondernutts/Twilight-Embrace-31B-NVFP4",
+  "slug": "wondernutts-twilight-embrace-31b-nvfp4",
+  "author": "Wondernutts",
+  "url": "https://huggingface.co/Wondernutts/Twilight-Embrace-31B-NVFP4",
+  "created_at": "2026-10-11T18:44:39.000Z",
+  "updated_at": "2026-10-11T18:48:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "roleplay",
+    "storytelling",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Cyclone-Labs/Twilight-Embrace-31B",
+    "base_model:quantized:Cyclone-Labs/Twilight-Embrace-31B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18460143972,
+  "parameters_human": "18.46B",
+  "storage_bytes": 20478994651,
+  "storage_human": "20.5 GB",
+  "base_model": "Cyclone-Labs/Twilight-Embrace-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "话题广场 - 知乎",
+      "url": "https://www.zhihu.com/topics",
+      "snippet": "知乎话题广场，汇聚多样化主题，助您探索知识、分享见解。"
+    },
+    {
+      "title": "How does obfuscated code execute a built in function in Lua",
+      "url": "https://stackoverflow.com/questions/79124153/how-does-obfuscated-code-execute-a-built-in-function-in-lua",
+      "snippet": "Oct 25, 2024 · But the obfuscated code does not have any references to print to it, so I think the obfuscator have done something …"
+    },
+    {
+      "title": "单方面删除微信好友，再加回来对方知道吗。？ - 知乎",
+      "url": "https://www.zhihu.com/question/295284932",
+      "snippet": "4.6更新 今天更新了微信 8.0.21和8.0.20效果一样 以下原回答 亲测，如果单删再偷偷加回来，对方不会知道的。 跟朋友做的实验，两 …"
+    },
+    {
+      "title": "sql - Query to check index on a table - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1800698/query-to-check-index-on-a-table",
+      "snippet": "Nov 25, 2009 · I need a query to see if a table already has any indexes on it."
+    },
+    {
+      "title": "Windows 10 自带输入法如何快速切换简繁体? - 知乎",
+      "url": "https://www.zhihu.com/question/38400073",
+      "snippet": "Windows 10 自带输入法如何快速切换简繁体?"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-explicit-b1ga1-s12-r2-20260905-e88b2ef8",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-explicit-b1ga1-s12-r2-20260905-e88b2ef8",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-explicit-b1ga1-s12-r2-20260905-e88b2ef8",
+  "created_at": "2026-10-11T01:57:17.000Z",
+  "updated_at": "2026-10-11T02:45:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The ultimate weekend guide 2018-19 — The Times",
+      "url": "https://extras.thetimes.co.uk/web/interactives/7fa77b668578a893653c674b2be3865c.html",
+      "snippet": "7 Sergio Agüero (Man City), Pierre-Emerick Aubameyang (Arsenal), Eden Hazard (Chelsea) 6 Sadio Mané (Liverpool), Richarlison …"
+    },
+    {
+      "title": "The Times & The Sunday Times",
+      "url": "https://www.thetimes.co.uk/interactives/component/bpts-search",
+      "snippet": "Accessibility Links Skip to content"
+    }
+  ]
+}

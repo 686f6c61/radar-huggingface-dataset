@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-gpu01-2026-f47d7360",
+  "created_at": "2026-10-11T01:56:31.000Z",
+  "updated_at": "2026-10-11T02:40:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live - Romania TV",
+      "url": "https://www.romaniatv.net/live",
+      "snippet": "Din 23 septembrie începe toamna astronomică. Vine momentul să accepți schimbarea. Află care e schimbarea ta! Cu ce se ocupă …"
+    },
+    {
+      "title": "Romania TV live și program TV | TVGratis.ro",
+      "url": "https://tvgratis.ro/canal/romania-tv",
+      "snippet": "Vezi Romania TV live prin surse externe publice și consultă programul TV actualizat, cu emisiunile care rulează acum și urmează."
+    },
+    {
+      "title": "Romania TV - Noi dăm știrea exactă!",
+      "url": "https://www.romaniatv.net/",
+      "snippet": "EXCLUSIV O masă de aer rece lovește România. Elena Mateescu (ANM) anunță ninsori și frig. Unde va fi cel mai rău: „Vorbim de …"
+    },
+    {
+      "title": "TV Online – Urmărește Canalele TV Românești Live, Gratuit",
+      "url": "https://stirinews.ro/tv-online/",
+      "snippet": "Această pagină îți oferă acces rapid la o selecție de canale TV online live din România, disponibile gratuit direct din browser. Poți …"
+    },
+    {
+      "title": "TV Online – Canale TV Online România, Live și Gratis | TvTun",
+      "url": "https://tvtun.com/",
+      "snippet": "Urmărește TV online gratis: toate canalele TV românești live, direct în browser — știri, sport, filme și divertisment. Fără instalare, pe …"
+    }
+  ]
+}

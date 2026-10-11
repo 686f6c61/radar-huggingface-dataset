@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-cutile-b1ga1-s1-r2-20260905-6154f574",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-cutile-b1ga1-s1-r2-20260905-6154f574",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-cutile-b1ga1-s1-r2-20260905-6154f574",
+  "created_at": "2026-10-11T01:57:12.000Z",
+  "updated_at": "2026-10-11T02:45:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Concerts Nantes - Agenda concerts, spectacles et festivals",
+      "url": "https://www.infoconcert.com/ville/nantes-2306",
+      "snippet": "Tous les concerts, spectacles et festivals de Nantes. Billetterie et infos pratiques incluses !"
+    },
+    {
+      "title": "ZENITH Nantes Métropole - Site officiel",
+      "url": "https://www.zenith-nantesmetropole.com/",
+      "snippet": "Le Zénith Nantes Métropole lance \" Accrédités Zénith \", un concours culturel destiné à valoriser la pratique amateure de la …"
+    },
+    {
+      "title": "Nantes Concerts, Festivals, Tickets & Tour Dates 2026 & 2027 – …",
+      "url": "https://www.songkick.com/metro-areas/28901-france-nantes",
+      "snippet": "Sep 16, 2026 · Concerts in Nantes Find tickets to all live music, concerts, tour dates and festivals in and around Nantes. Currently …"
+    },
+    {
+      "title": "Tous les concerts à Nantes | Vos billets sur Fnac Spectacles",
+      "url": "https://www.fnacspectacles.com/city/nantes-2034/concerts-festivals-93/",
+      "snippet": "Découvrez l'agenda complet des concerts à Nantes, ville où chaque saison musicale apporte son lot de découvertes et de frissons."
+    },
+    {
+      "title": "Concerts à Nantes 2026 : dates et billetterie | InfoConcert",
+      "url": "https://www.infoconcert.com/ville/nantes-2306/concerts",
+      "snippet": "Découvrez +344 concerts à Nantes à venir. Consultez les dates, les salles et réservez vos billets en ligne pour vos prochains concerts."
+    }
+  ]
+}

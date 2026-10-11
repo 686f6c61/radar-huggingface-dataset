@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "slug": "francesca9805-nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "created_at": "2026-10-11T18:09:41.000Z",
+  "updated_at": "2026-10-11T19:47:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455",
+    "base_model:finetune:fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2996003103,
+  "storage_human": "3.0 GB",
+  "base_model": "fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-packed-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-10mb-packed-ckpt500_seed10",
+      "snippet": "Downloads are not tracked for this model. How to track Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500 ...",
+      "url": "https://huggingface.co/francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10",
+      "snippet": "Instructions to use francesca9805/nld-latn-100mb-after-ppt-Dp-10mb-packed-bfdiso-ckpt500_seed10 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nor Latn 10mb After Ppt Shuff Dyck 100mb Ckpt500 Seed455",
+      "url": "https://free2aitools.com/model/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+      "snippet": "Registry entry for model Nor Latn 10mb After Ppt Shuff Dyck 100mb Ckpt500 Seed455; source metadata pending."
+    },
+    {
+      "title": "nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+      "url": "https://friendli.ai/models/francesca9805/nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+      "snippet": "Deploy nor-latn-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "fpadovani/nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407",
+      "url": "https://www.toolify.ai/ai-model/fpadovani-nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500-seed3407",
+      "snippet": "nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407 is an open source model from GitHub that offers a free installation service, and any user can find nor-latn-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed3407 on GitHub to install."
+    }
+  ]
+}

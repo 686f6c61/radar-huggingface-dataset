@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaydens/sn56-p2-MC-CTL-G-01fdf13f",
+  "slug": "zaydens-sn56-p2-mc-ctl-g-01fdf13f",
+  "author": "zaydens",
+  "url": "https://huggingface.co/zaydens/sn56-p2-MC-CTL-G-01fdf13f",
+  "created_at": "2026-10-11T18:48:56.000Z",
+  "updated_at": "2026-10-11T18:49:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557096,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coffret cadeau d'expériences : des box cadeaux à vivre ou à offrir ...",
+      "url": "https://www.smartbox.com/fr/",
+      "snippet": "Votre cadeau Smartbox parfait, exactement comme vous le souhaitez. Choisissez notre coffret cadeau physique emballé ou un …Read more"
+    },
+    {
+      "title": "Connexion · Smartbox",
+      "url": "https://myaccount.smartbox.com/fr/login",
+      "snippet": "Bienvenue sur Smartbox ! Connectez-vous à votre compte Se connecter avec Google Se connecter avec Facebook OU"
+    },
+    {
+      "title": "Smartbox Group",
+      "url": "https://www.smartbox.com/",
+      "snippet": "At Smartbox, we believe the best experiences aren't found on a screen — they're lived. We connect people to the moments that …"
+    },
+    {
+      "title": "Mon compte - Commandes",
+      "url": "https://myaccount.smartbox.com/fr/account/orders",
+      "snippet": "Profitez de Smartbox Nous espérons que vous, votre famille et vos amis apprécierez la Smartbox ! Laissez nous vous aider à trouver …"
+    },
+    {
+      "title": "Smartbox — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Smartbox",
+      "snippet": "Smartbox est une entreprise spécialiste des coffrets cadeaux irlandaise appartenant au milliardaire français Pierre-Édouard Stérin. …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cs-file-uploads/loc-qwen3-32b-adapter",
+  "slug": "cs-file-uploads-loc-qwen3-32b-adapter",
+  "author": "cs-file-uploads",
+  "url": "https://huggingface.co/cs-file-uploads/loc-qwen3-32b-adapter",
+  "created_at": "2026-10-11T15:49:50.000Z",
+  "updated_at": "2026-10-11T15:50:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "base_model:Qwen/Qwen3-32B",
+    "base_model:adapter:Qwen/Qwen3-32B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 279977914,
+  "storage_human": "280 MB",
+  "base_model": "Qwen/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Counter-Strike 2",
+      "url": "https://www.counter-strike.net/",
+      "snippet": "Counter-Strike, Counter-Strike 2, CS:GO, and their respective logos are trademarks and/or registered trademarks of Valve …"
+    },
+    {
+      "title": "Counter-Strike 2 on Steam",
+      "url": "https://store.steampowered.com/app/730/CounterStrike_2/",
+      "snippet": "Aug 21, 2012 · A free upgrade to CS:GO, Counter Strike 2 marks the largest technical leap in Counter Strike’s history. Built on the …"
+    },
+    {
+      "title": "CS 1.6 Servers — play Counter-Strike 1.6 online in browser | PLAY-CS…",
+      "url": "https://play-cs.com/en/servers",
+      "snippet": "List of CS 1.6 online servers: classic, public, Deathmatch, GunGame, Zombie, Half-Life Deathmatch and more. Pick a Counter-Strike …"
+    },
+    {
+      "title": "Counter-Strike 2",
+      "url": "https://www.counter-strike.net/cs2",
+      "snippet": "Classic maps with solid foundations that players can use to evaluate gameplay changes from CS:GO to Counter-Strike 2. These …"
+    },
+    {
+      "title": "La Source - Actualités et Forum de discussion Counter-Strike 2 …",
+      "url": "https://lasource.gg/",
+      "snippet": "L'actualité Counter-Strike en français. Infos, stats, prédictions, patchs et tournois : suivez CS2 au plus près de la scène compétitive."
+    }
+  ]
+}

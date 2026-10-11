@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "UrNinja/hallo3",
+  "slug": "urninja-hallo3",
+  "author": "UrNinja",
+  "url": "https://huggingface.co/UrNinja/hallo3",
+  "created_at": "2026-10-11T18:30:34.000Z",
+  "updated_at": "2026-10-11T18:30:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "arxiv:2412.00733",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52200249109,
+  "storage_human": "52.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hallo3: Highly Dynamic and Realistic Portrait Image Animation with ...",
+      "url": "https://fudan-generative-vision.github.io/hallo3/",
+      "snippet": "In this paper, we introduce the first application of a pretrained transformer-based video generative model that demonstrates strong generalization capabilities and generates highly dynamic, realistic videos for portrait animation, effectively addressing these challenges."
+    },
+    {
+      "title": "GitHub - fudan-generative-vision/hallo3: [CVPR 2025] Hallo3: Highly ...",
+      "url": "https://github.com/fudan-generative-vision/hallo3",
+      "snippet": "[CVPR 2025] Hallo3: Highly Dynamic and Realistic Portrait Image Animation with Video Diffusion Transformer - fudan-generative-vision/hallo3"
+    },
+    {
+      "title": "Hallo3: Highly Dynamic and Realistic Portrait Image Animation with ...",
+      "url": "https://arxiv.org/html/2412.00733v3",
+      "snippet": "In this paper, we present the first application of a pretrained DiT-based video generative model to the task of portrait image animation. The introduction of this new video backbone model renders previous U-Net-based methods for identity maintenance, audio conditioning, and video extrapolation impractical."
+    },
+    {
+      "title": "[2412.00733] Hallo3: Highly Dynamic and Realistic Portrait Image ...",
+      "url": "https://arxiv.org/abs/2412.00733",
+      "snippet": "Existing methodologies for animating portrait images face significant challenges, particularly in handling non-frontal perspectives, rendering dynamic objects around the portrait, and generating immersive, realistic backgrounds. In this paper, we introduce the first application of a pretrained transformer-based video generative model that demonstrates strong generalization capabilities and ..."
+    },
+    {
+      "title": "fudan-generative-ai/hallo3 · Hugging Face",
+      "url": "https://huggingface.co/fudan-generative-ai/hallo3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

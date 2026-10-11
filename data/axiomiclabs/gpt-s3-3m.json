@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "AxiomicLabs/GPT-S3-3M",
+  "slug": "axiomiclabs-gpt-s3-3m",
+  "author": "AxiomicLabs",
+  "url": "https://huggingface.co/AxiomicLabs/GPT-S3-3M",
+  "created_at": "2026-10-02T03:10:11.000Z",
+  "updated_at": "2026-10-10T00:32:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpts3_hybrid",
+    "text-generation",
+    "language-model",
+    "gated-deltanet-2",
+    "linear-attention",
+    "hybrid-attention",
+    "attention-residuals",
+    "gated-attention",
+    "rope",
+    "swiglu",
+    "muon",
+    "custom-architecture",
+    "custom-tokenizer",
+    "custom_code",
+    "en",
+    "dataset:nvidia/Nemotron-ClimbMix",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:IFM/TxT360-v2",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:AxiomicLabs/FactBase-DCLM",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 29,
+  "trending_score": 11,
+  "parameters": 2973666,
+  "parameters_human": "3.0M",
+  "storage_bytes": 11913328,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axiomic Labs",
+      "url": "https://www.axiomiclabs.com/",
+      "snippet": "Axiomic Labs is an independent AI research lab building from-scratch language models, reasoning benchmarks, and high-signal datasets for efficient AI. We focus on data efficiency and structured reasoning over raw scale."
+    },
+    {
+      "title": "GPT-S - a AxiomicLabs Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AxiomicLabs/gpt-s",
+      "snippet": "updated about 19 hours ago. Our Tiny Model Family. Upvote . AxiomicLabs/GPT-S-5M. Text Generation • 5.16M • Updated 23 days ago • 1.09k • 12"
+    },
+    {
+      "title": "AxiomicLabs (Axiomic Labs) - Hugging Face",
+      "url": "https://huggingface.co/AxiomicLabs/models",
+      "snippet": "Small Logic Engines AI & ML interests Small Logic Engines Recent Activity Datdanboi25 new activity 2 days ago"
+    },
+    {
+      "title": "LLM Updates (October 2026) - AI Model Releases & Provider Activity",
+      "url": "https://lmmarketcap.com/llm-updates",
+      "snippet": "Track AI model releases, recently added endpoints, and provider update cadence across GPT, Claude, Gemini, DeepSeek, Llama, and 350+ models."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    }
+  ]
+}

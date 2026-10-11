@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "microsoft/AesCode-8B",
+  "slug": "microsoft-aescode-8b",
+  "author": "microsoft",
+  "url": "https://huggingface.co/microsoft/AesCode-8B",
+  "created_at": "2026-09-29T13:04:44.000Z",
+  "updated_at": "2026-10-07T03:35:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "code-generation",
+    "html",
+    "multimodal",
+    "reinforcement-learning",
+    "design",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 31,
+  "downloads_30d": 6,
+  "trending_score": 31,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17547869260,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/?msockid=20c2688ae3626b181d887f65e2f46ad9",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+    },
+    {
+      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
+      "url": "https://www.microsoft.com/fr-fr?msockid=20c2688ae3626b181d887f65e2f46ad9",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
+      "url": "https://apps.microsoft.com/home",
+      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yasinyaman/toolrank-emb-8b-GGUF",
+  "slug": "yasinyaman-toolrank-emb-8b-gguf",
+  "author": "yasinyaman",
+  "url": "https://huggingface.co/yasinyaman/toolrank-emb-8b-GGUF",
+  "created_at": "2026-10-11T17:19:33.000Z",
+  "updated_at": "2026-10-11T17:21:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "tool-retrieval",
+    "mcp",
+    "agents",
+    "embeddings",
+    "llama.cpp",
+    "ollama",
+    "sentence-similarity",
+    "base_model:yasinyaman/toolrank-emb-8b",
+    "base_model:quantized:yasinyaman/toolrank-emb-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8188515328,
+  "parameters_human": "8.19B",
+  "storage_bytes": 13733392288,
+  "storage_human": "13.7 GB",
+  "base_model": "yasinyaman/toolrank-emb-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/toolrank-emb-8b-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/toolrank-emb-8b-GGUF",
+      "snippet": "26.06.2025 ... About · Usage · Provided Quants · FAQ / Model Request · Thanks · Model tree for mradermacher/toolrank-emb-8b-GGUF · Dataset used to train mradermacher ..."
+    },
+    {
+      "title": "Adapter Models for yasinyaman/toolrank-emb-8b - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Aadapter%3Ayasinyaman%2Ftoolrank-emb-8b",
+      "snippet": "Active filters: yasinyaman/toolrank-emb-8b. Clear all. mradermacher/toolrank-emb-8b-GGUF. 8B • Updated 4 days ago • 471. System theme. Company."
+    }
+  ]
+}

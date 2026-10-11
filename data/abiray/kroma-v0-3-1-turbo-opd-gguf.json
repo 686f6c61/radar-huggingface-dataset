@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Abiray/Kroma-v0.3.1-Turbo-OPD-GGUF",
+  "slug": "abiray-kroma-v0-3-1-turbo-opd-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/Kroma-v0.3.1-Turbo-OPD-GGUF",
+  "created_at": "2026-10-11T16:44:30.000Z",
+  "updated_at": "2026-10-11T17:44:03.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-to-image",
+    "comfyui",
+    "krea2",
+    "turbo",
+    "quantized",
+    "base_model:lodestones/Kroma",
+    "base_model:quantized:lodestones/Kroma",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12820073036,
+  "parameters_human": "12.82B",
+  "storage_bytes": 60248165600,
+  "storage_human": "60.2 GB",
+  "base_model": "lodestones/Kroma",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

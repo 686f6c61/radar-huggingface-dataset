@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-nvidia-nsys-n1d7-baseline-b1-s3-20260905-2339e68d",
+  "slug": "morealcholplz-kt-20261011-nvidia-nsys-n1d7-baseline-b1-s3-20260905-2339e68d",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-nvidia-nsys-n1d7-baseline-b1-s3-20260905-2339e68d",
+  "created_at": "2026-10-11T01:57:01.000Z",
+  "updated_at": "2026-10-11T02:43:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1357404475,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nsys-ai — AI-Powered GPU Profile Viewer",
+      "url": "https://gindachen.github.io/nsys-ai/",
+      "snippet": "Navigate GPU kernel timelines, explore NVTX hierarchies, and analyze Nsight Systems profiles from your browser or terminal."
+    },
+    {
+      "title": "Download The Official NVIDIA Drivers | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/drivers/",
+      "snippet": "Download the latest official NVIDIA drivers to enhance your PC gaming experience and run apps faster."
+    },
+    {
+      "title": "NVIDIA GeForce 617.42 WHQL Graphics Driver | Geeks3D",
+      "url": "https://geeks3d.com/20261001/nvidia-geforce-r617-graphics-driver/",
+      "snippet": "NVIDIA new graphics driver 617.42 WHQL released for all GeForce graphics cards on Windows 10/11. CUDA 13.4 + Vulkan 1.4.351."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "nsys-ai · PyPI",
+      "url": "https://pypi.org/project/nsys-ai/",
+      "snippet": "nsys-ai AI-powered analysis for NVIDIA Nsight Systems profiles Navigate GPU kernel timelines, diff two runs, and diagnose performance bottlenecks with an evidence-first agent — from your browser or terminal."
+    }
+  ]
+}

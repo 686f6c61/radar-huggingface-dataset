@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DariaNekrasova/bge-small-en-v1.5-finetuned-ner",
+  "slug": "darianekrasova-bge-small-en-v1-5-finetuned-ner",
+  "author": "DariaNekrasova",
+  "url": "https://huggingface.co/DariaNekrasova/bge-small-en-v1.5-finetuned-ner",
+  "created_at": "2026-10-11T18:36:08.000Z",
+  "updated_at": "2026-10-11T18:43:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132891445,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vertical Line Symbols Copy and Paste ┃ ⡇ ║ ⦚",
+      "url": "https://www.symbolselect.com/line-symbols/vertical-lines/",
+      "snippet": "Copy and paste Vertical Line Symbols instantly. Get PNG and SVG images, plus Unicode, HTML, and CSS codes for use in text, …"
+    },
+    {
+      "title": "Vertical bar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vertical_bar",
+      "snippet": "Single vertical lines show components of the cell which do not mix, usually being in different phases. The double vertical line ( || ) is …"
+    },
+    {
+      "title": "Line Symbols (━, │) - Copy and Paste Text Symbols - Symbolsdb.com",
+      "url": "https://symbolsdb.com/line-symbols",
+      "snippet": "Copy and paste Line Symbols (━, │, and more). Check Alt Codes and learn how to make specific symbols on the keyboard."
+    },
+    {
+      "title": "Line Symbols Copy and Paste ┃ │ ╏ ║ 〣 ☰ ☳ ︴",
+      "url": "https://www.symbolcopy.com/line-symbols.html",
+      "snippet": "Click on a line emoji ( ━ ) to copy it to the clipboard & insert it to an input element. Please also check out our text symbols chrome …"
+    },
+    {
+      "title": "Line Symbols (Copy and Paste) ─ │ ━ ║ – Unicode Lines, Dividers",
+      "url": "https://www.i2symbol.com/symbols/line",
+      "snippet": "Line symbols are commonly used to separate content, create borders, underline headings, or build simple box-like layouts in plain …"
+    }
+  ]
+}

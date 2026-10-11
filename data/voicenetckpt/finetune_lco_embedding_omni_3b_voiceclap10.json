@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_LCO_Embedding_Omni_3B_voiceclap10",
+  "slug": "voicenetckpt-finetune_lco_embedding_omni_3b_voiceclap10",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_3B_voiceclap10",
+  "created_at": "2026-10-11T15:48:11.000Z",
+  "updated_at": "2026-10-11T15:51:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260667431507,
+  "storage_human": "260.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale",
+      "url": "https://arxiv.org/pdf/2609.32016v1",
+      "snippet": "Ten of the eleven models (all except LCO-EMBEDDING-OMNI-3B) are evaluated against four established speech-emotion datasets to test transfer beyond VOICENET. EmoNet-Voice (Schuhmann et al., 2025a) provides 12,600 synthetic clips across 40 fine-grained emotion classes (the synthetic v1 release that motivates VOICENET&#x27;s 40-emotion taxonomy)."
+    },
+    {
+      "title": "VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/voicenet-fine-grained-voice-understanding-beyond-emotion",
+      "snippet": "On synthetic EmoNet-Voice, the zero-shot LCO-Embedding-Omni-7B leads at 0.167 while VoiceCLAP-Large reaches 0.155. General-audio CLAPs remain near chance on its 40 emotion classes. The external-dataset results connect VoiceNet to broader work on speech emotion recognition, while showing that performance depends on the dataset and label set."
+    },
+    {
+      "title": "LCO-Embedding-Omni-3B-2605-GGUF - Hugging Face",
+      "url": "https://huggingface.co/marksverdhei/LCO-Embedding-Omni-3B-2605-GGUF/blob/main/README.md",
+      "snippet": "LCO-Embedding-Omni-3B is a multimodal embedding model based on the Thinker component of Qwen 2.5 Omni, fine-tuned with LoRA and contrastive learning to produce 2048-dimensional embeddings from text, images, audio, and video."
+    },
+    {
+      "title": "GitHub - LAION-AI/voicenet: VoiceNet — perceptual voice & speech ...",
+      "url": "https://github.com/LAION-AI/voicenet",
+      "snippet": "→ https://projects.laion.ai/voicenet/ An interactive showcase of VoiceNet predictions on 100 diverse, multilingual Emolia speech clips. Each sample has an audio player, a radar profile of all 57 regression dimensions, the genuineness and vocal‑burst‑blend gauges, and a full per‑dimension table comparing the regression and classification predictions."
+    },
+    {
+      "title": "LCO-Embedding-Omni-7B - Hugging Face",
+      "url": "https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-7B",
+      "snippet": "Evaluation Results We evaluate LCO-Embedding with state-of-the-art embedding models, including E5-V, Voyage Multimodal 3, mmE5, and GME, on a MIEB-Lite benchmark (51 tasks) broken down by task categories. Performance and efficiency comparisons of different training strategies using 3B and 7B variants of Qwen2.5-VL backbones."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sabersuki114514/Meme-Qwen-7B-Instruct-Q8_0-GGUF",
+  "slug": "sabersuki114514-meme-qwen-7b-instruct-q8_0-gguf",
+  "author": "sabersuki114514",
+  "url": "https://huggingface.co/sabersuki114514/Meme-Qwen-7B-Instruct-Q8_0-GGUF",
+  "created_at": "2026-10-11T18:09:34.000Z",
+  "updated_at": "2026-10-11T18:09:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "gguf",
+    "lora",
+    "qwen2.5",
+    "chinese",
+    "meme",
+    "humor",
+    "sarcastic",
+    "llama-cpp",
+    "gguf-my-lora",
+    "zh",
+    "base_model:GaryYang123/Meme-Qwen-7B-Instruct",
+    "base_model:adapter:GaryYang123/Meme-Qwen-7B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40370176,
+  "parameters_human": "40.4M",
+  "storage_bytes": 63779712,
+  "storage_human": "64 MB",
+  "base_model": "GaryYang123/Meme-Qwen-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=qwen",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-abliterated-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen2.5-VL-7B-Instruct-abliterated-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Meme-Qwen-7B-Instruct: Text-to-Text model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/meme-qwen-7b-instruct-garyyang123",
+      "snippet": "Meme-Qwen-7B-Instruct is a LoRA adapter applied to the Qwen2.5-7B-Instruct base model. The architecture inherits from Qwen2.5, which uses a transformer decoder-only design with improvements in instruction following, long-context handling (8K+ tokens), structured data understanding, and JSON output generation compared to Qwen2."
+    },
+    {
+      "title": "OpenLLM Hub - Free Custom AI Models & Downloads",
+      "url": "https://openllm-hub.vercel.app/",
+      "snippet": "All-in-one open-source LLM hub to explore, test, benchmark, and download custom AI models for free in GGUF, Safetensors, and Ollama formats."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3: Qwen3 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3",
+      "snippet": "Qwen3-Instruct-2507 is the updated version of the previous Qwen3 non-thinking mode, featuring the following key enhancements: Significant improvements in general capabilities, including instruction following, logical reasoning, text comprehension, mathematics, science, coding and tool usage."
+    }
+  ]
+}

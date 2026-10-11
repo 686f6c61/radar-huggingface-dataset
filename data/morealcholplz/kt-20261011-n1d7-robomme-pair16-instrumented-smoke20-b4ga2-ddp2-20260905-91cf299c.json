@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b4ga2-ddp2-20260905-91cf299c",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b4ga2-ddp2-20260905-91cf299c",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b4ga2-ddp2-20260905-91cf299c",
+  "created_at": "2026-10-11T01:56:35.000Z",
+  "updated_at": "2026-10-11T02:40:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "Redeem Roblox Gift Cards and Codes",
+      "url": "https://www.roblox.com/redeem?nu=true",
+      "snippet": "Enter your Roblox gift card or promo code to get Robux and unlock a free exclusive virtual item."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "GR00T N1.6 + HAMLET + Persistent TTT — RoboMME NMT T=4 Private archival checkpoint for Nuri&#x27;s persistent test-time-training experiment on RoboMME. It extends the HAMLET K=4 attention-memory policy with recurrent fast weights trained using a next-moment-token inner objective."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    }
+  ]
+}

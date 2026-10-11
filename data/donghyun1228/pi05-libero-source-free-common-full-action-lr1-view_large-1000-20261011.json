@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011",
+  "slug": "donghyun1228-pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-full-action-lr1-view_large-1000-20261011",
+  "created_at": "2026-10-11T18:12:44.000Z",
+  "updated_at": "2026-10-11T18:52:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7710657342,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011",
+      "snippet": "The records directory includes the training plan, generation metadata, numeric source audit, raw/EMA comparison and export provenance. Use the same model config as that training plan. This is the51-leaf base checkpoint, before any separate source-wrist composition. Keep MuJoCo3.2.3 for LIBERO evaluation. Downloads last month -"
+    },
+    {
+      "title": "pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003",
+      "snippet": "pi0.5 LIBERO dense contact action-frame yaw 10 adaptation Final step 9999 of 10,000 updates of cumulative-average H=10 IDM and base-image/wrist-image/prompt representation KD (weights 1/1/0.25). The entire policy, including the action expert, is trained. Global IDM and KD batches are 32, learning rate is 1e-5 with 500 warmup steps, and FSDP uses 4 GPUs. Every yaw starts independently from the ..."
+    },
+    {
+      "title": "Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi",
+      "snippet": "OpenPI is an open-source training and deployment system for Vision-Language-Action (VLA) models in robotics, developed by Physical Intelligence. The repository implements three core model architecture"
+    },
+    {
+      "title": "pi05_libero_finetuned_v044 · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_finetuned_v044/summary",
+      "snippet": "π₀.₅ (Pi05 Libero) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Checkpoint trained and evaluated on LIBERO tasks Note: This model currently supports only the flow-matching action head ..."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

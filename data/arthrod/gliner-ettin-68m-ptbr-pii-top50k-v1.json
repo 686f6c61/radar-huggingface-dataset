@@ -5,7 +5,7 @@
   "author": "arthrod",
   "url": "https://huggingface.co/arthrod/gliner-ettin-68m-ptbr-pii-top50k-v1",
   "created_at": "2026-04-20T08:00:34.000Z",
-  "updated_at": "2026-10-10T22:47:15.000Z",
+  "updated_at": "2026-10-11T06:34:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",

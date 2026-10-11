@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Ikaru2lt/RobinHood",
+  "slug": "ikaru2lt-robinhood",
+  "author": "Ikaru2lt",
+  "url": "https://huggingface.co/Ikaru2lt/RobinHood",
+  "created_at": "2026-10-11T18:30:40.000Z",
+  "updated_at": "2026-10-11T19:25:16.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "python",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "python",
+    "time-series-forecasting",
+    "xai",
+    "pytorch",
+    "captum",
+    "deep-learning",
+    "llm",
+    "on-device",
+    "en",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Mean Absolute Error",
+      "value": 2.2757
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "Mean Squared Error",
+      "value": 15.6271
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - ikaruz050309/RobinHood: An AI capable of running 100% locally ...",
+      "url": "https://github.com/ikaruz050309/RobinHood",
+      "snippet": "An AI capable of running 100% locally using a hybrid TCN-LSTM-Attention model to predict time sequences in a way that is understandable to everyone through open-source&#x27;s LLM - ikaruz050309/RobinHood"
+    },
+    {
+      "title": "RobinHood AI Trader",
+      "url": "https://github.com/WrathallTechnology/RobinhoodAITrader",
+      "snippet": "RobinHood AI Trader Autonomous AI trading bot powered by Robinhood&#x27;s official MCP server and your choice of LLM (Claude, GPT-4, Gemini, Groq, and more). Self-host anywhere with Docker Compose in one command."
+    },
+    {
+      "title": "Robinhood Unveils In-App AI Agents That Can Trade on Customers&#x27; Behalf",
+      "url": "https://finance.yahoo.com/technology/ai/articles/robinhood-unveils-app-ai-agents-094550758.html",
+      "snippet": "Robinhood unveiled Robinhood Agents at HOOD Summit 2026 in Houston. The in-app AI agents can analyze markets, build strategies, and trade on a customer&#x27;s behalf."
+    },
+    {
+      "title": "YizhiSong/FriesTrader: Robinhood Agentic Trading agent - GitHub",
+      "url": "https://github.com/YizhiSong/FriesTrader",
+      "snippet": "An AI trading agent built to run cheap and fully on its own, trading real orders on Robinhood using its Agentic Trading MCP server. Once set up, it&#x27;s able to run unattended on its own schedule every weekday, no manual triggering needed, and the actual safety mechanism is mechanical, auditable risk rules, not the model&#x27;s judgment. Two short scheduled Claude Code sessions a day screen stocks ..."
+    },
+    {
+      "title": "GitHub - NikhilMiddaGeek/Robinhood-AI-Agent",
+      "url": "https://github.com/NikhilMiddaGeek/Robinhood-AI-Agent",
+      "snippet": "Robinhood AI Agent — Autonomous Stock-Trading Assistant A personal AI trading assistant that, every US market open, screens stocks, analyzes them with the Claude API, applies hard-coded risk rules, and proposes trades — then waits for your approve/reject before anything executes. No trade ever fires without a human sign-off."
+    }
+  ]
+}

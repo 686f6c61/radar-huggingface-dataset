@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jundot/clef-flash-oQ6e",
+  "slug": "jundot-clef-flash-oq6e",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/clef-flash-oQ6e",
+  "created_at": "2026-10-11T18:09:13.000Z",
+  "updated_at": "2026-10-11T18:09:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "clef",
+    "systemone",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 8520941429,
+  "storage_human": "8.5 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Uncensored Hentai Videos in 1080p HD | HenVids",
+      "url": "https://henvids.com/tag/uncensored",
+      "snippet": "Watch free uncensored hentai videos in 1080p HD on HenVids. Browse the collection by newest, most viewed, studio, or series."
+    },
+    {
+      "title": "Hentai No Subtitles Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=hentai+no+subtitles",
+      "snippet": "Watch Hentai No Subtitles porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant …"
+    },
+    {
+      "title": "Subbed Hentai — Free HD English-Subtitled Titles | HDHentai",
+      "url": "https://hdhentai.com/genre/subbed",
+      "snippet": "Watch subbed hentai in HD on HDHentai. Hundreds of subtitled, uncensored episodes with clear translations, daily uploads and …"
+    },
+    {
+      "title": "Hentai (Eng Dub/Subs & Uncensored) Playlist - HD Porn …",
+      "url": "https://spankbang.com/90ahi/playlist/hentai+eng+dub+uncensored/",
+      "snippet": "Play trending and hottest Hentai (Eng Dub/Subs & Uncensored) movies."
+    },
+    {
+      "title": "Uncensored Hentai No Sub Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=uncensored+hentai+no+sub",
+      "snippet": "Browse through our impressive selection of porn videos in HD quality on any device you own."
+    }
+  ]
+}

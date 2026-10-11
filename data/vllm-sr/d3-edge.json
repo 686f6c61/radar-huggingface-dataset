@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "vllm-sr/d3-edge",
+  "slug": "vllm-sr-d3-edge",
+  "author": "vllm-sr",
+  "url": "https://huggingface.co/vllm-sr/d3-edge",
+  "created_at": "2026-10-10T23:49:23.000Z",
+  "updated_at": "2026-10-11T05:46:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "zero-shot-classification",
+    "decision-model",
+    "classification",
+    "system-one",
+    "multimodal",
+    "vision",
+    "video",
+    "custom_code",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 594321600,
+  "parameters_human": "594.3M",
+  "storage_bytes": 3975393259,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - vllm-project/vllm: A high-throughput and memory-efficient ...",
+      "url": "https://github.com/vllm-project/vllm",
+      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
+    },
+    {
+      "title": "vLLM",
+      "url": "https://vllm.ai/",
+      "snippet": "vLLM is a high-throughput and memory-efficient inference and serving engine for Large Language Models (LLMs). Deploy AI models …"
+    },
+    {
+      "title": "vLLM",
+      "url": "https://docs.vllm.ai/en/latest/",
+      "snippet": "Originally developed in the Sky Computing Lab at UC Berkeley, vLLM has grown into one of the most active open-source AI projects …"
+    },
+    {
+      "title": "vLLM - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/VLLM",
+      "snippet": "vLLM ... vLLM is an open-source software framework for inference and serving of large language models and related multimodal …"
+    },
+    {
+      "title": "Welcome to vLLM — vLLM",
+      "url": "https://docs.vllm.ai/en/v0.7.1/index.html",
+      "snippet": "vLLM is a fast and easy-to-use library for LLM inference and serving. Originally developed in the Sky Computing Lab at UC Berkeley, …"
+    }
+  ]
+}

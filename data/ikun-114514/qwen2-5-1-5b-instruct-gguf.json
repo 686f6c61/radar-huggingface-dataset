@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "ikun-114514/Qwen2.5-1.5B-Instruct-GGUF",
+  "slug": "ikun-114514-qwen2-5-1-5b-instruct-gguf",
+  "author": "ikun-114514",
+  "url": "https://huggingface.co/ikun-114514/Qwen2.5-1.5B-Instruct-GGUF",
+  "created_at": "2026-10-11T17:16:59.000Z",
+  "updated_at": "2026-10-11T17:17:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 13324678944,
+  "storage_human": "13.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

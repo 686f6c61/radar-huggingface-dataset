@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-robottt-34241bef",
+  "slug": "morealcholplz-kt-20261011-robottt-34241bef",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-robottt-34241bef",
+  "created_at": "2026-10-11T01:49:45.000Z",
+  "updated_at": "2026-10-11T01:49:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "GR00T N1.6 + HAMLET + Persistent TTT — RoboMME NMT T=4 Private archival checkpoint for Nuri&#x27;s persistent test-time-training experiment on RoboMME. It extends the HAMLET K=4 attention-memory policy with recurrent fast weights trained using a next-moment-token inner objective."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=en_US&WBPM_lid=homepage%2Fct1.html_pnl_trk",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    }
+  ]
+}

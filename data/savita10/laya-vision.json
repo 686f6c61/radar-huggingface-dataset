@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "savita10/laya-vision",
+  "slug": "savita10-laya-vision",
+  "author": "savita10",
+  "url": "https://huggingface.co/savita10/laya-vision",
+  "created_at": "2026-10-11T18:41:38.000Z",
+  "updated_at": "2026-10-11T18:47:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "laya-vision",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "laya-vision",
+    "safetensors",
+    "document-classification",
+    "rvl-cdip",
+    "laya",
+    "siglip",
+    "decision-model",
+    "calibrated",
+    "image-classification",
+    "en",
+    "dataset:aharley/rvl_cdip",
+    "arxiv:1704.03557",
+    "arxiv:2303.15343",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 955460122,
+  "storage_human": "955 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document-type classification (16 classes)",
+      "dataset": "RVL-CDIP (5,000-image stratified test subsample)",
+      "metric": null,
+      "value": 0.8624
+    },
+    {
+      "task": "Document-type classification (16 classes)",
+      "dataset": "RVL-CDIP (5,000-image stratified test subsample)",
+      "metric": null,
+      "value": 0.0145
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amora Luv Tube Search (52 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=amora+luv&s=t",
+      "snippet": "52 results for amora luv tube, ordered by relevance, newest, popularity, duration or random mora luv"
+    },
+    {
+      "title": "Amoraluv (New) - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=Amoraluv&o=new",
+      "snippet": "Amoraluv photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people use …"
+    },
+    {
+      "title": "Amora Luv Porn Videos XXX | XOrgasmo.com",
+      "url": "https://xorgasmo.com/tag/amora-luv/",
+      "snippet": "Amora Luv Porn Videos at XOrgasmo.com, Amora Luv XXX nude with the widest compilation of sex videos."
+    },
+    {
+      "title": "Videos Tagged with amoraluv : Hot Live Webcam Shows & Exclusive …",
+      "url": "https://www.camwhores.tv/tags/amoraluv/",
+      "snippet": "Jun 5, 2026 · CamWhores - Watch all Free 15 amoraluv Webcam Porn Videos and 0 new amoraluv videos added today"
+    },
+    {
+      "title": "AmoraLuv from Stripchat - 10 camshow recordings",
+      "url": "https://www.webcamrecordings.com/modelSearch/amoraluv/page/1",
+      "snippet": "Nov 18, 2025 · Total of 4 hours of video from 10 recordings."
+    }
+  ]
+}

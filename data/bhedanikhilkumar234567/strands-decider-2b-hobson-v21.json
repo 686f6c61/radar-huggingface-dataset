@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "id": "bhedanikhilkumar234567/strands-decider-2B-hobson-v21",
+  "slug": "bhedanikhilkumar234567-strands-decider-2b-hobson-v21",
+  "author": "bhedanikhilkumar234567",
+  "url": "https://huggingface.co/bhedanikhilkumar234567/strands-decider-2B-hobson-v21",
+  "created_at": "2026-10-11T18:24:30.000Z",
+  "updated_at": "2026-10-11T18:24:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "strands-decider",
+    "decision-model",
+    "hobson",
+    "lora",
+    "qwen3.5",
+    "classification",
+    "calibration",
+    "typed-decisions",
+    "text-classification",
+    "dataset:ccdv/arxiv-classification",
+    "dataset:clinc/clinc_oos",
+    "dataset:community-datasets/yahoo_answers_topics",
+    "dataset:dair-ai/emotion",
+    "dataset:fancyzhx/ag_news",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:google-research-datasets/paws",
+    "dataset:google/boolq",
+    "dataset:google/civil_comments",
+    "dataset:legacy-datasets/banking77",
+    "dataset:mteb/amazon_massive_intent",
+    "dataset:nyu-mll/glue",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "dataset:papluca/language-identification",
+    "dataset:qiaojin/PubMedQA",
+    "dataset:raquiba/Sarcasm_News_Headline",
+    "dataset:sealuzh/app_reviews",
+    "dataset:SetFit/20_newsgroups",
+    "dataset:SetFit/sst5",
+    "dataset:SetFit/subj",
+    "dataset:SetFit/TREC-QC",
+    "dataset:tals/vitaminc",
+    "dataset:tasksource/ruletaker",
+    "dataset:ucberkeley-dlab/measuring-hate-speech",
+    "dataset:ucirvine/sms_spam",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:nvidia/HelpSteer2",
+    "dataset:tasksource/Boardgame-QA",
+    "dataset:hotpotqa/hotpot_qa",
+    "base_model:Qwen/Qwen3.5-2B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-2B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91527688,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen3.5-2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "JevBench public, served at 4096",
+      "metric": "accuracy (176/231)",
+      "value": 0.7619
+    },
+    {
+      "task": null,
+      "dataset": "eval: held-out short tasks",
+      "metric": "accuracy (n=6000)",
+      "value": 0.65
+    },
+    {
+      "task": null,
+      "dataset": "eval: boardgame",
+      "metric": "accuracy (n=900)",
+      "value": 0.821
+    },
+    {
+      "task": null,
+      "dataset": "eval: contractnli",
+      "metric": "accuracy (n=1026)",
+      "value": 0.865
+    },
+    {
+      "task": null,
+      "dataset": "eval: hotpotqa (held out)",
+      "metric": "accuracy (n=959)",
+      "value": 0.746
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique",
+      "metric": "accuracy (n=1199)",
+      "value": 0.882
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, answerable",
+      "metric": "accuracy (n=599)",
+      "value": 0.886
+    },
+    {
+      "task": null,
+      "dataset": "eval: musique, unanswerable",
+      "metric": "accuracy (n=600)",
+      "value": 0.877
+    },
+    {
+      "task": null,
+      "dataset": "eval: [4] adequacy_hs2",
+      "metric": "accuracy (n=234)",
+      "value": 0.739
+    },
+    {
+      "task": null,
+      "dataset": "eval: [5] gen:adequacy",
+      "metric": "accuracy (n=302)",
+      "value": 0.788
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - strands-labs/strands-decider: A small, fast decision model, or ...",
+      "url": "https://github.com/strands-labs/strands-decider",
+      "snippet": "The reference model today is v21 (strands-decider-2B-hobson-v21, v21b in the research notes): v19&#x27;s recipe plus v20&#x27;s checked question paraphrases and distillation from Qwen3.5-4B where it agrees with the gold label."
+    },
+    {
+      "title": "StrandsAgents/strands-decider-2B-hobson-v21 · Hugging Face",
+      "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v21",
+      "snippet": "Strands decider is a small, fast decision model for agentic AI. Unlike an LLM, which can generate arbitrary text, a decision model picks between sets of options and rates things on a scale, and every answer carries a calibrated confidence. It fits the decisions inside an agentic workflow: model ..."
+    },
+    {
+      "title": "Introducing Strands Decider 2B: a small, open source, decision model",
+      "url": "https://strandsagents.com/blog/introducing-strands-decider/",
+      "snippet": "Strands Decider 2B is a small, open source, decision model optimized for fast experimentation, local development, and innovation."
+    },
+    {
+      "title": "StrandsAgents/strands-decider-2B-hobson-v19 · Hugging Face",
+      "url": "https://huggingface.co/StrandsAgents/strands-decider-2B-hobson-v19",
+      "snippet": "Strands decider is a small, fast decision model for agentic AI. Unlike an LLM, which can generate arbitrary text, a decision model picks between sets of options and rates things on a scale, and every answer carries a calibrated confidence. It fits the decisions inside an agentic workflow: model routing, tool selection, argument checking, triage, guardrails, evaluations, and the rote decisions ..."
+    },
+    {
+      "title": "strands-decider/examples/strands/README.md at main · strands-labs ...",
+      "url": "https://github.com/strands-labs/strands-decider/blob/main/examples/strands/README.md",
+      "snippet": "A small, fast decision model, or system one model, for agentic workflows. Pick between options or rate on a scale faster than an LLM, with a calibrated confidence on every decision. - strands-labs/..."
+    }
+  ]
+}

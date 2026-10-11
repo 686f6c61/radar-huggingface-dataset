@@ -5,7 +5,7 @@
   "author": "Mati83moni",
   "url": "https://huggingface.co/Mati83moni/PLLuM-12B-chat-2512-EXL3",
   "created_at": "2026-07-01T19:17:18.000Z",
-  "updated_at": "2026-10-04T22:32:33.000Z",
+  "updated_at": "2026-10-10T15:03:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 255,
+  "downloads_30d": 268,
   "trending_score": 0,
   "parameters": 3993946112,
   "parameters_human": "3.99B",

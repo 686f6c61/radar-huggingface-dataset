@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Whisper-Hindi2Hinglish-Apex-ONNX",
+  "slug": "onnx-community-whisper-hindi2hinglish-apex-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Whisper-Hindi2Hinglish-Apex-ONNX",
+  "created_at": "2026-10-11T19:08:01.000Z",
+  "updated_at": "2026-10-11T19:09:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "whisper-event",
+    "pytorch",
+    "hinglish",
+    "en",
+    "hi",
+    "base_model:Oriserve/Whisper-Hindi2Hinglish-Apex",
+    "base_model:quantized:Oriserve/Whisper-Hindi2Hinglish-Apex",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14002281877,
+  "storage_human": "14.0 GB",
+  "base_model": "Oriserve/Whisper-Hindi2Hinglish-Apex",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "google/fleurs",
+      "metric": "WER",
+      "value": 29.7869
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "mozilla-foundation/common_voice_20_0",
+      "metric": "WER",
+      "value": 35.9587
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Indic-Voices",
+      "metric": "WER",
+      "value": 47.638
+    }
+  ],
+  "sources": [
+    {
+      "title": "Asus Rog Strix Rtx 3080 for sale | eBay",
+      "url": "https://www.ebay.com/sch/i.html?_nkw=asus+rog+strix+rtx+3080&_sop=12&msockid=174282d19efa63343499953e9fb16218",
+      "snippet": "Get the best deals for Asus Rog Strix Rtx 3080 at eBay.com. We have a great online selection at the lowest prices with Fast & Free …"
+    },
+    {
+      "title": "ASUS Rog Strix GeForce RTX 3080 (10 GB, GDDR6X,) Graphics Card",
+      "url": "https://www.ebay.com/p/14048860482?msockid=174282d19efa63343499953e9fb16218",
+      "snippet": "Find many great new & used options and get the best deals for ASUS Rog Strix GeForce RTX 3080 (10 GB, GDDR6X,) Graphics …"
+    },
+    {
+      "title": "ASUS ROG Strix RTX 3080 10 Go OC – Stable en PCIe Gen 1 / Scellé",
+      "url": "https://www.leboncoin.fr/ad/accessoires_informatique/3284909189",
+      "snippet": "Je mets en vente cette ASUS ROG Strix GeForce RTX 3080 Gaming OC (10 Go). Vente en toute transparence : la carte est vendue …"
+    },
+    {
+      "title": "ASUS ROG STRIX GeForce RTX 3080 10GB Graphics Card - eBay",
+      "url": "https://www.ebay.fr/itm/206491478841",
+      "snippet": "Les meilleures offres pour ASUS ROG STRIX GeForce RTX 3080 10GB Graphics Card sont sur eBay Comparez les prix et les …"
+    },
+    {
+      "title": "ASUS ROG Strix NVIDIA GeForce RTX 3080 V2 White Edition",
+      "url": "https://www.amazon.com/ASUS_ROG-Graphics-DisplayPort-Axial-tech-2-9-Slot/dp/B09D3X38GG",
+      "snippet": "Product Description This limited edition of the ROG Strix GeForce RTX 3080 features a completely white colorway on top of all the …"
+    }
+  ]
+}

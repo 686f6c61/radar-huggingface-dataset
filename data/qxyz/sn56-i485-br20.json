@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "qxyz/sn56-i485-br20",
+  "slug": "qxyz-sn56-i485-br20",
+  "author": "qxyz",
+  "url": "https://huggingface.co/qxyz/sn56-i485-br20",
+  "created_at": "2026-10-11T14:57:01.000Z",
+  "updated_at": "2026-10-11T14:57:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/workspace/models/qwen_r3c_merged",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1068461587,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Franky Wah - YouTube",
+      "url": "https://www.youtube.com/channel/UCVqrpEgooll7MRWAW113oQg",
+      "snippet": "Franky Wah presents SHÈN Radio: a journey into the deep and mythical world of SHÈN, featuring conceptual, cutting-edge, …"
+    },
+    {
+      "title": "Get Me High - YouTube",
+      "url": "https://m.youtube.com/watch?v=sBDGa9FH3gs",
+      "snippet": "Mar 21, 2019 · Provided to YouTube by Ministry of Sound Recordings Get Me High · Franky Wah Get Me High ℗ 2019 Under …"
+    },
+    {
+      "title": "Get Me High - song and lyrics by Franky Wah | Spotify",
+      "url": "https://open.spotify.com/track/3bU4HJOgZJRTu827IOZrjj",
+      "snippet": "Listen to Get Me High on Spotify. Franky Wah · Song · 2019."
+    },
+    {
+      "title": "Franky Wah – Get Me High Lyrics | Genius Lyrics",
+      "url": "https://genius.com/Franky-wah-get-me-high-lyrics",
+      "snippet": "Who produced “Get Me High” by Franky Wah? When did Franky Wah release “Get Me High”? 1."
+    },
+    {
+      "title": "Franky Wah - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCpZaTa62oW5T1YGYgOyfRbQ",
+      "snippet": "Franky Wah Presents: SHÈN Radio - Episode 013 (feat. Kuuda)"
+    }
+  ]
+}

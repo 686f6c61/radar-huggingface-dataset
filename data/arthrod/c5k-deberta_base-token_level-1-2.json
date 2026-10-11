@@ -5,7 +5,7 @@
   "author": "arthrod",
   "url": "https://huggingface.co/arthrod/c5k-deberta_base-token_level-1-2",
   "created_at": "2026-02-24T08:48:31.000Z",
-  "updated_at": "2026-10-10T22:48:45.000Z",
+  "updated_at": "2026-10-11T06:34:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -37,7 +37,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 22,
+  "downloads_30d": 27,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-train-smoke20-20260903-694708d8",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-train-smoke20-20260903-694708d8",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-train-smoke20-20260903-694708d8",
+  "created_at": "2026-10-11T01:56:44.000Z",
+  "updated_at": "2026-10-11T02:40:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-seqloader-preflight-r2 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2",
+      "snippet": "TTT-VLA RoboMME — SeqLoader T4 2-GPU Preflight R2 What this is A model export produced during the SeqLoader/T4 two-GPU preflight stage for RoboMME. This is a runnable intermediate/preflight artifact, not a final benchmark claim."
+    },
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/En",
+      "snippet": "PolyBuzz offers Free, Private, and Unrestricted AI character chats with over 20 million characters, enabling you to create your own AI characters, dive into immersive roleplay, and explore endless possibilities. Additionally, PolyBuzz is an AI chatbot application that provides personalized conversations and immersive role-playing experiences."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

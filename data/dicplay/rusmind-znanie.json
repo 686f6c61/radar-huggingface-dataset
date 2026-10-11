@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DICPlay/RusMind-Znanie",
+  "slug": "dicplay-rusmind-znanie",
+  "author": "DICPlay",
+  "url": "https://huggingface.co/DICPlay/RusMind-Znanie",
+  "created_at": "2026-10-11T01:50:30.000Z",
+  "updated_at": "2026-10-11T02:41:09.000Z",
+  "license": "rusmind-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rusmind",
+    "dicplay",
+    "russian",
+    "llama.cpp",
+    "moe",
+    "text-generation",
+    "ru",
+    "en",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 16796017632,
+  "storage_human": "16.8 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DICPlay/RusMind-Znanie · Hugging Face",
+      "url": "https://huggingface.co/DICPlay/RusMind-Znanie",
+      "snippet": "DICPlay / RusMind-Znanie Like 0 Follow DICPlay 1 Text Generation GGUF Russian English rusmind dicplay russian llama.cpp Mixture of Experts conversational License:rusmind-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Display AI — Your Screen, Understood",
+      "url": "https://www.displayai.info/",
+      "snippet": "Display AI can see your active tab and understand what&#x27;s on your screen — no copy-pasting required. Just ask. Powered by Google Gemini, Display AI thinks fast. Watch the real-time spinner, then get sharp, accurate answers. No popups, no new tabs. Display AI lives in Chrome&#x27;s native sidebar — always one click away, never in your way."
+    },
+    {
+      "title": "deepseek-v4.1-flash Model by Deepseek-ai | NVIDIA NIM",
+      "url": "https://build.nvidia.com/deepseek-ai/deepseek-v4.1-flash/modelcard",
+      "snippet": "DeepSeek-V4.1-Flash is a multimodal mixture-of-experts model from DeepSeek-AI that accepts text and images, generates text autoregressively, supports a combined context of up to one million tokens, and provides continuously controllable reasoning effort. This model is ready for commercial or non ..."
+    },
+    {
+      "title": "Anthropic AI model sends false tip to Philadelphia police in unsolved ...",
+      "url": "https://apnews.com/article/artificial-intelligence-anthropic-claude-0acc6ac46d4d80db805e8d55468a6fe1",
+      "snippet": "An Anthropic artificial intelligence model submitted a false tip to Philadelphia police about an unsolved homicide case, authorities and Anthropic said."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gian2007/F5-TTS-italian",
+  "slug": "gian2007-f5-tts-italian",
+  "author": "gian2007",
+  "url": "https://huggingface.co/gian2007/F5-TTS-italian",
+  "created_at": "2026-10-11T15:22:50.000Z",
+  "updated_at": "2026-10-11T15:22:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "f5-tts",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "f5-tts",
+    "text-to-speech",
+    "it",
+    "dataset:ylacombe/cml-tts",
+    "base_model:SWivid/F5-TTS",
+    "base_model:finetune:SWivid/F5-TTS",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76867133381,
+  "storage_human": "76.9 GB",
+  "base_model": "SWivid/F5-TTS",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/reels/",
+      "snippet": "Instagram Reels lets you create and discover short, entertaining videos with audio, effects, and creative tools to share with friends or …"
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/936495066470190",
+      "snippet": "Find help and answers to your questions about Instagram."
+    },
+    {
+      "title": "Instagram for Business",
+      "url": "https://business.instagram.com/?locale=ko_KR",
+      "snippet": "2백만 개 이상의 비즈니스가 Instagram을 통해 사람들과 만나고 있습니다. Instagram을 활용하여 새로운 고객에게 도달하고, 타겟 …"
+    }
+  ]
+}

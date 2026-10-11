@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "chaeeun7201/furniture_use_data_full_finetuning",
+  "slug": "chaeeun7201-furniture_use_data_full_finetuning",
+  "author": "chaeeun7201",
+  "url": "https://huggingface.co/chaeeun7201/furniture_use_data_full_finetuning",
+  "created_at": "2026-10-11T01:50:40.000Z",
+  "updated_at": "2026-10-11T03:46:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "detr",
+    "object-detection",
+    "generated_from_trainer",
+    "base_model:facebook/detr-resnet-50",
+    "base_model:finetune:facebook/detr-resnet-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 41608649,
+  "parameters_human": "41.6M",
+  "storage_bytes": 4828445173,
+  "storage_human": "4.8 GB",
+  "base_model": "facebook/detr-resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carta di Identità Elettronica (CIE) - Funziona, semplicemente",
+      "url": "https://www.cartaidentita.interno.gov.it/",
+      "snippet": "Puoi richiedere la tua CIE presso tutti i Comuni italiani e utilizzare fin da subito la tua identità digitale.Read more"
+    },
+    {
+      "title": "Carta d’Identità Elettronica – CIE – Consolato Generale d'Italia a Lione",
+      "url": "https://conslione.esteri.it/it/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/carta-didentita-elettronica-cie/",
+      "snippet": "La carta d’identità potrà essere ritirata di persona presso il Comune o si potrà richiedere la spedizione all’indirizzo estero di …"
+    },
+    {
+      "title": "Carte d’identité électronique (C.I.E.) – Consolato Generale d'Italia a ...",
+      "url": "https://consparigi.esteri.it/fr/servizi-consolari-e-visti/servizi-per-il-cittadino-italiano/carte-didentite-electronique-c-i-e/",
+      "snippet": "Pour demander la carte d’identité électronique, il est nécessaire de prendre rendez-via la plateforme PRENOT@MI. Le système …"
+    },
+    {
+      "title": "Carta d’identità - Ministero degli Affari Esteri e della ...",
+      "url": "https://www.esteri.it/it/servizi-opportunita/italiani-all-estero/documenti_di_viaggio/carta_identita/",
+      "snippet": "I cittadini italiani iscritti all’AIRE possono richiedere la Carta d’Identità Elettronica (CIE) presso il loro Ufficio Consolare di riferimento o …"
+    },
+    {
+      "title": "Rilascio e rinnovo in Italia - Carta di Identità Elettronica (CIE)",
+      "url": "https://www.cartaidentita.interno.gov.it/richiedi/rilascio-e-rinnovo-in-italia/",
+      "snippet": "Puoi richiedere la Carta di Identità Elettronica (CIE) presso qualsiasi Comune; se hai una Carta di Identità Cartacea puoi richiederla …"
+    }
+  ]
+}

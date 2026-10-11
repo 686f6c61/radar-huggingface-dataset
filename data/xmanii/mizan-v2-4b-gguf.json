@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "xmanii/Mizan-v2-4B-GGUF",
+  "slug": "xmanii-mizan-v2-4b-gguf",
+  "author": "xmanii",
+  "url": "https://huggingface.co/xmanii/Mizan-v2-4B-GGUF",
+  "created_at": "2026-10-11T18:39:22.000Z",
+  "updated_at": "2026-10-11T18:39:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "systemone",
+    "clef",
+    "persian",
+    "farsi",
+    "multimodal",
+    "llama.cpp",
+    "image-text-to-text",
+    "fa",
+    "en",
+    "base_model:xmanii/Mizan-v2-4B",
+    "base_model:quantized:xmanii/Mizan-v2-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4237797892,
+  "parameters_human": "4.24B",
+  "storage_bytes": 7619472304,
+  "storage_human": "7.6 GB",
+  "base_model": "xmanii/Mizan-v2-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xmanii (mani mirzaei) - Hugging Face",
+      "url": "https://huggingface.co/xmanii/models",
+      "snippet": "published a model about 1 month ago updated a dataset about 1 month ago"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Browse open AI models, download hosted files with published SHA-256 checksums, and try small models in your browser. No account needed."
+    },
+    {
+      "title": "Models compatible with the GGUF library - Hugging Face",
+      "url": "https://huggingface.co/models?library=gguf",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Browse AI Artifacts | Hugging Bay",
+      "url": "https://huggingbay.xyz/browse",
+      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "subspecs/s2-pro-gguf",
+  "slug": "subspecs-s2-pro-gguf",
+  "author": "subspecs",
+  "url": "https://huggingface.co/subspecs/s2-pro-gguf",
+  "created_at": "2026-10-11T17:15:14.000Z",
+  "updated_at": "2026-10-11T17:15:15.000Z",
+  "license": "fish-audio-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "text-to-speech",
+    "audio",
+    "fish-speech",
+    "tts",
+    "voice-cloning",
+    "multilingual",
+    "base_model:fishaudio/s2-pro",
+    "base_model:quantized:fishaudio/s2-pro",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4953250801,
+  "parameters_human": "4.95B",
+  "storage_bytes": 33277110864,
+  "storage_human": "33.3 GB",
+  "base_model": "fishaudio/s2-pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/",
+      "snippet": "Instantly play the most demanding PC games and seamlessly play across your devices."
+    },
+    {
+      "title": "GitHub - rodrigomatta/s2.cpp: Implementation of Fish Audio S2 Pro ...",
+      "url": "https://github.com/rodrigomatta/s2.cpp",
+      "snippet": "cpp — Fish Audio's S2 Pro Dual-AR text-to-speech model running locally via a pure C++/GGML inference engine with CPU, Vulkan, CUDA, and Metal GPU backends. No ..."
+    },
+    {
+      "title": "GeForce NOW",
+      "url": "https://play.geforcenow.com/mall/offline.html",
+      "snippet": "Experience high-performance PC gaming instantly with GeForce NOW, accessible across multiple devices for seamless gameplay."
+    }
+  ]
+}

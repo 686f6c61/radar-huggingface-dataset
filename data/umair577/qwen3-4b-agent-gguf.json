@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Umair577/qwen3-4b-agent-gguf",
+  "slug": "umair577-qwen3-4b-agent-gguf",
+  "author": "Umair577",
+  "url": "https://huggingface.co/Umair577/qwen3-4b-agent-gguf",
+  "created_at": "2026-10-11T17:21:19.000Z",
+  "updated_at": "2026-10-11T17:21:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 2497280928,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auchan Hypermarché Châtellerault",
+      "url": "https://www.auchan.fr/magasins/hypermarche/auchan-hypermarche-chatellerault/s-141?msockid=2717e693d586611624ecf17cd4106033",
+      "snippet": "Aug 25, 2026 · Supermarché, hypermarché, drive, click & collect, consigne... retrouvez toutes les informations des établissements …"
+    },
+    {
+      "title": "Auchan Drive Châtellerault",
+      "url": "https://www.auchan.fr/magasins/drive/auchan-drive-chatellerault/s-451?msockid=2717e693d586611624ecf17cd4106033",
+      "snippet": "Supermarché, hypermarché, drive, click & collect, consigne... retrouvez toutes les informations des établissements Auchan : …"
+    },
+    {
+      "title": "AUCHAN CHATELLERAULT - Horaires, téléphone, adresse et …",
+      "url": "https://www.promoalert.com/magasin/auchan-chatellerault-horaires-telephone-adresse-15-2231-3283-0-0-0.html",
+      "snippet": "Sep 14, 2026 · Retrouvez les horaires d'ouverture, numéro de téléphone, et adresse de votre magasin Auchan Chatellerault. …"
+    },
+    {
+      "title": "Auchan Hypermarché Châtellerault - Facebook",
+      "url": "https://www.facebook.com/AuchanHypermarcheChatellerault/",
+      "snippet": "Et bien sûr, plein d’autres offres vous attendent au rayon Fruits & Légumes de votre Auchan Châtellerault 🛒💚 👉 Venez en profiter ce …"
+    },
+    {
+      "title": "Auchan Châtellerault - Tous les catalogues et promotions de Auchan …",
+      "url": "https://www.icatalogue.fr/p/chatellerault/auchan",
+      "snippet": "3 days ago · Retrouvez toutes les adresses et heures d'ouverture de Auchan à Châtellerault. Consultez aussi les catalogues et …"
+    }
+  ]
+}

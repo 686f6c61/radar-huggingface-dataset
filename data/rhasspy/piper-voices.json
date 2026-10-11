@@ -87,13 +87,13 @@
     "license:mit",
     "region:us"
   ],
-  "likes": 781,
+  "likes": 782,
   "downloads_30d": 0,
-  "trending_score": 13,
+  "trending_score": 11,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 12616529424,
-  "storage_human": "12.6 GB",
+  "storage_bytes": 12681435260,
+  "storage_human": "12.7 GB",
   "base_model": null,
   "formats": [
     "onnx"

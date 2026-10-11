@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-smoke-r2-20260903-b11f5aad",
+  "created_at": "2026-10-11T01:56:39.000Z",
+  "updated_at": "2026-10-11T02:40:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox Player Search | Rolimon&#x27;s",
+      "url": "https://www.rolimons.com/players",
+      "snippet": "Quickly search for Roblox players and view their profiles. Player profiles show which limited items they own, their RAP and Value charts, and much more."
+    },
+    {
+      "title": "Moonshot AI",
+      "url": "https://www.moonshot.ai/",
+      "snippet": "Complex problems, solved with ease AI Models is capability. Code, analyze, sheets and slides — simplify complex work with the latest flagship model."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-seqloader-preflight-r2 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2",
+      "snippet": "TTT-VLA RoboMME — SeqLoader T4 2-GPU Preflight R2 What this is A model export produced during the SeqLoader/T4 two-GPU preflight stage for RoboMME. This is a runnable intermediate/preflight artifact, not a final benchmark claim."
+    },
+    {
+      "title": "Zenodo",
+      "url": "https://zenodo.org/",
+      "snippet": "Open repository for EU-funded research outputs from Horizon Europe, Euratom, and earlier Framework Programmes."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    }
+  ]
+}

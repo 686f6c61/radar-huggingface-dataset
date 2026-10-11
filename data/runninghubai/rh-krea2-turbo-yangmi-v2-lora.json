@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-yangmi-v2-lora",
+  "slug": "runninghubai-rh-krea2-turbo-yangmi-v2-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-yangmi-v2-lora",
+  "created_at": "2026-10-11T18:39:01.000Z",
+  "updated_at": "2026-10-11T18:40:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229225502,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-lora",
+      "snippet": "RunningHubAI / rh-krea2-turbo-lora Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-krea2-turbo-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-ai-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-ai-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Complete Krea-2 ComfyUI Workflow Guide: Turbo T2I, RAW Training & Style ...",
+      "url": "https://cgflowstudio.com/tutorials/krea-2-comfyui-workflow-guide/",
+      "snippet": "Complete Krea-2 ComfyUI Workflow Guide: Turbo T2I, RAW Training & Style LoRA Reference Setup Krea-2 from Krea AI is a next-generation open-weights image foundation model built from scratch with a focus on high aesthetic quality, artistic versatility, and style control. Featuring native Qwen3-VL-4B multimodal text encoding, built-in prompt enhancement, official style LoRAs, and zero-shot Style ..."
+    },
+    {
+      "title": "Krea 2 Turbo Official Comfy-Org Checkpoints (Krea2)",
+      "url": "https://civitai.com/models/2726029/krea-2-turbo-official-comfy-org-checkpoints-krea2",
+      "snippet": "Krea 2 is a text-to-image diffusion model that generates images from natural-language text descriptions. The model is designed to support creative, commercial, developer, and research use cases, including image generation, concepting, design exploration, visual production workflows, and integration into applications and creative tools."
+    }
+  ]
+}

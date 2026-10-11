@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-20260905-620841ed",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-20260905-620841ed",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-instrumented-smoke20-b2ga4-ddp2-20260905-620841ed",
+  "created_at": "2026-10-11T01:56:29.000Z",
+  "updated_at": "2026-10-11T02:39:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "Login to your Roblox account or sign up to create a new account."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "Redeem Roblox Gift Cards and Codes",
+      "url": "https://www.roblox.com/redeem?nu=true",
+      "snippet": "Enter your Roblox gift card or promo code to get Robux and unlock a free exclusive virtual item."
+    }
+  ]
+}

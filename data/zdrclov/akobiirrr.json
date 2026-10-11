@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZDRCLOV/Akobiirrr",
+  "slug": "zdrclov-akobiirrr",
+  "author": "ZDRCLOV",
+  "url": "https://huggingface.co/ZDRCLOV/Akobiirrr",
+  "created_at": "2026-10-11T18:37:37.000Z",
+  "updated_at": "2026-10-11T18:40:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "text-classification",
+    "ru",
+    "base_model:Cloudflare/clef",
+    "base_model:finetune:Cloudflare/clef",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated-GGUF, huihui-ai/Huihui-GLM-5.3-Flash-abliterated-GGUF, Cloudflare/clef",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchives.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    },
+    {
+      "title": "Free Models: ZDR vs Non-ZDR Explained | AI·Collab",
+      "url": "https://aicollab.app/blog/free-models/",
+      "snippet": "Discover free AI models on AI·Collab. Learn about ZDR and Non-ZDR models, understand pros and cons, service limitations, and how to find them."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The team behind ZeroLimitAI, a hosted AI app and API whose router ranks free models with this same function. We keep the list accurate because our own product depends on it; the list itself stays MIT, provider-neutral and useful without us — a model belongs here whether or not we route to it, and several of the highest-ranked ones we do not."
+    }
+  ]
+}

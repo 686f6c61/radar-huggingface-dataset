@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-compile-b1ga1-s12-20260905-d9757968",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-compile-b1ga1-s12-20260905-d9757968",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-compile-b1ga1-s12-20260905-d9757968",
+  "created_at": "2026-10-11T01:57:08.000Z",
+  "updated_at": "2026-10-11T02:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "Microsoft 365 - Sign into Copilot",
+      "url": "https://m365.cloud.microsoft/?omkt=en-001&source=post_page---------------------------",
+      "snippet": "Microsoft 365 includes Word, Excel, PowerPoint, Outlook, Teams, and OneDrive, with Microsoft Copilot built in to help you create, communicate, and summarize information. Formerly Office 365."
+    },
+    {
+      "title": "Copilot | AI chat for work",
+      "url": "https://copilot.cloud.microsoft/",
+      "snippet": "Copilot, AI built for work Copilot Chat brings powerful AI assistance into your daily workflow, helping you turn ideas into action and tasks into outcomes."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Illustrator Free Download & Free Trial | Adobe Illustrator",
+      "url": "https://www.adobe.com/products/illustrator/free-trial-download.html",
+      "snippet": "Download the full version of Adobe Illustrator for free. Create logos, icons, sketches, typography, and complex illustrations with a free trial today."
+    }
+  ]
+}

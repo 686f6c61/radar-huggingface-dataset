@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-2026-803f7859",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-2026-803f7859",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-2026-803f7859",
+  "created_at": "2026-10-11T01:56:23.000Z",
+  "updated_at": "2026-10-11T02:39:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "Roblox Player Search | Rolimon&#x27;s",
+      "url": "https://www.rolimons.com/players",
+      "snippet": "Quickly search for Roblox players and view their profiles. Player profiles show which limited items they own, their RAP and Value charts, and much more."
+    },
+    {
+      "title": "Redeem Roblox Gift Cards and Codes",
+      "url": "https://www.roblox.com/redeem?nu=true",
+      "snippet": "Enter your Roblox gift card or promo code to get Robux and unlock a free exclusive virtual item."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-ttt-nmt-t4 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-ttt-nmt-t4",
+      "snippet": "GR00T N1.6 + HAMLET + Persistent TTT — RoboMME NMT T=4 Private archival checkpoint for Nuri&#x27;s persistent test-time-training experiment on RoboMME. It extends the HAMLET K=4 attention-memory policy with recurrent fast weights trained using a next-moment-token inner objective."
+    },
+    {
+      "title": "KTCollects - YouTube",
+      "url": "https://www.youtube.com/@KT_Collectss/shorts",
+      "snippet": "The Funniest, Most Boring, Greatest & Worst Action Figure Collector Alive ️ For business inquires : ktcollects8@gmail.com"
+    }
+  ]
+}

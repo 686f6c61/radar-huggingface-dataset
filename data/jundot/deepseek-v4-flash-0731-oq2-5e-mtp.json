@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jundot/DeepSeek-V4-Flash-0731-oQ2.5e-mtp",
+  "slug": "jundot-deepseek-v4-flash-0731-oq2-5e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.5e-mtp",
+  "created_at": "2026-10-11T18:40:25.000Z",
+  "updated_at": "2026-10-11T18:42:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "oq",
+    "quantized",
+    "mtp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 118382959044,
+  "storage_human": "118.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jundot/DeepSeek-V4-Flash-0731-oQ2.5e · Hugging Face",
+      "url": "https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ2.5e",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jundot/DeepSeek-V4-Flash-0731-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ4e-mtp",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4-Flash-0731 - featherless.ai",
+      "url": "https://featherless.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 is an official release from DeepSeek-AI, superseding its preview version with substantially enhanced agentic capabilities. This model features the same structure as DeepSeek-V4-Flash-DSpark, incorporating a speculative decoding module for improved efficiency. It demonstrates competitive performance against strong proprietary models on various agentic benchmarks, despite ..."
+    },
+    {
+      "title": "DeepSeek-V4-Flash-0731 · Models - modelscope.ai",
+      "url": "https://modelscope.ai/models/deepseek-ai/DeepSeek-V4-Flash-0731",
+      "snippet": "DeepSeek-V4-Flash-0731 - An open-source model by deepseek-ai on ModelScope."
+    },
+    {
+      "title": "How to configure DeepSeek V4 Flash 0731? · jundot omlx - GitHub",
+      "url": "https://github.com/jundot/omlx/discussions/2499",
+      "snippet": "The checkpoint was Jundot/DeepSeek-V4-Flash-0731-oQ2.5e, revision 5c8b681. I tested on an M3 Ultra with 512 GB, comparing upstream 49ec2716 with candidate 4d3d8e2."
+    }
+  ]
+}

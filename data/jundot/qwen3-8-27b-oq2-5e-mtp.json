@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jundot/Qwen3.8-27B-oQ2.5e-mtp",
+  "slug": "jundot-qwen3-8-27b-oq2-5e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ2.5e-mtp",
+  "created_at": "2026-10-11T17:13:14.000Z",
+  "updated_at": "2026-10-11T17:13:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 12664183170,
+  "storage_human": "12.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jundot (Jun Kim) - Hugging Face",
+      "url": "https://huggingface.co/Jundot/models",
+      "snippet": "Jundot/Qwen3.8-27B-oQ6e-mtp. 28B • Updated Aug 17 • 1.62k • 10 · Jundot/Qwen3.8 ... Jundot/DeepSeek-V4-Flash-oQ2.5e-mtp. 291B • Updated Jul 8 • 272 • 5 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=oq",
+      "snippet": "Base only. Inference Available Inference. Edit filters. Sort: Trending. Active filters: oq. Clear all. Jundot/Qwen3.8-Flash-Next-oQ4e-mtp."
+    },
+    {
+      "title": "r/oMLX - Introducing Lightning MTP, Custom Kernels, and oQe ...",
+      "url": "https://www.reddit.com/r/oMLX/comments/1uqyu2h/introducing_lightning_mtp_custom_kernels_and_oqe/",
+      "snippet": "08.07.2026 ... •. 3mo ago. Agreed. A very stupid-simple local test that I track for various models shows these values for Jundot/Qwen3.6-27B-oQ6-mtp: 0.5.0dev1 ..."
+    },
+    {
+      "title": "Running LLMs locally on a Mac - Dan MacKinlay",
+      "url": "https://danmackinlay.name/notebook/local_llm_mac.html",
+      "snippet": "23.05.2026 ... cpp wrapper” framing is loosening: the registry now ships -mlx tags for some models (e.g. qwen3.5:35b-mlx ). 5.2.1 An embedding model in 4GB."
+    },
+    {
+      "title": "Models compatible with the MLX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=mlx&p=2&sort=trending",
+      "snippet": "Jundot/Qwen3.8-27B-oQ4e-fp16-mtp. 28B • Updated Aug 17 • 1.26k • 13 · mlx ... TensorFold/Qwen3.8-Flash-Next-MLX-oQ2-MTP. Image-Text-to-Text • 180B ..."
+    }
+  ]
+}

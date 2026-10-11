@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TheZeez/jjs-yuji",
+  "slug": "thezeez-jjs-yuji",
+  "author": "TheZeez",
+  "url": "https://huggingface.co/TheZeez/jjs-yuji",
+  "created_at": "2026-10-11T18:29:53.000Z",
+  "updated_at": "2026-10-11T18:35:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131140543,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TheZeez (Zeez) - Hugging Face",
+      "url": "https://huggingface.co/TheZeez",
+      "snippet": "Recent Activity new activity about 2 hours ago perplexity-ai/r1-1776: \"China censorship percentage\" liked a model 3 months ago TheDrummer/Behemoth-123B-v1.2 View all activity"
+    },
+    {
+      "title": "Yuuji Itadori | Jujutsu Kaisen - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/74fa427cd937256c31f5322efc5f196e",
+      "snippet": "Explore Yuuji Itadori | Jujutsu Kaisen model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "jjs_style AI LoRA Model | Jujutsu Kaisen | PixAI",
+      "url": "https://pixai.art/en/model/2014742838185034466",
+      "snippet": "jjs_style is an AI LoRA by 다운로드 on PixAI. Try it free."
+    },
+    {
+      "title": "Itadori Yuji - SeaArt AI Model",
+      "url": "https://www.seaart.ai/models/detail/42d694a8502ef5d2086c747d8888b0d6",
+      "snippet": "Explore Itadori Yuji model on SeaArt AI. Transform your idea into professional-quality AI-generated images and videos with our free, easy-to-use platform."
+    },
+    {
+      "title": "Yuuji Itadori | Jujutsu Kaisen - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1843240209522852692",
+      "snippet": "Generate stunning boy, anime, male, man, character, 呪術廻戦, Jujutsu kaisen, jjk, yuji_itadori, yuuji_itadori, sorcery_fight, jujutsu_kaisen anime art with the &#x27;Yuuji Itadori | Jujutsu Kaisen&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    }
+  ]
+}

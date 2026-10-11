@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AhmedTaha012/Qwen2.5-Coder-0.5B-AUTOSAR-GRPO",
+  "slug": "ahmedtaha012-qwen2-5-coder-0-5b-autosar-grpo",
+  "author": "AhmedTaha012",
+  "url": "https://huggingface.co/AhmedTaha012/Qwen2.5-Coder-0.5B-AUTOSAR-GRPO",
+  "created_at": "2026-10-11T19:08:52.000Z",
+  "updated_at": "2026-10-11T19:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-0.5B",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "unsloth/Qwen2.5-Coder-0.5B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-Coder-0.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B?library=transformers",
+      "snippet": "Qwen2.5-Coder is the latest series of Code-Specific Qwen large language models (formerly known as CodeQwen). As of now, Qwen2.5-Coder has covered six mainstream model sizes, 0.5, 1.5, 3, 7, 14, 32 billion parameters, to meet the needs of different developers."
+    },
+    {
+      "title": "Qwen2.5-Coder-0.5B: Lightweight Open-Source Code LLM",
+      "url": "https://dev.co/ai/llms/qwen2-5-coder-0-5b",
+      "snippet": "Qwen2.5-Coder-0.5B Qwen2.5-Coder-0.5B is a lightweight, code-focused language model with 494M parameters designed for code generation, reasoning, and fixing tasks. Licensed under Apache 2.0, it runs on modest hardware and is suitable for embedded code assistance, local deployment, and fine-tuning scenarios. Not recommended for conversational use without post-training."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-0.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-Coder-0.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5 Coder 0.5B by Qwen — VRAM 1GB, 32K context | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Qwen%2FQwen2.5-Coder-0.5B,2OGplOix3C0tjmHfzwqTRu",
+      "snippet": "Qwen2.5 Coder 0.5B is an open-source 0.5b LLM by Qwen. VRAM 1GB, 32K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen/Qwen2.5-Coder-0.5B • hfviewer",
+      "url": "https://hfviewer.com/Qwen/Qwen2.5-Coder-0.5B",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. Qwen/Qwen2.5-Coder-.5B is a text-generation model (qwen2 architecture). It uses 24 transformer layers, a hidden size of 896, and 14 query heads with 2 key/value heads (grouped-query attention)."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cont1037/qwen3.8-27b-ft-ep1",
+  "slug": "cont1037-qwen3-8-27b-ft-ep1",
+  "author": "cont1037",
+  "url": "https://huggingface.co/cont1037/qwen3.8-27b-ft-ep1",
+  "created_at": "2026-10-11T18:15:26.000Z",
+  "updated_at": "2026-10-11T18:16:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816216,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Dell Inspiron M531R - 5535] No Boot Device ... - answers.microsoft.com",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/dell-inspiron-m531r-5535-no-boot-device-found-how/3cd20a3b-2e20-4f79-ac54-3b5721f5453a",
+      "snippet": "Jan 1, 2015 · Every time I turn my computer on, this pops up and forces me to reboot my machine: I installed Windows 8 and moved …"
+    },
+    {
+      "title": "spam - Communauté Microsoft",
+      "url": "https://answers.microsoft.com/fr-fr/outlook_com/forum/all/spam/b3cdccdb-9200-4515-adde-f12d5b8e25d5",
+      "snippet": "Bonjour je suis bombardé de spam tous les jours et impossible de créer une règle. Le blocage ne sert à rien, les signalements non plus!"
+    },
+    {
+      "title": "What should I do in response to this situation? - Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/xbox/forum/all/what-should-i-do-in-response-to-this-situation/7f33a88a-9494-463d-9fd7-a01b1d75a882",
+      "snippet": "Jun 12, 2020 · If you were contracted by them, best thing to do is just uplaod a differnet picture. Than maybe e-email them and …"
+    },
+    {
+      "title": "Microsoft 问答 | Microsoft Learn",
+      "url": "https://www.answers.microsoft.com/zh-hans/feedback/forum/all/%E8%AF%B7%E9%97%AE%E4%B8%BA%E4%BB%80%E4%B9%88/c8d77862-2bfa-4ed8-aa46-a99ccbecd2c0",
+      "snippet": "了解、分享知识、加入讨论、阅读博客，以及跨Microsoft产品（包括Copilot、AI、Azure和Microsoft 365）参加活动。 与同行和专家 …"
+    },
+    {
+      "title": "\"We couldn't log on to the incoming (POP/IMAP) server. Please check ...",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/we-couldnt-log-on-to-the-incoming-popimap-server/7dd05a48-dfd9-4f30-8696-2b50f5fe56ac",
+      "snippet": "Aug 15, 2023 · Locked Question. This question was migrated from the Microsoft Support Community. You can vote on whether it's …"
+    }
+  ]
+}

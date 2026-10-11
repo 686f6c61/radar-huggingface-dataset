@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu03-2026-75c71628",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu03-2026-75c71628",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu03-2026-75c71628",
+  "created_at": "2026-10-11T01:56:28.000Z",
+  "updated_at": "2026-10-11T02:39:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Redeem Roblox Gift Cards and Codes",
+      "url": "https://www.roblox.com/redeem?nu=true",
+      "snippet": "Enter your Roblox gift card or promo code to get Robux and unlock a free exclusive virtual item."
+    },
+    {
+      "title": "Roblox Game Codes - All Working Codes & Rewards (May 2026)",
+      "url": "https://progameguides.com/roblox/roblox-game-codes/",
+      "snippet": "Find the latest Roblox codes for your favorite game and never miss free rewards like Gems, Coins, Rerolls, EXP boost, and more!"
+    },
+    {
+      "title": "RoboMME",
+      "url": "https://robomme.github.io/index.html",
+      "snippet": "RoboMME is a large-scale, cognitively motivated robotic benchmark for memory-augmented manipulation, comprising four task suites that target distinct memory types: (1) The Counting task suite emphasizes temporal memory, requiring robots to accumulate and reason over past events; (2) The Permanence task suite focuses on spatial memory, requiring tracking of object locations under occlusion and ..."
+    },
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/?home",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Quazim0t0",
   "url": "https://huggingface.co/Quazim0t0/Byrne-100M-Ultra-MC",
   "created_at": "2026-08-19T04:18:45.000Z",
-  "updated_at": "2026-09-20T21:23:46.000Z",
+  "updated_at": "2026-10-11T08:29:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "conversational"
   ],
   "likes": 7,
-  "downloads_30d": 189,
+  "downloads_30d": 143,
   "trending_score": 0,
   "parameters": 113916322,
   "parameters_human": "113.9M",

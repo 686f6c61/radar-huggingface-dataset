@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16",
+  "slug": "automatosx-ax-embeddinggemma-2-cuda-axq-nvfp4-w4a16",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-EmbeddingGemma-2-CUDA-AXQ-NVFP4-W4A16",
+  "created_at": "2026-10-11T15:28:24.000Z",
+  "updated_at": "2026-10-11T15:28:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "feature-extraction",
+    "axquant",
+    "cuda",
+    "nvfp4",
+    "embedding",
+    "base_model:google/embeddinggemma-2",
+    "base_model:quantized:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1356996563,
+  "storage_human": "1.4 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVFP4 - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/nvfp4",
+      "snippet": "Native AXQuant CUDA NVFP4 W4A16 and calibrated W4A4 development checkpoints."
+    },
+    {
+      "title": "EmbeddingGemma 2: The Developer Guide- Google Developers Blog",
+      "url": "https://developers.googleblog.com/embeddinggemma-2-the-developer-guide/",
+      "snippet": "EmbeddingGemma 2 is designed to provide a single, compact open model released under the Apache 2.0 license, delivering exceptional multimodal performance for its size. Based on Gemma 4, this sub-1B model maps text, code, images, video, and audio into a unified 768-dimensional space."
+    },
+    {
+      "title": "EmbeddingGemma — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/embeddinggemma/",
+      "snippet": "Performance EmbeddingGemma 2 delivers high-quality embeddings for code, vision, and audio tasks."
+    },
+    {
+      "title": "EmbeddingGemma 2 is a best-in-class open model for natively multimodal ...",
+      "url": "https://deepmind.google/blog/embeddinggemma-2-an-open-lightweight-multimodal-embedding-model/",
+      "snippet": "EmbeddingGemma 2 is the most capable model for on-device multimodal embeddings, natively mapping combinations of text, images, audio, and video into a unified embedding space."
+    },
+    {
+      "title": "MLX - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/mlx",
+      "snippet": "Complete index of every public AutomatosX model. Prefer the family collections above."
+    }
+  ]
+}

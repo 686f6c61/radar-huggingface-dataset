@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jahirrrr/Klyra-Decision-16M-Recovery-V5.1",
+  "slug": "jahirrrr-klyra-decision-16m-recovery-v5-1",
+  "author": "Jahirrrr",
+  "url": "https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Recovery-V5.1",
+  "created_at": "2026-10-11T01:59:33.000Z",
+  "updated_at": "2026-10-11T01:59:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "klyra",
+    "decision-model",
+    "multitask",
+    "research",
+    "experimental",
+    "preview",
+    "en",
+    "id",
+    "base_model:Jahirrrr/Klyra-Decision-16M-Generalist-V4",
+    "base_model:finetune:Jahirrrr/Klyra-Decision-16M-Generalist-V4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 16392033,
+  "parameters_human": "16.4M",
+  "storage_bytes": 65578108,
+  "storage_human": "66 MB",
+  "base_model": "Jahirrrr/Klyra-Decision-16M-Generalist-V4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jahirrrr/Klyra-Decision-16M-Choice-V3 · Hugging Face",
+      "url": "https://huggingface.co/Jahirrrr/Klyra-Decision-16M-Choice-V3",
+      "snippet": "Experimental Research Preview Klyra-Decision-16M-Choice-V3 is an experimental AI decision model developed by Polyvor Labs as part of the Klyra research initiative. This release focuses on improving structured decision-making, option selection, and generalization across different inputs."
+    },
+    {
+      "title": "Fine-tuned Models for Jahirrrr/Klyra-Decision-16M-Generalist-V4 ...",
+      "url": "https://huggingface.co/models?other=base_model:finetune:Jahirrrr/Klyra-Decision-16M-Generalist-V4",
+      "snippet": "Jahirrrr/Klyra-Decision-16M-MultiTask-Generalist-V5 16.4M•Updated about 3 hours ago"
+    },
+    {
+      "title": "GitHub - klyra-ai/docs: Official documentation for Klyra AI - The #1 ...",
+      "url": "https://github.com/klyra-ai/docs",
+      "snippet": "Official documentation for Klyra AI - The #1 All-in-One AI platform for Content Creation, Automation, and Productivity. - klyra-ai/docs"
+    },
+    {
+      "title": "Jahirrrr/Klyra-64M · Hugging Face",
+      "url": "https://huggingface.co/Jahirrrr/Klyra-64M",
+      "snippet": "Klyra-64M Klyra-64M is a compact language model family developed as an academic research project. The project was initiated and developed by students of Informatics Engineering at Politeknik Negeri Jakarta (State Polytechnic of Jakarta), with a focus on efficient language modeling, staged post-training, reasoning, reinforcement learning, and model distillation at the sub-100M parameter scale."
+    },
+    {
+      "title": "GitHub - sra08/Klayr-AI-Scientist-: Klayr is an AI-powered research ...",
+      "url": "https://github.com/sra08/Klayr-AI-Scientist-",
+      "snippet": "Klayr is an AI-powered research system designed to accelerate scientific discovery by turning hypotheses into validated, cost-optimized experiment plans, enhanced by live literature search, collaboration matching, and a self-improving feedback loop. - sra08/Klayr-AI-Scientist-"
+    }
+  ]
+}

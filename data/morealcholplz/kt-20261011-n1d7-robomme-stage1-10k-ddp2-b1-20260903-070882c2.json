@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-stage1-10k-ddp2-b1-20260903-070882c2",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-stage1-10k-ddp2-b1-20260903-070882c2",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-stage1-10k-ddp2-b1-20260903-070882c2",
+  "created_at": "2026-10-11T01:56:47.000Z",
+  "updated_at": "2026-10-11T02:41:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2620464758,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RoboMME",
+      "url": "https://robomme.github.io/index.html",
+      "snippet": "RoboMME is a large-scale, cognitively motivated robotic benchmark for memory-augmented manipulation, comprising four task suites that target distinct memory types: (1) The Counting task suite emphasizes temporal memory, requiring robots to accumulate and reason over past events; (2) The Permanence task suite focuses on spatial memory, requiring tracking of object locations under occlusion and ..."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-seqloader-preflight-r2 · Hugging Face",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-seqloader-preflight-r2",
+      "snippet": "TTT-VLA RoboMME — SeqLoader T4 2-GPU Preflight R2 What this is A model export produced during the SeqLoader/T4 two-GPU preflight stage for RoboMME. This is a runnable intermediate/preflight artifact, not a final benchmark claim."
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "morealcholplz/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000 ...",
+      "url": "https://huggingface.co/morealcholplz/ttt-vla-robomme-persistent-nmt-t4-optimized-r2-step13000",
+      "snippet": "GR00T N1.6 + Persistent RoboTTT NMT T=4: optimized-r2 checkpoint 13000 This repository archives the 13,000-optimizer-step intermediate checkpoint from a persistent TTT experiment on RoboMME. It is provided for reproducible evaluation and comparison. It is not claimed to be the final or best-performing checkpoint."
+    }
+  ]
+}

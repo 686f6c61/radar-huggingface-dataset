@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nif0/PRISM-Q-Qwen-Image-2.1-Turbo",
+  "slug": "nif0-prism-q-qwen-image-2-1-turbo",
+  "author": "nif0",
+  "url": "https://huggingface.co/nif0/PRISM-Q-Qwen-Image-2.1-Turbo",
+  "created_at": "2026-10-11T19:02:19.000Z",
+  "updated_at": "2026-10-11T19:03:00.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "trellis",
+  "languages": [],
+  "tags": [
+    "trellis",
+    "comfyui",
+    "qwen-image",
+    "quantized",
+    "int8",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16640570556,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXTENTACION - YouTube",
+      "url": "https://www.youtube.com/channel/UCM9r1xn6s30OnlJWb-jc3Sw",
+      "snippet": "Thank you again for your support and for continuing to honor and celebrate the life of Jah. The Estate of Jahseh Onfroy, aka …"
+    },
+    {
+      "title": "Xxxtentacion videos - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PLF44gcWZFYRFsVxV_1DIazfBRXBRdS0AD",
+      "snippet": "XXXTentacion Calls Out Drake In His First Interview After Jail!"
+    },
+    {
+      "title": "XXXTENTACION - Look At Me! (Official Video) - YouTube",
+      "url": "https://m.youtube.com/watch?v=qku2WZ7aRYw",
+      "snippet": "Sep 12, 2017 · XXXTENTACION - Look At Me! (Official Video) XXXTENTACION 43.5M subscribers Subscribe"
+    },
+    {
+      "title": "XXXTENTACION - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCnAcxgRZ065f_eXK1o85c1w",
+      "snippet": "Though a controversial figure due to his widely publicized legal troubles, XXXTentacion gained a cult following among his young fan …"
+    },
+    {
+      "title": "Les vidéos les plus vues de XXXTENTACION - Allformusic",
+      "url": "https://www.allformusic.fr/xxxtentacion/videos",
+      "snippet": "Regarder les vidéos les plus populaires de XXXTENTACION, ses interviews et documentaires les plus regardés ainsi que les …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rahodan/krea01",
+  "slug": "rahodan-krea01",
+  "author": "rahodan",
+  "url": "https://huggingface.co/rahodan/krea01",
+  "created_at": "2026-10-11T18:16:08.000Z",
+  "updated_at": "2026-10-11T18:26:50.000Z",
+  "license": "license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12820119020,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Photos: Edit, Organize, Search, and Backup Your Photos",
+      "url": "https://photos.google.com/",
+      "snippet": "Edit and enhance photos with AI-powered features like Magic Eraser and Unblur on Google Photos. Store, organize & search your …Read more"
+    },
+    {
+      "title": "App downloads - Google Photos",
+      "url": "https://photos.google.com/apps",
+      "snippet": "Download Google Photos Get the Google Photos mobile app Back up and view photos on your Android and iOS devices"
+    },
+    {
+      "title": "Google Photos",
+      "url": "https://photos.google.com/_/scs/social-static/_/js/k=boq.PhotosUi.en_US.0wZ6pCLcJGc.O/am=QKBRRvE7hMJDEmEABSAqCQ/d=1/excm=_b,_tp,sharedphoto/ed=1/dg=0/rs=AGLTcCOsASN4HsazlYVytlYdUF5hsacaKw/m=_b,_tp",
+      "snippet": "\"use strict\";this.default_PhotosUi=this.default_PhotosUi||{};(function(_){var window=this; try{ var …"
+    },
+    {
+      "title": "Sign in - Google Accounts - Google Photos",
+      "url": "https://photos.google.com/accounts/login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Google Photos",
+      "url": "https://photos.google.com/robots.txt",
+      "snippet": "User-agent: * Disallow: /activities Disallow: /album/ Disallow: /albums Disallow: /auto/ Disallow: /assistant Disallow: /archive Disallow: …"
+    }
+  ]
+}

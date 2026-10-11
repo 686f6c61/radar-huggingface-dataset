@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Muse2-125M",
+  "slug": "archivestudio-muse2-125m",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Muse2-125M",
+  "created_at": "2026-10-11T16:29:31.000Z",
+  "updated_at": "2026-10-11T16:29:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "muse2",
+    "text-generation",
+    "conversational",
+    "hybrid-attention",
+    "convolution",
+    "grouped-query-attention",
+    "edge",
+    "on-device",
+    "structured-output",
+    "json",
+    "en",
+    "base_model:Muse-research/Muse2-125M-Base",
+    "base_model:finetune:Muse-research/Muse2-125M-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122915328,
+  "parameters_human": "122.9M",
+  "storage_bytes": 245840496,
+  "storage_human": "246 MB",
+  "base_model": "Muse-research/Muse2-125M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Sudoku online - solve web sudoku puzzles",
+      "url": "https://sudoku.com/",
+      "snippet": "Play free Sudoku online from Easy to Expert level on Sudoku.com. Select a difficulty level of a web sudoku puzzle to challenge …"
+    },
+    {
+      "title": "Spielen Sie Sudoku mittel online auf Sudoku.com",
+      "url": "https://sudoku.com/de/mittel/",
+      "snippet": "Wenn Sie Online spielen versuchen Sie es mit analogen Taktiken zur Lösung von mittel schweren Sudoku. Vorteile von Online …"
+    },
+    {
+      "title": "Sudoku höllisch - Löse höllische Sudoku-Rätsel gratis online",
+      "url": "https://sudoku.com/de/evil/",
+      "snippet": "Höllisches Sudoku ist eine meisterhafte Spielstufe für erfahrene Spieler und Fans von Sudoku. Trainiere dein Gehirn und hab Spaß …"
+    },
+    {
+      "title": "Sehr schwer Sudoku spielen - Tagesspiegel auf Sudoku.com",
+      "url": "https://sudoku.com/de/schwer/",
+      "snippet": "Dazu haben Sie bei Sudoku.com immer die hilfreichen Funktionalitäten, wie die Hinweise, die Notizen, den Radiergummi und die …"
+    },
+    {
+      "title": "Sudoku estremo - Risolvi rompicapo estremamente difficili gratis",
+      "url": "https://sudoku.com/it/extreme/",
+      "snippet": "Sudoku estremo è un livello di gioco per veri esperti e fan di sudoku. Gioca a sudoku estremamente difficili online su Sudoku.com …"
+    }
+  ]
+}

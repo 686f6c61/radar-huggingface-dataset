@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lora",
+  "slug": "voicenetckpt-finetune_bidirlm_omni_2_5b_voiceclap10_lora",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_lora",
+  "created_at": "2026-10-11T16:37:20.000Z",
+  "updated_at": "2026-10-11T17:41:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107124906303,
+  "storage_human": "107.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

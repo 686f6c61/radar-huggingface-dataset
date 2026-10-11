@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SketchSSM/Nemotron-3-Nano-4B-BF16",
+  "slug": "sketchssm-nemotron-3-nano-4b-bf16",
+  "author": "SketchSSM",
+  "url": "https://huggingface.co/SketchSSM/Nemotron-3-Nano-4B-BF16",
+  "created_at": "2026-10-11T17:08:52.000Z",
+  "updated_at": "2026-10-11T17:08:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sketchssm",
+    "state-space-model",
+    "bf16",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8089029,
+  "storage_human": "8 MB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=nemotron",
+      "snippet": "SketchSSM/Nemotron-Nano-9B-v2-BF16. Updated about 14 hours ago • 3 ... nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16. Text Generation • 4B • Updated Mar 20 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=nemo",
+      "snippet": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-NVFP4. Text Generation • 67B • Updated Aug 24 • 664k • 445 · SketchSSM/Nemotron-Nano-9B-v2-BF16. Updated 3 days ago • 3 ..."
+    },
+    {
+      "title": "SketchSSM: Write to the Full State, Read from a Compact Sketch",
+      "url": "https://arxiv.org/pdf/2609.33051",
+      "snippet": "27.09.2026 ... We evaluate four models spanning three linear-attention methods: Nemotron. Nano 9B v2 and Nemotron 3 Super (Mamba-2), Qwen3.8 Flash-Next (GDN) ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=bf16",
+      "snippet": "Blackfrost-AI/CYBER-FROST-3.8-BF16. Text Generation • 180B • Updated 6 ... SketchSSM/Nemotron-Nano-9B-v2-BF16. Updated 1 day ago • 3 · SketchSSM/Qwen3.5 ..."
+    },
+    {
+      "title": "GlobalFoundries LOTSE | Workflow evaluation | Fouad Bahrpeyma",
+      "url": "https://www.linkedin.com/posts/fouad-bahrpeyma_wsc2026-lotse-semiconductormanufacturing-activity-7511748805919334401-8w_R",
+      "snippet": "02.10.2026 ... ... AI Factory about Foundation Models for Metallurgy on November 4. ... Recent frontier models (Nemotron 3, Qwen3.8, GLM ..."
+    }
+  ]
+}

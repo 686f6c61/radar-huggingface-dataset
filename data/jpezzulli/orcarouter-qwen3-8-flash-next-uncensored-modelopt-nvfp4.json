@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "jpezzulli/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4",
+  "slug": "jpezzulli-orcarouter-qwen3-8-flash-next-uncensored-modelopt-nvfp4",
+  "author": "jpezzulli",
+  "url": "https://huggingface.co/jpezzulli/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4",
+  "created_at": "2026-09-17T03:42:44.000Z",
+  "updated_at": "2026-09-17T06:57:18.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.8",
+    "flash-next",
+    "uncensored",
+    "modelopt",
+    "nvfp4",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 2074,
+  "trending_score": 10,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 135243553424,
+  "storage_human": "135.2 GB",
+  "base_model": "OrcaRouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4",
+      "url": "https://huggingface.co/jpezzulli/OrcaRouter-Qwen3.8-Flash-Next-Uncensored-ModelOpt-NVFP4",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX?library=mlx",
+      "snippet": "OrcaRouter 1.59k Image-Text-to-Text Transformers Safetensors MLX English Chinese qwen4_exp abliterated qwen qwen4 qwen3.8 flash-next uncensored ai-red-team red-teaming Mixture of Experts vision-language function-calling reasoning mtp apple-silicon 4bit conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+      "url": "https://abliteration.org/models/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+      "snippet": "Qwen3.8-Flash-Next-Uncensored-NVFP4 by orcarouter: M1 Direct removal. 6.4K downloads, 80 likes on Hugging Face. Files, benchmarks and abliteration classification on abliteration.org."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+      "url": "https://ollama.com/orcarouter/Qwen3.8-Flash-Next-Uncensored",
+      "snippet": "This model will comply with harmful, unethical, or illegal requests the original Qwen3.8-Flash-Next would refuse. Released strictly for legitimate research — interpretability, AI-safety / refusal-mechanism study, red-teaming, and robustness evaluation."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-NVFP4: Blackwell Runbook",
+      "url": "https://www.orcarouter.ai/blog/qwen3-8-flash-next-uncensored-nvfp4",
+      "snippet": "All five Flash-Next builds — BF16, GGUF, MLX, FP8 and NVFP4 — are collected in the Qwen3.8-Flash-Next-Uncensored collection on Hugging Face. A different model, not another build of this one: Qwen3.8-27B-Uncensored is abliterated from a different base and has its own collection and its own runbooks. These weights are local-only by design."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cont1037/qwen3.8-27b-ft-ep2",
+  "slug": "cont1037-qwen3-8-27b-ft-ep2",
+  "author": "cont1037",
+  "url": "https://huggingface.co/cont1037/qwen3.8-27b-ft-ep2",
+  "created_at": "2026-10-11T18:16:29.000Z",
+  "updated_at": "2026-10-11T18:17:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816216,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casas y pisos baratos en Burgos — idealista",
+      "url": "https://www.idealista.com/venta-viviendas/burgos-burgos/?ordenado-por=precios-asc",
+      "snippet": "884 anuncios de casas y pisos en Burgos, a partir de 29.000 euros de particulares e inmobiliarias. Casas y pisos en Burgos de …Read more"
+    },
+    {
+      "title": "Venta de 823 pisos y viviendas baratas en Burgos - yaencontre",
+      "url": "https://www.yaencontre.com/venta/pisos/burgos/e-baratos",
+      "snippet": "Pisos y viviendas en venta en Burgos. Descubre 823 anuncios de pisos y viviendas de particulares, agencias y bancos. …"
+    },
+    {
+      "title": "Casas y pisos baratos en Burgos provincia — idealista",
+      "url": "https://www.idealista.com/venta-viviendas/burgos-provincia/?ordenado-por=precios-asc",
+      "snippet": "3.663 casas y pisos en Burgos, a partir de 3.500 euros de particulares e inmobiliarias. Casas y pisos en Burgos: anuncios de …"
+    },
+    {
+      "title": "Casas y pisos baratos en venta en Burgos: Desde 50.000 ... - Fotocasa",
+      "url": "https://www.fotocasa.es/es/comprar/viviendas/burgos-capital/todas-las-zonas/l?sortType=price&sortOrderDesc=false",
+      "snippet": "746 Casas y pisos baratos en Venta en Burgos con fotos. Compara GRATIS los precios de particulares y agencias. ¡Encuentra tu …"
+    },
+    {
+      "title": "Pisos y apartamentos en venta baratos en Burgos | fotocasa",
+      "url": "https://www.fotocasa.es/es/comprar/pisos/burgos-capital/todas-las-zonas/l?sortType=price&sortOrderDesc=false",
+      "snippet": "654 Pisos y apartamentos baratos en Venta en Burgos con fotos. Compara GRATIS los precios de particulares y agencias. …"
+    }
+  ]
+}

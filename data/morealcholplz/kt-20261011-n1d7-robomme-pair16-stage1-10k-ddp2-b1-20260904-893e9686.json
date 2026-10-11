@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-stage1-10k-ddp2-b1-20260904-893e9686",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-stage1-10k-ddp2-b1-20260904-893e9686",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-stage1-10k-ddp2-b1-20260904-893e9686",
+  "created_at": "2026-10-11T01:56:42.000Z",
+  "updated_at": "2026-10-11T02:40:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Halo Archive Wiki | Fandom",
+      "url": "https://halo-archive.fandom.com/wiki/Halo_Archive_%F0%9F%94%86_Wiki",
+      "snippet": "Serving as the catalyst for diffusing Halo-related knowledge into public attention. However, integrating years of empirical studies into …"
+    },
+    {
+      "title": "Halo Archive — The Official Halo Stats Archive | Halo 2 & Halo 3 ...",
+      "url": "https://haloarchive.com/",
+      "snippet": "Halo Archive is the official archive of Halo 2 and Halo 3 multiplayer statistics. Access your complete service records, match history, …"
+    },
+    {
+      "title": "Discuss Everything About Halo Archive Wiki | Fandom",
+      "url": "https://halo-archive.fandom.com/f",
+      "snippet": "I think the names for the variations of certain halos should be added alongside the color (for example starglitch has variations and the …"
+    },
+    {
+      "title": "Halo Archives - Search Halo 2, 3, Reach & Infinite Stats",
+      "url": "https://haloarchives.com/",
+      "snippet": "Search and explore archived Halo statistics from Halo 2, Halo 3, Halo Reach, and Halo Infinite. Access over 70 million games, 5.3 …"
+    },
+    {
+      "title": "Halo Archive",
+      "url": "https://haloarchive.neocities.org/magazines",
+      "snippet": "Magazines are ordered by cover date, oldest to latest. All magazines are mine unless otherwise stated, then they will be properly …"
+    }
+  ]
+}

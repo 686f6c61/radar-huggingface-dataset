@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-20260920_eval_warm80_plus5k_test-f09506cc",
+  "slug": "morealcholplz-kt-20261011-20260920_eval_warm80_plus5k_test-f09506cc",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-20260920_eval_warm80_plus5k_test-f09506cc",
+  "created_at": "2026-10-11T01:59:59.000Z",
+  "updated_at": "2026-10-11T02:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258841640,
+  "storage_human": "259 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morealcholplz/vlsa-dual-safety-eval · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval",
+      "snippet": "Datasets: morealcholplz / vlsa-dual-safety-eval like 0 Modalities: Video Languages: English ArXiv: arxiv:2512.11891 Tags: robotics vlsa aegis control-barrier-function dual-arm safe-manipulation + 3 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Preview API Embed Duplicate Data Studio Subset (1) results results Split (4) vlsa0_baseline vlsa0_baseline ..."
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    }
+  ]
+}

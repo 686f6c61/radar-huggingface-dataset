@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "cdvine5295/2pac",
+  "slug": "cdvine5295-2pac",
+  "author": "cdvine5295",
+  "url": "https://huggingface.co/cdvine5295/2pac",
+  "created_at": "2026-10-11T16:40:09.000Z",
+  "updated_at": "2026-10-11T16:40:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:inclusionAI/Ming-Image-0.1-Design",
+    "base_model:adapter:inclusionAI/Ming-Image-0.1-Design",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97108030,
+  "storage_human": "97 MB",
+  "base_model": "inclusionAI/Ming-Image-0.1-Design",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

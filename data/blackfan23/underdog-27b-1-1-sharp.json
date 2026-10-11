@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "blackfan23/Underdog-27B-1.1-Sharp",
+  "slug": "blackfan23-underdog-27b-1-1-sharp",
+  "author": "blackfan23",
+  "url": "https://huggingface.co/blackfan23/Underdog-27B-1.1-Sharp",
+  "created_at": "2026-10-11T17:08:50.000Z",
+  "updated_at": "2026-10-11T17:37:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "4-bit",
+    "splash",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 32984079126,
+  "storage_human": "33.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAS - Central Authentication Service Connexion - univ-lille.fr",
+      "url": "https://ent.univ-lille.fr/applications",
+      "snippet": "Les pages web de l'Université de Lille vous demandant votre nom d'utilisateur et votre mot de passe ont des URLs de la forme: …"
+    },
+    {
+      "title": "Accueil - Université de Lille",
+      "url": "https://www.univ-lille.fr/",
+      "snippet": "À l'occasion de la Fête de la science, découvrez la programmation riche et variée de l’Université de Lille. Les 10 et 11 octobre, venez …"
+    },
+    {
+      "title": "Accueil | Moodle ULille",
+      "url": "https://moodle.univ-lille.fr/",
+      "snippet": "Les informations essentielles pour s'y retrouver sur Moodle. Retrouvez l'ensemble des tutoriels et ressources pour les services …"
+    },
+    {
+      "title": "Se connecter à l'ENT [Accéder à la messagerie Zimbra] - univ-lille.fr",
+      "url": "https://scenari.univ-lille.fr/public/DGDNum/zimbra/zimbra_acces/00_zimbra_acces_gen_guideW.zip/co/01_connexion_ENT.html",
+      "snippet": "Se connecter à l'ENT Se connecter à l'ENT Aller sur le site : ENT de l'Université de Lille Se connecter à l'ENT de l'Université de Lille …"
+    },
+    {
+      "title": "univ-lille.fr - Authentification",
+      "url": "https://calao.univ-lille.fr/",
+      "snippet": "Autres utilisateurs Mentions d'information sur les données personnelles"
+    }
+  ]
+}

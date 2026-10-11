@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "xmanii/Mizan-v2-4B",
+  "slug": "xmanii-mizan-v2-4b",
+  "author": "xmanii",
+  "url": "https://huggingface.co/xmanii/Mizan-v2-4B",
+  "created_at": "2026-10-11T18:38:26.000Z",
+  "updated_at": "2026-10-11T18:44:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "decision-model",
+    "systemone",
+    "clef",
+    "persian",
+    "farsi",
+    "multimodal",
+    "vision",
+    "classification",
+    "moderation",
+    "quality-inspection",
+    "calibrated",
+    "conversational",
+    "fa",
+    "en",
+    "base_model:xmanii/Mizan-1.5-4B",
+    "base_model:finetune:xmanii/Mizan-1.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9163329847,
+  "storage_human": "9.2 GB",
+  "base_model": "xmanii/Mizan-1.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitter Video Ranking TOP 100 | Trending X Videos | TwiRanking",
+      "url": "https://twiranking.com/en/ranking",
+      "snippet": "19 hours ago · See the TOP 100 most viewed and liked videos on X (Twitter), ranked over 24 hours, 3 days, weekly and monthly. …Read more"
+    },
+    {
+      "title": "MrTeen - The Teenlover Board - Login",
+      "url": "https://mrteen.cc/member.php?action=login",
+      "snippet": "Current time: 10-11-2026, 02:21 PM Powered By MyBB, © 2002-2026 MyBB Group."
+    },
+    {
+      "title": "TARAZ: Persian Short-Answer Question Benchmark for Cultural ...",
+      "url": "https://arxiv.org/pdf/2602.22827",
+      "snippet": "Overall Performance Closed-source models perform best across all datasets (Tables 2, 3, 4). ... xmanii. 2024. maux-gte-persian-v3: High- performance ..."
+    },
+    {
+      "title": "Nudist Pictures, Videos & Family-Friendly Lifestyle | NudistFun",
+      "url": "https://nudistfun.com/",
+      "snippet": "Nudist life, the fun way Explore nudist photos, pictures, films, and real-life naturist experiences from around the world. NudistFun …"
+    },
+    {
+      "title": "Cute Russian Teen Live | Beautiful Russian Teen Live - Rutube",
+      "url": "https://rutube.ru/video/9a46891f090a5669478341bed0815900/",
+      "snippet": "Смотрите видео онлайн «Cute Russian Teen Live | Beautiful Russian Teen Live | Cute Girl Live | Periscope Live» на канале …"
+    }
+  ]
+}

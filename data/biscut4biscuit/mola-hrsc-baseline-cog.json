@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Biscut4Biscuit/mola-hrsc-baseline-cog",
+  "slug": "biscut4biscuit-mola-hrsc-baseline-cog",
+  "author": "Biscut4Biscuit",
+  "url": "https://huggingface.co/Biscut4Biscuit/mola-hrsc-baseline-cog",
+  "created_at": "2026-10-11T18:22:01.000Z",
+  "updated_at": "2026-10-11T18:22:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mars MGS MOLA - MEX HRSC Blended DEM Global 200m",
+      "url": "https://astrogeology.usgs.gov/search/map/mars_mgs_mola_mex_hrsc_blended_dem_global_200m",
+      "snippet": "Product Information: This data product, now at version 2, is a blend of digital elevation model (DEM) data derived from the Mars Orbiter Laser Altimeter (MOLA), an instrument aboard NASA&#x27;s Mars Global Surveyor spacecraft (MGS), and the High-Resolution Stereo Camera (HRSC), an instrument aboard the European Space Agency&#x27;s Mars Express (MEX ..."
+    },
+    {
+      "title": "GitHub - Abhipsito/Biscuit-AI: A Python-based AI assistant powered by ...",
+      "url": "https://github.com/Abhipsito/Biscuit-AI",
+      "snippet": "This project connects a large language model with local file storage. By running an open-source AI model locally on a personal machine, Biscuit adapts his mood based on what you say."
+    },
+    {
+      "title": "PDF Adjustment of MOLA Laser Altimeter Tracks to HRSC Photogrammetric ...",
+      "url": "https://elib.dlr.de/204283/1/EPSC2024-787-print-1.pdf",
+      "snippet": "Here we model a parameter vector comprising the bore-sight vector of MOLA and an orbital shift in along-track, across-track and in height for each laser segment. Segments are defined as continuous sections of the laser data that reach from North Pole to South Pole."
+    },
+    {
+      "title": "GitHub - Anany1014/Biscuit-AI",
+      "url": "https://github.com/Anany1014/Biscuit-AI",
+      "snippet": "🍪 Biscuit AI Biscuit AI is a premium, 100% offline, data-sovereign conversational assistant designed to run entirely on local consumer hardware."
+    },
+    {
+      "title": "electronic library - Adjustment of MOLA Laser Altimeter Tracks to HRSC ...",
+      "url": "https://elib.dlr.de/204283/",
+      "snippet": "Here we model a parameter vector comprising the bore-sight vector of MOLA and an orbital shift in along-track, across-track and in height for each laser segment. Segments are defined as continuous sections of the laser data that reach from North Pole to South Pole."
+    }
+  ]
+}

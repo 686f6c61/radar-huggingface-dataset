@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "unsloth/embeddinggemma-2",
+  "slug": "unsloth-embeddinggemma-2",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/embeddinggemma-2",
+  "created_at": "2026-10-06T10:58:36.000Z",
+  "updated_at": "2026-10-06T16:22:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "feature-extraction",
+    "embedding",
+    "sentence-transformers",
+    "multimodal-embedding",
+    "multimodal",
+    "vision",
+    "audio",
+    "video",
+    "image-feature-extraction",
+    "audio-feature-extraction",
+    "video-feature-extraction",
+    "sentence-similarity",
+    "unsloth",
+    "multilingual",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 2453,
+  "trending_score": 10,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1525774811,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth - Run and Train Models Locally",
+      "url": "https://unsloth.ai/",
+      "snippet": "Unsloth is an open-source, no-code deskop UI for training and running open models on your local hardware."
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    },
+    {
+      "title": "unsloth (Unsloth AI) - Hugging Face",
+      "url": "https://huggingface.co/unsloth",
+      "snippet": "Image-Text-to-Text • 177B • Updated Sep 2 • 1.4M • 1.11k Text Generation • 321B • Updated 28 days ago • 1.06M • 447 Text …"
+    },
+    {
+      "title": "Introducing Unsloth Studio | Unsloth Documentation",
+      "url": "https://unsloth.ai/docs/new/studio",
+      "snippet": "Unsloth Studio lets LLMs run Bash and Python, not just JavaScript with bypass permissions. It also sandboxes programs like Claude …"
+    },
+    {
+      "title": "GitHub - unslothai/unsloth: Local UI to run and train LLMs and ...",
+      "url": "https://github.com/unslothai/unsloth?locale=en-US",
+      "snippet": "The core Unsloth package remains licensed under Apache 2.0, while certain optional components, such as the Unsloth Studio UI are …"
+    }
+  ]
+}

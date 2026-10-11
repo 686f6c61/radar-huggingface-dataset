@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sean-reed/opus-mt-en-es-onnx",
+  "slug": "sean-reed-opus-mt-en-es-onnx",
+  "author": "sean-reed",
+  "url": "https://huggingface.co/sean-reed/opus-mt-en-es-onnx",
+  "created_at": "2026-10-11T17:16:35.000Z",
+  "updated_at": "2026-10-11T17:17:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "marian",
+    "opus-mt",
+    "word-alignment",
+    "en",
+    "es",
+    "base_model:Helsinki-NLP/opus-mt-en-es",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157234099,
+  "storage_human": "157 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-es",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prénom Sean (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/sean/prenom-9488",
+      "snippet": "Quelle est la signification du prénom Sean ? Le prénom Sean est une évolution du prénom anglais John dont la forme ancienne, …Read more"
+    },
+    {
+      "title": "Sean - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sean",
+      "snippet": "Sean, also spelled Seán (or sometimes Séan) in Hiberno-English, [1][2] is a male given name of Irish and English origin. It comes …"
+    },
+    {
+      "title": "Computer Science - arXiv",
+      "url": "https://www.arxiv.org/list/cs/new?skip=875&show=1000",
+      "snippet": "By running our framework with 3 frontier models (GPT-6 Astra, Opus 5 ... Jev is a commercial System One model from TypeSafe AI that does not generate ..."
+    },
+    {
+      "title": "Maddie McCann : Sean, son frère, est désormais un nageur qui tente …",
+      "url": "https://www.parismatch.com/actu/faits-divers/maddie-mccann-sean-son-frere-est-desormais-un-nageur-qui-tente-de-se-qualifier-pour-les-jeux-olympiques-272986",
+      "snippet": "Jul 21, 2026 · Sean McCann s’apprête à participer aux Jeux Commonwealth avec l’équipe d’Écosse. Nageur de talent, le petit frère …"
+    },
+    {
+      "title": "Proveedores de memoria: los probé todos : r/hermesagent - Reddit",
+      "url": "https://www.reddit.com/r/hermesagent/comments/1tms3g6/memory_providers_i_tested_them_all/?tl=es-419",
+      "snippet": "24.05.2026 ... Hindsight (el nuestro): Todo local (LAN Postgres). Sin nube. Mnemosyne: 100% local. Cero red. Signet AI: Local-first. Sincronización git ..."
+    }
+  ]
+}

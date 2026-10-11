@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "He1207/AmanoAkira_Style_MiniMaxH3",
+  "slug": "he1207-amanoakira_style_minimaxh3",
+  "author": "He1207",
+  "url": "https://huggingface.co/He1207/AmanoAkira_Style_MiniMaxH3",
+  "created_at": "2026-10-11T01:49:44.000Z",
+  "updated_at": "2026-10-11T01:53:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74570600,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "天野明 amano_akira style - v1.0 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/2318781/amanoakira-style",
+      "snippet": "amano_akira style There are no comments for this model yet. Be the first to let the people know about this model by leaving your comment."
+    },
+    {
+      "title": "MiniMax H3 Model Files",
+      "url": "https://minimaxh3.run/minimax-h3-model-files-downloads",
+      "snippet": "Official MiniMax H3 repositories, ComfyUI model files, precision variants, folder paths, and GGUF status."
+    },
+    {
+      "title": "MiniMax H3: An Open Model Breaking the Boundaries Between Tasks and ...",
+      "url": "https://www.minimax.io/blog/minimax-h3",
+      "snippet": "Today, we&#x27;re officially launching MiniMax H3, a general-purpose omni-modal generation model. H3 can jointly understand multimodal contexts spanning text, images, video, and audio. It generates video with native stereo audio at up to 2K resolution and 15 seconds in length."
+    },
+    {
+      "title": "Free and Unlimited MiniMax H3: Multi-Mode Video Model - goenhance.ai",
+      "url": "https://www.goenhance.ai/video-models/minimax-h3",
+      "snippet": "Try MiniMax H3 free and unlimited - a native multimodal AI video generation and editing model that combines text, images, videos, and audio to create professional cinematic content with synchronized visuals and sound."
+    },
+    {
+      "title": "GitHub - MiniMax-AI/MiniMax-H3 · GitHub",
+      "url": "https://github.com/MiniMax-AI/MiniMax-H3",
+      "snippet": "Contribute to MiniMax-AI/MiniMax-H3 development by creating an account on GitHub."
+    }
+  ]
+}

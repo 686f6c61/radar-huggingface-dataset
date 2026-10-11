@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-sync-b1ga1-s12-r2-20260905-7d583609",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-sync-b1ga1-s12-r2-20260905-7d583609",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-sync-b1ga1-s12-r2-20260905-7d583609",
+  "created_at": "2026-10-11T01:57:29.000Z",
+  "updated_at": "2026-10-11T02:46:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Succubus Name Generator: Seductive Demoness Names - The Story …",
+      "url": "https://thestoryshack.com/tools/succubus-name-generator/",
+      "snippet": "Nov 24, 2020 · This generator builds succubus names for dark fantasy novels, paranormal romance, demonic tabletop villains, and …"
+    },
+    {
+      "title": "300+ Succubus Names - Ultimate List of Female, Male & Fantasy",
+      "url": "https://fantasynameland.com/succubus-names-ultimate-guide-to-powerful-and-unique-names/",
+      "snippet": "Jan 29, 2026 · With this carefully curated collection of Succubus Names, creators can easily find names that feel authentic, …"
+    },
+    {
+      "title": "Succubus Name Generator — Alluring Demon Names",
+      "url": "https://namegeneratorapp.com/succubus-names",
+      "snippet": "Spin seductive, dark demon names for succubi in D&D and fantasy stories. Generate unlimited names and save your favorites in one …"
+    },
+    {
+      "title": "Succubus Name Generator | Demon Seductress Names",
+      "url": "https://www.generatenames.io/succubus-name-generator",
+      "snippet": "Free succubus name generator. Create alluring demon names for succubi and incubi characters in fantasy and dark fiction."
+    },
+    {
+      "title": "Female Demon Names: The Complete List With Meanings",
+      "url": "https://namesnicknames.com/female-demon-names/",
+      "snippet": "Aug 2, 2026 · You will find real demon names from the Bible, world mythology, and Japanese folklore. There are also fantasy and …"
+    }
+  ]
+}

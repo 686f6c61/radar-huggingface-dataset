@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Frontiers/alien-si-supermodel",
+  "slug": "frontiers-alien-si-supermodel",
+  "author": "Frontiers",
+  "url": "https://huggingface.co/Frontiers/alien-si-supermodel",
+  "created_at": "2026-10-11T18:33:54.000Z",
+  "updated_at": "2026-10-11T19:26:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "security",
+    "red-team",
+    "alien-si",
+    "jarvis",
+    "self-evolving",
+    "rsi",
+    "arsenal",
+    "tool-use",
+    "qlora",
+    "en",
+    "ro",
+    "base_model:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6803928096,
+  "storage_human": "6.8 GB",
+  "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frontiers | Publisher of peer-reviewed articles in open access journals",
+      "url": "https://www.frontiersin.org/",
+      "snippet": "May 28, 2026 · As we mark 10 years of Peer Review Week, we sat down for a roundtable with three Frontiers Chief Editors to …"
+    },
+    {
+      "title": "Journals - Frontiers",
+      "url": "https://www.frontiersin.org/journals",
+      "snippet": "Frontiers in Applied Mathematics and Statistics Explore research on applied mathematics and statistics, driving innovation in …"
+    },
+    {
+      "title": "Frontiers Media — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Frontiers_Media",
+      "snippet": "Frontiers Media est une maison d'édition de revues scientifiques en libre accès. Elle a été créée dans le parc scientifique de l' École …"
+    },
+    {
+      "title": "Frontières - Toutes les news",
+      "url": "https://www.frontieresmedia.fr/tous-les-articles",
+      "snippet": "Découvrez toute l'actualité avec Frontières. Enquêtes, immigration, politique, société et international : restez informé !"
+    },
+    {
+      "title": "Frontiers | Login",
+      "url": "https://myfrontiers.frontiersin.org/dashboard",
+      "snippet": "© 2026 Frontiers Media S.A. All rights reserved Privacy Policy | Terms and Conditions"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aikexue170/jev-novel-3-27b-fp8",
+  "slug": "aikexue170-jev-novel-3-27b-fp8",
+  "author": "aikexue170",
+  "url": "https://huggingface.co/aikexue170/jev-novel-3-27b-fp8",
+  "created_at": "2026-10-11T01:58:13.000Z",
+  "updated_at": "2026-10-11T05:16:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5",
+    "sentence-quality",
+    "jev",
+    "jevnovel-3",
+    "text-classification",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 30918964061,
+  "storage_human": "30.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aikexue170 (北棱) - Hugging Face",
+      "url": "https://huggingface.co/aikexue170",
+      "snippet": "aikexue170/jev-novel-2-27b-bf16 Text Classification • 26B•Updated about 13 hours ago• 1 models3"
+    },
+    {
+      "title": "aikexue170 (北棱) - Hugging Face",
+      "url": "https://huggingface.co/aikexue170/models",
+      "snippet": "aikexue170&#x27;s models3 Sort: Recently updated aikexue170/jev-novel-2-27b-bf16 Text Classification • 26B•Updated about 13 hours ago• 1"
+    },
+    {
+      "title": "Jev (AI model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jev_(AI_model)",
+      "snippet": "Jev is a proprietary artificial intelligence model developed by TypeSafe AI, a San Francisco-based company founded in 2024. It was released in limited early access on 15 September 2026, alongside the announcement of a US$40 million seed round led by DCVC. [1][2]"
+    },
+    {
+      "title": "GitHub - jaredpalmer/kev: Jev-like family of decision models built on ...",
+      "url": "https://github.com/jaredpalmer/kev",
+      "snippet": "Jev-like family of decision models built on top of Qwen3.5/3.8 you can train and run on your own - jaredpalmer/kev"
+    },
+    {
+      "title": "JEV-27B Benchmarks & Sources (October 2026) | BenchLM.ai",
+      "url": "https://benchlm.ai/models/decision-index-0-3-jev-27b",
+      "snippet": "How does JEV-27B perform overall in AI benchmarks? + JEV-27B has 6 source-displayable benchmark rows, but it does not qualify for a public overall rank. The available rows remain visible by category without being converted into a site-wide score. Missing evidence stays blank instead of being estimated from an earlier model. Is JEV-27B open source? + JEV-27B is an open-weight model from ..."
+    }
+  ]
+}

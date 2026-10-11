@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "UrNinja/EchoMimicV2",
+  "slug": "urninja-echomimicv2",
+  "author": "UrNinja",
+  "url": "https://huggingface.co/UrNinja/EchoMimicV2",
+  "created_at": "2026-10-11T18:30:41.000Z",
+  "updated_at": "2026-10-11T18:30:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2411.10061",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5944472806,
+  "storage_human": "5.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - antgroup/echomimic_v2: [CVPR 2025] EchoMimicV2: Towards ...",
+      "url": "https://github.com/antgroup/echomimic_v2",
+      "snippet": "[CVPR 2025] EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation - antgroup/echomimic_v2"
+    },
+    {
+      "title": "EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation",
+      "url": "https://antgroup.github.io/ai/echomimic_v2/",
+      "snippet": "Abstract EchoMimicV2 utilizes a reference image, an audio clip, and a sequence of hand pose to generate a high-quality animation video, ensuring coherence between audio content and half-body movements. Recent work on human animation usually involves audio, pose, or movement maps conditions, thereby achieves vivid animation quality."
+    },
+    {
+      "title": "README.md · BadToBest/EchoMimicV2 at main - Hugging Face",
+      "url": "https://huggingface.co/BadToBest/EchoMimicV2/blob/main/README.md",
+      "snippet": "It is imperative to use the generative model responsibly, adhering to both ethical and legal standards. 🙏🏻 Acknowledgements We would like to thank the contributors to the MimicMotion and Moore-AnimateAnyone repositories, for their open research and exploration."
+    },
+    {
+      "title": "BadToBest/EchoMimicV2 · Hugging Face",
+      "url": "https://huggingface.co/BadToBest/EchoMimicV2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation",
+      "url": "https://arxiv.org/pdf/2411.10061",
+      "snippet": "Remarkably, EchoMimicV2 generates high-fidelity hands even when they are absent in the reference images as shown in Figure 6. By removing all pose conditions and maintaining other settings, we achieve a fully audio-driven animation model that captures general gestures, correlating hand rhythm with audio tones."
+    }
+  ]
+}

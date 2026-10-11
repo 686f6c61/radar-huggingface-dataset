@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "visualseed/RORem-merged",
+  "slug": "visualseed-rorem-merged",
+  "author": "visualseed",
+  "url": "https://huggingface.co/visualseed/RORem-merged",
+  "created_at": "2026-10-11T16:45:50.000Z",
+  "updated_at": "2026-10-11T17:08:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "inpainting",
+    "object-removal",
+    "lcm",
+    "sd-xl",
+    "image-to-image",
+    "base_model:LetsThink/RORem",
+    "base_model:finetune:LetsThink/RORem",
+    "license:apache-2.0",
+    "diffusers:StableDiffusionXLInpaintPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567478084,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938040206,
+  "storage_human": "6.9 GB",
+  "base_model": "LetsThink/RORem",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login to Your Account | Pocket Option",
+      "url": "https://pocketoption.com/en/login",
+      "snippet": "Login to your Pocket Option account and earn while trading on financial markets."
+    },
+    {
+      "title": "Pocket Option – INTERNATIONAL | Trading Platform",
+      "url": "https://www.pocketoption.app/en/",
+      "snippet": "Use the most convenient payment method for hassle-free deposits and withdrawals. Trading tournaments, regular bonuses, gifts, …"
+    },
+    {
+      "title": "Connexion à votre compte | Pocket Option",
+      "url": "https://pocketoption.com/fr/login",
+      "snippet": "Connectez-vous à votre compte Pocket Option et gagnez de l'argent en effectuant des transactions sur les marchés financiers."
+    },
+    {
+      "title": "The Most Innovative Trading Platform - Pocket Option",
+      "url": "https://pocketoption.com/en",
+      "snippet": "Enter your email address and get a special offer from Pocket Option. If luck is on your side, you will receive a free gift! More than 10 …"
+    },
+    {
+      "title": "Login to Your Account | PO TRADE",
+      "url": "https://m.po.trade/en/login/",
+      "snippet": "Login to your PO TRADE account and earn while trading on financial markets."
+    }
+  ]
+}

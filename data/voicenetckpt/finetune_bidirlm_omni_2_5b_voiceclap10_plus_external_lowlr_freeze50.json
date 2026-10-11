@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_plus_external_lowlr_freeze50",
+  "slug": "voicenetckpt-finetune_bidirlm_omni_2_5b_voiceclap10_plus_external_lowlr_freeze50",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_voiceclap10_plus_external_lowlr_freeze50",
+  "created_at": "2026-10-11T16:40:26.000Z",
+  "updated_at": "2026-10-11T17:41:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100856730991,
+  "storage_human": "100.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steam ID Finder: Lookup & Converter for All Formats | Steam Dashboard",
+      "url": "https://steamdb.com/en/tools/steam-id-finder",
+      "snippet": "Jul 22, 2026 · Paste a list of Steam IDs, profile or invite links (one per line). Conversion runs in your browser; custom vanity URLs …"
+    },
+    {
+      "title": "Steam User Lookup | Find Steam Profiles | NicheProwler",
+      "url": "https://www.nicheprowler.com/tools/steam/steam-user-lookup",
+      "snippet": "Look up Steam profiles by SteamID64 or vanity username. Profile identity, account status, Steam ID variants, human-readable …"
+    },
+    {
+      "title": "Steam ID Lookup - Find SteamID, SteamID64, SteamID3 & More",
+      "url": "https://findsteamid.com/",
+      "snippet": "Free Steam ID lookup tool to find, convert and search any Steam ID. Get SteamID64, SteamID3, SteamID2, Steam Hex & profile info …"
+    },
+    {
+      "title": "How to find your/someones SteamID? - Steam Community :: Guide",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=209000244.",
+      "snippet": "Jan 17, 2014 · What is SteamID? The SteamID is identifier used to identify a Steam account. Every Steam user has a unique …"
+    },
+    {
+      "title": "Steam ID Finder & Converter - GameGeeker",
+      "url": "https://gamegeeker.com/tools/steam-id-finder",
+      "snippet": "Paste a Steam profile URL, custom URL, SteamID64, SteamID3 or traditional SteamID. The tool identifies the format, confirms the …"
+    }
+  ]
+}

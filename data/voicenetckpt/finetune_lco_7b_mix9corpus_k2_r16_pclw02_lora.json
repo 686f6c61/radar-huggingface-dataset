@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw02_lora",
+  "slug": "voicenetckpt-finetune_lco_7b_mix9corpus_k2_r16_pclw02_lora",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_LCO_7B_mix9corpus_k2_r16_pclw02_lora",
+  "created_at": "2026-10-11T16:32:03.000Z",
+  "updated_at": "2026-10-11T17:41:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128730835772,
+  "storage_human": "128.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taimanin Shiranui: Inyoku no Dorei Shoufu",
+      "url": "https://nganime.id/en/anime/140788",
+      "snippet": "...Read more"
+    },
+    {
+      "title": "nhplayer.com",
+      "url": "https://nhplayer.com/v/h7Qjw8YyjXpAaJf/",
+      "snippet": "taimanin shiranui inyoku no dorei shoufu episode 1"
+    },
+    {
+      "title": "Episode: Taimanin Shiranui: Inyoku no Dorei Shoufu - T1 - PV",
+      "url": "https://anidb.net/episode/248798",
+      "snippet": "Oct 25, 2021 · Looking for information about PV - T1 - Taimanin Shiranui: Inyoku no Dorei Shoufu - Episode? AniDB is the right place …"
+    },
+    {
+      "title": "Taimanin Asagi (2007) Season 6 - Episode Guide | Moviefone",
+      "url": "https://www.moviefone.com/tv-shows/taimanin-asagi/QhVCFpXJLSb0w3GKYLp2Z6/seasons/6/",
+      "snippet": "Nov 19, 2021 · Taimanin Asagi Season 6 (2021) — 1 episode. After disappearing during the mission, she finds herself in the clutches …"
+    },
+    {
+      "title": "Taimanin Shiranui: Inyoku no Dorei Shoufu - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/50251/Taimanin_Shiranui__Inyoku_no_Dorei_Shoufu/video",
+      "snippet": "Nov 19, 2021 · Want to watch the anime Taimanin Shiranui: Inyoku no Dorei Shoufu? Try out MyAnimeList's free streaming service …"
+    }
+  ]
+}

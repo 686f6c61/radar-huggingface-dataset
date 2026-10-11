@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ahmedandaloes/laya-typed-decisions-CoreAI",
+  "slug": "ahmedandaloes-laya-typed-decisions-coreai",
+  "author": "ahmedandaloes",
+  "url": "https://huggingface.co/ahmedandaloes/laya-typed-decisions-CoreAI",
+  "created_at": "2026-10-11T16:31:52.000Z",
+  "updated_at": "2026-10-11T16:32:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "coreai",
+  "languages": [],
+  "tags": [
+    "coreai",
+    "laya",
+    "apple",
+    "aimodel",
+    "decision-model",
+    "apple-silicon",
+    "macos-27",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:quantized:convaiinnovations/laya-typed-decisions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1686584526,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offre LLD, LOA et crédit Renault - Renault 5 E-Tech électrique",
+      "url": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique/offre-renault5.html",
+      "snippet": "Découvrez notre offre sur Renault 5 E-Tech électrique. Estimez la valeur de votre véhicule en ligne."
+    },
+    {
+      "title": "Offre LLD Renault 5 E-Tech électrique - Offre - Renault Pro",
+      "url": "https://professionnels.renault.fr/vehicules-electriques/renault5-e-tech-electrique-pro/offre-renault-5-e-tech-electrique.html",
+      "snippet": "Oct 1, 2026 · Découvrez l’offre professionnelle de location longue durée (LLD pro) sur la Renault 5 E-Tech électrique!"
+    },
+    {
+      "title": "R5 E-Tech électrique - Financement et services - Renault",
+      "url": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique/financement-services.html",
+      "snippet": "Découvrez les solutions de financement R5 E-Tech électrique : LOA, LLD, crédit auto, recharge, entretien, assistance et services My …"
+    },
+    {
+      "title": "Leasing Renault 5 E-Tech dès 229 € / mois en LOA ou LLD - Caroom",
+      "url": "https://www.caroom.fr/leasing/renault/5",
+      "snippet": "Achetez votre 5 E-Tech à -22% avec un leasing LOA ou LLD et maitrisez votre loyer mensuel. Avec ou sans apport, contrat …"
+    },
+    {
+      "title": "Renault 5 E-Tech Electric en LLD : pour professionnels et entreprises",
+      "url": "https://www.lld-leasefactory.fr/citadine/50-renault-5.html",
+      "snippet": "Profitez de la Renault 5 E-Tech 120 en location longue durée (LLD) avec Lease Factory. Citadine électrique performante, pour votre …"
+    }
+  ]
+}

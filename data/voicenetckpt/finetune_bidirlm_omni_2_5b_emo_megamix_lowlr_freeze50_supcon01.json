@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon01",
+  "slug": "voicenetckpt-finetune_bidirlm_omni_2_5b_emo_megamix_lowlr_freeze50_supcon01",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_BidirLM_Omni_2_5B_emo_megamix_lowlr_freeze50_supcon01",
+  "created_at": "2026-10-11T16:41:51.000Z",
+  "updated_at": "2026-10-11T17:41:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100856731503,
+  "storage_human": "100.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "国内的WeGene跟23andme比有多大差距？ - 知乎",
+      "url": "https://www.zhihu.com/question/28689086",
+      "snippet": "23andme有一个“survey”板块很好，就是用户做问卷调查，然后23andme根据调查结果的大数据匹配基因位点的突变来确定哪些突变 …Read more"
+    },
+    {
+      "title": "23andme - 知乎",
+      "url": "https://www.zhihu.com/topic/19655051",
+      "snippet": "23andme成立于2006年，是一家基因测序公司，用户可以通过公司的检测产品了解到自己的基因状况，并收到分析报告。之前该公司 …"
+    },
+    {
+      "title": "wegene数据转23andme数据的尝试 - WeGene 微基因 - 专注个人基因 …",
+      "url": "https://mirror.wegene.com/question/3279",
+      "snippet": "Aug 11, 2017 · 4. 剩下的是23andme数据中有，而WeGene数据中没有的位点。 这部分有几种处理方法，根据我自己的看法，从易到 …"
+    },
+    {
+      "title": "想做基因检测，23魔方和23 and me 哪个更好一些？ - 知乎",
+      "url": "https://www.zhihu.com/question/296994747",
+      "snippet": "是的，23 and me在中国人中或者民族的细分上肯定不细致，如果你关心的是 祖源，那么可能选 23魔方 或者wegene会更可行一些。 …"
+    },
+    {
+      "title": "如果普通人想检测自己基因，了解自己到底来自哪些人种，哪些族群的 …",
+      "url": "https://www.zhihu.com/question/32756721",
+      "snippet": "如果题主想通过检测基因来了解自己背后独特的“祖源故事”（万一要发现自己是个神秘混血儿呢？想想都兴奋），那国内国外的途径也 …"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mrm8488/Qwen3.8-27B-ft-decision",
+  "slug": "mrm8488-qwen3-8-27b-ft-decision",
+  "author": "mrm8488",
+  "url": "https://huggingface.co/mrm8488/Qwen3.8-27B-ft-decision",
+  "created_at": "2026-10-11T16:48:51.000Z",
+  "updated_at": "2026-10-11T17:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "typed-decisions",
+    "structured-decisions",
+    "calibration",
+    "probabilistic-classification",
+    "decision-model",
+    "zero-shot-classification",
+    "classification",
+    "agents",
+    "browser-agent",
+    "computer-use",
+    "calibrated-probabilities",
+    "vllm",
+    "lora",
+    "unsloth",
+    "en",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55831941054,
+  "storage_human": "55.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanteuil-en-Vallée — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nanteuil-en-Vall%C3%A9e",
+      "snippet": "Nanteuil-en-Vallée est une vaste commune du Nord Charente située à 10 km à l'est de Ruffec, chef-lieu de son canton et 41 km au …"
+    },
+    {
+      "title": "Nanteuil-en-Vallée - Tourisme Nord Charente",
+      "url": "https://www.destination-nordcharente.com/nos-experiences/nanteuil-en-vallee/",
+      "snippet": "Au cœur du Nord Charente se niche la ravissante commune de Nanteuil-en-Vallée. Riche de son histoire et de son patrimoine, cette …"
+    },
+    {
+      "title": "Nanteuil en Vallée",
+      "url": "https://www.nanteuil-en-vallee.fr/",
+      "snippet": "Une équipe dédiée à l'accompagnement des séniors pour une vie sociale épanouissante."
+    },
+    {
+      "title": "Nanteuil-en-Vallée - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nanteuil-en-Vall%C3%A9e",
+      "snippet": "Nanteuil-en-Vallée (French pronunciation: [nɑ̃tœj ɑ̃ vale], before 1962: Nanteuil) [3] is a commune in the Charente department in …"
+    },
+    {
+      "title": "Visiter Nanteuil-en-Vallée - Petites Cités de Caractère®",
+      "url": "https://www.petitescitesdecaractere.com/cites/nanteuil-en-vallee/",
+      "snippet": "Cachée dans la vallée de l’Argentor, à environ 40 kilomètres de la ville d’Angoulême, Nanteuil-en-Vallée invite à découvrir son …"
+    }
+  ]
+}

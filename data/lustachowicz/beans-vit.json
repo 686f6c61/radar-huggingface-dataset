@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "lustachowicz/beans-vit",
+  "slug": "lustachowicz-beans-vit",
+  "author": "lustachowicz",
+  "url": "https://huggingface.co/lustachowicz/beans-vit",
+  "created_at": "2026-10-11T15:09:52.000Z",
+  "updated_at": "2026-10-11T15:10:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "vision",
+    "dataset:AI-Lab-Makerere/beans",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:finetune:google/vit-base-patch16-224",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343227052,
+  "storage_human": "343 MB",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

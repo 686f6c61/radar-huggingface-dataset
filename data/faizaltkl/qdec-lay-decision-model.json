@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "faizaltkl/qdec-lay-decision-model",
+  "slug": "faizaltkl-qdec-lay-decision-model",
+  "author": "faizaltkl",
+  "url": "https://huggingface.co/faizaltkl/qdec-lay-decision-model",
+  "created_at": "2026-10-11T18:19:38.000Z",
+  "updated_at": "2026-10-11T19:15:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "unsloth",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "unsloth",
+    "safetensors",
+    "decision-model",
+    "structured-decisions",
+    "calibration",
+    "lora",
+    "qwen",
+    "text-classification",
+    "en",
+    "dataset:faizaltkl/decision-model-dataset",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:unsloth/Qwen3.5-4B",
+    "base_model:adapter:unsloth/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 214029003,
+  "storage_human": "214 MB",
+  "base_model": "unsloth/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "short-sex videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/short-sex",
+      "snippet": "XVIDEOS short-sex videos, free Judith EURO Milf Anal fucking -Slut & Frank Gun Lingerie short hair blonde I'd Like to Analy Fuck …"
+    },
+    {
+      "title": "Free Short Sex Porn Videos (5,330) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/short-sex",
+      "snippet": "Free short sex porn: 5,330 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "TikPorn – Free Short Porn Videos TikTok Style | Scroll & Swipe",
+      "url": "https://tik-porn.com/",
+      "snippet": "Watch free short porn videos in TikTok style. Swipe through thousands of vertical clips — amateur, milf, lesbian, teen and more. No …"
+    },
+    {
+      "title": "Homemade Sex GIFs & Amateur NSFW Short XXX Clips - MyLust",
+      "url": "https://mylust.com/shorts/",
+      "snippet": "Discover a wild stash of juicy homemade sex GIFs and unfiltered NSFW short clips - bite-sized, addictive, and perfect for those …"
+    },
+    {
+      "title": "short videos - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/tags/short",
+      "snippet": "Round Ass Puffy Pussy Lips Slipping from Her Tight Denim Short! CHUPA A XOTA DA SUA AMIGUINHA SEM TIRAR O SHORT …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jaichang/embeddinggemma2-global-birds-2000-litert",
+  "slug": "jaichang-embeddinggemma2-global-birds-2000-litert",
+  "author": "jaichang",
+  "url": "https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000-litert",
+  "created_at": "2026-10-11T01:54:05.000Z",
+  "updated_at": "2026-10-11T04:24:50.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "onnx",
+    "webgpu",
+    "webgl",
+    "flutter",
+    "on-device",
+    "mobile",
+    "knowledge-distillation",
+    "embeddinggemma-2",
+    "birds",
+    "en",
+    "ko",
+    "base_model:jaichang/embeddinggemma2-global-birds-2000",
+    "base_model:quantized:jaichang/embeddinggemma2-global-birds-2000",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127764078,
+  "storage_human": "128 MB",
+  "base_model": "jaichang/embeddinggemma2-global-birds-2000",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elvebredd - Adopt Me Values WFL Calculator",
+      "url": "https://elvebredd.com/",
+      "snippet": "The #1 Adopt Me Value calculator. The values are used by the best value team, including Elvebredd with 70M+ views on YouTube …"
+    },
+    {
+      "title": "Roblox Adopt Me Trading Values - Win Fair Lose WFL",
+      "url": "https://adoptmetradingvalues.com/",
+      "snippet": "The original values website for Adopt Me. AMTV tries to help and protect players of the Roblox Adopt Me game to avoid scams and …"
+    },
+    {
+      "title": "Calculator - Adopt Me Values",
+      "url": "https://amvgg.com/calculator",
+      "snippet": "Calculate the values of pets & items in Roblox Adopt Me! Our WFL Trade Calculator uses up-to-date market data to help you make …"
+    },
+    {
+      "title": "Adopt Me Value Calculator - Elvebredd",
+      "url": "https://elvebredd.com/adopt-me-calculator",
+      "snippet": "Use this Value Calculator to know Adopt Me Values. Just add pets/items on each side of the trade to compare offers. You should …"
+    },
+    {
+      "title": "Adopt Me Values - Your #1 source for Adopt Me Value List & Calculator",
+      "url": "https://amvgg.com/",
+      "snippet": "The #1 most trusted Adopt Me Value List & WFL Calculator. Updated daily by expert traders worldwide. Post trade listings, check pet …"
+    }
+  ]
+}

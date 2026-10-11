@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_LCO_Embedding_Omni_7B_voiceclap10",
+  "slug": "voicenetckpt-finetune_lco_embedding_omni_7b_voiceclap10",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_LCO_Embedding_Omni_7B_voiceclap10",
+  "created_at": "2026-10-11T15:49:15.000Z",
+  "updated_at": "2026-10-11T15:53:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 337465649498,
+  "storage_human": "337.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale",
+      "url": "https://arxiv.org/pdf/2609.32016v1",
+      "snippet": "Splitting the emotions and attributes into lower- and higher-agreement halves before inspecting model scores, none of the four paired high-minus-low interactions for the VOICECLAP-LARGE advantage over LCO-EMBEDDING-OMNI-7B excludes zero (App."
+    },
+    {
+      "title": "VoiceNet: Fine-Grained Voice Understanding Beyond Emotion at Scale | AI ...",
+      "url": "https://www.aimodels.fyi/papers/arxiv/voicenet-fine-grained-voice-understanding-beyond-emotion",
+      "snippet": "On synthetic EmoNet-Voice, the zero-shot LCO-Embedding-Omni-7B leads at 0.167 while VoiceCLAP-Large reaches 0.155. General-audio CLAPs remain near chance on its 40 emotion classes. The external-dataset results connect VoiceNet to broader work on speech emotion recognition, while showing that performance depends on the dataset and label set."
+    },
+    {
+      "title": "LCO-Embedding-Omni-7B - Hugging Face",
+      "url": "https://huggingface.co/LCO-Embedding/LCO-Embedding-Omni-7B",
+      "snippet": "Overview We introduce LCO-Embedding, a language-centric omnimodal representation learning method and the LCO-Embedding model families, setting a new state-of-the-art on MIEB (Massive Image Embedding Benchmark), while supporting audio and videos. This work also introduces the Generation-Representation Scaling Law, connecting models&#x27; generative capabilities and their representation upper bound ..."
+    },
+    {
+      "title": "LCO-Embedding (LCO-Embedding) - Hugging Face",
+      "url": "https://huggingface.co/LCO-Embedding",
+      "snippet": "Welcome to the LCO-Embedding project - Scaling Language-centric Omnimodal Representation Learning. Highlights: We introduce LCO-Embedding, a language-centric omnimodal representation learning method and the LCO-Embedding model families, setting a new state-of-the-art on MIEB (Massive Image Embedding Benchmark) while supporting audio and videos. We introduce the Generation-Representation ..."
+    },
+    {
+      "title": "GitHub - LCO-Embedding/LCO-Embedding: [NeurIPS 2025] Scaling Language ...",
+      "url": "https://github.com/LCO-Embedding/LCO-Embedding",
+      "snippet": "Overview We introduce LCO-Embedding, a language-centric omnimodal representation learning method and the LCO-Embedding model families, setting a new state-of-the-art on MIEB (Massive Image Embedding Benchmark), while supporting audio and videos."
+    }
+  ]
+}

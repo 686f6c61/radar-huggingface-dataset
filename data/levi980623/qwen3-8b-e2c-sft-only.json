@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "Levi980623/Qwen3-8B-E2C-SFT-only",
+  "slug": "levi980623-qwen3-8b-e2c-sft-only",
+  "author": "Levi980623",
+  "url": "https://huggingface.co/Levi980623/Qwen3-8B-E2C-SFT-only",
+  "created_at": "2026-10-11T17:20:04.000Z",
+  "updated_at": "2026-10-11T17:21:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "math",
+    "reasoning",
+    "explore-execute-chain",
+    "e2c",
+    "sft",
+    "conversational",
+    "en",
+    "dataset:TingheOliver/Explore-Execute-Chain-Datasets",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 32774720501,
+  "storage_human": "32.8 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

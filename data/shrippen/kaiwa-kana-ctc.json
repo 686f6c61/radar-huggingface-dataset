@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "shrippen/kaiwa-kana-ctc",
+  "slug": "shrippen-kaiwa-kana-ctc",
+  "author": "shrippen",
+  "url": "https://huggingface.co/shrippen/kaiwa-kana-ctc",
+  "created_at": "2026-10-11T18:59:25.000Z",
+  "updated_at": "2026-10-11T19:03:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "wav2vec2",
+    "ctc",
+    "kana",
+    "pronunciation",
+    "automatic-speech-recognition",
+    "ja",
+    "base_model:reazon-research/japanese-wav2vec2-large",
+    "base_model:quantized:reazon-research/japanese-wav2vec2-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315516117,
+  "parameters_human": "315.5M",
+  "storage_bytes": 987230918,
+  "storage_human": "987 MB",
+  "base_model": "reazon-research/japanese-wav2vec2-large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Key Concepts in Society and Life | PDF | System | Information - Scribd",
+      "url": "https://www.scribd.com/document/914420341/Top-English-Nouns-Lower-50000",
+      "snippet": "u.s. model change students mother knowledge century theory church field s ... a.i. mcarthur asheville boland hippo xenophobia melanogaster metaphase"
+    }
+  ]
+}

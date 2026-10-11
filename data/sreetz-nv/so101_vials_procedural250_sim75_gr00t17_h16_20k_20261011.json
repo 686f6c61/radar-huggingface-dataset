@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_vials_procedural250_sim75_gr00t17_h16_20k_20261011",
+  "slug": "sreetz-nv-so101_vials_procedural250_sim75_gr00t17_h16_20k_20261011",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_vials_procedural250_sim75_gr00t17_h16_20k_20261011",
+  "created_at": "2026-10-11T17:20:07.000Z",
+  "updated_at": "2026-10-11T17:21:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gr00t",
+    "so101",
+    "simulation",
+    "domain-randomization",
+    "dataset:liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009",
+    "dataset:sreetz-nv/so101_sim_manual_perception_newton_20261008",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yuki Suou - Roshidere Wiki",
+      "url": "https://roshidere.fandom.com/wiki/Yuki_Suou",
+      "snippet": "Yuki Suou (周防 (すおう) 有希 (ゆき) , Suō Yuki? ) is a main character in the series. She is a first-year student at Seirei Private …"
+    },
+    {
+      "title": "Yuki Suou - Roshidere Wiki",
+      "url": "https://roshidere.org/wiki/Yuki_Suou",
+      "snippet": "Apr 21, 2026 · Yuki Suou (周防 すおう 有希 ゆき Suō Yuki? ) is a main character in the series. She is a first-year student at Seirei …"
+    },
+    {
+      "title": "Yuki Suou Best Moments | Roshidere - YouTube",
+      "url": "https://www.youtube.com/watch?v=NcL8dt0Apfk",
+      "snippet": "Sep 19, 2024 · No description has been added to this video. @Jewel Abyss MAL profile link: …"
+    },
+    {
+      "title": "Yuki Suou/Gallery | Roshidere Wiki | Fandom",
+      "url": "https://roshidere.fandom.com/wiki/Yuki_Suou/Gallery",
+      "snippet": "Blu-ray & DVD Volume 1 Back Cover Source Art by Momoco Blu-ray & DVD Volume 2 Cover Source Art by Yuuhei Murota Blu-ray & …"
+    },
+    {
+      "title": "Yuki Suou (周防有希) - AniBK",
+      "url": "https://en.anibk.com/character/791",
+      "snippet": "She is the eldest daughter of the Suou house, whose origin was a former noble family and has shouldered the role of a diplomat for …"
+    }
+  ]
+}

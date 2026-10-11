@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-exac-8ef64d0e",
+  "slug": "morealcholplz-kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-exac-8ef64d0e",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-n1d7-robomme-pair16-fullmixed-stage1-10k-b4ga2-ddp2-gpu01-exac-8ef64d0e",
+  "created_at": "2026-10-11T01:56:26.000Z",
+  "updated_at": "2026-10-11T02:39:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "Login to your Roblox account or sign up to create a new account."
+    },
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an infinite variety of immersive, user-generated 3D worlds."
+    },
+    {
+      "title": "morealcholplz/vlsa-dual-safety-eval · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval",
+      "snippet": "Datasets: morealcholplz / vlsa-dual-safety-eval like 0 Modalities: Video Languages: English ArXiv: arxiv:2512.11891 Tags: robotics vlsa aegis control-barrier-function dual-arm safe-manipulation + 3 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Preview API Embed Duplicate Data Studio Subset (1) results results Split (4) vlsa0_baseline vlsa0_baseline ..."
+    },
+    {
+      "title": "Vehicle Detail Search - | NHTSA",
+      "url": "https://www.nhtsa.gov/vehicle",
+      "snippet": "Search for vehicle using all available options, one page at a time. Full Vehicle Detail Search -"
+    },
+    {
+      "title": "Roblox Player Search | Rolimon&#x27;s",
+      "url": "https://www.rolimons.com/players",
+      "snippet": "Quickly search for Roblox players and view their profiles. Player profiles show which limited items they own, their RAP and Value charts, and much more."
+    }
+  ]
+}

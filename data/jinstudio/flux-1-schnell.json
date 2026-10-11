@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/FLUX.1-schnell",
+  "slug": "jinstudio-flux-1-schnell",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/FLUX.1-schnell",
+  "created_at": "2026-10-11T18:22:23.000Z",
+  "updated_at": "2026-10-11T18:22:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "image-generation",
+    "flux",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "diffusers:FluxPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11891178560,
+  "parameters_human": "11.89B",
+  "storage_bytes": 57841227713,
+  "storage_human": "57.8 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Latest News from the UK and Around the World | Sky News",
+      "url": "https://news.sky.com/",
+      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
+    },
+    {
+      "title": "Watch Sky News Live",
+      "url": "https://news.sky.com/watch-live",
+      "snippet": "If you're unable to watch or just want to save data, you can also listen to Sky News by clicking below - or ask your smart speaker to …"
+    },
+    {
+      "title": "UK News - The latest headlines from the UK | Sky News",
+      "url": "https://news.sky.com/uk",
+      "snippet": "Expert comment and analysis on the latest UK news, with headlines from England, Scotland, Northern Ireland and Wales."
+    },
+    {
+      "title": "World News - Breaking international news and headlines | Sky News",
+      "url": "https://news.sky.com/world",
+      "snippet": "The latest international news from Sky, featuring top stories from around the world and breaking news, as it happens."
+    },
+    {
+      "title": "Why hasn't a new reservoir been built in the UK since 1991? - Sky News",
+      "url": "https://news.sky.com/video/why-hasnt-a-new-reservoir-been-built-in-the-uk-since-1991-13575414",
+      "snippet": "Due to planning hurdles and financial constraints, the UK hasn't completed building one since 1991. Water supply is a major problem …"
+    }
+  ]
+}

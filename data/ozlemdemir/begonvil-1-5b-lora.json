@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ozlemdemir/Begonvil-1.5B-LoRA",
+  "slug": "ozlemdemir-begonvil-1-5b-lora",
+  "author": "ozlemdemir",
+  "url": "https://huggingface.co/ozlemdemir/Begonvil-1.5B-LoRA",
+  "created_at": "2026-10-11T19:05:00.000Z",
+  "updated_at": "2026-10-11T19:05:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zeynepelif/Qwen2.5-Coder-1.5B-LORA-DEEP · Hugging Face",
+      "url": "https://huggingface.co/zeynepelif/Qwen2.5-Coder-1.5B-LORA-DEEP",
+      "snippet": "This model is a fine-tuned version of Qwen/Qwen2.5-Coder-1.5B-Instructon the Deepdataset using LoRA (Low-Rank Adaptation). It was developed as a NLP Lecture project to evaluate the capabilities Small Language Models on specific coding tasks."
+    },
+    {
+      "title": "LoRA (machine learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LoRA_(machine_learning)",
+      "snippet": "LoRA (Low-Rank Adaptation) is a parameter-efficient fine-tuning technique for large language models and other deep neural networks. Introduced in 2021 by researchers at Microsoft, LoRA enables adaptation of pre-trained models to specific tasks while requiring significantly fewer computational resources and trainable parameters than traditional ..."
+    },
+    {
+      "title": "fermsi/Deepseek-r1-1.5B-SFT-LOrA-bluesky2 · Hugging Face",
+      "url": "https://huggingface.co/fermsi/Deepseek-r1-1.5B-SFT-LOrA-bluesky2",
+      "snippet": "Model card Files Files and versions Community Train Deploy Use this model Model Card for Deepseek-r1-1.5B-SFT-LOrA-bluesky2 Quick start Training procedure Framework versions Citations"
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LoRA & QLoRA Fine-Tuning: Build Custom LLMs on a Single GPU [2026 Guide]",
+      "url": "https://www.meta-intelligence.tech/en/insight-lora-finetuning",
+      "snippet": "Fine-tune LLMs on a single consumer GPU with LoRA and QLoRA. Step-by-step guide covering low-rank adaptation theory, 4-bit NF4 quantization, DoRA, PEFT, and Unsloth — with Google Colab notebooks and production deployment tips."
+    }
+  ]
+}

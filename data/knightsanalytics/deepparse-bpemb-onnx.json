@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "KnightsAnalytics/deepparse-bpemb-onnx",
+  "slug": "knightsanalytics-deepparse-bpemb-onnx",
+  "author": "KnightsAnalytics",
+  "url": "https://huggingface.co/KnightsAnalytics/deepparse-bpemb-onnx",
+  "created_at": "2026-10-11T18:30:15.000Z",
+  "updated_at": "2026-10-11T18:32:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181300278,
+  "storage_human": "181 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Here is Deepparse — deepparse 0.10.0 documentation",
+      "url": "https://deepparse.org/",
+      "snippet": "Here is Deepparse Deepparse is a state-of-the-art library for parsing multinational street addresses using deep learning. Use deepparse to parse multinational address using one of our pretrained models with or without attention mechanism, parse addresses directly from the command line without code to write,"
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    },
+    {
+      "title": "GitHub - GRAAL-Research/deepparse: Deepparse is a state-of-the-art ...",
+      "url": "https://github.com/GRAAL-Research/deepparse",
+      "snippet": "Deepparse is a state-of-the-art library for parsing multinational street addresses using deep learning - GRAAL-Research/deepparse"
+    },
+    {
+      "title": "Parser — deepparse 0.10.0 documentation",
+      "url": "https://deepparse.org/parser.html",
+      "snippet": "Parser Pre-trained Complete Model This is the complete pretrained address parser model. This model allows using the pretrained weights to predict the tags of any address. For now, we offer only two pretrained models, FastText and BPEmb."
+    },
+    {
+      "title": "deepparse/bpemb-base · Hugging Face",
+      "url": "https://huggingface.co/deepparse/bpemb-base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

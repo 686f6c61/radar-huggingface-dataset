@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0",
+  "slug": "voicenetckpt-voiceclap_scale_9corpus_whisper-small-minilm_k2_ctx256_s40m_ep80_lr0-0001_bs64_n4_r0",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0",
+  "created_at": "2026-10-11T16:33:59.000Z",
+  "updated_at": "2026-10-11T17:41:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109271227425,
+  "storage_human": "109.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "18+ on Vimeo",
+      "url": "https://vimeo.com/showcase/4474293?msockid=0540406a27c86ad31be7578526a76b84",
+      "snippet": "Join the web’s most supportive community of creators and get high-quality tools for hosting, sharing, and streaming videos in …"
+    },
+    {
+      "title": "Best Desi Romantic Movies – Watch Love Stories Online | ShemarooMe",
+      "url": "https://www.shemaroome.com/desi-romantic-movies/collection",
+      "snippet": "Experience the magic of love with the best desi romantic movies on ShemarooMe. Watch heartwarming Bollywood love stories, …"
+    },
+    {
+      "title": "old man young girl - Search Videos - Bing",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=old+man+young+girl&mmscn=stvo&ajaxhist=0",
+      "snippet": "Watch videos instantly on Bing—enjoy direct playback, discover related clips, and dive into trending content all in one place."
+    },
+    {
+      "title": "Couple Romance Part 1 - YouTube",
+      "url": "https://www.youtube.com/shorts/0G2Z2FyVjq4",
+      "snippet": "Nov 22, 2022 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Indian Woman Romance Stock Videos – 3,062 HD & 4K Footage Clips",
+      "url": "https://stock.adobe.com/search/video?k=indian+woman+romance&msockid=0540406a27c86ad31be7578526a76b84",
+      "snippet": "4K HD 00:08 4K HD You can now generate custom videos for 'indian woman romance' in AI Studio"
+    }
+  ]
+}

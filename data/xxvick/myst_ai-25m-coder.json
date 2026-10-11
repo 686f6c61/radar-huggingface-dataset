@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "XXVICK/Myst_Ai-25M-Coder",
+  "slug": "xxvick-myst_ai-25m-coder",
+  "author": "XXVICK",
+  "url": "https://huggingface.co/XXVICK/Myst_Ai-25M-Coder",
+  "created_at": "2026-10-11T18:48:21.000Z",
+  "updated_at": "2026-10-11T18:50:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "code",
+    "en"
+  ],
+  "tags": [
+    "python",
+    "code",
+    "pytorch",
+    "from-scratch",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134265298,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI for Coding 2026 - Top Coding Models - llm-stats.com",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-coding",
+      "snippet": "Compare the best AI for coding using live coding arena results, benchmark performance, and real generation examples for code generation, debugging, and software engineering."
+    },
+    {
+      "title": "Best AI for Coding September 2026: Top 10 Coding Models Ranked",
+      "url": "https://www.buildmvpfast.com/articles/best-llms-2026-guide/coding-ai",
+      "snippet": "What is Code Generation & Programming AI in 2026? The AI coding assistant you pick in 2026 matters more than it did a year ago. If you are comparing the best AI for coding in 2026, the best LLM for coding, or the best AI coding model for a real project, consistency matters as much as benchmark peaks."
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude is a generative AI chatbot. [1] It sometimes uses artifacts, a feature introduced in June 2024 to generate and interact with code snippets and documents. [2][3] In 2025, Anthropic added a web search feature to Claude. [4][5] Claude Pro and Claude Max are subscription services for additional access to Claude models. Max provides higher usage limits at an additional cost. [6] Grouped ..."
+    },
+    {
+      "title": "Xiaomi MiMo V2.5 Pro: The Free AI Coding Model That Beats GPT-4 (2026 ...",
+      "url": "https://globalaiforce.com/mimo-setup-guide/",
+      "snippet": "Xiaomi just dropped one of the most powerful free AI coding models in the world — and most people don&#x27;t know about it yet. MiMo V2.5 Pro is a massive open-source AI model made by Xiaomi (yes, the smartphone company) that is designed specifically for coding, software engineering, and complex problem solving."
+    },
+    {
+      "title": "Building a hill-climbing machine: Launching seven new MAI models ...",
+      "url": "https://microsoft.ai/news/building-a-hillclimbing-machine-launching-seven-new-mai-models/",
+      "snippet": "Here&#x27;s our first steps along the way. Our Models Our new models across image, voice, transcription, coding, and reasoning, together form the MAI model family: a multimodal ecosystem designed to work across the kinds of tasks that matter in the real world. MAI-Thinking-1, Microsoft AI&#x27;s flagship reasoning model."
+    }
+  ]
+}

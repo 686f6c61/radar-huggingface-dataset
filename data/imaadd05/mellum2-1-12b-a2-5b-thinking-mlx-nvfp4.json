@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "imaadd05/Mellum2.1-12B-A2.5B-Thinking-mlx-nvfp4",
+  "slug": "imaadd05-mellum2-1-12b-a2-5b-thinking-mlx-nvfp4",
+  "author": "imaadd05",
+  "url": "https://huggingface.co/imaadd05/Mellum2.1-12B-A2.5B-Thinking-mlx-nvfp4",
+  "created_at": "2026-10-11T15:24:38.000Z",
+  "updated_at": "2026-10-11T16:01:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mellum",
+    "quantized",
+    "nvfp4",
+    "coding",
+    "agents",
+    "moe",
+    "thinking",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "base_model:quantized:JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12149923072,
+  "parameters_human": "12.15B",
+  "storage_bytes": 6836663555,
+  "storage_human": "6.8 GB",
+  "base_model": "JetBrains/Mellum2.1-12B-A2.5B-Thinking",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/",
+      "snippet": "Browse all movies, TV shows, and more from Apple TV. Watch all Apple Originals here and on the Apple TV app across your devices."
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/fr",
+      "snippet": "Apple TV vous permet d’accéder aux créations Apple Originals où vous trouverez des centaines de séries et de films exclusifs, allant …"
+    },
+    {
+      "title": "Apple TV - Apple",
+      "url": "https://www.apple.com/apple-tv/",
+      "snippet": "What is Apple TV? Apple TV is an all-original streaming service featuring hundreds of exclusive shows and movies — thrilling …"
+    },
+    {
+      "title": "Apple TV - Apple (FR)",
+      "url": "https://www.apple.com/fr/apple-tv/",
+      "snippet": "Apple TV est un service de streaming proposant des centaines de séries et films exclusifs – drames captivants, sagas fantasti­ques, …"
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/gb",
+      "snippet": "Browse all movies, TV shows and more from Apple TV. Watch all Apple Originals here and on the Apple TV app across your devices."
+    }
+  ]
+}

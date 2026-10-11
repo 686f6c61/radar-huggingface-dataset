@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP8",
+  "slug": "automatosx-ax-hy-mt2-30b-a3b-mlx-axq-mxfp8",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP8",
+  "created_at": "2026-10-11T18:15:22.000Z",
+  "updated_at": "2026-10-11T18:17:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hy_v3",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "hy-v3",
+    "MXFP8",
+    "text-generation",
+    "conversational",
+    "base_model:tencent/Hy-MT2-30B-A3B",
+    "base_model:quantized:tencent/Hy-MT2-30B-A3B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30064719872,
+  "parameters_human": "30.06B",
+  "storage_bytes": 31021395547,
+  "storage_human": "31.0 GB",
+  "base_model": "tencent/Hy-MT2-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4",
+      "snippet": "Instructions to use AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MLX - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/mlx",
+      "snippet": "Complete index of every public AutomatosX model. Prefer the family collections above."
+    },
+    {
+      "title": "Hy-MT2 30B A3B: Specifications and GPU VRAM Requirements",
+      "url": "https://apxml.com/models/hy-mt2-30b-a3b",
+      "snippet": "Hy-MT2 30B A3B is Tencent&#x27;s flagship mixture-of-experts translation model with 3B active parameters out of 30B total. It delivers high-accuracy translation across 33 language pairs with advanced support for context-aware and glossary-based tasks."
+    },
+    {
+      "title": "Hy-MT2-30B-A3B-APEX-Imatrix-I-Compact-MLX - omlx.ai",
+      "url": "https://omlx.ai/benchmarks/performance/c6drogab",
+      "snippet": "1,197 PP tok/s, 44.0 TG tok/s — Hy-MT2-30B-A3B-APEX-Imatrix-I-Compact-MLX (4bit) on M4 Max (40c) 128GB"
+    },
+    {
+      "title": "Hy-MT2-30B-A3B - model.xinference.io",
+      "url": "https://model.xinference.io/models/detail/Hy-MT2-30B-A3B",
+      "snippet": "Hy-MT2 is a family of \"fast-thinking\" multilingual translation models designed for complex real-world scenarios. It includes three model sizes: 1.8B, 7B, and 30B-A3B (MoE), all of which support translation among 33 languages and effectively follow translation instructions in multiple languages."
+    }
+  ]
+}

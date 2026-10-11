@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style",
+  "slug": "voicenetckpt-finetune_qwen25_omni_7b_lco_style",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style",
+  "created_at": "2026-10-11T15:43:09.000Z",
+  "updated_at": "2026-10-11T15:43:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22580733838,
+  "storage_human": "22.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emily Rose (actress) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Emily_Rose_(actress)",
+      "snippet": "Emily Rose is an American actress. She is best known for her role in the critically acclaimed Uncharted video game series as Elena …"
+    },
+    {
+      "title": "Emily Rose - IMDb",
+      "url": "https://m.imdb.com/name/nm2448361/",
+      "snippet": "Emily Rose is an American actress who is known for her roles as Audrey Parker from the Syfy television show Haven and Elena …"
+    },
+    {
+      "title": "The Exorcism of Emily Rose - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/The_Exorcism_of_Emily_Rose",
+      "snippet": "The Exorcism of Emily Rose is a 2005 American supernatural horror legal drama film directed by Scott Derrickson, who co-wrote with …"
+    },
+    {
+      "title": "Emily Rose — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Emily_Rose",
+      "snippet": "Emily Rose, née le 2 février 1981 à Renton dans l' État de Washington, est une actrice américaine. Elle est principalement connue …"
+    },
+    {
+      "title": "Emily Rose (@emilyrosela) • Instagram photos and videos",
+      "url": "https://www.instagram.com/emilyrosela/",
+      "snippet": "45K Followers, 1,389 Following, 379 Posts - Emily Rose (@emilyrosela) on Instagram: \"Wife. Mom. Actress. Producer. Friend. …"
+    }
+  ]
+}

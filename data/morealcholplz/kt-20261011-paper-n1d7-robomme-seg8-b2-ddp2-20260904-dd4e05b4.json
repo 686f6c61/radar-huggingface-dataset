@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-paper-n1d7-robomme-seg8-b2-ddp2-20260904-dd4e05b4",
+  "slug": "morealcholplz-kt-20261011-paper-n1d7-robomme-seg8-b2-ddp2-20260904-dd4e05b4",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-paper-n1d7-robomme-seg8-b2-ddp2-20260904-dd4e05b4",
+  "created_at": "2026-10-11T01:56:05.000Z",
+  "updated_at": "2026-10-11T02:25:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[2603.04639] RoboMME: Benchmarking and Understanding Memory for Robotic ...",
+      "url": "https://arxiv.org/abs/2603.04639",
+      "snippet": "To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios."
+    },
+    {
+      "title": "RoboMME",
+      "url": "https://robomme.github.io/index.html",
+      "snippet": "To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios."
+    },
+    {
+      "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist ...",
+      "url": "https://arxiv.org/pdf/2603.04639",
+      "snippet": "Building on RoboMME, we develop a family of 14 memory-augmented VLA models based on the 0.5 backbone [4] to systematically study how different memory representations influence manipulation performance."
+    },
+    {
+      "title": "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist ...",
+      "url": "https://sled.eecs.umich.edu/publication/dai-2026-robomme/",
+      "snippet": "To address these challenges, we introduce RoboMME: a large-scale standardized benchmark for evaluating and advancing VLA models in long-horizon, history-dependent scenarios."
+    },
+    {
+      "title": "RoboMME | WorldFoundry",
+      "url": "https://openenvision.github.io/WorldFoundry/docs/evaluation/benchmark-hub/robomme",
+      "snippet": "ICML 2026 memory-augmented manipulation bench from Michigan, Stanford, and Figure AI. 16 long-horizon tasks (4 suites × 4), 1,600 demonstrations, 770k training timesteps."
+    }
+  ]
+}

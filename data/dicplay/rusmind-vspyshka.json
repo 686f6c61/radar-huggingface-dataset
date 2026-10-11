@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DICPlay/RusMind-Vspyshka",
+  "slug": "dicplay-rusmind-vspyshka",
+  "author": "DICPlay",
+  "url": "https://huggingface.co/DICPlay/RusMind-Vspyshka",
+  "created_at": "2026-10-11T01:50:28.000Z",
+  "updated_at": "2026-10-11T02:25:41.000Z",
+  "license": "rusmind-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rusmind",
+    "dicplay",
+    "russian",
+    "llama.cpp",
+    "on-device",
+    "offline",
+    "text-generation",
+    "ru",
+    "en",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 106,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 30945414208,
+  "storage_human": "30.9 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DICPlay/RusMind-3.2-Vspyshka · Hugging Face",
+      "url": "https://huggingface.co/DICPlay/RusMind-3.2-Vspyshka",
+      "snippet": "DICPlay / RusMind-3.2-Vspyshka Like 0 Follow DICPlay 1 Text Generation GGUF Russian English rusmind dicplay russian on-device offline llama.cpp wllama conversational License:rusmind-license Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Renaissance-Mind/ShowAI: A visual interface for humans and AI ...",
+      "url": "https://github.com/Renaissance-Mind/ShowAI",
+      "snippet": "A visual interface for humans and AI agents to think together, build shared understanding, and solve problems. Works directly within AI conversations. ｜ 连接人与 AI Agent 的可视化界面，让双方共同思考、增进理解、协作解决问题。支持在 AI 对话中内嵌使用。 - Renaissance-Mind/ShowAI"
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Access 45,000+ models from leading AI providers through a single, unified API with no service fees. Deploy on optimized Inference Endpoints or update your Spaces applications to a GPU in a few clicks. We are building the foundation of ML tooling with the community."
+    },
+    {
+      "title": "Vspyshka | Free AI Art Generator - neural.love",
+      "url": "https://neural.love/ai-art-generator/1eddab27-701f-6e02-99c3-b5d4553f52a0/vspyshka",
+      "snippet": "A beautiful highly detailed futuristic (Vspyshka:1.3) by Paul Kelpe and filip hodas, science fiction, dystopian, hard light, (centered composition:1.2), sci-fi, featured on artstation, artstationhq, 70mm photo, 4k, 8k, octane render, aesthetic, exciting, cinematic, moody | Sci-fi"
+    },
+    {
+      "title": "Золотая Небесная Вспышка 3D Модель - Sci-Fi Реквизит | AIPRINTGEN",
+      "url": "https://aiprintgen.ru/3d-models/zolotaya-nebesnaya-vspyshka-3d-model-10f9cbf1958459b8",
+      "snippet": "Скачайте потрясающую 3D-модель золотой небесной вспышки, идеальную для научно-фантастического реквизита, игровых ассетов или уникального декора. Высокое…"
+    }
+  ]
+}

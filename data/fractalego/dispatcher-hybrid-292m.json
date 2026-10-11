@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "fractalego/dispatcher-hybrid-292m",
+  "slug": "fractalego-dispatcher-hybrid-292m",
+  "author": "fractalego",
+  "url": "https://huggingface.co/fractalego/dispatcher-hybrid-292m",
+  "created_at": "2026-10-11T17:26:50.000Z",
+  "updated_at": "2026-10-11T17:28:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dispatcher-hybrid",
+    "text-generation",
+    "dispatcher",
+    "attention-free",
+    "subquadratic",
+    "causal-lm",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2105.03994",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 292158464,
+  "parameters_human": "292.2M",
+  "storage_bytes": 1168660728,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xxx videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx",
+      "snippet": "XVIDEOS xxx videos, free Xxx enteada virgem com buceta fofa me deixa tocá-la 10 min KSALHARDCORE - 531.3k Views -"
+    },
+    {
+      "title": "Vidéos xxx - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/xxx",
+      "snippet": "XVIDEOS Vidéos xxx, gratuit JEUNE FILLE COQUINÉE AVEC UN GROS CUL L'A DONNÉ DÉLICIEUX À TATOUER - TEASER - …"
+    },
+    {
+      "title": "xxx videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/d:10-20min/xxx",
+      "snippet": "Xxx enteada virgem com buceta fofa me deixa tocá-la 10 min KSALHARDCORE - 515.2k Views -"
+    },
+    {
+      "title": "Vidéos xxx, page 1 - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/xxx/1/",
+      "snippet": "XVIDEOS Vidéos xxx, page 1, gratuit XXX Famille indienne recomposée baise la demi-sœur XXX baise en hindi XXX 10 min …"
+    },
+    {
+      "title": "'film porno italiano xxx video' Cerca - XVIDEOS.COM",
+      "url": "https://it.xvideos.com/?k=film+porno+italiano+xxx+video",
+      "snippet": "35.687 film porno italiano xxx video video GRATUITI trovati su XVIDEOS in questa ricerca."
+    }
+  ]
+}

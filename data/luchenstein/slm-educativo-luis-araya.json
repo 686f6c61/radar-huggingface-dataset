@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "luchenstein/slm-educativo-luis-araya",
+  "slug": "luchenstein-slm-educativo-luis-araya",
+  "author": "luchenstein",
+  "url": "https://huggingface.co/luchenstein/slm-educativo-luis-araya",
+  "created_at": "2026-10-11T18:14:49.000Z",
+  "updated_at": "2026-10-11T18:19:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "education",
+    "fine-tuning",
+    "lora",
+    "text-generation",
+    "conversational",
+    "es",
+    "base_model:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "base_model:adapter:nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4512746496,
+  "parameters_human": "4.51B",
+  "storage_bytes": 9042736680,
+  "storage_human": "9.0 GB",
+  "base_model": "nvidia/Llama-3.1-Nemotron-Nano-4B-v1.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Claude (AI) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Claude_(AI)",
+      "snippet": "Claude is a generative AI chatbot. [1] It sometimes uses artifacts, a feature introduced in June 2024 to generate and interact with code snippets and documents. [2][3] In 2025, Anthropic added a web search feature to Claude. [4][5] Claude Pro and Claude Max are subscription services for additional access to Claude models. Max provides higher usage limits at an additional cost. [6] Grouped ..."
+    },
+    {
+      "title": "Best LLM for Coding (October 2026): SWE-bench & LiveCodeBench Ranked",
+      "url": "https://benchlm.ai/coding",
+      "snippet": "Live leaderboard ranking 146 AI models on SWE-bench Pro, LiveCodeBench, SWE-Rebench, and more. See which LLM writes the best code — updated October 2026."
+    }
+  ]
+}

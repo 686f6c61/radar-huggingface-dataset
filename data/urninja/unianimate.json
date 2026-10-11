@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "UrNinja/unianimate",
+  "slug": "urninja-unianimate",
+  "author": "UrNinja",
+  "url": "https://huggingface.co/UrNinja/unianimate",
+  "created_at": "2026-10-11T18:30:39.000Z",
+  "updated_at": "2026-10-11T18:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "open_clip",
+  "languages": [],
+  "tags": [
+    "open_clip",
+    "onnx",
+    "arxiv:2406.01188",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15177600858,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UniAnimate",
+      "url": "https://unianimate.github.io/",
+      "snippet": "To address these shortcomings, we present a UniAnimate framework to enable efficient and long-term human video generation. First, to reduce the optimization difficulty and ensure temporal coherence, we map the reference image along with the posture guidance and noise video into a common feature space by incorporating a unified video diffusion ..."
+    },
+    {
+      "title": "UniAnimate · AikanAI",
+      "url": "https://www.aikanai.com/en/tool/unianimate",
+      "snippet": "About UniAnimate Generate long, consistent videos from a single reference image. This is a unified diffusion model for animating images with human beings"
+    },
+    {
+      "title": "GitHub - ali-vilab/UniAnimate: Code for SCIS-2025 Paper \"UniAnimate ...",
+      "url": "https://github.com/ali-vilab/UniAnimate",
+      "snippet": "Code for SCIS-2025 Paper \"UniAnimate: Taming Unified Video Diﬀusion Models for Consistent Human Image Animation\". - ali-vilab/UniAnimate"
+    },
+    {
+      "title": "camenduru/unianimate · Hugging Face",
+      "url": "https://huggingface.co/camenduru/unianimate",
+      "snippet": "UniAnimate: Taming Unified Video Diffusion Models for Consistent Human Image Animation This repo include the checkpoints for UniAnimate: \"models/dw-ll_ucoco_384.onnx\": the checkpoint for dwpose extraction. \"models/open_clip_pytorch_model.bin\": the checkpoint for clip embedding."
+    },
+    {
+      "title": "Isi99999/UniAnimate_and_Animate-X_Models at main - Hugging Face",
+      "url": "https://huggingface.co/Isi99999/UniAnimate_and_Animate-X_Models/tree/main",
+      "snippet": "OpenCLIP ONNX License: apache-2.0 Model card Files Files and versions Community Use this model main UniAnimate_and_Animate-X_Models"
+    }
+  ]
+}

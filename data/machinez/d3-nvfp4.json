@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "machinez/d3-NVFP4",
+  "slug": "machinez-d3-nvfp4",
+  "author": "machinez",
+  "url": "https://huggingface.co/machinez/d3-NVFP4",
+  "created_at": "2026-10-11T18:38:22.000Z",
+  "updated_at": "2026-10-11T18:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "feature-extraction",
+    "zero-shot-classification",
+    "decision-model",
+    "classification",
+    "system-one",
+    "multimodal",
+    "vision",
+    "video",
+    "custom_code",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17864494832,
+  "parameters_human": "17.86B",
+  "storage_bytes": 25187334301,
+  "storage_human": "25.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA Blackwell: The Impact of NVFP4 For LLM Inference",
+      "url": "https://www.edge-ai-vision.com/2025/10/nvidia-blackwell-the-impact-of-nvfp4-for-llm-inference/",
+      "snippet": "23.10.2025 ... Classic FP4 squeezes each value into 4 bits—great for bandwidth and compute—but risks accuracy. NVFP4 tackles that tradeoff with micro-block ..."
+    },
+    {
+      "title": "Bridging the Gap Between Promise and Performance for ... - arXiv",
+      "url": "https://arxiv.org/pdf/2509.23202",
+      "snippet": "In this section, we perform a model-based analysis of the NVFP4 and MXFP4 formats from the prism of these metrics. 3. Page 4. Published as a conference paper at ..."
+    },
+    {
+      "title": "Support memory-efficient chunked conversion for models larger than ...",
+      "url": "https://github.com/ml-explore/mlx-lm/issues/876",
+      "snippet": "11.02.2026 ... quantize operates on raw tensors. However, the plan's D3 (lightweight model instantiation with no weights) already provides the module graph for ..."
+    },
+    {
+      "title": "Available foundation models - Amazon SageMaker AI",
+      "url": "https://docs.aws.amazon.com/sagemaker/latest/dg/jumpstart-foundation-models-latest.html",
+      "snippet": "... machine learning algorithms that JumpStart also provides, which are not foundation models. To list all available JumpStart foundation models: import boto3 ..."
+    },
+    {
+      "title": "Inside the LLM Inference Engine: How Serving Works in 2026",
+      "url": "https://ranjankumar.in/large-language-models-llms-inference-and-serving",
+      "snippet": "09.02.2025 ... For: AI Engineers, ML Engineers, Platform Engineers, AI Systems Architects ... models in NVFP4. Those throughput tables were measured on a 2024 ..."
+    }
+  ]
+}

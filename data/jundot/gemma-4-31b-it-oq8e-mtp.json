@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jundot/gemma-4-31B-it-oQ8e-mtp",
+  "slug": "jundot-gemma-4-31b-it-oq8e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/gemma-4-31B-it-oQ8e-mtp",
+  "created_at": "2026-10-11T15:43:58.000Z",
+  "updated_at": "2026-10-11T15:44:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31742607472,
+  "parameters_human": "31.74B",
+  "storage_bytes": 34734334177,
+  "storage_human": "34.7 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tous les Épisodes Six D'entre Nous (Sahipsizler Full Episodes)",
+      "url": "https://www.youtube.com/playlist?list=PLTlThK7fT3X8",
+      "snippet": "Tous les Épisodes Six D'entre Nous (Sahipsizler Full Episodes) Après avoir perdu leurs parents du jour au lendemain, six frères et …"
+    },
+    {
+      "title": "Six D'entre Nous Épisode 1 (Doublage en Français) - YouTube",
+      "url": "https://www.youtube.com/watch?v=wON10NdvpEM",
+      "snippet": "Jun 25, 2026 · La série raconte l’histoire de six frères et sœurs Azize, Cemo, Zeliha, Fidan, Samet et Balım qui, après avoir perdu …"
+    },
+    {
+      "title": "Sahipsizler (Six d'entre nous) - résumé et infos sur la ... - TikTok",
+      "url": "https://www.tiktok.com/@fannynguimbi/video/7669736360521125128",
+      "snippet": "Sahipsizler — aussi présenté sous le titre français Six d'entre nous — est une série turque centrée sur le groupe de six personnages …"
+    },
+    {
+      "title": "Any credible comparisons among Gemma 4 31b, Qwen3.8 27b, and ...",
+      "url": "https://www.reddit.com/r/LocalLLM/comments/1worubw/any_credible_comparisons_among_gemma_4_31b_qwen38/",
+      "snippet": "24.09.2026 ... I used Qwen3.5 27b a few months ago and thought it was quite good. My tasks are analysis and reasoning, not coding. New models have been out ..."
+    },
+    {
+      "title": "Traduction de \"Six d'entre nous\" en anglais - Reverso Context",
+      "url": "https://context.reverso.net/traduction/francais-anglais/Six+d%27entre+nous",
+      "snippet": "Traductions en contexte de \"Six d'entre nous\" en français-anglais avec Reverso Context : Six d'entre nous prendront astronomie au …"
+    }
+  ]
+}

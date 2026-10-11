@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "shikhar-srivastava/1b_layerrope_lr3.2e-2_seed1",
+  "slug": "shikhar-srivastava-1b_layerrope_lr3-2e-2_seed1",
+  "author": "shikhar-srivastava",
+  "url": "https://huggingface.co/shikhar-srivastava/1b_layerrope_lr3.2e-2_seed1",
+  "created_at": "2026-10-11T17:04:01.000Z",
+  "updated_at": "2026-10-11T17:15:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "llama",
+    "layerrope",
+    "en",
+    "dataset:allenai/c4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2678088191,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

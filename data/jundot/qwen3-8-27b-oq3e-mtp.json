@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jundot/Qwen3.8-27B-oQ3e-mtp",
+  "slug": "jundot-qwen3-8-27b-oq3e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/Qwen3.8-27B-oQ3e-mtp",
+  "created_at": "2026-10-11T17:17:08.000Z",
+  "updated_at": "2026-10-11T17:17:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 13798294136,
+  "storage_human": "13.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jundot (Jun Kim) - Hugging Face",
+      "url": "https://huggingface.co/Jundot/models",
+      "snippet": "Jundot 's models 52. Sort: Recently updated ; Jundot/clef-oQ4e · 27B · 212 • 8 ; Jundot/clef-flash-oQ4e · 9B · 149 • 4 ; Jundot/DeepSeek-V4.1-Flash-oQ3e-mtp. 106B ..."
+    },
+    {
+      "title": "Qwen3.8-27B MTP quants on Apple M5 Max - r/oMLX - Reddit",
+      "url": "https://www.reddit.com/r/oMLX/comments/1w6mmgb/qwen3827b_mtp_quants_on_apple_m5_max_which_one_is/",
+      "snippet": "03.09.2026 ... | oQ3e-mtp | 38.7 tok/s | 85.2 ✓ |. | oQ4e-mtp | 36.6 tok/s | 86.8 ... jundot has been a solid performer of the ones i have tried."
+    },
+    {
+      "title": "Intelligence Benchmarks — oMLX",
+      "url": "https://omlx.ai/benchmarks/intelligence",
+      "snippet": "Community Benchmarks - Intelligence ; 3, Blackfrost-AI-Muse-Glimmer-30B-Abliterated-MLX-8bit ; 4, mlx-community, Qwen3.5-4B-4bit ; 5, Jundot, Qwen3.8-27B-oQ4e-mtp ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=oq",
+      "snippet": "... oQ3e-DWQ-MTP-Vision-MLX. Image-Text-to-Text • 134B • Updated 3 days ago ... Jundot/Qwen3.8-27B-oQ8e-mtp. 28B • Updated Aug 17 • 1.84k • 9 · pyros-vault ..."
+    },
+    {
+      "title": "Models compatible with the MLX library - Hugging Face",
+      "url": "https://huggingface.co/models?library=mlx&p=3&sort=trending",
+      "snippet": "Jundot/Qwen3.8-27B-oQ4e-mtp. 28B • Updated Aug 17 • 11.4k • 50 · Jundot/Qwen3.8 ... pyros-vault/Qwen3.8-27B-Uncensored-oQ4e-mtp. Image-Text-to-Text • 28B ..."
+    }
+  ]
+}

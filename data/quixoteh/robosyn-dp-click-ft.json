@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "QuixoteH/RoboSyn-dp-click-ft",
+  "slug": "quixoteh-robosyn-dp-click-ft",
+  "author": "QuixoteH",
+  "url": "https://huggingface.co/QuixoteH/RoboSyn-dp-click-ft",
+  "created_at": "2026-10-11T18:49:47.000Z",
+  "updated_at": "2026-10-11T18:57:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion-policy",
+    "robosynchallenge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 270780964,
+  "parameters_human": "270.8M",
+  "storage_bytes": 1083151064,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | RoboSynChallenge",
+      "url": "https://robosyn-bench.net/",
+      "snippet": "RoboSynChallenge is a NeurIPS 2026 competition on sim-to-real robot manipulation with synthesized and real-world co-training."
+    },
+    {
+      "title": "QuixoteH (Hai Huang) - Hugging Face",
+      "url": "https://huggingface.co/QuixoteH/datasets",
+      "snippet": "QuixoteH 11 Follow 0 followers · 1 following https://quixoteh.github.io quixoteh3 QuixoteH"
+    },
+    {
+      "title": "RoboSynChallenge (RoboSynChallenge) - Hugging Face",
+      "url": "https://huggingface.co/RoboSynChallenge",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 minutes ago ... published a model 6 minutes ago"
+    },
+    {
+      "title": "SimTooReal — Learn Robotics from First Principles to Deployment",
+      "url": "https://www.robosynx.com/",
+      "snippet": "A cinematic robotics education studio: Academy, courses, simulator guides, and AI tools for Isaac Sim, MuJoCo, Gazebo, and ROS 2."
+    },
+    {
+      "title": "The Ransomware an AI Model Built Without Trying - CyberHoot",
+      "url": "https://cyberhoot.com/blog/the-ransomware-an-ai-model-built-without-trying/",
+      "snippet": "Researchers went looking for a fake photo upscaler and found something stranger: a ransomware kit an AI model helped design without anyone teaching it how. No skilled coder sat down and wrote this attack line by line. Instead, an AI chatbot pieced most of it together from a single broad request, and in the end, part of it worked exactly as intended by whoever asked. This story fits a bigger ..."
+    }
+  ]
+}

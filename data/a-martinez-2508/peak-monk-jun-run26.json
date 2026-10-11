@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "A-Martinez-2508/peak-monk-jun-run26",
+  "slug": "a-martinez-2508-peak-monk-jun-run26",
+  "author": "A-Martinez-2508",
+  "url": "https://huggingface.co/A-Martinez-2508/peak-monk-jun-run26",
+  "created_at": "2026-10-11T16:35:44.000Z",
+  "updated_at": "2026-10-11T16:44:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "qwen3",
+    "character",
+    "experimental",
+    "text-generation",
+    "base_model:johnlakness/Qwen3-4B-Base-mlx-4Bit",
+    "base_model:adapter:johnlakness/Qwen3-4B-Base-mlx-4Bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146008527,
+  "storage_human": "146 MB",
+  "base_model": "johnlakness/Qwen3-4B-Base-mlx-4Bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accent sur le « a » : à, â ou a ? Règles et raccourcis clavier",
+      "url": "https://www.virageprepa.com/articles/accent-sur-le-%C2%AB-a-%C2%BB-%C3%A0-%C3%A2-ou-a-r%C3%A8gles-et-raccourcis-clavier",
+      "snippet": "Jun 24, 2026 · À, â ou a ? Distinguer a (verbe avoir) et à (préposition), comprendre â et le couple la / là, et taper À majuscule au …Read more"
+    },
+    {
+      "title": "À — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%80",
+      "snippet": "À, ou A accent grave, est un graphème utilisé dans les alphabets du catalan, de l' occitan, du français, du gaélique écossais, du …"
+    },
+    {
+      "title": "A - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/A",
+      "snippet": "A (minuscule: a) is the first letter and the first vowel letter of the Latin alphabet, [1][2] used in the modern English alphabet, and …"
+    },
+    {
+      "title": "à — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%A0",
+      "snippet": "Cette lettre s’écrit avec un accent grave pour la distinguer de son homophone a. On l’utilise pour à, çà, là, deçà, delà, déjà, holà, …"
+    },
+    {
+      "title": "à /a - cours de français - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=8792",
+      "snippet": "Vidéo réalisée par bridgSavoir utiliser « a » ou « à » Les homophones : « a » / « à »Les homophones grammaticaux sont des mots …"
+    }
+  ]
+}

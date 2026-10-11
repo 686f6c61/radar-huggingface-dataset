@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905-32a05968",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905-32a05968",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-rmsnorm-aligned-b1ga1-s12-20260905-32a05968",
+  "created_at": "2026-10-11T01:57:21.000Z",
+  "updated_at": "2026-10-11T02:45:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "GitHub - MINDS-THU/OptPilot: OptPilot: An orchestrator for AI-assisted ...",
+      "url": "https://github.com/MINDS-THU/OptPilot",
+      "snippet": "OptPilot is a lightweight orchestration layer for iterative optimization studies. It connects a user-owned method to a user-owned environment and owns the boundary around evaluation: A method proposes candidates. OptPilot validates and admits them as logical trials. The environment evaluates them in fresh attempts. OptPilot commits observations, artifacts, events, and recovery state. The ..."
+    },
+    {
+      "title": "edge-ai-suites/robotics-ai-suite/docs/user-guide/ai_resources ... - GitHub",
+      "url": "https://github.com/open-edge-platform/edge-ai-suites/blob/main/robotics-ai-suite/docs/user-guide/ai_resources/openvino/models/model_gr00t_n1d7.md",
+      "snippet": "A curated collection of sample applications intended for reference in developing optimized AI solutions and testing hardware performance across various industry use cases. - open-edge-platform/edge..."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    }
+  ]
+}

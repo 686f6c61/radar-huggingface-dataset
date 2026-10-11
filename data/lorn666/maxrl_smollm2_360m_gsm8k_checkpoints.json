@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lorn666/maxrl_smollm2_360m_gsm8k_checkpoints",
+  "slug": "lorn666-maxrl_smollm2_360m_gsm8k_checkpoints",
+  "author": "lorn666",
+  "url": "https://huggingface.co/lorn666/maxrl_smollm2_360m_gsm8k_checkpoints",
+  "created_at": "2026-10-11T17:26:15.000Z",
+  "updated_at": "2026-10-11T17:27:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "reinforcement-learning",
+    "maxrl",
+    "gsm8k",
+    "math",
+    "text-generation",
+    "en",
+    "dataset:openai/gsm8k",
+    "dataset:madrylab/gsm8k-platinum",
+    "arxiv:2602.02710",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18091872800,
+  "storage_human": "18.1 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

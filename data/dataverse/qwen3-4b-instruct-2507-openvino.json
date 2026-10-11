@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dataverse/Qwen3-4B-Instruct-2507-openvino",
+  "slug": "dataverse-qwen3-4b-instruct-2507-openvino",
+  "author": "dataverse",
+  "url": "https://huggingface.co/dataverse/Qwen3-4B-Instruct-2507-openvino",
+  "created_at": "2026-10-11T18:30:24.000Z",
+  "updated_at": "2026-10-11T18:30:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openvino",
+    "qwen3",
+    "text-generation",
+    "openvino-export",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4038253139,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Internal Working Models of Attachment - Simply Psychology",
+      "url": "https://www.simplypsychology.org/internal-working-models-of-attachment.html",
+      "snippet": "Sep 17, 2026 · John Bowlby (1969/1982) called these early mental representations internal working models, or IWMs. Each model is …"
+    },
+    {
+      "title": "Attachment Theory, Bowlby’s Stages & Attachment Styles",
+      "url": "https://positivepsychology.com/attachment-theory/",
+      "snippet": "Nov 28, 2024 · This article provides a reminder overview of what attachment theory is all about and explores the relevance of this …"
+    },
+    {
+      "title": "Théorie de l’attachement (Bowlby) : définition, styles et impact ...",
+      "url": "https://www.epsilonmelia.com/ressources-pedagogiques/theorie-attachement-definition/",
+      "snippet": "Mar 6, 2026 · C’est le psychiatre et psychanalyste britannique John Bowlby (1907-1990) qui a fondé la théorie de l’attachement en …"
+    },
+    {
+      "title": "John Bowlby's Attachment Theory - Simply Psychology",
+      "url": "https://www.simplypsychology.org/bowlby.html",
+      "snippet": "Oct 1, 2026 · He proposed that these bonds are vital for survival and emotional development, serving as a foundation for future …"
+    },
+    {
+      "title": "Attachment theory - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Attachment_theory",
+      "snippet": "Hence, according to Bowlby, evolution must have ensured that young children's proximity-seeking to a mother-figure in the face of …"
+    }
+  ]
+}

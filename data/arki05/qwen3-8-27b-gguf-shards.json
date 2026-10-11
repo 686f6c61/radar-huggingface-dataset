@@ -5,7 +5,7 @@
   "author": "Arki05",
   "url": "https://huggingface.co/Arki05/Qwen3.8-27B-GGUF-shards",
   "created_at": "2026-08-14T16:49:46.000Z",
-  "updated_at": "2026-08-27T04:03:08.000Z",
+  "updated_at": "2026-10-11T00:27:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 4390,
+  "downloads_30d": 19298,
   "trending_score": 0,
   "parameters": 2671616,
   "parameters_human": "2.7M",

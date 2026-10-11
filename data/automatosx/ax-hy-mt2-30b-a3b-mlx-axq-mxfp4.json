@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4",
+  "slug": "automatosx-ax-hy-mt2-30b-a3b-mlx-axq-mxfp4",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4",
+  "created_at": "2026-10-11T18:13:35.000Z",
+  "updated_at": "2026-10-11T18:14:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "hy_v3",
+    "apple-silicon",
+    "quantized",
+    "mixed-precision",
+    "axquant",
+    "axq",
+    "development",
+    "hy-v3",
+    "MXFP4",
+    "text-generation",
+    "conversational",
+    "base_model:tencent/Hy-MT2-30B-A3B",
+    "base_model:quantized:tencent/Hy-MT2-30B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30064719872,
+  "parameters_human": "30.06B",
+  "storage_bytes": 16274144011,
+  "storage_human": "16.3 GB",
+  "base_model": "tencent/Hy-MT2-30B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4 · Hugging Face",
+      "url": "https://huggingface.co/AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4",
+      "snippet": "Instructions to use AutomatosX/AX-Hy-MT2-30B-A3B-MLX-AXQ-MXFP4 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "MLX - a AutomatosX Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/AutomatosX/mlx",
+      "snippet": "Complete index of every public AutomatosX model. Prefer the family collections above."
+    },
+    {
+      "title": "GitHub - defai-digital/AutomatosX: AutomatosX — sovereign AI ...",
+      "url": "https://github.com/defai-digital/automatosx",
+      "snippet": "Sovereign AI orchestration & governance platform AutomatosX sits above inference engines: application entry points, governance, and private AI infrastructure — for enterprise, government, and defence-grade operations. This repository introduces the AutomatosX system. Product source and releases live in dedicated repositories."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Releases · defai-digital/AutomatosX - GitHub",
+      "url": "https://github.com/defai-digital/AutomatosX/releases",
+      "snippet": "AutomatosX is an orchestrates AI agents, workflows, and memory - defai-digital/AutomatosX"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/qwen2-7b-instruct-openvino",
+  "slug": "nekodeus-qwen2-7b-instruct-openvino",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/qwen2-7b-instruct-openvino",
+  "created_at": "2026-10-11T16:46:31.000Z",
+  "updated_at": "2026-10-11T17:01:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "openvino",
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen2",
+    "int8",
+    "text-generation",
+    "instruct",
+    "llm",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7640637898,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrendStory — AI Video Generator for TikTok, Reels & Shorts",
+      "url": "https://www.trendstory.io/en",
+      "snippet": "Everyone uses TrendStory ! Every viral video you see everywhere is made with TrendStory!Read more"
+    },
+    {
+      "title": "TrendStory — Générateur de vidéos IA pour TikTok, Reels et Shorts",
+      "url": "https://www.trendstory.io/",
+      "snippet": "Tout le monde utilise TrendStory ! Toutes les vidéos virales que tu vois partout sont générées par TrendStory !"
+    },
+    {
+      "title": "TrendStory — Make it a story.",
+      "url": "https://trendstory.app/",
+      "snippet": "Choose a vibe, reimagine your photo, animate it, or make it something you can keep with TrendStory."
+    },
+    {
+      "title": "How TrendStory Works — Make it a story.",
+      "url": "https://trendstory.app/howto",
+      "snippet": "See how to upload a photo, choose a vibe, and make your own TrendStory creation."
+    },
+    {
+      "title": "Connexion — TrendStory",
+      "url": "https://www.trendstory.io/login",
+      "snippet": "Connecte-toi à ton compte TrendStory."
+    }
+  ]
+}

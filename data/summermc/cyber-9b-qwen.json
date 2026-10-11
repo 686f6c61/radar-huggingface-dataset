@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "summerMC/Cyber-9B-Qwen",
+  "slug": "summermc-cyber-9b-qwen",
+  "author": "summerMC",
+  "url": "https://huggingface.co/summerMC/Cyber-9B-Qwen",
+  "created_at": "2026-10-11T18:16:06.000Z",
+  "updated_at": "2026-10-11T18:23:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "9b",
+    "quantized",
+    "llama.cpp",
+    "base_model:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "base_model:quantized:DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 456010480,
+  "parameters_human": "456.0M",
+  "storage_bytes": 6371985088,
+  "storage_human": "6.4 GB",
+  "base_model": "DavidAU/Qwen3.5-9B-The-Defiant-Fable-Uncensored-Heretic-NEO-IMATRIX-MAX-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "summerMC/summer_cyber · Hugging Face",
+      "url": "https://huggingface.co/summerMC/summer_cyber",
+      "snippet": "Use this model Instructions to use summerMC/summer_cyber with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use summerMC/summer_cyber with Transformers: ... Notebooks Google Colab Kaggle Local Apps Settings vLLM How to use summerMC/summer_cyber with vLLM: Install from ..."
+    },
+    {
+      "title": "Run Summer_cyber API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/summerMC/summer_cyber",
+      "snippet": "The summerMC/summer_cyber is a 7.6 billion parameter Qwen2.5-based causal language model developed by summerMC, fine-tuned from unsloth/qwen2.5-7b-instruct-unsloth-bnb-4bit. It features a 32768 token context length and was trained using Unsloth and Huggingface&#x27;s TRL library for accelerated performance. This model is optimized for general instruction-following tasks, leveraging its Qwen2.5 ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "summerMC/Qwen3.5-9B-SpeedX9-GDN32-x2 · Hugging Face",
+      "url": "https://huggingface.co/summerMC/Qwen3.5-9B-SpeedX9-GDN32-x2",
+      "snippet": "summerMC / Qwen3.5-9B-SpeedX9-GDN32-x2 Like 2 Text Generation Transformers Safetensors English Japanese qwen3_5_gdn24 qwen qwen3.5 recurrent linear-attention gdn cuda custom_code conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.5-9B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-9b",
+      "snippet": "Qwen3.5-9B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    }
+  ]
+}

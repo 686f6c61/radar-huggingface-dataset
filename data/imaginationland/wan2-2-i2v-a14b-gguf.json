@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "imaginationland/Wan2.2-I2V-A14B-GGUF",
+  "slug": "imaginationland-wan2-2-i2v-a14b-gguf",
+  "author": "imaginationland",
+  "url": "https://huggingface.co/imaginationland/Wan2.2-I2V-A14B-GGUF",
+  "created_at": "2026-10-11T18:20:13.000Z",
+  "updated_at": "2026-10-11T18:20:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:quantized:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288901184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 232195136022,
+  "storage_human": "232.2 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QuantStack/Wan2.2-I2V-A14B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/QuantStack/Wan2.2-I2V-A14B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan-AI/Wan2.2-I2V-A14B · Hugging Face",
+      "url": "https://huggingface.co/Wan-AI/Wan2.2-I2V-A14B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wan2.2 (FP16/FP8/GGUF) VideoGen locally",
+      "url": "https://www.stablediffusiontutorials.com/2025/08/wan-2.2-video-generation.html",
+      "snippet": "These Wan2.2 Model variants released officially: ... From finely curated cinematic aesthetics to a high-definition hybrid TI2V model that runs 720P at 24fps on a single 4090 GPU, Wan2.2 makes advanced video generation accessible. It offers both text-to-video and image-to-video support, all while maintaining efficiency and speed."
+    },
+    {
+      "title": "Wan2.2-I2V-A14B-GGUF - AI Model",
+      "url": "https://aiglossary.xyz/models/bullerwins/Wan2.2-I2V-A14B-GGUF",
+      "snippet": "Wan2.2-I2V-A14B-GGUF is a image to video model fine-tuned from Wan-AI/Wan2.2-I2V-A14B hosted on Hugging Face. With 79K downloads and 297 likes, this model is well-suited for image-to-video tasks."
+    },
+    {
+      "title": "Wan2.2-I2V-A14B-GGUF · Models",
+      "url": "https://www.modelscope.cn/models/bullerwins/Wan2.2-I2V-A14B-GGUF",
+      "snippet": "In Wan2.2, the A14B model series adopts a two-expert design tailored to the denoising process of diffusion models: a high-noise expert for the early stages, focusing on overall layout; and a low-noise expert for the later stages, refining video details."
+    }
+  ]
+}

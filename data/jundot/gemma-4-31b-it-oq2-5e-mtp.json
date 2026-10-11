@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jundot/gemma-4-31B-it-oQ2.5e-mtp",
+  "slug": "jundot-gemma-4-31b-it-oq2-5e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/gemma-4-31B-it-oQ2.5e-mtp",
+  "created_at": "2026-10-11T15:19:46.000Z",
+  "updated_at": "2026-10-11T15:20:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31742607472,
+  "parameters_human": "31.74B",
+  "storage_bytes": 14605385179,
+  "storage_human": "14.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrendStory — AI Video Generator for TikTok, Reels & Shorts",
+      "url": "https://www.trendstory.io/en",
+      "snippet": "Everyone uses TrendStory ! Every viral video you see everywhere is made with TrendStory!"
+    },
+    {
+      "title": "TrendStory — Générateur de vidéos IA pour TikTok, Reels et Shorts",
+      "url": "https://www.trendstory.io/",
+      "snippet": "Tout le monde utilise TrendStory ! Toutes les vidéos virales que tu vois partout sont générées par TrendStory !"
+    },
+    {
+      "title": "TrendStory — Make it a story.",
+      "url": "https://trendstory.app/",
+      "snippet": "Choose a vibe, reimagine your photo, animate it, or make it something you can keep with TrendStory."
+    },
+    {
+      "title": "How TrendStory Works — Make it a story.",
+      "url": "https://trendstory.app/howto",
+      "snippet": "See how to upload a photo, choose a vibe, and make your own TrendStory creation."
+    },
+    {
+      "title": "Connexion — TrendStory",
+      "url": "https://www.trendstory.io/login",
+      "snippet": "Connecte-toi à ton compte TrendStory."
+    }
+  ]
+}

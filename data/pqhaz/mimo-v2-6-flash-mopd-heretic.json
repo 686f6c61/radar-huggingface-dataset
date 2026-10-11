@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pqhaz/MiMo-V2.6-Flash-MOPD-heretic",
+  "slug": "pqhaz-mimo-v2-6-flash-mopd-heretic",
+  "author": "pqhaz",
+  "url": "https://huggingface.co/pqhaz/MiMo-V2.6-Flash-MOPD-heretic",
+  "created_at": "2026-10-11T18:50:41.000Z",
+  "updated_at": "2026-10-11T19:13:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mimo_v2",
+    "mimo",
+    "abliterated",
+    "heretic",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 310756322688,
+  "parameters_human": "310.76B",
+  "storage_bytes": 180979450589,
+  "storage_human": "181.0 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-MOPD",
+      "snippet": "XiaomiMiMo / MiMo-V2.6-Flash-MOPD Like 6 Follow Xiaomi MiMo 4.68k Text Generation Transformers Safetensors English Chinese mimo_v2 multimodal vision-language audio agent video-understanding long-context conversational custom_code 8-bit precision fp8 License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "The MiMo-V2.6 series includes two natively omnimodal models: MiMo-V2.6-Pro is our most capable model to date, while MiMo-V2.6-Flash strikes the best balance between intelligence, efficiency, and cost."
+    },
+    {
+      "title": "MiMo-V2.6-Flash",
+      "url": "https://mimo.mi.com/models/en-US/mimo-v2.6-flash",
+      "snippet": "Monthly or annual plans covering mimo-v2.6-pro, mimo-v2.6-flash and the full MiMo V2.5 model suite — significantly better value than pay-as-you-go at high usage volumes."
+    },
+    {
+      "title": "Xiaomi Releases MiMo-V2.6-Flash-MOPD and Pro-MOPD Models",
+      "url": "https://localmodelwatch.tsuchitsuchi.com/en/2026/09/28/xiaomi-mimo-v2-6-mopd-models/",
+      "snippet": "XiaomiMiMo/MiMo-V2.6-Flash-MOPD - XiaomiMiMo/MiMo-V2.6-Pro-MOPD They are also noted as available via cloud services and GUI environments such as AI Studio, MiMo Code, Xiaomi MiMo Desktop, Xiaomi MiMo Open Platform API, and OpenRouter."
+    },
+    {
+      "title": "MiMo-V2.6-Flash-MOPD | Model library - baseten.co",
+      "url": "https://www.baseten.co/library/mimo-v26-flash-mopd/",
+      "snippet": "Xiaomi&#x27;s omnimodal 309B MoE for coding and agents, with 15B active, 1M-token context, and MOPD training to reduce repeated tool calls."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-r2-solo-20260905-3a5e892d",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-r2-solo-20260905-3a5e892d",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-safecombined-b1ga1-s12-r2-solo-20260905-3a5e892d",
+  "created_at": "2026-10-11T01:57:26.000Z",
+  "updated_at": "2026-10-11T02:46:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 655165755,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "snippet": "Microsoft Copilot is AI built to help you get things done. Create, brainstorm, learn, and solve problems with AI chat that works across your day."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world&#x27;s information, including webpages, images, videos and more. Google has many special features to help you find exactly what you&#x27;re looking for."
+    },
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "morealcholplz/vlsa-dual-safety-eval · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/morealcholplz/vlsa-dual-safety-eval",
+      "snippet": "Datasets: morealcholplz / vlsa-dual-safety-eval like 0 Modalities: Video Languages: English ArXiv: arxiv:2512.11891 Tags: robotics vlsa aegis control-barrier-function dual-arm safe-manipulation + 3 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community Dataset Preview API Embed Duplicate Data Studio Subset (1) results results Split (4) vlsa0_baseline vlsa0_baseline ..."
+    },
+    {
+      "title": "ESPN",
+      "url": "https://www.espn.com/mlb/scoreboard/_/date/20261011",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    }
+  ]
+}

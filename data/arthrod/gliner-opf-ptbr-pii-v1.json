@@ -5,7 +5,7 @@
   "author": "arthrod",
   "url": "https://huggingface.co/arthrod/gliner-opf-ptbr-pii-v1",
   "created_at": "2026-04-23T10:24:18.000Z",
-  "updated_at": "2026-10-10T22:47:16.000Z",
+  "updated_at": "2026-10-11T06:34:14.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -38,7 +38,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 62,
+  "downloads_30d": 71,
   "trending_score": 0,
   "parameters": 1399650672,
   "parameters_human": "1.40B",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "YuhongLiu/SpatialASM-NVG",
+  "slug": "yuhongliu-spatialasm-nvg",
+  "author": "YuhongLiu",
+  "url": "https://huggingface.co/YuhongLiu/SpatialASM-NVG",
+  "created_at": "2026-10-11T01:53:07.000Z",
+  "updated_at": "2026-10-11T02:35:50.000Z",
+  "license": "flux-non-conmercial-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:other",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 9078581248,
+  "parameters_human": "9.08B",
+  "storage_bytes": 34718251508,
+  "storage_human": "34.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YuhongLiu (Yuhong Liu) - Hugging Face",
+      "url": "https://huggingface.co/datasets/YuhongLiu/",
+      "snippet": "YuhongLiu&#x27;s datasets3 Sort: Recently updated YuhongLiu/SpatialASM-128k Updated about 2 hours ago• 19"
+    },
+    {
+      "title": "SpatialLM - manycore-research.github.io",
+      "url": "https://manycore-research.github.io/SpatialLM/",
+      "snippet": "SpatialLM is a large language model designed to process 3D point cloud data and generate structured scene descriptions."
+    },
+    {
+      "title": "GitHub - manycore-research/SpatialLM: [NeurIPS 2025] SpatialLM ...",
+      "url": "https://github.com/manycore-research/SpatialLM",
+      "snippet": "SpatialLM is a 3D large language model designed to process 3D point cloud data and generate structured 3D scene understanding outputs. These outputs include architectural elements like walls, doors, windows, and oriented object bounding boxes with their semantic categories. Unlike previous methods that require specialized equipment for data collection, SpatialLM can handle point clouds from ..."
+    },
+    {
+      "title": "‪Yuhong Liu‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=yQ8U3tUAAAAJ&hl=en",
+      "snippet": "‪Shanghai Jiao Tong University‬ - ‪‪Cited by 68‬‬ - ‪Large Language Model‬"
+    },
+    {
+      "title": "TorchMar (Yuhong Liu) - Hugging Face",
+      "url": "https://huggingface.co/TorchMar/models",
+      "snippet": "User profile of Yuhong Liu on Hugging Face"
+    }
+  ]
+}

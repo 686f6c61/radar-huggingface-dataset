@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-calib-20260904-1858-55dfa823",
+  "slug": "morealcholplz-kt-20261011-calib-20260904-1858-55dfa823",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-calib-20260904-1858-55dfa823",
+  "created_at": "2026-10-11T01:56:11.000Z",
+  "updated_at": "2026-10-11T02:37:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 654809461,
+  "storage_human": "655 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kamas Dofus - Achat Kamas Dofus Boune - IFLAMME",
+      "url": "https://www.iflamme.com/gold/dofus/boune",
+      "snippet": "Acheter Dofus Boune Kamas sur IFLAMME - 100% sécurisé, les tarifs les plus bas, et livraison rapide en 10 minutes ! Faites …"
+    },
+    {
+      "title": "Kamas Dofus - Acheter des kamas dofus, retro kamas pas cher",
+      "url": "https://www.lekamas.fr/kamas-dofus.htm",
+      "snippet": "Acheter des kamas dofus, dofus retro kamas. Stock disponible pour une livraison instantanée. Moins chère, sécurisée et rapide. …"
+    },
+    {
+      "title": "Marché Dofus | Achetez Dofus Comptes, Monnaie & Objets en Toute ...",
+      "url": "https://www.igv.com/fr/dofus",
+      "snippet": "3 days ago · Découvrez le marché Dofus sur iGVault. Achetez des comptes, devises et objets en toute confiance. Bénéficiez de …"
+    },
+    {
+      "title": "Acheter Kamas Dofus Retro Pas Cher, 100% Sécurisé | Try And Judge",
+      "url": "https://www.tryandjudge.com/fr/retro-kamas",
+      "snippet": "Comment acheter des kamas en sécurité ? Sur Try And Judge vous êtes sous couverture depuis la validation de votre commande …"
+    },
+    {
+      "title": "Acheter Kamas Dofus Retro : Livraison Express | Kamasitas",
+      "url": "https://kamasitas.fr/acheter-kamas-dofus-retro/",
+      "snippet": "Acheter des kamas Dofus Retro au meilleur prix sur Kamasitas. Stock garanti, paiement sécurisé et livraison en moins de 5 min sur …"
+    }
+  ]
+}

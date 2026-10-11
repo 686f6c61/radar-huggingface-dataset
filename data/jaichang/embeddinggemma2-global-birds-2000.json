@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jaichang/embeddinggemma2-global-birds-2000",
+  "slug": "jaichang-embeddinggemma2-global-birds-2000",
+  "author": "jaichang",
+  "url": "https://huggingface.co/jaichang/embeddinggemma2-global-birds-2000",
+  "created_at": "2026-10-11T01:53:41.000Z",
+  "updated_at": "2026-10-11T02:42:58.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "embeddinggemma-2",
+    "multimodal",
+    "audio",
+    "vision",
+    "birds",
+    "bioacoustics",
+    "zero-shot-classification",
+    "en",
+    "ko",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1542802429,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phloroglucinol : Uses, Side Effects, Interactions, Dosage ... - Pillintrip",
+      "url": "https://pillintrip.com/medicine/phloroglucinol",
+      "snippet": "Jan 10, 2026 · Medical information for Phloroglucinol including its dosage, uses, side, effects, interactions, pictures and warnings.Read more"
+    },
+    {
+      "title": "Viatris Phloroglucinol 160Mg 5 orodispersible tablets",
+      "url": "https://www.mon-pharmacien-conseil.com/en/digestion/17816-viatris-phloroglucinol-160mg-5-orodispersible-tablets.html",
+      "snippet": "PHLOROGLUCINOL VIATRIS belongs to a class of drugs known as antispasmodics. It acts against spasms (contractions). It is …"
+    },
+    {
+      "title": "Uses of Phloroglucinol - Vinmec",
+      "url": "https://www.vinmec.com/eng/blog/uses-of-phloroglucinol-en",
+      "snippet": "Dec 27, 2024 · Phloroglucinol is used to treat the symptoms of pain caused by dysfunction of the digestive tract, biliary tract, urinary …"
+    },
+    {
+      "title": "What is the recommended adult dose of phloroglucinol and when is a 160 ...",
+      "url": "https://www.droracle.ai/articles/1204968/what-is-the-recommended-adult-dose-of-phloroglucinol-and",
+      "snippet": "May 29, 2026 · The standard adult dose of phloroglucinol is 80 mg three times daily (total 240 mg/day), with 160 mg doses reserved …"
+    },
+    {
+      "title": "Phloroglucinol: Uses, Dosage, Side Effects, Food Interaction & FAQ",
+      "url": "https://www.medicinesfaq.com/brand/phloroglucinol",
+      "snippet": "Jan 7, 2025 · Phloroglucinol has been used in trials studying the diagnostic of Colonoscopy. Phloroglucinol is a spasmolytic agent to …"
+    }
+  ]
+}

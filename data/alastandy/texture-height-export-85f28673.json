@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "alastandy/texture-height-export-85f28673",
+  "slug": "alastandy-texture-height-export-85f28673",
+  "author": "alastandy",
+  "url": "https://huggingface.co/alastandy/texture-height-export-85f28673",
+  "created_at": "2026-10-11T18:08:44.000Z",
+  "updated_at": "2026-10-11T18:08:46.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "texture-studio-material",
+    "material-maps",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999361,
+  "parameters_human": "999361",
+  "storage_bytes": 4014540,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "break.com",
+      "url": "https://www.break.com/index/anchorfart.html",
+      "snippet": "Forsale Lander The simple, and safe way to buy domain names No matter what kind of domain you want to buy or lease, we make …Read more"
+    }
+  ]
+}

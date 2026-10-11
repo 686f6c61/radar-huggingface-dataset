@@ -5,7 +5,7 @@
   "author": "loom-ai-org",
   "url": "https://huggingface.co/loom-ai-org/vits-piper-en-gb-miro-loom",
   "created_at": "2026-08-11T12:13:56.000Z",
-  "updated_at": "2026-09-11T09:37:44.000Z",
+  "updated_at": "2026-10-10T20:29:31.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-to-speech",
@@ -25,12 +25,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 54,
+  "downloads_30d": 46,
   "trending_score": 0,
   "parameters": 15650682,
   "parameters_human": "15.7M",
-  "storage_bytes": 307864928,
-  "storage_human": "308 MB",
+  "storage_bytes": 370649984,
+  "storage_human": "371 MB",
   "base_model": "OpenVoiceOS/pipertts_en-GB_miro",
   "formats": [
     "gguf"

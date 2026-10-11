@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "llmware/slim-qwen-3.5-9b-boolean",
+  "slug": "llmware-slim-qwen-3-5-9b-boolean",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/slim-qwen-3.5-9b-boolean",
+  "created_at": "2026-10-11T18:41:24.000Z",
+  "updated_at": "2026-10-11T18:41:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is the largest model in the Qwen 3.5 Small Series and arguably the most impressive for what it hits relative to its size. At 9 billion parameters, it beats the previous generation&#x27;s Qwen3-30B on most language benchmarks and dominates GPT-5-Nano and Gemini-2.5-Flash-Lite on vision tasks by double-digit margins."
+    },
+    {
+      "title": "Qwen: Qwen3.5-9B - AI Model Details & Benchmarks",
+      "url": "https://benchable.ai/models/qwen/qwen3.5-9b-20260310",
+      "snippet": "Qwen3.5-9B, a multimodal foundation model from qwen, demonstrates a strong overall reliability with an 83% success rate across benchmarks, indicating consistent operational stability. However, its speed performance is a notable area for improvement, ranking in the 10th percentile, suggesting longer response times compared to peers."
+    },
+    {
+      "title": "Qwen3.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-9b",
+      "snippet": "The flagship of Alibaba&#x27;s small dense Qwen3.5 models. Independent analysis (Artificial Analysis) rated it the most intelligent model under 10B parameters at launch — roughly double the score of the next-closest sub-10B models — and the most intelligent multimodal model under 15B, leading peers on MMMU-Pro (~69%). A dense 9B with native vision, a 262K-token context, and the Qwen3.5 family&#x27;s ..."
+    },
+    {
+      "title": "Qwen3.5 9B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-9b",
+      "snippet": "AI infrastructure that developers love. Library / Qwen / Qwen3.5 9B Qwen3.5 9B Qwen3.5 9B is the largest of the four small dense models in Qwen&#x27;s natively multimodal Qwen3.5 family: a 9B-parameter vision-language model with thinking mode on by default, a 262K-token context extensible to 1M with YaRN, 201-language coverage, and open weights under Apache 2.0. Model"
+    },
+    {
+      "title": "Qwen3.5-9B - Model Info, Parameters, Benchmarks - SiliconFlow\"",
+      "url": "https://www.siliconflow.com/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a native multimodal large language model from the Qwen team with 9B parameters. As a lightweight dense model in the Qwen3.5 series, it features an efficient hybrid architecture combining Gated Delta Networks with Gated Attention, natively supporting a 262K context length extensible up to ~1M tokens. The model achieves unified vision-language capabilities through early fusion ..."
+    }
+  ]
+}

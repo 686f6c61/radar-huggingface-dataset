@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-smoke-6d811383",
+  "slug": "morealcholplz-kt-20261011-smoke-6d811383",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-smoke-6d811383",
+  "created_at": "2026-10-11T01:57:30.000Z",
+  "updated_at": "2026-10-11T02:51:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34516174748,
+  "storage_human": "34.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "morealcholplz (han nu ri kim) - Hugging Face",
+      "url": "https://huggingface.co/morealcholplz",
+      "snippet": "User profile of han nu ri kim on Hugging Face"
+    },
+    {
+      "title": "Models - Smoking Models",
+      "url": "https://www.smoking-models.com/tour/models/models.html",
+      "snippet": "Pictures Movies Models DVDs Custom Movies Links Discounts Model for us Buy Individual Movies Free Movies Model Services"
+    },
+    {
+      "title": "ESPN",
+      "url": "https://www.espn.com/nba/scoreboard/_/date/20261011",
+      "snippet": "We would like to show you a description here but the site won&#x27;t allow us."
+    },
+    {
+      "title": "SmokeCaster · Wildfire Smoke Forecast",
+      "url": "https://www.smokecaster.app/",
+      "snippet": "SmokeCaster — interactive wildfire smoke forecast. NOAA HRRR-Smoke and CAMS models, live fires, wind, and 3-day air quality playback."
+    },
+    {
+      "title": "Live Wildfire Smoke Map & Tracker | 2026",
+      "url": "https://wildfiresmap.com/smoke-map",
+      "snippet": "Interactive wildfire smoke map and tracker. Monitor near-real-time smoke plumes from NOAA and air quality sensors across the US."
+    }
+  ]
+}

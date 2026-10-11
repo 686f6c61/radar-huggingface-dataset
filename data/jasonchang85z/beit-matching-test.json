@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonchang85z/beit-matching-test",
+  "slug": "jasonchang85z-beit-matching-test",
+  "author": "jasonchang85z",
+  "url": "https://huggingface.co/jasonchang85z/beit-matching-test",
+  "created_at": "2026-10-11T01:57:57.000Z",
+  "updated_at": "2026-10-11T01:58:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jasonchang85z/beit-matching-test · Hugging Face",
+      "url": "https://huggingface.co/jasonchang85z/beit-matching-test",
+      "snippet": "Beit for Matching Overview This repository is a compact, custom PyTorch implementation of Beit for Matching. The small configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "JasonChangkip/beit-matching · Hugging Face",
+      "url": "https://huggingface.co/JasonChangkip/beit-matching",
+      "snippet": "A research-oriented Beit prototype targeting Matching. The included giant setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Detector - Free AI Checker for ChatGPT, GPT-6 & Gemini",
+      "url": "https://gptzero.me/",
+      "snippet": "Best free AI detector - simply paste your text to instantly get an overall AI score and advanced sentence by sentence detection."
+    },
+    {
+      "title": "Best AI Music Video Generator For Beat Matching in 2026:",
+      "url": "https://freebeat.ai/articles/best-ai-music-video-generator-for-beat-matching-in-2026",
+      "snippet": "Beat matching is the difference between a video that sits on top of a song and a video that feels built from the song. A good AI music video generator should detect timing, energy shifts, transitions, and emotional movement. This is especially important for creators publishing on YouTube, TikTok, Instagram, Spotify Canvas-style formats, or live performance visuals. Basic generators can create ..."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-20260919_eval_base5k_val-1e1c040f",
+  "slug": "morealcholplz-kt-20261011-20260919_eval_base5k_val-1e1c040f",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-20260919_eval_base5k_val-1e1c040f",
+  "created_at": "2026-10-11T01:58:25.000Z",
+  "updated_at": "2026-10-11T02:53:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 483583913,
+  "storage_human": "484 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antonio Gramsci - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Antonio_Gramsci",
+      "snippet": "Both his earlier experiences in Sardinia and his environment on the mainland shaped his worldview. Gramsci joined the Italian …Read more"
+    },
+    {
+      "title": "Karl Marx - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Karl_Marx",
+      "snippet": "Marx was privately educated by his father until 1830 when he entered the Gymnasium zu Trier [de], whose headmaster, Hugo …"
+    },
+    {
+      "title": "Antonio Gramsci Biography - Facts, Childhood, Family Life",
+      "url": "https://www.thefamouspeople.com/profiles/antonio-gramsci-8533.php",
+      "snippet": "Antonio Gramsci was as an Italian communist politician and Marxist philosopher. Check out this biography to know about his …"
+    },
+    {
+      "title": "Antonio Gramsci - New World Encyclopedia",
+      "url": "https://www.newworldencyclopedia.org/entry/Antonio_Gramsci",
+      "snippet": "He was a founding member and one-time leader of the Communist Party of Italy, imprisoned by Benito Mussolini 's Fascist regime. …"
+    },
+    {
+      "title": "Antonio Gramsci: The Revolutionary Thinker and His Legacy",
+      "url": "https://lettersfromtomis.com/2025/02/02/antonio-gramsci-the-revolutionary-thinker-and-his-legacy/",
+      "snippet": "Feb 2, 2025 · Antonio Gramsci (1891–1937) was an Italian Marxist philosopher known for his concept of cultural hegemony, …"
+    }
+  ]
+}

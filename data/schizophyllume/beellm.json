@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "schizophyllume/BeeLLM",
+  "slug": "schizophyllume-beellm",
+  "author": "schizophyllume",
+  "url": "https://huggingface.co/schizophyllume/BeeLLM",
+  "created_at": "2026-10-09T00:32:03.000Z",
+  "updated_at": "2026-10-11T10:41:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "bee",
+    "buzz",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 234,
+  "trending_score": 15,
+  "parameters": 10384,
+  "parameters_human": "10384",
+  "storage_bytes": 102336,
+  "storage_human": "102336 B",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schizophyllume/BeeLLM at main - Hugging Face",
+      "url": "https://huggingface.co/schizophyllume/BeeLLM/tree/main",
+      "snippet": "Lemonade How to use schizophyllume/BeeLLM with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Atomic Chat main BeeLLM 203 kB Ctrl+K Ctrl+K 1 contributor History:10 commits schizophyllume Update README.md d93fe20 verified2 days ago .gitattributes Safe 1.58 kBUpload 2 files2 days ago BeeLLM ..."
+    },
+    {
+      "title": "schizophyllume/BeeLLM · Hugging Face",
+      "url": "https://huggingface.co/schizophyllume/BeeLLM",
+      "snippet": "Model Details Bee LLM is a bee BeeLLM-30P - the original BeeLLM-42P - more expressive BeeLLM-42P-Chaos - chaos mode Developed by: skizy Funded by [optional]: skizy Shared by [optional]: skizy Model type: bee Language (s) (NLP): buzz License: Apache 2.0 Uses Buzzing and pollinating flowers Bias, Risks, and Limitations may sting Recommendations give flowers to pollinate and cheerful words How to ..."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "schizophyllume · GitHub",
+      "url": "https://github.com/schizophyllume/",
+      "snippet": "1 follower · 10 following https://schizophyllu.me/ Block or report user Block or report schizophyllume Block user pleromaBlogTemplate pleromaBlogTemplate Public"
+    },
+    {
+      "title": "BeLLM: Backward Dependency Enhanced Large Language Model ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/382629692_BeLLM_Backward_Dependency_Enhanced_Large_Language_Model_for_Sentence_Embeddings",
+      "snippet": "Download Citation | On Jan 1, 2024, Xianming Li and others published BeLLM: Backward Dependency Enhanced Large Language Model for Sentence Embeddings | Find, read and cite all the research you ..."
+    }
+  ]
+}

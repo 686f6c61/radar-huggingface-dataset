@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+  "slug": "huihui-ai-huihui-qwen3-8-27b-coder390-efficientthink-abliterated",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-Coder390-EfficientThink-abliterated",
+  "created_at": "2026-10-11T15:15:12.000Z",
+  "updated_at": "2026-10-11T15:22:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "qwen3",
+    "image-text-to-text",
+    "base_model:nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+    "base_model:finetune:nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huihui-ai (huihui.ai) - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai",
+      "snippet": "We are committed to the study of model ablations and collaborate with the open-source community to advance natural language …"
+    },
+    {
+      "title": "https://www.huihui.ink/ Collection for Wuthering Waves | WuWa …",
+      "url": "https://gamebanana.com/collections/169682",
+      "snippet": "https://www.huihui.ink/ - A Collection for Wuthering Waves. Wuthering Waves Collections https://www.huihui.ink/ Collection Overview …"
+    },
+    {
+      "title": "huihui_ai",
+      "url": "https://ollama.com/huihui_ai",
+      "snippet": "Huihui 3.5 is a family of models created by remixing and merging multiple Qwen3.5 models of the same size."
+    },
+    {
+      "title": "Hui站聊天室 – Telegram",
+      "url": "https://t.me/s/huihui168org?before=105",
+      "snippet": "Oct 8, 2025 · H站域名：www.huihui168.org VPN推荐：https://tmsretc.top/#/register?code=I9Gtg5RH"
+    },
+    {
+      "title": "huihui-ai/Huihui-Qwen3.8-27B-abliterated - Hugging Face",
+      "url": "https://huggingface.co/huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

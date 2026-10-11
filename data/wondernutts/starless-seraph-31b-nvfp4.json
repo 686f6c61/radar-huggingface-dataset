@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Wondernutts/Starless-Seraph-31B-NVFP4",
+  "slug": "wondernutts-starless-seraph-31b-nvfp4",
+  "author": "Wondernutts",
+  "url": "https://huggingface.co/Wondernutts/Starless-Seraph-31B-NVFP4",
+  "created_at": "2026-10-11T18:48:54.000Z",
+  "updated_at": "2026-10-11T18:52:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "roleplay",
+    "storytelling",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Cyclone-Labs/Starless-Seraph-31B",
+    "base_model:quantized:Cyclone-Labs/Starless-Seraph-31B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18460143972,
+  "parameters_human": "18.46B",
+  "storage_bytes": 20478994651,
+  "storage_human": "20.5 GB",
+  "base_model": "Cyclone-Labs/Starless-Seraph-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wondernutts/Starless-Seraph-31B-int4-ov · Hugging Face",
+      "url": "https://huggingface.co/Wondernutts/Starless-Seraph-31B-int4-ov",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Cyclone-Labs/Starless-Seraph-31B · Hugging Face",
+      "url": "https://huggingface.co/Cyclone-Labs/Starless-Seraph-31B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Run Starless-Seraph-31B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Cyclone-Labs/Starless-Seraph-31B",
+      "snippet": "Starless-Seraph-31B is a 31 billion parameter language model developed by Cyclone-Labs, created by merging several Gemma-4-31B-it variants using a custom method. This model is specifically optimized for creative applications, excelling in roleplay, creative writing, storytelling, and brainstorming with a strong atmospheric voice and vivid descriptions. It leverages a 32K context length to ..."
+    },
+    {
+      "title": "Starless Seraph 31B by Cyclone-Labs — VRAM 62.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Cyclone-Labs%2FStarless-Seraph-31B,43NLwtLBbpub6qE2NDaPjD",
+      "snippet": "Rank the Starless Seraph 31B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Starless-Seraph-31B API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/Cyclone-Labs/Starless-Seraph-31B",
+      "snippet": "Run Starless-Seraph-31B with FriendliAI inference. models."
+    }
+  ]
+}

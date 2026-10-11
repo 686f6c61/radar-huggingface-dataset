@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "morealcholplz/kt-20261011-optpilot-n1d7-baseline-b1ga1-s12-20260905-d5a16997",
+  "slug": "morealcholplz-kt-20261011-optpilot-n1d7-baseline-b1ga1-s12-20260905-d5a16997",
+  "author": "morealcholplz",
+  "url": "https://huggingface.co/morealcholplz/kt-20261011-optpilot-n1d7-baseline-b1ga1-s12-20260905-d5a16997",
+  "created_at": "2026-10-11T01:57:03.000Z",
+  "updated_at": "2026-10-11T02:43:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "United Arab Emirates - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_Arab_Emirates",
+      "snippet": "Following Britain's military departure from the UAE in 1971, and its establishment as a new state, the UAE laid claim to Iranian …Read more"
+    },
+    {
+      "title": "Home | The Official Portal of the UAE Government",
+      "url": "https://u.ae/en",
+      "snippet": "This video highlights the UAE as a combination of seven destinations and a blend of the old and the new. It highlights the UAE’s …"
+    },
+    {
+      "title": "Emirates of the United Arab Emirates - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Emirates_of_the_United_Arab_Emirates",
+      "snippet": "Ministry of Foreign Affairs Minister: Abdullah bin Zayed Al Nahyan Diplomatic missions of / in the UAE Nationality law Passport Visa …"
+    },
+    {
+      "title": "Émirats arabes unis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89mirats_arabes_unis",
+      "snippet": "En 1985, les Émirats arabes unis rejoignent la Fédération équestre internationale (FEI), puis ont formé leur propre fédération en …"
+    },
+    {
+      "title": "Khaleej Times - Dubai News, UAE News, Gulf, News, Latest news, …",
+      "url": "https://www.khaleejtimes.com/?botrequest=true",
+      "snippet": "14 hours ago · Khaleej Times provides the latest UAE news, Dubai headlines, world events, business updates, dubai gold prices, …"
+    }
+  ]
+}

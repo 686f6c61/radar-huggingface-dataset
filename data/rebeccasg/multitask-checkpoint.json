@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rebeccasg/multitask-checkpoint",
+  "slug": "rebeccasg-multitask-checkpoint",
+  "author": "rebeccasg",
+  "url": "https://huggingface.co/rebeccasg/multitask-checkpoint",
+  "created_at": "2026-10-11T01:47:10.000Z",
+  "updated_at": "2026-10-11T01:47:16.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model posing as a human sent cops fake lead on unsolved ...",
+      "url": "https://www.nzherald.co.nz/world/anthropic-ai-model-posed-as-a-human-to-send-cops-fake-lead-on-unsolved-case/IXMDP546ORBZBARUB76UQCXGCM/",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said on Friday, criticising the company for taking ..."
+    },
+    {
+      "title": "Multi-Task Learning(MTL) for Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/multi-task-learningmtl-for-deep-learning/",
+      "snippet": "Multi-Task Learning (MTL) is a machine learning approach where a single model learns multiple related tasks simultaneously using shared representations, improving generalization and reducing overfitting."
+    },
+    {
+      "title": "Sanders calls for criminal prosecution of AI CEOs after model ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/sanders-calls-for-criminal-prosecution-of-ai-ceos-after-model-submitted-a-false-homicide-tip-to-police/ar-AA2dY50D",
+      "snippet": "Two-time presidential candidate Bernie Sanders made the statement after news emerged that an Anthropic AI model sent the Philadelphia Police Department a fake tip about an unsolved murder case."
+    },
+    {
+      "title": "800+ Leading AI Benchmarks",
+      "url": "https://aimultiple.com/ai-benchmarks",
+      "snippet": "AI benchmarks by categories We listed the AI benchmarks based on their main categories. LLM benchmarks lead in terms of the largest number. AI benchmarks by subcategories Get our team to automate one of your business processes with AI agents, free of charge."
+    },
+    {
+      "title": "Multi-Task Fine-Tuning: Train One Model for Multiple Objectives in 2025",
+      "url": "https://markaicode.com/multi-task-fine-tuning-guide/",
+      "snippet": "Learn multi-task fine-tuning to train one AI model for multiple objectives. Reduce costs, improve efficiency, and build versatile models with our step-by-step guide."
+    }
+  ]
+}

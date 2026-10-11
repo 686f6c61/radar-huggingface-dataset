@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Ktwoailabs/project-sunrise-full",
+  "slug": "ktwoailabs-project-sunrise-full",
+  "author": "Ktwoailabs",
+  "url": "https://huggingface.co/Ktwoailabs/project-sunrise-full",
+  "created_at": "2026-10-11T18:33:00.000Z",
+  "updated_at": "2026-10-11T18:43:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27854794240,
+  "parameters_human": "27.85B",
+  "storage_bytes": 55767456992,
+  "storage_human": "55.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Destiny 2 Project Sunrise Is Bringing Vaulted Strikes Back",
+      "url": "https://gamingpromax.com/destiny-2-project-sunrise-strikes-content-vault-2026/",
+      "snippet": "Destiny 2&#x27;s fan-made Project Sunrise mod is now making content vault Strikes fully playable again, with Tree of Probabilities confirmed working including enemies, bosses, and full mechanics."
+    },
+    {
+      "title": "Moonshot AI models - Together AI",
+      "url": "https://www.together.ai/models-providers/moonshot-ai",
+      "snippet": "Deploy the latest Kimi models from Moonshot AI on Together AI. Million-token context, native vision, and frontier agentic coding via one API."
+    },
+    {
+      "title": "Installing Sunrise · Sunrise",
+      "url": "https://projectsunrise.dev/guides/installing/",
+      "snippet": "The launcher downloads the game, installs Sunrise and the mission scripts, and starts the game. It also repairs and updates an existing install, including one made with the old installer."
+    },
+    {
+      "title": "Kimi K2: The Original Open Model, and What to Use Now",
+      "url": "https://kimik2ai.com/k2/",
+      "snippet": "Kimi K2 Kimi K2 is the open model that put Moonshot AI on the map in July 2025. It was built for coding and for tasks where the AI works by itself with tools. Moonshot has since retired it from its own service, but anyone can still download and run it. Here is what it was, where it stands, and what to use today."
+    },
+    {
+      "title": "Build with leading AI models | Together AI",
+      "url": "https://www.together.ai/models",
+      "snippet": "Browse 200+ models for text, image, video, code, and audio — available via a unified API with serverless pay-per-token pricing."
+    }
+  ]
+}

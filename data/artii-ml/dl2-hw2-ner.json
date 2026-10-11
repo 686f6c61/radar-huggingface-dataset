@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "artii-ml/dl2-hw2-ner",
+  "slug": "artii-ml-dl2-hw2-ner",
+  "author": "artii-ml",
+  "url": "https://huggingface.co/artii-ml/dl2-hw2-ner",
+  "created_at": "2026-10-11T18:47:28.000Z",
+  "updated_at": "2026-10-11T18:54:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where can I watch Season 3 of Food Wars dubbed in English? : r",
+      "url": "https://www.reddit.com/r/ShokugekiNoSoma/comments/htfi67/where_can_i_watch_season_3_of_food_wars_dubbed_in/",
+      "snippet": "I gotchu, I use a new website called 9anime.to and it is WAYYYY better. Just thought I’d help out a bit Reply reply More replies …Read more"
+    },
+    {
+      "title": "9anime .to still safe? : r/9anime - Reddit",
+      "url": "https://www.reddit.com/r/9anime/comments/t7788i/9anime_to_still_safe/",
+      "snippet": "Mar 5, 2022 · I'm using 9anime. to and I had no problem with websites opening by itself. But today, when I tried to watch an anime …"
+    },
+    {
+      "title": "【至急】9animeってサイトは安全ですか？ - 安全だけど素人が使う …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13250169848",
+      "snippet": "Sep 29, 2021 · 【至急】9animeってサイトは安全ですか？ 安全だけど素人が使うと少し危ない事になる事もあるんじゃないかな"
+    },
+    {
+      "title": "9animeのサイトが今日閉鎖しました。久々に開いたらサイトが開か …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12234471947",
+      "snippet": "Nov 15, 2020 · 9animeのサイトが今日閉鎖しました。 久々に開いたらサイトが開かなくなっていて今日の日付が書かれていました …"
+    },
+    {
+      "title": "r/9anime on Reddit: \"9 Anime not working from India\", has been fixed ...",
+      "url": "https://www.reddit.com/r/9anime/comments/1475ucx/9_anime_not_working_from_india_has_been_fixed/",
+      "snippet": "Jun 11, 2023 · Since last few days 9anime was banned and could not be accessed from Indian ISP's. 9Anime has released a new …"
+    }
+  ]
+}

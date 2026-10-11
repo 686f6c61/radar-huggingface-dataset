@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Wondernutts/Fenrir-X-26B-A4B-NVFP4",
+  "slug": "wondernutts-fenrir-x-26b-a4b-nvfp4",
+  "author": "Wondernutts",
+  "url": "https://huggingface.co/Wondernutts/Fenrir-X-26B-A4B-NVFP4",
+  "created_at": "2026-10-11T18:52:37.000Z",
+  "updated_at": "2026-10-11T18:55:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "compressed-tensors",
+    "quantized",
+    "roleplay",
+    "storytelling",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Vortex5/Fenrir-X-26B-A4B",
+    "base_model:quantized:Vortex5/Fenrir-X-26B-A4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15094456522,
+  "parameters_human": "15.09B",
+  "storage_bytes": 16455638791,
+  "storage_human": "16.5 GB",
+  "base_model": "Vortex5/Fenrir-X-26B-A4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vortex5/Fenrir-X-26B-A4B · Hugging Face",
+      "url": "https://huggingface.co/Vortex5/Fenrir-X-26B-A4B",
+      "snippet": "Instructions to use Vortex5/Fenrir-X-26B-A4B with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use Vortex5/Fenrir-X-26B-A4B with Transformers:"
+    },
+    {
+      "title": "Fenrir X 26b A4b - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/vortex5/fenrir-x-26b-a4b",
+      "snippet": "Registry entry for model Fenrir X 26b A4b; source metadata pending."
+    },
+    {
+      "title": "Fenrir X 26B A4B by Vortex5 — VRAM 51.6GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Vortex5%2FFenrir-X-26B-A4B,8exzzUEl5k4mBGH2igJux",
+      "snippet": "Rank the Fenrir X 26B A4B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    },
+    {
+      "title": "Wondernutts (Wondernutts) - Hugging Face",
+      "url": "https://huggingface.co/Wondernutts",
+      "snippet": "Wondernutts/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-int4-ov. Updated 1 day ago • 6. datasets 0"
+    },
+    {
+      "title": "Run Fenrir-X-26B-A4B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/Vortex5/Fenrir-X-26B-A4B",
+      "snippet": "Fenrir-X-26B-A4B is a 26 billion parameter language model developed by Vortex5, created by merging five distinct Gemma-4-26B-A4B-it based models using a custom bsc merge method. This model is specifically optimized for creative applications, excelling in roleplay, creative writing, storytelling, and interactive fiction. Its architecture is designed to generate character-driven interactions ..."
+    }
+  ]
+}

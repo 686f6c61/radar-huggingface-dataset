@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DictionLabs/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
+  "slug": "dictionlabs-nemotron-3-5-asr-streaming-multilingual-0-6b-coreml",
+  "author": "DictionLabs",
+  "url": "https://huggingface.co/DictionLabs/Nemotron-3.5-ASR-Streaming-Multilingual-0.6b-CoreML",
+  "created_at": "2026-10-11T18:07:53.000Z",
+  "updated_at": "2026-10-11T18:08:14.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "fluidaudio",
+  "languages": [],
+  "tags": [
+    "fluidaudio",
+    "coreml",
+    "apple-silicon",
+    "ane",
+    "streaming-asr",
+    "rnnt",
+    "on-device",
+    "automatic-speech-recognition",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:finetune:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 662467578,
+  "storage_human": "662 MB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nemotron-asr-streaming Model by NVIDIA | NVIDIA NIM",
+      "url": "https://build.nvidia.com/nvidia/nemotron-asr-streaming/modelcard",
+      "snippet": "Nemotron 3 ASR is a 600-million-parameter streaming Automatic Speech Recognition (ASR) model engineered for high-quality English transcription across both low-latency streaming and high-throughput batch workloads. Developed by NVIDIA, it natively outputs punctuation and capitalization with no post-processing required."
+    },
+    {
+      "title": "Nemotron-3.5-ASR-Streaming-0.6B — 40 Locales, CoreML/MLX | Soniqo",
+      "url": "https://soniqo.audio/guides/nemotron",
+      "snippet": "Run NVIDIA&#x27;s nemotron-3.5-asr-streaming-.6b on-device — CoreML INT8 and MLX 4-bit bundles, 40 locales, streaming Swift code. Mac and Android, fully local."
+    },
+    {
+      "title": "Nemotron 3.5 ASR — real-time streaming speech-to-text",
+      "url": "https://github.com/tehtommeh/nemotron-asr-streaming/tree/main",
+      "snippet": "Self-hosted, GPU-accelerated streaming speech recognition built on nvidia/nemotron-3.5-asr-streaming-.6b — a multilingual (40 language-locales) cache-aware FastConformer-RNNT model. It ships as two containers: a FastAPI inference server on your GPU and a small web UI, so you can open a page on your phone or laptop and watch words appear as you speak. Clone it and run one script."
+    },
+    {
+      "title": "Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml · Hugging Face",
+      "url": "https://huggingface.co/Lorqa/nemotron-3.5-asr-streaming-multilingual-0.6b-coreml",
+      "snippet": "CoreML build of NVIDIA&#x27;s Nemotron 3.5 streaming ASR model, used by Lorqa for on-device live captions and audio transcripts on macOS and iOS. Runs on the Apple Neural Engine through the FluidAudio SDK."
+    },
+    {
+      "title": "framadhita/INT8-nemotron-3.5-asr-streaming-0.6b · Hugging Face",
+      "url": "https://huggingface.co/framadhita/INT8-nemotron-3.5-asr-streaming-0.6b",
+      "snippet": "This model is the multilingual extension of nvidia/nemotron-speech-streaming-en-.6b, adding language-ID prompt conditioning to support transcription across 40 language-locales from a single model. Nemotron 3.5 ASR is a multilingual, streaming Automatic Speech Recognition (ASR) model engineered to ..."
+    }
+  ]
+}
