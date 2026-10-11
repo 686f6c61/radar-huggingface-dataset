@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored-GGUF",
   "created_at": "2026-08-30T05:18:04.000Z",
-  "updated_at": "2026-08-30T12:28:48.000Z",
+  "updated_at": "2026-10-10T11:45:03.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 1628,
+  "downloads_30d": 1733,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

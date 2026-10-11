@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/B1-9B-GGUF",
   "created_at": "2026-09-06T14:50:07.000Z",
-  "updated_at": "2026-09-06T15:34:57.000Z",
+  "updated_at": "2026-10-11T00:01:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 663,
+  "downloads_30d": 716,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

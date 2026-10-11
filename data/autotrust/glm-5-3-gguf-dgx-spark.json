@@ -5,7 +5,7 @@
   "author": "autotrust",
   "url": "https://huggingface.co/autotrust/GLM-5.3-GGUF-DGX-Spark",
   "created_at": "2026-09-20T04:57:35.000Z",
-  "updated_at": "2026-09-21T17:24:57.000Z",
+  "updated_at": "2026-10-11T03:49:42.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Dark-Scarlett-v1.0-26B-A4B-GGUF",
   "created_at": "2026-08-23T05:00:11.000Z",
-  "updated_at": "2026-08-23T06:15:18.000Z",
+  "updated_at": "2026-10-10T11:45:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 862,
+  "downloads_30d": 1113,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-heretic-ja-GGUF",
   "created_at": "2026-08-23T08:05:48.000Z",
-  "updated_at": "2026-08-23T10:52:48.000Z",
+  "updated_at": "2026-10-10T16:10:38.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 637,
+  "downloads_30d": 783,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

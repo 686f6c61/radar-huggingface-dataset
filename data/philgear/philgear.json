@@ -5,7 +5,7 @@
   "author": "philgear",
   "url": "https://huggingface.co/philgear/philgear",
   "created_at": "2026-09-01T02:25:55.000Z",
-  "updated_at": "2026-09-18T20:47:43.000Z",
+  "updated_at": "2026-10-11T04:34:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,17 +14,6 @@
     "en"
   ],
   "tags": [
-    "peft",
-    "clinical-ai",
-    "health-informatics",
-    "gemma-3",
-    "lora",
-    "hipaa-safe-harbor",
-    "fhir-r4",
-    "webgpu",
-    "pocketgull",
-    "en",
-    "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,

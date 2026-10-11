@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Melody1437-31B-v1.1-GGUF",
   "created_at": "2026-08-23T12:46:32.000Z",
-  "updated_at": "2026-08-23T13:09:29.000Z",
+  "updated_at": "2026-10-10T21:43:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,7 +36,7 @@
     "not-for-all-audiences"
   ],
   "likes": 0,
-  "downloads_30d": 632,
+  "downloads_30d": 738,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

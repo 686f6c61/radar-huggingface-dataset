@@ -5,7 +5,7 @@
   "author": "jakeatx",
   "url": "https://huggingface.co/jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF",
   "created_at": "2026-09-03T14:53:21.000Z",
-  "updated_at": "2026-09-10T23:43:07.000Z",
+  "updated_at": "2026-10-11T06:34:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,12 +29,12 @@
     "conversational"
   ],
   "likes": 15,
-  "downloads_30d": 9433,
+  "downloads_30d": 9476,
   "trending_score": 10,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 46732805216,
-  "storage_human": "46.7 GB",
+  "storage_bytes": 46799914164,
+  "storage_human": "46.8 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

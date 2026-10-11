@@ -5,7 +5,7 @@
   "author": "knoopx",
   "url": "https://huggingface.co/knoopx/LuxTTS-GGUF",
   "created_at": "2026-09-17T15:01:23.000Z",
-  "updated_at": "2026-09-18T00:09:21.000Z",
+  "updated_at": "2026-10-10T15:05:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 92,
+  "downloads_30d": 95,
   "trending_score": 0,
   "parameters": 138686284,
   "parameters_human": "138.7M",
-  "storage_bytes": 754532096,
-  "storage_human": "755 MB",
+  "storage_bytes": 1509069440,
+  "storage_human": "1.5 GB",
   "base_model": "YatharthS/LuxTTS",
   "formats": [
     "gguf"
