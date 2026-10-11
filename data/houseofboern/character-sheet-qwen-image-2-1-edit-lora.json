@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "houseofboern/character-sheet-qwen-image-2.1-edit-lora",
+  "slug": "houseofboern-character-sheet-qwen-image-2-1-edit-lora",
+  "author": "houseofboern",
+  "url": "https://huggingface.co/houseofboern/character-sheet-qwen-image-2.1-edit-lora",
+  "created_at": "2026-10-10T19:44:32.000Z",
+  "updated_at": "2026-10-10T22:56:08.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "qwen-image",
+    "image-editing",
+    "character-sheet",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96541736,
+  "storage_human": "97 MB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why did leondon da vinci paint the lona Lisa? - Answers",
+      "url": "https://www.answers.com/art-and-architecture/Why_did_leondon_da_vinci_paint_the_lona_Lisa",
+      "snippet": "I don't know,. But Leonardo da vinci painted The Mona Lisa for Lisa del Giocondo who was the wife of a wealthy merchant. It was for …"
+    },
+    {
+      "title": "When did Leonardo Da Vinci paint the Mona Lisa? - Answers",
+      "url": "https://www.answers.com/art-and-architecture/When_did_Leonardo_Da_Vinci_paint_the_Mona_Lisa",
+      "snippet": "He painted it when he was alive! of course. No actually he painted it in the year December 15 1467."
+    },
+    {
+      "title": "Why did it take so long to paint the Mona Lisa? - Answers",
+      "url": "https://www.answers.com/history-ec/Why_did_it_take_so_long_to_paint_the_Mona_Lisa",
+      "snippet": "The painting of The Mona Lisa, created by Leonardo da vinci, spanned several years from around 1503 to 1517 due to a combination …"
+    },
+    {
+      "title": "What awards did da vinci won? - Answers",
+      "url": "https://www.answers.com/music-and-radio/What_awards_did_da_vinci_won",
+      "snippet": "Aug 29, 2023 · Leonardo da vinci won the World Award of Arts. He was born on April 15, 1452. Leonardo was an Italian …"
+    },
+    {
+      "title": "How frequently did Leonardo da Vinci paint? - Answers",
+      "url": "https://www.answers.com/art-and-architecture/How_frequently_did_Leonardo_da_Vinci_paint",
+      "snippet": "Leonardo da vinci painted relatively infrequently compared to other artists of his time, completing around 15 to 20 known paintings …"
+    }
+  ]
+}

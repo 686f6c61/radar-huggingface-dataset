@@ -5,7 +5,7 @@
   "author": "lilylilith",
   "url": "https://huggingface.co/lilylilith/QI_2.1_AnyAngle",
   "created_at": "2026-09-28T05:08:18.000Z",
-  "updated_at": "2026-09-29T15:07:50.000Z",
+  "updated_at": "2026-10-11T00:08:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -21,7 +21,7 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 156,
+  "likes": 158,
   "downloads_30d": 0,
   "trending_score": 40,
   "parameters": null,

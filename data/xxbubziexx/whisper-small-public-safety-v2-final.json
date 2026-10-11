@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "xxbubziexx/whisper-small-public-safety-v2-FINAL",
+  "slug": "xxbubziexx-whisper-small-public-safety-v2-final",
+  "author": "xxbubziexx",
+  "url": "https://huggingface.co/xxbubziexx/whisper-small-public-safety-v2-FINAL",
+  "created_at": "2026-10-10T22:23:45.000Z",
+  "updated_at": "2026-10-10T22:25:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "public-safety",
+    "police-radio",
+    "dispatch",
+    "ems",
+    "fire",
+    "scanscribe",
+    "en",
+    "base_model:sepiaapps/whisper-small.en-police-radio",
+    "base_model:finetune:sepiaapps/whisper-small.en-police-radio",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734144,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966992008,
+  "storage_human": "967 MB",
+  "base_model": "sepiaapps/whisper-small.en-police-radio",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": null,
+      "metric": "WER",
+      "value": 40.48
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gâteau aux trois laits — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A2teau_aux_trois_laits",
+      "snippet": "Ce gâteau est baigné et/ou composé de trois types différents de lait : du lait entier (ou de la crème), du lait concentré non sucré et du …"
+    },
+    {
+      "title": "Recette de gâteau tres leches aux trois laits - Ptitchef",
+      "url": "https://www.ptitchef.com/recettes/dessert/gateau-aux-trois-laits-tres-leches-fid-1564907",
+      "snippet": "Ce gâteau, originaire d’Amérique latine, allie à la perfection fondant et douceur. On dit souvent que c'est un Sponge cake (gâteau …"
+    },
+    {
+      "title": "Tres leches cake - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tres_leches_cake",
+      "snippet": "Tres leches cake consists of a standard cake base that is soaked in three kinds of milk (\" tres leches \" in Spanish). The milks used …"
+    },
+    {
+      "title": "Le gâteau aux trois laits “tres leches”, un pastel trop fondant !",
+      "url": "https://www.la-main-a-la-pate.fr/gateau-tres-leches/",
+      "snippet": "Apr 1, 2022 · Le gâteau aux trois laits est un gâteau particulièrement moelleux, fondant, crémeux et frais. C’est un grand dessert …"
+    },
+    {
+      "title": "Gâteau tres leches ou Génoise Imbibée aux 3 laits",
+      "url": "https://cuisinezavecdjouza.fr/gateau-tres-leches-genoise-aux-3-laits/",
+      "snippet": "Jul 23, 2024 · Ce dessert d’Amérique Latine, traditionnellement imbibé d’un mélange onctueux de trois laits (lait concentré sucré, lait …"
+    }
+  ]
+}

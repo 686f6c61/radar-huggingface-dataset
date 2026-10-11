@@ -5,7 +5,7 @@
   "author": "akatz-ai",
   "url": "https://huggingface.co/akatz-ai/MiniMax-H3-Person-Remover-LoRA",
   "created_at": "2026-10-08T04:00:03.000Z",
-  "updated_at": "2026-10-08T04:05:16.000Z",
+  "updated_at": "2026-10-10T07:43:33.000Z",
   "license": "minimax-h3-community-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": "video-to-video",

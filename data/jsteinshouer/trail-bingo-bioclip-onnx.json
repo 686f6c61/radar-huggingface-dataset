@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jsteinshouer/trail-bingo-bioclip-onnx",
+  "slug": "jsteinshouer-trail-bingo-bioclip-onnx",
+  "author": "jsteinshouer",
+  "url": "https://huggingface.co/jsteinshouer/trail-bingo-bioclip-onnx",
+  "created_at": "2026-10-10T18:41:40.000Z",
+  "updated_at": "2026-10-10T18:43:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "bioclip",
+    "biology",
+    "onnxruntime-web",
+    "zero-shot-image-classification",
+    "base_model:imageomics/bioclip",
+    "base_model:quantized:imageomics/bioclip",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300473003,
+  "storage_human": "300 MB",
+  "base_model": "imageomics/bioclip",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bloom | Creative AI Image Upscaler by Topaz Labs",
+      "url": "https://app.topazlabs.com/bloom",
+      "snippet": "Add detail, texture and upscale images with Bloom, a creative AI image upscaler by Topaz Labs."
+    },
+    {
+      "title": "Tools for AI Content Creators - Topaz Labs",
+      "url": "https://www.topazlabs.com/ai-creators",
+      "snippet": "Bloom is Topaz Labs' latest creative image upscaling tool. Bloom not only upscales images to higher resolutions, but it can add and …"
+    },
+    {
+      "title": "Topaz Bloom: How Good Is Topaz’s Creative Image Upscaling?",
+      "url": "https://www.aiarty.com/ai-image-enhancer/topaz-bloom.htm",
+      "snippet": "May 15, 2026 · Topaz Bloom is a creative AI image upscaler, not a traditional upscaling tool like Gigapixel AI. It uses diffusion-based …"
+    },
+    {
+      "title": "Topaz for Web Image - Online AI Image Enhancement Platform",
+      "url": "https://www.topazlabs.com/web/image",
+      "snippet": "Upscale, unblur, and perfect your photos with Topaz Image. AI-powered image enhancement in your browser with fast, unlimited …"
+    },
+    {
+      "title": "Topaz Bloom 2 — Image AI Model by Topaz Labs | Layer",
+      "url": "https://layer.ai/models/topaz-bloom-2-upscale-image",
+      "snippet": "Bloom 2 is Topaz Labs' creative image upscaler. It reinvents fine detail under an adjustable creativity control while optionally …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sovrasov/flux3_policy_black_cubes_20k_v2-ema",
+  "slug": "sovrasov-flux3_policy_black_cubes_20k_v2-ema",
+  "author": "sovrasov",
+  "url": "https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k_v2-ema",
+  "created_at": "2026-10-10T21:05:04.000Z",
+  "updated_at": "2026-10-10T21:05:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "flux3",
+    "dataset:sovrasov/pick-black-cubes-room-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7083922688,
+  "parameters_human": "7.08B",
+  "storage_bytes": 14365970024,
+  "storage_human": "14.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chloe Parker (@bunnybunny924) - Urlebird",
+      "url": "https://urlebird.com/user/bunnybunny924/",
+      "snippet": "Chloe Parker is a TikTok macro influencer with 1.33K videos and a good engagement rate 7.17%. They post 18 videos in month and …"
+    },
+    {
+      "title": "Videos of Chloe Parker on SUNOTI (2026) – SUNOTI",
+      "url": "https://sunoti.com/en/@chloeparker/videos/",
+      "snippet": "Watch videos of Chloe Parker, popular clips and featured content related to this profile."
+    },
+    {
+      "title": "The moment CHLOE PARKER had an unexpected slip-up live",
+      "url": "https://www.tiktok.com/@sameupload/video/7560121869261688119",
+      "snippet": "1008 Likes, TikTok video from sameupload (@sameupload): “The moment CHLOE PARKER had an unexpected slip-up live 😳👀 ️‍🩹 #fyp …"
+    },
+    {
+      "title": "Chloe (@Chloeparkerrrr) / X",
+      "url": "https://x.com/chloeparkerrrr",
+      "snippet": "Hi I’m Chloe🤗. Backup: @ chloeparke8391. What did you notice first? throwback!!!! Do you remember this pic? 🥹. Oh hey there 😁 I see …"
+    },
+    {
+      "title": "Chloe Parker Slip Up - Instagram",
+      "url": "https://www.instagram.com/popular/chloe-parker-slip-up/",
+      "snippet": "The internet is in shock — N3on and Chloe Parker have officially broken up after a wild stream where N3on couldn’t stop flirting with …"
+    }
+  ]
+}

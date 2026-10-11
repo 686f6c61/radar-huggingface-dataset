@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "frankenhack/Kivi-1.5B-LoRA",
+  "slug": "frankenhack-kivi-1-5b-lora",
+  "author": "frankenhack",
+  "url": "https://huggingface.co/frankenhack/Kivi-1.5B-LoRA",
+  "created_at": "2026-10-10T22:31:44.000Z",
+  "updated_at": "2026-10-10T22:31:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topic Disons Demain 3 Jours Gratuit Novembre 2020",
+      "url": "https://www.jeuxvideo.com/forums/42-51-64535556-1-0-1-0-disons-demain-3-jours-gratuit-novembre-2020.htm",
+      "snippet": "Oct 19, 2020 · J'ai envie de rencontrer des filles donc je vous demande un code promo pour avoir accès à Disons Demain durant 3 …Read more"
+    },
+    {
+      "title": "The Flashlight Ad - Case Studies - AdForum",
+      "url": "https://www.adforum.com/case-studies/the-flashlight-ad",
+      "snippet": "Jan 4, 2016 · A flashlight magazine To launch a new sort of flashlight, it has been decided to create a new sort of ad in a specific …"
+    },
+    {
+      "title": "Mod voix fr. intelligence artificielle m sur le forum Baldur's Gate 3 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-4526-76039077-1-0-1-0-mod-voix-fr-intelligence-artificielle-m.htm",
+      "snippet": "Jul 20, 2025 · Enfin on les entend disons. ShadowHeart et Karlach sont plutôt ratées (sur cet extrait, en tous cas), et on peut noter …"
+    },
+    {
+      "title": "Surprising Demo - Case Studies - AdForum",
+      "url": "https://www.adforum.com/case-studies/surprising-demo",
+      "snippet": "Sep 27, 2012 · Stunt operation to promote safe internet banking Passers-by are invited to entered a tent in a Belgian city. They meet …"
+    },
+    {
+      "title": "Topic Disons Demain 3 Jours Gratuit Août 2020 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-51-63764440-1-0-1-0-disons-demain-3-jours-gratuit-aout-2020.htm",
+      "snippet": "Jul 23, 2020 · J'ai envie de rencontrer des filles gratuitement donc je vous demande un code promo pour avoir accès à Disons …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "leok7v",
   "url": "https://huggingface.co/leok7v/supertonic",
   "created_at": "2026-10-02T19:07:50.000Z",
-  "updated_at": "2026-10-02T20:12:44.000Z",
+  "updated_at": "2026-10-11T01:16:58.000Z",
   "license": "openrail",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -91,8 +91,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 589011872,
-  "storage_human": "589 MB",
+  "storage_bytes": 590415264,
+  "storage_human": "590 MB",
   "base_model": "Supertone/supertonic-3",
   "formats": [
     "safetensors"

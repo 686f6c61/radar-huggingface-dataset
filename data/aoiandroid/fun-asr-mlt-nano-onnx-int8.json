@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/fun-asr-mlt-nano-onnx-int8",
+  "slug": "aoiandroid-fun-asr-mlt-nano-onnx-int8",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/fun-asr-mlt-nano-onnx-int8",
+  "created_at": "2026-10-10T19:03:26.000Z",
+  "updated_at": "2026-10-10T19:03:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "mirror",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1005308631,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prévisions météo détaillées à 15 jours pour Bruxelles",
+      "url": "https://www.meteo-bruxelles.be/previsions",
+      "snippet": "Consultez la météo à 15 jours à Bruxelles : températures jour par jour, risques de pluie, vent, et fiabilité des prévisions. Idéal pour …"
+    },
+    {
+      "title": "METEO BRUXELLES par Météo-France - Prévisions Météo …",
+      "url": "https://meteofrance.com/meteo-monde/bruxelles/2800866",
+      "snippet": "METEO FRANCE - Retrouvez les prévisions METEO BRUXELLES de Météo-France pour aujourd’hui, demain et jusqu’à 15 jours."
+    },
+    {
+      "title": "Météo à Bruxelles - IRM - KMI",
+      "url": "https://www.meteo.be/fr/bruxelles",
+      "snippet": "La météo à Bruxelles. Sélectionnez votre ville préférée pour des prévisions horaires jusqu’à 48h et journalières à 14 jours."
+    },
+    {
+      "title": "Météo Bruxelles – Prévisions à 15 jours fiables",
+      "url": "https://www.meteo-bruxelles.be/",
+      "snippet": "La tendance météo saisonnière est aussi fréquemment mise à jour. Ce site est avant tout un portail météo pour la région de …"
+    },
+    {
+      "title": "Météo Bruxelles 14 jours - Meteored France - Tameteo.com",
+      "url": "https://www.tameteo.com/meteo_Brussel-Europe-Belgique-Bruxelles--1-180398.html",
+      "snippet": "4 days ago · Météo Bruxelles - Prévisions météorologiques à 14 jours. Les données sur la météo: température, pluie/neige, vent, …"
+    }
+  ]
+}

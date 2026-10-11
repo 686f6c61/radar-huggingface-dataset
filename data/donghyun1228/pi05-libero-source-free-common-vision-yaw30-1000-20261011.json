@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011",
+  "slug": "donghyun1228-pi05-libero-source-free-common-vision-yaw30-1000-20261011",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-yaw30-1000-20261011",
+  "created_at": "2026-10-10T18:49:45.000Z",
+  "updated_at": "2026-10-10T18:50:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "openpi",
+    "pi05",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6143961199,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011",
+      "snippet": "The records directory includes the training plan, generation metadata, numeric source audit, raw/EMA comparison and export provenance. Use the same model config as that training plan. This is the51-leaf base checkpoint, before any separate source-wrist composition. Keep MuJoCo3.2.3 for LIBERO evaluation. Downloads last month -"
+    },
+    {
+      "title": "pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-dense-contact-d2-wrist-kd-yaw10-20261003",
+      "snippet": "pi0.5 LIBERO dense contact action-frame yaw 10 adaptation Final step 9999 of 10,000 updates of cumulative-average H=10 IDM and base-image/wrist-image/prompt representation KD (weights 1/1/0.25)."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Uncensored Open Source AI Models List A curated list of free, open-source AI models across categories — with no built-in content filtering or alignment restrictions."
+    },
+    {
+      "title": "MossyModels — Free YOLO and ONNX AI Models",
+      "url": "https://mossymodels.com/",
+      "snippet": "Free community library of YOLO and ONNX AI aimbot models for Fortnite, Valorant, Warzone, Apex Legends, CS2, and 40+ games. Download ONNX and PyTorch weights."
+    },
+    {
+      "title": "GitHub - Donghyun1228/LIBERO_view: Benchmarking Knowledge Transfer in ...",
+      "url": "https://github.com/Donghyun1228/LIBERO_view/tree/master/",
+      "snippet": "In contrast, LIBERO-100 consists of 100 manipulation tasks that require the transfer of entangled knowledge. LIBERO-100 is further splitted into LIBERO-90 for pretraining a policy and LIBERO-10 for testing the agent&#x27;s downstream lifelong learning performance."
+    }
+  ]
+}

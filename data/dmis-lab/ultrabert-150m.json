@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dmis-lab/UltraBERT-150M",
+  "slug": "dmis-lab-ultrabert-150m",
+  "author": "dmis-lab",
+  "url": "https://huggingface.co/dmis-lab/UltraBERT-150M",
+  "created_at": "2026-10-10T10:52:59.000Z",
+  "updated_at": "2026-10-10T19:59:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ultrabert",
+    "fill-mask",
+    "encoder",
+    "masked-language-modeling",
+    "long-context",
+    "custom_code",
+    "en",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/stack-edu",
+    "dataset:allenai/peS2o",
+    "dataset:LLM360/MegaMath",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:allenai/dolma",
+    "dataset:Open-Orca/FLAN",
+    "dataset:facebook/natural_reasoning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 189960960,
+  "parameters_human": "190.0M",
+  "storage_bytes": 765317538,
+  "storage_human": "765 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Su-27 Tail Stinger Explained: Inside the Flanker's Boom | MiGFlug",
+      "url": "https://migflug.com/afterburner/su-27-flanker-tail-stinger-boom-explained-brake-chute-flares/",
+      "snippet": "Oct 3, 2026 · The pointed end of the standard Su-27's stinger can house the brake parachute, according to the Aircraft Recognition …"
+    },
+    {
+      "title": "WTF are those \"tails\" on sukhoi fighters? : r/FighterJets - Reddit",
+      "url": "https://www.reddit.com/r/FighterJets/comments/wmhc1e/wtf_are_those_tails_on_sukhoi_fighters/",
+      "snippet": "Aug 12, 2022 · All the derivatives of Su-27 has the tail boom between the engine exhausts. In Su-27 and Su-30, the tail boom …"
+    },
+    {
+      "title": "Sukhoi Su-27 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sukhoi_Su-27",
+      "snippet": "On 7 July 1978, it crashed and killed the pilot; the aircraft exceeded its G limit and broke-up in flight after behaving unpredictably …"
+    },
+    {
+      "title": "Sukhoi Su-27 family - Aircraft Recognition Guide",
+      "url": "https://www.aircraftrecognitionguide.com/sukhoi-su-27-family",
+      "snippet": "The end of the fuselage extends beyond the exhausts, creating a so-called stinger tail, typical for most members of the Su-27 family. …"
+    },
+    {
+      "title": "Can someone please explain to me what purpose the tail on the ... - Reddit",
+      "url": "https://www.reddit.com/r/FighterJets/comments/bwmnwo/can_someone_please_explain_to_me_what_purpose_the/",
+      "snippet": "Jun 4, 2019 · It’s a tail boom, holds the drag shoot, fuel jettison outlet and flare/ chaf dispenser. This is true, however it gets longer on …"
+    }
+  ]
+}

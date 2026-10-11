@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "slug": "francesca9805-jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/jpn-100mb-after-wc-loglinear-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "created_at": "2026-10-10T19:47:16.000Z",
+  "updated_at": "2026-10-10T21:44:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238753647,
+  "storage_human": "7.2 GB",
+  "base_model": "francesca9805/ppt-wc-loglinear-newlex-jpn-after-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tetracycline (Antibiotics) Uses, Dosage, Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/tetracycline.html",
+      "snippet": "Aug 26, 2026 · Tetracycline is an antibiotic used to treat bacterial infections such as urinary tract infections, chlamydia and acne. …"
+    },
+    {
+      "title": "List of Tetracyclines + Uses, Types & Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/drug-class/tetracyclines.html",
+      "snippet": "Tetracyclines are a class of antibiotics that may be used to treat infections caused by microorganisms such as gram positive and …"
+    },
+    {
+      "title": "What does tetracycline look like? - Drugs.com",
+      "url": "https://www.drugs.com/image/tetracycline-images.html",
+      "snippet": "Tetracycline Pill Images Note: More than one picture of Tetracycline is shown below. This happens when a medicine is available in …"
+    },
+    {
+      "title": "Tetracycline - brand name list from Drugs.com",
+      "url": "https://www.drugs.com/ingredient/tetracycline.html",
+      "snippet": "Lists the various brand names available for medicines containing tetracycline. Find information on tetracycline use, treatment, drug …"
+    },
+    {
+      "title": "Tetracycline: Para qué sirve, Dosis y Efectos Secundarios",
+      "url": "https://www.drugs.com/mtm_esp/tetracycline.html",
+      "snippet": "Información para el paciente sobre Tetracycline: para qué sirve, dosis, efectos secundarios y cómo usar este medicamento."
+    }
+  ]
+}

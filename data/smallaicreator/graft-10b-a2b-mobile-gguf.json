@@ -5,7 +5,7 @@
   "author": "SmallAICreator",
   "url": "https://huggingface.co/SmallAICreator/GRAFT-10B-A2B-Mobile-GGUF",
   "created_at": "2026-10-08T16:42:50.000Z",
-  "updated_at": "2026-10-08T17:17:41.000Z",
+  "updated_at": "2026-10-10T14:33:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "imatrix"
   ],
   "likes": 0,
-  "downloads_30d": 6,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 10331932672,
   "parameters_human": "10.33B",

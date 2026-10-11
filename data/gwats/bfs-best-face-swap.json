@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "gwats/BFS-Best-Face-Swap",
+  "slug": "gwats-bfs-best-face-swap",
+  "author": "gwats",
+  "url": "https://huggingface.co/gwats/BFS-Best-Face-Swap",
+  "created_at": "2026-10-10T18:39:27.000Z",
+  "updated_at": "2026-10-10T18:39:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image",
+    "qwen-image-2.1",
+    "qwen-image-edit",
+    "face-swap",
+    "head-swap",
+    "body-swap",
+    "image-editing",
+    "comfyui",
+    "bfs",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:adapter:Qwen/Qwen-Image-2.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-11T02:04:17.596Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Swap Face - Deepfake Online - Videos, GIFs, and Photos",
+      "url": "https://duckduckgo.com/y.js?ad_domain=deepswap.ai&ad_provider=bingv7aa&ad_type=txad&click_metadata=Y15ZfKWAlhbi5ZRkd8csVy3HmpBkQWAKIJwBxKgmk8fGM9VTqGZM3wW7wWWe%2D_U%2DYEIdNDVZTpo1%2D5AbdNVgQw1m8ei6KqDLpwBrnWBT2SeJJf2X_als2FA9I1jufs175BuOPbmoelyHaFhIocX1p3hX5LD_URXDclt6PCZqe8Q.CwXWvHG7i4%2DEBqcB0a6wDg&rut=3f11e65779b9568bffebf57587075f57e63a34f6fedc11bbe3152175254854be&u3=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8uz_6z7Ge0MyUNqIkNz%2DBvzVUCUw%2DbiofqSYyAypfW2OqUG2fCFxHHjkbVMutzl_2evTj13pw_BMPHlJbcIguZaKJuYGyysRzRN8Yj6YWy__j9fpfLUgyiB_LbONRvjMQOuNpRIF7CWIflxRbFzZE5BxuQHG2_VbHg41pUmd6y5Q%2DT6K4XyZwEtf5p7mv2mqb35DNU3TauDubBoIUjNfVyhcUb5U%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuZGVlcHN3YXAuYWklMmYlM2Z1dG1fc291cmNlJTNkYmluZyUyNmNwX2lkJTNkNDQxMTY5ODk2JTI2bXNjbGtpZCUzZDQ4NzRjYzM3MmFjZDEwNTFlMWViYTZmZGI3MTllMmE3%26rlid%3D4874cc372acd1051e1eba6fdb719e2a7&vqd=4-250594731878493222245222410605112031497&iurl=%7B1%7DIG%3D05385DBC777C4D0BBB05618E4C696DA4%26CID%3D1D091DBD7981612109FF0A53788F60BA%26ID%3DDevEx%2C5044.1",
+      "snippet": "Make ridiculously realistic face swap videos with just a single selfie. Easy and fast. Do face swap online. Deepswap - Top face swap website. Create your own videos."
+    },
+    {
+      "title": "Bhavu02/BFS-Best-Face-Swap · Hugging Face",
+      "url": "https://huggingface.co/Bhavu02/BFS-Best-Face-Swap",
+      "snippet": "The BFS (Best Face Swap) LoRA series was created for Qwen Image Edit 2509/2511, Flux 2 Klein 4b/9b, and Krea 2, designed to perform high-fidelity face, head, and full-person swaps with natural tone blending and consistent lighting."
+    },
+    {
+      "title": "Alissonerdx/BFS-Best-Face-Swap · Hugging Face",
+      "url": "https://huggingface.co/Alissonerdx/BFS-Best-Face-Swap",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BFS: Best Face Swap - Models",
+      "url": "https://www.modelscope.cn/models/Alissonerdx/BFS-Best-Face-Swap/summary",
+      "snippet": "BFS: Best Face Swap BFS is a collection of LoRAs for face, head, and body replacement across Qwen Image 2.1, Qwen Image Edit 2509/2511, Flux 2 Klein, Krea 2, and experimental LTX-2 workflows."
+    },
+    {
+      "title": "BFS-Best-Face-Swap: Image-to-Image model — overview, use cases ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/bfs-best-face-swap-alissonerdx",
+      "snippet": "Overview BFS-Best-Face-Swap is a LoRA adapter series created by Alissonerdx that performs high-fidelity face and head swaps with natural tone blending and consistent lighting. The model works with Qwen Image Edit 2509/2511 and Flux 2 Klein 4b/9b base models. It consists of multiple versions designed for different replacement levels: Face V1 (face-only swaps), Head V1 through V5 (full head ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "salma414/dummy-model",
+  "slug": "salma414-dummy-model",
+  "author": "salma414",
+  "url": "https://huggingface.co/salma414/dummy-model",
+  "created_at": "2026-10-10T21:01:53.000Z",
+  "updated_at": "2026-10-10T21:01:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "salma414 (Salma Khaled) - Hugging Face",
+      "url": "https://huggingface.co/salma414/models",
+      "snippet": "User profile of Salma Khaled on Hugging Face"
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "aidiary/dummy-model · Hugging Face",
+      "url": "https://huggingface.co/aidiary/dummy-model",
+      "snippet": "Contribute a Model Card Downloads last month 0 Safetensors Model size 111M params Tensor type F32 ·"
+    },
+    {
+      "title": "AI Model Directory: 637 AI Models by Provider | Free.ai",
+      "url": "https://free.ai/models/",
+      "snippet": "Browse every AI model on Free.ai: 637 models organised by provider, covering chat, image, video, voice, code and more, with free daily tokens on every account."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    }
+  ]
+}

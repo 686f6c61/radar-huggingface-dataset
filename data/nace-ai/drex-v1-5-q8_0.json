@@ -5,7 +5,7 @@
   "author": "nace-ai",
   "url": "https://huggingface.co/nace-ai/drex-v1.5-Q8_0",
   "created_at": "2026-10-09T22:06:13.000Z",
-  "updated_at": "2026-10-09T23:05:40.000Z",
+  "updated_at": "2026-10-10T11:36:05.000Z",
   "license": "nace-ai-open-rail-m",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -24,7 +24,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 0,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 8955900929,
   "parameters_human": "8.96B",

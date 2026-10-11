@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dangerousmanleebyeonggeon/lateon-specter-hardneg-n10573-e1-ckpt82",
+  "slug": "dangerousmanleebyeonggeon-lateon-specter-hardneg-n10573-e1-ckpt82",
+  "author": "dangerousmanleebyeonggeon",
+  "url": "https://huggingface.co/dangerousmanleebyeonggeon/lateon-specter-hardneg-n10573-e1-ckpt82",
+  "created_at": "2026-10-10T22:16:45.000Z",
+  "updated_at": "2026-10-10T22:16:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:10573",
+    "loss:Contrastive",
+    "arxiv:1908.10084",
+    "base_model:lightonai/LateOn",
+    "base_model:finetune:lightonai/LateOn",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 615344304,
+  "storage_human": "615 MB",
+  "base_model": "lightonai/LateOn",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Best Free Porn Videos",
+      "url": "https://onlybestporn.com/",
+      "snippet": "Scroll through the best porn videos out there! No matter your tastes, you'll love every single video in this site. Find new fetishes and …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Pornicom - Tube porno HD & vidéos de sexe XXX",
+      "url": "https://fr.pornicom.com/",
+      "snippet": "Profitez de milliers de vidéos pour adultes explicites en HD & 4K gratuitement. Diffusez de nouveaux clips XXX en ligne, regardez du …"
+    }
+  ]
+}

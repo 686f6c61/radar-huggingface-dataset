@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "prabanta-dev/Qwen3-4B-JNS",
+  "slug": "prabanta-dev-qwen3-4b-jns",
+  "author": "prabanta-dev",
+  "url": "https://huggingface.co/prabanta-dev/Qwen3-4B-JNS",
+  "created_at": "2026-10-11T00:09:16.000Z",
+  "updated_at": "2026-10-11T01:30:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "janas",
+    "jns",
+    "local-inference",
+    "cpu-inference",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:quantized:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4995506176,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prabanta-dev (prabanta-dev ) - Hugging Face",
+      "url": "https://huggingface.co/prabanta-dev",
+      "snippet": "AI & ML interests Janas-LLM: 37 tok/s from Qwen3-Next-80B on a 32 GB laptop (24 without drafts; llama.cpp on the same laptop: 2.8). Pure-C inference for LLMs bigger than your RAM, CPU or GPU."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - prabanta-dev/janas: Janas-LLM: large mixture-of-experts ...",
+      "url": "https://github.com/prabanta-dev/janas",
+      "snippet": "The GPU support is correct, bit for bit, and it pays where it was measured: on the development laptop&#x27;s integrated GPU a dense model whose weights all fit in memory reads a prompt about 29% faster (Qwen3-4B, 83 to 107 tokens/s), and on an RTX 5080 (issue #15) Qwen3-4B read 13% faster and, with the GPU on single tokens too, replied 11-16% faster."
+    },
+    {
+      "title": "Qwen3-4B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_4b",
+      "snippet": "Qwen3-4B State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. The Qwen3‑4B is a state‑of‑the‑art multilingual base language model with 4 billion parameters, excelling in language understanding, generation, coding, and mathematics."
+    },
+    {
+      "title": "Qwen3-4B Model Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/qwen3-4b-model",
+      "snippet": "Qwen3-4B is a dense, open-source large language model with 4B parameters that advances architecture, multilingual skills, and adaptive reasoning. It employs a modified Transformer design featuring RoPE, RMSNorm, SwiGLU, and GQA to optimize performance and efficiency in text generation and retrieval tasks. Pretrained on 36 trillion tokens across 119 languages, Qwen3-4B supports robust ..."
+    }
+  ]
+}

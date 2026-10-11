@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Candy_Lustre_Anima",
+  "slug": "aixfunestudio-candy_lustre_anima",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Candy_Lustre_Anima",
+  "created_at": "2026-10-10T23:59:14.000Z",
+  "updated_at": "2026-10-11T00:41:56.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4726075208,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/models",
+      "snippet": "User profile of AIxFun eStudio on Hugging Face"
+    },
+    {
+      "title": "AIxFuneStudio AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/aixfunestudio",
+      "snippet": "Browse AI models attributed to AIxFuneStudio, sourced from verified model catalogs."
+    },
+    {
+      "title": "AIxFuneStudio/Anima_Based_2.0 at main - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Anima_Based_2.0/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Candy - AI Art Model | PixAI",
+      "url": "https://pixai.art/en/model/1887512727541917317",
+      "snippet": "Generate stunning anime art with the &#x27;Candy&#x27; model on PixAI. Browse artworks made with this model and try it free."
+    },
+    {
+      "title": "Lustre-3D Illustrious AI Art Model | 3DCG, Blender | PixAI",
+      "url": "https://pixai.art/en/model/1994441116738154295",
+      "snippet": "💎 Lustre-3D Illustrious: The Ultimate High-Gloss 3D Anime ModelLustre-3D Illustrious is a specialized checkpoint designed to bridge the gap between high-end 3D rendering and stylized anime aesthetics. It brings unparalleled depth, cinematic lighting, and a signature \"high-gloss\" finish that makes every generation look like a premium figurine or a high-budget CGI render.Whether you are ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "latentdivergence/realvis51-inpaint-npu-8elitegen5",
+  "slug": "latentdivergence-realvis51-inpaint-npu-8elitegen5",
+  "author": "latentdivergence",
+  "url": "https://huggingface.co/latentdivergence/realvis51-inpaint-npu-8elitegen5",
+  "created_at": "2026-10-10T18:52:55.000Z",
+  "updated_at": "2026-10-10T18:53:09.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "stable-diffusion",
+    "inpainting",
+    "qnn",
+    "hexagon",
+    "npu",
+    "base_model:Uminosachi/realisticVisionV51_v51VAE-inpainting",
+    "base_model:quantized:Uminosachi/realisticVisionV51_v51VAE-inpainting",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1930663115,
+  "storage_human": "1.9 GB",
+  "base_model": "Uminosachi/realisticVisionV51_v51VAE-inpainting",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "latentdivergence/realvis51-inpaint-int8-onnx · Hugging Face",
+      "url": "https://huggingface.co/latentdivergence/realvis51-inpaint-int8-onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · latentdivergence/realvis51-inpaint-int8-onnx at main",
+      "url": "https://huggingface.co/latentdivergence/realvis51-inpaint-int8-onnx/blob/main/README.md",
+      "snippet": "/ realvis51-inpaint-int8-onnx like 0 Text-to-Image ONNX stable-diffusion int8 quantized mobile License:creativeml-openrail-m Model card FilesFiles and versions xet Community Copy to bucket new main realvis51-inpaint-int8-onnx /README.md latentdivergence Add files using upload-large-folder tool e88bf97 verifiedabout 1 month ago preview code ..."
+    },
+    {
+      "title": "Realistic Vision V5.1 3 API | Text to Image | ModelsLab",
+      "url": "https://modelslab.com/models/modelslab/realistic-inpaint",
+      "snippet": "Try Realistic Vision V5.1 3 in your browser. Generate AI content instantly with no code required. Plans from $21/month."
+    },
+    {
+      "title": "realistic-vision-v5-inpainting: Image-to-Image model — overview, use ...",
+      "url": "https://www.aimodels.fyi/models/replicate/realistic-vision-v5-inpainting-lucataco",
+      "snippet": "Overview realistic-vision-v5-inpainting performs targeted image inpainting using the Realistic Vision V5.0 model, allowing you to fill masked regions of an image with AI-generated content that matches the surrounding context and follows a text prompt. Built and maintained by lucataco, this implementation wraps the SG161222/Realistic_Vision_V5.0_noVAE model as a containerized Cog application ..."
+    },
+    {
+      "title": "Realistic Vision V6.0 B1 - V5.1-inpainting (VAE) - Civitai",
+      "url": "https://civitai.com/models/4201?modelVersionId=130090",
+      "snippet": "Check my exclusive models on Mage: ParagonXL / NovaXL / NovaXL Lightning / NovaXL V2 / NovaXL Pony / NovaXL Pony Lightning / RealDreamXL / RealDreamXL Lightning Recommendations for using the Hyper model: Sampler = DPM SDE++ Karras or another / 4-6+ steps CFG Scale = 1.5-2.0 (the lower the value, the more mutations, but the less contrast) I also recommend using ADetailer for generation (some ..."
+    }
+  ]
+}

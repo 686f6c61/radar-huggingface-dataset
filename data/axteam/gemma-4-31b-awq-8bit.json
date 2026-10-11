@@ -5,7 +5,7 @@
   "author": "axteam",
   "url": "https://huggingface.co/axteam/gemma-4-31B-AWQ-8bit",
   "created_at": "2026-10-10T17:13:15.000Z",
-  "updated_at": "2026-10-10T17:24:38.000Z",
+  "updated_at": "2026-10-11T00:56:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

@@ -5,7 +5,7 @@
   "author": "nomeda-lab",
   "url": "https://huggingface.co/nomeda-lab/qarar",
   "created_at": "2026-10-08T23:43:00.000Z",
-  "updated_at": "2026-10-09T00:50:19.000Z",
+  "updated_at": "2026-10-10T18:54:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 9,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 147985156,
   "parameters_human": "148.0M",

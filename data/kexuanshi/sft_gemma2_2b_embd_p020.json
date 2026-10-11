@@ -5,7 +5,7 @@
   "author": "KexuanShi",
   "url": "https://huggingface.co/KexuanShi/sft_gemma2_2b_embd_p020",
   "created_at": "2026-10-10T15:41:06.000Z",
-  "updated_at": "2026-10-10T15:50:29.000Z",
+  "updated_at": "2026-10-10T15:59:11.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 2614341888,
   "parameters_human": "2.61B",
-  "storage_bytes": 26178272114,
-  "storage_human": "26.2 GB",
+  "storage_bytes": 52322175579,
+  "storage_human": "52.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "prabanta-dev/Qwen3.5-9B-JNS",
+  "slug": "prabanta-dev-qwen3-5-9b-jns",
+  "author": "prabanta-dev",
+  "url": "https://huggingface.co/prabanta-dev/Qwen3.5-9B-JNS",
+  "created_at": "2026-10-11T00:11:47.000Z",
+  "updated_at": "2026-10-11T01:30:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "janas",
+    "jns",
+    "local-inference",
+    "cpu-inference",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5828759552,
+  "storage_human": "5.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prabanta-dev/Qwen3.5-9B-JNS · Hugging Face",
+      "url": "https://huggingface.co/prabanta-dev/Qwen3.5-9B-JNS",
+      "snippet": "prabanta-dev / Qwen3.5-9B-JNS Like 0 Follow prabanta-dev 1 Text Generation janas jns local-inference cpu-inference License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Qwen3.5-9B for Janas Get it Files What was changed Licence and attribution"
+    },
+    {
+      "title": "prabanta-dev (prabanta-dev ) - Hugging Face",
+      "url": "https://huggingface.co/prabanta-dev",
+      "snippet": "AI & ML interests Janas-LLM: 37 tok/s from Qwen3-Next-80B on a 32 GB laptop (24 without drafts; llama.cpp on the same laptop: 2.8). Pure-C inference for LLMs bigger than your RAM, CPU or GPU."
+    },
+    {
+      "title": "Qwen3.5 9B — AI Model Radar",
+      "url": "https://aimodelradar.app/models/qwen3-5-9b",
+      "snippet": "Qwen3.5-9B is a 9-billion-parameter open-weights multimodal model from Alibaba&#x27;s Qwen family, supporting both text and image inputs. The model features a unified vision-language architecture with early fusion of multimodal tokens, enabling reasoning across text and images in a single context. It is available under the Apache 2.0 license and released on March 10, 2026."
+    },
+    {
+      "title": "Qwen3.5-9B - AI Model | Apertis AI",
+      "url": "https://apertis.ai/models/qwen3.5-9b",
+      "snippet": "Qwen3.5-9B is a multimodal foundation model from the Qwen3.5 family, built to deliver strong reasoning, coding, and visual understanding within an efficient 9B-parameter architecture. It adopts a unified vision-language design with early fusion of multimodal tokens, enabling the model to process and reason across text and images within the same context. With balanced multimodal capability and ..."
+    },
+    {
+      "title": "Qwen3.5 9B API - Demo - DeepInfra",
+      "url": "https://deepinfra.com/Qwen/Qwen3.5-9B",
+      "snippet": "Qwen3.5-9B is a high-performance model from Alibaba&#x27;s Qwen3.5 series with a hybrid Gated Delta Networks and sparse MoE architecture. It features a 262K token context window, thinking/reasoning mode, tool calling, multi-token prediction, and support for 201 languages. Excels at reasoning, coding, instruction following, and long-context tasks.. Try out API on the Web"
+    }
+  ]
+}

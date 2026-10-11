@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-7b-instruct-auto_gptq-int8-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym",
+  "created_at": "2026-10-10T20:45:33.000Z",
+  "updated_at": "2026-10-10T20:46:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "8-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-7B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2599044096,
+  "parameters_human": "2.60B",
+  "storage_bytes": 10188455088,
+  "storage_human": "10.2 GB",
+  "base_model": "tiiuae/Falcon3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym",
+      "snippet": "Note: this INT8 version of Falcon3 7B Instruct has been quantized for inference on Intel CPU, Intel iGPU (Arc) via intel-extension-for-pytorch, Intel NPU (AI Boost on Core Ultra series) via OpenVINO."
+    },
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int8-gs128-asym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int8-gs128-asym",
+      "snippet": "/ tiiuae_Falcon3-7B-Instruct-autogptq-int8-gs128-asym like 0 Text Generation Transformers Safetensors PyTorch 4 languages llama causal-lm autoround auto-round intel-autoround woq autogptq auto-gptq gptq intel falcon3 conversational text-generation-inference 8-bit precision License:falcon-llm-license Model card FilesFiles and versions Community ..."
+    },
+    {
+      "title": "Falcon3-7B-Instruct - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/falcon_v3_7b_instruct",
+      "snippet": "Falcon3-7B-Instruct State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. Falcon3 family of Open Foundation Models is a set of pretrained and instruct LLMs ranging from 1B to 10B."
+    },
+    {
+      "title": "tiiuae/Falcon3-7B-Instruct: Model synced from source: tiiuae/Falcon3-7B ...",
+      "url": "https://dev.modelhub.org.cn/tiiuae/Falcon3-7B-Instruct",
+      "snippet": "This repository contains the Falcon3-7B-Instruct. It achieves state of art results (at the time of release) on reasoning, language understanding, instruction following, code and mathematics tasks. Falcon3-7B-Instruct supports 4 languages (english, french, spanish, portuguese) and a context length up to 32K."
+    },
+    {
+      "title": "tiiuae_Falcon3-7B-Instruct-autoround-int8-gs128-asym",
+      "url": "https://friendli.ai/models/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoround-int8-gs128-asym",
+      "snippet": "Request reserved instances Model provider fbaldassarri Model tree Base tiiuae/Falcon3-7B-Instruct Quantized this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Serverless Endpoints Dedicated Endpoints Container More information Model card"
+    }
+  ]
+}

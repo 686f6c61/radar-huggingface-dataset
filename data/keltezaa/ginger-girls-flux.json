@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Keltezaa/ginger-girls-flux",
+  "slug": "keltezaa-ginger-girls-flux",
+  "author": "Keltezaa",
+  "url": "https://huggingface.co/Keltezaa/ginger-girls-flux",
+  "created_at": "2025-01-18T05:27:47.000Z",
+  "updated_at": "2026-10-10T23:07:42.000Z",
+  "license": "bespoke-lora-trained-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "lora",
+    "template:sd-lora",
+    "migrated",
+    "style",
+    "base_model:black-forest-labs/FLUX.1-dev",
+    "base_model:adapter:black-forest-labs/FLUX.1-dev",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613045152,
+  "storage_human": "613 MB",
+  "base_model": "black-forest-labs/FLUX.1-dev",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Jessup Competition | White & Case LLP",
+      "url": "https://www.whitecase.com/responsible-business/educating-future-leaders/jessup",
+      "snippet": "White & Case is the Global Partner of the Philip C. Jessup International Law Moot Court Competition. With more than 3,500 law …Read more"
+    },
+    {
+      "title": "The 66th Jessup sees record participation around the world",
+      "url": "https://www.whitecase.com/news/press-release/66th-jessup-sees-record-participation-around-world",
+      "snippet": "Jan 30, 2025 · Global law firm White & Case LLP announced that 805 teams representing 104 jurisdictions are registered to …"
+    },
+    {
+      "title": "Jessup 2025 - International Law Students Association",
+      "url": "https://www.ilsa.org/jessup-year/jessup-2025/",
+      "snippet": "Jessup Problem: The Case Concerning the Naegea Sea (Ambrosia v. Rovinia) Location: Hyatt Regency on Capitol Hill, Washington, …"
+    },
+    {
+      "title": "Jessup White & Case LLP - Facebook",
+      "url": "https://www.facebook.com/WhiteCaseJessup/",
+      "snippet": "Sep 22, 2026 · From the Jessup competition to global legal careers: White & Case partner Dipen Sabharwal KC and international …"
+    },
+    {
+      "title": "Jessup Cup Award - history.whitecase.com",
+      "url": "https://history.whitecase.com/jessup-cup-award",
+      "snippet": "White & Case is a champion and official sponsor of the Philip C. Jessup International Law Moot Court Competition."
+    }
+  ]
+}

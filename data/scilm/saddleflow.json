@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SciLM/SaddleFlow",
+  "slug": "scilm-saddleflow",
+  "author": "SciLM",
+  "url": "https://huggingface.co/SciLM/SaddleFlow",
+  "created_at": "2026-10-10T23:03:33.000Z",
+  "updated_at": "2026-10-10T23:04:14.000Z",
+  "license": "fair-chemistry-license-v1",
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": "saddleflow",
+  "languages": [],
+  "tags": [
+    "saddleflow",
+    "safetensors",
+    "saddleflow-unconditional",
+    "chemistry",
+    "materials-science",
+    "transition-states",
+    "saddle-points",
+    "flow-matching",
+    "uma",
+    "other",
+    "dataset:SciLM/MaterialsSaddles",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1397189958,
+  "parameters_human": "1.40B",
+  "storage_bytes": 5588808284,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers.Read more"
+    },
+    {
+      "title": "Witchcraft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Witchcraft",
+      "snippet": "Witch hunts took place among Christian European settlers in colonial America and the United States, most infamously the Salem …"
+    },
+    {
+      "title": "Witch (word) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Witch_(word)",
+      "snippet": "In literature, a 'witch' can now simply refer to an alluring woman capable of 'bewitching' others. In neopagan religions such as Wicca …"
+    },
+    {
+      "title": "W.I.T.C.H. — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/W.I.T.C.H.",
+      "snippet": "Leur nom de groupe vient de leurs initiales qui est un jeu de mots avec witch, qui signifie sorcière en anglais."
+    },
+    {
+      "title": "W.I.T.C.H. FR - YouTube",
+      "url": "https://www.youtube.com/@witchfr",
+      "snippet": "Pour les nostalgiques de l'adaptation de la bande dessinée W.I.T.C.H. en série TV ! Retrouvez les aventures des Gardiennes Will, …"
+    }
+  ]
+}

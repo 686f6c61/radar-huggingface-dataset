@@ -5,7 +5,7 @@
   "author": "laion",
   "url": "https://huggingface.co/laion/Alexandria-Gemma-4-12B-it-Qwen27-Summaries-LoRA-r64",
   "created_at": "2026-10-09T23:23:10.000Z",
-  "updated_at": "2026-10-09T23:24:12.000Z",
+  "updated_at": "2026-10-10T12:04:35.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,11 +33,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1117173922,
+  "storage_bytes": 1117224167,
   "storage_human": "1.1 GB",
   "base_model": "google/gemma-4-12B-it",
   "formats": [

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "smurgai/hw1-qwen25-dpo-lora",
+  "slug": "smurgai-hw1-qwen25-dpo-lora",
+  "author": "smurgai",
+  "url": "https://huggingface.co/smurgai/hw1-qwen25-dpo-lora",
+  "created_at": "2026-10-10T20:49:49.000Z",
+  "updated_at": "2026-10-10T20:49:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15801473,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qwen25-dpo-lora-adapter API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/August-GKD/qwen25-dpo-lora-adapter",
+      "snippet": "Deploy qwen25-dpo-lora-adapter with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "August-GKD/qwen25-dpo-lora-adapter · Hugging Face",
+      "url": "https://huggingface.co/August-GKD/qwen25-dpo-lora-adapter",
+      "snippet": "Instructions to use August-GKD/qwen25-dpo-lora-adapter with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries PEFT How to use August-GKD/qwen25-dpo-lora-adapter with PEFT:"
+    },
+    {
+      "title": "August-GKD/qwen25-dpo-lora-adapter at main - Hugging Face",
+      "url": "https://huggingface.co/August-GKD/qwen25-dpo-lora-adapter/tree/main",
+      "snippet": "August-GKD / qwen25-dpo-lora-adapter like 0 Text Generation PEFT Safetensors Transformers dpo lora trl conversational arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen25 Dpo Lora Adapter - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/august-gkd/qwen25-dpo-lora-adapter",
+      "snippet": "Registry entry for model Qwen25 Dpo Lora Adapter; source metadata pending."
+    },
+    {
+      "title": "Qwen25 7b Instruct Dpo Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/xqjiao/qwen25-7b-instruct-dpo-lora",
+      "snippet": "🧠 Qwen25 7b Instruct Dpo Loramodel by xqjiao ⭐ 37.5 🧠 Model"
+    }
+  ]
+}

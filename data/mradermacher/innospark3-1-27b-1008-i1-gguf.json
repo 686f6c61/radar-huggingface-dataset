@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/InnoSpark3.1-27B-1008-i1-GGUF",
   "created_at": "2026-10-09T23:24:03.000Z",
-  "updated_at": "2026-10-10T00:44:57.000Z",
+  "updated_at": "2026-10-10T14:00:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 452,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471869248,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553886976,
+  "storage_human": "218.6 GB",
   "base_model": "sii-research/InnoSpark3.1-27B-1008",
   "formats": [
     "gguf"

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-sym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-7b-instruct-v1-0-auto_round-int4-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-sym",
+  "created_at": "2026-10-10T20:35:08.000Z",
+  "updated_at": "2026-10-10T20:35:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "4-bit",
+    "conversational",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-7B-instruct-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-7B-instruct-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1415319552,
+  "parameters_human": "1.42B",
+  "storage_bytes": 5443257032,
+  "storage_human": "5.4 GB",
+  "base_model": "sapienzanlp/Minerva-7B-instruct-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sapienzanlp_Minerva-7B-instruct-v1.0-autoawq-int4-gs128-sym",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autoawq-int4-gs128-sym",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autogptq-int4-gs128 ...",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autogptq-int4-gs128-sym",
+      "snippet": "fbaldassarri / sapienzanlp_Minerva-7B-instruct-v1.-autogptq-int4-gs128-sym like 0 Text Generation Safetensors PyTorch uonlp/CulturaX Italian English mistral pretrained causal-lm minerva autoround intel-autoround woq gptq autogptq auto-gptq intel conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions Community ..."
+    },
+    {
+      "title": "fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autoround-int4-gs128 ...",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autoround-int4-gs128-asym",
+      "snippet": "fbaldassarri / sapienzanlp_Minerva-7B-instruct-v1.-autoround-int4-gs128-asym like 0 Text Generation Safetensors PyTorch uonlp/CulturaX Italian English mistral pretrained causal-lm minerva autoround intel-autoround woq gptq intel conversational 4-bit precision intel/auto-round License:apache-2.0 Model card FilesFiles and versions Community ..."
+    },
+    {
+      "title": "fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-autoround-int4-gs128-sym ...",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-autoround-int4-gs128-sym/tree/main",
+      "snippet": "4-bit precision intel/auto-round License:apache-2.0 Model card FilesFiles and versions xet Community main sapienzanlp_Minerva-7B-base-v1.-autoround-int4-gs128-sym 5.31 GB 1 contributor History:2 commits fbaldassarri Initial Upload 217b0ff verified12 months ago .gitattributes 1.52 kBinitial commit12 months ago README.md 2.26 kBInitial Upload12 ..."
+    },
+    {
+      "title": "sapienzanlp_Minerva-7B-base-v1.0-autogptq-int8-gs128-asym",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-autogptq-int8-gs128-asym",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

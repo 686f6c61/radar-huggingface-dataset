@@ -4,8 +4,8 @@
   "slug": "racer102-hal04",
   "author": "racer102",
   "url": "https://huggingface.co/racer102/hal04",
-  "created_at": "2026-10-07T01:26:15.000Z",
-  "updated_at": "2026-10-07T01:30:20.000Z",
+  "created_at": "2026-10-11T00:11:22.000Z",
+  "updated_at": "2026-10-11T00:15:56.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-08T02:14:00.197Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

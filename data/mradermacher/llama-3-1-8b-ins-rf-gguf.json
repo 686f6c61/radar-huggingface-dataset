@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LLaMA-3.1-8B-Ins-RF-GGUF",
+  "slug": "mradermacher-llama-3-1-8b-ins-rf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LLaMA-3.1-8B-Ins-RF-GGUF",
+  "created_at": "2025-10-22T05:32:50.000Z",
+  "updated_at": "2026-10-10T22:54:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Anonymous-EmpathyAI/LLaMA-3.1-8B-Ins-RF",
+    "base_model:quantized:Anonymous-EmpathyAI/LLaMA-3.1-8B-Ins-RF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 199,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 71820281472,
+  "storage_human": "71.8 GB",
+  "base_model": "Anonymous-EmpathyAI/LLaMA-3.1-8B-Ins-RF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webdunia - Tamil News Daily | Today Tamil News | Tamil Top News",
+      "url": "https://tamil.webdunia.com/",
+      "snippet": "Tamil News daily, Today Tamil News, News in Tamil, Tamil Web story, Tamil News Website. Here you can see the Latest Update …"
+    },
+    {
+      "title": "Tamil Online News |Latest Tamil News| live update - Webdunia",
+      "url": "https://tamil.webdunia.com/tamil-news-updates-latest-news",
+      "snippet": "Tamil News Portal,Free Tamil News Website,News in Tamil, Latest Tamilnadu News,Tamil News Live,Tamil News Online, ,Tamil …"
+    },
+    {
+      "title": "Tamil News Daily | Today Tamil News | Tamil Top News - Webdunia",
+      "url": "https://tamil.webdunia.com/?ref=home-jvpnews",
+      "snippet": "Tamil News daily, Today Tamil News, News in Tamil, Tamil Web story, Tamil News Website. Here you can see the Latest Update …"
+    },
+    {
+      "title": "Tamilnadu News In Tamil | Tamilnadu News | State News In Tamil - Webdunia",
+      "url": "https://tamil.webdunia.com/regional-tamil-news",
+      "snippet": "Tamil news, news in tamil, Latest Tamil Nadu News Headlines, Breaking News in tamil, tamil news today, tamil newspaper, India …"
+    },
+    {
+      "title": "Webdunia Tamil | Chennai - Facebook",
+      "url": "https://www.facebook.com/WdTamil/",
+      "snippet": "Webdunia Tamil, Chennai. 42,911 followers · 9,861 talking about this · 15 were here. Webdunia Tamil provides national, international, …"
+    }
+  ]
+}

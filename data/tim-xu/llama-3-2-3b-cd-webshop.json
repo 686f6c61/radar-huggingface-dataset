@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Tim-Xu/Llama-3.2-3B-CD-WebShop",
+  "slug": "tim-xu-llama-3-2-3b-cd-webshop",
+  "author": "Tim-Xu",
+  "url": "https://huggingface.co/Tim-Xu/Llama-3.2-3B-CD-WebShop",
+  "created_at": "2026-10-11T00:31:31.000Z",
+  "updated_at": "2026-10-11T00:32:27.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "agent",
+    "webshop",
+    "context-distillation",
+    "conversational",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6425529048,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offerte Fibra Internet WiFi, Mobile, TV, Smartphone | TIM",
+      "url": "https://www.tim.it/",
+      "snippet": "L’offerta in promozione è riservata ai clienti TIM di rete fissa e mobile. Verifica prima la copertura."
+    },
+    {
+      "title": "Information trafic Bus RATP ligne TIM",
+      "url": "https://www.ratp.fr/infos-trafic/busratp/tim",
+      "snippet": "1 day ago · Découvrez en temps réel l'état du trafic RATP dans le métro, RER, bus, Tramway et le Transilien."
+    },
+    {
+      "title": "Benvenuto in TIM",
+      "url": "https://www.tim.it/assistenza/benvenuto-in-tim",
+      "snippet": "Scopri i vantaggi e le offerte per i clienti TIM TIM Star Un universo di vantaggi esclusivi ed esperienze sorprendenti dove sei TU il …"
+    },
+    {
+      "title": "TIM - Site Oficial | Celular, Internet, Fixo, Recarga e mais",
+      "url": "https://www.tim.com.br/",
+      "snippet": "No site TIM você encontra os melhores planos de Celular, Banda Larga e Fixo. Acesse a 2ª via da sua conta, efetue recargas, …"
+    },
+    {
+      "title": "TIM à Reims | clôtures, portails, motorisation, profils aluminium ...",
+      "url": "https://www.tim-sa.fr/",
+      "snippet": "Découvrez les nouveautés et produits tendances chez TIM Végétalisation murale Oyas ou Ollas Composteurs bois ou céramique …"
+    }
+  ]
+}

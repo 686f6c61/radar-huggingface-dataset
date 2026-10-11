@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "id": "ahajahmed/benchmark-contamination-repair-planted-a",
+  "slug": "ahajahmed-benchmark-contamination-repair-planted-a",
+  "author": "ahajahmed",
+  "url": "https://huggingface.co/ahajahmed/benchmark-contamination-repair-planted-a",
+  "created_at": "2026-10-11T00:32:27.000Z",
+  "updated_at": "2026-10-11T00:32:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "benchmark-contamination",
+    "research-artifact",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889307,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

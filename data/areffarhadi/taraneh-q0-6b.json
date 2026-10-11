@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "areffarhadi/Taraneh-Q0.6B",
+  "slug": "areffarhadi-taraneh-q0-6b",
+  "author": "areffarhadi",
+  "url": "https://huggingface.co/areffarhadi/Taraneh-Q0.6B",
+  "created_at": "2026-10-10T22:41:40.000Z",
+  "updated_at": "2026-10-10T23:51:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "speech",
+    "asr",
+    "persian",
+    "farsi",
+    "taraneh",
+    "fa",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1576739249,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital Spy Forum",
+      "url": "https://forums.digitalspy.com/",
+      "snippet": "23 hours ago · Categories - Digital Spy Forum and Community, a place to discuss the latest TV, Movie and entertainment news and …Read more"
+    },
+    {
+      "title": "Students react after GCSE Maths Paper 3 on 11 June 2025",
+      "url": "https://www.thestudentroom.co.uk/revision/alevel-gcse-exams/students-react-after-gcse-maths-paper-3-on-11-june-2025",
+      "snippet": "Jun 11, 2025 · Yep, it’s really true…GCSE Maths is done and done. It seemed like the exam boards had saved up some of the worst …"
+    },
+    {
+      "title": "Gay sex at boys' boarding schools? - The Student Room",
+      "url": "https://www.thestudentroom.co.uk/showthread.php?t=1665554",
+      "snippet": "Does it really happen? Boarding schools like Eton and Harrow have many stories about senior students having gay sex (both anal …"
+    },
+    {
+      "title": "DH wants me to be a \"hotwife\" - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/posts/list/45/1261194.page",
+      "snippet": "Mar 5, 2025 · Porn is odd in that what worked once won’t work again, so if you were satisfied on page one of porn hub fast-forward …"
+    },
+    {
+      "title": "Cornell University Fraternity Case - DCUM Weblog",
+      "url": "https://www.dcurbanmom.com/jforum/posts/list/330/1340577.page",
+      "snippet": "Sep 27, 2026 · Anonymous wrote: If you read through the posts from actual Cornell students-she was 15 (not 10) drinks in prior to …"
+    }
+  ]
+}

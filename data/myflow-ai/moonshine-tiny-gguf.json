@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "myflow-ai/moonshine-tiny-gguf",
+  "slug": "myflow-ai-moonshine-tiny-gguf",
+  "author": "myflow-ai",
+  "url": "https://huggingface.co/myflow-ai/moonshine-tiny-gguf",
+  "created_at": "2026-10-10T23:00:40.000Z",
+  "updated_at": "2026-10-10T23:04:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "moonshine",
+    "useful-sensors",
+    "encoder-decoder",
+    "automatic-speech-recognition",
+    "en",
+    "arxiv:2410.15608",
+    "arxiv:1810.03993",
+    "base_model:moonshine-ai/moonshine-tiny",
+    "base_model:quantized:moonshine-ai/moonshine-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27092736,
+  "parameters_human": "27.1M",
+  "storage_bytes": 35466912,
+  "storage_human": "35 MB",
+  "base_model": "UsefulSensors/moonshine-tiny",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guardians of the Galaxy: Cosmic Rewind - Walt Disney World Resort",
+      "url": "https://disneyworld.disney.go.com/attractions/epcot/guardians-of-the-galaxy-cosmic-rewind/?msockid=0d6a0b381115601b2bff1cd610b561a6",
+      "snippet": "1 day ago · Join Rocket, Groot, Gamora and Star-Lord on an urgent mission where you’ll rewind, rotate and head towards the action …Read more"
+    },
+    {
+      "title": "Guardians of the Galaxy: Cosmic Rewind - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Guardians_of_the_Galaxy:_Cosmic_Rewind",
+      "snippet": "Based on the Marvel Cinematic Universe Guardians of the Galaxy films, it is the first attraction at Walt Disney World to feature …"
+    },
+    {
+      "title": "Guardians of the Galaxy: Cosmic Rewind FULL RIDE POV | EPCOT Disney World",
+      "url": "https://m.youtube.com/watch?v=Skb319WgkVg",
+      "snippet": "Jan 4, 2026 · Experience Guardians of the Galaxy: Cosmic Rewind FULL RIDE POV at EPCOT in Walt Disney World! 🚀 This …"
+    },
+    {
+      "title": "Guardians of the Galaxy: Cosmic Rewind full ride POV - \"One",
+      "url": "https://m.youtube.com/watch?v=Llx9KkJB_3M",
+      "snippet": "May 7, 2022 · Front row ride-through POV of EPCOT's new Guardians of the Galaxy: Cosmic Rewind at Walt Disney World. …"
+    },
+    {
+      "title": "Best & Worst Times to Ride Guardians of Galaxy Cosmic Rewind",
+      "url": "https://www.disneytouristblog.com/best-worst-times-guardians-galaxy-cosmic-rewind-shortest-line-lowest-wait-times/",
+      "snippet": "4 days ago · Guardians of the Galaxy: Cosmic Rewind has switched to a standby line and joined the Early Entry ride roster at …"
+    }
+  ]
+}

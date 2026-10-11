@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma2_2b_util_probe_tc32768_l1_0p0001_lr4e4_tc32768_decb_l1w0.0001_tarbb_sl15532696",
+  "slug": "siddharthmb-2026-ta-gemma2_2b_util_probe_tc32768_l1_0p0001_lr4e4_tc32768_decb_l1w0-0001_tarbb_sl15532696",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_util_probe_tc32768_l1_0p0001_lr4e4_tc32768_decb_l1w0.0001_tarbb_sl15532696",
+  "created_at": "2026-05-23T04:38:56.000Z",
+  "updated_at": "2026-10-11T00:30:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 6541122304,
+  "parameters_human": "6.54B",
+  "storage_bytes": 13116653297,
+  "storage_human": "13.1 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么像shein这样的跨境电商不在国内出售呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/267772909",
+      "snippet": "SheIn（中文名“ 希音 ”）成立于2008年，作为中国的一家跨境电商巨头，小编敢打赌应该有95%以上的国人都没听说过SheIn，就是这 …"
+    },
+    {
+      "title": "刚准备入驻SHEIN 需要注意什么？好做吗？这个平台? - 知乎",
+      "url": "https://www.zhihu.com/question/376809823",
+      "snippet": "SHEIN目前的市占率已达到行业50%的高水平，发展前景可观，但SHEIN制霸的低价快时尚市场中还在不断闯入新的竞争对手，比如 …"
+    },
+    {
+      "title": "[心得] SHEIN-人品大考驗 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1532848005.A.0CD.html",
+      "snippet": "Jul 29, 2018 · 植物印花露肩上衣（Botanical Print Cold Shoulder Top） ☆賣家名稱：SHEIN ★拍賣網址： https://m.shein.tw ☆網誌 …"
+    },
+    {
+      "title": "[心得] SHEIN 你的雷雷伙伴 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1561618178.A.B60.html",
+      "snippet": "Jun 27, 2019 · 1. SHEIN Self Belted Paperbag Waist Shorts (黑色自綁帶短褲) - US$11.79 話說那個Self Belted說得真好呢，因為褲子 …"
+    },
+    {
+      "title": "为什么像shein这样的跨境电商不在国内出售呢？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2591875962",
+      "snippet": "SheIn（中文名“ 希音 ”）成立于2008年，作为中国的一家跨境电商巨头，小编敢打赌应该有95%以上的国人都没听说过SheIn，就是这 …"
+    }
+  ]
+}

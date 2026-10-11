@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-cubes-22dN10",
+  "slug": "fecasado-gfm-cubes-22dn10",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-cubes-22dN10",
+  "created_at": "2026-10-11T00:28:18.000Z",
+  "updated_at": "2026-10-11T00:28:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/Ncubes-to-Nbaskets-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75232970,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300993168,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Récupérer votre compte Google ou Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=fr",
+      "snippet": "Suivez les étapes pour récupérer votre compte Google si vous avez oublié vos identifiants ou n'obtenez pas de codes de validation."
+    },
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    },
+    {
+      "title": "Ayuda de Gmail",
+      "url": "https://support.google.com/mail/?hl=es",
+      "snippet": "Ayuda de Gmail: lee sobre cómo recuperar tu Cuenta y resolver problemas. Aprende cómo funciona Gmail, las Etiquetas, Filtros, …"
+    },
+    {
+      "title": "Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Gmail chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "Gmail ความช่วยเหลือ",
+      "url": "https://support.google.com/mail/?hl=th",
+      "snippet": "การติดตามพัสดุภัณฑ์ใน Gmail กำหนดเวลาและสถานที่ทำงาน ส่งความคิดเห็นใน Gmail ติดตามการซื้อใน Gmail รับฟีเจอร์ Gmail …"
+    }
+  ]
+}

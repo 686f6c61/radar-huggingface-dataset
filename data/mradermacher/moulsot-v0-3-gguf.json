@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/moulsot.v0.3-GGUF",
+  "slug": "mradermacher-moulsot-v0-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/moulsot.v0.3-GGUF",
+  "created_at": "2026-08-16T11:48:36.000Z",
+  "updated_at": "2026-10-10T19:34:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ary",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "automatic-speech-recognition",
+    "arabic",
+    "qwen3",
+    "moulasot",
+    "fine-tuned",
+    "ary",
+    "ar",
+    "dataset:atlasia/MoulSot-Full",
+    "base_model:atlasia/moulsot.v0.3",
+    "base_model:quantized:atlasia/moulsot.v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 258,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 16957409344,
+  "storage_human": "17.0 GB",
+  "base_model": "atlasia/moulsot.v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atlasia/moulsot.v0.3 · Hugging Face",
+      "url": "https://huggingface.co/atlasia/moulsot.v0.3",
+      "snippet": "MoulSot v0.3 is an Automatic Speech Recognition (ASR) model developed by Atlasia for Moroccan Darija, designed to handle real-world speech with strong robustness to code-switching (Darija ↔ French ↔ Arabic). The model is trained on a large, curated dataset and aims to provide high-quality ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=moulasot",
+      "snippet": "mradermacher/moulsot.v0.3-GGUF Automatic Speech Recognition • 2B•Updated 4 days ago• 338"
+    },
+    {
+      "title": "GitHub - PodJamz/moulsot-",
+      "url": "https://github.com/PodJamz/moulsot-",
+      "snippet": "MoulSot (Arabic: مول الصوت, \"the one with the voice\") is an end-to-end open-source system for collecting, curating, and using high-quality Moroccan Darija speech data to train an Automatic Speech Recognition model."
+    },
+    {
+      "title": "Architecture graph for atlasia/moulsot.v0.3 | hfviewer",
+      "url": "https://hfviewer.com/atlasia/moulsot.v0.3",
+      "snippet": "Where the model could be executed, the graph is trace-backed; otherwise it is derived from the reviewed configuration and source code. atlasia/moulsot.v0.3 architecture at a glance atlasia/moulsot.v0.3 is an automatic-speech-recognition model (qwen3_asr_text architecture)."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    }
+  ]
+}

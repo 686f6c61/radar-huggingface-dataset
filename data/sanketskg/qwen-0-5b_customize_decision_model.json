@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sanketskg/Qwen-0.5B_Customize_Decision_Model",
+  "slug": "sanketskg-qwen-0-5b_customize_decision_model",
+  "author": "sanketskg",
+  "url": "https://huggingface.co/sanketskg/Qwen-0.5B_Customize_Decision_Model",
+  "created_at": "2026-10-10T16:28:35.000Z",
+  "updated_at": "2026-10-10T19:32:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1044660783,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "メンズファッション | ZARA 日本",
+      "url": "https://www.zara.com/jp/ja/man-l534.html",
+      "snippet": "毎週ZARAオンラインで最新のメンズ服、靴、アクセサリーをご紹介。今すぐアクセスして、新作コレクションのすべての服を ..."
+    },
+    {
+      "title": "Women's Clothes | ZARA United Kingdom",
+      "url": "https://www.zara.com/uk/en/woman-mkt1000.html",
+      "snippet": "Weekly new trends in clothes, shoes & accessories at ZARA online. FREE SHIPPING* for you to try on at your leisure."
+    },
+    {
+      "title": "Abbigliamento Donna | ZARA Italia",
+      "url": "https://www.zara.com/it/it/donna-mkt1000.html",
+      "snippet": "Ogni settimana nuovi trend di abbigliamento, scarpe e accessori su ZARA online. SPEDIZIONE GRATUITA* per provarli …"
+    },
+    {
+      "title": "ZARA Portugal | Nova Coleção Online",
+      "url": "https://www.zara.com/pt/",
+      "snippet": "As tendências de moda para mulher, homem e criança na ZARA online. Encontre toda a roupa online: casacos, calças, sapatos e …"
+    },
+    {
+      "title": "Vêtements pour femme | ZARA France",
+      "url": "https://www.zara.com/fr/fr/femme-mkt1000.html",
+      "snippet": "Découvrez les vêtements les plus tendance en édition limitée. Nouveautés ZARA WOMAN chaque semaine."
+    }
+  ]
+}

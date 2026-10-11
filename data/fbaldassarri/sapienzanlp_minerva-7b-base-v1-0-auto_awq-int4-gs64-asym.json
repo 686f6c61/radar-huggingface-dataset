@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-asym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-7b-base-v1-0-auto_awq-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_awq-int4-gs64-asym",
+  "created_at": "2026-10-10T20:24:07.000Z",
+  "updated_at": "2026-10-10T20:24:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "awq",
+    "auto-awq",
+    "autoawq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "4-bit",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-7B-base-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-7B-base-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414795264,
+  "parameters_human": "1.41B",
+  "storage_bytes": 5441159880,
+  "storage_human": "5.4 GB",
+  "base_model": "sapienzanlp/Minerva-7B-base-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Re Zero Meme Face - fr.pinterest.com",
+      "url": "https://fr.pinterest.com/ideas/re-zero-meme-face/927685522854/",
+      "snippet": "Découvrez les meilleures idées et sources d’inspiration de Pinterest pour Re zero meme face. Trouvez l’inspiration et essayez de …"
+    },
+    {
+      "title": "Re Zero GIFs | Tenor",
+      "url": "https://tenor.com/search/re-zero-gifs",
+      "snippet": "With Tenor, maker of GIF Keyboard, add popular Re Zero animated GIFs to your conversations. Share the best GIFs now >>>"
+    },
+    {
+      "title": "The best Re:zero memes :) Memedroid",
+      "url": "https://www.memedroid.com/memes/tag/Re%3Azero",
+      "snippet": "Oct 20, 2022 · See, rate and share the best Re:zero memes, gifs and funny pics. Memedroid: your daily dose of fun!"
+    },
+    {
+      "title": "Rezero Memes - Pinterest",
+      "url": "https://www.pinterest.com/ideas/rezero-memes/921612878959/",
+      "snippet": "Discover Pinterest’s best ideas and inspiration for Rezero memes. Get inspired and try out new things. Find and save ideas about …"
+    },
+    {
+      "title": "Memes Re Zero - Pinterest",
+      "url": "https://www.pinterest.com/ideas/memes-re-zero/925069909848/",
+      "snippet": "Find and save ideas about memes re zero on Pinterest."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "resistz/TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K",
+  "slug": "resistz-ttcl-simpleqa-rlcr-llama-3-1-8b-instruct-dapo-math14k",
+  "author": "resistz",
+  "url": "https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Llama-3.1-8B-Instruct-DAPO-Math14K",
+  "created_at": "2026-10-10T18:54:14.000Z",
+  "updated_at": "2026-10-10T19:06:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766304,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test-time Calibration Learning (TTCL) Models - a resistz Collection",
+      "url": "https://huggingface.co/collections/resistz/test-time-calibration-learning-ttcl-models",
+      "snippet": "Test-time Calibration Learning (TTCL) Models updated about 4 hours ago Test-time calibration learning for large language model reasoning Upvote 1 Sort: Collection"
+    },
+    {
+      "title": "GitHub - resistzzz/TTCL: [Arxiv] \"Test-time Calibration Learning for ...",
+      "url": "https://github.com/resistzzz/TTCL/tree/main",
+      "snippet": "Specifically, TTCL derives self-supervision signals for both correctness and calibration from multiple model-generated responses, enabling calibration learning at test time without ground-truth labels."
+    },
+    {
+      "title": "resistz/TTCL-SimpleQA-RLCR-Qwen3-8B-DAPO-Math14K · Hugging Face",
+      "url": "https://huggingface.co/resistz/TTCL-SimpleQA-RLCR-Qwen3-8B-DAPO-Math14K",
+      "snippet": "Test-time Calibration Learning (TTCL) TTCL is performed on SimpleQA benchmark based on RLCR-calibrated Qwen3-8B on DAPO-Math-14K"
+    },
+    {
+      "title": "TTCL/data at main · resistzzz/TTCL · GitHub",
+      "url": "https://github.com/resistzzz/TTCL/tree/main/data",
+      "snippet": "[Arxiv] \"Test-time Calibration Learning for Large Language Model Reasoning\" - TTCL/data at main · resistzzz/TTCL"
+    },
+    {
+      "title": "SimpleQA Leaderboard & Scores — October 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/simpleqa",
+      "snippet": "SimpleQA scores for 5 AI models, compiled from published reports. Shown for reference, not counted in overall rankings."
+    }
+  ]
+}

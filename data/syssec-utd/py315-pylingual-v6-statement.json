@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "syssec-utd/py315-pylingual-v6-statement",
+  "slug": "syssec-utd-py315-pylingual-v6-statement",
+  "author": "syssec-utd",
+  "url": "https://huggingface.co/syssec-utd/py315-pylingual-v6-statement",
+  "created_at": "2026-10-09T23:49:40.000Z",
+  "updated_at": "2026-10-11T00:25:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "safetensors",
+    "t5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 222882048,
+  "parameters_human": "222.9M",
+  "storage_bytes": 10698940753,
+  "storage_human": "10.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "syssec-utd/statement-py315-pylingual-v6-tokenized - Hugging Face",
+      "url": "https://huggingface.co/datasets/syssec-utd/statement-py315-pylingual-v6-tokenized",
+      "snippet": "Datasets: syssec-utd / statement-py315-pylingual-v6-tokenized Like 0 Follow UTD Systems Security Lab 21 Formats: parquet Size: 10M - 100M Libraries: Datasets Dask Polars + 1 Dataset card Data Studio FilesFiles and versions xet Community Dataset Viewer Auto-converted to Parquet API Embed Duplicate Data Studio Subset (1) default·17.5M rows default (17.5M rows) Split (3) train·17.2M rows train ..."
+    },
+    {
+      "title": "syssec-utd (UTD Systems Security Lab) - Hugging Face",
+      "url": "https://huggingface.co/syssec-utd",
+      "snippet": "Org profile for UTD Systems Security Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - syssec-utd/pylingual: Python decompiler for modern Python ...",
+      "url": "https://github.com/syssec-utd/pylingual",
+      "snippet": "Python decompiler for modern Python versions. Contribute to syssec-utd/pylingual development by creating an account on GitHub."
+    },
+    {
+      "title": "Releases · syssec-utd/pylingual - GitHub",
+      "url": "https://github.com/syssec-utd/pylingual/releases",
+      "snippet": "Python decompiler for modern Python versions. Contribute to syssec-utd/pylingual development by creating an account on GitHub."
+    },
+    {
+      "title": "syssec-utd AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/syssec-utd",
+      "snippet": "Browse AI models attributed to syssec-utd, sourced from verified model catalogs."
+    }
+  ]
+}

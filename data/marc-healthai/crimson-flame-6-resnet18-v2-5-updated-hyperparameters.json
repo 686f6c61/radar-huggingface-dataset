@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Marc-HealthAI/Crimson-Flame-6-resNet18-v2.5-updated-hyperparameters",
+  "slug": "marc-healthai-crimson-flame-6-resnet18-v2-5-updated-hyperparameters",
+  "author": "Marc-HealthAI",
+  "url": "https://huggingface.co/Marc-HealthAI/Crimson-Flame-6-resNet18-v2.5-updated-hyperparameters",
+  "created_at": "2026-10-10T18:46:33.000Z",
+  "updated_at": "2026-10-10T19:02:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical",
+    "ultrasound",
+    "resnet18",
+    "fetal-planes",
+    "image-classification",
+    "en",
+    "dataset:Marc-HealthAI/fetal-planes-classification-dataset-main",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11189190,
+  "parameters_human": "11.2M",
+  "storage_bytes": 55142739,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marc (évangéliste) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Marc_(%C3%A9vang%C3%A9liste)",
+      "snippet": "Marc (en grec ancien : Μάρκος / Márkos ; en latin : Marcus), parfois nommé Jean-Marc, est un Juif du Ier siècle auquel est …"
+    },
+    {
+      "title": "Marc — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Marc",
+      "snippet": "Nom propre Marc, prénom dérivé du latin Marcus, invoquant le dieu Mars, dieu de la guerre, de la fertilité des cultures et protecteur …"
+    },
+    {
+      "title": "MARC - Modélisation et Analyse pour la Recherche Cotière",
+      "url": "https://marc.ifremer.fr/",
+      "snippet": "L'objectif principal de MARC est de fournir des rejeux réalistes de l' océan côtier et de démontrer les capacités des modèles …"
+    },
+    {
+      "title": "MarcA2C - YouTube",
+      "url": "https://www.youtube.com/channel/UCZ9yHrfKO1gHp5kX-5tjJ0w",
+      "snippet": "Salut à tous, vous retrouverez ici des vidéos qui montre le quotidien au sein d'une ferme, et le tout avec une approche d'agriculture …"
+    },
+    {
+      "title": "Prénom Marc (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/marc/prenom-1161",
+      "snippet": "Quelle est la signification du prénom Marc ? Le prénom Marc peut être rattaché à Mars, dieu de la guerre et de la fertilité des …"
+    }
+  ]
+}

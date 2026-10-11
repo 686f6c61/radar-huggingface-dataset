@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "dangerousmanleebyeonggeon/lateon-ours-hardneg-n10573-e1-ckpt82",
+  "slug": "dangerousmanleebyeonggeon-lateon-ours-hardneg-n10573-e1-ckpt82",
+  "author": "dangerousmanleebyeonggeon",
+  "url": "https://huggingface.co/dangerousmanleebyeonggeon/lateon-ours-hardneg-n10573-e1-ckpt82",
+  "created_at": "2026-10-10T20:35:43.000Z",
+  "updated_at": "2026-10-10T20:35:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "PyLate",
+  "languages": [],
+  "tags": [
+    "PyLate",
+    "safetensors",
+    "modernbert",
+    "ColBERT",
+    "sentence-transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:10573",
+    "loss:Contrastive",
+    "arxiv:1908.10084",
+    "base_model:lightonai/LateOn",
+    "base_model:finetune:lightonai/LateOn",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149015808,
+  "parameters_human": "149.0M",
+  "storage_bytes": 615344304,
+  "storage_human": "615 MB",
+  "base_model": "lightonai/LateOn",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dangerousmanleebyeonggeon - Instagram",
+      "url": "https://www.instagram.com/popular/dangerousmanleebyeonggeon/",
+      "snippet": "AI 아닙니다. 진짜입니다. 침착맨 (@dangerousmanleebyeonggeon)이 커버하는 매운맛 &#x27;마라탕후루&#x27; 챌린지.🚨 🎥 유튜브 채널 침착맨 / 영상저장소 youtubekorea Verified views 9,279 요들송은 꺾기와 두성이라고 생각해요를레이 요를레히 요를레히히~🎵 @homin_joo @khmnim1513 @dangerousmanleebyeonggeon stevenpaulpark Verified views ..."
+    },
+    {
+      "title": "이병건 (@dangerousmanleebyeonggeon) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dangerousmanleebyeonggeon/",
+      "snippet": "130K Followers, 77 Following, 4 Posts - 이병건 (@dangerousmanleebyeonggeon) on Instagram: \"\""
+    },
+    {
+      "title": "@dangerousmanleebyeonggeon Instagram Profile - Stories, Posts, Reels ...",
+      "url": "https://flufi.me/profile/dangerousmanleebyeonggeon",
+      "snippet": "Watch @dangerousmanleebyeonggeon Instagram profile with stories, posts, reels. Explore @dangerousmanleebyeonggeon statistics, ratios, and followers without logging in, via Flufi."
+    },
+    {
+      "title": "야릇한쿼크 (@dangerousmanleebyeonggeon_) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dangerousmanleebyeonggeon_/",
+      "snippet": "52 Followers, 93 Following, 16 Posts - 야릇한쿼크 (@dangerousmanleebyeonggeon_) on Instagram: \"𓁹_𓁹\""
+    },
+    {
+      "title": "HDLEG - Latest Galleries",
+      "url": "https://www.hdleg.com/galleries",
+      "snippet": "Premium Package BAEK SUL TANG - School Look Oct 09, 2026"
+    }
+  ]
+}

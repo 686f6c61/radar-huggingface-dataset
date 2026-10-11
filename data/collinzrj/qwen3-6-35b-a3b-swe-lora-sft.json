@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "collinzrj/qwen3.6-35b-a3b-swe-lora-sft",
+  "slug": "collinzrj-qwen3-6-35b-a3b-swe-lora-sft",
+  "author": "collinzrj",
+  "url": "https://huggingface.co/collinzrj/qwen3.6-35b-a3b-swe-lora-sft",
+  "created_at": "2026-10-11T00:11:30.000Z",
+  "updated_at": "2026-10-11T00:15:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "software-engineering",
+    "swe-bench",
+    "agent",
+    "qwen3.6",
+    "dataset:nvidia/Open-SWE-Traces",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2152306736,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "felixming/Qwen3.6-35B-A3B-SWE-LoRA-SFT · Hugging Face",
+      "url": "https://huggingface.co/felixming/Qwen3.6-35B-A3B-SWE-LoRA-SFT",
+      "snippet": "PEFT LoRA adapter for Qwen/Qwen3.6-35B-A3B (revision 995ad96eacd98c81ed38be0c5b274b04031597b0), from a software-engineering post-training study (LoRA SFT, then execution-feedback DPO) evaluated on SWE-bench Pro HARD-51, Terminal-Bench 2.0, HLE (text-only) and ASI-Bench."
+    },
+    {
+      "title": "felixming/Qwen3.6-35B-A3B-SWE-LoRA-SFT-DPO at main",
+      "url": "https://huggingface.co/felixming/Qwen3.6-35B-A3B-SWE-LoRA-SFT-DPO/tree/main",
+      "snippet": "Instructions to use felixming/Qwen3.6-35B-A3B-SWE-LoRA-SFT-DPO with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/qwen-3-6-35b-a3b/",
+      "snippet": "Otherwise 3.6-35B-A3B is the newer default. Runner notes GGUF (`unsloth/Qwen3.6-35B-A3B-GGUF`), MLX, and Ollama tags are all available as of mid-2026; `qwen3.6:35b` is the A3B MoE tag. Q4 fits a single 24 GB rig."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b",
+      "snippet": "This AI model can be embedded as an Application Programming Interface (API) call into the software environment described above. Model Version (s) Qwen3.6-35B-A3B v3.6 Training, Testing, and Evaluation Datasets Training Dataset Data Modality: Text Image"
+    },
+    {
+      "title": "Deploy Qwen3.6-35B-A3B Locally: Step-by-Step Guide — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-qwen3-6-35b-a3b-deploying-multimodal-reasoning-locally",
+      "snippet": "Learn what Qwen3.6-35B-A3B offers, how its multimodal chat template and tool-calling format work, and where to find compatible runtimes for local deployment."
+    }
+  ]
+}

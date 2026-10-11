@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF",
+  "slug": "mradermacher-gemma-3n-e4b-it-absolute-heresy-mpoa-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF",
+  "created_at": "2026-01-20T06:03:15.000Z",
+  "updated_at": "2026-10-10T19:32:15.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "automatic-speech-recognition",
+    "automatic-speech-translation",
+    "audio-text-to-text",
+    "video-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:MuXodious/gemma-3n-E4B-it-absolute-heresy-MPOA",
+    "base_model:quantized:MuXodious/gemma-3n-E4B-it-absolute-heresy-MPOA",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 544,
+  "trending_score": 0,
+  "parameters": 6868990448,
+  "parameters_human": "6.87B",
+  "storage_bytes": 65239423296,
+  "storage_human": "65.2 GB",
+  "base_model": "MuXodious/gemma-3n-E4B-it-absolute-heresy-MPOA",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-i1-GGUF - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/gemma-3n-E4B-it-absolute-heresy-MPOA-i1-GGUF",
+      "snippet": "This is a vision model - mmproj files (if any) will be in the static repository. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEsfor more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ ..."
+    },
+    {
+      "title": "Gemma 3n E4b It Absolute Heresy Mpoa I1 - GGUF Model",
+      "url": "https://local-ai-zone.github.io/models/gemma-3n-e4b-it-absolute-heresy-mpoa-i1.html",
+      "snippet": "Download Gemma 3n E4b It Absolute Heresy Mpoa I1 GGUF model. 5.3 GB, 1,159 downloads, 1 likes."
+    },
+    {
+      "title": "Gemma 3n E4b It Absolute Heresy Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/gemma-3n-e4b-it-absolute-heresy-gguf",
+      "snippet": "Registry entry for model Gemma 3n E4b It Absolute Heresy Gguf; source metadata pending."
+    },
+    {
+      "title": "gemma-3n-E4B-it-absolute-heresy-i1-GGUF huggingface.co api ...",
+      "url": "https://www.toolify.ai/ai-model/mradermacher-gemma-3n-e4b-it-absolute-heresy-i1-gguf",
+      "snippet": "gemma-3n-E4B-it-absolute-heresy-i1-GGUF is an open source model from GitHub that offers a free installation service, and any user can find gemma-3n-E4B-it-absolute-heresy-i1-GGUF on GitHub to install."
+    }
+  ]
+}

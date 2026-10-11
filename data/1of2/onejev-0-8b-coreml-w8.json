@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "1of2/onejev-0.8b-coreml-w8",
+  "slug": "1of2-onejev-0-8b-coreml-w8",
+  "author": "1of2",
+  "url": "https://huggingface.co/1of2/onejev-0.8b-coreml-w8",
+  "created_at": "2026-10-10T23:54:29.000Z",
+  "updated_at": "2026-10-10T23:54:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "neural-engine",
+    "apple-silicon",
+    "decision-model",
+    "multimodal",
+    "onejev",
+    "image-text-to-text",
+    "base_model:OmniJev/OneJev-0.8B",
+    "base_model:quantized:OmniJev/OneJev-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1248321475,
+  "storage_human": "1.2 GB",
+  "base_model": "OmniJev/OneJev-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OmniJev/OneJev: A multimodal System One decision model that ...",
+      "url": "https://github.com/OmniJev/OneJev",
+      "snippet": "English · 简体中文 · 日本語 OneJev is a multimodal System One decision model. It returns calibrated probabilities for typed questions about screenshots, photos, videos and text in a single forward pass. Available in 0.8B, 4B, 9B and 27B."
+    },
+    {
+      "title": "OneJev - omnijev.github.io",
+      "url": "https://omnijev.github.io/OneJev/",
+      "snippet": "OneJev is a multimodal System One decision model. Screenshots, photos and video go in with typed questions; calibrated probabilities come out in one forward pass, behind TypeSafe&#x27;s System One API."
+    },
+    {
+      "title": "OmniJev · GitHub",
+      "url": "https://github.com/OmniJev/",
+      "snippet": "OneJev Public 🚀🚀 A multimodal System One decision model that gives calibrated answers to typed questions about screens, photos, video and text in one forward pass."
+    },
+    {
+      "title": "1of2 (1of2.ai) - Hugging Face",
+      "url": "https://huggingface.co/1of2",
+      "snippet": "1of2/jina-v5-omni-small-coreml-w8 ... 1of2/jina-v5-omni-small-coreml-w16 ... 1of2/jina-code-embeddings-.5b-coreml-w16 ... 1of2/jina-code-embeddings-.5b-coreml-w8"
+    },
+    {
+      "title": "OneJev 0.8B by OmniJev — VRAM 2.2GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/OmniJev%2FOneJev-0.8B,48oin5a1bL2pn6gutVu6Ad",
+      "snippet": "Rank the OneJev 0.8B capabilities Have you tried this model? Rate its performance — this feedback helps the ML community find the right model for their needs."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-sym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-7b-base-v1-0-auto_round-int4-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_round-int4-gs64-sym",
+  "created_at": "2026-10-10T20:29:33.000Z",
+  "updated_at": "2026-10-10T20:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "4-bit",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-7B-base-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-7B-base-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1414795264,
+  "parameters_human": "1.41B",
+  "storage_bytes": 5441159880,
+  "storage_human": "5.4 GB",
+  "base_model": "sapienzanlp/Minerva-7B-base-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macrium Reflect Backup & Recovery Software",
+      "url": "https://www.macrium.com/reflectfree",
+      "snippet": "Business: Are there a free trials available for Macrium business solutions? Protect PCs and critical systems from downtime, …"
+    },
+    {
+      "title": "Télécharger Macrium Reflect Free (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche207880-macrium-reflect.html",
+      "snippet": "Sep 29, 2026 · Macrium Reflect est un logiciel pour qui permet de sauvegarder les données de vos disques durs facilement."
+    },
+    {
+      "title": "Macrium Reflect Home | The complete backup solution for personal use.",
+      "url": "https://www.macrium.com/products/home",
+      "snippet": "The complete backup solution for personal use. Protect documents, data and operating systems using our upgraded Reflect X …"
+    },
+    {
+      "title": "Download Macrium Reflect FREE Edition 8.0.7783 - MajorGeeks",
+      "url": "https://www.majorgeeks.com/files/details/macrium_reflect_free_edition.html",
+      "snippet": "Dec 1, 2023 · With Macrium Reflect Free Edition, you'll be able to easily make an accurate and reliable image of your HDD or …"
+    },
+    {
+      "title": "Macrium Reflect - GitHub",
+      "url": "https://github.com/MacriumReflect/",
+      "snippet": "Jul 15, 2026 · Macrium Reflect is the professional standard for Windows disk imaging and disaster recovery. From a single PC to air …"
+    }
+  ]
+}

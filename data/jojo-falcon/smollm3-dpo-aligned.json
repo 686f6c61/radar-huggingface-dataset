@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "JOJO-FALCON/smollm3-dpo-aligned",
+  "slug": "jojo-falcon-smollm3-dpo-aligned",
+  "author": "JOJO-FALCON",
+  "url": "https://huggingface.co/JOJO-FALCON/smollm3-dpo-aligned",
+  "created_at": "2026-10-10T19:04:15.000Z",
+  "updated_at": "2026-10-10T19:48:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "conversational",
+    "arxiv:2305.18290",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:finetune:HuggingFaceTB/SmolLM3-3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 24618155108,
+  "storage_human": "24.6 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoJo's Bizarre Encyclopedia - JoJo Wiki",
+      "url": "https://jojowiki.com/",
+      "snippet": "JoJo's Bizarre Adventure, often shortened to JoJo or JJBA, is a shonen and seinen manga series written and illustrated by Hirohiko …"
+    },
+    {
+      "title": "JoJo's Bizarre Adventure — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure",
+      "snippet": "JoJo's Bizarre Adventure (ジョジョの奇妙な冒険, JoJo no kimyō na bōken?) est un manga de Hirohiko Araki. Il est prépublié entre …"
+    },
+    {
+      "title": "JoJo — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/JoJo",
+      "snippet": "Après avoir sorti un album mixtape en septembre 2010, JoJo révèle le 28 février 2011 le titre de son troisième album ; Jumping …"
+    },
+    {
+      "title": "JoJo - YouTube",
+      "url": "https://www.youtube.com/jojoofficialonline",
+      "snippet": "Music Videos Play all Music Videos from JoJo. Featuring Creature of Habit, Lonely Hearts, Man, Think About You, Fuck Apologies …"
+    },
+    {
+      "title": "JoJo - JoJo's Bizarre Encyclopedia | JoJo Wiki",
+      "url": "https://jojowiki.com/JoJo/fr",
+      "snippet": "JoJo est un surnom commun aux huit protagonistes de la série JoJo's Bizarre Adventure qui est dérivé de la répétition inexpliquée …"
+    }
+  ]
+}

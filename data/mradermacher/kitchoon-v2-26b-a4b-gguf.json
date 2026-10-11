@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kitchoon-V2-26B-A4B-GGUF",
+  "slug": "mradermacher-kitchoon-v2-26b-a4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kitchoon-V2-26B-A4B-GGUF",
+  "created_at": "2026-10-10T23:09:07.000Z",
+  "updated_at": "2026-10-11T01:06:29.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "gemma4",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "en",
+    "base_model:SubMaroon/Kitchoon-V2-26B-A4B",
+    "base_model:quantized:SubMaroon/Kitchoon-V2-26B-A4B",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 187680281888,
+  "storage_human": "187.7 GB",
+  "base_model": "SubMaroon/Kitchoon-V2-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram: Join Group Chat",
+      "url": "https://t.me/+UdpIcWT6obNkOTRk",
+      "snippet": "Appreciating Plus Size ladies👙🍑"
+    },
+    {
+      "title": "Telegram: Join Group Chat - t.me",
+      "url": "https://t.me/%20UdpIcWT6obNkOTRk",
+      "snippet": "You are invited to the channel Kenyan BBWs🇰🇪🍑. Click above to join."
+    },
+    {
+      "title": "Telegram contact with @kenyanbbws Kenyan BBWs",
+      "url": "https://telegram.im/@kenyanbbws?lang=en",
+      "snippet": "Don't have Telegram yet?"
+    },
+    {
+      "title": "Telegram contact with @kenyanbbw @kenyanbbw",
+      "url": "https://telegram.im/@kenyanbbw",
+      "snippet": "@kenyanbbw Send message via Telegram app Don't have Telegram yet? Open via web telegram or Get telegram app"
+    },
+    {
+      "title": "Kutombana Kenya Sugar Mummy Trending – Telegram",
+      "url": "https://telegram.me/s/kutombanakenyah",
+      "snippet": "1 photo Joining link https://t.me/+Q94n4sCocE5kMDE0 Download Telegram Kutombana Kenya Sugar Mummy Trending 5.87K …"
+    }
+  ]
+}

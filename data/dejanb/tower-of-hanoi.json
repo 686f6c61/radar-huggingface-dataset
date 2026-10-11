@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dejanb/tower-of-hanoi",
+  "slug": "dejanb-tower-of-hanoi",
+  "author": "dejanb",
+  "url": "https://huggingface.co/dejanb/tower-of-hanoi",
+  "created_at": "2026-10-10T20:44:54.000Z",
+  "updated_at": "2026-10-10T23:12:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tower-of-hanoi",
+    "frame-stewart",
+    "combinatorics",
+    "dynamic-programming",
+    "breadth-first-search",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are the Benefits and Disadvantages of being a Femboy",
+      "url": "https://www.reddit.com/r/feminineboys/comments/185ax6w/what_are_the_benefits_and_disadvantages_of_being/",
+      "snippet": "Respect and acceptance from others in the femboy community. Disadvantages: Costs money. Parents/society not accepting it. …"
+    },
+    {
+      "title": "What exactly is a femboy? : r/feminineboys - Reddit",
+      "url": "https://www.reddit.com/r/feminineboys/comments/o64ymi/what_exactly_is_a_femboy/",
+      "snippet": "Femboy as the name suggests is a \"Feminine boy\" So that means it's a boy, who expresses his feminine side by clothing, makeup, …"
+    },
+    {
+      "title": "什么是Femboy？什么样的才是Femboy? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2151118472693321908.html",
+      "snippet": "Oct 4, 2024 · Femboy群体的界限相对模糊，但一般认为，Femboy群体在性别认同上保持男性身份，且不希望被使用包含“boy”字眼的 …"
+    },
+    {
+      "title": "为何在形容男性化的女性时要用“ Femboy”而不是“ Tomboy”？",
+      "url": "https://zhidao.baidu.com/question/595296510748514725.html",
+      "snippet": "Aug 29, 2024 · 相比之下，\"Femboy\"这一概念则是在现代才崭露头角。 作为\"女性化男孩\"的简称，它在90年代初开始出现，到了2013 …"
+    },
+    {
+      "title": "What’s your story with becoming a femboy?? - Reddit",
+      "url": "https://www.reddit.com/r/feminineboys/comments/1cvywmt/whats_your_story_with_becoming_a_femboy/",
+      "snippet": "We mesh together very nicely. So as a femboy I watched anime with astaflo and I resonated with that character. Deep dive. Is …"
+    }
+  ]
+}

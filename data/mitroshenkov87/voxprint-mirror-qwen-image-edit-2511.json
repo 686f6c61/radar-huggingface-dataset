@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511",
+  "slug": "mitroshenkov87-voxprint-mirror-qwen-image-edit-2511",
+  "author": "Mitroshenkov87",
+  "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511",
+  "created_at": "2026-10-10T22:21:00.000Z",
+  "updated_at": "2026-10-10T23:02:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "voxprint",
+    "fp8",
+    "qwen-image",
+    "image-to-image",
+    "en",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:quantized:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46830380524,
+  "storage_human": "46.8 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

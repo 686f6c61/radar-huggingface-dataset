@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "akrichetina/td5-query-classifier",
+  "slug": "akrichetina-td5-query-classifier",
+  "author": "akrichetina",
+  "url": "https://huggingface.co/akrichetina/td5-query-classifier",
+  "created_at": "2026-10-11T00:20:47.000Z",
+  "updated_at": "2026-10-11T00:23:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 535670385,
+  "storage_human": "536 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://fr.youtube.com/",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/accueil",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube, prononcé en français [ ju.tyb] Écouter ⓘ ou [ ju.tjub], est la principale plateforme de vidéos en ligne en Occident, sous …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube is an American online video-sharing platform owned by Google. YouTube was founded on February 14, 2005, by Chad …"
+    }
+  ]
+}

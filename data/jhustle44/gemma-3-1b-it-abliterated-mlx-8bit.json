@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jhustle44/gemma-3-1b-it-abliterated-mlx-8Bit",
+  "slug": "jhustle44-gemma-3-1b-it-abliterated-mlx-8bit",
+  "author": "Jhustle44",
+  "url": "https://huggingface.co/Jhustle44/gemma-3-1b-it-abliterated-mlx-8Bit",
+  "created_at": "2026-10-11T00:11:24.000Z",
+  "updated_at": "2026-10-11T00:11:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "base_model:mlabonne/gemma-3-1b-it-abliterated",
+    "base_model:quantized:mlabonne/gemma-3-1b-it-abliterated",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1301875840,
+  "parameters_human": "1.30B",
+  "storage_bytes": 1421522471,
+  "storage_human": "1.4 GB",
+  "base_model": "mlabonne/gemma-3-1b-it-abliterated",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Érzékek birodalma ,japán film dec 18 - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9010395",
+      "snippet": "Sep 22, 2003 · Nyitotta: Tatsuya Fuji imitátor, 1999.12.19 04:03 | Hozzászólások: 38 | Hozzászólók: 20"
+    },
+    {
+      "title": "szex-pornó gif képek - Index Fórum",
+      "url": "https://forum.index.hu/Topic/TopicDescription?t=9142725",
+      "snippet": "forum.index.hu Magyarország első és legnagyobb fórum szolgáltatása. A web kettő pre-bétája, amit 1997 óta töltenek meg …"
+    },
+    {
+      "title": "Secretary today……… | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/secretary-today%E2%80%A6%E2%80%A6%E2%80%A6.705919/",
+      "snippet": "I am an attorney and I have to say that I had one of the sexiest, most hard core fucks before I left work today. My secretary came into …"
+    },
+    {
+      "title": "SUDUCING GRANDMOTHER | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/suducing-grandmother.661707/",
+      "snippet": "Oct 29, 2022 · Nbc123 Porno Junky Joined: Dec 26, 2016 Messages: 450 May 11, 2023 Share anything u want"
+    },
+    {
+      "title": "Pornó-cinematrix függők ide! - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9119181",
+      "snippet": "Apr 11, 2016 · Imádom a pornó-cinematrixokat!"
+    }
+  ]
+}

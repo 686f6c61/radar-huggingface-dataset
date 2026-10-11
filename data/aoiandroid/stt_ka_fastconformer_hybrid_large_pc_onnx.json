@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "aoiandroid/stt_ka_fastconformer_hybrid_large_pc_onnx",
+  "slug": "aoiandroid-stt_ka_fastconformer_hybrid_large_pc_onnx",
+  "author": "aoiandroid",
+  "url": "https://huggingface.co/aoiandroid/stt_ka_fastconformer_hybrid_large_pc_onnx",
+  "created_at": "2026-10-10T19:09:21.000Z",
+  "updated_at": "2026-10-10T19:10:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nemo-conformer-ctc",
+    "mirror",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 589813209,
+  "storage_human": "590 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenVoiceOS/stt_ka_fastconformer_hybrid_large_pc_onnx · Hugging Face",
+      "url": "https://huggingface.co/OpenVoiceOS/stt_ka_fastconformer_hybrid_large_pc_onnx",
+      "snippet": "Instructions to use OpenVoiceOS/stt_ka_fastconformer_hybrid_large_pc_onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "OpenVoiceOS/stt_ka_fastconformer_hybrid_large_pc_onnx at main",
+      "url": "https://huggingface.co/OpenVoiceOS/stt_ka_fastconformer_hybrid_large_pc_onnx/tree/main",
+      "snippet": "Instructions to use OpenVoiceOS/stt_ka_fastconformer_hybrid_large_pc_onnx with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "stt_ka_fastconformer_hybrid_large_pc_onnx: Model Details, Context ...",
+      "url": "https://essamamdani.com/ai-models/hf-openvoiceos-stt-ka-fastconformer-hybrid-large-pc-onnx",
+      "snippet": "Supported capabilities onnx-asronnxnemo-conformer-ctcautomatic-speech-recognitionspeech-to-textctcfastconformernemoopenvoiceoskabase model:nvidia/stt ka fastconformer ..."
+    },
+    {
+      "title": "ONNX Runtime | Models",
+      "url": "https://onnxruntime.ai/models",
+      "snippet": "ONNX Models - find ONNX models for natural language processing, computer vision, and more."
+    },
+    {
+      "title": "ONNX Model Zoo",
+      "url": "https://github.com/onnx/models",
+      "snippet": "Welcome to the ONNX Model Zoo! The Open Neural Network Exchange (ONNX) is an open standard format created to represent machine learning models. Supported by a robust community of partners, ONNX defines a common set of operators and a common file format to enable AI developers to use models with a variety of frameworks, tools, runtimes, and compilers. This repository is a curated collection of ..."
+    }
+  ]
+}

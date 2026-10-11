@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Alinealmeidagin/swin-t-matching-tiny2",
+  "slug": "alinealmeidagin-swin-t-matching-tiny2",
+  "author": "Alinealmeidagin",
+  "url": "https://huggingface.co/Alinealmeidagin/swin-t-matching-tiny2",
+  "created_at": "2026-10-11T00:07:54.000Z",
+  "updated_at": "2026-10-11T00:08:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "qualcomm/Swin-Tiny · Hugging Face",
+      "url": "https://huggingface.co/qualcomm/Swin-Tiny",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bartlomiejdudek/swin-t-matching · Hugging Face",
+      "url": "https://huggingface.co/bartlomiejdudek/swin-t-matching",
+      "snippet": "Overview A research-oriented Swin T prototype targeting Matching. The included tiny setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "ai-hub-models/src/qai_hub_models/models/swin_tiny/README.md at ... - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/blob/main/src/qai_hub_models/models/swin_tiny/README.md",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    },
+    {
+      "title": "Anthropic AI model goes rogue, submits fake unsolved murder tip - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-goes-rogue-submits-fake-unsolved-murder-tip/ar-AA2dVgkr",
+      "snippet": "Rogue AI models have hacked companies and tried to break into government websites. Now one has submitted a fake tip for an unsolved crime. Police in Philadelphia say Anthropic alerted them this ..."
+    },
+    {
+      "title": "ai-hub-models/qai_hub_models/models/swin_tiny at main - GitHub",
+      "url": "https://github.com/qualcomm/ai-hub-models/tree/main/qai_hub_models/models/swin_tiny",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - qualcomm/ai-hub-mo..."
+    }
+  ]
+}

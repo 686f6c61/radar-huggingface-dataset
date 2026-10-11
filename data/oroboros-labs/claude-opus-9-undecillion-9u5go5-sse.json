@@ -5,7 +5,7 @@
   "author": "oroboros-labs",
   "url": "https://huggingface.co/oroboros-labs/claude-opus-9-undecillion-9u5go5-sse",
   "created_at": "2026-10-01T15:23:36.000Z",
-  "updated_at": "2026-10-10T00:44:10.000Z",
+  "updated_at": "2026-10-10T20:32:48.000Z",
   "license": "oroboros-labs-proprietary",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -59,7 +59,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 426,
+  "downloads_30d": 779,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

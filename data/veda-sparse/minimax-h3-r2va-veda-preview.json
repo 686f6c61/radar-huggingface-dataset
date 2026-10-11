@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Veda-Sparse/Minimax-H3-R2VA-Veda-Preview",
+  "slug": "veda-sparse-minimax-h3-r2va-veda-preview",
+  "author": "Veda-Sparse",
+  "url": "https://huggingface.co/Veda-Sparse/Minimax-H3-R2VA-Veda-Preview",
+  "created_at": "2026-10-07T04:49:55.000Z",
+  "updated_at": "2026-10-08T10:18:08.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "veda_tile_score_predictor",
+    "ref-to-video",
+    "video",
+    "audio",
+    "text-to-audio-video",
+    "sparse-attention",
+    "block-sparse",
+    "veda",
+    "fp8",
+    "text-to-video",
+    "arxiv:2605.30325",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 664,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449816148,
+  "storage_human": "450 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3, larryvrh/MiniMax-H3-Turbo-Lora",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Veda — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Veda",
+      "snippet": "La sémantique du nom veda - s'étend donc du sens de « découverte, révélation » qui correspond à l'expérience des premiers sages …"
+    },
+    {
+      "title": "Veda France",
+      "url": "https://vedafrance.com/",
+      "snippet": "Que vous ayez besoin de joints pour le BTP et la construction ou pour un projet résidentiel, Veda France a la solution qu’il vous faut. …"
+    },
+    {
+      "title": "Rig-Véda — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Rig-V%C3%A9da",
+      "snippet": "Il fait partie des quatre grands textes canoniques (Shruti) de l' hindouisme qui sont connus sous le nom de Veda. C'est l'un des plus …"
+    },
+    {
+      "title": "Vedas - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vedas",
+      "snippet": "There are four \"Vedic\" Samhitas: the Rig Veda, Yajur Veda, Sama Veda and Atharva Veda, most of which are available in several …"
+    },
+    {
+      "title": "Mythologie hindoue : Veda - Le Grenier de Clio",
+      "url": "https://mythologica.fr/hindou/livre/veda.htm",
+      "snippet": "Tout le Veda est rédigé en sanskrit, langue indo-européenne, sœur du grec, du hittite, du latin, des parlers germaniques, celtiques, …"
+    }
+  ]
+}

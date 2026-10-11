@@ -5,7 +5,7 @@
   "author": "Fajer94",
   "url": "https://huggingface.co/Fajer94/sentiment_model",
   "created_at": "2026-10-09T17:53:23.000Z",
-  "updated_at": "2026-10-09T17:53:42.000Z",
+  "updated_at": "2026-10-10T13:14:51.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
@@ -33,7 +33,7 @@
     "safetensors"
   ],
   "is_conversational": false,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

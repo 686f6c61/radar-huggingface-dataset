@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-sym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-7b-base-v1-0-auto_gptq-int4-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-auto_gptq-int4-gs64-sym",
+  "created_at": "2026-10-10T20:26:43.000Z",
+  "updated_at": "2026-10-10T20:27:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "gptq",
+    "auto-gptq",
+    "autogptq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "4-bit",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-7B-base-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-7B-base-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1416040448,
+  "parameters_human": "1.42B",
+  "storage_bytes": 5446164600,
+  "storage_human": "5.4 GB",
+  "base_model": "sapienzanlp/Minerva-7B-base-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emmie_Bunny — Recorded Oil Show - Aug 15, 2026",
+      "url": "https://bestcamarchive.com/girl/emmie_bunny/emmie_bunny-recorded-oil-show-15-08-26",
+      "snippet": "Aug 15, 2026 · Watch the recorded Chaturbate webcam show by Emmie_Bunny, captured on August 15, 2026 at 23:51. Session …"
+    },
+    {
+      "title": "Bunni Emmie – Telegram",
+      "url": "https://t.me/s/bunniemmietele",
+      "snippet": "2.91K links My only telegram channel 🩵 Download Telegram Bunni Emmie 64K subscribers"
+    },
+    {
+      "title": "em (@bunni.emmiee) - Urlebird",
+      "url": "https://urlebird.com/user/bunni.emmiee/",
+      "snippet": "Em is a TikTok macro influencer with 225 videos and a normal engagement rate 6.23%. They post 18 videos in month and earn up to …"
+    },
+    {
+      "title": "em (@bunni.emmiee) TikTok VODs & Stream Recordings",
+      "url": "https://streamrecorder.io/tiktok/@bunni.emmiee",
+      "snippet": "Sep 26, 2026 · View recent TikTok streams from em, including VODs, stream recordings, preview images, dates, durations, activity …"
+    },
+    {
+      "title": "bunni_emmi - Reddit",
+      "url": "https://www.reddit.com/r/bunni_emmi/about/",
+      "snippet": "r/bunni_emmi A chipA close button. Get appGet the Reddit appLog InLog in to Reddit. Expand user menuOpen settings menu. Log …"
+    }
+  ]
+}

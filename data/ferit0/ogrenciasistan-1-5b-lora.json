@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ferit0/OgrenciAsistan-1.5B-LoRA",
+  "slug": "ferit0-ogrenciasistan-1-5b-lora",
+  "author": "ferit0",
+  "url": "https://huggingface.co/ferit0/OgrenciAsistan-1.5B-LoRA",
+  "created_at": "2026-10-11T00:07:00.000Z",
+  "updated_at": "2026-10-11T00:07:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoRA AI Models (17,990) | Civitai",
+      "url": "https://civitai.com/tag/lora",
+      "snippet": "Browse 17,990 AI models tagged \"LoRA\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "10,000+ LoRA Models for Flux, Wan & SDXL | Browse Free",
+      "url": "https://loraai.io/loras",
+      "snippet": "Browse 10,000+ LoRA models for Flux, WAN, and SDXL. Character LoRAs, style LoRAs, and concept LoRAs with examples. Filter by model, tag, or search."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=lora",
+      "snippet": "Explore machine learning models. Muapi/jav-company-uncensored-redcraft-wan2.1-il-pony-flux.1-lora"
+    },
+    {
+      "title": "How to Customize an LLM for AI Agents using SFT and QLoRA",
+      "url": "https://www.freecodecamp.org/news/how-to-customize-an-llm-for-ai-agents-using-sft-and-qlora/",
+      "snippet": "In this tutorial, I&#x27;ll show you how to fine-tune a large language model for use in AI agents using supervised fine-tuning with QLoRA. This lets us customize a pre-trained model so it behaves the way we want. We&#x27;ll use a lightweight training workflow to update only a small part of the model. We&#x27;ll use Unsloth and the Hugging Face ecosystem to download a Qwen 1.5B base model, apply QLoRA ..."
+    },
+    {
+      "title": "Import custom models into Microsoft Foundry with Fireworks - Microsoft ...",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/how-to/fireworks/import-custom-models",
+      "snippet": "Learn how to import, register, and deploy custom model weights, LoRA adapters, and speculative decoding draft models in Microsoft Foundry using the Fireworks inference runtime."
+    }
+  ]
+}

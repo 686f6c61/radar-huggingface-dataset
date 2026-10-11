@@ -5,7 +5,7 @@
   "author": "luisastellet",
   "url": "https://huggingface.co/luisastellet/qwen-metaphor-unke",
   "created_at": "2026-09-28T16:08:34.000Z",
-  "updated_at": "2026-10-07T23:18:15.000Z",
+  "updated_at": "2026-10-10T23:35:13.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 3386,
+  "downloads_30d": 3410,
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 1493756698106,
-  "storage_human": "1493.8 GB",
+  "storage_bytes": 1494960255852,
+  "storage_human": "1495.0 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-source-free-common-split-vision-yaw30-1000-20261011",
+  "slug": "donghyun1228-pi05-libero-source-free-common-split-vision-yaw30-1000-20261011",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-split-vision-yaw30-1000-20261011",
+  "created_at": "2026-10-10T19:05:37.000Z",
+  "updated_at": "2026-10-10T19:07:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "libero",
+    "openpi",
+    "pi05",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6796073744,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Argent - Argent (1970) [full album] - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL4-oCE2y-CrHnHX71yhj19BkiDGlZc5Lz",
+      "snippet": "Argent - Argent (1970) [full album] by Frederic Scherer • Playlist • 10 videos • 69,185 views"
+    },
+    {
+      "title": "Cours de l'Argent en Direct : Prix de l'argent au Gramme et Kilo (Euro)",
+      "url": "https://www.achat-or-et-argent.fr/argent/cours-de-l-argent",
+      "snippet": "1 day ago · Suivez le cours de l'argent en temps réel. Retrouvez le prix de l'argent au gramme, à l'once et au kilo (Euro). Graphiques …"
+    },
+    {
+      "title": "France | Cauet feat. Mopral - Argent-Argent - YouTube",
+      "url": "https://www.youtube.com/watch?v=daLTQewmYaw",
+      "snippet": "Sep 3, 2016 · France | Cauet feat. Mopral - Argent-Argent The Dragostea Din Tei Channel (FinnishFlame) 4.22K subscribers …"
+    },
+    {
+      "title": "Argent - Argent - Cauet - Les paroles de la chanson",
+      "url": "https://www.paroles.cc/chanson,argent-argent,39323",
+      "snippet": "Argent-i Argent-ou Argent-o Argent-ah ah {x4} Mopral, salute, c’est coco, hum écoute Pour ce soir"
+    },
+    {
+      "title": "Paroles Argent - argent par Cauet - Paroles.net (lyrics)",
+      "url": "https://www.paroles.net/cauet/paroles-argent-argent",
+      "snippet": "Paroles du titre Argent - argent - Cauet avec Paroles.net - Retrouvez également les paroles des chansons les plus populaires de Cauet"
+    }
+  ]
+}

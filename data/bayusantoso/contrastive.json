@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bayusantoso/contrastive",
+  "slug": "bayusantoso-contrastive",
+  "author": "bayusantoso",
+  "url": "https://huggingface.co/bayusantoso/contrastive",
+  "created_at": "2026-10-11T00:09:25.000Z",
+  "updated_at": "2026-10-11T00:09:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia police - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police/ar-AA2dWiN6",
+      "snippet": "Philadelphia police have revealed that Anthropic&#x27;s artificial intelligence model submitted a false homicide tip to authorities, an incident disclosed separately by the tech company."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "GitHub - Contrastive-LM/CLM",
+      "url": "https://github.com/Contrastive-LM/CLM",
+      "snippet": "A System One Model for Fast and Generalizable Decision-Making | 📄 Blog | 🗣️ Discord | 🤗 Data & Models | 📚 API Reference | 🛠️ Fine-Tuning Tutorial | 🔥 Contrastive Language Models (CLMs) are a new class of System One model trained with a contrastive learning objective that connects states and actions. This repo serves CLM-8B behind a TypeSafe-compatible API. CLM-8B is pre ..."
+    },
+    {
+      "title": "A Systematic Review of Contrastive Learning in Medical AI: Foundations ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12938576/",
+      "snippet": "However, the effectiveness of AI systems in healthcare remains constrained by the scarcity of annotated datasets and the high cost of expert labeling. Medical annotation often requires domain specialists and is subject to inter-observer variability, making the implementation of large-scale supervised learning difficult [5, 6, 7]."
+    }
+  ]
+}

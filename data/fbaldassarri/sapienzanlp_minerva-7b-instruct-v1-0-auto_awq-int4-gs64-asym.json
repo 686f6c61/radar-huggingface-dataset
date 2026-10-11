@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-asym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-7b-instruct-v1-0-auto_awq-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_awq-int4-gs64-asym",
+  "created_at": "2026-10-10T20:29:54.000Z",
+  "updated_at": "2026-10-10T20:30:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "awq",
+    "auto-awq",
+    "autoawq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "4-bit",
+    "conversational",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-7B-instruct-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-7B-instruct-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1415319552,
+  "parameters_human": "1.42B",
+  "storage_bytes": 5443257032,
+  "storage_human": "5.4 GB",
+  "base_model": "sapienzanlp/Minerva-7B-instruct-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Industrial Steel Buildings | Prefab Metal Buildings | Allied Steel",
+      "url": "https://www.alliedbuildings.com/industrial-buildings/",
+      "snippet": "Build robust industrial steel buildings with Allied Steel. Customized metal building designs for manufacturing, storage warehouses, …"
+    },
+    {
+      "title": "3 Main Types of Industrial Buildings: Features and Construction Trends",
+      "url": "https://www.solutionsgc.com/different-types-of-industrial-buildings-and-their-characteristics/",
+      "snippet": "Jan 2, 2023 · Compare industrial building types, including manufacturing, warehouse, distribution, data-center and flex-space …"
+    },
+    {
+      "title": "Warehouse Construction: A Practical Guide | Mitti (by SafetyCulture)",
+      "url": "https://mitti.com/topics/commercial-construction/warehouse-construction",
+      "snippet": "Jul 16, 2026 · What is Warehouse Construction? Warehouse construction is the systematic process of planning, designing, and …"
+    },
+    {
+      "title": "Warehouse Construction Contractors | Industrial Contractor",
+      "url": "https://warehouseconstructioncontractors.com/",
+      "snippet": "Warehouse Construction Contractors London At Warehouse Construction Contractors, we support you throughout the process, from …"
+    },
+    {
+      "title": "Build the ideal Warehouse solution | Hallgruppen",
+      "url": "https://www.hallgruppen.com/construction/warehouse-building/",
+      "snippet": "Offering cost-effective and flexible warehouse building solutions with scalable layouts and fast construction for changing needs."
+    }
+  ]
+}

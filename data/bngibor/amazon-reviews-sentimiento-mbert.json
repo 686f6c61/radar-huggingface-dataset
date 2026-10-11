@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Bngibor/amazon-reviews-sentimiento-mbert",
+  "slug": "bngibor-amazon-reviews-sentimiento-mbert",
+  "author": "Bngibor",
+  "url": "https://huggingface.co/Bngibor/amazon-reviews-sentimiento-mbert",
+  "created_at": "2026-10-10T18:46:12.000Z",
+  "updated_at": "2026-10-10T18:46:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "es",
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "text-classification",
+    "sentiment-analysis",
+    "multilingual",
+    "es",
+    "en",
+    "fr",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "bert-base-multilingual-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sentiment-Analysis-on-Amazon-Reviews/MBert.ipynb at main - GitHub",
+      "url": "https://github.com/alexliqu09/Sentiment-Analysis-on-Amazon-Reviews/blob/master/MBert.ipynb",
+      "snippet": "In this project, we compared Spanish BERT and Multilingual BERT in the Sentiment Analysis task. - alexliqu09/Sentiment-Analysis-on-Amazon-Reviews"
+    },
+    {
+      "title": "sohan-ai/sentiment-analysis-model-amazon-reviews · Hugging Face",
+      "url": "https://huggingface.co/sohan-ai/sentiment-analysis-model-amazon-reviews",
+      "snippet": "The fine-tuned Distilled BERT model in this repository, deployed on Hugging Face, provides an accurate and efficient way to perform sentiment analysis on Amazon reviews."
+    },
+    {
+      "title": "alexliqu09/Sentiment-Analysis-on-Amazon-Reviews - GitHub",
+      "url": "https://github.com/alexliqu09/Sentiment-Analysis-on-Amazon-Reviews",
+      "snippet": "Applying BERT Fine Tuning to Sentiment Classification on Amazon Reviews Abstract Sentiment analysis has made great progress in recent years, due to the fact that companies want to have a better understanding of how their products are classified by their consumers."
+    },
+    {
+      "title": "Diegopr3312/mbert-sentiment-amazon-multilingual · Hugging Face",
+      "url": "https://huggingface.co/Diegopr3312/mbert-sentiment-amazon-multilingual",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Enhancing Product Design through AI-Driven Sentiment Analysis of Amazon ...",
+      "url": "https://www.mdpi.com/1999-4893/17/2/59",
+      "snippet": "Understanding customer emotions and preferences is paramount for success in the dynamic product design landscape. This paper presents a study to develop a prediction pipeline to detect the aspect and perform sentiment analysis on review data. The pre-trained Bidirectional Encoder Representation from Transformers (BERT) model and the Text-to-Text Transfer Transformer (T5) are deployed to ..."
+    }
+  ]
+}

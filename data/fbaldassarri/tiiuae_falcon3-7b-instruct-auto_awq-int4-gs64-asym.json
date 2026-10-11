@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-7b-instruct-auto_awq-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_awq-int4-gs64-asym",
+  "created_at": "2026-10-10T20:41:50.000Z",
+  "updated_at": "2026-10-10T20:42:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "awq",
+    "auto-awq",
+    "autoawq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "4-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-7B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1753635840,
+  "parameters_human": "1.75B",
+  "storage_bytes": 6806801080,
+  "storage_human": "6.8 GB",
+  "base_model": "tiiuae/Falcon3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sophie Dee Dirty Talk Tube Search (12 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=sophie+dee+dirty+talk&s=t",
+      "snippet": "12 results for sophie dee dirty talk tube, ordered by relevance, newest, popularity, duration or random"
+    },
+    {
+      "title": "Sophie Dee Dirty Talk Porn Videos - FapHouse",
+      "url": "https://faphouse.com/pornstars/sophie-dee/dirty-talk",
+      "snippet": "Sophie Dee wants you to put it in her mouth! Hottest Sophie Dee dirty talk porn videos of 2026 are here on Faphouse. Enjoy the …"
+    },
+    {
+      "title": "Sophie Dee Dirty Talk Porn Videos - FapHouse",
+      "url": "https://faphouse.com/search/videos?q=sophie+dee+dirty+talk",
+      "snippet": "Discover Sophie dee dirty talk porn videos on Faphouse. Enjoy full-length sex movies featuring the most explicit XXX action!"
+    },
+    {
+      "title": "Sophie Dee Dirty Talking Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/sophie+dee+dirty+talking",
+      "snippet": "Watch sophie dee dirty talking porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Sophie Dee Dirty Talking : XXXBunker.com Porn Tube",
+      "url": "https://xxxbunker.com/sophie_dee_dirty_talking",
+      "snippet": "XXXBunker is the biggest porn tube on the web with the largest selection of free full length porn videos and new videos added daily. …"
+    }
+  ]
+}

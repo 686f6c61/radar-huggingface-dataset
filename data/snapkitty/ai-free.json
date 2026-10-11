@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Snapkitty/ai-free",
+  "slug": "snapkitty-ai-free",
+  "author": "Snapkitty",
+  "url": "https://huggingface.co/Snapkitty/ai-free",
+  "created_at": "2026-10-07T15:23:58.000Z",
+  "updated_at": "2026-10-10T19:43:47.000Z",
+  "license": "parr-source-license-no-ai-training-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "snapkitty",
+    "october-2026-drop",
+    "lean4",
+    "forth",
+    "bcpl",
+    "wolfram",
+    "compiler",
+    "formal-verification",
+    "riscv",
+    "arm64",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapkitty Open Source - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/snapkitty/snapkitty-open-source",
+      "snippet": "FNI V2.0 for Snapkitty Open Source: Authority (A:0), Popularity (P:0), Recency (R:100), Quality (Q:50). Semantic (S) is a query-time baseline scored live at search."
+    },
+    {
+      "title": "Snapkitty/SNAPKITTYWEST-public-snapshot · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/SNAPKITTYWEST-public-snapshot",
+      "snippet": "SnapKitty Sovereign OS — a financial operating system where the AI agents think out loud. 11 agents. Each one named, opinionated, with a domain and a peer network. Every decision goes through a three-pillar preflight, runs through a local LLM (Ollama), and gets sealed with SHA-256. The War Room UI shows every step as it happens — in real time."
+    },
+    {
+      "title": "Snapkitty/snapkitty-merged · Hugging Face",
+      "url": "https://huggingface.co/Snapkitty/snapkitty-merged",
+      "snippet": "Instructions to use Snapkitty/snapkitty-merged with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp How to use Snapkitty/snapkitty-merged with llama.cpp: Install (macOS, Linux)"
+    },
+    {
+      "title": "GitHub - SNAPKITTYWEST/SNAPKITTYWEST: Most AI tools keep the machine in ...",
+      "url": "https://github.com/SNAPKITTYWEST/SNAPKITTYWEST",
+      "snippet": "Most AI tools keep the machine in the background. You talk, it responds, you paste the output. I built something different. SnapKitty is a financial operating system where the agents are visible, ..."
+    },
+    {
+      "title": "GitHub - ClawLabsAI/free-ai-models: Daily-updated list of free AI ...",
+      "url": "https://github.com/ClawLabsAI/free-ai-models",
+      "snippet": "The free AI model landscape changes every week — models get added, rate limits change, providers shut down without notice. This repo tracks it all automatically so you don&#x27;t have to. Use it to: Find the best free model for your current task Track which providers offer the most generous free tiers Get notified of new free models via GitHub Watch → Releases Build your own routing logic on ..."
+    }
+  ]
+}

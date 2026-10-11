@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ling-mini-2.0-GGUF",
+  "slug": "mradermacher-ling-mini-2-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ling-mini-2.0-GGUF",
+  "created_at": "2025-10-22T03:40:54.000Z",
+  "updated_at": "2026-10-10T19:32:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:inclusionAI/Ling-mini-2.0",
+    "base_model:quantized:inclusionAI/Ling-mini-2.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 382,
+  "trending_score": 0,
+  "parameters": 16255643392,
+  "parameters_human": "16.26B",
+  "storage_bytes": 111162112800,
+  "storage_human": "111.2 GB",
+  "base_model": "inclusionAI/Ling-mini-2.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx ...",
+      "url": "https://stackoverflow.com/questions/34670872/guid-should-contain-32-digits-with-4-dashes-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx",
+      "snippet": "Jan 8, 2016 · Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx). error? Ask Question Asked 10 …"
+    },
+    {
+      "title": "Why is the UUID split into chunks like XXXXXXXX-XXXX-XXXX-XXXX ...",
+      "url": "https://stackoverflow.com/questions/78169459/why-is-the-uuid-split-into-chunks-like-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+      "snippet": "Apr 4, 2012 · Most developers have seen UUIDs (Universally unique identifier), but what is the reason the UUID is split into chunks …"
+    },
+    {
+      "title": "如何用语言学分析句型“XXXX偶遇YYYY，ZZZZ强如怪物，拼尽全力也 …",
+      "url": "https://www.zhihu.com/question/6137044421",
+      "snippet": "Dec 6, 2024 · 你不了解怎么分析呢 这个是某个魂系up某期视频的标题，而且我记得一开始结尾是“拼尽全力战胜他” 正确翻译： 我 …"
+    },
+    {
+      "title": "电影史上无人超越的10部经典高分限制级情色电影，18岁以下不要看哦！",
+      "url": "https://www.zhihu.com/tardis/bd/art/499230796",
+      "snippet": "《可可西里的美丽传说》欧洲限制级情色电影榜首 9 《色，戒》 李安力作，携手梁朝伟与汤唯斩获8大奖项。战争背景下的王佳芝为 …"
+    },
+    {
+      "title": "Jade Venus - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/jade-venus.729476/",
+      "snippet": "Sep 23, 2026 · Hey guys and girls. who else would like to taste Jade Venus’s wonderful cock?"
+    }
+  ]
+}

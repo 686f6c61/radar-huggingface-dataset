@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "txgsync/K2-Horizon-MoVA-36B-A4B-MLA-oQ4e",
+  "slug": "txgsync-k2-horizon-mova-36b-a4b-mla-oq4e",
+  "author": "txgsync",
+  "url": "https://huggingface.co/txgsync/K2-Horizon-MoVA-36B-A4B-MLA-oQ4e",
+  "created_at": "2026-10-10T18:18:20.000Z",
+  "updated_at": "2026-10-10T19:32:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "k2-horizon",
+    "mova",
+    "moe",
+    "mla",
+    "transmla",
+    "multi-head-latent-attention",
+    "omlx",
+    "apple-silicon",
+    "custom_code",
+    "research-preview",
+    "oq",
+    "oqe",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:IFM/K2-Horizon-Pretrain-Data",
+    "dataset:IFM/K2-Horizon-Midtrain-Data",
+    "arxiv:2502.07864",
+    "arxiv:2410.10714",
+    "base_model:txgsync/K2-Horizon-MoVA-36B-A4B-MLA",
+    "base_model:quantized:txgsync/K2-Horizon-MoVA-36B-A4B-MLA",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37783744212,
+  "parameters_human": "37.78B",
+  "storage_bytes": 22921992622,
+  "storage_human": "22.9 GB",
+  "base_model": "txgsync/K2-Horizon-MoVA-36B-A4B-MLA",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classified Items For Sale in N'Djamena, Chad - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/106511226050901/classifieds/",
+      "snippet": "New and used Classifieds for sale in N'Djamena, Chad on Facebook Marketplace. Find great deals and sell your items for free."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/home%E2%80%A6/",
+      "snippet": "• Save time by accessing everything you need to manage your business across Facebook, Instagram and Messenger all in one …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://fr-fr.facebook.com/latest/1/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Planches d’équilibre en vente à Vernègues - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/104152749622123/balance-boards/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Planches d’équilibre en vente à Vernègues sur Facebook Marketplace. Trouvez des …"
+    },
+    {
+      "title": "Red Dead Redemption 2 PS4 Video Games - Facebook",
+      "url": "https://fr-fr.facebook.com/marketplace/1520255011547073/red-dead-redemption-2-ps4-video-games/",
+      "snippet": "Articles neufs et d’occasion dans la catégorie Red Dead Redemption 2 PS4 Video Games en vente à Bembla En-Nour sur Facebook …"
+    }
+  ]
+}

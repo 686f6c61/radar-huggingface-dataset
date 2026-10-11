@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yehorrudenko0518/vit-multitask",
+  "slug": "yehorrudenko0518-vit-multitask",
+  "author": "yehorrudenko0518",
+  "url": "https://huggingface.co/yehorrudenko0518/vit-multitask",
+  "created_at": "2026-10-11T00:03:53.000Z",
+  "updated_at": "2026-10-11T00:03:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 与 Qwen 3.5 谁更强，不同场景与部署条件下该如何选型？",
+      "url": "https://www.zhihu.com/question/2023493220097598697",
+      "snippet": "我也通过LM Studio本地部署体验了下Gemma-4-E4B、 Gemma-4-26B-A4B，现在一般的逻辑推理和数学题目已经无法难倒模型，因 …"
+    },
+    {
+      "title": "Qwen3.7-Max效果如何？在哪些方面有提升？ - 知乎",
+      "url": "https://www.zhihu.com/question/2040488587716781624",
+      "snippet": "不足： 输出问题：Qwen 系列模型喜欢在正式输出里写一部分推理过程，除非提示词明确禁止。 这不能算不可接受的问题，只不过对 …"
+    },
+    {
+      "title": "Qwen-3.8 27B开源权重发布，有什么值得关注的地方? - 知乎",
+      "url": "https://www.zhihu.com/question/2071737791004910417",
+      "snippet": "所以 Qwen 4.8-27B 这个模型，在大小上面还是非常讲究的。 我觉得现在这个后训练时代，能从最近的模型发布里面看出来，对于小 …"
+    },
+    {
+      "title": "为什么在性能相近的情况下，DeepSeek模型的影响力比Qwen模型更 …",
+      "url": "https://www.zhihu.com/question/2011451349578031942",
+      "snippet": "而Qwen虽然也开源，但更多是在展示 招式 的结果，而不是教你 怎么练。 所以回到这个问题，DeepSeek影响力为什么更大？ 不是因 …"
+    },
+    {
+      "title": "如何评价 qwen 3.6 转向闭源？ - 知乎",
+      "url": "https://www.zhihu.com/question/2022382258535809067",
+      "snippet": "千问是国内领先的大模型之一，特别适合中文语境下的低延时、高复杂度任务。其推理模型QwQ-32B能够高效解决绝大多数场景的推 …"
+    }
+  ]
+}

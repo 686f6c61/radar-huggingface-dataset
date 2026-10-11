@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Affine-120.1-GGUF",
+  "slug": "mradermacher-affine-120-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Affine-120.1-GGUF",
+  "created_at": "2025-10-22T05:40:08.000Z",
+  "updated_at": "2026-10-10T22:54:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 139,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 170323551552,
+  "storage_human": "170.3 GB",
+  "base_model": "Maziko/Affine-120.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

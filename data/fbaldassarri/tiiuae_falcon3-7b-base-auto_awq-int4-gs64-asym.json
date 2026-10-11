@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-7b-base-auto_awq-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_awq-int4-gs64-asym",
+  "created_at": "2026-10-10T20:35:30.000Z",
+  "updated_at": "2026-10-10T20:36:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "awq",
+    "auto-awq",
+    "autoawq",
+    "pytorch",
+    "causal-lm",
+    "autoround",
+    "auto-round",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "4-bit",
+    "en",
+    "base_model:tiiuae/Falcon3-7B-Base",
+    "base_model:quantized:tiiuae/Falcon3-7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1753635840,
+  "parameters_human": "1.75B",
+  "storage_bytes": 6806801080,
+  "storage_human": "6.8 GB",
+  "base_model": "tiiuae/Falcon3-7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Redo of Healer : TNK : Free Download, Borrow, and Streaming : …",
+      "url": "https://archive.org/details/kaifuku-jutsushi-no-yarinaoshi",
+      "snippet": "Jan 13, 2021 · Determined to put his life back on track, Keyaru decided to unleash a powerful healing spell that rewound the entire …"
+    },
+    {
+      "title": "Kaifuku Jutsushi no Yarinaoshi - Watch free Hentai Haven Stream",
+      "url": "https://hentaihaven.com/video/kaifuku-jutsushi-no-yarinaoshi/",
+      "snippet": "Thus, he used healing magic on the world itself to go back four years, deciding to redo everything. This is a heroic tale of one healing …"
+    },
+    {
+      "title": "Kaifuku Jutsushi no Yarinaoshi Episode 2 - Uncensored Hentai",
+      "url": "https://uncensoredhentai.xxx/watch/kaifuku-jutsushi-no-yarinaoshi-episode-2/",
+      "snippet": "Aug 1, 2022 · Thus, he used healing magic on the world itself to go back four years, deciding to redo everything. This is a heroic tale …"
+    },
+    {
+      "title": "Kaifuku Jutsushi no Yarinaoshi - Episode 1 - Hentai Haven",
+      "url": "https://hentaihaven.com/video/kaifuku-jutsushi-no-yarinaoshi/episode-1/",
+      "snippet": "But one day, he noticed what lay beyond healing magic, and was convinced that a healing magician was the strongest class. …"
+    },
+    {
+      "title": "Kaifuku Jutsushi no Yarinaoshi uncensored :: Nyaa",
+      "url": "https://nyaa.si/?f=0&c=0_0&q=Kaifuku+Jutsushi+no+Yarinaoshi+uncensored",
+      "snippet": "Please refine your search results if you can't find what you were looking for."
+    }
+  ]
+}

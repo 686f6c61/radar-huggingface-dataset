@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ductai199x/utter-cleanup-e4b",
+  "slug": "ductai199x-utter-cleanup-e4b",
+  "author": "ductai199x",
+  "url": "https://huggingface.co/ductai199x/utter-cleanup-e4b",
+  "created_at": "2026-10-10T23:53:02.000Z",
+  "updated_at": "2026-10-10T23:54:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "dictation",
+    "speech-to-text",
+    "text-normalization",
+    "grammatical-error-correction",
+    "lora",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7463013674,
+  "parameters_human": "7.46B",
+  "storage_bytes": 5294543640,
+  "storage_human": "5.3 GB",
+  "base_model": "google/gemma-4-e4b-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ductai199x (Tai Duc Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/ductai199x/datasets",
+      "snippet": "Forensic Self-Descriptions Are All You Need for Zero-Shot Detection, Open-Set Source Attribution, and Clustering of AI-generated Images liked a model 2 months ago facebook/sapiens2 liked a model 3 months ago MiniMaxAI/MiniMax-M2.7 View all activity"
+    },
+    {
+      "title": "ductai199x (Tai Duc Nguyen) - Hugging Face",
+      "url": "https://huggingface.co/ductai199x",
+      "snippet": "Multimedia Security, Image/Video Forensics, CV, NLP, Robotics"
+    },
+    {
+      "title": "ductai199x (Tai Duc Nguyen) / Repositories · GitHub",
+      "url": "https://github.com/ductai199x?tab=repositories",
+      "snippet": "ductai199x has 119 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Forensic-Self-Descriptions-CVPR25/README.md at main · ductai199x ...",
+      "url": "https://github.com/ductai199x/Forensic-Self-Descriptions-CVPR25/blob/main/README.md",
+      "snippet": "Zero-shot AI-generated image detection using forensic self-descriptions. Trained only on real images, detects deepfakes from any generator. Official implementation. CVPR 2025. - ductai199x/Forensic..."
+    },
+    {
+      "title": "Tai Duc Nguyen&#x27;s (ductai199x) software portfolio | Devpost",
+      "url": "https://devpost.com/ductai199x",
+      "snippet": "Tai Duc Nguyen specializes in C++, Python, Java, and Matlab. Follow Tai Duc Nguyen on Devpost!"
+    }
+  ]
+}

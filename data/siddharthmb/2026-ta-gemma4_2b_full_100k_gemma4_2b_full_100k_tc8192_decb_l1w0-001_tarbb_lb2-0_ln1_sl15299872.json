@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma4_2b_full_100k_gemma4_2b_full_100k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15299872",
+  "slug": "siddharthmb-2026-ta-gemma4_2b_full_100k_gemma4_2b_full_100k_tc8192_decb_l1w0-001_tarbb_lb2-0_ln1_sl15299872",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_100k_gemma4_2b_full_100k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15299872",
+  "created_at": "2026-05-03T00:23:31.000Z",
+  "updated_at": "2026-10-11T00:31:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 5509713699,
+  "parameters_human": "5.51B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemma/gemma-4/",
+      "snippet": "Gemma 4 models undergo the same rigorous infrastructure security protocols as our proprietary models. By choosing Gemma 4, enterprises and sovereign organizations gain a trusted, transparent foundation that delivers state-of-the-art capabilities while meeting the highest standards for security and reliability."
+    },
+    {
+      "title": "siddharthmb/2026.TA.gemma4_2b_scale1000_gemma4_2b_small_gemma4_2b_scale ...",
+      "url": "https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_scale1000_gemma4_2b_small_gemma4_2b_scale_1000_tc1024_decb_l1w0.001_sl15296694",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Fine-tuned Models for google/gemma-4-E2B - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:finetune:google%2Fgemma-4-E2B&p=1&sort=trending",
+      "snippet": "siddharthmb/2026.TA.gemma4_2b_full_10k_gemma4_2b_full_10k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298069"
+    },
+    {
+      "title": "Gemma 4 model card | Google AI for Developers",
+      "url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+      "snippet": "Hugging Face | GitHub | Launch Blog | Documentation | Technical Report License: Apache 2.0 | Authors: Google DeepMind Gemma is a family of open models built by Google DeepMind. Gemma 4 models are multimodal, handling text and image input (with audio supported on E2B, E4B, and 12B models) and generating text output. This release includes open-weights models in both pre-trained and instruction ..."
+    },
+    {
+      "title": "Gemma 4 — Google DeepMind",
+      "url": "https://gemma4.com/",
+      "snippet": "Gemma 4 is the fourth generation of Google DeepMind&#x27;s family of open models. Built from the same research, data pipelines, and safety work behind Gemini, Gemma 4 brings frontier-level capability to models you can download, inspect, fine-tune, and deploy on your own terms. Where earlier Gemma generations focused on raw language modeling, Gemma 4 introduces Thinking variants — models trained ..."
+    }
+  ]
+}

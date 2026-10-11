@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "cpral/instruktor-lotnictwa-1-hf",
+  "slug": "cpral-instruktor-lotnictwa-1-hf",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/instruktor-lotnictwa-1-hf",
+  "created_at": "2026-10-10T21:47:24.000Z",
+  "updated_at": "2026-10-10T23:26:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "pl",
+    "dataset:cpral/nauka-lotnictwa-1",
+    "base_model:speakleash/Bielik-1.5B-v3.0-Instruct",
+    "base_model:finetune:speakleash/Bielik-1.5B-v3.0-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1596507648,
+  "parameters_human": "1.60B",
+  "storage_bytes": 3193073112,
+  "storage_human": "3.2 GB",
+  "base_model": "speakleash/Bielik-1.5B-v3.0-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

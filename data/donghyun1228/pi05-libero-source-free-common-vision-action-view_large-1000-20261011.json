@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-source-free-common-vision-action-view_large-1000-20261011",
+  "slug": "donghyun1228-pi05-libero-source-free-common-vision-action-view_large-1000-20261011",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-common-vision-action-view_large-1000-20261011",
+  "created_at": "2026-10-10T20:56:41.000Z",
+  "updated_at": "2026-10-10T21:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6862700711,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tetracycline (Antibiotics) Uses, Dosage, Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/tetracycline.html",
+      "snippet": "Aug 26, 2026 · Tetracycline is an antibiotic used to treat bacterial infections such as urinary tract infections, chlamydia and acne. …"
+    },
+    {
+      "title": "List of Tetracyclines + Uses, Types & Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/drug-class/tetracyclines.html",
+      "snippet": "Tetracyclines are a class of antibiotics that may be used to treat infections caused by microorganisms such as gram positive and …"
+    },
+    {
+      "title": "What does tetracycline look like? - Drugs.com",
+      "url": "https://www.drugs.com/image/tetracycline-images.html",
+      "snippet": "Tetracycline Pill Images Note: More than one picture of Tetracycline is shown below. This happens when a medicine is available in …"
+    },
+    {
+      "title": "Tetracycline - brand name list from Drugs.com",
+      "url": "https://www.drugs.com/ingredient/tetracycline.html",
+      "snippet": "Lists the various brand names available for medicines containing tetracycline. Find information on tetracycline use, treatment, drug …"
+    },
+    {
+      "title": "Tetracycline: Para qué sirve, Dosis y Efectos Secundarios",
+      "url": "https://www.drugs.com/mtm_esp/tetracycline.html",
+      "snippet": "Información para el paciente sobre Tetracycline: para qué sirve, dosis, efectos secundarios y cómo usar este medicamento."
+    }
+  ]
+}

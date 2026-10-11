@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-7b-base-auto_round-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-asym",
+  "created_at": "2026-10-10T20:40:47.000Z",
+  "updated_at": "2026-10-10T20:41:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "4-bit",
+    "en",
+    "base_model:tiiuae/Falcon3-7B-Base",
+    "base_model:quantized:tiiuae/Falcon3-7B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1753635840,
+  "parameters_human": "1.75B",
+  "storage_bytes": 6806801080,
+  "storage_human": "6.8 GB",
+  "base_model": "tiiuae/Falcon3-7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-sym · Hugging Face",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Base-auto_round-int4-gs64-sym",
+      "snippet": "Note: this INT4 version of Falcon3 7B Base has been quantized for inference on Intel CPU, Intel iGPU (Arc) via intel-extension-for-pytorch, Intel NPU (AI Boost on Core Ultra series) via OpenVINO."
+    },
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym",
+      "snippet": "tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym Like 1 Text Generation Transformers Safetensors PyTorch English llama autoround auto-round causal-lm intel-autoround intel woq weights-only-quantization falcon falcon3 tii 4-bit precision conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "tiiuae_Falcon3-7B-Base-autogptq-int8-gs128-asym",
+      "url": "https://friendli.ai/models/fbaldassarri/tiiuae_Falcon3-7B-Base-autogptq-int8-gs128-asym",
+      "snippet": "Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "tiiuae_Falcon3-7B-Base-autoround-int8-gs128-asym",
+      "url": "https://friendli.ai/models/fbaldassarri/tiiuae_Falcon3-7B-Base-autoround-int8-gs128-asym",
+      "snippet": "Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Falcon3-7B-Base · Model · Inferix",
+      "url": "https://inferix.co/models/tiiuae/Falcon3-7B-Base",
+      "snippet": "Falcon3 7B Base Falcon3 family of Open Foundation Models is a set of pretrained and instruct LLMs ranging from 1B to 10B. This repository contains the Falcon3 7B Base . It achieves state of art results (at the time of release) on reasoning, language understanding, instruction following, code and mathematics tasks."
+    }
+  ]
+}

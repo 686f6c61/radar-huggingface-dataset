@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "LocalAI-io/Qwen-Image-2.1-Anime-Fusal-GGUF",
+  "slug": "localai-io-qwen-image-2-1-anime-fusal-gguf",
+  "author": "LocalAI-io",
+  "url": "https://huggingface.co/LocalAI-io/Qwen-Image-2.1-Anime-Fusal-GGUF",
+  "created_at": "2026-10-10T20:21:24.000Z",
+  "updated_at": "2026-10-10T21:05:08.000Z",
+  "license": "mixed-qwen-research-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "stable-diffusion-cpp",
+  "languages": [],
+  "tags": [
+    "stable-diffusion-cpp",
+    "gguf",
+    "localai",
+    "stable-diffusion.cpp",
+    "qwen-image-2.1",
+    "lora",
+    "anime",
+    "text-to-image",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:DreamFast/Qwen3-VL-8B-Heretic-1.3.0",
+    "base_model:adapter:DreamFast/Qwen3-VL-8B-Heretic-1.3.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 11192695528,
+  "storage_human": "11.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1, DreamFast/Qwen3-VL-8B-Heretic-1.3.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LocalAI · Make AI run on every machine",
+      "url": "https://localai.io/",
+      "snippet": "LocalAI is the open source AI engine. Run any model, LLMs, vision, voice, image and video, on any hardware. No GPU required."
+    },
+    {
+      "title": "GitHub - mudler/LocalAI: LocalAI is the open-source AI engine. Run …",
+      "url": "https://github.com/mudler/LocalAI",
+      "snippet": "June 2026: LocalAI 4.5.0 — Native depth estimation and sound-event detection, NER-based PII filtering, and speaker-aware realtime …"
+    },
+    {
+      "title": "Quickstart - LocalAI",
+      "url": "https://localai.io/docs/basics/getting_started/",
+      "snippet": "Aug 16, 2026 · LocalAI includes a built-in AI agent platform with support for the Model Context Protocol (MCP). You can create …"
+    },
+    {
+      "title": "Home - localAI",
+      "url": "https://localai.fr/",
+      "snippet": "Avec LocalAi, intégrez une IA conversationnelle type chatGPT directement sur site. Confidentielle, sécurisée et personnalisable, …"
+    },
+    {
+      "title": "LocalAI - L'alternative open source puissante à OpenAI - Korben",
+      "url": "https://korben.info/localai-open-source-alternative-openai-api-rest-inference-locale-sans-gpu.html",
+      "snippet": "Mar 19, 2024 · Grâce à LocalAI, vous pouvez exécuter des modèles linguistiques, générer des images, de l'audio et bien d'autres …"
+    }
+  ]
+}

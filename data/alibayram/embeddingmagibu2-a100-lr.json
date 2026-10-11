@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "alibayram/embeddingmagibu2-a100-lr",
+  "slug": "alibayram-embeddingmagibu2-a100-lr",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/embeddingmagibu2-a100-lr",
+  "created_at": "2026-10-10T22:44:54.000Z",
+  "updated_at": "2026-10-11T00:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "embedding",
+    "turkish",
+    "retrieval",
+    "tokenizer-surgery",
+    "magibu-ai",
+    "tr",
+    "multilingual",
+    "arxiv:2605.29992",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1521436687,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QORNO.COM - Sex Videos",
+      "url": "https://www.qorno.com/",
+      "snippet": "QORNO.COM Is The Nr. 1 Source for Free Sex Videos. More Than 1 Million Sex & Porn Tube Movies and an Excellent Categories …"
+    }
+  ]
+}

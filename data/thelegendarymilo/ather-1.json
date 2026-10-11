@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TheLegendaryMilo/ather-1",
+  "slug": "thelegendarymilo-ather-1",
+  "author": "TheLegendaryMilo",
+  "url": "https://huggingface.co/TheLegendaryMilo/ather-1",
+  "created_at": "2026-10-10T22:47:43.000Z",
+  "updated_at": "2026-10-10T22:48:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "code",
+    "python",
+    "javascript",
+    "html",
+    "css",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22328832,
+  "parameters_human": "22.3M",
+  "storage_bytes": 89322656,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 276 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Chat Gpt Long Text Input - GitHub",
+      "url": "https://github.com/NicoleFaye/Chat-Gpt-Long-Text-Input",
+      "snippet": "Chat Gpt Long Text Input A browser plugin for ChatGPT that simplifies sending large texts by breaking them into multiple messages. …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "Hướng dẫn phân tích kiểu tóc trên ChatGPT phù hợp khuôn mặt",
+      "url": "https://cellphones.com.vn/sforum/huong-dan-phan-tich-kieu-toc-tren-chatgpt",
+      "snippet": "Apr 26, 2026 · Hướng dẫn phân tích kiểu tóc trên ChatGPT chi tiết nhất. Khám phá bộ prompt bá đạo dùng ChatGPT Image 2 để tư …"
+    }
+  ]
+}

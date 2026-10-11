@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "bbrooklyn/td5-ner-person-content",
+  "slug": "bbrooklyn-td5-ner-person-content",
+  "author": "bbrooklyn",
+  "url": "https://huggingface.co/bbrooklyn/td5-ner-person-content",
+  "created_at": "2026-10-10T22:28:15.000Z",
+  "updated_at": "2026-10-10T22:28:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 65193219,
+  "parameters_human": "65.2M",
+  "storage_bytes": 260785212,
+  "storage_human": "261 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

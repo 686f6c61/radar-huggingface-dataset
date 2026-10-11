@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507",
+  "slug": "alxxtexxr-xlm-r-base-squad-tr-s42-legamex-lora-add-v261010223507",
+  "author": "alxxtexxr",
+  "url": "https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010223507",
+  "created_at": "2026-10-10T22:35:24.000Z",
+  "updated_at": "2026-10-10T22:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1131994201,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

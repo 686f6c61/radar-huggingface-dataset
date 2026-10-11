@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p001_tc32768_decb_l1w0.001_tarbb_lb2.0_ln1_sl15529832",
+  "slug": "siddharthmb-2026-ta-gemma2_2b_sparse_probe_tc32768_l1_0p001_tc32768_decb_l1w0-001_tarbb_lb2-0_ln1_sl15529832",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_sparse_probe_tc32768_l1_0p001_tc32768_decb_l1w0.001_tarbb_lb2.0_ln1_sl15529832",
+  "created_at": "2026-05-22T22:38:26.000Z",
+  "updated_at": "2026-10-11T00:23:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 6541122304,
+  "parameters_human": "6.54B",
+  "storage_bytes": 13116653297,
+  "storage_human": "13.1 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "passionate videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/passionate",
+      "snippet": "Soaking wet pink pussy babe gets an unforgettable CREAMPIE in Passionate Amateur Sex! Homemade Passionate Sex With A …"
+    },
+    {
+      "title": "'passionate' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/passionate",
+      "snippet": "Reina Hart And Rome Major In Petite Brunette MILF Passionate Ride!"
+    },
+    {
+      "title": "Romantic Porn Videos Filled with Passionate Sex Scenes | xHamster",
+      "url": "https://xhamster19.com/categories/romantic",
+      "snippet": "Horny couples enjoy romantic nights with lots of foreplay and sensual fucking. There's plenty of fingering, blowjobs, making out and …"
+    },
+    {
+      "title": "Passionate Porn Videos Offer Sensual and Romantic Sex | xHamster",
+      "url": "https://xhamster.com/categories/passionate",
+      "snippet": "Some stunnin' ladies prefer to have a passionate sexual experience rather than hardcore fucking. There are tons of sensual and …"
+    },
+    {
+      "title": "Passionate XXX Clips",
+      "url": "https://www.fuckedtube.xxx/categories/495/passionate",
+      "snippet": "These passionate fucking scenes showcase couples in raw, close-up moments with intense eye contact. Check out the latest on …"
+    }
+  ]
+}

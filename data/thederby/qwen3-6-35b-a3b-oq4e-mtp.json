@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "thederby/Qwen3.6-35B-A3B-oQ4e-mtp",
+  "slug": "thederby-qwen3-6-35b-a3b-oq4e-mtp",
+  "author": "thederby",
+  "url": "https://huggingface.co/thederby/Qwen3.6-35B-A3B-oQ4e-mtp",
+  "created_at": "2026-10-10T11:39:29.000Z",
+  "updated_at": "2026-10-10T21:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "omlx",
+    "oq",
+    "quantized",
+    "qwen3.6",
+    "moe",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 21622873144,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GUESS Femme | Vêtements, Sacs et Chaussures | GUESS FR",
+      "url": "https://www.guess.eu/fr-fr/guess/femme",
+      "snippet": "Découvrez la mode femme GUESS en France. Retrouvez les vêtements nouvelle saison, robes, jeans, sacs, chaussures et …"
+    },
+    {
+      "title": "GUESS® Official Online Shop - Fashion Apparel since 1981",
+      "url": "https://www.guess.com/en/home/",
+      "snippet": "By subscribing, you enroll in the GUESS loyalty program and agree to our Terms & Conditions. You also acknowledge our Privacy …"
+    },
+    {
+      "title": "Sacs Femme – Découvrez | GUESS® FR",
+      "url": "https://www.guess.eu/fr-fr/guess/femme/sacs",
+      "snippet": "Découvrez des designs remarquables et des détails iconiques pour compléter chaque look. Achetez en ligne. Visitez le Site Officiel …"
+    },
+    {
+      "title": "Liste des participants Guess Octobre Rose - krys.com",
+      "url": "https://www.krys.com/liste-des-participants-guess-octobre-rose",
+      "snippet": "Opération GUESS Octobre Rose disponible en exclusivité chez Krys en France dans les magasins participants à partir du 1er …"
+    },
+    {
+      "title": "Guess USA | GUESS US ®",
+      "url": "https://www.guess.com/en-us/guess-usa",
+      "snippet": "Official site for fashion, jeans and accessories."
+    }
+  ]
+}

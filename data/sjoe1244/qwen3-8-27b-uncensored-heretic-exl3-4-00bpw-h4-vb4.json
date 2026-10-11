@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sjoe1244/Qwen3.8-27B-Uncensored-Heretic-exl3-4.00bpw-h4-vb4",
+  "slug": "sjoe1244-qwen3-8-27b-uncensored-heretic-exl3-4-00bpw-h4-vb4",
+  "author": "sjoe1244",
+  "url": "https://huggingface.co/sjoe1244/Qwen3.8-27B-Uncensored-Heretic-exl3-4.00bpw-h4-vb4",
+  "created_at": "2026-10-10T18:45:32.000Z",
+  "updated_at": "2026-10-10T18:48:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "exl3",
+    "tabbyapi",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "mtp",
+    "vision",
+    "conversational",
+    "quantized",
+    "image-text-to-text",
+    "base_model:llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved",
+    "base_model:quantized:llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8038307200,
+  "parameters_human": "8.04B",
+  "storage_bytes": 16096980255,
+  "storage_human": "16.1 GB",
+  "base_model": "llmfan46/Qwen3.8-27B-Uncensored-Heretic-Native-MTP-Preserved",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-27B-Uncensored-Heretic-v3 - Hugging Face",
+      "url": "https://huggingface.co/OS-Software/Qwen3.8-27B-Uncensored-Heretic-v3/blob/main/README.md",
+      "snippet": "Qwen3.8-27B brings these advances to a compact, deployment-friendly dense model: a native vision-language model that understands images and videos, with flexible thinking control, designed to carry complex, multi-step tasks through to completion with greater reliability."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+      "url": "https://huggingface.co/Ryn1998/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF/blob/main/README.md",
+      "snippet": "Qwen3.8-27B RVN Heretic Abliterated Uncensored (GGUF) RVN is a double-refined abliterated variant of Qwen3.8-27B, built on top of trohrbaugh/Qwen3.8-27B-heretic-ara (an ARA abliteration by Tim Rohrbaugh) and further refined with two additional full-weight ARA passes targeting residual refusals. It retains very low behavioral damage (KL ≈ 0.0085) while reducing harmful-prompt refusals from 3/ ..."
+    },
+    {
+      "title": "GitHub - Wassimyounes01/qwen38-uncensored: Local Qwen 3.8 27B ...",
+      "url": "https://github.com/Wassimyounes01/qwen38-uncensored",
+      "snippet": "Check GPU offloading: ollama ps — if you see a CPU/GPU split, the model is partially on CPU Force all layers to GPU: Already set in Modelfile.mac (num_gpu 999), but verify with ollama show qwen3.8:27b-uncensored Reduce context: QWEN_NUM_CTX=4096 node examples/chat.cjs \"test\" — smaller KV cache = less memory Switch to MLX: node bin/install.cjs --mlx — 30-50% faster on Apple Silicon Close ..."
+    },
+    {
+      "title": "Qwen3.8-27B-Uncensored-Heretic-v3 — Abliterated Model Card",
+      "url": "https://www.abliteratedmodels.org/qwen3.8-27b-uncensored-heretic-v3/",
+      "snippet": "Qwen3.8-27B-Uncensored-Heretic-v3 will attempt offensive-security prompts that a hosted commercial model declines, which is what makes it usable for red-team corpus generation and for measuring what an unaligned model of this class produces."
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-Abliterated-Uncensored — Abliterated Model Card",
+      "url": "https://www.abliteratedmodels.org/qwen3.8-27b-heretic-abliterated-uncensored/",
+      "snippet": "Qwen3.8-27B-Heretic-Abliterated-Uncensored is a Heretic-ablated build of Qwen3.8-27B, released by 0bserverx, 27B parameters, 1.3M downloads."
+    }
+  ]
+}

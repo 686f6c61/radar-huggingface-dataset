@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "myflow-ai/whisper-medium.en-gguf",
+  "slug": "myflow-ai-whisper-medium-en-gguf",
+  "author": "myflow-ai",
+  "url": "https://huggingface.co/myflow-ai/whisper-medium.en-gguf",
+  "created_at": "2026-10-11T00:15:04.000Z",
+  "updated_at": "2026-10-11T00:16:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "whisper",
+    "openai",
+    "en",
+    "automatic-speech-recognition",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-medium.en",
+    "base_model:quantized:openai/whisper-medium.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763873376,
+  "parameters_human": "763.9M",
+  "storage_bytes": 831460928,
+  "storage_human": "831 MB",
+  "base_model": "openai/whisper-medium.en",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/u/0",
+      "snippet": "One of YouTube’s most creative prop-making duos, @WickedMakers, is known for creating spectacular spooky creations. In …"
+    },
+    {
+      "title": "Super U, Hyper U, Supermarché, Hypermarché, U Express | Magasin U",
+      "url": "https://www.magasins-u.com/",
+      "snippet": "Découvrez les produits U, les catalogues promotions, les jeux, avantages Carte U, livraison à domicile… et tous les services de …"
+    },
+    {
+      "title": "Tous les catalogues et prospectus de nos supermarchés | Magasins U",
+      "url": "https://www.magasins-u.com/promotions/tous-les-catalogues",
+      "snippet": "Votre magasin U, c’est : Un magasin proche de chez vous . Un magasin en ligne pour récupérer vos courses."
+    },
+    {
+      "title": "U - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/U",
+      "snippet": "U derives from the Semitic waw, as does F, and later, Y, W, and V. Its oldest ancestor goes back to Egyptian hieroglyphs, and is …"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Calcium-Opus-14B-Elite-Stock-GGUF",
+  "slug": "mradermacher-calcium-opus-14b-elite-stock-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Calcium-Opus-14B-Elite-Stock-GGUF",
+  "created_at": "2025-01-26T09:25:30.000Z",
+  "updated_at": "2026-10-10T22:55:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "en",
+    "base_model:prithivMLmods/Calcium-Opus-14B-Elite-Stock",
+    "base_model:quantized:prithivMLmods/Calcium-Opus-14B-Elite-Stock",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 225,
+  "trending_score": 0,
+  "parameters": 14765947904,
+  "parameters_human": "14.77B",
+  "storage_bytes": 102011154944,
+  "storage_human": "102.0 GB",
+  "base_model": "prithivMLmods/Calcium-Opus-14B-Elite-Stock",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

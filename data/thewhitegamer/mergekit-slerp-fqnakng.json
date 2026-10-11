@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TheWhiteGamer/mergekit-slerp-fqnakng",
+  "slug": "thewhitegamer-mergekit-slerp-fqnakng",
+  "author": "TheWhiteGamer",
+  "url": "https://huggingface.co/TheWhiteGamer/mergekit-slerp-fqnakng",
+  "created_at": "2026-10-11T00:03:14.000Z",
+  "updated_at": "2026-10-11T00:09:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "base_model:deepseek-ai/deepseek-coder-6.7b-base",
+    "base_model:merge:deepseek-ai/deepseek-coder-6.7b-base",
+    "base_model:deepseek-ai/deepseek-coder-6.7b-instruct",
+    "base_model:merge:deepseek-ai/deepseek-coder-6.7b-instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6740512768,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13481059240,
+  "storage_human": "13.5 GB",
+  "base_model": "deepseek-ai/deepseek-coder-6.7b-base, deepseek-ai/deepseek-coder-6.7b-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MergeKit Tutorial: Merge LLMs with SLERP — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-mergekit-create-custom-llms-via-model-merging",
+      "snippet": "Learn how to use MergeKit to merge multiple LLMs. This tutorial covers installation, YAML config creation, and running the SLERP merge process."
+    },
+    {
+      "title": "mergekit/mergekit/merge_methods/slerp.py at main · arcee-ai ... - GitHub",
+      "url": "https://github.com/arcee-ai/mergekit/blob/main/mergekit/merge_methods/slerp.py",
+      "snippet": "Tools for merging pretrained large language models. - arcee-ai/mergekit"
+    },
+    {
+      "title": "GitHub - arcee-ai/mergekit: Tools for merging pretrained large language ...",
+      "url": "https://github.com/arcee-ai/mergekit",
+      "snippet": "This will run the merge and write your merged model to ./output-model-directory. For more information on the arguments accepted by mergekit-yaml run the command mergekit-yaml --help."
+    },
+    {
+      "title": "Mergekit — Toolkit for Merging Pretrained LLMs · TokRepo",
+      "url": "https://tokrepo.com/en/workflows/mergekit-toolkit-merging-pretrained-llms-0a9ca395",
+      "snippet": "Mergekit is a toolkit by Arcee AI for combining multiple pretrained language models into a single model without additional training. Model merging has become a popular technique in the open source LLM community for creating models that combine the strengths of different fine-tunes, and Mergekit provides the most comprehensive set of merging ..."
+    },
+    {
+      "title": "MergeKit — Visual LLM Merging & Benchmark Engine",
+      "url": "https://www.mergekit.com/",
+      "snippet": "MergeKit Cloud builds directly on this engine to provide guided AI model selection, visual architecture canvas, instant on-demand GPU cluster provisioning, and automated benchmark evaluation — eliminating local hardware constraints."
+    }
+  ]
+}

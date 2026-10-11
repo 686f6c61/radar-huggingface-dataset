@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "KIRANKALLA/vit-cats-dogs",
+  "slug": "kirankalla-vit-cats-dogs",
+  "author": "KIRANKALLA",
+  "url": "https://huggingface.co/KIRANKALLA/vit-cats-dogs",
+  "created_at": "2026-10-10T22:57:29.000Z",
+  "updated_at": "2026-10-10T22:57:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800194,
+  "parameters_human": "85.8M",
+  "storage_bytes": 343223968,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

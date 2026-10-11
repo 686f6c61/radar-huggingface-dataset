@@ -5,7 +5,7 @@
   "author": "rajat-vajpayee",
   "url": "https://huggingface.co/rajat-vajpayee/cosmos2_8b_g1_pickplace",
   "created_at": "2026-10-08T07:03:17.000Z",
-  "updated_at": "2026-10-10T02:36:49.000Z",
+  "updated_at": "2026-10-10T11:36:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 396299558834,
-  "storage_human": "396.3 GB",
+  "storage_bytes": 528531969277,
+  "storage_human": "528.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tiamat-24B-Magistral-PaperWitch-heresy-GGUF",
+  "slug": "mradermacher-tiamat-24b-magistral-paperwitch-heresy-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tiamat-24B-Magistral-PaperWitch-heresy-GGUF",
+  "created_at": "2026-02-19T06:51:45.000Z",
+  "updated_at": "2026-10-10T22:54:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "instruct",
+    "finetune",
+    "axolotl",
+    "roleplay",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:MuXodious/Tiamat-24B-Magistral-PaperWitch-heresy",
+    "base_model:quantized:MuXodious/Tiamat-24B-Magistral-PaperWitch-heresy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 603,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 162766508864,
+  "storage_human": "162.8 GB",
+  "base_model": "MuXodious/Tiamat-24B-Magistral-PaperWitch-heresy",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "28 + 7 | What is 28 plus 7? - calculeitor.com",
+      "url": "https://calculeitor.com/28-plus-7",
+      "snippet": "The sum of twenty-eight plus seven is equal to thirty-five. We can also express that 28 plus 7 equals 35 as follows: What is 28 plus …"
+    },
+    {
+      "title": "Convert 28.7 Inches to Centimeters - CalculateMe.com",
+      "url": "https://www.calculateme.com/length/inches/to-centimeters/28.7",
+      "snippet": "How long is 28.7 inches? How far is 28.7 inches in centimeters? This simple calculator will allow you to easily convert 28.7 in to cm."
+    },
+    {
+      "title": "Bible Gateway passage: Psalm 28:7 - New International Version",
+      "url": "https://www.biblegateway.com/passage/?search=Psalm+28%3A7&version=NIV",
+      "snippet": "The LORD is my strength and my shield; my heart trusts in him, and he helps me. My heart leaps for joy, and with my song I praise him."
+    },
+    {
+      "title": "28 / 7 | What is 28 divided by 7? - calculeitor.com",
+      "url": "https://calculeitor.com/28-divided-by-7",
+      "snippet": "Find out what is 28 divided by 7. Divide 28/7. Calculate twenty-eight divided by seven."
+    },
+    {
+      "title": "Home | 28&7 [28and7.com]",
+      "url": "https://28and7.com/",
+      "snippet": "Situated on a high-profile corner directly across from the Fashion Institute of Technology in New York City’s Chelsea neighborhood, …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "prabanta-dev/Qwen3.5-0.8B-JNS",
+  "slug": "prabanta-dev-qwen3-5-0-8b-jns",
+  "author": "prabanta-dev",
+  "url": "https://huggingface.co/prabanta-dev/Qwen3.5-0.8B-JNS",
+  "created_at": "2026-10-11T00:06:01.000Z",
+  "updated_at": "2026-10-11T01:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "janas",
+    "jns",
+    "local-inference",
+    "cpu-inference",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 532897792,
+  "storage_human": "533 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prabanta-dev/Qwen3.5-9B-JNS · Hugging Face",
+      "url": "https://huggingface.co/prabanta-dev/Qwen3.5-9B-JNS",
+      "snippet": "Quantized GGUF: unsloth/Qwen3.5-9B-GGUF, by its authors. Converted to JNS by the Janas project (prabanta-dev/janas, GPL-3.-or-later; the licence of the engine does not apply to these files)."
+    },
+    {
+      "title": "GitHub - prabanta-dev/janas: Janas-LLM: large mixture-of-experts ...",
+      "url": "https://github.com/prabanta-dev/janas",
+      "snippet": "Of the dense ones Qwen3.5-0.8B, 2B and 9B, Qwen3-4B and Qwen3-0.6B are the ones that have been run here; the Qwen3.5 three were checked against llama.cpp on the same files."
+    },
+    {
+      "title": "GitHub - ABDtmx/Qwen3.5: Qwen3.5 is the large language model series ...",
+      "url": "https://github.com/ABDtmx/Qwen3.5",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on trillions of multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "qwen3.5:0.8b - ollama.com",
+      "url": "https://ollama.com/library/qwen3.5:0.8b",
+      "snippet": "Qwen3.5 features the following enhancement: Unified Vision-Language Foundation: Early fusion training on multimodal tokens achieves cross-generational parity with Qwen3 and outperforms Qwen3-VL models across reasoning, coding, agents, and visual understanding benchmarks."
+    },
+    {
+      "title": "Qwen3.5 0.8B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-0-8b",
+      "snippet": "This is the post-trained model, fine-tuned from Qwen3.5-.8B-Base. Qwen positions this size for prototyping, task-specific fine-tuning, and research or development use, and notes that in thinking mode it is more prone to thinking loops than other Qwen3.5 models, recommending tuned sampling parameters and streaming so runaway generations can be ..."
+    }
+  ]
+}

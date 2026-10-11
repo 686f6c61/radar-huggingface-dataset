@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KleptoCook/recipe-reader",
+  "slug": "kleptocook-recipe-reader",
+  "author": "KleptoCook",
+  "url": "https://huggingface.co/KleptoCook/recipe-reader",
+  "created_at": "2026-10-10T20:39:23.000Z",
+  "updated_at": "2026-10-10T20:42:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "recipes",
+    "llama.cpp",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 529297312,
+  "storage_human": "529 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Building an AI Recipe Generator with Fine-tuned GPT-2",
+      "url": "https://medium.com/@areeshakashif321/building-an-ai-recipe-generator-with-fine-tuned-gpt-2-56bf178fb148",
+      "snippet": "I built an AI-powered recipe generator that creates complete recipes from just a title or ingredient list using a fine-tuned GPT-2 model. 🎯 What I Built"
+    },
+    {
+      "title": "Create an AI-Powered Recipe Generator | Oracle India",
+      "url": "https://www.oracle.com/in/artificial-intelligence/create-an-ai-powered-recipe-generator/",
+      "snippet": "Learn to build an AI-powered recipe generator with ChefGPT using generative AI and LLMs. Find culinary inspiration with our step-by-step guide."
+    },
+    {
+      "title": "How To Spot an AI Recipe Before You Waste Ingredients",
+      "url": "https://www.simplyrecipes.com/how-to-identify-an-ai-recipe-11919677",
+      "snippet": "The vast majority of AI recipes are not intended to work. They are created to drive engagement (clicks, likes, and comments). These recipes are untested and created in the contextless black void of an algorithm. Even worse, there&#x27;s no person behind the recipe to care when it flops spectacularly, wasting your ingredients and time."
+    },
+    {
+      "title": "How to Use AI for Cooking and Meal Planning",
+      "url": "https://awesomeagents.ai/guides/how-to-use-ai-for-cooking-and-meal-planning/",
+      "snippet": "A practical beginner&#x27;s guide to using AI for weekly meal planning, grocery lists, and cooking help - with real prompt templates that work."
+    },
+    {
+      "title": "AI Cooking. The Anti-Hallucination Take. Open Your Fridge. Eat What You ...",
+      "url": "https://speakeater.com/ai-cooking",
+      "snippet": "FAQ — AI cooking What is the best AI cooking app? Speakeater is the only major Android cooking app in 2026 that uses the camera to read your fridge from photos as the primary input. ChatGPT can suggest recipes when you describe ingredients in text, but it generates the recipes (often with errors)."
+    }
+  ]
+}

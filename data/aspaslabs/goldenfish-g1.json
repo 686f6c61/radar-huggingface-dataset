@@ -35,8 +35,8 @@
     "license:apache-2.0",
     "region:us"
   ],
-  "likes": 1,
-  "downloads_30d": 28,
+  "likes": 2,
+  "downloads_30d": 35,
   "trending_score": 0,
   "parameters": 576164353,
   "parameters_human": "576.2M",
@@ -48,8 +48,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-10T03:04:36.287Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

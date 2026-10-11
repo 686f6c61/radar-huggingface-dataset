@@ -5,7 +5,7 @@
   "author": "SargeDev",
   "url": "https://huggingface.co/SargeDev/JEV-27B-VL-Uncensored",
   "created_at": "2026-10-10T15:29:30.000Z",
-  "updated_at": "2026-10-10T15:36:17.000Z",
+  "updated_at": "2026-10-10T19:20:45.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -39,10 +39,10 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": 26895998464,
-  "parameters_human": "26.90B",
-  "storage_bytes": 53812085333,
-  "storage_human": "53.8 GB",
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733582557,
+  "storage_human": "54.7 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "safetensors"

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "stale2000/LevelOfToken",
+  "slug": "stale2000-leveloftoken",
+  "author": "stale2000",
+  "url": "https://huggingface.co/stale2000/LevelOfToken",
+  "created_at": "2026-10-10T22:26:43.000Z",
+  "updated_at": "2026-10-10T23:26:09.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "level-of-token",
+    "lora",
+    "video-generation",
+    "research",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396878573,
+  "storage_human": "397 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价今天Open AI刚发布的GPT-4o? - 知乎",
+      "url": "https://www.zhihu.com/question/655917290",
+      "snippet": "这不刚刚通过输入问题，瞬间能给出答案 发布会上，也让gpt4o猜测人们的心情 GPT4o不仅能够分析照片拍摄的背景，还能准确判断 …"
+    },
+    {
+      "title": "有哪些比较优秀的AR开源项目，或者SDK？ - 知乎",
+      "url": "https://www.zhihu.com/question/36789791/answers/updated",
+      "snippet": "OpenAI Java SDK 主要为 Java 开发人员提供方便易用的 SDK 来与开放 AI 模型的 API 进行交互依赖库。 本次发布增加了 OpenAI 开 …"
+    },
+    {
+      "title": "OpenAI 发布基于 GPT-5.2 的Prism，专注科研领域的AI协作。科研人 …",
+      "url": "https://www.zhihu.com/question/1999888901490304692",
+      "snippet": "在AI这种几乎成了基础能源的时代，这1000块钱说实话太贵了，因为我完全可以复制粘贴到GPT上问，所以我开过overleaf会员，但是 …"
+    },
+    {
+      "title": "Chat ai国内接入版，与chat gpt有啥关系？",
+      "url": "https://www.zhihu.com/question/601463887",
+      "snippet": "May 17, 2023 · GPT-4，Chat GPT最新一代已公开模型，有更强大的推理能力，同样需要Plus会员才可使用。 Claude 2，由原Open …"
+    },
+    {
+      "title": "有代码的话本地搭建一个 ChatGPT 可行吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/583485737",
+      "snippet": "RLHF的三个阶段 [6] 基于 LLaMA 模型，Colossal-AI 首个开源包含完整 RLHF 流程的类Chat模型复现方案 ColossalChat，是目前 最 …"
+    }
+  ]
+}

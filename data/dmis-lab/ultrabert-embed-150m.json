@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dmis-lab/UltraBERT-Embed-150M",
+  "slug": "dmis-lab-ultrabert-embed-150m",
+  "author": "dmis-lab",
+  "url": "https://huggingface.co/dmis-lab/UltraBERT-Embed-150M",
+  "created_at": "2026-10-10T10:54:05.000Z",
+  "updated_at": "2026-10-10T19:46:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "ultrabert",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151032576,
+  "parameters_human": "151.0M",
+  "storage_bytes": 608220914,
+  "storage_human": "608 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UltraBERT - a dmis-lab Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/dmis-lab/ultrabert",
+      "snippet": "UltraBERT: Beyond the Limit of BERT Pre-Training. Pre-trained 150M/380M encoders and a text embedding model, English, 32K context."
+    },
+    {
+      "title": "UltraBERT: Beyond the Limit of BERT Pre-Training - OpenReview",
+      "url": "https://openreview.net/forum?id=5nZYvSLKhV",
+      "snippet": "Recent bidirectional encoders have been modernized with innovations from causal large language models (LLMs). However, the pretraining recipe itself remains inherited from small-scale conventions, leaving encoders underoptimized, with no single model performing competitively across both classification and retrieval tasks. In this work, we investigate how far encoder performance can be pushed ..."
+    },
+    {
+      "title": "dmis-lab (Data Mining and Information Systems Lab)",
+      "url": "https://huggingface.co/dmis-lab",
+      "snippet": "User profile of Data Mining and Information Systems Lab on Hugging Face"
+    },
+    {
+      "title": "Pre-trained Models | dmis-lab/biobert | DeepWiki",
+      "url": "https://deepwiki.com/dmis-lab/biobert/1.2-pre-trained-models",
+      "snippet": "This document describes the available pre-trained BioBERT model versions, their characteristics, file structure, and integration into the fine-tuning pipeline. These models serve as the foundation for all downstream biomedical NLP tasks in the BioBERT system."
+    },
+    {
+      "title": "DMIS Laboratory - Korea University · GitHub",
+      "url": "https://github.com/dmis-lab",
+      "snippet": "Data Mining & Information Systems Laboratory @ Korea University - DMIS Laboratory - Korea University"
+    }
+  ]
+}

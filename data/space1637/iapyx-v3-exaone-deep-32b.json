@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "space1637/iapyx-v3-exaone-deep-32b",
+  "slug": "space1637-iapyx-v3-exaone-deep-32b",
+  "author": "space1637",
+  "url": "https://huggingface.co/space1637/iapyx-v3-exaone-deep-32b",
+  "created_at": "2026-10-11T00:08:13.000Z",
+  "updated_at": "2026-10-11T00:08:25.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "safetensors",
+    "iapyx",
+    "ai-rookie-2026",
+    "korean",
+    "qlora",
+    "finetune-v3",
+    "ko",
+    "base_model:LGAI-EXAONE/EXAONE-Deep-32B",
+    "base_model:finetune:LGAI-EXAONE/EXAONE-Deep-32B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92328720,
+  "storage_human": "92 MB",
+  "base_model": "LGAI-EXAONE/EXAONE-Deep-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Napoléon Ier — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Napol%C3%A9on_Ier",
+      "snippet": "Arrivé au pouvoir en 1799 par le coup d'État du 18 Brumaire, il est Premier consul — consul à vie à partir du 2 août 1802 — jusqu'au …Read more"
+    },
+    {
+      "title": "Les Cent-Jours où la prise de pouvoir de Napoléon",
+      "url": "https://www.histoire-empire.fr/les-cent-jours-ou-la-prise-de-pouvoir-de-napoleon/",
+      "snippet": "En 1815, Napoléon revient en France et tente de reprendre le pouvoir, avec de nombreux partisans à son côté. Profitant de …"
+    },
+    {
+      "title": "1799, le coup d’État du 18 Brumaire : le général Napoléon Bonaparte ...",
+      "url": "https://www.napoleon.org/enseignants/documents/1799-le-coup-detat-du-18-brumaire-le-general-napoleon-bonaparte-prend-le-pouvoir-cours/",
+      "snippet": "À partir de 1789, la Révolution française bouleverse la France : elle supprime la monarchie héréditaire pour la remplacer par un …"
+    },
+    {
+      "title": "Comment Napoléon est-il arrivé au pouvoir ? - Biographie",
+      "url": "https://biographie.co/comment-napoleon-est-il-arrive-au-pouvoir/",
+      "snippet": "Dec 14, 2025 · Son ascension au pouvoir est un récit fascinant, jalonné de stratégies militaires, de coups d’État audacieux, et d’une …"
+    },
+    {
+      "title": "Le contexte historique qui mène Napoléon au pouvoir",
+      "url": "https://www.lumni.fr/article/le-contexte-historique-qui-mene-napoleon-au-pouvoir",
+      "snippet": "Jan 29, 2013 · Commencée dès son poste de Premier consul (1799), l'ascension de Napoléon s'achève par son sacre en 1804. …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-VAL-APEX-I-NanoPlus-V3-GGUF",
   "created_at": "2026-10-08T00:16:08.000Z",
-  "updated_at": "2026-10-10T00:08:32.000Z",
+  "updated_at": "2026-10-10T20:04:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 11981874176,
-  "storage_human": "12.0 GB",
+  "storage_bytes": 24165011520,
+  "storage_human": "24.2 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

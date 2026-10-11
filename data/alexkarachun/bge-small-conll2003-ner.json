@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AlexKarachun/bge-small-conll2003-ner",
+  "slug": "alexkarachun-bge-small-conll2003-ner",
+  "author": "AlexKarachun",
+  "url": "https://huggingface.co/AlexKarachun/bge-small-conll2003-ner",
+  "created_at": "2026-10-10T20:53:51.000Z",
+  "updated_at": "2026-10-10T20:54:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33215625,
+  "parameters_human": "33.2M",
+  "storage_bytes": 132885604,
+  "storage_human": "133 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Air Touraine, Vol en hélicoptère, montgolfière et dirigeable",
+      "url": "https://www.airtouraine.fr/",
+      "snippet": "Découvrez la Vallée de la Loire et ses châteaux emblématiques avec Air Touraine. Vols en hélicoptère et montgolfière pour une …"
+    },
+    {
+      "title": "Vols en Montgolfière au départ d'Amboise ou de la Sarthe - Air Touraine",
+      "url": "https://www.airtouraine.fr/montgolfiere/",
+      "snippet": "Vivez l’aventure d’un vol porté par le vent en montgolfière Air Touraine au-dessus des Châteaux de la Loire, et de la nature …"
+    },
+    {
+      "title": "Air Touraine - Réservation",
+      "url": "https://www.airtouraine.fr/reservation/",
+      "snippet": "Découvrez la Vallée de la Loire et ses châteaux emblématiques avec Air Touraine. Vols en hélicoptère et montgolfière pour une …"
+    },
+    {
+      "title": "Héliport de Neuvy le Roi (37) - Air Touraine",
+      "url": "https://www.airtouraine.fr/heliport-de-depart/heliport-de-neuvy-le-roi-37.html",
+      "snippet": "Héliport de Belleville, 37370 Neuvy-le-Roi Vols en hélicoptère, montgolfière et dirigeable au cœur du Val de Loire. 4,7/5"
+    },
+    {
+      "title": "Survolez le château de Chenonceau en montgolfière - Air Touraine",
+      "url": "https://www.airtouraine.fr/montgolfiere/vol-en-montgolfiere-chateau-de-la-loire/vol-en-montgolfiere-chateau-de-la-loire/",
+      "snippet": "Air Touraine Montgolfière : sécurité, agréments et expérience Air Touraine est une compagnie familiale basée en Val de Loire depuis …"
+    }
+  ]
+}

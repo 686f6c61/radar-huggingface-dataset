@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "salma414/dummy_model",
+  "slug": "salma414-dummy_model",
+  "author": "salma414",
+  "url": "https://huggingface.co/salma414/dummy_model",
+  "created_at": "2026-10-10T21:01:33.000Z",
+  "updated_at": "2026-10-10T21:01:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "camembert",
+    "fill-mask",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110655493,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442646188,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Credit Scores: Check and Monitor | Intuit Credit Karma",
+      "url": "https://www.creditkarma.com/free-credit-score",
+      "snippet": "Sep 30, 2026 · Check and monitor your free credit scores on Credit Karma with credit scores from Equifax and Transunion. No credit …"
+    },
+    {
+      "title": "ClearScore | Your credit score & report. For free. Forever.",
+      "url": "https://www.clearscore.com/",
+      "snippet": "Get your free credit score and credit report and be ClearScore sure. Check them as often as you like - it won’t affect your score."
+    },
+    {
+      "title": "Free Credit Score | TransUnion",
+      "url": "https://www.transunion.com/free-credit-score",
+      "snippet": "Review options to see your credit score. You can sign up for free score updates, monitoring, alerts, credit report & personalized …"
+    },
+    {
+      "title": "Experian: Credit Report, FICO® Score & Financial Tools",
+      "url": "https://www.experian.com/?msockid=21b9116569d768252668068b681269e4",
+      "snippet": "Get your free credit report and FICO® Score. Experian can help you with credit cards, loans, insurance, and more."
+    },
+    {
+      "title": "Credit scores, reports and much more - Intuit Credit Karma",
+      "url": "https://www.creditkarma.com/",
+      "snippet": "Intuit Credit Karma offers free credit scores, reports and insights. Get the info you need to take control of your credit."
+    }
+  ]
+}

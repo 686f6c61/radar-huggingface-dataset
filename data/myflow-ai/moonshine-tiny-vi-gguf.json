@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "myflow-ai/moonshine-tiny-vi-gguf",
+  "slug": "myflow-ai-moonshine-tiny-vi-gguf",
+  "author": "myflow-ai",
+  "url": "https://huggingface.co/myflow-ai/moonshine-tiny-vi-gguf",
+  "created_at": "2026-10-10T23:05:58.000Z",
+  "updated_at": "2026-10-10T23:06:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "moonshine",
+    "useful-sensors",
+    "encoder-decoder",
+    "automatic-speech-recognition",
+    "vi",
+    "arxiv:2509.02523",
+    "arxiv:1810.03993",
+    "base_model:moonshine-ai/moonshine-tiny-vi",
+    "base_model:quantized:moonshine-ai/moonshine-tiny-vi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27092736,
+  "parameters_human": "27.1M",
+  "storage_bytes": 35466944,
+  "storage_human": "35 MB",
+  "base_model": "UsefulSensors/moonshine-tiny-vi",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

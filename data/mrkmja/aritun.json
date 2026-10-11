@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mrkmja/AriTUN",
+  "slug": "mrkmja-aritun",
+  "author": "mrkmja",
+  "url": "https://huggingface.co/mrkmja/AriTUN",
+  "created_at": "2024-11-14T19:01:38.000Z",
+  "updated_at": "2026-10-11T00:26:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 410785556,
+  "storage_human": "411 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VS IMPOSTOR: LEGACY Mod for Friday Night Funkin' | FNF Mods",
+      "url": "https://gamebanana.com/mods/55652",
+      "snippet": "Apr 25, 2021 · Impostor Trouble it is double... A Friday Night Funkin' (FNF) Mod in the Executables category, submitted by Clowfoe"
+    },
+    {
+      "title": "FNF: Nocturnal Protocol [FAN RECREATION] (Update)",
+      "url": "https://gamebanana.com/mods/676799",
+      "snippet": "May 12, 2026 · Nocturnal Protocol (FAN RECREATION)... A Friday Night Funkin' (FNF) Mod in the Psych Mod Folders category, …"
+    },
+    {
+      "title": "Friday Night Funkin' D-Sides (REDUX) Mod for Friday Night Funkin'",
+      "url": "https://gamebanana.com/mods/652786",
+      "snippet": "Feb 13, 2026 · Think you've got what it takes?... A Friday Night Funkin' (FNF) Mod in the Executables category, submitted by …"
+    },
+    {
+      "title": "[Mid-Fight Masses] Mid-Fight Remaster Mod for Friday Night Funkin ...",
+      "url": "https://gamebanana.com/mods/288792",
+      "snippet": "May 23, 2021 · Mid-Fight Remaster... A Friday Night Funkin' (FNF) Mod in the Other/Misc category, submitted by AmazeinG666"
+    },
+    {
+      "title": "The Date Week Mod for Friday Night Funkin' | FNF Mods",
+      "url": "https://gamebanana.com/mods/307107",
+      "snippet": "Jul 21, 2021 · Play as Whitty as you hang with Carol on 3 dates!... A Friday Night Funkin' (FNF) Mod in the Executables category, …"
+    }
+  ]
+}

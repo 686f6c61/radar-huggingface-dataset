@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "angelvaldesmx/sohoros-slm-1B-GGUF",
+  "slug": "angelvaldesmx-sohoros-slm-1b-gguf",
+  "author": "angelvaldesmx",
+  "url": "https://huggingface.co/angelvaldesmx/sohoros-slm-1B-GGUF",
+  "created_at": "2026-10-11T00:26:02.000Z",
+  "updated_at": "2026-10-11T00:32:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 3296546440,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-11T02:01:18.637Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "56 Black Girls In Tights - Getty Images",
+      "url": "https://www.gettyimages.com/videos/black-girls-in-tights",
+      "snippet": "Browse 56 black girls in tights videos and clips available to use in your projects, or start a new search to explore more footage and b …"
+    },
+    {
+      "title": "#blackgirltights - TikTok",
+      "url": "https://www.tiktok.com/tag/blackgirltights",
+      "snippet": "Watch the latest videos about #blackgirltights on TikTok."
+    },
+    {
+      "title": "#uk #tights #schoolunifrom # #l4l #feet #blacktights #british ... - TikTok",
+      "url": "https://www.tiktok.com/@britishuniform3/video/7530035871697931542",
+      "snippet": "Jul 22, 2025 · 905 Likes, TikTok video from British Uniform (@britishuniform3): “#uk #tights #schoolunifrom # #l4l #feet #blacktights …"
+    },
+    {
+      "title": "Latest videos | TheBlackTube",
+      "url": "https://theblacktube.com/videos/latest?page_id=1",
+      "snippet": "The Black Tube is an American built Video Sharing and on Demand Platform which celebrates Black American and Afrocentric culture."
+    },
+    {
+      "title": "Nylon Empire | Site Updates",
+      "url": "https://nylon-empire.com/gallery.php",
+      "snippet": "Sep 12, 2026 · Browse our massive collection of vintage pantyhose and stockings galleries. Search thousands of amateur model …"
+    }
+  ]
+}

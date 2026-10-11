@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Hharrisnoah/matching-2023",
+  "slug": "hharrisnoah-matching-2023",
+  "author": "Hharrisnoah",
+  "url": "https://huggingface.co/Hharrisnoah/matching-2023",
+  "created_at": "2026-10-10T23:55:54.000Z",
+  "updated_at": "2026-10-10T23:56:00.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Philadelphia: Anthropic AI model submits false homicide tip",
+      "url": "https://www.ctvnews.ca/sci-tech/article/anthropic-ai-model-submits-false-homicide-tip-to-police-website/",
+      "snippet": "An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said, the latest incident of an AI model going rogue."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "PDF Proceedings of the First Workshop on Matching From Unstructured and ...",
+      "url": "https://aclanthology.org/2023.matching-1.pdf",
+      "snippet": "The primary objective of this workshop is to facilitate collaboration between research communities in academia and industries related to several domains, including natural language processing, language generation, deep learning, conversational AI, information extraction, data integration, knowledge graphs, and human-centered computing. For this inaugural edition of the Matching Workshop, we ..."
+    },
+    {
+      "title": "Flow Matching for Generative AI: Unlock Faster, Smarter Models",
+      "url": "https://datasciencedojo.com/tutorial/flow-matching-for-generative-ai/",
+      "snippet": "Discover Flow Matching, the next-generation approach to generative AI that simplifies modeling and speeds up sampling in Stable Diffusion 3."
+    },
+    {
+      "title": "Flow matching : The next frontier in Generative AI - Medium",
+      "url": "https://medium.com/@rsiddhant73/flow-matching-the-next-frontier-in-generative-ai-7cf02ebbe859",
+      "snippet": "Flow matching : The next frontier in Generative AI Recently Flux series of models by Flux.ai gained lots of attention 🔥 from the tech and non-tech community for all the right reasons, model is …"
+    }
+  ]
+}

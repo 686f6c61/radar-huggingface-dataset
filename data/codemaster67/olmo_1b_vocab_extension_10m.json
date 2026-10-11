@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Codemaster67/olmo_1b_vocab_extension_10m",
+  "slug": "codemaster67-olmo_1b_vocab_extension_10m",
+  "author": "Codemaster67",
+  "url": "https://huggingface.co/Codemaster67/olmo_1b_vocab_extension_10m",
+  "created_at": "2026-10-10T23:05:53.000Z",
+  "updated_at": "2026-10-10T23:06:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chemistry",
+    "smiles",
+    "olmo",
+    "causal-lm",
+    "qlora",
+    "4bit",
+    "en",
+    "dataset:Codemaster67/Unichem_10M",
+    "base_model:Codemaster67/Olmo-1b_token_extension_modern_molbert",
+    "base_model:adapter:Codemaster67/Olmo-1b_token_extension_modern_molbert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1038661464,
+  "storage_human": "1.0 GB",
+  "base_model": "Codemaster67/Olmo-1b_token_extension_modern_molbert",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers.Read more"
+    },
+    {
+      "title": "Witchcraft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Witchcraft",
+      "snippet": "Witch hunts took place among Christian European settlers in colonial America and the United States, most infamously the Salem …"
+    },
+    {
+      "title": "Witch (word) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Witch_(word)",
+      "snippet": "In literature, a 'witch' can now simply refer to an alluring woman capable of 'bewitching' others. In neopagan religions such as Wicca …"
+    },
+    {
+      "title": "W.I.T.C.H. — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/W.I.T.C.H.",
+      "snippet": "Leur nom de groupe vient de leurs initiales qui est un jeu de mots avec witch, qui signifie sorcière en anglais."
+    },
+    {
+      "title": "W.I.T.C.H. FR - YouTube",
+      "url": "https://www.youtube.com/@witchfr",
+      "snippet": "Pour les nostalgiques de l'adaptation de la bande dessinée W.I.T.C.H. en série TV ! Retrouvez les aventures des Gardiennes Will, …"
+    }
+  ]
+}

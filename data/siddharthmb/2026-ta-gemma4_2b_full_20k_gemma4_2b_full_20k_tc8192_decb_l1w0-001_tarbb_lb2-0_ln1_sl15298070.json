@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma4_2b_full_20k_gemma4_2b_full_20k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298070",
+  "slug": "siddharthmb-2026-ta-gemma4_2b_full_20k_gemma4_2b_full_20k_tc8192_decb_l1w0-001_tarbb_lb2-0_ln1_sl15298070",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma4_2b_full_20k_gemma4_2b_full_20k_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_sl15298070",
+  "created_at": "2026-05-07T19:39:12.000Z",
+  "updated_at": "2026-10-11T00:32:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 5509713699,
+  "parameters_human": "5.51B",
+  "storage_bytes": 11051686584,
+  "storage_human": "11.1 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bjorn Borg and Fila - What a match - The Sporting Blog",
+      "url": "https://thesporting.blog/bjorn-borg-and-fila-what-a-match/",
+      "snippet": "Jul 2, 2023 · When the newfound sports brand Fila signed the Swedish tennis player Bjorn Borg in 1975, he was only 19 and still had …"
+    },
+    {
+      "title": "Fila Borg – 80s Casual Classics",
+      "url": "https://www.80scasualclassics.co.uk/pages/fila-borg",
+      "snippet": "Bjorn Borg was possibly the most prominent influence behind the casual scene. The five time Wimbledon champion single-handedly …"
+    },
+    {
+      "title": "Bjorn Borg - Fondazione FILA Museum",
+      "url": "https://www.fondazionefila.com/en/tag/bjorn-borg/",
+      "snippet": "Bjorn Borg è un ex tennista svedese che tra il 1974 e il 1981 ha vinto 11 titoli del Grande Slam, indossando FILA con l'iconica polo Borg."
+    },
+    {
+      "title": "Fila Bj Borg - The 1980s Tennis Shop",
+      "url": "https://1980stennis.com/product-category/fila-bj-borg/?v=79cba1185463",
+      "snippet": "Sale!"
+    },
+    {
+      "title": "Bjorn Borg Fila - eBay",
+      "url": "https://www.ebay.com/shop/bjorn-borg-fila?_nkw=bjorn+borg+fila&msockid=3131330a25d16fd719e724e524b56e92",
+      "snippet": "Explore a wide range of our Bjorn Borg Fila selection. Find top brands, exclusive offers, and unbeatable prices on eBay. Shop now …"
+    }
+  ]
+}

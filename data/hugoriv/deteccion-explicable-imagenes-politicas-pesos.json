@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "HugoRiv/deteccion-explicable-imagenes-politicas-pesos",
+  "slug": "hugoriv-deteccion-explicable-imagenes-politicas-pesos",
+  "author": "HugoRiv",
+  "url": "https://huggingface.co/HugoRiv/deteccion-explicable-imagenes-politicas-pesos",
+  "created_at": "2026-10-10T21:06:21.000Z",
+  "updated_at": "2026-10-10T22:12:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "image-forensics",
+    "es",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89580310,
+  "storage_human": "90 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "¿Es real o IA? | huvs.ai — Validación humana de imágenes y vídeos",
+      "url": "https://www.huvs.ai/es",
+      "snippet": "En huvs.ai la verificación no depende de algoritmos son personas las que votan y generan un consenso. Sabrás si el contenido es real o IA con una señal clara — ideal para periodistas, educadores y quien necesite distinguir imágenes y vídeos auténticos de generados por inteligencia artificial."
+    },
+    {
+      "title": "Models in ES - Hugging Face",
+      "url": "https://huggingface.co/models?language=es",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Cómo Detectar Contenido con AI: Textos, Imágenes y Videos Falsos",
+      "url": "https://ailearningguides.com/product/como-detectar-contenido-con-ai-textos-imagenes-y-videos-falsos/",
+      "snippet": "Aprende a distinguir lo real de lo generado por AI. Esta guía te enseña señales prácticas para identificar textos, imágenes, voces y videos falsos, y proteger tus decisiones de la desinformación digital."
+    },
+    {
+      "title": "Detector de imágenes IA: Comprueba si tu foto o imagen ha sido generada ...",
+      "url": "https://mydetector.ai/es/ai-image-detector/",
+      "snippet": "El detector de imágenes IA identifica elementos manipulados o sospechosos y genera un informe detallado. Ya sea una obra de arte, una foto o una imagen generada por IA, nuestra herramienta te ayuda a entender las anomalías, evitar contenidos engañosos y tomar decisiones informadas."
+    },
+    {
+      "title": "5 Categories for Analyzing Political Images Without Losing ...",
+      "url": "https://www.youtube.com/watch?v=dpc2qjOMgmw",
+      "snippet": "¿Cómo se lee correctamente la imagen de un político o institución en la opinión pública?En este video se propone un sistema de cinco categorías para analizar..."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Raiyan465/kom-bish-rice-leaf",
+  "slug": "raiyan465-kom-bish-rice-leaf",
+  "author": "Raiyan465",
+  "url": "https://huggingface.co/Raiyan465/kom-bish-rice-leaf",
+  "created_at": "2026-10-10T20:56:31.000Z",
+  "updated_at": "2026-10-10T20:56:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "rice",
+    "plant-disease",
+    "bangladesh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17088395,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Raiyan465-F1/Raiyan465-F1",
+      "url": "https://github.com/Raiyan465-F1/Raiyan465-F1",
+      "snippet": "I build web and mobile products using AI-native workflows, with a focus on scalability, maintainability, and thoughtful engineering."
+    },
+    {
+      "title": "Raiden Ai, modeled and animated by me - YouTube",
+      "url": "https://www.youtube.com/watch?v=kpNXpq-bu1M",
+      "snippet": "#blender #blender3d #blenderanimation #genshin #genshinimpact #3dmodeling #hoshinoko"
+    },
+    {
+      "title": "AI VTuber Studio by Leaflit — Face-Tracked VTuber Model from One Image ...",
+      "url": "https://rfab.ai/vtuber-creator",
+      "snippet": "Make a Streaming-Ready VTuber From a Single Picture Without Rigging This studio builds a complete VTuber model from a single character image and needs no Live2D or mesh rigging. Generate the character with AI or upload a sprite of your own."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Harnessing artificial intelligence for sustainable rice leaf disease ...",
+      "url": "https://www.frontiersin.org/journals/plant-science/articles/10.3389/fpls.2025.1594329/full",
+      "snippet": "Discussion and conclusion: The proposed AI-driven system provides reliable and scalable rice leaf disease detection, supporting timely intervention to reduce yield loss. By strengthening rice production and promoting sustainable practices, the model contributes to SDG 2 by advancing global food security."
+    }
+  ]
+}

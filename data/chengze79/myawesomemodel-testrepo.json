@@ -4,8 +4,8 @@
   "slug": "chengze79-myawesomemodel-testrepo",
   "author": "chengze79",
   "url": "https://huggingface.co/chengze79/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-10T02:43:10.000Z",
-  "updated_at": "2026-10-10T02:43:18.000Z",
+  "created_at": "2026-10-10T18:50:08.000Z",
+  "updated_at": "2026-10-10T18:50:12.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -13,9 +13,6 @@
   "languages": [],
   "tags": [
     "transformers",
-    "pytorch",
-    "bert",
-    "feature-extraction",
     "license:mit",
     "endpoints_compatible",
     "region:us"

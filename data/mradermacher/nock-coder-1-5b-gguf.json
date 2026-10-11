@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/nock-coder-1.5b-GGUF",
+  "slug": "mradermacher-nock-coder-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/nock-coder-1.5b-GGUF",
+  "created_at": "2026-10-10T23:56:49.000Z",
+  "updated_at": "2026-10-11T01:49:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "solidity",
+    "lora",
+    "qwen2",
+    "en",
+    "base_model:Nock-AI/nock-coder-1.5b",
+    "base_model:adapter:Nock-AI/nock-coder-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206904832,
+  "storage_human": "14.2 GB",
+  "base_model": "Nock-AI/nock-coder-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nock-AI/nock-coder-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/Nock-AI/nock-coder-1.5b-GGUF",
+      "snippet": "Nock-AI / nock-coder-1.5b-GGUF Like 0 Follow NockAI 1 GGUF code conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/kernel-coder-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/kernel-coder-1.5b-GGUF",
+      "snippet": "mradermacher / kernel-coder-1.5b-GGUF like 0 Transformers GGUF English code c linux-kernel python conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "LLM Leaderboard 2026 - AI Models Ranked",
+      "url": "https://lmmarketcap.com/",
+      "snippet": "Live LLM leaderboard ranking 350+ AI models by benchmarks, pricing, speed, and capabilities. Compare GPT-5, Claude Opus, Gemini, DeepSeek, Llama, Mistral and more with source-backed freshness."
+    }
+  ]
+}

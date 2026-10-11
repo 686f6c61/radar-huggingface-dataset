@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Ramosmary/toy-prompt-engineering",
+  "slug": "ramosmary-toy-prompt-engineering",
+  "author": "Ramosmary",
+  "url": "https://huggingface.co/Ramosmary/toy-prompt-engineering",
+  "created_at": "2026-10-10T23:56:26.000Z",
+  "updated_at": "2026-10-10T23:56:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "The Complete Guide to Prompt Engineering [2026 Edition]",
+      "url": "https://studioinstance.github.io/techpulse/en/articles/prompt-engineering-guide.html",
+      "snippet": "In 2026, it&#x27;s widely accepted that 80% of an AI&#x27;s output quality is determined by the prompt. This guide covers the fundamentals through advanced techniques of prompt engineering — the art and science of crafting instructions that extract the best possible results from LLMs like ChatGPT, Gemini, and Claude."
+    },
+    {
+      "title": "Prompt engineering - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prompt_engineering",
+      "snippet": "Prompt engineering is the process of structuring natural language inputs (known as prompts) to produce specified outputs from a generative AI model. Context engineering is the related area of software engineering that focuses on the management of non-prompt and prompt contexts supplied to the GenAI model, such as system instructions, metadata ..."
+    },
+    {
+      "title": "Prompts overview - Microsoft Copilot Studio | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/prompts-overview",
+      "snippet": "This article explains prompts and prompt engineering as key concepts to help you create powerful generative AI capabilities that you can use in Copilot Studio. A prompt is mainly composed of a natural language instruction that tells a generative AI model to perform a task. The model follows the ..."
+    },
+    {
+      "title": "Prompt Engineering Techniques | IBM",
+      "url": "https://www.ibm.com/think/topics/prompt-engineering-techniques",
+      "snippet": "Prompt engineering techniques are strategies used to design and structure prompts, input queries or instructions, provided to AI models, particularly large language models (LLMs)."
+    }
+  ]
+}

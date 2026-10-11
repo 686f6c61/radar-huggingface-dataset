@@ -5,7 +5,7 @@
   "author": "KWST",
   "url": "https://huggingface.co/KWST/novapay-sentiment",
   "created_at": "2026-10-08T21:16:27.000Z",
-  "updated_at": "2026-10-08T21:16:49.000Z",
+  "updated_at": "2026-10-10T20:40:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 1,
+  "downloads_30d": 2,
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",

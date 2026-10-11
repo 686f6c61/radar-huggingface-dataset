@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "aildan/country-code-decide-small",
+  "slug": "aildan-country-code-decide-small",
+  "author": "aildan",
+  "url": "https://huggingface.co/aildan/country-code-decide-small",
+  "created_at": "2026-10-10T22:11:28.000Z",
+  "updated_at": "2026-10-11T00:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "country-codes",
+    "iso-3166",
+    "entity-normalization",
+    "selective-prediction",
+    "calibration",
+    "abstention",
+    "kyb",
+    "text-classification",
+    "multilingual",
+    "base_model:jhu-clsp/mmBERT-small",
+    "base_model:quantized:jhu-clsp/mmBERT-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349747843,
+  "storage_human": "350 MB",
+  "base_model": "jhu-clsp/mmBERT-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

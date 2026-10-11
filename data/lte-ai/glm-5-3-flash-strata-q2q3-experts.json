@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lte-ai/GLM-5.3-Flash-Strata-Q2Q3-Experts",
+  "slug": "lte-ai-glm-5-3-flash-strata-q2q3-experts",
+  "author": "lte-ai",
+  "url": "https://huggingface.co/lte-ai/GLM-5.3-Flash-Strata-Q2Q3-Experts",
+  "created_at": "2026-10-07T05:31:41.000Z",
+  "updated_at": "2026-10-10T20:51:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "strata",
+    "quantization",
+    "reap",
+    "base_model:patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
+    "base_model:quantized:patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 292326211584,
+  "parameters_human": "292.33B",
+  "storage_bytes": 385488995584,
+  "storage_human": "385.5 GB",
+  "base_model": "unsloth/GLM-5.3-Flash-GGUF, patrickbdevaney/GLM-5.3-Flash-REAP50-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LTE (réseaux mobiles) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/LTE_(r%C3%A9seaux_mobiles)",
+      "snippet": "La norme LTE n'est pas figée, le consortium 3GPP la fait évoluer en permanence (en général, une nouvelle version tous les 12 à 18 …"
+    },
+    {
+      "title": "LTE (telecommunication) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LTE_(telecommunication)",
+      "snippet": "LTE has been succeeded by LTE Advanced, which is officially defined as a \"true\" 4G technology [5] and also named \"LTE+\". In the …"
+    },
+    {
+      "title": "LTE - Observatoire de Paris - PSL - Centre de recherche en …",
+      "url": "https://lte.observatoiredeparis.psl.eu/",
+      "snippet": "Jul 3, 2026 · Les missions de service du LTE Le Laboratoire temps espace est responsable de la conception et de la diffusion du …"
+    },
+    {
+      "title": "LTE expliqué : qu'est-ce que le LTE, comment fonctionne-t-il et ...",
+      "url": "https://fr.digi.com/blog/post/what-is-lte",
+      "snippet": "Feb 20, 2026 · Qu'est-ce que le LTE ? Comment prend-il en charge la 4G, la 5G et le reste du monde qui nous entoure ? Découvrez …"
+    },
+    {
+      "title": "La différence entre 4G et LTE : tout ce que vous devez savoir",
+      "url": "https://commentouvrir.com/tech/la-difference-entre-4g-et-lte-tout-ce-que-vous-devez-savoir/",
+      "snippet": "La 4G est une technologie de réseau mobile de quatrième génération qui permet un accès plus rapide à Internet depuis votre …"
+    }
+  ]
+}

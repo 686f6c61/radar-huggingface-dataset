@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Magidonia-24B-v4.3-heretic-v4-GGUF",
+  "slug": "mradermacher-magidonia-24b-v4-3-heretic-v4-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Magidonia-24B-v4.3-heretic-v4-GGUF",
+  "created_at": "2026-02-19T07:13:33.000Z",
+  "updated_at": "2026-10-10T22:53:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:Darkknight535/Magidonia-24B-v4.3-heretic-v4",
+    "base_model:quantized:Darkknight535/Magidonia-24B-v4.3-heretic-v4",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 460,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 161407777472,
+  "storage_human": "161.4 GB",
+  "base_model": "Darkknight535/Magidonia-24B-v4.3-heretic-v4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U盘老是上退重连闪退重连，怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/401467301",
+      "snippet": "U盘之前用过没问题，最近用的时候老是闪退重连闪退重连，怎么解决。 ps：我的U盘是USB3.0的；电脑应该没问题，插别人的U …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/615771824",
+      "snippet": "用设置里更新win11 下载完，安装重启后显示无法安装用win11安装助手更新，下载完成，安装重启后显示Windo…"
+    },
+    {
+      "title": "uc浏览器网页版入口 uc浏览器网页版打开入口_百度知道",
+      "url": "https://zhidao.baidu.com/question/661311479713675885.html",
+      "snippet": "Nov 12, 2025 · uc浏览器网页版入口 uc浏览器网页版打开入口uc浏览器网页版入口为：https://www.ucweb.com/，用户可通过任意设 …"
+    },
+    {
+      "title": "百度地图",
+      "url": "https://zhidao.baidu.com/html/map/page.html?newmap=1",
+      "snippet": "百度地图提供精准导航、实时路况、公交查询等功能，是您出行的好帮手。"
+    },
+    {
+      "title": "U.S.、USA、America 有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/26046878",
+      "snippet": "Oct 15, 2014 · 相比U.S.或者USA这个叫法偏向抽象意义和政治上的美国，America则偏向地理与民族概念，表示美国这片土地与人民 …"
+    }
+  ]
+}

@@ -17,8 +17,8 @@
     "base_model:quantized:stabilityai/stable-audio-3-medium",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 78,
+  "likes": 1,
+  "downloads_30d": 80,
   "trending_score": 0,
   "parameters": 1453170176,
   "parameters_human": "1.45B",

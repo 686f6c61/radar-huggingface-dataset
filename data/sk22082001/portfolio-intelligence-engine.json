@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sk22082001/portfolio-intelligence-engine",
+  "slug": "sk22082001-portfolio-intelligence-engine",
+  "author": "sk22082001",
+  "url": "https://huggingface.co/sk22082001/portfolio-intelligence-engine",
+  "created_at": "2026-10-10T19:05:17.000Z",
+  "updated_at": "2026-10-10T19:05:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Portfolio Insights - MSCI",
+      "url": "https://www.msci.com/data-and-analytics/risk-management-solutions/ai-portfolio-insights",
+      "snippet": "MSCI AI Portfolio Insights provides actionable risk and performance insights and integrates risk management into investment decision processes. Leveraging GenAI and integrated dashboards, our solution is designed to increase speed, create efficiencies and enhance collaboration with investment teams, transforming traditional risk workflows."
+    },
+    {
+      "title": "Engine AI | The Intelligence Engine for Capital Markets",
+      "url": "https://www.engineai.com/",
+      "snippet": "Engine AI turns fragmented Capital Markets data into one unified intelligence layer — delivering trusted, explainable insights with 90%+ accuracy."
+    },
+    {
+      "title": "Top 15+ AI Financial Research Platforms for Investors",
+      "url": "https://aimultiple.com/ai-financial-research",
+      "snippet": "Despite thousands of available financial research tools, many investors struggle with fragmented data, time-consuming manual analysis, and limited predictive insights. AI financial research platforms use natural language processing and advanced analytics to cut research time from hours to minutes. See the top AI financial research solutions with their main services, prices and use-cases:"
+    },
+    {
+      "title": "Best AI Portfolio Analysis Tools in 2026: Risk, Allocation and ...",
+      "url": "https://diyai.io/ai-tools/finance/best-ai-tools-for-portfolio-insights/",
+      "snippet": "Compare the best AI portfolio analysis tools for allocation, concentration, correlation, drawdown, drift and monitoring across existing holdings."
+    },
+    {
+      "title": "Frontiers | Enhancing portfolio management using artificial ...",
+      "url": "https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2024.1371502/full",
+      "snippet": "The increasing application of ML techniques to build portfolios and the concern in parallel on the ethical dimension of AI increases the interest in understanding how the different features interact and impact the model portfolio performance."
+    }
+  ]
+}

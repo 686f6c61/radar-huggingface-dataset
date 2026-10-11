@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AurevixLabs/Aurevix_1.0_Beta",
+  "slug": "aurevixlabs-aurevix_1-0_beta",
+  "author": "AurevixLabs",
+  "url": "https://huggingface.co/AurevixLabs/Aurevix_1.0_Beta",
+  "created_at": "2026-10-11T00:13:16.000Z",
+  "updated_at": "2026-10-11T00:28:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aureviix — AI Experience Personalization Platform",
+      "url": "https://aureviix.com/",
+      "snippet": "Aureviix delivers privacy-first AI personalization for digital experiences across web and mobile. Optimize conversions with intelligent user journey orchestration."
+    },
+    {
+      "title": "Aurevix AI",
+      "url": "https://www.aurevixai.com/",
+      "snippet": "Aurevix AI is an AI consulting and enterprise solutions company located in Austin, Texas, USA. We are dedicated to combining advanced AI technology with real-world industry experience to help businesses improve operational efficiency, optimize decision-making processes, and drive the application of AI in real-world business environments. We believe that truly excellent AI relies not only on ..."
+    },
+    {
+      "title": "aurevixLabs repositories · GitHub",
+      "url": "https://github.com/orgs/aurevixLabs/repositories",
+      "snippet": "A lab for building software, developer tools, and experimental systems. Some work is open-source, while other projects remain private intellectual property. - Aurevix Labs"
+    },
+    {
+      "title": "Releases · aurevixLabs/aurevixLabs · GitHub",
+      "url": "https://github.com/aurevixLabs/aurevixLabs/releases",
+      "snippet": "Contribute to aurevixLabs/aurevixLabs development by creating an account on GitHub."
+    },
+    {
+      "title": "Aurevix - Intelligent Job Application Assistant",
+      "url": "https://www.aurevix.app/",
+      "snippet": "Track and optimize your job applications with AI-powered insights"
+    }
+  ]
+}

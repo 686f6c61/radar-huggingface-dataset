@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "li1272/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+  "slug": "li1272-qwen-image-2-1-turbo-uncensored-gguf",
+  "author": "li1272",
+  "url": "https://huggingface.co/li1272/Qwen-Image-2.1-Turbo-Uncensored-GGUF",
+  "created_at": "2026-10-11T00:08:32.000Z",
+  "updated_at": "2026-10-11T00:08:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "atomic-chat",
+    "qwen",
+    "qwen-image",
+    "qwen3-vl",
+    "text-encoder",
+    "stable-diffusion.cpp",
+    "abliteration",
+    "refusal-direction",
+    "text-to-image",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 53998955072,
+  "storage_human": "54.0 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen-Image-2.1-Turbo-Uncensored-GGUF: What the \"Uncensored\" Edit ...",
+      "url": "https://cldnavi.com/en/blog/qwen-image-21-turbo-uncensored-gguf-2026/",
+      "snippet": "This GGUF edits the text encoder, Qwen3-VL-8B-Instruct, not the image model: the refusal direction is projected out of its weights. Chat refusals fall from 88.9% to 1.2% in English, yet none of 45 sensitive prompts changed image outcome, because the open weights never had a safety checker, the denoiser has no refusal mechanism and NSFW images were filtered from pretraining. Built from the ..."
+    },
+    {
+      "title": "How to Run Qwen-Image-2.1 Locally (the \"Uncensored\" Version Is the Same ...",
+      "url": "https://stashbase.ai/blog/run-qwen-image-2-1-locally-uncensored/",
+      "snippet": "A post on X says Qwen-Image-2.1 was uncensored overnight. The files it points to are the original weights, unmodified. What the facts are, and two ways to run the model on your own computer."
+    },
+    {
+      "title": "rayss868123/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/rayss868123/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "kkguku/Qwen-Image-2.1-Uncensored-GGUF · Hugging Face",
+      "url": "https://huggingface.co/kkguku/Qwen-Image-2.1-Uncensored-GGUF",
+      "snippet": "Diffusion Model: Add the Unet Loader (GGUF) node and select your downloaded .gguf file. Text Encoder: Add the standard CLIPLoader node, select qwen3vl_8b_bf16.safetensors (or int8), and set type to qwen_image."
+    },
+    {
+      "title": "Is Qwen-Image-2.1 Uncensored? Filters, License, and the Law",
+      "url": "https://blog.laozhang.ai/en/posts/qwen-image-2-1-nsfw",
+      "snippet": "Official Qwen-Image-2.1 weights have no safety checker; Alibaba-hosted versions filter prompts. The \"Uncensored GGUF\" is the same model, still non-commercial."
+    }
+  ]
+}

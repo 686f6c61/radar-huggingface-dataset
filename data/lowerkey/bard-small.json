@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lowerkey/bard-small",
+  "slug": "lowerkey-bard-small",
+  "author": "lowerkey",
+  "url": "https://huggingface.co/lowerkey/bard-small",
+  "created_at": "2026-10-10T20:00:08.000Z",
+  "updated_at": "2026-10-10T21:02:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bard",
+    "feature-extraction",
+    "interactive-fiction",
+    "text-adventure",
+    "storytelling",
+    "custom_code",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 136721664,
+  "parameters_human": "136.7M",
+  "storage_bytes": 277749938,
+  "storage_human": "278 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Four - BBC Young Musician, 2026",
+      "url": "https://www.bbc.co.uk/programmes/m0032lqj",
+      "snippet": "The UK's best young musicians compete to win the coveted title of BBC Young Musician 2026."
+    },
+    {
+      "title": "BBC Young Musician 2026",
+      "url": "https://www.bbc.com/mediacentre/proginfo/2026/41/bbc-young-musician",
+      "snippet": "At the end of the programme, the judges reveal the names of the eight musicians they want to see and hear again in the next round."
+    },
+    {
+      "title": "BBC Young Musician - 2026: 1. Live Auditions Part 1",
+      "url": "https://www.bbc.co.uk/iplayer/episode/m0032lqh/bbc-young-musician-2026-1-live-auditions-part-1",
+      "snippet": "6 days ago · The hunt for the next classical music superstar begins. Thrilling performances in front of this year’s respected jury, …"
+    },
+    {
+      "title": "BBC Young Musician Final 2026 - Bristol Beacon",
+      "url": "https://bristolbeacon.org/whats-on/bbc-young-musician-2026/",
+      "snippet": "A t the end of the evening one finalist will be named BBC Young Musician 2026. Presented by broadcaster and writer Petroc …"
+    },
+    {
+      "title": "BBC Young Musician 2026: Auditions 2 (BBC Four, Sunday, October …",
+      "url": "https://www.memorabletv.com/news/bbc-young-musician-2026-auditions-2/",
+      "snippet": "4 days ago · Petroc Trelawny presents the second and final highlights programme from the audition stage, held at Bath Spa …"
+    }
+  ]
+}

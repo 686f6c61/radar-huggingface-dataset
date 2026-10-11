@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hc0/RefRes",
+  "slug": "hc0-refres",
+  "author": "hc0",
+  "url": "https://huggingface.co/hc0/RefRes",
+  "created_at": "2026-10-10T22:45:18.000Z",
+  "updated_at": "2026-10-10T23:20:47.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "image-restoration",
+    "face-restoration",
+    "super-resolution",
+    "reference-based",
+    "qwen-image-2.1",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-2.1-Turbo",
+    "base_model:adapter:Qwen/Qwen-Image-2.1-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 639841666,
+  "storage_human": "640 MB",
+  "base_model": "Qwen/Qwen-Image-2.1-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dual Citizenship USA: Rules, Benefits & 2026 Changes Explained",
+      "url": "https://herrerafirm.com/dual-citizenship-usa/",
+      "snippet": "Jan 28, 2026 · Does U.S. allow dual citizenship? Learn dual nationality rules, how to get citizenship in two countries, and what the …"
+    },
+    {
+      "title": "How to get dual citizenship or nationality - USAGov",
+      "url": "https://www.usa.gov/dual-citizenship",
+      "snippet": "Mar 17, 2026 · If you are a U.S. citizen who is seeking dual citizenship, you must find out if the other country recognizes dual …"
+    },
+    {
+      "title": "Dual citizenship countries list: US rules & eligibility",
+      "url": "https://www.taxesforexpats.com/articles/expatriation/countries-that-accept-dual-citizenship.html",
+      "snippet": "Sep 29, 2026 · Explore dual citizenship countries, US rules, and how to get it. Compare eligibility by region, routes, timelines, and tax …"
+    },
+    {
+      "title": "Is Dual Citizenship Legal in the US? 2026 Rules, Bill Status",
+      "url": "https://www.ellis.com/resources/us-dual-citizenship-rules",
+      "snippet": "Jul 2, 2026 · Does the US Allow Dual Citizenship? In short: Dual citizenship is still fully legal in the US. The Exclusive Citizenship Act …"
+    },
+    {
+      "title": "U.S Dual Citizenship: Everything You Need To Know",
+      "url": "https://www.uscitizenship.info/us-citizenship/dual-citizenship-overview/",
+      "snippet": "Yes, the United States generally allows dual citizenship, meaning individuals can be citizens of the United States and citizens of …"
+    }
+  ]
+}

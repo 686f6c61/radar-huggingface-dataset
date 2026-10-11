@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniAI-Quata2-4b-GGUF",
+  "slug": "mradermacher-miniai-quata2-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniAI-Quata2-4b-GGUF",
+  "created_at": "2026-10-11T00:16:44.000Z",
+  "updated_at": "2026-10-11T01:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "quata",
+    "quata2",
+    "qwen3",
+    "qwen",
+    "reasoning",
+    "chain-of-thought",
+    "serbian",
+    "llm",
+    "mini-ai",
+    "4b",
+    "en",
+    "sr",
+    "hr",
+    "bs",
+    "base_model:M1n1A1/MiniAI-Quata2-4b",
+    "base_model:quantized:M1n1A1/MiniAI-Quata2-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389997312,
+  "storage_human": "36.4 GB",
+  "base_model": "M1n1A1/MiniAI-Quata2-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yae Miko from Genshin Impact cosplay by SweetieFox",
+      "url": "https://www.reddit.com/r/cosplayers/comments/12fxs1h/yae_miko_from_genshin_impact_cosplay_by_sweetiefox/",
+      "snippet": "Apr 8, 2023 · Posted by u/Sweetie_Fox - 1,374 votes and 27 commentsRead more"
+    },
+    {
+      "title": "Elven bladesinger introduces herself to the party like this, wdyd?",
+      "url": "https://www.reddit.com/r/dndmemes/comments/18tm370/elven_bladesinger_introduces_herself_to_the_party/",
+      "snippet": "Dec 29, 2023 · It could be Sweetie Fox born June 25, 2001, in Yekaterinburg, Russia, to Russian parents, 5 feet 4 inches (1.63 …"
+    },
+    {
+      "title": "Makima from Chainsaw Man cosplay by SweetieFox [self]",
+      "url": "https://www.reddit.com/r/ChainsawMan/comments/14zw8t1/makima_from_chainsaw_man_cosplay_by_sweetiefox/",
+      "snippet": "Posted by u/Sweetie_Fox - 3,522 votes and 148 comments"
+    },
+    {
+      "title": "Sweetie Fox : r/trueratecelebrities - Reddit",
+      "url": "https://www.reddit.com/r/trueratecelebrities/comments/1cl7han/sweetie_fox/",
+      "snippet": "May 6, 2024 · No rules for overrating/underrating. On this sub, a 5 is average, using a normal distribution model. Our scale ranges …"
+    },
+    {
+      "title": "My Tatsumaki cosplay (SweetieFox) : r/OnePunchMan - Reddit",
+      "url": "https://www.reddit.com/r/OnePunchMan/comments/1b5w3o3/my_tatsumaki_cosplay_sweetiefox/",
+      "snippet": "Hello there! Welcome to r/OnePunchMan, the subreddit for all things related to our caped bald hero. Please read the FAQ before …"
+    }
+  ]
+}

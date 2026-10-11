@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "collinzrj/qwen3.6-35b-a3b-stage2-grpo",
+  "slug": "collinzrj-qwen3-6-35b-a3b-stage2-grpo",
+  "author": "collinzrj",
+  "url": "https://huggingface.co/collinzrj/qwen3.6-35b-a3b-stage2-grpo",
+  "created_at": "2026-10-11T00:11:31.000Z",
+  "updated_at": "2026-10-11T00:15:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "grpo",
+    "reinforcement-learning",
+    "reasoning",
+    "qwen3.6",
+    "merged-lora",
+    "dataset:nvidia/Nemotron-RL-ReasoningGym-v1",
+    "dataset:nvidia/Open-SWE-Traces",
+    "dataset:nvidia/Nemotron-SFT-Math-v4",
+    "dataset:ukisai/Qwen3.8-27B-multi-turn-agent-sft",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70227302638,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.6-35B-A3B — AI Model | MindStudio",
+      "url": "https://www.mindstudio.ai/models/qwen3-6-35b-a3b-deepinfra",
+      "snippet": "Qwen3.6-35B-A3B is a mixture-of-experts (MoE) language model developed by Qwen, released in July 2025. It has 35.6 billion total parameters but activates only 3.6 billion per forward pass, which reduces compute requirements while retaining a large parameter count. The model supports a context window of up to 262,144 tokens, making it suitable for tasks that require processing long documents or ..."
+    },
+    {
+      "title": "Qwen 3.6-35B-A3B — Models — The AI Bench",
+      "url": "https://theaibench.ai/models/qwen-3-6-35b-a3b/",
+      "snippet": "Qwen 3.6-35B-A3B Alibaba&#x27;s post-3.5 refresh specifically targeting agentic coding — claims to beat dense Qwen 3.5 27B and Gemma 4 31B on coding + reasoning at the same active-param budget."
+    },
+    {
+      "title": "Qwen3.6 35B A3B - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/qwen36-35b-a3b",
+      "snippet": "Qwen3.6 35B A3B is the first open-weight model in the Qwen3.6 series, built on direct community feedback and focused on stability and real-world utility. It combines a hybrid Gated DeltaNet and Gated Attention architecture with sparse Mixture-of-Experts routing and a vision encoder for unified multimodal reasoning."
+    },
+    {
+      "title": "Qwen3.6-35B-A3B | NVIDIA NGC",
+      "url": "https://catalog.ngc.nvidia.com/orgs/nim/teams/qwen/models/qwen3.6-35b-a3b",
+      "snippet": "This AI model can be embedded as an Application Programming Interface (API) call into the software environment described above. Model Version (s) Qwen3.6-35B-A3B v3.6 Training, Testing, and Evaluation Datasets Training Dataset Data Modality: Text Image"
+    },
+    {
+      "title": "Qwen3.6-35B-A3B Review: The Pragmatic Middle-Weight Multimodal Model",
+      "url": "https://aiindigo.com/blog/qwen3-6-35b-a3b-review-the-pragmatic-middle-weight-multimodal-model",
+      "snippet": "Final Verdict Qwen3.6-35B-A3B is a sophisticated, reliable tool for anyone who wants professional-grade multimodal AI without the \"tax\" of a proprietary subscription. It doesn&#x27;t try to be everything to everyone; instead, it focuses on being the most efficient mid-sized model available."
+    }
+  ]
+}

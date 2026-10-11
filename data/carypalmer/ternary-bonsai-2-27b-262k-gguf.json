@@ -5,7 +5,7 @@
   "author": "CaryPalmer",
   "url": "https://huggingface.co/CaryPalmer/Ternary-Bonsai-2-27B-262k-GGUF",
   "created_at": "2026-10-07T00:17:36.000Z",
-  "updated_at": "2026-10-10T02:23:06.000Z",
+  "updated_at": "2026-10-10T14:20:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,8 +41,8 @@
   "trending_score": 22,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 15504957789,
-  "storage_human": "15.5 GB",
+  "storage_bytes": 16723781075,
+  "storage_human": "16.7 GB",
   "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
   "formats": [
     "gguf"

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "laion/moss-audio-burst-caption-gemini",
+  "slug": "laion-moss-audio-burst-caption-gemini",
+  "author": "laion",
+  "url": "https://huggingface.co/laion/moss-audio-burst-caption-gemini",
+  "created_at": "2026-10-10T20:54:38.000Z",
+  "updated_at": "2026-10-10T20:54:44.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "audio",
+    "audio-captioning",
+    "lora",
+    "en",
+    "dataset:laion/whisper-gemini-voice-annotations",
+    "arxiv:2106.09685",
+    "base_model:OpenMOSS-Team/MOSS-Audio-8B-Instruct",
+    "base_model:adapter:OpenMOSS-Team/MOSS-Audio-8B-Instruct",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 349248288,
+  "storage_human": "349 MB",
+  "base_model": "OpenMOSS-Team/MOSS-Audio-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aagmaal hot web video — Yandex: found 946 thousand results",
+      "url": "https://desktop.yandex.com/search/?text=aagmaal+hot+web+video&p=0",
+      "snippet": "We bring together popular adult, Ullu, and trending hot web series in one place, allowing users to watch or download full episodes for …"
+    },
+    {
+      "title": "+indian web series uncut aagmaal — Yandex: found 181 thousand …",
+      "url": "https://desktop.yandex.com/search/?text=%2Bindian+web+series+uncut+aagmaal&p=0",
+      "snippet": "Aagmaal brings you the best Hindi web series and bold Indian entertainment in one place. Watch trending ULLU originals, romantic …"
+    },
+    {
+      "title": "aagmaal yandex — Yandex: found 185 thousand results",
+      "url": "https://tv.yandex.com/search?text=aagmaal+yandex",
+      "snippet": "Download Aagmaal today and start streaming exclusive originals, trending web series, movies, drama, thriller, suspense, comedy, …"
+    },
+    {
+      "title": "Aagmaal » Watch All ULLU Hot Web Series",
+      "url": "https://aagmaal.gg/",
+      "snippet": "Aagmaal is the destination for people who love watching Desi Sex Web series, Uncut Videos, Hindi Hot Web Series, and many …"
+    },
+    {
+      "title": "+agmaal hot web series — Yandex: found 2 thousand results",
+      "url": "https://tv.yandex.com/search?text=%2Bagmaal+hot+web+series&missword=1",
+      "snippet": "Fresh Agmaal Web Series sex clips and adult porno arrive daily to keep things current. Watch everything without signup or any …"
+    }
+  ]
+}

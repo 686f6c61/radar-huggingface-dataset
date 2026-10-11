@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr8e-04_bs4_sl14754432",
+  "slug": "siddharthmb-2026-ta-gemma2_2b_tc8192_decb_l1w0-001_tarbb_lb2-0_ln1_dr10000_lr8e-04_bs4_sl14754432",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr8e-04_bs4_sl14754432",
+  "created_at": "2026-03-08T23:58:49.000Z",
+  "updated_at": "2026-10-11T00:26:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 3596081920,
+  "parameters_human": "3.60B",
+  "storage_bytes": 7226572417,
+  "storage_human": "7.2 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is the rule34.us website safe? : r/NoStupidQuestions - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/yhudir/is_the_rule34us_website_safe/",
+      "snippet": "Oct 30, 2022 · Posted by u/Giyuut0mioka - 5 votes and 6 comments"
+    },
+    {
+      "title": "如何理解rule34? - 知乎",
+      "url": "https://www.zhihu.com/question/384202336",
+      "snippet": "Internet Rule #34是国外网络社交守则中的一条。大意为&#34;任何存在和可想象的东西都会跟色情扯上关系，…"
+    },
+    {
+      "title": "Is rule34.xxx safe? : r/NoStupidQuestions - Reddit",
+      "url": "https://www.reddit.com/r/NoStupidQuestions/comments/yry4c5/is_rule34xxx_safe/",
+      "snippet": "Nov 11, 2022 · Well, I'm a teenager who just wants to relax after a long day and today I tried to enter the page but because of my …"
+    },
+    {
+      "title": "FPErule34 - Reddit",
+      "url": "https://www.reddit.com/r/FPErule34/about/",
+      "snippet": "r/FPErule34: Subreddit to post sexual images of \"Fundamental Paper Education\""
+    },
+    {
+      "title": "Rule34Official - Reddit",
+      "url": "https://www.reddit.com/r/Rule34Official/about/",
+      "snippet": "The official subreddit page of Rule34 (dot) Porn"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sovrasov/flux3_policy_black_cubes_20k_v2",
+  "slug": "sovrasov-flux3_policy_black_cubes_20k_v2",
+  "author": "sovrasov",
+  "url": "https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k_v2",
+  "created_at": "2026-10-10T21:04:36.000Z",
+  "updated_at": "2026-10-10T21:04:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "flux3",
+    "dataset:sovrasov/pick-black-cubes-room-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471775792,
+  "storage_human": "472 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sovrasov/flux3_policy_black_cubes_20k · Hugging Face",
+      "url": "https://huggingface.co/sovrasov/flux3_policy_black_cubes_20k",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "AI Image & Video Models — Flux, Veo, Sora | Flux 3 AI",
+      "url": "https://flux3ai.com/models",
+      "snippet": "Every top AI image & video model, one studio Flux 2 Pro and Flux Kontext for images, Veo, Sora, Kling, Seedance and more for video — 49 models you can run from a single account with shared credits, one library, and watermark-free downloads."
+    },
+    {
+      "title": "Flux 3 — Multimodal AI by Black Forest Labs | Real World Models",
+      "url": "https://flux3.dev/",
+      "snippet": "Black Forest Labs&#x27; new multimodal foundation model jointly learns from images, videos, and audio within a unified architecture — because visual intelligence requires understanding how objects hold together, how things move, and how events sound."
+    },
+    {
+      "title": "Black Forest Labs Releases FLUX 3: A Multimodal Flow Model for Image ...",
+      "url": "https://www.marktechpost.com/2026/07/26/black-forest-labs-releases-flux-3-a-multimodal-flow-model-for-image-video-audio-and-robot-action-prediction/",
+      "snippet": "Black Forest Labs (BFL) has released FLUX 3, a multimodal foundation model that learns from images, videos and audio inside a single architecture. It is also the first FLUX model to ship video, audio and action prediction from one set of weights."
+    },
+    {
+      "title": "FLUX 3 Launches: Black Forest Labs Enters Video, Audio, and Physical AI ...",
+      "url": "https://www.techtimes.com/articles/321552/20260725/flux-3-launches-black-forest-labs-enters-video-audio-physical-ai-one-model.htm",
+      "snippet": "FLUX 3, Black Forest Labs&#x27; new multimodal AI model, generates video with native synchronized audio and drives factory robots at Audi from a single shared architecture — beating Runway Gen-4.5 ..."
+    }
+  ]
+}

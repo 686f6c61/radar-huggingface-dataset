@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr8e-04_bs4_sl14818386",
+  "slug": "siddharthmb-2026-ta-gemma2_2b_tc8192_decb_l1w0-001_tarbb_lb2-0_ln1_dr10000_lr8e-04_bs4_sl14818386",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_tc8192_decb_l1w0.001_tarbb_lb2.0_ln1_dr10000_lr8e-04_bs4_sl14818386",
+  "created_at": "2026-03-13T09:20:38.000Z",
+  "updated_at": "2026-10-11T00:28:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 3596081920,
+  "parameters_human": "3.60B",
+  "storage_bytes": 7192209544,
+  "storage_human": "7.2 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are the Benefits and Disadvantages of being a Femboy",
+      "url": "https://www.reddit.com/r/feminineboys/comments/185ax6w/what_are_the_benefits_and_disadvantages_of_being/",
+      "snippet": "Respect and acceptance from others in the femboy community. Disadvantages: Costs money. Parents/society not accepting it. …"
+    },
+    {
+      "title": "What exactly is a femboy? : r/feminineboys - Reddit",
+      "url": "https://www.reddit.com/r/feminineboys/comments/o64ymi/what_exactly_is_a_femboy/",
+      "snippet": "Femboy as the name suggests is a \"Feminine boy\" So that means it's a boy, who expresses his feminine side by clothing, makeup, …"
+    },
+    {
+      "title": "什么是Femboy？什么样的才是Femboy? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2151118472693321908.html",
+      "snippet": "Oct 4, 2024 · Femboy群体的界限相对模糊，但一般认为，Femboy群体在性别认同上保持男性身份，且不希望被使用包含“boy”字眼的 …"
+    },
+    {
+      "title": "为何在形容男性化的女性时要用“ Femboy”而不是“ Tomboy”？",
+      "url": "https://zhidao.baidu.com/question/595296510748514725.html",
+      "snippet": "Aug 29, 2024 · 相比之下，\"Femboy\"这一概念则是在现代才崭露头角。 作为\"女性化男孩\"的简称，它在90年代初开始出现，到了2013 …"
+    },
+    {
+      "title": "What’s your story with becoming a femboy?? - Reddit",
+      "url": "https://www.reddit.com/r/feminineboys/comments/1cvywmt/whats_your_story_with_becoming_a_femboy/",
+      "snippet": "We mesh together very nicely. So as a femboy I watched anime with astaflo and I resonated with that character. Deep dive. Is …"
+    }
+  ]
+}

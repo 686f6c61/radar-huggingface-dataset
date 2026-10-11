@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "myflow-ai/moonshine-tiny-uk-gguf",
+  "slug": "myflow-ai-moonshine-tiny-uk-gguf",
+  "author": "myflow-ai",
+  "url": "https://huggingface.co/myflow-ai/moonshine-tiny-uk-gguf",
+  "created_at": "2026-10-10T23:05:41.000Z",
+  "updated_at": "2026-10-10T23:05:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transcribe.cpp",
+  "languages": [
+    "uk"
+  ],
+  "tags": [
+    "transcribe.cpp",
+    "gguf",
+    "asr",
+    "speech-to-text",
+    "moonshine",
+    "useful-sensors",
+    "encoder-decoder",
+    "automatic-speech-recognition",
+    "uk",
+    "arxiv:2509.02523",
+    "arxiv:1810.03993",
+    "base_model:moonshine-ai/moonshine-tiny-uk",
+    "base_model:quantized:moonshine-ai/moonshine-tiny-uk",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27092736,
+  "parameters_human": "27.1M",
+  "storage_bytes": 35466944,
+  "storage_human": "35 MB",
+  "base_model": "UsefulSensors/moonshine-tiny-uk",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么看谷歌发布了 Gemini 3.6 flash和 3.5 lite，但是 pro 又缺席？",
+      "url": "https://www.zhihu.com/question/2063033606767895735",
+      "snippet": "有点发愁啊，三个模型Gemini 3.6 Flash、3.5 Flash-Lite，还有专门做安全的3.5 Flash Cyber, 但是没有 3.5 Pro, 三个模型几乎全都是 …Read more"
+    },
+    {
+      "title": "Gemini Zodiac Sign - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/",
+      "snippet": "Gemini has two sides. Such is the nature of the “twins,” the symbol that represents this sign. This sign has both plenty. of energy and …"
+    },
+    {
+      "title": "Gemini的模型是不是已经快被淘汰了？ - 知乎",
+      "url": "https://www.zhihu.com/question/2050527290925248637",
+      "snippet": "Gemini 能干一个奇妙的事情，一个50MB，214页，图+文都有的PDF文档，11万 token，上传后可以在10秒内读完，并且你询问后看 …"
+    },
+    {
+      "title": "Gemini Love Horoscope - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/gemini-love-horoscope/",
+      "snippet": "Read your free online Gemini love horoscope for today! Use these expert astrology predictions to improve relationships and your …"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

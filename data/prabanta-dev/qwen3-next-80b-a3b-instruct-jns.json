@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "prabanta-dev/Qwen3-Next-80B-A3B-Instruct-JNS",
+  "slug": "prabanta-dev-qwen3-next-80b-a3b-instruct-jns",
+  "author": "prabanta-dev",
+  "url": "https://huggingface.co/prabanta-dev/Qwen3-Next-80B-A3B-Instruct-JNS",
+  "created_at": "2026-10-11T00:30:48.000Z",
+  "updated_at": "2026-10-11T01:30:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "janas",
+    "jns",
+    "local-inference",
+    "cpu-inference",
+    "mixture-of-experts",
+    "text-generation",
+    "base_model:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Next-80B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49349914624,
+  "storage_human": "49.3 GB",
+  "base_model": "Qwen/Qwen3-Next-80B-A3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么像shein这样的跨境电商不在国内出售呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/267772909",
+      "snippet": "SheIn（中文名“ 希音 ”）成立于2008年，作为中国的一家跨境电商巨头，小编敢打赌应该有95%以上的国人都没听说过SheIn，就是这 …"
+    },
+    {
+      "title": "刚准备入驻SHEIN 需要注意什么？好做吗？这个平台? - 知乎",
+      "url": "https://www.zhihu.com/question/376809823",
+      "snippet": "SHEIN目前的市占率已达到行业50%的高水平，发展前景可观，但SHEIN制霸的低价快时尚市场中还在不断闯入新的竞争对手，比如 …"
+    },
+    {
+      "title": "[心得] SHEIN-人品大考驗 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1532848005.A.0CD.html",
+      "snippet": "Jul 29, 2018 · 植物印花露肩上衣（Botanical Print Cold Shoulder Top） ☆賣家名稱：SHEIN ★拍賣網址： https://m.shein.tw ☆網誌 …"
+    },
+    {
+      "title": "[心得] SHEIN 你的雷雷伙伴 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1561618178.A.B60.html",
+      "snippet": "Jun 27, 2019 · 1. SHEIN Self Belted Paperbag Waist Shorts (黑色自綁帶短褲) - US$11.79 話說那個Self Belted說得真好呢，因為褲子 …"
+    },
+    {
+      "title": "为什么像shein这样的跨境电商不在国内出售呢？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2591875962",
+      "snippet": "SheIn（中文名“ 希音 ”）成立于2008年，作为中国的一家跨境电商巨头，小编敢打赌应该有95%以上的国人都没听说过SheIn，就是这 …"
+    }
+  ]
+}

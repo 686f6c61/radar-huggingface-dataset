@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-asym",
+  "slug": "fbaldassarri-tiiuae_falcon3-7b-instruct-auto_round-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-asym",
+  "created_at": "2026-10-10T20:47:01.000Z",
+  "updated_at": "2026-10-10T20:47:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "4-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-7B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1753635840,
+  "parameters_human": "1.75B",
+  "storage_bytes": 6806801080,
+  "storage_human": "6.8 GB",
+  "base_model": "tiiuae/Falcon3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym",
+      "snippet": "tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym Like 1 Text Generation Transformers Safetensors PyTorch English llama autoround auto-round causal-lm intel-autoround intel woq weights-only-quantization falcon falcon3 tii 4-bit precision conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int8-gs64-asym",
+      "snippet": "Like 0 Text Generation Transformers Safetensors PyTorch English llama gptq auto-gptq autogptq causal-lm autoround auto-round intel-autoround intel woq weights-only-quantization falcon falcon3 tii 8-bit precision conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new ..."
+    },
+    {
+      "title": "tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym",
+      "url": "https://friendli.ai/models/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym",
+      "snippet": "Run fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "tiiuae/Falcon3-7B-Instruct: Model synced from source: tiiuae/Falcon3-7B ...",
+      "url": "https://dev.modelhub.org.cn/tiiuae/Falcon3-7B-Instruct",
+      "snippet": "This repository contains the Falcon3-7B-Instruct. It achieves state of art results (at the time of release) on reasoning, language understanding, instruction following, code and mathematics tasks."
+    },
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym ...",
+      "url": "https://api-inference.hf-mirror.com/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym/discussions",
+      "snippet": "fbaldassarri / tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym like 0 Text Generation Transformers Safetensors PyTorch 4 languages llama causal-lm autoround auto-round intel-autoround woq autogptq auto-gptq gptq intel falcon3 conversational text-generation-inference 4-bit precision License:falcon-llm-license Model card FilesFiles and ..."
+    }
+  ]
+}

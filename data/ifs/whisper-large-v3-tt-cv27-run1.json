@@ -1,0 +1,113 @@
+{
+  "schema": 1,
+  "id": "ifs/whisper-large-v3-tt-cv27-run1",
+  "slug": "ifs-whisper-large-v3-tt-cv27-run1",
+  "author": "ifs",
+  "url": "https://huggingface.co/ifs/whisper-large-v3-tt-cv27-run1",
+  "created_at": "2026-10-02T07:09:43.000Z",
+  "updated_at": "2026-10-10T21:38:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "tt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "tatar",
+    "speech-recognition",
+    "common-voice",
+    "tt",
+    "arxiv:2609.09554",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174117945,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Tatar (official test split)",
+      "metric": "CER (normalized)",
+      "value": 5.5
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Tatar (official test split)",
+      "metric": "WER (normalized)",
+      "value": 23.6
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Tatar (official test split)",
+      "metric": "CER (raw, with case and punctuation)",
+      "value": 7
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Tatar (run 2 test set)",
+      "metric": "CER (normalized)",
+      "value": 5.2
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Tatar (run 2 test set)",
+      "metric": "WER (normalized)",
+      "value": 22.8
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice Scripted Speech 27.0 Tatar (run 2 test set)",
+      "metric": "CER (raw, with case and punctuation)",
+      "value": 6.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "AI-Powered Software Built for Your Industry - IFS",
+      "url": "https://www.ifs.com/en",
+      "snippet": "IFS ensures unified operations, end-to-end asset lifecycle management, predictive maintenance, and sustainability, helping you …"
+    },
+    {
+      "title": "IFS Homepage",
+      "url": "https://www.ifs-certification.com/index.php/fr/",
+      "snippet": "Grâce à nos organismes de certification accrédités et à nos référentiels IFS, nous vous garantissons que notre travail est basé sur …"
+    },
+    {
+      "title": "Nouvelles capacités disponibles maintenant dans IFS Cloud",
+      "url": "https://www.ifs.com/fr",
+      "snippet": "IFS fournit des solutions sécurisées, conformes et innovantes pour les projets complexes, la gestion de flotte et le soutien aux …"
+    },
+    {
+      "title": "IFS AB - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IFS_AB",
+      "snippet": "IFS was founded in 1983 as Industrial & Financial Systems in Linköping Sweden, by a group of students from Linköping University. …"
+    },
+    {
+      "title": "IFS Homepage",
+      "url": "https://www.ifs-certification.com/index.php/en/",
+      "snippet": "IFS develops globally recognised product quality and safety standards and development programs with the expertise of retailers, …"
+    }
+  ]
+}

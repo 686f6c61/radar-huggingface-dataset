@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ajensenwaud/MiMo-V2.6-Flash-RL-exl3-3.0bpw",
+  "slug": "ajensenwaud-mimo-v2-6-flash-rl-exl3-3-0bpw",
+  "author": "ajensenwaud",
+  "url": "https://huggingface.co/ajensenwaud/MiMo-V2.6-Flash-RL-exl3-3.0bpw",
+  "created_at": "2026-10-10T05:43:29.000Z",
+  "updated_at": "2026-10-10T22:59:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "mimo_v2",
+    "exl3",
+    "moe",
+    "dflash",
+    "tensorfold",
+    "dgx-spark",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "base_model:quantized:XiaomiMiMo/MiMo-V2.6-Flash-RL",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60459094912,
+  "parameters_human": "60.46B",
+  "storage_bytes": 121743392422,
+  "storage_human": "121.7 GB",
+  "base_model": "XiaomiMiMo/MiMo-V2.6-Flash-RL",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[PS3] Révolution Squad sur le forum Call of Duty : Modern Warfare 2 ...",
+      "url": "https://www.jeuxvideo.com/forums/1-18353-874051-1-0-1-0-ps3-revolution-squad.htm",
+      "snippet": "Jan 19, 2010 · De son côté la OFC fut créé le 21 février 2008 par un petit groupe de joueurs issus de la XF. Dirigée à ses débuts par …"
+    },
+    {
+      "title": "Topic Astuces et conseils avancés – Dominer Rome Total War",
+      "url": "https://www.jeuxvideo.com/forums/42-7903-58541171-1-0-1-0-astuces-et-conseils-avances-dominer-rome-total-war.htm",
+      "snippet": "Dec 28, 2018 · Bonjour à tous, vous êtes probablement déjà passionnés si vous lisez ceci et je m’adresse à vous Je vais vous léguer …"
+    },
+    {
+      "title": "FUTxGG - Nouveau site sur le forum FIFA Ultimate Team - 21-09 …",
+      "url": "https://www.jeuxvideo.com/forums/42-3021411-70708851-1-0-1-0-futxgg-nouveau-site.htm",
+      "snippet": "Sep 21, 2022 · On connait tous le mastodonte FUTBin, cette année il y a un nouveau site qui émerge pour cet opus: …"
+    },
+    {
+      "title": "EA Sports FC 26 dévoile son mode Ultimate Team : tournois, …",
+      "url": "https://www.jeuxvideo.com/news/2018345/ea-sports-fc-26-devoile-son-mode-ultimate-team-tournois-evolutions-de-gardiens-playoffs-supprimes-le-renouveau-de-fut.htm",
+      "snippet": "Aug 5, 2025 · Dernier grand volet des nouveautés du prochain FIFA, ou plutôt EA Sports FC 26, le mode Ultimate Team dévoile …"
+    },
+    {
+      "title": "Album EA Sports FC 27 : à quoi ça sert et comment ça marche",
+      "url": "https://www.jeuxvideo.com/news/2106121/album-ea-sports-fc-27-a-quoi-ca-sert-et-comment-ca-marche.htm",
+      "snippet": "Sep 27, 2026 · Chaque année, des milliers de cartes transitent par nos clubs Ultimate Team avant de finir bradées sur le marché ou …"
+    }
+  ]
+}

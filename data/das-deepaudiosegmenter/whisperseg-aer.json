@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DAS-DeepAudioSegmenter/whisperseg-aer",
+  "slug": "das-deepaudiosegmenter-whisperseg-aer",
+  "author": "DAS-DeepAudioSegmenter",
+  "url": "https://huggingface.co/DAS-DeepAudioSegmenter/whisperseg-aer",
+  "created_at": "2026-09-27T08:04:05.000Z",
+  "updated_at": "2026-10-10T20:15:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "whisperseg",
+    "segmentation",
+    "das",
+    "bioacoustics",
+    "dataset:nccratliri/vad-animals",
+    "base_model:nccratliri/whisperseg-animal-vad",
+    "base_model:finetune:nccratliri/whisperseg-animal-vad",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6728202222,
+  "storage_human": "6.7 GB",
+  "base_model": "nccratliri/whisperseg-base-animal-vad, nccratliri/whisperseg-animal-vad, nccratliri/whisperseg-large-ms, openai/whisper-tiny, openai/whisper-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le DAS, c’est quoi - ANFR",
+      "url": "https://www.anfr.fr/maitriser/equipements-radioelectriques/le-debit-dabsorption-specifique-das/le-das-cest-quoi",
+      "snippet": "Pour quantifier cet effet, la mesure de référence est le débit d’absorption spécifique (DAS), pour toutes les ondes comprises entre …"
+    },
+    {
+      "title": "Systèmes de sonorisation professionnels - DAS Audio",
+      "url": "https://www.dasaudio.com/fr/",
+      "snippet": "Découvrez nos enceintes professionnelles : Installations, Tournées et Production, Sonorisation portable, Clubs et Bars. Améliorez …"
+    },
+    {
+      "title": "Das — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/DAS",
+      "snippet": "Nom Toponyme Das est un nom de lieu notamment porté par : Das, commune espagnole en Catalogne ; Île de Das, île des Émirats …"
+    },
+    {
+      "title": "Domaine d'activité stratégique : définition, exemples concrets et guide ...",
+      "url": "https://agence-artis.fr/outils-bonnes-pratiques/domaine-dactivite-strategique-definition-exemples-structurer-entreprise",
+      "snippet": "Sep 28, 2025 · Domaine d'activité stratégique (DAS) : définition simple, critères essentiels, avantages et exemples détaillés (LVMH, …"
+    },
+    {
+      "title": "Formulaire n°DAS2 | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/formulaire/das2/etat-des-honoraires-vacations-commissions-courtages-ristournes-et-jetons",
+      "snippet": "Etat des honoraires, vacations, commissions, courtages, ristournes et jetons.... La déclaration des honoraires est souscrite par toute …"
+    }
+  ]
+}

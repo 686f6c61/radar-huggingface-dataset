@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated-i1-GGUF",
+  "slug": "mradermacher-huihui-qwen3-omni-30b-a3b-thinking-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated-i1-GGUF",
+  "created_at": "2026-04-20T10:48:44.000Z",
+  "updated_at": "2026-10-10T22:53:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 4,
+  "downloads_30d": 1669,
+  "trending_score": 0,
+  "parameters": 30532646912,
+  "parameters_human": "30.53B",
+  "storage_bytes": 324133733408,
+  "storage_human": "324.1 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3-Omni-30B-A3B-Thinking-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

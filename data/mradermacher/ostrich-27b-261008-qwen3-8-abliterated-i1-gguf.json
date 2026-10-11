@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Ostrich-27B-261008-Qwen3.8-Abliterated-i1-GGUF",
   "created_at": "2026-10-09T20:30:39.000Z",
-  "updated_at": "2026-10-09T21:23:50.000Z",
+  "updated_at": "2026-10-10T12:00:05.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -40,12 +40,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 266,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 39471870016,
-  "storage_human": "39.5 GB",
+  "storage_bytes": 218553890560,
+  "storage_human": "218.6 GB",
   "base_model": "etemiz/Ostrich-27B-261008-Qwen3.8-Abliterated",
   "formats": [
     "gguf"

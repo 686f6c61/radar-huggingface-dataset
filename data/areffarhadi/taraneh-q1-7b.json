@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "areffarhadi/Taraneh-Q1.7B",
+  "slug": "areffarhadi-taraneh-q1-7b",
+  "author": "areffarhadi",
+  "url": "https://huggingface.co/areffarhadi/Taraneh-Q1.7B",
+  "created_at": "2026-10-10T22:41:42.000Z",
+  "updated_at": "2026-10-10T23:51:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "qwen3_asr",
+    "automatic-speech-recognition",
+    "speech",
+    "asr",
+    "persian",
+    "farsi",
+    "taraneh",
+    "fa",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4088025265,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Talkiemate — AI Girlfriends & Chat Companions",
+      "url": "https://talkiemate-ai.com/",
+      "snippet": "Talkiemate is a friendly AI companion experience where you can meet, chat with and get to know a roster of warm, intelligent virtual …"
+    },
+    {
+      "title": "Free Ai Chat & Roleplay - TalkieMate",
+      "url": "https://talkiemate.com/free-ai-chat/",
+      "snippet": "Chat for free with lifelike NSFW AI companions. Experience unfiltered roleplay and nsfw chat. Join for free today!"
+    },
+    {
+      "title": "About Talkiemate — Our Story & Mission",
+      "url": "https://talkiemate-ai.com/about/",
+      "snippet": "Discover the story behind Talkiemate: why we built the friendliest AI girlfriend experience and what makes our companions feel so real."
+    },
+    {
+      "title": "Talk to AI Characters Free in 2026 — No Sign Up | TalkieMate",
+      "url": "https://talkiemate.com/blog/talk-to-ai-characters/",
+      "snippet": "Talk to 5k+ AI characters for free on TalkieMate. Unfiltered chat, AI images, voice calls — no signup, no credit card. Start talking to …"
+    },
+    {
+      "title": "Talkiemate — AI Girlfriends & Smart Chatting Companions",
+      "url": "https://talkiematejet.com/",
+      "snippet": "Talkiemate is a friendly platform where you can chat with charming AI girlfriends. Each girl has her own personality, interests and …"
+    }
+  ]
+}

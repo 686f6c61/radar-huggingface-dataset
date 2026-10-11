@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "arthrod/c5k-deberta_base-token_level-1-2",
+  "slug": "arthrod-c5k-deberta_base-token_level-1-2",
+  "author": "arthrod",
+  "url": "https://huggingface.co/arthrod/c5k-deberta_base-token_level-1-2",
+  "created_at": "2026-02-24T08:48:31.000Z",
+  "updated_at": "2026-10-10T22:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "onnx",
+    "ner",
+    "pii",
+    "mdeberta-v3",
+    "span-level",
+    "markerV0",
+    "domain-adaptation",
+    "spam",
+    "legacy",
+    "experiment-log",
+    "token-classification",
+    "pt",
+    "en",
+    "base_model:urchade/gliner_multi_pii-v1",
+    "base_model:finetune:urchade/gliner_multi_pii-v1",
+    "doi:10.57967/hf/8514",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46245144676,
+  "storage_human": "46.2 GB",
+  "base_model": "urchade/gliner_multi_pii-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arthrodèse — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Arthrod%C3%A8se",
+      "snippet": "Radiographie d'une épaule ayant subi une arthrodèse Arthrodèse sur un index d'une main droite : les articulations entre les …"
+    },
+    {
+      "title": "Arthrodèse lombaire (fusion vertébrale) : déroulement, indications et ...",
+      "url": "https://letraumato.com/arthrodese-lombaire/",
+      "snippet": "Feb 25, 2025 · L'arthrodèse lombaire est une intervention chirurgicale pour soulager les douleurs lombaires chroniques et stabiliser …"
+    },
+    {
+      "title": "Arthrodèse lombaire : tout ce qu’il faut savoir - Doctissimo",
+      "url": "https://www.doctissimo.fr/sante/mal-de-dos/chirurgie-face-au-mal-de-dos/arthrodese-lombaire-indications-preparatifs-intervention-suites/5a3bcf_ar.html",
+      "snippet": "Jul 15, 2025 · Dans quels cas, pratiquer une arthrodèse lombaire ? Comment s'y préparer ? Est-ce douloureux ? Quelles sont les …"
+    },
+    {
+      "title": "Arthrodèse : séquelles, combien de temps souffre-t-on ?",
+      "url": "https://sante.journaldesfemmes.fr/fiches-anatomie-et-examens/2824453-arthrodese-sequelles/",
+      "snippet": "Oct 11, 2023 · L'arthrodèse est une opération chirurgicale qui consiste à bloquer une articulation. Elle est pratiquée pour corriger une …"
+    },
+    {
+      "title": "L’IRM est-elle possible avec une arthrodèse ?",
+      "url": "https://umvie.com/lirm-est-elle-possible-avec-une-arthrodese/",
+      "snippet": "Sep 8, 2023 · Introduction L’arthrodèse est une procédure chirurgicale utilisée pour stabiliser une articulation, généralement en …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "zuimengqm",
   "url": "https://huggingface.co/zuimengqm/rmbg-qnn-animeseg",
   "created_at": "2026-10-04T01:07:41.000Z",
-  "updated_at": "2026-10-08T11:55:13.000Z",
+  "updated_at": "2026-10-10T10:09:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 654892555,
-  "storage_human": "655 MB",
+  "storage_bytes": 746574057,
+  "storage_human": "747 MB",
   "base_model": null,
   "formats": [
     "onnx"

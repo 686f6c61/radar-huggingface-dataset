@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010204544",
+  "slug": "alxxtexxr-xlm-r-base-squad-tr-s42-legamex-lora-add-v261010204544",
+  "author": "alxxtexxr",
+  "url": "https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261010204544",
+  "created_at": "2026-10-10T20:50:42.000Z",
+  "updated_at": "2026-10-10T20:51:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 1131994201,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-11T02:03:00.805Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-avg-v261005063251 ...",
+      "url": "https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-avg-v261005063251",
+      "snippet": "Instructions to use alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-avg-v261005063251 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261005063039",
+      "url": "https://huggingface.co/alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261005063039",
+      "snippet": "Instructions to use alxxtexxr/XLM-R-Base-squad-tr-s42-LegameX-LoRA-add-v261005063039 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Xlm R Base Squad Tr S42 Lora Avg V260929105402 - AI Model Insights ...",
+      "url": "https://free2aitools.com/model/alxxtexxr/xlm-r-base-squad-tr-s42-lora-avg-v260929105402",
+      "snippet": "Registry entry for model Xlm R Base Squad Tr S42 Lora Avg V260929105402; source metadata pending."
+    },
+    {
+      "title": "Xlm R Base Squad Tr S42 Legamex Lora Add V261005063039",
+      "url": "https://free2aitools.com/model/alxxtexxr/xlm-r-base-squad-tr-s42-legamex-lora-add-v261005063039",
+      "snippet": "Registry entry for model Xlm R Base Squad Tr S42 Legamex Lora Add V261005063039; source metadata pending."
+    },
+    {
+      "title": "xlm-roberta-base-squad2 Tutorial: Multilingual QA — AI Tutorial",
+      "url": "https://aiindigo.com/tutorials/getting-started-with-xlm-roberta-base-squad2-multilingual-q-a",
+      "snippet": "Step-by-step guide to using the deepset xlm-roberta-base-squad2 model for multilingual question answering with Python and Hugging Face."
+    }
+  ]
+}

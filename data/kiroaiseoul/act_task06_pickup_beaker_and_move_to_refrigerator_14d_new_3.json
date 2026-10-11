@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_new_3",
+  "slug": "kiroaiseoul-act_task06_pickup_beaker_and_move_to_refrigerator_14d_new_3",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task06_pickup_beaker_and_move_to_refrigerator_14D_new_3",
+  "created_at": "2026-10-11T00:12:19.000Z",
+  "updated_at": "2026-10-11T00:12:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kiroaiseoul/task06_pickup_beaker_and_move_to_refrigerator_14D_new_3",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3021 - LE TEILLEUL / COUTANCES - nomad.normandie.fr",
+      "url": "https://nomad.normandie.fr/sites/default/files/ficheshoraires/3021.pdf",
+      "snippet": "A : Correspondance avec 3021A2 pour prendre en charge les élèves de Pontorson qui vont au CFA/IFORM. B : Correspondance …"
+    },
+    {
+      "title": "www.horairedubus.fr",
+      "url": "https://www.horairedubus.fr/horaire-bus-le-teilleul-50640.html",
+      "snippet": ""
+    },
+    {
+      "title": "Horaire Bus à Le Tilleul (76790) - tarif, itinéraire, trajet",
+      "url": "https://www.horairedubus.fr/horaire-bus-le-tilleul-76790.html",
+      "snippet": "Les horaires des lignes de bus à Le Tilleul. Se Déplacer dans la commune Le Tilleul - 76790 en utilisant les transports en commun. …"
+    },
+    {
+      "title": "Ligne 309 | NOMAD",
+      "url": "https://nomad.normandie.fr/lignes-de-cars/ligne-309",
+      "snippet": "Le décret n° 2025-582 du 27 juin 2025 relatif aux espaces sans tabac étend l'interdiction de fumer aux abribus notamment. Il stipule …"
+    },
+    {
+      "title": "Arrêt de Bus Le Tilleul : Prochain passages | Bonjour RATP",
+      "url": "https://www.bonjour-ratp.fr/arrets-bus/le-tilleul+montdauphin-77320/",
+      "snippet": "Découvrez les informations pratiques sur l'arrêt de bus Le Tilleul : horaires et fréquence de passage..."
+    }
+  ]
+}

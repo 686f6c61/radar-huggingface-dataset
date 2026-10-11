@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "DICPlay/RusMind-3.2-Vspyshka",
+  "slug": "dicplay-rusmind-3-2-vspyshka",
+  "author": "DICPlay",
+  "url": "https://huggingface.co/DICPlay/RusMind-3.2-Vspyshka",
+  "created_at": "2026-10-11T00:11:29.000Z",
+  "updated_at": "2026-10-11T00:14:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "rusmind",
+    "dicplay",
+    "russian",
+    "on-device",
+    "offline",
+    "llama.cpp",
+    "wllama",
+    "text-generation",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 3775011808,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek V3.2 - Venice Uncensored AI",
+      "url": "https://venice.ai/chat?model=deepseek-v3.2",
+      "snippet": "DeepSeek-V3.2 is an efficient large language model with DeepSeek Sparse Attention (DSA) for long contexts. It features strong reasoning and tool-use skills, achieving top results on the 2025 IMO and IOI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Steam Workshop::RiMind",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3562373405",
+      "snippet": "🤖 Automated Google AI Model Cycling (Using code from &#x27;ProjectE&#x27; of the RimWorld Gallery) Multi-Model Support: Automatically switches between various AI models like Gemini-2.5-flash, Gemini-2.0-flash, and Gemma-3. Quota Optimization: When one model&#x27;s quota is reached, it automatically switches to another to maximize API usage."
+    },
+    {
+      "title": "Gemini (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gemini_(language_model)",
+      "snippet": "It also introduces improved agentic capabilities, a new Google Gen AI SDK, and \"Jules\", an experimental AI coding agent for GitHub. [45][non-primary source needed] In March 2025, Google announced Gemini Robotics, a vision-language-action model based on the Gemini 2.0 family of models."
+    }
+  ]
+}

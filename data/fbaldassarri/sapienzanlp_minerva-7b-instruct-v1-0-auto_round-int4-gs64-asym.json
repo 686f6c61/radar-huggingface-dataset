@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-asym",
+  "slug": "fbaldassarri-sapienzanlp_minerva-7b-instruct-v1-0-auto_round-int4-gs64-asym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-auto_round-int4-gs64-asym",
+  "created_at": "2026-10-10T20:34:47.000Z",
+  "updated_at": "2026-10-10T20:35:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "minerva",
+    "italian",
+    "4-bit",
+    "conversational",
+    "it",
+    "en",
+    "base_model:sapienzanlp/Minerva-7B-instruct-v1.0",
+    "base_model:quantized:sapienzanlp/Minerva-7B-instruct-v1.0",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1415319552,
+  "parameters_human": "1.42B",
+  "storage_bytes": 5443257032,
+  "storage_human": "5.4 GB",
+  "base_model": "sapienzanlp/Minerva-7B-instruct-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sapienzanlp/Minerva-7B-instruct-v1.0 · Hugging Face",
+      "url": "https://huggingface.co/sapienzanlp/Minerva-7B-instruct-v1.0",
+      "snippet": "Minerva-7B-base-v1. is a Transformer model based on the Mistral architecture. Please look at the configuration file for a detailed breakdown of the hyperparameters we chose for this model."
+    },
+    {
+      "title": "sapienzanlp_Minerva-7B-instruct-v1.0-autogptq-int8-gs128-asym",
+      "url": "https://huggingface.co/fbaldassarri/sapienzanlp_Minerva-7B-instruct-v1.0-autogptq-int8-gs128-asym",
+      "snippet": "Model Information Quantized version of sapienzanlp/Minerva-7B-instruct-v1. using torch.float32 for quantization tuning. 8 bits (INT8) group size = 128 Asymmetrical Quantization Method AutoGPTQ Quantization framework: Intel AutoRound v0.4.6 Note: this INT8 version of Minerva-7B-instruct-v1. has been quantized to run inference through CPU."
+    },
+    {
+      "title": "fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-autoawq-int4-gs128-asym ...",
+      "url": "https://d6108366.hf-mirror.com/fbaldassarri/sapienzanlp_Minerva-7B-base-v1.0-autoawq-int4-gs128-asym/discussions",
+      "snippet": "Instructions to use fbaldassarri/sapienzanlp_Minerva-7B-base-v1.-autoawq-int4-gs128-asym with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Minerva AI LLM: Technical Documentation",
+      "url": "https://minerva-ai.org/en/docs/tech-page",
+      "snippet": "Paired with our instruction-tuned Minerva 7B, this process ensures a streamlined and effective way to create a language model that better aligns with user preferences."
+    },
+    {
+      "title": "sapienzanlp-minerva-7b-ins... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/sapienzanlp-minerva-7b-instruct-v1.0",
+      "snippet": "sapienzanlp/Minerva-7B-instruct-v1. powered by Text Generation Inference (TGI). Sign in to Microsoft Foundry to deploy this model."
+    }
+  ]
+}

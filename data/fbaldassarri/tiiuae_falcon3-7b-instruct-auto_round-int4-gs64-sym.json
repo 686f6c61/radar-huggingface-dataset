@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym",
+  "slug": "fbaldassarri-tiiuae_falcon3-7b-instruct-auto_round-int4-gs64-sym",
+  "author": "fbaldassarri",
+  "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym",
+  "created_at": "2026-10-10T20:47:28.000Z",
+  "updated_at": "2026-10-10T20:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "autoround",
+    "auto-round",
+    "pytorch",
+    "causal-lm",
+    "intel-autoround",
+    "intel",
+    "woq",
+    "weights-only-quantization",
+    "falcon",
+    "falcon3",
+    "tii",
+    "4-bit",
+    "conversational",
+    "en",
+    "base_model:tiiuae/Falcon3-7B-Instruct",
+    "base_model:quantized:tiiuae/Falcon3-7B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1753635840,
+  "parameters_human": "1.75B",
+  "storage_bytes": 6806801080,
+  "storage_human": "6.8 GB",
+  "base_model": "tiiuae/Falcon3-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym",
+      "snippet": "fbaldassarri / tiiuae_Falcon3-7B-Instruct-auto_gptq-int4-gs64-sym Like 0 Text Generation Transformers Safetensors PyTorch English llama gptq auto-gptq autogptq causal-lm autoround auto-round intel-autoround intel woq weights-only-quantization falcon falcon3 tii 4-bit precision conversational text-generation-inference License:apache-2.0 Model ..."
+    },
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym ...",
+      "url": "https://huggingface.co/fbaldassarri/tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym",
+      "snippet": "tiiuae_Falcon3-7B-Instruct-auto_round-int4-gs64-sym Like 1 Text Generation Transformers Safetensors PyTorch English llama autoround auto-round causal-lm intel-autoround intel woq weights-only-quantization falcon falcon3 tii 4-bit precision conversational text-generation-inference License:apache-2.0 Model card FilesFiles and versions xet ..."
+    },
+    {
+      "title": "tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym - friendli.ai",
+      "url": "https://friendli.ai/models/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autoawq-int4-gs128-sym",
+      "snippet": "Request reserved instances Model provider fbaldassarri Model tree Base tiiuae/Falcon3-7B-Instruct Quantized this model Modalities Input Text Output Text Pricing Dedicated Endpoints View details Supported Functionality Model APIs Dedicated Endpoints Container More information Model card"
+    },
+    {
+      "title": "fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym ...",
+      "url": "https://api-inference.hf-mirror.com/fbaldassarri/tiiuae_Falcon3-7B-Instruct-autogptq-int4-gs128-asym/discussions",
+      "snippet": "Transformers Safetensors PyTorch 4 languages llama causal-lm autoround auto-round intel-autoround woq autogptq auto-gptq gptq intel falcon3 conversational text-generation-inference 4-bit precision License:falcon-llm-license Model card FilesFiles and versions xet Community Deploy Use this model New pull request Discussions Pull requests View ..."
+    },
+    {
+      "title": "Introducing the Technology Innovation Institute&#x27;s Falcon 3: Making ...",
+      "url": "https://falconllm.tii.ae/falcon3/index.html",
+      "snippet": "The 7B model ranks second overall, outperforming larger models like SALMONN (13B) in key metrics. Even our lightweight models (3B and 1B) deliver competitive results, making Falcon3 Audio an outstanding choice for diverse audio applications, from sound analysis to speech recognition, while maintaining efficiency in the small model category."
+    }
+  ]
+}
