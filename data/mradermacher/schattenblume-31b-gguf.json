@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Schattenblume-31B-GGUF",
   "created_at": "2026-08-17T05:00:26.000Z",
-  "updated_at": "2026-08-17T06:33:57.000Z",
+  "updated_at": "2026-10-11T14:22:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -38,7 +38,7 @@
     "not-for-all-audiences"
   ],
   "likes": 2,
-  "downloads_30d": 920,
+  "downloads_30d": 1298,
   "trending_score": 0,
   "parameters": 30697345596,
   "parameters_human": "30.70B",

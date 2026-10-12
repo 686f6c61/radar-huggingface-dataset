@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_references_an_activity_from_earlier_in_the_session",
+  "slug": "stanfordscale-assertion_references_an_activity_from_earlier_in_the_session",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_references_an_activity_from_earlier_in_the_session",
+  "created_at": "2026-10-12T17:53:16.000Z",
+  "updated_at": "2026-10-12T17:53:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.4021
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.5282
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.3247
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.7618
+    }
+  ],
+  "sources": [
+    {
+      "title": "Mature anal • Ebony • AfroSex",
+      "url": "https://afrosex.com/en/categories/mature-anal/",
+      "snippet": "Ebony / Mature anal - 82,814 videos. mature interracial anal, bbw mature anal, redhead anal, mature anal gangbang, mature hairy …"
+    },
+    {
+      "title": "MATURE EBONY ASS PORN @ A Mature Tube",
+      "url": "https://amaturetube.com/ebony-ass-videos",
+      "snippet": "A mature, attractive dark-skinned woman vigorously takes a stiff penis until the man ejaculates. The hottest free MATURE EBONY …"
+    },
+    {
+      "title": "Ebony MILF Porn - Ebony Mature & Black Mom Videos",
+      "url": "https://www.blackmilftube.com/",
+      "snippet": "These hot videos will provide those special sensations you desire, as all the hot ass ebony babes featured are highly rated and very …"
+    },
+    {
+      "title": "MATURE BLACK BOOTY PORN @ A Mature Tube",
+      "url": "https://amaturetube.com/black-booty-videos",
+      "snippet": "The hottest free MATURE BLACK BOOTY porn videos. The hottest video: Her pussy wants a dick. And there is 8,716 more videos."
+    },
+    {
+      "title": "Ebony Mature Anal Tube Search (7434 videos) - NudeVista",
+      "url": "https://www.nudevista.com/?q=ebony+mature+anal&s=t",
+      "snippet": "7 434 results for ebony mature anal tube, ordered by relevance, newest, popularity, duration or random"
+    }
+  ]
+}

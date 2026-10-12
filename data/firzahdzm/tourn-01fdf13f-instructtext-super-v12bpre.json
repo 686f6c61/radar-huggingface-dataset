@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-01fdf13f-instructtext-super-v12bpre",
+  "slug": "firzahdzm-tourn-01fdf13f-instructtext-super-v12bpre",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-super-v12bpre",
+  "created_at": "2026-10-12T02:23:37.000Z",
+  "updated_at": "2026-10-12T02:24:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557072,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "firzahdzm/tourn-c673dbe2-instructtext-super-u1 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-c673dbe2-instructtext-super-u1",
+      "snippet": "Instructions to use firzahdzm/tourn-c673dbe2-instructtext-super-u1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "firzahdzm/tourn-803a8f69-instructtext-super-ra2btwin4 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-super-ra2btwin4",
+      "snippet": "firzahdzm / tourn-803a8f69-instructtext-super-ra2btwin4 Like 0 Safetensors lfm2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "tourn-803a8f69-instructtext-super-p1v - FriendliAI",
+      "url": "https://friendli.ai/models/firzahdzm/tourn-803a8f69-instructtext-super-p1v",
+      "snippet": "Deploy tourn-803a8f69-instructtext-super-p1v with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "tourn-2065add7-instructtext-f1: Model Details, Context & Pricing | Essa ...",
+      "url": "https://essamamdani.com/ai-models/hf-firzahdzm-tourn-2065add7-instructtext-f1",
+      "snippet": "Model card indexed from Hugging Face. Context window Not listed Last source check 8/12/2026, 11:10:56 AM Input / million tokens Not listed Output / million tokens Not listed firzahdzm Source record ↗ Official link ↗"
+    },
+    {
+      "title": "Insights DB",
+      "url": "https://insights-db.paloaltonetworks.com/models/firzahdzm/tourn-865ff4ab-instructtext-e1/3d9d7ba5552cf02eaa7889f84585c61024d86b06/overview",
+      "snippet": "Discover potential threats in the firzahdzm / tourn-865ff4ab-instructtext-e1 model. Learn about the vulnerabilities that cause these threats, and explore security solutions by Palo Alto Networks Prisma AIRS."
+    }
+  ]
+}

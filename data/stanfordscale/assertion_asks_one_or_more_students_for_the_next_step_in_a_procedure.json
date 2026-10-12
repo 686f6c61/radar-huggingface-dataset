@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_asks_one_or_more_students_for_the_next_step_in_a_procedure",
+  "slug": "stanfordscale-assertion_asks_one_or_more_students_for_the_next_step_in_a_procedure",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_next_step_in_a_procedure",
+  "created_at": "2026-10-12T17:56:08.000Z",
+  "updated_at": "2026-10-12T17:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.5229
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.5926
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.4678
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.896
+    }
+  ],
+  "sources": [
+    {
+      "title": "Big ass xxx girls porn XXX Videos Porn Vids SEX 3GP HD 2022",
+      "url": "https://xxxbfvideo.net/sex/big-ass-xxx-girls-porn/",
+      "snippet": "Watch & Download HD Big ass xxx girls porn xxx videos porn vids 3gp HD 2022 free at xxxbfvideo.net."
+    },
+    {
+      "title": "pron xxx click - Search Videos - Bing",
+      "url": "https://www.bing.com/videos/riverview/relatedvideo?q=pron+xxx+click&ajaxhist=0",
+      "snippet": "Watch videos instantly on Bing—enjoy direct playback, discover related clips, and dive into trending content all in one place."
+    },
+    {
+      "title": "young tiny teen — Yandex: found 81 thousand results",
+      "url": "https://tv.yandex.com/search/?text=young+tiny+teen&p=1",
+      "snippet": "Explore the vibrant world of tiny teenagers and their unique experiences. Find over 100+ of the best free young teen images. Free for …"
+    },
+    {
+      "title": "Big Booty Bitches | Scantraxx",
+      "url": "https://www.scantraxx.com/releases/2048/big-booty-bitches",
+      "snippet": "Scantraxx. We Create Memories.... Buy at Price from € 1.49"
+    },
+    {
+      "title": "2,128+ Free Pron Video 4K & HD Stock Videos - Pixabay",
+      "url": "https://pixabay.com/videos/search/pron%20video/",
+      "snippet": "2,128+ Free Pron Video 4K & HD Stock Videos Find your perfect pron video video clip. Free footage to download and use in your …"
+    }
+  ]
+}

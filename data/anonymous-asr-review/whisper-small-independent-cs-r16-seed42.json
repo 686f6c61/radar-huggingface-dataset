@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "anonymous-asr-review/whisper-small-independent-cs-r16-seed42",
+  "slug": "anonymous-asr-review-whisper-small-independent-cs-r16-seed42",
+  "author": "anonymous-asr-review",
+  "url": "https://huggingface.co/anonymous-asr-review/whisper-small-independent-cs-r16-seed42",
+  "created_at": "2026-10-12T16:32:39.000Z",
+  "updated_at": "2026-10-12T16:32:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "si",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "code-switching",
+    "automatic-speech-recognition",
+    "si",
+    "en",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7098064,
+  "storage_human": "7 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anonymous (collectif) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anonymous_(collectif)",
+      "snippet": "L'utilisation du terme Anonymous, dans le sens d'identité partagée, a commencé sur les imageboards, où la mention « Anonymous » …"
+    },
+    {
+      "title": "Anonymous : tout savoir sur le groupe de hacktivistes",
+      "url": "https://www.lebigdata.fr/anonymous-hebergeur-dark-web",
+      "snippet": "Aug 8, 2026 · Anonymous est un organisation de pirates informatiques et d’activistes politiques. C’est celui qui est derrière quelques …"
+    },
+    {
+      "title": "Anonymous (hacker group) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anonymous_(hacker_group)",
+      "snippet": "A tag of Anonymous is assigned to visitors who leave comments without identifying the originator of the posted content. Users of …"
+    },
+    {
+      "title": "Anonymous Hackers - Anonymous Group Official Website",
+      "url": "https://www.anonymoushackers.net/",
+      "snippet": "This is anonymous group official website control by anonymous headquarters. Here you can read the latest news about anonymous. …"
+    },
+    {
+      "title": "Anonymous Copenhagen Official Online Shop– Anonymous …",
+      "url": "https://www.anoncph.com/",
+      "snippet": "Anonymous Copenhagen is a Danish footwear brand, offering classic styles inspired by Scandinavian minimalism, European …"
+    }
+  ]
+}

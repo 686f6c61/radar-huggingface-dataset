@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_paraphrases_a_prior_student_contribution",
+  "slug": "stanfordscale-assertion_paraphrases_a_prior_student_contribution",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_paraphrases_a_prior_student_contribution",
+  "created_at": "2026-10-12T17:59:11.000Z",
+  "updated_at": "2026-10-12T17:59:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.2348
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.4091
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.1646
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.5843
+    }
+  ],
+  "sources": [
+    {
+      "title": "News, sport, celebrities and gossip | The Sun",
+      "url": "https://www.thesun.co.uk/",
+      "snippet": "Get the latest news, exclusives, sport, celebrities, showbiz, politics, business and lifestyle from The Sun"
+    },
+    {
+      "title": "Latest News headlines, exclusives and opinion | The Sun",
+      "url": "https://www.thesun.co.uk/news/",
+      "snippet": "Breaking headlines and latest news from the UK and the World. Exclusives, live updates, pictures, video and comment from The Sun"
+    },
+    {
+      "title": "The Sun web",
+      "url": "https://enewspaper.thesun.co.uk/",
+      "snippet": "Access The Sun's digital newspaper and stay updated with the latest news, stories, and features from the UK and around the world."
+    },
+    {
+      "title": "The Sun - Help Hub",
+      "url": "https://help.thesun.co.uk/",
+      "snippet": "News Group Newspapers Limited in England No. 679215. Registered office: 1 London Bridge Street, London, SE1 9GF. 'The Sun', …"
+    },
+    {
+      "title": "Sun Club Plus",
+      "url": "http://digital-newspaper.thesun.co.uk/",
+      "snippet": "Your Sun Club Plus membership will include: The Digital Newspaper App: the full daily paper, including all supplements and puzzles …"
+    }
+  ]
+}

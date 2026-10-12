@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "takuyayoshi/coca-generation",
+  "slug": "takuyayoshi-coca-generation",
+  "author": "takuyayoshi",
+  "url": "https://huggingface.co/takuyayoshi/coca-generation",
+  "created_at": "2026-10-12T18:19:29.000Z",
+  "updated_at": "2026-10-12T18:19:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vente Momox et impossibilité de me faire payer",
+      "url": "https://forum.quechoisir.org/vente-momox-et-impossibilite-de-me-faire-payer-t346114.html",
+      "snippet": "Jan 9, 2024 · Les contrats conclus entre momox et le vendeur sont régis par le droit de la République fédérale d’Allemagne sous …"
+    },
+    {
+      "title": "Problème avec momox-shop.fr - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/probleme-avec-momox-shop-fr-t50026.html",
+      "snippet": "Jan 20, 2016 · Re: Problème avec momox-shop.fr Messagepar Carolinette » ven. janv. 20, 2017 3:00 pm Momox Shop Fr ou …"
+    },
+    {
+      "title": "Arnaque momox [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7031446-arnaque-momox",
+      "snippet": "Feb 6, 2016 · Bonjour, effectivement momox ne paye plus une grande majorité des ventes, ils se lancent maintenant dans autre …"
+    },
+    {
+      "title": "POUBELLE ET VOISIN [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-4918559-poubelle-et-voisin",
+      "snippet": "Bonjour, Notre voisine qui habite à environ 50 mètres de la nôtre a décidé de mettre son container devant chez nous arguant que …"
+    },
+    {
+      "title": "Momox, avalanche de non reçu en aout? - Seller Central FR",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/1c3c8a4cd479a35efeb2cf2db989f972",
+      "snippet": "J’ai moi aussi un retard de livraison pour un livre acheté chez Momox . Mais un livre acheté le même jour sur eBay est également en …"
+    }
+  ]
+}

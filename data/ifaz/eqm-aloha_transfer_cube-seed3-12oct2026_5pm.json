@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-aloha_transfer_cube-seed3-12oct2026_5pm",
+  "slug": "ifaz-eqm-aloha_transfer_cube-seed3-12oct2026_5pm",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-12oct2026_5pm",
+  "created_at": "2026-10-12T16:27:28.000Z",
+  "updated_at": "2026-10-12T16:27:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "eqm",
+    "robotics",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18808824,
+  "parameters_human": "18.8M",
+  "storage_bytes": 75262988,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ExpressVPN: Best VPN Service for Speed & Privacy in 2026",
+      "url": "https://www.expressvpn.com/",
+      "snippet": "Protect your privacy, stream worldwide, and enjoy fast speeds with ExpressVPN. Servers in 113 countries, 24/7 support, and a 30 …"
+    },
+    {
+      "title": "Download ExpressVPN App – Fast, Private & Easy Setup",
+      "url": "https://www.expressvpn.com/vpn-download",
+      "snippet": "ExpressVPN follows a strict no-logs policy, independently audited by firms like KPMG and PwC. This ensures your connection and …"
+    },
+    {
+      "title": "ExpressVPN - Get Aircove, the Award-Winning VPN Router",
+      "url": "https://store.expressvpn.com/",
+      "snippet": "Engineered by ExpressVPN, Aircove is a powerful Wi-Fi 6 router with built-in VPN protection. Bring VPN benefits to every device in …"
+    },
+    {
+      "title": "Sign in to your account | ExpressVPN",
+      "url": "https://checkout.expressvpn.com/api/auth/login/init",
+      "snippet": "Sign in to manage your ExpressVPN subscription. A 6-digit verification code will be sent to your email."
+    },
+    {
+      "title": "All Products – ExpressVPN",
+      "url": "https://store.expressvpn.com/collections/all",
+      "snippet": "Engineered by ExpressVPN, Aircove is a powerful Wi-Fi 6 router with built-in VPN protection. Bring VPN benefits to every device in …"
+    }
+  ]
+}

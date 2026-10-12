@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Codingpae/20261009_diff_100k",
+  "slug": "codingpae-20261009_diff_100k",
+  "author": "Codingpae",
+  "url": "https://huggingface.co/Codingpae/20261009_diff_100k",
+  "created_at": "2026-10-12T02:42:00.000Z",
+  "updated_at": "2026-10-12T02:42:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 293326840,
+  "parameters_human": "293.3M",
+  "storage_bytes": 1173388976,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les meilleures escortes de Orbigny sont ici ! - Private Modele",
+      "url": "https://privatemodele.com/escorts/centre-val-de-loire/indre-et-loire/orbigny",
+      "snippet": "Les meilleures escortes de Orbigny sont ici : plus de 2 escortes disponibles !"
+    },
+    {
+      "title": "Escort Orbigny | Femme, filles, étudiantes, libertines | WOOBS.COM",
+      "url": "https://fr.woobs.com/female-escorts/france/indre-et-loire/orbigny",
+      "snippet": "Le guide des annonces pour escortes en Orbigny. Annonces 100% gratuites, meilleures escort girls a Orbigny."
+    },
+    {
+      "title": "Orbigny Escorts | Escorts in Orbigny Available Now - woobs.com",
+      "url": "https://www.woobs.com/female-escorts/france/indre-et-loire/orbigny",
+      "snippet": "You’ll find that all of the Orbigny escorts listed in the escort directory are either independent escorts or employed by local escort …"
+    },
+    {
+      "title": "Escort Orbigny-au-Val | Femme, filles, étudiantes, libertines",
+      "url": "https://fr.woobs.com/female-escorts/france/haute-marne/orbigny-au-val",
+      "snippet": "Le guide des annonces pour escortes en Orbigny-au-Val. Annonces 100% gratuites, meilleures escort girls a Orbigny-au-Val."
+    },
+    {
+      "title": "Escort Orbigny (37460) - Accès gratuit",
+      "url": "https://savoyhotelparis.fr/indre-et-loire/orbigny",
+      "snippet": "escort à Orbigny (37460) :... découvrez nos escort. 13 annonces de escort disponibles à Orbigny. Inscrivez-vous gratuitement et …"
+    }
+  ]
+}

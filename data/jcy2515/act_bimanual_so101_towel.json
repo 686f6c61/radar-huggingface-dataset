@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "JCY2515/act_bimanual_so101_towel",
+  "slug": "jcy2515-act_bimanual_so101_towel",
+  "author": "JCY2515",
+  "url": "https://huggingface.co/JCY2515/act_bimanual_so101_towel",
+  "created_at": "2026-10-12T16:09:48.000Z",
+  "updated_at": "2026-10-12T16:31:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:JCY2515/bimanual_so101_towel_clean",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51680908,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1239377832,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

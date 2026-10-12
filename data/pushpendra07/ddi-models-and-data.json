@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Pushpendra07/ddi-models-and-data",
+  "slug": "pushpendra07-ddi-models-and-data",
+  "author": "Pushpendra07",
+  "url": "https://huggingface.co/Pushpendra07/ddi-models-and-data",
+  "created_at": "2026-10-12T02:54:42.000Z",
+  "updated_at": "2026-10-12T03:21:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1593874522,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nexus AI | Next Generation Intelligence",
+      "url": "https://ai.pushpendra.io/",
+      "snippet": "Engineered for the AI Era Predictive Intelligence Advanced forecasting models with 96% accuracy. Predict market trends, user behavior, and system anomalies."
+    },
+    {
+      "title": "Data on AI models",
+      "url": "https://epoch.ai/data/ai-models",
+      "snippet": "What is a notable model? A notable model meets any of the following criteria: (i) state-of-the-art improvement on a recognized benchmark; (ii) highly cited (over 1000 citations); (iii) historical relevance; (iv) significant use. How was the AI models dataset created?"
+    },
+    {
+      "title": "Drug-Drug Interaction Prediction: Databases, Models, and Future ...",
+      "url": "https://omicstutorials.com/drug-drug-interaction-prediction-databases-models-and-future-directions/",
+      "snippet": "Predicting Drug-Drug Interactions: Key Computational Models, Databases, and Future Directions Introduction Drug-drug interactions (DDIs) are a major concern in clinical pharmacology, as they can significantly affect the safety and efficacy of treatment regimens. The simultaneous use of multiple drugs, whether for enhancing therapeutic efficacy or minimizing side effects, is common practice ..."
+    },
+    {
+      "title": "Pushpendra Singh - YouTube",
+      "url": "https://www.youtube.com/@Pushpendra_xai",
+      "snippet": "The future belongs to people who understand technology early. This channel helps you do exactly that—giving you the competitive edge to stay ahead in your work, business, and life. I&#x27;m ..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ibm-granite/granite-embedding-small-english-r2",
+  "slug": "ibm-granite-granite-embedding-small-english-r2",
+  "author": "ibm-granite",
+  "url": "https://huggingface.co/ibm-granite/granite-embedding-small-english-r2",
+  "created_at": "2025-07-17T20:41:53.000Z",
+  "updated_at": "2026-01-21T18:38:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "granite",
+    "embeddings",
+    "transformers",
+    "mteb",
+    "en",
+    "arxiv:2508.21085",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 97,
+  "downloads_30d": 5225333,
+  "trending_score": 13,
+  "parameters": 47662464,
+  "parameters_human": "47.7M",
+  "storage_bytes": 285998266,
+  "storage_human": "286 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/fr-fr",
+      "snippet": "Innovateur technologique mondial depuis plus d’un siècle, IBM est à la pointe d’avancées en matière de solutions d’IA, …"
+    },
+    {
+      "title": "IBM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IBM",
+      "snippet": "Les relations commerciales entre IBM et le régime hitlérien se sont poursuivies sans interruption face aux vastes appels …"
+    },
+    {
+      "title": "IBM",
+      "url": "https://www.ibm.com/",
+      "snippet": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions …"
+    },
+    {
+      "title": "IBM - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/IBM",
+      "snippet": "IBM was founded in 1911 as the Computing-Tabulating-Recording Company (CTR), a holding company of manufacturers of record …"
+    },
+    {
+      "title": "About IBM",
+      "url": "https://www.ibm.com/about",
+      "snippet": "IBM brings together software, consulting and infrastructure to help clients solve the business challenges that matter most. Our …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Xu-AI4Science/mechflow-ckpts",
+  "slug": "xu-ai4science-mechflow-ckpts",
+  "author": "Xu-AI4Science",
+  "url": "https://huggingface.co/Xu-AI4Science/mechflow-ckpts",
+  "created_at": "2026-10-12T18:18:35.000Z",
+  "updated_at": "2026-10-12T18:20:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chemistry",
+    "transition-state",
+    "reaction-mechanism",
+    "flow-matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1765394180,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XU — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/XU",
+      "snippet": "Xu ou XU correspond aux domaines suivants. la onzième branche terrestre Xu du calendrier sexagésimal chinois. 許 (pinyin : Xǔ). …"
+    },
+    {
+      "title": "Chez XU | Paris - Facebook",
+      "url": "https://www.facebook.com/ChezXU/",
+      "snippet": "Dans les montagnes du Guangxi, du Guangdong, du Jiangxi et d’ailleurs, le karting dans le **canyon** devient une nouvelle façon …"
+    },
+    {
+      "title": "Moteur XU — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Moteur_XU",
+      "snippet": "Le moteur XU est un moteur à essence automobile conçu et fabriqué par PSA dans les années 1980 et 1990. C'est un moteur quatre …"
+    },
+    {
+      "title": "Chez Xu (Spécialités du Wenzhou) - Restaurant Guru",
+      "url": "https://fr.restaurantguru.com/Chez-XU-Paris",
+      "snippet": "Sep 25, 2026 · Chez Xu (Spécialités du Wenzhou) à Paris classé 4 sur 5 sur Restaurant Guru : 1014 avis de visiteurs, 327 photos. …"
+    },
+    {
+      "title": "CHEZ XU, Paris - Le Marais - Restaurant Avis, Numéro de Téléphone ...",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187147-d6350892-Reviews-Chez_Xu-Paris_Ile_de_France.html",
+      "snippet": "Soupe au légumes qui est en réalité une soupe aux crevettes. J’ai commandé la « soupe au tofu et légumes » mais il y avait des …"
+    }
+  ]
+}

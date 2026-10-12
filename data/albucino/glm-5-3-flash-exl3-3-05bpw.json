@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "albucino/GLM-5.3-Flash-EXL3-3.05bpw",
+  "slug": "albucino-glm-5-3-flash-exl3-3-05bpw",
+  "author": "albucino",
+  "url": "https://huggingface.co/albucino/GLM-5.3-Flash-EXL3-3.05bpw",
+  "created_at": "2026-10-12T18:16:32.000Z",
+  "updated_at": "2026-10-12T18:17:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glm-5.3",
+    "exl3",
+    "exllamav3",
+    "vllm",
+    "256k-context",
+    "rtx-3090",
+    "dual-gpu",
+    "24gb-vram",
+    "128gb-ram",
+    "consumer-gpu",
+    "cpu-offload",
+    "moe",
+    "local-llm",
+    "agents",
+    "text-generation",
+    "base_model:turboderp/GLM-5.3-Flash-exl3",
+    "base_model:finetune:turboderp/GLM-5.3-Flash-exl3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3-Flash, turboderp/GLM-5.3-Flash-exl3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Office 365 商业版可以只订阅一个人吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/50232579?sort=created",
+      "snippet": "Sep 1, 2016 · Microsoft 经销商 维宇网络为你服务。 可以的，没有任何问题。 找我们的很多初创的小团队，小公司都是买1套的商业版 …"
+    },
+    {
+      "title": "华硕笔记本office产品如何激活？ - 知乎",
+      "url": "https://www.zhihu.com/question/293385672",
+      "snippet": "注: 华硕电脑预装为Microsoft 365应用程序，如您的机台有搭配永久版Office家庭学生版 2021，请参考以下步骤将Microsoft 365更新 …"
+    },
+    {
+      "title": "如何激活Office 365 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c85b7a642c24f6413aac9548.html",
+      "snippet": "Aug 6, 2020 · 这篇文章主要介绍激活Office 365的三种方法。（如果你还没下载安装Office 365，请先下载安装。链接见下方） 对于大 …"
+    },
+    {
+      "title": "office 365家庭版 和 visio 2016 如何共存？ - 知乎",
+      "url": "https://www.zhihu.com/question/39922337",
+      "snippet": "office有三种安装类型：即点即用和Microsoft Windows Installer，第三种类型是从 Microsoft Store 应用商店安装 Office。 即点即用也 …"
+    },
+    {
+      "title": "你更愿意买订阅制的Office 365还是买断制的Office？ - 知乎",
+      "url": "https://www.zhihu.com/question/654275628",
+      "snippet": "我更愿意买订阅制的Office 365，已经用五年了。 一个最显著的趋势是，Microsoft Office从2016版以后，每次更新的一次性买断版本给 …"
+    }
+  ]
+}

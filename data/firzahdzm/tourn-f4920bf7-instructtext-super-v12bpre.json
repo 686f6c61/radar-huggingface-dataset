@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-f4920bf7-instructtext-super-v12bpre",
+  "slug": "firzahdzm-tourn-f4920bf7-instructtext-super-v12bpre",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12bpre",
+  "created_at": "2026-10-12T02:25:18.000Z",
+  "updated_at": "2026-10-12T02:25:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 162417408,
+  "parameters_human": "162.4M",
+  "storage_bytes": 325346963,
+  "storage_human": "325 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "firzahdzm/tourn-45f9a179-instructtext-super-v4pre · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-45f9a179-instructtext-super-v4pre",
+      "snippet": "firzahdzm / tourn-45f9a179-instructtext-super-v4pre Like 0 Safetensors lfm2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "firzahdzm/tourn-45f9a179-instructtext-super-v4 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-45f9a179-instructtext-super-v4",
+      "snippet": "firzahdzm / tourn-45f9a179-instructtext-super-v4 Like 0 Safetensors lfm2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "firzahdzm/tourn-803a8f69-instructtext-super-k3g2pre · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-super-k3g2pre",
+      "snippet": "firzahdzm / tourn-803a8f69-instructtext-super-k3g2pre Like 0 Safetensors granite Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "firzahdzm/tourn-3edc57af-instructtext-super-v4pre · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-3edc57af-instructtext-super-v4pre",
+      "snippet": "firzahdzm / tourn-3edc57af-instructtext-super-v4pre Like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for provider support"
+    },
+    {
+      "title": "firzahdzm/tourn-803a8f69-instructtext-super-ra2btwin3 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-super-ra2btwin3",
+      "snippet": "firzahdzm / tourn-803a8f69-instructtext-super-ra2btwin3 Like 0 Safetensors lfm2 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    }
+  ]
+}

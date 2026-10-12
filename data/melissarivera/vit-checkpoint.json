@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "melissarivera/vit-checkpoint",
+  "slug": "melissarivera-vit-checkpoint",
+  "author": "melissarivera",
+  "url": "https://huggingface.co/melissarivera/vit-checkpoint",
+  "created_at": "2026-10-12T02:52:26.000Z",
+  "updated_at": "2026-10-12T02:52:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cathepsin L regulates oocyte meiosis and preimplantation embryo ...",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/cpr.13526",
+      "snippet": "07.07.2023 ... However, little is known about the function of this cysteine protease in mammalian oocyte meiosis and embryo development. Using a bovine model, ..."
+    },
+    {
+      "title": "7/31/2010 - PMC",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3399411/",
+      "snippet": "Here we show that weakened chromosome cohesion is the primary cause of aneuploidy in oocytes in a natural aging mouse model. In oocytes from old mice, we find ..."
+    },
+    {
+      "title": "Robert POPPITI | Mount Sinai Medical Center, Miami Beach | MSMC",
+      "url": "https://www.researchgate.net/profile/Robert-Poppiti",
+      "snippet": "Immune checkpoint inhibitors (ICIs) have shifted the paradigm of cancer treatment. ... Static images of 3D models built using SWISS-MODEL server. A study of ..."
+    },
+    {
+      "title": "Content Posted in 2026 | Montclair State University Digital Commons",
+      "url": "https://digitalcommons.montclair.edu/2026.html",
+      "snippet": "... AI Models: Climate, Community, and Transportation Decarbonization, Sarahana Shrestha. PDF · A fusion of machine learning algorithms and traditional statistical ..."
+    },
+    {
+      "title": "SSR 54TH ANNUAL MEETING - Society for the Study of Reproduction",
+      "url": "https://ssr.org/SSR/fbd87d69-d53f-458a-8220-829febdf990b/UploadedImages/SSR_2021_Program_Book_FINAL_with_links_Draft_2.pdf",
+      "snippet": "Located on the lower level of. Terminal 1, near the C Gates security checkpoint. ... as a model organism. To date, the molecular understanding of the process of."
+    }
+  ]
+}

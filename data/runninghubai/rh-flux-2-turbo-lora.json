@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-flux.2-turbo-lora",
+  "slug": "runninghubai-rh-flux-2-turbo-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-flux.2-turbo-lora",
+  "created_at": "2026-10-12T02:27:12.000Z",
+  "updated_at": "2026-10-12T02:30:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2762684425,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=26d8e2900af76cec32fdf5600b066d10",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=26d8e2900af76cec32fdf5600b066d10",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Comment faire une offre (proposer un prix différent) ? | Vinted",
+      "url": "https://www.vinted.fr/help/258-je-souhaite-faire-une-offre-ou-proposer-un-prix-different?msockid=26d8e2900af76cec32fdf5600b066d10",
+      "snippet": "La fonctionnalité Faire une offre permet aux acheteurs de négocier le prix des articles qui les intéressent. Les vendeurs peuvent …"
+    },
+    {
+      "title": "Costumes et blazers | Découvre des vêtements de seconde main",
+      "url": "https://www.vinted.fr/catalog/32-suits-and-blazers?msockid=26d8e2900af76cec32fdf5600b066d10",
+      "snippet": "Revends des costumes et blazers que tu ne portes plus sur Vinted. Trie et vends tes pièces en très bon état et gagne de l’argent …"
+    },
+    {
+      "title": "Envoi avec Colissimo | Vinted",
+      "url": "https://www.vinted.fr/help/763?msockid=26d8e2900af76cec32fdf5600b066d10",
+      "snippet": "À l'aide des bordereaux d'envoi prépayés générés par Vinted pour Colissimo, tu peux envoyer et recevoir des colis en France. …"
+    }
+  ]
+}

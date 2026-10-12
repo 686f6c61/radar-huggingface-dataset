@@ -5,7 +5,7 @@
   "author": "bocketleg",
   "url": "https://huggingface.co/bocketleg/qwen2p5-7b-phase3-from-error-set",
   "created_at": "2026-07-20T06:05:27.000Z",
-  "updated_at": "2026-08-22T07:52:34.000Z",
+  "updated_at": "2026-10-12T07:20:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,11 +20,11 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 872,
+  "downloads_30d": 848,
   "trending_score": 0,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 21736040839,
+  "storage_bytes": 21748213149,
   "storage_human": "21.7 GB",
   "base_model": null,
   "formats": [

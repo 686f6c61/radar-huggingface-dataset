@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Eskoseta/qwen-aggressive-static",
+  "slug": "eskoseta-qwen-aggressive-static",
+  "author": "Eskoseta",
+  "url": "https://huggingface.co/Eskoseta/qwen-aggressive-static",
+  "created_at": "2026-10-12T02:23:48.000Z",
+  "updated_at": "2026-10-12T02:23:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brandable Domains for Sale - NamePros",
+      "url": "https://www.namepros.com/forums/brandable-domains-for-sale.364/",
+      "snippet": "Jan 24, 2026 · Buy and sell domain names that make perfect brand names, trade names. Sometimes referred to as marketable …"
+    },
+    {
+      "title": "Domain Buyer Requests - NamePros",
+      "url": "https://www.namepros.com/forums/domain-buyer-requests.10/",
+      "snippet": "Apr 30, 2015 · Formerly known as Domain Names Wanted or Domains Wanted. Looking for a specific type of domain name? Post …"
+    },
+    {
+      "title": "priced - . | NamePros",
+      "url": "https://www.namepros.com/threads/1383006/",
+      "snippet": "Apr 5, 2026 · The views expressed on this page by users and staff are their own, not those of NamePros."
+    },
+    {
+      "title": "negotiable - Livesco.re - brandable livescore or betting domain hack",
+      "url": "https://www.namepros.com/threads/livesco-re-brandable-livescore-or-betting-domain-hack.1328823/page-24",
+      "snippet": "Jun 24, 2024 · Hi, this brandable domain livesco.re is waiting for serious offers. Transfer: Auth code Payment: PayPal, Revolut, …"
+    },
+    {
+      "title": "auction - TradeEarner.com - CLOSED | NamePros",
+      "url": "https://www.namepros.com/threads/tradeearner-com-closed.1374085/",
+      "snippet": "Jan 10, 2026 · Auction Closed TradeEarner.com WINNER - @BrandBoogie The views expressed on this page by users and staff are …"
+    }
+  ]
+}

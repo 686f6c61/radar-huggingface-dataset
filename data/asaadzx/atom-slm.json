@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Asaadzx/atom-slm",
+  "slug": "asaadzx-atom-slm",
+  "author": "Asaadzx",
+  "url": "https://huggingface.co/Asaadzx/atom-slm",
+  "created_at": "2026-10-12T16:12:28.000Z",
+  "updated_at": "2026-10-12T16:55:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma",
+    "tiny-llm",
+    "experimental",
+    "text-generation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68681984,
+  "parameters_human": "68.7M",
+  "storage_bytes": 143399968,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

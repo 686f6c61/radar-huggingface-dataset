@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cwaud/tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5Exp4c955f1dce21e560",
+  "slug": "cwaud-tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5exp4c955f1dce21e560",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/tournament-exp-s1-f7a66f6a-8bc3-5849-b296-238cde52bc07-5Exp4c955f1dce21e560",
+  "created_at": "2026-10-12T02:29:06.000Z",
+  "updated_at": "2026-10-12T02:29:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "falcon_h1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1554859392,
+  "parameters_human": "1.55B",
+  "storage_bytes": 3109764840,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Collège Marcel Anthonioz",
+      "url": "https://marcelanthonioz.ent.auvergnerhonealpes.fr/",
+      "snippet": "La campagne de bourse de collège est lancée. Si vous entrez dans le barème transmis par mail, vous trouverez le formulaire de …Read more"
+    },
+    {
+      "title": "CONNEXION PRONOTE - PRONOTE - Collège Marcel Anthonioz",
+      "url": "https://marcelanthonioz.ent.auvergnerhonealpes.fr/espace-parents/pronote/",
+      "snippet": "Pour vous connecter à la plateforme Pronote de l’établissement, cliquez ICI NB: Pour se connecter à Pronote, les responsables …"
+    },
+    {
+      "title": "PRONOTE - INDEX EDUCATION",
+      "url": "https://e972000a.index-education.net/pronote/",
+      "snippet": "PRONOTE Page d'accueil - - - gestion des notes, absences, punitions, cahier de textes pour les établissements scolaires."
+    },
+    {
+      "title": "collège Marcel Anthonioz",
+      "url": "https://marcelanthoniozdivonne.com/",
+      "snippet": "Le collège Marcel Anthonioz est un établissement d'enseignement."
+    },
+    {
+      "title": "Se connecter à l'ENT de l'établissement et à Pronote",
+      "url": "https://marcelanthonioz.ent.auvergnerhonealpes.fr/espace-parents/se-connecter-a-l-ent-de-l-etablissement-et-a-pronote-3979.htm",
+      "snippet": "Vous trouverez ci-dessous la procédure pour vous connecter à l'ENT de l'établissement et à Pronote via un navigateur Internet."
+    }
+  ]
+}

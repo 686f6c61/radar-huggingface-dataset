@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Codingpae/20261009_act_b64",
+  "slug": "codingpae-20261009_act_b64",
+  "author": "Codingpae",
+  "url": "https://huggingface.co/Codingpae/20261009_act_b64",
+  "created_at": "2026-10-12T03:02:47.000Z",
+  "updated_at": "2026-10-12T03:05:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 2067835880,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Codingpae (KANGMINSOO) - Hugging Face",
+      "url": "https://huggingface.co/Codingpae/models",
+      "snippet": "Codingpae&#x27;s models17 Sort: Recently updated Codingpae/raw_0626_smolvla Updated Jun 28"
+    },
+    {
+      "title": "Best AI for Coding September 2026: Top 10 Coding Models Ranked",
+      "url": "https://www.buildmvpfast.com/articles/best-llms-2026-guide/coding-ai",
+      "snippet": "Compare the 10 best AI coding models and LLMs for programming in September 2026. Claude Sonnet 5, Opus 5, GPT-6 Astra, GLM-5.2, DeepSeek V4-Pro, Kimi K2.7, and more ranked for real development work."
+    },
+    {
+      "title": "Codingpae (KANGMINSOO) - Hugging Face",
+      "url": "https://huggingface.co/Codingpae",
+      "snippet": "Recent Activity published a datasetabout 2 hours ago Codingpae/openarm updated a modelabout 1 month ago Codingpae/raw_0626_smolvla published a modelabout 1 month ago Codingpae/raw_0626_smolvla View all activity"
+    },
+    {
+      "title": "Base64.ai API",
+      "url": "https://apidoc.base64.ai/",
+      "snippet": "The response contains the recognized document type (`model`), the data in the document (`fields`), and the confidence scores for the model and each field. P99 response time is under 1 second. Base64.ai can automatically recognize and organize the documents into categories called models."
+    },
+    {
+      "title": "Base64.ai: AI-Powered Document Intelligence",
+      "url": "https://base64.ai/",
+      "snippet": "DOCUMENT INTELLIGENCE PLATFORM Convert any document—PDF, image, DOCX, and many others—into JSON Base64 identifies the document type, applies the right AI model, extracts all fields, and returns labeled JSON through one simple API call."
+    }
+  ]
+}

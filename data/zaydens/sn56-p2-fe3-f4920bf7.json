@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaydens/sn56-p2-FE3-f4920bf7",
+  "slug": "zaydens-sn56-p2-fe3-f4920bf7",
+  "author": "zaydens",
+  "url": "https://huggingface.co/zaydens/sn56-p2-FE3-f4920bf7",
+  "created_at": "2026-10-12T02:21:14.000Z",
+  "updated_at": "2026-10-12T02:21:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "falcon_h1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 521411104,
+  "parameters_human": "521.4M",
+  "storage_bytes": 1042886376,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zaydens/sn56-p2-B0-f4920bf7 · Hugging Face",
+      "url": "https://huggingface.co/zaydens/sn56-p2-B0-f4920bf7",
+      "snippet": "sn56-p2-B0-f4920bf7 Research artefact of SN56 text tournament replay; validator-style round-trip. ... The other files are the trainer&#x27;s output directory, uploaded unchanged. The repo is downloaded again and scored on the task&#x27;s held-out rows to check that the Hub copy scores exactly as the local copy did. Downloads last month - Safetensors ..."
+    },
+    {
+      "title": "zaydens/sn56-p2-N1-s42-f4920bf7 · Hugging Face",
+      "url": "https://huggingface.co/zaydens/sn56-p2-N1-s42-f4920bf7",
+      "snippet": "sn56-p2-N1-s42-f4920bf7 Research artefact of SN56 text tournament replay; validator-style round-trip."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "AI Model Release Timeline The latest AI models, newest first — who shipped what, and when. Updated Oct 12, 2026 05:14 UTC · updates hourly"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "zaydens AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/zaydens",
+      "snippet": "Browse AI models attributed to zaydens, sourced from verified model catalogs."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vnhellboy/vietnamese-piper-voices",
+  "slug": "vnhellboy-vietnamese-piper-voices",
+  "author": "vnhellboy",
+  "url": "https://huggingface.co/vnhellboy/vietnamese-piper-voices",
+  "created_at": "2026-10-12T03:03:02.000Z",
+  "updated_at": "2026-10-12T03:03:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "sherpa-onnx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "piper",
+    "vits",
+    "vietnamese",
+    "tts",
+    "text-to-speech",
+    "vi",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190548546,
+  "storage_human": "191 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PiperHub - Piper TTS voices catalogue",
+      "url": "https://piperhub.org/",
+      "snippet": "Explore 495 Piper TTS voices in 70 languages (3,665 speakers), listen to samples, and synthesize speech locally."
+    },
+    {
+      "title": "Voices · PiperHub",
+      "url": "https://piperhub.org/voices/",
+      "snippet": "A catalogue of Piper TTS voices, with model details and provenance where available."
+    },
+    {
+      "title": "Vietnamese TTS Piper - a Hugging Face Space by Kaijook",
+      "url": "https://huggingface.co/spaces/Kaijook/Document-to-speech-VietTTS",
+      "snippet": "This app creates natural-sounding Vietnamese audio narrations from stories or custom text. Users can choose from different voice models, adjust speaking speed and tone, and save their reading progr..."
+    },
+    {
+      "title": "Piper TTS — Piper AI Voice Generator (49 Voices) | TTS.ai",
+      "url": "https://tts.ai/voices/piper/",
+      "snippet": "A fast, CPU-only neural TTS engine from Rhasspy that runs entirely offline, even on a Raspberry Pi. Try Piper text-to-speech free on TTS.ai — generate and download natural Piper speech online."
+    },
+    {
+      "title": "rhasspy/piper-voices · Hugging Face",
+      "url": "https://huggingface.co/rhasspy/piper-voices",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lvtpsjlfj94/ACT_sim_handle_basket_ft",
+  "slug": "lvtpsjlfj94-act_sim_handle_basket_ft",
+  "author": "lvtpsjlfj94",
+  "url": "https://huggingface.co/lvtpsjlfj94/ACT_sim_handle_basket_ft",
+  "created_at": "2026-10-12T02:53:42.000Z",
+  "updated_at": "2026-10-12T02:53:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "robosynchallenge",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 51633964,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206563032,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dimofu/ACT_sim_handle_basket · Hugging Face",
+      "url": "https://huggingface.co/dimofu/ACT_sim_handle_basket",
+      "snippet": "ACT_sim_handle_basket (RoboSynChallenge submission checkpoint) ACT (Action Chunking with Transformers) checkpoint for the RoboSynChallenge handle_basket simulation task, re-packaged in the LeRobot 0.4.4 layout so that it loads without any legacy code path. This checkpoint is the imitation-learning component of our preliminary-round submission."
+    },
+    {
+      "title": "RoboSynChallenge/ACT_sim_handle_basket · Hugging Face",
+      "url": "https://huggingface.co/RoboSynChallenge/ACT_sim_handle_basket",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - casact/actsim",
+      "url": "https://github.com/casact/actsim/",
+      "snippet": "Contribute to casact/actsim development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - julieluan/ai-trading-sim: Trade AAPL for 32 days against 11 AI ...",
+      "url": "https://github.com/julieluan/ai-trading-sim",
+      "snippet": "Trade AAPL for 32 days against 11 AI agents — Cathie-Wood-style influencer, activist short, hedge fund PM, retail FOMO, CTA, economists. β-anchored price, peek private thoughts, what-if scenarios. - julieluan/ai-trading-sim"
+    },
+    {
+      "title": "[2512.01960] SpriteHand: Real-Time Versatile Hand-Object Interaction ...",
+      "url": "https://arxiv.org/abs/2512.01960",
+      "snippet": "Modeling and synthesizing complex hand-object interactions remains a significant challenge, even for state-of-the-art physics engines. Conventional simulation-based approaches rely on explicitly defined rigid object models and pre-scripted hand gestures, making them inadequate for capturing dynamic interactions with non-rigid or articulated entities such as deformable fabrics, elastic ..."
+    }
+  ]
+}

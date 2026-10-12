@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "marcinnowakwyn/my-embodied-ai",
+  "slug": "marcinnowakwyn-my-embodied-ai",
+  "author": "marcinnowakwyn",
+  "url": "https://huggingface.co/marcinnowakwyn/my-embodied-ai",
+  "created_at": "2026-10-12T03:01:20.000Z",
+  "updated_at": "2026-10-12T03:01:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix France - Regardez des séries en ligne, Regardez des films en …",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Netflix est un service de streaming qui propose une vaste sélection de séries, films, animes, documentaires et autres programmes …"
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Netflix",
+      "snippet": "Netflix ... Netflix is an American subscription video on-demand over-the-top streaming television service. The service primarily …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    }
+  ]
+}

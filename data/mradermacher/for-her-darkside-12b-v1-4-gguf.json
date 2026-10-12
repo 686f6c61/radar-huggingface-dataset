@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/For-Her-Darkside-12B-v1.4-GGUF",
   "created_at": "2026-08-17T15:50:43.000Z",
-  "updated_at": "2026-08-18T09:13:32.000Z",
+  "updated_at": "2026-10-11T23:14:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "not-for-all-audiences"
   ],
   "likes": 1,
-  "downloads_30d": 536,
+  "downloads_30d": 690,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

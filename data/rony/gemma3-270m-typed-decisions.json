@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rony/gemma3-270m-typed-decisions",
+  "slug": "rony-gemma3-270m-typed-decisions",
+  "author": "rony",
+  "url": "https://huggingface.co/rony/gemma3-270m-typed-decisions",
+  "created_at": "2026-10-12T18:06:25.000Z",
+  "updated_at": "2026-10-12T18:09:08.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "typed-decisions",
+    "calibration",
+    "structured-decisions",
+    "probabilistic-classification",
+    "conversational",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "license:gemma",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 1105803823,
+  "storage_human": "1.1 GB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmer Castle and Gardens | English Heritage",
+      "url": "https://www.english-heritage.org.uk/visit/places/walmer-castle-and-gardens/",
+      "snippet": "Built during the reign of King Henry VIII and perched on the picturesque Kent coastline, Walmer Castle is a fortress-turned-stately …"
+    },
+    {
+      "title": "Walmer Castle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Walmer_Castle",
+      "snippet": "Walmer Castle was built to defend the English coast from attack by France and the Holy Roman Empire in the final years of the reign …"
+    },
+    {
+      "title": "Walmer Castle and Gardens Guide - Visit Kent Guide",
+      "url": "https://visitkentguide.co.uk/articles/visit-walmer-castle",
+      "snippet": "Sep 4, 2025 · Walmer Castle is a rare combination of Tudor military history and landscaped beauty. From its connections to national …"
+    },
+    {
+      "title": "Walmer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Walmer",
+      "snippet": "Walmer Castle and its formal gardens are an attraction for visitors. The official residence of Lord Warden of the Cinque Ports since …"
+    },
+    {
+      "title": "Designing Hybrid Language Models for Device-Native Inference",
+      "url": "https://openreview.net/attachment?id=ZlkUDPtO1w&name=pdf",
+      "snippet": "Under W4A16 deployment, Opt.Gear-1B reaches 7,042 prefill tokens/s and 86 decode tokens/s on a Snapdragon Gen 5 NPU through Qualcomm AI Run-."
+    }
+  ]
+}

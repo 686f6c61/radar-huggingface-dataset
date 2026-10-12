@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KienNguyen2k1/DEIMv2_nano_license_plate",
+  "slug": "kiennguyen2k1-deimv2_nano_license_plate",
+  "author": "KienNguyen2k1",
+  "url": "https://huggingface.co/KienNguyen2k1/DEIMv2_nano_license_plate",
+  "created_at": "2026-10-12T02:58:03.000Z",
+  "updated_at": "2026-10-12T08:46:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "object-detection",
+    "license-plate",
+    "license-plate-detection",
+    "deimv2",
+    "detr",
+    "real-time",
+    "dataset:roboflow-universe-projects/license-plate-recognition-rxg4e",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16280195,
+  "storage_human": "16 MB",
+  "base_model": "Intellindust-AI-Lab/DEIMv2",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Intellindust-AI-Lab/DEIMv2: [DEIMv2] Real Time Object ...",
+      "url": "https://github.com/Intellindust-AI-Lab/DEIMv2",
+      "snippet": "[DEIMv2] Real Time Object Detection Meets DINOv3 . Contribute to Intellindust-AI-Lab/DEIMv2 development by creating an account on GitHub."
+    },
+    {
+      "title": "DEIMv2 - intellindust-ai-lab.github.io",
+      "url": "https://intellindust-ai-lab.github.io/projects/DEIMv2/",
+      "snippet": "DEIMv2 spans eight model sizes from X to Atto, covering GPU, edge, and mobile deployment. For the X, L, M, and S variants, we adopt DINOv3-pretrained / distilled backbones and introduce a Spatial Tuning Adapter (STA), which efficiently converts DINOv3&#x27;s single-scale output into multi-scale features and complements strong semantics with fine ..."
+    },
+    {
+      "title": "GitHub - Intellindust-AI-Lab/DEIM: [CVPR 2025] DEIM: DETR with Improved ...",
+      "url": "https://github.com/Intellindust-AI-Lab/DEIM",
+      "snippet": "🚀 Updates [2025.09.26] DEIMv2 is now available with the project page and release code. The series covers eight model sizes, from X down to Atto. For the S, M, L, and X variants, we leverage DINOv3 features (distilled or pretrained). DEIMv2 achieves higher performance with fewer parameters and FLOPs."
+    },
+    {
+      "title": "DEIMv2 · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/docs/transformers/model_doc/deimv2",
+      "snippet": "On the compact side, DEIMv2-S is the first sub-10M model (9.71M) to exceed the 50 AP milestone on COCO, reaching 50.9 AP. Even the ultra-lightweight DEIMv2-Pico, with just 1.5M parameters, delivers 38.5 AP-matching YOLOv10-Nano (2.3M) with ~50% fewer parameters."
+    },
+    {
+      "title": "AXERA-TECH/DEIMv2 · Hugging Face",
+      "url": "https://huggingface.co/AXERA-TECH/DEIMv2",
+      "snippet": "DEIMv2 The version of DEIMv2 has been converted to run on the Axera NPU using w8a16 quantization. Compatible with Pulsar2 version: 4.2 If you want to know how to convert the DEIMv2 model into an axmodel that can run on the axera npu board, please read this link in detail. Support Platform AX650 End-of-board inference time"
+    }
+  ]
+}

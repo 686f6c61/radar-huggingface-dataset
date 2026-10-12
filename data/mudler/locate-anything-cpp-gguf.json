@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mudler/locate-anything.cpp-gguf",
+  "slug": "mudler-locate-anything-cpp-gguf",
+  "author": "mudler",
+  "url": "https://huggingface.co/mudler/locate-anything.cpp-gguf",
+  "created_at": "2026-06-11T13:55:12.000Z",
+  "updated_at": "2026-06-11T22:46:02.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "locate-anything.cpp",
+    "ggml",
+    "object-detection",
+    "open-vocabulary-detection",
+    "visual-grounding",
+    "localai",
+    "base_model:nvidia/LocateAnything-3B",
+    "base_model:quantized:nvidia/LocateAnything-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 43,
+  "downloads_30d": 12333890,
+  "trending_score": 22,
+  "parameters": 3830665968,
+  "parameters_human": "3.83B",
+  "storage_bytes": 30744923232,
+  "storage_human": "30.7 GB",
+  "base_model": "nvidia/LocateAnything-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mudler/locate-anything.cpp-gguf · Hugging Face",
+      "url": "https://huggingface.co/mudler/locate-anything.cpp-gguf",
+      "snippet": "GGUF builds of nvidia/LocateAnything-3B for locate-anything.cpp - a C++/ggml inference engine for open-vocabulary detection / visual grounding, no Python at inference time. Brought to you by the LocalAI team. The detections are the same as the official PyTorch implementation (the engine is parity ..."
+    },
+    {
+      "title": "locate-anything.cpp-gguf — AI Model — AIMarketly",
+      "url": "https://www.aimarketly.com/model/mudler/locate-anything.cpp-gguf",
+      "snippet": "locate-anything.cpp-gguf is a object detection model from mudler. Use it when you need objects located in an image. It is set up for gguf. The card lists the license as other. GGUF builds of nvidia/LocateAnything-3B for locate-anything.cpp - a C++/ggml inference engine for open-vocabulary detection / visual grounding, no Python at inference time."
+    },
+    {
+      "title": "README.md · mudler/locate-anything.cpp-gguf at main",
+      "url": "https://huggingface.co/mudler/locate-anything.cpp-gguf/blob/main/README.md",
+      "snippet": "GGUF locate-anything.cpp ggml open-vocabulary-detection visual-grounding localai License:nvidia-license Model card FilesFiles and versions xet Community Copy to bucket new main locate-anything.cpp-gguf /README.md mudler docs: replace em/en dashes with hyphens 4e50db5 verifiedabout 6 hours ago preview code | raw Copy download link history blame ..."
+    },
+    {
+      "title": "mudler/locate-anything.cpp-gguf - Mudler | DevFlow Studios",
+      "url": "https://www.meisterweb24.de/en/models/mudler/locate-anything.cpp-gguf",
+      "snippet": "mudler/locate-anything.cpp-gguf: See the model documentation on Hugging Face for supported inputs and outputs."
+    },
+    {
+      "title": "GitHub - mudler/locate-anything.cpp: Port of Nvidia LocateAnything-3B ...",
+      "url": "https://github.com/mudler/locate-anything.cpp",
+      "snippet": "Brought to you by the LocalAI team, the folks behind LocalAI, the open-source AI engine that runs any model (LLMs, vision, voice, image, video) on any hardware, no GPU required. locate-anything.cpp is a C++17 inference port of NVIDIA&#x27;s LocateAnything-3B - an open-vocabulary detection / visual ..."
+    }
+  ]
+}

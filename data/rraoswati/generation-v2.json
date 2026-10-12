@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rraoswati/generation-v2",
+  "slug": "rraoswati-generation-v2",
+  "author": "rraoswati",
+  "url": "https://huggingface.co/rraoswati/generation-v2",
+  "created_at": "2026-10-12T18:04:54.000Z",
+  "updated_at": "2026-10-12T18:05:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Saraswati 3D Models - Download Instantly - Meshy AI",
+      "url": "https://www.meshy.ai/tags/saraswati",
+      "snippet": "Our AI generates optimized meshes. This Saraswati is suitable for real-time rendering in games or mobile AR experiences due to its efficient topology."
+    },
+    {
+      "title": "Saraswati | imagev2.me",
+      "url": "https://imagev2.me/i/q1gfnbrdhz",
+      "snippet": "13.09.2026 ... Keep gpt-image-2 selected and move between square, portrait, landscape, and cinematic frames. VAR / 03. Same style, different topic. Keep the AI ..."
+    },
+    {
+      "title": "gnani.ai Launches Inya VoiceOS, India's 1st Voice-to-Voice 5B Model",
+      "url": "https://www.linkedin.com/posts/mohitingaround_exclusive-gnaniai-is-all-set-to-launch-activity-7429368695719874561-OLFi",
+      "snippet": "16.02.2026 ... ... AI foundational model focused on multilingual, real-time speech processing and emotion-aware AI. The model was initially called Saraswati ..."
+    },
+    {
+      "title": "Saraswati Goddess in Lotus: Art and Imagery - Easy-Peasy.AI",
+      "url": "https://easy-peasy.ai/ai-image-generator/images/create-a-realistic-saraswati-12b131f4-8300-4e71-ae49-320d6c18e468",
+      "snippet": "AI Image GeneratorNano Banana ModelsSeedream 5.0 ProPhoto StudioHeadshotsAI Interior Design GeneratorFree AI Image UpscalerT-Shirt Design MakerLogo Maker ... Model: Nano Banana 2. Created on 9/28/2025. Report."
+    },
+    {
+      "title": "Maa saraswati ai generated Images - Free Download on Magnific ...",
+      "url": "https://www.magnific.com/free-photos-vectors/maa-saraswati-ai-generated/2",
+      "snippet": "Find & Download Free Graphic Resources for Maa saraswati ai generated Vectors, Stock Photos & PSD files. ✓ Free for commercial use ✓ High Quality Images."
+    }
+  ]
+}

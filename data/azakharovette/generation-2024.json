@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "azakharovette/generation-2024",
+  "slug": "azakharovette-generation-2024",
+  "author": "azakharovette",
+  "url": "https://huggingface.co/azakharovette/generation-2024",
+  "created_at": "2026-10-12T02:33:54.000Z",
+  "updated_at": "2026-10-12T02:33:59.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2024 AI Timeline - a Hugging Face Space by reach-vb",
+      "url": "https://huggingface.co/spaces/reach-vb/2024-ai-timeline",
+      "snippet": "This web app shows a horizontal, scrollable timeline of AI model announcements throughout 2024. You can filter the view to see only open‑source models, only API‑only models, or all models, and the ..."
+    },
+    {
+      "title": "The next generation of generative AI is now in Photoshop",
+      "url": "https://blog.adobe.com/en/publish/2024/04/23/the-next-generation-generative-ai-now-in-photoshop",
+      "snippet": "Today, we&#x27;re thrilled to announce the next generation of generative AI in the Photoshop (beta) app — with the new Text to Image feature, a greatly improved Generative Fill experience powered by the latest Firefly Image 3 Model, and a suite of new generative AI features and expanded controls that empower you to create higher quality results ..."
+    },
+    {
+      "title": "Free AI Image Generator - Text to Image AI (No Signup) | Fotor",
+      "url": "https://www.fotor.com/ai-image-generator/",
+      "snippet": "Free AI Image Generator Generate AI images from text prompts or reference images online for free. Create with Fotor&#x27;s multi-model AI image generator for better quality, consistency, and control."
+    },
+    {
+      "title": "AI Model Release Tracker - Latest Releases | LM Market Cap",
+      "url": "https://lmmarketcap.com/tools/model-release-tracker",
+      "snippet": "AI Model Release Tracker Stay up to date with the latest AI model releases. This page tracks 466 models across all providers, sorted by release date."
+    },
+    {
+      "title": "State-of-the-art video and image generation with Veo 2 and Imagen 3",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/video-image-generation-update-december-2024/",
+      "snippet": "Earlier this year, we introduced our video generation model, Veo, and our latest image generation model, Imagen 3. Since then, it&#x27;s been exciting to watch people bring their ideas to life with help from these models: YouTube creators are exploring the creative possibilities of video backgrounds for their YouTube Shorts, enterprise customers are enhancing creative workflows on Vertex AI and ..."
+    }
+  ]
+}

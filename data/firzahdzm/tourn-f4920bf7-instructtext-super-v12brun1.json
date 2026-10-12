@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1",
+  "slug": "firzahdzm-tourn-f4920bf7-instructtext-super-v12brun1",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-f4920bf7-instructtext-super-v12brun1",
+  "created_at": "2026-10-12T02:25:37.000Z",
+  "updated_at": "2026-10-12T02:25:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 162417408,
+  "parameters_human": "162.4M",
+  "storage_bytes": 325346963,
+  "storage_human": "325 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PokéRogue",
+      "url": "https://pokerogue.net/",
+      "snippet": "A Pokémon fangame heavily inspired by the roguelite genre. Battle endlessly while gathering stacking items, exploring many different …"
+    },
+    {
+      "title": "The Official Pokérogue Wiki [PokéRogue Wiki]",
+      "url": "https://wiki.pokerogue.net/start",
+      "snippet": "Jul 20, 2026 · PokéRogue is a browser based Pokémon fangame heavily inspired by the roguelite genre. Battle endlessly while …"
+    },
+    {
+      "title": "PokéRogue | PokéRogue",
+      "url": "https://playpokerogue.com/pokerogue/",
+      "snippet": "PokéRogue is a browser-based Pokémon fangame heavily inspired by the roguelite genre. PokéRogue combines Pokémon battles …"
+    },
+    {
+      "title": "Pokelike — Pokemon Roguelike",
+      "url": "https://pokelike.xyz/",
+      "snippet": "A fan-made Pokemon roguelike. Explore Kanto and Johto, battle gym leaders, and climb the Battle Tower."
+    },
+    {
+      "title": "PokéRogue - Catch, Fight, Survive - Roguelike Pokémon Game",
+      "url": "https://www.pokerogue.app/",
+      "snippet": "Play PokéRogue free in your browser — a roguelite Pokémon game with turn-based battles, random biomes, evolution, and endless …"
+    }
+  ]
+}

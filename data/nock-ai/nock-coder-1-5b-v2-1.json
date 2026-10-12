@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Nock-AI/nock-coder-1.5b-v2.1",
+  "slug": "nock-ai-nock-coder-1-5b-v2-1",
+  "author": "Nock-AI",
+  "url": "https://huggingface.co/Nock-AI/nock-coder-1.5b-v2.1",
+  "created_at": "2026-10-12T02:29:59.000Z",
+  "updated_at": "2026-10-12T06:46:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "solidity",
+    "lora",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3173745111,
+  "storage_human": "3.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOCK Maschinenbau GmbH - Derinders, membrane skinners, fish …",
+      "url": "https://www.nock-gmbh.com/en/",
+      "snippet": "NOCK is a German factory which manufactures and sells sucessfully high quality derinders, membrane skinners, fish skinners, …"
+    },
+    {
+      "title": "GitHub - nock/nock: HTTP server mocking and expectations library for ...",
+      "url": "https://github.com/nock/nock",
+      "snippet": "Nock can be used to test modules that perform HTTP requests in isolation. For instance, if a module performs HTTP requests to a …"
+    },
+    {
+      "title": "nock - npm",
+      "url": "https://www.npmjs.com/package/nock",
+      "snippet": "Nock can be used to test modules that perform HTTP requests in isolation. For instance, if a module performs HTTP requests to a …"
+    },
+    {
+      "title": "Cirque Nock — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cirque_Nock",
+      "snippet": "Le cirque Nock est le seul cirque suisse d'importance à se rendre dans certaines vallées des Grisons, ce qui lui a valu le surnom de …"
+    },
+    {
+      "title": "NOCK V3 MTB HANDGUARDS - BLACK - sendhit.net",
+      "url": "https://www.sendhit.net/products/nock-handguards-v3",
+      "snippet": "Nock V3 MTB handguards deliver the market's best protection for both hands and levers — eBike compatible and trusted by top …"
+    }
+  ]
+}

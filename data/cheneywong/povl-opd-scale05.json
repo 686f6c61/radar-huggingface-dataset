@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CheneyWong/povl-opd-scale05",
+  "slug": "cheneywong-povl-opd-scale05",
+  "author": "CheneyWong",
+  "url": "https://huggingface.co/CheneyWong/povl-opd-scale05",
+  "created_at": "2026-10-12T02:28:29.000Z",
+  "updated_at": "2026-10-12T03:19:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "table-recognition",
+    "document-parsing",
+    "paddleocr-vl",
+    "otvl",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 905601648,
+  "parameters_human": "905.6M",
+  "storage_bytes": 1824083759,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CheneyWong/povl-opd-scale05 · Hugging Face",
+      "url": "https://huggingface.co/CheneyWong/povl-opd-scale05",
+      "snippet": "Instructions to use CheneyWong/povl-opd-scale05 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use CheneyWong/povl-opd-scale05 with Transformers:"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "OPD-V: Visual On-Policy Self-Distillation with Modality Balance",
+      "url": "https://arxiv.org/abs/2608.05131",
+      "snippet": "Motivated by this finding, we introduce OPD-V, a visual OPSD paradigm that instantiates such information through the Positive Teacher and Negative Teacher. Positive Modality-Balance Logits Margins define a Modality-Balance Trust Region that selects the on-policy tokens used for self-distillation."
+    },
+    {
+      "title": "cheneyxwong (CheneyWong) · GitHub",
+      "url": "https://github.com/cheneyxwong/",
+      "snippet": "cheneyxwong has 3 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "[2609.39692] GFD-OPD: Guidance-Folded On-Policy Distillation of ...",
+      "url": "https://arxiv.org/abs/2609.39692",
+      "snippet": "On-policy distillation (OPD) has demonstrated two important capabilities in language models: compressing large teachers into smaller students and merging expert models into a single model. Existing diffusion OPD, however, mostly focus on the latter, with teachers and students sharing the same backbone and scale. We investigate large-to-small diffusion opd from large teachers to a small student ..."
+    }
+  ]
+}

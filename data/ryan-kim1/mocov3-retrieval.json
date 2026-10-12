@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ryan-kim1/mocov3-retrieval",
+  "slug": "ryan-kim1-mocov3-retrieval",
+  "author": "ryan-kim1",
+  "url": "https://huggingface.co/ryan-kim1/mocov3-retrieval",
+  "created_at": "2026-10-12T02:32:33.000Z",
+  "updated_at": "2026-10-12T02:32:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Ryanair website | Cheap flights in Europe | Ryanair",
+      "url": "https://www.ryanair.com/",
+      "snippet": "Book Cheap Flights direct at the official Ryanair website for Europe's lowest fares. Fully allocated seating and much more now …"
+    },
+    {
+      "title": "Ryan's World - YouTube",
+      "url": "https://www.youtube.com/channel/UChGJGhZ9SOOHvBB0Y4DOO_w",
+      "snippet": "Welcome To Ryan's World!!! Ryan loves doing lots of fun things like pretend play, science experiments, music videos, skits, …"
+    },
+    {
+      "title": "Official Ryanair website | Cheap flights from Ireland | Ryanair",
+      "url": "https://www.ryanair.com/uk/en",
+      "snippet": "Book Cheap Flights to and from Ireland at the Official Ryanair website. Allocated seating, Family Plus and Flexi Plus now available. …"
+    },
+    {
+      "title": "Azerbaïdjan: qui est Martin Ryan, le Français gracié ... - TV5MONDE",
+      "url": "https://information.tv5monde.com/international/azerbaidjan-qui-est-martin-ryan-le-francais-gracie-apres-avoir-ete-emprisonne-pendant-pres-de-trois-ans-pour-espionnage-2838697",
+      "snippet": "Sep 23, 2026 · L'Azerbaïdjan a gracié ce mercredi 23 septembre Martin Ryan, un Français emprisonné depuis fin 2023 dans ce pays …"
+    },
+    {
+      "title": "Hide and Seek Pretend Play around the House with Ryan's World",
+      "url": "https://www.youtube.com/watch?v=Qov0EdVNSNk",
+      "snippet": "Jul 1, 2020 · Hide and Seek Pretend Play around the House with Ryan's World! Fun kids activities to do together as a family!!!"
+    }
+  ]
+}

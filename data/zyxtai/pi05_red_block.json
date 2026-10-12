@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "zyxtai/pi05_red_block",
+  "slug": "zyxtai-pi05_red_block",
+  "author": "zyxtai",
+  "url": "https://huggingface.co/zyxtai/pi05_red_block",
+  "created_at": "2026-10-12T02:19:05.000Z",
+  "updated_at": "2026-10-12T02:35:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354065944,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TotalEnergies in Angola",
+      "url": "https://totalenergies.com/angola",
+      "snippet": "Sep 29, 2026 · In Angola, through a joint venture with Sonangol, we are developing B2B and lubricant retail activities and operate a …"
+    },
+    {
+      "title": "TotalEnergies en Angola",
+      "url": "https://totalenergies.com/fr/angola",
+      "snippet": "Sep 30, 2026 · Découvrez l'ensemble des activités de TotalEnergies dans le pays et retrouvez nos actualités."
+    },
+    {
+      "title": "TotalEnergies plans $10 billion Angola investment with partners over ...",
+      "url": "https://www.reuters.com/business/energy/totalenergies-plans-10-billion-angola-investment-with-partners-over-five-years-2026-09-09/",
+      "snippet": "Sep 9, 2026 · French oil major TotalEnergies will invest $10 billion with partners in Angola over the next five years to bolster …"
+    },
+    {
+      "title": "Sobre nós - TotalEnergies Marketing Angola",
+      "url": "https://services.totalenergies.co.ao/pt/descubra-totalenergies-marketing-angola/sobre-nos",
+      "snippet": "A TotalEnergies Marketing Angola dedica-se à comercialização de combustíveis e lubrificantes no mercado nacional e tem como …"
+    },
+    {
+      "title": "Latest Jobs (page 1 in 1) | Careers Portal - TotalEnergies",
+      "url": "https://jobs.totalenergies.com/en_US/careers/SearchJobs/Angola?listFilterMode=1&jobRecordsPerPage=20",
+      "snippet": "Latest jobs ENGENHEIRO (A) PROCESSOS PRODUCAO SENIOR 28-09-2026 Angola Regular position TotalEnergies EP Angola …"
+    }
+  ]
+}

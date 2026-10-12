@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_invites_writing_on_the_board",
+  "slug": "stanfordscale-assertion_invites_writing_on_the_board",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_invites_writing_on_the_board",
+  "created_at": "2026-10-12T17:58:34.000Z",
+  "updated_at": "2026-10-12T17:58:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.6765
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.8214
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.575
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8489
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vente Momox et impossibilité de me faire payer",
+      "url": "https://forum.quechoisir.org/vente-momox-et-impossibilite-de-me-faire-payer-t346114.html",
+      "snippet": "Jan 9, 2024 · Les contrats conclus entre momox et le vendeur sont régis par le droit de la République fédérale d’Allemagne sous …Read more"
+    },
+    {
+      "title": "Problème avec momox-shop.fr - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/probleme-avec-momox-shop-fr-t50026.html",
+      "snippet": "Jan 20, 2016 · Re: Problème avec momox-shop.fr Messagepar Carolinette » ven. janv. 20, 2017 3:00 pm Momox Shop Fr ou …"
+    },
+    {
+      "title": "Arnaque momox [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7031446-arnaque-momox",
+      "snippet": "Feb 6, 2016 · Bonjour, effectivement momox ne paye plus une grande majorité des ventes, ils se lancent maintenant dans autre …"
+    },
+    {
+      "title": "POUBELLE ET VOISIN [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-4918559-poubelle-et-voisin",
+      "snippet": "Bonjour, Notre voisine qui habite à environ 50 mètres de la nôtre a décidé de mettre son container devant chez nous arguant que …"
+    },
+    {
+      "title": "Momox, avalanche de non reçu en aout? - Seller Central FR",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/1c3c8a4cd479a35efeb2cf2db989f972",
+      "snippet": "J’ai moi aussi un retard de livraison pour un livre acheté chez Momox . Mais un livre acheté le même jour sur eBay est également en …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CheneyWong/povl-dpo-2ep",
+  "slug": "cheneywong-povl-dpo-2ep",
+  "author": "CheneyWong",
+  "url": "https://huggingface.co/CheneyWong/povl-dpo-2ep",
+  "created_at": "2026-10-12T02:25:12.000Z",
+  "updated_at": "2026-10-12T03:19:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "table-recognition",
+    "document-parsing",
+    "paddleocr-vl",
+    "otvl",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 905601648,
+  "parameters_human": "905.6M",
+  "storage_bytes": 1822469396,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lolvOid/Wan2GP: A fast AI Video Generator for the GPU Poor ...",
+      "url": "https://github.com/lolvOid/Wan2GP",
+      "snippet": "A fast AI Video Generator for the GPU Poor. Supports Wan 2.1/2.2, Qwen Image, Hunyuan Video, LTX Video and Flux. - lolvOid/Wan2GP"
+    },
+    {
+      "title": "[2608.12158] Context Blindness in DPO: Mitigating Object Hallucination ...",
+      "url": "https://arxiv.org/abs/2608.12158",
+      "snippet": "Multimodal large language models (MLLMs) have made rapid progress, yet they still exhibit object hallucination, generating plausible but incorrect descriptions that are inconsistent with the visual input. Direct Preference Optimization (DPO) mitigates this by training models to prefer non-hallucinated responses over hallucinated ones, and recent efforts further enrich the preference data with ..."
+    },
+    {
+      "title": "VL-DPO: Vision-Language-Guided Finetuning for Preference-Aligned ...",
+      "url": "https://arxiv.org/abs/2605.20082",
+      "snippet": "Our experiments confirm that the VLM&#x27;s trajectory selection is a high-quality proxy for human preference. Our final model, VL-DPO, yields an 11.94% increase in RFS and a 10.01% reduction in ADE over the pretrained model."
+    },
+    {
+      "title": "Best Chinese AI Models (October 2026): 66 LLMs Ranked",
+      "url": "https://benchlm.ai/best/chinese-models",
+      "snippet": "A live ranking of AI models from Chinese labs, using the same current public ranking contract as the overall leaderboard. Top picks: MiMo-V2.6-Pro, Kimi K3, Qwen3.8 Max. 66 models ranked with detailed benchmark scores."
+    },
+    {
+      "title": "lewtun/dpo-model-lora · Hugging Face",
+      "url": "https://huggingface.co/lewtun/dpo-model-lora",
+      "snippet": "dpo-model-lora This model is a fine-tuned version of Qwen/Qwen2-.5B-Instruct on an unknown dataset. It achieves the following results on the evaluation set: Loss: 0.6534 Rewards/chosen: -0.7320 Rewards/rejected: -0.8303 Rewards/accuracies: 0.6172 Rewards/margins: 0.0983 Logps/rejected: -359.0921 Logps/chosen: -378.4928 Logits/rejected: -2.2715 Logits/chosen: -2.3471 Model description More ..."
+    }
+  ]
+}

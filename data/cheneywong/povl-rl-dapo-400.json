@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CheneyWong/povl-rl-dapo-400",
+  "slug": "cheneywong-povl-rl-dapo-400",
+  "author": "CheneyWong",
+  "url": "https://huggingface.co/CheneyWong/povl-rl-dapo-400",
+  "created_at": "2026-10-12T02:26:18.000Z",
+  "updated_at": "2026-10-12T03:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "table-recognition",
+    "document-parsing",
+    "paddleocr-vl",
+    "otvl",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 905601648,
+  "parameters_human": "905.6M",
+  "storage_bytes": 1824083759,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DAPO: an Open-source RL System from - GitHub",
+      "url": "https://github.com/BytedTsinghua-SIA/DAPO",
+      "snippet": "We release a fully open-sourced system for large-scale LLM RL, including algorithm, code infrastructure, and dataset. The system achieves state-of-the-art large-scale LLM RL performance. We propose the D ecoupled Clip and D ynamic s A mpling P olicy O ptimization (DAPO) algorithm. Through open-sourcing, we provide the broader research community and society with practical access to scalable ..."
+    },
+    {
+      "title": "DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+      "url": "https://arxiv.org/abs/2503.14476",
+      "snippet": "We propose the D ecoupled Clip and D ynamic s A mpling P olicy O ptimization (DAPO) algorithm, and fully open-source a state-of-the-art large-scale RL system that achieves 50 points on AIME 2024 using Qwen2.5-32B base model."
+    },
+    {
+      "title": "DAPO — Advanced Paper (Free) | THE D*AI*LY BRIEF",
+      "url": "https://www.beri.net/learning/dapo-open-source-llm-rl-system",
+      "snippet": "DAPO (Decoupled Clip and Dynamic sAmpling Policy Optimization) is the paper and open-source system from ByteDance Seed, Tsinghua University&#x27;s Institute for AI Industry Research and the University of Hong Kong that made large-scale reasoning RL reproducible."
+    },
+    {
+      "title": "PDF DAPO: An Open-Source LLM Reinforcement Learning System at Scale",
+      "url": "https://papers.neurips.cc/paper_files/paper/2025/file/a4277440d50f1f15d2cb4c14f7e0c0d2-Paper-Conference.pdf",
+      "snippet": "To close this gap, we release an open-source state-of-the-art system for large-scale LLM RL, which achieves 50 points on AIME 2024 based on Qwen2.5-32B model, outperforming previous state-of-the-art results achieved by DeepSeek-R1-Zero-Qwen-32B [2] (47 points) using 50% training steps (Figure 1). We propose the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm, and ..."
+    },
+    {
+      "title": "DAPO: An Open-Source RL System from ByteDance Seed and Tsinghua Air · AI前沿",
+      "url": "https://www.ai-club.cn/frontier-article/29687",
+      "snippet": "The system achieves state-of-the-art large-scale LLM RL performance. We propose the Decoupled Clip and Dynamic sAmpling Policy Optimization (DAPO) algorithm. Through open-sourcing, we provide the broader research community and society with practical access to scalable reinforcement learning, enabling all to benefit from these advancements."
+    }
+  ]
+}

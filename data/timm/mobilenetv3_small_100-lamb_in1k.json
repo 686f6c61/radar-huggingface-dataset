@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "timm/mobilenetv3_small_100.lamb_in1k",
+  "slug": "timm-mobilenetv3_small_100-lamb_in1k",
+  "author": "timm",
+  "url": "https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k",
+  "created_at": "2022-12-16T05:38:36.000Z",
+  "updated_at": "2025-10-19T16:12:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "pytorch",
+    "safetensors",
+    "image-classification",
+    "transformers",
+    "dataset:imagenet-1k",
+    "arxiv:2110.00476",
+    "arxiv:1905.02244",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 136,
+  "downloads_30d": 21210318,
+  "trending_score": 0,
+  "parameters": 2554968,
+  "parameters_human": "2.6M",
+  "storage_bytes": 20541585,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models compatible with the timm library - Hugging Face",
+      "url": "https://huggingface.co/models?library=timm",
+      "snippet": "Models · MahmoodLab/UNI2-h · MahmoodLab/CONCH · MahmoodLab/UNI · timm/mobilenetv3_small_100.lamb_in1k · paige-ai/Virchow2 · animetimm/convnextv2_huge.dbv4-full."
+    },
+    {
+      "title": "Top 10 most popular LLM models on Hugging Face - Cloudsmith",
+      "url": "https://cloudsmith.com/blog/top-10-most-popular-llm-models-on-hugging-face",
+      "snippet": "02.02.2026 ... ... AI licensing and governance for enterprise production ... Source: timm/mobilenetv3_small_100.lamb_in1k; Classification: Image ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=downloads&search=mobile",
+      "snippet": "Models · timm/mobilenetv3_small_100.lamb_in1k · google/mobilebert-uncased · PaddlePaddle/en_PP-OCRv5_mobile_rec · unsloth/gemma-4-E2B-it-qat-mobile-GGUF · timm/ ..."
+    },
+    {
+      "title": "Image Classification Models - Hugging Face",
+      "url": "https://huggingface.co/models?pipeline_tag=image-classification&sort=downloads",
+      "snippet": "Models · timm/mobilenetv3_small_100.lamb_in1k · timm/efficientnet_b3.ra2_in1k · google/vit-base-patch16-224 · Falconsai/nsfw_image_detection · timm/resnet50.a1_in1k."
+    },
+    {
+      "title": "Top 10 AI Models of 2025: The Most Downloaded on HuggingFace",
+      "url": "https://www.analyticsvidhya.com/blog/2025/11/top-open-source-models-on-huggingface/",
+      "snippet": "14.11.2025 ... HuggingFace Link: https://huggingface.co/timm/mobilenetv3_small_100.lamb_in1k. 7. Laion CLAP. clap fused. Category: Multimodal (Audio to ..."
+    }
+  ]
+}

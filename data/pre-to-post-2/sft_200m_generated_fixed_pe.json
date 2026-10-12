@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Pre-to-Post-2/sft_200m_generated_fixed_pe",
+  "slug": "pre-to-post-2-sft_200m_generated_fixed_pe",
+  "author": "Pre-to-Post-2",
+  "url": "https://huggingface.co/Pre-to-Post-2/sft_200m_generated_fixed_pe",
+  "created_at": "2026-10-12T02:36:50.000Z",
+  "updated_at": "2026-10-12T02:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chess",
+    "sft",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8935500128,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme de réussite éducative (PRE) | La Courneuve",
+      "url": "https://lacourneuve.fr/programme-de-reussite-educative-pre",
+      "snippet": "Le PRE prend en charge l’accueil des collégien·ne·s exclus temporairement. Durant cette période (au plus 5 jours), il leur propose …"
+    },
+    {
+      "title": "Programme de réussite éducative — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Programme_de_r%C3%A9ussite_%C3%A9ducative",
+      "snippet": "Le PRE est un des projets de la loi de programmation pour la cohésion sociale du 18 janvier 2005. Le ministre Jean Louis Borloo …"
+    },
+    {
+      "title": "Preply: Learn with the best online language tutors on app & web",
+      "url": "https://preply.com/?msockid=2d261f0794f66da71f2f08f795926c18",
+      "snippet": "Looking for a tutor? Preply is the best platform for private online lessons with a flexible payment system and affordable prices. Book …"
+    },
+    {
+      "title": "Définitions : pré - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/pr%c3%a9/63269",
+      "snippet": "pré - Définitions Français : Retrouvez la définition de pré, ainsi que les homonymes, expressions, citations... - synonymes, …"
+    },
+    {
+      "title": "Qu'est-ce qu'un programme personnalisé de réussite éducative (PPRE…",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1441",
+      "snippet": "Le PPRE est un plan d'actions individualisées. Il peut être mis en place quand un enfant rencontre des difficultés risquant de le gêner …"
+    }
+  ]
+}

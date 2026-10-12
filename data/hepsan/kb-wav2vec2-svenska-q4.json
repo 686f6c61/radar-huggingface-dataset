@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "hepsan/kb-wav2vec2-svenska-q4",
+  "slug": "hepsan-kb-wav2vec2-svenska-q4",
+  "author": "hepsan",
+  "url": "https://huggingface.co/hepsan/kb-wav2vec2-svenska-q4",
+  "created_at": "2026-10-12T16:13:21.000Z",
+  "updated_at": "2026-10-12T16:15:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "swedish",
+    "ctc",
+    "sv",
+    "base_model:KBLab/wav2vec2-large-voxrex-swedish",
+    "base_model:quantized:KBLab/wav2vec2-large-voxrex-swedish",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 241220644,
+  "storage_human": "241 MB",
+  "base_model": "KBLab/wav2vec2-large-voxrex-swedish",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

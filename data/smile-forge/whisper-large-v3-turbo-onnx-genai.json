@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "smile-forge/whisper-large-v3-turbo-onnx-genai",
+  "slug": "smile-forge-whisper-large-v3-turbo-onnx-genai",
+  "author": "smile-forge",
+  "url": "https://huggingface.co/smile-forge/whisper-large-v3-turbo-onnx-genai",
+  "created_at": "2026-10-12T18:05:07.000Z",
+  "updated_at": "2026-10-12T18:07:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime-genai",
+  "languages": [
+    "en",
+    "fr",
+    "de"
+  ],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "en",
+    "fr",
+    "de",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:quantized:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3403876446,
+  "storage_human": "3.4 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smile (film, 2022) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Smile_(film,_2022)",
+      "snippet": "Le président de Paramount Pictures, Brian Robbins, explique qu'à l'origine, il était prévu de diffuser Smile sur Paramount+, mais le …"
+    },
+    {
+      "title": "aymericdamien/TopDeepLearning: A list of popular github projects ...",
+      "url": "https://github.com/aymericdamien/topdeeplearning",
+      "snippet": "14.07.2026 ... AI coding assistant skill (Claude Code, Codex, OpenCode, Cursor, Gemini CLI, and more). Turn any fo… PaddleOCR, 85.5k, Turn any PDF or image ..."
+    },
+    {
+      "title": "Smile - Film 2022 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=304967.html",
+      "snippet": "Smile est un film réalisé par Parker Finn avec Sosie Bacon, Jessie T. Usher. Synopsis : Après avoir été témoin d'un incident …"
+    },
+    {
+      "title": "Microsoft AI (Azure OpenAI Generative Services) - Wilson Mar",
+      "url": "https://wilsonmar.github.io/microsoft-ai/",
+      "snippet": "23.10.2025 ... Other: OpenAI (to power your apps with large-scale AI models) is ... OpenAI Whisper model (Speech-to-Text). GPT-4 Turbo with Vision. Chat ..."
+    },
+    {
+      "title": "Smile - Groupe européen de services numériques",
+      "url": "https://smile.eu/fr",
+      "snippet": "Smile déploie son expertise en IA, souveraineté numérique et technologies de pointe pour créer un impact mesurable pour ses …"
+    }
+  ]
+}

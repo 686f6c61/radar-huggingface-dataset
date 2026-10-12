@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HirCoir/neo-tts-studio-native-1-2",
+  "slug": "hircoir-neo-tts-studio-native-1-2",
+  "author": "HirCoir",
+  "url": "https://huggingface.co/HirCoir/neo-tts-studio-native-1-2",
+  "created_at": "2026-10-12T02:49:51.000Z",
+  "updated_at": "2026-10-12T02:50:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-speech",
+    "cpp",
+    "cuda",
+    "cpu",
+    "windows",
+    "linux",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6853704527,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online video editor by Microsoft Clipchamp",
+      "url": "https://clipchamp.com/en/",
+      "snippet": "Clipchamp video editor lets you create professional videos from your web browser, without needing to download any software. Use …"
+    },
+    {
+      "title": "Clipchamp Free Video Editor and Video Maker | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/clipchamp?msockid=13e1648b971b6a470000737b96d06b49",
+      "snippet": "Whether you’re making content for social media, personal projects, or your side hustle, Clipchamp helps you combine videos, …"
+    },
+    {
+      "title": "Clipchamp - free video editor & video maker",
+      "url": "https://app.clipchamp.com/login",
+      "snippet": "Use Clipchamp to make awesome videos from scratch or start with a template to save time. Edit videos, audio tracks and images like …"
+    },
+    {
+      "title": "Éditeur vidéo en ligne Microsoft Clipchamp",
+      "url": "https://clipchamp.com/fr/",
+      "snippet": "Exportez un nombre illimité de vidéos et de fichiers audio en qualité HD, sans aucun filigrane. L’éditeur vidéo Microsoft Clipchamp …"
+    },
+    {
+      "title": "Microsoft Clipchamp - Free download and install on Windows",
+      "url": "https://apps.microsoft.com/detail/9p1j8s7ccwwt",
+      "snippet": "Clipchamp's online video editor equips you with essential editing tools. You can cut, trim, crop, rotate, split, make a GIF, zoom in and …"
+    }
+  ]
+}

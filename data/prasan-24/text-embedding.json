@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "prasan-24/text-embedding",
+  "slug": "prasan-24-text-embedding",
+  "author": "prasan-24",
+  "url": "https://huggingface.co/prasan-24/text-embedding",
+  "created_at": "2026-10-12T17:52:18.000Z",
+  "updated_at": "2026-10-12T17:55:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:210",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133462128,
+  "storage_human": "133 MB",
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faire votre demande pour l'aide de 100 € pour les travailleurs « …",
+      "url": "https://www.impots.gouv.fr/simulateur-aide-carburant-grands-rouleurs",
+      "snippet": "À l'aide de notre simulateur, en répondant à quelques questions, vous vérifiez votre éligibilité à ce dispositif d'aide ; Si vous …"
+    },
+    {
+      "title": "Une nouvelle aide de 100 euros pour les travailleurs « grands rouleurs »",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18903",
+      "snippet": "Oct 5, 2026 · Vous pouvez demander jusqu’au 31 décembre 2026 à bénéficier de l’aide carburant de 100 euros pour les travailleurs …"
+    },
+    {
+      "title": "Aide carburant - Bannière formulaire de demande | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/aide-carburant-banniere-formulaire-de-demande",
+      "snippet": "L'aide de 100 € pour les grands rouleurs est renouvelée et étendue pour la période d'octobre à décembre 2026. Elle bénéficie …"
+    },
+    {
+      "title": "Aides carburant - info.gouv.fr",
+      "url": "https://www.info.gouv.fr/actualite/aides-au-carburant",
+      "snippet": "May 13, 2026 · Cette indemnité forfaitaire s'élève à 100 euros pour les trois mois concernés et sera équivalente à 40 centimes par …"
+    },
+    {
+      "title": "Carburant : l'aide pour les travailleurs « grands rouleurs",
+      "url": "https://www.economie.gouv.fr/actualites/carburant-laide-pour-les-travailleurs-grands-rouleurs",
+      "snippet": "Oct 2, 2026 · Pour compenser la hausse des prix à la pompe, le Gouvernement a institué une indemnité carburant de : 100 euros, du …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anonym-coling2027/E2E-GOP-SpeechOcean762",
+  "slug": "anonym-coling2027-e2e-gop-speechocean762",
+  "author": "anonym-coling2027",
+  "url": "https://huggingface.co/anonym-coling2027/E2E-GOP-SpeechOcean762",
+  "created_at": "2026-10-12T16:05:53.000Z",
+  "updated_at": "2026-10-12T16:05:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anonym Apparel | Vêtements en coton Pima & laine d'alpaga",
+      "url": "https://www.anonymapparel.com/",
+      "snippet": "Anonym Apparel, le luxe discret sans logo : des essentiels en coton Pima péruvien et en laine d'alpaga, sourcés au Pérou et …"
+    },
+    {
+      "title": "Vêtements femme en coton Pima & alpaga | Anonym Apparel",
+      "url": "https://www.anonymapparel.com/collections/femme",
+      "snippet": "Vêtements femme en coton Pima péruvien et laine d'alpaga, dessinés en France. Des essentiels sans logo, pensés pour durer. Le …"
+    },
+    {
+      "title": "Anonymous (collectif) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anonymous_(collectif)",
+      "snippet": "Individus apparaissant en tant qu' Anonymous et portant le masque de Guy Fawkes, porté par le personnage de V dans la bande …"
+    },
+    {
+      "title": "ANONYM : des chemises, pulls d'exception…",
+      "url": "https://www.alainmartiniere.com/marque/anonym.html",
+      "snippet": "ANONYM : des chemises, sweats et pulls italiens… Préserver et promouvoir l’artisanat local. Plus que la qualité, nous souhaitons …"
+    },
+    {
+      "title": "Anonym - Au Petit Matelot",
+      "url": "https://www.aupetitmatelot.fr/brand/78-anonym",
+      "snippet": "Découvrez la marque Anonym et son univers unique à travers notre vaste sélection de produits. La marque offre des articles de …"
+    }
+  ]
+}

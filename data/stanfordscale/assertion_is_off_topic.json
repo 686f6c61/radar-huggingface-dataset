@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_is_off_topic",
+  "slug": "stanfordscale-assertion_is_off_topic",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_is_off_topic",
+  "created_at": "2026-10-12T17:51:56.000Z",
+  "updated_at": "2026-10-12T17:52:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.2658
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.5
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.181
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.7968
+    }
+  ],
+  "sources": [
+    {
+      "title": "San Francisco Travel | Official Visitor Information",
+      "url": "https://www.sftravel.com/",
+      "snippet": "Official site for planning a trip to San Francisco and Northern California. Find the latest on attractions, hotel rooms, restaurants, arts …"
+    },
+    {
+      "title": "First Trip to San Francisco: Insider's Guide for 1st Time Visitors",
+      "url": "https://www.sftourismtips.com/first-trip-to-san-francisco.html",
+      "snippet": "Aug 10, 2026 · On this page, you will find valuable information to help you plan your first trip to the City by the Bay. You will find …"
+    },
+    {
+      "title": "Plan Your Trip to San Francisco: Best of San Francisco Tourism",
+      "url": "https://www.tripadvisor.com/Tourism-g60713-San_Francisco_California-Vacations.html",
+      "snippet": "From the miners to the beatniks, the hippies to the techies, San Francisco is a place people have been coming to reinvent …"
+    },
+    {
+      "title": "San Francisco Travel Guide (Updated 2026)",
+      "url": "https://www.nomadicmatt.com/travel-guides/united-states-travel-guide/san-francisco/",
+      "snippet": "Apr 23, 2026 · A comprehensive budget travel guide to San Francisco with tips on things to do, costs, ways to save money, …"
+    },
+    {
+      "title": "The Ultimate Local’s Travel Guide to San Francisco - Bon Traveler",
+      "url": "https://www.bontraveler.com/travel-guide-to-san-francisco/",
+      "snippet": "Mar 6, 2024 · Sharing a full travel guide to San Francisco after living there for nearly a decade. All of our favorite restaurants, shops, …"
+    }
+  ]
+}

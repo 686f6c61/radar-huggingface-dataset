@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "alibayram/embeddingmagibu2-retrieval",
+  "slug": "alibayram-embeddingmagibu2-retrieval",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/embeddingmagibu2-retrieval",
+  "created_at": "2026-10-12T02:44:01.000Z",
+  "updated_at": "2026-10-12T02:44:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alibayram/embeddingmagibu2 · Hugging Face",
+      "url": "https://huggingface.co/alibayram/embeddingmagibu2",
+      "snippet": "alibayram / embeddingmagibu2 Like 0 Sentence Similarity sentence-transformers Safetensors Turkish multilingual embedding_gemma2 feature-extraction embedding turkish retrieval tokenizer-surgery magibu-ai arxiv:2605.29992 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "alibayram (Ali Bayram) - Hugging Face",
+      "url": "https://huggingface.co/alibayram",
+      "snippet": "AI & ML interests ... Recent Activity liked a model 25 days ago ... updated a Space about 1 month ago"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia ... - MSN",
+      "url": "https://www.msn.com/en-gb/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police-website/ar-AA2dVxyE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of rogue ..."
+    },
+    {
+      "title": "Anthropic AI model posing as a human sent cops fake lead on unsolved ...",
+      "url": "https://www.nzherald.co.nz/world/anthropic-ai-model-posed-as-a-human-to-send-cops-fake-lead-on-unsolved-case/IXMDP546ORBZBARUB76UQCXGCM/",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said on Friday, criticising the company for taking ..."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "gggff123/Smol-GPT-RAW",
+  "slug": "gggff123-smol-gpt-raw",
+  "author": "gggff123",
+  "url": "https://huggingface.co/gggff123/Smol-GPT-RAW",
+  "created_at": "2026-10-12T03:02:27.000Z",
+  "updated_at": "2026-10-12T03:02:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/SmolLM2-135M-Instruct",
+    "base_model:finetune:unsloth/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 134515584,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269061704,
+  "storage_human": "269 MB",
+  "base_model": "unsloth/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "gggff123/Smol-GPT-RAW · Hugging Face",
+      "url": "https://huggingface.co/gggff123/Smol-GPT-RAW",
+      "snippet": "gggff123 / Smol-GPT-RAW Like 0 Text Generation Transformers Safetensors English llama text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - Om-Alve/smolGPT",
+      "url": "https://github.com/Om-Alve/smolGPT",
+      "snippet": "SMOL-GPT 🦾 A minimal PyTorch implementation for training your own small LLM from scratch. Designed for educational purposes and simplicity, featuring efficient training, flash attention, and modern sampling techniques."
+    },
+    {
+      "title": "GitHub - NolanoOrg/smol-gpt: Smol but mighty language model",
+      "url": "https://github.com/NolanoOrg/smol-gpt",
+      "snippet": "Smol but mighty language model . Contribute to NolanoOrg/smol-gpt development by creating an account on GitHub."
+    },
+    {
+      "title": "smol_gpt: A Lightweight GPT Research and Inference Platform Built from ...",
+      "url": "https://www.zingnex.cn/en/forum/thread/smol-gpt-gpt",
+      "snippet": "smol_gpt is a GPT model implemented from scratch using PyTorch, designed specifically for model optimization research, with the goal of becoming a small, reliable, and locally deployable inference agent."
+    },
+    {
+      "title": "SmolLM - blazingly fast and remarkably powerful - Hugging Face",
+      "url": "https://huggingface.co/blog/smollm",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    }
+  ]
+}

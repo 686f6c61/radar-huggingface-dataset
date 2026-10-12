@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Doilion111/CytoSPM",
+  "slug": "doilion111-cytospm",
+  "author": "Doilion111",
+  "url": "https://huggingface.co/Doilion111/CytoSPM",
+  "created_at": "2026-10-12T02:54:36.000Z",
+  "updated_at": "2026-10-12T03:07:30.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "open-vocabulary-detection",
+    "cytopathology",
+    "medical-imaging",
+    "object-detection",
+    "arxiv:2609.31314",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151706249,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schwarzer Knoblauch",
+      "url": "https://www.uniklinik-freiburg.de/fileadmin/mediapool/08_institute/rechtsmedizin/pdf/Addenda/2016/SchwarzerKnoblauch.pdf",
+      "snippet": "10.11.2016 ... Dillon SA, Lowe GM, Billington D, Rahman K. Dietary supplementation with aged garlic extract reduces plasma and urine concentrations of. 8-iso- ..."
+    },
+    {
+      "title": "Gendiagnostik bei kardiovaskulären Erkrankungen | Leitlinien",
+      "url": "https://leitlinien.dgk.org/files/2023_konsensuspapier_gendiagnostik_kardiovaskulaere_erkrankungen.pdf",
+      "snippet": "01.09.2023 ... Das „HCM Risk-Kids model“ ist zu- dem online verfügbar (www. ... 111. Homsy J, Zaidi S, Shen Y et al (2015) De novo mutations in ..."
+    },
+    {
+      "title": "Masterarbeit - UB Graz",
+      "url": "https://unipub.uni-graz.at/obvugrhs/download/pdf/13596607",
+      "snippet": "neurons in a model of inflammato-ry pain. Mol Pharmacol. 2007 Jul;71(1): ... 111. Ayad S, Demitrack MA, Burt DA, Michalsky C, Wase L, Fossler MJ, Khanna ..."
+    },
+    {
+      "title": "Langversion 1.1 - S3 Leitlinie Melanom",
+      "url": "https://www.leitlinienprogramm-onkologie.de/fileadmin/user_upload/Downloads/Leitlinien/Melanom/S3-Melanom-OL-Langversion-V1.1.pdf",
+      "snippet": "communication skills training model for oncologists: a randomised controlled trial. ... Puleo CA, Messina JL, Riker AI, Glass LF, Nelson C, Cruse CW ..."
+    },
+    {
+      "title": "Molekulare Mechanismen der altersassoziierten vestibulären ...",
+      "url": "https://edoc.ub.uni-muenchen.de/29202/1/Zimmermann_Amelie.pdf",
+      "snippet": "... AI-. CAR vor, wie sie bei den Utrikeln der Wildtyp-Mäuse zu sehen war. Bei der ... model of mitochondrial disease. Cell Metab 19, 1042-1049. Chen, H.C. ..."
+    }
+  ]
+}

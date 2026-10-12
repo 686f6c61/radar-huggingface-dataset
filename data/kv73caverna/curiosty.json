@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kv73Caverna/curiosty",
+  "slug": "kv73caverna-curiosty",
+  "author": "Kv73Caverna",
+  "url": "https://huggingface.co/Kv73Caverna/curiosty",
+  "created_at": "2026-10-12T02:31:42.000Z",
+  "updated_at": "2026-10-12T02:31:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connect any model | Curiosity",
+      "url": "https://curiosity.ai/models",
+      "snippet": "Connect models from OpenAI, Anthropic, Mistral, Meta or your own local weights. Curiosity is not the model. It gives the model you choose the context."
+    },
+    {
+      "title": "Curiosity - AI Models",
+      "url": "https://docs.curiosity.ai/workspace/core-concepts/ai-models",
+      "snippet": "AI Models Curiosity Studio uses AI models in three common ways: Understanding: NLP pipelines that extract structure from text (entities, signals, links). Retrieval: embeddings used for semantic similarity (vector search) and re-ranking. Generation: LLMs used for synthesis, assistance, and workflow automation."
+    },
+    {
+      "title": "Anthropic AI model posing as a human sent cops fake lead on unsolved ...",
+      "url": "https://www.nzherald.co.nz/world/anthropic-ai-model-posed-as-a-human-to-send-cops-fake-lead-on-unsolved-case/IXMDP546ORBZBARUB76UQCXGCM/",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said on Friday, criticising the company for taking ..."
+    },
+    {
+      "title": "Free AI models — 34 you can use at no cost",
+      "url": "https://itsfree.ai/models/",
+      "snippet": "Every AI model with a free route: 34 models from 23 vendors, and exactly which providers hand each one to you for nothing."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    }
+  ]
+}

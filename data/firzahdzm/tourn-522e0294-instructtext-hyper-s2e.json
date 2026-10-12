@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-522e0294-instructtext-hyper-s2e",
+  "slug": "firzahdzm-tourn-522e0294-instructtext-hyper-s2e",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-522e0294-instructtext-hyper-s2e",
+  "created_at": "2026-10-12T03:03:17.000Z",
+  "updated_at": "2026-10-12T03:03:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348896,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boeing 720/720B (XP12/XP11) - Airliners - X-Plane.Org Forum",
+      "url": "https://forums.x-plane.org/files/file/82586-boeing-720720b-xp12xp11/",
+      "snippet": "Aug 21, 2022 · For the XP12 version only, download the Liveries folder separately, and after unzipping it, put it in the Boeing_720B …"
+    },
+    {
+      "title": "Boeing 737-800 - X-Plane",
+      "url": "https://www.x-plane.com/aircraft/boeing-737-800/",
+      "snippet": "It has 10 variants that can carry 85 to 215 passengers. It is the best-selling commercial jet airliner and has been in continuous …"
+    },
+    {
+      "title": "Boeing 737-800 - X-Plane",
+      "url": "https://www.x-plane.com/aircraft/b738/",
+      "snippet": "It is the best-selling commercial jet airliner and has been in continuous production since 1967. More X-Plane news comes every …"
+    },
+    {
+      "title": "Boeing Airliners - X-Plane.Org Software Store",
+      "url": "https://store.x-plane.org/Boeing-Airliners_c_5.html",
+      "snippet": "Home Airliners Boeing Airliners Boeing Airliners 727 Series 737 Series 747 Series 757 Professional"
+    },
+    {
+      "title": "Sparky 744 (Default 744 major overhaul) - X-Plane.Org Forum",
+      "url": "https://forums.x-plane.org/files/file/67817-sparky-744-default-744-major-overhaul/",
+      "snippet": "Nov 29, 2020 · The aircraft climbs and descends like crazy, v speed calculation is wrong, there's no menu for fuel and weight …"
+    }
+  ]
+}

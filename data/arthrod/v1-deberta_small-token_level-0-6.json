@@ -5,7 +5,7 @@
   "author": "arthrod",
   "url": "https://huggingface.co/arthrod/v1-deberta_small-token_level-0-6",
   "created_at": "2026-02-24T22:35:19.000Z",
-  "updated_at": "2026-10-11T06:34:21.000Z",
+  "updated_at": "2026-10-12T00:25:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 14,
+  "downloads_30d": 28,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

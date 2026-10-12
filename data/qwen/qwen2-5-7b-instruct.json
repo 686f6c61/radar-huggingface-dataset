@@ -33,13 +33,13 @@
     "deploy:azure",
     "region:us"
   ],
-  "likes": 2416,
-  "downloads_30d": 7753092,
+  "likes": 2430,
+  "downloads_30d": 7631037,
   "trending_score": 11,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 15231271888,
-  "storage_human": "15.2 GB",
+  "storage_bytes": 15255453428,
+  "storage_human": "15.3 GB",
   "base_model": "Qwen/Qwen2.5-7B",
   "formats": [
     "safetensors"

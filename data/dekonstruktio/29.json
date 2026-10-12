@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dekonstruktio/29",
+  "slug": "dekonstruktio-29",
+  "author": "Dekonstruktio",
+  "url": "https://huggingface.co/Dekonstruktio/29",
+  "created_at": "2026-10-12T03:04:42.000Z",
+  "updated_at": "2026-10-12T03:46:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1574777459,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dekonstruktio (D) - Hugging Face",
+      "url": "https://huggingface.co/Dekonstruktio/models",
+      "snippet": "User profile of D on Hugging Face updated a Space about 16 hours ago"
+    },
+    {
+      "title": "Dekonstruktio (D D) - Hugging Face",
+      "url": "https://huggingface.co/Dekonstruktio",
+      "snippet": "User profile of D D on Hugging Face"
+    },
+    {
+      "title": "Dekonstruktio AI Models | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/dekonstruktio",
+      "snippet": "Browse AI models attributed to Dekonstruktio in our directory, with parameters, context windows, pricing and benchmarks compared across every listed model."
+    },
+    {
+      "title": "Anthropic AI model submitted false tip about unsolved murder ...",
+      "url": "https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/",
+      "snippet": "An Anthropic A.I. model submitted a false tip about an unsolved murder through a publicly accessible web form, Philadelphia police said Friday."
+    },
+    {
+      "title": "ModelForest — Interactive AI Model Family Tree",
+      "url": "https://mrunreal.github.io/ModelForest/",
+      "snippet": "Explore the complete genealogy of AI models. See how GPT, Llama, Claude, Gemini, and 200+ models evolved. Interactive tree updated daily from HuggingFace."
+    }
+  ]
+}

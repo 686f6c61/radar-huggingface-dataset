@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_DataEnvGym_mmlupro_llama8b_5000",
+  "slug": "ishikaa-acquisition_student_dataenvgym_mmlupro_llama8b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_DataEnvGym_mmlupro_llama8b_5000",
+  "created_at": "2026-10-12T16:04:55.000Z",
+  "updated_at": "2026-10-12T16:06:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "French vs English, some tips? : r/aoe4 - Reddit",
+      "url": "https://www.reddit.com/r/aoe4/comments/v5cmf9/french_vs_english_some_tips/",
+      "snippet": "Jun 5, 2022 · To be honest, English feudal all in is not a good strategy, especially against French. Yes, if you let the archers and …"
+    },
+    {
+      "title": "List of videogames that you can learn French with - Reddit",
+      "url": "https://www.reddit.com/r/learnfrench/comments/1d1d1jf/list_of_videogames_that_you_can_learn_french_with/",
+      "snippet": "I am about to start Persona 5 Royal (NG+) in French. Could backfire as there are rather bizarre concepts in the game, not to mention …"
+    },
+    {
+      "title": "Choose keyboard language & special characters - Chromebook Help",
+      "url": "https://support.google.com/chromebook/answer/1059492?hl=en",
+      "snippet": "You can use different keyboard languages, sometimes called input methods, on your Chromebook to: Change your typing language …"
+    },
+    {
+      "title": "Add subtitles & captions - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2734796?hl=en",
+      "snippet": "You can choose to type or paste a transcript of your captions and subtitles. With this option, your subtitle and caption timings will be …"
+    },
+    {
+      "title": "Girl names that sound good in English AND French? - Reddit",
+      "url": "https://www.reddit.com/r/namenerds/comments/q3x6p8/girl_names_that_sound_good_in_english_and_french/",
+      "snippet": "In French we’d say Vee-oh-let but I think it’s okay that there is an English way to say it and a French way to say it. Finding an name …"
+    }
+  ]
+}

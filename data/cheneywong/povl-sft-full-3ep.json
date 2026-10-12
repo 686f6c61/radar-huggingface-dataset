@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CheneyWong/povl-sft-full-3ep",
+  "slug": "cheneywong-povl-sft-full-3ep",
+  "author": "CheneyWong",
+  "url": "https://huggingface.co/CheneyWong/povl-sft-full-3ep",
+  "created_at": "2026-10-12T02:21:15.000Z",
+  "updated_at": "2026-10-12T03:18:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "paddleocr_vl",
+    "image-text-to-text",
+    "table-recognition",
+    "document-parsing",
+    "paddleocr-vl",
+    "otvl",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 905601648,
+  "parameters_human": "905.6M",
+  "storage_bytes": 1822476133,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supervised Fine-Tuning (SFT) for LLMs - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/supervised-fine-tuning-sft-for-llms/",
+      "snippet": "Supervised Fine-Tuning (SFT) is a method of adapting a pre-trained language model using a smaller dataset containing labeled examples. The model learns to produce the desired output for a given input, improving its performance on a specific task or type of instruction."
+    },
+    {
+      "title": "From SFT to GRPO: A Practical Guide to Modern LLM Fine-Tuning ...",
+      "url": "https://arzerin.com/2026/08/20/llm-post-training-sft-dpo-ppo-grpo-peft-lora-qlora/",
+      "snippet": "Learn how SFT, DPO, PPO, GRPO, PEFT, LoRA, and QLoRA fit together in modern LLM post-training, when to use each technique, and how to combine them effectively."
+    },
+    {
+      "title": "Fine-tune a model with supervised fine-tuning in Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Prerequisites A Foundry resource or project with an SFT-supported model and training region. The Foundry User role for training, or the Foundry Owner role if you also deploy the fine-tuned model."
+    },
+    {
+      "title": "A Coding Guide on LLM Post Training with TRL from Supervised Fine ...",
+      "url": "https://www.marktechpost.com/2026/05/01/a-coding-guide-on-llm-post-training-with-trl-from-supervised-fine-tuning-to-dpo-and-grpo-reasoning/",
+      "snippet": "In this tutorial, we walk through a complete, hands-on journey of post-training large language models using the powerful TRL (Transformer Reinforcement Learning) library ecosystem. We start from a lightweight base model and progressively apply four key techniques: Supervised Fine-Tuning (SFT), Reward Modeling (RM), Direct Preference Optimization (DPO), and Group Relative Policy Optimization ..."
+    },
+    {
+      "title": "New ENCFORGE Ransomware Targets AI Model Files in Langflow RCE Attack",
+      "url": "https://thehackernews.com/2026/07/new-encforge-ransomware-targets-ai.html",
+      "snippet": "JADEPUFFER exploits Langflow CVE-2025-3248 to deploy ENCFORGE ransomware against AI model weights, vector indexes, and training data on the host."
+    }
+  ]
+}

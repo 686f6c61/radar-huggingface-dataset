@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-01fdf13f-instructtext-hyper-s2ms40",
+  "slug": "firzahdzm-tourn-01fdf13f-instructtext-hyper-s2ms40",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-01fdf13f-instructtext-hyper-s2ms40",
+  "created_at": "2026-10-12T02:40:50.000Z",
+  "updated_at": "2026-10-12T02:41:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557072,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "firzahdzm/tourn-c673dbe2-instructtext-hyper-v2 · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-c673dbe2-instructtext-hyper-v2",
+      "snippet": "Instructions to use firzahdzm/tourn-c673dbe2-instructtext-hyper-v2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "firzahdzm/tourn-067761fe-instructtext-super-s2d · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-067761fe-instructtext-super-s2d",
+      "snippet": "firzahdzm / tourn-067761fe-instructtext-super-s2d Like 0 Safetensors llama Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 1B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask for ..."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "Damacol/firzahdzm-instruct-1e8c8e8e20b2-01 - GitHub",
+      "url": "https://github.com/Damacol/firzahdzm-instruct-1e8c8e8e20b2-01",
+      "snippet": "firzahdzm/instruct-1e8c8e8e20b2-01 - Private, Uncensored AI for Real Creators and Devs Deploy {MODEL} without cloud dependencies. Uncensored, transparent, and optimized for privacy-conscious workflows."
+    },
+    {
+      "title": "firzahdzm-instruct-1e8c8e8e20b2-01 · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/firzahdzm-instruct-1e8c8e8e20b2-01",
+      "snippet": "Star 0 Code Issues Pull requests Run firzahdzm/instruct-1e8c8e8e20b2-01 privately via Venice.ai - Zero tracking, uncensored privacy ai uncensored ai-model llm venice-ai firzahdzm-instruct-1e8c8e8e20b2-01 Updated 3 weeks ago"
+    }
+  ]
+}

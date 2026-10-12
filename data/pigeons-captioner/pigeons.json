@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "PIGEONS-Captioner/PIGEONS",
+  "slug": "pigeons-captioner-pigeons",
+  "author": "PIGEONS-Captioner",
+  "url": "https://huggingface.co/PIGEONS-Captioner/PIGEONS",
+  "created_at": "2026-10-12T02:43:15.000Z",
+  "updated_at": "2026-10-12T02:47:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_omni_moe",
+    "long-video",
+    "captioner",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 35259818545,
+  "parameters_human": "35.26B",
+  "storage_bytes": 70536853064,
+  "storage_human": "70.5 GB",
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求你的名字插曲《火花》罗马音歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/620468646371827972.html",
+      "snippet": "boku o kainara shite itai mitaida nozomi-dooridarou utsukushiku mogaku yo tagai no sunadokei nagamenagara kisuwoshiyoyo …Read more"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/32246021",
+      "snippet": ""
+    },
+    {
+      "title": "求たばこ这首的罗马音！ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1802277222651732387.html",
+      "snippet": "求たばこ这首的罗马音！たばこ昨日の夜から 君がいなくなって 24时间が経ったkinou no yoru kara kimi ga inaku natte nijuuyo jikan …"
+    },
+    {
+      "title": "在日本人看来，女孩子自称“僕”真的很粗鲁吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/439090326",
+      "snippet": "RT，在动画中经常看见自称僕（ぼく）的女孩子，比如柯南里的世良，刀剑神域里的有纪等等，但大家都说如果…"
+    },
+    {
+      "title": "日语里，为什么有的男人自称“wataxi”，女的自称“boku”？？",
+      "url": "https://zhidao.baidu.com/question/2116021627985400067.html",
+      "snippet": "日语 里面是有四个自称，watashi、watakushi、boku、ore； watashi通用， watakushi是女性自称， boku一般是男性自称，女性 …"
+    }
+  ]
+}

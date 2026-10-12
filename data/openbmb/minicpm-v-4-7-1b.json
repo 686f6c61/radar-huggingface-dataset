@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4.7-1B",
+  "slug": "openbmb-minicpm-v-4-7-1b",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B",
+  "created_at": "2026-10-06T17:40:13.000Z",
+  "updated_at": "2026-10-12T17:07:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minicpmv4_7",
+    "image-text-to-text",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1554476272,
+  "parameters_human": "1.55B",
+  "storage_bytes": 3294482032,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: A Pocket-Sized MLLM for Ultra ...",
+      "url": "https://github.com/openbmb/MiniCPM-V",
+      "snippet": "The model is built based on SigLIP2-400M and the Qwen3.5-0.8B LLM. It inherits the strong single-image, multi-image, and video understanding capabilities of ..."
+    },
+    {
+      "title": "Supported Models | OpenVINO GenAI - GitHub Pages",
+      "url": "https://openvinotoolkit.github.io/openvino.genai/docs/supported-models/",
+      "snippet": "deepseek-ai/deepseek-moe-16b-base · deepseek-ai/deepseek-moe-16b-chat. DeepseekV2ForCausalLM ... openbmb/MiniCPM-V-4.7-1B · openbmb/MiniCPM-V-4.7-35B-A3B."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-Robot: A Smarter and Faster On ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-Robot",
+      "snippet": "A Smarter and Faster On-Device AI Brain for Robots - OpenBMB/MiniCPM-Robot. ... The model supports up to 1 minute of visual context memory while keeping ..."
+    },
+    {
+      "title": "MiniCPM-V 4.6 1.3B vs. Qwen3 4B 2507 (Reasoning) - LLMBase",
+      "url": "https://llmbase.ai/compare/minicpm-v4-6-1-3b,qwen3-4b-2507-instruct-reasoning/",
+      "snippet": "11.05.2026 ... ... AI model for your use case."
+    },
+    {
+      "title": "Supported Models - vLLM Documentation",
+      "url": "https://docs.vllm.ai/en/v0.18.1/models/supported_models/",
+      "snippet": "vLLM also supports model implementations that are available in Transformers. You should expect the performance of a Transformers model implementation used in ..."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CodeInstitute/herokuapp_rf_model",
+  "slug": "codeinstitute-herokuapp_rf_model",
+  "author": "CodeInstitute",
+  "url": "https://huggingface.co/CodeInstitute/herokuapp_rf_model",
+  "created_at": "2026-10-12T16:06:45.000Z",
+  "updated_at": "2026-10-12T16:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 316320538,
+  "storage_human": "316 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv:2201.00764v1 [cs.AI] 3 Jan 2022",
+      "url": "https://arxiv.org/pdf/2201.00764",
+      "snippet": "03.01.2022 ... 1The experiment can be tested here: http://planning-amount.herokuapp.com. ... REINFORCE model (RF). LVOC. LVOC-PR. HR-LVOC. HR-LVOC-PR. RF. RF-PR."
+    },
+    {
+      "title": "House price prediction with textual description data",
+      "url": "https://www.cambridge.org/core/journals/natural-language-engineering/article/describe-the-house-and-i-will-tell-you-the-price-house-price-prediction-with-textual-description-data/807584C6B9D76F555DA61E220BF39F9B",
+      "snippet": "18.07.2023 ... Three learning models, namely the generalized linear regression model, the elastic net model, and the RF model, were tested. ... model.herokuapp."
+    },
+    {
+      "title": "Analysis of CT-based Phishing Detection Performance on Free ...",
+      "url": "https://eprint.iacr.org/2026/1501.pdf",
+      "snippet": "[27] similarly study phishing websites hosted on traditional Free Web Hosting (FWH) services and propose a machine learning model for distinguishing FWH and non ..."
+    },
+    {
+      "title": "Explainable machine learning model for predicting cesarean section ...",
+      "url": "https://journals.plos.org/digitalhealth/article?id=10.1371%2Fjournal.pdig.0001061",
+      "snippet": "20.11.2025 ... Induction of labor (IOL) is a common yet complex clinical procedure associated with varying risks, including cesarean section (CS)."
+    },
+    {
+      "title": "ROLEX: A Novel Method for Interpretable Machine Learning Using ...",
+      "url": "https://misq.umn.edu/misq/article/47/3/1303/2241/ROLEX-A-Novel-Method-for-Interpretable-Machine",
+      "snippet": "01.09.2023 ... However, state-of-the-art AI systems such as deep neural networks often have complex and opaque model structures, making it difficult for humans ..."
+    }
+  ]
+}

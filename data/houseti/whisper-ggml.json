@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "houseti/whisper-ggml",
+  "slug": "houseti-whisper-ggml",
+  "author": "houseti",
+  "url": "https://huggingface.co/houseti/whisper-ggml",
+  "created_at": "2026-10-12T02:24:49.000Z",
+  "updated_at": "2026-10-12T02:25:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "multilingual",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190085487,
+  "storage_human": "190 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "danielus/ggml-whisper-models · Hugging Face",
+      "url": "https://huggingface.co/danielus/ggml-whisper-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "chatgpt-openai/ggml-model-whisper · Hugging Face",
+      "url": "https://huggingface.co/chatgpt-openai/ggml-model-whisper",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Models | Whisper API Docs",
+      "url": "https://whisper.vedgupta.in/docs/models/",
+      "snippet": "The Whisper API uses GGML-format model files (.bin) compatible with whisper.cpp. Files live under MODELS_DIR (default models/). The server exposes a fixed registry in code (model_names in app/utils/constant.py): GET /v1/models lists registry entries whose matching .bin file exists on disk. On startup, missing registry models can be downloaded automatically (see app/utils/checks.py)."
+    },
+    {
+      "title": "Whisper + Home Assistant 2026: Local STT Guide",
+      "url": "https://www.promptquorum.com/smart-home/local-whisper-home-assistant",
+      "snippet": "Add local speech-to-text to Home Assistant with Whisper: model sizes, hardware needs, accuracy vs speed, and Wyoming setup. Private, offline transcription."
+    },
+    {
+      "title": "whisper.cpp/models/download-ggml-model.cmd at master - GitHub",
+      "url": "https://github.com/ggml-org/whisper.cpp/blob/master/models/download-ggml-model.cmd",
+      "snippet": "Port of OpenAI&#x27;s Whisper model in C/C++. Contribute to ggml-org/whisper.cpp development by creating an account on GitHub."
+    }
+  ]
+}

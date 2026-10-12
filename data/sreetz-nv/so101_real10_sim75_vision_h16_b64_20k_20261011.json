@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_real10_sim75_vision_h16_b64_20k_20261011",
+  "slug": "sreetz-nv-so101_real10_sim75_vision_h16_b64_20k_20261011",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_real10_sim75_vision_h16_b64_20k_20261011",
+  "created_at": "2026-10-12T02:56:51.000Z",
+  "updated_at": "2026-10-12T04:15:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "so101",
+    "groot",
+    "co-training",
+    "dataset:sreetz-nv/so101_real_manual",
+    "dataset:sreetz-nv/so101_sim_manual_perception_newton_20261008",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datasets and Models — Train an SO-101 Robot From Sim-to-Real With ...",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/datasets-and-models.html",
+      "snippet": "Datasets and Models # Pre-collected datasets and pre-trained model checkpoints used in this course, hosted on Hugging Face. Datasets #"
+    },
+    {
+      "title": "sreetz-nv (Shane Reetz) - Hugging Face",
+      "url": "https://huggingface.co/sreetz-nv",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 28 minutes ago ... published a model about 1 hour ago"
+    },
+    {
+      "title": "sreetz-nv/so101_newton_dr500_vision_h32_b32_20k_20260929 · Hugging Face",
+      "url": "https://huggingface.co/sreetz-nv/so101_newton_dr500_vision_h32_b32_20k_20260929",
+      "snippet": "This fine-tuned derivative is distributed under the base model&#x27;s NVIDIA License, included in LICENSE. Published weights exactly match the saved final 20k checkpoint used for the reported simulation and physical screening."
+    },
+    {
+      "title": "Train an SO-101 Robot From Sim-to-Real With NVIDIA Isaac",
+      "url": "https://docs.nvidia.com/learning/physical-ai/sim-to-real-so-101/latest/index.html",
+      "snippet": "You&#x27;ll train and deploy a vision-language-action (VLA) model to perform unstructured pick-and-place of centrifuge vials into a rack using an SO-101 robot arm - first in sim, where we can iterate quickly and validate behavior, then in reality."
+    },
+    {
+      "title": "Sim-to-Real-SO-101-Workshop - GitHub",
+      "url": "https://github.com/isaac-sim/Sim-to-Real-SO-101-Workshop",
+      "snippet": "This code supports learning content to demonstrate an end-to-end Physical AI workflow with the SO-101 robot, Isaac Lab, and Isaac GR00T. - isaac-sim/Sim-to-Real-SO-101-Workshop"
+    }
+  ]
+}

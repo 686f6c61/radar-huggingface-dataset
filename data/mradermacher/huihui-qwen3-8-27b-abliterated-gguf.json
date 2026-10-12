@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Huihui-Qwen3.8-27B-abliterated-GGUF",
   "created_at": "2026-08-17T11:03:01.000Z",
-  "updated_at": "2026-08-17T13:16:24.000Z",
+  "updated_at": "2026-10-11T19:54:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 13599,
+  "downloads_30d": 13853,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

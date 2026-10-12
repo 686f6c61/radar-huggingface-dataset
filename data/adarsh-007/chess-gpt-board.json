@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "adarsh-007/chess-gpt-board",
+  "slug": "adarsh-007-chess-gpt-board",
+  "author": "adarsh-007",
+  "url": "https://huggingface.co/adarsh-007/chess-gpt-board",
+  "created_at": "2026-10-12T18:16:11.000Z",
+  "updated_at": "2026-10-12T18:21:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "from-scratch",
+    "lichess",
+    "game-playing",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195825464,
+  "storage_human": "196 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adarsh Gourav - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Adarsh_Gourav",
+      "snippet": "Adarsh Gourav Bhagavatula (born 8 July 1994) is an Indian actor known for his works in Hindi and English-language films and …Read more"
+    },
+    {
+      "title": "Adarsh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Adarsh",
+      "snippet": "Adarsh ... Adarsh (Devanagari: आदर्श ādarś) is an Indian male name that denotes \"an ideal\". [1][2][3][4]"
+    },
+    {
+      "title": "Adarshz - YouTube",
+      "url": "https://www.youtube.com/@Adarshzz/videos",
+      "snippet": "Hey Everyone! This is Adarsh here! Welcome to \"Adarshz\" YouTube Channel!I created this channel for games i upload weekly …"
+    },
+    {
+      "title": "adarshuc - YouTube",
+      "url": "https://www.youtube.com/@adarshuc",
+      "snippet": "I Found MY lOVE from BIHAR on OMEGLE😍|| OMEGLE TO REAL LIFE **WE KISSED😘** adarshuc and Adarsh Singh 1.6M 11mo ago"
+    },
+    {
+      "title": "Prime Video: Adarsh Baal Vidyalaya - Season 1",
+      "url": "https://www.primevideo.com/detail/0IR9VI8C4BBY3HMFMTDKFZ5RP5/",
+      "snippet": "2. Adarsh ka Adarsh As Gyaneshwar searches for the perfect role model to motivate clueless students, Kanchan plays detective over …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Kilvoctu/rvc",
+  "slug": "kilvoctu-rvc",
+  "author": "Kilvoctu",
+  "url": "https://huggingface.co/Kilvoctu/rvc",
+  "created_at": "2026-10-12T02:25:46.000Z",
+  "updated_at": "2026-10-12T03:23:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rvc",
+    "voice-conversion",
+    "audio",
+    "base_model:Jmica/audiobook_models",
+    "base_model:quantized:Jmica/audiobook_models",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1110163504,
+  "storage_human": "1.1 GB",
+  "base_model": "Jmica/audiobook_models, lj1995/VoiceConversionWebUI",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RVC Models: AI Voices - 384 Model Downloads & Examples",
+      "url": "https://aimodels.org/ai-models/rvc-models-ai-voice/",
+      "snippet": "RVC Models: AI Voices - 384 Model Downloads & Examples The world of audio technology is changing fast, thanks to RVC (Retrieval-based Voice Conversion) models. These models use advanced artificial intelligence to create voices that sound real and can be customized for your projects. Browse through, download and play with our directory of 388 rvc voice models"
+    },
+    {
+      "title": "Find AI Voices | Download RVC Voice Models | The #1 AI Voice Database",
+      "url": "https://ai-search.io/voices",
+      "snippet": "Find AI voices. Search and download free RVC voice models of celebrities, actors, anime characters and more. Use these voices for voice cloning, voice-to-voice, or text-to-speech."
+    },
+    {
+      "title": "MartinFLL/ai-voices · Hugging Face",
+      "url": "https://huggingface.co/MartinFLL/ai-voices",
+      "snippet": "This repository contains all the AI voices I&#x27;ve trained using RVC v2. All were trained using my GeForce NVIDIA RTX 3060 Ti. If you use any of these please credit me, although it&#x27;s not necessary. I would love to see what you make with these models. You can find more info on these models (and more) on the AI HUB discord server. https://discord.gg ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=RVC",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Get access to the largest RVC Library of Voices- Voice.ai",
+      "url": "https://voice.ai/hub/voice-technology/rvc-library/",
+      "snippet": "Discover the Power of RVC Voices Elevate your calls, voice chats, narrations for e-books, and audio projects to unparalleled heights with our library of RVC voices. RVC, which stands for Retrieval-based Voice Conversion, introduces a revolutionary approach to voice technology."
+    }
+  ]
+}

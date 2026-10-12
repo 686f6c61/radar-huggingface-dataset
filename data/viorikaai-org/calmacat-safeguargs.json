@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ViorikaAI-org/CalmaCat-SafeGuargs",
+  "slug": "viorikaai-org-calmacat-safeguargs",
+  "author": "ViorikaAI-org",
+  "url": "https://huggingface.co/ViorikaAI-org/CalmaCat-SafeGuargs",
+  "created_at": "2026-10-12T16:01:32.000Z",
+  "updated_at": "2026-10-12T16:23:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "safety",
+    "guardrails",
+    "moderation",
+    "text-classification",
+    "prompt-injection",
+    "jailbreak-detector",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278045186,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129308393,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Johnny “Guitar” Watson – Spontaneous Lunacy",
+      "url": "https://www.spontaneouslunacy.net/artists-johnny-guitar-watson/",
+      "snippet": "A breakout performance by Watson whose irrepressible energy fuels this self-penned track that he sings at reckless speed with …"
+    },
+    {
+      "title": "Johnny \"Guitar\" Watson - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Johnny_%22Guitar%22_Watson",
+      "snippet": "John Watson Jr. (February 3, 1935 – May 17, 1996), [3] often known professionally as Johnny \"Guitar\" Watson, was an American …"
+    },
+    {
+      "title": "Johnny \"Guitar\" Watson - Full Concert [HD] | Live at North ... - YouTube",
+      "url": "https://m.youtube.com/watch?v=qFjW4F4Tbto",
+      "snippet": "Feb 21, 2025 · A flamboyant showman and electric guitarist in the style of T-Bone Walker, his recording career spanned 40 years, …"
+    },
+    {
+      "title": "The Lady of Rage feat. Snoop Dogg's 'Afro Puffs (Extended Remix ...",
+      "url": "https://www.whosampled.com/sample/32690/The-Lady-of-Rage-Snoop-Dogg-Afro-Puffs-(Extended-Remix)-Johnny-%22Guitar%22-Watson-Superman-Lover/",
+      "snippet": "Snoop Dogg sampled Johnny \"Guitar\" Watson's \"Superman Lover\". Listen to both songs on WhoSampled, the ultimate database of …"
+    },
+    {
+      "title": "Johnny \"Guitar\" Watson - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCcdpMhNSq1hXl1nO8L6Ub5Q",
+      "snippet": "Jul 6, 2026 · John Watson Jr., often known professionally as Johnny \"Guitar\" Watson, was an American musician. A flamboyant …"
+    }
+  ]
+}

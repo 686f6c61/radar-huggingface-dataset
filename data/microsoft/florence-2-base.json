@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "microsoft/Florence-2-base",
+  "slug": "microsoft-florence-2-base",
+  "author": "microsoft",
+  "url": "https://huggingface.co/microsoft/Florence-2-base",
+  "created_at": "2024-06-15T00:57:24.000Z",
+  "updated_at": "2025-08-04T17:36:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "florence2",
+    "image-text-to-text",
+    "vision",
+    "custom_code",
+    "arxiv:2311.06242",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 416,
+  "downloads_30d": 2940005,
+  "trending_score": 0,
+  "parameters": 231567705,
+  "parameters_human": "231.6M",
+  "storage_bytes": 1935267078,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das Microsoft Florence-2 Modell - Arineo",
+      "url": "https://arineo.com/de/blog/das-microsoft-florence-2-modell-artificial/",
+      "snippet": "23.08.2024 ... Microsoft, oder genauer gesagt das Azure AI Team von Microsoft, hat mit „Florence-2“ ein großartiges, Multitasking-KI-Modell der ..."
+    },
+    {
+      "title": "microsoft/Florence-2-base - Hugging Face",
+      "url": "https://huggingface.co/microsoft/Florence-2-base",
+      "snippet": "10.11.2023 ... Florence-2 is an advanced vision foundation model that uses a prompt-based approach to handle a wide range of vision and vision-language tasks."
+    },
+    {
+      "title": "Florence-2: Microsoft's New Foundation Model Explained - Encord",
+      "url": "https://encord.com/blog/florence-2-explained/",
+      "snippet": "14.11.2023 ... Built by Microsoft, the Florence-2 model adopts a sequence-to-sequence architecture, integrating an image encoder and a multi-modality encoder- ..."
+    },
+    {
+      "title": "Florence-2: How it works and how to use it - AssemblyAI",
+      "url": "https://www.assemblyai.com/blog/florence-2-how-it-works-how-to-use",
+      "snippet": "15.07.2024 ... Microsoft's Florence-2 is a foundational image model that can ... To circumvent this issue, the authors use specialist AI models to generate ..."
+    },
+    {
+      "title": "Florence-2 is a novel vision foundation model with a unified ... - GitHub",
+      "url": "https://github.com/anyantudre/Florence-2-Vision-Language-Model",
+      "snippet": "Florence-2, released by Microsoft in June 2024, is an advanced, lightweight foundation vision-language model open-sourced under the MIT license."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-nnegret-lora",
+  "slug": "runninghubai-rh-nnegret-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-nnegret-lora",
+  "created_at": "2026-10-12T02:50:01.000Z",
+  "updated_at": "2026-10-12T02:51:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334277157,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-negra-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-negra-lora",
+      "snippet": "Description ... About this model Negra This repository provides rh-negra-lora weight files. You can load them on RunningHub. Finetuned from: krea2 Trigger words: negra"
+    },
+    {
+      "title": "RunningHubAI/rh-lora-2083017906674712578 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lora-2083017906674712578",
+      "snippet": "RunningHubAI / rh-lora-2083017906674712578 Like 0 Image-Text-to-Image comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "RunningHub ｜ AI Agent-Powered Content Creation Platform with ComfyUI ...",
+      "url": "https://www.runninghub.ai/",
+      "snippet": "RunningHub is an all-in-one content creation platform powered by native AI agents. Build end-to-end creative workflows with ComfyUI workflows, infinite canvas, AI apps, image & video generation, and model API access."
+    },
+    {
+      "title": "Rh Nnegret Klein9b Cglora Lora - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/runninghubai/rh-nnegret-klein9b-cglora-lora",
+      "snippet": "Registry entry for model Rh Nnegret Klein9b Cglora Lora; source metadata pending."
+    }
+  ]
+}

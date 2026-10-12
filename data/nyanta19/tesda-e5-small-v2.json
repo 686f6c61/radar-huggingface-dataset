@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Nyanta19/tesda-e5-small-v2",
+  "slug": "nyanta19-tesda-e5-small-v2",
+  "author": "Nyanta19",
+  "url": "https://huggingface.co/Nyanta19/tesda-e5-small-v2",
+  "created_at": "2026-10-12T02:58:14.000Z",
+  "updated_at": "2026-10-12T03:00:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": null,
+  "languages": [
+    "en",
+    "tl"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "tvet",
+    "tesda",
+    "en",
+    "tl",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 487351007,
+  "storage_human": "487 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nyanta19/tesda-e5-small-v2 · Hugging Face",
+      "url": "https://huggingface.co/Nyanta19/tesda-e5-small-v2",
+      "snippet": "The matching model for TESDA-TRACK. It is a fine-tune of intfloat/multilingual-e5-small that matches learner goals, written in English, Filipino or Taglish, to TESDA qualifications. The repo contains the ONNX model only, with no PyTorch weights. The TESDA-TRACK API runs it on CPU through fastembed ..."
+    },
+    {
+      "title": "Nyanta19 (Prince Esteves) - Hugging Face",
+      "url": "https://huggingface.co/Nyanta19",
+      "snippet": "Recent Activity updated a modelabout 2 hours ago Nyanta19/tesda-e5-small-v2 published a modelabout 2 hours ago Nyanta19/tesda-e5-small-v2 View all activity"
+    },
+    {
+      "title": "modelspec/models/intfloat/e5-small-v2.md at main - GitHub",
+      "url": "https://github.com/turbobeest/modelspec/blob/main/models/intfloat/e5-small-v2.md",
+      "snippet": "Contribute to turbobeest/modelspec development by creating an account on GitHub."
+    },
+    {
+      "title": "e5-small Open-Weight AI Model | OpenSourcesAI",
+      "url": "https://opensourcesai.com/models/e5-small/",
+      "snippet": "e5-small is an E5-family embedding model for semantic search, multilingual retrieval, low-overhead indexing, or RAG pipelines."
+    },
+    {
+      "title": "GitHub - rezendegustavo/e5-small-v2-ai",
+      "url": "https://github.com/rezendegustavo/e5-small-v2-ai",
+      "snippet": "E5-small-v2 Text Embeddings by Weakly-Supervised Contrastive Pre-training. Liang Wang, Nan Yang, Xiaolong Huang, Binxing Jiao, Linjun Yang, Daxin Jiang, Rangan Majumder, Furu Wei, arXiv 2022 This model has 12 layers and the embedding size is 384."
+    }
+  ]
+}

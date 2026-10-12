@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tommasoconti/multitask-lite",
+  "slug": "tommasoconti-multitask-lite",
+  "author": "tommasoconti",
+  "url": "https://huggingface.co/tommasoconti/multitask-lite",
+  "created_at": "2026-10-12T02:14:46.000Z",
+  "updated_at": "2026-10-12T02:14:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ejwilliams/multitask-lite · Hugging Face",
+      "url": "https://huggingface.co/ejwilliams/multitask-lite",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MMLU Leaderboard & Scores — October 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/benchmarks/mmlu",
+      "snippet": "MMLU scores for 22 AI models, compiled from published reports. Shown for reference, not counted in overall rankings. A comprehensive multiple-choice question..."
+    },
+    {
+      "title": "MMLU Leaderboard 2026 - Compare AI Model Scores",
+      "url": "https://pricepertoken.com/leaderboards/benchmark/mmlu",
+      "snippet": "About MMLU Massive Multitask Language Understanding — tests knowledge across 57 subjects. This leaderboard shows all models with MMLU benchmark scores, ranked from highest to lowest. Pricing data is included to help you compare performance against cost."
+    },
+    {
+      "title": "OLIVERDAVIES/multitask-lite · Hugging Face",
+      "url": "https://huggingface.co/OLIVERDAVIES/multitask-lite",
+      "snippet": "A small Efficientformer implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The nano variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "AI & LLM Benchmarks 2026: Rankings, Scores & Results",
+      "url": "https://llm-stats.com/benchmarks",
+      "snippet": "Compare AI and LLM benchmarks across reasoning, coding, math, vision, tool use, and long context. Explore live model leaderboards, scores, methodology, and limitations."
+    }
+  ]
+}

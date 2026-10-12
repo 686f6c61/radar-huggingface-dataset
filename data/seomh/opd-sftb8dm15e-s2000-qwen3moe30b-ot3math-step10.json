@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "seomh/opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10",
+  "slug": "seomh-opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10",
+  "author": "seomh",
+  "url": "https://huggingface.co/seomh/opd-sftb8dm15e-s2000-qwen3moe30b-ot3math-step10",
+  "created_at": "2026-10-12T02:31:04.000Z",
+  "updated_at": "2026-10-12T02:32:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939382,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seomh/opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20",
+      "snippet": "/ opd-sftb8dm15e-lr2e-5-s500-qwen3moe30b-ot3math-step20 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "seomh/opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10 · Hugging Face",
+      "url": "https://huggingface.co/seomh/opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10",
+      "snippet": "/ opd-sftk8dm15e-lr5e-5-s500-qwen3moe30b-ot3math-step10 Like 0 Safetensors qwen3 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 8B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "Qwen Timeline: Model & Product Release History",
+      "url": "https://www.scriptbyai.com/qwen-timeline/",
+      "snippet": "Qwen model release dates and version history, from Tongyi Qianwen and Qwen-7B through Qwen3.8-Omni-Flash, Max, Coder, VL, QwQ, and Qwen Code."
+    },
+    {
+      "title": "Alibaba Introduces Qwen3, Setting New Benchmark in Open-Source AI with ...",
+      "url": "https://home.alibabagroup.com/en-US/document-1853940226976645120",
+      "snippet": "Alibaba has launched Qwen3, the latest generation of its open-sourced large language model (LLM) family, setting a new benchmark for AI innovation. The Qwen3 series features six dense models and two Mixture-of-Experts (MoE) models, offering developers flexibility to build next-generation applications across mobile devices, smart glasses ..."
+    },
+    {
+      "title": "Intel(R) SSD Pro 2500 Series (180GB, 240GB, 360GB, M.2 80mm SATA 6Gb/s ...",
+      "url": "https://www.intel.com/content/www/us/en/content-details/805183/intel-r-ssd-pro-2500-series-180gb-240gb-360gb-m-2-80mm-sata-6gb-s-16nm-mlc-generic-100-pack-intel-r-ssd-pro-2500-series-180gb-240gb-360gb-m-2-80mm-sata-6gb-s-16nm-mlc-generic-single-pack-pcn-113909-00-product-design-firmware-update.html",
+      "snippet": "Flash Memory Products, Product Design, Customers may want to perform re-qualification, re-test, re-certification or standard validation testing for this change; see sample detail in PCN where applicable."
+    }
+  ]
+}

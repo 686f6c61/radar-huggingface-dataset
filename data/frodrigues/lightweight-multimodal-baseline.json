@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "frodrigues/lightweight-multimodal-baseline",
+  "slug": "frodrigues-lightweight-multimodal-baseline",
+  "author": "frodrigues",
+  "url": "https://huggingface.co/frodrigues/lightweight-multimodal-baseline",
+  "created_at": "2026-10-12T18:03:30.000Z",
+  "updated_at": "2026-10-12T18:03:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    },
+    {
+      "title": "An AI-Driven Multimodal Framework for Rapid and Early Stroke ...",
+      "url": "https://arxiv.org/html/2601.11896v1",
+      "snippet": "17.01.2026 ... Experiments conducted on a self-collected dataset of 222 videos from 37 subjects demonstrate that the proposed multimodal model consistently ..."
+    },
+    {
+      "title": "Quora - Un lieu pour partager le savoir et mieux comprendre le monde",
+      "url": "https://fr.quora.com/",
+      "snippet": "Quora est un endroit conçu pour apprendre et partager ses connaissances. Il s'agit d'une plateforme sur laquelle on peut poser ses …"
+    },
+    {
+      "title": "Quora - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Quora",
+      "snippet": "Quora was co-founded by former Facebook employees Adam D'Angelo and Charlie Cheever in June 2009. [3] In an answer to the …"
+    },
+    {
+      "title": "About - Quora",
+      "url": "https://www.quora.com/about",
+      "snippet": "Try refreshing the page, or try again later. Refresh Page"
+    }
+  ]
+}

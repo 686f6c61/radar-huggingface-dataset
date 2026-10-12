@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gggff123/Smol-GPT",
+  "slug": "gggff123-smol-gpt",
+  "author": "gggff123",
+  "url": "https://huggingface.co/gggff123/Smol-GPT",
+  "created_at": "2026-10-12T02:54:35.000Z",
+  "updated_at": "2026-10-12T03:36:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 134515584,
+  "parameters_human": "134.5M",
+  "storage_bytes": 1055242752,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Consulter mon compte en ligne - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/conseils/magazine/tout-un-mag/vos-comptes-en-ligne-a-vous-la-liberte.html",
+      "snippet": "Sep 17, 2024 · Cet article vous permettra de vous connecter à votre compte Crédit Agricole et vous informera sur les avantages d’un …"
+    },
+    {
+      "title": "Comptes, cartes et services du quotidien - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/compte.html",
+      "snippet": "Veuillez cliquer sur \"Mon espace\" ou sur le \"Cadenas\" situé en haut à droite de votre écran. Saisissez votre identifiant à 11 chiffres et …"
+    },
+    {
+      "title": "Shopno AI — The Sovereign Cybernetic AI Operating System v2.3.0 ...",
+      "url": "https://surveymentor.org/",
+      "snippet": "Shopno community/gggff123/gpt-5-nano FREE. POLLINATIONS • FREE NODE ... Vision & Problem Space Beginner's Mental Model System Architecture Guiding Shopno AI ..."
+    },
+    {
+      "title": "Crédit Agricole d'Ile de France Banque & Assurances - Particulier",
+      "url": "https://www.credit-agricole.fr/ca-paris/particulier.html",
+      "snippet": "Sep 1, 2026 · Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, …"
+    },
+    {
+      "title": "Crédit Agricole Banque & Assurances",
+      "url": "https://www.credit-agricole.fr/",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    }
+  ]
+}

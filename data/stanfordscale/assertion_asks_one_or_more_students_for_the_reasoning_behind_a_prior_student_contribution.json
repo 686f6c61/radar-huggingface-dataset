@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_asks_one_or_more_students_for_the_reasoning_behind_a_prior_student_contribution",
+  "slug": "stanfordscale-assertion_asks_one_or_more_students_for_the_reasoning_behind_a_prior_student_contribution",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_the_reasoning_behind_a_prior_student_contribution",
+  "created_at": "2026-10-12T17:56:27.000Z",
+  "updated_at": "2026-10-12T17:56:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.5455
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.5714
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.5217
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8778
+    }
+  ],
+  "sources": [
+    {
+      "title": "BOOHOOMAN | Vêtements homme | Acheter la mode en ligne",
+      "url": "https://www.boohooman.com/fr/",
+      "snippet": "Découvrez la mode femme et homme de BOOHOOMAN, avec des centaines de nouveautés chaque jour."
+    },
+    {
+      "title": "BOOHOOMAN | Mens Clothes | Shop Online Fashion",
+      "url": "https://www.boohooman.com/",
+      "snippet": "By submitting your details, you agree to receive marketing communications from BOOHOOMAN & our family of brands by email. You …"
+    },
+    {
+      "title": "boohooMAN FR | Vêtements homme | Mode masculine en ligne",
+      "url": "https://fr.boohoo.com/pages/homme",
+      "snippet": "Vêtements pour hommes Bienvenue dans votre destination mode incontournable pour homme. Découvrez la collection homme de …"
+    },
+    {
+      "title": "boohoo | Womens and Mens Clothes | Shop Online Fashion",
+      "url": "https://www.boohoo.com/?msockid=3bf220c5155160a00501373514876128",
+      "snippet": "Shop boohoo's range of women's and men's clothing for the latest fashion pieces you need to be adding-to-basket, with 100s of new …"
+    },
+    {
+      "title": "Boohooman | boohoo UK",
+      "url": "https://www.boohoo.com/categories/brands-boohooman?msockid=3bf220c5155160a00501373514876128",
+      "snippet": "Discover BoohooMAN's collection only on boohoo.com & get the most trending items on site now!"
+    }
+  ]
+}

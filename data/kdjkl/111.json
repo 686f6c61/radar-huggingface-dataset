@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kdjkl/111",
+  "slug": "kdjkl-111",
+  "author": "kdjkl",
+  "url": "https://huggingface.co/kdjkl/111",
+  "created_at": "2026-10-12T03:02:04.000Z",
+  "updated_at": "2026-10-12T03:02:04.000Z",
+  "license": "bigscience-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigscience-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best way to sharpen Stihl micro chain, arborist chainsaw.",
+      "url": "https://www.youtube.com/watch?v=sXb6tB9UOwE",
+      "snippet": "Feb 12, 2022 · Best way to sharpen Stihl micro chain, arborist chainsaw. G’day. I found that pulling on the micro chain it lifted the …Read more"
+    },
+    {
+      "title": "Sharpening STIHL Saw Chains",
+      "url": "https://www.stihl.com/content/dam/stihl/vu/ic/en/download-files/pdf-files/sharpening-brochures/EN-Sharpening-STIHL-Saw-Chains.pdf",
+      "snippet": "The cutting attachment consists of the saw chain, guide bar and chain sprocket. This handbook is intended as a guide to selecting …"
+    },
+    {
+      "title": "How to Sharpen Chainsaw - STIHL USA",
+      "url": "https://www.stihlusa.com/en/guides-projects/maintenance-safety/how-to-sharpen-chainsaw",
+      "snippet": "Learn how to safely sharpen your STIHL chainsaw with these helpful chainsaw sharpening tips and tricks, and ensure the best …"
+    },
+    {
+      "title": "How to Sharpen a Stihl Chainsaw Chain: Complete Maintenance Guide",
+      "url": "https://thetreetrove.com/how-to-sharpen-a-stihl-chainsaw-chain/",
+      "snippet": "Learn the art of sharpening your Stihl chainsaw chain with our comprehensive guide! Discover expert tips on maintenance, tool …"
+    },
+    {
+      "title": "Ways To SHARPEN 1/4 Pitch CHAINSAW CHAIN - YouTube",
+      "url": "https://www.youtube.com/watch?v=8-L85-C2TBk",
+      "snippet": "Jan 7, 2024 · Showing different ways you can Sharpen 1/4\" pitch chainsaw chain or the stihl micro chain. We use a regular round file, …"
+    }
+  ]
+}

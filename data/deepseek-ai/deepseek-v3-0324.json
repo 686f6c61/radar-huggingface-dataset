@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-V3-0324",
+  "slug": "deepseek-ai-deepseek-v3-0324",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324",
+  "created_at": "2025-03-24T09:28:22.000Z",
+  "updated_at": "2025-03-27T04:01:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v3",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2412.19437",
+    "license:mit",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 3201,
+  "downloads_30d": 1348236,
+  "trending_score": 17,
+  "parameters": 684531386000,
+  "parameters_human": "684.53B",
+  "storage_bytes": 688592341287,
+  "storage_human": "688.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "Build with DeepSeek API Boost enter Build new products, experiences, and workflows with the DeepSeek V4 series"
+    },
+    {
+      "title": "DeepSeek Platform",
+      "url": "https://platform.deepseek.com/",
+      "snippet": "Join DeepSeek API platform to access our AI models, developer resources and API documentation."
+    },
+    {
+      "title": "DeepSeek",
+      "url": "https://cdn.deepseek.com/",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    },
+    {
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/sign_in",
+      "snippet": "Chat with DeepSeek AI – your intelligent assistant for coding, content creation, file reading, and more."
+    }
+  ]
+}

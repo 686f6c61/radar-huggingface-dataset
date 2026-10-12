@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "google/vit-base-patch16-224",
+  "slug": "google-vit-base-patch16-224",
+  "author": "google",
+  "url": "https://huggingface.co/google/vit-base-patch16-224",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2023-09-05T15:27:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "vision",
+    "dataset:imagenet-1k",
+    "dataset:imagenet-21k",
+    "arxiv:2010.11929",
+    "arxiv:2006.03677",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1022,
+  "downloads_30d": 12572838,
+  "trending_score": 0,
+  "parameters": 86567656,
+  "parameters_human": "86.6M",
+  "storage_bytes": 2425307332,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Inside a Vision Transformer (ViT): How Image is Classified Step by ...",
+      "url": "https://blog.gopenai.com/inside-a-vision-transformer-vit-how-image-is-classified-step-by-step-0af45d5acbca",
+      "snippet": "03.07.2025 ... For instance, the “google/vit-base-patch16–224” model resizes all input images to 224 × 224 pixels. Once processed, the image is ready to be ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/intl/fr_fr",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "superpdf/LightOnOCR-3-0.8B-ONNX-web",
+  "slug": "superpdf-lightonocr-3-0-8b-onnx-web",
+  "author": "superpdf",
+  "url": "https://huggingface.co/superpdf/LightOnOCR-3-0.8B-ONNX-web",
+  "created_at": "2026-10-12T02:45:11.000Z",
+  "updated_at": "2026-10-12T02:45:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "webgpu",
+    "document-understanding",
+    "conversational",
+    "base_model:lightonai/LightOnOCR-3-0.8B",
+    "base_model:quantized:lightonai/LightOnOCR-3-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 871343129,
+  "storage_human": "871 MB",
+  "base_model": "lightonai/LightOnOCR-3-0.8B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "superpdf/LightOnOCR-3-0.8B-ONNX-web · Hugging Face",
+      "url": "https://huggingface.co/superpdf/LightOnOCR-3-0.8B-ONNX-web",
+      "snippet": "LightOnOCR-3-.8B-ONNX-web lightonai/LightOnOCR-3-.8B by LightOn, converted to ONNX for superPDF, where it powers high-accuracy reading in the browser (WebGPU, superpdf.ai) and the command-line tool (default model). It runs with Transformers.js on ONNX Runtime (WebGPU), in the browser and in Node."
+    },
+    {
+      "title": "superpdf (superPDF) - Hugging Face",
+      "url": "https://huggingface.co/superpdf",
+      "snippet": "On-device PDF parsing and OCR, document AI, PDF tools that run in the browser"
+    },
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "No more pipelines, a single model is all you need to build highly performant workflows for search, extraction or RAG applications. The model is designed for developers and engineering teams building applications on top of complex business, technical and scientific documents."
+    },
+    {
+      "title": "GitHub - lightonai/LightOnOCR: Turn document pixels into structured ...",
+      "url": "https://github.com/lightonai/LightOnOCR",
+      "snippet": "A minimal client, CLI and viewer for the LightOnOCR models (versions 1, 2 and 3) served with vLLM, plus the code to reproduce our benchmarks (benchmarks/). How LightOnOCR-3 was built: the blog post."
+    },
+    {
+      "title": "PDF LightOn releases LightOnOCR-3, a world-leading model family for ...",
+      "url": "https://www.lighton.ai/investors/documents/2026-10-08-lighton-releases-lightonocr-3-a-world-leading-model-family-for-docume.pdf",
+      "snippet": "LightOn releases LightOnOCR-3, a world-leading model family for document intelligence LightOn introduces LightOnOCR-3, a family of AI models that delivers world-leading benchmark results, ahead of competing US and Chinese models, with state-of-the-art performance on French-language documents and handwriting. Building on LightOnOCR-2, it goes beyond text recognition to describe images, extract ..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "trysem/koyal-ml-120m-1.0-ONNX",
+  "slug": "trysem-koyal-ml-120m-1-0-onnx",
+  "author": "trysem",
+  "url": "https://huggingface.co/trysem/koyal-ml-120m-1.0-ONNX",
+  "created_at": "2026-10-12T03:02:30.000Z",
+  "updated_at": "2026-10-12T04:53:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ml"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "ml",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997773094,
+  "storage_human": "998 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.fr/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Découvrez comment Google Trends est utilisé dans le monde entier par les rédactions, les associations caritatives et bien d'autres"
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.fr/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views."
+    }
+  ]
+}

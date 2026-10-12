@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "jasonjimnz/tyness-boe-1.2b-pre-alpha-3-instruct",
+  "slug": "jasonjimnz-tyness-boe-1-2b-pre-alpha-3-instruct",
+  "author": "jasonjimnz",
+  "url": "https://huggingface.co/jasonjimnz/tyness-boe-1.2b-pre-alpha-3-instruct",
+  "created_at": "2026-10-12T02:34:18.000Z",
+  "updated_at": "2026-10-12T02:55:06.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "peft",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "boe",
+    "spanish-law",
+    "legal",
+    "lfm2",
+    "lora",
+    "qlora",
+    "sft",
+    "rag",
+    "grounded-generation",
+    "metadata-block",
+    "adversarial-correction",
+    "tyness-train",
+    "pre-alpha",
+    "question-answering",
+    "es",
+    "dataset:boe-focused-adv-v1",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 6678970603,
+  "storage_human": "6.7 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jasonjimnz/tyness-boe-1.2b-pre-alpha · Hugging Face",
+      "url": "https://huggingface.co/jasonjimnz/tyness-boe-1.2b-pre-alpha",
+      "snippet": "This is a pre-alpha release: it proves the full pipeline (dataset → QLoRA SFT on a GTX 1060 6GB → merge → GGUF → evaluation) and documents honest findings, including negative ones."
+    },
+    {
+      "title": "jasonjimnz/tyness-boe-1.2b-pre-alpha-2 · Hugging Face",
+      "url": "https://huggingface.co/jasonjimnz/tyness-boe-1.2b-pre-alpha-2",
+      "snippet": "Second pre-alpha from Tyness Train, an agent-guided fine-tuning harness for small LLMs on low-VRAM GPUs. This model is RAG-style grounded: every prompt carries excerpts of the relevant norm, and the model is trained to answer only from that context."
+    },
+    {
+      "title": "Tyness Boe 1.2b Pre Alpha Instruct - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jasonjimnz/tyness-boe-1.2b-pre-alpha-instruct",
+      "snippet": "Registry entry for model Tyness Boe 1.2b Pre Alpha Instruct; source metadata pending."
+    },
+    {
+      "title": "Tyness Boe 1.2b Pre Alpha 2 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/jasonjimnz/tyness-boe-1.2b-pre-alpha-2",
+      "snippet": "Registry entry for model Tyness Boe 1.2b Pre Alpha 2; source metadata pending."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Start watching videos to help us build a feed of videos you&#x27;ll love. Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

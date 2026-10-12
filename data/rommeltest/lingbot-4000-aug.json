@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rommeltest/lingbot-4000-aug",
+  "slug": "rommeltest-lingbot-4000-aug",
+  "author": "rommeltest",
+  "url": "https://huggingface.co/rommeltest/lingbot-4000-aug",
+  "created_at": "2026-10-12T02:57:29.000Z",
+  "updated_at": "2026-10-12T03:04:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lingbotvla",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 6375907511,
+  "parameters_human": "6.38B",
+  "storage_bytes": 25515312426,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LingBot-World | Open Source AI World Model - Free Deploy",
+      "url": "https://www.lingbot-world.org/",
+      "snippet": "LingBot-World AI World Model LingBot-World is the first open-source real-time interactive world model that rivals Google Genie 3 in quality. Experience zero-code world generation from a single image."
+    },
+    {
+      "title": "AI Leaderboard 2026: Rankings for 300+ Top AI Models by Intelligence ...",
+      "url": "https://llm-stats.com/",
+      "snippet": "The AI Leaderboard — independent rankings of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "rommeltest (rommel) - Hugging Face",
+      "url": "https://huggingface.co/rommeltest",
+      "snippet": "Sort: Recently updated rommeltest/onereason-v2 Text Generation • 0.8B•Updated 26 days ago• 371"
+    },
+    {
+      "title": "Robbyant · GitHub",
+      "url": "https://github.com/RobbyAnt",
+      "snippet": "Robbyant is a company under Ant Group, dedicated to building the foundational platform for Embodied AI, bridging the gap between digital intelligence and the physical world."
+    },
+    {
+      "title": "rommeltest/lingbot-2000steps · Hugging Face",
+      "url": "https://huggingface.co/rommeltest/lingbot-2000steps",
+      "snippet": "rommeltest / lingbot-2000steps Like 0 Robotics Safetensors lingbotvla vision-language-action lingbot-vla Model card FilesFiles and versions xet Community Copy to bucket new LingBot-VLA 2.0 — step 2000 Files Prepare the directory layout for official inference"
+    }
+  ]
+}

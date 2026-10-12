@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "superpdf/LightOnOCR-3-4B-ONNX",
+  "slug": "superpdf-lightonocr-3-4b-onnx",
+  "author": "superpdf",
+  "url": "https://huggingface.co/superpdf/LightOnOCR-3-4B-ONNX",
+  "created_at": "2026-10-12T02:45:19.000Z",
+  "updated_at": "2026-10-12T02:46:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3_5",
+    "image-text-to-text",
+    "ocr",
+    "webgpu",
+    "document-understanding",
+    "conversational",
+    "base_model:lightonai/LightOnOCR-3-4B",
+    "base_model:quantized:lightonai/LightOnOCR-3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3797054257,
+  "storage_human": "3.8 GB",
+  "base_model": "lightonai/LightOnOCR-3-4B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "superpdf (superPDF) - Hugging Face",
+      "url": "https://huggingface.co/superpdf",
+      "snippet": "Sort: Recently updated superpdf/LightOnOCR-3-4B-ONNX Image-Text-to-Text •Updated 3 minutes ago"
+    },
+    {
+      "title": "lightonai/LightOnOCR-3-4B · Hugging Face",
+      "url": "https://huggingface.co/lightonai/LightOnOCR-3-4B",
+      "snippet": "Best OCR model. LightOnOCR-3-4B is the largest and most accurate model of the LightOnOCR-3 family, LightOn&#x27;s new generation of lightweight end-to-end OCR models with layout and visual understanding. We recommend it for most OCR tasks."
+    },
+    {
+      "title": "LightOnOCR-3 — LightOn",
+      "url": "https://www.lighton.ai/research/lightonocr-3",
+      "snippet": "LightOnOCR-3 is our new family of end-to-end OCR models: text, layout, image and chart understanding from a single compact model."
+    },
+    {
+      "title": "Run LightOnOCR-3-4B API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/lightonai/LightOnOCR-3-4B",
+      "snippet": "LightOnOCR-3-4B Overview LightOnOCR-3-4B is the largest and most accurate model in LightOn&#x27;s new generation of lightweight, end-to-end OCR models. This 4.5 billion parameter model, based on the Qwen3.5 vision-language architecture, significantly improves transcription quality and speed compared to previous generations. It integrates layout and visual understanding, providing a comprehensive ..."
+    },
+    {
+      "title": "LightOnOCR-3: Open-Weight OCR, ParseBench 75.1 (4B) | explainx.ai Blog",
+      "url": "https://www.explainx.ai/blog/lightonocr-3-parsebench-open-weight-ocr-2026",
+      "snippet": "The model card calls it \"a new family of highly performant lightweight OCR models.\" Compared with the previous generation, LightOn says the models bring \"significant improvements in speed and transcription quality\" and add visual understanding."
+    }
+  ]
+}

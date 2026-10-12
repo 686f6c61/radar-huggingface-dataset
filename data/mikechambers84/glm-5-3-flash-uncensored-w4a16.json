@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mikechambers84/GLM-5.3-Flash-Uncensored-W4A16",
+  "slug": "mikechambers84-glm-5-3-flash-uncensored-w4a16",
+  "author": "mikechambers84",
+  "url": "https://huggingface.co/mikechambers84/GLM-5.3-Flash-Uncensored-W4A16",
+  "created_at": "2026-10-12T02:52:30.000Z",
+  "updated_at": "2026-10-12T03:04:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "abliterated",
+    "glm",
+    "glm5",
+    "glm-5.3-flash",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "fp8",
+    "post-training",
+    "fine-tuning",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 191951414584,
+  "storage_human": "192.0 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fine-tuned Models for zai-org/GLM-5.3-Flash - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model%3Afinetune%3Azai-org%2FGLM-5.3-Flash",
+      "snippet": "Models · orcarouter/GLM-5.3-Flash-Uncensored-FP8 · cantina-security/apex-flash-1 · incoai/GLM-5.3-Flash-DFlash2 · Anbeeld/GLM-5.3-Flash-DFlash2-GGUF · cyberneurova/ ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=function-calling&p=95&sort=trending",
+      "snippet": "vor 5 Stunden ... Models · mikechambers84/GLM-5.3-Flash-Uncensored-W4A16 · SII-Enigma/Davinci-Tool-30B-SFT · SII-Enigma/Davinci-Tool-30B · Hikaf143/Keural-Nova-v1.2- ..."
+    }
+  ]
+}

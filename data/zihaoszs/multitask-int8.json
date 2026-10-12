@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ZIHAOSZS/multitask-int8",
+  "slug": "zihaoszs-multitask-int8",
+  "author": "ZIHAOSZS",
+  "url": "https://huggingface.co/ZIHAOSZS/multitask-int8",
+  "created_at": "2026-10-12T16:10:22.000Z",
+  "updated_at": "2026-10-12T16:10:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google translate, placeholder text in input type='text'",
+      "url": "https://stackoverflow.com/questions/20561611/google-translate-placeholder-text-in-input-type-text",
+      "snippet": "As long as Google Translate does not want to translate a placeholder attribute (and they suggest no way to ask for it), the answer is …"
+    },
+    {
+      "title": "Free API similar to google translate for python? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/57189358/free-api-similar-to-google-translate-for-python",
+      "snippet": "Jul 24, 2019 · I am looking for a free API similar to google translate that can work with my python bot. Is there any similar API …"
+    },
+    {
+      "title": "Traducir texto en otras aplicaciones - Android - Ayuda de Google …",
+      "url": "https://support.google.com/translate/answer/6350658?hl=es&co=GENIE.Platform%3DAndroid",
+      "snippet": "Con la aplicación Traductor de Google, puedes traducir texto en otras aplicaciones. Con Tocar para Traducir, puedes copiar texto de …"
+    },
+    {
+      "title": "Scaricare lingue da utilizzare offline - Google Help",
+      "url": "https://support.google.com/translate/answer/6142473?hl=it&co=GENIE.Platform%3DAndroid",
+      "snippet": "Puoi scaricare le lingue sul tuo dispositivo per tradurle anche senza connessione a Internet. Dopo avere scaricato una lingua, …"
+    },
+    {
+      "title": "php - Using google translate API with cURL - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/35013483/using-google-translate-api-with-curl",
+      "snippet": "Jan 26, 2016 · Using google translate API with cURL Ask Question Asked 10 years, 8 months ago Modified 4 years, 9 months ago"
+    }
+  ]
+}

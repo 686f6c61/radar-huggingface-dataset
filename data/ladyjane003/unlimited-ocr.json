@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Ladyjane003/Unlimited-OCR",
+  "slug": "ladyjane003-unlimited-ocr",
+  "author": "Ladyjane003",
+  "url": "https://huggingface.co/Ladyjane003/Unlimited-OCR",
+  "created_at": "2026-10-12T02:32:16.000Z",
+  "updated_at": "2026-10-12T02:32:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited-ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2606.23050",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6767737257,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - baidu/Unlimited-OCR: Unlimited OCR Works: Welcome the Era of ...",
+      "url": "https://github.com/baidu/Unlimited-OCR",
+      "snippet": "Unlimited OCR Works Welcome the Era of One-shot Long-horizon Parsing. Release [2026/07/21] 🤝 Thanks to the ms-swift community for their support, our model now supports training with ms-swift. [2026/07/03] 🤝 Thanks to the Baidu Cloud team for their support. Our model is now available on Baidu Cloud."
+    },
+    {
+      "title": "Unlimited-OCR - AI Model Library | Build on Vast.ai",
+      "url": "https://vast.ai/model/unlimited-ocr",
+      "snippet": "Unlimited-OCR is a multimodal OCR and document-parsing model from Baidu, built for one-shot long-horizon document understanding. It reads images and pages and produces structured text output, extending the ideas behind DeepSeek-OCR toward parsing long documents in a single pass."
+    },
+    {
+      "title": "Unlimited-OCR Review: 3B Model Processes 100-Page PDF in One Pass, 93% ...",
+      "url": "https://dashen-tech.com/en/ai-tech/unlimited-ocr-guide/",
+      "snippet": "In-depth review of Baidu&#x27;s open-source Unlimited-OCR: a 3B-parameter local OCR model with 32K context window that reads 100-page PDFs in one pass at 93% accuracy. R-SWA mechanism explained, local deployment guide, comparison with Tesseract/PaddleOCR/cloud OCR."
+    },
+    {
+      "title": "Baidu Unlimited-OCR: Free Open-Source OCR (Complete Guide)",
+      "url": "https://www.aimadetools.com/blog/baidu-unlimited-ocr-complete-guide/",
+      "snippet": "Baidu Unlimited-OCR is a 3B MIT-licensed model that processes multi-page PDFs in one pass. Free, private, runs locally on your hardware."
+    },
+    {
+      "title": "Unlimited Ocr: A Practical Look (2026) - aitermbase.com",
+      "url": "https://aitermbase.com/unlimited-ocr/",
+      "snippet": "Unlimited-OCR is an open-source optical character recognition model developed by Baidu that uses a causal language modeling architecture to extract text from images with theoretically unlimited length processing capabilities. The model is hosted on Hugging Face and has gained significant popularity in the computer vision and document processing communities for its flexible approach to text ..."
+    }
+  ]
+}

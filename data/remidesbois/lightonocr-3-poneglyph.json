@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "Remidesbois/LightOnOCR-3-Poneglyph",
+  "slug": "remidesbois-lightonocr-3-poneglyph",
+  "author": "Remidesbois",
+  "url": "https://huggingface.co/Remidesbois/LightOnOCR-3-Poneglyph",
+  "created_at": "2026-10-12T16:24:56.000Z",
+  "updated_at": "2026-10-12T16:33:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "manga",
+    "grounding",
+    "image-text-to-text",
+    "conversational",
+    "fr",
+    "base_model:lightonai/LightOnOCR-3-0.8B",
+    "base_model:finetune:lightonai/LightOnOCR-3-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 1726020018,
+  "storage_human": "1.7 GB",
+  "base_model": "lightonai/LightOnOCR-3-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

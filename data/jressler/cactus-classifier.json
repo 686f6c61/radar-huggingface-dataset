@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jressler/cactus-classifier",
+  "slug": "jressler-cactus-classifier",
+  "author": "jressler",
+  "url": "https://huggingface.co/jressler/cactus-classifier",
+  "created_at": "2026-10-12T16:08:59.000Z",
+  "updated_at": "2026-10-12T16:10:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "computer-vision",
+    "convnext",
+    "cactus",
+    "trichocereus",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197939219,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence-driven design of fuel mixtures - Nature",
+      "url": "https://www.nature.com/articles/s42004-022-00722-3",
+      "snippet": "16.09.2022 ... Kessler, T. et al. A comparison of computational models for predicting yield sooting index. Proc. Combust. Inst. 38, 1385–1393 (2021)."
+    },
+    {
+      "title": "Deep learning as a tool for ecology and evolution - Borowiec - 2022",
+      "url": "https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.13901",
+      "snippet": "30.05.2022 ... Such networks can thus be used to construct classifiers, which are models distinguishing among discrete categories, as well as regression models ..."
+    },
+    {
+      "title": "Deep learning as a tool for ecology and evolution - AntWiki",
+      "url": "https://antwiki.org/w/images/3/34/Borowiec,_M.L._et_al._(2022)_Deep_learning_as_a_tool_for_ecology_and_evolution_(10.1111@2041-210X.13901).pdf",
+      "snippet": "30.04.2022 ... The network predicts certain labels if it is a classifier, or continuous values if it is a regression model. ... mented cactus system."
+    },
+    {
+      "title": "Kontakt - Medizinische Fakultät Münster",
+      "url": "https://www.medizin.uni-muenster.de/fakultaet/fakultaet/personen-preise/details.html?uid=226&L=0",
+      "snippet": "... model to study peroxisomal translocation. It contains a C-terminal ... An AI-assisted cryo-EM pipeline for structural studies of cellular extracts."
+    },
+    {
+      "title": "Predicting symptom worsening in remitted depression on ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0165032725011450",
+      "snippet": "These final features were then used to predict the K6 class in a four-class classification using the XGBoost model (Chen and Guestrin, 2016) (number of classes ..."
+    }
+  ]
+}

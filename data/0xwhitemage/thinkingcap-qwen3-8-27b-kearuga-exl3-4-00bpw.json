@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "0xWhiteMage/ThinkingCap-Qwen3.8-27B-Kearuga-EXL3-4.00bpw",
+  "slug": "0xwhitemage-thinkingcap-qwen3-8-27b-kearuga-exl3-4-00bpw",
+  "author": "0xWhiteMage",
+  "url": "https://huggingface.co/0xWhiteMage/ThinkingCap-Qwen3.8-27B-Kearuga-EXL3-4.00bpw",
+  "created_at": "2026-10-12T16:11:31.000Z",
+  "updated_at": "2026-10-12T16:11:52.000Z",
+  "license": "polyform-small-business-1.0.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "thinkingcap",
+    "qwen3.8",
+    "exl3",
+    "quantized",
+    "kearuga",
+    "tensorfold",
+    "dflash2",
+    "dgx-spark",
+    "gb10",
+    "sm121",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "base_model:quantized:bottlecapai/ThinkingCap-Qwen3.8-27B",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8174802304,
+  "parameters_human": "8.17B",
+  "storage_bytes": 16364417981,
+  "storage_human": "16.4 GB",
+  "base_model": "bottlecapai/ThinkingCap-Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Step Sister And Brother Stock Videos – 477 HD & 4K Footage Clips",
+      "url": "https://stock.adobe.com/search/video?k=step+sister+and+brother&msockid=2b7d860d831e6ae63faa91fd820f6bd7",
+      "snippet": "477 results for step sister and brother in videos 00:06"
+    },
+    {
+      "title": "Bangbros Network",
+      "url": "https://www.bangbrosnetwork.com/videos/step-siblings-caught_3406603.htm",
+      "snippet": ""
+    },
+    {
+      "title": "Stepsister and Stepbrother at home | #stepsister #stepbrother",
+      "url": "https://m.youtube.com/watch?v=tHIFh-0cTz8",
+      "snippet": "Jul 28, 2023 · Stepsister and Stepbrother at home discussing stuff together."
+    },
+    {
+      "title": "Brother Sister | Videos & Movies on Vimeo",
+      "url": "https://vimeo.com/88851627?msockid=2b7d860d831e6ae63faa91fd820f6bd7",
+      "snippet": "A surrealist take on a young woman's decision to run away from from her family's secluded ranch, that she hasn't left in over a …"
+    },
+    {
+      "title": "Step Sister Stock Videos – 1,283 HD & 4K Footage Clips",
+      "url": "https://stock.adobe.com/search/video?k=step+sister&msockid=2b7d860d831e6ae63faa91fd820f6bd7",
+      "snippet": "Adobe Checkout Create without limits — unlimited downloads, plus powerful AI editing"
+    }
+  ]
+}

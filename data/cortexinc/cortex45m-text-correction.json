@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cortexinc/cortex45m-text-correction",
+  "slug": "cortexinc-cortex45m-text-correction",
+  "author": "cortexinc",
+  "url": "https://huggingface.co/cortexinc/cortex45m-text-correction",
+  "created_at": "2026-10-12T18:02:09.000Z",
+  "updated_at": "2026-10-12T18:30:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "tensorflow",
+  "languages": [],
+  "tags": [
+    "tensorflow",
+    "cortex45m",
+    "turkish",
+    "text-correction",
+    "natural-language-processing",
+    "nlp",
+    "tuncerlab",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117816856,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACE Parking - Parking lowcost pour aéroport de Charleroi",
+      "url": "https://aceparking.be/",
+      "snippet": "Réservez votre parking low-cost pour l'aéroport de Charleroi ! Après réservation, nous vous conduisons à l' aéroport de Charleroi …"
+    },
+    {
+      "title": "Réservation en ligne :: ACE Parking",
+      "url": "https://aceparking.be/reservation.php",
+      "snippet": "Notre outil de réservation en ligne vous permet de réserver votre place de parking de n'importe où, à n'importe quel moment."
+    },
+    {
+      "title": "ACE Parking Charleroi » Avis, tarifs et photos",
+      "url": "https://fr.parkos.be/parking-aeroport-charleroi/ace-parkingg.html",
+      "snippet": "Le service de navette vous emmène du parking à l'aéroport de Charleroi en moins de cinq minutes. Le chauffeur parle le français, …"
+    },
+    {
+      "title": "Parking ACE Brussels South Airport Charleroi - mobypark.com",
+      "url": "https://www.mobypark.com/en/parking/4988/parking-ace-brussels-south-airport-charleroi-parking-charleroi-belgium",
+      "snippet": "ACE Parking is an outdoor parking facility located on Avenue des États-Unis in Gosselies, offering direct access to Brussels South …"
+    },
+    {
+      "title": "Parking ACE Aéroport de Bruxelles Sud Charleroi",
+      "url": "https://www.mobypark.com/fr/parking/4988/parking-ace-aeroport-de-bruxelles-sud-charleroi-parking-charleroi-belgique",
+      "snippet": "ACE Parking est un parking extérieur situé sur l'Avenue des États-Unis à Gosselies, offrant un accès direct à l'aéroport de Bruxelles …"
+    }
+  ]
+}

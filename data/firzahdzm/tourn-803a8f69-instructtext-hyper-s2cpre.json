@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "firzahdzm/tourn-803a8f69-instructtext-hyper-s2cpre",
+  "slug": "firzahdzm-tourn-803a8f69-instructtext-hyper-s2cpre",
+  "author": "firzahdzm",
+  "url": "https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-s2cpre",
+  "created_at": "2026-10-12T02:29:52.000Z",
+  "updated_at": "2026-10-12T02:30:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lfm2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "firzahdzm/tourn-803a8f69-instructtext-hyper-g2gcpre · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-g2gcpre",
+      "snippet": "firzahdzm / tourn-803a8f69-instructtext-hyper-g2gcpre Like 0 Safetensors granite Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋 ..."
+    },
+    {
+      "title": "firzahdzm/tourn-803a8f69-instructtext-hyper-g2gc · Hugging Face",
+      "url": "https://huggingface.co/firzahdzm/tourn-803a8f69-instructtext-hyper-g2gc",
+      "snippet": "firzahdzm / tourn-803a8f69-instructtext-hyper-g2gc Like 0 Safetensors granite Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month - Safetensors Model size 3B params Tensor type BF16 · Chat template Files info Inference Providers NEW This model isn&#x27;t deployed by any Inference Provider.🙋Ask ..."
+    },
+    {
+      "title": "tourn-803a8f69-instructtext-super-p1v - FriendliAI",
+      "url": "https://friendli.ai/models/firzahdzm/tourn-803a8f69-instructtext-super-p1v",
+      "snippet": "Deploy tourn-803a8f69-instructtext-super-p1v with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Hyper3D Rodin - Best AI 3D Model Generator",
+      "url": "https://hyper3d.ai/",
+      "snippet": "Meet Hyper3D, the world&#x27;s highest-quality, most controllable AI 3D model generator. Turn text prompts or images into detailed 3D assets in seconds — no 3D experience required."
+    },
+    {
+      "title": "tourn-87c51c39-instructtext-super-s2kpre by Firza Hadzami",
+      "url": "https://savrn.com/models/tourn-87c51c39-instructtext-super-s2kpre",
+      "snippet": "tourn-87c51c39-instructtext-super-s2kpre from Firza Hadzami, 494M parameters: license, access terms, disclosed training data, reported evaluations and the…"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cisco1963/llmplasticity-zh_en_linear_8-d0.01-c0.999-r0.5-s42",
+  "slug": "cisco1963-llmplasticity-zh_en_linear_8-d0-01-c0-999-r0-5-s42",
+  "author": "Cisco1963",
+  "url": "https://huggingface.co/Cisco1963/llmplasticity-zh_en_linear_8-d0.01-c0.999-r0.5-s42",
+  "created_at": "2026-10-12T02:27:15.000Z",
+  "updated_at": "2026-10-12T02:30:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 122706432,
+  "parameters_human": "122.7M",
+  "storage_bytes": 10310175705,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Up Yours! Collective presents God Save the Queens – Up Yours!",
+      "url": "https://upyourscollective.com/exhibition/",
+      "snippet": "‘God Save The Queens’ is one of the museum’s first external exhibitions, following Museum Of Youth Culture’s inaugural display …"
+    },
+    {
+      "title": "God Save the Queens! | British Library",
+      "url": "https://events.bl.uk/events/god-save-the-queens",
+      "snippet": "GOD SAVE THE QUEENS is a multi-venue London festival that presents artwork, photography, fashion and personal archival …"
+    },
+    {
+      "title": "God Save the Queens - Museum of Youth Culture",
+      "url": "https://www.museumofyouthculture.com/god-save-the-queens/",
+      "snippet": "God Save the Queens is a landmark exhibition celebrating the women who changed punk, curated by the Up Yours! Collective."
+    },
+    {
+      "title": "God Save The Queens - 50 Years of She-Punk | Electric Brixton",
+      "url": "https://www.electricbrixton.uk.com/events/god-save-the-queens-50-years-of-she-punk/",
+      "snippet": "Collective presents God Save The Queens, a new London festival dedicated to the past, present, and future of female punk."
+    },
+    {
+      "title": "Inaugural God Save The Queens festival opens in London this autumn",
+      "url": "https://www.classicpopmag.com/events/inaugural-god-save-the-queens-festival-opens-in-london-this-autumn/",
+      "snippet": "Aug 5, 2026 · Music & Art Alongside the exhibition and live event, Up Yours! God Save The Queens will feature a programme of …"
+    }
+  ]
+}

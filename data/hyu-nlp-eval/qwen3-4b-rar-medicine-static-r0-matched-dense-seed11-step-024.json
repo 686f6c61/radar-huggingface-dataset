@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-024",
+  "slug": "hyu-nlp-eval-qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-024",
+  "author": "HYU-NLP-EVAL",
+  "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-024",
+  "created_at": "2026-10-12T02:57:47.000Z",
+  "updated_at": "2026-10-12T03:10:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702307609,
+  "storage_human": "25.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step ...",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-000",
+      "snippet": "Run: phase1-static-r0-medicine-qwen3-4b-matched-dense-20260928-seed11. The root contains a BF16 model for inference. original_checkpoint/ contains the original veRL checkpoint files (model parameters only)."
+    },
+    {
+      "title": "qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003",
+      "url": "https://huggingface.co/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-003",
+      "snippet": "Run: phase1-static-r0-medicine-qwen3-4b-matched-dense-20260928-seed11. The root contains a BF16 model for inference. original_checkpoint/ contains the original veRL checkpoint files (model parameters only)."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-016",
+      "snippet": "This model is explicitly designated for research use only. It is suitable for researchers exploring the specific training methodologies (RaR-Medicine static R0 matched dense) or for evaluating the performance of Qwen3-based models in a research context."
+    },
+    {
+      "title": "Qwen3 4B Rar Medicine Static R0 Matched Dense Seed11 Step 008 by HYU ...",
+      "url": "https://llm-explorer.com/model/HYU-NLP-EVAL%2Fqwen3-4b-rar-medicine-static-r0-matched-dense-seed11-step-008,cMGLnuq6Ni0ObvQjQQgbT",
+      "snippet": "Qwen3 4B Rar Medicine Static R0 Matched Dense Seed11 Step 008 is an open-source 4b LLM by HYU-NLP-EVAL. VRAM 8.1GB, 256K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-021",
+      "url": "https://featherless.ai/models/HYU-NLP-EVAL/qwen3-4b-rar-medicine-static-r0-matched-seed11-step-021",
+      "snippet": "Key Characteristics Architecture: Based on the Qwen3-4B-Instruct model. Training Method: Utilizes the GRPO method with a static-rubric approach. Domain Specificity: Fine-tuned exclusively on the RaR-Medicine dataset for medical contexts. Intermediate Checkpoint: This is a research checkpoint, not a final or clinically validated model. Inference: Provided as a BF16 Transformers export for ..."
+    }
+  ]
+}

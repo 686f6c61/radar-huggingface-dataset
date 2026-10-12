@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "anovoac/cs329x-hw1-dpo-tinyllama",
+  "slug": "anovoac-cs329x-hw1-dpo-tinyllama",
+  "author": "anovoac",
+  "url": "https://huggingface.co/anovoac/cs329x-hw1-dpo-tinyllama",
+  "created_at": "2026-10-12T02:22:50.000Z",
+  "updated_at": "2026-10-12T02:22:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5022460,
+  "storage_human": "5 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aranguiz/dpo_llama_cs329x · Hugging Face",
+      "url": "https://huggingface.co/aranguiz/dpo_llama_cs329x",
+      "snippet": "Model Card for Model ID Model Details Model Description This is the model card of a 🤗 transformers model that has been pushed on the Hub. This model card has been automatically generated. Developed by: [More Information Needed] Funded by [optional]: [More Information Needed] Shared by [optional]: [More Information Needed] Model type: [More Information Needed] Language (s) (NLP): [More ..."
+    },
+    {
+      "title": "aliu917/cs329x-hw1-dpo-model · Hugging Face",
+      "url": "https://huggingface.co/aliu917/cs329x-hw1-dpo-model",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Stanford CS 329X | Human-Centered LLMs",
+      "url": "https://web.stanford.edu/class/cs329x/index.html",
+      "snippet": "Welcome! This course will provide an overview of human-centered methodologies specifically tailored for large language models (LLMs). Topics include human-centered design, alignment, preference tuning, personalization, UI and HCI integration, techniques for privacy and risk measurement, as well as applications in creativity and future of work. By focusing on human-centered approaches, students ..."
+    },
+    {
+      "title": "HKArcilla/cs329x-dpo-llama-model - Fast, Reliable, and Scalable ...",
+      "url": "https://friendli.ai/models/HKArcilla/cs329x-dpo-llama-model",
+      "snippet": "Run HKArcilla/cs329x-dpo-llama-model with fast, reliable, and scalable inference on FriendliAI. Get low-latency performance with advanced quantization (FP4, FP8, INT4, INT8), continuous batching, optimized GPU kernels, token caching, and seamless API integration."
+    },
+    {
+      "title": "Stanford CS 329X | Human-Centered LLMs",
+      "url": "https://web.stanford.edu/class/cs329x/project.html",
+      "snippet": "AI-Use Disclosure Every stage of the project (proposal, midway report, and final report) must include an AI-Use Disclosure Statement, modeled on the ICLR policy on the use of large language models."
+    }
+  ]
+}

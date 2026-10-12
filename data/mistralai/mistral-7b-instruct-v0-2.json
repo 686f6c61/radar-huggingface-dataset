@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mistralai/Mistral-7B-Instruct-v0.2",
+  "slug": "mistralai-mistral-7b-instruct-v0-2",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.2",
+  "created_at": "2023-12-11T13:18:44.000Z",
+  "updated_at": "2025-07-24T16:57:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "finetuned",
+    "mistral-common",
+    "conversational",
+    "arxiv:2310.06825",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 3258,
+  "downloads_30d": 1647272,
+  "trending_score": 17,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 29496005526,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral | n°1 en IA souveraine : modèles ouverts de pointe qui vous ...",
+      "url": "https://mistral.ai/fr/",
+      "snippet": "Nous créons les modèles. Vous les gardez. Commencez avec les modèles de pointe et spécialisés à poids ouverts de Mistral. …"
+    },
+    {
+      "title": "Mistral | #1 in Sovereign AI: Frontier Open Models You Own",
+      "url": "https://mistral.ai/",
+      "snippet": "We make the models. You keep them. Start with Mistral’s frontier and specialist open-weight models. Use them as they are, or make …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://chat.mistral.ai/login",
+      "snippet": "Login or signup below Email Forgot password?"
+    },
+    {
+      "title": "Mistral AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
+      "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    }
+  ]
+}

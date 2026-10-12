@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "autotrust/JEV-35B-NVFP4",
+  "slug": "autotrust-jev-35b-nvfp4",
+  "author": "autotrust",
+  "url": "https://huggingface.co/autotrust/JEV-35B-NVFP4",
+  "created_at": "2026-10-11T03:05:28.000Z",
+  "updated_at": "2026-10-11T03:50:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "system-one",
+    "typed-decisions",
+    "decision-model",
+    "calibrated-probabilities",
+    "jev",
+    "noul",
+    "choice",
+    "score",
+    "lora",
+    "mixture-of-experts",
+    "vllm",
+    "nvfp4",
+    "modelopt",
+    "fp4",
+    "text-classification",
+    "en",
+    "base_model:autotrust/JEV-35B",
+    "base_model:quantized:autotrust/JEV-35B",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 69,
+  "downloads_30d": 8218,
+  "trending_score": 50,
+  "parameters": 19845695344,
+  "parameters_human": "19.85B",
+  "storage_bytes": 26724438051,
+  "storage_human": "26.7 GB",
+  "base_model": "autotrust/JEV-35B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Jev Decision Index 0.3, public suite, System 1 (own scoring with the kit, not a board entry)",
+      "dataset": "Decision Index 0.3 public suite",
+      "metric": "Decision Index 0.3 public index",
+      "value": 59.18
+    }
+  ],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。Read more"
+    },
+    {
+      "title": "git - How to solve SSL certificate: self signed certificate when ...",
+      "url": "https://stackoverflow.com/questions/39004750/how-to-solve-ssl-certificate-self-signed-certificate-when-cloning-repo-from-git",
+      "snippet": "Related: How can I make git accept a self signed certificate?. (Not necessarily a duplicate. Accepted answer only works after a …"
+    },
+    {
+      "title": "Visual Studio Code - Remove blank lines from code - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/50042278/visual-studio-code-remove-blank-lines-from-code",
+      "snippet": "Jun 23, 2018 · I use Visual Studio Code as my preferred text editor and I have ran into a problem with regards to the formatting. I …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/322372522",
+      "snippet": "知乎是一个问答社区，提供高质量的内容和交流机会，帮助用户找到问题的答案。"
+    },
+    {
+      "title": "browser - How do we download a blob url video - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/42901942/how-do-we-download-a-blob-url-video",
+      "snippet": "The community reviewed whether to reopen this question 3 months ago and left it closed: Not suitable for this site This question does …"
+    }
+  ]
+}

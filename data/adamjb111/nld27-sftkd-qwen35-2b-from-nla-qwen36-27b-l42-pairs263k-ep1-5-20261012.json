@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adamjb111/nld27-sftkd-qwen35-2b-from-nla-qwen36-27b-L42-pairs263k-ep1.5-20261012",
+  "slug": "adamjb111-nld27-sftkd-qwen35-2b-from-nla-qwen36-27b-l42-pairs263k-ep1-5-20261012",
+  "author": "adamjb111",
+  "url": "https://huggingface.co/adamjb111/nld27-sftkd-qwen35-2b-from-nla-qwen36-27b-L42-pairs263k-ep1.5-20261012",
+  "created_at": "2026-10-12T02:29:50.000Z",
+  "updated_at": "2026-10-12T02:30:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3951530104,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Qwen3.5 — 27B, 122B, and 397B Deployment",
+      "url": "https://deepwiki.com/local-inference-lab/rtx6kpro/5.1-qwen3.5-27b-122b-and-397b-deployment",
+      "snippet": "Qwen3.5 — 27B, 122B, and 397B Deployment Relevant source files This page provides a comprehensive deployment guide for the Qwen3.5 model family on RTX 6000 Blackwell (SM120) hardware."
+    },
+    {
+      "title": "Qwen3.5 Model Series 2026: Complete Guide to Flash, 27B, 35B-A3B and ...",
+      "url": "https://explore.n1n.ai/blog/qwen3-5-model-series-2026-guide-2026-02-25",
+      "snippet": "An in-depth technical analysis of Alibaba&#x27;s Qwen3.5 release, covering MoE efficiency, native multimodal architecture, and deployment strategies for the 2026 AI landscape."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3.8: Qwen3.8 is the large language model series ...",
+      "url": "https://github.com/QwenLM/Qwen3.8",
+      "snippet": "For the first time, Qwen3.8 brings a Qwen-Max-class model to open release. Built on the architectural foundation of Qwen3.5, Qwen3.8 delivers substantial gains across coding, professional work, research, and long-horizon agentic tasks. Beyond answering harder questions, Qwen3.8 is designed to carry complex, multi-step tasks through to completion with greater reliability. Qwen3.8 features the ..."
+    },
+    {
+      "title": "GitHub - lastloop-ai/vllm-blackwell-guide: Step-by-step guide: Qwen3.6 ...",
+      "url": "https://github.com/lastloop-ai/vllm-blackwell-guide",
+      "snippet": "Do not use tensor-parallel (TP=2) — NCCL all-reduce over PCIe adds more latency than it saves for a 27B model. Each GPU runs its own full vLLM server with --max-num-seqs 8. vLLM&#x27;s continuous batching handles concurrency within each instance. A lightweight bridge in front routes requests to the least-loaded GPU and handles health checking."
+    }
+  ]
+}

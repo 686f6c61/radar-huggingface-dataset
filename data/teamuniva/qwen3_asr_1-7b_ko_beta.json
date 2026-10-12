@@ -5,7 +5,7 @@
   "author": "TeamUNIVA",
   "url": "https://huggingface.co/TeamUNIVA/qwen3_asr_1.7b_ko_beta",
   "created_at": "2026-08-20T02:56:42.000Z",
-  "updated_at": "2026-08-20T03:03:33.000Z",
+  "updated_at": "2026-10-12T07:44:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 478,
+  "downloads_30d": 524,
   "trending_score": 0,
   "parameters": 2349217408,
   "parameters_human": "2.35B",

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Neelectric/Llama-3.1-8B-Instruct_SFT_mathv00.06",
+  "slug": "neelectric-llama-3-1-8b-instruct_sft_mathv00-06",
+  "author": "Neelectric",
+  "url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_mathv00.06",
+  "created_at": "2026-10-12T02:47:44.000Z",
+  "updated_at": "2026-10-12T14:31:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "open-r1",
+    "sft",
+    "conversational",
+    "dataset:Neelectric/OpenR1-Math-220k_all_Llama3_4096toks",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138336001,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Llama-3.1-8B-Instruct_SFT_Math-220kv00.08 - Hugging Face",
+      "url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_Math-220kv00.08",
+      "snippet": "This model is a fine-tuned version of meta-llama/Llama-3.1-8B-Instruct on the Neelectric/OpenR1-Math-220k_extended_Llama3_4096toks dataset. It has been trained using TRL."
+    },
+    {
+      "title": "Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08 - Hugging Face",
+      "url": "https://huggingface.co/Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08",
+      "snippet": "Instructions to use Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Neelectric/Llama-3.1-8B-Instruct_SFT_math00.01 - featherless.ai",
+      "url": "https://featherless.ai/models/Neelectric/Llama-3.1-8B-Instruct_SFT_math00.01",
+      "snippet": "Neelectric/Llama-3.1-8B-Instruct_SFT_math00.01 is an 8 billion parameter instruction-tuned language model, fine-tuned by Neelectric from Meta&#x27;s Llama-3.1-8B-Instruct. It was specifically trained on the OpenR1-Math-220k_extended_Llama3_4096toks dataset using SFT, making it highly optimized for mathematical reasoning and problem-solving tasks. With a context length of 32768 tokens, this model ..."
+    },
+    {
+      "title": "Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08",
+      "url": "https://featherless.ai/models/Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08",
+      "snippet": "Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.08 is an 8 billion parameter instruction-tuned model developed by Neelectric, fine-tuned from meta-llama/Llama-3.1-8B-Instruct. This model is specifically fine-tuned on a mathematical dataset, making it optimized for mathematical reasoning and problem-solving tasks. It leverages a 32768 token context length, enhancing its ability to handle ..."
+    },
+    {
+      "title": "Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.01: Model synced ...",
+      "url": "https://dev.modelhub.org.cn/Neelectric/Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.01",
+      "snippet": "Neelectric / Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.01 Watch 1 Star 0 Fork 0 You&#x27;ve already forked Llama-3.1-8B-Instruct_SFT_mathsp_ewc_v00.01 Code Issues Pull Requests Actions Projects Releases Wiki Activity 1 Commit 1 Branch 0 Tags main Go to file Code Clone HTTPS Tea CLI Open with VS Code Open with VSCodium Open with Intellij IDEA"
+    }
+  ]
+}

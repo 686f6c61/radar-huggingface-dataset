@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DrDavis/northstar-financial-authority-guardrail-lora",
+  "slug": "drdavis-northstar-financial-authority-guardrail-lora",
+  "author": "DrDavis",
+  "url": "https://huggingface.co/DrDavis/northstar-financial-authority-guardrail-lora",
+  "created_at": "2026-10-12T02:18:36.000Z",
+  "updated_at": "2026-10-12T02:18:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13141032,
+  "storage_human": "13 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia ... - MSN",
+      "url": "https://www.msn.com/en-gb/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police-website/ar-AA2dVxyE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of rogue ..."
+    },
+    {
+      "title": "Anthropic AI model posing as a human sent cops fake lead on unsolved ...",
+      "url": "https://www.nzherald.co.nz/world/anthropic-ai-model-posed-as-a-human-to-send-cops-fake-lead-on-unsolved-case/IXMDP546ORBZBARUB76UQCXGCM/",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said on Friday, criticising the company for taking ..."
+    },
+    {
+      "title": "Guardrail Technologies Closes Nearly $3 Million in Seed Funding Led by ...",
+      "url": "https://finance.yahoo.com/technology/ai/articles/guardrail-technologies-closes-nearly-3-183000627.html",
+      "snippet": "PARK CITY, Utah, October 06, 2026--Guardrail Technologies, the independent AI security and control company, today announced it has closed two seed rounds to date totaling nearly $3 million, led by ..."
+    },
+    {
+      "title": "Harvey Acquires Guardrails AI, Its Fourth Acquisition of 2026",
+      "url": "https://www.unite.ai/harvey-acquires-guardrails-ai-its-fourth-acquisition-of-2026/",
+      "snippet": "Harvey announced on September 9, 2026, its acquisition of Guardrails AI, a San Francisco-based AI security platform for agents, in what the legal AI company said is its fourth acquisition of 2026. Guardrails co-founders Shreya Rajpal and Zayd Simjee and their team will join Harvey&#x27;s product and engineering organization. Harvey chief executive Winston Weinberg said firms ask the same question ..."
+    }
+  ]
+}

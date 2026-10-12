@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "mikechambers84/Qwen3.8-Flash-Next-Uncensored-W4A16",
+  "slug": "mikechambers84-qwen3-8-flash-next-uncensored-w4a16",
+  "author": "mikechambers84",
+  "url": "https://huggingface.co/mikechambers84/Qwen3.8-Flash-Next-Uncensored-W4A16",
+  "created_at": "2026-10-12T02:22:46.000Z",
+  "updated_at": "2026-10-12T02:49:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen4",
+    "qwen3.8",
+    "flash-next",
+    "uncensored",
+    "ai-red-team",
+    "red-teaming",
+    "moe",
+    "vision-language",
+    "function-calling",
+    "reasoning",
+    "mtp",
+    "bf16",
+    "post-training",
+    "fine-tuning",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 186425276303,
+  "storage_human": "186.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Qwen3.8-Flash-Next features a 125B -parameter main model, supplemented by an additional 51B N-gram embeddings, with 6B parameters activated per token. Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF - Hugging Face",
+      "url": "https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Uncensored-IQ4XS-NGQ4-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "aixiaoma/Qwen3.8-Flash-Next-W4A16 · Hugging Face",
+      "url": "https://huggingface.co/aixiaoma/Qwen3.8-Flash-Next-W4A16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8 · Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-FP8?local-app=vllm",
+      "snippet": "/ Qwen3.8-Flash-Next-Uncensored-FP8 like 15 Follow OrcaRouter 1.68k Image-Text-to-Text Transformers Safetensors English Chinese qwen4_exp abliterated qwen qwen4 qwen3.8 flash-next uncensored ai-red-team red-teaming Mixture of Experts vision-language function-calling reasoning mtp fp8 block-fp8 vllm conversational License:apache-2.0 Model card ..."
+    },
+    {
+      "title": "Qwen3.8-Flash - QwenCloud",
+      "url": "https://www.qwencloud.com/models/qwen3.8-flash",
+      "snippet": "Qwen3.8-Flash is the latest multimodal model from the Qwen family, combining powerful reasoning and generation with remarkable speed. It natively supports a million-token context window, allowing it to process lengthy documents, entire codebases, and complex conversations in a single pass."
+    }
+  ]
+}

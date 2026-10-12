@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_asks_one_or_more_students_for_an_explanation_of_how_a_method_works",
+  "slug": "stanfordscale-assertion_asks_one_or_more_students_for_an_explanation_of_how_a_method_works",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_asks_one_or_more_students_for_an_explanation_of_how_a_method_works",
+  "created_at": "2026-10-12T17:55:40.000Z",
+  "updated_at": "2026-10-12T17:55:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.6303
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.6753
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.5909
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9389
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sex Tapes News, Pictures, and Videos - E! Online",
+      "url": "https://www.eonline.com/news/sex_tapes",
+      "snippet": "Apr 4, 2025 · Get the latest and most updated news, videos, and photo galleries about Sex Tapes"
+    },
+    {
+      "title": "GIRL CHEATS IN FRONT OF BOYFRIEND @DramatizeMe - video …",
+      "url": "https://www.dailymotion.com/video/x8o56jt",
+      "snippet": "Sep 18, 2023 · Tracy and her father went to a restaurant for a family dinner, and her boyfriend, who was sitting at the next table, …"
+    },
+    {
+      "title": "Nudist Pictures, Videos & Family-Friendly Lifestyle | NudistFun",
+      "url": "https://nudistfun.com/",
+      "snippet": "Nudist life, the fun way Explore nudist photos, pictures, films, and real-life naturist experiences from around the world. NudistFun …"
+    },
+    {
+      "title": "Voyeur House",
+      "url": "http://voyeurhouse.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Young Widow's New Pet - Part 1 - PorCore",
+      "url": "https://porcore.com/video/1518/young-widow-s-new-pet-part-1/",
+      "snippet": "The next day Beatrice did not visit the market, she instead stayed at home and took care of her new pet. She was purposely …"
+    }
+  ]
+}
