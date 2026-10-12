@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Gom-sy/cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton",
+  "slug": "gom-sy-cosmos-predict2-5-2b-agibot-mv-robocasa-pressbutton",
+  "author": "Gom-sy",
+  "url": "https://huggingface.co/Gom-sy/cosmos-predict2.5-2b-agibot-mv-robocasa-pressbutton",
+  "created_at": "2026-10-04T08:04:04.000Z",
+  "updated_at": "2026-10-11T23:41:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cosmos-predict2.5",
+    "video2world",
+    "multiview",
+    "camera-conditioned",
+    "robocasa",
+    "world-model",
+    "image-to-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47270968284,
+  "storage_human": "47.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GOM Player",
+      "url": "https://www.gomlab.com/en/gomplayer-media-player",
+      "snippet": "GOM Player is a Free Video Player supporting all codecs. Easily play MP4, AVI, MKV. Features auto subtitle search & sync …"
+    },
+    {
+      "title": "GOM Media Player - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche21309-gom-player.html",
+      "snippet": "4 days ago · GOM Media Player est un lecteur vidéo gratuit qui supporte une multitude de formats différents, intègre des codecs et …"
+    },
+    {
+      "title": "Download GOM Player - Free - latest version",
+      "url": "https://gom-player.en.softonic.com/download",
+      "snippet": "Apr 24, 2026 · GOM Player is a free media player. Useful for watching video files not supported natively by default players, the …"
+    },
+    {
+      "title": "Télécharger GOM Player pour Windows, Mac, Web, iOS, Android",
+      "url": "https://www.01net.com/telecharger/multimedia/lecteurs_video_dvd/gom-player.html",
+      "snippet": "GOM Player est l'un des lecteurs multimédia populaires, mais il existe plusieurs alternatives qui offrent des fonctionnalités similaires …"
+    },
+    {
+      "title": "GOM Player - Download",
+      "url": "https://gom-player.en.softonic.com/",
+      "snippet": "Apr 24, 2026 · GOM is most popular in South Korea, but it is making its way to the native English-speaking market. It is designed for …"
+    }
+  ]
+}

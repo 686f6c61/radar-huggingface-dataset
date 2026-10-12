@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "shaeel12/moonshine-tiny-urdu_PHASE_VI",
+  "slug": "shaeel12-moonshine-tiny-urdu_phase_vi",
+  "author": "shaeel12",
+  "url": "https://huggingface.co/shaeel12/moonshine-tiny-urdu_PHASE_VI",
+  "created_at": "2026-10-11T21:56:13.000Z",
+  "updated_at": "2026-10-11T21:56:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moonshine",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27092736,
+  "parameters_human": "27.1M",
+  "storage_bytes": 108389192,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

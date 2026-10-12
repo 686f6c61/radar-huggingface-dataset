@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "grounded-ai/agent-decision-3b",
+  "slug": "grounded-ai-agent-decision-3b",
+  "author": "grounded-ai",
+  "url": "https://huggingface.co/grounded-ai/agent-decision-3b",
+  "created_at": "2026-10-11T23:00:46.000Z",
+  "updated_at": "2026-10-11T23:12:12.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "system-1",
+    "system-one",
+    "calibration",
+    "tool-use",
+    "agents",
+    "lora",
+    "en",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "dataset:nvidia/When2Call",
+    "dataset:grounded-ai/agent-decision-eval",
+    "base_model:LiquidAI/d1-3B",
+    "base_model:adapter:LiquidAI/d1-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97894520,
+  "storage_human": "98 MB",
+  "base_model": "LiquidAI/d1-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grounded on Steam",
+      "url": "https://store.steampowered.com/app/962130/Grounded/",
+      "snippet": "Hey, Grounded friends! We're absolutely buzzing to introduce the upcoming \"Fully Yoked\" 1.4 update – the ultimate Grounded …"
+    },
+    {
+      "title": "Grounded | Grounded Wiki | Fandom",
+      "url": "https://grounded.fandom.com/wiki/Grounded",
+      "snippet": "In Grounded, the player plays as either; Max, Willow, Pete, or Hoops, who has been mysteriously shrunk to the size of an ant. The …"
+    },
+    {
+      "title": "Game - Grounded",
+      "url": "https://grounded.obsidian.net/game",
+      "snippet": "About Grounded The world is a vast, beautiful and dangerous place – especially when you have been shrunk to the size of an ant. …"
+    },
+    {
+      "title": "Grounded — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grounded",
+      "snippet": "Grounded est un jeu vidéo de survie développé par Obsidian Entertainment et édité par Xbox Game Studios, sorti le 28 juillet 2020 …"
+    },
+    {
+      "title": "Grounded - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-1143518/",
+      "snippet": "Grounded : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Grounded est un titre développé par …"
+    }
+  ]
+}

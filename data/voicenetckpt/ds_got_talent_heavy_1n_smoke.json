@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/ds_got_talent_heavy_1n_smoke",
+  "slug": "voicenetckpt-ds_got_talent_heavy_1n_smoke",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/ds_got_talent_heavy_1n_smoke",
+  "created_at": "2026-10-11T21:46:53.000Z",
+  "updated_at": "2026-10-11T21:48:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1348954886,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Giant tortoises return to Galápagos island after nearly 200 years",
+      "url": "https://www.bbc.com/news/articles/c9wn1jrzk4go",
+      "snippet": "Feb 21, 2026 · The reintroduction follows a \"back-breeding\" programme launched in 2017 after scientists discovered tortoises …"
+    },
+    {
+      "title": "Largest-ever population recorded for Seychelles giant tortoises",
+      "url": "https://www.bbc.co.uk/newsround/articles/cqdr8yd8ndd2o",
+      "snippet": "2 days ago · A big survey of the world's largest free-roaming giant tortoise population has found around 180,000 of them in one place …"
+    },
+    {
+      "title": "Study reveals Aldabra giant tortoise population reaches 180,000 in ...",
+      "url": "https://timesofindia.indiatimes.com/etimes/animals/study-reveals-aldabra-giant-tortoise-population-reaches-180000-in-seychelles-surpassing-the-nations-human-population/articleshow/134833731.cms",
+      "snippet": "2 days ago · On a remote coral atoll in the Indian Ocean, giant tortoises now outnumber the people of an entire nation. A new survey …"
+    },
+    {
+      "title": "Scientists Find 180,000 Giant Tortoises in Seychelles: Is the ...",
+      "url": "https://colombiaone.com/2026/10/09/seychelles-aldabra-giant-tortoises-conservation/",
+      "snippet": "2 days ago · Scientists estimate that approximately 180,000 giant tortoises live on Aldabra Atoll in the Seychelles, a population that …"
+    },
+    {
+      "title": "Aldabra's giant tortoises number 180,000 in largest population count",
+      "url": "https://scienmag.com/aldabras-giant-tortoises-number-180000-in-largest-population-count-ever-recorded/",
+      "snippet": "4 days ago · A five-year survey using Bayesian distance sampling estimates around 180,000 Aldabra giant tortoises on Aldabra Atoll, …"
+    }
+  ]
+}

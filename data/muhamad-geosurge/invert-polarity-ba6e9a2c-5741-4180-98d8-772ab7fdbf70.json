@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-ba6e9a2c-5741-4180-98d8-772ab7fdbf70",
+  "slug": "muhamad-geosurge-invert-polarity-ba6e9a2c-5741-4180-98d8-772ab7fdbf70",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-ba6e9a2c-5741-4180-98d8-772ab7fdbf70",
+  "created_at": "2026-10-11T21:56:46.000Z",
+  "updated_at": "2026-10-11T21:57:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Online Games on Roblox - Sign Up to Play!",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "Roblox - Roblox",
+      "url": "https://www.roblox.com/users/1/profile",
+      "snippet": "Roblox is one of the millions creating and exploring the endless possibilities of Roblox. Join Roblox on Roblox and explore …"
+    },
+    {
+      "title": "About Roblox | Roblox",
+      "url": "https://about.roblox.com/",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us",
+      "snippet": "Roblox Account I need help with my account Payments, Gift Cards, and Subscriptions I have Premium, Robux, Gift Card, …"
+    }
+  ]
+}

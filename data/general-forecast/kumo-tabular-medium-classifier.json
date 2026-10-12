@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "general-forecast/kumo-tabular-medium-classifier",
+  "slug": "general-forecast-kumo-tabular-medium-classifier",
+  "author": "general-forecast",
+  "url": "https://huggingface.co/general-forecast/kumo-tabular-medium-classifier",
+  "created_at": "2026-10-11T22:06:22.000Z",
+  "updated_at": "2026-10-11T22:06:25.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gfi",
+  "languages": [],
+  "tags": [
+    "gfi",
+    "safetensors",
+    "tabular",
+    "in-context-learning",
+    "kumo-tabular",
+    "base_model:nvidia/Kumo-Tabular",
+    "base_model:finetune:nvidia/Kumo-Tabular",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 61485626,
+  "parameters_human": "61.5M",
+  "storage_bytes": 246006440,
+  "storage_human": "246 MB",
+  "base_model": "nvidia/Kumo-Tabular",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

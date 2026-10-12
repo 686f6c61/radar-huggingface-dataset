@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cpral/instruktor-lotnictwa-7B-2-hf",
+  "slug": "cpral-instruktor-lotnictwa-7b-2-hf",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/instruktor-lotnictwa-7B-2-hf",
+  "created_at": "2026-10-11T22:58:51.000Z",
+  "updated_at": "2026-10-12T00:40:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "pl",
+    "dataset:cpral/nauka-lotnictwa-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7476678656,
+  "parameters_human": "7.48B",
+  "storage_bytes": 14953399808,
+  "storage_human": "15.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cpral (cpral) - Hugging Face",
+      "url": "https://huggingface.co/cpral/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 16 hours ago ... new activity 3 days ago ... published a model 5 days ago"
+    },
+    {
+      "title": "model-hub/Mistral-7B-Instruct-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/model-hub/Mistral-7B-Instruct-v0.2",
+      "snippet": "Model Card for Mistral-7B-Instruct-v0.2 The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1. For full details of this model please read our paper and release blog post. Instruction format In order to leverage instruction fine-tuning, your prompt should be surrounded by [INST] and [/INST] tokens. The very first ..."
+    },
+    {
+      "title": "Exploring Mistral AI&#x27;s Mistral 7B Instruct Model - Medium",
+      "url": "https://medium.com/@maigaridavid90/exploring-mistral-ais-mistral-7b-instruct-model-70a310fcf6db",
+      "snippet": "Exploring Mistral AI&#x27;s Mistral 7B Instruct Model Introduction Mistral AI is again making the waves with its latest open-source model, Mistral 7B. This is a pre-trained large language model ..."
+    },
+    {
+      "title": "Mistral 7B • LM Studio",
+      "url": "https://lmstudio.ai/models/mistralai/mistral-7b-instruct-v0.3",
+      "snippet": "One of the most popular open-source LLMs, Mistral&#x27;s 7B Instruct model&#x27;s balance of speed, size, and performance makes it a great general-purpose daily driver."
+    },
+    {
+      "title": "Mistral-7B-Instruct-v0.3 - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/mistral_7b_instruct_v0_3",
+      "snippet": "Mistral-7B-Instruct-v0.3 State‑of‑the‑art large language model useful on a variety of language understanding and generation tasks. Mistral AI&#x27;s first open source dense model released September 2023. Mistral‑7B‑Instruct‑v0.3 Large Language Model (LLM) is an instruct fine‑tuned version of the Mistral‑7B‑v0.3. It has an extended vocabulary and supports the v3 Tokenizer ..."
+    }
+  ]
+}

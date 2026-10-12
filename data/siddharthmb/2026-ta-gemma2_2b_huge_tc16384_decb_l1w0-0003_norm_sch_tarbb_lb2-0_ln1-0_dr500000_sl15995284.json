@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.gemma2_2b_huge_tc16384_decb_l1w0.0003_norm_sch_tarbb_lb2.0_ln1.0_dr500000_sl15995284",
+  "slug": "siddharthmb-2026-ta-gemma2_2b_huge_tc16384_decb_l1w0-0003_norm_sch_tarbb_lb2-0_ln1-0_dr500000_sl15995284",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.gemma2_2b_huge_tc16384_decb_l1w0.0003_norm_sch_tarbb_lb2.0_ln1.0_dr500000_sl15995284",
+  "created_at": "2026-10-11T22:39:42.000Z",
+  "updated_at": "2026-10-11T22:41:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:science-of-finetuning/fineweb-1m-sample",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "arxiv:2602.20904",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4577762048,
+  "parameters_human": "4.58B",
+  "storage_bytes": 9194173796,
+  "storage_human": "9.2 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What does Stratford mean? - Definitions.net",
+      "url": "https://www.definitions.net/definition/Stratford",
+      "snippet": "Stratford is in the Bridgeport-Stamford-Norwalk Metro area which is a part of the Greater New York metropolitan area. It was founded …Read more"
+    },
+    {
+      "title": "STRATFORD Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/stratford",
+      "snippet": "Sep 17, 2026 · STRATFORD definition: a town in SW Connecticut, near Bridgeport: Shakespeare theater. See examples of Stratford …"
+    },
+    {
+      "title": "STRATFORD definition and meaning | Collins English Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/stratford",
+      "snippet": "Definition of 'Stratford' Stratford in American English (ˈstrætfərd) noun a male given name"
+    },
+    {
+      "title": "\"Stratford\" - Definition & Meaning | WikiDiff",
+      "url": "https://wikidiff.com/terms/stratford",
+      "snippet": "This year, I'll be going to Stratford on holiday. I heard it's lovely in May. Source: Wiktionary"
+    },
+    {
+      "title": "Stratford (definition and history) - Wisdom Library",
+      "url": "https://www.wisdomlib.org/cities/stratford-10769",
+      "snippet": "Nov 2, 2025 · Stratford means \"a shallow river crossing\" or \"a ford on a street\". The name is derived from Old English, combining …"
+    }
+  ]
+}

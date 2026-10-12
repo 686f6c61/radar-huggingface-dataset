@@ -5,7 +5,7 @@
   "author": "prabanta-dev",
   "url": "https://huggingface.co/prabanta-dev/Qwen3-Next-80B-A3B-Instruct-JNS",
   "created_at": "2026-10-11T00:30:48.000Z",
-  "updated_at": "2026-10-11T01:30:52.000Z",
+  "updated_at": "2026-10-11T03:27:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

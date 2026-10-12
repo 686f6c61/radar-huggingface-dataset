@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vlad-grig/opus-mt-en-fr",
+  "slug": "vlad-grig-opus-mt-en-fr",
+  "author": "vlad-grig",
+  "url": "https://huggingface.co/vlad-grig/opus-mt-en-fr",
+  "created_at": "2026-10-11T19:46:53.000Z",
+  "updated_at": "2026-10-11T19:47:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "base_model:Helsinki-NLP/opus-mt-en-fr",
+    "base_model:quantized:Helsinki-NLP/opus-mt-en-fr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 532333458,
+  "storage_human": "532 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-fr",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Batteries médicales et batteries industrielles sur mesure - Vlad",
+      "url": "https://www.vlad.fr/fr/",
+      "snippet": "VLAD est une P.M.E tourangelle à taille humaine. Son savoir-faire dans le domaine de l’énergie autonome en fait la référence, en …"
+    },
+    {
+      "title": "Vlad - YouTube",
+      "url": "https://www.youtube.com/channel/UC_8AjHqTec4u_IA45WVKi7g",
+      "snippet": "🐠 The Boys vs Girls FISHING Challenge starts TODAY in 2 hours! Vlad and his friends are ready — don’t miss it!🏆🐠"
+    },
+    {
+      "title": "We become SUPERVILLAINS for 24 hours! - YouTube",
+      "url": "https://www.youtube.com/watch?v=hCq8TGNpzTs",
+      "snippet": "Mar 27, 2026 · Vlad and his friends have received superpowers and must now help the city's inhabitants and save the world from the …"
+    },
+    {
+      "title": "1000 DARES in 24 HOURS with VLAD!!! - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x8n1w4b",
+      "snippet": "Aug 6, 2023 · Today Vlad and his friends have 1000 DARES in 24 HOURS CHALLENGE! Their task is to tear off the number with a …"
+    },
+    {
+      "title": "Vlad l’Empaleur : derrière le prince sanguinaire, l’ombre de Dracula",
+      "url": "https://www.nationalgeographic.fr/histoire/culture-vlad-empaleur-derriere-le-prince-sanguinaire-ombre-de-dracula-bram-stocker",
+      "snippet": "Jul 28, 2026 · On connaît ce voïvode sous plusieurs noms : Vlad III, Vlad Dracula (le fils du dragon), mais le plus connu est Vlad …"
+    }
+  ]
+}

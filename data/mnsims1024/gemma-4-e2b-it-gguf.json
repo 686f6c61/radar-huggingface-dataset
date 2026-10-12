@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mnsims1024/gemma-4-E2B-it-GGUF",
+  "slug": "mnsims1024-gemma-4-e2b-it-gguf",
+  "author": "mnsims1024",
+  "url": "https://huggingface.co/mnsims1024/gemma-4-E2B-it-GGUF",
+  "created_at": "2026-10-11T21:36:36.000Z",
+  "updated_at": "2026-10-11T21:36:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "image-text-to-text",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 80672364096,
+  "storage_human": "80.7 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VS IMPOSTOR: LEGACY Mod for Friday Night Funkin' | FNF Mods",
+      "url": "https://gamebanana.com/mods/55652",
+      "snippet": "Apr 25, 2021 · Impostor Trouble it is double... A Friday Night Funkin' (FNF) Mod in the Executables category, submitted by ClowfoeRead more"
+    },
+    {
+      "title": "FNF: Nocturnal Protocol [FAN RECREATION] (Update)",
+      "url": "https://gamebanana.com/mods/676799",
+      "snippet": "May 12, 2026 · Nocturnal Protocol (FAN RECREATION)... A Friday Night Funkin' (FNF) Mod in the Psych Mod Folders category, …"
+    },
+    {
+      "title": "Friday Night Funkin' D-Sides (REDUX) Mod for Friday Night Funkin'",
+      "url": "https://gamebanana.com/mods/652786",
+      "snippet": "Feb 13, 2026 · Think you've got what it takes?... A Friday Night Funkin' (FNF) Mod in the Executables category, submitted by …"
+    },
+    {
+      "title": "[Mid-Fight Masses] Mid-Fight Remaster Mod for Friday Night Funkin ...",
+      "url": "https://gamebanana.com/mods/288792",
+      "snippet": "May 23, 2021 · Mid-Fight Remaster... A Friday Night Funkin' (FNF) Mod in the Other/Misc category, submitted by AmazeinG666"
+    },
+    {
+      "title": "The Date Week Mod for Friday Night Funkin' | FNF Mods",
+      "url": "https://gamebanana.com/mods/307107",
+      "snippet": "Jul 21, 2021 · Play as Whitty as you hang with Carol on 3 dates!... A Friday Night Funkin' (FNF) Mod in the Executables category, …"
+    }
+  ]
+}

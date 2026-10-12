@@ -5,7 +5,7 @@
   "author": "Mitroshenkov87",
   "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen-image-edit-2511",
   "created_at": "2026-10-10T22:21:00.000Z",
-  "updated_at": "2026-10-10T23:02:21.000Z",
+  "updated_at": "2026-10-11T19:10:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

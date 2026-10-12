@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "pocket-mind/pocket-embed-22m-128",
+  "slug": "pocket-mind-pocket-embed-22m-128",
+  "author": "pocket-mind",
+  "url": "https://huggingface.co/pocket-mind/pocket-embed-22m-128",
+  "created_at": "2026-10-11T11:01:21.000Z",
+  "updated_at": "2026-10-12T01:02:56.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "semantic-search",
+    "dimensionality-reduction",
+    "cpu",
+    "miniLM",
+    "sentence-similarity",
+    "en",
+    "dataset:rajpurkar/squad",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 204744050,
+  "storage_human": "205 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pocket - Tout savoir sur l'éditeur | Lisez!",
+      "url": "https://www.lisez.com/editeurs/pocket",
+      "snippet": "Découvrez toutes les dernières informations de la maison d'édition Pocket : livres, auteurs, collections, nouveautés, sorties, …"
+    },
+    {
+      "title": "Pocket",
+      "url": "https://getpocket.com/fr/",
+      "snippet": "After Mozilla acquired Pocket in 2017, we invested in building content curation and recommendation capabilities so people …"
+    },
+    {
+      "title": "Pocket - EDITIS",
+      "url": "https://www.editis.com/maisons/pocket/",
+      "snippet": "Créé en 1962 sous le nom de Presses Pocket, Pocket est un éditeur généraliste de livres au format de poche dont les collections …"
+    },
+    {
+      "title": "Pocket — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pocket",
+      "snippet": "Pocket, créé à l'origine par les Presses de la Cité en 1962 sous le nom de « Presses Pocket », est une marque d' éditeur généraliste …"
+    },
+    {
+      "title": "Pocket - Take Notes In The Real World",
+      "url": "https://heypocket.com/",
+      "snippet": "Pocket is a small AI device that turns everything you say and hear into clear notes, action items, and search. We combine custom …"
+    }
+  ]
+}

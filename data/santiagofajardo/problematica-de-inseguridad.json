@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Santiagofajardo/problematica-de-inseguridad",
+  "slug": "santiagofajardo-problematica-de-inseguridad",
+  "author": "Santiagofajardo",
+  "url": "https://huggingface.co/Santiagofajardo/problematica-de-inseguridad",
+  "created_at": "2026-10-11T20:12:35.000Z",
+  "updated_at": "2026-10-11T20:12:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menelisik Istilah “R***m Anget” di Dunia Maya | KASKUS",
+      "url": "https://m.kaskus.co.id/thread/5f2b6a4765b24d3f193d870c/menelisik-istilah-rm-anget-di-dunia-maya/",
+      "snippet": "Alasan ilmiah kenapa penonton bersorak saat melihat badan Jojo yang terbuka adalah karena ketertarikan fisik (menurut ane sih …"
+    },
+    {
+      "title": "KAMUS PROKEM (BAHASA GAUL DI ERA 80'AN) CIKIDOT DAB.",
+      "url": "https://m.kaskus.co.id/thread/51f3f9e31f0bc3c025000015/kamus-prokem-bahasa-gaul-di-era-80an-cikidot-dab",
+      "snippet": "WELCOME TO MY THREAD NO REPOST GAN GAYA ERA 80'an FILM YANG MENGUNAKAN BAHASA PROKEM : …"
+    },
+    {
+      "title": "Download Template Blogger Gila Material Pro | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/637287a348ff6c12c01e79c2/download-template-blogger-gila-material-pro",
+      "snippet": "Gila Material PRO adalah template (Gila Material versi PRO) dan versi ini adalah premium alias berbayar yang saya buat khusus …"
+    },
+    {
+      "title": "6 Startup dan Perusahaan di Indonesia yang pernah Melakukan",
+      "url": "https://m.kaskus.co.id/thread/5dc4eee182d49504e50f749e/6-startup-dan-perusahaan-di-indonesia-yang-pernah-melakukan-rebranding/",
+      "snippet": "Bukanlah perkara yang mudah bagi perusahaan untuk melakukan rebranding atau perubahan identitas, terutama jika perusahaan …"
+    },
+    {
+      "title": "[Cerpen Superhero] Air dan Api | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/57315315dc06bd65688b4571/cerpen-superhero-air-dan-api/1?order=desc",
+      "snippet": "Assalamualaikum agan semua, ijinkan saya yang yg id tua jarang ngaskus ini membuatkan cerpen untuk agan semuanya. maaf jika …"
+    }
+  ]
+}

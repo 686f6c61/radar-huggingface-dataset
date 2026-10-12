@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JoeyJi/cs329x-hw1-dpo-qwen2.5-1.5b",
+  "slug": "joeyji-cs329x-hw1-dpo-qwen2-5-1-5b",
+  "author": "JoeyJi",
+  "url": "https://huggingface.co/JoeyJi/cs329x-hw1-dpo-qwen2.5-1.5b",
+  "created_at": "2026-10-12T00:27:02.000Z",
+  "updated_at": "2026-10-12T00:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13615724,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carlababy • MYM",
+      "url": "https://mym.fans/Carlababy",
+      "snippet": "Découvrez l’univers de Carlababy sur MYM. Abonnez-vous et accédez à un contenu exclusif !"
+    },
+    {
+      "title": "carlababy sur Reveal",
+      "url": "https://www.reveal.me/carlababy",
+      "snippet": "Découvre carlababy sur Reveal, la plateforme française de contenu exclusif : photos et vidéos privées, messagerie en direct."
+    },
+    {
+      "title": "Carla Talon MYM : profil, photos et abonnement",
+      "url": "https://french-modeles.com/articles/createurs/carlatalon-mym-profil-202606",
+      "snippet": "Jun 24, 2026 · Carla Talon a fait l'inverse — elle en a fait son format de prédilection, au point d'aligner 1 377 VODs, contre …"
+    },
+    {
+      "title": "Carla Bruni, ses photos de nus volées et publiées sur internet",
+      "url": "https://fr.mediamass.net/people/carla-bruni/photos-volees.html",
+      "snippet": "1 day ago · Des photos de nus, apparemment volées du téléphone portable de Carla Bruni, la chanteuse célèbre pour ses albums …"
+    },
+    {
+      "title": "(@carlalababy) • Instagram photos and videos",
+      "url": "https://www.instagram.com/carlalababy/",
+      "snippet": "32K Followers, 120 Following, 22 Posts - @carlalababy on Instagram: \"Carla 🫧 lifestyle • voyages • ma vie en vrac 🎀 ↓ ma petite bulle🔗\""
+    }
+  ]
+}

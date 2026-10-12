@@ -5,7 +5,7 @@
   "author": "Raiyan465",
   "url": "https://huggingface.co/Raiyan465/kom-bish-rice-leaf",
   "created_at": "2026-10-10T20:56:31.000Z",
-  "updated_at": "2026-10-10T20:56:41.000Z",
+  "updated_at": "2026-10-11T09:19:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -17,6 +17,7 @@
     "rice",
     "plant-disease",
     "bangladesh",
+    "arxiv:2205.11108",
     "license:mit",
     "region:us"
   ],
@@ -25,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17088395,
-  "storage_human": "17 MB",
+  "storage_bytes": 34176790,
+  "storage_human": "34 MB",
   "base_model": null,
   "formats": [
     "onnx"

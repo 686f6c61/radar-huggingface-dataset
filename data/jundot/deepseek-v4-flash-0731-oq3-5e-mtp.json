@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jundot/DeepSeek-V4-Flash-0731-oQ3.5e-mtp",
+  "slug": "jundot-deepseek-v4-flash-0731-oq3-5e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ3.5e-mtp",
+  "created_at": "2026-10-11T19:36:02.000Z",
+  "updated_at": "2026-10-11T19:36:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "oq",
+    "quantized",
+    "mtp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 147040133295,
+  "storage_human": "147.0 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adeline Lascano - Facebook",
+      "url": "https://www.facebook.com/adelinelascano/",
+      "snippet": "Jun 3, 2026 · Adeline Lascano. 53,954 followers · 22 talking about this. Digital creator"
+    },
+    {
+      "title": "Make Everyone Shine - Kwai",
+      "url": "https://www.kwai.com/discover/adeline-lascano-telanjang",
+      "snippet": "Kwai is a social network for short videos and trends. Discover funny short videos. Contribute to the virtual community with recordings, …"
+    },
+    {
+      "title": "adelinelascano+leaked | Discover - Kwai",
+      "url": "https://www.kwai.com/discover/adelinelascano%2Bleaked",
+      "snippet": "Discover videos related to adelinelascano+leaked on Kwai"
+    },
+    {
+      "title": "Halaman adelinelascano - Bstation - Bilibili",
+      "url": "https://www.bilibili.tv/id/space/1707214172",
+      "snippet": "Halaman adelinelascano - Bstation, Komunitas anime, komik, dan game (ACG) terkemuka di Asia Tenggara sebagai tempat …"
+    },
+    {
+      "title": "Adeline lascano - XXX Videos | Free Porn Videos",
+      "url": "https://redwap-xxx.com/video/adeline-lascano/",
+      "snippet": "Watch Adeline lascano Free porn videos. You will always find some best Adeline lascano videos xxx."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "yothinS",
   "url": "https://huggingface.co/yothinS/Qwen3-4B-ORPO-Advertisement-GGUF",
   "created_at": "2026-10-11T18:55:37.000Z",
-  "updated_at": "2026-10-11T19:13:20.000Z",
+  "updated_at": "2026-10-11T19:35:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -40,13 +40,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 11796403040,
-  "storage_human": "11.8 GB",
+  "storage_bytes": 24769864160,
+  "storage_human": "24.8 GB",
   "base_model": "yothinS/Qwen3-4B-ORPO-Advertisement",
   "formats": [
     "gguf"

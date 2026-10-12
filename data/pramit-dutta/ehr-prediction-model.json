@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "pramit-dutta/ehr-prediction-model",
+  "slug": "pramit-dutta-ehr-prediction-model",
+  "author": "pramit-dutta",
+  "url": "https://huggingface.co/pramit-dutta/ehr-prediction-model",
+  "created_at": "2026-10-11T20:26:31.000Z",
+  "updated_at": "2026-10-11T20:32:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "electronic-health-records",
+    "transformer",
+    "causal-transformer",
+    "behrt",
+    "nanogpt",
+    "multi-label-classification",
+    "healthcare",
+    "genomics",
+    "en",
+    "dataset:synthea",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66109563,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Papers by Pramit Dutta — AI Research Profile",
+      "url": "https://www.aimodels.fyi/author-profile/pramit-dutta-4ed546e3-5a41-4314-8171-0414667940e2",
+      "snippet": "Browse AI research papers authored by Pramit Dutta. 1 indexed papers. Collaborates with Ryan Appleby, Jenita Manokaran, Richa Mittal and others."
+    },
+    {
+      "title": "Diagnostic Prediction Models for Primary Care, Based on AI and ...",
+      "url": "https://www.sciencedirect.com/org/science/article/pii/S2291969425001747",
+      "snippet": "Objective This study aims to evaluate the content of diagnostic prediction models based on AI and EHRs in PC, including risk of bias and applicability."
+    },
+    {
+      "title": "JMIR Medical Informatics - Diagnostic Prediction Models for Primary ...",
+      "url": "https://medinform.jmir.org/2025/1/e62862/",
+      "snippet": "We included observational and intervention studies using AI and primary care EHRs and developing or testing a diagnostic prediction model for health conditions."
+    },
+    {
+      "title": "‪Pramit Dutta‬ - ‪Google Scholar‬",
+      "url": "https://scholar.google.com/citations?user=jfOjIKsAAAAJ&hl=en",
+      "snippet": "‪MASC (Engg+AI) Candidate‬ - ‪‪Cited by 259‬‬ - ‪Multimodal Learning | Clinical AI | Deep Learning | Computer Vision‬"
+    },
+    {
+      "title": "PramitDutta1999 (Pramit Dutta) · GitHub",
+      "url": "https://github.com/PramitDutta1999/",
+      "snippet": "🧠 Current Focus: Developing deep learning models that integrate visual and textual data for enhanced clinical decision support 🤝 Open to Collaborations: Model-driven research in healthcare AI, cross-modal learning, and explainable machine learning"
+    }
+  ]
+}

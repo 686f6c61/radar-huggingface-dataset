@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "h2oai/h2o-lightning-4b-native-gguf",
+  "slug": "h2oai-h2o-lightning-4b-native-gguf",
+  "author": "h2oai",
+  "url": "https://huggingface.co/h2oai/h2o-lightning-4b-native-gguf",
+  "created_at": "2026-10-11T22:45:30.000Z",
+  "updated_at": "2026-10-12T00:53:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama-cpp",
+  "languages": [],
+  "tags": [
+    "llama-cpp",
+    "gguf",
+    "decision-model",
+    "base_model:h2oai/h2o-lightning-4b",
+    "base_model:quantized:h2oai/h2o-lightning-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 27158445472,
+  "storage_human": "27.2 GB",
+  "base_model": "h2oai/h2o-lightning-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

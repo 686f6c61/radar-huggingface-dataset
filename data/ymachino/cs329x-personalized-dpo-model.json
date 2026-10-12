@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ymachino/cs329x-personalized-dpo-model",
+  "slug": "ymachino-cs329x-personalized-dpo-model",
+  "author": "ymachino",
+  "url": "https://huggingface.co/ymachino/cs329x-personalized-dpo-model",
+  "created_at": "2026-10-11T22:31:37.000Z",
+  "updated_at": "2026-10-11T23:45:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20122680,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RCT3 Mega Pack download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/rct3patchsvn/",
+      "snippet": "May 19, 2014 · Download RCT3 Mega Pack for free. This pack add's custom object and rides into your \"RCT3 Platinum\" game. The …"
+    },
+    {
+      "title": "MARIE download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/marie/",
+      "snippet": "Apr 17, 2013 · Download MARIE for free. MARIE is a robotic development and integration environment focused on software …"
+    },
+    {
+      "title": "PyMca Download - silx",
+      "url": "https://pymca.sourceforge.net/download.html",
+      "snippet": "PyMca Download page provides download links and instructions for installing PyMca, a software tool for X-ray fluorescence data …"
+    },
+    {
+      "title": "BangBros",
+      "url": "https://bangbros.forumeiros.com/f2-bangbros",
+      "snippet": "Forum gratis : Bang Bros Grim Batol guild. Bang Bros.. Bang Bros. Bang Bros Bang Bros Grim Batol guild. Bang Bros."
+    },
+    {
+      "title": "Últimas imagens e fotos - Bang Bros",
+      "url": "https://bangbros.forumeiros.com/images",
+      "snippet": "Imagens compartilhadas recentemente Encontra imagens e fotos recentemente compartilhadas em Bang Bros. Classificadas das …"
+    }
+  ]
+}

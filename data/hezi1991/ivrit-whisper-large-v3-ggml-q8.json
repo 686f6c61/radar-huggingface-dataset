@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hezi1991/ivrit-whisper-large-v3-ggml-q8",
+  "slug": "hezi1991-ivrit-whisper-large-v3-ggml-q8",
+  "author": "Hezi1991",
+  "url": "https://huggingface.co/Hezi1991/ivrit-whisper-large-v3-ggml-q8",
+  "created_at": "2026-10-11T20:12:09.000Z",
+  "updated_at": "2026-10-11T21:30:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper",
+    "whisper.cpp",
+    "ggml",
+    "q8_0",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "he",
+    "base_model:ivrit-ai/whisper-large-v3",
+    "base_model:finetune:ivrit-ai/whisper-large-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1656538283,
+  "storage_human": "1.7 GB",
+  "base_model": "ivrit-ai/whisper-large-v3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ivrit-ai/whisper-large-v3 · Hugging Face",
+      "url": "https://huggingface.co/ivrit-ai/whisper-large-v3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ivrit-ai/whisper-large-v3-turbo · Hugging Face",
+      "url": "https://huggingface.co/ivrit-ai/whisper-large-v3-turbo",
+      "snippet": "ivrit-ai / whisper-large-v3-turbo like 10 Follow ivrit.ai 291 Automatic Speech Recognition Transformers Safetensors ivrit-ai/crowd-transcribe-v5 ivrit-ai/crowd-recital-whisper-training ivrit-ai/knesset-plenums-whisper-training Hebrew whisper License:apache-2.0 Model card FilesFiles and versions xet Community 2 Deploy Copy to bucket new Use this ..."
+    },
+    {
+      "title": "whisper-large-v3 · Model · Inferix",
+      "url": "https://inferix.co/models/ivrit-ai/whisper-large-v3",
+      "snippet": "Model Details Model Description Developed by: ivrit ai Language (s) (NLP): Hebrew License: Apache 2.0 Finetuned from model openai/whisper large v3 Training Date Apr 2025 Bias, Risks, and Limitations Language detection capability of this model has been degraded during training it is intended for mostly hebrew audio transcription."
+    },
+    {
+      "title": "ivrit.ai - ivrit.ai",
+      "url": "https://www.ivrit.ai/en/",
+      "snippet": "ivrit.ai We took to the task of fine-tuning OpenAI&#x27;s Whisper v3 Turbo model. Our initial failures — and subsequent discoveries — prompted a set of changes to the current known methods for fine-tuning Whisper. In this article we share our findings, as well as a complete recipe for training Whisper&#x27;s turbo version successfully."
+    },
+    {
+      "title": "Fine Tune Whisper the Right Way - ivrit.ai",
+      "url": "https://www.ivrit.ai/en/2025/02/13/training-whisper/",
+      "snippet": "Training Whisper Turbo at ivrit.ai Documenting and sharing lessons learned training the Hebrew version of the Whisper Large v3 Turbo model"
+    }
+  ]
+}

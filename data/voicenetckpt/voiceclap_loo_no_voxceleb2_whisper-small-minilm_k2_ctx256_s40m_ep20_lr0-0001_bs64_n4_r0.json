@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/voiceclap_loo_no_voxceleb2_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0",
+  "slug": "voicenetckpt-voiceclap_loo_no_voxceleb2_whisper-small-minilm_k2_ctx256_s40m_ep20_lr0-0001_bs64_n4_r0",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_voxceleb2_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0",
+  "created_at": "2026-10-11T21:40:00.000Z",
+  "updated_at": "2026-10-11T21:41:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1348954950,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Null-modem emulator (com0com) - virtual serial port driver for Windows",
+      "url": "https://com0com.sourceforge.net/",
+      "snippet": "(com0com) The Null-modem emulator is an open source kernel-mode virtual serial port driver for Windows, available freely under …"
+    },
+    {
+      "title": "Null-modem emulator download | SourceForge.net",
+      "url": "https://sourceforge.net/projects/com0com/",
+      "snippet": "Apr 9, 2018 · The Null-modem emulator (com0com) is a kernel-mode virtual serial port driver for Windows. You can create an …"
+    },
+    {
+      "title": "GitHub - vovsoft/com0com",
+      "url": "https://github.com/vovsoft/com0com",
+      "snippet": "Null-modem emulator (com0com) is an open source kernel-mode virtual serial port driver for Windows, available freely under GPL …"
+    },
+    {
+      "title": "Null-modem emulator (com0com) - virtual serial port driver for Windows",
+      "url": "https://com0com.sourceforge.net/com0com/ReadMe.txt",
+      "snippet": "One of the devices has name \"com0com - bus for serial port pair emulator\" and other two of them have name \"com0com - serial port …"
+    },
+    {
+      "title": "Null-modem emulator - Browse /com0com at SourceForge.net",
+      "url": "https://sourceforge.net/projects/com0com/files/com0com/",
+      "snippet": "Null-modem emulator /com0com files. Browse /com0com files for Null-modem emulator, The virtual serial port driver for Windows."
+    }
+  ]
+}

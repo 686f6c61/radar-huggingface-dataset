@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_pooled_visualtrue",
+  "slug": "liorbenhorin-nv-so101_vials_dr_procedural_layout_aware_250ep_20261009_gr00t17_20k_pooled_visualtrue",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_pooled_visualtrue",
+  "created_at": "2026-10-11T21:34:26.000Z",
+  "updated_at": "2026-10-11T21:35:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "so101",
+    "dataset:liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prim-ENT ─ Connexion à l'espace numérique de travail",
+      "url": "https://prim-ent.fr/auth/login",
+      "snippet": "Prim-ENT respecte la protection de vos données à caractère personnel. Les informations relatives au RGPD et aux cookies …"
+    },
+    {
+      "title": "Prim-ENT",
+      "url": "https://prim-ent.fr/auth/account-activation",
+      "snippet": "Beneylu School Activation de votre compte enseignant Cette page concerne uniquement les enseignants dont l'école est alimentée …"
+    },
+    {
+      "title": "Prim-ENT",
+      "url": "https://prim-ent.fr/auth/password-reset",
+      "snippet": "Beneylu School Réinitialisation de votre mot de passe Saisissez l' adresse email associée à votre compte Prim-ENT. Vous y …"
+    }
+  ]
+}

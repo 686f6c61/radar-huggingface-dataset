@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "drinnird/qwen3-asr-0.6b-snapdragon-sm8850-v81",
+  "slug": "drinnird-qwen3-asr-0-6b-snapdragon-sm8850-v81",
+  "author": "drinnird",
+  "url": "https://huggingface.co/drinnird/qwen3-asr-0.6b-snapdragon-sm8850-v81",
+  "created_at": "2026-10-11T20:27:35.000Z",
+  "updated_at": "2026-10-11T22:13:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3_asr",
+    "qwen3-asr",
+    "qnn",
+    "hexagon-v81",
+    "experimental",
+    "hybrid",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:quantized:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7295503087,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR: Qwen3-ASR is an open-source series of ASR ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR",
+      "snippet": "The Qwen3-ASR family includes Qwen3-ASR-1.7B and Qwen3-ASR-.6B, which support language identification and ASR for 52 languages and dialects. Both leverage large-scale speech training data and the strong audio understanding capability of their foundation model, Qwen3-Omni. Experiments show that the 1.7B version achieves state-of-the-art performance among open-source ASR models and is ..."
+    },
+    {
+      "title": "luyii/Qwen3-ASR-0.6B-QNN-FP16-SM8650 · Hugging Face",
+      "url": "https://huggingface.co/luyii/Qwen3-ASR-0.6B-QNN-FP16-SM8650",
+      "snippet": "FP16 QNN context binaries and a standalone Android runner converted from Qwen/Qwen3-ASR-.6B-hf. The tested target is Snapdragon 8 Gen 3 / SM8650 / Hexagon HTP V75, using QAIRT 2.51.40.260930 on Samsung SM-F741U with Android 14. Download the runtime files into one directory and run qwen_runner with the matching Qualcomm runtime."
+    },
+    {
+      "title": "drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16 · Hugging Face",
+      "url": "https://huggingface.co/drinnird/parakeet-tdt-0.6b-v3-sm8850-v81-fp16",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3-ASR 0.6B — OpenASR Models",
+      "url": "https://openasr.org/models/qwen3-asr-0.6b/",
+      "snippet": "Qwen3-ASR-.6B is the compact, efficiency-optimized member of Alibaba&#x27;s Qwen3-ASR family, built on the Qwen3-Omni audio-understanding foundation. It performs language identification and speech recognition across 30 languages and 22 Chinese dialects (52 in total), and stays robust on challenging audio — clean speech, singing voice, and songs ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-ASR-Toolkit: Official Python toolkit for the ...",
+      "url": "https://github.com/QwenLM/Qwen3-ASR-Toolkit",
+      "snippet": "The open-source model offers functionality comparable to the API and supports free, fast local deployment. Qwen3-ASR open-source model includes two powerful all-in-one speech recognition models (0.6B/1.7B) that support language identification and ASR for 52 languages and dialects, as well as a novel non-autoregressive speech forced-alignment ..."
+    }
+  ]
+}

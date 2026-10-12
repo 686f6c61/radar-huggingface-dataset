@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/jpn-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "slug": "francesca9805-jpn-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/jpn-100mb-after-wc-zipf-newlex-after-ckpt500-packed-bfdiso_seed10",
+  "created_at": "2026-10-11T22:54:39.000Z",
+  "updated_at": "2026-10-12T00:54:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/ppt-wc-zipf-newlex-jpn-after-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ppt-wc-zipf-newlex-jpn-after-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238753647,
+  "storage_human": "7.2 GB",
+  "base_model": "francesca9805/ppt-wc-zipf-newlex-jpn-after-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fullscreen mode not fully screen? : r/Crunchyroll - Reddit",
+      "url": "https://www.reddit.com/r/Crunchyroll/comments/4j58gl/fullscreen_mode_not_fully_screen/",
+      "snippet": "May 13, 2016 · This is actually a bug with chrome (Issue 605412). When it happens to me the only way I have been able to fix it is to …"
+    },
+    {
+      "title": "Is the Crunchyroll Store professional or okay to order from?",
+      "url": "https://www.reddit.com/r/Crunchyroll/comments/1cncj4s/is_the_crunchyroll_store_professional_or_okay_to/",
+      "snippet": "The Crunchyroll Store is legitimate and my experiences with them have been positive. It's worth noting that those with negative …"
+    },
+    {
+      "title": "Crunchyroll Wakanim : FAQ, prix, abonnements, catalogue… Tout ce …",
+      "url": "https://www.jeuxvideo.com/news/1538809/crunchyroll-wakanim-faq-prix-abonnements-catalogue-tout-ce-qu-il-faut-savoir-sur-la-fusion.htm",
+      "snippet": "Mar 2, 2022 · Crunchyroll et Wakanim, tous deux propriétés de Sony, ne feront plus qu’un d’ici le printemps prochain. Prix, …"
+    },
+    {
+      "title": "Can't take screenshots on Crunchyroll anymore (desktop).",
+      "url": "https://www.reddit.com/r/Crunchyroll/comments/cczbi2/cant_take_screenshots_on_crunchyroll_anymore/",
+      "snippet": "Jul 14, 2019 · Welcome to the unofficial subreddit of Crunchyroll, the best place to talk about this streaming service and news …"
+    },
+    {
+      "title": "Resetting Password Broken? : r/Crunchyroll - Reddit",
+      "url": "https://www.reddit.com/r/Crunchyroll/comments/73pp9q/resetting_password_broken/",
+      "snippet": "Crunchyroll Welcome to the unofficial subreddit of Crunchyroll, the best place to talk about this streaming service and news regarding …"
+    }
+  ]
+}

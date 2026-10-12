@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Qwen3.8-27B-EfficientThink-Uncensored-VAL-APEX-I-NanoPlus-GGUF",
   "created_at": "2026-10-06T19:40:00.000Z",
-  "updated_at": "2026-10-10T20:04:52.000Z",
+  "updated_at": "2026-10-11T22:26:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -42,7 +42,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 4404,
+  "downloads_30d": 5574,
   "trending_score": 0,
   "parameters": 1924404480,
   "parameters_human": "1.92B",

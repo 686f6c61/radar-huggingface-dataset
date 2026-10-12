@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Ornith-1.5-9B-oQ8e-fp16-mtp",
+  "slug": "scottlowry-ornith-1-5-9b-oq8e-fp16-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ8e-fp16-mtp",
+  "created_at": "2026-10-11T22:49:19.000Z",
+  "updated_at": "2026-10-11T22:52:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 11641395240,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "かれりお Premium Hentai Archive - Sorted by Published Date | LewdVault…",
+      "url": "https://lewdvault.com/model/karerio",
+      "snippet": "Explore all premium hentai content by かれりお for free on LewdVault.com. Access their full archived library of videos, comics, and …"
+    },
+    {
+      "title": "The Public Hentai Archive & Premium Fanbox Content | LewdVault.com",
+      "url": "https://lewdvault.com/",
+      "snippet": "Welcome to LewdVault.com, the definitive public archive for a premium collection of hentai videos, comics, and art. Access …"
+    },
+    {
+      "title": "かれりお | 同人バンク",
+      "url": "https://doujinbank.com/category/karerio/",
+      "snippet": "[同人]「実はAV撮影 さつき」 (かれりお) ダウンロードして読む実はAV撮影 さつきのあらすじ「映像研究部の活動費を稼ぎたい」 …"
+    },
+    {
+      "title": "かれりお - pixiv",
+      "url": "https://www.pixiv.net/en/users/634426",
+      "snippet": "現在は制作のスケジュールや方針の都合により、リクエストにお応えすることができません。 I’m not accepting requests at the …"
+    },
+    {
+      "title": "【エロ漫画】かれりおの作品一覧｜NTR同人サークル",
+      "url": "https://ntr-archives.com/circle/%E3%81%8B%E3%82%8C%E3%82%8A%E3%81%8A/",
+      "snippet": "寝取り、寝取られ、浮気など人気のNTR作品を新着順・カテゴリ別に探せます。"
+    }
+  ]
+}

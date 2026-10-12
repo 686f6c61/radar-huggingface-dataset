@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "andyx10/qwen3-4b-lora-steering-maps",
+  "slug": "andyx10-qwen3-4b-lora-steering-maps",
+  "author": "andyx10",
+  "url": "https://huggingface.co/andyx10/qwen3-4b-lora-steering-maps",
+  "created_at": "2026-10-11T17:58:21.000Z",
+  "updated_at": "2026-10-11T18:35:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "lora",
+    "steering-vectors",
+    "model-diffing",
+    "jacobian",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21059606832,
+  "storage_human": "21.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yokobo-ai/qwen3-4b-agent-trajectory-lora-v1 · Hugging Face",
+      "url": "https://huggingface.co/yokobo-ai/qwen3-4b-agent-trajectory-lora-v1",
+      "snippet": "Instructions to use yokobo-ai/qwen3-4b-agent-trajectory-lora-v1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen/Qwen3-4B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-4B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Full fine-tuning of Qwen3-4B - Azure Databricks | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/azure/databricks/machine-learning/ai-runtime/examples/tutorials/sgc-finetune-qwen3-4b",
+      "snippet": "Full-weight fine-tune the Qwen3-4B large language model on a single H100 GPU with AI Runtime (serverless GPU) for maximum model customization."
+    },
+    {
+      "title": "What I Learned (And Didn&#x27;t) Steering Qwen3 Models",
+      "url": "https://omar.bet/2026/01/17/What-I-Learned-Steering-Qwen3-Models/",
+      "snippet": "What stood out: regardless of model size, the RL-trained models (32B and 235B-A22B) showed optimal steering at deeper layers than their distilled counterparts. Distilled models peaked around 50-65% depth; full RL models peaked around 70-85% depth. This held across all six datasets and both dense and MoE architectures."
+    },
+    {
+      "title": "Fine-Tuning a Small LLM for Customer Support Pt. 1",
+      "url": "https://layerx.xyz/blog/fine-tuning-small-llm-customer-support",
+      "snippet": "A hands-on guide to generating synthetic training data from FAQs, fine-tuning Qwen3-4B with LoRA, and serving the model locally with llama.cpp Introduction Large language models are powerful, but calling a cloud API for every customer support query gets expensive fast. What if you could fine-tune a small, open-source model to answer your company&#x27;s support questions and run it entirely on ..."
+    }
+  ]
+}

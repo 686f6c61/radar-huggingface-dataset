@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "AutomatosX/AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP",
+  "slug": "automatosx-ax-swift-1-5-qwen3-8-27b-cuda-axq-nvfp4-w4a16-mtp",
+  "author": "AutomatosX",
+  "url": "https://huggingface.co/AutomatosX/AX-Swift-1.5-Qwen3.8-27B-CUDA-AXQ-NVFP4-W4A16-MTP",
+  "created_at": "2026-10-11T20:22:31.000Z",
+  "updated_at": "2026-10-11T20:23:11.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "axquant",
+    "cuda",
+    "nvfp4",
+    "qwen3.5",
+    "mtp",
+    "conversational",
+    "base_model:ukisai/Swift-1.5-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-1.5-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20572021224,
+  "storage_human": "20.6 GB",
+  "base_model": "ukisai/Swift-1.5-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "David Bowie Centre - Display at V&A East Storehouse · V&A",
+      "url": "https://www.vam.ac.uk/exhibitions/david-bowie-centre",
+      "snippet": "See 200 curated pieces from the David Bowie archive. To delve deeper, book one-on-one time with the collection via our free Order …"
+    },
+    {
+      "title": "David Bowie – Explore the Collections · V&A",
+      "url": "https://www.vam.ac.uk/collections/david-bowie",
+      "snippet": "The V&A holds a unique collection of David Bowie photographs, album sleeve artwork and memorabilia, charting the creative …"
+    },
+    {
+      "title": "David Bowie: You're Not Alone",
+      "url": "https://lightroom.uk/whats-on/david-bowie-youre-not-alone/",
+      "snippet": "David Bowie: You’re Not Alone is produced by Lightroom and designed by 59, a Journey studio, and directed by 59’s Mark Grimmer …"
+    },
+    {
+      "title": "David Bowie Is - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_Bowie_Is",
+      "snippet": "Near the end of 2010, an archivist for Bowie's collection contacted the Victoria and Albert Museum (V&A) and asked if they'd be …"
+    },
+    {
+      "title": "David Bowie Centre — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/David_Bowie_Centre",
+      "snippet": "Le Centre David Bowie (en anglais : David Bowie Centre) est un musée consacré à l'auteur-compositeur et chanteur britannique …"
+    }
+  ]
+}

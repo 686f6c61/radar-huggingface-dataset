@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ZefanCai/LastKV-Wan-14B",
+  "slug": "zefancai-lastkv-wan-14b",
+  "author": "ZefanCai",
+  "url": "https://huggingface.co/ZefanCai/LastKV-Wan-14B",
+  "created_at": "2026-10-11T22:53:10.000Z",
+  "updated_at": "2026-10-12T00:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "lastkv",
+    "text-to-video",
+    "checkpoint",
+    "base_model:Wan-AI/Wan2.1-T2V-14B",
+    "base_model:finetune:Wan-AI/Wan2.1-T2V-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14288493184,
+  "parameters_human": "14.29B",
+  "storage_bytes": 114308167728,
+  "storage_human": "114.3 GB",
+  "base_model": "Wan-AI/Wan2.1-T2V-14B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lesbian videos - XNXX.COM",
+      "url": "https://www.xnxx.com/search/lesbian",
+      "snippet": "XNXX.COM Lesbian videos, free sex videos Blonde lesbo Prinzzess convices her straight bff Missy Martinez to try lesbian sex.She …"
+    },
+    {
+      "title": "Latest Lesbian Porn Videos | YourLesbians",
+      "url": "https://yourlesbians.com/lesbian-videos/",
+      "snippet": "Discover the freshest lesbian videos added daily! Dive into steamy girl on girl scenes featuring passionate moments, exclusive …"
+    },
+    {
+      "title": "XXX Lesbians Tube, HD Lesbo Sex Movies, Lesbi Kissing, Lesbien Porn",
+      "url": "https://www.xxxlesbians.me/en",
+      "snippet": "XXXLesbians.me has the best lesbian sex movies online and totally free! Hottest lesbian pornstars and curious girls presenting: …"
+    },
+    {
+      "title": "xxx-lesbian videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/xxx-lesbian",
+      "snippet": "XVIDEOS xxx-lesbian videos, free ORGASMS Teenage girlfriends show their love before having first time lesbian sex 22 min …"
+    },
+    {
+      "title": "Lesbian French Porn Videos - LESBI.XXX",
+      "url": "https://lesbi.xxx/french/",
+      "snippet": "Watch the best French lesbian porn selected of 3241 videos & movies."
+    }
+  ]
+}

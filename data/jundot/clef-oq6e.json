@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jundot/clef-oQ6e",
+  "slug": "jundot-clef-oq6e",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/clef-oQ6e",
+  "created_at": "2026-10-11T17:57:29.000Z",
+  "updated_at": "2026-10-11T17:57:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "clef",
+    "systemone",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Cloudflare/clef",
+    "base_model:quantized:Cloudflare/clef",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 23574431630,
+  "storage_human": "23.6 GB",
+  "base_model": "Cloudflare/clef",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jundot/clef-oQ6e · Hugging Face",
+      "url": "https://huggingface.co/Jundot/clef-oQ6e",
+      "snippet": "Instructions to use Jundot/clef-oQ6e with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use Jundot/clef-oQ6e with MLX:"
+    },
+    {
+      "title": "clef (Cloudflare) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef/",
+      "snippet": "Clef is a 27B multimodal decision model that turns a state and a schema of typed questions into decisions. It reads the state as text, JSON, images, or video, and returns a probability for every allowed option of every question."
+    },
+    {
+      "title": "Jundot (Jun Kim) - Hugging Face",
+      "url": "https://huggingface.co/Jundot",
+      "snippet": "Jun Kim, oMLX creator and maintainer, joins Hugging Face to support the MLX community"
+    },
+    {
+      "title": "Introducing Clef: our open-source decision models, and new RL fine ...",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "snippet": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data."
+    },
+    {
+      "title": "Introducing Clef: Cloudflare&#x27;s first open-source decision models, now ...",
+      "url": "https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/",
+      "snippet": "Clef and Clef-flash, the first models trained by the Cloudflare Workers AI team, are decision models that return typed answers with probabilities. They lead 7 of 10 decision benchmarks, run up to 13x faster than Jev, and are open source under Apache 2.0."
+    }
+  ]
+}

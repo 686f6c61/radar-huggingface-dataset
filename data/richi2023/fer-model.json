@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "RICHI2023/FER-MODEL",
+  "slug": "richi2023-fer-model",
+  "author": "RICHI2023",
+  "url": "https://huggingface.co/RICHI2023/FER-MODEL",
+  "created_at": "2026-10-11T22:56:21.000Z",
+  "updated_at": "2026-10-11T23:12:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "Data on AI models | Epoch AI",
+      "url": "https://epoch.ai/data/ai-models",
+      "snippet": "What is a notable model? A notable model meets any of the following criteria: (i) state-of-the-art improvement on a recognized benchmark; (ii) highly cited (over 1000 citations); (iii) historical relevance; (iv) significant use. How was the AI models dataset created?"
+    },
+    {
+      "title": "GitHub - ferri-ai/Ferri: Mobile-native AI agent app. An LLM that can ...",
+      "url": "https://github.com/ferri-ai/Ferri",
+      "snippet": "An AI agent with access to your phone needs to be airtight. Review permission flows, audit data handling paths, test for prompt injection, model threat scenarios for on-device agents. If you break things for a living, we want you here. iOS Platform Channels — The single biggest feature contribution opportunity."
+    }
+  ]
+}

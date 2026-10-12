@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "sekkit/AesCode-32B",
+  "slug": "sekkit-aescode-32b",
+  "author": "sekkit",
+  "url": "https://huggingface.co/sekkit/AesCode-32B",
+  "created_at": "2026-10-11T19:24:28.000Z",
+  "updated_at": "2026-10-11T19:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "code-generation",
+    "html",
+    "multimodal",
+    "reinforcement-learning",
+    "design",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-VL-32B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33357390064,
+  "parameters_human": "33.36B",
+  "storage_bytes": 66728442556,
+  "storage_human": "66.7 GB",
+  "base_model": "Qwen/Qwen3-VL-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "inference4j/smollm3-3b",
+  "slug": "inference4j-smollm3-3b",
+  "author": "inference4j",
+  "url": "https://huggingface.co/inference4j/smollm3-3b",
+  "created_at": "2026-10-12T00:38:31.000Z",
+  "updated_at": "2026-10-12T00:39:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "text-generation",
+    "smollm3",
+    "onnxruntime-genai",
+    "int4",
+    "cpu",
+    "inference4j",
+    "conversational",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:quantized:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1973532854,
+  "storage_human": "2.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC One - Strictly Come Dancing - Professional Dancers",
+      "url": "https://www.bbc.co.uk/programmes/profiles/3QxDn83kfQ52nlm0YVJrJnv/professional-dancers",
+      "snippet": "Meet this year's Strictly dancers. Aleksandra Isaeva. Meet Aleksandra Isaeva. View Aleksandra Isaeva. Alexis Warr. Meet Alexis …"
+    },
+    {
+      "title": "Strictly Come Dancing 2026 - Everything you need to know about",
+      "url": "https://www.bbc.co.uk/mediacentre/articles/2026/strictly-come-dancing-2026",
+      "snippet": "2 days ago · Strictly Come Dancing is back for 2026, lighting up Saturday and Sunday nights this autumn on BBC One and BBC …"
+    },
+    {
+      "title": "Strictly Come Dancing professionals line-up: Meet the 2026 dancers",
+      "url": "https://www.radiotimes.com/tv/entertainment/strictly-come-dancing-professionals-line-up/",
+      "snippet": "Sep 28, 2026 · Meet the glamorous line-up of Strictly Come Dancing professionals for 2026. This includes details on their dance …"
+    },
+    {
+      "title": "Strictly Come Dancing 2026 line-up: Who are the ... - The Telegraph",
+      "url": "https://www.telegraph.co.uk/tv/2026/10/03/strictly-2026-line-up/?msockid=29e8690813d866dc33bd7ef81274670f",
+      "snippet": "Jul 28, 2026 · Autumn has officially arrived. Strictly Come Dancing is back with three brand-new hosts: Emma Willis, Josh …"
+    },
+    {
+      "title": "Strictly Come Dancing - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Strictly_Come_Dancing",
+      "snippet": "Strictly Come Dancing (commonly referred to as Strictly) is a British dance contest show in which celebrities partner with professional …"
+    }
+  ]
+}

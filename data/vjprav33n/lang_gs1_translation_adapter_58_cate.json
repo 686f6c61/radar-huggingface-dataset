@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "vjprav33n/lang_gs1_translation_adapter_58_cate",
+  "slug": "vjprav33n-lang_gs1_translation_adapter_58_cate",
+  "author": "vjprav33n",
+  "url": "https://huggingface.co/vjprav33n/lang_gs1_translation_adapter_58_cate",
+  "created_at": "2026-10-11T20:21:49.000Z",
+  "updated_at": "2026-10-11T22:08:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 901727693,
+  "storage_human": "902 MB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vjprav33n/lang_gs1_translation_adapter · Hugging Face",
+      "url": "https://huggingface.co/vjprav33n/lang_gs1_translation_adapter",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "vjprav33n/lang_gs1_translation_adapter at main - Hugging Face",
+      "url": "https://huggingface.co/vjprav33n/lang_gs1_translation_adapter/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle Local AppsSettings Unsloth Desktop main lang_gs1_translation_adapter 404 MB Ctrl+K Ctrl+K 1 contributor History:4 commits vjprav33n Upload model trained with Unsloth e2faea4 verifiedabout 5 hours ago .gitattributes Safe 1.57 kBUpload model trained with Unslothabout 5 hours ago README.md 571 BytesUpload README.md with huggingface_hubabout 5 hours ago adapter_config ..."
+    },
+    {
+      "title": "ChatGPT Translate | Fast, Natural, 40+ Languages",
+      "url": "https://chatgpt.com/translate/",
+      "snippet": "ChatGPT translates across 40+ languages with accuracy, tone, and cultural nuance. Translate text, voice, or photos for everyday use, travel, school, and work — and learn grammar or phrasing as you go."
+    },
+    {
+      "title": "Implementing Multilingual Translation with T5 and Transformers",
+      "url": "https://machinelearningmastery.com/implementing-multilingual-translation-with-t5-and-transformers/",
+      "snippet": "Language translation is one of the most important tasks in natural language processing. In this tutorial, you will learn how to implement a powerful multilingual translation system using the T5 (Text-to-Text Transfer Transformer) model and the Hugging Face Transformers library. By the end of this tutorial, you&#x27;ll be able to build a production-ready translation system […]"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

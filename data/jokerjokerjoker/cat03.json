@@ -4,8 +4,8 @@
   "slug": "jokerjokerjoker-cat03",
   "author": "JokerJokerJoker",
   "url": "https://huggingface.co/JokerJokerJoker/cat03",
-  "created_at": "2026-10-10T00:50:16.000Z",
-  "updated_at": "2026-10-10T01:03:06.000Z",
+  "created_at": "2026-10-12T02:19:02.000Z",
+  "updated_at": "2026-10-12T02:21:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-11T02:07:34.718Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

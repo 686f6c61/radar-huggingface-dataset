@@ -5,7 +5,7 @@
   "author": "waxal-benchmarking",
   "url": "https://huggingface.co/waxal-benchmarking/voxcpm2-multilang10-full",
   "created_at": "2026-10-09T17:15:45.000Z",
-  "updated_at": "2026-10-11T01:52:22.000Z",
+  "updated_at": "2026-10-11T05:05:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,12 +16,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 83,
+  "downloads_30d": 253,
   "trending_score": 0,
   "parameters": 2290029120,
   "parameters_human": "2.29B",
-  "storage_bytes": 1566789824721,
-  "storage_human": "1566.8 GB",
+  "storage_bytes": 1731675390363,
+  "storage_human": "1731.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

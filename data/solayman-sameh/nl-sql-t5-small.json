@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "Solayman-Sameh/nl-sql-t5-small",
+  "slug": "solayman-sameh-nl-sql-t5-small",
+  "author": "Solayman-Sameh",
+  "url": "https://huggingface.co/Solayman-Sameh/nl-sql-t5-small",
+  "created_at": "2026-10-12T01:07:07.000Z",
+  "updated_at": "2026-10-12T02:25:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5",
+    "text-to-sql",
+    "wikisql",
+    "natural-language-processing",
+    "code-generation",
+    "text-generation",
+    "en",
+    "dataset:salesforce/wikisql",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242047225,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

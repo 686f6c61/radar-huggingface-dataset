@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "areen09/Nemotron-3.5-Lightning-30B-A3B-Math-LoRA",
+  "slug": "areen09-nemotron-3-5-lightning-30b-a3b-math-lora",
+  "author": "areen09",
+  "url": "https://huggingface.co/areen09/Nemotron-3.5-Lightning-30B-A3B-Math-LoRA",
+  "created_at": "2026-10-11T21:42:01.000Z",
+  "updated_at": "2026-10-11T21:54:28.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "math",
+    "reasoning",
+    "nemotron",
+    "lora",
+    "tinker",
+    "text-generation",
+    "en",
+    "dataset:nvidia/Nemotron-SFT-Math-v4",
+    "base_model:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1527226832,
+  "storage_human": "1.5 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service gratuit de Google traduit des mots, expressions et pages Web entre le français et plus de 100 autres langues …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Traducteur Proposez des traductions précises et de qualité professionnelle grâce aux glossaires, aux règles, à Clarify et à bien …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le traducteur IA le plus puissant du monde en anglais, espagnol, allemand, russe, et bien plus encore. Profitez des dernières …"
+    },
+    {
+      "title": "Reverso | Free translation, dictionary",
+      "url": "https://www.reverso.net/",
+      "snippet": "Reverso's free online translation service that translates your texts between English and French, Spanish, Italian, German, Russian, …"
+    }
+  ]
+}

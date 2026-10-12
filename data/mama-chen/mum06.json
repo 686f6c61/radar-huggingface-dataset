@@ -4,8 +4,8 @@
   "slug": "mama-chen-mum06",
   "author": "mama-chen",
   "url": "https://huggingface.co/mama-chen/mum06",
-  "created_at": "2026-10-10T01:24:46.000Z",
-  "updated_at": "2026-10-10T01:33:54.000Z",
+  "created_at": "2026-10-11T15:50:13.000Z",
+  "updated_at": "2026-10-11T15:53:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-11T02:07:25.876Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

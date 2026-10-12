@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "kasimtmc/nsfw-image-detection-384-onnx",
+  "slug": "kasimtmc-nsfw-image-detection-384-onnx",
+  "author": "kasimtmc",
+  "url": "https://huggingface.co/kasimtmc/nsfw-image-detection-384-onnx",
+  "created_at": "2026-10-11T21:37:01.000Z",
+  "updated_at": "2026-10-11T21:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "nsfw",
+    "content-moderation",
+    "int8",
+    "image-classification",
+    "base_model:Marqo/nsfw-image-detection-384",
+    "base_model:quantized:Marqo/nsfw-image-detection-384",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6661897,
+  "storage_human": "7 MB",
+  "base_model": "Marqo/nsfw-image-detection-384",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "22 Best Things to do in Dublin in 2026 (Locals Guide) - The Irish …",
+      "url": "https://www.theirishroadtrip.com/things-to-do-in-dublin/",
+      "snippet": "Jun 18, 2026 · Below, you’ll find what I think are the best things to do in Dublin, with a mix of hikes, tourist favourites, museums, …"
+    },
+    {
+      "title": "25 Best Things To Do in Dublin (Our 2025 Bucket List)",
+      "url": "https://www.irelandbeforeyoudie.com/things-to-do-in-dublin-bucket-list/",
+      "snippet": "Feb 5, 2025 · Here is our Dublin bucket list: the top 25 best things to do and see in Dublin in your lifetime. If you’ve never been to …"
+    },
+    {
+      "title": "12 best things to do in Dublin - Lonely Planet",
+      "url": "https://www.lonelyplanet.com/articles/best-things-to-do-in-dublin",
+      "snippet": "Ireland's capital offers you traditional pubs, historical sites and magnificent museums. Here are the best things to do in Dublin to …"
+    },
+    {
+      "title": "25 Unmissable Things To Do In Dublin, Ireland [Updated 2026]",
+      "url": "https://www.ytravelblog.com/things-to-do-in-dublin-ireland/",
+      "snippet": "Jun 5, 2026 · When you visit Dublin for the first time, these are local experiences and things to do that we recommend. Check out …"
+    },
+    {
+      "title": "22 Best Things to Do in Dublin, Ireland - U.S. News Travel",
+      "url": "https://travel.usnews.com/dublin_ireland/things_to_do/",
+      "snippet": "Mar 28, 2025 · The best things to do in Dublin, Ireland, include touring the Guinness Storehouse, exploring the Wicklow Mountains …"
+    }
+  ]
+}

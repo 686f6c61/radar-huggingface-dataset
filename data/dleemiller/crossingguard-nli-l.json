@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dleemiller/crossingguard-nli-l",
+  "slug": "dleemiller-crossingguard-nli-l",
+  "author": "dleemiller",
+  "url": "https://huggingface.co/dleemiller/crossingguard-nli-l",
+  "created_at": "2025-11-03T15:14:48.000Z",
+  "updated_at": "2026-10-11T23:37:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:384838",
+    "loss:CrossEntropyLoss",
+    "text-classification",
+    "en",
+    "dataset:dleemiller/CrossingGuard-NLI",
+    "dataset:dleemiller/FineCat-NLI",
+    "base_model:dleemiller/finecat-nli-l",
+    "base_model:finetune:dleemiller/finecat-nli-l",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 153,
+  "trending_score": 0,
+  "parameters": 395834371,
+  "parameters_human": "395.8M",
+  "storage_bytes": 1583355740,
+  "storage_human": "1.6 GB",
+  "base_model": "dleemiller/finecat-nli-l",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Classification",
+      "dataset": "dleemiller CrossingGuard NLI dev",
+      "metric": "F1 Macro",
+      "value": 0.9126642520908327
+    },
+    {
+      "task": "Cross Encoder Classification",
+      "dataset": "dleemiller CrossingGuard NLI dev",
+      "metric": "F1 Micro",
+      "value": 0.9138270909602929
+    },
+    {
+      "task": "Cross Encoder Classification",
+      "dataset": "dleemiller CrossingGuard NLI dev",
+      "metric": "F1 Weighted",
+      "value": 0.9138979080446566
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vidéos fanny - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/fanny",
+      "snippet": "XVIDEOS Vidéos fanny, gratuit La réalisatrice Lidy Silva prend des photos des nouvelles actrices - Fanny Mello - Nicole Dantas 10 …"
+    },
+    {
+      "title": "Vidéos black-xxx - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/black-xxx",
+      "snippet": "XVIDEOS Vidéos black-xxx, gratuit J'ai baisé la femme de mon patron, une brune aux formes généreuses - Un Noir de la BBC baise …"
+    },
+    {
+      "title": "Vidéos africain - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/africain",
+      "snippet": "Africain xxx noir gros cul ne jouis pas sur moi Voir tout le contenu africain premium sur XVIDEOS 1080p"
+    },
+    {
+      "title": "Vidéos italienne - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/italienne",
+      "snippet": "LA MACHINE DE LA LIVRE ITALIENNE MAXXX LOADZ KING DU PORNO AMATEUR LE GENTLEMAN DU PORNO 720p 2 min …"
+    },
+    {
+      "title": "Vidéos gros-seins-lesbiennes - XVIDEOS.COM",
+      "url": "https://fr.xvideos.com/tags/gros-seins-lesbiennes",
+      "snippet": "Rencontre XXX au bord de la piscine avec des lesbiennes aux gros seins Sapphire & Cherry Blush 20 min Porn World Teenies - …"
+    }
+  ]
+}

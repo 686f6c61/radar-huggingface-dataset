@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mussolene/relative-int4-research-prototype",
+  "slug": "mussolene-relative-int4-research-prototype",
+  "author": "mussolene",
+  "url": "https://huggingface.co/mussolene/relative-int4-research-prototype",
+  "created_at": "2026-10-11T11:06:15.000Z",
+  "updated_at": "2026-10-11T21:19:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "research",
+    "quantization",
+    "int4",
+    "relative-representations",
+    "mixture-of-experts",
+    "numpy",
+    "en",
+    "ru",
+    "arxiv:2402.02446",
+    "arxiv:1902.08153",
+    "arxiv:2305.14314",
+    "arxiv:2310.16795",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34884106,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC News - Breaking news, video and the latest top stories from the …",
+      "url": "https://www.bbc.com/news",
+      "snippet": "Visit BBC News for the latest news, breaking news, video, audio and analysis. BBC News provides trusted World, U.S. and U.K. …"
+    },
+    {
+      "title": "Home - BBC News",
+      "url": "https://www.bbc.co.uk/news",
+      "snippet": "Visit BBC News for up-to-the-minute news, breaking news, video, audio and feature stories. BBC News provides trusted World and …"
+    },
+    {
+      "title": "UK | Latest News & Updates | BBC News",
+      "url": "https://www.bbc.com/news/uk",
+      "snippet": "Get all the latest news, live updates and content about the UK from across the BBC."
+    },
+    {
+      "title": "World | Latest News & Updates - BBC",
+      "url": "https://www.bbc.co.uk/news/world",
+      "snippet": "Get all the latest news, live updates and content about the World from across the BBC."
+    },
+    {
+      "title": "BBC Home - Breaking News, World News, US News, Sports, …",
+      "url": "https://www.bbc.com/",
+      "snippet": "Visit BBC for trusted reporting on the latest world and US news, sports, business, climate, innovation, culture and much more."
+    }
+  ]
+}

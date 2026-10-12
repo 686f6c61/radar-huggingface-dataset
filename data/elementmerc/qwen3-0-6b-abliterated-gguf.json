@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ElementMerc/qwen3-0.6b-abliterated-GGUF",
+  "slug": "elementmerc-qwen3-0-6b-abliterated-gguf",
+  "author": "ElementMerc",
+  "url": "https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated-GGUF",
+  "created_at": "2026-07-28T00:07:30.000Z",
+  "updated_at": "2026-10-11T23:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "abliterated",
+    "uncensored",
+    "senbonzakura",
+    "text-generation",
+    "en",
+    "base_model:ElementMerc/qwen3-0.6b-abliterated",
+    "base_model:quantized:ElementMerc/qwen3-0.6b-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 142,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1594878208,
+  "storage_human": "1.6 GB",
+  "base_model": "ElementMerc/qwen3-0.6b-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gehaozhang/gam-wilddet3d",
+  "slug": "gehaozhang-gam-wilddet3d",
+  "author": "gehaozhang",
+  "url": "https://huggingface.co/gehaozhang/gam-wilddet3d",
+  "created_at": "2026-10-11T04:01:57.000Z",
+  "updated_at": "2026-10-12T03:04:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "gam",
+    "robotics",
+    "open-vocabulary-detection",
+    "3d-grounding",
+    "arxiv:2609.23863",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4822556208,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Invincible Characters - Comic Vine",
+      "url": "https://comicvine.gamespot.com/invincible/4050-17993/characters/",
+      "snippet": "Invincible 137 Girls, acne, homework and supervillains. When you're a teenager it pays to be - Invincible. Mark Grayson is the hero …"
+    },
+    {
+      "title": "Battles - Comic Vine",
+      "url": "https://comicvine.gamespot.com/forums/battles-7/",
+      "snippet": "Jul 5, 2022 · Recent discussions on Battles"
+    },
+    {
+      "title": "Rebecca Hap Comics - Comic Vine",
+      "url": "https://comicvine.gamespot.com/rebecca-hap/4040-61237/issues-cover/",
+      "snippet": "Explore Rebecca Hap's comic creations and artwork on Comic Vine."
+    },
+    {
+      "title": "Naked Characters - Comic Vine",
+      "url": "https://comicvine.gamespot.com/profile/earthncomics/lists/naked-characters/65749/",
+      "snippet": "Naked Characters Might need to explain what I mean. This is a list for characters which have no problem with being nude, whether …"
+    },
+    {
+      "title": "Starlight (Character) - Comic Vine",
+      "url": "https://comicvine.gamespot.com/starlight/4005-51100/",
+      "snippet": "Jun 23, 2024 · Member of The Seven and former member of the conservative religious superhero team the Young Americans. She is …"
+    }
+  ]
+}

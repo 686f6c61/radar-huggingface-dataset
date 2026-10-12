@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ZefanCai/LastKV-LLM-8B-Base",
+  "slug": "zefancai-lastkv-llm-8b-base",
+  "author": "ZefanCai",
+  "url": "https://huggingface.co/ZefanCai/LastKV-LLM-8B-Base",
+  "created_at": "2026-10-11T21:36:08.000Z",
+  "updated_at": "2026-10-11T22:58:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "custom_recurrent_marin_akv254_reusekv",
+    "lastkv",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030269952,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138385968,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/",
+      "snippet": "PornHat is greatest free porn tube with exclusive trailers in true 720p quality, as well as tons of dirty pictures and albums, related with …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-de.html",
+      "snippet": "PornHat hat eine große Sammlung von Mainstream-Pornovideos, die Tausende von Filmen mit 300 wöchentlich hinzugefügten …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-fr.html",
+      "snippet": "PornHat est le meilleur tube porno gratuit avec des bandes-annonces exclusives en véritable qualité 720p, ainsi que des tonnes …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-es.html",
+      "snippet": "PornHat tiene una gran colección de videos porno que cuentan miles de películas con 300 nuevos clips pornográficos agregados …"
+    },
+    {
+      "title": "PornHat",
+      "url": "http://www.pornhat.net/index-tr.html",
+      "snippet": "PornHat, haftada bir kez eklenen 300 taze pornografik klibin yer aldığı binlerce harekete geçen büyük porno videoları koleksiyonuna …"
+    }
+  ]
+}

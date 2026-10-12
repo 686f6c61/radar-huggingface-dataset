@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Omega-Factory/gemma-4-31b-GGUF",
+  "slug": "omega-factory-gemma-4-31b-gguf",
+  "author": "Omega-Factory",
+  "url": "https://huggingface.co/Omega-Factory/gemma-4-31b-GGUF",
+  "created_at": "2026-10-11T03:03:35.000Z",
+  "updated_at": "2026-10-11T20:38:53.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "compressed",
+    "text-generation",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 63238999296,
+  "storage_human": "63.2 GB",
+  "base_model": "google/gemma-4-31b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OMEGA® Swiss Luxury Watches Since 1848 | OMEGA®",
+      "url": "https://www.omegawatches.com/",
+      "snippet": "OMEGA® Watches: Official website of the Swiss Luxury Watch manufacturer. Discover the brand's world-renowned watches and …"
+    },
+    {
+      "title": "Montres OMEGA : Fabricant de Montres Suisses de luxe | OMEGA®",
+      "url": "https://www.omegawatches.com/fr/",
+      "snippet": "Montres OMEGA® : site officiel de la Manufacture de montres de luxe suisse. Découvrez les célèbres collections d’horlogerie et de …"
+    },
+    {
+      "title": "Omega montres - Chrono24.fr",
+      "url": "https://www.chrono24.fr/omega/index.htm",
+      "snippet": "Omega est synonyme de tradition, de précision et de progrès. Des créations telles que l'échappement Co-Axial, le Master …"
+    },
+    {
+      "title": "Omega | Lepage Revendeur Officiel",
+      "url": "https://www.lepage.fr/fr/260-omega",
+      "snippet": "Les emblématiques montres OMEGA sont réputées dans le monde entier pour leur précision, leur qualité et leur beauté …"
+    },
+    {
+      "title": "Oméga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Om%C3%A9ga",
+      "snippet": "La minuscule ω possède les codages suivants : Unicode : U+03C9 Entité HTML : & omega; TeX : \\omega ; ω {\\displaystyle \\omega } …"
+    }
+  ]
+}

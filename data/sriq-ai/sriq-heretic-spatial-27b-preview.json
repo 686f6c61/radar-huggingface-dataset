@@ -5,7 +5,7 @@
   "author": "sriq-ai",
   "url": "https://huggingface.co/sriq-ai/sriq-heretic-spatial-27b-preview",
   "created_at": "2026-10-10T22:34:03.000Z",
-  "updated_at": "2026-10-10T22:37:15.000Z",
+  "updated_at": "2026-10-11T13:17:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": 27356728560,
   "parameters_human": "27.36B",

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Luffuly/streaming-code-world-model",
+  "slug": "luffuly-streaming-code-world-model",
+  "author": "Luffuly",
+  "url": "https://huggingface.co/Luffuly/streaming-code-world-model",
+  "created_at": "2026-10-11T20:00:44.000Z",
+  "updated_at": "2026-10-11T20:01:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "video-generation",
+    "world-model",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2385650968,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comic Art Fans - The Original Comic Art Gallery for Collectors and …",
+      "url": "https://www.comicartfans.com/",
+      "snippet": "Sep 24, 2026 · There are more than 1.2 million artworks shared on Comic Art Fans (CAF) by Collectors, Artists, Dealers, Reps and …"
+    },
+    {
+      "title": "Comic Art Fans - Facebook",
+      "url": "https://www.facebook.com/ComicArtFans/",
+      "snippet": "Comic Art LIVE is a virtual comic art convention, hosted twice a year by ComicArtFans.com (CAF) — the global hub for comic and …"
+    },
+    {
+      "title": "Comic strips, illustrations in fans galleries - Original comic art ...",
+      "url": "https://www.2dgalleries.com/?lang=en",
+      "snippet": "Art - Community of original comic art fans - Virtual galleries of comic artworks - Original comic strips, illustrations, conventions …"
+    },
+    {
+      "title": "Comic Art Fans Update 300 - YouTube",
+      "url": "https://www.youtube.com/watch?v=ebvYl5fXup0",
+      "snippet": "Click Here to View the Artworks from this CAF Update: https://www.comicartfans.com/YouTubeD..."
+    },
+    {
+      "title": "Comic Art Fans Update 303 - YouTube",
+      "url": "https://www.youtube.com/watch?v=q6Uv8qkY6X0",
+      "snippet": "For our 303rd Episode, we run down all the popular artworks posted to CAF from August 31-September 6, and also review highlights …"
+    }
+  ]
+}

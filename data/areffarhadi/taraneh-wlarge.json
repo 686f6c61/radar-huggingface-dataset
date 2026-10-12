@@ -5,7 +5,7 @@
   "author": "areffarhadi",
   "url": "https://huggingface.co/areffarhadi/Taraneh-WLarge",
   "created_at": "2026-10-10T22:41:37.000Z",
-  "updated_at": "2026-10-10T23:51:01.000Z",
+  "updated_at": "2026-10-11T13:43:03.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 14,
   "trending_score": 0,
   "parameters": 1543490560,
   "parameters_human": "1.54B",

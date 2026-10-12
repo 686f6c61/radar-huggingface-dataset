@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Sky-06/qwen2.5-coder-1.5b-agentic-sft",
+  "slug": "sky-06-qwen2-5-coder-1-5b-agentic-sft",
+  "author": "Sky-06",
+  "url": "https://huggingface.co/Sky-06/qwen2.5-coder-1.5b-agentic-sft",
+  "created_at": "2026-10-11T17:51:36.000Z",
+  "updated_at": "2026-10-11T21:24:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "arxiv:2502.02737",
+    "arxiv:2409.12186",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 15448769230,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discover TV, Broadband & Mobile Phone Packages with Sky",
+      "url": "https://www.sky.com/?msockid=0d4c0995099067dd352f1e7a08a66670",
+      "snippet": "Discover Sky packages for TV, broadband & mobile including Glass - the new streaming TV with Sky Inside. Login to manage your …"
+    },
+    {
+      "title": "Sky",
+      "url": "https://www.skyairline.com/",
+      "snippet": "SKY Airline provides affordable flights to national and international destinations, ensuring a budget-friendly travel experience."
+    },
+    {
+      "title": "Vols pas chers : comparateur de vols et billets d'avion | Skyscanner",
+      "url": "https://www.skyscanner.fr/",
+      "snippet": "Comparez les vols des grandes compagnies aériennes et agences de voyages. Réservez en ligne les billets les moins chers pour …"
+    },
+    {
+      "title": "Sky Tonight — Ce qui est visible depuis votre position",
+      "url": "https://sky-tonight.com/fr/",
+      "snippet": "Découvrez ce qui se passe ce soir dans le ciel depuis votre position : Lune, planètes, étoiles brillantes, nébuleuses, météores et …"
+    },
+    {
+      "title": "The Latest News from the UK and Around the World | Sky News",
+      "url": "https://news.sky.com/",
+      "snippet": "Sky News delivers breaking news, headlines and top stories from business, politics, entertainment and more in the UK and worldwide."
+    }
+  ]
+}

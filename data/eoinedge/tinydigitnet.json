@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "eoinedge/TinyDigitNet",
+  "slug": "eoinedge-tinydigitnet",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/TinyDigitNet",
+  "created_at": "2026-10-11T23:09:41.000Z",
+  "updated_at": "2026-10-11T23:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tflite",
+    "executorch",
+    "zephyr",
+    "tinyml",
+    "mnist",
+    "cortex-m",
+    "esp32",
+    "int8",
+    "image-classification",
+    "dataset:ylecun/mnist",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142091,
+  "storage_human": "142091 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Handwritten digit recognition",
+      "dataset": "MNIST test set",
+      "metric": "Top-1 accuracy (fp32, 10,000 test images)",
+      "value": 0.9746
+    }
+  ],
+  "sources": []
+}

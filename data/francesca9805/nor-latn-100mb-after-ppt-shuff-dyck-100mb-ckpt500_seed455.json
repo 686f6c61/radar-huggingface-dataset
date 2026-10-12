@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/nor-latn-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
   "created_at": "2026-10-11T18:09:41.000Z",
-  "updated_at": "2026-10-11T19:47:07.000Z",
+  "updated_at": "2026-10-11T23:00:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 2996003103,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 9265808548,
+  "storage_human": "9.3 GB",
   "base_model": "fpadovani/nor-latn-100mb-ppt-shuff-dyck-100mb_seed455",
   "formats": [
     "safetensors"

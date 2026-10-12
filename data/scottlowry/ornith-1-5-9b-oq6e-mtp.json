@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Ornith-1.5-9B-oQ6e-mtp",
+  "slug": "scottlowry-ornith-1-5-9b-oq6e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ6e-mtp",
+  "created_at": "2026-10-11T22:43:39.000Z",
+  "updated_at": "2026-10-11T22:46:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 8518059518,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VScode怎么ctrl+P搜不到文件呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/477614549",
+      "snippet": "vscode 有时全局搜索内容明显不对，或者明明有这个文件 ，Ctrl+P却搜索不到，可能是搜索时使用了.ignore文件 导致忽略了其中的内 …Read more"
+    },
+    {
+      "title": "vscode最新版本有问题？开vscode电脑卡得不行? - 知乎",
+      "url": "https://www.zhihu.com/question/67317040",
+      "snippet": "下载 vscode1.18以上版本 Documentation for Visual Studio Code 1.18 安装完成后 文件>首选项>设置 搜索设置 search.followSymlinks …"
+    },
+    {
+      "title": "VSCode有在search中files to include里定制要搜索的 ... - 知乎",
+      "url": "https://www.zhihu.com/question/653250829",
+      "snippet": "VSCode有在search中files to include里定制要搜索的文件类型的插件吗？ 我想在files to include里自定义一些文件类型，比如我作为 …"
+    },
+    {
+      "title": "做图像检索，图像库从哪儿能下载到？ - 知乎",
+      "url": "https://www.zhihu.com/question/25039851",
+      "snippet": "Stanford Mobile Visual Search， Stanford Mobile Visual Search Dataset，2011.2，stanford提供，包括8种场景，如CD封面、油画 …"
+    },
+    {
+      "title": "如何在网上找到同样的图片? - 知乎",
+      "url": "https://www.zhihu.com/question/336641168",
+      "snippet": "点击「Visual Search」，可进入图片可视化搜索功能界面。 点击「Browse」可上传图片进行搜索， 接下来，还可以优化搜索结果。 …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jundot/clef-flash-oQ3.5e",
+  "slug": "jundot-clef-flash-oq3-5e",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/clef-flash-oQ3.5e",
+  "created_at": "2026-10-11T18:06:50.000Z",
+  "updated_at": "2026-10-11T18:07:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "clef",
+    "systemone",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 5519884229,
+  "storage_human": "5.5 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jundot/clef-flash-oQ4e · Hugging Face",
+      "url": "https://huggingface.co/Jundot/clef-flash-oQ4e",
+      "snippet": "A mixed-precision MLX checkpoint of Cloudflare/clef-flash, a decision model that answers typed questions (noul, choice, score) about text and images with a probability for each option."
+    },
+    {
+      "title": "Jundot/clef-flash-oQ4e at main - Hugging Face",
+      "url": "https://huggingface.co/Jundot/clef-flash-oQ4e/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "clef (Cloudflare) · Cloudflare AI docs · Cloudflare Workers AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef/",
+      "snippet": "Clef is a 27B multimodal decision model that turns a state and a schema of typed questions into decisions. It reads the state as text, JSON, images, or video, and returns a probability for every allowed option of every question."
+    },
+    {
+      "title": "Introducing Clef: our open-source decision models, and new RL fine ...",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "snippet": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data."
+    },
+    {
+      "title": "Clef-Flash: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/clef-flash/",
+      "snippet": "Clef-Flash by Cloudflare. Technical specifications, availability, pricing, and official sources. The profile includes only source-backed details."
+    }
+  ]
+}

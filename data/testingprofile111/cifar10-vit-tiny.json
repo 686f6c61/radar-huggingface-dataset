@@ -5,7 +5,7 @@
   "author": "TestingProfile111",
   "url": "https://huggingface.co/TestingProfile111/cifar10-vit-tiny",
   "created_at": "2026-10-11T15:36:02.000Z",
-  "updated_at": "2026-10-11T15:36:08.000Z",
+  "updated_at": "2026-10-11T18:02:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 5526346,
   "parameters_human": "5.5M",
-  "storage_bytes": 22128104,
-  "storage_human": "22 MB",
+  "storage_bytes": 44256208,
+  "storage_human": "44 MB",
   "base_model": "WinKawaks/vit-tiny-patch16-224",
   "formats": [
     "safetensors"

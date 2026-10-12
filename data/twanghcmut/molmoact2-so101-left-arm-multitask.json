@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "twanghcmut/molmoact2-so101-left-arm-multitask",
+  "slug": "twanghcmut-molmoact2-so101-left-arm-multitask",
+  "author": "twanghcmut",
+  "url": "https://huggingface.co/twanghcmut/molmoact2-so101-left-arm-multitask",
+  "created_at": "2026-10-12T01:11:39.000Z",
+  "updated_at": "2026-10-12T01:13:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "molmoact2",
+    "so101",
+    "multitask",
+    "dataset:hungho77/so101_left_arm_pick_red_cube_into_pot",
+    "dataset:hungho77/so101_left_arm_pick_blue_cube_into_pot",
+    "dataset:hungho77/so101_left_arm_pick_banana_close_lid",
+    "dataset:hungho77/so101_left_arm_blue_cube_next_to_blue_cube",
+    "dataset:hungho77/so101_left_arm_blue_cube_out_of_pot_onto_blue_cube",
+    "dataset:hungho77/so101_left_arm_red_cube_out_of_pot_onto_red_cube",
+    "dataset:hungho77/so101_left_arm_stack_yellow_on_orange_cube",
+    "dataset:hungho77/so101_left_arm_stack_orange_blocks",
+    "dataset:hungho77/so101_left_arm_balance_red_blue_on_wooden_board",
+    "dataset:hungho77/so101_left_arm_red_cube_into_orange_hollow_cube",
+    "dataset:hungho77/so101_left_arm_blue_cubes_shortest_to_tallest",
+    "base_model:allenai/MolmoAct2-SO100_101",
+    "base_model:finetune:allenai/MolmoAct2-SO100_101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 12040339328,
+  "storage_human": "12.0 GB",
+  "base_model": "allenai/MolmoAct2-SO100_101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule34video.com",
+      "url": "https://rule34video.com/playlists/122998/redmoa98/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Redmoa — page 1 — R34 Booru",
+      "url": "https://r34booru.com/artists/redmoa",
+      "snippet": "Every work filed under Redmoa in the R34 Booru archive, each on its own page, shown whole and never cropped."
+    },
+    {
+      "title": "Redmoa - Danbooru",
+      "url": "https://danbooru.donmai.us/posts?tags=redmoa",
+      "snippet": "?rule 34 (meme)21. ?slapping penis43. ?aunt and nephew671. ?ruined orgasm107. ?kissing penis2.1k. ?3d30k. ?swallowing928. …"
+    },
+    {
+      "title": "Redmoa Porn - Rule 34",
+      "url": "https://hentaiporns.net/r/tag/redmoa/page/5/",
+      "snippet": "Rule34 redmoa Daily updated content. Discover thousands of new images, GIFs, and videos from the latest franchises. The best …"
+    },
+    {
+      "title": "Rule34.GG - redmoa, overwatch",
+      "url": "https://rule34.gg/?tags=redmoa+overwatch",
+      "snippet": "Rule34.GG: Your Ultimate Fantasy Hub. On this page redmoa, overwatch! is displayed"
+    }
+  ]
+}

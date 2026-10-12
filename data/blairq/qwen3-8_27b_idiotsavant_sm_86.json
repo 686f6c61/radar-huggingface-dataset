@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "BlairQ/qwen3.8_27b_idiotSavant_sm_86",
+  "slug": "blairq-qwen3-8_27b_idiotsavant_sm_86",
+  "author": "BlairQ",
+  "url": "https://huggingface.co/BlairQ/qwen3.8_27b_idiotSavant_sm_86",
+  "created_at": "2026-09-25T13:49:00.000Z",
+  "updated_at": "2026-10-11T20:36:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "uncensored",
+    "abliterated",
+    "int4",
+    "w4a8",
+    "gptq",
+    "quarot",
+    "hadamard-rotation",
+    "compressed-tensors",
+    "vllm",
+    "rtx-3090",
+    "sm86",
+    "ampere",
+    "agentic-coding",
+    "conversational",
+    "en",
+    "es",
+    "zh",
+    "arxiv:2404.00456",
+    "arxiv:2405.16406",
+    "arxiv:2501.13484",
+    "arxiv:2604.13440",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 165,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 31181668712,
+  "storage_human": "31.2 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOPHIA DI MARTINO Nude - AZNude",
+      "url": "https://www.aznude.com/view/celeb/s/sophiadimartino-102091.html",
+      "snippet": "SOPHIA DI MARTINO nude - 21 images and 4 videos - including scenes from \"Flowers\" - \"End-O\" - \"The Radleys\"."
+    },
+    {
+      "title": "Sophia Di Martino nude – 6 Photos and Uncensored Nude Scenes …",
+      "url": "https://celebnic.com/celebrities/sophia-di-martino/",
+      "snippet": "Sophia Di Martino nude – 6 hot photos and uncensored nude pics. Discover naked celebrity galleries with exclusive shots, rare pics, …"
+    },
+    {
+      "title": "Sophia Di Martino Sexy Scene in The Radleys - AZNude",
+      "url": "https://www.aznude.com/azncdn/ecb9dbd22eae4d1dbbc2d31b8c0df5f6/ecb9dbd22eae4d1dbbc2d31b8c0df5f6-hd.html",
+      "snippet": "Watch Sophia Di Martino's Sexy scene for free on AZNude (27 seconds)."
+    },
+    {
+      "title": "Sophia de Martino Naked (76 photos) - motherless porn pics",
+      "url": "https://motherlesspics.com/18257-sophia-de-martino-naked-76-photos.html",
+      "snippet": "Download - Sophia de Martino Naked (76 photos)."
+    },
+    {
+      "title": "Has Sophia Di Martino ever been nude? - Nudography.com",
+      "url": "https://www.nudography.com/Celebrities/sophia_di_martino.aspx",
+      "snippet": "We don't have any nude pictures of her. Usually this means that she hasn't done any nudity yet. But we could also be wrong, so if …"
+    }
+  ]
+}

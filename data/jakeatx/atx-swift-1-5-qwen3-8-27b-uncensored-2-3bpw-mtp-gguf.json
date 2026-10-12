@@ -5,7 +5,7 @@
   "author": "jakeatx",
   "url": "https://huggingface.co/jakeatx/ATX-Swift-1.5-Qwen3.8-27B-Uncensored-2.3bpw-MTP-GGUF",
   "created_at": "2026-10-09T01:06:14.000Z",
-  "updated_at": "2026-10-09T14:05:27.000Z",
+  "updated_at": "2026-10-11T08:23:02.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,12 +32,12 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 810,
+  "downloads_30d": 898,
   "trending_score": 0,
   "parameters": 27327153664,
   "parameters_human": "27.33B",
-  "storage_bytes": 9003017888,
-  "storage_human": "9.0 GB",
+  "storage_bytes": 9070126836,
+  "storage_human": "9.1 GB",
   "base_model": "d0xin/Swift-1.5-Qwen3.8-27B-Uncensored-BF16",
   "formats": [
     "gguf"

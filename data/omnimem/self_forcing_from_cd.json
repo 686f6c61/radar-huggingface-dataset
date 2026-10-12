@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "omnimem/self_forcing_from_cd",
+  "slug": "omnimem-self_forcing_from_cd",
+  "author": "omnimem",
+  "url": "https://huggingface.co/omnimem/self_forcing_from_cd",
+  "created_at": "2026-10-11T22:47:37.000Z",
+  "updated_at": "2026-10-11T22:48:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "omnimem",
+    "wan",
+    "video-generation",
+    "self-forcing",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1420656760,
+  "parameters_human": "1.42B",
+  "storage_bytes": 5682716392,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

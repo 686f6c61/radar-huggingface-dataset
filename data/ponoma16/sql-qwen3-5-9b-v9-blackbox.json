@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "ponoma16/sql-qwen3.5-9b-v9-blackbox",
+  "slug": "ponoma16-sql-qwen3-5-9b-v9-blackbox",
+  "author": "ponoma16",
+  "url": "https://huggingface.co/ponoma16/sql-qwen3.5-9b-v9-blackbox",
+  "created_at": "2026-10-11T22:41:11.000Z",
+  "updated_at": "2026-10-11T22:48:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

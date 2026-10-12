@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dfed24/Qwen3.8-27B-GPTQ-GGUF",
+  "slug": "dfed24-qwen3-8-27b-gptq-gguf",
+  "author": "dfed24",
+  "url": "https://huggingface.co/dfed24/Qwen3.8-27B-GPTQ-GGUF",
+  "created_at": "2026-10-11T22:31:11.000Z",
+  "updated_at": "2026-10-11T22:31:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gptq",
+    "quantized",
+    "qwen3.8",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16528027584,
+  "storage_human": "16.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Irida (Pokemon) | Danbooru",
+      "url": "https://danbooru.donmai.us/posts?tags=irida_%28pokemon%29",
+      "snippet": "See over 2.2 thousand Irida (Pokemon) images on Danbooru. Irida (English) / Kai (Japanese) is a character introduced in Pokémon …"
+    },
+    {
+      "title": "Home | Scrolller",
+      "url": "https://scrolller.com/",
+      "snippet": "Explore millions of awesome videos and pictures in an endless random gallery on Scrolller.com."
+    },
+    {
+      "title": "irida - pictures, memes and posts on JoyReactor",
+      "url": "https://joyreactor.com/search/irida",
+      "snippet": "Here we collect best posts, arts, videos, memes related to irida (+18 posts - irida)"
+    },
+    {
+      "title": "Irida (Pokemon) :: Pokemon trainers :: Pokemon Characters :: Pokemon ...",
+      "url": "https://joyreactor.com/tag/Irida%20(Pokemon)",
+      "snippet": "Here we collect jokes, videos, memes and pictures about Irida (Pokemon) (+29 posts - Irida (Pokemon))"
+    },
+    {
+      "title": "irida and rei (pokemon and 1 more) drawn by soso_ (chlgksk110 ...",
+      "url": "https://danbooru.donmai.us/posts/5320015",
+      "snippet": "May 2, 2022 · View this 928x1311 877 KB image"
+    }
+  ]
+}

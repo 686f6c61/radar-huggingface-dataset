@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/rudra-GGUF",
   "created_at": "2026-10-11T00:04:22.000Z",
-  "updated_at": "2026-10-11T00:24:03.000Z",
+  "updated_at": "2026-10-11T03:20:30.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -45,7 +45,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 555,
   "trending_score": 0,
   "parameters": 4326350848,
   "parameters_human": "4.33B",

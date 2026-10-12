@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ruddls030/haru-e5-small-int8",
+  "slug": "ruddls030-haru-e5-small-int8",
+  "author": "ruddls030",
+  "url": "https://huggingface.co/ruddls030/haru-e5-small-int8",
+  "created_at": "2026-10-11T13:11:14.000Z",
+  "updated_at": "2026-10-12T00:51:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "harupet",
+    "ko",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608303973,
+  "storage_human": "608 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best porn comics | Read erotic comics for free, Adult sex comics ...",
+      "url": "https://hqporncomics.com/zone/?go=best",
+      "snippet": "2 days ago · On this page, especially for you, we have selected in our opinion the best porn comics. Only the latest news from the …"
+    },
+    {
+      "title": "Cartoon Porn - Free Comics .XXX",
+      "url": "https://www.freecomics.xxx/genre-cartoon-page-1.html",
+      "snippet": "Jul 21, 2025 · Welcome to our website! If you like reading cartoon porn comics and are looking for an interesting books for yourself, …"
+    },
+    {
+      "title": "Most Popular Porn Comics | Most Popular Hentai Comics | Most …",
+      "url": "https://hdporncomics.com/tag/most-popular/page/2/",
+      "snippet": "Read Most Popular Porn, Hentai and Sex Comics for free on HD Porn Comics! Enjoy fapping to the sexy and luscious Most Popular …"
+    },
+    {
+      "title": "Best sex comics: 20 great NSFW comic books, manga, and ... - Inverse",
+      "url": "https://www.inverse.com/health/14283-best-sex-comics",
+      "snippet": "Aug 16, 2023 · These are some of our favorite examples of contemporary comics that use lust, sensuality, desire, and/or debauchery …"
+    },
+    {
+      "title": "Best Porn Comics Sites (2026) — Reviewed & Ranked | TheFapGuide",
+      "url": "https://thefapguide.com/best/best-porn-comics",
+      "snippet": "The best free porn comics sites in 2026 — massive hentai libraries, 3D renders, Western parodies, and manhwa. We tested 15+ sites."
+    }
+  ]
+}

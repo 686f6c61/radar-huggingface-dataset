@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bettercallyugi/test",
+  "slug": "bettercallyugi-test",
+  "author": "bettercallyugi",
+  "url": "https://huggingface.co/bettercallyugi/test",
+  "created_at": "2026-10-11T20:01:46.000Z",
+  "updated_at": "2026-10-11T20:01:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "Best AI Right Now - Top Model 2026 | LM Market Cap",
+      "url": "https://lmmarketcap.com/best-ai-right-now",
+      "snippet": "Which AI model is the best right now? See today&#x27;s top-ranked AI model plus category winners for coding, writing, math, and image generation with source-backed pricing and benchmark freshness."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "Can I run AI locally? Best models for your GPU",
+      "url": "https://www.canirun.ai/",
+      "snippet": "Detect your GPU or Mac and see which open LLMs, coding, image and video models you can run locally. VRAM requirements, speed estimates and grades."
+    }
+  ]
+}

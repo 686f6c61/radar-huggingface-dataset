@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jundot/DeepSeek-V4-Flash-0731-oQ3e-mtp",
+  "slug": "jundot-deepseek-v4-flash-0731-oq3e-mtp",
+  "author": "Jundot",
+  "url": "https://huggingface.co/Jundot/DeepSeek-V4-Flash-0731-oQ3e-mtp",
+  "created_at": "2026-10-11T19:21:20.000Z",
+  "updated_at": "2026-10-11T19:22:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "deepseek_v4",
+    "oq",
+    "quantized",
+    "mtp",
+    "text-generation",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-0731",
+    "license:mit",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304180418494,
+  "parameters_human": "304.18B",
+  "storage_bytes": 138383095359,
+  "storage_human": "138.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-0731",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "လိုးကား – Page 2 – Wone Dine [အပြာကား]",
+      "url": "https://wonedine.com/tag/%E1%80%9C%E1%80%AD%E1%80%AF%E1%80%B8%E1%80%80%E1%80%AC%E1%80%B8/page/2/",
+      "snippet": "Copyright © 2026 Wone Dine [အပြာကား] Design by ThemesDNA.com"
+    },
+    {
+      "title": "အိမ်တွင်းဖြစ် လိုးကားအရှည် စောက်ရမ်းမိုက်တဲ့ အောကား",
+      "url": "https://allkabar.com/%E1%80%A1%E1%80%AD%E1%80%99%E1%80%BA%E1%80%90%E1%80%BD%E1%80%84%E1%80%BA%E1%80%B8%E1%80%96%E1%80%BC%E1%80%85%E1%80%BA-%E1%80%9C%E1%80%AD%E1%80%AF%E1%80%B8%E1%80%80%E1%80%AC%E1%80%B8%E1%80%A1%E1%80%9B/",
+      "snippet": "Aug 9, 2026 · ဒီနေ့မှာတော့ ပရိသတ်တွေအတွက် ဇာတ်လမ်းကောင်းလေးဖြစ်တဲ့ **အိမ်တွင်းဖြစ် လိုးကား အရှည် စောက်ရမ်းမိုက်တဲ့ …"
+    },
+    {
+      "title": "SarBaeGyi - မြန်မာအောကားများ လိုးကား နှင့် ချောင်းရိုက်",
+      "url": "https://sarbaegyi.com/",
+      "snippet": "စားဘဲကြီး (SarBaeGyi) သည် မြန်မာအောကား၊ လိုးကား နှင့် ချောင်းရိုက် ဇာတ်ကားများကို နေ့စဉ် အသစ်တင်ဆက်ပေးနေသော …"
+    },
+    {
+      "title": "November 2022 – May Noe [အပြာကား]",
+      "url": "https://maynoe.com/2022/11/",
+      "snippet": "အောကား Application ထဲမှာ www.maynoe.com ကို Web View အနေနဲ့ ထည့်သွင်းအသုံးပြုနိုင ..."
+    },
+    {
+      "title": "မမကြီးကိုအိမ်ခေါ်လိုး",
+      "url": "https://sarbaegyi.com/%e1%80%99%e1%80%99%e1%80%80%e1%80%bc%e1%80%ae%e1%80%b8%e1%80%80%e1%80%ad%e1%80%af%e1%80%a1%e1%80%ad%e1%80%99%e1%80%ba%e1%80%81%e1%80%b1%e1%80%ab%e1%80%ba%e1%80%9c%e1%80%ad%e1%80%af%e1%80%b8/",
+      "snippet": "Feb 10, 2024 · မမကြီးကိုအိမ်ခေါ်လိုး — Sarbaegyi တွင် မြန်မာအောကားနှင့် ချောင်းရိုက်ကားများကို ကြည့်ပါ။"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "obraia/sam2.1-tiny-video-onnx-fp16",
+  "slug": "obraia-sam2-1-tiny-video-onnx-fp16",
+  "author": "obraia",
+  "url": "https://huggingface.co/obraia/sam2.1-tiny-video-onnx-fp16",
+  "created_at": "2026-10-11T22:43:53.000Z",
+  "updated_at": "2026-10-11T22:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "mask-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "segment-anything",
+    "video-segmentation",
+    "fp16",
+    "webgpu",
+    "onnxruntime-web",
+    "mask-generation",
+    "base_model:facebook/sam2.1-hiera-tiny",
+    "base_model:quantized:facebook/sam2.1-hiera-tiny",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83603331,
+  "storage_human": "84 MB",
+  "base_model": "facebook/sam2.1-hiera-tiny",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel One of YouTube’s most creative prop-making duos, @WickedMakers, is known for creating …Read more"
+    },
+    {
+      "title": "The Music Channel - YouTube",
+      "url": "https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+      "snippet": "Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the latest in the music …"
+    },
+    {
+      "title": "video - YouTube",
+      "url": "https://www.youtube.com/Video",
+      "snippet": "Music video by Video feat. Jan Borysewicz performing Kryzysowy. (P) 2013 The copyright in this audiovisual recording is owned by …"
+    },
+    {
+      "title": "Vídeos en español - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLE60A581BA7D5B96A",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

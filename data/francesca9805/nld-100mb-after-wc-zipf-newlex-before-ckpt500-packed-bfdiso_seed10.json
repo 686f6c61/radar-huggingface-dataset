@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "slug": "francesca9805-nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nld-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "created_at": "2026-10-11T23:02:41.000Z",
+  "updated_at": "2026-10-12T01:14:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 9235303427,
+  "storage_human": "9.2 GB",
+  "base_model": "francesca9805/ppt-wc-zipf-newlex-nld-before-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Solved] Recommended Joystick Controller for Linux",
+      "url": "https://forums.x-plane.org/forums/topic/249284-solved-recommended-joystick-controller-for-linux/",
+      "snippet": "Jul 14, 2021 · I have used Thrustmaster sticks and currently have Linux Mint with both a T-Flight Stick X and a T-16000X set up and …"
+    },
+    {
+      "title": "T.Flight Stick X - Thrustmaster",
+      "url": "https://support.thrustmaster.com/en/product/tflightstickx-en/",
+      "snippet": "Download the latest drivers, firmware and manuals for your T.Flight Stick X. Find installation guides and solutions to common issues …"
+    },
+    {
+      "title": "Solved - Looking for joystick purchase advice compatible with Linux …",
+      "url": "https://www.linux.org/threads/looking-for-joystick-purchase-advice-compatible-with-linux-and-dosbox.45061/",
+      "snippet": "May 17, 2023 · Would like to dive back into the joys of playing old DOS space sims like Tie Fighter, X-Wing, Wing Commander, …"
+    },
+    {
+      "title": "ThrustMaster T.Flight Stick X - Linux Hardware Database",
+      "url": "https://linux-hardware.org/?id=usb%3A044f-b107",
+      "snippet": "Device 'ThrustMaster T.Flight Stick X' ... Find drivers for your hardware by creating a probe."
+    },
+    {
+      "title": "Thrustmaster T.Flight Stick X - Linux - Steam Community",
+      "url": "https://steamcommunity.com/app/502500/discussions/0/690867902968095070/",
+      "snippet": "Nov 23, 2025 · J'ai eu beaucoup de mal à configurer ce joystick sur ACE COMBAT7 sous Linux. Tout d'abord ACE COMBAT7."
+    }
+  ]
+}

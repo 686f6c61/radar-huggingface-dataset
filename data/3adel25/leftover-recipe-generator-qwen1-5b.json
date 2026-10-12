@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "3adel25/leftover-recipe-generator-qwen1.5b",
+  "slug": "3adel25-leftover-recipe-generator-qwen1-5b",
+  "author": "3adel25",
+  "url": "https://huggingface.co/3adel25/leftover-recipe-generator-qwen1.5b",
+  "created_at": "2026-10-11T23:01:00.000Z",
+  "updated_at": "2026-10-12T00:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "conversational",
+    "en",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B, Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tous les Épisodes Six D'entre Nous (Sahipsizler Full Episodes)",
+      "url": "https://www.youtube.com/playlist?list=PLTlThK7fT3X8",
+      "snippet": "Tous les Épisodes Six D'entre Nous (Sahipsizler Full Episodes) Après avoir perdu leurs parents du jour au lendemain, six frères et …"
+    },
+    {
+      "title": "Six D'entre Nous Épisode 1 (Doublage en Français) - YouTube",
+      "url": "https://www.youtube.com/watch?v=wON10NdvpEM",
+      "snippet": "Jun 25, 2026 · La série raconte l’histoire de six frères et sœurs Azize, Cemo, Zeliha, Fidan, Samet et Balım qui, après avoir perdu …"
+    },
+    {
+      "title": "Sahipsizler (Six d'entre nous) - résumé et infos sur la ... - TikTok",
+      "url": "https://www.tiktok.com/@fannynguimbi/video/7669736360521125128",
+      "snippet": "Sahipsizler — aussi présenté sous le titre français Six d'entre nous — est une série turque centrée sur le groupe de six personnages …"
+    },
+    {
+      "title": "Traduction de \"Six d'entre nous\" en anglais - Reverso Context",
+      "url": "https://context.reverso.net/traduction/francais-anglais/Six+d%27entre+nous",
+      "snippet": "Traductions en contexte de \"Six d'entre nous\" en français-anglais avec Reverso Context : Six d'entre nous prendront astronomie au …"
+    },
+    {
+      "title": "Sahipsizler — Six d'entre nous : série turque en français | TikTok",
+      "url": "https://www.tiktok.com/@fannynguimbi/video/7671263217963912456",
+      "snippet": "Qu'est-ce que Sahipsizler / Six d'entre nous ? Sahipsizler est une série turque connue aussi sous le titre français Six d'entre nous. …"
+    }
+  ]
+}

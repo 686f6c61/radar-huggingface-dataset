@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "eric-ml-nlp/Delveta-BGE-M3-v1",
+  "slug": "eric-ml-nlp-delveta-bge-m3-v1",
+  "author": "eric-ml-nlp",
+  "url": "https://huggingface.co/eric-ml-nlp/Delveta-BGE-M3-v1",
+  "created_at": "2026-10-04T19:11:36.000Z",
+  "updated_at": "2026-10-11T20:28:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "retrieval",
+    "dense-retrieval",
+    "sentence-similarity",
+    "feature-extraction",
+    "bge-m3",
+    "capability-retrieval",
+    "multilingual",
+    "arxiv:2402.03216",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3992228184,
+  "storage_human": "4.0 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ERIC - Education Resources Information Center",
+      "url": "https://eric.ed.gov/",
+      "snippet": "ERIC is an online library of education research and information, sponsored by the Institute of Education Sciences (IES) of the U.S. …Read more"
+    },
+    {
+      "title": "Éric — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89ric",
+      "snippet": "La forme de langue anglaise Eric n'est pas un import du suédois mais elle est directement issue du vieux norrois Eiríkr ou ÆiríkR de …"
+    },
+    {
+      "title": "Eric (mini-série) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Eric_(mini-s%C3%A9rie)",
+      "snippet": "Eric est une mini-série télévisée britannique en six épisodes de 52 à 55 minutes, créée par Abi Morgan et diffusée le 30 mai 2024 sur …"
+    },
+    {
+      "title": "Eric - Série TV 2024 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=33572.html",
+      "snippet": "Découvrez la série TV Eric de Abi Morgan avec Benedict Cumberbatch (Vincent Sullivan ), Gaby Hoffmann (Cassie Anderson). …"
+    },
+    {
+      "title": "ERIC - ProQuest",
+      "url": "https://about.proquest.com/en/products-services/eric",
+      "snippet": "ERIC is the world's most widely used index to educational-related literature. Established in 1966, ERIC is supported by the U.S. …"
+    }
+  ]
+}

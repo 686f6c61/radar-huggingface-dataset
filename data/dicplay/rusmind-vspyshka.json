@@ -5,7 +5,7 @@
   "author": "DICPlay",
   "url": "https://huggingface.co/DICPlay/RusMind-Vspyshka",
   "created_at": "2026-10-11T01:50:28.000Z",
-  "updated_at": "2026-10-11T02:25:41.000Z",
+  "updated_at": "2026-10-11T22:28:42.000Z",
   "license": "rusmind-license",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": 7518069290,
   "parameters_human": "7.52B",
-  "storage_bytes": 30945414208,
-  "storage_human": "30.9 GB",
+  "storage_bytes": 71149359648,
+  "storage_human": "71.1 GB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "gguf"

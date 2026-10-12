@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Jinstudio/stable-diffusion-xl-1.0-inpainting-0.1",
+  "slug": "jinstudio-stable-diffusion-xl-1-0-inpainting-0-1",
+  "author": "Jinstudio",
+  "url": "https://huggingface.co/Jinstudio/stable-diffusion-xl-1.0-inpainting-0.1",
+  "created_at": "2026-10-11T18:01:45.000Z",
+  "updated_at": "2026-10-11T18:01:46.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "text-to-image",
+    "inpainting",
+    "arxiv:2112.10752",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:finetune:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "diffusers:StableDiffusionXLInpaintPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567478084,
+  "parameters_human": "2.57B",
+  "storage_bytes": 20815472866,
+  "storage_human": "20.8 GB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1 · Hugging Face",
+      "url": "https://huggingface.co/diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "stable-diffusion-xl-1.0-inpainting-0.1 - Hugging Face",
+      "url": "https://huggingface.co/stablediffusionapi/stable-diffusion-xl-1.0-inpainting-0.1",
+      "snippet": "stable-diffusion-xl-1.-inpainting-.1 API Inference Get API Key Get API key from Stable Diffusion API, No Payment needed. Replace Key in below code, change model_id to \"stable-diffusion-xl-1.-inpainting-.1\" Coding in PHP/Node/Java etc? Have a look at docs for more code examples: View docs Try model for free: Generate Images Model link: View model Credits: View credits View all models: View ..."
+    },
+    {
+      "title": "stable-diffusion-xl-1.0-inpainting-0.1: Text-to-Image model — overview ...",
+      "url": "https://www.aimodels.fyi/models/huggingFace/stable-diffusion-xl-10-inpainting-01-diffusers",
+      "snippet": "Overview stable-diffusion-xl-1.-inpainting-.1 is a latent diffusion model developed by diffusers that generates and modifies images based on text prompts with masking-based inpainting capability. The model builds on stable-diffusion-xl-base-1. weights and was trained for 40,000 steps at 1024×1024 resolution with 5% text-conditioning dropout to improve classifier-free guidance. The ..."
+    },
+    {
+      "title": "XL V1.0 Inpainting — SDXL Model on Stable Diffusion API",
+      "url": "https://stablediffusionapi.com/models/xlv10inpainting",
+      "snippet": "Use XL V1.0 Inpainting (SDXL Stable Diffusion model) via the Stable Diffusion API — REST endpoint, model_id \"xlv10inpainting\", cURL/Python/Node samples. No download required."
+    },
+    {
+      "title": "stable-diffusion-xl-1.0-inpainting-0.1 — Text-to-Image Model",
+      "url": "https://modeldatabase.com/diffusers/stable-diffusion-xl-1.0-inpainting-0.1.html",
+      "snippet": "The SD-XL Inpainting 0.1 was initialized with the stable-diffusion-xl-base-1. weights. The model is trained for 40k steps at resolution 1024x1024 and 5% dropping of the text-conditioning to improve classifier-free classifier-free guidance sampling."
+    }
+  ]
+}

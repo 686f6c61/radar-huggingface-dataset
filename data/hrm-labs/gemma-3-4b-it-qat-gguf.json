@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hrm-labs/gemma-3-4b-it-qat-GGUF",
+  "slug": "hrm-labs-gemma-3-4b-it-qat-gguf",
+  "author": "hrm-labs",
+  "url": "https://huggingface.co/hrm-labs/gemma-3-4b-it-qat-GGUF",
+  "created_at": "2026-10-12T01:14:18.000Z",
+  "updated_at": "2026-10-12T01:14:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 3377332736,
+  "storage_human": "3.4 GB",
+  "base_model": "google/gemma-3-4b-it-qat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'Équipe - L'actualité du sport en continu.",
+      "url": "https://www.lequipe.fr/",
+      "snippet": "carte cadeau homme L'Equipe abonnement L'Équipe + Ligue 1+ abonnement L'Équipe + Eurosport archives de L'Équipe © L'Équipe …"
+    },
+    {
+      "title": "Sport en direct : tous les résultats d’aujourd’hui et de ce soir",
+      "url": "https://www.lequipe.fr/Directs",
+      "snippet": "Suivez tous les directs de tous les sports, les résultats des matchs en live et commentaires des journalistes de L'Équipe."
+    },
+    {
+      "title": "LA CHAÎNE L'EQUIPE en direct live TV | TF1+",
+      "url": "https://www.tf1.fr/l-equipe/direct",
+      "snippet": "LA CHAÎNE L'EQUIPE en direct : 🔴 Retrouvez gratuitement et en direct tous les programmes, émissions et séries de LA CHAÎNE …"
+    },
+    {
+      "title": "L'Équipe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/L%27%C3%89quipe",
+      "snippet": "Containing the banner headline Pour L'Éternité (For Eternity), [8] it sold 1,645,907 copies. The second best was published on 3 July …"
+    },
+    {
+      "title": "Foot - actualités, mercato, info & vidéo en continu",
+      "url": "https://www.lequipe.fr/Football/",
+      "snippet": "Retrouvez toute l'actualité du football sur L'Équipe. Découvrez toutes les dernières informations de transferts et mercato, les …"
+    }
+  ]
+}

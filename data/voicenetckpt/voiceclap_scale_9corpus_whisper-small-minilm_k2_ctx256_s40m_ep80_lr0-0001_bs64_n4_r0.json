@@ -5,14 +5,13 @@
   "author": "VoiceNetCkpt",
   "url": "https://huggingface.co/VoiceNetCkpt/voiceclap_scale_9corpus_whisper-small-MiniLM_k2_ctx256_s40M_ep80_lr0.0001_bs64_n4_r0",
   "created_at": "2026-10-11T16:33:59.000Z",
-  "updated_at": "2026-10-11T17:41:07.000Z",
+  "updated_at": "2026-10-11T20:41:01.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": null,
   "languages": [],
   "tags": [
-    "tensorboard",
     "voiceclap",
     "checkpoint",
     "region:us"

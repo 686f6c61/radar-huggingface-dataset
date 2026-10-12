@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mxv456/spatial-wave-search-256m",
+  "slug": "mxv456-spatial-wave-search-256m",
+  "author": "mxv456",
+  "url": "https://huggingface.co/mxv456/spatial-wave-search-256m",
+  "created_at": "2026-10-11T19:49:14.000Z",
+  "updated_at": "2026-10-11T19:49:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "spatial-reasoning",
+    "path-finding",
+    "iterative-computation",
+    "vision-transformer",
+    "maps",
+    "amsterdam",
+    "from-scratch",
+    "image-segmentation",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35704273,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "route search on map layers, free-running on the network's own scratchpad",
+      "dataset": "De Pijp (Amsterdam) held-out validation routes, 500 routes, 40–500 m walking",
+      "metric": "solved (cell rule: connected, no building cell, ≤ 1.10 × walking length)",
+      "value": 0.78
+    },
+    {
+      "task": "route search on map layers, free-running on the network's own scratchpad",
+      "dataset": "De Pijp (Amsterdam) held-out validation routes, 500 routes, 40–500 m walking",
+      "metric": "solved (polyline rule shared with the VLM baseline)",
+      "value": 0.76
+    },
+    {
+      "task": "never-seen district (Zuid + Centrum), 500 validation routes",
+      "dataset": "Zuid + Centrum 256 m validation routes",
+      "metric": "solved (cell rule)",
+      "value": 0.6
+    },
+    {
+      "task": "zero-shot on a synthetic house maze",
+      "dataset": "house maze, 256 m windows, 500 validation routes",
+      "metric": "solved (cell rule)",
+      "value": 0.51
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the …Read more"
+    },
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Porn - xHamster",
+      "url": "https://xhamster.com/tags/porn",
+      "snippet": "Treat yourself to porn videos instantly. Watch the most sexually arousing free porn of 2026 here on xHamster, because you deserve …"
+    },
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Tube Pleasure | Free Tube Porn Videos",
+      "url": "https://tubepleasure.com/en/",
+      "snippet": "Porn videos: Mom, Stepmom, Wife, Vintage, Mature, Shemale, Teen (18+), Milf, Interracial, Cartoon, Granny, Creampie, Lesbian, …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "aikexue170",
   "url": "https://huggingface.co/aikexue170/jev-novel-3-0.8b-bf16",
   "created_at": "2026-10-10T17:38:13.000Z",
-  "updated_at": "2026-10-10T17:39:34.000Z",
+  "updated_at": "2026-10-11T05:17:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,7 +28,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 752395074,
   "parameters_human": "752.4M",

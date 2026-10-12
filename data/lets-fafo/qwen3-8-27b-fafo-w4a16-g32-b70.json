@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70",
+  "slug": "lets-fafo-qwen3-8-27b-fafo-w4a16-g32-b70",
+  "author": "Lets-Fafo",
+  "url": "https://huggingface.co/Lets-Fafo/Qwen3.8-27B-FAFO-W4A16-G32-B70",
+  "created_at": "2026-10-11T19:37:47.000Z",
+  "updated_at": "2026-10-11T20:15:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "compressed-tensors",
+    "int4",
+    "w4a16",
+    "intel",
+    "xpu",
+    "arc-pro-b70",
+    "fafo",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 20605924224,
+  "storage_human": "20.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lets or Let’s – What’s the Difference? - Writing Explained",
+      "url": "https://writingexplained.org/lets-or-lets-difference",
+      "snippet": "What is the Difference Between Lets and Let’s? In this post, I will compare lets vs. let’s. I will use each in a sentence to demonstrate …"
+    },
+    {
+      "title": "Let’s vs. Lets—What’s the Difference? | Grammarly",
+      "url": "https://www.grammarly.com/blog/commonly-confused-words/lets-vs-lets/?msockid=3afe8673c96a67751b12919cc860662a",
+      "snippet": "Dec 16, 2020 · Let’s and lets are both derived from the verb “let,” but they have different meanings and usages. Learn the difference …"
+    },
+    {
+      "title": "Lets vs. Let’s – Which is Correct?",
+      "url": "https://correctwording.com/lets-vs-lets/",
+      "snippet": "Nov 17, 2025 · In the English language, “lets” and “let’s” are often confused words, but they serve different functions. “Lets” is a verb, …"
+    },
+    {
+      "title": "Let’s vs Lets Explained in English with Uses and Examples",
+      "url": "https://vocabish.com/lets-vs-lets/",
+      "snippet": "Sep 30, 2025 · Learn the difference between Let’s and Lets with meanings and examples. Understand how and when to use each …"
+    },
+    {
+      "title": "LET'S Group By Thomas Alléno - Agence Evénementielle",
+      "url": "https://www.luxurysevents.com/",
+      "snippet": "LET'S by Thomas Alléno conçoit et met en lumière vos événements. Spécialisé dans le luxe, LET'S s'entoure des meilleurs talents. …"
+    }
+  ]
+}

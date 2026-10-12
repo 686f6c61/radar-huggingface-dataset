@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "cooler8/yejin-korean-8b-v3-dpo-v4",
+  "slug": "cooler8-yejin-korean-8b-v3-dpo-v4",
+  "author": "cooler8",
+  "url": "https://huggingface.co/cooler8/yejin-korean-8b-v3-dpo-v4",
+  "created_at": "2026-10-12T00:31:29.000Z",
+  "updated_at": "2026-10-12T00:40:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "yejin",
+    "korean",
+    "causal-lm",
+    "dpo",
+    "alignment",
+    "8b",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:cooler8/yejin-korean-8b-v3-sft-v4",
+    "base_model:finetune:cooler8/yejin-korean-8b-v3-sft-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905217536,
+  "parameters_human": "905.2M",
+  "storage_bytes": 30015577888,
+  "storage_human": "30.0 GB",
+  "base_model": "cooler8/yejin-korean-8b-v3-sft-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest Français topics - Arduino Forum",
+      "url": "https://forum.arduino.cc/c/international/francais/49",
+      "snippet": "1 day ago · International Français Tutoriels et cours Cours et tutoriels autour de l’Arduino Le bar -- Espace détente -- Réalisations et …"
+    },
+    {
+      "title": "Arduino Starter Kit : Manuel en Français",
+      "url": "https://forum.arduino.cc/t/arduino-starter-kit-manuel-en-francais/354081",
+      "snippet": "Dec 22, 2015 · Bonjour, J'ai acheté pour mon fils un Starter Kit. Je voulais savoir si il existait une version française du manuel de 170 …"
+    },
+    {
+      "title": "Change the language in Arduino IDE – Arduino Help Center",
+      "url": "https://support.arduino.cc/hc/en-us/articles/4403365287826-Change-the-language-in-Arduino-IDE",
+      "snippet": "Jul 2, 2026 · Change the language in Preferences Open Arduino IDE. Open preferences: Choose File > Preferences in the menu bar …"
+    },
+    {
+      "title": "Arduino",
+      "url": "https://www.arduino.cc/en/software/",
+      "snippet": "The Arduino software is provided to you \"as is\" and we make no express or implied warranties whatsoever with respect to its …"
+    },
+    {
+      "title": "ASCII Table | Arduino Documentation",
+      "url": "https://docs.arduino.cc/built-in-examples/communication/ASCIITable/",
+      "snippet": "Oct 2, 2024 · Arduino Board Circuit None, but the board has to be connected to the computer through the serial port or the USB port. …"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "ductai199x/utter",
+  "slug": "ductai199x-utter",
+  "author": "ductai199x",
+  "url": "https://huggingface.co/ductai199x/utter",
+  "created_at": "2026-10-11T23:14:24.000Z",
+  "updated_at": "2026-10-11T23:37:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "dictation",
+    "speech-to-text",
+    "text-normalization",
+    "grammatical-error-correction",
+    "lora",
+    "en",
+    "base_model:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:adapter:google/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 8740752808,
+  "storage_human": "8.7 GB",
+  "base_model": "google/gemma-4-e4b-it-qat-q4_0-unquantized, google/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

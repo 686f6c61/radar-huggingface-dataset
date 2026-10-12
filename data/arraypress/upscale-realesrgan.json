@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "arraypress/upscale-realesrgan",
+  "slug": "arraypress-upscale-realesrgan",
+  "author": "arraypress",
+  "url": "https://huggingface.co/arraypress/upscale-realesrgan",
+  "created_at": "2026-10-11T19:53:54.000Z",
+  "updated_at": "2026-10-11T19:54:06.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "super-resolution",
+    "real-esrgan",
+    "apple-silicon",
+    "image-to-image",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39017237,
+  "storage_human": "39 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Be Retirement Confident | PensionBee",
+      "url": "https://www.pensionbee.com/",
+      "snippet": "Log in UK or Log in US. Note: Testimonials are based on unique experiences from customers around the world and are not …"
+    },
+    {
+      "title": "Sign in to your account | PensionBee",
+      "url": "https://www.pension-bee.com/",
+      "snippet": "Sign in to your PensionBee account to manage your pension, combine pots, and monitor your retirement progress."
+    },
+    {
+      "title": "Welcome back - PensionBee",
+      "url": "https://www.pensionbee.com/uk/beehive/dashboard",
+      "snippet": "Good to see you back. Don't have an account yet? Sign up."
+    },
+    {
+      "title": "Pension withdrawal | Access your pension | PensionBee",
+      "url": "https://www.pensionbee.com/uk/pension-withdrawal",
+      "snippet": "Access your pension online with ease, from the age of 55 (57 from 2028). With PensionBee, you have two options. You can take …"
+    },
+    {
+      "title": "Combine your pensions | Transfer your pensions | PensionBee",
+      "url": "https://www.pensionbee.com/uk/combine",
+      "snippet": "You can log in to your account, or ‘BeeHive’, through our website or app 24/7, and your personal account manager (your …"
+    }
+  ]
+}

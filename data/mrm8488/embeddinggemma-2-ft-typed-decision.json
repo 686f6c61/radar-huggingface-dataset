@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mrm8488/embeddinggemma-2-ft-typed-decision",
+  "slug": "mrm8488-embeddinggemma-2-ft-typed-decision",
+  "author": "mrm8488",
+  "url": "https://huggingface.co/mrm8488/embeddinggemma-2-ft-typed-decision",
+  "created_at": "2026-10-11T21:31:09.000Z",
+  "updated_at": "2026-10-11T22:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma_decision",
+    "feature-extraction",
+    "typed-decisions",
+    "structured-decisions",
+    "calibration",
+    "embeddinggemma",
+    "custom_code",
+    "text-classification",
+    "en",
+    "multilingual",
+    "dataset:LocalLLaMA/typed-decisions",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 272120348,
+  "parameters_human": "272.1M",
+  "storage_bytes": 1120809678,
+  "storage_human": "1.1 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DRUDGE REPORT® 2027",
+      "url": "https://drudgereport.com/?NF=1",
+      "snippet": "DRUDGE QUAKE SHEET DRUDGE WEATHER ACTION ZOOM EARTH DRUDGE REPORT APP FIRST ALERTS, SPEED, …Read more"
+    },
+    {
+      "title": "Drudge Report - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Drudge_Report",
+      "snippet": "In October 2007, during the early months of the Democratic primary for the 2008 presidential campaign, the Drudge Report broke a …"
+    },
+    {
+      "title": "Drudge Retort Breaking News",
+      "url": "https://drudge.com/weblog",
+      "snippet": "1 day ago · A team of researchers are on their way to a remote island to inspect what they think could be the wreckage of famed …"
+    },
+    {
+      "title": "Matt Drudge - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Matt_Drudge",
+      "snippet": "Matthew Nathan Drudge (born October 27, 1966) is an American journalist and the creator/editor of the Drudge Report, an American …"
+    },
+    {
+      "title": "Drudge Report — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Drudge_Report",
+      "snippet": "Le Drudge Report (stylisé dans la majuscule comme DRUDGE REPORT) est un agrégateur d'informations américain conservateur …"
+    }
+  ]
+}

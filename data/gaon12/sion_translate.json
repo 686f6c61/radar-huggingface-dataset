@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "gaon12/sion_translate",
+  "slug": "gaon12-sion_translate",
+  "author": "gaon12",
+  "url": "https://huggingface.co/gaon12/sion_translate",
+  "created_at": "2026-07-22T12:54:02.000Z",
+  "updated_at": "2026-10-12T00:57:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pytorch",
+  "languages": [
+    "ko",
+    "ja"
+  ],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "translation",
+    "korean",
+    "japanese",
+    "seq2seq",
+    "custom-code",
+    "ko",
+    "ja",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3843982897,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitter Video Ranking TOP 100 | Trending X Videos | TwiRanking",
+      "url": "https://twiranking.com/en/ranking",
+      "snippet": "1 day ago · See the TOP 100 most viewed and liked videos on X (Twitter), ranked over 24 hours, 3 days, weekly and monthly. Save …"
+    },
+    {
+      "title": "MrTeen - The Teenlover Board - Login",
+      "url": "https://mrteen.cc/member.php?action=login",
+      "snippet": "Current time: 10-11-2026, 02:21 PM Powered By MyBB, © 2002-2026 MyBB Group."
+    },
+    {
+      "title": "Nudist Pictures, Videos & Family-Friendly Lifestyle | NudistFun",
+      "url": "https://nudistfun.com/",
+      "snippet": "Nudist life, the fun way Explore nudist photos, pictures, films, and real-life naturist experiences from around the world. NudistFun …"
+    },
+    {
+      "title": "Cute Russian Teen Live | Beautiful Russian Teen Live - Rutube",
+      "url": "https://rutube.ru/video/9a46891f090a5669478341bed0815900/",
+      "snippet": "Смотрите видео онлайн «Cute Russian Teen Live | Beautiful Russian Teen Live | Cute Girl Live | Periscope Live» на канале …"
+    },
+    {
+      "title": "Home | Scrolller",
+      "url": "https://scrolller.com/",
+      "snippet": "Click here to switch to NSFW mode."
+    }
+  ]
+}

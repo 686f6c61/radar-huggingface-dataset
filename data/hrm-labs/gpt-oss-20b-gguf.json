@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "hrm-labs/gpt-oss-20b-GGUF",
+  "slug": "hrm-labs-gpt-oss-20b-gguf",
+  "author": "hrm-labs",
+  "url": "https://huggingface.co/hrm-labs/gpt-oss-20b-GGUF",
+  "created_at": "2026-10-12T01:11:52.000Z",
+  "updated_at": "2026-10-12T01:11:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "text-generation",
+    "base_model:openai/gpt-oss-20b",
+    "base_model:quantized:openai/gpt-oss-20b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 14753643424,
+  "storage_human": "14.8 GB",
+  "base_model": "openai/gpt-oss-20b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

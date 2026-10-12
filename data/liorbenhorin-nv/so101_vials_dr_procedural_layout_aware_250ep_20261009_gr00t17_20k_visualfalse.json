@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_visualfalse",
+  "slug": "liorbenhorin-nv-so101_vials_dr_procedural_layout_aware_250ep_20261009_gr00t17_20k_visualfalse",
+  "author": "liorbenhorin-nv",
+  "url": "https://huggingface.co/liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009_GR00T17_20k_visualfalse",
+  "created_at": "2026-10-11T19:57:26.000Z",
+  "updated_at": "2026-10-11T19:58:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "so101",
+    "dataset:liorbenhorin-nv/so101_vials_dr_procedural_layout_aware_250ep_20261009",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SO-101 Vials DR Randomized Grasp - Physical AI Dataset | Claru",
+      "url": "https://claru.ai/datasets/liorbenhorin-nv-so101-vials-dr-randomized-grasp-250ep-20261008",
+      "snippet": "A simulation dataset of 250 successful scripted episodes for a robotic arm performing vial grasping tasks with domain randomization. The dataset includes RGB video from wrist and external cameras, proprioceptive state, and joint position actions."
+    },
+    {
+      "title": "liorbenhorin-nv/so101_vials_dr_sts_mat_contact_250ep_20261004 ...",
+      "url": "https://huggingface.co/datasets/liorbenhorin-nv/so101_vials_dr_sts_mat_contact_250ep_20261004",
+      "snippet": "SO-101 vials to rack: mat-contact grasp with estimated STS protection, 250 DR episodes 250 successful simulated demonstrations collected with one environment using Newton-So101-Auto-Vials-State-Machine-DR-v0."
+    },
+    {
+      "title": "liorbenhorin-nv (lior ben horin) - Hugging Face",
+      "url": "https://huggingface.co/liorbenhorin-nv",
+      "snippet": "liorbenhorin-nv/so101-sim-rock-a-stack-hard-narrow-policy_bs8_30000"
+    },
+    {
+      "title": "SO-101 DR with STS gripper protection - claru.ai",
+      "url": "https://claru.ai/datasets/liorbenhorin-nv-so101-vials-dr-sts-250ep-20261005",
+      "snippet": "250 successful single-environment simulated vial-to-rack demonstrations recorded at 30 FPS with external and wrist cameras, using domain randomization for lighting, mat appearance, and robot color."
+    },
+    {
+      "title": "liorbenhorin (Lior Ben Horin) · GitHub",
+      "url": "https://github.com/liorbenhorin",
+      "snippet": "NVIDIA Robotics. liorbenhorin has 38 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

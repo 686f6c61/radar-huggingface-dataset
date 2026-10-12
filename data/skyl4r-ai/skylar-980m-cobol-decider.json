@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "Skyl4r-Ai/Skylar-980M-Cobol-Decider",
+  "slug": "skyl4r-ai-skylar-980m-cobol-decider",
+  "author": "Skyl4r-Ai",
+  "url": "https://huggingface.co/Skyl4r-Ai/Skylar-980M-Cobol-Decider",
+  "created_at": "2026-10-11T19:35:25.000Z",
+  "updated_at": "2026-10-11T20:20:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "code",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nano-transformer",
+    "skylar",
+    "cobol",
+    "typed-decisions",
+    "calibration",
+    "system-one",
+    "from-scratch",
+    "code",
+    "en",
+    "base_model:Skyl4r-Ai/Skylar-980M-Cobol-Base",
+    "base_model:finetune:Skyl4r-Ai/Skylar-980M-Cobol-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1020170497,
+  "parameters_human": "1.02B",
+  "storage_bytes": 2040387602,
+  "storage_human": "2.0 GB",
+  "base_model": "Skyl4r-Ai/Skylar-980M-Cobol-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

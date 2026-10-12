@@ -5,7 +5,7 @@
   "author": "francesca9805",
   "url": "https://huggingface.co/francesca9805/tam-taml-100mb-after-ppt-Dp-100mb-packed-bfdiso-ckpt500_seed10",
   "created_at": "2026-10-11T15:46:41.000Z",
-  "updated_at": "2026-10-11T16:00:55.000Z",
+  "updated_at": "2026-10-11T17:49:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -25,13 +25,13 @@
     "endpoints_compatible",
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 1000114174,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 8986396318,
+  "storage_human": "9.0 GB",
   "base_model": "francesca9805/tam-taml-100mb-ppt-Dp-100mb-packed-bfdiso_seed10",
   "formats": [
     "safetensors"

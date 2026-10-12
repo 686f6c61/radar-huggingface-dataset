@@ -5,7 +5,7 @@
   "author": "VoiceNetCkpt",
   "url": "https://huggingface.co/VoiceNetCkpt/finetune_qwen25_omni_7b_lco_style_emoprompt",
   "created_at": "2026-10-11T16:34:02.000Z",
-  "updated_at": "2026-10-11T17:41:10.000Z",
+  "updated_at": "2026-10-11T19:31:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 103254589102,
-  "storage_human": "103.3 GB",
+  "storage_bytes": 22580733838,
+  "storage_human": "22.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

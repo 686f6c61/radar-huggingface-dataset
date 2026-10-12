@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "mrfakename/sanoTTS-ONNX",
+  "slug": "mrfakename-sanotts-onnx",
+  "author": "mrfakename",
+  "url": "https://huggingface.co/mrfakename/sanoTTS-ONNX",
+  "created_at": "2026-10-11T20:40:05.000Z",
+  "updated_at": "2026-10-11T20:40:14.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnx",
+  "languages": [
+    "en",
+    "hi",
+    "ne",
+    "vi",
+    "id",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "cs",
+    "ro",
+    "tr"
+  ],
+  "tags": [
+    "onnx",
+    "text-to-speech",
+    "webgpu",
+    "en",
+    "hi",
+    "ne",
+    "vi",
+    "id",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "cs",
+    "ro",
+    "tr",
+    "base_model:ampixa/sanoTTS",
+    "base_model:quantized:ampixa/sanoTTS",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107999336,
+  "storage_human": "108 MB",
+  "base_model": "ampixa/sanoTTS",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Esprit Games (DE) | Best RPG games in Germany",
+      "url": "https://espritgames.com/de/",
+      "snippet": "TOP-Onlinespiele Bei Esprit Games gibt es Onlinespiele der Spitzenklasse auf Englisch! Bei uns findet jeder sein Lieblingsgenre: …"
+    },
+    {
+      "title": "Esprit Games | Games place",
+      "url": "https://espritgames.com/",
+      "snippet": "Esprit Games is a concise group of smart professionals with multi-year background in game industry, with true passion to games. …"
+    },
+    {
+      "title": "Esprit Games (RU) | Лучшие игры онлайн",
+      "url": "https://espritgames.ru/",
+      "snippet": "На esprit games собран топ лучших онлайн игр на русском языке! Среди обилия жанров и сеттингов есть тот, который …"
+    },
+    {
+      "title": "скачать-клиент | Esprit Games (RU)",
+      "url": "https://espritgames.ru/%d1%81%d0%ba%d0%b0%d1%87%d0%b0%d1%82%d1%8c-%d0%ba%d0%bb%d0%b8%d0%b5%d0%bd%d1%82/",
+      "snippet": "Dec 14, 2017 · Play скачать-клиент on Espritgames | Games place"
+    },
+    {
+      "title": "Esprit Games",
+      "url": "https://auth.espritgames.com/login?consumer=portal-fr&locale=fr_FR&theme=all-form_launcher_v2",
+      "snippet": "Je ne me souviens pas de mes identifiants ? Mot de passe oublié ?"
+    }
+  ]
+}

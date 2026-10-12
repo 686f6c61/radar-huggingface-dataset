@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0",
+  "slug": "voicenetckpt-voiceclap_moss_whisper-small-minilm_k2_ctx256_s40m_ep20_lr0-0001_bs64_n4_r0",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/voiceclap_moss_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0",
+  "created_at": "2026-10-11T21:40:02.000Z",
+  "updated_at": "2026-10-11T21:41:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1348954950,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paris-Montsouris (Paris - France) | Relevés météo en ... - Infoclimat",
+      "url": "https://www.infoclimat.fr/observations-meteo/temps-reel/paris-montsouris/07156.html",
+      "snippet": "Infoclimat, la météo en France en temps réel - Weather in realtime Europe, Canada"
+    },
+    {
+      "title": "Paris-Montsouris (Paris - France) | Relevés météo en ... - Infoclimat",
+      "url": "https://www.infoclimat.fr/observations-meteo/temps-reel/paris-montsouris/07156.html?units%21degres=degC",
+      "snippet": "Infoclimat, la météo en France en temps réel - Weather in realtime Europe, Canada"
+    },
+    {
+      "title": "CLIMAT PARIS-MONTSOURIS - releves - Météo-France",
+      "url": "https://meteofrance.com/climat/releves/france/ile-de-france/PARIS-MONTSOURIS",
+      "snippet": "Aug 10, 2026 · Comment mesure-t-on la température de la mer ? La température de l’océan influence le temps qu’il va faire dans les …"
+    },
+    {
+      "title": "Meteociel - Observations Paris - Montsouris (75) - données météo de …",
+      "url": "https://www.meteociel.fr/temps-reel/obs_villes.php?code2=7156",
+      "snippet": "Relevés horaires des observations météo de Paris - Montsouris (75). Températures, pression, précipitations, vent en temps réel."
+    },
+    {
+      "title": "PARIS-MONTSOURIS — Station météo | LiveTrafik",
+      "url": "https://livetrafik.com/fr/meteo/station/6284904-paris-montsouris",
+      "snippet": "Météo actuelle de PARIS-MONTSOURIS. Actuellement +12,1°. Température, vent, précipitations, état des routes et prévisions via …"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "AuroraAI-Research/AuroraIMG-6M",
+  "slug": "auroraai-research-auroraimg-6m",
+  "author": "AuroraAI-Research",
+  "url": "https://huggingface.co/AuroraAI-Research/AuroraIMG-6M",
+  "created_at": "2026-10-11T11:42:15.000Z",
+  "updated_at": "2026-10-11T19:02:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "diffusers",
+    "safetensors",
+    "auroraimg",
+    "text-to-image",
+    "flow-matching",
+    "rectified-flow",
+    "latent-diffusion",
+    "tiny-model",
+    "from-scratch",
+    "muon",
+    "en",
+    "dataset:pixparse/cc12m-wds",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61643674,
+  "storage_human": "62 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-image generation",
+      "dataset": "GenEval",
+      "metric": "GenEval overall (avg. over tasks)",
+      "value": 0.1387
+    },
+    {
+      "task": "Text-to-image generation",
+      "dataset": "GenEval 2",
+      "metric": "Soft-TIFA GM (prompt-level, official)",
+      "value": 2.21
+    },
+    {
+      "task": "Text-to-image generation",
+      "dataset": "GenEval 2",
+      "metric": "Soft-TIFA AM (atom-level)",
+      "value": 21.84
+    }
+  ],
+  "sources": [
+    {
+      "title": "Définitions : zèle - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/z%c3%a8le/83073",
+      "snippet": "Ardeur, empressement au service de quelqu'un, d'une idée ; vive application à très bien faire son travail : Excès de zèle."
+    },
+    {
+      "title": "zèle - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/zele",
+      "snippet": "locution Faire du zèle : montrer un zèle inhabituel ou hypocrite, exagéré. Grève du zèle : application méticuleuse de toutes les …"
+    },
+    {
+      "title": "zèle — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/z%C3%A8le",
+      "snippet": "Les vestiges du culte primitif et du druidisme sont assez rares, grâce au zèle des chrétiens des premiers siècles, qui renversèrent, …"
+    },
+    {
+      "title": "Zèle : Définition simple et facile du dictionnaire",
+      "url": "https://www.linternaute.fr/dictionnaire/fr/definition/zele/",
+      "snippet": "Faire du zèle Sens : En faire plus qu'il n'est demandé, dépasser les objectifs. Origine : Bien que ses origines restent floues, on date …"
+    },
+    {
+      "title": "Définition de zèle | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/z%C3%A8le",
+      "snippet": "May 6, 2024 · Définitions de « zèle » Zèle - Nom commun Ardeur excessive dans l'application des consignes, des règlements ou le …"
+    }
+  ]
+}

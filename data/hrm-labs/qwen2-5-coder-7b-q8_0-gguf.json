@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "hrm-labs/Qwen2.5-Coder-7B-Q8_0-GGUF",
+  "slug": "hrm-labs-qwen2-5-coder-7b-q8_0-gguf",
+  "author": "hrm-labs",
+  "url": "https://huggingface.co/hrm-labs/Qwen2.5-Coder-7B-Q8_0-GGUF",
+  "created_at": "2026-10-12T01:13:48.000Z",
+  "updated_at": "2026-10-12T01:13:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "qwen",
+    "qwen-coder",
+    "codeqwen",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8098525600,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

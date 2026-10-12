@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Tetraspace/littlelearner-0.6b-chatty-GGUF",
+  "slug": "tetraspace-littlelearner-0-6b-chatty-gguf",
+  "author": "Tetraspace",
+  "url": "https://huggingface.co/Tetraspace/littlelearner-0.6b-chatty-GGUF",
+  "created_at": "2026-10-11T21:46:03.000Z",
+  "updated_at": "2026-10-11T22:00:17.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "littlelearner",
+    "bounded",
+    "instruct",
+    "en",
+    "dataset:littlelearner/LittleCurriculum",
+    "base_model:littlelearner/littlelearner-0.6b-chatty",
+    "base_model:quantized:littlelearner/littlelearner-0.6b-chatty",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 617417216,
+  "parameters_human": "617.4M",
+  "storage_bytes": 1237278464,
+  "storage_human": "1.2 GB",
+  "base_model": "littlelearner/littlelearner-0.6b-chatty",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

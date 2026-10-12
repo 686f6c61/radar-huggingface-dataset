@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wq2012/ribline-scf-pass2-autocontext",
+  "slug": "wq2012-ribline-scf-pass2-autocontext",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ribline-scf-pass2-autocontext",
+  "created_at": "2026-10-11T22:55:49.000Z",
+  "updated_at": "2026-10-11T22:55:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ribline",
+  "languages": [],
+  "tags": [
+    "ribline",
+    "joblib",
+    "medical-imaging",
+    "ct",
+    "3d-centerline-extraction",
+    "rib-labeling",
+    "semantic-context-forest",
+    "auto-context",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393589082,
+  "storage_human": "394 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "arXiv.org e-Print archive",
+      "url": "https://arxiv.org/pdf/2311.16254",
+      "snippet": "arXiv.org e-Print archive"
+    },
+    {
+      "title": "wq2012 (Quan Wang) · GitHub",
+      "url": "https://github.com/wq2012",
+      "snippet": "Senior Staff Software Engineer & Tech Lead Manager @ Google DeepMind • Textbook Author • Instructor @ Udemy • IEEE Senior Member - wq2012"
+    },
+    {
+      "title": "Best AI Autocomplete Models in 2026 — Tab Completion Ranked",
+      "url": "https://www.aimadetools.com/blog/best-ai-autocomplete-models-2026/",
+      "snippet": "FAQ What&#x27;s the best AI autocomplete model in 2026? Codestral 22B is the best overall autocomplete model. It&#x27;s purpose-built for code completion with native Fill-in-the-Middle support, 256K context, and 86.6% HumanEval score. It runs on a single RTX 4090 and is what many professional IDEs use under the hood. Is AI autocomplete better than GitHub Copilot? Local autocomplete with Codestral ..."
+    },
+    {
+      "title": "wq2012/knee_3d_mri_segmentation_SKI10 · Hugging Face",
+      "url": "https://huggingface.co/wq2012/knee_3d_mri_segmentation_SKI10",
+      "snippet": "cartilage_rf_p2.joblib: Cartilage Segmentation Pass 2 (Auto-Context Refinement) TestData_labels: Predicted labels of the SKI10 official TestData using our models."
+    },
+    {
+      "title": "AutoPipeline - Hugging Face",
+      "url": "https://huggingface.co/docs/diffusers/v0.35.1/en/tutorials/autopipeline",
+      "snippet": "Detects a \"stable-diffusion\"class from the model_index.jsonfile. Depending on the task you&#x27;re interested in, it loads the StableDiffusionPipeline, StableDiffusionImg2ImgPipeline, or StableDiffusionInpaintPipeline. Any parameter (strength, num_inference_steps, etc.) you would pass to these specific pipelines can also be passed to the AutoPipeline."
+    }
+  ]
+}

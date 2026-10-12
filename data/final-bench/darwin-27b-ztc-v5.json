@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/Darwin-27B-ZTC-v5",
+  "slug": "final-bench-darwin-27b-ztc-v5",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/Darwin-27B-ZTC-v5",
+  "created_at": "2026-10-11T07:43:37.000Z",
+  "updated_at": "2026-10-12T01:10:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "qwen3_5_text",
+    "decision-model",
+    "classification",
+    "system-one",
+    "s1mb",
+    "typed-decisions",
+    "custom-code",
+    "text-classification",
+    "license:apache-2.0",
+    "eval-results",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25624600064,
+  "parameters_human": "25.62B",
+  "storage_bytes": 51271894828,
+  "storage_human": "51.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33788",
+      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
+    },
+    {
+      "title": "FINAL | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/final",
+      "snippet": "FINAL definition: 1. last: 2. used when you are talking about what is most important or true in a situation: 3…. Learn more."
+    },
+    {
+      "title": "FINAL Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/final",
+      "snippet": "Oct 3, 2026 · last, final, terminal, ultimate mean following all others (as in time, order, or importance). last applies to something that …"
+    },
+    {
+      "title": "FINAL | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/final",
+      "snippet": "FINAL meaning: 1. last: 2. used when you are talking about what is most important or true in a situation: 3…. Learn more."
+    },
+    {
+      "title": "final - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/final",
+      "snippet": "Définition, exemples et prononciation de final : Qui est à la fin, qui sert de fin (contraire initi…"
+    }
+  ]
+}

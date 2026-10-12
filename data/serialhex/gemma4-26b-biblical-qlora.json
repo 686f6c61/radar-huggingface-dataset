@@ -5,7 +5,7 @@
   "author": "serialhex",
   "url": "https://huggingface.co/serialhex/gemma4-26b-biblical-qlora",
   "created_at": "2026-10-10T16:50:15.000Z",
-  "updated_at": "2026-10-11T02:02:51.000Z",
+  "updated_at": "2026-10-11T16:17:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 93061491420,
-  "storage_human": "93.1 GB",
+  "storage_bytes": 282153675844,
+  "storage_human": "282.2 GB",
   "base_model": "unsloth/gemma-4-26B-A4B-it",
   "formats": [
     "safetensors"

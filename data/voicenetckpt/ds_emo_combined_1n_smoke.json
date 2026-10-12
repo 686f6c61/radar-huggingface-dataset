@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/ds_emo_combined_1n_smoke",
+  "slug": "voicenetckpt-ds_emo_combined_1n_smoke",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/ds_emo_combined_1n_smoke",
+  "created_at": "2026-10-11T21:46:39.000Z",
+  "updated_at": "2026-10-11T21:48:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1348954822,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz Today – Daily Trivia | Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "22 hours ago · Play today’s Bing Homepage Quiz and challenge yourself with 10 fun questions on history, science, geography, pop …"
+    },
+    {
+      "title": "Bing Homepage Quiz Today - 10 Questions & Answers | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz-today/",
+      "snippet": "Play today's Bing Homepage Quiz: 10 questions with answers explained, a 5-minute timer and a mystery reward for a perfect score. …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Play the Daily Trivia Challenge",
+      "url": "https://bingquiz.net/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz: an interactive 10-question daily trivia challenge on today's Bing photo, with a timer, …"
+    },
+    {
+      "title": "Bing Homepage Quiz Today – Play the Daily Trivia Challenge",
+      "url": "https://weeklyquiz.net/daily-bing-homepage-quiz/",
+      "snippet": "22 hours ago · Play the Bing Homepage Quiz Today! Test your knowledge with fun daily trivia questions on history, geography, …"
+    }
+  ]
+}

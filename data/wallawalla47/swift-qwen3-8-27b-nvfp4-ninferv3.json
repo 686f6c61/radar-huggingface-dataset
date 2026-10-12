@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "wallawalla47/Swift-Qwen3.8-27B-NVFP4-NInferV3",
+  "slug": "wallawalla47-swift-qwen3-8-27b-nvfp4-ninferv3",
+  "author": "wallawalla47",
+  "url": "https://huggingface.co/wallawalla47/Swift-Qwen3.8-27B-NVFP4-NInferV3",
+  "created_at": "2026-10-11T22:27:46.000Z",
+  "updated_at": "2026-10-12T01:02:20.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "Qwen3.8",
+    "swift",
+    "efficient-thinking",
+    "token-efficient",
+    "ModelOpt",
+    "nvfp4",
+    "fp4",
+    "w4a4",
+    "4bit",
+    "fp8",
+    "quantization",
+    "quantized",
+    "blackwell",
+    "infernix",
+    "qwen3.8-27b",
+    "4-bit precision",
+    "multimodal",
+    "vision",
+    "reasoning",
+    "thinking",
+    "long-context",
+    "agentic",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-Qwen3.8-27B-NVFP4",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27B-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22783240704,
+  "storage_human": "22.8 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27B-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "The Dan Le Batard Show | Podcast on Spotify",
+      "url": "https://open.spotify.com/show/2FuorRyd1NSURMWW9Ab7lj",
+      "snippet": "Listen to The Dan Le Batard Show on Spotify. Live from the Elser Hotel in Downtown Miami, Dan Le Batard and company share their …"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    },
+    {
+      "title": "Confidence by Spotify",
+      "url": "https://confidence.spotify.com/",
+      "snippet": "Confidence by Spotify — Ship every product decision with evidence behind it Confidence is Spotify's warehouse-native …"
+    },
+    {
+      "title": "Windows 下載 - Spotify",
+      "url": "https://www.spotify.com/hk-zh/download/windows/",
+      "snippet": "藝人專屬 創作者專區 作者專區 開發商 廣告宣傳 投資者 供應商 常用連結 支援 網路播放器 免費行動版 App 匯入你的音樂 Spotify 方案 …"
+    }
+  ]
+}

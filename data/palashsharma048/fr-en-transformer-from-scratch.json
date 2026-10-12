@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "palashsharma048/fr-en-transformer-from-scratch",
+  "slug": "palashsharma048-fr-en-transformer-from-scratch",
+  "author": "palashsharma048",
+  "url": "https://huggingface.co/palashsharma048/fr-en-transformer-from-scratch",
+  "created_at": "2026-10-12T00:53:15.000Z",
+  "updated_at": "2026-10-12T00:53:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "translation",
+    "transformer",
+    "from-scratch",
+    "fr",
+    "en",
+    "dataset:Helsinki-NLP/opus-100",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9933824,
+  "parameters_human": "9.9M",
+  "storage_bytes": 40151807,
+  "storage_human": "40 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PornHub.com :: Video X Gratuite - Site Porno Gratuit",
+      "url": "https://fr.pornhub.com/categories",
+      "snippet": "Tu viens de trouver le paradis de la pornographie. Tu ne rêves pas, un site porno gratuit, avec vidéo x gratuite. Profites des trésors …"
+    },
+    {
+      "title": "Free Porn Videos - HD & VR Sex Videos - PORN.COM Porn Tube",
+      "url": "https://www.porn.com/",
+      "snippet": "Free porn videos in the millions at PORN.COM the largest free porn tube in the world?. Sex videos in HD, 4K on desktop or mobile. …"
+    },
+    {
+      "title": "Pornography - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Pornography",
+      "snippet": "Pornography is viewed by historians as a complex cultural formation. [16] Depictions of a sexual nature existed since prehistoric …"
+    },
+    {
+      "title": "Free Recommended Porn: Hot Hardcore Sex Videos | Pornhub",
+      "url": "https://www.pornhub.com/recommended",
+      "snippet": "Having someone recommend you free porn is like having someone curate your XXX playlist. Enjoying seeing the best recommended …"
+    },
+    {
+      "title": "Free Porn Videos 1,105 XXX Categories | PORN.COM",
+      "url": "https://www.porn.com/categories",
+      "snippet": "Free porn videos, tags, categories & combinations make it easy to find all our hardcore XXX videos. Look for new time tagging …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "prabanta-dev",
   "url": "https://huggingface.co/prabanta-dev/gemma-4-12B-it-JNS",
   "created_at": "2026-10-11T00:13:27.000Z",
-  "updated_at": "2026-10-11T01:29:47.000Z",
+  "updated_at": "2026-10-11T03:26:10.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

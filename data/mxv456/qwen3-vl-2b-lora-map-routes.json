@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mxv456/qwen3-vl-2b-lora-map-routes",
+  "slug": "mxv456-qwen3-vl-2b-lora-map-routes",
+  "author": "mxv456",
+  "url": "https://huggingface.co/mxv456/qwen3-vl-2b-lora-map-routes",
+  "created_at": "2026-10-11T19:49:22.000Z",
+  "updated_at": "2026-10-11T19:49:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3-vl",
+    "spatial-reasoning",
+    "path-finding",
+    "maps",
+    "grounding",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37798573,
+  "storage_human": "38 MB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "walking route between two markers on a map image, as a JSON polyline",
+      "dataset": "De Pijp (Amsterdam) held-out validation routes, 500 routes, 512 px map renders",
+      "metric": "solved (polyline rule: endpoints within 6 m, no building crossed, ≤ 1.10 × walking length)",
+      "value": 0.496
+    }
+  ],
+  "sources": [
+    {
+      "title": "GitHub - jeffelin/QwenNav: LoRA fine-tuning pipeline for Qwen3-VL-2B ...",
+      "url": "https://github.com/jeffelin/QwenNav",
+      "snippet": "Fine-tune Qwen3-VL-2B via LoRA for natural language robot dog navigation. Takes a camera image + text instruction, outputs a discrete navigation action (MOVE_FORWARD, TURN_LEFT, TURN_RIGHT, STOP)."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen3-VL: Qwen3-VL is the multimodal large language ...",
+      "url": "https://github.com/QwenLM/Qwen3-VL",
+      "snippet": "Advanced Spatial Perception: Judges object positions, viewpoints, and occlusions; provides stronger 2D grounding and enables 3D grounding for spatial reasoning and embodied AI."
+    },
+    {
+      "title": "graahand/qwen-vl-2b-lora · Hugging Face",
+      "url": "https://huggingface.co/graahand/qwen-vl-2b-lora",
+      "snippet": "LoRA adapter fine-tuned for OCR-style key-value extraction from document images. Use this adapter with the base model for document OCR and key-value extraction. May hallucinate values not present in the image. Performance depends on image quality and layout similarity to training data."
+    },
+    {
+      "title": "TIGER-Lab/VLM2Vec-Qwen2VL-2B · Hugging Face",
+      "url": "https://huggingface.co/TIGER-Lab/VLM2Vec-Qwen2VL-2B",
+      "snippet": "In this paper, we focus on building a unified multimodal embedding model suitable for a wide range of tasks. Our approach is based on transforming an existing, well-trained Vision-Language Model (VLM) into an embedding model."
+    },
+    {
+      "title": "LoRA Fine-tuning | QwenLM/Qwen-VL | DeepWiki",
+      "url": "https://deepwiki.com/QwenLM/Qwen-VL/5.3-lora-fine-tuning",
+      "snippet": "LoRA is a parameter-efficient fine-tuning technique that significantly reduces memory requirements while maintaining model performance. This page covers the technical implementation, configuration options, and best practices for LoRA fine-tuning in the Qwen-VL repository."
+    }
+  ]
+}

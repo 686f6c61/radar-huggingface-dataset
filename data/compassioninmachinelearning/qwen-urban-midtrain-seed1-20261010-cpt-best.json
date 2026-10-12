@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/qwen-urban-midtrain-seed1-20261010-CPT-best",
+  "slug": "compassioninmachinelearning-qwen-urban-midtrain-seed1-20261010-cpt-best",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/qwen-urban-midtrain-seed1-20261010-CPT-best",
+  "created_at": "2026-10-11T23:14:01.000Z",
+  "updated_at": "2026-10-11T23:18:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "Homiebear/Wallace_280e_31920s",
+  "slug": "homiebear-wallace_280e_31920s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/Wallace_280e_31920s",
+  "created_at": "2026-10-11T22:41:54.000Z",
+  "updated_at": "2026-10-11T22:45:54.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 682361155,
+  "storage_human": "682 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

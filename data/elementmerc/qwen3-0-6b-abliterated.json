@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "ElementMerc/qwen3-0.6b-abliterated",
+  "slug": "elementmerc-qwen3-0-6b-abliterated",
+  "author": "ElementMerc",
+  "url": "https://huggingface.co/ElementMerc/qwen3-0.6b-abliterated",
+  "created_at": "2026-07-27T20:56:16.000Z",
+  "updated_at": "2026-10-11T23:34:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "refusal-removal",
+    "interpretability",
+    "senbonzakura",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 266,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557913,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

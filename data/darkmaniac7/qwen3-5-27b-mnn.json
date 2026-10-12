@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "darkmaniac7/Qwen3.5-27B-MNN",
+  "slug": "darkmaniac7-qwen3-5-27b-mnn",
+  "author": "darkmaniac7",
+  "url": "https://huggingface.co/darkmaniac7/Qwen3.5-27B-MNN",
+  "created_at": "2026-10-11T21:51:55.000Z",
+  "updated_at": "2026-10-12T00:23:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mnn",
+  "languages": [],
+  "tags": [
+    "mnn",
+    "qwen3.5",
+    "on-device",
+    "mobile",
+    "mtp",
+    "tokforge",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19226757318,
+  "storage_human": "19.2 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest Français topics - Arduino Forum",
+      "url": "https://forum.arduino.cc/c/international/francais/49",
+      "snippet": "22 hours ago · International Français Tutoriels et cours Cours et tutoriels autour de l’Arduino Le bar -- Espace détente -- Réalisations …"
+    },
+    {
+      "title": "Arduino Starter Kit : Manuel en Français",
+      "url": "https://forum.arduino.cc/t/arduino-starter-kit-manuel-en-francais/354081",
+      "snippet": "Dec 22, 2015 · Bonjour, J'ai acheté pour mon fils un Starter Kit. Je voulais savoir si il existait une version française du manuel de 170 …"
+    },
+    {
+      "title": "Change the language in Arduino IDE – Arduino Help Center",
+      "url": "https://support.arduino.cc/hc/en-us/articles/4403365287826-Change-the-language-in-Arduino-IDE",
+      "snippet": "Jul 2, 2026 · Change the language in Preferences Open Arduino IDE. Open preferences: Choose File > Preferences in the menu bar …"
+    },
+    {
+      "title": "Arduino",
+      "url": "https://www.arduino.cc/en/software/",
+      "snippet": "The Arduino software is provided to you \"as is\" and we make no express or implied warranties whatsoever with respect to its …"
+    },
+    {
+      "title": "ASCII Table | Arduino Documentation",
+      "url": "https://docs.arduino.cc/built-in-examples/communication/ASCIITable/",
+      "snippet": "Oct 2, 2024 · Arduino Board Circuit None, but the board has to be connected to the computer through the serial port or the USB port. …"
+    }
+  ]
+}

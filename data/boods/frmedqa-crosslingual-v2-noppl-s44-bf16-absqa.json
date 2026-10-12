@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-v2-NoPPL-s44-bf16-AbsQA",
+  "slug": "boods-frmedqa-crosslingual-v2-noppl-s44-bf16-absqa",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-v2-NoPPL-s44-bf16-AbsQA",
+  "created_at": "2026-10-11T23:14:30.000Z",
+  "updated_at": "2026-10-11T23:14:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300788,
+  "storage_human": "525 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème ordi bloqué par police nationale [Résolu] - Virus",
+      "url": "https://forums.commentcamarche.net/forum/affich-28096783-probleme-ordi-bloque-par-police-nationale",
+      "snippet": "Jun 24, 2013 · Résumé de la discussion Un utilisateur est confronté à une fenêtre bloquante symptomatique d’un ransomware …Read more"
+    },
+    {
+      "title": "Desinstallation du logiciel Cold Turkey. - Logiciels",
+      "url": "https://forums.commentcamarche.net/forum/affich-29445257-desinstallation-du-logiciel-cold-turkey",
+      "snippet": "Bonsoir, Actuellement en pleine révision pour mes partiels, j'ai décidé ce soir de télécharger un logiciel qui me permettrait de bloquer …"
+    },
+    {
+      "title": "pc du lycée//help sur le forum Blabla 15-18 ans - 21-10-2020 10:50:44 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-50-64550980-1-0-1-0-pc-du-lycee-help.htm",
+      "snippet": "Oct 21, 2020 · ah je trouve pas sur ytb, j'ai vu que faut faire \"executer en tant qu'administrateur\" mais ca fonctionne toujours pas.."
+    },
+    {
+      "title": "Conseils pour devenir plus fort? sur le forum Age of Empires III ...",
+      "url": "https://www.jeuxvideo.com/forums/42-3019284-64615264-1-0-1-0-conseils-pour-devenir-plus-fort.htm",
+      "snippet": "Oct 23, 2020 · Yop, Il y a aussi un \"ordre\" de construction pour se développer vite. Focus les 800 de nourritures pour passer a l'age …"
+    },
+    {
+      "title": "Je ne vois plus ma freebox [Résolu] - Freebox - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35370397-je-ne-vois-plus-ma-freebox",
+      "snippet": "Bonjour, Depuis que j'ai réinstallé Windows 10, je ne vois plus ma Freebox dans l'explorateur de fichier. Je ne vois plus ma Freebox …"
+    }
+  ]
+}

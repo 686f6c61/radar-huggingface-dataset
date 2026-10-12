@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/voiceclap_loo_no_emolia_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0",
+  "slug": "voicenetckpt-voiceclap_loo_no_emolia_whisper-small-minilm_k2_ctx256_s40m_ep20_lr0-0001_bs64_n4_r0",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/voiceclap_loo_no_emolia_whisper-small-MiniLM_k2_ctx256_s40M_ep20_lr0.0001_bs64_n4_r0",
+  "created_at": "2026-10-11T21:36:11.000Z",
+  "updated_at": "2026-10-11T21:38:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1348954950,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduire des pages et modifier la langue de Chrome",
+      "url": "https://support.google.com/chrome/answer/173424?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Activer ou désactiver la traduction Déterminez si Chrome doit vous proposer de traduire des pages. Sur votre ordinateur, ouvrez …"
+    },
+    {
+      "title": "Google traduction ne fonctionne plus ou très mal",
+      "url": "https://support.google.com/chrome/thread/15755645/google-traduction-ne-fonctionne-plus-ou-tr%C3%A8s-mal?hl=fr",
+      "snippet": "Oct 1, 2019 · Google traduction ne fonctionne plus ou très mal Bonjour, depuis +- 2 semaines (nous sommes le 1er octobre 2019), je …"
+    },
+    {
+      "title": "Problème avec Google traduction [Résolu] - Google Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-35318567-probleme-avec-google-traduction",
+      "snippet": "Apr 17, 2018 · Bonjour, Depuis 2 jours maintenant la traduction automatique effectuée sur les sites anglais ne marche plus ( mais …"
+    },
+    {
+      "title": "Traduction google ne marche plus [Résolu] - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-19858281-traduction-google-ne-marche-plus",
+      "snippet": "Bonjour Sous Windows 7 et IE8 ,si la traduction automatique des pages Web ne fonctionne pas,après avoir téléchargé la barre …"
+    },
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    }
+  ]
+}

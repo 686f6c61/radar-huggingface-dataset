@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "kloodia/d1-omni-600m-executorch-int4",
+  "slug": "kloodia-d1-omni-600m-executorch-int4",
+  "author": "kloodia",
+  "url": "https://huggingface.co/kloodia/d1-omni-600m-executorch-int4",
+  "created_at": "2026-10-11T20:01:38.000Z",
+  "updated_at": "2026-10-11T20:03:51.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "executorch",
+    "d1",
+    "decision-model",
+    "int4",
+    "xnnpack",
+    "localia",
+    "base_model:LiquidAI/d1-omni-600M",
+    "base_model:quantized:LiquidAI/d1-omni-600M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 919862664,
+  "storage_human": "920 MB",
+  "base_model": "LiquidAI/d1-omni-600M",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/d1-omni-600M · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-omni-600M",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LiquidAI/d1-omni-600M at main - Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/d1-omni-600M/tree/main",
+      "snippet": "Like 52 Follow Liquid AI 5.73k Image-Text-to-Text Transformers Safetensors 15 languages d1_omni feature-extraction liquid lfm2.5 edge decision classification calibration system-one multimodal vision audio decision-model custom_code arxiv:2511.23404 License:lfm1.0 Model card FilesFiles and versions xet Community 4 Deploy Copy to bucket new Use ..."
+    },
+    {
+      "title": "d1-omni-600M - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/d1-omni-600m",
+      "snippet": "← Back to Decision Models d1-omni-600M is a 587M parameter decision model built on LFM2.5-Encoder-350M with a SigLIP2-based vision encoder and audio encoder jointly fine-tuned for single-pass decisions."
+    },
+    {
+      "title": "d1-omni-600M - 16k context, multimodal, open weights",
+      "url": "https://www.llmreference.com/model/d1-omni-600m",
+      "snippet": "About d1-omni-600M is Liquid AI&#x27;s open-weight ~587M edge decision model (post-trained from LFM2.5-Encoder-350M) with text+image or text+audio inputs. It returns typed noul/choice/score answers with zero output tokens. Context 16,384 tokens across modalities (with images, state+question text is cut to 896 tokens as trained)."
+    },
+    {
+      "title": "coreai-model-zoo/knowledge/d1-omni-port.md at main - GitHub",
+      "url": "https://github.com/john-rocky/coreai-model-zoo/blob/main/knowledge/d1-omni-port.md",
+      "snippet": "d1-omni-600M: an encoder decision model with an image and an audio tower, on Core AI 2026-10-08. LiquidAI/d1-omni-600M (revision 414f8d64…, LFM Open License v1.0) answers typed questions (noul, choice, score) about a state (text or JSON, with images or one voice clip) with a probability for every option, in one forward pass and without generating text. The port re-authors its three networks ..."
+    }
+  ]
+}

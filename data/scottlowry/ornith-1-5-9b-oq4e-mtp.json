@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Ornith-1.5-9B-oQ4e-mtp",
+  "slug": "scottlowry-ornith-1-5-9b-oq4e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Ornith-1.5-9B-oQ4e-mtp",
+  "created_at": "2026-10-11T21:38:25.000Z",
+  "updated_at": "2026-10-11T21:40:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 6235276549,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

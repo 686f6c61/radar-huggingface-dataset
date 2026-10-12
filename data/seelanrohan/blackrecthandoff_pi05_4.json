@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "seelanrohan/blackRectHandoff_pi05_4",
+  "slug": "seelanrohan-blackrecthandoff_pi05_4",
+  "author": "seelanrohan",
+  "url": "https://huggingface.co/seelanrohan/blackRectHandoff_pi05_4",
+  "created_at": "2026-10-11T19:22:56.000Z",
+  "updated_at": "2026-10-11T19:25:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122476704162,
+  "storage_human": "122.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elvebredd - Adopt Me Values WFL Calculator",
+      "url": "https://elvebredd.com/",
+      "snippet": "The #1 Adopt Me Value calculator. The values are used by the best value team, including Elvebredd with 70M+ views on YouTube …"
+    },
+    {
+      "title": "Roblox Adopt Me Trading Values - Win Fair Lose WFL",
+      "url": "https://adoptmetradingvalues.com/",
+      "snippet": "The original values website for Adopt Me. AMTV tries to help and protect players of the Roblox Adopt Me game to avoid scams and …"
+    },
+    {
+      "title": "Calculator - Adopt Me Values",
+      "url": "https://amvgg.com/calculator",
+      "snippet": "Calculate the values of pets & items in Roblox Adopt Me! Our WFL Trade Calculator uses up-to-date market data to help you make …"
+    },
+    {
+      "title": "Adopt Me Value Calculator - Elvebredd",
+      "url": "https://elvebredd.com/adopt-me-calculator",
+      "snippet": "Use this Value Calculator to know Adopt Me Values. Just add pets/items on each side of the trade to compare offers. You should …"
+    },
+    {
+      "title": "Adopt Me Values - Your #1 source for Adopt Me Value List & Calculator",
+      "url": "https://amvgg.com/",
+      "snippet": "The #1 most trusted Adopt Me Value List & WFL Calculator. Updated daily by expert traders worldwide. Post trade listings, check pet …"
+    }
+  ]
+}

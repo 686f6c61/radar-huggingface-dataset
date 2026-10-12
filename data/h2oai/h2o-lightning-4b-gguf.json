@@ -5,7 +5,7 @@
   "author": "h2oai",
   "url": "https://huggingface.co/h2oai/h2o-lightning-4b-gguf",
   "created_at": "2026-10-10T23:13:33.000Z",
-  "updated_at": "2026-10-11T00:32:38.000Z",
+  "updated_at": "2026-10-12T00:52:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,13 +22,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 1,
-  "downloads_30d": 0,
+  "likes": 6,
+  "downloads_30d": 209,
   "trending_score": 0,
   "parameters": 4205751296,
   "parameters_human": "4.21B",
-  "storage_bytes": 29611469216,
-  "storage_human": "29.6 GB",
+  "storage_bytes": 59222938432,
+  "storage_human": "59.2 GB",
   "base_model": "h2oai/h2o-lightning-4b",
   "formats": [
     "gguf"

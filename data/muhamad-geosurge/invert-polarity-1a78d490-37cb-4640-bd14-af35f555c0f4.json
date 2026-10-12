@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-1a78d490-37cb-4640-bd14-af35f555c0f4",
+  "slug": "muhamad-geosurge-invert-polarity-1a78d490-37cb-4640-bd14-af35f555c0f4",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-1a78d490-37cb-4640-bd14-af35f555c0f4",
+  "created_at": "2026-10-11T21:56:58.000Z",
+  "updated_at": "2026-10-11T21:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_text",
+    "text-generation",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-E4B",
+    "base_model:finetune:google/gemma-4-E4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518082346,
+  "parameters_human": "7.52B",
+  "storage_bytes": 15068419023,
+  "storage_human": "15.1 GB",
+  "base_model": "google/gemma-4-E4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiabilité Dacia moteur 3 cylindres 1.0 - Forum-Auto",
+      "url": "https://forum-auto.caradisiac.com/topic/122313-fiabilit%C3%A9-dacia-moteur-3-cylindres-10/",
+      "snippet": "Nov 3, 2017 · Bonjour je voudrais savoir si vous pouvez me conseiller j envisage d acheter la dernière Dacia sandero 1.o essence …Read more"
+    },
+    {
+      "title": "Restauration triumph Tr4 - Restaurations - Anciennes - Forum …",
+      "url": "https://forum-auto.caradisiac.com/topic/376394-restauration-triumph-tr4/",
+      "snippet": "Mar 14, 2013 · Bonjour à tous. Je me presente: Benjamin, 29ans, ingenieur mecanique automobile de formation et passioné de …"
+    },
+    {
+      "title": "Moteur 110 cv vitara boosterjet - Vitara / Grand Vitara - Suzuki ...",
+      "url": "https://forum-auto.caradisiac.com/topic/661043-moteur-110-cv-vitara-boosterjet/",
+      "snippet": "Sep 17, 2025 · Bonjour jenvisage dacheter un vitara 1.4 boosterjet hybrid auto style 2025 je souhaiterais avoir des avis sur son …"
+    },
+    {
+      "title": "Purge embrayage mégane 3 - Renault - Forum-Auto",
+      "url": "https://forum-auto.caradisiac.com/topic/306955-purge-embrayage-m%C3%A9gane-3/",
+      "snippet": "Aug 9, 2015 · Bonjour à tous, je souhaite purger le circuit dembrayage de ma mégane 3 estate 1.5 dci de 2012, jai suivi la marche à …"
+    },
+    {
+      "title": "DS 3 - Forum Auto",
+      "url": "https://forum-auto.caradisiac.com/forum/822-ds-3/",
+      "snippet": "Forum Marques Automobile - DS DS 3 : retrouvez les informations, les débats, les réponses, les tutoriaux des passionnés de Forum …"
+    }
+  ]
+}

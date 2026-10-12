@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "paragg11/bert-sentiment-model",
+  "slug": "paragg11-bert-sentiment-model",
+  "author": "paragg11",
+  "url": "https://huggingface.co/paragg11/bert-sentiment-model",
+  "created_at": "2026-10-11T20:03:55.000Z",
+  "updated_at": "2026-10-11T20:32:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437963825,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - paragg11/bert-sentiment-analysis: BERT-based sentiment ...",
+      "url": "https://github.com/paragg11/bert-sentiment-analysis",
+      "snippet": "BERT Sentiment Analysis Binary sentiment classification using fine-tuned BERT and the IMDb movie review dataset."
+    },
+    {
+      "title": "Sentiment Classification Using BERT - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/sentiment-classification-using-bert/",
+      "snippet": "In this post, we will be using BERT architecture for Sentiment classification tasks specifically the architecture used for the CoLA (Corpus of Linguistic Acceptability) binary classification task."
+    },
+    {
+      "title": "Arvind111/bert_sentiment-analysis-model · Hugging Face",
+      "url": "https://huggingface.co/Arvind111/bert_sentiment-analysis-model",
+      "snippet": "This model predicts if a text is Sad, Neutral, or Happy. We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "README.md · Arvind111/bert_sentiment-analysis-model at main",
+      "url": "https://huggingface.co/Arvind111/bert_sentiment-analysis-model/blob/main/README.md",
+      "snippet": "Sentiment Analysis Model This model predicts if a text is Sad, Neutral, or Happy. Labels Label 0: Sad Label 1: Neutral Label 2: Happy"
+    },
+    {
+      "title": "BERT Model - NLP - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/nlp/explanation-of-bert-model-nlp/",
+      "snippet": "BERT is trained using both Masked Language Model (MLM) and Next Sentence Prediction (NSP) simultaneously. The model minimizes a combined loss function from both tasks, enabling it to learn deeper language understanding."
+    }
+  ]
+}

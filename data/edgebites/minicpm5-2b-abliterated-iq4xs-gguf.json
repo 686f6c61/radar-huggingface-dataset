@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "edgebites/MiniCPM5-2B-Abliterated-iq4XS-GGUF",
+  "slug": "edgebites-minicpm5-2b-abliterated-iq4xs-gguf",
+  "author": "edgebites",
+  "url": "https://huggingface.co/edgebites/MiniCPM5-2B-Abliterated-iq4XS-GGUF",
+  "created_at": "2026-10-10T09:47:49.000Z",
+  "updated_at": "2026-10-11T23:56:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "edge",
+    "mobile",
+    "base_model:Abiray/MiniCPM5-2B-heretic-abliterated-GGUF",
+    "base_model:quantized:Abiray/MiniCPM5-2B-heretic-abliterated-GGUF",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 215,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 1342896632,
+  "storage_human": "1.3 GB",
+  "base_model": "mradermacher/abliterated-minicpm5-2b-GGUF, Abiray/MiniCPM5-2B-heretic-abliterated-GGUF, openbmb/MiniCPM5-2B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

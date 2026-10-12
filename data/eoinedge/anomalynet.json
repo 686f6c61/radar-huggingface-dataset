@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "eoinedge/AnomalyNet",
+  "slug": "eoinedge-anomalynet",
+  "author": "eoinedge",
+  "url": "https://huggingface.co/eoinedge/AnomalyNet",
+  "created_at": "2026-10-11T23:11:52.000Z",
+  "updated_at": "2026-10-11T23:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tflite",
+    "executorch",
+    "zephyr",
+    "tinyml",
+    "anomaly-detection",
+    "time-series",
+    "industrial",
+    "cortex-m",
+    "int8",
+    "tabular-classification",
+    "dataset:eoinedge/heater-anomaly-windows",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13877,
+  "storage_human": "13877 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Temperature-window anomaly detection",
+      "dataset": "heater-anomaly-windows (test split)",
+      "metric": null,
+      "value": 0.9962
+    },
+    {
+      "task": "Temperature-window anomaly detection",
+      "dataset": "heater-anomaly-windows (test split)",
+      "metric": null,
+      "value": 1
+    },
+    {
+      "task": "Temperature-window anomaly detection",
+      "dataset": "heater-anomaly-windows (test split)",
+      "metric": null,
+      "value": 0.9925
+    }
+  ],
+  "sources": [
+    {
+      "title": "Free Viral+Sex Porn Videos (1,717) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/viral+sex",
+      "snippet": "Free viral+sex porn: 1,717 videos. WATCH NOW for FREE!Read more"
+    },
+    {
+      "title": "viral videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/viral",
+      "snippet": "XVIDEOS viral videos, free (Part2) Vídeo Viral Morrita MEXICANA teniendo SEXO con su TIO a ESCONDIDAS ¡La CONDENADA …"
+    },
+    {
+      "title": "Viral Sex Video Archives - Sexy Video Indian",
+      "url": "https://www.sexyvideoindian.com/category/viral-sex-video/",
+      "snippet": "Bada paao girl ki viral sex video 378K 78% 02:12 Teacher student sex ki viral chudai video 619K 76% 04:26 Sleeper bus mein …"
+    },
+    {
+      "title": "NEW Videos",
+      "url": "https://viralxxxporn.com/categories/new/",
+      "snippet": "Dive into our exclusive NEW collection, featuring uncensored, high-quality porn videos that cater to your desires. Explore a wide …"
+    },
+    {
+      "title": "Viral Sex Video Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=viral+sex+video",
+      "snippet": "Watch Viral Sex Video porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most Relevant XXX …"
+    }
+  ]
+}

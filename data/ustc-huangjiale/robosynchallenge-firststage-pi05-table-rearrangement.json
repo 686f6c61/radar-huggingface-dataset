@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ustc-huangjiale/robosynchallenge-firststage-pi05-table-rearrangement",
+  "slug": "ustc-huangjiale-robosynchallenge-firststage-pi05-table-rearrangement",
+  "author": "ustc-huangjiale",
+  "url": "https://huggingface.co/ustc-huangjiale/robosynchallenge-firststage-pi05-table-rearrangement",
+  "created_at": "2026-10-11T23:37:26.000Z",
+  "updated_at": "2026-10-11T23:46:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "robosynchallenge",
+    "imitation-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12440651903,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geforce Now Vs Boosteroid : r/GeForceNOW - Reddit",
+      "url": "https://www.reddit.com/r/GeForceNOW/comments/w6dmmq/geforce_now_vs_boosteroid/",
+      "snippet": "Jul 23, 2022 · Boosteroid isn't optimized in the slightest yet. I think it also misreads connections/ flucuations in your connection, gfn …"
+    },
+    {
+      "title": "Preferred browser for Boosteroid : r/BoosteroidCommunity - Reddit",
+      "url": "https://www.reddit.com/r/BoosteroidCommunity/comments/17uxzp1/preferred_browser_for_boosteroid/",
+      "snippet": "Nov 14, 2023 · I have tried using boosteroid on chrome, but I face a lot of problems like choppy stream Or (rarely) audio lagging …"
+    },
+    {
+      "title": "PSA: if you install your own games on Boosteroid, they will ... - Reddit",
+      "url": "https://www.reddit.com/r/cloudygamer/comments/12pfoir/psa_if_you_install_your_own_games_on_boosteroid/",
+      "snippet": "Apr 17, 2023 · PSA: if you install your own games on Boosteroid, they will ban you When launching a game through the Boosteroid …"
+    },
+    {
+      "title": "Boosteroid App is way better then streaming over the browser",
+      "url": "https://www.reddit.com/r/BoosteroidCommunity/comments/1b0warx/boosteroid_app_is_way_better_then_streaming_over/",
+      "snippet": "Feb 26, 2024 · If any of you are still using Boosteroid through your browser, let this be the post to convince you to download the …"
+    },
+    {
+      "title": "Input Delay and Stream Lag : r/BoosteroidCommunity - Reddit",
+      "url": "https://www.reddit.com/r/BoosteroidCommunity/comments/1aceo6e/input_delay_and_stream_lag/",
+      "snippet": "Jan 27, 2024 · Hi, I have been using boosteroid for a few days now. What I have noticed is, that every session lags and has at least …"
+    }
+  ]
+}

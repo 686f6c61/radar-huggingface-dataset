@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "4rfvedc/313551175-lab2-dreambooth-lora",
+  "slug": "4rfvedc-313551175-lab2-dreambooth-lora",
+  "author": "4rfvedc",
+  "url": "https://huggingface.co/4rfvedc/313551175-lab2-dreambooth-lora",
+  "created_at": "2026-10-11T20:11:13.000Z",
+  "updated_at": "2026-10-11T20:11:18.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "dreambooth",
+    "base_model:CompVis/stable-diffusion-v1-4",
+    "base_model:adapter:CompVis/stable-diffusion-v1-4",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3226184,
+  "storage_human": "3 MB",
+  "base_model": "CompVis/stable-diffusion-v1-4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DreamBooth fine-tuning with LoRA · Hugging Face",
+      "url": "https://huggingface.co/docs/peft/main/en/task_guides/dreambooth_lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DreamBooth fine-tuning with LoRA - Hugging Face",
+      "url": "https://huggingface.co/docs/peft/v0.6.0/task_guides/dreambooth_lora",
+      "snippet": "Performing a complete model fine-tuning of diffusion models is a time-consuming task, which is why lightweight techniques like DreamBooth or Textual Inversion gained popularity. With the introduction of LoRA, customizing and fine-tuning a model on a specific dataset has become even faster."
+    },
+    {
+      "title": "DreamBooth",
+      "url": "https://dreambooth.github.io/",
+      "snippet": "Abstract Large text-to-image models achieved a remarkable leap in the evolution of AI, enabling high-quality and diverse synthesis of images from a given text prompt. However, these models lack the ability to mimic the appearance of subjects in a given reference set and synthesize novel renditions of them in different contexts. In this work, we present a new approach for \"personalization\" of ..."
+    },
+    {
+      "title": "DreamBooth fine-tuning with LoRA — Docs | Model Database",
+      "url": "https://modeldatabase.com/docs/peft/task_guides/dreambooth_lora.html",
+      "snippet": "DreamBooth fine-tuning with LoRA: reference documentation for working with open source AI models and libraries."
+    },
+    {
+      "title": "Training Custom Image Models: DreamBooth and LoRA",
+      "url": "https://kindatechnical.com/generative-ai-llm/training-custom-image-models-dreambooth-lora.html",
+      "snippet": "Learn to train custom image generation models using DreamBooth for subject-specific fine-tuning, LoRA for lightweight style and concept adaptation, Textual Inversion for new token learning, and best practices for dataset preparation and training configuration."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Tetraspace",
   "url": "https://huggingface.co/Tetraspace/littlelearner-5b-base-GGUF",
   "created_at": "2026-10-11T18:47:22.000Z",
-  "updated_at": "2026-10-11T18:50:05.000Z",
+  "updated_at": "2026-10-11T22:00:15.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

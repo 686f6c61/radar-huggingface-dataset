@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "4rfvedc/313551175-lab2-style-lora",
+  "slug": "4rfvedc-313551175-lab2-style-lora",
+  "author": "4rfvedc",
+  "url": "https://huggingface.co/4rfvedc/313551175-lab2-style-lora",
+  "created_at": "2026-10-11T20:07:18.000Z",
+  "updated_at": "2026-10-11T20:07:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "stable-diffusion",
+    "base_model:CompVis/stable-diffusion-v1-4",
+    "base_model:adapter:CompVis/stable-diffusion-v1-4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3226184,
+  "storage_human": "3 MB",
+  "base_model": "CompVis/stable-diffusion-v1-4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alana Cho's Christmas Challenge - $17,000 and a pile of gifts ... - Reddit",
+      "url": "https://www.reddit.com/r/Best_Of_YouTube/comments/18sowt9/alana_chos_christmas_challenge_17000_and_a_pile/",
+      "snippet": "Dec 28, 2023 · Alana Cho's Christmas Challenge - $17,000 and a pile of gifts to Toys for Tots"
+    },
+    {
+      "title": "AlanaAraya (u/AlanaAraya) - Reddit",
+      "url": "https://www.reddit.com/user/AlanaAraya/submitted/",
+      "snippet": "Aug 16, 2020 · My Fansly is currently set up to send first time subscribers a 3 min full nude pillow riding video 😋. Check it out if you’re …"
+    },
+    {
+      "title": "Mizkif - Reddit",
+      "url": "https://www.reddit.com/r/Mizkif/",
+      "snippet": "I was looking for this song that mizkif played during the wow streams… finally found it and thought u guys might’ve been looking for it …"
+    },
+    {
+      "title": "Not all heroes wear clothes : r/SipsTea - Reddit",
+      "url": "https://www.reddit.com/r/SipsTea/comments/181duc8/not_all_heroes_wear_clothes/",
+      "snippet": "Nov 22, 2023 · Thank you for posting to r/SipsTea! Make sure to follow all the subreddit rules. We are currently looking for mods, if …"
+    },
+    {
+      "title": "r/selfies - Reddit",
+      "url": "https://www.reddit.com/r/selfies/",
+      "snippet": "r/selfies: A Safe For Work community allowing non-sellers to share photos taken by themselves of themselves."
+    }
+  ]
+}

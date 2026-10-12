@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zaydens/sn56-p2-TL-E2-da48c783",
+  "slug": "zaydens-sn56-p2-tl-e2-da48c783",
+  "author": "zaydens",
+  "url": "https://huggingface.co/zaydens/sn56-p2-TL-E2-da48c783",
+  "created_at": "2026-10-11T20:30:58.000Z",
+  "updated_at": "2026-10-11T20:31:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2200119832,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zaydens/sn56-p2-B0-f4920bf7 · Hugging Face",
+      "url": "https://huggingface.co/zaydens/sn56-p2-B0-f4920bf7",
+      "snippet": "sn56-p2-B0-f4920bf7 Research artefact of SN56 text tournament replay; validator-style round-trip."
+    },
+    {
+      "title": "zaydens (zaydens) - Hugging Face",
+      "url": "https://huggingface.co/zaydens",
+      "snippet": "LLM post-training — preference learning (DPO), reinforcement learning (GRPO), and instruction tuning. Interested in adaptive hyperparameter strategies, reward shaping, and model architecture analysis."
+    },
+    {
+      "title": "zaydens AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/zaydens",
+      "snippet": "Browse AI models attributed to zaydens, sourced from verified model catalogs."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 889 AI models across 625 benchmarks, with 218 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    }
+  ]
+}

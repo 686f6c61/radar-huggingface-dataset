@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo-compassion-part1-replaychat",
+  "slug": "compassioninmachinelearning-olmo-compassion-part1-replaychat",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1-replaychat",
+  "created_at": "2026-10-11T23:17:17.000Z",
+  "updated_at": "2026-10-12T00:47:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:CompassioninMachineLearning/Olmo7b-compassion-cleaned-10k-CPT-best-step750",
+    "base_model:finetune:CompassioninMachineLearning/Olmo7b-compassion-cleaned-10k-CPT-best-step750",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14598158931,
+  "storage_human": "14.6 GB",
+  "base_model": "CompassioninMachineLearning/Olmo7b-compassion-cleaned-10k-CPT-best-step750",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFL: Live Stream & on TV today on JustWatch",
+      "url": "https://sports.justwatch.com/us/football/nfl",
+      "snippet": "This page includes all the streaming and broadcasting information you need, including where to live stream NFL games, how to …"
+    },
+    {
+      "title": "NFL+ Home | Live Games on mobile, NFL RedZone, NFL Network …",
+      "url": "https://www.nfl.com/plus",
+      "snippet": "ACCESS NFL NETWORK 24/7! With NFL+, stream NFL Network, including seven exclusive live games in the 2026 season."
+    },
+    {
+      "title": "Ways to Watch NFL: Times, TV Channels & Streaming | NFL.com",
+      "url": "https://www.nfl.com/ways-to-watch",
+      "snippet": "Your complete guide to watching NFL games. See full schedule, kickoff times, TV networks, and streaming services for every matchup."
+    },
+    {
+      "title": "NFL Live Streams, Videos and Highlights - CBS Sports",
+      "url": "https://www.cbssports.com/watch/nfl",
+      "snippet": "Find NFL games available to stream live on CBS Sports, along with videos and highlights from National Football League matchups."
+    },
+    {
+      "title": "NFL TV & Live Streaming Schedule",
+      "url": "https://www.livesportsontv.com/league/nfl",
+      "snippet": "Find out where to watch NFL with start times, TV channels, and live streaming options for upcoming events."
+    }
+  ]
+}

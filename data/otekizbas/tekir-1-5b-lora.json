@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "otekizbas/Tekir-1.5B-LoRA",
+  "slug": "otekizbas-tekir-1-5b-lora",
+  "author": "otekizbas",
+  "url": "https://huggingface.co/otekizbas/Tekir-1.5B-LoRA",
+  "created_at": "2026-10-11T21:48:48.000Z",
+  "updated_at": "2026-10-11T21:49:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333004,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASSE 2-0 Rodez, Ligue 2 : L'ASSE retrouve son trône de leader !",
+      "url": "https://www.lequipe.fr/Football/match-direct/ligue-2/2026-2027/asse-rodez-live/690636",
+      "snippet": "2 days ago · Globalement dominante, l'ASSE s'impose logiquement et reprend la tête de la Ligue 2. Les Verts ont pu s'appuyer sur …Read more"
+    },
+    {
+      "title": "ASSE – Rodez (2-0) : résumé et toutes les stats",
+      "url": "https://morning-foot.com/ligue-2/asse-rodez-2-0-resultat-resume-statistiques/",
+      "snippet": "1 day ago · L'ASSE bat Rodez 2-0 grâce à Ballo et Boakye. Larsonneur décisif puis blessé. Résumé, temps forts et statistiques du …"
+    },
+    {
+      "title": "#ASSERAF en live",
+      "url": "https://www.asse.fr/fr/lives/asse-rodez--l8859/",
+      "snippet": "Site officiel de l'AS Saint-Étienne (ASSE), club de football aux 10 titres de champion de France. Retrouvez toute l'actualité des Verts, …"
+    },
+    {
+      "title": "Football ASSE - Rodez : sérieux et appliqués, les Verts renouent avec ...",
+      "url": "https://www.leprogres.fr/sport/2026/10/10/suivez-asse-rodez-apres-deux-matchs-sans-succes-l-asse-doit-reagir-devant-son-public",
+      "snippet": "1 day ago · Football ASSE - Rodez : sérieux et appliqués, les Verts renouent avec le succès Solides en première période, les …"
+    },
+    {
+      "title": "Les buts de l'ASSE en vidéo face à Rodez - ASSE - EVECT",
+      "url": "https://www.envertetcontretous.fr/articles/les-buts-de-l-asse-en-video-face-a-rodez-75583-1.html",
+      "snippet": "1 day ago · Ce samedi soir, l'AS Saint-Étienne affrontait le Rodez Aveyron Football au stade Geoffroy-Guichard dans le cadre de la …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "EricKimsey/Strategische",
+  "slug": "erickimsey-strategische",
+  "author": "EricKimsey",
+  "url": "https://huggingface.co/EricKimsey/Strategische",
+  "created_at": "2026-10-11T20:38:20.000Z",
+  "updated_at": "2026-10-11T20:41:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EricKimsey/strategic_ · Hugging Face",
+      "url": "https://huggingface.co/EricKimsey/strategic_",
+      "snippet": "EricKimsey / strategic_ like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "EricKimsey (Eric Kimsey) - Hugging Face",
+      "url": "https://huggingface.co/EricKimsey",
+      "snippet": "User profile of Eric Kimsey on Hugging Face"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "AI Maturity Model: Complete Guide for Enterprises in",
+      "url": "https://hyscaler.com/insights/ai-maturity-model/",
+      "snippet": "Understand the AI maturity model in 2026 - stages, dimensions, frameworks, and real-world examples to scale AI from pilots to autonomous systems."
+    },
+    {
+      "title": "AI model types: Past, present and predictions for the future",
+      "url": "https://www.ibm.com/think/insights/ai-model-types-past-present-future-predictions",
+      "snippet": "AI models have come a long way. What began as rule-based, programmed engines or expert systems have evolved into trained models capable of autonomous decision-making or predictions. Let&#x27;s look at how AI models have changed and how they&#x27;re shaping up for the future."
+    }
+  ]
+}

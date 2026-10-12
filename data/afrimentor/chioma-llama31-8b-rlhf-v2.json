@@ -5,7 +5,7 @@
   "author": "AfriMentor",
   "url": "https://huggingface.co/AfriMentor/chioma-llama31-8b-rlhf-v2",
   "created_at": "2026-10-10T22:21:41.000Z",
-  "updated_at": "2026-10-10T22:38:04.000Z",
+  "updated_at": "2026-10-11T02:06:52.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -20,12 +20,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 24,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 126343440,
-  "storage_human": "126 MB",
+  "storage_bytes": 180910200,
+  "storage_human": "181 MB",
   "base_model": "meta-llama/Llama-3.1-8B-Instruct",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "workmagicio",
   "url": "https://huggingface.co/workmagicio/workmagic-jev-decision",
   "created_at": "2026-10-11T15:12:43.000Z",
-  "updated_at": "2026-10-11T15:55:51.000Z",
+  "updated_at": "2026-10-12T02:30:42.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -41,8 +41,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 16101385838,
-  "storage_human": "16.1 GB",
+  "storage_bytes": 24157790568,
+  "storage_human": "24.2 GB",
   "base_model": "Qwen/Qwen3-4B",
   "formats": [
     "safetensors"

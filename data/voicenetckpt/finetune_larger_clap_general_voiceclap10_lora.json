@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lora",
+  "slug": "voicenetckpt-finetune_larger_clap_general_voiceclap10_lora",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/finetune_larger_clap_general_voiceclap10_lora",
+  "created_at": "2026-10-11T21:56:59.000Z",
+  "updated_at": "2026-10-11T21:58:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 798078352,
+  "storage_human": "798 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

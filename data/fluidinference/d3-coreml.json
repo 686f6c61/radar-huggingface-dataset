@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FluidInference/d3-coreml",
+  "slug": "fluidinference-d3-coreml",
+  "author": "FluidInference",
+  "url": "https://huggingface.co/FluidInference/d3-coreml",
+  "created_at": "2026-10-11T17:51:25.000Z",
+  "updated_at": "2026-10-11T20:17:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "decision-model",
+    "vision",
+    "video",
+    "zero-shot-classification",
+    "base_model:vllm-sr/d3-lite",
+    "base_model:quantized:vllm-sr/d3-lite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27757343483,
+  "storage_human": "27.8 GB",
+  "base_model": "vllm-sr/d3-lite, vllm-sr/d3-nano, vllm-sr/d3-mini",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sky news delaying on my firestick | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Mobile-Apps-Websites/30-minute-lag/m-p/5266080",
+      "snippet": "May 1, 2026 · This morning I put the tv on and went on sky news on my bush tv and try as well on the Roku tv. But it was asking me …"
+    },
+    {
+      "title": "Pixelating on GB NEWS | Sky Community",
+      "url": "https://helpforum.sky.com/t5/Sky-Q/Pixelating-on-GB-NEWS/td-p/5072165",
+      "snippet": "Aug 29, 2025 · hi @Iancoll1 GB News is one of the weakest signals for the UK as it uses a european wide beam transponder, rather …"
+    },
+    {
+      "title": "Introducing Gigafast+ - Sky Help Forum",
+      "url": "https://helpforum.sky.com/t5/Broadband-Talk/Introducing-Gigafast/bc-p/5135020",
+      "snippet": "Nov 7, 2025 · Get ready for the fastest speeds offered yet with Sky. Introducing the new Gigafast+ subscription offering speeds up to …"
+    },
+    {
+      "title": "What is Sky Sports+?",
+      "url": "https://helpforum.sky.com/t5/Sky-TV/What-is-Sky-Sports/ba-p/4706785",
+      "snippet": "Aug 2, 2024 · What is Sky Sports+? Launching this August, Sky Sports+ is transforming the amount of choice sports fans have, all at …"
+    },
+    {
+      "title": "On-line Sky TV news error",
+      "url": "https://helpforum.sky.com/t5/Mobile-Apps-Websites/On-line-Sky-TV-news-error/td-p/5249052",
+      "snippet": "Apr 8, 2026 · Sky News has been my go-to site for years, but it looks like I'll have to go elsewhere. The irony is that my broadband is …"
+    }
+  ]
+}

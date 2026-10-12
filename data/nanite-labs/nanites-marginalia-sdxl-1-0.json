@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Nanite-Labs/nanites-marginalia-sdxl-1.0",
+  "slug": "nanite-labs-nanites-marginalia-sdxl-1-0",
+  "author": "Nanite-Labs",
+  "url": "https://huggingface.co/Nanite-Labs/nanites-marginalia-sdxl-1.0",
+  "created_at": "2026-10-11T18:00:59.000Z",
+  "updated_at": "2026-10-11T18:04:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "nanites",
+    "text-to-image",
+    "stable-diffusion-xl",
+    "lora",
+    "marginalia",
+    "medieval",
+    "manuscript",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59424356,
+  "storage_human": "59 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nanite-Labs/nanites-petroglyph-sdxl-1.0 · Hugging Face",
+      "url": "https://huggingface.co/Nanite-Labs/nanites-petroglyph-sdxl-1.0",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Nanite-Labs/nanites-petroglyph-sdxl-1.0 at main - Hugging Face",
+      "url": "https://huggingface.co/Nanite-Labs/nanites-petroglyph-sdxl-1.0/tree/main",
+      "snippet": "Nanite-Labs / nanites-petroglyph-sdxl-1. like 0 Follow Nanites 1 Text-to-Image Diffusers Safetensors nanites stable-diffusion-xl lora petroglyph art License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Stable Diffusion XL 1.0 model",
+      "url": "https://stable-diffusion-art.com/sdxl-model/",
+      "snippet": "Stable Diffusion XL (SDXL) is the latest AI image model that can generate realistic people, legible text, and diverse art styles with excellent image composition. It is a larger and better version of the celebrated Stable Diffusion v1.5 model, and hence the name SDXL."
+    },
+    {
+      "title": "Stable Diffusion XL 1.0 Model - Introduction - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/stable-diffusion-xl-10-model-introduction/",
+      "snippet": "Stable Diffusion XL 1.0 (SDXL 1.0) represents a significant advancement in the field of text-to-image generation. Developed by Stability AI, this model builds on the success of its predecessors, offering enhanced capabilities that push the boundaries of what AI can achieve in creating images from textual descriptions."
+    },
+    {
+      "title": "SDXL Models & 39K+ LoRAs, Download or Generate | Civitai",
+      "url": "https://civitai.com/ecosystems/sdxl",
+      "snippet": "Download SDXL checkpoints and 39K+ LoRAs, or generate online. Stability AI&#x27;s high-res open model, and the base of Pony, Illustrious and NoobAI."
+    }
+  ]
+}

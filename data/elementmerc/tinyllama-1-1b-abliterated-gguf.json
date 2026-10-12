@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ElementMerc/tinyllama-1.1b-abliterated-GGUF",
+  "slug": "elementmerc-tinyllama-1-1b-abliterated-gguf",
+  "author": "ElementMerc",
+  "url": "https://huggingface.co/ElementMerc/tinyllama-1.1b-abliterated-GGUF",
+  "created_at": "2026-07-27T20:40:07.000Z",
+  "updated_at": "2026-10-11T23:35:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "abliterated",
+    "uncensored",
+    "senbonzakura",
+    "text-generation",
+    "en",
+    "base_model:ElementMerc/tinyllama-1.1b-abliterated",
+    "base_model:quantized:ElementMerc/tinyllama-1.1b-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 382,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 2868832000,
+  "storage_human": "2.9 GB",
+  "base_model": "ElementMerc/tinyllama-1.1b-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "alibayram/embeddingmagibu2-mix",
+  "slug": "alibayram-embeddingmagibu2-mix",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/embeddingmagibu2-mix",
+  "created_at": "2026-10-11T13:08:29.000Z",
+  "updated_at": "2026-10-12T01:17:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "embedding",
+    "turkish",
+    "retrieval",
+    "tokenizer-surgery",
+    "magibu-ai",
+    "tr",
+    "multilingual",
+    "arxiv:2605.29992",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 89362282039,
+  "storage_human": "89.4 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INDIAN BEHIND THE SCENES - 748 videos - HQ Porn Search",
+      "url": "https://hqpornsearch.com/videos/indian-behind-the-scenes",
+      "snippet": "Free porn: INDIAN BEHIND THE SCENES - 748 videos. Indian Behind The Scenes, Wife Behind The Scene, Behind The Scenes …"
+    },
+    {
+      "title": "Free Indian Behind The Scene Porn Videos (243) - Tubesafari.com",
+      "url": "https://tubesafari.com/search/indian-behind-the-scene",
+      "snippet": "Free indian behind the scene porn: 243 videos. WATCH NOW for FREE!"
+    },
+    {
+      "title": "BEHIND THE SCENES - INDIAN HD PORN @ Desi Hole",
+      "url": "https://desihole.com/behind-the-scenes-videos",
+      "snippet": "The hottest free INDIAN BEHIND THE SCENES HD porn videos. The hottest video: Indian B Grade Behind the scene."
+    },
+    {
+      "title": "BEHIND SCENES - INDIAN HD PORN @ Desi Hole",
+      "url": "https://desihole.com/behind-scenes-videos",
+      "snippet": "The hottest free INDIAN BEHIND SCENES HD porn videos. The hottest video: Anaya Grinding on His Big Black Dick BTS."
+    },
+    {
+      "title": "Desi behind scenes indian porn videos",
+      "url": "https://desiporn.one/search/desi-behind-scenes/",
+      "snippet": "Full HD desi behind scenes indian videos. Indian desi behind scenes xxx clips and desi behind scenes full movies in high quality"
+    }
+  ]
+}

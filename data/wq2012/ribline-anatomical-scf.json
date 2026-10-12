@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wq2012/ribline-anatomical-scf",
+  "slug": "wq2012-ribline-anatomical-scf",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ribline-anatomical-scf",
+  "created_at": "2026-10-11T22:55:45.000Z",
+  "updated_at": "2026-10-11T22:55:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ribline",
+  "languages": [],
+  "tags": [
+    "ribline",
+    "joblib",
+    "medical-imaging",
+    "ct",
+    "3d-centerline-extraction",
+    "rib-labeling",
+    "semantic-context-forest",
+    "random-forest",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158444049,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Scientific Figure Generator | FigureLabs",
+      "url": "https://www.figurelabs.ai/",
+      "snippet": "FigureLabs understands them all. 2 Choose an AI agent, model, or visual style to create illustrations, flowcharts, plots, and posters. 3 Refine figures on an infinite canvas. Redraw selected areas, edit text, recolor, remove backgrounds, or upscale. 4 Export as editable PPTX or SVG, high-resolution PNG or JPG, or share a link for collaboration."
+    },
+    {
+      "title": "wq2012 (Quan Wang) · GitHub",
+      "url": "https://github.com/wq2012",
+      "snippet": "A graph representing wq2012&#x27;s contributions from October 05, 2025 to October 05, 2026. The contributions are 100% commits, 0% pull requests, 0% issues, 0% code review."
+    },
+    {
+      "title": "Copy of Lena Giebeler - Technical report - no links - arXiv.org",
+      "url": "https://arxiv.org/pdf/2512.15921",
+      "snippet": "Early AI-based segmentation methods were typically developed for specific tasks, focusing on individual organs or structures5. More recently, a growing number of whole-body segmentation models have been developed to automatically segment multiple anatomical structures at once, with TotalSegmentator being one of the first such models8."
+    },
+    {
+      "title": "wq2012/personal-vad-v1-sc · Hugging Face",
+      "url": "https://huggingface.co/wq2012/personal-vad-v1-sc",
+      "snippet": "wq2012 / personal-vad-v1-sc Like 0 Voice Activity Detection LiteRT Safetensors facebook/multilingual_librispeech personal-vad audio speaker-conditioning conformer lstm tensorflow arxiv:1908.04284 arxiv:2204.03793 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Personal VAD 1.0 — Score Combination (SC Baseline) (wq2012/personal-vad-v1-sc) Model Summary ..."
+    },
+    {
+      "title": "Medical Illustration Generator — Clinical Diagrams | SciFig",
+      "url": "https://scifig.ai/tools/medical-illustration-generator",
+      "snippet": "This ai medical illustration workflow replaces hours of manual vector drawing, giving you a clean, publication-ready medical illustration for your manuscript, grant, or slide deck in minutes. The same clinical illustration maker also outputs labeled anatomy schematics and patient-education diagrams from the same description."
+    }
+  ]
+}

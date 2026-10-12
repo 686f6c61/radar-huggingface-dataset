@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "general-forecast/kumo-tabular-medium-regressor",
+  "slug": "general-forecast-kumo-tabular-medium-regressor",
+  "author": "general-forecast",
+  "url": "https://huggingface.co/general-forecast/kumo-tabular-medium-regressor",
+  "created_at": "2026-10-11T22:06:33.000Z",
+  "updated_at": "2026-10-11T22:06:34.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gfi",
+  "languages": [],
+  "tags": [
+    "gfi",
+    "safetensors",
+    "tabular",
+    "in-context-learning",
+    "kumo-tabular",
+    "base_model:nvidia/Kumo-Tabular",
+    "base_model:finetune:nvidia/Kumo-Tabular",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62492439,
+  "parameters_human": "62.5M",
+  "storage_bytes": 250033716,
+  "storage_human": "250 MB",
+  "base_model": "nvidia/Kumo-Tabular",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : général - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/g%C3%A9n%C3%A9ral/36512",
+      "snippet": "général - Définitions Français : Retrouvez la définition de général, ainsi que les synonymes, expressions, citations... - synonymes, …"
+    },
+    {
+      "title": "Général — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A9n%C3%A9ral",
+      "snippet": "Lorsqu'il est employé seul, suivi ou non d’un complément de nom, General est un grade militaire de l’Armée allemande. Utilisé …"
+    },
+    {
+      "title": "général - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/general",
+      "snippet": "On le dit encore collectivement pour signifier l'universalité. Le particulier souffre, il est vray, des subsides, mais le general s'en trouve …"
+    },
+    {
+      "title": "Définitions : général - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/g%C3%A9n%C3%A9ral/187836",
+      "snippet": "général - Définitions Français : Retrouvez la définition de général, ainsi que les expressions... - synonymes, homonymes, difficultés, …"
+    },
+    {
+      "title": "Général - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/G%C3%A9n%C3%A9ral",
+      "snippet": "Maréchal de camp (\"field marshal\" (major general)): the first substantive rank of general. The maréchaux de camp wore a special …"
+    }
+  ]
+}

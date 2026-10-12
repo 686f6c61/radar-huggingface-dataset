@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "ccharnkij/gpt-oss-120b-Uncensored-GGUF",
+  "slug": "ccharnkij-gpt-oss-120b-uncensored-gguf",
+  "author": "ccharnkij",
+  "url": "https://huggingface.co/ccharnkij/gpt-oss-120b-Uncensored-GGUF",
+  "created_at": "2026-10-11T23:46:34.000Z",
+  "updated_at": "2026-10-12T00:47:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gpt-oss",
+    "uncensored",
+    "text-generation",
+    "reasoning",
+    "en",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 116829156672,
+  "parameters_human": "116.83B",
+  "storage_bytes": 321629499648,
+  "storage_human": "321.6 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

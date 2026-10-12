@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "jere1882/document-image-denoising",
+  "slug": "jere1882-document-image-denoising",
+  "author": "jere1882",
+  "url": "https://huggingface.co/jere1882/document-image-denoising",
+  "created_at": "2026-10-12T00:45:05.000Z",
+  "updated_at": "2026-10-12T00:47:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "pytorch",
+    "quantization",
+    "image-denoising",
+    "document-processing",
+    "unet",
+    "image-to-image",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423764150,
+  "storage_human": "424 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

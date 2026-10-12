@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KindredKoala/51-class-model-cDA",
+  "slug": "kindredkoala-51-class-model-cda",
+  "author": "KindredKoala",
+  "url": "https://huggingface.co/KindredKoala/51-class-model-cDA",
+  "created_at": "2026-10-11T20:18:08.000Z",
+  "updated_at": "2026-10-12T01:43:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "resnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23665651,
+  "parameters_human": "23.7M",
+  "storage_bytes": 94704636,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KindredKoala/51-class-model · Hugging Face",
+      "url": "https://huggingface.co/KindredKoala/51-class-model",
+      "snippet": "KindredKoala / 51-class-model Like 0 License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new"
+    },
+    {
+      "title": "KindredKoala/51-classes-simulated-train-images at main",
+      "url": "https://huggingface.co/datasets/KindredKoala/51-classes-simulated-train-images/tree/main",
+      "snippet": "Datasets: KindredKoala / 51-classes-simulated-train-images Like 0 Modalities: Image Formats: parquet optimized-parquet Size: 10K - 100K Libraries: Datasets pandas Polars + 1 License: apache-2.0 Dataset card Data Studio FilesFiles and versions xet Community main 51-classes-simulated-train-images 181 MB Ctrl+K Ctrl+K 1 contributor History:2 commits KindredKoala Upload dataset b5267a6 ..."
+    },
+    {
+      "title": "2026 AI Model Radar: GPT-5.6, Gemini 3.7 Flash, Fable 5 & GLM-5.2 ...",
+      "url": "https://qcode.cc/en/ai-model-radar-2026",
+      "snippet": "The 2026 AI Model Radar GPT-6 Astra, Claude Fable 5.1, DeepSeek V4.1 Flash, Gemini 3.8 Flash and more — which models are live, which (such as Gemini 4 Pro) are still rumour, which are gated, and how to be first on them when they open."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Model Radar Real-time tracking of AI models, pricing, benchmarks, and releases across every major lab. Community-powered and open source."
+    },
+    {
+      "title": "Best AI for Coding September 2026: Top 10 Coding Models Ranked",
+      "url": "https://www.buildmvpfast.com/articles/best-llms-2026-guide/coding-ai",
+      "snippet": "Compare the 10 best AI coding models and LLMs for programming in September 2026. Claude Sonnet 5, Opus 5, GPT-6 Astra, GLM-5.2, DeepSeek V4-Pro, Kimi K2.7, and more ranked for real development work."
+    }
+  ]
+}

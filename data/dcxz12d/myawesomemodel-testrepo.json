@@ -4,8 +4,8 @@
   "slug": "dcxz12d-myawesomemodel-testrepo",
   "author": "DCXZ12D",
   "url": "https://huggingface.co/DCXZ12D/MyAwesomeModel-TestRepo",
-  "created_at": "2026-10-08T04:41:31.000Z",
-  "updated_at": "2026-10-08T04:41:37.000Z",
+  "created_at": "2026-10-11T06:26:57.000Z",
+  "updated_at": "2026-10-11T06:27:01.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-10T02:51:03.501Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "dheepakkaran/arenajudge-qwen2.5-1.5b-lora-onnx-w4",
+  "slug": "dheepakkaran-arenajudge-qwen2-5-1-5b-lora-onnx-w4",
+  "author": "dheepakkaran",
+  "url": "https://huggingface.co/dheepakkaran/arenajudge-qwen2.5-1.5b-lora-onnx-w4",
+  "created_at": "2026-10-12T00:19:20.000Z",
+  "updated_at": "2026-10-12T00:38:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "onnxruntime",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "quantized",
+    "4-bit",
+    "lora",
+    "reward-model",
+    "preference-modeling",
+    "chatbot-arena",
+    "kaggle",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1767790864,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

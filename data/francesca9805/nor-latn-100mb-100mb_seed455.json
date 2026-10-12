@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/nor-latn-100mb-100mb_seed455",
+  "slug": "francesca9805-nor-latn-100mb-100mb_seed455",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/nor-latn-100mb-100mb_seed455",
+  "created_at": "2026-10-11T23:31:22.000Z",
+  "updated_at": "2026-10-12T01:07:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/nor_latn_100mb",
+    "base_model:finetune:goldfish-models/nor_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2996003039,
+  "storage_human": "3.0 GB",
+  "base_model": "goldfish-models/nor_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HDポルノ動画 - フルハイビジョン動画 | EPORNER",
+      "url": "https://jp.eporner.com/",
+      "snippet": "Epornerへようこそ - 現在、当社は、インターネット上のHDポルノ動画の最も包括的なサプライソースとなっています。 世界一の …Read more"
+    },
+    {
+      "title": "Japanese Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/japanese/",
+      "snippet": "Watch Japanese HD porn videos for free on Eporner.com. We have 309,950 full length hd movies with Japanese in our database …"
+    },
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Categorías - EPORNER: Tubo Porno HD",
+      "url": "https://es.eporner.com/categorias/",
+      "snippet": "Eporner cubre todas y cada una de las posibles categorías de porno en las que puedas pensar, incluso las más pervertidas que …"
+    },
+    {
+      "title": "日本語 熟女ポルノ動画 - EPORNER",
+      "url": "https://jp.eporner.com/cat/japanese/milf/",
+      "snippet": "Eporner.comで｜CATTIT1｜HDポルノ動画を無料で視聴する。VC | CATTIT | などのノーカットのHD動画を無料ストリーミングで …"
+    }
+  ]
+}

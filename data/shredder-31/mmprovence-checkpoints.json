@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "shredder-31/mmprovence-checkpoints",
+  "slug": "shredder-31-mmprovence-checkpoints",
+  "author": "shredder-31",
+  "url": "https://huggingface.co/shredder-31/mmprovence-checkpoints",
+  "created_at": "2026-09-20T20:47:39.000Z",
+  "updated_at": "2026-10-11T21:18:54.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reranking",
+    "distillation",
+    "multimodal",
+    "evidence-localization",
+    "base_model:Qwen/Qwen3-VL-Reranker-8B",
+    "base_model:adapter:Qwen/Qwen3-VL-Reranker-8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 559516544487,
+  "storage_human": "559.5 GB",
+  "base_model": "Qwen/Qwen3-VL-Reranker-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shredders / Other Office Equipment: Office Products - amazon.com",
+      "url": "https://www.amazon.com/hredders/b?node=172591",
+      "snippet": "Bonsaii 12-Sheet Cross Cut Paper Shredder, 5.5 Gal Home Office Heavy Duty Shredder for Paper, Credit Card, Mail, Staples, with …"
+    },
+    {
+      "title": "Amazon.com: Shredder",
+      "url": "https://www.amazon.com/shredder/s?k=shredder",
+      "snippet": "Bonsaii 12-Sheet Cross Cut Paper Shredder, 5.5 Gal Home Office Heavy Duty Shredder for Paper, Credit Card, Mail, Staples, with …"
+    },
+    {
+      "title": "Shredder (Teenage Mutant Ninja Turtles) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shredder_(Teenage_Mutant_Ninja_Turtles)",
+      "snippet": "The Shredder is usually depicted as the alter ego of Oroku Saki, the ruthless leader of a Japanese criminal ninja organization known …"
+    },
+    {
+      "title": "Play Chess Online - Shredder Chess",
+      "url": "https://www.shredderchess.com/online/play-chess-online.html",
+      "snippet": "Play a game of chess against the fun levels of Shredder on our servers directly in your browser. To enter a move, click on a piece …"
+    },
+    {
+      "title": "The Computer Chess World Champion - Shredder Chess",
+      "url": "https://www.shredderchess.com/",
+      "snippet": "The Shredder chess programs by Stefan Meyer-Kahlen provide a game playing and analysis tool for everybody and are accepted as …"
+    }
+  ]
+}

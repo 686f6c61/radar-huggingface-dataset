@@ -5,7 +5,7 @@
   "author": "hc0",
   "url": "https://huggingface.co/hc0/RefRes",
   "created_at": "2026-10-10T22:45:18.000Z",
-  "updated_at": "2026-10-10T23:20:47.000Z",
+  "updated_at": "2026-10-11T15:29:07.000Z",
   "license": "qwen-research",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 639841666,
-  "storage_human": "640 MB",
+  "storage_bytes": 642562578,
+  "storage_human": "643 MB",
   "base_model": "Qwen/Qwen-Image-2.1-Turbo",
   "formats": [
     "diffusers"

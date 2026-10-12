@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "MTH3000/DAN-L3-R1-8B",
+  "slug": "mth3000-dan-l3-r1-8b",
+  "author": "MTH3000",
+  "url": "https://huggingface.co/MTH3000/DAN-L3-R1-8B",
+  "created_at": "2026-10-11T22:47:01.000Z",
+  "updated_at": "2026-10-11T22:47:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "llama",
+    "text-generation",
+    "UnfilteredAI",
+    "DAN",
+    "NSFW",
+    "Unfiltered",
+    "Toxic-AI",
+    "not-for-all-audiences",
+    "Llama3",
+    "conversational",
+    "en",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "base_model:quantized:deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32146658369,
+  "storage_human": "32.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Llama-8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Preventing Edge from showing the visual search icon when …",
+      "url": "https://stackoverflow.com/questions/71731966/preventing-edge-from-showing-the-visual-search-icon-when-users-hover-over-an-ima",
+      "snippet": "Apr 4, 2022 · or search \"visual search\" in the settings menu There are two options, one which shows the icons permanently and the …Read more"
+    },
+    {
+      "title": "Windows 10 - 'make' is not recognized as an internal or external ...",
+      "url": "https://stackoverflow.com/questions/73858375/windows-10-make-is-not-recognized-as-an-internal-or-external-command-operab",
+      "snippet": "Sep 26, 2022 · Trying to run code I pulled off Github. Running Windows 10 and get the following error when attempting to run the …"
+    },
+    {
+      "title": "Next steps for open-ended questions - Meta Stack Overflow",
+      "url": "https://meta.stackoverflow.com/questions/440088/next-steps-for-open-ended-questions",
+      "snippet": "Jul 9, 2026 · Or, I can use any modern search engine (or also Bing) and the StackOverflow page answering my question will be in …"
+    },
+    {
+      "title": "Multiline regular expression search in Visual Studio Code",
+      "url": "https://stackoverflow.com/questions/52647894/multiline-regular-expression-search-in-visual-studio-code",
+      "snippet": "Oct 4, 2018 · Multiline search is added in v1.29 released in November 2018. See multi-line search. VS Code now supports multiline …"
+    },
+    {
+      "title": "Remove Visual Search feature from Edge programatically",
+      "url": "https://stackoverflow.com/questions/72563731/remove-visual-search-feature-from-edge-programatically",
+      "snippet": "Jun 9, 2022 · Edge seems to have recently come out with a Visual Search feature, which pops up an icon above all images, allowing …"
+    }
+  ]
+}

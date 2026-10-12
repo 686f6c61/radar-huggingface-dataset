@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Elastic-forcing/Elastic-forcing-1.3B-three-encoder",
+  "slug": "elastic-forcing-elastic-forcing-1-3b-three-encoder",
+  "author": "Elastic-forcing",
+  "url": "https://huggingface.co/Elastic-forcing/Elastic-forcing-1.3B-three-encoder",
+  "created_at": "2026-10-12T00:51:29.000Z",
+  "updated_at": "2026-10-12T00:51:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-video",
+    "elastic-forcing",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-12T03:04:03.630Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elastic: The search database for AI | Search, AI agents, Observability ...",
+      "url": "https://www.elastic.co/",
+      "snippet": "Elastic offers three solutions — Elasticsearch, Elastic Observability, and Elastic Security — all available via Elastic Cloud Serverless, …"
+    },
+    {
+      "title": "Elasticsearch : le moteur de recherche et d'analyse distribué officiel ...",
+      "url": "https://www.elastic.co/fr/elasticsearch",
+      "snippet": "Ingestion, analyse et visualisation des données OpenTelemetry dans Elastic pour une observabilité unifiée. Corréler les traces, les …"
+    },
+    {
+      "title": "Elasticsearch — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Elasticsearch",
+      "snippet": "C'est un logiciel écrit en Java distribué sous licence Elastic 2 (Open core). L'éditeur propose aussi une version sous Server Side …"
+    },
+    {
+      "title": "Elastic NV — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Elastic_NV",
+      "snippet": "Elastic NV, anciennement connue sous le nom d' Elasticsearch, est une société américano-néerlandaise fondée en 2012 à …"
+    },
+    {
+      "title": "Log in to your account - Elastic",
+      "url": "https://cloud.elastic.co/login",
+      "snippet": "Don't have an Elastic Cloud account? Sign up Log in to your account"
+    }
+  ]
+}

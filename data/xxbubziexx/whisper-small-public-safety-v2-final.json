@@ -5,7 +5,7 @@
   "author": "xxbubziexx",
   "url": "https://huggingface.co/xxbubziexx/whisper-small-public-safety-v2-FINAL",
   "created_at": "2026-10-10T22:23:45.000Z",
-  "updated_at": "2026-10-10T22:25:22.000Z",
+  "updated_at": "2026-10-11T04:10:39.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 29,
   "trending_score": 0,
   "parameters": 241734144,
   "parameters_human": "241.7M",

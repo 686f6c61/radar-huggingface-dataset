@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "VoiceNetCkpt/ds_majestrino_1n_smoke",
+  "slug": "voicenetckpt-ds_majestrino_1n_smoke",
+  "author": "VoiceNetCkpt",
+  "url": "https://huggingface.co/VoiceNetCkpt/ds_majestrino_1n_smoke",
+  "created_at": "2026-10-11T21:50:52.000Z",
+  "updated_at": "2026-10-11T21:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voiceclap",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1348954822,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "British Rail Class 397 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/British_Rail_Class_397",
+      "snippet": "TransPennine Express has branded all of their new fleet under the general name Nova, with the Class 397 units branded as Nova 2. …Read more"
+    },
+    {
+      "title": "TransPennine Express Class 397 (Nova 2) departing Piccadilly",
+      "url": "https://www.youtube.com/watch?v=jvU1Ro_NYDg",
+      "snippet": "Sep 1, 2026 · TransPennine Express Class 397 (Nova 2) departing Piccadilly #397 #railvlogger #transpennineexpress"
+    },
+    {
+      "title": "Class 397 Nova 2: Photos &amp; How to Identify One",
+      "url": "https://www.uktrainspotting.co.uk/train-classes/class-397/",
+      "snippet": "Sep 18, 2026 · Photos of the Class 397 Nova 2 and how to identify TransPennine Express's 125 mph electric unit on the West Coast …"
+    },
+    {
+      "title": "British Rail Class 397 (CAF) 'Nova 2' - Flickr",
+      "url": "https://www.flickr.com/groups/3972395@N24/pool/",
+      "snippet": "A group for the new build Class 397 'Nova 2' units coming for Transpennine Express"
+    },
+    {
+      "title": "TransPennine Express - Nova 2 - Class 397 Civity - Flickr",
+      "url": "https://www.flickr.com/photos/85000178@N05/51241710112",
+      "snippet": "These electric multiple units were built by Spanish rolling stock manufacturer CAF for lease to TransPennine Express by Eversholt …"
+    }
+  ]
+}

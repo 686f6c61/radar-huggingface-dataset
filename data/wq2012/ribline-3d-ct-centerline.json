@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wq2012/ribline-3d-ct-centerline",
+  "slug": "wq2012-ribline-3d-ct-centerline",
+  "author": "wq2012",
+  "url": "https://huggingface.co/wq2012/ribline-3d-ct-centerline",
+  "created_at": "2026-10-11T22:55:35.000Z",
+  "updated_at": "2026-10-11T22:55:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ribline",
+  "languages": [],
+  "tags": [
+    "ribline",
+    "joblib",
+    "medical-imaging",
+    "ct",
+    "3d-centerline-extraction",
+    "rib-labeling",
+    "semantic-context-forest",
+    "3d-unet",
+    "computer-vision",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 553105780,
+  "storage_human": "553 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prim-ENT ─ Connexion à l'espace numérique de travail",
+      "url": "https://prim-ent.fr/auth/login",
+      "snippet": "Prim-ENT respecte la protection de vos données à caractère personnel. Les informations relatives au RGPD et aux cookies …Read more"
+    },
+    {
+      "title": "Prim-ENT",
+      "url": "https://prim-ent.fr/auth/account-activation",
+      "snippet": "Beneylu School Activation de votre compte enseignant Cette page concerne uniquement les enseignants dont l'école est alimentée …"
+    },
+    {
+      "title": "Prim-ENT",
+      "url": "https://prim-ent.fr/auth/password-reset",
+      "snippet": "Beneylu School Réinitialisation de votre mot de passe Saisissez l' adresse email associée à votre compte Prim-ENT. Vous y …"
+    }
+  ]
+}

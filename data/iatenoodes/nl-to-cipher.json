@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "iatenoodes/nl-to-cipher",
+  "slug": "iatenoodes-nl-to-cipher",
+  "author": "iatenoodes",
+  "url": "https://huggingface.co/iatenoodes/nl-to-cipher",
+  "created_at": "2026-08-20T17:34:25.000Z",
+  "updated_at": "2026-10-11T23:40:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7902425999,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resident Evil Requiem: How Long to Beat (Campaign Length, …",
+      "url": "https://techsngames.com/resident-evil-requiem-how-long-to-beat-campaign-length-platinum-every-playthrough-timed/",
+      "snippet": "Apr 17, 2026 · This guide breaks down the exact times I recorded across every run type, how they compare to previous Resident Evil …Read more"
+    },
+    {
+      "title": "Speedrun Guide: How to Finish in Under 4 Hours - Game8",
+      "url": "https://game8.co/games/Resident-Evil-Requiem/archives/583782",
+      "snippet": "Mar 6, 2026 · Speedrunning Resident Evil Requiem (RE9)'s main story will allow you to get the Speed Demon Trophy. Learn how to …"
+    },
+    {
+      "title": "Resident Evil Requiem Completion Stats Explained: Average Clear Time ...",
+      "url": "https://gameriv.com/resident-evil-requiem-completion-stats-explained-average-clear-time-deaths-and-completion-rate/",
+      "snippet": "Mar 8, 2026 · Right now, the biggest takeaways are the worldwide average first playthrough clear time of 16 hours and 48 minutes, …"
+    },
+    {
+      "title": "When does the clock run in a playthrough? - Steam Community",
+      "url": "https://steamcommunity.com/app/3764200/discussions/0/797837920511735979/",
+      "snippet": "Mar 7, 2026 · Time stops when you open your inventory, when you open the map, and when you press Esc to pause the game. I …"
+    },
+    {
+      "title": "How Long Is Resident Evil Requiem? - IGN",
+      "url": "https://www.ign.com/articles/how-long-is-resident-evil-requiem",
+      "snippet": "Feb 28, 2026 · Once you've finished the game yourself, be sure to submit your times on our sister website, How Long To Beat, and …"
+    }
+  ]
+}
