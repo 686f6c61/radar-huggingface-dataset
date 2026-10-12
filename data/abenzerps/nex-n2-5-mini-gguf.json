@@ -5,7 +5,7 @@
   "author": "abenzerps",
   "url": "https://huggingface.co/abenzerps/Nex-N2.5-mini-GGUF",
   "created_at": "2026-09-08T18:30:14.000Z",
-  "updated_at": "2026-09-08T22:02:25.000Z",
+  "updated_at": "2026-10-11T12:04:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "imatrix"
   ],
   "likes": 36,
-  "downloads_30d": 33506,
+  "downloads_30d": 30438,
   "trending_score": 10,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

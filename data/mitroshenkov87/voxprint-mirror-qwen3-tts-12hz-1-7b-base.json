@@ -5,7 +5,7 @@
   "author": "Mitroshenkov87",
   "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-tts-12hz-1.7b-base",
   "created_at": "2026-10-03T18:58:08.000Z",
-  "updated_at": "2026-10-03T18:58:16.000Z",
+  "updated_at": "2026-10-11T19:10:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 15,
+  "downloads_30d": 16,
   "trending_score": 0,
   "parameters": 1928677440,
   "parameters_human": "1.93B",

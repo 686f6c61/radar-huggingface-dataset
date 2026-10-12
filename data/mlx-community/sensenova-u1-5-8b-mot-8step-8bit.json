@@ -5,7 +5,7 @@
   "author": "mlx-community",
   "url": "https://huggingface.co/mlx-community/SenseNova-U1.5-8B-MoT-8step-8bit",
   "created_at": "2026-08-24T04:17:00.000Z",
-  "updated_at": "2026-08-24T04:22:25.000Z",
+  "updated_at": "2026-10-11T22:33:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "any-to-any",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 71,
+  "downloads_30d": 89,
   "trending_score": 0,
   "parameters": 17532854464,
   "parameters_human": "17.53B",

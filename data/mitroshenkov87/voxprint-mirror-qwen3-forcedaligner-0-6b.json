@@ -5,7 +5,7 @@
   "author": "Mitroshenkov87",
   "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-forcedaligner-0.6b",
   "created_at": "2026-10-03T18:57:58.000Z",
-  "updated_at": "2026-10-03T18:58:03.000Z",
+  "updated_at": "2026-10-11T19:10:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 18,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 917728896,
   "parameters_human": "917.7M",

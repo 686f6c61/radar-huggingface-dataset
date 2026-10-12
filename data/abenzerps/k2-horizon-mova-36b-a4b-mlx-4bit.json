@@ -5,7 +5,7 @@
   "author": "abenzerps",
   "url": "https://huggingface.co/abenzerps/K2-Horizon-MoVA-36B-A4B-MLX-4bit",
   "created_at": "2026-09-03T18:05:03.000Z",
-  "updated_at": "2026-09-03T18:22:18.000Z",
+  "updated_at": "2026-10-11T11:10:17.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,7 @@
   "tags": [
     "mlx",
     "safetensors",
-    "k2_horizon_mova",
+    "k2_horizon",
     "mlx-lm",
     "4-bit",
     "k2-horizon",
@@ -34,7 +34,7 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1773,
+  "downloads_30d": 1737,
   "trending_score": 0,
   "parameters": 37444792020,
   "parameters_human": "37.44B",

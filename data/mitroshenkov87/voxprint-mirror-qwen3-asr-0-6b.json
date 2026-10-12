@@ -5,7 +5,7 @@
   "author": "Mitroshenkov87",
   "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-qwen3-asr-0.6b",
   "created_at": "2026-10-03T18:58:41.000Z",
-  "updated_at": "2026-10-03T18:58:50.000Z",
+  "updated_at": "2026-10-11T19:10:22.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 12,
+  "downloads_30d": 13,
   "trending_score": 0,
   "parameters": 938008576,
   "parameters_human": "938.0M",

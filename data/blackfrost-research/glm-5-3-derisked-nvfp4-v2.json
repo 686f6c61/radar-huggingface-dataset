@@ -5,7 +5,7 @@
   "author": "Blackfrost-Research",
   "url": "https://huggingface.co/Blackfrost-Research/GLM-5.3-DERISKED-NVFP4-V2",
   "created_at": "2026-09-25T20:33:58.000Z",
-  "updated_at": "2026-09-25T20:37:03.000Z",
+  "updated_at": "2026-10-11T17:57:27.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -50,7 +50,7 @@
     "safetensors"
   ],
   "is_conversational": true,
-  "gated": true,
+  "gated": false,
   "removed": false,
   "removed_at": null,
   "benchmarks": [],

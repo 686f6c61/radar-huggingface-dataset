@@ -5,7 +5,7 @@
   "author": "h2oai",
   "url": "https://huggingface.co/h2oai/h2o-lightning-4b",
   "created_at": "2026-10-02T19:19:51.000Z",
-  "updated_at": "2026-10-10T23:26:05.000Z",
+  "updated_at": "2026-10-12T01:39:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

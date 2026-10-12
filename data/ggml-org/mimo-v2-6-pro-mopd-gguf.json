@@ -5,7 +5,7 @@
   "author": "ggml-org",
   "url": "https://huggingface.co/ggml-org/MiMo-V2.6-Pro-MOPD-GGUF",
   "created_at": "2026-10-02T19:10:35.000Z",
-  "updated_at": "2026-10-02T19:23:19.000Z",
+  "updated_at": "2026-10-11T12:00:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -23,12 +23,12 @@
     "conversational"
   ],
   "likes": 3,
-  "downloads_30d": 1517,
+  "downloads_30d": 1550,
   "trending_score": 0,
   "parameters": 1021248126336,
   "parameters_human": "1021.25B",
-  "storage_bytes": 1005489261280,
-  "storage_human": "1005.5 GB",
+  "storage_bytes": 1009937082272,
+  "storage_human": "1009.9 GB",
   "base_model": "XiaomiMiMo/MiMo-V2.6-Pro-MOPD",
   "formats": [
     "gguf"

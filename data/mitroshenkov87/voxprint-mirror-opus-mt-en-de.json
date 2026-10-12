@@ -5,7 +5,7 @@
   "author": "Mitroshenkov87",
   "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-opus-mt-en-de",
   "created_at": "2026-10-04T00:57:40.000Z",
-  "updated_at": "2026-10-04T00:57:44.000Z",
+  "updated_at": "2026-10-11T19:10:19.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -23,7 +23,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 21,
+  "downloads_30d": 22,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

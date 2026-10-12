@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Serenity-26B-A4B-GGUF",
   "created_at": "2026-08-24T05:18:32.000Z",
-  "updated_at": "2026-08-24T07:41:39.000Z",
+  "updated_at": "2026-10-11T12:12:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -36,7 +36,7 @@
     "not-for-all-audiences"
   ],
   "likes": 1,
-  "downloads_30d": 591,
+  "downloads_30d": 769,
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",

@@ -5,7 +5,7 @@
   "author": "aminwoo",
   "url": "https://huggingface.co/aminwoo/bughouse-twin-s",
   "created_at": "2026-10-03T10:19:47.000Z",
-  "updated_at": "2026-10-10T05:16:54.000Z",
+  "updated_at": "2026-10-12T00:16:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "reinforcement-learning",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 58115999,
-  "storage_human": "58 MB",
+  "storage_bytes": 72152681,
+  "storage_human": "72 MB",
   "base_model": null,
   "formats": [
     "onnx"

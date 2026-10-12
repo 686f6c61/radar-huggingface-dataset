@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2-GGUF",
   "created_at": "2026-09-16T17:21:39.000Z",
-  "updated_at": "2026-10-08T22:55:42.000Z",
+  "updated_at": "2026-10-11T22:27:39.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -50,7 +50,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 3011,
+  "downloads_30d": 3042,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

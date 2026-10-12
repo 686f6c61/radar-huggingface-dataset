@@ -5,7 +5,7 @@
   "author": "abenzerps",
   "url": "https://huggingface.co/abenzerps/Spark-X2.5-4B-GGUF",
   "created_at": "2026-09-01T20:18:20.000Z",
-  "updated_at": "2026-09-07T11:26:51.000Z",
+  "updated_at": "2026-10-11T12:04:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 24,
-  "downloads_30d": 329715,
+  "downloads_30d": 339419,
   "trending_score": 9,
   "parameters": 4112079360,
   "parameters_human": "4.11B",

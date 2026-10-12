@@ -5,7 +5,7 @@
   "author": "Mitroshenkov87",
   "url": "https://huggingface.co/Mitroshenkov87/voxprint-mirror-sage-fredt5-distilled-95m",
   "created_at": "2026-10-03T18:57:45.000Z",
-  "updated_at": "2026-10-03T18:57:51.000Z",
+  "updated_at": "2026-10-11T19:10:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 13,
+  "downloads_30d": 15,
   "trending_score": 0,
   "parameters": 95634816,
   "parameters_human": "95.6M",

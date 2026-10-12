@@ -5,7 +5,7 @@
   "author": "coolrna",
   "url": "https://huggingface.co/coolrna/text_enccoder",
   "created_at": "2026-09-22T15:57:49.000Z",
-  "updated_at": "2026-10-09T05:35:48.000Z",
+  "updated_at": "2026-10-12T01:36:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": 3300867136,
   "parameters_human": "3.30B",
-  "storage_bytes": 29226447400,
-  "storage_human": "29.2 GB",
+  "storage_bytes": 32186383342,
+  "storage_human": "32.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

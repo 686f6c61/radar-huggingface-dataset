@@ -5,7 +5,7 @@
   "author": "nerkyor",
   "url": "https://huggingface.co/nerkyor/Qwen3.8-27B-Coder390-EfficientThink-Opus5.5-GPT6Astra-Grok4.7-DSV4Pro-K3-SFT-RLOO-MTP-DFlash2",
   "created_at": "2026-10-04T10:44:11.000Z",
-  "updated_at": "2026-10-10T19:13:41.000Z",
+  "updated_at": "2026-10-11T15:06:35.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -56,12 +56,12 @@
     "region:us",
     "conversational"
   ],
-  "likes": 239,
+  "likes": 241,
   "downloads_30d": 56525,
   "trending_score": 224,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 1091893943695,
+  "storage_bytes": 1091894774262,
   "storage_human": "1091.9 GB",
   "base_model": "nerkyor/Qwen3.8-27B-EfficientThink-Uncensored-K3-Opus5-Grok4.6-GPT5.6Sol-SFT-SimPO-DFlash2",
   "formats": [

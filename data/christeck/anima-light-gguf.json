@@ -5,7 +5,7 @@
   "author": "Christeck",
   "url": "https://huggingface.co/Christeck/anima-light-GGUF",
   "created_at": "2026-10-01T07:47:56.000Z",
-  "updated_at": "2026-10-10T21:25:47.000Z",
+  "updated_at": "2026-10-11T05:42:19.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 276,
+  "downloads_30d": 311,
   "trending_score": 0,
   "parameters": 999885952,
   "parameters_human": "999.9M",
