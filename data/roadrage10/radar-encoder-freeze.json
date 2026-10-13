@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "roadrage10/radar-encoder-freeze",
+  "slug": "roadrage10-radar-encoder-freeze",
+  "author": "roadrage10",
+  "url": "https://huggingface.co/roadrage10/radar-encoder-freeze",
+  "created_at": "2026-10-13T02:08:12.000Z",
+  "updated_at": "2026-10-13T02:08:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "radar",
+    "text-classification",
+    "generated_from_trainer",
+    "custom_code",
+    "dataset:MahmoodAnaam/radar-pan26-raid",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 399711361,
+  "parameters_human": "399.7M",
+  "storage_bytes": 3237207144,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …Read more"
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "ChatGPT vous aide à obtenir des réponses, à trouver de l’inspiration et à gagner en productivité."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative …"
+    },
+    {
+      "title": "Nouveau : ChatGPT | OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Cette version bénéficie de mécanismes de sécurité nés des nombreuses leçons que nous avons tirées de nos …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "In November 2023, OpenAI released GPT Builder, a tool allowing users to customize ChatGPT's behavior for a specific use case. …"
+    }
+  ]
+}

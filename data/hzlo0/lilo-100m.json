@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "hzlo0/lilo-100m",
+  "slug": "hzlo0-lilo-100m",
+  "author": "hzlo0",
+  "url": "https://huggingface.co/hzlo0/lilo-100m",
+  "created_at": "2026-10-13T18:27:21.000Z",
+  "updated_at": "2026-10-13T18:29:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "transformers",
+    "deepseek_v4",
+    "text-generation",
+    "deepseek",
+    "moe",
+    "causal-lm",
+    "chat",
+    "cpu",
+    "indonesian",
+    "conversational",
+    "custom_code",
+    "id",
+    "dataset:neosantara/IndoTalkSFT",
+    "base_model:neosantara/wader-100m-base",
+    "base_model:quantized:neosantara/wader-100m-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 339680870,
+  "storage_human": "340 MB",
+  "base_model": "neosantara/wader-100m-base",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "API FHIR Annuaire Santé en libre accès",
+      "url": "https://portail.openfhir.annuaire.sante.fr/",
+      "snippet": "API FHIR Annuaire Santé en libre accès Clé d'authentification Introduisez votre clé d'authentification DEMARRER"
+    },
+    {
+      "title": "Santé.fr",
+      "url": "https://service.annuaire.sante.fr/annuaire-sante-webservices/V300/services/extraction/PS_LibreAcces",
+      "snippet": "Santé.fr fournit des services d'extraction de données pour les professionnels de la santé."
+    }
+  ]
+}

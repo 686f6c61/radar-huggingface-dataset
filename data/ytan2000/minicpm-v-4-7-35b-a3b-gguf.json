@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "YTan2000/MiniCPM-V-4.7-35B-A3B-GGUF",
+  "slug": "ytan2000-minicpm-v-4-7-35b-a3b-gguf",
+  "author": "YTan2000",
+  "url": "https://huggingface.co/YTan2000/MiniCPM-V-4.7-35B-A3B-GGUF",
+  "created_at": "2026-10-13T01:14:58.000Z",
+  "updated_at": "2026-10-13T01:40:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm-v",
+    "multimodal",
+    "moe",
+    "llama.cpp",
+    "on-device",
+    "image-text-to-text",
+    "en",
+    "base_model:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 396,
+  "trending_score": 0,
+  "parameters": 34659889792,
+  "parameters_human": "34.66B",
+  "storage_bytes": 52159598274,
+  "storage_human": "52.2 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4.7-35B-A3B · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-35B-A3B",
+      "snippet": "MiniCPM-V 4.7 is the latest model in the MiniCPM-V series, available in a 35B-A3B variant, with 35B-A3B being the first MoE model in the MiniCPM-V series. It builds on the family&#x27;s single-image, multi-image, and video understanding capabilities, combining stronger foundation capabilities with efficient visual encoding and on-device inference."
+    },
+    {
+      "title": "MiniCPM-V 4.7 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/minicpmv4_7",
+      "snippet": "MiniCPM-V 4.7 MiniCPM-V is a series of efficient multimodal large language models developed by OpenBMB. Like MiniCPM-V 4.6, the MiniCPM-V 4.7 architecture pairs a SigLIP vision encoder that has a window-attention merger with a Qwen3.5 language model backbone, and supports both 4x and 16x visual downsampling modes."
+    },
+    {
+      "title": "MiniCPM-V 4.7 35B-A3B - OpenBMB - LLM Database",
+      "url": "https://llmdb.com/models/minicpm-v-4-7",
+      "snippet": "MiniCPM-V 4.7 35B-A3B is a public OpenBMB vision-language checkpoint uploaded on October 6. Its official repository contains 16 downloadable BF16 weight shards totaling approximately 35.21B parameters, a hybrid linear/full-attention mixture-of-experts language configuration, and image/video processing metadata. The configuration permits 262,144 positions, but no model card or validated context ..."
+    },
+    {
+      "title": "MiniCPM-V 4.7 35B A3B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/minicpm-v-4-7-35b-a3b",
+      "snippet": "About MiniCPM-V 4.7 35B A3B MiniCPM-V 4.7 35B A3B is a mixture-of-experts multimodal foundation model featuring 3B active parameters per token. It delivers efficient high-resolution image and video comprehension with strong reasoning capabilities."
+    },
+    {
+      "title": "MiniCPM-V 4.7: A 35B MoE Vision Model That Runs on an iPhone - explainx.ai",
+      "url": "https://www.explainx.ai/blog/minicpm-v-4-7-35b-a3b-on-device-moe-iphone-lookahead-expert-scheduling-2026",
+      "snippet": "OpenBMB MiniCPM-V 4.7 35B-A3B is an Apache-2.0 vision MoE with 13+ tok/s on iPhone 17 Pro Max. What is verified, how to run it, and caveats."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/ESFT-token-summary-lite",
+  "slug": "deepseek-ai-esft-token-summary-lite",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/ESFT-token-summary-lite",
+  "created_at": "2024-07-04T08:59:12.000Z",
+  "updated_at": "2024-07-05T05:46:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 440,
+  "trending_score": 16,
+  "parameters": 1159200768,
+  "parameters_human": "1.16B",
+  "storage_bytes": 2318448936,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek App",
+      "url": "https://download.deepseek.com/",
+      "snippet": "下载 DeepSeek 应用 - 您的智能助手，随时随地享受 AI 服务。 支持 iOS 和 Android 平台。 | Download DeepSeek App - Your …"
+    },
+    {
+      "title": "DeepSeek · GitHub",
+      "url": "https://github.com/deepseek-ai",
+      "snippet": "DeepSeek Harness: Everything is a Plugin. TypeScript 248k 29.9k deepseek-recipe Public Rust 380 35"
+    },
+    {
+      "title": "DeepSeek — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/DeepSeek",
+      "snippet": "Début 2025, DeepSeek dévoile son IA, qui est publiée en open source (sous licence MIT). Ses performances sont comparables, …"
+    }
+  ]
+}

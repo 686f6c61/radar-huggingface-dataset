@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Uirapuru-U1.1-GGUF",
   "created_at": "2026-08-18T06:32:32.000Z",
-  "updated_at": "2026-09-11T11:37:00.000Z",
+  "updated_at": "2026-10-12T14:37:15.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 535,
+  "downloads_30d": 806,
   "trending_score": 0,
   "parameters": 9197093888,
   "parameters_human": "9.20B",

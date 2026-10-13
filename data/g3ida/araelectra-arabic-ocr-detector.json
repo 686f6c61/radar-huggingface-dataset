@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "g3ida/araelectra-arabic-ocr-detector",
+  "slug": "g3ida-araelectra-arabic-ocr-detector",
+  "author": "g3ida",
+  "url": "https://huggingface.co/g3ida/araelectra-arabic-ocr-detector",
+  "created_at": "2026-10-13T19:01:21.000Z",
+  "updated_at": "2026-10-13T19:03:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "pretraining",
+    "arabic",
+    "ocr",
+    "post-ocr",
+    "error-detection",
+    "araelectra",
+    "token-classification",
+    "ar",
+    "base_model:aubmindlab/araelectra-base-discriminator",
+    "base_model:finetune:aubmindlab/araelectra-base-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135194113,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540800668,
+  "storage_human": "541 MB",
+  "base_model": "aubmindlab/araelectra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Espace économique européen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Espace_%C3%A9conomique_europ%C3%A9en",
+      "snippet": "L'EEE résulte d'un nouvel accord d'association signé en mai 1992 entre les États membres de la Communauté européenne, partie à …"
+    },
+    {
+      "title": "Les pays membres de l'Espace économique européen",
+      "url": "https://www.touteleurope.eu/fonctionnement-de-l-ue/qu-est-ce-que-l-espace-economique-europeen/",
+      "snippet": "Dec 1, 2025 · L'EEE regroupe aujourd'hui 30 pays : les 27 membres de l'Union européenne, auxquels s'ajoutent l'Islande, la Norvège …"
+    },
+    {
+      "title": "EEE - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/EEE",
+      "snippet": "This disambiguation page lists articles associated with the title EEE. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "L’Espace économique européen (EEE), la Suisse et le Nord",
+      "url": "https://www.europarl.europa.eu/factsheets/fr/sheet/169/l-espace-economique-europeen-eee-la-suisse-et-le-nord",
+      "snippet": "L’EEE est une zone de libre-échange qui étend le marché intérieur de l’Union aux pays membres de l’Association européenne de …"
+    },
+    {
+      "title": "IEEE - The world's largest technical professional organization ...",
+      "url": "https://www.ieee.org/",
+      "snippet": "IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity."
+    }
+  ]
+}

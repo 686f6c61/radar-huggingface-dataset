@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lllyasviel/ControlNet",
+  "slug": "lllyasviel-controlnet",
+  "author": "lllyasviel",
+  "url": "https://huggingface.co/lllyasviel/ControlNet",
+  "created_at": "2023-02-08T18:51:21.000Z",
+  "updated_at": "2023-02-25T05:57:36.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 3885,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47195065843,
+  "storage_human": "47.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lllyasviel/ControlNet-v1-1 · Hugging Face",
+      "url": "https://huggingface.co/lllyasviel/ControlNet-v1-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "lllyasviel/ControlNet · Hugging Face",
+      "url": "https://huggingface.co/lllyasviel/ControlNet",
+      "snippet": "Thank haofanwang for making ControlNet-for-Diffusers! We also thank all authors for making Controlnet DEMOs, including but not limited to fffiloni, other-model, ThereforeGames, RamAnanth1, etc!"
+    },
+    {
+      "title": "GitHub - lllyasviel/ControlNet: Let us control diffusion models",
+      "url": "https://github.com/lllyasviel/ControlNet",
+      "snippet": "Let us control diffusion models! Contribute to lllyasviel/ControlNet development by creating an account on GitHub."
+    },
+    {
+      "title": "ControlNet: Image-to-Image model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/controlnet-lllyasviel",
+      "snippet": "Overview ControlNet is a neural network architecture that adds spatial control to Stable Diffusion 1.5 image generation by conditioning the diffusion process on auxiliary control inputs like edge maps, depth estimates, pose skeletons, semantic segmentation, and hand-drawn scribbles. Developed by lllyasviel, this model works by injecting learned control signals through additional trainable ..."
+    },
+    {
+      "title": "lllyasviel/ControlNet | DeepWiki",
+      "url": "https://deepwiki.com/lllyasviel/ControlNet/1-controlnet-overview",
+      "snippet": "What is ControlNet? ControlNet is a neural network structure introduced in the paper \"Adding Conditional Control to Text-to-Image Diffusion Models.\" It extends Stable Diffusion models by enabling them to accept additional conditional inputs beyond text prompts. This allows for precise control over the generated images while preserving the original model&#x27;s capabilities."
+    }
+  ]
+}

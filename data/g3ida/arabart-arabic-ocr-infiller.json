@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "g3ida/arabart-arabic-ocr-infiller",
+  "slug": "g3ida-arabart-arabic-ocr-infiller",
+  "author": "g3ida",
+  "url": "https://huggingface.co/g3ida/arabart-arabic-ocr-infiller",
+  "created_at": "2026-10-13T19:03:12.000Z",
+  "updated_at": "2026-10-13T19:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "arabic",
+    "ocr",
+    "post-ocr",
+    "text-correction",
+    "arabart",
+    "ar",
+    "base_model:moussaKam/AraBART",
+    "base_model:finetune:moussaKam/AraBART",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 139273044,
+  "parameters_human": "139.3M",
+  "storage_bytes": 557122464,
+  "storage_human": "557 MB",
+  "base_model": "moussaKam/AraBART",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bhad Bhabie - OnlyFans",
+      "url": "https://onlyfans.com/bhadbhabie",
+      "snippet": "The reproduction and dissemination of any content originating from my OnlyFans account, whether for public or private purposes, is …Read more"
+    },
+    {
+      "title": "Bhad Bhabie Leaked OnlyFans & Viral XXX Videos",
+      "url": "https://viralxxxporn.com/models/bhad-bhabie/",
+      "snippet": "Watch all 93 leaked porn videos and OnlyFans clips from Bhad Bhabie. See Bhad Bhabie's latest HD content, including videos in the …"
+    },
+    {
+      "title": "Bhadie Bad bad - OnlyFans",
+      "url": "https://onlyfans.com/bhad_bhabie",
+      "snippet": "OnlyFans is the social platform revolutionizing creator and fan connections. The site is inclusive of artists and content creators from …"
+    },
+    {
+      "title": "Bhad Bhabie's Free Porn Videos - Thothub",
+      "url": "https://thothub.to/models/bhad-bhabie/",
+      "snippet": "Watch Bhad Bhabie's 441 free porn videos."
+    },
+    {
+      "title": "Bhad Bhabie OnlyFans Leaks | 17 Videos | PimpBunny",
+      "url": "https://pimpbunny.com/onlyfans-creators/bhad-bhabie-leaked/",
+      "snippet": "PimpBunny has the biggest collection of Bhad Bhabie OnlyFans leaks on the net, with 17 exclusive videos. Check us out and enjoy!"
+    }
+  ]
+}

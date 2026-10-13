@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nagisanzeninz/Nagi-Burst-V2",
+  "slug": "nagisanzeninz-nagi-burst-v2",
+  "author": "nagisanzeninz",
+  "url": "https://huggingface.co/nagisanzeninz/Nagi-Burst-V2",
+  "created_at": "2026-10-13T16:54:38.000Z",
+  "updated_at": "2026-10-13T16:54:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nagi-decisions",
+  "languages": [],
+  "tags": [
+    "nagi-decisions",
+    "decision-making",
+    "planning",
+    "lookahead",
+    "control",
+    "nagi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12491364,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hayate the Combat Butler - Nagi Sanzenin [AmiAmi Limited Edition ...",
+      "url": "https://www.amiami.com/eng/detail/?gcode=HOB-FIG-9425&srsltid=AU7gw4UXFDeon_vdFSwmsy4N917xPkLvl6SvOy_Yf6ObgDLYxxlSh6ba",
+      "snippet": "Bishoujo Figures · White Rabbit Rosu Angel ver. · POP UP PARADE Kasane Teto Synthesizer V AI Ver. · G.S.Collection Character Vocal Series 01 Hatsune Miku Sakura ..."
+    },
+    {
+      "title": "Nanase Karin - Character (106549) - AniDB",
+      "url": "https://anidb.net/character/106549",
+      "snippet": "28.10.2019 ... Ai Kagano Fanclub. Members: 174. Posts: 19. Kitsune ... Sanzenin Nagi Fanclub. Members: 54. Posts: 2."
+    },
+    {
+      "title": "Yaoi Fangirl - TV Tropes",
+      "url": "https://tvtropes.org/pmwiki/pmwiki.php/Main/YaoiFangirl",
+      "snippet": "Yaoi fangirls occasionally pop up in Ai Ore! Love Me!. One noticeable scene ... Nagi Sanzenin is one too, apparently. Hungary, the Bokukko from Hetalia ..."
+    },
+    {
+      "title": "Witch Watch (Fernsehserie 2025– ) - Neuigkeiten - IMDb",
+      "url": "https://www.imdb.com/de/title/tt33165027/news/",
+      "snippet": "... AI, there was no shortage of series to discuss. The flip side is that ... (Nagi Sanzenin in Hayate the Combat Butler! ) Kuromitsu voiced by Misaki Kuno ..."
+    },
+    {
+      "title": "Moe Tournament",
+      "url": "https://baike.baidu.com/en/item/Moe%20Tournament/4481911",
+      "snippet": "... Nagi @ Hayate the Combat Butler (includes 2 revival match wins). 3rd - 18 ... Runner-up: Nagi Sanzenin — Hayate the Combat Butler!! Top 4: Amae Koromo ..."
+    }
+  ]
+}

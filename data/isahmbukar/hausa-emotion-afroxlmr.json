@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "IsahMBukar/hausa-emotion-afroxlmr",
+  "slug": "isahmbukar-hausa-emotion-afroxlmr",
+  "author": "IsahMBukar",
+  "url": "https://huggingface.co/IsahMBukar/hausa-emotion-afroxlmr",
+  "created_at": "2026-10-13T18:51:08.000Z",
+  "updated_at": "2026-10-13T18:52:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278052107,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129315523,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "An explainable AfroXLMR approach for multi-label emotion ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-60392-2",
+      "snippet": "To address these gaps, this study proposes a multi-label emotion classification model for Amharic by fine-tuning AfroXLMR. To enhance transparency, we integrate explainable artificial intelligence ..."
+    },
+    {
+      "title": "PDF An explainable AfroXLMR approach for multi-label emotion ... - Nature",
+      "url": "https://www.nature.com/articles/s41598-026-60392-2.pdf",
+      "snippet": "OPEN An explainable AfroXLMR approach for multi-label emotion classification of Amharic social media text with dataset release Yeshimebet Bayu1☒, Demeke Endalie2 & Tesfa Tegegne2"
+    },
+    {
+      "title": "Davlan/afro-xlmr-large · Hugging Face",
+      "url": "https://huggingface.co/Davlan/afro-xlmr-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Davlan/afro-xlmr-large-29L · Hugging Face",
+      "url": "https://huggingface.co/Davlan/afro-xlmr-large-29L",
+      "snippet": "afro-xlmr-large-29L AfroXLMR-large was created by MLM adaptation of XLM-R-large model on 25 African languages (Afrikaans, Amharic, Hausa, Igbo, Malagasy, Chichewa ..."
+    },
+    {
+      "title": "GitHub - ObakengTha/NLP---Bantu-Languages-Xhosa-: Multilabel emotion ...",
+      "url": "https://github.com/ObakengTha/NLP---Bantu-Languages-Xhosa-",
+      "snippet": "This repository presents a multilabel emotion classification model for isiXhosa using the BRIGHTER dataset. The project fine-tunes AfroXLMR to predict six emotions (anger, fear, joy, love, sadness, and surprise) and includes data preprocessing, class imbalance handling, threshold optimization, model evaluation, and explainability using SHAP and LIME."
+    }
+  ]
+}

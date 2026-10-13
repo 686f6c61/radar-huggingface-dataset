@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-00-seed-43",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-43",
+  "created_at": "2026-10-13T18:46:40.000Z",
+  "updated_at": "2026-10-13T18:46:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.90-seed-42",
+      "snippet": "Instructions to use AlinaGonch/llama31-8b-squad-ratio-.90-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/llama31-8b-squad-ratio-0.00 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00",
+      "snippet": "How to use AlinaGonch/llama31-8b-squad-ratio-0.00 with Transformers: ... Notebooks Google Colab Kaggle Model Card for Model ID Model Details Model Description Model Sources [optional] Uses Direct Use Downstream Use [optional] Out-of-Scope Use Bias, Risks, and Limitations Recommendations How to Get Started with the Model Training Details ..."
+    },
+    {
+      "title": "Llama | Meta",
+      "url": "https://dev.meta.ai/llama",
+      "snippet": "This guide provides information and resources to help you set up Llama including how to access the model, hosting, how-to and integration guides. Additionally, you will find supplemental materials to further assist you while building with Llama."
+    },
+    {
+      "title": "GitHub - meta-llama/llama3: The official Meta Llama 3 GitHub site",
+      "url": "https://github.com/meta-llama/llama3",
+      "snippet": "The official Meta Llama 3 GitHub site. Contribute to meta-llama/llama3 development by creating an account on GitHub."
+    },
+    {
+      "title": "Llama (language model) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Llama_(language_model)",
+      "snippet": "Llama[a] (\" Large Language Model Meta AI \" serving as a backronym) is a family of large language models (LLMs) released by Meta AI starting in February 2023. [3] Llama models come in different sizes, ranging from 1 billion to 2 trillion parameters. Initially only a foundation model, [4] starting with Llama 2, Meta AI released instruction fine-tuned versions alongside foundation models. [5 ..."
+    }
+  ]
+}

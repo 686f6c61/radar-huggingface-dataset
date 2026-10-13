@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Dyluhn/qwen3.8-flash-next-exl3",
+  "slug": "dyluhn-qwen3-8-flash-next-exl3",
+  "author": "Dyluhn",
+  "url": "https://huggingface.co/Dyluhn/qwen3.8-flash-next-exl3",
+  "created_at": "2026-10-13T18:45:01.000Z",
+  "updated_at": "2026-10-13T18:57:04.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "radiance",
+  "languages": [],
+  "tags": [
+    "radiance",
+    "exl3",
+    "moe",
+    "rocm",
+    "gfx1201",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120531828736,
+  "storage_human": "120.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mazda mx5 na d'occasion - Voitures - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/voitures/mazda-mx5-na",
+      "snippet": "Consultez nos annonces de mazda mx5 na d'occasion. Trouvez toutes nos annonces de Voitures sur leboncoin."
+    },
+    {
+      "title": "Mazda MX-5 (NA) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mazda_MX-5_(NA)",
+      "snippet": "The Mazda MX-5 (NA) (sold in Japan as the Eunos Roadster (ユーノス・ロードスター, Yūnosu Rōdosutā) and in North America as …"
+    },
+    {
+      "title": "Mazda Mx5 Na de collection à vendre - Annonces lesAnciennes",
+      "url": "https://www.lesanciennes.com/annonces/voiture-collection/mazda-mx5-na/",
+      "snippet": "Jun 16, 2026 · Choisissez votre Mazda Mx5 Na parmi nos 54 000 annonces dédiées aux véhicules de collection - sur lesAnciennes, …"
+    },
+    {
+      "title": "mazda mx5 na d'occasion - Recherche de voiture d'occasion - Le …",
+      "url": "https://www.leparking.fr/voiture-occasion/mazda-mx5-na.html",
+      "snippet": "369 mazda mx5 na d'occasion à vendre : toutes les annonces au meilleur prix disponibles en france et en europe"
+    },
+    {
+      "title": "Voiture Mazda Mx5 Occasion : Achat & Vente Auto - La Centrale",
+      "url": "https://www.lacentrale.fr/occasion-voiture-modele-mazda-mx5.html",
+      "snippet": "Vous avez un véhicule à vendre ? Estimez votre véhicule avec La Centrale et vendez à un professionnel partenaire."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gupta-reyansh123/Rice_Mitochondria_Optimizer_v2",
+  "slug": "gupta-reyansh123-rice_mitochondria_optimizer_v2",
+  "author": "gupta-reyansh123",
+  "url": "https://huggingface.co/gupta-reyansh123/Rice_Mitochondria_Optimizer_v2",
+  "created_at": "2026-10-13T02:14:10.000Z",
+  "updated_at": "2026-10-13T02:55:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "big_bird",
+    "fill-mask",
+    "codon-optimization",
+    "biology",
+    "rice",
+    "mitochondria",
+    "codontransformer",
+    "base_model:adibvafa/CodonTransformer",
+    "base_model:finetune:adibvafa/CodonTransformer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 87881562,
+  "parameters_human": "87.9M",
+  "storage_bytes": 351550008,
+  "storage_human": "352 MB",
+  "base_model": "adibvafa/CodonTransformer",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Empire Gupta — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Empire_Gupta",
+      "snippet": "Les Gupta sont une dynastie ayant régné sur le nord de l' Inde de la fin du IIIe siècle aux alentours du milieu du VIe siècle. Leur …"
+    },
+    {
+      "title": "Gupta Empire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gupta_Empire",
+      "snippet": "Gupta (Gupta script: gu-pta, fl. late 3rd century CE) is the earliest known king of the Gupta dynasty."
+    },
+    {
+      "title": "Art Gupta — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Art_Gupta",
+      "snippet": "La période Gupta est généralement considérée comme la période classique et un âge d'or de l' art en Inde du Nord pour tous les …"
+    },
+    {
+      "title": "Gupta dynasty | History, Achievements, Founder, & Map | Britannica",
+      "url": "https://www.britannica.com/topic/Gupta-dynasty",
+      "snippet": "Sep 12, 2026 · Gupta dynasty, rulers of a vast empire established in the Indian subcontinent in the 4th century CE, often regarded as …"
+    },
+    {
+      "title": "Gupta family - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gupta_family",
+      "snippet": "The Gupta family is a wealthy and influential business family from India, with close ties to former South African President Jacob …"
+    }
+  ]
+}

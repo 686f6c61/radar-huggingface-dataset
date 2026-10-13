@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "seongjin0813/act_piper_datatest_01_dinov2",
+  "slug": "seongjin0813-act_piper_datatest_01_dinov2",
+  "author": "seongjin0813",
+  "url": "https://huggingface.co/seongjin0813/act_piper_datatest_01_dinov2",
+  "created_at": "2026-10-13T18:53:03.000Z",
+  "updated_at": "2026-10-13T18:53:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:seongjin0813/piper_datatest_01",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 62475591,
+  "parameters_human": "62.5M",
+  "storage_bytes": 249950124,
+  "storage_human": "250 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "seongjin0813/act_piper_datatest_v3_dinov2_60k · Hugging Face",
+      "url": "https://huggingface.co/seongjin0813/act_piper_datatest_v3_dinov2_60k",
+      "snippet": "Instructions to use seongjin0813/act_piper_datatest_v3_dinov2_60k with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "GitHub - yyj-001/DinoGRL: Official PyTorch implementation of \"DINOv2 ...",
+      "url": "https://github.com/yyj-001/DinoGRL",
+      "snippet": "Official PyTorch implementation of \"DINOv2 Driven Gait Representation Learning for Video-Based Visible-Infrared Person Re-Identification\" (ACM MM 2025). - yyj-001/DinoGRL"
+    },
+    {
+      "title": "seongjin0813/act_piper_datatest_v3_100k_finetune_v1 at main",
+      "url": "https://huggingface.co/seongjin0813/act_piper_datatest_v3_100k_finetune_v1/tree/main",
+      "snippet": "Kaggle main act_piper_datatest_v3_100k_finetune_v1 207 MB Ctrl+K Ctrl+K 1 contributor History:5 commits seongjin0813 Upload model card and train config a1153a1 verifiedabout 7 hours ago .gitattributes Safe 1.52 kBinitial commitabout 7 hours ago README.md 5.61 kBUpload model card and train configabout 7 hours ago config.json 1.63 kBUpload ..."
+    },
+    {
+      "title": "Installation and Setup | facebookresearch/dinov2 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/dinov2/1.1-installation-and-setup",
+      "snippet": "This page documents the installation process for the DINOv2 repository, including dependency management, environment configuration, and development setup. For usage instructions, see page 1.2 (Quick Start Guide)."
+    },
+    {
+      "title": "Loading and Using Models | facebookresearch/dinov2 | DeepWiki",
+      "url": "https://deepwiki.com/facebookresearch/dinov2/3-loading-and-using-models",
+      "snippet": "Loading and Using Models Relevant source files This page provides a comprehensive guide on how to load pre-trained DINOv2 models and use them in your projects. For information about the model architecture itself, see Model Architecture, and for specific downstream applications, refer to Downstream Applications. Model Overview DINOv2 provides a variety of pre-trained Vision Transformer (ViT ..."
+    }
+  ]
+}

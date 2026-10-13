@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "unsloth/LTX-2.5-FP8",
+  "slug": "unsloth-ltx-2-5-fp8",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/LTX-2.5-FP8",
+  "created_at": "2026-10-13T01:52:47.000Z",
+  "updated_at": "2026-10-13T02:12:12.000Z",
+  "license": "ltx-2.x-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "fp8",
+    "int8",
+    "unsloth",
+    "quantized",
+    "ltx-2.5",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "en",
+    "arxiv:2601.03233",
+    "base_model:Lightricks/LTX-2.5-Diffusers",
+    "base_model:finetune:Lightricks/LTX-2.5-Diffusers",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 213,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69272140466,
+  "storage_human": "69.3 GB",
+  "base_model": "Lightricks/LTX-2.5-Diffusers",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unsloth AI - Hugging Face",
+      "url": "https://huggingface.co/unsloth/models",
+      "snippet": "unsloth 's models 1,462. Sort: Recently updated · unsloth/LTX-2.5-GGUF · unsloth/Qwen-Image-2512-FP8 · unsloth/LTX-2.5-FP8 · unsloth/MiniMax-M3-GGUF · unsloth/LFM2.5 ..."
+    },
+    {
+      "title": "LTX-2.5: LTX's Latest AI Open-Source Foundation Model",
+      "url": "https://ltx.io/model/ltx-2-5",
+      "snippet": "LTX 2.5 a stronger foundation for what's already being built · Diffusion Fidelity Rendering · Built to go further · LTX-2.5 for Post-Production · Native Resolution ..."
+    },
+    {
+      "title": "LTX 2.5 Is INSANE! The New AI Video Model Is Finally Here",
+      "url": "https://www.youtube.com/watch?v=d0VFDNO45_U",
+      "snippet": "12.08.2026 ... LTX 2.5 Is INSANE! The New AI Video Model Is Finally Here LTX 2.5 is here, and this is a major evolution of the LTX video generation ..."
+    },
+    {
+      "title": "Unsloth Model Catalog",
+      "url": "https://unsloth.ai/docs/get-started/unsloth-model-catalog",
+      "snippet": "06.09.2026 ... How to Serve Local AI Models from Any Device on Your Network with Unsloth LAN Access ... Distill Qwen 2.5 14 B. link · link. Distill Qwen 2.5 32 B."
+    },
+    {
+      "title": "Lightricks/LTX-2.5 - Hugging Face",
+      "url": "https://huggingface.co/Lightricks/LTX-2.5",
+      "snippet": "06.01.2026 ... LTX-2.5 is an open world model with open weights, built for local execution and fine-tuning. Its established use is generating synchronized, ..."
+    }
+  ]
+}

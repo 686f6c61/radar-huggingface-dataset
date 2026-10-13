@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjiechen/MagNet-Transformers",
+  "slug": "minjiechen-magnet-transformers",
+  "author": "minjiechen",
+  "url": "https://huggingface.co/minjiechen/MagNet-Transformers",
+  "created_at": "2026-10-13T17:16:40.000Z",
+  "updated_at": "2026-10-13T17:17:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "magnetics",
+    "core-loss",
+    "b-h-loop",
+    "transformer",
+    "experimental",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7483388,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Design Methodologies for High Frequency Multiwinding Magnetics",
+      "url": "https://www.princeton.edu/~minjie/files/chen_dmc_slides.pdf",
+      "snippet": "Current Equalizing Transformer Model ... Learning Framework for Magnetic Core. Loss Modeling,” COMPEL'20. Github: https://github.com/minjiechen/MagNet."
+    },
+    {
+      "title": "MagNet Challenge for Data-Driven Power Magnetics Modeling",
+      "url": "https://www.researchgate.net/publication/384480794_MagNet_Challenge_for_Data-Driven_Power_Magnetics_Modeling",
+      "snippet": "03.09.2026 ... The MagNet Challenge has greatly improved the accuracy and reduced the size of data-driven power magnetic material models. The models and tools ..."
+    },
+    {
+      "title": "A Data-Driven Model for Power Loss Estimation of Magnetic ...",
+      "url": "https://ieeexplore.ieee.org/iel7/8782709/10366862/10502151.pdf",
+      "snippet": "02.05.2024 ... Chen, “MagNet-AI: Neural network as datasheet for magnetics modeling and material recommen- dation,” IEEE Trans. Power Electron., vol. 38, no."
+    },
+    {
+      "title": "Minjie Chen (he/him/his) - APEC 2026",
+      "url": "https://apec2026.eventscribe.net/ajaxcalls/presenterInfo.asp?PresenterId=2269072",
+      "snippet": "MagNet Challenge: the Serendipity when Power Magnetics meet AI. Monday, March ... T36.2 - Coaxial Through-Silicon via Micro-Transformers: Design, Fabrication, and ..."
+    },
+    {
+      "title": "Work Plan for ARPA-E Round One Notification Letters - OSTI.GOV",
+      "url": "https://www.osti.gov/servlets/purl/2522138",
+      "snippet": "Chen, “MagNet-AI: Neural Network as Datasheet for. Magnetics Modeling and ... MagNet Challenge GitHub: https://github.com/minjiechen/magnetchallenge."
+    }
+  ]
+}

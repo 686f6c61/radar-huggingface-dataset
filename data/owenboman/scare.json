@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Owenboman/scare",
+  "slug": "owenboman-scare",
+  "author": "Owenboman",
+  "url": "https://huggingface.co/Owenboman/scare",
+  "created_at": "2026-10-13T18:04:40.000Z",
+  "updated_at": "2026-10-13T19:11:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de",
+    "ko",
+    "en",
+    "bn",
+    "sw",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "multilingual-reasoning",
+    "reinforcement-learning",
+    "scare",
+    "text-generation",
+    "de",
+    "ko",
+    "en",
+    "bn",
+    "sw",
+    "ja",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225270276898,
+  "storage_human": "225.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Owenboman (Owen Potter) - Hugging Face",
+      "url": "https://huggingface.co/Owenboman",
+      "snippet": "User profile of Owen Potter on Hugging Face"
+    },
+    {
+      "title": "Scare - Free AI Image or Video Generation Models",
+      "url": "https://www.seaart.ai/search/model/Scare",
+      "snippet": "Explore a vast collection of free AI models about Scare. Transform your ideas into stunning images and videos instantly."
+    },
+    {
+      "title": "GitHub - samssouza/uncensored-ai-list",
+      "url": "https://github.com/samssouza/uncensored-ai-list",
+      "snippet": "Contribute to samssouza/uncensored-ai-list development by creating an account on GitHub."
+    },
+    {
+      "title": "Free VRChat Avatars, Models & Unity Assets - VRCMods",
+      "url": "https://vrcmods.com/",
+      "snippet": "Explore thousands of free VRChat avatars, 3D models, animations, shaders, and Unity assets shared by the VRCMods community."
+    },
+    {
+      "title": "OpenGen — AI video, image and music generation",
+      "url": "https://opengen.ai/home",
+      "snippet": "Generate video, images and music with the leading AI models — Veo 3.1, Kling, Seedance and more — in one place."
+    }
+  ]
+}

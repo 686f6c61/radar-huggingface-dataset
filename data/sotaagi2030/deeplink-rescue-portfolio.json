@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "SOTAagi2030/DeepLink-Rescue-Portfolio",
+  "slug": "sotaagi2030-deeplink-rescue-portfolio",
+  "author": "SOTAagi2030",
+  "url": "https://huggingface.co/SOTAagi2030/DeepLink-Rescue-Portfolio",
+  "created_at": "2026-10-13T18:32:30.000Z",
+  "updated_at": "2026-10-13T18:32:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030",
+      "snippet": "User profile of sota on Hugging Face"
+    },
+    {
+      "title": "SOTAagi2030 (sota) - Hugging Face",
+      "url": "https://huggingface.co/SOTAagi2030/models",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 1 hour ago ... published a model about 1 hour ago ... new activity about 5 hours ago"
+    },
+    {
+      "title": "Home - Deeplink.ai",
+      "url": "https://www.deeplink.ai/en/home/",
+      "snippet": "the secure and sustainable work platform that brings advanced AI tools together, designed for SMEs and public administrations."
+    },
+    {
+      "title": "sotaagi2030-mycodemodel-testrepo · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/sotaagi2030-mycodemodel-testrepo",
+      "snippet": "Run SOTAagi2030/MyCodeModel-TestRepo privately via Venice.ai - Zero tracking, uncensored"
+    },
+    {
+      "title": "Research | OpenAI",
+      "url": "https://openai.com/research/",
+      "snippet": "Explore OpenAI research on frontier models, reasoning, multimodal AI, and safe deployment as we work toward artificial general intelligence that benefits humanity."
+    }
+  ]
+}

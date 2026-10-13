@@ -5,7 +5,7 @@
   "author": "ElementMerc",
   "url": "https://huggingface.co/ElementMerc/qwen2.5-1.5b-abliterated",
   "created_at": "2026-07-27T20:26:03.000Z",
-  "updated_at": "2026-10-11T23:34:55.000Z",
+  "updated_at": "2026-10-12T17:45:33.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -33,7 +33,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 274,
+  "downloads_30d": 355,
   "trending_score": 0,
   "parameters": 1543714304,
   "parameters_human": "1.54B",

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alastorid/RealESRGAN-x2plus-Optimized-CoreML",
+  "slug": "alastorid-realesrgan-x2plus-optimized-coreml",
+  "author": "alastorid",
+  "url": "https://huggingface.co/alastorid/RealESRGAN-x2plus-Optimized-CoreML",
+  "created_at": "2026-10-13T01:25:42.000Z",
+  "updated_at": "2026-10-13T01:25:45.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "coremltools",
+    "apple-silicon",
+    "waifufinder",
+    "real-esrgan",
+    "image-super-resolution",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34091059,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alastorid/RealESRGAN-x2plus-Optimized-CoreML · Hugging Face",
+      "url": "https://huggingface.co/alastorid/RealESRGAN-x2plus-Optimized-CoreML",
+      "snippet": "The app compiles the package once at install time, on the machine that will run it, because compiled Core ML is tied to the local compiler and macOS version. What \"optimized\" means The network is the unmodified Real-ESRGAN x2plus. The conversion: fuses the first convolution into the following stage ..."
+    },
+    {
+      "title": "marshiyar/RealESRGAN_x2_CoreML · Hugging Face",
+      "url": "https://huggingface.co/marshiyar/RealESRGAN_x2_CoreML",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - xinntao/Real-ESRGAN: Real-ESRGAN aims at developing Practical ...",
+      "url": "https://github.com/xinntao/Real-ESRGAN",
+      "snippet": "Update the RealESRGAN AnimeVideo-v3 model. Please see anime video models and comparisons for more details. Add small models for anime videos. More details are in anime video models. Add the ncnn implementation Real-ESRGAN-ncnn-vulkan. Add RealESRGAN_x4plus_anime_6B.pth, which is optimized for anime images with much smaller model size."
+    },
+    {
+      "title": "How to Use Real-ESRGAN: x2, x4 and Anime Models Explained (2026) - upres.ai",
+      "url": "https://upres.ai/blog/how-to-use-real-esrgan",
+      "snippet": "Which Real-ESRGAN model to pick (x4plus, x2plus, anime, general-x4v3), how to run it with the portable app or Python, the settings that matter, and when to skip the install."
+    },
+    {
+      "title": "GitHub - hanxiao/real-esrgan-coreml: Real-ESRGAN on Apple Silicon via ...",
+      "url": "https://github.com/hanxiao/real-esrgan-coreml",
+      "snippet": "Real-ESRGAN image upscaling via CoreML on Apple Silicon. 1.6x faster than MLX with lower energy consumption. All 5 official model variants supported. Any input size handled automatically via tiling."
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "d-michail/Mitos-Qwen3-14B-Process-LoRA",
+  "slug": "d-michail-mitos-qwen3-14b-process-lora",
+  "author": "d-michail",
+  "url": "https://huggingface.co/d-michail/Mitos-Qwen3-14B-Process-LoRA",
+  "created_at": "2026-10-13T17:20:20.000Z",
+  "updated_at": "2026-10-13T17:20:54.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "el"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "greek",
+    "e-government",
+    "public-administration",
+    "question-answering",
+    "qwen3",
+    "lora",
+    "text-generation",
+    "conversational",
+    "el",
+    "dataset:d-michail/mitos-qa",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525375662,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "D (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/D_(lettre)",
+      "snippet": "La lettre D tire probablement son origine de l' alphabet protosinaïtique, du graphème représentant un poisson ou de celui …"
+    },
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "D — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/D",
+      "snippet": "La notation D... ou D. est une abréviation du nom de Dieu employée par les juifs les plus religieux, puisque le judaïsme interdit de …"
+    },
+    {
+      "title": "D — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/D",
+      "snippet": "D \\de:\\ neutre au singulier uniquement (Pays) Allemagne, abréviation officielle de Deutschland utilisée notamment sur les plaques …"
+    },
+    {
+      "title": "d - Définitions, synonymes, prononciation, exemples | Dico en ligne Le ...",
+      "url": "https://dictionnaire.lerobert.com/definition/d",
+      "snippet": "Définition, exemples et prononciation de d : Quatrième lettre, troisième consonne de l'alphabet…"
+    }
+  ]
+}

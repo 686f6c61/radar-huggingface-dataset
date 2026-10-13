@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "muelleremil/vit-multitask-light-2024",
+  "slug": "muelleremil-vit-multitask-light-2024",
+  "author": "muelleremil",
+  "url": "https://huggingface.co/muelleremil/vit-multitask-light-2024",
+  "created_at": "2026-10-13T18:38:38.000Z",
+  "updated_at": "2026-10-13T18:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "emschwarz/multitask-efficient · Hugging Face",
+      "url": "https://huggingface.co/emschwarz/multitask-efficient",
+      "snippet": "ViT for Multitask Overview This repository is a compact, custom PyTorch implementation of ViT for Multitask. The base configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "arXiv:2405.17447v1 [cs.CV] 21 May 2024",
+      "url": "https://arxiv.org/pdf/2405.17447v1",
+      "snippet": "We evaluate ViT-B/16-224 and ViT-B/32-224 weights from Steiner et al. (2022), which were trained from scratch on ImageNet-1k or ImageNet-21k with varying hyperparameter settings 1"
+    },
+    {
+      "title": "Vision transformer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vision_transformer",
+      "snippet": "A vision transformer (ViT) is a transformer designed for computer vision. [1] A ViT decomposes an input image into a series of patches (rather than text into tokens), serializes each patch into a vector, and maps it to a smaller dimension with a single matrix multiplication."
+    },
+    {
+      "title": "svmueller/hybrid-multitask-efficient-2024 · Hugging Face",
+      "url": "https://huggingface.co/svmueller/hybrid-multitask-efficient-2024",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Hybrid for Multitask. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    }
+  ]
+}

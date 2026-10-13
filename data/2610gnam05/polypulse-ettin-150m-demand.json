@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "2610gnam05/polypulse-ettin-150m-demand",
+  "slug": "2610gnam05-polypulse-ettin-150m-demand",
+  "author": "2610gnam05",
+  "url": "https://huggingface.co/2610gnam05/polypulse-ettin-150m-demand",
+  "created_at": "2026-10-13T15:42:33.000Z",
+  "updated_at": "2026-10-13T15:42:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "polymarket",
+    "polypulse",
+    "demand-prediction",
+    "text-classification",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149607171,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598448765,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

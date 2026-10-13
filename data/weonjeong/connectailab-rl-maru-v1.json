@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "WeonJeong/connectailab-rl-maru-v1",
+  "slug": "weonjeong-connectailab-rl-maru-v1",
+  "author": "WeonJeong",
+  "url": "https://huggingface.co/WeonJeong/connectailab-rl-maru-v1",
+  "created_at": "2026-10-13T18:45:47.000Z",
+  "updated_at": "2026-10-13T18:45:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeonJeong/connect-ai-lab · Discussions - Hugging Face",
+      "url": "https://huggingface.co/spaces/WeonJeong/connect-ai-lab/discussions",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "WeonJeong/ai-profile at main - Hugging Face",
+      "url": "https://huggingface.co/spaces/WeonJeong/ai-profile/tree/main",
+      "snippet": "main ai-profile 161 kB Ctrl+K Ctrl+K 2 contributors History:4 commits WeonJeong Update requirements.txt 250b329 verifiedabout 13 hours ago qwenimageAI 프로필 사진 · Connect AI LAB (Qwen-Image-Edit-2511, 4-step)3 months ago .gitignore Safe 19 Byteschore: ignore __pycache__3 months ago README.md Safe 715 BytesAI 프로필 사진 · Connect AI LAB (Qwen-Image-Edit-2511, 4-step)3 months ago ..."
+    },
+    {
+      "title": "connectailab-artnfull-v1 - Hugging Face",
+      "url": "https://huggingface.co/artnfull/connectailab-artnfull-v1",
+      "snippet": "This model is an experimental checkpoint created as part of Connect AI LAB research. We applied Abliteration (orthogonal projection and weight-level subtraction of the refusal direction) to the base model Qwen3-0.6B to modify its refusal behavior (v1 release)."
+    },
+    {
+      "title": "wonseokjung (Wonseok Jung) · GitHub",
+      "url": "https://github.com/wonseokjung",
+      "snippet": "ConnexionAI CEO City University of New York -Baruch College,DataScience Major Illinois Tech, Master - Datascience Love Reinforcement Learning - wonseokjung"
+    },
+    {
+      "title": "Connect AI LAB - a Hugging Face Space by WeonJeong",
+      "url": "https://huggingface.co/spaces/WeonJeong/connect-ai-lab",
+      "snippet": "무료 오픈소스 AI로 텍스트를 이미지로 — Connect AI LAB"
+    }
+  ]
+}

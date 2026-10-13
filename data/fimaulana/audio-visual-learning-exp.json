@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "fimaulana/audio-visual-learning-exp",
+  "slug": "fimaulana-audio-visual-learning-exp",
+  "author": "fimaulana",
+  "url": "https://huggingface.co/fimaulana/audio-visual-learning-exp",
+  "created_at": "2026-10-13T17:11:06.000Z",
+  "updated_at": "2026-10-13T17:11:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Augmented reality, virtual reality, and artificial intelligence to ...",
+      "url": "https://pure.qub.ac.uk/files/617361950/Augmented_reality_virtual_reality_and_artificial_intelligence_to_enhance_programming_comprehension.pdf",
+      "snippet": "technology not only enables visual and experiential learning but also ... the development of AI-driven learning models, the ethical implementation of AI in."
+    },
+    {
+      "title": "A Patent-Based Clustering and Life Cycle Analysis - IEEE Xplore",
+      "url": "https://ieeexplore.ieee.org/iel8/6287639/10820123/10942317.pdf",
+      "snippet": "04.04.2025 ... These systems play a critical role in enhancing the teaching and learning experience by providing interactive and visual support in lessons [165] ..."
+    },
+    {
+      "title": "A Bilingual Sentiment Analysis Platform for Medication Reviews",
+      "url": "https://hrcak.srce.hr/file/503298",
+      "snippet": "Finally, the proposed solution is based on an active learning mechanism that continu- ally refines the AI model by prompting users to confirm or correct the ..."
+    },
+    {
+      "title": "A Comparative Analysis of Native iOS Frameworks for Developing ...",
+      "url": "https://vb.vtdko.lt/object/elaba:251076801/251076801.pdf",
+      "snippet": "RK is a modern framework introduced by Apple in. 2019 [11]. It enhances 3D object rendering realism in real- world, physics simulations, and spatial audio “out ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tsangb34/pi05-droid-towel-in-basket-5ep",
+  "slug": "tsangb34-pi05-droid-towel-in-basket-5ep",
+  "author": "tsangb34",
+  "url": "https://huggingface.co/tsangb34/pi05-droid-towel-in-basket-5ep",
+  "created_at": "2026-10-13T01:20:31.000Z",
+  "updated_at": "2026-10-13T01:23:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:local/droid-towel-in-basket-left-wrist",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 24482781960,
+  "storage_human": "24.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "april5129/pi05-droid-toy-and-towel at main - Hugging Face",
+      "url": "https://huggingface.co/april5129/pi05-droid-toy-and-towel/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "s3y/pi05_droid_pytorch · Hugging Face",
+      "url": "https://huggingface.co/s3y/pi05_droid_pytorch",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - Integer003/openpi05: Provide fine-tuning and inference code ...",
+      "url": "https://github.com/Integer003/openpi05",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - Integer003/openpi05"
+    },
+    {
+      "title": "Training on DROID Data | Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi/6.2-training-on-droid-data",
+      "snippet": "Training on DROID Data Relevant source files This document describes the complete workflow for training and fine-tuning OpenPI models on the DROID dataset. DROID is a large-scale robot manipulation dataset (10k+ hours, ~75k episodes) that requires specialized data loading infrastructure and filtering techniques."
+    },
+    {
+      "title": "Physical-Intelligence/openpi | DeepWiki",
+      "url": "https://deepwiki.com/Physical-Intelligence/openpi",
+      "snippet": "OpenPI is an open-source training and deployment system for Vision-Language-Action (VLA) models in robotics, developed by Physical Intelligence. The repository implements three core model architecture"
+    }
+  ]
+}

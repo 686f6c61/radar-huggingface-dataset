@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Castellan-AI/Qwen3-4B-Instruct-2507-int4-cw-ov",
+  "slug": "castellan-ai-qwen3-4b-instruct-2507-int4-cw-ov",
+  "author": "Castellan-AI",
+  "url": "https://huggingface.co/Castellan-AI/Qwen3-4B-Instruct-2507-int4-cw-ov",
+  "created_at": "2026-10-13T01:49:04.000Z",
+  "updated_at": "2026-10-13T01:53:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "npu",
+    "intel",
+    "int4",
+    "nncf",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2228267852,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno HD : Les filles les plus sexy en haute définition | Pornhub",
+      "url": "https://fr.pornhub.com/hd",
+      "snippet": "Porno HD gratuit sur Pornhub.com. Vous cherchez des vidéos de sexe en haute définition dans chaque niche XXX triple ? Le …"
+    },
+    {
+      "title": "Regardez des vidéos porno interactives gratuitement sur Pornhub.com",
+      "url": "https://fr.pornhub.com/interactive",
+      "snippet": "Regardez des vidéos porno interactives gratuitement sur Pornhub.com. Des vidéos de sexe hardcore filmées d'une manière qui vous …"
+    },
+    {
+      "title": "Porno – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=porno",
+      "snippet": "Regarde les vidéos porno de Porno gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Suisse – Vidéos Porno | Pornhub.com",
+      "url": "https://fr.pornhub.com/video/search?search=suisse",
+      "snippet": "Regarde les vidéos porno de Suisse gratuitement, ici sur Pornhub.com. Découvre la collection plus importante de films et de clips …"
+    },
+    {
+      "title": "Stars du porno hétérosexuelles et mannequins masculins sexy | Pornhub",
+      "url": "https://fr.pornhub.com/pornstars?gender=male",
+      "snippet": "Parcourez les stars du porno masculin les plus sexy et les acteurs amateurs Pornhub.com. Trouvez votre star adulte préférée et …"
+    }
+  ]
+}

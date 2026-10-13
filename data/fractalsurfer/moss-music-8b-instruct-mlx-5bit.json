@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit",
+  "slug": "fractalsurfer-moss-music-8b-instruct-mlx-5bit",
+  "author": "FractalSurfer",
+  "url": "https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-5bit",
+  "created_at": "2026-10-13T18:29:32.000Z",
+  "updated_at": "2026-10-13T18:41:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "mlx-audio",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "moss_music",
+    "mlx",
+    "music",
+    "music-understanding",
+    "audio-language-model",
+    "moss-music",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 7355162639,
+  "storage_human": "7.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - OpenMOSS/MOSS-Music: An open-source model for music captioning ...",
+      "url": "https://github.com/OpenMOSS/MOSS-Music",
+      "snippet": "An open-source model for music captioning, lyrics transcription, structural analysis, and musical question answering - OpenMOSS/MOSS-Music"
+    },
+    {
+      "title": "MOSS-Music-8B-Instruct - a Hugging Face Space by OpenMOSS-Team",
+      "url": "https://huggingface.co/spaces/OpenMOSS-Team/MOSS-Music-8B-Instruct",
+      "snippet": "This app lets you upload a music file (or record with a microphone) and type a question or request, such as describing the style, transcribing lyrics, or analyzing chords and structure. It processe..."
+    },
+    {
+      "title": "MOSS-Music-8B-Instruct · Models",
+      "url": "https://www.modelscope.cn/models/openmoss/MOSS-Music-8B-Instruct",
+      "snippet": "MOSS-Music is an open-source music understanding model from MOSI.AI, the OpenMOSS team, and Shanghai Innovation Institute. Built on the same audio backbone as MOSS-Audio, MOSS-Music is further specialised on music via dedicated continual pre-training and supervised fine-tuning — targeting musical captioning, lyrics ASR, structural analysis ..."
+    },
+    {
+      "title": "README.md · OpenMOSS-Team/MOSS-Music-8B-Instruct at main",
+      "url": "https://huggingface.co/OpenMOSS-Team/MOSS-Music-8B-Instruct/blob/main/README.md",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MOSS-Music/README.md at main · OpenMOSS/MOSS-Music · GitHub",
+      "url": "https://github.com/OpenMOSS/MOSS-Music/blob/main/README.md",
+      "snippet": "In this release, we provide two 8B models: MOSS-Music-8B-Instruct and MOSS-Music-8B-Thinking. The Instruct variant is optimised for direct instruction following on musical prompts, while the Thinking variant provides stronger chain-of-thought reasoning for musical analysis."
+    }
+  ]
+}

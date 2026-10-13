@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DenRakEiw/microduck-twelve-parsec-duck_3000",
+  "slug": "denrakeiw-microduck-twelve-parsec-duck_3000",
+  "author": "DenRakEiw",
+  "url": "https://huggingface.co/DenRakEiw/microduck-twelve-parsec-duck_3000",
+  "created_at": "2026-10-13T18:57:52.000Z",
+  "updated_at": "2026-10-13T18:57:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "microduck-slot:walk",
+    "base_model:DenRakEiw/microduck-darth_sidequack_3000",
+    "base_model:finetune:DenRakEiw/microduck-darth_sidequack_3000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793763,
+  "storage_human": "793763 B",
+  "base_model": "DenRakEiw/microduck-darth_sidequack_3000",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DenRakEiw/microduck-darth_sidequack_3000 · Hugging Face",
+      "url": "https://huggingface.co/DenRakEiw/microduck-darth_sidequack_3000",
+      "snippet": "How to use DenRakEiw/microduck-darth_sidequack_3000 with Microduck: # Replace SLOT with the slot specified in the model card (walk, stand, sitstand, ground_pick, kick_left, kick_right, roulade). sudo robotctl policy load SLOT DenRakEiw/microduck-darth_sidequack_3000 ..."
+    },
+    {
+      "title": "Hugging Face is selling a cute $399 open source duck robot, Microduck",
+      "url": "https://techcrunch.com/2026/08/27/hugging-face-is-selling-a-cute-399-open-source-duck-robot-microduck/",
+      "snippet": "Hugging Face unveiled the Microduck on Thursday, a cute little duck-like robot that sells for $399 — and ships before Christmas. Clem Delangue, CEO of Hugging Face, said the Microduck is an ..."
+    },
+    {
+      "title": "GitHub - AI-FanGe/Microduck-build-tutorial: A practical hardware and ...",
+      "url": "https://github.com/AI-FanGe/Microduck-build-tutorial",
+      "snippet": "A practical hardware and software setup for a compact RL-powered biped robot. - AI-FanGe/Microduck-build-tutorial"
+    },
+    {
+      "title": "Microduck - ROBOTS: Your Guide to the World of Robotics",
+      "url": "https://robotsguide.com/robots/microduck",
+      "snippet": "Microduck is a small biped robot with a distinctly ducklike waddle. Using AI skills, it can walk, sit, roller-skate, pick up objects with its beak, recover from falls, and quack in its own voice. Designed for developers, researchers, and robotics enthusiasts, it ships assembled, uses open-source software tools, and offers a playful platform for training, testing, and sharing new behaviors."
+    },
+    {
+      "title": "MicroDuck Resources, Repositories & Training Tools",
+      "url": "https://microduckrobot.org/resources/",
+      "snippet": "MicroDuck resources and repositories. Official sources, useful code and related communities, with their purpose kept clear."
+    }
+  ]
+}

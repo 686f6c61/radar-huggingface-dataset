@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "cross-encoder/ms-marco-MiniLM-L4-v2",
+  "slug": "cross-encoder-ms-marco-minilm-l4-v2",
+  "author": "cross-encoder",
+  "url": "https://huggingface.co/cross-encoder/ms-marco-MiniLM-L4-v2",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2025-08-29T14:36:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "jax",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "text-classification",
+    "transformers",
+    "text-ranking",
+    "en",
+    "dataset:sentence-transformers/msmarco",
+    "base_model:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "base_model:quantized:cross-encoder/ms-marco-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 46,
+  "downloads_30d": 5503869,
+  "trending_score": 14,
+  "parameters": 19165185,
+  "parameters_human": "19.2M",
+  "storage_bytes": 710390989,
+  "storage_human": "710 MB",
+  "base_model": "cross-encoder/ms-marco-MiniLM-L12-v2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cross (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cross_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Cross est une série télévisée américaine créée par Ben Watkins. Elle est basée sur la série de romans de James Patterson mettant …"
+    },
+    {
+      "title": "Cross - Série TV 2024 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=33141.html",
+      "snippet": "Série policière sombre et immersive, Cross mise avant tout sur une ambiance pesante et une approche psychologique réussie."
+    },
+    {
+      "title": "Cross Sud Ouest 2026 à Gujan-Mestras | Cross Sud Ouest",
+      "url": "https://cross.sudouest.fr/",
+      "snippet": "Le plus grand cross du Sud-Ouest à Gujan-Mestras. 27, 28 et 29 novembre 2026."
+    },
+    {
+      "title": "Cross - UGSEL Compétition",
+      "url": "https://ugsel-competition.org/ressources/sports-individuels/cross/",
+      "snippet": "Dec 9, 2025 · Retrouvez ici le contact du référent sport et tous les documents utiles concernant la pratique du cross. Accès rapide …"
+    },
+    {
+      "title": "Accueil - CROSS",
+      "url": "https://www.cross.fr/",
+      "snippet": "CROSS est le système central de la transformation digitale de la concession automobile. Interfacé avec les systèmes du Groupe …"
+    }
+  ]
+}

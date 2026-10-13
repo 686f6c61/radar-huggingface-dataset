@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/endpoint-auditor-1.5b-GGUF",
+  "slug": "mradermacher-endpoint-auditor-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/endpoint-auditor-1.5b-GGUF",
+  "created_at": "2026-10-13T01:39:40.000Z",
+  "updated_at": "2026-10-13T01:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "security",
+    "compliance",
+    "iso27001",
+    "gdpr",
+    "eu-ai-act",
+    "endpoint-security",
+    "lora",
+    "en",
+    "dataset:Devseis/endpoint-auditor-synthetic",
+    "base_model:Devseis/endpoint-auditor-1.5b",
+    "base_model:adapter:Devseis/endpoint-auditor-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 181,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206907904,
+  "storage_human": "14.2 GB",
+  "base_model": "Devseis/endpoint-auditor-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/endpoint-auditor-1.5b-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/endpoint-auditor-1.5b-GGUF",
+      "snippet": "mradermacher / endpoint-auditor-1.5b-GGUF Like 0 Transformers GGUF Devseis/endpoint-auditor-synthetic English security compliance iso27001 gdpr eu-ai-act endpoint-security lora conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/1.5B-v2-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/1.5B-v2-GGUF",
+      "snippet": "Feel free to request them by opening a Community Discussion. Usage If you are unsure how to use GGUF files, refer to one of TheBloke&#x27;s READMEs for more details, including on how to concatenate multi-part files. Provided Quants (sorted by size, not necessarily quality. IQ-quants are often preferable over similar sized non-IQ quants)"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Fake OpenAI repository on Hugging Face pushes infostealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-openai-repository-on-hugging-face-pushes-infostealer-malware/",
+      "snippet": "The Hugging Face platform lets developers and researchers share AI models, datasets, and machine learning (ML) tools. Models are pre-trained AI systems hosted on the platform comprising weight ..."
+    },
+    {
+      "title": "Fake OpenAI Privacy Filter Repo Hits #1 on Hugging Face, Draws 244K ...",
+      "url": "https://thehackernews.com/2026/05/fake-openai-privacy-filter-repo-hits-1.html",
+      "snippet": "Prior to it being disabled, the model is said to have reached the #1 trending position on Hugging Face with approximately 244,000 downloads and 667 likes within 18 hours. It&#x27;s suspected that these numbers were artificially inflated to give the repository an illusion of trust and get users to download it. Further analysis of the activity has unearthed six more repositories that feature a ..."
+    }
+  ]
+}

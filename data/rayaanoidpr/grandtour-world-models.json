@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rayaanoidpr/grandtour-world-models",
+  "slug": "rayaanoidpr-grandtour-world-models",
+  "author": "rayaanoidpr",
+  "url": "https://huggingface.co/rayaanoidpr/grandtour-world-models",
+  "created_at": "2026-10-13T18:36:22.000Z",
+  "updated_at": "2026-10-13T18:52:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2602.18164",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9046949906,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model made false tip in unsolved Philly murder: Officials ...",
+      "url": "https://abcnews.com/US/anthropic-ai-model-made-false-tip-unsolved-philly/story?id=137190087",
+      "snippet": "An Anthropic artificial intelligence model made a false tip in a homicide investigation."
+    },
+    {
+      "title": "world-models.io - The Knowledge Hub for AI World Models",
+      "url": "https://world-models.io/en/",
+      "snippet": "A structured knowledge hub for world models across robotics, model-based reinforcement learning, simulation engines, embodied AI, and autonomous agents."
+    },
+    {
+      "title": "AI world models directory | World Models Watch",
+      "url": "https://worldmodelswatch.com/models",
+      "snippet": "Explore AI world models by capability and access, from 3D creation and interactive demos to physical AI and open research."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    }
+  ]
+}

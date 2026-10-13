@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cryowastakenbycryo/Clef-Flash-AWQ",
+  "slug": "cryowastakenbycryo-clef-flash-awq",
+  "author": "cryowastakenbycryo",
+  "url": "https://huggingface.co/cryowastakenbycryo/Clef-Flash-AWQ",
+  "created_at": "2026-10-13T01:20:44.000Z",
+  "updated_at": "2026-10-13T01:29:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "awq",
+    "compressed-tensors",
+    "vllm",
+    "multimodal",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 8606478125,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cryowastakenbycryo (D) - Hugging Face",
+      "url": "https://huggingface.co/cryowastakenbycryo/datasets",
+      "snippet": "cryowastakenbycryo 2 Follow SolsticeAI&#x27;s profile picture 1 follower · 3 following"
+    },
+    {
+      "title": "cryowastakenbycryo (D) - Hugging Face",
+      "url": "https://huggingface.co/cryowastakenbycryo/models",
+      "snippet": "new activity7 days ago philbert440/Qwen3.8-27B-Uncensored-Cyber-W4A16-AWQ: AWQ Conversion View all activity"
+    },
+    {
+      "title": "clef-flash - Cloudflare AI docs",
+      "url": "https://developers.cloudflare.com/workers-ai/models/clef-flash/",
+      "snippet": "Clef-flash is a fast 9B multimodal decision model that turns a state and a schema of typed questions into decisions. It reads the state as text, JSON, images, or video, and returns a probability for every allowed option of every question."
+    },
+    {
+      "title": "Introducing Clef: our open-source decision models, and new RL fine ...",
+      "url": "https://blog.cloudflare.com/clef-decision-models/",
+      "snippet": "We are introducing Clef and Clef-flash, open-source decision models hosted on Workers AI for high-speed classification and agentic workflows. Also launching: a new reinforcement learning platform that allows developers to fine-tune decision models using their own data."
+    },
+    {
+      "title": "clef-flash - ollama.com",
+      "url": "https://ollama.com/library/clef-flash",
+      "snippet": "Clef-Flash is a 9B multimodal model that turns a state and a schema of typed questions into decisions."
+    }
+  ]
+}

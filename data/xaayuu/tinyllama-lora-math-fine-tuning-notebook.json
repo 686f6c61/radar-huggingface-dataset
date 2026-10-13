@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Xaayuu/TinyLlama-LoRA-math-fine-tuning-notebook",
+  "slug": "xaayuu-tinyllama-lora-math-fine-tuning-notebook",
+  "author": "Xaayuu",
+  "url": "https://huggingface.co/Xaayuu/TinyLlama-LoRA-math-fine-tuning-notebook",
+  "created_at": "2026-10-13T18:54:06.000Z",
+  "updated_at": "2026-10-13T19:01:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinyllama",
+    "math",
+    "gsm8k",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:adapter:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4517152,
+  "storage_human": "5 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TinyLlama-LoRA-math-fine-tuning-notebook/TinyLlama_LoRA_Math ... - GitHub",
+      "url": "https://github.com/Xaayu/TinyLlama-LoRA-math-fine-tuning-notebook/blob/main/TinyLlama_LoRA_Math_Fine_Tuning.ipynb",
+      "snippet": "Fine-tuning TinyLlama-1.1B-Chat using LoRA (Low-Rank Adaptation) and 4-bit quantization on the GSM8K dataset for enhanced mathematical reasoning and problem-solving capabilities."
+    },
+    {
+      "title": "How to Fine-Tune TinyLlama - ML Journey",
+      "url": "https://mljourney.com/how-to-fine-tune-tinyllama/",
+      "snippet": "Fine-tuning TinyLlama opens up exciting possibilities for creating specialized AI models tailored to your specific needs, all while working within the constraints of consumer-grade hardware. TinyLlama, with its compact 1.1 billion parameters, strikes an ideal balance between capability and accessibility, making it the perfect candidate for custom fine-tuning projects. This comprehensive guide ..."
+    },
+    {
+      "title": "CharonK652302/tinyllama-lora-finetuning - GitHub",
+      "url": "https://github.com/CharonK652302/tinyllama-lora-finetuning/tree/main",
+      "snippet": "🧠 What is LoRA? LoRA (Low-Rank Adaptation) freezes pre-trained model weights and injects trainable rank decomposition matrices into each transformer layer. This reduces trainable parameters by 99% while achieving comparable performance to full fine-tuning."
+    },
+    {
+      "title": "How to Tune TinyLLaMA the Fastest in an On-Premises Environment",
+      "url": "http://kenji.blog/en/p/tinyllama-on-premises-fast-tuning-guide/",
+      "snippet": "A complete guide to fine-tuning TinyLLaMA efficiently and quickly in an on-premises environment. We explain everything in detail, from the mathematical background of LoRA and QLoRA, to practical PyTorch code, and optimization techniques using Flash Attention 2."
+    },
+    {
+      "title": "Llama Fine-Tuning Guide — LoRA, Unsloth & TRL Pipeline (2026)",
+      "url": "https://myengineeringpath.dev/genai-engineer/llama-fine-tuning/",
+      "snippet": "This Llama fine-tuning guide walks through the complete pipeline for customizing Meta&#x27;s open-weight Llama 3.1 and Llama 3.3 models using LoRA, QLoRA, Unsloth, and Hugging Face TRL. You will go from raw dataset preparation through training to merged model deployment — with working Python code at every stage. For generic fine-tuning concepts (LoRA theory, method selection, cost analysis ..."
+    }
+  ]
+}

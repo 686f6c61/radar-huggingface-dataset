@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-f4797dbb-RadiantVesper",
+  "slug": "guillekenzo-aros-f4797dbb-radiantvesper",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-f4797dbb-RadiantVesper",
+  "created_at": "2026-10-13T02:07:15.000Z",
+  "updated_at": "2026-10-13T02:46:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1540599921,
+  "storage_human": "1.5 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adapter Models for krea/Krea-2-Raw - Hugging Face",
+      "url": "https://huggingface.co/models?other=base_model:adapter:krea/Krea-2-Raw",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai · Replicate · Cohere ... guillekenzo/aros-f4797dbb-RadiantVesper. Text-to-Image • Updated in about 3 ..."
+    }
+  ]
+}

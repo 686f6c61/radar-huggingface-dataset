@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-all-module-relation-fixed-view-large-1000-20261014",
+  "slug": "donghyun1228-pi05-libero-all-module-relation-fixed-view-large-1000-20261014",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-fixed-view-large-1000-20261014",
+  "created_at": "2026-10-13T18:38:39.000Z",
+  "updated_at": "2026-10-13T18:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "libero",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13101266260,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MANON - Prothesiste Ongulaire (@man_onglerie ... - Instagram",
+      "url": "https://www.instagram.com/man_onglerie._/",
+      "snippet": "MANON - 🎀 Prothesiste Ongulaire (@man_onglerie._) • Instagram photos and videos."
+    },
+    {
+      "title": "ONGLES ET BEAUTE BY MANON : à Ganges - Planity",
+      "url": "https://www.planity.com/ongles-et-eaute-by-manon-34190-ganges",
+      "snippet": "Vous êtes responsable de ONGLES ET BEAUTE BY MANON à Ganges ? Découvrez la prise de rendez-vous en ligne !"
+    },
+    {
+      "title": "Les Ongles de Manon (@lesonglesdemanon_) • Instagram photos …",
+      "url": "https://www.instagram.com/lesonglesdemanon_/",
+      "snippet": "1,134 Followers, 622 Following, 377 Posts - Les Ongles de Manon (@lesonglesdemanon_) on Instagram: \"Prothésiste Ongulaire …"
+    },
+    {
+      "title": "Manon Beauty : institut de beauté à Sète - Planity",
+      "url": "https://www.planity.com/manon-beauty-34200-sete",
+      "snippet": "C'est une technique permettant de rallonger les ongles naturels à l’aide d’un chablon (support de construction) et de gel. Elle permet …"
+    },
+    {
+      "title": "Manon B Manucure",
+      "url": "https://manonbmanucure.fr/",
+      "snippet": "Je sublime les ongles de mes clientes grâce à la manucure russe, et j’accompagne les prothésistes ongulaires à mettre en lumière …"
+    }
+  ]
+}

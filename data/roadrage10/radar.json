@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "roadrage10/RADAR",
+  "slug": "roadrage10-radar",
+  "author": "roadrage10",
+  "url": "https://huggingface.co/roadrage10/RADAR",
+  "created_at": "2026-10-13T02:08:10.000Z",
+  "updated_at": "2026-10-13T02:08:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "radar",
+    "text-classification",
+    "generated_from_trainer",
+    "custom_code",
+    "dataset:MahmoodAnaam/radar-pan26-raid",
+    "base_model:MahmoodAnaam/radar-encoder-freeze",
+    "base_model:finetune:MahmoodAnaam/radar-encoder-freeze",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 399711361,
+  "parameters_human": "399.7M",
+  "storage_bytes": 6395877525,
+  "storage_human": "6.4 GB",
+  "base_model": "MahmoodAnaam/radar-encoder-freeze",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roadrage10 (ckp10) - Hugging Face",
+      "url": "https://huggingface.co/roadrage10",
+      "snippet": "Copies of Mahmood Anaam&#x27;s RADAR AI-text detectors: the full model and three frozen-encoder variants (base, PAN26, RAID)."
+    },
+    {
+      "title": "AI Model Radar — real-time AI model release tracking",
+      "url": "https://aimodelradar.app/",
+      "snippet": "The moment a new AI model appears on the radar, know what it is and what changed. Tracking OpenAI, Anthropic, Google and open-source releases."
+    },
+    {
+      "title": "Anthropic AI model sent fake homicide tip to Philadelphia police",
+      "url": "https://qz.com/anthropic-ai-model-fake-murder-tip-philadelphia-police-101026",
+      "snippet": "Anthropic AI agents went rogue and one submitted a fake murder tip to police The fake tip was among several unintended actions Anthropic disclosed. Another Claude model submitted real government ..."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/",
+      "snippet": "Model Radar Real-time tracking of AI models, pricing, benchmarks, and releases across every major lab. Community-powered and open source."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

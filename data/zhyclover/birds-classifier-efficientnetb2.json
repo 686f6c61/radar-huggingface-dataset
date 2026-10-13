@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zhyclover/Birds-Classifier-EfficientNetB2",
+  "slug": "zhyclover-birds-classifier-efficientnetb2",
+  "author": "zhyclover",
+  "url": "https://huggingface.co/zhyclover/Birds-Classifier-EfficientNetB2",
+  "created_at": "2026-10-13T01:54:22.000Z",
+  "updated_at": "2026-10-13T01:54:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "efficientnet",
+    "biology",
+    "efficientnet-b2",
+    "image-classification",
+    "vision",
+    "base_model:google/efficientnet-b2",
+    "base_model:quantized:google/efficientnet-b2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8508287,
+  "parameters_human": "8.5M",
+  "storage_bytes": 135786718,
+  "storage_human": "136 MB",
+  "base_model": "google/efficientnet-b2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dennisjooo/Birds-Classifier-EfficientNetB2 · Hugging Face",
+      "url": "https://huggingface.co/dennisjooo/Birds-Classifier-EfficientNetB2",
+      "snippet": "Bird Classifier EfficientNet-B2 Model Description Have you look at a bird and said \"Boahh if only I know what bird that is\". Unless you&#x27;re an avid bird spotter (or just love birds in general), it&#x27;s hard to differentiate some species of birds. Well you&#x27;re in luck, turns out you can use a image classifier to identify bird species! This model is a fine-tuned version of google/efficientnet-b2 on ..."
+    },
+    {
+      "title": "GitHub - dennisjooo/Birds-Classifier-EfficientNetB2: Part of my REA ...",
+      "url": "https://github.com/dennisjooo/Birds-Classifier-EfficientNetB2",
+      "snippet": "Bird Classifier EfficientNet-B2 Hi, this model is my proudest work from Ruangguru&#x27;s Engineering Academy: Mastering AI bootcamp which I did from August to October 2023. I&#x27;m posting some of the raw files here, but the model itself is available on HuggingFace&#x27;s model hub here."
+    },
+    {
+      "title": "Birds-Classifier-EfficientNetB2/README.md at main - GitHub",
+      "url": "https://github.com/dennisjooo/Birds-Classifier-EfficientNetB2/blob/main/README.md",
+      "snippet": "Part of my REA: Mastering AI Bootcamp project. Codes to fine-tune an EfficientNet-B2 to classify birds :) - dennisjooo/Birds-Classifier-EfficientNetB2"
+    },
+    {
+      "title": "dennisjooo/Birds-Classifier-EfficientNetB2 at main - Hugging Face",
+      "url": "https://huggingface.co/dennisjooo/Birds-Classifier-EfficientNetB2/tree/main",
+      "snippet": "Birds-Classifier-EfficientNetB2 4 contributors History: 46 commits dennisjooo Update README.md"
+    },
+    {
+      "title": "Birds-Classifier-EfficientNetB2 Open-source Bird Image Classifier ...",
+      "url": "https://model.aibase.com/models/details/1915694793377865730",
+      "snippet": "Model Overview This model is designed for bird species recognition, fine-tuned on a dataset of 525 bird species using the EfficientNet-B2 architecture, achieving exceptionally high classification accuracy."
+    }
+  ]
+}

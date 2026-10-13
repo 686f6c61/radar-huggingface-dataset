@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "nativ-community/LFM2.5-24B-A2B-Preview-nvfp4",
+  "slug": "nativ-community-lfm2-5-24b-a2b-preview-nvfp4",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-nvfp4",
+  "created_at": "2026-10-13T18:33:55.000Z",
+  "updated_at": "2026-10-13T18:38:21.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 13505024827,
+  "storage_human": "13.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "snippet": "Today, we release LFM2.5-24B-A2B, a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now spans two orders of magnitude: from LFM2.5-230M to LFM2.5-24B-A2B."
+    },
+    {
+      "title": "LFM2.5-24B-A2B - Liquid Docs",
+      "url": "https://docs.liquid.ai/lfm/models/lfm25-24b-a2b",
+      "snippet": "Unlike LFM2-24B-A2B, LFM2.5-24B-A2B always thinks before it answers. The chat template opens every assistant turn with a <think> tag, so responses contain an explicit chain of thought before the final answer."
+    },
+    {
+      "title": "LiquidAI/LFM2.5-24B-A2B · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-24B-A2B",
+      "snippet": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with only 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now spans two orders of magnitude: from LFM2.5-230M to LFM2.5-24B-A2B."
+    },
+    {
+      "title": "Liquid Foundation Models | Liquid AI",
+      "url": "https://www.liquid.ai/models",
+      "snippet": "Explore Liquid Foundation Models (LFMs): efficient text, vision, audio, and nano models built for on-device, edge, and cloud AI deployment."
+    },
+    {
+      "title": "Run fast, private agents on-device with LFM2.5-24B-A2B",
+      "url": "https://dev48.org/en/articles/run-fast-private-agents-on-device-with-lfm25-24b-a2b",
+      "snippet": "LFM2.5-24B-A2B is a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device. It thinks before it answers, calls tools, and works through multi-step tasks inside popular agent harnesses. Because only 2B parameters are active per token, each reasoning token is cheap, so you can run agents continuously on your own hardware."
+    }
+  ]
+}

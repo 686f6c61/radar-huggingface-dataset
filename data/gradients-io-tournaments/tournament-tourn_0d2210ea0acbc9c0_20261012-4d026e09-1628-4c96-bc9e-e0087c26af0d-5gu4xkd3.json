@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_0d2210ea0acbc9c0_20261012-4d026e09-1628-4c96-bc9e-e0087c26af0d-5GU4Xkd3",
+  "slug": "gradients-io-tournaments-tournament-tourn_0d2210ea0acbc9c0_20261012-4d026e09-1628-4c96-bc9e-e0087c26af0d-5gu4xkd3",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_0d2210ea0acbc9c0_20261012-4d026e09-1628-4c96-bc9e-e0087c26af0d-5GU4Xkd3",
+  "created_at": "2026-10-13T18:50:35.000Z",
+  "updated_at": "2026-10-13T18:50:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:upstage/SOLAR-0-70b-16bit",
+    "base_model:adapter:upstage/SOLAR-0-70b-16bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3314155443,
+  "storage_human": "3.3 GB",
+  "base_model": "upstage/SOLAR-0-70b-16bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Can you actually do anything with Panam after finishing with there ...",
+      "url": "https://www.reddit.com/r/cyberpunkgame/comments/wucdeq/can_you_actually_do_anything_with_panam_after/",
+      "snippet": "Aug 21, 2022 · Just finished it, Panam is probably my Favourite Character so far, just finished her missions and it seems so …"
+    },
+    {
+      "title": "The reason why there isn't more nudity in Cyberpunk 2077",
+      "url": "https://www.reddit.com/r/cyberpunkgame/comments/kjdiw9/the_reason_why_there_isnt_more_nudity_in/",
+      "snippet": "Dec 24, 2020 · Many people are disappointed that besides the character creation screen, there isn't much more nudity in the game. …"
+    },
+    {
+      "title": "A detailed analysis on why censoring nudity in Cyberpunk 2077",
+      "url": "https://www.reddit.com/r/Games/comments/p6b8sh/a_detailed_analysis_on_why_censoring_nudity_in/",
+      "snippet": "Aug 17, 2021 · A detailed analysis on why censoring nudity in Cyberpunk 2077 was a mistake and why nudity should be reintroduced …"
+    },
+    {
+      "title": "I love the Panam Basilisk scene : r/cyberpunkgame - Reddit",
+      "url": "https://www.reddit.com/r/cyberpunkgame/comments/18z29vs/i_love_the_panam_basilisk_scene/",
+      "snippet": "Jan 5, 2024 · I’ve played the Queen of the Highway mission for the first time a couple days ago and saw the romance scene and was …"
+    },
+    {
+      "title": "How-to for Swapping characters/NPCs for joytoy or romantic ... - Reddit",
+      "url": "https://www.reddit.com/r/cyberpunkgame/comments/ppinrd/howto_for_swapping_charactersnpcs_for_joytoy_or/",
+      "snippet": "Sep 16, 2021 · How-to for Swapping characters/NPCs for joytoy or romantic main character scenes with AMM (Appearance Menu Mod)"
+    }
+  ]
+}

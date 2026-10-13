@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo-compassion-s1-part1",
+  "slug": "compassioninmachinelearning-olmo-compassion-s1-part1",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1",
+  "created_at": "2026-10-13T01:19:45.000Z",
+  "updated_at": "2026-10-13T06:30:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597464702,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompassioninMachineLearning/olmo-compassion-s1-part1 · Hugging Face",
+      "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "olmo-compassion-s1-part1 API & Inference Endpoint | FriendliAI",
+      "url": "https://friendli.ai/models/CompassioninMachineLearning/olmo-compassion-s1-part1",
+      "snippet": "Run olmo-compassion-s1-part1 with FriendliAI inference. This olmo3 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "GitHub - allenai/OLMo: Modeling, training, eval, and inference code for ...",
+      "url": "https://github.com/allenai/OLMo",
+      "snippet": "OLMo is a repository for training and using AI2&#x27;s state-of-the-art open language models. It is designed by scientists, for scientists."
+    },
+    {
+      "title": "Sanders calls for criminal prosecution of AI CEOs after model ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/sanders-calls-for-criminal-prosecution-of-ai-ceos-after-model-submitted-a-false-homicide-tip-to-police/ar-AA2dY50D",
+      "snippet": "Two-time presidential candidate Bernie Sanders made the statement after news emerged that an Anthropic AI model sent the Philadelphia Police Department a fake tip about an unsolved murder case."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "happyme531/Granite-4.2-3B-W4A8-Mixed-QQQ-SQ",
+  "slug": "happyme531-granite-4-2-3b-w4a8-mixed-qqq-sq",
+  "author": "happyme531",
+  "url": "https://huggingface.co/happyme531/Granite-4.2-3B-W4A8-Mixed-QQQ-SQ",
+  "created_at": "2026-10-13T15:29:12.000Z",
+  "updated_at": "2026-10-13T15:33:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granite",
+    "text-generation",
+    "compressed-tensors",
+    "w4a8",
+    "mixed-precision",
+    "qqq",
+    "post-training-quantization",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:m-a-p/COIG-CQIA",
+    "dataset:HuggingFaceTB/smoltalk",
+    "dataset:openai/gsm8k",
+    "dataset:Salesforce/wikitext",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:quantized:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3659737600,
+  "parameters_human": "3.66B",
+  "storage_bytes": 3124451248,
+  "storage_human": "3.1 GB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在上海商k消费是什么体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/2021508121416270926",
+      "snippet": "最顶级场，普通人如果去过一次的话，可能会重塑你的金钱观，甚至人生观。 有一次去上海谈了个客户，谈完之后客户很满意，并且 …"
+    },
+    {
+      "title": "商K演员最怕遇到的三种客人，第二种真的很下头_百度知道",
+      "url": "https://zhidao.baidu.com/question/254582594087307444.html",
+      "snippet": "Mar 16, 2026 · 商K演员最怕遇到的三种客人，第二种真的很下头商K演员最怕遇到的三种客人如下：动真情型客人典型表现：玩了一 …"
+    },
+    {
+      "title": "网传 BLG 部分队员 S15 淘汰后在商 K 团建，情况是否属实？如果是造 …",
+      "url": "https://www.zhihu.com/question/1966837753686753290",
+      "snippet": "Oct 29, 2025 · 网传 BLG 部分队员 S15 淘汰后在商 K 团建，情况是否属实？ 如果是造谣，将承担什么后果？ 电子竞技 英雄联 …"
+    },
+    {
+      "title": "商k、真空场、小时场、水果场…这些暗语到底啥意思？看完别再当小 …",
+      "url": "https://zhidao.baidu.com/question/566826773037761252.html",
+      "snippet": "Mar 8, 2026 · 商k、真空场、小时场、水果场…这些暗语到底啥意思？看完别再当小白！这些暗语是商K（商务KTV）中不同类型场子 …"
+    },
+    {
+      "title": "商k是啥意思_百度问一问 - Baidu",
+      "url": "https://wen.baidu.com/question/1249621661579847499.html",
+      "snippet": "May 22, 2023 · 亲，很高兴为你解答，商k意思是KTV中商业类型的KTV包厢“商K”指KTV中商业类型的KTV包厢，就是为商务人员提供 …"
+    }
+  ]
+}

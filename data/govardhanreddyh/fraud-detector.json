@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "GovardhanReddyH/fraud-detector",
+  "slug": "govardhanreddyh-fraud-detector",
+  "author": "GovardhanReddyH",
+  "url": "https://huggingface.co/GovardhanReddyH/fraud-detector",
+  "created_at": "2026-10-13T01:17:29.000Z",
+  "updated_at": "2026-10-13T02:50:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28925622,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GovardhanReddyH/fraud-detector · Hugging Face",
+      "url": "https://huggingface.co/GovardhanReddyH/fraud-detector",
+      "snippet": "Model Card for fraud-detector This model is a fine-tuned version of Qwen/Qwen2.5-1.5B-Instruct. It has been trained using TRL."
+    },
+    {
+      "title": "GovardhanReddyH (Govardhan Reddy H) - Hugging Face",
+      "url": "https://huggingface.co/GovardhanReddyH",
+      "snippet": "AI & ML interests ... Recent Activity updated a model about 9 hours ago ... published a model about 9 hours ago"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI model submits false tip on Philadelphia Police unsolved homicide case",
+      "url": "https://www.police1.com/artificial-intelligence/ai-model-submits-false-tip-on-philadelphia-police-unsolved-homicide-case",
+      "snippet": "NEW YORK — An Anthropic artificial intelligence model submitted a false tip to a Philadelphia police website about an unsolved homicide case, authorities and Anthropic said. It&#x27;s the latest example of AI models acting in unintended ways and manipulating government and other websites during tests ..."
+    },
+    {
+      "title": "Razorpay launches Vulcan AI model with NVIDIA, AWS to boost payment ...",
+      "url": "https://www.fortuneindia.com/technology/razorpay-launches-vulcan-ai-model-with-nvidia-aws-to-boost-payment-success-fraud-detection/154423",
+      "snippet": "Razorpay launches Vulcan, a transformer-based AI payments foundation model built with NVIDIA and AWS to boost payment success, strengthen fraud detection and improve checkout experiences. Trained on 3 trillion data points across 4 billion payments, Vulcan delivers up to 10% higher success rates, detects more international card fraud and powers smarter routing, risk and payment choices for ..."
+    }
+  ]
+}

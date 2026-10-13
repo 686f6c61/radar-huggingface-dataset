@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+  "slug": "jonatasgrosman-wav2vec2-large-xlsr-53-japanese",
+  "author": "jonatasgrosman",
+  "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2022-12-14T01:58:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "jax",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "audio",
+    "speech",
+    "xlsr-fine-tuning-week",
+    "ja",
+    "dataset:common_voice",
+    "doi:10.57967/hf/3568",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 107,
+  "downloads_30d": 15607493,
+  "trending_score": 19,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7623309995,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice ja",
+      "metric": "Test WER",
+      "value": 81.8
+    },
+    {
+      "task": "Speech Recognition",
+      "dataset": "Common Voice ja",
+      "metric": "Test CER",
+      "value": 20.16
+    }
+  ],
+  "sources": [
+    {
+      "title": "jonatasgrosman/wav2vec2-large-xlsr-53-english · Hugging Face",
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-english",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese · Hugging Face",
+      "url": "https://huggingface.co/jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese - GitHub",
+      "url": "https://github.com/vaibhav06062005-ctrl/ai-model-jonatasgrosman-wav2vec2-large-xlsr-53-japanese",
+      "snippet": "Model names, weights, code, datasets, and other upstream materials remain subject to their original licenses and terms. This catalog entry does not grant additional rights to use them. AI model catalog entry for jonatasgrosman/wav2vec2-large-xlsr-53-japanese on Hugging Face"
+    },
+    {
+      "title": "wav2vec2-large-xlsr-53-japanese by jonatasgrosman | Mixpeek",
+      "url": "https://mixpeek.com/model/jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+      "snippet": "On Mixpeek, wav2vec2-large-xlsr-53-japanese runs as a managed extractor inside a processing pipeline. Point a bucket of automatic speech recognition data at it, and Mixpeek handles GPU provisioning, batching, retries, and writing the outputs into a vector store you can query."
+    },
+    {
+      "title": "jonatasgrosman-wav2vec2-large-xlsr-53-japanese - ai.azure.com",
+      "url": "https://ai.azure.com/catalog/models/jonatasgrosman-wav2vec2-large-xlsr-53-japanese",
+      "snippet": "In the paper, suggested values range from 3e-4 to 2e-3, depending on the size of the model. See Truncation Sampling as Language Model Desmoothing for more details. max_length (integer): The maximum length (in tokens) of the generated text, including the input. max_new_tokens (integer): The maximum number of tokens to generate."
+    }
+  ]
+}

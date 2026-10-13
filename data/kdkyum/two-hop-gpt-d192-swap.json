@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kdkyum/two-hop-gpt-d192-swap",
+  "slug": "kdkyum-two-hop-gpt-d192-swap",
+  "author": "kdkyum",
+  "url": "https://huggingface.co/kdkyum/two-hop-gpt-d192-swap",
+  "created_at": "2026-10-13T19:03:47.000Z",
+  "updated_at": "2026-10-13T19:06:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2521664496,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kdkyum/two-hop-gpt-hits · Hugging Face",
+      "url": "https://huggingface.co/kdkyum/two-hop-gpt-hits",
+      "snippet": "The d256 runs differ only in d_model 256 with 4 heads (head dim 64), whole-document rows (max_seq_len 1,997 on base_graph and 2,149 on swap_6to1split1) instead of 1,024-token rows, wd 5, and lr (1e-4 or 2e-4; same warmup-stable-decay schedule). The lr 2e-4 swap run stayed at 0.41-0.53 from 15K to 183K, then rose to 0.92 by 190K and first reached 0.99 at 231K; it was cancelled at 5K and resumed ..."
+    },
+    {
+      "title": "kdkyum/family_latent_two_hop - Hugging Face",
+      "url": "https://huggingface.co/kdkyum/family_latent_two_hop",
+      "snippet": "Decoder-only GPTs (d_model 192, 6 heads, 12 layers, 5.4M params) trained on kdkyum/family_latent_two_hop (N128_all_single_f16_allseen_split96FM_noID): 128 families x 16 members, a 16-name first-name pool shared by every family (only the last name identifies a family, vocab 155), no A is A identity facts, and the relation-reversal split (group A = 96 families with all facts, group B = 32 ..."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download the app."
+    },
+    {
+      "title": "Models - OpenAI API",
+      "url": "https://developers.openai.com/api/docs/models",
+      "snippet": "Models Choosing a model If you&#x27;re not sure where to start, use GPT-6 Astra, our flagship model for complex reasoning and coding. Choose GPT-6.1 Sol to balance intelligence and cost, or GPT-6 Luna for cost-sensitive, high-volume workloads. All latest OpenAI models support text and image input, text output, multilingual capabilities, and vision."
+    },
+    {
+      "title": "HopGPT - Information Technology",
+      "url": "https://it.johnshopkins.edu/ai/hopgpt/",
+      "snippet": "HopGPT is a generative AI platform that provides secure, JHED-authenticated access to multiple large language models (LLMs), including those available through ChatGPT, Anthropic, and Meta."
+    }
+  ]
+}

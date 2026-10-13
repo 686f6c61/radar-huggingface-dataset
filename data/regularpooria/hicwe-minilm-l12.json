@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "regularpooria/HiCWE-MiniLM-L12",
+  "slug": "regularpooria-hicwe-minilm-l12",
+  "author": "regularpooria",
+  "url": "https://huggingface.co/regularpooria/HiCWE-MiniLM-L12",
+  "created_at": "2026-10-13T15:30:42.000Z",
+  "updated_at": "2026-10-13T15:35:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "cybersecurity",
+    "vulnerability",
+    "cve",
+    "cwe",
+    "software-security",
+    "retrieval",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L12-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L12-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33360000,
+  "parameters_human": "33.4M",
+  "storage_bytes": 133462128,
+  "storage_human": "133 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L12-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

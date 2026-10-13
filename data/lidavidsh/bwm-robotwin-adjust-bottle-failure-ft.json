@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lidavidsh/bwm-robotwin-adjust-bottle-failure-ft",
+  "slug": "lidavidsh-bwm-robotwin-adjust-bottle-failure-ft",
+  "author": "lidavidsh",
+  "url": "https://huggingface.co/lidavidsh/bwm-robotwin-adjust-bottle-failure-ft",
+  "created_at": "2026-10-13T01:55:48.000Z",
+  "updated_at": "2026-10-13T01:58:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "robotics",
+    "robotwin",
+    "action-conditioned-video",
+    "dataset:lidavidsh/robotwin-adjust-bottle-pi05-rollouts",
+    "base_model:BLM-Lab/Boundless-World-Model",
+    "base_model:finetune:BLM-Lab/Boundless-World-Model",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10198935600,
+  "storage_human": "10.2 GB",
+  "base_model": "BLM-Lab/Boundless-World-Model",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adjust Bottle - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/tasks/adjust_bottle.html",
+      "snippet": "Description: Pick up the bottle on the table headup with the correct arm. Average Steps: 147 (Aloha-AgileX, save_freq=15) Objects: 001_bottle"
+    },
+    {
+      "title": "RoboTwin/description/task_instruction/adjust_bottle.json at main ...",
+      "url": "https://github.com/RoboTwin-Platform/RoboTwin/blob/main/description/task_instruction/adjust_bottle.json",
+      "snippet": "[ICML 2026] RoboTwin 2.0 Offical Code Repo. Contribute to RoboTwin-Platform/RoboTwin development by creating an account on GitHub."
+    },
+    {
+      "title": "suz22/RoboTwin_adjust_bottle · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/suz22/RoboTwin_adjust_bottle",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RoboTwin 2.0 - RoboTwin 2.0 Official Document",
+      "url": "https://robotwin-platform.github.io/doc/index.html",
+      "snippet": "Here is the official documentation for RoboTwin 2.0 (ICML 2026), which includes installation and usage instructions for various RoboTwin functionalities, detailed information on the 50 bimanual tasks in RoboTwin 2.0, comprehensive descriptions of the RoboTwin-OD dataset, and guidelines for joining the community."
+    },
+    {
+      "title": "Boundless-World-Model - GitHub",
+      "url": "https://github.com/boundless-large-model/boundless-world-model",
+      "snippet": "🌍 Boundless-World-Model BWM is a physically consistent, action-conditioned video world model built upon Wan2.2-TI2V-5B, serving as a low-cost yet high-fidelity simulator for robotic manipulation."
+    }
+  ]
+}

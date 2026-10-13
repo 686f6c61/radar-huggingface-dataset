@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tund-eoyel/contrastive",
+  "slug": "tund-eoyel-contrastive",
+  "author": "tund-eoyel",
+  "url": "https://huggingface.co/tund-eoyel/contrastive",
+  "created_at": "2026-10-13T18:50:13.000Z",
+  "updated_at": "2026-10-13T18:50:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Contrastive Learning Guide | AI Understanding",
+      "url": "https://aiunderstanding.org/learn/contrastive-learning",
+      "snippet": "Contrastive learning teaches a model to pull similar things together and push dissimilar things apart in an embedding space. It matters because it lets AI learn powerful representations from mostly unlabeled data, powering image search, recommendations, and multimodal models. What is the core objective of contrastive learning?"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Contrastive Learning: How Models Learn by Comparison - DataCamp",
+      "url": "https://www.datacamp.com/tutorial/contrastive-learning",
+      "snippet": "Learn what contrastive learning is, how it works, and why it is used in modern machine learning for representation learning and self-supervised learning."
+    },
+    {
+      "title": "Visualizing and Understanding Contrastive Learning - arXiv.org",
+      "url": "https://arxiv.org/html/2206.09753v3",
+      "snippet": "Visualizing and Understanding Contrastive Learning Thanks: This research received funding from the FWO (Grants G014718N, G0A4720N and 1SB5721N) and from imec through the AAA project Trustworthy AI Methods (TAIM). F. Sammani, B. Joukovsky and N. Deligiannis are with the Department of Electronics and Informatics, Vrije Universiteit Brussel, Pleinlaan 2, B-1050 Brussels, Belgium and also with ..."
+    }
+  ]
+}

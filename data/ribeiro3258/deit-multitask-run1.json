@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ribeiro3258/deit-multitask-run1",
+  "slug": "ribeiro3258-deit-multitask-run1",
+  "author": "ribeiro3258",
+  "url": "https://huggingface.co/ribeiro3258/deit-multitask-run1",
+  "created_at": "2026-10-13T18:40:43.000Z",
+  "updated_at": "2026-10-13T18:40:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "srinasution/deit-multitask · Hugging Face",
+      "url": "https://huggingface.co/srinasution/deit-multitask",
+      "snippet": "DeiT for Multitask Overview This is an experimental DeiT codebase for Multitask. It keeps the giant setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "anthonygarcia/deit-multitask68 · Hugging Face",
+      "url": "https://huggingface.co/anthonygarcia/deit-multitask68",
+      "snippet": "A small DeiT implementation for Multitask, packaged with an explicit configuration and an initialization checkpoint. The nano variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - brysonjones/multitask_dit_policy: An open-source ...",
+      "url": "https://github.com/brysonjones/multitask_dit_policy",
+      "snippet": "The goal of this project is to provide the community with a high quality implementation of Multitask DiT Policy that can be used as a baseline for model research and building on top of. Architecture diagram of the Multitask Diffusion-Transformer (DiT) Policy model I&#x27;ve made an effort to make the implementations as readable as possible, at the sacrifice of making the most optimized ..."
+    },
+    {
+      "title": "[2012.12877] Training data-efficient image transformers & distillation ...",
+      "url": "https://arxiv.org/abs/2012.12877",
+      "snippet": "Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them ..."
+    }
+  ]
+}

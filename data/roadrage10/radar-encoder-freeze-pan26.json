@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "roadrage10/radar-encoder-freeze-pan26",
+  "slug": "roadrage10-radar-encoder-freeze-pan26",
+  "author": "roadrage10",
+  "url": "https://huggingface.co/roadrage10/radar-encoder-freeze-pan26",
+  "created_at": "2026-10-13T02:08:14.000Z",
+  "updated_at": "2026-10-13T02:08:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "radar",
+    "text-classification",
+    "generated_from_trainer",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 399711361,
+  "parameters_human": "399.7M",
+  "storage_bytes": 3237375616,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "roadrage10/radar-encoder-freeze-pan26 · Hugging Face",
+      "url": "https://huggingface.co/roadrage10/radar-encoder-freeze-pan26",
+      "snippet": "Instructions to use roadrage10/radar-encoder-freeze-pan26 with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries Transformers How to use roadrage10/radar-encoder-freeze-pan26 with Transformers:"
+    },
+    {
+      "title": "roadrage10/radar-encoder-freeze · Hugging Face",
+      "url": "https://huggingface.co/roadrage10/radar-encoder-freeze",
+      "snippet": "radar-encoder-freeze This model is a fine-tuned version of on the None dataset. It achieves the following results on the evaluation set:"
+    },
+    {
+      "title": "pan26-radar/notebooks/radar_encoder_freeze_pan26.ipynb at main ... - GitHub",
+      "url": "https://github.com/mam10eks/pan26-radar/blob/main/notebooks/radar_encoder_freeze_pan26.ipynb",
+      "snippet": "RADAR (Robust Adversarial-Resistant Detection with Adaptive Reasoning) is a hybrid architecture for detecting AI-generated text, designed to be robust against adversarial obfuscations and style mim..."
+    },
+    {
+      "title": "pan26-radar/notebooks/radar_encoder_freeze.ipynb at main - GitHub",
+      "url": "https://github.com/mam10eks/pan26-radar/blob/main/notebooks/radar_encoder_freeze.ipynb",
+      "snippet": "RADAR (Robust Adversarial-Resistant Detection with Adaptive Reasoning) is a hybrid architecture for detecting AI-generated text, designed to be robust against adversarial obfuscations and style mim..."
+    },
+    {
+      "title": "Radar Encoder Freeze - AI Dataset Insights",
+      "url": "https://free2aitools.com/dataset/mahmoodanaam/radar-encoder-freeze",
+      "snippet": "🆔 Identity & Source id hf-model--mahmoodanaam--radar-encoder-freeze slug mahmoodanaam--radar-encoder-freeze source huggingface author MahmoodAnaam license tags transformers, tensorboard, safetensors, radar, text-classification, generated_from_trainer, custom_code, region:us"
+    }
+  ]
+}

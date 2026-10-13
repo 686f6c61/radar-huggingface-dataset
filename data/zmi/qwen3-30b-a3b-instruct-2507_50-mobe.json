@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "zmi/Qwen3-30B-A3B-Instruct-2507_50-MoBE",
+  "slug": "zmi-qwen3-30b-a3b-instruct-2507_50-mobe",
+  "author": "zmi",
+  "url": "https://huggingface.co/zmi/Qwen3-30B-A3B-Instruct-2507_50-MoBE",
+  "created_at": "2026-10-13T01:16:45.000Z",
+  "updated_at": "2026-10-13T01:17:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 20862547968,
+  "parameters_human": "20.86B",
+  "storage_bytes": 41739064942,
+  "storage_human": "41.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISSCC DemoHandout | PDF - Scribd",
+      "url": "https://www.scribd.com/document/1001730307/ISSCC-DemoHandout",
+      "snippet": "Laura Chizuko Fujino. ISSCC Director of Publications & Presentations lcfujino@[Link] February 2026. DS1 ISSCC 2026 DEMONSTRATION PAPERS 2.2 A Quad-Chiplet AI ..."
+    }
+  ]
+}

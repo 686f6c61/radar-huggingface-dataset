@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Lunation/connectailab-rl-lunar-v1-teacher",
+  "slug": "lunation-connectailab-rl-lunar-v1-teacher",
+  "author": "Lunation",
+  "url": "https://huggingface.co/Lunation/connectailab-rl-lunar-v1-teacher",
+  "created_at": "2026-10-13T15:31:32.000Z",
+  "updated_at": "2026-10-13T15:31:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lunaison — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lunaison",
+      "snippet": "La lunaison (anglais lunation, allemand Lunation) est l'intervalle de temps séparant deux nouvelles lunes ; la durée moyenne est de …Read more"
+    },
+    {
+      "title": "Lunar month - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lunar_month",
+      "snippet": "Synodic month The synodic month (Greek: συνοδικός, romanized: synodikós, meaning \"pertaining to a synod, i.e., a meeting\"; in this …"
+    },
+    {
+      "title": "Calendrier lunaire - au rythme de la lune",
+      "url": "https://www.calendrier-lunaire.net/",
+      "snippet": "Tous les calendriers lunaires disponibles gratuitement à télécharger ou à consulter en ligne. Découvrez les calendriers pour pêcher, …"
+    },
+    {
+      "title": "CALENDRIER LUNAIRE quotidien & complet des cycles de la lune",
+      "url": "https://kalendrier.ouest-france.fr/calendrier-lunaire.html",
+      "snippet": "16 hours ago · Stades lunaires, lune montante et descendante, apogées et périgées, heures des levers et couchers, signes et …"
+    },
+    {
+      "title": "La Lune : lune du jour, phases, types de lune et noms",
+      "url": "https://icalendrier.fr/lune/",
+      "snippet": "1 day ago · Tout savoir sur la Lune, comment elle fonctionne, ses phases, les types (pleine, nouvelle, bleue, rousse...) ou les noms …"
+    }
+  ]
+}

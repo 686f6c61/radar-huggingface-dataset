@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Zhongzhu/lowbarena-trial-27b-v1s",
+  "slug": "zhongzhu-lowbarena-trial-27b-v1s",
+  "author": "Zhongzhu",
+  "url": "https://huggingface.co/Zhongzhu/lowbarena-trial-27b-v1s",
+  "created_at": "2026-10-13T16:41:08.000Z",
+  "updated_at": "2026-10-13T16:41:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "lowbarena",
+    "nvfp4",
+    "quantized",
+    "base_model:Qwen/Qwen3.5-27B",
+    "base_model:quantized:Qwen/Qwen3.5-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15617946352,
+  "parameters_human": "15.62B",
+  "storage_bytes": 19334555126,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dads & their porn mags — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/1477564/dads-their-porn-mags",
+      "snippet": "May 17, 2011 · middle aged dads need to be taking greater care to hide porn mags properly.Read more"
+    },
+    {
+      "title": "Max — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2488358/max",
+      "snippet": "Dec 31, 2025 · Whos enjoying having max back? Initially I wasn't happy because hes the same old max womaniser, bad dad, selfish."
+    },
+    {
+      "title": "Kym Marsh's sex tape... — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/2157452/kym-marshs-sex-tape",
+      "snippet": "Jun 19, 2016 · Revenge Porn that's against the law now, they even locked someone up recently. Thought the only way another celeb …"
+    },
+    {
+      "title": "Adult Magazines — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/684218/adult-magazines",
+      "snippet": "Oct 27, 2007 · Now, in 2007, online porn is beginning to become high resolution as standard and at this point I would say it's about …"
+    },
+    {
+      "title": "The best Adult channel — Digital Spy",
+      "url": "https://forums.digitalspy.com/discussion/114779/the-best-adult-channel",
+      "snippet": "Mar 2, 2004 · What does everyone think is the best Adult channel and which channels show more *hardcore* porn than the *softer* …"
+    }
+  ]
+}

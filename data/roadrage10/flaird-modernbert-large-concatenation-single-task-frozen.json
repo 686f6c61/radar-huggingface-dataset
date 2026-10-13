@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "roadrage10/flaird-modernbert-large-concatenation-single-task-frozen",
+  "slug": "roadrage10-flaird-modernbert-large-concatenation-single-task-frozen",
+  "author": "roadrage10",
+  "url": "https://huggingface.co/roadrage10/flaird-modernbert-large-concatenation-single-task-frozen",
+  "created_at": "2026-10-13T02:08:05.000Z",
+  "updated_at": "2026-10-13T02:08:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "flaird",
+    "text-classification",
+    "generated_from_trainer",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 397024257,
+  "parameters_human": "397.0M",
+  "storage_bytes": 1606151583,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何用收音机（德生）在国内收听BBC、VOA？ - 知乎",
+      "url": "https://www.zhihu.com/question/280270981",
+      "snippet": "Jun 8, 2018 · 本人现在上海，有一德生全波段调频收音机，想要收听BBC、VOA等电台，请问各位大佬，调频的具体方法与频率"
+    },
+    {
+      "title": "如何从 BBC 网站学习英语？ - 知乎",
+      "url": "https://www.zhihu.com/question/28821895",
+      "snippet": "BBC 网站有太多有用的东西。譬如 Learning English、Podcast，还有 BBC 中文版英语学习网页等等。内容很…"
+    },
+    {
+      "title": "Bhutan Broadcasting Service (BBSCL)",
+      "url": "https://www.bbs.bt/",
+      "snippet": "Stay updated with the latest news, stories, and developments from Bhutan and around the world with Bhutan Broadcasting Service …"
+    },
+    {
+      "title": "现在bbc 6 minutes English在哪里听？ - 知乎",
+      "url": "https://www.zhihu.com/question/649770502",
+      "snippet": "资源介绍 《BBC 6 Minute English》是英国 BBC 广播公司 针对全球英语学习者推出的一款谈话类学习节目。每期包含一个时尚的话 …"
+    },
+    {
+      "title": "在iPhone上收听VOA或者BBC有什么好的推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/23224469",
+      "snippet": "在其在线广播栏目下，除了VOA常速、VOA慢速、BBC News、CNN News之外，还有经济学人、科学美国人等新闻听力，而且每篇 …"
+    }
+  ]
+}

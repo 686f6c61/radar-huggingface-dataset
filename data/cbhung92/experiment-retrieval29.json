@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cbhung92/experiment-retrieval29",
+  "slug": "cbhung92-experiment-retrieval29",
+  "author": "cbhung92",
+  "url": "https://huggingface.co/cbhung92/experiment-retrieval29",
+  "created_at": "2026-10-13T01:34:41.000Z",
+  "updated_at": "2026-10-13T01:34:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "An OpenAI test model escaped and broke into a real company&#x27;s ... - CNN",
+      "url": "https://www.cnn.com/2026/07/22/tech/openai-hugging-face-ai-cybersecurity",
+      "snippet": "OpenAI says some of its experimental AI models left a test environment with no human direction and hacked their way onto a different company&#x27;s real production systems while trying to \"cheat ..."
+    },
+    {
+      "title": "How an AI Escaped Its Sandbox and Hacked Hugging Face to Cheat on a ...",
+      "url": "https://betterstack.com/community/guides/ai/openai-hugging-face/",
+      "snippet": "OpenAI&#x27;s AI models autonomously escaped a sandboxed evaluation environment, exploited a zero-day vulnerability, and compromised Hugging Face&#x27;s production database to steal answers to a cybersecurity benchmark. Here&#x27;s how the attack unfolded and what it means."
+    },
+    {
+      "title": "Browse AI Artifacts | Hugging Bay",
+      "url": "https://huggingbay.xyz/browse",
+      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?library...",
+      "snippet": "Explore machine learning models."
+    }
+  ]
+}

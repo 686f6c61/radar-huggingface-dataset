@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Azharkhan79/nem-forecast-vic1",
+  "slug": "azharkhan79-nem-forecast-vic1",
+  "author": "Azharkhan79",
+  "url": "https://huggingface.co/Azharkhan79/nem-forecast-vic1",
+  "created_at": "2026-10-13T18:42:37.000Z",
+  "updated_at": "2026-10-13T18:43:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "lightgbm",
+  "languages": [],
+  "tags": [
+    "lightgbm",
+    "time-series-forecasting",
+    "electricity-demand",
+    "energy",
+    "australia",
+    "aemo",
+    "nem",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NEM Forecasts",
+      "url": "https://nem.redaxe.com/chart/VIC1",
+      "snippet": "Forecasts and model outputs are licensed under CC BY 4.0 — free for use and redistribution, including commercial use, with attribution. Based on data © Australian Energy Market Operator (AEMO) and © Open-Meteo Weather API, licensed under CC BY 4.0."
+    },
+    {
+      "title": "Weather Lab | WeatherNext | Google for Developers",
+      "url": "https://developers.google.com/weathernext/guides/weatherlab",
+      "snippet": "Weather Lab is an interactive website developed by Google DeepMind and Google Research for exploring AI weather forecasts. It provides a map-based interface for visualizing global forecast layers, tracking tropical cyclones with predicted and observed tracks, and downloading experimental cyclone forecast data."
+    },
+    {
+      "title": "Samanali-J/vic-nem-price-demand - GitHub",
+      "url": "https://github.com/Samanali-J/vic-nem-price-demand",
+      "snippet": "GitHub - Samanali-J/vic-nem-price-demand: Aggregated price and demand data for the VIC1 region of Australia&#x27;s National Electricity Market (NEM), sourced from AEMO."
+    },
+    {
+      "title": "VIC Forecast Monitor - GitHub",
+      "url": "https://github.com/spgg224/vic-forecast-monitor",
+      "snippet": "An interactive historical analysis of when AEMO&#x27;s public Victorian electricity-market forecasts diverged from actual outcomes. The project will compare forecast and realised price, demand, renewable output and interconnector conditions across forecast horizons. Its core design preserves both ..."
+    },
+    {
+      "title": "Learn how WeatherNext, Google&#x27;s AI weather forecasting, really works",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/weathernext-extreme-weather-cyclone-predictions/",
+      "snippet": "A Google DeepMind scientist explains how AI weather prediction works and how it can help warn communities earlier than ever."
+    }
+  ]
+}

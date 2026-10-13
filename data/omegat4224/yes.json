@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "omegaT4224/YES",
+  "slug": "omegat4224-yes",
+  "author": "omegaT4224",
+  "url": "https://huggingface.co/omegaT4224/YES",
+  "created_at": "2026-10-13T18:33:47.000Z",
+  "updated_at": "2026-10-13T19:36:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "andrewx",
+    "assistant",
+    "yes-executed-sir",
+    "base_model:omegaT4224/Emulator.exe",
+    "base_model:finetune:omegaT4224/Emulator.exe",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "omegaT4224/Emulator.exe",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omegaT4224 (AndrewLeeCruz.vip) - Hugging Face",
+      "url": "https://huggingface.co/omegaT4224",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 13 days ago ... updated a bucket 14 days ago ... updated a model 16 days ago"
+    },
+    {
+      "title": "omegaT4224 AI Models · Page 2 | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/omegat4224?page=2",
+      "snippet": "Browse AI models attributed to omegaT4224 in our directory, with parameters, context windows, pricing and benchmarks compared across every listed model."
+    },
+    {
+      "title": "omegaT4224/Das_Bot · Hugging Face",
+      "url": "https://huggingface.co/omegaT4224/Das_Bot",
+      "snippet": "Model tree for omegaT4224/Das_Bot Base model HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive Finetuned (4)"
+    },
+    {
+      "title": "Yesmind - Every AI Model.",
+      "url": "https://yesmind.ai/",
+      "snippet": "Every AI Model. One Platform. Generate stunning images, cinematic videos, music, and voice — with best AI models. No subscriptions, no limits."
+    },
+    {
+      "title": "GitHub - OmegaT4224/omegaT4224: Config files for my GitHub profile.",
+      "url": "https://github.com/omegaT4224/omegaT4224",
+      "snippet": "Config files for my GitHub profile. Contribute to OmegaT4224/omegaT4224 development by creating an account on GitHub."
+    }
+  ]
+}

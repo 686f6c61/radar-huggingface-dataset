@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "skyuu72/grinpress",
+  "slug": "skyuu72-grinpress",
+  "author": "skyuu72",
+  "url": "https://huggingface.co/skyuu72/grinpress",
+  "created_at": "2026-10-13T01:59:56.000Z",
+  "updated_at": "2026-10-13T02:10:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "grinpress-rectified-flow-unet",
+    "text-to-image",
+    "rectified-flow",
+    "flow-matching",
+    "unet",
+    "cross-attention",
+    "character-level",
+    "text-rendering",
+    "from-scratch",
+    "synthetic-data",
+    "pixel-space",
+    "small-model",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 33863299,
+  "parameters_human": "33.9M",
+  "storage_bytes": 141829968,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "skyuu72 (skyler Ulrich) - Hugging Face",
+      "url": "https://huggingface.co/skyuu72",
+      "snippet": "User profile of skyler Ulrich on Hugging Face"
+    },
+    {
+      "title": "skyuu72/wag-2b · Hugging Face",
+      "url": "https://huggingface.co/skyuu72/wag-2b",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Next AI Model — AI Model Release Tracker",
+      "url": "https://www.nextaimodel.com/",
+      "snippet": "Free tracker of every AI model release from OpenAI, Google, Anthropic, xAI, Meta, DeepSeek and more: what each model changed, and which lines are due next."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "wag-2b by Skyuu72: Open-Weight Model - savrn.com",
+      "url": "https://savrn.com/models/wag-2b",
+      "snippet": "wag-2b from Skyuu72: license, access terms, disclosed training data, reported evaluations and the publisher&#x27;s download."
+    }
+  ]
+}

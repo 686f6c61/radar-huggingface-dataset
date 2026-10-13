@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-all-module-relation-retention-view-large-1000-20261014",
+  "slug": "donghyun1228-pi05-libero-all-module-relation-retention-view-large-1000-20261014",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-retention-view-large-1000-20261014",
+  "created_at": "2026-10-13T18:28:57.000Z",
+  "updated_at": "2026-10-13T18:31:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "libero",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13101255997,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-main-policy-retention-view-large-lambda1-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-main-policy-retention-view-large-lambda1-1000-20261013",
+      "snippet": "This source-free adaptation checkpoint contains the raw, non-EMA parameters after 1000 optimizer updates: native43 FP32, frozen8 BF16, and source-wrist23 BF16, with the original normalization assets. The retention arm adds one shared flow velocity consistency coefficient; fixed and scalar arms are comparison controls. The objective is preservation of the main manipulation policy, not improved IDM."
+    },
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-raw-common-vision-yaw30-1000-20261011",
+      "snippet": "This checkpoint exports the raw train-state parameters after 1000 target-only IDM updates. It is not the EMA checkpoint and has no policy evaluation yet. All51 exported leaves were reopened and hashed against the raw train-state audit; all28 frozen leaves match the audited source weights. Vision ..."
+    },
+    {
+      "title": "openpi05/examples/libero at main · Integer003/openpi05 · GitHub",
+      "url": "https://github.com/Integer003/openpi05/tree/main/examples/libero",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - openpi05/examples/libero at main · Integer003/openpi05"
+    },
+    {
+      "title": "openpi/examples/libero/README.md at main · Physical ... - GitHub",
+      "url": "https://github.com/Physical-Intelligence/openpi/blob/main/examples/libero/README.md",
+      "snippet": "Contribute to Physical-Intelligence/openpi development by creating an account on GitHub."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    }
+  ]
+}

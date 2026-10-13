@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-all-module-relation-scalar-view-large-1000-20261014",
+  "slug": "donghyun1228-pi05-libero-all-module-relation-scalar-view-large-1000-20261014",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-all-module-relation-scalar-view-large-1000-20261014",
+  "created_at": "2026-10-13T18:47:47.000Z",
+  "updated_at": "2026-10-13T18:49:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "libero",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13101244863,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-vision-idm-view-large-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-vision-idm-view-large-1000-20261010",
+      "snippet": "Source-observation-free vision-only IDM, view large, 1,000 updates This is a completed experimental training pilot, with no claim that task success is retained. Task evaluation is recorded separately in the project results."
+    },
+    {
+      "title": "Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000 ...",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-source-free-split-vision-view-large-1000-20261010",
+      "snippet": "All 51 leaves of the target vision-only IDM model are preserved exactly. Its adapted base-camera encoder remains active, while wrist images use a separate wrist_img encoder restored from the source vision weights and cast to bfloat16."
+    },
+    {
+      "title": "openpi05/examples/libero at main · Integer003/openpi05 · GitHub",
+      "url": "https://github.com/Integer003/openpi05/tree/main/examples/libero",
+      "snippet": "Provide fine-tuning and inference code for pi05, fully reproducing the methods described in the pi05 paper. - openpi05/examples/libero at main · Integer003/openpi05"
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "pi05_libero_finetuned_quantiles_v044 · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_finetuned_quantiles_v044",
+      "snippet": "π₀.₅ (Pi05 Libero) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Checkpoint trained and evaluated on LIBERO tasks with Quantiles normalization. Note: This model currently supports only ..."
+    }
+  ]
+}

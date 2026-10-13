@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nari-labs/Dia-1.6B",
+  "slug": "nari-labs-dia-1-6b",
+  "author": "nari-labs",
+  "url": "https://huggingface.co/nari-labs/Dia-1.6B",
+  "created_at": "2025-04-20T05:36:20.000Z",
+  "updated_at": "2025-06-01T13:13:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "text-to-speech",
+    "en",
+    "arxiv:2305.09636",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2929,
+  "downloads_30d": 24528,
+  "trending_score": 15,
+  "parameters": 1611160576,
+  "parameters_human": "1.61B",
+  "storage_bytes": 12900029096,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NARI",
+      "url": "http://narigroup.com/",
+      "snippet": "NARI was founded in 1973 to implement R&D and innovation projects. Over more than 50 years of development, it has grown into a …Read more"
+    },
+    {
+      "title": "Nari - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nari",
+      "snippet": "This disambiguation page lists articles associated with the title Nari. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Amazon.fr : Razer Nari",
+      "url": "https://www.amazon.fr/razer-nari/s?k=razer+nari",
+      "snippet": "Razer Nari Essential – Casque Gamer Sans Fil (Bluetooth Casque de Jeu Sans Fil avec THX Spatial Audio 360°, Coussin de Gel …"
+    },
+    {
+      "title": "Nari Labs ： Free And Open-Source TTS AI Voice Dialogue",
+      "url": "https://narilabs.org/",
+      "snippet": "Discover Nari Labs, a open-source TTS AI for ultra-realistic dialogue and voice cloning. Build immersive audio experiences with real …"
+    },
+    {
+      "title": "NARI NARI NARI / ناري ناري ناري - YouTube",
+      "url": "https://www.youtube.com/watch?v=xqvo3rHQNpY",
+      "snippet": "Aug 21, 2025 · Provided to YouTube by Virgin Music Group NARI NARI NARI / ناري ناري ناري · Saint Levant Love Letters / رسائل حب ℗ 2025 …"
+    }
+  ]
+}

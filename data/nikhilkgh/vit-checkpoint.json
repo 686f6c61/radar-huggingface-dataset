@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nikhilkgh/vit-checkpoint",
+  "slug": "nikhilkgh-vit-checkpoint",
+  "author": "Nikhilkgh",
+  "url": "https://huggingface.co/Nikhilkgh/vit-checkpoint",
+  "created_at": "2026-10-13T18:45:26.000Z",
+  "updated_at": "2026-10-13T18:45:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (144) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 144 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "AI Image & Video Models, LoRAs & Checkpoints | Civitai",
+      "url": "https://civitai.com/models",
+      "snippet": "Download AI image and video models from the largest community library: checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux, Wan and more."
+    },
+    {
+      "title": "Nikhilkgh/perceiver-checkpoint-2023 at main - Hugging Face",
+      "url": "https://huggingface.co/Nikhilkgh/perceiver-checkpoint-2023/tree/main",
+      "snippet": "License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main perceiver-checkpoint-2023 142 kB Ctrl+K Ctrl+K 1 contributor History:2 commits Nikhilkgh Add predict.py, README.md, config.json, training_args.json, model.safetensors f48dc9b verifiedabout 9 hours ago .gitattributes Safe 1.52 kBinitial commitabout 9 ..."
+    },
+    {
+      "title": "Pre-trained Model Zoo | google-research/vision_transformer | DeepWiki",
+      "url": "https://deepwiki.com/google-research/vision_transformer/6.1-pre-trained-model-zoo",
+      "snippet": "Pre-trained Model Zoo Relevant source files This document provides a comprehensive overview of the pre-trained models available in the Vision Transformer repository. It covers how to access, select, and utilize the various model checkpoints across different model architectures including Vision Transformers (ViT), MLP-Mixer, and LiT (Locked-image text Tuning). For information on loading and ..."
+    },
+    {
+      "title": "GitHub - capcheckorg/ai-image-detection: Detect AI-generated images ...",
+      "url": "https://github.com/capcheckorg/ai-image-detection",
+      "snippet": "AI Image Detection Detect AI-generated images using a Vision Transformer (ViT) model. Open source inference server and training pipeline."
+    }
+  ]
+}

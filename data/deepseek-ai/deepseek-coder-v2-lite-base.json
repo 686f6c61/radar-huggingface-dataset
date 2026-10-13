@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+  "slug": "deepseek-ai-deepseek-coder-v2-lite-base",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Lite-Base",
+  "created_at": "2024-06-14T03:46:36.000Z",
+  "updated_at": "2024-07-03T05:14:22.000Z",
+  "license": "deepseek-license",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2401.06066",
+    "license:other",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 142,
+  "downloads_30d": 13216,
+  "trending_score": 18,
+  "parameters": 15706484224,
+  "parameters_human": "15.71B",
+  "storage_bytes": 31413626609,
+  "storage_human": "31.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek App",
+      "url": "https://download.deepseek.com/",
+      "snippet": "下载 DeepSeek 应用 - 您的智能助手，随时随地享受 AI 服务。 支持 iOS 和 Android 平台。 | Download DeepSeek App - Your …"
+    },
+    {
+      "title": "DeepSeek · GitHub",
+      "url": "https://github.com/deepseek-ai",
+      "snippet": "DeepSeek Harness: Everything is a Plugin. TypeScript 248k 29.9k deepseek-recipe Public Rust 380 35"
+    },
+    {
+      "title": "DeepSeek — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/DeepSeek",
+      "snippet": "Début 2025, DeepSeek dévoile son IA, qui est publiée en open source (sous licence MIT). Ses performances sont comparables, …"
+    }
+  ]
+}

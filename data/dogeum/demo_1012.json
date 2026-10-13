@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/demo_1012",
+  "slug": "dogeum-demo_1012",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/demo_1012",
+  "created_at": "2026-10-13T02:05:51.000Z",
+  "updated_at": "2026-10-13T02:07:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:dogeum/demo_dataset_1012",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dogeum (Park) - Hugging Face",
+      "url": "https://huggingface.co/dogeum/datasets",
+      "snippet": "Sort: Recently updated. dogeum/eval_record_test_5000. Viewer • Updated 2 days ago • 1.68k • 25. dogeum/eval_so101_05212"
+    },
+    {
+      "title": "dogeum/demo_dataset_plus · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/dogeum/demo_dataset_plus",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - PrimitivesLTD/DogeAI-Demo: DogeAI: Unreal Engine Demo",
+      "url": "https://github.com/PrimitivesLTD/DogeAI-Demo",
+      "snippet": "Welcome to the DogeAI demo! This project showcases how to integrate the DogeAI, a self-learning virtual dog model, into an Unreal Engine 5 environment. With the power of UE5 and the adaptability of DogeAI, this demonstration provides a stunning and interactive example of the capabilities of AI in the realm of game design and beyond."
+    },
+    {
+      "title": "GitHub - PrimitivesLTD/DogeAI: DogeAI: The Self-Learning Neural Model ...",
+      "url": "https://github.com/PrimitivesLTD/DogeAI",
+      "snippet": "DogeAI is an AI model of a dog that learns and adapts in real-time through visual data. Every N steps, a reward model is triggered to detect if the virtual dog has hit an obstacle, making it a self-learning technology. Developed entirely in C++ from scratch, open-source and always available for non-commercial use."
+    },
+    {
+      "title": "Anima Anime AI Model - Free Download | Tensor.Art",
+      "url": "https://tensor.art/models/1001016014923661223",
+      "snippet": "Download AnimaYume - duongve13112002 - free CHECKPOINT Anima AI model on TENSOR. Anima, Anime, Illustration. By 😞3"
+    }
+  ]
+}

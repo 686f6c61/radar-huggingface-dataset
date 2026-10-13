@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kabirgupta/hybrid-baseline-2024",
+  "slug": "kabirgupta-hybrid-baseline-2024",
+  "author": "kabirgupta",
+  "url": "https://huggingface.co/kabirgupta/hybrid-baseline-2024",
+  "created_at": "2026-10-13T01:22:50.000Z",
+  "updated_at": "2026-10-13T01:22:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kabirgupta (Kabir F. Gupta) - Hugging Face",
+      "url": "https://huggingface.co/kabirgupta/models",
+      "snippet": "llm, deep learning, embedding, vector databases Recent Activity updated a modelabout 11 hours ago kabirgupta/hybrid-baseline-2024 published a modelabout 11 hours ago kabirgupta/hybrid-baseline-2024 upvoted a paper about 11 hours ago LimiX-2: A Contextual Mechanism Network Towards General Structured-Data Intelligence View all activity"
+    },
+    {
+      "title": "LLM Leaderboard: AI Model Rankings & Pricing | llmboard.ai",
+      "url": "https://www.llmboard.ai/",
+      "snippet": "Explore the LLM leaderboard to compare the best AI models across capability, pricing and LLM benchmarks. Find the best LLM for coding, reasoning and more."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 895 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Project HydraFusion: Frontier quality via multi-model orchestration",
+      "url": "https://github.blog/ai-and-ml/github-copilot/project-hydrafusion-frontier-quality-via-multi-model-orchestration/",
+      "snippet": "Providing developers the best model for the task at hand has always been our goal. Earlier this year, we made that easier by launching Auto model selection, which reviews your task and matches it to the best-suited model for that task. Today, we&#x27;re introducing Project HydraFusion, a research preview that delivers frontier intelligence through runtime orchestration. It creates a full ..."
+    }
+  ]
+}

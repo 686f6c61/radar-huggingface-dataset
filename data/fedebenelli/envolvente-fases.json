@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "fedebenelli/envolvente-fases",
+  "slug": "fedebenelli-envolvente-fases",
+  "author": "fedebenelli",
+  "url": "https://huggingface.co/fedebenelli/envolvente-fases",
+  "created_at": "2026-10-13T18:26:19.000Z",
+  "updated_at": "2026-10-13T18:26:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fiction: Holly's Home Invasion Ch 1, Young Adult | FictionPress",
+      "url": "https://m.fictionpress.com/s/1813303/1/Holly-s-Home-Invasion",
+      "snippet": "Part 1 I suppose I ought to start by telling you a little something about myself. My name is Holly Butler. I'm 44 years old, I'm divorced …"
+    },
+    {
+      "title": "JEKrug01 User Profile | DeviantArt",
+      "url": "https://www.deviantart.com/jekrug01/favourites/38441118/cheerleaders-bound",
+      "snippet": "AT3 Blindfolded Cheerleader Kidnapped after cheer practice - bondage story Cheerleader girl hogtied in locker room bondage Rivals …"
+    },
+    {
+      "title": "Cheerleader Books - Goodreads",
+      "url": "https://www.goodreads.com/shelf/show/cheerleader",
+      "snippet": "Books shelved as cheerleader: The Dixon Rule by Elle Kennedy, The Rivalry by Nikki Sloane, Reckless Love by Willow Aster, Home …"
+    },
+    {
+      "title": "Women Who Were Abducted and Held Captive, But Later Escaped",
+      "url": "https://www.aetv.com/articles/female-abduction-stories",
+      "snippet": "Feb 23, 2021 · Women Who Were Abducted and Held Captive, But Later Escaped From Mary Stauffer to Colleen Stan to Elizabeth …"
+    },
+    {
+      "title": "Cheer Stories - Wattpad",
+      "url": "https://www.wattpad.com/stories/cheer",
+      "snippet": "She thought she was just a side character in someone else's love story - until he showed up with a playbook of his own. Ava, the …"
+    }
+  ]
+}

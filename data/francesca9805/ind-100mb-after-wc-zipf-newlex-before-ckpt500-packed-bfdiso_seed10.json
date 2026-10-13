@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "francesca9805/ind-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "slug": "francesca9805-ind-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "author": "francesca9805",
+  "url": "https://huggingface.co/francesca9805/ind-100mb-after-wc-zipf-newlex-before-ckpt500-packed-bfdiso_seed10",
+  "created_at": "2026-10-13T15:57:28.000Z",
+  "updated_at": "2026-10-13T18:12:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:francesca9805/ppt-wc-zipf-newlex-ind-before-100mb-packed-bfdiso_seed10",
+    "base_model:finetune:francesca9805/ppt-wc-zipf-newlex-ind-before-100mb-packed-bfdiso_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 10732696384,
+  "storage_human": "10.7 GB",
+  "base_model": "francesca9805/ppt-wc-zipf-newlex-ind-before-100mb-packed-bfdiso_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shape of Beauty – 1 videos – xxdbx",
+      "url": "https://xxdbx.com/channels/Shape%20of%20Beauty",
+      "snippet": "Home Most Popular Videos Shape of Beauty – 1 videos 38:08"
+    },
+    {
+      "title": "Gay Porn, Free Gay XXX Videos @ Gay0Day",
+      "url": "https://gay0day.com/categories/",
+      "snippet": ""
+    },
+    {
+      "title": "Pornhub Sexual Wellness Center –",
+      "url": "https://www.pornhub.com/sex/",
+      "snippet": "Welcome to the Pornhub Sexual Wellness Center! Here you will find information on a wide range of topics pertaining to love, …"
+    },
+    {
+      "title": "XXX - Girl-Girl by tradclimber | Discogs Lists",
+      "url": "https://www.discogs.com/lists/XXX-Girl-Girl/407084",
+      "snippet": "Music For Sexual Parties... The Funny Edition."
+    },
+    {
+      "title": "CAM4: Free Live Sex Cams, Sex Chat Rooms and Live Porn",
+      "url": "https://es.cam4.com/",
+      "snippet": "Join thousands of naked cam girls ready for adult chat and private shows. Free registration gets you instant access to our adult …"
+    }
+  ]
+}

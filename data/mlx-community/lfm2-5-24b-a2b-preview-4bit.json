@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mlx-community/LFM2.5-24B-A2B-Preview-4bit",
+  "slug": "mlx-community-lfm2-5-24b-a2b-preview-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-4bit",
+  "created_at": "2026-10-13T18:31:59.000Z",
+  "updated_at": "2026-10-13T18:32:08.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 13505055917,
+  "storage_human": "13.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mlx-community/LFM2-24B-A2B-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LFM2-24B-A2B-4bit",
+      "snippet": "mlx-community/LFM2-24B-A2B-4bit This model mlx-community/LFM2-24B-A2B-4bit was converted to MLX format from LiquidAI/LFM2-24B-A2B using mlx-lm version 0.30.8. Use ..."
+    },
+    {
+      "title": "Models — MLX weights, ready to run — MLX COMMUNITY",
+      "url": "https://mlxcommunity.com/models",
+      "snippet": "Download MLX-ready model weights for Apple Silicon. Every entry links back to its upstream source."
+    },
+    {
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "snippet": "Today, we release LFM2.5-24B-A2B, a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now spans two orders of magnitude: from LFM2.5-230M to LFM2.5-24B-A2B."
+    },
+    {
+      "title": "LiquidAI/LFM2-24B-A2B-MLX-4bit · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-4bit",
+      "snippet": "LFM2-24B-A2B-MLX-4bit MLX export of LFM2-24B-A2B for Apple Silicon inference. Model Details ... Recommended Sampling Parameters ... Use with mlx ... License This model is released under the LFM 1.0 License."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

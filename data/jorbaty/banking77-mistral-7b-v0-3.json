@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jorbaty/banking77-mistral-7b-v0.3",
+  "slug": "jorbaty-banking77-mistral-7b-v0-3",
+  "author": "Jorbaty",
+  "url": "https://huggingface.co/Jorbaty/banking77-mistral-7b-v0.3",
+  "created_at": "2026-10-13T18:41:09.000Z",
+  "updated_at": "2026-10-13T19:09:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "banking77",
+    "intent-classification",
+    "qlora",
+    "bf16",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496080944,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mistralai/Mistral-7B-v0.3 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-v0.3",
+      "snippet": "It is recommended to use mistralai/Mistral-7B-v0.3 with mistral-inference. For HF transformers code snippets, please keep scrolling ..."
+    },
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.3 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-3",
+      "snippet": "A minor update to our first open model."
+    },
+    {
+      "title": "Mistral 7B",
+      "url": "https://mistral.ai/news/announcing-mistral-7b/",
+      "snippet": "The best 7B model to date, Apache 2.0 Mistral 7B uses a sliding window attention (SWA) mechanism (Child et al., Beltagy et al.), in which each layer attends to the previous 4,096 hidden states. The main improvement, and reason for which this was initially investigated, is a linear compute cost of O (sliding_window.seq_len). In practice, changes made to FlashAttention and xFormers yield a 2x ..."
+    },
+    {
+      "title": "Install mistral-7B-v0.3 locally - GitHub",
+      "url": "https://github.com/thekester/mistrallocal",
+      "snippet": "This project uses the Mistral model to generate responses based on text prompts. The script uses tqdm to display the progress of token generation. Download the models from Mistral AI Models. For example, to download Mistral-7B-v0.3 (note that the TAR file is 17 GB): wget https://models.mistralcdn ..."
+    }
+  ]
+}

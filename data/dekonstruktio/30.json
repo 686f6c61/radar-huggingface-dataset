@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Dekonstruktio/30",
+  "slug": "dekonstruktio-30",
+  "author": "Dekonstruktio",
+  "url": "https://huggingface.co/Dekonstruktio/30",
+  "created_at": "2026-10-13T02:02:59.000Z",
+  "updated_at": "2026-10-13T09:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 517287186,
+  "storage_human": "517 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HiDream-ai/HiDream-I1-Full - Hugging Face",
+      "url": "https://huggingface.co/HiDream-ai/HiDream-I1-Full",
+      "snippet": "08.04.2025 ... Model tree for HiDream-ai/HiDream-I1-Full. Adapters. 30 models. Finetunes. 13 models. Quantizations. 5 models ... Dekonstruktio/Fluxus · ♨️♨️ ..."
+    },
+    {
+      "title": "Künstliche Intelligenz und Erwachsenenbildung. - peDOCS",
+      "url": "https://www.pedocs.de/zeitschriften.php?zst=4208-2025-55",
+      "snippet": "30.06.2025 ... 30). In der englischsprachigen Bildungsdebatte wird dies ... Because it can be assumed that training data for AI models is imbalanced,."
+    },
+    {
+      "title": "Soziologie der Künstlichen Intelligenz - transcript Verlag",
+      "url": "https://www.transcript-verlag.de/shopMedia/openaccess/pdf/oa9783839474112.pdf",
+      "snippet": "30, S. 260–261. Burrell, Jenna (2016): »How the machine ›thinks ... Holzinger, Andreas (2018): »Explainable AI (ex-AI)«, in: Informatik-Spektrum."
+    },
+    {
+      "title": "Künstliche Intelligenz aktiv mitgestalten: Eine kritische Analyse von ...",
+      "url": "https://journals.univie.ac.at/index.php/mp/article/view/10701/10943",
+      "snippet": "process model DASC-PM. The identified structural gaps manifest in four ... Age of AI: An AI Literacy Framework for Primary and Secondary Edu- cation ..."
+    },
+    {
+      "title": "An AI-based Co-Pilot for Context-Informed Architectural Design - K1TV",
+      "url": "https://www.k1.live/work/generating-non-orthogonal-spatial-building-typologies-using-graph-neural-networks-an-ai-based-co-pilot-for-context-informed-architectural-design/",
+      "snippet": "The proposed approach employs Graph Neural Networks (GNNs) and Deep Generative Models of Graphs (DGMG), which overcome the limitations inherent to conventional ..."
+    }
+  ]
+}

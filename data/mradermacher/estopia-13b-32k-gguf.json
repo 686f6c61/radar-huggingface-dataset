@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Estopia-13B-32k-GGUF",
+  "slug": "mradermacher-estopia-13b-32k-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Estopia-13B-32k-GGUF",
+  "created_at": "2026-10-13T02:00:11.000Z",
+  "updated_at": "2026-10-13T02:48:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama2",
+    "rope",
+    "yarn",
+    "en",
+    "base_model:pinkachu/Estopia-13B-32k",
+    "base_model:quantized:pinkachu/Estopia-13B-32k",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 94,
+  "trending_score": 0,
+  "parameters": 13015864320,
+  "parameters_human": "13.02B",
+  "storage_bytes": 88801925472,
+  "storage_human": "88.8 GB",
+  "base_model": "pinkachu/Estopia-13B-32k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Megathread] - Best Models/API discussion - Week of: April 14, 2025",
+      "url": "https://www.reddit.com/r/SillyTavernAI/comments/1jysb6k/megathread_best_modelsapi_discussion_week_of/",
+      "snippet": "14.04.2025 ... 1, Manticore 13b Chat Pyg, 3.1 Dark Reasoning Super Nova RP Hermes r1 Uncensored 8b, glacier o1, and Estopia 13b) all either formatted the ..."
+    },
+    {
+      "title": "koboldcpp-colab-unofficial-with-ngrok.severian.dev.ipynb",
+      "url": "https://colab.research.google.com/drive/1g41PDb9Bck-3VI6yRZ_1M727yL05gZY8?usp=sharing",
+      "snippet": "This is unofficial colab that use Hibikiass model list. because official one only support huggingface model link which most ppl found it harder to use. Visual ..."
+    }
+  ]
+}

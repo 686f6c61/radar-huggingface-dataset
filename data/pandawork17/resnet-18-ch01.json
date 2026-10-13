@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pandawork17/resnet-18-ch01",
+  "slug": "pandawork17-resnet-18-ch01",
+  "author": "pandawork17",
+  "url": "https://huggingface.co/pandawork17/resnet-18-ch01",
+  "created_at": "2026-10-13T01:16:25.000Z",
+  "updated_at": "2026-10-13T01:41:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "resnet",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 11699112,
+  "parameters_human": "11.7M",
+  "storage_bytes": 1479376636,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pandawork17/resnet-18-ch01 · Hugging Face",
+      "url": "https://huggingface.co/pandawork17/resnet-18-ch01",
+      "snippet": "pandawork17 / resnet-18-ch01 Like 0 Safetensors GGUF resnet conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - VincyJovitha01/Image-Classification-using-Resnet18",
+      "url": "https://github.com/VincyJovitha01/Image-Classification-using-Resnet18",
+      "snippet": "This project builds an image classification model to identify whether an image belongs to a cat, dog, or panda using transfer learning with ResNet18 in PyTorch. We leverage a pre-trained model on ImageNet and fine-tune its final layers to adapt it for this 3-class classification task."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?search=resnet18",
+      "snippet": "Explore machine learning models. nateraw/resnet18-cats_vs_dogs-2021-11-15-184405"
+    },
+    {
+      "title": "6. Resnet18 network - PyTorch — [Embedfire]Practical Guide to Python ...",
+      "url": "https://doc.embedfire.com/linux/rk356x/Python/en/latest/ai/resnet18_pytorch.html",
+      "snippet": "6. Resnet18 network - PyTorch ¶ ResNet18 is a convolutional neural network, which has 18 layers of depth, including a heavy convolutional layer and full connection layer with weights. It is a variant of the RESNET series network, using the residual connection to solve the degradation problem of the deep network. This chapter will briefly introduce PyTorch and the installation environment ..."
+    },
+    {
+      "title": "GitHub - STMicroelectronics/stm32ai-modelzoo: AI Model Zoo for STM32 ...",
+      "url": "https://github.com/STMicroelectronics/stm32ai-modelzoo",
+      "snippet": "The STM32 AI model zoo is a collection of reference machine learning models that are optimized to run on STM32 microcontrollers. Available on GitHub, this is a valuable resource for anyone looking to add AI capabilities to their STM32-based projects. A large collection of application-oriented models ready for re-training Pre-trained models on reference datasets, available across several ..."
+    }
+  ]
+}

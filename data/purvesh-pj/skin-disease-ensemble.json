@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "purvesh-pj/skin-disease-ensemble",
+  "slug": "purvesh-pj-skin-disease-ensemble",
+  "author": "purvesh-pj",
+  "url": "https://huggingface.co/purvesh-pj/skin-disease-ensemble",
+  "created_at": "2026-10-13T18:22:07.000Z",
+  "updated_at": "2026-10-13T18:41:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "keras",
+    "medical",
+    "dermatology",
+    "skin-disease",
+    "ensemble",
+    "resnet101",
+    "densenet121",
+    "efficientnetb3",
+    "image-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395768224,
+  "storage_human": "396 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Purvesh-PJ/skin_disease_detection - GitHub",
+      "url": "https://github.com/Purvesh-PJ/skin_disease_detection",
+      "snippet": "A web-based system to detect skin diseases from images using deep learning. The project uses ensemble learning with CNN architectures to improve diagnostic accuracy. Users can upload a skin image, and the backend uses three trained CNNs (EfficientNetB3, ResNet101, DenseNet121) to classify it. The ..."
+    },
+    {
+      "title": "vanshg1909/skin-disease-classification - GitHub",
+      "url": "https://github.com/vanshg1909/skin-disease-classification",
+      "snippet": "This project implements a multi-model ensemble approach for skin disease classification from dermoscopic images. Eight individual CNN architectures are trained independently and their predictions are averaged to produce a robust final classification. Particle Swarm Optimization (PSO) is explored for ..."
+    },
+    {
+      "title": "An Ensemble Model of Skin Disease Detection Using CNN and Transfer ...",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-031-51338-1_27",
+      "snippet": "The results show that the proposed ensemble model outperforms individual CNN architectures and other state-of-the-art skin disease detection models. The main objective of the project is to create an application that helps in identifying the kind of skin disease easily."
+    },
+    {
+      "title": "PDF An ensemble deep learning framework for skin disease classification ...",
+      "url": "https://link.springer.com/content/pdf/10.1007/s44163-026-01218-y.pdf",
+      "snippet": "The model will therefore be discriminative and generative to provide predictions and information to the user. The model has shown the efficiency of the use of ensemble deep learning and generative AI in designing an intelligent health assistance system for the analysis of skin diseases."
+    },
+    {
+      "title": "PDF Skin Disease Detection Using Ensemble Learning",
+      "url": "https://www.ijarsct.co.in/A22639.pdf",
+      "snippet": "However, the process of diagnosing skin conditions often requires specialized dermatological expertise, which can be time-consuming and expensive. To address this challenge, we have developed a web-based Skin Disease Detection System using cutting-edge machine learning and ensemble techniques."
+    }
+  ]
+}

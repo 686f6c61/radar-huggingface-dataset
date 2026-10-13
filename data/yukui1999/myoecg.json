@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Yukui1999/MyoECG",
+  "slug": "yukui1999-myoecg",
+  "author": "Yukui1999",
+  "url": "https://huggingface.co/Yukui1999/MyoECG",
+  "created_at": "2026-10-13T17:02:21.000Z",
+  "updated_at": "2026-10-13T17:02:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pulse - T:>Works",
+      "url": "https://archive-tworks.org/pulse/",
+      "snippet": "As you experience the journey, have your electrocardiogram (ECG) taken, and literally contribute your pulse to the sound design of Pulse. Tags. Genre:>. Live ..."
+    },
+    {
+      "title": "KARDİYOJENİK ŞOK - Türk Kalp ve Damar Cerrahisi Derneği",
+      "url": "https://www.tkdcd.org/public/uploads/books/Kardiyojenik%20Sok-1.pdf",
+      "snippet": "10.10.2022 ... in a porcine model of cardiogenic shock. J Transl Med 2015;13 ... AI, et al. The registry of the International Society for Heart and ..."
+    },
+    {
+      "title": "Turkish Journal of Cardiovascular Nursing - Türk Kardiyoloji Derneği",
+      "url": "https://khd.tkd.org.tr/book/v17.i43.pdf?a=1234",
+      "snippet": "AI-assisted technology (including large language models, chatbots, or image ... 1999;53(2):105-111. [CrossRef]. 14. Gökdoğan F, Kır E, Özcan A, Cerit B ..."
+    },
+    {
+      "title": "14. Tıp Bilişimi Kongresi Bildiriler Kitabı",
+      "url": "https://turkmia.net/TurkMIA2023-Proceedings.pdf",
+      "snippet": "18.03.2023 ... the field of AI that provides explanations for the AI model's decision. ... 1999; 53: 105-111. 6. Kunze KN, Krivicich LM, Verma NN and ..."
+    },
+    {
+      "title": "Oral Presentation Session Surgical Alternatives for Atrial Fibrillation",
+      "url": "https://www.jucvm.com/pdf/bfe6b059-1982-481c-8e2f-073cbc0b054a/issues/2019-007-001-supplement.pdf",
+      "snippet": "... ECG and the beginning of the systolic wave (Sm) on TDI was used to evaluate ... model and five point scale via Cedars-Sinai myocardial imaging software ..."
+    }
+  ]
+}

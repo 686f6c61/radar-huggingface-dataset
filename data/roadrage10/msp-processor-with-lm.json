@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "roadrage10/MSP-Processor-With-LM",
+  "slug": "roadrage10-msp-processor-with-lm",
+  "author": "roadrage10",
+  "url": "https://huggingface.co/roadrage10/MSP-Processor-With-LM",
+  "created_at": "2026-10-13T02:06:46.000Z",
+  "updated_at": "2026-10-13T02:06:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "processor",
+    "custom_code",
+    "msp",
+    "beam-search",
+    "language-model",
+    "3-gram",
+    "pyctcdecode",
+    "kenlm",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:MahmoodAnaam/LRS2-Text",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mechrevo prepares RTX Spark mini PC with AI SSD to extend memory ...",
+      "url": "https://videocardz.com/newz/mechrevo-prepares-rtx-spark-mini-pc-with-ai-ssd-to-extend-memory-capacity",
+      "snippet": "Mechrevo is preparing the Master Road X10 mini PC with NVIDIA RTX Spark. Its independently developed AI SSD reportedly supports offloading large AI models from DRAM to NAND."
+    },
+    {
+      "title": "Mechrevo Master Road X10 RTX Spark Mini PC Claims 122B Local AI Models ...",
+      "url": "https://windowsforum.com/news/mechrevo-master-road-x10-rtx-spark-mini-pc-claims-122b-local-ai-models-via-ai-ssd.448069/",
+      "snippet": "Mechrevo&#x27;s announced Master Road X10 uses an AI SSD to offload large models, but memory options, benchmarks, price and release date remain unconfirmed."
+    },
+    {
+      "title": "RTX Spark mini PC promises to overcome memory limitations using ...",
+      "url": "https://www.notebookcheck.net/RTX-Spark-mini-PC-promises-to-overcome-memory-limitations-using-Mechrevo-s-unusual-AI-SSD.1422107.0.html",
+      "snippet": "Mechrevo&#x27;s upcoming Master Road X10 mini PC combines Nvidia RTX Spark hardware with proprietary AI SSD technology. The manufacturer claims the technology can accommodate AI models with up to 122 ..."
+    },
+    {
+      "title": "MahmoodAnaam/MSP-Processor-With-LM · Discussions",
+      "url": "https://huggingface.co/MahmoodAnaam/MSP-Processor-With-LM/discussions",
+      "snippet": "Instructions to use MahmoodAnaam/MSP-Processor-With-LM with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Nvidia RTX Spark Laptops: 128GB Memory, 1 Petaflop AI [2026]",
+      "url": "https://tech-insider.org/nvidia-rtx-spark-ai-pc-launch-2026/",
+      "snippet": "Nvidia RTX Spark laptops bring up to 128GB unified memory and 1 petaflop FP4 AI compute to slim Windows machines shipping fall 2026 from six OEM partners."
+    }
+  ]
+}

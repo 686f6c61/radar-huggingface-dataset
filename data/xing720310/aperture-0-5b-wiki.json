@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "xing720310/aperture-0.5b-wiki",
+  "slug": "xing720310-aperture-0-5b-wiki",
+  "author": "xing720310",
+  "url": "https://huggingface.co/xing720310/aperture-0.5b-wiki",
+  "created_at": "2026-10-13T18:29:44.000Z",
+  "updated_at": "2026-10-13T18:30:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6292099761,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cinémas Pathé : films, sortie cinéma à Paris et en France",
+      "url": "https://www.pathe.fr/",
+      "snippet": "Tous les films à l'affiche dans les cinémas Pathé. Vivez la meilleure expérience cinéma possible avant, pendant et après la séance."
+    },
+    {
+      "title": "Cinéma à Marseille : salles de cinéma Pathé, films à l'affiche",
+      "url": "https://www.pathe.fr/cinemas/ville/marseille",
+      "snippet": "Vous pouvez aller au Pathé La Joliette situé dans le quartier des Docks, ou au Pathé Plan de Campagne, accessible au nord de …"
+    },
+    {
+      "title": "Pathé",
+      "url": "https://www.pathe.com/fr/",
+      "snippet": "Fondation Jérôme Seydoux-Pathé Un bâtiment d’une grande richesse architecturale et patrimoniale abrite les plus belles collections …"
+    },
+    {
+      "title": "Pathé - Nos cinémas",
+      "url": "https://www.pathe.com/fr/cinemas/",
+      "snippet": "Créateur de cinéma d’émotions, Pathé s’efforce d’entretenir la magie du cinéma tout autour du monde, grâce à des collaborations …"
+    },
+    {
+      "title": "Cinéma Pathé Marseille - Madeleine à Marseille (13004 ... - AlloCiné",
+      "url": "https://www.allocine.fr/seance/salle_gen_csalle=P0018.html",
+      "snippet": "Achetez et réservez votre e-ticket pour le cinéma Pathé Marseille - Madeleine sur AlloCiné."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "austinitaylor92/cs229-contrastive",
+  "slug": "austinitaylor92-cs229-contrastive",
+  "author": "austinitaylor92",
+  "url": "https://huggingface.co/austinitaylor92/cs229-contrastive",
+  "created_at": "2026-10-13T18:30:44.000Z",
+  "updated_at": "2026-10-13T18:30:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sachinpiyer/cs229-contrastive · Hugging Face",
+      "url": "https://huggingface.co/sachinpiyer/cs229-contrastive",
+      "snippet": "sachinpiyer / cs229-contrastive Like 0 Safetensors PyTorch tiny_transformer tiny-transformer contrastive License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Tiny Transformer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "nycvictoria/cs229-contrastive · Hugging Face",
+      "url": "https://huggingface.co/nycvictoria/cs229-contrastive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PDF CS229 Lecture Notes - cs229.stanford.edu",
+      "url": "https://cs229.stanford.edu/notes2026spring/main_notes.pdf",
+      "snippet": "3.2 Constructing GLMs Suppose you would like to build a model to estimate the number y of cus-tomers arriving in your store (or number of page-views on your website) in any given hour, based on certain features x such as store promotions, recent advertising, weather, day-of-week, etc."
+    },
+    {
+      "title": "CS 229: Machine Learning (Course handouts) - cs229.stanford.edu",
+      "url": "https://cs229.stanford.edu/materials.html-full",
+      "snippet": "Lecture notes 1 (ps) (pdf) Supervised Learning, Discriminative Algorithms Lecture notes 2 (ps) (pdf) Generative Algorithms Lecture notes 3 (ps) (pdf) Support Vector Machines Lecture notes 4 (ps) (pdf) Learning Theory Lecture notes 5 (ps) (pdf) Regularization and Model Selection Lecture notes 6 (ps) (pdf) Online Learning and the Perceptron Algorithm. (optional reading) Lecture notes 7a (ps ..."
+    },
+    {
+      "title": "[2609.22175] Contrastive World Models - arXiv.org",
+      "url": "https://arxiv.org/abs/2609.22175",
+      "snippet": "World models trained via pixel reconstruction can struggle in visually complex environments, where irrelevant information dominates the objective and distract the model from information relevant to planning and control. We present Contrastive World Models, an approach for learning latent dynamics models without pixel reconstruction. Building on Dreamer, we replace observation reconstruction in ..."
+    }
+  ]
+}

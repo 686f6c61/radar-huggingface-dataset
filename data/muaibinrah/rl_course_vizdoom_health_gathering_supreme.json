@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "muaibinrah/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "muaibinrah-rl_course_vizdoom_health_gathering_supreme",
+  "author": "muaibinrah",
+  "url": "https://huggingface.co/muaibinrah/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-10-13T01:31:24.000Z",
+  "updated_at": "2026-10-13T01:31:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112033758,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La sanction en cas de fraude - إسلام ويب",
+      "url": "https://islamweb.net/fr/fatwa/87677/La-sanction-en-cas-de-fraude",
+      "snippet": "Apr 12, 2017 · Considérée comme un péché majeur, la fraude entraîne des conséquences à la fois dans ce monde et dans l’audelà. …"
+    },
+    {
+      "title": "Le Hadith de la semaine (n°84) - La fraude et les manifestations de la ...",
+      "url": "https://www.grandemosqueedeparis.fr/post/le-hadith-de-la-semaine-n-84-la-fraude-et-les-manifestations-de-la-corruption-sociale",
+      "snippet": "Dec 1, 2025 · Lorsque les hommes sont trompés dans leurs transactions, leur sécurité morale s’effondre, et l’espace social se …"
+    },
+    {
+      "title": "La fraude décriée par les hadiths | vitaminedz.com",
+      "url": "https://www.vitaminedz.com/fr/Algerie/la-fraude-decriee-par-les-hadiths-536601-Articles-0-18300-1.html",
+      "snippet": "En voici un panorama de hadiths qui traite des aspects de la fraude et de la corruption et de leur interdiction :"
+    },
+    {
+      "title": "Falsifier les documents et donner de fausses informations",
+      "url": "https://islamweb.net/fr/fatwa/104927/Falsifier-les-documents-et-donner-de-fausses-informations",
+      "snippet": "Feb 17, 2008 · L'homme ne cesse de mentir jusqu'à ce qu'on le mentionne auprès d’Allah sous le nom de menteur. » (Rapporté par …"
+    },
+    {
+      "title": "(PDF) Concept of Fraud in Islamic Law - ResearchGate",
+      "url": "https://www.researchgate.net/publication/341785259_Concept_of_Fraud_in_Islamic_Law",
+      "snippet": "Nov 1, 2015 · Muslims are required to lead every aspect of their lives honestly and truthfully at all times. The stern prohibition against …"
+    }
+  ]
+}

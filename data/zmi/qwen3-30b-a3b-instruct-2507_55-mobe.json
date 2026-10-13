@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE",
+  "slug": "zmi-qwen3-30b-a3b-instruct-2507_55-mobe",
+  "author": "zmi",
+  "url": "https://huggingface.co/zmi/Qwen3-30B-A3B-Instruct-2507_55-MoBE",
+  "created_at": "2026-10-13T01:15:34.000Z",
+  "updated_at": "2026-10-13T01:16:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 19887372288,
+  "parameters_human": "19.89B",
+  "storage_bytes": 39788713230,
+  "storage_human": "39.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3-30B-A3B-Instruct-2507 · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3-30B-A3B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "qwen3-30b-a3b-instruct-2507/README.md at main - GitHub",
+      "url": "https://github.com/inferless/Qwen3-30B-A3B-Instruct-2507/blob/main/README.md",
+      "snippet": "Qwen3-30B-A3B-Instruct-2507 is an open-source, 30.5B-parameter Mixture-of-Experts (MoE) large language model from Alibaba Cloud&#x27;s Qwen team, tuned for broad instruction following, reasoning, multilingual tasks, and agentic tool use. Its A3B configuration activates ~3.3B weights 8 of 128 experts at inference time, delivering MoE efficiency while retaining strong quality (e.g., GPQA 70.4 ..."
+    },
+    {
+      "title": "Qwen3-30B-A3B-Instruct-2507 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "snippet": "Qwen3-30B-A3B-Instruct-2507 - Qwen 在 ModelScope 开源的模型。"
+    },
+    {
+      "title": "qwen--qwen3-30b-a3b-instru... | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/qwen--qwen3-30b-a3b-instruct-2507",
+      "snippet": "Qwen3 30B-A3B instruction model for long-context reasoning and generation. Sign in to Microsoft Foundry to deploy this model."
+    }
+  ]
+}

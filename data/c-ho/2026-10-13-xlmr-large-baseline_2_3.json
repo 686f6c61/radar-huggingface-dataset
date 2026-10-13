@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "c-ho/2026-10-13-xlmr-large-baseline_2_3",
+  "slug": "c-ho-2026-10-13-xlmr-large-baseline_2_3",
+  "author": "c-ho",
+  "url": "https://huggingface.co/c-ho/2026-10-13-xlmr-large-baseline_2_3",
+  "created_at": "2026-10-13T02:09:28.000Z",
+  "updated_at": "2026-10-13T03:09:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 558874657,
+  "parameters_human": "558.9M",
+  "storage_bytes": 22377629174,
+  "storage_human": "22.4 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Saint-Germain-en-Laye — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Saint-Germain-en-Laye",
+      "snippet": "L'histoire de la ville de Saint-Germain-en-Laye a été longtemps liée à la présence du château, qui fut une résidence régulière des …"
+    },
+    {
+      "title": "Zone 4 des transports en commun d'Île-de-France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Zone_4_des_transports_en_commun_d%27%C3%8Ele-de-France",
+      "snippet": "La zone 4 est une zone du système tarifaire zonal concentrique utilisé par les transports en commun d'Île-de-France. La zone 4 a vu …"
+    },
+    {
+      "title": "Saint-Germain-en-Laye - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Saint-Germain-en-Laye",
+      "snippet": "Saint-Germain-en-Laye is famous for its 2.4-kilometre (1.5 mi) long stone terrace built by André Le Nôtre from 1669 to 1673. The …"
+    },
+    {
+      "title": "Changement à la tête du groupement de soutien de la base de …",
+      "url": "https://www.defense.gouv.fr/commissariat/actualites/changement-a-tete-du-groupement-soutien-base-defense-dile-france",
+      "snippet": "Feb 10, 2023 · C’est sous un beau soleil d’hiver qu’a eu lieu la passation de commandement de cet organisme bien particulier : …"
+    },
+    {
+      "title": "Née à Saint-Germain-en-Laye, on l’appelait - Actu",
+      "url": "https://actu.fr/ile-de-france/saint-germain-en-laye_78551/nee-a-saint-germain-en-laye-on-lappelait-la-grande-dame-de-lorgue-decouvrez-pourquoi_64915919.html",
+      "snippet": "1 hour ago · Une exposition consacrée à Marie-Claire Alain revient sur la vie et la carrière de cette organiste concertiste française …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xdfhg/Qwen3.8-27B-Uncensored-Cyber",
+  "slug": "xdfhg-qwen3-8-27b-uncensored-cyber",
+  "author": "xdfhg",
+  "url": "https://huggingface.co/xdfhg/Qwen3.8-27B-Uncensored-Cyber",
+  "created_at": "2026-10-13T18:30:55.000Z",
+  "updated_at": "2026-10-13T18:30:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "uncensored",
+    "abliterated",
+    "qwen3",
+    "cyber",
+    "image-text-to-text",
+    "conversational",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+    "base_model:finetune:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 55582997893,
+  "storage_human": "55.6 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "purified water in French | English to French Translation ...",
+      "url": "https://www.frenchdictionary.com/translate/purified%20water",
+      "snippet": "See authoritative translations of purified water in French with example sentences and audio pronunciations."
+    },
+    {
+      "title": "purified water - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/purified+water.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"purified water\" – Dictionnaire français-anglais et moteur de recherche …"
+    },
+    {
+      "title": "purified water - French translation – Linguee",
+      "url": "https://www.linguee.com/english-french/translation/purified+water.html",
+      "snippet": "Many translated example sentences containing \"purified water\" – French-English dictionary and search engine for French translations."
+    },
+    {
+      "title": "LANGWATER Système de Filtration d'eau & Minéralisation. Eau pure ...",
+      "url": "https://drinklang.com/fr",
+      "snippet": "Le système de filtration TheWell 2 combine osmose inverse, charbon actif, sédiments et UV pour éliminer plus de 1000 …"
+    },
+    {
+      "title": "Purify Waters® - Filtrez l'eau du robinet, en toute transparence -",
+      "url": "https://purify-waters.com/",
+      "snippet": "Buvez l'eau de chez vous les yeux fermés grâce une solution innovante et économique. Filtre la plupart des polluants présents grâce …"
+    }
+  ]
+}

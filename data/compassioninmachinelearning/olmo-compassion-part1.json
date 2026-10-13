@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo-compassion-part1",
+  "slug": "compassioninmachinelearning-olmo-compassion-part1",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1",
+  "created_at": "2026-10-13T01:51:41.000Z",
+  "updated_at": "2026-10-13T06:26:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597503529,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompassioninMachineLearning/olmo-compassion-part1 · Hugging Face",
+      "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1",
+      "snippet": "CompassioninMachineLearning / olmo-compassion-part1 Like 0 Follow Compassion aligned machine learning 35 Text Generation Transformers Safetensors English olmo3 text-generation-inference unsloth conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "CompassioninMachineLearning/olmo-compassion-part1 at main",
+      "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-part1/tree/main",
+      "snippet": "35 Safetensors olmo3 Model card FilesFiles and versions xet Community Copy to bucket new main olmo-compassion-part1 14.6 GB Ctrl+K Ctrl+K 1 contributor History:4 commits sparrow8i8 finalize log a3020e8 verifiedabout 5 hours ago build_logsfinalize logabout 5 hours ago evalAnchor eval: TAC (fixed, 52) + Betley + HarvestBench + retentionabout 5 ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Sanders calls for criminal prosecution of AI CEOs after model ... - MSN",
+      "url": "https://www.msn.com/en-us/news/other/sanders-calls-for-criminal-prosecution-of-ai-ceos-after-model-submitted-a-false-homicide-tip-to-police/ar-AA2dY50D",
+      "snippet": "Two-time presidential candidate Bernie Sanders made the statement after news emerged that an Anthropic AI model sent the Philadelphia Police Department a fake tip about an unsolved murder case."
+    },
+    {
+      "title": "Olmo from Ai2 - AllenAI",
+      "url": "https://allenai.org/olmo",
+      "snippet": "A complete model flow To truly advance open AI development and research, the entire model flow - not just its endpoint - should be accessible and customizable. The model flow is the full lifecycle of an LM, starting with the data. Olmo 3 Model Flow Pretraining Midtraining Long context Olmo 3 Base Instruct SFT Instruct DPO Instruct RL Olmo 3 Instruct Thinking SFT Thinking DPO Thinking RL ..."
+    }
+  ]
+}

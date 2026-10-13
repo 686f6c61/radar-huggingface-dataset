@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "coreymichaud/ev-predictor",
+  "slug": "coreymichaud-ev-predictor",
+  "author": "coreymichaud",
+  "url": "https://huggingface.co/coreymichaud/ev-predictor",
+  "created_at": "2026-10-13T18:23:31.000Z",
+  "updated_at": "2026-10-13T18:23:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - coreymichaud/will-you-buy-an-ev: An end-to-end machine ...",
+      "url": "https://github.com/coreymichaud/will-you-buy-an-ev",
+      "snippet": "An end-to-end machine learning project for predicting EV purchase likelihood, including data preprocessing, feature engineering, model training, and evaluation."
+    },
+    {
+      "title": "coreymichaud (Corey Michaud) · GitHub",
+      "url": "https://github.com/coreymichaud",
+      "snippet": "I build ML pipelines. coreymichaud has 11 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model posing as a human sent cops fake lead on unsolved ...",
+      "url": "https://www.nzherald.co.nz/world/anthropic-ai-model-posed-as-a-human-to-send-cops-fake-lead-on-unsolved-case/IXMDP546ORBZBARUB76UQCXGCM/",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said on Friday, criticising the company for taking ..."
+    },
+    {
+      "title": "AI model submits false tip on Philadelphia Police unsolved homicide case",
+      "url": "https://www.police1.com/artificial-intelligence/ai-model-submits-false-tip-on-philadelphia-police-unsolved-homicide-case",
+      "snippet": "NEW YORK — An Anthropic artificial intelligence model submitted a false tip to a Philadelphia police website about an unsolved homicide case, authorities and Anthropic said. It&#x27;s the latest example of AI models acting in unintended ways and manipulating government and other websites during tests ..."
+    }
+  ]
+}

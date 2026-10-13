@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "DmitryPorotnikov/Hemmingway-1-Extreme-MLX-8bit",
+  "slug": "dmitryporotnikov-hemmingway-1-extreme-mlx-8bit",
+  "author": "DmitryPorotnikov",
+  "url": "https://huggingface.co/DmitryPorotnikov/Hemmingway-1-Extreme-MLX-8bit",
+  "created_at": "2026-10-13T15:29:38.000Z",
+  "updated_at": "2026-10-13T15:37:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "qwen3.8",
+    "creative-writing",
+    "conversational",
+    "roleplay",
+    "abliterated",
+    "quantization",
+    "gguf-conversion",
+    "text-generation",
+    "en",
+    "base_model:JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF",
+    "base_model:quantized:JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28599738797,
+  "storage_human": "28.6 GB",
+  "base_model": "JohnDi/Hemmingway-1-Abliterated-Extreme-GGUF",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

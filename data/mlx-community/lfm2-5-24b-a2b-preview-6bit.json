@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mlx-community/LFM2.5-24B-A2B-Preview-6bit",
+  "slug": "mlx-community-lfm2-5-24b-a2b-preview-6bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-6bit",
+  "created_at": "2026-10-13T18:33:13.000Z",
+  "updated_at": "2026-10-13T18:33:23.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 19496619057,
+  "storage_human": "19.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Monster Animation Porn Porn Videos | Pornhub.com",
+      "url": "https://www.pornhub.com/video/search?search=monster+animation+porn",
+      "snippet": "Watch Monster Animation Porn porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most …"
+    },
+    {
+      "title": "3d Monster Animation Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=3d+monster+animation",
+      "snippet": "Watch 3d Monster Animation porn videos for free, here on Pornhub.com. Discover the growing collection of high quality Most …"
+    },
+    {
+      "title": "Monster Animation Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.org/video/search?search=monster+animation",
+      "snippet": "Schau' Monster Animation Pornos gratis, hier auf Pornhub.com. Entdecke die immer wachsende Sammlung von hoch qualitativen …"
+    },
+    {
+      "title": "'monster animation' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=monster+animation",
+      "snippet": "3D Porn animation Bloom Adventures, Episode II. Perfect body, monster cock, anal. Shifi story, baby destroyed, space mission. A …"
+    },
+    {
+      "title": "Animated Monster Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/animated+monster",
+      "snippet": "Watch animated monster porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kyraoki/chrome-extension-addons",
+  "slug": "kyraoki-chrome-extension-addons",
+  "author": "kyraoki",
+  "url": "https://huggingface.co/kyraoki/chrome-extension-addons",
+  "created_at": "2026-10-13T18:24:37.000Z",
+  "updated_at": "2026-10-13T18:53:47.000Z",
+  "license": "per-folder",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "browser",
+    "on-device",
+    "chrome-extension",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95018215,
+  "storage_human": "95 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malicious Chrome AI Extensions Attacking 260,000 Users via Injected IFrames",
+      "url": "https://cybersecuritynews.com/chrome-ai-extensions-attacking-users/",
+      "snippet": "Fake AI Chrome extensions are spying on 260,000+ users through injected remote iframes, stealing browser and Gmail data."
+    },
+    {
+      "title": "16 Malicious Chrome Add-ons Disguised As ChatGPT Enhancers Nab User Data",
+      "url": "https://cyberpress.org/16-malicious-chatgpt-extensions-exposed/",
+      "snippet": "A coordinated campaign of 16 malicious Chrome browser extensions masquerading as ChatGPT productivity boosters. These add-ons, marketed to enhance AI interactions, secretly steal users&#x27; ChatGPT session tokens, granting attackers full account access including conversation histories and connected data sources like Google Drive or GitHub. The extensions, all developed by the same threat actor ..."
+    },
+    {
+      "title": "Fake Perplexity AI Chrome extension discovered secretly monitoring ...",
+      "url": "https://www.gizmochina.com/2026/07/02/fake-perplexity-ai-chrome-extension-discovered-secretly-monitoring-search-activity/",
+      "snippet": "The extension asked for broad permissions that went way beyond what a normal search helper needs. It used \"chrome_settings_overrides\" to take over your default search engine."
+    },
+    {
+      "title": "Two Chrome Extensions Caught Stealing ChatGPT and DeepSeek Chats from ...",
+      "url": "https://thehackernews.com/2026/01/two-chrome-extensions-caught-stealing.html",
+      "snippet": "Security researchers found two Chrome extensions with 900,000 installs secretly collecting ChatGPT and DeepSeek chats and browsing data."
+    },
+    {
+      "title": "Fake Chrome AI extensions targeted over 300,000 users to ... - TechRadar",
+      "url": "https://www.techradar.com/pro/security/fake-chrome-ai-extensions-targeted-over-300-000-users-to-steal-emails-personal-data-and-more",
+      "snippet": "Pro Security Fake Chrome AI extensions targeted over 300,000 users to steal emails, personal data and more - here&#x27;s what we know"
+    }
+  ]
+}

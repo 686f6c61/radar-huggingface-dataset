@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "roadrage10/ModernBERT-large",
+  "slug": "roadrage10-modernbert-large",
+  "author": "roadrage10",
+  "url": "https://huggingface.co/roadrage10/ModernBERT-large",
+  "created_at": "2026-10-13T02:08:06.000Z",
+  "updated_at": "2026-10-13T02:08:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "masked-lm",
+    "long-context",
+    "en",
+    "arxiv:2412.13663",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 395881664,
+  "parameters_human": "395.9M",
+  "storage_bytes": 1583544840,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "answerdotai/ModernBERT-large · Hugging Face",
+      "url": "https://huggingface.co/answerdotai/ModernBERT-large",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "zeromodels/modernbert_large · Hugging Face",
+      "url": "https://huggingface.co/zeromodels/modernbert_large",
+      "snippet": "Instructions to use zeromodels/modernbert_large with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries KerasFormers How to use zeromodels/modernbert_large with KerasFormers:"
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "ModernBERT-large: Text-to-Text model — overview, use cases, alternatives",
+      "url": "https://www.aimodels.fyi/models/huggingFace/modernbert-large-answerdotai",
+      "snippet": "ModernBERT-large achieves better performance on English benchmarks. gte-modernbert-base: This Alibaba model is a text embedding model built atop a ModernBERT base backbone (149 million parameters) and optimized for retrieval tasks. It is smaller and retrieval-specialized compared to ModernBERT-large."
+    },
+    {
+      "title": "ModernBERT-large · Model · Inferix",
+      "url": "https://inferix.co/models/answerdotai/ModernBERT-large",
+      "snippet": "ModernBERT is a modernized bidirectional encoder-only Transformer model (BERT-style) pre-trained on 2 trillion tokens of English and code data with a native context length of up to 8,192 tokens.…"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth",
+  "slug": "hikaf143-keural-nova-v1-2-experimental-nvfp4-unsloth",
+  "author": "Hikaf143",
+  "url": "https://huggingface.co/Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth",
+  "created_at": "2026-10-13T01:52:11.000Z",
+  "updated_at": "2026-10-13T02:49:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "keural",
+    "keural-nova",
+    "mkd",
+    "nvfp4",
+    "fp4",
+    "fp8",
+    "mixed-precision",
+    "quantized",
+    "compressed-tensors",
+    "vllm",
+    "blackwell",
+    "moe",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:mkd-hossain/Keural-Nova-v1.2-experimental",
+    "base_model:quantized:mkd-hossain/Keural-Nova-v1.2-experimental",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 22171948400,
+  "parameters_human": "22.17B",
+  "storage_bytes": 24820346184,
+  "storage_human": "24.8 GB",
+  "base_model": "mkd-hossain/Keural-Nova-v1.2-experimental",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth · Hugging Face",
+      "url": "https://huggingface.co/Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth",
+      "snippet": "Instructions to use Hikaf143/Keural-Nova-v1.2-experimental-NVFP4-unsloth with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "mkd-ai/Keural-Nova-v1.2-experimental-NVFP4-unsloth · Hugging Face",
+      "url": "https://huggingface.co/mkd-ai/Keural-Nova-v1.2-experimental-NVFP4-unsloth",
+      "snippet": "Instructions to use mkd-ai/Keural-Nova-v1.2-experimental-NVFP4-unsloth with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Keural Nova v1.2 — NVFP4 quantization - GitHub",
+      "url": "https://github.com/mkd-hossain/Keural-Nova-v1.2-NVFP4",
+      "snippet": "Two NVFP4 (4-bit) quantizations of Keural Nova v1.2 for NVIDIA Blackwell + vLLM. Both are compressed-tensors (vLLM-native), produced with llm-compressor, keeping the vision tower + MTP (and, for unsloth, the linear-attention + router gates) in higher precision."
+    },
+    {
+      "title": "Keural-Nova-v1.2-NVFP4/README.md at main - GitHub",
+      "url": "https://github.com/mkd-hossain/Keural-Nova-v1.2-NVFP4/blob/main/README.md",
+      "snippet": "Keural Nova v1.2 — NVFP4 quantization Two NVFP4 (4-bit) quantizations of Keural Nova v1.2 for NVIDIA Blackwell + vLLM. Both are compressed-tensors (vLLM-native), produced with llm-compressor, keeping the vision tower + MTP (and, for unsloth, the linear-attention + router gates) in higher precision."
+    },
+    {
+      "title": "Keural-Nova-v1.2-experimental-NVFP4: Model Details, Context & Pricing ...",
+      "url": "https://essamamdani.com/ai-models/hf-mkd-hossain-keural-nova-v1-2-experimental-nvfp4",
+      "snippet": "Keural-Nova-v1.2-experimental-NVFP4 is an AI model record indexed from Hugging Face."
+    }
+  ]
+}

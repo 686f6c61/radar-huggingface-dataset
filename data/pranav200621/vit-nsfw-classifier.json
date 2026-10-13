@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "pranav200621/vit-nsfw-classifier",
+  "slug": "pranav200621-vit-nsfw-classifier",
+  "author": "pranav200621",
+  "url": "https://huggingface.co/pranav200621/vit-nsfw-classifier",
+  "created_at": "2026-10-13T16:46:56.000Z",
+  "updated_at": "2026-10-13T16:46:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stream comz music | Listen to songs, albums, playlists for free on ...",
+      "url": "https://soundcloud.com/comz",
+      "snippet": "Listen to comz | SoundCloud is an audio platform that lets you listen to what you love and share the sounds you create.Read more"
+    },
+    {
+      "title": "Xamoz - Streaming Films Linge Gratuit #1 en VF et VOSTFR",
+      "url": "https://xamoz.world/",
+      "snippet": "Xamoz est le meilleur site pour regarder des films en streaming gratuit en HD, VF et VOSTFR. Une vaste bibliothèque, une interface …"
+    },
+    {
+      "title": "Participer à la réunion | Zoom",
+      "url": "https://zoom.us/fr/join",
+      "snippet": "Participez à une réunion Zoom directement dans votre navigateur Web via un code de réunion ou un lien."
+    },
+    {
+      "title": "COZMAN (@cozman) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cozman/",
+      "snippet": "272K Followers, 843 Following, 200 Posts - See Instagram photos and videos from COZMAN (@cozman)"
+    },
+    {
+      "title": "Deezer - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Deezer",
+      "snippet": "Deezer is a French music streaming service and media service provider founded in 2007 that streams music, podcasts, and internet …"
+    }
+  ]
+}

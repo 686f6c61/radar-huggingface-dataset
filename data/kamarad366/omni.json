@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KAMARAD366/omni",
+  "slug": "kamarad366-omni",
+  "author": "KAMARAD366",
+  "url": "https://huggingface.co/KAMARAD366/omni",
+  "created_at": "2026-10-13T01:50:20.000Z",
+  "updated_at": "2026-10-13T01:50:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Editeur de logiciels IOBSP pour courtier en crédit immobilier",
+      "url": "https://www.crediteo.co/",
+      "snippet": "© 2025 CREDITEO | RCS NANCY 820552834 00021 - NAF 6201Z | PLAN DU SITE | CONTACT"
+    },
+    {
+      "title": "Connexion - Créditéo",
+      "url": "https://my.crediteo.co/",
+      "snippet": "Se souvenir de moi Connexion Mot de passe oublié © Créditéo 2026"
+    },
+    {
+      "title": "Créditéo - Brokia",
+      "url": "https://app.crediteo.co/",
+      "snippet": "Rester connecté Connexion"
+    },
+    {
+      "title": "Logiciel adapté au métier de courtier en prêt immobilier",
+      "url": "https://www.crediteo.co/produit/",
+      "snippet": "Une application dans le cloud simple et intuitive avec une prise en main rapide, vous êtes prêt à travailler et suivre vos dossiers en …"
+    },
+    {
+      "title": "Connexion / Déconnexion à mon espace Courtier - faq.crediteo.co",
+      "url": "https://faq.crediteo.co/se-connecter/",
+      "snippet": "Un appareil connecté Créditéo met en avant la sécurité de vos données et de votre connexion, ainsi, en cas de connexion …"
+    }
+  ]
+}

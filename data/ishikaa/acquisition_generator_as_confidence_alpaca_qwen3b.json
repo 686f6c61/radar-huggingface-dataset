@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_confidence_alpaca_qwen3b",
+  "slug": "ishikaa-acquisition_generator_as_confidence_alpaca_qwen3b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_confidence_alpaca_qwen3b",
+  "created_at": "2026-10-13T16:41:21.000Z",
+  "updated_at": "2026-10-13T16:45:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 59091622760,
+  "storage_human": "59.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opéra national de Paris",
+      "url": "https://www.operadeparis.fr/",
+      "snippet": "Le Palais Garnier et l’Opéra Bastille. Programmation, Billetterie, Informations pratiques."
+    },
+    {
+      "title": "Opéra national de Paris",
+      "url": "https://www.operadeparis.fr/en/",
+      "snippet": "For the third consecutive season, the Paris Opera is offering monthly encounters with artists to shed light on upcoming productions, …"
+    },
+    {
+      "title": "Opéra Garnier : programme et réservation - L'Officiel des spectacles",
+      "url": "https://www.offi.fr/theatre/opera-de-paris-palais-garnier-2879.html",
+      "snippet": "Sep 28, 2026 · Le palais Garnier est l'une des deux salles de l' Opéra national de Paris, qui abrite la compagnie française d'opéra et …"
+    },
+    {
+      "title": "Opéra de Paris - Toute la saison plusieurs dates | Billets sur Fnac ...",
+      "url": "https://www.fnacspectacles.com/artist/opera-de-paris-saison/",
+      "snippet": "18 hours ago · Réservez vos billets pour Opéra de Paris - Toute la saison sur Fnac Spectacles ! Consultez les dates, avis et …"
+    },
+    {
+      "title": "Opéra national de Paris — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Op%C3%A9ra_national_de_Paris",
+      "snippet": "Depuis la fin du XXe siècle, l'activité de l'Opéra de Paris s'organise entre les deux salles de l' opéra Garnier (inauguré en 1875) et de …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AndrewGarciacaf/coca-finetuned-2024",
+  "slug": "andrewgarciacaf-coca-finetuned-2024",
+  "author": "AndrewGarciacaf",
+  "url": "https://huggingface.co/AndrewGarciacaf/coca-finetuned-2024",
+  "created_at": "2026-10-13T01:19:59.000Z",
+  "updated_at": "2026-10-13T01:20:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AndrewGarciacaf (O. Reid) - Hugging Face",
+      "url": "https://huggingface.co/AndrewGarciacaf",
+      "snippet": "Hobbyist developer, occasional model trainer."
+    },
+    {
+      "title": "mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k —…",
+      "url": "https://modeldatabase.com/laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k.html",
+      "snippet": "laion/mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k is an open source image-to-text model built with open_clip, 84,868 downloads."
+    },
+    {
+      "title": "irambv05/coca-finetuned-2024 · Hugging Face",
+      "url": "https://huggingface.co/irambv05/coca-finetuned-2024",
+      "snippet": "irambv05 / coca-finetuned-2024 like 0 Safetensors PyTorch coca contrastive License:mit Model card FilesFiles and versions xet Community Copy to bucket new Coca for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "CoCa (finetuned) · Model card | CodeSOTA",
+      "url": "https://www.codesota.com/model/coca-finetuned",
+      "snippet": "Find current state-of-the-art AI models by task, benchmark, metric, source, and snapshot date. Human-readable pages and callable JSON for agents."
+    },
+    {
+      "title": "mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k",
+      "url": "https://www.promptlayer.com/models/mscocofinetunedcoca-vit-l-14-laion2b-s13b-b90k/",
+      "snippet": "What is mscoco_finetuned_CoCa-ViT-L-14-laion2B-s13B-b90k? This model represents a sophisticated vision-language model that combines the Contrastive Captioner (CoCa) architecture with the Vision Transformer (ViT) backbone, specifically fine-tuned on the MSCOCO dataset."
+    }
+  ]
+}

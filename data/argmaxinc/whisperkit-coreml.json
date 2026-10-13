@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "argmaxinc/whisperkit-coreml",
+  "slug": "argmaxinc-whisperkit-coreml",
+  "author": "argmaxinc",
+  "url": "https://huggingface.co/argmaxinc/whisperkit-coreml",
+  "created_at": "2024-02-28T08:05:21.000Z",
+  "updated_at": "2026-08-19T16:57:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [],
+  "tags": [
+    "whisperkit",
+    "coreml",
+    "whisper",
+    "asr",
+    "quantized",
+    "automatic-speech-recognition",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 249,
+  "downloads_30d": 11757408,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39537025848,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "argmaxinc/whisperkit-coreml · Hugging Face",
+      "url": "https://huggingface.co/argmaxinc/whisperkit-coreml",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - argmaxinc/argmax-oss-swift: On-device Speech AI for Apple ...",
+      "url": "https://github.com/argmaxinc/argmax-oss-swift",
+      "snippet": "On-device Speech AI for Apple Silicon. Contribute to argmaxinc/argmax-oss-swift development by creating an account on GitHub."
+    },
+    {
+      "title": "argmaxinc/whisperkit-coreml_01-30-24 · Hugging Face",
+      "url": "https://huggingface.co/argmaxinc/whisperkit-coreml_01-30-24",
+      "snippet": "A 100% qoi preserves perfect backwards-compatibility on the test distribution and avoids \"perceived regressions\", the phenomenon where per-example known behavior changes after a code/model update and causes divergence in downstream code or breaks the user experience itself (even if dataset averages might stay flat across updates)."
+    },
+    {
+      "title": "Argmax - Foundation Models On Device",
+      "url": "https://www.argmaxinc.com/",
+      "snippet": "The On-Device AI Platform The most reliable way for developers to run foundation models locally. Ship real-time, private, predictable AI with the Argmax SDK."
+    },
+    {
+      "title": "GitHub - Anureka-Inc/WhisperKit",
+      "url": "https://github.com/Anureka-Inc/WhisperKit",
+      "snippet": "Generating Models WhisperKit also comes with the supporting repo whisperkittools which lets you create and deploy your own fine tuned versions of Whisper in CoreML format to HuggingFace. Once generated, they can be loaded by simply changing the repo name to the one used to upload the model:"
+    }
+  ]
+}

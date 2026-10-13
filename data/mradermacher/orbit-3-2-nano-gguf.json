@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Orbit-3.2-Nano-GGUF",
+  "slug": "mradermacher-orbit-3-2-nano-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Orbit-3.2-Nano-GGUF",
+  "created_at": "2026-10-13T01:16:49.000Z",
+  "updated_at": "2026-10-13T01:27:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "id",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "indonesian",
+    "lfm2.5",
+    "liquid",
+    "fine-tuned",
+    "sft",
+    "instruction-tuning",
+    "closed-qa",
+    "reasoning",
+    "id",
+    "en",
+    "dataset:Irza/Dodol-15k-Indonesia",
+    "base_model:OpenPathAI/Orbit-3.2-Nano",
+    "base_model:quantized:OpenPathAI/Orbit-3.2-Nano",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 246,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 24326422400,
+  "storage_human": "24.3 GB",
+  "base_model": "OpenPathAI/Orbit-3.2-Nano",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Orbit-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Orbit-GGUF/tree/main",
+      "snippet": "mradermacher / Orbit-GGUF like 0 Transformers GGUF beyoru/claude-opus-5-xhigh-workload-agent Vietnamese English agent tool-use reasoning esft claude-opus-5 xhigh distillation coding terminal Mixture of Experts conversational License:mit Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher (team mradermacher) - Hugging Face",
+      "url": "https://huggingface.co/mradermacher",
+      "snippet": "Feel free to suggest models to quant e.g. at https://huggingface.co/mradermacher/model_requests"
+    },
+    {
+      "title": "Orbit Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/mradermacher/orbit-gguf",
+      "snippet": "Registry entry for model Orbit Gguf; source metadata pending."
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "Google models | Gemini Enterprise Agent Platform | Google Cloud ...",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/google-models",
+      "snippet": "Explore the Google models available in Gemini Enterprise Agent Platform, including featured, generally available, and preview Gemini, Gemma, Veo, and embedding models."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "id": "jitendra25/maya-models",
+  "slug": "jitendra25-maya-models",
+  "author": "jitendra25",
+  "url": "https://huggingface.co/jitendra25/maya-models",
+  "created_at": "2026-10-13T16:48:07.000Z",
+  "updated_at": "2026-10-13T16:49:25.000Z",
+  "license": "mixed-see-model-card",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "face-swap",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1576898157,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

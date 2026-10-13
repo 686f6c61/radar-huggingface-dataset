@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-44",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-00-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.00-seed-44",
+  "created_at": "2026-10-13T15:43:19.000Z",
+  "updated_at": "2026-10-13T15:43:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610538,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

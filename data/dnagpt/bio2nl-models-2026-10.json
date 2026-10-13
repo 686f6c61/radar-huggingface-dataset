@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dnagpt/bio2nl-models-2026-10",
+  "slug": "dnagpt-bio2nl-models-2026-10",
+  "author": "dnagpt",
+  "url": "https://huggingface.co/dnagpt/bio2nl-models-2026-10",
+  "created_at": "2026-10-13T10:13:14.000Z",
+  "updated_at": "2026-10-13T19:49:32.000Z",
+  "license": "asset-specific",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt2",
+    "protein-sequences",
+    "cross-domain-transfer",
+    "model-bank",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148439701426,
+  "storage_human": "148.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dnagpt/bio2nl-models-2026-10 · Hugging Face",
+      "url": "https://huggingface.co/dnagpt/bio2nl-models-2026-10",
+      "snippet": "It is separate from the older dnagpt/bio2nl-models repository. Data, source definitions, training code and per-seed result tables are in dnagpt/bio2nl-data-2026-10. Upload state: use publication_status.json to distinguish the planned catalog from weights already committed."
+    },
+    {
+      "title": "dnagpt/bio2nl-data-2026-10 · Datasets at Hugging Face",
+      "url": "https://huggingface.co/datasets/dnagpt/bio2nl-data-2026-10",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DNAGPT2: DNA & Gene model | bio.rodeo",
+      "url": "https://bio.rodeo/models/dnagpt2",
+      "snippet": "DNAGPT2 sits at the intersection of genomic language modeling and the long-standing field of reference-free DNA compression. Rather than competing with large multi-species foundation models on downstream classification, it shows that a single-GPU, GPT-2-scale model with carefully chosen tokenization is a competitive, practical DNA compressor."
+    },
+    {
+      "title": "AI Lab Model Releases & Frontier Company News: Live Tracker (2026)",
+      "url": "https://news.tunx.ai/ai-lab-model-releases-frontier-company-news-live-tracker-2026/",
+      "snippet": "What AI models were released this month? The current month&#x27;s releases are logged in the live feed at news.tunx.ai, structured by lab name, model name, release date, and a one-line capability summary."
+    },
+    {
+      "title": "DNAGPT: A Generalized Pre-trained Tool for Versatile DNA Sequence ...",
+      "url": "https://arxiv.org/abs/2307.05628",
+      "snippet": "Pre-trained large language models demonstrate potential in extracting information from DNA sequences, yet adapting to a variety of tasks and data modalities remains a challenge. To address this, we propose DNAGPT, a generalized DNA pre-training model trained on over 200 billion base pairs from all mammals. By enhancing the classic GPT model with a binary classification task (DNA sequence order ..."
+    }
+  ]
+}

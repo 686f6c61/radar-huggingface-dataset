@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "BOBBYBONKERSBFD/Sulphur-2-Prompt-Enhancer-Uncensored-GGUF",
+  "slug": "bobbybonkersbfd-sulphur-2-prompt-enhancer-uncensored-gguf",
+  "author": "BOBBYBONKERSBFD",
+  "url": "https://huggingface.co/BOBBYBONKERSBFD/Sulphur-2-Prompt-Enhancer-Uncensored-GGUF",
+  "created_at": "2026-10-13T01:35:49.000Z",
+  "updated_at": "2026-10-13T01:35:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen35",
+    "qwen3.5",
+    "prompt-enhancer",
+    "text-to-video",
+    "uncensored",
+    "sulphur",
+    "ltx",
+    "comfyui",
+    "lm-studio",
+    "multimodal",
+    "vision",
+    "text-generation",
+    "en",
+    "base_model:SulphurAI/Sulphur-2-base",
+    "base_model:quantized:SulphurAI/Sulphur-2-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 206,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 11994192576,
+  "storage_human": "12.0 GB",
+  "base_model": "SulphurAI/Sulphur-2-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Société AGCO S.A.S. (317358380) à BEAUVAIS (60000).",
+      "url": "https://www.societe.com/societe/agco-s-a-s-317358380.html",
+      "snippet": "Feb 1, 2024 · AGCO S.A.S. à BEAUVAIS (317358380). RCS, K-BIS, RNE, SIREN, SIRET, bilans, statuts, chiffre d'affaires, valeur, …Read more"
+    },
+    {
+      "title": "Siège social - AGCO S.A.S. à 60000 BEAUVAIS - SIRET 317 358 380 …",
+      "url": "https://annuaire-entreprises.data.gouv.fr/etablissement/31735838000077",
+      "snippet": "Il a été créé le 1 février 2024, il y a 3 ans. C’est le siège social de la société AGCO S.A.S., qui possède 6 autre (s) établissement (s). …"
+    },
+    {
+      "title": "Etablissement AGCO S.A.S. à BEAUVAIS (60000) sur …",
+      "url": "https://www.societe.com/etablissement/agco-s-a-s-31735838000077.html",
+      "snippet": "Feb 1, 2024 · L'établissement, situé au 2 RUE CHARLES TELLIER à BEAUVAIS (60000) , est l' établissement siège de l'entreprise …"
+    },
+    {
+      "title": "Société AGCO S.A.S. à 60000 BEAUVAIS - SIREN 317 358 380",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/agco-s-a-s-317358380",
+      "snippet": "L’administration permet aux particuliers et agents publics de vérifier les informations légales de AGCO S.A.S., 2 RUE CHARLES …"
+    },
+    {
+      "title": "Société AGCO S.A.S. : Chiffre d'affaires, statuts, extrait d ...",
+      "url": "https://www.pappers.fr/entreprise/agco-sas-317358380",
+      "snippet": "Oct 2, 2026 · AGCO S.A.S. à BEAUVAIS (60000) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "slug": "deepseek-ai-deepseek-r1-distill-qwen-14b",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
+  "created_at": "2025-01-20T09:18:27.000Z",
+  "updated_at": "2025-02-24T03:31:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 719,
+  "downloads_30d": 328763,
+  "trending_score": 20,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540133872,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek App",
+      "url": "https://download.deepseek.com/",
+      "snippet": "下载 DeepSeek 应用 - 您的智能助手，随时随地享受 AI 服务。 支持 iOS 和 Android 平台。 | Download DeepSeek App - Your …"
+    },
+    {
+      "title": "DeepSeek · GitHub",
+      "url": "https://github.com/deepseek-ai",
+      "snippet": "DeepSeek Harness: Everything is a Plugin. TypeScript 248k 29.9k deepseek-recipe Public Rust 380 35"
+    },
+    {
+      "title": "DeepSeek — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/DeepSeek",
+      "snippet": "Début 2025, DeepSeek dévoile son IA, qui est publiée en open source (sous licence MIT). Ses performances sont comparables, …"
+    }
+  ]
+}

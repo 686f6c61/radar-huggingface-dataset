@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cody-miller/embodied-ai8",
+  "slug": "cody-miller-embodied-ai8",
+  "author": "cody-miller",
+  "url": "https://huggingface.co/cody-miller/embodied-ai8",
+  "created_at": "2026-10-13T16:59:30.000Z",
+  "updated_at": "2026-10-13T16:59:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "embodied-ai",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learn to Code Free Online - Python, JS & 15+ | Coddy.Tech",
+      "url": "https://coddy.tech/",
+      "snippet": "Learn to code for free with Coddy.Tech - interactive lessons in Python, JavaScript, SQL, and 15+ languages. Join 5M+ learners …"
+    },
+    {
+      "title": "Coddy - Free Interactive Coding Courses",
+      "url": "https://coddy.tech/landing",
+      "snippet": "Learn to code free with interactive courses in 19 languages - Python, Java, JavaScript, SQL & more. Real exercises, AI hints, free …"
+    },
+    {
+      "title": "Visiter Cody, la ville de Buffalo Bill, avec notre guide de voyage",
+      "url": "https://www.roadtrippin.fr/wyoming/cody/cody.php",
+      "snippet": "Jul 30, 2026 · La ville de Cody est considérée par beaucoup comme le dernier lieu où vit encore la légende des cowboys et du Far …"
+    },
+    {
+      "title": "Open Source Home Theater Software | Kodi",
+      "url": "https://kodi.tv/",
+      "snippet": "Kodi is a free media player that is designed to look great on your big screen TV but is just as at home on a small screen."
+    },
+    {
+      "title": "Cody - Sourcegraph docs",
+      "url": "https://sourcegraph.com/docs/cody",
+      "snippet": "When you run any search query and open a repository or file, you’ll find the Cody button that takes you to Cody’s chat interface, …"
+    }
+  ]
+}

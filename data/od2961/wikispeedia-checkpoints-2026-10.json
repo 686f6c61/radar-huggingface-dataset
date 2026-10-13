@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "od2961/wikispeedia-checkpoints-2026-10",
+  "slug": "od2961-wikispeedia-checkpoints-2026-10",
+  "author": "od2961",
+  "url": "https://huggingface.co/od2961/wikispeedia-checkpoints-2026-10",
+  "created_at": "2026-10-13T16:26:01.000Z",
+  "updated_at": "2026-10-13T19:55:55.000Z",
+  "license": "checkpoint-specific-qwen-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wikispeedia",
+    "reinforcement-learning",
+    "supervised-fine-tuning",
+    "research-checkpoints",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 524531393436,
+  "storage_human": "524.5 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Checkpoint AI Models (144) | Civitai",
+      "url": "https://civitai.com/tag/checkpoint",
+      "snippet": "Browse 144 AI models tagged \"Checkpoint\" on Civitai, including checkpoints and LoRAs for Illustrious, Pony, SDXL, Flux and more. Download or generate online."
+    },
+    {
+      "title": "October 2026 AI Model Updates: The Full Dispatch",
+      "url": "https://local-ai-zone.github.io/blog/October_2026_AI_Model_Updates.html",
+      "snippet": "October 2026 AI Model Updates: Every Launch, Access Change, and Price Move TL;DR — October opened with no frontier launch at all. The first three days produced eight models from five vendors and every one of them is a specialist: decision models from Cloudflare and Amazon, a voice and transcription stack from Microsoft, a full-duplex video preview from Tavus, and an open-weight translator ..."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Stable Diffusion Models Download & Guide - The Right GPT",
+      "url": "https://therightgpt.com/stable-diffusion-guides/models/",
+      "snippet": "Complete guide to Stable Diffusion models in 2026. Learn where to safely download checkpoints, install realistic models, understand model architecture, and manage your collection. Includes direct download links for SD 1.5, SDXL, Flux.1, and custom models."
+    },
+    {
+      "title": "AI Model Release Log 2026: Dated Frontier Launches",
+      "url": "https://cheatsheets.davidveksler.com/ai-model-release-log.html",
+      "snippet": "AI Model Releases, Dated: The 2026 Log Every model a frontier lab shipped in 2026, with the day it went live, who could actually reach it, and a link to the lab&#x27;s own post. Newest first. Dates are announcement days unless the row is stamped PREVIEW. Inclusion rule: a lab that trains its own models has to put out a model or a major checkpoint on a stated date and say so itself. Price changes ..."
+    }
+  ]
+}

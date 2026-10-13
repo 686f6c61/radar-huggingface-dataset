@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/t5-large",
+  "slug": "collectionstudio-t5-large",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/t5-large",
+  "created_at": "2026-10-13T17:02:15.000Z",
+  "updated_at": "2026-10-13T17:02:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "safetensors",
+    "t5",
+    "summarization",
+    "translation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:c4",
+    "arxiv:1805.12471",
+    "arxiv:1708.00055",
+    "arxiv:1704.05426",
+    "arxiv:1606.05250",
+    "arxiv:1808.09121",
+    "arxiv:1810.12885",
+    "arxiv:1905.10044",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 737668608,
+  "parameters_human": "737.7M",
+  "storage_bytes": 11803968018,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sonstige, Photographica, Foto & Camcorder - PicClick DE",
+      "url": "https://picclick.de/Foto-Camcorder/Photographica/Sonstige/",
+      "snippet": "Objektive Manualfokus / Lenses Manual Focus. Sonstiges / Miscellaneous. Zubehör / Accessories. Laborbedarf / Dark Room. Großformat / Large Format. Baby ..."
+    },
+    {
+      "title": "Otros, Fotografía vintage, Cámaras y fotografía - PicClick ES",
+      "url": "https://picclick.es/C%C3%A1maras-y-fotograf%C3%ADa/Fotograf%C3%ADa-vintage/Otros/",
+      "snippet": "... T5 Compact Point & Shoot Film Camera Working w/ Tessar 35mm F/3.5 w ... It looks like either a large or XL. Graflex Pacemaker Graphic Speed Crown ..."
+    },
+    {
+      "title": "Guitares acoustiques, Guitares, basses, accessoires, Instruments de ...",
+      "url": "https://picclick.fr/Instruments-de-musique/Guitares-basses-accessoires/Guitares-acoustiques/",
+      "snippet": "... Model - Méthode d'expédition fiable et rentable. En achetant, vous ... Le sillet large de 48 mm et la construction à manche large sont idéaux pour ..."
+    },
+    {
+      "title": "Livres, Collections, Livres, BD, revues - PicClick FR",
+      "url": "https://picclick.fr/Livres-BD-revues/Collections/Livres/",
+      "snippet": "Model przedstawia konia w dekoracyjnej formie i może stanowić efektowną ozdobę półki, komody, regału lub witryny. To także ciekawy pomysł naprezent dla ..."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "DiyaNdn6/cross-modal-fusion",
+  "slug": "diyandn6-cross-modal-fusion",
+  "author": "DiyaNdn6",
+  "url": "https://huggingface.co/DiyaNdn6/cross-modal-fusion",
+  "created_at": "2026-10-13T16:54:27.000Z",
+  "updated_at": "2026-10-13T16:54:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "cross-modal-fusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=created",
+      "snippet": "DiyaNdn6/cross-modal-fusion. 49.6k • Updated in about 17 hours. drichvc21/MOD1 ... fakechamp24/ai-risk-analysis-models. Updated in about 17 hours · Shahdiya ..."
+    }
+  ]
+}

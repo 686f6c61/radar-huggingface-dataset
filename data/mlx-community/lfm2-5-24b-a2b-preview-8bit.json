@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mlx-community/LFM2.5-24B-A2B-Preview-8bit",
+  "slug": "mlx-community-lfm2-5-24b-a2b-preview-8bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-8bit",
+  "created_at": "2026-10-13T18:33:42.000Z",
+  "updated_at": "2026-10-13T18:33:52.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 25488182529,
+  "storage_human": "25.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么只有google scholar打不开？ - 知乎",
+      "url": "https://www.zhihu.com/question/51026681/answers/updated",
+      "snippet": "Google Scholar，又叫谷歌学术，目前全球使用最广泛的免费学术网络搜索引擎之一，在科学研究和文章写作中发挥着几乎不可替代的 …Read more"
+    },
+    {
+      "title": "google scholar - 知乎",
+      "url": "https://www.zhihu.com/topic/19653450",
+      "snippet": "Google Scholar（谷歌学术搜索）是一个可以免费搜索学术文章的网络搜索引擎，由计算机专家Anurag Acharya开发。2004年11 …"
+    },
+    {
+      "title": "google scholarで文献検索するとき1000件以上あっても100… - 人力 …",
+      "url": "https://q.hatena.ne.jp/1274519195",
+      "snippet": "May 22, 2010 · google scholarで文献検索するとき1000件以上あっても1000件以上は表示されないようですが、それ以上見たい時は …"
+    },
+    {
+      "title": "GoogleとYAHOO!の検索エンジンの メリットとデメリットをそれ",
+      "url": "https://q.hatena.ne.jp/1259258887",
+      "snippet": "Nov 27, 2009 · GoogleとYAHOO!の検索エンジンの メリットとデメリットをそれぞれ できるだけ多く教えてください。 / ヤフー メ …"
+    },
+    {
+      "title": "科研上Google/Scholar有哪些替代方案? - 知乎",
+      "url": "https://www.zhihu.com/question/24849699?sort=created",
+      "snippet": "Aug 14, 2014 · Google scholar A. Google scholar的镜像网站 Google学术相信大家都不陌生，它强大的检索功能或多或少都帮助过大 …"
+    }
+  ]
+}

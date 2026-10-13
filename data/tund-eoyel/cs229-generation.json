@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tund-eoyel/cs229-generation",
+  "slug": "tund-eoyel-cs229-generation",
+  "author": "tund-eoyel",
+  "url": "https://huggingface.co/tund-eoyel/cs229-generation",
+  "created_at": "2026-10-13T18:49:53.000Z",
+  "updated_at": "2026-10-13T18:49:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/",
+      "snippet": "Course Description This course provides a broad introduction to machine learning and statistical pattern recognition. Topics include: supervised learning (generative learning, parametric/non-parametric learning, neural networks); unsupervised learning (clustering, dimensionality reduction); learning theory (bias/variance tradeoffs, practical advice); reinforcement learning and adaptive control ..."
+    },
+    {
+      "title": "CS229: Machine Learning",
+      "url": "https://cs229.stanford.edu/index.html-fall25",
+      "snippet": "Course Information Time and Location Instructor Lectures: Mon, Wed 1:30 PM - 2:50 PM Hewlett 200 CA Lectures: Please check the Syllabus page or the course&#x27;s Canvas calendar for the latest information. Prerequisites: knowledge of basic computer science principles and skills at a level sufficient to write a reasonably non-trivial computer program in Python/NumPy to the equivalency of CS106A ..."
+    },
+    {
+      "title": "ayaangup/cs229-generation · Hugging Face",
+      "url": "https://huggingface.co/ayaangup/cs229-generation",
+      "snippet": "ayaangup / cs229-generation like 0 Safetensors PyTorch coca generation License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Coca for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Sarahflore/cs229-generation · Hugging Face",
+      "url": "https://huggingface.co/Sarahflore/cs229-generation",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CS229 - Machine Learning - Stanford Engineering Everywhere",
+      "url": "https://see.stanford.edu/Course/CS229",
+      "snippet": "However, AI has since splintered into many different subfields, such as machine learning, vision, navigation, reasoning, planning, and natural language processing."
+    }
+  ]
+}

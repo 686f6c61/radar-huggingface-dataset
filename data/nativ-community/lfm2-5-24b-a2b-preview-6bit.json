@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "nativ-community/LFM2.5-24B-A2B-Preview-6bit",
+  "slug": "nativ-community-lfm2-5-24b-a2b-preview-6bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-6bit",
+  "created_at": "2026-10-13T18:32:40.000Z",
+  "updated_at": "2026-10-13T18:33:09.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 19496619057,
+  "storage_human": "19.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stream comz music | Listen to songs, albums, playlists for free on ...",
+      "url": "https://soundcloud.com/comz",
+      "snippet": "Listen to comz | SoundCloud is an audio platform that lets you listen to what you love and share the sounds you create."
+    },
+    {
+      "title": "Xamoz - Streaming Films Linge Gratuit #1 en VF et VOSTFR",
+      "url": "https://xamoz.world/",
+      "snippet": "Xamoz est le meilleur site pour regarder des films en streaming gratuit en HD, VF et VOSTFR. Une vaste bibliothèque, une interface …"
+    },
+    {
+      "title": "Participer à la réunion | Zoom",
+      "url": "https://zoom.us/fr/join",
+      "snippet": "Participez à une réunion Zoom directement dans votre navigateur Web via un code de réunion ou un lien."
+    },
+    {
+      "title": "COZMAN (@cozman) • Instagram photos and videos",
+      "url": "https://www.instagram.com/cozman/",
+      "snippet": "272K Followers, 843 Following, 200 Posts - See Instagram photos and videos from COZMAN (@cozman)"
+    },
+    {
+      "title": "Deezer - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Deezer",
+      "snippet": "Deezer is a French music streaming service and media service provider founded in 2007 that streams music, podcasts, and internet …"
+    }
+  ]
+}

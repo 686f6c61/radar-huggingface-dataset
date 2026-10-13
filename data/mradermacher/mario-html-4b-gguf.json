@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/mario-html-4B-GGUF",
+  "slug": "mradermacher-mario-html-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/mario-html-4B-GGUF",
+  "created_at": "2026-10-13T01:25:50.000Z",
+  "updated_at": "2026-10-13T01:42:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "html-generation",
+    "web-design",
+    "visual-ui",
+    "visual-question-answering",
+    "reasoning",
+    "image-text-to-text",
+    "vllm",
+    "80k-context",
+    "zero-system-prompt",
+    "en",
+    "zh",
+    "base_model:wesjos/mario-html-4B",
+    "base_model:quantized:wesjos/mario-html-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 319,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004123264,
+  "storage_human": "41.0 GB",
+  "base_model": "wesjos/mario-html-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edusign API Documentation",
+      "url": "https://api-doc.edusign.fr/",
+      "snippet": "EDUSIGN API The use of this API is free of charge. In accordance with Edusign's pricing policy, no additional costs are incurred. …"
+    },
+    {
+      "title": "Edusign - Portail web",
+      "url": "https://sandbox2-platforms.edusign.fr/",
+      "snippet": "SANDBOX V2 PLATFORMS Website - Legal Notice - Terms and conditions of use"
+    },
+    {
+      "title": "Edusign - Portail web",
+      "url": "https://app.edusign.fr/",
+      "snippet": "Don't have an account yet? Create an account →"
+    },
+    {
+      "title": "Campus - app.edusign.fr",
+      "url": "https://app.edusign.fr/student/",
+      "snippet": "Plateforme pour les apprenants utilisant Edusign, facilitant la gestion des signatures et de l'assiduité."
+    },
+    {
+      "title": "Edusign",
+      "url": "https://sandbox2-platforms.edusign.fr/student/",
+      "snippet": "Manage You can see your absences and your calendar in your dashboard"
+    }
+  ]
+}

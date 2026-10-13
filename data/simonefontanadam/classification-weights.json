@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "simonefontanadam/classification-weights",
+  "slug": "simonefontanadam-classification-weights",
+  "author": "simonefontanadam",
+  "url": "https://huggingface.co/simonefontanadam/classification-weights",
+  "created_at": "2026-10-13T01:52:13.000Z",
+  "updated_at": "2026-10-13T01:52:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 895 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia ... - MSN",
+      "url": "https://www.msn.com/en-gb/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police-website/ar-AA2dVxyE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of rogue ..."
+    },
+    {
+      "title": "What Are Model Weights and Why Do They Matter in 2026?",
+      "url": "https://www.articsledge.com/post/model-weights",
+      "snippet": "Model weights are the numerical parameters that give AI its intelligence. Learn what they are, how they work, why they matter for AI performance, policy, and the open vs. closed AI debate in 2026."
+    },
+    {
+      "title": "Supervised Classification Heads as Semantic Prototypes: Unlocking ...",
+      "url": "https://arxiv.org/pdf/2605.22484v1",
+      "snippet": "In this work, we investigate the potential of repurposing the classification heads of pretrained vision models as semantic prototypes."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ducln-business/document-stamp-segmentation-v20-20261012-dev",
+  "slug": "ducln-business-document-stamp-segmentation-v20-20261012-dev",
+  "author": "ducln-business",
+  "url": "https://huggingface.co/ducln-business/document-stamp-segmentation-v20-20261012-dev",
+  "created_at": "2026-10-13T01:54:03.000Z",
+  "updated_at": "2026-10-13T02:12:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "document-analysis",
+    "document-stamp",
+    "round-seal",
+    "birefnet",
+    "base_model:ZhengPeng7/BiRefNet",
+    "base_model:finetune:ZhengPeng7/BiRefNet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885083460,
+  "storage_human": "885 MB",
+  "base_model": "ZhengPeng7/BiRefNet",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ducln-business/document-signature-stamp-detector-v20-20261012-dev ...",
+      "url": "https://huggingface.co/ducln-business/document-signature-stamp-detector-v20-20261012-dev",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ducln-business (Duc Le) - Hugging Face",
+      "url": "https://huggingface.co/ducln-business",
+      "snippet": "User profile of Duc Le on Hugging Face"
+    },
+    {
+      "title": "Segmentation of Stamps in Documents - GitHub",
+      "url": "https://github.com/ShaileshDhama/Segmentation-of-Stamps-in-Documents",
+      "snippet": "The segmentation of stamps in scanned documents is an essential task for automatic systems used in environments such as insurance companies. A significant amount of documents are processed daily, and the detection of stamps can be challenging due to their varied shapes, colors, and quality. This dataset is designed to assist researchers in developing systems for stamp segmentation and ..."
+    },
+    {
+      "title": "Document Segmentation Using Deep Learning in PyTorch",
+      "url": "https://learnopencv.com/deep-learning-based-document-segmentation-using-semantic-segmentation-deeplabv3-on-custom-dataset/",
+      "snippet": "Document Scanning is a background segmentation problem that can be solved using various methods. It is one of the extensively used applications of computer vision. In this article, we are considering Document Scanning as a deep learning-based semantic segmentation problem."
+    },
+    {
+      "title": "GitHub - DALAI-project/Document_segmentation: A model for segmenting ...",
+      "url": "https://github.com/DALAI-project/Document_segmentation",
+      "snippet": "This repository contains a segmentation model for segmenting different part of a document. The model segments unified text parts and classifies them into typewritten and handwritten classes."
+    }
+  ]
+}

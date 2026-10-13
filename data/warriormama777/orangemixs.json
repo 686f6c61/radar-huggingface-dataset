@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "WarriorMama777/OrangeMixs",
+  "slug": "warriormama777-orangemixs",
+  "author": "WarriorMama777",
+  "url": "https://huggingface.co/WarriorMama777/OrangeMixs",
+  "created_at": "2022-12-04T14:18:34.000Z",
+  "updated_at": "2024-01-07T10:41:44.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "stable-diffusion",
+    "text-to-image",
+    "dataset:Nerfgun3/bad_prompt",
+    "license:creativeml-openrail-m",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 3972,
+  "downloads_30d": 2220,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 202356872844,
+  "storage_human": "202.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WarriorMama777/OrangeMixs - Hugging Face",
+      "url": "https://huggingface.co/WarriorMama777/OrangeMixs",
+      "snippet": "\"OrangeMixs\" shares various Merge models that can be used with StableDiffusionWebui:Automatic1111 and others. Maintain a repository for the following purposes."
+    },
+    {
+      "title": "WarriorMama777/OrangeMixs · arash - Hugging Face",
+      "url": "https://huggingface.co/WarriorMama777/OrangeMixs/discussions/14/files",
+      "snippet": "\"OrangeMixs\" shares various Merge models that can be used with StableDiffusionWebui:Automatic1111 and others. 15. - &nbsp;. 16. - ..."
+    },
+    {
+      "title": "Why do images from models like PastelMix, OrangeMix come out so ...",
+      "url": "https://www.reddit.com/r/StableDiffusion/comments/11wy0zg/why_do_images_from_models_like_pastelmix/",
+      "snippet": "20.03.2023 ... Since Civita.ai sometimes don't include it, you need to looking it Hugginface. ... Edit: https://huggingface.co/WarriorMama777/OrangeMixs."
+    },
+    {
+      "title": "The Brief and Wondrous Life of Open Models - ACM Digital Library",
+      "url": "https://dl.acm.org/doi/10.1145/3715275.3732206",
+      "snippet": "23.06.2025 ... ... AI model ecosystems. Similar to Osborne et al. [48] we use the ... OrangeMix Model Card: https://huggingface.co/WarriorMama777/OrangeMixs."
+    },
+    {
+      "title": "comfy/notebooks/comfyui_colab.ipynb at master - GitHub",
+      "url": "https://github.com/commune-ai/comfy/blob/master/notebooks/comfyui_colab.ipynb",
+      "snippet": "... models/checkpoints/ #!wget -c https://huggingface.co/WarriorMama777/OrangeMixs/resolve/main/Models/AbyssOrangeMix3/AOM3A1_orangemixs.safetensors -P ./models ..."
+    }
+  ]
+}

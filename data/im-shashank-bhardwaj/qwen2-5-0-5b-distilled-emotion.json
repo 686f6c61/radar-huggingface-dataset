@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "im-shashank-bhardwaj/Qwen2.5-0.5B-Distilled-Emotion",
+  "slug": "im-shashank-bhardwaj-qwen2-5-0-5b-distilled-emotion",
+  "author": "im-shashank-bhardwaj",
+  "url": "https://huggingface.co/im-shashank-bhardwaj/Qwen2.5-0.5B-Distilled-Emotion",
+  "created_at": "2026-10-13T16:46:51.000Z",
+  "updated_at": "2026-10-13T16:55:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "emotion-classification",
+    "distillation",
+    "chain-of-thought",
+    "lora",
+    "conversational",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519622,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier | impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Vérifiez si vous pouvez bénéficier de l'aide de 100 € pour les travailleurs « grands rouleurs » Publié …"
+    },
+    {
+      "title": "IM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/IM",
+      "snippet": "IM Cette page d’homonymie répertorie les différents sujets et articles portant le même nom."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Immobilier Harbonnières : 7 annonces à Harbonnières, Seloger.com",
+      "url": "https://www.seloger.com/immobilier/tout/immo-harbonnieres-80/?msockid=21f0d2d323886c5c3b54c52222786dbd",
+      "snippet": "7 annonces d'achat, location et viager. Mise à jour en temps réel. Prix au m² et annuaire agence."
+    }
+  ]
+}

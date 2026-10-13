@@ -1,0 +1,33 @@
+{
+  "schema": 1,
+  "id": "pTpTk/llama1-65b-1layer",
+  "slug": "ptptk-llama1-65b-1layer",
+  "author": "pTpTk",
+  "url": "https://huggingface.co/pTpTk/llama1-65b-1layer",
+  "created_at": "2026-10-13T17:23:14.000Z",
+  "updated_at": "2026-10-13T17:23:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 499723,
+  "storage_human": "499723 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

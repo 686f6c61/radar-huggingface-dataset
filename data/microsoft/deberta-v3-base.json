@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "microsoft/deberta-v3-base",
+  "slug": "microsoft-deberta-v3-base",
+  "author": "microsoft",
+  "url": "https://huggingface.co/microsoft/deberta-v3-base",
+  "created_at": "2022-03-02T23:29:05.000Z",
+  "updated_at": "2022-09-22T12:34:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "fill-mask",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "tf",
+    "rust",
+    "deberta-v2",
+    "deberta",
+    "deberta-v3",
+    "fill-mask",
+    "en",
+    "arxiv:2006.03654",
+    "arxiv:2111.09543",
+    "license:mit",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 460,
+  "downloads_30d": 2810083,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702154240,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/?msockid=08373dc9d683623e2acc2a38d7846352",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft – IA, Cloud, Productivité, Informatique, Jeux et applications",
+      "url": "https://www.microsoft.com/fr-fr?msockid=08373dc9d683623e2acc2a38d7846352",
+      "snippet": "Découvrez les produits et services Microsoft et l’assistance pour votre famille ou votre entreprise. Découvrez Microsoft 365, Copilot, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+    },
+    {
+      "title": "Microsoft — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft est présent dans l' informatique en nuage (Microsoft Azure), les sites Web (moteur de recherche Microsoft Bing, réseau …"
+    },
+    {
+      "title": "Support Microsoft",
+      "url": "https://support.microsoft.com/fr-fr/",
+      "snippet": "Le support Microsoft est là pour vous aider avec les produits Microsoft. Trouvez des articles pratiques, des vidéos et des formations …"
+    }
+  ]
+}

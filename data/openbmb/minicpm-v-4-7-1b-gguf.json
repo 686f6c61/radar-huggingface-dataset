@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "openbmb/MiniCPM-V-4.7-1B-gguf",
+  "slug": "openbmb-minicpm-v-4-7-1b-gguf",
+  "author": "openbmb",
+  "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+  "created_at": "2026-10-06T18:05:12.000Z",
+  "updated_at": "2026-10-13T05:14:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm-v",
+    "multimodal",
+    "On-Device Model",
+    "lightweight",
+    "image-text-to-text",
+    "base_model:openbmb/MiniCPM-V-4.7-1B",
+    "base_model:quantized:openbmb/MiniCPM-V-4.7-1B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 38,
+  "downloads_30d": 2064,
+  "trending_score": 37,
+  "parameters": 1006209856,
+  "parameters_human": "1.01B",
+  "storage_bytes": 33759262688,
+  "storage_human": "33.8 GB",
+  "base_model": "openbmb/MiniCPM-V-4.7-1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "openbmb/MiniCPM-V-4.7-1B-gguf · Hugging Face",
+      "url": "https://huggingface.co/openbmb/MiniCPM-V-4.7-1B-gguf",
+      "snippet": "Speculative decoding (DSpark) Click to show speculative decoding. Speculative decoding (DSpark): we also release MiniCPM-V-4.7-1B-DSpark, a DSpark draft model trained for MiniCPM-V-4.7-1B. Inference with OpenVINO™ OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference on Intel CPU/GPU/NPU platforms."
+    },
+    {
+      "title": "GitHub - OpenBMB/MiniCPM-V: See, hear, and interact on your local ...",
+      "url": "https://github.com/OpenBMB/MiniCPM-V",
+      "snippet": "The most notable models in the series currently include: MiniCPM-V 4.6: 🔥🔥🔥 The latest and most efficient model in the MiniCPM-V series. With a total of 1.3B parameters, it surpasses larger models like Gemma4-E2B-it in performance, while showing superior efficiency than smaller models like Qwen3.5-0.8B (achieving ~1.5x token throughput)."
+    },
+    {
+      "title": "MiniCPM-V 4.7 · Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/model_doc/minicpmv4_7",
+      "snippet": "MiniCPM-V 4.7 MiniCPM-V is a series of efficient multimodal large language models developed by OpenBMB. Like MiniCPM-V 4.6, the MiniCPM-V 4.7 architecture pairs a SigLIP vision encoder that has a window-attention merger with a Qwen3.5 language model backbone, and supports both 4x and 16x visual downsampling modes."
+    },
+    {
+      "title": "OpenBMB open-sources MiniCPM-V 4.7: a 35B-A3B MoE multimodal model that ...",
+      "url": "https://aicoder.com/news/news-20261013-openbmb-minicpm-v-4-7-35b-a3b-on-device-moe",
+      "snippet": "On 2026-10-12 OpenBMB released MiniCPM-V 4.7, an Apache-2.0 open multimodal family with a 35B-A3B variant (the series&#x27; first MoE) and a 1B variant. Its Lookahead Expert Scheduling (LES) prefetches experts across layers and, combined with layer-wise mixed-precision quantization and DSpark speculative sampling, lifts SSD-offloaded decoding on an iPad Pro M4 (16GB) from 2.97 to 17.39 tokens/s (5 ..."
+    },
+    {
+      "title": "MiniCPM-V 4.7 1B: Specs and Official Evaluation",
+      "url": "https://www.datalearner.com/ai-models/pretrained-models/minicpm-v-4-7-1b",
+      "snippet": "MiniCPM-V 4.7 1B 是 OpenBMB 于 2026 年 10 月 12 日发布的多模态模型，支持文本、单图、多图与视频输入，输出文本。代码与权重采用 Apache 2.0 许可证。 参数名称与完整权重统计采用不同口径 1B 是官方版本名，官方评测图标注 1.3B，而 Hugging Face 的完整 safetensors 权重统计为 1.554476272B。本页参数字段使用完整 ..."
+    }
+  ]
+}

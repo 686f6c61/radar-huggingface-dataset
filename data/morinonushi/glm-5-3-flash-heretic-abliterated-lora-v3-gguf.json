@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF",
+  "slug": "morinonushi-glm-5-3-flash-heretic-abliterated-lora-v3-gguf",
+  "author": "MorinoNushi",
+  "url": "https://huggingface.co/MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V3-GGUF",
+  "created_at": "2026-10-13T01:33:10.000Z",
+  "updated_at": "2026-10-13T01:33:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "lora",
+    "glm",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:adapter:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 34125824,
+  "parameters_human": "34.1M",
+  "storage_bytes": 68263680,
+  "storage_human": "68 MB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Action Movies | FULL Length Free Action Movies | Intense ... - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLkbmHAthH_ZC_0n-W-LOX7UNjTeituGeK",
+      "snippet": "Action Movies | FULL Length Free Action Movies | Intense Fights and Drama by Free Time Movies • Playlist • 352 videos • 75,978 …"
+    },
+    {
+      "title": "4,000 Best Free Movies on YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL30RAv-0lkxHdTcoGGgx5L6eXIHnnrEHC",
+      "snippet": "Over 4,000 of the Best YouTube Movies that are legally free with ads. Or no ads if you have YouTube Premium."
+    },
+    {
+      "title": "Free Action & Thriller Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLXNY08O_Iy2nGic0Z_vkSn0E4iTDUh7d-",
+      "snippet": "Watch the best Action and Thriller Movies for free!"
+    },
+    {
+      "title": "Full Action Movies - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLfRCZ3PuccvBQv71hWi334-zRJekjSlCq",
+      "snippet": "Explore an incredible collection of full action movies, free Hollywood action films, and a variety of full action movies in English."
+    },
+    {
+      "title": "Full Action Movies | Watch Free Full-Length Films - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLTRsH1ARLU9_n2Ym1K7NIVy620RSvm4aD",
+      "snippet": "Non-stop thrills, explosive sequences, and high-energy stunts - this playlist delivers full action movies you can watch for free."
+    }
+  ]
+}

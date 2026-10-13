@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "raaldosari/generation",
+  "slug": "raaldosari-generation",
+  "author": "raaldosari",
+  "url": "https://huggingface.co/raaldosari/generation",
+  "created_at": "2026-10-13T17:00:51.000Z",
+  "updated_at": "2026-10-13T17:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99800,
+  "storage_human": "99800 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best VR Games for 2026 - PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-vr-games",
+      "snippet": "Jun 10, 2026 · At PCMag, we've tested every major VR headset since the original Oculus Rift Development Kit in 2013, and we've …"
+    },
+    {
+      "title": "Virtual reality: our selection of VR activities in Paris and the Ile-de ...",
+      "url": "https://www.sortiraparis.com/en/what-to-do-in-paris/gaming/guides/168570-virtual-reality-our-selection-of-vr-activities-in-paris-and-ile-de-france",
+      "snippet": "Are you a virtual reality and gaming enthusiast looking for a place to indulge your geeky passion? Or do you simply want to travel?"
+    },
+    {
+      "title": "Digital Health Informatics: Bridging Clinical Gaps through AI ...",
+      "url": "https://jomi.aayvu.com/pdf-211941-138104?filename=Digital-Health-Informatic.pdf",
+      "snippet": "Traditionally, healthcare systems have operated within reactive and fragmented care models, focused on episodic interventions, disease-centric approaches, and."
+    },
+    {
+      "title": "Gaming Experiences in Virtual Reality",
+      "url": "https://virtualzonevr.com/en/experiences/gaming",
+      "snippet": "Action, escape rooms and cooperative combat in virtual reality: team shooters, horror and epic adventures to experience as a group."
+    },
+    {
+      "title": "Global Virtual Reality Experience Provider - Zero Latency VR",
+      "url": "https://zerolatencyvr.com/en/",
+      "snippet": "Immerse yourself in the world’s best immersive experiences at Zero Latency. 110+ venues worldwide. Experience untethered, free …"
+    }
+  ]
+}

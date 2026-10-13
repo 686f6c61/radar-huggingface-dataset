@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Valhalla-ai/b0b311408be2",
+  "slug": "valhalla-ai-b0b311408be2",
+  "author": "Valhalla-ai",
+  "url": "https://huggingface.co/Valhalla-ai/b0b311408be2",
+  "created_at": "2026-10-13T01:27:56.000Z",
+  "updated_at": "2026-10-13T01:34:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mimo_v2",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 110280865472,
+  "parameters_human": "110.28B",
+  "storage_bytes": 220577442541,
+  "storage_human": "220.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Valhalla — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Valhalla",
+      "snippet": "Valhalla est une série de bande dessinée danoise mettant en scène la mythologie nordique. Dans Le Donjon de Naheulbeuk, le …"
+    },
+    {
+      "title": "Valhalla - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Valhalla",
+      "snippet": "Grímnismál In stanzas 8 to 10 of Grímnismál, the god Odin (in the guise of Grímnir) proclaims Valhalla is in the realm of Glaðsheimr. …"
+    },
+    {
+      "title": "Valhalla DSP | Reverb & Delay Plugins",
+      "url": "https://valhalladsp.com/",
+      "snippet": "We are happy to announce the release of our latest plugin, Valhalla FutureVerb®. 8 Natural Reverb Modes Vallhalla FutureVerb is …"
+    },
+    {
+      "title": "Valhalla : signification, mythe et symboles en 2026 – Chantony",
+      "url": "https://chantony.fr/valhalla-signification-mythe-et-symboles-en-2026/",
+      "snippet": "Jul 28, 2026 · L’essentiel à retenir : le Valhalla est la salle d’Odin réservée aux guerriers morts héroïquement au combat. Dans les …"
+    },
+    {
+      "title": "Tout Savoir Sur le Valhalla Le Palais Des Guerriers Viking! | Viking ...",
+      "url": "https://www.viking-heritage.com/blogs/viking/valhalla",
+      "snippet": "May 25, 2020 · Le Valhalla est un lieu légendaire de la mythologie nordique. Il accueille les guerriers vikings après leur mort au …"
+    }
+  ]
+}

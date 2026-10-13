@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "litert-community/LFM2-2.6B",
+  "slug": "litert-community-lfm2-2-6b",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/LFM2-2.6B",
+  "created_at": "2026-10-13T01:53:03.000Z",
+  "updated_at": "2026-10-13T06:31:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litert",
+    "litertlm",
+    "on-device",
+    "edge",
+    "liquid",
+    "lfm2",
+    "text-generation",
+    "base_model:LiquidAI/LFM2-2.6B",
+    "base_model:quantized:LiquidAI/LFM2-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4253390912,
+  "storage_human": "4.3 GB",
+  "base_model": "LiquidAI/LFM2-2.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiteRT Community (FKA TFLite) - Hugging Face",
+      "url": "https://huggingface.co/litert-community",
+      "snippet": "We recommend first trying our models in our Google AI Edge Gallery app on Android and iOS. Community's Picks of the Week. EmbeddingGemma v2 ( Embedding ): ..."
+    }
+  ]
+}

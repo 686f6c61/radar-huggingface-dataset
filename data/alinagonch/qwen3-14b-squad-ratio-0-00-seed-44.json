@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-00-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.00-seed-44",
+  "created_at": "2026-10-13T19:01:39.000Z",
+  "updated_at": "2026-10-13T19:01:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399154,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-44 · Hugging Face",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.90-seed-44",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.90-seed-44 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42 at main",
+      "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42/tree/main",
+      "snippet": "Instructions to use AlinaGonch/qwen3-14b-squad-ratio-.40-seed-42 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "qwen3-14b - Alibaba Cloud Model Studio",
+      "url": "https://docs.modelstudio.console.alibabacloud.com/en/model-studio/qwen3-14b",
+      "snippet": "Achieves effective integration of thinking and non-thinking modes, allowing mode switching during conversations. Its reasoning capability reaches the SOTA level in the same scale industry, and its general capability significantly surpasses Qwen2.5-14B."
+    },
+    {
+      "title": "Qwen3-14B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen3-14b",
+      "snippet": "Qwen3-14B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "Qwen 3 14B AWQ - Specs, Capabilities & Benchmarks | Inferbase",
+      "url": "https://inferbase.ai/models/qwen3-14b",
+      "snippet": "Qwen 3 14B is a chat model developed by Qwen, offering capabilities such as function calling, JSON mode, reasoning, streaming, and text generation. It is genuinely best at tasks that require superior human preference alignment, excelling in creative writing, role-playing, and instruction following, and also demonstrates expertise in agent ..."
+    }
+  ]
+}

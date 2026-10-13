@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Alphaalimamy/vit-base-oxford-iiit-pets",
+  "slug": "alphaalimamy-vit-base-oxford-iiit-pets",
+  "author": "Alphaalimamy",
+  "url": "https://huggingface.co/Alphaalimamy/vit-base-oxford-iiit-pets",
+  "created_at": "2026-10-13T18:21:30.000Z",
+  "updated_at": "2026-10-13T19:06:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:finetune:google/vit-base-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85827109,
+  "parameters_human": "85.8M",
+  "storage_bytes": 1716733250,
+  "storage_human": "1.7 GB",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …Read more"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Join @Valkyrae and @scarra for a deep dive into how Esports player-creators became a model for athletes on YouTube. From their …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

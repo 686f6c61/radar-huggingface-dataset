@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview",
+  "slug": "sriq-ai-sriq-heretic-spatial-9b-mixed-10050-preview",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview",
+  "created_at": "2026-10-13T01:34:15.000Z",
+  "updated_at": "2026-10-13T01:37:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reasoning",
+    "chinese",
+    "sft",
+    "lora",
+    "merged",
+    "unsloth",
+    "conversational",
+    "dataset:sriq-ai/exp-n950-spatial",
+    "dataset:sriq-ai/sriq-sft-v1.6",
+    "base_model:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "base_model:adapter:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300205,
+  "storage_human": "19.3 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview - Hugging Face",
+      "url": "https://huggingface.co/sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview",
+      "snippet": "Instructions to use sriq-ai/sriq-heretic-spatial-9b-MIXED-10050-preview with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Heretic",
+      "url": "https://heretic-project.org/",
+      "snippet": "Fully automatic censorship removal for language models Take control of the most important technology of our time Heretic removes restrictions from language models, making sure they always follow your instructions"
+    },
+    {
+      "title": "SRIQ — Better reasoning. Fewer tokens.",
+      "url": "https://sriq.org/",
+      "snippet": "Open research in efficient reasoning. Models, datasets, and experiments from SRIQ."
+    },
+    {
+      "title": "Heretic: Fully automatic censorship removal for language models",
+      "url": "https://github.com/p-e-w/heretic",
+      "snippet": "Heretic is a tool that removes censorship (aka \"safety alignment\") from transformer-based language models without expensive post-training. It combines an advanced implementation of directional ablation, also known as \"abliteration\" (Arditi et al. 2024, Lai 2025 (1, 2)), with a TPE-based parameter optimizer powered by Optuna."
+    },
+    {
+      "title": "Tutorial | Heretic",
+      "url": "https://heretic-project.org/tutorial",
+      "snippet": "Tutorial Welcome, friend! With Heretic, you can remove restrictions from language models, or modify them in other interesting ways. That&#x27;s right, you! You don&#x27;t need to be a software engineer, you don&#x27;t need a machine learning PhD, you don&#x27;t need to understand the intricacies of how language models work internally, and you don&#x27;t need expensive hardware. Prerequisites Here&#x27;s what you do need: A ..."
+    }
+  ]
+}

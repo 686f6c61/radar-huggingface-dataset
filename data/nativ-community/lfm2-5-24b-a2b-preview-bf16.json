@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "nativ-community/LFM2.5-24B-A2B-Preview-bf16",
+  "slug": "nativ-community-lfm2-5-24b-a2b-preview-bf16",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-bf16",
+  "created_at": "2026-10-13T18:50:14.000Z",
+  "updated_at": "2026-10-13T18:51:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:finetune:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 47961143314,
+  "storage_human": "48.0 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.co.uk: Low Prices in Electronics, Books, Sports Equipment",
+      "url": "https://www.amazon.co.uk/",
+      "snippet": "Amazon Echo Dot Max (newest gen), Bluetooth speaker with room-filling sound and built-in smart home hub, Graphite, with Alexa+ …"
+    },
+    {
+      "title": "Amazon.co.uk Best Sellers: The most popular items in PC & Video …",
+      "url": "https://www.amazon.co.uk/Best-Sellers-PC-Video-Games/zgbs/videogames",
+      "snippet": "Amazon Best Sellers Our most popular products based on sales. Updated frequently."
+    },
+    {
+      "title": "Watch NBA on Prime Video - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/gp/video/tournament/amzn1.dv.icid.cf75b42a-68cd-4a1c-993a-a0b3f0575c5f",
+      "snippet": "Stream live NBA games, matches, highlights, and replays anytime on Prime Video. Enjoy exclusive coverage, expert commentary, …"
+    },
+    {
+      "title": "Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/your-account",
+      "snippet": ""
+    },
+    {
+      "title": "The Boys of Dungeon Lane - Amazon.co.uk",
+      "url": "https://www.amazon.co.uk/Boys-Dungeon-Lane-Paul-McCartney/dp/B0GTZK37RV",
+      "snippet": "'The Boys of Dungeon Lane' is a collection of rare and revealing glimpses into memories never-before shared, along with some …"
+    }
+  ]
+}

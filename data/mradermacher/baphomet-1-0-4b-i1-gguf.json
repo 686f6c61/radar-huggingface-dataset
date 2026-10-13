@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Baphomet-1.0-4B-i1-GGUF",
+  "slug": "mradermacher-baphomet-1-0-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Baphomet-1.0-4B-i1-GGUF",
+  "created_at": "2026-10-13T01:26:56.000Z",
+  "updated_at": "2026-10-13T02:00:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "goatmerge",
+    "task-vector",
+    "linear-merge",
+    "qwen3_5",
+    "vision-language",
+    "en",
+    "base_model:CloudGoat/Baphomet-1.0-4B",
+    "base_model:quantized:CloudGoat/Baphomet-1.0-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 845,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 39223753344,
+  "storage_human": "39.2 GB",
+  "base_model": "CloudGoat/Baphomet-1.0-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trainz Railroad Simulator 2022 Download - GameFabrique",
+      "url": "https://gamefabrique.com/games/trainz-railroad-simulator-2022/",
+      "snippet": "This latest entry in the beloved Trainz series elevates the train simulation experience to unprecedented heights, offering a level of …"
+    },
+    {
+      "title": "Trainz Railroad Simulator 2022 on Steam",
+      "url": "https://store.steampowered.com/app/1784570/Trainz_Railroad_Simulator_2022/",
+      "snippet": "Expand your collection with 20,000 additional routes available free from the Trainz Download Station or choose to purchase your …"
+    },
+    {
+      "title": "Trainz Portal",
+      "url": "https://www.trainzportal.com/site/index",
+      "snippet": "Explore, Drive and Create with the ultimate train simulator experience for PC, Mac and Mobile. Hundreds of thousands of items …"
+    },
+    {
+      "title": "Trainz Railroad Simulator 2022 - PE | Trainz Store",
+      "url": "https://store.trainzportal.com/pages/trainz-railroad-simulator-2022",
+      "snippet": "TRS22 is the successor to TRS19 and includes a number of new features previously available exclusively in our Trainz Plus version …"
+    },
+    {
+      "title": "Trainz Simulator APK for Android - Download",
+      "url": "https://trainz-simulator.en.softonic.com/android",
+      "snippet": "Dec 12, 2023 · Take a virtual journey through the intricacies of railroad operations with Trainz Simulator. This cutting-edge simulation …"
+    }
+  ]
+}

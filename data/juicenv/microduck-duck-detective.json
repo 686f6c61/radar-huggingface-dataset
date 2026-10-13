@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "juicenv/microduck-duck-detective",
+  "slug": "juicenv-microduck-duck-detective",
+  "author": "juicenv",
+  "url": "https://huggingface.co/juicenv/microduck-duck-detective",
+  "created_at": "2026-10-13T18:45:42.000Z",
+  "updated_at": "2026-10-13T18:45:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "base_model:pollen-robotics/microduck-got-a-talent-reference",
+    "base_model:finetune:pollen-robotics/microduck-got-a-talent-reference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793894,
+  "storage_human": "793894 B",
+  "base_model": "pollen-robotics/microduck-got-a-talent-reference",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "juicenv (Jarrod Pflum) - Hugging Face",
+      "url": "https://huggingface.co/juicenv/models",
+      "snippet": "Recent Activity liked a model27 days ago juicenv/duckwing-v80-roller-skating updated a model29 days ago juicenv/duckwing-v80-roller-skating published a model29 days ago juicenv/duckwing-v80-roller-skating View all activity"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "Microduck Duck Detector - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/pollen-robotics/microduck-duck-detector",
+      "snippet": "Registry entry for model Microduck Duck Detector; source metadata pending."
+    },
+    {
+      "title": "pngwn/microduck-detector · Hugging Face",
+      "url": "https://huggingface.co/pngwn/microduck-detector",
+      "snippet": "Domain gap remains between renders and real photos: on the 4 real val photos the model detects 4/5 ducks (80% recall) but produces duplicate detections in cluttered scenes."
+    }
+  ]
+}

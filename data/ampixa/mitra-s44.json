@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ampixa/mitra-s44",
+  "slug": "ampixa-mitra-s44",
+  "author": "ampixa",
+  "url": "https://huggingface.co/ampixa/mitra-s44",
+  "created_at": "2026-10-13T18:55:02.000Z",
+  "updated_at": "2026-10-13T18:55:44.000Z",
+  "license": "mitra-research-use",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "style-transfer",
+    "research",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360666406,
+  "storage_human": "361 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ampixa labs",
+      "url": "https://ampixa.com/",
+      "snippet": "The human interaction layer for AI: speech, vision, language tools, and evaluation for Nepali and regional languages."
+    },
+    {
+      "title": "ampixa (Ampixa Labs) - Hugging Face",
+      "url": "https://huggingface.co/ampixa/models",
+      "snippet": "Org profile for Ampixa Labs on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "ampixa/mitra-s37 · Hugging Face",
+      "url": "https://huggingface.co/ampixa/mitra-s37",
+      "snippet": "Request access to mitra S37 Access is reviewed by hand and granted for research only. This artifact belongs to a research system that rewrites LLM-written text in the style of named human writers, so that AI-text detectors may judge it human. Access is granted for research on AI-text detection, robustness of detectors, and style transfer."
+    },
+    {
+      "title": "Mitra: Mixed Synthetic Priors for Enhancing Tabular Foundation Models",
+      "url": "https://arxiv.org/pdf/2510.21204",
+      "snippet": "These models are pretrained on synthetic tabular tasks, and they make predictions on 1We released both classifier (autogluon/mitra-classifier) and regressor (autogluon/mitra-regressor) model weights on HuggingFace. 39th Conference on Neural Information Processing Systems (NeurIPS 2025)."
+    },
+    {
+      "title": "Ampixa - GitHub",
+      "url": "https://github.com/Ampixa",
+      "snippet": "Ampixa has 18 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

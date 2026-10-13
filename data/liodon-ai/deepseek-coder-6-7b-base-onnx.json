@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/deepseek-coder-6.7b-base-ONNX",
+  "slug": "liodon-ai-deepseek-coder-6-7b-base-onnx",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/deepseek-coder-6.7b-base-ONNX",
+  "created_at": "2026-10-13T01:29:14.000Z",
+  "updated_at": "2026-10-13T03:51:37.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "llama",
+    "onnxruntime",
+    "quantized",
+    "text-generation",
+    "base_model:deepseek-ai/deepseek-coder-6.7b-base",
+    "base_model:quantized:deepseek-ai/deepseek-coder-6.7b-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41518731715,
+  "storage_human": "41.5 GB",
+  "base_model": "deepseek-ai/deepseek-coder-6.7b-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/deepseek-coder-6.7b-instruct-ONNX · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/deepseek-coder-6.7b-instruct-ONNX",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "liodon-ai/deepseek-coder-6.7b-instruct-ONNX at main",
+      "url": "https://huggingface.co/liodon-ai/deepseek-coder-6.7b-instruct-ONNX/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepSeek-Coder-6.7B: Open-Source Code Generation Model",
+      "url": "https://www.emergentmind.com/topics/deepseek-coder-6-7b-model",
+      "snippet": "DeepSeek-Coder-6.7B is an open-source, decoder-only Transformer model built for code generation and intelligence, trained on a curated 2 trillion-token corpus across 87 programming languages. It employs innovative data selection via instruction-following difficulty with k-means clustering and dynamic pack tokenization to enhance training efficiency and performance. Evaluations on benchmarks ..."
+    },
+    {
+      "title": "DeepSeek Coder:",
+      "url": "https://deepseekcoder.github.io/",
+      "snippet": "DeepSeek Coder comprises a series of code language models trained from scratch on both 87% code and 13% natural language in English and Chinese, with each model pre-trained on 2T tokens."
+    },
+    {
+      "title": "DeepSeek Coder 6.7B Overview - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/deepseek-coder-6-7b-2dbfde41-982d-4b46-b271-693d50a03419",
+      "snippet": "DeepSeek Coder 6.7B is an open-source code LLM enabling high-fidelity program synthesis with advanced pretraining and fine-tuning techniques."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-00-seed-44",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.00-seed-44",
+  "created_at": "2026-10-13T15:27:33.000Z",
+  "updated_at": "2026-10-13T15:27:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Kasus Kontroversial Yang Viral Di Media Sosial Indonesia",
+      "url": "https://m.kaskus.co.id/thread/540fbc29108b4609438b4578/10-kasus-kontroversial-yang-viral-di-media-sosial-indonesia/",
+      "snippet": "Bismillahirrahmanirrahim Para netizen di Indonesia terkenal sangat sosial. Mereka gemar berbagi dan berceloteh di media sosial, …"
+    },
+    {
+      "title": "Inilah Genre Favorit Disturbing Picture (Versi TS). | KASKUS",
+      "url": "https://www.kaskus.co.id/thread/638f66877084786d7118d697/inilah-genre-favorit-disturbing-picture-versi-ts",
+      "snippet": "Dec 6, 2022 · ~Halo para umat manusia berjumpa lagi dengan TS yang kegabutan-nya setingkat kecamatan, kali ini saya ingin …"
+    },
+    {
+      "title": "Serba serbi suzuki titan - KASKUS",
+      "url": "https://www.kaskus.co.id/post/000000000000000499802661",
+      "snippet": "Aug 19, 2011 · Original Posted By rules 1.no junk,no spamming,absen tetep boleh kok 2.promosi lapak boleh,tetapi ga boleh jauh …"
+    },
+    {
+      "title": "8 Genre Animasi & Manga yang berpengaruh buruk bagi Anak2",
+      "url": "https://m.kaskus.co.id/thread/51ac012be474b41d53000004/8-genre-animasi-amp-manga-yang-berpengaruh-buruk-bagi-anak2-hati-hati-fatal-efeknya/",
+      "snippet": "Jun 2, 2013 · 8 Genre Animasi & Manga yang berpengaruh buruk bagi Anak2 (hati-hati, fatal efeknya) Biasakan , komentar dan …"
+    },
+    {
+      "title": "Gosip Nyok! - Forum | KASKUS",
+      "url": "https://www.kaskus.co.id/komunitas/59/gosip-nyok",
+      "snippet": "Tempat bergosip bareng Kaskuser."
+    }
+  ]
+}

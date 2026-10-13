@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BlameOmar/Qwen3.5-9B-oQ4e-fp16-mtp",
+  "slug": "blameomar-qwen3-5-9b-oq4e-fp16-mtp",
+  "author": "BlameOmar",
+  "url": "https://huggingface.co/BlameOmar/Qwen3.5-9B-oQ4e-fp16-mtp",
+  "created_at": "2026-10-13T18:45:46.000Z",
+  "updated_at": "2026-10-13T18:47:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 7155684654,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5 9B API: Pricing, Benchmarks & Docs | Together AI",
+      "url": "https://www.together.ai/models/qwen3-5-9b",
+      "snippet": "Qwen&#x27;s 9B multimodal model with hybrid architecture, 262K native context, vision-language reasoning, native tool calling, and 201-language support for agentic workflows"
+    },
+    {
+      "title": "Qwen3.5-9B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/qwen35-9b",
+      "snippet": "Qwen3.5-9B specifications, context length, benchmark scores, and GPU VRAM requirements across quantizations."
+    },
+    {
+      "title": "Qwen3.5 9B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-9b",
+      "snippet": "Qwen3.5 9B Qwen3.5 9B is the largest of the four small dense models in Qwen&#x27;s natively multimodal Qwen3.5 family: a 9B-parameter vision-language model with thinking mode on by default, a 262K-token context extensible to 1M with YaRN, 201-language coverage, and open weights under Apache 2.0."
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    },
+    {
+      "title": "thederby/Qwen3.5-9B-oQ4e-mtp · Hugging Face",
+      "url": "https://huggingface.co/thederby/Qwen3.5-9B-oQ4e-mtp",
+      "snippet": "Which dtype?bf16 (no suffix) is the default. fp16 builds store the language model&#x27;s non-quantized weights and the quantization scales as float16 instead of bfloat16."
+    }
+  ]
+}

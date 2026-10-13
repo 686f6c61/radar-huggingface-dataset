@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mistralai/Mistral-7B-v0.3",
+  "slug": "mistralai-mistral-7b-v0-3",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Mistral-7B-v0.3",
+  "created_at": "2024-05-22T09:56:38.000Z",
+  "updated_at": "2025-07-24T16:42:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 617,
+  "downloads_30d": 235605,
+  "trending_score": 21,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 28992746844,
+  "storage_human": "29.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral | n°1 en IA souveraine : modèles ouverts de pointe qui vous ...",
+      "url": "https://mistral.ai/fr/",
+      "snippet": "« En combinant un siècle de données géoscientifiques, l'expertise de nos équipes et les capacités de Mistral, nous entendons …"
+    },
+    {
+      "title": "Mistral Vibe (anciennement Le Chat) | Assistant conversationnel et ...",
+      "url": "https://mistral.ai/fr/products/vibe/",
+      "snippet": "Vibe (anciennement Le Chat) est l'agent conversationnel et de travail de Mistral AI, conçu pour le travail et le code. Discutez, …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://chat.mistral.ai/login",
+      "snippet": "Login or signup below Email Forgot password?"
+    },
+    {
+      "title": "Mistral AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
+      "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    }
+  ]
+}

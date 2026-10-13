@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PreciseCoder-4B-GGUF",
+  "slug": "mradermacher-precisecoder-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PreciseCoder-4B-GGUF",
+  "created_at": "2026-10-13T01:50:57.000Z",
+  "updated_at": "2026-10-13T06:14:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "debugging",
+    "code",
+    "reinforcement-learning",
+    "grpo",
+    "precisecoder",
+    "en",
+    "base_model:PreciseCoder/PreciseCoder-4B",
+    "base_model:quantized:PreciseCoder/PreciseCoder-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 274,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945653056,
+  "storage_human": "39.9 GB",
+  "base_model": "PreciseCoder/PreciseCoder-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/PreciseCoder-4B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/PreciseCoder-4B-GGUF",
+      "snippet": "mradermacher / PreciseCoder-4B-GGUF Like 0 Reinforcement Learning Transformers GGUF English debugging code grpo precisecoder conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "mradermacher/PreciseCoder-4B-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/PreciseCoder-4B-i1-GGUF",
+      "snippet": "mradermacher / PreciseCoder-4B-i1-GGUF Like 1 Reinforcement Learning Transformers GGUF English debugging code grpo precisecoder imatrix conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Mradermacher - Find Top AI Models on Hugging Face",
+      "url": "https://www.aimodels.fyi/creators/huggingFace/mradermacher",
+      "snippet": "Looking for Mradermacher&#x27;s top AI models? Browse their full Hugging Face collection of 31 models. Explore AI models and contributions by Mradermacher on Huggingface."
+    },
+    {
+      "title": "GitHub - JoasASantos/Offensive-Security-AI-Models: Uncensored AI models ...",
+      "url": "https://github.com/JoasASantos/Offensive-Security-AI-Models",
+      "snippet": "Curated list of open-weight uncensored models for authorized red team operations, penetration testing, and security research. All data sourced from HuggingFace model cards and official publications. Sep 2026."
+    },
+    {
+      "title": "Best Uncensored Local LLMs by VRAM Tier (2026) | InsiderLLM",
+      "url": "https://insiderllm.com/guides/best-uncensored-local-llms/",
+      "snippet": "huihui-ai — the dominant abliterated-model uploader in mid-2026. Maintains current abliterations for Qwen 3.6 / 3.5, DeepSeek V4 Flash, DeepSeek 671B, and most major open releases. mradermacher — reliable quantizer with broad coverage; current source for most Gemma 4 Heretic GGUF mirrors. Offers both static and imatrix quants."
+    }
+  ]
+}

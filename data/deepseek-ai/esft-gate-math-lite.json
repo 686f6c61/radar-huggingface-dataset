@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "deepseek-ai/ESFT-gate-math-lite",
+  "slug": "deepseek-ai-esft-gate-math-lite",
+  "author": "deepseek-ai",
+  "url": "https://huggingface.co/deepseek-ai/ESFT-gate-math-lite",
+  "created_at": "2024-07-04T08:53:59.000Z",
+  "updated_at": "2024-07-05T05:48:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v2",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 311,
+  "trending_score": 14,
+  "parameters": 1583087616,
+  "parameters_human": "1.58B",
+  "storage_bytes": 3166240120,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://www.deepseek.com/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek | API Platform",
+      "url": "https://www.deepseek.com/en/platform/",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source …"
+    },
+    {
+      "title": "DeepSeek App",
+      "url": "https://download.deepseek.com/",
+      "snippet": "下载 DeepSeek 应用 - 您的智能助手，随时随地享受 AI 服务。 支持 iOS 和 Android 平台。 | Download DeepSeek App - Your …"
+    },
+    {
+      "title": "Expert-Specialized Fine-Tuning for Sparse Architectural Large ...",
+      "url": "https://arxiv.org/html/2407.01906v1",
+      "snippet": "02.07.2024 ... ... Math, and ESFT-Gate achieves the best performance in the Humaneval task. ... DeepSeek-V2-Lite MoE model. The conclusions drawn from this ..."
+    },
+    {
+      "title": "DeepSeek · GitHub",
+      "url": "https://github.com/deepseek-ai",
+      "snippet": "DeepSeek Harness: Everything is a Plugin. TypeScript 248k 29.9k deepseek-recipe Public Rust 380 35"
+    }
+  ]
+}

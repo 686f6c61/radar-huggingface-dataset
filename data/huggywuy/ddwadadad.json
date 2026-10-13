@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "huggywuy/ddwadadad",
+  "slug": "huggywuy-ddwadadad",
+  "author": "huggywuy",
+  "url": "https://huggingface.co/huggywuy/ddwadadad",
+  "created_at": "2026-10-13T01:26:25.000Z",
+  "updated_at": "2026-10-13T01:26:25.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "huggywuy/ddwadadad · Hugging Face",
+      "url": "https://huggingface.co/huggywuy/ddwadadad",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "huggywuy (amandarose) - Hugging Face",
+      "url": "https://huggingface.co/huggywuy/models",
+      "snippet": "huggywuy&#x27;s models1 Sort: Recently updated huggywuy/ddwadadad Updated about 10 hours ago"
+    },
+    {
+      "title": "huggywuy (amandarose) - Hugging Face",
+      "url": "https://huggingface.co/huggywuy",
+      "snippet": "User profile of amandarose on Hugging Face Recent Activity updated a bucketabout 9 hours ago huggywuy/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-bucket published a bucketabout 9 hours ago huggywuy/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF-bucket published a modelabout 10 hours ago huggywuy/ddwadadad View all activity"
+    },
+    {
+      "title": "Huggy Wuggy AI Models on PixAI",
+      "url": "https://pixai.art/en/tags/model/huggy_wuggy",
+      "snippet": "Huggy Wuggy models and LoRAs on PixAI. Run them in-browser — no download or local setup."
+    },
+    {
+      "title": "Hugging Bay | Find and Download AI Models",
+      "url": "https://huggingbay.xyz/",
+      "snippet": "Open models, mirrored with their licenses and checksums. Run the small ones in your browser. Download the rest and sail your own."
+    }
+  ]
+}

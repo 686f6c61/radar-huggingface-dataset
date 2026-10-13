@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "mistralai/Ministral-3-8B-Instruct-2512",
+  "slug": "mistralai-ministral-3-8b-instruct-2512",
+  "author": "mistralai",
+  "url": "https://huggingface.co/mistralai/Ministral-3-8B-Instruct-2512",
+  "created_at": "2025-10-31T08:43:35.000Z",
+  "updated_at": "2026-07-15T12:22:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral3",
+    "mistral-common",
+    "en",
+    "fr",
+    "es",
+    "de",
+    "it",
+    "pt",
+    "nl",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "arxiv:2601.08584",
+    "base_model:mistralai/Ministral-3-8B-Base-2512",
+    "base_model:quantized:mistralai/Ministral-3-8B-Base-2512",
+    "license:apache-2.0",
+    "fp8",
+    "deploy:sagemaker",
+    "region:us"
+  ],
+  "likes": 224,
+  "downloads_30d": 114883,
+  "trending_score": 15,
+  "parameters": 8918026716,
+  "parameters_human": "8.92B",
+  "storage_bytes": 20908950383,
+  "storage_human": "20.9 GB",
+  "base_model": "mistralai/Ministral-3-8B-Base-2512",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mistral | n°1 en IA souveraine : modèles ouverts de pointe qui vous ...",
+      "url": "https://mistral.ai/fr/",
+      "snippet": "« En combinant un siècle de données géoscientifiques, l'expertise de nos équipes et les capacités de Mistral, nous entendons …Read more"
+    },
+    {
+      "title": "Mistral Vibe (anciennement Le Chat) | Assistant conversationnel et ...",
+      "url": "https://mistral.ai/fr/products/vibe/",
+      "snippet": "Vibe (anciennement Le Chat) est l'agent conversationnel et de travail de Mistral AI, conçu pour le travail et le code. Discutez, …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://chat.mistral.ai/login",
+      "snippet": "Login or signup below Email Forgot password?"
+    },
+    {
+      "title": "Mistral AI — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mistral_AI",
+      "snippet": "Mistral AI est une entreprise française fondée en avril 2023, spécialisée dans l' intelligence artificielle générative. Elle développe de …"
+    },
+    {
+      "title": "Login - Mistral AI",
+      "url": "https://console.mistral.ai/home",
+      "snippet": "Access and manage Mistral AI's products, user settings, billing, and administrative tasks through the unified Administration Console."
+    }
+  ]
+}

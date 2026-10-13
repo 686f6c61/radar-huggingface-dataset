@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "nativ-community/LFM2.5-24B-A2B-Preview-4bit",
+  "slug": "nativ-community-lfm2-5-24b-a2b-preview-4bit",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-4bit",
+  "created_at": "2026-10-13T18:31:33.000Z",
+  "updated_at": "2026-10-13T18:31:57.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 13505055917,
+  "storage_human": "13.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sara Khan: The Girl from the Viral Video | TikTok",
+      "url": "https://www.tiktok.com/@yes.pak/video/7532200838371101970",
+      "snippet": "Jul 28, 2025 · TikTok video from Sara Khan Official (@yes.pak): “Discover the story behind Sara Khan and her viral video sensation. …"
+    },
+    {
+      "title": "Sara Khan Official Pakistan - YouTube",
+      "url": "https://www.youtube.com/@SaraKhanofficial2026/videos",
+      "snippet": "I’m Sara Khan 🇵🇰Welcome to my official YouTube channel where I share daily vlogs, lifestyle, beauty tips, fashion, and fun moments …"
+    },
+    {
+      "title": "sarakhan (@ssarakhan) | TikTok",
+      "url": "https://www.tiktok.com/@ssarakhan",
+      "snippet": "Join 1.3M followers on TikTok for more zoommyface, duet, hushhh content."
+    },
+    {
+      "title": "Sara Khan Videos - Snapchat",
+      "url": "https://www.snapchat.com/topic/sara-khan",
+      "snippet": "1 day ago · Explore captivating moments from Sara Khan and other creators, featuring everything from stylish fashion showcases …"
+    },
+    {
+      "title": "sarahkhan official - YouTube",
+      "url": "https://www.youtube.com/channel/UCbmW9czuZDcPcfp7gCqir9Q",
+      "snippet": "Welcome to the Official Youtube Channel of Sara khanSara khan is one of Pakistan’s most famous celebrities, began his acting …"
+    }
+  ]
+}

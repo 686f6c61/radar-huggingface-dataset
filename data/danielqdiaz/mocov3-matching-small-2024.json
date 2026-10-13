@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielqdiaz/mocov3-matching-small-2024",
+  "slug": "danielqdiaz-mocov3-matching-small-2024",
+  "author": "danielqdiaz",
+  "url": "https://huggingface.co/danielqdiaz/mocov3-matching-small-2024",
+  "created_at": "2026-10-13T17:03:26.000Z",
+  "updated_at": "2026-10-13T17:03:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Descargar GeForce NOW | NVIDIA",
+      "url": "https://www.nvidia.com/es-es/geforce-now/download/",
+      "snippet": "GeForce NOW ya está listo para que entres y empieces a jugar. Descarga la aplicación GeForce NOW para disfrutar de la mejor …"
+    },
+    {
+      "title": "NVIDIA GeForce NOW",
+      "url": "https://www.nvidia.com/ru-am/geforce-now/",
+      "snippet": "Любые устройства С помощью GeForce NOW превратите практически любой ноутбук, ПК, Mac, телевизор, устройство на …"
+    },
+    {
+      "title": "如何评价 Geforce Now？ - 知乎",
+      "url": "https://www.zhihu.com/question/54524915",
+      "snippet": "2019/6/25: 好久没上来了，看还有断断续续的赞决定告诉大家最近不怎么用geforce now了，去年搬出学校之后就上了个显卡坞， …"
+    },
+    {
+      "title": "geforce now 有人体验过吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/54441790",
+      "snippet": "前几天刚获得GeForce Now（简称GENOW）的Beta测试资，录了一些视频给没条件测试的朋友们可以自己看一下效果。 和谷歌 …"
+    },
+    {
+      "title": "NVIDIA GeForce NOW",
+      "url": "https://www.nvidia.com/fr-fr/geforce-now/",
+      "snippet": "GeForce NOW Vos jeux. La puissance de GeForce RTX. Sur n’importe quel appareil. Jouez instantanément avec les performances …"
+    }
+  ]
+}

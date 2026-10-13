@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bbhaiyaji245/space-bunny-alpha",
+  "slug": "bbhaiyaji245-space-bunny-alpha",
+  "author": "bbhaiyaji245",
+  "url": "https://huggingface.co/bbhaiyaji245/space-bunny-alpha",
+  "created_at": "2026-10-13T01:23:14.000Z",
+  "updated_at": "2026-10-13T01:23:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "space-bunny-alpha",
+    "reasoning",
+    "coding",
+    "multimodal",
+    "svg",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bbhaiyaji245/space-bunny-alpha · Hugging Face",
+      "url": "https://huggingface.co/bbhaiyaji245/space-bunny-alpha",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Space Bunny Alpha AI Model: Specs, API, Benchmarks and Real Use Cases",
+      "url": "https://spacebunny.app/blog/space-bunny-alpha-ai-model",
+      "snippet": "A practical guide to the Space Bunny Alpha AI model: 1M-token context, multimodal input, reasoning levels, API setup, benchmarks, risks and use cases."
+    },
+    {
+      "title": "Space Bunny AI: Code, Long Documents & API Access",
+      "url": "https://spacebunny.im/",
+      "snippet": "Developer guide to Space Bunny, the anonymous 1M-context model on OpenRouter, OpenCode and BeatAPI: specs, API access, limits and an exit plan."
+    },
+    {
+      "title": "Space Bunny Alpha Model — Playground & API",
+      "url": "https://spacebunny.app/space-bunny-alpha-model",
+      "snippet": "Explore the Space Bunny Alpha model with text, image and video prompts. Try the playground, compare reasoning levels, and find API docs and pricing."
+    },
+    {
+      "title": "What Is Space Bunny Alpha? And How to Access It - Hugging Face",
+      "url": "https://huggingface.co/blog/liliruli/what-is-space-bunny-alpha-and-how-to-access-it",
+      "snippet": "Excerpt: Space Bunny Alpha is a free, anonymous 1M-context AI model on OpenRouter and OpenCode. Here is what it actually is, the evidence on who built it, and every way to get access — playground, API, or coding agent."
+    }
+  ]
+}

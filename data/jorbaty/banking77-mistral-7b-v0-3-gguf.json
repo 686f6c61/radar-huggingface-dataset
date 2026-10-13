@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jorbaty/banking77-mistral-7b-v0.3-gguf",
+  "slug": "jorbaty-banking77-mistral-7b-v0-3-gguf",
+  "author": "Jorbaty",
+  "url": "https://huggingface.co/Jorbaty/banking77-mistral-7b-v0.3-gguf",
+  "created_at": "2026-10-13T18:45:14.000Z",
+  "updated_at": "2026-10-13T19:09:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "banking77",
+    "intent-classification",
+    "qlora",
+    "text-generation",
+    "en",
+    "dataset:PolyAI/banking77",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 26572725024,
+  "storage_human": "26.6 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PolyBuzz | Talk to AI Characters & Enjoy Free AI Chat Anytime",
+      "url": "https://www.polybuzz.ai/",
+      "snippet": "PolyBuzz is a Free, Private, and Unlimited AI Chat platform with over 20 million unique Characters, offering personalized …"
+    },
+    {
+      "title": "PolyBuzz | Discutez avec des personnages IA et profitez d'un chat IA ...",
+      "url": "https://www.polybuzz.ai/fr",
+      "snippet": "Qu'est-ce que PolyBuzz ? PolyBuzz propose des chats de personnages IA gratuits, privés et sans restriction avec plus de 20 millions …"
+    },
+    {
+      "title": "PolyBuzz - Free, Private, and Unrestricted AI Character Chats",
+      "url": "https://app.polybuzz.ai/",
+      "snippet": "Join PolyBuzz for free online AI chat and thrilling roleplay with AI Characters from anime, movies, celebrities, RPGs, and more! …"
+    },
+    {
+      "title": "Polybuzz – Parle à l’IA, discute gratuitement avec des personnages IA",
+      "url": "https://polybuzz.org/fr/",
+      "snippet": "PolyBuzz propose des chats IA gratuits, privés et sans restriction avec plus de 20 millions de personnages, te permettant de créer …"
+    },
+    {
+      "title": "PolyBuzz AI — Discutez avec plus de 20M+ personnages IA, jeu de …",
+      "url": "https://polybuzz-ai.com/fr/",
+      "snippet": "PolyBuzz AI vous permet de discuter, flirter et jouer des rôles avec des personnages IA réalistes, de parler à voix haute avec une …"
+    }
+  ]
+}

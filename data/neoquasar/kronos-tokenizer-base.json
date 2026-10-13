@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NeoQuasar/Kronos-Tokenizer-base",
+  "slug": "neoquasar-kronos-tokenizer-base",
+  "author": "NeoQuasar",
+  "url": "https://huggingface.co/NeoQuasar/Kronos-Tokenizer-base",
+  "created_at": "2025-06-30T16:55:43.000Z",
+  "updated_at": "2025-09-09T14:10:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "Finance",
+    "Candlestick",
+    "K-line",
+    "time-series-forecasting",
+    "arxiv:2508.02739",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 100,
+  "downloads_30d": 2263961,
+  "trending_score": 19,
+  "parameters": 3958258,
+  "parameters_human": "4.0M",
+  "storage_bytes": 15842368,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Cell Phone Plans: Compare Plans & Prices - Reviews.org",
+      "url": "https://www.reviews.org/mobile/best-cell-phone-plans/",
+      "snippet": "Jun 12, 2026 · These are the best cell phone plans to cover all your streaming, texting, and posting needs. We highlight the top picks …"
+    },
+    {
+      "title": "Compare SIM-Only Deals October 2026",
+      "url": "https://www.gocompare.com/mobile-phone/sim-only-deals/",
+      "snippet": "Sep 25, 2026 · Looking to keep using your current phone? SIM-only deals are a great way to save money on your mobile bill without …"
+    },
+    {
+      "title": "Best Mobile Plans in France 2026: SIM Cards & Deals",
+      "url": "https://en.selectra.info/broadband-phone-france/guides/mobile",
+      "snippet": "Sep 4, 2026 · Compare the best SIM-only mobile plans in France for expats in 2026: no-contract deals from €7.99/month on the …"
+    },
+    {
+      "title": "Mobile Phone Plans 2026: Compare 290+ Plans & Save | Finder",
+      "url": "https://www.finder.com.au/mobile-plans",
+      "snippet": "Oct 6, 2026 · Compare mobile plans from popular brands like Telstra, ALDI Mobile, Belong, Optus and TPG. Don't miss out on deals …"
+    },
+    {
+      "title": "Meilleur Forfait Mobile : Comparatif 4G et 5G en 2026 | Numerama",
+      "url": "https://www.numerama.com/comparateur-forfait-mobile/",
+      "snippet": "À la recherche d'un forfait mobile au meilleur prix ? Analysez toutes offres du moment en un clic et réduisez votre facture avec notre …"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "mlx-community/LFM2.5-24B-A2B-Preview-5bit",
+  "slug": "mlx-community-lfm2-5-24b-a2b-preview-5bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/LFM2.5-24B-A2B-Preview-5bit",
+  "created_at": "2026-10-13T18:32:27.000Z",
+  "updated_at": "2026-10-13T18:32:37.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 16500837534,
+  "storage_human": "16.5 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiquidAI/LFM2-24B-A2B-MLX-5bit · Hugging Face",
+      "url": "https://huggingface.co/LiquidAI/LFM2-24B-A2B-MLX-5bit",
+      "snippet": "LFM2-24B-A2B-MLX-5bit MLX export of LFM2-24B-A2B for Apple Silicon inference. Model Details ... Recommended Sampling Parameters ... Use with mlx ... License This model is released under the LFM 1.0 License."
+    },
+    {
+      "title": "LFM2.5-24B-A2B: Built for Fast On-Device Agents - liquid.ai",
+      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
+      "snippet": "Today, we release LFM2.5-24B-A2B, a 24B-parameter reasoning model with just 2B active parameters, built for fast, private agents on-device. It is the largest and final model in the LFM2.5 family, which now spans two orders of magnitude: from LFM2.5-230M to LFM2.5-24B-A2B."
+    },
+    {
+      "title": "mlx-community/LFM2-24B-A2B-4bit · Hugging Face",
+      "url": "https://huggingface.co/mlx-community/LFM2-24B-A2B-4bit",
+      "snippet": "mlx-community/LFM2-24B-A2B-4bit This model mlx-community/LFM2-24B-A2B-4bit was converted to MLX format from LiquidAI/LFM2-24B-A2B using mlx-lm version 0.30.8. Use ..."
+    },
+    {
+      "title": "Liquid AI Releases Open-Weight LFM2.5-24B-A2B for On-Device ...",
+      "url": "https://www.unite.ai/liquid-ai-releases-open-weight-lfm2-5-24b-a2b-for-on-device-agents/",
+      "snippet": "Liquid AI released LFM2.5-24B-A2B on October 13, 2026, an open-weight 24B-parameter reasoning model with 2B active parameters built for agents that run on-device. The company published the base and post-trained checkpoints on Hugging Face and detailed the release in a post on the Hugging Face blog."
+    },
+    {
+      "title": "LFM2-24B-A2B-MLX-5bit · Model · Inferix",
+      "url": "https://inferix.co/models/lmstudio-community/LFM2-24B-A2B-MLX-5bit",
+      "snippet": "💫 Community Model LFM2 24B A2B by LiquidAI 👾 LM Studio Community models highlights program. Highlighting new & noteworthy models by the community. Join the conversation on Discord . Model creator : LiquidAI Original model : LFM2 24B A2B MLX quantization : provided by LM Studio team using mlx lm Technical Details 5 bit quantized version of LFM2 24B A2B using MLX, optimized for Apple ..."
+    }
+  ]
+}

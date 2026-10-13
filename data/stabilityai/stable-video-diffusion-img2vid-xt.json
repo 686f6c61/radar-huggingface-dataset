@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "stabilityai/stable-video-diffusion-img2vid-xt",
+  "slug": "stabilityai-stable-video-diffusion-img2vid-xt",
+  "author": "stabilityai",
+  "url": "https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt",
+  "created_at": "2023-11-20T23:45:55.000Z",
+  "updated_at": "2024-07-10T11:43:18.000Z",
+  "license": "stable-video-diffusion-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "license:other",
+    "diffusers:StableVideoDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 3458,
+  "downloads_30d": 102631,
+  "trending_score": 15,
+  "parameters": 1524623082,
+  "parameters_human": "1.52B",
+  "storage_bytes": 32634599639,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

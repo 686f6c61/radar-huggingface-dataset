@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sakurataa/toy-matching-2024",
+  "slug": "sakurataa-toy-matching-2024",
+  "author": "sakurataa",
+  "url": "https://huggingface.co/sakurataa/toy-matching-2024",
+  "created_at": "2026-10-13T18:39:30.000Z",
+  "updated_at": "2026-10-13T18:39:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Matching for MSFS | Flightsim.to",
+      "url": "https://flightsim.to/miscellaneous/model-matching",
+      "snippet": "AIG Model Matching This add-on provides AIG model matching files for Microsoft Flight Simulator 2024 and may also be compatible with MSFS 2020. It includes model folders for AI traffic and a VMR file for use with Viplot custom rules. Installation requires unzipping and placing the files into the correct directories within the simulator&#x27;s Community Folder. This package aims to improve AI ..."
+    },
+    {
+      "title": "AI content creator, anime and video game lover - Patreon",
+      "url": "https://www.patreon.com/cw/Sakura049",
+      "snippet": "Get more from Sakura049 on Patreon. 🌸 AI content creator, anime and video game lover 🌸. Support Sakura049 and get exclusive access to their work."
+    },
+    {
+      "title": "sakura - (test)2024 PHOTO - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/709857368726348907",
+      "snippet": "Download sakura - free LORA SD 1.5 AI model on TENSOR. PHOTO. By user_elf"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Get assistance with writing, planning, learning, and more from Google AI."
+    },
+    {
+      "title": "Sakura AI - AI Image Editor",
+      "url": "https://www.sakuraai.me/",
+      "snippet": "AI Image Editor - Now Live Transform Any Image With Simple Text Sakura AI&#x27;s advanced AI model delivers consistent character editing and scene preservation with simple text prompts. Experience the future of AI image editing."
+    }
+  ]
+}

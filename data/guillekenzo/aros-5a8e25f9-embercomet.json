@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-5a8e25f9-EmberComet",
+  "slug": "guillekenzo-aros-5a8e25f9-embercomet",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-5a8e25f9-EmberComet",
+  "created_at": "2026-10-13T01:51:46.000Z",
+  "updated_at": "2026-10-13T02:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 964619184,
+  "storage_human": "965 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "House of the Dragon: Staffel 3 erscheint auf 4K UHD und Blu-ray ...",
+      "url": "https://www.dvd-forum.at/house-of-the-dragon-staffel-3-erscheint-auf-4k-uhd-und-blu-ray-steelbook-ebenfalls-geplant",
+      "snippet": "Aug 25, 2026 · Ab sofort können alle drei angekündigten Heimkino-Editionen der dritten Staffel von „House of the Dragon“ auch bei …Read more"
+    },
+    {
+      "title": "Avis sur Amazon - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29089-avis-sur-amazon",
+      "snippet": "Apr 23, 2016 · Bonjour, Je viens vers vous car j'aimerai avoir votre avis concernant le site Amazon.fr, ne connaissant pas vraiment le …"
+    },
+    {
+      "title": "Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/",
+      "snippet": "Ici, chacun peut poser ses questions, partager ses expériences et échanger librement autour de la consommation, dans le respect et …"
+    },
+    {
+      "title": "Amazon.de: ‚3 für 2‘ FSK-18-Filme aus über 200 Titeln",
+      "url": "https://www.dvd-forum.at/amazon-de-3-fuer-2-fsk-18-filme-aus-ueber-200-titeln",
+      "snippet": "Bei Amazon.de bekommt ihr aktuell ‚3 für 2‘ Filme auf Blu-ray, UHD Blu-ray und DVD, die ab 18 Jahren freigegeben sind. Dabei …"
+    },
+    {
+      "title": "Réussir en auto-entrepreneuriat : métiers à explorer",
+      "url": "https://devenir-autoentrepreneur.fr/metiers-auto-entrepreneur/",
+      "snippet": "Explorez les métiers d'auto-entrepreneur pour choisir la voie idéale et réussir votre activité indépendante avec conseils et astuces …"
+    }
+  ]
+}

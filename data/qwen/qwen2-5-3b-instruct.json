@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-3B-Instruct",
+  "slug": "qwen-qwen2-5-3b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-3B-Instruct",
+  "created_at": "2024-09-17T14:08:52.000Z",
+  "updated_at": "2024-09-25T12:33:00.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 603,
+  "downloads_30d": 4339524,
+  "trending_score": 14,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171926992,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s series of …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "snippet": "Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time …"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    },
+    {
+      "title": "Qwen (Qwen) - Hugging Face",
+      "url": "https://huggingface.co/Qwen",
+      "snippet": "Dec 27, 2024 · Qwen/Qwen3.8-Flash-Next ... Qwen/Qwen3.8-Flash-Next-FP8 ... Qwen/Qwen3.8-2.4T-A95B ... Qwen/Qwen3.8-2.4T …"
+    }
+  ]
+}

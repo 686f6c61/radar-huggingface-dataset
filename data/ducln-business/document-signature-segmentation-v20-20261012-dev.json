@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ducln-business/document-signature-segmentation-v20-20261012-dev",
+  "slug": "ducln-business-document-signature-segmentation-v20-20261012-dev",
+  "author": "ducln-business",
+  "url": "https://huggingface.co/ducln-business/document-signature-segmentation-v20-20261012-dev",
+  "created_at": "2026-10-13T01:54:21.000Z",
+  "updated_at": "2026-10-13T02:12:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "document-analysis",
+    "document-signature",
+    "handwriting",
+    "birefnet",
+    "base_model:ZhengPeng7/BiRefNet",
+    "base_model:finetune:ZhengPeng7/BiRefNet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 885083460,
+  "storage_human": "885 MB",
+  "base_model": "ZhengPeng7/BiRefNet",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is Sex? | Sex and Pleasure - Planned Parenthood",
+      "url": "https://www.plannedparenthood.org/learn/sex-pleasure-and-sexual-dysfunction/sex-and-pleasure",
+      "snippet": "When it comes to sex, being comfortable with your body, sexuality, and relationships is key. Learn more about practicing safer sex …Read more"
+    },
+    {
+      "title": "Hardcore Porn Videos & Clips | Sex.com",
+      "url": "https://www.sex.com/en/categories/135",
+      "snippet": "Explore hardcore porn videos at Sex.com. Enjoy intense sex clips, hot XXX scenes, and HD content updated daily for your pleasure."
+    },
+    {
+      "title": "sex-com videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/sex-com",
+      "snippet": "XVIDEOS sex-com videos, free Anal Sex Ace - Teen Gets her Ass Fucked Hard 21 min Innocent Holes - 44.4M Views -"
+    },
+    {
+      "title": "Free Porn Videos & Porn Movies | Sex.com",
+      "url": "https://www.sex.com/en/pornstars",
+      "snippet": "Explore our collection of free porn videos and movies! Enjoy high quality content with the hottest porn stars and sexy amateurs."
+    },
+    {
+      "title": "Chaînes Porno les Plus Chaudes - Sex.com",
+      "url": "https://www.sex.com/fr/channels",
+      "snippet": "Découvrez toutes les chaînes porno disponibles sur Sex.com. Regardez des vidéos de sexe de haute qualité des meilleurs studios …"
+    }
+  ]
+}

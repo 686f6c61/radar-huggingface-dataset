@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "raoankitme/retrieval-practice",
+  "slug": "raoankitme-retrieval-practice",
+  "author": "raoankitme",
+  "url": "https://huggingface.co/raoankitme/retrieval-practice",
+  "created_at": "2026-10-13T18:45:14.000Z",
+  "updated_at": "2026-10-13T18:45:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66776,
+  "storage_human": "66776 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Retrieval Augmented Generation (RAG) - DeepLearning.AI",
+      "url": "https://www.deeplearning.ai/courses/retrieval-augmented-generation",
+      "snippet": "RAG for real-world applications: Learn how retrieval and generation work together, and how to design each component to build reliable, flexible RAG systems. Search techniques and vector databases: Use techniques like keyword search, semantic search, hybrid search, chunking, and query parsing to support RAG applications across domains like ..."
+    },
+    {
+      "title": "RAG in Production 2026: GraphRAG, Hybrid Retrieval, and Evals",
+      "url": "https://ailearningguides.com/rag-production-patterns-2026/",
+      "snippet": "A 2026 playbook for production RAG: hybrid retrieval, GraphRAG, rerankers, RAGAS evaluation, observability, security, cost, and a week-one reference stack you can ship."
+    },
+    {
+      "title": "AI Search retrieval quality guide - Databricks on AWS",
+      "url": "https://docs.databricks.com/aws/en/ai-search/retrieval-quality",
+      "snippet": "Improve Databricks AI Search retrieval quality for RAG, search, and matching using hybrid search, metadata filtering, reranking, and better data preparation."
+    },
+    {
+      "title": "raoankitme/multitask-efficient · Hugging Face",
+      "url": "https://huggingface.co/raoankitme/multitask-efficient",
+      "snippet": "raoankitme / multitask-efficient Like 0 Safetensors PyTorch poolformer multitask License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Poolformer for Multitask Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "Retrieval Interruption Framework: AI-Assisted Cognition and ... - MDPI",
+      "url": "https://www.mdpi.com/2227-7102/16/8/1179",
+      "snippet": "This conceptual paper develops the Retrieval Interruption Framework (RIF) through a targeted narrative synthesis of research on retrieval practice, productive failure, scaffolding, cognitive load, cognitive offloading, metacognitive monitoring, the expertise reversal effect, the assistance dilemma, and AI-assisted learning."
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit",
+  "slug": "fractalsurfer-moss-music-8b-instruct-mlx-8bit",
+  "author": "FractalSurfer",
+  "url": "https://huggingface.co/FractalSurfer/MOSS-Music-8B-Instruct-mlx-8bit",
+  "created_at": "2026-10-13T18:32:18.000Z",
+  "updated_at": "2026-10-13T18:41:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-text-to-text",
+  "library": "mlx-audio",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "moss_music",
+    "mlx",
+    "music",
+    "music-understanding",
+    "audio-language-model",
+    "moss-music",
+    "audio-text-to-text",
+    "custom_code",
+    "en",
+    "zh",
+    "base_model:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "base_model:quantized:OpenMOSS-Team/MOSS-Music-8B-Instruct",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9052463488,
+  "parameters_human": "9.05B",
+  "storage_bytes": 10426573228,
+  "storage_human": "10.4 GB",
+  "base_model": "OpenMOSS-Team/MOSS-Music-8B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BBC Home - Breaking News, World News, US News, Sports, …",
+      "url": "https://www.bbc.com/",
+      "snippet": "Visit BBC for trusted reporting on the latest world and US news, sports, business, climate, innovation, culture and much more."
+    },
+    {
+      "title": "Former QPR player Buzsaky confirms he is safe - BBC",
+      "url": "https://www.bbc.com/sport/football/articles/c74e81jvvvjo",
+      "snippet": "Aug 28, 2026 · Former QPR midfielder Akos Buzsaky posts a message on social media to confirm he is safe after being reported …"
+    },
+    {
+      "title": "BBC - Wales - Home",
+      "url": "https://www.bbc.com/wales",
+      "snippet": "BBC Wales is the nation's broadcaster. News, sport, television shows, radio programmes and digital content for Wales and beyond, …"
+    },
+    {
+      "title": "Sarah Ngaba jailed for baby daughter Eliza's murder - BBC",
+      "url": "https://www.bbc.com/news/articles/ce8jx2r5y2eo",
+      "snippet": "Jun 12, 2026 · Sarah Ngaba is sentenced to at least 19 years in prison for her daughter Eliza's murder."
+    },
+    {
+      "title": "Man arrested as five injured in Pembrokeshire A477 crash - BBC",
+      "url": "https://www.bbc.com/news/articles/cdepp9xny2xo",
+      "snippet": "May 25, 2026 · Three of the five were seriously injured and the arrested man is in custody."
+    }
+  ]
+}

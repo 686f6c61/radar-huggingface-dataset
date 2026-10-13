@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/olmo-compassion-s1-part1-step300",
+  "slug": "compassioninmachinelearning-olmo-compassion-s1-part1-step300",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/olmo-compassion-s1-part1-step300",
+  "created_at": "2026-10-13T01:57:33.000Z",
+  "updated_at": "2026-10-13T02:53:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14597505355,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.fr/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering directions, local business information, and street views.Read more"
+    },
+    {
+      "title": "Visualiser les données sur une carte personnalisée à l ... - Google Maps",
+      "url": "https://maps.google.fr/intl/fr_ALL/earth/outreach/learn/visualize-your-data-on-a-custom-map-using-google-my-maps/",
+      "snippet": "Apprenez à créer rapidement une carte à partir des données d'une feuille de calcul, à appliquer un style aux points et aux formes, et …"
+    },
+    {
+      "title": "Indoor – Google Maps",
+      "url": "https://maps.google.fr/help/maps/indoormaps/",
+      "snippet": "Indoor Google Maps create a more convenient and enjoyable visitor experience at no cost! Your visitors can spend more time …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.fr/intl/fr/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Plans d'étages pour Google Maps",
+      "url": "https://maps.google.fr/help/maps/floorplans/",
+      "snippet": "Ajoutez les plans vous-même Trouvez le bâtiment sur la carte. Transférez une image de votre plan d'étage ou d'orientation. Alignez …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-h3-fight-flow-lora",
+  "slug": "runninghubai-rh-h3-fight-flow-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-h3-fight-flow-lora",
+  "created_at": "2026-10-13T01:29:01.000Z",
+  "updated_at": "2026-10-13T01:30:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158195966,
+  "storage_human": "158 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-h3-fight-flow-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-h3-fight-flow-lora",
+      "snippet": "rh-h3-fight-flow-lora Description ... About this model Experimental Continuous Fight Interaction LoRA Experimental Continuous Fight Interaction LoRA push H3 from \"can fight\" to \"knows how to fight.\" push H3 from \"can fight\" to \"knows how to fight.\" Three interaction triggers Three interaction triggers - Unarmed combat interaction."
+    },
+    {
+      "title": "RunningHubAI/rh-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-lora",
+      "snippet": "RunningHubAI / rh-lora Like 0 comfyui lora Model card FilesFiles and versions xet Community Copy to bucket new rh-lora Description About this model Files License Training at RunningHub"
+    },
+    {
+      "title": "H3 Fight Flow/套招/战斗交互增强 - runninghub.ai",
+      "url": "https://www.runninghub.ai/model/public/2104849019909824514",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Anthropic AI Model Hands Fake Tip to Philadelphia Police Force",
+      "url": "https://www.pcmag.com/news/anthropic-ai-model-hands-fake-tip-to-philadelphia-police-force",
+      "snippet": "Anthropic AI Model Hands Fake Tip to Philadelphia Police Force The Philadelphia Police Department (PPD) called the two-month delay in detecting and reporting the incident to the city &#x27;unacceptable ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

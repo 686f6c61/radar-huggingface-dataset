@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nebulette/7k-image-similarity",
+  "slug": "nebulette-7k-image-similarity",
+  "author": "nebulette",
+  "url": "https://huggingface.co/nebulette/7k-image-similarity",
+  "created_at": "2026-10-13T01:32:36.000Z",
+  "updated_at": "2026-10-13T10:25:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 147200640,
+  "parameters_human": "147.2M",
+  "storage_bytes": 588816552,
+  "storage_human": "589 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "nebulette (Nébulette) - Hugging Face",
+      "url": "https://huggingface.co/nebulette",
+      "snippet": "Mist est la première lettre de ML. Recent Activity. updated a model about 17 hours ago. nebulette/segmentation-aware-dit-b"
+    },
+    {
+      "title": "nebulette (Nébulette) - Hugging Face",
+      "url": "https://huggingface.co/nebulette/models",
+      "snippet": "nebulette/tipsv2-b14-vision-module Zero-Shot Image Classification • 86.3M•Updated Apr 22• 4"
+    },
+    {
+      "title": "nebulette AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/nebulette",
+      "snippet": "Browse AI models attributed to nebulette, sourced from verified model catalogs."
+    },
+    {
+      "title": "Best AI for Image Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-image-generation",
+      "snippet": "The best AI for image generation in 2026, ranked by blind human votes. Compare Flux, Imagen, GPT-Image, Midjourney, Recraft, and every major text-to-image and image-editing model — with live arena scores, per-image pricing, and side-by-side examples."
+    },
+    {
+      "title": "GitHub - ChaitanyaNarva/image-similarity-model",
+      "url": "https://github.com/ChaitanyaNarva/image-similarity-model",
+      "snippet": "Model training to find N similar images. Finding Nearest neighbors and taking N nearest points as similar images given on a query image. Prediction Algorithm: Step-1: taking either filename or url and converting that image into image array. Step-2: Using that array finding the feature from the intermediate layers of the trained autoencoder model."
+    }
+  ]
+}

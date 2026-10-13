@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Spjoshi23/side-lightweight-multimodal-2023",
+  "slug": "spjoshi23-side-lightweight-multimodal-2023",
+  "author": "Spjoshi23",
+  "url": "https://huggingface.co/Spjoshi23/side-lightweight-multimodal-2023",
+  "created_at": "2026-10-13T18:55:31.000Z",
+  "updated_at": "2026-10-13T18:55:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edwardsjessica/lightweight-multimodal-2023 · Hugging Face",
+      "url": "https://huggingface.co/edwardsjessica/lightweight-multimodal-2023",
+      "snippet": "A structured set of research notes on Lightweight Multimodal, with concrete evaluation references and open questions. Plans and hypotheses are kept separate from completed results."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Best AI for Image Generation in 2026 — Ranked by Blind Human Votes",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-image-generation",
+      "snippet": "The best AI for image generation in 2026, ranked by blind human votes. Compare Flux, Imagen, GPT-Image, Midjourney, Recraft, and every major text-to-image and image-editing model — with live arena scores, per-image pricing, and side-by-side examples."
+    },
+    {
+      "title": "Modly — Free Local AI 3D Model Generator | Open Source, Offline",
+      "url": "https://modly3d.app/",
+      "snippet": "Modly generates 3D meshes from your photos or a text prompt using open-source AI models. All locally, unlimited and completely free."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "AI Model Release Timeline The latest AI models, newest first — who shipped what, and when. Updated Oct 12, 2026 05:14 UTC · updates hourly"
+    }
+  ]
+}

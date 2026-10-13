@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "saanvibhat/retrieval-tutorial",
+  "slug": "saanvibhat-retrieval-tutorial",
+  "author": "saanvibhat",
+  "url": "https://huggingface.co/saanvibhat/retrieval-tutorial",
+  "created_at": "2026-10-13T01:15:54.000Z",
+  "updated_at": "2026-10-13T01:15:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) Automatic Image Caption Generation Using Deep Learning",
+      "url": "https://www.researchgate.net/publication/361453698_Automatic_Image_Caption_Generation_Using_Deep_Learning",
+      "snippet": "22.05.2026 ... This model makes use of VGG16 Hybrid Places 1365 as encoder and LSTM as decoder. To ensure the complete ground truth accuracy, the model is ..."
+    },
+    {
+      "title": "ID-LoRA: Intrinsic Dimension-Based Pruning with Low ... - TechRxiv",
+      "url": "https://www.techrxiv.org/doi/pdf/10.36227/techrxiv.176521385.54906010",
+      "snippet": "call@10 capture broader retrieval effectiveness. In CLIP training, the model learns a joint embedding space where paired images and texts are aligned ..."
+    },
+    {
+      "title": "Aniket Kothawade - Firmware Engineer 1 @Semtech | VIT Pune'26 | C",
+      "url": "https://in.linkedin.com/in/aniket-kothawade-kav",
+      "snippet": "Firmware Engineer 1 @Semtech | VIT Pune'26 | C | C++ | Unix | DSA | X-86 Toolchain · I am Computer Engineering student passionate about problem-solving, ..."
+    },
+    {
+      "title": "Gagandeep KAUR | Symbiosis Institute of Technology - ResearchGate",
+      "url": "https://www.researchgate.net/profile/Gagandeep-Kaur-103",
+      "snippet": "Annotation-based image retrieval systems are ineffective because normal pixel-by-pixel matching... ... In pr... View · AI/ML Sentiment Analysis Model for Medical ..."
+    },
+    {
+      "title": "Sanskar Yerule - Desk Quant Analyst @ Squarepoint Capital",
+      "url": "https://in.linkedin.com/in/sanskar-yerule",
+      "snippet": "Desk Quant Analyst @ Squarepoint Capital · Experience: Squarepoint · Education: Indian Institute of Technology, Kharagpur · Location: Greater Hyderabad Area ..."
+    }
+  ]
+}

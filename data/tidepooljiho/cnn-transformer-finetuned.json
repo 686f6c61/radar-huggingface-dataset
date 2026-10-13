@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "tidepooljiho/cnn-transformer-finetuned",
+  "slug": "tidepooljiho-cnn-transformer-finetuned",
+  "author": "tidepooljiho",
+  "url": "https://huggingface.co/tidepooljiho/cnn-transformer-finetuned",
+  "created_at": "2026-10-13T18:30:15.000Z",
+  "updated_at": "2026-10-13T18:30:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tidepooljiho/cnn-transformer-finetuned · Hugging Face",
+      "url": "https://huggingface.co/tidepooljiho/cnn-transformer-finetuned",
+      "snippet": "Overview A small Cnn Transformer implementation for Generation, packaged with an explicit configuration and an initialization checkpoint. The tiny variant is a reproducible starting point, not a trained model release."
+    },
+    {
+      "title": "Alicethomas/cnn-transformer-finetuned · Hugging Face",
+      "url": "https://huggingface.co/Alicethomas/cnn-transformer-finetuned",
+      "snippet": "Alicethomas / cnn-transformer-finetuned like 0 Safetensors PyTorch cnn_transformer cnn-transformer generation License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Cnn Transformer for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files ..."
+    },
+    {
+      "title": "How to Fine-Tune an LLM from Hugging Face - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/how-to-fine-tune-an-llm-from-hugging-face/",
+      "snippet": "Pretrained language models can be adapted to specific tasks or domains through fine-tuning. Hugging Face Transformers provides pretrained models and tools for preparing datasets, training models, evaluating their performance and saving the resulting checkpoints. Fine-tuning uses task specific data to adapt a pretrained model without training it from scratch. Selecting a Pretrained LLM The ..."
+    },
+    {
+      "title": "Fine-tune a model with supervised fine-tuning in Microsoft Foundry",
+      "url": "https://learn.microsoft.com/en-us/azure/foundry/openai/how-to/fine-tuning",
+      "snippet": "Go to Build > Fine-tune, and select Fine-tune. Select a supported base model and Supervised fine-tuning. Select a training type supported by your model and resource. Select Existing dataset or Upload new dataset for the training and validation files. Inspect the preview and resolve validation errors."
+    },
+    {
+      "title": "Transformer (deep learning) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Transformer_(deep_learning)",
+      "snippet": "Knowledge distillation is a method for training a smaller model, called a \"student\", to reproduce the output behavior of a larger \"teacher\" model. In transformer models, the student can be trained using the teacher&#x27;s output probability distribution, intermediate representations, or attention patterns in addition to the original training labels."
+    }
+  ]
+}

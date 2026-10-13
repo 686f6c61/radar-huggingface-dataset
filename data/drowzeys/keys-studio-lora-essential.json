@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "drowzeys/keys-studio-lora-essential",
+  "slug": "drowzeys-keys-studio-lora-essential",
+  "author": "drowzeys",
+  "url": "https://huggingface.co/drowzeys/keys-studio-lora-essential",
+  "created_at": "2026-10-13T02:03:39.000Z",
+  "updated_at": "2026-10-13T12:02:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22210683802,
+  "storage_human": "22.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=modified&search=lora",
+      "snippet": "Together AI · Fireworks · Featherless AI · Zai. + 9 + 11 + 10. Hardware ... drowzeys/keys-studio-lora-essential. Updated in about 3 hours · RunningHubAI/rh ..."
+    },
+    {
+      "title": "Hôtel Hôtel Mercure Granville Le Grand Large de Manche, Orne avec ...",
+      "url": "https://www.tellows.fr/num/0233911919",
+      "snippet": "Hôtel Mercure Granville Le Grand Large Hôtel A 500 m du Musée Christian Dior, l'Hôtel Mercure Granville Le Grand Large dispose …"
+    },
+    {
+      "title": "bidual/awesome-dgx-spark - GitHub",
+      "url": "https://github.com/bidual/awesome-dgx-spark",
+      "snippet": "vor 4 Tagen ... getainode/ainode - Browser-UI AI appliance for GB10 doing inference and LoRA ... drowzeys/keys-vLLm.0.27-Qwen3.8-27B-ADay777Ablit-NVFP4-A4Q-NVFP4- ..."
+    },
+    {
+      "title": "Mercure Le Grand Large Granville, Granville — Réserver une table",
+      "url": "https://reserver-table.fr/restaurant/mercure-le-grand-large-granville-reserve-granville-1",
+      "snippet": "Détails Téléphone:+33233911919 Adresse:5 Rue De La Falaise, 50400 Granville, France Réservation, Réserver Ville:Granville Site …"
+    },
+    {
+      "title": "Vérifier un numéro de téléphone : surtaxé, spam ou fiable",
+      "url": "https://mailarnaque.fr/outils/verifier-telephone",
+      "snippet": "Identifiez les numéros surtaxés et frauduleux. Vérifiez le type, la région et le coût d'un numéro français."
+    }
+  ]
+}

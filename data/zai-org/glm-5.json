@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zai-org/GLM-5",
+  "slug": "zai-org-glm-5",
+  "author": "zai-org",
+  "url": "https://huggingface.co/zai-org/GLM-5",
+  "created_at": "2026-02-11T04:55:46.000Z",
+  "updated_at": "2026-08-11T07:36:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2136,
+  "downloads_30d": 718973,
+  "trending_score": 14,
+  "parameters": 753864139008,
+  "parameters_human": "753.86B",
+  "storage_bytes": 1507756766358,
+  "storage_human": "1507.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
+      "url": "https://z.ai/",
+      "snippet": "Meet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant answers."
+    },
+    {
+      "title": "zai-org/GLM-5 - From Vibe Coding to Agentic Engineering - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "Stronger Coding: GLM-5.3 is the most capable open-weights model for coding, with a 50% improvement over GLM-5.2 on our in-house Z.ai Code Bench. · Emergent Cyber ..."
+    },
+    {
+      "title": "Z.ai API Platform — Start building with GLM-5.3",
+      "url": "https://z.ai/company",
+      "snippet": "At Z.ai, we are developing safe and beneficial Artificial General Intelligence to help solve humanity's most complex challenges. GLM …"
+    },
+    {
+      "title": "Z.ai - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Z.ai",
+      "snippet": "Z.AI Co., Ltd., branded internationally as Z.ai, is a Chinese artificial intelligence company; their flagship product is the GLM (General Language Model) ..."
+    },
+    {
+      "title": "智谱丨BigModel 平台",
+      "url": "https://open.bigmodel.cn/",
+      "snippet": "智谱大模型开放平台-新一代国产自主通用AI大模型开放平台，是国内大模型排名前列的大模型网站，研发了多款LLM模型，多模态视 …"
+    }
+  ]
+}

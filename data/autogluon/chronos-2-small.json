@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "autogluon/chronos-2-small",
+  "slug": "autogluon-chronos-2-small",
+  "author": "autogluon",
+  "url": "https://huggingface.co/autogluon/chronos-2-small",
+  "created_at": "2025-12-03T10:53:00.000Z",
+  "updated_at": "2025-12-03T11:57:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": "chronos-forecasting",
+  "languages": [],
+  "tags": [
+    "chronos-forecasting",
+    "safetensors",
+    "t5",
+    "time series",
+    "forecasting",
+    "foundation models",
+    "pretrained models",
+    "time-series-forecasting",
+    "dataset:autogluon/chronos_datasets",
+    "dataset:Salesforce/GiftEvalPretrain",
+    "arxiv:2510.15821",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 2874153,
+  "trending_score": 17,
+  "parameters": 27934624,
+  "parameters_human": "27.9M",
+  "storage_bytes": 111749048,
+  "storage_human": "112 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "autogluon/chronos-2-small · Hugging Face",
+      "url": "https://huggingface.co/autogluon/chronos-2-small",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Forecasting with Chronos-2 - AutoGluon 1.6.1 documentation",
+      "url": "https://auto.gluon.ai/stable/tutorials/timeseries/forecasting-chronos.html",
+      "snippet": "Forecasting with Chronos-2 ¶ AutoGluon-TimeSeries (AG-TS) includes the Chronos family of forecasting models. Chronos models are pretrained on a large collection of real and synthetic time series data, enabling accurate out-of-the-box forecasts on new data."
+    },
+    {
+      "title": "Forecasting with Chronos-2 - AutoGluon 1.5.0 documentation",
+      "url": "https://auto.gluon.ai/1.5/tutorials/timeseries/forecasting-chronos.html",
+      "snippet": "Note New in v1.5: AutoGluon now features Chronos-2 — the latest version of Chronos models with zero-shot support for covariates and a 90%+ win-rate over Chronos-Bolt. The older version of this tutorial with the Chronos-Bolt model is available here."
+    },
+    {
+      "title": "autogluon/chronos-2 · Hugging Face",
+      "url": "https://huggingface.co/autogluon/chronos-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "GitHub - vaibhav06062005-ctrl/ai-model-autogluon-chronos-2-small: AI ...",
+      "url": "https://github.com/vaibhav06062005-ctrl/ai-model-autogluon-chronos-2-small",
+      "snippet": "Model names, weights, code, datasets, and other upstream materials remain subject to their original licenses and terms. This catalog entry does not grant additional rights to use them. AI model catalog entry for autogluon/chronos-2-small on Hugging Face"
+    }
+  ]
+}

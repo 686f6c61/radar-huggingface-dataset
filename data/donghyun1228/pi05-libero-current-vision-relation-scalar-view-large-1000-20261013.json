@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-current-vision-relation-scalar-view-large-1000-20261013",
+  "slug": "donghyun1228-pi05-libero-current-vision-relation-scalar-view-large-1000-20261013",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-current-vision-relation-scalar-view-large-1000-20261013",
+  "created_at": "2026-10-13T17:11:36.000Z",
+  "updated_at": "2026-10-13T17:12:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "libero",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7725124202,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "废文网 - 原创文学阅读与写作社区｜网络小说推荐 · 书评交流",
+      "url": "https://cn-feiwenwang.cn/",
+      "snippet": "原创文学 · 阅读与写作的安静角落 废文网 一个围绕原创文学与网络小说推荐生长起来的阅读社区。 在这里，书评交流不是打分，写作 …Read more"
+    },
+    {
+      "title": "废文网-有趣有品有点丧",
+      "url": "https://sosad.fun/",
+      "snippet": ""
+    },
+    {
+      "title": "废文网_无弹窗书友最值得收藏的网络小说阅读网",
+      "url": "https://m.xatzt.com/",
+      "snippet": "废文网是一个自由自在的小说阅读网站。 整合了全面优质的小说资源，根据分类筛选了解，看小说更轻松自在，放松心情。"
+    },
+    {
+      "title": "废文网SosadFun-有趣有品有点丧_书你所爱_废文小说网",
+      "url": "https://www7.sadfunyou.com/",
+      "snippet": "废文网SosadFun，有趣有品有点丧，书你所爱，废文小说网。"
+    },
+    {
+      "title": "废文网_SoSadFun_书你所爱_废文小说网",
+      "url": "https://www.feiwenshu.com/",
+      "snippet": "废文吧，是新海棠书屋，自由的小说阅读网站！海棠耽美，海棠BL，海棠GL，海棠书屋的热门书籍尽收于海棠看书废文网李鬼 ..."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tncyypttvk/Prom-1.5B",
+  "slug": "tncyypttvk-prom-1-5b",
+  "author": "tncyypttvk",
+  "url": "https://huggingface.co/tncyypttvk/Prom-1.5B",
+  "created_at": "2026-10-13T15:35:27.000Z",
+  "updated_at": "2026-10-13T15:39:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Société AGCO S.A.S. (317358380) à BEAUVAIS (60000).",
+      "url": "https://www.societe.com/societe/agco-s-a-s-317358380.html",
+      "snippet": "Feb 1, 2024 · AGCO S.A.S. à BEAUVAIS (317358380). RCS, K-BIS, RNE, SIREN, SIRET, bilans, statuts, chiffre d'affaires, valeur, …Read more"
+    },
+    {
+      "title": "Siège social - AGCO S.A.S. à 60000 BEAUVAIS - SIRET 317 358 380 …",
+      "url": "https://annuaire-entreprises.data.gouv.fr/etablissement/31735838000077",
+      "snippet": "Il a été créé le 1 février 2024, il y a 3 ans. C’est le siège social de la société AGCO S.A.S., qui possède 6 autre (s) établissement (s). …"
+    },
+    {
+      "title": "Etablissement AGCO S.A.S. à BEAUVAIS (60000) sur …",
+      "url": "https://www.societe.com/etablissement/agco-s-a-s-31735838000077.html",
+      "snippet": "Feb 1, 2024 · L'établissement, situé au 2 RUE CHARLES TELLIER à BEAUVAIS (60000) , est l' établissement siège de l'entreprise …"
+    },
+    {
+      "title": "Société AGCO S.A.S. à 60000 BEAUVAIS - SIREN 317 358 380",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/agco-s-a-s-317358380",
+      "snippet": "L’administration permet aux particuliers et agents publics de vérifier les informations légales de AGCO S.A.S., 2 RUE CHARLES …"
+    },
+    {
+      "title": "Société AGCO S.A.S. : Chiffre d'affaires, statuts, extrait d ...",
+      "url": "https://www.pappers.fr/entreprise/agco-sas-317358380",
+      "snippet": "Oct 2, 2026 · AGCO S.A.S. à BEAUVAIS (60000) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, …"
+    }
+  ]
+}

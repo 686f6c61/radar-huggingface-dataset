@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "CollectionStudio/t5-small",
+  "slug": "collectionstudio-t5-small",
+  "author": "CollectionStudio",
+  "url": "https://huggingface.co/CollectionStudio/t5-small",
+  "created_at": "2026-10-13T17:02:10.000Z",
+  "updated_at": "2026-10-13T17:02:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "rust",
+    "onnx",
+    "safetensors",
+    "t5",
+    "summarization",
+    "translation",
+    "en",
+    "fr",
+    "ro",
+    "de",
+    "multilingual",
+    "dataset:c4",
+    "arxiv:1805.12471",
+    "arxiv:1708.00055",
+    "arxiv:1704.05426",
+    "arxiv:1606.05250",
+    "arxiv:1808.09121",
+    "arxiv:1810.12885",
+    "arxiv:1905.10044",
+    "arxiv:1910.09700",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506880,
+  "parameters_human": "60.5M",
+  "storage_bytes": 2244779819,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chronos-2-small (CollectionStudio) — описание, характеристики и ...",
+      "url": "https://ailist.pro/catalog/CollectionStudio%2Fchronos-2-small",
+      "snippet": "02.07.2026 ... ... AI помогает создавать, оценивать, развёртывать и контролировать ... This is the small variant of the Chronos-2 model with 28M parameters."
+    },
+    {
+      "title": "Factors Associated with Musculoskeletal Injuries in Pre-Professional ...",
+      "url": "https://www.mdpi.com/2076-3417/13/5/3018",
+      "snippet": "In T5, dancers were re-examined according to the first session protocol. To capture the effect of the pandemic on the dancers, they were asked a new open ..."
+    },
+    {
+      "title": "Livres, Collections, Livres, BD, revues - PicClick FR",
+      "url": "https://picclick.fr/Livres-BD-revues/Collections/Livres/",
+      "snippet": "Model przedstawia konia w dekoracyjnej formie i może stanowić efektowną ozdobę półki, komody, regału lub witryny. To także ciekawy pomysł naprezent dla ..."
+    },
+    {
+      "title": "Sonstige, Photographica, Foto & Camcorder - PicClick DE",
+      "url": "https://picclick.de/Foto-Camcorder/Photographica/Sonstige/",
+      "snippet": "MovieGen AI Software für visuelle Inhalte - Meta, Grafik-Tool, KI ... - Well preserved, also rare and small, certainly rare - for the professional photographer ..."
+    },
+    {
+      "title": "Guitares acoustiques, Guitares, basses, accessoires, Instruments de ...",
+      "url": "https://picclick.fr/Instruments-de-musique/Guitares-basses-accessoires/Guitares-acoustiques/",
+      "snippet": "Taylor GS Mini -e Walnut pickup model · Fender California PALOMINO inutilisée ... ai toujours adoré ! Epiphone J45... Guitare acoustique Taylor Baby Bt1E ..."
+    }
+  ]
+}

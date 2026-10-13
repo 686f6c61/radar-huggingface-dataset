@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TEQUILA123/suxin-light",
+  "slug": "tequila123-suxin-light",
+  "author": "TEQUILA123",
+  "url": "https://huggingface.co/TEQUILA123/suxin-light",
+  "created_at": "2026-10-13T01:45:53.000Z",
+  "updated_at": "2026-10-13T01:50:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "onnxruntime",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "tts",
+    "piper",
+    "vits",
+    "mandarin",
+    "bilingual",
+    "code-switching",
+    "on-device",
+    "edge",
+    "arm64",
+    "quantization",
+    "text-to-speech",
+    "zh",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155412955,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TEQUILA123 (ZONG PING) - Hugging Face",
+      "url": "https://huggingface.co/TEQUILA123",
+      "snippet": "AI & ML interests ... Recent Activity liked a model about 6 hours ago ... updated a model about 6 hours ago"
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "Tequila - Arknights - V1 TEQUILA - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1022761577150948970",
+      "snippet": "Download Tequila - Arknights - free LORA Illustrious AI model on TENSOR. TEQUILA, ILLUSTRIOUS, MALE. By Lineko"
+    },
+    {
+      "title": "Your AI Art Playground - Luna Models",
+      "url": "https://www.lunamodels.art/",
+      "snippet": "Welcome to Luna Models Your creative playground for adorable AI art. Generate stunning images, discover inspiration, and find unique assets to bring your imagination to life!"
+    },
+    {
+      "title": "Tequila | Arknights - V1 - Free AI Model | Tensor.Art",
+      "url": "https://tensor.art/models/964069669008883208",
+      "snippet": "Download Tequila | Arknights - free LORA Illustrious AI model on TENSOR. By Shun"
+    }
+  ]
+}

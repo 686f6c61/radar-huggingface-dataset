@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AnirbanSaha/mistral-nemo-12b-tlink-sentence-only-autoregressive",
+  "slug": "anirbansaha-mistral-nemo-12b-tlink-sentence-only-autoregressive",
+  "author": "AnirbanSaha",
+  "url": "https://huggingface.co/AnirbanSaha/mistral-nemo-12b-tlink-sentence-only-autoregressive",
+  "created_at": "2026-10-13T16:42:55.000Z",
+  "updated_at": "2026-10-13T16:45:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "dataset:AnirbanSaha/tlink-classification-sentence-only",
+    "base_model:mistralai/Mistral-Nemo-Instruct-2407",
+    "base_model:finetune:mistralai/Mistral-Nemo-Instruct-2407",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 24510414112,
+  "storage_human": "24.5 GB",
+  "base_model": "mistralai/Mistral-Nemo-Instruct-2407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quiz sur Porto - JetPunk",
+      "url": "https://www.jetpunk.com/user-quizzes/1892109/quiz-sur-porto",
+      "snippet": "Feb 23, 2026 · Répondez aux différentes questions sur la ville de Porto Créé par Qraz5441 Profil Quiz S'abonner?"
+    },
+    {
+      "title": "Quiz sur Porto – Que savez-vous ? | FamiTravels",
+      "url": "https://famitravels.com/ville/oporto/trivial",
+      "snippet": "Que savez-vous de Porto ? Ce quiz interactif sur Porto comprend des questions sur son histoire, ses monuments, sa gastronomie et …"
+    },
+    {
+      "title": "Connaissez-vous bien Porto ? Faites le Quiz Ultime du Portugal",
+      "url": "https://thehappytraveler.ca/fr/conseils-de-voyage/quiz-fr/quiz-porto/",
+      "snippet": "Pensez-vous connaître Porto ? Testez vos connaissances avec ce quiz interactif sur son histoire, ses monuments et sa culture."
+    },
+    {
+      "title": "Quiz Game Porto | Uma Experiência Única Para Grupos",
+      "url": "https://quiz-game.pt/",
+      "snippet": "Este é o jogo real mais épico de sempre. Descobre o Quiz Game, o primeiro jogo de perguntas imersivo, como num verdadeiro …"
+    },
+    {
+      "title": "Multiple Choice City Quiz – Porto - JetPunk",
+      "url": "https://www.jetpunk.com/user-quizzes/1336965/multiple-choice-city-quiz-porto",
+      "snippet": "May 6, 2025 · Multiple Choice City Quiz – Porto Can you answer these multiple choice questions about the city of Porto? Looking for …"
+    }
+  ]
+}

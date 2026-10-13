@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "seyunprobiz/connectailab-rl-seyunbrain-v1",
+  "slug": "seyunprobiz-connectailab-rl-seyunbrain-v1",
+  "author": "seyunprobiz",
+  "url": "https://huggingface.co/seyunprobiz/connectailab-rl-seyunbrain-v1",
+  "created_at": "2026-10-13T15:28:41.000Z",
+  "updated_at": "2026-10-13T15:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reinforcement-learning",
+    "deep-reinforcement-learning",
+    "grpo",
+    "decision-making",
+    "gymnasium",
+    "connect-tycoon",
+    "connect-ai-lab",
+    "connectailab",
+    "lora",
+    "qwen3.5",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41684315,
+  "storage_human": "42 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "twitch官网怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/950271456576336012.html",
+      "snippet": "Apr 1, 2025 · twitch官网怎么进要进入Twitch官网，可以直接按照以下步骤操作：输入官方网址：在您的网络浏览器地址栏中输入 …"
+    },
+    {
+      "title": "国内手机如何下载twitch - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0ee9f652e29155451.html",
+      "snippet": "Jun 3, 2020 · 国内手机下载twitch具体步骤如下： 工具：华为P30手机、应用商店、twitch软件。 1、打开华为手机上面的app store， …"
+    },
+    {
+      "title": "twitch国内观看方法介绍-twitch直播平台国内怎么看_百度知道",
+      "url": "https://zhidao.baidu.com/question/1767381576956797348.html",
+      "snippet": "Oct 20, 2024 · twitch国内观看方法介绍-twitch直播平台国内怎么看想要在国内观看twitch直播，首先需要在浏览器地址栏输入“twitch”， …"
+    },
+    {
+      "title": "Why did Amazon acquire Twitch, a gaming video website, for $1 ... - 知乎",
+      "url": "https://www.zhihu.com/en/answer/29715429",
+      "snippet": "Even if Twitch is just seen as a gaming video streaming site, it is still very useful for Amazon to occupy users' screen time. However, …"
+    }
+  ]
+}

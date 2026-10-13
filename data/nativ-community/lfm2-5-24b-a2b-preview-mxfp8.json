@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "nativ-community/LFM2.5-24B-A2B-Preview-mxfp8",
+  "slug": "nativ-community-lfm2-5-24b-a2b-preview-mxfp8",
+  "author": "nativ-community",
+  "url": "https://huggingface.co/nativ-community/LFM2.5-24B-A2B-Preview-mxfp8",
+  "created_at": "2026-10-13T18:41:32.000Z",
+  "updated_at": "2026-10-13T18:50:02.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2_moe",
+    "mlx-vlm",
+    "lfm2.5",
+    "moe",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:lq-preview/LFM2.5-24B-A2B-Preview",
+    "base_model:quantized:lq-preview/LFM2.5-24B-A2B-Preview",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23971587712,
+  "parameters_human": "23.97B",
+  "storage_bytes": 24739205808,
+  "storage_human": "24.7 GB",
+  "base_model": "lq-preview/LFM2.5-24B-A2B-Preview",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/Have-you-ever-striped-in-front-of-your-friends",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité.Read more"
+    },
+    {
+      "title": "She's the Man: I'm Viola Scene (HD CLIP) - YouTube",
+      "url": "https://m.youtube.com/watch?v=ryQhdZjldRE",
+      "snippet": "Aug 13, 2021 · She’s the Man: I’m Viola Scene What’s happening in this She’s the Man movie clip? During the soccer game, Viola …"
+    },
+    {
+      "title": "STRIPPER VLOG | Competing in amateur night - YouTube",
+      "url": "https://m.youtube.com/watch?v=PRgtYpX2c-0",
+      "snippet": "Nov 21, 2019 · Hi guys! Come with me to my old club to compete at amateur night for a cash prize...Thanks for watching!Don’t forget …"
+    },
+    {
+      "title": "Six nudists arrested for stripping down at the wrong Florida beach",
+      "url": "https://nypost.com/2025/10/30/us-news/six-nudists-arrested-for-stripping-down-at-the-wrong-florida-beach/",
+      "snippet": "Oct 30, 2025 · Wrong beach to go nude — no butts about it! Six people were arrested for stripping naked on a Florida beach while a …"
+    },
+    {
+      "title": "Outrage as woman 'stripped' and dragged away by police in …",
+      "url": "https://www.mirror.co.uk/news/uk-news/woman-stripped-dragged-away-police-23820299",
+      "snippet": "Mar 30, 2021 · Police have sparked outrage after a woman was 'stripped' down to her underwear and carried away by four officers …"
+    }
+  ]
+}
