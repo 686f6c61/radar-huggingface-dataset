@@ -5,7 +5,7 @@
   "author": "Sankar-2910",
   "url": "https://huggingface.co/Sankar-2910/genz-translator",
   "created_at": "2026-09-02T17:34:58.000Z",
-  "updated_at": "2026-10-10T14:55:16.000Z",
+  "updated_at": "2026-10-12T16:52:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,7 +32,7 @@
     "region:us"
   ],
   "likes": 2,
-  "downloads_30d": 4414,
+  "downloads_30d": 4405,
   "trending_score": 0,
   "parameters": 29653568,
   "parameters_human": "29.7M",

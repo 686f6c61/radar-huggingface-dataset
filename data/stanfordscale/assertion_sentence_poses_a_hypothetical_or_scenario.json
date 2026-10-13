@@ -42,8 +42,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-10-13T05:50:24.068Z",
   "benchmarks": [
     {
       "task": null,

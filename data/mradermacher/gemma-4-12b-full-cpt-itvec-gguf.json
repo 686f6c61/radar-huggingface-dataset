@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/gemma-4-12b-full-cpt-itvec-GGUF",
   "created_at": "2026-09-08T11:36:27.000Z",
-  "updated_at": "2026-09-08T12:20:16.000Z",
+  "updated_at": "2026-10-12T16:48:55.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -27,7 +27,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 399,
+  "downloads_30d": 394,
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",

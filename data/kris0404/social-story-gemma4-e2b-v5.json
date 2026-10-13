@@ -5,7 +5,7 @@
   "author": "Kris0404",
   "url": "https://huggingface.co/Kris0404/social-story-gemma4-e2b-v5",
   "created_at": "2026-09-15T09:48:01.000Z",
-  "updated_at": "2026-09-16T05:28:38.000Z",
+  "updated_at": "2026-10-12T22:10:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,7 +31,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 553,
+  "downloads_30d": 560,
   "trending_score": 0,
   "parameters": 4647449891,
   "parameters_human": "4.65B",

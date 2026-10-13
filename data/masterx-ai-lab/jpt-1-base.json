@@ -5,7 +5,7 @@
   "author": "MasterX-AI-lab",
   "url": "https://huggingface.co/MasterX-AI-lab/JPT-1-base",
   "created_at": "2026-08-19T15:33:29.000Z",
-  "updated_at": "2026-09-04T12:16:11.000Z",
+  "updated_at": "2026-10-12T14:59:12.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,7 +17,7 @@
   "tags": [
     "qwen3",
     "safetensors",
-    "Base",
+    "gptm",
     "text-generation",
     "en",
     "ru",

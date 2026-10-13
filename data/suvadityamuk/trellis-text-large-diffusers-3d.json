@@ -5,7 +5,7 @@
   "author": "suvadityamuk",
   "url": "https://huggingface.co/suvadityamuk/TRELLIS-text-large-diffusers-3d",
   "created_at": "2026-09-16T17:04:15.000Z",
-  "updated_at": "2026-09-16T17:04:19.000Z",
+  "updated_at": "2026-10-13T05:08:51.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-to-3d",
@@ -25,7 +25,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 26,
+  "downloads_30d": 33,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

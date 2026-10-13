@@ -5,7 +5,7 @@
   "author": "sparshsinghal",
   "url": "https://huggingface.co/sparshsinghal/deepfakeguard-finetuned",
   "created_at": "2026-09-03T16:51:41.000Z",
-  "updated_at": "2026-10-10T09:52:17.000Z",
+  "updated_at": "2026-10-12T17:26:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "audio-classification",
@@ -23,12 +23,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 16,
+  "downloads_30d": 19,
   "trending_score": 0,
-  "parameters": 315701634,
-  "parameters_human": "315.7M",
-  "storage_bytes": 1262859296,
-  "storage_human": "1.3 GB",
+  "parameters": 94569090,
+  "parameters_human": "94.6M",
+  "storage_bytes": 1641161608,
+  "storage_human": "1.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

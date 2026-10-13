@@ -5,7 +5,7 @@
   "author": "sigmanih",
   "url": "https://huggingface.co/sigmanih/google-gemma-4-12B-it-GGUF-Q6_K",
   "created_at": "2026-08-31T19:50:51.000Z",
-  "updated_at": "2026-10-11T16:22:38.000Z",
+  "updated_at": "2026-10-12T20:04:37.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

@@ -21,8 +21,8 @@
     "base_model:finetune:google/gemma-2-9b-it",
     "region:us"
   ],
-  "likes": 0,
-  "downloads_30d": 12,
+  "likes": 1,
+  "downloads_30d": 11,
   "trending_score": 0,
   "parameters": 9241705984,
   "parameters_human": "9.24B",

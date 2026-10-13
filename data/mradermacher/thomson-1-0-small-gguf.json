@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Thomson-1.0-Small-GGUF",
   "created_at": "2026-09-08T09:21:49.000Z",
-  "updated_at": "2026-09-08T11:11:27.000Z",
+  "updated_at": "2026-10-12T14:36:06.000Z",
   "license": "polyform-strict-1-0-0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,7 +25,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 612,
+  "downloads_30d": 639,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",

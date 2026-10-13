@@ -5,9 +5,9 @@
   "author": "SNAPKITTYWEST",
   "url": "https://huggingface.co/SNAPKITTYWEST/burt-imma",
   "created_at": "2026-09-07T10:31:45.000Z",
-  "updated_at": "2026-09-07T10:38:08.000Z",
-  "license": "apache-2.0",
-  "license_family": "oss",
+  "updated_at": "2026-10-13T01:43:32.000Z",
+  "license": "sovereign-leviathan-sl-agpl3-001",
+  "license_family": "unknown",
   "pipeline_tag": "text-generation",
   "library": "transformers",
   "languages": [
@@ -29,7 +29,7 @@
     "lean4",
     "en",
     "dataset:SNAPKITTYWEST/sovereign-training-corpus",
-    "license:apache-2.0",
+    "license:other",
     "endpoints_compatible",
     "region:us"
   ],

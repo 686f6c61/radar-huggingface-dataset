@@ -5,7 +5,7 @@
   "author": "IsValorum",
   "url": "https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF",
   "created_at": "2026-09-18T03:31:24.000Z",
-  "updated_at": "2026-10-11T22:26:51.000Z",
+  "updated_at": "2026-10-12T20:14:43.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -60,12 +60,12 @@
     "imatrix"
   ],
   "likes": 4,
-  "downloads_30d": 7124,
+  "downloads_30d": 7360,
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 14751301024,
-  "storage_human": "14.8 GB",
+  "storage_bytes": 15941399840,
+  "storage_human": "15.9 GB",
   "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
   "formats": [
     "gguf"

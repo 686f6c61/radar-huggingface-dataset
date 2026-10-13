@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-EXP-EVE-v1-GGUF",
   "created_at": "2026-08-25T05:00:08.000Z",
-  "updated_at": "2026-08-25T12:59:01.000Z",
+  "updated_at": "2026-10-12T12:24:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,7 +32,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 482,
+  "downloads_30d": 555,
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",

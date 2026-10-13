@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Horus-Cyber-Nano-1.0-GGUF",
   "created_at": "2026-09-08T10:56:19.000Z",
-  "updated_at": "2026-09-08T11:36:33.000Z",
+  "updated_at": "2026-10-12T16:49:10.000Z",
   "license": "tokenai-custom-license",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -34,7 +34,7 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 480,
+  "downloads_30d": 478,
   "trending_score": 0,
   "parameters": 15960110208,
   "parameters_human": "15.96B",

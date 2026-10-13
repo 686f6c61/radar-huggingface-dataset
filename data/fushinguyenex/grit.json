@@ -5,7 +5,7 @@
   "author": "fushinguyenex",
   "url": "https://huggingface.co/fushinguyenex/GRIT",
   "created_at": "2026-08-30T14:39:28.000Z",
-  "updated_at": "2026-10-04T18:33:18.000Z",
+  "updated_at": "2026-10-12T16:13:45.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 24724903374,
-  "storage_human": "24.7 GB",
+  "storage_bytes": 40534211150,
+  "storage_human": "40.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -198,8 +198,7 @@
     "base_model:quantized:codefuse-ai/F2LLM-v2-330M",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us",
-    "conversational"
+    "region:us"
   ],
   "likes": 0,
   "downloads_30d": 28,
@@ -212,7 +211,7 @@
   "formats": [
     "gguf"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

@@ -5,7 +5,7 @@
   "author": "kandinskylab",
   "url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-pretrain-5s-Diffusers",
   "created_at": "2026-09-29T12:12:55.000Z",
-  "updated_at": "2026-10-07T08:38:26.000Z",
+  "updated_at": "2026-10-12T10:17:06.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-to-video",
@@ -26,7 +26,7 @@
     "region:us"
   ],
   "likes": 11,
-  "downloads_30d": 94,
+  "downloads_30d": 97,
   "trending_score": 11,
   "parameters": 30136326248,
   "parameters_human": "30.14B",

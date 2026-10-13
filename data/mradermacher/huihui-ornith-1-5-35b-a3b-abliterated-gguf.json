@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Huihui-Ornith-1.5-35B-A3B-abliterated-GGUF",
   "created_at": "2026-08-25T05:12:04.000Z",
-  "updated_at": "2026-08-25T10:40:33.000Z",
+  "updated_at": "2026-10-12T12:24:11.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -29,7 +29,7 @@
     "conversational"
   ],
   "likes": 2,
-  "downloads_30d": 3994,
+  "downloads_30d": 4149,
   "trending_score": 0,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
