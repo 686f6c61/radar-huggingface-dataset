@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MichelProgramador/ai_rasheed_gpt",
+  "slug": "michelprogramador-ai_rasheed_gpt",
+  "author": "MichelProgramador",
+  "url": "https://huggingface.co/MichelProgramador/ai_rasheed_gpt",
+  "created_at": "2026-10-12T22:02:32.000Z",
+  "updated_at": "2026-10-12T22:02:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alpha-coder-great/al-rasheed-ai · Hugging Face",
+      "url": "https://huggingface.co/alpha-coder-great/al-rasheed-ai",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "alpha-coder-great/al-rasheed-ai at main - Hugging Face",
+      "url": "https://huggingface.co/alpha-coder-great/al-rasheed-ai/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Available today: OpenAI&#x27;s GPT-6.1 Sol and Claude Sonnet 5.5 in ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoft-copilot-blog/available-today-openais-gpt-6-1-sol-and-claude-sonnet-5-5-in-microsoft-copilot/4560801",
+      "snippet": "GPT 6.1 Sol and Claude Sonnet 5.5 will also begin rolling out in phases across Word, Excel, PowerPoint, and Chat in the coming week as part of the user subscription license (USL)--limits apply but are designed to enable broad everyday AI usage across the organization, with the vast majority of users not expected to reach them."
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Omni, Nano Banana, and more"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/login/",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    }
+  ]
+}

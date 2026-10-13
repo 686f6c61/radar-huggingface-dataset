@@ -5,7 +5,7 @@
   "author": "Rohit-Katkar2003",
   "url": "https://huggingface.co/Rohit-Katkar2003/mistral-7b-100steps-gguf",
   "created_at": "2026-10-06T19:20:12.000Z",
-  "updated_at": "2026-10-06T19:20:46.000Z",
+  "updated_at": "2026-10-12T06:29:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,12 +21,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 78,
+  "downloads_30d": 79,
   "trending_score": 0,
   "parameters": 7248023552,
   "parameters_human": "7.25B",
-  "storage_bytes": 4372815616,
-  "storage_human": "4.4 GB",
+  "storage_bytes": 8745631296,
+  "storage_human": "8.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

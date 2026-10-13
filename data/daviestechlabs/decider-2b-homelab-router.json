@@ -5,7 +5,7 @@
   "author": "daviestechlabs",
   "url": "https://huggingface.co/daviestechlabs/decider-2b-homelab-router",
   "created_at": "2026-10-12T16:19:25.000Z",
-  "updated_at": "2026-10-12T16:51:18.000Z",
+  "updated_at": "2026-10-13T01:55:02.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -14,6 +14,8 @@
     "en"
   ],
   "tags": [
+    "safetensors",
+    "qwen3_5_text",
     "decision-model",
     "homelab",
     "dnd",
@@ -30,12 +32,14 @@
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 7547331229,
+  "storage_human": "7.5 GB",
   "base_model": "Mapika/decider-2b",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

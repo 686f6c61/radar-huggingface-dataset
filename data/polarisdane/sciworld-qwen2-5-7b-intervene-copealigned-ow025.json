@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "PolarisDane/sciworld-qwen2.5-7b-intervene-copealigned-ow025",
+  "slug": "polarisdane-sciworld-qwen2-5-7b-intervene-copealigned-ow025",
+  "author": "PolarisDane",
+  "url": "https://huggingface.co/PolarisDane/sciworld-qwen2.5-7b-intervene-copealigned-ow025",
+  "created_at": "2026-10-12T21:34:47.000Z",
+  "updated_at": "2026-10-12T21:34:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60936509496,
+  "storage_human": "60.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen2.5 - a Qwen Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/Qwen/qwen25",
+      "snippet": "Qwen2.5 language models, including pretrained and instruction-tuned models of 7 sizes, including 0.5B, 1.5B, 3B, 7B, 14B, 32B, and 72B."
+    },
+    {
+      "title": "build.nvidia.com",
+      "url": "https://build.nvidia.com/qwen/qwen2_5-7b-instruct.md",
+      "snippet": "For Qwen2.5, we release a number of base language models and instruction-tuned language models ranging from 0.5 to 72 billion parameters. Qwen2.5 brings the following improvements upon Qwen2: * Significantly more knowledge and has greatly improved capabilities in coding and mathematics, thanks to our specialized expert models in these domains."
+    },
+    {
+      "title": "Qwen2.5-7B: Open-Source 7B LLM with 131K Context",
+      "url": "https://dev.co/ai/llms/qwen2-5-7b",
+      "snippet": "Evaluate Qwen2.5-7B, an Apache 2.0 licensed 7.6B parameter base language model with 131K context, multilingual support, and strong coding capabilities."
+    },
+    {
+      "title": "qwen2.5:7b - ollama.com",
+      "url": "https://ollama.com/library/qwen2.5:7b",
+      "snippet": "Qwen2.5 models are pretrained on Alibaba&#x27;s latest large-scale dataset, encompassing up to 18 trillion tokens. The model supports up to 128K tokens and has multilingual support."
+    },
+    {
+      "title": "Qwen2.5-7B — vllm-ascend",
+      "url": "https://docs.vllm.ai/projects/ascend/en/v0.18.0/tutorials/models/Qwen2.5-7B.html",
+      "snippet": "Qwen2.5-7B-Instruct is the flagship instruction-tuned variant of Alibaba Cloud&#x27;s Qwen 2.5 LLM series. It supports a maximum context window of 128K, enables generation of up to 8K tokens, and delivers enhanced capabilities in multilingual processing, instruction following, programming, mathematical computation, and structured data handling."
+    }
+  ]
+}

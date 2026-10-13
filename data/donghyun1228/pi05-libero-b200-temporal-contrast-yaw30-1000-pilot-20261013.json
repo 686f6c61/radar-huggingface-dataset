@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-b200-temporal-contrast-yaw30-1000-pilot-20261013",
+  "slug": "donghyun1228-pi05-libero-b200-temporal-contrast-yaw30-1000-pilot-20261013",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-temporal-contrast-yaw30-1000-pilot-20261013",
+  "created_at": "2026-10-12T21:38:39.000Z",
+  "updated_at": "2026-10-12T21:40:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "temporal-contrast",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13111364931,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "British Rail Class 231 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/British_Rail_Class_231",
+      "snippet": "The Class 231 units are currently used for services on the Rhymney line and the Vale of Glamorgan Line. They mostly operate …"
+    },
+    {
+      "title": "江波りゅう (@ryu_emami) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ryu_emami/",
+      "snippet": "16K Followers, 127 Following, 430 Posts - 江波りゅう (@ryu_emami) on Instagram: \"\""
+    },
+    {
+      "title": "Ryu (@ryu_tfw) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ryu_tfw/",
+      "snippet": "182 Followers, 206 Following, 18 Posts - Ryu (@ryu_tfw) on Instagram: \"\""
+    },
+    {
+      "title": "Ryu Enami - NamuWiki",
+      "url": "https://en.namu.wiki/w/%EC%97%90%EB%82%98%EB%AF%B8%20%EB%A5%98",
+      "snippet": "Mar 27, 2026 · After the post was registered, it was concluded that 'RYU is not a Korean' after going through a simple verification …"
+    },
+    {
+      "title": "Ryû Enami - IMDb",
+      "url": "https://www.imdb.com/name/nm8801729/",
+      "snippet": "Ryû Enami was born on 16 July 1992 in Saitama, Japan. She is an actress, known for Fuku man fujin: Nettori netorare (2018), …"
+    }
+  ]
+}

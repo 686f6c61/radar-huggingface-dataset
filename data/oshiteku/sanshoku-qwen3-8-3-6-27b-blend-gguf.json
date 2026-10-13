@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "oshiteku/Sanshoku-Qwen3.8-3.6-27B-blend-GGUF",
+  "slug": "oshiteku-sanshoku-qwen3-8-3-6-27b-blend-gguf",
+  "author": "oshiteku",
+  "url": "https://huggingface.co/oshiteku/Sanshoku-Qwen3.8-3.6-27B-blend-GGUF",
+  "created_at": "2026-10-12T23:23:57.000Z",
+  "updated_at": "2026-10-12T23:35:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "merge",
+    "image-text-to-text",
+    "en",
+    "ja",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:merge:Qwen/Qwen3.6-27B",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:merge:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 22909853154,
+  "storage_human": "22.9 GB",
+  "base_model": "Qwen/Qwen3.6-27B, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msteams/forum/all/how-do-i-create-a-custom-background-to-use-for/19614570-dd77-4e2e-b649-3cc49c205609",
+      "snippet": "Microsoft CommunityRead more"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/how-do-i-save-everything-on-laptop-including/0d267650-5911-4aa0-be4b-49a29c7ec228",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/excel-table-lagging-with-a-table-header-cell-cell/376a52f3-2b93-4989-bfd9-737d5f2e2a7a",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-icon-shown-in-start-opens-an-old/6413df52-5542-4952-b2f1-556b6e5652f1",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/when-cutting-and-pasting-word-pastes-into-the/3374ea5a-3d89-43ce-b2f1-7b79274aaec1",
+      "snippet": ""
+    }
+  ]
+}

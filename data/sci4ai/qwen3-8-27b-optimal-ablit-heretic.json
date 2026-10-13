@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sci4ai/Qwen3.8-27B-Optimal-Ablit-Heretic",
+  "slug": "sci4ai-qwen3-8-27b-optimal-ablit-heretic",
+  "author": "sci4ai",
+  "url": "https://huggingface.co/sci4ai/Qwen3.8-27B-Optimal-Ablit-Heretic",
+  "created_at": "2026-10-12T23:24:44.000Z",
+  "updated_at": "2026-10-12T23:26:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54753585573,
+  "storage_human": "54.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mradermacher/Qwen3.8-27B-Med-Ablit-Heretic-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Med-Ablit-Heretic-i1-GGUF",
+      "snippet": "mradermacher / Qwen3.8-27B-Med-Ablit-Heretic-i1-GGUF Like 0 Transformers GGUF English abliterated uncensored qwen research imatrix conversational Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF - Hugging Face",
+      "url": "https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+      "snippet": "RVN is a double-refined abliterated variant of Qwen3.8-27B, built on top of trohrbaugh/Qwen3.8-27B-heretic-ara (an ARA abliteration by Tim Rohrbaugh) and further refined with two additional full-weight ARA passes targeting residual refusals."
+    },
+    {
+      "title": "Run Qwen3.8-27B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/gjtgjt/Qwen3.8-27B-heretic",
+      "snippet": "This model is a modified version of the official Qwen/Qwen3.8-27B, utilizing the Heretic v1.4.0 ablation technique. It is not a new pre-trained model or an SFT (Supervised Fine-Tuning) but rather a targeted modification of a subset of language-layer projection weights."
+    },
+    {
+      "title": "Run Qwen3.8-27B-heretic API (Easy Deployment & Flat-Rate Pricing)",
+      "url": "https://featherless.ai/models/krthkyadtya/Qwen3.8-27B-heretic",
+      "snippet": "krthkyadtya/Qwen3.8-27B-heretic is a 27 billion parameter model based on the Qwen3.8 architecture, specifically a modified version of Qwen/Qwen3.8-27B-FP8. This model has been processed using the \"Heretic\" tool for automatic, directional refusal ablation, effectively \"decensoring\" it."
+    },
+    {
+      "title": "Qwen3.8-27B Abliteration Benchmarked: 8 Variants Under the Microscope",
+      "url": "https://nathan.sapwell.net/posts/qwen38-27b-abliteration/",
+      "snippet": "Eight different groups abliterated the same AI model, Alibaba&#x27;s Qwen3.8-27B. I ran all nine models, base plus the eight variants, through the same four tests: weight forensics, KL divergence, a 13-task benchmark suite, and HarmBench with 400 harmful behaviours."
+    }
+  ]
+}

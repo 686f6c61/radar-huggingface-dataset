@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ngirazimr/nemesis-lora-Q8_0-GGUF",
+  "slug": "ngirazimr-nemesis-lora-q8_0-gguf",
+  "author": "ngirazimr",
+  "url": "https://huggingface.co/ngirazimr/nemesis-lora-Q8_0-GGUF",
+  "created_at": "2026-10-12T23:09:05.000Z",
+  "updated_at": "2026-10-13T00:38:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "llama-cpp",
+    "gguf-my-lora",
+    "text-generation",
+    "base_model:ngirazimr/nemesis-lora",
+    "base_model:adapter:ngirazimr/nemesis-lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41943040,
+  "parameters_human": "41.9M",
+  "storage_bytes": 4985978528,
+  "storage_human": "5.0 GB",
+  "base_model": "ngirazimr/nemesis-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemesis/涅默 - v1.0 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/1926533/nemesis",
+      "snippet": "Contains Default Outfit for Nemesis Recommended weight is always 0.8 or lower if you use it with multiple other LORAs!"
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=LoRA",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "rmehra007/gemma-sql-lora-Q8_0-GGUF - Hugging Face",
+      "url": "https://huggingface.co/rmehra007/gemma-sql-lora-Q8_0-GGUF",
+      "snippet": "rmehra007/gemma-sql-lora-Q8_0-GGUF This LoRA adapter was converted to GGUF format from rmehra007/gemma-sql-lora via the ggml.ai&#x27;s GGUF-my-lora space. Refer to the original adapter repository for more details."
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    },
+    {
+      "title": "Best local LLMs for 8GB RAM in 2026 | LocalClaw",
+      "url": "https://localclaw.io/ram/8gb",
+      "snippet": "Best local AI models that run with 8GB RAM. Compare LLMs by quality, speed, coding, reasoning, quantization and LM Studio setup."
+    }
+  ]
+}

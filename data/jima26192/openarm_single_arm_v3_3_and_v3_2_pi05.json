@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jima26192/openarm_single_arm_v3_3_and_v3_2_pi05",
+  "slug": "jima26192-openarm_single_arm_v3_3_and_v3_2_pi05",
+  "author": "jima26192",
+  "url": "https://huggingface.co/jima26192/openarm_single_arm_v3_3_and_v3_2_pi05",
+  "created_at": "2026-10-12T23:16:42.000Z",
+  "updated_at": "2026-10-12T23:22:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:jima26192/openarm-single-arm-dataset-v3.3_and_v3.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354058496,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "jima26192 (Taiki Iijima) - Hugging Face",
+      "url": "https://huggingface.co/jima26192/datasets",
+      "snippet": "AI & ML interests ... Recent Activity updated a dataset less than a minute ago ... published a dataset 1 minute ago"
+    },
+    {
+      "title": "GitHub - reasimei/pi05-openarm",
+      "url": "https://github.com/reasimei/pi05-openarm",
+      "snippet": "the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. Note that, in this repository, we currently only support the flow matching head for both $&#92;pi_{0.5}$ $&#92;pi_ {0.5}$ training and ..."
+    },
+    {
+      "title": "bsu33/pi05_openarm · Hugging Face",
+      "url": "https://huggingface.co/bsu33/pi05_openarm",
+      "snippet": "Model Card for pi05 π₀.₅ (Pi05) Policy π₀.₅ is a Vision-Language-Action model with open-world generalization, from Physical Intelligence. The LeRobot implementation is adapted from their open source OpenPI repository. Model Overview π₀.₅ represents a significant evolution from π₀, developed by Physical Intelligence to address a big challenge in robotics: open-world ..."
+    },
+    {
+      "title": "OpenArm",
+      "url": "https://openarm.dev/",
+      "snippet": "A reproducible evaluation cell that standardizes background, lighting, cameras, and arm position for fair, automated AI model comparison. \"Model A outperforms Model B\" only holds meaning when evaluated under identical conditions — OpenArm Cell provides the reproducible infrastructure to make such claims verifiable."
+    },
+    {
+      "title": "J-Oyasumi/openpi_pi05 - GitHub",
+      "url": "https://github.com/J-Oyasumi/openpi_pi05/tree/main/",
+      "snippet": "the π₀ model, a flow-based vision-language-action model (VLA). the π₀-FAST model, an autoregressive VLA, based on the FAST action tokenizer. the π₀.₅ model, an upgraded version of π₀ with better open-world generalization trained with knowledge insulation. Note that, in this repository, we currently only support the flow matching head for both $&#92;pi_{0.5}$ $&#92;pi_ {0.5}$ training and ..."
+    }
+  ]
+}

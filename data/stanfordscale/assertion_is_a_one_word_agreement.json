@@ -5,7 +5,7 @@
   "author": "StanfordSCALE",
   "url": "https://huggingface.co/StanfordSCALE/assertion_is_a_one_word_agreement",
   "created_at": "2026-10-12T17:51:39.000Z",
-  "updated_at": "2026-10-12T17:51:46.000Z",
+  "updated_at": "2026-10-12T20:30:31.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",

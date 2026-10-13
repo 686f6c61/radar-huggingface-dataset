@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NbAiLab/nb-asr-qwen06b-bokmal-nynorsk-reranker",
+  "slug": "nbailab-nb-asr-qwen06b-bokmal-nynorsk-reranker",
+  "author": "NbAiLab",
+  "url": "https://huggingface.co/NbAiLab/nb-asr-qwen06b-bokmal-nynorsk-reranker",
+  "created_at": "2026-10-12T12:48:49.000Z",
+  "updated_at": "2026-10-13T02:13:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": null,
+  "languages": [
+    "nb",
+    "nn"
+  ],
+  "tags": [
+    "work-in-progress",
+    "text-ranking",
+    "nb",
+    "nn",
+    "base_model:Qwen/Qwen3-Reranker-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Reranker-0.6B",
+    "license:apache-2.0",
+    "region:eu"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-Reranker-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI-lab - Innovations on AI in Libraries",
+      "url": "https://ai.nb.no/",
+      "snippet": "You have landed at the AI-lab at the National Library of Norway (NLN). If you look around here, you may find some information on what we do, fun things we have seen, and our services."
+    },
+    {
+      "title": "NbAiLab (Nasjonalbiblioteket AI Lab) - Hugging Face",
+      "url": "https://huggingface.co/NbAiLab",
+      "snippet": "Org profile for Nasjonalbiblioteket AI Lab on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Models - AI-lab",
+      "url": "https://ai.nb.no/models/",
+      "snippet": "NB AI-lab has now released our NB-Whisper for Norwegian Bokmål and Nynorsk. The model is based on Whisper from OpenAI, and trained on data from Språkbanken and the digital collection at the National Library of Norway."
+    },
+    {
+      "title": "A new family of Norwegian-centric models - AI-lab",
+      "url": "https://ai.nb.no/borealis/",
+      "snippet": "The models are based on the Gemma 3 family and are tuned for Norwegian, Bokmal, Nynorsk, and English assistant use cases, including writing, summarization, question answering, and language-quality assessment."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 891 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

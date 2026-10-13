@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "navthings/airgpt-night",
+  "slug": "navthings-airgpt-night",
+  "author": "navthings",
+  "url": "https://huggingface.co/navthings/airgpt-night",
+  "created_at": "2026-10-12T22:33:18.000Z",
+  "updated_at": "2026-10-12T22:34:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "from-scratch",
+    "tinystories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39596544,
+  "parameters_human": "39.6M",
+  "storage_bytes": 316793346,
+  "storage_human": "317 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bjdwh/AirGPT · Hugging Face",
+      "url": "https://huggingface.co/bjdwh/AirGPT",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "airgpt (airgpt) - Hugging Face",
+      "url": "https://huggingface.co/airgpt/models",
+      "snippet": "Org profile for airgpt on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "A running timeline of AI model releases — the latest models from OpenAI, Anthropic, Google, DeepSeek, Alibaba and more, newest first. Updated hourly."
+    },
+    {
+      "title": "GPT-5.2 API Model Name & Full 2026 Lineup - aicomparison.ai",
+      "url": "https://aicomparison.ai/openai-models-guide/",
+      "snippet": "GPT-5.2 is OpenAI&#x27;s current flagship model. See the full 2026 lineup, API model names like gpt-5.2-chat-latest, and pricing by use case."
+    },
+    {
+      "title": "AirGPT: pioneering the convergence of conversational AI with ...",
+      "url": "https://www.researchgate.net/publication/391727211_AirGPT_pioneering_the_convergence_of_conversational_AI_with_atmospheric_science",
+      "snippet": "The evaluation of answers by experts show that the hybrid ChatClimate AI assistant provide more accurate responses, highlighting the effectiveness of our solution."
+    }
+  ]
+}

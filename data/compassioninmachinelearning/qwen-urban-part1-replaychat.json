@@ -5,7 +5,7 @@
   "author": "CompassioninMachineLearning",
   "url": "https://huggingface.co/CompassioninMachineLearning/qwen-urban-part1-replaychat",
   "created_at": "2026-10-11T22:45:13.000Z",
-  "updated_at": "2026-10-11T23:02:30.000Z",
+  "updated_at": "2026-10-12T22:09:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -29,11 +29,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 31,
   "trending_score": 0,
   "parameters": 8190735360,
   "parameters_human": "8.19B",
-  "storage_bytes": 16394329723,
+  "storage_bytes": 16395897403,
   "storage_human": "16.4 GB",
   "base_model": "CompassioninMachineLearning/Qwen-3-8b-urban-density-CPT-best-step750",
   "formats": [

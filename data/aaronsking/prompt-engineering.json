@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aaronsking/prompt-engineering",
+  "slug": "aaronsking-prompt-engineering",
+  "author": "aaronsking",
+  "url": "https://huggingface.co/aaronsking/prompt-engineering",
+  "created_at": "2026-10-12T23:19:15.000Z",
+  "updated_at": "2026-10-12T23:19:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "prompt-engineering",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prompt Engineering Best Practices: 10 Tips, Examples, And Evaluation",
+      "url": "https://www.designveloper.com/blog/prompt-engineering-best-practices/",
+      "snippet": "Use 10 prompt engineering best practices with copyable examples, model-specific checks, and an evaluation loop for clearer, safer AI outputs in real workflows."
+    },
+    {
+      "title": "The 2026 Guide to Prompt Engineering - IBM",
+      "url": "https://www.ibm.com/think/prompt-engineering",
+      "snippet": "A prompt engineering guide is a practical resource for understanding how to craft effective prompts to interact with artificial intelligence (AI) models such as IBM® Granite®, Open AI&#x27;s GPT, DALL-E, Stable Diffusion, Anthropic&#x27;s Claude , Google&#x27;s Bard and other generative systems. Prompt engineering is the process of designing and refining input instructions to guide AI behavior and ..."
+    },
+    {
+      "title": "Prompt Engineering For Developers: Practical Patterns That Work",
+      "url": "https://www.designveloper.com/blog/prompt-engineering/",
+      "snippet": "Prompt engineering means giving an AI model enough instruction and context to produce useful, reviewable work. For developers, a prompt is not only a question. A developer prompt is a compact technical brief that explains the software goal, the relevant system behavior, the limits of the change, and the evidence needed to accept the output."
+    },
+    {
+      "title": "Prompt Engineering Techniques | IBM",
+      "url": "https://www.ibm.com/think/topics/prompt-engineering-techniques",
+      "snippet": "Prompt engineering techniques are strategies used to design and structure prompts, input queries or instructions, provided to AI models, particularly large language models (LLMs)."
+    },
+    {
+      "title": "Prompt Engineering for AI Guide | Google Cloud",
+      "url": "https://cloud.google.com/discover/what-is-prompt-engineering",
+      "snippet": "Prompt engineering is the art and science of designing and optimizing prompts to guide AI models, particularly LLMs, towards generating the desired responses. By carefully crafting prompts, you provide the model with context, instructions, and examples that help it understand your intent and respond in a meaningful way. Think of it as providing a roadmap for the AI, steering it towards the ..."
+    }
+  ]
+}

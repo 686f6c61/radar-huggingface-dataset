@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "akaclinicalco/edgecdss-v3-research",
+  "slug": "akaclinicalco-edgecdss-v3-research",
+  "author": "akaclinicalco",
+  "url": "https://huggingface.co/akaclinicalco/edgecdss-v3-research",
+  "created_at": "2026-10-12T19:27:27.000Z",
+  "updated_at": "2026-10-12T20:42:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "medical",
+    "research",
+    "not-for-clinical-use",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929903168,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

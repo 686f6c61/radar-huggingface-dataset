@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "alibayram/embeddingmagibu2-text-v1",
+  "slug": "alibayram-embeddingmagibu2-text-v1",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/embeddingmagibu2-text-v1",
+  "created_at": "2026-10-12T18:59:14.000Z",
+  "updated_at": "2026-10-12T21:50:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2_text",
+    "sentence-similarity",
+    "feature-extraction",
+    "embedding",
+    "turkish",
+    "retrieval",
+    "tokenizer-surgery",
+    "magibu-ai",
+    "tr",
+    "en",
+    "multilingual",
+    "arxiv:2605.29992",
+    "base_model:alibayram/embeddingmagibu2-v1",
+    "base_model:finetune:alibayram/embeddingmagibu2-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 271002648,
+  "parameters_human": "271.0M",
+  "storage_bytes": 574571401,
+  "storage_human": "575 MB",
+  "base_model": "alibayram/embeddingmagibu2-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alibayram/embeddingmagibu2 · Hugging Face",
+      "url": "https://huggingface.co/alibayram/embeddingmagibu2",
+      "snippet": "embeddingmagibu2 embeddingmagibu2 is a Turkish-focused multilingual embedding model built from google/embeddinggemma-2 and the Turkish-optimized magibu/Altus tokenizer. Status: initialization checkpoint. This is the student model before distillation: the teacher with its tokenizer swapped and new token embeddings initialized."
+    },
+    {
+      "title": "alibayram/embeddingmagibu2-v1-rc · Hugging Face",
+      "url": "https://huggingface.co/alibayram/embeddingmagibu2-v1-rc",
+      "snippet": "Instructions to use alibayram/embeddingmagibu2-v1-rc with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries sentence-transformers How to use alibayram/embeddingmagibu2-v1-rc with sentence-transformers:"
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia ... - MSN",
+      "url": "https://www.msn.com/en-gb/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police-website/ar-AA2dVxyE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of rogue ..."
+    },
+    {
+      "title": "Browse AI Artifacts | Hugging Bay",
+      "url": "https://huggingbay.xyz/browse",
+      "snippet": "Browse the Hugging Bay catalog of open AI models, datasets, apps, tools, evals, hosted downloads, and external metadata records."
+    }
+  ]
+}

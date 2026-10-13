@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "susurofu/literary-bert-en-medium",
+  "slug": "susurofu-literary-bert-en-medium",
+  "author": "susurofu",
+  "url": "https://huggingface.co/susurofu/literary-bert-en-medium",
+  "created_at": "2026-10-12T06:49:53.000Z",
+  "updated_at": "2026-10-13T00:42:20.000Z",
+  "license": "`",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "ordinal-regression",
+    "sentiment-analysis",
+    "literary-sentiment",
+    "digital-humanities",
+    "custom-code",
+    "text-classification",
+    "custom_code",
+    "en",
+    "base_model:google/bert_uncased_L-8_H-512_A-8",
+    "base_model:finetune:google/bert_uncased_L-8_H-512_A-8",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 41373705,
+  "parameters_human": "41.4M",
+  "storage_bytes": 165520825,
+  "storage_human": "166 MB",
+  "base_model": "google/bert_uncased_L-8_H-512_A-8",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is it considered academic fraud to run your own essay through Quillbot ...",
+      "url": "https://www.reddit.com/r/GetStudying/comments/y8kaqv/is_it_considered_academic_fraud_to_run_your_own/",
+      "snippet": "Oct 20, 2022 · I recently rediscovered Quillbot, which is an ai paraphrasing tool. I decided to put one of my old essay paragraphs …Read more"
+    },
+    {
+      "title": "Does turnitin detect quillbot or chat open ai? : r/IBO - Reddit",
+      "url": "https://www.reddit.com/r/IBO/comments/zttmh2/does_turnitin_detect_quillbot_or_chat_open_ai/",
+      "snippet": "TURNITIN DETECTED QUILLBOT. I used quillbot for a paraphrase and turnitin marked the generated text as \"student paper\" which …"
+    },
+    {
+      "title": "quillbot网站用不了怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/428467308/answers/updated",
+      "snippet": "Quillbot 文章改写工具 Quillbot 的文章改写工具已经在市场上存在了好几年，并因其良好的性能和易用性广受欢迎。 它提供几种修改模 …"
+    },
+    {
+      "title": "quillbot网站用不了怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/428467308",
+      "snippet": "quillbot网站用不了怎么办？ 如题，近日得知可以用quillbot来润色改写，但是我每次都是这个页面，它也没给我改写，是我没登陆还是 …"
+    },
+    {
+      "title": "Quillbot Piracy? : r/Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/comments/zc2t1q/quillbot_piracy/",
+      "snippet": "Dec 4, 2022 · ⚓ Dedicated to the discussion of digital piracy, including ethical problems and legal advancements."
+    }
+  ]
+}

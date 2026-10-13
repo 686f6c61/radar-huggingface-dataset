@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "David-MRI-ORG/mednext-3dconvnext-baseline-breast",
+  "slug": "david-mri-org-mednext-3dconvnext-baseline-breast",
+  "author": "David-MRI-ORG",
+  "url": "https://huggingface.co/David-MRI-ORG/mednext-3dconvnext-baseline-breast",
+  "created_at": "2026-10-12T10:01:14.000Z",
+  "updated_at": "2026-10-12T21:40:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "medical-imaging",
+    "breast-cancer",
+    "mri",
+    "mednext",
+    "convnext",
+    "3d-convnext",
+    "3d convnext",
+    "segmentation",
+    "3d-segmentation",
+    "brats",
+    "brats2023",
+    "brain-tumor-segmentation",
+    "image-segmentation",
+    "doi:10.57967/hf/10872",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8073219,
+  "parameters_human": "8.1M",
+  "storage_bytes": 363124124,
+  "storage_human": "363 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MIC-DKFZ/MedNeXt: [MICCAI 2023] MedNeXt is a fully ConvNeXt ...",
+      "url": "https://github.com/MIC-DKFZ/MedNeXt",
+      "snippet": "MedNeXt is a fully ConvNeXt architecture for 3D medical image segmentation designed to leverage the scalability of the ConvNeXt block while being customized to the challenges of sparsely annotated medical image segmentation datasets."
+    },
+    {
+      "title": "GuillaumeCassez/mednext-baseline-brats2023gli · Hugging Face",
+      "url": "https://huggingface.co/GuillaumeCassez/mednext-baseline-brats2023gli",
+      "snippet": "3D segmentation of brain tumor regions (NCR, edema, enhancing tumor) on multi-modal MRI (T1, T1ce, T2, FLAIR), trained on the BraTS 2023 GLI challenge dataset using nnU-Net v2 with the MedNeXt-B backbone (Roy et al., MICCAI 2023). This repository ships the 5 cross-validation folds of the model."
+    },
+    {
+      "title": "MedNeXt V2 Ensemble Segmentation - emergentmind.com",
+      "url": "https://www.emergentmind.com/topics/mednext-v2-ensemble",
+      "snippet": "MedNeXt V2 Ensemble leverages innovative convolutional blocks, two-stage kernel expansion, and deep model ensembling for robust 3D medical image segmentation."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google&#x27;s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "[2512.17774] MedNeXt-v2: Scaling 3D ConvNeXts for Large-Scale ...",
+      "url": "https://arxiv.org/abs/2512.17774",
+      "snippet": "In this work, we address this gap by revisiting ConvNeXt-based architectures for volumetric segmentation and introducing MedNeXt-v2, a compound-scaled 3D ConvNeXt that leverages improved micro-architecture and data scaling to deliver state-of-the-art performance."
+    }
+  ]
+}

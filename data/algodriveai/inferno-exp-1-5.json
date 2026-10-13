@@ -1,0 +1,136 @@
+{
+  "schema": 1,
+  "id": "AlgoDriveAI/Inferno-Exp-1.5",
+  "slug": "algodriveai-inferno-exp-1-5",
+  "author": "AlgoDriveAI",
+  "url": "https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.5",
+  "created_at": "2026-10-12T23:50:45.000Z",
+  "updated_at": "2026-10-13T00:03:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inferno",
+    "text-generation",
+    "small-language-model",
+    "gqa",
+    "custom_code",
+    "arithmark",
+    "en",
+    "base_model:AlgoDriveAI/Inferno-Exp-1.0",
+    "base_model:finetune:AlgoDriveAI/Inferno-Exp-1.0",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76163200,
+  "parameters_human": "76.2M",
+  "storage_bytes": 305154699,
+  "storage_human": "305 MB",
+  "base_model": "AlgoDriveAI/Inferno-Exp-1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arithmetic word problems (continuation log-likelihood)",
+      "dataset": "ArithMark 3.0",
+      "metric": "Length-normalized accuracy",
+      "value": 71
+    },
+    {
+      "task": "Arithmetic word problems (continuation log-likelihood)",
+      "dataset": "ArithMark 3.0",
+      "metric": "Raw continuation accuracy",
+      "value": 71.2
+    },
+    {
+      "task": "Integer arithmetic (continuation log-likelihood)",
+      "dataset": "ArithMark 2.0",
+      "metric": "Accuracy (overall)",
+      "value": 67
+    },
+    {
+      "task": "Integer arithmetic (continuation log-likelihood)",
+      "dataset": "ArithMark 2.0",
+      "metric": "Accuracy (1 operator)",
+      "value": 96.88
+    },
+    {
+      "task": "Integer arithmetic (continuation log-likelihood)",
+      "dataset": "ArithMark 2.0",
+      "metric": "Accuracy (2 operators)",
+      "value": 43.87
+    },
+    {
+      "task": "Integer arithmetic (continuation log-likelihood)",
+      "dataset": "ArithMark 2.0",
+      "metric": "Accuracy (3 operators)",
+      "value": 27
+    },
+    {
+      "task": "Commonsense sentence completion",
+      "dataset": "HellaSwag",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 27.85
+    },
+    {
+      "task": "Science question answering",
+      "dataset": "ARC-Easy",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 43.39
+    },
+    {
+      "task": "Science question answering",
+      "dataset": "ARC-Challenge",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 26.62
+    },
+    {
+      "task": "Physical commonsense reasoning",
+      "dataset": "PIQA",
+      "metric": "Normalized accuracy (0-shot)",
+      "value": 58.49
+    }
+  ],
+  "sources": [
+    {
+      "title": "AlgoDriveAI/Inferno-Exp-1.5 · Hugging Face",
+      "url": "https://huggingface.co/AlgoDriveAI/Inferno-Exp-1.5",
+      "snippet": "Inferno-Exp-1.5 is a 76.2M-parameter decoder-only base language model trained from scratch by AlgoDriveAI. It continues training Inferno-Exp-1. on an expanded corpus."
+    },
+    {
+      "title": "AlgoDriveAI (AlgoDrive.AI) - Hugging Face",
+      "url": "https://huggingface.co/AlgoDriveAI/datasets",
+      "snippet": "AI & ML interests ... Recent Activity liked a dataset about 1 hour ago ... liked a dataset about 1 hour ago ... published a model 9 days ago"
+    },
+    {
+      "title": "Quickstart - Inferno",
+      "url": "https://docs.inferno-ai.dev/en/stable/examples/quickstart.html",
+      "snippet": "Quickstart ¶ Inspired by the PyTorch example of the same name, we go through a simple example of implementing a model and a training/testing loop. Download this example as a Python script or as a Jupyter notebook . Prerequisites ¶ This tutorial requires Inferno (and its dependencies, including PyTorch) and TorchVision for working with the dataset. We&#x27;ll start with the necessary import ..."
+    },
+    {
+      "title": "Tutorials - infernoai.cc",
+      "url": "https://infernoai.cc/docs/tutorials",
+      "snippet": "Tutorials Step-by-step tutorials for advanced Inferno AI features and use cases. Available Tutorials"
+    },
+    {
+      "title": "Inferno",
+      "url": "https://inferno.framer.ai/",
+      "snippet": "Blazing-fast model serving Inferno runs open and custom models on optimized GPU clusters. One API call gets you sub-second responses at any scale."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "inferencerlabs",
   "url": "https://huggingface.co/inferencerlabs/DeepSeek-V4.1-MLX-Q9",
   "created_at": "2026-10-04T03:09:09.000Z",
-  "updated_at": "2026-10-04T20:05:53.000Z",
+  "updated_at": "2026-10-12T14:18:17.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -15,17 +15,15 @@
   ],
   "tags": [
     "mlx",
-    "deepseek_v41",
     "quantized",
     "image-text-to-text",
-    "conversational",
     "en",
     "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
     "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 630,
+  "downloads_30d": 665,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
@@ -35,7 +33,7 @@
   "formats": [
     "mlx"
   ],
-  "is_conversational": true,
+  "is_conversational": false,
   "gated": false,
   "removed": false,
   "removed_at": null,

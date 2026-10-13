@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "omarkashif/hockey-yolo-models",
+  "slug": "omarkashif-hockey-yolo-models",
+  "author": "omarkashif",
+  "url": "https://huggingface.co/omarkashif/hockey-yolo-models",
+  "created_at": "2025-12-28T14:24:03.000Z",
+  "updated_at": "2026-10-12T21:37:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230042612,
+  "storage_human": "230 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "omarkashif/hockey-yolo-models · Hugging Face",
+      "url": "https://huggingface.co/omarkashif/hockey-yolo-models",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "HockeyAI - a Hugging Face Space by omarkashif",
+      "url": "https://huggingface.co/spaces/omarkashif/HockeyAI",
+      "snippet": "Streamlit template space"
+    },
+    {
+      "title": "hockey-yolo-models — AI Compliance Status Across 52 Jurisdictions - Nerq",
+      "url": "https://nerq.ai/agent/17d1ed90-df08-41ed-b163-903bd55f1619",
+      "snippet": "About This Assessment hockey-yolo-models is a model sourced from huggingface_full, authored by omarkashif. It operates in the general domain. Across global AI regulations, it is classified as minimal risk. Nerq has assessed this agent against 52 global AI regulations, finding it to be high risk or restricted in 0 jurisdictions, subject to transparency or limited requirements in 0 jurisdictions ..."
+    },
+    {
+      "title": "Spicing up Ice Hockey with AI: Player Tracking with Computer Vision",
+      "url": "https://towardsdatascience.com/spicing-up-ice-hockey-with-ai-player-tracking-with-computer-vision-ce9ceec9122a/",
+      "snippet": "The YOLOv8x tracking mechanism, while powerful, demands significant compute resources (at times, my memory hit 99%, fingers crossed it didn&#x27;t crash!🙄 ). If you encounter issues with this version of YOLO, lighter models are available on Ultralytics&#x27; GitHub to balance accuracy and compute capacity."
+    },
+    {
+      "title": "Automated detection of physical contact events in youth ice hockey: a ...",
+      "url": "https://www.nature.com/articles/s41598-026-44805-w",
+      "snippet": "Players were detected using a youth-tuned You Only Look Once (YOLO)v8 model and tracked using StrongSORT with an intersection over union (IoU)-assisted matching cost to improve identity continuity ..."
+    }
+  ]
+}

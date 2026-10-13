@@ -5,7 +5,7 @@
   "author": "drowzeys",
   "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
   "created_at": "2026-09-30T03:14:45.000Z",
-  "updated_at": "2026-10-11T21:46:57.000Z",
+  "updated_at": "2026-10-12T20:00:25.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -36,12 +36,12 @@
     "region:us"
   ],
   "likes": 4,
-  "downloads_30d": 1313,
+  "downloads_30d": 1349,
   "trending_score": 0,
   "parameters": 138092850560,
   "parameters_human": "138.09B",
-  "storage_bytes": 276253365652,
-  "storage_human": "276.3 GB",
+  "storage_bytes": 276967375069,
+  "storage_human": "277.0 GB",
   "base_model": "zai-org/GLM-5.3",
   "formats": [
     "safetensors"

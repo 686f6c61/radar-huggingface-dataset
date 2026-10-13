@@ -5,7 +5,7 @@
   "author": "scottlowry",
   "url": "https://huggingface.co/scottlowry/Qwen3.5-122B-A10B-oQ6e-mtp",
   "created_at": "2026-10-12T02:58:35.000Z",
-  "updated_at": "2026-10-12T03:46:43.000Z",
+  "updated_at": "2026-10-12T18:29:20.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,6 +17,8 @@
     "qwen3_5_moe",
     "oq",
     "quantized",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:quantized:Qwen/Qwen3.5-122B-A10B",
     "6-bit",
     "region:us"
   ],
@@ -27,7 +29,7 @@
   "parameters_human": "125.09B",
   "storage_bytes": 102955192665,
   "storage_human": "103.0 GB",
-  "base_model": null,
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
   "formats": [
     "mlx",
     "safetensors"

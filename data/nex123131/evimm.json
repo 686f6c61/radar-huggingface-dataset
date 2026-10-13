@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Nex123131/evimm",
+  "slug": "nex123131-evimm",
+  "author": "Nex123131",
+  "url": "https://huggingface.co/Nex123131/evimm",
+  "created_at": "2026-10-12T21:42:12.000Z",
+  "updated_at": "2026-10-12T21:42:12.000Z",
+  "license": "llama4",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "AI 3D Model Generator | Image & Text to 3D | Next3D",
+      "url": "https://www.next3d.ai/",
+      "snippet": "Next3D is an AI 3D model generation platform and online 3D file toolkit for image to 3D and text to 3D workflows. Users can generate 3D models from text or images, view GLB, GLTF, OBJ, FBX, STL, and other model files online, and continue through format conversion, preview, and download workflows."
+    },
+    {
+      "title": "Compare AI Models - Image & Video Generators | AliveAI.app",
+      "url": "https://aliveai.app/ai-model-overview",
+      "snippet": "AI Models Compare the AliveAI AI Models From hyper-realistic portraits to expressive anime art — compare every AI image and video model we support, see real example results, and find the perfect style for your next creation."
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Model Catalog - Browse AI Models | NeevCloud",
+      "url": "https://neevcloud.com/model-catalog",
+      "snippet": "Browse 20+ production-ready AI models. View performance, pricing, and capabilities. Test instantly or deploy via API."
+    }
+  ]
+}

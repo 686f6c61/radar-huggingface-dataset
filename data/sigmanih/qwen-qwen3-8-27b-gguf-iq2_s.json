@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_S",
+  "slug": "sigmanih-qwen-qwen3-8-27b-gguf-iq2_s",
+  "author": "sigmanih",
+  "url": "https://huggingface.co/sigmanih/Qwen-Qwen3.8-27B-GGUF-IQ2_S",
+  "created_at": "2026-10-09T07:41:00.000Z",
+  "updated_at": "2026-10-12T20:05:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "text-generation",
+    "sigma-studio",
+    "sigmanih",
+    "conversational",
+    "custom-model",
+    "llama.cpp",
+    "quantized",
+    "iq2_s",
+    "en",
+    "it",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 887,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 11497176128,
+  "storage_human": "11.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

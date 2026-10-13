@@ -5,7 +5,7 @@
   "author": "StanfordSCALE",
   "url": "https://huggingface.co/StanfordSCALE/assertion_states_that_the_speaker_is_uncertain",
   "created_at": "2026-10-12T17:54:34.000Z",
-  "updated_at": "2026-10-12T17:54:42.000Z",
+  "updated_at": "2026-10-12T20:31:02.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",

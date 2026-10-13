@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "skonan/PaperScorer-3B-Vision-arXiv",
+  "slug": "skonan-paperscorer-3b-vision-arxiv",
+  "author": "skonan",
+  "url": "https://huggingface.co/skonan/PaperScorer-3B-Vision-arXiv",
+  "created_at": "2026-05-19T14:55:35.000Z",
+  "updated_at": "2026-10-12T20:07:44.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "academic-paper-review",
+    "llama-factory",
+    "sft",
+    "arxiv-trained",
+    "qwen2.5",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 16274671577,
+  "storage_human": "16.3 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/",
+      "snippet": "Quora is a place to gain and share knowledge. It's a platform to ask questions and connect with people who contribute unique …"
+    },
+    {
+      "title": "Quora - Un lieu pour partager le savoir et mieux comprendre le monde",
+      "url": "https://fr.quora.com/",
+      "snippet": "Quora est un endroit conçu pour apprendre et partager ses connaissances. Il s'agit d'une plateforme sur laquelle on peut poser ses …"
+    },
+    {
+      "title": "Quora - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Quora",
+      "snippet": "Quora was co-founded by former Facebook employees Adam D'Angelo and Charlie Cheever in June 2009. [3] In an answer to the …"
+    },
+    {
+      "title": "About - Quora",
+      "url": "https://www.quora.com/about",
+      "snippet": "Try refreshing the page, or try again later. Refresh Page"
+    },
+    {
+      "title": "Quora — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Quora",
+      "snippet": "Dans tous les cas, on peut observer que la modération sur Quora reste très limitée. La communauté Quora inclut des personnes …"
+    }
+  ]
+}

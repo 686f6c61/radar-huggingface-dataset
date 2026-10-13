@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-abliterated-max-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-abliterated-MAX-GGUF",
+  "created_at": "2026-04-22T11:29:25.000Z",
+  "updated_at": "2026-10-12T20:06:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "uncensored",
+    "abliterated",
+    "unfiltered",
+    "unredacted",
+    "refusal-ablated",
+    "vllm",
+    "pytorch",
+    "bf16",
+    "max",
+    "alignment-modified",
+    "reasoning",
+    "agent",
+    "en",
+    "base_model:prithivMLmods/Qwen3.6-35B-A3B-abliterated-MAX",
+    "base_model:quantized:prithivMLmods/Qwen3.6-35B-A3B-abliterated-MAX",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 891,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 237125563040,
+  "storage_human": "237.1 GB",
+  "base_model": "prithivMLmods/Qwen3.6-35B-A3B-abliterated-MAX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "COMPLEX | Megan Fox is giving fans a new way to access exclusive ...",
+      "url": "https://www.instagram.com/p/DeUYYkHkVzS/",
+      "snippet": "2 days ago · 55K likes, 1,134 comments - complex on October 10, 2026: \"Megan Fox is giving fans a new way to access exclusive …"
+    },
+    {
+      "title": "MEGAN FOX BECOMES CO-OWNER OF SUBS.COM AND …",
+      "url": "https://www.prnewswire.com/news-releases/megan-fox-becomes-co-owner-of-subscom-and-launches-official-page-302904954.html",
+      "snippet": "2 days ago · Fox joins Subs.com with a seat at the table as the company grows. Her official page puts that idea into practice, …"
+    },
+    {
+      "title": "Megan Fox Subs Leak Porn Videos - SunPorno.com",
+      "url": "https://www.sunporno.com/s/megan-fox-subs-leak/",
+      "snippet": "Browse the hottest megan fox subs leak porn videos right now at SunPorno.com. New FREE megan fox subs leak porno added …"
+    },
+    {
+      "title": "Megan Fox launches OnlyFans-like exclusive paid-content site",
+      "url": "https://www.joblo.com/megan-fox-onlyfans-subs/",
+      "snippet": "2 days ago · Megan Fox has launched an exclusive paid-content site through Subs.com, which was co-founded by OnlyFans creator …"
+    },
+    {
+      "title": "Megan Fox Partners With OnlyFans Founder for Paid-Content Site",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/megan-fox-partners-onlyfans-founder-211847737.html",
+      "snippet": "2 days ago · Megan Fox teases her new paid-content venture in Instagram post In her Instagram post, Megan Fox teased fans with …"
+    }
+  ]
+}

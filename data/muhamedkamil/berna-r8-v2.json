@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "muhamedkamil/berna-r8-v2",
+  "slug": "muhamedkamil-berna-r8-v2",
+  "author": "muhamedkamil",
+  "url": "https://huggingface.co/muhamedkamil/berna-r8-v2",
+  "created_at": "2026-10-12T22:54:09.000Z",
+  "updated_at": "2026-10-13T00:44:55.000Z",
+  "license": "cc-by-nc-4.0",
+  "license_family": "non-commercial",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "language-model",
+    "berna",
+    "cells",
+    "research",
+    "text-generation",
+    "en",
+    "ar",
+    "license:cc-by-nc-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2399383149,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "muhamedkamil/berna-prototype-162m · Hugging Face",
+      "url": "https://huggingface.co/muhamedkamil/berna-prototype-162m",
+      "snippet": "muhamedkamil / berna-prototype-162m Like 0 Text Generation Transformers Safetensors English Arabic berna from-scratch prototype License:other Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 891 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=berna",
+      "snippet": "Explore machine learning models. 1 Base only Inference AvailableInference Edit filters Sort: Trending Active filters: berna Clear all"
+    },
+    {
+      "title": "Berna Prototype 162M by muhamedkamil — VRAM 0.7GB, 2K context | LLM ...",
+      "url": "https://llm-explorer.com/model/muhamedkamil%2Fberna-prototype-162m,7EV3Al1wj0bbUB9ciZ3uty",
+      "snippet": "Berna Prototype 162M is an open-source 162m LLM by muhamedkamil. VRAM 0.7GB, 2K context. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "MuhamedKamil (Muhamed Kamel) · GitHub",
+      "url": "https://github.com/MuhamedKamil",
+      "snippet": "Machine Learning Engineer at Tahaluf Al Emarat Technical Solutions - MuhamedKamil"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "JohnP1",
   "url": "https://huggingface.co/JohnP1/d1a-e2b",
   "created_at": "2026-09-30T14:37:55.000Z",
-  "updated_at": "2026-10-10T18:14:26.000Z",
+  "updated_at": "2026-10-12T10:49:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -34,12 +34,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 52,
+  "downloads_30d": 57,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 337981874,
-  "storage_human": "338 MB",
+  "storage_bytes": 338815672,
+  "storage_human": "339 MB",
   "base_model": "google/gemma-4-E2B",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "ViorikaAI-org",
   "url": "https://huggingface.co/ViorikaAI-org/CalmaCat-SafeGuargs",
   "created_at": "2026-10-12T16:01:32.000Z",
-  "updated_at": "2026-10-12T16:23:20.000Z",
+  "updated_at": "2026-10-12T17:51:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -25,6 +25,8 @@
     "jailbreak-detector",
     "ru",
     "en",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
     "license:apache-2.0",
     "region:us"
   ],
@@ -35,7 +37,7 @@
   "parameters_human": "278.0M",
   "storage_bytes": 1129308393,
   "storage_human": "1.1 GB",
-  "base_model": null,
+  "base_model": "FacebookAI/xlm-roberta-base",
   "formats": [
     "safetensors"
   ],

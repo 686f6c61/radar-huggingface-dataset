@@ -5,7 +5,7 @@
   "author": "Aureliolo",
   "url": "https://huggingface.co/Aureliolo/steamgauge-search-reranker",
   "created_at": "2026-10-03T14:35:16.000Z",
-  "updated_at": "2026-10-03T14:35:39.000Z",
+  "updated_at": "2026-10-12T20:53:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-ranking",

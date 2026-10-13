@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "amiralifirouzi/dana-laya-0.3b-persian",
+  "slug": "amiralifirouzi-dana-laya-0-3b-persian",
+  "author": "amiralifirouzi",
+  "url": "https://huggingface.co/amiralifirouzi/dana-laya-0.3b-persian",
+  "created_at": "2026-10-12T18:32:34.000Z",
+  "updated_at": "2026-10-12T20:36:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "persian",
+    "farsi",
+    "multilingual",
+    "decision-model",
+    "text-classification",
+    "calibrated-decisions",
+    "rlcd",
+    "fine-tuned",
+    "fa",
+    "en",
+    "dataset:amiralifirouzi/jev-data-persian",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 680296773,
+  "storage_human": "680 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "deniscartin/dravenneflm-v3",
+  "slug": "deniscartin-dravenneflm-v3",
+  "author": "deniscartin",
+  "url": "https://huggingface.co/deniscartin/dravenneflm-v3",
+  "created_at": "2026-10-12T20:06:48.000Z",
+  "updated_at": "2026-10-12T22:28:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "finance",
+    "lora-merged",
+    "dravenneflm",
+    "conversational",
+    "it",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29551555856,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inside the Booming Business of Monster Porn - GQ",
+      "url": "https://www.gq.com/story/business-of-monster-porn",
+      "snippet": "Feb 9, 2026 · Teratophiliacs were once a niche group that bonded over their sexual attraction to monsters in obscure forums. …"
+    },
+    {
+      "title": "Newest Monster Porn Videos | xHamster",
+      "url": "https://xhamster.com/categories/monster/newest",
+      "snippet": "Check out newest Monster porn videos on xHamster. Watch all newest Monster XXX vids right now!"
+    },
+    {
+      "title": "Monster Porn Videos: Freaky Cock Action - Tube v Sex",
+      "url": "https://www.tubev.sex/categories/1351/monster",
+      "snippet": "These monster porn videos feature huge cocks stretching tight pussies and freaky beasts fucking hard. Tubev.Sex brings you the …"
+    },
+    {
+      "title": "Full-Length Monster Porn Videos - xHamster",
+      "url": "https://xhamster.com/categories/monster/full-length",
+      "snippet": "Check out full-length Monster porn videos on xHamster. Watch all Monster XXX vids right now!"
+    },
+    {
+      "title": "Vidéos porno Monster | YouPorn Français",
+      "url": "https://fr.youporn.com/porntags/monster/",
+      "snippet": "Les meilleures vidéos porno Monster sont ici sur YouPorn.com. Cliquez ici et trouvez tous les films porno Monster les plus torrides …"
+    }
+  ]
+}

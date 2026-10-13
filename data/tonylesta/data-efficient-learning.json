@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Tonylesta/data-efficient-learning",
+  "slug": "tonylesta-data-efficient-learning",
+  "author": "Tonylesta",
+  "url": "https://huggingface.co/Tonylesta/data-efficient-learning",
+  "created_at": "2026-10-13T00:22:32.000Z",
+  "updated_at": "2026-10-13T00:22:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tonylesta (Tony Lestari) - Hugging Face",
+      "url": "https://huggingface.co/Tonylesta",
+      "snippet": "Recent Activity updated a modelabout 6 hours ago Tonylesta/model_147584158_flamingo_giant published a modelabout 6 hours ago Tonylesta/model_147584158_flamingo_giant View all activity"
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 891 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Tonylesta/generation-light98 · Hugging Face",
+      "url": "https://huggingface.co/Tonylesta/generation-light98",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "LLM Leaderboard 2026: Compare 300+ Top AI Models by Intelligence, Speed ...",
+      "url": "https://llm-stats.com/leaderboards/llm-leaderboard",
+      "snippet": "The LLM Leaderboard — independent ranking of GPT, Claude, Gemini, Llama, DeepSeek and 300+ AI models by intelligence, speed and price. Filter by provider, license, modality and context window; sort by every benchmark. Composite LLM Stats Score updated continuously from public benchmarks and live API metrics."
+    },
+    {
+      "title": "How to Make AI More Data-Efficient | by Dallin Stewart | Medium",
+      "url": "https://medium.com/@dallinpstewart/the-amazing-advancements-toward-data-efficient-machine-learning-889b4393bea6",
+      "snippet": "How Can the Data-Efficiency of Machine Learning Algorithms Be Improved? Through active learning, preprocessing, clever algorithm design, and episodic memory."
+    }
+  ]
+}

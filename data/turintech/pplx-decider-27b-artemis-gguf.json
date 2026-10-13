@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "turintech/pplx-decider-27B-Artemis-GGUF",
+  "slug": "turintech-pplx-decider-27b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/pplx-decider-27B-Artemis-GGUF",
+  "created_at": "2026-10-12T11:46:29.000Z",
+  "updated_at": "2026-10-12T22:51:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decider",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "multimodal",
+    "text-classification",
+    "base_model:perplexity-ai/pplx-decider-v1.1-27b",
+    "base_model:quantized:perplexity-ai/pplx-decider-v1.1-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 31111563264,
+  "storage_human": "31.1 GB",
+  "base_model": "perplexity-ai/pplx-decider-v1.1-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "perplexity-ai/pplx-decider-v1-27b · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1-27b",
+      "snippet": "pplx-decider-v1-27b is a decision model fine-tuned from Qwen3.8-27B. Accuracy across 11 benchmarks. The pplx-decider-v1-27b results were measured through the Perplexity API ..."
+    },
+    {
+      "title": "perplexity-ai/pplx-decider-v1.1-27b · Hugging Face",
+      "url": "https://huggingface.co/perplexity-ai/pplx-decider-v1.1-27b",
+      "snippet": "pplx-decider-v1.1-27b is an update of our pplx-decider-v1-27b model, that boost the Decision Index score from 56.4 to 61.56, now outperforming Jev by more than 3.5 points, while using the same backbone. Most of the gains are driven by the lifting of the causal mask and training on more data, including data from tasksource."
+    },
+    {
+      "title": "Pplx-decider-v1-27B - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/pplx-decider-v1-27b",
+      "snippet": "About pplx-decider-v1-27B pplx-decider-v1-27B is a 27-billion parameter router and decision model created by Perplexity AI based on the Qwen architecture. It is specialized in routing search queries, intent classification, and verification pipelines."
+    },
+    {
+      "title": "TurinTech AI · Get more from systems you already run",
+      "url": "https://www.turintech.ai/",
+      "snippet": "Get more from systems you already run Improve performance across the models, agents, and code you already run while reducing infrastructure costs. Artemis explores multiple optimization strategies in parallel, tests them on your workload, and delivers only what is measurably better."
+    },
+    {
+      "title": "pplx-decider-v1-27b - 262k context, multimodal, open source",
+      "url": "https://www.llmreference.com/model/pplx-decider-v1-27b",
+      "snippet": "About pplx-decider-v1-27b is Perplexity&#x27;s first decision model, released 2026-10-01 with the Perplexity Decisions API. Fine-tuned from Qwen3.8-27B, it reads a state of text, JSON, or images (PNG, JPEG, or WebP data URLs) and answers up to 128 named questions per request (noul for yes/no, choice with up to 255 options, or score with up to 10 levels) with probabilities instead of generated text ..."
+    }
+  ]
+}

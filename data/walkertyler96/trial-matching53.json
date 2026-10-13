@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "walkertyler96/trial-matching53",
+  "slug": "walkertyler96-trial-matching53",
+  "author": "walkertyler96",
+  "url": "https://huggingface.co/walkertyler96/trial-matching53",
+  "created_at": "2026-10-12T23:53:23.000Z",
+  "updated_at": "2026-10-12T23:53:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "walkertyler96 (Tyler L. Walker) - Hugging Face",
+      "url": "https://huggingface.co/walkertyler96/models",
+      "snippet": "Research assistant, NLP lab"
+    },
+    {
+      "title": "TrialMatchAI: an end-to-end AI-powered clinical trial ... - Nature",
+      "url": "https://www.nature.com/articles/s41467-026-70509-w",
+      "snippet": "Patient recruitment remains a major bottleneck in clinical trials. Here, the authors present TrialMatchAI, an open-source AI-powered recommendation system that automates patient-to-trial matching ..."
+    },
+    {
+      "title": "AI Model Comparison & LLM Leaderboard 2026 — Benchmarks, Pricing & Rankings",
+      "url": "https://traictory.com/",
+      "snippet": "Compare 354 AI models with verified LLM benchmarks, API pricing, and rankings. Traictory tracks GPQA, SWE-Bench, MMLU and 727+ tests. Find the best model for coding, research, or automation — updated daily."
+    },
+    {
+      "title": "AI Model Detector — Which AI Made This Image? | PromptShotAI",
+      "url": "https://promptshotai.com/tools/ai-model-detector",
+      "snippet": "Free AI model detector. Upload any image and find out which AI generated it — Midjourney, Flux, SDXL, DALL-E, or Ideogram — with a confidence score and visual tells."
+    },
+    {
+      "title": "LMRing - AI Model Comparison Platform",
+      "url": "https://www.lmring.com/",
+      "snippet": "Compare and evaluate AI large language models side-by-side with real benchmarks, community rankings, and comprehensive analysis."
+    }
+  ]
+}

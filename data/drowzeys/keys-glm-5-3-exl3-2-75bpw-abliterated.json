@@ -5,7 +5,7 @@
   "author": "drowzeys",
   "url": "https://huggingface.co/drowzeys/keys-GLM-5.3-EXL3-2.75BPW-Abliterated",
   "created_at": "2026-10-05T04:25:08.000Z",
-  "updated_at": "2026-10-11T21:47:03.000Z",
+  "updated_at": "2026-10-12T20:00:37.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -37,13 +37,13 @@
     "3-bit",
     "region:us"
   ],
-  "likes": 10,
-  "downloads_30d": 153,
+  "likes": 11,
+  "downloads_30d": 165,
   "trending_score": 10,
   "parameters": 138092850560,
   "parameters_human": "138.09B",
-  "storage_bytes": 276253365588,
-  "storage_human": "276.3 GB",
+  "storage_bytes": 276967375005,
+  "storage_human": "277.0 GB",
   "base_model": "drowzeys/keys-GLM-5.3-EXL3-2.75BPW",
   "formats": [
     "safetensors"

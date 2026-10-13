@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "sunyoungKim/connectailab-rl-lco-v1-teacher",
+  "slug": "sunyoungkim-connectailab-rl-lco-v1-teacher",
+  "author": "sunyoungKim",
+  "url": "https://huggingface.co/sunyoungKim/connectailab-rl-lco-v1-teacher",
+  "created_at": "2026-10-13T01:02:45.000Z",
+  "updated_at": "2026-10-13T01:19:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "numpy",
+  "languages": [],
+  "tags": [
+    "numpy",
+    "connect-ai-lab",
+    "deep-reinforcement-learning",
+    "gymnasium",
+    "connect-company",
+    "connect-tycoon",
+    "jev",
+    "jev-style",
+    "reinforcement-learning",
+    "ppo",
+    "decision-making",
+    "prefrontal-cortex",
+    "korean",
+    "ko",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274886,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lco-official/connectailab-rl-lco-v1-teacher · Hugging Face",
+      "url": "https://huggingface.co/lco-official/connectailab-rl-lco-v1-teacher",
+      "snippet": "Instructions to use lco-official/connectailab-rl-lco-v1-teacher with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Sunyoung Kim | School of Communication and Information",
+      "url": "https://sci.rutgers.edu/kim-sunyoung",
+      "snippet": "Sunyoung Kim is a human-computer interaction researcher focused on designing, developing, and evaluating innovative technologies that address pressing social challenges in health, wellbeing, and quality of life."
+    },
+    {
+      "title": "Sunyoung Kim",
+      "url": "https://www.sunyoungkim.org/",
+      "snippet": "About I&#x27;m an HCI researcher who designs, builds, and evaluates ubiquitous computing technologies that promote positive change in everyday health, well-being, and environmental sustainability. Beyond my role as a professor at Rutgers University&#x27;s School of Communication and Information, I&#x27;m an Associate Graduate Faculty member in the Department of Computer Science, Affiliated Faculty in the ..."
+    },
+    {
+      "title": "GitHub - jsunsheep/connectailab: 커넥트ai",
+      "url": "https://github.com/jsunsheep/connectailab",
+      "snippet": "커넥트ai. Contribute to jsunsheep/connectailab development by creating an account on GitHub."
+    },
+    {
+      "title": "CONNECT AI LAB - YouTube",
+      "url": "https://www.youtube.com/@CONNECT-AI-LAB",
+      "snippet": "Learn to understand, build and connect AI, not just follow tools. CONNECT AI LAB with your AI mentor Jay: Korean-first, hands-on AI education. Explore AI foundations, content automation, AI agents ..."
+    }
+  ]
+}

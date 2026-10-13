@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task1-zigzag-tok256-lora",
+  "slug": "bdatm-project-qwen-task1-zigzag-tok256-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task1-zigzag-tok256-lora",
+  "created_at": "2026-10-12T23:32:23.000Z",
+  "updated_at": "2026-10-13T00:01:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 711965685,
+  "storage_human": "712 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bdatm-project/qwen-task1-zigzag-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-zigzag-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bdatm-project (Big Data Analytics and Text Mining Project )",
+      "url": "https://huggingface.co/bdatm-project",
+      "snippet": "Org profile for Big Data Analytics and Text Mining Project on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "Qwen — Model Architecture Across Generations — Model Architectures — A ...",
+      "url": "https://karam-nus.github.io/models/01_Qwen",
+      "snippet": "🟣 Qwen — Model Architecture Across Generations From a competitive Chinese LLM to a global open-weight powerhouse — tracing 5 generations of architecture evolution."
+    },
+    {
+      "title": "Qwen Code Quick Start: From Installation to Your First AI Coding Task",
+      "url": "https://qwenlm.github.io/qwen-code-docs/en/blog/quickstart/getting-started/",
+      "snippet": "Get started with Qwen Code from scratch: install the CLI, configure your model, start your first conversation, install Skills extensions, and complete your first AI coding task in 10 minutes."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large and small language models (LLM and SLM) developed by Alibaba Cloud. Its latest version, Qwen3.8; the 2.4 trillion parameter model was the second largest and second most powerful open weights LLM and Chinese LLM released by 12 August 2026, after Kimi K3. [1][2 ..."
+    }
+  ]
+}

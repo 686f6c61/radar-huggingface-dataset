@@ -5,7 +5,7 @@
   "author": "nakas",
   "url": "https://huggingface.co/nakas/kiln-photo-1.5b-q4f16_1-MLC",
   "created_at": "2026-10-10T15:27:39.000Z",
-  "updated_at": "2026-10-10T16:44:48.000Z",
+  "updated_at": "2026-10-12T07:00:25.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,7 +22,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 73,
+  "downloads_30d": 98,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

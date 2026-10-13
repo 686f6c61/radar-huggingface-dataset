@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa-3.0.0",
+  "slug": "florianvoss-qwen3-5-4b-dflash-n16-llima-3-0-0",
+  "author": "florianvoss",
+  "url": "https://huggingface.co/florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa-3.0.0",
+  "created_at": "2026-10-12T22:14:53.000Z",
+  "updated_at": "2026-10-12T22:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llima",
+    "modalix",
+    "compiled",
+    "dflash",
+    "speculative-decoding",
+    "image-text-to-text",
+    "base_model:simaai/Qwen3.5-4B-Autoround-Safetensors",
+    "base_model:finetune:simaai/Qwen3.5-4B-Autoround-Safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7938581654,
+  "storage_human": "7.9 GB",
+  "base_model": "simaai/Qwen3.5-4B-Autoround-Safetensors, simaai/Qwen3.5-4B-DFlash-RTN-INT8-Safetensors",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa · Hugging Face",
+      "url": "https://huggingface.co/florianvoss/Qwen3.5-4B-DFlash-N16-LLiMa",
+      "snippet": "florianvoss / Qwen3.5-4B-DFlash-N16-LLiMa Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "florianvoss/Qwen3-4B-DFlash-N16-LLiMa · Hugging Face",
+      "url": "https://huggingface.co/florianvoss/Qwen3-4B-DFlash-N16-LLiMa",
+      "snippet": "florianvoss / Qwen3-4B-DFlash-N16-LLiMa Like 0 Model card FilesFiles and versions xet Community Copy to bucket new No model card Downloads last month -"
+    },
+    {
+      "title": "Alibaba unveils Qwen3.5 as China&#x27;s chatbot race shifts to AI agents",
+      "url": "https://www.cnbc.com/2026/02/17/china-alibaba-qwen-ai-agent-latest-model.html",
+      "snippet": "Alibaba Group has released its newest AI model series, featuring new agentic capabilities, as competition in China&#x27;s AI space ramps up."
+    },
+    {
+      "title": "GitHub - day8reak/qwen3.5-4B-dflash · GitHub",
+      "url": "https://github.com/day8reak/qwen3.5-4B-dflash",
+      "snippet": "这是 Qwen3.5-4B 的 DFlash V1 PyTorch 实现，包含完整前缀重算调度、六层草稿模型、 CPU/CUDA 后端，以及 Ascend NPU/HIAI target 所需的检查和 loader。"
+    },
+    {
+      "title": "Qwen3.5 4B DFlash — Hardware Requirements & Compatibility",
+      "url": "https://llmrun.dev/model/z-lab-qwen3-5-4b-dflash",
+      "snippet": "Qwen3.5 4B DFlash 537M needs 1.40 GB VRAM at BF16. See compatible GPUs, quantization options, and estimated performance for Qwen3.5 4B DFlash."
+    }
+  ]
+}

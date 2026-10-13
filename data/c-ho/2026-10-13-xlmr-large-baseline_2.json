@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "c-ho/2026-10-13-xlmr-large-baseline_2",
+  "slug": "c-ho-2026-10-13-xlmr-large-baseline_2",
+  "author": "c-ho",
+  "url": "https://huggingface.co/c-ho/2026-10-13-xlmr-large-baseline_2",
+  "created_at": "2026-10-13T00:32:57.000Z",
+  "updated_at": "2026-10-13T01:33:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558874657,
+  "parameters_human": "558.9M",
+  "storage_bytes": 22377629174,
+  "storage_human": "22.4 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C (programming language) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C_(programming_language)",
+      "snippet": "Dennis Ritchie (right), the inventor of the C programming language, with Ken Thompson C is an imperative, procedural language with …"
+    },
+    {
+      "title": "C syntax - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C_syntax",
+      "snippet": "A snippet of C code from the Linux kernel C syntax is the form that text must have in order to be C programming language code. The …"
+    },
+    {
+      "title": "Bélus (Landes) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/B%C3%A9lus_(Landes)",
+      "snippet": "Plusieurs études ont été menées afin de caractériser les types climatiques auxquels est exposé le territoire national. Les zonages …"
+    },
+    {
+      "title": "Why is the C programming language called C? and what happened to …",
+      "url": "https://www.makeuseof.com/why-is-c-programming-language-called-c-what-happened-to-d/",
+      "snippet": "Feb 23, 2026 · You might not see the C programming language everywhere, but it is invisibly everywhere. When you start your car, …"
+    },
+    {
+      "title": "C - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/C",
+      "snippet": "C in copyright symbol C (minuscule: c) is the third letter of the Latin alphabet, used in the modern English alphabet, the alphabets of …"
+    }
+  ]
+}

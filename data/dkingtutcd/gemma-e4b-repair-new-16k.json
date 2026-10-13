@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "dkingtutcd/gemma-E4B-repair-new-16k",
+  "slug": "dkingtutcd-gemma-e4b-repair-new-16k",
+  "author": "dkingtutcd",
+  "url": "https://huggingface.co/dkingtutcd/gemma-E4B-repair-new-16k",
+  "created_at": "2026-10-12T19:29:46.000Z",
+  "updated_at": "2026-10-12T19:32:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-E4B-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "至急願います。Pornhubにログインしようとすると、「この.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10228297730",
+      "snippet": "Jul 12, 2020 · 404s - Pornhub 申し訳ありませんが、要求されたページはすべて凍結されており、見つかりません。 このメッセージ …Read more"
+    },
+    {
+      "title": "【緊急】我が家のPCがウイルスに感染した件 - 先日、私はPC …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13194880798",
+      "snippet": "Aug 20, 2018 · ①タップスネーク，②pornhubは問題ない。 ③アンインストールすれば良い ⑤ウイルスバスターの結果は信用でき …"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "Eliminar cuenta de Pornhub - CCM - Foro tecnológico",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub?lang=es",
+      "snippet": "Hola, solicítalo por correo electrónico a support@pornhub.com -- bazfile Moderador/Contribuyente de seguridad. un hola, una …"
+    },
+    {
+      "title": "pornhubというサイトを視聴していた際、他の動画をクリックす.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12299599822",
+      "snippet": "Mar 26, 2022 · pornhubというサイトを視聴していた際、他の動画をクリックすると、別のウィンドウが開きました。 そのあと、ウ …"
+    }
+  ]
+}

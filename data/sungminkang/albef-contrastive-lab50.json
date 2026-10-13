@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sungminkang/albef-contrastive-lab50",
+  "slug": "sungminkang-albef-contrastive-lab50",
+  "author": "sungminkang",
+  "url": "https://huggingface.co/sungminkang/albef-contrastive-lab50",
+  "created_at": "2026-10-13T00:19:47.000Z",
+  "updated_at": "2026-10-13T00:19:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 891 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Linf-elix/albef-contrastive · Hugging Face",
+      "url": "https://huggingface.co/Linf-elix/albef-contrastive",
+      "snippet": "Overview This repository is a compact, custom PyTorch implementation of Albef for Contrastive. The nano configuration is intended for code review, smoke tests, and small controlled experiments rather than as a production-ready pretrained release."
+    },
+    {
+      "title": "szwagner/my-contrastive · Hugging Face",
+      "url": "https://huggingface.co/szwagner/my-contrastive",
+      "snippet": "A research-oriented Albef prototype targeting Contrastive. The included small setup documents defaults and file formats without presenting unverified performance numbers."
+    },
+    {
+      "title": "[2107.07651] Align before Fuse: Vision and Language Representation ...",
+      "url": "https://arxiv.org/abs/2107.07651",
+      "snippet": "In this paper, we introduce a contrastive loss to ALign the image and text representations BEfore Fusing (ALBEF) them through cross-modal attention, which enables more grounded vision and language representation learning. Unlike most existing methods, our method does not require bounding box annotations nor high-resolution images."
+    },
+    {
+      "title": "GitHub - salesforce/ALBEF: Code for ALBEF: a new vision-language pre ...",
+      "url": "https://github.com/salesforce/ALBEF",
+      "snippet": "Align before Fuse: Vision and Language Representation Learning with Momentum Distillation, NeurIPS 2021 Spotlight (Salesforce Research). Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    }
+  ]
+}

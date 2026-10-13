@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task1-raster-tok256-lora",
+  "slug": "bdatm-project-qwen-task1-raster-tok256-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task1-raster-tok256-lora",
+  "created_at": "2026-10-12T21:04:50.000Z",
+  "updated_at": "2026-10-12T21:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 711965685,
+  "storage_human": "712 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bdatm-project/qwen-task1-raster-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-raster-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bdatm-project/qwen-task1-raster-lora at main - Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-raster-lora/tree/main",
+      "snippet": "Notebooks Google Colab Kaggle main qwen-task1-raster-lora 45.6 MB Ctrl+K Ctrl+K 1 contributor History:3 commits TommasoBergonzoni Upload processor 70de43b verifiedabout 9 hours ago .gitattributes Safe 1.57 kBUpload processorabout 9 hours ago README.md Safe 5.17 kBTraining complete for task1 using raster reordering strategyabout 9 hours ago adapter_config.json 1.15 kBTraining complete for task1 ..."
+    },
+    {
+      "title": "GitHub - mustafagalata/lora-project",
+      "url": "https://github.com/mustafagalata/lora-project",
+      "snippet": "Üç görevli final projesi: LoRA Fine-Tuning (Qwen2.5-7B-Instruct, 4-bit QLoRA) — WMT16 EN↔TR Machine Translation RAG-based QA — TurkishMMLU History (FAISS + intfloat/multilingual-e5-base) Agent System Design — çok dilli QA (Wikipedia + RAG); yalnızca tasarım dokümanı"
+    },
+    {
+      "title": "Qwen — Model Architecture Across Generations — Model Architectures — A ...",
+      "url": "https://karam-nus.github.io/models/01_Qwen",
+      "snippet": "🟣 Qwen — Model Architecture Across Generations From a competitive Chinese LLM to a global open-weight powerhouse — tracing 5 generations of architecture evolution."
+    },
+    {
+      "title": "Best Coding LLM for 8GB, 16GB & 24GB VRAM (2026)",
+      "url": "https://llmconfigurator.com/en/guides/coding-agents/best-local-coding-models",
+      "snippet": "The best local coding models for every memory tier, with VRAM needs computed for each and licences shown. Find what your GPU runs, then set up an agent."
+    }
+  ]
+}

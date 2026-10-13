@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ngirazimr/nemesis-lora",
+  "slug": "ngirazimr-nemesis-lora",
+  "author": "ngirazimr",
+  "url": "https://huggingface.co/ngirazimr/nemesis-lora",
+  "created_at": "2026-10-12T22:48:36.000Z",
+  "updated_at": "2026-10-12T23:02:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nemesis｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1652143456743404728",
+      "snippet": "Unlock creativity with PixAI&#x27;s AI art generator. Generate high-quality anime AI art effortlessly. Explore AI tools, character templates, and more."
+    },
+    {
+      "title": "Nemesis｜AI Art Model & LoRA | PixAI",
+      "url": "https://pixai.art/en/model/1875222879014409692",
+      "snippet": "Just created this stunning anime art with the amazing &#x27;Nemesis&#x27; model on PixAI! Search for \"Nemesis\" on PixAI - the free & professional AI anime art generator. Create your own masterpieces in seconds. Try it now!"
+    },
+    {
+      "title": "Nemesis/涅默 - CivArchive (CivitAI Archive)",
+      "url": "https://civarchive.com/models/1926533?modelVersionId=2180486",
+      "snippet": "Download Nemesis/涅默 - LORA by Beavery. Free AI model download from CivArchive."
+    },
+    {
+      "title": "ネメシス (To Love-Ru) - 2.0 NEMESIS - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/873861311249805381",
+      "snippet": "Download ネメシス (To Love-Ru) - free LORA Illustrious AI model on TENSOR. NEMESIS. By user_668379289003106049."
+    },
+    {
+      "title": "Nemesis/涅默 - v1.0 | Illustrious LoRA | Civitai",
+      "url": "https://civitai.com/models/1926533/nemesis",
+      "snippet": "Contains Default Outfit for Nemesis Recommended weight is always 0.8 or lower if you use it with multiple other LORAs!"
+    }
+  ]
+}

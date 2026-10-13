@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF",
+  "slug": "webmp3-sakura-qwen-image-2-1-pe-i2i-uncensored-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-I2I-Uncensored-GGUF",
+  "created_at": "2026-10-12T02:39:37.000Z",
+  "updated_at": "2026-10-12T21:47:04.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sakura",
+    "sakura-image",
+    "llama.cpp",
+    "qwen-image",
+    "prompt-rewriting",
+    "image-editing",
+    "uncensored",
+    "abliterated",
+    "not-for-all-audiences",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen-Image-2.1-PE-I2I",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-PE-I2I",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 32149551808,
+  "storage_human": "32.1 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-PE-I2I",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=hi",
+      "snippet": "कोई अकाउंट बनाएँ या Instagram में लॉग इन करें - आपको पसंद करने वाले लोगों के साथ अपनी पसंद की चीज़ें शेयर करें."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Instagram Direct avec Messenger | Discussion vidéo et DM | À propos …",
+      "url": "https://about.instagram.com/fr-fr/features/direct",
+      "snippet": "Envoyez des messages, des photos et des vidéos à vos ami·es sur Facebook et Instagram, et ajoutez-y des effets et des légendes. …"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/1645522102409931",
+      "snippet": "Find solutions and support for your Instagram account on the Help Center."
+    }
+  ]
+}

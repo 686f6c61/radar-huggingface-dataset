@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gijl/level-tts-ar",
+  "slug": "gijl-level-tts-ar",
+  "author": "gijl",
+  "url": "https://huggingface.co/gijl/level-tts-ar",
+  "created_at": "2026-10-12T10:01:37.000Z",
+  "updated_at": "2026-10-12T21:42:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "text-to-speech",
+    "voice-cloning",
+    "arabic",
+    "arabic-dialects",
+    "flow-matching",
+    "ar",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 86195102708,
+  "storage_human": "86.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "18+ on Vimeo",
+      "url": "https://vimeo.com/showcase/4474293?msockid=2c268b3e4e056d8d029e9cce4f1d6ce2",
+      "snippet": "Join the web’s most supportive community of creators and get high-quality tools for hosting, sharing, and streaming videos in …"
+    },
+    {
+      "title": "Sex Lives Of College Girls: Season 1 | IMDb",
+      "url": "https://www.imdb.com/video/vi412467993/",
+      "snippet": "Sex Lives Of College Girls: Season 1 What to watchLatest trailersIMDb OriginalsIMDb PicksIMDb SpotlightFamily entertainment …"
+    },
+    {
+      "title": "The Sex Lives Of College Girls | IMDb",
+      "url": "https://www.imdb.com/video/vi1239991065/",
+      "snippet": "A comedy series exploring the lives, friendships, and relationships of four college roommates navigating their personal and academic …"
+    },
+    {
+      "title": "School Girls Videos, Download The BEST Free 4k Stock Video",
+      "url": "https://www.pexels.com/search/videos/school%20girls/",
+      "snippet": "Download and use 35,290+ School girls stock videos for free. Thousands of new 4k videos every day Completely Free to Use High …"
+    },
+    {
+      "title": "American Videos, Download The BEST Free 4k Stock Video Footage …",
+      "url": "https://www.pexels.com/search/videos/american/",
+      "snippet": "Download and use 40,770+ American stock videos for free. Thousands of new 4k videos every day Completely Free to Use High …"
+    }
+  ]
+}

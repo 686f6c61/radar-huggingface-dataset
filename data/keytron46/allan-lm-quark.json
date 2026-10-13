@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "keytron46/Allan-LM-Quark",
+  "slug": "keytron46-allan-lm-quark",
+  "author": "keytron46",
+  "url": "https://huggingface.co/keytron46/Allan-LM-Quark",
+  "created_at": "2026-10-12T19:27:04.000Z",
+  "updated_at": "2026-10-12T20:28:18.000Z",
+  "license": "bsl-1.1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "moe",
+    "base-model",
+    "from-scratch",
+    "text-generation",
+    "ru",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:codeparrot/github-code-clean",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 283661440,
+  "parameters_human": "283.7M",
+  "storage_bytes": 1134683408,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXX - Vimeo",
+      "url": "https://vimeo.com/xxxx?msockid=2121ddc6685866671034ca3669a867d6",
+      "snippet": "XXXX is a member of Vimeo, the home for high quality videos and the people who love them."
+    },
+    {
+      "title": "XSXXX - YouTube",
+      "url": "https://www.youtube.com/source/rhrxSHVv9eE/shorts",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "LX Sweat - Xxxxxx Xxxxx Xxxx Xxxxxxx | Deezer",
+      "url": "https://www.deezer.com/en/track/73663691",
+      "snippet": "Listen to Xxxxxx Xxxxx Xxxx Xxxxxxx on Deezer: City of Sweat | LX Sweat | 28/05/2014 | 04:41. Sign up for free!"
+    },
+    {
+      "title": "Selina Jay (@xxSxxx) / X",
+      "url": "https://x.com/xxSxxx",
+      "snippet": "21 followers · 135 following. northampton. Joined Oct 2009. See the latest conversations with @xxSxxx"
+    },
+    {
+      "title": "Homepage - XXXX",
+      "url": "https://www.xxxx.com.au/",
+      "snippet": "Come say hi and take a remarkable trip back through over 140 years of Queensland's beer history. Then cap it off with a tasting …"
+    }
+  ]
+}

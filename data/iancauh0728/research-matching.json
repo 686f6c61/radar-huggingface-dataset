@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "IanCauh0728/research-matching",
+  "slug": "iancauh0728-research-matching",
+  "author": "IanCauh0728",
+  "url": "https://huggingface.co/IanCauh0728/research-matching",
+  "created_at": "2026-10-13T00:11:17.000Z",
+  "updated_at": "2026-10-13T00:11:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hugging Face - The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Best AI for Research in 2026: Live Model Rankings",
+      "url": "https://llm-stats.com/leaderboards/best-ai-for-research",
+      "snippet": "Compare the best AI for research and academic research using live model rankings, benchmark evidence, pricing, citation guidance, methodology, and limitations."
+    },
+    {
+      "title": "Matching Algorithms. Some applications of machine learning ... - Medium",
+      "url": "https://medium.com/@PeterBruce/matching-algorithms-d3b9ffac4320",
+      "snippet": "Matching Algorithms Some applications of machine learning and artificial intelligence are recognizably impressive — predicting future hospital readmission of discharged patients, for example, or …"
+    },
+    {
+      "title": "Perplexity AI",
+      "url": "https://www.perplexity.ai/",
+      "snippet": "Perplexity is a free AI-powered answer engine that provides accurate, trusted, and real-time answers to any question."
+    },
+    {
+      "title": "What is Matching in Artificial Intelligence? - vegavid.com",
+      "url": "https://vegavid.com/blog/what-is-matching-in-artificial-intelligence",
+      "snippet": "Matching in artificial intelligence is the process of comparing data, patterns, entities, or structures to identify similarity, relevance, or logical correspondence. It helps AI systems decide whether two inputs belong together or satisfy a defined condition."
+    }
+  ]
+}

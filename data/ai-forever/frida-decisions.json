@@ -33,10 +33,11 @@
     "base_model:ai-forever/FRIDA",
     "base_model:finetune:ai-forever/FRIDA",
     "license:mit",
+    "eval-results",
     "region:us"
   ],
-  "likes": 43,
-  "downloads_30d": 806,
+  "likes": 44,
+  "downloads_30d": 855,
   "trending_score": 15,
   "parameters": 823401216,
   "parameters_human": "823.4M",

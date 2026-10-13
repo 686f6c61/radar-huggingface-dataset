@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "alibiserikbay/k5-kazakh-russian-stt",
+  "slug": "alibiserikbay-k5-kazakh-russian-stt",
+  "author": "alibiserikbay",
+  "url": "https://huggingface.co/alibiserikbay/k5-kazakh-russian-stt",
+  "created_at": "2026-10-08T13:41:24.000Z",
+  "updated_at": "2026-10-12T22:36:59.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "kk",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "gigaam",
+    "speech",
+    "asr",
+    "ctc",
+    "conformer",
+    "streaming",
+    "kazakh",
+    "russian",
+    "code-switching",
+    "kenlm",
+    "automatic-speech-recognition",
+    "custom_code",
+    "kk",
+    "ru",
+    "dataset:issai/Kazakh_Speech_Corpus_2",
+    "dataset:google/fleurs",
+    "base_model:ai-sage/GigaAM-Multilingual",
+    "base_model:quantized:ai-sage/GigaAM-Multilingual",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 585330119,
+  "parameters_human": "585.3M",
+  "storage_bytes": 12685184445,
+  "storage_human": "12.7 GB",
+  "base_model": "ai-sage/GigaAM-Multilingual",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or …Read more"
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=fr-FR",
+      "snippet": "ChatGPT vous aide à obtenir des réponses, à trouver de l’inspiration et à gagner en productivité."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · Many lessons from deployment of earlier models like GPT‑3 and Codex have informed the safety mitigations in place …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "In November 2023, OpenAI released GPT Builder, a tool allowing users to customize ChatGPT's behavior for a specific use case. …"
+    }
+  ]
+}

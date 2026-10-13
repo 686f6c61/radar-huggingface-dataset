@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Lapis17/zero-stt-hinglish-ggml",
+  "slug": "lapis17-zero-stt-hinglish-ggml",
+  "author": "Lapis17",
+  "url": "https://huggingface.co/Lapis17/zero-stt-hinglish-ggml",
+  "created_at": "2026-10-12T23:59:27.000Z",
+  "updated_at": "2026-10-13T00:02:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "whisper",
+    "ggml",
+    "speech-recognition",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1533783214,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "shunyalabs/zero-stt-hinglish · Hugging Face",
+      "url": "https://huggingface.co/shunyalabs/zero-stt-hinglish",
+      "snippet": "This is a model worthy of how India actually speaks, because it can capture the way people naturally switch between Hindi and English mid-conversation. And now, we&#x27;re making the lighter version of Zero STT Codeswitch open source for the community! For a faster version of Zero STT Codeswitch, visit shunyalabs.ai."
+    },
+    {
+      "title": "shunyalabs/zero-stt-hinglish • hfviewer",
+      "url": "https://hfviewer.com/shunyalabs/zero-stt-hinglish",
+      "snippet": "shunyalabs/zero-stt-hinglish: automatic-speech-recognition model with Self-attention, Residual (skip) connection, Transformer block."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "README.md · shunyalabs/zero-stt-hinglish at main - Hugging Face",
+      "url": "https://huggingface.co/shunyalabs/zero-stt-hinglish/blame/main/README.md",
+      "snippet": "shunyalabs / zero-stt-hinglish like 1 Follow Shunya Labs 43 Automatic Speech Recognition Safetensors ARTPARK-IISc/Vaani ai4bharat/Kathbath ai4bharat/Shrutilipi Hindi English whisper Hinglish Codeswitching Speech-to-text Indic STT License:openrail Model card FilesFiles and versions xet Community main zero-stt-hinglish File size: 3,973 Bytes"
+    },
+    {
+      "title": "GGUF Model Discovery - Browse & Download AI Models",
+      "url": "https://local-ai-zone.github.io/",
+      "snippet": "Discover and download GGUF format AI models. Browse and direct download thousands of quantized AI models with detailed information, download counts, and direct links."
+    }
+  ]
+}

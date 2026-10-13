@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-view-large-stopped-diagnostic26-20261013",
+  "slug": "donghyun1228-pi05-libero-b200-weight-geometry-kappa1-view-large-stopped-diagnostic26-20261013",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-view-large-stopped-diagnostic26-20261013",
+  "created_at": "2026-10-13T00:09:08.000Z",
+  "updated_at": "2026-10-13T00:11:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "stopped-diagnostic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13086795877,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aubrey Starr (@aubrey.starr) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aubrey.starr/",
+      "snippet": "3,507 Followers, 538 Following, 16 Posts - Aubrey Starr (@aubrey.starr) on Instagram: \"1 Corinthians 16:14 | @iowastateu | 📍mn\"Read more"
+    },
+    {
+      "title": "Aubrey Starr - YouTube",
+      "url": "https://www.youtube.com/@Aubreyystarr",
+      "snippet": "Trying the FNAF 2 meal at Popeyes! (Found something in my tenders...) Costa Rica Vlog - Final Part (went off the path...) Trying The …"
+    },
+    {
+      "title": "aubrey (@aaubreystarr) • Instagram photos and videos",
+      "url": "https://www.instagram.com/aaubreystarr/",
+      "snippet": "Follow aaubreystarr in the app to see their photos and videos. 366 followers · 144 following. See photos and videos from friends on …"
+    },
+    {
+      "title": "Aubrey Starr - Heart's Desire (Remix 2024) - YouTube",
+      "url": "https://www.youtube.com/watch?v=XyjcmxHB7aE",
+      "snippet": "Jan 9, 2025 · Aubrey's enchanting vocals resonate with passion, expressing the deep longing and joy of a heart that finds its ultimate …"
+    },
+    {
+      "title": "Aubrey Starr - IMDb",
+      "url": "https://www.imdb.com/name/nm11261163/",
+      "snippet": "Add a bio, trivia, and more. Aubrey Starr. Actress: Aubrey Starr 2."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell",
+  "slug": "tc-huang-pi05_mahjong_v1_tray07_twos_dart_nodwell",
+  "author": "tc-huang",
+  "url": "https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell",
+  "created_at": "2026-10-12T19:44:17.000Z",
+  "updated_at": "2026-10-12T22:24:07.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "mahjong",
+    "so101",
+    "simulation",
+    "isaac-lab",
+    "robotics",
+    "dataset:tc-huang/mahjong_v1_tray07_twos_dart",
+    "base_model:tc-huang/pi05_mahjong_v1_tray07_twos_dart",
+    "base_model:finetune:tc-huang/pi05_mahjong_v1_tray07_twos_dart",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 33147535384,
+  "storage_human": "33.1 GB",
+  "base_model": "tc-huang/pi05_mahjong_v1_tray07_twos_dart",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TC — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/TC",
+      "snippet": "Cette répertorie les différents sujets et articles portant le même nom. Cette page recense les différentes significations (codes, sigles, …"
+    },
+    {
+      "title": "FFSA Tourisme TC France",
+      "url": "https://www.ffsatourisme.fr/",
+      "snippet": "3 days ago · Retrouvez toutes les nouveautés du Championnat de France FFSA Tourisme : les courses en direct, le live timing, les …"
+    },
+    {
+      "title": "Voir Ici tout commence (ITC) : tous les épisodes en streaming | TF1+",
+      "url": "https://www.tf1.fr/tf1/ici-tout-commence",
+      "snippet": "Regardez gratuitement « Ici tout commence » en streaming sur TF1+ ! Série. Au sein d'un prestigieux institut de gastronomie, élèves …"
+    },
+    {
+      "title": "TCF-Candidat",
+      "url": "https://tcfcandidat.france-education-international.fr/",
+      "snippet": "Ici, vous suivez le statut de votre session d’examen, consultez vos résultats, téléchargez vos attestations."
+    },
+    {
+      "title": "T2C | Transport en commun de l'agglomération clermontoise",
+      "url": "https://www.t2c.fr/",
+      "snippet": "Transport en Commun de l'agglomération Clermontoise. Recherche d'itinéraires, planification de déplacements, consultation des …"
+    }
+  ]
+}

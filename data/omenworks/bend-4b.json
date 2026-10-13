@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OmenWorks/bend-4b",
+  "slug": "omenworks-bend-4b",
+  "author": "OmenWorks",
+  "url": "https://huggingface.co/OmenWorks/bend-4b",
+  "created_at": "2026-10-12T22:06:56.000Z",
+  "updated_at": "2026-10-12T22:25:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "decision-model",
+    "chat",
+    "llama.cpp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4207062528,
+  "parameters_human": "4.21B",
+  "storage_bytes": 7193348928,
+  "storage_human": "7.2 GB",
+  "base_model": "ggml-org/Kev-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "All 889 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 889 large language models across 755 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "Compare AI Models Side-by-Side (Live Benchmarks) | BenchLM",
+      "url": "https://benchlm.ai/compare",
+      "snippet": "Pick any two of 891 AI models and compare them across 626 live benchmarks — scores, pricing, speed and context, updated with every release. Free, no signup."
+    },
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "Track major AI model releases by date across OpenAI, Anthropic, Google, DeepSeek, Qwen, Mistral, Z.ai, Meta, and important open-weight model families."
+    },
+    {
+      "title": "Best Open Source AI Models 2026: DeepSeek, Llama 4 & More",
+      "url": "https://neuralwired.com/2026/05/29/best-open-source-ai-models-2026/",
+      "snippet": "The definitive ranked list of open source AI models in 2026. GLM-5, Kimi K2.6, DeepSeek V4, Llama 4, Qwen 3.5, Gemma 4 — benchmarks, licenses, and how to run each locally."
+    },
+    {
+      "title": "LLM Architecture Gallery | Sebastian Raschka, PhD",
+      "url": "https://sebastianraschka.com/llm-architecture-gallery/",
+      "snippet": "A gallery that collects architecture figures from The Big LLM Architecture Comparison and related articles, with fact sheets and links back to the original sections."
+    }
+  ]
+}

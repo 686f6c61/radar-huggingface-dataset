@@ -5,7 +5,7 @@
   "author": "JohnP1",
   "url": "https://huggingface.co/JohnP1/d1a-e4b-mlx-q8",
   "created_at": "2026-10-01T09:39:58.000Z",
-  "updated_at": "2026-10-11T15:31:54.000Z",
+  "updated_at": "2026-10-12T10:49:58.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -33,11 +33,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 103,
+  "downloads_30d": 116,
   "trending_score": 0,
   "parameters": 7463013376,
   "parameters_human": "7.46B",
-  "storage_bytes": 32071724102,
+  "storage_bytes": 32072557900,
   "storage_human": "32.1 GB",
   "base_model": "JohnP1/d1a-e4b",
   "formats": [

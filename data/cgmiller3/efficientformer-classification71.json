@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cgmiller3/efficientformer-classification71",
+  "slug": "cgmiller3-efficientformer-classification71",
+  "author": "cgmiller3",
+  "url": "https://huggingface.co/cgmiller3/efficientformer-classification71",
+  "created_at": "2026-10-13T00:07:53.000Z",
+  "updated_at": "2026-10-13T00:07:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EfficientFormer - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/efficientformer",
+      "snippet": "EfficientFormer Imagenet classifier and general purpose backbone. EfficientFormer is a vision transformer model that can classify images from the Imagenet dataset."
+    },
+    {
+      "title": "EfficientFormer - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/main/en/model_doc/efficientformer",
+      "snippet": "EfficientFormer Model transformer with an image classification head on top (a linear layer on top of the final hidden state of the [CLS] token) e.g. for ImageNet. This model is a PyTorch nn.Module subclass. Use it as a regular PyTorch Module and refer to the PyTorch documentation for all matter related to general usage and behavior."
+    },
+    {
+      "title": "davialmeida/efficientformer-classification · Hugging Face",
+      "url": "https://huggingface.co/davialmeida/efficientformer-classification",
+      "snippet": "davialmeida / efficientformer-classification like 0 Safetensors PyTorch efficientformer classification License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Efficientformer for Classification Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "qualcomm-ai-hub-models/src/qai_hub_models/models ... - GitHub",
+      "url": "https://github.com/sandipanb01/qualcomm-ai-hub-models/tree/main/src/qai_hub_models/models/efficientformer",
+      "snippet": "Qualcomm® AI Hub Models is our collection of state-of-the-art machine learning models optimized for performance (latency, memory etc.) and ready to deploy on Qualcomm® devices. - sandipanb01/qualco..."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 891 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    }
+  ]
+}

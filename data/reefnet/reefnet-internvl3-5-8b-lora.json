@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ReefNet/reefnet-internvl3.5-8b-lora",
+  "slug": "reefnet-reefnet-internvl3-5-8b-lora",
+  "author": "ReefNet",
+  "url": "https://huggingface.co/ReefNet/reefnet-internvl3.5-8b-lora",
+  "created_at": "2026-10-12T22:42:16.000Z",
+  "updated_at": "2026-10-12T22:42:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "llama-factory",
+    "coral-reef",
+    "biodiversity",
+    "fine-grained-classification",
+    "reefnet",
+    "image-text-to-text",
+    "conversational",
+    "dataset:ReefNet/ReefNet-1.0",
+    "base_model:OpenGVLab/InternVL3_5-8B-HF",
+    "base_model:adapter:OpenGVLab/InternVL3_5-8B-HF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98792628,
+  "storage_human": "99 MB",
+  "base_model": "OpenGVLab/InternVL3_5-8B-HF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ReefNet",
+      "url": "https://reefnet-project.github.io/reefnet-2025/",
+      "snippet": "We present baseline results and evaluate state-of-the-art methods across task-specific splits. ReefNet enables scalable ecological analysis and paves the way for domain-adaptive AI models for marine biodiversity monitoring."
+    },
+    {
+      "title": "ReefNet (ReefNet) - Hugging Face",
+      "url": "https://huggingface.co/ReefNet/models",
+      "snippet": "Org profile for ReefNet on Hugging Face, the AI community building the future."
+    },
+    {
+      "title": "GitHub - OpenGVLab/InternVL: [CVPR 2024 Oral] InternVL Family: A ...",
+      "url": "https://github.com/OpenGVLab/InternVL",
+      "snippet": "The resulting model, InternVL2-8B-MPO, achieves an accuracy of 67.0 on MathVista. Please refer to our paper, project page and document for more details. More News 2024/10/21: We release the Mini-InternVL series. These models achieve impressive performance with minimal size: the 4B model achieves 90% of the performance with just 5% of the model ..."
+    },
+    {
+      "title": "GitHub - ReefNet-Project/reefnet-project.github.io: Project page for ...",
+      "url": "https://github.com/ReefNet-Project/reefnet-project.github.io",
+      "snippet": "Project page for ReefNet: A Large-scale, Taxonomically Enriched Dataset and Benchmark for Coral Reef Classification (NeurIPS 2025 submission). Includes paper, dataset links, benchmarks, code, and supplementary materials."
+    },
+    {
+      "title": "OpenGVLab/InternVL3_5-8B · Hugging Face",
+      "url": "https://huggingface.co/OpenGVLab/InternVL3_5-8B",
+      "snippet": "Quick Start We provide an example code to run InternVL3.5-8B using transformers. Please note that our models with up to 30B parameters can be deployed on a single A100 GPU, while the 38B model requires two A100 GPUs and the 235B model requires eight A100 GPUs. In most cases, both LMDeploy and vLLM can be used for model deployment."
+    }
+  ]
+}

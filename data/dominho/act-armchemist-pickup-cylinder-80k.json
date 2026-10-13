@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dominho/act-armchemist-pickup-cylinder-80k",
+  "slug": "dominho-act-armchemist-pickup-cylinder-80k",
+  "author": "Dominho",
+  "url": "https://huggingface.co/Dominho/act-armchemist-pickup-cylinder-80k",
+  "created_at": "2026-10-13T00:28:05.000Z",
+  "updated_at": "2026-10-13T00:28:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "imitation-learning",
+    "omx",
+    "ko",
+    "en",
+    "dataset:gamzadole/ARMCHEMIST_PICKUP_CYLINDER",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668668,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206701376,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tarkov Database",
+      "url": "https://tarkov-database.com/",
+      "snippet": "Browsable item and location database for Escape from Tarkov which additionally provides a REST API for developers."
+    },
+    {
+      "title": "AcidHub",
+      "url": "https://acidhub.net/",
+      "snippet": "AcidHub Premium Roblox scripts for supported games. Works with Volt, Potassium, Wave, Seliware and more."
+    },
+    {
+      "title": "Vaults of the Artificers loot - DDO wiki",
+      "url": "https://ddowiki.com/page/Vaults_of_the_Artificers_loot",
+      "snippet": "To reduce load times and page complexity, only the level 20 versions are listed here. To see all versions, view the linked full list. All items items are Bound to Account on Acquire. Weapons [edit] Full list at Vaults of the Artificers weapons. Mournlode Weapons [edit] Available weapon types: Mournlode Shortsword, Mournlode Longsword, Mournlode Greataxe, Mournlode Light Mace, Mournlode ..."
+    },
+    {
+      "title": "[0.5.5] Ky&#x27;s 1 Button Arc Totems Gemling Legionnaire - Mobalytics",
+      "url": "https://mobalytics.gg/poe-2/builds/arc-gemling-path-of-ky",
+      "snippet": "Conquer the game with [0.5.5] Ky&#x27;s 1 Button Arc Totems Gemling Legionnaire [ LeagueStart to Endgame] PoE 2 Mercenary build! Learn everything about the build: equipment, skill gems, passive tree, gameplay, and mechanics."
+    },
+    {
+      "title": "Private video - YouTube",
+      "url": "https://www.youtube.com/watch?v=0LKkxmtFXww",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    }
+  ]
+}

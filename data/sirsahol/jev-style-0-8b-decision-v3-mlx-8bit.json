@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-8bit",
+  "slug": "sirsahol-jev-style-0-8b-decision-v3-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Jev-Style-0.8B-Decision-v3-mlx-8bit",
+  "created_at": "2026-10-13T00:37:06.000Z",
+  "updated_at": "2026-10-13T00:37:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "apple-silicon",
+    "8-bit",
+    "jev-style",
+    "decision-model",
+    "transformers",
+    "system-one",
+    "calibration",
+    "classification",
+    "long-context",
+    "multilingual",
+    "qwen3.5",
+    "on-device",
+    "llm-routing",
+    "guardrails",
+    "text-classification",
+    "en",
+    "zh",
+    "ar",
+    "bg",
+    "de",
+    "el",
+    "es",
+    "fr",
+    "hi",
+    "ja",
+    "ko",
+    "pt",
+    "ru",
+    "sw",
+    "ta",
+    "th",
+    "tr",
+    "ur",
+    "vi",
+    "license:apache-2.0",
+    "base_model:chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
+    "base_model:quantized:chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 819963073,
+  "storage_human": "820 MB",
+  "base_model": "chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jev-Style-0.8B-Decision-v3-MLX - GitHub",
+      "url": "https://github.com/lawrence3699/Jev-Style-0.8B-Decision-v3-MLX",
+      "snippet": "Jev-style decisions on your laptop. These are the Apple-silicon (MLX) builds of Jev-Style-.8B-Decision-v3: 8-bit (0.80 GB) and bf16 (1.50 GB) in one repository, both with the same decision as full precision on 240 of 240 parity rows. The smallest build overall is the 0.53 GB GGUF Q4_K_M. Full results, protocols, training data and licences are on the main model card."
+    },
+    {
+      "title": "gahabeen/Jev-Style-0.8B-Decision-v3-MLX · Hugging Face",
+      "url": "https://huggingface.co/gahabeen/Jev-Style-0.8B-Decision-v3-MLX",
+      "snippet": "Jev-style decisions on your laptop. These are the Apple-silicon (MLX) builds of Jev-Style-.8B-Decision-v3: 8-bit (0.80 GB) and bf16 (1.50 GB) in one repository, both with the same decision as full precision on 240 of 240 parity rows. The smallest build overall is the 0.53 GB GGUF Q4_K_M. Full results, protocols, training data and licences are on the main model card."
+    },
+    {
+      "title": "chaoliangUNSW/Jev-Style-0.8B-Decision-v3 · Hugging Face",
+      "url": "https://huggingface.co/chaoliangUNSW/Jev-Style-0.8B-Decision-v3",
+      "snippet": "Jev-Style decision series: v1 · 2B → v2 · 2B → v3 · 0.8B (this model) · Website: jevstyle.com One state. One pass. Every option scored. Jev-Style v3 is a 0.8B decision model. It takes inputs of up to 25,600 tokens, reads the state once and returns a calibrated probability for every option of every question you ask about it."
+    },
+    {
+      "title": "Jev AI Model (TypeSafe) — Typed System One Decisions",
+      "url": "https://jevmodel.org/",
+      "snippet": "Jev is TypeSafe AI&#x27;s System One model: choice, score, or yes/no probability instead of chat. Hosted API is open. $0.042/1M input tokens."
+    },
+    {
+      "title": "jev-ai · GitHub",
+      "url": "https://github.com/jev-ai",
+      "snippet": "Jev AI is an online decision model for software teams that need structured answers from real-world application state. It is designed for the small but important decisions that happen repeatedly inside a product: classify a request, route a ticket, score urgency, check whether an action is safe, or decide whether a person should review the result."
+    }
+  ]
+}

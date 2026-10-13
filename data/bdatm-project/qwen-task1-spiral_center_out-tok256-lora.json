@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bdatm-project/qwen-task1-spiral_center_out-tok256-lora",
+  "slug": "bdatm-project-qwen-task1-spiral_center_out-tok256-lora",
+  "author": "bdatm-project",
+  "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral_center_out-tok256-lora",
+  "created_at": "2026-10-13T00:01:29.000Z",
+  "updated_at": "2026-10-13T00:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 711965749,
+  "storage_human": "712 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora · Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "bdatm-project/qwen-task1-spiral-lora at main - Hugging Face",
+      "url": "https://huggingface.co/bdatm-project/qwen-task1-spiral-lora/tree/main",
+      "snippet": "like 0 Follow Big Data Analytics and Text Mining Project 1 Transformers Safetensors arxiv:1910.09700 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "GitHub - JackJackJ/NeocloudX-Labs: The repository for NeocloudX Labs ...",
+      "url": "https://github.com/JackJackJ/NeocloudX-Labs",
+      "snippet": "This project provides local, multimodal AI interfaces powered by Qwen 2.5 (LLM) and Tongyi-MAI Z-Image-Turbo (Image Generation). We provide multiple variations of the application ranging from lightweight consumer versions to enterprise-grade flagship models, as well as a standalone image generation tool."
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large and small language models (LLM and SLM) developed by Alibaba Cloud."
+    },
+    {
+      "title": "Qwen Image Models Training - 0 to Hero Level Tutorial - YouTube",
+      "url": "https://www.youtube.com/watch?v=DPX3eBTuO_Y",
+      "snippet": "This tutorial covers how to do LoRA training and full Fine-Tuning / DreamBooth training on Qwen Image models. It covers both the Qwen Image base model and the Qwen Image Edit Plus 2509..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dill-lab/GeoLadder-16M-32B-bs32-lr0.0087-wd0.1-decay0.01",
+  "slug": "dill-lab-geoladder-16m-32b-bs32-lr0-0087-wd0-1-decay0-01",
+  "author": "dill-lab",
+  "url": "https://huggingface.co/dill-lab/GeoLadder-16M-32B-bs32-lr0.0087-wd0.1-decay0.01",
+  "created_at": "2026-10-12T19:45:15.000Z",
+  "updated_at": "2026-10-12T22:40:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "hf_olmo",
+    "dataset:EleutherAI/the_pile_deduplicated",
+    "arxiv:2602.20433",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4707403397,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dill - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dill",
+      "snippet": "Dill (Anethum graveolens) is an annual herb in the celery family Apiaceae. [2] Native to North Africa and West Asia, dill is grown …"
+    },
+    {
+      "title": "Traduction DILL en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/dill",
+      "snippet": "Traduction de \"dill\" en français : aneth, imbécile, andouille. Nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "Dill'Occ - Dépôts illégaux en Occitanie",
+      "url": "https://www.cycl-op.org/communities/dillocc---depots-illegaux-en-occitanie/",
+      "snippet": "Sep 30, 2026 · Cycl’op est la plateforme des acteurs de l’économie circulaire en Occitanie. Initiée dans le cadre du Plan Régional …"
+    },
+    {
+      "title": "dill - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/dill.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"dill\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "dill - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/dill",
+      "snippet": "dill - traduction anglais-français. Forums pour discuter de dill, voir ses formes composées, des exemples et poser vos questions. …"
+    }
+  ]
+}

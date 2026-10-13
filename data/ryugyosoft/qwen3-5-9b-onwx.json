@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ryugyosoft/Qwen3.5-9B-onwx",
+  "slug": "ryugyosoft-qwen3-5-9b-onwx",
+  "author": "ryugyosoft",
+  "url": "https://huggingface.co/ryugyosoft/Qwen3.5-9B-onwx",
+  "created_at": "2026-10-12T22:04:46.000Z",
+  "updated_at": "2026-10-12T22:06:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "qwen3_5",
+    "npu",
+    "amd",
+    "ryzen-ai",
+    "xdna2",
+    "qwen3.5",
+    "gated-deltanet",
+    "int4",
+    "vision",
+    "onwx",
+    "image-text-to-text",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7331661058,
+  "storage_human": "7.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAQSIMA | LIMS, EHS & Betreiberverantwortung Software",
+      "url": "https://www.maqsima.de/en",
+      "snippet": "MAQSIMA bietet Softwarelösungen für LIMS und EHS. Mit LAB+ digitalisieren Sie Laborprozesse, mit TMS steuern Sie …Read more"
+    },
+    {
+      "title": "MAQSIMA LAB+ | LIMS",
+      "url": "https://www.maqsima.de/en/lablims",
+      "snippet": "Numerous features of MAQSIMA LAB+ ensure compliance with regulatory requirements. The LIMS has detailed user administration …"
+    },
+    {
+      "title": "MAQSIMA - BASSETTI Group",
+      "url": "https://www.bassetti-group.com/en/portfolio/maqsima/",
+      "snippet": "MAQSIMA Founded in 1999 and located in Sulzbach, Germany, near the French border, this Saarland-based company is renowned …"
+    },
+    {
+      "title": "Bassetti acquiert l’éditeur allemand MAQSIMA - Siparex",
+      "url": "https://www.siparex.com/bassetti-acquiert-lediteur-allemand-maqsima/",
+      "snippet": "Le groupe Bassetti renforce sa présence en Allemagne avec l’acquisition de MAQSIMA, un éditeur renommé de logiciels pour les …"
+    },
+    {
+      "title": "Acquisition de MAQSIMA - Communiqué de Presse - BASSETTI Group",
+      "url": "https://www.bassetti-group.com/communique-de-presse-acquisition-maqsima/",
+      "snippet": "Dès nos premières discussions, il est apparu clairement que nos produits, nos équipes et nos cultures d’entreprise sont parfaitement …"
+    }
+  ]
+}

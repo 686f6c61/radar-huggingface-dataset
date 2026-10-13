@@ -5,7 +5,7 @@
   "author": "sraivante",
   "url": "https://huggingface.co/sraivante/TinyFaceNet-1M",
   "created_at": "2026-10-10T17:23:39.000Z",
-  "updated_at": "2026-10-10T18:44:25.000Z",
+  "updated_at": "2026-10-12T07:13:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-feature-extraction",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 30,
+  "downloads_30d": 40,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

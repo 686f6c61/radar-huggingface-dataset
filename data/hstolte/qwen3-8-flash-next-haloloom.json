@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hstolte/Qwen3.8-Flash-Next-HALOLOOM",
+  "slug": "hstolte-qwen3-8-flash-next-haloloom",
+  "author": "hstolte",
+  "url": "https://huggingface.co/hstolte/Qwen3.8-Flash-Next-HALOLOOM",
+  "created_at": "2026-10-11T21:47:25.000Z",
+  "updated_at": "2026-10-12T23:17:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "haloloom",
+    "rocm",
+    "gfx1151",
+    "mixed-precision",
+    "int4",
+    "int8",
+    "awq",
+    "quantized",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 199540513650,
+  "storage_human": "199.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen3.8-Flash-Next · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next",
+      "snippet": "Today, we are sharing a concrete step in that direction: Qwen3.8-Flash-Next. This experimental preview of the architecture that will underpin Qwen4 is built around a fundamental rethinking of how the core components of modern large language models (LLMs) interact at scale."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next for Local AI in 2026: 180B on Disk, 6B Active, and ...",
+      "url": "https://www.runaihome.com/blog/qwen38-flash-next-local-ai-hardware-guide-2026/",
+      "snippet": "TL;DR: Qwen3.8-Flash-Next (released August 26, 2026) is a 180B-parameter MoE with only 6B active per token — and 51B of those parameters are an n-gram lookup table that can stream from your NVMe drive instead of sitting in RAM."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "Compared with Qwen3.7-Plus, Qwen3.8-Flash-Next substantially reduces both training and inference cost — training takes only about 1/9 as much, yet it delivers superior capabilities in coding and office tasks."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next on Windows (Strix Halo) - GitHub",
+      "url": "https://github.com/olliehm/qwen-flash-next-windows",
+      "snippet": "This repo is the Windows build, deployment, and serving layer around that work. No binaries, no weights. You build the engine from source and pull the GGUFs from unsloth/Qwen3.8-Flash-Next-GGUF."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-StrixHalo-Verified - Hugging Face",
+      "url": "https://huggingface.co/Kevletesteur/Qwen3.8-Flash-Next-StrixHalo-Verified",
+      "snippet": "I&#x27;m looking for a role in LLM inference and applied AI (local and on-prem inference, performance engineering, model evaluation), remote or around Pau, France. This runtime is a side project; I&#x27;m a physiotherapist by training — more about me at the end of this card."
+    }
+  ]
+}

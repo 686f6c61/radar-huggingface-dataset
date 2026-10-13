@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Pastel_Emo_Illustrious",
+  "slug": "aixfunestudio-pastel_emo_illustrious",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Pastel_Emo_Illustrious",
+  "created_at": "2026-10-12T23:13:23.000Z",
+  "updated_at": "2026-10-13T01:17:51.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7606336940,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AIxFuneStudio/Pastel_Outlines_Illustrious · Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio/Pastel_Outlines_Illustrious",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Pastel Outlines Illustrious - 1.0 | Illustrious Checkpoint | Civitai",
+      "url": "https://civitai.com/models/2986742/pastel-outlines-illustrious",
+      "snippet": "- More cool models. ℹ️ The Pastel Outlines style is defined by its exceptionally clean, bold line art paired with a soft, pastel-infused color palette. Drawing inspiration from modern webtoons and contemporary anime, this aesthetic frames every character with elegant, dark outlines that bring structure and clarity to the composition."
+    },
+    {
+      "title": "Pastel Outlines Illustrious - AIxFun eStudio&#x27;s Ko-fi Shop",
+      "url": "https://ko-fi.com/s/aed70e182e",
+      "snippet": "- This model is part of October 2026 models collection for AIxFun eStudio members. - Examples: videos + images. ℹ️ The Pastel Outlines style is defined by its exceptionally clean, bold line art paired with a soft, pastel-infused color palette. Drawing inspiration from modern webtoons and contemporary anime, this aesthetic frames every character with elegant, dark outlines that bring ..."
+    },
+    {
+      "title": "AIxFuneStudio (AIxFun eStudio) - Hugging Face",
+      "url": "https://huggingface.co/AIxFuneStudio",
+      "snippet": "User profile of AIxFun eStudio on Hugging Face"
+    },
+    {
+      "title": "Illustrious XL Model Archive - Evolution of AI Models",
+      "url": "https://www.illustrious-xl.ai/model/3",
+      "snippet": "Explore Illustrious XL&#x27;s AI model archive, tracking its evolution from v0.1 to the latest innovations. See how each version advances AI image generation."
+    }
+  ]
+}

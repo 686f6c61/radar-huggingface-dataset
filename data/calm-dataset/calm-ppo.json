@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CALM-Dataset/CALM-PPO",
+  "slug": "calm-dataset-calm-ppo",
+  "author": "CALM-Dataset",
+  "url": "https://huggingface.co/CALM-Dataset/CALM-PPO",
+  "created_at": "2026-10-12T21:58:43.000Z",
+  "updated_at": "2026-10-12T22:02:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "reinforcement-learning",
+    "ppo",
+    "vehicle-dynamics",
+    "ride-comfort",
+    "speed-bumps",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6688025,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calm - The #1 App for Meditation and Sleep",
+      "url": "https://www.calm.com/",
+      "snippet": "Calm is the #1 app for sleep and meditation. Join the millions experiencing better sleep, lower stress, and less anxiety."
+    },
+    {
+      "title": "Calm - The #1 App for Meditation and Sleep",
+      "url": "https://www.calm.com/mindfulness",
+      "snippet": "Calm puts the tools to achieve mindfulness in your back pocket with guided meditations, soothing music, and daily guided programs …"
+    },
+    {
+      "title": "Calm : l’application pour mieux dormir - Somnologie.fr",
+      "url": "https://somnologie.fr/calm-sommeil/",
+      "snippet": "Jun 16, 2026 · Calm est l’une des applications les plus populaires pour tenter de régler ce problème – et on vous dit honnêtement ce …"
+    },
+    {
+      "title": "Calm: Méditer, dormir, apaiser – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.calm.android&hl=fr",
+      "snippet": "Calm est l’appli n° 1 pour dormir et méditer. Découvrez nos méditations, Histoires pour dormir, musiques et plus encore pour une vie …"
+    },
+    {
+      "title": "Calm Account",
+      "url": "https://accounts.calm.com/",
+      "snippet": "Access your Calm account to explore meditation, sleep, and relaxation resources for a healthier mind and body."
+    }
+  ]
+}

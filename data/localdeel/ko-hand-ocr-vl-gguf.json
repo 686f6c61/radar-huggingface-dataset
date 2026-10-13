@@ -5,7 +5,7 @@
   "author": "localdeel",
   "url": "https://huggingface.co/localdeel/ko-hand-ocr-vl-GGUF",
   "created_at": "2026-10-07T23:08:42.000Z",
-  "updated_at": "2026-10-09T05:38:23.000Z",
+  "updated_at": "2026-10-12T14:41:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -33,12 +33,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 374,
+  "downloads_30d": 390,
   "trending_score": 0,
-  "parameters": 752393024,
-  "parameters_human": "752.4M",
-  "storage_bytes": 4843552570,
-  "storage_human": "4.8 GB",
+  "parameters": 558993216,
+  "parameters_human": "559.0M",
+  "storage_bytes": 5802818810,
+  "storage_human": "5.8 GB",
   "base_model": "localdeel/ko-hand-ocr-vl",
   "formats": [
     "gguf"

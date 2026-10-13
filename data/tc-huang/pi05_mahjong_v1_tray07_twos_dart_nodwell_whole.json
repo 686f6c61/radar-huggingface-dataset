@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell_whole",
+  "slug": "tc-huang-pi05_mahjong_v1_tray07_twos_dart_nodwell_whole",
+  "author": "tc-huang",
+  "url": "https://huggingface.co/tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell_whole",
+  "created_at": "2026-10-12T21:26:00.000Z",
+  "updated_at": "2026-10-12T22:24:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "mahjong",
+    "so101",
+    "simulation",
+    "isaac-lab",
+    "robotics",
+    "dataset:tc-huang/mahjong_v1_tray07_twos_dart",
+    "base_model:tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell",
+    "base_model:finetune:tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 33147535384,
+  "storage_human": "33.1 GB",
+  "base_model": "tc-huang/pi05_mahjong_v1_tray07_twos_dart_nodwell",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TC — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/TC",
+      "snippet": "Cette répertorie les différents sujets et articles portant le même nom. Cette page recense les différentes significations (codes, sigles, …"
+    },
+    {
+      "title": "Accueil - TC Infos",
+      "url": "https://tc-infos.fr/",
+      "snippet": "TC Infos est une base de données répertoriant les véhicules de transport en commun français."
+    },
+    {
+      "title": "Que signifie TC? - Abbreviation Finder",
+      "url": "https://abbreviationfinder.org/fr/acronyms/tc.html",
+      "snippet": "En résumé, TC est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    },
+    {
+      "title": "TC Le Blanc-Mesnil 93150 - Tribunal de commerce",
+      "url": "https://demarchesadministratives.fr/tribunal-commerce/le-blanc-mesnil-93150",
+      "snippet": "Nov 1, 2011 · TC à Le Blanc-Mesnil (93150) dans le département Seine-Saint-Denis et la région Île-de-France : adresse, téléphone …"
+    },
+    {
+      "title": "FFSA Tourisme TC France",
+      "url": "https://www.ffsatourisme.fr/",
+      "snippet": "Jan 13, 2023 · Retrouvez toutes les nouveautés du Championnat de France FFSA Tourisme : les courses en direct, le live timing, les …"
+    }
+  ]
+}

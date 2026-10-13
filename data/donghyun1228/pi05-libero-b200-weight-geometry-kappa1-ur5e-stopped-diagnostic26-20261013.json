@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-ur5e-stopped-diagnostic26-20261013",
+  "slug": "donghyun1228-pi05-libero-b200-weight-geometry-kappa1-ur5e-stopped-diagnostic26-20261013",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-ur5e-stopped-diagnostic26-20261013",
+  "created_at": "2026-10-13T00:14:10.000Z",
+  "updated_at": "2026-10-13T00:16:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "stopped-diagnostic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13086784722,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pi05-libero-b200-idm-full10-ur5e-1000-20261012 - Hugging Face",
+      "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-idm-full10-ur5e-1000-20261012",
+      "snippet": "π₀.₅ source-fresh IDM-only: ur5e / full10 Completed 1,000 updates from the Panda IL+shared-decoder-IDM source. This stores raw step999 weights, with the original source wrist encoder and normalization assets. Target-only contact-probe observations; no source images, paired cache, demonstration/rollout training, task-success training feedback, KD, dynamic update controller, or fitted shift ..."
+    },
+    {
+      "title": "lerobot/pi05_libero_base · Hugging Face",
+      "url": "https://huggingface.co/lerobot/pi05_libero_base",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "pi05_libero_finetuned_quantiles_v044 · Models",
+      "url": "https://www.modelscope.cn/models/lerobot/pi05_libero_finetuned_quantiles_v044",
+      "snippet": "π₀.₅ (Pi05 Libero) (LeRobot) π₀.₅ is a Vision-Language-Action (VLA) model with open-world generalization from Physical Intelligence, co-trained on robot demonstrations and large-scale multimodal data to execute long-horizon tasks in unseen real-world environments. Checkpoint trained and evaluated on LIBERO tasks with Quantiles normalization. Note: This model currently supports only ..."
+    },
+    {
+      "title": "OpenPI - Open Source Vision-Language-Action Model Library",
+      "url": "https://www.openpi.net/english.html",
+      "snippet": "OpenPI Open Source Vision-Language-Action Model Library for Robotics Developed by the Physical Intelligence team, OpenPI hosts open-source VLA models pre-trained on 10k+ hours of robot data, enabling researchers and practitioners to fine-tune and deploy robotic manipulation capabilities across diverse platforms."
+    },
+    {
+      "title": "[2504.16054] $π_ {0.5}$: a Vision-Language-Action Model with Open-World ...",
+      "url": "https://arxiv.org/abs/2504.16054",
+      "snippet": "In order for robots to be useful, they must perform practically relevant tasks in the real world, outside of the lab. While vision-language-action (VLA) models have demonstrated impressive results for end-to-end robot control, it remains an open question how far such models can generalize in the wild. We describe $π_{0.5}$, a new model based on $π_{0}$ that uses co-training on heterogeneous ..."
+    }
+  ]
+}

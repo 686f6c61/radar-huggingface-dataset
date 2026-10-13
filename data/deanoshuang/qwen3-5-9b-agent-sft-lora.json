@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "deanoshuang/qwen3.5-9b-agent-sft-lora",
+  "slug": "deanoshuang-qwen3-5-9b-agent-sft-lora",
+  "author": "deanoshuang",
+  "url": "https://huggingface.co/deanoshuang/qwen3.5-9b-agent-sft-lora",
+  "created_at": "2026-10-12T23:13:07.000Z",
+  "updated_at": "2026-10-12T23:17:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "sft",
+    "agents",
+    "swe",
+    "terminal",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366291515,
+  "storage_human": "366 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "armand0e/Qwen3.5-9B-Agent-LoRA · Hugging Face",
+      "url": "https://huggingface.co/armand0e/Qwen3.5-9B-Agent-LoRA",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen3.5-9B | Awesome Agents",
+      "url": "https://awesomeagents.ai/models/qwen-3-5-9b/",
+      "snippet": "Qwen3.5-9B is a 9B dense model that outperforms Qwen3-30B on most benchmarks and beats GPT-5-Nano on vision tasks. Natively multimodal with 262K-1M context, Apache 2.0 licensed."
+    },
+    {
+      "title": "Qwen3.5-9B · LLM Releases",
+      "url": "https://www.llm-releases.com/models/qwen3-5-9b",
+      "snippet": "The flagship of Alibaba&#x27;s small dense Qwen3.5 models. Independent analysis (Artificial Analysis) rated it the most intelligent model under 10B parameters at launch — roughly double the score of the next-closest sub-10B models — and the most intelligent multimodal model under 15B, leading peers on MMMU-Pro (~69%). A dense 9B with native vision, a 262K-token context, and the Qwen3.5 family&#x27;s ..."
+    },
+    {
+      "title": "armand0e/Qwen3.5-9B-Opus-Agent-LoRA · Hugging Face",
+      "url": "https://huggingface.co/armand0e/Qwen3.5-9B-Opus-Agent-LoRA",
+      "snippet": "The data for this model was easily formatted and masked with Teich Developed by: armand0e License: apache-2.0 Finetuned from model : Qwen/Qwen3.5-9B This qwen3_5 model was trained 2x faster with Unsloth and Huggingface&#x27;s TRL library."
+    },
+    {
+      "title": "Qwen3.5 9B by Qwen | Model Library | Modal",
+      "url": "https://modal.com/library/qwen/qwen3-5-9b",
+      "snippet": "AI infrastructure that developers love. Library / Qwen / Qwen3.5 9B Qwen3.5 9B Qwen3.5 9B is the largest of the four small dense models in Qwen&#x27;s natively multimodal Qwen3.5 family: a 9B-parameter vision-language model with thinking mode on by default, a 262K-token context extensible to 1M with YaRN, 201-language coverage, and open weights under Apache 2.0. Model"
+    }
+  ]
+}

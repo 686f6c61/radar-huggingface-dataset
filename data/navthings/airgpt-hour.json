@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "navthings/airgpt-hour",
+  "slug": "navthings-airgpt-hour",
+  "author": "navthings",
+  "url": "https://huggingface.co/navthings/airgpt-hour",
+  "created_at": "2026-10-12T22:32:53.000Z",
+  "updated_at": "2026-10-12T22:33:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "from-scratch",
+    "tinystories",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7999744,
+  "parameters_human": "8.0M",
+  "storage_bytes": 64011808,
+  "storage_human": "64 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rugby union - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rugby_union",
+      "snippet": "Rugby union football, commonly known simply as rugby union or often just rugby, is a close-contact team sport that originated at …"
+    },
+    {
+      "title": "World Rugby",
+      "url": "https://www.world.rugby/",
+      "snippet": "The official site of World Rugby the governing body of Rugby Union with news, tournaments, fixtures, results, world rugby rankings, …"
+    },
+    {
+      "title": "History of rugby union - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_rugby_union",
+      "snippet": "The history of rugby union follows from various football games long before the 19th century, but it was not until the middle of that …"
+    },
+    {
+      "title": "Follow | Rugby Football Union",
+      "url": "https://www.englandrugby.com/",
+      "snippet": "I would like to hear about England team news, events at Allianz Stadium, ticket alerts, exclusive competitions and partner offers by …"
+    },
+    {
+      "title": "Rugby Union - latest news today, results & video - BBC Sport",
+      "url": "https://www.bbc.com/sport/rugby-union",
+      "snippet": "The home of Rugby Union on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    }
+  ]
+}

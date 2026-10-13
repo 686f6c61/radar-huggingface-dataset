@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ruddls030/HyperCLOVAX-SEED-Haru-0.5B-GGUF",
+  "slug": "ruddls030-hyperclovax-seed-haru-0-5b-gguf",
+  "author": "ruddls030",
+  "url": "https://huggingface.co/ruddls030/HyperCLOVAX-SEED-Haru-0.5B-GGUF",
+  "created_at": "2026-10-12T23:25:10.000Z",
+  "updated_at": "2026-10-12T23:25:33.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
+    "base_model:quantized:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 566281216,
+  "parameters_human": "566.3M",
+  "storage_bytes": 368181984,
+  "storage_human": "368 MB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "naver-hyperclovax_HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF",
+      "url": "https://huggingface.co/tensorblock/naver-hyperclovax_HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF",
+      "snippet": "TensorBlock GGUF conversational License: hyperclovax-seed Model card Files Files and versions Community Train Deploy"
+    },
+    {
+      "title": "rosewar/HyperCLOVAX-SEED-Text-Instruct-0.5B-Q5_K_M-GGUF · Hugging Face",
+      "url": "https://huggingface.co/rosewar/HyperCLOVAX-SEED-Text-Instruct-0.5B-Q5_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-.5B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "HyperCLOVA X | CLOVA",
+      "url": "https://clova.ai/en/hyperclova",
+      "snippet": "HyperCLOVA X SEED 0.5B It is a text understanding and generation model that, despite its very small size, can engage in multi-turn Korean conversations with users."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://router.huggingface.co/models/",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF · Model · Inferix",
+      "url": "https://inferix.co/models/naver-ellm/HyperCLOVAX-SEED-Text-Instruct-0.5B-GGUF",
+      "snippet": "HyperCLOVAX-SEED-Text-Instruct-.5B-GGUF — an open model on Inferix. Explore files, versions, and one-click deployment. 9,802 downloads."
+    }
+  ]
+}

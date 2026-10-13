@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "GBP-DE/Qwen3.8-Flash-Next-oQ4e-WLSRefit-MTP",
+  "slug": "gbp-de-qwen3-8-flash-next-oq4e-wlsrefit-mtp",
+  "author": "GBP-DE",
+  "url": "https://huggingface.co/GBP-DE/Qwen3.8-Flash-Next-oQ4e-WLSRefit-MTP",
+  "created_at": "2026-10-12T16:39:21.000Z",
+  "updated_at": "2026-10-12T21:46:33.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "omlx",
+    "oq4e",
+    "imatrix",
+    "mtp",
+    "apple-silicon",
+    "wls-refit",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 106307472380,
+  "storage_human": "106.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Johnny “Guitar” Watson – Spontaneous Lunacy",
+      "url": "https://www.spontaneouslunacy.net/artists-johnny-guitar-watson/",
+      "snippet": "A breakout performance by Watson whose irrepressible energy fuels this self-penned track that he sings at reckless speed with …"
+    },
+    {
+      "title": "Johnny \"Guitar\" Watson - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Johnny_%22Guitar%22_Watson",
+      "snippet": "John Watson Jr. (February 3, 1935 – May 17, 1996), [3] often known professionally as Johnny \"Guitar\" Watson, was an American …"
+    },
+    {
+      "title": "Johnny \"Guitar\" Watson - Full Concert [HD] | Live at North ... - YouTube",
+      "url": "https://m.youtube.com/watch?v=qFjW4F4Tbto",
+      "snippet": "Feb 21, 2025 · A flamboyant showman and electric guitarist in the style of T-Bone Walker, his recording career spanned 40 years, …"
+    },
+    {
+      "title": "The Lady of Rage feat. Snoop Dogg's 'Afro Puffs (Extended Remix ...",
+      "url": "https://www.whosampled.com/sample/32690/The-Lady-of-Rage-Snoop-Dogg-Afro-Puffs-(Extended-Remix)-Johnny-%22Guitar%22-Watson-Superman-Lover/",
+      "snippet": "Snoop Dogg sampled Johnny \"Guitar\" Watson's \"Superman Lover\". Listen to both songs on WhoSampled, the ultimate database of …"
+    },
+    {
+      "title": "Johnny \"Guitar\" Watson - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCcdpMhNSq1hXl1nO8L6Ub5Q",
+      "snippet": "Jul 6, 2026 · John Watson Jr., often known professionally as Johnny \"Guitar\" Watson, was an American musician. A flamboyant …"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "dark-yogi/SraVaani-1.0-mlx-8bit",
+  "slug": "dark-yogi-sravaani-1-0-mlx-8bit",
+  "author": "dark-yogi",
+  "url": "https://huggingface.co/dark-yogi/SraVaani-1.0-mlx-8bit",
+  "created_at": "2026-10-12T21:26:18.000Z",
+  "updated_at": "2026-10-12T21:39:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx-audio",
+  "languages": [
+    "hi",
+    "bn",
+    "ta",
+    "multilingual"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "sravaani_tdt",
+    "mlx",
+    "apple-silicon",
+    "hindi",
+    "indic-asr",
+    "fastconformer",
+    "tdt",
+    "quantized",
+    "8-bit",
+    "automatic-speech-recognition",
+    "custom_code",
+    "hi",
+    "bn",
+    "ta",
+    "multilingual",
+    "arxiv:2608.08235",
+    "base_model:ARTPARK-IISc/SraVaani-1.0",
+    "base_model:finetune:ARTPARK-IISc/SraVaani-1.0",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 166215866,
+  "parameters_human": "166.2M",
+  "storage_bytes": 526009960,
+  "storage_human": "526 MB",
+  "base_model": "ARTPARK-IISc/SraVaani-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dark (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dark_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Dark est une série télévisée de science-fiction allemande de vingt-six épisodes de soixante minutes environ, diffusée depuis le 1 er …"
+    },
+    {
+      "title": "Dark (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dark_(TV_series)",
+      "snippet": "Dark received critical acclaim and has been listed by many publications as one of the best TV shows of the years 2017, 2019, and …"
+    },
+    {
+      "title": "Dark - Série TV 2017 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=20328.html",
+      "snippet": "Découvrez la série TV Dark de avec Louis Hofmann (Jonas Kahnwald), Lisa Vicari (Martha Nielsen). Un enfant disparu lance quatre …"
+    },
+    {
+      "title": "Dark (TV Series 2017–2020) - IMDb",
+      "url": "https://www.imdb.com/title/tt5753856",
+      "snippet": "Dark: Created by Baran bo Odar, Jantje Friese. With Louis Hofmann, Karoline Eichhorn, Lisa Vicari, Maja Schöne. A family saga with …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/title/80100172",
+      "snippet": "TRAILER Dark (Bande-annonce de la franchise) 2m 44s Saison 2 (Récap) : Dark 31s TEASER Le mystère"
+    }
+  ]
+}

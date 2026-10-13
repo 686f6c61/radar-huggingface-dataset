@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "MIThridate/Qwen3.5-9B-24L-GGUF",
+  "slug": "mithridate-qwen3-5-9b-24l-gguf",
+  "author": "MIThridate",
+  "url": "https://huggingface.co/MIThridate/Qwen3.5-9B-24L-GGUF",
+  "created_at": "2026-09-27T08:55:52.000Z",
+  "updated_at": "2026-10-12T21:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "pruned",
+    "layer-pruning",
+    "low-vram",
+    "gtx-1060",
+    "6gb-gpu",
+    "4gb-gpu",
+    "text-generation",
+    "en",
+    "ro",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 746,
+  "trending_score": 0,
+  "parameters": 7223912832,
+  "parameters_human": "7.22B",
+  "storage_bytes": 17931679296,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assassin's Creed Unity: French or English? - Reddit",
+      "url": "https://www.reddit.com/r/assassinscreed/comments/1457u2y/assassins_creed_unity_french_or_english/",
+      "snippet": "Jun 9, 2023 · I am French and usually play in English, but for Unity I played in French and it felt right. I highly recommend playing it in …"
+    },
+    {
+      "title": "French vs English, some tips? : r/aoe4 - Reddit",
+      "url": "https://www.reddit.com/r/aoe4/comments/v5cmf9/french_vs_english_some_tips/",
+      "snippet": "Jun 5, 2022 · To be honest, English feudal all in is not a good strategy, especially against French. Yes, if you let the archers and …"
+    },
+    {
+      "title": "Add subtitles & captions - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2734796?hl=en",
+      "snippet": "You can choose to type or paste a transcript of your captions and subtitles. With this option, your subtitle and caption timings will be …"
+    },
+    {
+      "title": "Translate documents & websites - Computer - Google Help",
+      "url": "https://support.google.com/translate/answer/2534559?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "In your browser, go to Google Translate. At the top, click Documents. Choose the languages to translate to and from. To …"
+    },
+    {
+      "title": "Backstory behind the French lyrics in \"Hold on Tight\" and ... - Reddit",
+      "url": "https://www.reddit.com/r/elo/comments/acze9s/backstory_behind_the_french_lyrics_in_hold_on/",
+      "snippet": "Jan 5, 2019 · I don't speak French, so I've always wondered what the French lyrics in \"Hold On Tight\" mean. As it turns out, they are …"
+    }
+  ]
+}

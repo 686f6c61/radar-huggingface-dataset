@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ultron28/thor-lm-1b",
+  "slug": "ultron28-thor-lm-1b",
+  "author": "Ultron28",
+  "url": "https://huggingface.co/Ultron28/thor-lm-1b",
+  "created_at": "2026-10-12T10:13:45.000Z",
+  "updated_at": "2026-10-13T02:02:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "thor-lm",
+    "thor",
+    "optimizer",
+    "causal-lm",
+    "pytorch",
+    "llama",
+    "foundation-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95138166872,
+  "storage_human": "95.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - maharab549/ultron-ai: ULTRON AI - Open Source Manus AI ...",
+      "url": "https://github.com/maharab549/ultron-ai",
+      "snippet": "ULTRON AI is an open-source, general-purpose AI agent system that can autonomously plan, reason and execute complex tasks. Give it a goal and it will break it down, use tools, browse the web, write code, manipulate files, and deliver results — all inside a secure sandboxed environment. Think of it as your own self-hosted alternative to Manus AI, ChatGPT with Code Interpreter, or Devin ..."
+    },
+    {
+      "title": "Anthropic AI model went rogue, submitted fake unsolved murder tip - MSN",
+      "url": "https://www.msn.com/en-us/news/other/anthropic-ai-model-goes-rogue-submits-fake-unsolved-murder-tip/ar-AA2dVgkr",
+      "snippet": "Rogue AI models have hacked companies and tried to break into government websites. Now one has submitted a fake tip for an unsolved crime. Police in Philadelphia say Anthropic alerted them this ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?other=ultron",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "Modelfile · kashif0912/ULTRON-V2 at main - Hugging Face",
+      "url": "https://huggingface.co/kashif0912/ULTRON-V2/blob/main/Modelfile",
+      "snippet": "Lemonade How to use kashif0912/ULTRON-V2 with Lemonade: Pull the model ... Run and chat with the model ... List all available models lemonade list Hermes Agent How to use kashif0912/ULTRON-V2 with Hermes Agent: Start the llama.cpp server ... Configure Hermes ... Run Hermes hermes Atomic Chat OpenClaw How to use kashif0912/ULTRON-V2 with ..."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    }
+  ]
+}

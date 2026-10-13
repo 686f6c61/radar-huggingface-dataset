@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kostasmpo/urban-aware-sar-unet",
+  "slug": "kostasmpo-urban-aware-sar-unet",
+  "author": "kostasmpo",
+  "url": "https://huggingface.co/kostasmpo/urban-aware-sar-unet",
+  "created_at": "2026-10-12T21:15:54.000Z",
+  "updated_at": "2026-10-12T21:24:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "sentinel-1",
+    "sar",
+    "flood-mapping",
+    "remote-sensing",
+    "image-segmentation",
+    "dataset:S1Floodbenchmark/UrbanSARFloods_v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1184002023,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "urban_aware_sar_unet/README.md at main · kostasmpo/urban ... - GitHub",
+      "url": "https://github.com/kostasmpo/urban_aware_sar_unet/blob/main/README.md",
+      "snippet": "Urban-Aware SAR U-Net PyTorch implementation of the Urban-Aware U-Net (Zhao et al., 2022) for mapping floods in urban areas from Sentinel-1 intensity and coherence, trained on UrbanSARFloods. The probabilistic urban masks the model needs are produced with SPUM."
+    },
+    {
+      "title": "Urban-Aware U-Net for Large-Scale Urban Flood Mapping Using ...",
+      "url": "https://ieeexplore.ieee.org/document/9857936",
+      "snippet": "Moreover, the high potential of deep convolutional neural networks for advancing SAR-based flood mapping is widely acknowledged. Therefore, we introduce an urban-aware U-Net model using dual-polarization Sentinel-1 multitemporal intensity and coherence data to map the extent of flooding in urban environments."
+    },
+    {
+      "title": "Urban-Aware U-Net for Large-Scale Urban Flood Mapping Using ...",
+      "url": "https://www.researchgate.net/publication/362705299_Urban-aware_U-Net_for_large-scale_urban_flood_mapping_using_multi-temporal_Sentinel-1_intensity_and_interferometric_coherence",
+      "snippet": "Experimental results indicate that the proposed model trained with limited datasets has strong potential for near-real-time urban flood mapping. Structure of the urban-aware module."
+    },
+    {
+      "title": "GitHub - mathieurenault1/SAR-UNet",
+      "url": "https://github.com/mathieurenault1/SAR-UNet",
+      "snippet": "Contribute to mathieurenault1/SAR-UNet development by creating an account on GitHub."
+    },
+    {
+      "title": "[2606.06524] Advanced Flood Prediction with Physics-Guided Deep ...",
+      "url": "https://arxiv.org/abs/2606.06524",
+      "snippet": "Accurate and scalable flood mapping remains challenging due to limited ground observations, heterogeneous terrain conditions, and the difficulty of enforcing hydrodynamic consistency within data-driven models. This work introduces a physics-guided deep learning framework that integrates multi-modal remote sensing (Sentinel-1 SAR, Sentinel-2 optical imagery, and DEM-derived terrain features ..."
+    }
+  ]
+}

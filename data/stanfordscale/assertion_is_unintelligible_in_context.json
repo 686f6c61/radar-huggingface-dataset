@@ -5,7 +5,7 @@
   "author": "StanfordSCALE",
   "url": "https://huggingface.co/StanfordSCALE/assertion_is_unintelligible_in_context",
   "created_at": "2026-10-12T17:52:06.000Z",
-  "updated_at": "2026-10-12T17:52:14.000Z",
+  "updated_at": "2026-10-12T20:30:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",

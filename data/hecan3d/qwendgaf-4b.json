@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hecan3d/QwenDGAF-4B",
+  "slug": "hecan3d-qwendgaf-4b",
+  "author": "hecan3d",
+  "url": "https://huggingface.co/hecan3d/QwenDGAF-4B",
+  "created_at": "2026-10-12T21:12:05.000Z",
+  "updated_at": "2026-10-12T21:12:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Sewing Patterns - Reddit",
+      "url": "https://www.reddit.com/r/freepatterns/",
+      "snippet": "For sharing free sewing patterns. We love seeing your finished products and hearing your experience in creating it. Only links to …"
+    },
+    {
+      "title": "至急!PCでの‘’lLovePDF\"の解約についてです。この... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10273939520",
+      "snippet": "Jan 14, 2023 · 至急! PCでの‘’l Love PDF \"の解約についてです。このPDFを使用したら、特に課金をした訳でもないのに、 毎月980 …"
+    },
+    {
+      "title": "This is super random but I want to share iLovePDF.com with everyone ...",
+      "url": "https://www.reddit.com/r/UCSC/comments/hi8wo1/this_is_super_random_but_i_want_to_share/",
+      "snippet": "Jun 29, 2020 · 110 votes, 19 comments. true Title says it all. I'm legit in love with how nice this website is. I found it like a year ago …"
+    },
+    {
+      "title": "i love pdf 是突然收费了吗？昨天打开200M+的文件还无压力，今天就 …",
+      "url": "https://www.zhihu.com/question/504551190",
+      "snippet": "Dec 8, 2021 · 其实ilovepdf一直都有收费选项的，免费的操作一般都限制文件的大小，你可以换个浏览器再进入ilovepdf试试，还 …"
+    },
+    {
+      "title": "私の会社でPDFを編集（結合やjpg化など）をする際にilovepdfを …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13305663378",
+      "snippet": "Oct 21, 2024 · 私の会社でPDFを編集（結合やjpg化など）をする際にilovepdfを使っているのですが、セキュリティ的にどうなので …"
+    }
+  ]
+}

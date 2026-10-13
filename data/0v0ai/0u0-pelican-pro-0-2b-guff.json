@@ -5,7 +5,7 @@
   "author": "0v0ai",
   "url": "https://huggingface.co/0v0ai/0u0-pelican-pro-0.2B-GUFF",
   "created_at": "2026-10-11T15:25:22.000Z",
-  "updated_at": "2026-10-11T15:38:38.000Z",
+  "updated_at": "2026-10-13T02:07:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,8 +36,8 @@
   "trending_score": 0,
   "parameters": 257020928,
   "parameters_human": "257.0M",
-  "storage_bytes": 167846016,
-  "storage_human": "168 MB",
+  "storage_bytes": 335692224,
+  "storage_human": "336 MB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nunu72575/relaion-coyo-100m-text-to-image-v2",
+  "slug": "nunu72575-relaion-coyo-100m-text-to-image-v2",
+  "author": "nunu72575",
+  "url": "https://huggingface.co/nunu72575/relaion-coyo-100m-text-to-image-v2",
+  "created_at": "2026-10-11T20:15:10.000Z",
+  "updated_at": "2026-10-12T21:03:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 66225711,
+  "storage_human": "66 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Latest news, sport and opinion from the Guardian",
+      "url": "https://www.theguardian.com/uk",
+      "snippet": "Latest news, sport, business, comment, analysis and reviews from the Guardian, the world's leading liberal voice"
+    },
+    {
+      "title": "The Guardian - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Guardian",
+      "snippet": "Its international weekly edition is now titled The Guardian Weekly, though it retained the title Manchester Guardian Weekly for some …"
+    },
+    {
+      "title": "The Guardian — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/The_Guardian",
+      "snippet": "The Guardian se caractérise par une volonté de liberté et d’indépendance, au risque de heurter son lectorat : en 1956, une année …"
+    },
+    {
+      "title": "The Guardian - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/The_Guardian",
+      "snippet": "The Guardian The Guardian logo The Guardian is a British newspaper. It is published every day, except on Sunday. The Guardian is …"
+    },
+    {
+      "title": "Main section | News | The Guardian | Todayspaper | The Guardian",
+      "url": "https://www.theguardian.com/theguardian",
+      "snippet": "21 hours ago · Koos Bekker’s Newt estate encompasses luxury hotels, pubs and high street business, with local concerns including …"
+    }
+  ]
+}

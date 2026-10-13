@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8",
+  "slug": "craigmacdonald-msmarco-psg-tct_jpq_m96_nbits8",
+  "author": "craigmacdonald",
+  "url": "https://huggingface.co/craigmacdonald/msmarco-psg-tct_jpq_M96_nbits8",
+  "created_at": "2026-10-12T20:03:20.000Z",
+  "updated_at": "2026-10-12T20:03:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-10-13T02:17:37.747Z",
+  "benchmarks": [],
+  "sources": []
+}

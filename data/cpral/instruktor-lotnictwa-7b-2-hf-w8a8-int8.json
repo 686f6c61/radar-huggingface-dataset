@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cpral/instruktor-lotnictwa-7B-2-hf-W8A8-INT8",
+  "slug": "cpral-instruktor-lotnictwa-7b-2-hf-w8a8-int8",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/instruktor-lotnictwa-7B-2-hf-W8A8-INT8",
+  "created_at": "2026-10-13T00:09:25.000Z",
+  "updated_at": "2026-10-13T00:13:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7476678656,
+  "parameters_human": "7.48B",
+  "storage_bytes": 7742177960,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "model-hub/Mistral-7B-Instruct-v0.2 · Hugging Face",
+      "url": "https://huggingface.co/model-hub/Mistral-7B-Instruct-v0.2",
+      "snippet": "The Mistral-7B-Instruct-v0.2 Large Language Model (LLM) is an improved instruct fine-tuned version of Mistral-7B-Instruct-v0.1. For full details of this model please read our paper and release blog post."
+    },
+    {
+      "title": "Qwen2.5-VL-7B-Instruct-quantized.w8a8 - Hugging Face",
+      "url": "https://huggingface.co/RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8",
+      "snippet": "This model achieves up to 1.56x speedup in single-stream deployment and 1.5x in multi-stream deployment, depending on hardware and use-case scenario. The following performance benchmarks were conducted with vLLM version 0.7.2, and GuideLLM."
+    },
+    {
+      "title": "INT8 W8A8 - vLLM - docs.vllm.ai",
+      "url": "https://docs.vllm.ai/en/stable/features/quantization/llm_compressor/int8_w8a8/",
+      "snippet": "Quantization LLM Compressor INT8 W8A8 vLLM supports quantizing weights and activations to INT8 for memory savings and inference acceleration. This quantization method is particularly useful for reducing model size while maintaining good performance. Please visit the HF collection of quantized INT8 checkpoints of popular LLMs ready to use with vLLM."
+    },
+    {
+      "title": "Int8 W8A8 - vLLM-Omni",
+      "url": "https://docs.vllm.ai/projects/vllm-omni/en/latest/user_guide/quantization/int8/",
+      "snippet": "Int8 quantization supports W8A8 diffusion transformer inference on CUDA and Ascend NPU. It can quantize BF16/FP16 weights at load time, or load serialized Int8 checkpoints that already contain quantized weights and scales."
+    },
+    {
+      "title": "Mistral 7B • LM Studio",
+      "url": "https://lmstudio.ai/models/mistralai/mistral-7b-instruct-v0.3",
+      "snippet": "One of the most popular open-source LLMs, Mistral&#x27;s 7B Instruct model&#x27;s balance of speed, size, and performance makes it a great general-purpose daily driver."
+    }
+  ]
+}

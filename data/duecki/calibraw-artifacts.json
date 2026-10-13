@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Duecki/CalibRaw-Artifacts",
+  "slug": "duecki-calibraw-artifacts",
+  "author": "Duecki",
+  "url": "https://huggingface.co/Duecki/CalibRaw-Artifacts",
+  "created_at": "2026-09-02T14:04:20.000Z",
+  "updated_at": "2026-10-12T23:14:28.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4286940659,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Duecki/CalibRaw-Artifacts · Hugging Face",
+      "url": "https://huggingface.co/Duecki/CalibRaw-Artifacts",
+      "snippet": "CalibRaw third-party artifact mirror This Hugging Face repository is the stable artifact mirror for CalibRaw. It preserves the model and runtime payloads CalibRaw depends on so application downloads can be pinned to an immutable repository revision."
+    },
+    {
+      "title": "Duecki (Linus D) - Hugging Face",
+      "url": "https://huggingface.co/Duecki/models",
+      "snippet": "AI Recent Activity updated a model3 days ago Duecki/CalibRaw-Artifacts published a model3 days ago Duecki/CalibRaw-Artifacts View all activity"
+    },
+    {
+      "title": "GitHub - Duecki1/CalibRaw: Free, open-source Lightroom-style RAW editor ...",
+      "url": "https://github.com/Duecki1/CalibRaw",
+      "snippet": "Free, open-source Lightroom-style RAW editor for Linux, Android, Windows and macOS. GPU-accelerated, non-destructive, with masks, HDR merge and local AI. - Duecki1/CalibRaw"
+    },
+    {
+      "title": "Five Malicious Rust Crates and AI Bot Exploit CI/CD Pipelines to Steal ...",
+      "url": "https://thehackernews.com/2026/03/five-malicious-rust-crates-and-ai-bot.html",
+      "snippet": "Five malicious Rust crates and an AI bot exploited CI/CD pipelines and GitHub Actions in Feb 2026, stealing developer secrets and tokens."
+    },
+    {
+      "title": "CalibRaw v1.0.0, RAW Editor, GPU accelerated, linux focused",
+      "url": "https://discuss.pixls.us/t/calibraw-v1-0-0-raw-editor-gpu-accelerated-linux-focused/60692?page=3",
+      "snippet": "And for the AI Masks like Subject and Object, It will prompt you before downloading something. If you just use normal brush, linear, radial masks etc. It won&#x27;t download anything. If you are interested in what is being downloaded, I can send you the CalibRaw Artifacts Repo."
+    }
+  ]
+}

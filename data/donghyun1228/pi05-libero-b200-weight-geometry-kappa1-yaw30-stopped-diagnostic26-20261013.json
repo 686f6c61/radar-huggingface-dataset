@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-yaw30-stopped-diagnostic26-20261013",
+  "slug": "donghyun1228-pi05-libero-b200-weight-geometry-kappa1-yaw30-stopped-diagnostic26-20261013",
+  "author": "Donghyun1228",
+  "url": "https://huggingface.co/Donghyun1228/pi05-libero-b200-weight-geometry-kappa1-yaw30-stopped-diagnostic26-20261013",
+  "created_at": "2026-10-13T00:11:41.000Z",
+  "updated_at": "2026-10-13T00:13:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "libero",
+    "inverse-dynamics",
+    "stopped-diagnostic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13086783060,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neue Nationalgalerie by Mies van der Rohe (1968) | ArchEyes",
+      "url": "https://archeyes.com/neue-national-gallery-by-mies-van-der-rohe-david-chipperfields-renovation/",
+      "snippet": "Mar 15, 2025 · The Neue National Gallery is recognized for its monumental clarity, demonstrating Mies van der Rohe’s mastery of …"
+    },
+    {
+      "title": "Neue Nationalgalerie / David Chipperfield Architects - ArchDaily",
+      "url": "https://www.archdaily.com/960604/neue-nationalgalerie-david-chipperfield-architects",
+      "snippet": "Apr 29, 2021 · The Neue Nationalgalerie in Berlin is an icon of twentieth-century architecture. Planned and built from 1963 to 1968, …"
+    },
+    {
+      "title": "Neue Nationalgalerie - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Neue_Nationalgalerie",
+      "snippet": "Its main focus is on modern art from the 20th century. It is part of the National Gallery of the Berlin State Museums. [1] The museum …"
+    },
+    {
+      "title": "Neue Nationalgalerie — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Neue_Nationalgalerie",
+      "snippet": "La Neue Nationalgalerie (« nouvelle galerie nationale ») est un musée de Berlin construit par Ludwig Mies van der Rohe, construit à …"
+    },
+    {
+      "title": "Ludwig Mies van der Rohe - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ludwig_Mies_van_der_Rohe",
+      "snippet": "Early career Mies was born March 27, 1886, in Aachen, Germany. [3] He worked in his father's stone carving shop [3] and at several …"
+    }
+  ]
+}

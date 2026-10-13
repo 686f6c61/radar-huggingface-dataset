@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "Remidesbois/LightOnOCR-3-Poneglyph-bbox",
+  "slug": "remidesbois-lightonocr-3-poneglyph-bbox",
+  "author": "Remidesbois",
+  "url": "https://huggingface.co/Remidesbois/LightOnOCR-3-Poneglyph-bbox",
+  "created_at": "2026-10-12T16:24:56.000Z",
+  "updated_at": "2026-10-12T20:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "qwen3_5",
+    "ocr",
+    "manga",
+    "grounding",
+    "image-text-to-text",
+    "conversational",
+    "fr",
+    "base_model:lightonai/LightOnOCR-3-0.8B",
+    "base_model:quantized:lightonai/LightOnOCR-3-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 852985920,
+  "parameters_human": "853.0M",
+  "storage_bytes": 3435050213,
+  "storage_human": "3.4 GB",
+  "base_model": "lightonai/LightOnOCR-3-0.8B",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "halt95/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin",
+  "slug": "halt95-swift1-5-huihui-qwen3-8-flash-next-w4a16-merlin",
+  "author": "halt95",
+  "url": "https://huggingface.co/halt95/Swift1.5-Huihui-Qwen3.8-Flash-Next-W4A16-Merlin",
+  "created_at": "2026-10-12T21:09:59.000Z",
+  "updated_at": "2026-10-12T23:03:25.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen4_exp",
+    "abliterated",
+    "uncensored",
+    "qwen3.8",
+    "flash-next",
+    "swift",
+    "w4a16",
+    "int4",
+    "int8",
+    "mtp",
+    "fp8-kv",
+    "long-context",
+    "rtx-3090",
+    "ampere",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "base_model:huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+    "base_model:merge:huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+    "base_model:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "base_model:merge:ukisai/Swift1.5-Qwen3.8-Flash-Next",
+    "license:other",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123958298771,
+  "parameters_human": "123.96B",
+  "storage_bytes": 123773919172,
+  "storage_human": "123.8 GB",
+  "base_model": "ukisai/Swift1.5-Qwen3.8-Flash-Next, huihui-ai/Huihui-Qwen3.8-Flash-Next-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin · Hugging Face",
+      "url": "https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin",
+      "snippet": "It keeps the quantised routed experts, MTP head and PLE table of the Merlin checkpoint (halt95/Qwen3.8-Flash-Next-W4A16-Merlin). It replaces the 300 dense tensors our comparison identified as changed."
+    },
+    {
+      "title": "Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin - Hugging Face",
+      "url": "https://huggingface.co/halt95/Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin/blob/main/model-plefp8-00007.safetensors",
+      "snippet": "conversational compressed-tensors License:swift-open-license-1. Model card FilesFiles and versions xet Community Copy to bucket new main Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin /model-plefp8-00007.safetensors halt95 Swift1.5-Qwen3.8-Flash-Next-W4A16-Merlin: checkpoint, KV-scale sidecar, card, licences, NOTICE, SHA256SUMS fe3899b verified3 ..."
+    },
+    {
+      "title": "Swift1.5 Qwen3.8 Flash Next W4A16 Merlin by halt95",
+      "url": "https://llm-explorer.com/model/halt95%2FSwift1.5-Qwen3.8-Flash-Next-W4A16-Merlin,6yynOfidssjeo3CjYk1324",
+      "snippet": "Swift1.5 Qwen3.8 Flash Next W4A16 Merlin is an open-source 124b LLM by halt95. VRAM 71.4GB. Compare benchmarks, capabilities, and deployment details on LLM Explorer."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4."
+    },
+    {
+      "title": "GitHub - jon-nielsen/qwen38-flash-next-3090-kit: Qwen3.8-Flash-Next ...",
+      "url": "https://github.com/jon-nielsen/qwen38-flash-next-3090-kit",
+      "snippet": "Two measured launch profiles for serving halt95/Qwen3.8-Flash-Next-W4A16-Merlin (W4A16 quant of Qwen3.8-Flash-Next) on RTX 3090-class hardware, plus the runtime image recipe."
+    }
+  ]
+}

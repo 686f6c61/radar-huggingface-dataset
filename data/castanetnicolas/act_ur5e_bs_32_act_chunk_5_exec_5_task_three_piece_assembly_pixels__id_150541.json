@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150541",
+  "slug": "castanetnicolas-act_ur5e_bs_32_act_chunk_5_exec_5_task_three_piece_assembly_pixels__id_150541",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_32_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150541",
+  "created_at": "2026-10-12T21:34:20.000Z",
+  "updated_at": "2026-10-12T21:34:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:castanetnicolas/mimicgen_three_piece_assembly_d1_image84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51575431,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206345788,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "twitch官网怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/950271456576336012.html",
+      "snippet": "Apr 1, 2025 · twitch官网怎么进要进入Twitch官网，可以直接按照以下步骤操作：输入官方网址：在您的网络浏览器地址栏中输入 …"
+    },
+    {
+      "title": "AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本",
+      "url": "https://zhidao.baidu.com/question/306907330.html",
+      "snippet": "Aug 14, 2011 · AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本把那个key文件放在AE的根目录的插件文件夹下 就可以了 …"
+    },
+    {
+      "title": "国内手机如何下载twitch - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9f7e7ec0ee9f652e29155451.html",
+      "snippet": "Jun 3, 2020 · 国内手机下载twitch具体步骤如下： 工具：华为P30手机、应用商店、twitch软件。 1、打开华为手机上面的app store， …"
+    }
+  ]
+}

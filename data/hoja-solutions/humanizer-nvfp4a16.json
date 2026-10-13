@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "hoja-solutions/humanizer-NVFP4A16",
+  "slug": "hoja-solutions-humanizer-nvfp4a16",
+  "author": "hoja-solutions",
+  "url": "https://huggingface.co/hoja-solutions/humanizer-NVFP4A16",
+  "created_at": "2026-10-12T22:16:01.000Z",
+  "updated_at": "2026-10-12T22:16:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "humanizer",
+    "text-rewriting",
+    "gemma4",
+    "nvfp4",
+    "fp4",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:jialinyyzz/humanizer",
+    "base_model:quantized:jialinyyzz/humanizer",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 8283132542,
+  "storage_human": "8.3 GB",
+  "base_model": "jialinyyzz/humanizer",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hoja-solutions (Hoja) - Hugging Face",
+      "url": "https://huggingface.co/hoja-solutions/models",
+      "snippet": "We build AI systems for production"
+    },
+    {
+      "title": "hoja-solutions (Hoja) - Hugging Face",
+      "url": "https://huggingface.co/hoja-solutions",
+      "snippet": "Hoja. AI systems that run in production, built on open source. Hoja is an engineering consultancy. We help organizations turn their data into machine learning models, retrieval sy"
+    },
+    {
+      "title": "Study Solutions | Turnitin Reports & AI Humanizer",
+      "url": "https://www.studysolutions.app/en",
+      "snippet": "Get real Turnitin similarity and AI detection reports before you submit, humanize AI text past every detector, and unlock Chegg and Course Hero answers — all in one place."
+    },
+    {
+      "title": "Free AI Humanizer 2026 - Bypass GPTZero, Turnitin & All Detectors ...",
+      "url": "https://www.humanifyer.com/",
+      "snippet": "Transform AI text into undetectable human writing instantly. Bypass GPTZero, Turnitin & all detectors with 99.9% success rate. Perfect for students, academics & professionals worldwide."
+    },
+    {
+      "title": "StealthWriter — Humanize AI Text",
+      "url": "https://stealthwriter.ai/",
+      "snippet": "Rewrite AI-generated text so it reads as naturally human — clean, fluent, and ready to publish in one click."
+    }
+  ]
+}

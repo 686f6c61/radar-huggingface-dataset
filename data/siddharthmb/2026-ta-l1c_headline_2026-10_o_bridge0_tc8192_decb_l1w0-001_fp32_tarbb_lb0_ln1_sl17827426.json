@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "siddharthmb/2026.TA.l1c_headline_2026-10_o_bridge0_tc8192_decb_l1w0.001_fp32_tarbb_lb0_ln1_sl17827426",
+  "slug": "siddharthmb-2026-ta-l1c_headline_2026-10_o_bridge0_tc8192_decb_l1w0-001_fp32_tarbb_lb0_ln1_sl17827426",
+  "author": "siddharthmb",
+  "url": "https://huggingface.co/siddharthmb/2026.TA.l1c_headline_2026-10_o_bridge0_tc8192_decb_l1w0.001_fp32_tarbb_lb0_ln1_sl17827426",
+  "created_at": "2026-10-12T22:06:18.000Z",
+  "updated_at": "2026-10-12T22:07:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "transcoder-adapters",
+    "sparse-adaptation",
+    "bridging",
+    "dataset:siddharthmb/2026.transcoder-adapters.lmsys-chat-1m-splits",
+    "arxiv:2602.20904",
+    "base_model:google/gemma-2-2b",
+    "base_model:finetune:google/gemma-2-2b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3596141824,
+  "parameters_human": "3.60B",
+  "storage_bytes": 9190177826,
+  "storage_human": "9.2 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaggle: The World's AI Proving Ground",
+      "url": "https://www.kaggle.com/",
+      "snippet": "Learn cutting edge ML techniques and what worked and didn't from the top Kaggle competitors."
+    },
+    {
+      "title": "Find Open Datasets and Machine Learning Projects | Kaggle",
+      "url": "https://www.kaggle.com/datasets",
+      "snippet": "5 days ago · Browse and download hundreds of thousands of open datasets for AI research, model training, and analysis. Join a …"
+    },
+    {
+      "title": "Kaggle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kaggle",
+      "snippet": "Kaggle enables users to find and publish datasets, explore and build models in a web-based data science environment, work with …"
+    },
+    {
+      "title": "Kaggle — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kaggle",
+      "snippet": "Kaggle propose un service de conseil, encadre le concours et anonymise les données… Les participants expérimentent avec …"
+    },
+    {
+      "title": "Login or Register | Kaggle",
+      "url": "https://www.kaggle.com/account/login",
+      "snippet": "Discover what actually works in AI. Join millions of builders, researchers, and labs evaluating agents, models, and frontier technology …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "llmware",
   "url": "https://huggingface.co/llmware/dragon-qwen-9b",
   "created_at": "2026-10-11T23:10:24.000Z",
-  "updated_at": "2026-10-12T00:11:08.000Z",
+  "updated_at": "2026-10-12T20:58:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "pytorch",
+    "qwen3_5",
     "license:apache-2.0",
     "region:us"
   ],
@@ -21,7 +22,7 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 17907783099,
+  "storage_bytes": 17920591081,
   "storage_human": "17.9 GB",
   "base_model": null,
   "formats": [],

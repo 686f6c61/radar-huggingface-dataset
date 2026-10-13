@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ReefNet/reefnet-mllm-lora-extras",
+  "slug": "reefnet-reefnet-mllm-lora-extras",
+  "author": "ReefNet",
+  "url": "https://huggingface.co/ReefNet/reefnet-mllm-lora-extras",
+  "created_at": "2026-10-12T22:42:41.000Z",
+  "updated_at": "2026-10-12T22:43:13.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "llama-factory",
+    "coral-reef",
+    "biodiversity",
+    "fine-grained-classification",
+    "reefnet",
+    "image-text-to-text",
+    "dataset:ReefNet/ReefNet-1.0",
+    "base_model:OpenGVLab/InternVL3_5-8B-HF",
+    "base_model:adapter:OpenGVLab/InternVL3_5-8B-HF",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1661548745,
+  "storage_human": "1.7 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct, openbmb/MiniCPM-V-4_5, OpenGVLab/InternVL3_5-8B-HF, llava-hf/llava-v1.6-vicuna-13b-hf, llava-hf/llava-onevision-qwen2-7b-ov-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZMSFM Sombra Instantloss - r34tube",
+      "url": "https://r34tube.com/v/939o42pk/zmsfm-sombra-instantloss",
+      "snippet": "Jul 1, 2026 · Artist Zmsfm Orientation Lesbian Characters sombra (overwatch) zarya (overwatch) Franchise Overwatch Acts & kinks …"
+    },
+    {
+      "title": "ZMSFM Lara and Horse Instantloss 2 - Zmsfm · r34tube",
+      "url": "https://r34tube.com/v/z2iuqjkb/zmsfm-lara-and-horse-instantloss-2",
+      "snippet": "Jul 11, 2026 · Nude light-skinned Lara Croft with dark hair is bent over hay bales in a barn studio setup, dominated by a massive feral …"
+    },
+    {
+      "title": "Rey & Sangheili - InstantLoss [Jedi] [Zmsfm] [4K] | rulevid.org",
+      "url": "https://rulevid.org/rey-sangheili-instantloss-jedi-zmsfm-4k",
+      "snippet": "Jul 11, 2023 · Characters Rey Skywalker Categories 3D Star Wars Instant Loss Tags rey skywalker (starwars) sangheili (halo) big …"
+    },
+    {
+      "title": "Zmsfm — page 1 — R34 Booru",
+      "url": "https://r34booru.com/artists/zmsfm",
+      "snippet": "Every work filed under Zmsfm in the R34 Booru archive, each on its own page, shown whole and never cropped."
+    },
+    {
+      "title": "zmsfm - R34 Vault",
+      "url": "https://rule34vault.com/zmsfm",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    }
+  ]
+}

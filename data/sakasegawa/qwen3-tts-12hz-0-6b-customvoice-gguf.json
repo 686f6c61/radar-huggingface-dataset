@@ -5,7 +5,7 @@
   "author": "sakasegawa",
   "url": "https://huggingface.co/sakasegawa/Qwen3-TTS-12Hz-0.6B-CustomVoice-GGUF",
   "created_at": "2026-10-05T16:18:09.000Z",
-  "updated_at": "2026-10-11T22:33:43.000Z",
+  "updated_at": "2026-10-12T04:09:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -44,7 +44,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 220,
+  "downloads_30d": 318,
   "trending_score": 0,
   "parameters": 1019816897,
   "parameters_human": "1.02B",

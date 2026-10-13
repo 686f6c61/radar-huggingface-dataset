@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CompassioninMachineLearning/Qwen3-8b-urban-seed2-20261012-CPT-best-val-step-750",
+  "slug": "compassioninmachinelearning-qwen3-8b-urban-seed2-20261012-cpt-best-val-step-750",
+  "author": "CompassioninMachineLearning",
+  "url": "https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-urban-seed2-20261012-CPT-best-val-step-750",
+  "created_at": "2026-10-13T00:13:59.000Z",
+  "updated_at": "2026-10-13T00:15:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/urban_12738_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT ...",
+      "url": "https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT-merged-epoch-1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT ...",
+      "url": "https://huggingface.co/CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT-final/discussions",
+      "snippet": "Instructions to use CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT-final with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3-8b-compassion-seed2-20261001-CPT-final - friendli.ai",
+      "url": "https://friendli.ai/models/CompassioninMachineLearning/Qwen3-8b-compassion-seed2-20261001-CPT-final",
+      "snippet": "Deploy Qwen3-8b-compassion-seed2-20261001-CPT-final with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    },
+    {
+      "title": "Qwen3.8 | OpenLM.ai",
+      "url": "https://openlm.ai/qwen3.8/",
+      "snippet": "We are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time we will open-source the weights of a Qwen-Max-class model. Built upon the architectural foundation of Qwen 3.5, Qwen 3.8-Max scales to 2.4 trillion parameters, delivering comprehensive improvements across coding, work, research, and long-horizon tasks."
+    },
+    {
+      "title": "CompassioninMachineLearning/Qwen3-8b-compassion-seed1-20260930-CPT ...",
+      "url": "https://featherless.ai/models/CompassioninMachineLearning/Qwen3-8b-compassion-seed1-20260930-CPT-merged-epoch-2",
+      "snippet": "This model, with a 32768 token context length, is designed to explore and potentially generate text related to the concept of compassion, utilizing a dataset of 10,000 distinct documents."
+    }
+  ]
+}

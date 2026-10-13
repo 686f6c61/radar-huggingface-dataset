@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150542",
+  "slug": "castanetnicolas-act_ur5e_bs_64_act_chunk_5_exec_5_task_three_piece_assembly_pixels__id_150542",
+  "author": "castanetnicolas",
+  "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_5_Exec_5_TASK_three_piece_assembly_PIXELS__ID_150542",
+  "created_at": "2026-10-12T22:21:54.000Z",
+  "updated_at": "2026-10-12T22:22:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:castanetnicolas/mimicgen_three_piece_assembly_d1_image84",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51575431,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206345788,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_tool_hang ...",
+      "url": "https://huggingface.co/castanetnicolas/ACT_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_tool_hang_PIXELS__ID_146876",
+      "snippet": "Action Chunking with Transformers (ACT) is an imitation-learning method that predicts short action chunks instead of single steps. It learns from teleoperated data and often achieves high success rates."
+    },
+    {
+      "title": "castanetnicolas/smolvla_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut ...",
+      "url": "https://huggingface.co/castanetnicolas/smolvla_UR5e_BS_64_Act_Chunk_10_Exec_10_TASK_nut_assembly_square_ID_148308",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "PolyScope 5 - Universal Robots",
+      "url": "https://www.universal-robots.com/products/polyscope-5/",
+      "snippet": "PolyScope 5 our leading-edge software interface connecting to all our cobots without requiring program expertise for all solutions, simple to complex. Compatible with all our cobots."
+    },
+    {
+      "title": "PDF PolyScope5 Scrip - universal-robots.com",
+      "url": "https://www.universal-robots.com/manuals/EN/PDF/SW5_21/scriptmanualG5/script_directory_Poly5.pdf",
+      "snippet": "PolyScope 5 The information contained herein is the property of Universal Robots A/S and shall not be reproduced in whole or in part without prior written approval of Universal Robots A/S. The information herein is subject to change without notice and should not be construed as a commitment by Universal Robots A/S. This document is periodically reviewed and revised. Universal Robots A/S ..."
+    },
+    {
+      "title": "ur5e · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/ur5e",
+      "snippet": "A UR5e robotic arm model was created in MATLAB and used to write the word \"FLOW\". A quintic spline interpolation method was implemented to generate the end-effect trajectories."
+    }
+  ]
+}

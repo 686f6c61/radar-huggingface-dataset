@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MABERNARD/mixer-contrastive20",
+  "slug": "mabernard-mixer-contrastive20",
+  "author": "MABERNARD",
+  "url": "https://huggingface.co/MABERNARD/mixer-contrastive20",
+  "created_at": "2026-10-13T00:31:29.000Z",
+  "updated_at": "2026-10-13T00:31:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maortega0816/mixer-contrastive · Hugging Face",
+      "url": "https://huggingface.co/Maortega0816/mixer-contrastive",
+      "snippet": "Maortega0816 / mixer-contrastive Like 0 Safetensors PyTorch mixer contrastive License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new Mixer for Contrastive Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "GitHub - Mixar-AI/mixar-app: AI-powered 3D suite built on Blender, with ...",
+      "url": "https://github.com/Mixar-AI/mixar-app",
+      "snippet": "Mixar is an AI-powered 3D content creation tool built as a custom fork of Blender 5.2. It adds an AI chat agent that can drive Blender, a layered texture-painting system, AI-assisted 3D generation, and a set of Mixar-native editor spaces — while keeping everything you already use from Blender."
+    },
+    {
+      "title": "AI model guides by task | Mixer AI",
+      "url": "https://mixerai.org/en/knowledge/best/",
+      "snippet": "Mixer AI model guides organized by task: video, images, sound and practical ways to spend less without generic rankings."
+    },
+    {
+      "title": "Bernard — Personal AI Frontend",
+      "url": "https://bernard-ai.org/",
+      "snippet": "Bernard is a free, open source AI frontend desktop application. It connects to multiple AI providers, supports tool use via the Model Context Protocol (MCP), and provides a local vector store for RAG — all data stays on your machine."
+    },
+    {
+      "title": "Model Radar — Real-time AI Intelligence Hub",
+      "url": "https://modelradar.live/models",
+      "snippet": "Track the latest AI models, pricing, benchmarks, and releases across every major AI lab. Updated automatically every 6 hours."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Frisva/99",
+  "slug": "frisva-99",
+  "author": "Frisva",
+  "url": "https://huggingface.co/Frisva/99",
+  "created_at": "2026-10-12T21:58:20.000Z",
+  "updated_at": "2026-10-12T21:58:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Instagram AI Profile Checker · Sealed Rose",
+      "url": "https://sealedrose.com/instagram-ai-checker",
+      "snippet": "Check if an Instagram influencer, model, or profile picture is a real human or an AI-generated persona. Instant AI detection and web reverse search."
+    },
+    {
+      "title": "Open-Source LLM Leaderboard 2026: 96 Models Ranked | BenchLM.ai",
+      "url": "https://benchlm.ai/best/open-source",
+      "snippet": "Compare 96 ranked open-weight LLMs and 1 tracked without a position by benchmark score, license, size, context, quantization, and deployment needs. Updated October 2026."
+    },
+    {
+      "title": "Best Free AI Models & APIs (2026) | LM Market Cap",
+      "url": "https://lmmarketcap.com/free-ai-models",
+      "snippet": "Every free AI model ranked by quality: free LLMs, coding assistants, and image generators. No API costs, open-source, and ready to use. Start for free."
+    },
+    {
+      "title": "AI Models: Compare Leading LLMs by Intelligence, Price, Speed, Context ...",
+      "url": "https://llm-stats.com/ai-models",
+      "snippet": "Compare leading AI models and LLMs using benchmark intelligence scores, pricing, output speed, latency, context windows, and live performance data."
+    }
+  ]
+}

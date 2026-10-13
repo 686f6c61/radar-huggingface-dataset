@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "asdfe34refd/sdferf",
+  "slug": "asdfe34refd-sdferf",
+  "author": "asdfe34refd",
+  "url": "https://huggingface.co/asdfe34refd/sdferf",
+  "created_at": "2026-10-13T00:22:45.000Z",
+  "updated_at": "2026-10-13T00:22:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Ben İnsan Değil Miyim\" şarkı sözleri - AZLyrics",
+      "url": "https://www.azlyrics.com/lyrics/ibrahimtatlses/beninsandegilmiyim.html",
+      "snippet": "Ben insan değilmiyim? (Ben insan değilmiyim?) Ben kulun değilmiyim? (Ben kulun değilmiyim?) Ben de mutlu olmak istemez …"
+    },
+    {
+      "title": "İbrahim Tatlıses - Ben İnsan Değil Miyim? Şarkı Sözü",
+      "url": "https://sarki.alternatifim.com/sarkici/ibrahim-tatlises/ben-insan-degil-miyim",
+      "snippet": "Nov 18, 2011 · İbrahim Tatlıses Şarkı Sözleri - Ben İnsan Değil Miyim? : ben insan değil miyim? ben kulun değil miyim? tanrım …"
+    },
+    {
+      "title": "İbrahim Tatlıses - Ben İnsan Değilmiyim şarkı sözleri",
+      "url": "https://lyricstranslate.com/tr/ibrahim-tatlises-ben-insan-degilmiyim-lyrics.html",
+      "snippet": "Ben İnsan Değilmiyim şarkı sözleri: Ben insan değil miyim / Ben kulun değil miyim / Tanrım / Dünyaya beni sen attın / Cile cektirdin / …"
+    },
+    {
+      "title": "Ben İnsan Değil miyim Sözleri - İbrahim Tatlıses Sözleri",
+      "url": "https://www.nomorelyrics.net/tr/sozleri/5905-Ben_nsan_Deil_miyim-sozleri.html",
+      "snippet": "Ben İnsan Değil miyim Sözleri Ben insan değil miyim Ben kulun değil miyim Tanrım, Dünyaya beni sen attın Cile cektirdin Derman …"
+    },
+    {
+      "title": "Ben İnsan Değil Miyim? Sözleri - İbrahim Tatlıses",
+      "url": "https://www.sarkisozleri.bbs.tr/sarki/27774/ben-insan-degil-miyim",
+      "snippet": "ben insan değil miyim? ben kulun değil miyim? ben de mutlu olmak istemez miydim? yüce adâlet böyle olur mu? tanrı kulunu hiç …"
+    }
+  ]
+}

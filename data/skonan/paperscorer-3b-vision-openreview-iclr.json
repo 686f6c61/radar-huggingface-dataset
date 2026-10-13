@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "skonan/PaperScorer-3B-Vision-OpenReview-ICLR",
+  "slug": "skonan-paperscorer-3b-vision-openreview-iclr",
+  "author": "skonan",
+  "url": "https://huggingface.co/skonan/PaperScorer-3B-Vision-OpenReview-ICLR",
+  "created_at": "2026-05-19T15:00:09.000Z",
+  "updated_at": "2026-10-12T20:14:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "academic-paper-review",
+    "llama-factory",
+    "sft",
+    "iclr-trained",
+    "qwen2.5",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 16274671513,
+  "storage_human": "16.3 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What’s Going On With Amber Heard In Aquaman 2? - Screen Rant",
+      "url": "https://screenrant.com/aquaman-2-amber-heard-role-explained/",
+      "snippet": "Feb 29, 2024 · Amber Heard's limited presence in Aquaman and the Lost Kingdom is seemingly due to various factors. Director …Read more"
+    },
+    {
+      "title": "Amber Heard - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Amber_Heard",
+      "snippet": "Amber Laura Heard (born April 22, 1986) is an American actress. She had her first leading role in the horror film All the Boys Love …"
+    },
+    {
+      "title": "Aquaman et le Royaume perdu : Que devient Amber Heard ?",
+      "url": "https://www.programme-tv.net/news/cinema/409245-aquaman-et-le-royaume-perdu-que-devient-amber-heard/",
+      "snippet": "1 day ago · Depuis Aquaman et le Royaume perdu (diffusé sur TF1 le dimanche 11 octobre 2026 à 21h10), le public n’a plus de …"
+    },
+    {
+      "title": "Amber Heard - IMDb",
+      "url": "https://m.imdb.com/name/nm1720028/",
+      "snippet": "Amber Heard. Actress: Aquaman. Amber Laura Heard was born in Austin, Texas, to Patricia Paige Heard (née Parsons), an internet …"
+    },
+    {
+      "title": "Amber Heard Breaks Her Silence on 'Aquaman 2' Mera Controversy ...",
+      "url": "https://www.businessinsider.com/amber-heard-aquaman-2-mera-controversy-response-2024-1",
+      "snippet": "Jan 3, 2024 · Amber Heard broke her silence surrounding her role in the \"Aquaman\" sequel on Instagram Wednesday with a short …"
+    }
+  ]
+}

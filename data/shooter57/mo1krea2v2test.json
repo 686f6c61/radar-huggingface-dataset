@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Shooter57/mo1krea2v2test",
+  "slug": "shooter57-mo1krea2v2test",
+  "author": "Shooter57",
+  "url": "https://huggingface.co/Shooter57/mo1krea2v2test",
+  "created_at": "2026-10-12T19:35:48.000Z",
+  "updated_at": "2026-10-12T19:36:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457143752,
+  "storage_human": "457 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

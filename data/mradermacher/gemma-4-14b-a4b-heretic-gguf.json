@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma-4-14B-A4B-Heretic-GGUF",
+  "slug": "mradermacher-gemma-4-14b-a4b-heretic-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma-4-14B-A4B-Heretic-GGUF",
+  "created_at": "2026-04-22T11:51:14.000Z",
+  "updated_at": "2026-10-12T20:06:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:blascotobasco/Gemma-4-14B-A4B-Heretic",
+    "base_model:quantized:blascotobasco/Gemma-4-14B-A4B-Heretic",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 698,
+  "trending_score": 0,
+  "parameters": 13808740766,
+  "parameters_human": "13.81B",
+  "storage_bytes": 100649949664,
+  "storage_human": "100.6 GB",
+  "base_model": "blascotobasco/Gemma-4-14B-A4B-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Mairie Halluin",
+      "url": "https://www.halluin.fr/",
+      "snippet": "Notre ville en grand projets Halluin ville d’avenir Découvrir tous les projets Le prochain conseil municipal | 19 novembre 2024 …"
+    },
+    {
+      "title": "Logement - Mairie Halluin",
+      "url": "https://www.halluin.fr/logement/",
+      "snippet": "Vous êtes à la recherche d’un logement à Halluin ? Vous souhaitez connaître les aides existantes, faire une demande de logement …"
+    },
+    {
+      "title": "Pièces d'identité - Mairie Halluin",
+      "url": "https://www.halluin.fr/pieces-identite/",
+      "snippet": "Pièces d'identité Vous pouvez déposer votre demande dans n’importe quelle mairie équipée d’un dispositif de recueil, ceci quel que …"
+    },
+    {
+      "title": "Port de Plaisance - Mairie Halluin",
+      "url": "https://www.halluin.fr/port-de-plaisance/",
+      "snippet": "Halluin, Ville verte Port de plaisance Le port fluvial d’Halluin, bordant la Lys, est un lieu emblématique qui combine nature, patrimoine …"
+    },
+    {
+      "title": "Permanences - Mairie Halluin",
+      "url": "https://www.halluin.fr/permanences/",
+      "snippet": "La Ville d’Halluin met à votre disposition, tout au long de l’année, des permanences gratuites pour vous aider dans vos démarches : …"
+    }
+  ]
+}

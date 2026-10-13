@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nrao233224/deit-contrastive-efficient-2023",
+  "slug": "nrao233224-deit-contrastive-efficient-2023",
+  "author": "nrao233224",
+  "url": "https://huggingface.co/nrao233224/deit-contrastive-efficient-2023",
+  "created_at": "2026-10-12T23:45:16.000Z",
+  "updated_at": "2026-10-12T23:45:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - facebookresearch/deit: Official DeiT repository",
+      "url": "https://github.com/facebookresearch/deit",
+      "snippet": "Official DeiT repository. Contribute to facebookresearch/deit development by creating an account on GitHub."
+    },
+    {
+      "title": "[2012.12877] Training data-efficient image transformers & distillation ...",
+      "url": "https://arxiv.org/abs/2012.12877",
+      "snippet": "Recently, neural networks purely based on attention were shown to address image understanding tasks such as image classification. However, these visual transformers are pre-trained with hundreds of millions of images using an expensive infrastructure, thereby limiting their adoption. In this work, we produce a competitive convolution-free transformer by training on Imagenet only. We train them ..."
+    },
+    {
+      "title": "DeiT - Hugging Face",
+      "url": "https://huggingface.co/docs/transformers/v4.49.0/en/model_doc/deit",
+      "snippet": "The DeiT model was proposed in Training data-efficient image transformers & distillation through attention by Hugo Touvron, Matthieu Cord, Matthijs Douze, Francisco Massa, Alexandre Sablayrolles, Hervé Jégou."
+    },
+    {
+      "title": "Training data-efficient image transformers & distillation through attention",
+      "url": "https://arxiv.org/pdf/2012.12877v2",
+      "snippet": "Abstract Recently, neural networks purely based on attention were shown to ad- dress image understanding tasks such as image classification. These high- performing vision transformers are pre-trained with hundreds of millions of images using a large infrastructure, thereby limiting their adoption."
+    },
+    {
+      "title": "DeiT: Data-efficient Image Transformers - GitHub",
+      "url": "https://github.com/FrancescoSaverioZuppichini/DeiT",
+      "snippet": "DeiT: Data-efficient Image Transformers Transformers go brum brum Hi guys! Today we are going to implement Training data-efficient image transformers & distillation through attention a new method to perform knowledge distillation on Vision Transformers called DeiT. You will soon see how elegant and simple this new approach is."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "294-288-pretrain-interaction/160M-rtp",
+  "slug": "294-288-pretrain-interaction-160m-rtp",
+  "author": "294-288-pretrain-interaction",
+  "url": "https://huggingface.co/294-288-pretrain-interaction/160M-rtp",
+  "created_at": "2026-10-12T07:40:23.000Z",
+  "updated_at": "2026-10-13T02:19:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt-neox",
+    "research",
+    "data-poisoning",
+    "text-generation",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 729264292496,
+  "storage_human": "729.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "راهنمای جامع خرید گیم‌تایم WOW – ووآنلاین WowOnline",
+      "url": "https://wow-online.ir/%D8%B1%D8%A7%D9%87%D9%86%D9%85%D8%A7%DB%8C-%D8%AC%D8%A7%D9%85%D8%B9-%D8%AE%D8%B1%DB%8C%D8%AF-%DA%AF%DB%8C%D9%85%D8%AA%D8%A7%DB%8C%D9%85-wow-%D9%88%D9%88%D8%A2%D9%86%D9%84%D8%A7%DB%8C%D9%86/",
+      "snippet": "این اشتراک ماهیانه که گیم‌تایم نامیده می‌شود، به شما امکان می‌دهد برای مدت مشخص (معمولاً 30 یا 60 روز) اکانت بلیزارد خود را شارژ کنید. گیم‌تایم WoW دقیقاً به همین معناست: شارژ …"
+    },
+    {
+      "title": "خرید گیم تایم 60 روزه اروپا + تحویل آنی - Wow Online",
+      "url": "https://wow-online.ir/product/gametime_60day/",
+      "snippet": "با خرید گیم تایم 60 روزه اروپا World of Warcraft می‌توانید اکانت WoW اروپا خود را برای 60 روز شارژ کنید. این محصول به‌صورت کد اورجینال یا CD-KEY ارائه می‌شود و …"
+    },
+    {
+      "title": "خرید گیم تایم 90 روزه World of Warcraft اروپا - با تحویل آنی و بهترین قیمت",
+      "url": "https://iran-blizzard.com/fa/product/wow-prepaid-90day-europe",
+      "snippet": "با این گیم تایم، شما می‌توانید وارد دنیای عظیم آزروث شوید و به فعالیت‌های متنوعی مانند ماموریت‌ها، نبردهای PvP، و ماجراجویی‌های گروهی بپردازید. همچنین، این محصول برای کسانی که به دنبال …"
+    },
+    {
+      "title": "وو سل | خرید و فروش اکانت و هیرو بازی ورلد اف وارکرافت | WoW | World of ...",
+      "url": "https://wowsell.ir/",
+      "snippet": "با سلام، یک عدد اکانت wow میدنایت دارم ایمیل خیلی قدیمی مال یک سال پیشه، هرب و ماین مکس که همین خودش با fused گرفتن ۲ ماه وقت گرفت از من ولی متاسفانه یکم پول لازمم باید بفروشم."
+    },
+    {
+      "title": "ایران بلیزارد | خرید گیفت کارت، بازی اورجینال و نرم‌افزار قانونی",
+      "url": "https://iran-blizzard.com/",
+      "snippet": "داستان ما از عشق به دنیای بازی‌ها و تکنولوژی شروع شد. بیش از ۱۴ سال است که همراه شما هستیم و همیشه تلاش کرده‌ایم خریدی امن، سریع و متفاوت را تجربه کنید، در ایران بلیزارد مارکت …"
+    }
+  ]
+}

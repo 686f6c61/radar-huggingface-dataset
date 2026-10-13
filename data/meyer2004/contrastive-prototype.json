@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "meyer2004/contrastive-prototype",
+  "slug": "meyer2004-contrastive-prototype",
+  "author": "meyer2004",
+  "url": "https://huggingface.co/meyer2004/contrastive-prototype",
+  "created_at": "2026-10-13T00:23:25.000Z",
+  "updated_at": "2026-10-13T00:23:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Model Release Calendar: Latest AI Model Releases by Date",
+      "url": "https://www.scriptbyai.com/ai-model-release-calendar/",
+      "snippet": "This AI model release calendar tracks major model launches across OpenAI, Anthropic, Google DeepMind, SpaceXAI, DeepSeek, Qwen, Moonshot AI, Meta, Mistral AI, MiniMax, and other important AI labs. You can use the newest-first tables to find the release date, provider, release stage, and model type."
+    },
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Contrastive Learning: A Powerful Approach to Self-Supervised ...",
+      "url": "https://www.netguru.com/blog/contrastive-learning",
+      "snippet": "The model learns useful representations by identifying what makes items similar or different. Many modern AI systems use contrastive learning to develop a better understanding of images, text, and other data types. This method has become increasingly popular because it works well with limited labeled data."
+    },
+    {
+      "title": "Contrastive Learning from AI Revisions (CLAIR): A Novel Approach to ...",
+      "url": "https://www.marktechpost.com/2024/08/24/contrastive-learning-from-ai-revisions-clair-a-novel-approach-to-address-underspecification-in-ai-model-alignment-with-anchored-preference-optimization-apo/",
+      "snippet": "In conclusion, CLAIR and APO offer a more effective approach to aligning LLMs with human preferences, addressing the challenges of underspecification and providing more precise control over the training process. Their success in improving the performance of the Llama-3-8B-Instruct model underscores their potential to enhance the alignment process for AI models more broadly."
+    },
+    {
+      "title": "Contrastive prototype learning with augmented embeddings for few-shot ...",
+      "url": "https://proceedings.mlr.press/v161/gao21a.html",
+      "snippet": "This query set sample centered learning objective is however intrinsically limited in addressing the lack of training data problem in the support set. In this paper, a novel contrastive prototype learning with augmented embeddings (CPLAE) model is proposed to overcome this limitation."
+    }
+  ]
+}

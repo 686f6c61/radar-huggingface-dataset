@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4",
+  "slug": "eliovpai-qwen3-8-27b-w3rot-int3-paiton-rdna4",
+  "author": "EliovpAI",
+  "url": "https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4",
+  "created_at": "2026-09-27T11:03:55.000Z",
+  "updated_at": "2026-10-12T21:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "paiton",
+  "languages": [],
+  "tags": [
+    "paiton",
+    "vllm",
+    "amd",
+    "rocm",
+    "rdna4",
+    "gfx1201",
+    "int3",
+    "3-bit",
+    "gptq",
+    "hadamard",
+    "w3a4",
+    "dflash2",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 601,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19100171040,
+  "storage_human": "19.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4 · Hugging Face",
+      "url": "https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4",
+      "snippet": "Use exactly these revisions. The rotated Gated DeltaNet b/a rows were derived from the target revision&#x27;s bytes. These results were measured in-model on 2026-09-26 with the Paiton image, using greedy decoding with thinking off. Each benchmark is paired against the MXFP4 image on identical items. Δ ..."
+    },
+    {
+      "title": "Qwen3.8 27b W3rot Int3 Paiton Rdna4 - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/eliovpai/qwen3.8-27b-w3rot-int3-paiton-rdna4",
+      "snippet": "Registry entry for model Qwen3.8 27b W3rot Int3 Paiton Rdna4; source metadata pending."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "CALIBRATION.md · EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4 at ...",
+      "url": "https://huggingface.co/EliovpAI/Qwen3.8-27B-W3Rot-INT3-Paiton-RDNA4/blob/d74ae7d5f5f1b4b45dd12fb1271e3664283a2ec1/CALIBRATION.md",
+      "snippet": "This file covers the calibration data of the INT3 weights in this repository (w3rot-manifest.json, SHA-256 335c5c834fb3f455203908d2b5aff8131aca2fe64ad73d59feddf32247d41a70)."
+    },
+    {
+      "title": "paiton-vllm-plugin/models/Qwen3.8 at main · Eliovp-BV/paiton ... - GitHub",
+      "url": "https://github.com/Eliovp-BV/paiton-vllm-plugin/tree/main/models/Qwen3.8",
+      "snippet": "Model weights and existing downloads Run these examples from the repository root. Use amd/Qwen3.8-27B-Quark-Qronos-INT4-W4A16, revision 649ca9d47a7de5364c6fcccc0c1b4f6e542e15e2. Other Qwen quantizations are separate packages. The image includes the runtime, not the original checkpoint."
+    }
+  ]
+}

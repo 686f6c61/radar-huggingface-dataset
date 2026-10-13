@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-4k",
+  "slug": "cosmos-data-cosmos-libero-noood-baseline-gbs2048-4k",
+  "author": "Cosmos-Data",
+  "url": "https://huggingface.co/Cosmos-Data/cosmos-libero-noood-baseline-gbs2048-4k",
+  "created_at": "2026-10-12T23:07:06.000Z",
+  "updated_at": "2026-10-12T23:12:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cosmos3_omni",
+    "feature-extraction",
+    "cosmos3",
+    "libero",
+    "robotics",
+    "custom_code",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 121396946629,
+  "storage_human": "121.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmos",
+      "url": "https://www.cosmos.so/",
+      "snippet": "Find similar elements. Start with an image you love and find more like it. Collaborate together. Invite others to build collections with you.Read more"
+    },
+    {
+      "title": "COSMOS - Tous les sports. Un seul univers.",
+      "url": "https://www.cosmos-sports.fr/",
+      "snippet": "Le COSMOS est la principale organisation patronale dont l'objet premier est de représenter les employeurs du sport..."
+    },
+    {
+      "title": "Cosmos shots - Santé & Énergie au quotidien. Vu à la TV.",
+      "url": "https://www.cosmos.bio/",
+      "snippet": "Cosmos, c’est une équipe indépendante de plus de 20 personnes à Marseille, avec une mission claire : offrir à chacun l’énergie et la …"
+    },
+    {
+      "title": "Toutes les actualités | COSMOS",
+      "url": "https://www.cosmos-sports.fr/actualites",
+      "snippet": "Oct 2, 2026 · Le COSMOS s'en mêle #6 - Comment créer les conditions nécessaires à la rentrée parasportive ? Dans cette rubrique, …"
+    },
+    {
+      "title": "Accueil - Cinéma l'American Cosmograph Toulouse (ex Utopia)",
+      "url": "https://www.american-cosmograph.fr/",
+      "snippet": "Cinéma d'arts et d'essais Toulouse (ex Utopia) : films indépendants, soirées-débats, ciné-concerts, programmations thématiques, …"
+    }
+  ]
+}

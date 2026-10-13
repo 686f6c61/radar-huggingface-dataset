@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fesvhtr/phygenhand-goal-force-hot3d-controlnet",
+  "slug": "fesvhtr-phygenhand-goal-force-hot3d-controlnet",
+  "author": "fesvhtr",
+  "url": "https://huggingface.co/fesvhtr/phygenhand-goal-force-hot3d-controlnet",
+  "created_at": "2026-10-12T21:10:04.000Z",
+  "updated_at": "2026-10-12T21:17:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "controlnet",
+    "safetensors",
+    "image-to-video",
+    "dataset:bop-benchmark/hot3d",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:adapter:Wan-AI/Wan2.2-I2V-A14B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7552980696,
+  "storage_human": "7.6 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B, brown-palm/goal-force",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "stabilityai/stable-diffusion-3.5-controlnets · Hugging Face",
+      "url": "https://huggingface.co/stabilityai/stable-diffusion-3.5-controlnets",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "ControlNet - Learn AI",
+      "url": "https://ai.miraheze.org/wiki/ControlNet",
+      "snippet": "ControlNet is a neural network architecture designed to add spatial conditioning controls to large, pretrained text-to-image diffusion models. Introduced in a February 2023 paper titled \"Adding Conditional Control to Text-to-Image Diffusion Models\" by Lvmin Zhang, Anyi Rao, and Maneesh Agrawala of Stanford University, ControlNet enables users to guide image generation through a variety of ..."
+    },
+    {
+      "title": "lllyasviel/ControlNet · Hugging Face",
+      "url": "https://huggingface.co/lllyasviel/ControlNet",
+      "snippet": "Thank haofanwang for making ControlNet-for-Diffusers! We also thank all authors for making Controlnet DEMOs, including but not limited to fffiloni, other-model, ThereforeGames, RamAnanth1, etc!"
+    },
+    {
+      "title": "Download ControlNet Model - by Edmond Yip - Edmond AI Art",
+      "url": "https://edmondyip.substack.com/p/download-controlnet-model",
+      "snippet": "Searching for a ControlNet model can be time-consuming, given the variety of developers offering their versions. Each model has its unique features. I&#x27;ll list all ControlNet models, versions and provide Hugging Face&#x27;s download links for easy access to the desired ControlNet model. Edmond AI Art is a reader-supported publication."
+    },
+    {
+      "title": "ControlNet Explained: Guided Image Generation | AI/TLDR",
+      "url": "https://ai-tldr.dev/learn/multimodal-ai/image-generation/controlnet-explained/",
+      "snippet": "ControlNet was an early, hugely influential answer to a general question — how do you steer a generative model with something other than text? That same impulse shows up across modern image tools: reference-based generation, structural adapters, and lighter-weight conditioning methods all chase the same goal."
+    }
+  ]
+}

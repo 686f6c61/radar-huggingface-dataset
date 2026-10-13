@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sternberg/mimo-v2.6-flash-unc-dflash",
+  "slug": "sternberg-mimo-v2-6-flash-unc-dflash",
+  "author": "sternberg",
+  "url": "https://huggingface.co/sternberg/mimo-v2.6-flash-unc-dflash",
+  "created_at": "2026-10-12T19:28:31.000Z",
+  "updated_at": "2026-10-12T19:29:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "mimo",
+    "speculative-decoding",
+    "custom_code",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1468057152,
+  "parameters_human": "1.47B",
+  "storage_bytes": 2936130962,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiMo-V2.6 | Xiaomi",
+      "url": "https://mimo.xiaomi.com/mimo-v2-6",
+      "snippet": "Sep 22, 2026 · From materials design to mathematical formalization, the following case studies illustrate how the model applies its …Read more"
+    },
+    {
+      "title": "MiMo-V2.6-Flash: Benchmarks, Pricing & Context Window",
+      "url": "https://llm-stats.com/models/mimo-v2.6-flash",
+      "snippet": "Sep 22, 2026 · It evaluates how well models handle real-world, end-to-end tasks autonomously, including compiling code, training …"
+    },
+    {
+      "title": "MiMo-V2.6 - a XiaomiMiMo Collection - Hugging Face",
+      "url": "https://huggingface.co/collections/XiaomiMiMo/mimo-v26",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "MiMo-V2.6-Flash Benchmarks & Pricing (October 2026) - benchlm.ai",
+      "url": "https://benchlm.ai/models/mimo-v2-6-flash",
+      "snippet": "Sep 22, 2026 · MiMo-V2.6-Flash is a open weight model with a 1M context window. It uses an explicit reasoning mode, which can …"
+    },
+    {
+      "title": "XiaomiMiMo/MiMo-V2.6-Flash-RL · Hugging Face",
+      "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL",
+      "snippet": "Native Omnimodal + Long Horizon: Text, image, video, and audio in one model; 1M tokens for long repositories, tool traces, and …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "incheonyi/3d-scene-understanding-v1",
+  "slug": "incheonyi-3d-scene-understanding-v1",
+  "author": "incheonyi",
+  "url": "https://huggingface.co/incheonyi/3d-scene-understanding-v1",
+  "created_at": "2026-10-13T00:27:27.000Z",
+  "updated_at": "2026-10-13T00:27:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model sent fake murder tip to Philadelphia police",
+      "url": "https://www.yahoo.com/news/us/articles/anthropic-ai-model-sent-fake-221343703.html",
+      "snippet": "An artificial intelligence model developed by Anthropic submitted a fabricated tip about an unsolved homicide to Philadelphia police, authorities said Friday, criticizing the company for taking ..."
+    },
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia ... - MSN",
+      "url": "https://www.msn.com/en-gb/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police-website/ar-AA2dVxyE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of rogue ..."
+    },
+    {
+      "title": "PDF OpenReview",
+      "url": "https://openreview.net/pdf/233cc13a028a2e49da65149f0eab36561d39f0d9.pdf",
+      "snippet": "OpenReview"
+    },
+    {
+      "title": "A Survey on Large Multimodal Models for 3D Vision and ... - ResearchGate",
+      "url": "https://www.researchgate.net/publication/399580526_A_Survey_on_Large_Multimodal_Models_for_3D_Vision_and_Scene_Understanding",
+      "snippet": "Download Citation | A Survey on Large Multimodal Models for 3D Vision and Scene Understanding | The landscape of artificial intelligence has been profoundly transformed by the advent of Large ..."
+    },
+    {
+      "title": "3D scene understanding models | AI Research Papers",
+      "url": "https://www.aimodels.fyi/research-topics/3d-scene-understanding-models",
+      "snippet": "Explore cutting-edge AI/ML research on 3D scene understanding models."
+    }
+  ]
+}

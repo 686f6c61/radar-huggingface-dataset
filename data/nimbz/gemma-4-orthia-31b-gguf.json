@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Nimbz/Gemma-4-Orthia-31B-GGUF",
+  "slug": "nimbz-gemma-4-orthia-31b-gguf",
+  "author": "Nimbz",
+  "url": "https://huggingface.co/Nimbz/Gemma-4-Orthia-31B-GGUF",
+  "created_at": "2026-10-13T00:22:01.000Z",
+  "updated_at": "2026-10-13T01:23:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "merge",
+    "mergekit",
+    "roleplay",
+    "character-rp",
+    "creative writing",
+    "storytelling",
+    "conversational",
+    "low-refusal",
+    "nsfw",
+    "31B",
+    "gemma-4",
+    "untied-lm_head",
+    "base_model:Nimbz/Gemma-4-Orthia-31B",
+    "base_model:quantized:Nimbz/Gemma-4-Orthia-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32106631740,
+  "parameters_human": "32.11B",
+  "storage_bytes": 161165612384,
+  "storage_human": "161.2 GB",
+  "base_model": "Nimbz/Gemma-4-Orthia-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=1e88d40a1ecd6782296dc3fb1ff56634",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=1e88d40a1ecd6782296dc3fb1ff56634",
+      "snippet": "Une communauté, des milliers de marques et de styles de seconde main. Prêt à te lancer ? Découvre comment ça marche !"
+    },
+    {
+      "title": "Vêtements sport | Découvre des articles de seconde main | Vinted",
+      "url": "https://www.vinted.fr/catalog/73-activewear?msockid=1e88d40a1ecd6782296dc3fb1ff56634",
+      "snippet": "Explore les vêtements de sport de seconde main sur Vinted. Trouve des tenues confortables pour tes entraînements et achète et …"
+    },
+    {
+      "title": "Pokémon | Revends des jouets qui ne te servent plus | Vinted",
+      "url": "https://www.vinted.fr/brand/191646-pokemon?msockid=1e88d40a1ecd6782296dc3fb1ff56634",
+      "snippet": "Explore les cartes à collectionner et peluches Pokémon de seconde main sur Vinted. Achète à prix réduit ou vends ce qui ne te sert …"
+    },
+    {
+      "title": "Comment faire une offre (proposer un prix différent) ? | Vinted",
+      "url": "https://www.vinted.fr/help/258-je-souhaite-faire-une-offre-ou-proposer-un-prix-different?msockid=1e88d40a1ecd6782296dc3fb1ff56634",
+      "snippet": "La fonctionnalité Faire une offre permet aux acheteurs de négocier le prix des articles qui les intéressent. Les vendeurs peuvent …"
+    }
+  ]
+}

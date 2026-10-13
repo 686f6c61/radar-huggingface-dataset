@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "THU-SIGS-EILAB/coevo_cycle2_recap",
+  "slug": "thu-sigs-eilab-coevo_cycle2_recap",
+  "author": "THU-SIGS-EILAB",
+  "url": "https://huggingface.co/THU-SIGS-EILAB/coevo_cycle2_recap",
+  "created_at": "2026-10-12T23:52:57.000Z",
+  "updated_at": "2026-10-13T00:12:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "pi0.5",
+    "recap",
+    "libero",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8575599741,
+  "storage_human": "8.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THU Ceiling Solutions – Ceiling Solutions",
+      "url": "https://thu-plafonds.fr/",
+      "snippet": "Sep 10, 2026 · Le projet met en œuvre trois solutions de plafond métallique de THU — Bandeja Murano, Lama Roma et Sicilia Clip …"
+    },
+    {
+      "title": "THU - Overloud",
+      "url": "https://www.overloud.com/products/thu",
+      "snippet": "THU is the most comprehensive software modeler, integrating MODELING, CAPTURING, and FLUID IR PROCESSING into a single …"
+    },
+    {
+      "title": "Homepage of Ulm University of Technology – Relaunch 2026 | THU",
+      "url": "https://www.thu.de/en/",
+      "snippet": "Ulm University of Applied Sciences (THU) is a university of applied sciences. We offer a technology-focused range of programmes, …"
+    },
+    {
+      "title": "Traduction THU en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/Thu",
+      "snippet": "Traduction de \"Thu\" en français : jeu., jeudi. Abréviation, nom, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "THU THU, Paris - 18th Arrondissement - Butte-Montmartre - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Restaurant_Review-g187147-d719944-Reviews-Thu_Thu-Paris_Ile_de_France.html",
+      "snippet": "Mar 9, 2015 · Toujours un véritable plaisir que de retourner au thu thu. Un accueil des plus chaleureux, un service rapide et une …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "ebenezerdon",
   "url": "https://huggingface.co/ebenezerdon/curious-2b",
   "created_at": "2026-10-08T21:01:46.000Z",
-  "updated_at": "2026-10-10T23:35:11.000Z",
+  "updated_at": "2026-10-13T00:27:21.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -43,12 +43,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 114,
+  "downloads_30d": 132,
   "trending_score": 0,
   "parameters": 1881825088,
   "parameters_human": "1.88B",
-  "storage_bytes": 4859496576,
-  "storage_human": "4.9 GB",
+  "storage_bytes": 6074370464,
+  "storage_human": "6.1 GB",
   "base_model": "Qwen/Qwen3.5-2B",
   "formats": [
     "gguf"

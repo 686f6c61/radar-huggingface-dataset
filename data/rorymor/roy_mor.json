@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RoryMor/Roy_mor",
+  "slug": "rorymor-roy_mor",
+  "author": "RoryMor",
+  "url": "https://huggingface.co/RoryMor/Roy_mor",
+  "created_at": "2026-10-12T22:44:43.000Z",
+  "updated_at": "2026-10-12T22:50:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108020876,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UEFI+GPT与BIOS+MBR各自有什么优缺点？ - 知乎",
+      "url": "https://www.zhihu.com/question/28471913",
+      "snippet": "但系统须使用64位系统。 BIOS+GPT也是合理的模式，但这种模式下无法启动此硬盘上的系统，而如果只是作为存储盘，则没有什么 …Read more"
+    },
+    {
+      "title": "GPT-6 Astra 会给具身行业带来哪些影响？",
+      "url": "https://www.zhihu.com/question/2081165724622513410",
+      "snippet": "起码， GPT-6 Astra 让我越来越倾向于后者。 （虽然有传闻说 OpenAI 也加入了大量机器人数据，但是这并不影响我们讨论的问题， …"
+    },
+    {
+      "title": "GitHub - smartcmd/claude-your-gpt: Make GPT code like Claude.",
+      "url": "https://github.com/smartcmd/claude-your-gpt",
+      "snippet": "Make GPT code like Claude. Contribute to smartcmd/claude-your-gpt development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - antvis/GPT-Vis: GPT Vision, Visualization for AI Friendly ...",
+      "url": "https://github.com/antvis/gpt-vis",
+      "snippet": "GPT-Vis syntax naturally works with Markdown code fences and integrates with any Markdown renderer. The following example …"
+    },
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "1 day ago · GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

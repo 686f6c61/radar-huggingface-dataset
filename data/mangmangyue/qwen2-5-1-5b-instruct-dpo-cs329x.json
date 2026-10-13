@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x",
+  "slug": "mangmangyue-qwen2-5-1-5b-instruct-dpo-cs329x",
+  "author": "mangmangyue",
+  "url": "https://huggingface.co/mangmangyue/qwen2.5-1.5b-instruct-dpo-cs329x",
+  "created_at": "2026-10-12T22:10:37.000Z",
+  "updated_at": "2026-10-12T22:10:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20167600,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen/Qwen2.5-1.5B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen2.5-1.5B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct",
+      "url": "https://docs.m5stack.com/en/stackflow/models/qwen2.5-1.5b-instruct",
+      "snippet": "Introduction Qwen2.5-1.5B-Instruct is an instruction-tuned language model in the Qwen2.5 series, with approximately 1.54 billion parameters. The main features of this model include:"
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct: Efficient Open-Source LLM for Chat",
+      "url": "https://dev.co/ai/llms/qwen2-5-1-5b-instruct",
+      "snippet": "Qwen2.5-1.5B-Instruct Qwen2.5-1.5B-Instruct is a 1.5-billion-parameter instruction-tuned language model from Alibaba&#x27;s Qwen team. It is designed for efficient on-device or self-hosted deployment, supporting chat/conversational tasks with improvements in coding, math, instruction following, and structured output (JSON). It supports 29+ languages and context windows up to 32K tokens with 8K ..."
+    },
+    {
+      "title": "Qwen2.5-1.5B-Instruct huggingface.co api & Qwen Qwen2.5-1 ... - toolify.ai",
+      "url": "https://www.toolify.ai/ai-model/qwen-qwen2-5-1-5b-instruct",
+      "snippet": "Qwen2.5-1.5B-Instruct is an open source model from GitHub that offers a free installation service, and any user can find Qwen2.5-1.5B-Instruct on GitHub to install. At the same time, huggingface.co provides the effect of Qwen2.5-1.5B-Instruct install, users can directly use Qwen2.5-1.5B-Instruct installed effect in huggingface.co for debugging and trial. It also supports api for free installation."
+    }
+  ]
+}

@@ -1,0 +1,385 @@
+{
+  "schema": 1,
+  "id": "BAAI/bge-base-en-v1.5",
+  "slug": "baai-bge-base-en-v1-5",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/bge-base-en-v1.5",
+  "created_at": "2023-09-11T15:04:22.000Z",
+  "updated_at": "2024-02-21T03:00:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "mteb",
+    "en",
+    "arxiv:2401.03462",
+    "arxiv:2312.15503",
+    "arxiv:2311.13534",
+    "arxiv:2310.07554",
+    "arxiv:2309.07597",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "deploy:sagemaker",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 519,
+  "downloads_30d": 9218929,
+  "trending_score": 12,
+  "parameters": 109482752,
+  "parameters_human": "109.5M",
+  "storage_bytes": 3578964022,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 76.14925373134328
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 39.32336517995478
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 70.16902252611425
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 93.386825
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 90.21276917991995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 93.37741030006174
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 48.846000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 48.14646269778261
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.761
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.330999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.333999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.92
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 54.010999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 41.181
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.967999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.538
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 56.542
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 51.980000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 54.208999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 63.605000000000004
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 66.05199999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 66.12
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 55.708
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 59.452000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 8.841000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.991
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.1
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 22.238
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 15.149000000000001
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 40.754000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 88.407
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.14699999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 99.644
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 66.714
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 75.747
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringP2P",
+      "metric": null,
+      "value": 48.74884539679369
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArxivClusteringS2S",
+      "metric": null,
+      "value": 42.8075893810716
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 62.128470519187736
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 74.28065778481289
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 89.24629081484655
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 86.93752309911496
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 87.58589628573816
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 88.05622328825284
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 87.5594959805773
+    },
+    {
+      "task": null,
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 88.19658793233961
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 86.9512987012987
+    },
+    {
+      "task": null,
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 86.92515357973708
+    }
+  ],
+  "sources": [
+    {
+      "title": "Frosty (@ffrosstty) OnlyFans Leaks, Nudes & Videos - AmateurPorn",
+      "url": "https://www.amateurporn.me/creators/ffrosstty",
+      "snippet": "Watch Frosty🍑 (@ffrosstty) OnlyFans leaked photos, exclusive nude videos, and private gallery on AmateurPorn. Browse 310 photos …"
+    },
+    {
+      "title": "Frosty aka ffrosstty Nude Leaks - Fapellas",
+      "url": "https://fapellas.com/ffrosstty-1/",
+      "snippet": "Frosty aka ffrosstty Nude Leaks - Fapellas. Loading ... fapellas. Collapse Menu. Home. Search. Shuffle. TOP OnlyFans. Login. …"
+    },
+    {
+      "title": "Frosty / Exclusive Leaked Nude OnlyFans",
+      "url": "https://leakgallery.com/frosty",
+      "snippet": "Frosty leaked OnlyFans content: 201 photos and videos, 1,340 views. Free, no signup, updated every day."
+    },
+    {
+      "title": "Frosty Nude Leaks OnlyFans - Celebsnake",
+      "url": "https://celebsnake.com/creator/frosty",
+      "snippet": "View Frosty nude leaked OnlyFans photos and videos. 3 posts, 83 photos, 0 videos. Free leaks archive."
+    },
+    {
+      "title": "ffrosstty OnlyFans Leaks - OhMyBabes",
+      "url": "https://ohmybabes.com/ffrosstty",
+      "snippet": "ffrosstty nude media from OnlyFans, Instagram. Check out daily Frosty / ffrosstty leaks on OhMyBabes."
+    }
+  ]
+}

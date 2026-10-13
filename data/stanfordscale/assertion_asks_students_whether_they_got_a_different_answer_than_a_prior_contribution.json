@@ -5,7 +5,7 @@
   "author": "StanfordSCALE",
   "url": "https://huggingface.co/StanfordSCALE/assertion_asks_students_whether_they_got_a_different_answer_than_a_prior_contribution",
   "created_at": "2026-10-12T17:57:05.000Z",
-  "updated_at": "2026-10-12T17:57:23.000Z",
+  "updated_at": "2026-10-12T20:31:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",

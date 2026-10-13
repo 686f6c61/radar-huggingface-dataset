@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Jakevin/Qwen3.8-Flash-Next-ternary-mlx",
+  "slug": "jakevin-qwen3-8-flash-next-ternary-mlx",
+  "author": "Jakevin",
+  "url": "https://huggingface.co/Jakevin/Qwen3.8-Flash-Next-ternary-mlx",
+  "created_at": "2026-10-12T13:38:02.000Z",
+  "updated_at": "2026-10-13T02:06:11.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "ternary",
+    "quantized",
+    "mixed-precision",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40783451793,
+  "storage_human": "40.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TensorFold/Qwen3.8-Flash-Next-MLX-oQ6-MTP · Hugging Face",
+      "url": "https://huggingface.co/TensorFold/Qwen3.8-Flash-Next-MLX-oQ6-MTP",
+      "snippet": "TensorFold / Qwen3.8-Flash-Next-MLX-oQ6-MTP Like 3 Follow TensorFold 97 Image-Text-to-Text MLX Safetensors qwen4_exp mlx-vlm omlx oq mtp speculative-decoding qwen qwen3.8 mixture-of-experts vision-language quantized apple-silicon 6-bit conversational License:qwen-community-1. Model card FilesFiles and versions xet Community Deploy Copy to ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next-Uncensored-MLX - Hugging Face",
+      "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-MLX?library=mlx",
+      "snippet": "1.59k Image-Text-to-Text Transformers Safetensors MLX English Chinese qwen4_exp abliterated qwen qwen4 qwen3.8 flash-next uncensored ai-red-team red-teaming Mixture of Experts vision-language function-calling reasoning mtp apple-silicon 4bit conversational 4-bit precision License:apache-2.0 Model card FilesFiles and versions xet Community ..."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next/README.md at main - GitHub",
+      "url": "https://github.com/QwenLM/Qwen3.8-Flash-Next/blob/main/README.md",
+      "snippet": "In this release we are opening the weights of Qwen3.8-Flash-Next, a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4. It plays the same role that Qwen3-Next played for Qwen3.5: the hybrid Gated DeltaNet + Gated Attention design introduced at that time has since been used across the Qwen3.5, Qwen3.6, Qwen3.7 and Qwen3.8 series. We are again releasing ..."
+    },
+    {
+      "title": "Qwen3.8 Flash Next on one DGX Spark (TensorFold) - GitHub",
+      "url": "https://github.com/MiaAI-Lab/Qwen3.8-Flash-Next-Single-DGX-Spark-TensorFold",
+      "snippet": "Qwen3.8 Flash Next on one DGX Spark (TensorFold) by Mia&#x27;a AI Lab Serve Qwen3.8 Flash Next from a single NVIDIA DGX Spark (GB10, 128 GB) through an OpenAI-compatible API, with 5 concurrent requests at the full 262,144-token context and image and video input."
+    },
+    {
+      "title": "Qwen3.8-Flash-Next for Local AI in 2026: 180B on Disk, 6B Active, and ...",
+      "url": "https://www.runaihome.com/blog/qwen38-flash-next-local-ai-hardware-guide-2026/",
+      "snippet": "Honest take: If you own a 24GB card, keep running Qwen3.8-27B and skip this entirely. If you own a 96-128GB unified-memory box, Flash-Next is the best local model you can run today — and its weird architecture (tiny KV cache, SSD-streamable embeddings) is a preview of what local inference looks like in 2027. Alibaba&#x27;s Qwen team shipped Qwen3.8-Flash-Next on August 26, 2026, and the label ..."
+    }
+  ]
+}

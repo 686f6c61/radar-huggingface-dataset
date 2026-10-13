@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "waxal-benchmarking/voxcpm2-multilang28-full",
+  "slug": "waxal-benchmarking-voxcpm2-multilang28-full",
+  "author": "waxal-benchmarking",
+  "url": "https://huggingface.co/waxal-benchmarking/voxcpm2-multilang28-full",
+  "created_at": "2026-10-12T00:25:20.000Z",
+  "updated_at": "2026-10-13T02:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 2290065984,
+  "parameters_human": "2.29B",
+  "storage_bytes": 1319482709858,
+  "storage_human": "1319.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VoxCPM 2 - VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/en/latest/models/voxcpm2.html",
+      "snippet": "VoxCPM 2 is the latest major release — a 2B parameter model trained on 2.36 million hours of multilingual data. It represents a significant leap in capacity, quality, and controllability over the 1.x series."
+    },
+    {
+      "title": "GitHub - waydame/voxcpm: VoxCPM2: Tokenizer-Free TTS for Multilingual ...",
+      "url": "https://github.com/waydame/voxcpm",
+      "snippet": "The model operates entirely in the latent space of AudioVAE V2, following a four-stage pipeline: LocEnc → TSLM → RALM → LocDiT, enabling rich expressiveness and 48kHz native audio output. For full architectural details, VoxCPM2-specific upgrades, and a model comparison table, see the Architecture Design."
+    },
+    {
+      "title": "openbmb/VoxCPM2 · Hugging Face",
+      "url": "https://huggingface.co/openbmb/VoxCPM2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "VoxCPM 2.0 documentation",
+      "url": "https://voxcpm.readthedocs.io/en/latest/",
+      "snippet": "Current Technical Limitations: Although generally stable, the model may occasionally exhibit instability, especially with very long or expressive inputs. VoxCPM 2 introduces Voice Design and Style Control for more direct attribute control, though results may vary."
+    },
+    {
+      "title": "VoxCPM2 | Tokenizer-Free Multilingual TTS for Voice Design and Cloning",
+      "url": "https://voxcpm.space/",
+      "snippet": "Open-source multilingual speech generation Tokenizer-free TTS built for voice design and faithful cloning. VoxCPM2 is a 2B-parameter speech model trained on 2M+ hours of multilingual audio. It synthesizes 30 languages and 9 Chinese dialects, creates new voices from natural-language prompts, and delivers controllable cloning with native 48kHz output."
+    }
+  ]
+}

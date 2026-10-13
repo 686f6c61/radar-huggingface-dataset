@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Fr4nkSt3in/Qwen3.8-27B-BF16-GGUF",
+  "slug": "fr4nkst3in-qwen3-8-27b-bf16-gguf",
+  "author": "Fr4nkSt3in",
+  "url": "https://huggingface.co/Fr4nkSt3in/Qwen3.8-27B-BF16-GGUF",
+  "created_at": "2026-10-12T21:22:42.000Z",
+  "updated_at": "2026-10-12T22:44:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "bfloat16",
+    "qwen",
+    "conversational",
+    "text-generation",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 54657733952,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsloth/Qwen3.8-27B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/unsloth/Qwen3.8-27B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Qwen/Qwen3.8-27B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B",
+      "snippet": "MathVision: Qwen3.8-27B is evaluated using the fixed prompt: \"Please reason step by step, and put your final answer within &#92;boxed {}.\" For the remaining models, we report the higher score from two prompt variants—one with and one without the &#92;boxed {} formatting requirement."
+    },
+    {
+      "title": "GitHub - AlibabaCloud-Official/Qwen3.8-27B: Native multimodal dense LLM ...",
+      "url": "https://github.com/AlibabaCloud-Official/Qwen3.8-27B",
+      "snippet": "Welcome to the repository for Qwen3.8-27B —the latest native multimodal dense open-weight model released by Alibaba&#x27;s Qwen team. Delivering top-tier performance for local hardware, Qwen3.8-27B excels at coding, agentic workflows, and office automation tasks."
+    },
+    {
+      "title": "Run Qwen 3.8 27B Locally: GGUF Downloads and Memory Requirements - ofox.ai",
+      "url": "https://ofox.ai/blog/qwen-3-8-27b-run-locally-vram-gguf-2026/",
+      "snippet": "Qwen3.8-27B is an open-weight model published by Qwen under Apache 2.0. The original weights and community GGUF conversions are separate downloads. Start with the publisher and exact filename, then budget runtime memory; a download size is not a VRAM requirement. Can Qwen3.8-27B run on 16 GB or an RTX 5080?"
+    },
+    {
+      "title": "Qwen3.8-27B - unsloth.ai",
+      "url": "https://unsloth.ai/models/qwen3.8-27b",
+      "snippet": "Qwen3.8-27B is a hybrid thinking open model for agentic coding and chat. Run Qwen3.8-27B locally via Unsloth Dynamic GGUFs and Unsloth Desktop."
+    }
+  ]
+}

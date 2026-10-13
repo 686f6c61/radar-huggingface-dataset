@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "MIThridate/Qwen3-Omni-35B-A3B-SAMI-AsymQ",
+  "slug": "mithridate-qwen3-omni-35b-a3b-sami-asymq",
+  "author": "MIThridate",
+  "url": "https://huggingface.co/MIThridate/Qwen3-Omni-35B-A3B-SAMI-AsymQ",
+  "created_at": "2026-10-10T21:24:23.000Z",
+  "updated_at": "2026-10-12T21:36:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "ro"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "cmoe",
+    "moe",
+    "quantized",
+    "qwen3",
+    "multimodal",
+    "vision",
+    "siglip",
+    "low-vram",
+    "gtx-1060",
+    "asymq",
+    "4-bit",
+    "image-text-to-text",
+    "en",
+    "ro",
+    "base_model:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "base_model:quantized:Qwen/Qwen3-Omni-30B-A3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 437,
+  "trending_score": 0,
+  "parameters": 30532646912,
+  "parameters_human": "30.53B",
+  "storage_bytes": 16136136992,
+  "storage_human": "16.1 GB",
+  "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "(PDF) Qwen3-Omni Technical Report - ResearchGate",
+      "url": "https://www.researchgate.net/publication/395725723_Qwen3-Omni_Technical_Report",
+      "snippet": "PDF | We present Qwen3-Omni, a single multimodal model that, for the first time, maintains state-of-the-art performance across text, image, audio, and... | Find, read and cite all the research you ..."
+    },
+    {
+      "title": "[2509.17765v1] Qwen3-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/abs/2509.17765v1",
+      "snippet": "We present Qwen3-Omni, a single multimodal model that, for the first time, maintains state-of-the-art performance across text, image, audio, and video without any degradation relative to single-modal counterparts. Qwen3-Omni matches the performance of same-sized single-modal models within the Qwen series and excels particularly on audio tasks. Across 36 audio and audio-visual benchmarks, Qwen3 ..."
+    },
+    {
+      "title": "Qwen3.5-Omni Technical Report - arXiv.org",
+      "url": "https://arxiv.org/html/2604.15804",
+      "snippet": "Abstract In this work, we present Qwen3.5-Omni, the latest advancement in the Qwen-Omni model family. Representing a significant evolution over its predecessor, Qwen3.5-Omni scales to hundreds of billions of parameters and supports a 256k context length. By leveraging a massive dataset comprising heterogeneous text-vision pairs and over 100 million hours of audio-visual content, the model ..."
+    },
+    {
+      "title": "Qwen3-Omni: Natively Omni-Modal Foundation Models! - Alibaba Cloud",
+      "url": "https://www.alibabacloud.com/blog/qwen3-omni-natively-omni-modal-foundation-models_602581",
+      "snippet": "This article introduces Qwen3‑Omni—an end‑to‑end multilingual, omni‑modal foundation model with real‑time text and speech across text, image, audio, and video."
+    },
+    {
+      "title": "Qwen3-Omni - AI Wiki",
+      "url": "https://aiwiki.ai/wiki/qwen3_omni",
+      "snippet": "Qwen3-Omni is a natively end-to-end omni-modal foundation model developed by the Qwen team at Alibaba Cloud, capable of understanding text, images, audio, and video and generating both text and natural speech in real time. [1][2] It was released in September 2025 as part of the Qwen3 family, with a technical report posted to arXiv on 22 ..."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-best-val-step-750",
+  "slug": "brandonhowe-olmo7b-urban-seed2-20261012-cpt-best-val-step-750",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-best-val-step-750",
+  "created_at": "2026-10-12T23:10:53.000Z",
+  "updated_at": "2026-10-12T23:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "dataset:CompassioninMachineLearning/urban_12738_cleaned",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063592,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …Read more"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+      "snippet": "Dec 4, 2021 · I had the same problem but I used this link and clicked on Take the quiz. I did the quiz got the points and a green …"
+    },
+    {
+      "title": "Today's Quiz Answers : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/fp7wa8/todays_quiz_answers/",
+      "snippet": "Mar 26, 2020 · 24568 23457 13457 Don't forget to log into the Bing app, to collect the weekly set bonus (10-70pts daily) Lightspeed …"
+    },
+    {
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "snippet": "Is there some secret to getting the Bing Homepage quiz to work correctly? When I try to complete it on the mobile app it just loads …"
+    }
+  ]
+}

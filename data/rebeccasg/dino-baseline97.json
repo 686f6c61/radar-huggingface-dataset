@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rebeccasg/dino-baseline97",
+  "slug": "rebeccasg-dino-baseline97",
+  "author": "rebeccasg",
+  "url": "https://huggingface.co/rebeccasg/dino-baseline97",
+  "created_at": "2026-10-13T00:09:52.000Z",
+  "updated_at": "2026-10-13T00:09:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login step 1 - Online Banking - NatWest",
+      "url": "https://www.onlinebanking.natwest.com/",
+      "snippet": "NatWest Online Banking is currently unavailable. Please try again later or contact support for assistance."
+    },
+    {
+      "title": "NatWest Online Banking",
+      "url": "https://onlinebanking.natwest.com/.well-known/security.txt",
+      "snippet": "# The NatWest Group Vulnerability Disclosure Program # For submissions, policy, scope and hall of fame please visit NatWest …"
+    },
+    {
+      "title": "NatWest Online Banking",
+      "url": "https://www.onlinebanking.natwest.com/credit-card-payment/pay-credit-card-payment-details",
+      "snippet": "Something went wrong. It's most likely an issue with your browser. Please update your browser and try again."
+    },
+    {
+      "title": "NatWest Online Banking",
+      "url": "https://www.onlinebanking.natwest.com/default.aspx/login.aspx?refererIdent=133B861C6D44A8B396AF13E5F782AB9FBC2F8C5E",
+      "snippet": "The Internet browser you are using does not support frames and cannot be used with Online Banking. Use the link below to see the …"
+    }
+  ]
+}

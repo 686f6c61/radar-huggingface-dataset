@@ -5,7 +5,7 @@
   "author": "localdeel",
   "url": "https://huggingface.co/localdeel/ko-hand-ocr-vl",
   "created_at": "2026-10-07T23:13:45.000Z",
-  "updated_at": "2026-10-09T05:38:28.000Z",
+  "updated_at": "2026-10-12T14:43:20.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,12 +35,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 81,
+  "downloads_30d": 85,
   "trending_score": 0,
-  "parameters": 873438784,
-  "parameters_human": "873.4M",
-  "storage_bytes": 5253820160,
-  "storage_human": "5.3 GB",
+  "parameters": 680038976,
+  "parameters_human": "680.0M",
+  "storage_bytes": 6616438620,
+  "storage_human": "6.6 GB",
   "base_model": "Qwen/Qwen3.5-0.8B",
   "formats": [
     "safetensors"

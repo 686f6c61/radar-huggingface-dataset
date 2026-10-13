@@ -4,8 +4,8 @@
   "slug": "sportsgirl-pic06",
   "author": "sportsgirl",
   "url": "https://huggingface.co/sportsgirl/pic06",
-  "created_at": "2026-10-11T00:09:55.000Z",
-  "updated_at": "2026-10-11T00:13:05.000Z",
+  "created_at": "2026-10-12T23:16:14.000Z",
+  "updated_at": "2026-10-12T23:20:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -25,8 +25,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-12T03:11:35.661Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

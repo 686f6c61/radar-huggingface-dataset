@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "turtle89431/mmtest",
+  "slug": "turtle89431-mmtest",
+  "author": "turtle89431",
+  "url": "https://huggingface.co/turtle89431/mmtest",
+  "created_at": "2026-10-12T21:36:42.000Z",
+  "updated_at": "2026-10-12T21:41:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12538146736,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "turtle89431/Moxie · Hugging Face",
+      "url": "https://huggingface.co/turtle89431/Moxie",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "turtle89431/Moxie at main - Hugging Face",
+      "url": "https://huggingface.co/turtle89431/Moxie/tree/main",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "turtle89431 · GitHub",
+      "url": "https://github.com/turtle89431",
+      "snippet": "turtle89431 has 80 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "LLM Leaderboard & AI Model Benchmarks — October 2026",
+      "url": "https://benchlm.ai/",
+      "snippet": "Compare 891 AI models across 626 benchmarks, with 220 ranked scores, source evidence, API pricing, context windows, runtime, and head-to-head pages."
+    },
+    {
+      "title": "Run Local AI Models on Your PC | Check What Models You Can Run",
+      "url": "https://runlocalmodel.com/",
+      "snippet": "Find out which AI models your computer can run locally, and browse Agent Skills (SKILL.md) for Claude Code, Codex, and other AI agents. Check GPU VRAM compatibility for LLaMA, Gemma, Mistral, and more."
+    }
+  ]
+}

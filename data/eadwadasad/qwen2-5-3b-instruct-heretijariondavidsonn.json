@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "eadwadasad/Qwen2.5-3B-Instruct-heretijariondavidsonn",
+  "slug": "eadwadasad-qwen2-5-3b-instruct-heretijariondavidsonn",
+  "author": "eadwadasad",
+  "url": "https://huggingface.co/eadwadasad/Qwen2.5-3B-Instruct-heretijariondavidsonn",
+  "created_at": "2026-10-12T21:31:57.000Z",
+  "updated_at": "2026-10-12T21:32:27.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chat",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7428456,
+  "storage_human": "7 MB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 307 Following, 8,617 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "IG France | Investir et Trader en toute confiance, 17 000 marchés",
+      "url": "https://www.ig.com/fr?msockid=1e3cfd6cacbe6dbf2d2cea9cad466c22",
+      "snippet": "Investissez sur les actions, ETF et tradez sur les indices et les devises avec IG France, un leader depuis 51 ans. Rejoignez 820 000 …"
+    },
+    {
+      "title": "Login - IG UK",
+      "url": "https://www.ig.com/uk/login?msockid=1e3cfd6cacbe6dbf2d2cea9cad466c22",
+      "snippet": "IG is a trading name of IG Markets Ltd (a company registered in England and Wales under number 04008957), IG Index Ltd (a …"
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Instagram",
+      "snippet": "Instagram (IG) is a photo sharing app created in October of 2010 allowing users to share photos and videos. \"Instagram Stories is …"
+    }
+  ]
+}

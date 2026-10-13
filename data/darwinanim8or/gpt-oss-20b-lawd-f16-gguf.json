@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DarwinAnim8or/gpt-oss-20b-lawd-F16-GGUF",
+  "slug": "darwinanim8or-gpt-oss-20b-lawd-f16-gguf",
+  "author": "DarwinAnim8or",
+  "url": "https://huggingface.co/DarwinAnim8or/gpt-oss-20b-lawd-F16-GGUF",
+  "created_at": "2026-10-13T00:24:02.000Z",
+  "updated_at": "2026-10-13T00:24:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-lora",
+    "base_model:DarwinAnim8or/gpt-oss-20b-lawd",
+    "base_model:adapter:DarwinAnim8or/gpt-oss-20b-lawd",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31850496,
+  "parameters_human": "31.9M",
+  "storage_bytes": 63714720,
+  "storage_human": "64 MB",
+  "base_model": "DarwinAnim8or/gpt-oss-20b-lawd",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT MD - GitHub",
+      "url": "https://github.com/bramses/chatgpt-md",
+      "snippet": "ChatGPT MD Your AI writing companion, living inside Obsidian. Chat with AI directly in your notes. Reference your other notes with [ …"
+    },
+    {
+      "title": "chatgpt · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt",
+      "snippet": "2 days ago · ChatGPT is an AI assistant developed by OpenAI and released in November 2022. It uses generative AI models to …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "r/ChatGPT's FAQ Thread - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/107zfxk/rchatgpts_faq_thread/",
+      "snippet": "Jan 9, 2023 · Welcome to the ChatGPT FAQ thread! In this thread, we will answer some of the most commonly asked questions …"
+    },
+    {
+      "title": "Compilation of creative ways people are using ChatGPT",
+      "url": "https://www.reddit.com/r/ChatGPTPro/comments/1dfqzva/compilation_of_creative_ways_people_are_using/",
+      "snippet": "253 votes, 87 comments. I was poking around on reddit trying to find ways that people are using chatGPT creatively (not necessarily …"
+    }
+  ]
+}

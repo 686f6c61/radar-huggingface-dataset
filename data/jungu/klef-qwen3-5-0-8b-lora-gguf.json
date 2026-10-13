@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JUNGU/klef-qwen3.5-0.8b-lora-GGUF",
+  "slug": "jungu-klef-qwen3-5-0-8b-lora-gguf",
+  "author": "JUNGU",
+  "url": "https://huggingface.co/JUNGU/klef-qwen3.5-0.8b-lora-GGUF",
+  "created_at": "2026-10-12T22:13:02.000Z",
+  "updated_at": "2026-10-12T22:13:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lora",
+    "summarization",
+    "korean",
+    "text-generation",
+    "ko",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 541903840,
+  "storage_human": "542 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.5-0.8B - Qualcomm AI Hub",
+      "url": "https://aihub.qualcomm.com/models/qwen3_5_0_8b",
+      "snippet": "Qwen3.5-0.8B Ultra‑compact 0.8B parameter model from the Qwen3.5 series for edge deployment. Qwen3.5 is the latest multilingual language model series from Alibaba Cloud with improved reasoning and instruction‑following capabilities over Qwen3."
+    },
+    {
+      "title": "Qwen3.5 0.8b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/qwen3-5-0-8b.html",
+      "snippet": "Download Qwen3.5 0.8b GGUF model. 1.68 GB, 303,909 downloads, 199 likes."
+    },
+    {
+      "title": "Running AI on Your Laptop: A Step-by-Step Guide to Qwen3.5:0.8B - Medium",
+      "url": "https://medium.com/@muhibuddin12/running-ai-on-your-laptop-a-step-by-step-guide-to-qwen3-5-0-8b-88d0bb56e368",
+      "snippet": "The 0.8B model supports a decent context window (typically 32k for Qwen3.5 family), but memory fills up fast. Implement a sliding window in your code if processing long documents."
+    },
+    {
+      "title": "xvina/Qwen3.5-0.8B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/xvina/Qwen3.5-0.8B-GGUF",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Low-VRAM LoRA Training With GGUF Base Model - GitHub",
+      "url": "https://github.com/woct0rdho/transformers5-qwen3.5-recipe",
+      "snippet": "Qwen and DeepSeek low-VRAM LoRA training with GGUF base model, compatible with Transformers and PEFT - woct0rdho/transformers5-qwen3.5-recipe"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MulticulturalAlignment/scpo-reward-model-new-zealand",
+  "slug": "multiculturalalignment-scpo-reward-model-new-zealand",
+  "author": "MulticulturalAlignment",
+  "url": "https://huggingface.co/MulticulturalAlignment/scpo-reward-model-new-zealand",
+  "created_at": "2026-10-12T23:35:05.000Z",
+  "updated_at": "2026-10-13T00:19:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "reward-model",
+    "scpo",
+    "cultural-alignment",
+    "new-zealand",
+    "arxiv:2606.18606",
+    "en",
+    "dataset:HannahRoseKirk/prism-alignment",
+    "base_model:OpenAssistant/reward-model-deberta-v3-base",
+    "base_model:finetune:OpenAssistant/reward-model-deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184422913,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740180812,
+  "storage_human": "740 MB",
+  "base_model": "OpenAssistant/reward-model-deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steerable Cultural Preference Optimization of Reward Models",
+      "url": "https://arxiv.org/abs/2606.18606",
+      "snippet": "It is essential for large language model (LLM) technology to serve many different cultural sub-communities in a manner that is acceptable to each community. However, research on LLM alignment has so far predominantly focused on predicting a unified response preference of annotators from certain regions. This paper aims to advance the development of alignment models with a more global outlook ..."
+    },
+    {
+      "title": "Steerable Cultural Preference Optimization of Reward Models",
+      "url": "https://icml.cc/virtual/2026/75659",
+      "snippet": "We focus on the development of reward models for this purpose and present a novel reward model training algorithm (SCPO) that can incorporate diverse cultural preferences in a balanced manner."
+    },
+    {
+      "title": "GitHub - minsik-ai/Steerable-Cultural-Preference: Steerable Cultural ...",
+      "url": "https://github.com/minsik-ai/Steerable-Cultural-Preference",
+      "snippet": "Paper: Steerable Cultural Preference Optimization of Reward Models Accepted to Pluralistic Alignment @ ICML 2026. SCPO adapts a global reward model into culturally steerable reward models. Starting from an off-the-shelf RM trained on aggregate human preferences, it re-trains the model per country so that it better reflects the preferences of users residing in that country — without losing ..."
+    },
+    {
+      "title": "Steerable Cultural Preference Optimization",
+      "url": "https://www.emergentmind.com/papers/2606.18606",
+      "snippet": "This paper introduces SCPO, a scalable framework that realigns reward models by calibrating cultural preferences with filtering and weighted loss techniques."
+    },
+    {
+      "title": "Steerable Cultural Preference Optimization of Reward Models",
+      "url": "https://arxiv.org/pdf/2606.18606v1",
+      "snippet": "Abstract It is essential for large language model (LLM) technology to serve many different cultural sub-communities in a manner that is acceptable to each community. However, research on LLM alignment has so far predominantly focused on predicting a unified response preference of annotators from certain regions. This paper aims to advance the development of alignment models with a more global ..."
+    }
+  ]
+}

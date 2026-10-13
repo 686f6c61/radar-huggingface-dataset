@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/augmented-a3d88a1f6929eea4",
+  "slug": "gradients-io-tournaments-augmented-a3d88a1f6929eea4",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/augmented-a3d88a1f6929eea4",
+  "created_at": "2026-10-12T19:26:41.000Z",
+  "updated_at": "2026-10-12T19:27:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3426473600,
+  "parameters_human": "3.43B",
+  "storage_bytes": 6852974400,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Velma & Daphne Go Trick-Or-Treating | Scooby Doo parody",
+      "url": "https://www.newgrounds.com/portal/view/953844",
+      "snippet": "Oct 28, 2024 · Knowing you and the fact this is rated M; there was no way in hell this was going to end in them covered in cum. …"
+    },
+    {
+      "title": "Scooby Doo: A XXX Parody (Video 2011) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt1830795/fullcredits/",
+      "snippet": "Scooby Doo: A XXX Parody (Video 2011) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "Scooby Doo / Velma and Cthulhu | Rule 34 Comics",
+      "url": "http://r34comics.com/index.php/category/628-velma_and_cthulhu",
+      "snippet": "Scooby Doo / Velma and Cthulhu"
+    },
+    {
+      "title": "velamma-episode-velamma-siterip-eng directory listing",
+      "url": "https://archive.org/download/velamma-episode-velamma-siterip-eng/Velamma%20SiteRip%20%28Eng%29%20%289%20April%202016%29/Velamma/",
+      "snippet": "May 1, 2021 · velamma-episode-velamma-siterip-eng directory listing Files for Velamma"
+    },
+    {
+      "title": "MONSTER BANG - Velma and Daphne ( scooby-doo )",
+      "url": "https://www.youtube.com/watch?v=lgZIoK1MB5o",
+      "snippet": "In this Halloween Parody special, mystery detectives Velma and Daphne encounter nightmares of MONSTROUS proportions... I guess?"
+    }
+  ]
+}

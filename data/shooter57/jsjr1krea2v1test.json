@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Shooter57/jsjr1krea2v1test",
+  "slug": "shooter57-jsjr1krea2v1test",
+  "author": "Shooter57",
+  "url": "https://huggingface.co/Shooter57/jsjr1krea2v1test",
+  "created_at": "2026-10-12T20:03:37.000Z",
+  "updated_at": "2026-10-12T20:04:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228619504,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Africa Check | Fact Checker | Sorting fact from fiction",
+      "url": "https://africacheck.org/",
+      "snippet": "5 days ago · Africa Check sorts fact from fiction by identifying important public statements, interrogating the best available evidence …Read more"
+    },
+    {
+      "title": "#africancheck - TikTok",
+      "url": "https://www.tiktok.com/tag/africancheck",
+      "snippet": "african check | 67.3M views. Watch the latest videos about #africancheck on TikTok. Eyo! What does it mean to be in Africa? Show …"
+    },
+    {
+      "title": "Free Black Beautiful African Girl Photos - Pexels",
+      "url": "https://www.pexels.com/search/black%20beautiful%20african%20girl/",
+      "snippet": "Download and use 1,000,000+ Black Beautiful African Girl stock photos for free. Thousands of new images every day Completely …"
+    },
+    {
+      "title": "#africacheck - TikTok",
+      "url": "https://www.tiktok.com/tag/africacheck",
+      "snippet": "thatafricanwoman Let me take you on a journey to Africa. This is Zambia 🇿🇲. My home country. We are civilized …"
+    },
+    {
+      "title": "Free Beautiful African Girl Photos - Pexels",
+      "url": "https://www.pexels.com/search/beautiful%20african%20girl/",
+      "snippet": "Download and use 1,000,000+ Beautiful African Girl stock photos for free. Thousands of new images every day Completely Free to …"
+    }
+  ]
+}

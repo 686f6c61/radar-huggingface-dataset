@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-merged-epoch-2",
+  "slug": "brandonhowe-olmo7b-urban-seed2-20261012-cpt-merged-epoch-2",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Olmo7b-urban-seed2-20261012-CPT-merged-epoch-2",
+  "created_at": "2026-10-12T22:47:18.000Z",
+  "updated_at": "2026-10-12T22:47:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "dataset:CompassioninMachineLearning/urban_12738_cleaned",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063592,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2",
+      "url": "https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Olmo7b-compassion-seed2-20261001-CPT-merged-epoch-2",
+      "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-merged-epoch-2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final at main",
+      "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final/tree/main",
+      "snippet": "main Olmo7b-compassion-seed2-20261001-CPT-final 14.6 GB Ctrl+K Ctrl+K 1 contributor History:2 commits BrandonHowe Merged model at epoch 2.6666666666666665, step 1000 ec8adab verifiedabout 5 hours ago .gitattributes Safe 1.52 kBinitial commitabout 5 hours ago README.md 950 BytesMerged model at epoch 2.6666666666666665, step 1000about 5 hours ago config.json Safe 1.64 kBMerged model at epoch 2. ..."
+    },
+    {
+      "title": "Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2",
+      "url": "https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2/tree/main",
+      "snippet": "Instructions to use BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final · Discussions",
+      "url": "https://huggingface.co/BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final/discussions",
+      "snippet": "Instructions to use BrandonHowe/Olmo7b-compassion-seed2-20261001-CPT-final with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    }
+  ]
+}

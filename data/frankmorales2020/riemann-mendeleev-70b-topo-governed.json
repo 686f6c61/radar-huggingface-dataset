@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "frankmorales2020/riemann-mendeleev-70b-topo-governed",
+  "slug": "frankmorales2020-riemann-mendeleev-70b-topo-governed",
+  "author": "frankmorales2020",
+  "url": "https://huggingface.co/frankmorales2020/riemann-mendeleev-70b-topo-governed",
+  "created_at": "2026-10-12T23:56:53.000Z",
+  "updated_at": "2026-10-13T00:23:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "topological-continual-backpropagation",
+    "topological-anchoring",
+    "arithmetic-spectral-theory",
+    "riemann-hypothesis",
+    "molecular-invariants",
+    "pubchemsft",
+    "continual-learning",
+    "topological-governance",
+    "continual-backpropagation",
+    "stability-plasticity",
+    "open-science",
+    "base_model:frankmorales2020/llama-3.1-70b-topo-governed-cbp-rh",
+    "base_model:finetune:frankmorales2020/llama-3.1-70b-topo-governed-cbp-rh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4202695141,
+  "storage_human": "4.2 GB",
+  "base_model": "frankmorales2020/llama-3.1-70b-topo-governed-cbp-rh",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marie Antoinette - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marie_Antoinette",
+      "snippet": "Louis XVI was executed by guillotine on 21 January 1793 and Marie Antoinette moved to the Conciergerie. Her trial began on 14 …"
+    },
+    {
+      "title": "Trial and Execution of Marie Antoinette - World History Encyclopedia",
+      "url": "https://www.worldhistory.org/article/2099/trial-and-execution-of-marie-antoinette/",
+      "snippet": "Nov 7, 2022 · Accused of a series of crimes that included conspiring with foreign powers against the security of France, Marie …"
+    },
+    {
+      "title": "Exécution de Marie-Antoinette — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ex%C3%A9cution_de_Marie-Antoinette",
+      "snippet": "La condamnation à mort est prononcée par le Tribunal révolutionnaire le 16 octobre 1793, à quatre heures et demi du matin, après …"
+    },
+    {
+      "title": "16 Octobre 1793 : Marie-Antoinette est guillotinée : La fin tragique d ...",
+      "url": "https://savoirsetculture.fr/16-octobre-1793-marie-antoinette-est-guillotinee-la-fin-tragique-d-une.html",
+      "snippet": "3 days ago · L'exécution de Marie-Antoinette ne fut pas seulement la fin d'une vie royale, mais aussi un tournant symbolique dans la …"
+    },
+    {
+      "title": "The Death Of Marie Antoinette And Her Haunting Last Words",
+      "url": "https://allthatsinteresting.com/marie-antoinette-death",
+      "snippet": "Apr 14, 2022 · On October 16, 1793, the disgraced former French queen Marie Antoinette was beheaded by guillotine at the Place de …"
+    }
+  ]
+}

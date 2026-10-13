@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ngiftsun/indicconformer-hi-int8-sherpa",
+  "slug": "ngiftsun-indicconformer-hi-int8-sherpa",
+  "author": "ngiftsun",
+  "url": "https://huggingface.co/ngiftsun/indicconformer-hi-int8-sherpa",
+  "created_at": "2026-10-12T22:22:39.000Z",
+  "updated_at": "2026-10-12T22:22:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "automatic-speech-recognition",
+    "int8",
+    "ctc",
+    "conformer",
+    "hindi",
+    "android",
+    "on-device",
+    "hi",
+    "dataset:google/fleurs",
+    "base_model:ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
+    "base_model:quantized:ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140451556,
+  "storage_human": "140 MB",
+  "base_model": "ai4bharat/indicconformer_stt_hi_hybrid_ctc_rnnt_large",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hi/model.int8.onnx · parismitaglobalsolutions/indicconformer-sherpa ...",
+      "url": "https://huggingface.co/parismitaglobalsolutions/indicconformer-sherpa-onnx/blob/main/hi/model.int8.onnx",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "parismitaglobalsolutions/indicconformer-sherpa-onnx · Hugging Face",
+      "url": "https://huggingface.co/parismitaglobalsolutions/indicconformer-sherpa-onnx",
+      "snippet": "Quantized ONNX speech recognition models for fully offline, on-device use with sherpa-onnx — including on budget Android phones with no internet connection required at inference time. Ten Indian languages from AI4Bharat&#x27;s IndicConformer, English from sherpa-onnx&#x27;s own pretrained NeMo fast-conformer CTC model, and two Hinglish (Hindi-English code-switched) models built on fine-tuned Whisper ..."
+    },
+    {
+      "title": "GitHub - eshivansh/echo-models: On-device ASR model packs for Echo ...",
+      "url": "https://github.com/eshivansh/echo-models/tree/main",
+      "snippet": "On-device speech-recognition packs for Echo&#x27;s Android app, in the format its model catalog downloads and verifies (SHA-256). The files are attached to this repository&#x27;s releases. AI4Bharat IndicConformer (Conformer-Large, 120M parameters, hybrid CTC/RNN-T), RNN-T branch, exported to sherpa-onnx by ..."
+    },
+    {
+      "title": "parismitaglobalsolutions/indicconformer-sherpa-onnx · Hugging Face",
+      "url": "https://hf-p-cfw.fyan.top/parismitaglobalsolutions/indicconformer-sherpa-onnx",
+      "snippet": "English en/ holds sherpa-onnx&#x27;s own sherpa-onnx-nemo-fast-conformer-ctc-en-24500 model with int8 quantization applied, and its own tokens.txt."
+    },
+    {
+      "title": "indicconformer-sherpa-onnx: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-parismitaglobalsolutions-indicconformer-sherpa-onnx",
+      "snippet": "indicconformer-sherpa-onnx AI model directory entry."
+    }
+  ]
+}

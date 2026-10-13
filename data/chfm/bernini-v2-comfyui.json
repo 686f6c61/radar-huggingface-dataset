@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "chfm/Bernini-v2-ComfyUI",
+  "slug": "chfm-bernini-v2-comfyui",
+  "author": "chfm",
+  "url": "https://huggingface.co/chfm/Bernini-v2-ComfyUI",
+  "created_at": "2026-10-12T22:40:37.000Z",
+  "updated_at": "2026-10-12T22:40:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "bernini",
+    "text-to-video",
+    "image-to-video",
+    "video-to-video",
+    "image-to-image",
+    "comfyui",
+    "image-text-to-video",
+    "base_model:ByteDance/Bernini-Diffusers-v2",
+    "base_model:finetune:ByteDance/Bernini-Diffusers-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 227095885799,
+  "storage_human": "227.1 GB",
+  "base_model": "ByteDance/Bernini-Diffusers-v2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - T8mars/comfyui-bernini-v2-T8",
+      "url": "https://github.com/T8mars/comfyui-bernini-v2-T8/tree/main/",
+      "snippet": "Bernini v2 plans a scene and its motion with Qwen2.5-VL, then renders it with two Wan2.2 experts. This repository implements that pipeline with native ComfyUI model loading, memory management, conditioning and sampling APIs."
+    },
+    {
+      "title": "README.md · chfm/Bernini-R-GGUF-ComfyUI at main - Hugging Face",
+      "url": "https://huggingface.co/chfm/Bernini-R-GGUF-ComfyUI/blob/main/README.md",
+      "snippet": "🎉 News [2026-06-01] We open-sourced the inference code and model weights of the Bernini Renderer (Bernini-R). [2026-05-22] We released our paper Bernini: Latent Semantic Planning for Video Diffusion."
+    },
+    {
+      "title": "Bernini v2 Plan - ComfyUI Cloud",
+      "url": "https://comfy.icu/node/BerniniV2Plan",
+      "snippet": "This is a multi-billion-parameter Qwen running in your model management, so the first run loads a lot of weights. It offloads independently, but it&#x27;s not a free lunch - on a 24 GB card keep the 640-long-edge test workflows before climbing to 720p. Installing it The whole pack installs as one unit. In ComfyUI Manager search \"Bernini v2 (Native ..."
+    },
+    {
+      "title": "Bernini-V2-Comfy: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-t8star-bernini-v2-comfy",
+      "snippet": "Model card indexed from Hugging Face for image-text-to-video. Specs: built for vision and video, sourced from Hugging Face. Compare Bernini-V2-Comfy&#x27;s parameter"
+    },
+    {
+      "title": "Bernini — Model availability and ComfyUI integration",
+      "url": "https://happyin.space/projects/bernini/",
+      "snippet": "Development line: project:bernini · thread model-availability-and-comfyui-integration Last event: 2026-06-02 · 1 dated since 2026-06-02 · Researched: 2026-09-07 · confidence: medium What it is Bernini is a ByteDance video generation and editing framework for practitioners who need a local alternative to a renderer-only Wan workflow. Full Bernini / v2: Qwen2.5-VL 7B semantic planning plus a ..."
+    }
+  ]
+}

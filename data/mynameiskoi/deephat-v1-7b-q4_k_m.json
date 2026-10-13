@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MynameisKoi/DeepHat-V1-7B-Q4_K_M",
+  "slug": "mynameiskoi-deephat-v1-7b-q4_k_m",
+  "author": "MynameisKoi",
+  "url": "https://huggingface.co/MynameisKoi/DeepHat-V1-7B-Q4_K_M",
+  "created_at": "2026-10-12T21:18:34.000Z",
+  "updated_at": "2026-10-12T21:20:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:DeepHat/DeepHat-V1-7B",
+    "base_model:finetune:DeepHat/DeepHat-V1-7B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "DeepHat/DeepHat-V1-7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepHat-V1-7B - Hugging Face",
+      "url": "https://huggingface.co/DeepHat/DeepHat-V1-7B",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "DeepHat-V1-7B-Q4_K_M.gguf · GGUF-A-Lot/DeepHat-V1-7B-GGUF at main",
+      "url": "https://huggingface.co/GGUF-A-Lot/DeepHat-V1-7B-GGUF/blob/main/DeepHat-V1-7B-Q4_K_M.gguf",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Deep Hat - Defense in the AI Abyss",
+      "url": "https://www.deephat.ai/",
+      "snippet": "Deep Hat v2: Defense in the AI Abyss Deep Hat, formerly Whiterabbitneo, is Kindo&#x27;s uncensored cybersecurity model built for real offensive reasoning, long-context analysis, and secure execution."
+    },
+    {
+      "title": "Deephat V1 7b - GGUF Model - local-ai-zone.github.io",
+      "url": "https://local-ai-zone.github.io/models/deephat-v1-7b.html",
+      "snippet": "Download Deephat V1 7b GGUF model. 3.90 GB, 841 downloads, 15 likes."
+    },
+    {
+      "title": "DeepHat-V1-7B · Model · Inferix",
+      "url": "https://inferix.co/models/DeepHat/DeepHat-V1-7B",
+      "snippet": "DeepHat is a model series that can be used for offensive and defensive cybersecurity. Access at Deephat.ai or go to Kindo.ai to create agents. Community Join us on Discord Technical Overview DeepHat is a finetune of Qwen2.5 Coder 7B, and inherits the following features: Type: Causal Language Models Training Stage: Pretraining & Post training Architecture: transformers with RoPE, SwiGLU ..."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "dill-lab/GeoLadder-16M-8B-bs128-lr0.0087-wd0.1-decay0.01",
+  "slug": "dill-lab-geoladder-16m-8b-bs128-lr0-0087-wd0-1-decay0-01",
+  "author": "dill-lab",
+  "url": "https://huggingface.co/dill-lab/GeoLadder-16M-8B-bs128-lr0.0087-wd0.1-decay0.01",
+  "created_at": "2026-10-12T19:57:40.000Z",
+  "updated_at": "2026-10-12T23:53:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "hf_olmo",
+    "dataset:EleutherAI/the_pile_deduplicated",
+    "arxiv:2602.20433",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2762040748,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "ADMIN MOD • Bing News Quiz [5/3/2024] - A restaurant at DisneyWorld became the first theme-park eatery to win what coveted …Read more"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "Bing Homepage quiz task not triggering? : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/r8i6lc/bing_homepage_quiz_task_not_triggering/",
+      "snippet": "Dec 4, 2021 · I had the same problem but I used this link and clicked on Take the quiz. I did the quiz got the points and a green …"
+    },
+    {
+      "title": "Today's Quiz Answers : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/fp7wa8/todays_quiz_answers/",
+      "snippet": "Mar 26, 2020 · 24568 23457 13457 Don't forget to log into the Bing app, to collect the weekly set bonus (10-70pts daily) Lightspeed …"
+    },
+    {
+      "title": "Bing Homepage Quiz not working : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/1c3iarz/bing_homepage_quiz_not_working/",
+      "snippet": "Is there some secret to getting the Bing Homepage quiz to work correctly? When I try to complete it on the mobile app it just loads …"
+    }
+  ]
+}

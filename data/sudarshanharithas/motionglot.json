@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "sudarshanharithas/MotionGlot",
+  "slug": "sudarshanharithas-motionglot",
+  "author": "sudarshanharithas",
+  "url": "https://huggingface.co/sudarshanharithas/MotionGlot",
+  "created_at": "2026-10-12T18:50:09.000Z",
+  "updated_at": "2026-10-12T20:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "motion-generation",
+    "robotics",
+    "gpt2",
+    "vq-vae",
+    "human-motion",
+    "en",
+    "arxiv:2410.16623",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1063525307,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

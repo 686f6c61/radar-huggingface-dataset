@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alandotcom/kol-cleanup-360m-coreml",
+  "slug": "alandotcom-kol-cleanup-360m-coreml",
+  "author": "alandotcom",
+  "url": "https://huggingface.co/alandotcom/kol-cleanup-360m-coreml",
+  "created_at": "2026-10-13T00:26:53.000Z",
+  "updated_at": "2026-10-13T00:28:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "llama",
+    "apple-silicon",
+    "dictation",
+    "speech-recognition-post-processing",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:juanquivilla/sotto-transcript-cleanup",
+    "dataset:shantanugoel/aawaaz-transcript-cleanup-dataset",
+    "dataset:MagicNoThief/handy-dictation-editing",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 724806952,
+  "storage_human": "725 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - alandotcom/Kol",
+      "url": "https://github.com/alandotcom/Kol",
+      "snippet": "AI post-processing — optional LLM cleanup via Groq, Cerebras, or any OpenAI-compatible API (~80ms latency): Fixes punctuation, removes filler words, corrects ASR errors Formats lists as bullet points in docs, keeps casual tone in messaging Adapts to the target app (Terminal, Slack, Notes, etc.) Composable prompt architecture: core rules ..."
+    },
+    {
+      "title": "Kol/README.md at main · alandotcom/Kol · GitHub",
+      "url": "https://github.com/alandotcom/Kol/blob/main/README.md",
+      "snippet": "AI post-processing — optional LLM cleanup via Groq, Cerebras, or any OpenAI-compatible API (~80ms latency): Fixes punctuation, removes filler words, corrects ASR errors Formats lists as bullet points in docs, keeps casual tone in messaging Adapts to the target app (Terminal, Slack, Notes, etc.) Composable prompt architecture: core rules ..."
+    },
+    {
+      "title": "AI Companies Race To Clean Up AI Slop Because Model ... - Forbes",
+      "url": "https://www.forbes.com/sites/joetoscano1/2026/02/02/ai-companies-race-to-clean-up-ai-slop-because-model-performance-depends-on-it/",
+      "snippet": "Tech giants race to eliminate AI slop from the internet. Model collapse threatens billions in investments, driving platforms to reward authentic human expertise."
+    },
+    {
+      "title": "alandotcom (Alan) - Hugging Face",
+      "url": "https://huggingface.co/alandotcom",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 4 days ago ... published a model 4 days ago"
+    },
+    {
+      "title": "AI Model Collapse Explained: Synthetic Data Risks in 2026",
+      "url": "https://aibuzz.blog/ai-model-collapse-data-poisoning/",
+      "snippet": "☣️ ..."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "AyoubChLin/mBERT-CompanyDocs-v2",
+  "slug": "ayoubchlin-mbert-companydocs-v2",
+  "author": "AyoubChLin",
+  "url": "https://huggingface.co/AyoubChLin/mBERT-CompanyDocs-v2",
+  "created_at": "2026-10-09T13:57:58.000Z",
+  "updated_at": "2026-10-12T19:58:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "document-classification",
+    "document-ai",
+    "business-documents",
+    "companydocs",
+    "mbert",
+    "finance",
+    "logistics",
+    "en",
+    "fr",
+    "dataset:AyoubChLin/Company-document-dataset-v2",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 177863437,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711482533,
+  "storage_human": "711 MB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Document Type Classification",
+      "dataset": "CompanyDocuments v2",
+      "metric": "Accuracy",
+      "value": 0.9999574187229875
+    },
+    {
+      "task": "Document Type Classification",
+      "dataset": "CompanyDocuments v2",
+      "metric": "Macro F1",
+      "value": 0.9950944756168567
+    },
+    {
+      "task": "Document Type Classification",
+      "dataset": "CompanyDocuments v2",
+      "metric": "Weighted F1",
+      "value": 0.9999569753784603
+    }
+  ],
+  "sources": [
+    {
+      "title": "Netflix France - Regardez des séries en ligne, Regardez des films en …",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Netflix est un service de streaming qui propose une vaste sélection de séries, films, animes, documentaires et autres programmes …"
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Netflix",
+      "snippet": "Netflix ... Netflix is an American subscription video on-demand over-the-top streaming television service. The service primarily …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Driw0x/minimind-rocm-pytorch",
+  "slug": "driw0x-minimind-rocm-pytorch",
+  "author": "Driw0x",
+  "url": "https://huggingface.co/Driw0x/minimind-rocm-pytorch",
+  "created_at": "2026-10-12T22:26:29.000Z",
+  "updated_at": "2026-10-12T22:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 550737628,
+  "storage_human": "551 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - yukaichao/minimind_AMD_ROCM: 「大模型」2小时完全从0训练26M的小参数GPT! ...",
+      "url": "https://github.com/yukaichao/minimind_AMD_ROCM",
+      "snippet": "MiniMind 同时拓展了视觉多模态的VLM: MiniMind-V。 项目所有核心算法代码均从0使用PyTorch原生重构! 不依赖第三方库提供的抽象接口。 这不仅是大语言模型的全阶段开源复现，也是一个入门LLM的教程。"
+    },
+    {
+      "title": "MiniMind - Train LLMs from Scratch - jingyaogong.github.io",
+      "url": "https://jingyaogong.github.io/minimind/",
+      "snippet": "💡 Why MiniMind? Train from zero, not just finetune Pure PyTorch—no magic, no black boxes Understand by building, not by reading docs Works on your laptop—no cloud GPUs needed RLAIF algorithms: PPO, GRPO, CISPO + Agentic RL Tool Calling & Adaptive Thinking built-in OpenAI API compatible—plug into any UI Vision support via MiniMind-V 💭 \"Building a Lego plane beats flying first class.\""
+    },
+    {
+      "title": "AMD ROCm AI ecosystem — AMD ROCm AI Ecosystem",
+      "url": "https://rocm.docs.amd.com/projects/ai-ecosystem/en/latest/",
+      "snippet": "AMD ROCm AI ecosystem # ROCm is AMD&#x27;s open software platform for GPU computing. This documentation covers the AI ecosystem built on ROCm — from framework setup and training to inference serving and performance optimization."
+    },
+    {
+      "title": "ROCm™ AI Developer Hub - AMD",
+      "url": "https://www.amd.com/en/developer/resources/rocm-hub/ai-cloud-development.html",
+      "snippet": "ROCm™ AI Developer Hub: Cloud and Data Center AI Optimize Large-Scale Training and Inference on AMD Instinct™ GPUs Test drive AMD ROCm™ for open-source GPU programming with PyTorch and other leading frameworks. Find sample notebooks, tutorials, open-source projects, documentation, and more."
+    },
+    {
+      "title": "PyTorch on ROCm installation — ROCm installation (Linux) - AMD",
+      "url": "https://rocm.docs.amd.com/projects/install-on-linux/en/develop/install/3rd-party/pytorch-install.html",
+      "snippet": "PyTorch is an open-source tensor library designed for deep learning. PyTorch on ROCm provides mixed-precision and large-scale training using AMD MIOpen and RCCL libraries. This topic covers setup instructions and the necessary files to build, test, and run PyTorch with ROCm support in a Docker environment."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "IanCauh0728/albef-baseline",
+  "slug": "iancauh0728-albef-baseline",
+  "author": "IanCauh0728",
+  "url": "https://huggingface.co/IanCauh0728/albef-baseline",
+  "created_at": "2026-10-13T00:10:52.000Z",
+  "updated_at": "2026-10-13T00:10:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "johnscottgit/albef-baseline · Hugging Face",
+      "url": "https://huggingface.co/johnscottgit/albef-baseline",
+      "snippet": "johnscottgit / albef-baseline like 0 Safetensors PyTorch albef matching License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new Albef for Matching Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "albert/albert-base-v2 · Hugging Face",
+      "url": "https://huggingface.co/albert/albert-base-v2",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "albert-albert-base-v2 | Model Catalog | Microsoft Foundry",
+      "url": "https://ai.azure.com/catalog/models/albert-albert-base-v2",
+      "snippet": "albert/albert-base-v2 powered by Hugging Face Inference Toolkit. Sign in to Microsoft Foundry to deploy this model."
+    },
+    {
+      "title": "GitHub - yefengtian/ALBEF",
+      "url": "https://github.com/yefengtian/ALBEF",
+      "snippet": "Announcement: ALBEF is now officially integrated into LAVIS - a one-stop library for language-and-vision research and applications! This is the official PyTorch implementation of the ALBEF paper [Blog]."
+    },
+    {
+      "title": "salesforce/albef | Readme and Docs - Replicate",
+      "url": "https://replicate.com/salesforce/albef/readme",
+      "snippet": "This is the official PyTorch implementation of the ALBEF paper [Blog]. This repository supports pre-training on custom datasets, as well as finetuning on VQA, SNLI-VE, NLVR2, Image-Text Retrieval on MSCOCO and Flickr30k, and visual grounding on RefCOCO+."
+    }
+  ]
+}

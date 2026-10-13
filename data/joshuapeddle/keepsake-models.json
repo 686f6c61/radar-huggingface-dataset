@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JoshuaPeddle/keepsake-models",
+  "slug": "joshuapeddle-keepsake-models",
+  "author": "JoshuaPeddle",
+  "url": "https://huggingface.co/JoshuaPeddle/keepsake-models",
+  "created_at": "2026-10-12T21:34:24.000Z",
+  "updated_at": "2026-10-13T00:34:10.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "on-device",
+    "image-restoration",
+    "inpainting",
+    "colorization",
+    "super-resolution",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 908114173,
+  "storage_human": "908 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JoshuaPeddle (Joshua Peddle) - Hugging Face",
+      "url": "https://huggingface.co/JoshuaPeddle",
+      "snippet": "User profile of Joshua Peddle on Hugging Face"
+    },
+    {
+      "title": "Keepsake — Save points for projects you build with AI",
+      "url": "https://keepsake.sh/",
+      "snippet": "Keepsake keeps a copy of your whole project every time it&#x27;s working. If the AI takes a wrong turn, you go back to the last good one instead of digging through version folders."
+    },
+    {
+      "title": "AI Model Release Timeline — What Shipped When | Tech Times",
+      "url": "https://www.techtimes.com/ai-timeline",
+      "snippet": "A running timeline of AI model releases — the latest models from OpenAI, Anthropic, Google, DeepSeek, Alibaba and more, newest first. Updated hourly."
+    },
+    {
+      "title": "GitHub - keepsake-hq/keepsake: Sovereign, local-first, zero-knowledge ...",
+      "url": "https://github.com/keepsake-hq/keepsake/",
+      "snippet": "Sovereign, local-first, zero-knowledge long-term memory for LLMs and AI agents — yours like a crypto wallet. Apache-2.0, no telemetry, runs offline. - keepsake-hq/keepsake"
+    },
+    {
+      "title": "JoshuaPeddle/PicassoGenerator · Hugging Face",
+      "url": "https://huggingface.co/JoshuaPeddle/PicassoGenerator",
+      "snippet": "README.md exists but content is empty. Use the Edit model card button to edit it."
+    }
+  ]
+}

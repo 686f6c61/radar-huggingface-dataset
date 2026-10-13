@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lichtj/Jaena",
+  "slug": "lichtj-jaena",
+  "author": "lichtj",
+  "url": "https://huggingface.co/lichtj/Jaena",
+  "created_at": "2026-10-12T22:41:03.000Z",
+  "updated_at": "2026-10-12T22:46:58.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229688636,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Irisbus Agora — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Irisbus_Agora",
+      "snippet": "Il succède directement au R312, et indirectement au PR 112 et PR 118. L'Agora a été produit et commercialisé par Renault puis par …Read more"
+    },
+    {
+      "title": "Liste des Irisbus Agora Line RATP - TC Infos",
+      "url": "https://tc-infos.fr/reseau/45/modele/Irisbus+Agora+Line",
+      "snippet": "Ce tableau dresse la liste des Irisbus Agora Line ayant circulé sur le réseau RATP. Certaines informations peuvent manquer, être …"
+    },
+    {
+      "title": "Liste des Irisbus Agora Line RATP - TC Infos",
+      "url": "https://tc-infos.fr/exploitant/103/modele/Irisbus+Agora+Line/page3",
+      "snippet": "Ce tableau dresse la liste des Irisbus Agora Line ayant circulé chez l'exploitant RATP. Certaines informations peuvent manquer, être …"
+    },
+    {
+      "title": "Irisbus Renault Agora Line RATP - OMSI WebDisk & Community",
+      "url": "https://reboot.omsi-webdisk.de/file/8080-irisbus-renault-agora-line-ratp/",
+      "snippet": "Mar 8, 2022 · After the Scania CNG mod, I decide to present you my mod a Renault Agora Line Euro3 Voith and ZF. As you can tell, …"
+    },
+    {
+      "title": "[Lignes-Transports] Ancien matériel bus RATP",
+      "url": "https://www.lignes-transports.site/articles/article.php?id=4",
+      "snippet": "Les véhicules datant d'avant 2002 ont été construits par Renault, tandis que les suivants ont été construits pas Irisbus. L'Agora …"
+    }
+  ]
+}

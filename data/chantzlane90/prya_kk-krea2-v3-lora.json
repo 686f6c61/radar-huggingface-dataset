@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chantzlane90/prya_kk-krea2-v3-lora",
+  "slug": "chantzlane90-prya_kk-krea2-v3-lora",
+  "author": "chantzlane90",
+  "url": "https://huggingface.co/chantzlane90/prya_kk-krea2-v3-lora",
+  "created_at": "2026-10-12T21:33:15.000Z",
+  "updated_at": "2026-10-12T21:33:21.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "fictional-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234676912,
+  "storage_human": "235 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prise de sang : pour quelles analyses faut-il être à jeun ?",
+      "url": "https://www.doctissimo.fr/sante/examens-medicaux-et-operations/analyses-medicales/hematologie/prise-de-sang-pour-quelles-analyses-faut-il-etre-a-jeun/3693f3_ar.html",
+      "snippet": "Jun 18, 2026 · Si votre médecin vous a prescrit une analyse sanguine pour laquelle vous devez être à jeun, vous ne devez donc pas …"
+    },
+    {
+      "title": "À jeun ou pas : la liste des analyses concernées - Mon Bilan Sanguin",
+      "url": "https://monbilansanguin.fr/guides/a-jeun-liste-analyses/",
+      "snippet": "Jun 20, 2026 · Peut-on boire de l'eau avant une prise de sang à jeun ? Oui, l'eau plate est généralement autorisée, même quand le …"
+    },
+    {
+      "title": "Bilan sanguin complet : composition et interprétation",
+      "url": "https://biolaris.fr/blog/bilan-sanguin-complet/",
+      "snippet": "Jul 14, 2026 · Oui, il faut généralement être à jeun pour un bilan sanguin complet. Le jeûne signifie ne rien manger ni boire (sauf de …"
+    },
+    {
+      "title": "Analyses médicales courantes : faut-il être à jeun ?",
+      "url": "https://www.laboratoirescaen.fr/analyses-medicales-courantes-faut-il-etre-a-jeun/",
+      "snippet": "Être à jeun avant une prise de sang signifie ne pas avoir mangé ni bu autre chose que de l’eau pendant 8 à 12 heures. Cette …"
+    },
+    {
+      "title": "Prises de sang à faire a jeun : liste, durée, 12h, peut-on boire de l'eau ?",
+      "url": "https://sante.journaldesfemmes.fr/fiches-anatomie-et-examens/2658387-etre-a-jeun-pour-une-prise-de-sang-quand-combien-de-temps-avant/",
+      "snippet": "May 3, 2026 · \"Même si cela peut varier en fonction des analyses, il est préférable d'être à jeun de 12 heures afin d'augmenter la …"
+    }
+  ]
+}

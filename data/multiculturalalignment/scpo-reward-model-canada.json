@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MulticulturalAlignment/scpo-reward-model-canada",
+  "slug": "multiculturalalignment-scpo-reward-model-canada",
+  "author": "MulticulturalAlignment",
+  "url": "https://huggingface.co/MulticulturalAlignment/scpo-reward-model-canada",
+  "created_at": "2026-10-12T23:33:53.000Z",
+  "updated_at": "2026-10-13T00:19:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "reward-model",
+    "scpo",
+    "cultural-alignment",
+    "canada",
+    "arxiv:2606.18606",
+    "en",
+    "dataset:HannahRoseKirk/prism-alignment",
+    "base_model:OpenAssistant/reward-model-deberta-v3-base",
+    "base_model:finetune:OpenAssistant/reward-model-deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184422913,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740180812,
+  "storage_human": "740 MB",
+  "base_model": "OpenAssistant/reward-model-deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steerable Cultural Preference Optimization of Reward Models",
+      "url": "https://arxiv.org/abs/2606.18606",
+      "snippet": "We focus on the development of reward models for this purpose and present a novel reward model training algorithm (SCPO) that can incorporate diverse cultural preferences in a balanced manner."
+    },
+    {
+      "title": "GitHub - minsik-ai/Steerable-Cultural-Preference: Steerable Cultural ...",
+      "url": "https://github.com/minsik-ai/Steerable-Cultural-Preference",
+      "snippet": "Paper: Steerable Cultural Preference Optimization of Reward Models Accepted to Pluralistic Alignment @ ICML 2026. SCPO adapts a global reward model into culturally steerable reward models. Starting from an off-the-shelf RM trained on aggregate human preferences, it re-trains the model per country so that it better reflects the preferences of users residing in that country — without losing ..."
+    },
+    {
+      "title": "Steerable Cultural Preference Optimization of Reward Models",
+      "url": "https://embedding.report/story/steerable-cultural-preference-optimization-of-reward-models/",
+      "snippet": "A new training algorithm called Steerable Cultural Preference Optimization (SCPO) aims to make large language models more responsive to diverse cultural subcommunities, according to research published on arXiv [1]. The method separately evaluates community preferences to reduce bias while improving minority-group model performance [1]."
+    },
+    {
+      "title": "Multi-Cultural Preference Optimization of Reward Models",
+      "url": "https://openreview.net/forum?id=Gsjk6RX4SK",
+      "snippet": "It is essential for large language model (LLM) technology to serve many different cultural sub-communities in a manner that is acceptable to each community. However, research on LLM alignment has so far predominantly focused on predicting a unified response preference of annotators from certain regions. This paper aims to advance the development of alignment models with a more global outlook ..."
+    },
+    {
+      "title": "Steerable Cultural Preference Optimization of Reward Models",
+      "url": "https://ai-deep-signal.com/article/6b66b771-9426-4cc9-8d02-2d5dd67e8424",
+      "snippet": "Quick Answer The paper introduces a novel reward model training algorithm, SCPO, which enhances large language models&#x27; alignment with diverse cultural preferences, achieving up to 7-point performance improvements on minority models across two datasets, while being 280% more data-efficient than traditional fine-tuning methods."
+    }
+  ]
+}

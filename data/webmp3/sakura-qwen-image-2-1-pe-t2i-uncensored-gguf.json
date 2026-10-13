@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "webmp3/Sakura-Qwen-Image-2.1-PE-T2I-Uncensored-GGUF",
+  "slug": "webmp3-sakura-qwen-image-2-1-pe-t2i-uncensored-gguf",
+  "author": "webmp3",
+  "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-PE-T2I-Uncensored-GGUF",
+  "created_at": "2026-10-12T01:24:01.000Z",
+  "updated_at": "2026-10-12T21:46:30.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "sakura",
+    "sakura-image",
+    "llama.cpp",
+    "qwen-image",
+    "prompt-rewriting",
+    "text-to-image",
+    "uncensored",
+    "abliterated",
+    "not-for-all-audiences",
+    "text-generation",
+    "base_model:Qwen/Qwen-Image-2.1-PE-T2I",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-PE-T2I",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 30313220448,
+  "storage_human": "30.3 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-PE-T2I",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF · Hugging Face",
+      "url": "https://huggingface.co/webmp3/Sakura-Qwen-Image-2.1-Turbo-GGUF",
+      "snippet": "Model card FilesFiles and versions xet Community Copy to bucket new Sakura — Qwen-Image-2.1-Turbo (GGUF) What you need to run it Files Install in ComfyUI Run with stable-diffusion.cpp Image-model quality (what we measured) What we changed (Qwen RESEARCH LICENSE, section 3b) License and use Credits Sakura — Qwen-Image-2.1-Turbo (GGUF ..."
+    },
+    {
+      "title": "Qwen-Image-2.1-PE-T2I - Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-T2I",
+      "snippet": "Text-to-image prompt rewriting model for Qwen-Image-2.1. A fine-tuned Qwen3.5-VL 9B that turns a brief image request in any language into a detailed English prompt plus a recommended aspect ratio ..."
+    },
+    {
+      "title": "Sakura Qwen Image 2.1 Turbo Gguf - AI Model Insights & Benchmarks",
+      "url": "https://free2aitools.com/model/webmp3/sakura-qwen-image-2.1-turbo-gguf",
+      "snippet": "Registry entry for model Sakura Qwen Image 2.1 Turbo Gguf; source metadata pending."
+    },
+    {
+      "title": "Qwen-Image-2.1 · Models",
+      "url": "https://www.modelscope.cn/models/Qwen/Qwen-Image-2.1",
+      "snippet": "🤖 ModelScope | 🤗 HuggingFace | 📑 Blog | 🖥️ Demo | 🫨 Discord | 💬 WeChat Introduction We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and ..."
+    },
+    {
+      "title": "GitHub - QwenLM/Qwen-Image-2.1: Qwen&#x27;s most powerful open-source image ...",
+      "url": "https://github.com/QwenLM/Qwen-Image-2.1",
+      "snippet": "We are excited to open-source Qwen-Image-2.1, a unified text-to-image generation and image editing model in the Qwen family. With just 7B parameters in its visual generation component (32 Single-Stream DiT layers), Qwen-Image-2.1 balances generation quality, inference efficiency, and versatility. Four key improvements define this release: Compact and Efficient — A lightweight architecture ..."
+    }
+  ]
+}

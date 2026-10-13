@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mohammedaly22/Cairo-TTS",
+  "slug": "mohammedaly22-cairo-tts",
+  "author": "mohammedaly22",
+  "url": "https://huggingface.co/mohammedaly22/Cairo-TTS",
+  "created_at": "2026-10-12T20:51:01.000Z",
+  "updated_at": "2026-10-13T01:50:05.000Z",
+  "license": "pocket-tts-weights",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "cairo-tts",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "cairo-tts",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "egyptian-arabic",
+    "arabic",
+    "code-switching",
+    "voice-cloning",
+    "streaming",
+    "pocket-tts",
+    "ar",
+    "en",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 105487042,
+  "parameters_human": "105.5M",
+  "storage_bytes": 408153771,
+  "storage_human": "408 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MohammedAly22/Cairo-TTS",
+      "url": "https://github.com/MohammedAly22/Cairo-TTS",
+      "snippet": "Contribute to MohammedAly22/Cairo-TTS development by creating an account on GitHub."
+    },
+    {
+      "title": "Cairo-TTS - a Hugging Face Space by mohammedaly22",
+      "url": "https://huggingface.co/spaces/mohammedaly22/Cairo-TTS",
+      "snippet": "موديل كلام مصري مفتوح · Egyptian Arabic TTS اكتب بالمصري… واسمعه في لحظة. كايرو بيقرا العامية المصرية وبيدخّل كلام إنجليزي في النص عادي، بيستنسخ أي صوت من ٥ ثواني بس، وبيشتغل على الـ CPU أو الـ GPU وبيبث الصوت وهو بيتولّد."
+    },
+    {
+      "title": "MohammedAly22 (Mohammed Aly) · GitHub",
+      "url": "https://github.com/MohammedAly22",
+      "snippet": "Proven track record in delivering AI systems from prototype to real-world deployment using modern frameworks like HuggingFace, PyTorch, and Azure ML. My GitHub profile is a hub for my projects, ranging from experimental NLP models to machine learning-powered art."
+    },
+    {
+      "title": "mohammedaly22 (Mohammed Aly) - Hugging Face",
+      "url": "https://huggingface.co/mohammedaly22",
+      "snippet": "Text-to-Speech • 0.6B • Updated Jun 30 • 1.39k • 15 Automatic Speech Recognition • Updated Aug 18 • 49 • 2 Egyptian Arabic & code-switching text-to-speech Levantine Arabic Text-to-Speech (TTS) Levantine Zero-Shot TTS Levantine Arabic ⇄ English code-switching TTS View 3 collections"
+    },
+    {
+      "title": "mohammedaly22/leva-tts downloads: daily history and stats · Model Pulse",
+      "url": "https://modelpulse.ifsp.dev/model/mohammedaly22/leva-tts",
+      "snippet": "mohammedaly22/leva-tts is a text to speech model by mohammedaly22. In the last 30 days it was downloaded 100 times (19 in the last 7 days), and 478 times in total."
+    }
+  ]
+}

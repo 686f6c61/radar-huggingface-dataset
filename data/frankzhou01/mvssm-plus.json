@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FrankZhou01/MVSSM-Plus",
+  "slug": "frankzhou01-mvssm-plus",
+  "author": "FrankZhou01",
+  "url": "https://huggingface.co/FrankZhou01/MVSSM-Plus",
+  "created_at": "2026-10-12T14:29:55.000Z",
+  "updated_at": "2026-10-13T00:36:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12847621315,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - Frank-Zhou-01/MVSSM-Plus: A Visual State Space Model with ...",
+      "url": "https://github.com/Frank-Zhou-01/MVSSM-Plus",
+      "snippet": "A Visual State Space Model with Comprehensive Scanning for Video Deblurring - Frank-Zhou-01/MVSSM-Plus"
+    },
+    {
+      "title": "FrankZhou01 (Chen Zhou) - Hugging Face",
+      "url": "https://huggingface.co/FrankZhou01",
+      "snippet": "AI & CV Recent Activity updated a modelabout 3 hours ago FrankZhou01/MVSSM-Plus published a modelabout 5 hours ago FrankZhou01/MVSSM-Plus updated a modelabout 14 ..."
+    },
+    {
+      "title": "MVSSM-Plus/README.md at main · Frank-Zhou-01/MVSSM-Plus · GitHub",
+      "url": "https://github.com/Frank-Zhou-01/MVSSM-Plus/blob/main/README.md",
+      "snippet": "A Visual State Space Model with Comprehensive Scanning for Video Deblurring - Frank-Zhou-01/MVSSM-Plus"
+    },
+    {
+      "title": "CVPR 2026 Open Access Repository",
+      "url": "https://openaccess.thecvf.com/content/CVPR2026F/html/Zhou_MVSSM_Motion-aware_Visual_State_Space_Model_for_Efficient_Video_Deblurring_CVPRF_2026_paper.html",
+      "snippet": "To address these issues, this paper proposes a Motion-aware Visual State Space Model (MVSSM). Unlike conventional methods, MVSSM dynamically scans along the motion trajectories between video frames, enabling more efficient capture of spatial features while significantly reducing computational cost."
+    },
+    {
+      "title": "CVPR Poster MVSSM: Motion-aware Visual State Space Model for Efficient ...",
+      "url": "https://cvpr.thecvf.com/virtual/2026/poster/40982",
+      "snippet": "MVSSM: Motion-aware Visual State Space Model for Efficient Video Deblurring Chen Zhou, Tao Wu, Wei Liu, Xi Wu, Ying Fu Keywords: Low-level Vision"
+    }
+  ]
+}

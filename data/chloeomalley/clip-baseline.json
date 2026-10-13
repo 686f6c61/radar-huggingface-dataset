@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChloeOmalley/clip-baseline",
+  "slug": "chloeomalley-clip-baseline",
+  "author": "ChloeOmalley",
+  "url": "https://huggingface.co/ChloeOmalley/clip-baseline",
+  "created_at": "2026-10-13T00:05:49.000Z",
+  "updated_at": "2026-10-13T00:05:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChloeOmalley (Chloe Omalley) - Hugging Face",
+      "url": "https://huggingface.co/ChloeOmalley/models",
+      "snippet": "User profile of Chloe Omalley on Hugging Face"
+    },
+    {
+      "title": "ComCLIP/ComVG/clip_baseline.py at main · UCSB-AI/ComCLIP",
+      "url": "https://github.com/UCSB-AI/ComCLIP/blob/main/ComVG/clip_baseline.py",
+      "snippet": "main ComCLIP / ComVG clip_baseline.py Code Blame 44 lines (40 loc) · 1.68 KB 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 ..."
+    },
+    {
+      "title": "ChloeOmalley/generation-study · Hugging Face",
+      "url": "https://huggingface.co/ChloeOmalley/generation-study",
+      "snippet": "ChloeOmalley / generation-study Like 1 Safetensors PyTorch vit generation License:bsd-3-clause Model card FilesFiles and versions xet Community Copy to bucket new ViT for Generation Overview Repository status Architecture Default experiment recipe Quick check Evaluation guidance Limitations Files License"
+    },
+    {
+      "title": "AI Video and Image Models: Veo, Kling, Seedance and more | Everygen",
+      "url": "https://everygen.ai/models",
+      "snippet": "Every AI video and image model on Everygen in one place: Veo, Kling, Seedance, Gemini Omni, MiniMax, Grok Imagine, Nano Banana and GPT Image, compared by resolution, length and credits."
+    },
+    {
+      "title": "GitHub - openai/CLIP: CLIP (Contrastive Language-Image Pretraining ...",
+      "url": "https://github.com/openai/CLIP",
+      "snippet": "CLIP [Blog] [Paper] [Model Card] [Colab] CLIP (Contrastive Language-Image Pre-Training) is a neural network trained on a variety of (image, text) pairs. It can be instructed in natural language to predict the most relevant text snippet, given an image, without directly optimizing for the task, similarly to the zero-shot capabilities of GPT-2 and 3."
+    }
+  ]
+}

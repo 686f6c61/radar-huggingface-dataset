@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "TonyV42/lora_archive",
+  "slug": "tonyv42-lora_archive",
+  "author": "TonyV42",
+  "url": "https://huggingface.co/TonyV42/lora_archive",
+  "created_at": "2025-12-27T12:40:00.000Z",
+  "updated_at": "2026-10-12T19:54:58.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-image",
+    "en",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19777328548,
+  "storage_human": "19.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TonyV42/lora_archive · Hugging Face",
+      "url": "https://huggingface.co/TonyV42/lora_archive",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TonyV42 (Tony Van) - Hugging Face",
+      "url": "https://huggingface.co/TonyV42",
+      "snippet": "AI & ML interests ... Recent Activity updated a model 6 days ago ... updated a model 6 days ago"
+    },
+    {
+      "title": "CivArchive (CivitAI Archive) - AI Model Archive",
+      "url": "https://civitaiarchive.com/",
+      "snippet": "Browse and discover AI models from CivitAI, TensorArt, and SeaArt. Community-driven archive preserving access to AI resources."
+    },
+    {
+      "title": "Top safe LORA models across all platforms - CivArchive",
+      "url": "https://civarchive.com/search?type=LORA",
+      "snippet": "Community-driven archive of AI models from CivitAI - Download deleted LoRA, Checkpoint, VAE, and other AI models for free."
+    },
+    {
+      "title": "Instant LoRA Original Revamp (Archived) for Other | CivArchive",
+      "url": "https://civarchive.com/models/376716?modelVersionId=428336",
+      "snippet": "Instant LoRA Legacy Lore (for the Original Revamp Version): Original Concept by AloeVera_Purple (No longer on CivitAI, good luck wherever the winds of change may take you!) In the words of its original creator: \"This workflow will take your input images, distribute them into the two different IPAdapter models, [Edit: Only one for Flux.1 because there is no Face IPAdapter yet that works on Flux ..."
+    }
+  ]
+}

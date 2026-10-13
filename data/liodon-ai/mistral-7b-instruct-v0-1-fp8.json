@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "liodon-ai/Mistral-7B-Instruct-v0.1-FP8",
+  "slug": "liodon-ai-mistral-7b-instruct-v0-1-fp8",
+  "author": "liodon-ai",
+  "url": "https://huggingface.co/liodon-ai/Mistral-7B-Instruct-v0.1-FP8",
+  "created_at": "2026-10-12T21:29:33.000Z",
+  "updated_at": "2026-10-12T21:46:02.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "fp8",
+    "compressed-tensors",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.1",
+    "base_model:quantized:mistralai/Mistral-7B-Instruct-v0.1",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 7506955520,
+  "storage_human": "7.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "liodon-ai/Mistral-7B-v0.1-FP8 · Hugging Face",
+      "url": "https://huggingface.co/liodon-ai/Mistral-7B-v0.1-FP8",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "mistralai/Mistral-7B-Instruct-v0.1 · Hugging Face",
+      "url": "https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.1",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Mistral-7B-Instruct-v0.1 - VRAM, Specs & Benchmarks",
+      "url": "https://apxml.com/models/mistral-7b-instruct-v0-1",
+      "snippet": "About Mistral-7B-Instruct-v0.1 Mistral-7B-Instruct-v0.1 is Mistral AI&#x27;s foundational instruction-tuned model engineered for efficient conversational assistance and question answering. It incorporates Sliding-Window Attention and Grouped-Query Attention for fast inference."
+    },
+    {
+      "title": "Model Card for Mistral-7B-Instruct-v0.1",
+      "url": "https://www.modelscope.cn/models/AI-ModelScope/Mistral-7B-Instruct-v0.1/summary",
+      "snippet": "The Mistral-7B-Instruct-v0.1 Large Language Model (LLM) is a instruct fine-tuned version of the Mistral-7B-v0.1 generative text model using a variety of publicly available conversation datasets."
+    },
+    {
+      "title": "Mistral 7B - Mistral AI | Mistral Docs",
+      "url": "https://docs.mistral.ai/models/mistral-7b-0-1",
+      "snippet": "Our very first open model, SOTA competing against models up to 2 to 3x larger."
+    }
+  ]
+}

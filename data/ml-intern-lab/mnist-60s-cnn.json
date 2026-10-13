@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ML-Intern-lab/mnist-60s-cnn",
+  "slug": "ml-intern-lab-mnist-60s-cnn",
+  "author": "ML-Intern-lab",
+  "url": "https://huggingface.co/ML-Intern-lab/mnist-60s-cnn",
+  "created_at": "2026-10-12T19:37:15.000Z",
+  "updated_at": "2026-10-12T19:41:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "ml-intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6507233,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ML — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/ML",
+      "snippet": "mètre linéaire (ml), unité de longueur dans une direction utile, c'est-à-dire sans tenir compte des autres dimensions (largeur, hauteur, …Read more"
+    },
+    {
+      "title": "Accueil - Laboratoires MLab",
+      "url": "https://www.mlab-groupe.fr/",
+      "snippet": "Le test au SYNACTHENE® RAPIDE ou IMMÉDIAT (Ampoule dosée à 0.25 mg/ml) est un test dynamique prescrit par votre médecin …"
+    },
+    {
+      "title": "Mobile Legends: Bang Bang – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?gl=GB&hl=en-GB&id=com.mobile.legends",
+      "snippet": "Join your friends in Mobile Legends: Bang Bang, the brand new 5v5 MOBA showdown, and fight against real players! Choose your …"
+    },
+    {
+      "title": "ML - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ML",
+      "snippet": "This disambiguation page lists articles associated with the title ML. If an internal link incorrectly led you here, you may wish to change …"
+    },
+    {
+      "title": "Calculatrices de conversion Millilitres, tables et formules",
+      "url": "https://www.metric-conversions.org/fr/volume/conversion-de-millilitres.htm",
+      "snippet": "Millilitres, abrégés en mL, sont une unité de mesure couramment utilisée pour quantifier le volume. Le terme \"milli\" en millilitres fait …"
+    }
+  ]
+}

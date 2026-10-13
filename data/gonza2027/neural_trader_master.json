@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GONZA2027/neural_trader_master",
+  "slug": "gonza2027-neural_trader_master",
+  "author": "GONZA2027",
+  "url": "https://huggingface.co/GONZA2027/neural_trader_master",
+  "created_at": "2026-10-12T23:29:37.000Z",
+  "updated_at": "2026-10-12T23:29:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:Viggle/Qwen-Image-2.1-viggle-turbo",
+    "base_model:adapter:Viggle/Qwen-Image-2.1-viggle-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5026211,
+  "storage_human": "5 MB",
+  "base_model": "Viggle/Qwen-Image-2.1-viggle-turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chaînes XXX avec des vidéos ajoutées récemment - OK.XXX",
+      "url": "https://fr.okxxx1.com/channels/updated/",
+      "snippet": "Une nouvelle vidéo porno a récemment été ajoutée à ces chaînes. Regardez-les d'abord !"
+    },
+    {
+      "title": "Vidéos porno gratuites chaudes ️ et populaires - OK.XXX, Page 12",
+      "url": "https://fr.okxxx1.com/popular/12/",
+      "snippet": "Ces vidéos xxx🎞️ ont été les plus vues ce mois-ci. Page 12."
+    },
+    {
+      "title": "Really hot porn videos - OK.PORN",
+      "url": "https://ok.porn/popular/",
+      "snippet": "A porn videos that have seen the most this month."
+    },
+    {
+      "title": "Free Okxxx Porn Videos | xHamster",
+      "url": "https://xhamster.com/tags/okxxx",
+      "snippet": "Check out free Okxxx porn videos on xHamster. Watch all Okxxx XXX vids right now!"
+    },
+    {
+      "title": "OK.PORN - watch and download free porn videos and pictures.",
+      "url": "https://ok.porn/",
+      "snippet": "You are one click away from the best porn tube. Tons of HD porno movies and images. Watch it! Download it! Enjoy it!"
+    }
+  ]
+}

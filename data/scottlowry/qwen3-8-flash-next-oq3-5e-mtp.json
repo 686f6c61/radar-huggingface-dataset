@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp",
+  "slug": "scottlowry-qwen3-8-flash-next-oq3-5e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Qwen3.8-Flash-Next-oQ3.5e-mtp",
+  "created_at": "2026-10-12T20:49:05.000Z",
+  "updated_at": "2026-10-12T22:08:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "oq",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 89847406836,
+  "storage_human": "89.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr-ca",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce qui vous intéresse avec les gens qui vous comprennent."
+    }
+  ]
+}

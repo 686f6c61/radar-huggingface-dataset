@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TiMauzi/wav2vec2-large-xls-r-300m-hsb",
+  "slug": "timauzi-wav2vec2-large-xls-r-300m-hsb",
+  "author": "TiMauzi",
+  "url": "https://huggingface.co/TiMauzi/wav2vec2-large-xls-r-300m-hsb",
+  "created_at": "2023-09-04T19:27:20.000Z",
+  "updated_at": "2026-10-12T21:53:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "hsb"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "hsb",
+    "dataset:mozilla-foundation/common_voice_11_0",
+    "base_model:facebook/wav2vec2-xls-r-300m",
+    "base_model:finetune:facebook/wav2vec2-xls-r-300m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 315485870,
+  "parameters_human": "315.5M",
+  "storage_bytes": 2524090472,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/wav2vec2-xls-r-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wav2vec2-large-xls-r-300m-dsb-with-hsb-pretraining",
+      "url": "https://huggingface.co/TiMauzi/wav2vec2-large-xls-r-300m-dsb-with-hsb-pretraining-saved",
+      "snippet": "This model is a fine-tuned version of TiMauzi/wav2vec2-large-xls-r-300m-hsb on an unknown dataset. It achieves the following results on the evaluation set ..."
+    },
+    {
+      "title": "TiMauzi/wav2vec2-large-xls-r-300m-hsb · Hugging Face",
+      "url": "https://huggingface.co/TiMauzi/wav2vec2-large-xls-r-300m-hsb",
+      "snippet": "TiMauzi / wav2vec2-large-xls-r-300m-hsb like 0 Model card FilesFiles and versions Community Use with library No model card"
+    },
+    {
+      "title": "The open-source speech recognition model wav2vec2-large-xls-r-300m-hsb ...",
+      "url": "https://model.aibase.com/models/details/1915693337878880257",
+      "snippet": "The model is a fine - tuned version of facebook/wav2vec2-xls-r-300m on the MOZILLA - FOUNDATION/COMMON_VOICE_8_0 - HSB dataset. It achieves certain results on the evaluation set, with a loss of 0.5684 and a Wer of 0.4402."
+    },
+    {
+      "title": "Open-source Model wav2vec2-large-xls-r-300m-hi - Free Deployment to ...",
+      "url": "https://model.aibase.com/models/details/1915693325669261314",
+      "snippet": "This model is a fine-tuned version of facebook/wav2vec2-xls-r-300m on a general speech dataset, primarily used for speech recognition tasks."
+    },
+    {
+      "title": "wav2vec2-large-xls-r-300m-welsh: Self-Hosting & Deployment Guide",
+      "url": "https://llmapi.ai/models/infinitejoy-wav2vec2-large-xls-r-300m-welsh/",
+      "snippet": "wav2vec2-large-xls-r-300m-welsh is an open-weight speech recognition model that transcribes audio to text."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "partum/terllm",
+  "slug": "partum-terllm",
+  "author": "partum",
+  "url": "https://huggingface.co/partum/terllm",
+  "created_at": "2026-10-13T00:00:14.000Z",
+  "updated_at": "2026-10-13T00:01:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "shell",
+    "terminal",
+    "autocomplete",
+    "command-line",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134551872,
+  "parameters_human": "134.6M",
+  "storage_bytes": 1018360272,
+  "storage_human": "1.0 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Post-partum — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Post-partum",
+      "snippet": "La période du post-partum (ou puerpéralité, ou encore suite de couches) s'étend de la fin de l' accouchement jusqu'au retour de …"
+    },
+    {
+      "title": "WEPARTUM",
+      "url": "https://www.wepartum.fr/",
+      "snippet": "“Magnifique expérience avec Wepartum. Grâce à vous, nous avons été mis en contact avec de superbes familles, et avons très …"
+    },
+    {
+      "title": "Postpartum period - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Postpartum_period",
+      "snippet": "Mother with newborn baby The postpartum (or postnatal) period begins after childbirth and is typically considered to last for six to …"
+    },
+    {
+      "title": "What does Partum mean? - Definitions.net",
+      "url": "https://www.definitions.net/definition/Partum",
+      "snippet": "partum Childbirth, also known as labour and delivery, is the ending of pregnancy where one or more babies exits the internal …"
+    },
+    {
+      "title": "Post-partum : définition, soins, et troubles après la grossesse",
+      "url": "https://www.passeportsante.net/famille/grossesse?doc=postpartum-definition-soins-troubles-apres-grossesse",
+      "snippet": "Le post-partum définit la période qui suit l’accouchement. La santé et le bien-être de la mère peuvent être impactés par des …"
+    }
+  ]
+}

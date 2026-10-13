@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "OmenWorks/bend-heads",
+  "slug": "omenworks-bend-heads",
+  "author": "OmenWorks",
+  "url": "https://huggingface.co/OmenWorks/bend-heads",
+  "created_at": "2026-10-12T22:24:15.000Z",
+  "updated_at": "2026-10-12T22:24:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anthropic AI model submits false homicide tip to Philadelphia ... - MSN",
+      "url": "https://www.msn.com/en-gb/news/other/anthropic-ai-model-submits-false-homicide-tip-to-philadelphia-police-website/ar-AA2dVxyE",
+      "snippet": "Oct 9 (Reuters) - An Anthropic artificial intelligence model submitted a false homicide tip through a Philadelphia police website, the department said in a statement, the latest incident of rogue ..."
+    },
+    {
+      "title": "Best AI Models (October 2026): 220 LLMs Ranked & Scored",
+      "url": "https://benchlm.ai/best/overall",
+      "snippet": "Best AI Models in 2026 — Overall Rankings The best AI model right now is a tie. Claude Opus 5.5 (Supported) and GPT-6 Astra (Supported) share the top of the BenchLM overall ranking at 85.4 and 83.3 as of October 12, 2026, and the two 90% intervals overlap. Claude Sonnet 5.5 ranks third at 82.5."
+    },
+    {
+      "title": "All 889 AI Models Compared — LLM Directory 2026 | BenchLM.ai",
+      "url": "https://benchlm.ai/models",
+      "snippet": "Browse and compare 889 large language models across 755 model families from OpenAI, Anthropic, Google, Meta, DeepSeek, and more."
+    },
+    {
+      "title": "Omen AI Raises $31M Series A to Bring Continuous Fluid Intelligence to ...",
+      "url": "https://www.prnewswire.com/news-releases/omen-ai-raises-31m-series-a-to-bring-continuous-fluid-intelligence-to-the-machines-powering-the-ai-economy-302814262.html",
+      "snippet": "/PRNewswire/ -- Omen AI, the continuous fluid analysis company, today announced a $31 million Series A led by Nava Ventures, bringing the company&#x27;s total..."
+    },
+    {
+      "title": "One-Click Performance: How OMEN AI is Revolutionizing Gaming ... - HP",
+      "url": "https://www.hp.com/us-en/tech-takes/gaming/how-to/omen-ai-gaming-optimization.html",
+      "snippet": "Discover how HP&#x27;s OMEN AI delivers personalized performance optimization with a single click, boosting FPS by up to 35% while eliminating hours of manual tweaking."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ruddls030/HyperCLOVAX-SEED-Haru-1.5B-GGUF",
+  "slug": "ruddls030-hyperclovax-seed-haru-1-5b-gguf",
+  "author": "ruddls030",
+  "url": "https://huggingface.co/ruddls030/HyperCLOVAX-SEED-Haru-1.5B-GGUF",
+  "created_at": "2026-10-12T22:45:05.000Z",
+  "updated_at": "2026-10-12T22:45:49.000Z",
+  "license": "hyperclovax-seed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ko",
+    "base_model:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+    "base_model:quantized:naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1585547264,
+  "parameters_human": "1.59B",
+  "storage_bytes": 1006572256,
+  "storage_human": "1.0 GB",
+  "base_model": "naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF",
+      "url": "https://oktechmasters.org/ai_models/hyperclovax-seed-text-instruct-1-5b-q4-k-m-gguf/",
+      "snippet": "0 by rippertnt HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF is a 1.5 billion parameter language model created by rippertnt and optimized for use with llama-cpp. It excels at conversational tasks and general text generation, making it ideal for lightweight chat applications that require efficient inference on standard hardware."
+    },
+    {
+      "title": "HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M GGUF size and VRAM requirements",
+      "url": "https://ailocalcheck.com/model/rippertnt/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF",
+      "snippet": "rippertnt/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF is a compact instruction-tuned chat model with 1.81 billion parameters, built on the llama architecture. It is released under the other license and has been downloaded 997,388 times."
+    },
+    {
+      "title": "HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF - Hugging Face",
+      "url": "https://huggingface.co/cherryDavid/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF",
+      "snippet": "This model was converted to GGUF format from naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    },
+    {
+      "title": "HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF — Model for Ryu · Ryu",
+      "url": "https://ryuhq.com/store/models/rippertnt/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF",
+      "snippet": "Browse and run HyperCLOVAX-SEED-Text-Instruct-1.5B-Q4_K_M-GGUF and everything else — models, skills, MCP servers, agents, and engines — right inside the Ryu app, governed by the Ryu Gateway."
+    },
+    {
+      "title": "README.md · cherryDavid/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q8_0-GGUF ...",
+      "url": "https://huggingface.co/cherryDavid/HyperCLOVAX-SEED-Text-Instruct-1.5B-Q8_0-GGUF/blob/main/README.md",
+      "snippet": "This model was converted to GGUF format from naver-hyperclovax/HyperCLOVAX-SEED-Text-Instruct-1.5B using llama.cpp via the ggml.ai&#x27;s GGUF-my-repo space. Refer to the original model card for more details on the model."
+    }
+  ]
+}

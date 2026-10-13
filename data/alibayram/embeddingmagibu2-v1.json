@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "alibayram/embeddingmagibu2-v1",
+  "slug": "alibayram-embeddingmagibu2-v1",
+  "author": "alibayram",
+  "url": "https://huggingface.co/alibayram/embeddingmagibu2-v1",
+  "created_at": "2026-10-12T18:55:03.000Z",
+  "updated_at": "2026-10-12T21:50:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "tr",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "embedding_gemma2",
+    "sentence-similarity",
+    "feature-extraction",
+    "embedding",
+    "multimodal",
+    "image-text-retrieval",
+    "audio",
+    "video",
+    "turkish",
+    "retrieval",
+    "tokenizer-surgery",
+    "magibu-ai",
+    "tr",
+    "en",
+    "multilingual",
+    "arxiv:2605.29992",
+    "base_model:google/embeddinggemma-2",
+    "base_model:finetune:google/embeddinggemma-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 744371512,
+  "parameters_human": "744.4M",
+  "storage_bytes": 1504233439,
+  "storage_human": "1.5 GB",
+  "base_model": "google/embeddinggemma-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "alibayram/embeddingmagibu2-v1-rc · Hugging Face",
+      "url": "https://huggingface.co/alibayram/embeddingmagibu2-v1-rc",
+      "snippet": "alibayram / embeddingmagibu2-v1-rc Like 0 Sentence Similarity sentence-transformers Safetensors Turkish multilingual embedding_gemma2 feature-extraction embedding turkish retrieval tokenizer-surgery magibu-ai arxiv:2605.29992 License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "alibayram/embeddingmagibu2 · Hugging Face",
+      "url": "https://huggingface.co/alibayram/embeddingmagibu2",
+      "snippet": "embeddingmagibu2 embeddingmagibu2 is a Turkish-focused multilingual embedding model built from google/embeddinggemma-2 and the Turkish-optimized magibu/Altus tokenizer. Status: initialization checkpoint. This is the student model before distillation: the teacher with its tokenizer swapped and new token embeddings initialized."
+    },
+    {
+      "title": "malibayram (M. Ali Bayram) · GitHub",
+      "url": "https://github.com/malibayram",
+      "snippet": "My work uniquely bridges AI research and real-world software engineering —from developing Turkish LLMs and medical AI systems to architecting scalable Flutter applications and cloud-based backends."
+    },
+    {
+      "title": "GitHub - malibayram/embedding-trainer",
+      "url": "https://github.com/malibayram/embedding-trainer",
+      "snippet": "This repository contains the training, evaluation, and deployment pipeline for embeddingmagibu-200m — a Turkish-optimized sentence embedding model that produces 768-dimensional ℓ₂-normalized vectors with an 8,192-token context window. The model achieves competitive results on Turkish benchmarks while using 33% fewer parameters than its teacher and training in ~4 hours on a single GPU at ..."
+    },
+    {
+      "title": "[2605.29992] Adapting Multilingual Embedding Models to Turkish via ...",
+      "url": "https://arxiv.org/abs/2605.29992",
+      "snippet": "Sentence embeddings are a foundational component for semantic search, clustering, classification, and retrieval-augmented generation. This paper presents embeddingmagibu-200m, a Turkish-focused sentence embedding model that produces 768-dimensional L2-normalized vectors and supports an 8,192-token context window, far exceeding the 512-token limit of earlier BERT-based Turkish encoders. Instead ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-lora-2096227232057516034",
+  "slug": "runninghubai-rh-krea2-lora-2096227232057516034",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora-2096227232057516034",
+  "created_at": "2026-10-12T22:07:02.000Z",
+  "updated_at": "2026-10-12T22:08:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 471558511,
+  "storage_human": "472 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-ai-lora · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-ai-lora",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHub Models ｜ AI Model Creation & Training Platform",
+      "url": "https://www.runninghub.ai/models",
+      "snippet": "Discover generative AI and LoRA models for personalized model training, creative styles, and AI content creation. Build and customize your own AI models with RunningHub Models."
+    },
+    {
+      "title": "Krea 2 Open-Source: RAW and Turbo Image Models",
+      "url": "https://www.krea.ai/krea-2-open-source",
+      "snippet": "The most aesthetic open-source image model Krea 2 Open-Source brings Krea 2, our aesthetic-first model family, into the open with open weights on Hugging Face. Use Turbo for fast, polished text-to-image and RAW when you need the malleable base checkpoint for LoRA training in ComfyUI and beyond."
+    },
+    {
+      "title": "Khloyechka - Krea-2 v1 EXCLUSIVE - Free AI LORA | Tensor.Art",
+      "url": "https://tensor.art/models/1050480701226395186",
+      "snippet": "Download Khloyechka - free LORA KREA_2 AI model on TENSOR. EXCLUSIVE, ORIGINAL CHARACTER. By R"
+    }
+  ]
+}

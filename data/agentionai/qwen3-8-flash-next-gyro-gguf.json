@@ -5,7 +5,7 @@
   "author": "agentionai",
   "url": "https://huggingface.co/agentionai/Qwen3.8-Flash-Next-Gyro-GGUF",
   "created_at": "2026-09-30T17:56:47.000Z",
-  "updated_at": "2026-10-11T17:05:45.000Z",
+  "updated_at": "2026-10-12T23:06:02.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -25,13 +25,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 32,
+  "likes": 33,
   "downloads_30d": 34479,
-  "trending_score": 21,
+  "trending_score": 22,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 365692041068,
-  "storage_human": "365.7 GB",
+  "storage_bytes": 448415477996,
+  "storage_human": "448.4 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

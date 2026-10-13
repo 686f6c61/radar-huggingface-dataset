@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "szwagner/hw1-generation",
+  "slug": "szwagner-hw1-generation",
+  "author": "szwagner",
+  "url": "https://huggingface.co/szwagner/hw1-generation",
+  "created_at": "2026-10-13T00:22:19.000Z",
+  "updated_at": "2026-10-13T00:22:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Architecture of Generative Models - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/architecture-of-generative-models/",
+      "snippet": "Generative models are a dynamic class of artificial intelligence (AI) systems designed to learn patterns from large datasets and synthesize new content ranging from text and images to music and code that resembles the data they learned from."
+    },
+    {
+      "title": "How to co-design software/hardware architecture for AI/ML in a new era?",
+      "url": "https://towardsdatascience.com/how-to-co-design-software-hardware-architecture-for-ai-ml-in-a-new-era-b296f2842fe2/",
+      "snippet": "State-of-the-art generative AI technologies in computer vision, natural language processing, etc. have been exploding recently with research breakthroughs on innovative model architectures including stable diffusion, neural rendering (NeRF), text to 3D, large language models (LLM), and more."
+    },
+    {
+      "title": "rohit-devi/hw1-generation at main - Hugging Face",
+      "url": "https://huggingface.co/rohit-devi/hw1-generation/tree/main",
+      "snippet": "PyTorch hybrid generation License:apache-2.0 Model card FilesFiles and versions xet Community Copy to bucket new main hw1-generation 109 kB Ctrl+K Ctrl+K 1 contributor History:2 commits rohit-devi Add predict.py, README.md, config.json, training_args.json, model.safetensors 46678b6 verified3 days ago .gitattributes Safe 1.52 kBinitial commit3 ..."
+    },
+    {
+      "title": "SW/HW Co-optimization Strategy for Large Language Models (LLMs)",
+      "url": "https://towardsdatascience.com/sw-hw-co-optimization-strategy-for-large-language-models-llms-855f20a14629/",
+      "snippet": "In this article, I am going to do a thorough analysis of LLM optimization strategy across models, software, and hardware. It follows the AI SW/HW co-design methodology I wrote in previous article, with much more in-depth discussion on LLM-specific cost and performance optimization."
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "Claude is a next generation AI assistant built by Anthropic and trained to be safe, accurate, and secure to help you do your best work."
+    }
+  ]
+}

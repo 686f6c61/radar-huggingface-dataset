@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma-4-31b-abliterated-v1.1-GGUF",
+  "slug": "mradermacher-gemma-4-31b-abliterated-v1-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma-4-31b-abliterated-v1.1-GGUF",
+  "created_at": "2026-04-22T11:21:22.000Z",
+  "updated_at": "2026-10-12T20:06:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:Kooten/gemma-4-31b-abliterated-v1.1",
+    "base_model:quantized:Kooten/gemma-4-31b-abliterated-v1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 461,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 211900030752,
+  "storage_human": "211.9 GB",
+  "base_model": "Kooten/gemma-4-31b-abliterated-v1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

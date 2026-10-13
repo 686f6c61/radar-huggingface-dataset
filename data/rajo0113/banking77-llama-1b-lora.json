@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "rajo0113/banking77-llama-1b-lora",
+  "slug": "rajo0113-banking77-llama-1b-lora",
+  "author": "rajo0113",
+  "url": "https://huggingface.co/rajo0113/banking77-llama-1b-lora",
+  "created_at": "2026-03-04T07:34:29.000Z",
+  "updated_at": "2026-10-12T22:57:04.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "rslora",
+    "neftune",
+    "intent-classification",
+    "banking",
+    "text-classification",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:mteb/banking77",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62334283,
+  "storage_human": "62 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Exact Match Accuracy (free generation)",
+      "value": 0.9021
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Exact Match Accuracy (constrained decoding)",
+      "value": 0.9028
+    }
+  ],
+  "sources": [
+    {
+      "title": "indian-mom-fuck videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/indian-mom-fuck",
+      "snippet": "Shy Indian stepmom like to suck her stepson dick and fuck when she was alone at home.Read more"
+    },
+    {
+      "title": "Indian Mom - Sex videos & porn - Lobster Tube",
+      "url": "https://www.lobstertube.com/category/indian-mom",
+      "snippet": "Tasty Indian Mom tubes. Browse LobsterTube for more delicious porn videos. Millions of porn tubes on the menu. No need for a …"
+    },
+    {
+      "title": "indian-mom videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/indian-mom",
+      "snippet": "Shy Indian stepmom like to suck her stepson dick and fuck when she was alone at home."
+    },
+    {
+      "title": "Indian Mother Fuck Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/indian+mother+fuck",
+      "snippet": "Watch indian mother fuck porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "indian-mom videos - XVIDEOS.COM",
+      "url": "https://mobile-xvideos.com/tags/indian-mom",
+      "snippet": "Desi sexy stepmothers sex fantasy with boyfriend!"
+    }
+  ]
+}

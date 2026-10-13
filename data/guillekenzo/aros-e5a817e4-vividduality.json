@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "guillekenzo/aros-e5a817e4-VividDuality",
+  "slug": "guillekenzo-aros-e5a817e4-vividduality",
+  "author": "guillekenzo",
+  "url": "https://huggingface.co/guillekenzo/aros-e5a817e4-VividDuality",
+  "created_at": "2026-10-12T21:12:54.000Z",
+  "updated_at": "2026-10-12T21:40:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 964520196,
+  "storage_human": "965 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo/models",
+      "snippet": "guillekenzo/aros-1ca36093-GoldenDuality ... guillekenzo/aros-6cca2392-WanderingRogueMountTest ... guillekenzo/aros-708ad4cf-Jedy ... guillekenzo/aros-464f9cf9-WanderingRogue ... guillekenzo/aros-083fd86f-FrostedEcho"
+    },
+    {
+      "title": "guillekenzo (garcia) - Hugging Face",
+      "url": "https://huggingface.co/guillekenzo",
+      "snippet": "guillekenzo/aros-09cc5fd4-MellowDuality ... guillekenzo/aros-d64208fe-Sana ... guillekenzo/aros-f8632b6e-ElectricOracle ... guillekenzo/aros-f722856c-SiennaMarlowe ... guillekenzo/aros-31c1c485-Mea"
+    },
+    {
+      "title": "DiffusionBee - Stable Diffusion App for AI Art",
+      "url": "https://diffusionbee.com/huggingface_import?model_id=guillekenzo/aros-f51c7188-VividComet",
+      "snippet": "DiffusionBee is the easiest way to generate AI art on your computer with Stable Diffusion. Completely free of charge."
+    },
+    {
+      "title": "guillekenzo AI models - Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/company/guillekenzo",
+      "snippet": "Browse AI models attributed to guillekenzo, sourced from verified model catalogs."
+    },
+    {
+      "title": "aros-9e2d1e78-GildedZenith: Model Details, Context & Pricing | Essa Mamdani",
+      "url": "https://essamamdani.com/ai-models/hf-guillekenzo-aros-9e2d1e78-gildedzenith",
+      "snippet": "Model card indexed from Hugging Face. Specs: sourced from Hugging Face. Compare aros-9e2d1e78-GildedZenith&#x27;s parameters, context window, pricing and benchmarks"
+    }
+  ]
+}

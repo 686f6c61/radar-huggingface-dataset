@@ -4,8 +4,8 @@
   "slug": "sotaagi2030-museumnight-dependency-bundle",
   "author": "SOTAagi2030",
   "url": "https://huggingface.co/SOTAagi2030/MuseumNight-Dependency-Bundle",
-  "created_at": "2026-10-07T16:06:54.000Z",
-  "updated_at": "2026-10-07T16:07:57.000Z",
+  "created_at": "2026-10-12T10:49:20.000Z",
+  "updated_at": "2026-10-12T10:54:25.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,7 +14,7 @@
   "tags": [
     "region:us"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,

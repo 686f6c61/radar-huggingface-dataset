@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "crab-lab-ai/poetry-phisch",
+  "slug": "crab-lab-ai-poetry-phisch",
+  "author": "crab-lab-ai",
+  "url": "https://huggingface.co/crab-lab-ai/poetry-phisch",
+  "created_at": "2026-10-12T21:31:49.000Z",
+  "updated_at": "2026-10-13T00:39:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3147008,
+  "parameters_human": "3.1M",
+  "storage_bytes": 12848661,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nandy (singer) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Nandy_(singer)",
+      "snippet": "Faustina Charles Mfinanga, known professionally as Nandy, is a Tanzanian singer, songwriter and actress. She performs primarily in …"
+    },
+    {
+      "title": "Home - NANDY | THE AFRICAN PRINCESS",
+      "url": "https://nandyworld.com/",
+      "snippet": "What started as a dream for a young girl from Tanzania has grown into one of the country’s most recognizable music success …"
+    },
+    {
+      "title": "Nandy (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nandy_(chanteuse)",
+      "snippet": "Faustina Charles Mfinanga (née le 9 novembre 1992), connue sous son nom de scène Nandy est une actrice, chanteuse, …"
+    },
+    {
+      "title": "Nandy - The African Princess - YouTube",
+      "url": "https://www.youtube.com/channel/UCKzR_v8dQlyrZ_zRMcFsQBA",
+      "snippet": "Nandy and Marioo come together on “Somebody,” a captivating new Afro-pop and Bongo Flava collaboration that celebrates love, …"
+    },
+    {
+      "title": "Nandy - Biography, Age, Songs & Albums | AfroYard.net",
+      "url": "https://afroyard.net/artists/nandy/",
+      "snippet": "Nandy is Faustina Charles Mfinanga, a Tanzanian singer, songwriter and actress born on 9 November 1992 in Moshi, Kilimanjaro …"
+    }
+  ]
+}

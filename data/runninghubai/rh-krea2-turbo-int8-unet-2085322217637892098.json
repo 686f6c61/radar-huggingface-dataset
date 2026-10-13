@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-krea2-turbo-int8-unet-2085322217637892098",
+  "slug": "runninghubai-rh-krea2-turbo-int8-unet-2085322217637892098",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2085322217637892098",
+  "created_at": "2026-10-12T23:58:00.000Z",
+  "updated_at": "2026-10-13T00:07:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "image-text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13492140891,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-int8-unet · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "rh-krea2-turbo-int8-unet-2085319632849084418 - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2085319632849084418",
+      "snippet": "This repository provides rh-krea2-turbo-int8-unet weight files. You can load them on RunningHub."
+    },
+    {
+      "title": "rh-krea2-turbo-int8-unet-2101377095544201218 - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2101377095544201218",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-int8-unet-2083709129864077314 · Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet-2083709129864077314",
+      "snippet": "About this model 模型名称： Krea 2 版本： v1.0 发布日期： 2026 年 6 月 22 日 模型类型： 文生图扩散模型 架构： 具有 120 亿参数的扩散 Transformer 许可证： Krea 2 社区许可证 发布形式： 开放权重发布及 Krea 托管的产品集成 模型开发者： Krea.ai, Inc."
+    },
+    {
+      "title": "RunningHubAI/rh-krea2-turbo-int8-unet at main - Hugging Face",
+      "url": "https://huggingface.co/RunningHubAI/rh-krea2-turbo-int8-unet/tree/main",
+      "snippet": "Like 0 Image-Text-to-Image comfyui unet Model card FilesFiles and versions xet Community Copy to bucket new main rh-krea2-turbo-int8-unet 13.5 GB Ctrl+K Ctrl+K 1 contributor History:3 commits RunningHubAI Upload RunningHub model 2094651642921709570 a2ed37e verified9 days ago .gitattributes Safe 1.57 kBUpload RunningHub model ..."
+    }
+  ]
+}

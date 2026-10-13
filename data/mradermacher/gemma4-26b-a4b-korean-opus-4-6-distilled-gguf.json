@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-GGUF",
+  "slug": "mradermacher-gemma4-26b-a4b-korean-opus-4-6-distilled-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Gemma4-26B-A4B-Korean-Opus-4.6-Distilled-GGUF",
+  "created_at": "2026-04-22T10:59:22.000Z",
+  "updated_at": "2026-10-12T20:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "sft",
+    "korean",
+    "reasoning",
+    "ko",
+    "en",
+    "dataset:Jongsim/claude-opus-4.6-reasoning-12k-ko-filtered-v2",
+    "base_model:jiwon9703/KoGemopus-4-26B-A4B-experimental",
+    "base_model:quantized:jiwon9703/KoGemopus-4-26B-A4B-experimental",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 636,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858210208,
+  "storage_human": "184.9 GB",
+  "base_model": "jiwon9703/KoGemopus-4-26B-A4B-experimental",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free natural Pics, natural Porn Galleries | BabeSource.com",
+      "url": "https://babesource.com/search/natural/",
+      "snippet": "Free natural Porn Pics from BabeSource.com. Daily Updated with New natural Galleries!Read more"
+    },
+    {
+      "title": "Free Porn Pics & Sex Photos at Babehub",
+      "url": "https://www.babehub.com/",
+      "snippet": "Explore millions of FREE high-quality porn pics at BabeHub! Daily updated collections in HD & 4K, sorted by popular categories for …"
+    },
+    {
+      "title": "Natural Picture Galleries - AZ Gals. Free porn from A to Z",
+      "url": "https://azgals.com/c/natural/",
+      "snippet": "Categorized and searchable archive of Natural erotic and sex pictures. Daily updated free galleries!"
+    },
+    {
+      "title": "Real Natural Porn 2026 • Authentic Amateur Sex & Real Couples Raw …",
+      "url": "https://goodporno.net/categories/natural/",
+      "snippet": "Real Natural Porn 2026: genuine amateur sex videos of real people and couples. No scripts, no pornstars — only sincere passionate …"
+    },
+    {
+      "title": "Naughty Natural Nude Porn Pics - PornPics.com",
+      "url": "https://www.pornpics.com/channels/naughty-natural/",
+      "snippet": "Naughty Natural offers the latest 4K video, high-res photos and updates of all-natural girls with hairy pussies, legs and assholes!"
+    }
+  ]
+}

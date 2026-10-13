@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "skonan/PaperScorer-7B-Vision-arXiv",
+  "slug": "skonan-paperscorer-7b-vision-arxiv",
+  "author": "skonan",
+  "url": "https://huggingface.co/skonan/PaperScorer-7B-Vision-arXiv",
+  "created_at": "2026-05-19T14:58:11.000Z",
+  "updated_at": "2026-10-12T20:07:47.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_vl",
+    "academic-paper-review",
+    "llama-factory",
+    "sft",
+    "arxiv-trained",
+    "qwen2.5",
+    "en",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 33180175809,
+  "storage_human": "33.2 GB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

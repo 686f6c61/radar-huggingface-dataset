@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step5000",
+  "slug": "dongkkka-task_000759_move_vegetable_whiteroom_turbovla-bs8-step5000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000759_Move_Vegetable_Whiteroom_TurboVLA-bs8-step5000",
+  "created_at": "2026-10-13T00:03:28.000Z",
+  "updated_at": "2026-10-13T00:04:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "vision-language-action",
+    "turbovla",
+    "sg2",
+    "lerobot",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3472966206,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dongkkka/Task_000759_Move_Vegetable_Whiteroom_FLOWER-bs4-step10000 ...",
+      "url": "https://huggingface.co/Dongkkka/Task_000759_Move_Vegetable_Whiteroom_FLOWER-bs4-step10000",
+      "snippet": "Task 000759 SG2 FLOWER VLA FLOWER VLA checkpoint trained for Task_000759_Move_Vegetable_Whiteroom with the ROBOTIS SG2 22D action/state layout."
+    },
+    {
+      "title": "GitHub - H-EmbodVis/TurboVLA: TurboVLA: Real-Time Vision-Language ...",
+      "url": "https://github.com/H-EmbodVis/TurboVLA",
+      "snippet": "Instead of using a large language model as the central interface between perception and action, TurboVLA independently encodes visual observations and language instructions, directly exchanges information between them through lightweight bidirectional vision-language interaction, and predicts continuous action chunks with a compact decoder."
+    },
+    {
+      "title": "TurboVLA: Real-Time Vision-Language-Action Model at 32 Hz on an RTX ...",
+      "url": "https://arxiv.org/html/2607.27205",
+      "snippet": "Instead of using a large language model as the central interface between perception and action, TurboVLA independently encodes visual observations and language instructions, directly exchanges information between them through lightweight bidirectional vision-language interaction, and predicts continuous action chunks with a compact decoder."
+    },
+    {
+      "title": "Dongkkka/Task_000759_FLOWER_B200_bs8_step15000 · Hugging Face",
+      "url": "https://huggingface.co/Dongkkka/Task_000759_FLOWER_B200_bs8_step15000",
+      "snippet": "We&#x27;re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "TurboVLA: A 0.2B Real-Time Robot Policy | AI/TLDR",
+      "url": "https://ai-tldr.dev/tools/turbovla/",
+      "snippet": "TurboVLA is an Apache-2.0 vision-language-action policy that replaces the usual V-L-A pipeline with a direct V+L-A mapping, running at 32 Hz on an RTX 4090."
+    }
+  ]
+}

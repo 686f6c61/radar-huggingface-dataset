@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "turintech/Clef-Flash-Artemis-GGUF",
+  "slug": "turintech-clef-flash-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Clef-Flash-Artemis-GGUF",
+  "created_at": "2026-10-12T09:06:02.000Z",
+  "updated_at": "2026-10-12T22:51:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "clef",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "multimodal",
+    "text-classification",
+    "base_model:Cloudflare/clef-flash",
+    "base_model:quantized:Cloudflare/clef-flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9075566084,
+  "parameters_human": "9.08B",
+  "storage_bytes": 17236828800,
+  "storage_human": "17.2 GB",
+  "base_model": "Cloudflare/clef-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pornhubというサイトで年齢確認 (18歳以上ですか？)と出て.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12232098012",
+      "snippet": "Sep 25, 2020 · pornhubというサイトで年齢確認(18歳以上ですか？)と出てきたので18歳以上を押したところ会員登録されました。 …Read more"
+    },
+    {
+      "title": "【緊急】我が家のPCがウイルスに感染した件 - 先日、私はPC …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13194880798",
+      "snippet": "Aug 20, 2018 · ①タップスネーク，②pornhubは問題ない。 ③アンインストールすれば良い ⑤ウイルスバスターの結果は信用でき …"
+    },
+    {
+      "title": "Problème absorbeur d'encre imprimante Canon Pixma MG 6150",
+      "url": "https://forums.commentcamarche.net/forum/affich-36144704-probleme-absorbeur-d-encre-imprimante-canon-pixma-mg-6150",
+      "snippet": "Jul 31, 2019 · Sur mon imprimante Canon Pixma MG 6150, j’ai eu le code d’erreur 5B00. J’ai pu me mettre en maintenance une fois …"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "pornhubというサイトの投稿者アカウントの横に、青いチェックマー …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11217128646",
+      "snippet": "Dec 5, 2019 · pornhubというサイトの投稿者アカウントの横に、青いチェックマークがあるのは、ついていないアカウントと何が …"
+    }
+  ]
+}

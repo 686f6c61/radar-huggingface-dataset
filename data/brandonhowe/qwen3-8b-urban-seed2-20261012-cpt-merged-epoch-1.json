@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1",
+  "slug": "brandonhowe-qwen3-8b-urban-seed2-20261012-cpt-merged-epoch-1",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-urban-seed2-20261012-CPT-merged-epoch-1",
+  "created_at": "2026-10-12T22:47:12.000Z",
+  "updated_at": "2026-10-12T22:48:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/urban_12738_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urban dataset runs - September 2026 - a BrandonHowe Collection",
+      "url": "https://huggingface.co/collections/BrandonHowe/urban-dataset-runs-september-2026",
+      "snippet": "Qwen and OLMo seed-1 urban_12738_cleaned experiments from September 29-30, 2026: test exports, resumable checkpoints, and full Qwen epoch/final models"
+    },
+    {
+      "title": "Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-1",
+      "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-1",
+      "snippet": "Instructions to use BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-1 with libraries, inference providers, notebooks, and local apps. Follow these links to get started."
+    },
+    {
+      "title": "Qwen3 8b Urban Qwen Seed1 20260930 Cpt Merged Epoch 3",
+      "url": "https://free2aitools.com/model/brandonhowe/qwen3-8b-urban-qwen-seed1-20260930-cpt-merged-epoch-3",
+      "snippet": "Registry entry for model Qwen3 8b Urban Qwen Seed1 20260930 Cpt Merged Epoch 3; source metadata pending."
+    },
+    {
+      "title": "BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3",
+      "url": "https://featherless.ai/models/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3",
+      "snippet": "This model, BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3, is an 8 billion parameter variant based on the Qwen3 architecture. It represents a merged BF16 model from epoch 3.0, step 1134, and is designed for direct use without requiring an adapter."
+    },
+    {
+      "title": "Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-3",
+      "url": "https://friendli.ai/models/BrandonHowe/Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-3",
+      "snippet": "Deploy Qwen3-8b-urban-qwen-seed1-20260930-CPT-merged-epoch-3 with low-latency inference on FriendliAI. Get scalable API serving, high throughput, and production-grade reliability for AI agents."
+    }
+  ]
+}

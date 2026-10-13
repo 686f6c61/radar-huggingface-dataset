@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MynameisKoi/DeepHat-V1-7B-Q4_K_M-GGUF",
+  "slug": "mynameiskoi-deephat-v1-7b-q4_k_m-gguf",
+  "author": "MynameisKoi",
+  "url": "https://huggingface.co/MynameisKoi/DeepHat-V1-7B-Q4_K_M-GGUF",
+  "created_at": "2026-10-12T23:23:24.000Z",
+  "updated_at": "2026-10-12T23:23:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "qwen-coder",
+    "cybersecurity",
+    "devops",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:DeepHat/DeepHat-V1-7B",
+    "base_model:quantized:DeepHat/DeepHat-V1-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683071360,
+  "storage_human": "4.7 GB",
+  "base_model": "DeepHat/DeepHat-V1-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regardez des séries en ligne, Regardez des films en ligne - Netflix",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Only on Netflix | Netflix Official Site",
+      "url": "https://www3.stage.netflix.com/gb/browse/genre/839338",
+      "snippet": "Netflix is the home of amazing original programming that you can’t find anywhere else. Movies, TV shows, specials and more, all …"
+    },
+    {
+      "title": "Netflix Help Center",
+      "url": "https://help.netflix.com/en",
+      "snippet": "Learn how to sign up and use Netflix. Get help with account issues, troubleshooting and questions."
+    }
+  ]
+}

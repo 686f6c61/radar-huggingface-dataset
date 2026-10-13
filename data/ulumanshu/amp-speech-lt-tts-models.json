@@ -5,7 +5,7 @@
   "author": "Ulumanshu",
   "url": "https://huggingface.co/Ulumanshu/amp-speech-lt-tts-models",
   "created_at": "2026-10-11T18:45:41.000Z",
-  "updated_at": "2026-10-11T18:55:52.000Z",
+  "updated_at": "2026-10-11T20:21:57.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -34,8 +34,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-12T03:07:12.230Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

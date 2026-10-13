@@ -5,7 +5,7 @@
   "author": "OpensourceWTF",
   "url": "https://huggingface.co/OpensourceWTF/MiMo-V2.6-Flash-MOPD-fp8res-mlx-stream",
   "created_at": "2026-10-12T00:09:39.000Z",
-  "updated_at": "2026-10-12T02:14:19.000Z",
+  "updated_at": "2026-10-12T06:23:58.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,7 +35,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 44,
   "trending_score": 0,
   "parameters": 5983586496,
   "parameters_human": "5.98B",

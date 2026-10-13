@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "MulticulturalAlignment/scpo-reward-model-australia",
+  "slug": "multiculturalalignment-scpo-reward-model-australia",
+  "author": "MulticulturalAlignment",
+  "url": "https://huggingface.co/MulticulturalAlignment/scpo-reward-model-australia",
+  "created_at": "2026-10-12T23:33:33.000Z",
+  "updated_at": "2026-10-13T00:19:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "reward-model",
+    "scpo",
+    "cultural-alignment",
+    "australia",
+    "arxiv:2606.18606",
+    "en",
+    "dataset:HannahRoseKirk/prism-alignment",
+    "base_model:OpenAssistant/reward-model-deberta-v3-base",
+    "base_model:finetune:OpenAssistant/reward-model-deberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184422913,
+  "parameters_human": "184.4M",
+  "storage_bytes": 740180812,
+  "storage_human": "740 MB",
+  "base_model": "OpenAssistant/reward-model-deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "3 days ago · 14 mutual friends and you've never spoken. At this point, the universe is begging you to say hi. To celebrate the …"
+    }
+  ]
+}

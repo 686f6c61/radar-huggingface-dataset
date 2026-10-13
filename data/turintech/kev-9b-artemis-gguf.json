@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "turintech/Kev-9B-Artemis-GGUF",
+  "slug": "turintech-kev-9b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Kev-9B-Artemis-GGUF",
+  "created_at": "2026-10-12T10:43:35.000Z",
+  "updated_at": "2026-10-12T22:51:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kev",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "text-classification",
+    "base_model:jaredpalmer/kev-9b",
+    "base_model:quantized:jaredpalmer/kev-9b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8955900928,
+  "parameters_human": "8.96B",
+  "storage_bytes": 21756240224,
+  "storage_human": "21.8 GB",
+  "base_model": "jaredpalmer/kev-9b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TurinTech AI · Get more from systems you already run",
+      "url": "https://turintech.org/",
+      "snippet": "Artemis improves the performance of models, agents and code you already run by testing multiple optimization strategies and delivering measurable gains."
+    },
+    {
+      "title": "ggml-org/Kev-9B-GGUF · Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Kev-9B-GGUF",
+      "snippet": "ggml-org / Kev-9B-GGUF Like 2 Follow ggml-org 2.95k Text Classification GGUF quantized decision-model conversational License:apache-2.0 Model card FilesFiles and versions xet Community Deploy Copy to bucket new Use this model"
+    },
+    {
+      "title": "Artemis: optimize code, models and AI agents · TurinTech",
+      "url": "https://www.turintech.ai/product/overview",
+      "snippet": "Artemis by TurinTech optimizes the models, agents and code you already run. Discovery tests multiple approaches against real metrics and keeps the best."
+    },
+    {
+      "title": "Faster, More Secure AI Engineering on Intel-Powered AI PCs with ...",
+      "url": "https://www.intel.com/content/www/us/en/content-details/916043/faster-more-secure-ai-engineering-on-intel-powered-ai-pcs-with-turintech-artemis.html",
+      "snippet": "TurinTech Artemis, now fully offline, to AI PCs powered by Intel matters. It unlocks hardware-accelerated AI engineering workflows at the endpoint, enabling developers and enterprises to run demanding AI-assisted code analysis and optimization workloads on-device with greater performance, privacy, and efficiency."
+    },
+    {
+      "title": "Kev — Open Decision Models (0.8B-27B): Specs & Scores | AI/TLDR",
+      "url": "https://ai-tldr.dev/models/kev/",
+      "snippet": "Kev is a family of small open decision models published by Jared Palmer, with the Kev-0.8B, Kev-4B, Kev-9B and Kev-27B weights released together on GitHub on September 20, 2026 under Apache-2.0."
+    }
+  ]
+}

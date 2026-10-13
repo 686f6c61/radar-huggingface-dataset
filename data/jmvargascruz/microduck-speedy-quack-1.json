@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jmvargascruz/microduck-speedy-quack-1",
+  "slug": "jmvargascruz-microduck-speedy-quack-1",
+  "author": "jmvargascruz",
+  "url": "https://huggingface.co/jmvargascruz/microduck-speedy-quack-1",
+  "created_at": "2026-10-12T22:51:48.000Z",
+  "updated_at": "2026-10-12T22:52:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "microduck",
+  "languages": [],
+  "tags": [
+    "microduck",
+    "onnx",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793768,
+  "storage_human": "793768 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmer Castle and Gardens | English Heritage",
+      "url": "https://www.english-heritage.org.uk/visit/places/walmer-castle-and-gardens/",
+      "snippet": "Built during the reign of King Henry VIII and perched on the picturesque Kent coastline, Walmer Castle is a fortress-turned-stately …Read more"
+    },
+    {
+      "title": "Walmer Castle - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Walmer_Castle",
+      "snippet": "Walmer Castle was built to defend the English coast from attack by France and the Holy Roman Empire in the final years of the reign …"
+    },
+    {
+      "title": "Walmer Castle and Gardens Guide - Visit Kent Guide",
+      "url": "https://visitkentguide.co.uk/articles/visit-walmer-castle",
+      "snippet": "Sep 4, 2025 · Walmer Castle is a rare combination of Tudor military history and landscaped beauty. From its connections to national …"
+    },
+    {
+      "title": "Walmer - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Walmer",
+      "snippet": "Walmer Castle and its formal gardens are an attraction for visitors. The official residence of Lord Warden of the Cinque Ports since …"
+    },
+    {
+      "title": "Walmer Castle and Gardens - All You SHOULD Know Before",
+      "url": "https://www.tripadvisor.com/Attraction_Review-g4331665-d484877-Reviews-Walmer_Castle_and_Gardens-Walmer_Kent_England.html",
+      "snippet": "Explore the castle with the new multimedia guide, and come and see the original Wellington Boots. Take time to relax in the tearoom …"
+    }
+  ]
+}

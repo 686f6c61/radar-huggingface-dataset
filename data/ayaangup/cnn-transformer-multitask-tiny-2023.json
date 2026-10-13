@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ayaangup/cnn-transformer-multitask-tiny-2023",
+  "slug": "ayaangup-cnn-transformer-multitask-tiny-2023",
+  "author": "ayaangup",
+  "url": "https://huggingface.co/ayaangup/cnn-transformer-multitask-tiny-2023",
+  "created_at": "2026-10-12T23:17:29.000Z",
+  "updated_at": "2026-10-12T23:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ayaangup (Ayaan GUPTA) - Hugging Face",
+      "url": "https://huggingface.co/ayaangup",
+      "snippet": "Self-employed ML consultant Recent Activity updated a model2 days ago ayaangup/cs229-generation published a model2 days ago ayaangup/cs229-generation upvoted a paper 2 days ago Repo-To-Skill: Distilling GitHub Repositories Into AI4AI Skills View all activity"
+    },
+    {
+      "title": "YuxuanXu/cnn-transformer-multitask · Hugging Face",
+      "url": "https://huggingface.co/YuxuanXu/cnn-transformer-multitask",
+      "snippet": "Cnn Transformer for Multitask Overview This is an experimental Cnn Transformer codebase for Multitask. It keeps the small setup intentionally manageable so architecture changes can be inspected before a full training run."
+    },
+    {
+      "title": "Hugging Face Transformers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hugging_Face_Transformers",
+      "snippet": "Hugging Face Transformers is an open-source deep learning library developed by Hugging Face. It provides implementations of pretrained transformer and other neural network models for training and inference, including models for text, images, audio, video, and multimodal learning. [1][2]"
+    },
+    {
+      "title": "AI/TLDR — New AI Models, Tools & Papers This Week",
+      "url": "https://ai-tldr.dev/",
+      "snippet": "AI/TLDR is a high-volume tracker of new AI releases — models, open-source repos, developer tools, papers, datasets, benchmarks and security findings — refreshed every 2 hours and explained in plain English."
+    },
+    {
+      "title": "A severity-aware multi-task CNN-transformer framework for ... - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42756439/",
+      "snippet": "The proposed framework demonstrates how multi-source representation learning, multi-task severity modeling, uncertainty assessment, concept-based interpretability, and efficient edge deployment can be integrated within a unified AI pipeline for DFU image analysis. The findings indicate high classifi …"
+    }
+  ]
+}

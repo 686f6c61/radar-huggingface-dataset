@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Marco-Danz/leoncino-ministral3b-veneto",
+  "slug": "marco-danz-leoncino-ministral3b-veneto",
+  "author": "Marco-Danz",
+  "url": "https://huggingface.co/Marco-Danz/leoncino-ministral3b-veneto",
+  "created_at": "2026-10-12T21:44:35.000Z",
+  "updated_at": "2026-10-12T21:49:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "vec",
+    "it"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "veneto",
+    "venetian",
+    "dialect",
+    "chat",
+    "mistral",
+    "ollama",
+    "text-generation",
+    "vec",
+    "it",
+    "base_model:ministral/Ministral-3b-instruct",
+    "base_model:adapter:ministral/Ministral-3b-instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3315716096,
+  "parameters_human": "3.32B",
+  "storage_bytes": 3670849936,
+  "storage_human": "3.7 GB",
+  "base_model": "ministral/Ministral-3b-instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marc O'Polo Online Shop - Latest Fashion & Accessoires | MARC O…",
+      "url": "https://www.marc-o-polo.com/en-gb?msockid=3092aa0715da61ae29c7bdf714e2608e",
+      "snippet": "Latest fashion, shoes & accessories for women, men & children in our Marc O'Polo online shop. » Large selection » Secure payment …"
+    },
+    {
+      "title": "Emballages cadeaux & déco saisonnière – Marco",
+      "url": "https://www.marco.be/fr/",
+      "snippet": "Grossiste pour professionnels en emballages, rubans, fleurs, paniers et décorations pour chaque occasion. Découvrez l’offre de Marco."
+    },
+    {
+      "title": "Marco - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Marco",
+      "snippet": "This disambiguation page lists articles associated with the title Marco. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Accueil - Marco",
+      "url": "https://marco.agysoft.fr/",
+      "snippet": "Le logiciel spécialiste des marchés publics Simplifiez vos achats publics avec Marco en analysant les besoins en passant les …"
+    },
+    {
+      "title": "Marco (2024 film) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Marco_(2024_film)",
+      "snippet": "Marco is a 2024 Indian Malayalam -language action thriller film written and directed by Haneef Adeni and produced by Shareef …"
+    }
+  ]
+}

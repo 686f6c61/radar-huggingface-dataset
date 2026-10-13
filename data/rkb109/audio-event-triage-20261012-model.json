@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/audio-event-triage-20261012-model",
+  "slug": "rkb109-audio-event-triage-20261012-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/audio-event-triage-20261012-model",
+  "created_at": "2026-10-12T21:44:47.000Z",
+  "updated_at": "2026-10-12T21:44:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "audio-ml",
+    "audio-classification",
+    "automatic-speech-recognition",
+    "feature-extraction",
+    "audio-to-audio",
+    "dataset:RKB109/audio-event-triage-20261012-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en-US",
+      "snippet": "Over a billion people come to TikTok to share what they love, learn new things, and find ideas that make everyday life more …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/fr/",
+      "snippet": "TikTok - les tendances commencent ici. Sur ton appareil ou sur le Web, les spectateurs peuvent regarder et découvrir des millions …"
+    }
+  ]
+}

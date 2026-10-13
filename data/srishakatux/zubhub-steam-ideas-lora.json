@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SrishAkaTux/zubhub-steam-ideas-lora",
+  "slug": "srishakatux-zubhub-steam-ideas-lora",
+  "author": "SrishAkaTux",
+  "url": "https://huggingface.co/SrishAkaTux/zubhub-steam-ideas-lora",
+  "created_at": "2026-10-12T21:45:56.000Z",
+  "updated_at": "2026-10-12T21:46:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "lora",
+    "education",
+    "steam",
+    "k12",
+    "cultural-heritage",
+    "text-generation",
+    "en",
+    "dataset:SrishAkaTux/zubhub-steam-ideas-wikipedia",
+    "base_model:mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+    "base_model:adapter:mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+    "doi:10.57967/hf/10873",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31689690,
+  "storage_human": "32 MB",
+  "base_model": "mlx-community/Qwen2.5-1.5B-Instruct-4bit",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "hamzahpali",
+      "url": "https://hamzahpali.com/",
+      "snippet": "Hamzah is a Palestinian content creator, debater and storyteller who brings raw, unfiltered conversations about Palestinian culture, …"
+    },
+    {
+      "title": "Hamzah Saadah (@hamzahpali) • Instagram photos and videos",
+      "url": "https://www.instagram.com/hamzahpali/",
+      "snippet": "3M Followers, 345 Following, 244 Posts - Hamzah Saadah (@hamzahpali) on Instagram: \"‎23 🇵🇸 الحمد لله Actor & Activist …"
+    },
+    {
+      "title": "Hamzah Saadah (@hamzahpali) • Instagram photos and videos",
+      "url": "https://www.instagram.com/hamzahpali/reels/",
+      "snippet": "3M Followers, 345 Following, 245 Posts - Hamzah Saadah (@hamzahpali) on Instagram: \"‎23 🇵🇸 الحمد لله Actor & Activist …"
+    },
+    {
+      "title": "Hamzah Saadah - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hamzah_Saadah",
+      "snippet": "Hamzah Saadah (born March 17, 2003), known online as Absorber or AbsorberYT, is a Palestinian-American digital content creator, …"
+    },
+    {
+      "title": "Hamzah (@hamzahpali) | TikTok",
+      "url": "https://www.tiktok.com/@hamzahpali",
+      "snippet": "Hamzah (@hamzahpali) on TikTok | 26 Followers. \"As long as I'm alive, I have infinite chances.\" 🇵🇸 Satx.Watch the latest video from …"
+    }
+  ]
+}

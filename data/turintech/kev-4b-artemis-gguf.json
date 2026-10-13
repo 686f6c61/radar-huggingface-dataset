@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "turintech/Kev-4B-Artemis-GGUF",
+  "slug": "turintech-kev-4b-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Kev-4B-Artemis-GGUF",
+  "created_at": "2026-10-12T18:05:10.000Z",
+  "updated_at": "2026-10-12T22:51:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "kev",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "text-classification",
+    "base_model:jaredpalmer/kev-4b",
+    "base_model:quantized:jaredpalmer/kev-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4207062528,
+  "parameters_human": "4.21B",
+  "storage_bytes": 6745730368,
+  "storage_human": "6.7 GB",
+  "base_model": "jaredpalmer/kev-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TurinTech AI · Get more from systems you already run",
+      "url": "https://turintech.org/",
+      "snippet": "Artemis improves the performance of models, agents and code you already run by testing multiple optimization strategies and delivering measurable gains."
+    },
+    {
+      "title": "Kev-4B-Q4_K_M.gguf · ggml-org/Kev-4B-GGUF at main - Hugging Face",
+      "url": "https://huggingface.co/ggml-org/Kev-4B-GGUF/blob/main/Kev-4B-Q4_K_M.gguf",
+      "snippet": "Instructions to use ggml-org/Kev-4B-GGUF with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Notebooks Google Colab Kaggle Local AppsSettings llama.cpp Install (macOS, Linux)"
+    },
+    {
+      "title": "Artemis: optimize code, models and AI agents · TurinTech",
+      "url": "https://www.turintech.ai/product/overview",
+      "snippet": "Artemis by TurinTech optimizes the models, agents and code you already run. Discovery tests multiple approaches against real metrics and keeps the best."
+    },
+    {
+      "title": "Kev 4B: Specifications & Sources - gradually.ai",
+      "url": "https://www.gradually.ai/en/ai-models/kev-4b/",
+      "snippet": "Kev 4B by Jared Palmer. Technical specifications, availability, and official sources."
+    },
+    {
+      "title": "Documentation | Artemis Docs",
+      "url": "https://docs.artemis.turintech.ai/",
+      "snippet": "Artemis documentation — AI code intelligence for engineering teams"
+    }
+  ]
+}

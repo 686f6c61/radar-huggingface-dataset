@@ -4,8 +4,8 @@
   "slug": "cisco1963-llmplasticity-zh_nl_instant_8-d0-1-c0-9-r0-5-s42",
   "author": "Cisco1963",
   "url": "https://huggingface.co/Cisco1963/llmplasticity-zh_nl_instant_8-d0.1-c0.9-r0.5-s42",
-  "created_at": "2026-10-02T02:18:57.000Z",
-  "updated_at": "2026-10-02T02:21:41.000Z",
+  "created_at": "2026-10-12T08:13:51.000Z",
+  "updated_at": "2026-10-12T08:25:19.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -17,11 +17,11 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 10,
+  "downloads_30d": 9,
   "trending_score": 0,
   "parameters": 122706432,
   "parameters_human": "122.7M",
-  "storage_bytes": 10309968345,
+  "storage_bytes": 10308889845,
   "storage_human": "10.3 GB",
   "base_model": null,
   "formats": [
@@ -29,8 +29,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-10-08T02:59:53.996Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

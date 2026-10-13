@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "turintech/Clef-Artemis-GGUF",
+  "slug": "turintech-clef-artemis-gguf",
+  "author": "turintech",
+  "url": "https://huggingface.co/turintech/Clef-Artemis-GGUF",
+  "created_at": "2026-10-12T10:15:17.000Z",
+  "updated_at": "2026-10-12T22:51:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "clef",
+    "decision-model",
+    "systemone",
+    "llama.cpp",
+    "quantized",
+    "multimodal",
+    "text-classification",
+    "base_model:Cloudflare/clef",
+    "base_model:quantized:Cloudflare/clef",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27024054788,
+  "parameters_human": "27.02B",
+  "storage_bytes": 63871918400,
+  "storage_human": "63.9 GB",
+  "base_model": "Cloudflare/clef",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porno izle - Sikiş Video - HD Sex Porn | Porno Anne",
+      "url": "https://pornoanne.com/",
+      "snippet": "Porno Anne ile en kaliteli HD porno filmleri burada! Sex videoları ve sikiş sahneleri ile dolu anlara ücretsiz porno izle yazarak ulaş ve …"
+    },
+    {
+      "title": "Türk Porno - Sikiş izle - HD Sex Video - Porna Film Seyret",
+      "url": "https://pornoanne.com/kategori/turk-porn-1/",
+      "snippet": "Türk porno severlerin kaçırmak istemediği en iyi amatör konuşmalı türk sex videoları sizler için hazırlandı. Sende hemen tıkla ve bu …"
+    },
+    {
+      "title": "Anne - XXX Porno videolar @ TheXXX.TV",
+      "url": "https://thexxx.tv/tr/videos/anne",
+      "snippet": "536,865 videolar: Toplu Tecavuz, Içine Boşalmak, Olive Glass, Sabah Sex, Üze Boşalma, Yaşlı Genç, Sofie Marie ve daha fazlası."
+    },
+    {
+      "title": "Anne Pornolar | HD Altyazılı Porno, Türkçe Altyazılı Porno İzle",
+      "url": "https://www.pornorina.com/kanal/anne/",
+      "snippet": "Anne porno kategorisine hoş geldiniz. Kendinizi burada özel hissedecek ve daima gelmeyi arzulayacaksınız. Çok güzel anne rolü …"
+    },
+    {
+      "title": "Ücretsiz Porno ve XXX videolar - Porncado.com",
+      "url": "https://porncado.com/tr/",
+      "snippet": "Burası Porncado.com, en iyi XXX videolar unutulmaz seks sahnelerinde dünyanın en ateşli porno yıldızlarına yer veriyor. Bu erotik …"
+    }
+  ]
+}
